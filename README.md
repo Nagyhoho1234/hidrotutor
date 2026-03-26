@@ -11,10 +11,9 @@
 > **AI-Generated Content Disclosure**
 >
 > Both the textbook content (25 chapters, ~700 pages) and the majority of this application's
-> source code were generated using **large language models** (Claude Opus 4.6, GPT-5.4).
-> Hungarian translations were quality-reviewed by GPT-5.4 as language lector (~2,450 fixes).
-> This material has not been independently peer-reviewed and should be treated as an
-> **educational technology demonstration**, not as an authoritative hydroinformatics reference.
+> source code were generated using **large language models (LLMs)**. The textbook illustrations
+> were also AI-generated. This material has not been independently peer-reviewed and should be
+> treated as an **educational technology demonstration**, not as an authoritative hydroinformatics reference.
 
 ---
 
@@ -161,15 +160,6 @@ Open **http://localhost:5173** in your browser.
 - **Marton, L.** (2009) — *Alkalmazott hidrogeológia* (Applied Hydrogeology), ELTE Eötvös Kiadó
 - **Kázmer, M.** (2005) — *Angol-magyar geológiai szótár*, Hantken Kiadó (17,192 terms)
 - **Eslamian & Eslamian** (2023) — *Handbook of HydroInformatics*, 3 volumes
-
----
-
-## AI Tooling
-
-This project was built using:
-- **Claude Opus 4.6** (Anthropic) — textbook writing, translation, question generation, app development
-- **GPT-5.4** (OpenAI) — Hungarian language quality review (lector pipeline)
-- **Gemini** (Google) — RAG chat responses (user-configured)
 
 ---
 
