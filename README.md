@@ -6,7 +6,7 @@
 [![Languages: EN/HU](https://img.shields.io/badge/Languages-EN%20%7C%20HU-red.svg)](#)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-green.svg)](https://python.org)
 [![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://react.dev)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19238897.svg)](https://doi.org/10.5281/zenodo.19238897)
 
 > **AI-Generated Content Disclosure**
 >
