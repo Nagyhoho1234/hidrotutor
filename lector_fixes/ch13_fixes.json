@@ -1,0 +1,718 @@
+{
+  "chapter": "ch13",
+  "total_issues": 89,
+  "fixes": [
+    {
+      "line_approx": 9,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidrológia számára mindez nem csupán fokozatos minőségi javulást jelentett -- hanem paradigmaváltást.",
+      "suggested": "A hidrológiában mindez nem csupán fokozatos minőségi javulást hozott, hanem paradigmaváltást.",
+      "reason": "A „számára” szerkezet és a közbeékelt gondolatjel kissé angolos, a magyar tudományos prózában az egyszerűbb igei megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 11,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Áttekintjük a LiDAR-adatgyűjtést koordináló főbb programokat",
+      "suggested": "Áttekintjük a LiDAR-adatgyűjtés főbb koordináló programjait",
+      "reason": "Az angolosan előretolt igenévi jelző („koordináló főbb programokat”) magyarul nehézkesebb, természetesebb a birtokos szerkezet."
+    },
+    {
+      "line_approx": 11,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a digitális felszínmodell és a csupasz felszínmodell közötti különbséget",
+      "suggested": "a digitális felszínmodell és a digitális terepmodell közötti különbséget",
+      "reason": "A „csupasz felszínmodell” nem bevett magyar szakkifejezés; a LiDAR-os szaknyelvben a „digitális terepmodell” használatos."
+    },
+    {
+      "line_approx": 11,
+      "category": "register",
+      "severity": "low",
+      "original": "amely átlát a vízen és feltérképezi a folyók és tengerpartok víz alatti domborzatát",
+      "suggested": "amely áthatol a vízen, és feltérképezi a folyók és tengerpartok víz alatti domborzatát",
+      "reason": "Az „átlát a vízen” köznyelvibb és pontatlanabb; a fizikai jelenségre az „áthatol a vízen” természetesebb."
+    },
+    {
+      "line_approx": 11,
+      "category": "calque",
+      "severity": "medium",
+      "original": "és követjük ezt a szálat egészen a nemzeti HAND ... térkép elkészüléséig",
+      "suggested": "és innen eljutunk a nemzeti HAND ... térkép elkészítéséig",
+      "reason": "A „követjük ezt a szálat” az angol „follow this thread” tükörfordítása, magyar tudományos szövegben idegenszerű."
+    },
+    {
+      "line_approx": 17,
+      "category": "register",
+      "severity": "low",
+      "original": "A modern elektronika szub-nanoszekundumos időkülönbségeket képes feloldani",
+      "suggested": "A modern elektronika szubnanoszekundumos időkülönbségeket is képes megkülönböztetni",
+      "reason": "A „feloldani” itt angol szaknyelvi tükör („resolve”); magyarul a „megkülönböztetni” vagy „kimutatni” természetesebb. A kötőjeles írásmód sem indokolt."
+    },
+    {
+      "line_approx": 19,
+      "category": "other",
+      "severity": "low",
+      "original": "Vagyis a mérési geometria tiszta",
+      "suggested": "Vagyis a mérési geometria egyértelmű",
+      "reason": "A „tiszta” itt angol mintájú, kissé informális szóhasználat; a „egyértelmű” tudományosabb és természetesebb."
+    },
+    {
+      "line_approx": 21,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egyetlen, függőlegesen lefelé tüzelő lézer",
+      "suggested": "Egyetlen, függőlegesen lefelé irányított lézer",
+      "reason": "A „tüzelő” katonai-köznyelvi árnyalatú, műszaki tankönyvben az „irányított” semlegesebb és természetesebb."
+    },
+    {
+      "line_approx": 22,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A szomszédos repülési vonalakat 20--30%-os átfedéssel tervezik, biztosítva a teljes felszínlefedettséget és lehetővé téve a minőségellenőrzést a sávok metszéspontjaiban.",
+      "suggested": "A szomszédos repülési vonalakat 20--30%-os átfedéssel tervezik, így biztosítják a teljes lefedettséget, és lehetővé teszik a minőségellenőrzést a sávok átfedő részein.",
+      "reason": "Az igenévi szerkezetek („biztosítva”, „lehetővé téve”) angolosan zsúfoltak; a „metszéspontjaiban” sem a legtermészetesebb szó a sávok kapcsolatára."
+    },
+    {
+      "line_approx": 28,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A GPS-megoldás pontos abszolút pozíciót ad",
+      "suggested": "A GPS-meghatározás pontos abszolút pozíciót ad",
+      "reason": "A „GPS-megoldás” az angol „GPS solution” tükörfordítása; magyar műszaki szövegben a „GPS-meghatározás” vagy „GPS-pozíciómeghatározás” természetesebb."
+    },
+    {
+      "line_approx": 30,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "dőlés, bólintás és irány",
+      "suggested": "dőlés, bólintás és irányszög",
+      "reason": "Az orientációs komponensek felsorolásában az „irány” túl általános; az „irányszög” pontosabb szakkifejezés."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A GPS- és IMU-adatok matematikai integrálása",
+      "suggested": "A GPS- és IMU-adatok együttes feldolgozása",
+      "reason": "A „matematikai integrálása” az angol „integration” szó szerinti átvétele; magyarul ebben a kontextusban az „együttes feldolgozás” természetesebb."
+    },
+    {
+      "line_approx": 34,
+      "category": "register",
+      "severity": "low",
+      "original": "Amint azt a 13.7. szakaszban látni fogjuk",
+      "suggested": "Amint a 13.7. szakaszban látni fogjuk",
+      "reason": "Az „azt” felesleges névmási kitöltés, angolosan terjengős."
+    },
+    {
+      "line_approx": 35,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A modern rendszereket 1. osztályú vagy 1M osztályú -- minden normál üzemi feltétel mellett szembiztos -- rendszereknek minősítik.",
+      "suggested": "A modern rendszereket 1. vagy 1M lézerosztályba sorolják; ezek normál üzemi feltételek mellett szembiztosak.",
+      "reason": "A „rendszereknek minősítik” nehézkes, a lézerbiztonsági osztályozásnak van bevettebb magyar terminológiája."
+    },
+    {
+      "line_approx": 38,
+      "category": "register",
+      "severity": "low",
+      "original": "Lineáris üzemmódú rendszerben a lézerimpulzusokat egyenként bocsátják ki",
+      "suggested": "Lineáris üzemmódú rendszerben a lézerimpulzusokat egymás után bocsátják ki",
+      "reason": "Az „egyenként” itt kissé darabos; az „egymás után” folyékonyabb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 45,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a többszörös visszaverődési képesség teszi a LiDAR-t egyedülálló értékűvé a hidrológia számára más távérzékelési technológiákhoz képest.",
+      "suggested": "Ez a többszörös visszaverődés-rögzítési képesség adja a LiDAR egyedülálló értékét a hidrológiában más távérzékelési technológiákhoz képest.",
+      "reason": "A „teszi ... értékűvé a hidrológia számára” angolos szerkezet; magyarul természetesebb az „adja ... értékét a hidrológiában” megoldás."
+    },
+    {
+      "line_approx": 49,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a hullámforma alakja a lézer lábnyomatán belüli visszaverő felszínek függőleges eloszlását kódolja",
+      "suggested": "a hullámforma alakja a lézernyaláb földi vetületén belüli visszaverő felületek függőleges eloszlását kódolja",
+      "reason": "A „lábnyomat” itt tükörfordítás-jellegű és szokatlan; a „földi vetület” vagy „folt” bevettebb magyar műszaki megoldás."
+    },
+    {
+      "line_approx": 57,
+      "category": "register",
+      "severity": "medium",
+      "original": "áttöri ezt a korlátot",
+      "suggested": "átlépi ezt a korlátot",
+      "reason": "Az „áttöri a korlátot” metaforikus, angolos fordulat; tudományos prózában a visszafogottabb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 69,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Geiger-üzemmód végül gyakorlativá teheti az ország éves újratérképezését",
+      "suggested": "A Geiger-üzemmód végül lehetővé teheti az ország évenkénti újratérképezését",
+      "reason": "A „gyakorlativá teheti” az angol „make practical” tükörfordítása; magyarul a „lehetővé teheti” természetesebb."
+    },
+    {
+      "line_approx": 203,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a tény számos EU-szomszéddal összevetve szembeötlő, és jelentős hiányt jelent az ország téradat-infrastruktúrájában.",
+      "suggested": "Ez számos uniós szomszédos országgal összevetve különösen szembeötlő, és jelentős hiányosságot jelez az ország téradat-infrastruktúrájában.",
+      "reason": "A „tény” felesleges, az „EU-szomszéd” és a „hiányt jelent” kissé darabos, fordításszagú megoldás."
+    },
+    {
+      "line_approx": 204,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy 5 méteres felbontású DDM",
+      "suggested": "egy 5 méteres felbontású modell",
+      "reason": "A DDM rövidítés ismétlése ugyanabban a mondatban felesleges és nehézkes."
+    },
+    {
+      "line_approx": 204,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "készített digitalizált 1:10 000 méretarányú topográfiai szintvonalakból és sztereo-fotogrammetriából",
+      "suggested": "digitalizált, 1:10 000 méretarányú topográfiai szintvonalak és sztereofotogrammetria alapján állított elő",
+      "reason": "A „készített ...-ból” szerkezet nehézkes; az „alapján állított elő” természetesebb tudományos magyarban."
+    },
+    {
+      "line_approx": 205,
+      "category": "register",
+      "severity": "low",
+      "original": "de alapvetően szintvonalakból származtatott termék",
+      "suggested": "de alapvetően szintvonalakból származtatott modell",
+      "reason": "A „termék” itt kissé bürokratikus, a „modell” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 208,
+      "category": "plural",
+      "severity": "medium",
+      "original": "Nemzeti park hatóságok rendeltek LiDAR-felméréseket",
+      "suggested": "Nemzeti parkok hatóságai rendeltek LiDAR-felméréseket",
+      "reason": "A birtokos szerkezet hibásan, angolosan tagolt; magyarul természetesebb a „nemzeti parkok hatóságai”."
+    },
+    {
+      "line_approx": 208,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "ökológiailag érzékeny területekről, mint az Aggteleki-karszt",
+      "suggested": "ökológiailag érzékeny területekről, például az Aggteleki-karsztról",
+      "reason": "A „mint” itt angolos felsorolásindító; a „például” természetesebb."
+    },
+    {
+      "line_approx": 209,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "szereztek LiDAR-lefedettséget",
+      "suggested": "LiDAR-adatokat szereztek be",
+      "reason": "A „lefedettséget szereztek” tükörfordítás-ízű, magyarul inkább adatot vagy felmérést szereznek be."
+    },
+    {
+      "line_approx": 212,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "mint amit a DDM-5 biztosít",
+      "suggested": "mint amilyet a DDM-5 nyújt",
+      "reason": "A „biztosít” túlhasznált anglicizáló ige; a „nyújt” természetesebb."
+    },
+    {
+      "line_approx": 213,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "radarral készített digitális felszínmodellek",
+      "suggested": "radarral előállított digitális felszínmodellek",
+      "reason": "A „készített” itt kevésbé szakszerű; a „előállított” bevettebb műszaki megfogalmazás."
+    },
+    {
+      "line_approx": 214,
+      "category": "register",
+      "severity": "medium",
+      "original": "projektspecifikus LiDAR-felmérések megrendelésére szorul",
+      "suggested": "egyedi LiDAR-felmérések megrendelésére kényszerül",
+      "reason": "A „projektspecifikus” nehézkes idegenszerűség; az „egyedi” természetesebb."
+    },
+    {
+      "line_approx": 217,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "az az egész országot lefedő 10 méteres, LiDAR-ból származtatott DDM-ekre támaszkodott",
+      "suggested": "ehhez az egész országot lefedő, 10 méteres felbontású, LiDAR-ból származtatott DDM-eket használtak",
+      "reason": "Az „az az” szerkezet és a „támaszkodott” itt angolos, nehézkes megoldás."
+    },
+    {
+      "line_approx": 218,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy egyenértékű HAND-térkép kiszámítása Magyarországra",
+      "suggested": "Egy hasonló HAND-térkép előállítása Magyarországra",
+      "reason": "A „kiszámítása Magyarországra” szó szerinti, kevéssé idiomatikus; az „előállítása” természetesebb."
+    },
+    {
+      "line_approx": 219,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ez a folyamat bizonytalanságokat vezet be",
+      "suggested": "ez a folyamat bizonytalanságot visz a becslésbe",
+      "reason": "A „bizonytalanságokat vezet be” angolos szerkezet; magyarul inkább „bizonytalanságot visz valamibe”."
+    },
+    {
+      "line_approx": 227,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ausztrália progresszívan bővülő lefedettséggel rendelkezik",
+      "suggested": "Ausztráliában fokozatosan bővül a lefedettség",
+      "reason": "A „progresszívan bővülő lefedettséggel rendelkezik” nehézkes, tükörfordítás-szerű."
+    },
+    {
+      "line_approx": 228,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Victoria állam és a tengerparti árvízkockázati területek az Elevation Foundation Spatial Data program prioritásai",
+      "suggested": "Az Elevation Foundation Spatial Data program elsősorban Victoria államra és a tengerparti árvízkockázatnak kitett területekre összpontosít",
+      "reason": "Az eredeti mondat névszói állítmánya angolos és merev; igés szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 231,
+      "category": "calque",
+      "severity": "medium",
+      "original": "nem állnak rendelkezésre országos léptékű LiDAR-adatok, és rövid távon nem is valószínű, hogy összegyűjtik őket",
+      "suggested": "nem állnak rendelkezésre országos léptékű LiDAR-adatok, és rövid távon az sem valószínű, hogy ilyen adatgyűjtés indul",
+      "reason": "Az „összegyűjtik őket” szó szerinti fordítás; magyarul inkább adatgyűjtés indul vagy megvalósul."
+    },
+    {
+      "line_approx": 236,
+      "category": "register",
+      "severity": "medium",
+      "original": "figyelemreméltóan elérhetővé vált",
+      "suggested": "széles körben hozzáférhetővé vált",
+      "reason": "A „figyelemreméltóan elérhetővé vált” idegenszerű, kevéssé idiomatikus."
+    },
+    {
+      "line_approx": 237,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Szoftveralgoritmusok -- amelyek kereskedelmi csomagokban, mint az Agisoft Metashape, a Pix4D, valamint a nyílt forráskódú OpenDroneMap-ben érhetők el --",
+      "suggested": "Az Agisoft Metashape, a Pix4D vagy a nyílt forráskódú OpenDroneMap szoftvercsomagokban elérhető algoritmusok",
+      "reason": "A közbeékelt szerkezet és a „mint” használata angolosan terjengős."
+    },
+    {
+      "line_approx": 238,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve a vizuális értelmezést",
+      "suggested": "ami megkönnyíti a vizuális értelmezést",
+      "reason": "A „lehetővé téve” tipikus angolos participiumos megoldás."
+    },
+    {
+      "line_approx": 244,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a **Digitális Felszínmodell (DSM)** és a **csupasz felszín Digitális Domborzatmodell (DDM)** közötti különbség",
+      "suggested": "a **digitális felszínmodell (DSM)** és a **csupaszfelszín-modellként használt digitális domborzatmodell (DDM)** közötti különbség",
+      "reason": "A „csupasz felszín Digitális Domborzatmodell” terminus nyelvileg nehézkes; pontosabb, ha a funkcióját írja körül."
+    },
+    {
+      "line_approx": 247,
+      "category": "other",
+      "severity": "high",
+      "original": "Tartalmazza az összes felszín feletti elemzést.",
+      "suggested": "Tartalmazza az összes felszín feletti elemet.",
+      "reason": "Nyelvi hiba: az „elemzést” szó téves, a jelentés alapján „elemet” szükséges írni."
+    },
+    {
+      "line_approx": 249,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "azt a felszínt, amelyet akkor látnánk, ha minden épületet lebontanánk",
+      "suggested": "azt a felszínt, amelyet akkor kapnánk, ha minden épületet eltávolítanánk",
+      "reason": "A „látnánk” itt kevésbé pontos; a modell eredményére utalva a „kapnánk” természetesebb."
+    },
+    {
+      "line_approx": 252,
+      "category": "calque",
+      "severity": "medium",
+      "original": "a víz minden épület mögött megtorlódna, tetőkön folyna át, és minden fa eltérítené",
+      "suggested": "a víz az épületek mögött feltorlódna, a tetőkön áthaladna, és a fák is eltérítenék az áramlást",
+      "reason": "Az eredeti felsorolás kissé nyers, angolos; a javított változat idiomatikusabb és pontosabb."
+    },
+    {
+      "line_approx": 408,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 13.9 Nagy teljesítményű számítástechnika LiDAR-feldolgozáshoz",
+      "suggested": "## 13.9 Nagy teljesítményű számítástechnika a LiDAR-feldolgozásban",
+      "reason": "A cím angolosan tömör; magyarul természetesebb az „a ...-ban” szerkezet."
+    },
+    {
+      "line_approx": 412,
+      "category": "calque",
+      "severity": "medium",
+      "original": "egy másodpercet vesz igénybe",
+      "suggested": "egy másodpercig tart",
+      "reason": "Az „igénybe vesz” itt angol mintát követ; a „tart” természetesebb magyarul."
+    },
+    {
+      "line_approx": 412,
+      "category": "calque",
+      "severity": "medium",
+      "original": "több mint két órát vesz igénybe",
+      "suggested": "több mint két óráig tart",
+      "reason": "Szó szerinti fordítás helyett egyszerűbb, idiomatikusabb igehasználat."
+    },
+    {
+      "line_approx": 416,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az adatok léteznek",
+      "suggested": "Az adatok rendelkezésre állnak",
+      "reason": "Az „adatok léteznek” angolos és tudományos prózában természetellenes."
+    },
+    {
+      "line_approx": 416,
+      "category": "register",
+      "severity": "low",
+      "original": "kinyerése ezekből az adatokból",
+      "suggested": "kinyerése az adatokból",
+      "reason": "A mutató névmás felesleges, az angol szerkezetet követi."
+    },
+    {
+      "line_approx": 419,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "párhuzamos feldolgozási képességet valósított meg",
+      "suggested": "párhuzamos feldolgozást tett lehetővé",
+      "reason": "A „képességet valósított meg” körülményes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 420,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "minden sávot külön processzormag dolgoz fel",
+      "suggested": "minden sávot külön processzormag vagy processzor dolgoz fel",
+      "reason": "MPI-környezetben a feldolgozási egység nem feltétlenül mag; a jelenlegi megfogalmazás terminológiailag szűkítő."
+    },
+    {
+      "line_approx": 422,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Vegyük a mélyedésfeltöltési lépést (Planchon-Darboux algoritmus) példaként, hogyan működik ez a párhuzamosítás:",
+      "suggested": "Nézzük meg a mélyedésfeltöltési lépésen (Planchon-Darboux algoritmus), hogyan működik ez a párhuzamosítás:",
+      "reason": "Az eredeti mondatszerkezet angolos; magyarul természetesebb a „nézzük meg ... hogyan” szerkezet."
+    },
+    {
+      "line_approx": 424,
+      "category": "terminology",
+      "severity": "low",
+      "original": "nagyon magas magassági értékre inicializálja",
+      "suggested": "nagyon nagy magasságértékre állítja be",
+      "reason": "Az „inicializálja” itt szükségtelenül idegen hangzású; a „beállítja” természetesebb."
+    },
+    {
+      "line_approx": 425,
+      "category": "other",
+      "severity": "medium",
+      "original": "az eredeti magassága és a szomszédai aktuális magasságának minimuma közötti maximumra csökkentik",
+      "suggested": "az eredeti magassága és a szomszédok aktuális magasságának minimuma közül a nagyobbra állítják",
+      "reason": "A jelenlegi megfogalmazás nehézkes és nehezen követhető."
+    },
+    {
+      "line_approx": 429,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A határcsere lépés a helyesség kulcsa",
+      "suggested": "A határcsere a helyes működés kulcsa",
+      "reason": "A „helyesség kulcsa” angolos, absztrakt megfogalmazás."
+    },
+    {
+      "line_approx": 430,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "biztosítja, hogy az információ átterjedjen a sávhatárokon",
+      "suggested": "lehetővé teszi, hogy az információ átterjedjen a sávhatárokon",
+      "reason": "A „biztosítja” túlhasznált fordítási panel; itt a „lehetővé teszi” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 443,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidrológiai algoritmusok azonban nem tartják tiszteletben az önkényes határokat.",
+      "suggested": "A hidrológiai algoritmusok azonban nem követik az önkényesen kijelölt határokat.",
+      "reason": "A „nem tartják tiszteletben” idiomatikusan túl antropomorf és angolos ebben a tudományos kontextusban."
+    },
+    {
+      "line_approx": 443,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "mindkét egységben konzisztensen kell, hogy feloldódjon",
+      "suggested": "mindkét egységben konzisztensen kell feloldani",
+      "reason": "A „kell, hogy” szerkezet itt nehézkes; az egyszerűbb infinitívuszos forma természetesebb."
+    },
+    {
+      "line_approx": 445,
+      "category": "terminology",
+      "severity": "low",
+      "original": "visszavágják a névleges határra",
+      "suggested": "visszavágják a tényleges határra",
+      "reason": "A „névleges határ” itt szokatlan; magyar szaknyelvben a „tényleges” vagy „eredeti” határ természetesebb."
+    },
+    {
+      "line_approx": 446,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez az „osszd fel -- dolgozd fel -- olvasszd össze\" munkafolyamat",
+      "suggested": "Ez a „felosztás -- feldolgozás -- összeillesztés” munkafolyamat",
+      "reason": "A felszólító módú angol mintájú szlogen magyarul kevésbé természetes tankönyvi szövegben."
+    },
+    {
+      "line_approx": 450,
+      "category": "register",
+      "severity": "medium",
+      "original": "egy jelentős akadályt kezel a LiDAR felhasználásában",
+      "suggested": "a LiDAR alkalmazásának egyik jelentős akadályát kezeli",
+      "reason": "Az eredeti szerkezet angolos; a javasolt változat gördülékenyebb magyar tudományos stílus."
+    },
+    {
+      "line_approx": 459,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "percek és órák közötti időn belül",
+      "suggested": "néhány percen vagy órán belül",
+      "reason": "Az eredeti kifejezés szó szerinti fordítás, magyarul nehézkes."
+    },
+    {
+      "line_approx": 463,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Copernicus GLO-30 DDM a platformon keresztül elérhető globális igény szerinti feldolgozáshoz",
+      "suggested": "A Copernicus GLO-30 DDM a platformon keresztül globális, igény szerinti feldolgozásra is elérhető",
+      "reason": "Az eredeti szórend angolos és nehezen tagolható."
+    },
+    {
+      "line_approx": 467,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 13.9.5 Szuperszámítástechnika kontinentális léptékű elemzéshez",
+      "suggested": "### 13.9.5 Szuperszámítástechnika kontinentális léptékű elemzésekhez",
+      "reason": "Általános alfejezetcímben a többes szám természetesebb, kevésbé szűkítő."
+    },
+    {
+      "line_approx": 468,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "első alkalommal történő, 10 méteres felbontású feldolgozását",
+      "suggested": "első, 10 méteres felbontású feldolgozását",
+      "reason": "Az „első alkalommal történő” nehézkes, bürokratikus fordítás."
+    },
+    {
+      "line_approx": 470,
+      "category": "register",
+      "severity": "medium",
+      "original": "250-szeres gyorsítást érve el",
+      "suggested": "250-szeres gyorsulást elérve",
+      "reason": "A „gyorsítást érve el” magyartalan; a „gyorsulást elérve” természetes."
+    },
+    {
+      "line_approx": 471,
+      "category": "terminology",
+      "severity": "low",
+      "original": "processzor gyorsítótár-hierarchiáinak",
+      "suggested": "a processzor gyorsítótár-hierarchiájának",
+      "reason": "Egy processzorra utalva az egyes szám természetesebb."
+    },
+    {
+      "line_approx": 472,
+      "category": "calque",
+      "severity": "medium",
+      "original": "nyers hardversebesség",
+      "suggested": "puszta hardverteljesítmény",
+      "reason": "A „nyers hardversebesség” angol tükörfordítás."
+    },
+    {
+      "line_approx": 474,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a szűk keresztmetszet a számításról az input/output (I/O) műveletekre ... helyeződött át",
+      "suggested": "a szűk keresztmetszet már nem a számítás, hanem az input/output (I/O) műveletek lettek",
+      "reason": "Az eredeti szerkezet nehézkes és angolos."
+    },
+    {
+      "line_approx": 477,
+      "category": "register",
+      "severity": "medium",
+      "original": "kecsesen kezelik a szélsőséges eseteket",
+      "suggested": "megbízhatóan kezelik a szélsőséges eseteket",
+      "reason": "A „kecsesen kezelik” az angol „gracefully handle” szó szerinti fordítása."
+    },
+    {
+      "line_approx": 511,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a Nagy Magyar Alföld",
+      "suggested": "a Nagyalföld",
+      "reason": "A „Nagy Magyar Alföld” szokatlan és angolos jelzős szerkezet; a bevett magyar földrajzi név a „Nagyalföld” vagy egyszerűen „Alföld”."
+    },
+    {
+      "line_approx": 522,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "E könyv oktatási kontextusában vagyis a debreceni, nairobi vagy dakkai hallgatók",
+      "suggested": "E könyv oktatási összefüggésében a debreceni, nairobi vagy dakkai hallgatók",
+      "reason": "A „kontextusában vagyis” tükörfordítás és mondatszerkesztési hiba; a „kontextus” itt is idegenszerű."
+    },
+    {
+      "line_approx": 1201,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ESA BIOMASS küldetése, amelynek indítása a 2020-as évek végére tervezett, P-sávú radart használ majd az erdei biomassza globális térképezéséhez",
+      "suggested": "Az ESA BIOMASS küldetése, amelyet a 2020-as évek végére terveznek indítani, P-sávú radart használ majd az erdei biomassza globális térképezésére",
+      "reason": "A „tervezett” állítmányi használata és a „térképezéséhez” szerkezet angolosan hat; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 1201,
+      "category": "register",
+      "severity": "medium",
+      "original": "kiegészítve a LiDAR-ból származtatott lombkoronamagasság-méréseket a fatérfogatra vonatkozó információkkal",
+      "suggested": "kiegészítve a LiDAR-ból származtatott lombkoronamagasság-méréseket a fatérfogatra vonatkozó adatokkal",
+      "reason": "Az „információk” itt általánosabb és kevésbé szakszerű, az „adatok” természetesebb tudományos regiszterben."
+    },
+    {
+      "line_approx": 1202,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Hidrológiai alkalmazásoknál ez a kombináció javítja a lombkorona-intercepció és a transzspiráció becsléseit",
+      "suggested": "Hidrológiai alkalmazásokban ez a kombináció pontosabbá teszi a lombkorona-intercepció és a transzspiráció becslését",
+      "reason": "Az „alkalmazásoknál” és a „javítja ... becsléseit” szerkezet fordításszagú; a magyarban természetesebb az „alkalmazásokban” és az egyes számú „becslését”."
+    },
+    {
+      "line_approx": 1202,
+      "category": "plural",
+      "severity": "low",
+      "original": "a lombkorona-intercepció és a transzspiráció becsléseit",
+      "suggested": "a lombkorona-intercepció és a transzspiráció becslését",
+      "reason": "A magyarban itt nem szükséges a többes szám."
+    },
+    {
+      "line_approx": 1204,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ezek a műholdas küldetések nem helyettesítik a légi LiDAR-t a részletes helyi térképezésben",
+      "suggested": "Ezek a műholdas küldetések a részletes helyi térképezésben nem helyettesítik a légi LiDAR-t",
+      "reason": "A határozó természetesebb helye az ige előtt van."
+    },
+    {
+      "line_approx": 1204,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "de a háromdimenziós terepmérést kiterjesztik az egész bolygóra",
+      "suggested": "de a háromdimenziós terepfelmérést bolygóléptékűvé teszik",
+      "reason": "A „kiterjesztik az egész bolygóra” szó szerinti fordításízű; tömörebb, idiomatikusabb megfogalmazás javasolt."
+    },
+    {
+      "line_approx": 1211,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 13.13 Gyakorlati példa: a HAND-számítás munkafolyamata",
+      "suggested": "## 13.13 Gyakorlati példa: a HAND számítási munkafolyamata",
+      "reason": "A „HAND-számítás munkafolyamata” kissé nehézkes; a „számítási munkafolyamat” természetesebb cím."
+    },
+    {
+      "line_approx": 1213,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A fejezet fogalmainak gyakorlati munkafolyamattal való alátámasztásaként tekintsünk egy gyakorlati példát",
+      "suggested": "A fejezetben bevezetett fogalmak szemléltetésére tekintsünk egy gyakorlati példát",
+      "reason": "Az „alátámasztásaként” és a „gyakorlati munkafolyamattal való” szerkezet erősen fordításszagú és nehézkes."
+    },
+    {
+      "line_approx": 1213,
+      "category": "register",
+      "severity": "low",
+      "original": "egy kis vízgyűjtő területén",
+      "suggested": "egy kis vízgyűjtőn",
+      "reason": "A „vízgyűjtő területén” redundáns, mivel a vízgyűjtő eleve területet jelöl."
+    },
+    {
+      "line_approx": 1214,
+      "category": "register",
+      "severity": "medium",
+      "original": "egy hagyományos asztali számítógépen kezelhető léptékben",
+      "suggested": "egy hagyományos asztali számítógépen is kezelhető méretben",
+      "reason": "A „kezelhető léptékben” angolos, a „méretben” természetesebb magyar tudományos prózában."
+    },
+    {
+      "line_approx": 1216,
+      "category": "adjective_stacking",
+      "severity": "high",
+      "original": "az Észak-magyarországi-középhegységben",
+      "suggested": "az Északi-középhegységben",
+      "reason": "A jelenlegi alak hibás és természetellenes; a bevett földrajzi név az „Északi-középhegység”."
+    },
+    {
+      "line_approx": 1218,
+      "category": "register",
+      "severity": "low",
+      "original": "Mivel az adott területre nem áll rendelkezésre LiDAR",
+      "suggested": "Mivel erre a területre nem áll rendelkezésre LiDAR-adat",
+      "reason": "Az „adott területre” bürokratikus hangzású, és érdemes pontosítani, hogy LiDAR-adatról van szó."
+    },
+    {
+      "line_approx": 1221,
+      "category": "calque",
+      "severity": "medium",
+      "original": "amelyek csapdába ejtenék a vizet a lefolyásirány-algoritmusban",
+      "suggested": "amelyekben a víz megrekedne a lefolyásirány számítása során",
+      "reason": "A „csapdába ejtenék a vizet” szó szerinti angol tükör; magyarul a „megreked” természetesebb."
+    },
+    {
+      "line_approx": 1222,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ennél az 50 km²-es területnél 30 méteres felbontásban",
+      "suggested": "Ezen az 50 km²-es területen, 30 méteres felbontás mellett",
+      "reason": "A határozók sorrendje és formája magyarosabban alakítható."
+    },
+    {
+      "line_approx": 1226,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez triviálisan kicsi a modern hardverhez",
+      "suggested": "Ez a mai hardver számára elhanyagolható méretű",
+      "reason": "A „triviálisan kicsi” közvetlen angol hatású, kevésbé természetes magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 1228,
+      "category": "other",
+      "severity": "medium",
+      "original": "A D8 lefolyásirányok kiszámítása a feltöltött DDM-ből.",
+      "suggested": "A D8 lefolyásirányok kiszámítása a feltöltött DDM alapján.",
+      "reason": "Az „-ból” itt kevésbé természetes; az „alapján” szokásosabb módszerleírásban."
+    },
+    {
+      "line_approx": 1232,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A felső vízgyűjtőterület akkumulálása minden cellához.",
+      "suggested": "Minden cellához meghatározzuk a fölötte összegyülekező vízgyűjtőterületet.",
+      "reason": "Az „akkumulálása” főnevesítő, angolos megfogalmazás; igés szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 1234,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A lefolyás-akkumulációs küszöb alkalmazása helyett robusztusabb megközelítés egy ismert vízfolyáshálózat használata",
+      "suggested": "A lefolyásakkumulációs küszöb alkalmazásánál robusztusabb megoldás, ha ismert vízfolyáshálózatot használunk",
+      "reason": "A mondat szerkezete angolos és nehézkes; igés megfogalmazással gördülékenyebb."
+    },
+    {
+      "line_approx": 1246,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a Zagyva-mellékfolyó keskeny völgyfenekén",
+      "suggested": "a Zagyva egyik mellékfolyójának keskeny völgyfenekén",
+      "reason": "A jelzős szerkezet tömörítése itt nehézkes; birtokos szerkezettel természetesebb."
+    }
+  ]
+}

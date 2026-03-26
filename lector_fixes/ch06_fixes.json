@@ -1,0 +1,918 @@
+{
+  "chapter": "ch06",
+  "total_issues": 114,
+  "fixes": [
+    {
+      "line_approx": 2,
+      "category": "heading",
+      "severity": "medium",
+      "original": "# 6. fejezet: Számítások térképekkel",
+      "suggested": "# 6. fejezet: Számítások térképeken",
+      "reason": "A magyarban természetesebb a „térképeken végzett számítások” jelentésű szerkezet; a „térképekkel” enyhén tükörfordításos."
+    },
+    {
+      "line_approx": 4,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "A keretrendszert, amely mindezt lehetővé teszi, térkép-algebrának hívjuk",
+      "suggested": "Az ezt lehetővé tevő keretrendszert térkép-algebrának hívjuk",
+      "reason": "Körülményes, angolos vonatkozó mellékmondatos szerkezet; magyarul tömörebben természetes."
+    },
+    {
+      "line_approx": 6,
+      "category": "register",
+      "severity": "low",
+      "original": "A következmények azonban mélyrehatók.",
+      "suggested": "A következmények azonban messzire vezetnek.",
+      "reason": "A „mélyreható” itt kissé fordításszagú, publicisztikus hatású; tudományos prózában természetesebb a közvetlenebb megfogalmazás."
+    },
+    {
+      "line_approx": 6,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A térkép-algebra az a számítási keret, amely a statikus térbeli adatokból dinamikus térbeli elemzést tesz lehetővé.",
+      "suggested": "A térkép-algebra az a számítási keret, amellyel a statikus térbeli adatokból dinamikus térbeli elemzés végezhető.",
+      "reason": "A „tesz lehetővé” szerkezet túlhasznált angol mintájú fordulat; az átfogalmazás természetesebb magyar tudományos stílus."
+    },
+    {
+      "line_approx": 8,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A fejezet magját a bemeneti rácsok eltéréseinek részletes tárgyalása adja",
+      "suggested": "A fejezet középpontjában a bemeneti rácsok eltéréseinek részletes tárgyalása áll",
+      "reason": "Az „adja” itt nehézkes, enyhén angolos szerkezet; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 10,
+      "category": "register",
+      "severity": "low",
+      "original": "elkerüli a finom hibák egész körét",
+      "suggested": "elkerülheti a nehezen észrevehető hibák egész körét",
+      "reason": "A „finom hibák” nem természetes magyar szaknyelvi fordulat; a „nehezen észrevehető” pontosabb és idiomatikusabb."
+    },
+    {
+      "line_approx": 14,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a raszterrácsok algebrai kifejezésekben változóként kezelhetők",
+      "suggested": "a raszterrácsok algebrai kifejezésekben változóként szerepeltethetők",
+      "reason": "A „kezelhetők” itt angolos absztrakt igehasználat; a „szerepeltethetők” konkrétabb és természetesebb."
+    },
+    {
+      "line_approx": 18,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "mert egyetlen cellának sem kell tudnia, mi történik bármely másik cellánál",
+      "suggested": "mert az egyes cellák számítása egymástól független",
+      "reason": "A megszemélyesítő „nem kell tudnia” szó szerinti angol mintát követ; a magyar szaknyelvben a folyamat leírása természetesebb."
+    },
+    {
+      "line_approx": 20,
+      "category": "register",
+      "severity": "low",
+      "original": "ez a fejezet fókusza",
+      "suggested": "ez áll e fejezet középpontjában",
+      "reason": "A „fókusza” ebben a használatban idegenszerűbb; a magyar tudományos stílusban a „középpontjában áll” természetesebb."
+    },
+    {
+      "line_approx": 22,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "a művelet fogalmi összetettségét",
+      "suggested": "a művelet elvi összetettségét",
+      "reason": "A „fogalmi összetettség” kissé tükörfordításos; az „elvi összetettség” magyarosabb ebben a kontextusban."
+    },
+    {
+      "line_approx": 26,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a térkép-algebra biztosítja az erre szolgáló mechanizmust a GIS keretrendszerén belül",
+      "suggested": "a GIS keretrendszerén belül a térkép-algebra adja ehhez az alapvető számítási mechanizmust",
+      "reason": "A „biztosítja ... mechanizmust” angolos, nehézkes szerkezet; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 30,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Egy összevont modellben",
+      "suggested": "Egy aggregált modellben",
+      "reason": "A hidrológiai/modellezési szaknyelvben az „aggregált modell” bevettebb terminus, mint az „összevont modell”."
+    },
+    {
+      "line_approx": 34,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Térkép-algebra nélkül mindez számítási szempontból megoldhatatlan lenne.",
+      "suggested": "Térkép-algebra nélkül mindez számítási szempontból aligha lenne megvalósítható.",
+      "reason": "A „megoldhatatlan” túl erős és kissé szó szerinti; a „megvalósítható” itt pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 39,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ezek a kimenetek azután továbbvezethetők lefelé irányuló elemzésekbe",
+      "suggested": "Ezek a kimenetek ezután további, lefelé irányuló elemzések alapjául szolgálhatnak",
+      "reason": "A „továbbvezethetők ... elemzésekbe” nehézkes, angolos szerkezet."
+    },
+    {
+      "line_approx": 43,
+      "category": "other",
+      "severity": "low",
+      "original": "egy 3x3-as rácsunk",
+      "suggested": "egy 3×3-as rácsunk",
+      "reason": "Tipográfiai következetlenség: a szöveg előzőleg a szorzásjelet (×) használja, itt is célszerű azt megtartani."
+    },
+    {
+      "line_approx": 58,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "A felhasználói felület platformonként eltér",
+      "suggested": "A kezelőfelület platformonként eltér",
+      "reason": "A „felhasználói felület” érthető, de a „kezelőfelület” magyarosabb és bevett szaknyelvi alak."
+    },
+    {
+      "line_approx": 86,
+      "category": "register",
+      "severity": "medium",
+      "original": "egy véletlen egész számmá kerekítés csendben hibás eredményekhez vezethet",
+      "suggested": "a véletlen egészre kerekítés észrevétlenül hibás eredményekhez vezethet",
+      "reason": "A „csendben” az angol „silently” tükre; magyarul az „észrevétlenül” természetesebb."
+    },
+    {
+      "line_approx": 208,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A végső lefolyásrács a térben változó csapadék, talajtulajdonságok és felszínborítás együttes hatását ragadja meg",
+      "suggested": "A végső lefolyásrács a térben változó csapadék, a talajtulajdonságok és a felszínborítás együttes hatását tükrözi",
+      "reason": "A „ragadja meg” itt angolos, kevésbé természetes tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 208,
+      "category": "register",
+      "severity": "medium",
+      "original": "ami összevont modellel, egyetlen CN-értékkel az egész vízgyűjtőre, lehetetlen lenne",
+      "suggested": "ami összevont modellben, az egész vízgyűjtőre alkalmazott egyetlen CN-értékkel nem lenne lehetséges",
+      "reason": "Az eredeti szerkezet töredezett és angolos; a javított változat gördülékenyebb akadémiai stílusú."
+    },
+    {
+      "line_approx": 210,
+      "category": "word_order",
+      "severity": "high",
+      "original": "Az, hogy a bemeneti rácsoknak különböző a cellaméretük",
+      "suggested": "Az jelenti a kihívást, hogy a bemeneti rácsok cellamérete különböző",
+      "reason": "Az eredeti mondatcsonk („Az, hogy...”) nehézkes és fordításszagú."
+    },
+    {
+      "line_approx": 210,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "Mielőtt bármilyen térkép-algebra végrehajtható lenne, ezeket a rácsokat közös geometriára kell egyeztetni.",
+      "suggested": "Mielőtt bármilyen térkép-algebrai műveletet végrehajtanánk, ezeket a rácsokat közös geometriához kell igazítani.",
+      "reason": "A „végrehajtható lenne” körülményes, részben szenvedő jellegű szerkezet; a „közös geometriára egyeztetni” is szokatlan."
+    },
+    {
+      "line_approx": 211,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez az egyeztetési folyamat -- cellaméret-harmonizálás újramintavételezéssel -- a következő szakasz tárgya",
+      "suggested": "A következő szakaszban ezt az egyeztetési folyamatot, vagyis a cellaméret újramintavételezéssel történő harmonizálását tárgyaljuk",
+      "reason": "A „szakasz tárgya” angolos és nehézkes; igés szerkezet természetesebb."
+    },
+    {
+      "line_approx": 216,
+      "category": "plural",
+      "severity": "low",
+      "original": "A csapadékrácsok időjárási radarból jellemzően 1--4 kilométeres cellamérettel rendelkeznek.",
+      "suggested": "Az időjárási radarokból származó csapadékrácsok jellemzően 1--4 kilométeres cellaméretűek.",
+      "reason": "A „rendelkeznek” túlterhelt, körülményes ige; a mondat természetesebben fogalmazható."
+    },
+    {
+      "line_approx": 219,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Amikor ezeket az adathalmazokat egy térkép-algebrai kifejezésben kell kombinálnunk",
+      "suggested": "Amikor ezeket az adathalmazokat egy térkép-algebrai kifejezésben együtt kell használnunk",
+      "reason": "A „kombinálnunk” itt angol mintájú szóhasználat; a „együtt kell használnunk” természetesebb."
+    },
+    {
+      "line_approx": 219,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "mielőtt bármilyen celláról cellára történő számítást végrehajthatna",
+      "suggested": "mielőtt bármilyen celláról cellára végzett számítást elvégezne",
+      "reason": "A „történő számítást végrehajthatna” nehézkes, főnevesített és részben szenvedő jellegű."
+    },
+    {
+      "line_approx": 221,
+      "category": "register",
+      "severity": "low",
+      "original": "A rosszul megválasztott beállítások csendben adatvesztéshez",
+      "suggested": "A rosszul megválasztott beállítások észrevétlenül adatvesztéshez",
+      "reason": "A „csendben” szó szerinti angol átvétel hatását kelti; az „észrevétlenül” idiomatikusabb."
+    },
+    {
+      "line_approx": 226,
+      "category": "other",
+      "severity": "low",
+      "original": "A felszínborítási rácsok 10 m-estől (ESA WorldCover, Sentinel-2 alapú) 300 m-esen (ESA CCI-LC) át 1 km-esig",
+      "suggested": "A felszínborítási rácsok 10 m-estől (ESA WorldCover, Sentinel-2 alapú) 300 m-esen (ESA CCI-LC) át 1 km-esig terjedő felbontásúak",
+      "reason": "Az eredeti szerkezet kissé hiányos, a mondat végén szükséges az állítmány pontosítása."
+    },
+    {
+      "line_approx": 231,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 6.4.2 Kidolgozott példa: A feladat felállítása",
+      "suggested": "### 6.4.2 Kidolgozott példa: a feladat megfogalmazása",
+      "reason": "A „feladat felállítása” angolos; magyarul a „megfogalmazása” természetesebb. A címben a kettőspont utáni kisbetű is gördülékenyebb."
+    },
+    {
+      "line_approx": 254,
+      "category": "register",
+      "severity": "medium",
+      "original": "A kívánt számítás egyértelmű",
+      "suggested": "Az elvégzendő számítás egyértelmű",
+      "reason": "A „kívánt számítás” kissé tükörfordítás-ízű; a javított változat szaknyelvileg természetesebb."
+    },
+    {
+      "line_approx": 256,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a nem illeszkedő cellaméretű rácsot",
+      "suggested": "az eltérő cellaméretű rácsot",
+      "reason": "A „nem illeszkedő cellaméretű” jelzős szerkezet nehézkes és angolos."
+    },
+    {
+      "line_approx": 266,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 6.4.3 Alapértelmezett viselkedés: Mi történik automatikusan",
+      "suggested": "### 6.4.3 Alapértelmezett működés: mi történik automatikusan",
+      "reason": "A „viselkedés” itt informatikai szövegben elfogadható, de a „működés” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 274,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Legközelebbi-szomszéd újramintavételezés alkalmazódik minden olyan bemenetre",
+      "suggested": "A szoftver legközelebbi-szomszéd újramintavételezést alkalmaz minden olyan bemenetre",
+      "reason": "Az „alkalmazódik” személytelen, nehézkes szerkezet; aktív igealak természetesebb."
+    },
+    {
+      "line_approx": 276,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "a beszivárgásrács (100 m) a legközelebbi-szomszéd módszerrel 150 m-re mintavételeződik újra",
+      "suggested": "a beszivárgásrácsot (100 m) a szoftver legközelebbi-szomszéd módszerrel 150 m-es felbontásra mintavételezi újra",
+      "reason": "A „mintavételeződik újra” szenvedő jellegű és kevéssé természetes."
+    },
+    {
+      "line_approx": 295,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ha a beszivárgásrács költséges terepi méréseket vagy gondosan kalibrált modellkimenetet képviselt",
+      "suggested": "Ha a beszivárgásrács költséges terepi mérésekből származó vagy gondosan kalibrált modellkimenetet tartalmazott",
+      "reason": "A „képviselt” itt angolosan absztrakt; a „tartalmazott” vagy „származó” pontosabb."
+    },
+    {
+      "line_approx": 301,
+      "category": "register",
+      "severity": "low",
+      "original": "A raszteranalízis egyik kulcsfontosságú szokása",
+      "suggested": "A raszteranalízis egyik kulcsfontosságú gyakorlata",
+      "reason": "A „szokása” kevésbé szaknyelvi; a „gyakorlata” akadémiai szövegben jobb."
+    },
+    {
+      "line_approx": 306,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "de a lefolyásréteg továbbra is 1,8-at mutat",
+      "suggested": "a lefolyásréteg viszont továbbra is 1,8-at mutat",
+      "reason": "A „viszont” természetesebb kontrasztjelölő ebben a mondatban."
+    },
+    {
+      "line_approx": 310,
+      "category": "register",
+      "severity": "medium",
+      "original": "De egyértelmű jelzés, hogy érdemes lehet jobban kontrollálni a folyamatot.",
+      "suggested": "Ugyanakkor ez egyértelműen jelzi, hogy érdemes lehet szorosabban kézben tartani a folyamatot.",
+      "reason": "A „kontrollálni” idegen hatású; a mondatkezdő „De” is kevésbé akadémiai."
+    },
+    {
+      "line_approx": 316,
+      "category": "register",
+      "severity": "medium",
+      "original": "mindent a legdurvább felbontásra csökkenteni eldobja azt az információt, amiért fizettél",
+      "suggested": "ha mindent a legdurvább felbontásra csökkentünk, elveszítjük azt az információt, amelynek előállítása költséges volt",
+      "reason": "A „fizettél” túl közvetlen, nem illik a tankönyvi-akadémiai regiszterhez."
+    },
+    {
+      "line_approx": 323,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a kimeneti felbontást diktálnia kellene",
+      "suggested": "a kimeneti felbontást meghatároznia kellene",
+      "reason": "A „diktálni” itt angolos metafora; a „meghatározni” semlegesebb és természetesebb."
+    },
+    {
+      "line_approx": 803,
+      "category": "register",
+      "severity": "medium",
+      "original": "a 2x2-es szomszédság bal felső sarkától mért törtpozíciós távolságot képviseli",
+      "suggested": "a 2×2-es szomszédság bal felső sarkától mért relatív helyzetet adja meg",
+      "reason": "A „képviseli” és a „törtpozíciós távolság” fordításszagú, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 805,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Sima, folytonos kimeneti értékeket produkál, amelyek fokozatosan mennek át a forráscella-értékek között.",
+      "suggested": "Sima, folytonos kimeneti értékeket ad, amelyek fokozatos átmenetet képeznek a forráscellák értékei között.",
+      "reason": "A „produkál” és a „mennek át” angolos, kevésbé természetes tudományos magyarban."
+    },
+    {
+      "line_approx": 805,
+      "category": "terminology",
+      "severity": "low",
+      "original": "a legközelebbi-szomszéd újramintavételezés",
+      "suggested": "a legközelebbi szomszéd módszerű újramintavételezés",
+      "reason": "A kötőjeles forma itt szokatlan; a magyar szaknyelvben természetesebb a különírt vagy körülírt megoldás."
+    },
+    {
+      "line_approx": 805,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az értékek a négy környező cella súlyozott átlagainak felelnek meg, jobb becslést adva folytonos jelenségekre.",
+      "suggested": "Az értékek a négy környező cella súlyozott átlagából adódnak, ezért folytonos jelenségek esetén jobb becslést adnak.",
+      "reason": "Az „adva” szerkezet és a többes számú „átlagainak” nehézkes, angolos megoldás."
+    },
+    {
+      "line_approx": 807,
+      "category": "register",
+      "severity": "low",
+      "original": "A módszer kissé elsimíthatja az éles gradienseket.",
+      "suggested": "A módszer kissé elsimíthatja az éles gradiensváltozásokat.",
+      "reason": "A „gradiensek” önmagában kissé nyers átvétel; magyarosabban pontosítható."
+    },
+    {
+      "line_approx": 809,
+      "category": "plural",
+      "severity": "low",
+      "original": "Folytonos lebegőpontos adatokhoz, mint magasság, csapadék, hőmérséklet, talajnedvesség, evapotranszspiráció, vagy bármely más mennyiség",
+      "suggested": "Folytonos, lebegőpontos adatokhoz, például magassághoz, csapadékhoz, hőmérséklethez, talajnedvességhez, evapotranszspirációhoz vagy más olyan mennyiségekhez",
+      "reason": "A „mint” felsorolásban angolos; a ragok hiánya és a szerkezet kevésbé természetes magyarul."
+    },
+    {
+      "line_approx": 813,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez simább eredményeket produkál, mint a bilineáris interpoláció, a helyi gradiensek és jellemzők jobb megőrzésével.",
+      "suggested": "Ez a módszer simább eredményt ad, mint a bilineáris interpoláció, miközben jobban megőrzi a helyi gradienseket és jellegzetességeket.",
+      "reason": "A „produkál” és a „jobb megőrzésével” szerkezet fordításszagú."
+    },
+    {
+      "line_approx": 815,
+      "category": "plural",
+      "severity": "low",
+      "original": "A három szabványos módszer közül a legsimább kimenet.",
+      "suggested": "A három szabványos módszer közül ez adja a legsimább kimenetet.",
+      "reason": "Az eredeti mondat hiányos, címkeszerű; teljes mondatként természetesebb."
+    },
+    {
+      "line_approx": 817,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az eredmények a bemeneti adatok tartományán kissé kívülre eső értékeket produkálhatnak (túllövés).",
+      "suggested": "Az eredmény a bemeneti adatok tartományán kissé kívül eső értékeket is adhat (túllövés).",
+      "reason": "A többes szám és a „produkálhatnak” itt feleslegesen nehézkes."
+    },
+    {
+      "line_approx": 817,
+      "category": "register",
+      "severity": "low",
+      "original": "4x4-es szomszédságot igényel, ezért a raszter szélei közelében nem alkalmazható.",
+      "suggested": "4×4-es szomszédságot igényel, ezért a raszter szélei közelében korlátozottan alkalmazható.",
+      "reason": "A „nem alkalmazható” túl kategorikus; a széleken inkább korlátozott alkalmazhatóságról van szó."
+    },
+    {
+      "line_approx": 819,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Gyakran használják megjelenítési minőségű terepfelszíneknél.",
+      "suggested": "Gyakran alkalmazzák megjelenítésre szánt, jó vizuális minőségű terepfelszínek esetén.",
+      "reason": "A „megjelenítési minőségű” tükörfordítás jellegű, magyarul körülírással természetesebb."
+    },
+    {
+      "line_approx": 823,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a forráscellák közül a leggyakrabban előforduló értéket rendeli, amelyek a kimeneti cella területére esnek",
+      "suggested": "a kimeneti cella területére eső forráscellák közül a leggyakoribb értéket rendeli hozzá",
+      "reason": "A vonatkozó mellékmondat szórendje angolos, az egyeztetés is döccen."
+    },
+    {
+      "line_approx": 823,
+      "category": "register",
+      "severity": "low",
+      "original": "amelyet durvább felbontásra történő újramintavételezéskor kategorikus adatokra terveztek",
+      "suggested": "amelyet kategorikus adatok durvább felbontásra történő újramintavételezésére terveztek",
+      "reason": "A mondatrész szórendje nehézkes, magyarul az infinitívuszos szerkezet természetesebb."
+    },
+    {
+      "line_approx": 825,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a többségi módszer a teljes cellaterületet figyelembe veszi és a domináns kategóriát rendeli hozzá, ami gyakran reprezentatívabb.",
+      "suggested": "a többségi módszer viszont a teljes cellaterületet figyelembe veszi, és a domináns kategóriát rendeli a kimeneti cellához, ami gyakran jobban tükrözi a valós helyzetet.",
+      "reason": "A „reprezentatívabb” itt kissé idegenszerű, a „rendeli hozzá” tárgya sem egyértelmű."
+    },
+    {
+      "line_approx": 846,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden célcellánál a bilineáris interpoláció a négy környező forráscella-középpontot használja súlyozott átlag kiszámításához.",
+      "suggested": "A bilineáris interpoláció minden célcellánál a négy környező forráscella középpontja alapján számít súlyozott átlagot.",
+      "reason": "Az „használja ... kiszámításához” angolos szerkezet."
+    },
+    {
+      "line_approx": 850,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ez a pont a két felső forráscella között helyezkedik el.",
+      "suggested": "Ez a pont a két felső forráscella között van.",
+      "reason": "A „helyezkedik el” körülményes, a rövidebb ige természetesebb."
+    },
+    {
+      "line_approx": 856,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ez a pont a két bal oldali forráscella között helyezkedik el függőlegesen.",
+      "suggested": "Ez a pont függőlegesen a két bal oldali forráscella között van.",
+      "reason": "A határozó helye és a „helyezkedik el” szerkezet nehézkes."
+    },
+    {
+      "line_approx": 860,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ez a pont mind a négy forráscella közepén helyezkedik el.",
+      "suggested": "Ez a pont a négy forráscella középpontjai között, középen van.",
+      "reason": "A „forráscella közepén” pontatlan, hiszen nem egyetlen cella közepéről van szó."
+    },
+    {
+      "line_approx": 889,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A középérték (4,275) mind a négy eredeti cella távolsággal súlyozott átlaga.",
+      "suggested": "A középérték (4,275) a négy eredeti cellaérték távolsággal súlyozott átlaga.",
+      "reason": "Az eredeti megfogalmazásból hiányzik, hogy a cellák értékeinek átlagáról van szó."
+    },
+    {
+      "line_approx": 893,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "végrehajthatjuk a $Lefolyás = Csapadék - Beszivárgás$ térkép-algebrai műveletet teljes celláról cellára történő megfeleltetéssel.",
+      "suggested": "végrehajthatjuk a $Lefolyás = Csapadék - Beszivárgás$ térkép-algebrai műveletet, mert a két raszter ekkor már celláról cellára megfeleltethető.",
+      "reason": "A „teljes celláról cellára történő megfeleltetéssel” nehézkes, tükörfordítás jellegű."
+    },
+    {
+      "line_approx": 894,
+      "category": "other",
+      "severity": "medium",
+      "original": "Maga a számítás során nem szükséges újramintavételezés, mert a bemenetek már illeszkednek.",
+      "suggested": "A számításhoz ekkor már nincs szükség újramintavételezésre, mert a bemenetek illeszkednek egymáshoz.",
+      "reason": "A „Maga a számítás során” szerkezet fölöslegesen körülményes."
+    },
+    {
+      "line_approx": 916,
+      "category": "other",
+      "severity": "medium",
+      "original": "A lényeges különbség nem a szélsőértékekben, hanem a belsőben van:",
+      "suggested": "A lényeges különbség nem a szélsőértékekben, hanem a belső cellák értékeiben van:",
+      "reason": "A „belsőben” itt homályos és pongyola; pontosítani kell, mire utal."
+    },
+    {
+      "line_approx": 918,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Részletes városi árvízvezetési modellnél",
+      "suggested": "Részletes városi árvízelvezetési modellnél",
+      "reason": "Az „árvízvezetési” nem bevett magyar szakkifejezés; az „árvízelvezetési” természetesebb."
+    },
+    {
+      "line_approx": 1201,
+      "category": "register",
+      "severity": "medium",
+      "original": "A vízgyűjtőn belül minden lefolyásértéket 1-gyel osztunk, az eredeti lefolyásértéket kapva.",
+      "suggested": "A vízgyűjtőn belül minden lefolyásértéket 1-gyel osztunk, így az eredeti lefolyásértéket kapjuk.",
+      "reason": "Az „-va/-ve” szerkezet itt angolosan, körülményesen kapcsolja az eredményt a művelethez."
+    },
+    {
+      "line_approx": 1202,
+      "category": "register",
+      "severity": "medium",
+      "original": "A vízgyűjtőn kívül minden lefolyásértéket 0-val osztunk, NODATA-t eredményezve.",
+      "suggested": "A vízgyűjtőn kívül minden lefolyásértéket 0-val osztunk, ami NODATA-értéket eredményez.",
+      "reason": "Az „eredményezve” szerkezet tükörfordításízű; természetesebb mellékmondattal."
+    },
+    {
+      "line_approx": 1203,
+      "category": "register",
+      "severity": "low",
+      "original": "Az eredmény egy lefolyásrács, amely csak a vízgyűjtő-határon belül létezik, mindenhol máshol NODATA-val.",
+      "suggested": "Az eredmény egy lefolyásrács, amely csak a vízgyűjtő határán belül tartalmaz értékeket, mindenütt máshol NODATA-val.",
+      "reason": "A „létezik” itt természetellenes; rasztereknél inkább „értékeket tartalmaz”. A kötőjeles írásmód sem indokolt."
+    },
+    {
+      "line_approx": 1205,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy alternatív, gyakran tisztább megközelítés az ArcGIS Pro-ban a `SetNull` vagy `Con` függvényeket használja:",
+      "suggested": "Az ArcGIS Pro-ban egy alternatív, gyakran áttekinthetőbb megoldás a `SetNull` vagy a `Con` függvény használata:",
+      "reason": "Az angol alanyos szerkezet („megközelítés ... használja”) magyarul nehézkes; természetesebb a „megoldás ... használata” forma."
+    },
+    {
+      "line_approx": 1211,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Ez kifejezetten Null-ra (NODATA) állítja a cellákat, ahol a maszk 0, és mindenhol máshol megtartja a lefolyásértéket.",
+      "suggested": "Ez kifejezetten nullára (NODATA-ra) állítja azokat a cellákat, ahol a maszk 0, és mindenütt máshol megtartja a lefolyásértéket.",
+      "reason": "A „Null-ra” nagybetűs, angolos írásmód; magyar szövegben természetesebb a „nullára”, illetve a mondat is gördülékenyebb."
+    },
+    {
+      "line_approx": 1212,
+      "category": "register",
+      "severity": "low",
+      "original": "A QGIS-ben az egyenértékű megoldás a raszterkalkulátor feltételes kifejezésével érhető el.",
+      "suggested": "A QGIS-ben ugyanez a raszterkalkulátor feltételes kifejezésével valósítható meg.",
+      "reason": "Az „egyenértékű megoldás ... érhető el” kissé fordításszagú; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 1216,
+      "category": "register",
+      "severity": "medium",
+      "original": "Amikor a NODATA-terjedés elfogadhatatlanul kis kimeneti területtel fenyeget, több stratégia áll rendelkezésre:",
+      "suggested": "Ha a NODATA-terjedés miatt a kimeneti terület elfogadhatatlanul kicsivé válna, több stratégia közül választhatunk:",
+      "reason": "A „fenyeget” itt angolos metafora; magyar tudományos prózában természetesebb az ok-okozati megfogalmazás."
+    },
+    {
+      "line_approx": 1218,
+      "category": "register",
+      "severity": "low",
+      "original": "Ha a NODATA-cellák egyébként folytonos adatok kis hiányosságait képviselik, kitölthetjük őket interpolációval",
+      "suggested": "Ha a NODATA-cellák folytonos adatok kisebb hiányait jelölik, interpolációval kitölthetjük őket",
+      "reason": "A „képviselik” itt tükörfordításízű; a „jelölik” természetesebb."
+    },
+    {
+      "line_approx": 1219,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez megfelelő, ha a hiányosságok kicsik és a környező adatok ésszerű információt biztosítanak az interpolációhoz.",
+      "suggested": "Ez akkor megfelelő, ha a hiányok kicsik, és a környező adatok elegendő információt adnak az interpolációhoz.",
+      "reason": "Az „ésszerű információt biztosítanak” szó szerinti angol mintát követ; magyarul az „elegendő információt adnak” természetesebb."
+    },
+    {
+      "line_approx": 1220,
+      "category": "register",
+      "severity": "low",
+      "original": "Nem megfelelő, ha a NODATA valóban hiányzó információt képvisel, például az országhatáron kívüli cellákat.",
+      "suggested": "Nem megfelelő, ha a NODATA valóban hiányzó információt jelez, például az országhatáron kívüli cellák esetében.",
+      "reason": "A „képvisel” itt is angolos; a mondat vége is pontosabb az „esetében” szerkezettel."
+    },
+    {
+      "line_approx": 1229,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a NODATA beszivárgási cellákat nullával helyettesíti, ami azt jelenti, hogy ezek a cellák maximális lefolyást generálnak",
+      "suggested": "Ez a beszivárgásraszter NODATA-celláit nullával helyettesíti, vagyis ezek a cellák maximális lefolyást adnak",
+      "reason": "A „NODATA beszivárgási cellák” jelzős szerkezet nehézkes, a „generálnak” pedig anglicizmus ebben a kontextusban."
+    },
+    {
+      "line_approx": 1230,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "Az, hogy ez fizikailag megfelelő-e, attól függ, miért hiányzik az adat.",
+      "suggested": "Hogy ez fizikailag indokolható-e, az attól függ, miért hiányzik az adat.",
+      "reason": "A „fizikailag megfelelő” kissé szó szerinti; tudományos magyarban az „indokolható” természetesebb."
+    },
+    {
+      "line_approx": 1232,
+      "category": "plural",
+      "severity": "low",
+      "original": "Ha tucatnyi bemenetünk van és csak egyiknek van jelentős NODATA-területe, végezzük a térkép-algebrát szakaszokban",
+      "suggested": "Ha sok bemenetünk van, és csak az egyiknek van jelentős NODATA-területe, a térkép-algebrát érdemes szakaszokban elvégezni",
+      "reason": "A „csak egyiknek” hiányos névelős szerkezet, a felszólító mód itt kevésbé természetes, mint az ajánló megfogalmazás."
+    },
+    {
+      "line_approx": 1233,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a NODATA-terjedést az utolsó lépésre korlátozza és több érvényes kimeneti területet őrizhet meg.",
+      "suggested": "Így a NODATA-terjedés az utolsó lépésre korlátozható, és nagyobb érvényes kimeneti terület őrizhető meg.",
+      "reason": "A „több ... területet” itt jelentésileg suta; valójában nagyobb érvényes területről van szó."
+    },
+    {
+      "line_approx": 1235,
+      "category": "register",
+      "severity": "medium",
+      "original": "Néha az őszinte válasz az, hogy nem rendelkezünk mindenhol adattal, és a kimenetnek ezt tükröznie kell.",
+      "suggested": "Néha az a helyes megoldás, ha elfogadjuk, hogy nem áll rendelkezésre mindenütt adat, és ezt a kimenetnek is tükröznie kell.",
+      "reason": "Az „őszinte válasz” angolos, publicisztikus fordulat; tankönyvi stílusban a „helyes megoldás” természetesebb."
+    },
+    {
+      "line_approx": 1236,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy lefolyástérkép NODATA-cellákkal a hiányzó beszivárgási adatok területein becsületesebb, mint egy lefolyástérkép gyártott értékekkel ezeken a cellákon.",
+      "suggested": "A hiányzó beszivárgási adatok területein NODATA-cellákat tartalmazó lefolyástérkép korrektebb, mint az ilyen cellákon mesterségesen előállított értékeket használó térkép.",
+      "reason": "A „becsületesebb” és a „gyártott értékek” nem illenek az akadémiai regiszterhez."
+    },
+    {
+      "line_approx": 1240,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 6.8.1 Számítás előtt: Az ellenőrzési lépés",
+      "suggested": "### 6.8.1 Számítás előtt: ellenőrzés",
+      "reason": "Az alcím angolosan körülíró; magyarul tömörebben és természetesebben adható meg."
+    },
+    {
+      "line_approx": 1242,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A raszterszámítások leggyakoribb hibaforrása nem az algebra, hanem a bemenetek ellenőrzésének elmulasztása.",
+      "suggested": "A raszterszámítások leggyakoribb hibaforrása nem maga az algebra, hanem az, ha elmulasztjuk a bemenetek ellenőrzését.",
+      "reason": "Az „ellenőrzésének elmulasztása” főnevesített, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 1243,
+      "category": "register",
+      "severity": "low",
+      "original": "A fegyelmezett munkafolyamat az ellenőrzéssel kezdődik, az egyeztetésen halad végig, és csak ezután jut el magához a számításhoz.",
+      "suggested": "A jól felépített munkafolyamat ellenőrzéssel kezdődik, majd az egyeztetés következik, és csak ezután kerül sor magára a számításra.",
+      "reason": "A „fegyelmezett munkafolyamat” és az „egyeztetésen halad végig” kissé idegenszerű."
+    },
+    {
+      "line_approx": 1245,
+      "category": "terminology",
+      "severity": "low",
+      "original": "a QGIS-ben nyissuk meg a Layer Properties párbeszédablakot",
+      "suggested": "a QGIS-ben nyissuk meg a Rétegtulajdonságok párbeszédablakot",
+      "reason": "Feleslegesen meghagyott angol felületelem ott, ahol van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 1248,
+      "category": "register",
+      "severity": "medium",
+      "original": "Minden bemenetet közös koordináta-rendszerbe kell vetíteni a raszterszámítások előtt.",
+      "suggested": "A raszterszámítások előtt minden bemenetet közös koordináta-rendszerbe kell átvetíteni.",
+      "reason": "A „vetíteni” itt pontatlanabb; GIS-szövegben az „átvetíteni” bevettebb."
+    },
+    {
+      "line_approx": 1256,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ha olyan aritmetikát végzünk, amely törtrészes eredményeket produkál, lebegőpontos kimenetre van szükség",
+      "suggested": "Ha olyan műveletet végzünk, amely tört értékű eredményt ad, lebegőpontos kimenetre van szükség",
+      "reason": "A „produkál” és részben az „aritmetika végzése” is angolos, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 1260,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egy -9999-es értékeket (a NODATA-jelzőt véletlenül érvényes értékként beleértve) tartalmazó talaj-áteresztőképességi rács érvénytelen eredményeket produkál.",
+      "suggested": "egy -9999-es értékeket tartalmazó talaj-áteresztőképességi rács — amikor a NODATA-jelző véletlenül érvényes adatként szerepel — érvénytelen eredményeket ad.",
+      "reason": "A „beleértve” és a „produkál” fordításszagú; a közbevetés magyarosabban oldható meg."
+    },
+    {
+      "line_approx": 1276,
+      "category": "terminology",
+      "severity": "low",
+      "original": "a Project Raster eszközzel",
+      "suggested": "a Project Raster eszközzel (raszter átvetítése)",
+      "reason": "Az angol eszköznév maradhat, de első említéskor hasznos a magyar funkció megadása a természetesebb szövegért."
+    },
+    {
+      "line_approx": 1280,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "Válasszuk az egyes adattípusoknak megfelelő újramintavételezési módszert",
+      "suggested": "Az egyes adattípusokhoz a megfelelő újramintavételezési módszert válasszuk",
+      "reason": "A hosszú jelzős szerkezet angolosan torlódik a főnév előtt; a magyar szórenddel gördülékenyebb."
+    },
+    {
+      "line_approx": 1283,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Állítsuk be a rácsrögzítő rasztert (snap raster) az elemzési környezetben, biztosítva, hogy az összes újramintavételezett rács azonos cellaigazítást osztson meg.",
+      "suggested": "Az elemzési környezetben állítsuk be a rácsrögzítő rasztert (snap raster), hogy minden újramintavételezett rács azonos cellaigazítású legyen.",
+      "reason": "A „biztosítva, hogy ... osszon meg” szerkezet tükörfordítás; magyarul egyszerű célhatározói mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 1284,
+      "category": "register",
+      "severity": "medium",
+      "original": "Még ha két rácsnak azonos is a cellamérete, a cellaszélesség töredékével eltolódhatnak, ami finom eltérést okoz",
+      "suggested": "Még ha két rács cellamérete azonos is, a cellaszélesség töredékével eltolódhatnak egymáshoz képest, ami kisebb eltéréseket okozhat",
+      "reason": "A mondat jelenlegi formája kissé nehézkes; a viszony és a következmény pontosabban, magyarosabban fejezhető ki."
+    },
+    {
+      "line_approx": 1299,
+      "category": "register",
+      "severity": "low",
+      "original": "Ha a lefolyást csapadék mínusz beszivárgásként számítottuk",
+      "suggested": "Ha a lefolyást a csapadék és a beszivárgás különbségeként számítottuk",
+      "reason": "A „mínusz” itt beszélt nyelviesebb; tankönyvi stílusban a „különbsége” természetesebb."
+    },
+    {
+      "line_approx": 1306,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez nem validálja minden cellát, de tömeges helyességi ellenőrzést biztosít.",
+      "suggested": "Ez nem igazolja minden cella helyességét, de összesített ellenőrzésre alkalmas.",
+      "reason": "A „validálja” és a „tömeges helyességi ellenőrzés” idegenszerű, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 1601,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Három különböző felbontású és vetületű bemeneti adathalmaz egyeztetődik közös geometriára",
+      "suggested": "Három különböző felbontású és vetületű bemeneti adathalmazt közös geometriára egyeztetnek",
+      "reason": "Az „egyeztetődik” itt természetellenes, rejtett szenvedő jellegű megfogalmazás; magyar tudományos prózában természetesebb az aktív szerkezet."
+    },
+    {
+      "line_approx": 1609,
+      "category": "register",
+      "severity": "medium",
+      "original": "A felhőalapú platformok úgy kezelik ezt, hogy a számítást viszik az adatokhoz.",
+      "suggested": "A felhőalapú platformok ezt úgy oldják meg, hogy a számítást az adatokhoz viszik.",
+      "reason": "Az „úgy kezelik ezt” angolos és kissé esetlen; az „úgy oldják meg” idiomatikusabb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1610,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "teljes térkép-algebrai rendszert biztosít, amely ezeken az adatokon működik letöltés nélkül",
+      "suggested": "teljes térkép-algebrai környezetet biztosít, amelyben ezek az adatok letöltés nélkül feldolgozhatók",
+      "reason": "A „rendszert biztosít, amely ... működik” szerkezet fordításszagú; a javasolt változat természetesebb magyar szaknyelvi megfogalmazás."
+    },
+    {
+      "line_approx": 1611,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Egy elemző JavaScript vagy Python nyelven írhat kifejezést",
+      "suggested": "Az elemző JavaScripten vagy Pythonban írhat egy kifejezést",
+      "reason": "A mondat szórendje kissé angolos; a javasolt változat gördülékenyebb magyar mondatszerkesztés."
+    },
+    {
+      "line_approx": 1613,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "hasonló képességet kínál",
+      "suggested": "hasonló lehetőségeket kínál",
+      "reason": "A „képességet kínál” szó szerinti angol mintát követ; magyarul természetesebb a „lehetőségeket kínál” vagy „hasonló funkciókat nyújt”."
+    },
+    {
+      "line_approx": 1614,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "közvetlen hozzáférést biztosít a Sentinel műholdadatokhoz",
+      "suggested": "közvetlen hozzáférést ad a Sentinel műholdadatokhoz",
+      "reason": "A „hozzáférést biztosít” túlhasznált, angolos fordulat; itt egyszerűbb és természetesebb az „ad”."
+    },
+    {
+      "line_approx": 1616,
+      "category": "register",
+      "severity": "low",
+      "original": "A vízügyi szakember számára a legfontosabb felismerés az, hogy",
+      "suggested": "A vízügyi szakember számára a legfontosabb tanulság, hogy",
+      "reason": "A „felismerés az, hogy” kissé nehézkes, fordításszagú; a „tanulság, hogy” természetesebb tankönyvi stílus."
+    },
+    {
+      "line_approx": 1618,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az ebből a fejezetből származó fogalmi alap közvetlenül átültethető.",
+      "suggested": "Az ebben a fejezetben megszerzett fogalmi alap közvetlenül továbbvihető.",
+      "reason": "A „származó fogalmi alap” és az „átültethető” együtt angolos, metaforikusan terhelt szerkezet; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 1622,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Amikor eltérő bemenetekkel írunk be kifejezést a raszterkalkulátorba",
+      "suggested": "Amikor eltérő bemenetekkel kifejezést írunk a raszterkalkulátorba",
+      "reason": "Az „írunk be kifejezést” igekötős szerkezet szórendje angolos; magyarul természetesebb az „kifejezést írunk be” vagy „beírunk egy kifejezést”."
+    },
+    {
+      "line_approx": 1623,
+      "category": "register",
+      "severity": "medium",
+      "original": "sem azt, hogy a drága, nagy felbontású adatainkat a durvább rácshoz igazítva durvábbra mintavételezte",
+      "suggested": "sem azt, hogy a nagy felbontású adatokat a durvább rácshoz igazítva valójában lerontotta a felbontásukat",
+      "reason": "A „drága” itt köznyelvi és nem akadémiai regiszterű; a „durvábbra mintavételezte” nehézkes, kevéssé idiomatikus."
+    },
+    {
+      "line_approx": 1624,
+      "category": "register",
+      "severity": "low",
+      "original": "Egyszerűen produkál egy eredményt",
+      "suggested": "Egyszerűen előállít egy eredményt",
+      "reason": "A „produkál” ebben a kontextusban enyhén idegen hangzású; az „előállít” természetesebb szaknyelvi ige."
+    },
+    {
+      "line_approx": 1626,
+      "category": "heading",
+      "severity": "medium",
+      "original": "A védelem a 6.8. szakaszban leírt ellenőrzés-először munkafolyamat.",
+      "suggested": "A megoldás a 6.8. szakaszban leírt, ellenőrzéssel kezdődő munkafolyamat.",
+      "reason": "A „védelem” és az „ellenőrzés-először” szó szerinti angol mintát követ; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 1631,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A térbeli információtartalom 1 km-en marad",
+      "suggested": "A térbeli információtartalom továbbra is 1 km-es léptékű marad",
+      "reason": "Az „1 km-en marad” tömör, de angolos szerkezet; a magyar szaknyelvben a „léptékű marad” természetesebb."
+    },
+    {
+      "line_approx": 1632,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "egy 30 m-es felszínborításból és 30 m-es talajadatokból, valamint 30 m-re újramintavételezett csapadékból számított lefolyástérkép",
+      "suggested": "egy olyan lefolyástérkép, amelyet 30 m-es felszínborításból, 30 m-es talajadatokból és 30 m-re újramintavételezett csapadékból számítottunk",
+      "reason": "A jelzős szerkezet túlterhelt és angolosan főnév elé zsúfolt; magyarul jobb mellékmondattal oldani."
+    },
+    {
+      "line_approx": 1633,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez nem feltétlenül rossz -- lehet, hogy pontosan ezt akarjuk egy elosztott modellhez.",
+      "suggested": "Ez nem feltétlenül probléma -- előfordulhat, hogy egy elosztott modellhez éppen erre van szükség.",
+      "reason": "A „rossz” és az „ezt akarjuk” kissé beszélt nyelvi; a javasolt változat akadémiai regiszterhez jobban illik."
+    },
+    {
+      "line_approx": 1637,
+      "category": "other",
+      "severity": "medium",
+      "original": "Ha az elemzési kiterjedés a bemenetek metszetére áll alapértelmezetten",
+      "suggested": "Ha az elemzési kiterjedés alapértelmezés szerint a bemenetek metszete",
+      "reason": "Az „áll alapértelmezetten” szerkezet nehézkes és fordításszagú; a javasolt változat idiomatikusabb."
+    },
+    {
+      "line_approx": 1640,
+      "category": "terminology",
+      "severity": "low",
+      "original": "NODATA-vá válnak a terjedési szabály szerint",
+      "suggested": "NODATA értékűvé válnak a terjedési szabály szerint",
+      "reason": "A „NODATA-vá válnak” kissé nyers szerkezet; a „NODATA értékűvé válnak” szakmailag pontosabb és magyarosabb."
+    },
+    {
+      "line_approx": 1647,
+      "category": "register",
+      "severity": "medium",
+      "original": "a kimenet lebegőpontossá lép elő",
+      "suggested": "a kimenet lebegőpontos adattípusra vált",
+      "reason": "A „lép elő” ebben a műszaki kontextusban metaforikus és idegen; a javasolt változat terminológiailag pontosabb."
+    },
+    {
+      "line_approx": 1654,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Raszterszámítások végrehajtása földrajzi koordinátákban",
+      "suggested": "Raszterszámítások végrehajtása földrajzi koordináta-rendszerben",
+      "reason": "Nem pusztán koordinátákról, hanem koordináta-rendszerről van szó; ez a szakmailag pontosabb megfogalmazás."
+    },
+    {
+      "line_approx": 1661,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "alkotja a térbelileg elosztott hidrológiai modellezés építőelemeit",
+      "suggested": "a térbelileg elosztott hidrológiai modellezés építőelemei",
+      "reason": "Az „alkotja ... építőelemeit” szerkezet nehézkes; egyszerűbb névszói állítmánnyal természetesebb."
+    },
+    {
+      "line_approx": 1666,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ezen munkafolyamatok mindegyike raszterműveletek láncolata",
+      "suggested": "Mindegyik munkafolyamat raszterműveletek láncolata",
+      "reason": "Az „ezen” mutató névmás itt fölöslegesen hivataloskodó és kissé idegenszerű; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 1672,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A cellméret ne legyen finomabb annál, ami a legfinomabb, azon a léptéken valóban változó információ.",
+      "suggested": "A cellaméret ne legyen finomabb annál a léptéknél, amelyen a legfinomabb, ténylegesen változó információ rendelkezésre áll.",
+      "reason": "A „cellméret” alak hibás/ingadozó terminushasználat a szövegben, a teljes mondat pedig erősen fordításszagú és nehezen követhető."
+    },
+    {
+      "line_approx": 1683,
+      "category": "word_order",
+      "severity": "high",
+      "original": "Ezek a számok megmagyarázzák, miért a cellaméret-egyeztetés nem csupán technikai részlet",
+      "suggested": "Ezek a számok megmagyarázzák, hogy a cellaméret-egyeztetés miért nem csupán technikai részlet",
+      "reason": "Hibás, angolos szórend; a fókuszhelyzet magyarban a „miért” és az állítmány viszonyát másképp rendezi."
+    }
+  ]
+}

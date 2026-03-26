@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What does the acronym HAND stand for?",
+    "options": [
+      "A) Height Above Natural Datum",
+      "B) Height Above Nearest Drainage",
+      "C) Hydraulic Analysis of Network Drainage",
+      "D) Hydrologic Assessment of Nearest Datum"
+    ],
+    "correct": "B",
+    "explanation": "HAND stands for Height Above Nearest Drainage, measuring the vertical distance from each landscape point to the nearest stream channel."
+  },
+  {
+    "type": "mcq",
+    "question": "Who coined the acronym HAND?",
+    "options": [
+      "A) David Maidment",
+      "B) David Tarboton",
+      "C) Antonio Donato Nobre",
+      "D) Yan Liu"
+    ],
+    "correct": "C",
+    "explanation": "Antonio Donato Nobre, a Brazilian researcher, coined the term while studying Amazonian ecosystems where relative elevation above rivers governs ecological zones."
+  },
+  {
+    "type": "mcq",
+    "question": "In which ecosystem was HAND first applied?",
+    "options": [
+      "A) Mississippi River floodplain",
+      "B) Danube River valley",
+      "C) Amazon basin",
+      "D) Mekong Delta"
+    ],
+    "correct": "C",
+    "explanation": "HAND was first applied in the Amazon basin to distinguish between varzea (permanently flooded), igapo (seasonally flooded), and terra firme (upland) forests."
+  },
+  {
+    "type": "mcq",
+    "question": "Why does absolute elevation fail as a predictor of flood risk?",
+    "options": [
+      "A) Elevation is measured in different units globally",
+      "B) Flooding depends on relative elevation above the nearest stream, not position above a distant datum",
+      "C) GPS errors make absolute elevation unreliable",
+      "D) Flood risk depends only on rainfall amount"
+    ],
+    "correct": "B",
+    "explanation": "A point at 82 m absolute elevation on the Tisza floodplain (3 m above river) is at far greater flood risk than a point at 250 m in the Buda Hills (160 m above the Danube)."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hungarian example from the text, a point at 82 m elevation near Szolnok sits how many meters above the Tisza?",
+    "options": [
+      "A) 82 m",
+      "B) 10 m",
+      "C) 3 m",
+      "D) 0 m"
+    ],
+    "correct": "C",
+    "explanation": "The Tisza at Szolnok flows at approximately 79 m, so the point at 82 m sits just 3 m above the river."
+  },
+  {
+    "type": "mcq",
+    "question": "In the HAND framework, 'nearest' drainage is determined by:",
+    "options": [
+      "A) Straight-line Euclidean distance",
+      "B) The hydrologic flow path following topography",
+      "C) The nearest road to a river crossing",
+      "D) Aerial distance measured by GPS"
+    ],
+    "correct": "B",
+    "explanation": "HAND uses the route water would take flowing downhill, not straight-line distance, because water follows topography."
+  },
+  {
+    "type": "mcq",
+    "question": "What value does every stream cell receive in the HAND raster?",
+    "options": [
+      "A) NoData",
+      "B) The cell's absolute elevation",
+      "C) Zero",
+      "D) The stream's discharge"
+    ],
+    "correct": "C",
+    "explanation": "All stream cells are assigned HAND = 0, as they are by definition at stream level."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND values can be directly compared to what quantity for flood mapping?",
+    "options": [
+      "A) Rainfall intensity",
+      "B) Flood depth in the stream",
+      "C) Soil moisture content",
+      "D) Wind speed"
+    ],
+    "correct": "B",
+    "explanation": "If flood depth in a stream is 4 m, every cell with HAND < 4 m is inundated, and the depth at each cell is 4 minus HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is NOT one of the proximity measures formalized by Tesfa et al. (2011)?",
+    "options": [
+      "A) Horizontal distance to the stream",
+      "B) Vertical distance to the stream (HAND)",
+      "C) Horizontal distance to the coast",
+      "D) Vertical distance to the ridge"
+    ],
+    "correct": "C",
+    "explanation": "The five measures are: horizontal distance to stream, vertical distance to stream (HAND), slope distance to stream, horizontal distance to ridge, and vertical distance to ridge."
+  },
+  {
+    "type": "mcq",
+    "question": "The combination of vertical distance to the ridge and HAND equals:",
+    "options": [
+      "A) The watershed area",
+      "B) The total local relief between ridge and channel",
+      "C) The average slope",
+      "D) The stream gradient"
+    ],
+    "correct": "B",
+    "explanation": "The sum of distance-to-ridge and distance-to-stream gives the total elevation difference between the ridge and channel bottom along the flow path."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM source has a vertical RMSE of approximately 6-9 m?",
+    "options": [
+      "A) LiDAR DEM",
+      "B) Copernicus EEA-10",
+      "C) SRTM",
+      "D) DDM-5"
+    ],
+    "correct": "C",
+    "explanation": "SRTM has a vertical RMSE of approximately 6-9 m, making it suitable only for broad-scale continental screening."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate vertical RMSE of LiDAR-derived DEMs?",
+    "options": [
+      "A) 4-6 m",
+      "B) 1-2 m",
+      "C) 0.1-0.2 m",
+      "D) 0.01-0.02 m"
+    ],
+    "correct": "C",
+    "explanation": "LiDAR DEMs typically have 0.1-0.2 m vertical RMSE, enabling identification of individual terraces and levee features on floodplains."
+  },
+  {
+    "type": "mcq",
+    "question": "Why is the D-infinity flow direction model preferred over D8 for HAND computation?",
+    "options": [
+      "A) D-infinity is faster to compute",
+      "B) D-infinity produces smoother HAND surfaces without streaking artifacts",
+      "C) D8 cannot handle flat terrain",
+      "D) D-infinity uses less memory"
+    ],
+    "correct": "B",
+    "explanation": "D8 forces all flow into narrow channels, creating streaking artifacts on smooth hillslopes. D-infinity distributes flow proportionally, producing smooth HAND surfaces."
+  },
+  {
+    "type": "mcq",
+    "question": "In D-infinity flow routing, each cell may send flow to:",
+    "options": [
+      "A) Exactly one neighbor",
+      "B) One or two downslope neighbors based on continuous flow angle",
+      "C) All eight neighbors equally",
+      "D) Four cardinal neighbors only"
+    ],
+    "correct": "B",
+    "explanation": "D-infinity allows a continuous flow angle and proportional partitioning between two downslope neighbors."
+  },
+  {
+    "type": "mcq",
+    "question": "The HAND algorithm processes cells in what order?",
+    "options": [
+      "A) Top to bottom, left to right",
+      "B) Randomly",
+      "C) From stream cells upslope to ridges (upslope sweep)",
+      "D) From ridges downslope to streams"
+    ],
+    "correct": "C",
+    "explanation": "The algorithm sweeps from known stream values (HAND=0) upward through the landscape, processing each cell once."
+  },
+  {
+    "type": "mcq",
+    "question": "In the HAND formula, HAND_i = sum_k [p_k * (HAND_k + (Z_i - Z_k))], what does p_k represent?",
+    "options": [
+      "A) Precipitation at cell k",
+      "B) The D-infinity flow proportion going to cell k",
+      "C) The probability of flooding at cell k",
+      "D) The perimeter of cell k"
+    ],
+    "correct": "B",
+    "explanation": "p_k is the D-infinity flow proportion, representing the fraction of flow from cell i that goes to neighbor k."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked Example 1 (cell adjacent to stream), the computed HAND value is:",
+    "options": [
+      "A) 0.92 m",
+      "B) 1.13 m",
+      "C) 1.06 m",
+      "D) 0.00 m"
+    ],
+    "correct": "C",
+    "explanation": "HAND = 0.33 x (0 + 0.92) + 0.67 x (0 + 1.13) = 0.304 + 0.757 = 1.06 m."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked Example 2 (cell further from stream), the computed HAND value is:",
+    "options": [
+      "A) 2.64 m",
+      "B) 4.74 m",
+      "C) 4.62 m",
+      "D) 4.69 m"
+    ],
+    "correct": "D",
+    "explanation": "HAND = 0.60 x (2.64 + 2.10) + 0.40 x (1.88 + 2.74) = 2.844 + 1.848 = 4.69 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The weighted-average HAND value from D-infinity corresponds to:",
+    "options": [
+      "A) An exact physical flow path",
+      "B) A representative height averaging over multiple flow paths",
+      "C) The maximum possible height above stream",
+      "D) The minimum distance to any stream"
+    ],
+    "correct": "B",
+    "explanation": "The D-infinity HAND value is a weighted average over multiple flow paths and should be interpreted as representative, not exact."
+  },
+  {
+    "type": "mcq",
+    "question": "Why must the stream raster for HAND be derived from the DEM rather than rasterized from a vector network?",
+    "options": [
+      "A) Vector data cannot be rasterized",
+      "B) Vector streams may not align with DEM topographic valleys, causing systematic HAND errors",
+      "C) DEM-derived streams are always more accurate",
+      "D) Vector networks lack attribute information"
+    ],
+    "correct": "B",
+    "explanation": "Vector streams digitized independently may not coincide with DEM valley floors, producing displaced stream cells that make all HAND values wrong by the displacement amount."
+  },
+  {
+    "type": "mcq",
+    "question": "The channel-head weighted accumulation method ensures:",
+    "options": [
+      "A) All streams are straight lines",
+      "B) Streams begin at mapped locations but follow DEM valleys downstream",
+      "C) Stream density is uniform everywhere",
+      "D) No streams cross international boundaries"
+    ],
+    "correct": "B",
+    "explanation": "This method uses vector network endpoints as channel heads, then derives the rest from DEM flow accumulation, ensuring internal consistency."
+  },
+  {
+    "type": "mcq",
+    "question": "What NHDPlus attribute identifies the upstream endpoints of headwater flow lines?",
+    "options": [
+      "A) COMID",
+      "B) Start flag",
+      "C) Reach code",
+      "D) Divergence flag"
+    ],
+    "correct": "B",
+    "explanation": "The start flag attribute identifies channel heads (upstream ends) of headwater flow lines in NHDPlus."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the 'soft burn-in' approach for DEM conditioning?",
+    "options": [
+      "A) Lowering all DEM cells by a fixed amount",
+      "B) Enforcing monotonically decreasing elevations along the known stream path",
+      "C) Raising levee cells to prevent overflow",
+      "D) Smoothing the entire DEM surface"
+    ],
+    "correct": "B",
+    "explanation": "Soft burn-in traces along the vector stream and only lowers elevations where the DEM increases along the flow path, making minimum necessary adjustments."
+  },
+  {
+    "type": "mcq",
+    "question": "In Hungary, the flood-control levees along the Tisza create what problem for DEM-derived streams?",
+    "options": [
+      "A) The levees block GPS signals",
+      "B) Levees appear as ridges that displace derived streams away from the actual river",
+      "C) Levees cause datum inconsistencies",
+      "D) Levees increase the DEM resolution"
+    ],
+    "correct": "B",
+    "explanation": "Without conditioning, DEM-derived stream networks may be displaced to one side of the levee system because levees appear as ridges blocking flow."
+  },
+  {
+    "type": "mcq",
+    "question": "How should permanent water bodies be handled in HAND-based flood analysis?",
+    "options": [
+      "A) Assign them HAND values of 100 m",
+      "B) Delete them from the DEM",
+      "C) Use them as a mask, excluding them from flood analysis",
+      "D) Compute HAND normally and keep the values"
+    ],
+    "correct": "C",
+    "explanation": "Permanent water body HAND values are physically meaningless, so they are masked out during the interpretation step."
+  },
+  {
+    "type": "mcq",
+    "question": "Lake Balaton, the largest lake in Central Europe, has an area of approximately:",
+    "options": [
+      "A) 94 km^2",
+      "B) 294 km^2",
+      "C) 594 km^2",
+      "D) 894 km^2"
+    ],
+    "correct": "C",
+    "explanation": "Lake Balaton covers approximately 594 km^2 and requires masking in HAND analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcGIS Pro, HAND is computed using which tool?",
+    "options": [
+      "A) Zonal Statistics",
+      "B) Flow Distance",
+      "C) Raster Calculator",
+      "D) Watershed"
+    ],
+    "correct": "B",
+    "explanation": "The Flow Distance tool in the Spatial Analyst Hydrology toolbox computes HAND when set to VERTICAL distance type and DINF flow direction type."
+  },
+  {
+    "type": "mcq",
+    "question": "What three inputs are required for HAND computation?",
+    "options": [
+      "A) DEM, rainfall data, soil map",
+      "B) Conditioned DEM, D-infinity flow directions, DEM-consistent stream raster",
+      "C) Land use map, Manning's n, channel cross-sections",
+      "D) GPS points, satellite imagery, stream gauge data"
+    ],
+    "correct": "B",
+    "explanation": "All three must be internally consistent: derived from the same conditioned DEM, sharing the same grid extent, cell size, and alignment."
+  },
+  {
+    "type": "mcq",
+    "question": "Why should the filled DEM (not the original) be used as the surface raster for HAND?",
+    "options": [
+      "A) The original DEM has no coordinate system",
+      "B) Using the original DEM with filled-DEM flow directions creates inconsistencies, potentially producing negative HAND values",
+      "C) The filled DEM is always smaller in file size",
+      "D) The original DEM cannot be read by GIS software"
+    ],
+    "correct": "B",
+    "explanation": "Flow directions were computed from the filled DEM, so using the original creates cells that appear below the stream (negative HAND)."
+  },
+  {
+    "type": "mcq",
+    "question": "What TauDEM function computes HAND?",
+    "options": [
+      "A) D8FlowDir",
+      "B) PitRemove",
+      "C) DinfDistDown",
+      "D) StreamReach"
+    ],
+    "correct": "C",
+    "explanation": "DinfDistDown (D-infinity Distance Down) computes vertical distance to the stream using D-infinity flow directions."
+  },
+  {
+    "type": "mcq",
+    "question": "In the TauDEM command for HAND, the '-m ave v' flags specify:",
+    "options": [
+      "A) Maximum, vector",
+      "B) Average, vertical",
+      "C) Minimum, velocity",
+      "D) Average, volume"
+    ],
+    "correct": "B",
+    "explanation": "'-m ave v' means method = average (weighted average over D-infinity flow proportions), type = vertical (vertical distance)."
+  },
+  {
+    "type": "mcq",
+    "question": "Which open-source geospatial library developed by John Lindsay offers HAND-related functions?",
+    "options": [
+      "A) GDAL",
+      "B) WhiteboxTools",
+      "C) pyproj",
+      "D) Shapely"
+    ],
+    "correct": "B",
+    "explanation": "WhiteboxTools, developed at the University of Guelph, provides HAND-related functions and integrates with QGIS."
+  },
+  {
+    "type": "mcq",
+    "question": "What Python library provides lightweight watershed delineation and HAND computation without requiring GIS software?",
+    "options": [
+      "A) NumPy",
+      "B) pysheds",
+      "C) Fiona",
+      "D) rasterio"
+    ],
+    "correct": "B",
+    "explanation": "pysheds provides watershed delineation and HAND computation capabilities useful for automated pipelines and cloud-based processing."
+  },
+  {
+    "type": "mcq",
+    "question": "What suffix convention is recommended for a HAND raster file?",
+    "options": [
+      "A) _dem",
+      "B) _slp",
+      "C) _hand",
+      "D) _cat"
+    ],
+    "correct": "C",
+    "explanation": "The recommended naming convention uses _hand suffix (e.g., tisza_hand.tif) for the Height Above Nearest Drainage raster."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Onion Creek watershed, DEM elevations range from ~113 to ~513 m, but HAND values range only from:",
+    "options": [
+      "A) 0 to 513 m",
+      "B) 0 to 400 m",
+      "C) 0 to approximately 122 m",
+      "D) 0 to 50 m"
+    ],
+    "correct": "C",
+    "explanation": "The maximum HAND value (122 m) is much less than total relief (400 m) because HAND measures only the drop to the nearest stream, not to the watershed outlet."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND values on the middle Tisza between Szolnok and Szeged concentrate heavily in which range?",
+    "options": [
+      "A) 0-4 m",
+      "B) 10-20 m",
+      "C) 50-100 m",
+      "D) 200-300 m"
+    ],
+    "correct": "A",
+    "explanation": "The extremely flat Great Plain terrain means most HAND values fall in the 0-4 m range, with total relief of only about 14 m."
+  },
+  {
+    "type": "mcq",
+    "question": "What HAND classification color is recommended for the 'extreme flood risk' class (0-1 m)?",
+    "options": [
+      "A) Transparent",
+      "B) Yellow",
+      "C) Dark blue",
+      "D) Orange"
+    ],
+    "correct": "C",
+    "explanation": "Dark blue is recommended for HAND 0-1 m, representing areas inundated by even minor floods."
+  },
+  {
+    "type": "mcq",
+    "question": "Making high-HAND cells transparent in visualization allows what to show through?",
+    "options": [
+      "A) Rainfall data",
+      "B) The underlying terrain (hillshade or aerial imagery)",
+      "C) Population density",
+      "D) Soil type maps"
+    ],
+    "correct": "B",
+    "explanation": "Transparency for high-HAND cells creates visualizations focused on flood-relevant areas while showing topographic context beneath."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 HAND produces what kind of artifacts on smooth hillslopes?",
+    "options": [
+      "A) Circular patterns",
+      "B) Random noise",
+      "C) Streaking and parallel striping",
+      "D) Checkerboard patterns"
+    ],
+    "correct": "C",
+    "explanation": "D8 creates parallel striping on smooth surfaces because all cells with the same flow direction accumulate identically, producing jagged flood boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "On which supercomputers was the US continental HAND dataset computed?",
+    "options": [
+      "A) Blue Waters and Summit",
+      "B) Roger (NCSA) and Stampede (TACC)",
+      "C) Frontera and Fugaku",
+      "D) Piz Daint and MareNostrum"
+    ],
+    "correct": "B",
+    "explanation": "The computation used the Roger supercomputer at NCSA and the Stampede supercomputer at TACC."
+  },
+  {
+    "type": "mcq",
+    "question": "Who led the computational effort for the US continental HAND dataset?",
+    "options": [
+      "A) David Tarboton and Martin Isenburg",
+      "B) Yan Liu and Xiaowen Wang",
+      "C) Antonio Nobre and his Brazilian team",
+      "D) John Lindsay and his Canadian team"
+    ],
+    "correct": "B",
+    "explanation": "Yan Liu and Xiaowen Wang at the University of Illinois, in collaboration with UT Austin, led the continental processing."
+  },
+  {
+    "type": "mcq",
+    "question": "The continental HAND processing chain for each HUC-6 unit consists of how many main steps?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 7",
+      "D) 10"
+    ],
+    "correct": "C",
+    "explanation": "Seven steps: rasterization, etching, pit removal, D8/D-inf flow directions, weighted flow accumulation, stream raster generation, and HAND computation."
+  },
+  {
+    "type": "mcq",
+    "question": "Computing HAND for all of Hungary at 5-meter resolution would require processing approximately how many billion grid cells?",
+    "options": [
+      "A) 0.5",
+      "B) 1.9",
+      "C) 10",
+      "D) 50"
+    ],
+    "correct": "B",
+    "explanation": "Hungary's 93,000 km^2 at 5-meter resolution = 93,000 x 10^6 / 25 = approximately 3.72 x 10^9 = ~1.9 billion (noted as approximately 1.9 billion in the text, accounting for actual territory shape)."
+  },
+  {
+    "type": "mcq",
+    "question": "What HAND threshold roughly corresponds to the 100-year floodplain concept?",
+    "options": [
+      "A) HAND < 1 m",
+      "B) HAND < 2 m",
+      "C) HAND < 5 m",
+      "D) HAND < 20 m"
+    ],
+    "correct": "C",
+    "explanation": "HAND < 5 m identifies areas at risk from 50-100 year floods, roughly corresponding to the regulatory 100-year floodplain."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND-derived hydraulic properties include inundated area A(h), wetted perimeter P(h), top width T(h), cross-sectional area, and:",
+    "options": [
+      "A) Soil permeability",
+      "B) Hydraulic radius R(h)",
+      "C) Precipitation rate",
+      "D) Evapotranspiration"
+    ],
+    "correct": "B",
+    "explanation": "Hydraulic radius R(h) = cross-sectional area / wetted perimeter is a key property for Manning's equation."
+  },
+  {
+    "type": "mcq",
+    "question": "What steady-state assumption limits HAND-based flood mapping?",
+    "options": [
+      "A) Rainfall is always steady",
+      "B) Flood water at a given depth fills all terrain below that depth instantaneously",
+      "C) Streams always flow at constant velocity",
+      "D) Groundwater never contributes to flooding"
+    ],
+    "correct": "B",
+    "explanation": "HAND assumes instantaneous filling, producing an upper bound on flood extent. Real floods propagate over time with variable water surface profiles."
+  },
+  {
+    "type": "mcq",
+    "question": "What effects does HAND NOT account for in flood mapping?",
+    "options": [
+      "A) Backwater at bridges and flow constrictions",
+      "B) Terrain elevation differences",
+      "C) Stream network topology",
+      "D) Catchment boundaries"
+    ],
+    "correct": "A",
+    "explanation": "HAND ignores backwater effects, bridge constrictions, and momentum effects that cause water to pile up behind structures."
+  },
+  {
+    "type": "mcq",
+    "question": "Changing the stream network threshold affects HAND values how?",
+    "options": [
+      "A) It has no effect",
+      "B) A denser network produces lower HAND values; sparser produces higher",
+      "C) A denser network always increases HAND",
+      "D) Only the sign of HAND values changes"
+    ],
+    "correct": "B",
+    "explanation": "More streams mean each cell is closer to its nearest stream, lowering HAND values. Fewer streams mean larger HAND values."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza rises in the Carpathian Mountains of which country?",
+    "options": [
+      "A) Romania",
+      "B) Hungary",
+      "C) Ukraine",
+      "D) Slovakia"
+    ],
+    "correct": "C",
+    "explanation": "The Tisza rises in the Carpathian Mountains of western Ukraine before flowing through Romania, Hungary, and Serbia."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza's total length is approximately:",
+    "options": [
+      "A) 300 km",
+      "B) 596 km",
+      "C) 966 km",
+      "D) 1,500 km"
+    ],
+    "correct": "C",
+    "explanation": "The Tisza flows 966 km from Ukraine through multiple countries to its confluence with the Danube near Novi Sad."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza's natural floodplain before 19th-century regulation covered approximately:",
+    "options": [
+      "A) 5,000 km^2",
+      "B) 12,000 km^2",
+      "C) 22,000 km^2",
+      "D) 50,000 km^2"
+    ],
+    "correct": "C",
+    "explanation": "The natural floodplain covered approximately 22,000 km^2, roughly a quarter of modern Hungary's area."
+  },
+  {
+    "type": "mcq",
+    "question": "Who led the 19th-century river regulation works on the Tisza?",
+    "options": [
+      "A) Lajos Kossuth and Miklos Horthy",
+      "B) Pal Vasarhelyi and Istvan Szechenyi",
+      "C) Franz Joseph and Maria Theresa",
+      "D) Janos Arany and Sandor Petofi"
+    ],
+    "correct": "B",
+    "explanation": "The regulation works were led by Pal Vasarhelyi and later Istvan Szechenyi, completed between 1846 and 1879."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza regulation works shortened the river by nearly:",
+    "options": [
+      "A) 50 km",
+      "B) 100 km",
+      "C) 250 km",
+      "D) 500 km"
+    ],
+    "correct": "D",
+    "explanation": "The regulation shortened the Tisza by nearly 500 km through channel cutoffs (atvagas)."
+  },
+  {
+    "type": "mcq",
+    "question": "What devastating event occurred in Szeged in 1879 due to a Tisza flood?",
+    "options": [
+      "A) A dam collapsed upstream",
+      "B) The city was destroyed and 151 people died",
+      "C) The river permanently changed course",
+      "D) A chemical plant was flooded"
+    ],
+    "correct": "B",
+    "explanation": "The 1879 Szeged flood destroyed the city and killed 151 people, one of Hungary's worst flood disasters."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the area between the Tisza levees called in Hungarian?",
+    "options": [
+      "A) Mentett arter",
+      "B) Hullamter",
+      "C) Kunhalom",
+      "D) Meder"
+    ],
+    "correct": "B",
+    "explanation": "Hullamter refers to the area between the levees that still experiences regular flooding. Mentett arter is the protected floodplain beyond."
+  },
+  {
+    "type": "mcq",
+    "question": "What typical HAND values do Hungarian towns on the Tisza plain have, reflecting historical site selection?",
+    "options": [
+      "A) 0-1 m",
+      "B) 1-2 m",
+      "C) 4-8 m",
+      "D) 20-30 m"
+    ],
+    "correct": "C",
+    "explanation": "Traditional settlements were sited on natural topographic highs (terraces, loess ridges, kunhalmok) at HAND values of 4-8 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The MERIT Hydro global dataset was developed by:",
+    "options": [
+      "A) USGS",
+      "B) Dai Yamazaki at the University of Tokyo",
+      "C) David Tarboton at Utah State",
+      "D) JRC at the European Commission"
+    ],
+    "correct": "B",
+    "explanation": "MERIT Hydro provides hydrologically conditioned elevation data at 3 arc-second resolution globally."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate resolution of MERIT Hydro?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) ~90 m (3 arc-seconds)",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "MERIT Hydro provides data at 3 arc-second resolution, approximately 90 meters."
+  },
+  {
+    "type": "mcq",
+    "question": "In Hungary, which data portal provides historical water level and discharge records?",
+    "options": [
+      "A) geoportal.vizugy.hu",
+      "B) data.vizugy.hu",
+      "C) hydroinfo.hu",
+      "D) met.hu"
+    ],
+    "correct": "B",
+    "explanation": "data.vizugy.hu provides historical records and has been free and open since July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "The EU Floods Directive requiring flood hazard maps is numbered:",
+    "options": [
+      "A) 2000/60/EC",
+      "B) 2007/60/EC",
+      "C) 2010/75/EU",
+      "D) 2014/52/EU"
+    ],
+    "correct": "B",
+    "explanation": "The EU Floods Directive 2007/60/EC requires assessment and management of flood risks including hazard and risk maps."
+  },
+  {
+    "type": "mcq",
+    "question": "What EPSG code does the Hungarian EOV coordinate system use?",
+    "options": [
+      "A) EPSG:4326",
+      "B) EPSG:3857",
+      "C) EPSG:23700",
+      "D) EPSG:32633"
+    ],
+    "correct": "C",
+    "explanation": "EOV (Egysges Orszagos Vetulet) uses EPSG:23700 as its spatial reference."
+  },
+  {
+    "type": "mcq",
+    "question": "What does EFAS stand for?",
+    "options": [
+      "A) European Flood Awareness System",
+      "B) Environmental Flow Assessment Service",
+      "C) Emergency Flood Alert System",
+      "D) European Forecasting and Assessment Service"
+    ],
+    "correct": "A",
+    "explanation": "EFAS is the European Flood Awareness System, operated by ECMWF under the Copernicus Emergency Management Service."
+  },
+  {
+    "type": "mcq",
+    "question": "What vertical datum does the United States use for elevation?",
+    "options": [
+      "A) WGS84",
+      "B) NAVD88",
+      "C) Baltic Height System",
+      "D) EGM96"
+    ],
+    "correct": "B",
+    "explanation": "NAVD88 (North American Vertical Datum of 1988) is the standard vertical datum for elevations in the United States."
+  },
+  {
+    "type": "mcq",
+    "question": "What vertical datum does Hungary use?",
+    "options": [
+      "A) NAVD88",
+      "B) Amsterdam Ordnance Datum",
+      "C) Baltic Height System",
+      "D) Kronstadt Datum"
+    ],
+    "correct": "C",
+    "explanation": "Hungary uses the Baltic Height System for its vertical datum."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hungarian name for oxbow lakes along the Tisza?",
+    "options": [
+      "A) Kunhalmok",
+      "B) Morotvak / holtagak",
+      "C) Hullamter",
+      "D) Gatok"
+    ],
+    "correct": "B",
+    "explanation": "Morotvak and holtagak are Hungarian terms for oxbow lakes formed by abandoned river meanders."
+  },
+  {
+    "type": "mcq",
+    "question": "What Hungarian word refers to the flood-control levees along the Tisza?",
+    "options": [
+      "A) Holtagak",
+      "B) Hullamter",
+      "C) Gatok",
+      "D) Meder"
+    ],
+    "correct": "C",
+    "explanation": "Gatok (singular: gat) are the flood-control levees that confine the Tisza."
+  },
+  {
+    "type": "mcq",
+    "question": "In HAND-based agricultural zoning, areas with HAND < 2 m are suitable for:",
+    "options": [
+      "A) Orchards and permanent structures",
+      "B) All annual crops",
+      "C) Only flood-tolerant uses like riparian forest or wet meadow",
+      "D) Industrial buildings"
+    ],
+    "correct": "C",
+    "explanation": "HAND < 2 m areas face frequent flooding and should be limited to flood-tolerant land uses."
+  },
+  {
+    "type": "mcq",
+    "question": "In arid environments, low HAND values indicate vulnerability to:",
+    "options": [
+      "A) Drought",
+      "B) Windstorms",
+      "C) Flash flooding",
+      "D) Groundwater contamination"
+    ],
+    "correct": "C",
+    "explanation": "In arid landscapes, low HAND indicates vulnerability to flash floods in wadis and arroyos."
+  },
+  {
+    "type": "mcq",
+    "question": "In mountainous terrain, the flat-water assumption of HAND becomes less valid because:",
+    "options": [
+      "A) Mountains have no streams",
+      "B) Mountain streams have steep gradients with sloping water surfaces",
+      "C) HAND cannot be computed on steep slopes",
+      "D) Mountain DEM data is always poor quality"
+    ],
+    "correct": "B",
+    "explanation": "Mountain streams have steep gradients, turbulent flow, and water surfaces that slope significantly downstream, violating HAND's flat-water assumption."
+  },
+  {
+    "type": "mcq",
+    "question": "The HAND raster is described as a 'permanent piece of infrastructure' because:",
+    "options": [
+      "A) It must be recomputed every flood event",
+      "B) The terrain processing is done once, then reused with any flood scenario",
+      "C) It is stored in a permanent database that cannot be updated",
+      "D) It requires permanent internet connectivity"
+    ],
+    "correct": "B",
+    "explanation": "The expensive terrain processing is done once; the resulting HAND raster can be combined with any flood forecast at any time."
+  },
+  {
+    "type": "mcq",
+    "question": "What global DEM is recommended for HAND computation in data-sparse developing countries?",
+    "options": [
+      "A) ASTER GDEM",
+      "B) Copernicus GLO-30",
+      "C) NED",
+      "D) DDM-5"
+    ],
+    "correct": "B",
+    "explanation": "The Copernicus GLO-30 at 30-meter resolution is freely available globally and recommended as the starting point."
+  },
+  {
+    "type": "mcq",
+    "question": "The GRASS GIS module for computing stream distance is:",
+    "options": [
+      "A) r.flow",
+      "B) r.watershed",
+      "C) r.stream.distance",
+      "D) r.terraflow"
+    ],
+    "correct": "C",
+    "explanation": "r.stream.distance offers stream distance computation using GRASS's flow direction framework."
+  },
+  {
+    "type": "mcq",
+    "question": "What Tisza flood year set records at multiple stations with levels exceeding previous maxima by 50-100 cm?",
+    "options": [
+      "A) 1879",
+      "B) 1970",
+      "C) 1998",
+      "D) 2001"
+    ],
+    "correct": "D",
+    "explanation": "The 2001 Tisza flood set records at multiple stations, with water levels exceeding previous maxima by 50-100 cm."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hungarian name for the protected floodplain beyond the levees?",
+    "options": [
+      "A) Hullamter",
+      "B) Mentett arter",
+      "C) Meder",
+      "D) Holdag"
+    ],
+    "correct": "B",
+    "explanation": "Mentett arter (protected floodplain) is the area beyond the levees that is normally protected from flooding."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Tisza's catchment area?",
+    "options": [
+      "A) 50,000 km^2",
+      "B) 93,000 km^2",
+      "C) 157,186 km^2",
+      "D) 300,000 km^2"
+    ],
+    "correct": "C",
+    "explanation": "The Tisza's catchment area of 157,186 km^2 extends across the entire eastern Carpathian arc."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the slope of the Tisza on the Hungarian plain?",
+    "options": [
+      "A) >10 m/km",
+      "B) 1-5 m/km",
+      "C) 0.1-0.5 m/km",
+      "D) <0.05 m/km"
+    ],
+    "correct": "D",
+    "explanation": "On the plain, the Tisza's slope decreases dramatically to less than 0.05 m/km, causing flood waves to slow and spread."
+  },
+  {
+    "type": "mcq",
+    "question": "How do levees appear in the HAND raster?",
+    "options": [
+      "A) As gradual transitions",
+      "B) As sharp discontinuities where HAND values jump",
+      "C) As areas with zero HAND",
+      "D) As NoData zones"
+    ],
+    "correct": "B",
+    "explanation": "Levees create sharp HAND discontinuities: low values on the river side, jumping to higher values behind the levee."
+  },
+  {
+    "type": "mcq",
+    "question": "Remnant floodplain features like old meanders appear in the HAND surface as:",
+    "options": [
+      "A) High-HAND ridges",
+      "B) NoData zones",
+      "C) Elongated zones of low HAND values following abandoned channels",
+      "D) Uniform HAND values"
+    ],
+    "correct": "C",
+    "explanation": "Old channels remain visible as low-HAND zones extending away from the modern channel, correctly identifying them as flood-vulnerable."
+  },
+  {
+    "type": "mcq",
+    "question": "What artificial mounds did Hungarian settlers historically build on the Tisza plain?",
+    "options": [
+      "A) Gatok",
+      "B) Kunhalmok",
+      "C) Morotvak",
+      "D) Hullamterek"
+    ],
+    "correct": "B",
+    "explanation": "Kunhalmok (Cuman mounds) are artificial mounds that provided elevated settlement sites on the flood-prone plain."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the vertical accuracy of the Copernicus GLO-30 DEM?",
+    "options": [
+      "A) <0.5 m",
+      "B) <1.5 m",
+      "C) <4 m (LE90)",
+      "D) <10 m"
+    ],
+    "correct": "C",
+    "explanation": "The Copernicus GLO-30 has a reported vertical accuracy of less than 4 m (LE90)."
+  },
+  {
+    "type": "mcq",
+    "question": "For a DEM with 2 m RMSE, a HAND value of 1.5 m could actually be anywhere from:",
+    "options": [
+      "A) 0.5 to 2.5 m",
+      "B) -0.5 to 3.5 m",
+      "C) 1.0 to 2.0 m",
+      "D) -1.5 to 4.5 m"
+    ],
+    "correct": "B",
+    "explanation": "With 2 m RMSE, the true value could be approximately 1.5 plus or minus 2 m, so -0.5 to 3.5 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The Renn\\'o et al. paper that developed the HAND methodology further was published in:",
+    "options": [
+      "A) 2005",
+      "B) 2008",
+      "C) 2011",
+      "D) 2016"
+    ],
+    "correct": "B",
+    "explanation": "Renno, Nobre, Cuartas et al. published their methodological development paper in Remote Sensing of Environment in 2008."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND measures the vertical distance from a point to the nearest stream, following the hydrologic flow path.",
+    "correct": true,
+    "explanation": "HAND traces the flow path downhill to determine the nearest drainage point, not the straight-line distance."
+  },
+  {
+    "type": "true_false",
+    "question": "A building at 250 m absolute elevation is always at greater flood risk than one at 82 m.",
+    "correct": false,
+    "explanation": "The chapter's Hungarian example shows the opposite: the 82 m point (3 m above river) is at far greater risk than the 250 m point (160 m above river)."
+  },
+  {
+    "type": "true_false",
+    "question": "In the HAND raster, upstream headwater stream cells have high HAND values because they are at high elevation.",
+    "correct": false,
+    "explanation": "All stream cells receive HAND = 0 regardless of their absolute elevation. HAND is relative to the local stream."
+  },
+  {
+    "type": "true_false",
+    "question": "If flood depth in a stream is 4 m, a cell with HAND = 3 m would be inundated to a depth of 1 m.",
+    "correct": true,
+    "explanation": "Inundation depth = flood depth - HAND = 4 - 3 = 1 m."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND surface is sometimes called a 'stream-normalized DEM.'",
+    "correct": true,
+    "explanation": "HAND transforms the DEM from an absolute reference frame to a stream-relative reference frame, hence the term."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND was originally developed for flood mapping in the United States.",
+    "correct": false,
+    "explanation": "HAND was coined by Antonio Donato Nobre for ecological zone mapping in the Amazon basin, Brazil."
+  },
+  {
+    "type": "true_false",
+    "question": "The Amazonian ecological zones mapped with HAND include varzea, igapo, and terra firme forests.",
+    "correct": true,
+    "explanation": "These zones are distinguished by their elevation above the nearest river, which HAND directly measures."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND can be computed from a raw, unconditioned DEM without any preprocessing.",
+    "correct": false,
+    "explanation": "HAND requires a hydrologically conditioned DEM (pit-filled), flow directions, and a stream network from the complete terrain processing chain of Chapters 9-11."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM with 10 cm vertical RMSE produces HAND values precise enough to identify individual levee features.",
+    "correct": true,
+    "explanation": "LiDAR-derived DEMs with 10-20 cm accuracy provide HAND values sufficient to resolve terraces and levee features on floodplains."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 flow directions are strongly preferred over D-infinity for HAND computation.",
+    "correct": false,
+    "explanation": "D-infinity is strongly preferred because it produces smooth HAND surfaces without the streaking artifacts that D8 creates."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND algorithm processes cells by tracing individual flow paths from each cell down to the stream.",
+    "correct": false,
+    "explanation": "The algorithm sweeps upslope from stream cells, processing each cell once. Tracing individual paths would involve redundant computation."
+  },
+  {
+    "type": "true_false",
+    "question": "The D-infinity HAND value for a cell corresponds exactly to one specific physical flow path.",
+    "correct": false,
+    "explanation": "It is a weighted average over multiple flow paths and should be interpreted as representative, not corresponding to any single path."
+  },
+  {
+    "type": "true_false",
+    "question": "Using a rasterized vector stream network directly for HAND computation is recommended best practice.",
+    "correct": false,
+    "explanation": "Vector streams may not align with DEM valleys. The stream network should be derived from the DEM to ensure internal consistency."
+  },
+  {
+    "type": "true_false",
+    "question": "The filled DEM should be used as the surface raster for HAND computation, not the original.",
+    "correct": true,
+    "explanation": "Using the original DEM with filled-DEM flow directions creates inconsistencies including negative HAND values."
+  },
+  {
+    "type": "true_false",
+    "question": "Negative HAND values are physically meaningful and indicate areas below the stream.",
+    "correct": false,
+    "explanation": "Negative HAND values are artifacts of inconsistency between the DEM and flow directions, not physical reality."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM's parallel implementation can reduce HAND computation time by an order of magnitude on modern workstations.",
+    "correct": true,
+    "explanation": "Using MPI on 16 or 32 cores can reduce computation time by an order of magnitude compared to single-threaded execution."
+  },
+  {
+    "type": "true_false",
+    "question": "The maximum HAND value in a watershed is always equal to the total relief of the watershed.",
+    "correct": false,
+    "explanation": "Maximum HAND is always less than or equal to total relief and typically much less, because HAND measures only the drop to the nearest stream."
+  },
+  {
+    "type": "true_false",
+    "question": "On the Great Hungarian Plain, even small HAND differences of 1-2 m can represent the difference between annual and decadal flooding.",
+    "correct": true,
+    "explanation": "The extreme flatness means that small elevation differences have enormous practical importance for land use and insurance."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 HAND surfaces produce smooth flood extent boundaries when thresholded.",
+    "correct": false,
+    "explanation": "D8 produces ragged, stepwise boundaries due to the discrete nature of its flow direction assignment."
+  },
+  {
+    "type": "true_false",
+    "question": "The RMSE of a HAND surface is at least as large as the RMSE of the underlying DEM.",
+    "correct": true,
+    "explanation": "HAND involves the difference between two elevation values, both carrying uncertainty, so HAND uncertainty is at least as large."
+  },
+  {
+    "type": "true_false",
+    "question": "The US continental HAND dataset was computed at 1-meter resolution.",
+    "correct": false,
+    "explanation": "It was computed at 10-meter resolution using the National Elevation Dataset. One-meter processing represents the next frontier."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza flows within Hungary for approximately 596 km.",
+    "correct": true,
+    "explanation": "Within Hungary, the Tisza crosses 596 km of predominantly flat terrain."
+  },
+  {
+    "type": "true_false",
+    "question": "The 19th-century Tisza regulation works lengthened the river by adding new meander bends.",
+    "correct": false,
+    "explanation": "The regulation shortened the river by nearly 500 km through channel cutoffs, not lengthened it."
+  },
+  {
+    "type": "true_false",
+    "question": "Levees appear as sharp discontinuities in the HAND surface on the Tisza floodplain.",
+    "correct": true,
+    "explanation": "HAND values jump from low (0-4 m) on the river side to higher (5-8 m) behind the levee."
+  },
+  {
+    "type": "true_false",
+    "question": "Modern suburban development on the Tisza plain has sometimes extended into areas with HAND values of only 2-4 m.",
+    "correct": true,
+    "explanation": "Recent development has encroached into low-HAND areas that traditional settlement avoided."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND is a complete replacement for detailed hydraulic modeling with HEC-RAS.",
+    "correct": false,
+    "explanation": "HAND is an approximate screening tool that complements but does not replace detailed hydraulic modeling. It ignores backwater, momentum, and structure effects."
+  },
+  {
+    "type": "true_false",
+    "question": "GloFAS provides discharge forecasts for every major river on Earth.",
+    "correct": true,
+    "explanation": "GloFAS (Global Flood Awareness System) provides discharge forecasts at 0.05-degree resolution globally."
+  },
+  {
+    "type": "true_false",
+    "question": "No pre-computed national HAND dataset currently exists for Hungary.",
+    "correct": true,
+    "explanation": "All inputs are available (DDM-5, OVF network), but no pre-computed national HAND has been generated."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND computation requires surveyed cross-sections and Manning's roughness coefficients.",
+    "correct": false,
+    "explanation": "HAND requires only a DEM and stream network. It does not need cross-sections, roughness coefficients, or calibration data."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza floodplain near Szolnok, the area between levees (hullamter) has HAND values of 0-4 m.",
+    "correct": true,
+    "explanation": "The hullamter, typically 500 m to 3 km wide, has low HAND values consistent with regular flood inundation."
+  },
+  {
+    "type": "true_false",
+    "question": "Data from the Hungarian OVF gauge network at data.vizugy.hu has been free and open since July 2024.",
+    "correct": true,
+    "explanation": "The text states gauge data are available through data.vizugy.hu, free and open since July 2024."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND in arid environments is useless because streams are ephemeral.",
+    "correct": false,
+    "explanation": "HAND is still applicable in arid environments but with modified interpretation, indicating vulnerability to flash flooding."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza's flood characteristics are moderate by Central European standards.",
+    "correct": false,
+    "explanation": "The Tisza's flood characteristics are described as extreme by Central European standards."
+  },
+  {
+    "type": "true_false",
+    "question": "The total number of grid cells for Hungary at 5-meter resolution is within the capability of a modern multi-core workstation.",
+    "correct": true,
+    "explanation": "Approximately 1.9 billion cells is well within the capability of modern workstations or modest HPC allocations."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND can be computed for any location on Earth where a DEM and stream network exist.",
+    "correct": true,
+    "explanation": "With global DEMs (Copernicus GLO-30, MERIT) and river networks (HydroSHEDS), HAND is feasible anywhere."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND has the same direct physical meaning as topographic wetness index or slope-area diagrams.",
+    "correct": false,
+    "explanation": "Unlike those derived indices, HAND has a direct physical meaning: it is the minimum flood depth required to inundate a point."
+  },
+  {
+    "type": "true_false",
+    "question": "The WhiteboxTools HAND function is called 'ElevAboveStream.'",
+    "correct": true,
+    "explanation": "WhiteboxTools provides the ElevAboveStream function for HAND computation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza's drainage basin extends across the eastern Carpathian arc into Ukraine, Romania, and other countries.",
+    "correct": true,
+    "explanation": "The 157,186 km^2 basin extends across the eastern Carpathian arc through multiple countries."
+  },
+  {
+    "type": "true_false",
+    "question": "The 2006 Tisza flood produced record water levels at several Hungarian stations.",
+    "correct": true,
+    "explanation": "The chapter lists 2006 among the devastating modern Tisza floods that produced record water levels."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND-based flood maps show which areas could potentially be flooded, representing an upper bound on actual flood extent.",
+    "correct": true,
+    "explanation": "The steady-state assumption means HAND shows everywhere that could be flooded, not the time-varying extent of an actual event."
+  },
+  {
+    "type": "true_false",
+    "question": "Edge effects from tiles that clip watershed boundaries can introduce errors in HAND computation.",
+    "correct": true,
+    "explanation": "Tile boundaries crossing areas of interest can cause incorrect results; TauDEM handles this with overlapping buffer zones."
+  },
+  {
+    "type": "true_false",
+    "question": "Approximately 10 billion grid cells were processed for the continental US HAND computation at 10-meter resolution.",
+    "correct": true,
+    "explanation": "The National Elevation Dataset contained approximately 10 billion cells at 10-meter resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "Horizontal distance to the stream is always a better flood predictor than vertical distance (HAND).",
+    "correct": false,
+    "explanation": "HAND (vertical distance) is the most practically important measure because it directly corresponds to the minimum flood depth needed for inundation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian DDM-5 is available from the Lechner Knowledge Centre.",
+    "correct": true,
+    "explanation": "Lechner Tudaskozpont (Lechner Knowledge Centre) produces and distributes the DDM-5."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS is operated by the Hungarian OVF.",
+    "correct": false,
+    "explanation": "EFAS is operated by ECMWF under the Copernicus Emergency Management Service. OVF is an EFAS partner agency."
+  },
+  {
+    "type": "true_false",
+    "question": "In the HAND naming convention, the suffix '_str' represents the stream raster.",
+    "correct": true,
+    "explanation": "The recommended naming convention uses _str for the binary stream raster (e.g., tisza_str.tif)."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza's gradient on the Hungarian plain is roughly 3-5 cm per kilometer.",
+    "correct": true,
+    "explanation": "The extreme flatness gives the Tisza a gradient of only 3-5 cm/km on the plain."
+  },
+  {
+    "type": "true_false",
+    "question": "The comparison between HAND-based and official Hungarian flood maps typically shows good agreement within the hullamter.",
+    "correct": true,
+    "explanation": "For the floodplain between levees, both HAND and official maps identify the same low-lying terrain as flood-prone."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND provides a worst-case scenario for the protected floodplain, showing what would happen if a levee breached.",
+    "correct": true,
+    "explanation": "Official maps assume levees hold, while HAND shows vulnerability regardless of infrastructure, answering 'what is the worst that could happen?'"
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND stands for Height Above _____ Drainage.",
+    "correct": "Nearest",
+    "explanation": "HAND measures the vertical distance from each point to the nearest stream channel along the flow path."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND was coined by the Brazilian researcher _____.",
+    "correct": "Antonio Donato Nobre",
+    "explanation": "Nobre developed the concept while studying Amazonian ecosystems."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Amazon basin, HAND distinguishes between varzea, igapo, and _____ forests.",
+    "correct": "terra firme",
+    "explanation": "Terra firme (upland) forests are the third ecological zone, elevated well above river flood level."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND transformation converts a DEM from an absolute reference frame to a _____-relative reference frame.",
+    "correct": "stream",
+    "explanation": "Every stream cell becomes zero, and all other cells report their height above the nearest stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "If flood depth d exceeds a cell's HAND value h, the inundation depth at that cell equals _____.",
+    "correct": "d - h",
+    "explanation": "The simple arithmetic d minus HAND gives the local flood depth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The five proximity measures formalized by _____ et al. (2011) can all be computed from D-infinity flow paths.",
+    "correct": "Tesfa",
+    "explanation": "Tesfa, Tarboton, Watson, Schreuders, Baker, and Wallace formalized the generalized proximity measure framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The sum of vertical distance to the ridge and vertical distance to the stream equals the total local _____ of the hillslope.",
+    "correct": "relief",
+    "explanation": "Total relief = ridge height - channel elevation along the flow path through any point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "David _____ and David _____ were key collaborators in transforming HAND from a research tool to operational infrastructure.",
+    "correct": "Maidment, Tarboton",
+    "explanation": "Maidment at UT Austin and Tarboton at Utah State were the key figures in the US HAND development."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D-infinity flow model distributes flow _____ between two downslope neighbors based on the continuous flow angle.",
+    "correct": "proportionally",
+    "explanation": "Unlike D8 which sends all flow to one neighbor, D-infinity partitions flow proportionally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 HAND on smooth hillslopes produces _____ artifacts that appear as narrow lines of slightly different values.",
+    "correct": "streaking",
+    "explanation": "The discrete nature of D8 flow direction creates artificial parallel patterns on smooth terrain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the HAND algorithm, Step 1 initializes all stream cells to HAND = _____.",
+    "correct": "0",
+    "explanation": "Stream cells are the known anchor values from which the upslope sweep begins."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND_i = sum_k [p_k * (HAND_k + (Z_i - _____))]",
+    "correct": "Z_k",
+    "explanation": "Z_k is the elevation of the downslope neighbor cell k, and Z_i - Z_k is the local elevation drop."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Using the original unfilled DEM for HAND computation can produce _____ HAND values, which are physically nonsensical.",
+    "correct": "negative",
+    "explanation": "Inconsistency between unfilled elevations and filled-DEM flow directions can make cells appear below the stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In ArcGIS Pro, the Flow Distance tool with Distance type = _____ and Flow direction type = DINF computes HAND.",
+    "correct": "VERTICAL",
+    "explanation": "These settings specify vertical distance (HAND) using D-infinity flow directions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's HAND function is called _____.",
+    "correct": "DinfDistDown",
+    "explanation": "DinfDistDown computes D-infinity vertical distance down to the stream network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The mpiexec -n 8 flag in TauDEM means use _____ processors for parallel computation.",
+    "correct": "8",
+    "explanation": "The -n flag specifies the number of MPI processes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended naming suffix for a HAND raster is _____.",
+    "correct": "_hand",
+    "explanation": "For example, tisza_hand.tif consistently identifies the file as a HAND product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For the Onion Creek watershed, maximum HAND is approximately _____ m despite 400 m total relief.",
+    "correct": "122",
+    "explanation": "HAND measures only the local drop to the nearest stream, not the total drop to the watershed outlet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND values on the Tisza plain between Szolnok and Szeged range from 0 to about _____ m.",
+    "correct": "8-10",
+    "explanation": "Total relief is only about 14 m in this extremely flat landscape."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A recommended HAND visualization class for 0-1 m (extreme flood risk) uses _____ blue color.",
+    "correct": "dark",
+    "explanation": "Dark blue highlights the most flood-prone areas near stream level."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The continental US HAND was computed on the _____ and _____ supercomputers.",
+    "correct": "Roger, Stampede",
+    "explanation": "Roger at NCSA and Stampede at TACC processed the 10-billion-cell dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's total length is _____ km.",
+    "correct": "966",
+    "explanation": "The river flows 966 km from Ukraine through multiple countries to the Danube."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 19th-century Tisza regulation was completed between 1846 and _____.",
+    "correct": "1879",
+    "explanation": "The regulation works shortened the river by nearly 500 km through channel cutoffs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The area between Tisza levees is called _____ in Hungarian.",
+    "correct": "hullamter",
+    "explanation": "Hullamter is the active floodplain between the levees that still experiences regular flooding."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The protected floodplain beyond the levees is called _____ in Hungarian.",
+    "correct": "mentett arter",
+    "explanation": "Mentett arter is the area protected from flooding by the levee system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Artificial mounds on the Hungarian plain used for historical settlement are called _____.",
+    "correct": "kunhalmok",
+    "explanation": "Kunhalmok (Cuman mounds) provided elevated sites on the flood-prone Great Plain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EU Floods Directive was enacted in the year _____.",
+    "correct": "2007",
+    "explanation": "Directive 2007/60/EC requires member states to produce flood hazard and risk maps."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's best national DEM for HAND computation is the _____ at 5-meter resolution.",
+    "correct": "DDM-5",
+    "explanation": "The DDM-5 from Lechner Knowledge Centre is the best nationally available product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < _____ m roughly corresponds to the 100-year floodplain concept.",
+    "correct": "5",
+    "explanation": "HAND < 5 m identifies areas at risk from 50-100 year floods on major rivers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's catchment area is approximately _____ km^2.",
+    "correct": "157,186",
+    "explanation": "This large catchment extends across the eastern Carpathian arc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In HAND computation for the middle Tisza, the recommended DEM buffer beyond the study area is at least _____ km.",
+    "correct": "5",
+    "explanation": "A 5 km buffer avoids edge effects in the HAND computation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND values within permanent water bodies like Lake _____ are physically meaningless.",
+    "correct": "Balaton",
+    "explanation": "Lake Balaton at 594 km^2 must be masked out during HAND-based flood analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The global river network dataset from HydroSHEDS is called _____.",
+    "correct": "HydroRIVERS",
+    "explanation": "HydroRIVERS provides pre-computed stream networks derived from SRTM data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian EOV coordinate system has EPSG code _____.",
+    "correct": "23700",
+    "explanation": "EPSG:23700 defines the EOV (Egysges Orszagos Vetulet) projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF stands for Orszagos Vizugyi _____.",
+    "correct": "Foigazgatosag",
+    "explanation": "OVF is the General Directorate of Water Management, responsible for Hungarian flood defense."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's slope on the Hungarian plain is less than _____ m/km.",
+    "correct": "0.05",
+    "explanation": "This extreme flatness causes flood waves to slow and spread over vast areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 1879 Tisza flood destroyed the city of _____ and killed 151 people.",
+    "correct": "Szeged",
+    "explanation": "This was one of Hungary's worst flood disasters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza regulation works shortened the river by nearly _____ km.",
+    "correct": "500",
+    "explanation": "Channel cutoffs (atvasagok) dramatically shortened the river's course."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT Hydro was developed by Dai Yamazaki at the University of _____.",
+    "correct": "Tokyo",
+    "explanation": "MERIT Hydro provides global hydrologically conditioned elevation data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The continental HAND dataset processed approximately _____ billion grid cells.",
+    "correct": "10",
+    "explanation": "The National Elevation Dataset at 10-meter resolution contained about 10 billion cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus GLO-30 DEM has a vertical accuracy of less than _____ meters (LE90).",
+    "correct": "4",
+    "explanation": "This accuracy is adequate for large rivers but marginal for small streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the 'soft burn-in' approach, elevations are lowered only where the DEM _____ along the known stream path.",
+    "correct": "increases",
+    "explanation": "Only the minimum necessary adjustments are made to maintain downstream flow continuity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NED at 10-meter resolution has a vertical RMSE of approximately _____ m.",
+    "correct": "2.3",
+    "explanation": "This 2.3 m RMSE directly limits the precision of HAND values computed from NED data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For the Tisza floodplain, a finer HAND classification with _____-metre intervals in the 0-5 m range may be more informative.",
+    "correct": "0.5",
+    "explanation": "The extreme flatness means small HAND differences represent the boundary between annual and decadal flooding."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why absolute elevation is a poor predictor of flood risk and how HAND resolves this problem, using the Hungarian example of Szolnok and the Buda Hills.",
+    "correct": "A point at 82 m on the Tisza floodplain near Szolnok sits just 3 m above the river (79 m), making it highly flood-prone. A point at 250 m in the Buda Hills sits 160 m above the Danube (90 m) with zero flood risk. Absolute elevation suggests the lower point is more dangerous, which is correct, but fails to distinguish between a point at 82 m near the Tisza and one at 82 m far from any river. HAND resolves this by measuring each point's height above its nearest stream via the flow path, directly indicating the minimum flood depth required for inundation. HAND makes flood vulnerability immediately quantifiable.",
+    "explanation": "The key insight is that flooding depends on local relative elevation above the nearest watercourse, not position above a distant geodetic datum."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the HAND computation algorithm, including initialization, the ready queue concept, and the upslope sweep approach.",
+    "correct": "The algorithm begins by setting HAND = 0 for all stream cells. Non-stream cells adjacent to stream cells whose D-infinity flow directions point into computed cells are placed in a 'ready queue.' Each ready cell's HAND is computed as a weighted sum: HAND_i = sum(p_k * (HAND_k + Z_i - Z_k)), where p_k are D-infinity flow proportions. After computation, upslope neighbors are checked for readiness. The sweep progresses from streams to ridges, processing each cell exactly once. This is efficient because it avoids redundant path tracing and exploits the known stream values as anchors.",
+    "explanation": "The upslope sweep from stream cells is analogous to flow accumulation but in the reverse direction."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the stream network alignment problem for HAND computation and describe the channel-head weighted accumulation solution.",
+    "correct": "Vector stream networks (NHDPlus, EU-Hydro) were digitized independently of DEMs, so rasterized stream cells may not coincide with DEM valley floors. A stream displaced 2-3 cells from the actual valley produces systematic HAND errors of that magnitude. The solution uses channel-head weighted accumulation: extract upstream endpoints from the vector network, rasterize them, run D8 weighted flow accumulation with the channel-head raster as weight, then threshold at 1. This produces streams that begin at mapped locations but follow DEM valleys downstream, ensuring internal consistency.",
+    "explanation": "Never use a rasterized vector stream directly for HAND; always derive streams from the DEM using channel heads as anchor points."
+  },
+  {
+    "type": "essay",
+    "question": "Compare D8 and D-infinity flow directions for HAND computation, explaining why D-infinity is preferred especially for flat terrain like the Hungarian Great Plain.",
+    "correct": "D8 assigns each cell a single flow direction to one of eight neighbors, creating narrow discrete paths that converge like leaf veins. On smooth hillslopes, this produces streaking artifacts in the HAND surface. D-infinity distributes flow proportionally between two neighbors based on the continuous slope angle, producing smooth HAND surfaces. On the extremely flat Great Plain where slopes are fractions of a degree, D8 creates severe parallel striping, while D-infinity produces smooth, continuous flood extent boundaries. When thresholded for flood mapping, D-infinity HAND gives realistic boundaries while D8 gives ragged, stepwise ones. The preference for D-infinity is consistent with best practice and comes at negligible additional cost.",
+    "explanation": "The Great Hungarian Plain is an extreme test case where D8 artifacts are most visible and consequential."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Tisza River's flood characteristics and explain why HAND is particularly relevant for Hungarian flood management.",
+    "correct": "The Tisza drains 157,186 km^2 from the Carpathian Mountains through the extremely flat Great Plain where the gradient drops to <0.05 m/km. Flood waves slow dramatically and spread over vast areas. The natural floodplain covered 22,000 km^2 before 19th-century regulation shortened the river by 500 km. Major floods in 1879, 1970, 1998-2001, and 2006 demonstrate ongoing risk. HAND is particularly relevant because the Plain has minimal relief (0-10 m HAND range) where tiny elevation differences determine flooding. Absolute elevation reveals nothing, but HAND distinguishes flood-vulnerable from flood-safe areas within this nearly flat landscape.",
+    "explanation": "The combination of extreme flatness, large catchment area, and extensive levee systems makes HAND the ideal tool for Tisza flood assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the five terrain-derived proximity measures formalized by Tesfa et al. (2011) and discuss why HAND has proven the most practically important.",
+    "correct": "The five measures are: (1) horizontal distance to stream along flow path, (2) vertical distance to stream (HAND), (3) slope distance to stream along terrain surface, (4) horizontal distance to ridge, and (5) vertical distance to ridge. Together they describe a point's complete hillslope position. HAND has proven most important because it has a direct, quantitative relationship to flood depth: if stream depth exceeds HAND, the point floods. No other measure provides this immediate connection. Horizontal distance indicates travel time but not flood vulnerability. Ridge distances indicate upland position but not flood exposure. HAND alone answers 'will this point flood?'",
+    "explanation": "Among all proximity measures, only HAND directly predicts the minimum flood depth needed for inundation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the evolution of HAND from Antonio Nobre's Brazilian research to operational deployment at the US National Water Center.",
+    "correct": "Nobre coined HAND in the mid-2000s for mapping Amazonian ecological zones (varzea, igapo, terra firme) based on relative elevation above rivers. Renno et al. (2008) developed the methodology further. The transformation to operational infrastructure was driven by Maidment, Tarboton, and collaborators at UT Austin and Utah State. Key advances included TauDEM's parallel D-infinity implementation, Tesfa et al.'s (2011) theoretical framework for proximity measures, and Zheng, Liu et al.'s massive computational effort producing HAND for the entire US at 10-meter resolution. Today, the continental HAND dataset is operationally deployed at the National Water Center in Tuscaloosa, Alabama.",
+    "explanation": "HAND evolved from a regional ecological mapping tool to a cornerstone of national flood forecasting infrastructure."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the filled DEM should be used as the surface raster for HAND computation rather than the original DEM.",
+    "correct": "Three reasons: (1) Physical consistency: flow directions were computed from the filled DEM, so using the original creates cells pointing to neighbors that may be higher in the original, producing negative HAND values. (2) Artifact removal: sinks in the original DEM are artifacts; the filled DEM is the best approximation of true terrain. (3) Monotonic accumulation: the filled DEM ensures HAND values increase monotonically upslope from streams. With the original DEM, pit cells may have lower HAND than downstream neighbors, complicating flood delineation. The exception is high-resolution LiDAR where aggressive filling may alter legitimate features.",
+    "explanation": "Internal consistency between the DEM and its derived flow directions is essential for physically meaningful HAND values."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how levees along the Tisza appear in the HAND raster and what information this provides for flood defense.",
+    "correct": "Levees appear as sharp discontinuities in the HAND surface. On the river side (hullamter), HAND values are low (0-4 m). Immediately behind the levee, values jump to 5-8 m because the protected area drains away from the levee toward secondary channels. This discontinuity directly measures the levee's protective effect: the higher the HAND value behind the levee, the greater flood depth the levee can withstand. This information helps identify weak points (low HAND jumps) and assess breach consequences. Remnant floodplain features like old meanders remain visible as low-HAND zones extending from the modern channel.",
+    "explanation": "HAND reveals the levee system's effectiveness and identifies vulnerable areas invisible in absolute elevation data."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the data available for HAND computation in the United States versus Hungary, and discuss the implications for flood vulnerability assessment.",
+    "correct": "The US has 3DEP providing 10-meter LiDAR-derived DEMs with NHDPlus providing 2.7 million stream reaches, enabling continental HAND at 10-meter resolution. Hungary has the DDM-5 at 5-meter resolution (contour-derived, 1-2 m accuracy) and OVF river network. No pre-computed national HAND exists for Hungary. Computing HAND for all of Hungary at 5-meter resolution (~1.9 billion cells) is feasible on a modern workstation. For areas needing better data, the Copernicus EEA-10 or GLO-30 provide alternatives, but being DSMs rather than bare-earth DEMs, they introduce vegetation bias. Hungary's flood mapping precision is fundamentally limited by the lack of nationwide LiDAR.",
+    "explanation": "Data availability directly determines the precision of HAND-based flood mapping and emergency response capability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the limitations of HAND for flood mapping, including the steady-state assumption, backwater effects, and stream definition sensitivity.",
+    "correct": "Key limitations include: (1) Steady-state assumption: HAND assumes water at a given depth instantly fills all terrain below that depth, representing an upper bound on actual flood extent. Real floods propagate over time with varying water surfaces. (2) No backwater effects: bridges, dams, and confluences cause water to pile up, which HAND cannot represent. (3) Stream definition sensitivity: changing the threshold changes HAND values; denser networks produce lower HAND. (4) DEM limitations: radar-derived DEMs report canopy height, not ground, producing inflated HAND values. Despite these limitations, HAND's simplicity, speed, and scalability make it invaluable as a screening tool.",
+    "explanation": "Understanding HAND's limitations is essential for correct interpretation and appropriate application."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HAND can be applied in arid and semi-arid environments, and discuss the differences from its application in humid environments.",
+    "correct": "In arid environments, drainage networks consist of ephemeral channels (wadis, arroyos) that carry water only during and after rainfall. HAND remains applicable but with modified interpretation: low HAND values indicate vulnerability to flash flooding rather than sustained riverine flooding. Stream definition must rely on contributing-area thresholds rather than mapped perennial streams, since many ephemeral channels are unmapped. The Copernicus DEM and SRTM provide adequate data for wadi delineation. Flash floods are brief and intense, so the steady-state assumption may be more problematic than for slow-rising floods in humid environments.",
+    "explanation": "HAND's fundamental principle applies in any environment with drainage channels, but interpretation varies with hydrologic regime."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of HAND as pre-computed infrastructure and its significance for real-time flood forecasting.",
+    "correct": "The expensive terrain processing (DEM conditioning, flow directions, stream derivation, HAND computation) is done once, creating a permanent product. When a new forecast arrives, converting it to a flood map requires only comparing predicted depth against pre-computed HAND values, which takes seconds for millions of cells. This 'pre-compute terrain, apply forecast in real time' architecture enables continental-scale flood mapping with update cycles of minutes. At the National Water Center, HAND underpins real-time inundation mapping for 2.7 million stream reaches. Without pre-computation, generating flood maps from scratch for each forecast would be computationally impossible at operational timescales.",
+    "explanation": "HAND as infrastructure separates the one-time terrain analysis from the real-time operational forecasting, enabling rapid response."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND-based flood analysis complements the official Hungarian flood maps produced under the EU Floods Directive.",
+    "correct": "Official OVF maps under Directive 2007/60/EC use detailed hydraulic modeling (HEC-RAS) for return periods of 10, 100, and extreme events along major rivers. HAND complements these by: (1) providing coverage of small tributaries not included in official models, (2) offering worst-case scenarios for levee breach situations that official maps don't address, (3) showing agreement within the hullamter where both identify the same low-lying terrain, and (4) enabling rapid screening without hydraulic model setup. HAND answers 'what could happen?' while official maps answer 'what is expected assuming infrastructure works.' Both perspectives are needed for comprehensive flood management.",
+    "explanation": "The complementary nature of HAND screening and detailed hydraulic modeling provides the most complete flood risk picture."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how settlement patterns on the Tisza plain reflect historical understanding of flood risk, using HAND as evidence.",
+    "correct": "Hungarian settlements on the Tisza plain were historically sited on natural topographic highs: river terraces, loess ridges, and artificial mounds (kunhalmok). HAND analysis shows these sites typically have values of 4-8 m, confirming that traditional placement reflected an intuitive understanding of flood vulnerability. Recent suburban and industrial development has extended into areas with HAND values of only 2-4 m, increasing exposure. The HAND surface also reveals that remnant floodplain features (old meanders, morotvak) remain as low-HAND zones correctly identifying them as flood-vulnerable. This demonstrates that HAND quantifies what centuries of human experience had already identified qualitatively.",
+    "explanation": "HAND provides a scientific basis for the flood awareness embedded in traditional settlement patterns."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the weighted-average HAND value from D-infinity flow directions should be interpreted, using the worked Example 2 from the chapter.",
+    "correct": "In Example 2, a cell at 441.22 m drains 60% to cell C (HAND 2.64 m, drop 2.10 m) and 40% to cell D (HAND 1.88 m, drop 2.74 m). The HAND value of 4.69 m does not correspond to any single flow path: via C the total is 4.74 m, via D it is 4.62 m. The value 4.69 m is a weighted average. This averaging produces two practical benefits: smoother HAND surfaces without D8 artifacts, and values that represent the overall height above the stream rather than the height along one arbitrary path. For flood mapping, this is appropriate because real floodwater also spreads laterally rather than following a single path.",
+    "explanation": "The weighted average produces a representative rather than path-specific height, which better matches physical flood behavior."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of DEM quality in HAND precision, comparing SRTM, NED, DDM-5, and LiDAR, and their implications for different applications.",
+    "correct": "SRTM (6-9 m RMSE, 30 m) allows only broad continental screening. NED (2.3 m RMSE, 10 m) enables zone-level flood mapping but HAND values are uncertain by 2-3 m. Hungary's DDM-5 (1-2 m RMSE, 5 m) provides moderate-good HAND precision for local assessment. LiDAR DEMs (0.1-0.2 m RMSE, 1-3 m) identify individual features and buildings. The practical implication is enormous: on the flat Tisza plain where 1-2 m HAND differences separate annual from decadal flooding, NED-quality data cannot distinguish these zones, while LiDAR can. Match DEM quality to application: SRTM for global screening, LiDAR for urban flood risk.",
+    "explanation": "DEM accuracy directly limits HAND precision and therefore the utility of HAND-based flood mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND serves as a foundation for the flood inundation mapping methods of Chapter 15, explaining the connection between HAND values and flood depth.",
+    "correct": "HAND is the terrain foundation for Chapter 15's discharge-to-impact framework. The critical connection is arithmetic: for any cell with HAND value h in a catchment where stream depth is d, the cell floods if d > h, with inundation depth = d - h. This means a pre-computed HAND raster combined with any discharge forecast produces an inundation map in seconds. The HAND raster also enables synthetic rating curves: at each hypothetical depth, counting inundated cells gives the cross-sectional properties needed for Manning's equation. Chapter 15 develops reach-specific depth assignments, inundation libraries, and impact assessment, all built on the HAND foundation.",
+    "explanation": "HAND converts the flood mapping problem from a complex hydraulic simulation to a simple raster comparison."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of HAND for global flood vulnerability assessment, particularly in developing countries that lack detailed flood maps.",
+    "correct": "With Copernicus GLO-30 (30 m) available globally and HydroSHEDS providing stream networks everywhere, HAND is feasible for any location on Earth. While the 4 m vertical accuracy limits precision, the resulting maps are far more informative than absolute elevation alone. For communities in sub-Saharan Africa, South Asia, or the Middle East with no existing flood maps, knowing their HAND value provides actionable information for emergency response. HAND requires no surveyed cross-sections, calibration data, or local expertise, making it deployable where hydraulic models cannot be built. This represents a democratization of flood vulnerability information.",
+    "explanation": "HAND's data parsimony makes it the only practical approach for global flood screening."
+  },
+  {
+    "type": "mcq",
+    "question": "What does 'terra firme' mean in the context of Amazonian HAND applications?",
+    "options": [
+      "A) Permanently flooded forest",
+      "B) Seasonally flooded forest",
+      "C) Upland forest above flood level",
+      "D) Mangrove forest"
+    ],
+    "correct": "C",
+    "explanation": "Terra firme refers to upland forests elevated well above river flood level, distinguished from varzea and igapo by their high HAND values."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the recommended HAND threshold for areas at risk from annual to 10-year floods?",
+    "options": [
+      "A) HAND < 1 m",
+      "B) HAND < 2 m",
+      "C) HAND < 5 m",
+      "D) HAND < 10 m"
+    ],
+    "correct": "B",
+    "explanation": "HAND < 2 m identifies areas generally at risk from annual to 10-year floods on lowland rivers."
+  },
+  {
+    "type": "mcq",
+    "question": "What HAND threshold approximates the outer boundary of flood risk in most planning frameworks?",
+    "options": [
+      "A) HAND < 2 m",
+      "B) HAND < 5 m",
+      "C) HAND < 10 m",
+      "D) HAND < 20 m"
+    ],
+    "correct": "C",
+    "explanation": "HAND < 10 m corresponds to 500-year or greater events, the outer boundary in most flood risk planning."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Tisza plain, HAND values between Szolnok and Szeged have a total relief of only about:",
+    "options": [
+      "A) 2 m",
+      "B) 14 m",
+      "C) 50 m",
+      "D) 200 m"
+    ],
+    "correct": "B",
+    "explanation": "Absolute elevations range from ~76 to ~90 m, giving a total relief of only about 14 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Which university collaboration produced the US continental HAND dataset?",
+    "options": [
+      "A) MIT and Stanford",
+      "B) University of Texas at Austin and Utah State University",
+      "C) Colorado State and Oregon State",
+      "D) Harvard and Columbia"
+    ],
+    "correct": "B",
+    "explanation": "David Maidment (UT Austin) and David Tarboton (Utah State) led the collaboration with NCSA and TACC."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tesfa et al. (2011) paper was published in which journal?",
+    "options": [
+      "A) Water Resources Research",
+      "B) Journal of Hydrology",
+      "C) Environmental Modelling & Software",
+      "D) Remote Sensing of Environment"
+    ],
+    "correct": "C",
+    "explanation": "Tesfa et al. published 'Extraction of hydrological proximity measures from DEMs using parallel processing' in Environmental Modelling & Software."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the vertical datum used in Hungary called?",
+    "options": [
+      "A) NAVD88",
+      "B) Amsterdam Ordnance Datum",
+      "C) Baltic Height System",
+      "D) Genoa datum"
+    ],
+    "correct": "C",
+    "explanation": "Hungary uses the Baltic Height System as its vertical reference datum."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hungarian context, what data source provides surface water maps for masking permanent water bodies?",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) OVF surface water maps",
+      "D) HydroSHEDS"
+    ],
+    "correct": "C",
+    "explanation": "OVF surface water maps in Hungary serve the same role as NHDPlus water body polygons in the US."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Nobre et al. (2011) HAND paper published in?",
+    "options": [
+      "A) Nature",
+      "B) Science",
+      "C) Journal of Hydrology",
+      "D) Geophysical Research Letters"
+    ],
+    "correct": "C",
+    "explanation": "The seminal HAND paper by Nobre et al. was published in the Journal of Hydrology in 2011."
+  },
+  {
+    "type": "mcq",
+    "question": "The Zheng et al. (2018) paper focuses on HAND-derived:",
+    "options": [
+      "A) Soil moisture estimation",
+      "B) River channel geometry and rating curve estimation",
+      "C) Groundwater recharge",
+      "D) Evapotranspiration modeling"
+    ],
+    "correct": "B",
+    "explanation": "Zheng, Tarboton, Maidment, Liu, and Passalacqua published on river channel geometry and rating curve estimation using HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "What HAND classification color is recommended for 5-10 m range?",
+    "options": [
+      "A) Dark blue",
+      "B) Light blue",
+      "C) Yellow",
+      "D) Transparent"
+    ],
+    "correct": "C",
+    "explanation": "Yellow is recommended for HAND 5-10 m (moderate flood risk, inundated only by major floods)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the HAND classification for areas with HAND > 20 m?",
+    "options": [
+      "A) Extreme flood risk",
+      "B) High flood risk",
+      "C) Moderate flood risk",
+      "D) Negligible flood risk"
+    ],
+    "correct": "D",
+    "explanation": "HAND > 20 m is classified as negligible flood risk from riverine flooding."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungarian historic flood events on the Tisza include which series of consecutive years?",
+    "options": [
+      "A) 1990-1993",
+      "B) 1998-2001",
+      "C) 2005-2008",
+      "D) 2010-2013"
+    ],
+    "correct": "B",
+    "explanation": "A series of major floods affected the upper and middle Tisza in 1998, 1999, 2000, and 2001."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'flow algebra' framework for computing HAND uses D-infinity flow partitions as:",
+    "options": [
+      "A) Error estimates",
+      "B) Weights for downstream accumulation",
+      "C) Stream order assignments",
+      "D) Slope corrections"
+    ],
+    "correct": "B",
+    "explanation": "HAND is computed as downstream accumulation of elevation differences weighted by D-infinity flow proportions."
+  },
+  {
+    "type": "mcq",
+    "question": "What feature of the HAND surface makes it immediately understandable to non-specialists?",
+    "options": [
+      "A) It uses complex mathematical indices",
+      "B) It requires specialized software to view",
+      "C) It directly represents minimum flood depth needed to inundate a point",
+      "D) It uses abstract color schemes"
+    ],
+    "correct": "C",
+    "explanation": "HAND's physical interpretability -- direct meaning as minimum flood depth -- makes it accessible to engineers, planners, and the public."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary advantage of HAND's 'data parsimony'?",
+    "options": [
+      "A) It uses the most data of any method",
+      "B) It requires only a DEM and stream network, not cross-sections or calibration data",
+      "C) It processes data faster than any algorithm",
+      "D) It needs fewer computer cores"
+    ],
+    "correct": "B",
+    "explanation": "HAND's minimal data requirements make it applicable where detailed hydraulic data is unavailable -- most of the world's rivers."
+  },
+  {
+    "type": "mcq",
+    "question": "What is Lake Ferto also known as internationally?",
+    "options": [
+      "A) Balaton",
+      "B) Neusiedler See",
+      "C) Tisza-to",
+      "D) Velencei-to"
+    ],
+    "correct": "B",
+    "explanation": "Lake Ferto (Neusiedler See) is a cross-border lake shared between Hungary and Austria."
+  },
+  {
+    "type": "mcq",
+    "question": "The Hungarian word 'atvagas' in the context of Tisza regulation means:",
+    "options": [
+      "A) Levee",
+      "B) Channel cutoff",
+      "C) Floodplain",
+      "D) Bridge"
+    ],
+    "correct": "B",
+    "explanation": "Atvasagok (cutoffs) were made to shorten the Tisza's meandering course during regulation."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND values are always positive or zero for valid computations.",
+    "correct": true,
+    "explanation": "Stream cells have HAND = 0 and all other cells should have positive values. Negative values indicate computational artifacts."
+  },
+  {
+    "type": "true_false",
+    "question": "Horizontal distance to the stream is a better predictor of flood vulnerability than HAND.",
+    "correct": false,
+    "explanation": "Vertical distance (HAND) directly indicates flood depth needed for inundation; horizontal distance does not."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND surface retains the systematic elevation trends found in the original DEM.",
+    "correct": false,
+    "explanation": "HAND eliminates systematic trends -- stream cells at any elevation receive zero, and values depend only on local terrain relative to nearest stream."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tesfa et al. framework shows that all five proximity measures can be computed as special cases of a single flow algebra.",
+    "correct": true,
+    "explanation": "Tesfa et al. (2011) demonstrated that HAND and related measures are special cases of generalized weighted distances along D-infinity paths."
+  },
+  {
+    "type": "true_false",
+    "question": "The Renno et al. (2008) paper preceded the Nobre et al. (2011) paper chronologically.",
+    "correct": true,
+    "explanation": "Renno et al. published in 2008, developing the methodology further before Nobre et al.'s 2011 journal paper."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM can only be run on supercomputers, not on personal workstations.",
+    "correct": false,
+    "explanation": "TauDEM runs on personal workstations as well as supercomputers; MPI parallelization scales from a few to thousands of cores."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND value at a cell is independent of the stream network definition.",
+    "correct": false,
+    "explanation": "HAND values critically depend on which cells are classified as streams. Changing the definition changes all HAND values."
+  },
+  {
+    "type": "true_false",
+    "question": "On the Great Plain, D8 and D-infinity produce nearly identical HAND surfaces.",
+    "correct": false,
+    "explanation": "On the extremely flat plain, D8 creates significant parallel striping while D-infinity produces smooth surfaces; the differences are most visible in low-relief terrain."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND algorithm terminates when the ready queue is empty and every cell has been assigned a value.",
+    "correct": true,
+    "explanation": "When no more cells are ready for processing, all cells have their HAND values computed."
+  },
+  {
+    "type": "true_false",
+    "question": "The weighted-average HAND from D-infinity always produces values between the minimum and maximum of the single-path values.",
+    "correct": true,
+    "explanation": "As a weighted average, the result must fall between the extreme path values (4.62 and 4.74 in Example 2)."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream network displacement on coarse DEMs is worse than on fine DEMs.",
+    "correct": true,
+    "explanation": "On 30 m SRTM, a narrow stream occupies less than one cell, leading to greater displacement than on 1 m LiDAR."
+  },
+  {
+    "type": "true_false",
+    "question": "The 'soft burn-in' approach modifies the entire DEM surface, not just the stream cells.",
+    "correct": false,
+    "explanation": "Soft burn-in only lowers elevations where they increase along the known stream path; the rest of the DEM is unchanged."
+  },
+  {
+    "type": "true_false",
+    "question": "Computing HAND for a single HUC-10 watershed at 10-meter resolution takes seconds to minutes.",
+    "correct": true,
+    "explanation": "A ~250 km^2 watershed at 10-meter resolution is computationally modest for modern hardware."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND < 2 m areas on the Tisza should generally not be developed without flood protection.",
+    "correct": true,
+    "explanation": "These areas face frequent flooding (annual to 10-year events) on lowland rivers."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND surface discontinuity at levees directly measures the levee's protective effect.",
+    "correct": true,
+    "explanation": "The HAND jump from river-side to protected-side indicates the flood depth the levee can withstand."
+  },
+  {
+    "type": "true_false",
+    "question": "The EU Floods Directive is updated every 10 years.",
+    "correct": false,
+    "explanation": "The directive requires review and revision every 6 years (2013, 2019, 2025)."
+  },
+  {
+    "type": "true_false",
+    "question": "The pysheds Python library can compute HAND without requiring any GIS software.",
+    "correct": true,
+    "explanation": "pysheds provides lightweight watershed delineation and HAND computation useful for automated pipelines."
+  },
+  {
+    "type": "true_false",
+    "question": "In ArcGIS Pro, the Flow Distance tool with HORIZONTAL distance type computes HAND.",
+    "correct": false,
+    "explanation": "HAND requires VERTICAL distance type; horizontal distance gives a different proximity measure."
+  },
+  {
+    "type": "true_false",
+    "question": "The DDM-5 uses the EOV projection system with EPSG code 23700.",
+    "correct": true,
+    "explanation": "Hungary's DDM-5 uses the EOV (Egysges Orszagos Vetulet) coordinate system, EPSG:23700."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND values in forested areas from radar-derived DEMs (SRTM, Copernicus) are typically too low because the DSM includes canopy height.",
+    "correct": false,
+    "explanation": "HAND values from DSMs are too HIGH, not too low, because canopy height is added to the true ground elevation, inflating HAND."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND values within permanent water bodies should be included in flood analysis interpretation.",
+    "correct": false,
+    "explanation": "HAND values within permanent water bodies are physically meaningless and should be masked out."
+  },
+  {
+    "type": "true_false",
+    "question": "The operational flood inundation mapping described at the National Water Center relies on the HAND infrastructure pre-computed from LiDAR data.",
+    "correct": true,
+    "explanation": "The pre-computed HAND raster at the National Water Center enables real-time flood mapping for 2.7 million reaches."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND is the only terrain-derived index with direct physical meaning related to flood depth.",
+    "correct": true,
+    "explanation": "Unlike wetness index, topographic position index, or slope-area diagrams, HAND directly represents minimum flood depth for inundation."
+  },
+  {
+    "type": "true_false",
+    "question": "The GRASS GIS module r.stream.distance uses D-infinity flow directions.",
+    "correct": false,
+    "explanation": "GRASS uses its own internal D8 flow direction format, not TauDEM's D-infinity angles."
+  },
+  {
+    "type": "true_false",
+    "question": "The EGM2008 geoid is used as a vertical reference for some global DEM datasets.",
+    "correct": true,
+    "explanation": "EGM2008 is the geoid model used as vertical reference for global datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza floodplain, 0.5-metre HAND classification intervals in the 0-5 m range are recommended.",
+    "correct": true,
+    "explanation": "The extreme flatness means small HAND differences have enormous practical importance."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza flows for about 596 km within Hungary's borders.",
+    "correct": true,
+    "explanation": "The Tisza crosses 596 km of predominantly flat terrain within Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND computation requires D-infinity flow directions; D8 flow directions are never acceptable.",
+    "correct": false,
+    "explanation": "D-infinity is preferred but D8 is acceptable for stream delineation. The chapter says 'always use D-infinity when computing HAND' but notes D8 is used for some steps."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND surface from a 10-metre NED DEM can identify individual buildings at risk.",
+    "correct": false,
+    "explanation": "With 2.3 m RMSE, NED-based HAND identifies broad flood-prone zones, not individual buildings; LiDAR is needed for building-level assessment."
+  },
+  {
+    "type": "true_false",
+    "question": "Mismatch in spatial reference, cell size, or grid alignment between HAND inputs will produce incorrect results without necessarily generating an error message.",
+    "correct": true,
+    "explanation": "The tools will compute something, but the results will be wrong -- a particularly dangerous silent error."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza collects tributaries from the Northern Hungarian Mountains and the Transylvanian Plateau.",
+    "correct": true,
+    "explanation": "The Tisza's tributaries originate in both the Northern Hungarian Mountains and the Transylvanian Plateau."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools was developed by John Lindsay at the University of Guelph.",
+    "correct": true,
+    "explanation": "John Lindsay at the University of Guelph developed WhiteboxTools as an open-source geospatial analysis library."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three Amazonian forest types distinguished by HAND are varzea, igapo, and _____.",
+    "correct": "terra firme",
+    "explanation": "These ecological zones are governed by their elevation above the nearest river."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND was first applied in the _____ basin to map ecological zones.",
+    "correct": "Amazon",
+    "explanation": "Nobre developed HAND for mapping Amazonian ecosystems where field surveys were impractical."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Renno et al. HAND methodology paper was published in the journal _____ of Environment.",
+    "correct": "Remote Sensing",
+    "explanation": "Renno et al. (2008) published in Remote Sensing of Environment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A more robust stream derivation approach uses the _____ stream network to define channel heads.",
+    "correct": "vector",
+    "explanation": "Channel heads from the vector network anchor the DEM-derived streams at correct starting locations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the channel-head approach, the threshold for the weighted accumulation result is _____ to produce the binary stream raster.",
+    "correct": "1",
+    "explanation": "Any cell with an accumulated channel-head count of 1 or more lies on a stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's natural floodplain before regulation covered approximately _____ km^2.",
+    "correct": "22,000",
+    "explanation": "This was roughly a quarter of modern Hungary's total area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The devastating 1879 Tisza flood destroyed the city of _____ in Hungary.",
+    "correct": "Szeged",
+    "explanation": "151 people died and the city was destroyed in this catastrophic event."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian flood-control levees are called _____ in Hungarian.",
+    "correct": "gatok",
+    "explanation": "Gatok (singular: gat) confine the Tisza between levees."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza regulation was led by Pal Vasarhelyi and _____ Szechenyi.",
+    "correct": "Istvan",
+    "explanation": "Istvan Szechenyi continued the regulation works that Vasarhelyi began."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In HAND visualization, the recommended color for HAND 2-5 m (high flood risk) is _____ blue.",
+    "correct": "light",
+    "explanation": "Light blue highlights areas inundated by moderate floods."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For HAND > 20 m, the recommended visualization is _____ or light grey.",
+    "correct": "transparent",
+    "explanation": "This allows the underlying terrain to show through, focusing attention on flood-relevant areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND computation in ArcGIS Pro uses the _____ Distance tool.",
+    "correct": "Flow",
+    "explanation": "The Flow Distance tool in Spatial Analyst Hydrology computes HAND with VERTICAL/DINF settings."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The -ang flag in TauDEM's DinfDistDown specifies the D-infinity _____ direction grid.",
+    "correct": "flow",
+    "explanation": "The flow direction angle grid (in radians) is the fundamental input for D-infinity computations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The -fel flag in TauDEM specifies the _____ DEM.",
+    "correct": "filled",
+    "explanation": "The filled (conditioned) DEM is used as the elevation surface for HAND computation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The -src flag in TauDEM specifies the _____ raster.",
+    "correct": "stream",
+    "explanation": "The binary stream raster (1=stream, 0=non-stream) defines where HAND=0."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For HAND computation, d8 flow directions are used for stream _____, while D-infinity is used for the HAND itself.",
+    "correct": "delineation",
+    "explanation": "D8 is acceptable for identifying streams; D-infinity is needed for smooth HAND surfaces."
+  },
+  {
+    "type": "fill_blank",
+    "question": "On the Tisza plain, the distinction between flood-prone and flood-safe terrain often comes down to elevation differences of just _____ to 5 metres.",
+    "correct": "2",
+    "explanation": "In such flat terrain, tiny HAND differences have enormous practical importance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's slope in the mountains is greater than _____ m/km, versus <0.05 m/km on the plain.",
+    "correct": "1",
+    "explanation": "This dramatic slope decrease causes flood waves to slow and spread on the plain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Catastrophic Tisza floods have occurred in 1879, 1970, 1998, 2000, 2001, and _____.",
+    "correct": "2006",
+    "explanation": "These events demonstrate the ongoing need for flood vulnerability mapping."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND discontinuity at a levee directly measures the levee's _____ effect.",
+    "correct": "protective",
+    "explanation": "Higher HAND values behind the levee indicate greater flood depth the levee can withstand."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Oxbow lakes along the Tisza are called morotvak or _____ in Hungarian.",
+    "correct": "holtagak",
+    "explanation": "These remnant meanders appear as low-HAND zones in the HAND surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the HAND worked example, the Zagyva tributary watershed has an area of _____ km^2.",
+    "correct": "50",
+    "explanation": "This manageable size allows desktop computation to demonstrate the full workflow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D-infinity method was published by Tarboton in the year _____.",
+    "correct": "1997",
+    "explanation": "Tarboton's seminal paper on D-infinity flow directions appeared in Water Resources Research."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Liu et al. (2018) published their continental-scale framework in the Journal of the American _____ Resources Association.",
+    "correct": "Water",
+    "explanation": "JAWRA published both the Liu et al. and Zheng et al. papers on continental HAND."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ready queue in the HAND algorithm contains cells whose _____ receiving cells have all been computed.",
+    "correct": "downslope",
+    "explanation": "A cell is 'ready' when all cells it drains to already have HAND values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Areas with HAND 2-5 m on the Tisza can support annual crops but face periodic _____ damage.",
+    "correct": "flood",
+    "explanation": "This HAND range is suitable for agriculture but not permanent structures."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In HAND computation, the stream raster must have value _____ for stream cells and 0 or NoData elsewhere.",
+    "correct": "1",
+    "explanation": "This binary raster defines the anchor points where HAND equals zero."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND values for Tisza plain settlements are typically _____ to 8 m, reflecting historical site selection.",
+    "correct": "4",
+    "explanation": "Traditional Hungarian settlements were placed on natural topographic highs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND algorithm starts from stream cells and sweeps _____ to ridges.",
+    "correct": "upslope",
+    "explanation": "The upslope sweep processes each cell exactly once, working from known values at streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The MERIT Hydro dataset provides all inputs needed to compute HAND at _____ arc-second resolution globally.",
+    "correct": "3",
+    "explanation": "3 arc-seconds is approximately 90 m resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The study area for the middle Tisza HAND computation covers approximately _____ km^2.",
+    "correct": "3,000",
+    "explanation": "This area between Szolnok and Csongrad spans about 120 km of river."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the HAND algorithm, the flow proportions p_k from D-infinity must sum to _____.",
+    "correct": "1",
+    "explanation": "The proportions represent fractions of total flow and must sum to unity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza joins the _____ River near Novi Sad in Serbia.",
+    "correct": "Danube",
+    "explanation": "The Tisza is the longest tributary of the Danube."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended buffer zone for HAND computation around a study area is at least _____ km.",
+    "correct": "5",
+    "explanation": "A 5 km buffer avoids edge effects in terrain processing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS is the _____ Flood Awareness System providing global discharge forecasts.",
+    "correct": "Global",
+    "explanation": "GloFAS extends EFAS-style forecasting globally at 0.05-degree resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, the _____ River is the country's most important river after the Danube.",
+    "correct": "Tisza",
+    "explanation": "The Tisza is Hungary's second most important river and its most flood-prone."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'hillslope position' in geomorphology and how HAND quantifies it, relating this to practical applications in soil mapping and land-use planning.",
+    "correct": "Hillslope position describes where a point sits relative to the drainage network and divide: near the ridge (upland), mid-slope (transitional), or near the stream (lowland/floodplain). HAND quantifies this by measuring vertical distance to the nearest stream. Combined with distance-to-ridge, it provides a complete hillslope classification. In soil mapping, low-HAND positions correlate with alluvial, hydric soils; high-HAND with residual, well-drained soils. In land-use planning, HAND directly indicates flood vulnerability: HAND < 2 m for flood-tolerant uses only, 2-5 m for annual crops, > 5 m for permanent structures. This terrain-based zonation is more physically meaningful than administrative zoning boundaries.",
+    "explanation": "HAND provides a quantitative basis for the qualitative concept of landscape position."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the water body handling problem in HAND computation and explain why HAND values within permanent water are physically meaningless.",
+    "correct": "Permanent water bodies (lakes, reservoirs, wide rivers) have HAND near zero because they are on or adjacent to the drainage network. But HAND for a water-covered cell is conceptually meaningless -- 'height above nearest drainage' for a cell that IS water has no practical content. The solution is straightforward: use mapped water body polygons (NHDPlus, EU-Hydro, OVF) as a mask during interpretation. HAND is computed for the entire landscape (the algorithm doesn't distinguish wet/dry), but flood analysis applies only to non-water cells. In Hungary, Lake Balaton (594 km^2), Lake Ferto, and Tisza oxbow lakes all require this treatment.",
+    "explanation": "Masking permanent water bodies prevents misinterpretation of HAND values in flood analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for computing HAND for the middle Tisza between Szolnok and Csongrad, including data sources, software, and expected results.",
+    "correct": "Data: DDM-5 (5 m, EOV EPSG:23700) from Lechner, or Copernicus EEA-10 reprojected to EOV. Stream network: OVF centreline from data.vizugy.hu for Tisza, Zagyva, Harmas-Koros, Alcsi-Holt-Tisza. Software: TauDEM or ArcGIS Pro. Steps: (1) Extract DEM for ~3,000 km^2, buffered 5 km. (2) Rasterize OVF streams. (3) Soft burn-in through levees and road embankments. (4) Fill pits. (5) Compute D8 and D-infinity flow directions. (6) Channel-head weighted accumulation for stream raster. (7) D-infinity distance down for HAND. Expected: HAND 0-4 m in hullamter, 3-8 m behind levees, 4-8 m at settlements.",
+    "explanation": "This workflow demonstrates HAND implementation for a real Hungarian case study."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND reveals information about remnant floodplain features like oxbow lakes and abandoned channels along the Tisza.",
+    "correct": "Before 19th-century regulation, the Tisza had a complex system of oxbow lakes (morotvak, holtagak), backwater channels, and seasonal wetlands. These features remain visible in the HAND surface as elongated zones of low HAND values extending away from the modern channel, tracing abandoned meanders. Some old channels still function as drainage paths during extreme events, and their low HAND values correctly identify them as flood-vulnerable. This information is invisible in the conventional DEM (where absolute elevation shows no distinction) but clearly revealed by HAND's stream-relative transformation. This demonstrates HAND's ability to extract geomorphologically meaningful features from terrain data.",
+    "explanation": "HAND reveals the landscape's flood memory -- features shaped by past river dynamics that still influence flood behavior."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the importance of using DEM-consistent stream networks for HAND and describe the consequences of stream displacement errors.",
+    "correct": "HAND requires streams that lie in DEM topographic valleys. Vector networks (NHDPlus, EU-Hydro, OSM) were digitized independently of any DEM, so rasterized streams may land on cells 2-3 m above the valley floor. Every HAND value computed from displaced streams is wrong by that amount -- potentially classifying floodplain cells as flood-safe when they're not. The displacement is worst on coarse DEMs: on 30 m SRTM, a 20 m wide stream occupies less than one cell. The solution is channel-head weighted accumulation: use vector network endpoints to define stream beginnings, then derive paths from DEM flow accumulation. This ensures geometrical alignment with terrain while maintaining the mapped network's topology.",
+    "explanation": "Stream-DEM consistency is the single most critical requirement for accurate HAND computation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND can complement official Hungarian flood maps produced under the EU Floods Directive, explaining specific use cases.",
+    "correct": "OVF produces detailed hydraulic model-based maps (10/100/extreme year scenarios) for major rivers under Directive 2007/60/EC. HAND complements these in several ways: (1) Within the hullamter, both agree since they identify the same low terrain. (2) For the mentett arter, HAND shows worst-case levee breach scenarios that official maps (assuming functioning infrastructure) don't address. (3) For small tributaries not covered by official models, HAND provides the only flood vulnerability information. (4) For emergency planning, HAND answers 'what is the worst case?' while official maps answer 'what is expected?' (5) HAND updates instantly with new terrain data; official maps require full hydraulic model reruns.",
+    "explanation": "HAND and official maps provide different but complementary perspectives on flood risk."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the mathematical relationship between HAND and the original DEM, showing how systematic elevation trends are eliminated.",
+    "correct": "In the original DEM, elevations increase from outlet to headwaters and from valleys to ridges. HAND transforms this by subtracting the stream cell elevation for each cell's drainage destination: HAND(i) = z(i) - z(s_i). This eliminates systematic trends because every stream cell becomes zero regardless of absolute elevation. A headwater stream at 3,000 m and a coastal stream at 50 m both have HAND = 0. Adjacent floodplain cells have small HAND regardless of absolute position. The resulting surface depends only on local terrain relative to the drainage network -- what geomorphologists call topographic position. This is why HAND is directly comparable to flood depth across all locations.",
+    "explanation": "The coordinate transformation from absolute to stream-relative elevation is the mathematical foundation of HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the D-infinity flow direction model in eliminating HAND artifacts, with specific reference to the Hungarian Great Plain.",
+    "correct": "D8 assigns each cell one of eight discrete flow directions, creating narrow convergent paths like leaf veins. On smooth hillslopes, this produces streaking artifacts -- lines of slightly different HAND values with no physical basis. D-infinity uses continuous angles and proportional flow partitioning: a cell might send 60% SE and 40% S. Its HAND is the weighted average of both paths, producing smooth surfaces. On the Great Plain, where slopes are fractions of a degree and terrain has minimal texture, D8 artifacts are severe: parallel striping creates ragged flood boundaries when thresholded. D-infinity produces smooth boundaries that better represent physical flooding on flat terrain. The difference matters most where it matters most -- on Hungary's most flood-vulnerable landscape.",
+    "explanation": "D-infinity's smooth surfaces are not just aesthetically better; they produce more physically realistic flood extent boundaries."
+  },
+  {
+    "type": "essay",
+    "question": "Explain HAND's property of 'scalability' from individual catchments to entire continents, discussing the algorithmic features that enable this.",
+    "correct": "HAND has been computed at scales from small catchments (50 km^2 in the chapter's example) to the entire US (~8 million km^2). Key algorithmic features enabling scalability: (1) The upslope sweep processes each cell exactly once, with O(n) complexity. (2) TauDEM's MPI parallelization distributes computation across processors via horizontal stripe decomposition with boundary exchange. (3) Domain decomposition using HUC watersheds with buffer zones enables independent processing of tiles. (4) The algorithm is inherently parallelizable since each cell's computation depends only on its downslope neighbors (already computed). The US computation processed 10 billion cells in one day using supercomputers vs. seven years on desktop. Cloud computing now makes this accessible to anyone.",
+    "explanation": "HAND's computational properties make it uniquely suited for large-scale terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the comparison of HAND values from different DEM sources (SRTM vs NED vs LiDAR) affects practical flood mapping applications.",
+    "correct": "SRTM (6-9 m RMSE, 30 m): HAND values uncertain by 6+ m, useful only for identifying broad continental flood-prone zones. NED (2.3 m RMSE, 10 m): HAND uncertain by ~2-3 m, adequate for zone-level mapping (which areas are generally flood-prone). DDM-5 (1-2 m RMSE, 5 m): HAND adequate for local flood assessment but cannot resolve individual features. LiDAR (0.1-0.2 m RMSE, 1-3 m): HAND precise enough to identify individual buildings, levee features, and terraces. On the Tisza plain where 1-2 m differences separate annual from decadal flooding, only LiDAR provides actionable precision. The practical lesson: match DEM quality to the decision being made.",
+    "explanation": "DEM accuracy is the fundamental constraint on HAND's practical utility for flood risk assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'distance along the slope to the stream' as a proximity measure and its relevance to overland flow travel time.",
+    "correct": "Slope distance measures the actual path length along the terrain surface from a point to the nearest stream, accounting for both horizontal distance and slope. It is longer than horizontal distance on steep terrain and nearly equal on flat terrain. This measure is relevant to travel time: a cell on a long, gentle slope drains more slowly than one on a short, steep slope, even if both have identical HAND values. For hydrograph timing and runoff concentration, slope distance is more informative than HAND (which tells you about flood depth, not timing). Combined with slope, it enables estimation of overland flow velocities and time-to-concentration for flood forecasting.",
+    "explanation": "Each proximity measure captures a different aspect of the point's relationship to the drainage network."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HAND can be applied in mountainous terrain like the Carpathian Mountains, discussing both its utility and its limitations in steep environments.",
+    "correct": "In steep mountain terrain, HAND values increase rapidly with distance from streams, and the flat-water assumption becomes less valid because mountain streams have steep gradients with sloping water surfaces. A cell with HAND = 3 m may be safe upstream of a steep reach (water surface is lower) or flooded upstream of a constriction (backwater raises water). Despite these limitations, HAND remains useful because it identifies valley bottoms and narrow floodplains where mountain communities cluster. In the Carpathian Mountains (feeding the Tisza), settlements in valley floors have low HAND values that correctly flag flood vulnerability. HAND provides first-order identification even where detailed hydraulic models would be needed for precise mapping.",
+    "explanation": "HAND is approximate in mountains but still identifies the most flood-vulnerable locations."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HAND's compatibility with real-time forecasting and explain why the 'pre-compute terrain, apply forecast in real-time' architecture is essential.",
+    "correct": "The HAND raster is a static product computed once. During a flood event, converting a discharge forecast to an inundation map requires only comparing predicted depth against pre-computed HAND -- an operation performed in seconds for billions of cells. At the National Water Center, this enables real-time mapping of 2.7 million reaches with hourly updates. Without pre-computation, each new forecast would require reprocessing the entire DEM/flow direction/HAND chain, taking hours or days. The architecture separates the one-time expensive computation from the real-time simple comparison, which is essential for emergency response where every minute counts. The same principle applies to EFAS and GloFAS forecasts.",
+    "explanation": "Speed in emergency response depends on having the terrain analysis already complete before the flood arrives."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the anthropogenic obstruction problem in DEM-derived flow paths and describe the soft burn-in solution, using the Tisza levee example.",
+    "correct": "Human-made structures (levees, railway embankments, highways) create barriers in DEMs that don't block real water flow (which passes through culverts and bridges). Standard pit-filling may cause streams to detour hundreds of metres around these barriers. Soft burn-in traces along the known vector stream and only lowers elevations where the DEM increases along the flow path, cutting a narrow channel through obstructions. This differs from full stream burning (lowering by a fixed amount everywhere). On the Tisza, the levee system creates continuous elevated barriers; without conditioning, derived streams are displaced to one side. The solution uses the known river centreline for conditioning while retaining levee features for accurate HAND values on the protected side.",
+    "explanation": "Anthropogenic features require careful DEM conditioning to maintain both stream alignment and realistic terrain representation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the global applicability of HAND and the role of freely available datasets (Copernicus GLO-30, HydroSHEDS, GloFAS) in enabling worldwide flood vulnerability assessment.",
+    "correct": "HAND can be computed anywhere a DEM and stream network exist. The Copernicus GLO-30 (30 m, free globally) and MERIT DEM (90 m, hydrologically conditioned) provide elevation data worldwide. HydroSHEDS and HydroRIVERS provide pre-computed stream networks globally. GloFAS provides discharge forecasts for every major river. Together, these enable HAND computation and flood vulnerability mapping for any location on Earth. While the 4 m vertical accuracy of GLO-30 limits precision, the resulting maps are far better than nothing. For countries in Asia, Africa, and the Middle East lacking national LiDAR, this is the only practical flood screening approach. Combined with WorldPop population data, it enables building-level exposure estimates.",
+    "explanation": "Free global datasets make HAND a universally applicable tool for flood vulnerability screening."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the naming convention for HAND-related raster products and discuss why systematic file naming is important for collaborative terrain analysis workflows.",
+    "correct": "The recommended convention uses a study area prefix (e.g., tisza_) and product suffix: _raw (original DEM), _fel (filled), _d8 (D8 flow directions), _dinf (D-infinity directions), _ad8 (D8 accumulation), _slp (slope), _str (stream raster), _lnk (stream links), _cat (catchment grid), _hand (HAND), _hdist (horizontal distance), _sdist (slope distance). This ensures any collaborator can immediately identify each file's contents. Terrain analysis generates many intermediate rasters, and without systematic naming, files accumulate with ambiguous names, leading to errors when the wrong input is used. Consistent naming is particularly important for reproducibility and when processing is distributed across teams.",
+    "explanation": "Good file naming is a practical necessity that prevents errors in complex multi-step workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for computing a national HAND dataset for Hungary and estimate the computational requirements.",
+    "correct": "All inputs exist: DDM-5 (5 m resolution) from Lechner, OVF river network from data.vizugy.hu, and standard software (TauDEM or ArcGIS Pro). Hungary's 93,000 km^2 at 5-metre resolution produces approximately 1.9 billion grid cells (93,000 x 10^6 / 25). This is substantial but feasible -- well within the capability of a modern multi-core workstation (32-64 cores, 128+ GB RAM) or a modest HPC allocation. Processing would take hours to a few days. The result would transform Hungarian flood mapping by providing HAND for every point in the country, complementing official maps with worst-case scenarios and covering small tributaries. The Copernicus EEA-10 could provide an alternative at 10 m resolution for cross-border consistency.",
+    "explanation": "A national Hungarian HAND dataset is computationally feasible and would significantly enhance flood management capability."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between HAND-derived hydraulic properties and Chapter 15's flood inundation mapping methods.",
+    "correct": "HAND enables computing reach-scale hydraulic properties as functions of depth: inundated area A(h) counts cells with HAND < h, wetted perimeter P(h) measures the boundary length, cross-sectional area A_x(h) divides volume by reach length, and hydraulic radius R(h) = A_x/P. These feed into Manning's equation to create synthetic rating curves converting discharge to depth. Chapter 15 develops this fully: given a forecast discharge for each reach, the rating curve gives a depth, and comparing depth against HAND identifies inundated cells. The arithmetic simplicity (inundation = max(0, depth - HAND)) enables real-time mapping for millions of reaches. HAND is thus the terrain bridge between hydrological forecasts and spatial flood maps.",
+    "explanation": "HAND connects terrain analysis (Chapters 9-14) to operational flood mapping (Chapter 15+)."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND concept can be applied to ephemeral streams in arid environments.",
+    "correct": true,
+    "explanation": "HAND is applicable in arid environments with modified interpretation, indicating flash flood vulnerability."
+  },
+  {
+    "type": "true_false",
+    "question": "The Nobre et al. (2011) HAND paper was published before Renno et al. (2008).",
+    "correct": false,
+    "explanation": "Renno et al. published in 2008; Nobre et al. published later in 2011."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS sends notifications directly to the public during flood events.",
+    "correct": false,
+    "explanation": "EFAS sends notifications to partner agencies (national hydrological services), not the public directly."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza regulation works were completed between 1846 and 1879.",
+    "correct": true,
+    "explanation": "The regulation shortened the river by nearly 500 km through channel cutoffs."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND is computationally more demanding than full hydraulic modeling with HEC-RAS.",
+    "correct": false,
+    "explanation": "HAND requires a single terrain processing pass; HEC-RAS requires solving differential equations and extensive setup."
+  },
+  {
+    "type": "true_false",
+    "question": "The maximum HAND value in a watershed can exceed the total relief of that watershed.",
+    "correct": false,
+    "explanation": "Maximum HAND is always less than or equal to total relief and typically much less."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zheng et al. (2018) paper was published in the Journal of the American Water Resources Association.",
+    "correct": true,
+    "explanation": "JAWRA published both the Zheng et al. and Liu et al. papers on continental HAND."
+  },
+  {
+    "type": "true_false",
+    "question": "On steep mountain streams, HAND's flat-water assumption is more valid than on gentle lowland rivers.",
+    "correct": false,
+    "explanation": "Mountain streams have steep gradients with sloping water surfaces, making the flat-water assumption less valid."
+  },
+  {
+    "type": "true_false",
+    "question": "The OVF operates the HYDROINFO real-time monitoring system.",
+    "correct": true,
+    "explanation": "HYDROINFO provides water level observations and short-range forecasts along Hungary's rivers."
+  },
+  {
+    "type": "true_false",
+    "question": "Radar-derived DEMs like SRTM produce HAND values that are too low in forested areas.",
+    "correct": false,
+    "explanation": "SRTM reports canopy height, making HAND values too HIGH (inflated by vegetation height)."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND computation for the entire conterminous US was completed at 10-meter resolution.",
+    "correct": true,
+    "explanation": "The continental computation used the 10-meter National Elevation Dataset."
+  },
+  {
+    "type": "true_false",
+    "question": "In ArcGIS Pro, HAND computation requires the Spatial Analyst Hydrology toolbox.",
+    "correct": true,
+    "explanation": "The Flow Distance tool in this toolbox computes HAND with VERTICAL/DINF settings."
+  },
+  {
+    "type": "true_false",
+    "question": "The D-infinity HAND value corresponds to a single specific physical flow path.",
+    "correct": false,
+    "explanation": "It is a weighted average over multiple paths and represents 'representative height above the stream.'"
+  },
+  {
+    "type": "true_false",
+    "question": "Lake Ferto is the largest lake in Central Europe.",
+    "correct": false,
+    "explanation": "Lake Balaton (594 km^2) is the largest lake in Central Europe; Lake Ferto is smaller."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM's DinfDistDown function outputs HAND values in the same units as the input DEM.",
+    "correct": true,
+    "explanation": "HAND values are in the DEM's vertical units, typically metres."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND computation requires calibration data and surveyed cross-sections.",
+    "correct": false,
+    "explanation": "HAND requires only a DEM and stream network, making it applicable where calibration data is unavailable."
+  },
+  {
+    "type": "true_false",
+    "question": "For flood mapping on the lower Mississippi, HAND < 2 m may underestimate the flood zone.",
+    "correct": true,
+    "explanation": "On large rivers where floods raise water 8-10 m, HAND < 10 m is more realistic."
+  },
+  {
+    "type": "true_false",
+    "question": "The GloFAS system is operated by Hungary's OVF.",
+    "correct": false,
+    "explanation": "GloFAS is operated by ECMWF under Copernicus; OVF is a national partner agency."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND values for settlement sites on the Tisza plain that have HAND 4-8 m confirm that traditional placement reflected flood awareness.",
+    "correct": true,
+    "explanation": "Historical settlements on terraces and artificial mounds were sited above typical flood levels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza rises in the Carpathian Mountains of western _____.",
+    "correct": "Ukraine",
+    "explanation": "The river then flows through Romania, Hungary, and Serbia to the Danube."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND algorithm uses an _____-sweep approach, starting from streams.",
+    "correct": "upslope",
+    "explanation": "Processing moves from known stream values (HAND=0) upward through the landscape."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In ArcGIS Pro, HAND is computed with Flow Direction type set to _____.",
+    "correct": "DINF",
+    "explanation": "D-infinity flow directions are needed for smooth, artifact-free HAND surfaces."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zheng et al. paper was published in the Journal of the American _____ Resources Association.",
+    "correct": "Water",
+    "explanation": "JAWRA is the standard journal for US water resources research."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's catchment area extends across the entire eastern _____ arc.",
+    "correct": "Carpathian",
+    "explanation": "The Carpathian Mountains form the headwater region of the Tisza basin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND values for the active channel (meder) of the Tisza are _____.",
+    "correct": "0",
+    "explanation": "Stream cells by definition have HAND = 0."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The protected floodplain behind Tisza levees has HAND values of typically _____-8 m.",
+    "correct": "3",
+    "explanation": "This range depends on levee height and local terrain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ et al. (2011) paper formalized the theoretical framework for generalized proximity measures.",
+    "correct": "Tesfa",
+    "explanation": "Tesfa et al. showed all five proximity measures are special cases of flow algebra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The abbreviation for Hungary's General Directorate of Water Management is _____.",
+    "correct": "OVF",
+    "explanation": "Orszagos Vizugyi Foigazgatosag manages Hungary's water resources."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For HAND visualization, high-HAND cells (> 20 m) are rendered _____ to show underlying terrain.",
+    "correct": "transparent",
+    "explanation": "This focuses attention on flood-relevant low-HAND areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The horizontal distance to the stream along the flow path is relevant to overland flow _____ time.",
+    "correct": "travel",
+    "explanation": "Longer flow paths mean slower drainage and later hydrograph contributions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus _____ Management Service operates EFAS for flood forecasting.",
+    "correct": "Emergency",
+    "explanation": "EFAS is part of the Copernicus Emergency Management Service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND's direct physical meaning is the minimum _____ depth required to inundate a point.",
+    "correct": "flood",
+    "explanation": "This makes HAND immediately interpretable for emergency response."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Roger supercomputer is located at _____ (abbreviation).",
+    "correct": "NCSA",
+    "explanation": "The National Center for Supercomputing Applications at the University of Illinois."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Stampede supercomputer is located at _____ (abbreviation).",
+    "correct": "TACC",
+    "explanation": "The Texas Advanced Computing Center at the University of Texas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The original HAND concept was developed for mapping _____ ecosystems based on elevation above rivers.",
+    "correct": "Amazonian",
+    "explanation": "Nobre used HAND to distinguish varzea, igapo, and terra firme forests."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WhiteboxTools HAND function is called _____.",
+    "correct": "ElevAboveStream",
+    "explanation": "This function computes elevation above stream using D8 or D-infinity flow directions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < _____ m identifies areas at risk from extreme events (500-year or greater).",
+    "correct": "10",
+    "explanation": "This corresponds to the outer boundary of flood risk in most planning frameworks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND values in the _____ Creek watershed range from 0 to approximately 122 m.",
+    "correct": "Onion",
+    "explanation": "Despite 400 m total relief, HAND measures only local drop to nearest stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EU Floods Directive requires revision of flood maps every _____ years.",
+    "correct": "6",
+    "explanation": "Maps were produced in 2013, revised in 2019 and 2025."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND values concentrate heavily in the 0-4 m range on the Tisza plain and discuss the implications for land-use planning.",
+    "correct": "The Great Plain between Szolnok and Szeged has only ~14 m total relief, so most HAND values fall in 0-4 m. This means the difference between flood-prone and flood-safe terrain is measured in meters, not tens of meters. For land-use planning: HAND < 2 m should be limited to flood-tolerant uses (riparian forest, wet meadow). HAND 2-5 m supports annual crops but faces periodic damage. HAND > 5 m is suitable for permanent structures and orchards. On the Tisza, major floods can produce 5-8 m depths, making even HAND 5 m marginal. A 0.5 m HAND classification interval is recommended because differences of 1-2 m can separate annual from decadal flooding -- distinctions with enormous importance for insurance and zoning.",
+    "explanation": "The extreme flatness of the Tisza plain makes fine HAND resolution critically important for practical decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the seven-step processing chain used to produce the continental US HAND dataset and explain why each step is necessary.",
+    "correct": "(1) Rasterize NHDPlus flow lines to identify stream cells -- establishes the drainage network target. (2) Etch stream cells to ensure flow continuity through barriers -- prevents levees and bridges from diverting computed flow. (3) Fill pits in the conditioned DEM -- removes artifacts that trap flow. (4) Compute D8 and D-infinity flow directions -- D8 for stream delineation, D-inf for smooth HAND. (5) Weighted flow accumulation from NHD channel heads -- ensures DEM-consistent streams matching the mapped network. (6) Generate stream raster from weighted accumulation -- produces the binary stream layer for HAND. (7) Compute HAND via D-inf vertical distance down -- the final product. Each step builds on the previous; errors propagate forward, making quality control at each stage essential.",
+    "explanation": "The seven-step chain represents the complete terrain processing pipeline from raw DEM to operational HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the relationship between HAND and the broader concept of 'flow algebra' introduced in Chapter 10.",
+    "correct": "Flow algebra provides a unified mathematical framework for computing various quantities along flow paths. HAND is a special case: downstream accumulation of elevation differences using D-infinity proportional flow partitions as weights. The same framework computes other proximity measures (horizontal distance, slope distance, distance to ridge) by changing the accumulated quantity and direction. Tesfa et al. (2011) showed all five proximity measures are computable through this single framework. This theoretical unification means HAND computation uses the same algorithmic infrastructure as flow accumulation and watershed delineation, just with different accumulation rules. TauDEM implements this as the DinfDistDown function.",
+    "explanation": "HAND's mathematical foundation in flow algebra connects it to the broader terrain analysis framework."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND reveals settlement vulnerability patterns on the Tisza plain and discuss the implications of recent suburban expansion into low-HAND areas.",
+    "correct": "Historical settlements on the Tisza plain were sited on natural topographic highs (river terraces, loess ridges, kunhalmok) with HAND values of 4-8 m, reflecting centuries of flood experience. HAND analysis confirms this pattern quantitatively. However, recent suburban and industrial development has extended into areas with HAND 2-4 m, particularly around cities like Szolnok. These low-HAND extensions are at significantly higher flood risk. If levees failed, these areas would be inundated first and deepest. HAND mapping reveals this vulnerability clearly, providing evidence for zoning restrictions or flood insurance requirements. The contrast between traditional and modern settlement patterns demonstrates how urbanization has increased flood exposure.",
+    "explanation": "HAND quantifies what centuries of experience taught about flood-safe settlement location."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of HAND as 'infrastructure' for flood forecasting systems and explain why it enables real-time operations.",
+    "correct": "HAND is pre-computed once from the DEM and becomes a permanent data product. During a flood event, the entire terrain analysis chain (conditioning, flow direction, HAND computation) does not need to be repeated. Only a simple comparison is needed: where HAND < predicted flood depth, cells are inundated. This comparison can be performed for millions of cells in seconds. At the National Water Center, the NWM produces hourly forecasts; HAND converts these to inundation maps in under 3 minutes for 2.7 million reaches. Without pre-computation, each new forecast would require hours of terrain processing. The 'infrastructure' concept means the terrain investment pays off with every subsequent forecast -- an infinite return on the one-time computational cost.",
+    "explanation": "Pre-computation separates the expensive terrain analysis from the time-critical real-time mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND values differ between broad flat floodplains (like the Tisza) and narrow incised valleys (like mountain streams), and how this affects flood mapping interpretation.",
+    "correct": "On the Tisza plain, HAND values concentrate in 0-5 m across the wide floodplain, with subtle differences determining flood extent over kilometers. The HAND surface is nearly flat, and small threshold changes sweep across vast areas. In narrow mountain valleys, HAND increases rapidly from 0 to 30+ m within a few hundred meters. The valley walls confine flooding to a thin ribbon. For mapping interpretation: on the Tisza, 0.5 m HAND intervals are needed; in mountains, 5 m intervals suffice. The flat-water assumption works better on the Tisza (slow-rising, days-long floods) than in mountains (steep gradients, rapid flows). HAND correctly captures both geometries from the same DEM without modification.",
+    "explanation": "The same HAND algorithm adapts to fundamentally different terrain through the DEM geometry."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND enables estimation of reach-scale hydraulic properties (A(h), P(h), T(h), R(h)) that would otherwise require field surveys.",
+    "correct": "For any stream reach, the HAND raster provides the valley cross-section profile: at depth h, count cells with HAND < h to get inundated area A_s(h), sum (h - HAND) for volume V(h), compute bed area A_b(h) with slope correction. Dividing by reach length L gives: cross-sectional area A_x = V/L, wetted perimeter P = A_b/L, top width T = A_s/L, hydraulic radius R = A_x/P. These are inputs to Manning's equation. Without HAND, these properties require surveyed cross-sections -- impractical for millions of stream reaches. The HAND approach provides reach-averaged properties automatically for every reach, trading individual cross-section precision for consistent nationwide coverage.",
+    "explanation": "HAND-derived hydraulic properties bridge the gap between terrain data and hydraulic calculation at scale."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the HAND approach for flash flood mapping in the Carpathian headwaters of the Tisza and compare with lowland Tisza flood mapping.",
+    "correct": "In Carpathian headwaters, streams are steep (>1 m/km) with narrow valleys. HAND increases rapidly from stream to ridge. Flash floods peak in hours from intense rainfall. The flat-water assumption is less valid due to steep gradients and backwater at constrictions. HAND still identifies valley floor settlements at risk (low HAND) but cannot capture timing or peak dynamics well. On the lowland Tisza (<0.05 m/km), floods evolve over days, and the flat-water assumption is more valid. Wide floodplains (2-5 km) mean HAND differences of 1-2 m affect square kilometers. Both environments benefit from HAND screening, but the headwaters require supplementary flash flood indicators (like EFAS) while the lowland benefits from detailed reach-based inundation mapping.",
+    "explanation": "HAND's utility varies with terrain steepness and flood dynamics, but it provides value in both environments."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the EU Floods Directive requirements are met in Hungary and discuss how HAND-based analysis could enhance compliance.",
+    "correct": "Directive 2007/60/EC requires flood hazard maps (extent, depth, velocity for 3 probability scenarios) and risk maps (inhabitants, economic activity, environmental/cultural assets). Hungary produced these in 2013, revised in 2019 and 2025, using detailed hydraulic models for major rivers. HAND could enhance compliance by: (1) extending coverage to tributaries not modeled hydraulically, (2) providing continuous HAND-based vulnerability assessment between 6-year revision cycles, (3) improving risk assessment by linking building HAND values to probability of flooding at each return period, (4) enabling rapid worst-case assessment for levee breach scenarios, (5) supporting the directive's requirement for transnational cooperation by providing consistent methodology across EU borders.",
+    "explanation": "HAND can enhance EU Floods Directive compliance by filling gaps in coverage and providing real-time capability."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of free and open access to OVF gauge data (since July 2024) for HAND-based flood mapping in Hungary.",
+    "correct": "Since July 2024, historical water level and discharge records from OVF are freely available through data.vizugy.hu. This is significant for HAND-based mapping because: (1) observed rating curves at gauged stations enable validation of HAND-derived synthetic curves, (2) historical flood levels define the depth thresholds for HAND-based flood extent mapping, (3) long-term records allow statistical analysis of flood frequencies for return-period mapping, (4) real-time data from HYDROINFO enables operational HAND-based inundation during events. Previously, restricted access to gauge data limited independent research and validation. Open data enables academic researchers, municipal planners, and international collaborators to use HAND methods with Hungarian flood data.",
+    "explanation": "Open gauge data unlocks the full potential of HAND-based flood analysis for Hungary."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HAND could be combined with EFAS medium-range forecasts to provide advance flood warning for Hungarian rivers.",
+    "correct": "EFAS provides 10-day probabilistic discharge forecasts for major European rivers. The workflow: (1) Pre-compute national HAND from DDM-5. (2) Build rating curves for OVF river reaches. (3) When EFAS alerts OVF to elevated Tisza/Danube flows, convert forecast discharge to depth via rating curves. (4) Compare depth against HAND to identify likely inundation areas 3-10 days ahead. (5) Overlay with KSH population/building data for impact estimates. (6) Update as EFAS revises forecasts. This provides advance spatial flood intelligence beyond what HYDROINFO's 98-point monitoring offers. The combination of EFAS's forecast horizon with HAND's spatial resolution would give Hungarian emergency managers days of lead time for evacuation decisions.",
+    "explanation": "Combining EFAS forecasting with HAND terrain analysis creates a spatially explicit advance warning system."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'flow algebra' as it relates to HAND and discuss how it unifies multiple terrain-derived proximity measures.",
+    "correct": "Flow algebra is a mathematical framework where quantities are accumulated along D-infinity flow paths using specified operations. For HAND, the accumulation is: propagate elevation differences downstream, weighted by flow proportions, accumulated as sum. The 'algebra' consists of: a quantity to accumulate (elevation difference), a direction (downstream), weights (D-infinity proportions), and an operation (weighted sum). The same framework computes horizontal distance (accumulate cell distances instead of elevation drops), slope distance (accumulate along-surface distances), and ridge distances (accumulate upstream instead of downstream). Tesfa et al. (2011) showed all five proximity measures are special cases. This unification means one algorithmic implementation handles multiple products, implemented in TauDEM as DinfDistDown/DinfDistUp.",
+    "explanation": "Flow algebra provides the theoretical foundation that makes HAND a computed product rather than an ad hoc measure."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why HAND-based flood extent maps represent an upper bound on actual flood extent and explain when this is advantageous.",
+    "correct": "HAND assumes flood water at depth d instantaneously fills all terrain below d along the entire reach -- a steady-state assumption. Real floods propagate over time: the upstream end of a reach may be at peak while the downstream end hasn't risen yet. The water surface slopes downstream, and dynamic effects (wave propagation, storage) reduce the instantaneous extent below the steady-state HAND prediction. This upper-bound property is actually advantageous for: (1) emergency planning (identifies maximum possible impact), (2) worst-case analysis for levee breach scenarios, (3) conservative risk assessment for insurance and zoning, (4) evacuation zone delineation (better to evacuate slightly too many than too few). For design-level precision, HEC-RAS models the actual time-varying flood more accurately.",
+    "explanation": "HAND's conservative overestimate is a feature, not a bug, for emergency preparedness applications."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of HAND uncertainty propagation: how DEM vertical error translates to HAND error, and how HAND error translates to flood extent error.",
+    "correct": "DEM vertical RMSE directly propagates to HAND: if the DEM has 2 m RMSE, HAND values are uncertain by at least 2 m (possibly more since HAND involves the difference of two uncertain elevations). A HAND uncertainty of 2 m means that a cell with computed HAND = 3 m might actually be anywhere from 1 to 5 m above the stream. For flood mapping: if the flood depth threshold is 3 m, this cell might or might not be flooded. On the flat Tisza plain, a 2 m uncertainty in a landscape with only 14 m total relief means the uncertainty is a significant fraction of the entire HAND range. With LiDAR (0.1-0.2 m RMSE), the uncertainty shrinks to a small fraction of even 1 m HAND differences, enabling meaningful flood zone delineation.",
+    "explanation": "Understanding error propagation from DEM to HAND to flood extent is essential for honest uncertainty assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HAND values along the Tisza reveal the effectiveness of Hungary's 19th-century river regulation works.",
+    "correct": "Before regulation (1846-1879), the Tisza's natural floodplain covered 22,000 km^2 with HAND values of 0-3 m across vast areas. The regulation shortened the river by 500 km through cutoffs (atvasagok) and confined it between levees (gatok). In the modern HAND surface: (1) the hullamter (between levees) has HAND 0-4 m and floods regularly. (2) The mentett arter (behind levees) has HAND 3-8 m because it now drains to secondary channels, not the Tisza. (3) The sharp HAND discontinuity at levees directly measures their protective effect. (4) Remnant meanders appear as low-HAND zones beyond levees. The regulation effectively raised the HAND values of the former floodplain by 3-5 m, transforming it from regularly flooded to protected. HAND quantifies this transformation precisely.",
+    "explanation": "HAND reveals the hydrogeomorphic legacy of 175 years of river engineering."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the GloFAS global flood forecasting system could be enhanced by integration with global HAND datasets.",
+    "correct": "GloFAS currently provides discharge threshold exceedance probabilities at 0.05 deg (~5 km) resolution globally. It identifies which rivers will flood but not the spatial extent of flooding. Adding global HAND (from Copernicus GLO-30 + HydroSHEDS) would: (1) convert GloFAS discharge forecasts to depths via HAND-derived rating curves, (2) produce spatial inundation maps for every major river, (3) enable population impact estimates using WorldPop, (4) provide advance warning maps days ahead of events. This would transform GloFAS from 'this river will flood' to 'these communities will be affected to this depth.' Research prototypes exist; the challenge is operational implementation at global scale, particularly calibrating Manning's n without gauge data for most rivers.",
+    "explanation": "Global HAND integration would add spatial dimension to GloFAS's temporal discharge forecasts."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the five proximity measures collectively describe a point's complete hillslope position and discuss how this information supports different applications.",
+    "correct": "The five measures create a complete hillslope coordinate system: (1) HAND = vertical distance to stream = flood vulnerability. (2) Horizontal distance to stream = overland flow travel distance. (3) Slope distance to stream = actual surface path length = energy dissipation distance. (4) Horizontal distance to ridge = position on hillslope. (5) Vertical distance to ridge = relief above point to divide. Together: a point near the ridge (high #4, low #5) is in the upland zone (suitable for development). A point near the stream (low HAND, high #4) is in the lowland zone (flood-prone). A midpoint is transitional. Applications: soil mapping (HAND predicts hydric soils), vegetation modeling (distance to ridge predicts moisture), land-use planning (HAND zones), hydrograph timing (slope distance predicts travel time).",
+    "explanation": "The complete proximity measure set provides a comprehensive terrain-based framework for landscape characterization."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical implications of using D-infinity versus D8 flow directions for HAND computation on a modern 32-core workstation.",
+    "correct": "On a 32-core workstation using TauDEM's MPI parallelization: D8 computation is slightly faster (simpler algorithm, discrete directions) but produces HAND with streaking artifacts on smooth hillslopes. D-infinity is marginally slower (continuous angles, proportional partitioning) but produces smooth, artifact-free HAND. The computational cost difference is negligible -- perhaps 10-20% longer. The quality difference is significant, especially on flat terrain like the Hungarian Great Plain where D8 striping creates ragged flood extent boundaries. Best practice: compute D8 for stream delineation (where discrete paths are needed) and D-infinity for HAND (where smooth surfaces are needed). Both can be computed in the same workflow. On 32 cores, even national-scale HAND computation takes hours, not days.",
+    "explanation": "The D-infinity quality advantage comes at negligible computational cost on modern hardware."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND-based flood mapping handles the problem of multiple stream reaches meeting at a confluence.",
+    "correct": "At confluences, each cell belongs to exactly one catchment (via the catchment tessellation from Chapter 11). The cell's HAND value was computed relative to the stream in its own catchment. During flood mapping, each catchment receives the depth of its associated reach. At the confluence, the upstream reaches may have different depths than the downstream reach. A cell in the upstream catchment is evaluated against the upstream reach depth; a cell in the downstream catchment against the downstream depth. The transition at the catchment boundary may create a step change in inundation depth, which is physically unrealistic but operationally acceptable. HEC-RAS handles confluences more correctly through its backwater calculations. The HAND approach prioritizes coverage and speed over confluence accuracy.",
+    "explanation": "Catchment-based independence means each reach operates independently, with junction effects unmodeled."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how computing HAND for Hungary using both DDM-5 and Copernicus EEA-10 could provide complementary information.",
+    "correct": "DDM-5 (5 m, contour-derived, bare-earth, 1-2 m accuracy) vs EEA-10 (10 m, radar-derived, DSM, ~1.5 m accuracy). Complementary use: (1) DDM-5 provides bare-earth HAND accurate for open terrain flood assessment. (2) EEA-10 provides cross-border consistency with neighboring EU countries. (3) Comparing the two reveals where vegetation bias in EEA-10 causes HAND inflation (forested floodplains). (4) EEA-10 covers areas where DDM-5 may be outdated (post-DDM construction). (5) For cross-border Tisza analysis (Hungary-Serbia-Romania), EEA-10 is the only consistent option. The best approach: use DDM-5 as primary within Hungary, supplement with EEA-10 for cross-border studies and areas of DDM-5 uncertainty.",
+    "explanation": "Using multiple DEM sources provides redundancy and identifies areas where each product's limitations matter."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the HAND value at a levee crest for assessing levee overtopping risk.",
+    "correct": "The HAND value at the levee crest represents the height of the levee above the river. If the flood depth in the river exceeds this HAND value, water overtops the levee. For example, if the levee crest has HAND = 6 m, a 7 m flood would overtop by 1 m. The HAND surface behind the levee shows where overtopping water would flow: it follows the lowest-HAND paths through the protected floodplain. This analysis requires accurate elevation at the crest (DDM-5's 1-2 m accuracy may be insufficient; project LiDAR is needed). For Hungary's Tisza levees protecting 18,000 km^2, systematic HAND mapping of all levee crests would identify the weakest points (lowest HAND values) where overtopping would occur first, prioritizing reinforcement efforts.",
+    "explanation": "HAND values at levee crests directly translate to overtopping thresholds for emergency response."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the HAND concept has been extended from Brazil's Amazon to operational deployment in the US, and discuss what made this transfer successful.",
+    "correct": "The transfer succeeded due to: (1) Nobre's foundational concept (2000s) was simple, physically interpretable, and computationally computable. (2) Tarboton's TauDEM provided the parallel D-infinity implementation needed for large-scale computation. (3) Tesfa et al.'s (2011) theoretical framework unified HAND with flow algebra. (4) Maidment's vision connected HAND to the operational National Water Model. (5) Liu and Wang's computational effort at NCSA/TACC made continental processing feasible. (6) The NHDPlus-based information model connected HAND to discharge forecasts. The key success factor: HAND required only a DEM and stream network -- data already available nationwide. No new field data collection was needed, enabling immediate scaling from research to operations.",
+    "explanation": "HAND's successful transfer from research to operations demonstrates how simple, data-parsimonious methods scale best."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the limitations of HAND for modeling dam breach flood waves and explain what additional tools are needed.",
+    "correct": "HAND assumes steady-state, reach-uniform flooding with no momentum effects. A dam breach produces: (1) a rapidly propagating flood wave (unsteady, violating Manning's steady-state assumption), (2) velocities that cause structural damage (HAND has no velocity concept), (3) backwater effects at downstream constrictions, (4) lateral spreading across the floodplain with time-varying depth. HAND cannot model any of these. For dam breach analysis, HEC-RAS 2D with breach parameters is required, solving the full Saint-Venant equations on a computational mesh. HAND could provide initial screening (which communities are in the potential breach path based on terrain) but not the detailed time-varying analysis needed for emergency planning. The two approaches serve different roles: HAND for screening, HEC-RAS for design.",
+    "explanation": "Dam breach analysis is one of the clearest cases where HAND is insufficient and detailed hydraulic modeling is essential."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND values could be used to design an agricultural zoning system for the Tisza floodplain.",
+    "correct": "HAND-based agricultural zoning: (1) HAND < 2 m: annual flood zone. Only flood-tolerant uses: riparian forest, wet meadow, seasonal pasture. No permanent structures or perennial crops. (2) HAND 2-5 m: moderate flood zone. Annual crops acceptable but periodic damage expected. Insurance advisable. No orchards or permanent structures. (3) HAND 5-8 m: occasional flood zone. Most agriculture appropriate including orchards. Buildings with flood-proofing. (4) HAND > 8 m: no river flood risk (flash floods may still apply). Unrestricted agriculture and development. This zoning would be computed from DDM-5 and OVF river network, applied to the entire Tisza floodplain. It provides a rational, terrain-based alternative to administrative zoning that may not reflect actual flood risk.",
+    "explanation": "HAND-based zoning connects terrain analysis directly to agricultural land-use policy."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the computational requirements and feasibility of maintaining an operational HAND-based flood mapping system for Hungary.",
+    "correct": "Computing national HAND: DDM-5 at 5 m = ~1.9 billion cells, feasible on a 32-core workstation with 128+ GB RAM in hours to days. Rating curves: computed once per reach using Manning's equation, stored in a database. Pre-computed inundation library: Hungary has thousands (not millions) of reaches; at 0.5 m intervals, the library is modest in size. Real-time operation: when EFAS/OVF forecasts arrive, lookup depth from rating curves, retrieve pre-computed maps, overlay with KSH population data. Hardware: a single modern server is sufficient. Software: TauDEM (free, open source) or ArcGIS Pro. Data: DDM-5 (Lechner), OVF river network (data.vizugy.hu), gauge data (data.vizugy.hu, free since July 2024). The system is technically and financially feasible today.",
+    "explanation": "An operational Hungarian HAND system requires modest computing resources and is achievable with currently available data and tools."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND addresses the fundamental asymmetry between forecast availability and flood mapping coverage in modern hydrology.",
+    "correct": "Forecasts exist everywhere: the NWM covers 2.7M US reaches hourly; EFAS covers all European rivers; GloFAS covers the globe. But flood maps exist for few reaches: FEMA covers <25% of US streams; most developing countries have none. HAND resolves this asymmetry by providing inundation mapping capability everywhere a DEM exists. The terrain processing is done once, after which any forecast can be translated to a flood map instantly. This means forecast improvements (better models, more observations) immediately translate to better flood maps without additional terrain work. The forecast-to-map translation is the critical bridge from hydrological science to public safety, and HAND makes this bridge available everywhere.",
+    "explanation": "HAND closes the gap between ubiquitous forecasts and limited flood maps."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the Copernicus Emergency Management Service rapid mapping capability and how it complements HAND-based pre-computed maps during flood events.",
+    "correct": "During major floods, Copernicus EMS produces satellite-derived flood extent maps within hours of acquisition, primarily using Sentinel-1 SAR (penetrates clouds). These show the actual flood extent (observation, not prediction). HAND-based maps show predicted extent (from forecasts). The two are complementary: (1) HAND provides advance warning days before the event; satellite shows what's happening now. (2) HAND covers all reaches continuously; satellite provides snapshots at overpass times. (3) Comparison validates HAND predictions: where satellite shows flooding that HAND missed, the DEM or rating curve may need correction. (4) Satellite data provides ground truth for calibrating Manning's n. For Hungary, activating Copernicus EMS during Tisza floods provides the validation data needed to improve HAND-based systems.",
+    "explanation": "Satellite observations and HAND predictions provide complementary temporal perspectives on flood events."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND supports flood emergency management decision-making at different timescales: days ahead, hours ahead, and during the event.",
+    "correct": "Days ahead (EFAS/GloFAS forecasts): HAND converts medium-range discharge predictions to approximate inundation maps, enabling pre-positioning of resources and voluntary evacuation. Hours ahead (NWM/HYDROINFO forecasts): more precise short-range forecasts produce refined HAND-based inundation maps, enabling targeted evacuation orders and bridge closures. During the event (real-time gauge data): water level observations at gauge stations directly give local flood depth; HAND translates this to spatial extent for unmeasured areas between gauges. Post-event (satellite imagery): satellite-observed extent validates HAND predictions, improving future mapping. At each timescale, HAND provides the spatial translation that converts point-based forecasts or observations into areal flood intelligence.",
+    "explanation": "HAND serves different decision-making needs at each timescale of flood emergency management."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the concept of 'data parsimony' makes HAND uniquely suited for application in developing countries compared to detailed hydraulic models.",
+    "correct": "HAND requires only two inputs: a DEM and a stream network definition. It does not require: surveyed cross-sections (expensive, labor-intensive), Manning's roughness coefficients (calibration data unavailable), boundary conditions (downstream water levels unknown), observed rating curves (gauges sparse or absent), or high-performance computing (desktop sufficient for single watersheds). In developing countries (sub-Saharan Africa, South Asia, Middle East), these detailed inputs simply don't exist for most rivers. Global DEMs (Copernicus GLO-30) and stream networks (HydroSHEDS) are freely available. HAND can be computed on a standard laptop using free software (TauDEM, pysheds). This means any researcher or agency can produce flood vulnerability maps without specialized equipment, data, or expertise. For HEC-RAS, none of this is possible without field campaigns.",
+    "explanation": "Data parsimony is HAND's critical advantage for the majority of the world's rivers that have never been surveyed."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between HAND-based flood vulnerability assessment and the sustainable development goals related to disaster risk reduction.",
+    "correct": "UN SDG 11 (sustainable cities) and the Sendai Framework for Disaster Risk Reduction both call for reducing flood disaster losses. HAND supports these by: (1) providing universal flood vulnerability screening -- identifying at-risk communities worldwide using free global data, (2) enabling risk-informed development planning -- HAND-based zoning prevents construction in flood-prone areas, (3) supporting early warning systems -- HAND translates forecasts to spatial warnings, (4) reducing post-disaster mortality through better emergency response routing, (5) providing data for insurance and recovery planning. For developing countries, HAND may be the only feasible approach to systematic flood risk assessment. The SDG targets for 'substantially reducing' disaster deaths and economic losses require tools that work everywhere, not just in data-rich nations.",
+    "explanation": "HAND directly supports global disaster risk reduction goals through its universal applicability."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for integrating HAND with real-time soil moisture data from satellites (e.g., SMAP, Sentinel-1) for improved flood prediction.",
+    "correct": "Soil moisture determines how much rainfall becomes runoff: saturated soils produce immediate runoff; dry soils absorb rainfall. SMAP and Sentinel-1 provide near-daily global soil moisture. Integration: high soil moisture + heavy rainfall forecast + low HAND = high flood risk. Specifically: (1) EFAS already uses soil moisture from ECMWF/LISFLOOD to determine initial conditions. (2) Adding HAND-based terrain vulnerability creates a spatial risk index: areas where soil is saturated AND HAND is low face the highest risk. (3) This could trigger HAND-based inundation mapping even before discharge forecasts indicate flooding, providing earlier warning for flash floods where the rainfall-to-peak time is very short. For the Tisza, soil moisture in the Carpathian headwaters determines how much precipitation becomes flood-generating runoff.",
+    "explanation": "Combining soil moisture, precipitation, and terrain vulnerability creates a more complete flood risk picture."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND enables the economic comparison between prevention (flood zoning) and response (emergency management) for flood risk management.",
+    "correct": "HAND provides the data needed for cost-benefit analysis: (1) Prevention: HAND-based zoning restricts development in low-HAND areas. The cost is lost development opportunity; the benefit is avoided flood damage. HAND quantifies the at-risk area. (2) Response: HAND-based inundation maps during events enable evacuation. The cost is emergency operations; the benefit is saved lives. HAND quantifies affected population. (3) Insurance: HAND-based risk classification sets premiums proportional to actual risk. HAND provides the per-building risk metric. (4) Infrastructure: HAND identifies where levees, detention basins, or channel improvements would be most effective by quantifying the protected area and population. For Hungary, comparing the cost of a national LiDAR program against the avoided flood damage costs would likely show strong positive return.",
+    "explanation": "HAND provides the quantitative foundation for rational flood risk management investment decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the EU-Hydro dataset in enabling pan-European HAND computation.",
+    "correct": "EU-Hydro, produced under the Copernicus Land Monitoring Service, provides a pan-European river network with: (1) consistent topology across national boundaries (essential for transnational rivers like the Danube and Rhine), (2) delineated catchments compatible with Copernicus DEM, (3) stream segment attributes comparable to NHDPlus COMIDs, (4) coverage of all EU/EEA countries. For HAND computation, EU-Hydro serves the same role as NHDPlus in the US: providing the stream network from which channel heads are extracted and against which HAND is computed. Combined with Copernicus EEA-10 (10 m) or GLO-30 (30 m), EU-Hydro enables consistent HAND computation across Europe. For Hungary, EU-Hydro complements the national OVF river network by providing cross-border consistency.",
+    "explanation": "EU-Hydro provides the standardized stream network needed for consistent pan-European terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND values on the Tisza plain could be used to prioritize locations for a targeted Hungarian LiDAR program.",
+    "correct": "Hungary lacks nationwide LiDAR but could invest in targeted surveys. HAND-based prioritization: (1) Compute national HAND from DDM-5 (1.9 billion cells, days of processing). (2) Identify areas where HAND < 5 m AND population density > threshold -- these are the highest-risk locations. (3) Along these areas, prioritize levee corridors (where overtopping risk is highest), urban floodplains (Szolnok, Szeged, Budapest riverside), and critical infrastructure. (4) Commission LiDAR for these priority areas first (perhaps 10-20% of national area). (5) Re-compute HAND from LiDAR in these areas; retain DDM-5 elsewhere. This phased approach maximizes the value of limited LiDAR investment by targeting the areas where high-precision HAND matters most.",
+    "explanation": "HAND itself can guide the prioritization of LiDAR investment for maximum flood management benefit."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the Copernicus EEA-10 could serve as the basis for pan-European HAND computation.",
+    "correct": "EEA-10 provides consistent 10-m elevation across EU/EEA. Combined with EU-Hydro, it enables cross-border HAND computation. Steps: condition EEA-10, compute D-infinity directions, derive streams from EU-Hydro heads, compute HAND. Limitation: EEA-10 is DSM, so HAND in forests is biased high. National LiDAR replaces EEA-10 where available. The computation is feasible with PRACE or cloud infrastructure.",
+    "explanation": "EEA-10 enables a consistent pan-European HAND computation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND handles the terrain transition from headwater to lowland along the Tisza.",
+    "correct": "In mountains (slope >1 m/km), HAND increases rapidly from stream to ridge. On the plain (<0.05 m/km), HAND stays low across wide floodplains. The framework handles this automatically: each cell's HAND depends on local terrain and nearest stream. Manning's equation with local slope produces appropriate rating curves for each reach. No parameter adjustment needed for the transition.",
+    "explanation": "HAND adapts seamlessly to all terrain conditions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss challenges of computing HAND in urban environments with buildings and underground infrastructure.",
+    "correct": "In cities, DSMs contain buildings blocking flow. Bare-earth DEMs remove buildings but may miss wall foundations redirecting water. Culverts and storm drains alter real flow but are invisible. For urban HAND, use bare-earth DEM but recognize that stormwater infrastructure is unrepresented. Detailed urban analysis requires 2D HEC-RAS. HAND provides screening-level urban assessment only.",
+    "explanation": "Urban environments present unique challenges for terrain-based flood analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND relates to the geomorphological theory of fluvial terraces.",
+    "correct": "Fluvial terraces are former floodplain surfaces at discrete HAND levels corresponding to past base levels. The modern floodplain has HAND 0-2 m; the first terrace at HAND 3-5 m. On the Tisza, settlements on terraces (kunhalmok) at HAND 4-8 m exploited these features. HAND quantifies what geomorphologists recognize: the landscape records its flood history in terraced surfaces.",
+    "explanation": "HAND provides a quantitative measure of floodplain terracing."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for using HAND to evaluate climate change impacts on flood vulnerability.",
+    "correct": "Climate change alters discharges. HAND enables rapid assessment: obtain projected discharge changes, use rating curve for new depth, apply to HAND for expanded extent. For the Tisza, climate models suggest increasing floods. HAND can rapidly assess how 1-2 m depth increase expands the inundated area on the flat plain. This supports adaptation planning in minutes, not months.",
+    "explanation": "HAND enables rapid climate change impact assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND supports the Sendai Framework for Disaster Risk Reduction.",
+    "correct": "The Sendai Framework calls for understanding risk, strengthening governance, investing in resilience, and enhancing preparedness. HAND supports all four: risk understanding through universal screening, governance through zoning data, resilience through identifying where defenses are needed, and preparedness through real-time mapping. For developing countries with highest flood mortality, HAND may be the only feasible approach.",
+    "explanation": "HAND aligns with global disaster risk reduction frameworks."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HAND computation as a teaching tool for hydroinformatics students.",
+    "correct": "HAND is ideal for teaching: intuitive concept, clear processing chain, real terrain data, free tools (TauDEM, pysheds, OpenTopography), and directly meaningful results. A lab exercise: download GLO-30 for a Hungarian watershed, compute HAND, interpret flood zones. Students worldwide can perform identical analysis, demonstrating hydroinformatics democratization.",
+    "explanation": "HAND provides accessible terrain analysis teaching with immediate practical relevance."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND enables cross-system vulnerability comparison without site-specific calibration.",
+    "correct": "Because HAND uses the same algorithm everywhere, a HAND value of 3 m means the same thing on any river. This enables national ranking of vulnerability, cross-basin comparison, and standardized risk classification. This consistency is impossible with HEC-RAS models built differently by different engineers.",
+    "explanation": "HAND's algorithmic consistency enables meaningful cross-system comparison."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the continental US HAND dataset being publicly available.",
+    "correct": "Public availability means any researcher can access the same data as the NWM, enabling reproducible research. State/local agencies use it for planning without recomputing. Educational institutions teach with real operational data. Commercial applications build on public infrastructure. This follows open-data principles: public investment should produce public benefit.",
+    "explanation": "Public HAND data maximizes societal benefit of terrain investment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of topographic position in landscape ecology and how HAND quantifies it.",
+    "correct": "Topographic position describes where on the hillslope a point sits. HAND quantifies the valley-floor dimension: low HAND = near water, flood-prone, wet soils. High HAND = far from water, dry. Combined with other proximity measures, HAND enables quantitative landscape classification for ecology, soil mapping, and vegetation modeling.",
+    "explanation": "HAND provides ecologically meaningful landscape position measurement."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND reveals landscape features invisible in conventional elevation maps on the Hungarian Great Plain.",
+    "correct": "With only 14 m total relief, the Plain appears featureless in absolute elevation. HAND reveals: active channel (HAND 0), hullamter (0-4 m), levee discontinuities, remnant meanders (low-HAND paths), settlement mounds (4-8 m), and agricultural zones by flood frequency. None visible in absolute elevation; only stream-relative transformation reveals functional landscape structure.",
+    "explanation": "HAND reveals the hidden structure of flat landscapes."
+  },
+  {
+    "type": "essay",
+    "question": "Explain practical steps for computing HAND in Hungary using freely available tools.",
+    "correct": "(1) Download Copernicus GLO-30. (2) Obtain OVF network from data.vizugy.hu. (3) In QGIS+TauDEM: reproject to EOV, PitRemove, D8/D-inf flow, channel heads, weighted accumulation, DinfDistDown. (4) Visualize with blue ramp. (5) Interpret flood zones, compare with history. Alternative: OpenTopography web processing. The entire workflow uses free data and open-source tools.",
+    "explanation": "The HAND workflow is accessible to anyone with internet and basic GIS skills."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how TauDEM DinfDistDown implements the HAND algorithm.",
+    "correct": "Command: mpiexec -n 8 DinfDistDown -ang dinf.tif -fel filled.tif -src stream.tif -dd hand.tif -m ave v. Parameters: -ang = D-inf angles, -fel = filled DEM, -src = stream raster, -dd = output HAND. The -m ave v flag computes weighted average vertical distance. MPI enables parallel processing. Output units match the DEM.",
+    "explanation": "Understanding TauDEM parameters is essential for correct HAND computation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the importance of internally consistent inputs for HAND and what happens when this is violated.",
+    "correct": "Consistent means all inputs derive from the same conditioned DEM with identical extent, cell size, and alignment. Violations: original DEM with filled flow directions produces negative HAND; streams from different DEM misalign; mismatched cell sizes reference wrong cells. Tools may not produce errors; results are silently wrong. Consistency checking is the most important quality control step.",
+    "explanation": "Silent errors from inconsistent inputs are the most dangerous HAND failure mode."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND could support emergency evacuation routing during Tisza floods.",
+    "correct": "HAND identifies safe paths: map buildings with HAND < threshold, identify evacuation destinations (HAND > 10 m), route through roads avoiding those where HAND < current depth, prioritize lowest-HAND communities. On the flat Tisza plain, safe ground may be far from flooded areas. HAND-based routing finds shortest safe paths. Pre-computed HAND enables seconds-fast route updates.",
+    "explanation": "HAND-based routing combines flood vulnerability with transportation network analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND relates to the geomorphic bankfull threshold.",
+    "correct": "The bankfull depth is where water just fills the channel and spills onto the floodplain. In HAND terms, bank-adjacent cells with HAND equal to bank height mark this threshold. The rating curve inflects here: surface area increases suddenly as the floodplain is accessed. For the Tisza, bankfull is typically 3-5 m. HAND mapping at fine intervals reveals this transition.",
+    "explanation": "The bankfull threshold is visible in both the HAND raster and the rating curve."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HAND as a common operating picture for multi-agency flood response.",
+    "correct": "During floods, multiple agencies need shared spatial understanding. HAND provides this: all see the same terrain map, values are objective and reproducible, maps update with forecasts, building counts provide shared metrics. Without HAND, agencies use different maps and assumptions. With HAND, everyone works from the same spatial reality. Critical for Tisza, where 12 OVF directorates must coordinate.",
+    "explanation": "HAND provides shared spatial intelligence for multi-agency coordination."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how D-infinity HAND produces smoother flood boundaries than D8 HAND.",
+    "correct": "D8 creates ragged boundaries because discrete directions create parallel paths with slightly different HAND values. D-infinity blends variations through weighted averaging, producing smooth surfaces and boundaries. On the flat Tisza plain where boundaries sweep kilometers for 1 m water change, smooth boundaries are essential for readability and utility. The computational cost difference is negligible.",
+    "explanation": "Smooth D-infinity boundaries better represent physical flooding patterns."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss combining HAND with real-time drone imagery during flood events.",
+    "correct": "Drones fly over flooded areas with video/imagery and LiDAR. Combined with HAND: drone imagery confirms actual vs predicted extent; where drone shows flooding outside HAND prediction, levee breach may have occurred; drone-measured water surfaces calibrate HAND depth in real-time; post-event drone LiDAR documents terrain changes. This provides both broad-scale HAND prediction and local drone detail.",
+    "explanation": "Drone technology provides local validation complementing HAND's broad prediction."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for HAND to prioritize locations for a targeted Hungarian LiDAR program.",
+    "correct": "Compute national HAND from DDM-5 (1.9 billion cells). Identify areas where HAND < 5 m AND population density > threshold. Prioritize: levee corridors, urban floodplains (Szolnok, Szeged), critical infrastructure. Commission LiDAR for priority areas first (perhaps 10-20% of area). Re-compute HAND from LiDAR there; retain DDM-5 elsewhere. This maximizes value of limited LiDAR investment.",
+    "explanation": "HAND guides LiDAR investment prioritization for maximum flood management benefit."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of EU-Hydro in enabling pan-European HAND computation.",
+    "correct": "EU-Hydro provides consistent topology across national boundaries, delineated catchments compatible with Copernicus DEM, stream segment attributes comparable to NHDPlus COMIDs, and coverage of all EU/EEA countries. Combined with EEA-10 or GLO-30, it enables consistent HAND across Europe. For Hungary, EU-Hydro complements the national OVF network with cross-border consistency.",
+    "explanation": "EU-Hydro provides the standardized stream network for pan-European terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the computational feasibility and requirements of maintaining an operational HAND system for Hungary.",
+    "correct": "National HAND: DDM-5 at 5 m = ~1.9 billion cells, feasible on modern workstation in hours-days. Rating curves computed once per reach. Pre-computed library modest for Hungary's river network. Real-time: EFAS/OVF forecast lookup, map retrieval, KSH population overlay. Hardware: single modern server sufficient. Software: TauDEM (free). Data: DDM-5, OVF network, gauge data (free since July 2024). Technically and financially feasible today.",
+    "explanation": "An operational Hungarian HAND system requires modest resources and is achievable now."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND addresses the asymmetry between forecast availability and flood mapping coverage.",
+    "correct": "Forecasts exist everywhere (NWM 2.7M reaches, EFAS all Europe, GloFAS global). But flood maps exist for few reaches (FEMA <25% US). HAND resolves this by providing mapping everywhere a DEM exists. Terrain processing done once; any forecast translates to a map instantly. Forecast improvements immediately produce better maps without additional terrain work.",
+    "explanation": "HAND closes the gap between ubiquitous forecasts and limited flood maps."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND mapping could support the EU Floods Directive's transnational cooperation requirements.",
+    "correct": "The Directive requires transnational cooperation for rivers crossing national boundaries. HAND computed from Copernicus EEA-10 and EU-Hydro provides consistent methodology across borders. For the Tisza (crossing Ukraine, Romania, Hungary, Serbia), HAND enables unified flood vulnerability mapping regardless of national data differences. This supports the Directive's requirement that member states coordinate across shared river basins.",
+    "explanation": "HAND's consistent methodology supports the Directive's cross-border cooperation requirements."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND surface discontinuity at levees provides direct measurement of flood defense capability along the Tisza.",
+    "correct": "Levees create sharp HAND jumps: low values (0-4 m) on the river side, higher (5-8 m) behind the levee. The magnitude of this jump directly measures protection: a 6 m HAND behind the levee means a 6 m flood is needed to affect the protected area. Low HAND jumps identify weak points where overtopping would occur first. Systematic HAND mapping of all Tisza levees would prioritize reinforcement efforts and emergency response planning.",
+    "explanation": "HAND discontinuities at levees directly quantify flood defense effectiveness."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND-based flood vulnerability mapping supports insurance and financial risk assessment in Hungary.",
+    "correct": "HAND provides building-level flood exposure: each property gets a HAND value representing its height above nearest stream. This enables: risk-based insurance pricing (lower HAND = higher premium), portfolio risk assessment (count properties at each HAND level), and expected annual loss estimation (combine HAND with flood frequency and depth-damage functions). For Hungary, DDM-5 + OVF network provide the data; KSH building registry provides the property locations. HAND-based insurance would extend beyond officially mapped flood zones to cover all properties near streams.",
+    "explanation": "HAND enables rational, property-level flood insurance pricing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND values on the Tisza plain could inform the design of new flood retention areas (polders).",
+    "correct": "Hungary has proposed creating emergency flood retention polders along the Tisza to store excess floodwater. HAND supports this by: (1) identifying large low-HAND areas (< 2-3 m) suitable for temporary storage, (2) calculating storage volume at each potential depth (sum of d - HAND over the area), (3) estimating the peak reduction from each polder volume, (4) evaluating current land use in candidate areas (from HAND-based agricultural zoning). The flatness of the Tisza plain means small depth increments cover large areas, making polders effective. HAND provides the terrain analysis needed for site selection and capacity estimation.",
+    "explanation": "HAND supports flood retention polder design through terrain-based volume estimation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND enables rapid screening of flood exposure for all 2.7 million NHDPlus reaches simultaneously.",
+    "correct": "For every NHDPlus reach, the HAND raster and address point database enable: counting buildings at each HAND level (0-2 m, 2-5 m, 5-10 m, etc.), identifying reaches with the most low-HAND buildings, and ranking reaches by exposure. This screening operates on all 2.7 million reaches simultaneously because HAND is pre-computed and the address lookup is a simple spatial query. The result: a national priority list of reaches sorted by flood exposure. Emergency managers focus resources on the highest-exposure reaches. FEMA uses this to prioritize detailed HEC-RAS studies. The screening replaces decades of reach-by-reach analysis with a single automated computation.",
+    "explanation": "HAND enables simultaneous exposure screening across the entire national stream network."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between HAND precision and DEM vertical accuracy for different data sources available in Hungary.",
+    "correct": "HAND precision is directly limited by DEM accuracy. DDM-5 (1-2 m RMSE): HAND uncertain by 1-2 m; adequate for identifying broad zones but cannot distinguish features smaller than 2 m. Copernicus GLO-30 (4 m): HAND uncertain by 4 m; useful only for major floodplains. Project LiDAR (0.1-0.2 m): HAND precise enough for individual buildings and levee features. On the Tisza plain where 1-2 m HAND differences separate annual from decadal flooding, DDM-5 is marginal and LiDAR is needed for precise assessment. The recommended Hungarian strategy: DDM-5 for national screening, LiDAR for critical areas.",
+    "explanation": "DEM accuracy directly determines HAND utility for different flood management applications."
+  }
+]

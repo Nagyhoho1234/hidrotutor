@@ -1,0 +1,806 @@
+{
+  "chapter": "ch21",
+  "total_issues": 100,
+  "fixes": [
+    {
+      "line_approx": 11,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Megválaszolásukhoz olyan matematikai modellre van szükség, amely a felszín alatti vízmozgás fizikáját -- a Darcy-törvényt, a tömegmegmaradást, az irányadó parciális differenciálegyenleteket -- a vízadó rendszer diszkretizált reprezentációján oldja meg.",
+      "suggested": "Megválaszolásukhoz olyan matematikai modellre van szükség, amely a felszín alatti vízmozgás fizikáját -- a Darcy-törvényt, a tömegmegmaradást és az irányadó parciális differenciálegyenleteket -- a vízadó rendszer diszkretizált reprezentációján írja le és oldja meg.",
+      "reason": "Az angolos szerkezetben a modell mintha magát a fizikát „oldaná meg”; magyarul természetesebb pontosítani, hogy az egyenleteket oldja meg."
+    },
+    {
+      "line_approx": 15,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a fejezet hidalja át a szakadékot a statikus GIS-adatok és a dinamikus szimuláció között.",
+      "suggested": "Ez a fejezet a statikus GIS-adatok és a dinamikus szimuláció közötti kapcsolatot mutatja be.",
+      "reason": "A „hidalja át a szakadékot” angolos, publicisztikus metafora; tankönyvi stílusban visszafogottabb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 16,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ezután megvizsgáljuk, hogyan ad a geodatabase szimulációs komponense -- a Boundary, Cell2D, Cell3D, Node2D és Node3D objektumosztályok együttese -- szabványos GIS-reprezentációt a különféle numerikus modellekhez.",
+      "suggested": "Ezután megvizsgáljuk, hogyan ad szabványos GIS-reprezentációt a különféle numerikus modellekhez a geodatabase szimulációs komponense -- a Boundary, Cell2D, Cell3D, Node2D és Node3D objektumosztályok együttese --.",
+      "reason": "Természetesebb magyar szórend: az ige és tárgya szorosabban kapcsolódik, az alany későbbre kerülhet."
+    },
+    {
+      "line_approx": 19,
+      "category": "register",
+      "severity": "low",
+      "original": "A fejezet végén globális kitekintést adunk azokról a kihívásokról, amelyek 2026-ban a felszín alatti víz szimulációját egyszerre teszik elengedhetetlenné és nehézzé.",
+      "suggested": "A fejezet végén globális kitekintést adunk azokra a kihívásokra, amelyek 2026-ban a felszín alatti víz szimulációját egyszerre teszik elengedhetetlenné és nehézzé.",
+      "reason": "Az „adunk azokról” szerkezet nehézkes; a „kitekintést adunk azokra” vagy még inkább „kitekintünk azokra” természetesebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A környező mezőgazdasági területeken kitermelési gyakorlat bármilyen változása megváltoztathatja a talajvízszintet és károsíthatja ezeket az élőhelyeket.",
+      "suggested": "A környező mezőgazdasági területeken a kitermelési gyakorlat bármilyen változása megváltoztathatja a talajvízszintet, és károsíthatja ezeket az élőhelyeket.",
+      "reason": "Hiányzik a névelő; enélkül a mondat fordításszagú és grammatikailag döccen."
+    },
+    {
+      "line_approx": 35,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Amikor Budapest vízműve üzemelteti parti szűrésű kútjait a Duna mentén -- egy rendszert, amely a főváros ivóvízellátásának mintegy felét biztosítja --, minden egyes kút tervezése, termelési hozama és a folyóparttól mért távolsága felszín alatti víz szimulációval határozható meg.",
+      "suggested": "Budapest parti szűrésű kútjainak Duna menti üzemeltetésében -- ez a rendszer a főváros ivóvízellátásának mintegy felét biztosítja -- minden egyes kút tervezését, termelési hozamát és a folyóparttól mért távolságát felszín alatti vízmozgási szimulációval határozzák meg.",
+      "reason": "Az eredeti mondat angolos idő- és alanykezelése nehézkes; a „Budapest vízműve” alak is szokatlan ebben a kontextusban."
+    },
+    {
+      "line_approx": 39,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A **vízadó geometriája** a modelltartomány háromdimenziós alakját írja le",
+      "suggested": "A **vízadó geometriája** a modelltartomány háromdimenziós szerkezetét írja le",
+      "reason": "A „háromdimenziós alak” műszaki szövegben kevésbé szokásos; a „szerkezet” vagy „geometriai felépítés” természetesebb."
+    },
+    {
+      "line_approx": 40,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az **anyagtulajdonságok** -- szivárgási tényező, fajlagos tárolás, fajlagos hozam, porozitás -- térben elosztott mezők",
+      "suggested": "Az **anyagjellemzők** -- szivárgási tényező, fajlagos tárolás, fajlagos hozam, porozitás -- térben eloszló mezők",
+      "reason": "Az „anyagtulajdonságok” itt kissé általános és fordításszagú; hidrogeológiai szövegben az „anyagjellemzők” természetesebb."
+    },
+    {
+      "line_approx": 42,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az **igénybevételek** a rendszer emberi eredetű terhelései",
+      "suggested": "A **terhelések** a rendszer emberi eredetű igénybevételei",
+      "reason": "Az „igénybevételek” önmagában itt szokatlan kategórianév; modellezési kontextusban a „terhelések” bevettebb."
+    },
+    {
+      "line_approx": 45,
+      "category": "register",
+      "severity": "low",
+      "original": "A GIS nem csupán a szimuláció kényelmes vizualizációs eszköze; ez az elsődleges környezet, amelyben a szimulációs bemeneteket összeállítják, minőségbiztosítják és karbantartják.",
+      "suggested": "A GIS nem csupán a szimuláció vizualizációjának kényelmes eszköze; ez az elsődleges környezet, amelyben a szimulációs bemeneteket összeállítják, ellenőrzik és karbantartják.",
+      "reason": "A „minőségbiztosítják” itt kissé vállalatias, nehézkes; a „vizualizációjának” szerkezet is természetesebb."
+    },
+    {
+      "line_approx": 58,
+      "category": "other",
+      "severity": "high",
+      "original": "Egyetlen termelőkút $T$ transzmisszivitású nyomás alatti vízadóban a a jól ismert Thiem-egyenletet adja az állandósult állapotú leszívásra:",
+      "suggested": "Egyetlen termelőkút $T$ transzmisszivitású nyomás alatti vízadóban a jól ismert Thiem-egyenlet szerint írható le az állandósult állapotú leszívás:",
+      "reason": "Elütés („a a”), valamint az eredeti szerkezet magyarul döcögős."
+    },
+    {
+      "line_approx": 60,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Egy folyót vonalnyelő elemként, egy eltérő szivárgási tényezőjű zónát pedig dublettfelület-elemként veszünk figyelembe.",
+      "suggested": "Egy folyót vonalnyelő elemként, egy eltérő szivárgási tényezőjű zónát pedig dublettfelületi elemként veszünk figyelembe.",
+      "reason": "A „dublettfelület-elem” összetétel magyartalan; a melléknévi összetétel természetesebb."
+    },
+    {
+      "line_approx": 61,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A szuperpozíció elve lehetővé teszi, hogy mindezek a hozzájárulások algebrai úton összegezhetők legyenek",
+      "suggested": "A szuperpozíció elve lehetővé teszi, hogy mindezeket a hozzájárulásokat algebrai úton összegezzük",
+      "reason": "Az „összegezhetők legyenek” körülményes, angolos szerkezet; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 73,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A matematikai megfogalmazás az ismeretlen nyomásmagasságot bázisfüggvények összegeként fejezi ki:",
+      "suggested": "A matematikai megfogalmazás az ismeretlen nyomásmagasságot alakfüggvények összegeként írja fel:",
+      "reason": "A következő mondatban is szerepel az „alakfüggvény”; a terminológia legyen következetes."
+    },
+    {
+      "line_approx": 85,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A FEFLOW több mint két évtizede Európa nagy részében a domináns felszín alatti vízmodellező eszköz",
+      "suggested": "A FEFLOW több mint két évtizede Európa nagy részében a legelterjedtebb felszín alatti vízmodellező eszköz",
+      "reason": "A „domináns” itt angolból átvett, kissé idegen hangzású; a „legelterjedtebb” természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 87,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A GIS-szel való szoros integrációja -- a FEFLOW közvetlenül importálhat és exportálhat shape-fájlokat, geodatabase-eket és raszteradatokat -- jól illeszkedik a korábbi fejezetekben leírt felszín alatti vízzel kapcsolatos GIS-eszközökhöz.",
+      "suggested": "A GIS-szel való szoros integrációja -- a FEFLOW közvetlenül importálhat és exportálhat shape-fájlokat, geoadatbázisokat és raszteradatokat -- jól illeszkedik a korábbi fejezetekben leírt felszín alatti vízzel kapcsolatos GIS-eszközökhöz.",
+      "reason": "A „geodatabase” helyett van bevett magyar megfelelő: „geoadatbázis”."
+    },
+    {
+      "line_approx": 88,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "További jelentős végeselem-kódok közé tartozik a SUTRA",
+      "suggested": "További jelentős végeselemalapú modellező kódok közé tartozik a SUTRA",
+      "reason": "A „végeselem-kód” kissé tükörfordításos; magyarul a „végeselemalapú modellező kód” vagy egyszerűen „program” természetesebb."
+    },
+    {
+      "line_approx": 101,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mátrixmegoldók -- jellemzően iteratív módszerek, mint a Prekondicionált Konjugált Gradiens (PCG) vagy az Általánosított Minimális Reziduális (GMRES) módszer -- határozzák meg azokat a nyomásmagasság-értékeket, amelyek az összes egyenletet egyidejűleg kielégítik.",
+      "suggested": "A mátrixegyenletet mátrixmegoldókkal -- jellemzően iteratív módszerekkel, például a prekondicionált konjugált gradiens (PCG) vagy az általánosított minimális reziduális (GMRES) módszerrel -- oldják meg; így kapjuk meg azokat a nyomásmagasság-értékeket, amelyek az összes egyenletet egyszerre kielégítik.",
+      "reason": "Az eredeti mondat angolosan személytelen és nehézkes; a magyarosabb igei szerkezet gördülékenyebb."
+    },
+    {
+      "line_approx": 103,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az anyagtulajdonságok raszterrétegekből rácscellákba történő hozzárendelése egyértelmű térbeli fedvényezés.",
+      "suggested": "Az anyagjellemzők raszterrétegekből a rácscellákhoz rendelése egyértelmű térbeli megfeleltetés.",
+      "reason": "A „fedvényezés” itt nem a legtermészetesebb terminus; a mondat egészében is túlzottan tükörfordításos."
+    },
+    {
+      "line_approx": 121,
+      "category": "register",
+      "severity": "low",
+      "original": "Az itteni tárgyalásmód Marton (2009, 4. fejezet) módszeres kifejtését követi",
+      "suggested": "A továbbiakban Marton (2009, 4. fejezet) módszeres kifejtését követjük",
+      "reason": "Az „itteni tárgyalásmód” nehézkes és kissé fordításszagú; egyszerűbb, közvetlenebb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 212,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a Dupuit--Forchheimer-közelítés ... a következőt adja:",
+      "suggested": "a Dupuit--Forchheimer-közelítés ... a következő összefüggést adja:",
+      "reason": "Az „a következőt adja” angolos, tudományos magyarban természetesebb az „összefüggést adja” vagy „írható” szerkezet."
+    },
+    {
+      "line_approx": 221,
+      "category": "register",
+      "severity": "medium",
+      "original": "egyedi termelési hozamát",
+      "suggested": "egyedi vízhozamát",
+      "reason": "A „termelési hozam” terminológiailag nehézkes és részben tautologikus; kútra természetesebb a „vízhozam”."
+    },
+    {
+      "line_approx": 222,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "úgy, hogy bármely kútnál a maximális leszívás ne haladja meg a tervezési határértéket",
+      "suggested": "úgy, hogy egyik kútnál se haladja meg a maximális leszívás a tervezési határértéket",
+      "reason": "A „bármely kútnál” itt angolos logikájú megfogalmazás; magyarul gördülékenyebb az „egyik kútnál se”."
+    },
+    {
+      "line_approx": 223,
+      "category": "register",
+      "severity": "low",
+      "original": "a vízadó vízvesztését",
+      "suggested": "a vízadó túlzott vízszintcsökkenését",
+      "reason": "A „vízvesztés” ebben a kontextusban pontatlan és kissé fordításszagú; hidrogeológiai szövegben konkrétabb a „vízszintcsökkenés” vagy „kimerülés”."
+    },
+    {
+      "line_approx": 226,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A nyugat-magyarországi (Győr--Komárom régió) Duna-kavicsterasz vízadóira",
+      "suggested": "A Nyugat-Magyarországon, a Győr--Komáromi régió Duna-kavicsteraszain található vízadókra",
+      "reason": "Több jelző torlódik a főnév előtt; magyarul természetesebb feloldani a szerkezetet."
+    },
+    {
+      "line_approx": 228,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "nagy termelési hozamoknál",
+      "suggested": "nagy vízhozamoknál",
+      "reason": "A „termelési hozam” itt szokatlan; a bevett műszaki kifejezés a „vízhozam”."
+    },
+    {
+      "line_approx": 229,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A középső Alföld finomszemű homok-vízadóiban",
+      "suggested": "A Közép-Alföld finomszemű homokos vízadóiban",
+      "reason": "A „középső Alföld finomszemű homok-vízadói” szerkezet nehézkes; a földrajzi név és az összetétel természetesebb alakban adható meg."
+    },
+    {
+      "line_approx": 239,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "nyomás alatti vízadókban a rugalmas tározásból, szabad felszínű vízadókban a gravitációs vízelvezetésből nyerve vizet",
+      "suggested": "nyomás alatti vízadókban a rugalmas tározásból, szabad felszínű vízadókban pedig a gravitációs vízelvezetésből kapja a vizet",
+      "reason": "A „nyerve vizet” tükörfordítás-ízű, magyarul természetesebb az egyszerű igei szerkezet."
+    },
+    {
+      "line_approx": 240,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A tranziens válasz a vízadó tározási tulajdonságairól ($S$, $S_y$) hordoz információt",
+      "suggested": "A tranziens válasz információt hordoz a vízadó tározási tulajdonságairól ($S$, $S_y$)",
+      "reason": "A mondat szórendje angolos; a magyarban természetesebb az „információt hordoz valamiről” rend."
+    },
+    {
+      "line_approx": 241,
+      "category": "register",
+      "severity": "low",
+      "original": "a MODFLOW által igényelt hidraulikai paraméterek",
+      "suggested": "a MODFLOW-hoz szükséges hidraulikai paraméterek",
+      "reason": "Az „igényelt” itt személytelenül, angolosan hangzik; a „szükséges” természetesebb."
+    },
+    {
+      "line_approx": 245,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "felhasználva a felszín alatti vízmozgás és a hővezetés közötti analógiát",
+      "suggested": "a felszín alatti vízmozgás és a hővezetés közötti analógiára támaszkodva",
+      "reason": "A „felhasználva” ebben a pozícióban fordításszagú; a „támaszkodva” idiomatikusabb."
+    },
+    {
+      "line_approx": 252,
+      "category": "register",
+      "severity": "low",
+      "original": "marad az a referenciamegoldás",
+      "suggested": "továbbra is az a referenciamegoldás",
+      "reason": "A jelenlegi szerkezet kissé darabos; a „továbbra is” gördülékenyebb tudományos stílusban."
+    },
+    {
+      "line_approx": 261,
+      "category": "calque",
+      "severity": "medium",
+      "original": "versus $1/u$ formában",
+      "suggested": "$1/u$ függvényében",
+      "reason": "A „versus” meghagyása itt felesleges angolosság; van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 262,
+      "category": "calque",
+      "severity": "medium",
+      "original": "versus $t/r^2$ ... formában",
+      "suggested": "$t/r^2$ függvényében",
+      "reason": "A „versus” használata itt is indokolatlan angol tükör."
+    },
+    {
+      "line_approx": 274,
+      "category": "calque",
+      "severity": "medium",
+      "original": "a leszívás $s$ versus $\\log t$ félig logaritmikus ábrázolása",
+      "suggested": "az $s$ leszívás $\\log t$ függvényében vett féllogaritmikus ábrázolása",
+      "reason": "A „versus” angol mintát követ; magyar szaknyelvben a „függvényében” természetes."
+    },
+    {
+      "line_approx": 281,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a keleti Alföld nyomás alatti pleisztocén vízadóira",
+      "suggested": "a Kelet-Alföld pleisztocén, nyomás alatti vízadóira",
+      "reason": "A jelzők torlódnak a főnév előtt; tagoltabb szerkezet természetesebb."
+    },
+    {
+      "line_approx": 288,
+      "category": "word_order",
+      "severity": "high",
+      "original": "Szabad felszínű vízadókban a Theis/Cooper--Jacob-egyenleteket korrigálni kell amiatt, hogy",
+      "suggested": "Szabad felszínű vízadókban a Theis/Cooper--Jacob-egyenleteket azért kell korrigálni, mert",
+      "reason": "Az „amiatt, hogy” itt nehézkes és angolos; az „azért ..., mert” szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 294,
+      "category": "other",
+      "severity": "high",
+      "original": "amelyet a terepi adatokhoz illesztve $T$, $S$ (rugalmas) és $S_y$ (fajlagos hozam) egyaránt meghatározhatók",
+      "suggested": "amelyet a terepi adatokhoz illesztve a $T$, az $S$ (rugalmas) és az $S_y$ (fajlagos hozam) egyaránt meghatározható",
+      "reason": "Nyelvtani egyeztetési hiba: az alanyok mellett az állítmánynak egyes számban kell állnia."
+    },
+    {
+      "line_approx": 311,
+      "category": "register",
+      "severity": "medium",
+      "original": "A konzervatív nyomjelzők (klorid, trícium)",
+      "suggested": "A konzervatív nyomjelző anyagok (például klorid, trícium)",
+      "reason": "A „nyomjelzők” önmagában kissé rövidített, kevésbé pontos; tankönyvi stílusban jobb a teljesebb alak."
+    },
+    {
+      "line_approx": 316,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 21.6.2 MODFLOW és MT3DMS transzportmodellezéshez",
+      "suggested": "### 21.6.2 MODFLOW és MT3DMS a transzportmodellezésben",
+      "reason": "A cím jelenlegi alakja töredékes, angolos; a javasolt forma természetesebb magyar szakaszcím."
+    },
+    {
+      "line_approx": 330,
+      "category": "register",
+      "severity": "medium",
+      "original": "A GIS-alapú felszín alatti vízgazdálkodás legszorosabban kapcsolódó gyakorlati alkalmazása",
+      "suggested": "A GIS-alapú felszín alatti vízgazdálkodás egyik legfontosabb gyakorlati alkalmazása",
+      "reason": "A „legszorosabban kapcsolódó” nehézkes, fordításszagú szerkezet; a „legfontosabb” természetesebb."
+    },
+    {
+      "line_approx": 340,
+      "category": "register",
+      "severity": "high",
+      "original": "Az eredmény poligonok halmaza -- tökéletes GIS-objektumok --",
+      "suggested": "Az eredmény poligonok halmaza, vagyis jól kezelhető GIS-objektumok együttese",
+      "reason": "A „tökéletes GIS-objektumok” nem akadémiai regiszterű, túl informális és angolos hatású."
+    },
+    {
+      "line_approx": 377,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A szivárgási tényező értékeket tartalmazó táblázat",
+      "suggested": "A hidraulikus vezetőképesség értékeit tartalmazó táblázat",
+      "reason": "Itt a korábbi jelölés szerint $K$ szerepel, amely ebben a kontextusban nem „szivárgási tényező”, hanem hidraulikus vezetőképesség."
+    },
+    {
+      "line_approx": 407,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy debreceni hallgató, egy nairobi mérnök és egy bangkoki vízmű egyenlő hozzáféréssel rendelkezik ugyanahhoz a szimulációs motorhoz.",
+      "suggested": "Egy debreceni hallgató, egy nairobi mérnök és egy bangkoki vízmű ugyanahhoz a szimulációs motorhoz egyaránt hozzáférhet.",
+      "reason": "Az „egyenlő hozzáféréssel rendelkezik” körülményes, angolos megfogalmazás; az igei szerkezet természetesebb magyar tudományos prózában."
+    },
+    {
+      "line_approx": 410,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A kód csomagokba szerveződik, amelyek mindegyike a szimuláció egy meghatározott aspektusát kezeli",
+      "suggested": "A kód csomagokba szerveződik, amelyek mindegyike a szimuláció egy-egy meghatározott elemét kezeli",
+      "reason": "Az „aspektus” itt angolos, elvont szóhasználat; az „elem” vagy „vonatkozás” természetesebb magyarul."
+    },
+    {
+      "line_approx": 411,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a folyó-vízadó kölcsönhatást kezeli",
+      "suggested": "a folyó és a vízadó közötti kölcsönhatást kezeli",
+      "reason": "A kötőjeles szerkezet itt nehézkes; a magyar szaknyelvben természetesebb a „folyó és a vízadó közötti” forma."
+    },
+    {
+      "line_approx": 412,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a modularitás a bővítmények hatalmas ökoszisztémáját tette lehetővé",
+      "suggested": "Ez a modularitás a bővítmények kiterjedt ökoszisztémáját hozta létre",
+      "reason": "A „hatalmas ökoszisztéma” kissé publicisztikus; a „kiterjedt” visszafogottabb, akadémiai regiszterhez jobban illő."
+    },
+    {
+      "line_approx": 415,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Minden új projekt az meglévő modellekre építhet",
+      "suggested": "Minden új projekt a meglévő modellekre épülhet",
+      "reason": "Nyelvtani hiba („az meglévő”), továbbá az „építhet” itt kevésbé természetes, mint az „épülhet”."
+    },
+    {
+      "line_approx": 415,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "ahelyett, hogy a nulláról kellene indulnia",
+      "suggested": "ahelyett, hogy nulláról kellene indulni",
+      "reason": "Az alanyváltás miatt a mondat szerkezete megbicsaklik; az általános alanyú forma gördülékenyebb."
+    },
+    {
+      "line_approx": 419,
+      "category": "register",
+      "severity": "medium",
+      "original": "és legutóbb a MODFLOW 6-nak nevezett teljes újraírást",
+      "suggested": "és legutóbb a MODFLOW 6 teljes újraírását",
+      "reason": "A „-nak nevezett” szó szerinti, angolos betoldás; magyarul felesleges."
+    },
+    {
+      "line_approx": 423,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A MODFLOW bemenetének szervezési módját meg kell értenünk ahhoz, hogy megértsük",
+      "suggested": "A MODFLOW-bemenet felépítését meg kell értenünk ahhoz, hogy megértsük",
+      "reason": "A „szervezési módja” tükörfordításízű és körülményes; a „felépítés” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 424,
+      "category": "word_order",
+      "severity": "high",
+      "original": "Minden csomag egy különálló bemeneti fájlban (vagy a MODFLOW 6 esetében egy nagyobb bemeneti fájl strukturált szövegblokkjában) adjuk meg.",
+      "suggested": "Minden csomagot külön bemeneti fájlban adunk meg (vagy a MODFLOW 6 esetében egy nagyobb bemeneti fájl strukturált szövegblokkjában).",
+      "reason": "Hibás egyeztetés és szórend: a tárgyas igealakhoz a „csomagot” forma illik."
+    },
+    {
+      "line_approx": 428,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Well (WEL) csomag termelési hozamot ($Q$) rendel a kutakat tartalmazó cellákhoz.",
+      "suggested": "A Well (WEL) csomag vízkivételt ($Q$) rendel a kutakat tartalmazó cellákhoz.",
+      "reason": "A „termelési hozam” itt szokatlan; felszín alatti vízmodellezésben a „vízkivétel” vagy „kitermelés” természetesebb."
+    },
+    {
+      "line_approx": 429,
+      "category": "register",
+      "severity": "low",
+      "original": "amely a csapadékból származó beszivárgást reprezentálja",
+      "suggested": "amely a csapadékból származó beszivárgást jelképezi",
+      "reason": "A „reprezentálja” túlzottan idegenes; a „jelképezi” vagy „írja le” természetesebb magyarul."
+    },
+    {
+      "line_approx": 432,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ha $h$ a folyó medre alá süllyed, a fluxus állandóvá válik",
+      "suggested": "Ha $h$ a mederszint alá süllyed, a fluxus állandóvá válik",
+      "reason": "A „folyó medre alá” itt nehézkes; a „mederszint” tömörebb és szakmailag is bevett."
+    },
+    {
+      "line_approx": 433,
+      "category": "register",
+      "severity": "low",
+      "original": "Hasonló formulálás vonatkozik",
+      "suggested": "Hasonló megfogalmazás vonatkozik",
+      "reason": "A „formulálás” idegenes, kevésbé természetes magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 439,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Kút pont-objektumok vízhozam-attribútumokkal a kútadatbázisból",
+      "suggested": "Kútpontok vízhozam-attribútumokkal a kútadatbázisból",
+      "reason": "A „pont-objektum” itt feleslegesen szó szerinti GIS-fordítás; a „kútpont” természetesebb."
+    },
+    {
+      "line_approx": 441,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Folyó vonal-objektumok vízszinttel, medermagassággal, konduktanciával",
+      "suggested": "Folyóvonalak vízszint-, medermagasság- és konduktancia-adatokkal",
+      "reason": "A „vonal-objektumok” nehézkes tükörfordítás; a „folyóvonalak” természetesebb."
+    },
+    {
+      "line_approx": 443,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Tó-poligonok, oldalirányú határ-objektumok",
+      "suggested": "Tópoligonok, oldalirányú határobjektumok",
+      "reason": "A kötőjelezés és a szerkezet ingadozó; egységesebb és természetesebb az egybeírt forma."
+    },
+    {
+      "line_approx": 449,
+      "category": "register",
+      "severity": "low",
+      "original": "A keleti határ egy 95 m-es állandó nyomásmagasság (egy alvízi folyót reprezentálva).",
+      "suggested": "A keleti határt 95 m állandó nyomásmagasság jellemzi (egy alvízi folyót képviselve).",
+      "reason": "Az „egy 95 m-es állandó nyomásmagasság” szerkezet nehézkes; a mondat magyarosabban fogalmazható."
+    },
+    {
+      "line_approx": 455,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Az északi sor (1. sor) és a déli sor (30. sor) alapértelmezés szerint inaktív (nem áramló)",
+      "suggested": "Az északi (1.) és a déli (30.) sor alapértelmezés szerint nem áramló perem",
+      "reason": "Az „inaktív” itt szakmailag pontatlan és félrevezető; a sorok nem inaktívak, hanem nem áramló peremként viselkednek."
+    },
+    {
+      "line_approx": 460,
+      "category": "register",
+      "severity": "medium",
+      "original": "ha a kúttól keletre van szennyezőforrás, a kút befogja a szennyezési csóvát",
+      "suggested": "ha a kúttól keletre szennyezőforrás található, a kút befogja a szennyezőanyag-csóvát",
+      "reason": "A „van” túl köznyelvi, a „szennyezési csóva” helyett a „szennyezőanyag-csóva” szakmailag pontosabb."
+    },
+    {
+      "line_approx": 464,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy interfész-adatmodell -- egy geodatabase-séma",
+      "suggested": "egy interfész-adatmodell, vagyis egy geoadatbázis-séma",
+      "reason": "A „geodatabase” indokolatlanul angol maradt; van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 465,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve a teljes oda-vissza integrációt",
+      "suggested": "így teljes körű kétirányú integrációt tesz lehetővé",
+      "reason": "Az „oda-vissza integráció” szó szerinti fordítás; a „kétirányú integráció” bevettebb magyarul."
+    },
+    {
+      "line_approx": 468,
+      "category": "register",
+      "severity": "low",
+      "original": "olyan geodatabase-terv",
+      "suggested": "olyan geoadatbázis-terv",
+      "reason": "Az angol „geodatabase” helyett a magyar „geoadatbázis” természetesebb."
+    },
+    {
+      "line_approx": 471,
+      "category": "register",
+      "severity": "medium",
+      "original": "a GIS puszta prezentációs eszközzé válik",
+      "suggested": "a GIS puszta megjelenítő eszközzé válik",
+      "reason": "A „prezentációs eszköz” angolos; a „megjelenítő eszköz” természetesebb magyarul."
+    },
+    {
+      "line_approx": 472,
+      "category": "passive_voice",
+      "severity": "low",
+      "original": "a MODFLOW-bemenetek közvetlenül a geodatabase-ben tárolódnak",
+      "suggested": "a MODFLOW-bemeneteket közvetlenül a geoadatbázisban tároljuk",
+      "reason": "A visszaható/passzív jellegű „tárolódnak” helyett az aktív szerkezet természetesebb."
+    },
+    {
+      "line_approx": 478,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "nem az objektumosztályok attribútumaiban",
+      "suggested": "nem az objektumosztályok attribútummezeiben",
+      "reason": "GIS-környezetben az „attribútummező” pontosabb, mint az általános „attribútum”."
+    },
+    {
+      "line_approx": 607,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Nagy Magyar Alföld negyedidőszaki vízadó-rendszere mintegy 3 millió embert és kiterjedt öntözéses mezőgazdaságot lát el.",
+      "suggested": "A Nagyalföld negyedidőszaki vízadó-rendszere mintegy 3 millió ember ivóvízellátását és a kiterjedt öntözéses mezőgazdaság vízigényét fedezi.",
+      "reason": "Az „embereket lát el” és a „mezőgazdaságot lát el” angolos, eltérő természetű tárgyakat kapcsol össze; magyarul természetesebb a vízellátás/vízigény megnevezése."
+    },
+    {
+      "line_approx": 610,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A Dél-Nyírség (déli Nyírség) terület regionális MODFLOW-modellje",
+      "suggested": "A Dél-Nyírség regionális MODFLOW-modellje",
+      "reason": "A „terület regionális modellje” szerkezet körülményes és részben tükörfordítás; a zárójeles ismétlés is felesleges."
+    },
+    {
+      "line_approx": 611,
+      "category": "register",
+      "severity": "low",
+      "original": "illusztrálja a jellemző paraméterezést",
+      "suggested": "jól szemlélteti a jellemző paraméterezést",
+      "reason": "Az „illusztrálja” itt enyhén fordításszagú; a „szemlélteti” természetesebb tudományos magyarban."
+    },
+    {
+      "line_approx": 612,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az utánpótlás becslése 40--80 mm/év talajvízmérleg-számítások alapján, a magasabb értékek a homokos vízválasztókon és az alacsonyabb értékek az agyagos ártereken.",
+      "suggested": "Az utánpótlást talajvízmérleg-számítások alapján 40--80 mm/évre becsülték; a magasabb értékek a homokos vízválasztókon, az alacsonyabbak az agyagos ártereken jellemzők.",
+      "reason": "Hiányos, névszói szerkezetű mondat angol mintára; magyarul természetesebb az igei állítmány és a világosabb tagolás."
+    },
+    {
+      "line_approx": 614,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A modellt a megfigyelt piezometrikus felszínek reprodukálására kalibrálták",
+      "suggested": "A modellt úgy kalibrálták, hogy visszaadja a megfigyelt piezometrikus felszíneket",
+      "reason": "A „reprodukálására kalibrálták” szó szerinti fordítás; magyarul igés szerkezet természetesebb."
+    },
+    {
+      "line_approx": 620,
+      "category": "register",
+      "severity": "medium",
+      "original": "1000--2000 m mélységben 60--90 °C vízhőmérsékletet produkálnak",
+      "suggested": "1000--2000 m mélységben 60--90 °C-os vízhőmérsékletet eredményeznek",
+      "reason": "A „produkálnak” ebben a tudományos regiszterben idegenszerű; az „eredményeznek” természetesebb."
+    },
+    {
+      "line_approx": 623,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a termál-vízadóból bányásszák a vizet",
+      "suggested": "a termálvízadóból a természetes utánpótlást meghaladó mértékben termelik ki a vizet",
+      "reason": "A „bányásszák a vizet” tükörszerű, publicisztikus fordulat; szaknyelvben pontosabb a túlhasználat vagy készletfelélés megnevezése."
+    },
+    {
+      "line_approx": 623,
+      "category": "terminology",
+      "severity": "low",
+      "original": "termál-vízadóból",
+      "suggested": "termálvízadóból",
+      "reason": "A kötőjeles írásmód itt indokolatlan; összetett szakkifejezésként egybeírandó."
+    },
+    {
+      "line_approx": 624,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "korlátozzák, milyen ütemben szivároghat felülről hideg víz a termál-vízadóba",
+      "suggested": "korlátozzák a felülről érkező hideg víz beszivárgásának ütemét a termálvízadóba",
+      "reason": "Az angolos kérdőszós alárendelés helyett magyarul természetesebb a főnévi szerkezet."
+    },
+    {
+      "line_approx": 627,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A termális modellezéshez a FEFLOW csatolt hő-áramlási képessége elengedhetetlen.",
+      "suggested": "A termikus modellezéshez elengedhetetlen a FEFLOW csatolt hő- és áramlásszámítási képessége.",
+      "reason": "A „termális modellezés” és a „hő-áramlási képesség” nehézkes, részben tükörfordított; a magyar szaknyelvben a „termikus” és a kötőszóval kapcsolt szerkezet természetesebb."
+    },
+    {
+      "line_approx": 629,
+      "category": "terminology",
+      "severity": "low",
+      "original": "termál-vízadó",
+      "suggested": "termálvízadó",
+      "reason": "Indokolatlan kötőjel."
+    },
+    {
+      "line_approx": 632,
+      "category": "register",
+      "severity": "low",
+      "original": "a beszivárgó vizet a felszínről a negyedidőszaki sorozaton át a mély pannon vízadókba hajtják",
+      "suggested": "a beszivárgó vizet a felszínről a negyedidőszaki rétegsoron át a mély pannon vízadók felé irányítják",
+      "reason": "A „hajtják” kissé nyers, angolos; a „rétegsor” is természetesebb, mint a „sorozat”."
+    },
+    {
+      "line_approx": 633,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "olyan településeken, mint Hajdúnánás, Nyírmihálydi és Nyírbátor",
+      "suggested": "Hajdúnánáson, Nyírmihálydiban és Nyírbátorban",
+      "reason": "A „településeken, mint” szerkezet angolos; a felsorolás ragos alakban természetesebb."
+    },
+    {
+      "line_approx": 634,
+      "category": "register",
+      "severity": "medium",
+      "original": "gyakorlatilag semleges (nulla gradiensű) zónákat erős utánpótlási zónákká alakítva",
+      "suggested": "a korábban közel semleges (nulla gradiensű) zónákat erős utánpótlási zónákká téve",
+      "reason": "Az „alakítva” itt nehézkes, fordításszagú; a „téve” gördülékenyebb."
+    },
+    {
+      "line_approx": 636,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "MT3DMS-sel csatolva a transzportmodellezéshez",
+      "suggested": "Az MT3DMS transzportmodullal összekapcsolva",
+      "reason": "A „csatolva a transzportmodellezéshez” szó szerinti fordítás; magyarul természetesebb az „összekapcsolva” és a modul megnevezése."
+    },
+    {
+      "line_approx": 637,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ivóvíz-szűrőket",
+      "suggested": "ivóvízkutak szűrőzött szakaszait",
+      "reason": "Az „ivóvíz-szűrő” félreérthető, nem bevett hidrogeológiai terminus ebben az értelemben."
+    },
+    {
+      "line_approx": 639,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "utazási idő izokronok",
+      "suggested": "utazási időt jelölő izokronok",
+      "reason": "Az angol „travel-time isochrones” részleges tükörfordítása; magyarul kötőelem szükséges."
+    },
+    {
+      "line_approx": 640,
+      "category": "register",
+      "severity": "medium",
+      "original": "elterjedt magyar gyakorlat: 4--5 zóna szűrőzése egyetlen fúráson belül",
+      "suggested": "a magyar gyakorlatban elterjedt módon: egyetlen fúráson belül 4--5 zóna szűrőzése",
+      "reason": "A kettőspont utáni betoldás kissé darabos; a mondatba simított forma természetesebb."
+    },
+    {
+      "line_approx": 641,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ennek a megállapításnak közvetlen szabályozási következményei vannak -- azt sugallja, hogy",
+      "suggested": "Ennek a megállapításnak közvetlen szabályozási következményei vannak: arra utal, hogy",
+      "reason": "Az „azt sugallja” itt angolos és kissé publicisztikus; az „arra utal” tárgyilagosabb."
+    },
+    {
+      "line_approx": 649,
+      "category": "register",
+      "severity": "low",
+      "original": "Magyarország kapcsolata a felszín alatti vízzel szoros és kritikus.",
+      "suggested": "Magyarország számára a felszín alatti víz kiemelt jelentőségű.",
+      "reason": "A „kapcsolata ... szoros és kritikus” angolos, publicisztikus megfogalmazás."
+    },
+    {
+      "line_approx": 650,
+      "category": "register",
+      "severity": "medium",
+      "original": "ami Európa egyik leginkább felszín alatti vízre utalt országává teszi",
+      "suggested": "ezért Magyarország Európa egyik leginkább felszín alatti vízre támaszkodó országa",
+      "reason": "Az „utalt” itt nem természetes szóválasztás; a „támaszkodó” idiomatikusabb."
+    },
+    {
+      "line_approx": 655,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az Alföld regionális felszín alatti vízmodelljét, amelyet a Magyar Bányászati és Földtani Szolgálat ... tart fenn, mintegy 50 000 km2-es területen készítették el, MODFLOW-val, 500 m × 500 m rácsfelbontással.",
+      "suggested": "Az Alföld regionális felszín alatti vízmodelljét a Magyar Bányászati és Földtani Szolgálat ... tartja fenn; a modellt mintegy 50 000 km2-es területre, MODFLOW-val és 500 m × 500 m rácsfelbontással készítették el.",
+      "reason": "A mondat túlterhelt, angolosan egymásra rakott bővítményekkel; tagolva természetesebb."
+    },
+    {
+      "line_approx": 656,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A keleti határt a román határ definiálja",
+      "suggested": "A keleti határt a román országhatár jelöli ki",
+      "reason": "A „definiálja” idegenszerű ebben a kontextusban."
+    },
+    {
+      "line_approx": 657,
+      "category": "other",
+      "severity": "high",
+      "original": "nagylépékű öntözési kitermelés",
+      "suggested": "nagyléptékű öntözési célú vízkivétel",
+      "reason": "Elütés („nagylépékű”), továbbá a „kitermelés” itt kevésbé pontos, mint a „vízkivétel”."
+    },
+    {
+      "line_approx": 658,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "megragadva a vízszintek visszaépülését",
+      "suggested": "és megragadja a vízszintek fokozatos helyreállását",
+      "reason": "A „megragadva” és a „visszaépülés” együtt fordításszagú; magyarul természetesebb a „helyreállás”."
+    },
+    {
+      "line_approx": 661,
+      "category": "other",
+      "severity": "medium",
+      "original": "A felszín a DDM-5 országos DEM-ből (5 m felbontás, a modellhez 500 m-re újramintavételezve).",
+      "suggested": "A felszínt a DDM-5 országos DEM-ből vették át (5 m felbontás, a modellhez 500 m-re újramintavételezve).",
+      "reason": "Hiányos mondat; a felsorolási pontban is kell állítmány a természetes magyar mondatszerkesztéshez."
+    },
+    {
+      "line_approx": 662,
+      "category": "register",
+      "severity": "low",
+      "original": "Kozeny--Carman-formula alkalmazva a fúrásminta-szitaelemzésekre",
+      "suggested": "a Kozeny--Carman-formulát a fúrásminták szitaelemzési eredményeire alkalmazva",
+      "reason": "A jelenlegi forma töredékes, angolos jegyzetszerű szerkezet."
+    },
+    {
+      "line_approx": 664,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A meder-konduktancia értékeket",
+      "suggested": "A mederkonduktancia-értékeket",
+      "reason": "Az összetétel írásmódja magyarul természetesebben egybe-/kötőjelesen kapcsolódik."
+    },
+    {
+      "line_approx": 673,
+      "category": "other",
+      "severity": "high",
+      "original": "biztosítva, hogy a folyóvíz mindig a parton keresztül szíródjon be",
+      "suggested": "biztosítva, hogy a folyóvíz mindig a parton keresztül szivárogjon be",
+      "reason": "Elütés: „szíródjon” helyett „szivárogjon”."
+    },
+    {
+      "line_approx": 677,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A parti szűrési modell GIS-komponense különösen gazdag.",
+      "suggested": "A parti szűrési modell térinformatikai adatbázisa különösen összetett.",
+      "reason": "A „GIS-komponens gazdag” angolos, kevéssé idiomatikus megfogalmazás."
+    },
+    {
+      "line_approx": 678,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a modell forrásaként és a modelleredmények archívumaként",
+      "suggested": "a modell adatforrásaként és a modelleredmények tárhelyeként",
+      "reason": "Az „archívum” itt kissé idegenszerű; az „adatforrás” pontosabb, a „tárhely” természetesebb."
+    },
+    {
+      "line_approx": 691,
+      "category": "other",
+      "severity": "high",
+      "original": "kísérleti megvalósításkat teszteltek",
+      "suggested": "kísérleti megvalósításokat teszteltek",
+      "reason": "Elütés: „megvalósításkat” helyett „megvalósításokat”."
+    }
+  ]
+}

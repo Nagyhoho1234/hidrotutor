@@ -1,0 +1,638 @@
+{
+  "chapter": "ch25",
+  "total_issues": 79,
+  "fixes": [
+    {
+      "line_approx": 11,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 25.1 Digitális ikrek a vízrendszerek számára",
+      "suggested": "## 25.1 Digitális ikrek vízrendszerekhez",
+      "reason": "A „számára” itt angolos, körülményes szerkezet; a magyar szaknyelvben természetesebb a „-hoz/-hez” forma."
+    },
+    {
+      "line_approx": 15,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A \"digitális iker\" kifejezés a gyártóiparban született",
+      "suggested": "A „digitális iker” fogalma a gyártóiparból ered",
+      "reason": "A „kifejezés ... született” szó szerinti, kissé fordításszagú megoldás; a „fogalma ... ered” természetesebb tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 17,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A fogalom azóta az infrastruktúra-üzemeltetésben is elterjedt, a várostervezésben és --- egyre inkább --- a vízgazdálkodásban is.",
+      "suggested": "A fogalom azóta az infrastruktúra-üzemeltetésben, a várostervezésben és --- egyre inkább --- a vízgazdálkodásban is elterjedt.",
+      "reason": "A mondat végi „is” és a tagolás kissé nehézkes; az átrendezett szórend gördülékenyebb."
+    },
+    {
+      "line_approx": 19,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy vízrendszer **digitális ikre** több, mint egy hidrológiai modell.",
+      "suggested": "Egy vízrendszer **digitális ikre** több mint egy hidrológiai modell.",
+      "reason": "A „több mint” ebben a jelentésben egybeírandó; a vessző felesleges."
+    },
+    {
+      "line_approx": 20,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "bemeneti adatokat fogad, szimulációt futtat, majd eredményeket ad",
+      "suggested": "bemeneti adatokat fogad, lefuttat egy szimulációt, majd eredményeket szolgáltat",
+      "reason": "Az „eredményeket ad” és a „szimulációt futtat” angolos, technicista fordulat; magyarul természetesebb az igei szerkezet finomítása."
+    },
+    {
+      "line_approx": 20,
+      "category": "word_order",
+      "severity": "low",
+      "original": "és a legmagasabb érettségi szinteken pedig arra is: „mit kellene tennünk?”",
+      "suggested": "és a legmagasabb érettségi szinteken arra is: „mit kellene tennünk?”",
+      "reason": "A „pedig” itt töltelékszó, feleslegesen nehezíti a mondatot."
+    },
+    {
+      "line_approx": 22,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A döntési réteg a modell kimeneteit cselekvésre alkalmas információvá alakítja",
+      "suggested": "A döntési réteg a modell kimeneteit döntéstámogató információvá alakítja",
+      "reason": "A „cselekvésre alkalmas információ” az angol „actionable information” tükörfordítása; magyar szaknyelvben a „döntéstámogató információ” bevettebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "register",
+      "severity": "low",
+      "original": "A fogalom az érettség széles spektrumát fogja át",
+      "suggested": "A fogalom az érettségi szintek széles spektrumát öleli fel",
+      "reason": "A „fogja át” itt kissé idegenszerű; az „öleli fel” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 34,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "de igény szerint fut, kézzel előkészített bemenetekkel",
+      "suggested": "de csak eseti jelleggel futtatják, kézzel előkészített bemeneti adatokkal",
+      "reason": "Az „igény szerint fut” az angol „runs on demand” tükörfordítása; magyarul természetesebb a cselekvőbb megfogalmazás."
+    },
+    {
+      "line_approx": 36,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "operatív monitoring-irányítópult",
+      "suggested": "operatív monitoringfelület",
+      "reason": "Az „irányítópult” a „dashboard” szó szerinti fordítása; informatikai-szakmai szövegben a „felület” vagy „kezelőfelület” természetesebb."
+    },
+    {
+      "line_approx": 38,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A 3. szint fő jellemzője, hogy az előrejelzések a beérkező adatok alapján automatikusan pontosodnak, ahogy több adat érkezik, az ember nem avatkozik be a modellfrissítési ciklusba.",
+      "suggested": "A 3. szint fő jellemzője, hogy az előrejelzések a beérkező adatok alapján automatikusan pontosodnak, és a modellfrissítési ciklusba nincs szükség emberi beavatkozásra.",
+      "reason": "Az „ahogy több adat érkezik” és az utána következő tagmondat kapcsolása nehézkes, angolos szerkesztésű."
+    },
+    {
+      "line_approx": 40,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek egy olyan jövő előhírnökei, amelyben az autonóm digitális iker lesz a norma, nem a kivétel.",
+      "suggested": "Ezek egy olyan jövőt vetítenek előre, amelyben az autonóm digitális iker válik általánossá.",
+      "reason": "A „a norma, nem a kivétel” az angol „the norm, not the exception” közvetlen tükörfordítása."
+    },
+    {
+      "line_approx": 49,
+      "category": "plural",
+      "severity": "low",
+      "original": "az adatoknak időszerűnek, megbízhatónak és interoperábilisnak kell lenniük",
+      "suggested": "az adatoknak időszerűnek, megbízhatónak és interoperábilisnak kell lenniük",
+      "reason": "Az „interoperábilis” használata elfogadható, de stílusában idegen; magyarosabb lenne az „együttműködőképes” vagy „összehangolható”."
+    },
+    {
+      "line_approx": 51,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A modellkiválasztás és -integráció a másik kihívás.",
+      "suggested": "A másik nagy kihívás a modellek kiválasztása és integrálása.",
+      "reason": "A főnevesített szerkezet tömör, de kissé angolos; az igei megfogalmazás természetesebb magyar prózát ad."
+    },
+    {
+      "line_approx": 53,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "felhőszámítási vagy nagy teljesítményű számítási (HPC) infrastruktúrát igényel",
+      "suggested": "felhőalapú vagy nagy teljesítményű számítási (HPC) infrastruktúrát igényel",
+      "reason": "A „felhőszámítási infrastruktúra” nehézkes összetétel; a „felhőalapú infrastruktúra” természetesebb."
+    },
+    {
+      "line_approx": 58,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az adatasszimiláció az a matematikai keretrendszer, amely e szakadék bezárására szolgál",
+      "suggested": "Az adatasszimiláció az a matematikai keretrendszer, amely ezt az eltérést hivatott csökkenteni",
+      "reason": "A „szakadék bezárása” az angol „close the gap” tükörfordítása; magyarul itt metaforikusan túl erős és idegenszerű."
+    },
+    {
+      "line_approx": 60,
+      "category": "register",
+      "severity": "low",
+      "original": "Adatasszimiláció nélkül az előrejelzőnek döntenie kell",
+      "suggested": "Adatasszimiláció nélkül az előrejelzést készítő szakembernek döntenie kell",
+      "reason": "Az „előrejelző” személyre vonatkoztatva kissé pongyola, nem elég akadémiai regiszterű."
+    },
+    {
+      "line_approx": 66,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a becslés bizonytalanságát (egy kovarianciamátrix) nyilvántartja",
+      "suggested": "a becslés bizonytalanságát (egy kovarianciamátrix formájában) is leírja",
+      "reason": "A „nyilvántartja” itt adminisztratív hangulatú, nem illeszkedik jól a matematikai leíráshoz."
+    },
+    {
+      "line_approx": 86,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A felszín alatti víz modellezése (18--21. fejezet) előrevetíti, hogyan változhat a vízadó rétegek utánpótlódása a csapadékmintázatok eltolódásával, az V. részben bemutatott 3D-s felszín alatti vízföldtani keretrendszerekre, kútadatbázisokra és hidrogeológiai modellekre építve.",
+      "suggested": "A felszín alatti víz modellezése (18--21. fejezet) az V. részben bemutatott 3D-s vízföldtani keretrendszerekre, kútadatbázisokra és hidrogeológiai modellekre építve segít előre jelezni, miként változhat a vízadó rétegek utánpótlódása a csapadékmintázatok átalakulásával.",
+      "reason": "A mondat szerkezete angolosan túlterhelt; a közbeékelt bővítmények miatt nehezen követhető."
+    },
+    {
+      "line_approx": 202,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "Az adatoknak az érzékelőtől a felhőbe kell jutniuk, ott feldolgozásra kerülniük, és az eredménynek vissza kell érkeznie.",
+      "suggested": "Az adatoknak az érzékelőtől a felhőbe kell jutniuk, ott fel kell dolgozni őket, majd az eredménynek vissza kell érkeznie.",
+      "reason": "A „feldolgozásra kerülniük” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 203,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Sok hidrológiai alkalmazásnál e körutazási késés elfogadható",
+      "suggested": "Sok hidrológiai alkalmazásban ez a teljes késleltetés elfogadható",
+      "reason": "A „körutazási késés” angol mintájú tükörfordítás; magyarul természetesebb a „teljes késleltetés” vagy „oda-vissza késleltetés”."
+    },
+    {
+      "line_approx": 205,
+      "category": "register",
+      "severity": "medium",
+      "original": "a megbízható internetkapcsolat nem feltételezhető",
+      "suggested": "a megbízható internetkapcsolat nem mindig adott",
+      "reason": "A „nem feltételezhető” körülményes, idegenszerű megfogalmazás."
+    },
+    {
+      "line_approx": 207,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A **peremszámítás** (edge computing) e problémát úgy kezeli, hogy a számítást közelebb viszi az adatforráshoz.",
+      "suggested": "A **peremszámítás** (edge computing) ezt a problémát úgy kezeli, hogy a feldolgozást közelebb viszi az adatforráshoz.",
+      "reason": "Az „e problémát” és a „számítást közelebb viszi” kissé fordításszagú; a „feldolgozást” itt természetesebb."
+    },
+    {
+      "line_approx": 208,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ahelyett, hogy a nyers szenzor-adatokat a felhőbe továbbítaná feldolgozásra",
+      "suggested": "Ahelyett, hogy a nyers szenzoradatokat feldolgozásra a felhőbe küldené",
+      "reason": "A „szenzor-adatokat” írásmódja ingadozó, a mondatrész sorrendje pedig természetesebbé tehető."
+    },
+    {
+      "line_approx": 209,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "gépi tanulási következtetési modelleket",
+      "suggested": "gépi tanulási inferenciamodelleket",
+      "reason": "A „következtetési modell” itt nem bevett magyar szakkifejezés; az „inferencia” terminus használata természetesebb szaknyelvi közegben."
+    },
+    {
+      "line_approx": 210,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "küszöbérték-detektáló algoritmusokat",
+      "suggested": "küszöbérték-alapú detektáló algoritmusokat",
+      "reason": "A jelenlegi összetétel nehézkes; a „küszöbérték-alapú” bevettebb."
+    },
+    {
+      "line_approx": 211,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "képes detektálni a rendellenes emelkedéseket",
+      "suggested": "képes észlelni a rendellenes vízszintemelkedéseket",
+      "reason": "A „detektálni” túlzott anglicizmus, és a tárgy pontosítható."
+    },
+    {
+      "line_approx": 211,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy helyi csapadék-lefolyás modellel",
+      "suggested": "egy helyi csapadék–lefolyás modellel",
+      "reason": "A szakkifejezés írásmódja tipográfiailag és terminológiailag pontosítandó."
+    },
+    {
+      "line_approx": 215,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "szenzorhiba-jelenségektől",
+      "suggested": "szenzorhibákból eredő jelenségektől",
+      "reason": "A „szenzorhiba-jelenség” mesterkélt, nem természetes összetétel."
+    },
+    {
+      "line_approx": 216,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Perem-alapú vízminőség-monitorok",
+      "suggested": "Peremalapú vízminőség-monitorok",
+      "reason": "Az előtag kötőjeles írása itt indokolatlan; egységesebb a „peremalapú” forma."
+    },
+    {
+      "line_approx": 216,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a spektrális szenzor-adatokat",
+      "suggested": "a spektrális szenzoradatokat",
+      "reason": "A „szenzoradat” egybeírandó."
+    },
+    {
+      "line_approx": 216,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a szennyezési események detektálásához",
+      "suggested": "a szennyezési események észleléséhez",
+      "reason": "A „detektálás” helyett magyarosabb az „észlelés”."
+    },
+    {
+      "line_approx": 217,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mikroklíma-variabilitást",
+      "suggested": "mikroklimatikus változékonyságot",
+      "reason": "A „variabilitás” itt fölöslegesen idegen hangzású."
+    },
+    {
+      "line_approx": 219,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Magyar kontextusban",
+      "suggested": "Magyarországi viszonyok között",
+      "reason": "A „kontextusban” tipikus tükörfordítás; cím- és bekezdésnyitó helyzetben különösen idegenszerű."
+    },
+    {
+      "line_approx": 221,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hagyományos telemetriai infrastruktúra drága ilyen távoli területeken történő telepítéséhez és karbantartásához.",
+      "suggested": "A hagyományos telemetriai infrastruktúra telepítése és karbantartása ilyen távoli területeken költséges.",
+      "reason": "A jelenlegi szerkezet nehézkes, főnévi igenéves halmozást tartalmaz."
+    },
+    {
+      "line_approx": 222,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "IoT érzékelők perem-intelligenciával",
+      "suggested": "peremintelligenciával ellátott IoT-érzékelők",
+      "reason": "A szókapcsolat és az írásmód magyarosabban rendezhető."
+    },
+    {
+      "line_approx": 222,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "költséghatékony alternatívát kínálnak a korai figyelmeztető lefedettség kiterjesztéséhez a jelenleg védelem nélküli közösségek számára",
+      "suggested": "költséghatékony alternatívát kínálnak a korai figyelmeztető rendszerek lefedettségének kiterjesztésére azokra a közösségekre, amelyek jelenleg nem részesülnek védelemben",
+      "reason": "A „korai figyelmeztető lefedettség” és a „védelem nélküli közösségek” angolos, nehézkes szerkezetek."
+    },
+    {
+      "line_approx": 224,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a felhőplatformok a számításigényes feladatokat",
+      "suggested": "a felhőplatformok pedig a nagy számításigényű feladatokat végzik",
+      "reason": "Hiányosnak ható, angolos szerkezet; az ige kitétele természetesebbé teszi."
+    },
+    {
+      "line_approx": 225,
+      "category": "register",
+      "severity": "low",
+      "original": "stratégiai felügyeletet biztosítanak",
+      "suggested": "stratégiai felügyeletet látnak el",
+      "reason": "A „biztosítanak” túlhasznált, angol mintájú ige."
+    },
+    {
+      "line_approx": 229,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "széles adatokon tanítottak",
+      "suggested": "nagyon változatos adatokon tanítottak",
+      "reason": "A „széles adatokon” hibás, angolból tükrözött szerkezet."
+    },
+    {
+      "line_approx": 229,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "downstream feladatok széles skálájára adaptálhatók",
+      "suggested": "különféle későbbi feladatokra adaptálhatók",
+      "reason": "A „downstream” itt fölöslegesen meghagyott angol terminus, van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 231,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "általános reprezentációkat tanulni",
+      "suggested": "általános jellemzőábrázolásokat tanulni",
+      "reason": "A „reprezentáció” használata itt erősen anglicizáló; magyarosabb szaknyelvi megoldás ajánlott."
+    },
+    {
+      "line_approx": 231,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a felszínborítás-változás detektálása",
+      "suggested": "a felszínborítás változásának észlelése",
+      "reason": "A „detektálás” helyett természetesebb az „észlelés”, az összetétel is oldható."
+    },
+    {
+      "line_approx": 233,
+      "category": "register",
+      "severity": "low",
+      "original": "A 2024--2026 között kirajzolódó válasz óvatos igen.",
+      "suggested": "A 2024 és 2026 között kirajzolódó válasz óvatos igen.",
+      "reason": "A tartományjelölés prózában itt természetesebben oldható fel."
+    },
+    {
+      "line_approx": 237,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "gazdag belső reprezentációk kialakítására",
+      "suggested": "gazdag belső jellemzőábrázolások kialakítására",
+      "reason": "A „reprezentáció” ismét anglicizáló terminus."
+    },
+    {
+      "line_approx": 238,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az égési sebhely-detektálás",
+      "suggested": "az égésnyomok észlelése",
+      "reason": "Az „égési sebhely” szó szerinti fordítás, a „detektálás” is idegenszerű."
+    },
+    {
+      "line_approx": 242,
+      "category": "register",
+      "severity": "low",
+      "original": "Nyílt jellege különösen hozzáférhetővé teszi a fejlődő országok kutatói és az oktatási intézmények számára.",
+      "suggested": "Nyílt jellege különösen hozzáférhetővé teszi a modellt a fejlődő országok kutatói és az oktatási intézmények számára.",
+      "reason": "A mondatból hiányzik a tárgy, ezért kissé lebegő szerkezetű."
+    },
+    {
+      "line_approx": 244,
+      "category": "register",
+      "severity": "medium",
+      "original": "Más figyelemre méltó belépők közé tartozik",
+      "suggested": "További figyelemre méltó modellek közé tartozik",
+      "reason": "A „belépők” ebben a tudományos regiszterben túl köznyelvi, angolos."
+    },
+    {
+      "line_approx": 245,
+      "category": "register",
+      "severity": "medium",
+      "original": "E modellek szaporodása azt jelzi",
+      "suggested": "E modellek gyors megjelenése azt jelzi",
+      "reason": "A „szaporodása” itt nem szerencsés, kissé pejoratív vagy pongyola."
+    },
+    {
+      "line_approx": 249,
+      "category": "register",
+      "severity": "medium",
+      "original": "három jelentős előnnyel bírnak",
+      "suggested": "három jelentős előnyük van",
+      "reason": "A „bírnak” itt modorosabb, mint a természetesebb „van”."
+    },
+    {
+      "line_approx": 250,
+      "category": "register",
+      "severity": "medium",
+      "original": "elsődleges szűk keresztmetszete",
+      "suggested": "egyik fő korlátja",
+      "reason": "A „szűk keresztmetszet” gyakori, de itt kissé mechanikus, angolos metafora."
+    },
+    {
+      "line_approx": 251,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "pixel-adathalmazokat",
+      "suggested": "pixelszintű adathalmazokat",
+      "reason": "A jelenlegi összetétel szokatlan; a „pixelszintű” természetesebb."
+    },
+    {
+      "line_approx": 252,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "spektrális aláírásait",
+      "suggested": "spektrális jellemzőit",
+      "reason": "A „spektrális aláírás” használatos, de ebben a tankönyvi regiszterben a „jellemzők” közérthetőbb és természetesebb."
+    },
+    {
+      "line_approx": 254,
+      "category": "calque",
+      "severity": "high",
+      "original": "lehetővé teszik a tanulás-transzfert földrajzi területek között",
+      "suggested": "lehetővé teszik a tudás átvitelét különböző földrajzi területek között",
+      "reason": "A „tanulás-transzfer” közvetlen tükörfordítás, magyarul idegenszerű."
+    },
+    {
+      "line_approx": 255,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "jobban transzferálhatók a régiók között",
+      "suggested": "jobban átvihetők a régiók között",
+      "reason": "A „transzferálhatók” fölöslegesen idegen hangzású."
+    },
+    {
+      "line_approx": 258,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "többmodális adatokat",
+      "suggested": "többféle modalitású adatokat",
+      "reason": "A „többmodális” terjedő terminus, de magyar tankönyvi prózában még idegenszerű lehet."
+    },
+    {
+      "line_approx": 261,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Belső reprezentációik átláthatatlanok",
+      "suggested": "Belső működésük nehezen átlátható",
+      "reason": "A „belső reprezentációk” itt nehézkes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 261,
+      "category": "register",
+      "severity": "medium",
+      "original": "nagy tétű alkalmazásoknál",
+      "suggested": "nagy kockázatú alkalmazásoknál",
+      "reason": "A „nagy tétű” az angol „high-stakes” tükörfordítása."
+    },
+    {
+      "line_approx": 267,
+      "category": "other",
+      "severity": "medium",
+      "original": "lehetővé téve az új képességek gyors telepítését minimális betanítási adattal",
+      "suggested": "így új képességek gyorsan bevezethetők minimális mennyiségű betanítási adattal",
+      "reason": "A „telepítés” itt angolos és kissé műszaki zsargon; a mondat főnévi igenéves szerkezete is nehézkes."
+    },
+    {
+      "line_approx": 271,
+      "category": "other",
+      "severity": "medium",
+      "original": "napló-könyvekbe jegyezték az adatokat",
+      "suggested": "naplókönyvekbe jegyezték az adatokat",
+      "reason": "Helyesírási probléma: az összetétel egybeírandó."
+    },
+    {
+      "line_approx": 801,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Az etikai keretrendszereket proaktívan kell kialakítani.",
+      "suggested": "Az etikai keretrendszereket előrelátóan kell kialakítani.",
+      "reason": "A „proaktívan” idegenszerű, angolos hatású; az „előrelátóan” természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 802,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vízi intelligencia rendszerei",
+      "suggested": "a vízi intelligencia rendszerei",
+      "reason": "Hiányzik a névelő; így természetesebb és gördülékenyebb a mondat."
+    },
+    {
+      "line_approx": 802,
+      "category": "register",
+      "severity": "low",
+      "original": "erősebbé és autonómabbá válnak",
+      "suggested": "egyre fejlettebbé és autonómabbá válnak",
+      "reason": "Az „erősebbé” ebben a műszaki-etikai kontextusban kissé pongyola; a „fejlettebbé” pontosabb."
+    },
+    {
+      "line_approx": 803,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az etika utólagos beépítése a meglévő rendszerekbe",
+      "suggested": "az etikai szempontok utólagos beépítése a meglévő rendszerekbe",
+      "reason": "Az „etika beépítése” angolos, elvont megfogalmazás; magyarul természetesebb az „etikai szempontok” használata."
+    },
+    {
+      "line_approx": 805,
+      "category": "heading",
+      "severity": "low",
+      "original": "A nemzetközi együttműködést erősíteni kell.",
+      "suggested": "Erősíteni kell a nemzetközi együttműködést.",
+      "reason": "Címként a magyarban gyakran természetesebb az igei állítmány előrehozása."
+    },
+    {
+      "line_approx": 806,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A víz nem tiszteli az országhatárokat, és a vízi intelligenciának sem szabad.",
+      "suggested": "A víz nem áll meg az országhatároknál, és a vízi intelligencia sem korlátozódhat rájuk.",
+      "reason": "A „nem tiszteli a határokat” szó szerinti angol tükör; magyarul idiomatikusabb a „nem áll meg”."
+    },
+    {
+      "line_approx": 807,
+      "category": "register",
+      "severity": "medium",
+      "original": "megmutatja, mi lehetséges",
+      "suggested": "megmutatja, hogy mi valósítható meg",
+      "reason": "A jelenlegi forma kissé publicisztikus; a javasolt változat akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 808,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "E modellnek az afrikai, ázsiai és latin-amerikai medencékre való kiterjesztése",
+      "suggested": "E modell alkalmazása afrikai, ázsiai és latin-amerikai vízgyűjtőkben",
+      "reason": "A „medencékre való kiterjesztése” nehézkes, fordításszagú szerkezet; az „alkalmazása ... vízgyűjtőkben” természetesebb."
+    },
+    {
+      "line_approx": 812,
+      "category": "calque",
+      "severity": "high",
+      "original": "Magyarország sajátos pozíciót foglal el ebben a tájban.",
+      "suggested": "Magyarország sajátos helyet foglal el ebben az összefüggésrendszerben.",
+      "reason": "Az „ebben a tájban” nyilvánvaló tükörfordítás; itt nem földrajzi tájról, hanem tágabb kontextusról van szó."
+    },
+    {
+      "line_approx": 813,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "alsó szakaszi országaként",
+      "suggested": "alsó szakaszon fekvő országként",
+      "reason": "Az „alsó szakaszi” szokatlan, nehézkes alak; a javasolt forma bevettebb magyar megoldás."
+    },
+    {
+      "line_approx": 815,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "intézményi memóriát és technikai kompetenciát visz az asztalra",
+      "suggested": "intézményi tapasztalatot és műszaki szaktudást hoz magával",
+      "reason": "A „visz az asztalra” az angol „bring to the table” tükörfordítása; magyarul kerülendő."
+    },
+    {
+      "line_approx": 817,
+      "category": "register",
+      "severity": "medium",
+      "original": "A magyar hidroinformatikai szakemberek lehetősége az, hogy áthidalják a szakadékot",
+      "suggested": "A magyar hidroinformatikai szakemberek előtt az a lehetőség áll, hogy áthidalják a szakadékot",
+      "reason": "A jelenlegi szerkezet darabos; a javasolt változat gördülékenyebb és természetesebb."
+    },
+    {
+      "line_approx": 818,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "digitális készségekbe történő beruházást",
+      "suggested": "a digitális készségek fejlesztésébe való beruházást",
+      "reason": "Az eredeti megfogalmazás angolos és pontatlan; magyarul a készségekbe nem közvetlenül „ruházunk be”, hanem azok fejlesztésébe."
+    },
+    {
+      "line_approx": 818,
+      "category": "word_order",
+      "severity": "low",
+      "original": "a magyar szakértelem megosztását jelenti a Duna-medence és azon túli partnerekkel",
+      "suggested": "azt is jelenti, hogy a magyar szakértelmet megosztják a Duna-medence és az azon túli partnerekkel",
+      "reason": "Az eredeti főnevesített szerkezet nehézkes; igés megoldással természetesebb a mondat."
+    },
+    {
+      "line_approx": 819,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Vizeink (Our Waters) kezdeményezés",
+      "suggested": "A Vizeink („Our Waters”) kezdeményezés",
+      "reason": "A magyar szövegben az idegen cím idézőjeles jelölése tipográfiailag és stilárisan természetesebb."
+    },
+    {
+      "line_approx": 826,
+      "category": "register",
+      "severity": "medium",
+      "original": "egyidejű előrelépés szükséges",
+      "suggested": "egyszerre több területen is előrelépésre van szükség",
+      "reason": "Az „egyidejű előrelépés” kissé merev és fordításszagú; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 834,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hidroinformatika biztosítja az eszközöket, amelyekkel e kudarcokat sikerekké alakíthatjuk.",
+      "suggested": "A hidroinformatika megadja azokat az eszközöket, amelyekkel e kudarcok egy része sikerre fordítható.",
+      "reason": "A „biztosítja az eszközöket” tipikus angolos fordulat; a teljes kudarc→siker átalakítás túl kategorikus is."
+    },
+    {
+      "line_approx": 841,
+      "category": "calque",
+      "severity": "high",
+      "original": "A 2026-os gyakorlat állapotát tükrözik",
+      "suggested": "a 2026-os szakmai gyakorlat jelenlegi állapotát tükrözik",
+      "reason": "A „practice state” jellegű angol szerkezet tükörfordítása érződik; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 846,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ami hátramarad, az az emberi elkötelezettség",
+      "suggested": "Végső soron az emberi elkötelezettség a döntő",
+      "reason": "Az „ami hátramarad” az angol „what remains” szó szerinti tükre; magyarul természetellenes ebben a kontextusban."
+    }
+  ]
+}

@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Who published the D8 flow direction algorithm in 1984?",
+    "options": [
+      "A) David Tarboton",
+      "B) O'Callaghan and Mark",
+      "C) Beven and Kirkby",
+      "D) Horton and Strahler"
+    ],
+    "correct": "B",
+    "explanation": "O'Callaghan and Mark published the D8 algorithm in 1984, which remains the most widely used method for computing flow direction on grid DEMs."
+  },
+  {
+    "type": "mcq",
+    "question": "How many neighbors does a grid cell have in the D8 algorithm?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "The D8 algorithm considers all eight neighbors: four cardinal (N, S, E, W) and four diagonal (NE, NW, SE, SW)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does 'D8' stand for?",
+    "options": [
+      "A) Double 8-bit encoding",
+      "B) Eight-direction pour point",
+      "C) Digital 8-meter resolution",
+      "D) Drainage in 8 steps"
+    ],
+    "correct": "B",
+    "explanation": "D8 stands for 'eight-direction pour point' because it evaluates all eight possible flow directions from a cell."
+  },
+  {
+    "type": "mcq",
+    "question": "For a diagonal neighbor on a square grid with cell size delta, what is the inter-cell distance?",
+    "options": [
+      "A) delta",
+      "B) delta/2",
+      "C) delta*sqrt(2)",
+      "D) 2*delta"
+    ],
+    "correct": "C",
+    "explanation": "Diagonal neighbors are separated by delta*sqrt(2) because the path crosses the diagonal of a square cell."
+  },
+  {
+    "type": "mcq",
+    "question": "In D8, flow is assigned to the neighbor with the:",
+    "options": [
+      "A) Lowest absolute elevation",
+      "B) Steepest downslope gradient",
+      "C) Shortest horizontal distance",
+      "D) Largest drainage area"
+    ],
+    "correct": "B",
+    "explanation": "D8 assigns flow to the neighbor with the steepest descent, computed as elevation drop divided by distance."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the ArcGIS flow direction code for East?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "A",
+    "explanation": "In the Esri encoding, East = 1, Southeast = 2, South = 4, following powers of two clockwise from east."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Esri encoding, what does code 16 represent?",
+    "options": [
+      "A) North",
+      "B) South",
+      "C) East",
+      "D) West"
+    ],
+    "correct": "D",
+    "explanation": "In the Esri power-of-two encoding, West = 16 (2^4)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the TauDEM flow direction code for North?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 64"
+    ],
+    "correct": "C",
+    "explanation": "TauDEM uses sequential integers counterclockwise from east: E=1, NE=2, North=3."
+  },
+  {
+    "type": "mcq",
+    "question": "A flow direction code of '2' means _____ in ArcGIS but _____ in TauDEM.",
+    "options": [
+      "A) Southeast; Northeast",
+      "B) Northeast; Southeast",
+      "C) South; North",
+      "D) East; West"
+    ],
+    "correct": "A",
+    "explanation": "In ArcGIS, code 2 = Southeast. In TauDEM, code 2 = Northeast."
+  },
+  {
+    "type": "mcq",
+    "question": "The Esri encoding uses powers of two because:",
+    "options": [
+      "A) It allows faster computation",
+      "B) Each direction occupies a single bit in an 8-bit byte",
+      "C) It matches Strahler stream orders",
+      "D) It encodes both direction and slope"
+    ],
+    "correct": "B",
+    "explanation": "Each direction occupies a single bit, theoretically allowing multiple directions to be encoded simultaneously."
+  },
+  {
+    "type": "mcq",
+    "question": "What mathematical structure does the D8 grid network form?",
+    "options": [
+      "A) A cycle graph",
+      "B) A forest (collection of trees)",
+      "C) A complete graph",
+      "D) A random network"
+    ],
+    "correct": "B",
+    "explanation": "The D8 grid network forms a forest where each tree is rooted at an outlet on the domain boundary."
+  },
+  {
+    "type": "mcq",
+    "question": "In the D8 grid network, each cell has exactly how many outgoing edges?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) 2",
+      "D) 8"
+    ],
+    "correct": "B",
+    "explanation": "Each cell in a D8 network has exactly one outgoing edge to its downstream neighbor."
+  },
+  {
+    "type": "mcq",
+    "question": "Which artifact is commonly seen in D8 flow paths?",
+    "options": [
+      "A) Spiral patterns",
+      "B) Staircase patterns",
+      "C) Circular loops",
+      "D) Random noise"
+    ],
+    "correct": "B",
+    "explanation": "D8 produces staircase patterns because flow is constrained to 8 discrete directions."
+  },
+  {
+    "type": "mcq",
+    "question": "On planar surfaces, D8 produces:",
+    "options": [
+      "A) Smooth flow paths",
+      "B) Parallel flow streaks",
+      "C) Divergent flow patterns",
+      "D) Circular flow patterns"
+    ],
+    "correct": "B",
+    "explanation": "On uniform slopes, D8 creates parallel flow streaks with artificial concentration of drainage area."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 cannot represent which type of flow?",
+    "options": [
+      "A) Convergent flow",
+      "B) Downstream flow",
+      "C) Divergent flow",
+      "D) Channelized flow"
+    ],
+    "correct": "C",
+    "explanation": "D8 routes all flow to a single neighbor, making divergent flow impossible."
+  },
+  {
+    "type": "mcq",
+    "question": "Despite its limitations, D8 is preferred for:",
+    "options": [
+      "A) Hillslope flow modeling",
+      "B) Erosion estimation",
+      "C) Stream and watershed delineation",
+      "D) Soil moisture estimation"
+    ],
+    "correct": "C",
+    "explanation": "D8's single-direction routing creates clean tree structures ideal for delineation."
+  },
+  {
+    "type": "mcq",
+    "question": "Who developed the D-infinity flow direction model?",
+    "options": [
+      "A) O'Callaghan and Mark",
+      "B) Beven and Kirkby",
+      "C) David Tarboton",
+      "D) Robert Horton"
+    ],
+    "correct": "C",
+    "explanation": "David Tarboton developed D-infinity, published in 1997."
+  },
+  {
+    "type": "mcq",
+    "question": "In what year was D-infinity published?",
+    "options": [
+      "A) 1984",
+      "B) 1991",
+      "C) 1997",
+      "D) 2008"
+    ],
+    "correct": "C",
+    "explanation": "Tarboton published the D-infinity method in 1997 in Water Resources Research."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity represents flow direction as:",
+    "options": [
+      "A) One of 8 discrete codes",
+      "B) A continuous angle from 0 to 2pi radians",
+      "C) A binary value",
+      "D) A power-of-two encoding"
+    ],
+    "correct": "B",
+    "explanation": "D-infinity computes flow direction as a continuous angle from 0 to 2pi."
+  },
+  {
+    "type": "mcq",
+    "question": "How many triangular facets does D-infinity evaluate per cell?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "Eight neighbors define eight triangular facets, each spanning 45 degrees."
+  },
+  {
+    "type": "mcq",
+    "question": "If the D-infinity computed angle falls outside a facet's range, the algorithm:",
+    "options": [
+      "A) Discards the facet",
+      "B) Assigns flow along the steeper bounding edge",
+      "C) Averages the two bounding directions",
+      "D) Doubles the slope"
+    ],
+    "correct": "B",
+    "explanation": "D-infinity assigns flow along the steeper bounding edge when the angle is outside the facet range."
+  },
+  {
+    "type": "mcq",
+    "question": "If the flow angle is 32.7 degrees between east (0) and NE (45), the NE fraction is:",
+    "options": [
+      "A) 0.273",
+      "B) 0.500",
+      "C) 0.727",
+      "D) 1.000"
+    ],
+    "correct": "C",
+    "explanation": "p_NE = (32.7 - 0) / (45 - 0) = 0.727."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity flow proportions always sum to:",
+    "options": [
+      "A) 0.5",
+      "B) 1.0",
+      "C) 2.0",
+      "D) It varies"
+    ],
+    "correct": "B",
+    "explanation": "The two proportions always sum to 1.0 for mass conservation."
+  },
+  {
+    "type": "mcq",
+    "question": "When the D-infinity angle falls exactly on a grid direction:",
+    "options": [
+      "A) Flow splits equally",
+      "B) It collapses to D8",
+      "C) It produces an error",
+      "D) Flow reverses"
+    ],
+    "correct": "B",
+    "explanation": "All flow goes to a single neighbor, identical to D8 behavior."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity and D8 diverge most on:",
+    "options": [
+      "A) Steep mountain terrain",
+      "B) Deep valleys",
+      "C) Gentle slopes and broad ridges",
+      "D) DEM boundaries"
+    ],
+    "correct": "C",
+    "explanation": "The algorithms diverge most where D8's artifacts are most problematic."
+  },
+  {
+    "type": "mcq",
+    "question": "Tarboton (1997) tested D-infinity using:",
+    "options": [
+      "A) Random fractals",
+      "B) Outward cone, inward cone, and planar surface",
+      "C) Gaussian hills",
+      "D) Real DEMs only"
+    ],
+    "correct": "B",
+    "explanation": "Three idealized surfaces with known analytical contributing area."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 flow accumulation formula: A(c) = 1 + sum of A(i) for cells i that:",
+    "options": [
+      "A) Are lower than c",
+      "B) Flow directly into c",
+      "C) Are adjacent to c",
+      "D) Share stream order with c"
+    ],
+    "correct": "B",
+    "explanation": "Accumulation sums all cells whose D8 direction points to c."
+  },
+  {
+    "type": "mcq",
+    "question": "In TauDEM, a ridgeline cell has accumulation:",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) -1",
+      "D) Varies"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM counts the cell itself, so ridgeline = 1."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcGIS, a ridgeline cell has accumulation:",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) -1",
+      "D) The cell area"
+    ],
+    "correct": "A",
+    "explanation": "ArcGIS counts only inflowing cells, so ridgeline = 0."
+  },
+  {
+    "type": "mcq",
+    "question": "To convert cell count to drainage area, multiply by:",
+    "options": [
+      "A) Cell perimeter",
+      "B) Cell diagonal",
+      "C) Cell area (delta_x * delta_y)",
+      "D) Number of streams"
+    ],
+    "correct": "C",
+    "explanation": "Drainage area = cell count * cell area."
+  },
+  {
+    "type": "mcq",
+    "question": "On a 30 m grid, accumulation of 100,000 drains:",
+    "options": [
+      "A) 9 km2",
+      "B) 30 km2",
+      "C) 90 km2",
+      "D) 300 km2"
+    ],
+    "correct": "C",
+    "explanation": "100,000 * 900 m2 = 90,000,000 m2 = 90 km2."
+  },
+  {
+    "type": "mcq",
+    "question": "Recommended visualization for flow accumulation:",
+    "options": [
+      "A) Linear color ramp",
+      "B) Logarithmic scale or geometric breaks",
+      "C) Binary black/white",
+      "D) Contour lines"
+    ],
+    "correct": "B",
+    "explanation": "Values span orders of magnitude, requiring log or geometric breaks."
+  },
+  {
+    "type": "mcq",
+    "question": "Stream cells are defined where accumulation:",
+    "options": [
+      "A) Equals zero",
+      "B) Is below T",
+      "C) Equals or exceeds threshold T",
+      "D) Equals T exactly"
+    ],
+    "correct": "C",
+    "explanation": "Streams are where A(c) >= T."
+  },
+  {
+    "type": "mcq",
+    "question": "A low stream threshold produces:",
+    "options": [
+      "A) A sparse network",
+      "B) Only major rivers",
+      "C) A very dense network",
+      "D) No streams"
+    ],
+    "correct": "C",
+    "explanation": "Low threshold classifies more cells as streams."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus has roughly how many stream reaches?",
+    "options": [
+      "A) 270,000",
+      "B) 2.7 million",
+      "C) 27 million",
+      "D) 270 million"
+    ],
+    "correct": "B",
+    "explanation": "NHDPlus contains approximately 2.7 million stream reaches."
+  },
+  {
+    "type": "mcq",
+    "question": "At a confluence, flow accumulation:",
+    "options": [
+      "A) Decreases",
+      "B) Stays the same",
+      "C) Increases approximately additively",
+      "D) Resets to zero"
+    ],
+    "correct": "C",
+    "explanation": "The downstream cell's accumulation is approximately the sum of contributing streams."
+  },
+  {
+    "type": "mcq",
+    "question": "Weighted flow accumulation uses:",
+    "options": [
+      "A) Constant weight of zero",
+      "B) Spatially variable weight raster",
+      "C) D-infinity angles",
+      "D) Strahler orders"
+    ],
+    "correct": "B",
+    "explanation": "Each cell contributes a specified weight instead of unity."
+  },
+  {
+    "type": "mcq",
+    "question": "If w(c) is precipitation depth, weighted accumulation gives:",
+    "options": [
+      "A) Flow direction",
+      "B) Total precipitation volume per unit area",
+      "C) Slope",
+      "D) Elevation"
+    ],
+    "correct": "B",
+    "explanation": "Accumulating precipitation estimates total volume draining through each cell."
+  },
+  {
+    "type": "mcq",
+    "question": "The influence function tracks:",
+    "options": [
+      "A) Material upslope from a target",
+      "B) Material downslope from a source",
+      "C) Shortest path",
+      "D) Elevation differences"
+    ],
+    "correct": "B",
+    "explanation": "The influence function maps the downstream contamination footprint."
+  },
+  {
+    "type": "mcq",
+    "question": "The dependence function answers:",
+    "options": [
+      "A) Where does contamination go?",
+      "B) Where does contamination come from?",
+      "C) What is stream elevation?",
+      "D) What is flow accumulation?"
+    ],
+    "correct": "B",
+    "explanation": "The dependence function traces upstream from a target."
+  },
+  {
+    "type": "mcq",
+    "question": "Decay-limited accumulation uses:",
+    "options": [
+      "A) Linear decay",
+      "B) Exponential decay e^(-k*d)",
+      "C) Square root of distance",
+      "D) Constant subtraction"
+    ],
+    "correct": "B",
+    "explanation": "Exponential decay e^(-k*d) with decay constant k."
+  },
+  {
+    "type": "mcq",
+    "question": "With k=0.001/m, what survives after 1000 m?",
+    "options": [
+      "A) About 10%",
+      "B) About 37%",
+      "C) About 50%",
+      "D) About 63%"
+    ],
+    "correct": "B",
+    "explanation": "e^(-1) is approximately 0.37 or 37%."
+  },
+  {
+    "type": "mcq",
+    "question": "Transport-capacity-limited accumulation models:",
+    "options": [
+      "A) Contaminant decay",
+      "B) Solubility limits",
+      "C) Sediment deposition when supply exceeds capacity",
+      "D) Groundwater recharge"
+    ],
+    "correct": "C",
+    "explanation": "Excess sediment deposits when capacity is exceeded."
+  },
+  {
+    "type": "mcq",
+    "question": "The sediment delivery ratio is:",
+    "options": [
+      "A) Fraction of eroded sediment reaching the outlet",
+      "B) Slope-to-area ratio",
+      "C) Percentage of stream cells",
+      "D) D8/D-infinity area ratio"
+    ],
+    "correct": "A",
+    "explanation": "The fraction of total erosion that reaches the outlet."
+  },
+  {
+    "type": "mcq",
+    "question": "The flow algebra was formalized by:",
+    "options": [
+      "A) O'Callaghan and Mark (1984)",
+      "B) Beven and Kirkby (1979)",
+      "C) Tarboton and Baker (2008)",
+      "D) Montgomery and Dietrich (1992)"
+    ],
+    "correct": "C",
+    "explanation": "Tarboton and Baker (2008) created the flow algebra framework."
+  },
+  {
+    "type": "mcq",
+    "question": "The four flow algebra components are:",
+    "options": [
+      "A) DEM, slope, aspect, curvature",
+      "B) Flow direction, input quantity, combination rule, transport transformation",
+      "C) Fill, direction, accumulation, threshold",
+      "D) Elevation, latitude, longitude, time"
+    ],
+    "correct": "B",
+    "explanation": "The flow algebra specifies these four components."
+  },
+  {
+    "type": "mcq",
+    "question": "Specific catchment area is:",
+    "options": [
+      "A) Total area / watershed area",
+      "B) Contributing area per unit contour width",
+      "C) Area of largest catchment",
+      "D) Accumulation times slope"
+    ],
+    "correct": "B",
+    "explanation": "a = A/w, contributing area per unit contour width."
+  },
+  {
+    "type": "mcq",
+    "question": "Units of specific catchment area:",
+    "options": [
+      "A) m2",
+      "B) m",
+      "C) 1/m",
+      "D) Dimensionless"
+    ],
+    "correct": "B",
+    "explanation": "m2/m = m."
+  },
+  {
+    "type": "mcq",
+    "question": "Who introduced TWI?",
+    "options": [
+      "A) Tarboton (1997)",
+      "B) Beven and Kirkby (1979)",
+      "C) O'Callaghan and Mark (1984)",
+      "D) Horton (1945)"
+    ],
+    "correct": "B",
+    "explanation": "Beven and Kirkby introduced TWI in 1979 for TOPMODEL."
+  },
+  {
+    "type": "mcq",
+    "question": "TWI formula:",
+    "options": [
+      "A) a * tan(beta)",
+      "B) ln(a / tan beta)",
+      "C) a / beta",
+      "D) ln(beta / a)"
+    ],
+    "correct": "B",
+    "explanation": "TWI = ln(a / tan beta)."
+  },
+  {
+    "type": "mcq",
+    "question": "High TWI indicates:",
+    "options": [
+      "A) Steep and dry",
+      "B) Flat with large area, prone to saturation",
+      "C) Ridgeline",
+      "D) Far from stream"
+    ],
+    "correct": "B",
+    "explanation": "Flat terrain with large contributing area favors saturation."
+  },
+  {
+    "type": "mcq",
+    "question": "TWI on the Great Hungarian Plain is problematic because:",
+    "options": [
+      "A) Too many streams",
+      "B) Slopes approach zero, TWI approaches infinity",
+      "C) DEM too coarse",
+      "D) No rainfall data"
+    ],
+    "correct": "B",
+    "explanation": "tan(beta) approaches zero on flat terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "TWI is most meaningful in:",
+    "options": [
+      "A) Flat plains",
+      "B) Urban areas",
+      "C) Hilly or mountainous terrain",
+      "D) Coastal zones"
+    ],
+    "correct": "C",
+    "explanation": "Topographic control of saturation dominates in hilly terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND stands for:",
+    "options": [
+      "A) Hydraulic Analysis of Natural Drainage",
+      "B) Height Above Nearest Drainage",
+      "C) Hydrologic Area Network Delineation",
+      "D) Horizontal And Numeric Distance"
+    ],
+    "correct": "B",
+    "explanation": "Height Above Nearest Drainage."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND is computed by:",
+    "options": [
+      "A) Subtracting mean watershed elevation",
+      "B) Subtracting stream cell elevation from cell elevation along flow path",
+      "C) Dividing elevation by accumulation",
+      "D) sqrt of contributing area"
+    ],
+    "correct": "B",
+    "explanation": "HAND(c) = z(c) - z(s) where s is the nearest stream along the flow path."
+  },
+  {
+    "type": "mcq",
+    "question": "A cell is flooded when:",
+    "options": [
+      "A) HAND > water depth",
+      "B) Water depth > HAND",
+      "C) Accumulation = 0",
+      "D) TWI < 4"
+    ],
+    "correct": "B",
+    "explanation": "Flooding occurs when h_w > HAND(c)."
+  },
+  {
+    "type": "mcq",
+    "question": "Which TauDEM tool computes HAND?",
+    "options": [
+      "A) D8 Contributing Area",
+      "B) D-infinity Distance Down",
+      "C) Pit Remove",
+      "D) Stream Definition by Threshold"
+    ],
+    "correct": "B",
+    "explanation": "D-infinity Distance Down computes HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity Distance Down computes all EXCEPT:",
+    "options": [
+      "A) Vertical distance",
+      "B) Horizontal distance",
+      "C) Strahler stream order",
+      "D) Slope distance"
+    ],
+    "correct": "C",
+    "explanation": "It computes distances, not stream order."
+  },
+  {
+    "type": "mcq",
+    "question": "Continental US HAND uses:",
+    "options": [
+      "A) 90 m SRTM",
+      "B) 10 m DEMs and NHDPlus",
+      "C) 1 m LiDAR only",
+      "D) Satellite imagery"
+    ],
+    "correct": "B",
+    "explanation": "10-meter DEMs and NHDPlus stream networks."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus identifier system:",
+    "options": [
+      "A) HYRIV_ID",
+      "B) COMID",
+      "C) HYBAS_ID",
+      "D) OVF code"
+    ],
+    "correct": "B",
+    "explanation": "COMID (Common Identifier)."
+  },
+  {
+    "type": "mcq",
+    "question": "EU equivalent stream network:",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) HydroSHEDS",
+      "D) GRDC"
+    ],
+    "correct": "B",
+    "explanation": "EU-Hydro from Copernicus."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's 5 m DEM:",
+    "options": [
+      "A) SRTM-HU",
+      "B) Copernicus EEA-10",
+      "C) DDM-5",
+      "D) NED-5"
+    ],
+    "correct": "C",
+    "explanation": "DDM-5 from Lechner Tudaskezpont."
+  },
+  {
+    "type": "mcq",
+    "question": "Sub-meter LiDAR reveals:",
+    "options": [
+      "A) Only major rivers",
+      "B) Continental patterns",
+      "C) Trails, roads, microtopography",
+      "D) Underground channels"
+    ],
+    "correct": "C",
+    "explanation": "High-resolution data reveals micro-scale drainage features."
+  },
+  {
+    "type": "mcq",
+    "question": "Roads on LiDAR flow accumulation appear as:",
+    "options": [
+      "A) Zero accumulation areas",
+      "B) Linear barriers with high accumulation at culverts",
+      "C) Smooth surfaces",
+      "D) Circular depressions"
+    ],
+    "correct": "B",
+    "explanation": "Roads intercept flow, concentrating it at culvert locations."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro does NOT natively implement:",
+    "options": [
+      "A) D8 flow direction",
+      "B) D8 flow accumulation",
+      "C) D-infinity",
+      "D) Fill"
+    ],
+    "correct": "C",
+    "explanation": "ArcGIS Pro lacks native D-infinity."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM was developed at:",
+    "options": [
+      "A) MIT",
+      "B) Utah State University",
+      "C) Stanford",
+      "D) UT Austin"
+    ],
+    "correct": "B",
+    "explanation": "David Tarboton at Utah State University."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM uses which parallel processing technology?",
+    "options": [
+      "A) OpenMP",
+      "B) CUDA",
+      "C) MPI",
+      "D) Python multiprocessing"
+    ],
+    "correct": "C",
+    "explanation": "MPI (Message Passing Interface)."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM D8 flow direction output suffixes:",
+    "options": [
+      "A) _fd and _sl",
+      "B) p and sd8",
+      "C) _dir and _acc",
+      "D) fdr and fac"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM uses p for direction and sd8 for slope."
+  },
+  {
+    "type": "mcq",
+    "question": "Which software uses the Band encoding?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) GRASS GIS",
+      "C) TauDEM",
+      "D) SAGA GIS"
+    ],
+    "correct": "C",
+    "explanation": "TauDEM uses the Band convention."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS drop raster approximates sqrt(2) as:",
+    "options": [
+      "A) 1.414 exactly",
+      "B) 1.5",
+      "C) 2.0",
+      "D) 1.0"
+    ],
+    "correct": "B",
+    "explanation": "A known implementation detail uses 1.5 instead of 1.414."
+  },
+  {
+    "type": "mcq",
+    "question": "Open-source tool written in Rust with 550+ tools:",
+    "options": [
+      "A) GRASS GIS",
+      "B) SAGA GIS",
+      "C) WhiteboxTools",
+      "D) TauDEM"
+    ],
+    "correct": "C",
+    "explanation": "WhiteboxTools by John Lindsay at University of Guelph."
+  },
+  {
+    "type": "mcq",
+    "question": "GRASS GIS handles large DEMs via:",
+    "options": [
+      "A) GPU acceleration",
+      "B) Segmented processing",
+      "C) Cloud computing",
+      "D) Proprietary compression"
+    ],
+    "correct": "B",
+    "explanation": "Segmented processing minimizes memory usage."
+  },
+  {
+    "type": "mcq",
+    "question": "The conditioned DEM comes from which chapter?",
+    "options": [
+      "A) 7",
+      "B) 8",
+      "C) 9",
+      "D) 11"
+    ],
+    "correct": "C",
+    "explanation": "Chapter 9 covers hydrologic conditioning."
+  },
+  {
+    "type": "mcq",
+    "question": "The DEM-to-drainage pipeline starts with:",
+    "options": [
+      "A) Stream definition",
+      "B) Watershed delineation",
+      "C) Conditioned DEM",
+      "D) Strahler ordering"
+    ],
+    "correct": "C",
+    "explanation": "The pipeline begins with the conditioned DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "Slope from center (100 m) to east neighbor (98 m) on 30 m grid:",
+    "options": [
+      "A) 0.0333",
+      "B) 0.0471",
+      "C) 0.0667",
+      "D) 0.1000"
+    ],
+    "correct": "C",
+    "explanation": "(100-98)/30 = 0.0667."
+  },
+  {
+    "type": "mcq",
+    "question": "For geographic coordinate DEMs, cell area varies with:",
+    "options": [
+      "A) Longitude",
+      "B) Elevation",
+      "C) Latitude",
+      "D) Time"
+    ],
+    "correct": "C",
+    "explanation": "East-west distance shrinks with latitude via cosine effect."
+  },
+  {
+    "type": "mcq",
+    "question": "Accumulation 1,000-10,000 represents:",
+    "options": [
+      "A) Ridgelines",
+      "B) Headwater channels",
+      "C) Major rivers",
+      "D) Upper hillslopes"
+    ],
+    "correct": "B",
+    "explanation": "Headwater channels per Table 10.4."
+  },
+  {
+    "type": "mcq",
+    "question": "Simple flow accumulation uses which combination rule?",
+    "options": [
+      "A) Minimum",
+      "B) Maximum",
+      "C) Summation with identity transformation",
+      "D) Summation with exponential decay"
+    ],
+    "correct": "C",
+    "explanation": "Summation with identity (pass-through)."
+  },
+  {
+    "type": "mcq",
+    "question": "The dependence function traverses:",
+    "options": [
+      "A) Downstream",
+      "B) Upstream from a target",
+      "C) Randomly",
+      "D) Horizontally"
+    ],
+    "correct": "B",
+    "explanation": "Upstream from the target cell."
+  },
+  {
+    "type": "mcq",
+    "question": "Concentration-limited accumulation caps at:",
+    "options": [
+      "A) Maximum flow rate",
+      "B) Maximum solubility concentration",
+      "C) Maximum transport capacity",
+      "D) Maximum slope"
+    ],
+    "correct": "B",
+    "explanation": "Caps loading at maximum solubility."
+  },
+  {
+    "type": "mcq",
+    "question": "Retention-limited runoff models:",
+    "options": [
+      "A) Sediment deposition",
+      "B) Contaminant decay",
+      "C) Run-on/runoff interactions",
+      "D) Bank erosion"
+    ],
+    "correct": "C",
+    "explanation": "Subtracts retention capacity during transport."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity angles are measured:",
+    "options": [
+      "A) Clockwise from north",
+      "B) Counterclockwise from east",
+      "C) Clockwise from east",
+      "D) Counterclockwise from north"
+    ],
+    "correct": "B",
+    "explanation": "Mathematical convention from positive x-axis."
+  },
+  {
+    "type": "mcq",
+    "question": "Valid flow accumulation requires conservation and:",
+    "options": [
+      "A) Uniform cells",
+      "B) No circular paths (DAG)",
+      "C) Flat terrain",
+      "D) Square cells"
+    ],
+    "correct": "B",
+    "explanation": "The network must be a directed acyclic graph."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, slope to NE (center=45m, NE=38m, 10m grid):",
+    "options": [
+      "A) 0.200",
+      "B) 0.495",
+      "C) 0.700",
+      "D) 1.000"
+    ],
+    "correct": "B",
+    "explanation": "(45-38)/(10*sqrt(2)) = 7/14.14 = 0.495."
+  },
+  {
+    "type": "mcq",
+    "question": "HAND equals zero for:",
+    "options": [
+      "A) Ridgeline cells",
+      "B) Stream cells",
+      "C) Maximum elevation cells",
+      "D) Zero accumulation cells"
+    ],
+    "correct": "B",
+    "explanation": "Stream cells are the reference, so HAND = 0."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS is operated by:",
+    "options": [
+      "A) USGS",
+      "B) Copernicus/ECMWF",
+      "C) Hungarian OVF",
+      "D) WMO"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Emergency Management Service at ECMWF."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's flood forecasting uses data from:",
+    "options": [
+      "A) USGS",
+      "B) OVF",
+      "C) GRDC only",
+      "D) NASA"
+    ],
+    "correct": "B",
+    "explanation": "OVF maintains Hungary's flood forecasting system."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroSHEDS DEM source:",
+    "options": [
+      "A) LiDAR",
+      "B) ASTER",
+      "C) SRTM and MERIT DEM",
+      "D) Copernicus EEA-10"
+    ],
+    "correct": "C",
+    "explanation": "SRTM originally, MERIT DEM for Version 2."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus EEA-10 resolution:",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "C",
+    "explanation": "10-meter resolution for European countries."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus GLO-30 global resolution:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "30-meter global resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "In TOPMODEL, TWI controls:",
+    "options": [
+      "A) Groundwater recharge",
+      "B) Variable source area runoff",
+      "C) Snow accumulation",
+      "D) Wind erosion"
+    ],
+    "correct": "B",
+    "explanation": "TWI determines saturation-excess runoff generation patterns."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity slope if Sx=0.200, Sy=0.500:",
+    "options": [
+      "A) 0.300",
+      "B) 0.539",
+      "C) 0.700",
+      "D) 0.490"
+    ],
+    "correct": "B",
+    "explanation": "sqrt(0.04+0.25) = sqrt(0.29) = 0.539."
+  },
+  {
+    "type": "mcq",
+    "question": "Area of one 10 m grid cell:",
+    "options": [
+      "A) 10 m2",
+      "B) 50 m2",
+      "C) 100 m2",
+      "D) 1000 m2"
+    ],
+    "correct": "C",
+    "explanation": "10*10 = 100 m2."
+  },
+  {
+    "type": "mcq",
+    "question": "Flow algebra processes cells in:",
+    "options": [
+      "A) Random order",
+      "B) Alphabetical order",
+      "C) Topological order",
+      "D) Reverse alphabetical"
+    ],
+    "correct": "C",
+    "explanation": "From ridgelines to outlets."
+  },
+  {
+    "type": "mcq",
+    "question": "Relative hillslope position of 0.5 means:",
+    "options": [
+      "A) At ridgeline",
+      "B) Halfway between ridge and stream",
+      "C) At the stream",
+      "D) Zero slope"
+    ],
+    "correct": "B",
+    "explanation": "Ratio of distance from ridge to total hillslope length."
+  },
+  {
+    "type": "mcq",
+    "question": "Straight-line distance to stream uses:",
+    "options": [
+      "A) HAND computation",
+      "B) Surface path length",
+      "C) Euclidean distance ignoring topography",
+      "D) Flow path distance"
+    ],
+    "correct": "C",
+    "explanation": "Euclidean distance, not following terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "GloFAS provides forecasts for:",
+    "options": [
+      "A) US only",
+      "B) Europe only",
+      "C) Entire globe",
+      "D) Hungary only"
+    ],
+    "correct": "C",
+    "explanation": "Global flood forecasts."
+  },
+  {
+    "type": "mcq",
+    "question": "Outlet accumulation for 10,000 km2 watershed on 30 m grid:",
+    "options": [
+      "A) 1,000",
+      "B) 100,000",
+      "C) 1 million",
+      "D) Over 11 million"
+    ],
+    "correct": "D",
+    "explanation": "10^10/900 = 11.1 million cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The D8 algorithm was published by O'Callaghan and Mark in 1984.",
+    "correct": true,
+    "explanation": "O'Callaghan and Mark published D8 in 1984."
+  },
+  {
+    "type": "true_false",
+    "question": "In D8, the steepest descent is always toward the lowest neighboring cell.",
+    "correct": false,
+    "explanation": "The sqrt(2) penalty on diagonals means the lowest neighbor may not have the steepest slope."
+  },
+  {
+    "type": "true_false",
+    "question": "Cardinal neighbors are separated by delta, diagonal by delta*sqrt(2).",
+    "correct": true,
+    "explanation": "Cardinal = delta; diagonal = delta*sqrt(2)."
+  },
+  {
+    "type": "true_false",
+    "question": "The Esri encoding uses sequential integers 1-8.",
+    "correct": false,
+    "explanation": "Esri uses powers of two. TauDEM uses sequential integers."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM flow directions proceed counterclockwise from east.",
+    "correct": true,
+    "explanation": "Sequential integers 1-8 counterclockwise from east."
+  },
+  {
+    "type": "true_false",
+    "question": "Code 2 means the same in ArcGIS and TauDEM.",
+    "correct": false,
+    "explanation": "Code 2 = SE in ArcGIS, NE in TauDEM."
+  },
+  {
+    "type": "true_false",
+    "question": "The D8 grid network is a directed acyclic graph.",
+    "correct": true,
+    "explanation": "Flow always moves downhill, so no cycles exist."
+  },
+  {
+    "type": "true_false",
+    "question": "Each D8 cell can have multiple outgoing directions.",
+    "correct": false,
+    "explanation": "Each cell has exactly one outgoing edge."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 can represent divergent flow on hilltops.",
+    "correct": false,
+    "explanation": "D8 forces all flow to a single neighbor."
+  },
+  {
+    "type": "true_false",
+    "question": "Staircase patterns result from constraining flow to 45-degree intervals.",
+    "correct": true,
+    "explanation": "D8 alternates between cardinal and diagonal directions."
+  },
+  {
+    "type": "true_false",
+    "question": "Parallel streaks arise from flat surfaces.",
+    "correct": true,
+    "explanation": "Uniform slopes give identical flow codes to adjacent cells."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity was developed by Beven and Kirkby.",
+    "correct": false,
+    "explanation": "Tarboton developed D-infinity. Beven and Kirkby developed TWI."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity uses a continuous angle from 0 to 2pi.",
+    "correct": true,
+    "explanation": "Flow direction as any angle, unconstrained by grid."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity fits planes through triangular facets.",
+    "correct": true,
+    "explanation": "Three points define a plane, yielding steepest descent direction."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity always splits flow between exactly two neighbors.",
+    "correct": false,
+    "explanation": "When angle matches a grid direction, all flow goes to one neighbor."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity proportions sum to 1.0.",
+    "correct": true,
+    "explanation": "Ensures mass conservation."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 produces smoother contributing area than D-infinity.",
+    "correct": false,
+    "explanation": "D-infinity is smoother; D8 has streak artifacts."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity is preferred for watershed delineation.",
+    "correct": false,
+    "explanation": "D8 is preferred for its clean tree structure."
+  },
+  {
+    "type": "true_false",
+    "question": "Most workflows use both D8 and D-infinity.",
+    "correct": true,
+    "explanation": "D8 for networks, D-infinity for hillslope analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "Flow accumulation represents total upstream drainage area.",
+    "correct": true,
+    "explanation": "Counts all cells draining through a given cell."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM counts the cell itself in accumulation.",
+    "correct": true,
+    "explanation": "Ridgeline cell = 1 in TauDEM, 0 in ArcGIS."
+  },
+  {
+    "type": "true_false",
+    "question": "Linear color ramp is best for flow accumulation.",
+    "correct": false,
+    "explanation": "Logarithmic or geometric breaks are needed."
+  },
+  {
+    "type": "true_false",
+    "question": "Higher threshold produces denser network.",
+    "correct": false,
+    "explanation": "Higher threshold is more restrictive, fewer streams."
+  },
+  {
+    "type": "true_false",
+    "question": "Threshold T has no modeling impact.",
+    "correct": false,
+    "explanation": "Directly affects hillslope-channel partition and flow predictions."
+  },
+  {
+    "type": "true_false",
+    "question": "Confluence accumulation is approximately additive.",
+    "correct": true,
+    "explanation": "Sum of contributing streams plus the junction cell."
+  },
+  {
+    "type": "true_false",
+    "question": "Weighted accumulation estimates pollutant loading.",
+    "correct": true,
+    "explanation": "Setting weights to loading rates integrates upstream contributions."
+  },
+  {
+    "type": "true_false",
+    "question": "The influence function traces upslope from a target.",
+    "correct": false,
+    "explanation": "Influence traces downslope from a source. Dependence traces upslope."
+  },
+  {
+    "type": "true_false",
+    "question": "The dependence function is the inverse of influence.",
+    "correct": true,
+    "explanation": "Influence: where does it go? Dependence: where does it come from?"
+  },
+  {
+    "type": "true_false",
+    "question": "Decay-limited accumulation uses linear decay.",
+    "correct": false,
+    "explanation": "Uses exponential decay e^(-k*d)."
+  },
+  {
+    "type": "true_false",
+    "question": "Sediment delivery ratio decreases with watershed size.",
+    "correct": true,
+    "explanation": "More deposition opportunities in larger basins."
+  },
+  {
+    "type": "true_false",
+    "question": "Flow algebra handles only simple accumulation.",
+    "correct": false,
+    "explanation": "Generalizes all accumulation types."
+  },
+  {
+    "type": "true_false",
+    "question": "Specific catchment area has units of meters.",
+    "correct": true,
+    "explanation": "m2/m = m."
+  },
+  {
+    "type": "true_false",
+    "question": "High specific catchment area indicates divergent terrain.",
+    "correct": false,
+    "explanation": "Indicates convergent terrain where flow concentrates."
+  },
+  {
+    "type": "true_false",
+    "question": "TWI was introduced in 1979.",
+    "correct": true,
+    "explanation": "Beven and Kirkby, 1979."
+  },
+  {
+    "type": "true_false",
+    "question": "TWI = ln(a * tan beta).",
+    "correct": false,
+    "explanation": "TWI = ln(a / tan beta). Slope in denominator."
+  },
+  {
+    "type": "true_false",
+    "question": "Valley bottoms have high TWI.",
+    "correct": true,
+    "explanation": "Large area, small slope gives high TWI."
+  },
+  {
+    "type": "true_false",
+    "question": "D8-derived TWI is more accurate than D-infinity.",
+    "correct": false,
+    "explanation": "D-infinity TWI is more realistic."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND is always non-negative.",
+    "correct": true,
+    "explanation": "Cells drain downhill to streams, so z(cell) >= z(stream)."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND measures straight-line distance to streams.",
+    "correct": false,
+    "explanation": "HAND is vertical distance along the flow path."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND flood mapping neglects channel hydraulics.",
+    "correct": true,
+    "explanation": "Approximate method ignoring floodplain flow details."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS uses LISFLOOD.",
+    "correct": true,
+    "explanation": "LISFLOOD is EFAS's distributed hydrological model."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary is entirely in the Tisza River Basin District.",
+    "correct": false,
+    "explanation": "Hungary is in the Danube River Basin District."
+  },
+  {
+    "type": "true_false",
+    "question": "USGS operates about 7,000 gauge stations.",
+    "correct": true,
+    "explanation": "NWIS includes approximately 7,000 stations."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS uses HYRIV_ID.",
+    "correct": true,
+    "explanation": "HYRIV_ID for river reaches globally."
+  },
+  {
+    "type": "true_false",
+    "question": "OpenTopography provides public LiDAR data.",
+    "correct": true,
+    "explanation": "Hosts high-resolution topographic data for public access."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro natively implements D-infinity.",
+    "correct": false,
+    "explanation": "Must use TauDEM or alternatives."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM is proprietary software.",
+    "correct": false,
+    "explanation": "Free and open-source."
+  },
+  {
+    "type": "true_false",
+    "question": "GRASS r.watershed is memory-efficient.",
+    "correct": true,
+    "explanation": "Segmented processing handles large DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools implements both D8 and D-infinity.",
+    "correct": true,
+    "explanation": "Plus other multiple-direction algorithms."
+  },
+  {
+    "type": "true_false",
+    "question": "The pipeline ends with flow direction.",
+    "correct": false,
+    "explanation": "Continues through accumulation, streams, TWI, HAND."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity was published in Water Resources Research.",
+    "correct": true,
+    "explanation": "Tarboton (1997), WRR 33(2)."
+  },
+  {
+    "type": "true_false",
+    "question": "In ArcGIS, NE = 128.",
+    "correct": true,
+    "explanation": "NE = 2^7 = 128 in Esri encoding."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity produces integer values like D8.",
+    "correct": false,
+    "explanation": "D-infinity produces continuous floating-point angles."
+  },
+  {
+    "type": "true_false",
+    "question": "Flow accumulation works without a conditioned DEM.",
+    "correct": false,
+    "explanation": "Unconditioned DEMs have undefined flow in depressions."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND can be negative.",
+    "correct": false,
+    "explanation": "Always >= 0 because cells drain downhill."
+  },
+  {
+    "type": "true_false",
+    "question": "The influence function uses D-infinity proportioning.",
+    "correct": true,
+    "explanation": "D-infinity represents dispersive hillslope flow realistically."
+  },
+  {
+    "type": "true_false",
+    "question": "Transport-capacity uses the minimum function.",
+    "correct": true,
+    "explanation": "T_out = min(supply + in, capacity)."
+  },
+  {
+    "type": "true_false",
+    "question": "In TauDEM, SE = 8.",
+    "correct": true,
+    "explanation": "E=1, NE=2, N=3, NW=4, W=5, SW=6, S=7, SE=8."
+  },
+  {
+    "type": "true_false",
+    "question": "The flow direction raster is the backbone of hydrologic analysis.",
+    "correct": true,
+    "explanation": "Encodes the complete drainage structure."
+  },
+  {
+    "type": "true_false",
+    "question": "On steep terrain, D-infinity often matches D8.",
+    "correct": true,
+    "explanation": "Strong gradients align with grid directions."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS uses 51-member ensemble forecasts.",
+    "correct": true,
+    "explanation": "51 ECMWF ensemble members for probabilistic output."
+  },
+  {
+    "type": "true_false",
+    "question": "USGS gauge network is called NWIS.",
+    "correct": true,
+    "explanation": "National Water Information System."
+  },
+  {
+    "type": "true_false",
+    "question": "Nobre et al. (2011) introduced HAND.",
+    "correct": true,
+    "explanation": "Published in Journal of Hydrology."
+  },
+  {
+    "type": "true_false",
+    "question": "A conditioned DEM ensures every cell has a downslope path.",
+    "correct": true,
+    "explanation": "Filling sinks and resolving flats achieves this."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS accumulation of 0 means ridgeline.",
+    "correct": true,
+    "explanation": "ArcGIS counts only inflowing cells."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity accumulation produces fractional values.",
+    "correct": true,
+    "explanation": "Proportioning creates non-integer contributions."
+  },
+  {
+    "type": "true_false",
+    "question": "High terrace above incised stream has small HAND.",
+    "correct": false,
+    "explanation": "High terrace = large HAND (far above stream)."
+  },
+  {
+    "type": "true_false",
+    "question": "Horizontal distance projects the flow path onto the plane.",
+    "correct": true,
+    "explanation": "Plan-view projection of the 3D flow path."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity Distance Up measures distance from streams.",
+    "correct": false,
+    "explanation": "Distance Up computes distance from ridgelines."
+  },
+  {
+    "type": "true_false",
+    "question": "Flow algebra separates routing from transformation.",
+    "correct": true,
+    "explanation": "Core design principle enabling extensibility."
+  },
+  {
+    "type": "true_false",
+    "question": "Each D-infinity facet spans 90 degrees.",
+    "correct": false,
+    "explanation": "360/8 = 45 degrees per facet."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS South = 4.",
+    "correct": true,
+    "explanation": "E=1, SE=2, S=4 (2^2)."
+  },
+  {
+    "type": "true_false",
+    "question": "SAGA GIS is bundled with QGIS.",
+    "correct": true,
+    "explanation": "Accessible through QGIS Processing framework."
+  },
+  {
+    "type": "true_false",
+    "question": "NWM forecasts for 2.7 million reaches.",
+    "correct": true,
+    "explanation": "Every NHDPlus reach."
+  },
+  {
+    "type": "true_false",
+    "question": "Weighted accumulation should use integer output.",
+    "correct": false,
+    "explanation": "Floating point preserves fractional contributions."
+  },
+  {
+    "type": "true_false",
+    "question": "Grid network refers to D8 directed graph.",
+    "correct": true,
+    "explanation": "The directed graph from D8 flow directions."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity angles are clockwise from north.",
+    "correct": false,
+    "explanation": "Counterclockwise from east (mathematical convention)."
+  },
+  {
+    "type": "true_false",
+    "question": "Accumulation at a stream point proxies stream size.",
+    "correct": true,
+    "explanation": "Correlates with discharge and channel width."
+  },
+  {
+    "type": "true_false",
+    "question": "Accumulation 100,000-1,000,000 = medium rivers.",
+    "correct": true,
+    "explanation": "Per Table 10.4 classification."
+  },
+  {
+    "type": "true_false",
+    "question": "Dependence function starts with target cell = 1.0.",
+    "correct": true,
+    "explanation": "Target has dependence = 1.0, propagated upstream."
+  },
+  {
+    "type": "true_false",
+    "question": "Distant sources have greater impact in decay accumulation.",
+    "correct": false,
+    "explanation": "Exponential decay reduces distant contributions."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS accesses D-infinity via WhiteboxTools.",
+    "correct": true,
+    "explanation": "Through the WhiteboxTools provider plugin."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian Basin challenges flow direction computation.",
+    "correct": true,
+    "explanation": "Extremely flat terrain causes unreliable routing."
+  },
+  {
+    "type": "true_false",
+    "question": "Topological ordering goes from outlets to ridgelines.",
+    "correct": false,
+    "explanation": "Goes from ridgelines (highest) to outlets (lowest)."
+  },
+  {
+    "type": "true_false",
+    "question": "On 30 m grid, T=5000 = 4.5 km2.",
+    "correct": true,
+    "explanation": "5000 * 900 = 4,500,000 m2 = 4.5 km2."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND makes absolute elevation the key flood risk factor.",
+    "correct": false,
+    "explanation": "HAND uses relative height above local drainage."
+  },
+  {
+    "type": "true_false",
+    "question": "data.vizugy.hu provides Hungarian water data.",
+    "correct": true,
+    "explanation": "OVF open data portal since July 2024."
+  },
+  {
+    "type": "true_false",
+    "question": "Slope to cardinal neighbor uses sqrt(2) factor.",
+    "correct": false,
+    "explanation": "sqrt(2) applies to diagonal neighbors only."
+  },
+  {
+    "type": "true_false",
+    "question": "The D-infinity worked example uses a 10 m grid.",
+    "correct": true,
+    "explanation": "Section 10.2.4 uses a 10-meter grid."
+  },
+  {
+    "type": "true_false",
+    "question": "Accumulation 10-100 = upper hillslopes.",
+    "correct": true,
+    "explanation": "Per Table 10.4."
+  },
+  {
+    "type": "true_false",
+    "question": "The influence function uses upstream direction.",
+    "correct": false,
+    "explanation": "Influence uses downstream; dependence uses upstream."
+  },
+  {
+    "type": "true_false",
+    "question": "Concentration-limited tracking needs mass and volume.",
+    "correct": true,
+    "explanation": "Both needed for solubility limits and dilution."
+  },
+  {
+    "type": "true_false",
+    "question": "Zheng et al. (2018) used HAND for channel geometry.",
+    "correct": true,
+    "explanation": "Published in JAWRA."
+  },
+  {
+    "type": "true_false",
+    "question": "TWI of valley cell in worked example is about 11.87.",
+    "correct": true,
+    "explanation": "ln(5000/0.0349) = ln(143266) = 11.87."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity addressed D4 algorithm limitations.",
+    "correct": false,
+    "explanation": "D-infinity addressed D8 limitations."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS forecasts up to 15 days ahead.",
+    "correct": true,
+    "explanation": "Medium-range forecasts using ECMWF ensemble."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity was published in WRR volume 33.",
+    "correct": true,
+    "explanation": "Tarboton (1997), WRR 33(2), 309-319."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D8 algorithm evaluates _____ neighbors.",
+    "correct": "eight (8)",
+    "explanation": "4 cardinal + 4 diagonal = 8."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 was published by _____ in 1984.",
+    "correct": "O'Callaghan and Mark",
+    "explanation": "Published in Computer Vision, Graphics, and Image Processing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Diagonal inter-cell distance = delta * _____.",
+    "correct": "sqrt(2)",
+    "explanation": "Diagonal of a square cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Esri encoding uses powers of _____, clockwise from east.",
+    "correct": "two (2)",
+    "explanation": "1, 2, 4, 8, 16, 32, 64, 128."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS code for North is _____.",
+    "correct": "64",
+    "explanation": "2^6 = 64."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM convention was developed by _____.",
+    "correct": "David Tarboton",
+    "explanation": "Sequential integers counterclockwise from east."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM code for West is _____.",
+    "correct": "5",
+    "explanation": "E=1, NE=2, N=3, NW=4, W=5."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 flow directions create a _____ network.",
+    "correct": "grid",
+    "explanation": "Directed graph with one outgoing edge per cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D8 grid network is a _____ (collection of trees).",
+    "correct": "forest",
+    "explanation": "Multiple trees rooted at domain boundary outlets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 uses _____ discrete directions at 45-degree intervals.",
+    "correct": "eight (8)",
+    "explanation": "4 cardinal + 4 diagonal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 flow paths exhibit a _____ pattern.",
+    "correct": "staircase",
+    "explanation": "Zigzag between cardinal and diagonal directions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity was published in _____.",
+    "correct": "1997",
+    "explanation": "Water Resources Research, volume 33."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity represents direction as a continuous _____.",
+    "correct": "angle",
+    "explanation": "From 0 to 2pi radians."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity evaluates _____ triangular facets per cell.",
+    "correct": "eight (8)",
+    "explanation": "Each spanning 45 degrees."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity proportions flow between at most _____ neighbors.",
+    "correct": "two (2)",
+    "explanation": "The two bounding the flow angle."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ transforms flow direction into contributing area.",
+    "correct": "Flow accumulation",
+    "explanation": "Counts upstream cells draining through each cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity accumulation accounts for flow _____.",
+    "correct": "proportioning",
+    "explanation": "Fractional contributions between neighbors."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Valid accumulation requires no _____ flow paths.",
+    "correct": "circular",
+    "explanation": "Directed acyclic graph required."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM ridgeline accumulation = _____.",
+    "correct": "1",
+    "explanation": "Counts the cell itself."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Drainage area = cell count * _____.",
+    "correct": "cell area",
+    "explanation": "delta_x * delta_y."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream definition uses a _____ T on flow accumulation.",
+    "correct": "threshold",
+    "explanation": "Cells with A >= T are streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides 2.7 million US stream reaches.",
+    "correct": "NHDPlus",
+    "explanation": "National Hydrography Dataset Plus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU-Hydro is from the _____ Land Monitoring Service.",
+    "correct": "Copernicus",
+    "explanation": "Pan-European river network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides global stream networks from SRTM.",
+    "correct": "HydroSHEDS",
+    "explanation": "Including HydroRIVERS and HydroBASINS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Weighted accumulation uses a spatially variable _____ raster.",
+    "correct": "weight",
+    "explanation": "Each cell contributes w(c) instead of 1."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function tracks contamination from a source.",
+    "correct": "influence",
+    "explanation": "Downstream tracking from source area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function finds contributions to a target.",
+    "correct": "dependence",
+    "explanation": "Upstream tracing from target."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Decay accumulation uses constant k in units of inverse _____.",
+    "correct": "distance (e.g., m^-1)",
+    "explanation": "For exponential decay e^(-k*d)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The sediment _____ ratio is the fraction reaching the outlet.",
+    "correct": "delivery",
+    "explanation": "Decreases with watershed size."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow _____ was formalized by Tarboton and Baker (2008).",
+    "correct": "algebra",
+    "explanation": "General framework for terrain-flow computations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Specific catchment area = A per unit _____ width.",
+    "correct": "contour",
+    "explanation": "a = A/w."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TWI = ln(a / tan _____).",
+    "correct": "beta",
+    "explanation": "beta is the local slope angle."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TWI was introduced by _____ and Kirkby.",
+    "correct": "Beven",
+    "explanation": "Beven and Kirkby (1979)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "High TWI favors _____.",
+    "correct": "saturation",
+    "explanation": "Flat + large contributing area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "On the Great Plain, dominant processes are _____-surface water interactions.",
+    "correct": "groundwater",
+    "explanation": "Not topographic overland flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND = Height Above Nearest _____.",
+    "correct": "Drainage",
+    "explanation": "Vertical distance to nearest stream along flow path."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND(c) = z(c) - z(_____).",
+    "correct": "s (nearest stream cell)",
+    "explanation": "s is the nearest downstream stream cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flooding occurs when water depth exceeds _____.",
+    "correct": "HAND",
+    "explanation": "h_w > HAND(c) means inundation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM computes HAND via D-infinity _____ Down.",
+    "correct": "Distance",
+    "explanation": "DinfDistDown tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "US record low (-56.3 C) was at _____ in Logan watershed.",
+    "correct": "Peter Sinks",
+    "explanation": "A karst depression."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus uses _____ identifiers.",
+    "correct": "COMID",
+    "explanation": "Common Identifier for each reach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's gauge network: _____.",
+    "correct": "OVF",
+    "explanation": "Orszagos Vizugyi Foigazgatosag."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus 10 m European DEM: _____.",
+    "correct": "EEA-10",
+    "explanation": "10-meter resolution for EU/EEA."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MPI = _____ Passing Interface.",
+    "correct": "Message",
+    "explanation": "TauDEM's parallelization technology."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Roads on LiDAR maps act as linear _____.",
+    "correct": "barriers",
+    "explanation": "Intercept and redirect downslope flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow algebra uses _____ order processing.",
+    "correct": "topological",
+    "explanation": "From ridgelines to outlets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity collapses to D8 when angle matches a _____ direction.",
+    "correct": "grid",
+    "explanation": "Cardinal or diagonal direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 30 m cell = _____ m2.",
+    "correct": "900",
+    "explanation": "30 * 30 = 900."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TWI is meaningful in Hungary's _____ Hills.",
+    "correct": "Transdanubian",
+    "explanation": "Where topographic gradients drive flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity proportioning: p1 + p2 = _____.",
+    "correct": "1.0",
+    "explanation": "Mass conservation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 slope: S_i = (z_0 - z_i) / _____.",
+    "correct": "d_i",
+    "explanation": "Distance between cell centers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity S_x = slope along edge to _____ neighbor.",
+    "correct": "first",
+    "explanation": "First neighbor of the facet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS operates at _____.",
+    "correct": "ECMWF",
+    "explanation": "European Centre for Medium-Range Weather Forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS extends EFAS to _____ scale.",
+    "correct": "global",
+    "explanation": "Worldwide flood forecasting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "National Water Center is in _____, Alabama.",
+    "correct": "Tuscaloosa",
+    "explanation": "Operates the US National Water Model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 is produced by _____.",
+    "correct": "Lechner Tudaskezpont",
+    "explanation": "Hungary's 5 m DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WhiteboxTools by John Lindsay at U of _____.",
+    "correct": "Guelph",
+    "explanation": "Written in Rust."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity published in journal _____.",
+    "correct": "Water Resources Research",
+    "explanation": "Tarboton 1997."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In flow algebra, _____ rule merges upstream contributions.",
+    "correct": "combination",
+    "explanation": "Summation, minimum, maximum, or custom."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Simple accumulation uses _____ transformation.",
+    "correct": "identity (pass-through)",
+    "explanation": "Values pass unchanged."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In TWI example, slope = _____ degrees gives TWI = 11.87.",
+    "correct": "2",
+    "explanation": "ln(5000/tan(2)) = 11.87."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Accumulation 10-100 = _____ in classification.",
+    "correct": "upper hillslopes",
+    "explanation": "Table 10.4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Dependence function propagates values _____.",
+    "correct": "upstream",
+    "explanation": "From target cell toward contributing cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity worked example: center cell = _____ m.",
+    "correct": "45",
+    "explanation": "Section 10.2.4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND needs DEM, flow directions, and a _____ raster.",
+    "correct": "stream",
+    "explanation": "Three inputs required."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU Water Framework Directive uses _____ Basin Districts.",
+    "correct": "River",
+    "explanation": "Largest management units."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroSHEDS v2 uses _____ DEM.",
+    "correct": "MERIT",
+    "explanation": "Updated from SRTM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tesfa et al. (2011) extracted hydrological _____ measures.",
+    "correct": "proximity",
+    "explanation": "HAND and distance measures."
+  },
+  {
+    "type": "fill_blank",
+    "question": "High-res Teton Pass data from _____.",
+    "correct": "OpenTopography",
+    "explanation": "Public LiDAR repository."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity facet angle: alpha = arctan(_____ / Sx).",
+    "correct": "S_y",
+    "explanation": "Perpendicular slope component."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Accumulation > 1,000,000 = _____ rivers.",
+    "correct": "major",
+    "explanation": "Per Table 10.4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Weighted accumulation in ArcGIS should use _____ point output.",
+    "correct": "floating",
+    "explanation": "Preserves fractional contributions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TOPMODEL TWI controls variable _____ area runoff.",
+    "correct": "source",
+    "explanation": "Where saturation-excess runoff occurs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS binary for South (code 4): _____.",
+    "correct": "00000100",
+    "explanation": "2^2 in 8-bit binary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity Distance Up computes distance from _____.",
+    "correct": "ridgelines",
+    "explanation": "Upslope proximity measures."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Inundation depth = h_w - _____.",
+    "correct": "HAND(c)",
+    "explanation": "Water depth minus HAND value."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Renno et al. (2008) applied HAND in _____.",
+    "correct": "Amazonia",
+    "explanation": "Amazon rainforest mapping."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity measures angles from positive _____ axis.",
+    "correct": "x (east)",
+    "explanation": "Mathematical convention."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM angle grid uses suffix _____.",
+    "correct": "ang",
+    "explanation": "DinfFlowDir output."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS forecasts up to _____ days ahead.",
+    "correct": "15",
+    "explanation": "Medium-range using ECMWF ensemble."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity slope: S = sqrt(Sx^2 + _____^2).",
+    "correct": "Sy",
+    "explanation": "Pythagorean combination."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS NW code: _____.",
+    "correct": "32",
+    "explanation": "2^5 = 32."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM SW code: _____.",
+    "correct": "6",
+    "explanation": "Counterclockwise from east."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Smith and Bretherton (1972): _____ instability theory.",
+    "correct": "form",
+    "explanation": "Explains channel formation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Nobre et al.: HAND as a terrain _____.",
+    "correct": "model",
+    "explanation": "A hydrologically relevant new terrain model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SAGA GIS has a _____ module with flow algorithms.",
+    "correct": "hydrology",
+    "explanation": "Multiple flow-direction algorithms."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM D8 area tool: _____.",
+    "correct": "AreaD8",
+    "explanation": "D8 Contributing Area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Concentration-limited for sparingly _____ compounds.",
+    "correct": "soluble",
+    "explanation": "Like gypsum and calcium carbonate."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow direction raster is a hydrologic _____ of the landscape.",
+    "correct": "index",
+    "explanation": "Compact representation of drainage structure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF data at _____.",
+    "correct": "data.vizugy.hu",
+    "explanation": "Hungarian water management open data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Each D-infinity facet spans _____ degrees.",
+    "correct": "45",
+    "explanation": "360/8 = 45."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM divides DEM into horizontal _____.",
+    "correct": "stripes",
+    "explanation": "For MPI parallel processing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DAG = Directed _____ Graph.",
+    "correct": "Acyclic",
+    "explanation": "No cycles in the flow network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity in WRR volume _____.",
+    "correct": "33",
+    "explanation": "Volume 33, issue 2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hillslope cell TWI (slope=25 deg) approximately _____.",
+    "correct": "6.06",
+    "explanation": "ln(200/tan(25)) = ln(429) = 6.06."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why steepest descent in D8 is not always toward the lowest neighbor. Provide a numerical example.",
+    "correct": "D8 computes slope as elevation drop/distance. Diagonal neighbors are farther (delta*sqrt(2)), so lower neighbors may have gentler slopes. Example: 30 m grid, center=100, east=98 (S=0.0667), NE=97.5 (S=0.0589). Flow goes east despite NE being lower.",
+    "explanation": "Gradient matters more than absolute elevation."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcGIS and TauDEM flow direction encodings.",
+    "correct": "ArcGIS: powers of two clockwise from E. TauDEM: sequential 1-8 counterclockwise from E. Code 2 = SE in ArcGIS, NE in TauDEM. Confusing them gives 90-degree errors, invalidating all downstream analyses.",
+    "explanation": "Always check convention metadata."
+  },
+  {
+    "type": "essay",
+    "question": "Describe D8 limitations and why it remains standard for delineation.",
+    "correct": "Limitations: staircase artifacts, parallel streaks, no divergent flow. Yet D8 creates unambiguous tree structures with one-to-one cell-neighbor routing, ideal for discrete streams and watershed boundaries.",
+    "explanation": "Single-direction routing is a feature for delineation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain D-infinity's geometric principle using triangular facets.",
+    "correct": "Eight facets from center cell and neighbor pairs. A plane through each triangle gives steepest descent at any angle. The facet with greatest slope magnitude wins. Continuous angles eliminate D8 grid artifacts.",
+    "explanation": "Converts discrete grid to continuous slope field."
+  },
+  {
+    "type": "essay",
+    "question": "Describe D-infinity proportioning. Compute fractions for flow angle = 20 degrees.",
+    "correct": "Flow proportioned linearly: p_east = (45-20)/45 = 0.556, p_NE = 20/45 = 0.444. Fractions sum to 1.0 ensuring mass conservation. This produces physically realistic flow dispersion on hillslopes.",
+    "explanation": "Core innovation over D8."
+  },
+  {
+    "type": "essay",
+    "question": "Explain flow accumulation and topological ordering.",
+    "correct": "Each cell's accumulation = 1 + sum of upstream values. Processing from ridgelines to outlets ensures upstream cells are computed first. Out-of-order processing gives wrong values because upstream data is missing.",
+    "explanation": "Topological ordering fundamental to DAG computation."
+  },
+  {
+    "type": "essay",
+    "question": "Why use logarithmic visualization for flow accumulation?",
+    "correct": "Values span 1 to millions. Linear ramp shows only the main river. Log or geometric breaks (10, 100, 1000...) reveal the full hierarchy from ridges to major rivers, each distinguishable.",
+    "explanation": "Essential for quality control."
+  },
+  {
+    "type": "essay",
+    "question": "Explain weighted flow accumulation with two applications.",
+    "correct": "Uses spatially variable weights instead of uniform 1. (1) Precipitation: estimates total volume at each point. (2) Pollutant loading: identifies stream reaches with highest cumulative upstream pollution.",
+    "explanation": "Transforms counting into environmental modeling."
+  },
+  {
+    "type": "essay",
+    "question": "Contrast influence and dependence functions.",
+    "correct": "Influence tracks downslope from source (where does contamination go?). Dependence traces upstream from target (where does my water come from?). Mathematical inverses. Both use D-infinity proportioning for realistic dispersion.",
+    "explanation": "Essential for contamination assessment and source protection."
+  },
+  {
+    "type": "essay",
+    "question": "Describe decay-limited accumulation. Compute surviving fraction after 3000 m, k=0.001.",
+    "correct": "Exponential attenuation: e^(-k*d). After 3000 m: e^(-3) = 0.05, only 5% survives. Naturally weights nearby sources more heavily. Produces contamination risk maps reflecting transport physics.",
+    "explanation": "Reasonable for biodegradable contaminants and pathogens."
+  },
+  {
+    "type": "essay",
+    "question": "Explain transport-capacity-limited accumulation and sediment delivery ratio.",
+    "correct": "T_out = min(supply+in, capacity). Excess deposits. Larger watersheds have more deposition opportunities, so delivery ratio decreases with size. Provides physics-based sediment delivery computation from topography.",
+    "explanation": "Critical for soil conservation and reservoir planning."
+  },
+  {
+    "type": "essay",
+    "question": "What is the flow algebra and why is it powerful?",
+    "correct": "Tarboton and Baker (2008): flow direction, input quantity, combination rule, transport transformation. Separates routing from application-specific rules. New applications just define a new transformation function. Extensible framework.",
+    "explanation": "A programming pattern for terrain-based modeling."
+  },
+  {
+    "type": "essay",
+    "question": "Define specific catchment area and its advantage over total area.",
+    "correct": "a = A/w: area per unit contour width (units: m). A broad slope has large A but low a (flow spread wide). A narrow gully has smaller A but high a (flow concentrated). Better predicts erosion and saturation than total area.",
+    "explanation": "D-infinity produces more accurate a than D8."
+  },
+  {
+    "type": "essay",
+    "question": "Derive TWI and explain high/low values.",
+    "correct": "TWI = ln(a/tan beta). High TWI: large a, small tan beta = flat convergent area prone to saturation. Low TWI: steep ridge, small area, drains quickly. Key TOPMODEL parameter for predicting variable source area runoff.",
+    "explanation": "Connects terrain geometry to hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "Why is TWI problematic on the Great Hungarian Plain?",
+    "correct": "Slopes approach zero, tan beta approaches 0, TWI approaches infinity. TOPMODEL's topographic control assumption fails because groundwater and ET dominate. TWI meaningful in Northern Mountains, Transdanubian Hills, Mecsek.",
+    "explanation": "Model assumptions must match landscape processes."
+  },
+  {
+    "type": "essay",
+    "question": "Define HAND and explain its flood risk advantage over absolute elevation.",
+    "correct": "HAND = z(cell) - z(nearest stream). Two cells at same elevation have different HAND if one is on a high terrace (high HAND, low risk) vs low terrace (low HAND, high risk). Relative height to local drainage is more informative.",
+    "explanation": "HAND captures cell-drainage system relationship."
+  },
+  {
+    "type": "essay",
+    "question": "Describe HAND-based flood mapping and limitations.",
+    "correct": "If water depth > HAND, cell is flooded. Very fast, no hydraulic model needed. Limitations: ignores channel geometry, backwater effects, assumes uniform reach water levels. Good for screening, not engineering design.",
+    "explanation": "Rapid answers when detailed modeling impractical."
+  },
+  {
+    "type": "essay",
+    "question": "Compare four D-infinity proximity measures.",
+    "correct": "Vertical (HAND) for floods; horizontal for travel time; slope distance for erosion; Euclidean for buffers. Together they fully characterize any point's hillslope position.",
+    "explanation": "Transform qualitative description to quantitative measurement."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcGIS Pro and TauDEM.",
+    "correct": "ArcGIS: D8 native, commercial, good visualization. TauDEM: D8+D-infinity, generalized accumulation, MPI parallelism, free/open-source, GeoTIFF. TauDEM has more algorithms and scalability.",
+    "explanation": "Complementary tools."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the DEM-to-drainage pipeline.",
+    "correct": "Conditioned DEM -> D8 flow directions -> flow accumulation -> stream definition -> D-infinity specific catchment area -> TWI -> HAND. Each depends on previous; errors propagate.",
+    "explanation": "Integrated workflow requiring quality control."
+  },
+  {
+    "type": "essay",
+    "question": "Role of hydrologic conditioning in flow analysis.",
+    "correct": "Fills sinks and resolves flats ensuring every cell drains to the edge. Without it: undefined directions in depressions, infinite loops in accumulation, disconnected streams.",
+    "explanation": "Foundation of all DEM-based hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "How does LiDAR resolution reveal hidden features?",
+    "correct": "Sub-meter data shows trails (compacted surfaces channel flow), roads (barriers with culvert discharge), and micro-features (rills, tree falls). Invisible at 10-30 m. Transforms flow accumulation into landscape-scale diagnostic.",
+    "explanation": "Reveals hydrologic microstructure."
+  },
+  {
+    "type": "essay",
+    "question": "Why is D-infinity TWI more realistic than D8?",
+    "correct": "D8 streak artifacts propagate to TWI creating false wet/dry patterns. D-infinity smooth contributing area yields physically meaningful TWI. D8 TWI biases model predictions.",
+    "explanation": "Model accuracy depends on input quality."
+  },
+  {
+    "type": "essay",
+    "question": "Describe national/continental HAND implementations.",
+    "correct": "US: 10 m DEMs + NHDPlus for continental coverage. Europe: EFAS+GloFAS forecasts couple with HAND. Hungary: DDM-5 or Copernicus + OVF network. HAND's simplicity enables continental-scale flood mapping.",
+    "explanation": "Computational efficiency enables operational use."
+  },
+  {
+    "type": "essay",
+    "question": "Compare NWM and EFAS catchment use.",
+    "correct": "NWM: 2.7M NHDPlus reaches, hourly, HRRR+Noah-MP, deterministic. EFAS: LISFLOOD at 5 km, 51-member ensemble, 15-day range. Both build on DEM-derived catchments at different resolutions and uncertainty approaches.",
+    "explanation": "Same concepts, different implementations."
+  },
+  {
+    "type": "essay",
+    "question": "Physical basis for specific catchment area in erosion.",
+    "correct": "Erosion depends on flow per unit width. Broad slope: A=10000, w=100, a=100 (low erosion). Narrow gully: A=5000, w=10, a=500 (high erosion). Total area wrongly ranks broad slope higher.",
+    "explanation": "Specific area is the correct erosion variable."
+  },
+  {
+    "type": "essay",
+    "question": "How does flow algebra handle transport transformations?",
+    "correct": "Separates routing (D-infinity in topological order) from transformation. Examples: identity for accumulation, exponential decay for contaminants, capacity limiting for sediment. Same framework, different FA functions.",
+    "explanation": "Modular design enables extensibility."
+  },
+  {
+    "type": "essay",
+    "question": "Why is GRASS GIS good for large DEMs?",
+    "correct": "Segmented processing: DEM divided into pieces processed without loading all into memory. Enables continental-scale processing on machines with limited RAM.",
+    "explanation": "Memory efficiency critical for global processing."
+  },
+  {
+    "type": "essay",
+    "question": "Compare NHDPlus, EU-Hydro, HydroSHEDS, OVF.",
+    "correct": "NHDPlus: 2.7M US reaches/COMID. EU-Hydro: pan-European/Copernicus. HydroSHEDS: global/SRTM/HYRIV_ID. OVF: Hungary field-survey-based, most authoritative locally. Different scales and purposes.",
+    "explanation": "Choice depends on scope and precision needs."
+  },
+  {
+    "type": "essay",
+    "question": "Why must flow direction be loop-free?",
+    "correct": "Loops cause infinite accumulation. DAG property ensures paths terminate at boundary. Conditioning guarantees this (downhill flow). DAG also provides topological ordering for efficient computation.",
+    "explanation": "Fundamental to correctness and efficiency."
+  },
+  {
+    "type": "essay",
+    "question": "Flow accumulation as a stream ranking system.",
+    "correct": "Accumulation proxies stream size: correlates with discharge, width. Underlies Strahler ordering. Additive property at confluences enables consistency checks. Provides objective, continuous ranking independent of naming.",
+    "explanation": "Both ranking and quality check tool."
+  },
+  {
+    "type": "essay",
+    "question": "Threshold effect on hillslope vs channel processes.",
+    "correct": "Low T: many streams, short hillslopes, fast channel arrival, overestimated peaks. High T: few streams, long hillslopes, slow travel, attenuated peaks. Must match physical channelization point.",
+    "explanation": "Modeling decision affecting predictions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe concentration-limited accumulation.",
+    "correct": "Caps each source at solubility limit. Downstream dilution reduces concentration. Example: gypsum dissolving up to solubility, diluted by clean lateral inflow. Requires tracking mass and volume.",
+    "explanation": "For solubility-limited substances."
+  },
+  {
+    "type": "essay",
+    "question": "Why is D-infinity essential for the influence function?",
+    "correct": "D-infinity distributes flow representing dispersive hillslope transport. Contaminant spreads before converging in channels. D8 traces a single unrealistic line. D-infinity better predicts affected areas.",
+    "explanation": "Proportioning most valuable in hillslope zone."
+  },
+  {
+    "type": "essay",
+    "question": "How do reach identifiers enable data integration?",
+    "correct": "COMID/HYRIV_ID link terrain products to gauge data, water quality, model outputs. Any cell connects to its reach and through ID to measured/forecast values. Enables cross-source data fusion.",
+    "explanation": "Backbone of operational hydrologic data systems."
+  },
+  {
+    "type": "essay",
+    "question": "Describe retention-limited runoff accumulation.",
+    "correct": "Subtracts local retention capacity at each cell. If run-on exceeds retention, excess continues. Models infiltration-limited runoff depending on rainfall and soil properties along path.",
+    "explanation": "Extends flow algebra to Hortonian processes."
+  },
+  {
+    "type": "essay",
+    "question": "Why prefer Copernicus EEA-10 over SRTM for Hungary?",
+    "correct": "10 m vs 30 m resolution captures finer topographic detail. Better represents small valleys in Northern Mountains. Addresses SRTM vegetation canopy issues.",
+    "explanation": "Resolution directly affects derived product accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "TauDEM vs ArcGIS accumulation convention implications.",
+    "correct": "TauDEM: ridgeline=1. ArcGIS: ridgeline=0. Matters for small thresholds: T=100 captures different numbers of contributors. Always verify convention before calibrating thresholds.",
+    "explanation": "Significant near channel heads."
+  },
+  {
+    "type": "essay",
+    "question": "Cosine correction for geographic coordinate DEMs.",
+    "correct": "E-W distance = delta * cos(latitude). At 47.5 deg, 1 arcsec = 31 m N-S but 21 m E-W. Cell is rectangular. Affects slope, area, distance. Project to metric coordinates before processing.",
+    "explanation": "Practical issue for all large-scale processing."
+  },
+  {
+    "type": "essay",
+    "question": "D8 vs D-infinity for TWI.",
+    "correct": "D8 streaks create false TWI patterns. D-infinity yields smooth, meaningful TWI. Using D8 TWI in models creates artifact-based wet/dry predictions. D-infinity strongly recommended for TWI.",
+    "explanation": "Direct consequences for parameterization quality."
+  },
+  {
+    "type": "essay",
+    "question": "When would HAND-based flood mapping fail?",
+    "correct": "Backwater effects, braided rivers, levees, urban storm sewers, variable water depths along reaches. HAND is a screening tool, not replacement for detailed hydraulic modeling in complex situations.",
+    "explanation": "Know limitations for appropriate application."
+  },
+  {
+    "type": "essay",
+    "question": "How TauDEM MPI enables continental analysis.",
+    "correct": "Divides DEM into horizontal stripes on separate cores, exchanging boundary info. 32 cores proportionally reduce time. Makes national HAND computation feasible for billion-cell DEMs.",
+    "explanation": "Essential for operational products."
+  },
+  {
+    "type": "essay",
+    "question": "Flow direction raster as hydrologic index.",
+    "correct": "Encodes complete drainage: every stream, ridge, confluence. Supports unlimited queries without reprocessing: any watershed, path, distance, loading. Compact, reusable representation.",
+    "explanation": "Most fundamental derived DEM product."
+  },
+  {
+    "type": "essay",
+    "question": "Flat area treatment in flow direction.",
+    "correct": "No gradient means undefined D8 direction. Conditioning imposes gradients toward outlets. Without: gaps in accumulation, disconnected streams, incomplete watersheds.",
+    "explanation": "Prerequisite to all flow direction algorithms."
+  },
+  {
+    "type": "essay",
+    "question": "ArcGIS sqrt(2) approximation significance.",
+    "correct": "Flow direction ranking preserved (same relative order). But absolute diagonal slopes are 1.06x overestimated (1.5/1.414). Matters for TWI and erosion. Not for basic routing.",
+    "explanation": "Known detail for quantitative slope analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Compare D8, D-infinity, and MFD algorithms.",
+    "correct": "D8: 1 neighbor, no dispersion, clean trees. D-infinity: 2 neighbors proportionally, partial dispersion. MFD: all downslope, maximum dispersion. D-infinity balances realism and structure.",
+    "explanation": "Algorithm selection depends on application."
+  },
+  {
+    "type": "essay",
+    "question": "Why isn't D-infinity used for watershed delineation?",
+    "correct": "Proportioning creates many-to-many relationships. Cells send flow to multiple reaches, preventing unique watershed assignment. D8 assigns each cell to one basin. D-infinity for continuous variables, D8 for discrete classification.",
+    "explanation": "Complementary algorithms."
+  },
+  {
+    "type": "essay",
+    "question": "Steps to compute HAND for a new watershed.",
+    "correct": "Obtain/project DEM, fill sinks, compute D-infinity flow directions, D8 accumulation, define streams by threshold, run D-infinity Distance Down (vertical). Verify HAND=0 on streams, increasing away.",
+    "explanation": "Full terrain processing chain required."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the tree structure of D8 networks and its computational benefits.",
+    "correct": "Each cell has one outgoing edge, creating a tree rooted at each outlet. No branches diverge. This enables unambiguous path tracing, efficient topological ordering, and clean decomposition into stream segments and sub-watersheds.",
+    "explanation": "Tree structure is both mathematically elegant and computationally efficient."
+  },
+  {
+    "type": "essay",
+    "question": "How does D-infinity handle cells where all facets produce negative slopes?",
+    "correct": "If all facets have negative slopes, the cell is a local minimum (pit). This means DEM conditioning from Chapter 9 has failed, and the DEM needs to be revisited. Proper conditioning should eliminate all such cells.",
+    "explanation": "Negative slopes on all facets indicate an unconditioned DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "Which software does NOT have native parallel processing for flow direction computation?",
+    "options": [
+      "A) TauDEM",
+      "B) ArcGIS Pro",
+      "C) WhiteboxTools (multi-threaded)",
+      "D) Both B and C have limited parallelism"
+    ],
+    "correct": "B",
+    "explanation": "ArcGIS Pro has limited parallel processing compared to TauDEM's MPI and WhiteboxTools' multi-threading."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus GLO-30 DEM is freely available for:",
+    "options": [
+      "A) EU countries only",
+      "B) The entire globe",
+      "C) North America only",
+      "D) Paying subscribers only"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus GLO-30 provides free global DEM coverage at 30-meter resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "The flow algebra downstream direction supports the influence function and simple accumulation.",
+    "correct": true,
+    "explanation": "Both influence and simple accumulation traverse downstream, accumulating values from ridgelines to outlets."
+  },
+  {
+    "type": "true_false",
+    "question": "The ArcGIS encoding for Southwest is 8.",
+    "correct": true,
+    "explanation": "In Esri encoding: E=1, SE=2, S=4, SW=8 (2^3), proceeding clockwise."
+  },
+  {
+    "type": "true_false",
+    "question": "For a conditioned DEM, every cell's flow accumulation is at least 0 in ArcGIS convention.",
+    "correct": true,
+    "explanation": "In ArcGIS convention, the minimum accumulation is 0 (ridgeline cells with no upstream contributors)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcGIS flow direction code for Southeast is _____.",
+    "correct": "2",
+    "explanation": "SE = 2^1 = 2 in the Esri power-of-two clockwise encoding."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D-infinity algorithm was published by David Tarboton at _____ State University.",
+    "correct": "Utah",
+    "explanation": "TauDEM and D-infinity were developed at Utah State University."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cell with HAND = 0 is located on a _____ cell.",
+    "correct": "stream",
+    "explanation": "Stream cells are the reference for HAND; their elevation minus their own elevation is zero."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The USGS gauge network system is called _____.",
+    "correct": "NWIS (National Water Information System)",
+    "explanation": "NWIS provides real-time streamflow data from approximately 7,000 stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the flow algebra, the _____ transformation converts the quantity as it moves between cells.",
+    "correct": "transport",
+    "explanation": "The transport transformation applies decay, capacity limits, or passes values unchanged."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how D-infinity eliminates the parallel flow streak artifact that D8 produces on planar surfaces.",
+    "correct": "On a planar surface, D8 assigns identical integer codes to all cells, creating parallel bands of flow. D-infinity computes a continuous angle based on each cell's facet geometry. Even on a uniform slope, slight variations produce slightly different angles, distributing flow smoothly rather than concentrating it in artificial bands. The proportioning between two neighbors ensures smooth transitions.",
+    "explanation": "This is one of D-infinity's key practical advantages over D8."
+  },
+  {
+    "type": "essay",
+    "question": "Describe a practical scenario for using the weighted flow accumulation with an imperviousness raster.",
+    "correct": "Setting w(c) to the imperviousness fraction (0 to 1) of each cell, weighted accumulation produces a map of effective impervious contributing area for each stream reach. This identifies reaches receiving the most urban runoff, which is critical for stormwater management and water quality assessment. High values indicate reaches where peak flows and pollutant concentrations will be greatest.",
+    "explanation": "Urban stormwater modeling depends on effective impervious area as a key parameter."
+  },
+  {
+    "type": "essay",
+    "question": "Why must flow accumulation output be set to floating point when using D-infinity routing with weights?",
+    "correct": "D-infinity proportions flow between two neighbors using non-integer fractions (e.g., 0.727 and 0.273). When combined with weighted inputs, the accumulated values are inherently non-integer. Integer output truncates these fractional contributions, losing accuracy. Floating-point output preserves the full precision of proportioned accumulation, which is essential for physically meaningful results.",
+    "explanation": "This is a common practical mistake that produces subtly incorrect results."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the topological ordering of cells enables efficient parallel processing in TauDEM.",
+    "correct": "Topological ordering means cells are processed from ridgelines to outlets, ensuring upstream cells are done before downstream ones. TauDEM divides the DEM into horizontal stripes, each assigned to a CPU core via MPI. Within each stripe, cells process in order. Boundary cells exchange information between stripes across iterations. This domain decomposition achieves near-linear speedup with the number of cores.",
+    "explanation": "Parallel processing is what makes TauDEM practical for continental-scale DEMs."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HAND values differ between D8 and D-infinity computation, and which is preferred.",
+    "correct": "D8 traces a single deterministic path from each cell to the nearest stream, producing a single HAND value. D-infinity traces proportioned paths through two neighbors, computing HAND as a weighted average over multiple flow paths. D-infinity HAND is smoother, especially near ridgelines where a cell may drain to different streams. D-infinity is preferred because it reduces sensitivity to small DEM errors.",
+    "explanation": "D-infinity smoothing reduces artifacts at drainage divides."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how flow accumulation at confluences provides a quality check for DEM conditioning.",
+    "correct": "At a confluence, the downstream cell's accumulation should approximately equal the sum of the two tributary accumulations plus 1. If the value deviates significantly, it indicates a flow direction error—perhaps an unfilled sink is capturing flow, or a flat area resolution is routing cells incorrectly. This additive property check can be applied at every junction to identify localized problems in the conditioned DEM.",
+    "explanation": "The additive property is a powerful diagnostic tool."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the suitability of HAND-based flood mapping in mountainous terrain versus flat alluvial plains.",
+    "correct": "In mountains, HAND works well because streams are deeply incised and the vertical distance to the channel changes rapidly with distance—clear separation between flood-prone and safe areas. On flat plains, HAND values change slowly, so small errors in stream elevation produce large inundation extent errors. Additionally, flat terrain may have poorly defined flow paths, making the nearest stream assignment uncertain. HAND is most reliable in well-defined terrain.",
+    "explanation": "Understanding terrain context is essential for interpreting HAND accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of HAND in the US National Water Model's flood inundation mapping capability.",
+    "correct": "The NWM produces discharge forecasts for every NHDPlus reach. These discharges are converted to water depths using synthetic rating curves (relating discharge to depth). HAND, pre-computed for the continental US at 10 m resolution, then maps these depths to inundation extents: cells with HAND less than the forecasted depth are flooded. This creates real-time national flood maps without running hydraulic models for each reach.",
+    "explanation": "HAND is the bridge between the NWM's flow forecasts and spatial flood mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the choice between D8 and D-infinity affects the accuracy of contaminant source area delineation.",
+    "correct": "D8 traces a single line from source to outlet, implying contamination follows one narrow path. D-infinity distributes contamination across the hillslope proportionally, showing a realistic spreading pattern. For source area delineation (dependence function), D8 identifies a narrow strip of contributing cells while D-infinity identifies a broader zone with fractional contributions—more accurately representing how many locations partially contribute to a target.",
+    "explanation": "D-infinity is essential for realistic contamination analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the grid network as a 'forest' and how this relates to multi-outlet DEMs.",
+    "correct": "A D8 grid network where every cell has one outgoing edge forms a forest—a collection of trees, each rooted at an outlet on the domain boundary. If the DEM has multiple outlets (e.g., a continental DEM with many river mouths), each outlet roots a separate tree. The forest structure means the domain naturally partitions into independent drainage trees that can be analyzed separately or together.",
+    "explanation": "The forest structure enables efficient decomposition of large-scale drainage analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Esri power-of-two encoding theoretically supports multiple flow directions, even though D8 uses only one.",
+    "correct": "Each Esri code occupies one bit in an 8-bit byte. D8 sets only one bit (one direction). But combining codes via bitwise OR could encode multiple directions: value 3 (binary 00000011) would mean both East and Southeast. This encoding was designed with multi-direction extensibility in mind, though standard D8 never uses this feature. Some experimental algorithms have exploited this capability.",
+    "explanation": "The encoding is more flexible than D8 requires."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why HAND is more useful than TWI for operational flood forecasting.",
+    "correct": "TWI identifies saturation-prone areas but doesn't directly translate to flood depth or extent for a given water level. HAND directly links stream water depth to inundation: if depth > HAND, the cell floods. This makes HAND directly usable with real-time water level forecasts from systems like the NWM or EFAS. TWI is better for predicting where runoff generation occurs; HAND is better for predicting where floodwater goes.",
+    "explanation": "HAND's direct physical interpretation makes it operationally practical."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the relative advantages of free open-source software (TauDEM, WhiteboxTools, GRASS) versus commercial ArcGIS for flow analysis.",
+    "correct": "Open source: free, transparent algorithms, runs on Linux/cloud, no license management, reproducible science. Commercial: integrated visualization, enterprise data management, professional support, industry standard. In practice: TauDEM has the best D-infinity implementation and parallelism; WhiteboxTools has the widest algorithm selection; ArcGIS has the best user interface. Many professionals use both.",
+    "explanation": "The choice involves technical, financial, and institutional considerations."
+  },
+  {
+    "type": "essay",
+    "question": "How does the flow accumulation threshold interact with DEM resolution for stream definition?",
+    "correct": "A threshold in cell counts corresponds to different physical areas at different resolutions. T=1000 on a 30 m grid = 0.9 km2; on a 10 m grid = 0.1 km2. Higher resolution DEMs reveal finer drainage features, so the same physical drainage density requires a higher cell-count threshold. When comparing analyses across resolutions, express thresholds in area units rather than cell counts.",
+    "explanation": "Resolution-dependence of thresholds is a key practical consideration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why D-infinity contributing area maps are preferred for use in TOPMODEL and similar distributed models.",
+    "correct": "TOPMODEL uses the topographic wetness index (TWI = ln(a/tan beta)) to distribute runoff generation. TWI depends on specific catchment area, which is directly from contributing area divided by contour width. D8 creates streak artifacts that propagate to TWI, producing artificial spatial patterns. D-infinity yields smooth, realistic contributing area, so D-infinity TWI better represents the true spatial distribution of saturation-excess runoff.",
+    "explanation": "Model parameterization quality depends directly on input data quality."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the slope-area relationship and how it relates to the channel initiation threshold.",
+    "correct": "In established channels, slope S decreases as a power function of area A: S proportional to A^(-theta), with theta approximately 0.5. On a log-log plot, this appears as a negative slope. At small contributing areas, the relationship breaks down at the transition from convex hillslopes to concave channels. The inflection point identifies the channelization threshold—the area where dispersed hillslope flow transitions to concentrated channel flow.",
+    "explanation": "This geomorphologic observation provides physical justification for the stream definition threshold."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how artificial drainage channels on the Great Hungarian Plain challenge DEM-based flow routing.",
+    "correct": "Artificial channels (csatornak) were excavated into flat terrain over centuries to drain marshes. They don't follow natural topographic gradients, so DEM-based flow routing cannot detect them. Water flows in these channels due to engineered grades invisible in the DEM. Including them requires either burning the OVF network into the DEM or accepting that DEM-derived networks show pre-modification drainage.",
+    "explanation": "Engineered landscapes require supplemental data beyond DEMs."
+  },
+  {
+    "type": "essay",
+    "question": "Compare how EFAS and the US National Water Model handle forecast uncertainty.",
+    "correct": "EFAS uses ensemble forecasting with 51 ECMWF members, each producing different weather scenarios propagated through LISFLOOD. The spread indicates uncertainty. The NWM is primarily deterministic, using the single HRRR forecast. EFAS provides probabilistic flood alerts (e.g., '45 of 51 members predict flooding'). The NWM supplements with medium-range forecasts but lacks the explicit uncertainty quantification of EFAS's approach.",
+    "explanation": "Different approaches to uncertainty have implications for decision-making."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete set of attributes that a TauDEM-derived stream network carries.",
+    "correct": "Each stream link includes: unique grid code, Strahler order, upstream/downstream link IDs, contributing area at downstream end, stream drop (elevation change), slope, link length, distance to outlet. These enable network traversal (trace up/downstream), hydrologic parameterization (routing needs length, slope, area), and quality checks (Horton ratios, additive area at confluences).",
+    "explanation": "These attributes are the starting point for all hydrologic modeling built on the network."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a 'directed acyclic graph' in the context of flow direction and why loops are impossible on a properly conditioned DEM.",
+    "correct": "A DAG has edges pointing in one direction with no cycles. On a conditioned DEM, every cell flows downhill (to a lower elevation), so following flow directions always decreases elevation. Since elevation strictly decreases along any path, no path can return to its starting cell—a cycle would require going both downhill and uphill. Filling sinks removes depressions where equal-elevation cells might form loops.",
+    "explanation": "The DAG property is guaranteed by the monotonic decrease of elevation along flow paths."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical significance of reach identifiers like COMID for water resources management.",
+    "correct": "COMID provides a universal spatial reference linking diverse datasets: gauge measurements, water quality samples, model forecasts, regulatory limits, and infrastructure data all reference the same reach. Without it, integrating data requires manual spatial matching. NHDPlus COMID enables the NWM to provide forecasts at 2.7 million locations, EPA to assess water quality by reach, and FEMA to map flood risk—all using a common framework.",
+    "explanation": "Identifier systems are the foundation of data interoperability in water management."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the D-infinity Distance Down tool can compute both HAND and horizontal distance simultaneously.",
+    "correct": "D-infinity Distance Down traces each cell's flow path to the nearest stream and can compute multiple distance metrics along the same path. Vertical distance (HAND) subtracts stream elevation from cell elevation. Horizontal distance projects the flow path onto the horizontal plane. Slope distance measures actual path length along the surface. All use the same D-infinity proportioned routing, computed efficiently in one pass.",
+    "explanation": "Computing multiple proximity measures simultaneously is efficient because they share the same path tracing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Pannonian Basin's flat terrain affects the reliability of flow direction computation.",
+    "correct": "On the Great Hungarian Plain, elevation differences between adjacent cells may be within DEM noise (centimeters on a terrain varying by meters over kilometers). This means flow direction assignment is essentially random in many areas—slight DEM errors redirect flow across flat terrain. Stream burning from OVF data is essential to force realistic drainage. Without it, DEM-derived networks may follow paths with no physical basis.",
+    "explanation": "Flat terrain fundamentally limits the reliability of DEM-based flow routing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between HAND and the hydrogeomorphic classification of floodplain types.",
+    "correct": "HAND values naturally partition the landscape into hydrogeomorphic zones. Cells with HAND = 0 are in the active channel. Low HAND (< 2-3 m) indicates the active floodplain frequently inundated. Moderate HAND indicates terraces occasionally flooded. High HAND indicates upland never flooded. This zonation matches geomorphic classifications based on flood frequency and provides a rapid, DEM-based alternative to detailed floodplain mapping.",
+    "explanation": "HAND provides a quantitative basis for geomorphic classification."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the advantages and limitations of pre-computed global watershed datasets like HydroSHEDS versus local DEM processing.",
+    "correct": "HydroSHEDS advantages: instant availability, global consistency, no processing needed, validated. Limitations: fixed resolution (originally 90 m, now 30 m with MERIT), no control over parameters, may miss local features. Local processing advantages: use highest-resolution DEM, control thresholds and conditioning, include local knowledge (stream burning). For data-sparse regions, HydroSHEDS is invaluable; for detailed studies, local processing is superior.",
+    "explanation": "The choice depends on the application's precision requirements and data availability."
+  },
+  {
+    "type": "essay",
+    "question": "How does the grid cell size affect the interpretation of flow accumulation thresholds for stream definition?",
+    "correct": "A threshold of T cells represents T times cell area in physical terms. On a 30 m grid, T=1000 = 0.9 km2. On a 10 m grid, T=1000 = 0.1 km2, a much finer network. When comparing results across resolutions, use area-based thresholds. Also, finer grids resolve smaller terrain features, potentially detecting channels invisible at coarser resolution. The appropriate cell-count threshold increases with resolution for equivalent physical drainage density.",
+    "explanation": "Resolution must be considered when setting and comparing thresholds."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND concept can be extended from flood mapping to ecological habitat classification.",
+    "correct": "HAND values partition the landscape into zones with distinct hydrological characteristics: permanently wet (HAND = 0, stream), frequently wet (low HAND, riparian zone), occasionally wet (moderate HAND), and upland (high HAND). These zones correspond to distinct ecological habitats with different moisture regimes, vegetation communities, and soil types. HAND-based classification provides a rapid, DEM-derived proxy for ecological zonation in riparian corridors.",
+    "explanation": "HAND's hydrological relevance extends naturally to ecology through the moisture gradient."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how EFAS ensemble forecasting provides actionable information for flood emergency response.",
+    "correct": "EFAS runs 51 weather scenarios through LISFLOOD. If 40+ members predict flooding, confidence is very high and full emergency response is warranted. If 15-20 members predict flooding, the risk is moderate and preparedness measures should begin. If fewer than 10, the risk is low. This probabilistic framing lets decision-makers calibrate their response to the level of certainty, rather than relying on a single deterministic forecast that is either right or wrong.",
+    "explanation": "Probabilistic forecasting supports risk-based decision-making."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a synthetic rating curve and how it connects HAND to discharge-based flood forecasting.",
+    "correct": "A synthetic rating curve relates discharge to water depth at a stream cross-section without field measurements. Using HAND, the cross-section geometry can be estimated from the DEM: the number of cells at each HAND value around a reach defines the channel and floodplain geometry. Hydraulic formulas (Manning's equation) then relate depth to discharge. This converts NWM discharge forecasts to water depths, which HAND maps to spatial inundation.",
+    "explanation": "Synthetic rating curves bridge the gap between modeled discharge and spatial flood mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the choice of DEM (DDM-5, EEA-10, GLO-30) affects watershed delineation results in Hungary.",
+    "correct": "DDM-5 (5 m) captures the finest terrain detail, including small channels in the Northern Mountains, but requires licensing. EEA-10 (10 m) is free and provides good detail for most applications. GLO-30 (30 m) is free globally but misses small features and has larger boundary uncertainties. In mountainous terrain, all three agree closely. On the Great Plain, higher resolution provides marginally better results, but all require stream burning due to flat terrain.",
+    "explanation": "The practical DEM choice balances resolution, cost, and coverage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the snap raster environment setting in multi-step hydrologic processing.",
+    "correct": "The snap raster ensures all output rasters share exactly the same cell grid alignment. Without it, successive operations may produce rasters shifted by fractions of a cell, causing misalignment when combining flow direction with flow accumulation or stream definition. Even sub-cell misalignment can cause catastrophic errors: a stream cell in one raster may not align with the corresponding flow direction cell, breaking the drainage network.",
+    "explanation": "Grid alignment is a subtle but critical requirement for raster-based hydrologic processing."
+  },
+  {
+    "type": "essay",
+    "question": "Compare how the sediment delivery ratio concept applies in the Bukk Mountains versus the Great Hungarian Plain.",
+    "correct": "In the Bukk Mountains, steep terrain creates high transport capacity, so eroded material travels far—delivery ratio is relatively high. On the Great Plain, gentle slopes limit transport capacity, causing frequent deposition—delivery ratio is low. The transport-capacity-limited accumulation function captures this: steep cells have high capacity allowing more throughput, flat cells deposit excess sediment. The same framework produces physically distinct results in different terrain.",
+    "explanation": "The flow algebra adapts to terrain characteristics through the local capacity function."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how TauDEM's naming conventions for output files help organize complex terrain processing workflows.",
+    "correct": "TauDEM uses systematic suffixes: fel (filled), p (D8 direction), sd8 (D8 slope), ang (D-infinity angle), slp (D-infinity slope), ad8 (D8 area), ssa (specific area), src (stream), w (watershed). Given a base name like 'zagyva', all outputs are zagyva_fel.tif, zagyva_p.tif, etc. This convention makes file management self-documenting and reduces errors when scripts reference intermediate products.",
+    "explanation": "Consistent naming conventions are essential for managing multi-step processing workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of the one-cell difference between TauDEM and ArcGIS flow accumulation for research reproducibility.",
+    "correct": "A study using T=100 in TauDEM (ridgeline=1) captures cells with 99+ upstream contributors. The same T=100 in ArcGIS (ridgeline=0) captures cells with 100+ contributors. This difference affects stream network density, drainage density calculations, and Horton ratios. Published studies must specify which convention was used for reproducibility. When comparing results across software, the threshold must be adjusted by one.",
+    "explanation": "Software conventions must be documented for reproducibility."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the D-infinity algorithm handles the boundary between two facets when the flow angle is exactly at 45 degrees.",
+    "correct": "When the flow angle is exactly at 45 degrees (or any multiple of 45), it falls precisely on a grid direction rather than between two directions. All flow goes to the single neighbor at that direction—the proportioning fraction is 1.0 for that neighbor and 0.0 for the adjacent one. D-infinity collapses to D8 for this cell. This is not an edge case error but a natural behavior that maintains consistency with D8 when terrain strongly favors a grid direction.",
+    "explanation": "The boundary condition is handled gracefully by the proportioning formula."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the roles of the DEM, flow direction raster, and flow accumulation raster in the hydrologic information system.",
+    "correct": "The DEM provides raw elevation data. Flow direction transforms it into a drainage network structure (which way water flows). Flow accumulation quantifies drainage (how much area drains through each point). Together: DEM is the base layer, flow direction is the topology layer, and flow accumulation is the quantification layer. All subsequent products—streams, watersheds, TWI, HAND—derive from these three foundational layers.",
+    "explanation": "These three layers form the minimal information system for DEM-based hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how climate change might affect the validity of HAND-based flood mapping.",
+    "correct": "HAND itself is terrain-based and does not change with climate. However, climate change alters flood magnitudes and frequencies, meaning the water depths used with HAND must be updated. A 100-year flood depth of 3 m today might become a 50-year depth tomorrow. HAND maps remain valid as the 'exposure surface' but the 'hazard input' (forecast or design depths) must reflect changing climate. Additionally, if channels incise or aggrade due to changed sediment regimes, HAND values themselves may change.",
+    "explanation": "HAND is a static terrain property; the dynamic flood inputs must account for climate change."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the constant stream drop property (used in the stream drop test of Chapter 11) is related to flow accumulation thresholds.",
+    "correct": "The constant drop property states that mean stream drop is approximately equal across Strahler orders in a natural network. When the threshold is set too low, 'first-order streams' include hillslope segments with smaller drops than real channels. This violation of the constant drop property is detected by the t-test. Flow accumulation threshold directly determines which cells are classified as streams, so the threshold controls whether the constant drop property holds.",
+    "explanation": "The stream drop test provides an objective criterion for choosing the accumulation threshold."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how flow accumulation can be used to estimate mean annual discharge at ungauged locations.",
+    "correct": "Flow accumulation gives drainage area at every cell. Combined with mean annual runoff depth (from climate data or regional regression), discharge can be estimated as Q = area * runoff_depth. Weighted accumulation using spatially variable precipitation provides a better estimate by accounting for spatial rainfall variation. This gives discharge estimates at any point in the network, not just gauged locations—essential for water resources planning in data-sparse regions.",
+    "explanation": "Flow accumulation converts area-based hydrologic estimates to discharge at any network point."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the D-infinity slope grid differs from the D8 slope grid and when each is appropriate.",
+    "correct": "D8 slope is computed in the direction of steepest descent to one of 8 neighbors—it is the maximum slope in a discrete direction. D-infinity slope is the magnitude of the gradient on the steepest triangular facet, which may not align with any grid direction. D-infinity slope is generally more accurate because it captures the true gradient direction. D8 slope is appropriate when a discrete direction is needed; D-infinity slope is better for quantitative slope analysis.",
+    "explanation": "The slope grids differ because they measure gradients in different ways."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how HAND-based flood mapping could be integrated with real-time sensor data in a smart water management system.",
+    "correct": "Real-time water level sensors on stream gauges transmit current depths. These depths are compared to pre-computed HAND maps to instantly identify which areas are currently flooded and which are threatened. As levels rise, the system progressively identifies newly flooded zones. Combined with IoT sensors for precipitation and soil moisture, the system provides continuous, spatially explicit flood monitoring without running computational models in real-time.",
+    "explanation": "Pre-computed HAND enables real-time spatial flood monitoring with minimal computation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the TauDEM Band encoding follows the mathematical angle convention rather than the compass convention.",
+    "correct": "TauDEM was designed for mathematical terrain analysis where angles are naturally measured counterclockwise from the positive x-axis (east). D-infinity flow angles use this same convention (0 to 2pi counterclockwise from east). Making the D8 encoding match this convention (sequential integers counterclockwise from east) ensures consistency between D8 and D-infinity products. The compass convention (clockwise from north) would require conversion when combining D8 and D-infinity results.",
+    "explanation": "Internal consistency between D8 and D-infinity encoding simplifies combined analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the dependence function can be used for source water protection area delineation.",
+    "correct": "For a municipal water intake, the dependence function traces upstream, assigning each cell a value representing the fraction of its flow reaching the intake. Cells with high dependence (close to 1.0) contribute most of their water to the intake and require strict protection. Cells with moderate dependence contribute partially and need moderate protection. Cells with zero dependence don't contribute at all. This creates scientifically-based, graduated protection zones.",
+    "explanation": "The dependence function provides a physically based alternative to simple buffer zones."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the computational requirements of D8 versus D-infinity flow direction computation.",
+    "correct": "D8 evaluates 8 slope values per cell and selects the maximum—a simple comparison operation. D-infinity evaluates 8 triangular facets, fitting a plane to each (requiring slope component computation and angle calculation), checking angular bounds, and selecting the steepest. D-infinity is approximately 3-5 times more computationally expensive per cell. For large DEMs, this difference is significant, though both are parallelizable. D8's simplicity contributes to its continued dominance.",
+    "explanation": "The computational cost difference is one reason D8 remains the default in many workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the combination of HAND with land use data can improve flood damage estimation.",
+    "correct": "HAND determines which areas flood at a given water depth. Land use data identifies what is in those areas: residential buildings, agricultural land, industrial facilities, infrastructure. Combining HAND-based inundation maps with land use classification and asset value databases enables rapid damage estimation: total damage = sum over flooded cells of (asset value * damage function(inundation depth)). This is far faster than running hydraulic models and sufficient for planning-level risk assessment.",
+    "explanation": "HAND provides the spatial flooding extent; land use provides the exposure and vulnerability."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the historical development from D8 (1984) through D-infinity (1997) to the flow algebra (2008).",
+    "correct": "D8 (O'Callaghan and Mark, 1984) provided the foundational single-direction flow routing. D-infinity (Tarboton, 1997) addressed D8's limitations with continuous angle proportioning. The flow algebra (Tarboton and Baker, 2008) generalized both into a unified computational framework. This progression shows increasing abstraction: from a specific algorithm to a family of algorithms to a general framework. Each step broadened the range of problems solvable with terrain-based flow analysis.",
+    "explanation": "This progression illustrates how scientific computing evolves from specific solutions to general frameworks."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the GloFAS system serves regions with limited national hydrological infrastructure.",
+    "correct": "GloFAS provides flood forecasts at 0.05-degree resolution globally using ERA5 reanalysis and LISFLOOD-OS, requiring no national data. For countries in sub-Saharan Africa, Central Asia, or Southeast Asia that lack dense gauge networks, GloFAS provides baseline flood awareness using only global DEMs and weather models. While less accurate than national systems, it fills a critical gap where no local forecasting exists.",
+    "explanation": "GloFAS demonstrates how global terrain analysis and weather modeling can serve data-sparse regions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between flow accumulation, contributing area, and the concept of effective drainage area.",
+    "correct": "Flow accumulation counts upstream cells. Contributing area converts this to physical units (cells * cell area). Effective drainage area accounts for factors that modify how much of the contributing area actually generates runoff: imperviousness increases effective area, while high-infiltration soils decrease it. Weighted flow accumulation with runoff coefficients computes effective drainage area directly, providing more realistic input for hydrologic models than raw contributing area.",
+    "explanation": "Effective drainage area bridges the gap between topographic contributing area and hydrologic response."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the flow direction raster should never be filtered or smoothed after computation.",
+    "correct": "The flow direction raster encodes a topologically consistent network where every cell connects to exactly one downstream neighbor, forming a tree. Spatial filtering or smoothing would alter direction codes, potentially creating loops (cell A flows to B, B to A), disconnecting paths, or creating invalid codes. Even a single modified cell can break the entire downstream network. The only legitimate modifications are through proper DEM conditioning before computing flow directions.",
+    "explanation": "The topological integrity of the flow direction raster is essential and must not be compromised."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the concept of specific catchment area connects hillslope hydrology to channel initiation.",
+    "correct": "Specific catchment area (a = A/w) measures flow concentration per unit contour width. As water moves downslope, a increases as flow converges. Channel initiation occurs when a exceeds a critical value where flow erosive power overcomes surface resistance. This threshold varies with slope (steep terrain channels at smaller a) and surface properties. The product a*S^n exceeding a threshold defines the channelization condition, connecting specific catchment area directly to the physical transition from sheet flow to concentrated channel flow.",
+    "explanation": "Specific catchment area is the link between distributed hillslope processes and discrete channel formation."
+  }
+]

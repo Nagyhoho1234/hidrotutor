@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What is the geoid?",
+    "options": [
+      "A) A perfect sphere representing Earth",
+      "B) The equipotential surface of gravity approximating mean sea level",
+      "C) A mathematical ellipsoid used for coordinates",
+      "D) The physical surface of the Earth"
+    ],
+    "correct": "B",
+    "explanation": "The geoid is the equipotential surface of Earth's gravity field that best approximates mean sea level."
+  },
+  {
+    "type": "mcq",
+    "question": "The relationship between ellipsoidal height (h), orthometric height (H), and geoid undulation (N) is:",
+    "options": [
+      "A) h = H - N",
+      "B) h = H + N",
+      "C) H = h + N",
+      "D) N = H + h"
+    ],
+    "correct": "B",
+    "explanation": "h = H + N, where h is ellipsoidal, H is orthometric, N is geoid undulation."
+  },
+  {
+    "type": "mcq",
+    "question": "WGS84 uses which ellipsoid?",
+    "options": [
+      "A) Bessel 1841",
+      "B) Clarke 1866",
+      "C) GRS 1967",
+      "D) WGS 1984"
+    ],
+    "correct": "D",
+    "explanation": "WGS84 uses the WGS 1984 ellipsoid (a = 6,378,137 m)."
+  },
+  {
+    "type": "mcq",
+    "question": "HD72 is based on which ellipsoid?",
+    "options": [
+      "A) GRS 1980",
+      "B) GRS 1967",
+      "C) Clarke 1866",
+      "D) Bessel 1841"
+    ],
+    "correct": "B",
+    "explanation": "HD72 uses the GRS 1967 (IUGG 1967) ellipsoid."
+  },
+  {
+    "type": "mcq",
+    "question": "The EPSG code for the Hungarian EOV system is:",
+    "options": [
+      "A) 4326",
+      "B) 3857",
+      "C) 23700",
+      "D) 32634"
+    ],
+    "correct": "C",
+    "explanation": "EOV (Egyseges Orszagos Vetuleti rendszer) is EPSG:23700."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of projection is EOV?",
+    "options": [
+      "A) Transverse Mercator",
+      "B) Lambert Conformal Conic",
+      "C) Hotine Oblique Mercator",
+      "D) Albers Equal Area Conic"
+    ],
+    "correct": "C",
+    "explanation": "EOV uses the Hotine Oblique Mercator projection."
+  },
+  {
+    "type": "mcq",
+    "question": "The EOV scale factor at centre is:",
+    "options": [
+      "A) 0.9996",
+      "B) 1.0000",
+      "C) 0.99993",
+      "D) 0.99950"
+    ],
+    "correct": "C",
+    "explanation": "0.99993, giving maximum error <0.01% anywhere in Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "In EOV, values between 400,000 and 1,000,000 represent:",
+    "options": [
+      "A) Northing",
+      "B) Easting",
+      "C) Elevation",
+      "D) Latitude"
+    ],
+    "correct": "B",
+    "explanation": "Values 400k–1M are Easting; 0–400k are Northing."
+  },
+  {
+    "type": "mcq",
+    "question": "The offset between HD72 and WGS84/ETRS89 is approximately:",
+    "options": [
+      "A) 2-5 m",
+      "B) 10-20 m",
+      "C) 50-60 m",
+      "D) 200-300 m"
+    ],
+    "correct": "C",
+    "explanation": "About 50-60 metres — large enough to visibly misplace features."
+  },
+  {
+    "type": "mcq",
+    "question": "UTM Zone 34N covers what longitude range?",
+    "options": [
+      "A) 12°E to 18°E",
+      "B) 18°E to 24°E",
+      "C) 24°E to 30°E",
+      "D) 15°E to 21°E"
+    ],
+    "correct": "B",
+    "explanation": "Zone 34 covers 18°E to 24°E."
+  },
+  {
+    "type": "mcq",
+    "question": "The UTM false easting is:",
+    "options": [
+      "A) 200,000 m",
+      "B) 500,000 m",
+      "C) 650,000 m",
+      "D) 1,000,000 m"
+    ],
+    "correct": "B",
+    "explanation": "500,000 m so all Easting values are positive."
+  },
+  {
+    "type": "mcq",
+    "question": "UTM scale factor at the central meridian is:",
+    "options": [
+      "A) 0.9990",
+      "B) 0.9996",
+      "C) 1.0000",
+      "D) 1.0004"
+    ],
+    "correct": "B",
+    "explanation": "0.9996 at the central meridian."
+  },
+  {
+    "type": "mcq",
+    "question": "At Budapest's latitude (~47.5°N), one degree of longitude covers approximately:",
+    "options": [
+      "A) 111 km",
+      "B) 95 km",
+      "C) 75 km",
+      "D) 55 km"
+    ],
+    "correct": "C",
+    "explanation": "111.2 × cos(47.5°) = 111.2 × 0.676 ≈ 75 km."
+  },
+  {
+    "type": "mcq",
+    "question": "One degree of latitude always covers approximately:",
+    "options": [
+      "A) 75 km",
+      "B) 90 km",
+      "C) 111 km",
+      "D) 150 km"
+    ],
+    "correct": "C",
+    "explanation": "About 111.2 km everywhere on the globe."
+  },
+  {
+    "type": "mcq",
+    "question": "What vertical datum does Hungary use?",
+    "options": [
+      "A) NAVD88",
+      "B) Baltic Height System",
+      "C) Amsterdam Ordnance Datum",
+      "D) EGM2008"
+    ],
+    "correct": "B",
+    "explanation": "Based on mean sea level at the Kronstadt tide gauge."
+  },
+  {
+    "type": "mcq",
+    "question": "Which projection preserves area?",
+    "options": [
+      "A) Mercator",
+      "B) Lambert Conformal Conic",
+      "C) Albers Equal Area Conic",
+      "D) Transverse Mercator"
+    ],
+    "correct": "C",
+    "explanation": "Albers Equal Area Conic preserves area."
+  },
+  {
+    "type": "mcq",
+    "question": "Web Mercator (EPSG:3857) inflates areas at 47.5°N by approximately:",
+    "options": [
+      "A) 1.2x",
+      "B) 1.5x",
+      "C) 2.18x",
+      "D) 3.5x"
+    ],
+    "correct": "C",
+    "explanation": "1/cos²(47.5°) ≈ 2.18."
+  },
+  {
+    "type": "mcq",
+    "question": "ETRS89 is fixed to which tectonic plate?",
+    "options": [
+      "A) North American",
+      "B) Pacific",
+      "C) Eurasian",
+      "D) African"
+    ],
+    "correct": "C",
+    "explanation": "ETRS89 is fixed to the stable Eurasian plate."
+  },
+  {
+    "type": "mcq",
+    "question": "NAD83 uses which ellipsoid?",
+    "options": [
+      "A) Clarke 1866",
+      "B) GRS 1980",
+      "C) WGS 1984",
+      "D) GRS 1967"
+    ],
+    "correct": "B",
+    "explanation": "NAD83 uses GRS 1980, functionally identical to WGS 1984."
+  },
+  {
+    "type": "mcq",
+    "question": "The EGM2008 geoid model provides geoid height at what resolution?",
+    "options": [
+      "A) ~500 m",
+      "B) ~1 km",
+      "C) ~5 km",
+      "D) ~25 km"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 2.5-arc-minute resolution (~5 km)."
+  },
+  {
+    "type": "mcq",
+    "question": "GRACE satellites fly how far apart?",
+    "options": [
+      "A) 22 km",
+      "B) 100 km",
+      "C) 220 km",
+      "D) 500 km"
+    ],
+    "correct": "C",
+    "explanation": "220 km apart at ~500 km altitude."
+  },
+  {
+    "type": "mcq",
+    "question": "GRACE measures inter-satellite distance to accuracy of approximately:",
+    "options": [
+      "A) 1 mm",
+      "B) 1 micrometer",
+      "C) 1 nanometre",
+      "D) 10 cm"
+    ],
+    "correct": "B",
+    "explanation": "About 1 micrometer — one-hundredth the width of a human hair."
+  },
+  {
+    "type": "mcq",
+    "question": "The Earth's equatorial radius is approximately:",
+    "options": [
+      "A) 6,356 km",
+      "B) 6,371 km",
+      "C) 6,378 km",
+      "D) 6,400 km"
+    ],
+    "correct": "C",
+    "explanation": "Semi-major axis a ≈ 6,378,137 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The Earth's polar radius is approximately:",
+    "options": [
+      "A) 6,357 km",
+      "B) 6,371 km",
+      "C) 6,378 km",
+      "D) 6,400 km"
+    ],
+    "correct": "A",
+    "explanation": "Semi-minor axis b ≈ 6,356,752 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The flattening of the Earth is approximately:",
+    "options": [
+      "A) 1/100",
+      "B) 1/200",
+      "C) 1/298",
+      "D) 1/500"
+    ],
+    "correct": "C",
+    "explanation": "f ≈ 1/298.257."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the EPSG code for WGS84 geographic coordinates?",
+    "options": [
+      "A) 3857",
+      "B) 4326",
+      "C) 32634",
+      "D) 23700"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:4326 is WGS 84 geographic."
+  },
+  {
+    "type": "mcq",
+    "question": "ETRS89/LAEA (pan-European equal area) is EPSG:",
+    "options": [
+      "A) 4258",
+      "B) 3035",
+      "C) 23700",
+      "D) 3857"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:3035 is the INSPIRE-mandated equal-area projection."
+  },
+  {
+    "type": "mcq",
+    "question": "Budapest is in UTM Zone:",
+    "options": [
+      "A) 33N",
+      "B) 34N",
+      "C) 35N",
+      "D) 32N"
+    ],
+    "correct": "B",
+    "explanation": "Longitude 19.04°E falls in Zone 34 (18–24°E)."
+  },
+  {
+    "type": "mcq",
+    "question": "The Gauss-Krüger system uses zones of what width?",
+    "options": [
+      "A) 3 degrees",
+      "B) 6 degrees",
+      "C) 9 degrees",
+      "D) 1 degree"
+    ],
+    "correct": "A",
+    "explanation": "3-degree zones (compared to UTM's 6-degree zones)."
+  },
+  {
+    "type": "mcq",
+    "question": "Gauss-Krüger scale factor at central meridian is:",
+    "options": [
+      "A) 0.9996",
+      "B) 0.9999",
+      "C) 1.0000",
+      "D) 1.0004"
+    ],
+    "correct": "C",
+    "explanation": "1.0000, providing better accuracy per zone than UTM."
+  },
+  {
+    "type": "mcq",
+    "question": "The EOV false easting is:",
+    "options": [
+      "A) 500,000 m",
+      "B) 650,000 m",
+      "C) 200,000 m",
+      "D) 400,000 m"
+    ],
+    "correct": "B",
+    "explanation": "650,000 m false easting."
+  },
+  {
+    "type": "mcq",
+    "question": "The EOV false northing is:",
+    "options": [
+      "A) 650,000 m",
+      "B) 500,000 m",
+      "C) 200,000 m",
+      "D) 0 m"
+    ],
+    "correct": "C",
+    "explanation": "200,000 m false northing."
+  },
+  {
+    "type": "mcq",
+    "question": "ETRS89 and WGS84 currently differ by about:",
+    "options": [
+      "A) 0 m",
+      "B) ~0.9 m",
+      "C) ~10 m",
+      "D) ~50 m"
+    ],
+    "correct": "B",
+    "explanation": "About 90 cm due to plate motion since 1989."
+  },
+  {
+    "type": "mcq",
+    "question": "RTK positioning achieves what horizontal accuracy?",
+    "options": [
+      "A) 3-5 m",
+      "B) 30-50 cm",
+      "C) 1-2 cm",
+      "D) 1-2 mm"
+    ],
+    "correct": "C",
+    "explanation": "Real-Time Kinematic achieves 1-2 cm horizontal."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's GNSS reference network is called:",
+    "options": [
+      "A) CORS",
+      "B) EPN",
+      "C) GNSSnet.hu",
+      "D) IGS"
+    ],
+    "correct": "C",
+    "explanation": "GNSSnet.hu provides real-time corrections across Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "Which satellite system is Europe's contribution to GNSS?",
+    "options": [
+      "A) GLONASS",
+      "B) BeiDou",
+      "C) Galileo",
+      "D) NavIC"
+    ],
+    "correct": "C",
+    "explanation": "Galileo, fully operational since 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "How many GPS satellites are currently operational?",
+    "options": [
+      "A) 18",
+      "B) 24",
+      "C) 31",
+      "D) 36"
+    ],
+    "correct": "C",
+    "explanation": "Currently 31 operational satellites."
+  },
+  {
+    "type": "mcq",
+    "question": "GPS satellites orbit at approximately what altitude?",
+    "options": [
+      "A) 500 km",
+      "B) 2,000 km",
+      "C) 20,200 km",
+      "D) 36,000 km"
+    ],
+    "correct": "C",
+    "explanation": "~20,200 km altitude in six orbital planes."
+  },
+  {
+    "type": "mcq",
+    "question": "Geodetic latitude differs from geocentric latitude by up to about:",
+    "options": [
+      "A) 0.01°",
+      "B) 0.19°",
+      "C) 1.0°",
+      "D) 5.0°"
+    ],
+    "correct": "B",
+    "explanation": "About 0.19° (~21 km on the surface)."
+  },
+  {
+    "type": "mcq",
+    "question": "The Hungarian Parliament coordinates are approximately:",
+    "options": [
+      "A) 47.51°N, 19.05°E",
+      "B) 48.21°N, 16.37°E",
+      "C) 46.25°N, 20.15°E",
+      "D) 47.50°N, 21.63°E"
+    ],
+    "correct": "A",
+    "explanation": "47° 30' 22\" N, 19° 02' 43\" E = approximately 47.506°N, 19.045°E."
+  },
+  {
+    "type": "mcq",
+    "question": "Great circle distance from Budapest to Debrecen is approximately:",
+    "options": [
+      "A) 120 km",
+      "B) 150 km",
+      "C) 180 km",
+      "D) 230 km"
+    ],
+    "correct": "C",
+    "explanation": "~180 km by great circle calculation."
+  },
+  {
+    "type": "mcq",
+    "question": "NAVD88 is based on a tidal benchmark at:",
+    "options": [
+      "A) Galveston, Texas",
+      "B) Father Point/Rimouski, Quebec",
+      "C) Kronstadt, Russia",
+      "D) Amsterdam, Netherlands"
+    ],
+    "correct": "B",
+    "explanation": "Based on a single benchmark at Father Point/Rimouski, Quebec."
+  },
+  {
+    "type": "mcq",
+    "question": "Global sea level is currently rising at approximately:",
+    "options": [
+      "A) 1.0 mm/yr",
+      "B) 2.0 mm/yr",
+      "C) 3.6 mm/yr",
+      "D) 5.0 mm/yr"
+    ],
+    "correct": "C",
+    "explanation": "About 3.6 mm/year and accelerating."
+  },
+  {
+    "type": "mcq",
+    "question": "At Galveston, TX, relative sea level trend is about:",
+    "options": [
+      "A) +1.3 mm/yr",
+      "B) +3.3 mm/yr",
+      "C) +6.5 mm/yr",
+      "D) -3.8 mm/yr"
+    ],
+    "correct": "C",
+    "explanation": "+6.5 mm/yr due to subsidence from extraction."
+  },
+  {
+    "type": "mcq",
+    "question": "At Stockholm, Sweden, relative sea level trend is:",
+    "options": [
+      "A) +3.3 mm/yr",
+      "B) +1.8 mm/yr",
+      "C) -3.8 mm/yr",
+      "D) -12.7 mm/yr"
+    ],
+    "correct": "C",
+    "explanation": "-3.8 mm/yr due to post-glacial rebound (land rising)."
+  },
+  {
+    "type": "mcq",
+    "question": "In Hungary, geoid undulation ranges from about:",
+    "options": [
+      "A) 10-20 m",
+      "B) 20-30 m",
+      "C) 38-46 m",
+      "D) 60-80 m"
+    ],
+    "correct": "C",
+    "explanation": "38-46 metres above the GRS 1980 ellipsoid."
+  },
+  {
+    "type": "mcq",
+    "question": "Confusing HD72 and ETRS89 would shift features by:",
+    "options": [
+      "A) 2-5 m",
+      "B) 10-20 m",
+      "C) 50-60 m",
+      "D) 200-300 m"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 50-60 metres."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'Define Projection' operation:",
+    "options": [
+      "A) Transforms coordinates to a new system",
+      "B) Tells software what system the data is already in",
+      "C) Converts between geographic and projected coordinates",
+      "D) Removes projection distortion"
+    ],
+    "correct": "B",
+    "explanation": "It sets metadata without changing coordinate values."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'Project' operation:",
+    "options": [
+      "A) Only changes the .prj file",
+      "B) Assigns a CRS to undefined data",
+      "C) Recalculates every coordinate value to a new system",
+      "D) Defines the map scale"
+    ],
+    "correct": "C",
+    "explanation": "It transforms data from one CRS to another."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the cosine factor in the east-west distance formula account for?",
+    "options": [
+      "A) Earth's rotation",
+      "B) Meridian convergence toward poles",
+      "C) Atmospheric refraction",
+      "D) Geoid undulation"
+    ],
+    "correct": "B",
+    "explanation": "cos(φ) accounts for convergence of meridians at higher latitudes."
+  },
+  {
+    "type": "mcq",
+    "question": "A 1-arc-second DEM cell at Budapest's latitude (~47.5°N) measures approximately:",
+    "options": [
+      "A) 30 m × 30 m",
+      "B) 30 m × 21 m (NS × EW)",
+      "C) 21 m × 30 m (NS × EW)",
+      "D) 21 m × 21 m"
+    ],
+    "correct": "B",
+    "explanation": "~31 m N-S but only ~21 m E-W due to meridian convergence."
+  },
+  {
+    "type": "mcq",
+    "question": "Euler proved in 1777 that:",
+    "options": [
+      "A) All map projections are equal-area",
+      "B) A curved surface cannot be flattened without distortion",
+      "C) The geoid is an ellipsoid",
+      "D) GPS signals travel at the speed of light"
+    ],
+    "correct": "B",
+    "explanation": "It is mathematically impossible to map a curved surface to a flat one without distortion."
+  },
+  {
+    "type": "mcq",
+    "question": "For hydrology, which projection property is usually most critical?",
+    "options": [
+      "A) Conformal (shape)",
+      "B) Equal area",
+      "C) Equidistant",
+      "D) Azimuthal"
+    ],
+    "correct": "B",
+    "explanation": "Accurate area measurement is essential for rainfall-runoff calculations."
+  },
+  {
+    "type": "mcq",
+    "question": "In a Bükk Mountains watershed, Web Mercator reports area as 92.6 km². The true area is about:",
+    "options": [
+      "A) 92.6 km²",
+      "B) 42.5 km²",
+      "C) 201 km²",
+      "D) 21.3 km²"
+    ],
+    "correct": "B",
+    "explanation": "Web Mercator inflates by ~2.18× at 47.5°N: 92.6/2.18 ≈ 42.5 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "The HD72 datum origin is at:",
+    "options": [
+      "A) Budapest",
+      "B) Szolnok",
+      "C) Debrecen",
+      "D) Szeged"
+    ],
+    "correct": "B",
+    "explanation": "The datum origin is at the Szolnok base point."
+  },
+  {
+    "type": "mcq",
+    "question": "ETRS89 was defined to coincide with ITRF at epoch:",
+    "options": [
+      "A) 1972.0",
+      "B) 1984.0",
+      "C) 1989.0",
+      "D) 2000.0"
+    ],
+    "correct": "C",
+    "explanation": "Epoch 1989.0."
+  },
+  {
+    "type": "mcq",
+    "question": "The Albers Equal Area Conic standard parallels for the US are:",
+    "options": [
+      "A) 20°N and 40°N",
+      "B) 29.5°N and 45.5°N",
+      "C) 33°N and 45°N",
+      "D) 25°N and 50°N"
+    ],
+    "correct": "B",
+    "explanation": "29.5°N and 45.5°N with central meridian 96°W."
+  },
+  {
+    "type": "mcq",
+    "question": "The Lambert Azimuthal Equal Area projection for INSPIRE is centred at:",
+    "options": [
+      "A) 47°N, 19°E",
+      "B) 52°N, 10°E",
+      "C) 45°N, 15°E",
+      "D) 50°N, 0°E"
+    ],
+    "correct": "B",
+    "explanation": "Centred at 52°N, 10°E for pan-European mapping."
+  },
+  {
+    "type": "mcq",
+    "question": "Maximum scale distortion in US Albers is less than:",
+    "options": [
+      "A) 0.01%",
+      "B) 0.1%",
+      "C) 1.25%",
+      "D) 5%"
+    ],
+    "correct": "C",
+    "explanation": "Less than 1.25% across the contiguous US."
+  },
+  {
+    "type": "mcq",
+    "question": "GRACE-FO was launched in:",
+    "options": [
+      "A) 2008",
+      "B) 2012",
+      "C) 2018",
+      "D) 2022"
+    ],
+    "correct": "C",
+    "explanation": "GRACE-FO (Follow-On) launched in 2018."
+  },
+  {
+    "type": "mcq",
+    "question": "The original GRACE mission was launched in:",
+    "options": [
+      "A) 1998",
+      "B) 2000",
+      "C) 2002",
+      "D) 2005"
+    ],
+    "correct": "C",
+    "explanation": "Launched in 2002."
+  },
+  {
+    "type": "mcq",
+    "question": "Which geoid model provides global geoid heights at ~5 km resolution?",
+    "options": [
+      "A) EGM96",
+      "B) EGM2008",
+      "C) GEOID18",
+      "D) EGG2015"
+    ],
+    "correct": "B",
+    "explanation": "EGM2008 at ~2.5 arc-minute resolution (~5 km)."
+  },
+  {
+    "type": "mcq",
+    "question": "The US National Geodetic Survey maintains which geoid model?",
+    "options": [
+      "A) EGM2008",
+      "B) GEOID18",
+      "C) EGG2015",
+      "D) G3P"
+    ],
+    "correct": "B",
+    "explanation": "GEOID18 for US geoid-ellipsoid separation."
+  },
+  {
+    "type": "mcq",
+    "question": "The European gravimetric geoid model is:",
+    "options": [
+      "A) GEOID18",
+      "B) EGM2008",
+      "C) EGG2015",
+      "D) G3P"
+    ],
+    "correct": "C",
+    "explanation": "European Gravimetric Geoid 2015."
+  },
+  {
+    "type": "mcq",
+    "question": "The G3P product separates GRACE data into:",
+    "options": [
+      "A) Ocean and land components",
+      "B) Soil moisture, surface water, and groundwater",
+      "C) Snow and ice components",
+      "D) Atmospheric and terrestrial components"
+    ],
+    "correct": "B",
+    "explanation": "Global Gravity-based Groundwater Product separates storage components."
+  },
+  {
+    "type": "mcq",
+    "question": "G3P is provided by:",
+    "options": [
+      "A) NASA JPL",
+      "B) GFZ Potsdam",
+      "C) ECMWF",
+      "D) USGS"
+    ],
+    "correct": "B",
+    "explanation": "GFZ Potsdam through the GravIS portal."
+  },
+  {
+    "type": "mcq",
+    "question": "NAD83 and WGS84 agree to within about:",
+    "options": [
+      "A) 0.1 m",
+      "B) 2 m",
+      "C) 10 m",
+      "D) 50 m"
+    ],
+    "correct": "B",
+    "explanation": "About 2 metres — negligible for most hydrological work."
+  },
+  {
+    "type": "mcq",
+    "question": "The EOV latitude of centre is approximately:",
+    "options": [
+      "A) 45.0°N",
+      "B) 46.5°N",
+      "C) 47.14°N",
+      "D) 48.0°N"
+    ],
+    "correct": "C",
+    "explanation": "47° 08' 20\" N (47.1389°N)."
+  },
+  {
+    "type": "mcq",
+    "question": "NAVD88 replaced which earlier vertical datum?",
+    "options": [
+      "A) NGVD29",
+      "B) Baltic Height System",
+      "C) NAP",
+      "D) ODN"
+    ],
+    "correct": "A",
+    "explanation": "NAVD88 replaced NGVD29, which was based on 26 tide gauges."
+  },
+  {
+    "type": "mcq",
+    "question": "Difference between NAVD88 and NGVD29 can reach:",
+    "options": [
+      "A) 0.1 m",
+      "B) 0.5 m",
+      "C) 1.5 m",
+      "D) 5 m"
+    ],
+    "correct": "C",
+    "explanation": "More than 1.5 metres in some western states."
+  },
+  {
+    "type": "mcq",
+    "question": "The Eurasian plate moves at about:",
+    "options": [
+      "A) 0.5 cm/yr",
+      "B) 2.5 cm/yr",
+      "C) 5 cm/yr",
+      "D) 10 cm/yr"
+    ],
+    "correct": "B",
+    "explanation": "~2.5 cm/year relative to Earth's centre of mass."
+  },
+  {
+    "type": "mcq",
+    "question": "The EPSG dataset is maintained by:",
+    "options": [
+      "A) ISO",
+      "B) International Association of Oil and Gas Producers",
+      "C) UNESCO",
+      "D) WMO"
+    ],
+    "correct": "B",
+    "explanation": "The IOGP maintains the EPSG Geodetic Parameter Dataset."
+  },
+  {
+    "type": "mcq",
+    "question": "HD72 to ETRS89 transformation is defined by EPSG code:",
+    "options": [
+      "A) 1149",
+      "B) 1449",
+      "C) 4326",
+      "D) 23700"
+    ],
+    "correct": "B",
+    "explanation": "EPSG transformation code 1449 (7-parameter Helmert)."
+  },
+  {
+    "type": "mcq",
+    "question": "A raw GPS height of 150 m in the Bükk Mountains means the orthometric height is approximately:",
+    "options": [
+      "A) 150 m",
+      "B) 193 m",
+      "C) 107 m",
+      "D) 50 m"
+    ],
+    "correct": "C",
+    "explanation": "150 - 43 (geoid undulation) ≈ 107 m orthometric."
+  },
+  {
+    "type": "mcq",
+    "question": "NAD27 was based on which ellipsoid?",
+    "options": [
+      "A) GRS 1980",
+      "B) GRS 1967",
+      "C) Clarke 1866",
+      "D) Bessel 1841"
+    ],
+    "correct": "C",
+    "explanation": "NAD27 used the Clarke 1866 ellipsoid."
+  },
+  {
+    "type": "mcq",
+    "question": "Swapping lat/long for Budapest (47.50, 19.04) would place the point in:",
+    "options": [
+      "A) The Mediterranean Sea",
+      "B) Central Kazakhstan",
+      "C) Northern Scandinavia",
+      "D) The Sahara Desert"
+    ],
+    "correct": "B",
+    "explanation": "(47.50, 19.04) is Hungary; (19.04, 47.50) would land in central Kazakhstan."
+  },
+  {
+    "type": "mcq",
+    "question": "A conic projection is best for:",
+    "options": [
+      "A) Polar regions",
+      "B) Mid-latitude east-west regions",
+      "C) North-south strips",
+      "D) The equator"
+    ],
+    "correct": "B",
+    "explanation": "Best suited for mid-latitude regions extending primarily east-west."
+  },
+  {
+    "type": "mcq",
+    "question": "A transverse cylindrical projection is best for:",
+    "options": [
+      "A) Polar regions",
+      "B) Mid-latitude east-west regions",
+      "C) North-south strips",
+      "D) Continental-scale equal area"
+    ],
+    "correct": "C",
+    "explanation": "Best for mapping strips extending primarily north-south."
+  },
+  {
+    "type": "mcq",
+    "question": "GRACE data showed Texas lost ~100 km³ during the 2011 drought. How many times the volume of Lake Mead?",
+    "options": [
+      "A) ~1.5 times",
+      "B) ~3 times",
+      "C) ~5 times",
+      "D) ~10 times"
+    ],
+    "correct": "B",
+    "explanation": "About three times the volume of Lake Mead."
+  },
+  {
+    "type": "mcq",
+    "question": "India's national datum historically uses:",
+    "options": [
+      "A) WGS 1984 ellipsoid",
+      "B) Everest ellipsoid",
+      "C) GRS 1980",
+      "D) Clarke 1880"
+    ],
+    "correct": "B",
+    "explanation": "India uses the Everest ellipsoid (1830) for its national datum."
+  },
+  {
+    "type": "mcq",
+    "question": "China's modern geocentric datum is:",
+    "options": [
+      "A) Pulkovo 1942",
+      "B) CGCS2000",
+      "C) PZ-90",
+      "D) HD72"
+    ],
+    "correct": "B",
+    "explanation": "CGCS2000, adopted in 2008."
+  },
+  {
+    "type": "mcq",
+    "question": "The African Geodetic Reference Frame is abbreviated:",
+    "options": [
+      "A) AFREF",
+      "B) AGRF",
+      "C) AfGD",
+      "D) AADF"
+    ],
+    "correct": "A",
+    "explanation": "AFREF aims to establish a continent-wide geocentric datum."
+  },
+  {
+    "type": "mcq",
+    "question": "The European Vertical Reference Frame target year is:",
+    "options": [
+      "A) EVRF2007",
+      "B) EVRF2012",
+      "C) EVRF2019",
+      "D) EVRF2025"
+    ],
+    "correct": "C",
+    "explanation": "EVRF2019 is the pan-European vertical unification effort."
+  },
+  {
+    "type": "mcq",
+    "question": "A Helmert transformation involves how many parameters?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 7",
+      "D) 14"
+    ],
+    "correct": "C",
+    "explanation": "3 translations, 3 rotations, and 1 scale factor."
+  },
+  {
+    "type": "mcq",
+    "question": "For pan-European equal-area analysis, which EPSG should you use?",
+    "options": [
+      "A) 4326",
+      "B) 3857",
+      "C) 3035",
+      "D) 23700"
+    ],
+    "correct": "C",
+    "explanation": "ETRS89/LAEA (EPSG:3035)."
+  },
+  {
+    "type": "mcq",
+    "question": "The State Plane system in the US has over how many zones?",
+    "options": [
+      "A) 30",
+      "B) 60",
+      "C) 120",
+      "D) 200"
+    ],
+    "correct": "C",
+    "explanation": "Over 120 zones, each with its own parameters."
+  },
+  {
+    "type": "mcq",
+    "question": "For work confined to Hungary, the best projection is:",
+    "options": [
+      "A) UTM Zone 34N",
+      "B) Web Mercator",
+      "C) EOV (EPSG:23700)",
+      "D) ETRS89/LAEA"
+    ],
+    "correct": "C",
+    "explanation": "EOV provides the best accuracy with no zone boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "GPS positioning is based on the principle of:",
+    "options": [
+      "A) Triangulation",
+      "B) Trilateration",
+      "C) Interferometry",
+      "D) Doppler shift"
+    ],
+    "correct": "B",
+    "explanation": "Trilateration — determining position from distance measurements to satellites."
+  },
+  {
+    "type": "true_false",
+    "question": "The geoid is the equipotential surface of Earth's gravity field.",
+    "correct": true,
+    "explanation": "It approximates mean sea level and is perpendicular to gravity everywhere."
+  },
+  {
+    "type": "true_false",
+    "question": "An ellipsoid captures the physical reality of Earth's gravity.",
+    "correct": false,
+    "explanation": "The geoid captures gravity; the ellipsoid is a mathematical approximation."
+  },
+  {
+    "type": "true_false",
+    "question": "h = H + N relates ellipsoidal height, orthometric height, and geoid undulation.",
+    "correct": true,
+    "explanation": "The fundamental relationship of vertical geodesy."
+  },
+  {
+    "type": "true_false",
+    "question": "WGS84 and GRS 1980 ellipsoids are nearly identical.",
+    "correct": true,
+    "explanation": "Same semi-major axis, flattening agrees to sixth decimal place."
+  },
+  {
+    "type": "true_false",
+    "question": "HD72 is a geocentric datum.",
+    "correct": false,
+    "explanation": "HD72 is a local, non-geocentric datum positioned to fit Hungary's geoid."
+  },
+  {
+    "type": "true_false",
+    "question": "ETRS89 coordinates for a point in Hungary change as the Eurasian plate moves.",
+    "correct": false,
+    "explanation": "ETRS89 is plate-fixed; coordinates don't change with plate motion."
+  },
+  {
+    "type": "true_false",
+    "question": "EOV Easting values range from 0 to 400,000.",
+    "correct": false,
+    "explanation": "Easting is 400,000–1,000,000; Northing is 0–400,000."
+  },
+  {
+    "type": "true_false",
+    "question": "Web Mercator is suitable for computing watershed areas.",
+    "correct": false,
+    "explanation": "Web Mercator grossly distorts areas; it should never be used for analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "The Albers Equal Area Conic preserves area at the expense of local shape.",
+    "correct": true,
+    "explanation": "kp × km = 1 everywhere — area exact, shape slightly distorted."
+  },
+  {
+    "type": "true_false",
+    "question": "UTM has 60 zones, each 6 degrees wide.",
+    "correct": true,
+    "explanation": "Numbered 1–60 from 180°W."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary falls entirely within UTM Zone 34N.",
+    "correct": false,
+    "explanation": "Most of Hungary is in 34N, but the western edge near Sopron falls into Zone 33N."
+  },
+  {
+    "type": "true_false",
+    "question": "NAD83 is tied to the North American tectonic plate.",
+    "correct": true,
+    "explanation": "Unlike WGS84, which is Earth-centred."
+  },
+  {
+    "type": "true_false",
+    "question": "The Baltic Height System is based on the Kronstadt tide gauge.",
+    "correct": true,
+    "explanation": "Near Saint Petersburg, Russia."
+  },
+  {
+    "type": "true_false",
+    "question": "GPS directly measures orthometric height.",
+    "correct": false,
+    "explanation": "GPS measures ellipsoidal height; a geoid model is needed for orthometric."
+  },
+  {
+    "type": "true_false",
+    "question": "Latitude is in the Y direction and longitude in X.",
+    "correct": true,
+    "explanation": "Lat-long is (Y,X) order but GIS expects (X,Y) = (lon,lat)."
+  },
+  {
+    "type": "true_false",
+    "question": "Euler proved in 1777 that a curved surface can be perfectly flattened.",
+    "correct": false,
+    "explanation": "He proved the opposite — it's mathematically impossible."
+  },
+  {
+    "type": "true_false",
+    "question": "In Hungary, the geoid-ellipsoid separation is about 38-46 metres.",
+    "correct": true,
+    "explanation": "The geoid is 38-46 m above the GRS 1980 ellipsoid."
+  },
+  {
+    "type": "true_false",
+    "question": "The Gauss-Krüger system uses 6-degree zones.",
+    "correct": false,
+    "explanation": "3-degree zones (narrower than UTM)."
+  },
+  {
+    "type": "true_false",
+    "question": "The difference between NAVD88 and NGVD29 can exceed 1.5 metres.",
+    "correct": true,
+    "explanation": "In some western US states."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE was launched in 2018.",
+    "correct": false,
+    "explanation": "Original GRACE in 2002; GRACE-FO in 2018."
+  },
+  {
+    "type": "true_false",
+    "question": "The EOV projection type is Transverse Mercator.",
+    "correct": false,
+    "explanation": "Hotine Oblique Mercator."
+  },
+  {
+    "type": "true_false",
+    "question": "A 7-parameter Helmert transformation includes translations, rotations, and scale.",
+    "correct": true,
+    "explanation": "3 translations, 3 rotations, 1 scale factor."
+  },
+  {
+    "type": "true_false",
+    "question": "RTK positioning achieves centimetre-level accuracy.",
+    "correct": true,
+    "explanation": "1-2 cm horizontal, 2-3 cm vertical."
+  },
+  {
+    "type": "true_false",
+    "question": "Galileo is Russia's GNSS system.",
+    "correct": false,
+    "explanation": "Galileo is European; GLONASS is Russian."
+  },
+  {
+    "type": "true_false",
+    "question": "One degree of longitude covers the same distance everywhere.",
+    "correct": false,
+    "explanation": "It decreases with latitude due to meridian convergence (cos φ factor)."
+  },
+  {
+    "type": "true_false",
+    "question": "WGS84 is periodically refined.",
+    "correct": true,
+    "explanation": "Current realization is WGS84 (G2296)."
+  },
+  {
+    "type": "true_false",
+    "question": "The Earth is an oblate ellipsoid, flattened at the equator.",
+    "correct": false,
+    "explanation": "Flattened at the poles, not the equator."
+  },
+  {
+    "type": "true_false",
+    "question": "EPSG:3857 is appropriate for quantitative hydrological analysis.",
+    "correct": false,
+    "explanation": "Web Mercator is for display only."
+  },
+  {
+    "type": "true_false",
+    "question": "The EPSG code for HD72 geographic coordinates is 4237.",
+    "correct": true,
+    "explanation": "As listed in Table 2.6."
+  },
+  {
+    "type": "true_false",
+    "question": "ETRS89/LAEA preserves equal area for pan-European mapping.",
+    "correct": true,
+    "explanation": "Lambert Azimuthal Equal Area projection."
+  },
+  {
+    "type": "true_false",
+    "question": "NAD27 and NAD83 differ by less than 1 metre.",
+    "correct": false,
+    "explanation": "They differ by tens to hundreds of metres."
+  },
+  {
+    "type": "true_false",
+    "question": "The term GNSS collectively refers to GPS, GLONASS, Galileo, and BeiDou.",
+    "correct": true,
+    "explanation": "Global Navigation Satellite Systems."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE measures water storage at ~30 km spatial resolution.",
+    "correct": false,
+    "explanation": "~300-400 km resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian national grid shift file provides sub-metre accuracy for HD72-ETRS89 transformation.",
+    "correct": true,
+    "explanation": "Better than the 7-parameter Helmert approximation."
+  },
+  {
+    "type": "true_false",
+    "question": "Texas falls in a single UTM zone.",
+    "correct": false,
+    "explanation": "Texas spans three UTM zones (13, 14, 15)."
+  },
+  {
+    "type": "true_false",
+    "question": "The US State Plane system uses Lambert Conformal Conic for east-west states.",
+    "correct": true,
+    "explanation": "And Transverse Mercator for north-south states."
+  },
+  {
+    "type": "true_false",
+    "question": "DEM cells in geographic coordinates are square at all latitudes.",
+    "correct": false,
+    "explanation": "They become increasingly narrow E-W at higher latitudes."
+  },
+  {
+    "type": "true_false",
+    "question": "The EOV maximum scale error is less than 0.01%.",
+    "correct": true,
+    "explanation": "Better than UTM's 0.04%."
+  },
+  {
+    "type": "true_false",
+    "question": "A datum is an ellipsoid positioned relative to the actual Earth.",
+    "correct": true,
+    "explanation": "The ellipsoid fitted onto the Earth defines the datum."
+  },
+  {
+    "type": "true_false",
+    "question": "The NAP is the vertical datum used in the Netherlands.",
+    "correct": true,
+    "explanation": "Amsterdam Ordnance Datum."
+  },
+  {
+    "type": "true_false",
+    "question": "GFZ Potsdam provides the G3P groundwater product.",
+    "correct": true,
+    "explanation": "Through the GravIS portal."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE-FO measures gravity with approximately 1 mm inter-satellite ranging accuracy.",
+    "correct": false,
+    "explanation": "About 1 micrometer accuracy."
+  },
+  {
+    "type": "true_false",
+    "question": "The European plate moves at about 2.5 cm/year relative to Earth's centre.",
+    "correct": true,
+    "explanation": "This is why ETRS89 and WGS84 slowly diverge."
+  },
+  {
+    "type": "true_false",
+    "question": "The INSPIRE Directive mandates ETRS89 for EU spatial data.",
+    "correct": true,
+    "explanation": "ETRS89 is the mandatory reference system."
+  },
+  {
+    "type": "true_false",
+    "question": "Geographic coordinates are in (X, Y) order.",
+    "correct": false,
+    "explanation": "Geographic coordinates are (lat, lon) = (Y, X) order."
+  },
+  {
+    "type": "true_false",
+    "question": "Converting DMS to decimal degrees uses DD = D + M/60 + S/3600.",
+    "correct": true,
+    "explanation": "Standard conversion formula."
+  },
+  {
+    "type": "true_false",
+    "question": "The flattening formula is f = (a - b)/b.",
+    "correct": false,
+    "explanation": "f = (a - b)/a, not /b."
+  },
+  {
+    "type": "true_false",
+    "question": "CGCS2000 is China's geocentric datum adopted in 2008.",
+    "correct": true,
+    "explanation": "As stated in section 2.3.6."
+  },
+  {
+    "type": "true_false",
+    "question": "Pulkovo 1942 was used across the former Soviet sphere.",
+    "correct": true,
+    "explanation": "Many Eastern European and Central Asian countries used it."
+  },
+  {
+    "type": "true_false",
+    "question": "A conformal projection preserves area.",
+    "correct": false,
+    "explanation": "Conformal preserves local angles/shapes; equal-area preserves area."
+  },
+  {
+    "type": "true_false",
+    "question": "The US plans to modernize its spatial reference framework in the late 2020s.",
+    "correct": true,
+    "explanation": "Replacing NAD83 and NAVD88 with ITRF-aligned frames."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE can distinguish between surface water and groundwater changes.",
+    "correct": false,
+    "explanation": "GRACE measures total water storage; the G3P product uses models to separate components."
+  },
+  {
+    "type": "true_false",
+    "question": "EOV uses the GRS 1980 ellipsoid.",
+    "correct": false,
+    "explanation": "EOV uses GRS 1967."
+  },
+  {
+    "type": "true_false",
+    "question": "The Bessel 1841 ellipsoid was used for Hungarian systems prior to 1972.",
+    "correct": true,
+    "explanation": "Before HD72 adopted GRS 1967."
+  },
+  {
+    "type": "true_false",
+    "question": "At latitude 0° (equator), cos(φ) = 1, so one degree of longitude = 111.2 km.",
+    "correct": true,
+    "explanation": "At the equator, east-west and north-south distances per degree are equal."
+  },
+  {
+    "type": "true_false",
+    "question": "The State Plane system provides higher accuracy than UTM within its zones.",
+    "correct": true,
+    "explanation": "Smaller zones = less distortion."
+  },
+  {
+    "type": "true_false",
+    "question": "The difference between ETRS89 and WGS84 matters for routine hydrological work.",
+    "correct": false,
+    "explanation": "~0.9 m difference is negligible for hydrology."
+  },
+  {
+    "type": "true_false",
+    "question": "Vertical datum errors of 0.5 m can shift flood boundaries by 500 m in flat terrain.",
+    "correct": true,
+    "explanation": "In a floodplain with 0.1% slope."
+  },
+  {
+    "type": "true_false",
+    "question": "The GOCE satellite mission contributed to geoid determination.",
+    "correct": true,
+    "explanation": "Along with GRACE and surface gravity observations."
+  },
+  {
+    "type": "true_false",
+    "question": "The Albers projection uses standard parallels where k=1 in all directions.",
+    "correct": true,
+    "explanation": "Between the standard parallels, the map is slightly compressed."
+  },
+  {
+    "type": "true_false",
+    "question": "The US IGS network has over 500 stations globally.",
+    "correct": true,
+    "explanation": "International GNSS Service provides the global reference frame."
+  },
+  {
+    "type": "true_false",
+    "question": "NGVD29 was based on 26 tide gauges.",
+    "correct": true,
+    "explanation": "Replaced by NAVD88 based on a single benchmark."
+  },
+  {
+    "type": "true_false",
+    "question": "A spirit level defines a surface parallel to the ellipsoid.",
+    "correct": false,
+    "explanation": "Parallel to the geoid (gravity), not the ellipsoid."
+  },
+  {
+    "type": "true_false",
+    "question": "Africa commonly inherited Clarke 1880 datum from colonial surveys.",
+    "correct": true,
+    "explanation": "Common across former British and French territories."
+  },
+  {
+    "type": "true_false",
+    "question": "Japan's JGD2011 was updated after the 2011 earthquake.",
+    "correct": true,
+    "explanation": "The earthquake shifted Japanese islands by up to 5 metres."
+  },
+  {
+    "type": "true_false",
+    "question": "For a pan-European analysis, the recommended projection is UTM.",
+    "correct": false,
+    "explanation": "ETRS89/LAEA (EPSG:3035) is recommended for continental Europe."
+  },
+  {
+    "type": "true_false",
+    "question": "The Lechner Knowledge Centre provides Hungary's national DEM.",
+    "correct": true,
+    "explanation": "Formerly FOMI."
+  },
+  {
+    "type": "true_false",
+    "question": "In EOV coordinates, X always represents Easting.",
+    "correct": false,
+    "explanation": "Hungarian datasets frequently swap X/Y labels; identify by value range."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE satellites orbit at ~500 km altitude.",
+    "correct": true,
+    "explanation": "As stated in section 2.10.1."
+  },
+  {
+    "type": "true_false",
+    "question": "The practical recommendation 'know your data's CRS' is the most important spatial data handling skill.",
+    "correct": true,
+    "explanation": "Violations cause more GIS errors than any other single factor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the equipotential gravity surface approximating mean sea level.",
+    "correct": "geoid",
+    "explanation": "Fundamental geodetic reference surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The relationship h = H + _____ relates the three height types.",
+    "correct": "N (geoid undulation)",
+    "explanation": "N is the geoid-ellipsoid separation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WGS84 stands for World Geodetic System of _____.",
+    "correct": "1984",
+    "explanation": "The global GPS datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EPSG code for EOV is _____.",
+    "correct": "23700",
+    "explanation": "Hungary's national projected CRS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EOV uses the _____ Oblique Mercator projection.",
+    "correct": "Hotine",
+    "explanation": "Tilted to minimise distortion across Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EOV values between 400,000 and 1,000,000 are _____.",
+    "correct": "Easting",
+    "explanation": "Identified by value range, not labels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The offset between HD72 and ETRS89 is approximately _____ metres.",
+    "correct": "50-60",
+    "explanation": "Must be transformed before combining."
+  },
+  {
+    "type": "fill_blank",
+    "question": "UTM Zone 34 has its central meridian at _____ degrees east.",
+    "correct": "21",
+    "explanation": "Centre of the 18-24°E zone."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The UTM false easting of _____ m ensures all Easting values are positive.",
+    "correct": "500,000",
+    "explanation": "Standard UTM parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At 47.5°N latitude, one degree of longitude covers about _____ km.",
+    "correct": "75",
+    "explanation": "111.2 × cos(47.5°) ≈ 75 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's vertical datum is the _____ Height System.",
+    "correct": "Baltic",
+    "explanation": "Based on the Kronstadt tide gauge."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Web Mercator inflates areas at Budapest's latitude by a factor of about _____.",
+    "correct": "2.18",
+    "explanation": "1/cos²(47.5°) ≈ 2.18."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Equal Area Conic projection is the US standard for hydrology.",
+    "correct": "Albers",
+    "explanation": "Preserves area critical for runoff calculations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ETRS89/LAEA has EPSG code _____.",
+    "correct": "3035",
+    "explanation": "Pan-European equal-area projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRS 1980 and WGS 1984 ellipsoids share the same semi-major axis of _____ m.",
+    "correct": "6,378,137",
+    "explanation": "Nearly identical ellipsoids."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Earth's flattening is approximately 1/_____.",
+    "correct": "298",
+    "explanation": "f ≈ 1/298.257."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The polar radius is about _____ km shorter than the equatorial radius.",
+    "correct": "21",
+    "explanation": "6,378 - 6,357 ≈ 21 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Geodetic Parameter Dataset catalogues all CRS worldwide.",
+    "correct": "EPSG",
+    "explanation": "Maintained by IOGP."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE satellites fly _____ km apart.",
+    "correct": "220",
+    "explanation": "At ~500 km altitude."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE measures inter-satellite distance to about 1 _____.",
+    "correct": "micrometer",
+    "explanation": "One-hundredth the width of a human hair."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EOV false easting is _____ m.",
+    "correct": "650,000",
+    "explanation": "Standard EOV parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EOV false northing is _____ m.",
+    "correct": "200,000",
+    "explanation": "Standard EOV parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAD83 and WGS84 agree to within about _____ metres.",
+    "correct": "2",
+    "explanation": "Negligible for most work."
+  },
+  {
+    "type": "fill_blank",
+    "question": "RTK positioning achieves _____-level accuracy.",
+    "correct": "centimetre",
+    "explanation": "1-2 cm horizontal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's GNSS network is called _____.",
+    "correct": "GNSSnet.hu",
+    "explanation": "Provides real-time corrections."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is Europe's GNSS constellation, fully operational since 2024.",
+    "correct": "Galileo",
+    "explanation": "EU's contribution to global navigation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS constellation has _____ operational satellites.",
+    "correct": "31",
+    "explanation": "In six orbital planes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HD72 datum origin is at the _____ base point.",
+    "correct": "Szolnok",
+    "explanation": "National triangulation adjustment of 1972."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAVD88 is based on a benchmark at Father Point/_____.",
+    "correct": "Rimouski",
+    "explanation": "In Quebec, Canada."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global sea level rise is currently about _____ mm/year.",
+    "correct": "3.6",
+    "explanation": "And accelerating."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, geoid undulation N ranges from about _____ to 46 metres.",
+    "correct": "38",
+    "explanation": "Above the GRS 1980 ellipsoid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ operation tells software what CRS data is already in.",
+    "correct": "Define Projection",
+    "explanation": "Sets metadata without changing coordinates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ operation recalculates coordinates to a new system.",
+    "correct": "Project (Reproject)",
+    "explanation": "Transforms all coordinate values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ETRS89 was fixed to ITRF at epoch _____.",
+    "correct": "1989.0",
+    "explanation": "Fixed to the Eurasian plate."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US Albers standard parallels are 29.5°N and _____°N.",
+    "correct": "45.5",
+    "explanation": "With central meridian at 96°W."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE-FO launched in _____.",
+    "correct": "2018",
+    "explanation": "Succeeding the original GRACE."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The original GRACE launched in _____.",
+    "correct": "2002",
+    "explanation": "Joint NASA-DLR mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EGM_____ is the current global geoid model.",
+    "correct": "2008",
+    "explanation": "Earth Gravitational Model 2008."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The G3P product is provided by GFZ _____.",
+    "correct": "Potsdam",
+    "explanation": "German Research Centre for Geosciences."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ transformation uses 3 translations, 3 rotations, and 1 scale factor.",
+    "correct": "Helmert",
+    "explanation": "7-parameter transformation between datums."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Eurasian plate moves at about _____ cm/year.",
+    "correct": "2.5",
+    "explanation": "Relative to Earth's centre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HD72 uses the GRS _____ ellipsoid.",
+    "correct": "1967",
+    "explanation": "IUGG 1967 ellipsoid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The UTM zone formula is Zone = floor((180 + λ)/___) + 1.",
+    "correct": "6",
+    "explanation": "Each zone is 6 degrees wide."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, a raw GPS height of 150 m means an orthometric height of about _____ m.",
+    "correct": "107",
+    "explanation": "150 - 43 (geoid undulation) ≈ 107."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Gauss-Krüger system uses _____ degree zones.",
+    "correct": "3",
+    "explanation": "Narrower than UTM for higher accuracy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geodetic _____ is the angle from the equatorial plane along the ellipsoid normal.",
+    "correct": "latitude",
+    "explanation": "The standard meaning of 'latitude' in modern contexts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Meridian convergence at higher latitudes is described by the _____(φ) factor.",
+    "correct": "cos",
+    "explanation": "L_EW = R × cos(φ) × Δλ."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Shape_Area in geographic coordinates is in units of square _____.",
+    "correct": "degrees",
+    "explanation": "A physically meaningless unit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ projection is used by Google Maps and OpenStreetMap.",
+    "correct": "Web Mercator",
+    "explanation": "EPSG:3857 for display only."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ is an ellipsoid positioned relative to the actual Earth.",
+    "correct": "datum",
+    "explanation": "Like fitting a glove onto a hand."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NAP is the vertical datum of the _____.",
+    "correct": "Netherlands",
+    "explanation": "Amsterdam Ordnance Datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAVD88 replaced _____ as the US vertical datum.",
+    "correct": "NGVD29",
+    "explanation": "National Geodetic Vertical Datum of 1929."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The IGS operates a global network of over _____ GNSS stations.",
+    "correct": "500",
+    "explanation": "International GNSS Service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "China's geocentric datum _____ was adopted in 2008.",
+    "correct": "CGCS2000",
+    "explanation": "Modern Chinese geodetic system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The INSPIRE _____ mandates ETRS89 for EU spatial data.",
+    "correct": "Directive",
+    "explanation": "EU spatial data infrastructure regulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Conformal projections preserve local _____ and shapes.",
+    "correct": "angles",
+    "explanation": "But distort areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Equal-area projections preserve _____ at the expense of shape.",
+    "correct": "area",
+    "explanation": "Critical for hydrological calculations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US State Plane system has over _____ zones.",
+    "correct": "120",
+    "explanation": "Each with its own parameters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Bessel _____ ellipsoid was used in Central Europe before 1972.",
+    "correct": "1841",
+    "explanation": "For Hungarian systems prior to HD72."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ETRS89 and WGS84 diverge by about _____ cm due to plate motion.",
+    "correct": "90",
+    "explanation": "Since 1989."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ in 1777 proved flat maps must distort curved surfaces.",
+    "correct": "Euler",
+    "explanation": "Mathematical impossibility of perfect flattening."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Japan updated to _____ after the 2011 earthquake.",
+    "correct": "JGD2011",
+    "explanation": "Earthquake shifted islands by up to 5 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM cells in geographic coordinates become narrower _____ at higher latitudes.",
+    "correct": "east-west",
+    "explanation": "Due to meridian convergence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Height System is used in Hungary and much of Central/Eastern Europe.",
+    "correct": "Baltic",
+    "explanation": "Based on Kronstadt tide gauge."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EOV maximum scale error is less than _____%.",
+    "correct": "0.01",
+    "explanation": "Better than UTM's 0.04%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the great circle formula, d = R × _____(argument).",
+    "correct": "arccos",
+    "explanation": "Standard spherical distance formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Budapest to Debrecen great circle distance is approximately _____ km.",
+    "correct": "180",
+    "explanation": "Worked example in section 2.4.4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The practical workflow for multi-source data is: inventory, choose, reproject, and _____.",
+    "correct": "verify",
+    "explanation": "Verify alignment before analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EVRF aims to unify European _____ datums.",
+    "correct": "vertical",
+    "explanation": "European Vertical Reference Frame 2019."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE terrestrial water storage is expressed as equivalent depth in _____.",
+    "correct": "centimetres",
+    "explanation": "Of water spread over the area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ ranging system measures distance between GRACE satellites.",
+    "correct": "microwave",
+    "explanation": "To 1 micrometer accuracy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Budapest coordinate swap error would place it in central _____.",
+    "correct": "Kazakhstan",
+    "explanation": "(47.50, 19.04) as lon,lat → Kazakhstan."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Russian GLONASS and Chinese _____ are alternative GNSS systems.",
+    "correct": "BeiDou",
+    "explanation": "Four systems tracked by modern receivers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The practical message about vertical datums: always check the _____ of your elevation data.",
+    "correct": "vertical datum",
+    "explanation": "Especially when combining sources."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For Hungarian data, identify Easting and Northing by _____ range.",
+    "correct": "value",
+    "explanation": "Not by column headers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The earth's oblateness is caused by _____ effect of rotation.",
+    "correct": "centrifugal",
+    "explanation": "Pushes material outward at the equator."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A spirit level is parallel to the _____, not to the ellipsoid.",
+    "correct": "geoid",
+    "explanation": "Because the geoid is perpendicular to gravity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the science of measuring Earth's shape, orientation, and gravity field.",
+    "correct": "geodesy",
+    "explanation": "The hidden foundation of every water map."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAD83 origin is about _____ metres from Earth's true centre of mass.",
+    "correct": "2.2",
+    "explanation": "Original 1986 realization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EOV azimuth of initial line is _____°.",
+    "correct": "90",
+    "explanation": "Standard EOV parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In a floodplain with 0.1% slope, a 0.5 m error shifts flood boundary by _____ m.",
+    "correct": "500",
+    "explanation": "Critical for flood mapping accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the geoid, not the ellipsoid, is the natural reference surface for elevation in hydrology.",
+    "correct": "Water flows downhill in the gravitational sense — from higher to lower gravitational potential. The geoid is everywhere perpendicular to gravity, defining the direction of 'downhill.' A lake surface is parallel to the geoid, not to any ellipsoid. An ellipsoid is a mathematical convenience that doesn't align with gravity. Using ellipsoidal heights for flood mapping could introduce errors of 38-46 m in Hungary, completely invalidating results.",
+    "explanation": "Section 2.2.1 explains the physical significance of the geoid."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical problems that arise when confusing 'Define Projection' with 'Project' in GIS.",
+    "correct": "'Define Projection' sets metadata about what CRS the data is already in. 'Project' transforms coordinates to a new system. If EOV data lacking a .prj file is mistakenly 'Projected' to WGS84 (assuming it's already WGS84), the software treats 6-digit metre values as degrees — producing nonsensical coordinates. The correct approach: first Define as EOV, then Project to WGS84. This is one of the most common and serious GIS errors.",
+    "explanation": "Section 2.11.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the UTM, EOV, and Gauss-Krüger coordinate systems for use in Hungary.",
+    "correct": "UTM Zone 34N: 6° wide, k₀=0.9996, WGS84 datum, international standard but ~0.04% max error. EOV: covers all Hungary in one zone, k₀=0.99993, HD72 datum, <0.01% error — best for national work. Gauss-Krüger: 3° zones, k₀=1.0, legacy system. For Hungarian-only work, EOV is preferred; for European integration, ETRS89/UTM; Gauss-Krüger only for legacy data.",
+    "explanation": "Section 2.7 compares these systems."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Web Mercator should never be used for hydrological analysis.",
+    "correct": "Web Mercator (EPSG:3857) preserves shapes but distorts areas dramatically away from the equator. At Budapest's latitude (~47.5°N), areas are inflated by 1/cos²(47.5°) ≈ 2.18×. A 42.5 km² watershed would compute as 92.6 km² — a catastrophic error for rainfall-runoff calculations. For display it's ubiquitous and effective, but all analysis must use an appropriate equal-area or low-distortion projected CRS.",
+    "explanation": "Sections 2.6.2 and 2.7.6."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the workflow for converting a GPS measurement to Hungarian EOV coordinates with proper elevation.",
+    "correct": "1) Measure with GNSS receiver → WGS84 ellipsoidal coordinates (φ, λ, h). 2) Transform horizontally from WGS84 to HD72/EOV using Helmert parameters or national grid shift file. 3) Convert ellipsoidal height h to orthometric height H by subtracting geoid undulation N: H = h - N (~43 m in Hungary). 4) Result: EOV Easting/Northing with Baltic Height System elevation. The 40+ m geoid correction is critical for any water-level work.",
+    "explanation": "Section 2.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three questions that drive geodesy for the water professional.",
+    "correct": "(1) What is Earth's shape — leading to geoid and ellipsoid as reference surfaces. (2) How to flatten Earth onto a map without destroying needed information — the projection problem, where equal-area is usually critical. (3) How to ensure data from different sources/countries/decades can be combined — the datum transformation problem. Each has real consequences: wrong projection = wrong watershed areas; wrong datum = features shifted by metres to hundreds of metres.",
+    "explanation": "Section 2.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare WGS84, NAD83, ETRS89, and HD72 as geodetic datums.",
+    "correct": "WGS84: geocentric, global (GPS), EPSG:4326. NAD83: plate-fixed to N. America, ~2 m from WGS84, EPSG:4269. ETRS89: plate-fixed to Eurasia, ~0.9 m from WGS84, EU standard, EPSG:4258. HD72: local non-geocentric, ~50-60 m from WGS84, Hungarian national, EPSG:4237. The key asymmetry: NAD83 and ETRS89 can be treated as WGS84 for most work; HD72 must always be transformed.",
+    "explanation": "Sections 2.3.2-2.3.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the GRACE mission for geodesy and water science.",
+    "correct": "GRACE measures gravity field changes by tracking distance between twin satellites to 1 micrometer accuracy. Because water has mass, gravity changes reveal water storage variations — including invisible groundwater. GRACE showed Texas lost ~100 km³ during 2011 and the Indo-Gangetic Basin loses ~54 km³/yr. This connects geodesy full circle: the gravity field defining the geoid is itself changing as water redistributes, making geodesy a dynamic monitoring tool.",
+    "explanation": "Section 2.10."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Hungarian EOV X/Y confusion and how to resolve it.",
+    "correct": "Hungarian geodetic practice historically uses Y for Northing and X for Easting — opposite to international convention. Different agencies may reverse even this. Column labels are unreliable. The solution: identify by value range. Values 0-400,000 are Northing; 400,000-1,000,000 are Easting. For example, X=699,414 and Y=186,152 means 699,414 is Easting (despite 'X' label). Any workflow importing Hungarian data needs a value-range check.",
+    "explanation": "Section 2.7.4 and 2.13.3."
+  },
+  {
+    "type": "essay",
+    "question": "Why do different countries have different vertical datums, and what problems does this cause?",
+    "correct": "Vertical datums define elevation zero from different tide gauges measured at different times: Kronstadt (Baltic), Rimouski (NAVD88), Amsterdam (NAP). Each sea level point is different, creating offsets between systems. For transboundary work (e.g., Danube flood mapping across 10 countries with 3+ vertical datum traditions), these differences must be harmonised. A 1-metre offset shifts flood boundaries by hundreds of metres in flat terrain — potentially affecting which areas appear at risk.",
+    "explanation": "Section 2.5.2 and 2.9."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the properties that map projections can preserve and why equal-area is preferred for hydrology.",
+    "correct": "Projections can preserve: area (equal-area/equivalence), local shapes/angles (conformal), distances along certain lines (equidistant), or compromise between all. None can preserve everything simultaneously (Euler, 1777). For hydrology, equal-area is critical because runoff volume = rainfall depth × area - losses. A 5% area error directly produces 5% volume error. Albers Equal Area Conic (US) and ETRS89/LAEA (Europe) are the standards.",
+    "explanation": "Sections 2.6.1-2.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the three families of map projections and their best applications.",
+    "correct": "Conic: cone over globe, best for mid-latitude east-west regions (Albers for US, Lambert CC for State Plane). Cylindrical: cylinder around globe, transverse orientation best for north-south strips (UTM, Gauss-Krüger). Azimuthal: plane tangent to globe, best for polar or circular regions (Lambert Azimuthal EA for INSPIRE/Europe). Each produces characteristic distortion patterns. The choice depends on study area shape and required properties.",
+    "explanation": "Section 2.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for combining multi-source spatial data.",
+    "correct": "Step 1: Inventory all datasets and their CRS/EPSG codes. Step 2: Choose a working CRS (EOV for Hungary, ETRS89/LAEA for Europe, WGS84/UTM for global). Step 3: Reproject all data to the working system. Step 4: Verify alignment by overlaying — check that streams follow DEM valleys, gauges fall on streams, boundaries match imagery. This workflow applies universally regardless of location; only the datum names and EPSG codes change.",
+    "explanation": "Section 2.12.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss coordinate system challenges specific to developing regions.",
+    "correct": "Legacy colonial-era datums (Clarke 1880 in former British/French Africa) with poorly documented transformation parameters. Sparse or degraded national geodetic networks. Multiple datums in simultaneous use without metadata. The practical approach: start with WGS84/UTM global datasets (SRTM, HydroSHEDS, CHIRPS), introduce national datums only where necessary. AFREF is working toward continent-wide geocentric datums to resolve the patchwork.",
+    "explanation": "Section 2.12.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how GNSS reference networks improve upon standalone GPS accuracy.",
+    "correct": "Standalone GPS: ~3-5 m accuracy. Differential GNSS exploits spatially correlated atmospheric errors: a reference station at a known location computes corrections broadcast to nearby receivers. RTK achieves 1-2 cm horizontal accuracy. National CORS networks (US: 1800+ stations, Hungary: GNSSnet.hu, Europe: EPN) provide this infrastructure. Modern receivers track GPS, GLONASS, Galileo, and BeiDou simultaneously for better performance.",
+    "explanation": "Section 2.8."
+  },
+  {
+    "type": "essay",
+    "question": "Why does vertical accuracy matter more than horizontal accuracy for flood mapping?",
+    "correct": "Water flows downhill — centimetres of elevation error change predicted flow direction in flat terrain. In a floodplain with 0.1% slope, 0.5 m error shifts the flood boundary 500 m horizontally. In Hungary's Great Plain (slopes <0.05%), sensitivity is even greater. A 40+ m error from using ellipsoidal heights instead of orthometric would be catastrophic. Proper geoid correction and consistent vertical datums are essential for any water-level analysis.",
+    "explanation": "Sections 2.5 and 2.9.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between sea level change and vertical datums.",
+    "correct": "Relative sea level trends combine global rise (~3.6 mm/yr, accelerating) with local land motion. Galveston TX: +6.5 mm/yr (subsidence from extraction). Stockholm: -3.8 mm/yr (post-glacial rebound). This means 'mean sea level' is not constant — vertical datums based on different tide gauges at different epochs don't agree. Levelling networks must be periodically re-measured. For inland Hungary, land subsidence from groundwater extraction analogously affects historical elevation data.",
+    "explanation": "Section 2.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the central practical lesson about coordinate systems for Hungarian hydroinformatics.",
+    "correct": "The key asymmetry: ETRS89/NAD83 data can be treated as WGS84 for most work (~2 m and ~0.9 m differences). But HD72/EOV data is offset ~50-60 m from WGS84 and MUST be transformed before combining with any European or global dataset. This is the central practical lesson. For work confined to Hungary, use EOV. For European integration, transform to ETRS89. Always check datum of every dataset and transform before combining.",
+    "explanation": "Section 2.14.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how GRACE data for the Danube basin contribute to water management understanding.",
+    "correct": "GRACE has been used to evaluate the 2003 European drought in the Danube basin, revealing that total water deficit was comparable to several months of Danube discharge at Budapest. The G3P product (GFZ Potsdam) separates total storage into soil moisture, surface water, and groundwater components. For Hungarian hydrologists, GRACE/G3P provides unique perspective on Tisza basin and Great Plain water storage changes, invaluable for basin-scale water balance validation even though resolution (~300 km) is too coarse for local decisions.",
+    "explanation": "Sections 2.10.2-2.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a geocentric vs plate-fixed datum and their practical differences.",
+    "correct": "Geocentric (WGS84, ITRF): centre at Earth's mass centre; coordinates change as tectonic plates move. Plate-fixed (NAD83, ETRS89): coordinates stay constant for points on the same plate. For a benchmark in California, NAD83 coordinates stay fixed while WGS84 coordinates change ~5 cm/yr as the Pacific Plate moves. For Hungary, ETRS89 coordinates are stable while the actual position drifts ~2.5 cm/yr. For watershed hydrology this is negligible; for precise geodetic work and decades-long monitoring, it matters.",
+    "explanation": "Sections 2.3 and 2.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Albers Equal Area Conic projection's mathematical property and its hydrological significance.",
+    "correct": "At every point: kp × km = 1 (parallel scale factor × meridian scale factor). If features stretch 1.02× east-west, they compress 0.98× north-south. Area is preserved exactly everywhere; shape is slightly distorted. For hydrology, this means rainfall depth × area calculations are accurate everywhere on the map — critical for runoff volume estimation. US standard parallels (29.5°N, 45.5°N) keep maximum distortion below 1.25%.",
+    "explanation": "Section 2.6.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the Copernicus DEM with the Hungarian DDM-5 for hydrological applications.",
+    "correct": "Copernicus DEM (GLO-30): 30 m resolution, global, free, WGS84/EGM2008 vertical datum, Digital Surface Model (captures buildings/trees). DDM-5: 5 m resolution, Hungary only, purchased from Lechner, EOV/Baltic Height System, derived from topographic contours. For Hungarian work requiring high resolution and bare-ground accuracy, DDM-5 is superior. For European integration and free access, Copernicus DEM is preferred. The EEA-10 (10 m, restricted) bridges the gap.",
+    "explanation": "Section 3.2.3 with chapter 2 CRS context."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how tectonic motions affect geodetic reference frames and why this matters for long-term monitoring.",
+    "correct": "Tectonic plates move 1-10 cm/year. Over decades, this accumulates to metres of displacement. Plate-fixed datums (NAD83, ETRS89) absorb this by definition. But for subsidence monitoring in the Great Hungarian Plain (from groundwater extraction and tectonics), the reference frame must account for both local subsidence and regional plate motion. Decades-long GNSS time series must distinguish tectonic motion from the subsidence signal of interest. Re-levelling networks periodically maintains vertical reference integrity.",
+    "explanation": "Section 2.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the EPSG database in international hydroinformatics.",
+    "correct": "The EPSG Geodetic Parameter Dataset provides standardised numeric codes for every CRS, datum, ellipsoid, and transformation worldwide — eliminating ambiguity from names that vary by software and language. 'EPSG:23700' unambiguously identifies EOV regardless of whether software calls it 'HD72/EOV' or 'Hungarian National Grid.' When receiving any dataset, the first question should be 'What is the EPSG code?' The database at epsg.io is the authoritative transformation parameter source.",
+    "explanation": "Section 2.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why on-the-fly reprojection in GIS is both a convenience and a trap.",
+    "correct": "Modern GIS automatically transforms data with different CRS for display, making mismatched layers appear to align correctly on screen. This is convenient for quick visualisation but dangerous because the underlying data remains in original coordinates. Geoprocessing operations (intersect, buffer, area calculation) may fail or give wrong results if inputs have inconsistent CRS. Best practice: explicitly reproject all data to a common CRS at the start, not rely on on-the-fly during analysis.",
+    "explanation": "Section 2.11.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the GRACE 2011 Texas case study illustrates geodetic concepts coming full circle.",
+    "correct": "The gravity field defining the geoid — the foundation of all elevation measurement — is itself changing as water redistributes across Earth. GRACE detected Texas losing ~100 km³ of water by measuring gravity changes from orbit. This demonstrates that geodesy is not merely the static foundation of mapmaking but a dynamic monitoring tool. The same physical phenomenon (gravity) that defines 'downhill' for water flow also reveals where water mass has been gained or lost at continental scales.",
+    "explanation": "Section 2.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare vertical datums across Europe and explain the challenges for transboundary flood mapping.",
+    "correct": "The Baltic Height System (Hungary, Eastern Europe, Kronstadt reference), NAP (Netherlands, origin for EVRF), ODN (Great Britain, Newlyn), and various national systems all define 'zero elevation' differently. The differences are not simple constant offsets because they reference different tide gauges and use different geoid models. For Danube flood mapping spanning 10 countries, elevations must be harmonised through EVRF2019 or EGM2008. Without this, flood boundaries would be systematically displaced at each national border.",
+    "explanation": "Sections 2.5.2 and 2.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of standard parallels in conic projections and their significance.",
+    "correct": "Standard parallels are circles of latitude where the cone intersects the globe and scale factor equals exactly 1.0. Between them, the map is slightly compressed; outside, slightly expanded. Choosing standard parallels to bracket the study area minimises distortion. For the US Albers (29.5°N, 45.5°N), maximum distortion stays below 1.25%. For a conic projection of Hungary, placing standard parallels at ~46°N and ~48.5°N would minimise distortion across the country.",
+    "explanation": "Sections 2.6.2 and 2.6.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical implications of DEM cells being non-square in geographic coordinates.",
+    "correct": "Global DEMs in geographic coordinates (like SRTM, Copernicus GLO-30) have cells that are approximately square only at the equator. At Budapest's latitude, a 1-arc-second cell is ~31 m N-S but only ~21 m E-W. Slope and aspect calculations on such grids must account for this asymmetry or they overestimate east-west gradients. Most GIS software handles this automatically when the CRS is correctly specified, but reprojecting to a metric CRS (UTM, EOV) before terrain analysis eliminates the issue entirely.",
+    "explanation": "Section 2.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the coordinate system equivalence table (Table 2.7) reveals a practical asymmetry.",
+    "correct": "NAD83/ETRS89 are close enough to WGS84 (~2 m/~0.9 m) that transformation is negligible for hydrology. But HD72 is ~50-60 m from WGS84, requiring explicit transformation. This asymmetry means US and EU researchers can casually mix national and global data with minimal error, while Hungarian researchers must always transform HD72/EOV data before combining with European or global datasets. This is the single most important practical lesson for Hungarian hydroinformatics.",
+    "explanation": "Section 2.14.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the GOCE satellite mission's contribution to geoid determination.",
+    "correct": "GOCE (Gravity field and Ocean Circulation Explorer) contributed to determining the geoid by measuring Earth's gravity field gradient at unprecedented accuracy from a low orbit (~255 km). Combined with GRACE (measuring gravity field changes over time) and surface gravity observations, GOCE improved geoid models like EGM2008. Better geoid models improve the conversion from GPS ellipsoidal heights to orthometric heights, directly benefiting flood mapping and hydraulic engineering accuracy.",
+    "explanation": "Section 2.2.1 mentions GOCE."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the EOV scale factor of 0.99993 for Hungarian national work.",
+    "correct": "The scale factor at the projection centre means the maximum scale error anywhere in Hungary is less than 0.01% — far better than UTM's 0.04%. For a 10 km measurement, the error is less than 1 metre. This is achieved because Hungary is compact enough (5° longitude, 3° latitude) that a single optimised oblique projection covers the entire country with minimal distortion. No zone boundaries are needed, simplifying all analyses. For any work confined to Hungarian territory, EOV is the optimal choice.",
+    "explanation": "Section 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the modernisation of US spatial reference frameworks and its international implications.",
+    "correct": "The US plans to replace NAD83 and NAVD88 with new ITRF-aligned frames in the late 2020s. This will bring US coordinates into closer alignment with WGS84, simplify international data exchange, and update the vertical reference. For international hydroinformatics, this means reduced transformation complexity when combining US and global data. The shift parallels the EU's adoption of ETRS89 and the broader global trend toward geocentric, ITRF-compatible datums.",
+    "explanation": "Section 2.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "How does understanding geodesy help diagnose common GIS errors in water resources work?",
+    "correct": "Common errors include: features shifted 50-60 m (HD72/WGS84 confusion), flood map displaced by hundreds of metres (vertical datum mismatch), watershed areas wrong by 2× (Web Mercator used for analysis), coordinates landing in wrong country (lat-lon swap), elevations off by 40 m (ellipsoidal height used as orthometric). Understanding geodetic principles — datums, projections, vertical references — enables rapid diagnosis: check the CRS, check the datum, check the vertical reference. The geodetic knowledge turns mysterious errors into identifiable, fixable problems.",
+    "explanation": "Section 2.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Szolnok gauge station EOV coordinate identification example.",
+    "correct": "Station data shows X=699,414 and Y=186,152. Following the value-range rule: 699,414 falls in 400,000-1,000,000 range → Easting (despite being labelled 'X'). 186,152 falls in 0-400,000 range → Northing (despite being labelled 'Y'). The position is consistent with Szolnok's location in central Hungary. This example demonstrates why value-range identification is the only reliable method for Hungarian datasets, since label conventions are inconsistent across agencies.",
+    "explanation": "Section 2.7.4 worked example."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the INSPIRE Directive in European spatial data interoperability.",
+    "correct": "The INSPIRE Directive mandates ETRS89 as the reference system for all EU cross-border spatial data, and ETRS89/LAEA (EPSG:3035) as the equal-area projection for pan-European mapping. Copernicus products, Eurostat datasets, and cross-border water management data are all distributed in ETRS89 or projections based on it. For Hungarian hydroinformatics, ETRS89 is the 'bridge datum' — national EOV/HD72 data must be transformed to ETRS89 for European interoperability.",
+    "explanation": "Sections 2.3.4 and 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what makes the Budapest-Debrecen great circle distance calculation instructive.",
+    "correct": "The calculation (φA=47.497°, λA=19.040° to φB=47.532°, λB=21.625°) yields ~180 km via the spherical law of cosines. This is instructive because: (1) it demonstrates converting degrees to radians for computation; (2) it shows that at similar latitudes, the result closely matches a projected coordinate calculation; (3) the ~50 km difference from driving distance (230 km) illustrates that roads don't follow great circles. The worked example makes geodetic formulae tangible.",
+    "explanation": "Section 2.4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how GRACE data for Texas demonstrated that geodesy is a dynamic tool for water monitoring.",
+    "correct": "GRACE showed the gravity field changing as ~100 km³ of water was lost from Texas. The same gravity field that defines the geoid and underpins all elevation measurement was itself varying due to water redistribution. This demonstrates that geodesy is not merely the static foundation of mapmaking — it is a dynamic observational tool. The geoid-defining gravity measurements and the water-monitoring gravity measurements are the same physical phenomenon measured at different scales and purposes.",
+    "explanation": "Section 2.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the choice of CRS recommendation varies with analysis scale.",
+    "correct": "For Hungary-only work: EOV (EPSG:23700) — best accuracy, no zone boundaries. For pan-European: ETRS89 geographic (4258) for storage/exchange, ETRS89/LAEA (3035) for mapping/area calculations. For global: WGS84 geographic (4326) for storage, UTM or suitable equal-area for calculations. For web publishing: Web Mercator (3857) for display only. Each scale requires balancing accuracy, compatibility, and institutional standards.",
+    "explanation": "Section 2.14.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the 2011 Japanese earthquake for geodetic reference frames.",
+    "correct": "The 2011 earthquake shifted the Japanese islands by up to 5 metres, requiring Japan to update its datum to JGD2011. This dramatically illustrates why geodetic reference frames are not static: they can be disrupted by natural events. It highlights the importance of GNSS monitoring networks for detecting such shifts and the need for periodic re-measurement. For water infrastructure (levees, dams), post-earthquake survey is critical to verify that design elevations remain valid.",
+    "explanation": "Section 2.3.6."
+  },
+  {
+    "type": "essay",
+    "question": "How does the 'three reference surfaces' concept (physical surface, geoid, ellipsoid) organize geodetic thinking?",
+    "correct": "Physical surface: irregular terrain (mountains, valleys) — what we see. Geoid: smooth but undulating gravity surface — what defines 'level' and 'downhill' for water. Ellipsoid: perfectly smooth mathematical approximation — what provides the coordinate framework. Height h (GPS/ellipsoid) ≠ H (orthometric/geoid). The three-surface model organizes understanding: the ellipsoid for computation, the geoid for physical meaning, and the gap between them (N) as the critical conversion factor.",
+    "explanation": "Section 2.2 and Figure 2.1."
+  },
+  {
+    "type": "mcq",
+    "question": "GNSS refers to:",
+    "options": [
+      "A) GPS only",
+      "B) GPS + GLONASS",
+      "C) All systems (GPS, GLONASS, Galileo, BeiDou)",
+      "D) European only"
+    ],
+    "correct": "C",
+    "explanation": "Global Navigation Satellite Systems collectively."
+  },
+  {
+    "type": "mcq",
+    "question": "Bessel 1841 was used in:",
+    "options": [
+      "A) North America",
+      "B) Central Europe",
+      "C) Asia",
+      "D) Africa"
+    ],
+    "correct": "B",
+    "explanation": "Central European surveys before HD72."
+  },
+  {
+    "type": "mcq",
+    "question": "The original GRACE ended operations in:",
+    "options": [
+      "A) 2010",
+      "B) 2015",
+      "C) 2017",
+      "D) 2020"
+    ],
+    "correct": "C",
+    "explanation": "GRACE-FO followed in 2018."
+  },
+  {
+    "type": "mcq",
+    "question": "Flattening formula: f = ?",
+    "options": [
+      "A) (a+b)/a",
+      "B) (a-b)/a",
+      "C) (a-b)/b",
+      "D) a/(a-b)"
+    ],
+    "correct": "B",
+    "explanation": "f = (a - b)/a."
+  },
+  {
+    "type": "mcq",
+    "question": "NAVD88 used ~_____ km of levelling lines:",
+    "options": [
+      "A) 100,000",
+      "B) 325,000",
+      "C) 625,000",
+      "D) 1,000,000"
+    ],
+    "correct": "C",
+    "explanation": "625,000 km across North America."
+  },
+  {
+    "type": "mcq",
+    "question": "Equidistant projections preserve:",
+    "options": [
+      "A) Area",
+      "B) Angles",
+      "C) Distances along certain lines",
+      "D) All"
+    ],
+    "correct": "C",
+    "explanation": "Distances along specific lines."
+  },
+  {
+    "type": "mcq",
+    "question": "Russia's GLONASS datum is:",
+    "options": [
+      "A) WGS84",
+      "B) PZ-90",
+      "C) ETRS89",
+      "D) CGCS2000"
+    ],
+    "correct": "B",
+    "explanation": "PZ-90 datum."
+  },
+  {
+    "type": "mcq",
+    "question": "Gauss-Krüger central meridian scale factor:",
+    "options": [
+      "A) 0.9993",
+      "B) 0.9996",
+      "C) 0.9999",
+      "D) 1.0000"
+    ],
+    "correct": "D",
+    "explanation": "1.0000, higher accuracy than UTM."
+  },
+  {
+    "type": "mcq",
+    "question": "EPSG code for ETRS89 geographic:",
+    "options": [
+      "A) 4326",
+      "B) 4258",
+      "C) 4237",
+      "D) 4269"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:4258."
+  },
+  {
+    "type": "mcq",
+    "question": "Texas has how many State Plane zones?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 5",
+      "D) 7"
+    ],
+    "correct": "C",
+    "explanation": "Five zones, Lambert CC."
+  },
+  {
+    "type": "mcq",
+    "question": "Mean Earth radius for calculations:",
+    "options": [
+      "A) 6,357 km",
+      "B) 6,371 km",
+      "C) 6,378 km",
+      "D) 6,400 km"
+    ],
+    "correct": "B",
+    "explanation": "R = 6,371 km."
+  },
+  {
+    "type": "mcq",
+    "question": "GRACE TWS anomalies are in:",
+    "options": [
+      "A) kg/m²",
+      "B) cm equivalent water",
+      "C) km³",
+      "D) mbar"
+    ],
+    "correct": "B",
+    "explanation": "Centimeters equivalent water height."
+  },
+  {
+    "type": "true_false",
+    "question": "The geoid deviates from the ellipsoid by at most ~100 m worldwide.",
+    "correct": true,
+    "explanation": "Subtle but physically meaningful."
+  },
+  {
+    "type": "true_false",
+    "question": "A spirit level is parallel to the geoid.",
+    "correct": true,
+    "explanation": "Because geoid is perpendicular to gravity."
+  },
+  {
+    "type": "true_false",
+    "question": "NAD83 coordinates for California change as the Pacific Plate moves.",
+    "correct": false,
+    "explanation": "NAD83 is plate-fixed to N. America."
+  },
+  {
+    "type": "true_false",
+    "question": "Pulkovo 1942 uses the Krassowsky 1940 ellipsoid.",
+    "correct": true,
+    "explanation": "As listed in Table 2.2."
+  },
+  {
+    "type": "true_false",
+    "question": "The equatorial-polar radius difference is ~21 km.",
+    "correct": true,
+    "explanation": "6,378 - 6,357 ≈ 21 km."
+  },
+  {
+    "type": "true_false",
+    "question": "Western longitudes are positive in decimal degrees.",
+    "correct": false,
+    "explanation": "They are negative."
+  },
+  {
+    "type": "true_false",
+    "question": "A 3-arc-second cell at the equator is ~90 m.",
+    "correct": true,
+    "explanation": "Per the resolution table."
+  },
+  {
+    "type": "true_false",
+    "question": "Great circle distance is the longest path between two points on a sphere.",
+    "correct": false,
+    "explanation": "Shortest path."
+  },
+  {
+    "type": "true_false",
+    "question": "EVRF2019 aims to unify European vertical datums.",
+    "correct": true,
+    "explanation": "European Vertical Reference Frame."
+  },
+  {
+    "type": "true_false",
+    "question": "Post-glacial rebound causes land to subside.",
+    "correct": false,
+    "explanation": "It causes land to rise."
+  },
+  {
+    "type": "true_false",
+    "question": "Galveston sea level rise is +6.5 mm/yr.",
+    "correct": true,
+    "explanation": "Due to subsidence."
+  },
+  {
+    "type": "true_false",
+    "question": "Juneau AK relative sea level is falling at -12.7 mm/yr.",
+    "correct": true,
+    "explanation": "Rapid post-glacial rebound."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE measures inter-satellite distance to ~1 mm.",
+    "correct": false,
+    "explanation": "~1 micrometer."
+  },
+  {
+    "type": "true_false",
+    "question": "Clarke 1880 is common in former colonial Africa.",
+    "correct": true,
+    "explanation": "British and French territories."
+  },
+  {
+    "type": "true_false",
+    "question": "ITRS is a plate-fixed frame.",
+    "correct": false,
+    "explanation": "Earth-centred."
+  },
+  {
+    "type": "true_false",
+    "question": "Robinson preserves area.",
+    "correct": false,
+    "explanation": "Compromise projection."
+  },
+  {
+    "type": "true_false",
+    "question": "In 0.1% slope floodplain, 0.5 m error shifts boundary 500 m.",
+    "correct": true,
+    "explanation": "0.5/0.001 = 500 m."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE provides daily water storage measurements.",
+    "correct": false,
+    "explanation": "Monthly."
+  },
+  {
+    "type": "true_false",
+    "question": "Parts of the Great Hungarian Plain are subsiding.",
+    "correct": true,
+    "explanation": "From groundwater extraction."
+  },
+  {
+    "type": "true_false",
+    "question": "WGS84 current realization is G2296.",
+    "correct": true,
+    "explanation": "As of 2026."
+  },
+  {
+    "type": "true_false",
+    "question": "Geocentric latitude equals geodetic latitude everywhere.",
+    "correct": false,
+    "explanation": "Differ by up to ~0.19°."
+  },
+  {
+    "type": "true_false",
+    "question": "Winkel Tripel is suitable for quantitative analysis.",
+    "correct": false,
+    "explanation": "Compromise projection only."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE detected Texas lost ~3× Lake Mead volume.",
+    "correct": true,
+    "explanation": "~100 km³ vs ~33 km³."
+  },
+  {
+    "type": "true_false",
+    "question": "Lambert CC preserves area.",
+    "correct": false,
+    "explanation": "Preserves angles (conformal)."
+  },
+  {
+    "type": "true_false",
+    "question": "UTM false northing for Northern Hemisphere is 0 m.",
+    "correct": true,
+    "explanation": "10M for Southern."
+  },
+  {
+    "type": "true_false",
+    "question": "GEOID18 is maintained by ECMWF.",
+    "correct": false,
+    "explanation": "By NGS."
+  },
+  {
+    "type": "true_false",
+    "question": "US CORS has >1,800 stations.",
+    "correct": true,
+    "explanation": "NGS and partners."
+  },
+  {
+    "type": "true_false",
+    "question": "EPN coordinates European GNSS networks.",
+    "correct": true,
+    "explanation": "EUREF Permanent Network."
+  },
+  {
+    "type": "true_false",
+    "question": "Standalone GPS achieves ~30 cm accuracy.",
+    "correct": false,
+    "explanation": "~3-5 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The equipotential gravity surface is the _____.",
+    "correct": "geoid",
+    "explanation": "Approximates mean sea level."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS uses the principle of _____.",
+    "correct": "trilateration",
+    "explanation": "Distance from satellites."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Euler proved in _____ flat maps must distort curved surfaces.",
+    "correct": "1777",
+    "explanation": "Mathematical impossibility."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Equatorial-polar radius difference: ~_____ km.",
+    "correct": "21",
+    "explanation": "Due to rotation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE-FO = GRACE _____.",
+    "correct": "Follow-On",
+    "explanation": "2018 successor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAP is the datum of the _____.",
+    "correct": "Netherlands",
+    "explanation": "Amsterdam Ordnance Datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ projection preserves local shapes/angles.",
+    "correct": "conformal",
+    "explanation": "Like Mercator, Lambert CC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Robinson and Winkel Tripel are _____ projections.",
+    "correct": "compromise",
+    "explanation": "Not for quantitative analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NAVD88 used ~_____ km of levelling.",
+    "correct": "625,000",
+    "explanation": "Across North America."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stockholm sea level: _____ mm/yr (rebound).",
+    "correct": "-3.8",
+    "explanation": "Land rising."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EU standard datum is ETRS _____.",
+    "correct": "89",
+    "explanation": "European Terrestrial Reference System 1989."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Krassowsky _____ ellipsoid for Pulkovo.",
+    "correct": "1940",
+    "explanation": "Former Soviet sphere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CGCS2000: China's _____ datum.",
+    "correct": "geocentric",
+    "explanation": "Adopted 2008."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ Tripel: compromise global projection.",
+    "correct": "Winkel",
+    "explanation": "Not for analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "UTM Southern Hemisphere false northing: _____ m.",
+    "correct": "10,000,000",
+    "explanation": "Keeps values positive."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EPN = EUREF _____ GNSS Network.",
+    "correct": "Permanent",
+    "explanation": "European reference stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "US CORS has >_____ stations.",
+    "correct": "1,800",
+    "explanation": "NGS and partners."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 7-parameter _____ transformation converts between datums.",
+    "correct": "Helmert",
+    "explanation": "3 translations, 3 rotations, 1 scale."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Post-glacial _____ causes Scandinavian land to rise.",
+    "correct": "rebound",
+    "explanation": "From ice sheet melting."
+  },
+  {
+    "type": "essay",
+    "question": "Explain DSM vs DTM distinction for hydrological applications.",
+    "correct": "DSM captures building/tree tops; DTM shows bare ground. For hydrology in open terrain, difference is negligible. In forests/cities, DSM creates false barriers affecting flow routing. Copernicus DEM is DSM; LiDAR can produce both. DTM preferred for accurate hydrological analysis.",
+    "explanation": "DEM context."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss equal-area projections for rainfall-runoff calculations.",
+    "correct": "Runoff Volume = Rainfall Depth × Area − Losses requires accurate area. 5% area error → 5% volume error. Equal-area projections (Albers, LAEA) ensure kp × km = 1, preserving area. Web Mercator inflates Budapest areas by 2.18×. Essential for any calculation involving rainfall volumes, watershed areas, or densities.",
+    "explanation": "Section 2.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare NAVD88, Baltic Height System, and EVRF2019.",
+    "correct": "NAVD88: Rimouski benchmark, US standard. Baltic: Kronstadt tide gauge, Hungary/Eastern Europe. EVRF2019: pan-European unification. Differences aren't constant offsets (different references, geoid models). Cross-border flood mapping (Danube, 10 countries, 3+ vertical traditions) requires harmonisation through EVRF2019 or EGM2008.",
+    "explanation": "Section 2.5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain EPSG database's role in international data exchange.",
+    "correct": "Standardised numeric codes for every CRS eliminate language ambiguity. EPSG:23700 unambiguously identifies EOV. The database includes transformation parameters. 'What is the EPSG code?' is the universal first question when receiving any dataset. epsg.io is the authoritative reference.",
+    "explanation": "Section 2.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe GPS-to-EOV workflow.",
+    "correct": "1) GNSS → WGS84 (φ, λ, h). 2) Helmert/grid shift → HD72/EOV (~50-60 m shift). 3) h - N → orthometric H (~43 m in Hungary). Each step matters: skipping either introduces tens-of-metres errors. Step 3 is critical for water-level work.",
+    "explanation": "Section 2.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss lat/lon (Y,X) order confusion.",
+    "correct": "Geographic coordinates are (lat,lon) = (Y,X) but GIS expects (X,Y) = (lon,lat). Reversing places Budapest in Kazakhstan instead of Hungary. CSV files and APIs are common sources. Defence: always plot sample points after import to verify location.",
+    "explanation": "Sections 2.4.1, 2.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain 'projection distortion' and how it varies.",
+    "correct": "Scale factor k varies across the map (k=1 on globe, deviates on flat map). UTM: k=0.9996 at central meridian, 1.0 at ~180 km, increases toward boundaries. Equal-area: kp × km = 1 preserves area but allows shape distortion. Understanding distortion patterns is essential for choosing appropriate projections.",
+    "explanation": "Section 2.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare plate-fixed and Earth-centred frames for monitoring.",
+    "correct": "Plate-fixed (NAD83, ETRS89): stable coordinates on same plate. Earth-centred (WGS84, ITRF): coordinates change with plate motion. For hydrology: negligible. For decades-long monitoring (subsidence, GNSS time series): must separate tectonic motion from signal of interest.",
+    "explanation": "Section 2.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe GOCE+GRACE contributions to geoid models.",
+    "correct": "GRACE measures gravity changes over time (monthly, ~300 km). GOCE measured static gravity gradient at high accuracy from low orbit. Combined with surface observations, they improved EGM2008. Better geoid models improve GPS-to-orthometric conversion, benefiting flood mapping and hydraulic engineering.",
+    "explanation": "Sections 2.2.1, 2.10."
+  },
+  {
+    "type": "essay",
+    "question": "Explain EOV X/Y confusion with worked example.",
+    "correct": "X=699,414, Y=186,152 for Szolnok. 699,414 in 400k-1M = Easting (despite 'X'). 186,152 in 0-400k = Northing (despite 'Y'). Only value-range identification is reliable. Different agencies use different conventions. Every workflow needs a value-range check.",
+    "explanation": "Sections 2.7.4, 2.13.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss US spatial reference modernisation.",
+    "correct": "Replacing NAD83 and NAVD88 with ITRF-aligned frames (late 2020s). Benefits: closer WGS84 alignment, simplified international exchange, geometric vertical datum. Parallels EU adoption of ETRS89 and global trend toward geocentric systems.",
+    "explanation": "Section 2.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "How does geodesy prevent dangerous flood mapping errors?",
+    "correct": "Without understanding: 50-60 m datum shift, 40+ m height error, 2.18× area inflation, 500+ m flood boundary displacement. Understanding enables rapid diagnosis: check CRS, check datum, check vertical reference. Turns mysterious errors into fixable problems.",
+    "explanation": "Section 2.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain geoid undulation's physical meaning.",
+    "correct": "N = vertical separation between geoid and ellipsoid. In Hungary: 38-46 m. The gravity-defined 'level' surface deviates from the mathematical ellipsoid due to subsurface density variations. For GPS: H = h - N. Without correction, all elevations wrong by tens of metres.",
+    "explanation": "Section 2.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss GRACE Danube basin contributions.",
+    "correct": "GRACE evaluated 2003 European drought in the Danube basin — total water deficit comparable to months of Danube discharge at Budapest. G3P separates into components. For Hungarian hydrologists: unique basin-scale perspective on Tisza basin/Great Plain water storage changes, invaluable for water balance validation.",
+    "explanation": "Section 2.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare UTM 34N and EOV for eastern Hungary.",
+    "correct": "UTM 34N: 18-24°E, k₀=0.9996, WGS84, ~0.04% max distortion. EOV: all Hungary, k₀=0.99993, HD72, <0.01%. For eastern Hungary, both work. EOV: better accuracy, matches national data. UTM: international standard, no datum transform for global data. Choice depends on project scope.",
+    "explanation": "Section 2.7."
+  },
+  {
+    "type": "essay",
+    "question": "Explain 'representative fraction' and projection distortion relationship.",
+    "correct": "Map scale (e.g. 1:100,000) reduces Earth to model globe. Projection then flattens globe → additional scale factor k varying spatially. Total scale = representative fraction × k. Two-step process clarifies why projections distort and why distortion varies spatially.",
+    "explanation": "Section 2.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Japan's JGD2011 update for global geodesy.",
+    "correct": "2011 earthquake shifted islands by up to 5 m, requiring immediate datum update. Illustrates: geodetic frames aren't permanent; natural events invalidate coordinates overnight; GNSS monitoring essential; post-event verification critical for water infrastructure. Generalises to all seismically active regions.",
+    "explanation": "Section 2.3.6."
+  },
+  {
+    "type": "essay",
+    "question": "Describe projection choice effect on visual appearance vs analytical accuracy.",
+    "correct": "Conformal (Mercator, Lambert CC): maps look 'right' but distort areas (Greenland = Africa in Mercator). Equal-area: preserves area for quantitative work but distorts shapes. Web Mercator: perfect for zooming but 2.18× inflation at Budapest. Choice depends on purpose: display → conformal; analysis → equal-area.",
+    "explanation": "Sections 2.6.2-2.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain meridian convergence effects on DEM analysis.",
+    "correct": "At Budapest (47.5°N), 1° longitude = only 75 km (vs 111 km at equator). DEM cells become rectangular (31 m N-S × 21 m E-W for 1-arcsec). Slope/aspect calculations must account for asymmetry. GIS handles this when CRS specified, but reprojecting to metric CRS eliminates it.",
+    "explanation": "Section 2.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss precise vertical systems for levee design.",
+    "correct": "Levee design requires centimetre accuracy (2013 Budapest showed). Vertical datums must be consistent. GPS heights need geoid correction. Different countries' datums require harmonisation. For 4,200 km of Hungarian levees, centimetre-level vertical accuracy is a life-safety requirement.",
+    "explanation": "Sections 2.5, 2.9.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why 'datum names change; logic does not.'",
+    "correct": "Whether in Hungary (HD72/EOV), US (NAD83/State Plane), India (Everest), or Kenya (Clarke 1880): same principles apply. Know CRS, choose working system, transform carefully, verify alignment. Specific datums/EPSG codes differ by location; the logical workflow is universal.",
+    "explanation": "Section 2.15."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Hungarian national grid shift file and when to use it.",
+    "correct": "Standard HD72→ETRS89 uses 7-parameter Helmert (EPSG:1449). The Lechner grid shift file provides sub-metre accuracy by modelling spatially varying distortions. Use grid shift for precise work (levee surveys, engineering). Standard Helmert adequate for most hydrological applications.",
+    "explanation": "Section 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare CORS, EPN, and IGS networks.",
+    "correct": "CORS (US): 1,800+ stations, sub-cm post-processed accuracy. EPN (Europe): coordinates national networks, linked to ETRS89. IGS (Global): 500+ stations, defines global frame. Different scales: IGS → global frame, EPN → European realization, CORS → national implementation. Modern receivers benefit from all.",
+    "explanation": "Section 2.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain on-the-fly reprojection as 'convenience and trap.'",
+    "correct": "GIS auto-transforms layers for display, making mismatched data appear aligned. Convenience: quick visualisation. Trap: underlying data unchanged, geoprocessing may fail with inconsistent CRS. Software may handle silently with wrong parameters. Best practice: explicitly reproject at project start.",
+    "explanation": "Section 2.11.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Great Hungarian Plain subsidence and geodetic implications.",
+    "correct": "Subsidence from groundwater extraction and tectonics affects historical elevation accuracy. Benchmarks from 1972 may have moved vertically. Levelling networks need periodic re-measurement. For flood management with centimetre margins, this matters. GNSS time series can monitor it but must distinguish local subsidence from plate motion.",
+    "explanation": "Section 2.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe watershed area calculation in different CRS (Bükk Mountains example).",
+    "correct": "42.5 km² true area: WGS84 → 0.0059 sq degrees (meaningless). EOV → 42.48 km² (<0.05% error). UTM → 42.51 km² (<0.1%). Web Mercator → 92.6 km² (inflated 2.18×). Web Mercator looks plausible (square metres) but is systematically wrong — the most dangerous error type.",
+    "explanation": "Section 2.11.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Albers standard parallel selection.",
+    "correct": "Parallels bracket the study area to minimise distortion. At standard parallels, k=1. Between: slightly compressed; outside: expanded. US (29.5°N, 45.5°N) keeps max distortion <1.25%. For Hungary, ~46°N and ~48.5°N would minimise distortion. Choice is an optimisation.",
+    "explanation": "Section 2.6.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare GRACE and ground networks for water storage monitoring.",
+    "correct": "Ground (wells, gauges): high temporal resolution, point measurements, local accuracy, sparse coverage, surface only. GRACE: monthly, ~300 km, global, total column (including groundwater). G3P separates components using models. Complementary: gauges for local detail, GRACE for regional totals and invisible groundwater.",
+    "explanation": "Section 2.10."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss combining historical and modern data coordinate challenges.",
+    "correct": "Historical data in obsolete datums (NAD27, pre-HD72 Bessel) differs from modern by tens to hundreds of metres. Historical flood records, survey benchmarks in old datums need transformation before comparison. US: NAD27→NAD83 via NADCON. Hungary: pre-HD72 needs multi-step transformation. Without proper handling, systematic errors in historical comparisons.",
+    "explanation": "Datum evolution sections."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why 'know your CRS' is the most important skill.",
+    "correct": "Violations cause: 50-60 m shifts (datum confusion), 2× area errors (wrong projection), 40+ m elevation errors (ellipsoidal vs orthometric), silent overlay failures. On-the-fly display hides mismatches. First action for any dataset: verify EPSG code. Understanding CRS turns mysterious errors into diagnosable problems.",
+    "explanation": "Section 2.11.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three reference surfaces concept.",
+    "correct": "Physical surface: irregular terrain. Geoid: smooth gravity surface defining 'level.' Ellipsoid: perfectly smooth mathematical approximation for coordinates. h (GPS/ellipsoid) ≠ H (orthometric/geoid). The gap (N) is the critical conversion. Ellipsoid for computation, geoid for physical meaning.",
+    "explanation": "Section 2.2 and Figure 2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Table 2.7 asymmetry for Hungarian practice.",
+    "correct": "ETRS89/NAD83 ≈ WGS84 (2 m/0.9 m): negligible. HD72 differs by 50-60 m: must transform. US/EU researchers can mix national and global data casually. Hungarian researchers must always explicitly transform HD72/EOV before combining with any European/global dataset. Central practical lesson.",
+    "explanation": "Section 2.14.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss GRACE 2011 Texas case as 'geodesy coming full circle.'",
+    "correct": "The gravity field defining the geoid — foundation of elevation measurement — is changing as water redistributes. GRACE detected 100 km³ loss by measuring gravity changes. Geodesy is not static mapmaking foundation but a dynamic monitoring tool. The same physical phenomenon (gravity) defines 'downhill' and reveals where water mass has been lost.",
+    "explanation": "Section 2.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain geocentric datums vs local datums.",
+    "correct": "Geocentric: ellipsoid centre at Earth's mass centre (satellite-determined). Globally consistent. Local: ellipsoid positioned for best regional geoid fit. Good locally but coordinates don't connect globally. Modern trend: all toward geocentric (WGS84, ETRS89, CGCS2000). Legacy data remains in local datums requiring transformation.",
+    "explanation": "Section 2.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe vertical datum errors compounding with terrain slope.",
+    "correct": "In 0.1% slope floodplain: 0.5 m error → 500 m boundary shift. Great Plain (<0.05%): 0.5 m → 1000 m shift. Compounds with datum offsets and GPS height confusion (~40 m). Flood maps in flat terrain are exquisitely sensitive to vertical accuracy. Proper datum management is a life-safety issue.",
+    "explanation": "Sections 2.5, 2.9.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss INSPIRE Directive and ETRS89.",
+    "correct": "INSPIRE mandates ETRS89 for all EU cross-border data, ETRS89/LAEA (3035) for pan-European mapping. Copernicus, Eurostat, flood risk maps all use ETRS89-based systems. For Hungary: ETRS89 is the 'bridge datum.' National EOV/HD72 → ETRS89 for European interoperability, while ETRS89 → WGS84 is trivial.",
+    "explanation": "Sections 2.3.4, 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Budapest-Debrecen great circle calculation as instructive.",
+    "correct": "(47.497°, 19.040°) to (47.532°, 21.625°) → ~180 km. Instructive: demonstrates radian conversion, shows similar-latitude result matches projected calculation, 50 km difference from driving distance (230 km) illustrates roads ≠ great circles. Makes geodetic formulae tangible.",
+    "explanation": "Section 2.4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how CRS recommendation varies with analysis scale.",
+    "correct": "Hungary-only: EOV (23700). Pan-European: ETRS89/4258 for storage, ETRS89-LAEA/3035 for mapping. Global: WGS84/4326 for storage, UTM for calculations. Web: Mercator/3857 for display only. Each scale balances accuracy, compatibility, and institutional standards.",
+    "explanation": "Section 2.14.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss 2011 Japanese earthquake significance for geodesy.",
+    "correct": "Shifted islands by up to 5 m requiring JGD2011 update. Illustrates: geodetic frames aren't permanent, natural events invalidate coordinates, GNSS monitoring essential, post-event survey critical for water infrastructure safety. Generalises to all seismically active regions.",
+    "explanation": "Section 2.3.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain EOV scale factor 0.99993 significance.",
+    "correct": "Maximum error <0.01% anywhere in Hungary — far better than UTM (0.04%). For 10 km measurement, error <1 m. Hungary's compact size (5° lon, 3° lat) allows single projection covering entire country. No zone boundaries needed. Optimal for any work confined to Hungarian territory.",
+    "explanation": "Section 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare coordinate system challenges in Hungary vs developing Africa.",
+    "correct": "Hungary: well-documented HD72 (EPSG:23700), known Helmert parameters, grid shift file, ETRS89 bridge. Africa: colonial Clarke 1880 with poorly documented parameters, sparse networks, multiple datums, limited metadata. Same principle (know CRS, transform) but Hungary has infrastructure advantages. Global WGS84 datasets bypass national issues for African case.",
+    "explanation": "Section 2.12.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Szolnok coordinate example significance.",
+    "correct": "X=699,414 (400k-1M = Easting), Y=186,152 (0-400k = Northing). Despite labels, value-range identification is the only reliable method. Different agencies use different conventions. This example teaches the most important practical skill for Hungarian spatial data: trust the numbers, not the labels.",
+    "explanation": "Section 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain 'invisible infrastructure' of geodesy.",
+    "correct": "Datums, projections, CRS operate invisibly behind maps. GIS auto-handles most, creating illusion coordinates 'just work.' Infrastructure becomes visible when it fails: features shift 50 m, areas double, elevations off 40 m. Understanding the invisible infrastructure prevents silent errors affecting real-world flood defence and water supply decisions.",
+    "explanation": "Section 2.15."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss role of precise vertical references in flood management.",
+    "correct": "2013 Budapest: margins measured in centimetres. Vertical datums must be consistent across data sources. GPS needs geoid correction. Different countries need datum harmonisation for transboundary levee design. Baltic-NAVD88-EVRF differences matter. For 4,200 km Hungarian levees, centimetre accuracy is life-safety critical.",
+    "explanation": "Sections 2.5, 2.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain sea level trends and their implications for vertical datums.",
+    "correct": "Global rise: ~3.6 mm/yr, accelerating. Local trends vary: Galveston +6.5 mm/yr (subsidence), Stockholm -3.8 mm/yr (rebound), Juneau -12.7 mm/yr. 'Mean sea level' isn't constant — datums based on different tide gauges/epochs don't agree. Levelling networks need periodic re-measurement. Inland Hungary: groundwater-extraction subsidence creates analogous issues.",
+    "explanation": "Section 2.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how DEM cell shape affects terrain analysis at different latitudes.",
+    "correct": "Global DEMs in geographic coordinates have cells becoming narrower E-W at higher latitudes. At equator: square (~30×30 m for 1-arcsec). At 47.5°N: rectangular (31×21 m). Slope/aspect must account for asymmetry. Most GIS handles this automatically when CRS specified. Reprojecting to metric CRS (UTM, EOV) before terrain analysis is safest approach.",
+    "explanation": "Section 2.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of multiple GNSS constellations.",
+    "correct": "GPS (US, 31 satellites), GLONASS (Russia), Galileo (EU, operational 2024), BeiDou (China). Modern receivers track all four simultaneously, improving accuracy, reliability, and fix speed. Galileo's High Accuracy Service provides sub-metre open service. Multiple constellations ensure availability even if one system degrades. GNSS replaced 'GPS' in professional usage.",
+    "explanation": "Section 2.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the practical workflow in a US vs Hungarian multi-source data project.",
+    "correct": "US: data mostly in NAD83/WGS84, negligible transformation. Hungarian: national data in HD72/EOV requires explicit transformation (EPSG:1449) before combining with Copernicus (ETRS89/WGS84). Both follow same workflow: inventory → choose CRS → reproject → verify. US workflow is simpler because NAD83≈WGS84; Hungarian adds mandatory transformation step.",
+    "explanation": "Section 2.12."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM uses the EGM2008 geoid as its vertical datum.",
+    "correct": true,
+    "explanation": "Geoid-referenced heights in GeoTIFF format."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why latitude-longitude order (Y,X) creates confusion in GIS software that expects (X,Y).",
+    "correct": "Geographic coordinates are (lat,lon) = (Y,X) but GIS expects (X,Y) = (lon,lat). Reversing Budapest's coordinates from (19.04, 47.50) to (47.50, 19.04) moves the point from Hungary to Kazakhstan. CSV files and APIs are common error sources. The defense: always plot a sample of points after import.",
+    "explanation": "Section 2.4.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how GRACE-FO continues the legacy of the original GRACE mission.",
+    "correct": "GRACE-FO (Follow-On, launched 2018) continues monthly gravity field measurements with improved laser ranging interferometry alongside microwave ranging. It maintains the terrestrial water storage time series started in 2002, essential for detecting long-term groundwater depletion trends. The continuity enables over 20 years of gravity-based water storage monitoring.",
+    "explanation": "Section 2.10."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the concept of false easting and false northing prevents negative coordinates.",
+    "correct": "Without offsets, points west of the central meridian would have negative Easting values. UTM uses 500,000 m false easting so all values fall between ~166,000-834,000 m. EOV uses 650,000 m false easting and 200,000 m false northing. This ensures all coordinates within the area of interest are positive, preventing confusion in data handling and field operations.",
+    "explanation": "Section 2.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare how WGS84, ETRS89, and HD72 handle tectonic plate motion differently.",
+    "correct": "WGS84 is Earth-centred — coordinates change as plates move. ETRS89 is fixed to the Eurasian plate — coordinates stable for European points. HD72 is a local datum established in 1972 — no tectonic motion accounting. For hydrology, these differences are negligible over short periods. But over decades, WGS84 coordinates for Budapest shift ~2.5 cm/year while ETRS89 and HD72 stay fixed.",
+    "explanation": "Sections 2.3.2-2.3.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of standard parallels in conic projections and their role in minimising distortion.",
+    "correct": "Standard parallels are latitudes where the cone intersects the globe and scale factor k=1 in all directions (no distortion). Between them, the map is slightly compressed; outside, slightly expanded. By placing them to bracket the study area (e.g., 29.5°N and 45.5°N for the US), maximum distortion is minimised. The optimal placement depends on the north-south extent of the area being mapped.",
+    "explanation": "Sections 2.6.2 and 2.6.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of the 2.2 m offset in the original NAD83 realization.",
+    "correct": "The original NAD83 (1986) was based on Doppler satellite observations that placed the origin about 2.2 m from Earth's true centre of mass. Subsequent refinements improved alignment but maintained continuity. This means NAD83 and WGS84 differ by ~2 m — negligible for hydrology but significant for precise geodesy. The planned US modernisation will resolve this by aligning to ITRF.",
+    "explanation": "Section 2.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the three projection families (conic, cylindrical, azimuthal) relate to different map shapes.",
+    "correct": "Conic: cone over globe → fan-shaped map, best for mid-latitude east-west regions (US, Europe). Cylindrical (transverse): cylinder along meridian → rectangular strip, best for north-south strips (UTM zones). Azimuthal: plane tangent at point → circular map, best for polar or circular regions (LAEA for Europe). Each produces characteristic distortion patterns optimised for different geographic configurations.",
+    "explanation": "Section 2.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of the Helmert 7-parameter transformation.",
+    "correct": "The Helmert transformation converts between datums using 3 translations (X,Y,Z shift), 3 rotations (alignment correction), and 1 scale factor. For HD72→ETRS89 (EPSG:1449), it accounts for the ~50-60 m offset between these systems. It's the standard method for all datum conversions and is implemented in all GIS software. For sub-metre accuracy, national grid shift files supplement the 7-parameter approximation.",
+    "explanation": "Section 2.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of satellite altimetry in determining the geoid over the oceans.",
+    "correct": "Over oceans, satellite altimeters measure the distance from the satellite to the sea surface. Since the ocean surface (minus tides, currents, and waves) approximates the geoid, altimetry directly maps the marine geoid. Combined with GRACE gravity data and surface gravity measurements on land, this produces global geoid models like EGM2008. The ocean geoid is known more precisely than the land geoid because of the direct altimetric measurement.",
+    "explanation": "Section 2.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the difference between NAVD88 and NGVD29 varies spatially rather than being a constant offset.",
+    "correct": "NGVD29 was based on mean sea level at 26 tide gauges and held those constrained. NAVD88 used a single benchmark (Rimouski) and minimised the errors in 625,000 km of levelling. The different mathematical adjustments and reference points mean the surfaces diverge differently across the continent — the offset can exceed 1.5 m in western states. Historical flood data in NGVD29 must be converted using spatially varying corrections.",
+    "explanation": "Section 2.5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Lechner national grid shift file improves upon the standard Helmert transformation.",
+    "correct": "The standard 7-parameter Helmert (EPSG:1449) models the average offset between HD72 and ETRS89 but cannot capture spatially varying distortions in Hungary's 1972 triangulation network. The Lechner grid shift file models these local variations, providing sub-metre accuracy instead of the ~1-2 m accuracy of the Helmert approximation. For engineering surveys, levee mapping, and precise flood boundary delineation, this improvement matters.",
+    "explanation": "Section 2.7.4."
+  }
+]

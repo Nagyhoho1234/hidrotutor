@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "A hydrologically conditioned DEM has:",
+    "options": [
+      "A) Maximum resolution",
+      "B) Non-increasing flow paths from every cell to outlet",
+      "C) No flat areas",
+      "D) Only real depressions"
+    ],
+    "correct": "B",
+    "explanation": "Conditioned = continuous drainage from every cell to outlet."
+  },
+  {
+    "type": "mcq",
+    "question": "A pit in a DEM is:",
+    "options": [
+      "A) A cell higher than all neighbors",
+      "B) A cell surrounded by equal or higher terrain",
+      "C) A stream junction",
+      "D) A watershed boundary"
+    ],
+    "correct": "B",
+    "explanation": "A pit has no downslope neighbor."
+  },
+  {
+    "type": "mcq",
+    "question": "The pour point of a pit is:",
+    "options": [
+      "A) The lowest cell in the pit",
+      "B) The lowest cell on the rim",
+      "C) The highest cell nearby",
+      "D) The stream outlet"
+    ],
+    "correct": "B",
+    "explanation": "Where water would first overflow if the pit were filled."
+  },
+  {
+    "type": "mcq",
+    "question": "Pit depth is defined as:",
+    "options": [
+      "A) Pit floor elevation",
+      "B) Pour point elevation minus pit floor elevation",
+      "C) DEM resolution",
+      "D) Maximum cell value"
+    ],
+    "correct": "B",
+    "explanation": "Difference between pour point and pit floor."
+  },
+  {
+    "type": "mcq",
+    "question": "Most pits in a raw DEM are:",
+    "options": [
+      "A) Real sinkholes",
+      "B) Volcanic craters",
+      "C) Artifacts that should be removed",
+      "D) Stream channels"
+    ],
+    "correct": "C",
+    "explanation": "The vast majority are artifacts from DEM creation."
+  },
+  {
+    "type": "mcq",
+    "question": "In Table 9.1, the pit floor elevation is:",
+    "options": [
+      "A) 99 m",
+      "B) 95 m",
+      "C) 93 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "The central cell at 93 m is the pit floor."
+  },
+  {
+    "type": "mcq",
+    "question": "In Table 9.1, pit depth is:",
+    "options": [
+      "A) 3 m",
+      "B) 6 m",
+      "C) 9 m",
+      "D) 12 m"
+    ],
+    "correct": "B",
+    "explanation": "Pour point 99 - pit floor 93 = 6 m."
+  },
+  {
+    "type": "mcq",
+    "question": "SRTM pits are often caused by:",
+    "options": [
+      "A) Tectonic activity",
+      "B) Vegetation canopy and building roofs in radar return",
+      "C) Incorrect surveying",
+      "D) Software bugs"
+    ],
+    "correct": "B",
+    "explanation": "SRTM includes canopy and buildings, creating apparent depressions."
+  },
+  {
+    "type": "mcq",
+    "question": "Aggtelek Karst is an example of:",
+    "options": [
+      "A) Artifact pits",
+      "B) Real karst sinkholes (dolines)",
+      "C) Urban drainage",
+      "D) Glacial deposits"
+    ],
+    "correct": "B",
+    "explanation": "UNESCO World Heritage karst site with hundreds of dolines."
+  },
+  {
+    "type": "mcq",
+    "question": "If pits are left unconditioned:",
+    "options": [
+      "A) Nothing happens",
+      "B) Watershed has holes and disconnected streams",
+      "C) Resolution improves",
+      "D) Flow speeds up"
+    ],
+    "correct": "B",
+    "explanation": "Pits create isolated sub-watersheds and gaps in stream networks."
+  },
+  {
+    "type": "mcq",
+    "question": "The terrain flow analysis framework has how many steps?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 8",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "8 steps from DEM reconditioning to vector conversion."
+  },
+  {
+    "type": "mcq",
+    "question": "Step 1 of the framework (optional) is:",
+    "options": [
+      "A) Pit filling",
+      "B) DEM reconditioning",
+      "C) Flow direction",
+      "D) Stream definition"
+    ],
+    "correct": "B",
+    "explanation": "Optional reconditioning using stream burning or AGREE."
+  },
+  {
+    "type": "mcq",
+    "question": "Pit removal is Step _____ of the framework:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 5"
+    ],
+    "correct": "B",
+    "explanation": "Step 2: core conditioning."
+  },
+  {
+    "type": "mcq",
+    "question": "Flow direction is computed in Step:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "C",
+    "explanation": "Step 3 follows pit removal."
+  },
+  {
+    "type": "mcq",
+    "question": "Pit filling raises cells to:",
+    "options": [
+      "A) The maximum DEM value",
+      "B) The pour point elevation",
+      "C) Zero",
+      "D) The median elevation"
+    ],
+    "correct": "B",
+    "explanation": "All cells in the depression raised to pour point elevation."
+  },
+  {
+    "type": "mcq",
+    "question": "The classic pit-filling implementation is by:",
+    "options": [
+      "A) Tarboton (1997)",
+      "B) Jenson and Domingue (1988)",
+      "C) Soille (2004)",
+      "D) Hellweger (1997)"
+    ],
+    "correct": "B",
+    "explanation": "Jenson and Domingue (1988) systematic scan method."
+  },
+  {
+    "type": "mcq",
+    "question": "More efficient filling by Planchon and Darboux was published in:",
+    "options": [
+      "A) 1988",
+      "B) 1997",
+      "C) 2002",
+      "D) 2006"
+    ],
+    "correct": "C",
+    "explanation": "Planchon and Darboux (2002) improved speed."
+  },
+  {
+    "type": "mcq",
+    "question": "Wang and Liu's efficient fill method was published in:",
+    "options": [
+      "A) 1988",
+      "B) 2002",
+      "C) 2006",
+      "D) 2010"
+    ],
+    "correct": "C",
+    "explanation": "Wang and Liu (2006) further efficiency improvements."
+  },
+  {
+    "type": "mcq",
+    "question": "The main limitation of pit filling is:",
+    "options": [
+      "A) It's too fast",
+      "B) It creates flat areas",
+      "C) It requires manual input",
+      "D) It fails for small DEMs"
+    ],
+    "correct": "B",
+    "explanation": "Filled depressions become flat zones where D8 cannot determine direction."
+  },
+  {
+    "type": "mcq",
+    "question": "Peter Sinks depression depth is approximately:",
+    "options": [
+      "A) 6 m",
+      "B) 20 m",
+      "C) 62 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "~62 m deep karst depression in Logan Canyon, Utah."
+  },
+  {
+    "type": "mcq",
+    "question": "Peter Sinks is famous for:",
+    "options": [
+      "A) Largest pit in US",
+      "B) Record-low temperatures (-56.3 C in 1985)",
+      "C) Deepest cave",
+      "D) Highest rainfall"
+    ],
+    "correct": "B",
+    "explanation": "Second-coldest recorded temperature in contiguous US due to cold-air pooling."
+  },
+  {
+    "type": "mcq",
+    "question": "Carving (breaching) does what to a pit?",
+    "options": [
+      "A) Raises the pit floor",
+      "B) Lowers barrier cells to create a drainage channel",
+      "C) Removes the pit entirely",
+      "D) Fills with water"
+    ],
+    "correct": "B",
+    "explanation": "Lowers cells along a path through the rim."
+  },
+  {
+    "type": "mcq",
+    "question": "Carving is best for:",
+    "options": [
+      "A) Broad mountain ridges",
+      "B) Narrow barriers like road embankments",
+      "C) Large flat areas",
+      "D) Deep sinkholes"
+    ],
+    "correct": "B",
+    "explanation": "Effective for narrow barriers (roads, levees, railways)."
+  },
+  {
+    "type": "mcq",
+    "question": "Which software provides carving algorithms?",
+    "options": [
+      "A) ArcGIS Spatial Analyst",
+      "B) TauDEM",
+      "C) WhiteboxTools",
+      "D) GRASS GIS"
+    ],
+    "correct": "C",
+    "explanation": "WhiteboxTools has BreachDepressions and BreachDepressionsLeastCost."
+  },
+  {
+    "type": "mcq",
+    "question": "Optimal pit removal by Soille (2004) minimizes:",
+    "options": [
+      "A) Processing time",
+      "B) Total absolute elevation change",
+      "C) Number of pits",
+      "D) DEM resolution"
+    ],
+    "correct": "B",
+    "explanation": "Minimizes sum of |z_i' - z_i| across all cells."
+  },
+  {
+    "type": "mcq",
+    "question": "Optimal pit removal is:",
+    "options": [
+      "A) Widely adopted in practice",
+      "B) Not widely adopted despite theoretical elegance",
+      "C) The default in ArcGIS",
+      "D) Free of computational cost"
+    ],
+    "correct": "B",
+    "explanation": "Computationally expensive and modest practical improvement for most cases."
+  },
+  {
+    "type": "mcq",
+    "question": "Stream burning modifies the DEM by:",
+    "options": [
+      "A) Removing stream cells",
+      "B) Creating deep artificial channels along mapped streams",
+      "C) Raising stream cells",
+      "D) Smoothing stream areas"
+    ],
+    "correct": "B",
+    "explanation": "Creates trenches along stream paths for flow routing."
+  },
+  {
+    "type": "mcq",
+    "question": "The AGREE method was developed by:",
+    "options": [
+      "A) Tarboton",
+      "B) Maidment",
+      "C) Hellweger (1997)",
+      "D) Soille"
+    ],
+    "correct": "C",
+    "explanation": "Hellweger (1997), student in Maidment's group at UT Austin."
+  },
+  {
+    "type": "mcq",
+    "question": "AGREE differs from simple burning by:",
+    "options": [
+      "A) Using a smooth distance-dependent taper",
+      "B) Being faster",
+      "C) Not modifying the DEM",
+      "D) Using only radar data"
+    ],
+    "correct": "A",
+    "explanation": "AGREE applies a V-shaped taper within a buffer zone."
+  },
+  {
+    "type": "mcq",
+    "question": "Typical AGREE buffer distance:",
+    "options": [
+      "A) 10 m",
+      "B) 50 m",
+      "C) 500 m",
+      "D) 5000 m"
+    ],
+    "correct": "C",
+    "explanation": "Typically 500 m from nearest stream."
+  },
+  {
+    "type": "mcq",
+    "question": "Typical AGREE stream drop:",
+    "options": [
+      "A) 1 m",
+      "B) 10 m",
+      "C) 50 m",
+      "D) 100 m"
+    ],
+    "correct": "B",
+    "explanation": "Typically 10 m below original stream elevation."
+  },
+  {
+    "type": "mcq",
+    "question": "When should you NOT recondition?",
+    "options": [
+      "A) High-quality DEM with uncertain stream data",
+      "B) Moderate DEM with good stream data",
+      "C) Low-resolution DEM",
+      "D) Urban areas"
+    ],
+    "correct": "A",
+    "explanation": "Trust the DEM when it's better than the stream data."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus HR scale:",
+    "options": [
+      "A) 1:100,000",
+      "B) 1:24,000",
+      "C) 1:50,000",
+      "D) 1:10,000"
+    ],
+    "correct": "B",
+    "explanation": "US NHDPlus HR at 1:24,000 scale."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-Hydro equivalent scale:",
+    "options": [
+      "A) 1:10,000",
+      "B) 1:24,000",
+      "C) 1:50,000",
+      "D) 1:100,000"
+    ],
+    "correct": "C",
+    "explanation": "1:50,000 equivalent for European coverage."
+  },
+  {
+    "type": "mcq",
+    "question": "The fill-minus-DEM diagnostic reveals:",
+    "options": [
+      "A) Stream locations",
+      "B) Where and how much the DEM was modified",
+      "C) Watershed boundaries",
+      "D) Land use"
+    ],
+    "correct": "B",
+    "explanation": "Shows every depression that was removed with its depth."
+  },
+  {
+    "type": "mcq",
+    "question": "Large values in fill-minus-DEM may indicate:",
+    "options": [
+      "A) Good data quality",
+      "B) Real depressions incorrectly filled",
+      "C) Correct conditioning",
+      "D) Flat terrain"
+    ],
+    "correct": "B",
+    "explanation": "Each large cluster deserves inspection."
+  },
+  {
+    "type": "mcq",
+    "question": "The Baradla cave system at Aggtelek extends:",
+    "options": [
+      "A) 5 km",
+      "B) 15 km",
+      "C) 25 km",
+      "D) 50 km"
+    ],
+    "correct": "C",
+    "explanation": "25-kilometer cave system."
+  },
+  {
+    "type": "mcq",
+    "question": "Flat area resolution by Garbrecht and Martz (1997) combines:",
+    "options": [
+      "A) Two gradients: toward lower terrain and away from higher terrain",
+      "B) Filling and carving",
+      "C) Stream burning and filtering",
+      "D) Manual editing"
+    ],
+    "correct": "A",
+    "explanation": "Gradient toward pour point + gradient away from higher terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "The flat area gradients in TauDEM:",
+    "options": [
+      "A) Change actual elevation values",
+      "B) Are infinitesimally small, only affecting flow direction",
+      "C) Delete flat cells",
+      "D) Create new streams"
+    ],
+    "correct": "B",
+    "explanation": "Do not change elevations, only flow direction assignments."
+  },
+  {
+    "type": "mcq",
+    "question": "Edge contamination arises when:",
+    "options": [
+      "A) The DEM has no edges",
+      "B) Contributing area extends beyond the DEM",
+      "C) Resolution is too high",
+      "D) The DEM is too large"
+    ],
+    "correct": "B",
+    "explanation": "True contributing area may lie outside the DEM extent."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM handles edge contamination by:",
+    "options": [
+      "A) Ignoring it",
+      "B) Marking affected cells as no data",
+      "C) Filling with zeros",
+      "D) Extrapolating"
+    ],
+    "correct": "B",
+    "explanation": "No-data values propagate inward along contaminated flow paths."
+  },
+  {
+    "type": "mcq",
+    "question": "Prevention of edge contamination:",
+    "options": [
+      "A) Use smaller DEM",
+      "B) Buffer the study area before clipping",
+      "C) Reduce resolution",
+      "D) Ignore boundaries"
+    ],
+    "correct": "B",
+    "explanation": "Buffer of 1-5 km around the watershed boundary."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro Fill tool is in:",
+    "options": [
+      "A) 3D Analyst",
+      "B) Spatial Analyst Hydrology",
+      "C) Data Management",
+      "D) Network Analyst"
+    ],
+    "correct": "B",
+    "explanation": "Hydrology toolset of Spatial Analyst."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM's PitRemove function handles:",
+    "options": [
+      "A) Only projected DEMs",
+      "B) Geographic coordinate DEMs directly",
+      "C) Only integer DEMs",
+      "D) Only small DEMs"
+    ],
+    "correct": "B",
+    "explanation": "Can process geographic coordinates without reprojection."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM uses what for parallel processing?",
+    "options": [
+      "A) GPU",
+      "B) MPI",
+      "C) Threads only",
+      "D) Cloud computing"
+    ],
+    "correct": "B",
+    "explanation": "Message Passing Interface for parallel execution."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM file suffix for filled elevation:",
+    "options": [
+      "A) p",
+      "B) ad8",
+      "C) fel",
+      "D) src"
+    ],
+    "correct": "C",
+    "explanation": "fel = filled elevation."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM file suffix for D8 flow direction:",
+    "options": [
+      "A) fel",
+      "B) p",
+      "C) ad8",
+      "D) ang"
+    ],
+    "correct": "B",
+    "explanation": "p = D8 flow direction."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro was developed under leadership of:",
+    "options": [
+      "A) Tarboton",
+      "B) Maidment",
+      "C) Soille",
+      "D) Hellweger"
+    ],
+    "correct": "B",
+    "explanation": "David Maidment at UT Austin."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro provides which conditioning tool not in Spatial Analyst?",
+    "options": [
+      "A) Fill",
+      "B) AGREE (DEM Reconditioning)",
+      "C) Flow Direction",
+      "D) Flow Accumulation"
+    ],
+    "correct": "B",
+    "explanation": "Built-in AGREE implementation."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro's Build Walls tool:",
+    "options": [
+      "A) Creates 3D buildings",
+      "B) Raises DEM cells along a polyline to enforce divides",
+      "C) Removes stream barriers",
+      "D) Computes flow direction"
+    ],
+    "correct": "B",
+    "explanation": "Enforces drainage divides along specified lines."
+  },
+  {
+    "type": "mcq",
+    "question": "WhiteboxTools was developed by:",
+    "options": [
+      "A) David Tarboton",
+      "B) John Lindsay, U. of Guelph",
+      "C) David Maidment",
+      "D) Pierre Soille"
+    ],
+    "correct": "B",
+    "explanation": "John Lindsay at the University of Guelph."
+  },
+  {
+    "type": "mcq",
+    "question": "Which software implements optimal pit removal?",
+    "options": [
+      "A) ArcGIS",
+      "B) TauDEM",
+      "C) WhiteboxTools",
+      "D) GRASS GIS"
+    ],
+    "correct": "C",
+    "explanation": "WhiteboxTools implements several variants."
+  },
+  {
+    "type": "mcq",
+    "question": "For flat terrain conditioning, the most important technique is:",
+    "options": [
+      "A) Pit filling alone",
+      "B) Stream burning (AGREE)",
+      "C) Carving only",
+      "D) No conditioning needed"
+    ],
+    "correct": "B",
+    "explanation": "In flat terrain, stream burning forces drainage along known channels."
+  },
+  {
+    "type": "mcq",
+    "question": "Bilinear resampling is recommended for DEM reprojection because:",
+    "options": [
+      "A) It's fastest",
+      "B) It balances smoothness and fidelity",
+      "C) It preserves integers",
+      "D) It handles NoData best"
+    ],
+    "correct": "B",
+    "explanation": "Compromise between smoothness and value preservation."
+  },
+  {
+    "type": "mcq",
+    "question": "Geographic coordinate cell shape at 42N is:",
+    "options": [
+      "A) Square",
+      "B) Wider E-W than N-S",
+      "C) Taller N-S than E-W",
+      "D) Circular"
+    ],
+    "correct": "C",
+    "explanation": "N-S ~10.3 m vs E-W ~7.7 m at 42N latitude."
+  },
+  {
+    "type": "mcq",
+    "question": "The conditioned DEM should be used for:",
+    "options": [
+      "A) Slope and aspect computation",
+      "B) Only flow direction and accumulation",
+      "C) All terrain analysis",
+      "D) Visualization only"
+    ],
+    "correct": "B",
+    "explanation": "Slope/aspect should come from the original unconditioned DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "Conditioning twice (burn then fill) is:",
+    "options": [
+      "A) Wrong",
+      "B) Correct procedure",
+      "C) Unnecessary",
+      "D) Only for urban areas"
+    ],
+    "correct": "B",
+    "explanation": "Stream burning first, then pit filling is standard."
+  },
+  {
+    "type": "mcq",
+    "question": "In the 7x7 example, pit floor elevation is:",
+    "options": [
+      "A) 93 m",
+      "B) 98 m",
+      "C) 107 m",
+      "D) 120 m"
+    ],
+    "correct": "B",
+    "explanation": "The bold cell at 98 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Fill volume formula:",
+    "options": [
+      "A) Sum of all elevations",
+      "B) Sum(z_pour - z_i) * A_cell for cells below pour point",
+      "C) Area * depth",
+      "D) Pour point * pit count"
+    ],
+    "correct": "B",
+    "explanation": "Sum of (pour point - original) times cell area for each cell below pour point."
+  },
+  {
+    "type": "mcq",
+    "question": "In the 7x7 example, fill volume is:",
+    "options": [
+      "A) 380 m^3",
+      "B) 3,800 m^3",
+      "C) 38,000 m^3",
+      "D) 100 m^3"
+    ],
+    "correct": "B",
+    "explanation": "38 * 100 m^2 = 3,800 m^3."
+  },
+  {
+    "type": "mcq",
+    "question": "Peter Sinks filling raises the floor by:",
+    "options": [
+      "A) 6 m",
+      "B) 25 m",
+      "C) 62 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "From ~2446 to ~2508 m, a 62 m raise."
+  },
+  {
+    "type": "mcq",
+    "question": "For karst terrain, the pragmatic approach is:",
+    "options": [
+      "A) Never fill",
+      "B) Fill all + document via fill-minus-DEM",
+      "C) Only carve",
+      "D) Ignore the karst"
+    ],
+    "correct": "B",
+    "explanation": "Fill for continuity, document features for subsequent analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "In arid landscapes with internal drainage:",
+    "options": [
+      "A) Fill all depressions",
+      "B) Selective filling; some basins genuinely have no outlet",
+      "C) Only use carving",
+      "D) No conditioning needed"
+    ],
+    "correct": "B",
+    "explanation": "Some endorheic basins are real; don't force connectivity."
+  },
+  {
+    "type": "mcq",
+    "question": "Recommended buffer for small watersheds (<100 km^2):",
+    "options": [
+      "A) 100 m",
+      "B) 1 km",
+      "C) 10 km",
+      "D) No buffer needed"
+    ],
+    "correct": "B",
+    "explanation": "1 km buffer is usually sufficient for small watersheds."
+  },
+  {
+    "type": "mcq",
+    "question": "Fill z-limit parameter:",
+    "options": [
+      "A) Fills all pits regardless",
+      "B) Restricts filling to pits shallower than threshold",
+      "C) Sets output resolution",
+      "D) Controls buffer size"
+    ],
+    "correct": "B",
+    "explanation": "Optional parameter preserving deep depressions."
+  },
+  {
+    "type": "mcq",
+    "question": "MERIT DEM for hydrological conditioning:",
+    "options": [
+      "A) Requires more conditioning than SRTM",
+      "B) Requires less conditioning due to error removal",
+      "C) Cannot be conditioned",
+      "D) Is already conditioned"
+    ],
+    "correct": "B",
+    "explanation": "Error removal produces cleaner hydrological derivatives."
+  },
+  {
+    "type": "mcq",
+    "question": "For watershed-scale delineation (>10 km^2), recommended DEM resolution:",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 30 m",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "30 m DEMs provide good balance at catchment scale."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza floodplain has slopes less than:",
+    "options": [
+      "A) 1%",
+      "B) 0.1%",
+      "C) 0.01%",
+      "D) 10%"
+    ],
+    "correct": "C",
+    "explanation": "Less than 0.01% slope over vast areas."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroSHEDS provides pre-processed:",
+    "options": [
+      "A) Only DEMs",
+      "B) Flow direction and accumulation grids",
+      "C) Only stream vectors",
+      "D) Only watershed boundaries"
+    ],
+    "correct": "B",
+    "explanation": "Derived from conditioned SRTM for the entire globe."
+  },
+  {
+    "type": "mcq",
+    "question": "OVF hydrographic data became free in:",
+    "options": [
+      "A) 2020",
+      "B) 2022",
+      "C) July 2024",
+      "D) 2026"
+    ],
+    "correct": "C",
+    "explanation": "Accessible at data.vizugy.hu since July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro supports which flow direction model?",
+    "options": [
+      "A) D8 only",
+      "B) D8 and D-infinity",
+      "C) D8, D-infinity, and MFD",
+      "D) Only D-infinity"
+    ],
+    "correct": "C",
+    "explanation": "D8, D-infinity, and MFD options."
+  },
+  {
+    "type": "mcq",
+    "question": "The number of documented caves at Aggtelek exceeds:",
+    "options": [
+      "A) 100",
+      "B) 300",
+      "C) 500",
+      "D) 700"
+    ],
+    "correct": "D",
+    "explanation": "Over 700 documented caves."
+  },
+  {
+    "type": "mcq",
+    "question": "Baradla cave surface drainage area:",
+    "options": [
+      "A) 5 km^2",
+      "B) 28 km^2",
+      "C) 100 km^2",
+      "D) 500 km^2"
+    ],
+    "correct": "B",
+    "explanation": "~28 km^2 of surface dolines feed the cave."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro's ready-to-use watershed tool uses:",
+    "options": [
+      "A) Local DEMs",
+      "B) Pre-processed SRTM in the cloud",
+      "C) LiDAR data",
+      "D) User-provided DEMs"
+    ],
+    "correct": "B",
+    "explanation": "Cloud-based tools using pre-processed SRTM."
+  },
+  {
+    "type": "mcq",
+    "question": "The Arc Hydro book was published in:",
+    "options": [
+      "A) 1997",
+      "B) 2002",
+      "C) 2006",
+      "D) 2010"
+    ],
+    "correct": "B",
+    "explanation": "Maidment (2002), Arc Hydro: GIS for Water Resources."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM's unique technical feature is:",
+    "options": [
+      "A) GUI interface",
+      "B) MPI parallel processing",
+      "C) Cloud computing",
+      "D) Machine learning"
+    ],
+    "correct": "B",
+    "explanation": "MPI parallelization for large DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "A raw DEM is usually ready for hydrological analysis.",
+    "correct": false,
+    "explanation": "Raw DEMs contain pits that prevent continuous drainage."
+  },
+  {
+    "type": "true_false",
+    "question": "A pit is a cell surrounded by equal or higher terrain.",
+    "correct": true,
+    "explanation": "No downslope neighbor exists."
+  },
+  {
+    "type": "true_false",
+    "question": "The pour point is the lowest cell inside the pit.",
+    "correct": false,
+    "explanation": "Pour point is the lowest cell on the RIM enclosing the pit."
+  },
+  {
+    "type": "true_false",
+    "question": "Most pits in DEMs are artifacts.",
+    "correct": true,
+    "explanation": "Vast majority at all resolutions are artifacts."
+  },
+  {
+    "type": "true_false",
+    "question": "Karst sinkholes are artifact pits.",
+    "correct": false,
+    "explanation": "They are real topographic features."
+  },
+  {
+    "type": "true_false",
+    "question": "Unconditioned DEMs produce correct watershed boundaries.",
+    "correct": false,
+    "explanation": "Pits create holes and disconnected streams in watersheds."
+  },
+  {
+    "type": "true_false",
+    "question": "The terrain analysis framework has 8 sequential steps.",
+    "correct": true,
+    "explanation": "From reconditioning to vector conversion."
+  },
+  {
+    "type": "true_false",
+    "question": "DEM reconditioning is mandatory.",
+    "correct": false,
+    "explanation": "Optional Step 1; applied only when independent stream data is available."
+  },
+  {
+    "type": "true_false",
+    "question": "Pit filling raises cells to the pour point elevation.",
+    "correct": true,
+    "explanation": "All cells below pour point raised to match."
+  },
+  {
+    "type": "true_false",
+    "question": "Pit filling requires many parameters.",
+    "correct": false,
+    "explanation": "Minimal parameterization; optional z-limit is the only parameter."
+  },
+  {
+    "type": "true_false",
+    "question": "Pit filling always preserves real depressions.",
+    "correct": false,
+    "explanation": "Fills all depressions unless z-limit restricts it."
+  },
+  {
+    "type": "true_false",
+    "question": "Filled areas are flat, causing flow direction problems.",
+    "correct": true,
+    "explanation": "D8 can't determine direction on flat surfaces."
+  },
+  {
+    "type": "true_false",
+    "question": "Carving raises pit floor elevation.",
+    "correct": false,
+    "explanation": "Carving lowers barrier cells to create drainage."
+  },
+  {
+    "type": "true_false",
+    "question": "Carving works best for narrow barriers.",
+    "correct": true,
+    "explanation": "Roads, levees, railways."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS has a built-in carving tool.",
+    "correct": false,
+    "explanation": "No dedicated carving tool in ArcGIS Spatial Analyst."
+  },
+  {
+    "type": "true_false",
+    "question": "Optimal pit removal by Soille is widely used operationally.",
+    "correct": false,
+    "explanation": "Computationally expensive; not widely adopted."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream burning creates abrupt elevation cliffs.",
+    "correct": true,
+    "explanation": "Vertical drops at stream banks, unlike AGREE's smooth taper."
+  },
+  {
+    "type": "true_false",
+    "question": "AGREE uses a smooth distance taper.",
+    "correct": true,
+    "explanation": "V-shaped depression within buffer zone."
+  },
+  {
+    "type": "true_false",
+    "question": "The AGREE method was developed at UT Austin.",
+    "correct": true,
+    "explanation": "By Hellweger in Maidment's group."
+  },
+  {
+    "type": "true_false",
+    "question": "You should always recondition the DEM.",
+    "correct": false,
+    "explanation": "Only when reliable stream data is available and DEM quality warrants it."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill-minus-DEM diagnostic shows depression depths.",
+    "correct": true,
+    "explanation": "Maps every filled depression with its depth."
+  },
+  {
+    "type": "true_false",
+    "question": "Peter Sinks is in the Carpathian Mountains.",
+    "correct": false,
+    "explanation": "In the Bear River Range east of Logan, Utah."
+  },
+  {
+    "type": "true_false",
+    "question": "Aggtelek Karst is a UNESCO World Heritage Site.",
+    "correct": true,
+    "explanation": "Shared with Slovakia's Slovak Karst."
+  },
+  {
+    "type": "true_false",
+    "question": "Flat area resolution changes actual elevation values.",
+    "correct": false,
+    "explanation": "Infinitesimally small gradients affecting only flow direction."
+  },
+  {
+    "type": "true_false",
+    "question": "Edge contamination only affects cells at the boundary.",
+    "correct": false,
+    "explanation": "Propagates inward along flow paths."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM marks contaminated cells as no data.",
+    "correct": true,
+    "explanation": "Unlike ArcGIS which silently truncates."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS handles edge contamination explicitly.",
+    "correct": false,
+    "explanation": "ArcGIS silently truncates; TauDEM marks no-data."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM uses MPI for parallel processing.",
+    "correct": true,
+    "explanation": "Divides DEM into horizontal stripes."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM is a commercial product.",
+    "correct": false,
+    "explanation": "Open-source from Utah State University."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro includes a built-in AGREE implementation.",
+    "correct": true,
+    "explanation": "DEM Reconditioning tool."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro requires ArcGIS with Spatial Analyst.",
+    "correct": true,
+    "explanation": "Free add-in but needs commercial ArcGIS."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools implements carving algorithms.",
+    "correct": true,
+    "explanation": "BreachDepressions and BreachDepressionsLeastCost."
+  },
+  {
+    "type": "true_false",
+    "question": "The conditioned DEM should be used for slope analysis.",
+    "correct": false,
+    "explanation": "Use original DEM for slope/aspect; conditioned only for flow routing."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream burning then filling is the correct order.",
+    "correct": true,
+    "explanation": "Reconditioning before pit filling."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill z-limit preserves deep depressions.",
+    "correct": true,
+    "explanation": "Only fills pits shallower than the threshold."
+  },
+  {
+    "type": "true_false",
+    "question": "LiDAR DEMs contain fewer pits than 30m DEMs.",
+    "correct": false,
+    "explanation": "LiDAR contains far more pits (microtopography)."
+  },
+  {
+    "type": "true_false",
+    "question": "Nearest neighbor resampling is best for DEM reprojection.",
+    "correct": false,
+    "explanation": "Bilinear recommended; nearest creates staircase artifacts."
+  },
+  {
+    "type": "true_false",
+    "question": "Geographic coordinates produce square cells at mid-latitudes.",
+    "correct": false,
+    "explanation": "Cells are rectangular; E-W dimension shrinks with latitude."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM processes geographic coordinates directly.",
+    "correct": true,
+    "explanation": "Applies latitude-dependent corrections internally."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill volume equals depression storage capacity.",
+    "correct": true,
+    "explanation": "Useful for surface water storage estimation."
+  },
+  {
+    "type": "true_false",
+    "question": "Karst subsurface drainage follows surface topography.",
+    "correct": false,
+    "explanation": "Subsurface conduits may cross beneath surface divides."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza floodplain has slopes >1%.",
+    "correct": false,
+    "explanation": "Less than 0.01%."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS provides pre-conditioned global flow data.",
+    "correct": true,
+    "explanation": "Derived from conditioned SRTM."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1 km buffer is sufficient for small watersheds.",
+    "correct": true,
+    "explanation": "For watersheds <100 km^2."
+  },
+  {
+    "type": "true_false",
+    "question": "The GRASS r.watershed doesn't need explicit filling.",
+    "correct": true,
+    "explanation": "Uses Least Cost Path method that doesn't require pit filling."
+  },
+  {
+    "type": "true_false",
+    "question": "MERIT DEM needs more aggressive conditioning than raw SRTM.",
+    "correct": false,
+    "explanation": "MERIT needs less due to error removal."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro's Fill Sinks can impose a gradient across flat areas.",
+    "correct": true,
+    "explanation": "Enhanced fill with incremental filling option."
+  },
+  {
+    "type": "true_false",
+    "question": "Baradla cave extends 25 km.",
+    "correct": true,
+    "explanation": "25-kilometer Baradla-Domica cave system."
+  },
+  {
+    "type": "true_false",
+    "question": "In arid regions, all depressions should be filled.",
+    "correct": false,
+    "explanation": "Some endorheic basins genuinely have no surface outlet."
+  },
+  {
+    "type": "true_false",
+    "question": "Processing a geographic DEM with metric-assuming tools gives wrong slopes.",
+    "correct": true,
+    "explanation": "Unit mismatch produces incorrect results."
+  },
+  {
+    "type": "true_false",
+    "question": "Cubic convolution uses 16 surrounding cells.",
+    "correct": true,
+    "explanation": "4x4 neighborhood."
+  },
+  {
+    "type": "true_false",
+    "question": "The Aggtelek dolines range from a few meters to over 50 m diameter.",
+    "correct": true,
+    "explanation": "Various sizes across the karst landscape."
+  },
+  {
+    "type": "true_false",
+    "question": "Conditioning decisions require domain knowledge of the landscape.",
+    "correct": true,
+    "explanation": "Distinguishing artifacts from real features requires external knowledge."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM's D8FlowDir includes flat area resolution.",
+    "correct": true,
+    "explanation": "Uses Garbrecht and Martz algorithm."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill-minus-DEM raster has negative values for a purely filled DEM.",
+    "correct": false,
+    "explanation": "Everywhere non-negative since filling only raises elevations."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Spatial Analyst includes D-infinity flow direction.",
+    "correct": true,
+    "explanation": "Available as an option in the Flow Direction tool."
+  },
+  {
+    "type": "true_false",
+    "question": "The NED stated accuracy is ~2.34 m RMSE.",
+    "correct": true,
+    "explanation": "Relative to survey benchmarks."
+  },
+  {
+    "type": "true_false",
+    "question": "Road culverts appear in LiDAR DEMs.",
+    "correct": false,
+    "explanation": "LiDAR shows the road surface, not the culvert beneath."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro is a paid add-in.",
+    "correct": false,
+    "explanation": "Free add-in for ArcGIS Pro."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools is developed at U. of Guelph.",
+    "correct": true,
+    "explanation": "By John Lindsay."
+  },
+  {
+    "type": "true_false",
+    "question": "The Garbrecht and Martz algorithm was published in 1997.",
+    "correct": true,
+    "explanation": "Flat area resolution algorithm."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF data at data.vizugy.hu is free since 2024.",
+    "correct": true,
+    "explanation": "July 2024."
+  },
+  {
+    "type": "true_false",
+    "question": "DEM conditioning is covered in Chapters 9-12.",
+    "correct": false,
+    "explanation": "Conditioning (this chapter) is Ch 9; flow direction, accumulation, and delineation are Chs 10-12."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus GLO-30 has LE90 < 4 m.",
+    "correct": true,
+    "explanation": "Global vertical accuracy specification."
+  },
+  {
+    "type": "true_false",
+    "question": "A single fill operation handles nested pits.",
+    "correct": true,
+    "explanation": "Processing from smallest upward, merging as needed."
+  },
+  {
+    "type": "true_false",
+    "question": "The 7x7 example fill volume is 3,800 m^3.",
+    "correct": true,
+    "explanation": "38 * 100 m^2 per cell."
+  },
+  {
+    "type": "true_false",
+    "question": "SAGA GIS provides Fill Sinks functionality.",
+    "correct": true,
+    "explanation": "Available through QGIS Processing framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cell with no downslope neighbor is called a _____.",
+    "correct": "pit",
+    "explanation": "Also called a sink or depression."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The lowest cell on the rim of a pit is the _____ point.",
+    "correct": "pour",
+    "explanation": "Where water first overflows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pit depth = pour point elevation minus _____ elevation.",
+    "correct": "pit floor",
+    "explanation": "Difference between rim low point and depression low point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pit filling raises cells to the _____ point elevation.",
+    "correct": "pour",
+    "explanation": "All cells below pour point are raised."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The classic filling algorithm is by Jenson and _____ (1988).",
+    "correct": "Domingue",
+    "explanation": "Systematic scan method."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Carving is also called _____.",
+    "correct": "breaching",
+    "explanation": "Opposite approach to filling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The AGREE method was developed by _____ (1997).",
+    "correct": "Hellweger",
+    "explanation": "Student in Maidment's group at UT Austin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "AGREE applies a smooth _____ from terrain to lowered stream.",
+    "correct": "taper",
+    "explanation": "Distance-dependent V-shaped depression."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Typical AGREE buffer distance: _____ m.",
+    "correct": "500",
+    "explanation": "From nearest stream cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Typical AGREE stream drop: _____ m.",
+    "correct": "10",
+    "explanation": "Below original stream elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The fill-minus-_____ diagnostic reveals conditioning impact.",
+    "correct": "DEM",
+    "explanation": "Difference between filled and original DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Peter Sinks is _____ m deep.",
+    "correct": "62",
+    "explanation": "Karst depression in Logan Canyon, Utah."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Aggtelek Karst is in _____ Hungary.",
+    "correct": "northern",
+    "explanation": "Along the border with Slovakia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Baradla cave system extends _____ km.",
+    "correct": "25",
+    "explanation": "Baradla-Domica system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flat area resolution by Garbrecht and _____ (1997).",
+    "correct": "Martz",
+    "explanation": "Combines two imposed gradients."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ contamination affects cells near the DEM boundary.",
+    "correct": "Edge",
+    "explanation": "Contributing area extends beyond DEM extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM uses _____ for parallel processing.",
+    "correct": "MPI",
+    "explanation": "Message Passing Interface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM suffix for filled DEM: _____.",
+    "correct": "fel",
+    "explanation": "Filled elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM suffix for D8 flow direction: _____.",
+    "correct": "p",
+    "explanation": "Pour point model direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro was developed by _____ at UT Austin.",
+    "correct": "Maidment",
+    "explanation": "David Maidment's research group."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro's _____ Walls tool enforces drainage divides.",
+    "correct": "Build",
+    "explanation": "Raises DEM along specified polylines."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WhiteboxTools by John _____ at Guelph.",
+    "correct": "Lindsay",
+    "explanation": "Open-source terrain analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Optimal pit removal by _____ (2004).",
+    "correct": "Soille",
+    "explanation": "Minimizes total absolute elevation change."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The terrain analysis framework has _____ steps.",
+    "correct": "eight",
+    "explanation": "From reconditioning to vector conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 2 of the framework is _____ removal.",
+    "correct": "pit",
+    "explanation": "Core conditioning step."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 3 computes flow _____.",
+    "correct": "direction",
+    "explanation": "Based on conditioned DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 4 computes flow _____.",
+    "correct": "accumulation",
+    "explanation": "Count of upstream cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 5 is stream _____.",
+    "correct": "definition",
+    "explanation": "Threshold on flow accumulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The conditioned DEM should only be used for flow _____.",
+    "correct": "routing",
+    "explanation": "Not for slope, aspect, or other terrain analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Buffer of at least _____ km for small watersheds.",
+    "correct": "1",
+    "explanation": "Prevents edge contamination."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED accuracy: ~_____ m RMSE.",
+    "correct": "2.34",
+    "explanation": "US National Elevation Dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus GLO-30 LE90: < _____ m.",
+    "correct": "4",
+    "explanation": "Global accuracy specification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT DEM resolution: _____ m.",
+    "correct": "90",
+    "explanation": "Error-cleaned global DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ method handles geographic DEMs without reprojection.",
+    "correct": "TauDEM",
+    "explanation": "Applies latitude-dependent corrections."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fill z-_____ restricts filling to shallow pits.",
+    "correct": "limit",
+    "explanation": "Optional maximum depth parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LiDAR captures road _____ that block stream flow.",
+    "correct": "embankments",
+    "explanation": "Real barrier requiring carving."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Levees create linear pits extending for _____.",
+    "correct": "kilometers",
+    "explanation": "Long continuous barriers in DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream _____ is simpler than AGREE but creates abrupt cliffs.",
+    "correct": "burning",
+    "explanation": "Simple reconditioning method."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OVF hydrographic database is at data._____.hu.",
+    "correct": "vizugy",
+    "explanation": "Hungarian water management data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro provides the _____ data model for water resources.",
+    "correct": "geodatabase",
+    "explanation": "Standardized schema for hydrological features."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM divides the DEM into horizontal _____ for parallel processing.",
+    "correct": "stripes",
+    "explanation": "Each assigned to a processor core."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroSHEDS is derived from conditioned _____ data.",
+    "correct": "SRTM",
+    "explanation": "Global pre-processed flow data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Aeolian landscapes are formed by _____.",
+    "correct": "wind",
+    "explanation": "Sand dunes and deflation hollows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Karst terrain is formed by _____ of soluble rocks.",
+    "correct": "dissolution",
+    "explanation": "Limestone, dolomite, gypsum, salt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza floodplain slope is less than _____%.",
+    "correct": "0.01",
+    "explanation": "Extremely flat terrain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For detailed local analysis (<10 km^2), DEM resolution of _____ m is needed.",
+    "correct": "1-5",
+    "explanation": "LiDAR or DDM-5 resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For continental studies, _____ m resolution is practical.",
+    "correct": "90",
+    "explanation": "GLO-90 or MERIT DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The fill volume formula uses A_____ (cell area).",
+    "correct": "cell",
+    "explanation": "V = Sum(z_pour - z_i) * A_cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Peter Sinks recorded _____°C in 1985.",
+    "correct": "-56.3",
+    "explanation": "Second-coldest in contiguous US."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At 42°N, north-south cell dimension is ~_____ m.",
+    "correct": "10.3",
+    "explanation": "For a 1 arc-second DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At 42°N, east-west cell dimension is ~_____ m.",
+    "correct": "7.7",
+    "explanation": "Shorter due to longitude convergence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM _____ is recommended before processing in metric tools.",
+    "correct": "reprojection",
+    "explanation": "Convert geographic to projected coordinates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bilinear interpolation produces _____ results for DEM resampling.",
+    "correct": "smooth",
+    "explanation": "Eliminates staircase artifacts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 7x7 example pit floor is at _____ m.",
+    "correct": "98",
+    "explanation": "Bold cell in Table 9.2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 7x7 example pour point is at _____ m.",
+    "correct": "107",
+    "explanation": "Lowest point on the rim."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pit depth in the 7x7 example: _____ m.",
+    "correct": "9",
+    "explanation": "107 - 98 = 9 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Aggtelek dolines range up to _____ m deep.",
+    "correct": "15",
+    "explanation": "Some dolines exceed 15 m depth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRASS GIS provides hydrological tools through _____.watershed.",
+    "correct": "r",
+    "explanation": "r.watershed and related tools."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Arc Hydro book was published in _____.",
+    "correct": "2002",
+    "explanation": "Maidment, ESRI Press."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM is available at hydrology._____.edu.",
+    "correct": "usu",
+    "explanation": "Utah State University."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro Hydrology tools at pro.arcgis.com/en/pro-app/tool-reference/_____.",
+    "correct": "spatial-analyst",
+    "explanation": "Part of the Spatial Analyst extension."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Baradla discharges through springs at _____.",
+    "correct": "Josvafo",
+    "explanation": "Several km from the doline field."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Aggtelek has over _____ documented caves.",
+    "correct": "700",
+    "explanation": "Extensive karst system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The surface drainage area feeding Baradla is ~_____ km^2.",
+    "correct": "28",
+    "explanation": "Doline field extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SAGA provides Fill _____ in QGIS.",
+    "correct": "Sinks",
+    "explanation": "Via Processing framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Number of interior cells filled in Table 9.1 example: _____.",
+    "correct": "five",
+    "explanation": "Cells at 93, 95, 95, 96, 97 raised to 99."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LiDAR dolines at Aggtelek surveyed at _____ points per m^2.",
+    "correct": "2",
+    "explanation": "Lechner Knowledge Centre survey."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM conditioning errors propagate through _____ subsequent step.",
+    "correct": "every",
+    "explanation": "Sequential dependence means early errors compound."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why raw DEMs fail for hydrological analysis.",
+    "correct": "Raw DEMs contain pits — cells surrounded by higher terrain — that trap flow and prevent continuous drainage. Flow direction algorithms stop at pits, creating isolated sub-watersheds, gaps in stream networks, and incorrect drainage areas. Most pits are artifacts from DEM creation, not real features.",
+    "explanation": "Fundamental violation of the continuous drainage assumption."
+  },
+  {
+    "type": "essay",
+    "question": "Compare pit filling and carving as conditioning methods.",
+    "correct": "Filling raises pit interiors to the pour point, creating flat areas. Carving lowers barrier cells to create drainage channels, preserving interior topography. Filling works best for small artifacts; carving for narrow barriers like roads. Filling is universally available; carving requires specialized tools (WhiteboxTools).",
+    "explanation": "Opposite approaches with different strengths."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the AGREE method and its advantage over simple stream burning.",
+    "correct": "AGREE applies a smooth V-shaped taper within a buffer zone (~500m) from terrain to lowered stream cells (~10m drop). Simple burning creates abrupt vertical cliffs at stream banks, distorting slope values. AGREE's smooth transition maintains realistic hillslope gradients near streams.",
+    "explanation": "Developed by Hellweger (1997) at UT Austin."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the fill-minus-DEM diagnostic and how to interpret it.",
+    "correct": "Subtract original from filled DEM. Zero = unaffected (most cells). Small positive values (<1m) = shallow artifact pits. Large positive values = deep depressions, possibly real features requiring inspection. For karst landscapes, this maps all dolines. Always examine before proceeding to flow direction.",
+    "explanation": "Essential quality control step."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the conditioning challenge in karst terrain using Aggtelek as an example.",
+    "correct": "Aggtelek has hundreds of real dolines that appear as pits. Filling destroys these important features but enables watershed continuity. Subsurface drainage through the 25km Baradla cave may cross surface divides. Pragmatic approach: fill all + document via fill-minus-DEM + note that DEM-based hydrology cannot model karst conduit flow.",
+    "explanation": "Fundamental limitation of DEM-based hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the terrain flow analysis framework's 8 steps.",
+    "correct": "(1) DEM reconditioning (optional). (2) Pit removal. (3) Flow direction. (4) Flow accumulation. (5) Stream definition. (6) Stream segmentation. (7) Catchment delineation. (8) Raster-to-vector conversion. Each depends on the previous, making conditioning quality critical.",
+    "explanation": "Sequential pipeline from raw DEM to watershed features."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcGIS, TauDEM, and Arc Hydro for DEM conditioning.",
+    "correct": "ArcGIS: Fill tool, D8 only, single-thread, no carving. TauDEM: PitRemove, D8+D-inf, MPI parallel, handles geographic coords. Arc Hydro: enhanced Fill, built-in AGREE, Build Walls, workflow framework, needs ArcGIS. WhiteboxTools adds carving and optimal removal.",
+    "explanation": "Each has unique strengths."
+  },
+  {
+    "type": "essay",
+    "question": "Explain edge contamination and how to prevent it.",
+    "correct": "When contributing area extends beyond the DEM, flow accumulation is underestimated. TauDEM marks affected cells as no-data; ArcGIS silently truncates. Prevention: buffer the study area by 1-5 km before clipping, process the full buffered DEM, then clip results to the watershed.",
+    "explanation": "Buffer strategy absorbs contamination effects."
+  },
+  {
+    "type": "essay",
+    "question": "Why should the conditioned DEM not be used for slope/aspect analysis?",
+    "correct": "Filling raises cells and creates flat areas; burning creates artificial trenches. These alterations distort slope, aspect, curvature, and other terrain derivatives. Use the original unconditioned DEM for terrain characterization; use the conditioned DEM only for flow direction and accumulation.",
+    "explanation": "Common mistake with significant consequences."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss flat terrain conditioning challenges using the Hungarian Alfold.",
+    "correct": "Alfold slopes <0.01% with elevation range of 1-2m over 10 km. DEM vertical accuracy exceeds actual gradients. Pit filling raises huge areas. Stream burning with AGREE (10-20m drop, 500-1000m buffer) forces drainage along known channels. Higher-resolution DEMs help but also create more micro-pits.",
+    "explanation": "DEM precision insufficient for terrain-controlled drainage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain optimal pit removal by Soille (2004).",
+    "correct": "Minimizes total absolute elevation change |z'_i - z_i| subject to continuous drainage. Combines partial filling and partial carving optimally. For narrow barriers: mostly carving. For shallow pits: mostly filling. Theoretically elegant but computationally expensive and modest practical improvement for typical DEMs.",
+    "explanation": "Between the extremes of pure filling and pure carving."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Peter Sinks case and the fill-or-not dilemma.",
+    "correct": "62m deep karst depression in Utah. Famous for record -56.3°C temperatures. Filling raises hundreds of cells by tens of meters. For watershed delineation: filling is defensible (subsurface karst flow reaches the river). For surface runoff modeling: inappropriate (water genuinely doesn't leave). Depends on analysis objective.",
+    "explanation": "Illustrates the artifact vs reality decision."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical conditioning workflow?",
+    "correct": "(1) Obtain DEM with buffer. (2) Decide on reconditioning (AGREE if good stream data). (3) Fill pits (optional z-limit). (4) Examine fill-minus-DEM. (5) Proceed to flow direction. Common pitfalls: forgetting buffer, conditioning twice, using conditioned DEM for slope, ignoring coordinate system.",
+    "explanation": "Five-step procedure with quality control."
+  },
+  {
+    "type": "essay",
+    "question": "Compare global DEM sources for hydrological conditioning.",
+    "correct": "SRTM (30m, 2000, 6-10m acc): most literature. Copernicus GLO-30 (30m, 2011-15, <4m): new standard. MERIT (90m, error-cleaned): best for large-scale. AW3D30 (30m, optical): alternative. Higher resolution = more pits = more conditioning. MERIT needs least conditioning.",
+    "explanation": "Trade-offs between resolution, accuracy, and conditioning effort."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss LiDAR DEM conditioning challenges.",
+    "correct": "1-meter LiDAR captures buildings, vehicles, road surfaces, furrows — creating enormous numbers of pits. Many are real micro-features irrelevant to watershed-scale hydrology. Aggressive conditioning needed but may lose important drainage info. Carving for road embankments (mimicking culverts), selective burning at bridges.",
+    "explanation": "High resolution creates high conditioning complexity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain TauDEM's parallel processing architecture.",
+    "correct": "DEM divided into horizontal stripes, each on a separate MPI process. Stripes communicate at boundaries for consistency. Reduces processing time by order of magnitude on multi-core machines. Enables continental-scale processing. Most valuable for pit filling and flow direction — the most expensive steps.",
+    "explanation": "MPI parallelization for large DEMs."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Arc Hydro data model significance.",
+    "correct": "Standardized geodatabase schema: hydro junctions, edges, catchments, monitoring points, time series, with relationship classes encoding connectivity and drainage topology. Provides common language for hydrological GIS. When catchment 42 drains to junction 15, that relationship is stored explicitly and queryable.",
+    "explanation": "Organizational framework beyond just terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "What is stream burning and when is it appropriate?",
+    "correct": "Artificially lowers stream cells or raises non-stream cells to force flow along mapped channels. Simple to implement (single raster calculation). Appropriate when DEM can't resolve stream locations: 30m radar DEMs in flat terrain, forested valleys where canopy obscures channels. Creates abrupt cliffs (use AGREE instead).",
+    "explanation": "Forces DEM drainage to match known stream paths."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss conditioning in arid landscapes with internal drainage.",
+    "correct": "Sabkhas, playas, and wadis terminate in desert sinks with no surface outlet. Filling all depressions forces artificial connectivity, misrepresenting the hydrology. Use selective filling (z-limit parameter) or manual editing. Some basins genuinely don't contribute to distant rivers.",
+    "explanation": "Not all landscapes drain to an outlet."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the decision framework for DEM reconditioning.",
+    "correct": "High-quality DEM + uncertain streams: don't recondition, trust DEM. Moderate DEM + good streams: apply AGREE. High-res LiDAR with bridges: selective burning at crossings. Low-res SRTM + any streams: apply burning or AGREE. Quality comparison between DEM and stream data drives the decision.",
+    "explanation": "Table 9.3 decision framework."
+  },
+  {
+    "type": "essay",
+    "question": "Why is DEM conditioning the step where domain knowledge matters most?",
+    "correct": "Subsequent steps (flow direction, accumulation, delineation) are largely mechanical. But conditioning requires judging: Is this pit an artifact or real? Should streams be burned? Is the landscape karst? These decisions require understanding the DEM source, landscape type, and analysis objectives — not just algorithms.",
+    "explanation": "Human judgment is essential for conditioning decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Garbrecht and Martz flat area resolution algorithm.",
+    "correct": "Combines two gradients on filled flat areas: (1) toward the pour point (outlet), ensuring water flows to the exit; (2) away from higher terrain edges, preventing pooling. The combined field mimics natural drainage. Gradients are infinitesimal — they don't change elevations, only flow direction assignments.",
+    "explanation": "Resolves the flat area problem created by filling."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of nested pits in filling algorithms?",
+    "correct": "Filling a small pit may merge it with a neighbor to form a larger depression, which must be filled in turn. Algorithms process from smallest/shallowest upward, handling these cascading merges. The classic Jenson and Domingue (1988) approach guarantees all nesting levels are resolved.",
+    "explanation": "Iterative processing from small to large."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss resampling methods for DEM reprojection.",
+    "correct": "Nearest neighbor: preserves values but creates staircase artifacts, unacceptable for DEMs. Bilinear: 4-cell weighted average, smooth results, recommended compromise. Cubic convolution: 16 cells, smoothest, best for slope analysis. For hydrological conditioning, bilinear is the standard recommendation.",
+    "explanation": "Choice affects all downstream analyses."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why processing DEMs in geographic coordinates requires special handling.",
+    "correct": "Geographic cells are non-square (N-S and E-W dimensions differ, varying with latitude). Slopes, areas, and distances must account for this. TauDEM handles it internally. Most other tools require reprojection to metric coordinates. At mid-latitudes, the distortion is significant.",
+    "explanation": "One degree of longitude shrinks toward the poles."
+  },
+  {
+    "type": "essay",
+    "question": "What role does international stream data play in DEM conditioning?",
+    "correct": "Stream burning/AGREE requires mapped stream networks. NHDPlus HR for US (1:24,000), EU-Hydro for Europe (1:50,000), OVF for Hungary, HydroRIVERS globally. Data quality varies; the decision to recondition depends on relative quality of DEM vs stream data.",
+    "explanation": "Different regions have different data availability."
+  },
+  {
+    "type": "essay",
+    "question": "Compare conditioning challenges across different landscape types.",
+    "correct": "Karst (Aggtelek): real sinkholes. Aeolian (Alfold): shallow real basins. Flat floodplain (Tisza): DEM precision issue. Dense forest (Congo): canopy artifacts. Arid (Middle East): true endorheic basins. Glacial (Scandinavia): thousands of kettle lakes. Urban: infrastructure artifacts. Each requires different approaches.",
+    "explanation": "Table 9.8 landscape-type challenges."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the fill-minus-DEM diagnostic called 'essential quality control'?",
+    "correct": "Without it, the analyst cannot know what was modified, where, or by how much. Large fills may indicate real features destroyed. Systematic patterns suggest DEM artifacts. Documenting all filled depressions supports subsequent interpretation. Blindly filling and proceeding risks undetectable errors.",
+    "explanation": "Always examine before proceeding."
+  },
+  {
+    "type": "essay",
+    "question": "How does fill volume relate to surface water storage estimation?",
+    "correct": "The fill volume (sum of elevation changes times cell area) represents the depression's water storage capacity. This is useful for agricultural landscape storage estimation and stormwater management. The concept reappears in Chapter 15 where HAND-derived volumes compute reach-averaged hydraulic properties.",
+    "explanation": "Practical application of the fill calculation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe conditioning best practices for the Hungarian Great Plain.",
+    "correct": "Use DDM-5 (5m) or high-res LiDAR. Apply AGREE with generous parameters (10-20m drop, 500-1000m buffer) using OVF stream network. Stream burning is essential because natural gradients (<0.01%) are below DEM precision. Higher-res DEMs capture micro-features requiring careful selective conditioning.",
+    "explanation": "Stream burning essential in flat terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "Snap Pour Point adjusts pour points to:",
+    "options": [
+      "A) The lowest elevation cell",
+      "B) The nearest high flow accumulation cell",
+      "C) The DEM center",
+      "D) The highest cell"
+    ],
+    "correct": "B",
+    "explanation": "Corrects for spatial imprecision in outlet placement."
+  },
+  {
+    "type": "mcq",
+    "question": "The Fill tool's optional parameter is:",
+    "options": [
+      "A) Cell size",
+      "B) z-limit (maximum depth)",
+      "C) Number of iterations",
+      "D) Search radius"
+    ],
+    "correct": "B",
+    "explanation": "Restricts filling to pits shallower than threshold."
+  },
+  {
+    "type": "mcq",
+    "question": "GRASS GIS provides hydrology through:",
+    "options": [
+      "A) Spatial Analyst",
+      "B) r.fill.dir and r.watershed",
+      "C) Arc Hydro",
+      "D) TauDEM plugin"
+    ],
+    "correct": "B",
+    "explanation": "GRASS raster hydrology modules."
+  },
+  {
+    "type": "mcq",
+    "question": "SAGA GIS provides:",
+    "options": [
+      "A) Only vector analysis",
+      "B) Fill Sinks and Flow Direction",
+      "C) Only raster visualization",
+      "D) Database management"
+    ],
+    "correct": "B",
+    "explanation": "Full set of hydrological raster tools."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM suffix 'ad8' means:",
+    "options": [
+      "A) D-infinity angle",
+      "B) D8 contributing area",
+      "C) Aspect direction",
+      "D) DEM accuracy"
+    ],
+    "correct": "B",
+    "explanation": "ad8 = D8 contributing area."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM suffix 'ang' means:",
+    "options": [
+      "A) D8 angle",
+      "B) D-infinity flow direction angle",
+      "C) Angular velocity",
+      "D) Angle of repose"
+    ],
+    "correct": "B",
+    "explanation": "ang = D-infinity flow direction."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM suffix 'src' means:",
+    "options": [
+      "A) Source code",
+      "B) Stream raster",
+      "C) Surface roughness",
+      "D) Slope recomputation"
+    ],
+    "correct": "B",
+    "explanation": "src = stream raster."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM suffix 'w' means:",
+    "options": [
+      "A) Width",
+      "B) Watershed grid",
+      "C) Water depth",
+      "D) Weight"
+    ],
+    "correct": "B",
+    "explanation": "w = watershed grid."
+  },
+  {
+    "type": "mcq",
+    "question": "The Nebraska Sand Hills are an example of:",
+    "options": [
+      "A) Karst terrain",
+      "B) Aeolian landscape",
+      "C) Glacial terrain",
+      "D) Volcanic landscape"
+    ],
+    "correct": "B",
+    "explanation": "Wind-formed landscape with numerous closed basins."
+  },
+  {
+    "type": "mcq",
+    "question": "Kettle holes are found in:",
+    "options": [
+      "A) Karst terrain",
+      "B) Aeolian terrain",
+      "C) Glacially scoured terrain",
+      "D) Volcanic terrain"
+    ],
+    "correct": "C",
+    "explanation": "Glacial deposits create kettle holes and moraines."
+  },
+  {
+    "type": "mcq",
+    "question": "The Dead Sea basin is an example of:",
+    "options": [
+      "A) Karst depression",
+      "B) Glacial formation",
+      "C) Tectonic closed basin",
+      "D) Aeolian formation"
+    ],
+    "correct": "C",
+    "explanation": "Tectonic landscape with large-scale closed basin."
+  },
+  {
+    "type": "mcq",
+    "question": "Highway embankments in DEMs:",
+    "options": [
+      "A) Are always artifacts",
+      "B) Are real barriers faithfully recorded",
+      "C) Should be removed from the DEM",
+      "D) Have no effect on hydrology"
+    ],
+    "correct": "B",
+    "explanation": "Real structures, but culverts below provide drainage continuity."
+  },
+  {
+    "type": "mcq",
+    "question": "The DEM conditioning step where analyst exercises most judgment:",
+    "options": [
+      "A) Flow direction",
+      "B) Flow accumulation",
+      "C) Pit removal and reconditioning",
+      "D) Stream segmentation"
+    ],
+    "correct": "C",
+    "explanation": "Requires understanding the landscape to distinguish artifacts from real features."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro can compute D-infinity flow direction:",
+    "options": [
+      "A) Only through TauDEM",
+      "B) Natively in the Flow Direction tool",
+      "C) Only in QGIS",
+      "D) Not at all"
+    ],
+    "correct": "B",
+    "explanation": "Available as an option alongside D8 and MFD."
+  },
+  {
+    "type": "mcq",
+    "question": "Stream segmentation divides streams at:",
+    "options": [
+      "A) Random points",
+      "B) Junction points",
+      "C) The highest cells",
+      "D) Equal intervals"
+    ],
+    "correct": "B",
+    "explanation": "Individual reaches between junctions, each with a unique ID."
+  },
+  {
+    "type": "mcq",
+    "question": "Catchment grid delineation identifies:",
+    "options": [
+      "A) Stream locations only",
+      "B) Contributing area for each stream segment",
+      "C) DEM errors",
+      "D) Land use types"
+    ],
+    "correct": "B",
+    "explanation": "Each cell gets the ID of the stream segment it drains to."
+  },
+  {
+    "type": "mcq",
+    "question": "The DEM conditioning quality check should happen:",
+    "options": [
+      "A) After watershed delineation",
+      "B) Between filling and flow direction",
+      "C) Before obtaining the DEM",
+      "D) Only when results look wrong"
+    ],
+    "correct": "B",
+    "explanation": "Fill-minus-DEM diagnostic before proceeding to flow direction."
+  },
+  {
+    "type": "mcq",
+    "question": "The NED stated accuracy is approximately:",
+    "options": [
+      "A) 0.5 m",
+      "B) 2.34 m",
+      "C) 5 m",
+      "D) 10 m"
+    ],
+    "correct": "B",
+    "explanation": "~2.34 m RMSE relative to survey benchmarks."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus EEA-10 access is:",
+    "options": [
+      "A) Free for all",
+      "B) Restricted to authorized users",
+      "C) Only through purchase",
+      "D) Classified"
+    ],
+    "correct": "B",
+    "explanation": "Restricted to government agencies, research institutions."
+  },
+  {
+    "type": "mcq",
+    "question": "For conditioning twice, the correct order is:",
+    "options": [
+      "A) Fill then burn",
+      "B) Burn then fill",
+      "C) Either order",
+      "D) Neither should be done"
+    ],
+    "correct": "B",
+    "explanation": "Stream burning first, then pit filling."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro Level DEM tool:",
+    "options": [
+      "A) Flattens the DEM",
+      "B) Adjusts DEM to match gauge water surface elevations",
+      "C) Removes all pits",
+      "D) Computes slope"
+    ],
+    "correct": "B",
+    "explanation": "Matches DEM to known water levels at gauge locations."
+  },
+  {
+    "type": "mcq",
+    "question": "The main advantage of TauDEM over ArcGIS for large DEMs:",
+    "options": [
+      "A) Better GUI",
+      "B) MPI parallel processing",
+      "C) More tools",
+      "D) Better documentation"
+    ],
+    "correct": "B",
+    "explanation": "Order of magnitude speed improvement on multi-core machines."
+  },
+  {
+    "type": "mcq",
+    "question": "Strahler stream order increases when:",
+    "options": [
+      "A) Any tributary joins",
+      "B) Two streams of equal order join",
+      "C) Flow accumulation doubles",
+      "D) Slope increases"
+    ],
+    "correct": "B",
+    "explanation": "Order increases by 1 only when equal-order streams merge."
+  },
+  {
+    "type": "true_false",
+    "question": "A raw DEM has non-increasing flow paths from every cell.",
+    "correct": false,
+    "explanation": "Raw DEMs almost never satisfy this; pits block flow."
+  },
+  {
+    "type": "true_false",
+    "question": "The terrain analysis pipeline can skip any step.",
+    "correct": false,
+    "explanation": "Sequential steps; each depends on the previous."
+  },
+  {
+    "type": "true_false",
+    "question": "Filling always creates flat areas.",
+    "correct": true,
+    "explanation": "Former depressions become zones of identical elevation."
+  },
+  {
+    "type": "true_false",
+    "question": "Carving preserves the interior pit topography.",
+    "correct": true,
+    "explanation": "Only barrier cells are lowered."
+  },
+  {
+    "type": "true_false",
+    "question": "The AGREE buffer typically extends 500 m from streams.",
+    "correct": true,
+    "explanation": "Standard buffer distance."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro includes a built-in carving tool.",
+    "correct": false,
+    "explanation": "No dedicated carving; requires WhiteboxTools."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM reads any GDAL-supported raster format.",
+    "correct": true,
+    "explanation": "Uses GDAL library for raster I/O."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro is a paid add-in for ArcGIS Pro.",
+    "correct": false,
+    "explanation": "Free add-in, though ArcGIS itself is commercial."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools provides multi-threaded processing.",
+    "correct": true,
+    "explanation": "Not MPI like TauDEM, but multi-threaded."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill-minus-DEM raster can have negative values.",
+    "correct": false,
+    "explanation": "Filling only raises elevations; difference is always >= 0."
+  },
+  {
+    "type": "true_false",
+    "question": "Nested pits must be processed from largest to smallest.",
+    "correct": false,
+    "explanation": "From smallest/shallowest upward."
+  },
+  {
+    "type": "true_false",
+    "question": "Simple stream burning creates smooth hillslope transitions.",
+    "correct": false,
+    "explanation": "Creates abrupt cliffs at stream banks."
+  },
+  {
+    "type": "true_false",
+    "question": "The AGREE method was developed at Utah State University.",
+    "correct": false,
+    "explanation": "Developed at UT Austin by Hellweger (1997)."
+  },
+  {
+    "type": "true_false",
+    "question": "LiDAR can classify ground vs non-ground points.",
+    "correct": true,
+    "explanation": "Classification enables bare-earth DTM creation."
+  },
+  {
+    "type": "true_false",
+    "question": "1m LiDAR DEMs have fewer pits than 30m SRTM.",
+    "correct": false,
+    "explanation": "LiDAR has far more pits due to micro-features."
+  },
+  {
+    "type": "true_false",
+    "question": "The fill z-limit parameter is required.",
+    "correct": false,
+    "explanation": "Optional; basic filling requires no parameters."
+  },
+  {
+    "type": "true_false",
+    "question": "Planchon and Darboux (2002) improved filling speed.",
+    "correct": true,
+    "explanation": "Faster algorithm for large DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "Edge contamination only affects one cell at the boundary.",
+    "correct": false,
+    "explanation": "Propagates inward along flow paths."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM's PitRemove function can handle geographic coordinate DEMs.",
+    "correct": true,
+    "explanation": "Native support for lat/lon without reprojection."
+  },
+  {
+    "type": "true_false",
+    "question": "The terrain analysis framework starts with flow direction.",
+    "correct": false,
+    "explanation": "Starts with DEM reconditioning (optional) then pit removal."
+  },
+  {
+    "type": "true_false",
+    "question": "Carving creates a monotonically decreasing path.",
+    "correct": true,
+    "explanation": "Path from pit floor to external lower cell."
+  },
+  {
+    "type": "true_false",
+    "question": "The Baradla cave system is shared between Hungary and Slovakia.",
+    "correct": true,
+    "explanation": "Baradla-Domica system crosses the border."
+  },
+  {
+    "type": "true_false",
+    "question": "Surface and subsurface watersheds are always identical in karst.",
+    "correct": false,
+    "explanation": "Cave conduits may cross beneath surface divides."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM clipped exactly to the watershed boundary is sufficient.",
+    "correct": false,
+    "explanation": "Buffer needed to prevent edge contamination."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro includes a Build Walls tool.",
+    "correct": true,
+    "explanation": "Raises DEM along polylines to enforce divides."
+  },
+  {
+    "type": "true_false",
+    "question": "The Jenson and Domingue algorithm processes pits in one pass.",
+    "correct": true,
+    "explanation": "Systematic scan that guarantees all pits resolved."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM includes vegetation canopy in its elevation values.",
+    "correct": true,
+    "explanation": "Radar returns from the surface including canopy."
+  },
+  {
+    "type": "true_false",
+    "question": "Bridge decks appear as dams in LiDAR DEMs.",
+    "correct": true,
+    "explanation": "LiDAR captures the bridge surface, not the channel below."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sahel has many real pits from aeolian processes.",
+    "correct": true,
+    "explanation": "Aeolian depressions challenge standard filling."
+  },
+  {
+    "type": "true_false",
+    "question": "The practical DEM conditioning workflow has 5 main steps.",
+    "correct": true,
+    "explanation": "Obtain DEM, decide reconditioning, fill, check, proceed."
+  },
+  {
+    "type": "true_false",
+    "question": "Flat area resolution is a separate manual step in ArcGIS.",
+    "correct": false,
+    "explanation": "Handled automatically by the Flow Direction tool."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 at 5m is available nationwide for free in Hungary.",
+    "correct": false,
+    "explanation": "Must be ordered; not free."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM with continuous drainage is called hydrologically _____.",
+    "correct": "conditioned",
+    "explanation": "Non-increasing flow paths from every cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Jenson and Domingue filling algorithm was published in _____.",
+    "correct": "1988",
+    "explanation": "Classic pit-filling implementation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Wang and Liu published their efficient fill method in _____.",
+    "correct": "2006",
+    "explanation": "Reduced computation time for large DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream _____ applies a threshold to flow accumulation.",
+    "correct": "definition",
+    "explanation": "Step 5: classify cells as stream or non-stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream _____ divides streams at junctions.",
+    "correct": "segmentation",
+    "explanation": "Step 6: individual reaches."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 7 creates a _____ grid.",
+    "correct": "catchment",
+    "explanation": "Contributing area per stream segment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 8 converts rasters to _____ features.",
+    "correct": "vector",
+    "explanation": "Polylines, polygons, points."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Peter Sinks record temperature was _____ degrees C.",
+    "correct": "-56.3",
+    "explanation": "1985 record."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Levees create _____ pits in DEMs.",
+    "correct": "linear",
+    "explanation": "Extending for kilometers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The AGREE stream drop creates a _____-shaped depression.",
+    "correct": "V",
+    "explanation": "Smooth taper from buffer edge to stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus HR data is from _____.",
+    "correct": "USGS",
+    "explanation": "US stream network at 1:24,000."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU-_____ provides pan-European stream network data.",
+    "correct": "Hydro",
+    "explanation": "Copernicus Land Monitoring Service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroRIVERS is from the _____ initiative.",
+    "correct": "HydroSHEDS",
+    "explanation": "WWF/McGill global dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM suffix 'slp' = D-infinity _____.",
+    "correct": "slope",
+    "explanation": "Slope from D-inf analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM suffix 'sca' = D-infinity specific contributing _____.",
+    "correct": "area",
+    "explanation": "Contributing area per unit contour length."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro book: _____ for Water Resources.",
+    "correct": "GIS",
+    "explanation": "Maidment (2002)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WhiteboxTools provides BreachDepressions_____ algorithm.",
+    "correct": "LeastCost",
+    "explanation": "Advanced carving method."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Danakil Depression is in _____.",
+    "correct": "Ethiopia",
+    "explanation": "Tectonic closed basin example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian Great Plain wind-blown sand forms _____ landforms.",
+    "correct": "characteristic",
+    "explanation": "Aeolian formations on the Alfold."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS _____ tool delineates all drainage basins.",
+    "correct": "Basin",
+    "explanation": "Hydrology toolset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Stream _____ computes Strahler or Shreve order.",
+    "correct": "Order",
+    "explanation": "Hydrology toolset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Stream _____ assigns unique IDs to segments.",
+    "correct": "Link",
+    "explanation": "Between junctions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Processing in geographic coordinates requires _____-dependent corrections.",
+    "correct": "latitude",
+    "explanation": "Cell dimensions vary with latitude."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cubic _____ uses 16 cells for resampling.",
+    "correct": "convolution",
+    "explanation": "Smoothest DEM resampling method."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Aggtelek dolines formed in _____ limestone.",
+    "correct": "Triassic",
+    "explanation": "Dissolution of ancient limestone."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sabkhas and playas are found in _____ landscapes.",
+    "correct": "arid",
+    "explanation": "Desert closed basins."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cold air pooling occurs in closed _____.",
+    "correct": "depressions",
+    "explanation": "Like Peter Sinks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Arc Hydro schema includes hydro _____ and edges.",
+    "correct": "junctions",
+    "explanation": "Feature classes for network connectivity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CSDMS hosts TauDEM as a _____ service.",
+    "correct": "cloud",
+    "explanation": "Community Surface Dynamics Modeling System."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM output uses _____ format via GDAL.",
+    "correct": "GeoTIFF",
+    "explanation": "Standard geospatial raster format."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended workflow always includes a _____ around the study area.",
+    "correct": "buffer",
+    "explanation": "Prevents edge contamination."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between artifact pits and real depressions in DEMs.",
+    "correct": "Artifact pits come from DEM creation: interpolation errors, radar canopy/building returns, noise, quantization. Real depressions are genuine topographic features: karst sinkholes, aeolian hollows, glacial kettles, tectonic basins. The DEM provides no label; the analyst must use landscape knowledge to distinguish them.",
+    "explanation": "Central challenge of conditioning."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the sequential nature of the terrain analysis framework.",
+    "correct": "8 steps from raw DEM to vector watershed features, each depending on the previous. Errors propagate: an unfilled pit produces incorrect flow direction, wrong accumulation, gapped streams, and incorrect watershed boundaries. This makes conditioning quality critical to all downstream results.",
+    "explanation": "Error propagation through the pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "What is a pour point and why is it important?",
+    "correct": "The pour point is the lowest cell on the rim enclosing a pit — where water would first overflow if the pit were filled. Its elevation determines how much the pit must be modified (pit depth = pour point - floor). In filling, all interior cells are raised to the pour point elevation.",
+    "explanation": "Key concept for pit geometry."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the z-limit parameter in pit filling.",
+    "correct": "z-limit restricts filling to pits shallower than a threshold (e.g., 10 m). Deeper depressions are preserved, assuming they may be real features. This provides a coarse filter but doesn't solve the fundamental problem of distinguishing artifacts from real depressions. Useful for karst and aeolian landscapes.",
+    "explanation": "Partial solution to the artifact/reality problem."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the computational requirements of filling, carving, and optimal removal.",
+    "correct": "Filling: robust, fast, no parameters, universally implemented. Carving: moderate complexity, requires path finding, available in WhiteboxTools. Optimal removal (Soille 2004): computationally expensive, minimizes total change, available only in specialized tools. For most practitioners, filling remains the default.",
+    "explanation": "Practical feasibility drives method choice."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why TauDEM's MPI parallelization is important for large DEMs.",
+    "correct": "Continental-scale DEMs at 30m contain billions of cells. Single-threaded processing takes hours/days. TauDEM divides the DEM into horizontal stripes, each on a separate MPI process, with boundary communication for consistency. Order-of-magnitude speedup on multi-core machines; enables cluster computing for huge datasets.",
+    "explanation": "Practical necessity for large-scale processing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Arc Hydro geodatabase schema and its significance.",
+    "correct": "Standardized feature classes (junctions, edges, catchments, monitoring points) with relationship classes encoding connectivity. When catchment 42 drains through segment 42 to junction 15, that topology is stored explicitly and queryable. Provides a common language for hydrological GIS work beyond just terrain analysis.",
+    "explanation": "Data model beyond just terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between the ArcGIS Fill tool and TauDEM PitRemove?",
+    "correct": "ArcGIS Fill: GUI-based, single-threaded, metric coordinates only, optional z-limit. TauDEM PitRemove: command-line (with ArcGIS toolbox wrapper), MPI parallel, handles geographic coordinates directly, GeoTIFF output. Both achieve the same result but TauDEM is better for large DEMs and geographic coordinates.",
+    "explanation": "Same function, different implementations."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Garbrecht and Martz algorithm needed after pit filling?",
+    "correct": "Filling creates flat areas where D8 can't determine flow direction (no neighbor is lower). Garbrecht and Martz impose two gradients: toward the pour point (exit) and away from higher terrain. The combined field mimics natural drainage without changing elevations. Essential for connected flow paths through filled areas.",
+    "explanation": "Solves the problem filling creates."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the conditioning challenges specific to urban landscapes.",
+    "correct": "Roads, buildings, bridges, culverts create artificial barriers and depressions. LiDAR captures these faithfully. Roads need carving (mimicking culverts). Bridge decks appear as dams. Parking lots create false flat areas. Selective, feature-specific conditioning is needed rather than blanket filling.",
+    "explanation": "Infrastructure features require targeted treatment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the conditioned DEM should never be used for slope analysis.",
+    "correct": "Filling raises cells (creates artificial flats), burning creates trenches (artificial cliffs). These changes distort slope, aspect, curvature values — making them physically meaningless near modified areas. The original DEM preserves real terrain. Use original for terrain derivatives; conditioned for flow routing only.",
+    "explanation": "Fundamental workflow principle."
+  },
+  {
+    "type": "essay",
+    "question": "What are the consequences of forgetting the buffer in DEM conditioning?",
+    "correct": "Without a buffer, cells near the watershed boundary have unknown upstream contributing areas. Flow accumulation is underestimated. TauDEM marks these as no-data; ArcGIS silently gives wrong values. Stream networks near boundaries are incomplete. Watershed area is underestimated.",
+    "explanation": "Edge contamination corrupts results."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how karst hydrology fundamentally challenges DEM-based analysis.",
+    "correct": "DEM-based hydrology assumes surface flow along topographic gradients. Karst violates this: water disappears into sinkholes, flows through cave systems (possibly crossing surface divides), and emerges at springs. Subsurface catchments differ from surface catchments. DEM analysis can only approximate; specialized karst models are needed for detailed work.",
+    "explanation": "Fundamental assumption violation."
+  },
+  {
+    "type": "essay",
+    "question": "Compare GRASS, SAGA, and WhiteboxTools for DEM conditioning in QGIS.",
+    "correct": "GRASS: r.fill.dir, r.watershed (doesn't need explicit filling), mature algorithms. SAGA: Fill Sinks, Channel Network, accessible through Processing. WhiteboxTools: modern, fast, unique algorithms (breaching, optimal removal, constrained breaching). WhiteboxTools offers capabilities unavailable in ArcGIS or TauDEM.",
+    "explanation": "Open-source alternatives with unique features."
+  },
+  {
+    "type": "essay",
+    "question": "What is the HydroSHEDS dataset and how does it reduce conditioning burden?",
+    "correct": "HydroSHEDS provides pre-conditioned flow direction and accumulation grids derived from SRTM for the entire globe. Analysts can download these directly, skipping the conditioning step. Useful for rapid analysis in data-sparse regions, though lacks local DEM quality. Developed by WWF/McGill.",
+    "explanation": "Pre-processed global alternative."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the fill volume concept and its practical applications.",
+    "correct": "Fill volume = Sum(z_pour - z_i) * A_cell for all cells below pour point. Represents the depression's water storage capacity. Useful for surface water storage estimation in agriculture, stormwater management, and reservoir sizing. The concept reappears in Chapter 15 for HAND-derived hydraulic properties.",
+    "explanation": "Practical quantity beyond just conditioning."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the decision framework for DEM reconditioning (Table 9.3).",
+    "correct": "High-quality DEM + uncertain streams: trust DEM. Moderate DEM + good streams: apply AGREE. High-res LiDAR + good streams: selective burning at bridges. Low-res DEM + any streams: apply burning or AGREE. The key is comparing relative quality between DEM and stream data.",
+    "explanation": "Decision depends on data quality comparison."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Planchon and Darboux (2002) improvement to pit filling.",
+    "correct": "The original Jenson-Domingue algorithm can be slow for large DEMs. Planchon and Darboux developed a faster algorithm that first floods the entire DEM to a very high level, then progressively drains excess water, achieving the same result more efficiently. Wang and Liu (2006) further improved speed.",
+    "explanation": "Computational efficiency improvements."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of stream burning order relative to pit filling?",
+    "correct": "Burning first creates deep trenches along streams. Then filling resolves any pits created by the burning process. Doing it in reverse (fill first) would eliminate the trenches. The fill-minus-DEM diagnostic will show both operations, with large 'fills' along streams being the trench backfill.",
+    "explanation": "Order matters for correct results."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the DEM resolution affects conditioning complexity.",
+    "correct": "Higher resolution (1m LiDAR) = hundreds of thousands of pits from micro-features (ruts, ditches, furrows). Many are real but irrelevant at watershed scale. More aggressive conditioning needed but risks losing important features. 30m DEMs have fewer, mostly shallow pits. 90m DEMs even fewer. Resolution must match analysis scale.",
+    "explanation": "Trade-off between detail and conditioning effort."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the AGREE method preferred over simple stream burning?",
+    "correct": "Simple burning creates vertical cliffs at stream banks — unrealistic slopes, wrong hillslope flow patterns, and artifacts in any terrain analysis. AGREE applies a smooth V-shaped taper over a buffer zone, maintaining realistic terrain near streams. The conditioned DEM is usable for more purposes than a burned DEM.",
+    "explanation": "Smooth taper vs abrupt discontinuity."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the Snap Pour Point tool in watershed delineation.",
+    "correct": "User-placed pour points may not align with the flow accumulation grid due to GPS error, map imprecision, or coordinate rounding. Snap Pour Point moves the point to the nearest cell with high flow accumulation (i.e., on the stream). Without snapping, the delineated watershed may be incorrectly small.",
+    "explanation": "Practical correction for imprecise outlet placement."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how conditioning decisions affect flood forecast accuracy.",
+    "correct": "Wrong conditioning → wrong flow direction → wrong contributing area → wrong stream network → wrong watershed boundary → wrong runoff volume → wrong flood forecast. The cascade of errors from a poorly conditioned DEM can make flood predictions unreliable. Quality conditioning is the foundation of reliable forecasting.",
+    "explanation": "Error propagation through the entire modeling chain."
+  },
+  {
+    "type": "essay",
+    "question": "What are the endorheic basin challenges for DEM conditioning?",
+    "correct": "Endorheic basins (Dead Sea, Great Basin, Saharan depressions) have no surface outlet. Standard filling forces connectivity, misrepresenting hydrology. These basins should not be forced to drain to distant outlets. Selective filling or manual editing preserves their internal drainage character.",
+    "explanation": "Not all landscapes have outlets."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the fill-minus-DEM approach for creating a doline inventory.",
+    "correct": "In karst terrain, the fill-minus-DEM surface maps every depression with its depth. Dolines appear as clusters of positive values against a zero background. Shallow fills (<1m) are likely artifacts; deep fills (>5m) are likely real dolines. This provides a ready-made inventory for karst geomorphological mapping.",
+    "explanation": "Secondary use of the conditioning diagnostic."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of 'domain knowledge' in DEM conditioning.",
+    "correct": "Algorithms can identify and fill pits, but they cannot determine whether a pit is an artifact or a real feature. The analyst must know: Is this a karst landscape? Is the DEM from radar (canopy effects)? Are there road embankments? This contextual knowledge drives the choice between fill, carve, or preserve.",
+    "explanation": "Conditioning requires human judgment."
+  },
+  {
+    "type": "essay",
+    "question": "Compare D8 and D-infinity for use with conditioned DEMs.",
+    "correct": "D8 creates unambiguous trees for watershed delineation and stream extraction — the standard for most conditioning workflows. D-infinity provides smoother contributing areas for hillslope analysis and TWI. Both require conditioned DEMs. TauDEM provides parallel versions of both; ArcGIS provides both in the Flow Direction tool.",
+    "explanation": "Complementary methods for different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical workflow for a new Hungarian watershed study?",
+    "correct": "(1) Obtain DDM-5 with 1km buffer (or Copernicus if cross-border). (2) Reproject if needed (EOV for local, ETRS89-LAEA for European). (3) Optionally apply AGREE using OVF stream data. (4) Fill pits. (5) Check fill-minus-DEM. (6) Compute D8 flow direction and accumulation. (7) Delineate watersheds.",
+    "explanation": "Complete practical workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why DEM conditioning is 'not a mere preprocessing technicality.'",
+    "correct": "Conditioning decisions propagate through every subsequent analysis: flow direction, accumulation, stream networks, watersheds, and ultimately flood forecasts and water balance calculations. A poorly conditioned DEM makes all downstream results unreliable. It is where domain knowledge matters most and where errors are hardest to detect later.",
+    "explanation": "The chapter's central argument for taking conditioning seriously."
+  },
+  {
+    "type": "mcq",
+    "question": "The terrain analysis framework produces what final output?",
+    "options": [
+      "A) Only a filled DEM",
+      "B) A connected stream network with nested sub-watersheds",
+      "C) Only flow direction",
+      "D) Only a slope map"
+    ],
+    "correct": "B",
+    "explanation": "The framework transforms a raw DEM into a comprehensive hydrological data structure."
+  },
+  {
+    "type": "true_false",
+    "question": "The terrain analysis framework was designed specifically for karst landscapes.",
+    "correct": false,
+    "explanation": "It is a general framework applicable to all landscapes, though karst requires special considerations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended resampling for DEM reprojection is _____ interpolation.",
+    "correct": "bilinear",
+    "explanation": "Balances smoothness and fidelity."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of culverts in LiDAR DEM conditioning.",
+    "correct": "LiDAR captures road surfaces but not culverts beneath. Roads appear as dams blocking stream flow. Carving through the road at culvert locations mimics actual drainage. Automated culvert detection or manual identification of problem locations is needed. Targeted treatment rather than blanket filling.",
+    "explanation": "Infrastructure-specific conditioning challenge."
+  },
+  {
+    "type": "essay",
+    "question": "What is the AGREE formula and how is it implemented in GIS?",
+    "correct": "DEM_agree = DEM - drop*stream_raster - taper*(1-stream_raster)*(dist<buffer). The taper increases linearly from 0 at buffer edge to full drop at stream bank. Implemented via Raster Calculator in ArcGIS using stream raster, Euclidean distance, and conditional logic. Arc Hydro provides a built-in dialog.",
+    "explanation": "Technical implementation details."
+  },
+  {
+    "type": "essay",
+    "question": "Why does the AGREE buffer distance matter?",
+    "correct": "Too small: the taper zone is narrow, creating near-abrupt transitions similar to simple burning. Too large: modifies terrain far from streams, potentially altering hillslope hydrology. Typical 500 m balances smooth transition with limited modification extent. Larger buffers (1000 m) may be needed in very flat terrain.",
+    "explanation": "Parameter sensitivity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a hydrologically conditioned DEM in simple terms.",
+    "correct": "A DEM where water can flow continuously from every cell to an outlet without getting trapped. Like pouring water on every pixel of a tilted surface — it all finds its way to the edge. Raw DEMs have 'holes' that trap water; conditioning fills these holes or cuts channels through barriers.",
+    "explanation": "Accessible explanation of the core concept."
+  },
+  {
+    "type": "essay",
+    "question": "What is the relationship between DEM conditioning and the National Water Model?",
+    "correct": "The National Water Model (US) requires correctly conditioned terrain data for flow routing across the continental US. Pre-conditioned NHDPlus datasets provide the stream network and catchments. Poor conditioning would create disconnected reaches and incorrect drainage areas, making the continental-scale model impossible.",
+    "explanation": "Operational significance of conditioning."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of edge-weighted flow direction.",
+    "correct": "Some algorithms weight flow direction differently for edge cells (fewer neighbors) than interior cells. TauDEM handles this by marking boundary cells with uncertain upstream areas as no-data. ArcGIS silently processes edge cells, potentially producing incorrect accumulation values that propagate inward.",
+    "explanation": "Different software handles edges differently."
+  },
+  {
+    "type": "essay",
+    "question": "How does DEM conditioning relate to flood inundation mapping?",
+    "correct": "Flood mapping (Chapters 14-15) requires accurate flow paths, contributing areas, and channel geometry — all derived from conditioned DEMs. HAND (Height Above Nearest Drainage) depends on correct stream locations from conditioned terrain. Poor conditioning creates wrong stream positions and incorrect flood extent predictions.",
+    "explanation": "Downstream application of conditioning quality."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical difference between ArcGIS Fill and Arc Hydro Fill Sinks?",
+    "correct": "ArcGIS Fill: simple, fills to pour point, creates perfectly flat areas. Arc Hydro Fill Sinks: enhanced version that can impose slight gradients across filled areas (incremental filling), reducing the flat area problem. Both resolve drainage continuity, but Arc Hydro's version produces better flow direction results.",
+    "explanation": "Enhanced vs basic filling."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how stream order relates to conditioning quality.",
+    "correct": "Stream order (Strahler/Shreve) is computed from the stream network, which comes from flow accumulation, which comes from flow direction, which comes from the conditioned DEM. Incorrect conditioning creates gaps in the network, which break the order hierarchy. A well-conditioned DEM produces a connected, correctly ordered network.",
+    "explanation": "Quality cascades through the pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "What are the practical implications of processing a DEM in geographic vs projected coordinates?",
+    "correct": "Geographic: cells in degrees, non-square, varying dimensions with latitude. Requires software that applies latitude-dependent corrections (TauDEM). Projected: cells in meters, square, uniform. Simpler computation but introduces resampling artifacts. For most tools, projecting to metric coordinates is recommended.",
+    "explanation": "Coordinate system affects computation accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the HydroSHEDS product and its global significance.",
+    "correct": "HydroSHEDS provides pre-conditioned hydrological data (flow direction, accumulation, stream networks, basins) derived from SRTM for the entire globe. Freely available, it enables hydrological analysis in data-sparse regions without the analyst needing to perform conditioning. Used worldwide for water resources assessment.",
+    "explanation": "Global pre-processed terrain hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "How does the choice between filling and carving affect downstream hydraulic modeling?",
+    "correct": "Filling raises the terrain, potentially changing channel depth and cross-section geometry used in hydraulic models. Carving preserves interior terrain but creates artificial channels. For flood modeling using HAND, the choice affects water surface elevation estimation. The analyst must understand which terrain is more representative for the application.",
+    "explanation": "Conditioning choices affect hydraulic properties."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of the 'tree' and 'coord' files in TauDEM output?",
+    "correct": "The tree file (*.dat) stores the hierarchical connectivity of stream reaches — which flows into which. The coord file stores the geographic coordinates of reach endpoints. Together they define a connected, navigable stream network that can be exported to vector format or used directly in network-based models.",
+    "explanation": "Network data structure from terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the GRASS r.watershed module doesn't require explicit pit filling.",
+    "correct": "r.watershed uses a Least Cost Path algorithm that implicitly handles depressions during flow routing, rather than modifying the DEM first. This avoids creating flat areas and preserves original terrain. Different algorithmic approach that achieves the same goal of continuous drainage without a separate conditioning step.",
+    "explanation": "Alternative algorithmic approach."
+  },
+  {
+    "type": "essay",
+    "question": "How should an analyst document their DEM conditioning decisions?",
+    "correct": "Record: DEM source, resolution, coordinate system, reconditioning method (AGREE parameters or none), pit filling method and z-limit, fill-minus-DEM statistics (max fill depth, number of filled cells), known real features that were filled, and software used. This metadata is essential for reproducibility and interpretation.",
+    "explanation": "Documentation standards for reproducibility."
+  },
+  {
+    "type": "essay",
+    "question": "What is the catchment grid and how is it derived?",
+    "correct": "The catchment grid assigns each cell the ID of the stream segment it drains to. Derived from the flow direction grid: for each cell, trace downstream until reaching a stream segment and assign that segment's ID. The result partitions the landscape into sub-catchments, each draining to one stream reach.",
+    "explanation": "Step 7 of the terrain analysis framework."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the Watershed tool in ArcGIS.",
+    "correct": "The Watershed tool traces all cells upstream of specified pour points using the D8 flow direction grid. Output: a raster where each cell is labeled with the ID of the pour point it drains to. This delineates watershed boundaries. Requires conditioned DEM, flow direction, and properly placed pour points.",
+    "explanation": "Core watershed delineation tool."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Basin tool different from the Watershed tool?",
+    "correct": "Basin delineates ALL drainage basins in the domain automatically, without requiring user-specified pour points. Every local minimum or domain edge becomes a basin outlet. Watershed requires specific pour points and delineates only those basins. Basin is for overview; Watershed is for specific analysis areas.",
+    "explanation": "Automatic vs targeted delineation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of stream reach connectivity in Arc Hydro.",
+    "correct": "Arc Hydro stores explicit relationships: which junction connects to which stream reach, which reach flows into which junction, which catchment drains to which reach. This topology enables upstream/downstream tracing, flood routing, and network analysis. More powerful than disconnected shapefiles.",
+    "explanation": "Explicit topological relationships."
+  },
+  {
+    "type": "essay",
+    "question": "How does the stream definition threshold affect analysis results?",
+    "correct": "Higher threshold: fewer, larger streams defined. Lower threshold: denser network with more headwater channels. The threshold controls the detail level of the extracted network. Must match the analysis purpose: watershed delineation needs only major streams; erosion modeling needs fine network detail.",
+    "explanation": "Parameter controlling network density."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of conditioning in the context of the broader hydrological modeling chain.",
+    "correct": "Conditioning is step 1 in a chain: conditioned DEM -> flow direction -> accumulation -> streams -> watersheds -> hydrological model -> flood forecast. Each step transforms the previous output. Conditioning is where domain knowledge matters most and where errors are hardest to trace later.",
+    "explanation": "Positioning conditioning in the full workflow."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between raster and vector representation of streams?",
+    "correct": "Raster: cells classified as stream/non-stream (binary grid). Vector: polylines with attributes (length, order, name). Raster is the direct output of terrain analysis; vector is created by raster-to-vector conversion (Step 8). Vector enables network analysis, labeling, and integration with other vector data.",
+    "explanation": "Two complementary representations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the OpenTopography portal supports DEM conditioning workflows.",
+    "correct": "OpenTopography provides access to multiple DEM sources (SRTM, Copernicus, LiDAR point clouds) through a web interface. Users can select areas, choose products, and download data. For US LiDAR, provides raw point clouds for custom DTM generation. Integrates with TauDEM for cloud-based processing.",
+    "explanation": "Data access infrastructure."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the ArcGIS Ready-to-Use watershed tool useful but limited?",
+    "correct": "Operates on pre-processed global SRTM in the cloud. Quick for preliminary delineation anywhere in the world without local DEM download. But: no control over conditioning parameters, fixed 30m SRTM data, can't use national DEMs, not suitable for detailed analysis. Good for reconnaissance, not for final results.",
+    "explanation": "Trade-off between convenience and control."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical challenge of conditioning in the Congo Basin.",
+    "correct": "Dense tropical forest canopy causes radar DEMs to overestimate terrain elevation. The DEM surface represents the canopy, not the ground. Apparent depressions where canopy gaps occur require careful conditioning. MERIT DEM, which removes tree height bias, is preferred over raw SRTM for this region.",
+    "explanation": "Tropical forest canopy artifacts."
+  },
+  {
+    "type": "essay",
+    "question": "How does the concept of drainage topology relate to hydrological modeling?",
+    "correct": "Drainage topology defines which areas drain to which outlets and through which channels. It enables routing calculations: water from sub-catchment A flows through reach A to junction J, then through reach B to the basin outlet. This connectivity is the backbone of distributed hydrological models.",
+    "explanation": "Network connectivity for modeling."
+  },
+  {
+    "type": "essay",
+    "question": "What are the implications of different DEM acquisition dates for conditioning?",
+    "correct": "SRTM (2000) vs Copernicus (2011-2015) vs recent LiDAR: landscape changes (urbanization, mining, highway construction) may appear differently. A dam built after SRTM acquisition won't appear in SRTM but will in later DEMs. The analyst must know the DEM date relative to landscape changes in the study area.",
+    "explanation": "Temporal context matters."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Scale dependence of pit characteristics.",
+    "correct": "90m DEMs: few hundred pits, mostly shallow artifacts. 30m DEMs: thousands of pits, mix of artifacts and real features. 1m LiDAR: hundreds of thousands of pits, many real micro-features (ruts, furrows). Resolution determines what features appear as pits and how much conditioning is needed.",
+    "explanation": "More resolution = more pits."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the output of the raster-to-vector conversion step.",
+    "correct": "Step 8 produces: polylines for drainage lines (stream segments), polygons for catchment boundaries, and points for outlet locations. These vector features carry attributes (ID, area, length, order) and can be overlaid with other data. The transformation from grid analysis to feature-based GIS.",
+    "explanation": "Final step of the framework."
+  },
+  {
+    "type": "essay",
+    "question": "How would you approach conditioning for a Mediterranean karst island?",
+    "correct": "Mediterranean islands often have karst limestone with real sinkholes plus limited gauge/stream data. Use Copernicus GLO-30, apply AGREE if stream data exists, fill with z-limit to preserve deep dolines, examine fill-minus-DEM carefully, and document all real depressions. Subsurface drainage may dominate.",
+    "explanation": "Specific conditioning scenario."
+  },
+  {
+    "type": "essay",
+    "question": "What is the role of the Community Surface Dynamics Modeling System (CSDMS) for DEM processing?",
+    "correct": "CSDMS hosts TauDEM and other earth surface process models as cloud-based services. Users can process DEMs without local software installation. Useful for education and quick analyses. Part of the trend toward cloud-based geospatial processing that reduces barriers to terrain analysis.",
+    "explanation": "Cloud-based processing infrastructure."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the terrain analysis framework has evolved from 1988 to 2026.",
+    "correct": "1988: Jenson-Domingue basic filling, single-CPU, D8 only. 1997: D-infinity (Tarboton), AGREE method (Hellweger). 2002: Faster algorithms (Planchon-Darboux), Arc Hydro. 2004: Optimal removal (Soille). 2006+: MPI parallelization, WhiteboxTools advanced algorithms. 2020s: Cloud processing, continental-scale workflows.",
+    "explanation": "Nearly four decades of algorithmic development."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the software comparison table (Table 9.6) is important for practitioners.",
+    "correct": "Different tools have different capabilities: ArcGIS lacks carving, TauDEM lacks AGREE, WhiteboxTools has unique algorithms. No single software does everything. The table helps practitioners choose the right tool or combination. Many projects use multiple tools: ArcGIS for GUI, TauDEM for speed, WhiteboxTools for advanced algorithms.",
+    "explanation": "Practical tool selection guidance."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical significance of the 3,800 m^3 fill volume in the worked example?",
+    "correct": "This volume represents the depression's water storage capacity — how much water it can hold before overflowing. For agricultural water management, this informs surface storage estimates. For stormwater design, it indicates detention capacity. The fill volume concept is a practical byproduct of the conditioning calculation.",
+    "explanation": "Practical application of the fill calculation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why ArcGIS silently truncates edge contamination while TauDEM explicitly marks it.",
+    "correct": "ArcGIS processes boundary cells normally, producing accumulation values that may be too low (missing external contributing area) without any warning. TauDEM marks affected cells as no-data, explicitly flagging uncertainty. TauDEM's approach is scientifically more honest; ArcGIS's approach can mislead users.",
+    "explanation": "Different philosophies in handling uncertainty."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between DEM conditioning and water balance accuracy.",
+    "correct": "Water balance requires correct watershed area (from correct delineation from correct conditioning). Incorrect conditioning creates holes in watersheds, underestimating drainage area. If area is wrong, runoff depth is wrong, water balance doesn't close. Conditioning errors propagate to fundamental hydrological accounting.",
+    "explanation": "Conditioning affects basic mass balance."
+  },
+  {
+    "type": "essay",
+    "question": "How does the AGREE method handle the transition between stream and hillslope?",
+    "correct": "Within the buffer (e.g., 500 m), the DEM is progressively lowered as distance to stream decreases. The lowering increases linearly from zero at the buffer edge to the full drop at the stream bank. This V-shaped profile maintains a natural-looking transition without the abrupt cliffs of simple burning.",
+    "explanation": "Smooth taper mechanism."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the 7x7 worked example useful for understanding pit filling?",
+    "correct": "It shows the complete process: identify pit floor (98 m), find pour point (107 m), compute pit depth (9 m), determine which cells to fill (9 cells below 107 m), and calculate fill volume (3,800 m^3). Working through the numbers builds intuition about what the Fill tool actually does behind its dialog box.",
+    "explanation": "Hands-on understanding of the algorithm."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how conditioning decisions differ between a research project and an operational flood forecast system.",
+    "correct": "Research: flexibility to experiment with different methods, document choices, explore sensitivity. Operational: need standardized, reproducible procedures that produce consistent results every run. Operational systems typically use established filling with fixed parameters; research may explore carving, optimal removal, or selective approaches.",
+    "explanation": "Different contexts demand different approaches."
+  },
+  {
+    "type": "essay",
+    "question": "What role does the DEM vertical datum play in conditioning?",
+    "correct": "Vertical datum (EGM2008, Baltic, local geoid) affects absolute elevations. Mixing DEMs with different datums creates artificial elevation steps that appear as barriers or pits. Before mosaicking DEMs from different sources, verify they share the same vertical datum or apply appropriate corrections.",
+    "explanation": "Datum consistency prevents artificial features."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'domain knowledge' with three specific examples.",
+    "correct": "(1) Knowing Aggtelek is karst means its pits are real dolines, not artifacts. (2) Knowing a road crosses a valley means the LiDAR pit is caused by a road embankment with a culvert below. (3) Knowing the Alfold has slopes <0.01% means filling will modify vast areas. Each case requires different conditioning.",
+    "explanation": "Concrete examples of essential contextual knowledge."
+  }
+]

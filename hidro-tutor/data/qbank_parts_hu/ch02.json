@@ -1,0 +1,3402 @@
+[
+ {
+  "type": "mcq",
+  "question": "Mi a geoid?",
+  "options": [
+   "A) A Fold tomeegkozeppontja",
+   "B) A Fold gravitacios terenek ekvipotencialis felulete, amely az atlagos tengerszintet kozeliti",
+   "C) Egy matematikai ellipszoid",
+   "D) A Fold fizikai felszine"
+  ],
+  "correct": "B",
+  "explanation": "A geoid a gravitacio ekvipotencialis felulete.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ellipszoid a geodeziaban?",
+  "options": [
+   "A) A Fold pontos alakja",
+   "B) A geoid masik neve",
+   "C) Matematikai kozelites a Fold alakjahoz, forgasi ellipszoid",
+   "D) A tengerszint felulete"
+  ],
+  "correct": "C",
+  "explanation": "Az ellipszoid matematikai kozelites ket parameterrel (fel-nagytengely, fel-kistengely).",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a WGS84?",
+  "options": [
+   "A) Egy terkeepi vetullet",
+   "B) A GPS altal hasznalt globalis geodeziai datum",
+   "C) Egy magassagi datum",
+   "D) Egy felszinboritasi adatkeszlet"
+  ],
+  "correct": "B",
+  "explanation": "A WGS84 a GPS geocentrikus datuma.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV vetullet tipusa?",
+  "options": [
+   "A) Transzverzalis Mercator",
+   "B) Lambert-fele szogitarto kup",
+   "C) Hotine-fele ferde Mercator",
+   "D) Albers-fele terulettarto kup"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV EPSG-kodja?",
+  "options": [
+   "A) 4326",
+   "B) 3857",
+   "C) 23700",
+   "D) 3035"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV EPSG:23700.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mekkora a HD72 es a WGS84 kozotti eltolodas?",
+  "options": [
+   "A) 1-2 m",
+   "B) 10-20 m",
+   "C) 50-60 m",
+   "D) 200-300 m"
+  ],
+  "correct": "C",
+  "explanation": "A HD72 es a WGS84 koozotti eltolodas kb. 50-60 meter.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ortometrikus magassag?",
+  "options": [
+   "A) Az ellipszoidtol mert magassag",
+   "B) A geoidtol mert magassag",
+   "C) A GPS kozvetlenul mert magassaga",
+   "D) A tengerszinttol mert vizszintes tavolsag"
+  ],
+  "correct": "B",
+  "explanation": "Az ortometrikus magassag a geoidtol (atlagos tengerszint) merendo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ellipszoid-magassag es az ortometrikus magassag kozotti osszefugges?",
+  "options": [
+   "A) h = H - N",
+   "B) h = H + N",
+   "C) h = H * N",
+   "D) h = H / N"
+  ],
+  "correct": "B",
+  "explanation": "h = H + N, ahol N a geoidundulacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mekkora a geoidundulacio Magyarorszagon?",
+  "options": [
+   "A) 5-10 m",
+   "B) 15-25 m",
+   "C) 38-46 m",
+   "D) 80-100 m"
+  ],
+  "correct": "C",
+  "explanation": "Magyarorszagon N erteke kb. 38-46 meter.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a HD72 datum ellipszoidja?",
+  "options": [
+   "A) WGS 1984",
+   "B) GRS 1980",
+   "C) GRS 1967 (IUGG 1967)",
+   "D) Clarke 1866"
+  ],
+  "correct": "C",
+  "explanation": "A HD72 a GRS 1967 ellipszoidra epul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a terulettarto vetuleti tulajdonsag jelentosege a hidrologia szamara?",
+  "options": [
+   "A) A helyi szogek megorzodnek",
+   "B) A tavolsagok pontosak",
+   "C) A teruletszamitasok pontosak, ami kritikus a vizgyujto-teruleti szamitasokhoz",
+   "D) A Fold pontos alakja megorzodik"
+  ],
+  "correct": "C",
+  "explanation": "A hidrologiaban a pontos terullet kritikus a lefolyasi terfogat szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az UTM rendszer zonaszelessege?",
+  "options": [
+   "A) 3 fok",
+   "B) 6 fok",
+   "C) 10 fok",
+   "D) 15 fok"
+  ],
+  "correct": "B",
+  "explanation": "Az UTM 6 fokos zonakat hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Melyik UTM-zonaba esik Magyarorszag legnagyobb resze?",
+  "options": [
+   "A) 33N",
+   "B) 34N",
+   "C) 35N",
+   "D) 32N"
+  ],
+  "correct": "B",
+  "explanation": "Magyarorszag szinte teljes terulete a 34N UTM-zonaba esik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Web Mercator EPSG-kodja?",
+  "options": [
+   "A) 4326",
+   "B) 3857",
+   "C) 23700",
+   "D) 3035"
+  ],
+  "correct": "B",
+  "explanation": "A Web Mercator EPSG:3857.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Miert nem szabad a Web Mercator-t kvantitativ elemzeshez hasznalni?",
+  "options": [
+   "A) Tul regi",
+   "B) Drasztikusan torzitja a teruleteket az egyenlitotol tavolodva",
+   "C) Csak goombhoz hasznalhato",
+   "D) Nem tamogatja a GIS-szoftverek"
+  ],
+  "correct": "B",
+  "explanation": "Budapest szelessegen a terulet kb. 2,18-szorosan felnagyitott.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ETRS89?",
+  "options": [
+   "A) Egy amerikai datum",
+   "B) Az Europai Foldi Vonatkoztatasi Rendszer 1989",
+   "C) Egy magassagi datum",
+   "D) Egy felszinboritasi termek"
+  ],
+  "correct": "B",
+  "explanation": "Az ETRS89 az EU kotelezo vonatkoztatasi rendszere.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ETRS89/LAEA (EPSG:3035) vetulettipusa?",
+  "options": [
+   "A) Transzverzalis Mercator",
+   "B) Lambert-fele azimutalis terulettarto",
+   "C) Albers-fele terulettarto kup",
+   "D) Hotine-fele ferde Mercator"
+  ],
+  "correct": "B",
+  "explanation": "Az INSPIRE altal eloiirt osszeuropai terulettarto vetulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EPSG 1449 transzformacios kod?",
+  "options": [
+   "A) WGS84-bol NAD83-ba",
+   "B) HD72-bol ETRS89-be",
+   "C) NAD27-bol NAD83-ba",
+   "D) Pulkovo 1942-bol WGS84-be"
+  ],
+  "correct": "B",
+  "explanation": "A HD72-rol ETRS89-re torteno 7 parameteres Helmert-transzformacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Balti magassagi rendszer?",
+  "options": [
+   "A) A tengerszinttol mert horizontalis tavolsag",
+   "B) Magyarorszagon es Kozep-Kelet-Europaban hasznalt magassagi datum, a kronstadti merce alapjan",
+   "C) Egy amerikai magassagi rendszer",
+   "D) Egy vetuleti koordinata-rendszer"
+  ],
+  "correct": "B",
+  "explanation": "A kronstadti arapalyi merceneel mert atlagos tengerszinten alapul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a NAD83?",
+  "options": [
+   "A) Magyarorszag nemzeti datuma",
+   "B) Az 1983-as Eszak-amerikai Datum",
+   "C) Az Europai Foldi Referencia",
+   "D) Egy globalis magassagi rendszer"
+  ],
+  "correct": "B",
+  "explanation": "Az Egyesult Allamok vizszintes datuma.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az Albers-fele terulettarto kupvetuleet legfontosabb tulajdonsaga?",
+  "options": [
+   "A) Megorzi a szogeket",
+   "B) Megorzi a teruleteket",
+   "C) Megorzi a tavolsagokat",
+   "D) Megorzi az alakokat"
+  ],
+  "correct": "B",
+  "explanation": "Az Albers terulettarto: kp * km = 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Budapest szelessegen (47,5 fok) egy foknak hany km felel meg kelet-nyugati iranyban?",
+  "options": [
+   "A) 111,2 km",
+   "B) 75,1 km",
+   "C) 50 km",
+   "D) 30 km"
+  ],
+  "correct": "B",
+  "explanation": "111,2 * cos(47,5) = 75,1 km.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV hamis keleti eltolasa?",
+  "options": [
+   "A) 200 000 m",
+   "B) 500 000 m",
+   "C) 650 000 m",
+   "D) 0 m"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV hamis keleti eltolasa 650 000 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV meretarany-tenyezo a kozeppontban?",
+  "options": [
+   "A) 1,0000",
+   "B) 0,9996",
+   "C) 0,99993",
+   "D) 0,9999"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV kozepponti meretarany-tenyezoje 0,99993.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az UTM meretarany-tenyezo a kozponti meridianon?",
+  "options": [
+   "A) 1,0000",
+   "B) 0,9996",
+   "C) 0,99993",
+   "D) 0,9999"
+  ],
+  "correct": "B",
+  "explanation": "Az UTM kozponti meridiaaani meretarany-tenyezoje 0,9996.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Melyik feluletre vetitunk egy kupvetuletneel?",
+  "options": [
+   "A) Hengerre",
+   "B) Sikra",
+   "C) Kupra",
+   "D) Goombre"
+  ],
+  "correct": "C",
+  "explanation": "A kupvetuletek egy kupot helyeznek a foldgombre.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a fokor-tavolsag?",
+  "options": [
+   "A) Egyenes vonalu tavolsag a terkepen",
+   "B) A legrovidebb ut a gomb felszinen",
+   "C) A meridian menti tavolsag",
+   "D) A szelessegi kor menti tavolsag"
+  ],
+  "correct": "B",
+  "explanation": "A gomb ket pontja kozotti legrovideebb ut.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a NAVD88?",
+  "options": [
+   "A) Egy vetuleti koordinata-rendszer",
+   "B) Az Egyesult Allamok magassagi datuma",
+   "C) Egy terkept vetuleet",
+   "D) Egy muholdas rendszer"
+  ],
+  "correct": "B",
+  "explanation": "A NAVD88 az USA es Kanada jelenlegi magassagi datuma.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Gauss-Kruger-rendszer zonaszelessege?",
+  "options": [
+   "A) 3 fok",
+   "B) 6 fok",
+   "C) 10 fok",
+   "D) 15 fok"
+  ],
+  "correct": "A",
+  "explanation": "A Gauss-Kruger 3 fokos zonakat hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Gauss-Kruger meretarany-tenyezoje a kozponti meridianon?",
+  "options": [
+   "A) 0,9996",
+   "B) 0,99993",
+   "C) 1,0000",
+   "D) 0,9999"
+  ],
+  "correct": "C",
+  "explanation": "A Gauss-Kruger 1,0000-as meretarany-tenyezot hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV kozeppontjanak hozzavetolelges szelessege?",
+  "options": [
+   "A) 45 fok E",
+   "B) 47,14 fok E",
+   "C) 48 fok E",
+   "D) 50 fok E"
+  ],
+  "correct": "B",
+  "explanation": "47 fok 08 perc 20 masodperc E (47,1389 fok).",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV kozeppontjanak hosszusaga?",
+  "options": [
+   "A) 17 fok K",
+   "B) 19,05 fok K",
+   "C) 21 fok K",
+   "D) 23 fok K"
+  ],
+  "correct": "B",
+  "explanation": "19 fok 02 perc 54,8584 masodperc K (19,0486 fok).",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Hogyan azonositjuk az EOV koordinatakat ertektartomany alapjan?",
+  "options": [
+   "A) Northing: 400 000-1 000 000",
+   "B) Northing: 0-400 000, Easting: 400 000-1 000 000",
+   "C) Easting: 0-400 000",
+   "D) Mindketto: 0-1 000 000"
+  ],
+  "correct": "B",
+  "explanation": "Northing: 0-400 000; Easting: 400 000-1 000 000.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a szellesseg-hosszusag felcserelesenek kovetkezmenye?",
+  "options": [
+   "A) Semmi",
+   "B) A pont a tukorkep-pozicioba kerul",
+   "C) A magassag hibas lesz",
+   "D) A vetuleet megvaltozik"
+  ],
+  "correct": "B",
+  "explanation": "Budapest (19,04; 47,50) helyett Kozep-Kazahsztanba kerul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EGM2008?",
+  "options": [
+   "A) Egy terkeepi vetullet",
+   "B) Egy globalis geoidmodell",
+   "C) Egy muholdas program",
+   "D) Egy felszinboritasi adatkeszlet"
+  ],
+  "correct": "B",
+  "explanation": "Az Earth Gravitational Model 2008 globalis geoidmodell.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a trilateracio?",
+  "options": [
+   "A) Harom pont osszekotese",
+   "B) Poziciomeghataaroas ismert pontoktol mert tavolsagok alapjan",
+   "C) Harom vetullet kombinalasa",
+   "D) Haromszogeles"
+  ],
+  "correct": "B",
+  "explanation": "A GPS mukodesenek alapelve.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Hany muhold alkotja a GPS-flottillat (jelenleg mukodo)?",
+  "options": [
+   "A) 12",
+   "B) 24",
+   "C) 31",
+   "D) 48"
+  ],
+  "correct": "C",
+  "explanation": "Jelenleg 31 mukodo muhold hat palyasikban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az RTK poziciomeghataroas pontossaga?",
+  "options": [
+   "A) 3-5 m",
+   "B) 1-2 cm vizszintesen",
+   "C) 1-2 m",
+   "D) 10 cm"
+  ],
+  "correct": "B",
+  "explanation": "Az RTK centimeteres pontossagot er el.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GNSS gyujtonev?",
+  "options": [
+   "A) Csak a GPS rendszer",
+   "B) Globalis navigacios muholdrendszerek osszefoglalo neve (GPS, GLONASS, Galileo, BeiDou)",
+   "C) Egy europai program",
+   "D) Egy geoidmodell"
+  ],
+  "correct": "B",
+  "explanation": "A GNSS a GPS, GLONASS, Galileo es BeiDou osszefoglalo neve.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Melyik az EU sajat muholdas navigacios rendszere?",
+  "options": [
+   "A) GPS",
+   "B) GLONASS",
+   "C) Galileo",
+   "D) BeiDou"
+  ],
+  "correct": "C",
+  "explanation": "A Galileo az EU GNSS rendszere.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GNSSnet.hu?",
+  "options": [
+   "A) Egy weboldal",
+   "B) A magyar nemzeti GNSS-referencia-halozat",
+   "C) Egy nemzetkozi szervezet",
+   "D) Egy muholdas program"
+  ],
+  "correct": "B",
+  "explanation": "Magyarorszag allando GNSS-allomasokbol allo halozata.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EVRF2019?",
+  "options": [
+   "A) Egy felszinboritasi termek",
+   "B) Az Europai Magassagi Vonatkoztatasi Keret",
+   "C) Egy vetuleti rendszer",
+   "D) Egy csapadekadatkeszlet"
+  ],
+  "correct": "B",
+  "explanation": "Az osseuropai magassagi rendszer harmonizalasara szolgal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a CORS halozat?",
+  "options": [
+   "A) Koordinata-rendszer Osszehasonlito Rendszer",
+   "B) Folyamatosan mukodo GNSS-referencia-allomasok halozata",
+   "C) Egy GIS-szoftver",
+   "D) Egy meteorologiai halozat"
+  ],
+  "correct": "B",
+  "explanation": "Az USA Nemzeti CORS halozat tobb mint 1800 allomasbol all.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi tortenik, ha egy EOV-adatkeszletnek nincs .prj fajlja es rossz muveletet vegzunk?",
+  "options": [
+   "A) Semmi",
+   "B) Ha atvetitjuk WGS84-be ahelyett hogy definialnnank, az eredmeny ertelmetelen lesz",
+   "C) A koordinatak automatikusan korrigaloodnak",
+   "D) A fajl torlodik"
+  ],
+  "correct": "B",
+  "explanation": "A 6 jegyu EOV-koordinatakat WGS84-fokkent kezeli, ertelmetelen eredmennyel.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a kulonbseg a vetullet definialasa es az atvetites kozott?",
+  "options": [
+   "A) Nincs kulonbseg",
+   "B) A definialas metaadatot ad hozza, az atvetites ujraszamolja a koordinatakat",
+   "C) A definialas ujraszamolja a koordinatakat",
+   "D) Az atvetites toirli a koordinatakat"
+  ],
+  "correct": "B",
+  "explanation": "Definialas: metaadat. Atvetites: koordinata-ujraszamolas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Budapest es Debrecen kozotti fokortavolsag hozzavetoleg mennyi?",
+  "options": [
+   "A) 80 km",
+   "B) 120 km",
+   "C) 180 km",
+   "D) 250 km"
+  ],
+  "correct": "C",
+  "explanation": "Kb. 180 km a fokor-tavolsag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Egy 1 ivmasodperces DEM-cella Budapest szelessegen hany meter eszak-deli iranyban?",
+  "options": [
+   "A) 10 m",
+   "B) 21 m",
+   "C) 31 m",
+   "D) 50 m"
+  ],
+  "correct": "C",
+  "explanation": "Kb. 31 m eszak-deli iranyban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Fold fel-nagytengely (egyenlitoi sugar) hozzavetoleg?",
+  "options": [
+   "A) 6 357 km",
+   "B) 6 371 km",
+   "C) 6 378 km",
+   "D) 6 400 km"
+  ],
+  "correct": "C",
+  "explanation": "a = 6 378 137 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Fold lapultsaga (1/f) hozzavetoleg?",
+  "options": [
+   "A) 1/100",
+   "B) 1/200",
+   "C) 1/298",
+   "D) 1/500"
+  ],
+  "correct": "C",
+  "explanation": "f ~ 1/298,257.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a NAD27 es NAD83 kozotti tipikus eltolodas?",
+  "options": [
+   "A) 1-2 m",
+   "B) 10-300 m",
+   "C) 50-60 m",
+   "D) 500-1000 m"
+  ],
+  "correct": "B",
+  "explanation": "Helytol fuggoen kb. 10-300 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az AFREF?",
+  "options": [
+   "A) Afrikai Arvizi Rendszer",
+   "B) Afrikai Geodeziai Vonatkoztatasi Keret",
+   "C) Azsiai Foldi Referencia",
+   "D) Amerikai Felmeresi Rendszer"
+  ],
+  "correct": "B",
+  "explanation": "Az African Geodetic Reference Frame.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Bessel 1841 ellipszoid fo hasznalata?",
+  "options": [
+   "A) GPS",
+   "B) Kozep-europai felmeresek, a magyar rendszerek alapja 1972 elott",
+   "C) Globalis terkepezes",
+   "D) Muholdas navigacio"
+  ],
+  "correct": "B",
+  "explanation": "Kozep-europai felmeresek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Hany parametert tartalmaz a Helmert-transzformacio?",
+  "options": [
+   "A) 3",
+   "B) 5",
+   "C) 7",
+   "D) 10"
+  ],
+  "correct": "C",
+  "explanation": "Harom eltolas, harom elforgatas es egy meretaarany-tenyezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az IGS?",
+  "options": [
+   "A) Iranyi Geodeziai Szolgalat",
+   "B) Nemzetkozi GNSS Szolgalat",
+   "C) Interpotalt Grafikus Szoftver",
+   "D) Internet GIS Szabvany"
+  ],
+  "correct": "B",
+  "explanation": "Az International GNSS Service tobb mint 500 allomast uzemeltet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GOCE muholdas kuldetes celja?",
+  "options": [
+   "A) Optikai kepalkotas",
+   "B) A Fold gravitacios terenek preciz merese",
+   "C) Idojaras-elorejelzes",
+   "D) GPS-navigacio"
+  ],
+  "correct": "B",
+  "explanation": "A GOCE a Fold gravitacios terejet merte nagy pontossaggal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Milyen tipusu az EOV vetullet?",
+  "options": [
+   "A) Terulettarto",
+   "B) Szogtarto (konform)",
+   "C) Hossztarto",
+   "D) Kompromisszumos"
+  ],
+  "correct": "B",
+  "explanation": "A Mercator-tipusu vetuletek konformak (szogtartoak).",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a WGS84 foldrajzi CRS EPSG-kodja?",
+  "options": [
+   "A) 23700",
+   "B) 4326",
+   "C) 3857",
+   "D) 3035"
+  ],
+  "correct": "B",
+  "explanation": "A WGS84 foldrajzi: EPSG:4326.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ETRS89 foldrajzi EPSG-kodja?",
+  "options": [
+   "A) 4258",
+   "B) 4326",
+   "C) 4269",
+   "D) 4237"
+  ],
+  "correct": "A",
+  "explanation": "ETRS89 foldrajzi: EPSG:4258.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a HD72 foldrajzi EPSG-kodja?",
+  "options": [
+   "A) 4326",
+   "B) 4258",
+   "C) 4237",
+   "D) 4269"
+  ],
+  "correct": "C",
+  "explanation": "HD72 foldrajzi: EPSG:4237.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mekkora a Web Mercator teruletfelnagyitasa Budapest szelessegen?",
+  "options": [
+   "A) 1,0",
+   "B) 1,5",
+   "C) 2,18",
+   "D) 3,5"
+  ],
+  "correct": "C",
+  "explanation": "1/cos2(47,5) = kb. 2,18.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a szelesseg elojele az eszaki felgombon?",
+  "options": [
+   "A) Negativ",
+   "B) Pozitiv",
+   "C) Nulla",
+   "D) Hatarhozatlan"
+  ],
+  "correct": "B",
+  "explanation": "Az eszaki szelesseg pozitiv, a deli negativ.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az egyenlitoi sugar es a sarki sugar kozotti kulonbseg hozzavetoleg?",
+  "options": [
+   "A) 2 km",
+   "B) 21 km",
+   "C) 100 km",
+   "D) 500 km"
+  ],
+  "correct": "B",
+  "explanation": "A sarki sugar kb. 21 km-rel rovidebb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GRACE altal kimert Fold gravitacios terenek valtozasa egyenerteku?",
+  "options": [
+   "A) Homerseklet-valtozassal",
+   "B) Vizkeszlet-valtozassal",
+   "C) Szelessegi fok valtozassal",
+   "D) Tengerszint-valtozassal"
+  ],
+  "correct": "B",
+  "explanation": "A gravitacios valtozasok kozvetlenul vizkeszlet-valtozasokat tarnak fel.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Pulkovo 1942 datum?",
+  "options": [
+   "A) Egy amerikai datum",
+   "B) A volt Szovjetunio es Kelet-Europa datuma",
+   "C) Egy europai unios datum",
+   "D) Egy japaan datum"
+  ],
+  "correct": "B",
+  "explanation": "A volt szovjet befolyasi ovezetben hasznalt datum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a State Plane rendszer celja?",
+  "options": [
+   "A) Globalis terkepezes",
+   "B) Nagyon magas pontossagu felmeresek az USA egyes allamaiban",
+   "C) Muholdas poziciomeghataarozas",
+   "D) Tengerszint meres"
+  ],
+  "correct": "B",
+  "explanation": "Az USAban allami felmeresekhez hasznalt koordinata-rendszer.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a konform (szogtarto) vetullet elonye?",
+  "options": [
+   "A) Pontos terulet",
+   "B) Pontos helyi szogek es alakok",
+   "C) Pontos tavolsagok",
+   "D) Pontos iranyok"
+  ],
+  "correct": "B",
+  "explanation": "A helyi szogek es alakok megorzodnek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a szabvanyos parallela egy kupvetulletben?",
+  "options": [
+   "A) Az egyenlito",
+   "B) Az a szelessegi kor, ahol a meretarany-tenyezo pontosan 1,0",
+   "C) A sarok",
+   "D) A kozponti meridian"
+  ],
+  "correct": "B",
+  "explanation": "A standard parallela menten k = 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az UTM hamis keleti eltolasa?",
+  "options": [
+   "A) 200 000 m",
+   "B) 500 000 m",
+   "C) 650 000 m",
+   "D) 0 m"
+  ],
+  "correct": "B",
+  "explanation": "Az UTM 500 000 m hamis keleti eltolast hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Galveston (TX) relativ tengerszint-trendje?",
+  "options": [
+   "A) -3,8 mm/ev",
+   "B) +1,3 mm/ev",
+   "C) +6,5 mm/ev",
+   "D) -12,7 mm/ev"
+  ],
+  "correct": "C",
+  "explanation": "+6,5 mm/ev sullyedes es globalis emelekedees miatt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Stockholm relativ tengerszint-trendje?",
+  "options": [
+   "A) +6,5 mm/ev",
+   "B) +1,3 mm/ev",
+   "C) -3,8 mm/ev",
+   "D) +3,3 mm/ev"
+  ],
+  "correct": "C",
+  "explanation": "-3,8 mm/ev posztglacialis visszapattanas miatt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Melyik oroszorszagi helyen van a Balti magassagi rendszer nullapontja?",
+  "options": [
+   "A) Moszkva",
+   "B) Szentpetervar (Kronstadt)",
+   "C) Vlagyivosztok",
+   "D) Murmanszzk"
+  ],
+  "correct": "B",
+  "explanation": "A kronstadti arapalyi merce.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a NAVD88 kiindulo pontja?",
+  "options": [
+   "A) New York",
+   "B) Father Point/Rimouski (Quebec)",
+   "C) Kronstadt",
+   "D) Amszterdam"
+  ],
+  "correct": "B",
+  "explanation": "A quebeci Father Point/Rimouski.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Hogyan szamitjuk ki az UTM-zonat egy adott hosszusaghoz?",
+  "options": [
+   "A) Zona = (180 + lambda) / 6 + 1 (egesz resz)",
+   "B) Zona = lambda / 6",
+   "C) Zona = lambda * 6",
+   "D) Zona = 180 / lambda"
+  ],
+  "correct": "A",
+  "explanation": "Zona = floor((180 + lambda) / 6) + 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EPN?",
+  "options": [
+   "A) Europai Csapadek Halozat",
+   "B) EUREF Allando GNSS-halozat",
+   "C) Europai Vetuleti Norma",
+   "D) Europai Nepessegi Nevjegyzek"
+  ],
+  "correct": "B",
+  "explanation": "Az EUREF Permanent Network koordinalja az europai GNSS-halozatokat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Egy GPS-meres 150 m-es ellipszoid-magassagot ad a Bukk-hegysegben. Mi a becsult ortometrikus magassag?",
+  "options": [
+   "A) 150 m",
+   "B) 193 m",
+   "C) 107 m",
+   "D) 50 m"
+  ],
+  "correct": "C",
+  "explanation": "150 - 43 (geoidundulacio) = kb. 107 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Miert fontos a magassagi pontossag kulonosen a hidrologia szamara?",
+  "options": [
+   "A) A viz nem erzeekeny a magassagra",
+   "B) A viz lefele folyik, es nehany cm hiba megvaltoztathatja a folyasi iranyt",
+   "C) A magassag nem szamit sik terepen",
+   "D) A vetullet nem befolyasolja a magassagot"
+  ],
+  "correct": "B",
+  "explanation": "A viz lefele folyik; mar cm-es hiba megvaltoztathatja az iranyt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mit jelent az EPSG rovidites?",
+  "options": [
+   "A) European Projection Standards Group",
+   "B) European Petroleum Survey Group (ma: IOGP)",
+   "C) Earth Parameter Satellite Grid",
+   "D) Environmental Protection Spatial Grid"
+  ],
+  "correct": "B",
+  "explanation": "Az EPSG Geodeziai Parameter-adatbazist az IOGP tartja fenn.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a Fold atlagos sugara gomb kozzelitesben?",
+  "options": [
+   "A) 6 357 km",
+   "B) 6 371 km",
+   "C) 6 378 km",
+   "D) 6 400 km"
+  ],
+  "correct": "B",
+  "explanation": "R = 6 371 km az atlagos sugar.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az Euler 1777-es tetele a terkepi vetultetekrol?",
+  "options": [
+   "A) Lehetseges torzitasmentes lapos terkep",
+   "B) Matematikailag lehetetlen a gorbult feluleteet torzitas nelkul sikra vetiteni",
+   "C) Csak kupvetuletek alkalmazhatoak",
+   "D) A Fold toekeletes gomb"
+  ],
+  "correct": "B",
+  "explanation": "A gorbult felulet nem teheto simaan lapossa torzitas nelkul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Magyarorszag hozzavetoleg hany fokos hosszusagot fog at?",
+  "options": [
+   "A) 2 fok",
+   "B) 5 fok",
+   "C) 10 fok",
+   "D) 15 fok"
+  ],
+  "correct": "B",
+  "explanation": "Kb. 16-23 fok K, azaz ~5-7 fok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GRS 1980 es a WGS 1984 ellipszoidok viszonya?",
+  "options": [
+   "A) Teljesen kuloonboznek",
+   "B) Szinte azonosak (a hatodik tizedesjegyig egyeznek)",
+   "C) Ugyanazok",
+   "D) 100 m-rel ternek el"
+  ],
+  "correct": "B",
+  "explanation": "Gyakorlatilag megkulonboztethetetlenek a legtobb alkalmazasban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Milyen tipusu a Lambert-fele azimutalis terulettarto vetullet (LAEA)?",
+  "options": [
+   "A) Hengervetullet",
+   "B) Kupvetullet",
+   "C) Azimutalis vetullet",
+   "D) Tobbszoros vetullet"
+  ],
+  "correct": "C",
+  "explanation": "Azimutalis vetullet, egy pontban erintkezo sikra vetit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Az ETRS89 es a WGS84 koozotti jelenlegi elteres hozzavetoleg mennyi?",
+  "options": [
+   "A) 0 m",
+   "B) 0,9 m",
+   "C) 50 m",
+   "D) 200 m"
+  ],
+  "correct": "B",
+  "explanation": "Kb. 0,9 m az eurazssiai lemez elmozdulasa miatt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az Albers kupvetullet standard parameeterei az USA-ra?",
+  "options": [
+   "A) 20 E es 40 E",
+   "B) 29,5 E es 45,5 E",
+   "C) 35 E es 50 E",
+   "D) 25 E es 55 E"
+  ],
+  "correct": "B",
+  "explanation": "29,5 E es 45,5 E standard parallela, 96 Ny kozponti meridian.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ITRF?",
+  "options": [
+   "A) Nemzetkozi Terkepi Referencia Formatum",
+   "B) Nemzetkozi Foldi Vonatkoztatasi Keret",
+   "C) Interpoltaalt Topograafiai Racs Fajl",
+   "D) Info-Technologiai Regisztraacios Formatum"
+  ],
+  "correct": "B",
+  "explanation": "International Terrestrial Reference Frame.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Milyen mozgasi sebesseguel mozog az eurazssiai lemez evente?",
+  "options": [
+   "A) 0,5 cm",
+   "B) 2,5 cm",
+   "C) 10 cm",
+   "D) 50 cm"
+  ],
+  "correct": "B",
+  "explanation": "Evente kb. 2,5 cm-rel.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a differenciialis GNSS (DGNSS) alapelve?",
+  "options": [
+   "A) Ket muhold osszehasonlitasa",
+   "B) Egy ismert helyen levo referenciaallomas hibainak korrekcioja a kozeli vevohoz",
+   "C) Harom muhold tavoolsag-merese",
+   "D) Gravitacios meres"
+  ],
+  "correct": "B",
+  "explanation": "A terbben korrelalt hibak korrekcioja referenciaallomassarol.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Milyen GPS-pontossagot biztosit egy onallo vevo?",
+  "options": [
+   "A) 1 cm",
+   "B) 3-5 m",
+   "C) 50-100 m",
+   "D) 1 km"
+  ],
+  "correct": "B",
+  "explanation": "Onallo vevo pontossaga kb. 3-5 m vizszintesen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a GRS 1967 ellipszoid fel-nagytengely erteke?",
+  "options": [
+   "A) 6 377 397 m",
+   "B) 6 378 137 m",
+   "C) 6 378 160 m",
+   "D) 6 378 206 m"
+  ],
+  "correct": "C",
+  "explanation": "A GRS 1967: a = 6 378 160 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az Euler-tetel kovetkezmenye a terkepi vetulletekkre?",
+  "options": [
+   "A) Minden vetullet tokeletes",
+   "B) Minden vetullet valamilyen tulajdonsagot torzit",
+   "C) Csak a Mercator hasznalhato",
+   "D) Nincs torzitas kupvetuleetnel"
+  ],
+  "correct": "B",
+  "explanation": "Egyetlen vetullet sem orizhet meg minden tulajdonsagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a geoid?",
+  "options": [
+   "A) A Fold tomeegkozeppontja",
+   "B) A Fold gravitacios terenek ekvipotencialis felulete, amely az atlagos tengerszintet kozeliti",
+   "C) Egy matematikai ellipszoid",
+   "D) A Fold fizikai felszine"
+  ],
+  "correct": "B",
+  "explanation": "A geoid a gravitacio ekvipotencialis felulete.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ellipszoid a geodeziaban?",
+  "options": [
+   "A) A Fold pontos alakja",
+   "B) A geoid masik neve",
+   "C) Matematikai kozelites a Fold alakjahoz, forgasi ellipszoid",
+   "D) A tengerszint felulete"
+  ],
+  "correct": "C",
+  "explanation": "Az ellipszoid matematikai kozelites ket parameterrel (fel-nagytengely, fel-kistengely).",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a WGS84?",
+  "options": [
+   "A) Egy terkeepi vetullet",
+   "B) A GPS altal hasznalt globalis geodeziai datum",
+   "C) Egy magassagi datum",
+   "D) Egy felszinboritasi adatkeszlet"
+  ],
+  "correct": "B",
+  "explanation": "A WGS84 a GPS geocentrikus datuma.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV vetullet tipusa?",
+  "options": [
+   "A) Transzverzalis Mercator",
+   "B) Lambert-fele szogitarto kup",
+   "C) Hotine-fele ferde Mercator",
+   "D) Albers-fele terulettarto kup"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az EOV EPSG-kodja?",
+  "options": [
+   "A) 4326",
+   "B) 3857",
+   "C) 23700",
+   "D) 3035"
+  ],
+  "correct": "C",
+  "explanation": "Az EOV EPSG:23700.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mekkora a HD72 es a WGS84 kozotti eltolodas?",
+  "options": [
+   "A) 1-2 m",
+   "B) 10-20 m",
+   "C) 50-60 m",
+   "D) 200-300 m"
+  ],
+  "correct": "C",
+  "explanation": "A HD72 es a WGS84 koozotti eltolodas kb. 50-60 meter.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ortometrikus magassag?",
+  "options": [
+   "A) Az ellipszoidtol mert magassag",
+   "B) A geoidtol mert magassag",
+   "C) A GPS kozvetlenul mert magassaga",
+   "D) A tengerszinttol mert vizszintes tavolsag"
+  ],
+  "correct": "B",
+  "explanation": "Az ortometrikus magassag a geoidtol (atlagos tengerszint) merendo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi az ellipszoid-magassag es az ortometrikus magassag kozotti osszefugges?",
+  "options": [
+   "A) h = H - N",
+   "B) h = H + N",
+   "C) h = H * N",
+   "D) h = H / N"
+  ],
+  "correct": "B",
+  "explanation": "h = H + N, ahol N a geoidundulacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mekkora a geoidundulacio Magyarorszagon?",
+  "options": [
+   "A) 5-10 m",
+   "B) 15-25 m",
+   "C) 38-46 m",
+   "D) 80-100 m"
+  ],
+  "correct": "C",
+  "explanation": "Magyarorszagon N erteke kb. 38-46 meter.",
+  "chapter_num": 2
+ },
+ {
+  "type": "mcq",
+  "question": "Mi a HD72 datum ellipszoidja?",
+  "options": [
+   "A) WGS 1984",
+   "B) GRS 1980",
+   "C) GRS 1967 (IUGG 1967)",
+   "D) Clarke 1866"
+  ],
+  "correct": "C",
+  "explanation": "A HD72 a GRS 1967 ellipszoidra epul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geoid a Fold gravitacios terenek ekvipotencialis felulete.",
+  "correct": true,
+  "explanation": "Igen, az atlagos tengerszintet kozeliti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ellipszoid es a geoid ugyanaz.",
+  "correct": false,
+  "explanation": "Az ellipszoid matematikai kozelites, a geoid fizikai felulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A WGS84 geocentrikus datum.",
+  "correct": true,
+  "explanation": "Az origoja a Fold tomegkozeppontjaban van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV a transzverzalis Mercator-vetulleten alapul.",
+  "correct": false,
+  "explanation": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A HD72 es a WGS84 kozotti eltolodas kb. 50-60 meter.",
+  "correct": true,
+  "explanation": "Ez eleg nagy ahhoz, hogy lathatoaan eltolja az objektumokat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Web Mercator alkalmas kvantitativ elemzesre.",
+  "correct": false,
+  "explanation": "Drasztikusan torzitja a teruleteket; csak megjeleniteesre.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ortometrikus magassag az ellipszoidtol merendo.",
+  "correct": false,
+  "explanation": "A geoidtol merendo; az ellipszoid-magassag az ellipszoidtol.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geoidundulacio Magyarorszagon kb. 38-46 meter.",
+  "correct": true,
+  "explanation": "A geoid 38-46 m-rel a GRS 1980 ellipszoid felett van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ETRS89 az EU kotelezo vonatkoztatasi rendszere.",
+  "correct": true,
+  "explanation": "Az INSPIRE iranyelv kotelezove teszi.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az UTM rendszer 6 fokos zonakat hasznal.",
+  "correct": true,
+  "explanation": "A Fold 60 zonara oszlik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Magyarorszag nagyrreszt a 33N UTM-zonaba esik.",
+  "correct": false,
+  "explanation": "A 34N zonaba esik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV EPSG-kodja 3857.",
+  "correct": false,
+  "explanation": "23700; a 3857 a Web Mercator.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Balti magassagi rendszer a kronstadti merce-n alapul.",
+  "correct": true,
+  "explanation": "Szentpetervaar (Kronstadt).",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az Albers-fele kupvetullet terulettarto.",
+  "correct": true,
+  "explanation": "kp * km = 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAD83 es a WGS84 kb. 2 meteren belul egyezik.",
+  "correct": true,
+  "explanation": "A legtobb hidrologiai munkanal azonoskent kezelhetok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV meretarany-tenyezoje a kozeppontban 0,9996.",
+  "correct": false,
+  "explanation": "0,99993.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Gauss-Kruger rendszer 6 fokos zonakat hasznal.",
+  "correct": false,
+  "explanation": "3 fokos zonakat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Galileo az EU muholdas navigacios rendszere.",
+  "correct": true,
+  "explanation": "2024 ota teljesen mukodokepes.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GPS 24 muholddal mukodik.",
+  "correct": false,
+  "explanation": "Jelenleg 31 mukodo muholdja van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az RTK poziciomeghataarozas centimeteres pontossagu.",
+  "correct": true,
+  "explanation": "1-2 cm vizszintesen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ellipszoid-magassag fizikai jelentessel bir a viz aramlasa szempontjabol.",
+  "correct": false,
+  "explanation": "Nincs fizikai jelentese; a viz az ortometrikus magassag szeerint folyik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A HD72 geocentrikus datum.",
+  "correct": false,
+  "explanation": "Nem geocentrikus; helyi illesztesu.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ETRS89 es a WGS84 1989-ben azonosak voltak.",
+  "correct": true,
+  "explanation": "Az ETRS89-et ugy definialtak, hogy 1989.0-ban egybeessen az ITRF-fel.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A State Plane rendszer magasabb pontossagot biztosit mint az UTM.",
+  "correct": true,
+  "explanation": "Kisebb zonak = kisebb torzitas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A terulettarto vetuletek a legjobbak a hidrologiai munkaahoz.",
+  "correct": true,
+  "explanation": "A pontos terulet kritikus a lefolyasi szamitasokhoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRS 1980 es a WGS 1984 ellipszoidok szinte azonosak.",
+  "correct": true,
+  "explanation": "A hatodik tizedesjegyig egyeznek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAVD88 es a Balti magassagi rendszer kozott egyszerru allando eltolas van.",
+  "correct": false,
+  "explanation": "Nem egyszerru allando eltolas; kulon keretrendszeren keresztuli transzformacio szukseges.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Euler bizonyitotta, hogy lehetseges torzitasmentes lapos terkep.",
+  "correct": false,
+  "explanation": "Euler 1777-ben bizonyitotta, hogy lehetetlen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Web Mercator Budapest szelessegen kb. 2,18-szorosan felnagyitja a teruleteket.",
+  "correct": true,
+  "explanation": "1/cos2(47,5) = kb. 2,18.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV hamis keleti eltolasa 500 000 m.",
+  "correct": false,
+  "explanation": "650 000 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAD27 es a NAD83 kozotti eltolodas 10-300 m.",
+  "correct": true,
+  "explanation": "Helytol fuggoen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE kuldetes a vizkeszlet-valtozasokra kovetkeztet.",
+  "correct": true,
+  "explanation": "A gravitacios valtozasokbol.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Pulkovo 1942 geocentrikus datum.",
+  "correct": false,
+  "explanation": "Helyi, nem geocentrikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Egy GPS-vevo kozvetlenul ortometrikus magassagot mer.",
+  "correct": false,
+  "explanation": "Ellipszoid-magassagot mer.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Helmert-transzformacio 7 parametert tartalmaz.",
+  "correct": true,
+  "explanation": "3 eltolas, 3 elforgatas, 1 meretarany.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A foldi koordinata-rendszerben a szelesseg az X irany.",
+  "correct": false,
+  "explanation": "A szelesseg Y irany (eszak-deli).",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Egy fok eszak-deli iranyban mindenhol kb. 111,2 km.",
+  "correct": true,
+  "explanation": "A meridian menti tavolsag allandlo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A tektonikus mozgasok jellentos hatast gyakorolnak a vizgyujto-lepteku hidrologiara.",
+  "correct": false,
+  "explanation": "A vizgyujto-lepteku munkanal elhanyagolhatok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EVRF2019 az osseuropai magassagi harmonizacio eszkoze.",
+  "correct": true,
+  "explanation": "Az europai magassagi rendszerek egysegesitesere torekszik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GNSS a GPS, GLONASS, Galileo es BeiDou osszefoglaalo neve.",
+  "correct": true,
+  "explanation": "Igen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Magyarorszag tobb UTM-zonat fog at.",
+  "correct": false,
+  "explanation": "Szinte teljes egeszeben a 34N zonaban van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV maximalis meretarany-hiba Magyarorszagon kevesebb mint 0,01%.",
+  "correct": true,
+  "explanation": "Joval kisebb az UTM 0,04%-anal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ETRS89/LAEA (EPSG:3035) szogtarto vetulet.",
+  "correct": false,
+  "explanation": "Terulettarto azimutalis vetulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A definiaalas es az atvetites ugyanaz a muvelet.",
+  "correct": false,
+  "explanation": "A definialas metaadatot ad; az atvetites ujraszamolja a koordinatakat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geoid legfeljebb kb. 100 m-rel ter el az ellipszoidtol globaalisan.",
+  "correct": true,
+  "explanation": "A hullamzasok enyenek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV koordinatakban a 699 414 ertek az Easting.",
+  "correct": true,
+  "explanation": "A 400 000-1 000 000 tartomanyba esik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A foldrajzi koordinatak fogban vannak.",
+  "correct": true,
+  "explanation": "Szelessegi es hosszusagi fokokat hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A WGS84 soha nem frissul.",
+  "correct": false,
+  "explanation": "Rendszeresen finomitjak (pl. G2296).",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRS 1967 ellipszoidot a HD72 datum hasznalja.",
+  "correct": true,
+  "explanation": "Igen, a = 6 378 160 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Stockholmban a relativ tengerszint emelkedik.",
+  "correct": false,
+  "explanation": "Csokken (-3,8 mm/ev) posztglacialis visszapattanas miatt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EGM2008 kb. 2,5 ivperces felbontasu.",
+  "correct": true,
+  "explanation": "Megkoozelitooleg 5 km-es felbontas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE ket muholdja 220 km-re van egymaastol.",
+  "correct": true,
+  "explanation": "Tandem palyaan.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A meridianok az egyenlito fele konvergeaalnak.",
+  "correct": false,
+  "explanation": "A sarkok fele konvergeaalnak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A lapultsag azt jelenti, hogy a Fold a saarkoknaal kissee laposabb.",
+  "correct": true,
+  "explanation": "Az egyenlitoi sugar nagyobb a sarkinal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A magyar adatkeszletek gyakran felcserelik az X es Y jeloeleseket.",
+  "correct": true,
+  "explanation": "A magyar es nemzetkozi konvencio ellentetes.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az UTM hamis keleti eltolasa biztositja, hogy minden koordinata pozitiv legyen.",
+  "correct": true,
+  "explanation": "500 000 m eltolassal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Fold lapultsaga szabad szemmel lathato.",
+  "correct": false,
+  "explanation": "Szabad szemmel a Fold tokeletes goombnek tunik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Gauss-Kruger rendszer aktivan hasznaalatban marad Nemeeetorszagban.",
+  "correct": true,
+  "explanation": "Bar az ETRS89/UTM valtja fel.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A differenciialis GNSS javitja az oonallo vevo pontossagat.",
+  "correct": true,
+  "explanation": "A terbeen korrelalt hibaakat korrigaalja.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geocentrikus datumok egyetlen orszagra vannak optimalizalva.",
+  "correct": false,
+  "explanation": "Globalisan konzisztens keretet biztositanak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE kuldetes egyedulalllo modon meri a teljes viz-oszlopot.",
+  "correct": true,
+  "explanation": "Felszin alatti viz + talajnedvesseg + felszini viz egyutt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A tektonikus lemezek evente 1-10 cm-rel mozognak.",
+  "correct": true,
+  "explanation": "Igen, a GPS-meresek feltartak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE 2002-es texasi vizkeszlet-zuuhanast mutatta ki.",
+  "correct": false,
+  "explanation": "A 2011-es texasi aszalyrol szol a pelda.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE adatokat felszini vizkeszlet-anomalia terkepekke dolgozzak fel.",
+  "correct": true,
+  "explanation": "Havi globalis terkepek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EVRF2019 megoldja a hataron atnyulo magassagi problemakat Europaban.",
+  "correct": true,
+  "explanation": "Egyseges magassagi vonatkoztatast biztosit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A magassagi datum-kerdes irrelevans az arvizterkepezesnel.",
+  "correct": false,
+  "explanation": "Sik terepen 0,5 m hiba 500 m-rel mozditthatja az arvizhatart.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EPSG-kodok a koordinata-rendszerek univerzalis nyelve.",
+  "correct": true,
+  "explanation": "Kiikuszobolik a szoftvergyartonkent valtozo nevek keteertelmusegeet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A WGS84 G2296 centimeteres szinten illeszkedik az ITRF-hez.",
+  "correct": true,
+  "explanation": "A jelenlegi megvalositas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A SHAPe_Length foldrajzi koordinatakban fokegyseegben van.",
+  "correct": true,
+  "explanation": "Ami fizikailag ertelmetlen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV-ban vegzett teruletszamitas pontosabb mint a Web Mercatorban.",
+  "correct": true,
+  "explanation": "Az EOV a magyar teruletre optimalizalt.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAP (Amsterdami Szintezesi Datum) az EVRF origoja.",
+  "correct": true,
+  "explanation": "Az EVRF az Amsterdami Szintezesi Datumra epul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE havonta terkepezi fel a gravitacios teret.",
+  "correct": true,
+  "explanation": "Havi idoibeli felbontas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A foldrajzi es vetuleti koordinata-rendszerek ugyanazok.",
+  "correct": false,
+  "explanation": "A foldrajzi fokokat, a vetuleti metereket hasznal.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A konform vetuletek jobbak a navigaciohoz.",
+  "correct": true,
+  "explanation": "A helyi szogek es alakok megorzoodnek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV egyetlen zonaaval fedi le egesz Magyarorszagot.",
+  "correct": true,
+  "explanation": "Nincs zonahataar-problema.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ERA5 adatok WGS84-ben vannak.",
+  "correct": true,
+  "explanation": "A legtobb globalis termek WGS84-ben.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE 2003-as europai aszalyt is kimutatta a Duna-medenceben.",
+  "correct": true,
+  "explanation": "A szoveg emliti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAD83 az eurazssiai lemezhez kotott.",
+  "correct": false,
+  "explanation": "Az eszak-amerikai lemezhez kotott.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Copernicus-termekek ETRS89-ben vannak.",
+  "correct": true,
+  "explanation": "Vagy azon alapulo vetulletekben.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A magyar DDM-5 a Balti magassagi rendszert hasznalja.",
+  "correct": true,
+  "explanation": "A nemzeti magassagi vonaatkoztatasi rendszer.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GNSSnet.hu RTK-korrekciokat biztosit Magyarorszagon.",
+  "correct": true,
+  "explanation": "Az egesz orszagban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A GRACE terbeli felbontasa kb. 10 km.",
+  "correct": false,
+  "explanation": "Kb. 300-400 km.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV kezdoovonal azimutja 90 fok.",
+  "correct": true,
+  "explanation": "Az EOV parameterei szerint.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geoid a Fold gravitacios terenek ekvipotencialis felulete.",
+  "correct": true,
+  "explanation": "Igen, az atlagos tengerszintet kozeliti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ellipszoid es a geoid ugyanaz.",
+  "correct": false,
+  "explanation": "Az ellipszoid matematikai kozelites, a geoid fizikai felulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A WGS84 geocentrikus datum.",
+  "correct": true,
+  "explanation": "Az origoja a Fold tomegkozeppontjaban van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV a transzverzalis Mercator-vetulleten alapul.",
+  "correct": false,
+  "explanation": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A HD72 es a WGS84 kozotti eltolodas kb. 50-60 meter.",
+  "correct": true,
+  "explanation": "Ez eleg nagy ahhoz, hogy lathatoaan eltolja az objektumokat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Web Mercator alkalmas kvantitativ elemzesre.",
+  "correct": false,
+  "explanation": "Drasztikusan torzitja a teruleteket; csak megjeleniteesre.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ortometrikus magassag az ellipszoidtol merendo.",
+  "correct": false,
+  "explanation": "A geoidtol merendo; az ellipszoid-magassag az ellipszoidtol.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A geoidundulacio Magyarorszagon kb. 38-46 meter.",
+  "correct": true,
+  "explanation": "A geoid 38-46 m-rel a GRS 1980 ellipszoid felett van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az ETRS89 az EU kotelezo vonatkoztatasi rendszere.",
+  "correct": true,
+  "explanation": "Az INSPIRE iranyelv kotelezove teszi.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az UTM rendszer 6 fokos zonakat hasznal.",
+  "correct": true,
+  "explanation": "A Fold 60 zonara oszlik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Magyarorszag nagyrreszt a 33N UTM-zonaba esik.",
+  "correct": false,
+  "explanation": "A 34N zonaba esik.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV EPSG-kodja 3857.",
+  "correct": false,
+  "explanation": "23700; a 3857 a Web Mercator.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Balti magassagi rendszer a kronstadti merce-n alapul.",
+  "correct": true,
+  "explanation": "Szentpetervaar (Kronstadt).",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az Albers-fele kupvetullet terulettarto.",
+  "correct": true,
+  "explanation": "kp * km = 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A NAD83 es a WGS84 kb. 2 meteren belul egyezik.",
+  "correct": true,
+  "explanation": "A legtobb hidrologiai munkanal azonoskent kezelhetok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "Az EOV meretarany-tenyezoje a kozeppontban 0,9996.",
+  "correct": false,
+  "explanation": "0,99993.",
+  "chapter_num": 2
+ },
+ {
+  "type": "true_false",
+  "question": "A Gauss-Kruger rendszer 6 fokos zonakat hasznal.",
+  "correct": false,
+  "explanation": "3 fokos zonakat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A geoid a Fold _____ terenek ekvipotencialis felulete.",
+  "correct": "gravitacios",
+  "explanation": "A geoid az atlagos tengerszintet kozeliti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoidot ket parameter definialja: a fel-nagytengely es a _____.",
+  "correct": "fel-kistengely",
+  "explanation": "Ebbol szaarmaztathato a lapultsag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A WGS84 a _____ altal hasznalt globalis datum.",
+  "correct": "GPS",
+  "explanation": "A Global Positioning System.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV EPSG-kodja _____.",
+  "correct": "23700",
+  "explanation": "Az Egyseges Orszagos Vetuleti rendszer.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72 es a WGS84 kozotti eltolodas kb. _____ meter.",
+  "correct": "50-60",
+  "explanation": "Eleg nagy a lathaato eltolashoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ortometrikus magassag a _____-tol merendo.",
+  "correct": "geoidtol",
+  "explanation": "A tengerszint-kozelito felulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoid-magassag es az ortometrikus magassag osszefuggese: h = H + _____.",
+  "correct": "N",
+  "explanation": "N a geoidundulacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A geoidundulacio Magyarorszagon kb. _____ meter.",
+  "correct": "38-46",
+  "explanation": "A geoid az ellipszoid felett van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72 ellipszoidja a _____.",
+  "correct": "GRS 1967",
+  "explanation": "IUGG 1967.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ETRS89 az EU _____-infrastrukturaanak kotelezo rendszere.",
+  "correct": "teradat",
+  "explanation": "INSPIRE iranyelv.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az UTM rendszer a Foldet _____ zonara osztja.",
+  "correct": "60",
+  "explanation": "6 fokos zonaak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Magyarorszag a _____ UTM-zonaba esik.",
+  "correct": "34N",
+  "explanation": "Szinte teljes egeszeben.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Web Mercator EPSG-kodja _____.",
+  "correct": "3857",
+  "explanation": "Kizarolag webes meegjelenites.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV a _____ fele ferde Mercator-vetulleten alapul.",
+  "correct": "Hotine",
+  "explanation": "Hotine Oblique Mercator.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EPSG 1449 a _____ transzformaacioja.",
+  "correct": "HD72-bol ETRS89-be",
+  "explanation": "7 parameteres Helmert.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Balti magassagi rendszer a _____ merce-n alapul.",
+  "correct": "kronstadti",
+  "explanation": "Szentpetervaron.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A NAD83 az _____ vizszintes datuma.",
+  "correct": "Egyesult Allamok",
+  "explanation": "Es Kanada es Mexiko.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az Albers-fele kupvetullet _____ tulajdonsagu.",
+  "correct": "terulettarto",
+  "explanation": "kp * km = 1.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Budapest szelessegen egy fok kelet-nyugati iranyban kb. _____ km.",
+  "correct": "75,1",
+  "explanation": "111,2 * cos(47,5).",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV hamis keleti eltolasa _____ m.",
+  "correct": "650 000",
+  "explanation": "A pozitiv koordinatak biztositasara.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az UTM kozponti meridiaaani meretarany-tenyezoje _____.",
+  "correct": "0,9996",
+  "explanation": "Az UTM jellemzoje.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV kozepponti meretarany-tenyezoje _____.",
+  "correct": "0,99993",
+  "explanation": "Kisebb mint az UTM-e.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A _____ tetel szerint lehetetlen torzitasmentes sik terkepet kesziteni.",
+  "correct": "Euler",
+  "explanation": "1777-ben bizonyitotta.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoid _____ (f) a ket sugar kulonbsegebol szamithato.",
+  "correct": "lapultsaga",
+  "explanation": "f = (a - b) / a.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Fold egyenlitoi sugara (a) hozzavetoleg _____ km.",
+  "correct": "6 378",
+  "explanation": "6 378 137 m.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Fold atlagos sugara gomb kozelitesben _____ km.",
+  "correct": "6 371",
+  "explanation": "R = 6 371 km.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GNSS a GPS, GLONASS, _____ es BeiDou osszefoglalo neve.",
+  "correct": "Galileo",
+  "explanation": "Az EU muholdas rendszere.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az RTK poziciomeghataaroas pontossaaga _____ cm vizszintesen.",
+  "correct": "1-2",
+  "explanation": "Centimeteres pontossag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GPS muholdjainak palyamagassaga kb. _____ km.",
+  "correct": "20 200",
+  "explanation": "Hat palyasikban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Legalabb _____ muholdtol mert tavolsag szukseges a poziciohoz.",
+  "correct": "negy",
+  "explanation": "Harom pozicio + orahiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Helmert-transzformacio _____ parametert tartalmaz.",
+  "correct": "7",
+  "explanation": "3 eltolas + 3 elforgatas + 1 meretarany.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV Northing-tartomanya kb. _____ es 367 000 kozott van.",
+  "correct": "44 000",
+  "explanation": "0-400 000 a Northing.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV Easting-tartomanya kb. 421 000 es _____ kozott van.",
+  "correct": "950 000",
+  "explanation": "400 000-1 000 000 az Easting.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A NAD27 es a NAD83 kooozotti eltolodas _____ meter.",
+  "correct": "10-300",
+  "explanation": "Helytol fuggoen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE ket muholdja _____ km-re repul egymaastol.",
+  "correct": "220",
+  "explanation": "Tandem palya.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE mikrometeres pontossaggal meri a muholdak kozotti _____.",
+  "correct": "tavolsagot",
+  "explanation": "Kb. 1 mikromeeter pontossag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A _____ magassagi rendszert hasznalja Magyarorszag.",
+  "correct": "Balti",
+  "explanation": "A nemzeti magassagi vonatkoztatas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A NAVD88 az _____ magassagi datuma.",
+  "correct": "Egyesult Allamok",
+  "explanation": "Es Kanadae.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Gauss-Kruger rendszer _____ fokos zonakat hasznal.",
+  "correct": "3",
+  "explanation": "Keskenyebb mint az UTM.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Gauss-Kruger meretarany-tenyezoje a kozponti meridianon _____.",
+  "correct": "1,0000",
+  "explanation": "Egyseegnyi.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EGM2008 globalis _____ modell.",
+  "correct": "geoid",
+  "explanation": "Earth Gravitational Model 2008.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GOCE kuldetes a Fold _____ terejet merte.",
+  "correct": "gravitacios",
+  "explanation": "A gravitacios ter preciz merese.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE-et _____-ben indiitottak.",
+  "correct": "2002",
+  "explanation": "NASA es DLR kozos kuldetes.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az AFREF az afrikai _____ vonatkoztatasi keret.",
+  "correct": "geodeziai",
+  "explanation": "African Geodetic Reference Frame.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A State Plane rendszer meretarany-hibaja kisebb mint _____.",
+  "correct": "1:10 000",
+  "explanation": "Nagyon magas pontossag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GNSSnet.hu a magyar nemzeti _____ halozat.",
+  "correct": "GNSS-referencia",
+  "explanation": "Allando GNSS-allomasok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Budapest es Debrecen hozzavetoleg _____ km tavolsagra van egymaastol (fokor).",
+  "correct": "180",
+  "explanation": "Kb. 180 km fokor-tavolsag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Egy 1 ivmasodperces DEM-cella Budapest szelessegen kb. _____ m eszak-deli iranyban.",
+  "correct": "31",
+  "explanation": "Es kb. 21 m kelet-nyugati.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV kozeppontja _____ kozeleben van.",
+  "correct": "Szolnok",
+  "explanation": "A szolnoki alappont.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ETRS89/LAEA EPSG-kodja _____.",
+  "correct": "3035",
+  "explanation": "Osseuropai terulettarto vetulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72 foldrajzi EPSG-kodja _____.",
+  "correct": "4237",
+  "explanation": "A magyar nemzeti foldrajzi CRS.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A WGS84 foldrajzi EPSG-kodja _____.",
+  "correct": "4326",
+  "explanation": "A legelterjedtebb foldrajzi CRS.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ETRS89 foldrajzi EPSG-kodja _____.",
+  "correct": "4258",
+  "explanation": "Az europai foldrajzi CRS.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Web Mercator Budapest szelessegen kb. _____ szorosan nagyitja fel a teruleteket.",
+  "correct": "2,18",
+  "explanation": "1/cos2(47,5).",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE havi felszini vizkeszlet-anomalia terkepeket allit elo _____ pontossaaggal.",
+  "correct": "300-400 km",
+  "explanation": "Terbeli felbontas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A DMS formatumban 47 fok 30 perc 22 masodperc tizedes fokra atvaltva _____ fok.",
+  "correct": "47,5061",
+  "explanation": "DD = 47 + 30/60 + 22/3600.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE a 2011-es texasi aszalyt _____ km3 vizkeszlet-anomaliakent mutatta ki.",
+  "correct": "100",
+  "explanation": "Kb. haromszorosa a Mead-to terfogatanak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Bessel 1841 ellipszoidot a magyar rendszerek _____ elott hasznaltak.",
+  "correct": "1972",
+  "explanation": "A HD72 bevezeteese elott.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A konform vetuletek megorzi a helyi _____ es alakokat.",
+  "correct": "szogeket",
+  "explanation": "De nem a teruleteket.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EPSG adatbazis a _____ cimen erheto el.",
+  "correct": "https://epsg.io",
+  "explanation": "Az IOGP tartja fenn.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV hamis eszaki eltolasa _____ m.",
+  "correct": "200 000",
+  "explanation": "A pozitiv Northing biztositasara.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Fold lapultsaga (f) hozzavetoleg _____.",
+  "correct": "1/298",
+  "explanation": "f = (a - b) / a.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A meridianok a _____ fele konvergaalnak.",
+  "correct": "sarkok",
+  "explanation": "A szelessegi korok szukuulnek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoid-magassag (h) koozvetlenul a _____ meri.",
+  "correct": "GPS-vevo",
+  "explanation": "GNSS technologiaaval.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A fokor-tavolsagot a _____ kepleettel szamitjuk.",
+  "correct": "arccos",
+  "explanation": "A gomb felszinen.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A NAVD88 es az NGVD29 kozotti kulonbseg egyes nyugati aallamokban _____ metert is meghaladhatja.",
+  "correct": "1,5",
+  "explanation": "Teerben valtozo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Galveston relativ tengerszint-trendje _____ mm/ev.",
+  "correct": "6,5",
+  "explanation": "Sullyeedes + globalis emelekedees.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Stockholm relativ tengerszint-trendje _____ mm/ev.",
+  "correct": "-3,8",
+  "explanation": "Posztglaciaalis visszapattanas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Magyarorszagon a WGS84 ellipszoid-magassag es a Balti ortometrikus magassag kozotti kulonbseg kb. _____ meter.",
+  "correct": "40-46",
+  "explanation": "A geoidundulacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az arvizeloontes-terkepek rendkivul erzekenyek a _____ pontossagra.",
+  "correct": "magassagi",
+  "explanation": "Mar neehaany cm hiba is szamit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A _____ koordinata-rendszerek fokokat hasznaalnak; a vetuleti koordinata-rendszerek metereket.",
+  "correct": "foldrajzi",
+  "explanation": "Foldrajzi vs vetuleti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Egy vizgyujto Shape_Area erteke Web Mercatorban Budapest szelessegen kb. _____ szorosan felnagyitott.",
+  "correct": "2,18",
+  "explanation": "Sistematikusan hibas.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72-rol ETRS89-re torteno transzformaciiot az EPSG _____ kod hataarozza meg.",
+  "correct": "1449",
+  "explanation": "7 parameeerteres Helmert.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV _____ tipusu vetullet.",
+  "correct": "szogtarto (konform)",
+  "explanation": "A Mercator-tipusu vetulletek konformak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ETRS89 es a WGS84 az _____ epochaaaban voltak azonosak.",
+  "correct": "1989.0",
+  "explanation": "Az ETRS89 definicioja.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az UTM hamis keleti eltolasa _____ m.",
+  "correct": "500 000",
+  "explanation": "Minden zonaaaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A CORS halozat az USA-ban tobb mint _____ allomaasbol all.",
+  "correct": "1 800",
+  "explanation": "Nemzeti CORS halozat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Nagy-Magyar Alfold egyes reszei _____ miaaatt sullyednek.",
+  "correct": "felszin alatti viz kitermelese",
+  "explanation": "Es tektonikus folyamatok.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az Albers vetulleet maximalis meeretarany-torzitaasa az USA-n kevesebb mint _____ szazaalek.",
+  "correct": "1,25",
+  "explanation": "A terulet mindenhol pontos.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A gyakorlatban a magyar EOV-ban vegzett munka szaamara a _____ ertektartomany-ellenorzest kell alkalmazni.",
+  "correct": "koordinaata",
+  "explanation": "Northing: 0-400 000; Easting: 400 000-1 000 000.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A globalis tengerszint-emelkedes jelenlegi uteme evente kb. _____ mm.",
+  "correct": "3,6",
+  "explanation": "Es gyorsul.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRS 1980 es a WGS 1984 ellipszoidok a _____ tizedesjegyig egyeznek a lapultsaagban.",
+  "correct": "hatodik",
+  "explanation": "Gyakorlatilag megkulonoboztethetetlenek.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A GRACE felszini vizkeszlet-anomaliakat egyenerteku _____ (cm) fejezi ki.",
+  "correct": "vizmelysegben",
+  "explanation": "Az adott terulet feletti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A geoid a Fold _____ terenek ekvipotencialis felulete.",
+  "correct": "gravitacios",
+  "explanation": "A geoid az atlagos tengerszintet kozeliti.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoidot ket parameter definialja: a fel-nagytengely es a _____.",
+  "correct": "fel-kistengely",
+  "explanation": "Ebbol szaarmaztathato a lapultsag.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A WGS84 a _____ altal hasznalt globalis datum.",
+  "correct": "GPS",
+  "explanation": "A Global Positioning System.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV EPSG-kodja _____.",
+  "correct": "23700",
+  "explanation": "Az Egyseges Orszagos Vetuleti rendszer.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72 es a WGS84 kozotti eltolodas kb. _____ meter.",
+  "correct": "50-60",
+  "explanation": "Eleg nagy a lathaato eltolashoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ortometrikus magassag a _____-tol merendo.",
+  "correct": "geoidtol",
+  "explanation": "A tengerszint-kozelito felulet.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ellipszoid-magassag es az ortometrikus magassag osszefuggese: h = H + _____.",
+  "correct": "N",
+  "explanation": "N a geoidundulacio.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A geoidundulacio Magyarorszagon kb. _____ meter.",
+  "correct": "38-46",
+  "explanation": "A geoid az ellipszoid felett van.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A HD72 ellipszoidja a _____.",
+  "correct": "GRS 1967",
+  "explanation": "IUGG 1967.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az ETRS89 az EU _____-infrastrukturaanak kotelezo rendszere.",
+  "correct": "teradat",
+  "explanation": "INSPIRE iranyelv.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az UTM rendszer a Foldet _____ zonara osztja.",
+  "correct": "60",
+  "explanation": "6 fokos zonaak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Magyarorszag a _____ UTM-zonaba esik.",
+  "correct": "34N",
+  "explanation": "Szinte teljes egeszeben.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Web Mercator EPSG-kodja _____.",
+  "correct": "3857",
+  "explanation": "Kizarolag webes meegjelenites.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EOV a _____ fele ferde Mercator-vetulleten alapul.",
+  "correct": "Hotine",
+  "explanation": "Hotine Oblique Mercator.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "Az EPSG 1449 a _____ transzformaacioja.",
+  "correct": "HD72-bol ETRS89-be",
+  "explanation": "7 parameteres Helmert.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A Balti magassagi rendszer a _____ merce-n alapul.",
+  "correct": "kronstadti",
+  "explanation": "Szentpetervaron.",
+  "chapter_num": 2
+ },
+ {
+  "type": "fill_blank",
+  "question": "A NAD83 az _____ vizszintes datuma.",
+  "correct": "Egyesult Allamok",
+  "explanation": "Es Kanada es Mexiko.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a geoid es az ellipszoid kozotti kulonbseget es hidrologiai jelentoseguket!",
+  "correct": "A geoid a gravitacios ekvipotencialis felulet (atlagos tengerszint), a viz termeszetes vonatkoztatasi felulete. Az ellipszoid matematikai kozelites, a koordinata-rendszerek alapja. A kulonbseguuk (geoidundulacio, N) Magyarorszagon 38-46 m. A GPS ellipszoid-magassagot mer; az ortometrikus magassaghoz geoidmodell kell.",
+  "explanation": "A geoid: fizikai; az ellipszoid: matematikai. A kulonbseg (N) kritikus a vizszintek szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Magyarazza el a definialas es az atvetites kozotti kulonbseget es a leggyakoribb hibbat!",
+  "correct": "A definialas metaadatot (CRS-t) rendel hozza anelkul, hogy megvaltoztatna a koordinatakat. Az atvetites ujraszaamolja a koordinata-ertekeket. Ha egy EOV-adatkeszletet atvetitunk WGS84-be ahelyett, hogy eloszor definialnaank, az eredmeny ertelmetelen.",
+  "explanation": "Definialas: metaadat; atvetites: szamitas. Az osszekeveresuk a leggyakoribb GIS-hiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert nem alkalmas a Web Mercator kvantitativ hidrologiai elemzesre?",
+  "correct": "A Web Mercator drasztikusan torzitja a teruleteket az egyenlitotol tavolodva. Budapest szelessegen (47,5 fok) a terulet 2,18-szorosan felnagyitott. Egy 100 km2-es poligon 218 km2-nek adodik. Ez elfogadhatatlan vizgyujto-teruleti es csapadek-terfogati szamitasokhoz.",
+  "explanation": "A Web Mercator Budapest szelessegen 2,18x terulettorzitast okoz; kizarolag megjeleniteesre hasznalhato.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az EOV koordinata-rendszer sajatossagait es elonyeit Magyarorszag szamara!",
+  "correct": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul (EPSG:23700), a HD72 datummal. A kozeppont Szolnok kozeleben van (47,14 E; 19,05 K), a meretarany-tenyezo 0,99993. Egyetlen zonaval fedi le egesz Magyarorszagot, maximalis hiba <0,01%. Elonyei: nincsenek zonahataarok, magas pontossag.",
+  "explanation": "Az EOV egy zonaaval, 0,01% alatti hibaval fedi le Magyarorszagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a gyakorlati munkamenet a tobb forrasbol szarmazo teerbeli adatok kombinaalasahoz?",
+  "correct": "(1) Leltaarozas: adatkeszletek es CRS-ek osszegzese. (2) Munka-CRS valasztas (magyar munkahoz EOV, europaira ETRS89/LAEA). (3) Minden adat atvetitese a munkarendszerbe. (4) Illeszkedeees vizuaalis ellenorzese. Ez a logika univerzaalis.",
+  "explanation": "Leltarozas, valasztas, atvetites, ellenorzes - az univerzalis munkafolyamat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert kritikus a magassagi pontossag a hidrologiaban?",
+  "correct": "A viz lefele folyik; mar cm-es magassagi hiba megvaltoztathatja a folyasi iranyt. Az Alfoldon, ahol a lejtes 0,05% alatti, 0,5 m hiba 500 m-rel mozditthatja az arvizhatart. A magassagi datum (Balti, NAVD88) es az ellipszoid-magassag osszetevesztese 40+ m szisztematikus hibat okoz.",
+  "explanation": "A magassagi pontossag fontosabb mint a vizszintes; sik terepen kulonosen kritikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a HD72 datum jellemzoit es gyakorlati kovetkezmenyeit!",
+  "correct": "A HD72 nem geocentrikus datum, a GRS 1967 ellipszoidra epul, szolnoki origoval. A WGS84/ETRS89-tol 50-60 m-rel ter el. A magyar nemzeti adatok (DDM-5, data.vizugy.hu) HD72/EOV-ban vannak. Az europai adatokkal valo kombinaalashoz EPSG:1449 transzformaaacio szukseges.",
+  "explanation": "A HD72 50-60 m eltolodast okoz a WGS84-hez kepest; kotelezoo transzformalni.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan mukodik a GPS es milyen pontossagot biztosit?",
+  "correct": "A trilateracion alapul: 4+ muholdtol mert pszeudo-tavolsagokbol szamitja a poziciot. Onallo vevo: 3-5 m. Differenciialis GNSS: 0,5-2 m. RTK: 1-2 cm. A GNSS ma GPS, GLONASS, Galileo es BeiDou rendszereket foglalja magaban.",
+  "explanation": "Onallo GPS: 3-5 m; RTK: 1-2 cm. A GNSS 4 rendszert foglal magaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a GRACE kuldetes elvet es a 2011-es texasi aszaly peldajat!",
+  "correct": "Ket muhold 220 km-re repul, a kozottuk levo tavolsag mikromeeterrel valtozik a gravitacios anomaliaaak hatasara. A 2011-es texasi aszaly soran kb. 100 km3 vizkeszlet-veszteseget mutatott ki. A GRACE egyedulallo: a teljes viz-oszlopot (felszin alatti + talajnedvesseg + felszini) meri.",
+  "explanation": "A GRACE gravitacios meresseel detektaalja a vizkeszlet-valtozasokat; Texas 100 km3-t veszitett.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen kihivasokat jelent a koordinata-rendszer-kezeles a fejlodo regiokban?",
+  "correct": "Orokolt gyarmati datumok, rosszul dokumentalt transzformaciok, ritka geodeziai halozatok, tobb datum egyidejuu hasznalata. A megoldas: globalis adatkeszletekbol (WGS84) indulni, es nemzeti datumokat csak szukseg eseten bevonni. Az AFREF es hasonlo kezdemenyezesek dolgoznak az egysegesitesen.",
+  "explanation": "A fejlodo regiokban a globalis adatkeszletekbol valo kiindulas a legbiztonsagosabb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hasonlitsa ossze az UTM, State Plane, EOV es Gauss-Kruger rendszereket!",
+  "correct": "UTM: 6 fokos zonak, k0=0,9996, globalis. State Plane: allam-meretu zonak, <1:10 000 hiba, USA. EOV: egyetlen zona, k0=0,99993, Magyarorszag. Gauss-Kruger: 3 fokos zonak, k0=1,0000, Kozep-/Kelet-Europa. Az EOV a legpontosabb Magyarorszagra, de nem alkalmas europa-lepteku muunkara.",
+  "explanation": "Mindegyik a torzitas es a zona-bonyolultsag kozotti kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a tengerszint-valtozas jelentosege a magassagi datumok szempontjabol?",
+  "correct": "A relativ tengerszint-trendek helyenkent valtoznak: Galveston +6,5, Stockholm -3,8 mm/ev. A szaarazfoldi Magyarorszagot kozvetlenul nem erinti, de az Alfold talajsulllyedese analoo. A szintezesi halozatokat rendszeresen ujra kell merni a magassagi keret integritasanak fenntartasahoz.",
+  "explanation": "A tengerszint-valtozas es a talajsullyedes befolyasolja a magassagi adatok pontossagat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az ETRS89 es a WGS84 viszonyt es gyakorlati kovetkezmenyeit!",
+  "correct": "1989-ben azonosak voltak. Azota az eurazssiai lemez kb. 90 cm-t mozdult el. A kulonbseg hidrologiailag elhanyagolhato (<1 m). A NAD83 es a WGS84 szinten kb. 2 m-en belul egyezik. A HD72 viszont 50-60 m-rel ter el es kotelezoo transzformalni.",
+  "explanation": "ETRS89/WGS84 kulonbseg elhanyagolhato; HD72 kulonbseg nem.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen vetuletet valasszon a hidrologus a kulonbozo leptekekhez?",
+  "correct": "Magyarorszag: EOV (EPSG:23700). Osseuropa: ETRS89/LAEA (EPSG:3035). Globalis: WGS84 foldrajzi (EPSG:4326) tarolashoz + UTM szamitashoz. Web: Web Mercator (EPSG:3857) kizarolag meegjeleniteeshez.",
+  "explanation": "A vetulletvalasztas a lepteektol es celtol fugg.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a magyar EOV X/Y jeloles problemajat es megoldasat!",
+  "correct": "A magyar geodeziai hagyomany az X-et hasznalja az Eastingre es az Y-t a Northingra, ami a nemzetkozi konvencio ellenntete. A megoldas: ertektartomany-ellenorzes. 0-400 000 = Northing; 400 000-1 000 000 = Easting.",
+  "explanation": "Ne bizzunk a fejlecekben; bizzunk a szamokban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert fontos az EPSG-kodrendszer a hidroinformatikaban?",
+  "correct": "Az EPSG szabvanyositott numerikus kodot biztosit minden koordinata-rendszerhez. Kiikuszobolik a szoftvergyartonkent es nyelvenkent valtozo nevek ketertelmuseget. Az elso kerdes barmely adatkeszletnel: 'Mi az EPSG-kod?'",
+  "explanation": "Az EPSG egyertelmu, univerzalis nyelveet biztosit a CRS-ek kommunikaciiojahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a Fold lapultsagat es kovetkezmenyeit a hidrologiara!",
+  "correct": "A Fold lapult ellipszoid: az egyenlitoi sugar ~6 378 km, a sarki ~6 357 km (kb. 21 km kulonbseg). Ez befolyasolja a fokfelbontasu DEM cellak meretet: magasabb szelessegen a kelet-nyugati cellameeret csokken. A lejtess- es kitettseegszamitasoknak figyelembe kell venniuk ezt az aszimmetriat.",
+  "explanation": "A lapultsag miatt a foldrajzi koordinatakban levo DEM cellak szelesseegfuggoen valtoznak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a GPS-magassag es a valodi magassag kozotti kulonbseg es gyakorlati veszelyei?",
+  "correct": "A GPS ellipszoid-magassagot ad, nem ortometrikus (tengerszint felett) magassagot. Magyarorszagon a kulonbseg 40-46 m. Geoid-korrekcio nelkul az eredmeny szisztematikusan hibas. Ez katasztrofalis hidraulikai modellezesben vagy arvizterkepezesben.",
+  "explanation": "A GPS-magassag 40+ m-rel terhet el a valodi magassaagtol; geoidmodell kotelezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az Euler-tetel jelentoseget a terkepi vetuletek szamara!",
+  "correct": "Euler 1777-ben bebizonyitotta, hogy matematikailag lehetetlen a gorbult feluleteet sik feluleten torzitas nelkul abrazolni. Ez azt jelenti, hogy minden vetullet kompromisszum: terulet, alak, tavolsag vagy irany valamelyiket felaldozza. A valasztas mennyisegi kovetkezmenyekkel jar.",
+  "explanation": "Nincs tokeletes vetullet; a valasztas mindig kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan hat a tektonikus lemezmoozgas a geodeziai datumokra?",
+  "correct": "A lemezek evente 1-10 cm-rel mozognak. A lemezhez kotott datumok (NAD83, ETRS89) stabilak a lemezen belul, de a globalis (ITRF) kerethez kepest elmozdulnak. A vizgyujto-lepteku munkanal ez elhanyagolhato, de a precizios geodezianal es evtizedes GNSS-idosoroknal szamit.",
+  "explanation": "Vizgyujto-lepteken elhanyagolhato; precizios munkaanal szamit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a geoid es az ellipszoid kozotti kulonbseget es hidrologiai jelentoseguket!",
+  "correct": "A geoid a gravitacios ekvipotencialis felulet (atlagos tengerszint), a viz termeszetes vonatkoztatasi felulete. Az ellipszoid matematikai kozelites, a koordinata-rendszerek alapja. A kulonbseguuk (geoidundulacio, N) Magyarorszagon 38-46 m. A GPS ellipszoid-magassagot mer; az ortometrikus magassaghoz geoidmodell kell.",
+  "explanation": "A geoid: fizikai; az ellipszoid: matematikai. A kulonbseg (N) kritikus a vizszintek szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Magyarazza el a definialas es az atvetites kozotti kulonbseget es a leggyakoribb hibbat!",
+  "correct": "A definialas metaadatot (CRS-t) rendel hozza anelkul, hogy megvaltoztatna a koordinatakat. Az atvetites ujraszaamolja a koordinata-ertekeket. Ha egy EOV-adatkeszletet atvetitunk WGS84-be ahelyett, hogy eloszor definialnaank, az eredmeny ertelmetelen.",
+  "explanation": "Definialas: metaadat; atvetites: szamitas. Az osszekeveresuk a leggyakoribb GIS-hiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert nem alkalmas a Web Mercator kvantitativ hidrologiai elemzesre?",
+  "correct": "A Web Mercator drasztikusan torzitja a teruleteket az egyenlitotol tavolodva. Budapest szelessegen (47,5 fok) a terulet 2,18-szorosan felnagyitott. Egy 100 km2-es poligon 218 km2-nek adodik. Ez elfogadhatatlan vizgyujto-teruleti es csapadek-terfogati szamitasokhoz.",
+  "explanation": "A Web Mercator Budapest szelessegen 2,18x terulettorzitast okoz; kizarolag megjeleniteesre hasznalhato.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az EOV koordinata-rendszer sajatossagait es elonyeit Magyarorszag szamara!",
+  "correct": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul (EPSG:23700), a HD72 datummal. A kozeppont Szolnok kozeleben van (47,14 E; 19,05 K), a meretarany-tenyezo 0,99993. Egyetlen zonaval fedi le egesz Magyarorszagot, maximalis hiba <0,01%. Elonyei: nincsenek zonahataarok, magas pontossag.",
+  "explanation": "Az EOV egy zonaaval, 0,01% alatti hibaval fedi le Magyarorszagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a gyakorlati munkamenet a tobb forrasbol szarmazo teerbeli adatok kombinaalasahoz?",
+  "correct": "(1) Leltaarozas: adatkeszletek es CRS-ek osszegzese. (2) Munka-CRS valasztas (magyar munkahoz EOV, europaira ETRS89/LAEA). (3) Minden adat atvetitese a munkarendszerbe. (4) Illeszkedeees vizuaalis ellenorzese. Ez a logika univerzaalis.",
+  "explanation": "Leltarozas, valasztas, atvetites, ellenorzes - az univerzalis munkafolyamat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert kritikus a magassagi pontossag a hidrologiaban?",
+  "correct": "A viz lefele folyik; mar cm-es magassagi hiba megvaltoztathatja a folyasi iranyt. Az Alfoldon, ahol a lejtes 0,05% alatti, 0,5 m hiba 500 m-rel mozditthatja az arvizhatart. A magassagi datum (Balti, NAVD88) es az ellipszoid-magassag osszetevesztese 40+ m szisztematikus hibat okoz.",
+  "explanation": "A magassagi pontossag fontosabb mint a vizszintes; sik terepen kulonosen kritikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a HD72 datum jellemzoit es gyakorlati kovetkezmenyeit!",
+  "correct": "A HD72 nem geocentrikus datum, a GRS 1967 ellipszoidra epul, szolnoki origoval. A WGS84/ETRS89-tol 50-60 m-rel ter el. A magyar nemzeti adatok (DDM-5, data.vizugy.hu) HD72/EOV-ban vannak. Az europai adatokkal valo kombinaalashoz EPSG:1449 transzformaaacio szukseges.",
+  "explanation": "A HD72 50-60 m eltolodast okoz a WGS84-hez kepest; kotelezoo transzformalni.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan mukodik a GPS es milyen pontossagot biztosit?",
+  "correct": "A trilateracion alapul: 4+ muholdtol mert pszeudo-tavolsagokbol szamitja a poziciot. Onallo vevo: 3-5 m. Differenciialis GNSS: 0,5-2 m. RTK: 1-2 cm. A GNSS ma GPS, GLONASS, Galileo es BeiDou rendszereket foglalja magaban.",
+  "explanation": "Onallo GPS: 3-5 m; RTK: 1-2 cm. A GNSS 4 rendszert foglal magaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a GRACE kuldetes elvet es a 2011-es texasi aszaly peldajat!",
+  "correct": "Ket muhold 220 km-re repul, a kozottuk levo tavolsag mikromeeterrel valtozik a gravitacios anomaliaaak hatasara. A 2011-es texasi aszaly soran kb. 100 km3 vizkeszlet-veszteseget mutatott ki. A GRACE egyedulallo: a teljes viz-oszlopot (felszin alatti + talajnedvesseg + felszini) meri.",
+  "explanation": "A GRACE gravitacios meresseel detektaalja a vizkeszlet-valtozasokat; Texas 100 km3-t veszitett.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen kihivasokat jelent a koordinata-rendszer-kezeles a fejlodo regiokban?",
+  "correct": "Orokolt gyarmati datumok, rosszul dokumentalt transzformaciok, ritka geodeziai halozatok, tobb datum egyidejuu hasznalata. A megoldas: globalis adatkeszletekbol (WGS84) indulni, es nemzeti datumokat csak szukseg eseten bevonni. Az AFREF es hasonlo kezdemenyezesek dolgoznak az egysegesitesen.",
+  "explanation": "A fejlodo regiokban a globalis adatkeszletekbol valo kiindulas a legbiztonsagosabb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hasonlitsa ossze az UTM, State Plane, EOV es Gauss-Kruger rendszereket!",
+  "correct": "UTM: 6 fokos zonak, k0=0,9996, globalis. State Plane: allam-meretu zonak, <1:10 000 hiba, USA. EOV: egyetlen zona, k0=0,99993, Magyarorszag. Gauss-Kruger: 3 fokos zonak, k0=1,0000, Kozep-/Kelet-Europa. Az EOV a legpontosabb Magyarorszagra, de nem alkalmas europa-lepteku muunkara.",
+  "explanation": "Mindegyik a torzitas es a zona-bonyolultsag kozotti kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a tengerszint-valtozas jelentosege a magassagi datumok szempontjabol?",
+  "correct": "A relativ tengerszint-trendek helyenkent valtoznak: Galveston +6,5, Stockholm -3,8 mm/ev. A szaarazfoldi Magyarorszagot kozvetlenul nem erinti, de az Alfold talajsulllyedese analoo. A szintezesi halozatokat rendszeresen ujra kell merni a magassagi keret integritasanak fenntartasahoz.",
+  "explanation": "A tengerszint-valtozas es a talajsullyedes befolyasolja a magassagi adatok pontossagat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az ETRS89 es a WGS84 viszonyt es gyakorlati kovetkezmenyeit!",
+  "correct": "1989-ben azonosak voltak. Azota az eurazssiai lemez kb. 90 cm-t mozdult el. A kulonbseg hidrologiailag elhanyagolhato (<1 m). A NAD83 es a WGS84 szinten kb. 2 m-en belul egyezik. A HD72 viszont 50-60 m-rel ter el es kotelezoo transzformalni.",
+  "explanation": "ETRS89/WGS84 kulonbseg elhanyagolhato; HD72 kulonbseg nem.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen vetuletet valasszon a hidrologus a kulonbozo leptekekhez?",
+  "correct": "Magyarorszag: EOV (EPSG:23700). Osseuropa: ETRS89/LAEA (EPSG:3035). Globalis: WGS84 foldrajzi (EPSG:4326) tarolashoz + UTM szamitashoz. Web: Web Mercator (EPSG:3857) kizarolag meegjeleniteeshez.",
+  "explanation": "A vetulletvalasztas a lepteektol es celtol fugg.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a magyar EOV X/Y jeloles problemajat es megoldasat!",
+  "correct": "A magyar geodeziai hagyomany az X-et hasznalja az Eastingre es az Y-t a Northingra, ami a nemzetkozi konvencio ellenntete. A megoldas: ertektartomany-ellenorzes. 0-400 000 = Northing; 400 000-1 000 000 = Easting.",
+  "explanation": "Ne bizzunk a fejlecekben; bizzunk a szamokban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert fontos az EPSG-kodrendszer a hidroinformatikaban?",
+  "correct": "Az EPSG szabvanyositott numerikus kodot biztosit minden koordinata-rendszerhez. Kiikuszobolik a szoftvergyartonkent es nyelvenkent valtozo nevek ketertelmuseget. Az elso kerdes barmely adatkeszletnel: 'Mi az EPSG-kod?'",
+  "explanation": "Az EPSG egyertelmu, univerzalis nyelveet biztosit a CRS-ek kommunikaciiojahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a Fold lapultsagat es kovetkezmenyeit a hidrologiara!",
+  "correct": "A Fold lapult ellipszoid: az egyenlitoi sugar ~6 378 km, a sarki ~6 357 km (kb. 21 km kulonbseg). Ez befolyasolja a fokfelbontasu DEM cellak meretet: magasabb szelessegen a kelet-nyugati cellameeret csokken. A lejtess- es kitettseegszamitasoknak figyelembe kell venniuk ezt az aszimmetriat.",
+  "explanation": "A lapultsag miatt a foldrajzi koordinatakban levo DEM cellak szelesseegfuggoen valtoznak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a GPS-magassag es a valodi magassag kozotti kulonbseg es gyakorlati veszelyei?",
+  "correct": "A GPS ellipszoid-magassagot ad, nem ortometrikus (tengerszint felett) magassagot. Magyarorszagon a kulonbseg 40-46 m. Geoid-korrekcio nelkul az eredmeny szisztematikusan hibas. Ez katasztrofalis hidraulikai modellezesben vagy arvizterkepezesben.",
+  "explanation": "A GPS-magassag 40+ m-rel terhet el a valodi magassaagtol; geoidmodell kotelezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az Euler-tetel jelentoseget a terkepi vetuletek szamara!",
+  "correct": "Euler 1777-ben bebizonyitotta, hogy matematikailag lehetetlen a gorbult feluleteet sik feluleten torzitas nelkul abrazolni. Ez azt jelenti, hogy minden vetullet kompromisszum: terulet, alak, tavolsag vagy irany valamelyiket felaldozza. A valasztas mennyisegi kovetkezmenyekkel jar.",
+  "explanation": "Nincs tokeletes vetullet; a valasztas mindig kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan hat a tektonikus lemezmoozgas a geodeziai datumokra?",
+  "correct": "A lemezek evente 1-10 cm-rel mozognak. A lemezhez kotott datumok (NAD83, ETRS89) stabilak a lemezen belul, de a globalis (ITRF) kerethez kepest elmozdulnak. A vizgyujto-lepteku munkanal ez elhanyagolhato, de a precizios geodezianal es evtizedes GNSS-idosoroknal szamit.",
+  "explanation": "Vizgyujto-lepteken elhanyagolhato; precizios munkaanal szamit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a geoid es az ellipszoid kozotti kulonbseget es hidrologiai jelentoseguket!",
+  "correct": "A geoid a gravitacios ekvipotencialis felulet (atlagos tengerszint), a viz termeszetes vonatkoztatasi felulete. Az ellipszoid matematikai kozelites, a koordinata-rendszerek alapja. A kulonbseguuk (geoidundulacio, N) Magyarorszagon 38-46 m. A GPS ellipszoid-magassagot mer; az ortometrikus magassaghoz geoidmodell kell.",
+  "explanation": "A geoid: fizikai; az ellipszoid: matematikai. A kulonbseg (N) kritikus a vizszintek szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Magyarazza el a definialas es az atvetites kozotti kulonbseget es a leggyakoribb hibbat!",
+  "correct": "A definialas metaadatot (CRS-t) rendel hozza anelkul, hogy megvaltoztatna a koordinatakat. Az atvetites ujraszaamolja a koordinata-ertekeket. Ha egy EOV-adatkeszletet atvetitunk WGS84-be ahelyett, hogy eloszor definialnaank, az eredmeny ertelmetelen.",
+  "explanation": "Definialas: metaadat; atvetites: szamitas. Az osszekeveresuk a leggyakoribb GIS-hiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert nem alkalmas a Web Mercator kvantitativ hidrologiai elemzesre?",
+  "correct": "A Web Mercator drasztikusan torzitja a teruleteket az egyenlitotol tavolodva. Budapest szelessegen (47,5 fok) a terulet 2,18-szorosan felnagyitott. Egy 100 km2-es poligon 218 km2-nek adodik. Ez elfogadhatatlan vizgyujto-teruleti es csapadek-terfogati szamitasokhoz.",
+  "explanation": "A Web Mercator Budapest szelessegen 2,18x terulettorzitast okoz; kizarolag megjeleniteesre hasznalhato.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az EOV koordinata-rendszer sajatossagait es elonyeit Magyarorszag szamara!",
+  "correct": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul (EPSG:23700), a HD72 datummal. A kozeppont Szolnok kozeleben van (47,14 E; 19,05 K), a meretarany-tenyezo 0,99993. Egyetlen zonaval fedi le egesz Magyarorszagot, maximalis hiba <0,01%. Elonyei: nincsenek zonahataarok, magas pontossag.",
+  "explanation": "Az EOV egy zonaaval, 0,01% alatti hibaval fedi le Magyarorszagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a gyakorlati munkamenet a tobb forrasbol szarmazo teerbeli adatok kombinaalasahoz?",
+  "correct": "(1) Leltaarozas: adatkeszletek es CRS-ek osszegzese. (2) Munka-CRS valasztas (magyar munkahoz EOV, europaira ETRS89/LAEA). (3) Minden adat atvetitese a munkarendszerbe. (4) Illeszkedeees vizuaalis ellenorzese. Ez a logika univerzaalis.",
+  "explanation": "Leltarozas, valasztas, atvetites, ellenorzes - az univerzalis munkafolyamat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert kritikus a magassagi pontossag a hidrologiaban?",
+  "correct": "A viz lefele folyik; mar cm-es magassagi hiba megvaltoztathatja a folyasi iranyt. Az Alfoldon, ahol a lejtes 0,05% alatti, 0,5 m hiba 500 m-rel mozditthatja az arvizhatart. A magassagi datum (Balti, NAVD88) es az ellipszoid-magassag osszetevesztese 40+ m szisztematikus hibat okoz.",
+  "explanation": "A magassagi pontossag fontosabb mint a vizszintes; sik terepen kulonosen kritikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a HD72 datum jellemzoit es gyakorlati kovetkezmenyeit!",
+  "correct": "A HD72 nem geocentrikus datum, a GRS 1967 ellipszoidra epul, szolnoki origoval. A WGS84/ETRS89-tol 50-60 m-rel ter el. A magyar nemzeti adatok (DDM-5, data.vizugy.hu) HD72/EOV-ban vannak. Az europai adatokkal valo kombinaalashoz EPSG:1449 transzformaaacio szukseges.",
+  "explanation": "A HD72 50-60 m eltolodast okoz a WGS84-hez kepest; kotelezoo transzformalni.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan mukodik a GPS es milyen pontossagot biztosit?",
+  "correct": "A trilateracion alapul: 4+ muholdtol mert pszeudo-tavolsagokbol szamitja a poziciot. Onallo vevo: 3-5 m. Differenciialis GNSS: 0,5-2 m. RTK: 1-2 cm. A GNSS ma GPS, GLONASS, Galileo es BeiDou rendszereket foglalja magaban.",
+  "explanation": "Onallo GPS: 3-5 m; RTK: 1-2 cm. A GNSS 4 rendszert foglal magaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a GRACE kuldetes elvet es a 2011-es texasi aszaly peldajat!",
+  "correct": "Ket muhold 220 km-re repul, a kozottuk levo tavolsag mikromeeterrel valtozik a gravitacios anomaliaaak hatasara. A 2011-es texasi aszaly soran kb. 100 km3 vizkeszlet-veszteseget mutatott ki. A GRACE egyedulallo: a teljes viz-oszlopot (felszin alatti + talajnedvesseg + felszini) meri.",
+  "explanation": "A GRACE gravitacios meresseel detektaalja a vizkeszlet-valtozasokat; Texas 100 km3-t veszitett.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen kihivasokat jelent a koordinata-rendszer-kezeles a fejlodo regiokban?",
+  "correct": "Orokolt gyarmati datumok, rosszul dokumentalt transzformaciok, ritka geodeziai halozatok, tobb datum egyidejuu hasznalata. A megoldas: globalis adatkeszletekbol (WGS84) indulni, es nemzeti datumokat csak szukseg eseten bevonni. Az AFREF es hasonlo kezdemenyezesek dolgoznak az egysegesitesen.",
+  "explanation": "A fejlodo regiokban a globalis adatkeszletekbol valo kiindulas a legbiztonsagosabb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hasonlitsa ossze az UTM, State Plane, EOV es Gauss-Kruger rendszereket!",
+  "correct": "UTM: 6 fokos zonak, k0=0,9996, globalis. State Plane: allam-meretu zonak, <1:10 000 hiba, USA. EOV: egyetlen zona, k0=0,99993, Magyarorszag. Gauss-Kruger: 3 fokos zonak, k0=1,0000, Kozep-/Kelet-Europa. Az EOV a legpontosabb Magyarorszagra, de nem alkalmas europa-lepteku muunkara.",
+  "explanation": "Mindegyik a torzitas es a zona-bonyolultsag kozotti kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a tengerszint-valtozas jelentosege a magassagi datumok szempontjabol?",
+  "correct": "A relativ tengerszint-trendek helyenkent valtoznak: Galveston +6,5, Stockholm -3,8 mm/ev. A szaarazfoldi Magyarorszagot kozvetlenul nem erinti, de az Alfold talajsulllyedese analoo. A szintezesi halozatokat rendszeresen ujra kell merni a magassagi keret integritasanak fenntartasahoz.",
+  "explanation": "A tengerszint-valtozas es a talajsullyedes befolyasolja a magassagi adatok pontossagat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az ETRS89 es a WGS84 viszonyt es gyakorlati kovetkezmenyeit!",
+  "correct": "1989-ben azonosak voltak. Azota az eurazssiai lemez kb. 90 cm-t mozdult el. A kulonbseg hidrologiailag elhanyagolhato (<1 m). A NAD83 es a WGS84 szinten kb. 2 m-en belul egyezik. A HD72 viszont 50-60 m-rel ter el es kotelezoo transzformalni.",
+  "explanation": "ETRS89/WGS84 kulonbseg elhanyagolhato; HD72 kulonbseg nem.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen vetuletet valasszon a hidrologus a kulonbozo leptekekhez?",
+  "correct": "Magyarorszag: EOV (EPSG:23700). Osseuropa: ETRS89/LAEA (EPSG:3035). Globalis: WGS84 foldrajzi (EPSG:4326) tarolashoz + UTM szamitashoz. Web: Web Mercator (EPSG:3857) kizarolag meegjeleniteeshez.",
+  "explanation": "A vetulletvalasztas a lepteektol es celtol fugg.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a magyar EOV X/Y jeloles problemajat es megoldasat!",
+  "correct": "A magyar geodeziai hagyomany az X-et hasznalja az Eastingre es az Y-t a Northingra, ami a nemzetkozi konvencio ellenntete. A megoldas: ertektartomany-ellenorzes. 0-400 000 = Northing; 400 000-1 000 000 = Easting.",
+  "explanation": "Ne bizzunk a fejlecekben; bizzunk a szamokban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert fontos az EPSG-kodrendszer a hidroinformatikaban?",
+  "correct": "Az EPSG szabvanyositott numerikus kodot biztosit minden koordinata-rendszerhez. Kiikuszobolik a szoftvergyartonkent es nyelvenkent valtozo nevek ketertelmuseget. Az elso kerdes barmely adatkeszletnel: 'Mi az EPSG-kod?'",
+  "explanation": "Az EPSG egyertelmu, univerzalis nyelveet biztosit a CRS-ek kommunikaciiojahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a Fold lapultsagat es kovetkezmenyeit a hidrologiara!",
+  "correct": "A Fold lapult ellipszoid: az egyenlitoi sugar ~6 378 km, a sarki ~6 357 km (kb. 21 km kulonbseg). Ez befolyasolja a fokfelbontasu DEM cellak meretet: magasabb szelessegen a kelet-nyugati cellameeret csokken. A lejtess- es kitettseegszamitasoknak figyelembe kell venniuk ezt az aszimmetriat.",
+  "explanation": "A lapultsag miatt a foldrajzi koordinatakban levo DEM cellak szelesseegfuggoen valtoznak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a GPS-magassag es a valodi magassag kozotti kulonbseg es gyakorlati veszelyei?",
+  "correct": "A GPS ellipszoid-magassagot ad, nem ortometrikus (tengerszint felett) magassagot. Magyarorszagon a kulonbseg 40-46 m. Geoid-korrekcio nelkul az eredmeny szisztematikusan hibas. Ez katasztrofalis hidraulikai modellezesben vagy arvizterkepezesben.",
+  "explanation": "A GPS-magassag 40+ m-rel terhet el a valodi magassaagtol; geoidmodell kotelezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az Euler-tetel jelentoseget a terkepi vetuletek szamara!",
+  "correct": "Euler 1777-ben bebizonyitotta, hogy matematikailag lehetetlen a gorbult feluleteet sik feluleten torzitas nelkul abrazolni. Ez azt jelenti, hogy minden vetullet kompromisszum: terulet, alak, tavolsag vagy irany valamelyiket felaldozza. A valasztas mennyisegi kovetkezmenyekkel jar.",
+  "explanation": "Nincs tokeletes vetullet; a valasztas mindig kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan hat a tektonikus lemezmoozgas a geodeziai datumokra?",
+  "correct": "A lemezek evente 1-10 cm-rel mozognak. A lemezhez kotott datumok (NAD83, ETRS89) stabilak a lemezen belul, de a globalis (ITRF) kerethez kepest elmozdulnak. A vizgyujto-lepteku munkanal ez elhanyagolhato, de a precizios geodezianal es evtizedes GNSS-idosoroknal szamit.",
+  "explanation": "Vizgyujto-lepteken elhanyagolhato; precizios munkaanal szamit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a geoid es az ellipszoid kozotti kulonbseget es hidrologiai jelentoseguket!",
+  "correct": "A geoid a gravitacios ekvipotencialis felulet (atlagos tengerszint), a viz termeszetes vonatkoztatasi felulete. Az ellipszoid matematikai kozelites, a koordinata-rendszerek alapja. A kulonbseguuk (geoidundulacio, N) Magyarorszagon 38-46 m. A GPS ellipszoid-magassagot mer; az ortometrikus magassaghoz geoidmodell kell.",
+  "explanation": "A geoid: fizikai; az ellipszoid: matematikai. A kulonbseg (N) kritikus a vizszintek szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Magyarazza el a definialas es az atvetites kozotti kulonbseget es a leggyakoribb hibbat!",
+  "correct": "A definialas metaadatot (CRS-t) rendel hozza anelkul, hogy megvaltoztatna a koordinatakat. Az atvetites ujraszaamolja a koordinata-ertekeket. Ha egy EOV-adatkeszletet atvetitunk WGS84-be ahelyett, hogy eloszor definialnaank, az eredmeny ertelmetelen.",
+  "explanation": "Definialas: metaadat; atvetites: szamitas. Az osszekeveresuk a leggyakoribb GIS-hiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert nem alkalmas a Web Mercator kvantitativ hidrologiai elemzesre?",
+  "correct": "A Web Mercator drasztikusan torzitja a teruleteket az egyenlitotol tavolodva. Budapest szelessegen (47,5 fok) a terulet 2,18-szorosan felnagyitott. Egy 100 km2-es poligon 218 km2-nek adodik. Ez elfogadhatatlan vizgyujto-teruleti es csapadek-terfogati szamitasokhoz.",
+  "explanation": "A Web Mercator Budapest szelessegen 2,18x terulettorzitast okoz; kizarolag megjeleniteesre hasznalhato.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az EOV koordinata-rendszer sajatossagait es elonyeit Magyarorszag szamara!",
+  "correct": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul (EPSG:23700), a HD72 datummal. A kozeppont Szolnok kozeleben van (47,14 E; 19,05 K), a meretarany-tenyezo 0,99993. Egyetlen zonaval fedi le egesz Magyarorszagot, maximalis hiba <0,01%. Elonyei: nincsenek zonahataarok, magas pontossag.",
+  "explanation": "Az EOV egy zonaaval, 0,01% alatti hibaval fedi le Magyarorszagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a gyakorlati munkamenet a tobb forrasbol szarmazo teerbeli adatok kombinaalasahoz?",
+  "correct": "(1) Leltaarozas: adatkeszletek es CRS-ek osszegzese. (2) Munka-CRS valasztas (magyar munkahoz EOV, europaira ETRS89/LAEA). (3) Minden adat atvetitese a munkarendszerbe. (4) Illeszkedeees vizuaalis ellenorzese. Ez a logika univerzaalis.",
+  "explanation": "Leltarozas, valasztas, atvetites, ellenorzes - az univerzalis munkafolyamat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert kritikus a magassagi pontossag a hidrologiaban?",
+  "correct": "A viz lefele folyik; mar cm-es magassagi hiba megvaltoztathatja a folyasi iranyt. Az Alfoldon, ahol a lejtes 0,05% alatti, 0,5 m hiba 500 m-rel mozditthatja az arvizhatart. A magassagi datum (Balti, NAVD88) es az ellipszoid-magassag osszetevesztese 40+ m szisztematikus hibat okoz.",
+  "explanation": "A magassagi pontossag fontosabb mint a vizszintes; sik terepen kulonosen kritikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a HD72 datum jellemzoit es gyakorlati kovetkezmenyeit!",
+  "correct": "A HD72 nem geocentrikus datum, a GRS 1967 ellipszoidra epul, szolnoki origoval. A WGS84/ETRS89-tol 50-60 m-rel ter el. A magyar nemzeti adatok (DDM-5, data.vizugy.hu) HD72/EOV-ban vannak. Az europai adatokkal valo kombinaalashoz EPSG:1449 transzformaaacio szukseges.",
+  "explanation": "A HD72 50-60 m eltolodast okoz a WGS84-hez kepest; kotelezoo transzformalni.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan mukodik a GPS es milyen pontossagot biztosit?",
+  "correct": "A trilateracion alapul: 4+ muholdtol mert pszeudo-tavolsagokbol szamitja a poziciot. Onallo vevo: 3-5 m. Differenciialis GNSS: 0,5-2 m. RTK: 1-2 cm. A GNSS ma GPS, GLONASS, Galileo es BeiDou rendszereket foglalja magaban.",
+  "explanation": "Onallo GPS: 3-5 m; RTK: 1-2 cm. A GNSS 4 rendszert foglal magaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a GRACE kuldetes elvet es a 2011-es texasi aszaly peldajat!",
+  "correct": "Ket muhold 220 km-re repul, a kozottuk levo tavolsag mikromeeterrel valtozik a gravitacios anomaliaaak hatasara. A 2011-es texasi aszaly soran kb. 100 km3 vizkeszlet-veszteseget mutatott ki. A GRACE egyedulallo: a teljes viz-oszlopot (felszin alatti + talajnedvesseg + felszini) meri.",
+  "explanation": "A GRACE gravitacios meresseel detektaalja a vizkeszlet-valtozasokat; Texas 100 km3-t veszitett.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen kihivasokat jelent a koordinata-rendszer-kezeles a fejlodo regiokban?",
+  "correct": "Orokolt gyarmati datumok, rosszul dokumentalt transzformaciok, ritka geodeziai halozatok, tobb datum egyidejuu hasznalata. A megoldas: globalis adatkeszletekbol (WGS84) indulni, es nemzeti datumokat csak szukseg eseten bevonni. Az AFREF es hasonlo kezdemenyezesek dolgoznak az egysegesitesen.",
+  "explanation": "A fejlodo regiokban a globalis adatkeszletekbol valo kiindulas a legbiztonsagosabb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hasonlitsa ossze az UTM, State Plane, EOV es Gauss-Kruger rendszereket!",
+  "correct": "UTM: 6 fokos zonak, k0=0,9996, globalis. State Plane: allam-meretu zonak, <1:10 000 hiba, USA. EOV: egyetlen zona, k0=0,99993, Magyarorszag. Gauss-Kruger: 3 fokos zonak, k0=1,0000, Kozep-/Kelet-Europa. Az EOV a legpontosabb Magyarorszagra, de nem alkalmas europa-lepteku muunkara.",
+  "explanation": "Mindegyik a torzitas es a zona-bonyolultsag kozotti kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a tengerszint-valtozas jelentosege a magassagi datumok szempontjabol?",
+  "correct": "A relativ tengerszint-trendek helyenkent valtoznak: Galveston +6,5, Stockholm -3,8 mm/ev. A szaarazfoldi Magyarorszagot kozvetlenul nem erinti, de az Alfold talajsulllyedese analoo. A szintezesi halozatokat rendszeresen ujra kell merni a magassagi keret integritasanak fenntartasahoz.",
+  "explanation": "A tengerszint-valtozas es a talajsullyedes befolyasolja a magassagi adatok pontossagat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az ETRS89 es a WGS84 viszonyt es gyakorlati kovetkezmenyeit!",
+  "correct": "1989-ben azonosak voltak. Azota az eurazssiai lemez kb. 90 cm-t mozdult el. A kulonbseg hidrologiailag elhanyagolhato (<1 m). A NAD83 es a WGS84 szinten kb. 2 m-en belul egyezik. A HD72 viszont 50-60 m-rel ter el es kotelezoo transzformalni.",
+  "explanation": "ETRS89/WGS84 kulonbseg elhanyagolhato; HD72 kulonbseg nem.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen vetuletet valasszon a hidrologus a kulonbozo leptekekhez?",
+  "correct": "Magyarorszag: EOV (EPSG:23700). Osseuropa: ETRS89/LAEA (EPSG:3035). Globalis: WGS84 foldrajzi (EPSG:4326) tarolashoz + UTM szamitashoz. Web: Web Mercator (EPSG:3857) kizarolag meegjeleniteeshez.",
+  "explanation": "A vetulletvalasztas a lepteektol es celtol fugg.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a magyar EOV X/Y jeloles problemajat es megoldasat!",
+  "correct": "A magyar geodeziai hagyomany az X-et hasznalja az Eastingre es az Y-t a Northingra, ami a nemzetkozi konvencio ellenntete. A megoldas: ertektartomany-ellenorzes. 0-400 000 = Northing; 400 000-1 000 000 = Easting.",
+  "explanation": "Ne bizzunk a fejlecekben; bizzunk a szamokban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert fontos az EPSG-kodrendszer a hidroinformatikaban?",
+  "correct": "Az EPSG szabvanyositott numerikus kodot biztosit minden koordinata-rendszerhez. Kiikuszobolik a szoftvergyartonkent es nyelvenkent valtozo nevek ketertelmuseget. Az elso kerdes barmely adatkeszletnel: 'Mi az EPSG-kod?'",
+  "explanation": "Az EPSG egyertelmu, univerzalis nyelveet biztosit a CRS-ek kommunikaciiojahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a Fold lapultsagat es kovetkezmenyeit a hidrologiara!",
+  "correct": "A Fold lapult ellipszoid: az egyenlitoi sugar ~6 378 km, a sarki ~6 357 km (kb. 21 km kulonbseg). Ez befolyasolja a fokfelbontasu DEM cellak meretet: magasabb szelessegen a kelet-nyugati cellameeret csokken. A lejtess- es kitettseegszamitasoknak figyelembe kell venniuk ezt az aszimmetriat.",
+  "explanation": "A lapultsag miatt a foldrajzi koordinatakban levo DEM cellak szelesseegfuggoen valtoznak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a GPS-magassag es a valodi magassag kozotti kulonbseg es gyakorlati veszelyei?",
+  "correct": "A GPS ellipszoid-magassagot ad, nem ortometrikus (tengerszint felett) magassagot. Magyarorszagon a kulonbseg 40-46 m. Geoid-korrekcio nelkul az eredmeny szisztematikusan hibas. Ez katasztrofalis hidraulikai modellezesben vagy arvizterkepezesben.",
+  "explanation": "A GPS-magassag 40+ m-rel terhet el a valodi magassaagtol; geoidmodell kotelezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az Euler-tetel jelentoseget a terkepi vetuletek szamara!",
+  "correct": "Euler 1777-ben bebizonyitotta, hogy matematikailag lehetetlen a gorbult feluleteet sik feluleten torzitas nelkul abrazolni. Ez azt jelenti, hogy minden vetullet kompromisszum: terulet, alak, tavolsag vagy irany valamelyiket felaldozza. A valasztas mennyisegi kovetkezmenyekkel jar.",
+  "explanation": "Nincs tokeletes vetullet; a valasztas mindig kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan hat a tektonikus lemezmoozgas a geodeziai datumokra?",
+  "correct": "A lemezek evente 1-10 cm-rel mozognak. A lemezhez kotott datumok (NAD83, ETRS89) stabilak a lemezen belul, de a globalis (ITRF) kerethez kepest elmozdulnak. A vizgyujto-lepteku munkanal ez elhanyagolhato, de a precizios geodezianal es evtizedes GNSS-idosoroknal szamit.",
+  "explanation": "Vizgyujto-lepteken elhanyagolhato; precizios munkaanal szamit.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a geoid es az ellipszoid kozotti kulonbseget es hidrologiai jelentoseguket!",
+  "correct": "A geoid a gravitacios ekvipotencialis felulet (atlagos tengerszint), a viz termeszetes vonatkoztatasi felulete. Az ellipszoid matematikai kozelites, a koordinata-rendszerek alapja. A kulonbseguuk (geoidundulacio, N) Magyarorszagon 38-46 m. A GPS ellipszoid-magassagot mer; az ortometrikus magassaghoz geoidmodell kell.",
+  "explanation": "A geoid: fizikai; az ellipszoid: matematikai. A kulonbseg (N) kritikus a vizszintek szamitasahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Magyarazza el a definialas es az atvetites kozotti kulonbseget es a leggyakoribb hibbat!",
+  "correct": "A definialas metaadatot (CRS-t) rendel hozza anelkul, hogy megvaltoztatna a koordinatakat. Az atvetites ujraszaamolja a koordinata-ertekeket. Ha egy EOV-adatkeszletet atvetitunk WGS84-be ahelyett, hogy eloszor definialnaank, az eredmeny ertelmetelen.",
+  "explanation": "Definialas: metaadat; atvetites: szamitas. Az osszekeveresuk a leggyakoribb GIS-hiba.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert nem alkalmas a Web Mercator kvantitativ hidrologiai elemzesre?",
+  "correct": "A Web Mercator drasztikusan torzitja a teruleteket az egyenlitotol tavolodva. Budapest szelessegen (47,5 fok) a terulet 2,18-szorosan felnagyitott. Egy 100 km2-es poligon 218 km2-nek adodik. Ez elfogadhatatlan vizgyujto-teruleti es csapadek-terfogati szamitasokhoz.",
+  "explanation": "A Web Mercator Budapest szelessegen 2,18x terulettorzitast okoz; kizarolag megjeleniteesre hasznalhato.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az EOV koordinata-rendszer sajatossagait es elonyeit Magyarorszag szamara!",
+  "correct": "Az EOV a Hotine-fele ferde Mercator-vetuleten alapul (EPSG:23700), a HD72 datummal. A kozeppont Szolnok kozeleben van (47,14 E; 19,05 K), a meretarany-tenyezo 0,99993. Egyetlen zonaval fedi le egesz Magyarorszagot, maximalis hiba <0,01%. Elonyei: nincsenek zonahataarok, magas pontossag.",
+  "explanation": "Az EOV egy zonaaval, 0,01% alatti hibaval fedi le Magyarorszagot.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a gyakorlati munkamenet a tobb forrasbol szarmazo teerbeli adatok kombinaalasahoz?",
+  "correct": "(1) Leltaarozas: adatkeszletek es CRS-ek osszegzese. (2) Munka-CRS valasztas (magyar munkahoz EOV, europaira ETRS89/LAEA). (3) Minden adat atvetitese a munkarendszerbe. (4) Illeszkedeees vizuaalis ellenorzese. Ez a logika univerzaalis.",
+  "explanation": "Leltarozas, valasztas, atvetites, ellenorzes - az univerzalis munkafolyamat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert kritikus a magassagi pontossag a hidrologiaban?",
+  "correct": "A viz lefele folyik; mar cm-es magassagi hiba megvaltoztathatja a folyasi iranyt. Az Alfoldon, ahol a lejtes 0,05% alatti, 0,5 m hiba 500 m-rel mozditthatja az arvizhatart. A magassagi datum (Balti, NAVD88) es az ellipszoid-magassag osszetevesztese 40+ m szisztematikus hibat okoz.",
+  "explanation": "A magassagi pontossag fontosabb mint a vizszintes; sik terepen kulonosen kritikus.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a HD72 datum jellemzoit es gyakorlati kovetkezmenyeit!",
+  "correct": "A HD72 nem geocentrikus datum, a GRS 1967 ellipszoidra epul, szolnoki origoval. A WGS84/ETRS89-tol 50-60 m-rel ter el. A magyar nemzeti adatok (DDM-5, data.vizugy.hu) HD72/EOV-ban vannak. Az europai adatokkal valo kombinaalashoz EPSG:1449 transzformaaacio szukseges.",
+  "explanation": "A HD72 50-60 m eltolodast okoz a WGS84-hez kepest; kotelezoo transzformalni.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan mukodik a GPS es milyen pontossagot biztosit?",
+  "correct": "A trilateracion alapul: 4+ muholdtol mert pszeudo-tavolsagokbol szamitja a poziciot. Onallo vevo: 3-5 m. Differenciialis GNSS: 0,5-2 m. RTK: 1-2 cm. A GNSS ma GPS, GLONASS, Galileo es BeiDou rendszereket foglalja magaban.",
+  "explanation": "Onallo GPS: 3-5 m; RTK: 1-2 cm. A GNSS 4 rendszert foglal magaban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a GRACE kuldetes elvet es a 2011-es texasi aszaly peldajat!",
+  "correct": "Ket muhold 220 km-re repul, a kozottuk levo tavolsag mikromeeterrel valtozik a gravitacios anomaliaaak hatasara. A 2011-es texasi aszaly soran kb. 100 km3 vizkeszlet-veszteseget mutatott ki. A GRACE egyedulallo: a teljes viz-oszlopot (felszin alatti + talajnedvesseg + felszini) meri.",
+  "explanation": "A GRACE gravitacios meresseel detektaalja a vizkeszlet-valtozasokat; Texas 100 km3-t veszitett.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen kihivasokat jelent a koordinata-rendszer-kezeles a fejlodo regiokban?",
+  "correct": "Orokolt gyarmati datumok, rosszul dokumentalt transzformaciok, ritka geodeziai halozatok, tobb datum egyidejuu hasznalata. A megoldas: globalis adatkeszletekbol (WGS84) indulni, es nemzeti datumokat csak szukseg eseten bevonni. Az AFREF es hasonlo kezdemenyezesek dolgoznak az egysegesitesen.",
+  "explanation": "A fejlodo regiokban a globalis adatkeszletekbol valo kiindulas a legbiztonsagosabb.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hasonlitsa ossze az UTM, State Plane, EOV es Gauss-Kruger rendszereket!",
+  "correct": "UTM: 6 fokos zonak, k0=0,9996, globalis. State Plane: allam-meretu zonak, <1:10 000 hiba, USA. EOV: egyetlen zona, k0=0,99993, Magyarorszag. Gauss-Kruger: 3 fokos zonak, k0=1,0000, Kozep-/Kelet-Europa. Az EOV a legpontosabb Magyarorszagra, de nem alkalmas europa-lepteku muunkara.",
+  "explanation": "Mindegyik a torzitas es a zona-bonyolultsag kozotti kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a tengerszint-valtozas jelentosege a magassagi datumok szempontjabol?",
+  "correct": "A relativ tengerszint-trendek helyenkent valtoznak: Galveston +6,5, Stockholm -3,8 mm/ev. A szaarazfoldi Magyarorszagot kozvetlenul nem erinti, de az Alfold talajsulllyedese analoo. A szintezesi halozatokat rendszeresen ujra kell merni a magassagi keret integritasanak fenntartasahoz.",
+  "explanation": "A tengerszint-valtozas es a talajsullyedes befolyasolja a magassagi adatok pontossagat.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az ETRS89 es a WGS84 viszonyt es gyakorlati kovetkezmenyeit!",
+  "correct": "1989-ben azonosak voltak. Azota az eurazssiai lemez kb. 90 cm-t mozdult el. A kulonbseg hidrologiailag elhanyagolhato (<1 m). A NAD83 es a WGS84 szinten kb. 2 m-en belul egyezik. A HD72 viszont 50-60 m-rel ter el es kotelezoo transzformalni.",
+  "explanation": "ETRS89/WGS84 kulonbseg elhanyagolhato; HD72 kulonbseg nem.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Milyen vetuletet valasszon a hidrologus a kulonbozo leptekekhez?",
+  "correct": "Magyarorszag: EOV (EPSG:23700). Osseuropa: ETRS89/LAEA (EPSG:3035). Globalis: WGS84 foldrajzi (EPSG:4326) tarolashoz + UTM szamitashoz. Web: Web Mercator (EPSG:3857) kizarolag meegjeleniteeshez.",
+  "explanation": "A vetulletvalasztas a lepteektol es celtol fugg.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a magyar EOV X/Y jeloles problemajat es megoldasat!",
+  "correct": "A magyar geodeziai hagyomany az X-et hasznalja az Eastingre es az Y-t a Northingra, ami a nemzetkozi konvencio ellenntete. A megoldas: ertektartomany-ellenorzes. 0-400 000 = Northing; 400 000-1 000 000 = Easting.",
+  "explanation": "Ne bizzunk a fejlecekben; bizzunk a szamokban.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Miert fontos az EPSG-kodrendszer a hidroinformatikaban?",
+  "correct": "Az EPSG szabvanyositott numerikus kodot biztosit minden koordinata-rendszerhez. Kiikuszobolik a szoftvergyartonkent es nyelvenkent valtozo nevek ketertelmuseget. Az elso kerdes barmely adatkeszletnel: 'Mi az EPSG-kod?'",
+  "explanation": "Az EPSG egyertelmu, univerzalis nyelveet biztosit a CRS-ek kommunikaciiojahoz.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse a Fold lapultsagat es kovetkezmenyeit a hidrologiara!",
+  "correct": "A Fold lapult ellipszoid: az egyenlitoi sugar ~6 378 km, a sarki ~6 357 km (kb. 21 km kulonbseg). Ez befolyasolja a fokfelbontasu DEM cellak meretet: magasabb szelessegen a kelet-nyugati cellameeret csokken. A lejtess- es kitettseegszamitasoknak figyelembe kell venniuk ezt az aszimmetriat.",
+  "explanation": "A lapultsag miatt a foldrajzi koordinatakban levo DEM cellak szelesseegfuggoen valtoznak.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Mi a GPS-magassag es a valodi magassag kozotti kulonbseg es gyakorlati veszelyei?",
+  "correct": "A GPS ellipszoid-magassagot ad, nem ortometrikus (tengerszint felett) magassagot. Magyarorszagon a kulonbseg 40-46 m. Geoid-korrekcio nelkul az eredmeny szisztematikusan hibas. Ez katasztrofalis hidraulikai modellezesben vagy arvizterkepezesben.",
+  "explanation": "A GPS-magassag 40+ m-rel terhet el a valodi magassaagtol; geoidmodell kotelezo.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Ismertesse az Euler-tetel jelentoseget a terkepi vetuletek szamara!",
+  "correct": "Euler 1777-ben bebizonyitotta, hogy matematikailag lehetetlen a gorbult feluleteet sik feluleten torzitas nelkul abrazolni. Ez azt jelenti, hogy minden vetullet kompromisszum: terulet, alak, tavolsag vagy irany valamelyiket felaldozza. A valasztas mennyisegi kovetkezmenyekkel jar.",
+  "explanation": "Nincs tokeletes vetullet; a valasztas mindig kompromisszum.",
+  "chapter_num": 2
+ },
+ {
+  "type": "essay",
+  "question": "Hogyan hat a tektonikus lemezmoozgas a geodeziai datumokra?",
+  "correct": "A lemezek evente 1-10 cm-rel mozognak. A lemezhez kotott datumok (NAD83, ETRS89) stabilak a lemezen belul, de a globalis (ITRF) kerethez kepest elmozdulnak. A vizgyujto-lepteku munkanal ez elhanyagolhato, de a precizios geodezianal es evtizedes GNSS-idosoroknal szamit.",
+  "explanation": "Vizgyujto-lepteken elhanyagolhato; precizios munkaanal szamit.",
+  "chapter_num": 2
+ }
+]

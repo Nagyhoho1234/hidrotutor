@@ -1,0 +1,2554 @@
+[
+  {
+    "type": "mcq",
+    "question": "Hány lépésből áll a HAND-alapú árvízi elöntés-térképezés munkafolyamata?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 6"
+    ],
+    "correct": "C",
+    "explanation": "Négy lépés: vízhozam → mélység → elöntési térkép → hatásfelmérés."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az árvízi elöntés-térképezés első lépése?",
+    "options": [
+      "A) Mélységbecslés",
+      "B) Hatásfelmérés",
+      "C) Vízhozam-előrejelzés",
+      "D) HAND-számítás"
+    ],
+    "correct": "C",
+    "explanation": "A vízhozam-előrejelzés a belépési pont."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen egyenlet kapcsolja össze a vízhozamot és a vízmélységet a HAND keretrendszerben?",
+    "options": [
+      "A) Bernoulli-egyenlet",
+      "B) Manning-egyenlet",
+      "C) Darcy-törvény",
+      "D) Saint-Venant-egyenletek"
+    ],
+    "correct": "B",
+    "explanation": "A Manning-egyenlet az állandósult, egyenletes nyílt medri áramlásra."
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan szól a HAND-alapú elöntési szabály?",
+    "options": [
+      "A) Ha d < HAND, elöntött",
+      "B) Ha d > HAND, elöntött; mélység = d - HAND",
+      "C) Ha d = HAND, elöntött",
+      "D) Ha HAND > 10 m, elöntött"
+    ],
+    "correct": "B",
+    "explanation": "Elöntés: d > h; elöntési mélység = d - h."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az NWM?",
+    "options": [
+      "A) National Weather Model",
+      "B) National Water Model",
+      "C) National Watershed Map",
+      "D) Network Water Management"
+    ],
+    "correct": "B",
+    "explanation": "National Water Model (Nemzeti Vízmodell)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány NHDPlus-szakaszra ad előrejelzést az NWM?",
+    "options": [
+      "A) 270 000",
+      "B) 2,7 millió",
+      "C) 27 millió",
+      "D) 270 millió"
+    ],
+    "correct": "B",
+    "explanation": "2,7 millió szakasz."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az EFAS?",
+    "options": [
+      "A) European Flood Analysis System",
+      "B) European Flood Awareness System",
+      "C) Environmental Flood Assessment Service",
+      "D) European Flow Accumulation System"
+    ],
+    "correct": "B",
+    "explanation": "European Flood Awareness System."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GloFAS?",
+    "options": [
+      "A) Global Flow Analysis System",
+      "B) Global Flood Awareness System",
+      "C) Global Flood Assessment Service",
+      "D) Geographic Flood Alert System"
+    ],
+    "correct": "B",
+    "explanation": "Global Flood Awareness System."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontású a GloFAS?",
+    "options": [
+      "A) 1 km",
+      "B) ~5 km",
+      "C) 25 km",
+      "D) 100 km"
+    ],
+    "correct": "B",
+    "explanation": "0,05 fokos (~5 km-es) felbontás."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Manning-egyenlet SI-alakja?",
+    "options": [
+      "A) Q = (1/n) × Ax × R^(2/3) × S0^(1/2)",
+      "B) Q = n × Ax × R² × S0",
+      "C) Q = (1,49/n) × Ax × R^(2/3) × S0^(1/2)",
+      "D) Q = Ax × R / n"
+    ],
+    "correct": "A",
+    "explanation": "Q = (1/n) × Ax × R^(2/3) × S₀^(1/2) SI-egységekben."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora az 1,49-es tényező az USA szokásos mértékegységeiben?",
+    "options": [
+      "A) A dimenziós átváltás m → ft",
+      "B) A gravitációs gyorsulás",
+      "C) A víz sűrűsége",
+      "D) A kinetikus energia korrekciója"
+    ],
+    "correct": "A",
+    "explanation": "1 m^(1/3) ≈ 1,486 ft^(1/3)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Manning-féle n jellemző értéke tiszta, egyenes medrekben?",
+    "options": [
+      "A) 0,005-0,010",
+      "B) 0,025-0,033",
+      "C) 0,080-0,120",
+      "D) 0,200-0,500"
+    ],
+    "correct": "B",
+    "explanation": "0,025-0,033 a tiszta, egyenes medrekre."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a Manning n kezdeti értéke HAND-elemzésekhez?",
+    "options": [
+      "A) 0,01",
+      "B) 0,025",
+      "C) 0,05",
+      "D) 0,10"
+    ],
+    "correct": "C",
+    "explanation": "n = 0,05 általános alapérték."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen bizonytalanságot visz a Manning n az eredménybe?",
+    "options": [
+      "A) 5-10%",
+      "B) 30-50%",
+      "C) 1-2%",
+      "D) 200%"
+    ],
+    "correct": "B",
+    "explanation": "~30-50% bizonytalanság a számított vízhozamban."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a hidraulikus sugár (R) képlete?",
+    "options": [
+      "A) R = Ax / P",
+      "B) R = P / Ax",
+      "C) R = Ax × P",
+      "D) R = Ax + P"
+    ],
+    "correct": "A",
+    "explanation": "R = keresztszelvény-terület / nedvesített kerület."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a nedvesített kerület (P) fizikai jelentése?",
+    "options": [
+      "A) A vízfelszín szélessége",
+      "B) A vízzel érintkező mederfelszín átlagos hossza",
+      "C) A víz térfogata",
+      "D) A meder esése"
+    ],
+    "correct": "B",
+    "explanation": "A vízzel érintkező mederfelszín átlagos kerületi hossza."
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan számítják a fenékesést (S₀)?",
+    "options": [
+      "A) S₀ = (z_felső - z_alsó) / L",
+      "B) S₀ = L / (z_felső - z_alsó)",
+      "C) S₀ = z_felső × z_alsó",
+      "D) S₀ = L × (z_felső + z_alsó)"
+    ],
+    "correct": "A",
+    "explanation": "A szakasz felső és alsó vége közötti magasságkülönbség / szakaszhossz."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a szintetikus vízhozamgörbe?",
+    "options": [
+      "A) Mért vízállás-vízhozam adatsor",
+      "B) HAND-ból levezetett mélység-vízhozam összefüggés",
+      "C) Műholdas vízhozammérés",
+      "D) Csapadék-lefolyás modell kimenete"
+    ],
+    "correct": "B",
+    "explanation": "A HAND hidraulikus tulajdonságaiból + Manning-egyenletből levezetett görbe."
+  },
+  {
+    "type": "mcq",
+    "question": "Hol található az Onion Creek?",
+    "options": [
+      "A) New York",
+      "B) Austin, Texas déli elővárosai",
+      "C) Los Angeles",
+      "D) Chicago"
+    ],
+    "correct": "B",
+    "explanation": "Austin, Texas déli elővárosain halad át."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor történt az Onion Creek pusztító árvíze?",
+    "options": [
+      "A) 2005. szeptember",
+      "B) 2010. május",
+      "C) 2013. október",
+      "D) 2016. március"
+    ],
+    "correct": "C",
+    "explanation": "2013 októberében, öt halálos áldozattal."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány ház került víz alá az Onion Creek 2013-as árvízénél?",
+    "options": [
+      "A) ~50",
+      "B) ~200",
+      "C) ~500",
+      "D) ~2000"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 500 ház."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Onion Creek COMID 5781733 szakaszán 1 m mélységnél mekkora a vízhozam?",
+    "options": [
+      "A) ~1,4 m³/s",
+      "B) ~13,8 m³/s",
+      "C) ~138 m³/s",
+      "D) ~1380 m³/s"
+    ],
+    "correct": "B",
+    "explanation": "Q ≈ 13,8 m³/s (~487 cfs)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a Tisza fenékesése Szolnoknál?",
+    "options": [
+      "A) 0,0163",
+      "B) 0,004",
+      "C) 0,00004",
+      "D) 0,4"
+    ],
+    "correct": "C",
+    "explanation": "~0,00004 (4 cm/km)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza meder szélessége Szolnoknál hozzávetőleg mekkora?",
+    "options": [
+      "A) 20-50 m",
+      "B) 200-400 m",
+      "C) 1000-2000 m",
+      "D) 5000 m"
+    ],
+    "correct": "B",
+    "explanation": "200-400 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora volt a Tisza 2001-es árvízének tetőző vízhozama Szolnoknál?",
+    "options": [
+      "A) ~270 m³/s",
+      "B) ~1000 m³/s",
+      "C) ~2700 m³/s",
+      "D) ~10 000 m³/s"
+    ],
+    "correct": "C",
+    "explanation": "~2700 m³/s."
+  },
+  {
+    "type": "mcq",
+    "question": "Az előre kiszámított elöntési könyvtár milyen mélységközökkel készül az USA-ban?",
+    "options": [
+      "A) 0,1 m",
+      "B) 1 láb (0,3 m)",
+      "C) 1 m",
+      "D) 5 m"
+    ],
+    "correct": "B",
+    "explanation": "1 lábas (0,3 m) lépésközök."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány előre kiszámított elöntési térkép összesen az USA-ban?",
+    "options": [
+      "A) ~2,7 millió",
+      "B) ~67,5 millió",
+      "C) ~270 millió",
+      "D) ~1 milliárd"
+    ],
+    "correct": "B",
+    "explanation": "2,7 M szakasz × ~25 mélységi lépésköz ≈ 67,5 millió."
+  },
+  {
+    "type": "mcq",
+    "question": "Mennyi idő alatt készül el a frissített elöntési térkép a legfrissebb NWM-előrejelzésből?",
+    "options": [
+      "A) 3 perc alatt",
+      "B) 30 perc",
+      "C) 3 óra",
+      "D) 1 nap"
+    ],
+    "correct": "A",
+    "explanation": "3 percen belül, keresés-alapú megközelítéssel."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen visszatérési időkre készít a JRC árvízveszélyeztetettségi térképeket?",
+    "options": [
+      "A) 1, 5, 10 éves",
+      "B) 10, 20, 50, 100, 200, 500 éves",
+      "C) Csak 100 éves",
+      "D) 1000 éves"
+    ],
+    "correct": "B",
+    "explanation": "10-500 éves visszatérési időkre."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen modellt használ a JRC az árvíztérképezéshez?",
+    "options": [
+      "A) HEC-RAS",
+      "B) LISFLOOD",
+      "C) TauDEM",
+      "D) SWAT"
+    ],
+    "correct": "B",
+    "explanation": "LISFLOOD a JRC hidraulikus szimulációs modellje."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az épületnél az elöntési mélység képlete?",
+    "options": [
+      "A) d_ép = HAND - d_szakasz",
+      "B) d_ép = d_szakasz - HAND_épület",
+      "C) d_ép = HAND × d_szakasz",
+      "D) d_ép = d_szakasz / HAND"
+    ],
+    "correct": "B",
+    "explanation": "d_épület = d_szakasz - HAND_épület."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen HAND-értékű épület nagyon magas kockázatú?",
+    "options": [
+      "A) 0-2 m",
+      "B) 5-10 m",
+      "C) 10-20 m",
+      "D) >20 m"
+    ],
+    "correct": "A",
+    "explanation": "HAND 0-2 m: mérsékelt eseményeknél is elöntött."
+  },
+  {
+    "type": "mcq",
+    "question": "A HEC-RAS milyen egyenleteket old meg?",
+    "options": [
+      "A) Manning-egyenlet",
+      "B) Saint-Venant-egyenletek",
+      "C) Darcy-törvény",
+      "D) Laplace-egyenlet"
+    ],
+    "correct": "B",
+    "explanation": "Az 1D/2D Saint-Venant-egyenleteket (kontinuitás + impulzus)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND fő előnye a HEC-RAS-szal szemben?",
+    "options": [
+      "A) Pontosabb",
+      "B) Lépték, sebesség, konzisztencia, lefedettség",
+      "C) Részletesebb fizika",
+      "D) Visszaduzzasztást modellezi"
+    ],
+    "correct": "B",
+    "explanation": "Országos lépték, ezredmásodperces sebesség, teljes lefedettség."
+  },
+  {
+    "type": "mcq",
+    "question": "A FEMA az USA vízfolyáskilométereinek hány százalékára készített részletes árvízi térképet?",
+    "options": [
+      "A) <25%",
+      "B) ~50%",
+      "C) ~75%",
+      "D) 100%"
+    ],
+    "correct": "A",
+    "explanation": "Kevesebb mint 25%."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HEC-RAS fő korlátja országos léptéken?",
+    "options": [
+      "A) Túl olcsó",
+      "B) Napokat igényel egyetlen szakaszra és a vízhálózat nagy részére nincs modell",
+      "C) Túl pontatlan",
+      "D) Nincs szoftver"
+    ],
+    "correct": "B",
+    "explanation": "Napok/hetek egy szakaszra, a vízhálózat nagy része lefedetlen."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Saint-Venant egyenletek két komponense?",
+    "options": [
+      "A) Kontinuitás és impulzus",
+      "B) Lejtés és érdesség",
+      "C) Esés és vízhozam",
+      "D) Mélység és sebesség"
+    ],
+    "correct": "A",
+    "explanation": "Tömegmegmaradás (kontinuitás) és impulzusmegmaradás."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen magyar rendszer szolgáltat valós idejű vízállásadatokat?",
+    "options": [
+      "A) GloFAS",
+      "B) HYDROINFO (www.hydroinfo.hu)",
+      "C) OpenTopography",
+      "D) TauDEM"
+    ],
+    "correct": "B",
+    "explanation": "Az OVF HYDROINFO rendszere."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány előrejelzési szelvényen ad előrejelzést a HYDROINFO?",
+    "options": [
+      "A) 10",
+      "B) 48",
+      "C) 98",
+      "D) 500"
+    ],
+    "correct": "C",
+    "explanation": "98 előrejelzési szelvény."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a 'Pin to Flood Map' alkalmazás?",
+    "options": [
+      "A) Műholdas árvíztérkép",
+      "B) Megfigyelő a víz szélénél → HAND-extrapoláció elöntési térképpé",
+      "C) HEC-RAS eredmények megjelenítése",
+      "D) Csapadék-előrejelzés"
+    ],
+    "correct": "B",
+    "explanation": "A víz szélén álló megfigyelő GPS-koordinátáit HAND-dal extrapolálják."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen Manning n értéket használtak a tiszai számításban?",
+    "options": [
+      "A) 0,025",
+      "B) 0,035",
+      "C) 0,050",
+      "D) 0,100"
+    ],
+    "correct": "B",
+    "explanation": "n = 0,035 (nagy folyó, viszonylag sima ártér)."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen Copernicus szolgáltatás biztosít műholdas árvíztérképezést?",
+    "options": [
+      "A) Copernicus Land",
+      "B) Copernicus EMS (Emergency Management Service)",
+      "C) Copernicus Climate",
+      "D) Copernicus Marine"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Emergency Management Service (EMS)."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik műhold biztosít felhőkön áthatoló árvízdetektálást?",
+    "options": [
+      "A) Sentinel-2",
+      "B) Sentinel-1 SAR",
+      "C) Landsat",
+      "D) ICESat-2"
+    ],
+    "correct": "B",
+    "explanation": "Sentinel-1 SAR (szintetikus apertúrájú radar) áthatolhat a felhőkön."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS milyen időhorizonton ad előrejelzést?",
+    "options": [
+      "A) 1 nap",
+      "B) 3 nap",
+      "C) 10 nap",
+      "D) 1 év"
+    ],
+    "correct": "C",
+    "explanation": "Középtávú, legfeljebb 10 napos előrejelzés."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány árvízi riasztási fokozat van a magyar rendszerben?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": "B",
+    "explanation": "I., II. és III. fokú árvízi riasztás."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND-módszer fő korlátja az áramlás dinamikája szempontjából?",
+    "options": [
+      "A) Nincs korlátja",
+      "B) Nincs fogalma az oldalirányú ártéri áramlásról",
+      "C) Túl sok adatot igényel",
+      "D) Csak kis területekre alkalmazható"
+    ],
+    "correct": "B",
+    "explanation": "A HAND csak magasság alapján osztályoz, nem modellezi az ártéri áramlás dinamikáját."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adatbázisból nyerhetők épület-pozíciók Magyarországon?",
+    "options": [
+      "A) NHDPlus",
+      "B) Országos épületnyilvántartás / KSH",
+      "C) USGS",
+      "D) Sentinel-2"
+    ],
+    "correct": "B",
+    "explanation": "Országos épületnyilvántartás és KSH népességi adatok."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora felbontású az Eurostat népességi rács?",
+    "options": [
+      "A) 100 m²",
+      "B) 1 km²",
+      "C) 10 km²",
+      "D) 100 km²"
+    ],
+    "correct": "B",
+    "explanation": "1 km²-es népességi rács."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a felszínszélesség (T) képlete a HAND-ból?",
+    "options": [
+      "A) T = V / L",
+      "B) T = As / L",
+      "C) T = Ab / L",
+      "D) T = P / L"
+    ],
+    "correct": "B",
+    "explanation": "T = felszín / mederhossz."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a keresztszelvény-terület (Ax) képlete a HAND-ból?",
+    "options": [
+      "A) Ax = V / L",
+      "B) Ax = As / L",
+      "C) Ax = Ab / L",
+      "D) Ax = P × R"
+    ],
+    "correct": "A",
+    "explanation": "Ax = térfogat / mederhossz."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM milyen gyakran frissíti a rövid távú előrejelzését?",
+    "options": [
+      "A) Naponta",
+      "B) 6 óránként",
+      "C) Óránként",
+      "D) 15 percenként"
+    ],
+    "correct": "C",
+    "explanation": "Óránkénti rövid távú előrejelzés."
+  },
+  {
+    "type": "mcq",
+    "question": "A GloFAS milyen időtartamú szezonális kilátásokat nyújt?",
+    "options": [
+      "A) 1 hónap",
+      "B) 4 hónap",
+      "C) 1 év",
+      "D) 5 év"
+    ],
+    "correct": "B",
+    "explanation": "Legfeljebb 4 hónapos szezonális kilátások."
+  },
+  {
+    "type": "mcq",
+    "question": "A GloFAS historikus reanalízise meddig nyúlik vissza?",
+    "options": [
+      "A) 1900",
+      "B) 1950",
+      "C) 1979",
+      "D) 2000"
+    ],
+    "correct": "C",
+    "explanation": "1979-ig visszamenőleg."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ártéri Manning n értéke sűrű erdős területen?",
+    "options": [
+      "A) 0,025-0,035",
+      "B) 0,050-0,080",
+      "C) 0,080-0,120",
+      "D) 0,200-0,300"
+    ],
+    "correct": "C",
+    "explanation": "0,080-0,120 erdős ártéren."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a HAND-megközelítés jellemző mélységhibája?",
+    "options": [
+      "A) 1-5%",
+      "B) 5-15%",
+      "C) 20-50%",
+      "D) 100%+"
+    ],
+    "correct": "C",
+    "explanation": "20-50% mélységhiba jellemző (közelítő módszer)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a HEC-RAS jellemző mélységhibája kalibrációval?",
+    "options": [
+      "A) 1-3%",
+      "B) 5-15%",
+      "C) 20-50%",
+      "D) 100%+"
+    ],
+    "correct": "B",
+    "explanation": "5-15% kalibrált modellel."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány Texas-i címpontja van a hatásfelméréshez?",
+    "options": [
+      "A) 928 000",
+      "B) 9,28 millió",
+      "C) 92,8 millió",
+      "D) 928 millió"
+    ],
+    "correct": "B",
+    "explanation": "9,28 millió címpont."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki üzemelteti az EFAS-t?",
+    "options": [
+      "A) USGS",
+      "B) ECMWF",
+      "C) NASA",
+      "D) OVF"
+    ],
+    "correct": "B",
+    "explanation": "ECMWF a Copernicus Katasztrófakezelési Szolgálat keretében."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen gyakran frissítik az EU árvízveszélyeztetettségi térképeket?",
+    "options": [
+      "A) Évente",
+      "B) 3 évente",
+      "C) 6 évente",
+      "D) 12 évente"
+    ],
+    "correct": "C",
+    "explanation": "6 évente felülvizsgálják az EU Árvíz-irányelv szerint."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú előrejelzést ad az EFAS az ECMWF ensemble rendszeréből?",
+    "options": [
+      "A) Determinisztikus",
+      "B) Valószínűségi (51 szcenárió)",
+      "C) Klimatikus",
+      "D) Statisztikai"
+    ],
+    "correct": "B",
+    "explanation": "51 egyenlő valószínűségű szcenárió."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen problémát okoz a DDM-ben a vízfelszín a HAND-alapú vízhozamgörbéknél?",
+    "options": [
+      "A) A meder sekélyebbnek tűnik (vízfelszín > mederfenék)",
+      "B) A meder mélyebbnek tűnik",
+      "C) Nincs hatása",
+      "D) A lejtés változik"
+    ],
+    "correct": "A",
+    "explanation": "A DDM a vízfelszínt mutatja, nem a mederfeneket → felfelé torzított HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyren árvízkockázati szint: HAND = 15 m?",
+    "options": [
+      "A) Nagyon magas",
+      "B) Magas",
+      "C) Mérsékelt",
+      "D) Alacsony"
+    ],
+    "correct": "D",
+    "explanation": "HAND 10-20 m: alacsony kockázat."
+  },
+  {
+    "type": "mcq",
+    "question": "A Zheng és mások kutatása szerint milyen szakaszhossz ajánlott?",
+    "options": [
+      "A) 10-50 m",
+      "B) 100-500 m",
+      "C) 1-2 km",
+      "D) 10-50 km"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg egyenlő hosszúságú 1-2 km-es szakaszok."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen eszközzel kalibrálható a HAND-ból levezetett vízhozamgörbe?",
+    "options": [
+      "A) Csapadékmérővel",
+      "B) Mérőállomás mért vízhozamgörbéjével",
+      "C) Műholdfelvétellel",
+      "D) Talajmintával"
+    ],
+    "correct": "B",
+    "explanation": "USGS/OVF/GRDC mérőállomások mért vízállás-vízhozam adataival."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza szolnoki szakaszán milyen Manning n-t használtak?",
+    "options": [
+      "A) 0,025",
+      "B) 0,035",
+      "C) 0,050",
+      "D) 0,100"
+    ],
+    "correct": "B",
+    "explanation": "n = 0,035."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-alapú árvízi elöntés-térképezés négy lépésből áll.",
+    "correct": "true",
+    "explanation": "Vízhozam → mélység → elöntési térkép → hatásfelmérés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning-egyenlet állandósult, egyenletes áramlást feltételez.",
+    "correct": "true",
+    "explanation": "Ez a HAND keretrendszer alapfeltételezése."
+  },
+  {
+    "type": "true_false",
+    "question": "Az elöntési szabály: ha d > HAND, a cella elöntött.",
+    "correct": "true",
+    "explanation": "A vízmélység meghaladja a HAND-értéket → elöntés."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-alapú elöntés vízgyűjtőnként van meghatározva.",
+    "correct": "true",
+    "explanation": "Minden cella a saját vízgyűjtőjének szakaszáról kapja a mélységet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning-féle n a keretrendszer legbizonytalanabb paramétere.",
+    "correct": "true",
+    "explanation": "30-50% bizonytalanságot vihet a vízhozamba."
+  },
+  {
+    "type": "true_false",
+    "question": "A hidraulikus sugár (R) a keresztszelvény-terület és a nedvesített kerület hányadosa.",
+    "correct": "true",
+    "explanation": "R = Ax / P."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM óránkénti előrejelzéseket ad 2,7 millió szakaszra.",
+    "correct": "true",
+    "explanation": "Rövid távú óránkénti előrejelzés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS-t a NOAA üzemelteti.",
+    "correct": "false",
+    "explanation": "Az ECMWF üzemelteti a Copernicus keretében."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS 0,05 fokos (~5 km) felbontásban működik.",
+    "correct": "true",
+    "explanation": "Globális lefedettségű."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Onion Creek 2013-as árvízénél 5 ember fulladt meg.",
+    "correct": "true",
+    "explanation": "Öt halálos áldozat, ~500 elöntött ház."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza fenékesése Szolnoknál ~0,00004.",
+    "correct": "true",
+    "explanation": "4 cm/km."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-RAS a Saint-Venant-egyenleteket oldja meg.",
+    "correct": "true",
+    "explanation": "1D/2D kontinuitás + impulzus."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND helyettesíti a HEC-RAS-t.",
+    "correct": "false",
+    "explanation": "Kiegészíti; különböző léptékben, eltérő célokra."
+  },
+  {
+    "type": "true_false",
+    "question": "A FEMA az USA vízfolyásainak <25%-ára készített részletes térképet.",
+    "correct": "true",
+    "explanation": "A fennmaradó 75%-ra nincs."
+  },
+  {
+    "type": "true_false",
+    "question": "Az előre kiszámított elöntési könyvtárak percek alatt frissíthetők.",
+    "correct": "true",
+    "explanation": "3 percen belül, keresés-alapú megközelítéssel."
+  },
+  {
+    "type": "true_false",
+    "question": "A JRC 10-500 éves visszatérési időkre készít árvíztérképeket.",
+    "correct": "true",
+    "explanation": "10, 20, 50, 100, 200 és 500 éves."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND modellezi az oldalirányú ártéri áramlást.",
+    "correct": "false",
+    "explanation": "A HAND nem ismer oldalirányú áramlást."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND modellezi a visszaduzzasztási hatásokat.",
+    "correct": "false",
+    "explanation": "Nincs fogalma műtárgyakról."
+  },
+  {
+    "type": "true_false",
+    "question": "A HYDROINFO 98 előrejelzési szelvényen ad adatokat.",
+    "correct": "true",
+    "explanation": "A magyar OVF rendszere."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EMS Sentinel-1 SAR-ral készít árvíztérképeket.",
+    "correct": "true",
+    "explanation": "SAR áthatolhat felhőkön."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar árvízi riasztási rendszer három fokozatú.",
+    "correct": "true",
+    "explanation": "I., II. és III. fok."
+  },
+  {
+    "type": "true_false",
+    "question": "Az USA előre kiszámított könyvtára ~67,5 millió elöntési térképet tartalmaz.",
+    "correct": "true",
+    "explanation": "2,7 M × ~25 = ~67,5 M."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning n 20%-os változtatása ~20%-os vízhozamváltozást okoz.",
+    "correct": "true",
+    "explanation": "Q ∝ 1/n, tehát lineáris összefüggés."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM jellemzően a mederfeneket ábrázolja.",
+    "correct": "false",
+    "explanation": "A vízfelszínt, nem a mederfeneket."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Onion Creek vízgyűjtője ~830 km².",
+    "correct": "true",
+    "explanation": "A texasi Hill Country-ban."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS 51 ensemble szcenáriót készít.",
+    "correct": "true",
+    "explanation": "ECMWF ensemble rendszerből."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-megközelítés 20-50% mélységhibával dolgozik.",
+    "correct": "true",
+    "explanation": "Közelítő módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-RAS kalibrációval 5-15% mélységhibára csökkenthető.",
+    "correct": "true",
+    "explanation": "Részletes hidraulikus modell."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU árvízi térképeket 6 évente frissítik.",
+    "correct": "true",
+    "explanation": "Az EU Árvíz-irányelv (2007/60/EK) szerint."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS historikus reanalízise 1979-ig nyúlik vissza.",
+    "correct": "true",
+    "explanation": "Hosszú távú nyilvántartás."
+  },
+  {
+    "type": "true_false",
+    "question": "A 'Pin to Flood Map' koncepció megfigyelő GPS-adatait használja HAND-dal.",
+    "correct": "true",
+    "explanation": "A víz szélénél mért HAND = lokális árvízi mélység."
+  },
+  {
+    "type": "true_false",
+    "question": "A gépi tanulás alkalmazható a Manning n becslésére.",
+    "correct": "true",
+    "explanation": "Távérzékelési jellemzőkből (NDVI, felszínborítás, medersszélesség)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ártéri Manning n értéke sűrű erdőben 0,080-0,120.",
+    "correct": "true",
+    "explanation": "Erdős ártér."
+  },
+  {
+    "type": "true_false",
+    "question": "A vízhozamgörbe nemlineáris összefüggés a vízhozam és mélység között.",
+    "correct": "true",
+    "explanation": "Kis mélység → szűk meder; nagy mélység → kiterjedt ártér."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-ból levezetett vízhozamgörbe trapéz medret feltételez.",
+    "correct": "false",
+    "explanation": "Nem feltételez alakot; a DDM geometriáját használja közvetlenül."
+  },
+  {
+    "type": "true_false",
+    "question": "A Texas-i címpont-adatbázis 9,28 millió pontot tartalmaz.",
+    "correct": "true",
+    "explanation": "Minden épület, amely 911 szolgáltatást fogadhat."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-alapú szűrés segíthet a HEC-RAS tanulmányok priorizálásában.",
+    "correct": "true",
+    "explanation": "A legtöbb veszélyeztetett épülettel rendelkező szakaszok azonosítása."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EMS aktiválását nemzeti polgári védelmi hatóságok kérhetik.",
+    "correct": "true",
+    "explanation": "Nagyobb árvíz esetén."
+  },
+  {
+    "type": "true_false",
+    "question": "A vízfolyásszakaszok felosztása nem befolyásolja a HAND-ból levezetett vízhozamgörbét.",
+    "correct": "false",
+    "explanation": "A felosztás érzékenyen hat a vízhozamgörbe-levezetésre."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ensemble megközelítés (több n-értékkel) informatívabb egyetlen becslésnél.",
+    "correct": "true",
+    "explanation": "Tartomány-becslés jobb a tervezéshez."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza széles, lapos ártere miatt kis mélységnövekedés hatalmas területet önthet el.",
+    "correct": "true",
+    "explanation": "A sík terepen az ártéri felszín gyorsan nő a mélységgel."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning-egyenlet figyelembe veszi az időbeli változékonyságot.",
+    "correct": "false",
+    "explanation": "Állandósult állapotot feltételez."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND 1 km²-es népességi ráccsal is használható hatásfelmérésre.",
+    "correct": "true",
+    "explanation": "Eurostat GISCO 1 km² rács gyors népesség-kitettség becsléshez."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-alapú keretrendszer percek alatt végrehajtható.",
+    "correct": "true",
+    "explanation": "Ha az alapadatok előre el vannak készítve."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND 100%-os lefedettséget biztosít az USA vízfolyásaira.",
+    "correct": "true",
+    "explanation": "Szemben a HEC-RAS ~25%-ával."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tiszán a nagy árvizek 8-10 méteres mélységeket produkálnak.",
+    "correct": "true",
+    "explanation": "A sík ártéren nagy mélységek alakulnak ki."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-megközelítés kontinentális és globális léptékben is alkalmazható.",
+    "correct": "true",
+    "explanation": "Paradigmaváltás: szisztematikus, automatizált, globális."
+  },
+  {
+    "type": "true_false",
+    "question": "A 'topobati' DDM a víz feletti és alatti terepet is tartalmazza.",
+    "correct": "true",
+    "explanation": "LiDAR topográfia + batimetria = egységes DDM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi elöntés-térképezés _______ lépésből áll.",
+    "correct": "négy",
+    "explanation": "Vízhozam → mélység → térkép → hatás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Elöntési szabály: ha d > _______, a cella elöntött.",
+    "correct": "HAND",
+    "explanation": "A vízmélység meghaladja a HAND-értéket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning-egyenlet SI: Q = (1/n) × Ax × R^(2/3) × S₀^(______).",
+    "correct": "1/2",
+    "explanation": "S₀ a fél hatványra emelve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning n jellemző kezdőértéke HAND-elemzésekhez: _______.",
+    "correct": "0,05",
+    "explanation": "Általános alapérték."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R = Ax / _______.",
+    "correct": "P",
+    "explanation": "Hidraulikus sugár = terület / nedvesített kerület."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fenékesés: S₀ = (z_felső - z_alsó) / _______.",
+    "correct": "L",
+    "explanation": "Magasságkülönbség / szakaszhossz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NWM: _______ millió NHDPlus-szakaszra ad előrejelzést.",
+    "correct": "2,7",
+    "explanation": "2,7 millió szakasz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS: _______ (szervezet) üzemelteti.",
+    "correct": "ECMWF",
+    "explanation": "European Centre for Medium-Range Weather Forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS felbontása: ~_______ km.",
+    "correct": "5",
+    "explanation": "0,05 fokos (~5 km)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Onion Creek árvíz éve: _______.",
+    "correct": "2013",
+    "explanation": "2013 októbere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Onion Creek: _______ halálos áldozat.",
+    "correct": "5",
+    "explanation": "Öt ember fulladt meg."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Onion Creek: ~_______ ház elöntve.",
+    "correct": "500",
+    "explanation": "~500 ház."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tisza fenékesése Szolnoknál: ~_______ (m/m).",
+    "correct": "0,00004",
+    "explanation": "4 cm/km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tisza medersszélessége Szolnoknál: _______-400 m.",
+    "correct": "200",
+    "explanation": "200-400 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tisza 2001-es tetőző vízhozam Szolnoknál: ~_______ m³/s.",
+    "correct": "2700",
+    "explanation": "~2700 m³/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Előre kiszámított könyvtár mélységközei (USA): _______ láb.",
+    "correct": "1",
+    "explanation": "1 lábas (0,3 m) lépésközök."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Összes előre kiszámított elöntési térkép (USA): ~_______ millió.",
+    "correct": "67,5",
+    "explanation": "2,7 M × ~25 ≈ 67,5 M."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Valós idejű elöntési térkép frissítési ideje: _______ percen belül.",
+    "correct": "3",
+    "explanation": "Keresés-alapú megközelítés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "JRC: _______ modellel készít árvíztérképeket.",
+    "correct": "LISFLOOD",
+    "explanation": "JRC hidraulikus szimulációs modell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Épület elöntési mélysége: d_ép = d_szakasz - _______.",
+    "correct": "HAND_épület",
+    "explanation": "Vízmélység mínusz HAND-érték."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS: _______ egyenleteket old meg.",
+    "correct": "Saint-Venant",
+    "explanation": "Kontinuitás + impulzus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEMA: az USA vízfolyásainak <_______%-ára van részletes térkép.",
+    "correct": "25",
+    "explanation": "Kevesebb mint 25%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND pontossága: _______-50% mélységhiba.",
+    "correct": "20",
+    "explanation": "Közelítő módszer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS pontossága kalibrációval: _______-15%.",
+    "correct": "5",
+    "explanation": "Részletes modell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyar árvízi riasztás: _______ fokozat.",
+    "correct": "3",
+    "explanation": "I., II., III. fok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HYDROINFO: _______ előrejelzési szelvény.",
+    "correct": "98",
+    "explanation": "98 szelvény a magyar folyókon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS időhorizontja: legfeljebb _______ nap.",
+    "correct": "10",
+    "explanation": "Középtávú előrejelzés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NWM frissítési gyakorisága (rövid táv): _______.",
+    "correct": "óránkénti",
+    "explanation": "Óránkénti rövid távú előrejelzés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS szezonális kilátások: legfeljebb _______ hónap.",
+    "correct": "4",
+    "explanation": "4 hónapos kilátás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS reanalízis: _______-ig visszamenőleg.",
+    "correct": "1979",
+    "explanation": "1979-es kezdet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning n sűrű erdős ártéren: _______-0,120.",
+    "correct": "0,080",
+    "explanation": "0,080-0,120."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning n tiszta mederre: _______-0,033.",
+    "correct": "0,025",
+    "explanation": "0,025-0,033."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Texas címpont-adatbázisa: _______ millió pont.",
+    "correct": "9,28",
+    "explanation": "9,28 millió."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Onion Creek vízgyűjtő területe: ~_______ km².",
+    "correct": "830",
+    "explanation": "~830 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _______ rendszer a valós idejű magyar vízállásfigyelést biztosítja.",
+    "correct": "HYDROINFO",
+    "explanation": "www.hydroinfo.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus EMS: _______ SAR-ral készít árvíztérképeket.",
+    "correct": "Sentinel-1",
+    "explanation": "Felhőkön áthatoló radar."
+  },
+  {
+    "type": "fill_blank",
+    "question": "USA szokásos Manning-egyenlet: Q = (_______/n) × Ax × R^(2/3) × S₀^(1/2).",
+    "correct": "1,49",
+    "explanation": "Mértékegység-átváltási tényező m→ft."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az 1,49-es tényező ≈ 1 m^(______) lábba átváltva.",
+    "correct": "1/3",
+    "explanation": "1 m^(1/3) ≈ 1,486 ft^(1/3)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Felszín képlete: As = n_elöntött × (Δx)_______.",
+    "correct": "²",
+    "explanation": "Cellaszám × cellaméret²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "T = As / _______.",
+    "correct": "L",
+    "explanation": "Felszíni szélesség = felszín / mederhossz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Ax = V / _______.",
+    "correct": "L",
+    "explanation": "Keresztszelvény-terület = térfogat / mederhossz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "P = Ab / _______.",
+    "correct": "L",
+    "explanation": "Nedvesített kerület = mederterület / mederhossz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízhozamgörbét inverzben használják: adott Q → keresés → _______.",
+    "correct": "d",
+    "explanation": "Mélység (d)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND kockázat 0-2 m: nagyon _______.",
+    "correct": "magas",
+    "explanation": "Mérsékelt eseményeknél is elöntött."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND paradigmaváltást jelent: helyszínspecifikustól a _______ felé.",
+    "correct": "szisztematikus",
+    "explanation": "Automatizált, adatvezérelt, kontinentális lépték."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Árvízi elöntés Pythonban: inundation = np.where(depth > hand, depth - hand, _______).",
+    "correct": "0.0",
+    "explanation": "Ahol nincs elöntés, az érték 0."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza ártérszélessége a gátak között: _______-5 km mindkét oldalon.",
+    "correct": "2",
+    "explanation": "2-5 km szélességű hullámtér."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Manning n _______%-os változtatása ~20%-os vízhozamváltozást okoz.",
+    "correct": "20",
+    "explanation": "Q ∝ 1/n → lineáris."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zheng-féle kutatás _______-2 km szakaszhosszt ajánl.",
+    "correct": "1",
+    "explanation": "Egyenletesebb felosztás jobb eredményt ad."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi elöntés-térképezés négylépéses munkafolyamatát!",
+    "explanation": "1) Vízhozam-előrejelzés (NWM/EFAS) → 2) Mélységbecslés (Manning + HAND) → 3) Elöntési térkép (d vs HAND) → 4) Hatásfelmérés (épületek, népesség)."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a HAND-alapú elöntési szabály?",
+    "explanation": "Ha d > HAND, a cella elöntött; mélység = d - HAND. Raszteralgebrában: Con(depth > hand, depth - hand, 0)."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a vízgyűjtő-alapú térbeli differenciálás?",
+    "explanation": "Két szomszédos cella azonos HAND-dal eltérő árvízi feltételeket tapasztalhat, ha különböző vízgyűjtőkhöz tartoznak."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Manning-egyenletet és paramétereit!",
+    "explanation": "Q = (1/n) × Ax × R^(2/3) × S₀^(1/2). n: érdesség, Ax: szelvényterület, R: hidraulikus sugár, S₀: fenékesés."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan építhető fel a szintetikus vízhozamgörbe HAND-ból?",
+    "explanation": "Mélységeket léptetjük (0-max), minden mélységnél HAND-ból számítunk Ax, R → Manning → Q. Az (Q,d) párok alkotják a görbét."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az Onion Creek és a Tisza HAND-elemzését!",
+    "explanation": "Onion Creek: meredek, szűk, S₀=0,0163. Tisza: sík, széles, S₀=0,00004. HAND mindkét esetet kezeli, a terep végzi a munkát."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az előre kiszámított elöntési könyvtár koncepciója?",
+    "explanation": "Minden szakaszra, minden mélységlépésre előre kiszámított térképek. Árvízkor: keresés d → térkép. 3 perc alatt frissíthető."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND-alapú hatásfelmérés lépéseit!",
+    "explanation": "Címpontokra HAND-mintavétel → vízgyűjtő-hozzárendelés → d vs HAND → elöntött épületek + mélységek → összegzés."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a HAND-megközelítést és a HEC-RAS-t!",
+    "explanation": "HAND: gyors, országos, közelítő. HEC-RAS: lassú, részletes, pontos. Kiegészítő eszközök."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hidraulikus egyszerűsítéseket tartalmaz a HAND keretrendszer?",
+    "explanation": "Állandósult áramlás, egyenletes áramlás, egyetlen mélység szakaszonként, nincs oldalirányú impulzus."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen DDM-minőségi korlátok érintik a HAND-alapú árvíztérképezést?",
+    "explanation": "Függőleges pontosság (NED ~2,34 m), felbontás, batimetria hiánya (vízfelszín, nem mederfenék)."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Manning-féle n legfontosabb bizonytalansági forrásai?",
+    "explanation": "Térbeli változékonyság, időbeli változás, mélységfüggés. Kalibrálás mérőállomásoknál, becslés felszínborításból."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az európai (EFAS, JRC) árvízi térképezési megközelítéseket!",
+    "explanation": "EFAS: valószínűségi előrejelzés. JRC: statikus visszatérési idős térképek. Copernicus EMS: igény szerinti műholdas."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen globális árvízi előrejelző rendszerek léteznek?",
+    "explanation": "GloFAS: 5 km, 30 napos, valószínűségi. EFAS: Európa. NWM: USA. HYDROINFO: Magyarország."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a HAND-keretrendszer Magyarországon?",
+    "explanation": "DDM-5 + OVF hálózat → HAND → OVF/EFAS előrejelzés → elöntési térkép → KSH/épületadatok hatásfelmérés."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a 'Pin to Flood Map' koncepció és hogyan működik?",
+    "explanation": "Megfigyelő a víz szélén → GPS + HAND = lokális mélység → extrapoláció az egész vízgyűjtőre."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen fejlesztések javíthatnák a HAND-alapú árvíztérképezést?",
+    "explanation": "LiDAR (1 m), topobati DDM, ML érdességbecslés, javított útvonalkeresés HAND-tulajdonságokkal."
+  },
+  {
+    "type": "essay",
+    "question": "Miért jelent a HAND paradigmaváltást az árvízi térképezésben?",
+    "explanation": "Helyszínspecifikus → szisztematikus, részletes → közelítő de globális, hetek → percek, 25% → 100% lefedettség."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálhatók a HAND-alapú elöntési térképek?",
+    "explanation": "Mérőállomás-adatok, magas vízjegyek, Copernicus EMS műholdas térképek, állampolgári megfigyelések."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen árvízveszélyeztetettségi térképeket ír elő az EU Árvíz-irányelv Magyarországra?",
+    "explanation": "3 forgatókönyv (alacsony/közepes/nagy valószínűség), mélység, sebesség, érintett lakosok, gazdaság, környezet."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND szerepe az adatszegény régiókban?",
+    "explanation": "Copernicus GLO-30 + HydroSHEDS → HAND bárhol → WorldPop népesség → szűrőszintű hatásfelmérés."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND-ból levezetett szakaszátlagolt hidraulikus tulajdonságokat!",
+    "explanation": "As, V, Ab → Ax=V/L, P=Ab/L, T=As/L, R=Ax/P. A terep geometriája adja a medret."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vízhozamgörbe fizikai jelentése?",
+    "explanation": "Mélység-vízhozam összefüggés: kis vízhozam → szűk meder; nagy vízhozam → kiterjedt ártér. Nemlineáris."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a gépi tanulás a Manning-féle n becslését?",
+    "explanation": "Mérőállomásokon tanítás → távérzékelési jellemzők (NDVI, felszínborítás, medersszélesség) → mérőállomás nélküli becslés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátai vannak a szakaszalapú mélység-hozzárendelésnek?",
+    "explanation": "Egy mélység egész vízgyűjtőre: szűkületeknél mélyebb, kiszélesedésnél sekélyebb a valóságban."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vízhozamgörbe és a mért vízhozamgörbe összehasonlításának tanulsága?",
+    "explanation": "Kis Q: HAND túlbecslés (DDM vízfelszínt mér). Mérsékelt Q: jó egyezés. Nagy Q: DDM felbontástól függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik az operatív feldolgozási lánc az USA-ban?",
+    "explanation": "NWM óránkénti Q → vízhozamgörbe → d → elöntési könyvtár keresés → mozaik → hatásfelmérés. 3 perc."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepe van a Sentinel-1 SAR-nak az árvízi térképezésben?",
+    "explanation": "Felhőkön áthatoló, éjszakai működés → tényleges árvízkiterjedés térképezése → validáció és operatív információ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a HAND a magyar OVF árvízvédelmi munkájához?",
+    "explanation": "HYDROINFO vízállás + HAND → valós idejű elöntési térképek → vészhelyzeti beavatkozás irányítása."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezők határozják meg a vízhozamgörbe alakját?",
+    "explanation": "Medergeometria (DDM-ből), fenékesés, Manning n. Széles ártér → laposodó görbe; szűk szurdok → meredek görbe."
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje a HAND módszer alkalmazhatóságát fejlődő országokban!",
+    "explanation": "Globális DDM (GLO-30) + HydroSHEDS + GloFAS = szűrőszintű árvíztérképezés infrastruktúra nélkül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készíthető árvízi hatásfelmérés Magyarországon?",
+    "explanation": "HAND + DDM-5 + OVF hálózat → épületnyilvántartás/KSH → elöntött épületek, érintett népesség."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen a HAND és HEC-RAS kiegészítő viszonya a gyakorlatban?",
+    "explanation": "HAND: országos szűrés, valós idejű. HEC-RAS: magas kockázatú szakaszok részletes elemzése. HAND priorizálja a HEC-RAS-t."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat az NHDPlus szakaszfelosztás az eredményekre?",
+    "explanation": "Rövid szakaszok: instabil tulajdonságok. Hosszú: túl sok átlagolás. Optimum: 1-2 km egyenletes felosztás."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a topobati DDM jelentősége a HAND vízhozamgörbéiben?",
+    "explanation": "Valódi mederszelvény (víz feletti + alatti) → pontosabb hidraulikus tulajdonságok → jobb vízhozamgörbe."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyöket nyújt az ensemble megközelítés a Manning n-hez?",
+    "explanation": "Több n-értékkel futtatás → tartomány (pl. 200-400 ház) → jobb döntéshozás, mint egyetlen szám."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND alkalmazását a magyar Tisza-völgy árvízkezelésében!",
+    "explanation": "DDM-5/EEA-10, OVF hálózat, HAND, szolnoki mérőállomás validáció, EFAS előrejelzés, KSH hatásfelmérés."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változtathatná meg a HAND a globális árvízi korai figyelmeztetést?",
+    "explanation": "GloFAS előrejelzés + globális HAND = épületszintű hatásfelmérés bárhol → felmérhetetlenül értékes adatszegény régiókban."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen a HAND és a gépi tanulás jövőbeli integrációja?",
+    "explanation": "ML érdességbecslés, automatikus paraméterkalibrálás, javított útvonalkeresés HAND-tulajdonságokkal."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az állandósult áramlás feltételezésének következményeit lassú és gyors árvizeknél!",
+    "explanation": "Lassú (Tisza): kis hiba, mert a hidrogram napok alatt fejlődik. Gyors (Onion Creek): jelentős hiba, órás hidrogram."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan közvetíthető az árvízi kockázat a lakosság felé HAND-alapon?",
+    "explanation": "HAND-térkép: 'ennyit kell emelkednie a víznek, hogy a háza elöntött legyen' → közvetlenül érthető."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND-keretrendszer 'tágabb jelentősége'?",
+    "explanation": "Paradigmaváltás: részletes, lokális → szisztematikus, globális. Közelítő de létező térkép >> nincs térkép."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -114: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -113: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -112: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -111: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -110: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -109: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -108: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -107: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -106: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -105: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -104: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -103: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -102: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -101: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -100: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -99: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -98: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -97: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -96: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -95: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -94: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -93: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -92: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -91: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -90: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -89: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -88: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -87: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -86: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -85: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -84: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -83: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -82: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -81: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -80: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -79: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -78: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -77: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -76: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -75: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -74: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -73: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -72: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -71: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -70: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -69: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -68: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -67: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -66: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -65: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -64: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -63: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -62: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -61: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -60: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -59: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -58: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -57: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -56: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -55: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -54: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -53: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -52: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -51: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -50: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -49: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -48: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -47: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -46: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -45: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -44: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -43: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -42: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -41: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -40: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -39: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -38: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -37: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -36: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -35: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -34: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -33: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -32: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -31: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -30: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -29: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -28: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -27: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -26: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -25: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -24: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -23: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -22: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -21: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -20: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -19: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -18: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -17: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -16: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -15: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -14: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -13: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -12: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -11: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -10: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -9: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -8: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -7: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -6: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -5: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -4: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -3: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -2: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes -1: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 0: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 1: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 2: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 3: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 4: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 5: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 6: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 7: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 8: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 9: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 10: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 11: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 12: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 13: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 14: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 15: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 16: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 17: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 18: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 19: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 20: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 21: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 22: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 23: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 24: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 25: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 26: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 27: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 28: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 29: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 30: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 31: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 32: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 33: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 34: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 35: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 36: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 37: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 38: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 39: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 40: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 41: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 42: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 43: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 44: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 45: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 46: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 47: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 48: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 49: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 50: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 51: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 52: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 53: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 54: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 55: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 56: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 57: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 58: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 59: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 60: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 61: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 62: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 63: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 64: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 65: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 66: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 67: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 68: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 69: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 70: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 71: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 72: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 73: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 74: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 75: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 76: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 77: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 78: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 79: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 80: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 15 kiegeszito kerdes 81: Ismertesse az arvizi elontes-terkepezesi keretrendszer kulonfele alkalmazasait!",
+    "explanation": "Vizhozam-elorejlezes, melysegbecsles, elontesi terkep, hatasfelmeres."
+  }
+]

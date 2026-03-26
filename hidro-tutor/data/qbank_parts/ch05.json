@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Which surface representation method dominates hydrological GIS computing?",
+    "options": [
+      "A) Triangulated Irregular Networks (TINs)",
+      "B) Regular grid (raster)",
+      "C) Contour-flowline model",
+      "D) Point cloud"
+    ],
+    "correct": "B",
+    "explanation": "The regular grid dominates due to computational simplicity, compatibility with remote sensing, and parallelizable operations."
+  },
+  {
+    "type": "mcq",
+    "question": "Who developed the foundational D8 flow direction algorithm for regular grids?",
+    "options": [
+      "A) Bloschl (1995)",
+      "B) O'Callaghan and Mark (1984)",
+      "C) Goodchild (1997)",
+      "D) Tomlin (1990)"
+    ],
+    "correct": "B",
+    "explanation": "O'Callaghan and Mark (1984) developed the foundational extraction of drainage networks from digital elevation data on regular grids."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the cell size of the Copernicus GLO-30 DEM?",
+    "options": [
+      "A) 10 metres",
+      "B) 30 metres",
+      "C) 90 metres",
+      "D) 250 metres"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus GLO-30 provides global coverage at 30-metre resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "In Bloschl's scale triplet, what does 'support' refer to?",
+    "options": [
+      "A) The total area covered by the dataset",
+      "B) The distance between successive measurements",
+      "C) The area/volume/duration over which each measurement is representative",
+      "D) The number of data points"
+    ],
+    "correct": "C",
+    "explanation": "Support is the footprint of a single data value - the area over which each measurement is representative."
+  },
+  {
+    "type": "mcq",
+    "question": "What does NODATA represent in a raster grid?",
+    "options": [
+      "A) A cell with zero value",
+      "B) A cell where no valid measurement exists",
+      "C) A cell at sea level",
+      "D) A cell with negative elevation"
+    ],
+    "correct": "B",
+    "explanation": "NODATA indicates cells where no valid data exists, distinct from zero which is a valid measurement."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM is technically a Digital Surface Model (DSM) rather than a true bare-earth DEM?",
+    "options": [
+      "A) LiDAR-derived DEM",
+      "B) Contour-interpolated DEM",
+      "C) SRTM",
+      "D) Hungarian DDM-5"
+    ],
+    "correct": "C",
+    "explanation": "SRTM radar reflects off the first surface (canopy, buildings), making it a DSM, not a bare-earth DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the vertical datum used by Hungary's official height system?",
+    "options": [
+      "A) NAVD88",
+      "B) EGM2008",
+      "C) Baltic Height System (Kronstadt 1902)",
+      "D) WGS84 ellipsoidal"
+    ],
+    "correct": "C",
+    "explanation": "Hungary uses the Baltic Height System (Kronstadt 1902, EPSG:5787) defined by the Kronstadt tide gauge."
+  },
+  {
+    "type": "mcq",
+    "question": "How many cells per km² does a 30-metre resolution grid contain?",
+    "options": [
+      "A) ~123",
+      "B) ~1,111",
+      "C) ~10,000",
+      "D) ~40,000"
+    ],
+    "correct": "B",
+    "explanation": "At 30m resolution, each cell covers 900 m², so there are approximately 1,111 cells per km²."
+  },
+  {
+    "type": "mcq",
+    "question": "Which raster format is the most widely used in geospatial science?",
+    "options": [
+      "A) ASCII Grid",
+      "B) ESRI Grid",
+      "C) GeoTIFF",
+      "D) NetCDF"
+    ],
+    "correct": "C",
+    "explanation": "GeoTIFF is the most widely used raster format, supporting all data types, compression, and georeferencing."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a Cloud-Optimized GeoTIFF (COG)?",
+    "options": [
+      "A) A compressed version of GeoTIFF",
+      "B) A GeoTIFF organized for efficient HTTP range-request access",
+      "C) A GeoTIFF stored in a database",
+      "D) A multi-band GeoTIFF"
+    ],
+    "correct": "B",
+    "explanation": "COGs reorganize GeoTIFF data so clients can download only the tiles needed via HTTP range requests."
+  },
+  {
+    "type": "mcq",
+    "question": "Who formalized three interpretations of raster cell values?",
+    "options": [
+      "A) Dana Tomlin",
+      "B) Gunter Bloschl",
+      "C) Michael Goodchild",
+      "D) David Maidment"
+    ],
+    "correct": "C",
+    "explanation": "Goodchild (1997) formalized three interpretations: spatial average, center point sample, and grid node."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the D-infinity flow direction scheme developed by?",
+    "options": [
+      "A) O'Callaghan and Mark",
+      "B) Jenson and Domingue",
+      "C) Tarboton (1997)",
+      "D) Bloschl (1995)"
+    ],
+    "correct": "C",
+    "explanation": "Tarboton (1997) developed D-infinity, storing flow angle as float between 0 and 2π."
+  },
+  {
+    "type": "mcq",
+    "question": "What does SRTM stand for?",
+    "options": [
+      "A) Shuttle Radar Terrain Model",
+      "B) Shuttle Radar Topography Mission",
+      "C) Satellite Remote Terrain Mapping",
+      "D) Standard Raster Terrain Model"
+    ],
+    "correct": "B",
+    "explanation": "SRTM = Shuttle Radar Topography Mission, collected in February 2000."
+  },
+  {
+    "type": "mcq",
+    "question": "How does halving the cell size affect the number of cells?",
+    "options": [
+      "A) Doubles it",
+      "B) Triples it",
+      "C) Quadruples it",
+      "D) Increases by a factor of 8"
+    ],
+    "correct": "C",
+    "explanation": "Halving cell size quadruples the number of cells (inverse square relationship)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate geoid undulation in Hungary?",
+    "options": [
+      "A) 10-15 metres",
+      "B) 20-30 metres",
+      "C) 40-46 metres",
+      "D) 60-70 metres"
+    ],
+    "correct": "C",
+    "explanation": "In Hungary, the geoid undulation varies from approximately 40 to 46 metres."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM product removes stripe noise, bias, speckle, and tree height bias?",
+    "options": [
+      "A) SRTM",
+      "B) ASTER GDEM",
+      "C) MERIT DEM",
+      "D) Copernicus GLO-90"
+    ],
+    "correct": "C",
+    "explanation": "MERIT DEM removes these error components, producing a cleaner 90m elevation surface."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the resolution of the Hungarian DDM-5?",
+    "options": [
+      "A) 1 metre",
+      "B) 5 metres",
+      "C) 10 metres",
+      "D) 30 metres"
+    ],
+    "correct": "B",
+    "explanation": "DDM-5 from Lechner Knowledge Centre provides 5-metre resolution for Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Nyquist sampling theorem tell us about raster data?",
+    "options": [
+      "A) Cell values must be integers",
+      "B) At least two samples per feature width are needed",
+      "C) Rasters must be square",
+      "D) NODATA must be -9999"
+    ],
+    "correct": "B",
+    "explanation": "Nyquist theorem: at least two cells per feature width to faithfully capture it. Features below this are aliased."
+  },
+  {
+    "type": "mcq",
+    "question": "In a grid, cell indexing typically starts from which corner?",
+    "options": [
+      "A) Lower-left",
+      "B) Lower-right",
+      "C) Upper-left",
+      "D) Upper-right"
+    ],
+    "correct": "C",
+    "explanation": "Cells are indexed from the upper-left corner, with row index increasing downward and column increasing right."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the standard format for climate and weather data?",
+    "options": [
+      "A) GeoTIFF",
+      "B) ASCII Grid",
+      "C) NetCDF",
+      "D) Shapefile"
+    ],
+    "correct": "C",
+    "explanation": "NetCDF is the standard for climate/weather data: ERA5, E-OBS, CARPATCLIM, weather model output."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the ESRI Grid format's name character limit?",
+    "options": [
+      "A) 8 characters",
+      "B) 10 characters",
+      "C) 13 characters",
+      "D) 64 characters"
+    ],
+    "correct": "C",
+    "explanation": "ESRI Grid names are limited to 13 characters with no spaces."
+  },
+  {
+    "type": "mcq",
+    "question": "For a DEM covering Hungary at 90m, approximately how many cells are needed?",
+    "options": [
+      "A) 1 million",
+      "B) 11.5 million",
+      "C) 100 million",
+      "D) 930 million"
+    ],
+    "correct": "B",
+    "explanation": "Hungary (~93,000 km²) at 90m = roughly 11.5 million cells (~50 MB GeoTIFF)."
+  },
+  {
+    "type": "mcq",
+    "question": "Which resampling method is appropriate for categorical data like land cover?",
+    "options": [
+      "A) Bilinear interpolation",
+      "B) Cubic convolution",
+      "C) Nearest-neighbor",
+      "D) Spline"
+    ],
+    "correct": "C",
+    "explanation": "Nearest-neighbor preserves original integer values; interpolation creates meaningless intermediate land cover codes."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the vertical accuracy (LE90) of the Copernicus GLO-30 DEM?",
+    "options": [
+      "A) <1 m",
+      "B) <4 m",
+      "C) <10 m",
+      "D) <20 m"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus GLO-30 has vertical accuracy less than 4 metres (LE90)."
+  },
+  {
+    "type": "mcq",
+    "question": "What common NODATA value is used for 32-bit float rasters?",
+    "options": [
+      "A) 0",
+      "B) -9999",
+      "C) -3.4028235 × 10³⁸",
+      "D) Both B and C are common"
+    ],
+    "correct": "D",
+    "explanation": "Common NODATA values include -9999 and -3.4028235e+38 (min 32-bit float)."
+  },
+  {
+    "type": "mcq",
+    "question": "How many significant digits does a 32-bit float provide?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 7",
+      "D) 15"
+    ],
+    "correct": "C",
+    "explanation": "32-bit float provides approximately 7 significant digits."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the resolution of USGS 3DEP LiDAR-derived DEMs?",
+    "options": [
+      "A) 1 metre",
+      "B) 5 metres",
+      "C) 10 metres",
+      "D) 30 metres"
+    ],
+    "correct": "A",
+    "explanation": "USGS 3DEP provides 1m DEMs from LiDAR covering ~85% of the US."
+  },
+  {
+    "type": "mcq",
+    "question": "What project provides pre-processed hydrological derivatives from SRTM?",
+    "options": [
+      "A) Copernicus",
+      "B) 3DEP",
+      "C) HydroSHEDS",
+      "D) OpenTopography"
+    ],
+    "correct": "C",
+    "explanation": "HydroSHEDS provides pre-processed flow direction, accumulation, basins, and rivers from SRTM."
+  },
+  {
+    "type": "mcq",
+    "question": "The contour-flowline model was developed in which country in the 1970s-80s?",
+    "options": [
+      "A) United States",
+      "B) United Kingdom",
+      "C) Australia",
+      "D) Austria"
+    ],
+    "correct": "C",
+    "explanation": "Australian hydrological researchers developed the contour-flowline model in the 1970s-80s."
+  },
+  {
+    "type": "mcq",
+    "question": "What happens when you go from 90m to 10m resolution?",
+    "options": [
+      "A) Cells increase by factor of 9",
+      "B) Cells increase by factor of 81",
+      "C) Cells increase by factor of 27",
+      "D) Cells increase by factor of 100"
+    ],
+    "correct": "B",
+    "explanation": "(90/10)² = 81x increase in number of cells."
+  },
+  {
+    "type": "mcq",
+    "question": "Which raster interpretation views cell values as spatial averages?",
+    "options": [
+      "A) Interpretation 1",
+      "B) Interpretation 2",
+      "C) Interpretation 3",
+      "D) None of the above"
+    ],
+    "correct": "A",
+    "explanation": "Interpretation 1: value represents the mean of the quantity across the entire cell area."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the cell size of ERA5 reanalysis data?",
+    "options": [
+      "A) 1 km",
+      "B) ~10 km",
+      "C) ~31 km (0.25 deg)",
+      "D) ~100 km"
+    ],
+    "correct": "C",
+    "explanation": "ERA5 has ~31 km (0.25 degree) resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "The ASCII grid header field 'xllcorner' specifies:",
+    "options": [
+      "A) The x-coordinate of the upper-left corner",
+      "B) The x-coordinate of the lower-left corner",
+      "C) The x-coordinate of the center",
+      "D) The number of columns"
+    ],
+    "correct": "B",
+    "explanation": "xllcorner and yllcorner specify the lower-left corner coordinates."
+  },
+  {
+    "type": "mcq",
+    "question": "What vertical datum does the Copernicus DEM use?",
+    "options": [
+      "A) EGM96",
+      "B) EGM2008",
+      "C) NAVD88",
+      "D) Baltic Height System"
+    ],
+    "correct": "B",
+    "explanation": "The Copernicus DEM uses the EGM2008 geoid model."
+  },
+  {
+    "type": "mcq",
+    "question": "For urban flood mapping, what DEM resolution is needed?",
+    "options": [
+      "A) 90 metres",
+      "B) 30 metres",
+      "C) 1-5 metres",
+      "D) 250 metres"
+    ],
+    "correct": "C",
+    "explanation": "1-5m resolution needed to resolve levees, buildings, bridge decks, and channels."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM has the best vertical accuracy among global products?",
+    "options": [
+      "A) SRTM (~6-9m)",
+      "B) ASTER GDEM (~8-12m)",
+      "C) Copernicus GLO-30 (<4m)",
+      "D) ALOS AW3D30 (~5m)"
+    ],
+    "correct": "C",
+    "explanation": "Copernicus GLO-30 has <4m LE90, the best among freely available global DEMs."
+  },
+  {
+    "type": "mcq",
+    "question": "What happens to a 15m-wide stream in a 30m DEM?",
+    "options": [
+      "A) It appears as a narrow channel",
+      "B) It is perfectly resolved",
+      "C) It cannot be resolved (aliased)",
+      "D) It doubles in width"
+    ],
+    "correct": "C",
+    "explanation": "Features narrower than one cell cannot be resolved. The channel is hidden by the cell's blended value."
+  },
+  {
+    "type": "mcq",
+    "question": "NetCDF4 is internally built on top of:",
+    "options": [
+      "A) SQLite",
+      "B) GeoTIFF",
+      "C) HDF5",
+      "D) XML"
+    ],
+    "correct": "C",
+    "explanation": "NetCDF4 is built on top of HDF5 internally, so the two formats are closely related."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the spatial support of a single rain gauge?",
+    "options": [
+      "A) About 1 km²",
+      "B) About 200 cm² (gauge orifice)",
+      "C) About 100 km²",
+      "D) The entire watershed"
+    ],
+    "correct": "B",
+    "explanation": "A rain gauge's spatial support is the area of its orifice (~200 cm²) — essentially a point measurement."
+  },
+  {
+    "type": "mcq",
+    "question": "The DDM-5 in Hungary is derived from:",
+    "options": [
+      "A) Satellite radar",
+      "B) LiDAR",
+      "C) 1:10,000 contour lines and stereophotogrammetry",
+      "D) GPS surveys"
+    ],
+    "correct": "C",
+    "explanation": "DDM-5 is a true ground model from 1:10,000 topographic contours and stereophotogrammetry."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GPM/IMERG provide?",
+    "options": [
+      "A) Global DEM data",
+      "B) Global precipitation estimates at 0.1 degree, 30-min",
+      "C) Land cover classification",
+      "D) Soil moisture data"
+    ],
+    "correct": "B",
+    "explanation": "GPM/IMERG provides global precipitation at ~10 km (0.1 deg) every 30 minutes since 2000."
+  },
+  {
+    "type": "mcq",
+    "question": "Which raster format supports a time dimension natively?",
+    "options": [
+      "A) GeoTIFF",
+      "B) ASCII Grid",
+      "C) NetCDF",
+      "D) ESRI Grid"
+    ],
+    "correct": "C",
+    "explanation": "NetCDF natively supports multiple dimensions including time, essential for climate data."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Tisza example, engineered levees are typically how wide at the crest?",
+    "options": [
+      "A) 1-2 metres",
+      "B) 5-10 metres",
+      "C) 20-30 metres",
+      "D) 50-100 metres"
+    ],
+    "correct": "B",
+    "explanation": "Tisza flood levees are typically 5-10 metres wide at the crest and 3-5 metres above the floodplain."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the EPSG code for WGS84 geographic coordinates?",
+    "options": [
+      "A) EPSG:4326",
+      "B) EPSG:32634",
+      "C) EPSG:23700",
+      "D) EPSG:3035"
+    ],
+    "correct": "A",
+    "explanation": "EPSG:4326 is WGS84 geographic coordinates (latitude/longitude in degrees)."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'center point rule' in rasterization assigns cell value based on:",
+    "options": [
+      "A) The polygon occupying the largest area",
+      "B) Whichever polygon contains the cell's center point",
+      "C) The average of all overlapping polygons",
+      "D) Random assignment"
+    ],
+    "correct": "B",
+    "explanation": "The center point rule assigns each cell the value of whichever polygon contains the cell's center."
+  },
+  {
+    "type": "mcq",
+    "question": "A mosaic dataset in ArcGIS Pro:",
+    "options": [
+      "A) Physically merges all tiles",
+      "B) References tiles and dynamically assembles them",
+      "C) Converts rasters to vectors",
+      "D) Only works with ASCII grids"
+    ],
+    "correct": "B",
+    "explanation": "Mosaic datasets catalog tile locations and present them as a seamless surface without physical merging."
+  },
+  {
+    "type": "mcq",
+    "question": "MERIT DEM was developed at which university?",
+    "options": [
+      "A) MIT",
+      "B) University of Tokyo",
+      "C) ETH Zurich",
+      "D) University of Texas"
+    ],
+    "correct": "B",
+    "explanation": "MERIT DEM was developed by Dai Yamazaki at the University of Tokyo."
+  },
+  {
+    "type": "mcq",
+    "question": "What resolution is appropriate for continental-scale flood modeling?",
+    "options": [
+      "A) 1-5 metres",
+      "B) 10-30 metres",
+      "C) 90-250 metres",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "Continental flood modeling uses 90-250m (Copernicus GLO-90, MERIT)."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus EEA-10 DEM covers:",
+    "options": [
+      "A) Global",
+      "B) 39 European countries",
+      "C) Only Hungary",
+      "D) EU-27 only"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus EEA-10 provides 10m resolution coverage of 39 European countries."
+  },
+  {
+    "type": "mcq",
+    "question": "In ASCII grid format, grid values are listed:",
+    "options": [
+      "A) Bottom to top (south to north)",
+      "B) Top to bottom (north to south)",
+      "C) Left to right only",
+      "D) Randomly"
+    ],
+    "correct": "B",
+    "explanation": "Values are listed row by row from top to bottom (north to south)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a Value Attribute Table (VAT)?",
+    "options": [
+      "A) A table of coordinate values",
+      "B) A lookup table for integer grid values providing additional attributes",
+      "C) A validation table for data quality",
+      "D) A version control table"
+    ],
+    "correct": "B",
+    "explanation": "VATs provide one row per unique integer value, with count and additional attributes for each class."
+  },
+  {
+    "type": "mcq",
+    "question": "The D8 flow direction grid uses how many possible values?",
+    "options": [
+      "A) 4",
+      "B) 8 (powers of 2: 1,2,4,8,16,32,64,128)",
+      "C) 16",
+      "D) 360"
+    ],
+    "correct": "B",
+    "explanation": "D8 uses eight values (1,2,4,8,16,32,64,128) representing eight possible flow directions."
+  },
+  {
+    "type": "mcq",
+    "question": "For what region does SRTM provide coverage?",
+    "options": [
+      "A) Global",
+      "B) 60°N to 56°S",
+      "C) 83°N to 83°S",
+      "D) Only land areas"
+    ],
+    "correct": "B",
+    "explanation": "SRTM covers 60°N to 56°S latitude."
+  },
+  {
+    "type": "mcq",
+    "question": "When was the SRTM data collected?",
+    "options": [
+      "A) 1990",
+      "B) February 2000",
+      "C) 2010",
+      "D) 2015"
+    ],
+    "correct": "B",
+    "explanation": "SRTM data was collected in February 2000."
+  },
+  {
+    "type": "mcq",
+    "question": "A 10m DEM of Hungary would contain approximately how many cells?",
+    "options": [
+      "A) 11.5 million",
+      "B) 93 million",
+      "C) 930 million",
+      "D) 9.3 billion"
+    ],
+    "correct": "C",
+    "explanation": "Hungary (~93,000 km²) at 10m: 93,000 × 10,000 cells/km² = 930 million cells."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'largest share rule' in rasterization:",
+    "options": [
+      "A) Assigns value based on cell center",
+      "B) Assigns value based on majority area coverage",
+      "C) Takes the maximum value",
+      "D) Uses random selection"
+    ],
+    "correct": "B",
+    "explanation": "Largest share rule assigns the value of whichever polygon occupies the largest fraction of the cell area."
+  },
+  {
+    "type": "mcq",
+    "question": "Which organization developed the Copernicus DEM?",
+    "options": [
+      "A) NASA",
+      "B) USGS",
+      "C) ESA/Copernicus",
+      "D) JAXA"
+    ],
+    "correct": "C",
+    "explanation": "The Copernicus DEM is derived from TanDEM-X and distributed through ESA/Copernicus."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Tisza floodplain, what feature cannot be resolved at 90m?",
+    "options": [
+      "A) The river channel",
+      "B) The floodplain",
+      "C) Engineered levees (5-10m wide)",
+      "D) The surrounding hills"
+    ],
+    "correct": "C",
+    "explanation": "Levees are 5-10m wide, narrower than a 90m cell, so they cannot be resolved."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcticDEM is provided by:",
+    "options": [
+      "A) NASA",
+      "B) Polar Geospatial Center",
+      "C) Copernicus",
+      "D) USGS"
+    ],
+    "correct": "B",
+    "explanation": "ArcticDEM at 2m resolution is provided by the Polar Geospatial Center."
+  },
+  {
+    "type": "mcq",
+    "question": "Which precipitation dataset has the longest temporal extent?",
+    "options": [
+      "A) GPM/IMERG (since 2000)",
+      "B) ERA5 (since 1940)",
+      "C) Rain gauge network (~100 years)",
+      "D) CHIRPS (since 1981)"
+    ],
+    "correct": "C",
+    "explanation": "Hungary's rain gauge network has ~100 years of data (since ~1901), the longest temporal extent."
+  },
+  {
+    "type": "mcq",
+    "question": "Resampling a 90m DEM to 10m cells creates:",
+    "options": [
+      "A) True 10m resolution data",
+      "B) A 10m grid with 90m information content",
+      "C) More accurate elevation values",
+      "D) New measured data points"
+    ],
+    "correct": "B",
+    "explanation": "Resampling does not create new information. The grid has 10m cells but 90m information content."
+  },
+  {
+    "type": "mcq",
+    "question": "The spatial support of an ERA5 grid cell is approximately:",
+    "options": [
+      "A) 1 km²",
+      "B) ~100 km²",
+      "C) ~961 km²",
+      "D) ~10,000 km²"
+    ],
+    "correct": "C",
+    "explanation": "ERA5 grid cells are ~31 km on a side, so support ≈ 961 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "What is ALOS AW3D30?",
+    "options": [
+      "A) A radar-derived DSM",
+      "B) A 30m global DSM from optical stereo (JAXA)",
+      "C) A LiDAR DEM",
+      "D) A contour-interpolated model"
+    ],
+    "correct": "B",
+    "explanation": "ALOS AW3D30 is a 30m global DSM derived from optical stereo imagery by JAXA."
+  },
+  {
+    "type": "mcq",
+    "question": "In the scale triplet, what determines the level of spatial detail that can be resolved?",
+    "options": [
+      "A) Extent",
+      "B) Spacing",
+      "C) Support",
+      "D) Accuracy"
+    ],
+    "correct": "B",
+    "explanation": "Spacing (distance between samples) determines the level of detail; features smaller than ~2× spacing are aliased."
+  },
+  {
+    "type": "mcq",
+    "question": "What format uses HTTP range requests for efficient cloud access?",
+    "options": [
+      "A) ASCII Grid",
+      "B) NetCDF",
+      "C) Cloud-Optimized GeoTIFF (COG)",
+      "D) ESRI Grid"
+    ],
+    "correct": "C",
+    "explanation": "COGs are organized so clients can issue HTTP range requests to download only needed tiles."
+  },
+  {
+    "type": "mcq",
+    "question": "A 32-bit floating-point grid requires how many bytes per cell?",
+    "options": [
+      "A) 1 byte",
+      "B) 2 bytes",
+      "C) 4 bytes",
+      "D) 8 bytes"
+    ],
+    "correct": "C",
+    "explanation": "32-bit = 4 bytes per cell."
+  },
+  {
+    "type": "mcq",
+    "question": "Which compression types does GeoTIFF support?",
+    "options": [
+      "A) LZW only",
+      "B) LZW, Deflate, ZSTD",
+      "C) No compression",
+      "D) JPEG only"
+    ],
+    "correct": "B",
+    "explanation": "GeoTIFF supports LZW, Deflate, and ZSTD compression without data loss."
+  },
+  {
+    "type": "mcq",
+    "question": "For dense tropical forests, which DEM is recommended?",
+    "options": [
+      "A) SRTM",
+      "B) Copernicus GLO-30",
+      "C) MERIT DEM",
+      "D) ASTER GDEM"
+    ],
+    "correct": "C",
+    "explanation": "MERIT DEM's vegetation bias correction is essential for densely forested tropical regions."
+  },
+  {
+    "type": "mcq",
+    "question": "A raster line feature has an implicit minimum width of:",
+    "options": [
+      "A) Half a cell",
+      "B) One cell",
+      "C) Two cells",
+      "D) Three cells"
+    ],
+    "correct": "B",
+    "explanation": "A rasterized line is always at least one cell wide regardless of the true feature width."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the anchor point of a grid specify?",
+    "options": [
+      "A) The center of the grid",
+      "B) The coordinates of a reference corner",
+      "C) The NODATA value",
+      "D) The data type"
+    ],
+    "correct": "B",
+    "explanation": "The anchor point specifies coordinates of a reference corner (typically lower-left or upper-left)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the cell size of GPM/IMERG precipitation data?",
+    "options": [
+      "A) 1 km",
+      "B) ~10 km (0.1 degree)",
+      "C) ~31 km",
+      "D) 50 km"
+    ],
+    "correct": "B",
+    "explanation": "GPM/IMERG has ~10 km (0.1 degree) spatial spacing."
+  },
+  {
+    "type": "mcq",
+    "question": "A floating-point grid does NOT have a:",
+    "options": [
+      "A) NODATA value",
+      "B) Cell size",
+      "C) Value Attribute Table (VAT)",
+      "D) Coordinate system"
+    ],
+    "correct": "C",
+    "explanation": "Floating-point grids don't have VATs because every cell potentially holds a unique value."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza River is Hungary's _____ largest river.",
+    "options": [
+      "A) Largest",
+      "B) Second-largest",
+      "C) Third-largest",
+      "D) Fourth-largest"
+    ],
+    "correct": "B",
+    "explanation": "The Tisza is Hungary's second-largest river after the Danube."
+  },
+  {
+    "type": "mcq",
+    "question": "The great Tisza floods mentioned occurred in which years?",
+    "options": [
+      "A) 1850, 1920, 1980, 2010",
+      "B) 1879, 1970, 2001, 2006",
+      "C) 1900, 1950, 2000, 2020",
+      "D) 1890, 1960, 1990, 2015"
+    ],
+    "correct": "B",
+    "explanation": "The chapter mentions the great Tisza floods of 1879, 1970, 2001, and 2006."
+  },
+  {
+    "type": "mcq",
+    "question": "What does ASTER GDEM stand for?",
+    "options": [
+      "A) Advanced Satellite Terrain Elevation and Radar Global DEM",
+      "B) Advanced Spaceborne Thermal Emission and Reflection Radiometer Global DEM",
+      "C) Automated Surface Terrain Extraction and Resampling Global DEM",
+      "D) Atmospheric Science Terrain Elevation Research Global DEM"
+    ],
+    "correct": "B",
+    "explanation": "ASTER = Advanced Spaceborne Thermal Emission and Reflection Radiometer."
+  },
+  {
+    "type": "mcq",
+    "question": "What percentage of the US has 1m LiDAR coverage through 3DEP?",
+    "options": [
+      "A) ~50%",
+      "B) ~65%",
+      "C) ~85%",
+      "D) 100%"
+    ],
+    "correct": "C",
+    "explanation": "USGS 3DEP 1m LiDAR covers ~85% of the US and is growing."
+  },
+  {
+    "type": "mcq",
+    "question": "Which file format stores data as a directory rather than a single file?",
+    "options": [
+      "A) GeoTIFF",
+      "B) NetCDF",
+      "C) ESRI Grid",
+      "D) GeoPackage"
+    ],
+    "correct": "C",
+    "explanation": "ESRI Grid stores data as a directory of binary files, not a single file."
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN is more computationally efficient than a regular grid for large-scale hydrological analysis.",
+    "correct": false,
+    "explanation": "Regular grids are computationally simpler and faster. TIN-based algorithms are more complex and less mature for hydrology."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus GLO-30 has largely superseded SRTM for new hydrological projects.",
+    "correct": true,
+    "explanation": "GLO-30 has better accuracy and more recent acquisition dates, making it preferable for new work."
+  },
+  {
+    "type": "true_false",
+    "question": "Resampling a coarse DEM to finer resolution creates new topographic information.",
+    "correct": false,
+    "explanation": "Resampling does not create new information; it merely interpolates existing coarse values."
+  },
+  {
+    "type": "true_false",
+    "question": "NODATA and zero are the same thing in raster analysis.",
+    "correct": false,
+    "explanation": "NODATA means 'no information'; zero is a valid measurement (e.g., zero precipitation means no rain)."
+  },
+  {
+    "type": "true_false",
+    "question": "Bloschl's scale triplet was formalized in 1995.",
+    "correct": true,
+    "explanation": "Gunter Bloschl formalized the scale triplet (extent, spacing, support) in 1995."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian DDM-5 is a digital surface model (DSM).",
+    "correct": false,
+    "explanation": "DDM-5 is a true ground model (DTM) derived from contour lines and photogrammetry."
+  },
+  {
+    "type": "true_false",
+    "question": "A 32-bit float provides approximately 15 significant digits.",
+    "correct": false,
+    "explanation": "32-bit float provides ~7 significant digits. 64-bit float provides ~15."
+  },
+  {
+    "type": "true_false",
+    "question": "NetCDF is the standard format for climate and weather data.",
+    "correct": true,
+    "explanation": "ERA5, E-OBS, CARPATCLIM, and most weather model output use NetCDF."
+  },
+  {
+    "type": "true_false",
+    "question": "The MERIT DEM was developed at MIT.",
+    "correct": false,
+    "explanation": "MERIT DEM was developed by Dai Yamazaki at the University of Tokyo."
+  },
+  {
+    "type": "true_false",
+    "question": "An 8-bit unsigned integer can represent values from 0 to 255.",
+    "correct": true,
+    "explanation": "8-bit unsigned: 2⁸ = 256 values, range 0-255."
+  },
+  {
+    "type": "true_false",
+    "question": "The contour-flowline model achieved widespread adoption in commercial GIS.",
+    "correct": false,
+    "explanation": "It never achieved widespread adoption and remains a research tool."
+  },
+  {
+    "type": "true_false",
+    "question": "In raster analysis, NODATA propagates: if any input is NODATA, output is NODATA.",
+    "correct": true,
+    "explanation": "This is the fundamental NODATA propagation rule in map algebra."
+  },
+  {
+    "type": "true_false",
+    "question": "Bilinear interpolation is appropriate for resampling categorical land cover data.",
+    "correct": false,
+    "explanation": "Bilinear creates meaningless intermediate values for categories. Nearest-neighbor is appropriate."
+  },
+  {
+    "type": "true_false",
+    "question": "The anchor point convention is identical across all raster formats.",
+    "correct": false,
+    "explanation": "Some formats use lower-left (ASCII grid), others upper-left (GeoTIFF), creating potential alignment issues."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF supports internal compression without data loss.",
+    "correct": true,
+    "explanation": "GeoTIFF supports lossless compression (LZW, Deflate, ZSTD) reducing sizes by 50-80%."
+  },
+  {
+    "type": "true_false",
+    "question": "Cell indexing in a raster grid starts from the lower-left corner.",
+    "correct": false,
+    "explanation": "Cells are typically indexed from the upper-left, with rows increasing downward."
+  },
+  {
+    "type": "true_false",
+    "question": "The SRTM dataset was collected in 2010.",
+    "correct": false,
+    "explanation": "SRTM data was collected in February 2000."
+  },
+  {
+    "type": "true_false",
+    "question": "A 16-bit signed integer can represent elevation values up to 32,767 metres.",
+    "correct": true,
+    "explanation": "16-bit signed range: -32,768 to 32,767, adequate for most land elevations."
+  },
+  {
+    "type": "true_false",
+    "question": "LiDAR can penetrate vegetation canopy to measure ground elevation.",
+    "correct": true,
+    "explanation": "LiDAR penetrates canopy, making LiDAR-derived products true bare-earth DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza floodplain between Szolnok and Szeged changes by about 100 metres in elevation.",
+    "correct": false,
+    "explanation": "The elevation changes by only about 10 metres over ~200 km of river distance."
+  },
+  {
+    "type": "true_false",
+    "question": "COGs have become the standard distribution format for large cloud raster datasets.",
+    "correct": true,
+    "explanation": "Copernicus DEM, USGS 3DEP, and major cloud platforms all use COGs."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM GLO-30 is available only for purchase.",
+    "correct": false,
+    "explanation": "Copernicus GLO-30 is freely available worldwide."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM ideally represents the bare earth without buildings or vegetation.",
+    "correct": true,
+    "explanation": "A DEM should represent bare earth; a DSM includes surface objects."
+  },
+  {
+    "type": "true_false",
+    "question": "GPS receivers natively measure orthometric heights.",
+    "correct": false,
+    "explanation": "GPS natively measures ellipsoidal heights, which must be converted using a geoid model."
+  },
+  {
+    "type": "true_false",
+    "question": "Each tenfold decrease in cell size produces a hundredfold increase in data volume.",
+    "correct": true,
+    "explanation": "Data volume scales as inverse square of cell size: 10× finer = 100× more cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian rain gauge network has been operating since approximately 1901.",
+    "correct": true,
+    "explanation": "The scale triplet table shows ~100 years of data since 1901 for the OVF gauge network."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 smooths out small-scale precipitation variability.",
+    "correct": true,
+    "explanation": "ERA5's large support (~961 km²) smooths variability but provides complete gap-free fields."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus EEA-10 is a true bare-earth DEM.",
+    "correct": false,
+    "explanation": "EEA-10 is a DSM derived from TanDEM-X, not a true bare-earth model."
+  },
+  {
+    "type": "true_false",
+    "question": "Floating-point grids have Value Attribute Tables (VATs).",
+    "correct": false,
+    "explanation": "Only integer grids can have VATs; floating-point values are potentially all unique."
+  },
+  {
+    "type": "true_false",
+    "question": "The D8 flow direction is stored as an integer grid.",
+    "correct": true,
+    "explanation": "D8 uses 8 integer values (1,2,4,8,16,32,64,128) representing the 8 directions."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS provides coverage only for land between 60°N and 60°S.",
+    "correct": true,
+    "explanation": "HydroSHEDS derivatives are available between 60°N and 56°S (SRTM coverage)."
+  },
+  {
+    "type": "true_false",
+    "question": "A raster is always rectangular in shape.",
+    "correct": true,
+    "explanation": "A grid is always rectangular; irregular study areas use NODATA for cells outside the boundary."
+  },
+  {
+    "type": "true_false",
+    "question": "Cubic convolution can produce values outside the input data range.",
+    "correct": true,
+    "explanation": "Cubic convolution can overshoot, producing values slightly beyond the input range."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Data Space distributes DEM data as COGs.",
+    "correct": true,
+    "explanation": "The Copernicus DEM is distributed as Cloud-Optimized GeoTIFFs."
+  },
+  {
+    "type": "true_false",
+    "question": "At 1m resolution, the difference between spatial average and center-point interpretations is negligible.",
+    "correct": true,
+    "explanation": "At 1m, the difference across a 1 m² cell is negligible; at 90m in rugged terrain, it can be significant."
+  },
+  {
+    "type": "true_false",
+    "question": "STAC stands for SpatioTemporal Asset Catalog.",
+    "correct": true,
+    "explanation": "STAC enables efficient discovery and access of cloud-hosted raster datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "For small watersheds under 10 km², DEM resolution can affect computed area by over 20%.",
+    "correct": true,
+    "explanation": "For very small catchments, coarse DEMs can cause >20% area discrepancy vs fine DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "ASCII grid files are more storage-efficient than GeoTIFF for large datasets.",
+    "correct": false,
+    "explanation": "ASCII is 3-10× larger than binary formats; GeoTIFF with compression is much more efficient."
+  },
+  {
+    "type": "true_false",
+    "question": "The HydroRIVERS dataset provides a global stream network.",
+    "correct": true,
+    "explanation": "HydroRIVERS is part of HydroSHEDS providing global vectorized stream networks."
+  },
+  {
+    "type": "true_false",
+    "question": "The regular grid's main weakness is its inflexibility — all cells are the same size.",
+    "correct": true,
+    "explanation": "Flat plains and complex valleys receive the same resolution, wasting storage or losing detail."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM with value -9999 for NODATA could cause errors if actual elevation is -9999.",
+    "correct": true,
+    "explanation": "If legitimate values match the NODATA sentinel, those cells are incorrectly treated as missing."
+  },
+  {
+    "type": "true_false",
+    "question": "The trend in 2026 is toward database-centric raster management.",
+    "correct": false,
+    "explanation": "The trend is away from database-centric toward cloud-native raster services (COGs, STAC APIs)."
+  },
+  {
+    "type": "true_false",
+    "question": "ALOS AW3D30 is derived from optical stereo imagery.",
+    "correct": true,
+    "explanation": "JAXA's ALOS AW3D30 uses optical stereo imagery for its 30m DSM."
+  },
+  {
+    "type": "true_false",
+    "question": "Orthometric heights are referenced to a mathematical ellipsoid.",
+    "correct": false,
+    "explanation": "Orthometric heights reference the geoid (mean sea level). Ellipsoidal heights reference the ellipsoid."
+  },
+  {
+    "type": "true_false",
+    "question": "The original SRTM had voids in mountainous terrain.",
+    "correct": true,
+    "explanation": "Radar shadows and steep slopes caused voids especially in the Himalayas, Andes, and Alps."
+  },
+  {
+    "type": "true_false",
+    "question": "Rasters stored in file geodatabases can be accessed directly by QGIS.",
+    "correct": false,
+    "explanation": "QGIS support for raster content within .gdb files is limited; export as GeoTIFF is recommended."
+  },
+  {
+    "type": "true_false",
+    "question": "For a 10,000 km² watershed, a 1 km DEM contains approximately 10,000 cells.",
+    "correct": true,
+    "explanation": "At 1 km resolution, each cell covers 1 km², so 10,000 km² = 10,000 cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND (Height Above Nearest Drainage) is stored as a floating-point grid.",
+    "correct": true,
+    "explanation": "HAND values are continuous and non-negative, requiring floating-point representation."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS provides gridded observations at 0.1 degree for Europe.",
+    "correct": true,
+    "explanation": "E-OBS is a European gridded observational dataset at 0.1 degree daily resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "In the scale triplet, when support is large relative to spacing, data is under-sampled.",
+    "correct": false,
+    "explanation": "Large support relative to spacing means over-smoothed (not under-sampled). Small support relative to spacing is under-sampled."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF supports multiple bands in a single file.",
+    "correct": true,
+    "explanation": "Multi-band support allows storing DEM + slope + aspect in one file."
+  },
+  {
+    "type": "true_false",
+    "question": "A 5m DEM can resolve the Tisza flood levees as distinct features.",
+    "correct": true,
+    "explanation": "At 5m, levees (5-10m wide) begin to appear as distinct linear features."
+  },
+  {
+    "type": "true_false",
+    "question": "Raster names in a file geodatabase are limited to 13 characters.",
+    "correct": false,
+    "explanation": "That 13-character limit applies to ESRI Grid format. File geodatabase names can be much longer."
+  },
+  {
+    "type": "true_false",
+    "question": "Watershed area from 90m DEM may differ from 10m DEM by 5-15% for small watersheds.",
+    "correct": true,
+    "explanation": "For watersheds under 100 km², discrepancies of 5-15% are common between 90m and 10m DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza River flows through eastern Hungary.",
+    "correct": true,
+    "explanation": "The Tisza River and its floodplain are in eastern Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "COGs require downloading the entire file before any data can be accessed.",
+    "correct": false,
+    "explanation": "COGs allow HTTP range requests to download only the needed tiles."
+  },
+  {
+    "type": "true_false",
+    "question": "Vegetation bias in global DEMs can add 20-30 metres of apparent elevation in tropical forests.",
+    "correct": true,
+    "explanation": "Dense tropical forest canopy causes 20-30m elevation bias in DSMs like SRTM."
+  },
+  {
+    "type": "true_false",
+    "question": "File geodatabases can handle individual rasters up to 1 TB.",
+    "correct": true,
+    "explanation": "File geodatabases support rasters up to 1 TB with compression."
+  },
+  {
+    "type": "true_false",
+    "question": "The primary SRTM vertical datum was originally EGM96.",
+    "correct": true,
+    "explanation": "SRTM originally used EGM96 but has been converted to EGM2008 in most distributions."
+  },
+  {
+    "type": "true_false",
+    "question": "NAVD88 is the vertical datum used in Hungary.",
+    "correct": false,
+    "explanation": "Hungary uses the Baltic Height System. NAVD88 is used in the United States."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three principal methods for representing continuous surfaces are regular grid, TIN, and the _____-flowline model.",
+    "correct": "contour",
+    "explanation": "Contour-flowline model was developed in Australia in the 1970s-80s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bloschl's scale triplet consists of extent, spacing, and _____.",
+    "correct": "support",
+    "explanation": "Support is the area/duration over which each measurement is representative."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cell value of NODATA means no _____ measurement exists at that cell.",
+    "correct": "valid",
+    "explanation": "NODATA indicates absence of valid data, distinct from zero."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The foundational flow direction algorithms by O'Callaghan and Mark were published in _____.",
+    "correct": "1984",
+    "explanation": "O'Callaghan and Mark (1984) developed drainage network extraction from DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The six elements defining a grid are extent, cell size, rows/columns, anchor point, data type, and _____.",
+    "correct": "NODATA",
+    "explanation": "These six elements completely specify any grid data structure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM ideally represents the bare _____ surface.",
+    "correct": "earth",
+    "explanation": "A DEM represents ground surface, stripped of buildings and vegetation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian DDM-5 is provided by the _____ Knowledge Centre.",
+    "correct": "Lechner",
+    "explanation": "Lechner provides Hungary's 5m national DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM stands for Shuttle Radar _____ Mission.",
+    "correct": "Topography",
+    "explanation": "Shuttle Radar Topography Mission, data collected February 2000."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Nyquist theorem requires at least _____ samples per feature width.",
+    "correct": "two",
+    "explanation": "Below this threshold, features are aliased (misrepresented or invisible)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's official vertical datum is the _____ Height System.",
+    "correct": "Baltic",
+    "explanation": "Also called Kronstadt 1902, EPSG:5787."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The MERIT DEM was developed by Dai _____ at the University of Tokyo.",
+    "correct": "Yamazaki",
+    "explanation": "Yamazaki removed major error components from spaceborne DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Goodchild (1997) formalized _____ interpretations of raster cell values.",
+    "correct": "three",
+    "explanation": "Spatial average, center point sample, and grid node interpretations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus DEM uses the _____ geoid model for vertical reference.",
+    "correct": "EGM2008",
+    "explanation": "EGM2008 is the vertical reference for Copernicus DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Floating-point grids do not have a Value _____ Table.",
+    "correct": "Attribute",
+    "explanation": "Only integer grids have VATs because their values form a finite set."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cloud-Optimized GeoTIFF enables efficient access via HTTP _____ requests.",
+    "correct": "range",
+    "explanation": "HTTP range requests allow downloading only needed tiles."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The D8 algorithm stores flow direction as one of _____ possible integer values.",
+    "correct": "eight",
+    "explanation": "Values 1,2,4,8,16,32,64,128 represent the eight cardinal/diagonal directions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raster grid is always _____ in shape.",
+    "correct": "rectangular",
+    "explanation": "Irregular areas use NODATA for cells outside the study boundary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Going from 90m to 10m resolution increases cells by a factor of _____.",
+    "correct": "81",
+    "explanation": "(90/10)² = 81 times more cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the total geographic area covered by a grid.",
+    "correct": "extent",
+    "explanation": "Defined by bounding coordinates: xmin, ymin, xmax, ymax."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS receivers natively measure _____ heights, not orthometric heights.",
+    "correct": "ellipsoidal",
+    "explanation": "Ellipsoidal heights must be corrected using a geoid model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The geoid undulation in Hungary varies from approximately _____ to 46 metres.",
+    "correct": "40",
+    "explanation": "40-46 metres of difference between WGS84 ellipsoid and Baltic datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASCII grid files store values as _____ (character strings), making them inefficient.",
+    "correct": "text",
+    "explanation": "Text representation is 3-10x larger than binary format equivalents."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza is Hungary's _____-largest river.",
+    "correct": "second",
+    "explanation": "After the Danube."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell values stored as 32-bit float require _____ bytes per cell.",
+    "correct": "4",
+    "explanation": "32 bits = 4 bytes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ dataset provides 12 levels of nested watershed boundaries globally.",
+    "correct": "HydroBASINS",
+    "explanation": "Part of the HydroSHEDS family."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Halving the cell size _____ the number of cells.",
+    "correct": "quadruples",
+    "explanation": "Inverse square relationship: (2)² = 4x more cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ rule in rasterization assigns cell value based on the cell center's position.",
+    "correct": "center point",
+    "explanation": "Simple and fast but can misrepresent cells at polygon boundaries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM data was collected in February _____.",
+    "correct": "2000",
+    "explanation": "February 2000 was the SRTM collection period."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NetCDF stands for Network Common Data _____.",
+    "correct": "Form",
+    "explanation": "Self-describing, machine-independent file format for multi-dimensional data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ dataset in ArcGIS Pro catalogs multiple raster tiles as a single logical layer.",
+    "correct": "mosaic",
+    "explanation": "Mosaics reference tiles and assemble them dynamically."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus _____ DEM provides 10m resolution for 39 European countries.",
+    "correct": "EEA-10",
+    "explanation": "European Environment Agency 10m DEM from TanDEM-X."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Tisza example, the 19th-century river regulation is called 'Tisza _____'.",
+    "correct": "szabályozás",
+    "explanation": "The great Tisza regulation that built the engineered levee system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASTER GDEM v3 covers _____ N to 83°S latitude.",
+    "correct": "83°",
+    "explanation": "Near-global coverage from 83°N to 83°S."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ precipitation product has the finest spatial spacing at ~10 km.",
+    "correct": "GPM/IMERG",
+    "explanation": "GPM/IMERG: 0.1 degree (~10 km) every 30 minutes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In a grid, row index increases _____ and column index increases to the right.",
+    "correct": "downward",
+    "explanation": "Matches computer memory and image format conventions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ is the distance between successive data values in the scale triplet.",
+    "correct": "spacing",
+    "explanation": "For grids, spacing = cell size; for gauge networks, average inter-gauge distance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus GLO-30 vertical accuracy is less than _____ metres (LE90).",
+    "correct": "4",
+    "explanation": "<4m LE90 is better than SRTM's ~6-9m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tarboton's D-_____ flow direction scheme stores angles as floating-point values.",
+    "correct": "infinity",
+    "explanation": "D-infinity (1997) allows continuous flow direction between 0 and 2π."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM that includes building rooftops and tree canopy is called a digital _____ model.",
+    "correct": "surface",
+    "explanation": "DSM includes surface objects; DEM/DTM represents bare earth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ grid format is ESRI's legacy proprietary raster stored as a directory.",
+    "correct": "ESRI Grid",
+    "explanation": "Limited to 13-character names, no file extension."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, the DDM-5 uses the _____ Height System for vertical reference.",
+    "correct": "Baltic",
+    "explanation": "DDM-5 uses the Hungarian national Baltic vertical datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The scale triplet helps diagnose three pitfalls: aliasing, apparent _____, and smoothing.",
+    "correct": "trends",
+    "explanation": "Limited extent can make cyclical patterns appear as monotonic trends."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ precipitation dataset provides hourly reanalysis globally since 1940.",
+    "correct": "ERA5",
+    "explanation": "ERA5 from ECMWF: 0.25 degree, hourly, 1940-present."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 30m DEM of Hungary requires approximately _____ million cells.",
+    "correct": "100",
+    "explanation": "Hungary ~93,000 km² at 30m ≈ 100 million cells (several GB)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For flat river deltas, the recommended DEM source is local _____.",
+    "correct": "LiDAR",
+    "explanation": "Global DEMs lack precision in flat terrain; LiDAR provides needed detail."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NODATA propagation means if any input cell is NODATA, the _____ cell is also NODATA.",
+    "correct": "output",
+    "explanation": "Fundamental rule preventing computation from incomplete data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the footprint over which each measurement is representative.",
+    "correct": "support",
+    "explanation": "Third component of Bloschl's scale triplet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 90m DEM cannot represent a _____ channel narrower than one cell.",
+    "correct": "stream",
+    "explanation": "Features smaller than cell size are aliased or invisible."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza floodplain elevation changes only about _____ metres over 200 km of river.",
+    "correct": "10",
+    "explanation": "Remarkably flat terrain requiring high-resolution DEMs for flood mapping."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Raster _____ in geodatabases cannot be stored inside feature datasets.",
+    "correct": "datasets",
+    "explanation": "Must reside at the top level of the geodatabase."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The trend in 2026 is toward cloud-_____ raster services.",
+    "correct": "native",
+    "explanation": "COGs on cloud storage served via STAC APIs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ project at McGill University/WWF provides pre-processed global hydrological data.",
+    "correct": "HydroSHEDS",
+    "explanation": "Flow direction, accumulation, basins, rivers from SRTM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An 8-bit unsigned integer can represent values from 0 to _____.",
+    "correct": "255",
+    "explanation": "2⁸ = 256 values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoTIFF stores coordinate system information as special '_____ ' in the header.",
+    "correct": "GeoKeys",
+    "explanation": "GeoKeys embed CRS, cell size, extent in the TIFF header."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ from the Tisza regulation are typically 5-10 metres wide.",
+    "correct": "levees",
+    "explanation": "Engineered levees from the 19th-century Tisza regulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Jenson and _____ (1988) contributed foundational work on flow direction algorithms.",
+    "correct": "Domingue",
+    "explanation": "Jenson and Domingue (1988) on extracting topographic structure for GIS analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ convolution resampling method uses a 4×4 neighborhood.",
+    "correct": "cubic",
+    "explanation": "Cubic convolution fits a third-degree polynomial through 16 surrounding cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For continental hydrology, _____ to 1 km resolution is typically appropriate.",
+    "correct": "90-metre",
+    "explanation": "90m-1km resolution for large-scale water balance and drainage analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ALOS AW3D30 is provided by _____ (Japan Aerospace Exploration Agency).",
+    "correct": "JAXA",
+    "explanation": "JAXA produces the ALOS World 3D 30m DSM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A grid's number of cells equals _____ multiplied by columns.",
+    "correct": "rows",
+    "explanation": "Total cells = nrows × ncols."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the single most important parameter of a grid for analytical purposes.",
+    "correct": "cell size",
+    "explanation": "Determines spatial detail, data volume, processing time, and appropriateness."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HDF5 stands for Hierarchical Data Format version _____.",
+    "correct": "5",
+    "explanation": "Used by NASA for satellite data; NetCDF4 is built on HDF5."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bloschl's scale triplet was formalized in _____.",
+    "correct": "1995",
+    "explanation": "Gunter Bloschl at the Technical University of Vienna."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The xllcorner header in ASCII grid specifies the _____ coordinate of the lower-left corner.",
+    "correct": "x",
+    "explanation": "xllcorner and yllcorner specify the lower-left corner position."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A grid whose x-extent spans 16-23 and y-extent spans 45.5-48.5 is in _____ coordinates.",
+    "correct": "geographic",
+    "explanation": "Values in degrees indicate geographic (lat/lon) coordinates, likely WGS84 for Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NODATA value -32768 is the minimum value for a 16-bit _____ integer.",
+    "correct": "signed",
+    "explanation": "16-bit signed integer range: -32,768 to 32,767."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precipitation fields vary on scales of _____, so 100m grids add no real information vs 1 km.",
+    "correct": "kilometres",
+    "explanation": "Rainfall varies slowly; 100m precipitation has same information as 1 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Raster formats compared in Table 5.6: ASCII Grid, GeoTIFF, COG, NetCDF, and ESRI _____.",
+    "correct": "Grid",
+    "explanation": "Five raster formats compared for hydrological applications."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the regular grid dominates hydrological GIS over TINs and contour-flowline models.",
+    "correct": "Regular grids dominate because: (1) algorithms for flow direction, accumulation, and delineation were developed for grids in the 1980s-90s; (2) remote sensing data is naturally gridded; (3) cell-by-cell operations are trivially parallelizable; (4) modern computing has eliminated storage disadvantages. TIN algorithms exist but are less mature, and contour-flowline models lack standard implementations.",
+    "explanation": "Sections 5.1.1-5.1.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the six defining elements of a grid data structure.",
+    "correct": "(1) Extent: bounding coordinates. (2) Cell size: resolution. (3) Rows and columns: dimensions. (4) Anchor point: reference corner coordinates. (5) Data type: integer or float. (6) NODATA value: sentinel for missing data. Together these completely specify any grid.",
+    "explanation": "Section 5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Bloschl's scale triplet and its importance for assessing data fitness.",
+    "correct": "The scale triplet: Extent (total coverage), Spacing (distance between measurements), Support (footprint per measurement). No single dataset is 'best' — fitness depends on matching the triplet to the phenomenon. Rain gauges have point support but long extent; ERA5 has large support (961 km²) smoothing storms; GPM has finest spacing. The framework diagnoses aliasing, apparent trends, and smoothing.",
+    "explanation": "Section 5.7."
+  },
+  {
+    "type": "essay",
+    "question": "Compare DSMs and true DEMs and explain why the distinction matters for hydrology.",
+    "correct": "A DEM represents bare earth; a DSM includes buildings/vegetation. SRTM and Copernicus are DSMs (radar reflects off canopy). LiDAR and contour-derived products are true DEMs. For hydrology, DSMs distort flow direction in forested valleys (canopy adds 20-30m). The distinction is critical: using a DSM as a DEM produces incorrect drainage patterns.",
+    "explanation": "Section 5.8.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the three-tier DEM availability (US, Hungary/EU, Global) with specific products.",
+    "correct": "US: 3DEP 10m (LiDAR) and 1m (85% coverage). Hungary: DDM-5 (5m, true DTM, from Lechner). EU: Copernicus EEA-10 (10m, 39 countries). Global: Copernicus GLO-30 (<4m accuracy), SRTM (30m, year 2000), MERIT DEM (90m, corrected). Copernicus GLO-30 is the new standard; MERIT for large-scale modeling.",
+    "explanation": "Section 5.8.2 and Table 5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between orthometric and ellipsoidal heights and why it matters.",
+    "correct": "Orthometric heights reference the geoid (mean sea level); ellipsoidal heights reference the mathematical ellipsoid. GPS measures ellipsoidal heights. In Hungary, the difference (geoid undulation) is 40-46m. Without correction, GPS elevations are 40-46m too high. When combining DEMs with different datums, systematic biases occur.",
+    "explanation": "Section 5.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how cell size affects watershed delineation accuracy for small vs large watersheds.",
+    "correct": "For small watersheds (<100 km²), 90m DEMs may differ from 10m by 5-15% in area. For very small (<10 km²), errors exceed 20%. This is because watershed divides are ridgeline features near the cell size scale. For large watersheds (>1,000 km²), the effect is negligible (fraction of a percent). Use finest resolution for small catchments; coarser acceptable for large.",
+    "explanation": "Section 5.9.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three interpretations of raster cell values formalized by Goodchild.",
+    "correct": "(1) Spatial average over cell footprint: value represents the mean across the cell area. (2) Point sample at cell center: value at the center point only. (3) Grid node (cell corners): values at intersections. The interpretation determines appropriate resampling: bilinear for spatial averages, nearest-neighbor for point samples of categorical data.",
+    "explanation": "Section 5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the four major raster formats for hydrological work: ASCII Grid, GeoTIFF, COG, NetCDF.",
+    "correct": "ASCII Grid: human-readable, teaching tool, but inefficient for large data. GeoTIFF: universal standard, compression, self-describing, recommended default. COG: GeoTIFF organized for cloud streaming via HTTP range requests. NetCDF: multi-dimensional (space+time), essential for climate data. Each serves a niche; GeoTIFF is the default for single-time-step data.",
+    "explanation": "Section 5.10 and Table 5.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why resampling to finer resolution does not create new information.",
+    "correct": "Resampling interpolates between existing values without measuring new data points. A 90m DEM resampled to 10m has 81× more cells but 90m information content. The interpolated values are predictions, not measurements. A 10m channel hidden by 90m averaging cannot be recovered. This is why output cell size should not be finer than the coarsest input.",
+    "explanation": "Section 5.9.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Tisza floodplain example illustrates the importance of DEM resolution.",
+    "correct": "The Tisza floodplain is extremely flat (10m elevation change over 200 km) with subtle features (levees 5-10m wide, 3-5m high, oxbow lakes). At 90m: featureless. At 30m: channel emerges. At 5m: levees and oxbows visible. At 1m: full engineering detail. Resolution must match the question: regional risk (30m), operational forecast (5m), engineering (1m).",
+    "explanation": "Section 5.12."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of aliasing in raster data with hydrological examples.",
+    "correct": "Aliasing occurs when spacing is too coarse for features. A 15m-wide stream in a 30m DEM disappears — the cell blends channel bottom with floodplain. A rain gauge network with 50 km spacing misses 5-10 km convective storms. Aliased features are not just missing — they may be misrepresented. This motivates finer DEMs and radar/satellite precipitation.",
+    "explanation": "Sections 5.7.2 and 5.7.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the MERIT DEM and why it is preferred for continental/global hydrological modeling.",
+    "correct": "MERIT removes stripe noise, absolute bias, speckle noise, and tree height bias from spaceborne DEMs, producing cleaner 90m elevation. For large-scale modeling, these corrections directly improve flow direction and watershed boundary quality. Preferred over raw SRTM/ASTER for continental work. Developed by Yamazaki at University of Tokyo.",
+    "explanation": "Section 5.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of NODATA values and common pitfalls.",
+    "correct": "NODATA marks cells with no valid data. It serves four functions: irregular areas within rectangular extents, missing measurements, water bodies, and computational exclusion (propagation through calculations). Pitfalls: legitimate values matching the sentinel, or sentinel not recorded in metadata. Both cause silent errors in averages and analyses.",
+    "explanation": "Section 5.2.6."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical exercise of building a grid by hand in ASCII format.",
+    "correct": "A 7×5 grid with 10m cells can represent a valley: outer columns ~120m (upland), intermediate ~108-116m (valley walls), center ~103-104m (channel). The slight row variation gives longitudinal slope. This miniature example captures the essential geometry of a real river valley. It's exactly what a 30m DEM does for the Tisza floodplain at massive scale.",
+    "explanation": "Section 5.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare floating-point and integer grids with water resources examples.",
+    "correct": "Float: continuous quantities (elevation 217.34m, temperature 14.7°C, slope 0.0453). No VAT; visualized with color ramps. Integer: categorical data (land cover code 41=forest, flow direction 4=East). Has VAT linking codes to attributes and counts. The D8/D-infinity distinction illustrates: D8 is integer (8 values), D-infinity is float (continuous angle). Data type encodes assumptions.",
+    "explanation": "Section 5.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the scale triplet differs for rain gauges, ERA5, and GPM/IMERG.",
+    "correct": "Gauges: longest temporal extent (~100 years), finest temporal support, but point spatial support (~200 cm²) requiring interpolation. ERA5: complete gap-free spatial field, 961 km² support (smooths storms), hourly since 1940. GPM/IMERG: finest spacing (~10 km) and temporal (30 min), captures storm spatial structure, but only since 2000 with larger uncertainty. Each suits different analysis scales.",
+    "explanation": "Section 5.7.4 and Table 5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Copernicus GLO-30 has transformed global hydrological analysis.",
+    "correct": "GLO-30 provides free 30m global coverage with <4m accuracy, replacing SRTM as the standard. It has more recent acquisition (2011-2015 vs 2000), capturing landscape changes. Available as COGs for efficient cloud access. This democratizes hydrology: a water engineer in Africa has the same quality elevation data as one in Germany.",
+    "explanation": "Sections 5.8.2 and 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the ASCII grid file structure and its strengths and limitations.",
+    "correct": "Header: ncols, nrows, xllcorner, yllcorner, cellsize, NODATA_value. Body: values row-by-row, north to south. Strengths: human-readable, universally supported, self-documenting. Limitations: text storage is 3-10× larger than binary, slow to parse. Good for teaching and small tests; impractical for operational work.",
+    "explanation": "Section 5.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss resolution guidelines for different hydrological applications.",
+    "correct": "Global water balance: 1 km. Continental flood modeling: 90-250m. Watershed delineation: 10-30m. Urban flood mapping: 1-5m (LiDAR). Infrastructure design: <1m. Resolution must match both the phenomenon scale and the analysis purpose. Using unnecessarily fine resolution wastes computation; too coarse loses critical features.",
+    "explanation": "Section 5.9.2 and Table 5.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how cloud-native raster formats are changing GIS workflows in 2026.",
+    "correct": "COGs and STAC APIs enable accessing specific portions of large rasters without downloading entire files. Instead of finding/downloading tiles, users query STAC catalogs and stream needed data directly into GIS. The trend is away from database-centric management toward cloud-native services. This dramatically improves workflow efficiency for large-area analysis.",
+    "explanation": "Section 5.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between cell size, data volume, and processing time.",
+    "correct": "Data volume scales as inverse square of cell size: halving cell size quadruples cells. A 90m Hungary DEM: ~11.5M cells, ~50 MB. At 10m: 930M cells, several GB. At 1m: ~93B cells, terabytes. Processing time scales similarly. This makes cell size a design decision with practical consequences for every project.",
+    "explanation": "Section 5.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why bilinear interpolation is preferred for continuous data and nearest-neighbor for categorical.",
+    "correct": "Bilinear creates smooth transitions by weighted averaging of 4 neighbors — physically meaningful for continuous phenomena (elevation, temperature). Nearest-neighbor preserves original values exactly — essential for categorical data where 'land cover 21.5' is meaningless. Choosing wrong method: bilinear on land cover creates nonsensical categories; nearest-neighbor on elevation creates blocky artifacts.",
+    "explanation": "Section 5.3.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the democratization of hydrological analysis through free global DEMs.",
+    "correct": "Before 2000, many developing countries had no free DEM data finer than 1 km. Now, Copernicus GLO-30 provides 30m global coverage for free. The same analytical workflows (watershed delineation, flood mapping) work anywhere on Earth with free data and open-source software. However, global DSMs have vegetation bias and limited accuracy in flat terrain, requiring local LiDAR for critical applications.",
+    "explanation": "Section 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the vertical datum problem when combining DEMs in Hungary.",
+    "correct": "Hungary uses the Baltic Height System (Kronstadt 1902). Most global DEMs use EGM2008 geoid. The difference (geoid undulation) is 40-46m across Hungary. If GPS-measured ellipsoidal heights aren't corrected, elevations are 40-46m too high. When combining DDM-5 (Baltic datum) with Copernicus (EGM2008), systematic biases arise unless properly reconciled.",
+    "explanation": "Section 5.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Value Attribute Table (VAT) enables hydrological applications of land cover data.",
+    "correct": "A VAT links integer grid values to descriptive attributes and derived parameters. For land cover: VAT maps code 1→'arable land', 2→'forest', etc., with runoff coefficients per class. Reclassifying the grid using the runoff coefficient column assigns each cell its hydrological parameter based on land cover — the mechanism for spatially distributed model parameterization.",
+    "explanation": "Section 5.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the choice between D8 and D-infinity flow direction reflects different modeling assumptions.",
+    "correct": "D8 assumes water flows in exactly one of eight discrete directions — a simplifying assumption encoded as an integer grid. D-infinity allows continuous flow angles between 0 and 2π, distributing flow proportionally between neighbors — stored as float. D8 is simpler and standard in most tools; D-infinity better represents divergent flow on hillslopes. Data type choice encodes a physical assumption.",
+    "explanation": "Section 5.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical implications of different DEM resolutions for the Tisza levee system.",
+    "correct": "90m DEM: levees invisible (5-10m width < cell size). 30m: subtle ridges but no true cross-section. 5m: distinct linear features. 1m: full detail (crest, slopes, ramps, scour). For regional flood risk assessment, 30m suffices. For operational forecasting (where does water go?), 5m DDM-5 needed. For levee engineering assessment (is it high enough?), only 1m LiDAR provides necessary detail.",
+    "explanation": "Section 5.12."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of support in the scale triplet with concrete examples.",
+    "correct": "Support is each measurement's representative footprint. Rain gauge: ~200 cm² (point). ERA5 cell: ~961 km² (smooths storms — peak intensity 80 mm/h becomes 15 mm/h because the core is a fraction of cell area). A 1 km DEM cell averages elevation over 1 million m², smoothing hills and valleys. Large support means more smoothing; both measurements are 'correct' given their support.",
+    "explanation": "Section 5.7.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the HydroSHEDS project and its significance for global water professionals.",
+    "correct": "HydroSHEDS (now at WWF, developed at McGill) provides pre-processed hydrological derivatives from SRTM: flow direction, flow accumulation, basin boundaries (HydroBASINS, 12 levels), stream networks (HydroRIVERS). Available for 60°N-56°S. Saves enormous processing effort for regional-to-global analysis. Ready-to-use datasets that would otherwise require significant computation.",
+    "explanation": "Section 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how raster storage in geodatabases and cloud platforms compare in 2026.",
+    "correct": "File geodatabases store rasters internally with long names, unified management, and up to 1 TB with compression, but limited non-ESRI access. Cloud hosting (COGs on S3/Azure/GCS) served via STAC APIs provides multi-user access with simple administration. The 2026 trend is toward cloud-native: simpler, more accessible, multi-platform. Database-centric management is becoming less common.",
+    "explanation": "Section 5.11."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how vegetation bias affects different DEM products and how MERIT addresses it.",
+    "correct": "SRTM and Copernicus are DSMs: radar reflects off canopy, adding 20-30m in tropical forests. This distorts drainage patterns (flow follows apparent ridge of canopy). MERIT DEM removes estimated tree height bias (plus stripe noise, speckle, absolute bias) from existing DEMs, producing cleaner 90m elevation. The correction is imperfect but essential for forested tropical regions.",
+    "explanation": "Sections 5.8.1 and 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the resolution-information paradox and its practical implications.",
+    "correct": "Finer resolution is not always better. Information content comes from source data, not cell size. A 90m DEM resampled to 10m has 81× more cells but identical information at 90m scale. The 10m cells hold interpolated predictions, not measurements. Practical rule: output cell size should not be finer than the coarsest input. Otherwise computation is wasted without accuracy improvement.",
+    "explanation": "Section 5.9.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between extent and the scale of phenomena that can be studied.",
+    "correct": "Extent limits what can be studied. A 100 km² gauge network characterizes watershed precipitation but not continental trends. A 20-year record may show an apparent trend that's actually part of a longer cycle. Extrapolating beyond extent introduces uncertainty. A common error: drawing conclusions exceeding data extent.",
+    "explanation": "Section 5.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why flat terrain poses special challenges for DEM-based hydrological analysis.",
+    "correct": "In flat terrain (river deltas, coastal plains, Tisza floodplain), even a few metres of DEM error shifts flood boundaries by kilometres. The Copernicus DEM's 4m accuracy may be insufficient. Subtle features (levees 3-5m high, oxbow depressions) are near the accuracy threshold. These areas require local LiDAR for accurate flood mapping. Global DEMs perform well in moderate relief but fail in extreme flatness.",
+    "explanation": "Sections 5.12 and 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the six grid elements interact when combining rasters from different sources.",
+    "correct": "All six must be compatible for valid overlay: (1) Extent must overlap sufficiently. (2) Cell sizes must match or be reconciled. (3) Row/column counts differ if sizes differ. (4) Anchor points may be offset, requiring snap rasters. (5) Data types determine valid operations (no averaging categorical data). (6) NODATA values must be properly handled to avoid sentinel contamination.",
+    "explanation": "Section 5.2 concepts applied to multi-source analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical considerations for choosing between GeoTIFF and NetCDF.",
+    "correct": "GeoTIFF: best for single-time spatial data (DEMs, land cover, single rainfall event). Universal support, compression, self-describing. NetCDF: best for multi-dimensional data (precipitation at 1000×800 grid × 8760 hours = 3D array). Native time dimension. Most hydrological analyses use GeoTIFF for spatial inputs and NetCDF for climate/weather time series inputs.",
+    "explanation": "Sections 5.10.1 and 5.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the global DEM selection guide for different terrain types.",
+    "correct": "Temperate/moderate relief: Copernicus GLO-30. Mountains: GLO-30 or AW3D30 (sometimes better in steep valleys). Dense tropical forest: MERIT DEM (vegetation correction). Flat deltas: local LiDAR. Arctic: ArcticDEM (2m, Polar Geospatial Center). Arid/open: all global DEMs perform well. Historical analysis: SRTM (2000 snapshot for change detection).",
+    "explanation": "Table 5.7."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of smoothing in the scale triplet and when it is/isn't a problem.",
+    "correct": "Large support smooths the true field. ERA5 at 961 km² support turns 80 mm/h peak rainfall into 15 mm/h because the storm core is a fraction of the cell. This is a problem if you need local extremes (flash flood warning) but acceptable for basin-average water balance. The issue arises when analysts expect data to capture local extremes when its support inherently smooths them.",
+    "explanation": "Section 5.7.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical workflow for creating a DEM mosaic for watershed analysis.",
+    "correct": "Download tiles covering the watershed (e.g., Copernicus GLO-30 tiles). Mosaic into single raster (ArcGIS: Mosaic to New Raster; QGIS: gdal_merge/Build Virtual Raster). Clip to watershed with buffer (10-20 cells beyond divide to avoid edge effects). Apply elevation color ramp + hillshade at 50% transparency. Verify extent covers entire watershed plus margin.",
+    "explanation": "Section 5.12 and Ch4 walkthrough."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter connects to the rest of the book.",
+    "correct": "Chapter 5 provides the raster foundation for everything following. Ch 6 introduces map algebra on grids. Ch 7 applies it to slope/aspect. Ch 8 to rainfall interpolation. Chs 9-11 build complete hydrological workflows (flow direction → accumulation → stream extraction → watershed delineation). Ch 15 uses HAND for flood mapping. Every analysis starts with a raster grid understood through Ch 5 concepts.",
+    "explanation": "Section 5.14."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the coverage of ASTER GDEM v3?",
+    "options": [
+      "A) 60N to 56S",
+      "B) 83N to 83S",
+      "C) Global including poles",
+      "D) Only land areas"
+    ],
+    "correct": "B",
+    "explanation": "ASTER GDEM covers 83N to 83S latitude."
+  },
+  {
+    "type": "mcq",
+    "question": "A grid in UTM with cell size 30 means cells cover how much area?",
+    "options": [
+      "A) 30 m²",
+      "B) 300 m²",
+      "C) 900 m²",
+      "D) 9,000 m²"
+    ],
+    "correct": "C",
+    "explanation": "30m × 30m = 900 square metres per cell."
+  },
+  {
+    "type": "mcq",
+    "question": "Which interpretation treats the cell value as a point sample at the center?",
+    "options": [
+      "A) Interpretation 1",
+      "B) Interpretation 2",
+      "C) Interpretation 3",
+      "D) None"
+    ],
+    "correct": "B",
+    "explanation": "Interpretation 2: value at a single point (cell center)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does LE90 mean for DEM accuracy?",
+    "options": [
+      "A) Linear Error at 90% confidence",
+      "B) Lateral Extent 90m",
+      "C) Level Error 90%",
+      "D) Logarithmic Error 90th percentile"
+    ],
+    "correct": "A",
+    "explanation": "LE90 = Linear Error at 90% confidence level for vertical accuracy."
+  },
+  {
+    "type": "mcq",
+    "question": "TanDEM-X is the satellite system behind which DEM?",
+    "options": [
+      "A) SRTM",
+      "B) ASTER GDEM",
+      "C) Copernicus DEM",
+      "D) MERIT DEM"
+    ],
+    "correct": "C",
+    "explanation": "The Copernicus DEM is derived from TanDEM-X synthetic aperture radar."
+  },
+  {
+    "type": "mcq",
+    "question": "What compression can reduce GeoTIFF size by 50-80%?",
+    "options": [
+      "A) JPEG",
+      "B) LZW/Deflate/ZSTD",
+      "C) ZIP",
+      "D) RAR"
+    ],
+    "correct": "B",
+    "explanation": "GeoTIFF supports lossless LZW, Deflate, ZSTD compression."
+  },
+  {
+    "type": "mcq",
+    "question": "A DEM buffer of how many cells is recommended beyond the watershed divide?",
+    "options": [
+      "A) 1-2",
+      "B) 5-10",
+      "C) 10-20",
+      "D) 50-100"
+    ],
+    "correct": "C",
+    "explanation": "Buffer by 10-20 cell widths to avoid edge effects in flow direction."
+  },
+  {
+    "type": "mcq",
+    "question": "The foundational Jenson and Domingue paper was published in:",
+    "options": [
+      "A) 1984",
+      "B) 1988",
+      "C) 1995",
+      "D) 1997"
+    ],
+    "correct": "B",
+    "explanation": "Jenson and Domingue (1988) on extracting topographic structure from DEMs."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary use of the ESRI Grid format today?",
+    "options": [
+      "A) New projects",
+      "B) Cloud storage",
+      "C) Legacy compatibility",
+      "D) Mobile GIS"
+    ],
+    "correct": "C",
+    "explanation": "ESRI Grid is no longer recommended but needed for working with historical data."
+  },
+  {
+    "type": "mcq",
+    "question": "For precipitation, what does large support (ERA5 cell) do to storm intensity?",
+    "options": [
+      "A) Increases it",
+      "B) Decreases it through spatial averaging",
+      "C) Has no effect",
+      "D) Makes it oscillate"
+    ],
+    "correct": "B",
+    "explanation": "Large support averages the intense storm core over a large area, reducing apparent intensity."
+  },
+  {
+    "type": "mcq",
+    "question": "How does 3 arc-seconds translate to metres at the equator?",
+    "options": [
+      "A) ~30 m",
+      "B) ~60 m",
+      "C) ~90 m",
+      "D) ~150 m"
+    ],
+    "correct": "C",
+    "explanation": "3 arc-seconds ≈ 90 metres at the equator."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM is what type of dataset?",
+    "options": [
+      "A) A global DEM",
+      "B) A climate dataset for the Carpathian region",
+      "C) A land cover classification",
+      "D) A stream network"
+    ],
+    "correct": "B",
+    "explanation": "CARPATCLIM is a gridded climate dataset, distributed as NetCDF."
+  },
+  {
+    "type": "mcq",
+    "question": "What resolution is ERA5-Land?",
+    "options": [
+      "A) 0.25 deg (~31 km)",
+      "B) 9 km",
+      "C) 1 km",
+      "D) 100 m"
+    ],
+    "correct": "B",
+    "explanation": "ERA5-Land is ~9 km resolution, finer than ERA5's ~31 km."
+  },
+  {
+    "type": "mcq",
+    "question": "The DDM-5 is ordered through:",
+    "options": [
+      "A) data.vizugy.hu",
+      "B) Lechner geoshop",
+      "C) Copernicus Data Space",
+      "D) USGS EarthExplorer"
+    ],
+    "correct": "B",
+    "explanation": "DDM-5 must be ordered through the Lechner geoshop; it is not freely downloadable."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate file size of a 90m DEM of Hungary as GeoTIFF?",
+    "options": [
+      "A) ~5 MB",
+      "B) ~50 MB",
+      "C) ~500 MB",
+      "D) ~5 GB"
+    ],
+    "correct": "B",
+    "explanation": "~11.5 million cells at 90m = approximately 50 MB as GeoTIFF."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM product is specifically recommended for mountainous terrain?",
+    "options": [
+      "A) ERA5-Land",
+      "B) AW3D30 (sometimes better in steep valleys)",
+      "C) MODIS",
+      "D) E-OBS"
+    ],
+    "correct": "B",
+    "explanation": "AW3D30 sometimes performs better than Copernicus GLO-30 in steep valleys."
+  },
+  {
+    "type": "mcq",
+    "question": "Flow accumulation values spanning many orders of magnitude require:",
+    "options": [
+      "A) Linear display",
+      "B) Logarithmic color scales",
+      "C) Categorical display",
+      "D) Single-symbol display"
+    ],
+    "correct": "B",
+    "explanation": "Logarithmic scales reveal the full hierarchy from headwaters to main channels."
+  },
+  {
+    "type": "mcq",
+    "question": "In which raster format can time series data be stored natively?",
+    "options": [
+      "A) GeoTIFF",
+      "B) ASCII Grid",
+      "C) NetCDF",
+      "D) ESRI Grid"
+    ],
+    "correct": "C",
+    "explanation": "NetCDF natively supports a time dimension for multi-temporal data."
+  },
+  {
+    "type": "mcq",
+    "question": "For a historical analysis comparing terrain changes since 2000, which DEM provides the baseline?",
+    "options": [
+      "A) Copernicus GLO-30",
+      "B) SRTM",
+      "C) MERIT DEM",
+      "D) 3DEP"
+    ],
+    "correct": "B",
+    "explanation": "SRTM (collected February 2000) provides a year-2000 snapshot useful for change detection."
+  },
+  {
+    "type": "mcq",
+    "question": "What database does NASA use for distributing satellite data like GPM/IMERG?",
+    "options": [
+      "A) NetCDF",
+      "B) GeoTIFF",
+      "C) HDF5",
+      "D) GeoPackage"
+    ],
+    "correct": "C",
+    "explanation": "NASA uses HDF5 for GPM/IMERG and GRACE data products."
+  },
+  {
+    "type": "mcq",
+    "question": "The ASCII grid NODATA_value field typically uses:",
+    "options": [
+      "A) 0",
+      "B) NULL",
+      "C) -9999",
+      "D) NaN"
+    ],
+    "correct": "C",
+    "explanation": "-9999 is the most common NODATA value in ASCII grid files."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM source has the worst vertical accuracy?",
+    "options": [
+      "A) Copernicus GLO-30 (<4m)",
+      "B) SRTM (~6-9m)",
+      "C) ASTER GDEM v3 (~8-12m)",
+      "D) ALOS AW3D30 (~5m)"
+    ],
+    "correct": "C",
+    "explanation": "ASTER GDEM v3 has ~8-12m LE90 accuracy, the worst among these."
+  },
+  {
+    "type": "mcq",
+    "question": "WorldClim data operates at what resolution?",
+    "options": [
+      "A) 30 m",
+      "B) 250 m",
+      "C) ~1 km",
+      "D) ~31 km"
+    ],
+    "correct": "C",
+    "explanation": "WorldClim climate data is at ~1 km resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "TINs are the natural representation for LiDAR point clouds.",
+    "correct": true,
+    "explanation": "LiDAR points are inherently irregular, making TINs their natural representation."
+  },
+  {
+    "type": "true_false",
+    "question": "The contour-flowline model has standard implementations in commercial GIS.",
+    "correct": false,
+    "explanation": "It lacks standard implementations and remains a research tool."
+  },
+  {
+    "type": "true_false",
+    "question": "A 30m grid can resolve features wider than about 60 metres.",
+    "correct": true,
+    "explanation": "Nyquist theorem: 2× cell size = minimum resolvable feature width."
+  },
+  {
+    "type": "true_false",
+    "question": "NAVD88 is defined by a tide gauge at Kronstadt, Russia.",
+    "correct": false,
+    "explanation": "NAVD88 uses Point Rimouski, Quebec. Kronstadt defines the Baltic Height System."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus GLO-90 has the same source as GLO-30 (TanDEM-X).",
+    "correct": true,
+    "explanation": "Both derive from TanDEM-X but at different resolutions."
+  },
+  {
+    "type": "true_false",
+    "question": "A raster's anchor point is always at the center of the grid.",
+    "correct": false,
+    "explanation": "The anchor is at a corner (typically lower-left or upper-left)."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF supports tiling for efficient partial access.",
+    "correct": true,
+    "explanation": "Tiling divides the image into blocks readable independently."
+  },
+  {
+    "type": "true_false",
+    "question": "MODIS products typically have 250 m resolution.",
+    "correct": true,
+    "explanation": "MODIS provides vegetation and soil moisture products at 250 m."
+  },
+  {
+    "type": "true_false",
+    "question": "The center-point rasterization rule is the default in most GIS software.",
+    "correct": true,
+    "explanation": "Fast and deterministic, though it can miss small features."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity flow direction stores angles as integers.",
+    "correct": false,
+    "explanation": "D-infinity stores flow angles as floating-point values between 0 and 2π."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 temporal extent begins in 1940.",
+    "correct": true,
+    "explanation": "ERA5 reanalysis extends from 1940 to present."
+  },
+  {
+    "type": "true_false",
+    "question": "A 64-bit float provides approximately 15 significant digits.",
+    "correct": true,
+    "explanation": "64-bit double precision: ~15 significant digits."
+  },
+  {
+    "type": "true_false",
+    "question": "In ASCII grid format, values are ordered from south to north.",
+    "correct": false,
+    "explanation": "Values go from north to south (top row first)."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF is an open standard maintained by OGC.",
+    "correct": true,
+    "explanation": "GeoTIFF is maintained as an open OGC standard."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza 'szabályozás' refers to 19th-century river regulation.",
+    "correct": true,
+    "explanation": "The great Tisza regulation built the engineered levee system."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS precipitation data starts from 1981.",
+    "correct": true,
+    "explanation": "CHIRPS provides daily precipitation at 0.05 degree since 1981."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1m DEM of Hungary would require terabytes of storage.",
+    "correct": true,
+    "explanation": "~93 billion cells at 4 bytes each = ~370 GB minimum; with overhead, terabytes."
+  },
+  {
+    "type": "true_false",
+    "question": "Nearest-neighbor resampling to finer resolution adds information.",
+    "correct": false,
+    "explanation": "It repeats the same value across multiple cells—no new information."
+  },
+  {
+    "type": "true_false",
+    "question": "The geoid is an equipotential surface of Earth's gravity field.",
+    "correct": true,
+    "explanation": "The geoid approximates mean sea level and is defined by gravity."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM uses C-band radar for elevation measurement.",
+    "correct": true,
+    "explanation": "SRTM used C-band synthetic aperture radar."
+  },
+  {
+    "type": "true_false",
+    "question": "The resolution-information paradox states finer resolution always improves accuracy.",
+    "correct": false,
+    "explanation": "It states the opposite: finer resolution without finer source data adds no information."
+  },
+  {
+    "type": "true_false",
+    "question": "An ASCII grid file can contain floating-point values.",
+    "correct": true,
+    "explanation": "The text can represent decimal numbers like 215.4, 217.8, etc."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza, the 2006 flood is among the historical great floods mentioned.",
+    "correct": true,
+    "explanation": "1879, 1970, 2001, and 2006 are the great Tisza floods mentioned."
+  },
+  {
+    "type": "true_false",
+    "question": "LiDAR coverage in Hungary is nationwide and uniform.",
+    "correct": false,
+    "explanation": "Hungarian LiDAR coverage is fragmented—available for specific areas only."
+  },
+  {
+    "type": "true_false",
+    "question": "GPM/IMERG has higher uncertainty than rain gauges.",
+    "correct": true,
+    "explanation": "Satellite estimates have larger uncertainties, especially for light rain and mountains."
+  },
+  {
+    "type": "true_false",
+    "question": "A mosaic dataset physically merges all tiles into one file.",
+    "correct": false,
+    "explanation": "It references tiles and assembles dynamically without physical merging."
+  },
+  {
+    "type": "true_false",
+    "question": "3 arc-seconds of latitude equals approximately 90 metres everywhere.",
+    "correct": true,
+    "explanation": "Latitude spacing is constant: 1° ≈ 111 km, so 3\" ≈ 90m."
+  },
+  {
+    "type": "true_false",
+    "question": "The 'largest share rule' rasterization is faster than the center-point rule.",
+    "correct": false,
+    "explanation": "Largest share requires computing fractional areas—more expensive than center-point."
+  },
+  {
+    "type": "true_false",
+    "question": "NetCDF4 is built on top of HDF5 internally.",
+    "correct": true,
+    "explanation": "NetCDF4 uses HDF5 as its internal storage format."
+  },
+  {
+    "type": "true_false",
+    "question": "At 0.00083333 degrees, cells are approximately 90m at the equator.",
+    "correct": true,
+    "explanation": "1/1200 degree ≈ 3 arc-seconds ≈ 90m at the equator."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM had no voids in its original dataset.",
+    "correct": false,
+    "explanation": "Numerous voids existed in mountainous terrain (Himalayas, Andes, Alps)."
+  },
+  {
+    "type": "true_false",
+    "question": "For large watersheds over 1000 km², cell size has negligible effect on area calculations.",
+    "correct": true,
+    "explanation": "Ridgeline perturbations are small relative to total perimeter."
+  },
+  {
+    "type": "true_false",
+    "question": "Integer grids can have a Value Attribute Table.",
+    "correct": true,
+    "explanation": "VATs provide one row per unique integer value with counts and attributes."
+  },
+  {
+    "type": "true_false",
+    "question": "Cubic convolution may produce physically impossible negative precipitation values.",
+    "correct": true,
+    "explanation": "Overshoot can create values outside the input range, including negatives."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM acquisition dates are 2011-2015.",
+    "correct": true,
+    "explanation": "More recent than SRTM (2000), capturing landscape changes."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND values can be negative.",
+    "correct": false,
+    "explanation": "HAND is Height Above Nearest Drainage—always non-negative."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS is a gridded observational dataset for Europe.",
+    "correct": true,
+    "explanation": "E-OBS provides daily gridded observations at 0.1 degree for Europe."
+  },
+  {
+    "type": "true_false",
+    "question": "Raster storage in enterprise databases is becoming more common in 2026.",
+    "correct": false,
+    "explanation": "The trend is toward cloud-native (COGs + STAC), not database-centric."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM should have extent larger than the study watershed.",
+    "correct": true,
+    "explanation": "Must extend beyond watershed divide by 10-20 cells to avoid edge effects."
+  },
+  {
+    "type": "true_false",
+    "question": "ALOS stands for Advanced Land Observing Satellite.",
+    "correct": true,
+    "explanation": "JAXA's ALOS satellite produced the AW3D30 DSM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TIN concentrates triangles in areas of high terrain _____.",
+    "correct": "complexity",
+    "explanation": "TINs adapt density to terrain complexity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ sampling theorem requires 2 samples per feature width.",
+    "correct": "Nyquist",
+    "explanation": "From signal processing theory applied to spatial data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM covers latitudes from 60°N to _____°S.",
+    "correct": "56",
+    "explanation": "SRTM coverage extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three scale triplet pitfalls are aliasing, apparent trends, and _____.",
+    "correct": "smoothing",
+    "explanation": "Large support causes smoothing of true variability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM that includes building rooftops is called a digital _____ model (DSM).",
+    "correct": "surface",
+    "explanation": "DSM vs DEM/DTM distinction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US vertical datum is called _____.",
+    "correct": "NAVD88",
+    "explanation": "Referenced to a tide gauge at Point Rimouski, Quebec."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ grid format stores rasters as a directory of binary files.",
+    "correct": "ESRI",
+    "explanation": "ESRI Grid: legacy format with 13-character name limit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus DEM was derived from the _____ satellite system.",
+    "correct": "TanDEM-X",
+    "explanation": "German radar satellite mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A tenfold decrease in cell size produces a _____-fold increase in data volume.",
+    "correct": "hundred",
+    "explanation": "Inverse square: 10² = 100."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DDM-5 in Hungary is a true _____ model, not a surface model.",
+    "correct": "ground",
+    "explanation": "Derived from contours and photogrammetry, representing bare earth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ convolution uses a 4×4 neighborhood for resampling.",
+    "correct": "Cubic",
+    "explanation": "Third-degree polynomial through 16 surrounding cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HDF5 stands for _____ Data Format version 5.",
+    "correct": "Hierarchical",
+    "explanation": "Used by NASA for satellite data products."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ASCII grid header line '_____ -9999' specifies the missing data code.",
+    "correct": "NODATA_value",
+    "explanation": "One of six ASCII grid header fields."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 is produced by _____ (European Centre for Medium-Range Weather Forecasts).",
+    "correct": "ECMWF",
+    "explanation": "ERA5 reanalysis from ECMWF."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ represents a regular mesh of identically sized square cells.",
+    "correct": "raster",
+    "explanation": "The dominant representation for hydrological computing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM stands for Global _____ Measurement.",
+    "correct": "Precipitation",
+    "explanation": "GPM/IMERG satellite precipitation estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At the equator, 1 arc-second ≈ _____ metres.",
+    "correct": "30",
+    "explanation": "1° ≈ 111 km, so 1 arc-second ≈ 30m at the equator."
+  },
+  {
+    "type": "fill_blank",
+    "question": "COG stands for Cloud-_____ GeoTIFF.",
+    "correct": "Optimized",
+    "explanation": "Reorganized for efficient cloud access via HTTP range requests."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza River 'szabályozás' built the engineered _____ system.",
+    "correct": "levee",
+    "explanation": "19th-century flood protection infrastructure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODIS vegetation products operate at _____ m resolution.",
+    "correct": "250",
+    "explanation": "250m products for global vegetation monitoring."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ of a measurement determines the degree of smoothing.",
+    "correct": "support",
+    "explanation": "Large support = more averaging = more smoothing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An 8-bit unsigned integer grid is sufficient for up to _____ categories.",
+    "correct": "256",
+    "explanation": "Values 0-255 = 256 possible categories."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoTIFF files use the _____ extension.",
+    "correct": ".tif",
+    "explanation": "Standard extension producing GeoTIFF format."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ heights are referenced to the geoid (mean sea level).",
+    "correct": "Orthometric",
+    "explanation": "Vs ellipsoidal heights referenced to the mathematical ellipsoid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The anchor point of ASCII grids specifies the _____-left corner.",
+    "correct": "lower",
+    "explanation": "xllcorner/yllcorner = lower-left corner coordinates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For infrastructure design, DEM resolution should be less than _____ metre.",
+    "correct": "1",
+    "explanation": "Sub-metre resolution from survey-grade LiDAR or total station."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is the minimum feature width that can be resolved at given spacing.",
+    "correct": "Nyquist limit",
+    "explanation": "Approximately 2× the cell size."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Daymet provides daily climate data at _____ km resolution for North America.",
+    "correct": "1",
+    "explanation": "1 km daily gridded climate data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PRISM provides US precipitation climatology at _____ m resolution.",
+    "correct": "800",
+    "explanation": "800m monthly precipitation climatology."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In geographic coordinates, cells become _____ at higher latitudes.",
+    "correct": "narrower",
+    "explanation": "Meridians converge, reducing east-west cell dimension."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ DEM at 2m covers arctic and polar regions.",
+    "correct": "ArcticDEM",
+    "explanation": "From Polar Geospatial Center."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A grid cell storing elevation 217.34 m uses _____ data type.",
+    "correct": "floating-point",
+    "explanation": "Decimal values require float representation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of fields in geographic information science.",
+    "correct": "Fields are continuous phenomena defined at every point in space (temperature, elevation, soil moisture). They have no gaps or boundaries. The challenge is representing infinite information finitely. Three methods exist: regular grids, TINs, and contour-flowline models. Grids dominate hydrology for computational simplicity.",
+    "explanation": "Section 5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the computational advantages of regular grids over TINs.",
+    "correct": "Regular grids have predictable cell arrangement enabling simple neighbor lookup via arithmetic. Cell operations are trivially parallelizable. They align with remote sensing output. These advantages overwhelmingly outweigh TINs' storage efficiency. Modern hardware eliminates the storage concern.",
+    "explanation": "Section 5.1.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the cell size is the most important grid parameter.",
+    "correct": "Cell size determines spatial detail (features below ~1 cell invisible), data volume (inverse square scaling), processing time (proportional to cells), and appropriateness for phenomena. Choosing too coarse loses features; too fine wastes resources. It is the central design decision for any raster analysis.",
+    "explanation": "Section 5.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the structure and advantages of the ASCII grid format.",
+    "correct": "Header: ncols, nrows, xllcorner, yllcorner, cellsize, NODATA_value. Body: values row-by-row north-to-south. Advantages: human-readable, universal support, self-documenting, can be created with a text editor. Limitations: 3-10× larger than binary, slow parsing. Good for teaching; impractical for large datasets.",
+    "explanation": "Section 5.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the NODATA propagation rule and its consequences.",
+    "correct": "If any input cell is NODATA, the output is NODATA. Safe because it prevents computation from incomplete data. But aggressive: one NODATA layer among twelve makes output holes. Strategies: fill gaps by interpolation, substitute defaults via Con, compute in stages, or accept and document.",
+    "explanation": "Section 5.2.6 and referenced Ch 6."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the vertical datum matters when combining DEMs.",
+    "correct": "Different DEMs may use different references: EGM96, EGM2008, Baltic, NAVD88. In Hungary, the 40-46m geoid undulation means uncorrected GPS elevations are drastically wrong. Combining DDM-5 (Baltic) with Copernicus (EGM2008) requires datum transformation to avoid systematic errors.",
+    "explanation": "Section 5.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the VAT mechanism for land cover hydrological parameterization.",
+    "correct": "Integer land cover grid has a VAT linking codes to descriptions and derived parameters. Each code maps to a runoff coefficient or curve number. Reclassifying the grid using this column gives every cell its hydrological parameter based on land cover type. This is how spatially distributed model parameters are created.",
+    "explanation": "Section 5.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why precipitation varies at km-scale but a 100m grid adds nothing.",
+    "correct": "Atmospheric precipitation processes vary on scales of kilometres. A 100m precipitation grid interpolated from 1 km data creates artificially smooth values with no real sub-km information. The information content remains at 1 km. Finer resolution adds nothing because the phenomenon itself varies slowly.",
+    "explanation": "Section 5.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare rain gauge network, ERA5, and GPM/IMERG for flood forecasting.",
+    "correct": "Gauges: most accurate but point measurements with gaps. ERA5: complete field but smoothed (961 km² cells miss storms). GPM/IMERG: captures storm spatial structure at ~10 km, 30-min intervals—best for real-time spatial monitoring but shorter record and more uncertainty. For flood forecasting, GPM/IMERG or radar provides spatial coverage needed.",
+    "explanation": "Section 5.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical implications of the inverse-square scaling of raster data.",
+    "correct": "Halving cell size quadruples cells. 90m→10m: 81× more cells. A single map algebra operation is fast regardless. But multi-step simulations over 30 years at hourly steps: difference between minutes (100m) and days (10m). Cell size is both a design and computational budget decision.",
+    "explanation": "Section 5.2.2 and 5.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the anchor point convention can cause alignment problems.",
+    "correct": "Different formats use different reference corners: ASCII grid uses lower-left; GeoTIFF uses upper-left. Failing to account for this during overlay can cause half-cell or full-cell shifts between grids. Modern software handles conversions transparently, but custom code must be careful.",
+    "explanation": "Section 5.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the vector-to-raster conversion process and its limitations.",
+    "correct": "Points become single cells. Lines become cell chains (always ≥1 cell wide). Polygons become zones of same-value cells. The center-point rule assigns value by cell center position (fast but can miss small features). The largest-share rule uses area majority (more representative but slower). Both approximate smooth boundaries with jagged cell edges.",
+    "explanation": "Section 5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of aliasing using a stream channel example.",
+    "correct": "A 15m-wide stream in a 30m DEM: channel narrower than one cell, so it cannot appear as a distinct feature. The cell holding the channel blends bottom with floodplain—hiding the channel. This is not a DEM flaw but a fundamental consequence of coarse spacing. Resolving it requires finer DEMs (5m or 1m).",
+    "explanation": "Section 5.7.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the global DEM selection guide for arid vs tropical environments.",
+    "correct": "Arid/open terrain: all global DEMs perform well because no vegetation interference. Dense tropical forest: vegetation bias adds 20-30m in DSMs; MERIT DEM essential for correcting this. These opposite scenarios illustrate why DEM selection must consider surface characteristics, not just resolution.",
+    "explanation": "Table 5.7."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how integer grids differ from float grids in their visualization.",
+    "correct": "Float grids (continuous quantities) use color ramps mapping value ranges to colors. No VAT because values are continuous. Integer grids (categorical) use unique-value symbology with specific colors per class, plus a VAT linking codes to descriptions. The fundamental difference: continuous vs discrete quantities.",
+    "explanation": "Sections 5.6.1-5.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the SRTM void problem and its impact on DEM-derived products.",
+    "correct": "SRTM had numerous voids in mountainous terrain from radar shadows and steep slopes. Voids appear as NODATA, breaking flow direction and watershed delineation. Void-filled versions were created by interpolation and referenced in ancillary quality layers. MERIT DEM addresses some remaining issues.",
+    "explanation": "Sections 5.2.6 and 5.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why grid extent must extend beyond the study watershed.",
+    "correct": "Flow direction algorithms need to determine which cells drain inward vs outward at boundaries. If the DEM clips the watershed divide, edge effects produce incorrect delineation. Buffer by 10-20 cell widths beyond the expected boundary on all sides.",
+    "explanation": "Section 5.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the trade-off between resolution and computational cost.",
+    "correct": "Finer resolution captures more detail but costs proportionally more in storage and processing (inverse-square). 100m→10m: 100× more cells. For single operations this is negligible on modern hardware. For time-stepping models over decades, it is the difference between minutes and days. Choose resolution matching analysis needs, not just 'finest available.'",
+    "explanation": "Sections 5.9.1-5.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the Copernicus EEA-10 for European water analysis.",
+    "correct": "EEA-10 provides 10m resolution for 39 European countries—the finest freely available European DEM. Derived from TanDEM-X (so technically a DSM). Better than Copernicus GLO-30 for regional watershed analysis and slope mapping. The 5m Hungarian DDM-5 is finer but not freely available.",
+    "explanation": "Table 5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how raster bands work and their relevance to water resources.",
+    "correct": "A single-band raster has one value per cell (DEM, rainfall). Multi-band rasters have multiple values (satellite imagery: red, green, blue, NIR). For hydrology, most analytical rasters are single-band. Multi-band satellite data is used for land cover classification and water body mapping.",
+    "explanation": "Section 5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how cloud-hosted COGs change the DEM access workflow.",
+    "correct": "Traditional: identify tiles, download GB files, mosaic locally. With COGs on cloud + STAC: query catalog, stream only the needed portion directly into GIS. Dramatic efficiency improvement. Copernicus DEM, USGS 3DEP both available as COGs. Especially important for large-area analyses.",
+    "explanation": "Section 5.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between geographic and projected cell sizes.",
+    "correct": "Geographic: cell size in degrees (e.g., 0.00083333°). Cells are not square at higher latitudes because meridians converge. Projected: cell size in metres (e.g., 30m). Cells are square everywhere. For hydrological analysis requiring area/distance calculations, projected CRS with metre-based cell sizes is essential.",
+    "explanation": "Section 5.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the vertical accuracy hierarchy of freely available DEMs.",
+    "correct": "From best to worst: Copernicus GLO-30 (<4m), ALOS AW3D30 (~5m), SRTM (~6-9m), ASTER GDEM (~8-12m). MERIT DEM improves on SRTM at 90m. LiDAR-derived DEMs achieve <0.2m but are not globally available. The accuracy determines which features can be reliably detected.",
+    "explanation": "Table 5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the cellsize header parameter in an ASCII grid.",
+    "correct": "Cellsize defines the length of one cell side in coordinate system units. Combined with xllcorner, yllcorner, nrows, and ncols, it positions every cell geographically. A cellsize of 30 in UTM means 30m × 30m cells. In geographic coordinates, cellsize in degrees with non-square cells at non-equatorial latitudes.",
+    "explanation": "Section 5.5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why different applications require different DEM resolutions.",
+    "correct": "Resolution must match phenomenon scale. Continental hydrology (90m-1km): major drainage patterns. Regional watersheds (10-30m): stream networks and boundaries. Urban flood mapping (1-5m): levees, buildings, channels. Infrastructure design (<1m): bridge scour, levee sections. Using 1m for continental analysis wastes resources; 90m for urban flooding misses critical features.",
+    "explanation": "Section 5.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a grid's bounding box and its practical significance.",
+    "correct": "The bounding box (extent) is the rectangle containing all cells, defined by xmin, ymin, xmax, ymax. It determines what geographic area is covered. When combining grids, their extents may differ—requiring decisions about intersection (only overlap area) or union (all area with NODATA gaps). Must be large enough to include the study area plus buffer.",
+    "explanation": "Section 5.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the evolution from ESRI Grid to GeoTIFF to COG.",
+    "correct": "ESRI Grid (1980s-90s): proprietary directory format, 13-char limit. GeoTIFF (2000s): open standard, compression, universal support, became default. COG (2020s): same GeoTIFF reorganized for cloud streaming via HTTP range requests. ASCII Grid remains for teaching. NetCDF handles time series separately.",
+    "explanation": "Section 5.10."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the DDM-5 is more suitable than Copernicus DEM for forested areas in Hungary.",
+    "correct": "DDM-5 is a true ground model from 1:10,000 contours and photogrammetry—bare-earth representation. Copernicus DEM is a DSM where radar reflects off tree canopy, adding canopy height to apparent elevation. In forested valleys, the DSM distorts drainage patterns. DDM-5 correctly represents the ground surface.",
+    "explanation": "Section 5.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the global democratization of hydrological analysis through free DEMs.",
+    "correct": "Before 2000, many countries had no free DEM finer than 1 km. Copernicus GLO-30 now provides 30m global coverage for free. A water engineer in Ethiopia has the same data quality as one in Germany. However, limitations remain: vegetation bias in tropics, insufficient accuracy in flat deltas, and the need for local LiDAR for critical applications.",
+    "explanation": "Section 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical implications of the NODATA sentinel contamination problem.",
+    "correct": "If NODATA value (-9999) accidentally included as valid data, it severely distorts analysis: mean elevation dragged down by thousands, slope calculations wildly wrong, statistics meaningless. The opposite—legitimate values treated as NODATA—causes data holes. Always verify NODATA definition matches actual data encoding.",
+    "explanation": "Section 5.2.6."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Farr et al. (2007) contribution to DEM science.",
+    "correct": "Farr et al. (2007) authored the comprehensive review of the SRTM mission in Reviews of Geophysics. This paper documented the SRTM data collection, processing, accuracy, and limitations, becoming the standard reference for anyone using SRTM data in research.",
+    "explanation": "References section."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how a mosaic dataset manages large raster tile collections.",
+    "correct": "A mosaic catalogs the locations and properties of multiple tiles as a single logical layer without physical merging. It dynamically assembles tiles as users pan/zoom. This avoids creating enormous single files. Standard for managing national DEM programs (3DEP, Copernicus) distributed as hundreds of tiles.",
+    "explanation": "Section 5.11.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how ERA5 reanalysis data is used in hydrological analysis.",
+    "correct": "ERA5 provides hourly, gap-free, physically consistent global fields (precipitation, temperature, wind, soil moisture) since 1940 at ~31 km. Stored as NetCDF. Used for large-basin water balance, climate trend analysis, and forcing distributed models. Large support (~961 km²) smooths storms but provides complete spatial coverage.",
+    "explanation": "Sections 5.7.4 and 5.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why GeoTIFF is recommended as the default raster output format.",
+    "correct": "GeoTIFF: supports all data types, lossless compression (50-80% reduction), self-describing with embedded CRS, tiling for efficient access, multi-band support, open OGC standard, universal software support. Specifying .tif extension in ArcGIS Pro or QGIS automatically produces GeoTIFF. No naming restrictions. Preferred over ESRI Grid for all new work.",
+    "explanation": "Section 5.10.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the relationship between bit depth and storage requirements.",
+    "correct": "8-bit: 1 byte/cell (0-255, for classifications). 16-bit: 2 bytes/cell (-32768 to 32767, for integer elevations). 32-bit float: 4 bytes/cell (~7 digits, for continuous data). 64-bit float: 8 bytes/cell (~15 digits, rarely needed). For Hungary at 10m: 930M cells × 4 bytes = 3.7 GB (32-bit) vs 1.9 GB (16-bit).",
+    "explanation": "Section 5.2.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the distinction between spacing and support in practical terms.",
+    "correct": "Spacing: distance between measurements (cell size for grids, inter-gauge distance for networks). Support: footprint of each measurement (cell area for spatial average, gauge orifice for point). When support >> spacing: over-smoothed data. When support << spacing: under-sampled, needs interpolation. The relationship determines data quality characteristics.",
+    "explanation": "Sections 5.7.2-5.7.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why watershed delineation at 30m is the 'sweet spot' for regional analysis.",
+    "correct": "At 30m: stream channels and ridgelines are resolved, watershed boundaries are accurate for basins >100 km², data volume is manageable (~1111 cells/km²), Copernicus GLO-30 and SRTM are freely available globally. Finer resolution (10m, 5m) captures more detail but at 9-36× computational cost with diminishing accuracy returns for regional work.",
+    "explanation": "Section 5.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HydroSHEDS project saves processing effort for global studies.",
+    "correct": "HydroSHEDS provides ready-to-use flow direction, flow accumulation, basin boundaries (HydroBASINS, 12 levels), and stream networks (HydroRIVERS) from SRTM. Without it, each researcher would need to: download SRTM tiles, fill sinks, compute flow direction, derive accumulation, extract streams, delineate basins. HydroSHEDS does this once for the whole globe.",
+    "explanation": "Section 5.13."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical impact of geoid undulation in Hungarian DEM work.",
+    "correct": "Hungary's geoid undulation (40-46m) means GPS ellipsoidal heights differ from orthometric by this amount. Without correction, GPS measurements would show elevations 40-46m too high—catastrophic for flood mapping where metres matter. All DEM work must verify the vertical datum and apply appropriate geoid correction.",
+    "explanation": "Section 5.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of tiling in GeoTIFF and its benefits.",
+    "correct": "Tiling divides a raster into square blocks (e.g., 256×256 cells) that can be read independently. Without tiling, reading a small area requires scanning the entire file. Tiled access enables efficient display of large rasters (read only visible tiles), fast partial access for analysis, and is essential for COGs' cloud streaming capability.",
+    "explanation": "Section 5.10.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of SRTM being a year-2000 snapshot.",
+    "correct": "SRTM's February 2000 acquisition means it misses subsequent changes: new reservoirs, urban expansion, mining activity, deforestation. For areas that changed significantly, Copernicus DEM (2011-2015) is more current. However, SRTM remains valuable for change detection: comparing 2000 and 2015 surfaces reveals landscape transformation.",
+    "explanation": "Section 5.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of enterprise geodatabases for raster storage.",
+    "correct": "Enterprise geodatabases (PostgreSQL+SDE, SQL Server, Oracle) enable multi-user concurrent raster access with versioning. Used by national agencies managing thousands of layers. However, the trend is toward cloud-hosted COGs with STAC APIs, which provide similar multi-user access with simpler administration.",
+    "explanation": "Section 5.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical considerations for choosing MERIT DEM vs Copernicus GLO-30.",
+    "correct": "MERIT: 90m, corrected for stripe/bias/speckle/vegetation—best for continental/global modeling where error correction > resolution. Copernicus GLO-30: 30m, higher resolution but uncorrected—best for regional watershed analysis. For most new projects, GLO-30 is default. For continental-scale modeling, MERIT is preferred. They serve different scales.",
+    "explanation": "Section 5.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why cells in geographic coordinates are not square.",
+    "correct": "In geographic CRS, cell size is in degrees. One degree of latitude ≈ 111 km everywhere, but one degree of longitude shrinks with cosine of latitude. At 47°N (Hungary), 1° longitude ≈ 75 km vs 111 km latitude. A 0.001° cell is ~75m east-west but ~111m north-south—not square. This affects area calculations.",
+    "explanation": "Section 5.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of raster data in the next chapters (6-16) of the book.",
+    "correct": "Ch 6: map algebra on grids. Ch 7: slope/aspect from DEMs. Ch 8: rainfall interpolation to grids. Chs 9-11: flow direction → accumulation → delineation. Ch 14: HAND flood mapping. Ch 15: flood inundation. Every chapter uses raster grids as input/output. Understanding Chapter 5 concepts prevents errors throughout.",
+    "explanation": "Section 5.14."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the key message of the Tisza floodplain example about abstraction.",
+    "correct": "A raster grid is an abstraction—simplifying continuous reality into finite numbers. The art is choosing the right level: fine enough to capture critical features (levees, channels) but coarse enough for tractability. A 30m DEM suits regional assessment; 5m for operational forecasting; 1m for engineering. Being honest about what the grid cannot represent is essential.",
+    "explanation": "Section 5.12."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between the geoid and the ellipsoid.",
+    "correct": "The ellipsoid (e.g., WGS84) is a mathematical approximation of Earth's shape—smooth and regular. The geoid is an equipotential surface of gravity, approximating mean sea level—irregular and bumpy. The difference (geoid undulation) varies globally. GPS measures from the ellipsoid; practical heights reference the geoid. Geoid models (EGM2008) convert between them.",
+    "explanation": "Section 5.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical significance of GeoTIFF's compression capabilities.",
+    "correct": "LZW, Deflate, ZSTD compression reduces file sizes by 50-80% without data loss. A 90m Hungary DEM: ~50 MB compressed vs ~200 MB uncompressed. For 10m: several GB vs tens of GB. This dramatically reduces storage, network transfer, and processing time. Always use compressed GeoTIFF for spatial data.",
+    "explanation": "Section 5.10.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of Tarboton (1997) for flow direction modeling.",
+    "correct": "Tarboton developed the D-infinity method, allowing continuous flow angles (0 to 2π) stored as floats. This distributes flow between neighboring cells proportionally, better representing divergent flow on hillslopes. Contrasts with D8's single-direction integer approach. The choice between them encodes different assumptions about how water moves.",
+    "explanation": "Section 5.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how NODATA cells function as computational exclusion zones.",
+    "correct": "When computing statistics or map algebra, NODATA cells are excluded automatically. Mean elevation of a watershed ignores NODATA cells outside the boundary. This prevents meaningless results—without NODATA exclusion, cells with value -9999 would drag averages to absurd values. NODATA is the mechanism for restricting computation to valid areas.",
+    "explanation": "Section 5.2.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why understanding raster data is prerequisite for all subsequent hydrology chapters.",
+    "correct": "Every analysis in Chapters 6-16 uses rasters: map algebra (6), slope/aspect (7), interpolation (8), flow direction/accumulation (9-10), stream/watershed delineation (11), flood mapping (14-15). Without understanding cell size, NODATA, data types, resampling, and resolution limits, errors propagate through every step. Chapter 5 provides the vocabulary and mental model.",
+    "explanation": "Section 5.14."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the advantages of TINs for civil engineering vs their limitations for hydrology.",
+    "correct": "TINs excel for engineering: high fidelity along corridors/dam sites, efficient storage with adaptive resolution. But for large-scale hydrology: flow direction across irregular meshes is complex, standard algorithms assume regular grids, most operational models use grids, and major DEMs distribute as grids. TIN algorithms exist but are not standard or widely validated.",
+    "explanation": "Section 5.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the multi-dimensional data storage capabilities of NetCDF.",
+    "correct": "NetCDF stores data with multiple dimensions, e.g., precipitation at 1000×800 grid cells × 8760 hourly time steps as a single 3D array. Self-describing with metadata. Standard for climate science. Both ArcGIS Pro and QGIS read NetCDF. NetCDF4 built on HDF5. Essential for any water balance study using ERA5 or similar time series data.",
+    "explanation": "Section 5.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how apparent trends can be a pitfall of limited temporal extent.",
+    "correct": "If data extent captures only part of a cycle, it appears as a monotonic trend. Monitoring river discharge Jan-June in a snowmelt basin shows increasing flow, suggesting a trend, when it is seasonal. A 30-year precipitation record may show apparent increase that is part of a multi-decadal oscillation visible only in 100-year gauge records.",
+    "explanation": "Section 5.7.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for interpreting a DEM coordinate system from its extent values.",
+    "correct": "Extent values reveal the CRS: x=400000-500000, y=100000-200000 suggests projected CRS in metres (characteristic of Hungarian EOV). x=16-23, y=45.5-48.5 suggests geographic coordinates (degrees) for Hungary in WGS84. Misidentifying the CRS is common; value ranges provide the diagnostic.",
+    "explanation": "Section 5.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how remote sensing instruments naturally produce gridded data.",
+    "correct": "Satellite sensors scan in rows, weather radar sweeps in polar grids converted to Cartesian, NWP models compute on regular grids. This alignment with raster format means no conversion needed. Satellite imagery, radar precipitation, and model output all arrive as grids, reinforcing the regular grid dominance.",
+    "explanation": "Section 5.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the edge effect problem when DEM extent is too small for watershed delineation.",
+    "correct": "Flow direction algorithms determine which cells drain inward vs outward. If the DEM clips the watershed divide, edge cells cannot be properly classified. This produces incorrect watershed boundaries — potentially missing large areas of the catchment or including areas that actually drain elsewhere. Buffer the expected boundary by 10-20 cells.",
+    "explanation": "Section 5.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the coarsening of land cover data affects hydrological model accuracy.",
+    "correct": "Land cover rasters classify each cell categorically (forest, urban, etc.). At coarse resolution, small features (roads, buildings, narrow riparian buffers) are lost. The center-point rule may assign large cells wrong categories. Nearest-neighbor resampling to coarser grids discards spatial heterogeneity. This directly affects curve numbers and runoff coefficients.",
+    "explanation": "Section 5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter defines the raster as the computer eye for seeing terrain.",
+    "correct": "A computer sees terrain as numbers in rows and columns — not sweeping vistas. But from these numbers, algorithms extract information no human could discern visually: precise watershed boundaries, contributing areas, flood depths at every point. The grid is the medium through which water flow across landscapes is computed. Understanding both power and limitations is the art of hydroinformatics.",
+    "explanation": "Section 5.14."
+  }
+]

@@ -1,0 +1,742 @@
+{
+  "chapter": "ch04",
+  "total_issues": 92,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a fejezet áthidalja a szakadékot az adatok birtoklása és a velük való hasznos cselekvés között.",
+      "suggested": "Ez a fejezet azt mutatja meg, hogyan lesz az adatokból gyakorlati haszon.",
+      "reason": "Az „áthidalja a szakadékot” és a „velük való hasznos cselekvés” angolos, körülményes megfogalmazás."
+    },
+    {
+      "line_approx": 13,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A tárgyalás szándékosan átfogja a teljes GIS-ökoszisztémát",
+      "suggested": "A fejezet szándékosan a teljes GIS-ökoszisztémát áttekinti",
+      "reason": "A „tárgyalás ... átfogja” nehézkes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 16,
+      "category": "register",
+      "severity": "low",
+      "original": "mit tehet a GIS a vízügyi munkájáért",
+      "suggested": "mit tehet a GIS a vízügyi munkában",
+      "reason": "A „munkájáért” itt kevésbé természetes, mint a magyar tudományos prózában szokásos „munkában” szerkezet."
+    },
+    {
+      "line_approx": 20,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "három alapvető nézet köré szervezi képességeit",
+      "suggested": "három alapvető nézet szerint rendezi a funkcióit",
+      "reason": "A „képességeit nézet köré szervezi” szó szerinti, angolos megfogalmazás."
+    },
+    {
+      "line_approx": 24,
+      "category": "register",
+      "severity": "low",
+      "original": "A geoadatbázis szabályokat érvényesít: biztosítja, hogy",
+      "suggested": "A geoadatbázis szabályokat érvényesít: gondoskodik arról, hogy",
+      "reason": "A „biztosítja, hogy” túlhasznált angol mintájú fordulat; a „gondoskodik arról, hogy” természetesebb."
+    },
+    {
+      "line_approx": 29,
+      "category": "other",
+      "severity": "medium",
+      "original": "Az alternatíva: egy mappa tele shapefile-okkal",
+      "suggested": "Az alternatíva egy shapefile-okkal teli mappa",
+      "reason": "A kettősponttal kiemelt szerkezet itt darabos; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 32,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A tartományok (domainek)",
+      "suggested": "A tartományok (domain-ek)",
+      "reason": "A „domainek” írásmód szokatlan; magyar szakszövegben inkább a „domain-ek” vagy csak a „tartományok” használatos."
+    },
+    {
+      "line_approx": 38,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A geovizualizációs nézet a GIS-re kartográfiai motorként tekint.",
+      "suggested": "A geovizualizációs nézet a GIS-t kartográfiai motorként értelmezi.",
+      "reason": "Az „X-re ... tekint” szerkezet itt angolos; a tárgyas megoldás természetesebb."
+    },
+    {
+      "line_approx": 41,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A vízgazdálkodási munkában a geovizualizáció az elsődleges eszköze a térbeli mintázatok megértésének.",
+      "suggested": "A vízgazdálkodási munkában a geovizualizáció a térbeli mintázatok megértésének elsődleges eszköze.",
+      "reason": "A birtokos szerkezet szórendje magyarul természetesebben hangzik a javasolt alakban."
+    },
+    {
+      "line_approx": 47,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A geofeldolgozási nézet a GIS-t elemzőmotorként fogja fel.",
+      "suggested": "A geofeldolgozási nézet a GIS-t elemzőeszközként értelmezi.",
+      "reason": "Az „elemzőmotor” és a „fogja fel” együtt angolos, művi hatású."
+    },
+    {
+      "line_approx": 48,
+      "category": "register",
+      "severity": "low",
+      "original": "Az igazi erő itt rejlik a vízügyi szakemberek számára.",
+      "suggested": "A vízügyi szakemberek számára itt mutatkozik meg a GIS valódi ereje.",
+      "reason": "Az eredeti mondat angolos hangsúlyozású; a javasolt változat természetesebb magyar tudományos stílus."
+    },
+    {
+      "line_approx": 54,
+      "category": "terminology",
+      "severity": "high",
+      "original": "össze tudják gyűjteni a lefolyásokat a vízfolyások azonosítására",
+      "suggested": "fel tudják halmozni a lefolyást a vízfolyások azonosításához",
+      "reason": "A „lefolyások összegyűjtése” terminológiailag pontatlan; itt a flow accumulation műveletre utal a szöveg."
+    },
+    {
+      "line_approx": 58,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A domborzatelemzésen túl a geofeldolgozás biztosítja azokat a térbeli átfedési műveleteket",
+      "suggested": "A domborzatelemzésen túl a geofeldolgozás adja azokat a térbeli átfedési műveleteket",
+      "reason": "A „biztosítja” itt ismét angolosan használt, túl általános ige."
+    },
+    {
+      "line_approx": 60,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Egy kontinentális felszínborítási adatkészlet kivágása a vízgyűjtő-határ mentén kivonja a vizsgálati területre vonatkozó információt.",
+      "suggested": "Egy kontinentális felszínborítási adatkészlet kivágása a vízgyűjtő határa mentén kinyeri a vizsgálati területre vonatkozó információt.",
+      "reason": "A „kivonja az információt” tükörfordítás; magyarul itt a „kinyeri” természetes."
+    },
+    {
+      "line_approx": 61,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az al-vízgyűjtő-poligonok feloldása (dissolve)",
+      "suggested": "A részvízgyűjtő-poligonok összevonása (dissolve)",
+      "reason": "Az „al-vízgyűjtő” és a „feloldás” kevésbé bevett; a „részvízgyűjtő” és „összevonás” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 71,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Két platform uralja a teret",
+      "suggested": "Két platform a meghatározó ezen a területen",
+      "reason": "Az „uralja a teret” szó szerinti angol fordulat."
+    },
+    {
+      "line_approx": 73,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro minden munkát projekt köré szervez",
+      "suggested": "Az ArcGIS Pro minden munkafolyamatot egy projekt köré szervez",
+      "reason": "A „minden munkát” túl általános és angolos; a „munkafolyamatot” pontosabb."
+    },
+    {
+      "line_approx": 78,
+      "category": "register",
+      "severity": "low",
+      "original": "A QGIS hatalmasat fejlődött korai, egyszerű térképnézegető napjai óta.",
+      "suggested": "A QGIS sokat fejlődött a kezdeti, egyszerű térképnézegető korszakához képest.",
+      "reason": "A „hatalmasat fejlődött” kissé köznyelvi egy tankönyvben."
+    },
+    {
+      "line_approx": 83,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro és a QGIS közötti gyakorlati különbség a vízgazdálkodási munka szempontjából jelentősen csökkent.",
+      "suggested": "Az ArcGIS Pro és a QGIS közötti gyakorlati különbségek a vízgazdálkodási munkában jelentősen csökkentek.",
+      "reason": "Az egyes számú „különbség” és a „szempontjából” szerkezet itt nehézkes; többes számban és egyszerűbben természetesebb."
+    },
+    {
+      "line_approx": 95,
+      "category": "other",
+      "severity": "medium",
+      "original": "Amikor webes szolgáltatási réteget ad az asztali GIS-éhez",
+      "suggested": "Amikor webes szolgáltatási réteget ad az asztali GIS-éhez hozzá",
+      "reason": "Az eredeti szerkezet kissé csonka; a vonzat pontosítása szükséges a természetes magyar mondathoz."
+    },
+    {
+      "line_approx": 111,
+      "category": "other",
+      "severity": "high",
+      "original": "A GEE a nagylétékű távérzékelési elemzésben jeleskedik",
+      "suggested": "A GEE a nagyléptékű távérzékelési elemzésben jeleskedik",
+      "reason": "Elütés: „nagylétékű” helyett „nagyléptékű”."
+    },
+    {
+      "line_approx": 124,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Nem csupán fájlformátum, hanem a térbeli adatok szervezésének alapelve a térbeli információ olyan szervezéséhez",
+      "suggested": "Nem csupán fájlformátum, hanem a térbeli adatok szervezésének olyan alapelve, amely megőrzi",
+      "reason": "Az eredeti mondat szerkezete megtörik és erősen fordításszagú."
+    },
+    {
+      "line_approx": 204,
+      "category": "other",
+      "severity": "high",
+      "original": "A DEM magassági értékek szabályos rácsa",
+      "suggested": "A DEM magassági értékekből álló szabályos rács",
+      "reason": "Hiányos állítmányi szerkezet; a mondat jelen formájában nyelvtanilag töredékes."
+    },
+    {
+      "line_approx": 207,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A DEM térbeli felbontása határozza meg, mit fel tudja oldani, és mekkora adatmennyiséget tartalmaz.",
+      "suggested": "A DEM térbeli felbontása határozza meg, milyen részletek különíthetők el benne, és mekkora adatmennyiséget tartalmaz.",
+      "reason": "Az angol 'resolve' szó szerinti fordítása ('fel tudja oldani') magyarul természetellenes ebben a szövegkörnyezetben."
+    },
+    {
+      "line_approx": 208,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "túl durva a kis mellékpatakok vagy városi vízelvezető elemek feloldásához",
+      "suggested": "túl durva a kis mellékpatakok vagy a városi vízelvezető elemek elkülönítéséhez",
+      "reason": "A 'feloldás' itt nem bevett magyar szakmai kifejezés; az 'elkülönítés' vagy 'megjelenítés' természetesebb."
+    },
+    {
+      "line_approx": 210,
+      "category": "register",
+      "severity": "medium",
+      "original": "a cellaszám körülbelül 50 milliárdra ugrik",
+      "suggested": "a cellaszám körülbelül 50 milliárdra nő",
+      "reason": "Az 'ugrik' ebben a tudományos regiszterben kissé köznyelvi."
+    },
+    {
+      "line_approx": 210,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "speciális adatkezelést, csempézett feldolgozást és jelentős számítási erőforrásokat igényelve",
+      "suggested": "ami speciális adatkezelést, csempézett feldolgozást és jelentős számítási erőforrásokat igényel",
+      "reason": "Az angolból átvett -inges szerkezet ('igényelve') magyarul nehézkes, mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 212,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A DEM magassági pontossága ugyanannyira számít, mint a vízszintes felbontás a hidrológiai alkalmazások szempontjából.",
+      "suggested": "Hidrológiai alkalmazásokban a DEM magassági pontossága éppoly fontos, mint a vízszintes felbontása.",
+      "reason": "A mondat szórendje és szerkezete angolos; a javasolt változat gördülékenyebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 213,
+      "category": "register",
+      "severity": "medium",
+      "original": "megbízhatatlan folyásirányokat fog produkálni",
+      "suggested": "megbízhatatlan folyásirányokat eredményez",
+      "reason": "A 'fog produkálni' tükörfordítás-ízű és kevésbé akadémiai hangvételű."
+    },
+    {
+      "line_approx": 215,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A MERIT DEM kifejezetten ezt kezeli, eltávolítva a szisztematikus hibakomponenseket az SRTM-adatokból, tisztább domborzatmodellt biztosítva hidrológiai alkalmazásokhoz, még viszonylag durva felbontás mellett is.",
+      "suggested": "A MERIT DEM kifejezetten ezt a problémát kezeli: eltávolítja az SRTM-adatok szisztematikus hibakomponenseit, így hidrológiai alkalmazásokhoz tisztább domborzatmodellt ad még viszonylag durva felbontás mellett is.",
+      "reason": "Több egymásra torlódó angolos igenévi szerkezet ('eltávolítva', 'biztosítva'); magyarul egyszerűbb igei szerkezet kell."
+    },
+    {
+      "line_approx": 218,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "5 méteres felbontású lefedettséget biztosít",
+      "suggested": "5 méteres felbontású lefedettséget nyújt",
+      "reason": "A 'biztosít' túlhasznált angol mintájú ige; a 'nyújt' természetesebb ebben a kontextusban."
+    },
+    {
+      "line_approx": 218,
+      "category": "register",
+      "severity": "low",
+      "original": "Vetületi rendszer",
+      "suggested": "vetületi rendszer",
+      "reason": "Köznévi szerkezetben a 'vetületi rendszer' nem igényel nagy kezdőbetűt."
+    },
+    {
+      "line_approx": 219,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "10 méteres felbontású lefedettséget biztosít",
+      "suggested": "10 méteres felbontású lefedettséget nyújt",
+      "reason": "Ugyanaz a túl gyakori, angolos 'biztosít' igehasználat."
+    },
+    {
+      "line_approx": 220,
+      "category": "terminology",
+      "severity": "low",
+      "original": "megfelelő minőséget biztosít",
+      "suggested": "megfelelő minőséget nyújt",
+      "reason": "Stilisztikailag természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 224,
+      "category": "plural",
+      "severity": "low",
+      "original": "Országos léptékű tanulmányok",
+      "suggested": "Országos léptékű tanulmány",
+      "reason": "Táblázatfejben a magyar gyakran egyes számú kategóriamegnevezést használ."
+    },
+    {
+      "line_approx": 225,
+      "category": "plural",
+      "severity": "low",
+      "original": "Részletes helyi tanulmányok",
+      "suggested": "Részletes helyi tanulmány",
+      "reason": "Kategóriamegnevezésként természetesebb az egyes szám."
+    },
+    {
+      "line_approx": 228,
+      "category": "plural",
+      "severity": "low",
+      "original": "Országos tanulmányok (HU)",
+      "suggested": "Országos tanulmány (HU)",
+      "reason": "Táblázatbeli kategóriacímként felesleges többes szám."
+    },
+    {
+      "line_approx": 229,
+      "category": "plural",
+      "severity": "low",
+      "original": "Európai regionális tanulmányok",
+      "suggested": "Európai regionális tanulmány",
+      "reason": "Kategóriamegnevezésként természetesebb az egyes szám."
+    },
+    {
+      "line_approx": 232,
+      "category": "plural",
+      "severity": "low",
+      "original": "Gyors globális elemzés",
+      "suggested": "Gyors globális elemzéshez",
+      "reason": "A táblázat többi sorához igazodva célszerű egységes, funkciót jelölő megfogalmazást használni."
+    },
+    {
+      "line_approx": 234,
+      "category": "plural",
+      "severity": "low",
+      "original": "Hidrológiai alkalmazások",
+      "suggested": "Hidrológiai alkalmazás",
+      "reason": "Táblázatbeli kategóriamegnevezésként az egyes szám természetesebb."
+    },
+    {
+      "line_approx": 235,
+      "category": "plural",
+      "severity": "low",
+      "original": "Nagy pontosságú globális tanulmányok",
+      "suggested": "Nagy pontosságú globális tanulmány",
+      "reason": "Felesleges többes szám kategóriacímben."
+    },
+    {
+      "line_approx": 239,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vektoros és raszteres megjelenítés között",
+      "suggested": "vektoros és raszteres adatábrázolás között",
+      "reason": "A 'megjelenítés' itt nem pontos, mert nem pusztán vizualizációról, hanem adatreprezentációról van szó."
+    },
+    {
+      "line_approx": 240,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A megjelenítések közötti konverzió képessége",
+      "suggested": "Az ábrázolási módok közötti átalakítás képessége",
+      "reason": "A 'konverzió' és 'megjelenítések' együtt erősen fordításszagú; magyarul az 'átalakítás' és 'ábrázolási mód' természetesebb."
+    },
+    {
+      "line_approx": 240,
+      "category": "terminology",
+      "severity": "high",
+      "original": "a megjelenítéseken átnyúló átfedési műveletek végrehajtása",
+      "suggested": "az ábrázolási módokon átívelő átfedési műveletek elvégzése",
+      "reason": "A 'megjelenítéseken átnyúló' szó szerinti fordítás; magyarul az 'átívelő' természetesebb."
+    },
+    {
+      "line_approx": 243,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "így attribútumokat hordozó és hálózati elemzésben részt vevő vízhálózat jön létre",
+      "suggested": "így olyan vízhálózat jön létre, amely attribútumokkal látható el és hálózati elemzésre is alkalmas",
+      "reason": "Az eredeti szerkezet nehézkes és angolosan tömörített."
+    },
+    {
+      "line_approx": 244,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az attribúció, a területszámítás és a térbeli átfedés céljából",
+      "suggested": "az attribútumok hozzárendelése, a területszámítás és a térbeli átfedésvizsgálat céljából",
+      "reason": "Az 'attribúció' ebben a jelentésben szokatlan; magyar GIS-nyelvben körülírással természetesebb."
+    },
+    {
+      "line_approx": 246,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Egy felszínborítási poligon-adatkészlet raszterizálható a DEM cellaméretéhez igazítva",
+      "suggested": "Egy felszínborítási poligon-adatkészletet a DEM cellaméretéhez igazítva raszterizálhatunk",
+      "reason": "A személytelen, passzív jellegű szerkezet helyett a magyarban természetesebb az aktív megfogalmazás."
+    },
+    {
+      "line_approx": 249,
+      "category": "register",
+      "severity": "low",
+      "original": "A régi mondás",
+      "suggested": "A közismert mondás",
+      "reason": "A 'régi mondás' kissé esetleges; a 'közismert mondás' tudományos szövegben semlegesebb."
+    },
+    {
+      "line_approx": 250,
+      "category": "other",
+      "severity": "high",
+      "original": "A raszteres objektumok a geometriát négyzetes cellák gyűjteményeként közelítik",
+      "suggested": "A raszteres ábrázolás a geometriát négyzetes cellák gyűjteményeként közelíti",
+      "reason": "Nem a 'raszteres objektumok' közelítenek, hanem maga a raszteres ábrázolás; az eredeti alany szemantikailag pontatlan."
+    },
+    {
+      "line_approx": 250,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ugyanazt a műveletet alkalmazva minden cellára",
+      "suggested": "mivel ugyanaz a művelet hajtható végre minden cellán",
+      "reason": "Az igenévi szerkezet angolos; magyarul mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 250,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "pufferek számítása",
+      "suggested": "pufferzónák képzése",
+      "reason": "A 'puffer' meghonosodott, de a 'számítása' helyett a GIS-ben természetesebb a 'képzése' vagy 'létrehozása'."
+    },
+    {
+      "line_approx": 250,
+      "category": "other",
+      "severity": "high",
+      "original": "Nagylétékű hidrológiai modellezésnél",
+      "suggested": "Nagyléptékű hidrológiai modellezésnél",
+      "reason": "Elütés: 'nagylétékű' helyett 'nagyléptékű'."
+    },
+    {
+      "line_approx": 257,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az adatok geoadatbázisban való megléte csak a kezdet.",
+      "suggested": "Az, hogy az adatok rendelkezésre állnak egy geoadatbázisban, még csak a kezdet.",
+      "reason": "A 'való megléte' nehézkes, fordításszagú nominalizáció."
+    },
+    {
+      "line_approx": 258,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az a mechanizmus, amely a nyers GIS-adatokat értelmes térképekké alakítja",
+      "suggested": "az a folyamat, amely a nyers GIS-adatokat értelmezhető térképekké alakítja",
+      "reason": "A 'mechanizmus' itt túl szó szerinti és idegenszerű; a 'folyamat' természetesebb."
+    },
+    {
+      "line_approx": 261,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Egyszimbólumos és kategóriás megjelenítés",
+      "suggested": "Egyszerű és kategorizált megjelenítés",
+      "reason": "Az 'egyszimbólumos' szokatlan, kissé művi cím; a javasolt forma természetesebb magyar szaknyelv."
+    },
+    {
+      "line_approx": 262,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egyetlen szimbólumot rendel egy réteg összes objektumához",
+      "suggested": "ugyanazt a szimbólumot rendeli a réteg minden objektumához",
+      "reason": "A megfogalmazás magyarosabb és tömörebb."
+    },
+    {
+      "line_approx": 264,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kategóriás megjelenítés",
+      "suggested": "A kategorizált megjelenítés",
+      "reason": "A 'kategóriás' itt kevésbé bevett, mint a 'kategorizált'."
+    },
+    {
+      "line_approx": 266,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A QGIS-ben a kategóriás szimbológia a Rétegtulajdonságok párbeszédablakban, a Szimbológia fülön konfigurálható",
+      "suggested": "A QGIS-ben a kategorizált szimbológia a Rétegtulajdonságok párbeszédablak Szimbológia fülén állítható be",
+      "reason": "A 'konfigurálható' és a szórend is angolos; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 269,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Fokozatos szimbológia: számok átalakítása vizuális mintázatokká",
+      "suggested": "Fokozatos szimbológia: számértékek megjelenítése vizuális mintázatokként",
+      "reason": "Az 'átalakítása' itt kissé szó szerinti; a javasolt cím természetesebb magyarul."
+    },
+    {
+      "line_approx": 271,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Itt válik a szimbológia valódi elemzőeszközzé.",
+      "suggested": "Ezen a ponton válik a szimbológia valódi elemzőeszközzé.",
+      "reason": "Az 'itt válik' kissé beszélt nyelvi, az angol 'here' tükre; a javasolt forma akadémiaibb."
+    },
+    {
+      "line_approx": 274,
+      "category": "other",
+      "severity": "high",
+      "original": "Az részvízgyűjtők éves átlagos csapadék szerinti színezése",
+      "suggested": "A részvízgyűjtők éves átlagos csapadék szerinti színezése",
+      "reason": "Nyelvtani hiba: hibás névelőhasználat ('Az' helyett 'A')."
+    },
+    {
+      "line_approx": 276,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A vízügyi szakembernek kísérletezni kell különböző osztályozási módszerekkel ugyanazon az adaton, hogy melyik tár fel a leghasznosabb mintázatot",
+      "suggested": "A vízügyi szakembernek ugyanazon az adaton több osztályozási módszert is ki kell próbálnia, hogy kiderüljön, melyik tárja fel a leghasznosabb mintázatot",
+      "reason": "Az eredeti mondat szórendje és szerkezete nehézkes; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 284,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a raszter-megjelenítési csővezetéken keresztül",
+      "suggested": "a rasztermegjelenítési feldolgozási láncon keresztül",
+      "reason": "A 'csővezeték' az angol 'pipeline' szó szerinti fordítása, magyar szaknyelvben itt természetellenes."
+    },
+    {
+      "line_approx": 809,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a szakasz összefoglalja a gyakorlati útmutatást azon olvasók számára, akik a QGIS-t használják elsődleges platformként",
+      "suggested": "Ez a szakasz gyakorlati útmutatót ad azoknak az olvasóknak, akik elsődleges platformként a QGIS-t használják",
+      "reason": "Az „összefoglalja a gyakorlati útmutatást” angolos, körülményes szerkezet; magyarul természetesebb az „útmutatót ad”."
+    },
+    {
+      "line_approx": 813,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A QGIS teljes munkafolyamatot biztosít a vízgazdálkodási GIS-hez",
+      "suggested": "A QGIS teljes munkafolyamatot kínál a vízgazdálkodási térinformatikai feladatokhoz",
+      "reason": "A „biztosít” tipikus tükörfordítás, a „GIS-hez” pedig itt kevésbé természetes, mint a „térinformatikai feladatokhoz”."
+    },
+    {
+      "line_approx": 816,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Bár a QGIS-ből hiányzik az objektumadatkészlet-fogalom",
+      "suggested": "Bár a QGIS-ben nincs objektumadatkészlet-fogalom",
+      "reason": "A „QGIS-ből hiányzik” kevésbé természetes; a „QGIS-ben nincs” idiomatikusabb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 816,
+      "category": "register",
+      "severity": "low",
+      "original": "amely közös koordináta-rendszert kényszerít ki a csoportosított rétegekre",
+      "suggested": "amely közös koordináta-rendszer használatát írja elő a csoportosított rétegek számára",
+      "reason": "A „kényszerít ki” itt nyers, angolos; tudományos prózában természetesebb az „írja elő”."
+    },
+    {
+      "line_approx": 819,
+      "category": "terminology",
+      "severity": "low",
+      "original": "számos más megjelenítőtípust",
+      "suggested": "számos más megjelenítési típust",
+      "reason": "A „megjelenítőtípus” szokatlan terminus; a „megjelenítési típus” természetesebb magyar szaknyelvi forma."
+    },
+    {
+      "line_approx": 819,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "teljes kartográfiai kompozíciós eszközöket biztosít",
+      "suggested": "teljes körű kartográfiai szerkesztőeszközöket kínál",
+      "reason": "A „kompozíciós eszközök” angolos és nehézkes; a „szerkesztőeszközök” természetesebb."
+    },
+    {
+      "line_approx": 822,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "a Processing keretrendszer kezeli, amely a QGIS natív algoritmusokat, a GRASS GIS, a SAGA GIS, a GDAL/OGR és a telepített beépülő modulok eszközeit egyetlen kereshető felületen egyesíti",
+      "suggested": "a Processing keretrendszer kezeli; ez egyetlen kereshető felületen egyesíti a QGIS natív algoritmusait, valamint a GRASS GIS, a SAGA GIS, a GDAL/OGR és a telepített beépülő modulok eszközeit",
+      "reason": "Az eredeti mondat szórendje és szerkezete nehézkes, az „a QGIS natív algoritmusokat” nyelvtanilag is hibás."
+    },
+    {
+      "line_approx": 822,
+      "category": "terminology",
+      "severity": "low",
+      "original": "süllyedékkitöltés",
+      "suggested": "mélyedéskitöltés",
+      "reason": "A „süllyedékkitöltés” kevésbé bevett; domborzatelemzésben a „mélyedéskitöltés” természetesebb magyar megfelelő."
+    },
+    {
+      "line_approx": 822,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Processing grafikus modellező lehetővé teszi ezen eszközök automatizált munkafolyamatokká láncolását",
+      "suggested": "A Processing grafikus modellezővel ezek az eszközök automatizált munkafolyamatokká fűzhetők össze",
+      "reason": "A „lehetővé teszi ... láncolását” tipikus angolos szerkezet; magyarul tömörebben és természetesebben fogalmazható."
+    },
+    {
+      "line_approx": 825,
+      "category": "register",
+      "severity": "low",
+      "original": "programozási hozzáférést biztosít az összes QGIS-képességhez",
+      "suggested": "programozott hozzáférést ad a QGIS összes funkciójához",
+      "reason": "A „képesség” itt angolból átvett, kevésbé természetes; a „funkció” magyarul bevettebb."
+    },
+    {
+      "line_approx": 825,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az automatizálást alapszintű Python-készségekkel rendelkező felhasználók számára is elérhetővé teszi",
+      "suggested": "így az automatizálás az alapszintű Python-ismeretekkel rendelkező felhasználók számára is elérhető",
+      "reason": "Az „elérhetővé teszi” túlhasznált tükörfordítás; egyszerűbb állítmányi szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 829,
+      "category": "register",
+      "severity": "low",
+      "original": "különösen releváns",
+      "suggested": "különösen fontos",
+      "reason": "A „releváns” elfogadható, de itt kissé idegenszerű; a „fontos” gördülékenyebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 831,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A gyakorlati következmény az, hogy",
+      "suggested": "Ennek gyakorlati következménye, hogy",
+      "reason": "Az „az, hogy” szerkezet angolosan terpeszkedő; a tömörebb forma természetesebb."
+    },
+    {
+      "line_approx": 834,
+      "category": "register",
+      "severity": "low",
+      "original": "Az eredmények egyenértékűek",
+      "suggested": "Az eredmények lényegében azonosak",
+      "reason": "Az „egyenértékűek” itt kissé műszaki zsargon; a „lényegében azonosak” természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 836,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "nincs közvetlen QGIS-megfelelője",
+      "suggested": "nincs közvetlen megfelelője a QGIS-ben",
+      "reason": "A kötőjeles szerkezet angolos és nehézkes; a magyaros sorrend természetesebb."
+    },
+    {
+      "line_approx": 836,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez több erőfeszítést igényel, de nagyobb átláthatóságot is biztosít arról, mit csinál az egyes lépések",
+      "suggested": "Ez több munkát igényel, ugyanakkor átláthatóbbá teszi, hogy az egyes lépések mit csinálnak",
+      "reason": "A „biztosít arról” szerkezet magyarul hibásan hangzik; az egész mondat angolos felépítésű."
+    },
+    {
+      "line_approx": 838,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "úgy találják, hogy az ArcGIS Pro zökkenőmentesen integrálódik",
+      "suggested": "azt tapasztalják, hogy az ArcGIS Pro zökkenőmentesen illeszkedik ebbe a környezetbe",
+      "reason": "Az „úgy találják, hogy” szó szerinti angol fordítás; magyarul az „azt tapasztalják” természetes."
+    },
+    {
+      "line_approx": 842,
+      "category": "calque",
+      "severity": "medium",
+      "original": "végponttól végpontig tartó bemutatót nyújt",
+      "suggested": "teljes folyamatot bemutató ismertetést ad",
+      "reason": "Az „end-to-end” szó szerinti fordítása („végponttól végpontig”) itt idegenszerű."
+    },
+    {
+      "line_approx": 842,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A munkafolyamat az ArcGIS Pro-ra és a QGIS-re egyaránt alkalmazható fogalmi szinten van ismertetve",
+      "suggested": "A munkafolyamatot fogalmi szinten ismertetjük, így az egyaránt alkalmazható az ArcGIS Pro és a QGIS esetében",
+      "reason": "Az eredeti mondat szórendje nehézkes és angolos."
+    },
+    {
+      "line_approx": 842,
+      "category": "register",
+      "severity": "low",
+      "original": "hatalmas ökológiai és gazdasági jelentőségű rendszerébe",
+      "suggested": "nagy ökológiai és gazdasági jelentőségű rendszerébe",
+      "reason": "A „hatalmas jelentőségű” kissé publicisztikus; tudományos szövegben a „nagy jelentőségű” visszafogottabb."
+    },
+    {
+      "line_approx": 846,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HydroBASINS előre lehatárolt vízgyűjtő-poligonokat biztosít több léptékben globálisan",
+      "suggested": "A HydroBASINS globális lefedettséggel, több léptékben kínál előre lehatárolt vízgyűjtő-poligonokat",
+      "reason": "A „biztosít ... globálisan” angolos szerkezet; magyarul természetesebb az átrendezett mondat."
+    },
+    {
+      "line_approx": 847,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "Importáljuk a vízgyűjtő-határt, amelyet az importálás során a célvetületbe vetít át.",
+      "suggested": "Importáljuk a vízgyűjtő-határt, és az importálás során a célvetületbe vetítjük.",
+      "reason": "Az „amelyet ... vetít át” szerkezet alanytalan és nehézkes; a cselekvő szerkezet világosabb."
+    },
+    {
+      "line_approx": 850,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "és térbeli kiválasztással kinyerjük csak a Zala vízgyűjtő-határán belüli szakaszokat",
+      "suggested": "és térbeli kiválasztással csak a Zala vízgyűjtő-határán belüli szakaszokat nyerjük ki",
+      "reason": "A „csak” helye angolos; magyarul a fókusz előtt áll természetesen."
+    },
+    {
+      "line_approx": 856,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A domborzati színréteg 50%-os átlátszóságra állítása",
+      "suggested": "Ha a domborzati színréteget 50%-os átlátszóságúra állítjuk",
+      "reason": "A főnevesített szerkezet („állítása”) angolosan nehézkes; igés megfogalmazás gördülékenyebb."
+    },
+    {
+      "line_approx": 859,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Pont objektumosztályt hozunk létre",
+      "suggested": "Pont típusú objektumosztályt hozunk létre",
+      "reason": "A „pont objektumosztály” terminológiailag hiányos; a „pont típusú objektumosztály” szabatosabb."
+    },
+    {
+      "line_approx": 860,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez lehetővé teszi a mércék fokozatos szimbólumokkal -- nagyobb háromszögek a magasabb vízhozamú állomásokhoz -- való megjelenítését",
+      "suggested": "Így a mércék fokozatos méretű szimbólumokkal is megjeleníthetők -- a nagyobb háromszögek a nagyobb vízhozamú állomásokat jelölik --",
+      "reason": "A „lehetővé teszi ... megjelenítését” angolos és túlterhelt szerkezet."
+    },
+    {
+      "line_approx": 863,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "és szabványosított felszínborítási osztályozást biztosít egész Európa számára",
+      "suggested": "és egész Európára egységes felszínborítási osztályozást ad",
+      "reason": "A „biztosít ... számára” tipikus tükörfordítás; az „egységes ... ad” természetesebb."
+    },
+    {
+      "line_approx": 864,
+      "category": "register",
+      "severity": "low",
+      "original": "Hasznos kiegészítés ebben a fázisban a zónastatisztikák számítása",
+      "suggested": "Ebben a szakaszban hasznos kiegészítés a zónastatisztikák számítása",
+      "reason": "A „fázis” itt kissé idegenszerű; a „szakasz” vagy „lépés” természetesebb."
+    },
+    {
+      "line_approx": 871,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "így megkönnyítve az eligazodást a különböző szoftverkörnyezetek között",
+      "suggested": "így megkönnyíti az eligazodást a különböző szoftverkörnyezetek között",
+      "reason": "Az angolos, határozói igenévi szerkezet helyett magyarul természetesebb a kijelentő mondat."
+    }
+  ]
+}

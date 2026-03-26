@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What is the single most important input for watershed-scale hydrological analysis?",
+    "options": [
+      "A) Land cover",
+      "B) Soil data",
+      "C) Elevation data (DEM)",
+      "D) Precipitation"
+    ],
+    "correct": "C",
+    "explanation": "From a DEM, we derive flow direction, accumulation, stream networks, and watershed boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "The US 3DEP programme aims for what resolution nationwide?",
+    "options": [
+      "A) 90 m",
+      "B) 30 m",
+      "C) 10 m or better (LiDAR)",
+      "D) 1 m"
+    ],
+    "correct": "C",
+    "explanation": "3DEP targets LiDAR coverage at 1/9 arc-second (~3 m) or better."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus DEM GLO-30 resolution is:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "30-metre resolution, global coverage, freely available."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's national DEM is called:",
+    "options": [
+      "A) NED",
+      "B) SRTM",
+      "C) DDM-5",
+      "D) MERIT"
+    ],
+    "correct": "C",
+    "explanation": "DDM-5 at 5 m resolution from the Lechner Knowledge Centre."
+  },
+  {
+    "type": "mcq",
+    "question": "SRTM data was collected during a single flight in:",
+    "options": [
+      "A) 1990",
+      "B) 1995",
+      "C) 2000",
+      "D) 2005"
+    ],
+    "correct": "C",
+    "explanation": "February 2000, an 11-day Space Shuttle flight."
+  },
+  {
+    "type": "mcq",
+    "question": "MERIT DEM improves existing DEMs by:",
+    "options": [
+      "A) Collecting new satellite data",
+      "B) Removing stripe noise, bias, speckle, and tree height bias",
+      "C) Increasing resolution to 10 m",
+      "D) Adding bathymetry"
+    ],
+    "correct": "B",
+    "explanation": "MERIT applies error correction to SRTM and AW3D30."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus contains approximately how many reach catchments?",
+    "options": [
+      "A) 270,000",
+      "B) 1.2 million",
+      "C) 2.7 million",
+      "D) 5 million"
+    ],
+    "correct": "C",
+    "explanation": "2.7 million reach catchments across the US."
+  },
+  {
+    "type": "mcq",
+    "question": "The unique reach identifier in NHDPlus V2 is called:",
+    "options": [
+      "A) HUC",
+      "B) COMID",
+      "C) FID",
+      "D) OBJECTID"
+    ],
+    "correct": "B",
+    "explanation": "COMID serves as a universal address for any stream reach."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-Hydro is produced by:",
+    "options": [
+      "A) ECMWF",
+      "B) Copernicus Land Monitoring Service",
+      "C) EEA",
+      "D) Eurostat"
+    ],
+    "correct": "B",
+    "explanation": "The Copernicus Land Monitoring Service produces EU-Hydro."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroSHEDS was developed by:",
+    "options": [
+      "A) USGS",
+      "B) NASA",
+      "C) WWF Conservation Science Program",
+      "D) ECMWF"
+    ],
+    "correct": "C",
+    "explanation": "World Wildlife Fund's Conservation Science Program."
+  },
+  {
+    "type": "mcq",
+    "question": "CORINE Land Cover uses how many classes?",
+    "options": [
+      "A) 11",
+      "B) 16",
+      "C) 30",
+      "D) 44"
+    ],
+    "correct": "D",
+    "explanation": "A 44-class hierarchical system organised into three levels."
+  },
+  {
+    "type": "mcq",
+    "question": "NLCD uses how many land cover classes?",
+    "options": [
+      "A) 11",
+      "B) 16",
+      "C) 30",
+      "D) 44"
+    ],
+    "correct": "B",
+    "explanation": "A 16-class system for the United States."
+  },
+  {
+    "type": "mcq",
+    "question": "ESA WorldCover provides global land cover at what resolution?",
+    "options": [
+      "A) 30 m",
+      "B) 10 m",
+      "C) 100 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "First global land cover at 10-metre resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "Dynamic World provides land cover updates how frequently?",
+    "options": [
+      "A) Annually",
+      "B) Monthly",
+      "C) Every 5 days (with each Sentinel-2 pass)",
+      "D) Hourly"
+    ],
+    "correct": "C",
+    "explanation": "Updated continuously with each new Sentinel-2 image."
+  },
+  {
+    "type": "mcq",
+    "question": "SSURGO provides US soil data at what scale?",
+    "options": [
+      "A) 1:250,000",
+      "B) 1:100,000",
+      "C) 1:24,000",
+      "D) 1:10,000"
+    ],
+    "correct": "C",
+    "explanation": "Detailed county-level mapping at 1:24,000."
+  },
+  {
+    "type": "mcq",
+    "question": "SoilGrids provides global soil data at what resolution?",
+    "options": [
+      "A) 1 km",
+      "B) 500 m",
+      "C) 250 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "250-metre resolution from ISRIC using machine learning."
+  },
+  {
+    "type": "mcq",
+    "question": "ESDAC is operated by:",
+    "options": [
+      "A) USDA",
+      "B) FAO",
+      "C) JRC",
+      "D) ECMWF"
+    ],
+    "correct": "C",
+    "explanation": "European Soil Data Centre operated by the Joint Research Centre."
+  },
+  {
+    "type": "mcq",
+    "question": "PRISM provides US climate data at what resolution?",
+    "options": [
+      "A) 1 km",
+      "B) 4 km",
+      "C) 12 km",
+      "D) 30 km"
+    ],
+    "correct": "B",
+    "explanation": "Approximately 4-km resolution for the United States."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 temporal resolution is:",
+    "options": [
+      "A) Daily",
+      "B) 6-hourly",
+      "C) Hourly",
+      "D) 15-minute"
+    ],
+    "correct": "C",
+    "explanation": "Hourly time steps."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 spatial resolution is approximately:",
+    "options": [
+      "A) 9 km",
+      "B) 15 km",
+      "C) 31 km",
+      "D) 50 km"
+    ],
+    "correct": "C",
+    "explanation": "~31 km horizontal resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5-Land resolution is approximately:",
+    "options": [
+      "A) 31 km",
+      "B) 15 km",
+      "C) 9 km",
+      "D) 5 km"
+    ],
+    "correct": "C",
+    "explanation": "~9 km, higher-resolution land surface component."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS coverage extends from:",
+    "options": [
+      "A) 30S to 30N",
+      "B) 50S to 50N",
+      "C) 67S to 67N",
+      "D) Global"
+    ],
+    "correct": "B",
+    "explanation": "Quasi-global 50S to 50N."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS resolution is:",
+    "options": [
+      "A) 1 km",
+      "B) 5 km",
+      "C) 10 km",
+      "D) 25 km"
+    ],
+    "correct": "B",
+    "explanation": "0.05-degree (~5 km) resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "GPM/IMERG temporal resolution is:",
+    "options": [
+      "A) Daily",
+      "B) 3-hourly",
+      "C) Half-hourly",
+      "D) 10-minute"
+    ],
+    "correct": "C",
+    "explanation": "Half-hourly temporal resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "USGS NWIS has approximately how many active stream gauges?",
+    "options": [
+      "A) 3,000",
+      "B) 5,000",
+      "C) 7,000",
+      "D) 10,000"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 7,000 active stream gauges."
+  },
+  {
+    "type": "mcq",
+    "question": "GRDC holds records from how many stations globally?",
+    "options": [
+      "A) 3,500",
+      "B) 5,800",
+      "C) 9,800",
+      "D) 15,000"
+    ],
+    "correct": "C",
+    "explanation": "More than 9,800 stations worldwide."
+  },
+  {
+    "type": "mcq",
+    "question": "WaterML is standardised for water time series data exchange. Its format is:",
+    "options": [
+      "A) JSON",
+      "B) CSV",
+      "C) XML",
+      "D) HDF5"
+    ],
+    "correct": "C",
+    "explanation": "XML-based format adopted by USGS and WMO."
+  },
+  {
+    "type": "mcq",
+    "question": "The FEMA NFHL maps primarily show:",
+    "options": [
+      "A) Real-time flood forecasts",
+      "B) 100-year and 500-year floodplains",
+      "C) Dam breach inundation zones",
+      "D) Tsunami risk areas"
+    ],
+    "correct": "B",
+    "explanation": "100-year (1% AEP) and 500-year (0.2% AEP) floodplains."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's data.vizugy.hu became freely accessible in:",
+    "options": [
+      "A) January 2023",
+      "B) July 2024",
+      "C) March 2024",
+      "D) December 2023"
+    ],
+    "correct": "B",
+    "explanation": "Since July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "WorldPop provides gridded population at what resolution?",
+    "options": [
+      "A) 1 km only",
+      "B) 100 m and 1 km",
+      "C) 10 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "100-metre and 1-km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "LandScan estimates what type of population?",
+    "options": [
+      "A) Residential (nighttime)",
+      "B) Ambient (24-hour average)",
+      "C) Daytime workforce",
+      "D) Peak seasonal"
+    ],
+    "correct": "B",
+    "explanation": "24-hour average 'ambient' population."
+  },
+  {
+    "type": "mcq",
+    "question": "GADM provides:",
+    "options": [
+      "A) Global soil data",
+      "B) Global administrative boundaries",
+      "C) Global DEM data",
+      "D) Global discharge data"
+    ],
+    "correct": "B",
+    "explanation": "High-resolution boundaries for all countries."
+  },
+  {
+    "type": "mcq",
+    "question": "The US Census finest spatial unit is:",
+    "options": [
+      "A) County",
+      "B) Census tract",
+      "C) Block group",
+      "D) Census block"
+    ],
+    "correct": "D",
+    "explanation": "~11 million census blocks, population counts only."
+  },
+  {
+    "type": "mcq",
+    "question": "The EU uses what hierarchy for administrative boundaries?",
+    "options": [
+      "A) HUC system",
+      "B) NUTS hierarchy",
+      "C) TIGER/Line",
+      "D) WBD system"
+    ],
+    "correct": "B",
+    "explanation": "NUTS0–NUTS3 plus LAU municipalities."
+  },
+  {
+    "type": "mcq",
+    "question": "How many OMSZ weather stations are there in Hungary?",
+    "options": [
+      "A) 68",
+      "B) 98",
+      "C) 136",
+      "D) 200"
+    ],
+    "correct": "C",
+    "explanation": "136 stations with 10-minute resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM covers what time period?",
+    "options": [
+      "A) 1951–2000",
+      "B) 1961–2010",
+      "C) 1971–2020",
+      "D) 1981–2010"
+    ],
+    "correct": "B",
+    "explanation": "1961–2010."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS current version (as stated in chapter) is:",
+    "options": [
+      "A) v28.0e",
+      "B) v30.0e",
+      "C) v32.0e",
+      "D) v34.0e"
+    ],
+    "correct": "C",
+    "explanation": "v32.0e (November 2025)."
+  },
+  {
+    "type": "mcq",
+    "question": "Sentinel-2 provides optical imagery at what resolution?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "C",
+    "explanation": "10-metre resolution with 5-day revisit."
+  },
+  {
+    "type": "mcq",
+    "question": "Landsat provides imagery at what resolution?",
+    "options": [
+      "A) 10 m",
+      "B) 20 m",
+      "C) 30 m",
+      "D) 60 m"
+    ],
+    "correct": "C",
+    "explanation": "30-metre resolution multispectral imagery."
+  },
+  {
+    "type": "mcq",
+    "question": "Google Earth Engine is free for:",
+    "options": [
+      "A) Commercial use only",
+      "B) Government use only",
+      "C) Academic and research use",
+      "D) All uses"
+    ],
+    "correct": "C",
+    "explanation": "Free for academic and research use."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus Data Space replaced the Open Access Hub in:",
+    "options": [
+      "A) June 2022",
+      "B) October 2023",
+      "C) March 2024",
+      "D) January 2025"
+    ],
+    "correct": "B",
+    "explanation": "October 2023."
+  },
+  {
+    "type": "mcq",
+    "question": "Which soil product provides a 30 m gridded version of SSURGO?",
+    "options": [
+      "A) STATSGO",
+      "B) POLARIS",
+      "C) SoilGrids",
+      "D) HWSD"
+    ],
+    "correct": "B",
+    "explanation": "POLARIS uses ML to remap SSURGO to a 30 m grid."
+  },
+  {
+    "type": "mcq",
+    "question": "The HUC system has how many levels?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 10"
+    ],
+    "correct": "B",
+    "explanation": "Six levels from 2-digit regions to 12-digit sub-watersheds."
+  },
+  {
+    "type": "mcq",
+    "question": "How many 12-digit sub-watersheds (HUC-12) exist in the US?",
+    "options": [
+      "A) ~10,000",
+      "B) ~50,000",
+      "C) ~100,000",
+      "D) ~200,000"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 100,000 HUC-12 sub-watersheds."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus DEM is a:",
+    "options": [
+      "A) Digital Terrain Model (bare ground)",
+      "B) Digital Surface Model (includes buildings/trees)",
+      "C) Bathymetric model",
+      "D) Point cloud"
+    ],
+    "correct": "B",
+    "explanation": "DSM capturing tops of features, not bare ground."
+  },
+  {
+    "type": "mcq",
+    "question": "The Zala River watershed drains approximately:",
+    "options": [
+      "A) 1,200 km²",
+      "B) 2,622 km²",
+      "C) 3,500 km²",
+      "D) 5,000 km²"
+    ],
+    "correct": "B",
+    "explanation": "~2,622 km² before entering Lake Balaton."
+  },
+  {
+    "type": "mcq",
+    "question": "ALOS AW3D30 is produced by:",
+    "options": [
+      "A) NASA",
+      "B) ESA",
+      "C) JAXA",
+      "D) DLR"
+    ],
+    "correct": "C",
+    "explanation": "Japan Aerospace Exploration Agency."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroLAKES contains data for how many lakes?",
+    "options": [
+      "A) 100,000",
+      "B) 500,000",
+      "C) 1.4 million",
+      "D) 5 million"
+    ],
+    "correct": "C",
+    "explanation": "1.4 million lakes with surface area >10 hectares."
+  },
+  {
+    "type": "mcq",
+    "question": "CRU TS provides data from what year?",
+    "options": [
+      "A) 1850",
+      "B) 1901",
+      "C) 1940",
+      "D) 1961"
+    ],
+    "correct": "B",
+    "explanation": "Monthly gridded data from 1901 to present."
+  },
+  {
+    "type": "mcq",
+    "question": "The Dartmouth Flood Observatory maintains:",
+    "options": [
+      "A) Global groundwater data",
+      "B) Global flood event archive since 1985",
+      "C) European soil database",
+      "D) US weather station network"
+    ],
+    "correct": "B",
+    "explanation": "Global archive of large flood events using satellite observations."
+  },
+  {
+    "type": "mcq",
+    "question": "DesInventar Sendai covers how many countries?",
+    "options": [
+      "A) 42",
+      "B) 62",
+      "C) 82",
+      "D) 120"
+    ],
+    "correct": "C",
+    "explanation": "82 countries under the UN Sendai Framework."
+  },
+  {
+    "type": "mcq",
+    "question": "NASA Earthdata provides access to how many petabytes?",
+    "options": [
+      "A) 50",
+      "B) 100",
+      "C) 178",
+      "D) 500"
+    ],
+    "correct": "C",
+    "explanation": "More than 178 petabytes through multiple DAACs."
+  },
+  {
+    "type": "mcq",
+    "question": "GEMStat provides data on:",
+    "options": [
+      "A) Global river networks",
+      "B) Global water quality",
+      "C) Global elevation",
+      "D) Global flood forecasts"
+    ],
+    "correct": "B",
+    "explanation": "UNEP GEMS/Water Programme operational database."
+  },
+  {
+    "type": "mcq",
+    "question": "The NLDAS resolution is approximately:",
+    "options": [
+      "A) 4 km",
+      "B) 12.5 km",
+      "C) 31 km",
+      "D) 50 km"
+    ],
+    "correct": "B",
+    "explanation": "1/8-degree (~12.5 km) for the continental US."
+  },
+  {
+    "type": "mcq",
+    "question": "FAO AQUASTAT provides:",
+    "options": [
+      "A) Real-time flood data",
+      "B) Country-level water resource statistics",
+      "C) Global DEM data",
+      "D) Satellite imagery"
+    ],
+    "correct": "B",
+    "explanation": "Water resource statistics and withdrawal data for all countries."
+  },
+  {
+    "type": "mcq",
+    "question": "The Little Bear Logan watershed (HUC-8) has what code?",
+    "options": [
+      "A) 16010101",
+      "B) 16010203",
+      "C) 14020001",
+      "D) 12040003"
+    ],
+    "correct": "B",
+    "explanation": "HUC-8 16010203."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the average NHDPlus reach length?",
+    "options": [
+      "A) ~0.5 km",
+      "B) ~2 km",
+      "C) ~5 km",
+      "D) ~10 km"
+    ],
+    "correct": "B",
+    "explanation": "Average length of about 2 km."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the average NHDPlus catchment area?",
+    "options": [
+      "A) ~1 km²",
+      "B) ~3 km²",
+      "C) ~10 km²",
+      "D) ~30 km²"
+    ],
+    "correct": "B",
+    "explanation": "Average area of about 3 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "MODIS land cover product (MCD12Q1) has been available since:",
+    "options": [
+      "A) 1990",
+      "B) 1995",
+      "C) 2001",
+      "D) 2010"
+    ],
+    "correct": "C",
+    "explanation": "Annual global land cover at 500 m since 2001."
+  },
+  {
+    "type": "mcq",
+    "question": "HWSD version 2.0 was developed jointly by:",
+    "options": [
+      "A) USGS and NASA",
+      "B) IIASA and FAO",
+      "C) JRC and EEA",
+      "D) ISRIC and WMO"
+    ],
+    "correct": "B",
+    "explanation": "International Institute for Applied Systems Analysis and FAO."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sentinel-1 SAR capability is critical for flood mapping because:",
+    "options": [
+      "A) It provides colour imagery",
+      "B) Water appears dark in radar images, enabling all-weather detection",
+      "C) It measures gravity",
+      "D) It provides hourly revisit"
+    ],
+    "correct": "B",
+    "explanation": "Water appears dark in SAR images regardless of cloud cover."
+  },
+  {
+    "type": "mcq",
+    "question": "Which data format does ECMWF use natively?",
+    "options": [
+      "A) GeoTIFF",
+      "B) Shapefile",
+      "C) GRIB",
+      "D) HDF5"
+    ],
+    "correct": "C",
+    "explanation": "GRIB is ECMWF's native format for gridded data."
+  },
+  {
+    "type": "mcq",
+    "question": "APHRODITE provides precipitation data for:",
+    "options": [
+      "A) Africa",
+      "B) South America",
+      "C) Monsoon Asia",
+      "D) Europe"
+    ],
+    "correct": "C",
+    "explanation": "Asian Precipitation dataset for monsoon Asia."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary has how many administrative counties (megye)?",
+    "options": [
+      "A) 7",
+      "B) 13",
+      "C) 19 plus Budapest",
+      "D) 25"
+    ],
+    "correct": "C",
+    "explanation": "19 counties plus Budapest."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary has approximately how many municipalities (telepules)?",
+    "options": [
+      "A) 500",
+      "B) 1,500",
+      "C) 3,155",
+      "D) 5,000"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 3,155 municipalities."
+  },
+  {
+    "type": "true_false",
+    "question": "Elevation data (DEM) is the single most important input for watershed-scale hydrology.",
+    "correct": true,
+    "explanation": "Flow direction, accumulation, networks, and boundaries all derive from DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM is a Digital Terrain Model showing bare ground.",
+    "correct": false,
+    "explanation": "It's a Digital Surface Model capturing building/tree tops."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus V2 contains approximately 2.7 million reach catchments.",
+    "correct": true,
+    "explanation": "Across the entire United States."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS was developed by NASA.",
+    "correct": false,
+    "explanation": "By WWF Conservation Science Program."
+  },
+  {
+    "type": "true_false",
+    "question": "CORINE has more land cover classes than NLCD.",
+    "correct": true,
+    "explanation": "44 vs 16 classes."
+  },
+  {
+    "type": "true_false",
+    "question": "ESA WorldCover is the first global 10 m land cover map.",
+    "correct": true,
+    "explanation": "From Sentinel-1 and Sentinel-2 data."
+  },
+  {
+    "type": "true_false",
+    "question": "SSURGO mapping scale is 1:250,000.",
+    "correct": false,
+    "explanation": "SSURGO is 1:24,000; STATSGO is 1:250,000."
+  },
+  {
+    "type": "true_false",
+    "question": "SoilGrids uses machine learning for soil property predictions.",
+    "correct": true,
+    "explanation": "Trained on global soil profile observations."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 covers the period from 1979 to present.",
+    "correct": false,
+    "explanation": "ERA5 covers from 1940 to present."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS was specifically designed for data-sparse regions.",
+    "correct": true,
+    "explanation": "Sub-Saharan Africa, Central Asia, and similar regions."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream gauges are declining worldwide.",
+    "correct": true,
+    "explanation": "The global peak occurred in the 1980s."
+  },
+  {
+    "type": "true_false",
+    "question": "USGS NWIS serves approximately 7,000 active stream gauges.",
+    "correct": true,
+    "explanation": "The most comprehensive public streamflow database."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's data.vizugy.hu requires paid subscription.",
+    "correct": false,
+    "explanation": "Freely accessible since July 2024."
+  },
+  {
+    "type": "true_false",
+    "question": "WorldPop provides population data at 100 m resolution.",
+    "correct": true,
+    "explanation": "Also available at 1 km."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Earth Engine requires a paid subscription for academic use.",
+    "correct": false,
+    "explanation": "Free for academic and research use."
+  },
+  {
+    "type": "true_false",
+    "question": "Sentinel-2 provides 10 m resolution optical imagery.",
+    "correct": true,
+    "explanation": "With 5-day revisit at equator."
+  },
+  {
+    "type": "true_false",
+    "question": "PRISM provides global climate data.",
+    "correct": false,
+    "explanation": "United States only."
+  },
+  {
+    "type": "true_false",
+    "question": "The FEMA NFHL prevented most flood damage during Hurricane Harvey.",
+    "correct": false,
+    "explanation": "~60% of damaged buildings were outside mapped floodplains."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS provides uncertainty estimates through a 20-member ensemble.",
+    "correct": true,
+    "explanation": "Rare feature among climate datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "MERIT DEM collects new satellite data for improved elevation.",
+    "correct": false,
+    "explanation": "It applies error correction to existing DEMs (SRTM, AW3D30)."
+  },
+  {
+    "type": "true_false",
+    "question": "WaterML was adopted by both USGS and WMO.",
+    "correct": true,
+    "explanation": "Enabling machine-to-machine data exchange."
+  },
+  {
+    "type": "true_false",
+    "question": "The DDM-5 is freely downloadable.",
+    "correct": false,
+    "explanation": "Must be ordered through Lechner data services."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroLAKES contains data for 1.4 million lakes.",
+    "correct": true,
+    "explanation": "Lakes with surface area >10 hectares."
+  },
+  {
+    "type": "true_false",
+    "question": "CARPATCLIM harmonises data across 9 countries.",
+    "correct": true,
+    "explanation": "Led by OMSZ for the Carpathian region."
+  },
+  {
+    "type": "true_false",
+    "question": "LandScan estimates residential (nighttime) population only.",
+    "correct": false,
+    "explanation": "It estimates ambient (24-hour average) population."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM GLO-30 should be the default choice for new projects.",
+    "correct": true,
+    "explanation": "More recent and accurate than SRTM."
+  },
+  {
+    "type": "true_false",
+    "question": "The US HUC system has 8 hierarchical levels.",
+    "correct": false,
+    "explanation": "6 levels (2-digit to 12-digit)."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM covers the entire globe.",
+    "correct": false,
+    "explanation": "60°N to 56°S only."
+  },
+  {
+    "type": "true_false",
+    "question": "ALOS AW3D30 often outperforms SRTM in mountainous terrain.",
+    "correct": true,
+    "explanation": "Less affected by canopy penetration and layover."
+  },
+  {
+    "type": "true_false",
+    "question": "CRU TS provides data from 1901 to present.",
+    "correct": true,
+    "explanation": "The longest-running global gridded climate dataset."
+  },
+  {
+    "type": "true_false",
+    "question": "Dynamic World provides near-real-time land cover classification.",
+    "correct": true,
+    "explanation": "Updated with each Sentinel-2 image."
+  },
+  {
+    "type": "true_false",
+    "question": "POLARIS is a 30 m gridded version of SSURGO.",
+    "correct": true,
+    "explanation": "Using ML techniques from Princeton University."
+  },
+  {
+    "type": "true_false",
+    "question": "GPM/IMERG has half-hourly temporal resolution.",
+    "correct": true,
+    "explanation": "Capturing individual storm passage."
+  },
+  {
+    "type": "true_false",
+    "question": "EU-Hydro provides both river networks and catchment boundaries.",
+    "correct": true,
+    "explanation": "With stream order and connectivity attributes."
+  },
+  {
+    "type": "true_false",
+    "question": "The WISE portal links to WFD reporting data across EU member states.",
+    "correct": true,
+    "explanation": "Water Information System for Europe."
+  },
+  {
+    "type": "true_false",
+    "question": "OMSZ operates 200 weather stations in Hungary.",
+    "correct": false,
+    "explanation": "136 stations."
+  },
+  {
+    "type": "true_false",
+    "question": "GRDC holds approximately 435,000 station-years of data.",
+    "correct": true,
+    "explanation": "From 9,800+ stations worldwide."
+  },
+  {
+    "type": "true_false",
+    "question": "Sentinel-1 SAR can map floods regardless of cloud cover.",
+    "correct": true,
+    "explanation": "Radar penetrates clouds; water appears dark."
+  },
+  {
+    "type": "true_false",
+    "question": "The NHDPlus EROM provides gauge-adjusted flow estimates.",
+    "correct": true,
+    "explanation": "Enhanced Runoff Method mean annual flow."
+  },
+  {
+    "type": "true_false",
+    "question": "GISCO provides geographic boundary files for NUTS regions.",
+    "correct": true,
+    "explanation": "In shapefile, GeoJSON, and TopoJSON."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM data is newer than Copernicus DEM data.",
+    "correct": false,
+    "explanation": "SRTM is from 2000; Copernicus from 2011-2015."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zala River drains into Lake Balaton.",
+    "correct": true,
+    "explanation": "Most important tributary to Balaton."
+  },
+  {
+    "type": "true_false",
+    "question": "SSURGO has 7,530 polygons for Travis County, Texas.",
+    "correct": true,
+    "explanation": "As cited in the chapter example."
+  },
+  {
+    "type": "true_false",
+    "question": "MODIS provides daily global coverage.",
+    "correct": true,
+    "explanation": "At 250 m to 1 km resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Data Space replaced scihub.copernicus.eu.",
+    "correct": true,
+    "explanation": "In October 2023."
+  },
+  {
+    "type": "true_false",
+    "question": "For Hungarian studies, ERA5-Land is recommended as the primary driving dataset.",
+    "correct": true,
+    "explanation": "With E-OBS for validation and CARPATCLIM for historical analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "GloFAS v4.0 provides forecasts at 0.05° resolution.",
+    "correct": true,
+    "explanation": "Up to 30 days ahead."
+  },
+  {
+    "type": "true_false",
+    "question": "GADM provides global administrative boundaries for free.",
+    "correct": true,
+    "explanation": "High-resolution boundaries for all countries."
+  },
+  {
+    "type": "true_false",
+    "question": "NASA Earthdata provides access to more than 178 PB of data.",
+    "correct": true,
+    "explanation": "Through multiple DAACs."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's flood risk maps were most recently revised in 2022.",
+    "correct": true,
+    "explanation": "In compliance with EU Floods Directive."
+  },
+  {
+    "type": "true_false",
+    "question": "The NHDPlus ToHUC field enables downstream network tracing.",
+    "correct": true,
+    "explanation": "Providing downstream connectivity information."
+  },
+  {
+    "type": "true_false",
+    "question": "Landsat has been collecting continuous data since 1972.",
+    "correct": true,
+    "explanation": "More than 50 years of Earth observation."
+  },
+  {
+    "type": "true_false",
+    "question": "SoilGrids is under a proprietary licence.",
+    "correct": false,
+    "explanation": "Freely available under CC-BY 4.0."
+  },
+  {
+    "type": "true_false",
+    "question": "Data from multiple sources often disagree, reflecting different processing rather than errors.",
+    "correct": true,
+    "explanation": "Different sources, algorithms, time periods, and definitions."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM uses NAVD88 as vertical datum.",
+    "correct": false,
+    "explanation": "EGM2008 geoid vertical datum."
+  },
+  {
+    "type": "true_false",
+    "question": "The KWSD v2.0 has approximately 30,000 soil mapping units.",
+    "correct": true,
+    "explanation": "Nearly 30,000 units with 7 depth layers."
+  },
+  {
+    "type": "true_false",
+    "question": "The US has a comprehensive nationwide LiDAR programme comparable to no other country.",
+    "correct": true,
+    "explanation": "3DEP aims to cover the entire US with LiDAR."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary has comprehensive nationwide LiDAR coverage.",
+    "correct": false,
+    "explanation": "Only fragmented surveys for specific areas."
+  },
+  {
+    "type": "true_false",
+    "question": "The average NHDPlus catchment area is about 3 km².",
+    "correct": true,
+    "explanation": "With average reach length of ~2 km."
+  },
+  {
+    "type": "true_false",
+    "question": "CORINE land cover is available as both vector and raster.",
+    "correct": true,
+    "explanation": "Vector polygons and 100 m raster grids."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Emergency Management Service provides on-demand rapid mapping for disasters.",
+    "correct": true,
+    "explanation": "Activated by authorised users."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS resolution options include 0.1 and 0.25 degrees.",
+    "correct": true,
+    "explanation": "Daily gridded temperature and precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroBASINS provides watershed boundaries at 12 hierarchical levels.",
+    "correct": true,
+    "explanation": "Enabling nested watershed analysis globally."
+  },
+  {
+    "type": "true_false",
+    "question": "NLDAS provides hourly data at 1/8-degree resolution.",
+    "correct": true,
+    "explanation": "For the continental United States."
+  },
+  {
+    "type": "true_false",
+    "question": "India WRIS provides consistent international data access.",
+    "correct": false,
+    "explanation": "International access can be inconsistent."
+  },
+  {
+    "type": "true_false",
+    "question": "GEE brings computation to the data rather than downloading data locally.",
+    "correct": true,
+    "explanation": "Cloud-based analysis without downloading."
+  },
+  {
+    "type": "true_false",
+    "question": "The 3DEP programme represents a shift from LiDAR to photogrammetric DEMs.",
+    "correct": false,
+    "explanation": "The shift is from photogrammetric to LiDAR."
+  },
+  {
+    "type": "true_false",
+    "question": "The GloFAS serves regions without their own forecasting systems.",
+    "correct": true,
+    "explanation": "Much of sub-Saharan Africa, Central Asia, etc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ data is the single most important input for watershed-scale hydrological analysis.",
+    "correct": "Elevation (DEM)",
+    "explanation": "Foundation for flow direction, accumulation, and watershed delineation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US national DEM programme is called _____.",
+    "correct": "3DEP (3D Elevation Program)",
+    "explanation": "Superseding the NED."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's 5 m national DEM is called _____.",
+    "correct": "DDM-5",
+    "explanation": "Produced by the Lechner Knowledge Centre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ DEM GLO-30 is the recommended default for new projects.",
+    "correct": "Copernicus",
+    "explanation": "30 m, free, more recent than SRTM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM was collected during a _____ -day Space Shuttle flight.",
+    "correct": "11",
+    "explanation": "In February 2000."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus uses the _____ as a unique reach identifier.",
+    "correct": "COMID",
+    "explanation": "Universal address for any stream point in the US."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU-Hydro is produced by the Copernicus _____ Monitoring Service.",
+    "correct": "Land",
+    "explanation": "Providing pan-European river networks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroSHEDS was developed by the _____ Conservation Science Program.",
+    "correct": "WWF (World Wildlife Fund)",
+    "explanation": "Derived from SRTM DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CORINE Land Cover uses a _____-class system.",
+    "correct": "44",
+    "explanation": "Hierarchical, three-level classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NLCD uses a _____-class system.",
+    "correct": "16",
+    "explanation": "For the United States."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESA WorldCover is the first global land cover at _____ m resolution.",
+    "correct": "10",
+    "explanation": "From Sentinel-1 and Sentinel-2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides near-real-time land cover updated with each Sentinel-2 pass.",
+    "correct": "Dynamic World",
+    "explanation": "Developed by Google and WRI."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SSURGO provides detailed US soil data at 1:_____ scale.",
+    "correct": "24,000",
+    "explanation": "County-level mapping."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SoilGrids provides global soil data at _____ m resolution.",
+    "correct": "250",
+    "explanation": "Using machine learning from ISRIC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESDAC is operated by the _____.",
+    "correct": "JRC (Joint Research Centre)",
+    "explanation": "European Soil Data Centre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PRISM provides US climate data at ~_____ km resolution.",
+    "correct": "4",
+    "explanation": "Parameter-elevation Regressions on Independent Slopes Model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 covers the period from _____ to present.",
+    "correct": "1940",
+    "explanation": "Fifth-generation ECMWF reanalysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5-Land resolution is ~_____ km.",
+    "correct": "9",
+    "explanation": "Higher-resolution land surface component."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS resolution is ~_____ km.",
+    "correct": "5",
+    "explanation": "0.05-degree quasi-global rainfall."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM/IMERG has _____-hourly temporal resolution.",
+    "correct": "half",
+    "explanation": "Capturing storm passage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "USGS NWIS serves ~_____ active stream gauges.",
+    "correct": "7,000",
+    "explanation": "Most comprehensive public database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRDC holds records from >_____ stations.",
+    "correct": "9,800",
+    "explanation": "Globally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "data.vizugy.hu became freely accessible in July _____.",
+    "correct": "2024",
+    "explanation": "Opening Hungarian hydrographic data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WorldPop provides population data at _____ m and 1 km resolution.",
+    "correct": "100",
+    "explanation": "Especially for developing countries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LandScan estimates the '_____ ' (24-hour average) population.",
+    "correct": "ambient",
+    "explanation": "Accounting for daily population movements."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US Census finest unit is the census _____.",
+    "correct": "block",
+    "explanation": "~11 million nationwide."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU administrative boundaries use the _____ hierarchy.",
+    "correct": "NUTS",
+    "explanation": "NUTS0 through NUTS3 plus LAU."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OMSZ operates _____ weather stations in Hungary.",
+    "correct": "136",
+    "explanation": "With 10-minute resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM covers _____ to 2010.",
+    "correct": "1961",
+    "explanation": "50-year historical climate baseline."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sentinel-2 provides _____ m optical imagery.",
+    "correct": "10",
+    "explanation": "With 5-day revisit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Landsat has been collecting data since _____.",
+    "correct": "1972",
+    "explanation": "Over 50 years continuously."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Google Earth Engine is free for _____ use.",
+    "correct": "academic/research",
+    "explanation": "Providing data and computing power."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus Data Space replaced the Open Access Hub in October _____.",
+    "correct": "2023",
+    "explanation": "New access platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides a 30 m gridded version of SSURGO using ML.",
+    "correct": "POLARIS",
+    "explanation": "From Princeton University."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HUC system has _____ hierarchical levels.",
+    "correct": "6",
+    "explanation": "2-digit to 12-digit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "There are approximately _____ HUC-12 sub-watersheds in the US.",
+    "correct": "100,000",
+    "explanation": "Finest level of the HUC hierarchy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroLAKES contains _____ million lakes.",
+    "correct": "1.4",
+    "explanation": "Surface area >10 hectares."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CRU TS provides data from _____ to present.",
+    "correct": "1901",
+    "explanation": "Longest global gridded climate dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ALOS AW3D30 is produced by _____.",
+    "correct": "JAXA",
+    "explanation": "Japan Aerospace Exploration Agency."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zala River watershed drains approximately _____ km².",
+    "correct": "2,622",
+    "explanation": "Before entering Lake Balaton."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NASA Earthdata provides access to >_____ petabytes.",
+    "correct": "178",
+    "explanation": "Through multiple DAACs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT DEM was developed by Dai Yamazaki at the University of _____.",
+    "correct": "Tokyo",
+    "explanation": "Multi-Error-Removed Improved-Terrain DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ programme provides satellite imagery including Sentinel-1 and -2.",
+    "correct": "Copernicus",
+    "explanation": "EU's Earth observation programme."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus average reach length is ~_____ km.",
+    "correct": "2",
+    "explanation": "Average catchment area ~3 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ provides standardised data exchange for water time series.",
+    "correct": "WaterML",
+    "explanation": "XML-based format."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEMA maps show the _____ -year and 500-year floodplains.",
+    "correct": "100",
+    "explanation": "1% and 0.2% annual exceedance probability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has _____ counties (megye) plus Budapest.",
+    "correct": "19",
+    "explanation": "Administrative divisions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has approximately _____ municipalities.",
+    "correct": "3,155",
+    "explanation": "Settlement/telepules level."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides on-demand rapid mapping for active disasters.",
+    "correct": "Copernicus EMS (Emergency Management Service)",
+    "explanation": "Activated by authorised users."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODIS land cover product has been available since _____.",
+    "correct": "2001",
+    "explanation": "Annual at 500 m resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HWSD v2.0 has ~_____ soil mapping units.",
+    "correct": "30,000",
+    "explanation": "At 1 km resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "APHRODITE covers _____ Asia precipitation.",
+    "correct": "monsoon",
+    "explanation": "Including Middle East and Russia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GEMStat provides global water _____ data.",
+    "correct": "quality",
+    "explanation": "UNEP GEMS/Water Programme."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NLDAS provides _____ data at 1/8-degree resolution.",
+    "correct": "hourly",
+    "explanation": "For the continental US."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DesInventar Sendai covers _____ countries.",
+    "correct": "82",
+    "explanation": "Under the UN Sendai Framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Dartmouth Flood Observatory maintains a flood archive since _____.",
+    "correct": "1985",
+    "explanation": "Using satellite observations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NHDPlus _____ field provides downstream connectivity.",
+    "correct": "ToHUC",
+    "explanation": "Enabling network tracing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus DEM vertical datum is _____.",
+    "correct": "EGM2008",
+    "explanation": "Geoid-referenced heights."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ provides the best freely available 10 m DEM for European countries.",
+    "correct": "Copernicus EEA-10",
+    "explanation": "For qualified users."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US Census _____ Survey supplements the decennial census continuously.",
+    "correct": "American Community (ACS)",
+    "explanation": "Socioeconomic data updated annually."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GISCO provides _____ boundary files for NUTS regions.",
+    "correct": "geographic",
+    "explanation": "In multiple formats."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ portal provides real-time Hungarian flood forecasts.",
+    "correct": "HYDROINFO",
+    "explanation": "For Danube, Tisza, Drava-Mura."
+  },
+  {
+    "type": "fill_blank",
+    "question": "POLARIS was developed at _____ University.",
+    "correct": "Princeton",
+    "explanation": "Using ML techniques."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Raster data typically comes as _____ or NetCDF.",
+    "correct": "GeoTIFF",
+    "explanation": "Standard raster formats."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Vector data commonly comes as _____ or geodatabases.",
+    "correct": "shapefiles",
+    "explanation": "Standard vector formats."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The practical data workflow is: find terrain, find rivers, find rain, find _____.",
+    "correct": "flow",
+    "explanation": "The four fundamental data needs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS provides a _____-member ensemble with uncertainty estimates.",
+    "correct": "20",
+    "explanation": "Rare feature in climate datasets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sentinel-1 provides C-band _____ imagery.",
+    "correct": "SAR (Synthetic Aperture Radar)",
+    "explanation": "All-weather, day-and-night."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus EROM stands for _____ Runoff Method.",
+    "correct": "Enhanced",
+    "explanation": "Gauge-adjusted mean annual flow estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ in Water Resources framework links climate data, elevation, hydrology, and land cover.",
+    "correct": "NHDPlus",
+    "explanation": "Integrating four major national datasets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three-tier data landscape consists of US, EU, and _____ datasets.",
+    "correct": "Global",
+    "explanation": "Serving data-sparse regions worldwide."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For raster formats, ECMWF natively uses _____.",
+    "correct": "GRIB",
+    "explanation": "GRIdded Binary format."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODIS sensors are aboard the _____ and Aqua satellites.",
+    "correct": "Terra",
+    "explanation": "Daily global coverage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DDM-5 is in the _____ projected coordinate system.",
+    "correct": "EOV (EPSG:23700)",
+    "explanation": "Hungary's national projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WISE stands for Water Information System for _____.",
+    "correct": "Europe",
+    "explanation": "Pan-European WFD portal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Boundary Dataset provides HUC polygon boundaries at all six levels.",
+    "correct": "Watershed (WBD)",
+    "explanation": "Distributed as part of NHDPlus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US maintains approximately _____ HUC-8 sub-basins.",
+    "correct": "2,270",
+    "explanation": "Fourth level of the HUC hierarchy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sentinel-_____ provides atmospheric composition data.",
+    "correct": "5P",
+    "explanation": "NO₂, SO₂, O₃, CH₄, CO, aerosol."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus CLMS provides High Resolution _____ for specific themes.",
+    "correct": "Layers",
+    "explanation": "Imperviousness, tree cover, grassland, etc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For site-specific Hungarian studies, _____ station data provides ground truth.",
+    "correct": "OMSZ",
+    "explanation": "But requires spatial interpolation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County TX has _____ soil map units in SSURGO.",
+    "correct": "103",
+    "explanation": "Represented by 7,530 polygons."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the US NHDPlus and the European EU-Hydro river network datasets.",
+    "correct": "NHDPlus integrates four national datasets into 2.7 million reach catchments with COMID identifiers, gauge-adjusted flow estimates (EROM), drainage area, slope, stream order, and NLCD land cover percentages. EU-Hydro provides pan-European river networks and catchments with stream order and connectivity from Copernicus. The key difference: NHDPlus is a pre-integrated package (elevation + network + land cover + boundaries in one download), while EU-Hydro requires assembling equivalent layers from separate sources. Both serve the same purpose but reflect different institutional traditions.",
+    "explanation": "Sections 3.3.2 and 3.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why DEM resolution choice matters for hydrological analysis.",
+    "correct": "A 90 m DEM may suffice for delineating major river basins but cannot resolve small tributaries that flood villages. A 1 m LiDAR DEM maps individual ditches and levees but requires immense computation over large areas. The resolution determines what features can be resolved: stream channels, floodplain microtopography, levees, and drainage ditches. Every subsequent analysis step (flow direction, accumulation, watershed boundaries) propagates the DEM's resolution and accuracy characteristics.",
+    "explanation": "Section 3.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three-tier water data landscape and its significance.",
+    "correct": "Tier 1 (US): USGS, NOAA, FEMA, NASA with decades of federal investment — NHDPlus, NWIS, NWM, Landsat. Tier 2 (EU): Copernicus programme, EEA, JRC, ECMWF — EU-Hydro, ERA5, EFAS, Sentinel. Tier 3 (Global): HydroSHEDS, CHIRPS, GPM, SoilGrids, GEE — serving data-sparse regions. A reader in Texas and one in Debrecen face different data landscapes, but the logic is identical: find terrain, rivers, rain, flow.",
+    "explanation": "Section 3.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare CORINE and ESA WorldCover land cover datasets for Hungarian applications.",
+    "correct": "CORINE: 44 classes, 100 m raster, 1990-2018, detailed thematic hierarchy distinguishing vineyard from arable from pasture — excellent for the Hungarian landscape's variety. WorldCover: 11 classes, 10 m resolution, 2020-2021, resolves individual fields and narrow corridors invisible at 100 m. Trade-off: CORINE has more thematic detail; WorldCover has finer spatial detail. For hydrological modelling requiring spatial precision, WorldCover's 10 m may be preferred; for land use analysis, CORINE's 44 classes are superior.",
+    "explanation": "Sections 3.4.3 and 3.4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of stream gauge decline worldwide and how global datasets compensate.",
+    "correct": "Stream gauges are declining globally since their 1980s peak due to maintenance costs (infrastructure, regular discharge measurements, telemetry). In developing countries, costs are prohibitive. This creates a vicious cycle: without observations, models can't be calibrated, forecasts are unreliable, early warning fails. Global datasets partially compensate: GloFAS provides flood forecasts, GRACE monitors water storage, CHIRPS/GPM provide rainfall, and ERA5 provides atmospheric data — all independent of ground networks.",
+    "explanation": "Sections 3.7.1 and related."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the US vs Hungarian workflow for building a watershed base map.",
+    "correct": "US: Download NHDPlus (pre-integrated package), extract HUC-8 boundary, get HUC-12 sub-watersheds, add flow lines with EROM flow, import NWIS gauge locations, connect to NWM via COMID. Hungarian: Download Copernicus DEM, obtain EU-Hydro network, delineate watershed from DEM (or use HydroBASINS), download CORINE land cover, get ESDAC soil data, access OVF gauge data from data.vizugy.hu. Logic is identical; the EU workflow requires assembling layers from separate sources.",
+    "explanation": "Section 3.12."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of Google Earth Engine in democratising hidroinformatics.",
+    "correct": "GEE provides free access to petabytes of satellite data (Landsat 50+ year archive, all Sentinel missions, MODIS, ERA5, CHIRPS, SoilGrids, WorldPop) plus cloud computing for analysis. Operations that would take days locally complete in minutes. For students and researchers in data-sparse regions, GEE eliminates both data access and computing infrastructure barriers. It is often the single most important tool for researchers in developing countries.",
+    "explanation": "Section 3.10.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare precipitation data sources for a study in Hungary.",
+    "correct": "ERA5-Land (9 km, hourly, 1950-present): best for continuous model driving, physically consistent. E-OBS (10-25 km, daily, 1950-present): observation-based validation with uncertainty estimates. CARPATCLIM (10 km, daily, 1961-2010): harmonised across 9 countries, best historical baseline. OMSZ stations (136, 10-minute): ground truth but requires interpolation. Recommendation: ERA5-Land for driving, E-OBS for validation, CARPATCLIM for historical analysis, OMSZ for site-specific studies.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what makes NHDPlus value-added attributes analytically powerful.",
+    "correct": "Each of 2.7 million reaches carries: COMID (unique identifier linking to NWM), EROM gauge-adjusted mean annual flow, local and cumulative drainage area, channel slope, Strahler stream order, NLCD land cover percentages, and ToHUC downstream connectivity. This enables: network tracing (upstream/downstream), flow estimation without gauges, land use impact analysis per catchment, and direct connection to operational forecasting. Without these attributes, it would be just lines on a map.",
+    "explanation": "Section 3.3.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of soil data in hydrological modelling and compare US and global sources.",
+    "correct": "Soil determines infiltration, storage, and runoff partitioning — often more important than DEM for peak flows in small catchments. US: SSURGO at 1:24,000 (most detailed national survey), POLARIS at 30 m (gridded ML version). Europe: ESDAC at 1 km with LUCAS point data. Global: SoilGrids at 250 m (ML-based) and HWSD at 1 km (classification-based). SoilGrids is recommended for spatial patterns; HWSD for broader context. Key properties: texture, hydraulic conductivity, porosity, field capacity.",
+    "explanation": "Section 3.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the Copernicus DEM GLO-30 is recommended over SRTM for new projects.",
+    "correct": "GLO-30 advantages: more recent acquisition (2011-2015 vs 2000), better vertical accuracy (<4 m vs 6-9 m), global coverage including areas SRTM missed, derived from TanDEM-X radar mission. SRTM remains valuable for: legacy compatibility, established hydrological derivatives (HydroSHEDS), and the 25-year baseline for change detection. For any new project, GLO-30 is the default unless specific compatibility requirements favour SRTM.",
+    "explanation": "Section 3.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the comprehensive data equivalence table and its practical use.",
+    "correct": "Table 3.7 maps equivalent datasets across US, Hungary, EU, and Global tiers for every data type (DEM, rivers, land cover, soil, weather, discharge, flood, demographics, imagery). When starting a project in a new region, the table provides the starting point: 'what is the local equivalent of NHDPlus?' (EU-Hydro or HydroSHEDS). 'What replaces PRISM?' (E-OBS/ERA5 or CHIRPS). This makes the three-tier approach practical rather than theoretical.",
+    "explanation": "Section 3.11."
+  },
+  {
+    "type": "essay",
+    "question": "Compare static flood hazard maps (FEMA, JRC) with dynamic forecasting systems (NWM, EFAS).",
+    "correct": "Static maps (FEMA NFHL, JRC) show where flooding might occur under specified return periods (100-yr, 500-yr), informing land use planning and insurance. Dynamic systems (NWM, EFAS) predict flooding in real time from current weather. Harvey showed static maps' limitation: 60% of damage was outside mapped floodplains. Modern approaches combine both: pre-computed scenarios activated by real-time forecasts. JRC uses continental-scale modelling (more consistent) vs FEMA's county-by-county approach.",
+    "explanation": "Section 3.8."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Zala River watershed base map workflow using European data.",
+    "correct": "1) Download Copernicus DEM GLO-30 tiles for ~46.5-47.2°N, 16.5-17.5°E. 2) Set CRS to UTM 34N (EPSG:25834) or EOV (EPSG:23700). 3) Get EU-Hydro river network from Copernicus Land. 4) Delineate watershed from DEM (fill sinks → flow direction → accumulation → outlet at Balaton entry) or use HydroBASINS. 5) Download CORINE land cover. 6) Get ESDAC/SoilGrids soil data. 7) Access OVF gauges from data.vizugy.hu. 8) Validate by overlaying all layers.",
+    "explanation": "Section 3.12.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of GRACE/GRACE-FO and the G3P product for European water management.",
+    "correct": "GRACE measures total terrestrial water storage changes at ~300 km monthly resolution — the only way to monitor groundwater from space. The G3P product (GFZ Potsdam) separates total storage into soil moisture, surface water, and groundwater using hydrological models. For Hungarian hydrologists, GRACE/G3P provides basin-scale perspective on Tisza basin and Great Plain water storage changes. While too coarse for local management, it's invaluable for water balance validation and detecting long-term storage trends.",
+    "explanation": "Section 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why data format awareness matters for practical hydroinformatics work.",
+    "correct": "Water data arrives in varied formats: elevation as GeoTIFF/NetCDF, river networks as shapefiles/geodatabases/GeoPackage, climate data as GRIB/NetCDF, gauge data as CSV/WaterML/APIs, satellite data as SAFE/HDF5. The key skill isn't memorising formats but understanding patterns: rasters → GeoTIFF/NetCDF, vectors → shapefiles/geodatabases, time series → tabular/APIs. Modern GIS (ArcGIS Pro, QGIS) and Python (rasterio, geopandas, xarray) read all formats.",
+    "explanation": "Section 3.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the US HUC watershed hierarchy with the EU WFD approach.",
+    "correct": "HUC: rigid numerical hierarchy from 2-digit regions (21) to 12-digit sub-watersheds (~100,000), nationally consistent. EU/WFD: River Basin Districts (Danube largest), sub-basins, and water bodies, regulatory-driven. EU also uses NUTS for administrative boundaries. Key difference: HUC is purely hydrological; WFD integrates water quality status, pressures, and management measures. Hungary belongs to the Danube RBD and organises internally by regional water directorates rather than numerical codes.",
+    "explanation": "Section 3.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of Sentinel-2 for water resources compared to Landsat.",
+    "correct": "Sentinel-2: 10 m resolution (3× finer than Landsat's 30 m), 5-day revisit (vs 16 days), 13 spectral bands, free and open. At 10 m, Sentinel-2 resolves individual fields, small settlements, and narrow riparian corridors invisible at 30 m. Landsat's advantage: 50+ year archive enabling long-term change detection. Together they provide the backbone of optical Earth observation for water resources, with Sentinel-2 preferred for spatial detail and Landsat for temporal depth.",
+    "explanation": "Sections 3.10.2 and 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical registration recommendations for water data access.",
+    "correct": "Create accounts before project deadlines at: NASA Earthdata (SRTM, MODIS, GRACE, GPM), Copernicus Climate Data Store (ERA5, E-OBS, CARPATCLIM), Copernicus Data Space (Sentinel, DEM), Google Earth Engine (cloud analysis), GRDC (global discharge). For Hungarian data: data.vizugy.hu and HYDROINFO need no registration. KSH data and OMSZ climate summaries are also freely accessible. The overhead of registration is minor but delays under deadline pressure can be costly.",
+    "explanation": "Section 3.13.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the chapter addresses data source conflicts between datasets.",
+    "correct": "When datasets disagree (CORINE vs WorldCover, SRTM vs Copernicus DEM, ERA5 vs E-OBS), the discrepancies reflect different sources, algorithms, time periods, and definitions — not errors. The practical response: understand provenance and choose based on application. CORINE for thematic detail, WorldCover for spatial detail. ERA5 for physical consistency, E-OBS for observation fidelity. National products for local accuracy, global products for interoperability. Context determines the best choice.",
+    "explanation": "Section 3.13.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the Copernicus Emergency Management Service for flood response.",
+    "correct": "Copernicus EMS provides on-demand rapid mapping activated by authorised users (national civil protection agencies) during active disasters. It uses satellite imagery (Sentinel-1 SAR for all-weather flood mapping, Sentinel-2 optical) to produce near-real-time maps of flood extent, damage assessment, and situation updates. This complements static flood risk maps (JRC) and operational forecasting (EFAS) by providing event-specific spatial intelligence during emergencies.",
+    "explanation": "Section 3.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare population data sources for flood exposure analysis across different regions.",
+    "correct": "US: Census Bureau (11M blocks to state level), ACS for socioeconomic data, TIGER/Line boundaries. Hungary: KSH (megye → jaras → telepules → szamlalokorzt), Eurostat/GISCO for EU context. Global: WorldPop (100 m/1 km, ML-based), LandScan (1 km, ambient population), GADM (admin boundaries). For developing regions, WorldPop + GADM provides workable estimates where census geography is unavailable. Census block groups (US) or telepules (Hungary) offer the best balance of resolution and attribute richness.",
+    "explanation": "Section 3.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the nine categories of water data and how they answer different questions.",
+    "correct": "(1) Elevation: what does the terrain look like? (2) River networks: where does water flow? (3) Land cover: what covers the ground? (4) Soil: what lies beneath? (5) Weather/climate: what falls from the sky? (6) Discharge: how much water moves through rivers? (7) Flood data: where has/might water go? (8) Demographics: who is at risk? (9) Satellite imagery: what can we see from above? Each answers a specific question; together they provide the complete picture for watershed analysis.",
+    "explanation": "Section 3.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of data.vizugy.hu opening for Hungarian hydroinformatics.",
+    "correct": "Before July 2024, OVF hydrographic data required formal requests. The opening made water level, discharge, temperature, and groundwater data freely accessible. This portal uniquely combines river network geometry (like NHDPlus) and gauge observations (like USGS NWIS). The opening aligns Hungary with global open data trends, enables integration with European/global datasets, and supports reproducible science. For researchers, it removes a significant data access barrier.",
+    "explanation": "Section 3.7.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of HydroSHEDS as the global equivalent of NHDPlus.",
+    "correct": "HydroSHEDS provides: HydroRIVERS (global river networks with stream order, drainage area, discharge estimates), HydroBASINS (nested watershed boundaries at 12 hierarchical levels), and HydroLAKES (1.4 million lakes with volume and residence time). Derived from SRTM DEM, freely available. For data-sparse regions (Africa, Asia, S. America), HydroSHEDS may be the only systematic river network and watershed dataset available. Version 2 will incorporate improved Copernicus and MERIT DEMs.",
+    "explanation": "Section 3.3.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical recommendation for Hungarian climate data selection.",
+    "correct": "ERA5-Land (9 km, hourly) as primary driving dataset for continuous simulation — physically consistent model output. E-OBS (10-25 km, daily) for observation-based validation with 20-member uncertainty ensemble. CARPATCLIM (10 km, daily, 1961-2010) for historical climate analysis — harmonised across 9 Carpathian countries. OMSZ station data (136 stations, 10-minute) for ground truth at specific locations, requiring spatial interpolation for gridded use.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare GRACE and conventional gauge networks for monitoring water resources.",
+    "correct": "Gauges: high temporal resolution (sub-daily), point measurements requiring interpolation, declining networks (peaked in 1980s), measuring only surface water levels/discharge. GRACE: monthly temporal resolution, ~300 km spatial resolution, global coverage, measures total water storage (surface + soil + groundwater). GRACE fills the 'invisible' groundwater gap that gauges cannot monitor at scale. Both are essential: gauges for local precision, GRACE for regional total water balance.",
+    "explanation": "Sections 3.7 and 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of a watershed base map and why it is the starting point for any project.",
+    "correct": "A watershed base map assembles the foundational layers for hydrological analysis: watershed boundary, sub-watershed boundaries, stream network with flow attributes, gauge locations, plus optionally DEM, land cover, and soil. It provides the spatial framework linking all subsequent analysis. Every project, regardless of location, begins with this assembly — whether from NHDPlus (US, pre-integrated), EU-Hydro + Copernicus (Europe, separate sources), or HydroSHEDS + global datasets (elsewhere).",
+    "explanation": "Section 3.12.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the NHDPlus pre-integrated approach differs from the European data assembly approach.",
+    "correct": "NHDPlus integrates NED (elevation), NHD (stream geometry), NLCD (land cover), and WBD (watershed boundaries) into a single downloadable package with pre-computed attributes (flow, slope, land cover percentages). The European workflow requires downloading Copernicus DEM, EU-Hydro, CORINE, and ESDAC separately, performing watershed delineation from DEM if needed, and assembling layers manually. This reflects institutional history (US centralised federal investment vs EU distributed agency structure), not data quality differences.",
+    "explanation": "Section 3.12."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the LiDAR revolution in elevation data and its impact on flood mapping.",
+    "correct": "LiDAR produces point clouds with 10-20 cm vertical accuracy, enabling applications impossible with photogrammetric DEMs: mapping individual levees, detecting subtle channel geometry changes, computing HAND indices for modern flood mapping. The US 3DEP aims for nationwide LiDAR coverage. Hungary lacks comprehensive LiDAR — only fragmented surveys exist. For flood mapping where margins are centimetres (as the 2013 Danube showed), LiDAR accuracy is transformative. Copernicus EEA-10 partially bridges the gap at 10 m.",
+    "explanation": "Section 3.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare SRTM, ALOS AW3D30, Copernicus GLO-30, and MERIT DEM for different applications.",
+    "correct": "SRTM (30 m, 2000): most widely used historically, basis for HydroSHEDS, good for legacy compatibility. ALOS AW3D30 (30 m, 2006-11): optical stereo, better in mountains/tropics. Copernicus GLO-30 (30 m, 2011-15): newer, better accuracy (<4 m), recommended default. MERIT (90 m): error-corrected composite, best for large-scale modelling. Choose based on application: GLO-30 for new projects, MERIT for continental modelling, SRTM for HydroSHEDS compatibility, AW3D30 for difficult terrain.",
+    "explanation": "Section 3.2.4 and Table 3.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the chapter connects coordinate system considerations to data integration.",
+    "correct": "When assembling multi-source data: US data arrives in NAD83/WGS84, Hungarian data in HD72/EOV (EPSG:23700), EU data in ETRS89 (4258/3035), global data in WGS84 (4326). All must be transformed to a common system. The HD72→ETRS89 transformation (EPSG:1449, 7-parameter Helmert) is a routine first step for combining Hungarian and European data. For sub-metre accuracy, the Lechner national grid shift file is needed. Chapter 2 provides the theoretical foundation; chapter 3 makes it practically necessary.",
+    "explanation": "Section 3.13.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the roles of different satellite missions for water resources applications.",
+    "correct": "Landsat (30 m, 50+ yr archive): land cover change, long-term monitoring. Sentinel-2 (10 m, 5-day): high-resolution land cover, vegetation, water quality. Sentinel-1 SAR: all-weather flood mapping, soil moisture. MODIS (250-1000 m, daily): vegetation indices, snow cover, land surface temperature. GRACE: total water storage including groundwater. GPM: near-global precipitation. Each fills a specific niche; cloud platforms (GEE, Copernicus Data Space) provide unified access.",
+    "explanation": "Section 3.10."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the challenges and solutions for soil data in hydrological modelling.",
+    "correct": "Soil controls infiltration, storage, and runoff partitioning, yet receives less attention than elevation or precipitation. Key properties: texture, Ksat, porosity, field capacity, depth. Challenges: harder to measure, visualise, and historically access than other data types. Solutions: SSURGO (US, 1:24,000), POLARIS (US, 30 m gridded), ESDAC (Europe, 1 km), SoilGrids (global, 250 m, ML-based), HWSD (global, 1 km). For data-sparse regions, SoilGrids provides the best spatial pattern.",
+    "explanation": "Section 3.5."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the EU WFD framework with the US approach to water body classification.",
+    "correct": "US: HUC system organises watersheds by numerical hierarchy (2-12 digits), purely hydrological. EU WFD: organises waters into River Basin Districts, sub-basins, and individual water bodies with mandatory ecological status assessment. WFD requires member states to classify pressures, impacts, and achieve 'good status' for each body. The EU approach integrates regulation (water quality, ecology) with spatial organisation, while the US separates hydrological (HUC/NHDPlus) and regulatory (EPA/CWA) frameworks.",
+    "explanation": "Section 3.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical importance of data format awareness for modern hydroinformatics.",
+    "correct": "Water data arrives in diverse formats: GeoTIFF/NetCDF for rasters, shapefiles/geodatabases for vectors, GRIB for ECMWF products, WaterML for gauge data, SAFE for Sentinel, HDF5 for MODIS. The critical skill is understanding patterns rather than memorising formats. Modern tools (ArcGIS Pro, QGIS, Python with rasterio/geopandas/xarray) read all formats. Knowing which format to expect prevents wasted time: ERA5→GRIB, Copernicus DEM→GeoTIFF, gauge data→CSV/WaterML.",
+    "explanation": "Section 3.13.2."
+  },
+  {
+    "type": "mcq",
+    "question": "DSM stands for:",
+    "options": [
+      "A) Digital Soil Model",
+      "B) Digital Surface Model",
+      "C) Digital Stream Model",
+      "D) Digital Slope Model"
+    ],
+    "correct": "B",
+    "explanation": "Captures building/tree tops."
+  },
+  {
+    "type": "mcq",
+    "question": "POLARIS was developed at:",
+    "options": [
+      "A) MIT",
+      "B) Stanford",
+      "C) Princeton",
+      "D) Cornell"
+    ],
+    "correct": "C",
+    "explanation": "ML to grid SSURGO at 30 m."
+  },
+  {
+    "type": "mcq",
+    "question": "CORINE raster resolution:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 100 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "100-metre raster grids."
+  },
+  {
+    "type": "mcq",
+    "question": "NLCD change products show transitions between:",
+    "options": [
+      "A) Soil types",
+      "B) Land cover categories",
+      "C) Elevation classes",
+      "D) Population bins"
+    ],
+    "correct": "B",
+    "explanation": "Across time intervals."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus EEA-10 is available to:",
+    "options": [
+      "A) All users",
+      "B) EU citizens",
+      "C) Qualified users",
+      "D) Government only"
+    ],
+    "correct": "C",
+    "explanation": "Restricted access."
+  },
+  {
+    "type": "mcq",
+    "question": "STATSGO scale:",
+    "options": [
+      "A) 1:24,000",
+      "B) 1:100,000",
+      "C) 1:250,000",
+      "D) 1:500,000"
+    ],
+    "correct": "C",
+    "explanation": "Broader than SSURGO."
+  },
+  {
+    "type": "mcq",
+    "question": "HWSD stands for:",
+    "options": [
+      "A) Hydrological World Soil Database",
+      "B) Harmonized World Soil Database",
+      "C) Hungarian Water/Soil DB",
+      "D) High-res World Soil Dataset"
+    ],
+    "correct": "B",
+    "explanation": "From IIASA and FAO."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 is produced by:",
+    "options": [
+      "A) NASA",
+      "B) NOAA",
+      "C) ECMWF",
+      "D) JRC"
+    ],
+    "correct": "C",
+    "explanation": "Fifth-generation reanalysis."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS producer:",
+    "options": [
+      "A) ECMWF",
+      "B) KNMI/ECA&D",
+      "C) NASA",
+      "D) OMSZ"
+    ],
+    "correct": "B",
+    "explanation": "Royal Netherlands Meteorological Institute."
+  },
+  {
+    "type": "mcq",
+    "question": "LUCAS provides:",
+    "options": [
+      "A) Global soil maps",
+      "B) US soil maps",
+      "C) European sample points",
+      "D) Asian profiles"
+    ],
+    "correct": "C",
+    "explanation": "EU soil sampling survey."
+  },
+  {
+    "type": "mcq",
+    "question": "USGS WaterWatch provides:",
+    "options": [
+      "A) Soil moisture",
+      "B) Real-time streamflow visualisation",
+      "C) Groundwater only",
+      "D) Water quality"
+    ],
+    "correct": "B",
+    "explanation": "Rivers above/below normal."
+  },
+  {
+    "type": "mcq",
+    "question": "How many HUC-2 regions in US?",
+    "options": [
+      "A) 10",
+      "B) 15",
+      "C) 21",
+      "D) 30"
+    ],
+    "correct": "C",
+    "explanation": "21 major regions."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus GLO-90 resolution:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "Free, global."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus HR mapping scale:",
+    "options": [
+      "A) 1:100,000",
+      "B) 1:24,000",
+      "C) 1:250,000",
+      "D) Satellite"
+    ],
+    "correct": "B",
+    "explanation": "High-resolution version."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus DEM vertical accuracy specification:",
+    "options": [
+      "A) <1 m",
+      "B) <4 m (90% conf)",
+      "C) <10 m",
+      "D) <20 m"
+    ],
+    "correct": "B",
+    "explanation": "Better than 4 m at 90% confidence."
+  },
+  {
+    "type": "mcq",
+    "question": "Sentinel Hub provides access via:",
+    "options": [
+      "A) Sentinel-1 only",
+      "B) Sentinel-2 only",
+      "C) All Copernicus data",
+      "D) DEM only"
+    ],
+    "correct": "C",
+    "explanation": "Through Copernicus Data Space."
+  },
+  {
+    "type": "mcq",
+    "question": "SMAP measures:",
+    "options": [
+      "A) Elevation",
+      "B) Soil moisture",
+      "C) Temperature",
+      "D) Ocean currents"
+    ],
+    "correct": "B",
+    "explanation": "Soil Moisture Active Passive."
+  },
+  {
+    "type": "mcq",
+    "question": "Dynamic World developer:",
+    "options": [
+      "A) NASA/USGS",
+      "B) Google/WRI",
+      "C) ESA/JRC",
+      "D) ECMWF/KNMI"
+    ],
+    "correct": "B",
+    "explanation": "Joint Google-WRI."
+  },
+  {
+    "type": "mcq",
+    "question": "MODIS resolution range:",
+    "options": [
+      "A) 1-10 m",
+      "B) 10-30 m",
+      "C) 30-100 m",
+      "D) 250 m-1 km"
+    ],
+    "correct": "D",
+    "explanation": "Depending on band."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroBASINS hierarchy levels:",
+    "options": [
+      "A) 6",
+      "B) 8",
+      "C) 12",
+      "D) 15"
+    ],
+    "correct": "C",
+    "explanation": "Nested globally."
+  },
+  {
+    "type": "mcq",
+    "question": "GRDC data format:",
+    "options": [
+      "A) Shapefile",
+      "B) WaterML2/CSV",
+      "C) NetCDF",
+      "D) GeoJSON"
+    ],
+    "correct": "B",
+    "explanation": "WaterML2 and CSV."
+  },
+  {
+    "type": "mcq",
+    "question": "NLCD resolution:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 100 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "From Landsat."
+  },
+  {
+    "type": "mcq",
+    "question": "Strahler stream order indicates:",
+    "options": [
+      "A) Water quality",
+      "B) Stream hierarchy",
+      "C) Flow velocity",
+      "D) Channel depth"
+    ],
+    "correct": "B",
+    "explanation": "Branching complexity measure."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM harmonises how many countries?",
+    "options": [
+      "A) 5",
+      "B) 7",
+      "C) 9",
+      "D) 11"
+    ],
+    "correct": "C",
+    "explanation": "Nine Carpathian countries."
+  },
+  {
+    "type": "mcq",
+    "question": "WISE stands for:",
+    "options": [
+      "A) Water Info System for Europe",
+      "B) World Integrated Soil Explorer",
+      "C) Weather Info Service",
+      "D) Water Inventory Explorer"
+    ],
+    "correct": "A",
+    "explanation": "Pan-European WFD portal."
+  },
+  {
+    "type": "mcq",
+    "question": "Little Bear Logan HUC-8:",
+    "options": [
+      "A) 16010101",
+      "B) 16010203",
+      "C) 14020001",
+      "D) 12040003"
+    ],
+    "correct": "B",
+    "explanation": "In northern Utah."
+  },
+  {
+    "type": "mcq",
+    "question": "OpenTopography provides:",
+    "options": [
+      "A) Water quality",
+      "B) Elevation/LiDAR data",
+      "C) Weather",
+      "D) Population"
+    ],
+    "correct": "B",
+    "explanation": "With mosaic/clipping tools."
+  },
+  {
+    "type": "mcq",
+    "question": "CDS distributes:",
+    "options": [
+      "A) DEM only",
+      "B) ERA5, E-OBS, CARPATCLIM",
+      "C) Sentinel imagery",
+      "D) Soil data"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Climate Data Store."
+  },
+  {
+    "type": "mcq",
+    "question": "GLDAS resolution:",
+    "options": [
+      "A) 1/8°",
+      "B) 1/4°",
+      "C) 1/2°",
+      "D) 1°"
+    ],
+    "correct": "B",
+    "explanation": "Global counterpart to NLDAS."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 resolution:",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "Hungary's national DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus EROM:",
+    "options": [
+      "A) Environmental Runoff Method",
+      "B) Enhanced Runoff Method",
+      "C) Estimated Regional Output",
+      "D) Extended River Observation"
+    ],
+    "correct": "B",
+    "explanation": "Gauge-adjusted flow estimates."
+  },
+  {
+    "type": "mcq",
+    "question": "CORINE hierarchy levels:",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": "B",
+    "explanation": "Three-level hierarchy."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS v2 ending:",
+    "options": [
+      "A) Dec 2025",
+      "B) Dec 2026",
+      "C) Jun 2027",
+      "D) Dec 2027"
+    ],
+    "correct": "B",
+    "explanation": "V3 available."
+  },
+  {
+    "type": "mcq",
+    "question": "KSH is Hungary's:",
+    "options": [
+      "A) Met service",
+      "B) Statistical office",
+      "C) Water directorate",
+      "D) Geological survey"
+    ],
+    "correct": "B",
+    "explanation": "Central Statistical Office."
+  },
+  {
+    "type": "mcq",
+    "question": "FAO AQUASTAT covers:",
+    "options": [
+      "A) Europe only",
+      "B) Asia only",
+      "C) MENA only",
+      "D) All countries"
+    ],
+    "correct": "D",
+    "explanation": "Worldwide statistics."
+  },
+  {
+    "type": "true_false",
+    "question": "POLARIS eliminates SSURGO's polygon-based representation.",
+    "correct": true,
+    "explanation": "Continuous 30 m grid."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 is an observation-based product.",
+    "correct": false,
+    "explanation": "Model-based reanalysis."
+  },
+  {
+    "type": "true_false",
+    "question": "NLCD has multiple epochs since 2001.",
+    "correct": true,
+    "explanation": "2001-2021."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS v2 will use only SRTM.",
+    "correct": false,
+    "explanation": "Also Copernicus and MERIT."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 is derived from LiDAR.",
+    "correct": false,
+    "explanation": "From contours and stereophotogrammetry."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus DEM is distributed as GeoTIFF.",
+    "correct": true,
+    "explanation": "With EGM2008 vertical datum."
+  },
+  {
+    "type": "true_false",
+    "question": "SoilGrids predicts 14 properties at 6 depths.",
+    "correct": true,
+    "explanation": "0-200 cm range."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5-Land has higher resolution than ERA5.",
+    "correct": true,
+    "explanation": "~9 km vs ~31 km."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS uses only station data.",
+    "correct": false,
+    "explanation": "Satellite IR + stations."
+  },
+  {
+    "type": "true_false",
+    "question": "GRDC aggregates national contributions.",
+    "correct": true,
+    "explanation": "Quality-controlled."
+  },
+  {
+    "type": "true_false",
+    "question": "Sentinel-1 provides optical imagery.",
+    "correct": false,
+    "explanation": "C-band SAR."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus includes WBD download.",
+    "correct": true,
+    "explanation": "Part of the package."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF serves both gauge data and network geometry.",
+    "correct": true,
+    "explanation": "Dual role."
+  },
+  {
+    "type": "true_false",
+    "question": "OpenTopography has Copernicus DEM.",
+    "correct": true,
+    "explanation": "Along with other DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "3DEP uses photogrammetry exclusively.",
+    "correct": false,
+    "explanation": "Shifted to LiDAR."
+  },
+  {
+    "type": "true_false",
+    "question": "APHRODITE is for European precipitation.",
+    "correct": false,
+    "explanation": "Monsoon Asia."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus EMS is public-accessible for activation.",
+    "correct": false,
+    "explanation": "Authorised users only."
+  },
+  {
+    "type": "true_false",
+    "question": "MODIS provides annual land cover since 2001.",
+    "correct": true,
+    "explanation": "MCD12Q1."
+  },
+  {
+    "type": "true_false",
+    "question": "KSH provides 2022 Census.",
+    "correct": true,
+    "explanation": "Hungarian census."
+  },
+  {
+    "type": "true_false",
+    "question": "Sentinel-2 equatorial revisit is 16 days.",
+    "correct": false,
+    "explanation": "5 days."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS provides hourly data.",
+    "correct": false,
+    "explanation": "Daily."
+  },
+  {
+    "type": "true_false",
+    "question": "Landsat 8+9 give effective 8-day revisit.",
+    "correct": true,
+    "explanation": "Offset cycles."
+  },
+  {
+    "type": "true_false",
+    "question": "GEE has both JS and Python API.",
+    "correct": true,
+    "explanation": "Browser + programmatic."
+  },
+  {
+    "type": "true_false",
+    "question": "NLDAS is water-balance consistent.",
+    "correct": true,
+    "explanation": "Runoff ≤ precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "Mekong Commission covers Lower Mekong.",
+    "correct": true,
+    "explanation": "Cambodia, Laos, Thailand, Vietnam."
+  },
+  {
+    "type": "true_false",
+    "question": "SWOT monitors surface water.",
+    "correct": true,
+    "explanation": "Surface Water and Ocean Topography."
+  },
+  {
+    "type": "true_false",
+    "question": "WorldCover uses 11 classes.",
+    "correct": true,
+    "explanation": "Simpler than CORINE."
+  },
+  {
+    "type": "true_false",
+    "question": "JRC flood maps are county-by-county like FEMA.",
+    "correct": false,
+    "explanation": "Continental-scale."
+  },
+  {
+    "type": "true_false",
+    "question": "vizeink.hu has flood risk management plans.",
+    "correct": true,
+    "explanation": "Hungarian portal."
+  },
+  {
+    "type": "true_false",
+    "question": "CRU TS is 0.5° resolution.",
+    "correct": true,
+    "explanation": "Monthly global."
+  },
+  {
+    "type": "true_false",
+    "question": "Dartmouth Flood Observatory is at U. Colorado.",
+    "correct": true,
+    "explanation": "Global archive."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus DEM is from the _____ radar mission.",
+    "correct": "TanDEM-X",
+    "explanation": "German-led, 2011-2015."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus integrates NHD, NED, NLCD, and _____.",
+    "correct": "WBD",
+    "explanation": "Watershed Boundary Dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NRCS is part of the US Dept of _____.",
+    "correct": "Agriculture",
+    "explanation": "Maintains soil surveys."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 assimilates observations into an _____ model.",
+    "correct": "atmospheric",
+    "explanation": "Physically consistent reconstruction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS = Climate Hazards Group _____ Precipitation.",
+    "correct": "InfraRed",
+    "explanation": "Satellite IR + stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM is a joint _____/JAXA mission.",
+    "correct": "NASA",
+    "explanation": "Global Precipitation Measurement."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SWOT measures surface _____ topography.",
+    "correct": "water",
+    "explanation": "Satellite altimetry."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WorldCover uses Sentinel-1 (___) and Sentinel-2.",
+    "correct": "SAR/radar",
+    "explanation": "Combined for classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Dynamic World classifies _____ land cover types.",
+    "correct": "9",
+    "explanation": "Near-real-time."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODIS is on Terra and _____ satellites.",
+    "correct": "Aqua",
+    "explanation": "Daily global."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sentinel-2 revisit at equator: _____ days.",
+    "correct": "5",
+    "explanation": "10 m optical."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Landsat continuous archive since _____.",
+    "correct": "1972",
+    "explanation": "50+ years."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus integrates _____ national datasets.",
+    "correct": "four (4)",
+    "explanation": "NHD+NED+NLCD+WBD."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS version _____ at 0.05° resolution.",
+    "correct": "4.0",
+    "explanation": "Up to 30 days."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LUCAS is a European soil _____ programme.",
+    "correct": "sampling",
+    "explanation": "Point measurements."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Data Space replaced Open Access Hub.",
+    "correct": "Copernicus",
+    "explanation": "October 2023."
+  },
+  {
+    "type": "fill_blank",
+    "question": "India WRIS = Water Resources _____ System.",
+    "correct": "Information",
+    "explanation": "National dashboard."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT DEM by Yamazaki at U. of _____.",
+    "correct": "Tokyo",
+    "explanation": "Error-corrected DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County has _____ SSURGO soil map units.",
+    "correct": "103",
+    "explanation": "7,530 polygons."
+  },
+  {
+    "type": "essay",
+    "question": "Explain NHDPlus COMID significance for linking static and dynamic data.",
+    "correct": "COMIDs uniquely identify 2.7M reaches, used by both static NHDPlus network and dynamic NWM forecasts. Any map point connects to real-time/forecast data. Emergency managers, modellers, researchers all reference the same reach. This integration through common identifiers is the most powerful aspect of the US water data infrastructure.",
+    "explanation": "Sections 3.3.2, 3.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare SSURGO/POLARIS with SoilGrids/HWSD.",
+    "correct": "SSURGO: 1:24,000, most detailed national. POLARIS: 30 m ML grid. SoilGrids: 250 m global ML. HWSD: 1 km global classification. US: SSURGO/POLARIS unmatched. Global: SoilGrids for patterns, HWSD for classification context. Both fill gaps where no national survey exists.",
+    "explanation": "Sections 3.5.2-3.5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss data.vizugy.hu opening significance.",
+    "correct": "Pre-July 2024: formal requests needed. Now: free water level, discharge, temperature, groundwater data. Combines NHDPlus-equivalent (network) and NWIS-equivalent (gauges). Aligns Hungary with open data trends, enables European/global integration, supports FAIR principles and reproducible science.",
+    "explanation": "Section 3.7.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain ERA5/ERA5-Land as model-driving datasets.",
+    "correct": "ERA5: hourly, 31 km, 1940-present. ERA5-Land: 9 km land surface. Model-based (physically consistent), excellent for poorly-observed variables. Precipitation may differ from stations for convective events. ERA5-Land recommended as primary driving dataset for Hungarian catchment studies.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare FEMA and JRC flood maps.",
+    "correct": "FEMA NFHL: county-by-county, varying methods, US-only, 100/500-yr floodplains. JRC: continental-scale single model framework, Europe, 10-500 yr return periods. JRC more methodologically consistent. FEMA reflects historical piecemeal development. Both inform planning and insurance.",
+    "explanation": "Sections 3.8.2-3.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Sentinel-1 SAR for all-weather flood mapping.",
+    "correct": "C-band radar penetrates clouds, operates day/night. Water surfaces appear dark because radar reflects away on smooth water. Enables flood extent mapping during storms when optical is blocked — exactly when flooding occurs. Combined with EMS rapid activation for event-specific intelligence.",
+    "explanation": "Section 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the data selection flowchart.",
+    "correct": "'What is your study area?' → US/Europe/Other. Each branch → data type (DEM, rivers, precipitation) → specific recommendation. US → NED/3DEP, NHDPlus, PRISM. Europe → Copernicus DEM, EU-Hydro, ERA5. Other → SRTM/GLO-30, HydroSHEDS, CHIRPS. GEE hosts all tiers.",
+    "explanation": "Section 3.13."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss MERIT DEM for large-scale modelling.",
+    "correct": "Applies error correction to SRTM/AW3D30: stripe, bias, speckle, tree height removal. 90 m resolution. Widely regarded as best global DEM for large-scale modelling. Cleaner flow direction/accumulation than uncorrected DEMs. Optimal for continental/global watershed modelling (HydroSHEDS v2).",
+    "explanation": "Section 3.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Zala River and Little Bear Logan workflows.",
+    "correct": "Identical logic, different sources. Little Bear: NHDPlus pre-integrated (boundary, sub-watersheds, flow, gauges); UTM 12N; COMID→NWM. Zala: Copernicus DEM + EU-Hydro + CORINE + ESDAC separate downloads; EOV/UTM 34N; DEM-based delineation may be needed. US is pre-packaged; EU requires assembly.",
+    "explanation": "Section 3.12."
+  },
+  {
+    "type": "essay",
+    "question": "Explain hydrologic soil groups' role in runoff modelling.",
+    "correct": "Groups A-D classify by runoff potential: A (sand, high infiltration) to D (clay, low infiltration). Used in SCS Curve Number method. SSURGO includes assignments. Internationally, soil texture from SoilGrids can estimate groups. One of the most important soil properties for flood modelling.",
+    "explanation": "Section 3.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss GRDC significance for transboundary Danube analysis.",
+    "correct": "Danube crosses 10 countries. No single nation has the complete picture. GRDC aggregates national contributions into consistent, quality-controlled records (9,800+ stations, 435,000 station-years). For Danube: the only integrated dataset spanning Germany to Romania. Essential for basin-scale water balance, flood modelling, and climate trend analysis.",
+    "explanation": "Section 3.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain data provenance and dataset disagreements.",
+    "correct": "CORINE→forest but WorldCover→cropland for same pixel: different sources, algorithms, time, definitions. Not errors. Understanding provenance enables informed choice: CORINE for thematic detail, WorldCover for spatial. ERA5 for consistency, E-OBS for fidelity. National for local accuracy, global for interoperability.",
+    "explanation": "Section 3.13.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe census block groups for US flood exposure.",
+    "correct": "~220,000 block groups (~600 households each) combine reasonable spatial resolution with ACS socioeconomic attributes (income, education, housing). Enable identifying vulnerable communities (elderly, low-income) for targeted emergency planning. Bridge gap between blocks (counts only) and tracts (too coarse).",
+    "explanation": "Section 3.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare temporal coverage of land cover datasets.",
+    "correct": "NLCD: 2001-2021 (US change). CORINE: 1990-2018 (EU change). WorldCover: 2020-2021 (current state). Dynamic World: near-real-time (monitoring). MODIS: 2001-present (global trends). Choose by temporal question: historical change → NLCD/CORINE; current → WorldCover; continuous → Dynamic World.",
+    "explanation": "Section 3.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss combining Hungarian and Copernicus data challenges.",
+    "correct": "CRS: EOV→ETRS89/WGS84 (EPSG:1449). Vertical: Baltic→EGM2008. Format: national vector vs Copernicus raster. Temporal alignment. Solutions: Helmert/grid shift, modern GIS handles formats, careful metadata review. The transformation step is mandatory, not optional.",
+    "explanation": "Section 3.13.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain precipitation as 'most important data challenge.'",
+    "correct": "Precipitation drives the water cycle but is highly variable in space/time. A thunderstorm delivers 50 mm on one hillside while the other stays dry. Point gauges need interpolation over watersheds. Radar, satellite (CHIRPS, GPM), and reanalysis (ERA5) provide spatial coverage but each has biases. Uncertainty propagates through all calculations.",
+    "explanation": "Section 3.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe data equivalence table's practical use.",
+    "correct": "Maps equivalent datasets across US/Hungary/EU/Global for 20+ data types. Starting point for new-region projects: 'NHDPlus equivalent?' → EU-Hydro/HydroSHEDS. 'PRISM equivalent?' → ERA5/CHIRPS. Eliminates need to independently discover each region's landscape. Essential reference for students and transboundary projects.",
+    "explanation": "Section 3.11."
+  },
+  {
+    "type": "essay",
+    "question": "Compare US Census, Hungarian KSH, and Eurostat demographics.",
+    "correct": "US: blocks→block groups→tracts→counties→states. ACS socioeconomic. TIGER boundaries. KSH: megye→jaras→telepules→census tracts. Eurostat: NUTS0-3 + LAU. GISCO boundaries. Each provides nested hierarchies. For flood exposure, finest unit with socioeconomic data is most useful: block groups (US), telepules (Hungary).",
+    "explanation": "Section 3.9."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss cloud computing's transformation of hydroinformatics workflow.",
+    "correct": "Before: download TB → local storage → local processing → days. With GEE/Copernicus: cloud analysis next to data → no download → continental analyses in minutes → free for research. Eliminates infrastructure barriers for developing-country researchers. GEE's petabyte catalog + computing accessible via JS/Python API.",
+    "explanation": "Section 3.10.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain WFD River Basin Districts concept.",
+    "correct": "WFD organises waters into River Basin Districts crossing national boundaries (Danube = largest). Each requires: risk assessment, hazard maps, management plans, status classification. Hungary belongs to Danube RBD with 12 regional water directorates. Inherently spatial, requiring GIS for delineation, pressure location, status mapping, cross-border coordination.",
+    "explanation": "Section 3.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe HydroSHEDS product suite.",
+    "correct": "HydroRIVERS: global network with stream order, drainage area, discharge. HydroBASINS: 12-level nested watersheds. HydroLAKES: 1.4M lakes with volume/residence time. From SRTM, free. For data-sparse regions: often the only systematic dataset. V2 will use Copernicus/MERIT DEMs. Global equivalent of NHDPlus.",
+    "explanation": "Section 3.3.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare LiDAR vs radar DEMs for flood mapping.",
+    "correct": "LiDAR: 10-20 cm vertical, canopy penetration, DSM+DTM possible, limited areas (3DEP expanding). Radar (SRTM/TanDEM-X): 6-9m/<4m accuracy, DSM only, global, systematic. Detailed flood mapping (levees, urban): LiDAR essential. Regional/global modelling: radar sufficient with complete coverage.",
+    "explanation": "Sections 3.2.2-3.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss SoilGrids as global alternative to national surveys.",
+    "correct": "250 m global, ML from soil profiles, 14 properties at 6 depths, CC-BY 4.0, via web/WCS/GEE. For regions without national surveys: best available spatial soil data. Critical because soil controls infiltration, storage, runoff. 250 m captures more variability than 1 km HWSD.",
+    "explanation": "Section 3.5.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain NLCD change products for urbanisation impact.",
+    "correct": "NLCD epochs 2001-2021 with change datasets quantifying transitions. Urban expansion = permeable→impervious: increases peak runoff, reduces infiltration/recharge. Change products show where/when transitions occurred. Enable: model calibration to evolving conditions, development impact assessment, future projections.",
+    "explanation": "Section 3.4.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe registration strategy for data access.",
+    "correct": "Register early at: NASA Earthdata, Copernicus CDS, Copernicus Data Space, GEE, GRDC. Hungarian: data.vizugy.hu/HYDROINFO/KSH need no registration. Registering before project deadlines avoids discovery delays. Free accounts for all — minor overhead, potentially costly delays under pressure.",
+    "explanation": "Section 3.13.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare CHIRPS and GPM/IMERG for data-sparse regions.",
+    "correct": "CHIRPS: 5 km, daily, 50S-50N, 1981-present, satellite IR+stations, designed for sparse regions, best for drought/agriculture. GPM/IMERG: 10 km, half-hourly, 67S-67N, 2000-present, multi-satellite, best for extreme events. Both compensate for sparse gauges. CHIRPS: longer record. GPM: finer temporal detail.",
+    "explanation": "Section 3.6.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss 'data-intensive continental-scale enterprise.'",
+    "correct": "NWM: 2.7M reaches. EFAS: 39 countries. ERA5: hourly global from 1940. Sentinel: >10 TB/day. Requires cloud computing (GEE), automated workflows, standardised formats. The shift from field-based site-specific to data-intensive continental-scale is the transformation the book describes.",
+    "explanation": "Chapter data landscape."
+  },
+  {
+    "type": "essay",
+    "question": "Explain CLMS portfolio beyond CORINE.",
+    "correct": "High Resolution Layers (imperviousness, tree cover, grassland, wetness, water bodies) at higher resolution than CORINE. Bio-geophysical variables (LAI, FAPAR, soil moisture). Imperviousness directly informs runoff coefficients. Tree cover affects ET. Wetness indicates flood-prone areas. Comprehensive land monitoring for European hydroinformatics.",
+    "explanation": "Section 3.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Strahler stream order significance.",
+    "correct": "Headwaters = order 1. Junction of two order-1 = order 2. Etc. Simple hierarchy measure. In NHDPlus/EU-Hydro/HydroSHEDS: enables graduated symbolisation, classification, channel estimation, multi-scale filtering. Universal attribute across all major network datasets.",
+    "explanation": "Stream order in network datasets."
+  },
+  {
+    "type": "essay",
+    "question": "Explain 'find terrain, rivers, rain, flow' logic.",
+    "correct": "Regardless of location, same four needs: terrain (DEM for routing), rivers (network for connectivity), rain (precipitation for models), flow (discharge for validation). Sources change by tier (NED vs Copernicus vs SRTM; NHDPlus vs EU-Hydro vs HydroSHEDS). Analytical logic is identical. This universality is the chapter's organising principle.",
+    "explanation": "Chapter 3 introduction."
+  },
+  {
+    "type": "essay",
+    "question": "Compare DDM-5 and Copernicus DEM for Hungarian flood mapping.",
+    "correct": "DDM-5: 5 m, EOV/Baltic, bare-ground, highest national accuracy, must purchase. Copernicus GLO-30: 30 m, WGS84/EGM2008, DSM, free, global. For detailed work (levees, urban): DDM-5 essential. For regional/free: EEA-10 (10 m, restricted) or GLO-30. CRS and vertical datum transformation needed when combining.",
+    "explanation": "Section 3.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain stage-discharge relationships and maintenance needs.",
+    "correct": "Stage-discharge converts water level (continuously measurable) to discharge (modellers' need). Established by velocity measurements at various levels. Changes as channel evolves (erosion, deposition, vegetation). Requires periodic re-measurement. This maintenance cost is why gauges are expensive and networks declining in developing countries.",
+    "explanation": "Section 3.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss data format interoperability.",
+    "correct": "GeoTIFF/NetCDF for rasters, shapefiles/geodatabases for vectors, GRIB for ECMWF, WaterML for time series, SAFE for Sentinel. Modern GIS and Python libraries handle all. The skill is knowing which format to expect from each source, not memorising specifications.",
+    "explanation": "Section 3.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Lechner Knowledge Centre's role.",
+    "correct": "Produces DDM-5 (5 m DEM), cadastral maps, topographic mapping, national grid shift file for HD72→ETRS89. Hungary's national mapping authority. Provides highest-resolution elevation data and transformation tools for integrating Hungarian data with European Copernicus products.",
+    "explanation": "Sections 3.2.3, 2.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain NLDAS and GLDAS for model forcing.",
+    "correct": "NLDAS: hourly, 1/8° (~12.5 km), continental US, water-balance consistent. GLDAS: 1/4°, global. Both provide complete meteorological forcing for land surface models. Texas water intelligence used NLDAS-driven Noah-MP. For non-US: ERA5/ERA5-Land serve same purpose with global coverage.",
+    "explanation": "Sections 3.6.2, 1.8.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss DSM vs DTM implications for Hungarian flood modelling.",
+    "correct": "Copernicus DEM is DSM. In Great Plain open terrain: negligible difference. In forests/urban Budapest: false barriers from buildings/canopy redirect modelled flow. DDM-5 (from topographic data) is closer to DTM. When using Copernicus in forested/urban areas: be aware of potential artefacts.",
+    "explanation": "Section 3.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain CUAHSI HydroClient role.",
+    "correct": "Unified search across ~100 water observation networks in a single interface. Instead of visiting each agency separately, HydroClient searches all simultaneously using WaterML format. Implements 'Internet of Water' vision: data from any network discoverable through common protocols, reducing fragmented infrastructure barriers.",
+    "explanation": "Section 3.7.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe watershed delineation steps when pre-built unavailable.",
+    "correct": "1) DEM (Copernicus GLO-30). 2) Fill sinks. 3) Flow direction (D8/D∞). 4) Flow accumulation. 5) Define outlet. 6) Delineate upstream boundary. This is chapters 9-11 chain. Alternative: HydroBASINS provides pre-computed boundaries at 12 levels globally.",
+    "explanation": "Section 3.12.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare FEMA+NWM and JRC+EFAS flood systems.",
+    "correct": "US: FEMA static (county-by-county), NWM dynamic (2.7M reaches), COMID integration. EU: JRC static (continental model), EFAS dynamic (ensemble, 39 countries), EMS rapid mapping. European approach more methodologically consistent. US has better gauge-forecast integration. Both combine static mapping with dynamic forecasting.",
+    "explanation": "Sections 3.8.2-3.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss global stream gauge decline implications.",
+    "correct": "Peak in 1980s, declining since in Africa/S. America/Asia. Without gauges: can't calibrate models, forecasts unreliable, early warning fails. Compensation: satellites (GRACE, GPM, CHIRPS), reanalysis (ERA5), global models (GloFAS). But satellites can't fully replace gauges — different quantities, different scales. Slow erosion of ground truth threatens hydrological science globally.",
+    "explanation": "Section 3.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Sentinel-2's democratisation of Earth observation.",
+    "correct": "10 m resolution, 5-day revisit, global, free. Surpasses Landsat (30 m, 16 days) in resolution and revisit. Individual fields, settlements, riparian corridors visible. Through Copernicus Data Space and GEE: any researcher worldwide accesses full archive. Democratises capabilities previously available only to well-funded organisations.",
+    "explanation": "Section 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe ERA5's 'physical consistency' concept.",
+    "correct": "ERA5 assimilates observations into atmospheric model satisfying conservation laws (mass, energy, momentum). Water balance maintained, wind consistent with pressure, temperature with radiation. Excellent for poorly-observed variables. However, precipitation may differ from stations for individual events. Physical consistency vs observational fidelity is the key trade-off.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare US vs data-sparse African watershed base map assembly.",
+    "correct": "US: NHDPlus pre-integrated (DEM+network+land cover+boundaries in one download). Analyst starts at analysis. Africa: assemble from global datasets — Copernicus DEM, HydroSHEDS, WorldCover, SoilGrids, CHIRPS. May need DEM-based delineation. Gauge data sparse. GEE provides computing. Data exists; assembly effort is greater.",
+    "explanation": "Section 3.12."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Copernicus EMS for flood response.",
+    "correct": "On-demand rapid mapping activated by authorised users during active disasters. Uses Sentinel-1 SAR (all-weather) and Sentinel-2 for near-real-time flood extent maps, damage assessment, situation updates. Complements static maps (JRC) and operational forecasting (EFAS) with event-specific spatial intelligence.",
+    "explanation": "Section 3.8.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain E-OBS uncertainty estimates significance.",
+    "correct": "E-OBS provides 20-member ensemble for daily gridded precipitation/temperature — rare among climate datasets. This quantifies interpolation uncertainty, enabling: confidence bounds on precipitation estimates, propagation of input uncertainty through models, and honest assessment of how well spatial rainfall is known from station data.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss EU-Hydro vs national OVF data for Hungarian projects.",
+    "correct": "EU-Hydro: pan-European, Copernicus/Sentinel-derived, stream order and connectivity, ETRS89. OVF/data.vizugy.hu: national, survey-derived, gauge observations included, EOV/HD72. For European integration: EU-Hydro provides interoperable framework. For national detail: OVF provides historical records, gauge data, and water management attributes. Combining both requires CRS transformation.",
+    "explanation": "Section 3.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare population data for flood exposure across tiers.",
+    "correct": "US: Census (11M blocks), ACS socioeconomics, TIGER boundaries. Hungary: KSH (3,155 municipalities). Global: WorldPop (100 m, ML-based), LandScan (1 km, ambient). For developing regions: WorldPop+GADM where census unavailable. Resolution matters: flood in a specific neighbourhood needs sub-km data.",
+    "explanation": "Section 3.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the nine data categories and their questions.",
+    "correct": "Elevation: terrain shape? Rivers: where does water flow? Land cover: ground surface? Soil: beneath surface? Weather: what falls? Discharge: how much moves? Floods: where does water go? Demographics: who's at risk? Imagery: what from above? Together provide complete picture for watershed analysis.",
+    "explanation": "Section 3.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss NHDPlus pre-integration vs EU separate-assembly approach.",
+    "correct": "NHDPlus: NED+NHD+NLCD+WBD in one download with pre-computed attributes. EU: Copernicus DEM, EU-Hydro, CORINE, ESDAC from separate portals, possible DEM delineation needed. Reflects institutional history (US centralised federal investment vs EU distributed agencies). Data quality equivalent; integration effort differs.",
+    "explanation": "Section 3.12."
+  },
+  {
+    "type": "essay",
+    "question": "Describe LiDAR revolution and its flood mapping impact.",
+    "correct": "Point clouds with 10-20 cm vertical accuracy enable: mapping individual levees, detecting channel changes, computing HAND. US 3DEP aims for nationwide coverage. Hungary lacks comprehensive LiDAR. For flood mapping where margins are centimetres (2013 Budapest), LiDAR accuracy is transformative. Copernicus EEA-10 partially bridges the gap.",
+    "explanation": "Section 3.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare SRTM, AW3D30, GLO-30, and MERIT for different applications.",
+    "correct": "SRTM (30 m, 2000): legacy, HydroSHEDS basis. AW3D30 (30 m, optical): better in mountains. GLO-30 (30 m, 2011-15): newer, better accuracy, recommended default. MERIT (90 m): error-corrected, best for large-scale. Choose: GLO-30 for new projects, MERIT for continental, SRTM for compatibility, AW3D30 for difficult terrain.",
+    "explanation": "Section 3.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain GRACE+G3P for European water management.",
+    "correct": "GRACE measures total water storage at ~300 km monthly. G3P (GFZ Potsdam) separates into soil moisture, surface water, groundwater using models. For Hungary: basin-scale Tisza/Great Plain water storage perspective. Too coarse for local decisions but invaluable for water balance validation and long-term trend detection.",
+    "explanation": "Section 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss format awareness for practical work.",
+    "correct": "Rasters: GeoTIFF/NetCDF. Vectors: shapefiles/geodatabases. ECMWF: GRIB. Gauges: CSV/WaterML/APIs. Sentinel: SAFE. MODIS: HDF5. Modern tools handle all. Key skill: knowing patterns (rasters→GeoTIFF, vectors→shapefiles) rather than memorising specifications.",
+    "explanation": "Section 3.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain HydroBASINS as global watershed boundary dataset.",
+    "correct": "12 hierarchical levels for nested watershed analysis globally. Derived from SRTM via HydroSHEDS. For regions without national WBD equivalents: the only systematic pre-computed boundaries. Enables consistent global watershed-scale analysis. V2 will improve with Copernicus/MERIT DEMs.",
+    "explanation": "Section 3.3.4."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Climate Data Store requires free registration for access.",
+    "correct": true,
+    "explanation": "Free but registration needed for ERA5, E-OBS, CARPATCLIM."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the FEMA finding that 60% of Harvey-damaged buildings were outside 100-yr floodplain.",
+    "correct": "This finding challenges the static flood mapping paradigm. 100-year floodplain maps cannot capture unprecedented precipitation, compound flooding, urbanisation since mapping, or pluvial flooding. Dynamic approaches (NWM, HAND-based mapping) must supplement or replace static regulatory maps. Flood risk is a probability distribution extending well beyond any mapped boundary.",
+    "explanation": "Section 3.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the African Flood and Drought Monitor for sub-Saharan Africa.",
+    "correct": "The AFDM provides experimental early warning for flood and drought conditions across Africa, where many countries lack national forecasting systems. Combined with GloFAS flood forecasts, CHIRPS precipitation, and GRACE water storage monitoring, it provides the data infrastructure that sub-Saharan African nations need for disaster preparedness, partially compensating for the gauge network decline.",
+    "explanation": "Section 3.8.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the chapter organises content by data type rather than by country.",
+    "correct": "The same nine data types (elevation, rivers, land cover, soil, weather, discharge, floods, demographics, imagery) are needed regardless of location. Organising by type reveals the three-tier structure (US/EU/Global) naturally and helps readers identify equivalent datasets across systems. A country-based organisation would fragment the conceptual framework and make it harder to see the universal analytical logic.",
+    "explanation": "Section 3.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of CORINE's 44-class system vs WorldCover's 11 classes for Hungary.",
+    "correct": "CORINE distinguishes vineyards, non-irrigated arable, pasture, rice fields, etc. — essential for the Hungarian landscape with its diverse agriculture. WorldCover's 11 classes are simpler but at 10 m resolution capture spatial patterns CORINE (100 m) misses. For runoff modelling requiring land use-specific parameters, CORINE provides better thematic detail. For spatial precision and current conditions, WorldCover is superior.",
+    "explanation": "Sections 3.4.3-3.4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'gauge-adjusted' flow estimates in NHDPlus EROM.",
+    "correct": "EROM (Enhanced Runoff Method) estimates mean annual flow for all NHDPlus reaches using regression equations, then adjusts these estimates using actual gauge measurements where available. The adjustment propagates corrections downstream, improving ungauged reach estimates. This provides the best available flow estimate for every reach — critical for reaches without gauges, which is the vast majority of the 2.7 million reaches.",
+    "explanation": "Section 3.3.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the Kis-Balaton wetland in the Zala watershed base map context.",
+    "correct": "The Kis-Balaton artificial wetland, constructed on the Zala River upstream of Lake Balaton as a nutrient filter, represents the intersection of water quality management and spatial data. In the Zala watershed base map, it appears as a significant land cover feature (wetland in CORINE) affecting flow routing and water quality. Monitoring its function requires integrating flow data (OVF gauges), water quality measurements, and land cover analysis.",
+    "explanation": "Section 3.12.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical difference between 'precipitation drive' and 'observation-based validation' in Hungarian studies.",
+    "correct": "ERA5-Land (precipitation drive): physically consistent model output suitable for continuous simulation — water balance maintained, complete meteorological forcing. E-OBS (observation-based validation): interpolated from actual station measurements, preserving fidelity to what gauges recorded. The distinction matters because ERA5 may miss individual convective events while maintaining overall consistency, whereas E-OBS captures observed extremes but may have interpolation gaps.",
+    "explanation": "Section 3.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the Copernicus Data Space replacing the Open Access Hub.",
+    "correct": "The October 2023 transition from scihub.copernicus.eu to the Copernicus Data Space Ecosystem modernised access to all Sentinel data. New capabilities include: Sentinel Hub APIs, openEO (standardised API), STAC catalogs, OData, S3 bucket access, JupyterLab, and on-demand processing. This represents a shift from simple download to integrated analysis platform, enabling processing without downloading and reducing the barrier to using European satellite data.",
+    "explanation": "Section 3.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the chapter's three-tier framework addresses the diverse needs of international readers.",
+    "correct": "Each data type maps across US (well-funded federal system), EU (Copernicus-based continental system), and Global (satellite-derived free datasets). A reader in Texas uses NHDPlus and PRISM. A reader in Debrecen uses EU-Hydro and ERA5. A reader in Nairobi uses HydroSHEDS and CHIRPS. The analytical logic is identical; the framework shows each reader exactly where to find equivalent data for their region.",
+    "explanation": "Section 3.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'data-sparse regions' and how global datasets address their needs.",
+    "correct": "Data-sparse regions (much of Africa, Central Asia, parts of South America) lack comprehensive national data infrastructure — sparse gauges, limited soil surveys, outdated maps. Global datasets fill the gap: Copernicus DEM for elevation, HydroSHEDS for rivers, CHIRPS/GPM for precipitation, SoilGrids for soil, GloFAS for forecasts, GRACE for water storage. Combined with free GEE computing, these datasets have democratised hydroinformatics for developing regions.",
+    "explanation": "Section 3.1.2 and global data discussions."
+  }
+]

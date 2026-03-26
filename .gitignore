@@ -1,0 +1,30 @@
+# Auxiliary data — not needed for the web app
+audio/
+transcript/
+originalMaterials/
+hydroAI/
+books/Kazmer_1995_English-Hungarian_Geological_Dictionary.pdf
+images/ppt/
+lecture_notes/
+
+# Build artifacts
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+
+# Temp files
+*.tmp
+ch01_fixes.json
+apply_fixes.py
+run_lector.sh
+gen_*.py
+fix_*.py
+mass_translate.py
+lector_fixes/*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
+.git_backup/

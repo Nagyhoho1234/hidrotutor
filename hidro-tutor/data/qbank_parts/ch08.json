@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Spatial interpolation estimates values at:",
+    "options": [
+      "A) Measured locations only",
+      "B) Unmeasured locations from known samples",
+      "C) Satellite pixels",
+      "D) Model grid centers"
+    ],
+    "correct": "B",
+    "explanation": "Interpolation estimates at unmeasured locations from sample points."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the WMO standard gauge orifice area?",
+    "options": [
+      "A) 100 cm^2",
+      "B) 200 cm^2",
+      "C) 324 cm^2",
+      "D) 500 cm^2"
+    ],
+    "correct": "B",
+    "explanation": "WMO standard is 200 cm^2."
+  },
+  {
+    "type": "mcq",
+    "question": "The US NWS 8-inch gauge has orifice area:",
+    "options": [
+      "A) 200 cm^2",
+      "B) 324 cm^2",
+      "C) 500 cm^2",
+      "D) 100 cm^2"
+    ],
+    "correct": "B",
+    "explanation": "324 cm^2 for the US 8-inch gauge."
+  },
+  {
+    "type": "mcq",
+    "question": "Estimation beyond the sample domain is called:",
+    "options": [
+      "A) Interpolation",
+      "B) Extrapolation",
+      "C) Regression",
+      "D) Classification"
+    ],
+    "correct": "B",
+    "explanation": "Extrapolation = estimation beyond the convex hull of samples."
+  },
+  {
+    "type": "mcq",
+    "question": "What makes precipitation the hardest variable to interpolate?",
+    "options": [
+      "A) It's always smooth",
+      "B) It's inherently discontinuous with skewed distribution",
+      "C) Gauges are perfectly distributed",
+      "D) It has no relationship with topography"
+    ],
+    "correct": "B",
+    "explanation": "Precipitation is discontinuous, skewed, and gauge networks are biased."
+  },
+  {
+    "type": "mcq",
+    "question": "The environmental lapse rate for temperature is approximately:",
+    "options": [
+      "A) -2 deg/1000m",
+      "B) -6.5 deg/1000m",
+      "C) -10 deg/1000m",
+      "D) +6.5 deg/1000m"
+    ],
+    "correct": "B",
+    "explanation": "Roughly -6.5 degrees C per 1000 m of elevation gain."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen polygons are also known as:",
+    "options": [
+      "A) Delaunay triangles",
+      "B) Voronoi polygons",
+      "C) Kriging cells",
+      "D) Spline patches"
+    ],
+    "correct": "B",
+    "explanation": "Also called Voronoi polygons or Dirichlet tessellations."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen polygons depend on:",
+    "options": [
+      "A) Data values at gauges",
+      "B) Only gauge locations",
+      "C) Elevation",
+      "D) Wind direction"
+    ],
+    "correct": "B",
+    "explanation": "Construction is purely geometric, based only on point locations."
+  },
+  {
+    "type": "mcq",
+    "question": "The only appropriate interpolation for categorical data:",
+    "options": [
+      "A) IDW",
+      "B) Kriging",
+      "C) Nearest neighbor",
+      "D) Spline"
+    ],
+    "correct": "C",
+    "explanation": "Averaging categories is meaningless; nearest neighbor is the only option."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen polygons are dual to:",
+    "options": [
+      "A) Kriging",
+      "B) Delaunay triangulation",
+      "C) Spline surfaces",
+      "D) Polynomial trends"
+    ],
+    "correct": "B",
+    "explanation": "Thiessen polygons and Delaunay triangulation are dual structures."
+  },
+  {
+    "type": "mcq",
+    "question": "In IDW, the power parameter p controls:",
+    "options": [
+      "A) Search radius",
+      "B) How rapidly influence decays with distance",
+      "C) Number of neighbors",
+      "D) Variogram range"
+    ],
+    "correct": "B",
+    "explanation": "Higher p gives more weight to nearby points."
+  },
+  {
+    "type": "mcq",
+    "question": "Most common IDW power value:",
+    "options": [
+      "A) 0.5",
+      "B) 1",
+      "C) 2",
+      "D) 4"
+    ],
+    "correct": "C",
+    "explanation": "p=2 is the most common default."
+  },
+  {
+    "type": "mcq",
+    "question": "As p approaches infinity, IDW converges to:",
+    "options": [
+      "A) Kriging",
+      "B) Spline",
+      "C) Nearest neighbor",
+      "D) Polynomial trend"
+    ],
+    "correct": "C",
+    "explanation": "Closest point dominates all others."
+  },
+  {
+    "type": "mcq",
+    "question": "The characteristic IDW artifact is:",
+    "options": [
+      "A) Striping",
+      "B) Bull's-eye effect",
+      "C) Flat areas",
+      "D) Negative values"
+    ],
+    "correct": "B",
+    "explanation": "Concentric circular contours around each point."
+  },
+  {
+    "type": "mcq",
+    "question": "Bilinear interpolation is primarily used for:",
+    "options": [
+      "A) Scattered point interpolation",
+      "B) Grid resampling during reprojection",
+      "C) Variogram fitting",
+      "D) Stream delineation"
+    ],
+    "correct": "B",
+    "explanation": "Main use is resampling rasters during reprojection."
+  },
+  {
+    "type": "mcq",
+    "question": "The bilinear formula includes a cross-product term that creates:",
+    "options": [
+      "A) A flat plane",
+      "B) A saddle shape",
+      "C) A sphere",
+      "D) A cone"
+    ],
+    "correct": "B",
+    "explanation": "The xy cross-product produces a saddle between corners."
+  },
+  {
+    "type": "mcq",
+    "question": "Spline interpolation minimizes:",
+    "options": [
+      "A) Distance to nearest point",
+      "B) Bending energy",
+      "C) Number of iterations",
+      "D) Computational time"
+    ],
+    "correct": "B",
+    "explanation": "Splines minimize a bending energy functional."
+  },
+  {
+    "type": "mcq",
+    "question": "The main risk of spline interpolation:",
+    "options": [
+      "A) Smoothness",
+      "B) Overshooting (negative precip)",
+      "C) Slow computation",
+      "D) Requiring a variogram"
+    ],
+    "correct": "B",
+    "explanation": "May produce values outside the data range, like negative precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "Kriging provides the:",
+    "options": [
+      "A) Worst estimate",
+      "B) Most complex surface",
+      "C) Best Linear Unbiased Estimate",
+      "D) Simplest surface"
+    ],
+    "correct": "C",
+    "explanation": "BLUE = Best Linear Unbiased Estimate."
+  },
+  {
+    "type": "mcq",
+    "question": "Kriging was named after:",
+    "options": [
+      "A) A German mathematician",
+      "B) A South African mining engineer",
+      "C) A French meteorologist",
+      "D) An American hydrologist"
+    ],
+    "correct": "B",
+    "explanation": "Named after Danie Krige, South African mining engineer."
+  },
+  {
+    "type": "mcq",
+    "question": "The variogram plots semivariance against:",
+    "options": [
+      "A) Elevation",
+      "B) Lag distance",
+      "C) Time",
+      "D) Sample value"
+    ],
+    "correct": "B",
+    "explanation": "Semivariance as a function of lag distance h."
+  },
+  {
+    "type": "mcq",
+    "question": "The nugget represents:",
+    "options": [
+      "A) Total data variance",
+      "B) Measurement error and micro-scale variability",
+      "C) Maximum distance",
+      "D) Number of samples"
+    ],
+    "correct": "B",
+    "explanation": "Semivariance at zero distance."
+  },
+  {
+    "type": "mcq",
+    "question": "The sill represents:",
+    "options": [
+      "A) Zero variance",
+      "B) Total variance where variogram levels off",
+      "C) Minimum distance",
+      "D) Number of neighbors"
+    ],
+    "correct": "B",
+    "explanation": "Semivariance at which the variogram reaches its plateau."
+  },
+  {
+    "type": "mcq",
+    "question": "The range is:",
+    "options": [
+      "A) Data value range",
+      "B) Distance where variogram reaches sill",
+      "C) Number of data points",
+      "D) Search radius"
+    ],
+    "correct": "B",
+    "explanation": "Beyond the range, data points are effectively uncorrelated."
+  },
+  {
+    "type": "mcq",
+    "question": "Unique advantage of kriging over other methods:",
+    "options": [
+      "A) Speed",
+      "B) Simplicity",
+      "C) Uncertainty estimate",
+      "D) No parameters"
+    ],
+    "correct": "C",
+    "explanation": "Kriging produces both estimate and kriging variance at each location."
+  },
+  {
+    "type": "mcq",
+    "question": "Co-kriging uses which auxiliary variable for precipitation?",
+    "options": [
+      "A) Wind speed",
+      "B) Elevation",
+      "C) Soil type",
+      "D) Land use"
+    ],
+    "correct": "B",
+    "explanation": "Elevation is the most common auxiliary for precipitation co-kriging."
+  },
+  {
+    "type": "mcq",
+    "question": "Ordinary kriging assumes:",
+    "options": [
+      "A) Known constant mean",
+      "B) Unknown constant mean",
+      "C) Linear trend",
+      "D) Quadratic trend"
+    ],
+    "correct": "B",
+    "explanation": "Constant but unknown mean across the domain."
+  },
+  {
+    "type": "mcq",
+    "question": "Polynomial trend surface is a _____ method:",
+    "options": [
+      "A) Interpolating",
+      "B) Smoothing",
+      "C) Classification",
+      "D) Clustering"
+    ],
+    "correct": "B",
+    "explanation": "Typically doesn't pass through sample points exactly."
+  },
+  {
+    "type": "mcq",
+    "question": "The orographic effect is:",
+    "options": [
+      "A) Wind erosion",
+      "B) Precipitation enhancement from topographic lifting",
+      "C) Temperature inversion",
+      "D) Sea breeze"
+    ],
+    "correct": "B",
+    "explanation": "Air forced upward by mountains cools, condenses, and precipitates."
+  },
+  {
+    "type": "mcq",
+    "question": "A rain shadow forms on:",
+    "options": [
+      "A) The windward side",
+      "B) The leeward side",
+      "C) The summit",
+      "D) Both sides equally"
+    ],
+    "correct": "B",
+    "explanation": "Leeward side loses moisture, creating dry conditions."
+  },
+  {
+    "type": "mcq",
+    "question": "PRISM stands for:",
+    "options": [
+      "A) Precipitation Regression on Independent Slopes Model",
+      "B) Parameter-elevation Regressions on Independent Slopes Model",
+      "C) Precipitation Raster Interpolation System Model",
+      "D) Point Regression In Spatial Mapping"
+    ],
+    "correct": "B",
+    "explanation": "Parameter-elevation Regressions on Independent Slopes Model."
+  },
+  {
+    "type": "mcq",
+    "question": "PRISM resolution for CONUS:",
+    "options": [
+      "A) 100 m",
+      "B) 800 m",
+      "C) 4 km",
+      "D) 30 km"
+    ],
+    "correct": "B",
+    "explanation": "800 m (30 arc-second) for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS covers:",
+    "options": [
+      "A) United States",
+      "B) Europe",
+      "C) Africa",
+      "D) Global"
+    ],
+    "correct": "B",
+    "explanation": "Daily gridded dataset covering Europe."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS is produced by:",
+    "options": [
+      "A) OMSZ",
+      "B) KNMI",
+      "C) NASA",
+      "D) USGS"
+    ],
+    "correct": "B",
+    "explanation": "Royal Netherlands Meteorological Institute."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS uses an ensemble of how many members?",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 20",
+      "D) 50"
+    ],
+    "correct": "C",
+    "explanation": "20-member ensemble for uncertainty assessment."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM covers period:",
+    "options": [
+      "A) 1901-2000",
+      "B) 1961-2010",
+      "C) 1981-present",
+      "D) 1950-present"
+    ],
+    "correct": "B",
+    "explanation": "1961-2010 at 0.1-degree resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM was led by:",
+    "options": [
+      "A) KNMI",
+      "B) NASA",
+      "C) Hungarian Meteorological Service (OMSZ)",
+      "D) USGS"
+    ],
+    "correct": "C",
+    "explanation": "Consortium of 9 countries led by OMSZ."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS stands for:",
+    "options": [
+      "A) Climate Hazards Infrared Precipitation with Station data",
+      "B) Corrected High-Resolution Interpolated Precipitation System",
+      "C) Cloud Height Infrared Retrieval for Precipitation Studies",
+      "D) Climate Hydrology Integrated Remote Sensing Product"
+    ],
+    "correct": "A",
+    "explanation": "Climate Hazards Group InfraRed Precipitation with Station data."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS resolution:",
+    "options": [
+      "A) 0.01 deg",
+      "B) 0.05 deg",
+      "C) 0.25 deg",
+      "D) 1 deg"
+    ],
+    "correct": "B",
+    "explanation": "~5.3 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS was developed for:",
+    "options": [
+      "A) Europe",
+      "B) United States",
+      "C) Africa and data-sparse regions",
+      "D) Only oceanic areas"
+    ],
+    "correct": "C",
+    "explanation": "Originally for Africa; covers 50S-50N."
+  },
+  {
+    "type": "mcq",
+    "question": "GPM temporal resolution:",
+    "options": [
+      "A) Daily",
+      "B) 6-hourly",
+      "C) Hourly",
+      "D) Half-hourly"
+    ],
+    "correct": "D",
+    "explanation": "Half-hourly precipitation estimates."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 is a:",
+    "options": [
+      "A) Satellite product",
+      "B) Gauge interpolation",
+      "C) NWP model reanalysis",
+      "D) Radar product"
+    ],
+    "correct": "C",
+    "explanation": "Numerical weather prediction model reanalysis from ECMWF."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 resolution:",
+    "options": [
+      "A) 1 km",
+      "B) ~11 km",
+      "C) ~31 km",
+      "D) ~100 km"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 31 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "Hypsometric method step 1:",
+    "options": [
+      "A) Download satellite data",
+      "B) Develop elevation-precipitation regression",
+      "C) Apply kriging",
+      "D) Create Thiessen polygons"
+    ],
+    "correct": "B",
+    "explanation": "Fit regression between station elevation and precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Zagyva example, the regression slope is:",
+    "options": [
+      "A) 0.103 mm/m",
+      "B) 0.308 mm/m",
+      "C) 0.500 mm/m",
+      "D) 1.000 mm/m"
+    ],
+    "correct": "B",
+    "explanation": "P = 497 + 0.308 * h with 31 mm per 100 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Zagyva watershed area:",
+    "options": [
+      "A) 567 km^2",
+      "B) 5677 km^2",
+      "C) 56770 km^2",
+      "D) 100 km^2"
+    ],
+    "correct": "B",
+    "explanation": "Approximately 5,677 km^2."
+  },
+  {
+    "type": "mcq",
+    "question": "Zonal statistics is what type of map algebra operation?",
+    "options": [
+      "A) Local",
+      "B) Focal",
+      "C) Zonal",
+      "D) Global"
+    ],
+    "correct": "C",
+    "explanation": "Output computed from all cells sharing a zone identifier."
+  },
+  {
+    "type": "mcq",
+    "question": "Zonal Statistics as Table requires how many inputs?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "C",
+    "explanation": "Zone data, zone field, and value raster."
+  },
+  {
+    "type": "mcq",
+    "question": "Precision of zonal statistics for large zones:",
+    "options": [
+      "A) Very poor",
+      "B) Moderate",
+      "C) Extremely precise (cm-level)",
+      "D) Depends on projection"
+    ],
+    "correct": "C",
+    "explanation": "Centimeter-level precision due to averaging over many cells."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen polygon method was developed by:",
+    "options": [
+      "A) Alfred Thiessen",
+      "B) Danie Krige",
+      "C) Georges Matheron",
+      "D) Christopher Daly"
+    ],
+    "correct": "A",
+    "explanation": "Alfred H. Thiessen of the US Weather Bureau in 1911."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen watershed average formula:",
+    "options": [
+      "A) Simple mean of all gauges",
+      "B) Sum(Pi*Ai) / Sum(Ai)",
+      "C) Maximum gauge value",
+      "D) Median gauge value"
+    ],
+    "correct": "B",
+    "explanation": "Area-weighted average: Sum(Pi*Ai)/Sum(Ai)."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Thiessen worked example, result is:",
+    "options": [
+      "A) 603.3 mm",
+      "B) 579.8 mm",
+      "C) 520.0 mm",
+      "D) 680.0 mm"
+    ],
+    "correct": "B",
+    "explanation": "Area-weighted average = 301490/520 = 579.8 mm."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen method ignores:",
+    "options": [
+      "A) Gauge locations",
+      "B) Orographic effect",
+      "C) All gauge values",
+      "D) Watershed area"
+    ],
+    "correct": "B",
+    "explanation": "Treats precipitation as flat 2D field; ignores topography."
+  },
+  {
+    "type": "mcq",
+    "question": "Surface-based alternative to Thiessen uses:",
+    "options": [
+      "A) Manual contouring",
+      "B) Interpolation then zonal statistics",
+      "C) Field surveys only",
+      "D) Satellite images only"
+    ],
+    "correct": "B",
+    "explanation": "First interpolate, then compute zonal mean."
+  },
+  {
+    "type": "mcq",
+    "question": "Modern practice shifts from DIY interpolation to:",
+    "options": [
+      "A) More manual analysis",
+      "B) Download pre-computed gridded products",
+      "C) Field measurements only",
+      "D) Eliminating spatial analysis"
+    ],
+    "correct": "B",
+    "explanation": "Gridded products from PRISM, E-OBS, CHIRPS are now standard."
+  },
+  {
+    "type": "mcq",
+    "question": "Matra Mountains precipitation:",
+    "options": [
+      "A) 300-400 mm/yr",
+      "B) 500-550 mm/yr",
+      "C) 700-800 mm/yr",
+      "D) 1200+ mm/yr"
+    ],
+    "correct": "C",
+    "explanation": "700-800 mm/yr in northern Hungarian mountains."
+  },
+  {
+    "type": "mcq",
+    "question": "Central Alfold precipitation:",
+    "options": [
+      "A) 300-400 mm/yr",
+      "B) 500-550 mm/yr",
+      "C) 700-800 mm/yr",
+      "D) 1200+ mm/yr"
+    ],
+    "correct": "B",
+    "explanation": "500-550 mm/yr on the Great Plain."
+  },
+  {
+    "type": "mcq",
+    "question": "Upper Tisza Basin area:",
+    "options": [
+      "A) 7,300 km^2",
+      "B) 73,000 km^2",
+      "C) 730,000 km^2",
+      "D) 730 km^2"
+    ],
+    "correct": "B",
+    "explanation": "~73,000 km^2 across 4 countries."
+  },
+  {
+    "type": "mcq",
+    "question": "OMSZ operates how many stations across Hungary?",
+    "options": [
+      "A) 36",
+      "B) 136",
+      "C) 536",
+      "D) 1036"
+    ],
+    "correct": "B",
+    "explanation": "136 stations with 10-minute resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "Carpathian ridge annual precipitation exceeds:",
+    "options": [
+      "A) 600 mm",
+      "B) 800 mm",
+      "C) 1200 mm",
+      "D) 2000 mm"
+    ],
+    "correct": "C",
+    "explanation": "Exceeds 1,200 mm on ridges."
+  },
+  {
+    "type": "mcq",
+    "question": "Thiessen estimate for mountain sub-basin vs CARPATCLIM:",
+    "options": [
+      "A) Nearly identical",
+      "B) 40% underestimate",
+      "C) 20% overestimate",
+      "D) Exactly matches"
+    ],
+    "correct": "B",
+    "explanation": "580 mm vs 950 mm = ~40% underestimate."
+  },
+  {
+    "type": "mcq",
+    "question": "The runoff ratio is defined as:",
+    "options": [
+      "A) Q/ET",
+      "B) P/Q",
+      "C) Q/P",
+      "D) ET/P"
+    ],
+    "correct": "C",
+    "explanation": "Mean annual runoff depth / mean annual precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "A runoff ratio > 1.0 indicates:",
+    "options": [
+      "A) Normal conditions",
+      "B) Dry climate",
+      "C) An error",
+      "D) Very wet climate"
+    ],
+    "correct": "C",
+    "explanation": "Physically impossible under steady state; indicates error."
+  },
+  {
+    "type": "mcq",
+    "question": "Typical Hungarian lowland runoff ratio:",
+    "options": [
+      "A) 0.005-0.015",
+      "B) 0.05-0.15",
+      "C) 0.5-0.8",
+      "D) > 1.0"
+    ],
+    "correct": "B",
+    "explanation": "0.05-0.15 for lowland basins."
+  },
+  {
+    "type": "mcq",
+    "question": "Zagyva runoff ratio:",
+    "options": [
+      "A) 0.006",
+      "B) 0.061",
+      "C) 0.61",
+      "D) 6.1"
+    ],
+    "correct": "B",
+    "explanation": "34.5/565 = 0.061."
+  },
+  {
+    "type": "mcq",
+    "question": "GRDC provides:",
+    "options": [
+      "A) Precipitation data",
+      "B) River discharge data",
+      "C) Soil data",
+      "D) DEM data"
+    ],
+    "correct": "B",
+    "explanation": "Global Runoff Data Centre: quality-assured discharge data."
+  },
+  {
+    "type": "mcq",
+    "question": "EOV (EPSG:23700) is important for interpolation because:",
+    "options": [
+      "A) It's global",
+      "B) It preserves distances accurately in Hungary",
+      "C) It's the cheapest option",
+      "D) It's required by law"
+    ],
+    "correct": "B",
+    "explanation": "Conformal projection with minimal distortion across Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "Nearest neighbor resampling is appropriate for:",
+    "options": [
+      "A) DEMs",
+      "B) Temperature grids",
+      "C) Categorical rasters (land use)",
+      "D) Precipitation grids"
+    ],
+    "correct": "C",
+    "explanation": "Only for categorical data where averaging is meaningless."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM's advantage over E-OBS for Hungary:",
+    "options": [
+      "A) Higher resolution",
+      "B) Homogenized cross-border station data",
+      "C) Longer time period",
+      "D) Global coverage"
+    ],
+    "correct": "B",
+    "explanation": "Used harmonized records from all 9 Carpathian countries."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS interpolation method:",
+    "options": [
+      "A) IDW only",
+      "B) Splines + kriging with elevation",
+      "C) Nearest neighbor",
+      "D) Polynomial only"
+    ],
+    "correct": "B",
+    "explanation": "Three-step: thin-plate splines for climatology + kriging for anomalies."
+  },
+  {
+    "type": "mcq",
+    "question": "Recommended precipitation product for Africa:",
+    "options": [
+      "A) PRISM",
+      "B) CARPATCLIM",
+      "C) CHIRPS",
+      "D) E-OBS"
+    ],
+    "correct": "C",
+    "explanation": "CHIRPS covers 50S-50N, designed for data-sparse regions."
+  },
+  {
+    "type": "mcq",
+    "question": "APHRODITE covers:",
+    "options": [
+      "A) Africa",
+      "B) Europe",
+      "C) Monsoon Asia",
+      "D) Americas"
+    ],
+    "correct": "C",
+    "explanation": "Asian precipitation dataset."
+  },
+  {
+    "type": "mcq",
+    "question": "OVF hydrographic data at:",
+    "options": [
+      "A) met.hu",
+      "B) data.vizugy.hu",
+      "C) copernicus.eu",
+      "D) usgs.gov"
+    ],
+    "correct": "B",
+    "explanation": "Available since July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "The R-squared for the Zagyva regression:",
+    "options": [
+      "A) 0.67",
+      "B) 0.85",
+      "C) 0.97",
+      "D) 0.99"
+    ],
+    "correct": "C",
+    "explanation": "Strong linear relationship: R^2 = 0.97."
+  },
+  {
+    "type": "mcq",
+    "question": "IDW at the sample point gives:",
+    "options": [
+      "A) Zero",
+      "B) Average of neighbors",
+      "C) Exact sample value",
+      "D) NoData"
+    ],
+    "correct": "C",
+    "explanation": "Distance=0, weight->infinity, estimate=exact value."
+  },
+  {
+    "type": "mcq",
+    "question": "Tension splines control how tightly the surface is:",
+    "options": [
+      "A) Colored",
+      "B) Stretched between points",
+      "C) Compressed vertically",
+      "D) Rotated"
+    ],
+    "correct": "B",
+    "explanation": "High tension = closer to linear between points."
+  },
+  {
+    "type": "mcq",
+    "question": "Empirical Bayesian Kriging automates:",
+    "options": [
+      "A) Data collection",
+      "B) Variogram fitting",
+      "C) DEM creation",
+      "D) Watershed delineation"
+    ],
+    "correct": "B",
+    "explanation": "Automates variogram fitting through restricted maximum likelihood."
+  },
+  {
+    "type": "mcq",
+    "question": "CRU TS resolution:",
+    "options": [
+      "A) 0.01 deg",
+      "B) 0.1 deg",
+      "C) 0.5 deg",
+      "D) 1 deg"
+    ],
+    "correct": "C",
+    "explanation": "~50 km resolution, monthly, 1901-present."
+  },
+  {
+    "type": "mcq",
+    "question": "Number of seconds in a year:",
+    "options": [
+      "A) 3.156 x 10^6",
+      "B) 3.156 x 10^7",
+      "C) 3.156 x 10^8",
+      "D) 3.156 x 10^9"
+    ],
+    "correct": "B",
+    "explanation": "3.156 x 10^7 seconds/year used in runoff depth calculation."
+  },
+  {
+    "type": "mcq",
+    "question": "In the IDW worked example, estimated value is:",
+    "options": [
+      "A) 26.0 mm",
+      "B) 22.7 mm",
+      "C) 24.0 mm",
+      "D) 18.0 mm"
+    ],
+    "correct": "B",
+    "explanation": "Weighted average = 10.265/0.4518 = 22.7 mm."
+  },
+  {
+    "type": "mcq",
+    "question": "CARPATCLIM access:",
+    "options": [
+      "A) NASA Earthdata",
+      "B) Copernicus Surface Observations",
+      "C) USGS",
+      "D) OpenTopography"
+    ],
+    "correct": "B",
+    "explanation": "Available through Copernicus portal."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5-Land resolution:",
+    "options": [
+      "A) 1 km",
+      "B) 9 km",
+      "C) 31 km",
+      "D) 100 km"
+    ],
+    "correct": "B",
+    "explanation": "ERA5-Land provides ~9 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "Regularized splines trade smoothness for:",
+    "options": [
+      "A) Speed",
+      "B) Exact data fit",
+      "C) Fewer parameters",
+      "D) Lower resolution"
+    ],
+    "correct": "B",
+    "explanation": "May not pass exactly through data points in exchange for global smoothness."
+  },
+  {
+    "type": "mcq",
+    "question": "GPM launched in:",
+    "options": [
+      "A) 2000",
+      "B) 2006",
+      "C) 2014",
+      "D) 2020"
+    ],
+    "correct": "C",
+    "explanation": "Joint NASA/JAXA mission launched 2014."
+  },
+  {
+    "type": "true_false",
+    "question": "Spatial interpolation estimates values at unmeasured locations.",
+    "correct": true,
+    "explanation": "Core definition of interpolation."
+  },
+  {
+    "type": "true_false",
+    "question": "Extrapolation carries less uncertainty than interpolation.",
+    "correct": false,
+    "explanation": "Extrapolation (beyond sample domain) carries substantially higher uncertainty."
+  },
+  {
+    "type": "true_false",
+    "question": "Precipitation varies smoothly like temperature.",
+    "correct": false,
+    "explanation": "Precipitation is inherently discontinuous; convective storms can be very localized."
+  },
+  {
+    "type": "true_false",
+    "question": "Rain gauges are randomly distributed across the landscape.",
+    "correct": false,
+    "explanation": "Gauges cluster in valleys and lowlands where people live."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen polygon construction depends on data values.",
+    "correct": false,
+    "explanation": "Purely geometric; depends only on point locations."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen polygons produce continuous surfaces.",
+    "correct": false,
+    "explanation": "Piecewise constant with abrupt jumps at boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW with p=2 is the most common default.",
+    "correct": true,
+    "explanation": "p=2 is standard for hydrological applications."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW never overshoots beyond data range.",
+    "correct": true,
+    "explanation": "As a weighted average, IDW stays within the data range."
+  },
+  {
+    "type": "true_false",
+    "question": "The bull's-eye effect is physically meaningful.",
+    "correct": false,
+    "explanation": "It is an artifact of distance-weighting with no physical basis."
+  },
+  {
+    "type": "true_false",
+    "question": "Bilinear interpolation is mainly used for grid resampling.",
+    "correct": true,
+    "explanation": "Primary application is raster reprojection/resampling."
+  },
+  {
+    "type": "true_false",
+    "question": "Spline interpolation can produce negative precipitation.",
+    "correct": true,
+    "explanation": "Overshooting between points can create physically impossible values."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging provides uncertainty estimates.",
+    "correct": true,
+    "explanation": "Kriging variance/standard error at each location is unique to kriging."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging was named after a French mathematician.",
+    "correct": false,
+    "explanation": "Named after South African mining engineer Danie Krige."
+  },
+  {
+    "type": "true_false",
+    "question": "The nugget represents measurement error at zero distance.",
+    "correct": true,
+    "explanation": "Semivariance at h=0 due to noise and micro-scale variability."
+  },
+  {
+    "type": "true_false",
+    "question": "Ordinary kriging assumes a linear trend.",
+    "correct": false,
+    "explanation": "Assumes constant (but unknown) mean; universal kriging handles trends."
+  },
+  {
+    "type": "true_false",
+    "question": "The orographic effect enhances precipitation on leeward slopes.",
+    "correct": false,
+    "explanation": "Enhancement is on the windward side; leeward has a rain shadow."
+  },
+  {
+    "type": "true_false",
+    "question": "PRISM uses the same regression everywhere.",
+    "correct": false,
+    "explanation": "PRISM uses local regression that varies spatially."
+  },
+  {
+    "type": "true_false",
+    "question": "PRISM resolution is 800 m.",
+    "correct": true,
+    "explanation": "30 arc-second = ~800 m."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS provides a single best estimate only.",
+    "correct": false,
+    "explanation": "E-OBS generates a 20-member ensemble for uncertainty."
+  },
+  {
+    "type": "true_false",
+    "question": "CARPATCLIM covers 1961-2010.",
+    "correct": true,
+    "explanation": "50-year period for the Carpathian region."
+  },
+  {
+    "type": "true_false",
+    "question": "CARPATCLIM was produced by a single country.",
+    "correct": false,
+    "explanation": "Consortium of 9 Carpathian countries."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS was designed primarily for Europe.",
+    "correct": false,
+    "explanation": "Designed for Africa and data-sparse regions."
+  },
+  {
+    "type": "true_false",
+    "question": "GPM provides half-hourly precipitation.",
+    "correct": true,
+    "explanation": "Half-hourly temporal resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 precipitation is a direct observation.",
+    "correct": false,
+    "explanation": "It's a model product from NWP reanalysis, not direct observation."
+  },
+  {
+    "type": "true_false",
+    "question": "The hypsometric method accounts for the elevation-precipitation relationship.",
+    "correct": true,
+    "explanation": "Uses regression of precipitation on elevation."
+  },
+  {
+    "type": "true_false",
+    "question": "Zonal statistics require a raster and zone polygons.",
+    "correct": true,
+    "explanation": "Summarizes raster values within polygon zones."
+  },
+  {
+    "type": "true_false",
+    "question": "Zonal statistics precision is worse than DEM accuracy.",
+    "correct": false,
+    "explanation": "Centimeter precision from averaging many cells, far better than DEM accuracy."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen polygon method was developed in 2011.",
+    "correct": false,
+    "explanation": "Developed in 1911 by Alfred Thiessen."
+  },
+  {
+    "type": "true_false",
+    "question": "The Thiessen method accounts for elevation effects.",
+    "correct": false,
+    "explanation": "Ignores orographic effect entirely."
+  },
+  {
+    "type": "true_false",
+    "question": "Adding/removing a gauge changes Thiessen polygon geometry.",
+    "correct": true,
+    "explanation": "Sensitive to network changes."
+  },
+  {
+    "type": "true_false",
+    "question": "Modern practice prefers downloading gridded products over DIY interpolation.",
+    "correct": true,
+    "explanation": "Gridded products use more sophisticated methods."
+  },
+  {
+    "type": "true_false",
+    "question": "A runoff ratio above 1.0 is physically possible.",
+    "correct": false,
+    "explanation": "Violates conservation of mass under steady state."
+  },
+  {
+    "type": "true_false",
+    "question": "GRDC provides global discharge data.",
+    "correct": true,
+    "explanation": "Over 9,800 stations worldwide."
+  },
+  {
+    "type": "true_false",
+    "question": "Nearest neighbor resampling is best for continuous data.",
+    "correct": false,
+    "explanation": "Creates artifacts; use bilinear for continuous data."
+  },
+  {
+    "type": "true_false",
+    "question": "Co-kriging can use elevation as auxiliary.",
+    "correct": true,
+    "explanation": "Most common auxiliary for precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "Polynomial trend surfaces always pass through data points.",
+    "correct": false,
+    "explanation": "Typically a smoothing method that doesn't exactly honor data."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza flood risk originates mostly within Hungary.",
+    "correct": false,
+    "explanation": "Precipitation falls on Carpathian headwaters in Ukraine and Romania."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen averaging gives equal weight to all gauges.",
+    "correct": false,
+    "explanation": "Weight is proportional to each gauge's Thiessen polygon area within the watershed."
+  },
+  {
+    "type": "true_false",
+    "question": "PRISM was developed at Oregon State University.",
+    "correct": true,
+    "explanation": "By Christopher Daly at the PRISM Climate Group."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS extends back to 1800.",
+    "correct": false,
+    "explanation": "Covers 1950 to present."
+  },
+  {
+    "type": "true_false",
+    "question": "CARPATCLIM provides over 30 derived climate indices.",
+    "correct": true,
+    "explanation": "Standard variables plus 30+ indices."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS covers 90N to 90S.",
+    "correct": false,
+    "explanation": "50S to 50N."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 extends back to 1940.",
+    "correct": true,
+    "explanation": "Hourly data from 1940 to present."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zagyva regression R-squared is 0.97.",
+    "correct": true,
+    "explanation": "Strong linear relationship."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging weights are determined from the variogram.",
+    "correct": true,
+    "explanation": "Optimal weights computed from spatial correlation model."
+  },
+  {
+    "type": "true_false",
+    "question": "Bilinear resampling creates staircase artifacts.",
+    "correct": false,
+    "explanation": "That is nearest neighbor. Bilinear produces smooth results."
+  },
+  {
+    "type": "true_false",
+    "question": "OMSZ stands for Hungarian Meteorological Service.",
+    "correct": true,
+    "explanation": "Now operating as HungaroMet Zrt."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW is theoretically optimal.",
+    "correct": false,
+    "explanation": "Kriging is theoretically optimal (BLUE); IDW uses arbitrary distance weighting."
+  },
+  {
+    "type": "true_false",
+    "question": "Cubic convolution uses 16 surrounding cells.",
+    "correct": true,
+    "explanation": "4x4 neighborhood for smooth resampling."
+  },
+  {
+    "type": "true_false",
+    "question": "The simple arithmetic mean of gauges equals Thiessen average.",
+    "correct": false,
+    "explanation": "They differ when gauge polygon areas differ (603.3 vs 579.8 in example)."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungarian runoff ratios for lowland basins are typically 0.5-0.8.",
+    "correct": false,
+    "explanation": "0.05-0.15 for lowland basins."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS was originally designed with Africa in mind.",
+    "correct": true,
+    "explanation": "Primary input for FEWS NET drought monitoring in Africa."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS uses thin-plate splines for climatology.",
+    "correct": true,
+    "explanation": "Three-step: splines for climatology, kriging for anomalies, then combine."
+  },
+  {
+    "type": "true_false",
+    "question": "Reprojection should be minimized to preserve data quality.",
+    "correct": true,
+    "explanation": "Each reprojection degrades data slightly."
+  },
+  {
+    "type": "true_false",
+    "question": "In geographic coordinates, east-west distances are always correct.",
+    "correct": false,
+    "explanation": "One degree of longitude varies from 111 km at equator to 0 at poles."
+  },
+  {
+    "type": "true_false",
+    "question": "ETRS89-LAEA preserves area accurately.",
+    "correct": true,
+    "explanation": "Equal-area projection, important for Thiessen and zonal stats."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF data became freely accessible in July 2024.",
+    "correct": true,
+    "explanation": "data.vizugy.hu."
+  },
+  {
+    "type": "true_false",
+    "question": "The IDW worked example gives a result below the simple mean.",
+    "correct": true,
+    "explanation": "22.7 mm vs simple mean 26.0 mm, pulled down by nearby low-value gauge."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 tends to underestimate light precipitation.",
+    "correct": false,
+    "explanation": "Tends to overestimate light and underestimate heavy precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "Variogram fitting requires judgment and experience.",
+    "correct": true,
+    "explanation": "A poorly fitted variogram produces poor kriging results."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen method requires no parameters or subjective choices.",
+    "correct": true,
+    "explanation": "Deterministic, reproducible, no parameters beyond gauge selection."
+  },
+  {
+    "type": "true_false",
+    "question": "Machine learning is being applied to spatial interpolation.",
+    "correct": true,
+    "explanation": "Deep neural networks learning complex relationships, particularly for extremes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zagyva River flows northward.",
+    "correct": false,
+    "explanation": "Flows from Matra/Bukk mountains southward to Tisza near Szolnok."
+  },
+  {
+    "type": "true_false",
+    "question": "Splines with high tension produce surfaces close to linear between points.",
+    "correct": true,
+    "explanation": "High tension stretches the surface toward linear interpolation."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS resolution is 0.1 degree (~11 km).",
+    "correct": true,
+    "explanation": "Available at 0.1 and 0.25 degree resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "Precipitation gauge area is about 10^-6 km^2.",
+    "correct": true,
+    "explanation": "WMO 200 cm^2 orifice = 2x10^-5 m^2 = ~10^-6 km^2 order of magnitude."
+  },
+  {
+    "type": "true_false",
+    "question": "APHRODITE covers monsoon Asia.",
+    "correct": true,
+    "explanation": "Asian gauge-based precipitation dataset."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging assumes stationarity of spatial correlation.",
+    "correct": true,
+    "explanation": "Same variogram applies everywhere in the domain."
+  },
+  {
+    "type": "true_false",
+    "question": "Georges Matheron formalized kriging mathematically.",
+    "correct": true,
+    "explanation": "French mathematician formalized Krige's ideas in the 1960s."
+  },
+  {
+    "type": "true_false",
+    "question": "GPM uses only infrared measurements.",
+    "correct": false,
+    "explanation": "Uses microwave radiometers and radars, not just infrared."
+  },
+  {
+    "type": "true_false",
+    "question": "The hypsometric regression for the Zagyva shows 31 mm per 100 m elevation.",
+    "correct": true,
+    "explanation": "Slope 0.308 = 30.8 mm per 100 m."
+  },
+  {
+    "type": "true_false",
+    "question": "Zonal statistics precision improves with fewer cells.",
+    "correct": false,
+    "explanation": "Improves with more cells; standard error decreases as 1/sqrt(n)."
+  },
+  {
+    "type": "true_false",
+    "question": "For legal purposes, Thiessen's simplicity is an advantage.",
+    "correct": true,
+    "explanation": "Accepted by courts and regulators due to reproducibility."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Estimating values beyond the sample domain is called _____.",
+    "correct": "extrapolation",
+    "explanation": "Higher uncertainty than interpolation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WMO standard gauge orifice is _____ cm^2.",
+    "correct": "200",
+    "explanation": "Standard measurement area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen polygons are also called _____ polygons.",
+    "correct": "Voronoi",
+    "explanation": "Or Dirichlet tessellations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IDW stands for Inverse _____ Weighting.",
+    "correct": "Distance",
+    "explanation": "Weight = 1/d^p."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The most common IDW power parameter is p = _____.",
+    "correct": "2",
+    "explanation": "Standard default."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The IDW artifact of concentric contours is the _____ effect.",
+    "correct": "bull's-eye",
+    "explanation": "Circular patterns around each point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bilinear interpolation fits a surface through _____ corner values.",
+    "correct": "four",
+    "explanation": "2x2 grid corners."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Splines minimize _____ energy.",
+    "correct": "bending",
+    "explanation": "Penalizes curvature for smooth surfaces."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kriging provides the _____ Linear Unbiased Estimate.",
+    "correct": "Best",
+    "explanation": "BLUE."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kriging was named after _____ Krige.",
+    "correct": "Danie",
+    "explanation": "South African mining engineer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kriging was formalized by Georges _____.",
+    "correct": "Matheron",
+    "explanation": "French mathematician in the 1960s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The variogram nugget represents error at _____ distance.",
+    "correct": "zero",
+    "explanation": "Measurement noise and micro-scale variability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The variogram _____ is where it levels off.",
+    "correct": "sill",
+    "explanation": "Total variance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The variogram _____ is the distance of effective decorrelation.",
+    "correct": "range",
+    "explanation": "Beyond this, points are uncorrelated."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Co-kriging uses _____ as auxiliary for precipitation.",
+    "correct": "elevation",
+    "explanation": "Most common auxiliary variable."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ effect enhances windward precipitation.",
+    "correct": "orographic",
+    "explanation": "Air forced upward by mountains."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The dry zone behind mountains is the rain _____.",
+    "correct": "shadow",
+    "explanation": "Leeward side loses moisture."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PRISM was developed at _____ State University.",
+    "correct": "Oregon",
+    "explanation": "PRISM Climate Group."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PRISM resolution is _____ m.",
+    "correct": "800",
+    "explanation": "30 arc-second."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS is produced by _____ (institution).",
+    "correct": "KNMI",
+    "explanation": "Royal Netherlands Meteorological Institute."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS ensemble has _____ members.",
+    "correct": "20",
+    "explanation": "For uncertainty assessment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM period: 1961-_____.",
+    "correct": "2010",
+    "explanation": "50-year coverage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM led by _____ (service).",
+    "correct": "OMSZ",
+    "explanation": "Hungarian Meteorological Service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS stands for Climate _____ InfraRed Precipitation with Station data.",
+    "correct": "Hazards",
+    "explanation": "Climate Hazards Group product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS resolution: _____ degrees.",
+    "correct": "0.05",
+    "explanation": "~5.3 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM temporal resolution: _____-hourly.",
+    "correct": "half",
+    "explanation": "30-minute intervals."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 resolution: ~_____ km.",
+    "correct": "31",
+    "explanation": "0.25 degree grid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 extends back to _____.",
+    "correct": "1940",
+    "explanation": "Hourly reanalysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zagyva regression: P = 497 + _____ * h.",
+    "correct": "0.308",
+    "explanation": "31 mm per 100 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zagyva watershed area: _____ km^2.",
+    "correct": "5,677",
+    "explanation": "Northern Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zonal _____ bridges raster and polygon data.",
+    "correct": "statistics",
+    "explanation": "Summary stats of raster within polygons."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen method by Alfred Thiessen in _____.",
+    "correct": "1911",
+    "explanation": "US Weather Bureau."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen average: Sum(Pi*Ai) / Sum(_____)",
+    "correct": "Ai",
+    "explanation": "Area-weighted mean."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen worked example result: _____ mm.",
+    "correct": "579.8",
+    "explanation": "301490/520."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Runoff ratio = Q / _____.",
+    "correct": "P",
+    "explanation": "Runoff depth / precipitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Runoff ratio > _____ is physically impossible.",
+    "correct": "1.0",
+    "explanation": "Would violate mass conservation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zagyva runoff ratio: _____.",
+    "correct": "0.061",
+    "explanation": "34.5/565."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRDC provides global _____ data.",
+    "correct": "discharge",
+    "explanation": "River discharge from 9800+ stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OMSZ operates _____ stations in Hungary.",
+    "correct": "136",
+    "explanation": "10-minute resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Matra precipitation: _____-800 mm/yr.",
+    "correct": "700",
+    "explanation": "Northern Hungarian mountains."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Alfold precipitation: 500-_____ mm/yr.",
+    "correct": "550",
+    "explanation": "Great Plain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Upper Tisza Basin: ~_____ km^2.",
+    "correct": "73,000",
+    "explanation": "Across 4 countries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Carpathian ridge precipitation > _____ mm/yr.",
+    "correct": "1,200",
+    "explanation": "High mountain precipitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Seconds in a year: _____ x 10^7.",
+    "correct": "3.156",
+    "explanation": "Used for runoff calculations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IDW worked example result: _____ mm.",
+    "correct": "22.7",
+    "explanation": "10.265/0.4518."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian precipitation data at _____.vizugy.hu.",
+    "correct": "data",
+    "explanation": "OVF database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM at Copernicus _____ Observations.",
+    "correct": "Surface",
+    "explanation": "Access portal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The environmental lapse rate is about -_____ deg/km.",
+    "correct": "6.5",
+    "explanation": "Temperature decrease with altitude."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cubic convolution uses _____ surrounding cells.",
+    "correct": "16",
+    "explanation": "4x4 neighborhood."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kriging variance shows estimation _____.",
+    "correct": "uncertainty",
+    "explanation": "Unique to kriging among interpolation methods."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ Bayesian Kriging automates variogram fitting.",
+    "correct": "Empirical",
+    "explanation": "Available in ArcGIS Pro."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precipitation distribution has a long right _____.",
+    "correct": "tail",
+    "explanation": "Skewed distribution with extreme events."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS is primary input for _____ NET.",
+    "correct": "FEWS",
+    "explanation": "USAID Famine Early Warning Systems Network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM is a joint _____ / JAXA mission.",
+    "correct": "NASA",
+    "explanation": "Launched 2014."
+  },
+  {
+    "type": "fill_blank",
+    "question": "APHRODITE covers _____ Asia.",
+    "correct": "monsoon",
+    "explanation": "Asian gauge-based dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CRU TS resolution: _____ degrees.",
+    "correct": "0.5",
+    "explanation": "~50 km, monthly."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS uses thin-plate _____ for climatology.",
+    "correct": "splines",
+    "explanation": "First step of three-step interpolation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen polygons are dual to _____ triangulation.",
+    "correct": "Delaunay",
+    "explanation": "Geometric duality."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Ordinary kriging assumes _____ mean.",
+    "correct": "constant",
+    "explanation": "Unknown but constant across domain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Universal kriging handles _____ in the data.",
+    "correct": "trends",
+    "explanation": "Allows mean to vary with coordinates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM used _____ countries' station data.",
+    "correct": "nine",
+    "explanation": "Cross-border harmonization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Simple arithmetic mean of 3 gauges in example: _____ mm.",
+    "correct": "603.3",
+    "explanation": "(680+520+610)/3."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Standard error of mean decreases as 1/sqrt(_____).",
+    "correct": "n",
+    "explanation": "n = number of cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5-Land resolution: ~_____ km.",
+    "correct": "9",
+    "explanation": "Higher-resolution reanalysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zagyva estimated precipitation: _____ mm.",
+    "correct": "565",
+    "explanation": "497 + 0.308 * 220."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Regularized splines use a _____ parameter.",
+    "correct": "weight",
+    "explanation": "Controls smoothness vs data fidelity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thiessen method: AP_Product = Precipitation * _____.",
+    "correct": "Shape_Area",
+    "explanation": "Area-precipitation products."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In E-OBS, anomalies are interpolated with _____.",
+    "correct": "kriging",
+    "explanation": "Step 2 of three-step process."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R^2 of Zagyva regression: _____.",
+    "correct": "0.97",
+    "explanation": "Strong linear fit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cascade Range western slope: > _____ mm precipitation.",
+    "correct": "3,000",
+    "explanation": "US orographic example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PRISM accounts for slope, aspect, and proximity to _____.",
+    "correct": "coastlines",
+    "explanation": "Multiple topographic factors."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Gauge network bias: concentrates in _____ and lowlands.",
+    "correct": "valleys",
+    "explanation": "Where people live."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Nearest neighbor is the only method for _____ data.",
+    "correct": "categorical",
+    "explanation": "Can't average categories."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ ratio validates precipitation estimates.",
+    "correct": "runoff",
+    "explanation": "Q/P as consistency check."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian lowland runoff ratios: 0.05-_____.",
+    "correct": "0.15",
+    "explanation": "Low due to high ET on the Great Plain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geographic coordinates create _____ bias in Thiessen polygons.",
+    "correct": "directional",
+    "explanation": "E-W distances underestimated relative to N-S."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Each reprojection introduces data _____.",
+    "correct": "degradation",
+    "explanation": "From resampling smoothing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bilinear and cubic resampling eliminate _____ artifacts.",
+    "correct": "staircase",
+    "explanation": "Smooth results vs nearest neighbor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM includes over _____ climate indices.",
+    "correct": "30",
+    "explanation": "Beyond standard variables."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Summary Statistics tool groups by _____ identifier.",
+    "correct": "watershed",
+    "explanation": "For computing per-watershed averages."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why precipitation is the most challenging variable to interpolate.",
+    "correct": "Precipitation is discontinuous (localized storms), has a skewed distribution with many zeros, varies with topography (orographic effect), and gauge networks are biased toward lowlands. Unlike temperature's smooth lapse rate, precipitation can change dramatically over short distances.",
+    "explanation": "Multiple factors make precipitation uniquely difficult."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Thiessen polygons and kriging for watershed-average precipitation.",
+    "correct": "Thiessen is simple, reproducible, requires no parameters, but produces discontinuous surfaces and ignores topography. Kriging is optimal (BLUE), provides uncertainty, can incorporate elevation, but requires variogram fitting expertise. For sparse mountainous data, kriging is far superior.",
+    "explanation": "Trade-off between simplicity and accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the orographic effect and its significance for Hungarian hydrology.",
+    "correct": "Moist air forced upward by mountains cools, condenses, precipitating on the windward side. The Matra/Bukk receive 700-800 mm/yr while the Alfold gets 500-550 mm/yr. This gradient matters for agriculture and flood forecasting. Simple interpolation from valley gauges underestimates mountain precipitation.",
+    "explanation": "Creates systematic spatial patterns correlated with topography."
+  },
+  {
+    "type": "essay",
+    "question": "What is PRISM and how does it differ from simple elevation regression?",
+    "correct": "PRISM develops local regression models that vary in space, accounting for slope orientation, coastal proximity, and topographic position. Unlike a single global regression, PRISM captures the fact that elevation-precipitation gradients differ on windward vs leeward slopes and in coastal vs continental settings.",
+    "explanation": "Local vs global regression is the key distinction."
+  },
+  {
+    "type": "essay",
+    "question": "Compare E-OBS and CARPATCLIM for Hungarian precipitation studies.",
+    "correct": "E-OBS covers all of Europe from 1950-present at 0.1 deg with 20-member uncertainty ensemble. CARPATCLIM covers only the Carpathian region but uses homogenized cross-border data from 9 countries, resolving inconsistencies. For 1961-2010 in Hungary, CARPATCLIM is superior due to its specialized data quality.",
+    "explanation": "CARPATCLIM's cross-border harmonization is the key advantage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the kriging workflow including variogram analysis.",
+    "correct": "(1) Compute empirical semivariogram from data pairs. (2) Fit theoretical model (spherical/exponential) with nugget, sill, range parameters. (3) Use fitted model to compute optimal weights. (4) Produce estimates and kriging variance map. The variance shows where estimates are reliable (near gauges) vs uncertain.",
+    "explanation": "Variogram is the foundation of kriging."
+  },
+  {
+    "type": "essay",
+    "question": "Why did the Thiessen estimate underestimate Upper Tisza precipitation by 40%?",
+    "correct": "Using only Hungarian lowland gauges (100-200 m elevation, ~580 mm) for a mountain sub-basin in Carpathian Ukraine. The true average is ~950 mm due to orographic enhancement at high elevations. Thiessen ignores elevation, assigning lowland values to mountains. International data (CARPATCLIM) is essential.",
+    "explanation": "Failure to account for orographic effect and missing high-elevation data."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the runoff ratio as a precipitation validation tool.",
+    "correct": "Runoff ratio = Q/P should be 0.05-0.15 for Hungarian lowlands, 0.15-0.35 for mountains, never > 1.0 (which violates mass balance). The Zagyva gives 0.061, consistent with high ET on the Alfold. If > 1.0, check precipitation estimate, discharge, or area.",
+    "explanation": "Simple but powerful consistency check."
+  },
+  {
+    "type": "essay",
+    "question": "Why are pre-computed gridded products preferred over DIY interpolation?",
+    "correct": "Products (PRISM, E-OBS, CHIRPS) incorporate thousands of gauges, satellite data, sophisticated methods, and quality control beyond any project's scope. They are freely accessible through web portals. The hydrologist's task shifts from interpolation to product selection and spatial averaging.",
+    "explanation": "Product developers have more resources and expertise."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the surface-based alternative to Thiessen polygon averaging.",
+    "correct": "First interpolate gauge data into a continuous surface (IDW, kriging, or use pre-computed gridded product), then apply zonal statistics to compute the mean over each watershed. Advantages: spatial smoothness, can incorporate elevation, provides a map, compatible with gridded products.",
+    "explanation": "Two-step approach produces more physically realistic results."
+  },
+  {
+    "type": "essay",
+    "question": "What is the IDW power parameter and how does it affect results?",
+    "correct": "Power p controls how rapidly influence decays with distance. p=1: smooth, distant points matter. p=2: nearby points dominate (standard). p->infinity: converges to nearest neighbor. Higher p creates stronger bull's-eye patterns. Values of 1-3 are typical for hydrological work.",
+    "explanation": "Single most important user choice in IDW."
+  },
+  {
+    "type": "essay",
+    "question": "Describe CHIRPS and its primary applications.",
+    "correct": "CHIRPS combines satellite infrared (cold cloud tops = convective rain) with ground stations using modified IDW. Covers 50S-50N at 0.05 deg, 1981-present. Primary use: drought monitoring in Africa (FEWS NET), water resources in developing countries. Version 3 (2024) improves station integration.",
+    "explanation": "Designed for data-sparse regions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why coordinate system choice matters for interpolation.",
+    "correct": "All interpolation methods depend on accurate distances. Geographic coordinates create directional bias (1 deg longitude varies with latitude). At Hungary's 47N, 1 deg longitude = ~76 km vs 111 km for latitude. Projected systems (EOV, ETRS89-LAEA) give accurate metric distances. Equal-area projections best for area-weighted methods.",
+    "explanation": "Distance calculations must be accurate."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the recommended precipitation products by region.",
+    "correct": "US: PRISM (800m). Hungary: CARPATCLIM (1961-2010) or E-OBS. Europe: E-OBS. Africa/tropics: CHIRPS. Near-real-time: GPM/IMERG. Global baseline: ERA5. Each optimized for its region using best available data and methods.",
+    "explanation": "Region-specific products exploit local data and expertise."
+  },
+  {
+    "type": "essay",
+    "question": "What is the hypsometric method and when is it appropriate?",
+    "correct": "(1) Regress precipitation on elevation from gauge data. (2) Apply to each DEM cell. (3) Adjust with interpolated residuals. Works when elevation-precipitation is roughly linear and uniform. Breaks down when windward/leeward differences matter. Simpler than PRISM but effective for first-order estimates.",
+    "explanation": "Simplified version of PRISM-type approaches."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how zonal statistics precision relates to cell count.",
+    "correct": "Standard error of mean decreases as 1/sqrt(n). With 55,000 cells (a small watershed at 30m), random errors are suppressed by factor ~235. Precision reaches centimeter level even when DEM accuracy is meters. Only systematic biases survive averaging.",
+    "explanation": "Large cell counts make zonal statistics very precise."
+  },
+  {
+    "type": "essay",
+    "question": "Why is international data sharing essential for Tisza Basin hydrology?",
+    "correct": "The Upper Tisza (73,000 km^2) spans Hungary, Slovakia, Ukraine, Romania. Precipitation on Carpathian headwaters (>1200 mm) causes floods in Hungarian cities (~500 mm locally). Using only Hungarian gauges underestimates basin precipitation by ~40%. Products like CARPATCLIM harmonize cross-border data.",
+    "explanation": "Water doesn't respect political boundaries."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the advantages and limitations of kriging.",
+    "correct": "Advantages: BLUE, provides uncertainty estimates, accounts for spatial correlation, can use auxiliary variables (co-kriging). Limitations: requires variogram fitting (needs judgment), assumes stationarity, computationally intensive, complex for non-specialists. Empirical Bayesian Kriging automates some of this.",
+    "explanation": "Theoretically optimal but practically complex."
+  },
+  {
+    "type": "essay",
+    "question": "What is the bull's-eye effect and how does it arise?",
+    "correct": "Concentric circular contours surrounding each sample point in IDW surfaces. Arises because IDW weights decay symmetrically with distance, creating isolated peaks/depressions at each gauge. Has no physical basis. More pronounced with higher power parameter p. Can be misleading for analysis.",
+    "explanation": "IDW distance-weighting artifact."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the E-OBS three-step interpolation process.",
+    "correct": "(1) Thin-plate splines for long-term climatology, incorporating elevation. (2) Kriging of daily anomalies (departures from climatology). (3) Combine climatological field + anomaly field. This captures orographic effect through step 1 while allowing daily patterns to be data-driven in step 2.",
+    "explanation": "Separates climate signal from weather variability."
+  },
+  {
+    "type": "essay",
+    "question": "What validation should always follow precipitation estimation?",
+    "correct": "The runoff ratio check: compute Q/P using observed streamflow and estimated precipitation. Should be 0.05-0.15 (lowlands) to 0.5-0.7 (wet mountains). If > 1.0: error in P, Q, or area. If unreasonably low or high: investigate. Cross-check with GRDC for transboundary basins.",
+    "explanation": "Always validate against streamflow."
+  },
+  {
+    "type": "essay",
+    "question": "Compare regularized and tension splines.",
+    "correct": "Regularized splines allow deviation from data points for global smoothness (weight parameter). Tension splines control how tightly the surface stretches between points (tension parameter). Low tension risks overshooting with peaks/troughs; high tension stays close to linear. Both can produce negative precipitation.",
+    "explanation": "Different parameters control different smoothness properties."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Thiessen method still used despite its limitations?",
+    "correct": "It is deterministic, reproducible, simple, requires no parameters, easy to explain, and legally defensible. Many operational models accept Thiessen inputs directly. Changing methods requires recalibration. For institutional and regulatory purposes, simplicity and reproducibility outweigh technical limitations.",
+    "explanation": "Institutional inertia and legal requirements favor simplicity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical workflow for Hungarian watershed precipitation.",
+    "correct": "Download CARPATCLIM (1961-2010) or E-OBS daily grids. Compute temporal aggregation (annual/monthly/event total). Apply Zonal Statistics over watershed polygons. Validate with OVF discharge data and runoff ratio. For post-2010: use E-OBS. For near-real-time: GPM/IMERG.",
+    "explanation": "Modern workflow avoids manual interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how ERA5 differs from gauge-based precipitation products.",
+    "correct": "ERA5 is a NWP model reanalysis output, not gauge interpolation. It assimilates many observation types (satellites, radiosondes, aircraft). Known biases: overestimates light precipitation, underestimates heavy. Advantages: global, hourly, consistent, extends to 1940. Useful complement but not a substitute for gauge-based products.",
+    "explanation": "Model product vs observation-based product."
+  },
+  {
+    "type": "essay",
+    "question": "What is the Zonal Statistics as Table workflow?",
+    "correct": "Inputs: zone data (watershed polygons), zone field (ID), value raster (precip surface). Output: table with zone ID, cell count, mean/min/max/std/sum. Join back to polygon feature class using zone field. Enables map visualization and further spatial analysis.",
+    "explanation": "Bridge between raster surfaces and polygon analysis units."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the three-tier precipitation data framework.",
+    "correct": "Tier 1 (national): OMSZ stations for Hungary, NOAA for US. Tier 2 (gridded): PRISM (US), E-OBS/CARPATCLIM (Europe), CHIRPS (tropics). Tier 3 (reanalysis): ERA5 for global consistency. Use the best available tier; gridded products have largely replaced raw gauge interpolation.",
+    "explanation": "Hierarchical data access framework."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why cubic convolution resampling is preferred for DEMs.",
+    "correct": "Uses 16 surrounding cells to fit smooth surfaces, better preserving ridge and valley detail than bilinear (4 cells). Important when the resampled DEM will be used for slope and aspect analysis. Slightly sharper but can overshoot. For precipitation grids, bilinear is usually sufficient.",
+    "explanation": "Best for preserving continuous surface properties."
+  },
+  {
+    "type": "essay",
+    "question": "How does gauge clustering affect interpolation results?",
+    "correct": "Clustered gauges provide redundant information. Simple methods treat all gauges equally, over-weighting the cluster. Kriging automatically assigns lower weights to clustered points because they provide less new information. IDW with search neighborhoods or kriging should be used when gauge distribution is non-random.",
+    "explanation": "Kriging handles clustering optimally through its weight equations."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the machine learning trend in precipitation interpolation.",
+    "correct": "Deep neural networks learning nonlinear relationships between precipitation and predictors (elevation, satellite imagery, atmospheric fields). Can outperform traditional methods for extreme events. Require large training datasets and computational resources. Early stage but promising for complex spatial patterns.",
+    "explanation": "Emerging trend reshaping the field."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the two-argument atan2 function's role in aspect calculation and how it relates to interpolation.",
+    "correct": "While atan2 is primarily for aspect (Ch 7), it illustrates a general principle: correct mathematical implementation matters. Similarly in interpolation, using proper distance calculations in projected coordinates, choosing appropriate variogram models, and handling edge cases correctly all affect result quality.",
+    "explanation": "Mathematical rigor is essential in both terrain analysis and interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Why should the conditioned DEM not be used for terrain-based precipitation analysis?",
+    "correct": "Filled DEMs have altered elevation values (raised pits, flattened areas) that would distort the elevation input to regression-based precipitation methods. Slope and aspect from filled DEMs are incorrect. Always use the original DEM for terrain characterization and precipitation-elevation regressions; use the filled DEM only for flow routing.",
+    "explanation": "Conditioning distorts terrain properties needed for precipitation analysis."
+  },
+  {
+    "type": "essay",
+    "question": "What are the implications of the shift from DIY interpolation to gridded products?",
+    "correct": "Interpolation knowledge shifts from practitioner to product developer. But understanding methods is essential for evaluating products: knowing E-OBS uses splines with elevation tells you mountain estimates are good; knowing CHIRPS uses IR tells you cold-season estimates may be poor. The vocabulary of interpolation remains necessary for informed product selection.",
+    "explanation": "Understanding methods is essential even when not performing them."
+  },
+  {
+    "type": "mcq",
+    "question": "Grayson and Bloschl published their interpolation reference in:",
+    "options": [
+      "A) 1990",
+      "B) 2000",
+      "C) 2010",
+      "D) 2020"
+    ],
+    "correct": "B",
+    "explanation": "Spatial Patterns in Catchment Hydrology (2000), Cambridge University Press."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS current version (2025) is:",
+    "options": [
+      "A) v10",
+      "B) v22",
+      "C) v32.0e",
+      "D) v42"
+    ],
+    "correct": "C",
+    "explanation": "v32.0e, November 2025."
+  },
+  {
+    "type": "mcq",
+    "question": "ERA5 temporal resolution:",
+    "options": [
+      "A) Daily",
+      "B) 6-hourly",
+      "C) Hourly",
+      "D) Half-hourly"
+    ],
+    "correct": "C",
+    "explanation": "Hourly time steps."
+  },
+  {
+    "type": "mcq",
+    "question": "The Zagyva joins the Tisza near:",
+    "options": [
+      "A) Budapest",
+      "B) Szolnok",
+      "C) Debrecen",
+      "D) Szeged"
+    ],
+    "correct": "B",
+    "explanation": "Flows southward to join the Tisza near Szolnok."
+  },
+  {
+    "type": "mcq",
+    "question": "The mean annual discharge of the Zagyva at Szolnok is:",
+    "options": [
+      "A) 0.62 m^3/s",
+      "B) 6.2 m^3/s",
+      "C) 62 m^3/s",
+      "D) 620 m^3/s"
+    ],
+    "correct": "B",
+    "explanation": "6.2 m^3/s from OVF records."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS version 3 was released in:",
+    "options": [
+      "A) 2020",
+      "B) 2022",
+      "C) 2024",
+      "D) 2026"
+    ],
+    "correct": "C",
+    "explanation": "Version 3 released in 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "Gaussian variogram model is characterized by:",
+    "options": [
+      "A) Sharp transition at range",
+      "B) Gradual parabolic transition near origin",
+      "C) Linear increase",
+      "D) Constant value"
+    ],
+    "correct": "B",
+    "explanation": "Gaussian model has a smooth parabolic approach to the sill."
+  },
+  {
+    "type": "mcq",
+    "question": "NARR is a reanalysis covering:",
+    "options": [
+      "A) Global",
+      "B) North America",
+      "C) Europe",
+      "D) Asia"
+    ],
+    "correct": "B",
+    "explanation": "North American Regional Reanalysis."
+  },
+  {
+    "type": "mcq",
+    "question": "Spherical variogram model:",
+    "options": [
+      "A) Never reaches sill",
+      "B) Reaches sill at exactly the range distance",
+      "C) Is always linear",
+      "D) Has no nugget"
+    ],
+    "correct": "B",
+    "explanation": "Spherical reaches the sill at the defined range."
+  },
+  {
+    "type": "mcq",
+    "question": "Exponential variogram model:",
+    "options": [
+      "A) Reaches sill at the range",
+      "B) Approaches sill asymptotically",
+      "C) Is always flat",
+      "D) Has no range"
+    ],
+    "correct": "B",
+    "explanation": "Exponential approaches the sill asymptotically."
+  },
+  {
+    "type": "mcq",
+    "question": "Water Framework Directive applies to:",
+    "options": [
+      "A) United States",
+      "B) European Union",
+      "C) Global",
+      "D) Asia only"
+    ],
+    "correct": "B",
+    "explanation": "EU WFD for pan-European water management."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS stands for:",
+    "options": [
+      "A) European Flood Alert System",
+      "B) European Flood Awareness System",
+      "C) Eastern Flood Analysis Service",
+      "D) Environmental Flow Assessment System"
+    ],
+    "correct": "B",
+    "explanation": "European Flood Awareness System."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza flood of 2001 displaced:",
+    "options": [
+      "A) Hundreds",
+      "B) Thousands",
+      "C) Tens of thousands",
+      "D) Millions"
+    ],
+    "correct": "C",
+    "explanation": "Tens of thousands of people."
+  },
+  {
+    "type": "mcq",
+    "question": "Mean watershed elevation for Zagyva:",
+    "options": [
+      "A) 100 m",
+      "B) 220 m",
+      "C) 500 m",
+      "D) 1000 m"
+    ],
+    "correct": "B",
+    "explanation": "Approximately 220 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Kriging assumes spatial correlation is:",
+    "options": [
+      "A) Non-existent",
+      "B) Stationary",
+      "C) Always linear",
+      "D) Dependent on time"
+    ],
+    "correct": "B",
+    "explanation": "Same variogram applies everywhere in the domain."
+  },
+  {
+    "type": "mcq",
+    "question": "Kekes-teto station precipitation:",
+    "options": [
+      "A) 520 mm",
+      "B) 690 mm",
+      "C) 800 mm",
+      "D) 1200 mm"
+    ],
+    "correct": "C",
+    "explanation": "800 mm at 1,010 m elevation."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW always produces values within the range of input data.",
+    "correct": true,
+    "explanation": "As a weighted average, the result is bounded by input values."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging weights sum to exactly 1.",
+    "correct": true,
+    "explanation": "Unbiasedness constraint ensures weights sum to 1."
+  },
+  {
+    "type": "true_false",
+    "question": "The 2010 Tisza floods caused widespread damage in NE Hungary.",
+    "correct": true,
+    "explanation": "Spring floods caused widespread damage."
+  },
+  {
+    "type": "true_false",
+    "question": "CARPATCLIM provides only temperature and precipitation.",
+    "correct": false,
+    "explanation": "Over 30 derived climate indices plus standard variables."
+  },
+  {
+    "type": "true_false",
+    "question": "Universal kriging can handle regional trends.",
+    "correct": true,
+    "explanation": "Allows mean to vary as function of coordinates."
+  },
+  {
+    "type": "true_false",
+    "question": "Szolnok station precipitation is about 520 mm/yr.",
+    "correct": true,
+    "explanation": "Lowest station in the Zagyva example at 89 m elevation."
+  },
+  {
+    "type": "true_false",
+    "question": "The environmental lapse rate applies to precipitation.",
+    "correct": false,
+    "explanation": "The lapse rate (-6.5 C/1000m) is for temperature, not precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 is produced by ECMWF.",
+    "correct": true,
+    "explanation": "European Centre for Medium-Range Weather Forecasts."
+  },
+  {
+    "type": "true_false",
+    "question": "Bilinear resampling smooths data slightly.",
+    "correct": true,
+    "explanation": "Weighted average of 4 cells smooths slightly."
+  },
+  {
+    "type": "true_false",
+    "question": "Thiessen polygons can be constructed for categorical data.",
+    "correct": true,
+    "explanation": "Nearest neighbor is the only valid method for categorical data."
+  },
+  {
+    "type": "true_false",
+    "question": "Co-kriging requires a secondary variable like elevation.",
+    "correct": true,
+    "explanation": "Uses spatial cross-correlation with auxiliary variables."
+  },
+  {
+    "type": "true_false",
+    "question": "CRU TS provides sub-daily data.",
+    "correct": false,
+    "explanation": "Monthly resolution, 1901-present."
+  },
+  {
+    "type": "true_false",
+    "question": "The bull's-eye effect is worse with higher p values.",
+    "correct": true,
+    "explanation": "Higher p concentrates weight on nearest points."
+  },
+  {
+    "type": "true_false",
+    "question": "PRISM resolution varies across the US.",
+    "correct": false,
+    "explanation": "Consistent 800 m (30 arc-second) across CONUS."
+  },
+  {
+    "type": "true_false",
+    "question": "Precipitation gauges sample about 10^-6 km^2.",
+    "correct": true,
+    "explanation": "~200 cm^2 orifice."
+  },
+  {
+    "type": "true_false",
+    "question": "CHIRPS uses microwave radar data.",
+    "correct": false,
+    "explanation": "Uses infrared satellite + gauge data. GPM uses microwave."
+  },
+  {
+    "type": "true_false",
+    "question": "Gaussian and exponential are common variogram models.",
+    "correct": true,
+    "explanation": "Along with spherical, the three standard models."
+  },
+  {
+    "type": "true_false",
+    "question": "Runoff ratio for wet mountain basins can reach 0.5-0.7.",
+    "correct": true,
+    "explanation": "Maritime and cool climates with low ET."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zagyva watershed is dominated by mountainous terrain.",
+    "correct": false,
+    "explanation": "Dominated by lowland areas, with only northern headwaters above 500 m."
+  },
+  {
+    "type": "true_false",
+    "question": "E-OBS format is NetCDF-4.",
+    "correct": true,
+    "explanation": "Distributed in NetCDF-4 format."
+  },
+  {
+    "type": "true_false",
+    "question": "Simple stream burning and AGREE produce identical results.",
+    "correct": false,
+    "explanation": "Burning creates abrupt cliffs; AGREE uses smooth V-shaped taper."
+  },
+  {
+    "type": "true_false",
+    "question": "GRDC data includes Hungarian Tisza stations.",
+    "correct": true,
+    "explanation": "Over 9,800 stations worldwide including Danube and Tisza."
+  },
+  {
+    "type": "true_false",
+    "question": "The Albers Equal Area Conic is used in the US for area-accurate mapping.",
+    "correct": true,
+    "explanation": "Standard US equal-area projection."
+  },
+  {
+    "type": "true_false",
+    "question": "Polynomial trend surfaces of high degree are robust near data edges.",
+    "correct": false,
+    "explanation": "Prone to wild oscillations near data domain edges."
+  },
+  {
+    "type": "true_false",
+    "question": "GPM predecessor is TRMM.",
+    "correct": true,
+    "explanation": "TRMM data extends back to 2000."
+  },
+  {
+    "type": "true_false",
+    "question": "Real-time blending of precipitation sources is becoming standard.",
+    "correct": true,
+    "explanation": "Combining gauges, radar, satellite, and models."
+  },
+  {
+    "type": "true_false",
+    "question": "The FEWS NET system uses CHIRPS for drought monitoring.",
+    "correct": true,
+    "explanation": "Primary precipitation input for famine early warning."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Estimation within the convex hull of samples is called _____.",
+    "correct": "interpolation",
+    "explanation": "Between known values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ polygon method was developed in 1911.",
+    "correct": "Thiessen",
+    "explanation": "Alfred Thiessen, US Weather Bureau."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precipitation increases by ~_____ mm per 100 m in the Zagyva example.",
+    "correct": "31",
+    "explanation": "Slope 0.308 = 30.8 mm/100 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zagyva River drains ~_____ km^2.",
+    "correct": "5,677",
+    "explanation": "Northern Hungary watershed."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ERA5 is produced by _____.",
+    "correct": "ECMWF",
+    "explanation": "European Centre for Medium-Range Weather Forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS format is _____-4.",
+    "correct": "NetCDF",
+    "explanation": "Network Common Data Form."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ kriging automates variogram fitting.",
+    "correct": "Empirical Bayesian",
+    "explanation": "Available in ArcGIS Pro."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Table to _____ converts attribute tables to spreadsheets.",
+    "correct": "Excel",
+    "explanation": "ArcGIS Pro export tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zagyva mean annual discharge is _____ m^3/s.",
+    "correct": "6.2",
+    "explanation": "From OVF records."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Runoff depth = Q * T / _____.",
+    "correct": "A",
+    "explanation": "Discharge times time divided by area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM provides _____ derived climate indices.",
+    "correct": "30",
+    "explanation": "Beyond standard variables."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ kriging fits a trend before kriging residuals.",
+    "correct": "Universal",
+    "explanation": "Also called kriging with a trend."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zonal Statistics as Table outputs one _____ per zone.",
+    "correct": "row",
+    "explanation": "Summary statistics per polygon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS ensemble spread is similar to kriging _____.",
+    "correct": "variance",
+    "explanation": "Both quantify estimation uncertainty."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The variogram model types include spherical, exponential, and _____.",
+    "correct": "Gaussian",
+    "explanation": "Three standard theoretical models."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPM stands for Global _____ Measurement.",
+    "correct": "Precipitation",
+    "explanation": "Joint NASA/JAXA mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IMERG stands for Integrated Multi-satellitE _____ for GPM.",
+    "correct": "Retrievals",
+    "explanation": "Algorithm combining satellite observations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 2001 _____ flood displaced tens of thousands.",
+    "correct": "Tisza",
+    "explanation": "Major flood event in Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precipitation on Carpathian ridges exceeds _____ mm/yr.",
+    "correct": "1,200",
+    "explanation": "High mountain precipitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HungaroMet _____ is the current name for OMSZ.",
+    "correct": "Zrt",
+    "explanation": "Hungarian Meteorological Service."
+  },
+  {
+    "type": "essay",
+    "question": "What is a variogram and how is it used in kriging?",
+    "correct": "The variogram plots semivariance vs lag distance, showing how spatial similarity decays. Parameters: nugget (measurement error), sill (total variance), range (decorrelation distance). Kriging uses the fitted model to compute optimal weights that minimize estimation variance.",
+    "explanation": "Foundation of geostatistical interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "How do satellite precipitation products complement gauge data?",
+    "correct": "Satellites provide spatial coverage where gauges are sparse (mountains, oceans, developing countries). CHIRPS uses infrared; GPM uses microwave radar. They have their own biases (miss light/cold-season rain) but fill the gauge network gaps. Best practice: merge both sources.",
+    "explanation": "Complementary information sources."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical advantage of E-OBS's ensemble approach.",
+    "correct": "Rather than one estimate, 20 members show plausible range. Ensemble spread indicates where estimates are uncertain (data-sparse areas, extreme events). Conceptually similar to kriging variance but implemented through sampling. Enables uncertainty propagation in hydrological models.",
+    "explanation": "Built-in uncertainty quantification."
+  },
+  {
+    "type": "essay",
+    "question": "Why does the Thiessen method underestimate mountain precipitation?",
+    "correct": "Gauges cluster in valleys (where people live). Mountain ridges have few/no gauges. Thiessen assigns valley values to mountains because the nearest gauge is in the valley. The orographic effect makes mountain precipitation much higher than valley values. Error can exceed 40%.",
+    "explanation": "Gauge network bias + ignored topography."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Water Framework Directive's relevance to precipitation estimation.",
+    "correct": "The EU WFD requires transboundary water management across political boundaries. Consistent precipitation data across countries is essential. Products like E-OBS and ERA5 provide this. The WFD drives demand for pan-European data infrastructure that underlies modern precipitation analysis.",
+    "explanation": "Institutional driver for cross-border data."
+  },
+  {
+    "type": "essay",
+    "question": "What is regression-kriging and when should it be used?",
+    "correct": "Fits a regression between precipitation and auxiliary variables (elevation), then applies kriging to the residuals. Captures large-scale topographic trends through regression and local spatial patterns through kriging. Better than either alone. Best for mountainous terrain with sparse gauges and good DEM.",
+    "explanation": "Combines strengths of regression and kriging."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the CARPATCLIM homogenization process and why it matters.",
+    "correct": "Station records from 9 countries were checked for relocations, instrument changes, and practice changes that create artificial trends. Cross-border inconsistencies (different measurement times, methods) were harmonized. Without this, gridded products inherit national-level discontinuities at borders.",
+    "explanation": "Data quality is essential for reliable interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical difference between Zonal Statistics and Thiessen averaging?",
+    "correct": "Zonal Statistics averages a continuous raster surface over a polygon, using all cell values with equal weight. Thiessen creates a discrete surface (nearest gauge) then area-weights. Zonal stats on a kriged or PRISM surface gives a true spatial average; Thiessen gives a discrete approximation.",
+    "explanation": "Continuous vs discrete spatial averaging."
+  },
+  {
+    "type": "essay",
+    "question": "How should a hydrologist select a precipitation product for a new project?",
+    "correct": "Consider: region (US=PRISM, Europe=E-OBS, tropics=CHIRPS), period needed, temporal resolution (event=GPM, climate=CRU), uncertainty needs (kriging variance=E-OBS ensemble), availability, and whether gauge data exists for validation. Always validate against streamflow.",
+    "explanation": "Product selection framework."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why reprojection should be minimized in a precipitation workflow.",
+    "correct": "Each reprojection resamples the data, introducing slight smoothing (bilinear) or artifacts (nearest neighbor). Multiple reprojections compound this degradation. Plan the target coordinate system upfront, reproject all inputs once, perform all analysis, then reproject only the final output if needed.",
+    "explanation": "Minimize data degradation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the GRDC in transboundary hydrology.",
+    "correct": "GRDC maintains quality-assured river discharge data for 9,800+ stations worldwide. For basins like the Tisza spanning multiple countries, GRDC provides upstream discharge data unavailable from national sources alone. Essential for runoff ratio validation of precipitation estimates.",
+    "explanation": "Global discharge data for validation."
+  },
+  {
+    "type": "essay",
+    "question": "What is cross-validation and how is it used to evaluate interpolation methods?",
+    "correct": "Remove one gauge, interpolate using remaining gauges, compare estimate to withheld value. Repeat for all gauges. Statistics (RMSE, bias, correlation) measure interpolation quality. Helps choose between IDW, kriging, splines by comparing their cross-validation errors.",
+    "explanation": "Standard evaluation technique."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of stationarity in kriging.",
+    "correct": "Stationarity assumes the spatial correlation structure (variogram) is the same everywhere. In reality, mountainous areas may have different correlation than plains. Violation leads to suboptimal weights. Solutions: moving-window kriging, detrending (universal kriging), or domain splitting.",
+    "explanation": "Key assumption that may not hold."
+  },
+  {
+    "type": "essay",
+    "question": "How does climate data infrastructure support modern hydrology?",
+    "correct": "Copernicus, NASA Earthdata, CDS provide free gridded products via web portals and APIs. Download 70 years of daily precipitation in minutes. Products use sophisticated methods (thousands of gauges, satellites, models, QC). This shifts hydrologist's role from interpolation to product selection and validation.",
+    "explanation": "Infrastructure enables modern practice."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the trade-offs of higher-resolution precipitation products.",
+    "correct": "Higher resolution (PRISM 800m vs ERA5 31km) captures more spatial detail and orographic effects. But requires more computation, storage, and may introduce noise in gauge-sparse areas. The resolution should match the analysis need: catchment-scale analysis doesn't need 800m; flood event analysis does.",
+    "explanation": "Resolution must match the application."
+  },
+  {
+    "type": "essay",
+    "question": "What are the known biases of ERA5 precipitation?",
+    "correct": "ERA5 overestimates light precipitation (too many light events) and underestimates heavy precipitation (misses extreme peaks). It's a model product, not observations, so systematic biases exist. Useful for global consistency and long records but should be validated against gauge data.",
+    "explanation": "Important limitations of reanalysis products."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the IDW search neighborhood affects results.",
+    "correct": "Using all points includes distant, irrelevant gauges. A search neighborhood (max radius, min/max points) restricts influence to nearby gauges. Reduces computation time and prevents distant anomalies from affecting local estimates. But may leave gaps with no nearby points. Balance is needed.",
+    "explanation": "Spatial extent of influence."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Add Join operation and its importance.",
+    "correct": "Zonal Statistics outputs a standalone table. Add Join links this table back to the polygon feature class using a common field (zone ID). This enables map visualization (symbolize by mean precipitation) and further spatial analysis. Available in both ArcGIS Pro and QGIS.",
+    "explanation": "Connects statistical results to spatial features."
+  },
+  {
+    "type": "essay",
+    "question": "Why might two DEM sources give different watershed-average elevations?",
+    "correct": "Different vertical accuracy, resolution, acquisition dates, and surface types. But zonal statistics precision is centimeter-level from averaging many cells, so differences reflect DEM quality, not computation error. The table shows ~5 cm differences for 250 m mean elevation — 0.002% relative error.",
+    "explanation": "DEM quality dominates; computation is precise."
+  },
+  {
+    "type": "essay",
+    "question": "What role does the scale triplet play in evaluating precipitation products?",
+    "correct": "Extent = product coverage area. Spacing = grid resolution (e.g., 0.1 deg for E-OBS). Support = what each cell represents (area average). A 0.1 deg cell cannot resolve convective storms <10 km. The triplet determines which precipitation variability is captured vs smoothed.",
+    "explanation": "Framework from Chapter 5 applied to precipitation."
+  },
+  {
+    "type": "essay",
+    "question": "How does seasonality affect the choice of precipitation interpolation method?",
+    "correct": "Winter frontal precipitation is spatially smooth — IDW may suffice. Summer convective storms are localized — kriging with dense gauges or radar/satellite products needed. Orographic effects vary seasonally. The best method may differ between winter climatology and summer event analysis.",
+    "explanation": "Seasonal precipitation characteristics matter."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the water balance equation and how precipitation estimation fits in.",
+    "correct": "P = Q + ET + G + delta_S (precipitation = runoff + evapotranspiration + deep percolation + storage change). Precipitation is the primary input. Errors in P propagate to all other terms. The runoff ratio Q/P provides a consistency check. Closing the water balance requires accurate P.",
+    "explanation": "Precipitation is the foundation of water balance."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Thiessen polygon geometry depends only on gauge locations, not values.",
+    "correct": "Thiessen polygons partition space by nearest distance — a purely geometric construction. The same gauge locations produce the same polygons whether recording rain, temperature, or wind speed. Values are assigned after construction. This makes the method transparent but unable to adapt to the variable being interpolated.",
+    "explanation": "Geometry independent of data values."
+  },
+  {
+    "type": "essay",
+    "question": "What is APHRODITE and for which region is it most useful?",
+    "correct": "Asian Precipitation — Highly-Resolved Observational Data Integration Towards Evaluation. A daily 0.25-degree gauge-based dataset covering monsoon Asia from 1951-2015. Most useful for Asian watershed studies where other products have limited gauge integration.",
+    "explanation": "Regional precipitation dataset for Asia."
+  },
+  {
+    "type": "essay",
+    "question": "How does uncertainty in precipitation affect flood forecasting?",
+    "correct": "Precipitation is the primary input to flood models. Uncertain precipitation translates directly to uncertain flood forecasts. Kriging provides variance estimates that can be propagated through models. Ensemble approaches (E-OBS) give multiple scenarios. Understanding precipitation uncertainty is essential for reliable forecasting.",
+    "explanation": "Uncertainty propagation from input to output."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the precipitation estimation shift over the past two decades.",
+    "correct": "From DIY gauge interpolation (Thiessen, IDW) to downloading pre-computed gridded products (PRISM, E-OBS, CHIRPS). Driven by free data infrastructure, sophisticated product methods, and cheap computing. Hydrologist's role shifted to product selection, spatial averaging, and validation.",
+    "explanation": "Paradigm shift in practice."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of the 0.02% precision of zonal elevation statistics?",
+    "correct": "When two independent DEM computations give watershed averages differing by only 5 cm at 250 m elevation, it proves that zonal statistics are far more precise than DEM accuracy. Differences between analyses reflect source data quality, not computation errors. Random errors cancel through averaging over many cells.",
+    "explanation": "Computational precision vs data accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "What is a semivariance and how is it computed from paired data?",
+    "correct": "Semivariance gamma(h) = (1/2N) * Sum[(z(xi) - z(xi+h))^2] for all N pairs separated by distance h. It measures how dissimilar values become with distance. Low semivariance at short distances = spatially correlated. Rising to a plateau (sill) at the range distance. Foundation of kriging.",
+    "explanation": "The empirical semivariogram formula."
+  },
+  {
+    "type": "essay",
+    "question": "Compare spherical, exponential, and Gaussian variogram models.",
+    "correct": "Spherical: linear near origin, reaches sill at exactly the range. Exponential: approaches sill asymptotically (effective range at ~3x parameter). Gaussian: parabolic near origin (very smooth), reaches sill gradually. Choice depends on data behavior near the origin — smooth fields favor Gaussian; noisy fields favor spherical.",
+    "explanation": "Three standard theoretical models."
+  },
+  {
+    "type": "essay",
+    "question": "What is the kriging variance and how is it interpreted?",
+    "correct": "Kriging variance at each prediction point quantifies estimation uncertainty. Low near gauges (well-constrained), high far from gauges (uncertain). Used for confidence intervals, gauge network optimization (where to add gauges to most reduce uncertainty), and uncertainty propagation in models. Unique to kriging among interpolation methods.",
+    "explanation": "Built-in uncertainty quantification."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a search neighborhood in IDW.",
+    "correct": "Instead of using all sample points, IDW can restrict to nearby points within a maximum radius or a fixed number of neighbors. Reduces computation, prevents distant irrelevant points from affecting estimates. But may leave gaps with no nearby samples. Balance needed between local relevance and coverage.",
+    "explanation": "Spatial extent control for IDW."
+  },
+  {
+    "type": "essay",
+    "question": "Why do gauge networks cluster in valleys rather than on mountain ridges?",
+    "correct": "Gauges need maintenance, power, communications, and road access — all concentrated where people live in valleys and lowlands. Mountain ridges are remote and hostile. This creates systematic underrepresentation of high-elevation precipitation, which is typically the highest due to the orographic effect.",
+    "explanation": "Practical access constraints bias the network."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Thiessen polygon averaging differs from simple arithmetic averaging.",
+    "correct": "Arithmetic mean gives equal weight to all gauges regardless of spatial representativeness. Thiessen weights by the gauge's polygon area within the watershed — gauges representing larger areas get more weight. In the example: arithmetic mean = 603.3 mm vs Thiessen = 579.8 mm because the large-area low-value gauge dominates.",
+    "explanation": "Area weighting vs equal weighting."
+  },
+  {
+    "type": "essay",
+    "question": "What is the gamma distribution and why is it relevant to precipitation?",
+    "correct": "Precipitation amounts follow a roughly gamma (or exponential) distribution: many zero-rain days, frequent light rain, rare heavy rain (long right tail). This skewed distribution means extreme events (most important for floods) are poorly sampled. Standard interpolation methods assume normal distributions and may not capture extremes well.",
+    "explanation": "Statistical properties of precipitation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the 'stationarity' assumption in kriging and its limitations.",
+    "correct": "Stationarity assumes the variogram is the same everywhere — spatial correlation behaves identically at all locations. This may not hold: mountainous areas may have different correlation than plains; windward slopes differ from leeward. Violations lead to suboptimal weights. Solutions include moving-window kriging or domain splitting.",
+    "explanation": "When the assumption fails."
+  },
+  {
+    "type": "essay",
+    "question": "How does the Copernicus Climate Data Store facilitate European hydrology?",
+    "correct": "CDS provides free, programmatic access to ERA5, E-OBS, and other products through a web API. Hydrologists can download decades of gridded data in minutes. Python-based toolbox (cdsapi) enables scripting. This infrastructure supports modern practice of using pre-computed products rather than DIY interpolation.",
+    "explanation": "Technical infrastructure for data access."
+  },
+  {
+    "type": "essay",
+    "question": "Why is CARPATCLIM's homogenization process so important for Hungary?",
+    "correct": "Without homogenization, station records contain artificial trends from relocations, instrument changes, and different observation practices across 9 countries. At borders, discontinuities would appear in gridded products. Homogenization resolves these, providing a seamless, consistent record essential for climate analysis and trend detection.",
+    "explanation": "Data quality foundation for reliable gridded products."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical significance of CHIRPS for developing countries?",
+    "correct": "Many developing countries lack dense gauge networks. CHIRPS provides 0.05-degree daily precipitation from 1981-present by merging satellite infrared with available gauge data. Primary input for FEWS NET drought monitoring in Africa. Enables water resources assessment where no local data exists.",
+    "explanation": "Life-saving data for food security."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the Intersect tool in the Thiessen workflow.",
+    "correct": "After creating Thiessen polygons and having watershed boundaries, the Intersect tool clips the polygons to the watershed, creating fragments. Each fragment inherits the precipitation value from its Thiessen polygon and the area from the geometry. This enables computing area-precipitation products for the weighted average.",
+    "explanation": "Key overlay operation in the workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the runoff ratio check is so powerful as a validation tool.",
+    "correct": "It requires only two widely available quantities: precipitation estimate and observed streamflow. If Q/P > 1.0: impossible, something is wrong. If Q/P is outside expected range: investigate. It doesn't identify which value is wrong but flags inconsistency. Should be applied routinely whenever P and Q are combined.",
+    "explanation": "Simple but powerful mass balance check."
+  },
+  {
+    "type": "essay",
+    "question": "What are the limitations of using ERA5 for flood analysis?",
+    "correct": "ERA5 overestimates light precipitation and underestimates heavy events — exactly the events most important for floods. It's a model product, not observations. At 31 km resolution, it can't resolve convective cells. Better for climate analysis and global consistency than for specific storm events.",
+    "explanation": "Model biases affect flood-critical extreme events."
+  },
+  {
+    "type": "essay",
+    "question": "How does the choice between Thiessen and surface methods affect model calibration?",
+    "correct": "A model calibrated with Thiessen precipitation will have different parameters than one calibrated with kriged precipitation. Switching methods requires recalibration. For operational systems, institutional inertia favors Thiessen. For new projects, surface methods are preferred but must be consistently applied throughout the modeling process.",
+    "explanation": "Consistency in precipitation input method."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Summary Statistics tool's role in Thiessen averaging.",
+    "correct": "After computing area-precipitation products for each Thiessen-watershed fragment, Summary Statistics sums both Shape_Area and AP_Product grouped by watershed ID. The ratio gives the weighted mean. This replaces manual spreadsheet calculations with a reproducible GIS operation.",
+    "explanation": "Automated area-weighted computation."
+  },
+  {
+    "type": "essay",
+    "question": "What is the practical difference between 0.1 degree and 0.05 degree precipitation grids?",
+    "correct": "0.1 deg ≈ 11 km cells; 0.05 deg ≈ 5 km cells. The finer grid resolves more spatial detail, particularly orographic gradients and storm spatial patterns. For small watersheds (<100 km^2), the coarser grid may have only a few cells, reducing zonal statistics precision. Finer grids are preferred when available.",
+    "explanation": "Resolution affects spatial detail and statistical precision."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'physiographic neighborhood' in PRISM.",
+    "correct": "PRISM selects gauge stations for each grid cell based on shared topographic characteristics: similar slope aspect, elevation range, coastal proximity. The regression between elevation and precipitation is fitted locally within this neighborhood. This captures the fact that windward and leeward slopes have different elevation-precipitation relationships.",
+    "explanation": "Local rather than global regression."
+  },
+  {
+    "type": "essay",
+    "question": "What is the Albers Equal Area Conic projection and when is it used?",
+    "correct": "A conic projection that preserves area accurately — areas measured on the map equal true areas on Earth. Used in the US for area-based calculations. Essential for Thiessen polygon and zonal statistics where area weighting is used. Similar to ETRS89-LAEA for Europe but with US-centered standard parallels.",
+    "explanation": "Projection choice for area-accurate analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the NetCDF format and its importance for climate data.",
+    "correct": "Network Common Data Form (NetCDF) stores multidimensional arrays (lat, lon, time) with metadata. Standard format for climate products (E-OBS, ERA5). Self-describing (variables, units, coordinate systems embedded). Supported by Python (xarray, netCDF4), R, and GIS software. Enables efficient time series analysis of gridded data.",
+    "explanation": "Standard data format for gridded climate."
+  },
+  {
+    "type": "essay",
+    "question": "How would you compute mean annual precipitation for a transboundary Danube sub-basin?",
+    "correct": "Use E-OBS or ERA5 for consistent cross-border coverage. Download daily precipitation grids. Compute annual totals. Apply zonal statistics over the sub-basin polygon (from HydroBASINS). Validate with GRDC discharge data and the runoff ratio check. Never use single-country gauge data for transboundary basins.",
+    "explanation": "Practical workflow for cross-border analysis."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between spatial support and spatial resolution?",
+    "correct": "Resolution (spacing) is the grid cell size. Support is the area represented by each measurement. A rain gauge has near-zero support but gauges may be spaced 50 km apart. A 10 km gridded product has 10 km resolution and ~100 km^2 support per cell. Understanding both is essential for appropriate data use.",
+    "explanation": "Scale triplet concepts applied to precipitation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Cascade Range precipitation gradient illustrates the orographic effect.",
+    "correct": "Western slopes receive >3,000 mm/yr from Pacific moisture forced upward. Eastern slopes, just 100 km away, receive <300 mm — a 10x difference. This dramatic gradient demonstrates how mountains systematically redistribute precipitation. Simple interpolation from valley gauges would completely miss this pattern.",
+    "explanation": "Most dramatic US example of orographic enhancement."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Table to Excel tool and its role in hydrological workflows.",
+    "correct": "Converts any ArcGIS attribute table to Excel format. After zonal statistics and joins, the watershed-average values can be exported for analysis in spreadsheets, statistical software, or hydrological models. Bridges the gap between GIS spatial analysis and tabular data analysis.",
+    "explanation": "Data export for non-GIS analysis."
+  },
+  {
+    "type": "essay",
+    "question": "What are the advantages of ERA5-Land over standard ERA5 for precipitation?",
+    "correct": "ERA5-Land provides ~9 km resolution vs ERA5's ~31 km, with the same 1940-present hourly coverage. Better resolves orographic effects and local precipitation patterns. However, it's still a model product with the same systematic biases. Useful when higher resolution is needed without switching to gauge-based products.",
+    "explanation": "Higher-resolution reanalysis variant."
+  },
+  {
+    "type": "essay",
+    "question": "How do you handle negative precipitation values from spline interpolation?",
+    "correct": "Post-process by clamping all negative values to zero. This preserves the spatial pattern while ensuring physical plausibility. Better approaches: use tension splines to reduce overshooting, or switch to kriging or IDW which inherently prevent values outside the data range.",
+    "explanation": "Practical correction for interpolation artifacts."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the standard error of the mean improves zonal statistics precision.",
+    "correct": "Averaging n cells reduces random error by 1/sqrt(n). A 50 km^2 watershed at 30m has ~55,000 cells. Standard error is suppressed by factor ~235. Only systematic biases survive. This is why zonal averages show centimeter-level precision despite meter-level DEM accuracy.",
+    "explanation": "Statistical averaging removes random errors."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of the 2001 and 2010 Tisza floods for Hungarian hydrology?",
+    "correct": "Both caused massive damage and displacement. They demonstrate that precipitation on Carpathian headwaters in Ukraine and Romania becomes Hungarian floods. Using only Hungarian gauge data underestimates basin precipitation by ~40%. International data products (CARPATCLIM) and cross-border cooperation are essential for flood forecasting.",
+    "explanation": "Real-world motivation for transboundary precipitation analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of radar in modern precipitation estimation.",
+    "correct": "Ground-based weather radar provides high spatial (~1 km) and temporal (~5 min) resolution precipitation estimates. Complements gauge networks by filling spatial gaps. GPM satellite radar provides global coverage. Radar-gauge merging combines the spatial coverage of radar with the accuracy of gauges. Increasingly standard in operational forecasting.",
+    "explanation": "Third data source beyond gauges and satellite."
+  },
+  {
+    "type": "essay",
+    "question": "How does the Water Framework Directive drive precipitation data needs in Europe?",
+    "correct": "WFD requires river basin management plans across political boundaries. Consistent, cross-border precipitation data is essential for water balance, flood risk assessment, and ecological flow requirements. This institutional need drove development of E-OBS, CARPATCLIM, and the Copernicus Climate Data Store.",
+    "explanation": "Policy drives data infrastructure development."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for computing Thiessen polygon average in ArcGIS.",
+    "correct": "(1) Create Thiessen Polygons from gauge points. (2) Intersect with watershed boundaries. (3) Calculate Field: AP_Product = Precip * Shape_Area. (4) Summary Statistics: SUM(AP_Product) and SUM(Shape_Area) by watershed. (5) New field: Mean_Precip = SUM_AP / SUM_Area. Join results back to polygons.",
+    "explanation": "Step-by-step GIS implementation."
+  },
+  {
+    "type": "essay",
+    "question": "What is FEWS NET and how does it use precipitation data?",
+    "correct": "Famine Early Warning Systems Network (USAID) monitors food security in Africa and other vulnerable regions. Uses CHIRPS precipitation as primary input for drought detection, crop yield estimation, and famine prediction. CHIRPS provides historical context and near-real-time monitoring for decision-making.",
+    "explanation": "Life-saving application of precipitation data."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how multiple precipitation sources are blended in operational forecasting.",
+    "correct": "Modern systems (EFAS, US National Water Model) combine gauges, radar, satellite, and NWP model output in statistically optimal frameworks. Each source has different strengths: gauges are accurate at points; radar fills spatial gaps; satellite covers remote areas; models provide forecasts. Blending produces the best available precipitation field.",
+    "explanation": "Multi-source data fusion for optimal estimates."
+  },
+  {
+    "type": "essay",
+    "question": "Why is understanding interpolation methods important even when using pre-computed products?",
+    "correct": "Products are built using these methods. Knowing E-OBS uses splines with elevation explains why mountain estimates are reliable. Knowing CHIRPS uses infrared explains cold-season limitations. Knowing ERA5 is a model explains its biases. The interpolation vocabulary enables informed product evaluation and selection.",
+    "explanation": "Conceptual literacy for product evaluation."
+  },
+  {
+    "type": "essay",
+    "question": "What is the relationship between precipitation interpolation and watershed modeling?",
+    "correct": "Precipitation is the primary input to every watershed model. The interpolation method affects the spatial distribution of rainfall, which affects runoff generation patterns. A model calibrated with one precipitation input will perform differently with another. Consistency between precipitation estimation and model calibration is essential.",
+    "explanation": "Input quality determines model quality."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the trend toward machine learning in precipitation estimation.",
+    "correct": "Deep neural networks learn complex nonlinear relationships between precipitation and predictors (elevation, satellite imagery, atmospheric fields). Can outperform traditional methods for extreme events. Require large training datasets and computation. Early results promising but not yet operational standard. Future direction for the field.",
+    "explanation": "Emerging technology in the field."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the arithmetic mean of gauges is usually inferior to Thiessen averaging.",
+    "correct": "Arithmetic mean gives equal weight to all gauges regardless of how much of the watershed they represent. A gauge with a tiny Thiessen polygon area gets the same weight as one representing half the watershed. Thiessen weighting by area is more representative, especially when gauge distribution is uneven.",
+    "explanation": "Spatial representativeness matters."
+  },
+  {
+    "type": "essay",
+    "question": "What practical advice would you give a student starting a precipitation analysis project?",
+    "correct": "(1) Don't interpolate from raw gauges — use gridded products first. (2) Match the product to your region. (3) Apply zonal statistics for watershed averages. (4) Validate with streamflow data using the runoff ratio. (5) If you must interpolate, use kriging with elevation. (6) Always check for physically impossible values.",
+    "explanation": "Practical guidance for beginners."
+  },
+  {
+    "type": "essay",
+    "question": "How does the Copernicus Data Space Ecosystem support European hydrology?",
+    "correct": "Provides free access to E-OBS, ERA5, satellite imagery, and derived products through web portals and Python APIs. Users can search, download, and process data programmatically. Supports reproducible science through consistent data access. The institutional framework behind European climate data infrastructure.",
+    "explanation": "Technical infrastructure for data-driven hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of effective range in exponential variogram models.",
+    "correct": "The exponential model approaches the sill asymptotically, never technically reaching it. The 'effective range' is conventionally defined as 3 times the range parameter, where the model reaches ~95% of the sill. This practical range is comparable to the spherical model's range. Important for interpreting variogram parameters.",
+    "explanation": "Practical interpretation of model parameters."
+  }
+]

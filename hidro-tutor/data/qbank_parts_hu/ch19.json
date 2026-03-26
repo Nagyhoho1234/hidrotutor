@@ -1,0 +1,3702 @@
+[
+  {
+    "id": "ch19_mcq_001",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a USGS által elfogadott formális definíciója a vízadónak?",
+    "options": [
+      "Bármely kőzetformáció, amely vizet tartalmaz",
+      "Elegendő telített, áteresztő anyagot tartalmazó geológiai képződmény, amely jelentős mennyiségű vizet szolgáltat kutaknak",
+      "Kizárólag mészkőből álló vízvezető réteg",
+      "A talajvízszint alatti bármely üledékes réteg"
+    ],
+    "correct": "B",
+    "explanation": "A USGS definíciója megköveteli az elegendő telítettséget és áteresztőképességet a jelentős vízszolgáltatáshoz."
+  },
+  {
+    "id": "ch19_mcq_002",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány felszín alatti víztestet határolt le Magyarország a VKI alapján?",
+    "options": [
+      "85",
+      "125",
+      "185",
+      "250"
+    ],
+    "correct": "C",
+    "explanation": "185 felszín alatti víztest, négy fő típusba sorolva."
+  },
+  {
+    "id": "ch19_mcq_003",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik attribútum kapcsolja a vízadó objektumot a VízföldtaniEgység táblához?",
+    "options": [
+      "HydroID",
+      "HydroCode",
+      "HGUID",
+      "FType"
+    ],
+    "correct": "C",
+    "explanation": "A HGUID (vízföldtani egység azonosító) szolgál erre."
+  },
+  {
+    "id": "ch19_mcq_004",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány fő vízadó-rendszert azonosít a USGS Principal Aquifers térképe?",
+    "options": [
+      "Mintegy 30",
+      "Mintegy 50",
+      "Mintegy 70",
+      "Mintegy 120"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 70 vízadó-rendszert azonosít."
+  },
+  {
+    "id": "ch19_mcq_005",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hol van az IGRAC székhelye?",
+    "options": [
+      "Hannover",
+      "Párizs",
+      "Delft",
+      "Genf"
+    ],
+    "correct": "C",
+    "explanation": "A hollandiai Delftben."
+  },
+  {
+    "id": "ch19_mcq_006",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik magyar geoportálon érhetők el a geológiai térképek?",
+    "options": [
+      "data.vizugy.hu",
+      "map.mbfsz.gov.hu",
+      "geoportal.hu",
+      "ovf.hu"
+    ],
+    "correct": "B",
+    "explanation": "Az SZTFH portálja a map.mbfsz.gov.hu címen."
+  },
+  {
+    "id": "ch19_mcq_007",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány hévízkúttal rendelkezik Magyarország?",
+    "options": [
+      "~500",
+      "~800",
+      "Több mint 1300",
+      "Több mint 2000"
+    ],
+    "correct": "C",
+    "explanation": "Több mint 1300 hévízkút (30 °C feletti víz)."
+  },
+  {
+    "id": "ch19_mcq_008",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "A Nyírség milyen típusú terület?",
+    "options": [
+      "Vulkáni fennsík",
+      "~5000 km²-es homokfennsík",
+      "Karsztos hegység",
+      "Mély folyóvölgy"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 5000 km²-es homokfennsík az Alföld ÉK sarkában."
+  },
+  {
+    "id": "ch19_mcq_009",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a BorePoint objektumosztály típusa?",
+    "options": [
+      "PolylineZ",
+      "PointZ",
+      "MultiPatch",
+      "Polygon"
+    ],
+    "correct": "B",
+    "explanation": "Z-képes pont objektumosztály (PointZ)."
+  },
+  {
+    "id": "ch19_mcq_010",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hogyan számítjuk a TopElev-et?",
+    "options": [
+      "RefElev + FromDepth",
+      "RefElev - FromDepth",
+      "FromDepth - RefElev",
+      "RefElev × FromDepth"
+    ],
+    "correct": "B",
+    "explanation": "TopElev = RefElev - FromDepth."
+  },
+  {
+    "id": "ch19_mcq_011",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen portálon érhetők el a magyar felszín alatti vízszint-idősorok?",
+    "options": [
+      "map.mbfsz.gov.hu",
+      "data.vizugy.hu",
+      "vizugy.gov.hu",
+      "ovf.hu"
+    ],
+    "correct": "B",
+    "explanation": "A data.vizugy.hu portálon 2024 júliusa óta."
+  },
+  {
+    "id": "ch19_mcq_012",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a rétegtani szint (stratigraphic pick)?",
+    "options": [
+      "A fúrás teljes mélysége",
+      "3D pont, ahol geológiai határ a fúrásban előfordul",
+      "A fúrómester által jelölt vízszint",
+      "A kút szűrőszakaszának közepe"
+    ],
+    "correct": "B",
+    "explanation": "3D térbeli pont, ahol egy adott geológiai határ a fúrásban előfordul."
+  },
+  {
+    "id": "ch19_mcq_013",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik szabvány határozza meg a minimális kútazonosítási adatelemeket?",
+    "options": [
+      "INSPIRE",
+      "GeoSciML",
+      "ASTM D5254",
+      "WaterML 2.0"
+    ],
+    "correct": "C",
+    "explanation": "Az ASTM D5254 szabvány."
+  },
+  {
+    "id": "ch19_mcq_014",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mekkora volt a maximális leszívás Debrecen I. kúttelepénél 1986-ra?",
+    "options": [
+      "~10 m",
+      "~18 m",
+      "~28 m",
+      "~40 m"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 28 méteres maximális leszívás."
+  },
+  {
+    "id": "ch19_mcq_015",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a trícium felezési ideje?",
+    "options": [
+      "5,7 év",
+      "12,3 év",
+      "28,8 év",
+      "5730 év"
+    ],
+    "correct": "B",
+    "explanation": "12,3 év."
+  },
+  {
+    "id": "ch19_mcq_016",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány ember van Magyarországon arzén kockázatnak kitéve?",
+    "options": [
+      "~50 000",
+      "~150 000",
+      "~400 000",
+      "~1 millió"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 400 000 ember (Világbank becslés)."
+  },
+  {
+    "id": "ch19_mcq_017",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az EU arzén-határérték az ivóvízben?",
+    "options": [
+      "50 μg/L",
+      "25 μg/L",
+      "10 μg/L",
+      "5 μg/L"
+    ],
+    "correct": "C",
+    "explanation": "10 μg/L (98/83/EK irányelv)."
+  },
+  {
+    "id": "ch19_mcq_018",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány védőzónát határoz meg a magyar kútfej-védelmi rendszer?",
+    "options": [
+      "Kettőt",
+      "Hármat",
+      "Négyet",
+      "Ötöt"
+    ],
+    "correct": "B",
+    "explanation": "Három koncentrikus zóna."
+  },
+  {
+    "id": "ch19_mcq_019",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi jellemzi a magyar sekély alluviális vizek vízkémiai típusát?",
+    "options": [
+      "Na-Cl",
+      "Na-HCO₃",
+      "Ca-Mg-HCO₃",
+      "Ca-SO₄"
+    ],
+    "correct": "C",
+    "explanation": "Ca-Mg-HCO₃ típusú, karbonátoldódást tükrözve."
+  },
+  {
+    "id": "ch19_mcq_020",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen szervezet koordinálja a WHYMAP-ot?",
+    "options": [
+      "USGS",
+      "BGR",
+      "IGRAC",
+      "ENSZ egyedül"
+    ],
+    "correct": "B",
+    "explanation": "A német BGR az UNESCO-val együttműködésben."
+  },
+  {
+    "id": "ch19_mcq_021",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány működő termálfürdő van Magyarországon?",
+    "options": [
+      "~120",
+      "~270",
+      "~450",
+      "~600"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 270 működő termálfürdő."
+  },
+  {
+    "id": "ch19_mcq_022",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a WHYMAP térkép méretaránya?",
+    "options": [
+      "1:1 000 000",
+      "1:5 000 000",
+      "1:10 000 000",
+      "1:25 000 000"
+    ],
+    "correct": "D",
+    "explanation": "1:25 000 000 méretarány."
+  },
+  {
+    "id": "ch19_mcq_023",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány pleisztocén vízadó egységre osztható a Nyírség?",
+    "options": [
+      "Kettő",
+      "Három",
+      "Négy",
+      "Öt"
+    ],
+    "correct": "B",
+    "explanation": "Három: felső, középső és alsó pleisztocén vízadó."
+  },
+  {
+    "id": "ch19_mcq_024",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a Piper-diagram felhasználása?",
+    "options": [
+      "Vízadó-vastagság mérése",
+      "Főion-összetétel szerinti osztályozás",
+      "Fúrási rétegsor megjelenítése",
+      "Potenciometrikus felszín szerkesztése"
+    ],
+    "correct": "B",
+    "explanation": "Víz minták főion-összetétel szerinti osztályozása."
+  },
+  {
+    "id": "ch19_mcq_025",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik vízadó biztosítja San Antonio vízellátását?",
+    "options": [
+      "Ogallala",
+      "Trinity",
+      "Edwards",
+      "Carrizo-Wilcox"
+    ],
+    "correct": "C",
+    "explanation": "Az Edwards-vízadó."
+  },
+  {
+    "id": "ch19_mcq_026",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú GIS-objektumként ábrázoljuk a kutakat?",
+    "options": [
+      "Poligon",
+      "Vonal",
+      "Pont",
+      "Multipatch"
+    ],
+    "correct": "C",
+    "explanation": "Pont objektumokként."
+  },
+  {
+    "id": "ch19_mcq_027",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az átszivárgó vízadó rendszer lényege a Nyírségben?",
+    "options": [
+      "A vízadó felszínre bukkan",
+      "Záró rétegek lassan vizet közvetítenek",
+      "Víz csak oldalirányban áramlik",
+      "Teljesen vízzáró rétegek"
+    ],
+    "correct": "B",
+    "explanation": "Az agyagrétegek áteresztők: lassan közvetítenek vizet."
+  },
+  {
+    "id": "ch19_mcq_028",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mennyi a Nyírség átlagos természetes utánpótlódási üteme?",
+    "options": [
+      "~1 mm/év",
+      "~7 mm/év",
+      "~50 mm/év",
+      "~100 mm/év"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 7 ± 1 mm/év."
+  },
+  {
+    "id": "ch19_mcq_029",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az arzénmobilizáció fő mechanizmusa az Alföldön?",
+    "options": [
+      "Ipari szennyezés",
+      "Vas/mangán-oxihidroxid oldódás redukáló viszonyok közt",
+      "Műtrágyázás",
+      "Vulkáni tevékenység"
+    ],
+    "correct": "B",
+    "explanation": "Geogén eredetű, redukáló körülmények közötti oldódás."
+  },
+  {
+    "id": "ch19_mcq_030",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány telephelyre tartalmaz nyilvántartást a USGS NWIS?",
+    "options": [
+      "~500 000",
+      "~1 millió",
+      "~1,5 millió",
+      "~3 millió"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 1,5 millió telephely."
+  },
+  {
+    "id": "ch19_mcq_031",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi határozza meg Magyarország vízföldtani adottságait?",
+    "options": [
+      "Kárpátok vulkanizmusa",
+      "Pannon-medence üledékes kitöltése",
+      "Kristályos alaphegység",
+      "Intenzív tektonika"
+    ],
+    "correct": "B",
+    "explanation": "A Pannon-medence nagy üledékes medencéje."
+  },
+  {
+    "id": "ch19_mcq_032",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik magyar megyékben a legsúlyosabb az arzén?",
+    "options": [
+      "Győr-Moson-Sopron, Vas, Zala",
+      "Békés, Csongrád, Jász-Nagykun-Szolnok",
+      "Hajdú-Bihar, Szabolcs, Borsod",
+      "Pest, Fejér, Komárom"
+    ],
+    "correct": "B",
+    "explanation": "Békés, Csongrád és Jász-Nagykun-Szolnok."
+  },
+  {
+    "id": "ch19_mcq_033",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen geotermikus gradiens jellemzi Magyarországot?",
+    "options": [
+      "15-20 °C/km",
+      "25-30 °C/km",
+      "45-50 °C/km",
+      "70-80 °C/km"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 45-50 °C/km."
+  },
+  {
+    "id": "ch19_mcq_034",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen adatbázist kezel az SZTFH?",
+    "options": [
+      "Csak vízminőségi adatokat",
+      "Geológiai fúrási nyilvántartást",
+      "Csak meteorológiai adatokat",
+      "Kizárólag árvízi adatokat"
+    ],
+    "correct": "B",
+    "explanation": "Az SZTFH a geológiai fúrási nyilvántartást kezeli."
+  },
+  {
+    "id": "ch19_mcq_035",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen méretarányú az SZTFH országos vízföldtani térképe?",
+    "options": [
+      "1:25 000",
+      "1:100 000",
+      "1:500 000",
+      "1:1 000 000"
+    ],
+    "correct": "C",
+    "explanation": "1:500 000 méretarányú."
+  },
+  {
+    "id": "ch19_mcq_036",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a belső védőidom jellemző mérete?",
+    "options": [
+      "10-50 m",
+      "100-500 m",
+      "1-5 km",
+      "5-10 km"
+    ],
+    "correct": "A",
+    "explanation": "10-50 méter a kútfejtől."
+  },
+  {
+    "id": "ch19_mcq_037",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik jogszabály írja elő a védőidomok kijelölését?",
+    "options": [
+      "2000/60/EK",
+      "123/1997. Korm. rendelet",
+      "98/83/EK",
+      "2007/2/EK"
+    ],
+    "correct": "B",
+    "explanation": "A 123/1997. Korm. rendelet."
+  },
+  {
+    "id": "ch19_mcq_038",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az INSPIRE irányelv száma?",
+    "options": [
+      "2000/60/EK",
+      "98/83/EK",
+      "2007/2/EK",
+      "2006/118/EK"
+    ],
+    "correct": "C",
+    "explanation": "2007/2/EK."
+  },
+  {
+    "id": "ch19_mcq_039",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen szennyeződéssel szemben sebezhető a Nyírség felső-pleisztocén vízadója?",
+    "options": [
+      "Vulkáni eredetű szennyeződés",
+      "Mezőgazdasági és városi eredetű szennyeződés",
+      "Tengeri eredetű szennyeződés",
+      "Bányászati eredetű szennyeződés"
+    ],
+    "correct": "B",
+    "explanation": "A felszínnel való közvetlen kapcsolat miatt sebezhető."
+  },
+  {
+    "id": "ch19_mcq_040",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mekkora a pleisztocén fekü relief a Nyírségben?",
+    "options": [
+      "~40 m",
+      "~80 m",
+      "Több mint 160 m",
+      "Több mint 300 m"
+    ],
+    "correct": "C",
+    "explanation": "Meghaladja a 160 métert."
+  },
+  {
+    "id": "ch19_mcq_041",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány kutat tartalmaz a TWDB adatbázisa?",
+    "options": [
+      "~30 000",
+      "~80 000",
+      "~130 000",
+      "~250 000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 130 000 texasi kút."
+  },
+  {
+    "id": "ch19_mcq_042",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány határvízi vízadót azonosítottak világszerte?",
+    "options": [
+      "~200",
+      "~400",
+      "~600",
+      "~1000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 600 határvízi vízadó-rendszert."
+  },
+  {
+    "id": "ch19_mcq_043",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hányan támaszkodnak felszín alatti vízre elsődleges ivóvízforrásként?",
+    "options": [
+      "~500 M",
+      "Legalább 1,5 Mrd",
+      "~3 Mrd",
+      "~5 Mrd"
+    ],
+    "correct": "B",
+    "explanation": "Legalább 1,5 milliárd ember."
+  },
+  {
+    "id": "ch19_mcq_044",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú karsztos vízadók találhatók a Bükkben?",
+    "options": [
+      "Pannon homokkő",
+      "Mezozoos mészkő és dolomit",
+      "Negyedidőszaki kavics",
+      "Kristályos alaphegység"
+    ],
+    "correct": "B",
+    "explanation": "Mezozoos karbonátok karsztos vízadó-rendszerei."
+  },
+  {
+    "id": "ch19_mcq_045",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a BoreholeLog tábla LogType attribútumának szerepe?",
+    "options": [
+      "Mélységet jelzi",
+      "Különböző típusú függőleges adatokat különböztet meg",
+      "Tulajdonost tárol",
+      "Dátumot rögzít"
+    ],
+    "correct": "B",
+    "explanation": "Lehetővé teszi a kőzettani, kiképzési és hidrosztratigráfiai adatok megkülönböztetését."
+  },
+  {
+    "id": "ch19_mcq_046",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen hőáram-sűrűség jellemzi Magyarországot?",
+    "options": [
+      "30-40 mW/m²",
+      "50-60 mW/m²",
+      "90-100 mW/m²",
+      "150-200 mW/m²"
+    ],
+    "correct": "C",
+    "explanation": "90-100 mW/m², a kontinentális átlag kétszerese."
+  },
+  {
+    "id": "ch19_mcq_047",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hányszor számjegyű a USGS NWIS telephelyazonosító?",
+    "options": [
+      "8",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct": "C",
+    "explanation": "Tizenöt számjegyű, szélességi/hosszúsági fokon alapuló azonosító."
+  },
+  {
+    "id": "ch19_mcq_048",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az EGDI?",
+    "options": [
+      "Magyar geológiai adatbázis",
+      "Európai Geológiai Adatinfrastruktúra",
+      "Globális monitoring rendszer",
+      "USA-beli kútadatbázis"
+    ],
+    "correct": "B",
+    "explanation": "EGDI = Európai Geológiai Adatinfrastruktúra."
+  },
+  {
+    "id": "ch19_mcq_049",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen módszerrel készültek a Nyírség potenciometrikus térképei?",
+    "options": [
+      "IDW",
+      "Spline",
+      "Krigelés",
+      "Lineáris interpoláció"
+    ],
+    "correct": "C",
+    "explanation": "Krigelés interpoláció (természetes szomszéd opcióval)."
+  },
+  {
+    "id": "ch19_mcq_050",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Debrecen hány km-re volt kimutatható a szivattyúzás hatása 1986-ban?",
+    "options": [
+      "10 km",
+      "20 km",
+      "35 km",
+      "50 km"
+    ],
+    "correct": "C",
+    "explanation": "A kúttelepektől 35 km-re is kimutatható volt."
+  },
+  {
+    "id": "ch19_mcq_051",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mióta mélyítenek szisztematikus fúrásokat Magyarországon?",
+    "options": [
+      "1700-as évek",
+      "XIX. század vége",
+      "1950-es évek",
+      "2000-es évek"
+    ],
+    "correct": "B",
+    "explanation": "A XIX. század vége óta."
+  },
+  {
+    "id": "ch19_mcq_052",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a 'coded value domain' szerepe a GIS-ben?",
+    "options": [
+      "Koordináta-rendszer típusa",
+      "Bevihető értékek korlátozása",
+      "Rasztercellaméret",
+      "Térképi vetület"
+    ],
+    "correct": "B",
+    "explanation": "Korlátozza a bevihető értékeket, biztosítva a konzisztenciát."
+  },
+  {
+    "id": "ch19_mcq_053",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány kontrollpont volt 1986-ban a potenciometrikus térkép elkészítéséhez?",
+    "options": [
+      "32",
+      "62",
+      "105",
+      "150"
+    ],
+    "correct": "C",
+    "explanation": "105 kontrollpont."
+  },
+  {
+    "id": "ch19_mcq_054",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Európában hány határvízi vízadót azonosítottak?",
+    "options": [
+      "~50",
+      "~100",
+      "Több mint 150",
+      "~300"
+    ],
+    "correct": "C",
+    "explanation": "Több mint 150."
+  },
+  {
+    "id": "ch19_mcq_055",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen mélységtől tipikus a 30°C feletti vízhőmérséklet?",
+    "options": [
+      "100-200 m",
+      "300-400 m",
+      "600-700 m",
+      "1000+ m"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 600-700 méternél mélyebb kutakból."
+  },
+  {
+    "id": "ch19_mcq_056",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik objektumosztály a fúrás menti intervallumadatokat reprezentálja?",
+    "options": [
+      "BorePoint",
+      "BoreLine",
+      "GeologyArea",
+      "Well"
+    ],
+    "correct": "B",
+    "explanation": "A BoreLine (PolylineZ) reprezentálja az intervallumokat."
+  },
+  {
+    "id": "ch19_mcq_057",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a OneGeology kezdeményezés?",
+    "options": [
+      "Központi adatbázis",
+      "Portál interoperábilis webszolgáltatásokhoz",
+      "Magyar program",
+      "EU vízminőségi program"
+    ],
+    "correct": "B",
+    "explanation": "Portál, ahol országok saját adataikat OGC-kompatibilis szolgáltatásokon kínálják."
+  },
+  {
+    "id": "ch19_mcq_058",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen kapcsolat van egy vízadó és a hozzá tartozó kutak között?",
+    "options": [
+      "Sok-a-sokhoz",
+      "Egy-a-többhöz",
+      "Egy-az-egyhez",
+      "Nincs közvetlen"
+    ],
+    "correct": "B",
+    "explanation": "Egy-a-többhöz: egyetlen vízadóhoz sok kút tartozhat."
+  },
+  {
+    "id": "ch19_mcq_059",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az OVF rövidítés?",
+    "options": [
+      "Országos Vízkészlet Felügyelet",
+      "Országos Vízügyi Főigazgatóság",
+      "Országos Vízminőségi Felügyelet",
+      "Országos Vízadó Felmérés"
+    ],
+    "correct": "B",
+    "explanation": "Országos Vízügyi Főigazgatóság."
+  },
+  {
+    "id": "ch19_mcq_060",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú adatokat NEM szolgáltat a GGIS?",
+    "options": [
+      "Vízadó-térképek",
+      "Monitoring adatok",
+      "Határvízi leltárak",
+      "Valós idejű műholdképek"
+    ],
+    "correct": "D",
+    "explanation": "Nem szolgáltat valós idejű műholdképeket."
+  },
+  {
+    "id": "ch19_mcq_061",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen vízkémiai típusúak a mély pannon vízadók?",
+    "options": [
+      "Ca-Mg-HCO₃",
+      "Na-HCO₃",
+      "Ca-SO₄",
+      "Mg-Cl"
+    ],
+    "correct": "B",
+    "explanation": "Na-HCO₃ típusú, ioncserélési folyamatok miatt."
+  },
+  {
+    "id": "ch19_mcq_062",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány fúrásból készült a Nyírség pleisztocén fekü térképe?",
+    "options": [
+      "100",
+      "200",
+      "322",
+      "500"
+    ],
+    "correct": "C",
+    "explanation": "322 kút fúrási rétegsor-adatai alapján."
+  },
+  {
+    "id": "ch19_mcq_063",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a geofizikai gamma-szelvény elsődleges felhasználása?",
+    "options": [
+      "Vízhőmérséklet",
+      "Porozitás közvetlenül",
+      "Agyag/homok megkülönböztetés",
+      "Víz sótartalma"
+    ],
+    "correct": "C",
+    "explanation": "Természetes radioaktivitás méréssel az agyag és homok megkülönböztetése."
+  },
+  {
+    "id": "ch19_mcq_064",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen formátumban érhető el a USGS Principal Aquifers adatkészlet?",
+    "options": [
+      "Kizárólag PDF",
+      "Poligon shapefile",
+      "Kizárólag papír térkép",
+      "Raszter formátum"
+    ],
+    "correct": "B",
+    "explanation": "Poligon shapefile formában elérhető."
+  },
+  {
+    "id": "ch19_mcq_065",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a GeoSciML?",
+    "options": [
+      "Adatbázisszoftver",
+      "XML-alapú földtudományi jelölőnyelv",
+      "Térképszerkesztő program",
+      "Modellezőszoftver"
+    ],
+    "correct": "B",
+    "explanation": "A CGI által fejlesztett XML-alapú földtudományi jelölőnyelv."
+  },
+  {
+    "id": "ch19_mcq_066",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hol találhatók a legmagasabb hévíz-hőmérsékletek Magyarországon?",
+    "options": [
+      "Dunántúl",
+      "Délkeleti Alföld",
+      "Bükk",
+      "Budapest"
+    ],
+    "correct": "B",
+    "explanation": "A délkeleti Alföldön, ahol a pannon kitöltés legvastagabb."
+  },
+  {
+    "id": "ch19_mcq_067",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a kútkiképzési szelvény tartalma?",
+    "options": [
+      "Vízkémiai összetétel",
+      "Csőátmérők, szűrők, kavicsréteg, cementpalást",
+      "Geológiai formációk kora",
+      "Vízhozam idősor"
+    ],
+    "correct": "B",
+    "explanation": "A kút konstrukciójának dokumentálása."
+  },
+  {
+    "id": "ch19_mcq_068",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány éve ásnak kutakat az emberiség történelmében?",
+    "options": [
+      "~2000",
+      "~5000",
+      "Legalább 8000",
+      "~15 000"
+    ],
+    "correct": "C",
+    "explanation": "Régészeti leletek legalább nyolcezer éves kutakat bizonyítanak."
+  },
+  {
+    "id": "ch19_mcq_069",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mekkora termelést biztosít a debreceni kitermelés az 1990-es évek végén?",
+    "options": [
+      "~30 M m³/év",
+      "~20 M m³/év",
+      "~16 M m³/év",
+      "~8 M m³/év"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 16 millió m³/évre csökkent."
+  },
+  {
+    "id": "ch19_tf_001",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A USGS Principal Aquifers térképe mintegy hetven vízadó-rendszert azonosít.",
+    "correct": true,
+    "explanation": "Valóban mintegy 70."
+  },
+  {
+    "id": "ch19_tf_002",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Magyarország 250 felszín alatti víztestet határolt le a VKI alapján.",
+    "correct": false,
+    "explanation": "185, nem 250."
+  },
+  {
+    "id": "ch19_tf_003",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A HGUID attribútum a vízadó objektumot a VízföldtaniEgység táblához kapcsolja.",
+    "correct": true,
+    "explanation": "Ez a fő kapcsolóattribútum."
+  },
+  {
+    "id": "ch19_tf_004",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A BoreholeLog tábla önálló geometriával rendelkezik.",
+    "correct": false,
+    "explanation": "Tábla, nem objektumosztály; nincs önálló geometria."
+  },
+  {
+    "id": "ch19_tf_005",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A TopElev = RefElev + FromDepth képlettel számítjuk ki.",
+    "correct": false,
+    "explanation": "Helyes: TopElev = RefElev - FromDepth."
+  },
+  {
+    "id": "ch19_tf_006",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A BorePoint objektumosztály PointZ típusú.",
+    "correct": true,
+    "explanation": "Z-képes pont objektumosztály."
+  },
+  {
+    "id": "ch19_tf_007",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Nyírség mintegy 5000 km²-es homokfennsík.",
+    "correct": true,
+    "explanation": "Az Alföld ÉK sarkában."
+  },
+  {
+    "id": "ch19_tf_008",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A nyírségi záró agyagrétegek tökéletesen átnemeresztőek.",
+    "correct": false,
+    "explanation": "Áteresztők: lassan vizet közvetítenek."
+  },
+  {
+    "id": "ch19_tf_009",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A trícium felezési ideje 12,3 év.",
+    "correct": true,
+    "explanation": "A hidrogén radioaktív izotópja."
+  },
+  {
+    "id": "ch19_tf_010",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az IGRAC székhelye Hannoverben van.",
+    "correct": false,
+    "explanation": "Delftben (Hollandia)."
+  },
+  {
+    "id": "ch19_tf_011",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A WHYMAP-ot a BGR koordinálja.",
+    "correct": true,
+    "explanation": "Az UNESCO-val együttműködésben."
+  },
+  {
+    "id": "ch19_tf_012",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Magyarország geotermikus gradiense 25-30 °C/km.",
+    "correct": false,
+    "explanation": "45-50 °C/km."
+  },
+  {
+    "id": "ch19_tf_013",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Magyarország hőáram-sűrűsége a kontinentális átlag kétszerese.",
+    "correct": true,
+    "explanation": "90-100 mW/m²."
+  },
+  {
+    "id": "ch19_tf_014",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az EU arzén-határérték 50 μg/L.",
+    "correct": false,
+    "explanation": "10 μg/L."
+  },
+  {
+    "id": "ch19_tf_015",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Mintegy 400 000 magyar ember van arzén kockázatnak kitéve.",
+    "correct": true,
+    "explanation": "Világbank becslés."
+  },
+  {
+    "id": "ch19_tf_016",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az alföldi arzénszennyezés ipari eredetű.",
+    "correct": false,
+    "explanation": "Geogén eredetű."
+  },
+  {
+    "id": "ch19_tf_017",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A magyar kútfej-védelmi rendszer négy zónát határoz meg.",
+    "correct": false,
+    "explanation": "Hármat, nem négyet."
+  },
+  {
+    "id": "ch19_tf_018",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A belső védőidom jellemzően 10-50 m a kútfejtől.",
+    "correct": true,
+    "explanation": "A kút közvetlen környezete."
+  },
+  {
+    "id": "ch19_tf_019",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A potenciometrikus felszín-térképek az áramlási irányt mutatják.",
+    "correct": true,
+    "explanation": "A talajvíztükör alakját és az irányt."
+  },
+  {
+    "id": "ch19_tf_020",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A USGS NWIS mintegy 1,5 millió telephelyet tartalmaz.",
+    "correct": true,
+    "explanation": "Felszín alatti vízkutak, források, próbafúrások."
+  },
+  {
+    "id": "ch19_tf_021",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A data.vizugy.hu a USGS NWIS magyar megfelelője.",
+    "correct": true,
+    "explanation": "Az OVF adatportálja."
+  },
+  {
+    "id": "ch19_tf_022",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Magyarország több mint 1300 hévízkúttal rendelkezik.",
+    "correct": true,
+    "explanation": "30 °C feletti vizet adó kutak."
+  },
+  {
+    "id": "ch19_tf_023",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az INSPIRE irányelv száma 2000/60/EK.",
+    "correct": false,
+    "explanation": "2007/2/EK."
+  },
+  {
+    "id": "ch19_tf_024",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A GroundWaterML 2.0 a felszín alatti vízi adatcserére szolgál.",
+    "correct": true,
+    "explanation": "OGC szabvány."
+  },
+  {
+    "id": "ch19_tf_025",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Piper-diagram vízkémiai osztályozásra szolgál.",
+    "correct": true,
+    "explanation": "Főion-összetétel szerinti osztályozás."
+  },
+  {
+    "id": "ch19_tf_026",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A sekély alluviális vízadók Na-Cl típusúak.",
+    "correct": false,
+    "explanation": "Ca-Mg-HCO₃ típusúak."
+  },
+  {
+    "id": "ch19_tf_027",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A debreceni I. kúttelepnél 24 m-es szintcsökkenés volt 1966-86 között.",
+    "correct": true,
+    "explanation": "A 19.11. táblázat szerint -24,0 m."
+  },
+  {
+    "id": "ch19_tf_028",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az Alföld kitermelése 50%-kal csökkent a csúcsról az 1990-es évekre.",
+    "correct": true,
+    "explanation": "30-ról 16 millió m³/évre."
+  },
+  {
+    "id": "ch19_tf_029",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A BoreLine objektumok 3D-ben színkódolt oszlopként jelennek meg.",
+    "correct": true,
+    "explanation": "Formáció szerinti szimbolizálás."
+  },
+  {
+    "id": "ch19_tf_030",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A gamma-szelvény az agyag és homok megkülönböztetésére szolgál.",
+    "correct": true,
+    "explanation": "Természetes radioaktivitás mérésével."
+  },
+  {
+    "id": "ch19_tf_031",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az OneGeology központi adatbázis.",
+    "correct": false,
+    "explanation": "Portál, nem központi adatbázis."
+  },
+  {
+    "id": "ch19_tf_032",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Európában több mint 150 határvízi vízadót azonosítottak.",
+    "correct": true,
+    "explanation": "Az UNESCO ISARM szerint."
+  },
+  {
+    "id": "ch19_tf_033",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Debrecen négy kúttelepet üzemeltet.",
+    "correct": true,
+    "explanation": "I., II., III. és IV. jelöléssel."
+  },
+  {
+    "id": "ch19_tf_034",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A nyírségi utánpótlódási ütem a fennsíkon 20 ± 2 mm/év.",
+    "correct": true,
+    "explanation": "A központi fennsíkon."
+  },
+  {
+    "id": "ch19_tf_035",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A pleisztocén fekü reliefje 160 m felett van a Nyírségben.",
+    "correct": true,
+    "explanation": "Tagolt felszín, 160+ m relief."
+  },
+  {
+    "id": "ch19_tf_036",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A 2006-os térkép minden helyszínen helyreállást mutatott.",
+    "correct": false,
+    "explanation": "Csak a kúttelepek közelében; távol tovább csökkent."
+  },
+  {
+    "id": "ch19_tf_037",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az arzénkoncentráció az Alföldön a mélységgel növekszik.",
+    "correct": true,
+    "explanation": "Redukáló körülmények miatt."
+  },
+  {
+    "id": "ch19_tf_038",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A VKI szerint a geogén arzén szennyezésnek minősül.",
+    "correct": false,
+    "explanation": "Technikailag nem szennyezés."
+  },
+  {
+    "id": "ch19_tf_039",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A krigelés interpoláció bizonytalansági becslést ad.",
+    "correct": true,
+    "explanation": "Krigelési varianciatérkép."
+  },
+  {
+    "id": "ch19_tf_040",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A nyírségi felső-pleisztocén vízadó sebezhető a felszíni szennyeződéssel szemben.",
+    "correct": true,
+    "explanation": "Közvetlenül kapcsolódik a felszínhez."
+  },
+  {
+    "id": "ch19_tf_041",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Legalább 8000 éve ásnak kutakat.",
+    "correct": true,
+    "explanation": "Régészeti leletek bizonyítják."
+  },
+  {
+    "id": "ch19_tf_042",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Hollandiában négyzetkilométerenként több száz fúrás áll rendelkezésre.",
+    "correct": true,
+    "explanation": "Egyes részeiben."
+  },
+  {
+    "id": "ch19_tf_043",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az Edwards-vízadó Kaliforniában van.",
+    "correct": false,
+    "explanation": "Texasban."
+  },
+  {
+    "id": "ch19_tf_044",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A GeoSciML a CGI fejlesztése.",
+    "correct": true,
+    "explanation": "XML-alapú földtudományi jelölőnyelv."
+  },
+  {
+    "id": "ch19_tf_045",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Dráva-Mura vízadóját Horvátországgal és Szlovéniával osztják meg.",
+    "correct": true,
+    "explanation": "A határ mindkét oldalán."
+  },
+  {
+    "id": "ch19_tf_046",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az OVF az Országos Vízügyi Főigazgatóság.",
+    "correct": true,
+    "explanation": "Ez a teljes név."
+  },
+  {
+    "id": "ch19_tf_047",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A hévízkutak WaterTemp tartománya 10-25 °C.",
+    "correct": false,
+    "explanation": "30-98 °C."
+  },
+  {
+    "id": "ch19_tf_048",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Nyírség 4 pleisztocén vízadó egységre osztható.",
+    "correct": false,
+    "explanation": "Háromra."
+  },
+  {
+    "id": "ch19_tf_049",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A debreceni szintek 1986-2006 között 7 m-rel emelkedtek az I. kúttelepnél.",
+    "correct": true,
+    "explanation": "Részleges helyreállás."
+  },
+  {
+    "id": "ch19_tf_050",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az ASTM D5254 minimális adatelemeket ír elő kútnyilvántartáshoz.",
+    "correct": true,
+    "explanation": "Egyedi azonosító, koordináták, stb."
+  },
+  {
+    "id": "ch19_tf_051",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Budapest fúrás-sűrűsége hasonló a középső Tisza-vidékéhez.",
+    "correct": false,
+    "explanation": "Budapesten sokkal sűrűbb."
+  },
+  {
+    "id": "ch19_tf_052",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A monitoring kutak víztermelési célúak.",
+    "correct": false,
+    "explanation": "Kizárólag megfigyelési célúak."
+  },
+  {
+    "id": "ch19_tf_053",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Magyarország a pannon hévízrendszeren Romániával is osztozik.",
+    "correct": true,
+    "explanation": "Valamint Szlovákiával, Szerbiával és Horvátországgal."
+  },
+  {
+    "id": "ch19_tf_054",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A függőleges gradiens lefelé mutat, ha a felső szint magasabb.",
+    "correct": true,
+    "explanation": "Lefelé irányuló átszivárgás."
+  },
+  {
+    "id": "ch19_tf_055",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Ausztrália rendelkezik Nemzeti FA-víz Adatcsere Szabvánnyal.",
+    "correct": true,
+    "explanation": "Eleve digitális cserére tervezve."
+  },
+  {
+    "id": "ch19_tf_056",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A WaterML 2.0 az OGC fejlesztése.",
+    "correct": true,
+    "explanation": "Vízészlelési adatkódolási szabvány."
+  },
+  {
+    "id": "ch19_tf_057",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Michigan Wellogic adatbázisa 500 000+ kút nyilvántartását tartalmazza.",
+    "correct": true,
+    "explanation": "Webalapú GIS-felületen kereshető."
+  },
+  {
+    "id": "ch19_tf_058",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az Alföldön a negyedidőszaki üledékek 5-20 m vastagok.",
+    "correct": false,
+    "explanation": "50-500 méter."
+  },
+  {
+    "id": "ch19_tf_059",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A potenciometrikus felszín 1966-ban koncentrikusan lejtett kifelé a Nyírség központjából.",
+    "correct": true,
+    "explanation": "Utánpótlási terület jele."
+  },
+  {
+    "id": "ch19_tf_060",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A szivattyúzás hatása 1986-ra 35 km-re is kimutatható volt.",
+    "correct": true,
+    "explanation": "Debrecen kúttelepeitől."
+  },
+  {
+    "id": "ch19_tf_061",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A GIS-szakembernek nem kell mindkét keretrendszerben navigálnia.",
+    "correct": false,
+    "explanation": "Mindkettő szükséges: SZTFH + VKI."
+  },
+  {
+    "id": "ch19_tf_062",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Hévízen van Európa legnagyobb biológiailag aktív hévíztava.",
+    "correct": true,
+    "explanation": "Nyugat-Magyarországon."
+  },
+  {
+    "id": "ch19_tf_063",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A TWDB kilenc fő és huszonkét mellék-vízadó adatkészletét tartja karban.",
+    "correct": true,
+    "explanation": "Texas vízadó-adatbázisa."
+  },
+  {
+    "id": "ch19_tf_064",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A SGMA 2014-ben lépett hatályba Kaliforniában.",
+    "correct": true,
+    "explanation": "Sustainable Groundwater Management Act."
+  },
+  {
+    "id": "ch19_tf_065",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A karsztos vízadók kizárólag a Bükkben találhatók.",
+    "correct": false,
+    "explanation": "A Dunántúli-középhegységben is."
+  },
+  {
+    "id": "ch19_tf_066",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Piper-diagram két háromszögből és egy rombuszból áll.",
+    "correct": true,
+    "explanation": "Kation, anion háromszög és központi rombusz."
+  },
+  {
+    "id": "ch19_tf_067",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A monitoring adatokat a VRA-ban tárolják.",
+    "correct": true,
+    "explanation": "Központi Vízrajzi Adattár."
+  },
+  {
+    "id": "ch19_tf_068",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Minden felszín alatti víztesthez mennyiségi és kémiai állapotot rendeltek.",
+    "correct": true,
+    "explanation": "A VKI értékelési rendszere."
+  },
+  {
+    "id": "ch19_tf_069",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A geofizikai szelvények a víz hőmérsékletét mérik.",
+    "correct": false,
+    "explanation": "A kőzet fizikai tulajdonságait mérik."
+  },
+  {
+    "id": "ch19_tf_070",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az SZTFH portálja WMS és WFS felületeket támogat.",
+    "correct": true,
+    "explanation": "GIS-szoftverekkel közvetlenül fogyasztható."
+  },
+  {
+    "id": "ch19_tf_071",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A geoadatbázisban minden poligonnak egyedi HydroID-ja van.",
+    "correct": true,
+    "explanation": "Egyedi azonosítás a geoadatbázison belül."
+  },
+  {
+    "id": "ch19_tf_072",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A fajlagos ellenállás szelvény radioaktivitást mér.",
+    "correct": false,
+    "explanation": "Elektromos ellenállást; a gamma méri a radioaktivitást."
+  },
+  {
+    "id": "ch19_tf_073",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az alföldi arzén a mélységgel csökken.",
+    "correct": false,
+    "explanation": "A mélységgel növekszik."
+  },
+  {
+    "id": "ch19_tf_074",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az OVF monitoring hálózata egyre inkább telemetrikus.",
+    "correct": true,
+    "explanation": "Valós idejű adatátvitel."
+  },
+  {
+    "id": "ch19_tf_075",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Egyetlen kút csak egyetlen vízadóhoz rendelhető.",
+    "correct": false,
+    "explanation": "Több vízadóhoz is rendelhető."
+  },
+  {
+    "id": "ch19_tf_076",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A debreceni szivattyúzás megfordította az áramlási irányt.",
+    "correct": true,
+    "explanation": "Minden irányból Debrecen felé."
+  },
+  {
+    "id": "ch19_tf_077",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az utánpótlódási ütem a fennsíkon alacsonyabb az átlagnál.",
+    "correct": false,
+    "explanation": "Magasabb (~20 mm/év vs. ~7 mm/év)."
+  },
+  {
+    "id": "ch19_tf_078",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A GGIS a ggis.un-igrac.org-on érhető el.",
+    "correct": true,
+    "explanation": "A webalapú platform címe."
+  },
+  {
+    "id": "ch19_tf_079",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A TWDB adatbázisában mintegy 50 attribútum ír le minden kutat.",
+    "correct": true,
+    "explanation": "Relációs struktúrában."
+  },
+  {
+    "id": "ch19_tf_080",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A magyar geológiai térképek digitalizálása teljesen kész.",
+    "correct": false,
+    "explanation": "Folyamatban lévő munka, hiányos."
+  },
+  {
+    "id": "ch19_tf_081",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az Edwards-vízadó adatkészlet kibúvási és artézi zónákat különböztet meg.",
+    "correct": true,
+    "explanation": "Részletesen térképezett."
+  },
+  {
+    "id": "ch19_tf_082",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az átszivárgás felfedezése nem változtatta meg a Nyírség megértését.",
+    "correct": false,
+    "explanation": "Alapvetően megváltoztatta."
+  },
+  {
+    "id": "ch19_tf_083",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az akusztikus szelvény hanghullám terjedési időt mér.",
+    "correct": true,
+    "explanation": "Porozitás és kőzettípus meghatározásához."
+  },
+  {
+    "id": "ch19_tf_084",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A nyírségi vetők nem befolyásolják a vízáramlást.",
+    "correct": false,
+    "explanation": "Hidraulikai akadályt képezhetnek."
+  },
+  {
+    "id": "ch19_tf_085",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A SP szelvény természetes elektromos potenciálokat mér.",
+    "correct": true,
+    "explanation": "Formációhatárokon."
+  },
+  {
+    "id": "ch19_tf_086",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A debreceni depressziós tölcsér 1986-ra az országhatárig terjedt.",
+    "correct": true,
+    "explanation": "Délkeleten elérte a határt."
+  },
+  {
+    "id": "ch19_tf_087",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A kútfej-védelmi rendszert a 123/1997. Korm. rendelet szabályozza.",
+    "correct": true,
+    "explanation": "A védőidomok kijelöléséről szól."
+  },
+  {
+    "id": "ch19_tf_088",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A GeoSciML sémákat definiál földtani egységekhez.",
+    "correct": true,
+    "explanation": "XML-alapú kódolás."
+  },
+  {
+    "id": "ch19_tf_089",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A pannon homokkő hévízkutak magasabb hőmérsékletűek, mint a karbonátosak.",
+    "correct": false,
+    "explanation": "Alacsonyabb (30-60 °C vs. 50-90+ °C)."
+  },
+  {
+    "id": "ch19_tf_090",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Nyírségben a vetők akár 96 m-es szintkülönbséget okozhatnak.",
+    "correct": true,
+    "explanation": "Szanyi (2004) adatai szerint."
+  },
+  {
+    "id": "ch19_tf_091",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az MBFSZ jelenlegi utódszervezete az SZTFH.",
+    "correct": true,
+    "explanation": "Szabályozott Tevékenységek Felügyeleti Hatósága."
+  },
+  {
+    "id": "ch19_fb_001",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Magyarország a VKI alapján _____ felszín alatti víztestet határolt le.",
+    "correct_answer": "185",
+    "explanation": "A helyes válasz: 185."
+  },
+  {
+    "id": "ch19_fb_002",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A USGS Principal Aquifers térképe mintegy _____ rendszert azonosít.",
+    "correct_answer": "70",
+    "explanation": "A helyes válasz: 70."
+  },
+  {
+    "id": "ch19_fb_003",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A _____ attribútum kapcsolja a vízadót a VízföldtaniEgység táblához.",
+    "correct_answer": "HGUID",
+    "explanation": "A helyes válasz: HGUID."
+  },
+  {
+    "id": "ch19_fb_004",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "TopElev = _____ - FromDepth.",
+    "correct_answer": "RefElev",
+    "explanation": "A helyes válasz: RefElev."
+  },
+  {
+    "id": "ch19_fb_005",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A BorePoint típusa _____.",
+    "correct_answer": "PointZ",
+    "explanation": "A helyes válasz: PointZ."
+  },
+  {
+    "id": "ch19_fb_006",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Nyírség mintegy _____ km²-es homokfennsík.",
+    "correct_answer": "5000",
+    "explanation": "A helyes válasz: 5000."
+  },
+  {
+    "id": "ch19_fb_007",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A trícium felezési ideje _____ év.",
+    "correct_answer": "12,3",
+    "explanation": "A helyes válasz: 12,3."
+  },
+  {
+    "id": "ch19_fb_008",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az IGRAC székhelye _____.",
+    "correct_answer": "Delft",
+    "explanation": "A helyes válasz: Delft."
+  },
+  {
+    "id": "ch19_fb_009",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Magyarország geotermikus gradiense mintegy _____°C/km.",
+    "correct_answer": "45-50",
+    "explanation": "A helyes válasz: 45-50."
+  },
+  {
+    "id": "ch19_fb_010",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Magyarország hőáram-sűrűsége _____ mW/m².",
+    "correct_answer": "90-100",
+    "explanation": "A helyes válasz: 90-100."
+  },
+  {
+    "id": "ch19_fb_011",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felszín alatti vízszint-idősorok a _____ portálon érhetők el.",
+    "correct_answer": "data.vizugy.hu",
+    "explanation": "A helyes válasz: data.vizugy.hu."
+  },
+  {
+    "id": "ch19_fb_012",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az SZTFH portálja: _____.",
+    "correct_answer": "map.mbfsz.gov.hu",
+    "explanation": "A helyes válasz: map.mbfsz.gov.hu."
+  },
+  {
+    "id": "ch19_fb_013",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Magyarország _____ hévízkúttal rendelkezik.",
+    "correct_answer": "több mint 1300",
+    "explanation": "A helyes válasz: több mint 1300."
+  },
+  {
+    "id": "ch19_fb_014",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Világszerte legalább _____ milliárd ember felszín alatti vízre támaszkodik.",
+    "correct_answer": "1,5",
+    "explanation": "A helyes válasz: 1,5."
+  },
+  {
+    "id": "ch19_fb_015",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A debreceni I. kúttelepnél a max. leszívás _____ m volt.",
+    "correct_answer": "28",
+    "explanation": "A helyes válasz: 28."
+  },
+  {
+    "id": "ch19_fb_016",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A minimális kútazonosítási adatelemeket az _____ határozza meg.",
+    "correct_answer": "ASTM D5254",
+    "explanation": "A helyes válasz: ASTM D5254."
+  },
+  {
+    "id": "ch19_fb_017",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az EU arzén-határérték _____ μg/L.",
+    "correct_answer": "10",
+    "explanation": "A helyes válasz: 10."
+  },
+  {
+    "id": "ch19_fb_018",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A kútfej-védelmi rendszer _____ zónát határoz meg.",
+    "correct_answer": "három",
+    "explanation": "A helyes válasz: három."
+  },
+  {
+    "id": "ch19_fb_019",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A kutakat rendeltetésük szerint az _____ attribútum osztályozza.",
+    "correct_answer": "FType",
+    "explanation": "A helyes válasz: FType."
+  },
+  {
+    "id": "ch19_fb_020",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A kút 3D kiterjedését a LandElev és _____ határozza meg.",
+    "correct_answer": "WellDepth",
+    "explanation": "A helyes válasz: WellDepth."
+  },
+  {
+    "id": "ch19_fb_021",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A WHYMAP térkép méretaránya 1:_____.",
+    "correct_answer": "25 000 000",
+    "explanation": "A helyes válasz: 25 000 000."
+  },
+  {
+    "id": "ch19_fb_022",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A magyar víztesttípusok: porózus, karsztos, kombinált és _____.",
+    "correct_answer": "hévíztestek",
+    "explanation": "A helyes válasz: hévíztestek."
+  },
+  {
+    "id": "ch19_fb_023",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A védőidomok kijelölését a _____ Korm. rendelet írja elő.",
+    "correct_answer": "123/1997.",
+    "explanation": "A helyes válasz: 123/1997.."
+  },
+  {
+    "id": "ch19_fb_024",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A nyírségi utánpótlódási ütem átlagosan _____ mm/év.",
+    "correct_answer": "7",
+    "explanation": "A helyes válasz: 7."
+  },
+  {
+    "id": "ch19_fb_025",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A pleisztocén fekü reliefje meghaladja a _____ m-t.",
+    "correct_answer": "160",
+    "explanation": "A helyes válasz: 160."
+  },
+  {
+    "id": "ch19_fb_026",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A VKI-megfelelőséghez _____ és kémiai állapotot rendelnek minden víztesthez.",
+    "correct_answer": "mennyiségi",
+    "explanation": "A helyes válasz: mennyiségi."
+  },
+  {
+    "id": "ch19_fb_027",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az arzén által veszélyeztetett magyarok száma mintegy _____.",
+    "correct_answer": "400 000",
+    "explanation": "A helyes válasz: 400 000."
+  },
+  {
+    "id": "ch19_fb_028",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A fúrás menti intervallumadatokat a _____ objektumosztály reprezentálja.",
+    "correct_answer": "BoreLine",
+    "explanation": "A helyes válasz: BoreLine."
+  },
+  {
+    "id": "ch19_fb_029",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A USGS NWIS _____ millió telephelyet tartalmaz.",
+    "correct_answer": "1,5",
+    "explanation": "A helyes válasz: 1,5."
+  },
+  {
+    "id": "ch19_fb_030",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A TWDB adatbázisa _____ texasi kutat tartalmaz.",
+    "correct_answer": "130 000",
+    "explanation": "A helyes válasz: 130 000."
+  },
+  {
+    "id": "ch19_fb_031",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A sekély alluviális vízadók _____ típusúak.",
+    "correct_answer": "Ca-Mg-HCO₃",
+    "explanation": "A helyes válasz: Ca-Mg-HCO₃."
+  },
+  {
+    "id": "ch19_fb_032",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A mély pannon vízadók _____-HCO₃ típusúak.",
+    "correct_answer": "Na",
+    "explanation": "A helyes válasz: Na."
+  },
+  {
+    "id": "ch19_fb_033",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az Edwards-vízadó _____ államban van.",
+    "correct_answer": "Texas",
+    "explanation": "A helyes válasz: Texas."
+  },
+  {
+    "id": "ch19_fb_034",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az INSPIRE irányelv száma _____/EK.",
+    "correct_answer": "2007/2",
+    "explanation": "A helyes válasz: 2007/2."
+  },
+  {
+    "id": "ch19_fb_035",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az ISARM mintegy _____ határvízi vízadót azonosított.",
+    "correct_answer": "600",
+    "explanation": "A helyes válasz: 600."
+  },
+  {
+    "id": "ch19_fb_036",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A GroundWaterML verziója _____.",
+    "correct_answer": "2.0",
+    "explanation": "A helyes válasz: 2.0."
+  },
+  {
+    "id": "ch19_fb_037",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Magyarországon _____ működő termálfürdő van.",
+    "correct_answer": "mintegy 270",
+    "explanation": "A helyes válasz: mintegy 270."
+  },
+  {
+    "id": "ch19_fb_038",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A belső védőidom _____ m-re van a kútfejtől.",
+    "correct_answer": "10-50",
+    "explanation": "A helyes válasz: 10-50."
+  },
+  {
+    "id": "ch19_fb_039",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A GGIS a Globális Felszín Alatti Víz _____ Rendszer.",
+    "correct_answer": "Információs",
+    "explanation": "A helyes válasz: Információs."
+  },
+  {
+    "id": "ch19_fb_040",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Pannon-medence egy nagy _____ medence.",
+    "correct_answer": "üledékes",
+    "explanation": "A helyes válasz: üledékes."
+  },
+  {
+    "id": "ch19_fb_041",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A debreceni szintek 1986-2006 közt _____ m-rel emelkedtek az I.-nél.",
+    "correct_answer": "7",
+    "explanation": "A helyes válasz: 7."
+  },
+  {
+    "id": "ch19_fb_042",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A korábbi arzén-határérték _____ μg/L volt.",
+    "correct_answer": "50",
+    "explanation": "A helyes válasz: 50."
+  },
+  {
+    "id": "ch19_fb_043",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A monitoring adatokat a Központi Vízrajzi _____ tárolják.",
+    "correct_answer": "Adattárban",
+    "explanation": "A helyes válasz: Adattárban."
+  },
+  {
+    "id": "ch19_fb_044",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az alsó-pleisztocén vízadó _____-150+ m mélységben van.",
+    "correct_answer": "80",
+    "explanation": "A helyes válasz: 80."
+  },
+  {
+    "id": "ch19_fb_045",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Debrecen _____ kúttelepet üzemeltet.",
+    "correct_answer": "négy",
+    "explanation": "A helyes válasz: négy."
+  },
+  {
+    "id": "ch19_fb_046",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A _____ XML-alapú csereformátumot biztosít geológiai adatokhoz.",
+    "correct_answer": "GeoSciML",
+    "explanation": "A helyes válasz: GeoSciML."
+  },
+  {
+    "id": "ch19_fb_047",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az OVF az _____ Vízügyi Főigazgatóság.",
+    "correct_answer": "Országos",
+    "explanation": "A helyes válasz: Országos."
+  },
+  {
+    "id": "ch19_fb_048",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A magyar monitoring adatok 2024 _____ óta nyilvánosak.",
+    "correct_answer": "júliusa",
+    "explanation": "A helyes válasz: júliusa."
+  },
+  {
+    "id": "ch19_fb_049",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A BoreholeLog WellID-je a kút _____ értékére hivatkozik.",
+    "correct_answer": "HydroID",
+    "explanation": "A helyes válasz: HydroID."
+  },
+  {
+    "id": "ch19_fb_050",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A középső-pleisztocén vízadó _____-80 m mélységben található.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch19_fb_051",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Duna alluviális vízadóját Szlovákiával, _____ és Szerbiával osztják meg.",
+    "correct_answer": "Horvátországgal",
+    "explanation": "A helyes válasz: Horvátországgal."
+  },
+  {
+    "id": "ch19_fb_052",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felszín alatti víz kémiája a víz és a _____ anyagok kölcsönhatását tükrözi.",
+    "correct_answer": "geológiai",
+    "explanation": "A helyes válasz: geológiai."
+  },
+  {
+    "id": "ch19_fb_053",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A pannon homokkő hévízkutak hőmérséklete _____-60 °C.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch19_fb_054",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A TWDB egybetűs _____ jelöli a vízhasználatot.",
+    "correct_answer": "kódokkal",
+    "explanation": "A helyes válasz: kódokkal."
+  },
+  {
+    "id": "ch19_fb_055",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A _____ a világ felszín alatti vízkészleteinek legismertebb térképe.",
+    "correct_answer": "WHYMAP",
+    "explanation": "A helyes válasz: WHYMAP."
+  },
+  {
+    "id": "ch19_fb_056",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az arzénmobilizáció _____ körülmények között történik.",
+    "correct_answer": "redukáló",
+    "explanation": "A helyes válasz: redukáló."
+  },
+  {
+    "id": "ch19_fb_057",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felső-pleisztocén vízadó _____szemcsés homokból áll.",
+    "correct_answer": "finom- és közép",
+    "explanation": "A helyes válasz: finom- és közép."
+  },
+  {
+    "id": "ch19_fb_058",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A vízadó-határokat _____ objektumosztályokként tároljuk.",
+    "correct_answer": "poligon",
+    "explanation": "A helyes válasz: poligon."
+  },
+  {
+    "id": "ch19_fb_059",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A víztesteket a _____ rendszeren keresztül jelentik az EEA-nek.",
+    "correct_answer": "WISE",
+    "explanation": "A helyes válasz: WISE."
+  },
+  {
+    "id": "ch19_fb_060",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A szivattyúzás hatása 1986-ra _____ km-re terjedt.",
+    "correct_answer": "35",
+    "explanation": "A helyes válasz: 35."
+  },
+  {
+    "id": "ch19_fb_061",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az 1986-os térkép _____ kontrollponttal készült.",
+    "correct_answer": "105",
+    "explanation": "A helyes válasz: 105."
+  },
+  {
+    "id": "ch19_fb_062",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A fúrási rétegsorokat _____ kell felhasználás előtt.",
+    "correct_answer": "értelmezni",
+    "explanation": "A helyes válasz: értelmezni."
+  },
+  {
+    "id": "ch19_fb_063",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A _____ szelvény agyag/homok megkülönböztetésére szolgál.",
+    "correct_answer": "gamma",
+    "explanation": "A helyes válasz: gamma."
+  },
+  {
+    "id": "ch19_fb_064",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A nyírségi depresszió az átszivárgó rendszer lassú _____ miatt terjed.",
+    "correct_answer": "nyomáskiegyenlítődése",
+    "explanation": "A helyes válasz: nyomáskiegyenlítődése."
+  },
+  {
+    "id": "ch19_fb_065",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A geológiai adatok elsődleges kezelője Magyarországon az _____.",
+    "correct_answer": "SZTFH",
+    "explanation": "A helyes válasz: SZTFH."
+  },
+  {
+    "id": "ch19_fb_066",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A kút FType értékét _____ értéktartomány korlátozza.",
+    "correct_answer": "kódolt",
+    "explanation": "A helyes válasz: kódolt."
+  },
+  {
+    "id": "ch19_fb_067",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A nyírségi vetők akár _____ m-es szintkülönbséget okozhatnak.",
+    "correct_answer": "96",
+    "explanation": "A helyes válasz: 96."
+  },
+  {
+    "id": "ch19_fb_068",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Michigan _____ adatbázisa 500 000+ kutat tartalmaz.",
+    "correct_answer": "Wellogic",
+    "explanation": "A helyes válasz: Wellogic."
+  },
+  {
+    "id": "ch19_fb_069",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felszín alatti vizek fő anionjai: HCO₃⁻, SO₄²⁻ és _____.",
+    "correct_answer": "Cl⁻",
+    "explanation": "A helyes válasz: Cl⁻."
+  },
+  {
+    "id": "ch19_fb_070",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A kaliforniai Bulletin _____ a FA-víz medencéket határolja le.",
+    "correct_answer": "118",
+    "explanation": "A helyes válasz: 118."
+  },
+  {
+    "id": "ch19_fb_071",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az SZTFH magába olvasztotta az _____ szervezetet.",
+    "correct_answer": "MBFSZ",
+    "explanation": "A helyes válasz: MBFSZ."
+  },
+  {
+    "id": "ch19_fb_072",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az izokron térképek egyenlő _____ vonalait mutatják.",
+    "correct_answer": "utazási idejű",
+    "explanation": "A helyes válasz: utazási idejű."
+  },
+  {
+    "id": "ch19_fb_073",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az utánpótlási zónákat _____ kell a szennyeződéstől.",
+    "correct_answer": "védeni",
+    "explanation": "A helyes válasz: védeni."
+  },
+  {
+    "id": "ch19_fb_074",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Hévízen van Európa legnagyobb biológiailag aktív _____.",
+    "correct_answer": "hévíztava",
+    "explanation": "A helyes válasz: hévíztava."
+  },
+  {
+    "id": "ch19_fb_075",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az arzénkoncentráció a _____ növekszik az Alföldön.",
+    "correct_answer": "mélységgel",
+    "explanation": "A helyes válasz: mélységgel."
+  },
+  {
+    "id": "ch19_fb_076",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A USGS NWIS-ben _____ számjegyű azonosítókat használnak.",
+    "correct_answer": "tizenöt",
+    "explanation": "A helyes válasz: tizenöt."
+  },
+  {
+    "id": "ch19_fb_077",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az alsó-pleisztocén vízadó durvaszemcsés _____ és kavicsból áll.",
+    "correct_answer": "homok",
+    "explanation": "A helyes válasz: homok."
+  },
+  {
+    "id": "ch19_fb_078",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A külső védőidomot a _____ terület határa jelöli ki.",
+    "correct_answer": "befogási",
+    "explanation": "A helyes válasz: befogási."
+  },
+  {
+    "id": "ch19_fb_079",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A budapesti parti szűrés az ivóvízellátás _____ biztosítja.",
+    "correct_answer": "felét",
+    "explanation": "A helyes válasz: felét."
+  },
+  {
+    "id": "ch19_fb_080",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az EU VKI irányelv száma _____/EK.",
+    "correct_answer": "2000/60",
+    "explanation": "A helyes válasz: 2000/60."
+  },
+  {
+    "id": "ch19_fb_081",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A vízadó-térképek a geológiai térképek értelmező _____.",
+    "correct_answer": "átfedései",
+    "explanation": "A helyes válasz: átfedései."
+  },
+  {
+    "id": "ch19_fb_082",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A monitoring kutak évtizedes _____ trendeket tárnak fel.",
+    "correct_answer": "vízszint",
+    "explanation": "A helyes válasz: vízszint."
+  },
+  {
+    "id": "ch19_fb_083",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A BoreLine objektumok _____ típusú geometriával rendelkeznek.",
+    "correct_answer": "PolylineZ",
+    "explanation": "A helyes válasz: PolylineZ."
+  },
+  {
+    "id": "ch19_fb_084",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Nyírségben _____ kútcsoport monitoring adatai dokumentálták az átszivárgást.",
+    "correct_answer": "többszintű",
+    "explanation": "A helyes válasz: többszintű."
+  },
+  {
+    "id": "ch19_fb_085",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A fúrások szisztematikus nyilvántartása a _____ század végétől indult.",
+    "correct_answer": "XIX.",
+    "explanation": "A helyes válasz: XIX.."
+  },
+  {
+    "id": "ch19_fb_086",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az 1966-os potenciometrikus térkép _____ kontrollponttal készült.",
+    "correct_answer": "62",
+    "explanation": "A helyes válasz: 62."
+  },
+  {
+    "id": "ch19_fb_087",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felső-pannon vízadókat _____ és agyag váltakozó rétegei alkotják.",
+    "correct_answer": "homok",
+    "explanation": "A helyes válasz: homok."
+  },
+  {
+    "id": "ch19_fb_088",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Californiai SGMA _____ évben lépett hatályba.",
+    "correct_answer": "2014",
+    "explanation": "A helyes válasz: 2014."
+  },
+  {
+    "id": "ch19_fb_089",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A magyar pannon hévízrendszeren _____ és Románia is osztozik.",
+    "correct_answer": "Szlovákia",
+    "explanation": "A helyes válasz: Szlovákia."
+  },
+  {
+    "id": "ch19_fb_090",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az EuroGeoSurveys az _____ portált üzemelteti.",
+    "correct_answer": "EGDI",
+    "explanation": "A helyes válasz: EGDI."
+  },
+  {
+    "id": "ch19_fb_091",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Debreceni Vízmű összes kitermelése a csúcson _____ M m³/év volt.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch19_fb_092",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A pleisztocén fekü legmélyebb süllyedékei _____ és Nagyecsed közelében vannak.",
+    "correct_answer": "Nyírbátor",
+    "explanation": "A helyes válasz: Nyírbátor."
+  },
+  {
+    "id": "ch19_fb_093",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A karsztos vízadók jellemzően _____ vízkémiai típusúak.",
+    "correct_answer": "Ca-HCO₃",
+    "explanation": "A helyes válasz: Ca-HCO₃."
+  },
+  {
+    "id": "ch19_fb_094",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "Az alföldi arzénszennyezés _____ eredetű.",
+    "correct_answer": "geogén",
+    "explanation": "A helyes válasz: geogén."
+  },
+  {
+    "id": "ch19_essay_001",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a vízadó USGS definícióját és a vízadó-határ lehatárolásának gyakorlati nehézségeit!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_002",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hasonlítsa össze a magyar VKI felszín alatti víztesteket és a geológiai térképeket!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_003",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Részletezze a HGUID attribútum szerepét a felszín alatti víz geoadatbázisban!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_004",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Írja le a BoreholeLog tábla felépítését! Miért tábla és nem objektumosztály?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_005",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Magyarázza meg a TopElev és BottomElev értékek számítását és jelentőségét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_006",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a BorePoint és BoreLine objektumosztályok szerepét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_007",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Jellemezze a Nyírség átszivárgó vízadó rendszerét és az azt alátámasztó bizonyítékokat!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_008",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Elemezze a debreceni kúttelepek hatását a potenciometrikus felszínre (1966-2006)!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_009",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használhatók az izotóphidrológiai módszerek a felszín alatti víz korának meghatározására?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_010",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse az arzénszennyezés problémáját a magyar Alföldön!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_011",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Részletezze a magyar kútfej-védelmi rendszer három zónáját és GIS-alapú lehatárolását!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_012",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hasonlítsa össze az USA, Magyarország és globális vízadó-térképezési erőforrásokat!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_013",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a Piper-diagram felépítését és alkalmazását!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_014",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szabványok léteznek a kútadatok nemzetközi cseréjéhez?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_015",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan épül fel a geoadatbázis teljes kapcsolatlánca a geológiától a fúrási adatokig?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_016",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a határvízi vízadók kezelésének kihívása? Ismertesse a magyar példákat!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_017",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen gyakorlati kérdések merülnek fel a 3D fúrás-megjelenítésnél?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_018",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a magyar hévízkutak jellemzőit és a kiegészítő attribútumokat!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_019",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen lépésekből áll a kút- és vízadó-adatbázis felépítésének munkafolyamata?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_020",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan befolyásolja a fúrás-sűrűség a modellek megbízhatóságát?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_021",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen geofizikai szelvények készülhetnek egy modern fúrás során?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_022",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Elemezze a Nyírség pleisztocén fekü felszínének jelentőségét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_023",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szerepet tölt be az OVF monitoring kúthálózata?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_024",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Miért fontos a relatív és abszolút magasságok közötti különbségtétel?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_025",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan változtatta meg az izotópos vizsgálat a védőidomok lehatárolását?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_026",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a különbség a kőzettani rétegsor és a hidrosztratigráfiai értelmezés között?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_027",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a GeoSciML és a GroundWaterML 2.0 kapcsolatát!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_028",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen tényezők befolyásolják a felszín alatti víz fenntarthatóságát a Nyírségben?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_029",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan alkalmazható a GIS az arzénkockázat térképezésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_030",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a négy fő magyar vízkémiai fáciest!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_031",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen kihívásokat jelent a történelmi kútadatbázisok integrálása?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_032",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan kapcsolódik a 19. fejezet a 18., 20. és 21. fejezetekhez?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_033",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen attribútumokkal rendelkeznek a kút-objektumok a GIS-ben?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_034",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Miért csökkentek tovább a szintek a kúttelepektől távol 2006-ban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_035",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szerepet játszanak a vetők a nyírségi felszín alatti vízáramlásban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_036",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a Kaliforniai Bulletin 118 jelentőségét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_037",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan segítik a WMS és WFS webszolgáltatások az adatelérést?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_038",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a OneGeology kezdeményezés és hogyan működik?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_039",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hasonlítsa össze az OVF és az SZTFH szerepét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_040",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen adatokat tartalmaz a kútadatbázis a hévízkutakra vonatkozóan?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_041",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse az Ivóvízminőség-javító Program célját!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_042",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen interpolációs módszerekkel készíthetők potenciometrikus térképek?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_043",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan támogatja a GIS a mennyiségi állapotértékelést a VKI keretében?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_044",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a különbség a kibúvási és eltemetett vízadó-zónák között?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_045",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen környezeti problémákat okozhat az intenzív kitermelés?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_046",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használhatók a többszintű monitoring kutak?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_047",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse az EGDI portál jelentőségét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_048",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen korlátai vannak az SZTFH adatportáljának?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_049",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan alkalmazható a fedvényelemzés a sérülékenységi értékelésnél?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_050",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a texasi Edwards-vízadó GIS-dokumentálását!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_051",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen kihívásokat jelent az átszivárgó rendszerek modellezése?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_052",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használható a GIS a fenntarthatóság értékelésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_053",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse az ASTM D5254 minimális adatelemeit!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_054",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a vízadó-sebezhetőségi térkép és hogyan készül?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_055",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan szolgálja a monitoring a korai előrejelzést?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_056",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen eszközökkel készültek a nyírségi térképek?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_057",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi az izokron térkép és hogyan használják?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_058",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan befolyásolja az éghajlatváltozás a nyírségi készleteket?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_059",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen vízminőségi adatokat tárolnak a kútadatbázisokban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_060",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a geoadatbázis minőségbiztosítási lépéseit!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_061",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen hatással van a szivattyúzás a függőleges gradiensekre?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_062",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan hat a pannon kitöltés vastagsága a hévízkutak hőmérsékletére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_063",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a hidrogeológiai védőövezet?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_064",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen adatforrásokból épül fel egy kút- és vízadó-adatbázis?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_065",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse az utánpótlási és megcsapolási területek különbségét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_066",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használható a GIS a vízgazdálkodási döntéshozatalban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_067",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen tanulságokkal szolgál a nyírségi esettanulmány?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_068",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a Floridai Vízadó Rendszer jellemzőit!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_069",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan járul hozzá a szabványosítás a határokon átnyúló vízgazdálkodáshoz?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_070",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a WaterML 2.0, GroundWaterML 2.0 és GeoSciML kapcsolata?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_071",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használható a GIS a szennyeződési kockázat értékelésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_072",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen IT-infrastruktúra szükséges modern FA-víz-adatkezeléshez?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_073",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan változott a felszín alatti víz-adatcsere az elmúlt évtizedekben?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_074",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a rétegtani szintek kinyerésének módszerét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_075",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szerepe van a kútkiképzési szelvénynek a vízföldtanban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_076",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan segíti a GIS a felszín alatti vízi adatok vizualizálását?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_077",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a WaterML 2.0 szabvány célját és alkalmazását!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_078",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen módszerekkel rendelhetők a kutak vízadókhoz?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_079",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használható a keresztvalidáció az interpoláció értékelésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_080",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a BoreholeLog tábla LogType attribútumának szerepét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_081",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen jelentőségű a negyedidőszaki geológiai térkép a vízföldtanban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_082",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan kapcsolódik a fúrási adatsűrűség a modell-bizonytalansághoz?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_083",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Mi a 'kétirányú lekérdezés' a vízadó-kút kapcsolatban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_084",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a magyar felszín alatti víztest-típusokat és jellemzőiket!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_085",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen akadályok vannak a GGIS globális adatlefedettségében?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_086",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan használhatók a hévízkút-adatok a geotermikus potenciál értékelésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_087",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a felszín alatti víz kora és az áramlási rendszerek kapcsolatát!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_088",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen adat-heterogenitási kihívásokkal szembesülnek a kútadatbázisok?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_089",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan járul hozzá a GIS az EU VKI-megfelelőséghez?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_090",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a pre-kvaternér geológiai térképek jelentőségét az Alföldön!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_091",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szerepet játszik a geotermikus gradiens a hévízkutak telepítésében?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_092",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan alkalmazhatók a GIS-eszközök a felszín alatti víz monitoring adatok elemzésére?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_093",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a felszín alatti vízgazdálkodás időbeli késleltetési kihívását!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_094",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen szerepe van a geológiai szelvényeknek a vízföldtani vizsgálatokban?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_095",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan integrálja a GIS a különböző adatforrásokat egyetlen rendszerbe?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_096",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a vízadó poligon objektumosztály alapvető attribútumait!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_097",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen újdonságot hozott az átszivárgó vízadó-modell a Nyírség vízgazdálkodásában?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_mcq_070",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Melyik szervezet üzemelteti a Globális Felszín Alatti Víz Monitoring Hálózatot (GGMN)?",
+    "options": [
+      "USGS",
+      "IGRAC",
+      "BGR",
+      "WHO"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_071",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a HydroCode attribútum szerepe?",
+    "options": [
+      "Belső azonosítás",
+      "Külső információs rendszerekhez való kapcsolat",
+      "Mélység jelzése",
+      "Koordináták tárolása"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_072",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú az AquiferID és HydroID közötti kapcsolat?",
+    "options": [
+      "Sok-a-sokhoz",
+      "Egy-az-egyhez",
+      "Egy-a-többhöz",
+      "Nincs kapcsolat"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_073",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen frekvenciájú a Debrecen monitoring kúthálózatának mérése?",
+    "options": [
+      "Évente egyszer",
+      "Havonta",
+      "Rendszeres időközönként, egyre inkább valós idejű",
+      "Tízévente"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_074",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi az FType 'Besajtoló' jelentése?",
+    "options": [
+      "Vízkitermelés",
+      "Vízutánpótlás vagy hulladékfolyadék elhelyezése",
+      "Vízszintmérés",
+      "Háztartási vízellátás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_075",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen geostatisztikai módszer ad varianciatérképet?",
+    "options": [
+      "IDW",
+      "Spline",
+      "Krigelés",
+      "TIN"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_076",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hány határ menti országával osztozik Magyarország felszín alatti vízkészleteken?",
+    "options": [
+      "Három",
+      "Öt",
+      "Mind a hét szomszédjával",
+      "Egyetlen eggyel sem"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_077",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen ásványi anyag oldódása okozza az arzénmobilizációt?",
+    "options": [
+      "Kalcit",
+      "Kvarc",
+      "Vas- és mangán-oxihidroxid",
+      "Gipsz"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_078",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a kút WellDepth attribútuma?",
+    "options": [
+      "A vízszint mélysége",
+      "A kút teljes mélysége a felszín alatt",
+      "A szűrőszakasz hossza",
+      "A felszín magassága"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_079",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mit jelent a 'kibúvási zóna' egy vízadó-térképen?",
+    "options": [
+      "A vízadó mélypontja",
+      "A vízadót alkotó kőzet felszínen tárul fel",
+      "A kút helye",
+      "A folyómeder"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_080",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen információt nyújt a próbaszivattyúzás?",
+    "options": [
+      "Geológiai kor",
+      "Transzmisszivitás és tározási együttható becslése",
+      "Csapadékmennyiség",
+      "Felszíni lefolyás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_081",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen adatot tárol a Material mező a BoreholeLog táblában?",
+    "options": [
+      "A kút tulajdonosát",
+      "A földtani anyag leírását az adott intervallumban",
+      "A vízszintet",
+      "A koordinátákat"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_082",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a GeoSciML elsődleges formátuma?",
+    "options": [
+      "JSON",
+      "XML",
+      "CSV",
+      "Binary"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_083",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen EU-irányelv alapján történik a felszín alatti víztestek állapotértékelése?",
+    "options": [
+      "INSPIRE",
+      "Víz Keretirányelv (2000/60/EK)",
+      "Nitrátirányelv",
+      "Élőhely-irányelv"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_084",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a Florida vízadó rendszerének különlegessége?",
+    "options": [
+      "Kicsi és jelentéktelen",
+      "A világ egyik legtermékenyebb vízadója",
+      "Kizárólag sósvizet tartalmaz",
+      "Vulkáni eredetű"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_085",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú vízi környezetben alkalmazható a Piper-diagram?",
+    "options": [
+      "Kizárólag felszíni vizekre",
+      "Kizárólag tengervízre",
+      "Felszín alatti víz mintákra",
+      "Kizárólag csapadékvízre"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_086",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a GIS-alapú fedvényelemzés célja az arzéntérképezésnél?",
+    "options": [
+      "Kizárólag szépítés",
+      "Arzénkoncentráció és népsűrűség kombinálása a kockázat azonosításához",
+      "Fúrási mélységek mérése",
+      "Csapadékmérés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_087",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen nemzetközi szabvány az OGC WaterML 2.0?",
+    "options": [
+      "Térképi vetületi szabvány",
+      "Vízészlelési adatok kódolási kerete",
+      "Geológiai jelölőnyelv",
+      "Építészeti szabvány"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_088",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a VRA rövidítés jelentése?",
+    "options": [
+      "Vízrajzi Regionális Adatbázis",
+      "Központi Vízrajzi Adattár",
+      "Vízi Rendszer Architektúra",
+      "Virtuális Realitás Alkalmazás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_089",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Hol mélyítették Magyarország legmélyebb hévízkútjait?",
+    "options": [
+      "Budapest",
+      "Hévíz",
+      "2000 m feletti mélység, szerte az Alföldön",
+      "Bükk hegység"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_090",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a monitoring kutak elsődleges célja?",
+    "options": [
+      "Víztermelés",
+      "Vízszint és vízminőség megfigyelése",
+      "Öntözés",
+      "Ipari felhasználás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_091",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen hatással van a kitermelés csökkentése a potenciometrikus szintekre?",
+    "options": [
+      "Azonnali teljes helyreállás mindenhol",
+      "Részleges helyreállás a kúttelepek közelében, távol folytatódó csökkenés",
+      "Nincs hatása",
+      "Minden helyszínen további csökkenés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_092",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a 'természetes potenciál' szelvény (SP) mérési módszere?",
+    "options": [
+      "Mesterséges árammal gerjesztett ellenállás",
+      "Természetes elektromos potenciálok mérése formációhatárokon",
+      "Hanghullámok visszaverődése",
+      "Gravitációs mérés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_093",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen adatokat tárol a WellAge attribútum?",
+    "options": [
+      "A kút korát évszámban",
+      "A víz korát",
+      "A geológiai formáció korát",
+      "A monitoring időtartamát"
+    ],
+    "correct": "A",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_094",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a 'sok-a-többhöz' kapcsolattábla előnye a kút-vízadó kapcsolatnál?",
+    "options": [
+      "Egyszerűbb, mint az AquiferID2 mező",
+      "Rugalmasabb, korlátlan számú vízadóhoz rendelhető kút",
+      "Gyorsabb lekérdezés",
+      "Kevesebb attribútum"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_095",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen eljárással azonosítják az izokronokat a kútvédelemnél?",
+    "options": [
+      "Geológiai térképezés",
+      "Részecskekövetés idővel",
+      "Szemrevételezés",
+      "Vízkémiai elemzés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_096",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a 'szemcseméret-elemzés' szerepe a vízföldtanban?",
+    "options": [
+      "Kizárólag esztétikai célú",
+      "A kőzet áteresztőképességének becslése",
+      "Csapadékmérés",
+      "Hőmérsékletmérés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_097",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen típusú országok rendelkeznek a legjobb GGIS lefedettséggel?",
+    "options": [
+      "Fejlődő országok",
+      "Adatgazdag országok, mint Hollandia és Ausztrália",
+      "Kizárólag európai",
+      "Kizárólag ázsiai"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_098",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a fúrási rétegsor nyers anyagleírásainak fő korlátja?",
+    "options": [
+      "Túl objektívek",
+      "Szubjektívek és fúrómesterenként változnak",
+      "Mindig hibásak",
+      "Nem digitalizálhatók"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_099",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Milyen mértékegységben fejezzük ki a TDS-t?",
+    "options": [
+      "°C",
+      "mg/L",
+      "m/s",
+      "μg/L"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_mcq_100",
+    "type": "mcq",
+    "chapter": 19,
+    "question": "Mi a 'negyedidőszaki geológiai térkép' jelentősége a vízföldtanban?",
+    "options": [
+      "Nem releváns",
+      "A sekély felszín alatti vízzel kapcsolatos vizsgálatokhoz különösen fontos",
+      "Kizárólag történelmi érdekesség",
+      "Csak a hegyvidékeken hasznos"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_092",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A felszín alatti víz az ivóvíz mintegy felét szolgáltatja világszerte.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_093",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A fúrási rétegsorok kvantitatív szemcseméret-eloszlásokat tartalmaznak.",
+    "correct": false,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_094",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Michigan Wellogic adatbázis webalapú GIS-felületen kereshető.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_095",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Kalifornia SGMA 2014-ben lépett hatályba.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_096",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A kútadatbázisok a legértékesebb és egyben a leghomogénebb eszközök.",
+    "correct": false,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_097",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A 2006-os potenciometrikus térkép 72 kontrollponttal készült.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_098",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "Az alföldi arzénkoncentráció jellemzően 10-200 μg/L.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_099",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A Nyírség alsó-pleisztocén vízadója a legtöbb termelőkút célrétege.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_tf_100",
+    "type": "true_false",
+    "chapter": 19,
+    "statement": "A felszín alatti víz kémiája nem függ a geológiai környezettől.",
+    "correct": false,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch19_fb_095",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A felszín alatti víz az ivóvíz mintegy _____-át szolgáltatja.",
+    "correct_answer": "felét",
+    "explanation": "A helyes válasz: felét."
+  },
+  {
+    "id": "ch19_fb_096",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A vízadó-határok _____ méretaránytól és vizsgálati céltól függenek.",
+    "correct_answer": "térképezési",
+    "explanation": "A helyes válasz: térképezési."
+  },
+  {
+    "id": "ch19_fb_097",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A hévízkutak Magyarországon _____ °C feletti vizet adnak.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch19_fb_098",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A Nyírségben az izotópméréseket _____ óta végzik.",
+    "correct_answer": "1973",
+    "explanation": "A helyes válasz: 1973."
+  },
+  {
+    "id": "ch19_fb_099",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A geológiai térkép-adatbázis _____ és leíró információkat tartalmaz.",
+    "correct_answer": "térbeli",
+    "explanation": "A helyes válasz: térbeli."
+  },
+  {
+    "id": "ch19_fb_100",
+    "type": "fill_blank",
+    "chapter": 19,
+    "question": "A vízadó poligon objektumosztály HydroID attribútuma _____ azonosító.",
+    "correct_answer": "egyedi",
+    "explanation": "A helyes válasz: egyedi."
+  },
+  {
+    "id": "ch19_essay_098",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Ismertesse a felszín alatti vízkészletek globális jelentőségét és a kutak szerepét!",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_099",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Milyen kihívásokkal jár a különböző korokból származó kútadatok integrálása?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch19_essay_100",
+    "type": "essay",
+    "chapter": 19,
+    "question": "Hogyan hat a klimaváltozás a felszín alatti vízkészletekre hosszú távon?",
+    "explanation": "A válasznak a fejezet releváns szakaszaira kell támaszkodnia."
+  }
+]

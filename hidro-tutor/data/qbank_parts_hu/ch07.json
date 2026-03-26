@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a lejtés definíciója a domborzatelemzésben?",
+    "options": [
+      "A) A felszín iránytű szerinti iránya",
+      "B) A magasság vízszintes távolságra vonatkoztatott változási sebessége",
+      "C) A felszín görbülete",
+      "D) A tengerszint feletti magasság"
+    ],
+    "correct": "B",
+    "explanation": "A lejtés a magasság vízszintes távolságra vonatkoztatott változási sebessége, vagyis a terep meredeksége."
+  },
+  {
+    "type": "mcq",
+    "question": "A Manning-egyenletben hogyan arányos a sebesség a lejtéssel?",
+    "options": [
+      "A) Egyenesen arányos",
+      "B) A lejtés négyzetével arányos",
+      "C) A lejtés négyzetgyökével arányos",
+      "D) Fordítottan arányos"
+    ],
+    "correct": "C",
+    "explanation": "A Manning-egyenletben a sebesség az energiaesés négyzetgyökével arányos."
+  },
+  {
+    "type": "mcq",
+    "question": "Az USLE-ben a lejtés megduplázódása az eróziót megközelítőleg hogyan változtatja meg?",
+    "options": [
+      "A) Megduplázza",
+      "B) Megháromszorozza",
+      "C) Megnégyszerezi",
+      "D) Nincs hatása"
+    ],
+    "correct": "C",
+    "explanation": "Az USLE lejtéshossz-tényezője a talajveszteséget megközelítőleg a lejtés meredekségének négyzetével növeli."
+  },
+  {
+    "type": "mcq",
+    "question": "A topográfiai nedvességi index (TWI) képlete:",
+    "options": [
+      "A) ln(β/a)",
+      "B) ln(a × tan β)",
+      "C) ln(a / tan β)",
+      "D) a / ln(tan β)"
+    ],
+    "correct": "C",
+    "explanation": "TWI = ln(a / tan β), ahol a az egységnyi szintvonalhosszra jutó felső vízgyűjtő terület, β a helyi lejtésszög."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS-ben a sík terület kitettségi értéke:",
+    "options": [
+      "A) 0 fok",
+      "B) 180 fok",
+      "C) -1",
+      "D) 360 fok"
+    ],
+    "correct": "C",
+    "explanation": "Az ArcGIS-ben a lejtés nélküli sík területekhez a -1 speciális érték kerül hozzárendelésre."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen irányba mutat a gradiens vektor?",
+    "options": [
+      "A) A legmeredekebb lejtés irányába",
+      "B) A legmeredekebb emelkedés irányába",
+      "C) Észak felé",
+      "D) A szintvonal mentén"
+    ],
+    "correct": "B",
+    "explanation": "A gradiens vektor a legmeredekebb emelkedés irányába mutat; a kitettség ennek ellentéte."
+  },
+  {
+    "type": "mcq",
+    "question": "A 100%-os lejtés hány foknak felel meg?",
+    "options": [
+      "A) 90 fok",
+      "B) 100 fok",
+      "C) 45 fok",
+      "D) 60 fok"
+    ],
+    "correct": "C",
+    "explanation": "A 100%-os lejtés 45 foknak felel meg, mivel arctan(1) = 45°."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS kitettségi konvenciójában a 90 fok melyik égtájnak felel meg?",
+    "options": [
+      "A) Észak",
+      "B) Kelet",
+      "C) Dél",
+      "D) Nyugat"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS-ben a kitettség északtól az óramutató járásával megegyezően mérődik: 90° = Kelet."
+  },
+  {
+    "type": "mcq",
+    "question": "A derivált lejtés módszer milyen mátrixot használ?",
+    "options": [
+      "A) 2×2-es környezet",
+      "B) 3×3-as környezet",
+      "C) 5×5-ös környezet",
+      "D) 7×7-es környezet"
+    ],
+    "correct": "B",
+    "explanation": "A derivált módszer a cella körüli 3×3-as környezetet használja."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sobel-operátor milyen súlyozási sémát alkalmaz?",
+    "options": [
+      "A) 1-1-1",
+      "B) 1-2-1",
+      "C) 1-3-1",
+      "D) 2-1-2"
+    ],
+    "correct": "B",
+    "explanation": "Az 1-2-1 súlyozás a Sobel-operátornak felel meg, amely simít és deriváltakat becsül."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Slope eszköz által használt dz/dx képletben a nevező:",
+    "options": [
+      "A) 4δ",
+      "B) 6δ",
+      "C) 8δ",
+      "D) 2δ"
+    ],
+    "correct": "C",
+    "explanation": "dz/dx = ((A+2D+G)-(C+2F+I)) / 8δ, a nevező 8δ."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8-módszert először ki írta le?",
+    "options": [
+      "A) Tarboton (1997)",
+      "B) O'Callaghan és Mark (1984)",
+      "C) Beven és Kirkby (1979)",
+      "D) Horn (1981)"
+    ],
+    "correct": "B",
+    "explanation": "O'Callaghan és Mark 1984-ben publikálta a D8-módszert."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8-módszerben az átlós szomszédok távolsága:",
+    "options": [
+      "A) δ",
+      "B) 2δ",
+      "C) δ√2",
+      "D) δ/√2"
+    ],
+    "correct": "C",
+    "explanation": "Az átlós szomszédok távolsága δ√2, ahol δ a cellaméret."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 áramlásirány-kódolásban a dél irány kódja:",
+    "options": [
+      "A) 2",
+      "B) 4",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "B",
+    "explanation": "A D8 kódolásban a dél = 4."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 kódolásban az észak irány kódja:",
+    "options": [
+      "A) 32",
+      "B) 64",
+      "C) 128",
+      "D) 16"
+    ],
+    "correct": "B",
+    "explanation": "A D8 kódolásban az észak = 64."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8-módszer maximálisan hány fokos irányhiba bevezetésére képes?",
+    "options": [
+      "A) 10 fok",
+      "B) 22,5 fok",
+      "C) 45 fok",
+      "D) 90 fok"
+    ],
+    "correct": "B",
+    "explanation": "Mivel a D8 45°-onként kvantálja az irányokat, a maximális irányhiba 22,5 fok."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszert ki publikálta?",
+    "options": [
+      "A) O'Callaghan",
+      "B) Tarboton",
+      "C) Maidment",
+      "D) Jenson"
+    ],
+    "correct": "B",
+    "explanation": "David Tarboton 1997-ben publikálta a D-végtelen módszert a Water Resources Research-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszer hány háromszög facettára osztja a 3×3-as környezetet?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "A D-végtelen módszer 8 háromszög facettát határoz meg a középső cella és szomszédai között."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszer milyen szögkonvenciót használ?",
+    "options": [
+      "A) Északtól az óramutató járásával megegyezően",
+      "B) Kelettől az óramutató járásával ellentétesen",
+      "C) Déltől az óramutató járásával megegyezően",
+      "D) Nyugattól az óramutató járásával ellentétesen"
+    ],
+    "correct": "B",
+    "explanation": "A D-végtelen módszer a matematikai konvenciót használja: kelettől az óramutató járásával ellentétesen."
+  },
+  {
+    "type": "mcq",
+    "question": "Ha a D-végtelen facettán belül α₁ < 0, mit tesz az algoritmus?",
+    "options": [
+      "A) Eldobja a facettát",
+      "B) Csonkolja 0 fokra",
+      "C) Csonkolja 45 fokra",
+      "D) Megfordítja az irányt"
+    ],
+    "correct": "B",
+    "explanation": "Ha α₁ < 0, a szöget 0°-ra csonkoljuk és a lejtést a fő égtáji él mentén számítjuk újra."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Flow Direction eszköz esésrácsának dokumentált hibája átlós irányokra?",
+    "options": [
+      "A) √2 ≈ 1,3 közelítés",
+      "B) √2 ≈ 1,5 közelítés",
+      "C) √2 ≈ 1,0 közelítés",
+      "D) Nincs dokumentált hiba"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS az esésrács átlós távolságait √2 ≈ 1,5 közelítéssel számítja a helyes 1,414 helyett."
+  },
+  {
+    "type": "mcq",
+    "question": "A derivált módszer eredménye a tesztrácson (cellaméret 30 m): mekkora a lejtés százalékban?",
+    "options": [
+      "A) 30,1%",
+      "B) 40,1%",
+      "C) 50,0%",
+      "D) 51,7%"
+    ],
+    "correct": "B",
+    "explanation": "A derivált módszer a tesztrácson 40,1% (21,8°) lejtést eredményez."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik módszer adja a legalacsonyabb lejtésértéket a tesztrácson?",
+    "options": [
+      "A) D8",
+      "B) D-végtelen",
+      "C) Derivált módszer",
+      "D) Mind azonos értéket ad"
+    ],
+    "correct": "C",
+    "explanation": "A derivált módszer (40,1%) adja a legalacsonyabbat, mert a magasabb szomszédokat is beépíti."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 módszer a tesztrácson milyen irányba irányítja az áramlást?",
+    "options": [
+      "A) Kelet",
+      "B) Délkelet",
+      "C) Dél",
+      "D) Délnyugat"
+    ],
+    "correct": "C",
+    "explanation": "A D8 a tesztrácson dél felé irányít (kód = 4), mert ott a legmeredekebb a lejtés (0,500)."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 milyen felbontást biztosít?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "A DDM-5 5 m × 5 m rácsfelbontást biztosít Magyarország egész területén."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 milyen koordináta-rendszerben készül?",
+    "options": [
+      "A) WGS84",
+      "B) UTM 34N",
+      "C) EOV (EPSG:23700)",
+      "D) ETRS89-LAEA"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 az EOV (EPSG:23700) koordináta-rendszerben készül."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 függőleges pontossága sík terepen:",
+    "options": [
+      "A) 5 m-nél jobb",
+      "B) 3 m-nél jobb",
+      "C) 1 m-nél jobb",
+      "D) 10 cm-nél jobb"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 függőleges pontossága sík terepen 1 m-nél jobb."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus DEM EEA-10 milyen felbontást kínál?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "A Copernicus EEA-10 10 méteres felbontást biztosít 39 európai ország területén."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus DEM GLO-30 milyen felbontású?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "A GLO-30 30 méteres felbontású globális termék."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SRTM adatgyűjtése melyik évben történt?",
+    "options": [
+      "A) 1995",
+      "B) 2000",
+      "C) 2005",
+      "D) 2010"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM 2000 februárjában gyűjtötte az adatokat egy 11 napos űrsikló-misszió során."
+  },
+  {
+    "type": "mcq",
+    "question": "A MERIT DEM milyen felbontású?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "A MERIT DEM 90 méteres globális DEM, hibaeltávolítással."
+  },
+  {
+    "type": "mcq",
+    "question": "A felületi görbület (plan curvature) mit mér?",
+    "options": [
+      "A) A lejtés változási sebességét az áramlás irányában",
+      "B) A kitettség változási sebességét a szintvonal mentén",
+      "C) A magasság abszolút értékét",
+      "D) A gradiens irányát"
+    ],
+    "correct": "B",
+    "explanation": "A felületi görbület a kitettség változási sebességét méri a szintvonal mentén."
+  },
+  {
+    "type": "mcq",
+    "question": "A profil görbület mit mér?",
+    "options": [
+      "A) A kitettség változási sebességét a szintvonal mentén",
+      "B) A lejtés változási sebességét az áramlás irányában",
+      "C) A felszín kiterjedését",
+      "D) Az áramlás sebességét"
+    ],
+    "correct": "B",
+    "explanation": "A profil görbület a lejtés változási sebességét méri az áramlás irányában."
+  },
+  {
+    "type": "mcq",
+    "question": "A TWI-számításhoz melyik áramlásirány-módszer ajánlott?",
+    "options": [
+      "A) D8",
+      "B) D-végtelen",
+      "C) Derivált módszer",
+      "D) Mindegy"
+    ],
+    "correct": "B",
+    "explanation": "A D-végtelen simább, fizikailag valósághűbb hozzájáruló terület-mintázatokat produkál, jobb TWI-t eredményezve."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sobel-operátor milyen két műveletet kombinál?",
+    "options": [
+      "A) Osztályozás és szűrés",
+      "B) Simítás és differenciálás",
+      "C) Interpoláció és extrapoláció",
+      "D) Kvantálás és kódolás"
+    ],
+    "correct": "B",
+    "explanation": "A Sobel-operátor simítást végez az egyik irányban és differenciáltbecslést a merőleges irányban."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 kódolás miért használ kettőhatványokat?",
+    "options": [
+      "A) Esztétikai okokból",
+      "B) Mert 8 irány van",
+      "C) Hogy minden irány egyetlen bittel legyen ábrázolható",
+      "D) Véletlenszerű választás"
+    ],
+    "correct": "C",
+    "explanation": "A kettőhatvány-kódolás lehetővé teszi, hogy minden irány egyetlen bittel legyen ábrázolva egy 8 bites bináris számban."
+  },
+  {
+    "type": "mcq",
+    "question": "A derivált módszer szélső celláin milyen értéket kapunk?",
+    "options": [
+      "A) 0",
+      "B) Hiányzó adat (no-data)",
+      "C) Az átlagos lejtést",
+      "D) A szomszédos cella értékét"
+    ],
+    "correct": "B",
+    "explanation": "A szélső cellák hiányzó adat értéket kapnak, mert nincs teljes 3×3-as környezetük."
+  },
+  {
+    "type": "mcq",
+    "question": "A 145 fokos kitettség milyen irányt jelent?",
+    "options": [
+      "A) Északnyugat",
+      "B) Délkelet",
+      "C) Dél-délkelet",
+      "D) Kelet-délkelet"
+    ],
+    "correct": "C",
+    "explanation": "A 145 fok dél-délkeleti kitettséget jelent (180° és 90° között, közelebb délhez)."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszerben a 6. facetta referenciaszöge:",
+    "options": [
+      "A) 180 fok",
+      "B) 225 fok",
+      "C) 270 fok",
+      "D) 315 fok"
+    ],
+    "correct": "C",
+    "explanation": "A 6. facetta referenciaszöge 270° kelettől az óramutató járásával ellentétesen mérve."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AW3D30 DEM milyen forrásból származik?",
+    "options": [
+      "A) Radar",
+      "B) LiDAR",
+      "C) Optikai sztereo képek",
+      "D) Szintvonalak"
+    ],
+    "correct": "C",
+    "explanation": "Az ALOS AW3D30-at a JAXA optikai sztereo képekből származtatta."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SRTM DEM lefedettségi tartománya:",
+    "options": [
+      "A) 90°É – 90°D",
+      "B) 60°É – 56°D",
+      "C) 80°É – 80°D",
+      "D) 45°É – 45°D"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM 60° É-tól 56° D-ig terjedő lefedettséget biztosít."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szoftverben érhető el a D-végtelen módszer?",
+    "options": [
+      "A) Csak ArcGIS",
+      "B) Csak TauDEM",
+      "C) ArcGIS és TauDEM",
+      "D) Csak QGIS"
+    ],
+    "correct": "C",
+    "explanation": "A D-végtelen módszer opcióként elérhető az ArcGIS Flow Direction eszközben és a TauDEM-ben is."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen konvencióról az ArcGIS konvencióra való átváltás képlete:",
+    "options": [
+      "A) α_ArcGIS = α_Dvégt + 90",
+      "B) α_ArcGIS = 90 - α_Dvégt",
+      "C) α_ArcGIS = 360 - α_Dvégt",
+      "D) α_ArcGIS = α_Dvégt - 180"
+    ],
+    "correct": "B",
+    "explanation": "Az átváltáshoz: α_ArcGIS = 90 - α_Dvégt (360-at hozzáadva, ha negatív)."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen koordináta-rendszer ajánlott a teljes Duna-vízgyűjtő elemzéséhez?",
+    "options": [
+      "A) EOV",
+      "B) UTM 34N",
+      "C) ETRS89-LAEA (EPSG:3035)",
+      "D) WGS84"
+    ],
+    "correct": "C",
+    "explanation": "Egész Európára kiterjedő elemzéshez az ETRS89-LAEA (EPSG:3035) a standard azonos területi vetület."
+  },
+  {
+    "type": "mcq",
+    "question": "A Lechner Geoshop milyen adatot kínál?",
+    "options": [
+      "A) Csak térképeket",
+      "B) A DDM-5 domborzatmodellt",
+      "C) Csak műholdképeket",
+      "D) Csak vízhálózati adatokat"
+    ],
+    "correct": "B",
+    "explanation": "A DDM-5 a Lechner Geoshop-on keresztül rendelhető meg."
+  },
+  {
+    "type": "mcq",
+    "question": "A lejtés S dimenziótlan, ha:",
+    "options": [
+      "A) z méterben és x, y fokban van",
+      "B) z, x és y azonos egységben vannak",
+      "C) z lábban és x, y méterben van",
+      "D) Mindig dimenziótlan"
+    ],
+    "correct": "B",
+    "explanation": "A lejtés nagysága S dimenziótlan, ha z, x és y azonos egységben vannak megadva."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen DEM-forrás ajánlott a Felső-Tisza határokon átnyúló elemzéséhez?",
+    "options": [
+      "A) Csak DDM-5",
+      "B) Csak SRTM",
+      "C) DDM-5 (magyar rész) + Copernicus EEA-10 (határon túl)",
+      "D) Csak ASTER GDEM"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 a magyar részre, a Copernicus EEA-10 a határokon átnyúló területekre ajánlott."
+  },
+  {
+    "type": "mcq",
+    "question": "A Beven és Kirkby féle TOPMODEL melyik évben jelent meg?",
+    "options": [
+      "A) 1969",
+      "B) 1979",
+      "C) 1989",
+      "D) 1999"
+    ],
+    "correct": "B",
+    "explanation": "Beven és Kirkby 1979-ben vezette be a TOPMODEL keretrendszert és a TWI-t."
+  },
+  {
+    "type": "mcq",
+    "question": "A Model Builder milyen típusú programozási környezet?",
+    "options": [
+      "A) Szöveges",
+      "B) Vizuális",
+      "C) Objektumorientált",
+      "D) Funkcionális"
+    ],
+    "correct": "B",
+    "explanation": "A Model Builder vizuális programozási környezetet biztosít az ArcGIS Pro-ban."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik módszer a legrobusztusabb a DEM zajával szemben?",
+    "options": [
+      "A) D8",
+      "B) D-végtelen",
+      "C) Derivált módszer",
+      "D) Mindegyik egyformán érzékeny"
+    ],
+    "correct": "C",
+    "explanation": "A derivált módszer Sobel-súlyozása simít, így robusztusabb a zajjal szemben."
+  },
+  {
+    "type": "mcq",
+    "question": "A TWI magas értékei hol fordulnak elő?",
+    "options": [
+      "A) Meredek gerinceken",
+      "B) Völgytalpakon és domborzati mélyedésekben",
+      "C) A DEM szélein",
+      "D) Egyenletesen mindenhol"
+    ],
+    "correct": "B",
+    "explanation": "Magas TWI-értékek nagy hozzájáruló területtel és enyhe lejtéssel rendelkező helyeken fordulnak elő."
+  },
+  {
+    "type": "mcq",
+    "question": "A dz/dy képletben (derivált módszer) mit jelent a negatív érték?",
+    "options": [
+      "A) A terep kelet felé esik",
+      "B) A terep nyugat felé esik",
+      "C) A terep dél felé esik",
+      "D) A terep észak felé esik"
+    ],
+    "correct": "C",
+    "explanation": "Negatív dz/dy azt jelenti, hogy a felszín dél felé esik (y észak felé növekszik, de a derivált negatív)."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen hibát okoz a földrajzi koordinátás DEM síkbeli lejtésszámítása?",
+    "options": [
+      "A) Elhanyagolható hibát",
+      "B) Értelmetlen lejtésértékeket",
+      "C) Csak a kitettségben okoz hibát",
+      "D) Csak a D8 iránynál hibás"
+    ],
+    "correct": "B",
+    "explanation": "Földrajzi koordináták és méteres magasság keverése értelmetlen lejtésértékeket produkál."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 áramlásirány-kódolásban a kelet irány kódja:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "A",
+    "explanation": "A D8 kódolásban a kelet = 1 (legkisebb helyiértékű bit)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány különböző D8 áramlásirány érték lehetséges?",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 16",
+      "D) 32"
+    ],
+    "correct": "B",
+    "explanation": "A D8 nyolc lehetséges áramlásirány értéket ad: 1, 2, 4, 8, 16, 32, 64, 128."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus DEM milyen műhold-misszióból származik?",
+    "options": [
+      "A) Landsat",
+      "B) Sentinel-2",
+      "C) TanDEM-X",
+      "D) ALOS"
+    ],
+    "correct": "C",
+    "explanation": "A Copernicus DEM a német vezetésű TanDEM-X radarműhold-misszióból származik."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszer milyen áramláselosztást tesz lehetővé?",
+    "options": [
+      "A) Csak egy szomszédhoz",
+      "B) Arányos elosztás két szomszéd között",
+      "C) Egyenlő elosztás mind a 8 szomszéd között",
+      "D) Véletlenszerű elosztás"
+    ],
+    "correct": "B",
+    "explanation": "A D-végtelen arányos áramláselosztást tesz lehetővé a szög alapján két szomszéd között."
+  },
+  {
+    "type": "mcq",
+    "question": "A HD72 és ETRS89 közötti transzformáció típusa:",
+    "options": [
+      "A) 3 paraméteres",
+      "B) 5 paraméteres",
+      "C) 7 paraméteres Helmert",
+      "D) Affin"
+    ],
+    "correct": "C",
+    "explanation": "A HD72 és ETRS89 közötti transzformáció 7 paraméteres Helmert-transzformációt használ (EPSG:1449)."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik NEM előnye a derivált módszernek?",
+    "options": [
+      "A) Robusztus zajjal szemben",
+      "B) Mind a 8 szomszédot használja",
+      "C) Képes divergens áramlást ábrázolni",
+      "D) Sima felszínt illeszt"
+    ],
+    "correct": "C",
+    "explanation": "A derivált módszer nem képes divergens/konvergens áramlást megkülönböztetni; az a D-végtelen előnye."
+  },
+  {
+    "type": "mcq",
+    "question": "A tesztrács (80,74,63/69,67,56/60,52,48) D-végtelen lejtése:",
+    "options": [
+      "A) 40,1%",
+      "B) 50,0%",
+      "C) 51,7%",
+      "D) 44,8%"
+    ],
+    "correct": "C",
+    "explanation": "A D-végtelen módszer 51,7%-os lejtést eredményez a tesztrácson."
+  },
+  {
+    "type": "mcq",
+    "question": "Az arctan(S) × 180/π képlettel mit számítunk?",
+    "options": [
+      "A) A lejtés százalékos értékét",
+      "B) A lejtés fokokban kifejezett szögét",
+      "C) A kitettséget",
+      "D) A görbületet"
+    ],
+    "correct": "B",
+    "explanation": "θ = arctan(S) × 180/π adja a lejtésszöget fokokban."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 módszernél az áramlásirány mitől függ?",
+    "options": [
+      "A) A magasságkülönbségtől egyedül",
+      "B) A lejtéstől (magasságkülönbség osztva távolsággal)",
+      "C) A szomszéd magasságától",
+      "D) A szomszéd kitettségétől"
+    ],
+    "correct": "B",
+    "explanation": "Az áramlásirány a lejtéstől függ, nem a magasságkülönbségtől; az átlós cellák távolságkorrekcója fontos."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 milyen forrásadatokból készül?",
+    "options": [
+      "A) Műholdas radar",
+      "B) LiDAR",
+      "C) Szintvonalak és sztereo-fotogrammetria",
+      "D) GPS-mérések"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 1:10 000 topográfiai szintvonalakból és sztereo-fotogrammetriából származtatott."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tájelem példázza a karszt domborzatot Magyarországon?",
+    "options": [
+      "A) Hortobágy",
+      "B) Aggteleki-karszt",
+      "C) Balaton",
+      "D) Tisza ártere"
+    ],
+    "correct": "B",
+    "explanation": "Az Aggteleki-karszt Magyarország UNESCO Világörökségi Helyszíne, számos töbörrel és víznyelővel."
+  },
+  {
+    "type": "mcq",
+    "question": "A Curvature eszköz az ArcGIS-ben hol található?",
+    "options": [
+      "A) Hydrology eszközkészlet",
+      "B) Interpolation eszközkészlet",
+      "C) Surface eszközkészlet",
+      "D) Zonal eszközkészlet"
+    ],
+    "correct": "C",
+    "explanation": "A Curvature eszköz a Surface eszközkészletben található, mint a Slope és Aspect."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen kimenete milyen formátumú?",
+    "options": [
+      "A) Egész számú rács",
+      "B) Lebegőpontos rács radiánban",
+      "C) Vektoros réteg",
+      "D) ASCII táblázat"
+    ],
+    "correct": "B",
+    "explanation": "A D-végtelen kimenet lebegőpontos rács, 0-tól 2π radiánig terjedő szöggel."
+  },
+  {
+    "type": "mcq",
+    "question": "A SCS görbeszám módszerben a koncentrációs idő mitől függ?",
+    "options": [
+      "A) A vízgyűjtő területétől",
+      "B) A leghosszabb áramlási út menti lejtéstől",
+      "C) Az éves csapadéktól",
+      "D) A talaj típusától egyedül"
+    ],
+    "correct": "B",
+    "explanation": "A koncentrációs idő a leghosszabb áramlási út menti lejtésből kerül becslésre."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 módszer milyen fastruktúrát hoz létre?",
+    "options": [
+      "A) Véletlenszerű gráfot",
+      "B) Egyértelmű áramlási utak fastruktúráját",
+      "C) Körkörös hálózatot",
+      "D) Többszörösen összekötött gráfot"
+    ],
+    "correct": "B",
+    "explanation": "A cellánkénti egy-irány tulajdonság egyértelmű áramlási utak fastruktúráját hozza létre."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Copernicus GLO-30 függőleges pontossága?",
+    "options": [
+      "A) < 1 m",
+      "B) < 4 m",
+      "C) < 10 m",
+      "D) < 20 m"
+    ],
+    "correct": "B",
+    "explanation": "A Copernicus DEM GLO-30 abszolút függőleges pontossága (LE90) globálisan kevesebb mint 4 m."
+  },
+  {
+    "type": "mcq",
+    "question": "A TauDEM szoftver milyen egyetemen fejlesztették?",
+    "options": [
+      "A) MIT",
+      "B) Stanford",
+      "C) Utah State University",
+      "D) Texasi Egyetem"
+    ],
+    "correct": "C",
+    "explanation": "A TauDEM-et Tarboton kutatócsoportja fejlesztette az Utah State Universityn."
+  },
+  {
+    "type": "mcq",
+    "question": "A kinematikus hullám-továbbításban a sebesség arányos:",
+    "options": [
+      "A) S-sel",
+      "B) S^(1/2)-nel",
+      "C) S^2-tel",
+      "D) 1/S-sel"
+    ],
+    "correct": "B",
+    "explanation": "A kinematikus hullám-továbbításban a felszíni lefolyás sebessége S^(1/2)-nel arányos (Manning-egyenlet)."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen módszernél mikor degradálódik D8-ekvivalens irányra?",
+    "options": [
+      "A) Sosem",
+      "B) Amikor α₁ < 0 vagy α₁ > 45 fok",
+      "C) Minden esetben",
+      "D) Csak sík terepen"
+    ],
+    "correct": "B",
+    "explanation": "Ha α₁ kívül esik a 0-45° tartományon, az irány csonkolódik a facettahatárra, ami D8-ekvivalens."
+  },
+  {
+    "type": "mcq",
+    "question": "A lejtés az eróziómodellekben milyen módon hat?",
+    "options": [
+      "A) Lineárisan",
+      "B) Logaritmikusan",
+      "C) Nemlineárisan (közelítőleg a négyzete)",
+      "D) Nincs hatása"
+    ],
+    "correct": "C",
+    "explanation": "Az USLE-ben az erózió nemlineárisan, közelítőleg a lejtés négyzetével nő."
+  },
+  {
+    "type": "mcq",
+    "question": "A Model Builder kimenete milyen formátumba exportálható?",
+    "options": [
+      "A) Csak rácsformátumba",
+      "B) Python-szkriptté",
+      "C) Csak PDF-be",
+      "D) Nem exportálható"
+    ],
+    "correct": "B",
+    "explanation": "Az elkészült modell Python-szkriptté exportálható további testreszabáshoz vagy kötegelt feldolgozáshoz."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus DEM milyen évszámokból származik?",
+    "options": [
+      "A) 2000-2005",
+      "B) 2005-2010",
+      "C) 2011-2015",
+      "D) 2015-2020"
+    ],
+    "correct": "C",
+    "explanation": "A Copernicus DEM a TanDEM-X misszióból (2011-2015) származik."
+  },
+  {
+    "type": "mcq",
+    "question": "Pozitív felületi görbület mit jelez?",
+    "options": [
+      "A) Divergens topográfiát",
+      "B) Konvergens topográfiát",
+      "C) Sík domboldalat",
+      "D) Függőleges felszínt"
+    ],
+    "correct": "B",
+    "explanation": "Pozitív felületi görbület konvergens topográfiát (mélyedést, völgyet) jelez, ahol az áramlási vonalak összetartanak."
+  },
+  {
+    "type": "mcq",
+    "question": "A 270 fok kitettség milyen égtájnak felel meg az ArcGIS-ben?",
+    "options": [
+      "A) Észak",
+      "B) Kelet",
+      "C) Dél",
+      "D) Nyugat"
+    ],
+    "correct": "D",
+    "explanation": "Az ArcGIS-ben 270° = Nyugat."
+  },
+  {
+    "type": "mcq",
+    "question": "Mire szolgál az ArcGIS ASCII to Raster eszköz?",
+    "options": [
+      "A) Rács exportálására",
+      "B) ASCII szövegfájl rácsformátumba importálására",
+      "C) Lejtés számítására",
+      "D) Vetület megváltoztatására"
+    ],
+    "correct": "B",
+    "explanation": "Az ASCII to Raster eszköz ASCII Grid formátumú szövegfájlt importál rács formátumba."
+  },
+  {
+    "type": "mcq",
+    "question": "A tesztrács D-végtelen elemzésében a 6. facetta globális szöge:",
+    "options": [
+      "A) 270,0°",
+      "B) 284,9°",
+      "C) 300,0°",
+      "D) 315,0°"
+    ],
+    "correct": "B",
+    "explanation": "A 6. facetta: θ_globális = 270° + 14,9° = 284,9° kelettől az ÓMJ-vel ellentétesen."
+  },
+  {
+    "type": "mcq",
+    "question": "A Nagy Magyar Alföldet jellemző tipikus lejtés:",
+    "options": [
+      "A) 1% alatt",
+      "B) 5-10%",
+      "C) 10-20%",
+      "D) 20% felett"
+    ],
+    "correct": "A",
+    "explanation": "A Nagy Magyar Alföldön a tipikus lejtés 1% alatt van, rendkívül enyhék a domborzati gradiensek."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik DEM ajánlott új globális projekteknél 2026-ban?",
+    "options": [
+      "A) SRTM",
+      "B) ASTER GDEM",
+      "C) Copernicus GLO-30",
+      "D) MERIT DEM"
+    ],
+    "correct": "C",
+    "explanation": "A Copernicus GLO-30 az új projektek standard globális DEM-je, felváltva az SRTM-et."
+  },
+  {
+    "type": "mcq",
+    "question": "A kitettség a GIS-ben melyik irányba mutat?",
+    "options": [
+      "A) A legmeredekebb emelkedés irányába",
+      "B) A legmeredekebb lejtés irányába",
+      "C) Mindig észak felé",
+      "D) A gradiens irányába"
+    ],
+    "correct": "B",
+    "explanation": "A kitettség a legmeredekebb lefelé irányuló gradiens iránytűiránya."
+  },
+  {
+    "type": "mcq",
+    "question": "A lejtésszámítási módszer választása miért fontos a modellkalibrációnál?",
+    "options": [
+      "A) Nem fontos",
+      "B) Mert a módszerek azonos eredményt adnak",
+      "C) Mert eltérő módszerek eltérő lejtésértékeket adnak, ami ronthatja a kalibrált modell teljesítményét",
+      "D) Csak esztétikai okokból"
+    ],
+    "correct": "C",
+    "explanation": "Ha módszert váltunk, a lejtésértékek megváltoznak, és a modell újrakalibrálást igényelhet."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Slope eszköz milyen módszert valósít meg?",
+    "options": [
+      "A) D8",
+      "B) D-végtelen",
+      "C) Derivált módszer (Sobel-operátor)",
+      "D) Bilineáris interpoláció"
+    ],
+    "correct": "C",
+    "explanation": "Az ArcGIS Slope eszköz a derivált módszert valósítja meg Sobel-operátorral."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik eszközben találjuk a Flow Direction-t az ArcGIS Pro-ban?",
+    "options": [
+      "A) Surface eszközkészlet",
+      "B) Hydrology eszközkészlet",
+      "C) Interpolation eszközkészlet",
+      "D) Zonal eszközkészlet"
+    ],
+    "correct": "B",
+    "explanation": "A Flow Direction a Spatial Analyst Hydrology eszközkészletben található."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 kódolásban az északkelet kódja:",
+    "options": [
+      "A) 32",
+      "B) 64",
+      "C) 128",
+      "D) 2"
+    ],
+    "correct": "C",
+    "explanation": "A D8 kódolásban az északkelet = 128 (legnagyobb helyiértékű bit)."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 legutóbbi frissítése melyik évben történt?",
+    "options": [
+      "A) 2015",
+      "B) 2018",
+      "C) 2020",
+      "D) 2022"
+    ],
+    "correct": "D",
+    "explanation": "A DDM-5 frissítései: 2000, 2005, 2015 és 2022."
+  },
+  {
+    "type": "mcq",
+    "question": "A Kékes csúcs tengerszint feletti magassága:",
+    "options": [
+      "A) 550 m",
+      "B) 786 m",
+      "C) 1014 m",
+      "D) 1200 m"
+    ],
+    "correct": "C",
+    "explanation": "A Mátra-hegység Kékes csúcsa 1014 m magas, Magyarország legmagasabb pontja."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen facetták melyik irányban haladnak?",
+    "options": [
+      "A) Kelet, az ÓMJ-vel megegyezően",
+      "B) Kelet, az ÓMJ-vel ellentétesen",
+      "C) Észak, az ÓMJ-vel megegyezően",
+      "D) Dél, az ÓMJ-vel ellentétesen"
+    ],
+    "correct": "B",
+    "explanation": "A facetták kelettől indulnak és az óramutató járásával ellentétesen haladnak (0-tól 7-ig)."
+  },
+  {
+    "type": "mcq",
+    "question": "A derivált módszer kitettség-negyedmeghatározásához milyen függvény szükséges?",
+    "options": [
+      "A) sin",
+      "B) cos",
+      "C) atan2 (kétargumentumú arkusztangens)",
+      "D) ln"
+    ],
+    "correct": "C",
+    "explanation": "Az atan2 függvény a két komponenst külön fogadja el és a helyes szöget adja a teljes 360°-os tartományban."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 módszer miért nem alkalmas konvex domboldalak áramlásának ábrázolására?",
+    "options": [
+      "A) Mert túl lassú",
+      "B) Mert az összes áramlást egyetlen szomszédhoz rendeli",
+      "C) Mert nem használ távolságkorrekciót",
+      "D) Mert csak 4 irányt ismer"
+    ],
+    "correct": "B",
+    "explanation": "A D8 az összes áramlást egyetlen szomszédhoz rendeli, nem tudja megosztani a gerincek két oldalára."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen lejtésegységet használnak leggyakrabban a mérnöki alkalmazásokban?",
+    "options": [
+      "A) Fok",
+      "B) Radián",
+      "C) Százalékos emelkedés",
+      "D) Tizedes tört"
+    ],
+    "correct": "C",
+    "explanation": "A százalékos emelkedés gyakoribb a mérnöki alkalmazásokban és a hidrológiai egyenletekben."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus DEM adatai milyen portálon érhetők el?",
+    "options": [
+      "A) Google Earth",
+      "B) dataspace.copernicus.eu",
+      "C) Csak a DDM-5 portálon",
+      "D) Csak OpenStreetMap-on"
+    ],
+    "correct": "B",
+    "explanation": "A Copernicus DEM a dataspace.copernicus.eu portálon érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a kitettség 0 (vagy 360) fok értéke az ArcGIS-ben?",
+    "options": [
+      "A) Kelet",
+      "B) Dél",
+      "C) Nyugat",
+      "D) Észak"
+    ],
+    "correct": "D",
+    "explanation": "0° (vagy 360°) = Észak az ArcGIS kitettségi konvenciójában."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú DEM az SRTM?",
+    "options": [
+      "A) Digitális terepmodell (csupasz felszín)",
+      "B) Digitális felszínmodell (épületek, vegetáció is)",
+      "C) Csak csapadékfelszín",
+      "D) Csak vízfelszín"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM digitális felszínmodell, tartalmazza az épületek és vegetáció magasságát is."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés a magasság vízszintes távolságra vonatkoztatott változási sebessége.",
+    "correct": "true",
+    "explanation": "Ez a lejtés pontos definíciója."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning-egyenletben a sebesség a lejtés négyzetével arányos.",
+    "correct": "false",
+    "explanation": "A sebesség a lejtés négyzetgyökével arányos, nem a négyzetével."
+  },
+  {
+    "type": "true_false",
+    "question": "Az USLE-ben a lejtés megduplázódása megközelítőleg megduplázza az eróziót.",
+    "correct": "false",
+    "explanation": "A lejtés megduplázódása megközelítőleg megnégyszerezi az eróziót."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS-ben a sík területekhez -1 kitettségi értéket rendelnek.",
+    "correct": "true",
+    "explanation": "A -1 speciális érték jelöli a kitettség nélküli sík területeket."
+  },
+  {
+    "type": "true_false",
+    "question": "A 100%-os lejtés 90 foknak felel meg.",
+    "correct": "false",
+    "explanation": "A 100%-os lejtés 45 foknak felel meg, nem 90-nek."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sobel-operátor 1-2-1 súlyozást alkalmaz.",
+    "correct": "true",
+    "explanation": "A Sobel-operátor dupla súlyt ad a középső sornak/oszlopnak."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer csak a lefelé irányuló szomszédokat használja.",
+    "correct": "false",
+    "explanation": "A derivált módszer mind a 8 szomszédot használja, beleértve a magasabbakat is."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8-módszer 16 lehetséges áramlásirány közül választ.",
+    "correct": "false",
+    "explanation": "A D8 8 lehetséges áramlásirány közül választ."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 áramlásirány-kódolás kettőhatványokat használ.",
+    "correct": "true",
+    "explanation": "A kódolás: 1, 2, 4, 8, 16, 32, 64, 128 – mind kettőhatvány."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszer képes az áramlást két szomszéd között megosztani.",
+    "correct": "true",
+    "explanation": "A D-végtelen arányos áramláselosztást tesz lehetővé két szomszéd között."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszert 1984-ben publikálták.",
+    "correct": "false",
+    "explanation": "Tarboton 1997-ben publikálta; az 1984-es év a D8-módszeré."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 felbontása 5 m × 5 m.",
+    "correct": "true",
+    "explanation": "A DDM-5 5 méteres vízszintes felbontást biztosít Magyarország területén."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 szabadon letölthető az internetről.",
+    "correct": "false",
+    "explanation": "A DDM-5 nem szabadon letölthető; a Lechner Geoshop-on keresztül rendelhető meg."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM GLO-30 30 méteres felbontású globális termék.",
+    "correct": "true",
+    "explanation": "A GLO-30 30 méteres felbontású, globális lefedettségű termék."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM adatgyűjtése 2010-ben történt.",
+    "correct": "false",
+    "explanation": "Az SRTM 2000 februárjában gyűjtötte az adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8-módszer maximális irányhiba 45 fok.",
+    "correct": "false",
+    "explanation": "A maximális irányhiba 22,5 fok (a 45 fokos szögközök felezője)."
+  },
+  {
+    "type": "true_false",
+    "question": "A TWI magas értékei meredek gerinceken fordulnak elő.",
+    "correct": "false",
+    "explanation": "A magas TWI-értékek völgytalpakon és enyhe lejtésű területeken fordulnak elő."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer szélső celláin hiányzó adat értéket kapunk.",
+    "correct": "true",
+    "explanation": "A teljes 3×3-as környezet hiánya miatt a szélső cellák no-data értéket kapnak."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen szögkonvenciója északtól az óramutató járásával megegyezően mér.",
+    "correct": "false",
+    "explanation": "A D-végtelen kelettől az óramutató járásával ellentétesen mér (matematikai konvenció)."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM 90 méteres felbontású.",
+    "correct": "true",
+    "explanation": "A MERIT DEM 90 méteres globális DEM, hibaeltávolítással."
+  },
+  {
+    "type": "true_false",
+    "question": "A felületi görbület a lejtés változási sebességét méri az áramlás irányában.",
+    "correct": "false",
+    "explanation": "A felületi görbület a kitettség változási sebességét méri a szintvonal mentén; a profil görbület méri a lejtés változási sebességét."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 kódolásban a dél irány kódja 4.",
+    "correct": "true",
+    "explanation": "A D8 kódolásban: Dél = 4."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer a tesztrácson 50,0%-os lejtést eredményez.",
+    "correct": "false",
+    "explanation": "A derivált módszer 40,1%-os lejtést ad; az 50,0% a D8-módszer eredménye."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM Tarboton kutatócsoportja fejlesztette az Utah State Universityn.",
+    "correct": "true",
+    "explanation": "A TauDEM (Terrain Analysis Using Digital Elevation Models) az Utah State University terméke."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszer mindig legalább olyan jó eredményt ad, mint a D8.",
+    "correct": "true",
+    "explanation": "Amikor a legmeredekebb irány egy rácsirány mentén van, a D-végtelen pontosan visszaadja a D8-at."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Flow Direction eszköznek nincs dokumentált hibája.",
+    "correct": "false",
+    "explanation": "Az esésrács kimenetben a √2 ≈ 1,5 közelítés kb. 6%-os hibát vezet be az átlós lejtésértékekbe."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés százalékos és a fokos értékek lineáris kapcsolatban állnak.",
+    "correct": "false",
+    "explanation": "A kapcsolat nemlineáris: θ = arctan(S/100) × 180/π."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EOV az EPSG:23700 kódú koordináta-rendszer.",
+    "correct": "true",
+    "explanation": "Az EOV (Egységes Országos Vetület) az EPSG:23700 kódot viseli."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM a TanDEM-X radarműhold-misszióból származik.",
+    "correct": "true",
+    "explanation": "A Copernicus DEM a 2011-2015 közötti TanDEM-X misszió adataiból készült."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens vektor a legmeredekebb lejtés irányába mutat.",
+    "correct": "false",
+    "explanation": "A gradiens vektor a legmeredekebb emelkedés irányába mutat; a lejtés iránya az ellentéte."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen facetták 0-tól 7-ig vannak számozva.",
+    "correct": "true",
+    "explanation": "8 facetta van, 0-tól 7-ig számozva, a kelet felé néző facettától indulva."
+  },
+  {
+    "type": "true_false",
+    "question": "A TWI-számításhoz a D8 módszer jobb eredményeket ad, mint a D-végtelen.",
+    "correct": "false",
+    "explanation": "A D-végtelen módszer simább, fizikailag valósághűbb TWI-térképeket eredményez."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 EOV koordinátákban készül.",
+    "correct": "true",
+    "explanation": "A DDM-5 natív koordináta-rendszere az EOV (EPSG:23700)."
+  },
+  {
+    "type": "true_false",
+    "question": "A JAXA által fejlesztett AW3D30 DEM radaradatokból származik.",
+    "correct": "false",
+    "explanation": "Az AW3D30 optikai sztereo képekből származik, nem radarból."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8-módszerben az átlós cellákra alkalmazott távolságkorrekció nem befolyásolja az eredményt.",
+    "correct": "false",
+    "explanation": "A távolságkorrekció számos valós helyzetben megváltoztatja az áramlásirány-hozzárendelést."
+  },
+  {
+    "type": "true_false",
+    "question": "A Model Builder az ArcGIS Pro vizuális programozási környezete.",
+    "correct": "true",
+    "explanation": "A Model Builder vizuális programozási környezet az eszközök automatizált munkafolyamattá láncolásához."
+  },
+  {
+    "type": "true_false",
+    "question": "A Kékes csúcs 1014 m magasságú.",
+    "correct": "true",
+    "explanation": "A Kékes Magyarország legmagasabb pontja, 1014 m tengerszint feletti magassággal."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 módszer képes a divergens áramlás ábrázolására.",
+    "correct": "false",
+    "explanation": "A D8 az összes áramlást egyetlen szomszédhoz rendeli, nem képes divergens áramlásra."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EEA-10 minden felhasználó számára szabadon elérhető.",
+    "correct": "false",
+    "explanation": "Az EEA-10 hozzáférése engedélyezett felhasználókra (kormányzati szervek, kutatóintézetek) korlátozott."
+  },
+  {
+    "type": "true_false",
+    "question": "A pozitív profil görbület domború profilt jelez.",
+    "correct": "false",
+    "explanation": "A pozitív profil görbület homorú profilt (csökkenő lejtés lefelé) jelez; a domború profil negatív."
+  },
+  {
+    "type": "true_false",
+    "question": "A HD72 és ETRS89 közötti transzformáció 7 paraméteres Helmert-transzformáció.",
+    "correct": "true",
+    "explanation": "EPSG:1449 azonosítójú, 7 paraméteres Helmert-transzformáció."
+  },
+  {
+    "type": "true_false",
+    "question": "Földrajzi koordinátás DEM-en a síkbeli lejtésszámítás pontos eredményeket ad.",
+    "correct": "false",
+    "explanation": "Földrajzi koordináták (fok) és méteres magasság keverése értelmetlen lejtésértékeket produkál."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM 60°É-tól 56°D-ig terjedő lefedettséget biztosít.",
+    "correct": "true",
+    "explanation": "Az SRTM a Föld szárazföldi felszínének kb. 80%-át fedi le."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen kimenet fokokban van megadva az ArcGIS-ben.",
+    "correct": "false",
+    "explanation": "A D-végtelen kimenet radiánban van megadva (0-tól 2π-ig); fokra szorzással (180/π) váltható."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-90 90 méteres felbontású, szabadon elérhető termék.",
+    "correct": "true",
+    "explanation": "A GLO-90 90 méteres felbontású és szabadon elérhető."
+  },
+  {
+    "type": "true_false",
+    "question": "A dz/dx képletben az A cella az északkelet sarokban van.",
+    "correct": "false",
+    "explanation": "A jelölésben A az északnyugati sarok (bal felső)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS-ben a kitettség az északtól az óramutató járásával megegyezően van mérve.",
+    "correct": "true",
+    "explanation": "0° = Észak, 90° = Kelet, 180° = Dél, 270° = Nyugat."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 kódolás a kelettől indul és az óramutató járásával megegyezően halad.",
+    "correct": "false",
+    "explanation": "A kódolás kelettől indul, de az óramutató járásával ellentétesen halad (matematikai konvenció)."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer jobban ellenáll a DEM zajának, mint a D8.",
+    "correct": "true",
+    "explanation": "A Sobel-súlyozás simítást biztosít, ami robusztusabbá teszi a zajjal szemben."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés a hidrológiai modellezés szempontjából elhanyagolható paraméter.",
+    "correct": "false",
+    "explanation": "Szinte minden elosztott hidrológiai modell bemenetként használja a lejtést."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 függőleges pontossága hegyvidéken 2-3 m.",
+    "correct": "true",
+    "explanation": "Dombvidéken/hegyvidéken a DDM-5 pontossága 2-3 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés a magasság _______ távolságra vonatkoztatott változási sebessége.",
+    "correct": "vízszintes",
+    "explanation": "A lejtés definíciója a vízszintes távolsághoz viszonyított magasságváltozás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TWI képlete: ln(a / tan _______).",
+    "correct": "β",
+    "explanation": "β a helyi lejtésszög a TWI képletben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS-ben a sík terület kitettségi értéke _______.",
+    "correct": "-1",
+    "explanation": "A -1 speciális érték jelzi a kitettség nélküli állapotot."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A derivált lejtés módszer _______ × _______ cellás környezetet használ.",
+    "correct": "3 × 3",
+    "explanation": "A Sobel-operátor a vizsgált cella körüli 3×3-as környezeten dolgozik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 elnevezés a _______ lehetséges áramlásirányra utal.",
+    "correct": "nyolc",
+    "explanation": "D8 = 8 diszkrét irány (4 fő égtáj + 4 átlós)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az átlós szomszédok távolsága δ × _______.",
+    "correct": "√2",
+    "explanation": "Az átlós távolság δ√2, mert a rácscella átlójának hossza √2-szorosa az oldalnak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban a dél irány kódja _______.",
+    "correct": "4",
+    "explanation": "Dél = 4 a D8 kettőhatvány-kódolásban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszert _______ publikálta 1997-ben.",
+    "correct": "Tarboton",
+    "explanation": "David Tarboton publikálta a Water Resources Research-ben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 felbontása _______ m × _______ m.",
+    "correct": "5",
+    "explanation": "A DDM-5 5 méteres vízszintes felbontást biztosít."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 koordináta-rendszere az _______ (EPSG:23700).",
+    "correct": "EOV",
+    "explanation": "Az Egységes Országos Vetület Magyarország nemzeti koordináta-rendszere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM a _______ radarműhold-misszióból származik.",
+    "correct": "TanDEM-X",
+    "explanation": "A Copernicus DEM a német vezetésű TanDEM-X misszió adataiból készül."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM adatgyűjtése _______ februárjában történt.",
+    "correct": "2000",
+    "explanation": "2000 februárjában gyűjtöttek adatot az űrsikló-misszió során."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM felbontása _______ m.",
+    "correct": "90",
+    "explanation": "A MERIT DEM 90 méteres globális DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Kékes csúcs magassága _______ m.",
+    "correct": "1014",
+    "explanation": "A Kékes Magyarország legmagasabb pontja, a Mátra-hegységben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 100%-os lejtés _______ foknak felel meg.",
+    "correct": "45",
+    "explanation": "arctan(1) = 45°."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszer _______ háromszög facettát használ.",
+    "correct": "8",
+    "explanation": "A 3×3-as környezet 8 háromszög facettára oszlik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen szögkonvenciója: _______ az óramutató járásával ellentétesen mérve.",
+    "correct": "kelettől",
+    "explanation": "A matematikai konvenció szerint a szögek kelettől az ÓMJ-vel ellentétesen vannak mérve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sobel-operátor súlyozása: 1-_______-1.",
+    "correct": "2",
+    "explanation": "A középső sort/oszlopot dupla súllyal veszik figyelembe."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A dz/dx képlet nevezője az ArcGIS derivált módszerben: _______δ.",
+    "correct": "8",
+    "explanation": "A nevező 4 × 2δ = 8δ."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 módszer maximális irányhiba _______ fok.",
+    "correct": "22,5",
+    "explanation": "A 45 fokos szögközök felezője 22,5 fok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gradiens vektor a legmeredekebb _______ irányába mutat.",
+    "correct": "emelkedés",
+    "explanation": "A gradiens vektor az emelkedés irányát jelöli; a lejtés irányába a kitettség mutat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TWI-t Beven és _______ vezette be 1979-ben.",
+    "correct": "Kirkby",
+    "explanation": "Beven és Kirkby a TOPMODEL keretrendszerük részeként vezették be."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM szoftvert az _______ State Universityn fejlesztették.",
+    "correct": "Utah",
+    "explanation": "Tarboton kutatócsoportja az Utah State Universityn dolgozik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Slope eszköz a _______ eszközkészletben található.",
+    "correct": "Surface",
+    "explanation": "A Slope a Spatial Analyst Surface eszközkészletben van."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS-ben a 90 fokos kitettség _______ iránynak felel meg.",
+    "correct": "kelet",
+    "explanation": "Az ArcGIS konvencióban 90° = Kelet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés nagysága S = √(Sx² + _______²).",
+    "correct": "Sy",
+    "explanation": "A lejtés az x és y irányú komponensek vektori nagysága."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban a kelet irány kódja _______.",
+    "correct": "1",
+    "explanation": "Kelet = 1 a D8 kettőhatvány-kódolásban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 a _______ Tudásközpont terméke.",
+    "correct": "Lechner",
+    "explanation": "A Lechner Tudásközpont (korábban FÖMI) készíti és tartja karban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM EEA-10 _______ európai országot fed le.",
+    "correct": "39",
+    "explanation": "39 európai ország területén biztosít 10 méteres felbontást."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen konvencióról ArcGIS-re: α_ArcGIS = _______ - α_Dvégt.",
+    "correct": "90",
+    "explanation": "Az átváltás: α_ArcGIS = 90 - α_Dvégt (360 hozzáadásával, ha negatív)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés fokokban: θ = arctan(S) × _______/π.",
+    "correct": "180",
+    "explanation": "A radián-fok átváltáshoz szorozzuk 180/π-vel."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felületi görbületet és profil görbületet az ArcGIS Pro _______ eszközével számítjuk.",
+    "correct": "Curvature",
+    "explanation": "A Curvature eszköz a Surface eszközkészletben található."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen facettán belüli szög érvényes tartománya: 0 és _______ fok között.",
+    "correct": "45",
+    "explanation": "Minden facetta 45 fokos szögtartományt ölel fel."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A dz/dy = (G + 2H + I) - (A + 2B + C) osztva _______δ-val.",
+    "correct": "8",
+    "explanation": "A nevező azonos: 8δ, mind az x, mind az y irányú deriváltnál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A pozitív felületi görbület _______ topográfiát jelez.",
+    "correct": "konvergens",
+    "explanation": "Konvergens topográfiánál az áramlási vonalak összetartanak (völgy)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM lefedettségi tartománya: 60°É-tól _______°D-ig.",
+    "correct": "56",
+    "explanation": "Az SRTM 60° északi és 56° déli szélesség között fed le."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Flow Direction eszköz a _______ eszközkészletben található.",
+    "correct": "Hydrology",
+    "explanation": "A Flow Direction a Spatial Analyst Hydrology eszközkészletben van."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 módszert először O'Callaghan és _______ írta le 1984-ben.",
+    "correct": "Mark",
+    "explanation": "O'Callaghan és Mark publikálta az alapvető D8-algoritmust."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HD72 és ETRS89 közötti transzformáció _______ paraméteres Helmert-transzformáció.",
+    "correct": "7",
+    "explanation": "EPSG:1449 azonosítójú, 7 paraméteres transzformáció."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM GLO-30 függőleges pontossága (LE90) globálisan kevesebb mint _______ m.",
+    "correct": "4",
+    "explanation": "Az abszolút függőleges pontosság 90%-os megbízhatósággal < 4 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszer publikációjának folyóirata: Water Resources _______.",
+    "correct": "Research",
+    "explanation": "A Water Resources Research a hidrológia egyik vezető tudományos folyóirata."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban a nyugat irány kódja _______.",
+    "correct": "16",
+    "explanation": "Nyugat = 16 a D8 kettőhatvány-kódolásban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés a _______ felszín gradiensének nagysága.",
+    "correct": "magassági",
+    "explanation": "A lejtés a z(x,y) magassági felszín gradiensének nagysága."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 legutóbbi frissítése _______ évben történt.",
+    "correct": "2022",
+    "explanation": "A DDM-5 frissítési előzményei: 2000, 2005, 2015, 2022."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszer a 6. facetta lejtése a tesztrácson: _______ (3 tizedesre).",
+    "correct": "0,517",
+    "explanation": "S = √(0,500² + 0,133²) = √0,2678 = 0,517."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a három lejtésszámítási módszer (derivált, D8, D-végtelen) közötti alapvető különbségeket, és adjon példákat, mikor melyik módszer a legmegfelelőbb!",
+    "correct": "A válasznak tartalmaznia kell: (1) A derivált módszer mind a 8 szomszédot használja Sobel-súlyozással, általános domborzatjellemzésre alkalmas. (2) A D8 csak a legmeredekebb lefelé irányuló szomszédot választja, vízgyűjtő-lehatároláshoz alkalmas. (3) A D-végtelen háromszög facettákat illeszt és folytonos szöget ad, TWI-számításhoz és domboldal-hidrológiához alkalmas.",
+    "explanation": "Mindhárom módszer eltérő kérdésre válaszol és eltérő alkalmazásokhoz optimális."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a topográfiai nedvességi index (TWI) képletét, fizikai jelentését és alkalmazási területeit!",
+    "correct": "A válasznak tartalmaznia kell: TWI = ln(a/tan β), ahol a a fajlagos felső hozzájáruló terület, β a helyi lejtésszög. Magas TWI: nagy terület, enyhe lejtés → telített zónák. Alkalmazások: talajnedvesség-előrejelzés, TOPMODEL, vizes élőhelyek, precíziós mezőgazdaság.",
+    "explanation": "A TWI a hidrológia és ökológia egyik legsokoldalúbb domborzati indexe."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen DEM-adatforrásokat ajánlana egy magyar vízgyűjtő-tanulmányhoz, és miért? Hasonlítsa össze a DDM-5-öt, a Copernicus DEM-et és az SRTM-et!",
+    "correct": "DDM-5: 5 m felbontás, legjobb pontosság, natív EOV, de megrendelendő. Copernicus EEA-10: 10 m, határokon átnyúló. GLO-30: 30 m, ingyenes, globális. SRTM: 30 m, régebbi (2000), felszínmodell. Ajánlás: DDM-5 magyar részre, Copernicus a határon túlra.",
+    "explanation": "A DEM-választás a terület kiterjedésétől, felbontási igénytől és hozzáférhetőségtől függ."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a D8 áramlásirány-módszer működését, beleértve a távolságkorrekciót az átlós celláknál!",
+    "correct": "A D8 minden szomszédhoz számítja S = (z_közép - z_i)/d_i értékét. Fő égtáji: d = δ, átlós: d = δ√2. A legmeredekebb pozitív lejtésű szomszédot választja. A távolságkorrekció nélkül az átlós lejtések felülbecsültek lennének.",
+    "explanation": "A távolságkorrekció kulcsfontosságú a helyes áramlásirány-hozzárendeléshez."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az ArcGIS Slope eszköz mögötti matematikát (Sobel-operátor)! Miért alkalmas jobban zajcsökkentésre, mint egy egyszerű véges differencia?",
+    "correct": "A Sobel 3 független dz/dx becslést súlyoz 1:2:1 arányban: (A-C)/2δ, (D-F)/2δ, (G-I)/2δ. A 8δ-s nevező az 1-2-1 súlyozásból ered. A simítás és differenciálás kombinációja robusztusabbá teszi a zajjal szemben.",
+    "explanation": "A Sobel-operátor a képfeldolgozásból ismert éldetektáló szűrő, amely a DEM-ek zajára is robusztus."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az ArcGIS és a D-végtelen módszer szögkonvencióit! Hogyan váltunk egyik rendszerről a másikra?",
+    "correct": "ArcGIS: északtól az ÓMJ-vel megegyezően (0°=É, 90°=K, 180°=D, 270°=Ny). D-végtelen: kelettől az ÓMJ-vel ellentétesen (0°=K, 90°=É, 180°=Ny, 270°=D). Átváltás: α_ArcGIS = 90 - α_Dvégt (+360 ha negatív).",
+    "explanation": "A szögkonvenciók ismerete elengedhetetlen a módszerek közötti összehasonlításhoz."
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a D-végtelen módszer háromszög facetta geometriáját és a peremfeltételek kezelését!",
+    "correct": "Minden facetta: z₀ (közép), z₁ (fő égtáji, δ távolságra), z₂ (átlós, δ√2 távolságra). dz/dx = (z₀-z₁)/δ, dz/dy = (z₁-z₂)/δ. α₁ = arctan(dz/dy / dz/dx). Ha α₁ < 0: csonkolás 0°-ra. Ha α₁ > 45°: csonkolás 45°-ra. Mindkét esetben D8-ekvivalens irányra degradálódik.",
+    "explanation": "A peremfeltételek biztosítják, hogy a D-végtelen mindig legalább olyan jó, mint a D8."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért fontos a koordináta-rendszer ellenőrzése a lejtésszámítás előtt! Milyen hibákat okozhat a helytelen koordináta-rendszer?",
+    "correct": "Földrajzi koordináták (fok) és méteres magasság keverése inkompatibilis egységeket eredményez. A síkbeli módszer értelmetlen lejtésértékeket produkál. Megoldás: vetítés metrikus rendszerre (EOV, UTM) vagy geodéziai módszer használata. Az ArcGIS Pro geodéziai módszere kezeli a görbületet.",
+    "explanation": "A vízszintes és függőleges egységek inkompatibilitása az egyik leggyakoribb hiba."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Model Builder használatát egy tipikus domborzatelemzési munkafolyamatban! Milyen lépéseket tartalmaz?",
+    "correct": "1. Nyers DEM bemenet. 2. Fill (mélyedésfeltöltés). 3. Slope + Aspect párhuzamosan a feltöltött DEM-ből. 4. Flow Direction (D8 és D-végtelen). 5. Flow Accumulation a D8-ból. Kimenetek: 5 rács. A Model Builder Python-szkriptté exportálható.",
+    "explanation": "A Model Builder automatizálja az ismétlődő munkafolyamatokat és biztosítja a konzisztenciát."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszanak a lejtés és kitettség a hóolvadás és az evapotranszspiráció folyamataiban? Adjon magyar példát!",
+    "correct": "Déli lejtők több napsugárzást kapnak → gyorsabb hóolvadás, magasabb ET. Északi lejtők hűvösebbek, lassabb olvadás. A Kárpátokban a déli/északi kitettség közötti hóolvadási időkülönbség befolyásolja a felső-tiszai tavaszi árvizek időzítését.",
+    "explanation": "A kitettség az energiamérleg kulcstényezője, különösen hegyvidéki vízgyűjtőkben."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választana DEM-et a Felső-Tisza vízgyűjtő elemzéséhez? Ismertesse a DDM-5 és Copernicus EEA-10 kombinálásának előnyeit!",
+    "correct": "DDM-5: legjobb felbontás (5 m), natív EOV, de Magyarország határán belül. Copernicus EEA-10: 10 m, határokon átnyúló (Ukrajna, Románia). Kombinálás: DDM-5 a magyar területre, EEA-10 a határokon túlra, összefűzés az országhatár mentén, koordináta-transzformációval (HD72↔ETRS89).",
+    "explanation": "A Tisza vízgyűjtője transznacionális, ezért többféle DEM-forrás szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan ellenőrizhető a GIS-szoftver lejtés- és áramlásirány-számítása kézi számításokkal? Írja le a lépéseket!",
+    "correct": "1. Kis teszt-DEM készítése (pl. 5×4). 2. Importálás ASCII to Raster eszközzel. 3. Slope, Aspect, Flow Direction futtatása. 4. Identify eszközzel az értékek leolvasása. 5. Összehasonlítás a kézi számításokkal. 6. Eltérések dokumentálása.",
+    "explanation": "A kézi ellenőrzés valódi megértést épít és felfedi a szoftverhibákat."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Sobel-operátor 1-2-1 súlyozásának matematikai hátterét! Miért pont dupla súlyt kap a középső cella?",
+    "correct": "Három dz/dx becslés a 3×3-as környezetben: felső (A-C)/2δ, közép (D-F)/2δ, alsó (G-I)/2δ. A középső sor áthalad a vizsgált cellán, nagyobb súlyt kap. 1:2:1 súlyozás → Sobel konvolúció = simítás [1,2,1] az egyik irányban + centrált differencia a másikban.",
+    "explanation": "A 1-2-1 súlyozás a simítás és deriváltbecslés optimális kombinációja."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a profil görbület és a felületi görbület között? Hogyan befolyásolják a hidrológiai folyamatokat?",
+    "correct": "Profil görbület: a lejtés változása az áramlás irányában. Pozitív = homorú (áramlás lassul, üledéklerakódás). Negatív = domború (áramlás gyorsul, erózió). Felületi görbület: a kitettség változása a szintvonal mentén. Pozitív = konvergens (völgy). Negatív = divergens (gerinc).",
+    "explanation": "A görbületek a víz koncentrálódásáról és szétterüléséről adnak információt."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen problémákat okoz a D8 módszer iránykvantálása a domboldali áramlás modellezésében?",
+    "correct": "A D8 45°-os szögközökkel kvantálja az irányt → max. 22,5° hiba. Ez mesterségesen konvergálja az áramlást a rácstengelyek mentén, párhuzamos áramlási utakat hoz létre. Az áramlás-felhalmozódás mesterségesen egyenes vonalakat mutat. A TWI-térképek csíkosak lesznek.",
+    "explanation": "Ezek a korlátok motiválták a D-végtelen módszer kifejlesztését."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a beszivárgásra és a felszíni lefolyásra? Magyarázza el a fizikai mechanizmusokat!",
+    "correct": "Meredek lejtés: víz gyorsan mozog lefelé → kevesebb idő a beszivárgásra → több felszíni lefolyás. Enyhe lejtés: víz megáll vagy lassan mozog → több idő a beszivárgásra. Manning-egyenlet: v ∝ S^(1/2). A meredekebb lejtés gyorsabb eljutási időt, nagyobb csúcshozamot jelent.",
+    "explanation": "A lejtés közvetetten és közvetlen is befolyásolja a vízmérleg-összetevőket."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az ArcGIS Pro-ban elérhető lejtés- és kitettségszámítási paramétereket! Milyen beállítási lehetőségek vannak?",
+    "correct": "Slope: bemeneti rács, kimeneti rács, kimeneti egység (fok/százalék), módszer (síkbeli/geodéziai). Aspect: bemeneti rács, kimeneti rács, módszer. Fontos: vetített koordináták szükségesek a síkbeli módszerhez. Geodéziai módszer földrajzi koordinátákhoz.",
+    "explanation": "A helyes paraméterbeállítás kritikus a pontos eredményekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontosabb a DDM-5 a Nagy Magyar Alföldi hidrológiai elemzéseknél, mint a durvább felbontású DEM-ek?",
+    "correct": "Az Alföld rendkívül sík (tipikus lejtés < 1%). 10 cm-es magasságkülönbség 500 m-en meghatározhatja a vízfolyás irányát. Az SRTM 30 m-es felbontása és 6-10 m pontossága nem képes feloldani ezeket a finom különbségeket. A DDM-5 5 m-es felbontása és < 1 m-es pontossága nélkülözhetetlen.",
+    "explanation": "Sík terepen a DEM felbontása és pontossága kritikusan fontos."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a derivált módszer és a D-végtelen módszer lejtésértékeit a tesztrácson! Miért különböznek?",
+    "correct": "Derivált: 40,1%, D-végtelen: 51,7%. A derivált módszer mind a 8 szomszédot beépíti (beleértve a magasabbakat), ami lehúzza az átlagot. A D-végtelen csak a legmeredekebb lefelé irányuló facettára összpontosít. A derivált az átlagos meredekséget méri, a D-végtelen a legmeredekebb lefelé irányulót.",
+    "explanation": "A különbség abból ered, hogy a módszerek eltérő kérdésekre válaszolnak."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D8 áramlásirány kettőhatvány-kódolásának logikáját! Milyen előnyei vannak?",
+    "correct": "Kódok: K=1, DK=2, D=4, DNy=8, Ny=16, ÉNy=32, É=64, ÉK=128. Minden irány egyetlen bit egy 8 bites számban. A bináris kódolás hatékony bitműveleteket tesz lehetővé az iránykomponensek ellenőrzéséhez. A D8 egyszerre csak egy bitet állít be.",
+    "explanation": "A kettőhatvány-kódolás a hatékony tárolás és feldolgozás érdekében lett tervezve."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kitettség a Magyar Alföld mezőgazdasági vízgazdálkodásában?",
+    "correct": "A kitettség meghatározza a napsugárzás-bevételt, ami befolyásolja az evapotranszspirációt és a talajszáradást. Déli kitettségű szántóföldek gyorsabban száradnak → korábban igényelnek öntözést. Északi kitettség → lassabb kiszáradás. Mikroklíma: fagyzugok és hőcsapdák kialakulása. A nyári vízhiány visszatérő kihívás az Alföldön.",
+    "explanation": "A kitettség a mezőgazdasági öntözéstervezés fontos tényezője."
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a lejtés három ábrázolási formáját (derivált, vektor, nagyság-irány) és mutassa meg, hogyan kapcsolódnak egymáshoz!",
+    "correct": "1. Felszíni derivált: ∇z = (∂z/∂x, ∂z/∂y). 2. Komponens vektor: (Sx, Sy). 3. Poláris: S = √(Sx²+Sy²), α = f(Sx,Sy). Ekvivalensek: bármelyikből a többi levezethető. A derivált módszer a komponenseket számítja, majd nagyságot és irányt vezet le.",
+    "explanation": "A három ábrázolás matematikailag ekvivalens."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezeli a D-végtelen módszer a konvex domboldali áramlást, és miért jobb ebben, mint a D8?",
+    "correct": "A D-végtelen az áramlást arányosan osztja meg két szomszéd között a szög alapján. Konvex gerincen a szög mindkét oldalra irányítja a vizet. A D8 az egész áramlást egyetlen szomszédhoz kényszeríti, nem képes megoszt. A D-végtelen simább, valósághűbb hozzájáruló terület-mintázatokat produkál.",
+    "explanation": "A divergens áramlás ábrázolása a D-végtelen egyik fő előnye."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az ArcGIS-ben elérhető áramlásirány-típusokat (D8, D-végtelen, MFD) és alkalmazási területeiket!",
+    "correct": "D8: egyetlen legmeredekebb szomszéd, diszkrét irány, vízgyűjtő-lehatároláshoz. D-végtelen: folytonos szög, arányos elosztás, TWI és hozzájáruló terület számításához. MFD: többirányú elosztás, diffúz áramlás modellezéséhez. Az alapértelmezett a D8.",
+    "explanation": "A három típus különböző hidrológiai kérdésekre válaszol."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati lépéseket kell tenni, mielőtt lejtést számítanánk egy földrajzi koordinátás DEM-ből? Miért?",
+    "correct": "1. Vetítés metrikus koordináta-rendszerre (EOV, UTM). 2. Bilineáris vagy köbös konvolúciós újramintavételezés. 3. Ellenőrzés: koordináta-rendszer + egységek. Indok: földrajzi koordinátákban a vízszintes és függőleges egységek inkompatibilisek, értelmetlen lejtésértékeket okoznak.",
+    "explanation": "A koordináta-rendszer konzisztenciája alapvető követelmény."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a topográfiai nedvességi index (TWI) kapcsolata a TOPMODEL hidrológiai modellcsaláddal?",
+    "correct": "A TOPMODEL feltételezi, hogy a helyi talajnedvesség-állapot a TWI-vel előrejelezhető. Magas TWI → telített zóna → telítődéses lefolyás. A TWI a TOPMODEL alapvető térbeli indexe: a modell a vízgyűjtőt TWI-osztályokra bontja, és minden osztályra azonos hidrológiai választ feltételez.",
+    "explanation": "A TWI a TOPMODEL hidrológiai modellcsalád alapja Beven és Kirkby (1979) óta."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a DEM felbontása a lejtés- és kitettségszámítások pontosságát? Adjon konkrét példákat!",
+    "correct": "Finomabb felbontás: több részlet, de több zaj is. 5 m DDM-5: feloldja a szántóföldek finom lejtéseit az Alföldön. 30 m SRTM: nem képes feloldani a < 0,02%-os lejtéseket sík terepen. Durvább DEM: simított lejtés, elveszett mikro-topográfia. A felbontásnak illeszkednie kell az elemzési léptékhez.",
+    "explanation": "A DEM felbontása és a vizsgálat léptéke közötti összhang kritikus."
+  },
+  {
+    "type": "essay",
+    "question": "Írjon le egy ellenőrzési eljárást, amellyel meggyőződhet arról, hogy az ArcGIS Flow Direction eszköz helyesen számítja a D8 irányt egy tesztrácson!",
+    "correct": "1. Tervezzen 5×4-es rácsot ismert áramlásirányokkal. 2. Mentse ASCII Grid formátumban. 3. Importálja ASCII to Raster-rel. 4. Futtassa Flow Direction (D8). 5. Identify eszközzel olvassa le a kódokat. 6. Hasonlítsa össze a kézi számításokkal: S = (z_közép-z_i)/d_i minden szomszédra. 7. Dokumentálja az eltéréseket.",
+    "explanation": "A szoftver eredményeinek kézi ellenőrzése a megbízható elemzés alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és korlátai vannak a Copernicus DEM-nek az SRTM-mel szemben?",
+    "correct": "Előnyök: jobb pontosság (<4 m vs 6-10 m), frissebb (2011-2015 vs 2000), jobb hegyvidéki lefedettség. Mindkettő felszínmodell (nem csupasz felszín). Az SRTM előnye: hosszabb múlt, több tanulmány épül rá, HydroSHEDS és MERIT alapja. 2026-ban új projektekhez a Copernicus GLO-30 ajánlott.",
+    "explanation": "A Copernicus DEM a legtöbb alkalmazásban felváltja az SRTM-et."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan számítjuk ki a kitettséget a derivált módszerrel? Ismertesse a negyedfeloldás problémáját!",
+    "correct": "α = arctan(dz/dx / dz/dy). A standard arctan csak (-90°,+90°) tartomány → nem fedi le mind a 4 negyedet. Az atan2 függvény a teljes (-180°,+180°) tartományt kezeli. Az eredményt északtól-ÓMJ-vel megegyező (0°-360°) konvencióra váltjuk. A negyed a parciális deriváltak előjelétől függ.",
+    "explanation": "A kétargumentumú atan2 függvény nélkülözhetetlen a helyes kitettség-számításhoz."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választana lejtésszámítási módszert egy RUSLE eróziómodellezési projekthez?",
+    "correct": "A RUSLE lejtéstényezőjéhez a derivált módszer (ArcGIS Slope) ajánlott, mert: (1) robusztus a zajjal szemben a Sobel-simítás miatt, (2) mind a 8 szomszédot figyelembe veszi az átlagos meredekséghez, (3) a lejtés nemlineáris hatása miatt a pontos lejtésérték kritikus. A D8 lejtése nem ugyanazt az információt hordozza.",
+    "explanation": "Az eróziómodellezéshez a derivált módszer robusztussága és átlagolási hatása előnyös."
+  },
+  {
+    "type": "mcq",
+    "question": "A derivált módszer tesztrácson kapott kitettség értéke:",
+    "options": [
+      "A) 90,0°",
+      "B) 120,5°",
+      "C) 145,2°",
+      "D) 180,0°"
+    ],
+    "correct": "C",
+    "explanation": "A derivált módszer 145,2° kitettséget ad (dél-délkelet)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SRTM DEM milyen típusú mérésből származik?",
+    "options": [
+      "A) LiDAR",
+      "B) Radarinterferometria",
+      "C) Optikai sztereo",
+      "D) GPS"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM radarinterferometriával gyűjtött adatokból készült."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 kódolásban a délnyugat irány kódja:",
+    "options": [
+      "A) 2",
+      "B) 4",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "Délnyugat = 8."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 kódolásban az északnyugat irány kódja:",
+    "options": [
+      "A) 8",
+      "B) 16",
+      "C) 32",
+      "D) 64"
+    ],
+    "correct": "C",
+    "explanation": "Északnyugat = 32."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen 7. facettájának fő égtáji szomszédja:",
+    "options": [
+      "A) Észak",
+      "B) Dél",
+      "C) Kelet",
+      "D) Nyugat"
+    ],
+    "correct": "C",
+    "explanation": "A 7. facetta: kelet fő égtáji, délkelet átlós szomszéd."
+  },
+  {
+    "type": "true_false",
+    "question": "A százalékos lejtés soha nem haladhatja meg a 100%-ot.",
+    "correct": "false",
+    "explanation": "Bármilyen értéket felvehet; 100% = 45°."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszer alkalmasabb TWI-számításhoz, mint a D8.",
+    "correct": "true",
+    "explanation": "Simább mintázatokat ad, elkerülve a D8 csíkozását."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen kimenet az ArcGIS-ben fokokban van.",
+    "correct": "false",
+    "explanation": "Radiánban van (0–2π)."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sobel-operátor a képfeldolgozásból ismert.",
+    "correct": "true",
+    "explanation": "Eredetileg éldetektáló szűrő a képfeldolgozásban."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM az SRTM-ből és AW3D30-ból származik.",
+    "correct": "true",
+    "explanation": "Hibaeltávolítással mindkét szülőtermékből."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés és kitettség második deriváltak.",
+    "correct": "false",
+    "explanation": "Első deriváltak; a görbületek a második deriváltak."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 áramlásirány-rács a hidrológia legfontosabb köztes terméke.",
+    "correct": "true",
+    "explanation": "A D8 rácsból az összes vízgyűjtő-tulajdonság származtatható."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer lejtése általában magasabb a D8-nál.",
+    "correct": "false",
+    "explanation": "Általában alacsonyabb, mert a magasabb szomszédokat is figyelembe veszi."
+  },
+  {
+    "type": "true_false",
+    "question": "A GLO-30 ingyenesen elérhető minden felhasználó számára.",
+    "correct": "true",
+    "explanation": "Szabadon hozzáférhető regisztrált felhasználók számára."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 kelet iránya a legnagyobb helyiértékű bit.",
+    "correct": "false",
+    "explanation": "Kelet=1 a legkisebb; ÉK=128 a legnagyobb."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Slope a Hydrology eszközkészletben van.",
+    "correct": "false",
+    "explanation": "A Surface eszközkészletben van."
+  },
+  {
+    "type": "true_false",
+    "question": "Meredek terepen a beszivárgás magasabb.",
+    "correct": "false",
+    "explanation": "Kevesebb idő jut beszivárgásra meredek felszínen."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen 1997-ben jelent meg a WRR-ben.",
+    "correct": "true",
+    "explanation": "Tarboton (1997) Water Resources Research."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EEA-10 globális lefedettségű.",
+    "correct": "false",
+    "explanation": "39 európai országot fed le."
+  },
+  {
+    "type": "true_false",
+    "question": "A geodéziai módszer kezeli a földrajzi koordinátás DEM-ek lejtésszámítását.",
+    "correct": "true",
+    "explanation": "Figyelembe veszi a görbületet és cellaméret-változásokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen nem lehet rosszabb a D8-nál.",
+    "correct": "true",
+    "explanation": "Degradálódik D8-ra, ha az irány rácsirány mentén van."
+  },
+  {
+    "type": "true_false",
+    "question": "A 0,45-ös lejtés 45 foknak felel meg.",
+    "correct": "false",
+    "explanation": "45%-nak felel meg; fokokban ≈24,2°."
+  },
+  {
+    "type": "true_false",
+    "question": "A negatív profil görbület domború profilt jelez.",
+    "correct": "true",
+    "explanation": "Domború=gyorsulás, pozitív=homorú=lassulás."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 alkalmas áramlás-felhalmozódásra.",
+    "correct": "true",
+    "explanation": "Egyértelmű fastruktúrát biztosít."
+  },
+  {
+    "type": "true_false",
+    "question": "A RUSLE lejtéstényezője lineáris.",
+    "correct": "false",
+    "explanation": "Nemlineáris, megközelítőleg a lejtés négyzetével nő."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen kimenet az ArcGIS-ben lebegőpontos.",
+    "correct": "true",
+    "explanation": "Lebegőpontos rács, nem egész számú."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 első előállítása 1990-ben volt.",
+    "correct": "false",
+    "explanation": "2000-ben készült eredetileg."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS 180° kitettség = dél.",
+    "correct": "true",
+    "explanation": "Az ArcGIS konvencióban 180° = Dél."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen 0. facettája kelet felé néz.",
+    "correct": "true",
+    "explanation": "A számozás a kelet felé néző facettától indul."
+  },
+  {
+    "type": "true_false",
+    "question": "Pozitív dz/dx: a terep kelet felé emelkedik.",
+    "correct": "true",
+    "explanation": "Növekvő x irányban (kelet) magasabb."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM a Landsat-ból származik.",
+    "correct": "false",
+    "explanation": "A TanDEM-X radarműholdból."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen számítási költsége alacsonyabb a D8-nál.",
+    "correct": "false",
+    "explanation": "A D-végtelen közepes, a D8 nagyon alacsony."
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben is van D-végtelen módszer.",
+    "correct": "true",
+    "explanation": "SAGA háttérprogramon keresztül elérhető."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés fokokban lineáris a százalékos lejtéssel.",
+    "correct": "false",
+    "explanation": "Nemlineáris: θ = arctan(S/100)×180/π."
+  },
+  {
+    "type": "true_false",
+    "question": "Az alacsony TWI meredek gerinceken fordul elő.",
+    "correct": "true",
+    "explanation": "Kis terület + meredek lejtés = alacsony TWI."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8-at Tarboton fejlesztette ki.",
+    "correct": "false",
+    "explanation": "O'Callaghan és Mark (1984); Tarboton a D-végtelen."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 WMS/WMTS-t is biztosít.",
+    "correct": "true",
+    "explanation": "A Lechner WMS/WMTS-t kínál megjelenítéshez."
+  },
+  {
+    "type": "true_false",
+    "question": "Az atan2 a teljes 360°-os tartományt kezeli.",
+    "correct": "true",
+    "explanation": "Az atan2 (-180°,+180°) tartományban ad szöget."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASTER GDEM pontossága vetekszik a Copernicus DEM-mel.",
+    "correct": "false",
+    "explanation": "A Copernicus és AW3D30 felváltotta az ASTER GDEM-et pontosságban."
+  },
+  {
+    "type": "true_false",
+    "question": "A Green-Ampt modellben a lejtés nincs hatással.",
+    "correct": "false",
+    "explanation": "A lejtés befolyásolja a felszíni tározáson keresztül."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 az ArcGIS Flow Direction alapértelmezett módszere.",
+    "correct": "true",
+    "explanation": "A D-végtelen és MFD opcionálisan választhatók."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EOV minimális torzítással biztosít konform leképezést Magyarországon.",
+    "correct": "true",
+    "explanation": "Ferde Mercator-vetület, méretarány-tényező 0,99993 a központban."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 kellene bemenete az áramlás-felhalmozódásnak.",
+    "correct": "true",
+    "explanation": "A D8 fastruktúra szükséges a kumulációhoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtés az egyetlen árvízi előrejelzési tényező.",
+    "correct": "false",
+    "explanation": "A terület, koncentrációs idő és más tényezők is fontosak."
+  },
+  {
+    "type": "true_false",
+    "question": "A dz/dx pozitív érték keleti emelkedést jelent.",
+    "correct": "true",
+    "explanation": "Kelet felé növekvő magasság = pozitív dz/dx."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Curvature eszköz a Hydrology eszköztárban van.",
+    "correct": "false",
+    "explanation": "A Surface eszközkészletben található."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 45°-onként kvantálja az irányt.",
+    "correct": "true",
+    "explanation": "8 irány × 45° = 360° teljes lefedettség."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM 2000-ben gyűjtötte az adatokat.",
+    "correct": "false",
+    "explanation": "A TanDEM-X 2011-2015 között; az SRTM volt 2000-ben."
+  },
+  {
+    "type": "true_false",
+    "question": "A magassági felszín gradiense a lejtés irányába mutat.",
+    "correct": "false",
+    "explanation": "A gradiens az emelkedés irányába mutat; a lejtés az ellentéte."
+  },
+  {
+    "type": "true_false",
+    "question": "A derivált módszer a D8-nál robusztusabb a zajjal szemben.",
+    "correct": "true",
+    "explanation": "A Sobel-simítás robusztusabbá teszi."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 pontossága sík terepen 5 m-nél jobb.",
+    "correct": "true",
+    "explanation": "1 m-nél jobb sík terepen, ami 5 m-nél is jobb."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszer cellánként több szomszédhoz is irányíthat.",
+    "correct": "true",
+    "explanation": "Arányos elosztás két szomszéd között lehetséges."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 módszer képes divergens áramlás ábrázolására.",
+    "correct": "false",
+    "explanation": "Cellánként egyetlen szomszédot választ."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro-ban az MFD is elérhető áramlásirány-típusként.",
+    "correct": "true",
+    "explanation": "D8, D-végtelen és MFD (Multiple Flow Direction) választható."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A derivált módszer tesztrácson kapott kitettség: _______ fok.",
+    "correct": "145,2",
+    "explanation": "Dél-délkeleti kitettség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban a délkelet kódja: _______.",
+    "correct": "2",
+    "explanation": "DK=2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen publikáció éve: _______.",
+    "correct": "1997",
+    "explanation": "Tarboton (1997)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A derivált lejtés a tesztrácson: _______%.",
+    "correct": "40,1",
+    "explanation": "S=0,401=40,1%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 lejtés a tesztrácson dél felé: _______%.",
+    "correct": "50,0",
+    "explanation": "S=(67-52)/30=0,500."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen lejtés a tesztrácson: _______%.",
+    "correct": "51,7",
+    "explanation": "S=0,517=51,7%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 délnyugat kódja: _______.",
+    "correct": "8",
+    "explanation": "DNy=8."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 északnyugat kódja: _______.",
+    "correct": "32",
+    "explanation": "ÉNy=32."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. facetta globális szöge: _______°.",
+    "correct": "284,9",
+    "explanation": "270+14,9=284,9."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az erózió a lejtés _______ arányosan nő a RUSLE-ben.",
+    "correct": "négyzetével",
+    "explanation": "Nemlineáris hatás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen szögét fokra: szorzás _______/π.",
+    "correct": "180",
+    "explanation": "Radián→fok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Slope és Aspect az ArcGIS _______ eszközkészletben van.",
+    "correct": "Surface",
+    "explanation": "Spatial Analyst > Surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fő égtáji szomszéd távolsága a D8-ban: _______.",
+    "correct": "δ",
+    "explanation": "A cellaméret."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _______ módszer sima felületet illeszt a 3×3-as környezetre.",
+    "correct": "derivált",
+    "explanation": "ArcGIS Slope."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 eredetileg _______ évben készült.",
+    "correct": "2000",
+    "explanation": "Első előállítás 2000-ben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A profil görbület az _______ irányában méri a lejtés változását.",
+    "correct": "áramlás",
+    "explanation": "Az áramlási útvonal mentén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen a _______ szoftverben is elérhető.",
+    "correct": "TauDEM",
+    "explanation": "Tarboton csoportja fejlesztette."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GLO-30 felbontása _______ m.",
+    "correct": "30",
+    "explanation": "Globális 30 m-es termék."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TWI = ln(a / tan _______).",
+    "correct": "β",
+    "explanation": "β a helyi lejtésszög."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 módszert O'Callaghan és Mark publikálta _______ évben.",
+    "correct": "1984",
+    "explanation": "Az alapvető D8-algoritmus éve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen 7. facettája: _______ fő égtáji, délkelet átlós.",
+    "correct": "kelet",
+    "explanation": "A 7. facetta fő égtáji szomszédja kelet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés nagysága S = √(Sx² + Sy²), dimenziótlan ha z, x, y azonos _______.",
+    "correct": "egységben",
+    "explanation": "Pl. mind méterben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A derivált módszer dz/dy a tesztrácson: _______ (3 tizedesre).",
+    "correct": "-0,329",
+    "explanation": "(212-291)/240=-0,329."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A derivált módszer dz/dx a tesztrácson: _______ (3 tizedesre).",
+    "correct": "0,229",
+    "explanation": "(278-223)/240=0,229."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 áramlásirány-kódolás _______ hatványokat használ.",
+    "correct": "kettő",
+    "explanation": "1,2,4,8,16,32,64,128."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM GLO-30 LE90 pontossága: < _______ m.",
+    "correct": "4",
+    "explanation": "Globálisan < 4 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen facetták _______ fokos szögtartományt ölelnek fel.",
+    "correct": "45",
+    "explanation": "360°/8=45° facettánként."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kitettség az északtól az _______ járásával megegyezően mérődik az ArcGIS-ben.",
+    "correct": "óramutató",
+    "explanation": "0°=É, 90°=K, 180°=D, 270°=Ny."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen facettán belüli szög neve: _______.",
+    "correct": "α₁",
+    "explanation": "A facetta x-tengelyétől mért szög."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés fokokban: θ = _______(S) × 180/π.",
+    "correct": "arctan",
+    "explanation": "Az arkusztangens adja a szöget."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Beven és Kirkby (1979) által bevezetett modell neve: _______.",
+    "correct": "TOPMODEL",
+    "explanation": "A TWI a TOPMODEL keretrendszer alapja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 áramlásirány-kódolás kelettől indul és az ÓMJ-vel _______ irányban halad.",
+    "correct": "ellentétesen",
+    "explanation": "Matematikai konvenció: kelettől az ÓMJ-vel ellentétesen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés százalékos emelkedésben: S% = S × _______.",
+    "correct": "100",
+    "explanation": "A tizedes lejtés szorozva 100-zal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen peremfeltételek: ha α₁ < 0, csonkolás _______ fokra.",
+    "correct": "0",
+    "explanation": "A fő égtáji él mentén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen peremfeltételek: ha α₁ > 45, csonkolás _______ fokra.",
+    "correct": "45",
+    "explanation": "Az átlós él mentén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A pozitív felületi görbület _______ topográfiát jelez.",
+    "correct": "konvergens",
+    "explanation": "Összetartó áramlási vonalak (völgy)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A negatív felületi görbület _______ topográfiát jelez.",
+    "correct": "divergens",
+    "explanation": "Szétterülő áramlási vonalak (gerinc)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS-ben a kitettség nélküli cellák értéke: _______.",
+    "correct": "-1",
+    "explanation": "Sík terület speciális kódja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 áramlásirány-kódolás összesen _______ lehetséges értéket ad.",
+    "correct": "8",
+    "explanation": "8 diszkrét irány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 koordináta-rendszere az EPSG:_______.",
+    "correct": "23700",
+    "explanation": "Az EOV kódja EPSG:23700."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A ETRS89-LAEA kódja: EPSG:_______.",
+    "correct": "3035",
+    "explanation": "Az európai területtartó vetület."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban a kelet irány kódja _______, a legkisebb.",
+    "correct": "1",
+    "explanation": "A legkisebb helyiértékű bit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 kódolásban az északkelet kódja _______, a legnagyobb.",
+    "correct": "128",
+    "explanation": "A legnagyobb helyiértékű bit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés a magassági felszín _______ deriváltja.",
+    "correct": "első",
+    "explanation": "A görbület a második derivált."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszerben a θ_globális = n × 45° + _______.",
+    "correct": "α₁",
+    "explanation": "A facettaszám × 45° + a facettán belüli szög."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM lefedettségének százalékos aránya: kb. _______ %.",
+    "correct": "80",
+    "explanation": "A Föld szárazföldi felszínének megközelítőleg 80%-a."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM fejlesztője: _______ Dai.",
+    "correct": "Yamazaki",
+    "explanation": "A Tokiói Egyetemen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8-módszer neve a _______ lehetséges áramlásirányra utal.",
+    "correct": "nyolc",
+    "explanation": "D8 = 8 diszkrét irány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM a _______ radarműhold-misszióból származik.",
+    "correct": "TanDEM-X",
+    "explanation": "Német vezetésű misszió."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés két gyakori egysége: százalékos emelkedés és _______.",
+    "correct": "fok",
+    "explanation": "Fokokban a vízszintestől mért szög."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Aspect eszköz a _______ eszközkészletben található.",
+    "correct": "Surface",
+    "explanation": "Spatial Analyst > Surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 felbontása _______ méter.",
+    "correct": "5",
+    "explanation": "5 m × 5 m rács."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS-ben a 270°-os kitettség _______ iránynak felel meg.",
+    "correct": "nyugat",
+    "explanation": "270° = Ny az ArcGIS konvencióban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen módszer a magassági felszínre _______ facettákat illeszt.",
+    "correct": "háromszög",
+    "explanation": "Nyolc háromszög facetta a 3×3-as környezetben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lejtés a _______ egyenlet alapvető bemenete.",
+    "correct": "Manning",
+    "explanation": "v ∝ S^(1/2) a Manning-egyenletben."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezőket kell figyelembe venni a lejtésszámítások validálásakor?",
+    "correct": "Koordináta-rendszer, teszt-DEM, kézi számítások összehasonlítása, egységek, szélső cellák, dokumentálás.",
+    "explanation": "A szisztematikus validálás elengedhetetlen."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a lejtés szerepét az árvízi előrejelzésben!",
+    "correct": "Koncentrációs idő (SCS), áramlás sebessége (Manning v∝S^1/2), csúcshozam (Racionális módszer). Meredekebb→gyorsabb→nagyobb csúcs.",
+    "explanation": "A lejtés az árvízi előrejelzés egyik első vizsgálandó mennyisége."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a lejtés a talajnedvesség eloszlását?",
+    "correct": "Enyhe lejtés→víz gyűlik→telített zóna. Meredek→gyorsan levonul→száraz. TWI=ln(a/tanβ). TOPMODEL erre épül.",
+    "explanation": "A lejtés és hozzájáruló terület együtt határozza meg a nedvességet."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen arányos áramláselosztásának elvét!",
+    "correct": "A szög arányában oszlik két szomszéd között: ha 10° déltől és 35° DK-től, 78% D-re, 22% DK-re. Simább hozzájáruló terület.",
+    "explanation": "Az arányos elosztás kiküszöböli a D8 csíkozását."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és hátrányai vannak a D8-nak a vízgyűjtő-lehatárolásban?",
+    "correct": "Előnyök: egyértelmű fastruktúra, egyszerű, standard. Hátrányok: max 22,5° hiba, csíkozás, nincs divergens áramlás. Vízgyűjtőkhöz az előnyök dominálnak.",
+    "explanation": "A D8 a standard a fastruktúra-tulajdonság miatt."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a görbület geomorfológiai osztályozásban?",
+    "correct": "Felületi görbület: +konvergens (völgy), -divergens (gerinc). Profil: +homorú (lassul), -domború (gyorsul). Csúszásveszélyesség, mezőgazdaság.",
+    "explanation": "Gazdag domborzati osztályozást tesznek lehetővé."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a lejtés a RUSLE eróziómodellben?",
+    "correct": "LS tényező: erózió ∝ lejtés². 2×lejtés≈4×erózió. Pontos lejtés kritikus; kis hiba nagy eróziós hibát okoz.",
+    "explanation": "Nemlineáris érzékenység teszi a lejtést kulcsfontosságúvá."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen DEM-források érhetők el adatszegény régiók számára?",
+    "correct": "Copernicus GLO-30, SRTM, AW3D30 (optikai), MERIT DEM (90m, hibaeltávolított). A GLO-30 az elsődleges.",
+    "explanation": "A globális DEM-ek lehetővé teszik az elemzést adatszegény régiókban."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan különbözik a derivált és a D8 módszer megközelítése?",
+    "correct": "Derivált: 8 szomszéd, Sobel-simítás, átlagos meredekség. D8: csak lefelé irányulók, legmeredekebb esés. Eltérő kérdésekre válaszolnak.",
+    "explanation": "A két módszer matematikailag és alkalmazásában is különbözik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a lejtés szerepét a kinematikus hullámban!",
+    "correct": "v∝S^(1/2) (Manning), terjedési sebesség, koncentrációs idő, hidrográf-alak. Meredekebb→gyorsabb hullám, élesebb csúcs.",
+    "explanation": "A lejtés a kinematikus hullám kulcsparamétere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a D8 iránykvantálás az áramlás-felhalmozódásra?",
+    "correct": "Mesterséges konvergencia a 8 rácsirány mentén→egyenes áramlási vonalak→csíkos felhalmozódási rács. Természetes topográfia helyett rácstengelyek.",
+    "explanation": "A rácsműtermékek a domboldalon a legfeltűnőbbek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a kombinált módszerhasználatnak?",
+    "correct": "Derivált: jellemzés, megjelenítés, erózió. D8: vízgyűjtő, vízhálózat. D-végtelen: TWI, domboldal. Kiegészítik, nem versenyeznek.",
+    "explanation": "A három módszer optimálisan kombinálható."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a síkbeli és geodéziai lejtésmódszerek különbségét!",
+    "correct": "Síkbeli: sík koordináta feltételezés, vetített DEM-hez. Geodéziai: Föld görbülete, változó cellaméret, földrajzi koordinátákhoz. Utóbbi igényesebb.",
+    "explanation": "A DEM koordináta-rendszere határozza meg a módszerválasztást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a DEM-választás a modellkalibrációra?",
+    "correct": "DEM/módszer váltás→lejtés változik→kalibrált modell romolhat→újrakalibrálás. Dokumentálandó: melyik DEM, melyik módszer. Metaadatok elengedhetetlenek.",
+    "explanation": "A konzisztencia kritikus a modellezésben."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a lejtés a napsugárzás-modellezésben?",
+    "correct": "A kitettség a sugárzásbevételt, a lejtés a beesési szöget határozza meg. Együtt: ET-ráta, hőfelhalmozódás, hóolvadás.",
+    "explanation": "Az energiamérleg alapvető domborzati tényezői."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a nemzetközi DEM-infrastruktúra háromszintű keretrendszerét!",
+    "correct": "Nemzeti: DDM-5, NED. Kontinentális: Copernicus EEA-10. Globális: GLO-30, SRTM, AW3D30, MERIT. Adatszegény régiók a globálisra támaszkodnak.",
+    "explanation": "A háromszintű rendszer segíti a legjobb adatok azonosítását."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan számítjuk ki a D8 lejtést a tesztrácson?",
+    "correct": "Közép=67, δ=30m. Minden szomszédra S=(67-zi)/di. H(D):15/30=0,500 a legmeredekebb. D8 kód=4 (dél).",
+    "explanation": "A D8 a legmeredekebb lefelé irányuló szomszédot választja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen ajánlásokat adna DEM-kiválasztáshoz?",
+    "correct": "1. Nemzeti DEM. 2. Kontinentális lefedettség. 3. Globális tartalék. 4. LiDAR részletes munkához. 5. Koordináta-rendszer ellenőrzése.",
+    "explanation": "Szisztematikus megközelítés szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a lejtés egységeit és átváltási képleteit!",
+    "correct": "Tizedes: S=rise/run. Százalék: S%=S×100. Fok: θ=arctan(S)×180/π. 100%=45°. Nemlineáris kapcsolat.",
+    "explanation": "Az egységek közötti átváltás ismerete elengedhetetlen."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a D-végtelen a vizes élőhelyek azonosítását?",
+    "correct": "Simább hozzájáruló terület→jobb TWI→pontosabb vizes élőhely térkép. A D8 csíkos TWI félrevezető lenne ökológiai elemzésnél.",
+    "explanation": "A D-végtelen ökológiai alkalmazásokban is értékes."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség DSM és DTM között? Melyik DEM-források melyik típust adják?",
+    "correct": "DSM: épületek, vegetáció magassága. DTM: csupasz felszín. SRTM, Copernicus: DSM. LiDAR (osztályozott): DTM. Hidrológia jellemzően DTM-et igényel.",
+    "explanation": "A radar-DEM-ek DSM-ek; DTM LiDAR-ból származtatható."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan dokumentálná a lejtésszámítások módszertanát?",
+    "correct": "DEM forrás/felbontás/év, koordináta-rendszer, lejtésmódszer, egységek, szoftver+verzió, validálás. Metaadatok a reprodukálhatósághoz.",
+    "explanation": "A tudományos munka elengedhetetlen része."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatással van a kitettség a kárpáti árvizekre?",
+    "correct": "Déli lejtők hetekkel korábban olvadnak→elhúzódó, többcsúcsú olvadás. Felső-tiszai árvizek időzítését közvetlenül befolyásolja az É/D kitettségi különbség.",
+    "explanation": "A kitettség-vezérelt hóolvadás a tavaszi árvizek kulcstényezője."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Flow Direction eszköz paramétereit!",
+    "correct": "Bemeneti DEM (feltöltött), kimeneti rács, típus (D8/Dinf/MFD), esésrács (opcionális, D8). D8: egész szám. Dinf: lebegőpontos radián. √2≈1,5 hiba az esésrácsban.",
+    "explanation": "A paraméterek és kimeneti formátumok ismerete elengedhetetlen."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a racionális módszer koncentrációs idejére?",
+    "correct": "Meredekebb lejtés→rövidebb tc→magasabb intenzitás (IDF)→nagyobb csúcshozam. A lejtés közvetetten, de erősen hat a tervezési vízhozamra.",
+    "explanation": "A koncentrációs időn keresztül befolyásolja a csúcshozamot."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen matematikai kapcsolat van S, S% és θ között?",
+    "correct": "S(tizedes)=rise/run. S%=S×100. θ=arctan(S)×180/π. Visszafelé: S=tan(θ×π/180). 0,45→45%→24,2°. 1,0→100%→45°. Nemlineáris!",
+    "explanation": "A nemlineáris kapcsolat miatt nem cserélhetők fel lineárisan."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kitettség a precíziós mezőgazdaságban?",
+    "correct": "Sugárzás→hőmérséklet→párolgás→öntözési igény. Déli lejtők szárazabbak. Fagyzugok, hőcsapdák. A kitettségtérkép segíti a célzott kezelést.",
+    "explanation": "A precíziós mezőgazdaság alapvető térbeli változója."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná az Auto Layout-ot a Model Builderben?",
+    "correct": "Eszközök elhelyezése, összekötése, majd Auto Layout→tiszta elrendezés. Run→teljes sorozat. Mentés eszköztárba, exportálás Pythonba.",
+    "explanation": "Az Auto Layout az áttekinthetőséget segíti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a lejtésszámításnak a domborzatárnyékolási vizualizációkban?",
+    "correct": "A lejtés és kitettség kombinációja domborzatárnyékolási térképet eredményez. A Slope eszköz bemenete. Vizuálisan intuitív, műtermékeket felfed, elemzés előtti ellenőrzésre alkalmas.",
+    "explanation": "A vizualizáció a DEM-elemzés első lépése."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a D8 iránykvantálás a TWI-térképek minőségére?",
+    "correct": "A D8 csíkos hozzájáruló területet ad→csíkos TWI, ami mesterséges. A D-végtelen simább→jobb TWI. TWI-hez D-végtelen erősen ajánlott.",
+    "explanation": "A módszerválasztás közvetlenül befolyásolja a TWI minőségét."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hibákat okozhat a DEM szélén az egyszerű centrált differencia a derivált módszer helyett?",
+    "correct": "Egyszerű centrált differencia (D-F)/2δ: csak 2 cellát használ, érzékeny a zajra. A Sobel mind a 8-at: robusztusabb. A szélső cellák 3×3 hiánya miatt no-data.",
+    "explanation": "A Sobel-operátor előnyei a zajcsökkentésből erednek."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a lejtés szerepét a rézsűstabilitási elemzésben!",
+    "correct": "A lejtés kritikus: meredek felszínek csúszásveszélyesebbek. A derivált módszer a legmegfelelőbb (robusztus, környezeti átlag). A görbület kiegészíti: domború profil→gyorsulás→instabilitás.",
+    "explanation": "A domborzati deriváltak kulcsfontosságúak a geotechnikai elemzésben."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a beszivárgás és lefolyás arányára?",
+    "correct": "Meredek: víz gyorsan mozog→kevesebb beszivárgás→több lefolyás. Enyhe: víz megáll→több beszivárgás→kevesebb lefolyás. Manning v∝S^1/2. Elosztott modellek ezt cellánként számítják.",
+    "explanation": "A lejtés közvetetten is befolyásolja a vízháztartást."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati különbségek vannak a D8 és D-végtelen kimeneti formátumok között?",
+    "correct": "D8: egész számú rács (1,2,4,8,16,32,64,128). D-végtelen: lebegőpontos radián (0-2π). A D8 könnyen értelmezhető; a D-végtelen fokra váltandó (×180/π) és más konvenciót használ.",
+    "explanation": "A kimeneti formátumok ismerete szükséges a helyes értelmezéshez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés az evapotranszspiráció térbeli mintázatára?",
+    "correct": "A kitettség meghatározza a sugárzást. Déli lejtők: több sugárzás→magasabb ET. Északi: kevesebb→alacsonyabb ET. A lejtés befolyásolja a beesési szöget. Együtt komplex ET-mintázatot hoznak létre.",
+    "explanation": "Az ET térbeli mintázata a lejtés és kitettség függvénye."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a D-végtelen módszernek konvex domboldalak elemzésében?",
+    "correct": "Konvex gerincen a víz mindkét oldalra szétválik. A D-végtelen arányosan osztja az áramlást. A D8 az egészet egyetlen oldalra kényszeríti. A D-végtelen valósághűbb divergens áramlás-mintázatot ad.",
+    "explanation": "A divergens áramlás helyes ábrázolása a D-végtelen fő előnye konvex felszíneken."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a D8 áramlásirány a vízfolyás-csatornák azonosítására?",
+    "correct": "A D8 áramlásirányból áramlás-felhalmozódás számítható (10. fejezet). Magas kumulált értékű cellák = medrek. Küszöbérték alkalmazása → meder/nem meder osztályozás → vízhálózat.",
+    "explanation": "A D8 fastruktúra lehetővé teszi az egyértelmű meder-azonosítást."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tapasztalatokat adna a lejtésszámítás tanításáról egyetemi hallgatóknak?",
+    "correct": "1. Kézi számítás kis tesztrácson mindhárom módszerrel. 2. Szoftver futtatás azonos rácson. 3. Összehasonlítás→megértés. 4. Valós DEM elemzés. 5. Az alkalmazás meghatározza a módszert. A matematika megértése a gombok mögött.",
+    "explanation": "A kézi ellenőrzés valódi megértést épít."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a konvektív viharok lefolyási válaszára?",
+    "correct": "Meredek lejtés→gyors vízgyűjtő-válasz (rövid tc)→éles csúcs, gyors áradás. Enyhe lejtés→lassú válasz→elnyújtott hidrográf. A lejtés-térkép előrejelzi a vízgyűjtő viselkedését.",
+    "explanation": "A lejtés közvetlenül befolyásolja az árvízi hidrográf alakját."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan számítjuk ki a derivált módszerrel a dz/dx értékét a 3×3-as környezetben?",
+    "correct": "dz/dx = ((A+2D+G) - (C+2F+I)) / 8δ. Az A,D,G a bal oldali, C,F,I a jobb oldali oszlop. A középső oszlop dupla súlyt kap. A nevező 8δ az 1-2-1 súlyozásból ered.",
+    "explanation": "A Sobel-operátor x-irányú komponense."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kitettség a vegetáció eloszlásában?",
+    "correct": "Déli lejtők: több napsugárzás→magasabb hőmérséklet→melegkedvelő fajok. Északi: hűvösebb, nedvesebb→árnyéktűrő fajok. A kitettség mikroklímát hoz létre→különböző élőhelyek.",
+    "explanation": "A kitettség közvetetten, a sugárzáson és hőmérsékleten keresztül hat a vegetációra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan értelmezné a pozitív és negatív dz/dx, dz/dy értékeket?",
+    "correct": "Pozitív dz/dx: terep kelet felé emelkedik. Negatív dz/dx: terep kelet felé esik. Pozitív dz/dy: terep észak felé emelkedik. Negatív dz/dy: terep észak felé esik.",
+    "explanation": "A parciális deriváltak előjele meghatározza a lejtés iránykomponenseit."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen következményei vannak annak, ha a lejtést rossz DEM-ből számítjuk?",
+    "correct": "Gyenge DEM→gyenge lejtés→hibás erózió, áramlás, TWI becslések. A hibák nemlineárisan erősödnek (RUSLE). A DEM minőségének ellenőrzése elengedhetetlen a lejtésszámítás előtt.",
+    "explanation": "A DEM minősége meghatározza minden származtatott termék megbízhatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg a lejtéskategóriákat egy területi alkalmassági elemzésben?",
+    "correct": "Osztályozás: 0-5% sík, 5-15% enyhe, 15-30% mérsékelt, 30-50% meredek, >50% nagyon meredek. A derivált módszer lejtéstérképéből. Alkalmazás: építési/mezőgazdasági alkalmasság, csúszásveszély.",
+    "explanation": "A lejtéskategóriák a területi tervezés alapvető eszközei."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a Python-alapú lejtésszámítási automatizálásnak a Model Builder-hez képest?",
+    "correct": "Python: rugalmasabb, feltételes logika, ciklusok, kötegelt feldolgozás. Model Builder: vizuális, könnyebb kezdőknek. Az ArcPy biztosítja az ArcGIS eszközök elérését. A Model Builder exportálható Python-ná.",
+    "explanation": "A Python a haladó automatizálás eszköze."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan javítaná a lejtésszámítás pontosságát sík terepen?",
+    "correct": "Finomabb DEM (DDM-5 az Alföldön). Geodéziai módszer földrajzi koordinátákhoz. D-végtelen a D8 helyett TWI-hez. A sík terep különösen érzékeny a DEM minőségre és a módszerválasztásra.",
+    "explanation": "Sík terepen a standard módszerek korlátait kell ismerni."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kapcsolat van a lejtés és az áramlás-felhalmozódás között?",
+    "correct": "A lejtés határozza meg az áramlás irányát (D8/D-végtelen). Az áramlásirány-rács az áramlás-felhalmozódás bemenete. A kumuláció a lejtés okozta lefolyási mintázat integrált eredménye.",
+    "explanation": "A lejtés az egész vízgyűjtő-elemzési lánc kiindulópontja."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a domborzatárnyékolás (hillshade) és a lejtés kapcsolatát!",
+    "correct": "A domborzatárnyékolás a lejtést és kitettséget kombinálja egy fényforrás szimulálásával. A Slope és Aspect bemenet. Vizuálisan intuitív domborzatábrázolást ad. Fontos a DEM-műtermékek felfedezéséhez.",
+    "explanation": "A hillshade a lejtés és kitettség vizuális alkalmazása."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a lejtésszámítást egy DEM-csempe szélén?",
+    "correct": "A derivált módszernek teljes 3×3 kell→szélső cellák no-data. Megoldás: pufferzóna biztosítása, lejtés a nagyobb DEM-en, vágás utána. A szélhatás elkerülésére legalább 1 cellányi extra DEM szükséges.",
+    "explanation": "A szélső cellák kezelése fontos gyakorlati szempont."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezők befolyásolják a D8 és D-végtelen közötti választást a gyakorlatban?",
+    "correct": "D8: vízgyűjtő-lehatárolás, vízhálózat (fastruktúra kell). D-végtelen: TWI, domboldal-hidrológia (simább mintázat kell). Sok projekt mindkettőt használja. Az alkalmazás célja dönt.",
+    "explanation": "A módszerválasztás az alkalmazási céltól függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a tározás-lefolyás viszonyra?",
+    "correct": "Meredek: kevés felszíni tározás→gyors lefolyás. Enyhe: több tározás→lassabb lefolyás. A domborzati mélyedésekben víz áll→lokális tározás. A TWI jelzi a potenciális tározási területeket.",
+    "explanation": "A lejtés közvetlenül befolyásolja a felszíni tározás lehetőségét."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel validálható a kitettségtérkép?",
+    "correct": "1. Teszt-DEM kézi számítással. 2. Ismert terepmegfigyelések (déli lejtők = meleg). 3. Összehasonlítás légifotókkal. 4. Konzisztencia a lejtéstérképpel. A kitettség-validálás a lejtés-validálás része.",
+    "explanation": "A validálás többlépcsős folyamat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a lejtéstérkép az öntözéstervezésben?",
+    "correct": "Meredek lejtő: gravitációs öntözés nem hatékony→csepegtetés. Enyhe lejtő: felszíni öntözés lehetséges. A lejtéstérkép segít a legmegfelelőbb öntözési módszer kiválasztásában területenként.",
+    "explanation": "A lejtés az öntözési infrastruktúra tervezésének alapvető bemenete."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatása van a cellaméretnek a lejtésszámításra?",
+    "correct": "Finomabb felbontás: részletesebb lejtés, de több zaj is. Durvább: simított lejtés, elveszett részletek. A 3×3 környezet mérete a cellaméret háromszorosa. Az alkalmazás léptékéhez illesztendő.",
+    "explanation": "A cellaméret és a lejtés részletessége közötti kompromisszum fontos."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg az optimális DEM-felbontást egy lejtéstanulmányhoz?",
+    "correct": "Az elemzési lépték meghatározza: vízgyűjtő (30 m), helyi (5 m), parcella (1 m). A felbontás legyen összhangban a vizsgált jelenség léptékével. Túl finom: zajosabb, drágább. Túl durva: részletvesztés.",
+    "explanation": "A felbontás és a vizsgálati lépték összehangolása alapvető tervezési döntés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a lejtés a városi lefolyásmodellezésben?",
+    "correct": "Városi felszín: gyors lefolyás impermeábilis felszínekről. A lejtés meghatározza az utcai áramlás irányát és sebességét. A LiDAR DEM részletes lejtéstérkép→csapadékvíz-elvezetés tervezése.",
+    "explanation": "A lejtés a városi hidrológia kulcsparamétere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a lejtés a vízerózió-veszélyesség térbeli mintázatát?",
+    "correct": "RUSLE: erózió∝S². Meredek lejtők=magas veszélyesség. A lejtéstérképből eróziós veszélyességi térkép készíthető. Kombinálható talaj-, csapadék- és területhasználati adatokkal.",
+    "explanation": "A lejtés a vízerózió legfontosabb domborzati tényezője."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hibaforrásokvariálhatják a lejtésszámítás eredményét?",
+    "correct": "1. DEM-pontosság. 2. Koordináta-rendszer hiba. 3. Módszerválasztás (derivált/D8/D-végt). 4. Cellaméret. 5. Szoftver-implementáció. 6. Szélső cellák kezelése. Mindegyik dokumentálandó.",
+    "explanation": "A lejtésszámítás számos hibaforrástól függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a lejtéstérképet a természetvédelmi területek kijelölésében?",
+    "correct": "A lejtés befolyásolja a biodiverzitást: változatos lejtés→változatos mikroklíma→több faj. A TWI jelzi a vizes élőhelyeket. A kitettség a hőigényes/árnyéktűrő fajok elkülönítését adja.",
+    "explanation": "A domborzati deriváltak a természetvédelmi tervezés alapvető eszközei."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a lejtés a talajképződésben?",
+    "correct": "Meredek lejtő: vékony talaj (erózió). Enyhe lejtő: vastagabb talaj (akkumuláció). A lejtés, görbület és kitettség együtt határozza meg a talajvastagság és -típus térbeli mintázatát.",
+    "explanation": "A lejtés a pedogenetikai folyamatok egyik fő szabályozója."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hatásá a lejtés az erdészeti gazdálkodásra?",
+    "correct": "Meredek lejtő: nehéz gépesítés, erózióveszély fakitermelés után. Kitettség: fajválasztás (meleg/hűvös). A lejtéstérkép az erdészeti tervezés alapja. A 30%-nál meredekebb területek általában nem gépesíthetők.",
+    "explanation": "A lejtés közvetlenül befolyásolja az erdészeti gazdálkodás lehetőségeit."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlődési irányok várhatók a lejtésszámítási módszerekben?",
+    "correct": "Többskálás elemzés, gépi tanulás a DEM-zajszűréshez, az MFD módszer terjedése, felhőalapú feldolgozás nagy DEM-ekhez, valós idejű lejtésszámítás drónfelvételekből.",
+    "explanation": "A technológiai fejlődés új lehetőségeket nyit a domborzatelemzésben."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a lejtés a közlekedési infrastruktúra tervezésére?",
+    "correct": "Utak: max 8-12% emelkedő. Vasút: max 3-5%. A lejtéstérkép segíti a nyomvonaltervezést. A domborzatelemzés csökkenti az építési költségeket az optimális nyomvonal kiválasztásával.",
+    "explanation": "A lejtés a közlekedési infrastruktúra tervezésének alapvető szempont."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az ArcGIS Pro geodéziai lejtésszámítási módszerének?",
+    "correct": "Kezeli a Föld görbületét, a szélességi kör mentén változó cellamereteket. Nem igényel előzetes vetítést. Pontosabb nagy kiterjedésű (>100 km) elemzéseknél. Számítás-igényesebb.",
+    "explanation": "A geodéziai módszer elengedhetetlen a földrajzi koordinátás DEM-ekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a lejtésszámítást a megújuló energia telephelyválasztásához?",
+    "correct": "Napenergia: déli kitettségű, mérsékelt lejtésű (15-30°) lejtők optimálisak. Szélenergia: meredek gerincek, szélnek kitett kitettség. A lejtés és kitettség térkép a telephelyválasztás alapja.",
+    "explanation": "A domborzati deriváltak a megújuló energia tervezésében is alkalmazhatók."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a lejtés a geotechnikai stabilitási elemzésben?",
+    "correct": "A lejtés közvetlenül befolyásolja a nyírófeszültséget a talajban. Meredekebb→magasabb nyírófeszültség→nagyobb csúszásveszély. A derivált módszer a legmegfelelőbb (robusztus, környezeti átlag). A görbület kiegészíti.",
+    "explanation": "A lejtés a geotechnikai biztonság meghatározó tényezője."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan integrálhatók a lejtésinformációk egy térinformatikai döntéstámogató rendszerbe?",
+    "correct": "A lejtéstérkép más rétegekkel (talaj, területhasználat, csapadék, vízhálózat) kombinálható többkritériumos elemzésben. A súlyozás az alkalmazástól függ. A GIS lehetővé teszi a térbeli döntéstámogatást.",
+    "explanation": "A lejtés számos térinformatikai döntéstámogató alkalmazás bemenete."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen összefüggés van a lejtés és a klímaváltozás hatásai között?",
+    "correct": "Meredekebb lejtők érzékenyebbek: intenzívebb csapadék→több erózió. Hóolvadás időzítése megváltozik→árvízi mintázat módosul. A lejtés- és kitettségtérképek a klímaváltozási hatásvizsgálat alapvető bemenetei.",
+    "explanation": "A domborzat modulálja a klímaváltozás helyi hatásait."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a lejtésszámítást egy összetett, több DEM-forrást használó projektben?",
+    "correct": "Konzisztens módszertan: azonos lejtésmódszer, azonos egység minden forráshoz. A DDM-5 és Copernicus összefűzésénél a szélzónában mindkét forrásból kell lejtést számítani és összehasonlítani. Dokumentálás.",
+    "explanation": "A több DEM-forrás használata konzisztens módszertant igényel."
+  }
+]

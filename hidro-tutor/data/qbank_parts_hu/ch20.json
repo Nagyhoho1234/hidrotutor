@@ -1,0 +1,3702 @@
+[
+  {
+    "id": "ch20_mcq_001",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a hidrogeológiai keretmodell célja?",
+    "options": [
+      "A kőzettípusok szín szerinti osztályozása",
+      "A kőzettestek hidraulikai tulajdonságaik szerinti csoportosítása és újraértelmezése",
+      "Kizárólag a geológiai kor meghatározása",
+      "A felszíni vízhálózat feltérképezése"
+    ],
+    "correct": "B",
+    "explanation": "A keretmodell a földtani keretmodell egyszerűsítése, hidraulikai tulajdonságok alapján."
+  },
+  {
+    "id": "ch20_mcq_002",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a HydrogeologicUnit tábla szerepe?",
+    "options": [
+      "Térbeli geometriát tárol",
+      "Fogalmilag definiálja az egységeket, mielőtt bármilyen térbeli elem létrejönne",
+      "Interpolációs eredményeket tárol",
+      "Kizárólag hőmérsékleti adatokat tartalmaz"
+    ],
+    "correct": "B",
+    "explanation": "Nem térbeli adatkészlet; referencia-alap az összes térbeli ábrázoláshoz."
+  },
+  {
+    "id": "ch20_mcq_003",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mit jelöl a HorizonID attribútum a HydrogeologicUnit táblában?",
+    "options": [
+      "A kút mélységét",
+      "Az egység helyét a függőleges üledékképződési sorrendben",
+      "A vízadó területét",
+      "Az interpoláció cellaméretét"
+    ],
+    "correct": "B",
+    "explanation": "Alulról felfelé számozott egész szám a függőleges sorrend meghatározásához."
+  },
+  {
+    "id": "ch20_mcq_004",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GeoArea poligonok szerepe?",
+    "options": [
+      "3D térfogatot ábrázolnak",
+      "Egy hidrogeológiai egység kétdimenziós területi kiterjedését definiálják",
+      "Vízszintméréseket tárolnak",
+      "Kútelhelyezkedéseket jelölnek"
+    ],
+    "correct": "B",
+    "explanation": "2D poligonok, amelyek az egység teljes vízszintes kiterjedését ábrázolják."
+  },
+  {
+    "id": "ch20_mcq_005",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GeoSection objektumosztály típusa?",
+    "options": [
+      "Poligon",
+      "Pont",
+      "Multipatch",
+      "Raszter"
+    ],
+    "correct": "C",
+    "explanation": "Multipatch elemek, amelyek a szelvény 3D paneljeit tárolják."
+  },
+  {
+    "id": "ch20_mcq_006",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az XS2D rendszer célja?",
+    "options": [
+      "3D modellek építése",
+      "3D szelvényadatok 2D megjelenítési síkra vetítése",
+      "Raszterfelületek interpolálása",
+      "Kútadatok importálása"
+    ],
+    "correct": "B",
+    "explanation": "Az XS2D lokális koordináta-transzformációt definiál a szelvények 2D megjelenítéséhez."
+  },
+  {
+    "id": "ch20_mcq_007",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen képlet írja le az XS2D függőleges koordinátát?",
+    "options": [
+      "z₂D = z + Vₑ",
+      "z₂D = z × Vₑ",
+      "z₂D = z / Vₑ",
+      "z₂D = z - Vₑ"
+    ],
+    "correct": "B",
+    "explanation": "A függőleges koordináta a magasság és a torzítási tényező szorzata."
+  },
+  {
+    "id": "ch20_mcq_008",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GeoVolume objektumosztály?",
+    "options": [
+      "Pont objektum",
+      "Vonalas objektum",
+      "Multipatch, amely zárt 3D térfogatot definiál",
+      "Raszterkatalógus"
+    ],
+    "correct": "C",
+    "explanation": "GeoVolume elemek a teljes 3D geometriát szilárd testekként ábrázolják."
+  },
+  {
+    "id": "ch20_mcq_009",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GeoRasters katalógus?",
+    "options": [
+      "Egyetlen raszter",
+      "Raszteradatkészletek gyűjteménye leíró attribútumokkal",
+      "Pont objektum halmaz",
+      "Szelvényvonal-gyűjtemény"
+    ],
+    "correct": "B",
+    "explanation": "Strukturált tároló formációfelületek és tulajdonságmezők számára."
+  },
+  {
+    "id": "ch20_mcq_010",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen módszerrel dolgozza fel az algoritmus a GeoRasters rasztereket?",
+    "options": [
+      "Véletlenszerű sorrendben",
+      "A HorizonID-k szerinti üledékképződési sorrendben",
+      "ABC sorrendben",
+      "Méret szerint csökkenő sorrendben"
+    ],
+    "correct": "B",
+    "explanation": "A HorizonID biztosítja a helyes alulról felfelé haladó feldolgozási sorrendet."
+  },
+  {
+    "id": "ch20_mcq_011",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a krigelés fő előnye a hidrosztratigráfiai interpolációban?",
+    "options": [
+      "Gyors számítás",
+      "Bizonytalanságbecslést is ad",
+      "Nem igényel adatot",
+      "Nem megtartja az adatértékeket"
+    ],
+    "correct": "B",
+    "explanation": "Krigelési varianciatérképet ad, amely megmutatja a bizonytalanságot."
+  },
+  {
+    "id": "ch20_mcq_012",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen képlettel becsülhető egy hidrogeológiai egység térfogata?",
+    "options": [
+      "V = Σ h(i,j) × Δx × Δy",
+      "V = Σ h(i,j) / (Δx × Δy)",
+      "V = h × 2π × r",
+      "V = K × A × i"
+    ],
+    "correct": "A",
+    "explanation": "A rasztercellákon összegzett vastagság-terület szorzat."
+  },
+  {
+    "id": "ch20_mcq_013",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Tóth József elméletének lényege?",
+    "options": [
+      "A víz kizárólag vízszintesen áramlik",
+      "A gravitáció által hajtott felszín alatti vízáramlás hierarchikusan egymásba ágyazott rendszerekbe szerveződik",
+      "A záró rétegek teljesen átnemeresztőek",
+      "A felszín alatti víz nem mozog"
+    ],
+    "correct": "B",
+    "explanation": "Helyi, köztes és regionális áramlási rendszerek hierarchiája."
+  },
+  {
+    "id": "ch20_mcq_014",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen áramlási rendszerek léteznek Tóth elmélete szerint?",
+    "options": [
+      "Gyors és lassú",
+      "Helyi, köztes és regionális",
+      "Felszíni és felszín alatti",
+      "Horizontális és vertikális"
+    ],
+    "correct": "B",
+    "explanation": "Három típus: helyi (évek), köztes (évtizedek-évszázadok), regionális (ezerévek)."
+  },
+  {
+    "id": "ch20_mcq_015",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a hidraulikai folytonosság?",
+    "options": [
+      "A víz nem tud a rétegek között áramlani",
+      "Bármely pontban bekövetkező nyomásváltozás véges sebességgel minden más pontra továbbterjed",
+      "A kőzet tökéletesen vízzáró",
+      "A víz csak felfelé áramlik"
+    ],
+    "correct": "B",
+    "explanation": "Tóth fogalma: egyetlen réteg sem tökéletesen impermeábilis medence-méretekben."
+  },
+  {
+    "id": "ch20_mcq_016",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen hőmérséklet-tartomány jellemzi a felső-pannon termálvízadó rendszert?",
+    "options": [
+      "0-10 °C",
+      "10-20 °C",
+      "30-80 °C",
+      "100-200 °C"
+    ],
+    "correct": "C",
+    "explanation": "30-80 °C, a mélységtől függően."
+  },
+  {
+    "id": "ch20_mcq_017",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GemPy?",
+    "options": [
+      "Kereskedelmi GIS-szoftver",
+      "Python-alapú nyílt forráskódú 3D geológiai modellező könyvtár",
+      "USGS modellezőkód",
+      "Adatbázis-kezelő rendszer"
+    ],
+    "correct": "B",
+    "explanation": "Python-alapú, potenciálmező-megközelítést használó implicit 3D geológiai modellező."
+  },
+  {
+    "id": "ch20_mcq_018",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen formációkból áll a felső-pannon termálvízadó rendszer?",
+    "options": [
+      "Mélyvízi márgák",
+      "Delta- és selfüledékek (Újfalui Formáció ekvivalens)",
+      "Kristályos alaphegység",
+      "Negyedidőszaki alluvium"
+    ],
+    "correct": "B",
+    "explanation": "Váltakozó homok- és agyagrétegek delta-front és self környezetben."
+  },
+  {
+    "id": "ch20_mcq_019",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi jellemzi az Alföld alaphegység felszínét?",
+    "options": [
+      "Sima és egyenletes",
+      "Drámai domborzat, vetőkkel irányított topográfia",
+      "Teljesen vízszintes",
+      "Kizárólag mészkőből áll"
+    ],
+    "correct": "B",
+    "explanation": "Szabálytalan, vetőkkel megszakított felszín, 500 m-től >7000 m mélységig."
+  },
+  {
+    "id": "ch20_mcq_020",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mennyi a felső-pannon termálvízadó jellemző K értéke?",
+    "options": [
+      "10⁻⁹ - 10⁻⁷ m/s",
+      "10⁻⁵ - 10⁻⁴ m/s",
+      "10⁻² - 10⁻¹ m/s",
+      "1 - 10 m/s"
+    ],
+    "correct": "B",
+    "explanation": "A homokrétegek szivárgási tényezője jellemzően 10⁻⁵ - 10⁻⁴ m/s."
+  },
+  {
+    "id": "ch20_mcq_021",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az átszivárgási tényező (leakancia) képlete?",
+    "options": [
+      "b = K × m'",
+      "b = K'/m'",
+      "b = m'/K'",
+      "b = K' + m'"
+    ],
+    "correct": "B",
+    "explanation": "Az átszivárgási tényező b = K'/m', ahol K' a félvízrekesztő K-ja, m' a vastagsága."
+  },
+  {
+    "id": "ch20_mcq_022",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen átszivárgási intenzitás jellemzi a Debreceni Vízmű I.-t?",
+    "options": [
+      "~0,01 m/év",
+      "~0,49 m/év",
+      "~5 m/év",
+      "~50 m/év"
+    ],
+    "correct": "B",
+    "explanation": "Átlagosan mintegy 0,49 m/év, a kitermelés 53-56%-a ebből ered."
+  },
+  {
+    "id": "ch20_mcq_023",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a ¹⁴C kormeghatározás alkalmazási tartománya?",
+    "options": [
+      "0-100 év",
+      "100-1000 év",
+      "~1000-30 000 év",
+      ">100 000 év"
+    ],
+    "correct": "C",
+    "explanation": "Körülbelül 1000-30 000 éves vizekre alkalmazható."
+  },
+  {
+    "id": "ch20_mcq_024",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen izotóprendszert használnak a fiatal (<50 éves) vizek azonosítására?",
+    "options": [
+      "¹⁴C",
+      "Trícium (³H)",
+      "Hélium-4",
+      "Oxigén-18"
+    ],
+    "correct": "B",
+    "explanation": "A trícium az 1952 utáni utánpótlódás jelzésére alkalmas."
+  },
+  {
+    "id": "ch20_mcq_025",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen szoftver a GOCAD/SKUA?",
+    "options": [
+      "Nyílt forráskódú GIS",
+      "Specializált 3D geológiai modellező szoftver",
+      "Vízminőségi elemző",
+      "Meteorológiai előrejelző"
+    ],
+    "correct": "B",
+    "explanation": "Kereskedelmi 3D geológiai modellező szoftver."
+  },
+  {
+    "id": "ch20_mcq_026",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Pannon-tó kora?",
+    "options": [
+      "~100-50 M év",
+      "~11,6-4 M év",
+      "~1-0,5 M év",
+      "~100 000 év"
+    ],
+    "correct": "B",
+    "explanation": "A Pannon-tó körülbelül 11,6-tól 4 millió éve töltötte ki a medencét."
+  },
+  {
+    "id": "ch20_mcq_027",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen Vogel (1970) ajánlott kezdeti ¹⁴C aktivitás?",
+    "options": [
+      "50 ± 5% pMC",
+      "70 ± 5% pMC",
+      "85 ± 5% pMC",
+      "100% pMC"
+    ],
+    "correct": "C",
+    "explanation": "Közép-európai környezetben 85 ± 5% pMC az ajánlott standard."
+  },
+  {
+    "id": "ch20_mcq_028",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a függőleges torzítás tipikus értéke hidrogeológiai szelvényeknél?",
+    "options": [
+      "1-szeres",
+      "5-szörös",
+      "25-50-szeres",
+      "100-szoros"
+    ],
+    "correct": "C",
+    "explanation": "25-50-szeres a tipikus, hogy a vékony rétegek láthatóvá váljanak."
+  },
+  {
+    "id": "ch20_mcq_029",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen szivárgási tényezővel rendelkezik az alsó-pannon záró összlet?",
+    "options": [
+      "10⁻⁹ - 10⁻⁷ m/s",
+      "10⁻⁵ - 10⁻⁴ m/s",
+      "10⁻² - 10⁻¹ m/s",
+      "1 - 10 m/s"
+    ],
+    "correct": "A",
+    "explanation": "Túlnyomórészt finomszeműek, K = 10⁻⁹ - 10⁻⁷ m/s."
+  },
+  {
+    "id": "ch20_mcq_030",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a validálás leggyakoribb mutatója interpolált felületeknél?",
+    "options": [
+      "R²",
+      "RMSE és MAE",
+      "t-teszt",
+      "p-érték"
+    ],
+    "correct": "B",
+    "explanation": "Négyzetes középhiba (RMSE) és átlagos abszolút hiba (MAE)."
+  },
+  {
+    "id": "ch20_mcq_031",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a vetővel határolt interpoláció lényege?",
+    "options": [
+      "A vetőket figyelmen kívül hagyjuk",
+      "A területet blokkokra osztjuk a vetők mentén és blokkonként interpolálunk",
+      "Csak a vetők közelében interpolálunk",
+      "A vetőket simítjuk"
+    ],
+    "correct": "B",
+    "explanation": "Minden blokkon belül önálló interpoláció a diszkontinuitások kezelésére."
+  },
+  {
+    "id": "ch20_mcq_032",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Hány hidrogeológiai egységre osztják jellemzően az Alföld felszín alatti terét?",
+    "options": [
+      "2-3",
+      "4-5",
+      "8-10",
+      "15-20"
+    ],
+    "correct": "B",
+    "explanation": "Négy-öt egységre: BASEMENT, DEEP_CONF, THERM_AQ, SHALLOW_CONF, SHALLOW_AQ."
+  },
+  {
+    "id": "ch20_mcq_033",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Subsurface Python-könyvtár?",
+    "options": [
+      "Felszíni víz modellező",
+      "Felszín alatti adatstruktúrákat biztosító könyvtár",
+      "Meteorológiai eszköz",
+      "Képfeldolgozó"
+    ],
+    "correct": "B",
+    "explanation": "Kutakra, szelvényekre, felületekre és térfogatokra tervezett adatstruktúrák."
+  },
+  {
+    "id": "ch20_mcq_034",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen geotermikus gradiens jellemzi az Alföldet?",
+    "options": [
+      "~25 °C/km",
+      "~45 mK/m",
+      "~80 °C/km",
+      "~10 °C/km"
+    ],
+    "correct": "B",
+    "explanation": "Átlagosan ~45 mK/m (millikelvin/méter), ~1,5× a globális átlag."
+  },
+  {
+    "id": "ch20_mcq_035",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen módszerrel azonosítják a formáció tetejét a pannon üledékekben?",
+    "options": [
+      "Kizárólag szemrevételezéssel",
+      "Geofizikai kútszelvények (SP, ellenállás) kvantitatív elemzésével",
+      "Műholdképek alapján",
+      "Gravitációs mérésekkel"
+    ],
+    "correct": "B",
+    "explanation": "Modern gyakorlat kvantitatív szelvényelemzést alkalmaz az egységhatárok definiálásához."
+  },
+  {
+    "id": "ch20_mcq_036",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GRACE műholdmisszió haszna a keretmodell-építésben?",
+    "options": [
+      "Geológiai rétegek közvetlen leképezése",
+      "Medenceléptékű felszín alatti víztárolás-változások becslése",
+      "Kúthozamok mérése",
+      "Geofizikai szelvényezés"
+    ],
+    "correct": "B",
+    "explanation": "Medenceléptékű tárolásváltozás-becslések, nagylétékű validálásra használható."
+  },
+  {
+    "id": "ch20_mcq_037",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen típusú elemekből építik a GeoVolume objektumokat?",
+    "options": [
+      "Pont objektumokból",
+      "Határoló felületekből (felső és alsó)",
+      "Vonal objektumokból",
+      "Szöveg attribútumokból"
+    ],
+    "correct": "B",
+    "explanation": "A felső felületéből és az alatta lévő egység felső felületéből építik."
+  },
+  {
+    "id": "ch20_mcq_038",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a 'nugget-hatás' a variogramban?",
+    "options": [
+      "A felület maximális magassága",
+      "A mérési bizonytalanság és nagyon rövid hatótávolságú változékonyság",
+      "Az interpoláció cellamérete",
+      "A rétegvastagság"
+    ],
+    "correct": "B",
+    "explanation": "A variogram origójánál lévő diszkontinuitás, rövid hatótávolságú változékonyságot tükröz."
+  },
+  {
+    "id": "ch20_mcq_039",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a klinoform a pannon üledékekben?",
+    "options": [
+      "Függőleges vetősík",
+      "Ferdén dőlő progradáló self-szegély üledéktest",
+      "Vízszintes agyagréteg",
+      "Vulkáni intrúzió"
+    ],
+    "correct": "B",
+    "explanation": "A Pannon-tó fokozatos feltöltődését rögzítő progradáló self-lejtő üledékformák."
+  },
+  {
+    "id": "ch20_mcq_040",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Az alföldi negyedidőszaki üledékek tipikus vastagsága?",
+    "options": [
+      "5-20 m",
+      "50-300 m",
+      "500-1000 m",
+      "2000-4000 m"
+    ],
+    "correct": "B",
+    "explanation": "50-300 méter vastagságú folyóvízi, eolikus és tavi üledékek."
+  },
+  {
+    "id": "ch20_mcq_041",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a 'dual porosity' modellezés?",
+    "options": [
+      "Két különböző vízadó modellezése",
+      "A kőzetmátrix és a repedéshálózat együttes kezelése",
+      "Két raszterfelület összehasonlítása",
+      "Két interpolációs módszer alkalmazása"
+    ],
+    "correct": "B",
+    "explanation": "A repedezett karbonátok változó K értékei miatt kettős-porozitású megközelítés szükséges."
+  },
+  {
+    "id": "ch20_mcq_042",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen pannon formáció felel meg a mélyvízi márgáknak?",
+    "options": [
+      "Újfalui Formáció",
+      "Algyői Formáció",
+      "Endrődi Formáció",
+      "Zagyvai Formáció"
+    ],
+    "correct": "C",
+    "explanation": "Az Endrődi Formáció ekvivalens a mélyvízi márgáknak és turbiditoknak."
+  },
+  {
+    "id": "ch20_mcq_043",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen módszer a SkyTEM?",
+    "options": [
+      "Műholdas gravitáció",
+      "Légi elektromágneses felmérés",
+      "Szeizmikus reflexió",
+      "GPS mérés"
+    ],
+    "correct": "B",
+    "explanation": "Légi elektromágneses felmérés, 200-300 m mélységig folytonos lefedettséget biztosít."
+  },
+  {
+    "id": "ch20_mcq_044",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen arányú anizotrópia jellemzi a felső-pannon termálvízadó felszínének krigelését?",
+    "options": [
+      "1,0",
+      "1,5",
+      "3,0",
+      "10,0"
+    ],
+    "correct": "B",
+    "explanation": "1,5-ös anizotrópia-arány, a főtengely ÉNy-DK irányú."
+  },
+  {
+    "id": "ch20_mcq_045",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Debreceni-árok?",
+    "options": [
+      "Felszíni folyóvölgy",
+      "Mély tektonikai részmedence az Alföld alatt",
+      "Mesterséges csatorna",
+      "Bányagödör"
+    ],
+    "correct": "B",
+    "explanation": "Az Alföld egyik fő részmedencéje, ahol az alaphegység -4200 m-ig süllyed."
+  },
+  {
+    "id": "ch20_mcq_046",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a QGIS2threejs bővítmény funkciója?",
+    "options": [
+      "Adatbázis-kezelés",
+      "3D vizualizáció QGIS-ben",
+      "Interpoláció",
+      "Nyomtatás"
+    ],
+    "correct": "B",
+    "explanation": "QGIS háromdimenziós vizualizációs bővítmény."
+  },
+  {
+    "id": "ch20_mcq_047",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen formájú a pannon sorozat alapvető architektúrája?",
+    "options": [
+      "Vízszintes rétegsor",
+      "Mélyvízi agyagoktól az egyre homokosabb delta-üledékeken át a negyedidőszaki alluviumig",
+      "Teljesen egynemű homokkő",
+      "Vulkáni rétegsor"
+    ],
+    "correct": "B",
+    "explanation": "Fokozatos átmenet alulról felfelé a finomszeműtől a durvaszemű felé."
+  },
+  {
+    "id": "ch20_mcq_048",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Hány éve intenzív kutatás tárgya az Alföld keretmodellje?",
+    "options": [
+      "~20 éve",
+      "~50 éve",
+      "Több mint egy évszázada",
+      "~10 éve"
+    ],
+    "correct": "C",
+    "explanation": "Több mint egy évszázada vizsgálják."
+  },
+  {
+    "id": "ch20_mcq_049",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a 'szuperkritikus' termálvíz?",
+    "options": [
+      "90 °C feletti víz",
+      "A fejezet nem tárgyalja ezt a fogalmat",
+      "30 °C alatti víz",
+      "Klorid-mentes víz"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet nem használja ezt a kifejezést; a termálvízadó rendszer hőmérséklete 30-80 °C."
+  },
+  {
+    "id": "ch20_mcq_050",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az RESQML?",
+    "options": [
+      "Felszín alatti víz szabvány",
+      "Tárolómodellezési szabvány",
+      "Meteorológiai szabvány",
+      "Térkép vetületi szabvány"
+    ],
+    "correct": "B",
+    "explanation": "RESQML a tárolómodellezéshez használt adatcsere-szabvány."
+  },
+  {
+    "id": "ch20_mcq_051",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen két erő hajtja a felszín alatti vizet a Pannon-medencében?",
+    "options": [
+      "Szél és árapály",
+      "Gravitáció és tektonikus kompresszió",
+      "Hőmérséklet és nyomás",
+      "Centrifugális erő és mágnesesség"
+    ],
+    "correct": "B",
+    "explanation": "Gravitáció a felső ~1700 m-ben, tektonikus kompresszió mélyebben."
+  },
+  {
+    "id": "ch20_mcq_052",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen mélységben van a gravitáció és a tektonikus zóna határa?",
+    "options": [
+      "~100 m",
+      "~500 m",
+      "~1700 m",
+      "~5000 m"
+    ],
+    "correct": "C",
+    "explanation": "Körülbelül 1700 m alatt kezdődik a túlnyomásos tektonikus zóna."
+  },
+  {
+    "id": "ch20_mcq_053",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mire jó az InSAR a keretmodell-építésben?",
+    "options": [
+      "Geológiai rétegek leképezésére",
+      "Kitermelés okozta felszínsüllyedés kimutatására",
+      "Vízszintmérésre",
+      "Csapadékmérésre"
+    ],
+    "correct": "B",
+    "explanation": "Közvetett korlát a záró egységek összenyomhatóságára és geometriájára."
+  },
+  {
+    "id": "ch20_mcq_054",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Leapfrog szoftver?",
+    "options": [
+      "Nyílt forráskódú GIS",
+      "Kereskedelmi implicit 3D geológiai modellező",
+      "MODFLOW előfeldolgozó",
+      "Táblázatkezelő"
+    ],
+    "correct": "B",
+    "explanation": "Kereskedelmi szoftver implicit 3D geológiai modellezéshez."
+  },
+  {
+    "id": "ch20_mcq_055",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen függőleges torzítással készült a hajdú-bihari szelvény?",
+    "options": [
+      "5×",
+      "10×",
+      "20×",
+      "50×"
+    ],
+    "correct": "C",
+    "explanation": "20-szoros VertExag2D értékkel."
+  },
+  {
+    "id": "ch20_mcq_056",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mennyi a felső-pannon termálvízadó tipikus transzmisszivitása?",
+    "options": [
+      "1-10 m²/nap",
+      "50-100 m²/nap",
+      "200-500 m²/nap",
+      "5000-10 000 m²/nap"
+    ],
+    "correct": "C",
+    "explanation": "200-500 m²/nap a jellemző termelőkutaknál."
+  },
+  {
+    "id": "ch20_mcq_057",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi jellemzi a negyedidőszaki sekély vízadó hőmérsékletét?",
+    "options": [
+      "30-50 °C",
+      "10-15 °C",
+      "60-80 °C",
+      "0-5 °C"
+    ],
+    "correct": "B",
+    "explanation": "10-15 °C a felszínközeli hőmérséklet."
+  },
+  {
+    "id": "ch20_mcq_058",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a SectionLine objektumosztály?",
+    "options": [
+      "Pont objektum",
+      "Vonalelem, amely a szelvény nyomvonalát definiálja",
+      "Poligon objektum",
+      "Multipatch"
+    ],
+    "correct": "B",
+    "explanation": "A SectionLine a szelvény térképi nyomvonalát definiáló vonalelemű osztály."
+  },
+  {
+    "id": "ch20_mcq_059",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen attribútumot tárol a GeoSection?",
+    "options": [
+      "Kizárólag HydroID-t",
+      "HGUID-t, HGUCode-ot, HorizonID-t és SectionID-t",
+      "Kizárólag koordinátákat",
+      "Csak nevet"
+    ],
+    "correct": "B",
+    "explanation": "HGUID, HGUCode, HorizonID, SectionID és más attribútumok."
+  },
+  {
+    "id": "ch20_mcq_060",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Hány fő vízadó-réteg van a magyar Alföld keretmodelljében?",
+    "options": [
+      "2",
+      "3",
+      "4-5",
+      "10"
+    ],
+    "correct": "C",
+    "explanation": "Jellemzően 4-5: alaphegység, alsó-pannon záró, termálvízadó, átmeneti zóna, sekély vízadó."
+  },
+  {
+    "id": "ch20_mcq_061",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Makói-árok?",
+    "options": [
+      "Felszíni folyóvölgy",
+      "A Pannon-medence legmélyebb részmedencéje (>7000 m)",
+      "Mesterséges tározó",
+      "Bányaterület"
+    ],
+    "correct": "B",
+    "explanation": "A legmélyebb részmedence, ahol az alaphegység >7000 m mélységben van."
+  },
+  {
+    "id": "ch20_mcq_062",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen módszerrel határozzák meg az utánpótlási és megcsapolási területeket?",
+    "options": [
+      "Műholdas leképezéssel",
+      "Függőleges hidraulikus gradiensek elemzésével fészkelt kutakból",
+      "Kizárólag geológiai térképekből",
+      "Talajmintavétellel"
+    ],
+    "correct": "B",
+    "explanation": "Ahol a sekély szint meghaladja a mélyet = utánpótlás; fordítva = megcsapolás."
+  },
+  {
+    "id": "ch20_mcq_063",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Melyik magyar laboratórium végzi a ¹⁴C méréseket az Alföldön?",
+    "options": [
+      "MTA CSFK",
+      "MTA ATOMKI (Debrecen)",
+      "BME",
+      "ELTE"
+    ],
+    "correct": "B",
+    "explanation": "Az MTA ATOMKI (Atommagkutató Intézet, Debrecen) az 1980-as évek óta méri."
+  },
+  {
+    "id": "ch20_mcq_064",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen interpoláció ajánlott a sima pannon formációfelszínekhez?",
+    "options": [
+      "IDW magas kitevővel",
+      "Krigelés lineáris variogrammal",
+      "Spline nulla feszítéssel",
+      "TIN háromszögesítés"
+    ],
+    "correct": "B",
+    "explanation": "Lineáris variogrammodellel végzett krigelés jó eredményeket ad."
+  },
+  {
+    "id": "ch20_mcq_065",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az XS2D_BoreLine?",
+    "options": [
+      "3D pontelem",
+      "2D szelvénysíkra vetített fúrólyukadatokat ábrázoló vonalelem",
+      "Raszterkatalógus-bejegyzés",
+      "Poligon elem"
+    ],
+    "correct": "B",
+    "explanation": "A szelvénysíkra vetített fúrólyukadatokat ábrázolja, Offset attribútummal."
+  },
+  {
+    "id": "ch20_mcq_066",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen szivárgási tényezőjűek a negyedidőszaki alsó-pleisztocén kavicsos homokok?",
+    "options": [
+      "10⁻⁷ - 10⁻⁵ m/s",
+      "10⁻⁴ - 10⁻³ m/s",
+      "10⁻¹ - 1 m/s",
+      "10 - 100 m/s"
+    ],
+    "correct": "B",
+    "explanation": "K = 10⁻⁴ - 10⁻³ m/s, a sekély vízadórendszer legjobb vízvezető rétegei."
+  },
+  {
+    "id": "ch20_mcq_067",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Zagyvai Formáció?",
+    "options": [
+      "Mélyvízi márga",
+      "A Pannon-tó utáni szárazföldi üledékek",
+      "Kristályos alaphegység",
+      "Triász mészkő"
+    ],
+    "correct": "B",
+    "explanation": "A tófázis után lerakódott szárazföldi üledékek (folyóvízi homokok, iszapok, agyagok)."
+  },
+  {
+    "id": "ch20_mcq_068",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Hány % Magyarország vízkútjainak van a felső-pannon egységben?",
+    "options": [
+      "50%",
+      "75%",
+      "95%",
+      "100%"
+    ],
+    "correct": "C",
+    "explanation": "Magyarország vízkútjainak 95%-a ebben az egységben van kiképezve."
+  },
+  {
+    "id": "ch20_mcq_069",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az Algyői Formáció?",
+    "options": [
+      "Felszíni alluvium",
+      "Selfjszegély és lejtőüledékek (átmeneti)",
+      "Mélyvízi márga",
+      "Negyedidőszaki lösz"
+    ],
+    "correct": "B",
+    "explanation": "Átmeneti üledékek a progradáló selflejtőn."
+  },
+  {
+    "id": "ch20_mcq_070",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen ¹⁴C korok jellemzőek a nyírségi utánpótlási területek mély kútjaira?",
+    "options": [
+      "0-100 év",
+      "3000-7000 év",
+      "50 000-100 000 év",
+      "1 millió+ év"
+    ],
+    "correct": "B",
+    "explanation": "100-250 m mélységű vizek ¹⁴C kora 3000-7000 év."
+  },
+  {
+    "id": "ch20_mcq_071",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a hélium kormeghatározás fő előnye?",
+    "options": [
+      "Olcsó",
+      "Nagyon idős (>30 000 éves) vizekre alkalmas",
+      "Gyors",
+      "Nem igényel mintavételt"
+    ],
+    "correct": "B",
+    "explanation": "A ¹⁴C határa fölé nyúlik, radiogén ⁴He felhalmozódásán alapul."
+  },
+  {
+    "id": "ch20_mcq_072",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen felszín alatti víztípusok keverednek az alföldi megcsapolási zónákban?",
+    "options": [
+      "Kizárólag édesvíz",
+      "Gravitáció által hajtott édesvíz és felfelé vándorló sós mélyvíz",
+      "Kizárólag sósvíz",
+      "Kizárólag termálvíz"
+    ],
+    "correct": "B",
+    "explanation": "A két víztömeg keveredése szikes mocsarakat és szódás tavakat hoz létre."
+  },
+  {
+    "id": "ch20_mcq_073",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi jellemzi az Alföld fő utánpótlási területeit?",
+    "options": [
+      "Alacsony fekvésű árterek",
+      "Emelt homokfennsíkok (Nyírség, Duna-Tisza köze)",
+      "Hegyvidéki területek",
+      "Tengerpartok"
+    ],
+    "correct": "B",
+    "explanation": "A két emelt homokfennsík a fő utánpótlási terület."
+  },
+  {
+    "id": "ch20_mcq_074",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a PINN a felszín alatti vízmodellezésben?",
+    "options": [
+      "Egy fúrási módszer",
+      "Fizika-informált neurális hálózat",
+      "Egy kút típusa",
+      "Egy geofizikai szelvény"
+    ],
+    "correct": "B",
+    "explanation": "Physics-Informed Neural Network, amely fizikai egyenleteket ágyaz a hálózat architektúrájába."
+  },
+  {
+    "id": "ch20_mcq_075",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen mérésekkel támasztotta alá Rónai (1985) a hidraulikai folytonosságot?",
+    "options": [
+      "Műholdas mérések",
+      "Felszíni nyomásingadozások több száz méter mélységre terjedése",
+      "Kémiai elemzések",
+      "Szeizmikus adatok"
+    ],
+    "correct": "B",
+    "explanation": "A felszínen megfigyelt nyomásingadozások néhány napon belül több száz méter mélységre terjedtek."
+  },
+  {
+    "id": "ch20_mcq_076",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Hány regisztrált termálkút volt Magyarországon 2000-ben?",
+    "options": [
+      "500",
+      "1000",
+      "1289",
+      "2000"
+    ],
+    "correct": "C",
+    "explanation": "2000-es állapot szerint 1289 bejegyzett termálkút."
+  },
+  {
+    "id": "ch20_mcq_077",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen célra használják a FEFLOW előfeldolgozást?",
+    "options": [
+      "Nyomtatás",
+      "Nemzeti keretmodell-építő platformként",
+      "Felszíni víz modellezés",
+      "Műholdkép-feldolgozás"
+    ],
+    "correct": "B",
+    "explanation": "FEFLOW előfeldolgozás a keretmodell-építés egyik szoftver-platformja."
+  },
+  {
+    "id": "ch20_mcq_078",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a 'diszkordancia' a keretmodellben?",
+    "options": [
+      "Két réteg azonos kora",
+      "Eróziós felület, ahol egységek hiányoznak",
+      "Vetősík",
+      "Mesterséges határ"
+    ],
+    "correct": "B",
+    "explanation": "Eróziós vagy üledékhiányos felület, ahol fiatalabb kőzetek közvetlenül idősebbekre települnek."
+  },
+  {
+    "id": "ch20_mcq_079",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen típusú monitoring kutakat tartalmaz az OVF hálózata a termálvíz számára?",
+    "options": [
+      "Kizárólag sekély kutakat",
+      "Dedikált termális monitoring kutakat",
+      "Kizárólag ipari kutakat",
+      "Kizárólag mezőgazdasági kutakat"
+    ],
+    "correct": "B",
+    "explanation": "Dedikált termális monitoringkutak, amelyek folyamatos adatot szolgáltatnak."
+  },
+  {
+    "id": "ch20_mcq_080",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen intézmény az MTA ATOMKI?",
+    "options": [
+      "Budapesti egyetem",
+      "Debreceni atommagkutató intézet",
+      "Szegedi vízkutató",
+      "Pécsi geológiai intézet"
+    ],
+    "correct": "B",
+    "explanation": "Az MTA ATOMKI az Atommagkutató Intézet Debrecenben."
+  },
+  {
+    "id": "ch20_mcq_081",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen szivárgási tényezőjű a pliocén agyag a Jászságban?",
+    "options": [
+      "10⁻⁸ m/s",
+      "10⁻⁴ m/s",
+      "10⁻¹ m/s",
+      "1 m/s"
+    ],
+    "correct": "A",
+    "explanation": "Az agyag-domináns jászsági fáciesben 10⁻⁸ m/s."
+  },
+  {
+    "id": "ch20_mcq_082",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a hüvelykujjszabály a rasztercella méretéhez?",
+    "options": [
+      "Cella = adatpontok átlagos távolsága",
+      "Cella ≤ adatpontok átlagos távolságának ~1/4-e",
+      "Cella = a terület szélessége",
+      "Cella = 1 km mindig"
+    ],
+    "correct": "B",
+    "explanation": "A cellaméret nem legyen kisebb, mint az adattávolság ~1/4-e."
+  },
+  {
+    "id": "ch20_tf_001",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A hidrogeológiai keretmodell a földtani keretmodell egyszerűsítése.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_002",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A HydrogeologicUnit tábla térbeli geometriát tartalmaz.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_003",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A HorizonID alulról felfelé növekvő sorrendet jelöl.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_004",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoArea poligonok a 3D térfogatot ábrázolják.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_005",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoSection multipatch típusú objektumosztály.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_006",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az XS2D rendszer az adatokat 2D megjelenítési síkra vetíti.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_007",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoVolume elemek pont objektumok.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_008",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoRasters katalógus egyetlen raszterből áll.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_009",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A krigelés bizonytalanságbecslést is ad.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_010",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Tóth-elmélet szerint csak egyféle áramlási rendszer létezik.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_011",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A hidraulikai folytonosság azt jelenti, hogy egyetlen réteg sem tökéletesen impermeábilis.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_012",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A felső-pannon termálvízadó hőmérséklete 30-80 °C.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_013",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GemPy kereskedelmi szoftver.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_014",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Pannon-tó ~11,6-4 M éve létezett.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_015",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A függőleges torzítás nem torzítja a dőlésszögeket.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_016",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az IDW interpoláció bizonytalanságbecslést ad.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_017",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az Alföld alaphegységi felszíne egyenletes és sima.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_018",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GRACE műhold medenceléptékű víztárolás-változást becsül.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_019",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az Alföld keretmodellje jellemzően 4-5 egységet tartalmaz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_020",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A pannon sorozat éles formációhatárokkal rendelkezik.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_021",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoSciML az OGC szabványa.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_022",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A 25× függőleges torzítás mellett egy 2°-os dőlés ~41°-nak tűnik.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_023",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A negyedidőszaki üledékek 50-300 m vastagok az Alföldön.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_024",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A vetővel határolt interpoláció figyelmen kívül hagyja a vetőket.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_025",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A természetes szomszédság interpoláció extrapolálni tud.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_026",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A TIN lineáris interpoláció megőrzi az adatértékeket.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_027",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A spline interpoláció mindig oszcillációmentes.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_028",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoRasters katalógus geometriát és tulajdonságokat is tárol.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_029",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keretmodell felépítése lineáris, nem iteratív folyamat.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_030",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az INSPIRE irányelv harmonizált adatspecifikációkat hozott létre.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_031",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az Alföld fő utánpótlási területei alacsony fekvésű árterek.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_032",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Tóth József az University of Alberta-n dolgozott.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_033",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A regionális áramlási rendszerek tartózkodási ideje ezerévektől tízezerévekig terjed.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_034",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A helyi áramlási rendszerek a legmélyebb mélységekbe hatolnak.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_035",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Debreceni-árok alaphegységi mélysége eléri a -4200 m-t.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_036",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A felső-pannon termálvízadó K értéke 10⁻⁵ - 10⁻⁴ m/s.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_037",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az alsó-pannon záró összlet K értéke 10⁻² - 10⁻¹ m/s.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_038",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Hantush-Jacob modell az átszivárgó vízadók leírására szolgál.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_039",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az átszivárgási tényező dimenziója L/T.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_040",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A debreceni átszivárgási intenzitás ~0,49 m/év.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_041",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A ¹⁴C kormeghatározás 100 éves vizekre alkalmazható.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_042",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A trícium a fiatal (<50 éves) vizek jelzésére szolgál.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_043",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A hélium kormeghatározás >30 000 éves vizekre alkalmas.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_044",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A stabil izotópok abszolút kort adnak.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_045",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keveredés félrevezető 'látszólagos korokat' eredményezhet ¹⁴C méréseknél.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_046",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A nyírségi utánpótlási területeken minden mélységben fiatal víz található.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_047",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A szivattyúzás nem változtatja meg a koreloszlást.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_048",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Vogel ajánlott kezdeti ¹⁴C aktivitása 85 ± 5% pMC.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_049",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Pannon-medence vékony kérge magas hőáramot okoz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_050",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Magyarország vízkútjainak 95%-a a felső-pannon egységben van.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_051",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A pliocén üledékek mindenhol azonos jellegűek az Alföldön.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_052",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A negyedidőszaki vízadók a legsérülékenyebbek a szennyeződéssel szemben.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_053",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az Endrődi Formáció delta-üledékeknek felel meg.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_054",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Zagyvai Formáció a tófázis utáni szárazföldi üledékeket képviseli.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_055",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Makói-árok az Alföld legsekélyebb területe.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_056",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az alföldi keretmodell sűrű fúrólyuk-adatbázisra támaszkodik.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_057",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A ¹⁴C korok a debreceni vízműnél idővel fiatalabbá váltak intenzív szivattyúzás hatására.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_058",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A nyírségi fészkelt kutak 30-35 m-es potenciálkülönbséget mutatnak.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_059",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A SkyTEM légi elektromágneses felmérés.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_060",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az InSAR felszínsüllyedést mutat ki.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_061",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A FloPy csak ArcGIS-ben működik.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_062",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A PyVista 3D vizualizációra szolgál.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_063",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az implicit modellezés determinisztikus megközelítés.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_064",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GemPy potenciálmező-megközelítést használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_065",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A QGIS nem alkalmas felszín alatti adatok megjelenítésére.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_066",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keretmodell és a szimulációs modell közötti kapcsolat egyirányú.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_067",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A kalibrált modell feltárhatja a keretmodell hiányosságait.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_068",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A felső-pannon termálvízadó vastagság az Alföldön 600-900 m a szelvény mentén.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_069",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A negyedidőszaki vízadó mindenhol egyforma vastagságú.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_070",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A hajdú-bihari szelvény 20× függőleges torzítással készült.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_071",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Halász (1995) a nyírségi piezometrikus kupola fennmaradását az átszivárgásnak tulajdonítja.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_072",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A medencekitöltés aljzata mindenütt azonos mélységben van.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_073",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoRasters katalógus HorizonID-vel indexeli a rasztereket.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_074",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az Alföld termálvizei évi 80-100 millió m³ termelést adnak.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_075",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A tektonikus kompresszió a felső 400 m-ben hat.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_076",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Rónai (1985) nyomásingadozásokat mutatott ki több száz méter mélyen.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_077",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Neuman és Witherspoon kimutatták a félvízrekesztőn átívelő hidraulikus választ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_078",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Tóth-féle elmélet O. E. Meinzer-díjat kapott.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_079",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A szikes talajok az Alföldön a gravitáció által hajtott és a mély vizek keveredésének eredményei.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_080",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A G3P rendszert a potsdami GFZ fejlesztette.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_081",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A rasztercella mérete nem függ az adatsűrűségtől.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_082",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A természetes szomszédság interpoláció Voronoi-tesszellációt használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_083",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A GeoSection elemek SectionID attribútuma a SectionLine HydroID-jével egyenlő.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_084",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A XS2D_PanelDivider a szelvényvonal töréspontjait jelöli.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_085",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A VertExag2D a SectionLine elem attribútuma.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_086",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A mély pannon vizek sókoncentrációja 6-25 g/l.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_087",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az alföldi fúrási adatsűrűség mindenhol egyforma.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_088",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A debreceni átszivárgás a kitermelt víz 53-56%-át adja.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_089",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az 1289 termálkút évi kevesebb mint 10 M m³ vizet termel.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_090",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A preneogén alaphegység kizárólag kristályos kőzetekből áll.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_091",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Debreceni-árok a szelvény ÉNy-i szegélyén a legmélyebb.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_092",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A formációtető-azonosítás a pannon üledékekben egyértelmű és objektív.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_093",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A jászsági pliocén üledékek tarka agyagokból állnak.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_094",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A hévízkutak termelési hőmérséklete 30-98 °C.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_095",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A Budapest alatti termálforrások triász karsztrendszerekből erednek.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_096",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az MTA ATOMKI Debrecenben működik.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_097",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keretmodell minősége nem befolyásolja az áramlási modell minőségét.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_098",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "Az alföldi termálvízadóban artézi viszonyok gyakoriak.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_099",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keresztvalidáció minden pontot ideiglenesen kihagyva értékeli az interpoláció pontosságát.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_fb_001",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A hidrogeológiai keretmodell a földtani keretmodell _____ hidraulikai tulajdonságok alapján.",
+    "correct_answer": "egyszerűsítése",
+    "explanation": "A helyes válasz: egyszerűsítése."
+  },
+  {
+    "id": "ch20_fb_002",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A HydrogeologicUnit tábla _____ adatkészlet.",
+    "correct_answer": "nem térbeli",
+    "explanation": "A helyes válasz: nem térbeli."
+  },
+  {
+    "id": "ch20_fb_003",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A HorizonID _____ felfelé számozott egész szám.",
+    "correct_answer": "alulról",
+    "explanation": "A helyes válasz: alulról."
+  },
+  {
+    "id": "ch20_fb_004",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoArea poligonok az egység _____ kiterjedését definiálják.",
+    "correct_answer": "2D területi",
+    "explanation": "A helyes válasz: 2D területi."
+  },
+  {
+    "id": "ch20_fb_005",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoSection _____ típusú objektumosztály.",
+    "correct_answer": "multipatch",
+    "explanation": "A helyes válasz: multipatch."
+  },
+  {
+    "id": "ch20_fb_006",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az XS2D rendszer a szelvényadatokat _____ síkra vetíti.",
+    "correct_answer": "2D megjelenítési",
+    "explanation": "A helyes válasz: 2D megjelenítési."
+  },
+  {
+    "id": "ch20_fb_007",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoVolume elemek _____ testekként ábrázolják az egységeket.",
+    "correct_answer": "szilárd",
+    "explanation": "A helyes válasz: szilárd."
+  },
+  {
+    "id": "ch20_fb_008",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoRasters _____ gyűjteménye leíró attribútumokkal.",
+    "correct_answer": "raszteradatkészletek",
+    "explanation": "A helyes válasz: raszteradatkészletek."
+  },
+  {
+    "id": "ch20_fb_009",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A krigelés _____ térképet is ad az interpoláció mellett.",
+    "correct_answer": "variancia",
+    "explanation": "A helyes válasz: variancia."
+  },
+  {
+    "id": "ch20_fb_010",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Tóth József elmélete szerint a felszín alatti vízáramlás _____ rendszerekbe szerveződik.",
+    "correct_answer": "egymásba ágyazott hierarchikus",
+    "explanation": "A helyes válasz: egymásba ágyazott hierarchikus."
+  },
+  {
+    "id": "ch20_fb_011",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A hidraulikai folytonosság fogalmát _____ József fogalmazta meg.",
+    "correct_answer": "Tóth",
+    "explanation": "A helyes válasz: Tóth."
+  },
+  {
+    "id": "ch20_fb_012",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A felső-pannon termálvízadó hőmérséklete _____°C.",
+    "correct_answer": "30-80",
+    "explanation": "A helyes válasz: 30-80."
+  },
+  {
+    "id": "ch20_fb_013",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GemPy _____ megközelítést használ a 3D modellezéshez.",
+    "correct_answer": "potenciálmező",
+    "explanation": "A helyes válasz: potenciálmező."
+  },
+  {
+    "id": "ch20_fb_014",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Pannon-tó mintegy _____-4 M éve létezett.",
+    "correct_answer": "11,6",
+    "explanation": "A helyes válasz: 11,6."
+  },
+  {
+    "id": "ch20_fb_015",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A függőleges torzítás _____ a dőlésszögeket.",
+    "correct_answer": "eltúlozza",
+    "explanation": "A helyes válasz: eltúlozza."
+  },
+  {
+    "id": "ch20_fb_016",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az Alföld keretmodellje jellemzően _____-5 egységet tartalmaz.",
+    "correct_answer": "4",
+    "explanation": "A helyes válasz: 4."
+  },
+  {
+    "id": "ch20_fb_017",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A negyedidőszaki üledékek vastagsága _____-300 m.",
+    "correct_answer": "50",
+    "explanation": "A helyes válasz: 50."
+  },
+  {
+    "id": "ch20_fb_018",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A vetővel határolt interpoláció _____ blokkokra osztja a területet.",
+    "correct_answer": "szerkezeti",
+    "explanation": "A helyes válasz: szerkezeti."
+  },
+  {
+    "id": "ch20_fb_019",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A felső-pannon K értéke _____-10⁻⁴ m/s.",
+    "correct_answer": "10⁻⁵",
+    "explanation": "A helyes válasz: 10⁻⁵."
+  },
+  {
+    "id": "ch20_fb_020",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az alsó-pannon záró összlet K értéke _____-10⁻⁷ m/s.",
+    "correct_answer": "10⁻⁹",
+    "explanation": "A helyes válasz: 10⁻⁹."
+  },
+  {
+    "id": "ch20_fb_021",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Tóth három áramlási rendszertípust különböztet meg: helyi, _____ és regionális.",
+    "correct_answer": "köztes",
+    "explanation": "A helyes válasz: köztes."
+  },
+  {
+    "id": "ch20_fb_022",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A helyi rendszerek tartózkodási ideje _____.",
+    "correct_answer": "évek-évtizedek",
+    "explanation": "A helyes válasz: évek-évtizedek."
+  },
+  {
+    "id": "ch20_fb_023",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A regionális rendszerek tartózkodási ideje _____.",
+    "correct_answer": "ezerévek-tízezerévek",
+    "explanation": "A helyes válasz: ezerévek-tízezerévek."
+  },
+  {
+    "id": "ch20_fb_024",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Debreceni-árok alaphegységi mélysége eléri a _____ m-t.",
+    "correct_answer": "-4200",
+    "explanation": "A helyes válasz: -4200."
+  },
+  {
+    "id": "ch20_fb_025",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az átszivárgási tényező képlete b = _____/m'.",
+    "correct_answer": "K'",
+    "explanation": "A helyes válasz: K'."
+  },
+  {
+    "id": "ch20_fb_026",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A debreceni átszivárgási intenzitás ~_____ m/év.",
+    "correct_answer": "0,49",
+    "explanation": "A helyes válasz: 0,49."
+  },
+  {
+    "id": "ch20_fb_027",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A ¹⁴C kormeghatározás _____-30 000 éves vizekre alkalmazható.",
+    "correct_answer": "1000",
+    "explanation": "A helyes válasz: 1000."
+  },
+  {
+    "id": "ch20_fb_028",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A trícium _____éves vizek jelzésére szolgál.",
+    "correct_answer": "<50",
+    "explanation": "A helyes válasz: <50."
+  },
+  {
+    "id": "ch20_fb_029",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A hélium kormeghatározás _____ éves vizekre alkalmas.",
+    "correct_answer": ">30 000",
+    "explanation": "A helyes válasz: >30 000."
+  },
+  {
+    "id": "ch20_fb_030",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Vogel ajánlott kezdeti aktivitása _____ ± 5% pMC.",
+    "correct_answer": "85",
+    "explanation": "A helyes válasz: 85."
+  },
+  {
+    "id": "ch20_fb_031",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoRasters katalógus _____ attribútummal indexeli a rasztereket.",
+    "correct_answer": "HorizonID",
+    "explanation": "A helyes válasz: HorizonID."
+  },
+  {
+    "id": "ch20_fb_032",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoSection SectionID attribútuma a SectionLine _____ értékével egyenlő.",
+    "correct_answer": "HydroID",
+    "explanation": "A helyes válasz: HydroID."
+  },
+  {
+    "id": "ch20_fb_033",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az alföldi termálkutak száma 2000-ben _____.",
+    "correct_answer": "1289",
+    "explanation": "A helyes válasz: 1289."
+  },
+  {
+    "id": "ch20_fb_034",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Makói-árok mélysége meghaladja a _____ m-t.",
+    "correct_answer": "7000",
+    "explanation": "A helyes válasz: 7000."
+  },
+  {
+    "id": "ch20_fb_035",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az Endrődi Formáció _____ márgákból és turbiditokból áll.",
+    "correct_answer": "mélyvízi",
+    "explanation": "A helyes válasz: mélyvízi."
+  },
+  {
+    "id": "ch20_fb_036",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az Újfalui Formáció _____ és selfüledékekből áll.",
+    "correct_answer": "delta-",
+    "explanation": "A helyes válasz: delta-."
+  },
+  {
+    "id": "ch20_fb_037",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Zagyvai Formáció _____ üledékekből áll.",
+    "correct_answer": "szárazföldi",
+    "explanation": "A helyes válasz: szárazföldi."
+  },
+  {
+    "id": "ch20_fb_038",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GRACE műhold _____ léptékű változásokat becsül.",
+    "correct_answer": "medence",
+    "explanation": "A helyes válasz: medence."
+  },
+  {
+    "id": "ch20_fb_039",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A SkyTEM _____ elektromágneses felmérés.",
+    "correct_answer": "légi",
+    "explanation": "A helyes válasz: légi."
+  },
+  {
+    "id": "ch20_fb_040",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az InSAR _____ kimutatására alkalmas.",
+    "correct_answer": "felszínsüllyedés",
+    "explanation": "A helyes válasz: felszínsüllyedés."
+  },
+  {
+    "id": "ch20_fb_041",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A keretmodell és a modell közötti kapcsolat _____.",
+    "correct_answer": "kétirányú",
+    "explanation": "A helyes válasz: kétirányú."
+  },
+  {
+    "id": "ch20_fb_042",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A szelvény vízszintes tengelye a _____ menti távolságot ábrázolja.",
+    "correct_answer": "szelvényvonal",
+    "explanation": "A helyes válasz: szelvényvonal."
+  },
+  {
+    "id": "ch20_fb_043",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A pannon sorozat jellegzetes _____ architektúrával rendelkezik.",
+    "correct_answer": "klinoform",
+    "explanation": "A helyes válasz: klinoform."
+  },
+  {
+    "id": "ch20_fb_044",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A rasztercella mérete ≤ adattávolság × _____.",
+    "correct_answer": "1/4",
+    "explanation": "A helyes válasz: 1/4."
+  },
+  {
+    "id": "ch20_fb_045",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Magyarország vízkútjainak _____%-a a felső-pannon egységben van.",
+    "correct_answer": "95",
+    "explanation": "A helyes válasz: 95."
+  },
+  {
+    "id": "ch20_fb_046",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A nyírségi fészkelt kutak _____-35 m-es potenciálkülönbséget mutatnak.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch20_fb_047",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoArea poligonok HGUID-n keresztül kapcsolódnak a _____ táblához.",
+    "correct_answer": "HydrogeologicUnit",
+    "explanation": "A helyes válasz: HydrogeologicUnit."
+  },
+  {
+    "id": "ch20_fb_048",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A SectionLine VertExag2D attribútuma a _____ tényezőt tárolja.",
+    "correct_answer": "függőleges torzítási",
+    "explanation": "A helyes válasz: függőleges torzítási."
+  },
+  {
+    "id": "ch20_fb_049",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A keretmodell _____ felületekből és tulajdonságfelületekből áll.",
+    "correct_answer": "formáció",
+    "explanation": "A helyes válasz: formáció."
+  },
+  {
+    "id": "ch20_fb_050",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az alsó-pannon turbidit homokkövek _____ zárt vízadókat képezhetnek.",
+    "correct_answer": "mély",
+    "explanation": "A helyes válasz: mély."
+  },
+  {
+    "id": "ch20_fb_051",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az Alföld fő utánpótlási területei a Nyírség és a _____.",
+    "correct_answer": "Duna-Tisza köze",
+    "explanation": "A helyes válasz: Duna-Tisza köze."
+  },
+  {
+    "id": "ch20_fb_052",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A gravitáció által hajtott zóna az Alföldön a felső ~_____ m.",
+    "correct_answer": "400-1700",
+    "explanation": "A helyes válasz: 400-1700."
+  },
+  {
+    "id": "ch20_fb_053",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A túlnyomásos tektonikus zóna ~_____ m alatt kezdődik.",
+    "correct_answer": "1700",
+    "explanation": "A helyes válasz: 1700."
+  },
+  {
+    "id": "ch20_fb_054",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A _____ keringés szikes talajokat és szódás tavakat hoz létre az Alföldön.",
+    "correct_answer": "felfelé irányuló",
+    "explanation": "A helyes válasz: felfelé irányuló."
+  },
+  {
+    "id": "ch20_fb_055",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A RMSE és _____ a leggyakoribb validálási mutatók.",
+    "correct_answer": "MAE",
+    "explanation": "A helyes válasz: MAE."
+  },
+  {
+    "id": "ch20_fb_056",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az XS2D_Panel _____ elemű osztály.",
+    "correct_answer": "poligon",
+    "explanation": "A helyes válasz: poligon."
+  },
+  {
+    "id": "ch20_fb_057",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az XS2D_BoreLine _____ attribútuma a szelvénytávolságot rögzíti.",
+    "correct_answer": "Offset",
+    "explanation": "A helyes válasz: Offset."
+  },
+  {
+    "id": "ch20_fb_058",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az XS2D_Catalog _____ tábla a szelvénykomponensek nyilvántartásához.",
+    "correct_answer": "kezelési",
+    "explanation": "A helyes válasz: kezelési."
+  },
+  {
+    "id": "ch20_fb_059",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoVolume elemek a határoló _____ építik fel.",
+    "correct_answer": "felületekből",
+    "explanation": "A helyes válasz: felületekből."
+  },
+  {
+    "id": "ch20_fb_060",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A negyedidőszaki alsó-pleisztocén K értéke _____-10⁻³ m/s.",
+    "correct_answer": "10⁻⁴",
+    "explanation": "A helyes válasz: 10⁻⁴."
+  },
+  {
+    "id": "ch20_fb_061",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A magyar vízkutak _____%-a negyedidőszaki üledékekben van.",
+    "correct_answer": "80",
+    "explanation": "A helyes válasz: 80."
+  },
+  {
+    "id": "ch20_fb_062",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Hantush-Jacob modell a _____ vízadók matematikai leírása.",
+    "correct_answer": "átszivárgó",
+    "explanation": "A helyes válasz: átszivárgó."
+  },
+  {
+    "id": "ch20_fb_063",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az átszivárgási paraméter B = √(T × _____/K').",
+    "correct_answer": "m'",
+    "explanation": "A helyes válasz: m'."
+  },
+  {
+    "id": "ch20_fb_064",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A ¹⁴C kor az _____ modell szerint számítható.",
+    "correct_answer": "Ingerson-Pearson",
+    "explanation": "A helyes válasz: Ingerson-Pearson."
+  },
+  {
+    "id": "ch20_fb_065",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A deplétált stabil izotóp-értékek _____ korszakban történt utánpótlódást jeleznek.",
+    "correct_answer": "glaciális",
+    "explanation": "A helyes válasz: glaciális."
+  },
+  {
+    "id": "ch20_fb_066",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A keretmodell felépítésének első lépése a _____ modell meghatározása.",
+    "correct_answer": "fogalmi",
+    "explanation": "A helyes válasz: fogalmi."
+  },
+  {
+    "id": "ch20_fb_067",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A FEFLOW előfeldolgozás a keretmodell-építés egyik _____ platformja.",
+    "correct_answer": "szoftver",
+    "explanation": "A helyes válasz: szoftver."
+  },
+  {
+    "id": "ch20_fb_068",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A diszkordancia azt jelenti, hogy egységek _____ a terület egy részén.",
+    "correct_answer": "hiányoznak",
+    "explanation": "A helyes válasz: hiányoznak."
+  },
+  {
+    "id": "ch20_fb_069",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A felszíni geológiai térképek a feltáruló _____ típusok eloszlását mutatják.",
+    "correct_answer": "kőzet- és üledék",
+    "explanation": "A helyes válasz: kőzet- és üledék."
+  },
+  {
+    "id": "ch20_fb_070",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A termálvízadó rendszer _____ viszonyai gyakoriak.",
+    "correct_answer": "artézi",
+    "explanation": "A helyes válasz: artézi."
+  },
+  {
+    "id": "ch20_fb_071",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A hajdú-bihari szelvény ~_____ km hosszú.",
+    "correct_answer": "80",
+    "explanation": "A helyes válasz: 80."
+  },
+  {
+    "id": "ch20_fb_072",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A termálvízadó jellemző transzmisszivitása _____-500 m²/nap.",
+    "correct_answer": "200",
+    "explanation": "A helyes válasz: 200."
+  },
+  {
+    "id": "ch20_fb_073",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A jászsági pliocén üledékek vastagsága _____-500 m.",
+    "correct_answer": "300",
+    "explanation": "A helyes válasz: 300."
+  },
+  {
+    "id": "ch20_fb_074",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A krigelés _____ arányát 1,5-nek mérték a pannon felszín interpolálásánál.",
+    "correct_answer": "anizotrópia",
+    "explanation": "A helyes válasz: anizotrópia."
+  },
+  {
+    "id": "ch20_fb_075",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A krigelési RMSE a pannon felszínre _____ m volt.",
+    "correct_answer": "8,3",
+    "explanation": "A helyes válasz: 8,3."
+  },
+  {
+    "id": "ch20_fb_076",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A szintvonalak teljes tartománya a pannon felszínnél _____ m.",
+    "correct_answer": "270",
+    "explanation": "A helyes válasz: 270."
+  },
+  {
+    "id": "ch20_fb_077",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A preneogén alaphegység kristályos és _____ kőzetekből áll.",
+    "correct_answer": "karbonát",
+    "explanation": "A helyes válasz: karbonát."
+  },
+  {
+    "id": "ch20_fb_078",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A budapesti termálforrások hőmérséklete ~_____-70 °C.",
+    "correct_answer": "30",
+    "explanation": "A helyes válasz: 30."
+  },
+  {
+    "id": "ch20_fb_079",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Nyírség az Alföld egyik fő _____ területe.",
+    "correct_answer": "utánpótlási",
+    "explanation": "A helyes válasz: utánpótlási."
+  },
+  {
+    "id": "ch20_fb_080",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az Alföld negyedidőszaki sekély vízadójának hőmérséklete _____-15 °C.",
+    "correct_answer": "10",
+    "explanation": "A helyes válasz: 10."
+  },
+  {
+    "id": "ch20_fb_081",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az XS2D rendszer _____ koordináta-transzformációt definiál.",
+    "correct_answer": "lokális",
+    "explanation": "A helyes válasz: lokális."
+  },
+  {
+    "id": "ch20_fb_082",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A RESQML a _____ modellezési szabvány.",
+    "correct_answer": "tároló",
+    "explanation": "A helyes válasz: tároló."
+  },
+  {
+    "id": "ch20_fb_083",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GeoArea poligon és a kibúvás-térkép között az a különbség, hogy a GeoArea a _____ kiterjedést is tartalmazza.",
+    "correct_answer": "fedett",
+    "explanation": "A helyes válasz: fedett."
+  },
+  {
+    "id": "ch20_fb_084",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A SectionLine és a GeoSection közötti kapcsolat _____ a-sokhoz.",
+    "correct_answer": "egy",
+    "explanation": "A helyes válasz: egy."
+  },
+  {
+    "id": "ch20_fb_085",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A formációtető-azonosítás a pannon üledékekben _____ jellegű.",
+    "correct_answer": "értelmező",
+    "explanation": "A helyes válasz: értelmező."
+  },
+  {
+    "id": "ch20_fb_086",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A valószínűségi keretmodell-megközelítés _____ realizációt generál.",
+    "correct_answer": "többszörös",
+    "explanation": "A helyes válasz: többszörös."
+  },
+  {
+    "id": "ch20_fb_087",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az alföldi keretmodell SHALLOW_AQ kódja a _____ sekély vízadónak felel meg.",
+    "correct_answer": "negyedidőszaki",
+    "explanation": "A helyes válasz: negyedidőszaki."
+  },
+  {
+    "id": "ch20_fb_088",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A debreceni termálvízmodell _____ alegységeket épített be a termálvízadón belül.",
+    "correct_answer": "permeábilisebb delta-front",
+    "explanation": "A helyes válasz: permeábilisebb delta-front."
+  },
+  {
+    "id": "ch20_fb_089",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A GemPy integrálódik a szabványos Python _____ könyvtárakkal.",
+    "correct_answer": "geotudományi",
+    "explanation": "A helyes válasz: geotudományi."
+  },
+  {
+    "id": "ch20_fb_090",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Subsurface könyvtárat a Software _____ közösség fejlesztette.",
+    "correct_answer": "Underground",
+    "explanation": "A helyes válasz: Underground."
+  },
+  {
+    "id": "ch20_fb_091",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A keretmodell építés iteratív, mert minden lépés _____ problémákat tár fel.",
+    "correct_answer": "korábbi",
+    "explanation": "A helyes válasz: korábbi."
+  },
+  {
+    "id": "ch20_fb_092",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A EOV koordináta-rendszer és az ETRS89 közötti _____ gondos figyelmet igényel.",
+    "correct_answer": "transzformáció",
+    "explanation": "A helyes válasz: transzformáció."
+  },
+  {
+    "id": "ch20_fb_093",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A régebbi (1970 előtti) fúrólyukak koordinátái _____ pontosságú lehetnek.",
+    "correct_answer": "változó",
+    "explanation": "A helyes válasz: változó."
+  },
+  {
+    "id": "ch20_fb_094",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A G3P rendszer a _____ GFZ fejlesztése.",
+    "correct_answer": "potsdami",
+    "explanation": "A helyes válasz: potsdami."
+  },
+  {
+    "id": "ch20_essay_001",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a hidrogeológiai keretmodell fogalmát és különbségét a földtani keretmodelltől!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_002",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Részletezze a HydrogeologicUnit tábla attribútumait és a HorizonID szerepét!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_003",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a GeoArea, GeoSection, GeoVolume és GeoRasters adatstruktúrákat!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_004",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Magyarázza el az XS2D koordináta-transzformáció matematikai alapjait!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_005",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen interpolációs módszereket alkalmaznak a hidrosztratigráfiai felületeknél?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_006",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Részletezze a fúrólyuk-adatoktól a felületekig vezető munkafolyamatot!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_007",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan számítható egy hidrogeológiai egység térfogata raszterfelületekből?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_008",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse Tóth József gravitáció által hajtott áramlási rendszer elméletét!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_009",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a hidraulikai folytonosság fogalma és jelentősége?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_010",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Részletezze a Pannon-medence földtani hátterét és üledéksorát!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_011",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az Alföld öt egységű hidrogeológiai keretmodelljét!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_012",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen kihívásokat jelent a formációtető-azonosítás a pannon üledékekben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_013",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan épül fel a GeoRasters katalógus az alföldi keretmodellhez?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_014",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az XS2D szelvénykészítés gyakorlati lépéseit és a függőleges torzítás hatásait!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_015",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a vetővel határolt interpoláció és mikor szükséges?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_016",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan támogatja a keretmodell a termálvíz-gazdálkodást?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_017",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a ¹⁴C, trícium és stabil izotóp kormeghatározási módszereket!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_018",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen eredményeket hoztak a nyírségi izotópos vizsgálatok?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_019",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan validálják a keretmodellt terepi adatokkal?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_020",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen nyílt forráskódú eszközök léteznek a keretmodell-építéshez?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_021",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a Hantush-Jacob átszivárgó vízadó modellt!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_022",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen átszivárgási eredményeket mutat a debreceni esettanulmány?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_023",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan kapcsolódik a keretmodell a felszín alatti víz áramlási modellezéséhez?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_024",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a visszacsatolás a modellezéstől a keretmodellhez?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_025",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a Pannon-medence gravitáció által hajtott áramlási rendszerét!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_026",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen szerepet játszik a tektonikus kompresszió a mély áramlási rendszerben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_027",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az Alföld utánpótlási és megcsapolási területeit!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_028",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen adatminőségi kihívások merülnek fel a keretmodell-építésnél?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_029",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan kezelhető a léptékválasztás problémája?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_030",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a diszkordanciák kezelését a keretmodellben!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_031",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a GeoSection és a SectionLine közötti kapcsolat?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_032",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan működik a GeoRasters HorizonID-vel való indexelés?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_033",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a távérzékelés hozzájárulását a keretmodell-építéshez!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_034",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen gépi tanulási módszerek alkalmazhatók a kőzettani osztályozásra?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_035",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi az implicit modellezés és a bizonytalanság-számszerűsítés előnye?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_036",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az alföldi szelvény jellemzőit Hajdú-Bihar megyén keresztül!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_037",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen hőmérsékleti jelöléseket tartalmaz a hajdú-bihari szelvény?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_038",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan tükrözi a felső-pannon vastagságeloszlás a medence progradációs feltöltődését?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_039",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a preneogén alaphegység szerepe a keretmodellben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_040",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az Endrődi, Algyői és Újfalui Formációk jellemzőit!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_041",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen tulajdonságfelületek tárolhatók a GeoRasters katalógusban?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_042",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan kezelhető az oldalirányú heterogenitás a pannon üledékekben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_043",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a HorizonID alhorizont-indexeinek használata?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_044",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a regionális és helyi léptékű keretmodellek közötti különbségeket!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_045",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen szerepet játszik a GRACE a keretmodell validálásában?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_046",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan hat a klinoform-architektúra a hidrosztratigráfiára?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_047",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a negyedidőszaki alluviális üledékek vízföldtani jellemzőit!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_048",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a pliocén átmeneti zóna szerepe a keretmodellben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_049",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan befolyásolja a tektonikai süllyedés a vízadó-rendszert?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_050",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a keretmodell felépítésének 9 lépéses munkafolyamatát!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_051",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi az iteratív finomítás szerepe a keretmodell-építésben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_052",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan használják a szelvényeket minőség-ellenőrzési eszközként?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_053",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a nemzetközi keretmodell-építési gyakorlatok közötti különbségeket!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_054",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a FEFLOW szerepe a keretmodell-építésben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_055",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan hasonlítható össze az Arc Hydro GW és a GemPy megközelítés?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_056",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a ¹⁴C kor értelmezési nehézségeit átszivárgó rendszerekben!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_057",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen kapcsolat van a felszín alatti víz kora és az áramlási rendszerek között?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_058",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan igazolták az átszivárgást a debreceni vízműnél kétféle módszerrel?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_059",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a deplétált stabil izotóp-jelzés jelentősége?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_060",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a Tóth-féle elmélet három áramlási rendszertípusát részletesen!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_061",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan határozza meg a keretmodell a szimulációs modell bemeneteit?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_062",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen INSPIRE szabványok vonatkoznak a keretmodell-adatokra?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_063",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a variogram fogalmát és szerepét a krigelésben!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_064",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen hibák keletkezhetnek a függőleges torzítás alkalmazásakor?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_065",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan épül fel az XS2D elemlostály-család?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_066",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen gyakorlati korlátai vannak a GeoVolume vizualizációnak?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_067",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a természetes szomszédság interpoláció előnyeit és korlátait!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_068",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a spline interpoláció jellemzője és mikor alkalmazható?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_069",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan használható a keresztvalidáció az interpoláció értékelésére?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_070",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a SkyTEM légi elektromágneses felmérés hasznosságát!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_071",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen szerepet játszik a QGIS a keretmodell-építésben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_072",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan integrálható a GIS és a felszín alatti vízmodellezés?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_073",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az alföldi termálvíz-termelés főbb jellemzőit!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_074",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a medenceléptékű validálás szerepe a keretmodellben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_075",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan hat a geotermikus gradiens a vízadó-rendszerre?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_076",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a negyedidőszaki üledékek változékonyságát az Alföldön!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_077",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen intézményi háttér szükséges a keretmodell-építéshez Magyarországon?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_078",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan fejlődött a keretmodell-építés technológiája az utóbbi évtizedekben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_079",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a GIS-alapú keretmodell-termékeket (térképek, szelvények, 3D jelenetek)!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_080",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen kihívásokat jelent a régi és új fúrólyukadatok integrálása?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_081",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan alkalmazható a gépi tanulás a keretmodell-építés automatizálására?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_082",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a szerepe a kalibrációnak a keretmodell és a szimulációs modell közötti visszacsatolásban?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_083",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a RESQML és a GeoSciML szabványok közötti különbségeket!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_084",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan építhető felszín alatti víz keretmodell nyílt forráskódú eszközökkel?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_085",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a szikes talajok és szódás tavak kapcsolata a felszín alatti vízáramlással?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_086",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a rasztercellaméret megválasztásának szempontjait!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_087",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan kezeli a keretmodell a fokozatos formációátmeneteket?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_088",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Milyen szennyeződési kockázatokat azonosít a keretmodell?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_089",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a GRACE-FO és a G3P rendszer szerepét!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_090",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan hat az éghajlatváltozás az alföldi keretmodellre?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_091",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a folytonos felszín fogalma és létrehozása a keretmodellben?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_092",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a formáció-azonosítási pontok kinyerésének és validálásának módszereit!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_093",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan támogatja a keretmodell a VKI-megfelelőséget Magyarországon?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_094",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a különbség a determinisztikus és valószínűségi keretmodellek között?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_095",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse az alföldi esettanulmány szelvényének jellemzőit részletesen!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_096",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan hat a Pannon-medence tektonikája az alaphegység topográfiájára?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_097",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Mi a különbség a GeoArea és a GeologyArea között?",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_essay_098",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a keretmodell felépítésének adatforrásait és módszereit összefoglalóan!",
+    "explanation": "A válasznak a 20. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch20_mcq_083",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi jellemzi a Pannon-medence szegélyeinek vetőződését?",
+    "options": [
+      "Nincs vetőződés",
+      "Több száz-ezer méteres alaphegység-elvetések",
+      "Kizárólag vízszintes elmozdulások",
+      "Csak felszíni repedések"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_084",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a krigelés variogram hatótávolságának jelentése?",
+    "options": [
+      "A minta mérete",
+      "Az a távolság, amelyen túl az adatpontok korrelálatlanok",
+      "A cella mérete",
+      "A formáció vastagsága"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_085",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen adatforrásból származnak az alaphegység felszínének adatai?",
+    "options": [
+      "Kizárólag felszíni mérések",
+      "Szeizmikus reflexiós mérések és mély fúrólyukak",
+      "Műholdas képek",
+      "Csapadékmérések"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_086",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Floridai Vízadó Rendszer jellegzetessége?",
+    "options": [
+      "Kis kiterjedés",
+      "A világ egyik legtermékenyebbike",
+      "Száraz éghajlatú terület",
+      "Vulkáni eredetű"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_087",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az interpolációs anizotrópia jellemzője a pannon felszínnél?",
+    "options": [
+      "Nincs anizotrópia",
+      "1,5-ös arány, ÉNy-DK főtengely",
+      "10-szeres arány",
+      "É-D irányú"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_088",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a selfjszegély üledékek (Algyői Fm) jellemzője?",
+    "options": [
+      "Mélyvízi",
+      "Átmeneti, változó permeabilitású",
+      "Felszíni",
+      "Vulkáni"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_089",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi az alföldi negyedidőszaki vízadó fő szennyeződési kockázata?",
+    "options": [
+      "Vulkáni gázok",
+      "Urbanizáció és mezőgazdaság",
+      "Tengeri szennyeződés",
+      "Meteor becsapódás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_090",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mit jelent a 'koaleszálás' a pannon homoktestek esetében?",
+    "options": [
+      "Szétválás",
+      "Szomszédos homoktestek összeolvadása",
+      "Eltűnés",
+      "Felszínre bukkanás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_091",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen típusú a Budapest alatti termálforrások vízadó-rendszere?",
+    "options": [
+      "Alluviális",
+      "Repedezett triász karbonát",
+      "Pannon homokkő",
+      "Kristályos alaphegység"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_092",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen magyar intézmény volt korábban a MÁFI?",
+    "options": [
+      "OVF",
+      "MBFSZ (jelenleg SZTFH)",
+      "OMSZ",
+      "MTA"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_093",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a szikes talajok kialakulásának hidraulikai oka?",
+    "options": [
+      "Csapadékhiány egyedül",
+      "Mély, sós víz felfelé szivárgása és édesvízzel való keveredése",
+      "Vulkáni tevékenység",
+      "Műtrágyázás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_094",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen mélységben indul a túlnyomásos zóna az Alföldön?",
+    "options": [
+      "100 m",
+      "500 m",
+      "~1700 m",
+      "5000 m"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_095",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a Neuman és Witherspoon (1972) kísérletének eredménye?",
+    "options": [
+      "A félvízrekesztők tökéletesen zártak",
+      "49 m vastag félvízrekesztőn ~30 nap után hidraulikus válasz észlelhető",
+      "A víz nem áramlik függőlegesen",
+      "A kőzet nem deformálódik"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_096",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a GemPy exportálási képessége?",
+    "options": [
+      "Kizárólag PDF",
+      "MODFLOW-kompatibilis formátumok",
+      "Kizárólag képek",
+      "Nincs exportálás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_097",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen felületet ír le a krigelési nugget-hatás?",
+    "options": [
+      "A felső szint felszínét",
+      "A mérési bizonytalanságot és rövid hatótávolságú változékonyságot",
+      "A cella méretét",
+      "A rétegvastagságot"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_098",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a PyVista könyvtár felhasználása?",
+    "options": [
+      "Szöveges fájl kezelés",
+      "3D vizualizáció és adatkezelés Python-ban",
+      "Adatbázis-kezelés",
+      "Webfejlesztés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_099",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Mi a felső-pannon termálvízadó TDS tartománya?",
+    "options": [
+      "<100 mg/L",
+      "500-2000 mg/L",
+      "10 000-50 000 mg/L",
+      "100 000+ mg/L"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_mcq_100",
+    "type": "mcq",
+    "chapter": 20,
+    "question": "Milyen módszerrel készítik a termálvízadó hőmérsékleti felszínt?",
+    "options": [
+      "Műholdas mérés",
+      "Több száz kút talpponti hőmérsékletméréséből interpolálva",
+      "Légköri modellezés",
+      "Felszíni hőkamera"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_tf_100",
+    "type": "true_false",
+    "chapter": 20,
+    "statement": "A keretmodell építés során a szelvények hibákat tárhatnak fel az adatokban.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_fb_095",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A terminálvízadó TDS tartománya _____-2000 mg/L.",
+    "correct_answer": "500",
+    "explanation": "A helyes válasz: 500."
+  },
+  {
+    "id": "ch20_fb_096",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A pannon homoktestek vastagsága _____-25 m.",
+    "correct_answer": "2",
+    "explanation": "A helyes válasz: 2."
+  },
+  {
+    "id": "ch20_fb_097",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "Az alföldi alaphegység mélysége a sasbérceken _____ m.",
+    "correct_answer": "500",
+    "explanation": "A helyes válasz: 500."
+  },
+  {
+    "id": "ch20_fb_098",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Hortobágy a sekély _____ függ.",
+    "correct_answer": "talajvíztől",
+    "explanation": "A helyes válasz: talajvíztől."
+  },
+  {
+    "id": "ch20_fb_099",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A Pannon-medence szegélyein _____ extenziós vetők működnek.",
+    "correct_answer": "miocén",
+    "explanation": "A helyes válasz: miocén."
+  },
+  {
+    "id": "ch20_fb_100",
+    "type": "fill_blank",
+    "chapter": 20,
+    "question": "A regionális áramlási rendszer az egész _____ átível.",
+    "correct_answer": "medencén",
+    "explanation": "A helyes válasz: medencén."
+  },
+  {
+    "id": "ch20_essay_099",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Hogyan kapcsolódik a keretmodell a VKI felszín alatti víztestek lehatárolásához?",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch20_essay_100",
+    "type": "essay",
+    "chapter": 20,
+    "question": "Ismertesse a Pannon-medence tektonikai hátterét és hatását a hidrosztratigráfiára!",
+    "explanation": "A fejezet tartalma alapján."
+  }
+]

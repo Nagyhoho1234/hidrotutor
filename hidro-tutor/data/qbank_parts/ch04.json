@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Who formalized the three views of GIS (geodatabase, geovisualization, geoprocessing) as used in modern water resources analysis?",
+    "options": [
+      "A) Dana Tomlin",
+      "B) David Maidment",
+      "C) Michael Goodchild",
+      "D) The concept evolved from multiple GIS platforms rather than a single author"
+    ],
+    "correct": "D",
+    "explanation": "The three views emerged from modern GIS platform architecture, not from a single researcher."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the native file format for QGIS projects' spatial data storage?",
+    "options": [
+      "A) Shapefile (.shp)",
+      "B) File Geodatabase (.gdb)",
+      "C) GeoPackage (.gpkg)",
+      "D) NetCDF (.nc)"
+    ],
+    "correct": "C",
+    "explanation": "GeoPackage (.gpkg) is the OGC-standard format serving as QGIS's native format."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the maximum field name length in a shapefile?",
+    "options": [
+      "A) 64 characters",
+      "B) 10 characters",
+      "C) 32 characters",
+      "D) 256 characters"
+    ],
+    "correct": "B",
+    "explanation": "Shapefiles truncate field names to 10 characters."
+  },
+  {
+    "type": "mcq",
+    "question": "Which EU directive requires member states to publish spatial data through standardized web services?",
+    "options": [
+      "A) Water Framework Directive",
+      "B) Floods Directive",
+      "C) INSPIRE Directive",
+      "D) Nitrates Directive"
+    ],
+    "correct": "C",
+    "explanation": "The INSPIRE Directive requires EU member states to publish spatial data through OGC-compliant web services."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the maximum default file size per table in a file geodatabase?",
+    "options": [
+      "A) 2 GB",
+      "B) 256 GB",
+      "C) 1 TB",
+      "D) 10 TB"
+    ],
+    "correct": "C",
+    "explanation": "File geodatabases support up to 1 TB per table by default, expandable to 256 TB."
+  },
+  {
+    "type": "mcq",
+    "question": "Which classification method identifies natural clusters and is the best default for exploratory mapping?",
+    "options": [
+      "A) Equal interval",
+      "B) Quantile",
+      "C) Natural breaks (Jenks)",
+      "D) Standard deviation"
+    ],
+    "correct": "C",
+    "explanation": "Natural breaks (Jenks) identifies natural clusters and is the best default for exploratory mapping."
+  },
+  {
+    "type": "mcq",
+    "question": "In the US HUC system, a HUC12 code '16010203xxxx' belongs to which HUC8 basin?",
+    "options": [
+      "A) 16010203",
+      "B) 160102",
+      "C) 1601020",
+      "D) 16010"
+    ],
+    "correct": "A",
+    "explanation": "The first 8 digits of a HUC12 code identify its parent HUC8."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the EU Nitrates Directive threshold for nitrate concentration?",
+    "options": [
+      "A) 10 mg/L",
+      "B) 25 mg/L",
+      "C) 50 mg/L",
+      "D) 100 mg/L"
+    ],
+    "correct": "C",
+    "explanation": "The EU Nitrates Directive threshold is 50 mg/L."
+  },
+  {
+    "type": "mcq",
+    "question": "Which dataset provides a global stream network with discharge estimates and Strahler order?",
+    "options": [
+      "A) NHDPlus",
+      "B) HydroRIVERS",
+      "C) EU-Hydro",
+      "D) WISE"
+    ],
+    "correct": "B",
+    "explanation": "HydroRIVERS (HydroSHEDS) provides global stream networks with discharge and Strahler order."
+  },
+  {
+    "type": "mcq",
+    "question": "What does EROM stand for in NHDPlus?",
+    "options": [
+      "A) Enhanced River Operations Model",
+      "B) Enhanced Runoff Model",
+      "C) Estimated River Observation Metrics",
+      "D) European River Outlet Measurements"
+    ],
+    "correct": "B",
+    "explanation": "EROM provides estimated mean annual flow, velocity, and temperature for each reach."
+  },
+  {
+    "type": "mcq",
+    "question": "Which cloud GIS platform pioneered planetary-scale geospatial analysis?",
+    "options": [
+      "A) Microsoft Planetary Computer",
+      "B) ArcGIS Online",
+      "C) Google Earth Engine",
+      "D) Copernicus Data Space"
+    ],
+    "correct": "C",
+    "explanation": "Google Earth Engine launched in 2010 pioneered bringing computation to data at planetary scale."
+  },
+  {
+    "type": "mcq",
+    "question": "What dataset was computed entirely on GEE mapping global surface water from 1984?",
+    "options": [
+      "A) HydroSHEDS",
+      "B) MODIS Water Index",
+      "C) JRC Global Surface Water",
+      "D) Copernicus Water Bodies"
+    ],
+    "correct": "C",
+    "explanation": "The JRC Global Surface Water dataset was computed entirely on GEE at 30m resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "In a geodatabase, what does a feature dataset enforce?",
+    "options": [
+      "A) Common attribute schema",
+      "B) Common coordinate system",
+      "C) Common file size limit",
+      "D) Common symbology"
+    ],
+    "correct": "B",
+    "explanation": "Feature datasets enforce a common coordinate system for all contained feature classes."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the EPSG code for Hungarian EOV?",
+    "options": [
+      "A) EPSG:4326",
+      "B) EPSG:32634",
+      "C) EPSG:23700",
+      "D) EPSG:3035"
+    ],
+    "correct": "C",
+    "explanation": "Hungarian EOV is EPSG:23700."
+  },
+  {
+    "type": "mcq",
+    "question": "Which mobile GIS is the companion to QGIS?",
+    "options": [
+      "A) ArcGIS Field Maps",
+      "B) QField",
+      "C) KoBoToolbox",
+      "D) ODK"
+    ],
+    "correct": "B",
+    "explanation": "QField is QGIS's mobile companion for field data collection."
+  },
+  {
+    "type": "mcq",
+    "question": "Which spatial selection selects features completely inside others?",
+    "options": [
+      "A) Intersect",
+      "B) Within",
+      "C) Within a distance",
+      "D) Have their center in"
+    ],
+    "correct": "B",
+    "explanation": "'Within' selects features completely inside other features."
+  },
+  {
+    "type": "mcq",
+    "question": "What does WBD stand for?",
+    "options": [
+      "A) Water Basin Delineation",
+      "B) Watershed Boundary Dataset",
+      "C) Water Body Database",
+      "D) Wetland Boundary Delineation"
+    ],
+    "correct": "B",
+    "explanation": "WBD provides the complete HUC hierarchy as pre-delineated polygons for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "Which data model was developed by David Maidment for water resources geodatabases?",
+    "options": [
+      "A) HydroSHEDS",
+      "B) Arc Hydro",
+      "C) NHDPlus",
+      "D) INSPIRE Hydrography"
+    ],
+    "correct": "B",
+    "explanation": "Arc Hydro was developed by David Maidment at UT Austin in collaboration with ESRI."
+  },
+  {
+    "type": "mcq",
+    "question": "What unique identifier does Arc Hydro assign to every feature?",
+    "options": [
+      "A) ObjectID",
+      "B) NHDPlusID",
+      "C) HydroID",
+      "D) ComID"
+    ],
+    "correct": "C",
+    "explanation": "HydroID is Arc Hydro's key innovation for unambiguous cross-referencing."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate area of the Zala River watershed?",
+    "options": [
+      "A) 1,200 km²",
+      "B) 2,620 km²",
+      "C) 5,775 km²",
+      "D) 8,400 km²"
+    ],
+    "correct": "B",
+    "explanation": "The Zala drains approximately 2,620 km² into Lake Balaton."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the standard European land cover dataset at ~100m resolution?",
+    "options": [
+      "A) NLCD",
+      "B) ESA WorldCover",
+      "C) CORINE Land Cover",
+      "D) GlobCover"
+    ],
+    "correct": "C",
+    "explanation": "CORINE Land Cover from the EEA provides standardized European land cover at ~100m."
+  },
+  {
+    "type": "mcq",
+    "question": "Which US dataset is equivalent to CORINE?",
+    "options": [
+      "A) ESA WorldCover",
+      "B) NLCD",
+      "C) MODIS Land Cover",
+      "D) GlobCover"
+    ],
+    "correct": "B",
+    "explanation": "NLCD at 30m resolution is the US equivalent of CORINE."
+  },
+  {
+    "type": "mcq",
+    "question": "Cloud-based watershed delineation typically uses DEMs at what resolution?",
+    "options": [
+      "A) 1-5 metres",
+      "B) 10 metres",
+      "C) 30 to 90 metres",
+      "D) 250 metres"
+    ],
+    "correct": "C",
+    "explanation": "Cloud services use pre-processed 30 to 90 metre DEMs."
+  },
+  {
+    "type": "mcq",
+    "question": "Which open-source platform publishes WMS, WFS, and WCS services?",
+    "options": [
+      "A) QGIS Server",
+      "B) GeoServer",
+      "C) MapServer",
+      "D) PostGIS"
+    ],
+    "correct": "B",
+    "explanation": "GeoServer publishes OGC-compliant web services."
+  },
+  {
+    "type": "mcq",
+    "question": "In QGIS, what renderer provides unique values symbology?",
+    "options": [
+      "A) Graduated",
+      "B) Categorized",
+      "C) Rule-based",
+      "D) Single symbol"
+    ],
+    "correct": "B",
+    "explanation": "The Categorized renderer provides unique values symbology in QGIS."
+  },
+  {
+    "type": "mcq",
+    "question": "What does HUC stand for?",
+    "options": [
+      "A) Hydrologic Unit Classification",
+      "B) Hydrologic Unit Code",
+      "C) Hydraulic Unit Catalog",
+      "D) Hungarian Unified Coordinates"
+    ],
+    "correct": "B",
+    "explanation": "HUC = Hydrologic Unit Code."
+  },
+  {
+    "type": "mcq",
+    "question": "Which cloud platform uses Azure and STAC?",
+    "options": [
+      "A) Google Earth Engine",
+      "B) ArcGIS Online",
+      "C) Microsoft Planetary Computer",
+      "D) Copernicus Data Space"
+    ],
+    "correct": "C",
+    "explanation": "Planetary Computer uses Azure infrastructure and the STAC standard."
+  },
+  {
+    "type": "mcq",
+    "question": "Table joins in GIS are:",
+    "options": [
+      "A) Permanent modifications",
+      "B) Automatic new tables",
+      "C) Temporary and removable without altering source data",
+      "D) Only for raster data"
+    ],
+    "correct": "C",
+    "explanation": "Joins are temporary and do not modify underlying data."
+  },
+  {
+    "type": "mcq",
+    "question": "A zero-record join usually indicates:",
+    "options": [
+      "A) Network issues",
+      "B) Software version mismatch",
+      "C) Field type mismatch or naming inconsistency",
+      "D) Insufficient disk space"
+    ],
+    "correct": "C",
+    "explanation": "Zero-record joins are caused by type mismatches or naming inconsistencies."
+  },
+  {
+    "type": "mcq",
+    "question": "Which GIS operation translates gridded data into lumped watershed parameters?",
+    "options": [
+      "A) Buffering",
+      "B) Spatial overlay",
+      "C) Network tracing",
+      "D) Geocoding"
+    ],
+    "correct": "B",
+    "explanation": "Spatial overlay translates distributed data into watershed-level parameters."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Zala walkthrough, what line width is used for Strahler order 5+ streams?",
+    "options": [
+      "A) 0.5 pt",
+      "B) 1.5 pt",
+      "C) 3 pt",
+      "D) 5 pt"
+    ],
+    "correct": "C",
+    "explanation": "Order 5+ streams use 3 pt line width."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM is used in the Zala walkthrough?",
+    "options": [
+      "A) Copernicus GLO-90",
+      "B) Copernicus GLO-30",
+      "C) Copernicus EEA-10",
+      "D) SRTM 30m"
+    ],
+    "correct": "B",
+    "explanation": "The walkthrough uses Copernicus GLO-30 DEM tiles."
+  },
+  {
+    "type": "mcq",
+    "question": "QGIS Processing framework unifies tools from:",
+    "options": [
+      "A) Only QGIS native",
+      "B) QGIS native, GRASS, SAGA, GDAL/OGR, and plugins",
+      "C) Only GRASS and SAGA",
+      "D) Only GDAL"
+    ],
+    "correct": "B",
+    "explanation": "Processing unifies tools from all these sources."
+  },
+  {
+    "type": "mcq",
+    "question": "For Hungary, natural projected CRS choices are:",
+    "options": [
+      "A) WGS 84 or NAD83",
+      "B) EOV (EPSG:23700) or UTM Zone 34N (EPSG:32634)",
+      "C) Lambert or Albers",
+      "D) State Plane or UTM 14N"
+    ],
+    "correct": "B",
+    "explanation": "EOV for national data, UTM 34N for European/global compatibility."
+  },
+  {
+    "type": "mcq",
+    "question": "Which QGIS tool automates workflow chaining?",
+    "options": [
+      "A) Python Console",
+      "B) Layer Properties",
+      "C) Processing Graphical Modeler",
+      "D) DB Manager"
+    ],
+    "correct": "C",
+    "explanation": "Processing Graphical Modeler chains tools like ArcGIS ModelBuilder."
+  },
+  {
+    "type": "mcq",
+    "question": "What does OGC WaterML 2.0 define?",
+    "options": [
+      "A) Watershed boundary schema",
+      "B) Hydrological time series data model",
+      "C) Web mapping protocol",
+      "D) DEM processing workflow"
+    ],
+    "correct": "B",
+    "explanation": "WaterML 2.0 defines a data model for hydrological time series."
+  },
+  {
+    "type": "mcq",
+    "question": "Key CRS requirement for water resources GIS:",
+    "options": [
+      "A) Must be geographic",
+      "B) Must be projected with linear units",
+      "C) Must use WGS 84",
+      "D) Must match UTM zone"
+    ],
+    "correct": "B",
+    "explanation": "Projected CRS needed for meaningful distance and area calculations."
+  },
+  {
+    "type": "mcq",
+    "question": "What is specific discharge?",
+    "options": [
+      "A) Maximum instantaneous discharge",
+      "B) Discharge per unit area",
+      "C) Minimum baseflow",
+      "D) Discharge at a specific gauge"
+    ],
+    "correct": "B",
+    "explanation": "Specific discharge normalizes discharge by drainage area."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro project file extension:",
+    "options": [
+      "A) .mxd",
+      "B) .qgz",
+      "C) .aprx",
+      "D) .gdb"
+    ],
+    "correct": "C",
+    "explanation": "ArcGIS Pro uses .aprx project files."
+  },
+  {
+    "type": "mcq",
+    "question": "QGIS hydrological terrain tools come from:",
+    "options": [
+      "A) GDAL/OGR only",
+      "B) GRASS tools and WhiteboxTools",
+      "C) PostGIS",
+      "D) Leaflet"
+    ],
+    "correct": "B",
+    "explanation": "GRASS (r.watershed, etc.) and WhiteboxTools provide hydrology tools in QGIS."
+  },
+  {
+    "type": "mcq",
+    "question": "In cloud watershed delineation, what runs in real time?",
+    "options": [
+      "A) Sink filling",
+      "B) Flow direction computation",
+      "C) Upstream tracing from clicked point",
+      "D) DEM download"
+    ],
+    "correct": "C",
+    "explanation": "Only the final upstream tracing runs in real time."
+  },
+  {
+    "type": "mcq",
+    "question": "Which spatial selection uses feature centroids?",
+    "options": [
+      "A) Intersect",
+      "B) Within",
+      "C) Have their center in",
+      "D) Within a distance"
+    ],
+    "correct": "C",
+    "explanation": "'Have their center in' uses centroids."
+  },
+  {
+    "type": "mcq",
+    "question": "Primary advantage of GeoPackage over shapefile:",
+    "options": [
+      "A) Better compression",
+      "B) Faster reads",
+      "C) No size limit, long field names, cross-platform",
+      "D) Built-in 3D"
+    ],
+    "correct": "C",
+    "explanation": "GeoPackage has no size limit, unlimited field names, universal support."
+  },
+  {
+    "type": "mcq",
+    "question": "Which Hungarian agency provides watershed boundaries?",
+    "options": [
+      "A) Lechner",
+      "B) OVF",
+      "C) OMSZ",
+      "D) MTA"
+    ],
+    "correct": "B",
+    "explanation": "OVF provides watershed boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "Which platform offers point-and-click cloud watershed delineation?",
+    "options": [
+      "A) Google Earth Engine",
+      "B) QGIS",
+      "C) ArcGIS Online",
+      "D) Planetary Computer"
+    ],
+    "correct": "C",
+    "explanation": "ArcGIS Online offers no-code watershed delineation."
+  },
+  {
+    "type": "mcq",
+    "question": "Summary Statistics tool computes:",
+    "options": [
+      "A) Routing distances",
+      "B) Aggregate values (mean, total, min, max) per group",
+      "C) Interpolation surfaces",
+      "D) Raster statistics"
+    ],
+    "correct": "B",
+    "explanation": "Summary Statistics aggregates values across groups."
+  },
+  {
+    "type": "mcq",
+    "question": "How many levels does HydroBASINS provide?",
+    "options": [
+      "A) 6",
+      "B) 8",
+      "C) 10",
+      "D) 12"
+    ],
+    "correct": "D",
+    "explanation": "HydroBASINS provides 12 levels globally."
+  },
+  {
+    "type": "mcq",
+    "question": "Free enterprise geodatabase on PostgreSQL:",
+    "options": [
+      "A) Oracle Spatial",
+      "B) SQL Server",
+      "C) PostGIS",
+      "D) ArcSDE"
+    ],
+    "correct": "C",
+    "explanation": "PostGIS on PostgreSQL is free and open-source."
+  },
+  {
+    "type": "mcq",
+    "question": "GEE primarily uses which language?",
+    "options": [
+      "A) Python",
+      "B) R",
+      "C) JavaScript",
+      "D) SQL"
+    ],
+    "correct": "C",
+    "explanation": "GEE's web editor uses JavaScript."
+  },
+  {
+    "type": "mcq",
+    "question": "Choropleth map of watersheds by precipitation uses:",
+    "options": [
+      "A) Categorical symbology",
+      "B) Graduated color",
+      "C) Single-symbol",
+      "D) Dot density"
+    ],
+    "correct": "B",
+    "explanation": "Graduated color maps display numeric attributes on polygons."
+  },
+  {
+    "type": "mcq",
+    "question": "QGIS compound classification rules use:",
+    "options": [
+      "A) Categorized renderer",
+      "B) Rule-based renderer",
+      "C) SQL only",
+      "D) Not possible"
+    ],
+    "correct": "B",
+    "explanation": "Rule-based renderer supports compound logic."
+  },
+  {
+    "type": "mcq",
+    "question": "Flow accumulation display requires:",
+    "options": [
+      "A) Linear scale",
+      "B) Equal interval",
+      "C) Logarithmic scale",
+      "D) Standard deviation"
+    ],
+    "correct": "C",
+    "explanation": "Values span orders of magnitude requiring logarithmic scales."
+  },
+  {
+    "type": "mcq",
+    "question": "International standard European land cover palette:",
+    "options": [
+      "A) NLCD",
+      "B) CORINE",
+      "C) WorldCover",
+      "D) GlobCover"
+    ],
+    "correct": "B",
+    "explanation": "CORINE color palette is the European standard."
+  },
+  {
+    "type": "mcq",
+    "question": "Spatial selection is described as:",
+    "options": [
+      "A) Something any database can do",
+      "B) Python-only",
+      "C) Uniquely a GIS capability",
+      "D) ArcGIS-only"
+    ],
+    "correct": "C",
+    "explanation": "Spatial selection based on geography is uniquely GIS."
+  },
+  {
+    "type": "mcq",
+    "question": "Hillshade + semi-transparent elevation produces:",
+    "options": [
+      "A) Contour map",
+      "B) Thematic map",
+      "C) Shaded relief",
+      "D) Slope map"
+    ],
+    "correct": "C",
+    "explanation": "Classic shaded relief visualization."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro attribute selection tool:",
+    "options": [
+      "A) Select by Location",
+      "B) Select by Attributes",
+      "C) Spatial Join",
+      "D) Table Join"
+    ],
+    "correct": "B",
+    "explanation": "Select by Attributes performs attribute queries."
+  },
+  {
+    "type": "mcq",
+    "question": "A shapefile consists of:",
+    "options": [
+      "A) Single .shp file",
+      "B) Multiple files (.shp, .dbf, .shx, .prj)",
+      "C) A directory",
+      "D) Single .gpkg"
+    ],
+    "correct": "B",
+    "explanation": "Multiple required files make up a shapefile."
+  },
+  {
+    "type": "mcq",
+    "question": "Time-dependent flood events are shown with:",
+    "options": [
+      "A) Hillshade",
+      "B) 3D visualization",
+      "C) Time-aware animation",
+      "D) Graduated symbology"
+    ],
+    "correct": "C",
+    "explanation": "Time-aware layers animate flood event progression."
+  },
+  {
+    "type": "mcq",
+    "question": "STAC stands for:",
+    "options": [
+      "A) Spatial Terrain Analysis Catalog",
+      "B) SpatioTemporal Asset Catalog",
+      "C) Standard Topographic Archive",
+      "D) Satellite Tracking Center"
+    ],
+    "correct": "B",
+    "explanation": "STAC = SpatioTemporal Asset Catalog."
+  },
+  {
+    "type": "mcq",
+    "question": "Which GIS view transforms a DEM into a watershed?",
+    "options": [
+      "A) Geovisualization",
+      "B) Geodatabase",
+      "C) Geoprocessing",
+      "D) Cartographic"
+    ],
+    "correct": "C",
+    "explanation": "Geoprocessing derives new spatial information."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungarian water management sub-units term:",
+    "options": [
+      "A) vízgazdálkodási egység",
+      "B) vízgyűjtő-gazdálkodási tervezési alegysg",
+      "C) folyóvíz kezelési terület",
+      "D) hidrológiai egység"
+    ],
+    "correct": "B",
+    "explanation": "Hungary has 12 such planning sub-units."
+  },
+  {
+    "type": "mcq",
+    "question": "For western Hungary, appropriate UTM zone:",
+    "options": [
+      "A) 34N",
+      "B) 33N",
+      "C) 35N",
+      "D) 32N"
+    ],
+    "correct": "B",
+    "explanation": "Western Hungary falls in UTM Zone 33N."
+  },
+  {
+    "type": "mcq",
+    "question": "Two models running separately from GIS:",
+    "options": [
+      "A) Arc Hydro and HydroSHEDS",
+      "B) HEC-HMS and HEC-RAS",
+      "C) GRASS and SAGA",
+      "D) GDAL and OGR"
+    ],
+    "correct": "B",
+    "explanation": "HEC-HMS and HEC-RAS run their own computational engines."
+  },
+  {
+    "type": "mcq",
+    "question": "WISE database contains:",
+    "options": [
+      "A) Watershed boundaries",
+      "B) Water quality data for Europe",
+      "C) Weather radar",
+      "D) Well inventory"
+    ],
+    "correct": "B",
+    "explanation": "WISE = Water Information System for Europe."
+  },
+  {
+    "type": "mcq",
+    "question": "When combining DEMs, verify:",
+    "options": [
+      "A) File format",
+      "B) Horizontal CRS",
+      "C) Vertical datum",
+      "D) Cell size"
+    ],
+    "correct": "C",
+    "explanation": "Different vertical datums cause systematic bias."
+  },
+  {
+    "type": "mcq",
+    "question": "GIS does NOT do:",
+    "options": [
+      "A) Store data",
+      "B) Visualize maps",
+      "C) Solve hydrological equations",
+      "D) Spatial queries"
+    ],
+    "correct": "C",
+    "explanation": "Specialized models solve equations; GIS provides data and visualization."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary has how many water management sub-units?",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 12",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "12 planning sub-units."
+  },
+  {
+    "type": "mcq",
+    "question": "Unique to QGIS vs ArcGIS Pro:",
+    "options": [
+      "A) Multi-platform (Win/Mac/Linux)",
+      "B) Raster analysis",
+      "C) Python scripting",
+      "D) 3D viz"
+    ],
+    "correct": "A",
+    "explanation": "QGIS is cross-platform; ArcGIS Pro is Windows only."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro workflow automation:",
+    "options": [
+      "A) Python Console",
+      "B) ModelBuilder",
+      "C) Processing Modeler",
+      "D) Raster Calculator"
+    ],
+    "correct": "B",
+    "explanation": "ModelBuilder automates workflows in ArcGIS Pro."
+  },
+  {
+    "type": "mcq",
+    "question": "Open-source tools equivalent to Arc Hydro:",
+    "options": [
+      "A) PostGIS alone",
+      "B) GDAL/OGR",
+      "C) HydroSHEDS + GRASS + WhiteboxTools",
+      "D) Leaflet"
+    ],
+    "correct": "C",
+    "explanation": "These three together provide comparable functionality."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro Tools provide:",
+    "options": [
+      "A) Layouts",
+      "B) Terrain preprocessing, flow direction, catchment delineation",
+      "C) Web publishing",
+      "D) Enterprise DB management"
+    ],
+    "correct": "B",
+    "explanation": "Arc Hydro Tools provide the terrain-to-watershed processing chain."
+  },
+  {
+    "type": "mcq",
+    "question": "A geodatabase domain:",
+    "options": [
+      "A) Defines extent",
+      "B) Restricts attribute values",
+      "C) Sets CRS",
+      "D) Controls permissions"
+    ],
+    "correct": "B",
+    "explanation": "Domains constrain values to prevent errors."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungarian hydrographic data portal:",
+    "options": [
+      "A) geoshop.hu",
+      "B) data.vizugy.hu",
+      "C) met.hu",
+      "D) lechner.hu"
+    ],
+    "correct": "B",
+    "explanation": "OVF data at data.vizugy.hu."
+  },
+  {
+    "type": "mcq",
+    "question": "Area from geographic coordinates produces:",
+    "options": [
+      "A) Square metres",
+      "B) Square km",
+      "C) Square degrees (meaningless)",
+      "D) Accurate at equator only"
+    ],
+    "correct": "C",
+    "explanation": "Geographic CRS gives square degrees, useless for engineering."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-Hydro is provided by:",
+    "options": [
+      "A) EEA directly",
+      "B) Copernicus Land Monitoring Service",
+      "C) ESA Sentinel",
+      "D) Eurostat"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Land Monitoring Service provides EU-Hydro."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Pro Python module:",
+    "options": [
+      "A) PyQGIS",
+      "B) ArcPy",
+      "C) GDAL",
+      "D) GeoPandas"
+    ],
+    "correct": "B",
+    "explanation": "ArcPy for ArcGIS Pro scripting."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus is:",
+    "options": [
+      "A) Road network",
+      "B) Hydrologically connected stream network",
+      "C) Telecom network",
+      "D) Power grid"
+    ],
+    "correct": "B",
+    "explanation": "NHDPlus provides connected stream reaches with flow attributes."
+  },
+  {
+    "type": "mcq",
+    "question": "OVF stands for:",
+    "options": [
+      "A) Országos Víz Figyelő",
+      "B) Országos Vízügyi Főigazgatóság",
+      "C) Országos Vízkszlet Felügyelet",
+      "D) Operatív Vízügyi Felügyelet"
+    ],
+    "correct": "B",
+    "explanation": "General Directorate of Water Management."
+  },
+  {
+    "type": "mcq",
+    "question": "Rasters in a geodatabase are stored:",
+    "options": [
+      "A) Inside feature datasets",
+      "B) At the top level only",
+      "C) Anywhere",
+      "D) In separate folders only"
+    ],
+    "correct": "B",
+    "explanation": "Rasters reside at geodatabase top level, not inside feature datasets."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroSHEDS derivatives come from:",
+    "options": [
+      "A) ASTER GDEM",
+      "B) SRTM DEM",
+      "C) Copernicus GLO-30",
+      "D) LiDAR"
+    ],
+    "correct": "B",
+    "explanation": "HydroSHEDS is derived from SRTM."
+  },
+  {
+    "type": "mcq",
+    "question": "INSPIRE Hydrography is:",
+    "options": [
+      "A) Software",
+      "B) EU schema comparable to Arc Hydro",
+      "C) Cloud protocol",
+      "D) Mobile standard"
+    ],
+    "correct": "B",
+    "explanation": "Standardized schema for EU water features."
+  },
+  {
+    "type": "mcq",
+    "question": "Subtypes allow:",
+    "options": [
+      "A) Different projections per feature",
+      "B) Categorized features with different rules in one class",
+      "C) Multiple CRS",
+      "D) Feature splitting"
+    ],
+    "correct": "B",
+    "explanation": "E.g., perennial and intermittent streams in one class."
+  },
+  {
+    "type": "mcq",
+    "question": "ESA WorldCover resolution:",
+    "options": [
+      "A) 30 m",
+      "B) 100 m",
+      "C) 10 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "10-metre global land cover."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro's key advantage:",
+    "options": [
+      "A) Free software",
+      "B) Standardized schema tested across hundreds of projects",
+      "C) QGIS-only",
+      "D) Automatic delineation"
+    ],
+    "correct": "B",
+    "explanation": "Proven template eliminating custom schema needs."
+  },
+  {
+    "type": "mcq",
+    "question": "Professional shapefile recommendation:",
+    "options": [
+      "A) Primary format",
+      "B) Use GeoPackage/GDB for work; shapefile only when required",
+      "C) Never use",
+      "D) Raster only"
+    ],
+    "correct": "B",
+    "explanation": "Work in GeoPackage/GDB; shapefile for exchange only."
+  },
+  {
+    "type": "mcq",
+    "question": "Data integrity via topology and domains is handled by:",
+    "options": [
+      "A) Geovisualization",
+      "B) Geodatabase view",
+      "C) Geoprocessing",
+      "D) Cartographic view"
+    ],
+    "correct": "B",
+    "explanation": "Geodatabase view handles integrity."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus Data Space is operated by:",
+    "options": [
+      "A) Google",
+      "B) Microsoft",
+      "C) ESA/EU",
+      "D) ESRI"
+    ],
+    "correct": "C",
+    "explanation": "ESA/EU operates it."
+  },
+  {
+    "type": "mcq",
+    "question": "Network tracing allows:",
+    "options": [
+      "A) Downstream only",
+      "B) Upstream only",
+      "C) Both upstream and downstream",
+      "D) Distance only"
+    ],
+    "correct": "C",
+    "explanation": "Traces both directions in connected networks."
+  },
+  {
+    "type": "mcq",
+    "question": "OpenTopography's role:",
+    "options": [
+      "A) Weather data",
+      "B) High-resolution terrain/LiDAR data",
+      "C) Land cover",
+      "D) Stream gauges"
+    ],
+    "correct": "B",
+    "explanation": "Best source for high-res terrain data."
+  },
+  {
+    "type": "mcq",
+    "question": "OGC format based on SQLite:",
+    "options": [
+      "A) Shapefile",
+      "B) GeoJSON",
+      "C) GeoPackage",
+      "D) GML"
+    ],
+    "correct": "C",
+    "explanation": "GeoPackage is OGC standard on SQLite."
+  },
+  {
+    "type": "mcq",
+    "question": "Zonal statistics primary use:",
+    "options": [
+      "A) Computing distances",
+      "B) Aggregate values per spatial zone",
+      "C) Classifying land cover",
+      "D) Creating layouts"
+    ],
+    "correct": "B",
+    "explanation": "Summary values like land cover % per watershed."
+  },
+  {
+    "type": "mcq",
+    "question": "Balaton catchment area:",
+    "options": [
+      "A) 2,620 km²",
+      "B) 3,500 km²",
+      "C) 5,775 km²",
+      "D) 9,000 km²"
+    ],
+    "correct": "C",
+    "explanation": "Total Balaton catchment is ~5,775 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus join key:",
+    "options": [
+      "A) HydroID",
+      "B) NHDPlusID or ComID",
+      "C) HUC12",
+      "D) StationID"
+    ],
+    "correct": "B",
+    "explanation": "NHDPlusID or ComID is the typical join key."
+  },
+  {
+    "type": "true_false",
+    "question": "A file geodatabase can store both vector feature classes and raster datasets.",
+    "correct": true,
+    "explanation": "File geodatabases store vectors, rasters, tables, and relationships."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS can only run on Windows.",
+    "correct": false,
+    "explanation": "QGIS runs on Windows, macOS, and Linux."
+  },
+  {
+    "type": "true_false",
+    "question": "A shapefile has a maximum size of 1 TB.",
+    "correct": false,
+    "explanation": "Shapefiles are limited to 2 GB."
+  },
+  {
+    "type": "true_false",
+    "question": "The first 8 digits of a HUC12 identify its parent HUC8.",
+    "correct": true,
+    "explanation": "Hierarchical encoding enables this."
+  },
+  {
+    "type": "true_false",
+    "question": "Table joins permanently modify underlying data.",
+    "correct": false,
+    "explanation": "Joins are temporary and removable."
+  },
+  {
+    "type": "true_false",
+    "question": "INSPIRE Directive applies only to water data.",
+    "correct": false,
+    "explanation": "INSPIRE covers all spatial data categories."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro is software, not a schema.",
+    "correct": false,
+    "explanation": "Arc Hydro is a schema; Tools are separate software."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoServer publishes OGC-compliant web services.",
+    "correct": true,
+    "explanation": "WMS, WFS, WCS services."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud watershed delineation is suitable for engineering design.",
+    "correct": false,
+    "explanation": "30-90m resolution is too coarse for engineering."
+  },
+  {
+    "type": "true_false",
+    "question": "Feature datasets can contain raster datasets.",
+    "correct": false,
+    "explanation": "Rasters must be at the geodatabase top level."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroID is unique to every Arc Hydro feature.",
+    "correct": true,
+    "explanation": "Enables unambiguous cross-referencing."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Earth Engine requires a paid license for all uses.",
+    "correct": false,
+    "explanation": "Free for non-commercial use."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zala watershed is approximately 5,775 km².",
+    "correct": false,
+    "explanation": "Zala is ~2,620 km²; 5,775 is the full Balaton catchment."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS uses GeoPackage as its native format.",
+    "correct": true,
+    "explanation": "GeoPackage (.gpkg) is QGIS's native format."
+  },
+  {
+    "type": "true_false",
+    "question": "Equal interval is the best classification for exploratory mapping.",
+    "correct": false,
+    "explanation": "Natural breaks (Jenks) is usually best."
+  },
+  {
+    "type": "true_false",
+    "question": "Shapefiles support null values.",
+    "correct": false,
+    "explanation": "No null value support in shapefiles."
+  },
+  {
+    "type": "true_false",
+    "question": "Spatial selection identifies features near other features geographically.",
+    "correct": true,
+    "explanation": "Core GIS capability for geographic queries."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro replaced ArcMap.",
+    "correct": true,
+    "explanation": "Current-generation desktop replacing ArcMap."
+  },
+  {
+    "type": "true_false",
+    "question": "Planetary Computer is built on AWS.",
+    "correct": false,
+    "explanation": "Built on Azure, not AWS."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungarian EOV uses EPSG:32634.",
+    "correct": false,
+    "explanation": "EOV is EPSG:23700; 32634 is UTM 34N."
+  },
+  {
+    "type": "true_false",
+    "question": "Quantile classification puts equal numbers of features in each class.",
+    "correct": true,
+    "explanation": "Equal feature count per class."
+  },
+  {
+    "type": "true_false",
+    "question": "QField supports offline operation.",
+    "correct": true,
+    "explanation": "Essential for remote areas without connectivity."
+  },
+  {
+    "type": "true_false",
+    "question": "'Within a distance' requires complete containment.",
+    "correct": false,
+    "explanation": "It checks proximity; 'Within' requires containment."
+  },
+  {
+    "type": "true_false",
+    "question": "EU-Hydro derives from Sentinel-2 and Copernicus DEM.",
+    "correct": true,
+    "explanation": "Both sources contribute to EU-Hydro."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Field Maps consolidated Collector and Explorer.",
+    "correct": true,
+    "explanation": "Combined into one mobile app."
+  },
+  {
+    "type": "true_false",
+    "question": "GIS can directly solve hydrological equations.",
+    "correct": false,
+    "explanation": "Specialized models are needed."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS 'Select by Expression' equals ArcGIS 'Select by Attributes'.",
+    "correct": true,
+    "explanation": "Both perform attribute-based selection."
+  },
+  {
+    "type": "true_false",
+    "question": "Lake Balaton is Hungary's second-largest lake.",
+    "correct": false,
+    "explanation": "It is Hungary's largest lake."
+  },
+  {
+    "type": "true_false",
+    "question": "Geodatabase relationships enable clicking a gauge to see its data.",
+    "correct": true,
+    "explanation": "One-to-many relationships enable this."
+  },
+  {
+    "type": "true_false",
+    "question": "KoBoToolbox is proprietary software.",
+    "correct": false,
+    "explanation": "It is open-source."
+  },
+  {
+    "type": "true_false",
+    "question": "Standard deviation classification identifies anomalies.",
+    "correct": true,
+    "explanation": "Shows departure from the mean."
+  },
+  {
+    "type": "true_false",
+    "question": "The US HUC system has 6 levels.",
+    "correct": true,
+    "explanation": "HUC2 through HUC12 = 6 levels."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS has feature datasets that enforce CRS.",
+    "correct": false,
+    "explanation": "QGIS lacks the feature dataset concept."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF embeds georeferencing in the header.",
+    "correct": true,
+    "explanation": "CRS, cell size, extent stored in GeoKeys."
+  },
+  {
+    "type": "true_false",
+    "question": "Watershed polygons can overlap.",
+    "correct": false,
+    "explanation": "They partition without gaps or overlaps."
+  },
+  {
+    "type": "true_false",
+    "question": "PyQGIS provides programmatic QGIS access.",
+    "correct": true,
+    "explanation": "Python interface for all QGIS functions."
+  },
+  {
+    "type": "true_false",
+    "question": "ESRI Grid format has a file extension.",
+    "correct": false,
+    "explanation": "Stored as directory with no extension."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud watershed delineation takes hours.",
+    "correct": false,
+    "explanation": "Takes seconds with pre-computed data."
+  },
+  {
+    "type": "true_false",
+    "question": "PostGIS requires an ESRI license.",
+    "correct": false,
+    "explanation": "Free, open-source, unrelated to ESRI."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus covers the entire world.",
+    "correct": false,
+    "explanation": "US only; HydroRIVERS is global."
+  },
+  {
+    "type": "true_false",
+    "question": "A domain restricts attribute values.",
+    "correct": true,
+    "explanation": "Prevents invalid data entry."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Online allows click-to-delineate watersheds.",
+    "correct": true,
+    "explanation": "Via Watershed widget or Trace Downstream service."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS plugins are ESRI-controlled.",
+    "correct": false,
+    "explanation": "Community-driven ecosystem."
+  },
+  {
+    "type": "true_false",
+    "question": "Geographic CRS is preferred for hydrology.",
+    "correct": false,
+    "explanation": "Projected CRS with linear units is required."
+  },
+  {
+    "type": "true_false",
+    "question": "Lechner manages Hungary's spatial data infrastructure.",
+    "correct": true,
+    "explanation": "Provides OGC-compliant services."
+  },
+  {
+    "type": "true_false",
+    "question": "Wildcard 'LIKE 16010203%' selects HUC12s in that HUC8.",
+    "correct": true,
+    "explanation": "Hierarchical encoding enables this."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS has a direct Arc Hydro equivalent.",
+    "correct": false,
+    "explanation": "No integrated equivalent exists."
+  },
+  {
+    "type": "true_false",
+    "question": "ESRI Grid names can exceed 13 characters.",
+    "correct": false,
+    "explanation": "Limited to 13 characters."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro uses .aprx extension.",
+    "correct": true,
+    "explanation": "Replaced .mxd."
+  },
+  {
+    "type": "true_false",
+    "question": "GEE uses R as primary language.",
+    "correct": false,
+    "explanation": "JavaScript (and Python), not R."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroBASINS covers only the US.",
+    "correct": false,
+    "explanation": "Global coverage with 12 levels."
+  },
+  {
+    "type": "true_false",
+    "question": "WaterML 2.0 defines watershed boundaries.",
+    "correct": false,
+    "explanation": "Defines time series observations, not boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream reaches connect at shared nodes in proper networks.",
+    "correct": true,
+    "explanation": "Topology ensures node connectivity."
+  },
+  {
+    "type": "true_false",
+    "question": "Graduated symbology only applies to polygons.",
+    "correct": false,
+    "explanation": "Applies to points (symbols) and polygons (color)."
+  },
+  {
+    "type": "true_false",
+    "question": "CORINE covers both Europe and the US.",
+    "correct": false,
+    "explanation": "Europe only; NLCD covers the US."
+  },
+  {
+    "type": "true_false",
+    "question": "File geodatabases are limited to 2 GB.",
+    "correct": false,
+    "explanation": "2 GB is for shapefiles; file GDB supports 1 TB."
+  },
+  {
+    "type": "true_false",
+    "question": "Zala walkthrough gauges are Zalaegerszeg, Zalabér, Zalaapáti.",
+    "correct": true,
+    "explanation": "Upper, middle, and lower Zala stations."
+  },
+  {
+    "type": "true_false",
+    "question": "Single-symbol display varies symbols by attribute.",
+    "correct": false,
+    "explanation": "Single-symbol gives one symbol to all features."
+  },
+  {
+    "type": "true_false",
+    "question": "GIS-model interface works only GIS to model.",
+    "correct": false,
+    "explanation": "Bidirectional: inputs and results visualization."
+  },
+  {
+    "type": "true_false",
+    "question": "Enterprise geodatabases support multi-user access.",
+    "correct": true,
+    "explanation": "Multi-user editing and versioning."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS can read file geodatabases.",
+    "correct": true,
+    "explanation": "Via OpenFileGDB driver."
+  },
+  {
+    "type": "true_false",
+    "question": "Bear River example uses HUC8 16010203.",
+    "correct": true,
+    "explanation": "Upper Bear River in Utah/Wyoming."
+  },
+  {
+    "type": "true_false",
+    "question": "Strahler order 1 is the main channel.",
+    "correct": false,
+    "explanation": "Order 1 = headwater; highest = main channel."
+  },
+  {
+    "type": "true_false",
+    "question": "Select by Location performs spatial selection.",
+    "correct": true,
+    "explanation": "Selects by geographic relationships."
+  },
+  {
+    "type": "true_false",
+    "question": "WBD provides HUC hierarchy for Europe.",
+    "correct": false,
+    "explanation": "WBD is US only; WFD provides European equivalent."
+  },
+  {
+    "type": "true_false",
+    "question": "Intersect requires complete containment.",
+    "correct": false,
+    "explanation": "Intersect: any shared boundary; Within: complete containment."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro Groundwater extends to 3D subsurface.",
+    "correct": true,
+    "explanation": "Wells, boreholes, aquifers in 3D."
+  },
+  {
+    "type": "true_false",
+    "question": "Hillshade uses slope and aspect.",
+    "correct": true,
+    "explanation": "Both derivatives create realistic terrain visualization."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS enforces CRS at container level.",
+    "correct": false,
+    "explanation": "Relies on on-the-fly reprojection, not enforcement."
+  },
+  {
+    "type": "true_false",
+    "question": "Summary Statistics produces mean, total, min, max per group.",
+    "correct": true,
+    "explanation": "Aggregates across feature groups."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Enterprise was formerly ArcGIS Server.",
+    "correct": true,
+    "explanation": "Rebranded from ArcGIS Server."
+  },
+  {
+    "type": "true_false",
+    "question": "'Have their center in' avoids boundary edge cases.",
+    "correct": true,
+    "explanation": "Centroid-based selection avoids edge issues."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro hydro tools are spread across GRASS/SAGA/WhiteboxTools.",
+    "correct": false,
+    "explanation": "That describes QGIS. ArcGIS Pro has integrated Spatial Analyst."
+  },
+  {
+    "type": "true_false",
+    "question": "Compound queries use AND, OR, NOT.",
+    "correct": true,
+    "explanation": "Logical operators for combining conditions."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud delineation allows custom preprocessing.",
+    "correct": false,
+    "explanation": "Preprocessing is fixed by provider."
+  },
+  {
+    "type": "true_false",
+    "question": "Shape_Area / 1,000,000 gives square km.",
+    "correct": true,
+    "explanation": "When CRS uses metres."
+  },
+  {
+    "type": "true_false",
+    "question": "Raster Calculator is in Data Management toolbox.",
+    "correct": false,
+    "explanation": "It is in Spatial Analyst under Map Algebra."
+  },
+  {
+    "type": "true_false",
+    "question": "ESRI dominated commercial GIS since the 1980s.",
+    "correct": true,
+    "explanation": "Stated in the chapter."
+  },
+  {
+    "type": "true_false",
+    "question": "OpenTopography is NSF-funded and free.",
+    "correct": true,
+    "explanation": "Free platform for terrain data."
+  },
+  {
+    "type": "true_false",
+    "question": "Graduated symbology only works with color.",
+    "correct": false,
+    "explanation": "Works with color, size, or both."
+  },
+  {
+    "type": "true_false",
+    "question": "EU WFD hierarchy is comparable to US HUC.",
+    "correct": true,
+    "explanation": "Both define nested watershed hierarchies."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS Print Layout equals ArcGIS Pro layout view.",
+    "correct": true,
+    "explanation": "Both provide cartographic composition."
+  },
+  {
+    "type": "true_false",
+    "question": "KoBoToolbox is for developed-country industrial monitoring.",
+    "correct": false,
+    "explanation": "Developing countries for WASH surveys."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three GIS views are geodatabase, geovisualization, and _____.",
+    "correct": "geoprocessing",
+    "explanation": "The three views of GIS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OGC spatial format on SQLite is called _____.",
+    "correct": "GeoPackage",
+    "explanation": "GeoPackage (.gpkg) is the OGC standard."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro assigns a unique _____ to every feature.",
+    "correct": "HydroID",
+    "explanation": "Key innovation for cross-referencing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Directive requires EU spatial data publishing.",
+    "correct": "INSPIRE",
+    "explanation": "INSPIRE mandates OGC web services."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Natural breaks classification is also called _____.",
+    "correct": "Jenks",
+    "explanation": "Named after George Jenks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A geodatabase _____ constrains attribute values.",
+    "correct": "domain",
+    "explanation": "Prevents invalid data entry."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian EOV has EPSG code _____.",
+    "correct": "23700",
+    "explanation": "EPSG:23700 for EOV."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US watershed coding system is called _____.",
+    "correct": "HUC",
+    "explanation": "Hydrologic Unit Code."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Global Surface Water dataset maps water from 1984.",
+    "correct": "JRC",
+    "explanation": "Joint Research Centre dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US connected stream network dataset is _____.",
+    "correct": "NHDPlus",
+    "explanation": "National Hydrography Dataset Plus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS's mobile companion is _____.",
+    "correct": "QField",
+    "explanation": "Mobile data collection for QGIS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro was developed by David _____.",
+    "correct": "Maidment",
+    "explanation": "At UT Austin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Shapefiles truncate field names to _____ characters.",
+    "correct": "10",
+    "explanation": "Major shapefile limitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The European stream network dataset is _____.",
+    "correct": "EU-Hydro",
+    "explanation": "From Copernicus Land Monitoring Service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "File geodatabases support up to _____ TB per table.",
+    "correct": "1",
+    "explanation": "Expandable to 256 TB."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zala drains approximately _____ km² into Balaton.",
+    "correct": "2,620",
+    "explanation": "Largest Balaton tributary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Google _____ Engine pioneered planetary-scale analysis.",
+    "correct": "Earth",
+    "explanation": "Launched 2010 by Google."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro project files use _____ extension.",
+    "correct": ".aprx",
+    "explanation": "Replaced .mxd."
+  },
+  {
+    "type": "fill_blank",
+    "question": "'Within a _____' finds features within specified proximity.",
+    "correct": "distance",
+    "explanation": "E.g., wells within 500m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Table _____ attach non-spatial data to spatial features.",
+    "correct": "joins",
+    "explanation": "Via shared key fields."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The open-source OGC web service server is _____.",
+    "correct": "GeoServer",
+    "explanation": "Publishes WMS, WFS, WCS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro raster analysis uses _____ Analyst extension.",
+    "correct": "Spatial",
+    "explanation": "Hydrology tools in Spatial Analyst."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS compound rules use the _____-based renderer.",
+    "correct": "Rule",
+    "explanation": "Rule-based renderer for complex logic."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global nested watershed boundaries: _____.",
+    "correct": "HydroBASINS",
+    "explanation": "12 levels globally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-HMS models rainfall-_____.",
+    "correct": "runoff",
+    "explanation": "Rainfall-runoff modeling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF = Országos Vízügyi _____.",
+    "correct": "Főigazgatóság",
+    "explanation": "General Directorate of Water Management."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ automates workflows graphically in ArcGIS Pro.",
+    "correct": "ModelBuilder",
+    "explanation": "Equivalent to QGIS Processing Modeler."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cloud delineation uses pre-processed _____ data.",
+    "correct": "elevation",
+    "explanation": "DEM preprocessing is server-side."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hillshade simulates illumination using slope and _____.",
+    "correct": "aspect",
+    "explanation": "Both terrain derivatives needed."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro Python module is _____.",
+    "correct": "ArcPy",
+    "explanation": "Scripted geoprocessing access."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Smallest HUC level is _____.",
+    "correct": "HUC12",
+    "explanation": "Most detailed of 6 levels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ dataset groups feature classes under common CRS.",
+    "correct": "feature",
+    "explanation": "Feature datasets enforce CRS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Open-source WASH survey tool: _____.",
+    "correct": "KoBoToolbox",
+    "explanation": "Mobile data collection platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ describes connectivity in stream networks.",
+    "correct": "Topology",
+    "explanation": "Reach connections and flow direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Enterprise spatial DB on PostgreSQL: _____.",
+    "correct": "PostGIS",
+    "explanation": "Free spatial extension."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus table for flow/velocity/temperature: _____.",
+    "correct": "EROM",
+    "explanation": "Enhanced Runoff Model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's largest lake is Lake _____.",
+    "correct": "Balaton",
+    "explanation": "In western Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro attribute selection: 'Select by _____'.",
+    "correct": "Attributes",
+    "explanation": "SQL-like attribute queries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Spatial selection type for any shared boundary: _____.",
+    "correct": "Intersect",
+    "explanation": "Even partial overlap triggers selection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WaterML _____ defines hydrological time series.",
+    "correct": "2.0",
+    "explanation": "OGC WaterML 2.0 standard."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Area from geographic coordinates gives square _____.",
+    "correct": "degrees",
+    "explanation": "Meaningless for engineering."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESRI's cloud platform: ArcGIS _____.",
+    "correct": "Online",
+    "explanation": "For sharing and cloud analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS attribute selection: 'Select by _____'.",
+    "correct": "Expression",
+    "explanation": "Equivalent to Select by Attributes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "File geodatabases have extension _____.",
+    "correct": ".gdb",
+    "explanation": "Folder with .gdb extension."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For joins, field _____ must match.",
+    "correct": "types",
+    "explanation": "Both text or both integer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "European land cover dataset: _____ Land Cover.",
+    "correct": "CORINE",
+    "explanation": "~100m from EEA."
+  },
+  {
+    "type": "fill_blank",
+    "question": "US equivalent of CORINE: _____.",
+    "correct": "NLCD",
+    "explanation": "National Land Cover Database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geodatabase _____ formalize table-feature connections.",
+    "correct": "relationships",
+    "explanation": "E.g., gauge to measurements."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Planetary Computer uses _____ infrastructure.",
+    "correct": "Azure",
+    "explanation": "Microsoft cloud."
+  },
+  {
+    "type": "fill_blank",
+    "question": "STAC = _____ Asset Catalog.",
+    "correct": "SpatioTemporal",
+    "explanation": "Standard for data organization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU nitrate threshold: _____ mg/L.",
+    "correct": "50",
+    "explanation": "Nitrates Directive threshold."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS _____ was formerly ArcGIS Server.",
+    "correct": "Enterprise",
+    "explanation": "Enterprise GIS platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A stream reach is between two _____.",
+    "correct": "confluences",
+    "explanation": "Or source to first confluence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Graduated symbology maps to _____ variables.",
+    "correct": "visual",
+    "explanation": "Color, size, or both."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global stream network from HydroSHEDS: _____.",
+    "correct": "HydroRIVERS",
+    "explanation": "Vectorized global network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Output .tif creates _____ format.",
+    "correct": "GeoTIFF",
+    "explanation": "Most widely used raster format."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian gauge portal: _____.",
+    "correct": "data.vizugy.hu",
+    "explanation": "OVF hydrographic database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WISE = Water Information System for _____.",
+    "correct": "Europe",
+    "explanation": "EU water quality database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zala stream network from _____ dataset.",
+    "correct": "EU-Hydro",
+    "explanation": "Copernicus Land Monitoring product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Linking datasets geographically uses _____ selection.",
+    "correct": "spatial",
+    "explanation": "Unique GIS capability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro _____ tab accesses geoprocessing.",
+    "correct": "Analysis",
+    "explanation": "Ribbon tab for tools and environments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM visualization uses _____ rendering.",
+    "correct": "hillshade",
+    "explanation": "Reveals terrain structure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cloud delineation fails in _____ terrain.",
+    "correct": "flat",
+    "explanation": "Ambiguous flow directions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoPackage uses _____ database engine.",
+    "correct": "SQLite",
+    "explanation": "Lightweight embedded DB."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS workflow tool: Processing Graphical _____.",
+    "correct": "Modeler",
+    "explanation": "Equivalent to ModelBuilder."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS Python interface: _____.",
+    "correct": "PyQGIS",
+    "explanation": "Programmatic QGIS access."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESRI legacy raster format: ESRI _____.",
+    "correct": "Grid",
+    "explanation": "Directory format, 13-char limit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro includes waterbodies, watersheds, network, and _____ points.",
+    "correct": "monitoring",
+    "explanation": "Gauges and sampling stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Summary per zone uses _____ statistics.",
+    "correct": "zonal",
+    "explanation": "E.g., land cover % per watershed."
+  },
+  {
+    "type": "fill_blank",
+    "question": "US watershed polygons: _____ Boundary Dataset.",
+    "correct": "Watershed",
+    "explanation": "WBD."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Zala walkthrough gauges are red _____.",
+    "correct": "triangles",
+    "explanation": "Symbolized with labels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS _____ framework unifies multi-source tools.",
+    "correct": "Processing",
+    "explanation": "QGIS native, GRASS, SAGA, GDAL, plugins."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Subtypes allow _____ features with different rules.",
+    "correct": "categorized",
+    "explanation": "E.g., perennial/intermittent streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU-Hydro from Copernicus _____ Monitoring Service.",
+    "correct": "Land",
+    "explanation": "Part of Copernicus programme."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Model results become flood _____ maps via DEM subtraction.",
+    "correct": "inundation",
+    "explanation": "Model-to-GIS direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Shapefile max size: _____ GB.",
+    "correct": "2",
+    "explanation": "Major limitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM tiles from Copernicus _____ Space.",
+    "correct": "Data",
+    "explanation": "Copernicus Data Space Ecosystem."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS _____ Maps replaced Collector/Explorer.",
+    "correct": "Field",
+    "explanation": "Unified mobile app."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three views of GIS and how they integrate for water resources.",
+    "correct": "The three views are: (1) Geodatabase for data management with enforced relationships, (2) Geovisualization for mapping and pattern detection, (3) Geoprocessing for spatial analysis deriving new data. They integrate: geodatabase stores organized data, visualization reveals patterns, geoprocessing creates new information. A project uses all three together.",
+    "explanation": "Chapter 4 framework."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcGIS Pro and QGIS for water resources work.",
+    "correct": "ArcGIS Pro: integrated enterprise tools, Arc Hydro, Spatial Analyst, ArcGIS Online integration; subscription, Windows only. QGIS: free, cross-platform, community plugins, hydro tools across GRASS/SAGA/WhiteboxTools but fragmented. Many use both based on task needs.",
+    "explanation": "Section 4.2.1 and Table 4.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe building a Zala River watershed base map.",
+    "correct": "Steps: (1) boundary from HydroBASINS/OVF, (2) GeoPackage with UTM 33N/EOV, (3) EU-Hydro streams spatially selected, (4) Copernicus GLO-30 mosaicked/clipped, (5) OVF gauges added, (6) CORINE land cover. All reprojected and symbolized.",
+    "explanation": "Section 4.11 walkthrough."
+  },
+  {
+    "type": "essay",
+    "question": "Explain four spatial selection types for water resources.",
+    "correct": "Intersect: any shared boundary (parcels in flood zone). Within: complete containment (gauges in watershed). Within a Distance: proximity (wells near contamination). Have Their Center In: centroid-based (streams in watershed, avoiding edges). Each serves different analytical needs.",
+    "explanation": "Section 4.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "What is Arc Hydro and why does it matter?",
+    "correct": "Arc Hydro is a standardized data schema (not software) by David Maidment for geodatabase water data. Defines feature classes and relationships with HydroID cross-referencing. Provides proven template across hundreds of projects plus accompanying processing tools.",
+    "explanation": "Sections 4.8.1-4.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare cloud watershed delineation to local processing.",
+    "correct": "Cloud: fast (seconds), convenient, good for preliminary work; limited by 30-90m resolution, fixed preprocessing, possible errors in flat terrain. Local: defensible, reproducible, customizable parameters with high-res DEMs; requires more effort but needed for engineering and regulation.",
+    "explanation": "Section 4.9."
+  },
+  {
+    "type": "essay",
+    "question": "Compare geodatabase formats: file GDB, GeoPackage, shapefile, PostGIS.",
+    "correct": "File GDB: 1 TB, topology/domains, single-user, ArcGIS-native. GeoPackage: cross-platform, SQLite, universal support. Shapefile: 2 GB, 10-char fields, legacy only. PostGIS: multi-user enterprise, free. Use GeoPackage/GDB for work; shapefile for exchange only.",
+    "explanation": "Section 4.3.4 and Table 4.2."
+  },
+  {
+    "type": "essay",
+    "question": "How do feature datasets enforce data integrity?",
+    "correct": "Feature datasets enforce a common CRS for all contained feature classes, auto-reprojecting imports. Prevents mixing different CRS data. Critical for water projects where multiple layers must align for spatial queries, overlays, and delineations.",
+    "explanation": "Section 4.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the 2026 GIS ecosystem for water resources.",
+    "correct": "Desktop (ArcGIS Pro/QGIS): detailed analysis. Server (ArcGIS Enterprise/GeoServer): enterprise data sharing. Cloud (GEE/Planetary Computer/ArcGIS Online): petabyte-scale processing. Mobile (Field Maps/QField/KoBoToolbox): field collection. Professionals move between all tiers.",
+    "explanation": "Section 4.2."
+  },
+  {
+    "type": "essay",
+    "question": "Differentiate attribute and spatial selection with examples.",
+    "correct": "Attribute: filter by values ('RECORD_LENGTH >= 30'). Spatial: filter by geography ('gauges within this watershed'). Spatial is uniquely GIS capability. Both combine for powerful analysis.",
+    "explanation": "Sections 4.6.1-4.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain table joins and common problems in water GIS.",
+    "correct": "Joins attach non-spatial attributes via shared keys (e.g., EROM to NHDPlus reaches). Problems: type mismatches (text vs integer), naming inconsistencies causing zero-record joins. Joins are temporary and safe to test/remove.",
+    "explanation": "Sections 4.6.3, 4.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe what GIS cannot do and the GIS-model interface.",
+    "correct": "GIS cannot solve hydrological equations; needs HEC-HMS/RAS/MODFLOW. Interface is bidirectional: GIS provides terrain parameters/geometry to models; models return water surfaces/levels for GIS visualization as flood/groundwater maps.",
+    "explanation": "Section 4.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain graduated symbology as an analytical tool.",
+    "correct": "Maps numeric attributes to visual variables (size/color). Gauge symbols sized by discharge reveal flow patterns. Watershed choropleth by precipitation shows spatial gradients. Classification method matters: Jenks for exploration, std dev for anomalies.",
+    "explanation": "Section 4.5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the systematic process for assembling thematic layers.",
+    "correct": "For each layer: (1) Obtain data, (2) Add to project, (3) Inspect attributes/extent, (4) Select subset by query, (5) Export to project GDB/GPKG with reprojection, (6) Symbolize. DEM tiles need mosaicking. Result: consistent CRS layers.",
+    "explanation": "Section 4.7.3."
+  },
+  {
+    "type": "essay",
+    "question": "Why are projected CRS required and what choices suit Hungary?",
+    "correct": "Projected CRS use metres for meaningful measurements. Geographic CRS gives square degrees (useless). Hungary: EOV (EPSG:23700) for national data, UTM 34N (EPSG:32634) for European compatibility, UTM 33N for western Hungary.",
+    "explanation": "Section 4.7.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Google Earth Engine's transformative role.",
+    "correct": "GEE provides free petabyte archives with cloud computation. Enables tasks impractical on desktop: 20-year land cover classification across entire basins, global precipitation analysis. JRC Global Surface Water was computed entirely on GEE.",
+    "explanation": "Section 4.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain stream network topology and its importance.",
+    "correct": "Topology describes connectivity: reaches connected at shared nodes with defined flow direction. Enables network tracing upstream (contributing reaches) and downstream (receiving reaches). Essential for water supply, pollution, and flood wave analysis.",
+    "explanation": "Section 4.4.1."
+  },
+  {
+    "type": "essay",
+    "question": "How does QGIS handle hydrology differently from ArcGIS Pro?",
+    "correct": "ArcGIS Pro: integrated Spatial Analyst tools. QGIS: tools across GRASS/SAGA/WhiteboxTools with different conventions. No Arc Hydro equivalent. On-the-fly reprojection vs container CRS enforcement. More fragmented but more transparent.",
+    "explanation": "Section 4.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the HUC system and how GIS queries exploit it.",
+    "correct": "Six nested levels: HUC2-HUC12. Each nests in the level above. Hierarchical encoding: first 8 digits of HUC12 = parent HUC8. GIS wildcard queries: 'LIKE 16010203%' selects all child HUC12s efficiently without spatial queries.",
+    "explanation": "Sections 4.4.2, 4.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe table join enrichment with specific examples.",
+    "correct": "EROM to NHDPlus reaches (via ComID) adds flow/velocity/temperature. Gauge metadata joins add record length/drainage area. Hungarian: OVF discharge to gauge points, WISE water quality to stations. Key: matching field types. Transforms geometry into information.",
+    "explanation": "Section 4.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare EU WFD hierarchy with US HUC system.",
+    "correct": "US: 6 HUC levels via WBD. EU: WFD districts/sub-basins/water bodies via EEA. Hungary: 12 planning sub-units. Global: 12 HydroBASINS levels. All partition without overlaps for unambiguous spatial aggregation.",
+    "explanation": "Sections 4.4.2, 4.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare single-symbol, categorical, and graduated symbology.",
+    "correct": "Single: one symbol for all (all stations as dots). Categorical: different per distinct value (perennial vs intermittent). Graduated: numeric to visual variable (size by discharge, color by precipitation). Each serves different analytical purpose.",
+    "explanation": "Sections 4.5.1-4.5.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe CORINE Land Cover's significance for European water analysis.",
+    "correct": "Standardized ~100m European land cover with standard palette. Enables: watershed composition via zonal statistics, model parameterization, multi-epoch change detection (2006 vs 2018) affecting hydrology. Cross-country consistency.",
+    "explanation": "Section 4.11.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain bidirectional GIS-model interface with examples.",
+    "correct": "GIS-to-Model: watershed boundaries, slopes, land cover/soil parameters, channel geometry. Model-to-GIS: water surfaces become flood maps (DEM subtraction), groundwater levels become contour maps, forecasts become web visualizations.",
+    "explanation": "Section 4.13.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss defining a study area for water resources GIS.",
+    "correct": "Question defines area (e.g., 'flood risk for Szolnok' = Tisza watershed). Area determines all data: DEMs, streams, gauges, climate. In GIS: watershed polygon as spatial filter. Sources: WBD (US), OVF (Hungary), HydroBASINS (global).",
+    "explanation": "Section 4.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare vector and raster data models for water resources.",
+    "correct": "Vector: discrete objects (streams, watersheds, gauges) with topology. Raster: continuous fields (elevation, rainfall, moisture) as grids. Both needed: vector for connectivity/tracing, raster for terrain/flow modeling. They integrate in analysis workflows.",
+    "explanation": "Section 4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Compare cloud platforms: GEE, Planetary Computer, ArcGIS Online.",
+    "correct": "GEE: largest catalog, JavaScript/Python, free non-commercial. Planetary Computer: best Python ecosystem, Azure, STAC. ArcGIS Online: no programming, subscription. All need internet; preprocessing not customizable. Choice by skill/scale/context.",
+    "explanation": "Sections 4.2.3, 4.9.3."
+  },
+  {
+    "type": "essay",
+    "question": "What is the Copernicus Data Space Ecosystem?",
+    "correct": "ESA/EU-operated platform providing free EU Earth observation data: Sentinel imagery, Copernicus DEM, land monitoring. Supports Python APIs and JupyterHub. Essential for European water projects using satellite data.",
+    "explanation": "Table 4.4."
+  },
+  {
+    "type": "essay",
+    "question": "How do zonal statistics support model parameterization?",
+    "correct": "Compute summary values per zone: land cover % per watershed (impervious/forest/agricultural fractions), mean elevation for snowmelt, rainfall totals per basin. These lumped parameters are essential inputs for hydrological models.",
+    "explanation": "Section 4.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss ESRI Grid format vs GeoTIFF.",
+    "correct": "ESRI Grid: legacy directory format, 13-char limit, no extension, proprietary. GeoTIFF: long names, compression, multi-band, open standard, universal support. GeoTIFF recommended for all new work; Grid awareness needed for legacy data.",
+    "explanation": "Format discussion throughout Ch 4-5."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Intersect and Within spatial selections.",
+    "correct": "Intersect: any shared area/boundary (flood zone parcels even partially affected). Within: complete containment (only gauges fully inside watershed). Intersect may over-select; Within may miss edge features. Choice depends on whether partial overlap matters.",
+    "explanation": "Section 4.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss mobile GIS in water resources fieldwork.",
+    "correct": "Field Maps: GPS collection, attribute updates, photos synced to enterprise. QField: QGIS projects on mobile, offline capable. KoBoToolbox/ODK: developing-country WASH surveys. Enables systematic georeferenced field documentation flowing to office GIS.",
+    "explanation": "Section 4.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Why is Python scripting important for water professionals?",
+    "correct": "Scaling beyond GUI: 10,000 sub-watersheds, 500 model runs, continental daily maps. ArcPy for ArcGIS Pro, PyQGIS for QGIS provide scripting access. Python with GDAL/Fiona/Shapely/Rasterio/GeoPandas enables automation. Both platforms offer GUI-to-script pathways.",
+    "explanation": "Section 4.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe raster symbology choices for flow accumulation and DEMs.",
+    "correct": "DEMs: color ramp (green-brown-white) + semi-transparent hillshade for relief. Flow accumulation: logarithmic scale needed (values span 1 to millions). Land cover: unique-value with standard palettes (CORINE colors). Analytical decisions, not just aesthetic.",
+    "explanation": "Section 4.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain specific discharge and its advantage.",
+    "correct": "Specific discharge = discharge / drainage area. Normalizes by area for meaningful comparison. Computed via field calculation, displayed as graduated color on sub-watersheds. Reveals runoff generation patterns invisible in raw discharge data.",
+    "explanation": "Sections 4.5.2, 4.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Hungarian and US data sources for base maps.",
+    "correct": "Hungary: OVF boundaries, EU-Hydro streams, Copernicus GLO-30, data.vizugy.hu gauges, CORINE land cover. US: WBD, NHDPlus, 3DEP, NWIS, NLCD. Same GIS workflows, different sources. Global: HydroBASINS, HydroRIVERS, WorldCover.",
+    "explanation": "Sections 4.7, 4.11."
+  },
+  {
+    "type": "essay",
+    "question": "What is OpenTopography and why does it matter?",
+    "correct": "NSF-funded free platform providing high-resolution terrain data including LiDAR and on-demand DEMs. Democratizes access to sub-metre data for urban flood mapping, channel morphology, engineering design that previously required expensive surveys.",
+    "explanation": "Table 4.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain importance of data inspection before GIS analysis.",
+    "correct": "Prevents silent errors: CRS mismatches, NODATA treated as valid, type mismatches in joins, wrong units, extent differences. Systematic check of CRS, cell size, extent, data type, NODATA, value range for every input before any analysis.",
+    "explanation": "Emphasized throughout chapter."
+  },
+  {
+    "type": "essay",
+    "question": "Describe watershed hierarchy and non-overlapping partitioning.",
+    "correct": "Nested hierarchy: large basins contain sub-basins. US: 6 HUC levels. EU: WFD districts. Global: 12 HydroBASINS levels. Critical property: no gaps or overlaps. Every point belongs to exactly one watershed per level, enabling unambiguous spatial aggregation.",
+    "explanation": "Section 4.4.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare enterprise vs desktop geodatabases.",
+    "correct": "File geodatabases: single-user, local, for individual projects. Enterprise (PostGIS/SQL Server/Oracle): multi-user concurrent access, versioning, access control. Desktop for researchers; enterprise for organizations with many analysts sharing data.",
+    "explanation": "Sections 4.3.4, 4.2.2."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the acronym WASH stand for in the context of KoBoToolbox usage?",
+    "options": [
+      "A) Water and Sanitation Hierarchy",
+      "B) Water, Sanitation, and Hygiene",
+      "C) Watershed Analysis and Stream Hydrology",
+      "D) Water Assessment for Sustainable Health"
+    ],
+    "correct": "B",
+    "explanation": "WASH stands for Water, Sanitation, and Hygiene — the field where KoBoToolbox and ODK are widely used for surveys in developing countries."
+  },
+  {
+    "type": "mcq",
+    "question": "Which ArcGIS Pro tool is equivalent to QGIS's Processing Graphical Modeler?",
+    "options": [
+      "A) Python Console",
+      "B) Raster Calculator",
+      "C) ModelBuilder",
+      "D) ArcPy"
+    ],
+    "correct": "C",
+    "explanation": "ModelBuilder in ArcGIS Pro and the Processing Graphical Modeler in QGIS both allow chaining geoprocessing tools into automated workflows."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the QFieldCloud service provide?",
+    "options": [
+      "A) Cloud-based raster processing",
+      "B) Synchronization infrastructure for QField teams",
+      "C) Free DEM hosting",
+      "D) Web map publishing"
+    ],
+    "correct": "B",
+    "explanation": "QFieldCloud provides synchronization infrastructure for teams using QField for mobile data collection."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Bear River example, which US states does the HUC8 watershed span?",
+    "options": [
+      "A) Colorado and Wyoming",
+      "B) Utah and Wyoming",
+      "C) Idaho and Montana",
+      "D) Nevada and Utah"
+    ],
+    "correct": "B",
+    "explanation": "The Upper Bear River basin (HUC8 16010203) spans Utah and Wyoming."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the key capability that makes raster datasets essential for water resources alongside vector features?",
+    "options": [
+      "A) They support field name lengths over 10 characters",
+      "B) They represent continuous spatial fields like elevation and rainfall",
+      "C) They are always more accurate than vector data",
+      "D) They can only store integer values"
+    ],
+    "correct": "B",
+    "explanation": "Raster datasets represent continuous fields (elevation, rainfall, soil moisture) that vary across space — essential for hydrological analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "What determines the spatial resolution of a raster dataset?",
+    "options": [
+      "A) The number of bands",
+      "B) The bit depth",
+      "C) The cell size",
+      "D) The file format"
+    ],
+    "correct": "C",
+    "explanation": "Cell size (spatial resolution) determines how much ground each cell represents — e.g., a 30m DEM has 30x30m cells."
+  },
+  {
+    "type": "mcq",
+    "question": "The chapter describes the water professional of 2026 as someone who:",
+    "options": [
+      "A) Uses only desktop GIS",
+      "B) Relies exclusively on cloud platforms",
+      "C) Moves fluidly between desktop, cloud, and mobile environments",
+      "D) Avoids programming entirely"
+    ],
+    "correct": "C",
+    "explanation": "The chapter describes modern water professionals moving fluidly between desktop, cloud, and mobile environments depending on the task."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoPackage is based on PostgreSQL.",
+    "correct": false,
+    "explanation": "GeoPackage is based on SQLite, not PostgreSQL. PostGIS uses PostgreSQL."
+  },
+  {
+    "type": "true_false",
+    "question": "The Processing framework in QGIS allows access to SAGA GIS tools.",
+    "correct": true,
+    "explanation": "QGIS Processing unifies tools from QGIS native, GRASS, SAGA, GDAL/OGR, and plugins."
+  },
+  {
+    "type": "true_false",
+    "question": "A feature class can contain features with mixed geometry types (points, lines, and polygons together).",
+    "correct": false,
+    "explanation": "A feature class contains features sharing the same geometry type. Mixed types require separate feature classes."
+  },
+  {
+    "type": "true_false",
+    "question": "In ArcGIS Pro, all work is organized around a project with a .aprx file.",
+    "correct": true,
+    "explanation": "ArcGIS Pro projects contain the .aprx file, default geodatabase, and toolbox in a unified structure."
+  },
+  {
+    "type": "true_false",
+    "question": "The Water Framework Directive is a US regulation.",
+    "correct": false,
+    "explanation": "The Water Framework Directive is an EU regulation; the US uses different water management legislation."
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoPackage can store both vector and raster data in a single file.",
+    "correct": true,
+    "explanation": "GeoPackage stores vector features, raster tiles, and attribute data in a single portable SQLite-based file."
+  },
+  {
+    "type": "true_false",
+    "question": "Desktop GIS has been entirely replaced by cloud GIS in 2026.",
+    "correct": false,
+    "explanation": "Desktop GIS remains the workhorse for detailed analysis. Cloud complements but does not replace desktop."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zala River is the largest tributary of Lake Balaton.",
+    "correct": true,
+    "explanation": "The chapter describes the Zala as the largest tributary of Lake Balaton, draining ~2,620 km²."
+  },
+  {
+    "type": "true_false",
+    "question": "In GIS, buffering a stream network by its riparian setback identifies land use conflicts.",
+    "correct": true,
+    "explanation": "Buffer operations create zones around features. Buffering streams by setback distance and overlaying with land use identifies conflicts."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus reaches have a from-node and to-node defining connectivity.",
+    "correct": true,
+    "explanation": "Every NHDPlus reach has a unique ID, from-node and to-node for connectivity, flow direction, and flow attributes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM GLO-30 has worse vertical accuracy than SRTM.",
+    "correct": false,
+    "explanation": "Copernicus GLO-30 has better accuracy (<4m LE90) than SRTM (~6-9m LE90) and has largely superseded it."
+  },
+  {
+    "type": "true_false",
+    "question": "A projected coordinate system uses degrees as its unit of measurement.",
+    "correct": false,
+    "explanation": "Projected CRS use linear units (metres or feet). Geographic CRS use degrees."
+  },
+  {
+    "type": "true_false",
+    "question": "Vector features in a geodatabase have both a Shape field and an ObjectID.",
+    "correct": true,
+    "explanation": "Every feature has a system-managed Shape field (geometry) and automatic ObjectID."
+  },
+  {
+    "type": "true_false",
+    "question": "The dissolve operation aggregates detailed polygons to coarser reporting levels.",
+    "correct": true,
+    "explanation": "Dissolving sub-watershed polygons by parent code aggregates them to coarser levels."
+  },
+  {
+    "type": "true_false",
+    "question": "A single GIS cannot handle both raster and vector data.",
+    "correct": false,
+    "explanation": "Modern GIS platforms (ArcGIS Pro, QGIS) handle both raster and vector data seamlessly."
+  },
+  {
+    "type": "true_false",
+    "question": "The HydroSHEDS project was developed at McGill University.",
+    "correct": true,
+    "explanation": "HydroSHEDS was developed at McGill University and is now managed by WWF."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Zala walkthrough, the DEM is displayed at 50% transparency over hillshade.",
+    "correct": true,
+    "explanation": "The walkthrough specifies setting the DEM color layer to 50% transparency over the hillshade."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feature class stores features with the same _____ type and attributes.",
+    "correct": "geometry",
+    "explanation": "Points, lines, or polygons — all features in a class share the same geometry type."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The process of connecting non-spatial tables to spatial features via shared keys is called a table _____.",
+    "correct": "join",
+    "explanation": "Table joins are the mechanism for enriching spatial features with tabular data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In geodatabase terms, a _____ is a collection of rows with attributes but no geometry.",
+    "correct": "table",
+    "explanation": "Tables (object classes) store non-spatial data like time series and measurements."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The open-source mobile data collection tool used alongside QGIS is _____.",
+    "correct": "QField",
+    "explanation": "QField is the QGIS mobile companion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In ArcGIS Pro, the default geodatabase for a project is a _____ geodatabase.",
+    "correct": "file",
+    "explanation": "ArcGIS Pro automatically creates a file geodatabase for each new project."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the US, the dataset providing pre-delineated watershed polygons is the _____.",
+    "correct": "WBD",
+    "explanation": "Watershed Boundary Dataset provides the complete HUC hierarchy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ widget in ArcGIS Online allows cloud-based watershed delineation.",
+    "correct": "Watershed",
+    "explanation": "ArcGIS Online's Watershed widget or Trace Downstream service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A geodatabase _____ defines a one-to-many link between gauges and measurements.",
+    "correct": "relationship",
+    "explanation": "Relationships formalize connections between features and related tables."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GIS prepares model _____ and visualizes model outputs.",
+    "correct": "inputs",
+    "explanation": "GIS provides parameters to models and displays their results."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ analysis produces flow direction grids from DEMs.",
+    "correct": "Terrain",
+    "explanation": "Terrain analysis geoprocessing derives hydrological products from DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Clipping a continental dataset to a watershed boundary is a _____ operation.",
+    "correct": "geoprocessing",
+    "explanation": "Clip is a standard geoprocessing operation for extracting study area subsets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A stream reach is a segment between two _____ or between a source and the first one.",
+    "correct": "confluences",
+    "explanation": "Reaches are defined by their endpoints at confluences."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ view of GIS treats it as an intelligent spatial database.",
+    "correct": "geodatabase",
+    "explanation": "The geodatabase view handles data management with enforced rules."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The QGIS equivalent of ArcGIS Pro's layout view is called _____ Layout.",
+    "correct": "Print",
+    "explanation": "Print Layout provides cartographic composition in QGIS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In hydrology, tracing upstream from a point finds all _____ reaches.",
+    "correct": "contributing",
+    "explanation": "Upstream tracing identifies all reaches that contribute water to a point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Framework Directive defines EU river basin districts.",
+    "correct": "Water",
+    "explanation": "The EU Water Framework Directive establishes the river basin hierarchy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Intersecting a flood zone with a parcel map identifies properties at _____.",
+    "correct": "risk",
+    "explanation": "Spatial overlay identifies which parcels have any portion in the flood zone."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESRI's current desktop GIS is called ArcGIS _____.",
+    "correct": "Pro",
+    "explanation": "ArcGIS Pro replaced ArcMap as the current-generation desktop platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tool in ArcGIS Pro chains geoprocessing steps visually.",
+    "correct": "ModelBuilder",
+    "explanation": "ModelBuilder automates workflows graphically."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CORINE uses a standardized _____ palette for land cover classes.",
+    "correct": "color",
+    "explanation": "The CORINE color palette ensures consistency across European maps."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A watershed polygon serves as the _____ filter for data acquisition.",
+    "correct": "spatial",
+    "explanation": "The study area polygon filters all subsequent data collection geographically."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus _____ DEM provides 30m global elevation data.",
+    "correct": "GLO-30",
+    "explanation": "Copernicus GLO-30 is the standard 30m global DEM."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the geodatabase view differs from simple file storage for water resources data.",
+    "correct": "A geodatabase enforces rules: stream connectivity, no watershed overlap, coordinate system consistency, maintained relationships. Simple file storage (folder of shapefiles) lacks enforcement of spatial rules, relationship maintenance, and naming/CRS consistency. The geodatabase is an intelligent spatial database, not just file storage.",
+    "explanation": "Section 4.1.1 and 4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of server GIS in a water management agency.",
+    "correct": "Server GIS (ArcGIS Enterprise, GeoServer) manages large spatial databases, serves maps to many users simultaneously, runs geoprocessing on centralized infrastructure. Agencies publish flood maps, gauge data, and boundaries as web services consumed by desktop, web, and mobile clients. Enables INSPIRE compliance for EU agencies.",
+    "explanation": "Section 4.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what a feature class is and provide water resources examples.",
+    "correct": "A feature class is a collection of geographic features sharing geometry type and attribute schema. Each feature has ObjectID, Shape field, and user-defined attributes. Examples: stream reaches (polylines with name, order, discharge), watershed boundaries (polygons with code, area, mean elevation), gauges (points with station ID, record length).",
+    "explanation": "Section 4.3.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the raster datasets used in water resources GIS and their defining properties.",
+    "correct": "Raster datasets store gridded values (elevation, rainfall, land cover, flow direction). Key properties: cell size (spatial resolution), extent (coverage area), number of bands, and bit depth. A geodatabase can store rasters alongside vectors, ensuring spatial relationship maintenance. DEMs, flow grids, and land cover are all essential rasters.",
+    "explanation": "Section 4.3.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how relationships in a geodatabase connect time series data to spatial features.",
+    "correct": "Relationships formalize connections: a one-to-many relationship between a gauge feature class and a discharge table says each gauge has many measurements. This enables clicking a gauge to retrieve its history, or querying measurements to highlight corresponding gauges on the map. The physical system's interconnections are reflected in the data model.",
+    "explanation": "Section 4.3.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the file geodatabase and GeoPackage formats for a cross-platform project.",
+    "correct": "File geodatabase: ESRI proprietary, full ArcGIS support, limited QGIS read access, 1 TB capacity, topology/domains. GeoPackage: OGC standard, full support everywhere, single SQLite file, no topology/domains but portable and interoperable. For cross-platform: GeoPackage is safer since it works equally in ArcGIS Pro and QGIS.",
+    "explanation": "Section 4.3.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how streams are represented as vector line features and why topology matters.",
+    "correct": "Streams are polyline features: each reach is a segment between confluences with geometry (coordinate vertices) and attributes (name, order, discharge, slope). Topology describes connectivity: from-node/to-node at shared junctions. This enables network tracing for determining upstream sources, downstream impacts, and flood propagation paths.",
+    "explanation": "Section 4.4.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how watershed polygons form nested hierarchies and the practical implications.",
+    "correct": "Watersheds nest: large basins contain sub-basins. US: HUC2-HUC12 (6 levels). EU: WFD districts. Global: HydroBASINS (12 levels). The key property is non-overlapping partitioning: every point belongs to exactly one watershed per level. This enables unambiguous aggregation of any spatial quantity to watershed units.",
+    "explanation": "Section 4.4.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical steps for setting up a project geodatabase for a Hungarian watershed study.",
+    "correct": "Create a new ArcGIS Pro project (creates folder, geodatabase, toolbox) or QGIS project with new GeoPackage. Choose projected CRS: EOV (EPSG:23700) for national or UTM 34N for European data. Create a feature dataset for vector layers. The projected CRS ensures meaningful distance/area calculations in metres.",
+    "explanation": "Section 4.7.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how wildcard queries exploit the hierarchical HUC encoding.",
+    "correct": "HUC codes are hierarchically encoded: first 2 digits = region, first 4 = sub-region, etc. A HUC12's first 8 digits identify its parent HUC8. Using 'LIKE 16010203%' selects all HUC12s within that HUC8 efficiently through string matching, without needing complex spatial queries.",
+    "explanation": "Section 4.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Selection by Location concept with water resources scenarios.",
+    "correct": "Spatial selection uses geographic relationships: Intersect (parcels in flood zone), Within (gauges inside watershed), Within a Distance (wells near contamination), Have Their Center In (stream reaches in watershed). It connects separate datasets geographically — the national gauge network and project watershed become linked through spatial selection.",
+    "explanation": "Section 4.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how field calculations create derived attributes for water resources analysis.",
+    "correct": "Field calculation computes new attributes from existing ones. Examples: AREA_KM2 = Shape_Area/1000000 converts to interpretable units. SPECIFIC_Q = DISCHARGE/AREA_KM2 normalizes for area. These derived fields enable meaningful comparison, graduated display, and model parameterization.",
+    "explanation": "Section 4.6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Arc Hydro data model handles time series data.",
+    "correct": "Arc Hydro includes tables for time series (discharge, water levels, quality parameters) linked to monitoring point features through relationships. The HydroID connects spatial features to temporal data. This allows clicking a gauge to retrieve its time series or querying time series to find corresponding spatial features.",
+    "explanation": "Section 4.8.1."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Arc Hydro with the INSPIRE Hydrography specification.",
+    "correct": "Arc Hydro: ESRI-specific schema with integrated tools, HydroID system, widely used in research/practice. INSPIRE Hydrography: EU standard emphasizing interoperability across member states with standardized feature types. Both standardize water feature organization but with different priorities (analytical workflow vs. cross-border interoperability).",
+    "explanation": "Section 4.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Google Earth Engine enables analysis that would be impractical on desktop GIS.",
+    "correct": "GEE stores petabytes of satellite/climate data on Google servers. Analyses that would require downloading terabytes (20-year land cover change across a river basin) execute in the cloud. The JRC Global Surface Water mapped every 30m water pixel globally from 1984 — only possible with cloud-scale computation.",
+    "explanation": "Section 4.2.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical differences between publishing web services via ArcGIS Enterprise versus GeoServer.",
+    "correct": "ArcGIS Enterprise: proprietary, integrates seamlessly with ArcGIS desktop/online ecosystem, supports feature services and enterprise geodatabases. GeoServer: open-source, OGC-standard WMS/WFS/WCS, used for INSPIRE compliance. Both serve maps to multiple users. Choice depends on institutional context and licensing.",
+    "explanation": "Section 4.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Explore/Identify tool is used to verify GIS analysis results.",
+    "correct": "The Explore tool allows clicking any map point to see values of all visible layers at that location. Essential for verification: checking output runoff values against expected precipitation-minus-infiltration results, detecting resampling discrepancies, verifying that spatial queries selected the right features.",
+    "explanation": "Referenced in analysis verification discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how land cover data is used in hydrological model parameterization through GIS.",
+    "correct": "Land cover rasters (CORINE, NLCD) assign categories to each cell. Through zonal statistics, the percentage of each land cover type per watershed is computed. A lookup table converts land cover classes to hydrological parameters (runoff coefficients, curve numbers, infiltration rates). GIS overlay operations apply these spatially.",
+    "explanation": "Sections 4.11.5 and cross-reference to parameterization."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical significance of the snap raster setting in raster analysis.",
+    "correct": "Even grids with identical cell sizes may be misaligned by a fraction of a cell. Snap raster forces output cells to align with a reference grid, preventing subtle alignment errors that accumulate through chained operations. Essential for multi-step hydrological workflows where consistent cell-to-cell correspondence is required.",
+    "explanation": "Analysis environment discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how transparency controls in geovisualization enhance flood mapping.",
+    "correct": "Transparency allows layering: a semi-transparent flood inundation overlay on aerial imagery shows both flood extent and affected buildings simultaneously. Similarly, DEM elevation color at 50% transparency over hillshade creates shaded relief. These combined visualizations communicate more information than any single layer.",
+    "explanation": "Section 4.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the OGC web service standards (WMS, WFS, WCS) matter for water agencies.",
+    "correct": "OGC standards ensure interoperability: any compliant client can consume any compliant service. WMS serves rendered maps, WFS serves vector features with attributes, WCS serves raster coverages. Water agencies (especially EU/INSPIRE) must publish data accessible to any software, not locked to one vendor.",
+    "explanation": "Section 4.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how a water professional decides between cloud and desktop processing.",
+    "correct": "Cloud (GEE/Planetary Computer): for petabyte-scale analysis, satellite time series, continental/global scope. Desktop (ArcGIS Pro/QGIS): for detailed local analysis, custom workflows, engineering-grade precision. Quick reconnaissance: cloud. Regulatory compliance: desktop. Teaching: cloud for demos, desktop for hands-on skills.",
+    "explanation": "Sections 4.2.3, 4.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the analysis mask in restricting raster calculations to a watershed.",
+    "correct": "An analysis mask restricts computation to cells within a defined boundary. Cells outside receive NODATA. Using a watershed polygon as mask ensures only relevant cells participate in calculations like mean elevation, total runoff, or land cover statistics. Prevents external areas from contaminating results.",
+    "explanation": "Analysis environment discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how geodatabase subtypes enable efficient data management for stream networks.",
+    "correct": "Subtypes allow one feature class to contain categorized features with different default values and validation rules. For streams: perennial and intermittent subtypes in one layer, with different defaults for flow attributes. This avoids maintaining separate feature classes while enforcing appropriate rules per category.",
+    "explanation": "Section 4.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the Copernicus GLO-30 DEM becoming the de facto standard.",
+    "correct": "Copernicus GLO-30 provides free global 30m coverage with better accuracy than SRTM (<4m vs ~6-9m). More recent acquisition (2011-2015 vs SRTM 2000) captures landscape changes. Has largely superseded SRTM for new work. Its free availability democratizes hydrological analysis globally.",
+    "explanation": "Referenced in DEM discussions across chapters."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the Zala River walkthrough demonstrates the universal nature of GIS workflows.",
+    "correct": "The Zala walkthrough uses Hungarian data (OVF, EU-Hydro, Copernicus, CORINE) but follows exactly the same logic as a US example (WBD, NHDPlus, 3DEP, NLCD). The GIS operations are identical regardless of geography: obtain boundary, add streams, add DEM, add gauges, add land cover. Only data sources differ.",
+    "explanation": "Section 4.11."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Strahler stream order system works and why it matters for symbology.",
+    "correct": "Strahler order assigns 1 to headwater streams. When two order-N streams join, the result is order N+1. When streams of different orders join, the higher order continues. This classification creates a hierarchy used for graduated symbology: thin lines for headwaters, thick for main channels, visually communicating drainage structure.",
+    "explanation": "Strahler order referenced in stream network discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how an enterprise geodatabase supports a national water agency.",
+    "correct": "Enterprise geodatabases (PostGIS, SQL Server with SDE) enable multi-user concurrent access, versioning, and access control. A national agency managing thousands of layers (flood maps, gauge data, watershed boundaries) needs many regional offices accessing the same data simultaneously. The database handles concurrent edits and version management.",
+    "explanation": "Section 4.2.2 and 4.3.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the choice between ArcGIS Pro and QGIS often depends on institutional context.",
+    "correct": "Organizations with ESRI Enterprise infrastructure find ArcGIS Pro integrates seamlessly with portals, services, and enterprise geodatabases. Individual researchers or budget-constrained teams benefit from QGIS's zero cost and cross-platform support. Large agencies often need enterprise integration; small teams and teaching institutions prefer QGIS.",
+    "explanation": "Sections 4.2.1 and 4.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how Python geospatial libraries extend GIS capabilities beyond desktop software.",
+    "correct": "Python with GDAL, Fiona, Shapely, Rasterio, GeoPandas, xarray provides scripting that does everything desktop GIS does plus orchestrates complex workflows. Processing 10,000 sub-watersheds, 500 model runs, or daily continental flood maps demands automation. Both ArcPy and PyQGIS provide gentle GUI-to-script pathways.",
+    "explanation": "Section 4.13.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of dissolve operations in water resources analysis.",
+    "correct": "Dissolve aggregates polygon features by merging those sharing a common attribute value into single polygons. For water resources: dissolving sub-watershed polygons by parent watershed code creates the parent watershed boundaries. This aggregation converts detailed data to coarser reporting levels needed for planning.",
+    "explanation": "Geoprocessing operations discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how real-time flood forecasting systems rely on GIS-based grids.",
+    "correct": "Modern flood forecasting (US National Water Model, EU EFAS) uses grids at every step: weather radar provides precipitation grids, satellite gives soil moisture grids, NWP models provide forecast rainfall grids. The hydrological model processes all through grid-based calculations producing distributed runoff routed through networks to forecast floods.",
+    "explanation": "Referenced in distributed modeling context."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the clip operation is used in water resources data preparation.",
+    "correct": "Clipping extracts the portion of a dataset within a study area boundary. For water resources: clip a continental DEM to watershed extent, clip national stream networks to study area, clip land cover to catchment boundary. This reduces data volume and ensures only relevant information participates in analysis.",
+    "explanation": "Geoprocessing and data preparation discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the MERIT DEM and why it is preferred for continental/global hydrological modeling.",
+    "correct": "MERIT DEM removes major error components from spaceborne DEMs (stripe noise, absolute bias, speckle, tree height bias) producing cleaner 90m elevation. For continental/global modeling, these corrections directly improve flow direction and watershed boundary quality. Preferred for large-scale work where error correction matters more than resolution.",
+    "explanation": "DEM discussion referenced from Chapter 5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how attribute queries enable efficient data extraction from large national datasets.",
+    "correct": "Starting from millions of features, attribute queries extract project-specific subsets. 'STRAHLER_ORDER >= 3' extracts non-headwater streams. 'RECORD_LENGTH >= 30 AND DRAINAGE_AREA > 500' finds gold-standard flood analysis gauges. Compound queries with AND/OR/NOT and wildcards (LIKE '16010203%') enable precise, efficient extraction.",
+    "explanation": "Section 4.6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the cartographic composition elements needed for a professional watershed map.",
+    "correct": "A complete map layout includes: title, legend (explaining all symbols), scale bar, north arrow, data source credits, and the map frame with thematic layers. The Zala walkthrough produces this: watershed boundary, symbolized streams (width by order), gauge triangles with labels, hillshaded DEM, and CORINE land cover.",
+    "explanation": "Section 4.11.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of mosaic datasets for managing large raster collections.",
+    "correct": "Mosaic datasets catalog multiple raster tiles as a single logical layer without physically merging them. They reference original tiles and dynamically assemble them as users pan/zoom. This manages large DEM collections (hundreds of tiles for a country) efficiently, avoiding creating enormous single files.",
+    "explanation": "Referenced in geodatabase raster storage discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the SRTM dataset from 2000 remains relevant despite newer alternatives.",
+    "correct": "SRTM has a long track record with extensive validation in thousands of studies. Its year-2000 snapshot is useful for change detection (comparing with newer DEMs). Many existing workflows and tutorials reference SRTM. However, Copernicus GLO-30 is preferred for new work due to better accuracy and more recent acquisition.",
+    "explanation": "DEM comparison discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how GIS-based intersect operations support flood risk assessment.",
+    "correct": "Intersecting a flood zone polygon with a parcel map identifies all properties with any portion at risk. Intersecting with demographics data reveals affected population. Intersecting with infrastructure layers (roads, utilities) identifies vulnerable systems. Each intersection combines flood hazard geography with exposure data.",
+    "explanation": "Geoprocessing operations for flood analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how QGIS's on-the-fly reprojection differs from ArcGIS Pro's feature dataset CRS enforcement.",
+    "correct": "QGIS automatically displays layers correctly regardless of native CRS through on-the-fly reprojection, but this can mask underlying inconsistencies. ArcGIS Pro feature datasets enforce CRS at the container level, auto-reprojecting imports. QGIS users must explicitly reproject before analysis; ArcGIS Pro handles it automatically within feature datasets.",
+    "explanation": "Section 4.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the Balaton catchment for Hungarian water resources management.",
+    "correct": "Lake Balaton is Hungary's largest lake with enormous ecological and economic importance. Its 5,775 km² catchment determines water quality and quantity. The Zala River is the largest tributary. Understanding land use change, nutrient loading, and runoff dynamics in this catchment is a major national water management priority.",
+    "explanation": "Section 4.11."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the GDAL/OGR library in the GIS ecosystem.",
+    "correct": "GDAL (raster) and OGR (vector) provide the data translation layer used by nearly all GIS software. QGIS reads file geodatabases through GDAL's OpenFileGDB driver. Command-line tools (ogr2ogr, gdalwarp) enable format conversion and reprojection without desktop GIS. Python bindings integrate with scripted workflows.",
+    "explanation": "Referenced throughout cross-platform discussions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how 3D visualization enhances understanding of watershed hydrology.",
+    "correct": "3D visualization drapes watershed maps over DEMs, making topography-drainage relationships intuitive. Ridgelines, valleys, and channel networks become immediately apparent in context. This helps non-specialists understand why water flows certain ways and why watershed boundaries follow ridgelines.",
+    "explanation": "Section 4.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the buffer operation and its water resources applications.",
+    "correct": "Buffering creates zones around features at a specified distance. For water resources: buffering streams by riparian setback distance identifies land use conflicts, buffering contamination sources identifies potentially affected wells, buffering infrastructure identifies flood-vulnerable facilities. The resulting polygons support spatial analysis.",
+    "explanation": "Geoprocessing operations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the ArcGIS Pro project structure organizes water resources work.",
+    "correct": "An ArcGIS Pro project creates a folder containing the .aprx project file, a default file geodatabase (.gdb), and a default toolbox. All maps, data, and analysis tools are unified in one structure. This keeps water resources data organized: DEMs, features, and analysis results together in the geodatabase with documented workflows.",
+    "explanation": "Section 4.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why data interoperability matters for international water resources projects.",
+    "correct": "International projects involve data from multiple agencies, countries, and formats. Interoperability (via OGC standards, GeoPackage, INSPIRE compliance) ensures data can be shared and used across software platforms and borders. Without it, each partner's data is siloed. GeoPackage and OGC services solve this.",
+    "explanation": "Format and platform discussions throughout."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how field verification using mobile GIS improves data quality in water projects.",
+    "correct": "Mobile GIS enables on-site verification: GPS-positioned photos document actual conditions at gauge sites, stream crossings, flood damage locations. Georeferenced observations correct or validate desktop-derived data. Offline capability ensures remote watershed areas can be surveyed. Synchronized data flows directly into the project GIS.",
+    "explanation": "Section 4.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the process of exporting selections to a project geodatabase.",
+    "correct": "After selecting features (by attribute or spatial query), exporting the selection to the project geodatabase: copies only selected features, reprojects to the project CRS during export, creates a clean feature class in the target container. This is how national datasets are filtered to project-specific subsets.",
+    "explanation": "Section 4.7.3 step 5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between nominal, ordinal, and ratio data types in GIS attribute tables.",
+    "correct": "Nominal: categories without order (land cover types: forest, urban). Ordinal: categories with order (Strahler order 1<2<3). Ratio: continuous with true zero (discharge in m³/s, area in km²). The data type determines appropriate symbology (categorical vs graduated) and valid statistical operations.",
+    "explanation": "Underlies symbology and classification discussions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why coordinate system consistency is the most common source of error in GIS projects.",
+    "correct": "Mismatched CRS causes layers that appear aligned (via on-the-fly reprojection) but produce wrong results in analysis. Mixing geographic (degrees) with projected (metres) gives meaningless area calculations. Mixing different projections shifts features relative to each other. Feature datasets prevent this; QGIS users must manually verify.",
+    "explanation": "Emphasized throughout coordinate system discussions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the clipping operation with a watershed boundary prepares data for analysis.",
+    "correct": "Clipping restricts datasets to the study area: continental DEMs become watershed DEMs, national stream networks become local networks, country-wide land cover becomes catchment-specific. This reduces data volume, eliminates irrelevant features, and focuses analysis on the hydrologically relevant area. All subsequent analysis benefits.",
+    "explanation": "Section 4.7.3 and geoprocessing discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the HydroSHEDS project for global water resources analysis.",
+    "correct": "HydroSHEDS provides pre-processed hydrological derivatives globally: flow direction, flow accumulation, basin boundaries (HydroBASINS), stream networks (HydroRIVERS). For any location between 60°N-60°S, ready-to-use datasets save enormous processing effort. Democratizes watershed analysis for regions without national mapping agencies.",
+    "explanation": "Global data source discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Analysis tab in ArcGIS Pro provides environment control for raster operations.",
+    "correct": "The Analysis tab > Environments sets project-wide defaults for geoprocessing: cell size (coarsest/finest/specific), extent (intersection/union/manual), snap raster, and analysis mask. Tool-specific settings override these. Proper environment setup prevents silent resampling, extent clipping, and alignment errors.",
+    "explanation": "Geoprocessing environment discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the advantages of using a common HydroID across all Arc Hydro features.",
+    "correct": "HydroID provides unambiguous cross-referencing: link any feature to any other feature or time series table. A gauge (point) connects to its reach (line) and its watershed (polygon) through HydroID. Time series data links to monitoring points. This unified identification system eliminates ambiguity across the entire water data model.",
+    "explanation": "Section 4.8.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Raster Calculator is in the Spatial Analyst toolbox, not Data Management.",
+    "correct": "The Raster Calculator performs mathematical operations on raster grids (map algebra) — this is spatial analysis, not data management. Spatial Analyst handles analytical computations (terrain analysis, hydrology, overlay). Data Management handles format conversion, projection, and file operations. The distinction reflects fundamentally different GIS functions.",
+    "explanation": "Tool organization discussion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how KoBoToolbox and ODK serve water projects in developing countries.",
+    "correct": "These open-source platforms enable georeferenced survey data collection on mobile devices for WASH projects. They support structured forms, GPS positioning, photo capture, and offline operation. Widely used by development agencies for water/sanitation/hygiene surveys where commercial GIS tools are unavailable or too expensive.",
+    "explanation": "Section 4.2.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a spatial filter and how the study area polygon functions as one.",
+    "correct": "A spatial filter restricts data retrieval or analysis to a defined geographic area. The watershed boundary polygon is the primary spatial filter: it determines which DEM tiles to download, which stream reaches to extract, which gauges to include. Every dataset is filtered through this polygon to extract project-relevant information.",
+    "explanation": "Section 4.7.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the INSPIRE Directive impacts water data sharing across EU member states.",
+    "correct": "INSPIRE requires EU members to publish spatial data through standardized OGC web services (WMS/WFS/WCS). This means water data from any member state is accessible to any OGC-compliant GIS client. Hungary publishes through Lechner; other countries through their agencies. GeoServer is commonly used for compliance. This enables transboundary water analysis with consistent, interoperable data.",
+    "explanation": "Section 4.2.2 on INSPIRE compliance."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the three-dimensional capabilities of GIS enhance water resources visualization.",
+    "correct": "3D visualization drapes thematic maps over terrain, making topography-hydrology relationships intuitive. Ridgelines that define watershed boundaries, valley floors that guide flow paths, and floodplain geometry become immediately apparent. ArcGIS Pro offers local/global 3D scenes; QGIS has 3D Map View. This helps communicate complex spatial relationships to non-technical stakeholders.",
+    "explanation": "Section 4.1.2 on 3D visualization."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of data-driven geoprocessing chains and their importance in hydrology.",
+    "correct": "A geoprocessing chain links sequential tools where each step output feeds the next input. For hydrology: DEM fills sinks, then computes flow direction, then accumulates flow, then extracts streams, then delineates watersheds. This chain transforms raw elevation into complete watershed characterization. ModelBuilder and Processing Graphical Modeler automate these chains for reproducible workflows.",
+    "explanation": "Section 4.1.3 on geoprocessing chains."
+  }
+]

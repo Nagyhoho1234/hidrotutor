@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "A DEM hidrológiai kondicionálásának célja:",
+    "options": [
+      "A) A DEM felbontásának javítása",
+      "B) Folyamatos, megszakítás nélküli lefolyás biztosítása",
+      "C) A DEM vetítésének megváltoztatása",
+      "D) A magassági értékek átlagolása"
+    ],
+    "correct": "B",
+    "explanation": "A kondicionálás biztosítja, hogy a víz folyamatosan lefelé áramolhasson minden cellából a kifolyási pontig."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypont (pit) definíciója:",
+    "options": [
+      "A) A DEM legmagasabb cellája",
+      "B) Egy cella, amelyet teljes egészében magasabb domborzat vesz körül",
+      "C) A vízgyűjtő kifolyási pontja",
+      "D) A medercsatorna legmélyebb pontja"
+    ],
+    "correct": "B",
+    "explanation": "A mélypont olyan cella vagy cellacsoport, amelyet minden oldalról magasabb cellák vesznek körül."
+  },
+  {
+    "type": "mcq",
+    "question": "Az átbukási pont (pour point) definíciója:",
+    "options": [
+      "A) A mélypontfenék",
+      "B) A vízgyűjtő legmagasabb pontja",
+      "C) A mélyedés peremének legalacsonyabb cellája",
+      "D) A medercsatorna kezdőpontja"
+    ],
+    "correct": "C",
+    "explanation": "Az átbukási pont a záró perem legalacsonyabb cellája, ahol a víz először túlcsordulna."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypontmélység kiszámítása:",
+    "options": [
+      "A) Mélypontfenék magassága mínusz az átbukási pont magassága",
+      "B) Átbukási pont magassága mínusz a mélypontfenék magassága",
+      "C) A DEM maximális magassága mínusz a minimum",
+      "D) A cellaméret osztva a lejtéssel"
+    ],
+    "correct": "B",
+    "explanation": "A mélypontmélység = z_pour - z_pit, a fenék és a perem közötti különbség."
+  },
+  {
+    "type": "mcq",
+    "question": "A domborzati lefolyáselemzés keretrendszerének hány fő lépése van?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 10"
+    ],
+    "correct": "C",
+    "explanation": "8 lépés: rekondicionálás, feltöltés, folyásirány, kumuláció, vízhálózat-meghatározás, szegmentálás, részvízgyűjtők, raszter-vektor konverzió."
+  },
+  {
+    "type": "mcq",
+    "question": "A domborzati lefolyáselemzésben melyik lépés az első?",
+    "options": [
+      "A) Folyásirány-számítás",
+      "B) DEM rekondicionálás",
+      "C) Vízhálózat-meghatározás",
+      "D) Vízgyűjtő-lehatárolás"
+    ],
+    "correct": "B",
+    "explanation": "Az első (opcionális) lépés a DEM rekondicionálás, majd a mélypontfeltöltés következik."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypontfeltöltés (Fill) az ArcGIS Pro-ban melyik eszköztárban található?",
+    "options": [
+      "A) Surface",
+      "B) Interpolation",
+      "C) Hydrology",
+      "D) Zonal"
+    ],
+    "correct": "C",
+    "explanation": "A Fill a Spatial Analyst Hydrology eszköztárban található."
+  },
+  {
+    "type": "mcq",
+    "question": "A feltöltési algoritmus milyen irányban halad?",
+    "options": [
+      "A) A legmagasabb mélyponttól lefelé",
+      "B) A legalacsonyabb mélyponttól felfelé",
+      "C) Véletlenszerűen",
+      "D) Északról délre"
+    ],
+    "correct": "B",
+    "explanation": "Az eljárás a legalacsonyabb mélyponttól felfelé halad."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypontfeltöltés után az egykori mélyedés milyen alakot vesz fel?",
+    "options": [
+      "A) V-alakú völgyet",
+      "B) Sík területet az átbukási pont magasságán",
+      "C) Dombot",
+      "D) Változatlan marad"
+    ],
+    "correct": "B",
+    "explanation": "A feltöltés után a mélyedés sík területté válik az átbukási pont magasságán."
+  },
+  {
+    "type": "mcq",
+    "question": "A bevágás (breaching/carving) milyen módszer?",
+    "options": [
+      "A) A mélypont belsejét emeli",
+      "B) Az akadálycellák magasságát csökkenti",
+      "C) Új cellákat ad hozzá",
+      "D) A DEM felbontását változtatja"
+    ],
+    "correct": "B",
+    "explanation": "A bevágás az akadálycellák magasságát csökkenti, csatornát vágva az akadályon."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszert ki fejlesztette?",
+    "options": [
+      "A) Tarboton",
+      "B) Jenson",
+      "C) Hellweger",
+      "D) O'Callaghan"
+    ],
+    "correct": "C",
+    "explanation": "Hellweger (1997) fejlesztette ki David Maidment kutatócsoportjában a Texasi Egyetemen."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszer pufferzónájának tipikus mérete:",
+    "options": [
+      "A) 50 m",
+      "B) 100 m",
+      "C) 500 m",
+      "D) 5000 m"
+    ],
+    "correct": "C",
+    "explanation": "A pufferzóna jellemzően 500 méter a legközelebbi medertől."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az egyszerű mederbeégetés fő hátránya?",
+    "options": [
+      "A) Túl lassú",
+      "B) Éles magassági ugrásokat hoz létre a mederpartoknál",
+      "C) Nem képes a medervonalat követni",
+      "D) Csak LiDAR DEM-eken működik"
+    ],
+    "correct": "B",
+    "explanation": "A mederbeégetés függőleges falakat hoz létre, irreális lejtőértékeket okozva a meder közelében."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szoftver kínál bevágási (breaching) algoritmust?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) TauDEM",
+      "C) WhiteboxTools",
+      "D) SAGA"
+    ],
+    "correct": "C",
+    "explanation": "A WhiteboxTools (BreachDepressions, BreachDepressionsLeastCost) valósít meg bevágási algoritmusokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az optimális mélyponteltávolítást ki javasolta?",
+    "options": [
+      "A) Tarboton (1997)",
+      "B) Soille (2004)",
+      "C) Hellweger (1997)",
+      "D) Jenson és Domingue (1988)"
+    ],
+    "correct": "B",
+    "explanation": "Soille (2004) javasolta a feltöltés és bevágás optimális kombinálását."
+  },
+  {
+    "type": "mcq",
+    "question": "A feltöltött-mínusz-DEM diagnosztika mire szolgál?",
+    "options": [
+      "A) A DEM felbontásának ellenőrzésére",
+      "B) A kondicionálás DEM-re gyakorolt hatásainak vizsgálatára",
+      "C) A vetületi hiba meghatározására",
+      "D) A mérőhálózat sűrűségének ellenőrzésére"
+    ],
+    "correct": "B",
+    "explanation": "A feltöltött DEM és az eredeti DEM különbsége mutatja, hol és mennyit módosított a feltöltés."
+  },
+  {
+    "type": "mcq",
+    "question": "Jenson és Domingue klasszikus mélypontfeltöltési algoritmusát melyik évben publikálták?",
+    "options": [
+      "A) 1984",
+      "B) 1988",
+      "C) 1997",
+      "D) 2004"
+    ],
+    "correct": "B",
+    "explanation": "Jenson és Domingue 1988-ban publikálta a klasszikus feltöltési algoritmust."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 folyásirány-algoritmus mit nem tud meghatározni sík felszínen?",
+    "options": [
+      "A) A cellaszámot",
+      "B) Egyértelmű lefelé irányuló irányt",
+      "C) A cellaméretet",
+      "D) A magassági értéket"
+    ],
+    "correct": "B",
+    "explanation": "Sík felszínen egyetlen szomszéd sem alacsonyabb, így a D8 nem tud irányt meghatározni."
+  },
+  {
+    "type": "mcq",
+    "question": "A sík terület feloldása melyik szakaszban tárgyalt?",
+    "options": [
+      "A) 9.2. szakasz",
+      "B) 9.3. szakasz",
+      "C) 9.5. szakasz",
+      "D) 9.6. szakasz"
+    ],
+    "correct": "D",
+    "explanation": "A sík terület feloldási mechanizmusokat a 9.6. szakasz tárgyalja."
+  },
+  {
+    "type": "mcq",
+    "question": "A műtermék-mélypontok leggyakoribb oka:",
+    "options": [
+      "A) Földrengések",
+      "B) A DEM-készítési folyamat hibái",
+      "C) Vulkáni tevékenység",
+      "D) Emberi építkezés"
+    ],
+    "correct": "B",
+    "explanation": "A műtermék-mélypontok interpoláció, radarvisszaverődés és más DEM-készítési hibákból fakadnak."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Aggteleki-karszt milyen domborzati forma szempontjából jelentős?",
+    "options": [
+      "A) Homokdűnék",
+      "B) Töbrök és víznyelők",
+      "C) Glaciális mélyedések",
+      "D) Vulkáni kalderák"
+    ],
+    "correct": "B",
+    "explanation": "Az Aggteleki-karszt számos töbröt (víznyelőt) tartalmaz a mészkő oldódása miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypontfeltöltés z-limit paramétere mire szolgál?",
+    "options": [
+      "A) A DEM maximális magasságának korlátozására",
+      "B) A feltöltés megadott küszöbértéknél sekélyebb mélypontokra korlátozására",
+      "C) A cellaméret beállítására",
+      "D) A vetületi paraméterek megadására"
+    ],
+    "correct": "B",
+    "explanation": "A z-limit a megadott küszöbnél mélyebb, valószínűleg valódi topográfiai formákat megőrzi."
+  },
+  {
+    "type": "mcq",
+    "question": "A TauDEM mélypontfeltöltő eszközének neve:",
+    "options": [
+      "A) Fill",
+      "B) PitRemove",
+      "C) BreachDepressions",
+      "D) FillSinks"
+    ],
+    "correct": "B",
+    "explanation": "A TauDEM a PitRemove függvényként biztosítja a mélypontfeltöltést."
+  },
+  {
+    "type": "mcq",
+    "question": "A kondicionált DEM mire használható?",
+    "options": [
+      "A) Lejtés és kitettség számítására",
+      "B) Kizárólag folyásirány- és kumulációszámításra",
+      "C) Térképkészítésre",
+      "D) Vegetáció-elemzésre"
+    ],
+    "correct": "B",
+    "explanation": "A kondicionált DEM kizárólag áramlásirányításhoz alkalmas; más elemzésekhez az eredeti DEM-et kell használni."
+  },
+  {
+    "type": "mcq",
+    "question": "A Planchon és Darboux algoritmus (2002) miben különbözik a Jenson és Domingue (1988) algoritmustól?",
+    "options": [
+      "A) Pontosabb eredményt ad",
+      "B) Hatékonyabb nagy DEM-ekre",
+      "C) Más típusú mélyedéseket kezel",
+      "D) Csak LiDAR DEM-eken működik"
+    ],
+    "correct": "B",
+    "explanation": "Planchon és Darboux (2002) és Wang és Liu (2006) hatékonyabb megvalósításai csökkentik a számítási időt."
+  },
+  {
+    "type": "mcq",
+    "question": "A DEM-rekondicionálás fő célja:",
+    "options": [
+      "A) A DEM felbontásának növelése",
+      "B) A DEM-ből származtatott lefolyás egyeztetése a térképezett vízhálózattal",
+      "C) A DEM-ből történő lejtésszámítás",
+      "D) A DEM vetítésének megváltoztatása"
+    ],
+    "correct": "B",
+    "explanation": "A rekondicionálás biztosítja, hogy a lefolyási minták kövessék az ismert medervonalakat."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor NEM ajánlott a DEM-rekondicionálás?",
+    "options": [
+      "A) Amikor a DEM nagy felbontású és a vízhálózati adatok pontatlanok",
+      "B) Amikor a DEM durva felbontású",
+      "C) Amikor nincs elérhető vízhálózati adat",
+      "D) Mindig ajánlott"
+    ],
+    "correct": "A",
+    "explanation": "Jó minőségű DEM + pontatlan vízhálózat esetén a DEM-ben kell megbízni."
+  },
+  {
+    "type": "mcq",
+    "question": "Az egyszerű mederbeégetés képlete:",
+    "options": [
+      "A) DEM_beégetett = DEM × meder_raszter",
+      "B) DEM_beégetett = DEM - süllyesztés × meder_raszter",
+      "C) DEM_beégetett = DEM + meder_raszter",
+      "D) DEM_beégetett = DEM / meder_raszter"
+    ],
+    "correct": "B",
+    "explanation": "DEM_beégetett = DEM - süllyesztés × meder_raszter, a medercellák magasságát csökkenti."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NHDPlus HR milyen méretarányú?",
+    "options": [
+      "A) 1:100 000",
+      "B) 1:50 000",
+      "C) 1:24 000",
+      "D) 1:10 000"
+    ],
+    "correct": "C",
+    "explanation": "Az NHDPlus HR 1:24 000 méretarányú vízhálózati adatbázis az Egyesült Államokra."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EU-Hydro vízhálózati adathalmazt melyik szolgáltatás biztosítja?",
+    "options": [
+      "A) NASA",
+      "B) USGS",
+      "C) Copernicus Land Monitoring",
+      "D) OpenStreetMap"
+    ],
+    "correct": "C",
+    "explanation": "Az EU-Hydro a Copernicus Land Monitoring Service terméke."
+  },
+  {
+    "type": "mcq",
+    "question": "A HydroRIVERS adathalmaz milyen forrásból származik?",
+    "options": [
+      "A) Terepfelmérésből",
+      "B) 3\"-es DEM-ből származtatott",
+      "C) Műholdfelvételekből",
+      "D) GPS-mérésekből"
+    ],
+    "correct": "B",
+    "explanation": "A HydroRIVERS a HydroSHEDS projekt részeként DEM-ből származtatott globális vízhálózat."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen DEM-felbontás ajánlott vízgyűjtő léptékű (>10 km²) lehatároláshoz?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 30 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "30 méteres DEM-ek kiváló egyensúlyt nyújtanak a felbontás és kezelhetőség között."
+  },
+  {
+    "type": "mcq",
+    "question": "A MERIT DEM-et ki fejlesztette?",
+    "options": [
+      "A) NASA",
+      "B) ESA",
+      "C) Yamazaki Dai (Tokiói Egyetem)",
+      "D) USGS"
+    ],
+    "correct": "C",
+    "explanation": "Yamazaki Dai a Tokiói Egyetemen fejlesztette ki a MERIT DEM-et."
+  },
+  {
+    "type": "mcq",
+    "question": "A MERIT DEM milyen hibákat távolít el?",
+    "options": [
+      "A) Csak csíkzajt",
+      "B) Csíkzajt, abszolút eltolást, foltszérű zajt és fabélyeg-hatást",
+      "C) Csak a fabélyeg-hatást",
+      "D) Semmilyen hibát"
+    ],
+    "correct": "B",
+    "explanation": "A MERIT több hibakomponenst távolít el, tisztább hidrológiai deriváltakat eredményezve."
+  },
+  {
+    "type": "mcq",
+    "question": "A feltöltési térfogat képlete:",
+    "options": [
+      "A) V = Σ(z_i - z_pour) × A_cell",
+      "B) V = Σ(z_pour - z_i) × A_cell",
+      "C) V = z_pour × A_cell",
+      "D) V = Σz_i / n"
+    ],
+    "correct": "B",
+    "explanation": "V_fill = Σ(z_pour - z_i) × A_cell a 107 m alatti cellákra."
+  },
+  {
+    "type": "mcq",
+    "question": "A 9.1. táblázat mélypontfenékének magassága:",
+    "options": [
+      "A) 95 m",
+      "B) 96 m",
+      "C) 93 m",
+      "D) 99 m"
+    ],
+    "correct": "C",
+    "explanation": "A 93 méteres magasságú cella a mélypontfenék a példában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 9.1. táblázat átbukási pont magassága:",
+    "options": [
+      "A) 93 m",
+      "B) 95 m",
+      "C) 97 m",
+      "D) 99 m"
+    ],
+    "correct": "D",
+    "explanation": "Az átbukási pont a 99 méteres cella, a perem legalacsonyabb pontja."
+  },
+  {
+    "type": "mcq",
+    "question": "A 9.1. táblázat mélypontmélysége:",
+    "options": [
+      "A) 3 m",
+      "B) 6 m",
+      "C) 9 m",
+      "D) 12 m"
+    ],
+    "correct": "B",
+    "explanation": "Mélypontmélység = 99 - 93 = 6 m."
+  },
+  {
+    "type": "mcq",
+    "question": "A kidolgozott 7×7-es DEM példában a mélypontfenék magassága:",
+    "options": [
+      "A) 93 m",
+      "B) 98 m",
+      "C) 102 m",
+      "D) 107 m"
+    ],
+    "correct": "B",
+    "explanation": "A 98 méteres magasságú cella a mélypontfenék a 7×7-es rácsban."
+  },
+  {
+    "type": "mcq",
+    "question": "A kidolgozott 7×7-es DEM példában a feltöltési térfogat:",
+    "options": [
+      "A) 380 m³",
+      "B) 3800 m³",
+      "C) 38000 m³",
+      "D) 38 m³"
+    ],
+    "correct": "B",
+    "explanation": "V = 38 × 100 m² = 3800 m³, ha a cellaméret 10 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Radar-DEM-ek (SRTM, Copernicus) milyen felszínt ábrázolnak?",
+    "options": [
+      "A) Csak a csupasz talajfelszínt",
+      "B) A vegetáció lombkoronáját és épületek tetőit is",
+      "C) Csak a vízfelszínt",
+      "D) Csak az úthálózatot"
+    ],
+    "correct": "B",
+    "explanation": "A radar-DEM-ek digitális felszínmodellek, amelyek a lombkoronát és épületeket is tartalmazzák."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi okozza a közúti töltés által létrehozott mélypontot LiDAR DEM-ben?",
+    "options": [
+      "A) A LiDAR műszerhiba",
+      "B) Az útfelszín rögzíti a töltést, de az alatta lévő átereszt nem",
+      "C) A domborzat valódi formája",
+      "D) A koordináta-rendszer hibája"
+    ],
+    "correct": "B",
+    "explanation": "A DEM csak az útfelszínt mutatja, nem az átereszt, ami mesterséges akadályt hoz létre."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Pro Fill eszközének melyik paramétere opcionális?",
+    "options": [
+      "A) Bemeneti DEM",
+      "B) Kimeneti DEM",
+      "C) Z-limit (maximális mélység)",
+      "D) Koordináta-rendszer"
+    ],
+    "correct": "C",
+    "explanation": "A z-limit opcionális paraméter, amely korlátozza a feltöltést adott küszöbértéknél sekélyebb mélypontokra."
+  },
+  {
+    "type": "mcq",
+    "question": "A TauDEM milyen párhuzamosítási technológiát használ?",
+    "options": [
+      "A) GPU",
+      "B) MPI (Message Passing Interface)",
+      "C) OpenMP",
+      "D) Nem párhuzamosít"
+    ],
+    "correct": "B",
+    "explanation": "A TauDEM MPI-t használ a párhuzamos feldolgozáshoz."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szoftver kezeli natívan a földrajzi koordinátákat a DEM-feldolgozásnál?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) TauDEM",
+      "C) Arc Hydro",
+      "D) Egyik sem"
+    ],
+    "correct": "B",
+    "explanation": "A TauDEM képes a DEM-eket földrajzi koordinátákban közvetlenül feldolgozni."
+  },
+  {
+    "type": "mcq",
+    "question": "A WhiteboxTools fejlesztője:",
+    "options": [
+      "A) David Tarboton",
+      "B) John Lindsay",
+      "C) David Maidment",
+      "D) Hellweger"
+    ],
+    "correct": "B",
+    "explanation": "John Lindsay fejlesztette a Guelph Egyetemen."
+  },
+  {
+    "type": "mcq",
+    "question": "A kondicionálatlan DEM-ből levezetett vízgyűjtőnek milyen problémája lesz?",
+    "options": [
+      "A) Túl nagy lesz",
+      "B) Lyukai lesznek (elszigetelt domborzati szigetek)",
+      "C) Túl kicsi lesz",
+      "D) Semmilyen problémája nem lesz"
+    ],
+    "correct": "B",
+    "explanation": "A mélypontok elszigetelt részvízgyűjtőket hoznak létre, amelyek lyukakként jelennek meg."
+  },
+  {
+    "type": "mcq",
+    "question": "A mederbeégetés tipikus süllyesztési értéke:",
+    "options": [
+      "A) 0,1-1 m",
+      "B) 10-50 m",
+      "C) 100-500 m",
+      "D) 1-5 m"
+    ],
+    "correct": "B",
+    "explanation": "A mederbeégetés jellemzően 10-50 méter süllyesztést alkalmaz a medercellákra."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tájforma példa a valódi mélyedésre?",
+    "options": [
+      "A) Folyómeder",
+      "B) Töbör (karsztvíznyelő)",
+      "C) Domboldal",
+      "D) Ártér"
+    ],
+    "correct": "B",
+    "explanation": "A karsztos töbrök valódi zárt mélyedések, ahol a felszín zárt medencét alkot."
+  },
+  {
+    "type": "mcq",
+    "question": "A Peter Sinks (Utah) mélyedés mélysége:",
+    "options": [
+      "A) 10 m",
+      "B) 32 m",
+      "C) 62 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "A Peter Sinks egy körülbelül 62 méter mély zárt mélyedés a Logan-kanyonban."
+  },
+  {
+    "type": "mcq",
+    "question": "A DEM kondicionálása melyik fejezetben tárgyalt?",
+    "options": [
+      "A) 7. fejezet",
+      "B) 8. fejezet",
+      "C) 9. fejezet",
+      "D) 10. fejezet"
+    ],
+    "correct": "C",
+    "explanation": "A 9. fejezet központi témája a DEM hidrológiai kondicionálása."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adatforrás ajánlott a magyar OVF vízhálózati adatokhoz?",
+    "options": [
+      "A) data.vizugy.hu",
+      "B) prism.oregonstate.edu",
+      "C) earthexplorer.usgs.gov",
+      "D) openstreetmap.org"
+    ],
+    "correct": "A",
+    "explanation": "Az OVF hidrográfiai adatbázis a data.vizugy.hu portálon érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszer milyen típusú mélyedést hoz létre a medervonal mentén?",
+    "options": [
+      "A) Négyzetes csatornát",
+      "B) Sima, V-alakú mélyedést",
+      "C) Kör alakú mélyedést",
+      "D) Változatlan marad"
+    ],
+    "correct": "B",
+    "explanation": "Az AGREE lineáris lejtést alkalmaz a pufferzónán belül, V-alakú mélyedést létrehozva."
+  },
+  {
+    "type": "mcq",
+    "question": "Földrajzi koordinátákban a cellaméret miben van kifejezve?",
+    "options": [
+      "A) Méterben",
+      "B) Kilométerben",
+      "C) Tizedes fokokban",
+      "D) Radiánban"
+    ],
+    "correct": "C",
+    "explanation": "A földrajzi koordinátás DEM-ek cellméretei tizedes fokokban vannak."
+  },
+  {
+    "type": "mcq",
+    "question": "A 42°É szélességen egy szélességi fok hozzávetőleg hány km?",
+    "options": [
+      "A) 50 km",
+      "B) 76 km",
+      "C) 111 km",
+      "D) 150 km"
+    ],
+    "correct": "C",
+    "explanation": "Egy szélességi fok mindenhol kb. 111 km, a szélességtől függetlenül."
+  },
+  {
+    "type": "mcq",
+    "question": "A 42°É szélességen egy hosszúsági fok É-D mérete hozzávetőleg:",
+    "options": [
+      "A) 50 km",
+      "B) 76 km",
+      "C) 82 km",
+      "D) 111 km"
+    ],
+    "correct": "C",
+    "explanation": "Egy hosszúsági fok K-Ny mérete: 111 × cos(42°) ≈ 82 km (a kérdés É-D-re vonatkozik, de a hosszúsági fok K-Ny irányban mér)."
+  },
+  {
+    "type": "mcq",
+    "question": "A WhiteboxTools milyen programozási nyelven íródott?",
+    "options": [
+      "A) Python",
+      "B) Java",
+      "C) Rust",
+      "D) C++"
+    ],
+    "correct": "C",
+    "explanation": "A WhiteboxTools modern, nagy teljesítményű Rust-alapú eszköz."
+  },
+  {
+    "type": "mcq",
+    "question": "Miért problémás a kétszeri kondicionálás (beégetés + feltöltés)?",
+    "options": [
+      "A) Nem működik",
+      "B) A feltöltött-mínusz-DEM diagnosztika mindkét műveletet tükrözi",
+      "C) Lassabb, mint egyszer kondicionálni",
+      "D) Csak LiDAR DEM-eken működik"
+    ],
+    "correct": "B",
+    "explanation": "A beégetett mederárok visszatöltései nem mélyedés-feltöltések; az elemzőnek értenie kell a diagnosztikát."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Arc Hydro milyen DEM-rekondicionálási eszközt kínál?",
+    "options": [
+      "A) Fill Sinks",
+      "B) DEM Reconditioning (AGREE-módszer)",
+      "C) BreachDepressions",
+      "D) PitRemove"
+    ],
+    "correct": "B",
+    "explanation": "Az Arc Hydro beépített DEM Reconditioning eszközt kínál az AGREE-módszerhez."
+  },
+  {
+    "type": "mcq",
+    "question": "A GRASS GIS feltöltési parancsa:",
+    "options": [
+      "A) r.fill.dir",
+      "B) r.watershed",
+      "C) r.slope.aspect",
+      "D) r.buffer"
+    ],
+    "correct": "A",
+    "explanation": "A GRASS r.fill.dir modul végzi a mélypontfeltöltést a QGIS-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A DEM kondicionálása milyen sorrendben történik?",
+    "options": [
+      "A) Feltöltés, majd rekondicionálás",
+      "B) Rekondicionálás (opcionális), majd feltöltés",
+      "C) Folyásirány, majd feltöltés",
+      "D) Feltöltés, majd lejtésszámítás"
+    ],
+    "correct": "B",
+    "explanation": "Először (opcionális) rekondicionálás, majd mélypontfeltöltés."
+  },
+  {
+    "type": "mcq",
+    "question": "Az optimális mélyponteltávolítás mit minimalizál?",
+    "options": [
+      "A) A számítási időt",
+      "B) Az összes abszolút magasságváltozás összegét",
+      "C) A mélypontok számát",
+      "D) A DEM cellaméretét"
+    ],
+    "correct": "B",
+    "explanation": "Σ|z'_i - z_i| minimalizálása, ahol z' a kondicionált és z az eredeti magasság."
+  },
+  {
+    "type": "mcq",
+    "question": "A beágyazott mélypontokat hogyan kezeli a feltöltés?",
+    "options": [
+      "A) Kihagyja őket",
+      "B) A legkisebbtől és legsekélyebbtől felfelé halad",
+      "C) A legnagyobbtól kezdi",
+      "D) Véletlenszerű sorrendben"
+    ],
+    "correct": "B",
+    "explanation": "Az algoritmus a legkisebbtől felfelé halad; kis mélypontok összeolvadhatnak nagyobbakká."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik NEM a valódi mélyedés jellemző környezete?",
+    "options": [
+      "A) Karszt terep",
+      "B) Glaciálisan letarolt felszín",
+      "C) Radar-interpolációs hiba",
+      "D) Eolikus tájak"
+    ],
+    "correct": "C",
+    "explanation": "A radar-interpolációs hiba műtermék-mélypont, nem valódi mélyedés."
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus GLO-30 DEM milyen lefedettséget biztosít?",
+    "options": [
+      "A) Csak Európa",
+      "B) Globális",
+      "C) Csak Magyarország",
+      "D) Csak az USA"
+    ],
+    "correct": "B",
+    "explanation": "A GLO-30 globális lefedettségű, 30 méteres felbontású termék."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 milyen forrásból származik?",
+    "options": [
+      "A) Radarinterferometria",
+      "B) LiDAR",
+      "C) Szintvonalak és sztereo-fotogrammetria",
+      "D) GNSS-mérések"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 1:10 000 topográfiai szintvonalakból és sztereo-fotogrammetriából származik."
+  },
+  {
+    "type": "mcq",
+    "question": "A 30 méteres SRTM DEM-ben a legtöbb műtermék-mélypont:",
+    "options": [
+      "A) Nagyon mély és kiterjedt",
+      "B) Sekély, néhány cm-től néhány m-ig",
+      "C) Nem létezik",
+      "D) Több mint 50 m mély"
+    ],
+    "correct": "B",
+    "explanation": "A 30 m-es SRTM DEM-ben a legtöbb műtermék-mélypont sekély."
+  },
+  {
+    "type": "mcq",
+    "question": "A 1 méteres LiDAR DEM-ben a mélypontok száma a 30 m-es DEM-hez képest:",
+    "options": [
+      "A) Kevesebb",
+      "B) Azonos",
+      "C) Több (akár százezernyi)",
+      "D) Nulla"
+    ],
+    "correct": "C",
+    "explanation": "A nagyobb felbontás több mélypontot eredményez, amelyek közül sok valódi mikro-topográfiai forma."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszer süllyesztési értéke a medercellákra tipikusan:",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "Az AGREE jellemzően 10 méterrel csökkenti a medercella-magasságot."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szoftver NEM kínál beépített bevágási eszközt?",
+    "options": [
+      "A) WhiteboxTools",
+      "B) ArcGIS Pro",
+      "C) Mindkettő",
+      "D) Egyik sem"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS Pro Spatial Analyst nem tartalmaz dedikált bevágási eszközt."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a feltöltött DEM használatának fő figyelmeztetése?",
+    "options": [
+      "A) Nem szabad kinyomtatni",
+      "B) Nem szabad lejtés/kitettség számítására használni",
+      "C) Nem szabad vetíteni",
+      "D) Nem szabad exportálni"
+    ],
+    "correct": "B",
+    "explanation": "A kondicionált DEM kizárólag áramlásirányításhoz használandó; domborzati deriváltakhoz az eredeti kell."
+  },
+  {
+    "type": "mcq",
+    "question": "Az eolikus tájak milyen formákat tartalmaznak?",
+    "options": [
+      "A) Vulkáni kalderákat",
+      "B) Dűnemezőket és deflációs mélyedéseket",
+      "C) Glaciális mélyedéseket",
+      "D) Karsztos víznyelőket"
+    ],
+    "correct": "B",
+    "explanation": "A szél által formált tájak dűnemezőket és deflációs mélyedéseket tartalmaznak."
+  },
+  {
+    "type": "mcq",
+    "question": "A hidrológiailag kondicionált DEM-ben mit garantálunk?",
+    "options": [
+      "A) Hogy nincs mélyedés",
+      "B) Hogy minden cellától legalább egy nem növekvő útvonal vezet a peremig",
+      "C) Hogy a DEM tökéletesen pontos",
+      "D) Hogy a felbontás maximális"
+    ],
+    "correct": "B",
+    "explanation": "A kondicionálás biztosítja, hogy a víz bármely cellából eljuthat a tartomány széléig."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS-ben a Fill eszköz kimenete?",
+    "options": [
+      "A) Vektoros réteg",
+      "B) Feltöltött DEM rács",
+      "C) Táblázat",
+      "D) Pontfelhő"
+    ],
+    "correct": "B",
+    "explanation": "A Fill eszköz egy hidrológiailag kondicionált DEM-rácsot állít elő."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza ártere egyes területein a lejtés:",
+    "options": [
+      "A) 10% felett",
+      "B) 1-5%",
+      "C) 0,01%-nál kisebb",
+      "D) 50% felett"
+    ],
+    "correct": "C",
+    "explanation": "A Tisza ártere egyes kiterjedt területeken 0,01%-nál kisebb lejtésű."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen DEM-et ajánlanak kontinentális léptékű hidrológiai elemzéshez?",
+    "options": [
+      "A) 1 m-es LiDAR",
+      "B) 5 m-es DDM-5",
+      "C) 90 m-es (Copernicus GLO-90 vagy MERIT DEM)",
+      "D) 10 m-es NED"
+    ],
+    "correct": "C",
+    "explanation": "A 90 m-es termékek praktikusak és elegendőek kontinentális léptéken."
+  },
+  {
+    "type": "mcq",
+    "question": "A QGIS-ben melyik eszköz NEM használható mélypontfeltöltésre?",
+    "options": [
+      "A) GRASS r.fill.dir",
+      "B) SAGA Fill Sinks",
+      "C) WhiteboxTools FillDepressions",
+      "D) Voronoi Polygons"
+    ],
+    "correct": "D",
+    "explanation": "A Voronoi Polygons interpolációs eszköz, nem mélypontfeltöltő."
+  },
+  {
+    "type": "mcq",
+    "question": "A 9.2. táblázat feltöltési térfogata 10 m-es cellamérettel:",
+    "options": [
+      "A) 38 m³",
+      "B) 380 m³",
+      "C) 3800 m³",
+      "D) 38000 m³"
+    ],
+    "correct": "C",
+    "explanation": "V = 38 × 100 m² = 3800 m³."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a puffer szerepe a DEM kondicionálásnál?",
+    "options": [
+      "A) Esztétikai célokra",
+      "B) Szélszennyezés megelőzésére a vízgyűjtőhatáron",
+      "C) A DEM felbontásának növelésére",
+      "D) A koordináta-rendszer megváltoztatására"
+    ],
+    "correct": "B",
+    "explanation": "A puffer megelőzi a szélszennyezést, amely a vízgyűjtő belső kumulációs értékeket rontaná."
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 legutóbbi frissítése:",
+    "options": [
+      "A) 2015",
+      "B) 2018",
+      "C) 2020",
+      "D) 2022"
+    ],
+    "correct": "D",
+    "explanation": "A DDM-5 utolsó frissítése 2022-ben történt."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SRTM DEM függőleges pontossága (megközelítőleg):",
+    "options": [
+      "A) 1-2 m",
+      "B) 6-10 m",
+      "C) 15-20 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM abszolút függőleges pontossága megközelítőleg 6-10 m."
+  },
+  {
+    "type": "mcq",
+    "question": "A kondicionálás melyik lépése igényli a legtöbb szakterületi tudást?",
+    "options": [
+      "A) Folyásirány-számítás",
+      "B) Áramlás-felhalmozódás",
+      "C) DEM kondicionálás (mélyedések kezelése)",
+      "D) Raszter-vektor konverzió"
+    ],
+    "correct": "C",
+    "explanation": "A DEM kondicionálása a leginkább szakterületi mérlegelést igénylő lépés."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány cellányi DEM-puffer szükséges minimum a vizsgálati terület körül?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) Legalább 1 km",
+      "D) 100"
+    ],
+    "correct": "C",
+    "explanation": "A DEM-nek a vizsgálati területen túl legalább 1 km-es puffert kell tartalmaznia."
+  },
+  {
+    "type": "true_false",
+    "question": "A nyers DEM szinte soha nem alkalmas közvetlen hidrológiai elemzésre.",
+    "correct": "true",
+    "explanation": "A nyers DEM mélyedéseket és inkonzisztenciákat tartalmaz, amelyeket el kell távolítani."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés cellamagasságokat csökkent.",
+    "correct": "false",
+    "explanation": "A feltöltés cellamagasságokat emel az átbukási pont szintjére."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágás (carving) az akadálycellák magasságát csökkenti.",
+    "correct": "true",
+    "explanation": "A bevágás csatornát vág az akadályon a magasságok csökkentésével."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszer sima, V-alakú mélyedést hoz létre a medervonal mentén.",
+    "correct": "true",
+    "explanation": "Az AGREE lineáris lejtést alkalmaz a pufferzónában, V-alakú profilt eredményezve."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltés után a mélyedés helyén domb keletkezik.",
+    "correct": "false",
+    "explanation": "Sík terület keletkezik az átbukási pont magasságán, nem domb."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionált DEM-et alkalmas lejtés- és kitettség-elemzésre.",
+    "correct": "false",
+    "explanation": "A kondicionált DEM kizárólag áramlásirányításhoz használandó; domborzati deriváltakhoz az eredeti kell."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés garantáltan hidrológiailag kondicionált DEM-et állít elő.",
+    "correct": "true",
+    "explanation": "Az algoritmus garantáltan minden mélypontot megold, érvényes kimenetet eredményezve."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro tartalmaz beépített bevágási (breaching) eszközt.",
+    "correct": "false",
+    "explanation": "Az ArcGIS Pro Spatial Analyst nem tartalmaz bevágási eszközt; a WhiteboxTools kínál ilyet."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM MPI-alapú párhuzamos feldolgozást használ.",
+    "correct": "true",
+    "explanation": "A TauDEM Message Passing Interface (MPI) technológiát alkalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A WhiteboxTools John Lindsay fejlesztette a Guelph Egyetemen.",
+    "correct": "true",
+    "explanation": "A WhiteboxTools modern, nyílt forráskódú alternatíva fejlett kondicionálási algoritmusokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Aggteleki-karszt mélyedései műtermékek, amelyeket el kell távolítani.",
+    "correct": "false",
+    "explanation": "A karsztos töbrök valódi topográfiai formák, nem műtermékek."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM-rekondicionálás mindig szükséges a hidrológiai elemzéshez.",
+    "correct": "false",
+    "explanation": "A rekondicionálás opcionális; jó minőségű DEM esetén nem szükséges."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltési algoritmus a beágyazott mélypontokat is kezeli.",
+    "correct": "true",
+    "explanation": "Az algoritmus a legkisebbtől felfelé halad, a kis mélypontokat először megoldva."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés alapformájában nem igényel felhasználói paramétereket.",
+    "correct": "true",
+    "explanation": "Az algoritmus egyszerűen feltölti az összes mélypontot; a z-limit opcionális."
+  },
+  {
+    "type": "true_false",
+    "question": "A radar-DEM-ek csupasz felszíni domborzatmodelleket állítanak elő.",
+    "correct": "false",
+    "explanation": "A radar-DEM-ek digitális felszínmodelleket állítanak elő, a vegetációt és épületeket is tartalmazzák."
+  },
+  {
+    "type": "true_false",
+    "question": "A 9.1. táblázat mélypontmélysége 6 méter.",
+    "correct": "true",
+    "explanation": "99 (átbukási pont) - 93 (fenék) = 6 m."
+  },
+  {
+    "type": "true_false",
+    "question": "A sík terület feloldása szükséges a feltöltés után.",
+    "correct": "true",
+    "explanation": "A sík területen a D8 algoritmus nem tud irányt meghatározni; másodlagos algoritmus szükséges."
+  },
+  {
+    "type": "true_false",
+    "question": "Jenson és Domingue 1997-ben publikálta a mélypontfeltöltési algoritmust.",
+    "correct": "false",
+    "explanation": "Jenson és Domingue 1988-ban, nem 1997-ben publikálták."
+  },
+  {
+    "type": "true_false",
+    "question": "Az optimális mélyponteltávolítás széles körben elterjedt az operatív gyakorlatban.",
+    "correct": "false",
+    "explanation": "Az optimális módszer nem terjedt el; a legtöbb szakember feltöltést használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza ártere egyes területein a lejtés 0,01%-nál kisebb.",
+    "correct": "true",
+    "explanation": "Nagyon alacsony reliefű területeken a lejtés a DEM pontossága alatt lehet."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszer tipikus puffersugara 500 m.",
+    "correct": "true",
+    "explanation": "A pufferzóna jellemzően 500 méter a legközelebbi medertől."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágás minden esetben jobb eredményt ad, mint a feltöltés.",
+    "correct": "false",
+    "explanation": "Széles akadályoknál a bevágás jobban torzíthat; a módszerválasztás helyzettől függ."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM puffer nélküli kondicionálása szélszennyezést okoz.",
+    "correct": "true",
+    "explanation": "A DEM pontosan a vízgyűjtőhatárra vágása és utáni kondicionálás szélszennyezést okoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1 m-es LiDAR DEM kevesebb mélypontot tartalmaz, mint a 30 m-es.",
+    "correct": "false",
+    "explanation": "A finomabb felbontás több mélypontot eredményez (akár százezres nagyságrendet)."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltési térfogat a mélyedés tárolókapacitásával egyenlő.",
+    "correct": "true",
+    "explanation": "V_fill a mélyedés befogadóképessége, ami a felszíni víztárolás becslésére is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "A Peter Sinks mélyedés 62 méter mély.",
+    "correct": "true",
+    "explanation": "A Peter Sinks a Logan-kanyonban (Utah) egy 62 méter mély zárt mélyedés."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 szabadon letölthető.",
+    "correct": "false",
+    "explanation": "A DDM-5 megrendelendő a Lechner Geoshop-on keresztül."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU-Hydro a Copernicus Land Monitoring Service terméke.",
+    "correct": "true",
+    "explanation": "Az EU-Hydro összeurópai folyó- és tóhálózatot biztosít."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM 30 m-es felbontású.",
+    "correct": "false",
+    "explanation": "A MERIT DEM 90 m-es felbontású, hibaeltávolított termék."
+  },
+  {
+    "type": "true_false",
+    "question": "Az egyszerű mederbeégetés függőleges falakat hoz létre a mederpartoknál.",
+    "correct": "true",
+    "explanation": "Ez a legfőbb hátránya: éles magassági ugrások irreális lejtőértékeket okoznak."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM kondicionálása a lefolyáselemzési keretrendszer utolsó lépése.",
+    "correct": "false",
+    "explanation": "A kondicionálás az első lépés (a rekondicionálás után); a folyásirány és kumuláció következik."
+  },
+  {
+    "type": "true_false",
+    "question": "A HydroRIVERS adathalmaz DEM-ből származtatott.",
+    "correct": "true",
+    "explanation": "A HydroRIVERS a HydroSHEDS projekt részeként DEM-ből származtatott globális vízhálózat."
+  },
+  {
+    "type": "true_false",
+    "question": "A GRASS r.fill.dir modul mélypontfeltöltésre szolgál.",
+    "correct": "true",
+    "explanation": "A GRASS r.fill.dir a QGIS-ben elérhető mélypontfeltöltő eszköz."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció ajánlott DEM-ek újramintavételezéséhez.",
+    "correct": "true",
+    "explanation": "A bilineáris jó kompromisszum a simaság és hűség között DEM-feldolgozásnál."
+  },
+  {
+    "type": "true_false",
+    "question": "Az optimális mélyponteltávolítás a WhiteboxTools-ban érhető el.",
+    "correct": "true",
+    "explanation": "Lindsay WhiteboxTools programja több változatot is megvalósít."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionálás korai hibái nem befolyásolják a későbbi lépéseket.",
+    "correct": "false",
+    "explanation": "A korán bevezetett hibák minden további lépésen végiggyűrűznek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypont (pit) olyan cella, amelyet teljes egészében _______ domborzat vesz körül.",
+    "correct": "magasabb",
+    "explanation": "Minden szomszédos cella azonos vagy magasabb magasságon van."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az átbukási pont a záró mélyedés peremének _______ cellája.",
+    "correct": "legalacsonyabb",
+    "explanation": "Az a pont, ahol a víz először túlcsordulna."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypontmélység = z_pour - z_______.",
+    "correct": "pit",
+    "explanation": "Az átbukási pont és a mélypontfenék közötti magasságkülönbség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypontfeltöltés (Fill) az ArcGIS Pro _______ eszköztárban található.",
+    "correct": "Hydrology",
+    "explanation": "Spatial Analyst > Hydrology > Fill."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszert _______ fejlesztette ki 1997-ben.",
+    "correct": "Hellweger",
+    "explanation": "Hellweger David Maidment kutatócsoportjában a Texasi Egyetemen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés után az egykori mélyedés _______ területté válik.",
+    "correct": "sík",
+    "explanation": "Minden cella az átbukási pont magasságára emelkedik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _______ módszer az akadálycellák magasságát csökkenti lefolyási útvonal mentén.",
+    "correct": "bevágás",
+    "explanation": "A bevágás (carving/breaching) csatornát vág az akadályon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WhiteboxTools-t _______ Lindsay fejlesztette a Guelph Egyetemen.",
+    "correct": "John",
+    "explanation": "John Lindsay a nyílt forráskódú WhiteboxTools fejlesztője."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Jenson és Domingue klasszikus feltöltési algoritmusát _______ évben publikálták.",
+    "correct": "1988",
+    "explanation": "Az alapvető mélypontfeltöltési algoritmus 1988-ból származik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-rekondicionálás _______ lépésként alkalmazandó a feltöltés előtt.",
+    "correct": "opcionális",
+    "explanation": "A rekondicionálás nem kötelező, csak ha megbízható vízhálózati adat áll rendelkezésre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kondicionált DEM kizárólag _______ és kumulációszámításokhoz használandó.",
+    "correct": "folyásirány",
+    "explanation": "Domborzati deriváltakhoz (lejtés, kitettség) az eredeti DEM-et kell használni."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszer pufferzónája jellemzően _______ méter.",
+    "correct": "500",
+    "explanation": "A tipikus puffersugár 500 m a medervonaltól."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM mélypontfeltöltő eszköze: _______.",
+    "correct": "PitRemove",
+    "explanation": "A TauDEM PitRemove függvénye végzi a feltöltést."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A domborzati lefolyáselemzés keretrendszere _______ fő lépésből áll.",
+    "correct": "8",
+    "explanation": "Rekondicionálás, feltöltés, folyásirány, kumuláció, hálózat, szegmentálás, vízgyűjtők, konverzió."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 9.1. táblázat mélypontfenékének magassága _______ m.",
+    "correct": "93",
+    "explanation": "A középső cella 93 méteres magasságú."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 9.1. táblázat átbukási pont magassága _______ m.",
+    "correct": "99",
+    "explanation": "A perem legalacsonyabb pontja 99 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Peter Sinks mélyedés mélysége _______ m.",
+    "correct": "62",
+    "explanation": "A Logan-kanyoni zárt mélyedés kb. 62 méter mély."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Aggteleki-karszt Magyarország _______ Világörökségi Helyszíne.",
+    "correct": "UNESCO",
+    "explanation": "Az Aggteleki-karszt UNESCO Világörökségi Helyszín az ország északkeleti részén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltött-mínusz-DEM _______ a kondicionálás hatásainak vizsgálatára szolgál.",
+    "correct": "diagnosztika",
+    "explanation": "A különbségfelszín megmutatja, hol és mennyit módosított a feltöltés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az optimális mélyponteltávolítást _______ javasolta 2004-ben.",
+    "correct": "Soille",
+    "explanation": "Soille (2004) a feltöltés és bevágás optimális kombinálását javasolta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NHDPlus HR _______ méretarányú vízhálózati adatbázis.",
+    "correct": "1:24 000",
+    "explanation": "Az NHDPlus HR az USA legrészletesebb nemzeti hidrográfiai adatbázisa."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM-et _______ Dai fejlesztette a Tokiói Egyetemen.",
+    "correct": "Yamazaki",
+    "explanation": "Yamazaki Dai a hibaeltávolított MERIT DEM megalkotója."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-nek a vizsgálati területen túl legalább _______ km-es puffert kell tartalmaznia.",
+    "correct": "1",
+    "explanation": "A legalább 1 km-es puffer megelőzi a szélszennyezést."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mederbeégetés tipikus süllyesztési értéke _______ méter.",
+    "correct": "10-50",
+    "explanation": "Jellemzően 10-50 méter süllyesztést alkalmaznak a medercellákra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus GLO-30 DEM függőleges pontossága (LE90) kevesebb mint _______ m.",
+    "correct": "4",
+    "explanation": "Globálisan < 4 m, Európában lényegesen jobb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bevágási algoritmus a WhiteboxTools-ban: _______.",
+    "correct": "BreachDepressions",
+    "explanation": "A BreachDepressions és BreachDepressionsLeastCost a két fő bevágási eszköz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF hidrográfiai adatbázis a _______ portálon érhető el.",
+    "correct": "data.vizugy.hu",
+    "explanation": "2024 júliusa óta szabadon elérhető."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása a _______ fejezet központi témája.",
+    "correct": "9.",
+    "explanation": "A 9. fejezet tárgyalja a DEM hidrológiai kondicionálását."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM _______ párhuzamosítási technológiát használ.",
+    "correct": "MPI",
+    "explanation": "Message Passing Interface a párhuzamos feldolgozáshoz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés után a sík terület feloldásához _______ algoritmus szükséges.",
+    "correct": "másodlagos",
+    "explanation": "A D8 nem tud irányt meghatározni sík felszínen, így kiegészítő algoritmus kell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszerben a medercellák süllyesztése jellemzően _______ m.",
+    "correct": "10",
+    "explanation": "A medercellák magasságát fix értékkel (tipikusan 10 m) csökkentik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A karsztos víznyelőket magyarul _______ is nevezik.",
+    "correct": "töbör",
+    "explanation": "A töbrök a karsztos mészkő oldódásából keletkező zárt mélyedések."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS GIS feltöltési parancsa: r._______.dir.",
+    "correct": "fill",
+    "explanation": "A GRASS r.fill.dir modul végzi a mélypontfeltöltést."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 7×7-es kidolgozott példa feltöltési térfogata _______ m³.",
+    "correct": "3800",
+    "explanation": "V = 38 × 100 m² = 3800 m³."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM hidrológiai kondicionálásának szükségességét! Miért nem alkalmasak a nyers DEM-ek közvetlen hidrológiai elemzésre?",
+    "correct": "A nyers DEM mélyedéseket tartalmaz, amelyek csapdába ejtik a lefolyást. A D8 algoritmus nem tud irányt rendelni a mélypontokhoz. Elszigetelt részvízgyűjtők, lyukas vízgyűjtők, rések a vízhálózatban. A kondicionálás biztosítja a folyamatos lefolyást.",
+    "explanation": "A mélypontok a hidrológiai elemzés alapvető feltételezését sértik meg."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a mélypontfeltöltést és a bevágást! Mikor melyik módszer alkalmasabb?",
+    "correct": "Feltöltés: mélypont belsejét emeli az átbukási pont szintjére. Sík területet hoz létre. Univerzális, robusztus. Bevágás: akadály magasságát csökkenti, csatornát vágva. Jobb keskeny akadályoknál (közúti töltések, gátak). Feltöltés ajánlott alapértelmezettként; bevágás LiDAR DEM-ek infrastrukturális műtermékeihez.",
+    "explanation": "A választás a mélypont jellegétől függ: műtermék (töltsük) vagy akadály (vágjuk)."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a domborzati lefolyáselemzés 8 lépéses keretrendszerét!",
+    "correct": "1. DEM rekondicionálás (opcionális). 2. Mélypontfeltöltés. 3. Folyásirány-számítás. 4. Vízgyűjtő terület kumulálása. 5. Vízhálózat meghatározása. 6. Mederszakaszok szegmentálása. 7. Részvízgyűjtők lehatárolása. 8. Raszter-vektor konverzió. Minden lépés az előzőre épül.",
+    "explanation": "A szekvenciális jelleg miatt a korán bevezetett hibák végiggyűrűznek."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el az AGREE-módszer működését! Miért jobb az egyszerű mederbeégetésnél?",
+    "correct": "AGREE: sima, V-alakú mélyedés a pufferzónában (500 m). Lineáris lejtés a puffer szélétől a meder felé. Medercellák 10 m-rel süllyesztve. Vs. mederbeégetés: meredek falak, irreális lejtőértékek. Az AGREE realisztikusabb terepfelszínt eredményez.",
+    "explanation": "Az AGREE kiküszöböli a mederbeégetés mesterséges ugrásait."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen típusú valódi mélyedéseket ismer, és hogyan keletkeznek? Adjon magyar példát!",
+    "correct": "1. Karszt: mészkő oldódása → töbrök (Aggteleki-karszt). 2. Eolikus: szél → dűnék, deflációs mélyedések (Alföld egyes részei). 3. Glaciális: jégkori lerakódások → kis tavak. 4. Tektonikus: vetősíkok, kalderák. 5. Antropogén: töltések, gátak.",
+    "explanation": "A valódi mélyedések megkülönböztetése a műtermékektől az elemző szakterületi tudását igényli."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a kondicionálási munkafolyamat 5 lépését!",
+    "correct": "1. DEM beszerzés pufferrel. 2. Döntés a rekondicionálásról (AGREE ha van jó vízhálózat). 3. Mélypontfeltöltés (z-limit mérlegelése). 4. Feltöltött-mínusz-DEM diagnosztika vizsgálata. 5. Továbblépés a folyásirány-számításhoz. Gyakori hiba: a puffer elfelejtése.",
+    "explanation": "Az öt lépéses munkafolyamat szisztematikus és hibamegelőző."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen problémákat okoz a mélypont a vízgyűjtő-lehatárolásban? Rajzolja le a hibás és helyes forgatókönyvet!",
+    "correct": "Mélypont → terminális nyelő → elszigetelt részvízgyűjtő → lyuk a számított vízgyűjtőben. Kumuláció: nulla az elszigetelt részen. Vízhálózat: rés. Vízgyűjtő terület alulbecsült. Feltöltés után: folytonos vízgyűjtő, összefüggő vízhálózat, helyes terület.",
+    "explanation": "A mélypontok lyukas vízgyűjtőket és hibás vízhálózatot eredményeznek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a DEM felbontása a mélypontok számára és jellegére? Hasonlítsa össze a 30 m-es és 1 m-es DEM-eket!",
+    "correct": "30 m DEM: néhány száz mélypont, sekély (cm-m). 1 m LiDAR: százezres nagyságrend, sok valódi mikro-topográfia (keréknyomok, szántás). Mindegyik feltöltése erősen simít. Az elemzési léptéknek meg kell felelnie a felbontásnak.",
+    "explanation": "A felbontás és a mélypontok száma közötti összefüggés kritikus a kondicionálási stratégiához."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a mederbeégetés és az AGREE-módszer közötti különbségeket keresztszelvényi ábrán!",
+    "correct": "Mederbeégetés: meredek, függőleges falak a mederparton. Éles ugrás az eredeti DEM és a beégetett meder között. AGREE: sima, lineáris lejtés a 500 m-es pufferzónán belül. V-alakú mélyedés. A meder alján 10 m süllyesztés. A domborzat természetesebb marad.",
+    "explanation": "Az AGREE kiküszöböli a mederbeégetés mesterséges műtermékeit."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján döntenénk a DEM-rekondicionálásról? Használja a döntési keretrendszert!",
+    "correct": "Magas DEM + alacsony vízhálózat: ne rekondicionáljunk. Közepes DEM + magas vízhálózat: AGREE. Magas DEM + magas vízhálózat: szelektív beégetés hidaknál. Alacsony DEM + bármilyen: beégetés/AGREE. A relatív minőség dönt.",
+    "explanation": "A DEM és vízhálózati adatok relatív minősége határozza meg a stratégiát."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szoftvereszközök állnak rendelkezésre a DEM kondicionálásához? Hasonlítsa össze az ArcGIS, TauDEM, Arc Hydro és QGIS+háttérprogramok lehetőségeit!",
+    "correct": "ArcGIS: Fill, Flow Direction, de nincs bevágás. TauDEM: PitRemove, D8/Dinf, MPI párhuzamos. Arc Hydro: AGREE beépítve, ArcGIS kell. QGIS: GRASS, SAGA, WhiteboxTools (bevágás, optimális eltávolítás). A WhiteboxTools a legfejlettebb bevágási algoritmusokat kínálja.",
+    "explanation": "Minden szoftvernek megvannak az erősségei; a WhiteboxTools a legsokoldalúbb nyílt forráskódú alternatíva."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a feltöltött-mínusz-DEM diagnosztikát! Mit kell vizsgálni és milyen mintázatokat keresünk?",
+    "correct": "Számítás: feltöltött DEM - eredeti DEM. Vizsgálandó: (1) nagy feltöltési mélységek → valódi mélyedések tévesen eltávolítva? (2) csíkos mintázat → szisztematikus DEM-műtermékek (radar). (3) túl agresszív/elégtelen rekondicionálás. Nyújtott színskálával jelenítendő meg.",
+    "explanation": "A diagnosztika az egyetlen módja a kondicionálás minőségellenőrzésének."
+  },
+  {
+    "type": "essay",
+    "question": "Miért jelent különleges kihívást a karszt terep a DEM-alapú hidrológia számára?",
+    "correct": "A karszt megsért a felszíni lefolyás alapfeltételezését. Víznyelők, nyelőlyukak → a víz eltűnik a felszínről. A DEM mélyedései valódi formák, nem műtermékek. Feltöltésük eltávolítja a fontos információt. Speciális kezelés szükséges: z-limit vagy szelektív feltöltés.",
+    "explanation": "Az Aggteleki-karszt szemléletes magyar példa a karsztos kondicionálási kihívásokra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kondicionálná egy LiDAR DEM-et, amelyen közúti töltések okoznak mélypontokat? Melyik módszert választaná és miért?",
+    "correct": "Bevágás ajánlott: a töltés keskeny akadály, a mögötte lévő völgy valódi. A feltöltés az egész felvízi völgytalpat emelné. A bevágás keskeny csatornát vág, utánozva az átereszt. WhiteboxTools BreachDepressions használata. Szelektív megközelítés a legjobb.",
+    "explanation": "LiDAR DEM-ek infrastrukturális műtermékeihez a bevágás sokkal realisztikusabb."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a koordináta-rendszeri megfontolásokat a DEM kondicionálásnál! Milyen problémákat okoz a földrajzi koordináta-rendszer?",
+    "correct": "Földrajzi koordináták: cellák nem négyzetesek (É-D ≠ K-Ny méret). A lejtő, terület és kumuláció számítása szélességfüggő korrekciót igényel. Megoldás: vetítés metrikus rendszerre (EOV, UTM) vagy TauDEM használata, amely natívan kezeli. Az EOV-s DDM-5 nem igényel újravetítést.",
+    "explanation": "A koordináta-rendszer helyes kezelése alapvető a pontos hidrológiai elemzéshez."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az optimális mélyponteltávolítás elve? Miért nem terjedt el a gyakorlatban?",
+    "correct": "Minimalizálja Σ|z'_i - z_i|-t a feltöltés és bevágás kombinálásával. Keskeny akadály: közelít a bevágáshoz. Sekély mélypont: közelít a feltöltéshez. Nem terjedt el: számításigényes, szerény javulás sekély műtermékekre, az elemző inkább tudatos döntést hoz nagy mélyedéseknél.",
+    "explanation": "Az elméleti elegancia ellenére a gyakorlati előny gyakran szerény."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakori buktatók fordulnak elő a DEM-kondicionálási munkafolyamatokban?",
+    "correct": "1. Puffer elfelejtése → szélszennyezés. 2. Kétszeri kondicionálás félreértelmezése (beégetés + feltöltés diagnosztikája). 3. Kondicionált DEM használata terep-elemzéshez. 4. Koordináta-rendszer figyelmen kívül hagyása. Mindegyik megelőzhető a munkafolyamat tudatos követésével.",
+    "explanation": "A gyakori hibák ismerete megelőzi a hibás elemzési eredményeket."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan választana DEM-et a magyar hidrológiai elemzéshez? Ismertesse a DDM-5, Copernicus és SRTM előnyeit/hátrányait!",
+    "correct": "DDM-5: 5 m, legjobb pontosság, EOV, de megrendelendő és csak Magyarország. Copernicus GLO-30: 30 m, ingyenes, globális, jó pontosság. SRTM: 30 m, régebbi (2000), de sok hivatkozás. Vízgyűjtő-léptékű: Copernicus. Részletes helyi: DDM-5. Globális: Copernicus vagy MERIT.",
+    "explanation": "A választás a vizsgálati terület, felbontási igény és hozzáférhetőség függvénye."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM-rekondicionáláshoz használható vízhálózati adatforrásokat! Milyen adatbázisok érhetők el Magyarországon, Európában és globálisan?",
+    "correct": "Magyarország: OVF (data.vizugy.hu, 2024 óta ingyenes). EU: EU-Hydro (Copernicus, 1:50 000). USA: NHDPlus HR (1:24 000). Globális: HydroRIVERS (DEM-ből), OpenStreetMap (közösségi). A minőség és részletesség régiónként eltér.",
+    "explanation": "A vízhálózati adatok minősége és elérhetősége meghatározza a rekondicionálás lehetőségeit."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a szakterületi tudás a DEM kondicionálásában? Miért nem lehet teljesen automatizálni?",
+    "correct": "A DEM nem címkézi a mélypontokat. Az elemzőnek kell megkülönböztetni: műtermék vs. valódi mélyedés. Karszt → töbrök valódiak. Radar → vegetáció műtermék. Sík terep → DEM-pontosság alatti lejtések. A tájismeret, DEM-forrás és elemzési cél tudása szükséges.",
+    "explanation": "A DEM kondicionálása az a lépés, ahol a szakterületi tudás a legjobban számít."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan vizsgálná a kondicionálás hatásait egy magyar alföldi vízgyűjtőn? Milyen specifikus problémákra számítana?",
+    "correct": "Alföldi problémák: nagyon enyhe lejtések (< 0,01%), a DEM pontossága közel a valós lejtéshez. A feltöltés nagy sík területeket hozhat létre. A sík terület feloldása kritikus. A mederbeégetés/AGREE szükséges lehet a térképezett medervonalak követéséhez. A feltöltött-mínusz-DEM diagnosztika megmutatja a nagy feltöltéseket.",
+    "explanation": "A sík terep különösen kihívás, mert a DEM-pontosság és a valós lejtés összemérhető."
+  },
+  {
+    "type": "mcq",
+    "question": "A mélypontfeltöltés (Fill) milyen sorrendben dolgozza fel a mélypontokat?",
+    "options": [
+      "A) Véletlenszerűen",
+      "B) A legnagyobbtól a legkisebbig",
+      "C) A legkisebbtől a legnagyobbig",
+      "D) Északról délre"
+    ],
+    "correct": "C",
+    "explanation": "A legkisebb és legsekélyebb mélyponttól felfelé halad."
+  },
+  {
+    "type": "mcq",
+    "question": "Wang és Liu hatékony feltöltési algoritmusát melyik évben publikálták?",
+    "options": [
+      "A) 1988",
+      "B) 1997",
+      "C) 2002",
+      "D) 2006"
+    ],
+    "correct": "D",
+    "explanation": "Wang és Liu (2006) jelentősen csökkenti a számítási időt."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszer két fő zónája:",
+    "options": [
+      "A) Meder és domboldal",
+      "B) Pufferzóna és medercellák",
+      "C) Észak és dél",
+      "D) Feltöltött és eredeti"
+    ],
+    "correct": "B",
+    "explanation": "A pufferzónán belül fokozatos csökkentés, a medercellákra fix süllyesztés."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen DEM-et ajánlanak városias hidrológiai elemzéshez?",
+    "options": [
+      "A) 90 m-es MERIT DEM",
+      "B) 30 m-es Copernicus",
+      "C) 1-5 m-es LiDAR",
+      "D) Bármilyen DEM"
+    ],
+    "correct": "C",
+    "explanation": "Részletes helyi elemzéshez nagy felbontású LiDAR szükséges."
+  },
+  {
+    "type": "mcq",
+    "question": "A sík terület feloldása miért szükséges a feltöltés után?",
+    "options": [
+      "A) Esztétikai okokból",
+      "B) A D8 nem tud irányt meghatározni sík felszínen",
+      "C) A felbontás javítása miatt",
+      "D) A koordináta-rendszer miatt"
+    ],
+    "correct": "B",
+    "explanation": "Sík felszínen egyetlen szomszéd sem alacsonyabb a D8-nak."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik DEM-nek van a legalacsonyabb hibakomponense hidrológiai alkalmazásoknál?",
+    "options": [
+      "A) SRTM",
+      "B) ASTER GDEM",
+      "C) MERIT DEM",
+      "D) Copernicus GLO-90"
+    ],
+    "correct": "C",
+    "explanation": "A MERIT DEM hibaeltávolítási feldolgozása tisztább hidrológiai deriváltakat eredményez."
+  },
+  {
+    "type": "mcq",
+    "question": "A mederbeégetés képletében a meder_raszter milyen értékeket vesz fel?",
+    "options": [
+      "A) 0 és 1",
+      "B) 0 és 10",
+      "C) -1 és 1",
+      "D) Bármilyen értéket"
+    ],
+    "correct": "A",
+    "explanation": "A meder_raszter 1 a mederen, 0 máshol."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS-ben a Fill eszköz alapértelmezetten mit tesz?",
+    "options": [
+      "A) Csak a 10 m-nél sekélyebb mélypontokat tölti fel",
+      "B) Az összes mélypontot feltölti",
+      "C) Csak a medercsatornákat mélyíti",
+      "D) Csak a szélső cellákat kezeli"
+    ],
+    "correct": "B",
+    "explanation": "Alapformájában minden mélypontot feltölt, hacsak z-limit nincs megadva."
+  },
+  {
+    "type": "mcq",
+    "question": "A kondicionálatlan DEM-ből származtatott vízhálózatban mi jellemző?",
+    "options": [
+      "A) Túl sűrű hálózat",
+      "B) Rések a vízhálózatban",
+      "C) Túl kevés mellékág",
+      "D) Tökéletes egyezés a térképezett hálózattal"
+    ],
+    "correct": "B",
+    "explanation": "A mélypontok rések kialakulását okozzák a vízhálózatban."
+  },
+  {
+    "type": "mcq",
+    "question": "A bevágás milyen típusú akadályoknál a leghatékonyabb?",
+    "options": [
+      "A) Széles gerincek",
+      "B) Keskeny akadályok (töltések, gátak)",
+      "C) Természetes dombok",
+      "D) Sík területek"
+    ],
+    "correct": "B",
+    "explanation": "A bevágás keskeny akadályok esetén működik a legjobban (közúti töltések, gátak)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Planchon és Darboux algoritmus (2002) milyen típusú?",
+    "options": [
+      "A) Bevágási",
+      "B) Hatékonyabb feltöltési",
+      "C) Rekondicionálási",
+      "D) Vetítési"
+    ],
+    "correct": "B",
+    "explanation": "Hatékonyabb megvalósítás a klasszikus feltöltéshez képest."
+  },
+  {
+    "type": "mcq",
+    "question": "Az AGREE-módszerben a 0,02 × (500 - távolság) kifejezés mit eredményez?",
+    "options": [
+      "A) Fix 10 m süllyesztést",
+      "B) Lineáris lejtést a puffer szélétől a mederig",
+      "C) Exponenciális süllyesztést",
+      "D) Véletlenszerű módosítást"
+    ],
+    "correct": "B",
+    "explanation": "0,02 × 500 = 10 m süllyesztés a mederparton, 0 a puffer szélén → lineáris lejtés."
+  },
+  {
+    "type": "mcq",
+    "question": "A HydroSHEDS vízhálózatot melyik szervezet fejlesztette?",
+    "options": [
+      "A) USGS",
+      "B) WWF és McGill Egyetem",
+      "C) ESA",
+      "D) JAXA"
+    ],
+    "correct": "B",
+    "explanation": "A HydroSHEDS a WWF és a McGill Egyetem közös projektje."
+  },
+  {
+    "type": "mcq",
+    "question": "Az UTM 34N zóna EPSG kódja:",
+    "options": [
+      "A) 23700",
+      "B) 3035",
+      "C) 32634",
+      "D) 4326"
+    ],
+    "correct": "C",
+    "explanation": "Az UTM 34N zóna kódja EPSG:32634."
+  },
+  {
+    "type": "mcq",
+    "question": "A DEM-kondicionálás melyik lépése a legmechanikusabb?",
+    "options": [
+      "A) Rekondicionálás",
+      "B) Mélypontfeltöltés",
+      "C) Folyásirány-számítás",
+      "D) DEM kiválasztás"
+    ],
+    "correct": "C",
+    "explanation": "Ha a DEM megfelelően kondicionálva van, a folyásirány viszonylag kevés emberi beavatkozással fut."
+  },
+  {
+    "type": "mcq",
+    "question": "A 9.2. táblázat feltöltésekor hány cellát emelünk 107 m-re?",
+    "options": [
+      "A) 5",
+      "B) 7",
+      "C) 9",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "A 107 m alatti kilenc cella kerül feltöltésre."
+  },
+  {
+    "type": "mcq",
+    "question": "A Arc Hydro melyik szoftvert igényli?",
+    "options": [
+      "A) QGIS-t",
+      "B) TauDEM-et",
+      "C) ArcGIS-t",
+      "D) Semmit"
+    ],
+    "correct": "C",
+    "explanation": "Az Arc Hydro az ArcGIS kiterjesztése."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés cellamagasságokat csökkent.",
+    "correct": "false",
+    "explanation": "A feltöltés emel, nem csökkent."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágás célzottan a medercsatornákat mélyíti.",
+    "correct": "false",
+    "explanation": "A bevágás az akadálycellák (pl. töltés) magasságát csökkenti, nem a medercsatornákat."
+  },
+  {
+    "type": "true_false",
+    "question": "A WhiteboxTools többszálú feldolgozást támogat.",
+    "correct": "true",
+    "explanation": "A WhiteboxTools modern, többszálú Rust-alapú szoftver."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro tartalmaz beépített AGREE-módszert.",
+    "correct": "false",
+    "explanation": "Az AGREE-módszer a Raster Calculator-on keresztül valósítható meg, vagy az Arc Hydro-ban érhető el."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionálatlan DEM-ből levezetett vízgyűjtő területe pontos.",
+    "correct": "false",
+    "explanation": "A mélypontok alulbecslést okoznak a vízgyűjtő területében."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM ingyenes és nyílt forráskódú szoftver.",
+    "correct": "true",
+    "explanation": "A TauDEM szabadon használható."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés z-limit paramétere kötelező.",
+    "correct": "false",
+    "explanation": "A z-limit opcionális; alapértelmezetten minden mélypont feltöltődik."
+  },
+  {
+    "type": "true_false",
+    "question": "A karszt terepen minden mélyedés műtermék.",
+    "correct": "false",
+    "explanation": "A karsztos töbrök valódi topográfiai formák."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágás széles akadályok esetén is jól működik.",
+    "correct": "false",
+    "explanation": "Széles akadályoknál a bevágott csatorna jobban torzít, mint a feltöltés."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionált DEM alkalmas lejtéstérkép készítésére.",
+    "correct": "false",
+    "explanation": "A lejtéstérképet az eredeti DEM-ből kell készíteni."
+  },
+  {
+    "type": "true_false",
+    "question": "A sík terület feloldása szükséges a D8 áramlásirány-meghatározáshoz.",
+    "correct": "true",
+    "explanation": "A D8 nem tud egyértelmű irányt meghatározni sík felszínen."
+  },
+  {
+    "type": "true_false",
+    "question": "Wang és Liu (2006) algoritmusa lassabb a Jenson-Domingue (1988) algoritmusnál.",
+    "correct": "false",
+    "explanation": "Hatékonyabb, nem lassabb."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM-rekondicionálás minden esetben szükséges.",
+    "correct": "false",
+    "explanation": "Opcionális lépés, amely csak megbízható vízhálózati adat esetén ajánlott."
+  },
+  {
+    "type": "true_false",
+    "question": "A puffer nélküli DEM-kondicionálás szélszennyezést okoz.",
+    "correct": "true",
+    "explanation": "A szélszennyezés rontja a vízgyűjtőn belüli kumulációs értékeket."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés után a mélyedés sík területté válik.",
+    "correct": "true",
+    "explanation": "Minden cella az átbukási pont magasságára emelkedik."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágás az ArcGIS Pro alapfunkciója.",
+    "correct": "false",
+    "explanation": "Az ArcGIS Pro nem tartalmaz bevágási eszközt; WhiteboxTools szükséges."
+  },
+  {
+    "type": "true_false",
+    "question": "A mederbeégetés nem okoz problémát a lejtésszámításnál.",
+    "correct": "false",
+    "explanation": "Függőleges falakat hoz létre, irreális lejtőértékeket okozva."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltési algoritmus garantáltan konvergál.",
+    "correct": "true",
+    "explanation": "Nincsenek konvergenciaproblémák; mindig érvényes kimenetet ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1 m-es LiDAR DEM kevesebb kondicionálást igényel, mint a 30 m-es.",
+    "correct": "false",
+    "explanation": "A finomabb felbontás több mélypontot tartalmaz, több kondicionálást igényel."
+  },
+  {
+    "type": "true_false",
+    "question": "Az optimális mélyponteltávolítás az ArcGIS Pro alapfunkciója.",
+    "correct": "false",
+    "explanation": "Csak a WhiteboxTools-ban érhető el."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltési térfogat egyúttal a mélyedés tárolókapacitása.",
+    "correct": "true",
+    "explanation": "Hasznos mennyiség a felszíni víztárolás becsléséhez."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM kondicionálása a hidrológiai munkafolyamat utolsó lépése.",
+    "correct": "false",
+    "explanation": "Az első lépés; a folyásirány és kumuláció ezután következik."
+  },
+  {
+    "type": "true_false",
+    "question": "A radar-DEM-ek csupasz felszínt ábrázolnak.",
+    "correct": "false",
+    "explanation": "A vegetációt és épületeket is tartalmazzák (DSM)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszer a beégetésnél realisztikusabb terepfelszínt eredményez.",
+    "correct": "true",
+    "explanation": "A sima lejtés kiküszöböli a függőleges falak problémáját."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 az egész Kárpát-medencét lefedi.",
+    "correct": "false",
+    "explanation": "Csak Magyarország területét fedi le."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris újramintavételezés simább eredményt ad, mint a legközelebbi szomszéd.",
+    "correct": "true",
+    "explanation": "A bilineáris interpolálja a 4 szomszédot, elkerülve a lépcsős műtermékeket."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM kevesebb kondicionálást igényel, mint a nyers SRTM.",
+    "correct": "true",
+    "explanation": "A hibaeltávolítás miatt megbízhatóbb folyásirányokat ad, különösen sík terepen."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM GLO-30 mindig jobb választás, mint az SRTM.",
+    "correct": "false",
+    "explanation": "Az SRTM meglévő tanulmányokkal való kompatibilitáshoz szükséges lehet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypontfeltöltés a mélypont celláit az _______ pont magasságára emeli.",
+    "correct": "átbukási",
+    "explanation": "Az átbukási pont (pour point) a perem legalacsonyabb cellája."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Wang és Liu hatékony feltöltési algoritmusát _______ évben publikálták.",
+    "correct": "2006",
+    "explanation": "Wang és Liu (2006)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mederbeégetés tipikusan _______ méter emelést ad a nem-meder cellákra.",
+    "correct": "10-50",
+    "explanation": "A nem-meder cellák emelése."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszer a _______ Egyetem kutatócsoportjában készült.",
+    "correct": "Texasi",
+    "explanation": "Hellweger David Maidment csoportjában a UT Austin-on."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés után a sík terület feloldásához _______ algoritmus szükséges.",
+    "correct": "másodlagos",
+    "explanation": "A D8 nem tud sík felszínen irányt meghatározni."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Planchon és Darboux feltöltési algoritmusa _______ évben jelent meg.",
+    "correct": "2002",
+    "explanation": "Planchon és Darboux (2002)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HydroRIVERS a _______ projekt részeként készült.",
+    "correct": "HydroSHEDS",
+    "explanation": "A HydroSHEDS globális hidrológiai adatbázis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az optimális mélyponteltávolítás Σ|z'_i - z_i|-t _______.",
+    "correct": "minimalizálja",
+    "explanation": "Az összes abszolút magasságváltozás összegét minimalizálja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-nek legalább _______ km-es pufferrel kell túlnyúlnia a vizsgálati területen.",
+    "correct": "1",
+    "explanation": "A szélszennyezés megelőzéséhez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EOV vetület kódja: EPSG:_______.",
+    "correct": "23700",
+    "explanation": "Magyarország nemzeti koordináta-rendszere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az UTM 34N zóna EPSG kódja: _______.",
+    "correct": "32634",
+    "explanation": "Magyarország nagy részét lefedi."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bevágási algoritmus a mélypontfenéktől a legközelebbi _______ celláig vág.",
+    "correct": "alacsonyabb",
+    "explanation": "A mélyedésen kívüli alacsonyabb magasságú celláig."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-rekondicionálás _______ a mélypontfeltöltés előtt alkalmazandó.",
+    "correct": "opcionálisan",
+    "explanation": "Ha megbízható vízhálózati adat rendelkezésre áll."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS GIS feltöltési modulja: r._______.dir.",
+    "correct": "fill",
+    "explanation": "r.fill.dir."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mederbeégetés függőleges _______ hoz létre a mederpartoknál.",
+    "correct": "falakat",
+    "explanation": "Éles magassági ugrások a mederpartokon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 9.1. táblázat mélypontmélysége: _______ m.",
+    "correct": "6",
+    "explanation": "99 - 93 = 6 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszerben a puffer sugara jellemzően _______ m.",
+    "correct": "500",
+    "explanation": "A tipikus puffersugár."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Jenson és Domingue klasszikus algoritmusa _______ évben jelent meg.",
+    "correct": "1988",
+    "explanation": "Az alapvető feltöltési algoritmus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés után az egykori mélyedés _______ területté válik.",
+    "correct": "sík",
+    "explanation": "Az átbukási pont magasságán."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása a domborzati lefolyáselemzés _______ lépése.",
+    "correct": "első",
+    "explanation": "A rekondicionálás és feltöltés az első lépések."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kondicionált DEM kizárólag _______ számításhoz használandó.",
+    "correct": "áramlásirány",
+    "explanation": "A lejtés, kitettség az eredeti DEM-ből."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WhiteboxTools fejlesztőegyeteme: _______.",
+    "correct": "Guelph",
+    "explanation": "A Guelph Egyetem, Kanada."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Arc Hydro a _______ szoftver kiterjesztése.",
+    "correct": "ArcGIS",
+    "explanation": "Az ArcGIS-re épülő hidrológiai eszközkészlet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bevágási algoritmus: Breach_______.",
+    "correct": "Depressions",
+    "explanation": "BreachDepressions a WhiteboxTools-ban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Soille-féle optimális mélyponteltávolítás _______ évben jelent meg.",
+    "correct": "2004",
+    "explanation": "Soille (2004)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypontfeltöltés a TauDEM-ben: _______.",
+    "correct": "PitRemove",
+    "explanation": "A TauDEM feltöltési eszköze."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SAGA GIS feldolgozási eszközei a _______ keretrendszeren keresztül érhetők el.",
+    "correct": "QGIS Processing",
+    "explanation": "A QGIS Processing Toolbox integrálja a SAGA-t."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 42°É szélességen egy hosszúsági fok K-Ny mérete kb. _______ km.",
+    "correct": "82",
+    "explanation": "111 × cos(42°) ≈ 82 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris _______ ajánlott DEM-ek újramintavételezéséhez.",
+    "correct": "interpoláció",
+    "explanation": "Jó kompromisszum a simaság és hűség között."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM GLO-30 a _______ Space-en keresztül érhető el.",
+    "correct": "Copernicus Data",
+    "explanation": "A Copernicus Data Space ökoszisztéma."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása nélkül a vízgyűjtőnek _______ lesznek.",
+    "correct": "lyukai",
+    "explanation": "Elszigetelt részvízgyűjtők lyukakként jelennek meg."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A domborzati lefolyáselemzés _______ szintű feldolgozási folyamat.",
+    "correct": "szekvenciális",
+    "explanation": "Minden lépés az előzőre épül."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a bevágási algoritmus előnyeit LiDAR DEM-ek feldolgozásánál!",
+    "correct": "LiDAR: közúti töltések, vasúti pályák, hídpillérek. A feltöltés az egész felvízi völgytalpat emelné. A bevágás keskeny csatornát vág→utánozza az átereszt. Realisztikusabb. WhiteboxTools ajánlott.",
+    "explanation": "A bevágás kifejezetten LiDAR DEM infrastrukturális műtermékeihez tervezett."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a DEM felbontása a kondicionálási stratégiára?",
+    "correct": "90 m: kevés, sekély mélypont→egyszerű feltöltés. 30 m: közepes→standard feltöltés. 1 m: százezres mélypont→szelektív (z-limit, bevágás). A felbontás meghatározza a kondicionálás komplexitását.",
+    "explanation": "A felbontás és a kondicionálási igény szoros összefüggésben áll."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a feltöltési térfogat a felszíni víztárolás becslésében?",
+    "correct": "V_fill = Σ(z_pour - z_i) × A_cell. Ez a mélyedés befogadóképessége. Alkalmazás: mezőgazdasági víztárolás, csapadékvíz-gazdálkodás. A HAND-módszerben (15. fejezet) hasonló térfogatok használatosak.",
+    "explanation": "A feltöltési térfogat gyakorlati hidrológiai jelentőséggel bír."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a karszt terep kondicionálási kihívásait Magyarországon?",
+    "correct": "Aggteleki-karszt: töbrök valódi formák. Nem szabad feltölteni! Megoldás: z-limit alkalmazása (pl. 10 m), szelektív feltöltés, dokumentálás. A felszín alatti lefolyás nem követhető DEM-ből.",
+    "explanation": "A karsztos terep speciális megközelítést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a feltöltött-mínusz-DEM diagnosztika értelmezését!",
+    "correct": "Pozitív értékek: feltöltött cellák (mélyedések kitöltése). Nagy értékek: potenciálisan valódi mélyedések tévesen eltávolítva. Csíkos mintázat: szisztematikus DEM-hiba (radar). Nulla: nem módosított terület.",
+    "explanation": "A diagnosztika a kondicionálás minőségének egyetlen megbízható ellenőrzése."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szoftvereszközöket használna a DEM kondicionálásához, és miért?",
+    "correct": "ArcGIS: Fill (standard). TauDEM: PitRemove (MPI párhuzamos, földrajzi koordináta). Arc Hydro: AGREE beépítve. WhiteboxTools: bevágás, optimális eltávolítás (egyedülálló). QGIS: GRASS+SAGA+WhiteboxTools.",
+    "explanation": "A szoftverválasztás a feladat jellegétől és a rendelkezésre álló eszközöktől függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná az AGREE-módszert a Tisza ártérén?",
+    "correct": "A Tisza sík ártere: 0,01%-nál kisebb lejtés. A DEM nem tudja feloldani a finom lejtéseket. AGREE: a térképezett medervonal mentén 500 m puffer, 10 m süllyesztés a mederen. A lefolyás követi az ismert medret.",
+    "explanation": "Az AGREE különösen hasznos sík terepen, ahol a DEM pontossága nem elegendő."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lépéseket kell tenni a DEM kondicionálása előtt?",
+    "correct": "1. DEM beszerzés + legalább 1 km puffer. 2. Koordináta-rendszer ellenőrzés, szükség esetén vetítés. 3. Adathiányos cellák, üres területek vizsgálata. 4. Domborzatárnyékolás a műtermékek vizuális ellenőrzéséhez.",
+    "explanation": "Az előkészítés minősége meghatározza a kondicionálás sikerét."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a hídpillérek által okozott mesterséges gátakat LiDAR DEM-ben?",
+    "correct": "A híd a DEM-ben gátként jelenik meg (a hídpálya magassága). Megoldás: szelektív mederbeégetés a medervonal mentén a hidak alatt. Automatikus híd-detektáló algoritmus vagy manuális azonosítás.",
+    "explanation": "A LiDAR DEM-ek hídproblémája célzott beavatkozást igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM-rekondicionálás és mélypontfeltöltés közötti különbséget!",
+    "correct": "Rekondicionálás: a lefolyást a térképezett vízhálózathoz igazítja (AGREE, beégetés). Feltöltés: a belső mélyedéseket szünteti meg. Sorrend: először rekondicionálás, aztán feltöltés. Eltérő célok, eltérő algoritmusok.",
+    "explanation": "A két lépés eltérő problémákat kezel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választana a feltöltés és bevágás között?",
+    "correct": "Műtermék mélypont→feltöltés. Keskeny akadály (töltés)→bevágás. Széles gerinc→feltöltés. LiDAR infrastruktúra→bevágás. Karszt→szelektív. Alapértelmezett→feltöltés.",
+    "explanation": "A mélypont jellege határozza meg a módszert."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a kondicionálási hiba az árvízi előrejelzésre?",
+    "correct": "Hibás kondicionálás→hibás folyásirány→hibás vízgyűjtő→hibás vízhozam→megbízhatatlan árvízi előrejelzés. Mire a hiba eléri az előrejelzést, helyrehozhatatlan. A kondicionálás minősége kritikus.",
+    "explanation": "A hibák végiggyűrűznek az egész elemzési láncon."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen nemzetközi DEM-források érhetők el hidrológiai kondicionáláshoz?",
+    "correct": "USA: NED/3DEP (10-30 m). Magyarország: DDM-5 (5 m), Copernicus (10-30 m). Globális: SRTM, Copernicus GLO-30, AW3D30, MERIT DEM. A felbontás és kondicionálási igény összefügg.",
+    "explanation": "A DEM-forrás meghatározza a kondicionálási kihívásokat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan vizsgálná a kondicionálás hatását egy sík alföldi vízgyűjtőn?",
+    "correct": "Sík terep kihívásai: nagyon enyhe lejtések, nagy sík területek a feltöltés után. Feltöltött-mínusz-DEM: nagy feltöltések azonosítása. Sík terület feloldás kritikus. AGREE szükséges lehet.",
+    "explanation": "A sík terep különleges kondicionálási kihívásokat jelent."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az eolikus tájak kondicionálási kihívásait!",
+    "correct": "Dűnemezők: sok zárt medence, természetes formák. A feltöltés eltávolítja a fontos információt. Megoldás: z-limit a kis mélyedésekre. Az Alföld azon részei, ahol homok formák vannak, érintettek.",
+    "explanation": "Az eolikus formák valódi mélyedések, nem műtermékek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a koordináta-rendszer megválasztása a kondicionálási eredményekre?",
+    "correct": "Földrajzi koordináták: nem négyzetes cellák, szélességfüggő méret. TauDEM natívan kezeli. ArcGIS: vetítés szükséges (EOV, UTM). Helytelen koordináták: hibás lejtés, terület, kumuláció.",
+    "explanation": "A koordináta-rendszer helyes kezelése alapvető követelmény."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a mélypontfeltöltés z-limit paramétere?",
+    "correct": "A z-limit a megadott küszöbnél mélyebb mélyedéseket megőrzi. Pl. z-limit=10 m: csak a 10 m-nél sekélyebb mélypontokat tölti fel. Hasznos karszt, glaciális terepen. Durva szűrő, de nem oldja meg a műtermék/valódi megkülönböztetést.",
+    "explanation": "A z-limit egyszerű, de korlátozott eszköz a valódi mélyedések megőrzéséhez."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a glaciálisan letarolt felszínek kondicionálási problémáit!",
+    "correct": "Üstmélyedések, morénák→számtalan kis tó és zárt medence. A feltöltés eltávolítja ezeket. Skandinávia, alpesi előterek érintettek. Szelektív feltöltés z-limit-tel ajánlott.",
+    "explanation": "A glaciális formák valódi mélyedések, nem műtermékek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan dokumentálná a DEM-kondicionálási munkafolyamatot?",
+    "correct": "1. DEM forrás, felbontás, koordináta-rendszer. 2. Rekondicionálás: igen/nem, módszer, paraméterek. 3. Feltöltés: z-limit, szoftver. 4. Feltöltött-mínusz-DEM diagnosztika. 5. A döntések indoklása. Reprodukálhatóság!",
+    "explanation": "A dokumentálás biztosítja a munka reprodukálhatóságát és átláthatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az ember által módosított tájak DEM-kondicionálásában?",
+    "correct": "Közúti töltések, gátak, vasút: mesterséges akadályok a DEM-ben. A DEM hűen rögzíti, de áteresz/zsilip nem látható. Megoldás: bevágás, szelektív beégetés. Az antropogén elemek tudatos kezelést igényelnek.",
+    "explanation": "Az ember által módosított tájban a DEM és a valódi lefolyás eltérhet."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a feltöltés a nagy, valódi mélyedésekre? Ismertesse a Peter Sinks példáját!",
+    "correct": "Peter Sinks: 62 m mély zárt mélyedés. Feltöltés: több száz cellát emel 10+ méterrel. Vízgyűjtő-lehatároláshoz védhető (felszín alatti víz végül eléri a folyót). Terep-elemzéshez elfogadhatatlan.",
+    "explanation": "A nagy mélyedések feltöltése vitatható, az elemzés céljaitól függ."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a tektonikus és vulkanikus tájak kondicionálási kihívásait!",
+    "correct": "Vetősíkok, kalderák, lávafolyások: nagy léptékű zárt medencék. Holt-tenger, Danakil-mélyföld példák. A feltöltés drámaian módosítja a felszínt. Szelektív megközelítés, z-limit, dokumentálás szükséges.",
+    "explanation": "A tektonikus formák valódi mélyedések, amelyeket óvatosan kell kezelni."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan biztosítaná a kondicionált és eredeti DEM helyes használatát egy projektben?",
+    "correct": "Fő szabály: kondicionált DEM → csak áramlásirány + kumuláció. Eredeti DEM → lejtés, kitettség, görbület, TWI. Fájlnevezés: dem_original.tif, dem_filled.tif. A projekt dokumentációjában rögzíteni.",
+    "explanation": "A helyes DEM-változat használata kritikus a pontos eredményekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen következményei vannak a puffer elfelejtésének a DEM-kondicionálásnál?",
+    "correct": "Szélszennyezés: a tartomány szélén lévő cellák kumulációja hibás. A vízgyűjtőhatár-menti cellák lefolyási értékei pontatlanok. Megoldás: mindig legalább 1 km puffer. A hiba csak a kész elemzés után derül ki.",
+    "explanation": "A puffer elfelejtése a leggyakoribb, de könnyen megelőzhető hiba."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a feltöltés és bevágás hatását a DEM-felszínre!",
+    "correct": "Feltöltés: mélypont belsejét emeli→sík terület. Csak belső cellák változnak. Bevágás: akadálycellák csökkennek→keskeny csatorna. Belső topográfia megmarad. Az optimális kombinált mindkettőt használja.",
+    "explanation": "A két módszer eltérő módon módosítja a DEM-felszínt."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a WhiteboxTools-t a DEM-kondicionáláshoz?",
+    "correct": "BreachDepressions: bevágás. FillDepressions: feltöltés. BreachDepressionsLeastCost: korlátozott bevágás. Többszálú feldolgozás. Olyan algoritmusok, amelyek sem ArcGIS-ben, sem TauDEM-ben nem érhetők el.",
+    "explanation": "A WhiteboxTools a legsokoldalúbb nyílt forráskódú kondicionálási eszközkészlet."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatása van a DEM-készítési módszernek a mélypontok jellegére?",
+    "correct": "Radar (SRTM): lombkorona/épületek→sok látszólagos mélypont. LiDAR: mikro-topográfia (keréknyom, szántás)→sok apró mélypont. Szintvonal-interpoláció: simítási hiba→sekély, széles mélyedések.",
+    "explanation": "A DEM-forrás meghatározza a mélypontok jellegét és kondicionálási igényét."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a DEM-kondicionálást egy transznacionális vízgyűjtőn (pl. Felső-Tisza)?",
+    "correct": "DDM-5 (magyar)+Copernicus (ukrán, román) összefűzés→puffer→AGREE (EU-Hydro/OVF)→Fill. Koordináta-transzformáció (HD72↔ETRS89). A határokon konzisztens vízhálózati adat szükséges.",
+    "explanation": "A transznacionális vízgyűjtők többféle DEM és vízhálózati adat kombinálását igénylik."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen diagnosztikai lépéseket alkalmazna a kondicionálás minőségének ellenőrzésére?",
+    "correct": "1. Feltöltött-mínusz-DEM térkép (nyújtott színskálával). 2. Nagy feltöltések vizsgálata. 3. Csíkos mintázat keresése. 4. Az eredmény összehasonlítása a térképezett vízhálózattal. 5. Lefolyási teszt: minden cella eléri-e a peremet?",
+    "explanation": "A diagnosztika a kondicionálás minőségbiztosításának alapvető eszköze."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízvédelmi töltések hatását a DEM-kondicionálásra!",
+    "correct": "Töltések: hosszú, lineáris akadályok. A mögöttes ártér méterekkel a korona alatt. Feltöltés: az egész árteret a koronára emelné (abszurd). Megoldás: bevágás a megfelelő lefolyási pontoknál. Szelektív megközelítés.",
+    "explanation": "Az árvízvédelmi töltések speciális kondicionálási kihívást jelentenek."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés mindig a legjobb módszer.",
+    "correct": "false",
+    "explanation": "Egyes esetekben (keskeny töltés) a bevágás jobb; valódi mélyedéseknél szelektív megközelítés kell."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM-rekondicionálás a feltöltés után alkalmazandó.",
+    "correct": "false",
+    "explanation": "A rekondicionálás a feltöltés előtti, opcionális lépés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-30 DEM ingyenes.",
+    "correct": "true",
+    "explanation": "Szabadon elérhető minden felhasználó számára."
+  },
+  {
+    "type": "true_false",
+    "question": "A WhiteboxTools nyílt forráskódú szoftver.",
+    "correct": "true",
+    "explanation": "Nyílt forráskódú, Rust-alapú."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszer meredek falakat hoz létre a mederpartoknál.",
+    "correct": "false",
+    "explanation": "Az AGREE sima V-alakú mélyedést hoz létre, nem meredek falakat."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM kondicionálása megelőzi a folyásirány-számítást.",
+    "correct": "true",
+    "explanation": "A kondicionálás az első lépés; a folyásirány a kondicionált DEM-ből számítandó."
+  },
+  {
+    "type": "true_false",
+    "question": "A mederbeégetés alkalmas terep-elemzésre (lejtés, kitettség).",
+    "correct": "false",
+    "explanation": "A beégetett DEM torzított; terep-elemzéshez az eredeti DEM-et kell használni."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltés z-limit paramétere kötelező.",
+    "correct": "false",
+    "explanation": "Opcionális; alapértelmezetten minden mélypontot feltölt."
+  },
+  {
+    "type": "true_false",
+    "question": "A 90 m-es DEM kevesebb mélypontot tartalmaz, mint a 30 m-es.",
+    "correct": "true",
+    "explanation": "A durvább felbontás kevesebb mélypontot eredményez."
+  },
+  {
+    "type": "true_false",
+    "question": "A mederbeégetés csak az ArcGIS-ben érhető el.",
+    "correct": "false",
+    "explanation": "Bármely GIS-ben megvalósítható raszterszámítással."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszer pufferén kívül a DEM módosítatlan marad.",
+    "correct": "true",
+    "explanation": "A módosítás a pufferzónán és a medercellákon belül történik."
+  },
+  {
+    "type": "true_false",
+    "question": "A HydroSHEDS a USGS programja.",
+    "correct": "false",
+    "explanation": "A WWF és a McGill Egyetem közös projektje."
+  },
+  {
+    "type": "true_false",
+    "question": "A sík terület feloldása nem szükséges, ha D-végtelen módszert használunk.",
+    "correct": "false",
+    "explanation": "A sík terület probléma a D-végtelen módszernél is fennáll."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EEA-10 10 m-es felbontású.",
+    "correct": "true",
+    "explanation": "39 európai ország területén 10 m-es felbontás."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés paramétermentes alapformájában.",
+    "correct": "true",
+    "explanation": "Az algoritmus egyszerűen feltölti az összes mélypontot (z-limit opcionális)."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltés után a mélyedés V-alakú csatornává válik.",
+    "correct": "false",
+    "explanation": "Sík területté válik az átbukási pont magasságán."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Arc Hydro ingyenes kiegészítő az ArcGIS-hez.",
+    "correct": "true",
+    "explanation": "Ingyenes, de ArcGIS szükséges hozzá."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés beágyazott mélypontokat is kezel.",
+    "correct": "true",
+    "explanation": "A legkisebbtől felfelé halad, a beágyazott mélypontokat is megoldva."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM durvább felbontáson jobb hidrológiai eredményt ad, mint a nyers SRTM.",
+    "correct": "true",
+    "explanation": "A hibaeltávolítás megbízhatóbb folyásirányokat eredményez."
+  },
+  {
+    "type": "true_false",
+    "question": "A feltöltési térfogat a csapadékvíz-gazdálkodásban is hasznos mennyiség.",
+    "correct": "true",
+    "explanation": "A mélyedés tárolókapacitása a felszíni víztárolás becslésére használható."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM kondicionálásához nem szükséges szakterületi tudás.",
+    "correct": "false",
+    "explanation": "A műtermék/valódi mélyedés megkülönböztetése tájismeretet igényel."
+  },
+  {
+    "type": "true_false",
+    "question": "A mederbeégetésnél tipikusan 10-50 m süllyesztést alkalmaznak.",
+    "correct": "true",
+    "explanation": "A medercellák vagy a nem-meder cellák emelésének tipikus értéke."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionálás utáni diagnosztika opcionális.",
+    "correct": "false",
+    "explanation": "A feltöltött-mínusz-DEM vizsgálata a jó gyakorlat kötelező része."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NHDPlus HR az USA legrészletesebb vízhálózati adatbázisa.",
+    "correct": "true",
+    "explanation": "1:24 000 méretarányú, országos lefedettség."
+  },
+  {
+    "type": "true_false",
+    "question": "Az eolikus tájak mélyedései általában műtermékek.",
+    "correct": "false",
+    "explanation": "Valódi formák: dűnék, deflációs mélyedések."
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM-rekondicionálás javítja a DEM felbontását.",
+    "correct": "false",
+    "explanation": "A rekondicionálás a lefolyási mintákat igazítja, nem a felbontást változtatja."
+  },
+  {
+    "type": "true_false",
+    "question": "A bevágási algoritmusok a WhiteboxTools-ban elérhetők.",
+    "correct": "true",
+    "explanation": "BreachDepressions és BreachDepressionsLeastCost."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-90 90 m-es felbontású globális termék.",
+    "correct": "true",
+    "explanation": "Szabadon elérhető, kontinentális léptékű elemzésekhez."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR DEM hídpályákat gátként ábrázolja.",
+    "correct": "true",
+    "explanation": "A hídpálya magassága mesterséges gátat hoz létre a meder felett."
+  },
+  {
+    "type": "true_false",
+    "question": "A SAGA GIS a QGIS Processing-on keresztül érhető el.",
+    "correct": "true",
+    "explanation": "A QGIS Processing Toolbox integrálja a SAGA algoritmusokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A Jenson és Domingue algoritmus szisztematikus pásztázással dolgozik.",
+    "correct": "true",
+    "explanation": "A szisztematikus pásztázás garantálja az összes mélypont megoldását."
+  },
+  {
+    "type": "true_false",
+    "question": "A kondicionálás korai hibái nem befolyásolják a későbbi lépéseket.",
+    "correct": "false",
+    "explanation": "A hibák minden további lépésen végiggyűrűznek."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 sztereo-fotogrammetriából készül.",
+    "correct": "true",
+    "explanation": "Szintvonalak és sztereo-fotogrammetria."
+  },
+  {
+    "type": "true_false",
+    "question": "A mélypontfeltöltés cellamagasságokat emel.",
+    "correct": "true",
+    "explanation": "A mélyedés celláit az átbukási pont magasságára emeli."
+  },
+  {
+    "type": "true_false",
+    "question": "Az AGREE-módszerben a medercellák eredeti magasságukon maradnak.",
+    "correct": "false",
+    "explanation": "10 m-rel csökkentik az eredeti medercella-magasság alá."
+  },
+  {
+    "type": "true_false",
+    "question": "A sík Alföldön a DEM pontossága és a valós lejtés összemérhető.",
+    "correct": "true",
+    "explanation": "A rendkívül enyhe lejtések a DEM-pontosság határán vannak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Wang és Liu feltöltési algoritmusa _______ évben jelent meg.",
+    "correct": "2006",
+    "explanation": "Hatékonyabb megvalósítás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszerben a lineáris lejtés 0 m süllyesztéstől _______ m-ig tart a mederparton.",
+    "correct": "10",
+    "explanation": "0,02 × 500 = 10 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mederbeégetés képlete: DEM_beégetett = DEM - süllyesztés × _______.",
+    "correct": "meder_raszter",
+    "explanation": "A medercellák magasságát csökkenti."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása a keretrendszer _______ és _______ lépésére összpontosít.",
+    "correct": "1., 2.",
+    "explanation": "Rekondicionálás és mélypontfeltöltés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hidrológiailag kondicionált DEM-ben minden cellától _______ áramlási útvonal vezet a peremig.",
+    "correct": "nem növekvő",
+    "explanation": "A víz bármely cellából eljuthat a tartomány széléig."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 9.2. táblázat feltöltésekor _______ cellát emelünk 107 m-re.",
+    "correct": "9",
+    "explanation": "A 107 m alatti kilenc cella."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Planchon és Darboux algoritmusa _______ évben jelent meg.",
+    "correct": "2002",
+    "explanation": "Hatékonyabb feltöltési algoritmus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az optimális mélyponteltávolítás a feltöltés és _______ kombinálása.",
+    "correct": "bevágás",
+    "explanation": "Soille (2004) javaslata."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása nélkül a vízgyűjtő _______ alulbecsült lesz.",
+    "correct": "területe",
+    "explanation": "Elszigetelt részvízgyűjtők kimaradnak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypont angol neve: _______.",
+    "correct": "pit",
+    "explanation": "Pit, sink vagy depression."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés angol neve az ArcGIS-ben: _______.",
+    "correct": "Fill",
+    "explanation": "Spatial Analyst > Hydrology > Fill."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az átbukási pont angol neve: _______ point.",
+    "correct": "pour",
+    "explanation": "Pour point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM _______ a keretrendszer 3. lépése.",
+    "correct": "folyásirány-számítás",
+    "explanation": "A kondicionált DEM-ből számítandó."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mederbeégetés angol neve: stream _______.",
+    "correct": "burning",
+    "explanation": "Stream burning."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszer a _______ módszer kifinomultabb alternatívája.",
+    "correct": "mederbeégetés",
+    "explanation": "Sima lejtés a meredek falak helyett."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltött DEM-et _______ DEM-nek is nevezik.",
+    "correct": "kondicionált",
+    "explanation": "Hidrológiailag kondicionált DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NHDPlus HR a _______ (ország) vízhálózati adatbázisa.",
+    "correct": "USA",
+    "explanation": "Az Egyesült Államok nemzeti hidrográfiai adatbázisa."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EU-Hydro felbontása kb. 1:_______ 000 egyenértékű.",
+    "correct": "50",
+    "explanation": "1:50 000 méretarányú vízhálózat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM kondicionálása az elemző _______ tudását igényli.",
+    "correct": "szakterületi",
+    "explanation": "A műtermék/valódi mélyedés megkülönböztetéséhez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A sík terep feloldási mechanizmusok a _______ szakaszban tárgyaltak.",
+    "correct": "9.6.",
+    "explanation": "A 9.6. szakasz a sík terület feloldásáról szól."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM a _______ portálon érhető el.",
+    "correct": "dataspace.copernicus.eu",
+    "explanation": "A Copernicus Data Space ökoszisztéma."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az AGREE-módszer fejlesztési helye: Texasi Egyetem, _______.",
+    "correct": "Austin",
+    "explanation": "David Maidment kutatócsoportja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-rekondicionálás angol neve: DEM _______.",
+    "correct": "reconditioning",
+    "explanation": "DEM reconditioning."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bevágás angol neve: _______.",
+    "correct": "breaching",
+    "explanation": "Vagy carving."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az optimális mélyponteltávolítás célfüggvénye: Σ|z'_i - ________|.",
+    "correct": "z_i",
+    "explanation": "Az eredeti és módosított magasságok abszolút eltéréseinek összege."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A domborzati lefolyáselemzés végeredménye: vízhálózat + _______ + topológia.",
+    "correct": "részvízgyűjtők",
+    "explanation": "Vízhálózat, részvízgyűjtők és lefolyási topológia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LiDAR DEM-ek pontossága: < _______ m.",
+    "correct": "0,15",
+    "explanation": "A LiDAR függőleges pontossága tipikusan 15 cm-nél jobb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypont geometriáját két fogalom írja le: mélypontfenék és _______ pont.",
+    "correct": "átbukási",
+    "explanation": "Pour point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A feltöltés a DEM-et _______ irányban módosítja.",
+    "correct": "felfelé",
+    "explanation": "A cellamagasságokat emeli."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bevágás a DEM-et _______ irányban módosítja.",
+    "correct": "lefelé",
+    "explanation": "Az akadálycellák magasságát csökkenti."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM DEM típusa: digitális _______ modell.",
+    "correct": "felszín",
+    "explanation": "DSM, nem DTM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 a _______ Tudásközpont terméke.",
+    "correct": "Lechner",
+    "explanation": "Korábban FÖMI."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM puffere legalább _______ km legyen.",
+    "correct": "1",
+    "explanation": "A szélszennyezés megelőzéséhez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mélypontfeltöltés után a sík terület feloldáshoz _______ algoritmus kell.",
+    "correct": "másodlagos",
+    "explanation": "A D8 nem kezel sík felszínt."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen diagnosztikai módszereket alkalmazna a feltöltés hatásainak vizsgálatára?",
+    "correct": "1. Feltöltött-mínusz-DEM. 2. Nagy feltöltések vizsgálata. 3. Csíkos mintázat (radar). 4. Összehasonlítás térképezett vízhálózattal. 5. Lefolyási teszt.",
+    "explanation": "A diagnosztika a kondicionálás minőségbiztosítása."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a szélszennyezés problémáját a DEM-kondicionálásnál?",
+    "correct": "Mindig legalább 1 km puffer a vizsgálati terület körül. A DEM-et a pufferrel együtt kondicionálni, majd a végeredményt vágni. A puffer elfelejtése a leggyakoribb hiba.",
+    "explanation": "A puffer megelőzi a szélszennyezést."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen különbségek vannak a GRASS, SAGA és WhiteboxTools kondicionálási képességei között?",
+    "correct": "GRASS: r.fill.dir (feltöltés). SAGA: Fill Sinks, Flow Direction. WhiteboxTools: FillDepressions + BreachDepressions + optimális. A WhiteboxTools a legsokoldalúbb.",
+    "explanation": "A nyílt forráskódú eszközök kiegészítik egymást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a mélypontfeltöltést egy országos léptékű hidrológiai elemzésben?",
+    "correct": "30 m Copernicus GLO-30 → Fill (z-limit nélkül, mert 30 m-en a legtöbb mélypont műtermék). Ellenőrzés: feltöltött-mínusz-DEM. Karszt területek dokumentálása. Párhuzamos feldolgozás lehetséges.",
+    "explanation": "Az országos lépték standard feltöltést igényel, de diagnosztika szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatással van a DEM-forrás típusa a mélypontok jellegére?",
+    "correct": "Radar (SRTM, Copernicus): lombkorona-műtermékek, sekély. LiDAR: mikro-topográfia (keréknyom, szántás), sok apró. Szintvonal: simítási hiba, sekély, széles. A forrás meghatározza a stratégiát.",
+    "explanation": "A DEM-készítési módszer befolyásolja a mélypontok természetét."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan döntene a feltöltés és bevágás között egy konkrét mélypont esetén?",
+    "correct": "Kérdések: 1. Műtermék vagy valódi? 2. Az akadály keskeny vagy széles? 3. Van-e ismert áteresz/csatorna? Keskeny akadály+ismert áteresz→bevágás. Műtermék→feltöltés. Valódi nagy mélyedés→z-limit.",
+    "explanation": "A döntés a mélypont jellegétől és a tájismerettől függ."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM-kondicionálás hatását a vízhozam-becslésekre!",
+    "correct": "Hibás kondicionálás→hibás vízgyűjtő terület→hibás vízhozam. A terület alul/felülbecslése egyenesen arányos a vízhozam hibájával. A kondicionálás minősége közvetlenül hat a modelleredményekre.",
+    "explanation": "A kondicionálási hibák a vízhozam-becslésben megjelennek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a glaciális terep feltöltési kihívásait?",
+    "correct": "Glaciális: sok zárt medence (üstmélyedések, morénák). Feltöltés eltávolítja → információvesztés. Megoldás: z-limit (pl. 5 m). A kis mélyedéseket feltöltjük, a nagyobbakat megőrizzük. Dokumentálás.",
+    "explanation": "A glaciális formák valódi mélyedések, szelektív megközelítést igényelnek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és hátrányai vannak a TauDEM-nek az ArcGIS-szel szemben a kondicionálásban?",
+    "correct": "TauDEM: ingyenes, MPI párhuzamos, kezeli a földrajzi koordinátákat. ArcGIS: kereskedelmi, szélesebb eszközkészlet, Arc Hydro integráció. A TauDEM nagy DEM-ek párhuzamos feldolgozásához előnyösebb.",
+    "explanation": "A TauDEM és ArcGIS kiegészítik egymást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan dokumentálná a DEM-kondicionálási döntéseket egy tudományos publikációban?",
+    "correct": "1. DEM forrás, felbontás, év, koordináta-rendszer. 2. Rekondicionálás: módszer, paraméterek, vízhálózati adatforrás. 3. Feltöltés: szoftver, z-limit, mélyedéskezelés. 4. Diagnosztika eredménye. 5. Indoklás.",
+    "explanation": "A reprodukálhatóság érdekében minden döntést dokumentálni kell."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kondicionálás az éghajlatváltozási hatásvizsgálatokban?",
+    "correct": "A vízgyűjtő-lehatárolás alapja. Változó csapadékmintázatok→változó árvízi kockázat. A kondicionált DEM-ből származó vízgyűjtők a modellezés térbeli egységei. A kondicionálás minősége meghatározza a hatásvizsgálat megbízhatóságát.",
+    "explanation": "A DEM-kondicionálás az éghajlatváltozási modellezés alapvető lépése."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a mesterséges csatornák (csapadékvíz-elvezető rendszer) hatását a DEM-kondicionálásnál?",
+    "correct": "A mesterséges csatornák nem feltétlenül követik a természetes topográfiát. LiDAR DEM rögzíti, de 30 m-es DEM nem. Megoldás: mederbeégetés a csatornavonalak mentén, ha ismert. Dokumentálás.",
+    "explanation": "Az antropogén vízelvezetés különleges kezelést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a mélypontfeltöltés algoritmusának lépéseit egy konkrét példán!",
+    "correct": "9.1. táblázat: fenék=93m, perem=99m. 1. Azonosítás: 93m a legalacsonyabb. 2. Átbukási pont: 99m (perem legalacsonyabb). 3. Feltöltés: minden belső cellát 99m-re. 4. Eredmény: sík terület 99m-en.",
+    "explanation": "A feltöltési algoritmus egyértelmű és determinisztikus."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlődési irányok várhatók a DEM-kondicionálásban?",
+    "correct": "Gépi tanulás a műtermék/valódi megkülönböztetéshez. Automatikus áteresz-detektálás LiDAR-ból. Optimális feltöltés/bevágás szélesebb körű alkalmazása. Felhőalapú feldolgozás. Valós idejű kondicionálás.",
+    "explanation": "A technológiai fejlődés javítja a kondicionálás automatizálhatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a mederbeégetés a vízgyűjtő-lehatárolás pontosságára?",
+    "correct": "Sík terepen javítja, mert a számított lefolyás követi az ismert medercsatornákat. Hegyvidéken kevésbé szükséges. Hátrány: torzított lejtésértékek a meder közelében. A kondicionált DEM csak áramlásirányhoz!",
+    "explanation": "A mederbeégetés javítja a lefolyási mintákat, de torzítja a terepfelszínt."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a DEM-kondicionálást precíziós mezőgazdasági célokra?",
+    "correct": "LiDAR DEM→bevágás a közúti töltéseknél→feltöltés→D8 folyásirány→áramlás-felhalmozódás→a víz gyűlési mintázatai. A parcella szintű lefolyáselemzés segíti az öntözés és vízelvezetés tervezését.",
+    "explanation": "A DEM-kondicionálás a precíziós mezőgazdaság térbeli elemzésének alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen különbségek vannak az ArcGIS és a QGIS kondicionálási munkafolyamatai között?",
+    "correct": "ArcGIS: Fill (Hydrology), Arc Hydro (AGREE). QGIS: GRASS r.fill.dir, SAGA Fill Sinks, WhiteboxTools. ArcGIS egyszerűbb GUI, QGIS több háttérprogram. WhiteboxTools a legsokoldalúbb nyílt forráskódú.",
+    "explanation": "Mindkét platform komplett kondicionálási lehetőséget kínál."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a kondicionálási munkafolyamatot egy városi vízgyűjtőn?",
+    "correct": "Városi: LiDAR DEM, sok infrastrukturális műtermék (épületek, utak, hídak). Szelektív bevágás. A mesterséges vízelvezetés térképezése. A kondicionálás a csapadékvíz-modellezés alapja. Különösen gondos diagnosztika szükséges.",
+    "explanation": "A városi vízgyűjtők a legkomplexebb kondicionálási kihívást jelentik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM-kondicionálás szerepét a vízgyűjtő-gazdálkodási tervek készítésében!",
+    "correct": "A vízgyűjtő-lehatárolás alapja. A részvízgyűjtők a gazdálkodási egységek. A vízhálózat a monitoring alapja. A kondicionálás minősége meghatározza az egész terv térbeli keretét. A jogi határ a kondicionálásból ered.",
+    "explanation": "A vízgyűjtő-gazdálkodási tervek térbeli kerete a DEM-kondicionálásra épül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a nagy valódi mélyedések (pl. 50+ m) feltöltésének problémáját?",
+    "correct": "Kérdés: a mélyedés hidrológiailag kapcsolt-e a folyórendszerrel? Ha igen (karszt, felszín alatti víz): feltöltés védhető. Ha nem (endoreikus medence): a feltöltés helytelen. z-limit vagy szelektív kezelés szükséges.",
+    "explanation": "A nagy mélyedések feltöltése esetenkénti mérlegelést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatással van a DEM-felbontás a kondicionálási munkafolyamatra?",
+    "correct": "1 m: sok mélypont, sok infrastruktúra, bevágás szükséges. 30 m: közepes, standard feltöltés. 90 m: kevés, egyszerű. A felbontás meghatározza a kondicionálás komplexitását, idejét és az elemzés részletességét.",
+    "explanation": "A felbontás és a kondicionálás bonyolultsága egyenesen arányos."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálná a kondicionált DEM-et a térképezett vízhálózattal?",
+    "correct": "1. Folyásirány→kumuláció→vízhálózat levezetés. 2. Összehasonlítás az OVF/EU-Hydro/NHD térképezett hálózattal. 3. Egyezés vizsgálata: medernyomvonal, csomópontok. 4. Eltérések dokumentálása és indoklása.",
+    "explanation": "A levezetett vízhálózat és a térképezett hálózat összehasonlítása a végső minőségellenőrzés."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM-kondicionálás és az áramlás-felhalmozódás közötti kapcsolatot!",
+    "correct": "A kondicionált DEM→D8 folyásirány→áramlás-felhalmozódás. Ha a DEM kondicionálatlan: mélypontok→nulla kumuláció→rések a vízhálózatban. A kondicionálás biztosítja a folyamatos, értelmes kumulációs értékeket.",
+    "explanation": "A kondicionálás nélkül az áramlás-felhalmozódási rács értelmetlen."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a DEM-kondicionálás az árvízvédelmi infrastruktúra tervezésében?",
+    "correct": "A vízgyűjtő-lehatárolás → tervezési vízhozam. A vízhálózat → az árvízvédelmi művek elhelyezése. A feltöltési térfogat → természetes tározási becslés. A kondicionálás minősége közvetlenül hat az infrastruktúra tervezésére.",
+    "explanation": "Az árvízvédelmi tervezés a DEM-kondicionálás eredményeire épül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a töltések és gátak hatását a DEM-kondicionálásnál a Tisza mentén?",
+    "correct": "Árvízvédelmi töltések: hosszú lineáris akadályok. Feltöltés: az egész árteret a koronára emelné (abszurd). Megoldás: bevágás a megfelelő pontoknál (zsilipek, átbukási helyek). Szelektív, gondos megközelítés.",
+    "explanation": "A töltések a magyar hidrológia egyik legfontosabb kondicionálási kihívása."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati tanácsokat adna DEM-kondicionáláshoz kezdő GIS-felhasználóknak?",
+    "correct": "1. Mindig legyen puffer. 2. Feltöltés az alapértelmezett. 3. Vizsgálja a diagnosztikát. 4. Ne használja a kondicionált DEM-et lejtésszámításra. 5. Dokumentálja a döntéseket. 6. Kis tesztterületen próbálja ki először.",
+    "explanation": "Az alapvető szabályok betartása megelőzi a leggyakoribb hibákat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a DEM-kondicionálás a tájökológiai elemzésekre?",
+    "correct": "A vízgyűjtők tájökológiai egységek. A vízhálózat az élőhelyek gerince. A kondicionálás meghatározza a vizes élőhelyek térbeli keretét. A kondicionált DEM-ből származó TWI a nedvesség-mintázat alapja.",
+    "explanation": "A tájökológia a DEM-kondicionálás eredményeire épül a vízgyűjtő-alapú elemzéseknél."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a feltöltés és bevágás kombinálásának lehetőségeit!",
+    "correct": "Optimális (Soille 2004): minimalizálja Σ|z'-z|. Gyakorlati: bevágás az infrastruktúrára, feltöltés a többire. Sorrend: bevágás (ha kell)→feltöltés. WhiteboxTools: mindkettő elérhető.",
+    "explanation": "A kombinált megközelítés a leghatékonyabb, de ritkán szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné mesterséges tavak hatását a DEM-kondicionálásra?",
+    "correct": "Tározó: sík terület a DEM-ben. Ha van kifolyó: nem mélypont. Endoreikus: feltöltés lehet szükséges.",
+    "explanation": "A tavak különleges kondicionálási helyzetet teremtenek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen hatással van a DEM-frissítés a kondicionálásra?",
+    "correct": "Új infrastruktúra: új mélypontok. A DDM-5 frissítései tükrözik az autópálya-építést. Mindig a legfrissebb DEM-mel kondicionálni.",
+    "explanation": "A DEM-frissítés új kihívásokat hozhat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a kondicionálást a Balaton vízgyűjtőjén?",
+    "correct": "Sík ártér: DDM-5 szükséges. AGREE a patakok medervonalaival. Sík terület feloldás kritikus.",
+    "explanation": "A Balaton a sík terep kondicionálási kihívását szemlélteti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel automatizálná a kondicionálási munkafolyamatot?",
+    "correct": "Model Builder, Python ArcPy, TauDEM MPI, WhiteboxTools CLI. A diagnosztikát is automatizálni.",
+    "explanation": "Az automatizálás konzisztenciát biztosít."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a kondicionálást oktatási környezetben?",
+    "correct": "Kis teszt-DEM, lépésenként, vizuális diagnosztika, valós DEM, elmélet+gyakorlat.",
+    "explanation": "A megértés a cél."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a párhuzamos feldolgozásnak?",
+    "correct": "Nagy DEM-ek: TauDEM MPI, WhiteboxTools többszálú. 32 szálú rendszer: 8-10× gyorsulás.",
+    "explanation": "Elengedhetetlen a nagy DEM-ekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a feltöltés a vízgyűjtő-terület pontosságára?",
+    "correct": "Feltöltés nélkül: lyukas→alulbecslés. Feltöltéssel: folytonos→pontos. A területhiba arányos a vízhozam hibájával.",
+    "explanation": "A terület a hidrológia alapmennyisége."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az Arc Hydro és a DEM-kondicionálás kapcsolatát!",
+    "correct": "Arc Hydro: DEM→kondicionálás→folyásirány→vízhálózat→vízgyűjtők→topológia. Integrált munkafolyamat.",
+    "explanation": "Az Arc Hydro a vízgyűjtő-elemzés keretrendszere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a kondicionálást több platform közötti projektnél?",
+    "correct": "Konzisztens módszertan, dokumentálás, validálás: eredmények összehasonlítása platformok között.",
+    "explanation": "A platformok közötti konzisztencia kritikus."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel vizsgálná a kondicionálás paraméterérzékenységét?",
+    "correct": "z-limit variálása, AGREE puffer variálása, süllyesztés variálása. Eredmények összehasonlítása.",
+    "explanation": "Az érzékenységelemzés feltárja a paraméterek hatásait."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a kondicionálást természetes víztározás becsléséhez?",
+    "correct": "Feltöltési térfogat = tárolókapacitás. Ártéri mélyedések. Különböző vízszintekre számítható.",
+    "explanation": "A feltöltési térfogat gyakorlati hidrológiai alkalmazás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a kondicionálás és a 10-12. fejezetek kapcsolatát!",
+    "correct": "9.: kondicionálás → 10.: D8 folyásirány, kumuláció → 11.: vízhálózat, vízgyűjtő → 12.: automatizálás.",
+    "explanation": "A fejezetek szekvenciálisan épülnek egymásra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné az urbanizáció hatását időbeli vizsgálatban?",
+    "correct": "Régi+új DEM: külön kondicionálás és összehasonlítás. Az új infrastruktúra új mélypontokat hoz létre.",
+    "explanation": "Az időbeli változásokat a kondicionálásban is figyelembe kell venni."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kondicionálás a vízkészlet-gazdálkodásban?",
+    "correct": "Vízgyűjtő-lehatárolás, vízhálózat, tározási kapacitás. A kondicionálás minősége közvetlenül hat a gazdálkodásra.",
+    "explanation": "A vízkészlet-gazdálkodás térbeli kerete a kondicionálásra épül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a kondicionálást klímaváltozási forgatókönyvek mellett?",
+    "correct": "A DEM stabil (domborzat nem változik gyorsan). A klíma a csapadékra és hőmérsékletre hat. A kondicionálás egyszer végezhető.",
+    "explanation": "A DEM stabil, de a klímaváltozás közvetett hatásai megjelenhetnek."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a kondicionálás szerepét a modellkalibrálásnál!",
+    "correct": "A kalibrálás a kondicionált DEM vízgyűjtőin történik. Hibás terület → kompenzáló paraméterek. A kondicionálás minősége kritikus.",
+    "explanation": "A kondicionálás közvetlenül hat a kalibrációra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a kondicionálást kis (< 1 km²) vízgyűjtőn?",
+    "correct": "LiDAR szükséges. Sok infrastrukturális mélypont. Bevágás szükséges. Gondos diagnosztika: minden cella számít.",
+    "explanation": "A kis vízgyűjtők a legigényesebb feladatok."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a kondicionálás a talajvíz-modellezésben?",
+    "correct": "Felszíni vízgyűjtők: felső határfeltétel. Vízhálózat: kölcsönhatás helye. A topográfia a talajvízmodell bemenete.",
+    "explanation": "A felszíni-felszín alatti víz kapcsolat alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan értékelné a kondicionálás sikerességét objektíven?",
+    "correct": "1. Folytonossági teszt. 2. Vízhálózat egyezés. 3. Vízgyűjtő-terület konzisztencia. 4. Feltöltési mélységek ésszerűsége.",
+    "explanation": "Az objektív kritériumok biztosítják a minőséget."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a kondicionálást kutatás vs. operatív alkalmazásban?",
+    "correct": "Kutatás: részletes vizsgálat, érzékenységelemzés. Operatív: standard protokoll, reprodukálhatóság. Dokumentálás mindkét esetben.",
+    "explanation": "Az eltérő kontextus eltérő megközelítést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az INSPIRE direktíva és a DEM-kondicionálás összefüggését!",
+    "correct": "INSPIRE: vízgyűjtők és vízhálózatok EU-s témák. A kondicionálásból származó adatok INSPIRE-megfelelő adatmegosztás részei.",
+    "explanation": "Az EU szabályozás befolyásolja a gyakorlatot."
+  }
+]

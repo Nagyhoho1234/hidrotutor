@@ -1,0 +1,334 @@
+{
+  "chapter": "ch11",
+  "total_issues": 41,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Most ezeket a termékeket használjuk a hidrológia legfontosabb kérdéseinek megválaszolásához",
+      "suggested": "Most ezeket az eredményeket használjuk a hidrológia legfontosabb kérdéseinek megválaszolására",
+      "reason": "A „termékek” angolos, műszaki tükörfordítás ebben a kontextusban; magyar tudományos prózában természetesebb az „eredmények”."
+    },
+    {
+      "line_approx": 14,
+      "category": "register",
+      "severity": "medium",
+      "original": "A lehatárolás helyessége határozza meg, hogy a modell a valóság használható ábrázolása-e vagy pusztán numerikus műtermék.",
+      "suggested": "A lehatárolás helyessége dönti el, hogy a modell a valóság használható ábrázolása-e, vagy pusztán numerikus műtermék.",
+      "reason": "A „határozza meg” itt nehézkes, angolos fordulat; a „dönti el” idiomatikusabb."
+    },
+    {
+      "line_approx": 20,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A művelet a kumulációs raszter egyszerű átosztályozása.",
+      "suggested": "A művelet a kumulációs raszter egyszerű újraosztályozása.",
+      "reason": "Az „átosztályozás” szokatlan; GIS-környezetben a bevettebb magyar megfelelő az „újraosztályozás”."
+    },
+    {
+      "line_approx": 31,
+      "category": "register",
+      "severity": "low",
+      "original": "A küszöb nem kozmetikai döntés, hanem modellezési:",
+      "suggested": "A küszöb megválasztása nem pusztán formai kérdés, hanem modellezési döntés:",
+      "reason": "A „kozmetikai döntés” kissé publicisztikus, kevésbé tankönyvszerű megfogalmazás."
+    },
+    {
+      "line_approx": 44,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A lecsapolási sűrűség és a lejtőhossz közötti összefüggés egyszerű",
+      "suggested": "A vízhálózati sűrűség és az átlagos lejtőhossz közötti összefüggés egyszerű",
+      "reason": "A szakasz elején a fogalom „vízfolyáshálózati sűrűség”; a „lecsapolási sűrűség” terminológiailag ingadozó. Az „átlagos lejtőhossz” pontosabb is, mert a képlet erre utal."
+    },
+    {
+      "line_approx": 67,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Dél-Dakota badlandjei rendkívül finom textúrájúak",
+      "suggested": "Dél-Dakota badland vidékei rendkívül finoman tagoltak",
+      "reason": "A „finom textúrájúak” szó szerinti fordítás; geomorfológiai magyarban természetesebb a „finoman tagolt”."
+    },
+    {
+      "line_approx": 69,
+      "category": "register",
+      "severity": "low",
+      "original": "E változékonyság az éghajlat, geológia, növényzet és eróziótörténet különbségeit tükrözi.",
+      "suggested": "Ez a változékonyság az éghajlat, a geológiai felépítés, a növényzet és az eróziótörténet különbségeit tükrözi.",
+      "reason": "Az „E változékonyság” kissé merev; a „geológia” helyett a „geológiai felépítés” pontosabb ebben az összefüggésben."
+    },
+    {
+      "line_approx": 77,
+      "category": "register",
+      "severity": "medium",
+      "original": "Bevezeti saját önkényes küszöbét.",
+      "suggested": "Ez a módszer is egy saját, önkényesen megválasztott küszöböt vezet be.",
+      "reason": "Az eredeti mondat túl tömör, kissé darabos; a kiegészített változat gördülékenyebb és akadémiaibb."
+    },
+    {
+      "line_approx": 79,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A módszer hajlamos „tollazódásra\" meredek, de meder nélküli lejtőkön.",
+      "suggested": "A módszer meredek, de meder nélküli lejtőkön gyakran sűrű, ágszerű mintázatot eredményez.",
+      "reason": "A „tollazódás” itt angol szakzsargon tükörfordítása, magyarul magyarázóbb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 86,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Az állandó vízfolyásesés tulajdonsága szerint",
+      "suggested": "Az állandó vízfolyásesés tulajdonsága értelmében",
+      "reason": "A „szerint” nem hibás, de az „értelmében” tudományos szövegben természetesebben kapcsolja a definíciót az állításhoz."
+    },
+    {
+      "line_approx": 89,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ennek fizikai alapja a Smith és Bretherton (1972) által kidolgozott formainstabilitás-elméletben rejlik.",
+      "suggested": "Fizikai magyarázatát a Smith és Bretherton (1972) által kidolgozott formainstabilitás-elmélet adja.",
+      "reason": "A „fizikai alapja ... rejlik” nehézkes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 118,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A lényeges előny: a völgycellák tagolt terepen koncentrálódnak (nagy görbület) és enyhe terepen ritkák (kis görbület), ezért az eredmény **térben változó lecsapolási sűrűségű**",
+      "suggested": "A lényeges előny az, hogy a völgycellák tagolt terepen koncentrálódnak (nagy görbület), enyhe terepen pedig ritkák (kis görbület), ezért az eredmény **térben változó lecsapolási sűrűségű**.",
+      "reason": "Az eredeti mondat kettősponttal és kötőszó nélkül kissé darabos; a magyarosabb tagolás javítja a folyamatosságot."
+    },
+    {
+      "line_approx": 125,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ugyanaz a numerikus küszöb különböző fizikai lecsapolási sűrűségeket eredményez a vízgyűjtő különböző részein.",
+      "suggested": "Ugyanaz a számszerű küszöb a vízgyűjtő különböző részein eltérő lecsapolási sűrűséget eredményez.",
+      "reason": "A „numerikus küszöb” és a többes számú „sűrűségeket” angolosabb, mint a természetes magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 218,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A vízfolyás-rendszámozási keretrendszer figyelemre méltó statisztikai szabályosságokat tár fel",
+      "suggested": "A vízfolyások rendszámozása figyelemre méltó statisztikai szabályosságokat tár fel",
+      "reason": "A „keretrendszer” itt angolos, feleslegesen elvont szó; a magyar szaknyelvben egyszerűbb, természetesebb megfogalmazás illik."
+    },
+    {
+      "line_approx": 232,
+      "category": "calque",
+      "severity": "medium",
+      "original": "az erős jelzés arra, hogy a lehatárolás geomorfológiailag ésszerű",
+      "suggested": "ez erősen arra utal, hogy a lehatárolás geomorfológiai szempontból ésszerű",
+      "reason": "Az „erős jelzés arra” szó szerinti angol tükör; magyarul természetesebb az „arra utal” szerkezet."
+    },
+    {
+      "line_approx": 237,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A részvízgyűjtő az a terület, amely közvetlenül egyetlen vízfolyásszakaszba csapolódik",
+      "suggested": "A részvízgyűjtő az a terület, amely közvetlenül egyetlen vízfolyásszakaszhoz tartozik",
+      "reason": "A „csapolódik” itt szokatlan, kissé művi; ebben a definícióban természetesebb a semlegesebb megfogalmazás."
+    },
+    {
+      "line_approx": 237,
+      "category": "register",
+      "severity": "low",
+      "original": "más szakaszon való áthaladás nélkül",
+      "suggested": "anélkül, hogy a víz más szakaszon haladna át",
+      "reason": "A „való áthaladás” főnevesített, nehézkes szerkezet; igés formában gördülékenyebb."
+    },
+    {
+      "line_approx": 238,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A számítás: minden nem-vízfolyás-cellára követjük a lefolyási utat",
+      "suggested": "A számítás menete: minden nem vízfolyáscella esetében követjük a lefolyási utat",
+      "reason": "A „nem-vízfolyás-cellára” szerkezet nehézkes és angolos; a mondat magyarosabb, ha körülírással oldja meg."
+    },
+    {
+      "line_approx": 240,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez nem önkényes: a határokat fizikai szabályok -- topográfiai gerincvonalak -- definiálják.",
+      "suggested": "Ez nem önkényes: a határokat fizikai adottságok, vagyis a topográfiai gerincvonalak határozzák meg.",
+      "reason": "A „definiálják” és a „fizikai szabályok” együtt fordításszagú; magyar tudományos prózában természetesebb a „határozzák meg”."
+    },
+    {
+      "line_approx": 245,
+      "category": "plural",
+      "severity": "medium",
+      "original": "A legfinomabb egységek.",
+      "suggested": "Ez a legfinomabb egység.",
+      "reason": "A definíció egyes számú fogalomra vonatkozik; a többes szám itt angolos általánosítás."
+    },
+    {
+      "line_approx": 247,
+      "category": "register",
+      "severity": "low",
+      "original": "egy megadott kijelölt pontba csapolódó terület",
+      "suggested": "egy megadott ponthoz tartozó terület",
+      "reason": "A „megadott kijelölt” redundáns, a „csapolódó” pedig itt nehézkes."
+    },
+    {
+      "line_approx": 249,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Vízgyűjtő (medence): a kijelölt kifolyási pontba csapolódó teljes terület.",
+      "suggested": "Vízgyűjtő: a kijelölt kifolyási ponthoz tartozó teljes terület.",
+      "reason": "A „medence” nem pontos szinonima ebben a definícióban, a „csapolódó” pedig itt is művi hatású."
+    },
+    {
+      "line_approx": 251,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az EU Víz Keretirányelvének keretében",
+      "suggested": "Az EU Víz Keretirányelve szerint",
+      "reason": "A „keretében” ismétlése a név részeként szereplő „Keretirányelv” mellett nehézkes és stilisztikailag rossz."
+    },
+    {
+      "line_approx": 256,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A részvízgyűjtők a tájfelszín mozaikszerű felosztását alkotják",
+      "suggested": "A részvízgyűjtők mozaikszerűen osztják fel a tájfelszínt",
+      "reason": "Az „X alkotja Y felosztását” szerkezet angolosan elvont; igés formában természetesebb."
+    },
+    {
+      "line_approx": 261,
+      "category": "register",
+      "severity": "low",
+      "original": "determininsztikus -- ugyanaz a bemenet mindig ugyanazokat a részvízgyűjtőket adja",
+      "suggested": "determinisztikus -- ugyanaz a bemenet mindig ugyanazokat a részvízgyűjtőket eredményezi",
+      "reason": "Az „adja” itt túl laza, kevésbé tudományos; emellett helyesírási hiba is van a „determinisztikus” szóban."
+    },
+    {
+      "line_approx": 265,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A felhasználó által megadott kifolyáspont-koordináták",
+      "suggested": "A felhasználó által megadott kifolyási pont koordinátái",
+      "reason": "A túlzott összetétel nehézkes; a különírt forma természetesebb magyarul."
+    },
+    {
+      "line_approx": 266,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "automatikusan áthelyezi a pontot a legközelebbi DEM-ből levezetett vízfolyás-cellára",
+      "suggested": "automatikusan áthelyezi a pontot a DEM-ből levezetett legközelebbi vízfolyáscellára",
+      "reason": "A jelzős szerkezet angolos sorrendű; magyarul a „legközelebbi” természetesebben a főnév előtt áll."
+    },
+    {
+      "line_approx": 275,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A Stream to Feature konverzió minden szakaszt vonalként rajzol végig a cellaközéppontokon.",
+      "suggested": "A Stream to Feature konverzió minden szakaszt a cellaközéppontokon átvezetett vonallá alakít.",
+      "reason": "A „rajzol végig” köznyelvies és pontatlan; szakmai leírásban az „alakít” vagy „konvertál” megfelelőbb."
+    },
+    {
+      "line_approx": 292,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Lecsapolási vonal (DrainageLine) -- vízfolyásszakaszok.",
+      "suggested": "Vízelvezető vonal (DrainageLine) -- vízfolyásszakaszok.",
+      "reason": "A „lecsapolási vonal” magyarul szokatlan, inkább tükörfordítás; a „vízelvezető vonal” természetesebb."
+    },
+    {
+      "line_approx": 803,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 11.11.2 A szoftver-mint-szolgáltatás trend",
+      "suggested": "### 11.11.2 A szoftver mint szolgáltatás trendje",
+      "reason": "Az angol 'software-as-a-service' szerkezet tükörszerű átvétele és a hiányzó birtokos szerkezet miatt a cím magyartalanul hangzik."
+    },
+    {
+      "line_approx": 805,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A felhőfeldolgozás irányába mutató trend mélyreható következményekkel jár.",
+      "suggested": "A felhőalapú feldolgozás felé mutató trendnek mélyreható következményei vannak.",
+      "reason": "Az 'irányába mutató trend' és a 'következményekkel jár' együtt angolos, körülményes megfogalmazás."
+    },
+    {
+      "line_approx": 806,
+      "category": "register",
+      "severity": "low",
+      "original": "A vízgyűjtő egy gombnyomásra megjelenik -- de az ebben a fejezetben ismertetett módszerek (vízfolyás-esés teszt, Peuker--Douglas, lecsapolási sűrűség) adják meg azt a tudást, amellyel megítélhető, hogy az előre kiszámított eredmény megfelelő-e.",
+      "suggested": "A vízgyűjtő ma már egy gombnyomásra megjelenik -- de az ebben a fejezetben ismertetett módszerek (vízfolyás-esés teszt, Peuker--Douglas, lecsapolási sűrűség) adják azt a tudást, amely alapján megítélhető, hogy az előre kiszámított eredmény megfelelő-e.",
+      "reason": "Az 'adják meg azt a tudást, amellyel' szerkezet nehézkes és részben tükörfordításízű; egyszerűbb, természetesebb akadémiai megfogalmazás indokolt."
+    },
+    {
+      "line_approx": 807,
+      "category": "register",
+      "severity": "low",
+      "original": "A felhő gyorsaságot nyújt; a megértés minőséget.",
+      "suggested": "A felhő gyorsaságot ad; a megértés minőséget.",
+      "reason": "A 'nyújt' itt kissé reklámszerű, angolos szóhasználat; az 'ad' tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 811,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A NWM a terepanalízis-módszerek operatív megvalósítása: 2,7 millió NHDPlus-szakaszon óránkénti vízhozam-előrejelzés.",
+      "suggested": "Az NWM a terepanalízis-módszerek operatív alkalmazása: 2,7 millió NHDPlus-szakaszra ad óránkénti vízhozam-előrejelzést.",
+      "reason": "A 'megvalósítása' főnevesítő, angolos megoldás; az 'alkalmazása' természetesebb. A második tagmondat is kiegészítésre szorul, hogy teljes magyar mondat legyen."
+    },
+    {
+      "line_approx": 818,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "**Medri transzformáció**: RAPID útvonalvezetés a hálózaton.",
+      "suggested": "**Mederbeli továbbítás**: RAPID útvonalvezetés a hálózaton.",
+      "reason": "A 'medri transzformáció' szokatlan, tükörfordításgyanús terminus; a hidrológiai szaknyelvben természetesebb a továbbítás/árhullám-levezetés jellegű megnevezés."
+    },
+    {
+      "line_approx": 822,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "- **Kényszerítés**: ECMWF HRES/ENS időjárás-előrejelzések (az OMSZ ALADIN modellje is).",
+      "suggested": "- **Meteorológiai kényszerítés**: ECMWF HRES/ENS időjárás-előrejelzések (valamint az OMSZ ALADIN modellje).",
+      "reason": "A puszta 'kényszerítés' ebben a kontextusban túl tömör és kissé idegenszerű; a szakmai jelentés pontosabb a 'meteorológiai kényszerítés' formával."
+    },
+    {
+      "line_approx": 826,
+      "category": "register",
+      "severity": "low",
+      "original": "Magyarországon az EFAS kiegészíti az OVF HYDROINFO rendszerét (hydroinfo.hu), amely 98 szelvényre ad valós idejű vízszinteket.",
+      "suggested": "Magyarországon az EFAS kiegészíti az OVF HYDROINFO rendszerét (hydroinfo.hu), amely 98 szelvényre szolgáltat valós idejű vízszintadatokat.",
+      "reason": "Az 'ad valós idejű vízszinteket' kissé pongyola; a 'szolgáltat ... adatokat' akadémiai-szakmai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 838,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "### 11.13.2 Karszt és felszín alatti lecsapolás",
+      "suggested": "### 11.13.2 Karszt és felszín alatti vízelvezetés",
+      "reason": "A 'lecsapolás' itt félrevezető lehet, mert inkább mesterséges drainage-re utal; a felszín alatti természetes folyamatokra a 'vízelvezetés' természetesebb."
+    },
+    {
+      "line_approx": 839,
+      "category": "register",
+      "severity": "low",
+      "original": "A DEM-alapú lehatárolás a **topográfiai** vízgyűjtőt adja; a tényleges hidrológiai vízgyűjtő nagyobb vagy kisebb lehet.",
+      "suggested": "A DEM-alapú lehatárolás a **topográfiai** vízgyűjtőt határozza meg; a tényleges hidrológiai vízgyűjtő ennél nagyobb vagy kisebb is lehet.",
+      "reason": "Az 'adja' itt kissé laza, fordításszagú megoldás; a 'határozza meg' pontosabb tudományos stílusban."
+    },
+    {
+      "line_approx": 842,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "### 11.13.3 Városi és mérnöki beavatkozással érintett lecsapolás",
+      "suggested": "### 11.13.3 Városi és mérnöki beavatkozással módosított vízelvezetés",
+      "reason": "A 'lecsapolás' itt ismét szűkebb és részben félrevezető jelentésű; a 'vízelvezetés' jobban illik a csatornákra és vízátvezetésekre is."
+    },
+    {
+      "line_approx": 863,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez minden operatív előrejelző rendszer térbeli gerince.",
+      "suggested": "Ez adja minden operatív előrejelző rendszer térbeli vázát.",
+      "reason": "A 'térbeli gerince' angol mintát követő metafora; magyarul a 'térbeli váza' természetesebb."
+    }
+  ]
+}

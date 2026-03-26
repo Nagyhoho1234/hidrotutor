@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "The official scripting language for both ArcGIS and QGIS is:",
+    "options": [
+      "A) R",
+      "B) Java",
+      "C) Python",
+      "D) C++"
+    ],
+    "correct": "C",
+    "explanation": "Both ESRI and QGIS adopted Python as their primary scripting language."
+  },
+  {
+    "type": "mcq",
+    "question": "ModelBuilder in ArcGIS Pro is an example of:",
+    "options": [
+      "A) Machine learning",
+      "B) Visual programming",
+      "C) Database management",
+      "D) Web development"
+    ],
+    "correct": "B",
+    "explanation": "ModelBuilder chains tools visually without writing code."
+  },
+  {
+    "type": "mcq",
+    "question": "The ArcPy Spatial Analyst module is accessed via:",
+    "options": [
+      "A) arcpy.na",
+      "B) arcpy.sa",
+      "C) arcpy.mp",
+      "D) arcpy.da"
+    ],
+    "correct": "B",
+    "explanation": "arcpy.sa contains Fill, FlowDirection, FlowAccumulation, Watershed, etc."
+  },
+  {
+    "type": "mcq",
+    "question": "The env.overwriteOutput setting should be set to:",
+    "options": [
+      "A) False for development",
+      "B) True for iterative development",
+      "C) None",
+      "D) It doesn't matter"
+    ],
+    "correct": "B",
+    "explanation": "True allows scripts to replace existing outputs without errors."
+  },
+  {
+    "type": "mcq",
+    "question": "In Python, the r prefix before a string means:",
+    "options": [
+      "A) Read-only string",
+      "B) Raw string (backslashes literal)",
+      "C) Reversed string",
+      "D) Regular expression"
+    ],
+    "correct": "B",
+    "explanation": "Raw strings treat backslashes as literal characters, essential for Windows paths."
+  },
+  {
+    "type": "mcq",
+    "question": "The ArcGIS Pro Python interpreter is typically located at:",
+    "options": [
+      "A) C:\\Python39\\python.exe",
+      "B) C:\\Program Files\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\\python.exe",
+      "C) C:\\Windows\\python.exe",
+      "D) /usr/bin/python3"
+    ],
+    "correct": "B",
+    "explanation": "ArcGIS Pro installs its own Conda-managed Python distribution."
+  },
+  {
+    "type": "mcq",
+    "question": "To check out the Spatial Analyst license in ArcPy:",
+    "options": [
+      "A) import spatial_analyst",
+      "B) arcpy.CheckOutExtension('Spatial')",
+      "C) arcpy.sa.activate()",
+      "D) from arcpy import spatial"
+    ],
+    "correct": "B",
+    "explanation": "CheckOutExtension must be called before using SA functions."
+  },
+  {
+    "type": "mcq",
+    "question": "The command to fill pits in ArcPy is:",
+    "options": [
+      "A) arcpy.sa.FillPits('DEM')",
+      "B) arcpy.sa.Fill('DEM')",
+      "C) arcpy.fill('DEM')",
+      "D) arcpy.sa.RemoveSinks('DEM')"
+    ],
+    "correct": "B",
+    "explanation": "Fill is the Spatial Analyst function for pit removal."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcPy, after a raster operation, you must call:",
+    "options": [
+      "A) .export()",
+      "B) .save()",
+      "C) .write()",
+      "D) .commit()"
+    ],
+    "correct": "B",
+    "explanation": "Without .save(), results are temporary in-memory rasters."
+  },
+  {
+    "type": "mcq",
+    "question": "The Geoprocessing History in ArcGIS Pro allows you to:",
+    "options": [
+      "A) Delete previous analyses",
+      "B) Copy Python commands for any completed operation",
+      "C) Undo all changes",
+      "D) Restore deleted data"
+    ],
+    "correct": "B",
+    "explanation": "Right-click any history entry and select Copy Python Command."
+  },
+  {
+    "type": "mcq",
+    "question": "Which Python IDE is free, open-source, and from Microsoft?",
+    "options": [
+      "A) PyCharm",
+      "B) VS Code",
+      "C) IDLE",
+      "D) Spyder"
+    ],
+    "correct": "B",
+    "explanation": "Visual Studio Code is the most popular development environment."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Notebooks are based on:",
+    "options": [
+      "A) R Markdown",
+      "B) Jupyter notebooks",
+      "C) Google Docs",
+      "D) Microsoft Word"
+    ],
+    "correct": "B",
+    "explanation": "ArcGIS Notebooks are Jupyter notebooks with ArcPy pre-configured."
+  },
+  {
+    "type": "mcq",
+    "question": "The recommended learning workflow starts with:",
+    "options": [
+      "A) Writing code from scratch",
+      "B) Reading Python textbooks",
+      "C) Doing the workflow manually first",
+      "D) Studying algorithms"
+    ],
+    "correct": "C",
+    "explanation": "Do it manually, copy from history, add scaffolding, test, parameterize, extend."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM's computational core is written in:",
+    "options": [
+      "A) Python",
+      "B) JavaScript",
+      "C) C++ with MPI",
+      "D) Rust"
+    ],
+    "correct": "C",
+    "explanation": "C++ for performance with MPI for parallelization."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM command-line tools read and write which format?",
+    "options": [
+      "A) Esri geodatabase",
+      "B) GeoTIFF",
+      "C) NetCDF",
+      "D) JPEG"
+    ],
+    "correct": "B",
+    "explanation": "GeoTIFF and shapefiles, open standard formats."
+  },
+  {
+    "type": "mcq",
+    "question": "The TauDEM pit removal command is:",
+    "options": [
+      "A) fillsinks",
+      "B) pitremove",
+      "C) removepits",
+      "D) fill"
+    ],
+    "correct": "B",
+    "explanation": "mpiexec -n 8 pitremove -z input.tif -fel output.tif"
+  },
+  {
+    "type": "mcq",
+    "question": "The -n flag in mpiexec specifies:",
+    "options": [
+      "A) The DEM name",
+      "B) The number of parallel processes",
+      "C) The noise threshold",
+      "D) The network type"
+    ],
+    "correct": "B",
+    "explanation": "e.g., mpiexec -n 8 means 8 parallel processes."
+  },
+  {
+    "type": "mcq",
+    "question": "Python's subprocess module is used to:",
+    "options": [
+      "A) Create subfolders",
+      "B) Execute command-line programs from Python",
+      "C) Subscribe to data feeds",
+      "D) Process subscripts"
+    ],
+    "correct": "B",
+    "explanation": "subprocess.run() invokes TauDEM executables from Python scripts."
+  },
+  {
+    "type": "mcq",
+    "question": "WhiteboxTools is installed via:",
+    "options": [
+      "A) apt-get install whitebox",
+      "B) pip install whitebox",
+      "C) conda install whitebox",
+      "D) npm install whitebox"
+    ],
+    "correct": "B",
+    "explanation": "Simple pip installation, no GIS platform required."
+  },
+  {
+    "type": "mcq",
+    "question": "WhiteboxTools is written in:",
+    "options": [
+      "A) Python",
+      "B) C++",
+      "C) Rust",
+      "D) Java"
+    ],
+    "correct": "C",
+    "explanation": "Rust for high performance."
+  },
+  {
+    "type": "mcq",
+    "question": "In QGIS, processing algorithms are invoked via:",
+    "options": [
+      "A) arcpy.sa.Fill()",
+      "B) processing.run()",
+      "C) qgis.fill()",
+      "D) grass.run()"
+    ],
+    "correct": "B",
+    "explanation": "processing.run('algorithm_id', {parameters}) is the standard interface."
+  },
+  {
+    "type": "mcq",
+    "question": "GRASS GIS's r.watershed can perform multiple steps in:",
+    "options": [
+      "A) Separate sequential calls",
+      "B) One integrated call",
+      "C) Only through ModelBuilder",
+      "D) Only through C++ API"
+    ],
+    "correct": "B",
+    "explanation": "r.watershed computes flow accumulation, drainage, basins, and streams simultaneously."
+  },
+  {
+    "type": "mcq",
+    "question": "The Python os.path.join function is used to:",
+    "options": [
+      "A) Join two tables",
+      "B) Construct file paths portably",
+      "C) Join stream networks",
+      "D) Merge rasters"
+    ],
+    "correct": "B",
+    "explanation": "Constructs paths that work across operating systems."
+  },
+  {
+    "type": "mcq",
+    "question": "The glob.glob() function finds files matching:",
+    "options": [
+      "A) Regular expressions",
+      "B) Glob patterns (e.g., *.tif)",
+      "C) SQL queries",
+      "D) XPath expressions"
+    ],
+    "correct": "B",
+    "explanation": "Standard library function for file pattern matching."
+  },
+  {
+    "type": "mcq",
+    "question": "Python's try/except block is used for:",
+    "options": [
+      "A) Speeding up code",
+      "B) Error handling without stopping the batch",
+      "C) Testing internet connection",
+      "D) Trying different algorithms"
+    ],
+    "correct": "B",
+    "explanation": "Catches errors so the script can continue processing remaining inputs."
+  },
+  {
+    "type": "mcq",
+    "question": "The Python logging module provides:",
+    "options": [
+      "A) Login credentials",
+      "B) Persistent log files with timestamps",
+      "C) Logging into GIS servers",
+      "D) Log-scale calculations"
+    ],
+    "correct": "B",
+    "explanation": "Records successes and failures for review after overnight runs."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcPy, env.workspace sets:",
+    "options": [
+      "A) The Python version",
+      "B) The default data location",
+      "C) The screen resolution",
+      "D) The number of CPUs"
+    ],
+    "correct": "B",
+    "explanation": "All tools look for inputs in and write outputs to this location."
+  },
+  {
+    "type": "mcq",
+    "question": "env.snapRaster ensures:",
+    "options": [
+      "A) Rasters display correctly",
+      "B) Output rasters align cell-for-cell with a reference",
+      "C) Screenshots are saved",
+      "D) Rasters are compressed"
+    ],
+    "correct": "B",
+    "explanation": "Critical for combining multiple derived rasters that must share grid alignment."
+  },
+  {
+    "type": "mcq",
+    "question": "env.cellSize controls:",
+    "options": [
+      "A) Text font size",
+      "B) Output raster resolution",
+      "C) Print cell margins",
+      "D) Memory allocation"
+    ],
+    "correct": "B",
+    "explanation": "Determines resolution when combining rasters of different resolutions."
+  },
+  {
+    "type": "mcq",
+    "question": "IDLE is:",
+    "options": [
+      "A) A GIS tool",
+      "B) Python's built-in editor",
+      "C) An image format",
+      "D) A database engine"
+    ],
+    "correct": "B",
+    "explanation": "Integrated Development and Learning Environment, bundled with Python."
+  },
+  {
+    "type": "mcq",
+    "question": "The error 'No module named arcpy' means:",
+    "options": [
+      "A) ArcGIS is not installed",
+      "B) The script is running in the wrong Python environment",
+      "C) The file is corrupted",
+      "D) The network is down"
+    ],
+    "correct": "B",
+    "explanation": "Must use ArcGIS Pro's Conda Python environment."
+  },
+  {
+    "type": "mcq",
+    "question": "File lock errors in ArcGIS occur when:",
+    "options": [
+      "A) Files are too large",
+      "B) Data is displayed in the current map",
+      "C) The license expired",
+      "D) Python is outdated"
+    ],
+    "correct": "B",
+    "explanation": "Remove layers from the map before overwriting."
+  },
+  {
+    "type": "mcq",
+    "question": "The backslash problem in Python paths is solved by:",
+    "options": [
+      "A) Using forward slashes or raw strings",
+      "B) Renaming the folder",
+      "C) Using shorter paths",
+      "D) Installing a patch"
+    ],
+    "correct": "A",
+    "explanation": "r'C:\\path' or 'C:/path' both work correctly."
+  },
+  {
+    "type": "mcq",
+    "question": "NumPy vectorized operations are typically _____ times faster than Python loops.",
+    "options": [
+      "A) 2-5",
+      "B) 10-50",
+      "C) 100-1000",
+      "D) The same speed"
+    ],
+    "correct": "C",
+    "explanation": "NumPy performs computation in compiled C, avoiding Python interpreter overhead."
+  },
+  {
+    "type": "mcq",
+    "question": "EPSG:23700 refers to:",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV (Hungary)",
+      "C) UTM Zone 34N",
+      "D) Web Mercator"
+    ],
+    "correct": "B",
+    "explanation": "Hungary's national coordinate system."
+  },
+  {
+    "type": "mcq",
+    "question": "At Budapest's latitude (47.5 degrees), a 1 arc-second cell is approximately:",
+    "options": [
+      "A) 30 m x 30 m",
+      "B) 31 m N-S x 21 m E-W",
+      "C) 21 m x 21 m",
+      "D) 50 m x 50 m"
+    ],
+    "correct": "B",
+    "explanation": "The cosine effect makes E-W distance smaller than N-S at high latitudes."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcPy, projecting a raster uses:",
+    "options": [
+      "A) arcpy.sa.Project()",
+      "B) arcpy.management.ProjectRaster()",
+      "C) arcpy.conversion.ProjectRaster()",
+      "D) arcpy.mp.ProjectRaster()"
+    ],
+    "correct": "B",
+    "explanation": "ProjectRaster is in the management module."
+  },
+  {
+    "type": "mcq",
+    "question": "arcpy.SpatialReference(23700) creates a reference for:",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV",
+      "C) UTM Zone 12N",
+      "D) NAD83"
+    ],
+    "correct": "B",
+    "explanation": "EPSG code 23700 = Hungarian EOV coordinate system."
+  },
+  {
+    "type": "mcq",
+    "question": "The gdalwarp command-line tool performs:",
+    "options": [
+      "A) Raster reprojection",
+      "B) Vector editing",
+      "C) Database queries",
+      "D) Network analysis"
+    ],
+    "correct": "A",
+    "explanation": "GDAL tool for reprojecting and resampling rasters."
+  },
+  {
+    "type": "mcq",
+    "question": "For bilinear resampling during projection, the resampling_type is:",
+    "options": [
+      "A) NEAREST",
+      "B) BILINEAR",
+      "C) CUBIC",
+      "D) MAJORITY"
+    ],
+    "correct": "B",
+    "explanation": "Bilinear interpolation is appropriate for continuous elevation data."
+  },
+  {
+    "type": "mcq",
+    "question": "Web Mercator (EPSG:3857) should NOT be used for:",
+    "options": [
+      "A) Web mapping display",
+      "B) Hydrological analysis (area/distance distorted)",
+      "C) Google Maps",
+      "D) Interactive maps"
+    ],
+    "correct": "B",
+    "explanation": "Web Mercator distorts areas and distances, unsuitable for analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's EOV northing values fall between:",
+    "options": [
+      "A) 0 and 100,000",
+      "B) 0 and 400,000",
+      "C) 400,000 and 1,000,000",
+      "D) 0 and 90"
+    ],
+    "correct": "B",
+    "explanation": "EOV northing: 0-400,000; easting: 400,000-1,000,000."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's EOV easting values fall between:",
+    "options": [
+      "A) 0 and 100,000",
+      "B) 0 and 400,000",
+      "C) 400,000 and 1,000,000",
+      "D) 0 and 360"
+    ],
+    "correct": "C",
+    "explanation": "Identify EOV coordinates by value range, not headers."
+  },
+  {
+    "type": "mcq",
+    "question": "The flow algebra framework in TauDEM processes cells in:",
+    "options": [
+      "A) Random order",
+      "B) Topological order using a queue",
+      "C) Alphabetical order",
+      "D) Reverse elevation order"
+    ],
+    "correct": "B",
+    "explanation": "Queue-based algorithm ensuring upstream cells processed first."
+  },
+  {
+    "type": "mcq",
+    "question": "ModelBuilder can export workflows as:",
+    "options": [
+      "A) PDF documents",
+      "B) Python scripts",
+      "C) C++ source code",
+      "D) SQL queries"
+    ],
+    "correct": "B",
+    "explanation": "Export To Python Script from the Catalog context menu."
+  },
+  {
+    "type": "mcq",
+    "question": "The QGIS equivalent of ModelBuilder is:",
+    "options": [
+      "A) Map Composer",
+      "B) Processing Graphical Modeler",
+      "C) Layer Properties",
+      "D) Plugin Manager"
+    ],
+    "correct": "B",
+    "explanation": "The Processing Graphical Modeler provides visual workflow building."
+  },
+  {
+    "type": "mcq",
+    "question": "QGIS models export to Python using:",
+    "options": [
+      "A) arcpy calls",
+      "B) processing.run() calls",
+      "C) GDAL commands only",
+      "D) R code"
+    ],
+    "correct": "B",
+    "explanation": "Standard QGIS Processing framework syntax."
+  },
+  {
+    "type": "mcq",
+    "question": "For production batch processing, the preferred format is:",
+    "options": [
+      "A) Jupyter notebook",
+      "B) Standard .py file",
+      "C) ModelBuilder model",
+      "D) Word document with screenshots"
+    ],
+    "correct": "B",
+    "explanation": ".py files can run unattended as scheduled batch jobs."
+  },
+  {
+    "type": "mcq",
+    "question": "Python's f-string formatting allows:",
+    "options": [
+      "A) File creation",
+      "B) Inline variable insertion in strings",
+      "C) Function definition",
+      "D) File finding"
+    ],
+    "correct": "B",
+    "explanation": "f'Step complete ({elapsed:.1f}s)' inserts the variable value."
+  },
+  {
+    "type": "mcq",
+    "question": "The ArcGIS Pro Python window is best for:",
+    "options": [
+      "A) Production batch processing",
+      "B) Quick experiments and learning",
+      "C) Version control",
+      "D) Web development"
+    ],
+    "correct": "B",
+    "explanation": "Interactive environment within the ArcGIS session."
+  },
+  {
+    "type": "mcq",
+    "question": "Git is used for:",
+    "options": [
+      "A) GIS analysis",
+      "B) Version control of scripts",
+      "C) Data download",
+      "D) Map printing"
+    ],
+    "correct": "B",
+    "explanation": "Complete history, revert capability, and collaboration."
+  },
+  {
+    "type": "mcq",
+    "question": "The pysheds library provides:",
+    "options": [
+      "A) Shed construction plans",
+      "B) Lightweight watershed delineation in Python",
+      "C) Weather forecasting",
+      "D) Soil analysis"
+    ],
+    "correct": "B",
+    "explanation": "Standalone Python package for watershed delineation without GIS."
+  },
+  {
+    "type": "mcq",
+    "question": "Google Colab provides:",
+    "options": [
+      "A) ArcPy access",
+      "B) Free cloud-based Jupyter notebooks",
+      "C) ESRI licenses",
+      "D) Local Python installation"
+    ],
+    "correct": "B",
+    "explanation": "Free cloud notebooks with pre-installed geospatial libraries (not ArcPy)."
+  },
+  {
+    "type": "mcq",
+    "question": "The HUC system used in the US stands for:",
+    "options": [
+      "A) Hydrologic Unit Code",
+      "B) Hungarian Unified Coordinates",
+      "C) High-resolution Unified Coverage",
+      "D) Hierarchical Utility Classification"
+    ],
+    "correct": "A",
+    "explanation": "US watershed classification system."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary does NOT use the HUC system; instead it uses:",
+    "options": [
+      "A) ZIP codes",
+      "B) WFD River Basin Districts and OVF sub-basins",
+      "C) US county boundaries",
+      "D) Random grid cells"
+    ],
+    "correct": "B",
+    "explanation": "EU Water Framework Directive organization."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza basin covers approximately _____ km2:",
+    "options": [
+      "A) 15,700",
+      "B) 157,000",
+      "C) 1,570",
+      "D) 1,570,000"
+    ],
+    "correct": "B",
+    "explanation": "Across five countries."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus GLO-30 is practical for automated batch processing because:",
+    "options": [
+      "A) It requires a license",
+      "B) It is freely available in GeoTIFF with API access",
+      "C) It covers only Europe",
+      "D) It has 1 m resolution"
+    ],
+    "correct": "B",
+    "explanation": "Free, global, 30 m, GeoTIFF, scriptable download."
+  },
+  {
+    "type": "mcq",
+    "question": "The DDM-5 at 5 m resolution is available from:",
+    "options": [
+      "A) USGS",
+      "B) Lechner Tudaskezpont",
+      "C) NASA",
+      "D) ECMWF"
+    ],
+    "correct": "B",
+    "explanation": "Hungary's national mapping agency."
+  },
+  {
+    "type": "mcq",
+    "question": "The MERIT DEM is:",
+    "options": [
+      "A) A commercial product",
+      "B) A corrected global DEM at 90 m (academic license)",
+      "C) A Hungarian DEM",
+      "D) A weather model"
+    ],
+    "correct": "B",
+    "explanation": "Multi-Error-Removed Improved-Terrain DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "ALOS AW3D30 is from:",
+    "options": [
+      "A) NASA",
+      "B) ESA",
+      "C) JAXA (Japan)",
+      "D) USGS"
+    ],
+    "correct": "C",
+    "explanation": "Japanese Aerospace Exploration Agency, 30 m global DEM."
+  },
+  {
+    "type": "mcq",
+    "question": "The SetNull function in ArcPy is used for:",
+    "options": [
+      "A) Setting null passwords",
+      "B) Conditional reclassification (setting cells to null)",
+      "C) Emptying geodatabases",
+      "D) Resetting environment"
+    ],
+    "correct": "B",
+    "explanation": "SetNull('FAC', 1, 'VALUE < threshold') creates the stream raster."
+  },
+  {
+    "type": "mcq",
+    "question": "SnapPourPoint in ArcPy snaps outlets to cells with:",
+    "options": [
+      "A) Lowest elevation",
+      "B) Highest flow accumulation within search radius",
+      "C) Nearest stream by Euclidean distance",
+      "D) Random selection"
+    ],
+    "correct": "B",
+    "explanation": "Snaps to the cell with highest accumulation within the specified distance."
+  },
+  {
+    "type": "mcq",
+    "question": "StreamLink in ArcPy assigns:",
+    "options": [
+      "A) URLs to streams",
+      "B) Unique IDs to contiguous stream segments",
+      "C) Colors to streams",
+      "D) Attributes from tables"
+    ],
+    "correct": "B",
+    "explanation": "Each contiguous sequence of stream cells between junctions gets a unique ID."
+  },
+  {
+    "type": "mcq",
+    "question": "The StreamToFeature function converts:",
+    "options": [
+      "A) Features to streams",
+      "B) Stream rasters to vector polylines",
+      "C) Text to features",
+      "D) Points to lines"
+    ],
+    "correct": "B",
+    "explanation": "Traces each stream link as a polyline through cell centers."
+  },
+  {
+    "type": "mcq",
+    "question": "RasterToPolygon converts:",
+    "options": [
+      "A) Polygons to rasters",
+      "B) Catchment rasters to vector polygons",
+      "C) Points to rasters",
+      "D) Lines to polygons"
+    ],
+    "correct": "B",
+    "explanation": "Each contiguous group of cells with same ID becomes a polygon."
+  },
+  {
+    "type": "mcq",
+    "question": "The D-infinity flow direction in ArcPy uses which parameter?",
+    "options": [
+      "A) 'D8'",
+      "B) 'DINF'",
+      "C) 'DINFINITY'",
+      "D) 'CONTINUOUS'"
+    ],
+    "correct": "B",
+    "explanation": "FlowDirection('FEL', '', '', 'DINF') selects D-infinity."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity flow direction rasters have a distinctive:",
+    "options": [
+      "A) Blocky appearance",
+      "B) Silvery, hillshade-like appearance",
+      "C) Solid color",
+      "D) Checkerboard pattern"
+    ],
+    "correct": "B",
+    "explanation": "Continuous angles create smooth gradients unlike D8's blocky patterns."
+  },
+  {
+    "type": "mcq",
+    "question": "When running TauDEM from the command line fails, you should:",
+    "options": [
+      "A) Reinstall ArcGIS",
+      "B) Check the stderr output for descriptive error messages",
+      "C) Reboot the computer",
+      "D) Delete the DEM"
+    ],
+    "correct": "B",
+    "explanation": "Command-line executables provide more descriptive errors than the ArcGIS wrapper."
+  },
+  {
+    "type": "mcq",
+    "question": "The time module in Python provides:",
+    "options": [
+      "A) Time travel",
+      "B) Timing functions for measuring script execution",
+      "C) Date formatting only",
+      "D) Calendar display"
+    ],
+    "correct": "B",
+    "explanation": "time.time() returns current time for measuring elapsed seconds."
+  },
+  {
+    "type": "mcq",
+    "question": "The convention for Python variable names is:",
+    "options": [
+      "A) CamelCase",
+      "B) lowercase_with_underscores",
+      "C) ALL_CAPS",
+      "D) Hungarian notation"
+    ],
+    "correct": "B",
+    "explanation": "Python convention: flow_direction, stream_threshold, etc."
+  },
+  {
+    "type": "mcq",
+    "question": "arcpy.Exists() checks:",
+    "options": [
+      "A) If a variable is None",
+      "B) If a dataset exists in the geodatabase",
+      "C) If ArcGIS is installed",
+      "D) If the license is valid"
+    ],
+    "correct": "B",
+    "explanation": "Verify output creation: if arcpy.Exists('FEL'): print('Created')."
+  },
+  {
+    "type": "mcq",
+    "question": "arcpy.GetMessages() returns:",
+    "options": [
+      "A) Email messages",
+      "B) Geoprocessing tool messages including warnings",
+      "C) Chat messages",
+      "D) System errors only"
+    ],
+    "correct": "B",
+    "explanation": "Useful for checking warnings after operations."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'from arcpy.sa import *' statement:",
+    "options": [
+      "A) Imports all Spatial Analyst functions",
+      "B) Imports all ArcPy functions",
+      "C) Installs Spatial Analyst",
+      "D) Creates a backup"
+    ],
+    "correct": "A",
+    "explanation": "Allows writing Fill('DEM') instead of arcpy.sa.Fill('DEM')."
+  },
+  {
+    "type": "mcq",
+    "question": "In the batch processing pattern, the 'continue' statement:",
+    "options": [
+      "A) Continues to the next iteration after an error",
+      "B) Pauses execution",
+      "C) Continues the current operation",
+      "D) Exits the script"
+    ],
+    "correct": "A",
+    "explanation": "Skips the failed watershed and moves to the next one."
+  },
+  {
+    "type": "mcq",
+    "question": "The Conda package manager is used by ArcGIS Pro to:",
+    "options": [
+      "A) Manage Python environments and packages",
+      "B) Manage map layers",
+      "C) Compress data",
+      "D) Configure networks"
+    ],
+    "correct": "A",
+    "explanation": "ArcGIS Pro's Python distribution is managed through Conda."
+  },
+  {
+    "type": "mcq",
+    "question": "For very large raster operations, a pure Python loop is:",
+    "options": [
+      "A) The fastest approach",
+      "B) Orders of magnitude slower than NumPy",
+      "C) The only option",
+      "D) Identical in speed to C++"
+    ],
+    "correct": "B",
+    "explanation": "Python loops are 100-1000x slower than NumPy vectorized operations."
+  },
+  {
+    "type": "mcq",
+    "question": "dem[dem < 0] = 0 in NumPy is an example of:",
+    "options": [
+      "A) A Python for loop",
+      "B) Boolean indexing / vectorized operation",
+      "C) A SQL query",
+      "D) A regular expression"
+    ],
+    "correct": "B",
+    "explanation": "NumPy boolean indexing performs the operation on all matching cells simultaneously."
+  },
+  {
+    "type": "mcq",
+    "question": "Julia is described in the chapter as:",
+    "options": [
+      "A) The recommended GIS language",
+      "B) A newer language gaining traction but with limited GIS ecosystem",
+      "C) The official language of QGIS",
+      "D) A retired language"
+    ],
+    "correct": "B",
+    "explanation": "Worth watching but not yet practical for routine GIS automation."
+  },
+  {
+    "type": "mcq",
+    "question": "R is particularly strong for:",
+    "options": [
+      "A) GIS automation",
+      "B) Statistical hydrological analysis",
+      "C) Web development",
+      "D) Game programming"
+    ],
+    "correct": "B",
+    "explanation": "Frequency analysis, trend detection, regionalization."
+  },
+  {
+    "type": "mcq",
+    "question": "The primary purpose of print statements in GIS scripts is:",
+    "options": [
+      "A) Creating maps",
+      "B) Progress tracking and debugging",
+      "C) Printing paper copies",
+      "D) Formatting output data"
+    ],
+    "correct": "B",
+    "explanation": "Shows which step completed and where failures occur."
+  },
+  {
+    "type": "mcq",
+    "question": "Comments in Python start with:",
+    "options": [
+      "A) //",
+      "B) #",
+      "C) /*",
+      "D) --"
+    ],
+    "correct": "B",
+    "explanation": "Lines beginning with # are ignored by Python."
+  },
+  {
+    "type": "mcq",
+    "question": "Header comments in a script should include:",
+    "options": [
+      "A) Just the filename",
+      "B) Author, date, purpose, inputs, outputs",
+      "C) Only the import statements",
+      "D) Nothing (comments are optional)"
+    ],
+    "correct": "B",
+    "explanation": "Essential metadata for future reference and collaboration."
+  },
+  {
+    "type": "mcq",
+    "question": "The parameterization step involves:",
+    "options": [
+      "A) Deleting variables",
+      "B) Replacing hard-coded values with variables at the top",
+      "C) Adding more print statements",
+      "D) Removing comments"
+    ],
+    "correct": "B",
+    "explanation": "Switch datasets by changing a few lines instead of hunting through the code."
+  },
+  {
+    "type": "mcq",
+    "question": "The practical architecture for high-performance GIS tools is:",
+    "options": [
+      "A) Everything in Python",
+      "B) C++/Rust core with Python wrapper",
+      "C) Everything in JavaScript",
+      "D) Manual calculations"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM, WhiteboxTools, ArcGIS all use compiled cores with Python interfaces."
+  },
+  {
+    "type": "mcq",
+    "question": "For scientific reproducibility, which approach is preferred?",
+    "options": [
+      "A) Menu clicks documented in text",
+      "B) Python scripts shared alongside published data",
+      "C) Verbal descriptions",
+      "D) Screenshots of dialog boxes"
+    ],
+    "correct": "B",
+    "explanation": "Scripts provide complete, executable records of analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "Open-source tools avoid the need for:",
+    "options": [
+      "A) Computers",
+      "B) Managing dozens of concurrent licenses",
+      "C) Data",
+      "D) Training"
+    ],
+    "correct": "B",
+    "explanation": "No license management needed for GDAL, TauDEM, WhiteboxTools."
+  },
+  {
+    "type": "mcq",
+    "question": "The env.extent setting:",
+    "options": [
+      "A) Sets the map scale",
+      "B) Restricts processing to a specified geographic area",
+      "C) Extends the license period",
+      "D) Increases file size"
+    ],
+    "correct": "B",
+    "explanation": "Useful for clipping continental datasets to a study area."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus Data Space provides access to:",
+    "options": [
+      "A) US DEMs only",
+      "B) Copernicus GLO-30 and other European/global datasets",
+      "C) ArcGIS licenses",
+      "D) Weather radar data only"
+    ],
+    "correct": "B",
+    "explanation": "Free access to Copernicus satellite and DEM products."
+  },
+  {
+    "type": "mcq",
+    "question": "In 2026, major hydrology journals increasingly require:",
+    "options": [
+      "A) Only text descriptions of methods",
+      "B) Depositing analysis code alongside published datasets",
+      "C) Using only ArcGIS",
+      "D) Hand-drawn maps"
+    ],
+    "correct": "B",
+    "explanation": "Open-science mandates from journals and funding agencies."
+  },
+  {
+    "type": "mcq",
+    "question": "For Hungarian batch processing, a practical DEM choice is:",
+    "options": [
+      "A) SRTM at 90 m",
+      "B) Copernicus GLO-30 at 30 m (free, API-accessible)",
+      "C) Paper topographic maps",
+      "D) Google Street View"
+    ],
+    "correct": "B",
+    "explanation": "Free, GeoTIFF, 30 m resolution, scriptable download via API."
+  },
+  {
+    "type": "true_false",
+    "question": "Python is the official scripting language for both ArcGIS and QGIS.",
+    "correct": true,
+    "explanation": "Both platforms adopted Python as their primary scripting language."
+  },
+  {
+    "type": "true_false",
+    "question": "ModelBuilder can export workflows as Python scripts.",
+    "correct": true,
+    "explanation": "Right-click the model and select Export To Python Script."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcPy requires no license to run Spatial Analyst functions.",
+    "correct": false,
+    "explanation": "Spatial Analyst extension license must be checked out first."
+  },
+  {
+    "type": "true_false",
+    "question": "The r prefix in Python makes backslashes literal in strings.",
+    "correct": true,
+    "explanation": "Raw strings prevent backslash interpretation as escape characters."
+  },
+  {
+    "type": "true_false",
+    "question": "env.overwriteOutput should be False during iterative development.",
+    "correct": false,
+    "explanation": "Set to True to allow re-running scripts without error on existing outputs."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM's C++ core is wrapped in a Python interface.",
+    "correct": true,
+    "explanation": "Three-layer architecture: user interface, Python wrapper, C++ core."
+  },
+  {
+    "type": "true_false",
+    "question": "WhiteboxTools requires ArcGIS to function.",
+    "correct": false,
+    "explanation": "WhiteboxTools is standalone, installable via pip, no GIS platform needed."
+  },
+  {
+    "type": "true_false",
+    "question": "Jupyter notebooks are ideal for production batch processing.",
+    "correct": false,
+    "explanation": "Standard .py files are better for unattended overnight processing."
+  },
+  {
+    "type": "true_false",
+    "question": "The Geoprocessing History preserves exact Python commands for all operations.",
+    "correct": true,
+    "explanation": "Copy Python Command provides the specific syntax used."
+  },
+  {
+    "type": "true_false",
+    "question": "IDLE provides step-by-step debugging with breakpoints.",
+    "correct": false,
+    "explanation": "IDLE has only basic debugging; professional IDEs like VS Code offer full debugging."
+  },
+  {
+    "type": "true_false",
+    "question": "Python's readability is one reason it became dominant for GIS scripting.",
+    "correct": true,
+    "explanation": "Clean syntax like outFill = Fill('DEM') is readable by non-programmers."
+  },
+  {
+    "type": "true_false",
+    "question": "R has a stronger GIS ecosystem than Python.",
+    "correct": false,
+    "explanation": "Python has a larger GIS ecosystem; R is stronger for statistical analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM uses MPI for parallel processing.",
+    "correct": true,
+    "explanation": "Message Passing Interface for domain decomposition across CPU cores."
+  },
+  {
+    "type": "true_false",
+    "question": "The subprocess module executes TauDEM command-line tools from Python.",
+    "correct": true,
+    "explanation": "subprocess.run() constructs and executes command strings."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Colab provides access to ArcPy.",
+    "correct": false,
+    "explanation": "Colab has open-source geospatial libraries but not ArcPy."
+  },
+  {
+    "type": "true_false",
+    "question": "NumPy vectorized operations are faster than Python loops for raster processing.",
+    "correct": true,
+    "explanation": "100-1000x faster because NumPy operates in compiled C."
+  },
+  {
+    "type": "true_false",
+    "question": "The backslash problem only affects macOS.",
+    "correct": false,
+    "explanation": "It affects Windows, where file paths use backslashes that Python interprets as escape characters."
+  },
+  {
+    "type": "true_false",
+    "question": "Git provides version control for scripts.",
+    "correct": true,
+    "explanation": "History of changes, revert capability, and collaboration."
+  },
+  {
+    "type": "true_false",
+    "question": "For GIS scripting, memorizing all function syntax is essential.",
+    "correct": false,
+    "explanation": "Understanding structure is key; syntax can be looked up in documentation or history."
+  },
+  {
+    "type": "true_false",
+    "question": "The recommended development approach is to write the entire script before testing.",
+    "correct": false,
+    "explanation": "Build incrementally: write 2-3 lines, test, add more."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro's Python distribution is managed through Conda.",
+    "correct": true,
+    "explanation": "Conda package manager handles the Python environment."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity flow direction in ArcPy uses the parameter 'DINF'.",
+    "correct": true,
+    "explanation": "FlowDirection('FEL', '', '', 'DINF') selects D-infinity."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity rasters contain integer values.",
+    "correct": false,
+    "explanation": "They contain continuous floating-point angles in radians."
+  },
+  {
+    "type": "true_false",
+    "question": "The SetNull function creates the stream raster from flow accumulation.",
+    "correct": true,
+    "explanation": "SetNull('FAC', 1, 'VALUE < threshold') classifies stream cells."
+  },
+  {
+    "type": "true_false",
+    "question": "SnapPourPoint moves the outlet to the nearest stream by Euclidean distance.",
+    "correct": false,
+    "explanation": "It moves to the cell with highest flow accumulation within a search radius."
+  },
+  {
+    "type": "true_false",
+    "question": "The StreamToFeature simplification option should be disabled for hydrologic analysis.",
+    "correct": true,
+    "explanation": "Simplification disconnects vector streams from the underlying raster."
+  },
+  {
+    "type": "true_false",
+    "question": "The flow algebra in TauDEM can compute contributing area, TWI, and sediment accumulation.",
+    "correct": true,
+    "explanation": "A single framework supports many different hydrological computations."
+  },
+  {
+    "type": "true_false",
+    "question": "ModelBuilder is sufficient for all GIS automation needs.",
+    "correct": false,
+    "explanation": "It struggles with loops, conditional logic, error handling, and external tools."
+  },
+  {
+    "type": "true_false",
+    "question": "Python comments begin with //.",
+    "correct": false,
+    "explanation": "Python uses #; // is used in C++ and JavaScript."
+  },
+  {
+    "type": "true_false",
+    "question": "The header comment block in a script is optional decoration.",
+    "correct": false,
+    "explanation": "It is essential metadata: author, date, purpose, inputs, outputs."
+  },
+  {
+    "type": "true_false",
+    "question": "EPSG:23700 is the code for HD72/EOV.",
+    "correct": true,
+    "explanation": "Hungary's national coordinate system."
+  },
+  {
+    "type": "true_false",
+    "question": "At Budapest's latitude, 1 arc-second cells are square.",
+    "correct": false,
+    "explanation": "They are rectangular: ~31 m N-S but ~21 m E-W due to latitude cosine effect."
+  },
+  {
+    "type": "true_false",
+    "question": "Web Mercator (EPSG:3857) is suitable for hydrological analysis.",
+    "correct": false,
+    "explanation": "Web Mercator distorts areas and distances; use metric coordinate systems for analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "EOV coordinates should be identified by value range, not header labels.",
+    "correct": true,
+    "explanation": "Northing: 0-400,000; Easting: 400,000-1,000,000. Headers are often wrong."
+  },
+  {
+    "type": "true_false",
+    "question": "The transformation from HD72 to ETRS89 uses 7 parameters.",
+    "correct": true,
+    "explanation": "EPSG:1449; the Lechner grid shift file provides sub-meter accuracy."
+  },
+  {
+    "type": "true_false",
+    "question": "gdalwarp is an open-source raster reprojection tool.",
+    "correct": true,
+    "explanation": "Part of the GDAL/OGR geospatial library."
+  },
+  {
+    "type": "true_false",
+    "question": "Forward slashes work in Python paths on Windows.",
+    "correct": true,
+    "explanation": "Python accepts both forward slashes and raw-string backslashes on Windows."
+  },
+  {
+    "type": "true_false",
+    "question": "The complete watershed delineation script has 10 steps.",
+    "correct": true,
+    "explanation": "Fill, flow direction, accumulation, stream definition, snap, watershed, links, catchments, stream vector, catchment vector."
+  },
+  {
+    "type": "true_false",
+    "question": "arcpy.CheckInExtension('Spatial') releases the license.",
+    "correct": true,
+    "explanation": "Good practice at the end of a script to free the license for others."
+  },
+  {
+    "type": "true_false",
+    "question": "The logging module creates persistent log files.",
+    "correct": true,
+    "explanation": "With timestamps, essential for reviewing overnight batch runs."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS Processing framework provides access to GRASS, SAGA, and WhiteboxTools.",
+    "correct": true,
+    "explanation": "Unified Python interface to multiple algorithm providers."
+  },
+  {
+    "type": "true_false",
+    "question": "PyQGIS can run in standalone mode without the QGIS application.",
+    "correct": true,
+    "explanation": "By initializing QGIS libraries at the start of the script."
+  },
+  {
+    "type": "true_false",
+    "question": "GRASS r.watershed requires separate calls for flow accumulation and drainage.",
+    "correct": false,
+    "explanation": "It performs multiple steps in one integrated call."
+  },
+  {
+    "type": "true_false",
+    "question": "The WhiteboxTools API is described as clean and Pythonic.",
+    "correct": true,
+    "explanation": "Function names describe actions, parameters are intuitive."
+  },
+  {
+    "type": "true_false",
+    "question": "Python's glob module finds files matching patterns like *.tif.",
+    "correct": true,
+    "explanation": "glob.glob(r'C:\\DEMs\\*.tif') returns matching file paths."
+  },
+  {
+    "type": "true_false",
+    "question": "The 'continue' keyword exits a Python loop entirely.",
+    "correct": false,
+    "explanation": "'continue' skips to the next iteration; 'break' exits the loop."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus and HydroSHEDS were created through automated geoprocessing.",
+    "correct": true,
+    "explanation": "Continental/global scale datasets impossible to create manually."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter states that 2026 standards for computational reproducibility have risen sharply.",
+    "correct": true,
+    "explanation": "Journals and funding agencies increasingly require code deposition."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcPy scripts are platform-independent.",
+    "correct": false,
+    "explanation": "ArcPy requires Windows; open-source scripts with GDAL/TauDEM can run cross-platform."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM can be run without any GIS software installed.",
+    "correct": true,
+    "explanation": "Command-line executables read/write GeoTIFF independently of GIS platforms."
+  },
+  {
+    "type": "true_false",
+    "question": "Microsoft Planetary Computer offers Jupyter notebooks for geospatial analysis.",
+    "correct": true,
+    "explanation": "With access to Copernicus DEM and other global datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "Python f-strings were introduced in Python 3.6.",
+    "correct": true,
+    "explanation": "f'text {variable}' syntax for inline variable formatting."
+  },
+  {
+    "type": "true_false",
+    "question": "The os.makedirs function creates directories recursively.",
+    "correct": true,
+    "explanation": "With exist_ok=True, it doesn't error if the directory already exists."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter recommends starting scripts from scratch rather than modifying existing ones.",
+    "correct": false,
+    "explanation": "Start from working code and modify incrementally."
+  },
+  {
+    "type": "true_false",
+    "question": "A well-written Python script can delineate a thousand watersheds overnight.",
+    "correct": true,
+    "explanation": "Batch processing with error handling and logging."
+  },
+  {
+    "type": "true_false",
+    "question": "The env.workspace setting is equivalent to setting a working directory.",
+    "correct": true,
+    "explanation": "All subsequent tool calls look for inputs there."
+  },
+  {
+    "type": "true_false",
+    "question": "FlowDirection('FEL', 'NORMAL') computes D8 flow directions.",
+    "correct": true,
+    "explanation": "'NORMAL' forces edge cells to flow outward."
+  },
+  {
+    "type": "true_false",
+    "question": "FlowAccumulation('FDR') computes flow accumulation from the flow direction raster.",
+    "correct": true,
+    "explanation": "Standard D8 accumulation with no weight raster."
+  },
+  {
+    "type": "true_false",
+    "question": "The Watershed tool accepts both the flow direction and pour point rasters.",
+    "correct": true,
+    "explanation": "Watershed('FDR', 'SnapOutlet') delineates the watershed."
+  },
+  {
+    "type": "true_false",
+    "question": "The Processing log in QGIS shows the Python command for every algorithm run.",
+    "correct": true,
+    "explanation": "Equivalent to ArcGIS Pro's Geoprocessing History."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Earth Engine uses a Python API for DEM processing.",
+    "correct": true,
+    "explanation": "GEE provides Python access to planetary-scale raster operations."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter recommends using both ArcGIS and open-source tools in practice.",
+    "correct": true,
+    "explanation": "ArcGIS on desktop for visualization, open-source on servers for batch processing."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary does not use the HUC (Hydrologic Unit Code) system.",
+    "correct": true,
+    "explanation": "Hungary uses WFD River Basin Districts and OVF sub-basins instead."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza basin spans five countries.",
+    "correct": true,
+    "explanation": "Ukraine, Romania, Slovakia, Hungary, Serbia."
+  },
+  {
+    "type": "true_false",
+    "question": "For automated processing, the DDM-5 requires licensing from Lechner.",
+    "correct": true,
+    "explanation": "Must be ordered through Lechner data services or geoshop.hu."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus GLO-30 is downloadable through APIs that can be scripted.",
+    "correct": true,
+    "explanation": "Enabling automated multi-tile download for batch processing."
+  },
+  {
+    "type": "true_false",
+    "question": "Pure Python implementations of flow accumulation are as fast as C++ implementations.",
+    "correct": false,
+    "explanation": "Orders of magnitude slower; Python is glue code calling compiled tools."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter describes six common Python GIS scripting errors.",
+    "correct": true,
+    "explanation": "Import, file lock, backslash, license, no overwrite, silent failure."
+  },
+  {
+    "type": "true_false",
+    "question": "The 'silent failure' error produces an error message.",
+    "correct": false,
+    "explanation": "It runs without errors but produces no visible or correct output."
+  },
+  {
+    "type": "true_false",
+    "question": "arcpy.Exists() can verify that an output was created.",
+    "correct": true,
+    "explanation": "Returns True/False for checking output existence."
+  },
+  {
+    "type": "true_false",
+    "question": "pysheds is a heavyweight GIS platform for enterprise use.",
+    "correct": false,
+    "explanation": "pysheds is a lightweight standalone Python package for watershed delineation."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter states Python has the largest user community of any programming language.",
+    "correct": true,
+    "explanation": "Meaning virtually any problem has been solved and documented online."
+  },
+  {
+    "type": "true_false",
+    "question": "For scientific publications, open-source tools remove commercial barriers to reproducibility.",
+    "correct": true,
+    "explanation": "No license needed for reviewers to verify results."
+  },
+  {
+    "type": "true_false",
+    "question": "Version control with Git is described as a separate skill from Python.",
+    "correct": true,
+    "explanation": "But even basic git init/add/commit provides enormous protection."
+  },
+  {
+    "type": "true_false",
+    "question": "The flow algebra framework makes TauDEM extensible to new research applications.",
+    "correct": true,
+    "explanation": "New applications define a new FA function without modifying core routing code."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroBASINS provides pre-delineated sub-basins at 12 levels globally.",
+    "correct": true,
+    "explanation": "From continental basins to small headwater catchments."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus EEA-10 has restricted access.",
+    "correct": true,
+    "explanation": "Available for EU/EEA countries but with access restrictions."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud-based processing eliminates the need for understanding methods.",
+    "correct": false,
+    "explanation": "Understanding is needed to evaluate whether pre-computed results are appropriate."
+  },
+  {
+    "type": "true_false",
+    "question": "The D-infinity angle output has values from 0 to 2*pi.",
+    "correct": true,
+    "explanation": "Continuous floating-point radians, counterclockwise from east."
+  },
+  {
+    "type": "true_false",
+    "question": "Python's time.time() returns the current time in seconds since epoch.",
+    "correct": true,
+    "explanation": "Used for measuring elapsed computation time."
+  },
+  {
+    "type": "true_false",
+    "question": "The recommended progression has 6 steps from manual to automated.",
+    "correct": true,
+    "explanation": "Do manually, copy history, add scaffolding, test, parameterize, extend."
+  },
+  {
+    "type": "true_false",
+    "question": "The CCM dataset provides European catchment characterization.",
+    "correct": true,
+    "explanation": "From the Joint Research Centre."
+  },
+  {
+    "type": "true_false",
+    "question": "The env.cellSize setting affects raster output resolution.",
+    "correct": true,
+    "explanation": "Controls output when combining rasters of different resolutions."
+  },
+  {
+    "type": "true_false",
+    "question": "SAGA GIS algorithms are accessible through QGIS Processing.",
+    "correct": true,
+    "explanation": "Part of the QGIS Processing framework."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter advises against using nested loops over raster cells in Python.",
+    "correct": true,
+    "explanation": "Use NumPy vectorized operations instead for 100-1000x speedup."
+  },
+  {
+    "type": "true_false",
+    "question": "The ArcGIS Pro Python Window can save scripts directly as .py files.",
+    "correct": false,
+    "explanation": "You can save the transcript but the window itself doesn't function as a file editor."
+  },
+  {
+    "type": "true_false",
+    "question": "The f-string f'{elapsed:.1f}s' formats a number to one decimal place.",
+    "correct": true,
+    "explanation": ":.1f means one digit after the decimal point."
+  },
+  {
+    "type": "true_false",
+    "question": "Running the wrong IDLE instance produces 'No module named arcpy'.",
+    "correct": true,
+    "explanation": "Must launch the IDLE associated with ArcGIS Pro's Python environment."
+  },
+  {
+    "type": "true_false",
+    "question": "The QGIS fill sinks algorithm name saga:fillsinksxxlwangliu is self-documenting.",
+    "correct": false,
+    "explanation": "QGIS Processing algorithm names are often not self-documenting."
+  },
+  {
+    "type": "true_false",
+    "question": "GRASS GIS uses -s flag to select SFD (D8) algorithm in r.watershed.",
+    "correct": true,
+    "explanation": "The -s flag selects single-flow-direction (D8) algorithm."
+  },
+  {
+    "type": "true_false",
+    "question": "The wbt.set_working_dir() function sets WhiteboxTools' working directory.",
+    "correct": true,
+    "explanation": "All subsequent operations use this directory for input/output."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The official scripting language for ArcGIS and QGIS is _____.",
+    "correct": "Python",
+    "explanation": "Both platforms adopted Python."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro's visual programming tool is called _____.",
+    "correct": "ModelBuilder",
+    "explanation": "Chains tools without writing code."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcPy Spatial Analyst module is imported as arcpy._____.",
+    "correct": "sa",
+    "explanation": "Contains hydrological tools."
+  },
+  {
+    "type": "fill_blank",
+    "question": "env._____ = True allows overwriting existing outputs.",
+    "correct": "overwriteOutput",
+    "explanation": "Essential for iterative development."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The r prefix before a Python string creates a _____ string.",
+    "correct": "raw",
+    "explanation": "Backslashes treated as literal characters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's computational core is written in _____ with MPI.",
+    "correct": "C++",
+    "explanation": "High-performance compiled language."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WhiteboxTools is written in _____.",
+    "correct": "Rust",
+    "explanation": "High-performance systems language."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ module in Python executes command-line programs.",
+    "correct": "subprocess",
+    "explanation": "subprocess.run() invokes external tools."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRASS GIS's _____ performs multiple hydrological steps in one call.",
+    "correct": "r.watershed",
+    "explanation": "Flow accumulation, drainage, basins, streams together."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Python's glob module finds files matching _____ patterns.",
+    "correct": "glob (wildcard)",
+    "explanation": "Like *.tif for all GeoTIFF files."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcGIS _____ History stores Python commands for all operations.",
+    "correct": "Geoprocessing",
+    "explanation": "Right-click to Copy Python Command."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Python IDE from Microsoft is called _____.",
+    "correct": "VS Code (Visual Studio Code)",
+    "explanation": "Free, open-source, most popular editor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PyCharm is a Python IDE from _____.",
+    "correct": "JetBrains",
+    "explanation": "Community Edition is free."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The IDLE editor stands for Integrated Development and _____ Environment.",
+    "correct": "Learning",
+    "explanation": "Python's built-in basic editor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Notebooks are based on _____ notebooks.",
+    "correct": "Jupyter",
+    "explanation": "Interactive code + output + narrative text."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended learning approach has _____ steps.",
+    "correct": "six (6)",
+    "explanation": "Manual, copy, scaffold, test, parameterize, extend."
+  },
+  {
+    "type": "fill_blank",
+    "question": "After a raster operation in ArcPy, you must call ._____() to write output.",
+    "correct": "save",
+    "explanation": "Without .save(), the result is temporary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ statement loads the ArcPy library.",
+    "correct": "import arcpy",
+    "explanation": "First line of every ArcGIS Python script."
+  },
+  {
+    "type": "fill_blank",
+    "question": "from arcpy.sa import * imports all _____ Analyst functions.",
+    "correct": "Spatial",
+    "explanation": "Enables writing Fill() instead of arcpy.sa.Fill()."
+  },
+  {
+    "type": "fill_blank",
+    "question": "env.workspace sets the default _____ location.",
+    "correct": "data (input/output)",
+    "explanation": "Like a working directory for GIS data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The env._____ setting ensures raster grid alignment.",
+    "correct": "snapRaster",
+    "explanation": "Critical for combining multiple derived rasters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Python comments begin with the _____ character.",
+    "correct": "# (hash)",
+    "explanation": "Lines starting with # are ignored."
+  },
+  {
+    "type": "fill_blank",
+    "question": "To check Spatial Analyst availability: arcpy.CheckExtension('_____').",
+    "correct": "Spatial",
+    "explanation": "Returns 'Available' if license exists."
+  },
+  {
+    "type": "fill_blank",
+    "question": "arcpy.CheckOutExtension('Spatial') checks out the _____ license.",
+    "correct": "Spatial Analyst",
+    "explanation": "Required before using SA functions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Python variable naming convention is lowercase_with_____.",
+    "correct": "underscores",
+    "explanation": "e.g., flow_direction, stream_threshold."
+  },
+  {
+    "type": "fill_blank",
+    "question": "time.time() returns the current time in _____ since epoch.",
+    "correct": "seconds",
+    "explanation": "Used for measuring elapsed computation time."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ block in Python handles errors without stopping.",
+    "correct": "try/except",
+    "explanation": "Catches exceptions for graceful failure handling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Python's logging module writes to persistent _____ files.",
+    "correct": "log",
+    "explanation": "With timestamps for reviewing overnight runs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NumPy _____ operations are 100-1000x faster than Python loops.",
+    "correct": "vectorized",
+    "explanation": "Computation happens in compiled C."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EPSG:23700 is the code for Hungary's _____ coordinate system.",
+    "correct": "HD72/EOV",
+    "explanation": "National topographic mapping system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At Budapest (47.5 degrees latitude), 1 arc-second N-S = approximately _____ m.",
+    "correct": "31 (30.9)",
+    "explanation": "d_NS = 0.000278 * 111195 = 30.9 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At Budapest, 1 arc-second E-W = approximately _____ m.",
+    "correct": "21 (20.9)",
+    "explanation": "d_EW = 30.9 * cos(47.5) = 20.9 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Web Mercator has EPSG code _____.",
+    "correct": "3857",
+    "explanation": "For web mapping only, not analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ETRS89/LAEA for Europe has EPSG code _____.",
+    "correct": "3035",
+    "explanation": "Pan-European analysis coordinate system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The gdalwarp flag -t_srs specifies the _____ coordinate system.",
+    "correct": "target",
+    "explanation": "-t_srs EPSG:23700 sets output to EOV."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's pit removal tool is called _____.",
+    "correct": "pitremove",
+    "explanation": "Command-line executable for filling sinks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's D8 flow direction tool is called _____.",
+    "correct": "d8flowdir",
+    "explanation": "Produces flow direction (p) and slope (sd8)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's D-infinity flow direction tool is called _____.",
+    "correct": "dinfflowdir",
+    "explanation": "Produces angle (ang) and slope (slp)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's D8 contributing area tool is called _____.",
+    "correct": "aread8",
+    "explanation": "Standard flow accumulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM's stream threshold tool is called _____.",
+    "correct": "threshold",
+    "explanation": "Defines streams from accumulation grid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In TauDEM, the -n flag specifies the number of _____ processes.",
+    "correct": "parallel (MPI)",
+    "explanation": "e.g., -n 8 for 8 cores."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Python function os.path._____ constructs file paths.",
+    "correct": "join",
+    "explanation": "Platform-independent path construction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Python, f'Step {n} done' is an _____-string.",
+    "correct": "f (formatted)",
+    "explanation": "Inline variable insertion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ModelBuilder export option is 'Export To _____ Script'.",
+    "correct": "Python",
+    "explanation": "Produces a .py file from the visual model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QGIS's equivalent of ModelBuilder is the Processing Graphical _____.",
+    "correct": "Modeler",
+    "explanation": "Visual workflow building tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WhiteboxTools is installed with pip install _____.",
+    "correct": "whitebox",
+    "explanation": "Simple pip installation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WhiteboxTools fill function is wbt.fill_____('dem.tif', 'filled.tif').",
+    "correct": "depressions",
+    "explanation": "Pit filling command."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The pysheds library provides lightweight _____ delineation.",
+    "correct": "watershed",
+    "explanation": "Standalone Python package."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For batch processing, the _____ keyword skips to the next iteration after error.",
+    "correct": "continue",
+    "explanation": "Keeps the loop running after a failure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Git's basic workflow: git init, git _____, git commit.",
+    "correct": "add",
+    "explanation": "Stage files before committing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DDM-5 DEM is available through _____ Tudaskezpont.",
+    "correct": "Lechner",
+    "explanation": "Hungary's national mapping agency."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus _____ provides free global DEM at 30 m.",
+    "correct": "GLO-30",
+    "explanation": "Copernicus Global DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The MERIT DEM stands for Multi-Error-_____-Improved-Terrain.",
+    "correct": "Removed",
+    "explanation": "Error-corrected global DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ALOS AW3D30 is from Japan's _____ agency.",
+    "correct": "JAXA (aerospace)",
+    "explanation": "Japanese Aerospace Exploration Agency."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 'silent failure' error produces no _____ message.",
+    "correct": "error",
+    "explanation": "The script runs but output is wrong or missing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "arcpy._____() checks if a dataset exists.",
+    "correct": "Exists",
+    "explanation": "Returns True or False."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The SetNull function creates a _____ raster from flow accumulation.",
+    "correct": "stream",
+    "explanation": "Cells below threshold become null."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SnapPourPoint searches within a specified _____ distance.",
+    "correct": "snap (search)",
+    "explanation": "Maximum distance to find the stream cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function converts stream rasters to polylines.",
+    "correct": "StreamToFeature",
+    "explanation": "Traces each link through cell centers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function converts catchment rasters to polygons.",
+    "correct": "RasterToPolygon",
+    "explanation": "Each group of cells becomes a polygon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The flow algebra processes cells using a _____-based algorithm.",
+    "correct": "queue",
+    "explanation": "Topological order from ridges to outlets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MPI stands for _____ Passing Interface.",
+    "correct": "Message",
+    "explanation": "TauDEM's parallelization technology."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HUC system stands for Hydrologic _____ Code.",
+    "correct": "Unit",
+    "explanation": "US watershed classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza basin spans _____ countries.",
+    "correct": "five (5)",
+    "explanation": "Ukraine, Romania, Slovakia, Hungary, Serbia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For production scripts, use standard _____ files rather than notebooks.",
+    "correct": ".py",
+    "explanation": "Can run unattended as batch jobs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcGIS Pro Python environment uses the _____ package manager.",
+    "correct": "Conda",
+    "explanation": "Manages Python packages and environments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter's complete watershed script has _____ processing steps.",
+    "correct": "10",
+    "explanation": "Fill through catchment polygon conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Python's _____ module provides basic file path manipulation.",
+    "correct": "os (os.path)",
+    "explanation": "join, basename, splitext, etc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ QGIS provider gives access to WhiteboxTools algorithms.",
+    "correct": "WhiteboxTools (plugin)",
+    "explanation": "Via QGIS Processing framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Open-source tools benefit from _____ (you can inspect source code).",
+    "correct": "transparency",
+    "explanation": "Algorithms are fully inspectable."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter recommends processing _____ at a time during development.",
+    "correct": "two lines (2-3 lines)",
+    "explanation": "Incremental testing catches errors immediately."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Google Earth Engine abbreviation: _____.",
+    "correct": "GEE",
+    "explanation": "Cloud-based planetary-scale geospatial analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Microsoft's cloud platform for geospatial analysis is _____ Computer.",
+    "correct": "Planetary",
+    "explanation": "Jupyter notebooks with global datasets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tool in ArcPy creates stream link segments.",
+    "correct": "StreamLink",
+    "explanation": "Assigns unique IDs between junctions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Watershed tool uses _____ and pour point rasters as input.",
+    "correct": "flow direction (FDR)",
+    "explanation": "Watershed('FDR', 'SnapOutlet')."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity flow direction output appears _____ like a hillshade.",
+    "correct": "silvery (smooth)",
+    "explanation": "Continuous angles create smooth gradients."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter states Python has the _____ user community of any language.",
+    "correct": "largest",
+    "explanation": "Virtually any problem has been solved online."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Major hydrology journals in 2026 require depositing analysis _____.",
+    "correct": "code",
+    "explanation": "Alongside published datasets for reproducibility."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The practical architecture: computational core in _____, interface in Python.",
+    "correct": "C++ or Rust",
+    "explanation": "Performance where needed, usability everywhere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For Hungarian data, identify EOV by _____ range, not header labels.",
+    "correct": "value",
+    "explanation": "Northing 0-400k, easting 400k-1M."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The env._____ setting restricts processing to a geographic area.",
+    "correct": "extent",
+    "explanation": "Clips continental datasets to study area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter describes _____ common scripting pitfalls.",
+    "correct": "six (6)",
+    "explanation": "Import, lock, backslash, license, overwrite, silent failure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For overnight runs, add _____ statements after each major operation.",
+    "correct": "print",
+    "explanation": "Progress tracking and failure diagnosis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OVF open data portal is at data._____.",
+    "correct": "vizugy.hu",
+    "explanation": "Hungarian water management open data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRASS GIS r.watershed -s flag selects the _____ algorithm.",
+    "correct": "SFD (D8, single-flow-direction)",
+    "explanation": "Rather than the default MFD."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In TauDEM scripts, os.path.join constructs _____ paths.",
+    "correct": "file",
+    "explanation": "Platform-independent path construction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The wbt.set_verbose_mode(True) enables detailed _____ output.",
+    "correct": "progress (status)",
+    "explanation": "Shows what WhiteboxTools is doing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "dem[dem < 0] = 0 is a NumPy _____ indexing operation.",
+    "correct": "boolean",
+    "explanation": "All negative cells set to 0 simultaneously."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three conditions that make manual GIS workflows inadequate.",
+    "correct": "Manual workflows fail when: (1) work must be repeated (parameter changes require redoing all steps), (2) work must scale (thousands of watersheds impossible by clicking), (3) work must be reproduced by others (mouse clicks are undocumented). Scripts solve all three: recorded parameters, loops for scale, executable documentation for reproducibility.",
+    "explanation": "The fundamental motivation for automation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the recommended 6-step progression from manual GIS to scripting.",
+    "correct": "Step 1: Do it manually. Step 2: Copy Python commands from Geoprocessing History. Step 3: Add imports and environment settings. Step 4: Test the script. Step 5: Parameterize (variables at top). Step 6: Add loops and error handling. Each step builds on the previous, always maintaining a working workflow.",
+    "explanation": "Designed for domain scientists, not programmers."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcPy and open-source alternatives for hydrological scripting.",
+    "correct": "ArcPy: commercial license, enterprise geodatabase, ESRI support, industry standard. Open-source (GDAL, TauDEM, WhiteboxTools): free, Linux/cloud, transparent algorithms, community-driven. Both support Python, GeoTIFF/shapefile, same core algorithms. Many professionals use both: ArcGIS for desktop analysis, open-source for batch processing.",
+    "explanation": "Practical flexibility requires working across ecosystems."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three-layer architecture of TauDEM.",
+    "correct": "Layer 1: User interface (ArcGIS toolbox or Python script). Layer 2: Python wrapper (parameter validation, command construction, subprocess execution, output handling). Layer 3: C++ computational core with MPI parallelism, reading/writing GeoTIFF. This separates user-facing convenience from computational performance.",
+    "explanation": "A common and powerful architecture in scientific computing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the env.workspace and env.overwriteOutput settings and why they are essential.",
+    "correct": "env.workspace sets the default data location so you can use short names instead of full paths. env.overwriteOutput = True allows re-running scripts without 'output exists' errors. Together they eliminate the two most common friction points in script development: path management and file conflicts.",
+    "explanation": "These two lines should appear at the top of every GIS script."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the ArcGIS flow direction encoding for D-infinity and how it differs from D8.",
+    "correct": "D8 produces integer rasters with values 1,2,4,8,16,32,64,128 (one of eight directions). D-infinity produces floating-point rasters with continuous angles in radians (0 to 2*pi). D-infinity has a smooth, silvery appearance while D8 appears blocky. Not all tools accept D-infinity input; verify compatibility.",
+    "explanation": "The fundamental data type difference affects downstream processing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Python's subprocess module enables TauDEM integration.",
+    "correct": "subprocess.run() executes TauDEM command-line tools (pitremove, d8flowdir, etc.) from within Python scripts. The script constructs the command string with proper flags and file paths, executes it, captures stdout/stderr, and checks the return code. This allows mixing TauDEM's MPI parallelism with Python's file management and logic.",
+    "explanation": "subprocess is the bridge between Python convenience and C++ performance."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the backslash problem in Python and three solutions.",
+    "correct": "In Python, backslash is an escape character: \\t = tab, \\n = newline, \\U = Unicode escape. Windows paths use backslashes, causing conflicts. Three solutions: (1) raw strings r'C:\\path', (2) forward slashes 'C:/path', (3) double backslashes 'C:\\\\path'. Raw strings are cleanest.",
+    "explanation": "The most common beginner error in Windows Python scripting."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the licensing differences between ArcPy and open-source tools.",
+    "correct": "ArcPy requires ArcGIS Pro license plus Spatial Analyst extension. Scripts must check out extensions before use. Open-source tools (GDAL, TauDEM, WhiteboxTools) have no license requirements: free to install on any machine including servers and cloud. For large-scale processing on clusters, open-source avoids managing dozens of concurrent licenses.",
+    "explanation": "License management is a practical constraint for commercial software."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why NumPy vectorized operations are faster than Python loops for raster processing.",
+    "correct": "Python loops interpret each iteration individually, with overhead per iteration. NumPy performs operations on entire arrays in pre-compiled C code, processing millions of cells in one call. Example: dem[dem < 0] = 0 (milliseconds with NumPy) vs nested for loops (minutes). If you write nested loops over raster cells, look for a NumPy alternative.",
+    "explanation": "The rule of thumb: never loop over raster cells in Python."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete 10-step watershed delineation script from Section 12.7.",
+    "correct": "Steps: (1) Fill pits, (2) D8 flow direction, (3) flow accumulation, (4) stream definition via SetNull, (5) snap pour point, (6) delineate watershed, (7) stream links, (8) catchments, (9) streams to polylines, (10) catchments to polygons. Script includes imports, license check, parameterized inputs, timing, and print statements.",
+    "explanation": "The complete reference script for watershed delineation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the degree-to-meter conversion at Budapest's latitude and why it matters.",
+    "correct": "At 47.5 degrees: N-S = 0.000278 * 111195 = 30.9 m. E-W = 30.9 * cos(47.5) = 20.9 m. A 1 arc-second cell is rectangular (31x21 m), not square. This affects slope, area, and distance calculations. Project to metric coordinates before processing for accurate hydrological analysis.",
+    "explanation": "Geographic coordinate DEMs require projection for accurate analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the WhiteboxTools API with the ArcPy API for watershed delineation.",
+    "correct": "WhiteboxTools: wbt.fill_depressions(), wbt.d8_pointer(), wbt.d8_flow_accumulation(), wbt.extract_streams(), wbt.watershed(). Clean, Pythonic, no license needed, pip install. ArcPy: Fill(), FlowDirection(), FlowAccumulation(), SetNull(), Watershed(). More established, enterprise support, requires license. Both produce equivalent results.",
+    "explanation": "WhiteboxTools offers zero-cost, zero-configuration alternative."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the batch processing pattern for multiple watersheds.",
+    "correct": "Define a list of (workspace, DEM, outlet, threshold) tuples. Loop over each, set env.workspace, run all steps in a try/except block. Log successes and failures with timestamps. Failed watersheds don't stop the batch. Review the log in the morning, fix problems, rerun only failures.",
+    "explanation": "The pattern scales to thousands of inputs without modification."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the QGIS Processing framework provides a unified Python interface.",
+    "correct": "processing.run('provider:algorithm', {parameters}) works the same regardless of whether the algorithm comes from native QGIS, GRASS GIS, SAGA GIS, GDAL, or WhiteboxTools. This abstraction layer means you can mix algorithms from different providers in one script without learning each provider's native interface.",
+    "explanation": "Consistent interface across multiple algorithm providers."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of Python comments and header blocks in scientific scripts.",
+    "correct": "Comments explain WHY code does what it does. Header blocks provide metadata: author, date, purpose, inputs, outputs. Six months later, the header tells you what the script does without reverse-engineering. For scientific reproducibility, comments document methodological choices that affect results.",
+    "explanation": "Comments are documentation, not decoration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical significance of the env.snapRaster setting.",
+    "correct": "snapRaster ensures all output rasters share exactly the same cell grid. Without it, successive operations produce rasters shifted by fractions of a cell. Even sub-cell misalignment can break drainage networks: a stream cell in one raster doesn't align with its flow direction cell. Set snapRaster to the DEM at the start of every script.",
+    "explanation": "Grid alignment is a subtle but critical requirement."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Jupyter notebooks and .py files for GIS automation.",
+    "correct": "Notebooks: code + output + text in one document, ideal for teaching and exploration. Limitations: interactive use, difficult to run unattended. .py files: pure code, run as batch jobs, easy to schedule, integrate with version control. For production overnight processing, .py files are preferred. For documentation and methodology sharing, notebooks excel.",
+    "explanation": "Different tools for different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of parameterizing a script and why it enables reuse.",
+    "correct": "Parameterization moves hard-coded values (DEM name, workspace, threshold) to variables at the top of the script. To process a different watershed, change 4-5 lines rather than hunting through the code. This makes the intellectual investment in building the workflow once; the marginal cost of applying it to new study areas is nearly zero.",
+    "explanation": "The core value proposition of scripting."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why efficiency optimization should be deferred in GIS scripting.",
+    "correct": "Python scripts are 'glue code' calling compiled tools (ArcGIS C++, TauDEM MPI, WhiteboxTools Rust). The computation happens in compiled code regardless of Python speed. Optimize only if you write custom pure-Python raster processing: use NumPy vectorization, not Python loops. Premature optimization wastes time on code that isn't the bottleneck.",
+    "explanation": "Python's role is orchestration, not computation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the data sources available for automated watershed processing globally.",
+    "correct": "US: USGS 3DEP (1-10 m), free. Hungary: DDM-5 (5 m, licensed) or Copernicus EEA-10 (10 m). Europe high-res: EEA-10 (restricted). Global: Copernicus GLO-30 (30 m, free), SRTM (30/90 m, free), ALOS AW3D30 (30 m, free), MERIT (90 m, academic). For batch processing, GLO-30 is most practical globally.",
+    "explanation": "Data availability varies by region, resolution, and cost."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HydroBASINS provides pre-delineated watersheds that eliminate local processing.",
+    "correct": "HydroBASINS offers hierarchical sub-basins at 12 levels globally, with Pfafstetter coding, upstream area, and connectivity attributes. For researchers in data-sparse regions, it provides immediate watershed boundaries without DEM processing. Combined with HydroRIVERS and HydroLAKES, it forms a complete global hydrographic framework downloadable in standard formats.",
+    "explanation": "Pre-delineated data democratizes hydrological analysis worldwide."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the implications of the open-source vs commercial tension for computational reproducibility.",
+    "correct": "ArcPy scripts require the reviewer to hold the same license, limiting the pool of verifiers. Open-source scripts using GDAL/TauDEM/WhiteboxTools can be verified by anyone, on any platform. For peer review and regulatory compliance, open-source tools eliminate commercial barriers. Many publications now require open-source workflows for full reproducibility.",
+    "explanation": "Reproducibility favors open-source tools."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the flow algebra framework makes TauDEM extensible.",
+    "correct": "The flow algebra separates routing (D-infinity proportioning in topological order) from application-specific transformation. Contributing area uses identity transformation; decay accumulation uses exponential decay; sediment uses capacity limiting. New applications define only a new transformation function. The routing code, handling billions of cells with MPI, never changes.",
+    "explanation": "Extensibility through separation of concerns."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Google Earth Engine, Microsoft Planetary Computer, and local processing for DEM analysis.",
+    "correct": "GEE: planetary-scale cloud processing, Python API, global DEMs, free, but no dedicated watershed tools. Planetary Computer: Jupyter + Rasterio/NumPy, Copernicus DEM access, free. Local: full control, any DEM resolution, all algorithms, requires hardware and software. GEE/PC for large-scale reconnaissance; local for detailed analysis with full parameter control.",
+    "explanation": "Cloud platforms complement rather than replace local processing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the chapter bridges Chapters 9-11 with Chapters 13-16.",
+    "correct": "Chapters 9-11 developed the manual terrain processing chain. Chapter 12 automates it with Python, making it repeatable, scalable, and reproducible. This automation is essential for Ch 13 (large LiDAR datasets), Ch 14 (continental HAND computation), Ch 15-16 (automated flood inundation pipelines). Without scripting, the scale of subsequent chapters is impossible.",
+    "explanation": "Automation is the prerequisite for large-scale applications."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'glue code' in the context of GIS scripting.",
+    "correct": "Python GIS scripts don't perform computation—they call compiled tools (ArcGIS C++, TauDEM MPI, WhiteboxTools Rust) that do. Python handles file management, parameter passing, logic, and error handling. This 'glue' connects fast computational engines into complete workflows. Performance optimization should target the compiled tools, not the Python glue.",
+    "explanation": "Understanding Python's role prevents misguided optimization."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical steps for configuring VS Code to work with ArcGIS Pro Python.",
+    "correct": "Install VS Code, add the Python extension. Set the interpreter to ArcGIS Pro's python.exe: C:\\Program Files\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\\python.exe. This gives full access to ArcPy including code completion. Without this configuration, VS Code uses the system Python, which doesn't have ArcPy.",
+    "explanation": "IDE configuration is the first practical hurdle for beginners."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Copernicus GLO-30 DEM is the most practical choice for global automated processing.",
+    "correct": "GLO-30: free, global coverage, 30 m resolution, GeoTIFF format (all tools read natively), downloadable through APIs that can be scripted. No license required, no access restrictions. For automated processing of multiple watersheds across countries, GLO-30 provides consistent data without the complexity of national DEM licensing.",
+    "explanation": "The practical choice balances quality, availability, and scripting ease."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the error handling pattern using try/except and logging for batch processing.",
+    "correct": "Wrap each watershed's processing in try/except. On success: logging.info(f'SUCCESS: {name}'). On failure: logging.error(f'FAILED: {name} -- {error}'), then continue to next watershed. The log file with timestamps records everything. In the morning, review failures, fix problems (corrupted DEM, missing outlet), rerun only failed cases.",
+    "explanation": "Robust error handling separates amateur from production scripts."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter's approach serves scientists who are not programmers.",
+    "correct": "The approach never requires learning Python 'from the ground up.' Scientists learn in context: do it manually first, copy the Python from history, modify incrementally. The intellectual investment is in understanding the workflow (which they already do), not in programming. Variables, loops, and error handling are introduced only when needed.",
+    "explanation": "Meeting users where they are, not where computer scientists would like them to be."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the advantages of standardized file naming conventions like TauDEM's suffix system.",
+    "correct": "TauDEM uses systematic suffixes: fel (filled), p (direction), sd8 (slope), ang (angle), slp (D-inf slope), ad8 (area). Given base name 'sajo', all outputs are sajo_fel.tif, sajo_p.tif, etc. This self-documenting convention reduces confusion, prevents overwriting, and makes scripts readable without comments for each file.",
+    "explanation": "Good naming conventions prevent file management errors."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how cloud-based processing represents a paradigm shift in geospatial computing.",
+    "correct": "Traditional: download terabytes of data, process locally for days. Cloud: send a request, receive results in seconds from pre-computed global datasets. The shift is from desktop to service, enabled by growing dataset size and decreasing cloud costs. The risk is loss of methodological understanding; the benefit is democratized access to results that required expert processing.",
+    "explanation": "Speed from the cloud; quality from understanding."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the env.extent setting enables efficient processing of continental datasets.",
+    "correct": "Setting env.extent to the study area clips all subsequent operations to that region. Without it, processing a 30 m continental DEM when you only need one watershed wastes hours on irrelevant data. With it, only the study area is processed. Combine with preliminary cloud-based delineation to determine the correct extent before local processing.",
+    "explanation": "Spatial subsetting is essential for efficient large-scale workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the processing.run() syntax in QGIS with ArcPy function calls.",
+    "correct": "ArcPy: outFill = Fill('DEM'), clean and intuitive. QGIS: processing.run('saga:fillsinksxxlwangliu', {'ELEV': 'DEM', ...}), less readable but consistent across all providers. ArcPy benefits from Pythonic function design. QGIS benefits from provider-agnostic interface. Both are learnable from documentation and processing logs.",
+    "explanation": "Different syntax philosophies, equivalent functionality."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why version control with Git should be used for all GIS scripts.",
+    "correct": "Git provides: complete change history (see what you changed and when), ability to revert (when you break something), and collaboration through GitHub/GitLab. Even basic git init/add/commit protects against the most common disaster: accidentally breaking a working script. It costs minutes to set up and saves hours of recovery.",
+    "explanation": "Version control is insurance against accidental destruction."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of a parameterized batch processing script for Hungarian catchments.",
+    "correct": "Define a list: [(Zagyva.gdb, DDM5_Zagyva, Outlet_Zagyva, 2000), (Raba.gdb, DDM5_Raba, ...), (Sajo.gdb, ...)]. Loop with try/except, setting workspace per watershed. One well-tested script applies to all Hungarian catchments by changing the list. Failed watersheds are logged for retry. The script embodies the intellectual investment once, applied many times.",
+    "explanation": "The marginal cost of processing a new watershed approaches zero."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the choice between ArcPy and open-source depends on the deployment context.",
+    "correct": "Desktop analysis with existing ArcGIS license: ArcPy for convenience. Linux server for batch processing: open-source (no Windows, no license). Cloud computing cluster: open-source (scalable without license management). Teaching lab: WhiteboxTools/QGIS (free for all students). Scientific publication: open-source for reproducibility. Many professionals use both depending on context.",
+    "explanation": "The deployment context determines the optimal tool choice."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of Python's cross-platform capability for hydrology.",
+    "correct": "A script using GDAL/TauDEM runs on Windows, Linux, and macOS. Development happens on a Windows desktop; production runs on a Linux cluster with 128 cores. Cloud deployment uses Linux containers. This cross-platform capability enables scaling from a single watershed on a laptop to continental processing on a supercomputer.",
+    "explanation": "Write once, run anywhere."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the silent failure problem and how to prevent it.",
+    "correct": "The script runs without errors but produces no output, wrong output, or output in unexpected locations. Causes: result not saved (missing .save()), workspace pointing to wrong location, overwrite disabled. Prevention: add print statements after every step, use arcpy.Exists() to verify outputs, check arcpy.GetMessages() for warnings.",
+    "explanation": "Silent failures are the hardest bugs to find because nothing seems wrong."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the CCM dataset from JRC relates to European watershed analysis.",
+    "correct": "The CCM (Catchment Characterisation and Modelling) dataset provides pre-delineated river basins and catchments for all of Europe. It can serve as reference boundaries for validating automated delineation results from national DEMs. Combined with EU-Hydro for stream networks, it provides a complete European hydrographic framework for WFD reporting.",
+    "explanation": "European reference data for validation and regulatory compliance."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for processing the entire Tisza basin by script.",
+    "correct": "Download GLO-30 tiles covering ~157,000 km2 across 5 countries. Mosaic tiles, fill sinks, compute flow directions, delineate sub-watersheds at multiple thresholds. The basin at 30 m has millions of cells requiring efficient processing. TauDEM with MPI on 32 cores handles this scale. Overnight batch run with logging produces results by morning.",
+    "explanation": "Scripting enables continental-scale processing that manual methods cannot achieve."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of Python's community for solving GIS scripting problems.",
+    "correct": "Python has the largest user community of any language. Virtually any error message or problem has been encountered and solved on Stack Overflow, GitHub, or documentation. When you get 'unicode error' on a path, searching produces immediate solutions. This community support dramatically reduces the learning curve for non-programmers.",
+    "explanation": "Community support makes Python accessible to domain scientists."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of environment settings as 'global behavior control' in ArcPy.",
+    "correct": "Environment settings (workspace, overwrite, cellSize, extent, snapRaster) control behavior for ALL subsequent operations, not just individual tools. Setting them once at the top avoids specifying them in every tool call. They affect: where data is found, whether outputs can be replaced, what resolution is used, what area is processed, and whether grids align.",
+    "explanation": "Environment settings are the configuration layer for the entire script."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the SRTM dataset and why it enabled global watershed delineation.",
+    "correct": "The Shuttle Radar Topography Mission (2000) collected near-global elevation data at 30/90 m. Before SRTM, global DEMs were patchy and inconsistent. SRTM enabled HydroSHEDS: the first consistent global stream network and catchment dataset. This democratized hydrological analysis worldwide, providing watershed boundaries for data-sparse regions in Africa, Asia, and South America.",
+    "explanation": "SRTM was the catalyst for global hydroinformatics."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the chapter explicitly states 'this chapter is not a Python tutorial in disguise.'",
+    "correct": "The audience is water professionals who need automation, not programming education. The approach teaches Python in the context of workflows they already understand: fill, flow direction, accumulation. They never need to learn Python abstractly. Copy from history, modify, test. This practical approach succeeds where traditional programming courses fail for domain scientists.",
+    "explanation": "Context-specific learning is more effective than abstract programming instruction."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the flow of data through a TauDEM Python script.",
+    "correct": "Configuration: set n_procs, directories, file paths. Helper function wraps mpiexec calls. Processing chain: pitremove produces filled DEM, d8flowdir produces direction and slope, aread8 produces contributing area, threshold produces stream raster. Each output becomes input to the next step. Error checking at each stage prevents silent propagation of failures.",
+    "explanation": "The script mirrors the manual workflow but executes unattended."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter connects to the larger book structure.",
+    "correct": "Ch 9: DEM conditioning (manual). Ch 10: flow direction/accumulation (manual). Ch 11: stream/watershed delineation (manual). Ch 12: automate everything from Chs 9-11. Ch 13: LiDAR processing (requires automation for data volume). Ch 14: continental HAND (requires automation for scale). Ch 15-16: flood mapping pipelines (require automation for operational use). Ch 12 is the pivotal bridge.",
+    "explanation": "Automation is the prerequisite for everything that follows."
+  },
+  {
+    "type": "mcq",
+    "question": "The ArcGIS CheckInExtension function:",
+    "options": [
+      "A) Installs extensions",
+      "B) Releases a checked-out license",
+      "C) Checks extension compatibility",
+      "D) Downloads updates"
+    ],
+    "correct": "B",
+    "explanation": "Frees the license for other users."
+  },
+  {
+    "type": "mcq",
+    "question": "Python's os.makedirs with exist_ok=True:",
+    "options": [
+      "A) Deletes existing directories",
+      "B) Creates directories without error if they exist",
+      "C) Makes read-only directories",
+      "D) Creates virtual directories"
+    ],
+    "correct": "B",
+    "explanation": "Convenient for setting up output directories."
+  },
+  {
+    "type": "mcq",
+    "question": "The Rasterio library provides:",
+    "options": [
+      "A) ArcGIS licensing",
+      "B) Pythonic interface to GDAL for raster I/O",
+      "C) Database management",
+      "D) Web mapping"
+    ],
+    "correct": "B",
+    "explanation": "A more Pythonic alternative to direct GDAL API calls."
+  },
+  {
+    "type": "mcq",
+    "question": "The Fiona library provides:",
+    "options": [
+      "A) Music playback",
+      "B) Pythonic interface for vector data I/O",
+      "C) Image processing",
+      "D) Network analysis"
+    ],
+    "correct": "B",
+    "explanation": "Fiona wraps OGR for reading/writing vector features."
+  },
+  {
+    "type": "mcq",
+    "question": "The xarray library is used for:",
+    "options": [
+      "A) GIS visualization",
+      "B) Multidimensional arrays for climate data",
+      "C) XML parsing",
+      "D) Database queries"
+    ],
+    "correct": "B",
+    "explanation": "Handles NetCDF climate and weather model outputs."
+  },
+  {
+    "type": "mcq",
+    "question": "The Pandas library handles:",
+    "options": [
+      "A) Raster data",
+      "B) Tabular data and data frames",
+      "C) Map projections",
+      "D) 3D rendering"
+    ],
+    "correct": "B",
+    "explanation": "Data manipulation and analysis for tables."
+  },
+  {
+    "type": "mcq",
+    "question": "The Matplotlib library provides:",
+    "options": [
+      "A) Map tile serving",
+      "B) Plotting and visualization",
+      "C) GIS data management",
+      "D) Network routing"
+    ],
+    "correct": "B",
+    "explanation": "Standard Python visualization library."
+  },
+  {
+    "type": "mcq",
+    "question": "Papermill is a tool for:",
+    "options": [
+      "A) Making paper maps",
+      "B) Running Jupyter notebooks as batch jobs",
+      "C) Milling elevation data",
+      "D) Paper quality assessment"
+    ],
+    "correct": "B",
+    "explanation": "Enables unattended notebook execution for production."
+  },
+  {
+    "type": "mcq",
+    "question": "The hydrostats library provides:",
+    "options": [
+      "A) Hydrological statistics functions",
+      "B) GIS data conversion",
+      "C) Weather forecasting",
+      "D) DEM processing"
+    ],
+    "correct": "A",
+    "explanation": "Domain-specific statistical functions for hydrology."
+  },
+  {
+    "type": "mcq",
+    "question": "For deployment on computing clusters, the preferred tools are:",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) Open-source tools (no license management)",
+      "C) Microsoft Excel",
+      "D) Google Sheets"
+    ],
+    "correct": "B",
+    "explanation": "No need to procure dozens of concurrent licenses."
+  },
+  {
+    "type": "true_false",
+    "question": "Rasterio provides a more Pythonic interface to raster data than raw GDAL.",
+    "correct": true,
+    "explanation": "Rasterio wraps GDAL with cleaner Python syntax."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pandas library is used for raster processing.",
+    "correct": false,
+    "explanation": "Pandas handles tabular data; rasters use NumPy/Rasterio/GDAL."
+  },
+  {
+    "type": "true_false",
+    "question": "xarray is useful for handling NetCDF climate model outputs.",
+    "correct": true,
+    "explanation": "Designed for labeled multidimensional arrays."
+  },
+  {
+    "type": "true_false",
+    "question": "Python scripts shared with papers should include software version information.",
+    "correct": true,
+    "explanation": "Python version, library versions, OS for complete reproducibility."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter covers six common scripting pitfalls.",
+    "correct": true,
+    "explanation": "Import error, file lock, backslash, license, overwrite, silent failure."
+  },
+  {
+    "type": "true_false",
+    "question": "The wbt.extract_streams function requires a threshold parameter.",
+    "correct": true,
+    "explanation": "wbt.extract_streams('flowacc.tif', 'streams.tif', threshold=5000)."
+  },
+  {
+    "type": "true_false",
+    "question": "PyQGIS requires QGIS to be installed even for standalone scripts.",
+    "correct": true,
+    "explanation": "QGIS libraries must be initialized even in standalone mode."
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter recommends memorizing all ArcPy function parameters.",
+    "correct": false,
+    "explanation": "Understand structure, look up syntax from documentation and history."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza basin at 30 m, processing involves millions of cells.",
+    "correct": true,
+    "explanation": "157,000 km2 at 30 m = billions of cells across dozens of tiles."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Rasterio library wraps _____ for raster I/O.",
+    "correct": "GDAL",
+    "explanation": "More Pythonic interface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Fiona library wraps _____ for vector I/O.",
+    "correct": "OGR",
+    "explanation": "Part of the GDAL/OGR stack."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The xarray library handles _____ arrays for climate data.",
+    "correct": "multidimensional",
+    "explanation": "Labeled N-D arrays."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Python's _____ library provides data frames for tabular data.",
+    "correct": "Pandas",
+    "explanation": "Standard for data manipulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ library is Python's standard plotting tool.",
+    "correct": "Matplotlib",
+    "explanation": "Standard visualization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For scientific reproducibility, deposit analysis _____ with publications.",
+    "correct": "code (scripts)",
+    "explanation": "Journal requirements in 2026."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcGIS Pro Python environment uses _____ as its package manager.",
+    "correct": "Conda",
+    "explanation": "Manages Python packages."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter describes automation as essential for _____, scale, and reproducibility.",
+    "correct": "repeatability",
+    "explanation": "The three motivations for scripting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 'import time' statement enables measuring _____ execution time.",
+    "correct": "script (elapsed)",
+    "explanation": "time.time() for timing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tool in WhiteboxTools fills depressions.",
+    "correct": "fill_depressions",
+    "explanation": "wbt.fill_depressions('in', 'out')."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The -r flag in gdalwarp specifies the _____ method.",
+    "correct": "resampling",
+    "explanation": "e.g., bilinear, nearest."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The -tr flag in gdalwarp specifies the target _____.",
+    "correct": "resolution (cell size)",
+    "explanation": "e.g., -tr 5 5 for 5 m."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Python became dominant for GIS scripting over other languages.",
+    "correct": "Python combines readability (clean syntax, English-like), powerful libraries (ArcPy, GDAL, NumPy), huge community (any problem solved online), and cross-platform capability (Windows, Linux, macOS). Both ESRI and QGIS adopted it. R is stronger for statistics but weaker for GIS; C++/Rust are faster but harder to learn.",
+    "explanation": "The convergence of ecosystem support and accessibility."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the architecture that makes WhiteboxTools practical for teaching.",
+    "correct": "WhiteboxTools installs via 'pip install whitebox' with no GIS platform needed. The API is clean: wbt.fill_depressions(), wbt.d8_pointer(), etc. No license management, runs on any OS. Students can start watershed analysis within minutes of installation. For teaching labs without ArcGIS budgets, this is transformative.",
+    "explanation": "Zero-cost, zero-configuration alternative."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how ModelBuilder serves as a bridge to Python scripting.",
+    "correct": "Scientists build visual workflows by dragging tools and connecting them. When they need loops or error handling, ModelBuilder becomes insufficient. But it can export to Python, producing working code that can be cleaned up and extended. This gradual transition from visual to text-based automation respects different comfort levels.",
+    "explanation": "The bridge from clicking to coding."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete error handling pattern for production GIS scripts.",
+    "correct": "Check license availability at start. Wrap each operation in try/except. Log successes with logging.info, failures with logging.error. Use timestamps in logs. After failures, 'continue' to next item. Verify outputs with arcpy.Exists(). Check arcpy.GetMessages() for warnings. This creates an audit trail for regulatory and scientific work.",
+    "explanation": "Robustness is essential for overnight and regulatory processing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of environment settings as a configuration layer.",
+    "correct": "Environment settings (workspace, overwrite, cellSize, extent, snapRaster) affect all tools globally. They separate configuration from processing logic. Changing the workspace switches the entire script to a different project. Changing cellSize switches resolution. This separation makes scripts more maintainable and reusable.",
+    "explanation": "Configuration separated from logic."
+  },
+  {
+    "type": "essay",
+    "question": "Compare IDLE, VS Code, and the ArcGIS Python Window for GIS scripting.",
+    "correct": "ArcGIS Window: best for quick experiments, immediate map display, no file saving. IDLE: basic editor, adequate for simple scripts. VS Code: full debugging, code completion, Git integration, best for serious development. Choose based on task complexity: Window for testing, IDLE for simple scripts, VS Code for production.",
+    "explanation": "Tool choice matches task complexity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the 'from arcpy.sa import *' statement.",
+    "correct": "This imports all Spatial Analyst functions into the current namespace. Without it: arcpy.sa.Fill('DEM'). With it: Fill('DEM'). Cleaner, more readable code. The * import is normally discouraged in Python but acceptable for the well-known arcpy.sa namespace in GIS scripts.",
+    "explanation": "Readability improvement for domain-specific scripting."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the time module helps debug overnight batch runs.",
+    "correct": "Adding timestamps with time.time() after each step creates a performance log. When a script fails at 3 AM, the last timestamp shows exactly where it stopped. Elapsed times reveal which steps are bottlenecks. This information is essential for debugging and optimization.",
+    "explanation": "Timing turns silent scripts into informative ones."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical workflow for adapting a script to a new Hungarian watershed.",
+    "correct": "Change 4-5 variables at the top: workspace path, DEM name, outlet name, threshold, snap distance. For the Zagyva instead of the Sajo, change to Zagyva.gdb, DDM5_Zagyva, Zagyva_Outlet, 2000. Run the same script. The intellectual investment was made once; reuse is nearly free.",
+    "explanation": "Parameterization enables rapid reuse."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the chapter presents both ArcPy and open-source equivalents.",
+    "correct": "Different institutions have different software. Hungarian universities may have ArcGIS; international students may not. Presenting both ensures all readers can apply the concepts. The core algorithms are identical; only the syntax differs. Understanding both ecosystems makes professionals more versatile.",
+    "explanation": "Universal applicability regardless of software access."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of 'computational reproducibility' as it applies to hydrology in 2026.",
+    "correct": "Computational reproducibility means anyone can regenerate the same results from the same inputs using the documented code and software. Major journals require code deposition. Funding agencies mandate open-science. A Python script with version information provides this; menu clicks do not. The standard has risen sharply.",
+    "explanation": "Reproducibility is now a requirement, not an aspiration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Conda package manager affects ArcGIS Pro Python development.",
+    "correct": "ArcGIS Pro installs its own Python distribution managed by Conda. ArcPy is only available in this specific environment. Using the wrong Python (system or another Conda env) causes 'No module named arcpy'. IDEs must be configured to point to the ArcGIS Pro python.exe. This isolation prevents conflicts but requires awareness.",
+    "explanation": "Environment isolation requires explicit configuration."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical advantages of GeoTIFF as TauDEM's standard format.",
+    "correct": "GeoTIFF is an open standard readable by all GIS software. No proprietary geodatabase required. Files can be inspected with command-line tools (gdalinfo). They work on any OS. This means TauDEM results integrate with ArcGIS, QGIS, WhiteboxTools, R, and custom Python scripts without format conversion.",
+    "explanation": "Open formats enable tool interoperability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between D8 and D-infinity output data types in ArcPy.",
+    "correct": "D8 FlowDirection produces integer rasters with values 1,2,4,8,16,32,64,128. D-infinity (DINF parameter) produces floating-point rasters with continuous angles 0 to 2*pi. The data type affects storage, display (blocky vs smooth), and downstream tool compatibility. Not all tools accept D-infinity input.",
+    "explanation": "Data type determines what downstream analyses are possible."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Python's exception handling enables graceful degradation in batch processing.",
+    "correct": "try/except wraps each watershed's processing. If one fails (corrupted DEM, missing outlet, disk full), the except block logs the error and 'continue' moves to the next. The batch completes with a log showing which succeeded and which failed. Failed cases can be fixed and retried independently. Without this, one failure stops everything.",
+    "explanation": "Graceful degradation keeps production systems running."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the Processing framework in making QGIS competitive with ArcGIS for automation.",
+    "correct": "QGIS Processing provides a unified interface to GRASS, SAGA, GDAL, and WhiteboxTools algorithms through processing.run(). This gives QGIS users access to hundreds of algorithms from multiple providers, all scriptable in Python. Combined with PyQGIS's native capabilities, QGIS offers complete GIS automation without commercial licenses.",
+    "explanation": "The Processing framework is QGIS's key competitive advantage for automation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the chapter's approach differs from traditional programming textbooks.",
+    "correct": "Traditional: learn syntax, data types, control flow, then apply. This chapter: do the workflow manually, copy the Python, modify incrementally. Learning happens in context of known tasks. Students never need to learn Python abstractly. This practical approach succeeds for domain scientists where traditional approaches fail.",
+    "explanation": "Context-specific learning for non-programmers."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical significance of the 'overwrite' setting for iterative script development.",
+    "correct": "During development, scripts run dozens of times with parameter adjustments. Without overwrite=True, every run after the first fails because outputs exist. Setting overwrite at the top eliminates this friction. For production scripts, some analysts prefer False (to prevent accidental data loss), but for development, True is essential.",
+    "explanation": "Reduces development friction dramatically."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the NWM and EFAS as examples of scripted watershed processing at scale.",
+    "correct": "Both were created through automated geoprocessing: NHDPlus (2.7M reaches) and EFAS's pan-European network. Neither could exist through manual processing. They demonstrate that the concepts in this chapter—automation, parameterization, batch processing—scale from single watersheds to continental operational systems.",
+    "explanation": "The endpoints of the automation journey."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of print statements in script development and production.",
+    "correct": "During development: verify each step completes. During production: track progress through long overnight runs. After failures: the last print shows where the script stopped. With timestamps: reveal bottleneck steps. Print statements cost nothing to add and save hours of debugging.",
+    "explanation": "The simplest and most effective debugging tool."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the chapter recommends starting from working code rather than from scratch.",
+    "correct": "Modifying 10% of an existing script is faster and more reliable than writing 100% from scratch. Proven code eliminates entire categories of errors. The watershed delineation script in Section 12.7 is explicitly designed for copying and modification. This is engineering practice, not laziness.",
+    "explanation": "Professional practice prioritizes reliability over originality."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the chapter addresses the tension between proprietary and open-source workflows.",
+    "correct": "The chapter presents both ecosystems honestly: ArcPy for enterprise integration and support, open-source for freedom and reproducibility. It notes that most professionals use both. For publications, open-source is preferred for reproducibility. For institutional work, the existing software dictates the choice. Pragmatism over ideology.",
+    "explanation": "Balanced presentation reflecting professional reality."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how cloud-based processing changes the economics of watershed analysis.",
+    "correct": "Pre-computing global DEM products and serving results on demand converts capital expenditure (local hardware, software licenses) to operating expenditure (API calls). A student in Bangladesh gets the same watershed boundary as a professor at MIT. The cost barrier drops from thousands of dollars to zero.",
+    "explanation": "Democratization through cloud economics."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical workflow for processing all sub-catchments in the Tisza basin.",
+    "correct": "Download Copernicus GLO-30 tiles covering 157,000 km2. Mosaic into a single raster. Fill sinks. Compute flow directions. Delineate at multiple thresholds (5000, 10000, 50000 cells). Export streams and catchments for each level. Process with TauDEM on 32 MPI cores overnight. Log all operations for reproducibility.",
+    "explanation": "Continental-scale processing requires automation, parallelism, and logging."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the concept of 'parameterization' relates to scientific methodology.",
+    "correct": "Parameterization moves assumptions and settings from hidden menu choices to visible, documented variables. When a paper says 'threshold = 5000 cells', readers can evaluate and reproduce this choice. When the same workflow is applied to different watersheds with different thresholds, the parameterized script documents exactly what changed and what stayed the same.",
+    "explanation": "Parameterization makes methodology transparent and reproducible."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the chapter's final statement about automation enabling Chapters 13-16.",
+    "correct": "Chapters 13-16 process LiDAR point clouds (billions of points), compute continental HAND, and run operational flood pipelines. None of this is possible manually. Chapter 12's automation skills are prerequisite: scripting, batch processing, error handling, parallel execution. The chapter is the gateway to practical large-scale hydroinformatics.",
+    "explanation": "Automation is not optional for modern hydroinformatics."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of checking geoprocessing messages after silent failures.",
+    "correct": "arcpy.GetMessages() returns all tool messages including warnings that don't raise exceptions. A tool might complete 'successfully' but produce empty or wrong output due to input issues (wrong projection, no data in extent, null values). Checking messages reveals these hidden problems that print statements alone cannot catch.",
+    "explanation": "Messages reveal problems that silent completion hides."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HydroBASINS and HydroRIVERS eliminate the need for local DEM processing in data-sparse regions.",
+    "correct": "For a researcher in sub-Saharan Africa needing watershed boundaries, HydroBASINS provides pre-delineated sub-basins at 12 levels with attributes (area, connectivity, Pfafstetter codes). HydroRIVERS provides the corresponding stream network. No DEM download, no processing, no software beyond a GIS viewer. Free, global, immediate.",
+    "explanation": "Pre-computed products serve where local processing capability doesn't exist."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'write once, run anywhere' for geospatial Python scripts.",
+    "correct": "Scripts using GDAL/Rasterio (open-source, cross-platform) run on Windows, Linux, macOS, and cloud platforms. Development on a Windows laptop; production on a Linux cluster. The same script, same results, different platforms. ArcPy limits this to Windows, but the open-source stack provides true portability.",
+    "explanation": "Cross-platform capability enables flexible deployment."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of the 6 common pitfalls table for new scripters.",
+    "correct": "The table (import error, file lock, backslash, license, no overwrite, silent failure) covers the errors every beginner encounters. Knowing them in advance saves hours of frustration. Each has a clear cause and fix. This is practical wisdom from processing thousands of watersheds, distilled into a quick reference.",
+    "explanation": "Anticipating common errors accelerates learning."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the flow algebra's extensibility demonstrates good software design.",
+    "correct": "The flow algebra separates routing (complex, performance-critical, rarely changes) from transformation (simple, application-specific, frequently changes). Adding a new environmental application means writing one new function, not modifying the routing engine. This separation of concerns is a fundamental software design principle.",
+    "explanation": "Good design makes complex systems manageable and extensible."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete data flow from raw DEM to publishable watershed map via scripting.",
+    "correct": "Script downloads DEM tiles, mosaics them, projects to local CRS, fills sinks, computes flow directions and accumulation, defines streams by threshold, snaps outlet, delineates watershed, converts to vectors, computes attributes, exports to GeoPackage. A companion Python visualization script creates the map using Matplotlib. The entire process is documented in code.",
+    "explanation": "End-to-end automation from data acquisition to publication."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the ArcGIS Geoprocessing History feature accelerates Python learning.",
+    "correct": "After running any tool manually, right-click in History to Copy Python Command. The exact syntax with actual parameters is pasted into your script. No memorization needed. This converts every manual operation into a Python learning opportunity.",
+    "explanation": "Learning by doing, then copying, then modifying."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of workspace as a GIS equivalent of a working directory.",
+    "correct": "env.workspace sets the default location for all input/output. All tool calls look here unless full paths are given. Switching workspace switches project context. For multi-watershed scripts, changing workspace in the loop switches between geodatabases automatically.",
+    "explanation": "Workspace simplifies file management."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why raw strings (r-prefix) are the cleanest solution for Windows paths.",
+    "correct": "Windows uses backslashes that Python interprets as escape characters. Raw strings treat all backslashes literally. Alternatives: forward slashes or double backslashes. Raw strings are cleanest because they match Windows Explorer display.",
+    "explanation": "The simplest fix for the most common beginner error."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three modes of PyQGIS usage.",
+    "correct": "(1) Within QGIS Python Console with access to loaded layers. (2) Standalone scripts by initializing QGIS libraries for headless processing. (3) Through the Processing framework for unified access to GRASS, SAGA, GDAL, WhiteboxTools. Mode 3 is most practical for automation.",
+    "explanation": "Flexibility in deployment context."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the QGIS Processing log for Python scripting.",
+    "correct": "Like ArcGIS History, the Processing log records every algorithm with Python syntax. After running an algorithm interactively, the log shows the exact processing.run() call. Copy, paste, modify. This eliminates looking up algorithm IDs and parameter names.",
+    "explanation": "Same learning-from-history approach as ArcGIS."
+  },
+  {
+    "type": "essay",
+    "question": "Describe GRASS r.watershed advantages over step-by-step ArcPy.",
+    "correct": "r.watershed computes flow accumulation, drainage, basins, and streams in one call. More efficient (single pass). ArcPy requires separate Fill, FlowDirection, FlowAccumulation, and threshold steps. Step-by-step gives more control over intermediates; integrated gives efficiency.",
+    "explanation": "Integration vs. granularity tradeoffs."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Python being interpreted does not limit GIS scripting performance.",
+    "correct": "Python calls compiled tools (ArcGIS C++, TauDEM MPI, WhiteboxTools Rust) that do the computation. Python is the orchestrator, not the calculator. The only concern is writing pure-Python loops over raster cells, which should use NumPy vectorized operations instead.",
+    "explanation": "Python orchestrates; compiled tools compute."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the chapter addresses international students from data-sparse regions.",
+    "correct": "It points to HydroSHEDS for regions lacking national datasets, Copernicus GLO-30 for free global DEMs, GloFAS for flood forecasts, and open-source tools to eliminate license costs. Table 12.6 maps data sources by region. Students anywhere can apply the same methods.",
+    "explanation": "Global applicability through free data and open tools."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between scheduled batch processing and interactive analysis.",
+    "correct": "Interactive: analyst at keyboard, running tools one by one. Good for exploration. Batch: script runs unattended, processing hundreds of inputs with error handling. Good for production. Most workflows combine both: interactive development, then batch production.",
+    "explanation": "Different modes for different stages."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how version control supports sensitivity analysis.",
+    "correct": "Sensitivity analysis requires different parameter sets. Git branches or commits capture each configuration. You can return to any previous version, compare results, and document what changed. Without version control, tracking parameter variations is manual and error-prone.",
+    "explanation": "Systematic parameter exploration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a helper function in TauDEM Python scripts.",
+    "correct": "run_taudem() wraps the repetitive pattern: construct command string, execute via subprocess, check return code, print status. Each step calls the helper with different arguments. This eliminates code duplication and centralizes error handling.",
+    "explanation": "Helper functions reduce repetition."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical implications of open-science mandates.",
+    "correct": "NSF and ERC require depositing analysis code. A Python script satisfies this requirement; menu clicks do not. This shifts incentives toward scripted, documented workflows. Scientists who cannot provide reproducible code face publication barriers.",
+    "explanation": "Funding mandates drive methodological change."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the arcpy.da module and how it differs from other modules.",
+    "correct": "arcpy.da (Data Access) provides fast cursor-based reading/writing of feature class attributes. Unlike tool-based modules, da gives direct row-level access. Essential for custom queries, data extraction, and populating attributes that standard tools do not compute.",
+    "explanation": "Direct data access for custom processing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe headless GIS processing and why it matters.",
+    "correct": "Headless processing runs without a graphical display, on servers or cloud instances. PyQGIS standalone and TauDEM command-line support this. Production systems process data overnight without an analyst. Essential for operational systems like the NWM and EFAS.",
+    "explanation": "Production hydrology requires unattended operation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter positions R relative to Python.",
+    "correct": "R excels at statistical hydrology (frequency analysis, trend detection). Python excels at spatial processing (raster operations, batch automation). Many hydrologists use both: Python for spatial preprocessing, R for statistics. The chapter acknowledges both strengths.",
+    "explanation": "Complementary tools for different aspects."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of checking license availability.",
+    "correct": "If Spatial Analyst is unavailable (in use, not assigned), operations fail with cryptic errors. Checking at the start with CheckExtension() and providing a clear error message saves debugging time. Important in shared license environments like university labs.",
+    "explanation": "Proactive checking prevents frustration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter connects to Hungary-specific applications.",
+    "correct": "Examples use Hungarian watersheds (Zagyva, Raba, Sajo), EOV (EPSG:23700), DDM-5 from Lechner, OVF at data.vizugy.hu, EU-Hydro, EFAS. EOV identification by value range emphasized. Tisza basin batch scenario applies directly to Hungarian water management.",
+    "explanation": "Hungarian context integrated throughout."
+  },
+  {
+    "type": "essay",
+    "question": "Describe script portability and its implications.",
+    "correct": "Portable scripts run across environments. GDAL/Rasterio (cross-platform) is more portable than ArcPy (Windows-only). Parameterizing paths aids portability. For team collaboration, portable scripts ensure everyone can run the same analysis regardless of setup.",
+    "explanation": "Portability enables collaboration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of rising reproducibility standards in 2026.",
+    "correct": "Journals require code, funding agencies mandate open science, reviewers expect verification. The chapter motivates scripting as a professional requirement, not optional. Scientists who cannot provide reproducible workflows face barriers to publication and funding.",
+    "explanation": "Scripting has become professionally necessary."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Chapter 12 workflows enable a national flood mapping system.",
+    "correct": "Scripts download national DEM tiles, condition them, compute flow and accumulation, define streams, delineate catchments, compute HAND nationally, link to real-time forecasts. MPI parallelism handles scale. Logging ensures audit trail. The result: continental flood capability from terrain data and forecasts. This is the culmination of chapters 9-12.",
+    "explanation": "From concept to operational system."
+  }
+]

@@ -1,0 +1,2902 @@
+[
+  {
+    "question": "Az ágensalapú kalibrálás hány modellfuttatással érte el KGE=0,78 a Zala példában?",
+    "options": [
+      "A. 3",
+      "B. 6",
+      "C. 50",
+      "D. 5000"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens 6 kalibrálási futtatással konvergált, szemben az SCE-UA 5000-20 000 futtatásával.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az LLM rövidítése?",
+    "options": [
+      "A. Linear Learning Model",
+      "B. Large Language Model",
+      "C. Longitudinal Likelihood Method",
+      "D. Local Loss Minimizer"
+    ],
+    "correct": "B",
+    "explanation": "LLM: Large Language Model (nagy nyelvi modell).",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala folyó melyik tó legfontosabb mellékfolyója?",
+    "options": [
+      "A. Fertő-tó",
+      "B. Velencei-tó",
+      "C. Balaton",
+      "D. Tisza-tó"
+    ],
+    "correct": "C",
+    "explanation": "A Zala a Balaton legnagyobb mellékfolyója.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágens AI legjelentősebb korlátja a matematikai _____ hiánya.",
+    "options": [
+      "A. korlátok",
+      "B. garanciák",
+      "C. függvények",
+      "D. operátorok"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens AI nem rendelkezik matematikai konvergencia-garanciákkal, ellentétben az SCE-UA-val és a DREAM-mel.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány modellfuttatást igényel a DREAM egy 10 paraméteres modellnél?",
+    "options": [
+      "A. 50-500",
+      "B. 5 000-20 000",
+      "C. 20 000-100 000",
+      "D. 500 000+"
+    ],
+    "correct": "C",
+    "explanation": "A DREAM 20 000-100 000 futtatást igényel 10 paraméterhez.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala vízgyűjtő kiterjedése a tóba torkollás felett?",
+    "options": [
+      "A. 930 km²",
+      "B. 1500 km²",
+      "C. 2620 km²",
+      "D. 5300 km²"
+    ],
+    "correct": "C",
+    "explanation": "A teljes Zala vízgyűjtő kb. 2620 km², a felső szakaszi példa 930 km².",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen meteorológiai bemenetet használ a Zala példa?",
+    "options": [
+      "A. OMSZ állomási adatok",
+      "B. ERA5-Land reanalízis",
+      "C. NEXRAD radar",
+      "D. CHIRPS műholdas"
+    ],
+    "correct": "B",
+    "explanation": "ERA5-Land reanalízis 0,1 fokos felbontásban.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a gondolkodási lánc (chain-of-thought) napló előnye?",
+    "options": [
+      "A. Gyorsabb számítás",
+      "B. Minden döntés és diagnózis dokumentált",
+      "C. Kevesebb memóriát igényel",
+      "D. Determinisztikus eredményt ad"
+    ],
+    "correct": "B",
+    "explanation": "A gondolkodási lánc napló auditálható nyilvántartást hoz létre.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala GR4J kalibrált x1 értéke?",
+    "options": [
+      "A. 280 mm",
+      "B. 310 mm",
+      "C. 350 mm",
+      "D. 500 mm"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens hat iteráció után x1=310 mm-hez konvergált.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a 'hallucináció' kockázata az ágens AI-ban?",
+    "options": [
+      "A. A modell túl lassú",
+      "B. Hihetően hangzó de helytelen információk generálása",
+      "C. Az adatok elvesztése",
+      "D. A paraméterek nullára állása"
+    ],
+    "correct": "B",
+    "explanation": "Hallucináció: hihetően hangzó, de tényszerűen helytelen információk generálása.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrációs KGE-je az ágenses megközelítéssel?",
+    "options": [
+      "A. 0,65",
+      "B. 0,72",
+      "C. 0,78",
+      "D. 0,85"
+    ],
+    "correct": "C",
+    "explanation": "Az ágens KGE = 0,78 értéket ért el 6 iteráció után.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az SCE-UA hány futtatást igényel egy 10 paraméteres modellnél?",
+    "options": [
+      "A. 50-500",
+      "B. 5 000-20 000",
+      "C. 50 000-100 000",
+      "D. 500 000+"
+    ],
+    "correct": "B",
+    "explanation": "Az SCE-UA jellemzően 5 000-20 000 futtatást igényel.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala validációs KGE?",
+    "options": [
+      "A. 0,65",
+      "B. 0,72",
+      "C. 0,78",
+      "D. 0,82"
+    ],
+    "correct": "B",
+    "explanation": "A validációs KGE = 0,72, ami elfogadható csökkenés a kalibrációs 0,78-hoz képest.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik LLM rendelkezik 1M kontextussal?",
+    "options": [
+      "A. GPT-3",
+      "B. GPT-4",
+      "C. Claude Opus",
+      "D. BERT"
+    ],
+    "correct": "C",
+    "explanation": "A Claude Opus és a Gemini Ultra rendelkezik 1M tokenes kontextussal.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás összes modellfuttatása a Zala példában (kalibrálás+validáció+együttes)?",
+    "options": [
+      "A. 7",
+      "B. 14",
+      "C. 40",
+      "D. 47"
+    ],
+    "correct": "D",
+    "explanation": "6 (kalibrálás) + 1 (validáció) + 40 (együttes) = 47 futtatás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala folyó Zalaegerszegnél mért vízgyűjtő területe?",
+    "options": [
+      "A. 500 km²",
+      "B. 930 km²",
+      "C. 2620 km²",
+      "D. 5300 km²"
+    ],
+    "correct": "B",
+    "explanation": "A felső Zala vízgyűjtő Zalaegerszegnél 930 km².",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ember-a-hurokban (human-in-the-loop) elv lényege?",
+    "options": [
+      "A. Az MI teljesen autonóm",
+      "B. Az ágens segíti az embert, de nem helyettesíti az ítéletét",
+      "C. Az ember nem vesz részt",
+      "D. Csak az MI dönt"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens segíti és gyorsítja az emberi modellezőt, de nem helyettesíti az ítélőképességet.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala átlagos vízhozama Zalaegerszegnél?",
+    "options": [
+      "A. 2,1 m³/s",
+      "B. 4,82 m³/s",
+      "C. 28 m³/s",
+      "D. 82 m³/s"
+    ],
+    "correct": "B",
+    "explanation": "Átlagos vízhozam 4,82 m³/s a 930 km²-es vízgyűjtőn.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen adatbázisból származik a Zala vízhozamadata?",
+    "options": [
+      "A. USGS NWIS",
+      "B. GRDC",
+      "C. OVF data.vizugy.hu",
+      "D. SHMU"
+    ],
+    "correct": "C",
+    "explanation": "Az OVF data.vizugy.hu portálról, amely 2024 óta nyíltan elérhető.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala lefolyási tényezője?",
+    "options": [
+      "A. 0,10",
+      "B. 0,23",
+      "C. 0,38",
+      "D. 0,55"
+    ],
+    "correct": "B",
+    "explanation": "A lefolyási tényező 164/701 = 0,23, ésszerű közép-európai mezőgazdasági vízgyűjtőre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen felszínborítási adatot használ a Zala példa?",
+    "options": [
+      "A. WorldCover",
+      "B. CORINE Land Cover 2018",
+      "C. NLCD",
+      "D. GlobeLand30"
+    ],
+    "correct": "B",
+    "explanation": "Corine Land Cover 2018 a Copernicus Felszínmegfigyelő Szolgálattól.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala vízgyűjtő domináns talajtípusa?",
+    "options": [
+      "A. Homok",
+      "B. Iszapos vályog és agyagos vályog",
+      "C. Tőzeg",
+      "D. Kavics"
+    ],
+    "correct": "B",
+    "explanation": "Az ESDAC adatokból: iszapos vályog és agyagos vályog.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ágens első művelete a kalibrálásban?",
+    "options": [
+      "A. Optimalizálás indítása",
+      "B. Adatok betöltése és megvizsgálása",
+      "C. Paraméterhatárok beállítása",
+      "D. Validáció futtatása"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens először betölti és megvizsgálja a bemeneti adatokat, diagnosztikus statisztikákat számol.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala GR4J kalibrált x2 paramétere?",
+    "options": [
+      "A. -1,0 mm/nap",
+      "B. -0,4 mm/nap",
+      "C. 0,0 mm/nap",
+      "D. 0,84 mm/nap"
+    ],
+    "correct": "B",
+    "explanation": "x2 = -0,4 mm/nap, negatív: nettó vízveszteség a regionális talajvízrendszer felé.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen számítási megtakarítást biztosít az ágenses megközelítés az SCE-UA-val szemben?",
+    "options": [
+      "A. 2-szeres",
+      "B. 10-szeres",
+      "C. 100-1000-szeres",
+      "D. 1 000 000-szoros"
+    ],
+    "correct": "C",
+    "explanation": "Az ágens három nagyságrenddel kevesebb szimulációval ér el összehasonlítható eredményt.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala vízgyűjtő hány %-a szántóföld?",
+    "options": [
+      "A. 25%",
+      "B. 40%",
+      "C. 60%",
+      "D. 80%"
+    ],
+    "correct": "C",
+    "explanation": "A Corine adatok szerint a vízgyűjtő 60%-a szántóföld.",
+    "type": "mcq"
+  },
+  {
+    "question": "A KGE alpha összetevője a Zala kezdeti futtatásánál 0,72 volt. Mit jelent ez?",
+    "options": [
+      "A. Túl magas változékonyság",
+      "B. A modell alulbecsüli a változékonyságot",
+      "C. Tökéletes időzítés",
+      "D. Nagy térfogati torzítás"
+    ],
+    "correct": "B",
+    "explanation": "Alpha = 0,72 < 1: a szimulált vízhozamok túl 'laposak' (alacsony változékonyság).",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik adatforrás biztosít talajadatokat a Zala példához?",
+    "options": [
+      "A. SSURGO",
+      "B. ESDAC",
+      "C. SoilGrids",
+      "D. AGROTOPO"
+    ],
+    "correct": "B",
+    "explanation": "Az ESDAC (European Soil Database) 1 km felbontásban biztosítja a feltalaj textúrát.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala GR4J kalibrált x3 paramétere?",
+    "options": [
+      "A. 30 mm",
+      "B. 50 mm",
+      "C. 89 mm",
+      "D. 120 mm"
+    ],
+    "correct": "B",
+    "explanation": "x3 = 50 mm, alacsonyabb a GR4J ~100 mm-es mediánjánál.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala x3 alacsony értéke mit sugall a vízgyűjtőről?",
+    "options": [
+      "A. Lassú válasz",
+      "B. Hirtelen válaszú vízgyűjtő",
+      "C. Nincs lefolyás",
+      "D. Nagyon mély talaj"
+    ],
+    "correct": "B",
+    "explanation": "Az alacsony x3 hirtelen válaszra utal: éles csúcsok, korlátozott csillapítás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrált x4 paramétere?",
+    "options": [
+      "A. 1,0 nap",
+      "B. 1,8 nap",
+      "C. 2,5 nap",
+      "D. 4,0 nap"
+    ],
+    "correct": "B",
+    "explanation": "x4 = 1,8 nap, konzisztens a 930 km²-es vízgyűjtővel.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen gépi tanulási platform NEM létezik 2026-ban hidrológiai ágensekhez?",
+    "options": [
+      "A. Claude Agent SDK",
+      "B. OpenAI Assistants",
+      "C. Kulcsrakész 'hidrológiai modellezési ágens' termék",
+      "D. LangChain"
+    ],
+    "correct": "C",
+    "explanation": "Egyetlen nagy kereskedelmi platform sem kínál kulcsrakész hidrológiai ágenstermréket.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala példában a PBIAS a kalibrációs időszakban?",
+    "options": [
+      "A. -8,7%",
+      "B. -3,1%",
+      "C. -0,3%",
+      "D. +5,8%"
+    ],
+    "correct": "C",
+    "explanation": "PBIAS = -0,3%, elhanyagolható térfogati torzítás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala 2013. júniusi árvíz megfigyelt csúcsa?",
+    "options": [
+      "A. 45,3 m³/s",
+      "B. 63,7 m³/s",
+      "C. 82,1 m³/s",
+      "D. 120,5 m³/s"
+    ],
+    "correct": "C",
+    "explanation": "A 2013. júniusi árvízi csúcs: Q_megfigyelt = 82,1 m³/s.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses együttes 90%-os intervalluma a 2013-as árvízre?",
+    "options": [
+      "A. 40-60 m³/s",
+      "B. 64,3-91,7 m³/s",
+      "C. 75-85 m³/s",
+      "D. 90-120 m³/s"
+    ],
+    "correct": "B",
+    "explanation": "Az együttes 5.-95. percentilis: 64,3-91,7 m³/s, befoglalja a megfigyelt 82,1-et.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala példában hány tagú együttest generált az ágens a bizonytalanságelemzéshez?",
+    "options": [
+      "A. 10",
+      "B. 20",
+      "C. 40",
+      "D. 100"
+    ],
+    "correct": "C",
+    "explanation": "40 paraméterkészletből álló együttest generált.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az Oudin-képletben mi a λ értéke?",
+    "options": [
+      "A. 1,0 MJ/kg",
+      "B. 2,45 MJ/kg",
+      "C. 4,18 MJ/kg",
+      "D. 9,81 MJ/kg"
+    ],
+    "correct": "B",
+    "explanation": "λ = 2,45 MJ/kg a párolgás látens hője az Oudin-képletben.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala PET becslése az Oudin-képlettel átlagosan hány mm/év?",
+    "options": [
+      "A. 450",
+      "B. 550",
+      "C. 650",
+      "D. 750"
+    ],
+    "correct": "C",
+    "explanation": "A Zala vízgyűjtőre 46,8°É szélességnél az Oudin PET átlagosan 650 mm/évet ad.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ágenses megközelítés fő előnye a hagyományos optimalizálással szemben?",
+    "options": [
+      "A. Matematikai garanciák",
+      "B. Diagnosztikus gondolkodás és kevesebb modellfuttatás",
+      "C. Nagyobb paramétertér feltárása",
+      "D. Formális poszterior eloszlás"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens diagnosztizálja a hibákat és célzottan módosít, ami drasztikusan kevesebb futtatást igényel.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen típusú modell a GR4J az ágenses példában?",
+    "options": [
+      "A. Elosztott",
+      "B. Félig elosztott",
+      "C. Összevont fogalmi",
+      "D. Neurális hálózat"
+    ],
+    "correct": "C",
+    "explanation": "A GR4J összevont fogalmi csapadék-lefolyás modell négy paraméterrel.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "A BORG MOEA milyen típusú optimalizáló?",
+    "options": [
+      "A. Lokális",
+      "B. Globális egyélfüggvényes",
+      "C. Többcélfüggvényes evolúciós",
+      "D. Bayes-i"
+    ],
+    "correct": "C",
+    "explanation": "A BORG MOEA többcélfüggvényes evolúciós optimalizáló.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a reprodukálhatósági variancia problémája az ágens AI-ban?",
+    "options": [
+      "A. Az adatok változnak",
+      "B. Ugyanaz a prompt eltérő gondolkodási utakat produkálhat",
+      "C. A modell determinisztikus",
+      "D. A paraméterek rögzítettek"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek sztochasztikusak: ismételt futtatásoknál eltérő eredmények lehetségesek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen hőmérséklet-beállítás teszi az ágenst determinisztikussá?",
+    "options": [
+      "A. Hőmérséklet = 1,0",
+      "B. Hőmérséklet = 0,5",
+      "C. Hőmérséklet = 0",
+      "D. Hőmérséklet = 2,0"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet = 0 közel determinisztikussá teszi az LLM kimenetét.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Zala kalibrálás összesen hány gondolkodási lépést tartalmazott?",
+    "options": [
+      "A. 6",
+      "B. 10",
+      "C. 14",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Összesen 14 ágens gondolkodási lépés a 7 modellfuttatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágenses kalibrálás melyik módszert kiegészíti a legjobban?",
+    "options": [
+      "A. Kézi kalibrálás",
+      "B. DREAM formális bizonytalanságelemzés",
+      "C. Lineáris regresszió",
+      "D. Monte Carlo szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Az ágens a gyors feltáráshoz, a DREAM a formális bizonytalanságelemzéshez - kiegészítik egymást.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ágens AI három nagyságrenddel kevesebb szimulációval ér el hasonló eredményt.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés matematikai konvergencia-garanciával rendelkezik.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala a Balaton legnagyobb mellékfolyója.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A gondolkodási lánc napló auditálható nyilvántartást biztosít.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens képes a modellstruktúrát módosítani (pl. új tározó hozzáadása).",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrációs KGE = 0,78.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az LLM-ek determinisztikusak: ugyanaz a bemenet mindig azonos kimenetet ad.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ember-a-hurokban elv azt jelenti, hogy az MI teljesen autonóm.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során az ágens a KGE összetevőket használta diagnózisra.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A hallucináció kockázata azt jelenti, hogy az ágens téves de hihetően hangzó információt generál.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala felső vízgyűjtője 930 km².",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés formális poszterior eloszlást ad.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala vízgyűjtő 60%-a szántóföld.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens AI képes térbeli heterogenitást első elvekből értelmezni.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala GR4J x2 negatív értéke vízveszteséget jelez a regionális rendszer felé.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az SCE-UA diagnosztikus gondolkodást alkalmaz.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala lefolyási tényezője 0,23.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens 40 tagú együttest generált a bizonytalanságelemzéshez.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Claude Opus 1M tokenes kontextussal rendelkezik.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses kalibráció a DREAM helyettesítője.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala validációs PBIAS = -3,1%.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés minden döntését a gondolkodási lánc naplóban dokumentálja.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A data.vizugy.hu 2024 óta nyíltan elérhető.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens képes szabályozási ítéletet helyettesíteni.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás 7 összes modellfuttatást igényelt (6 kalibráció + 1 validáció).",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ERA5-Land 0,1 fokos felbontású.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J ezredmásodpercek alatt fut.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens a kalibrálás során fizikai ismereteket használ a paraméter-becsléshez.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A többcélú ágenses kalibrálás Pareto-frontot generál.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala validációs KGE = 0,72.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Dunning-Kruger ágens problémája: az ágens nem ismeri tudásának határait.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az LLM hőmérséklet = 0 beállítás teljesen reprodukálhatóvá teszi a kalibrálást.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens AI képes valóban új, ismeretlen helyzeteket megbízhatóan kezelni.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala példában a CORINE Land Cover 2018-at használták.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ESDAC 1 km felbontásban biztosít talajtextúra-adatot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az Oudin PET a Zala vízgyűjtőre átlagosan 650 mm/év.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás összesen 14 gondolkodási lépést tartalmazott.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens a paramétererezést szakterületi tudásból és nem véletlenszerűen választja.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A többcélú ágenses kalibrálás matematikai optimalizálásból mérlegelt tárgyalássá alakul.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala x3 = 50 mm alacsony értéke lassú válaszra utal.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens képes párhuzamosan több részvízgyűjtőt kalibrálni.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DREAM számítási költsége 10 perc/futtatásos SWAT modellnél 140 nap - 2,3 év.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala pannon üledékein ül, amelyek a Dunántúli regionális vízadó részei.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés legjobban gyors prototipizáláshoz alkalmazható.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GPT-5 128K tokenes kontextussal rendelkezik.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens a 2013. júniusi árvízi csúcsot a bizonytalansági sávon belülre becsülte.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A hagyományos optimalizálás (SCE-UA, DREAM) szakterületi tudást integrál.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrált paraméterkészlet: x1=310, x2=-0,4, x3=50, x4=1,8.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés átláthatósága magasabb, mint a hagyományos optimalizálásé.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala átlagos vízhozama 4,82 m³/s.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus GLO-30 DEM-et használták a Zala vízgyűjtő-lehatároláshoz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágenses megközelítés közvetlenül helyettesíti az emberi hidrológust.",
+    "correct": false,
+    "explanation": "Hamis: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala kalibrálás során x1 csökkentése növelte a változékonyságot.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GR4J modellnek két tározója van: termelési és útválasztási.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ágens LLM-minőségtől függő diagnosztikus gondolkodást alkalmaz.",
+    "correct": true,
+    "explanation": "Igaz: lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Zala ágenses kalibrálás _____ modellfuttatással konvergált.",
+    "correct": "6",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az LLM rövidítése: Large _____ Model.",
+    "correct": "Language",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala a _____ legnagyobb mellékfolyója.",
+    "correct": "Balaton",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrációs KGE = _____.",
+    "correct": "0,78",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs KGE = _____.",
+    "correct": "0,72",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala felső vízgyűjtő területe _____ km².",
+    "correct": "930",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala lefolyási tényezője _____.",
+    "correct": "0,23",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrált x1 = _____ mm.",
+    "correct": "310",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrált x2 = _____ mm/nap.",
+    "correct": "−0,4",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrált x3 = _____ mm.",
+    "correct": "50",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrált x4 = _____ nap.",
+    "correct": "1,8",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens _____ tagú együttest generált a bizonytalanságelemzéshez.",
+    "correct": "40",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala átlagos vízhozama _____ m³/s.",
+    "correct": "4,82",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az SCE-UA _____-_____ modellfuttatást igényel.",
+    "correct": "5 000-20 000",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A DREAM _____-_____ modellfuttatást igényel.",
+    "correct": "20 000-100 000",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens AI _____-_____ modellfuttatást igényel.",
+    "correct": "50-500",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás összesen _____ gondolkodási lépést tartalmazott.",
+    "correct": "14",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens gondolkodási nyomvonalát _____ lánc naplónak nevezzük.",
+    "correct": "gondolkodási",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ERA5-Land felbontása _____ fok.",
+    "correct": "0,1",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az Oudin PET a Zala vízgyűjtőre ≈ _____ mm/év.",
+    "correct": "650",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala vízgyűjtő _____%-a szántóföld.",
+    "correct": "60",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala PBIAS a kalibrációban = _____%.",
+    "correct": "−0,3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala PBIAS a validációban = _____%.",
+    "correct": "−3,1",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Claude Opus kontextusablaka _____ token.",
+    "correct": "1M",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ az ágens AI legveszélyesebb meghibásodási módja.",
+    "correct": "hallucináció",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ember-a-_____ elv az emberi felügyelet fontosságát hangsúlyozza.",
+    "correct": "hurokban",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala 2013-as árvízi csúcs: Q_megfigyelt = _____ m³/s.",
+    "correct": "82,1",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala együttes 90%-os intervalluma: _____-91,7 m³/s.",
+    "correct": "64,3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A data._____.hu portálon érhetők el az OVF adatok.",
+    "correct": "vizugy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala teljes kalibrálás összesen _____ futtatást igényelt.",
+    "correct": "47",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Copernicus _____ DEM-et használták a vízgyűjtő-lehatároláshoz.",
+    "correct": "GLO-30",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az LLM hőmérséklet = _____ a determinisztikus kimenethez.",
+    "correct": "0",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala a _____ folyóvölgy pannon üledékein ül.",
+    "correct": "Zala",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A SWAT kalibrálás 10 perc/futtatással ágenses megközelítéssel _____-_____ nap.",
+    "correct": "0,3-3,5",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás az _____ algoritmust nem igényelte.",
+    "correct": "SCE-UA",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágenses kalibrálás _____ alapú diagnosztikát alkalmaz.",
+    "correct": "KGE-felbontás",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala domináns talajtípusa _____ vályog.",
+    "correct": "iszapos",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ágens a _____ paraméter csökkentésével javította a változékonyságot.",
+    "correct": "x3",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala erdős területe _____%.",
+    "correct": "25",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A _____ SDK az Anthropic ágenskeretrendszere.",
+    "correct": "Claude Agent",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ éves kalibrációs időszakot használt.",
+    "correct": "2012-2018",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala validációs időszaka _____-_____.",
+    "correct": "2019-2020",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GR4J _____ paraméteres összevont modell.",
+    "correct": "négy",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala kalibrálás bemelegedési időszaka _____-_____.",
+    "correct": "2010-2011",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Zala _____ szélességi fokon helyezkedik el.",
+    "correct": "46,8°É",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Ismertesse az ágensalapú MI kalibrálás működési elvét és előnyeit!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hasonlítsa össze az SCE-UA, DREAM és ágens AI megközelítéseket!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mutassa be a Zala folyó GR4J ágenses kalibrálásának lépéseit!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a gondolkodási lánc napló szerepe az auditálhatóságban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezeli az ágens a többcélú kalibrálást?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a hallucináció kockázata az ágenses hidrológiai modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágensvezetett bizonytalanság-számszerűsítést!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható az ágenses kalibrálás reprodukálhatósága?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen korlátai vannak az ágens AI-nak a hidrológiai modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ember-a-hurokban elvet az ágenses modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens AI a paraméterérzékenység feltárására?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen LLM-képességek szükségesek a hidrológiai ágensekhez?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala vízgyűjtő adatforrásait és előkészítését!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan diagnosztizálja az ágens a KGE összetevők alapján a modellhibákat?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen eszközintegrációs kihívások vannak az ágenses hidrológiában?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Dunning-Kruger ágens problémáját!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágenses megközelítés SWAT modellekhez?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség az ágenses és a Pareto-optimalizálás között?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás 2026-os állapotát!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen platformok érhetők el az ágenses hidrológiai modellezéshez?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a modellhibák fizikai diagnózisára?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen etikai megfontolások merülnek fel az ágenses modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala GR4J paraméterek fizikai értelmezését!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alakítja át az ágens AI a kalibrálási munkafolyamatot?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az ágenses és a hagyományos módszerek optimális kombinációja?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala bizonytalanságelemzés eredményeit!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágenses megközelítés más régiókban (Ázsia, Afrika)?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen fejlesztések várhatók az ágenses hidrológiai modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás számítási hatékonyságát!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a validáció szerepe az ágenses kalibrálásban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a csapadékadat minőségellenőrzésére?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szerepet játszik a kontextusablak mérete az ágenses munkamenetekben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a többcélú ágenses kalibrálás Zala példáját!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezeli az ágens az ekvifinalitás problémáját?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a mag-alapú együttes megközelítés az ágenses kalibrálásban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás dokumentációs előnyeit!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a modellstruktúra-problémák jelzésére?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen adatvédelmi kérdések merülnek fel az ágenses modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala ERA5-Land adatainak feldolgozását!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a hómoduló kalibrálásához?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség a determinisztikus és sztochasztikus ágenskonfiguráció között?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a SWAT ágenses kalibrálásának kihívásait!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan segíti az ágens a vízgazdálkodási döntéshozatalt?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen kommunikációs előnyöket nyújt az ágenses megközelítés?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala vízgyűjtő geológiai jellemzőit és hatásukat!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a klímaváltozási forgatókönyvek értékeléséhez?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a gondolkodási lánc napló helye a szabályozási alkalmazásokban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás és a PEST összehasonlítását!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a vízhozamgörbe-hibák diagnosztizálására?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen jövőképet nyújt az ágenses hidrológiai modellezés?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses megközelítés hatékonyságát a SWAT esetében!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens párhuzamos kalibrálásra több vízgyűjtőn?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a BORG MOEA és az ágenses többcélú kalibrálás közötti különbség?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala ágenses kalibrálás fizikai diagnózisait!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezelhetők az LLM verziózási kérdések az ágenses kalibrálásban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen tanítási adatokon alapul az ágens hidrológiai tudása?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses megközelítés és a neurális hálózatok viszonyát!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens az árvízkockázat-értékelésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az eszközhasználat (tool use) szerepe az ágenses modellezésben?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Zala ágenses kalibrálás globális alkalmazhatóságát!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a hidrológiai modellezés oktatásában?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szempontok alapján választható ki az LLM az ágenses kalibráláshoz?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás előnyeit a környezeti hatástanulmányokban!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a többmodelles ensemble kalibráláshoz?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Zala ágenses kalibrálás és a Hernád hagyományos kalibrálás összehasonlítása?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ágenses kalibrálás korlátait a térbeli heterogenitás kezelésében!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágens a valós idejű adatasszimilációhoz?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen intézményi kihívásokat jelent az ágenses AI bevezetése a vízgazdálkodásban?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a 24. fejezet főbb tanulságait a gyakorló hidrológus számára!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható az ágenses megközelítés kis számítási erőforrással rendelkező intézményeknél?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Zala kalibrálás tanulsága az ágenses és hagyományos módszerek integrációjáról?",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát a részletes tárgyalásért.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás jövőjét a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás jövőjét a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás jövőjét a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás jövőjét a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás jövőjét a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás hatékonyságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás átláthatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás korlátait a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  },
+  {
+    "question": "A 24. fejezet alapján fejtse ki az ágensalapú MI kalibrálás alkalmazhatóságát a hidrológiai modellezésben!",
+    "explanation": "Lásd a 24. fejezet vonatkozó szakaszát.",
+    "type": "essay"
+  }
+]

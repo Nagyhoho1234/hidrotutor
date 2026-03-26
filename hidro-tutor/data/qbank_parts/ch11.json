@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "The constant support area method defines streams where flow accumulation:",
+    "options": [
+      "A) Is below threshold T",
+      "B) Equals or exceeds threshold T",
+      "C) Equals zero",
+      "D) Is negative"
+    ],
+    "correct": "B",
+    "explanation": "Stream(c) = 1 if A(c) >= T, else 0."
+  },
+  {
+    "type": "mcq",
+    "question": "A low stream definition threshold produces:",
+    "options": [
+      "A) A sparse network",
+      "B) Only main rivers",
+      "C) A very dense network",
+      "D) No streams"
+    ],
+    "correct": "C",
+    "explanation": "Low threshold classifies more cells as streams."
+  },
+  {
+    "type": "mcq",
+    "question": "A threshold of T=100 cells on a 10 m DEM corresponds to:",
+    "options": [
+      "A) 100 m2",
+      "B) 1,000 m2",
+      "C) 10,000 m2 (1 ha)",
+      "D) 100,000 m2"
+    ],
+    "correct": "C",
+    "explanation": "100 cells * 100 m2/cell = 10,000 m2 = 1 hectare."
+  },
+  {
+    "type": "mcq",
+    "question": "Drainage density D_d is defined as:",
+    "options": [
+      "A) Total stream length / watershed area",
+      "B) Watershed area / total stream length",
+      "C) Number of streams / watershed area",
+      "D) Stream order / watershed area"
+    ],
+    "correct": "A",
+    "explanation": "D_d = sum(L) / A, units of km^-1."
+  },
+  {
+    "type": "mcq",
+    "question": "Mean hillslope length B relates to drainage density as:",
+    "options": [
+      "A) B = 2*D_d",
+      "B) B = 1/(2*D_d)",
+      "C) B = D_d^2",
+      "D) B = sqrt(D_d)"
+    ],
+    "correct": "B",
+    "explanation": "B = 1/(2*D_d), derived from a simplified rectangular catchment."
+  },
+  {
+    "type": "mcq",
+    "question": "A drainage density of 2.0 km^-1 implies mean hillslope length of:",
+    "options": [
+      "A) 100 m",
+      "B) 250 m",
+      "C) 500 m",
+      "D) 1000 m"
+    ],
+    "correct": "B",
+    "explanation": "B = 1/(2*2.0) = 0.25 km = 250 m."
+  },
+  {
+    "type": "mcq",
+    "question": "On a log-log plot, drainage density vs threshold has a slope close to:",
+    "options": [
+      "A) -0.5",
+      "B) -1.0",
+      "C) +0.5",
+      "D) +1.0"
+    ],
+    "correct": "A",
+    "explanation": "Threshold is in area units (length^2), density is 1/length, so slope approximately -0.5."
+  },
+  {
+    "type": "mcq",
+    "question": "Montgomery and Dietrich (1992) argued that:",
+    "options": [
+      "A) A single threshold works everywhere",
+      "B) Channel initiation varies with local terrain",
+      "C) D-infinity should replace D8",
+      "D) Stream order is unnecessary"
+    ],
+    "correct": "B",
+    "explanation": "They showed a single threshold cannot correctly represent channel initiation across diverse terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "The area-slope threshold defines channels where:",
+    "options": [
+      "A) A exceeds T",
+      "B) A*S^n exceeds a threshold",
+      "C) S exceeds T",
+      "D) A/S exceeds T"
+    ],
+    "correct": "B",
+    "explanation": "Channel initiation depends on both flow volume (A) and erosive power (S)."
+  },
+  {
+    "type": "mcq",
+    "question": "The Peuker-Douglas algorithm identifies valley cells by:",
+    "options": [
+      "A) Flow accumulation thresholding",
+      "B) Examining 2x2 windows for the highest cell",
+      "C) Computing Strahler orders",
+      "D) Measuring stream drops"
+    ],
+    "correct": "B",
+    "explanation": "Each 2x2 window's highest cell is unflagged; remaining flagged cells are valley cells."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Peuker-Douglas method, a cell that is never the highest in any 2x2 window is classified as:",
+    "options": [
+      "A) A ridge cell",
+      "B) A valley (upward-curved) cell",
+      "C) A flat cell",
+      "D) An outlet cell"
+    ],
+    "correct": "B",
+    "explanation": "Valley-bottom cells are never the highest in their windows."
+  },
+  {
+    "type": "mcq",
+    "question": "The stream drop t-test was developed by:",
+    "options": [
+      "A) Montgomery and Dietrich",
+      "B) Tarboton, Bras, and Rodriguez-Iturbe",
+      "C) O'Callaghan and Mark",
+      "D) Beven and Kirkby"
+    ],
+    "correct": "B",
+    "explanation": "Tarboton, Bras, and Rodriguez-Iturbe (1991, 1992) developed the stream drop test."
+  },
+  {
+    "type": "mcq",
+    "question": "The constant stream drop property was first observed by:",
+    "options": [
+      "A) Horton (1945)",
+      "B) Strahler (1957)",
+      "C) Broscoe (1959)",
+      "D) Tarboton (1997)"
+    ],
+    "correct": "C",
+    "explanation": "Broscoe (1959) first observed that mean stream drops are approximately constant across orders."
+  },
+  {
+    "type": "mcq",
+    "question": "A stream drop is the elevation difference between:",
+    "options": [
+      "A) Adjacent cells",
+      "B) Upstream and downstream ends of a Strahler stream",
+      "C) Two confluences",
+      "D) Ridgeline and outlet"
+    ],
+    "correct": "B",
+    "explanation": "The drop spans the full length of a Strahler stream of a given order."
+  },
+  {
+    "type": "mcq",
+    "question": "In the stream drop test, if |t| > 2:",
+    "options": [
+      "A) The threshold is correct",
+      "B) First-order drops match higher orders",
+      "C) The threshold is too fine (too many streams)",
+      "D) The threshold is too coarse"
+    ],
+    "correct": "C",
+    "explanation": "Significant difference means first-order 'streams' include non-channel hillslope segments."
+  },
+  {
+    "type": "mcq",
+    "question": "The objective threshold is the smallest T where:",
+    "options": [
+      "A) |t| > 2",
+      "B) |t| < 2",
+      "C) t = 0",
+      "D) t is undefined"
+    ],
+    "correct": "B",
+    "explanation": "The finest threshold consistent with the constant drop property."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, the objective threshold was:",
+    "options": [
+      "A) T = 50 cells",
+      "B) T = 100 cells",
+      "C) T = 200 cells",
+      "D) T = 500 cells"
+    ],
+    "correct": "C",
+    "explanation": "At T=200, |t| = 1.8 < 2, the first threshold below the critical value."
+  },
+  {
+    "type": "mcq",
+    "question": "Strahler stream ordering rule: when two order-n streams merge:",
+    "options": [
+      "A) Downstream remains order n",
+      "B) Downstream becomes order n+1",
+      "C) Downstream becomes order 2n",
+      "D) Downstream becomes order n-1"
+    ],
+    "correct": "B",
+    "explanation": "Equal-order merger increments the order by one."
+  },
+  {
+    "type": "mcq",
+    "question": "When a first-order stream joins a second-order stream:",
+    "options": [
+      "A) Downstream becomes third-order",
+      "B) Downstream remains second-order",
+      "C) Downstream becomes first-order",
+      "D) Both orders are averaged"
+    ],
+    "correct": "B",
+    "explanation": "Unequal-order merger retains the higher order."
+  },
+  {
+    "type": "mcq",
+    "question": "A first-order stream is:",
+    "options": [
+      "A) The largest river in the basin",
+      "B) A headwater channel with no tributaries",
+      "C) Any stream below the threshold",
+      "D) The outlet stream"
+    ],
+    "correct": "B",
+    "explanation": "First-order streams originate at sources with no tributaries."
+  },
+  {
+    "type": "mcq",
+    "question": "Horton's bifurcation ratio R_b typically falls between:",
+    "options": [
+      "A) 1 and 2",
+      "B) 3 and 5",
+      "C) 7 and 10",
+      "D) 15 and 20"
+    ],
+    "correct": "B",
+    "explanation": "R_b = N_omega / N_(omega+1), typically 3-5."
+  },
+  {
+    "type": "mcq",
+    "question": "Horton's length ratio R_L typically falls between:",
+    "options": [
+      "A) 0.1 and 0.5",
+      "B) 1.5 and 3.5",
+      "C) 5 and 10",
+      "D) 10 and 20"
+    ],
+    "correct": "B",
+    "explanation": "R_L = mean length of order (omega+1) / mean length of order omega."
+  },
+  {
+    "type": "mcq",
+    "question": "Horton's area ratio R_A typically falls between:",
+    "options": [
+      "A) 1 and 2",
+      "B) 3 and 6",
+      "C) 8 and 12",
+      "D) 15 and 20"
+    ],
+    "correct": "B",
+    "explanation": "R_A is often close to R_L^2."
+  },
+  {
+    "type": "mcq",
+    "question": "A catchment is defined as the area draining directly to:",
+    "options": [
+      "A) The watershed outlet",
+      "B) A single stream link",
+      "C) All streams in the basin",
+      "D) The ridgeline"
+    ],
+    "correct": "B",
+    "explanation": "Each catchment drains to one link without passing through another."
+  },
+  {
+    "type": "mcq",
+    "question": "The one-to-one correspondence between streams and catchments is:",
+    "options": [
+      "A) Approximate",
+      "B) A foundational principle",
+      "C) Only true for D8",
+      "D) Valid only in mountain terrain"
+    ],
+    "correct": "B",
+    "explanation": "Every stream link has exactly one corresponding catchment."
+  },
+  {
+    "type": "mcq",
+    "question": "Outlet snapping is necessary because:",
+    "options": [
+      "A) DEMs have no streams",
+      "B) User coordinates rarely fall exactly on DEM stream cells",
+      "C) Streams move seasonally",
+      "D) All outlets are on ridgelines"
+    ],
+    "correct": "B",
+    "explanation": "GPS accuracy, datum differences, and DEM resolution cause misalignment."
+  },
+  {
+    "type": "mcq",
+    "question": "In TauDEM, outlet snapping is performed by:",
+    "options": [
+      "A) Snap Pour Point",
+      "B) Move Outlets to Streams",
+      "C) Stream to Feature",
+      "D) Watershed"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM's Move Outlets to Streams traces along flow directions to the nearest stream."
+  },
+  {
+    "type": "mcq",
+    "question": "A typical snap distance for gauge locations is:",
+    "options": [
+      "A) 1-5 m",
+      "B) 10-20 m",
+      "C) 100-500 m",
+      "D) 5-10 km"
+    ],
+    "correct": "C",
+    "explanation": "100-500 meters accommodates GPS uncertainty and DEM resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "After snapping, verification compares DEM-derived area to:",
+    "options": [
+      "A) The DEM resolution",
+      "B) Known drainage area from gauge records",
+      "C) The number of streams",
+      "D) The snap distance"
+    ],
+    "correct": "B",
+    "explanation": "Agreement within 5% confirms successful snapping."
+  },
+  {
+    "type": "mcq",
+    "question": "The Stream to Feature conversion traces each link as:",
+    "options": [
+      "A) A point",
+      "B) A polygon",
+      "C) A polyline through cell centers",
+      "D) A raster"
+    ],
+    "correct": "C",
+    "explanation": "Each link becomes a polyline with vertices at cell centers."
+  },
+  {
+    "type": "mcq",
+    "question": "During vector conversion, simplification should be disabled when:",
+    "options": [
+      "A) Making maps for publication",
+      "B) Vector streams must correspond to raster streams",
+      "C) The network is very small",
+      "D) Using D-infinity"
+    ],
+    "correct": "B",
+    "explanation": "Simplification disconnects vector from raster; disable for hydrologic analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "The grid code links:",
+    "options": [
+      "A) Only streams to each other",
+      "B) Stream polylines, catchment polygons, and drainage points",
+      "C) Only catchments to DEMs",
+      "D) Only outlets to inlets"
+    ],
+    "correct": "B",
+    "explanation": "Grid code is the relational key connecting all three feature classes."
+  },
+  {
+    "type": "mcq",
+    "question": "The Arc Hydro data model was formalized by:",
+    "options": [
+      "A) Tarboton (1997)",
+      "B) Maidment (2002)",
+      "C) Horton (1945)",
+      "D) Montgomery and Dietrich (1992)"
+    ],
+    "correct": "B",
+    "explanation": "David Maidment and colleagues published Arc Hydro: GIS for Water Resources in 2002."
+  },
+  {
+    "type": "mcq",
+    "question": "Arc Hydro uses _____ as a universal identifier system.",
+    "options": [
+      "A) COMID",
+      "B) HydroID",
+      "C) HYRIV_ID",
+      "D) Strahler order"
+    ],
+    "correct": "B",
+    "explanation": "HydroID assigns unique identifiers across all feature classes."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus contains approximately:",
+    "options": [
+      "A) 27,000 reaches",
+      "B) 270,000 reaches",
+      "C) 2.7 million reaches",
+      "D) 27 million reaches"
+    ],
+    "correct": "C",
+    "explanation": "2.7 million reaches covering 5.1 million km of streams."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-Hydro is produced by:",
+    "options": [
+      "A) USGS",
+      "B) OVF",
+      "C) Copernicus Land Monitoring Service",
+      "D) HydroSHEDS"
+    ],
+    "correct": "C",
+    "explanation": "EU-Hydro from Copernicus provides pan-European river network data."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroSHEDS HydroBASINS has how many hierarchical levels?",
+    "options": [
+      "A) 3",
+      "B) 6",
+      "C) 12",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "12 levels from continental basins (level 1) to small headwater catchments (level 12)."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroRIVERS contains over:",
+    "options": [
+      "A) 800,000 reaches",
+      "B) 8 million reaches",
+      "C) 80 million reaches",
+      "D) 800 million reaches"
+    ],
+    "correct": "B",
+    "explanation": "Over 8 million river reaches globally."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's OVF hydrographic database became open data in:",
+    "options": [
+      "A) 2010",
+      "B) 2018",
+      "C) July 2024",
+      "D) 2026"
+    ],
+    "correct": "C",
+    "explanation": "OVF opened data.vizugy.hu as open data in July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "The Logan River watershed drains approximately:",
+    "options": [
+      "A) 55 km2",
+      "B) 554 km2",
+      "C) 5,540 km2",
+      "D) 55,400 km2"
+    ],
+    "correct": "B",
+    "explanation": "USGS reports 554 km2 for Logan River near Logan, UT."
+  },
+  {
+    "type": "mcq",
+    "question": "The Logan River is a _____ order stream.",
+    "options": [
+      "A) Second",
+      "B) Third",
+      "C) Fourth",
+      "D) Fifth"
+    ],
+    "correct": "C",
+    "explanation": "The Logan River is a fourth-order stream."
+  },
+  {
+    "type": "mcq",
+    "question": "Peter Sinks in the Logan River watershed holds the US record for:",
+    "options": [
+      "A) Highest temperature",
+      "B) Lowest temperature",
+      "C) Most rainfall",
+      "D) Deepest lake"
+    ],
+    "correct": "B",
+    "explanation": "US record low of -56.3 C recorded at Peter Sinks."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sajo River is a tributary of the:",
+    "options": [
+      "A) Danube",
+      "B) Tisza",
+      "C) Drava",
+      "D) Raba"
+    ],
+    "correct": "B",
+    "explanation": "The Sajo is a major left-bank tributary of the Tisza."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sajo's Hungarian catchment covers approximately:",
+    "options": [
+      "A) 1,270 km2",
+      "B) 12,700 km2",
+      "C) 127 km2",
+      "D) 127,000 km2"
+    ],
+    "correct": "B",
+    "explanation": "Including the transboundary portion, approximately 12,700 km2."
+  },
+  {
+    "type": "mcq",
+    "question": "HD72/EOV coordinate system has EPSG code:",
+    "options": [
+      "A) 4326",
+      "B) 23700",
+      "C) 32634",
+      "D) 3035"
+    ],
+    "correct": "B",
+    "explanation": "HD72/EOV is EPSG:23700."
+  },
+  {
+    "type": "mcq",
+    "question": "Stream burning is most important for:",
+    "options": [
+      "A) Steep mountain terrain",
+      "B) Flat lowland areas",
+      "C) Desert terrain",
+      "D) Urban areas only"
+    ],
+    "correct": "B",
+    "explanation": "Flat terrain requires imposed drainage to prevent routing errors."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS ready-to-use Watershed tool uses pre-processed:",
+    "options": [
+      "A) LiDAR data",
+      "B) SRTM data stored in ESRI's cloud",
+      "C) Local DEM data",
+      "D) Aerial photographs"
+    ],
+    "correct": "B",
+    "explanation": "Pre-computed global SRTM flow direction and accumulation."
+  },
+  {
+    "type": "mcq",
+    "question": "The National Water Model produces forecasts for:",
+    "options": [
+      "A) 4,000 gauge locations",
+      "B) 100,000 points",
+      "C) 2.7 million reaches",
+      "D) 27 million cells"
+    ],
+    "correct": "C",
+    "explanation": "Every NHDPlus reach: 2.7 million forecast points."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM's atmospheric forcing comes from:",
+    "options": [
+      "A) ERA5",
+      "B) HRRR (3 km, hourly)",
+      "C) ECMWF ENS",
+      "D) ALADIN"
+    ],
+    "correct": "B",
+    "explanation": "High-Resolution Rapid Refresh weather model."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM's land surface model is:",
+    "options": [
+      "A) LISFLOOD",
+      "B) VIC",
+      "C) Noah-MP",
+      "D) TOPMODEL"
+    ],
+    "correct": "C",
+    "explanation": "Noah-MP computes runoff generation."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS is operated by:",
+    "options": [
+      "A) USGS",
+      "B) ECMWF/Copernicus",
+      "C) OVF",
+      "D) NASA"
+    ],
+    "correct": "B",
+    "explanation": "European Centre for Medium-Range Weather Forecasts under Copernicus."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS uses which hydrological model?",
+    "options": [
+      "A) Noah-MP",
+      "B) LISFLOOD",
+      "C) TOPMODEL",
+      "D) HEC-HMS"
+    ],
+    "correct": "B",
+    "explanation": "LISFLOOD distributed model at 5 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS ensemble forecasting uses how many members?",
+    "options": [
+      "A) 10",
+      "B) 21",
+      "C) 51",
+      "D) 100"
+    ],
+    "correct": "C",
+    "explanation": "51-member ECMWF ensemble."
+  },
+  {
+    "type": "mcq",
+    "question": "GloFAS provides global flood forecasts at resolution:",
+    "options": [
+      "A) 1 km",
+      "B) 0.05 degrees (~5 km)",
+      "C) 30 m",
+      "D) 1 degree"
+    ],
+    "correct": "B",
+    "explanation": "0.05-degree resolution globally."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's national flood forecasting uses:",
+    "options": [
+      "A) HYDROINFO (hydroinfo.hu)",
+      "B) USGS NWIS",
+      "C) GloFAS only",
+      "D) Google Earth Engine"
+    ],
+    "correct": "A",
+    "explanation": "OVF's HYDROINFO provides real-time water levels and forecasts."
+  },
+  {
+    "type": "mcq",
+    "question": "OVF provides real-time data for how many river sections?",
+    "options": [
+      "A) 12",
+      "B) 98",
+      "C) 500",
+      "D) 2,700"
+    ],
+    "correct": "B",
+    "explanation": "98 sections of the Danube, Tisza, and Drava-Mura systems."
+  },
+  {
+    "type": "mcq",
+    "question": "DEM-based delineation assumes water flows:",
+    "options": [
+      "A) Underground through karst",
+      "B) Downhill across the surface",
+      "C) Through storm sewers",
+      "D) Along political boundaries"
+    ],
+    "correct": "B",
+    "explanation": "Surface flow following topographic gradients."
+  },
+  {
+    "type": "mcq",
+    "question": "Karst terrain violates this assumption because:",
+    "options": [
+      "A) Water flows uphill",
+      "B) Water enters sinkholes and resurfaces elsewhere",
+      "C) There is no precipitation",
+      "D) The DEM has infinite resolution"
+    ],
+    "correct": "B",
+    "explanation": "Underground conduits bypass surface watersheds."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's Aggtelek Karst is:",
+    "options": [
+      "A) A flat plain",
+      "B) A UNESCO World Heritage Site with karst features",
+      "C) An artificial reservoir",
+      "D) A volcanic region"
+    ],
+    "correct": "B",
+    "explanation": "UNESCO site where surface water disappears into dolines."
+  },
+  {
+    "type": "mcq",
+    "question": "Losing streams cause DEM-derived area to:",
+    "options": [
+      "A) Underestimate contributing area",
+      "B) Overestimate effective contributing area",
+      "C) Be exactly correct",
+      "D) Be negative"
+    ],
+    "correct": "B",
+    "explanation": "Water lost to subsurface means less reaches the downstream gauge."
+  },
+  {
+    "type": "mcq",
+    "question": "Urban storm sewers cause DEM delineation to show:",
+    "options": [
+      "A) The engineered drainage area",
+      "B) The pre-development topographic watershed",
+      "C) The correct modern watershed",
+      "D) No watershed at all"
+    ],
+    "correct": "B",
+    "explanation": "Sewers bypass surface topography."
+  },
+  {
+    "type": "mcq",
+    "question": "For area verification, agreement within _____ is considered good.",
+    "options": [
+      "A) 0.1%",
+      "B) 1%",
+      "C) 5%",
+      "D) 25%"
+    ],
+    "correct": "C",
+    "explanation": "Within 5% is good; within 2% is excellent."
+  },
+  {
+    "type": "mcq",
+    "question": "Horton ratios outside expected ranges may indicate:",
+    "options": [
+      "A) Perfect delineation",
+      "B) Problems with DEM, threshold, or algorithm",
+      "C) A very large watershed",
+      "D) Too many gauges"
+    ],
+    "correct": "B",
+    "explanation": "Anomalous ratios signal potential issues."
+  },
+  {
+    "type": "mcq",
+    "question": "Typical temperate mountain drainage density:",
+    "options": [
+      "A) 0.1-0.3 km^-1",
+      "B) 1-3 km^-1",
+      "C) 5-10 km^-1",
+      "D) 20-50 km^-1"
+    ],
+    "correct": "B",
+    "explanation": "1-3 km^-1 for temperate mountain watersheds."
+  },
+  {
+    "type": "mcq",
+    "question": "Flat lowland drainage density:",
+    "options": [
+      "A) 0.3-0.8 km^-1",
+      "B) 3-5 km^-1",
+      "C) 10-20 km^-1",
+      "D) 50+ km^-1"
+    ],
+    "correct": "A",
+    "explanation": "0.3-0.8 km^-1 for flat lowlands."
+  },
+  {
+    "type": "mcq",
+    "question": "The RAPID routing model is used in:",
+    "options": [
+      "A) EFAS",
+      "B) The US National Water Model",
+      "C) GloFAS",
+      "D) TOPMODEL"
+    ],
+    "correct": "B",
+    "explanation": "RAPID propagates flow through NHDPlus network in the NWM."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS forecast range is up to:",
+    "options": [
+      "A) 6 hours",
+      "B) 18 hours",
+      "C) 15 days",
+      "D) 1 year"
+    ],
+    "correct": "C",
+    "explanation": "Medium-range forecasts up to 15 days."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM short-range forecast extends:",
+    "options": [
+      "A) 1 hour",
+      "B) 18 hours",
+      "C) 10 days",
+      "D) 30 days"
+    ],
+    "correct": "B",
+    "explanation": "Short-range forecast of 18 hours."
+  },
+  {
+    "type": "mcq",
+    "question": "EU Water Framework Directive organizes waters into:",
+    "options": [
+      "A) HUC units",
+      "B) River Basin Districts",
+      "C) Census tracts",
+      "D) Grid cells"
+    ],
+    "correct": "B",
+    "explanation": "River Basin Districts are the largest WFD units."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's territory falls within which River Basin District?",
+    "options": [
+      "A) Rhine",
+      "B) Danube",
+      "C) Tisza (separate)",
+      "D) Elbe"
+    ],
+    "correct": "B",
+    "explanation": "All of Hungary is in the Danube River Basin District."
+  },
+  {
+    "type": "mcq",
+    "question": "The Peuker-Douglas combined with stream drop test is the preferred method in:",
+    "options": [
+      "A) ArcGIS only",
+      "B) TauDEM",
+      "C) GRASS GIS",
+      "D) SAGA GIS"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM implements this combined approach."
+  },
+  {
+    "type": "mcq",
+    "question": "NHDPlus construction took approximately:",
+    "options": [
+      "A) 6 months",
+      "B) 2 years",
+      "C) 20 years",
+      "D) 50 years"
+    ],
+    "correct": "C",
+    "explanation": "Construction spanned approximately 20 years."
+  },
+  {
+    "type": "mcq",
+    "question": "NED RMSE is approximately:",
+    "options": [
+      "A) 0.1 m",
+      "B) 2.34 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "The National Elevation Dataset has an RMSE of about 2.34 meters."
+  },
+  {
+    "type": "mcq",
+    "question": "Watershed boundary discrepancies between 10 m and 30 m DEMs are typically:",
+    "options": [
+      "A) 1-5 m",
+      "B) 50-200 m",
+      "C) 1-5 km",
+      "D) 10-50 km"
+    ],
+    "correct": "B",
+    "explanation": "50-200 meters along the boundary, with larger deviations at saddle points."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sajo River in Slovakia is called:",
+    "options": [
+      "A) Slana",
+      "B) Bodrog",
+      "C) Vah",
+      "D) Hron"
+    ],
+    "correct": "A",
+    "explanation": "The Sajo is called Slana in Slovakia."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Sajo watershed, which DEM provides seamless transboundary coverage?",
+    "options": [
+      "A) DDM-5",
+      "B) Copernicus DEM",
+      "C) NED",
+      "D) USGS 3DEP"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus DEM covers both Hungary and Slovakia seamlessly."
+  },
+  {
+    "type": "mcq",
+    "question": "In the slope-area relationship, S is proportional to A^(-theta) where theta is typically:",
+    "options": [
+      "A) 0.1",
+      "B) 0.5",
+      "C) 1.0",
+      "D) 2.0"
+    ],
+    "correct": "B",
+    "explanation": "The concavity index theta is typically around 0.5 for fluvial channels."
+  },
+  {
+    "type": "mcq",
+    "question": "The slope-area inflection point corresponds to:",
+    "options": [
+      "A) The watershed outlet",
+      "B) The channelization threshold",
+      "C) The ridgeline",
+      "D) Sea level"
+    ],
+    "correct": "B",
+    "explanation": "The transition from convex hillslopes to concave channels."
+  },
+  {
+    "type": "mcq",
+    "question": "Smith and Bretherton (1972) provided the physical basis for the constant drop property through:",
+    "options": [
+      "A) Field measurements",
+      "B) Form instability theory",
+      "C) Remote sensing",
+      "D) Laboratory experiments"
+    ],
+    "correct": "B",
+    "explanation": "Form instability theory explains how channelization produces networks with consistent geometric properties."
+  },
+  {
+    "type": "mcq",
+    "question": "The Peuker-Douglas valley cell accumulation threshold of 20 valley cells yielded drainage density of:",
+    "options": [
+      "A) 0.4 km^-1",
+      "B) 1.6 km^-1",
+      "C) 3.2 km^-1",
+      "D) 5.0 km^-1"
+    ],
+    "correct": "B",
+    "explanation": "In the worked example, 20 valley cells gave D_d = 1.6 km^-1."
+  },
+  {
+    "type": "mcq",
+    "question": "A sub-watershed drains to:",
+    "options": [
+      "A) All streams in the basin",
+      "B) A specific designated point without passing through other designated points",
+      "C) The highest point in the basin",
+      "D) The ocean"
+    ],
+    "correct": "B",
+    "explanation": "Sub-watershed comprises catchments aggregated to a specific point."
+  },
+  {
+    "type": "mcq",
+    "question": "The tessellation formed by catchments has all these properties EXCEPT:",
+    "options": [
+      "A) Conservation of total area",
+      "B) Connectivity to downstream",
+      "C) Overlapping boundaries",
+      "D) Uniqueness for given inputs"
+    ],
+    "correct": "C",
+    "explanation": "Catchments are non-overlapping; they tessellate without overlap."
+  },
+  {
+    "type": "mcq",
+    "question": "Disconnected stream networks indicate:",
+    "options": [
+      "A) Correct delineation",
+      "B) Flow direction errors or unfilled sinks",
+      "C) Too high a threshold",
+      "D) Perfect DEM conditioning"
+    ],
+    "correct": "B",
+    "explanation": "Every link should connect to one downstream link or outlet."
+  },
+  {
+    "type": "mcq",
+    "question": "The CCM dataset from JRC provides:",
+    "options": [
+      "A) US stream networks",
+      "B) Pre-delineated European catchments",
+      "C) Global DEM data",
+      "D) Weather forecasts"
+    ],
+    "correct": "B",
+    "explanation": "Catchment Characterisation and Modelling for all of Europe."
+  },
+  {
+    "type": "mcq",
+    "question": "At disjoint catchment junctions, the solution is:",
+    "options": [
+      "A) Delete the small pieces",
+      "B) Create multipart features",
+      "C) Merge with adjacent catchments",
+      "D) Ignore the problem"
+    ],
+    "correct": "B",
+    "explanation": "Multipart features keep disjoint pieces as one polygon with the correct ID."
+  },
+  {
+    "type": "mcq",
+    "question": "The ArcGIS ready-to-use tools use _____ resolution in the US.",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "30 m in the US, 90 m worldwide."
+  },
+  {
+    "type": "mcq",
+    "question": "Google Earth Engine offers DEM processing through:",
+    "options": [
+      "A) ArcPy",
+      "B) Its cloud platform",
+      "C) Local installation only",
+      "D) Paper maps"
+    ],
+    "correct": "B",
+    "explanation": "GEE provides cloud-based planetary-scale raster processing."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza basin covers approximately:",
+    "options": [
+      "A) 15,700 km2",
+      "B) 157,000 km2",
+      "C) 1,570 km2",
+      "D) 1,570,000 km2"
+    ],
+    "correct": "B",
+    "explanation": "Approximately 157,000 km2 across five countries."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS ingests Hungary's weather model output from:",
+    "options": [
+      "A) HRRR",
+      "B) ALADIN (OMSZ/HungaroMet)",
+      "C) GFS",
+      "D) ERA5 only"
+    ],
+    "correct": "B",
+    "explanation": "ALADIN from OMSZ (HungaroMet) is ingested by EFAS."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM was developed by:",
+    "options": [
+      "A) ECMWF",
+      "B) National Water Center in Tuscaloosa",
+      "C) Hungarian OVF",
+      "D) World Bank"
+    ],
+    "correct": "B",
+    "explanation": "NOAA's Office of Water Prediction at the National Water Center."
+  },
+  {
+    "type": "mcq",
+    "question": "Before downloading DEM tiles, a preliminary boundary can be obtained from:",
+    "options": [
+      "A) D-infinity",
+      "B) ArcGIS ready-to-use Watershed tool",
+      "C) Strahler ordering",
+      "D) HAND computation"
+    ],
+    "correct": "B",
+    "explanation": "Quick cloud-based delineation to determine study area extent."
+  },
+  {
+    "type": "true_false",
+    "question": "The constant support area method uses a single threshold for the entire DEM.",
+    "correct": true,
+    "explanation": "All cells with accumulation >= T are classified as streams."
+  },
+  {
+    "type": "true_false",
+    "question": "The stream definition threshold has no effect on hydrologic model results.",
+    "correct": false,
+    "explanation": "It determines the hillslope-channel partition, affecting predictions."
+  },
+  {
+    "type": "true_false",
+    "question": "Drainage density has units of km^-1.",
+    "correct": true,
+    "explanation": "Total length / area = km/km2 = km^-1."
+  },
+  {
+    "type": "true_false",
+    "question": "Mean hillslope length equals 2 * D_d.",
+    "correct": false,
+    "explanation": "B = 1/(2*D_d), not 2*D_d."
+  },
+  {
+    "type": "true_false",
+    "question": "Montgomery and Dietrich showed that a single threshold correctly represents all terrain.",
+    "correct": false,
+    "explanation": "They argued channelization varies with local terrain texture."
+  },
+  {
+    "type": "true_false",
+    "question": "The area-slope threshold method can produce feathering artifacts on steep hillslopes.",
+    "correct": true,
+    "explanation": "Spurious parallel channels on steep but unchanneled hillslopes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Peuker-Douglas algorithm identifies ridge cells.",
+    "correct": false,
+    "explanation": "It identifies valley (upward-curved) cells by unflagging the highest cell in each 2x2 window."
+  },
+  {
+    "type": "true_false",
+    "question": "Peuker-Douglas valley cells cluster in rugged terrain.",
+    "correct": true,
+    "explanation": "More valley cells where curvature is high; sparse in smooth terrain."
+  },
+  {
+    "type": "true_false",
+    "question": "The stream drop t-test uses a significance level of approximately 95%.",
+    "correct": true,
+    "explanation": "|t| > 2 corresponds to approximately 95% confidence."
+  },
+  {
+    "type": "true_false",
+    "question": "The constant stream drop property states that stream drops increase with order.",
+    "correct": false,
+    "explanation": "Mean drops are approximately constant across all orders."
+  },
+  {
+    "type": "true_false",
+    "question": "If |t| < 2, the threshold is too fine.",
+    "correct": false,
+    "explanation": "|t| < 2 means the constant drop property holds; the threshold is acceptable."
+  },
+  {
+    "type": "true_false",
+    "question": "Strahler ordering assigns first order to the outlet stream.",
+    "correct": false,
+    "explanation": "First order is assigned to headwater channels with no tributaries."
+  },
+  {
+    "type": "true_false",
+    "question": "When two different-order streams merge, the downstream stream gains the higher order.",
+    "correct": true,
+    "explanation": "Unequal merger retains the higher of the two orders."
+  },
+  {
+    "type": "true_false",
+    "question": "Horton's bifurcation ratio is typically between 3 and 5.",
+    "correct": true,
+    "explanation": "R_b = N_omega/N_(omega+1), most watersheds 3.5-4.5."
+  },
+  {
+    "type": "true_false",
+    "question": "Horton's laws are exact mathematical relationships.",
+    "correct": false,
+    "explanation": "They are statistical tendencies observed across thousands of watersheds."
+  },
+  {
+    "type": "true_false",
+    "question": "A catchment is the area draining directly to a single stream link.",
+    "correct": true,
+    "explanation": "Catchments drain to their link without passing through another link."
+  },
+  {
+    "type": "true_false",
+    "question": "Sub-watersheds and catchments are the same thing.",
+    "correct": false,
+    "explanation": "Sub-watersheds comprise one or more catchments aggregated to a designated point."
+  },
+  {
+    "type": "true_false",
+    "question": "Outlet snapping is unnecessary if the GPS coordinates are precise.",
+    "correct": false,
+    "explanation": "Even precise coordinates rarely fall exactly on DEM-derived stream cells."
+  },
+  {
+    "type": "true_false",
+    "question": "After snapping, the derived area should be compared to known drainage area.",
+    "correct": true,
+    "explanation": "This verifies the outlet was snapped to the correct stream."
+  },
+  {
+    "type": "true_false",
+    "question": "Vector stream simplification should always be enabled for hydrologic analysis.",
+    "correct": false,
+    "explanation": "Simplification disconnects vectors from the underlying raster; disable for analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "The grid code links stream polylines to catchment polygons.",
+    "correct": true,
+    "explanation": "Grid code is the relational key connecting streams, catchments, and drainage points."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro was formalized by David Maidment in 2002.",
+    "correct": true,
+    "explanation": "Arc Hydro: GIS for Water Resources, ESRI Press, 2002."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus was created through manual digitization.",
+    "correct": false,
+    "explanation": "Automated geoprocessing at continental scale."
+  },
+  {
+    "type": "true_false",
+    "question": "EU-Hydro has higher detail than processing Hungary's DDM-5.",
+    "correct": false,
+    "explanation": "EU-Hydro is generally lower resolution than national high-res DEMs."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroSHEDS is freely available.",
+    "correct": true,
+    "explanation": "Freely downloadable from hydrosheds.org."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF data is based on DEM extraction, not field surveys.",
+    "correct": false,
+    "explanation": "OVF uses field surveys and long-term monitoring."
+  },
+  {
+    "type": "true_false",
+    "question": "The Logan River is in northern Utah.",
+    "correct": true,
+    "explanation": "Drains the Bear River Range in the Wasatch Mountains."
+  },
+  {
+    "type": "true_false",
+    "question": "Peter Sinks is 62 meters deep.",
+    "correct": true,
+    "explanation": "A karst depression 62 meters deep in the Logan River watershed."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo River rises in Hungary.",
+    "correct": false,
+    "explanation": "It rises in Slovakia (as the Slana) and crosses into Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream burning is unnecessary for the Sajo's lowland areas.",
+    "correct": false,
+    "explanation": "Flat areas require stream burning for reliable flow routing."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM covers only EU countries.",
+    "correct": false,
+    "explanation": "Copernicus GLO-30 covers the entire globe."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS ready-to-use tools require local DEM processing.",
+    "correct": false,
+    "explanation": "They use pre-processed global data in ESRI's cloud."
+  },
+  {
+    "type": "true_false",
+    "question": "The National Water Model extends forecasts to ungauged streams.",
+    "correct": true,
+    "explanation": "2.7 million locations vs. approximately 4,000 USGS gauges."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS provides probabilistic forecasts using ensemble members.",
+    "correct": true,
+    "explanation": "51-member ECMWF ensemble for uncertainty quantification."
+  },
+  {
+    "type": "true_false",
+    "question": "GloFAS covers only Europe.",
+    "correct": false,
+    "explanation": "GloFAS extends worldwide."
+  },
+  {
+    "type": "true_false",
+    "question": "Boundary discrepancies between DEMs of different resolution are unavoidable.",
+    "correct": true,
+    "explanation": "Ridgeline cells have elevation differences within DEM noise."
+  },
+  {
+    "type": "true_false",
+    "question": "DEM-based delineation works perfectly in karst terrain.",
+    "correct": false,
+    "explanation": "Underground drainage bypasses surface watersheds."
+  },
+  {
+    "type": "true_false",
+    "question": "Urban storm sewers follow surface topography.",
+    "correct": false,
+    "explanation": "Sewers often bypass surface topography completely."
+  },
+  {
+    "type": "true_false",
+    "question": "The Danube River Basin District subdivides into Tisza, Drava, Balaton sub-basins.",
+    "correct": true,
+    "explanation": "Major sub-basins within the Danube district."
+  },
+  {
+    "type": "true_false",
+    "question": "A connectivity check verifies every stream link connects to one downstream link.",
+    "correct": true,
+    "explanation": "Disconnected networks indicate errors."
+  },
+  {
+    "type": "true_false",
+    "question": "The Peuker-Douglas method produces spatially variable drainage density.",
+    "correct": true,
+    "explanation": "Valley cells are concentrated in rugged terrain, sparse in smooth terrain."
+  },
+  {
+    "type": "true_false",
+    "question": "The RAPID model is used in EFAS.",
+    "correct": false,
+    "explanation": "RAPID is used in the US National Water Model; EFAS uses LISFLOOD."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM updates hourly.",
+    "correct": true,
+    "explanation": "Flow forecasts for 2.7 million reaches, updated every hour."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS updates every 6-12 hours.",
+    "correct": true,
+    "explanation": "Less frequent than NWM but with longer forecast range."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza is approximately 8th order at its confluence with the Danube.",
+    "correct": true,
+    "explanation": "As stated in the chapter for the Hungarian Tisza."
+  },
+  {
+    "type": "true_false",
+    "question": "The Mississippi River is approximately 10th order.",
+    "correct": true,
+    "explanation": "As referenced in the chapter."
+  },
+  {
+    "type": "true_false",
+    "question": "Horton's laws reflect fractal-like self-similarity of drainage networks.",
+    "correct": true,
+    "explanation": "Statistical regularities across scales."
+  },
+  {
+    "type": "true_false",
+    "question": "The Peuker-Douglas stream definition tool in TauDEM requires manual threshold testing.",
+    "correct": false,
+    "explanation": "It automates the entire sequence including threshold testing."
+  },
+  {
+    "type": "true_false",
+    "question": "NHDPlus was built by combining NED, NHD, WBD, and NLCD.",
+    "correct": true,
+    "explanation": "Four component datasets integrated over approximately 20 years."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM LE90 is greater than 10 meters globally.",
+    "correct": false,
+    "explanation": "LE90 is less than 4 meters globally."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo watershed most recently experienced severe floods in 2010.",
+    "correct": true,
+    "explanation": "2010 is referenced as the most recent severe flood."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Earth Engine includes dedicated watershed delineation tools.",
+    "correct": false,
+    "explanation": "GEE can perform underlying raster operations but lacks dedicated watershed tools."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud-based watershed tools replace the need for understanding methodology.",
+    "correct": false,
+    "explanation": "Understanding methods is needed to evaluate pre-computed results."
+  },
+  {
+    "type": "true_false",
+    "question": "The NHDPlus COMID system enables multiple agencies to share data.",
+    "correct": true,
+    "explanation": "EPA, FEMA, state agencies all reference the same COMID framework."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS provides seasonal outlooks up to 4 months ahead.",
+    "correct": true,
+    "explanation": "In addition to medium-range forecasts."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo rises in Ukraine.",
+    "correct": false,
+    "explanation": "It rises in Slovakia."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo crosses into Hungary near Tornanadaska.",
+    "correct": true,
+    "explanation": "Near Tornanadaska in northeastern Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Sajo, the DDM-5 covers Slovak territory.",
+    "correct": false,
+    "explanation": "DDM-5 covers only Hungary; Copernicus DEM covers both countries."
+  },
+  {
+    "type": "true_false",
+    "question": "The transformation between HD72 and ETRS89 uses a 7-parameter Helmert transformation.",
+    "correct": true,
+    "explanation": "EPSG:1449; for sub-meter accuracy, the Lechner grid shift file is needed."
+  },
+  {
+    "type": "true_false",
+    "question": "Catchment boundaries follow political boundaries.",
+    "correct": false,
+    "explanation": "They follow topographic ridgelines defined by physical flow direction."
+  },
+  {
+    "type": "true_false",
+    "question": "The watershed tessellation is deterministic for given inputs.",
+    "correct": true,
+    "explanation": "Same input always produces same catchments."
+  },
+  {
+    "type": "true_false",
+    "question": "Mean hillslope length of 833 m corresponds to D_d of approximately 0.6 km^-1.",
+    "correct": true,
+    "explanation": "B = 1/(2*0.6) = 833 m."
+  },
+  {
+    "type": "true_false",
+    "question": "The stream drop at T=50 in the worked example was -4.2.",
+    "correct": true,
+    "explanation": "At the finest threshold, first-order drops were much smaller than higher-order."
+  },
+  {
+    "type": "true_false",
+    "question": "Stream links are segments between sources, junctions, and outlets.",
+    "correct": true,
+    "explanation": "These are the three types of link endpoints."
+  },
+  {
+    "type": "true_false",
+    "question": "The Stream Link tool in ArcGIS assigns unique IDs to stream segments.",
+    "correct": true,
+    "explanation": "Each contiguous sequence of stream cells between junctions gets a unique integer."
+  },
+  {
+    "type": "true_false",
+    "question": "A fourth-order basin typically has 20-50 stream links.",
+    "correct": true,
+    "explanation": "As stated in the chapter for typical networks."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM uses RAPID for channel routing through NHDPlus.",
+    "correct": true,
+    "explanation": "Routing Application for Parallel computation of Discharge."
+  },
+  {
+    "type": "true_false",
+    "question": "The HRRR model has 3 km resolution.",
+    "correct": true,
+    "explanation": "High-Resolution Rapid Refresh at 3 km grid spacing."
+  },
+  {
+    "type": "true_false",
+    "question": "LISFLOOD operates at 5 km resolution in EFAS.",
+    "correct": true,
+    "explanation": "Pan-European distributed model at 5 km."
+  },
+  {
+    "type": "true_false",
+    "question": "The Watershed Boundary Dataset (WBD) provides basin boundaries for NHDPlus.",
+    "correct": true,
+    "explanation": "One of the four component datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "On the Great Hungarian Plain, artificial channels are called csatornak.",
+    "correct": true,
+    "explanation": "Irrigation and drainage channels constructed over centuries."
+  },
+  {
+    "type": "true_false",
+    "question": "The slope-area relationship has a visible inflection point at the channel head.",
+    "correct": true,
+    "explanation": "Transition from convex hillslopes to concave channels."
+  },
+  {
+    "type": "true_false",
+    "question": "The Peuker-Douglas method examines 3x3 windows.",
+    "correct": false,
+    "explanation": "It examines 2x2 windows."
+  },
+  {
+    "type": "true_false",
+    "question": "Strahler stream order was developed in 1957.",
+    "correct": true,
+    "explanation": "Strahler, Transactions of the American Geophysical Union, 1957."
+  },
+  {
+    "type": "true_false",
+    "question": "The bifurcation ratio of 4 means four times as many streams of each successive lower order.",
+    "correct": true,
+    "explanation": "R_b = 4: roughly 4x as many order-1 as order-2, etc."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroLAKES contains 1.4 million lakes globally.",
+    "correct": true,
+    "explanation": "Part of the HydroSHEDS suite."
+  },
+  {
+    "type": "true_false",
+    "question": "EU-Hydro includes linked dam and lake databases.",
+    "correct": true,
+    "explanation": "In addition to the river network and catchments."
+  },
+  {
+    "type": "true_false",
+    "question": "The OVF gauge at Felsozsolca serves the Sajo watershed.",
+    "correct": true,
+    "explanation": "Near Miskolc, providing outlet data for the Hungarian portion."
+  },
+  {
+    "type": "true_false",
+    "question": "The Microsoft Planetary Computer provides access to the Copernicus DEM.",
+    "correct": true,
+    "explanation": "With Jupyter notebook interface for geospatial analysis."
+  },
+  {
+    "type": "true_false",
+    "question": "The National Water Model existed before NHDPlus.",
+    "correct": false,
+    "explanation": "NHDPlus was the spatial backbone built first; the NWM routes through it."
+  },
+  {
+    "type": "true_false",
+    "question": "The DrainagePoint feature class is located at the outlet cell of each catchment.",
+    "correct": true,
+    "explanation": "Center of the outlet cell where flow exits to the downstream link."
+  },
+  {
+    "type": "true_false",
+    "question": "Multipart features solve the disjoint catchment problem during raster-to-polygon conversion.",
+    "correct": true,
+    "explanation": "Keeps disjoint pieces as one feature with correct identifier."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo watershed delineation typically yields drainage density of 1.5-2.5 km^-1 in the Bukk Mountains.",
+    "correct": true,
+    "explanation": "Reflecting the Peuker-Douglas method's spatial adaptivity."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo lowlands show drainage density of 0.4-0.6 km^-1.",
+    "correct": true,
+    "explanation": "Flat terrain has much lower drainage density."
+  },
+  {
+    "type": "true_false",
+    "question": "The Broscoe (1959) constant drop property has a physical basis in the Smith and Bretherton (1972) theory.",
+    "correct": true,
+    "explanation": "Form instability theory explains why channelization produces consistent geometric properties."
+  },
+  {
+    "type": "true_false",
+    "question": "For the t-test, the critical value of 2 applies only for small sample sizes.",
+    "correct": false,
+    "explanation": "For large sample sizes, t_critical is approximately 1.96 (rounded to 2)."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM's geographic transformation distributes grid-cell runoff to NHDPlus catchments.",
+    "correct": true,
+    "explanation": "Intersection and weighting operation similar to Thiessen polygon averaging."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS provides real-time data to all EU citizens.",
+    "correct": false,
+    "explanation": "Real-time data goes to partner organizations (national services); archives are public."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream definition classifies cells with accumulation >= _____.",
+    "correct": "T (threshold)",
+    "explanation": "The support area threshold."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Drainage density D_d = total stream length / _____.",
+    "correct": "watershed area",
+    "explanation": "Units: km/km2 = km^-1."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Mean hillslope length B = 1 / (2 * _____).",
+    "correct": "D_d (drainage density)",
+    "explanation": "Fundamental relationship."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D_d of 2.0 km^-1 implies hillslope length of _____ m.",
+    "correct": "250",
+    "explanation": "1/(2*2.0) = 0.25 km = 250 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Montgomery and Dietrich (1992) published in the journal _____.",
+    "correct": "Science",
+    "explanation": "Landmark paper on landscape dissection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Peuker-Douglas algorithm examines _____ x _____ windows.",
+    "correct": "2; 2",
+    "explanation": "Every 2x2 block of four adjacent cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In each 2x2 window, the _____ cell is unflagged.",
+    "correct": "highest",
+    "explanation": "The highest elevation cell is marked as non-valley."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The stream drop t-test compares first-order drops to _____ order drops.",
+    "correct": "higher (orders 2+)",
+    "explanation": "Two-sample comparison."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The constant stream drop property was observed by _____ in 1959.",
+    "correct": "Broscoe",
+    "explanation": "Quantitative analysis of longitudinal profiles."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The objective threshold is the smallest T where |t| < _____.",
+    "correct": "2",
+    "explanation": "Approximately 95% significance level."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Strahler ordering: headwater channels with no tributaries are order _____.",
+    "correct": "1 (first)",
+    "explanation": "The starting point of the ordering hierarchy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R_b = N_omega / N_____ is the bifurcation ratio.",
+    "correct": "omega+1",
+    "explanation": "Ratio of streams of successive orders."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R_L = mean length of order _____ / mean length of order omega.",
+    "correct": "omega+1",
+    "explanation": "Length ratio."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ is the area draining directly to a single stream link.",
+    "correct": "catchment",
+    "explanation": "Also called subcatchment or elementary catchment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A sub-watershed drains to a specific _____ point.",
+    "correct": "designated (outlet/gauge)",
+    "explanation": "Such as a stream gauge, intake, or dam."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tool in TauDEM snaps outlets to streams.",
+    "correct": "Move Outlets to Streams",
+    "explanation": "Traces along flow directions to nearest stream cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "After snapping, verify the derived area matches the _____ area.",
+    "correct": "known drainage",
+    "explanation": "From gauge records or databases."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ code links streams, catchments, and drainage points.",
+    "correct": "grid",
+    "explanation": "Relational key across feature classes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro uses _____ as a universal identifier.",
+    "correct": "HydroID",
+    "explanation": "Unique across all feature classes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus has _____ million stream reaches.",
+    "correct": "2.7",
+    "explanation": "Covering 5.1 million km of mapped streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU-Hydro covers the _____ countries.",
+    "correct": "EEA-39",
+    "explanation": "EU members plus associated states."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroBASINS has _____ hierarchical levels.",
+    "correct": "12",
+    "explanation": "From continental to headwater scale."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HydroRIVERS contains over _____ million reaches.",
+    "correct": "8",
+    "explanation": "Global vectorized river network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF's open data portal is at _____.",
+    "correct": "data.vizugy.hu",
+    "explanation": "Available since July 2024."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Logan River drains _____ km2.",
+    "correct": "554",
+    "explanation": "USGS gauge 10109000."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Logan River is order _____.",
+    "correct": "4 (fourth)",
+    "explanation": "A fourth-order stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo is a tributary of the _____.",
+    "correct": "Tisza",
+    "explanation": "Major left-bank tributary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HD72/EOV has EPSG code _____.",
+    "correct": "23700",
+    "explanation": "Hungarian national coordinate system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM uses _____ for atmospheric forcing.",
+    "correct": "HRRR",
+    "explanation": "High-Resolution Rapid Refresh, 3 km hourly."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM land surface model is _____.",
+    "correct": "Noah-MP",
+    "explanation": "Computes runoff generation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM routing model is _____.",
+    "correct": "RAPID",
+    "explanation": "Routing Application for Parallel computation of Discharge."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS uses _____ hydrological model.",
+    "correct": "LISFLOOD",
+    "explanation": "Distributed model at 5 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS ensemble has _____ members.",
+    "correct": "51",
+    "explanation": "From ECMWF ensemble predictions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS resolution is _____ degrees.",
+    "correct": "0.05",
+    "explanation": "Approximately 5 km globally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's flood forecasting system is called _____.",
+    "correct": "HYDROINFO",
+    "explanation": "At hydroinfo.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF monitors _____ river sections.",
+    "correct": "98",
+    "explanation": "Danube, Tisza, Drava-Mura."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo crosses into Hungary near _____.",
+    "correct": "Tornanadaska",
+    "explanation": "In northeastern Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Slovakia, the Sajo is called the _____.",
+    "correct": "Slana",
+    "explanation": "Slovak name for the river."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream burning forces flow to follow the known _____ positions.",
+    "correct": "channel",
+    "explanation": "Essential in flat terrain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM was developed at the National Water Center in _____.",
+    "correct": "Tuscaloosa",
+    "explanation": "Alabama, under NOAA."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus identifiers are called _____.",
+    "correct": "COMID",
+    "explanation": "Common Identifier for each reach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS forecast range is up to _____ days.",
+    "correct": "15",
+    "explanation": "Medium-range ensemble forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NWM short-range forecast is _____ hours.",
+    "correct": "18",
+    "explanation": "Short-range hourly forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The slope-area concavity index theta is typically about _____.",
+    "correct": "0.5",
+    "explanation": "For fluvial channels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Horton's slope ratio R_S is typically between 1.5 and _____.",
+    "correct": "3",
+    "explanation": "Geometric decrease with order."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tessellation partitions the landscape into non-overlapping catchments.",
+    "correct": "catchment (watershed)",
+    "explanation": "Physical rules define boundaries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DrainagePoint feature class is at the _____ cell of each catchment.",
+    "correct": "outlet",
+    "explanation": "Where flow exits to the downstream link."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Stream to Feature conversion traces links through cell _____.",
+    "correct": "centers",
+    "explanation": "Vertices at cell center positions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Horton (1945) described _____ development of streams.",
+    "correct": "erosional",
+    "explanation": "Erosional development and quantitative morphology."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED stands for National _____ Dataset.",
+    "correct": "Elevation",
+    "explanation": "US National Elevation Dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHD stands for National _____ Dataset.",
+    "correct": "Hydrography",
+    "explanation": "US stream mapping dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WBD stands for Watershed _____ Dataset.",
+    "correct": "Boundary",
+    "explanation": "Basin boundary polygons."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NLCD stands for National Land _____ Dataset.",
+    "correct": "Cover",
+    "explanation": "US land cover classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo most recently experienced severe floods in _____.",
+    "correct": "2010",
+    "explanation": "Referenced as the most recent severe event."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ check verifies every link connects downstream.",
+    "correct": "connectivity",
+    "explanation": "Disconnected networks indicate errors."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus DEM LE90 is less than _____ meters globally.",
+    "correct": "4",
+    "explanation": "Vertical accuracy specification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED RMSE is approximately _____ meters.",
+    "correct": "2.34",
+    "explanation": "US National Elevation Dataset accuracy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Boundary discrepancies between resolutions are typically _____ to 200 meters.",
+    "correct": "50",
+    "explanation": "Along the entire perimeter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In EFAS, ALADIN data comes from Hungary's _____.",
+    "correct": "OMSZ (HungaroMet)",
+    "explanation": "National meteorological service."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For automated stream definition, TauDEM tests _____ logarithmically spaced thresholds.",
+    "correct": "15",
+    "explanation": "From the Peuker-Douglas stream definition tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Peter Sinks recorded the US low of _____ degrees C.",
+    "correct": "-56.3",
+    "explanation": "In the Logan River watershed."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The CCM dataset is from the _____.",
+    "correct": "Joint Research Centre (JRC)",
+    "explanation": "European pre-delineated catchments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The USGS gauge for Logan River is station _____.",
+    "correct": "10109000",
+    "explanation": "Logan River near Logan, UT."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The worked example t-test used a _____ km2 watershed.",
+    "correct": "150",
+    "explanation": "Test watershed on a 30 m DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At T=50 in the worked example, the t-statistic was _____.",
+    "correct": "-4.2",
+    "explanation": "First-order drops much smaller than higher orders."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At T=200, the t-statistic was _____.",
+    "correct": "-1.8",
+    "explanation": "First threshold below |t| = 2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A valley-cell threshold of 20 gave drainage density of _____ km^-1.",
+    "correct": "1.6",
+    "explanation": "Peuker-Douglas worked example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Peuker-Douglas method produces spatially _____ drainage density.",
+    "correct": "variable",
+    "explanation": "More streams in rugged terrain, fewer in smooth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sub-watershed = aggregation of one or more _____.",
+    "correct": "catchments",
+    "explanation": "Atomic units aggregated to designated points."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo watershed has approximately _____-800 stream links.",
+    "correct": "500",
+    "explanation": "Depending on threshold, 5th-order network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Karst terrain: surface water disappears into _____.",
+    "correct": "sinkholes (dolines)",
+    "explanation": "Resurfaces at springs in different watersheds."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Losing streams _____ water to the subsurface.",
+    "correct": "lose",
+    "explanation": "DEM area overestimates effective contributing area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cloud-based tools deliver speed; understanding delivers _____.",
+    "correct": "quality",
+    "explanation": "Key message about the SaaS trend."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DEM-derived network in flat terrain must be supplemented with _____ knowledge.",
+    "correct": "prior (field survey/existing data)",
+    "explanation": "Field surveys and existing hydrographic datasets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo watershed delineation area is within _____ of the OVF official value.",
+    "correct": "2-3%",
+    "explanation": "Demonstrating good agreement."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Bukk Mountains in the Sajo watershed are _____ karst terrain.",
+    "correct": "deeply dissected",
+    "explanation": "With steep valleys and dense drainage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Before the NWM, forecasts were available at approximately _____ USGS gauge locations.",
+    "correct": "4,000",
+    "explanation": "The NWM extended to 2.7 million."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS partner organizations include _____.",
+    "correct": "national hydrological services",
+    "explanation": "Including Hungary's OVF."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Boundary Dataset provides basin boundaries for NHDPlus.",
+    "correct": "Watershed (WBD)",
+    "explanation": "One of four component datasets."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Google Earth Engine and Microsoft _____ Computer offer cloud DEM processing.",
+    "correct": "Planetary",
+    "explanation": "Alternative cloud platforms."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus EEA-10 is _____ for EU/EEA countries.",
+    "correct": "freely available (restricted access)",
+    "explanation": "Available but with access restrictions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DEM extent must fully cover the watershed plus a _____ buffer.",
+    "correct": "1 km (approximately)",
+    "explanation": "To ensure no edge effects."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Sajo workflow, the coordinate system is either EOV or ETRS89/UTM Zone _____.",
+    "correct": "34N",
+    "explanation": "EPSG:32634."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ArcGIS Snap Pour Point searches within a specified _____.",
+    "correct": "radius",
+    "explanation": "Search radius to find highest accumulation cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ output stream order indicates basin complexity.",
+    "correct": "outlet (basin order)",
+    "explanation": "Highest order in the network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS soil moisture information is provided alongside _____ forecasts.",
+    "correct": "flood",
+    "explanation": "Additional product from the system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NWM distributes grid-cell runoff to catchments using _____ weighting.",
+    "correct": "area (intersection)",
+    "explanation": "Proportional to overlap area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Strahler _____ is the contiguous sequence of links with the same order.",
+    "correct": "stream",
+    "explanation": "From where that order first appears to where it meets equal/higher order."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The drainage density - threshold relationship follows a _____ law.",
+    "correct": "power",
+    "explanation": "Nearly straight line on log-log plot."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo's most severe recent flood occurred in the year _____.",
+    "correct": "2010",
+    "explanation": "Referenced in the chapter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Artificial channels on the Great Plain are called _____ in Hungarian.",
+    "correct": "csatornak (channels)",
+    "explanation": "Irrigation and drainage channels."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the stream definition threshold determines the partition between hillslope and channel processes.",
+    "correct": "A low threshold extends the channel network uphill, shortening hillslope distances. Water reaches channels quickly, peak flows arrive too early and are overestimated. A high threshold extends the hillslope domain, forcing water to travel long distances as overland flow, attenuating peaks. The correct threshold matches the physical channelization point.",
+    "explanation": "The threshold is a modeling decision with direct hydrologic consequences."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Peuker-Douglas algorithm and explain how it produces spatially variable drainage density.",
+    "correct": "Each 2x2 window's highest cell is unflagged. Remaining flagged cells are valley (upward-curved) cells concentrated in rugged terrain and sparse in smooth terrain. Flow accumulation of only valley cells, thresholded, produces more streams in dissected areas and fewer on gentle slopes—automatic spatial adaptation.",
+    "explanation": "Curvature-based filtering adapts to local topographic texture."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the stream drop t-test procedure and its geomorphologic foundation.",
+    "correct": "The constant drop property (Broscoe, 1959) states mean stream drops are approximately equal across orders. The test compares first-order drops to higher-order drops using a t-test. If |t| > 2, first-order 'streams' include non-channel segments. The objective threshold is the smallest T where |t| < 2—the densest geomorphologically consistent network.",
+    "explanation": "Rooted in Smith and Bretherton form instability theory."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Strahler stream ordering rules and explain why they reveal statistical regularities.",
+    "correct": "First-order: no tributaries. Equal-order merger: increment by one. Unequal: retain higher. Horton's laws (bifurcation 3-5, length 1.5-3.5, area 3-6, slope 1.5-3) emerge because erosional landscapes have fractal-like self-similarity. When DEM-derived networks obey these laws, the delineation is geomorphologically sound.",
+    "explanation": "Horton's laws serve as both description and quality check."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between drainage density and hillslope length, and its implications for hydrologic modeling.",
+    "correct": "B = 1/(2*D_d). Higher drainage density means shorter hillslopes, faster runoff response, sharper peaks. Lower density means longer hillslopes, slower response, attenuated peaks. This directly affects unit hydrograph shape, time of concentration, and model predictions.",
+    "explanation": "Drainage density controls the fundamental time scale of watershed response."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the constant support area method with the Peuker-Douglas method for stream definition.",
+    "correct": "Constant area: same threshold everywhere, assumes uniform channelization. Peuker-Douglas: curvature-weighted accumulation, adapts to terrain texture automatically. In the Sajo watershed, the Bukk Mountains get denser networks (2.5 km^-1) while the plain gets sparser (0.8 km^-1) from the same threshold.",
+    "explanation": "Peuker-Douglas better represents physical variability."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of catchment tessellation and its properties.",
+    "correct": "Catchments partition the landscape into non-overlapping polygons, each draining to one stream link. Properties: conservation (total area = basin area), connectivity (each links to downstream), scalability (aggregate to any level), uniqueness (same inputs = same result). This is nature's spatial framework for hydrology.",
+    "explanation": "Physically based tessellation is preferred over arbitrary grid or administrative boundaries."
+  },
+  {
+    "type": "essay",
+    "question": "Explain outlet snapping and why it is essential for watershed delineation.",
+    "correct": "User coordinates rarely align with DEM stream cells due to resolution, datum differences, and GPS uncertainty. Without snapping, the delineation captures a tiny local area instead of the full upstream basin. TauDEM's Move Outlets to Streams traces flow directions to find the nearest stream cell. Verification checks derived area against known values.",
+    "explanation": "A critical practical step that is often the source of delineation errors."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete Logan River delineation workflow.",
+    "correct": "8 steps: obtain/project DEM, fill sinks, compute D8 flow directions and slopes, compute contributing area, snap outlet to stream (verify 554 km2), define streams objectively (Peuker-Douglas + drop test), delineate reaches and catchments, convert to vectors and analyze. 15-30 minutes on modern hardware.",
+    "explanation": "A complete practical demonstration of Chapters 9-11 methods."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Sajo watershed presents different challenges than the Logan River.",
+    "correct": "Logan: steep, well-defined mountain terrain where DEM delineation works almost perfectly. Sajo: includes dissected mountains (Bukk) AND flat alluvial lowlands along the Tisza. Flat areas need stream burning, artificial channels exist, and the watershed is transboundary (Slovakia). Different DEM sources, coordinate systems, and validation data.",
+    "explanation": "Contrasting landscapes test the robustness of the methodology."
+  },
+  {
+    "type": "essay",
+    "question": "Compare NHDPlus, EU-Hydro, HydroSHEDS, and OVF as reference datasets.",
+    "correct": "NHDPlus: 2.7M US reaches, COMID, 30 m NED basis. EU-Hydro: pan-European, Copernicus, lower detail. HydroSHEDS: global, 8M+ reaches from SRTM. OVF: Hungary-specific, field-survey-based, most authoritative locally. Each serves different geographic scopes and accuracy requirements.",
+    "explanation": "Dataset choice depends on geographic scope and application needs."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Arc Hydro data model and its significance.",
+    "correct": "Arc Hydro extends basic stream-and-catchment with HydroID universal identifiers, enabling cross-layer relationships. A gauge links to its stream, catchment, and all upstream catchments. This relational structure underlies NHDPlus and by extension the National Water Model. It formalized the connection between GIS topology and hydrologic connectivity.",
+    "explanation": "The spatial data architecture underlying modern water resources management."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the US National Water Model and EFAS.",
+    "correct": "NWM: 2.7M reaches, hourly updates, HRRR forcing (3 km), Noah-MP + RAPID, primarily deterministic. EFAS: pan-European, LISFLOOD (5 km), ECMWF 51-member ensemble, 15-day range, probabilistic. NWM has finer spatial resolution; EFAS provides explicit uncertainty quantification.",
+    "explanation": "Different approaches reflecting different operational philosophies."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how EFAS ensemble forecasting improves flood emergency response.",
+    "correct": "51 weather scenarios propagated through LISFLOOD produce 51 flow outcomes. If 45/51 predict flooding, confidence is very high. If 10/51, the signal is weak. Decision-makers calibrate response to uncertainty level—full evacuation vs. preparedness. This probabilistic approach is superior to single deterministic forecasts.",
+    "explanation": "Risk-based decision-making requires quantified uncertainty."
+  },
+  {
+    "type": "essay",
+    "question": "Describe challenges of DEM-based delineation in karst terrain like Aggtelek.",
+    "correct": "Surface water enters sinkholes and flows through underground conduits, potentially emerging in a different surface watershed. DEM delineation shows the topographic watershed (if all flow were surface), not the hydrological watershed. Tracer studies, spring measurements, and geological mapping are needed for the true contributing area.",
+    "explanation": "DEM delineation provides a starting point, not the final answer in karst."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the verification checklist for watershed delineation quality control.",
+    "correct": "Six checks: (1) Area comparison with gauge records (within 5%), (2) Visual overlay of streams on satellite imagery, (3) Horton ratios within expected ranges, (4) Drainage density comparison with similar terrain, (5) Connectivity check (every link connects downstream), (6) Boundary comparison with reference datasets.",
+    "explanation": "Systematic quality control catches errors before they propagate to models."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how stream burning addresses flat terrain drainage problems.",
+    "correct": "In flat areas, DEM elevation differences are within noise, making flow routing unreliable. Burning lowers DEM cells along known stream lines by a specified depth, forcing flow to follow the mapped channel. This ensures the DEM-derived network matches the actual drainage pattern. Essential for the Sajo lowlands and similar terrain.",
+    "explanation": "Prior knowledge supplements DEM data where topographic signal is weak."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of nested watersheds and how they support scalable analysis.",
+    "correct": "Watersheds for different outlets are nested: the watershed for a downstream gauge contains all sub-watersheds upstream. Catchments are the atoms; sub-watersheds and basins are molecules. This hierarchy enables analysis at any scale from local to continental using the same underlying delineation.",
+    "explanation": "Scalability from catchments to continents with a single framework."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of boundary discrepancies between DEM resolutions.",
+    "correct": "10 m and 30 m DEMs produce boundaries differing by 50-200 m along the perimeter. On ridgelines, elevation differences may be within DEM noise (NED RMSE 2.34 m), so a single-cell error redirects thousands of downstream cells. Total area discrepancy is usually < 5%, acceptable for modeling. Metadata should always state the DEM resolution.",
+    "explanation": "Watershed boundaries are resolution-dependent, not absolute truth."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why artificial channels on the Great Plain challenge DEM methods.",
+    "correct": "Artificial channels (csatornak) were excavated over centuries to drain marshes. They don't follow natural topographic gradients and are invisible to DEM-based flow routing. Water flows due to engineered grades that the DEM cannot detect. These channels must be burned from the OVF network or accepted as missing.",
+    "explanation": "Engineering overrides natural drainage patterns."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the progression from manual delineation to cloud-based instant delineation.",
+    "correct": "Manual: 20 minutes of clicking per watershed. Scripted: automated for thousands. Cloud (ArcGIS ready-to-use): pre-computed global SRTM, instant results anywhere, no local processing. The cloud delivers speed for reconnaissance; local processing delivers precision for engineering. Understanding methodology is still essential for quality evaluation.",
+    "explanation": "Speed and quality serve different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the NWM's geographic transformation step.",
+    "correct": "The NWM distributes HRRR grid-cell runoff (3 km resolution) to NHDPlus catchments (variable size). Each catchment receives a weighted sum of runoff from overlapping grid cells, with weights proportional to overlap area. This converts weather-model output into catchment-scale hydrologic input for channel routing.",
+    "explanation": "The intersection-and-weighting step bridges atmospheric and hydrologic spatial scales."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Horton's laws can serve as a quality check for DEM-derived networks.",
+    "correct": "Compute R_b, R_L, R_A, R_S from Strahler ordering. If R_b falls outside 3-5 or other ratios are anomalous, the network may have problems: wrong threshold, DEM errors, or algorithm issues. Networks obeying Horton's laws have the geometric properties of natural channels, confirming reasonable delineation.",
+    "explanation": "Statistical regularities provide an independent validation criterion."
+  },
+  {
+    "type": "essay",
+    "question": "Compare DEM-derived networks with cartographic networks and explain when each is preferred.",
+    "correct": "DEM-derived: physically consistent (every cell connects), computationally generated, may misplace streams in flat terrain. Cartographic (NHD, OVF): positionally accurate from aerial photos/field surveys, may lack connectivity. Ideal: burn cartographic positions into DEM, derive directions from conditioned surface. Combines positional accuracy with physical consistency.",
+    "explanation": "The best approach combines both sources."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of Strahler stream as used in the stream drop test.",
+    "correct": "A Strahler stream is the contiguous sequence of links having the same Strahler order, from where that order first appears to where it meets equal or higher order. The stream drop spans this full length. The constant drop property states mean drops are approximately equal across all orders, providing the statistical foundation for the test.",
+    "explanation": "The definition of a Strahler stream is key to understanding the stream drop measurement."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the EU Water Framework Directive's spatial framework and how it relates to watershed delineation.",
+    "correct": "The WFD organizes Europe into River Basin Districts (largest), subdivided into water bodies (roughly equivalent to NHDPlus reaches with catchments). Hungary is entirely in the Danube River Basin District, with Tisza, Drava, Balaton sub-basins. DEM-derived catchments provide the spatial units for WFD monitoring and reporting.",
+    "explanation": "EU regulatory framework built on hydrologic spatial units."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the slope-area scaling relationship breaks down at small contributing areas.",
+    "correct": "In established channels, slope decreases as a power function of area (concavity). At small areas, terrain transitions from concave channels to convex hillslopes. The power law breaks down because hillslope processes (diffusion) dominate over fluvial processes (incision). The inflection point identifies the channelization threshold.",
+    "explanation": "This geomorphologic observation provides physical justification for the stream threshold."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how GloFAS serves regions with limited national infrastructure.",
+    "correct": "GloFAS provides global flood forecasts at 0.05-degree resolution using ERA5 and LISFLOOD-OS, requiring no national data. For data-sparse regions in Africa, Asia, and elsewhere, it provides baseline flood awareness using only global DEMs and weather models. Less accurate than national systems but fills a critical gap.",
+    "explanation": "Global terrain analysis and weather modeling serve where national systems don't exist."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the multipart features option solves disjoint catchment problems.",
+    "correct": "At junctions, small slivers may drain to the same downstream link as the main catchment body but be spatially disconnected. Without multipart features, these become separate polygons with duplicate grid codes, breaking joins. Enabling multipart features keeps them as one polygon, maintaining the one-to-one stream-catchment relationship.",
+    "explanation": "A practical detail that prevents data integrity issues."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the advantages of catchment-based spatial discretization over regular grids.",
+    "correct": "Catchment boundaries follow physical topographic divides, respecting water flow pathways. Each catchment connects to one downstream catchment via its stream link, creating a physically meaningful network. Regular grids impose arbitrary boundaries that cross drainage divides and mix water from different basins. Catchments are nature's own spatial units for hydrology.",
+    "explanation": "Physical topology is more meaningful than geometric regularity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the step from stream raster to attributed vector network and why attributes matter.",
+    "correct": "Raster-to-polyline conversion creates stream lines. Attributes computed during delineation include: link ID, Strahler order, upstream/downstream IDs, contributing area, stream drop, slope, length, distance to outlet. These enable network traversal, routing parameterization, and quality checks. Without attributes, the network is just lines on a map.",
+    "explanation": "Attributes transform geometry into a hydrologic information system."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of the software-as-a-service trend in watershed delineation.",
+    "correct": "Cloud platforms (ArcGIS Online, GEE, Planetary Computer) pre-compute global DEMs and serve results on demand. A week-long local project becomes a 5-second API call. The risk: uncritical acceptance of pre-computed results. The methods in this chapter provide knowledge to evaluate cloud outputs. Speed from the cloud; quality from understanding.",
+    "explanation": "The trend toward cloud processing raises questions about methodological literacy."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the EFAS/NWM comparison illuminates different philosophical approaches to forecasting.",
+    "correct": "NWM: high spatial resolution (2.7M reaches), frequent updates (hourly), primarily deterministic. EFAS: lower spatial resolution, less frequent, but probabilistic (51 members quantifying uncertainty). The NWM tells you what will likely happen; EFAS tells you the range of what might happen. Both are valid; the choice depends on decision context.",
+    "explanation": "Deterministic precision vs. probabilistic honesty."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the connectivity table in hydrologic model architecture.",
+    "correct": "Each stream link has upstream and downstream link IDs forming a routing table. Starting from any point, you can trace upstream (find all contributing links) or downstream (find the path to outlet). This table is the computational backbone: models route flow through connected sequences, accumulating contributions from headwaters to outlet.",
+    "explanation": "Connectivity makes the static network into a dynamic flow routing system."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how watershed delineation outputs feed into distributed hydrologic models.",
+    "correct": "Each catchment receives precipitation, generates runoff via land cover/soil equations, and delivers it to its stream link. Each link routes flow downstream. The connectivity table links elements into a complete computational network. Catchment area, slope, and land cover parameterize the rainfall-runoff model; link length and slope parameterize the routing model.",
+    "explanation": "Delineation products are the spatial skeleton of every distributed model."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the Sajo and Logan River as test cases for watershed delineation methodology.",
+    "correct": "Logan: uniform steep terrain, single country, excellent DEM (10 m), well-documented gauge. Sajo: mixed terrain (mountains + plain), transboundary (Slovakia-Hungary), requires stream burning, artificial channels, coordinate transformations. The Logan validates the basic methodology; the Sajo tests its robustness in challenging conditions.",
+    "explanation": "Both are needed to demonstrate methodology completeness."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Hungary's OVF hydrographic database complements DEM-derived networks.",
+    "correct": "OVF is based on field surveys and monitoring, not DEM extraction. It captures actual channel positions including artificial channels invisible to DEMs. OVF serves as validation: compare DEM-derived networks in mountainous areas (good agreement expected) and flat areas (discrepancies expected). The most authoritative source for Hungarian water management.",
+    "explanation": "Field-based data validates computational results."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the area-slope threshold method and its practical limitations.",
+    "correct": "Channels defined where A*S^n > threshold, with n approximately 2. Physical motivation: channelization depends on flow volume (A) and erosive power (S). In practice: feathering on steep unchanneled hillslopes and missed channels in flat crenulated areas. Less reliable than Peuker-Douglas + stream drop test.",
+    "explanation": "The area-slope method has theoretical appeal but practical limitations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the 2.7 million NHDPlus COMID system for US water management.",
+    "correct": "COMID provides a universal spatial reference. The NWM produces forecasts at every COMID. EPA assesses water quality by COMID. FEMA maps flood risk by catchment. States use COMIDs for permitting. All agencies share data using the same identifier, enabling interoperability across federal, state, and local levels.",
+    "explanation": "A common identifier system enables national-scale data integration."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss edge effects in watershed delineation and how to mitigate them.",
+    "correct": "If the DEM doesn't fully cover the watershed, edge cells may have incorrect flow directions (flowing off the DEM boundary). This truncates the watershed. Mitigation: buffer the study area by at least 1 km beyond the expected watershed boundary. Use the ready-to-use Watershed tool to estimate extent before downloading DEM tiles.",
+    "explanation": "Edge effects are prevented by ensuring adequate DEM coverage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Peuker-Douglas stream drop test combination is the state of practice.",
+    "correct": "Peuker-Douglas adapts drainage density to terrain texture via curvature filtering. The stream drop test provides an objective, physically motivated criterion for the threshold. Together they produce the densest network consistent with geomorphologic laws, with automatic spatial variability. This combination is implemented in TauDEM and represents the best available objective approach.",
+    "explanation": "Combining spatial adaptivity with statistical rigor."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the NHDPlus construction integrated four component datasets.",
+    "correct": "NED (30 m DEM) for elevation. NHD for cartographic stream positions. WBD for basin boundaries. NLCD for land cover. Integration required reconciling different resolutions, vintages, and production methods. Cartographic streams were burned into the DEM, flow directions derived from the conditioned surface, catchments delineated. A 20-year effort.",
+    "explanation": "Continental-scale dataset integration is a massive undertaking."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how real-time sensor data from OVF feeds into Hungary's flood forecasting.",
+    "correct": "OVF maintains water level and discharge stations reporting in real time. This data feeds into HYDROINFO at hydroinfo.hu for 98 river sections. Real-time observations calibrate and verify forecasts. EFAS provides the broader European context and longer-range ensemble forecasts, while OVF provides the dense national monitoring detail.",
+    "explanation": "National and European systems complement each other."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of Pfafstetter coding used in HydroBASINS.",
+    "correct": "Pfafstetter coding assigns hierarchical numeric codes to basins based on their position in the drainage network. Each digit represents a level of subdivision. The coding captures upstream-downstream relationships within the identifier itself, enabling efficient spatial queries. HydroBASINS uses this at 12 levels globally.",
+    "explanation": "An elegant hierarchical addressing system for drainage basins."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why DEM-derived stream alignment differs from actual channel positions in flat terrain.",
+    "correct": "In flat terrain, the topographic gradient is minimal relative to DEM noise. The computed flow path follows tiny elevation variations that may not correspond to the actual channel. The real channel was formed by historical processes and may be maintained by engineering. Cartographic streams from aerial surveys are more accurate in these conditions.",
+    "explanation": "Flat terrain is where DEM-based methods are least reliable."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the NWM handles the transition from gridded weather data to catchment-scale runoff.",
+    "correct": "HRRR provides precipitation on a 3 km grid. Each 3 km cell may overlap multiple NHDPlus catchments. An intersection-and-weighting operation distributes runoff proportionally based on overlap area, like Thiessen polygon averaging. This geographic transformation is computed nationally in real time, converting meteorological grid to hydrologic spatial units.",
+    "explanation": "The spatial transformation step is critical for coupling atmospheric and hydrologic models."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the constant drop property connects to the physics of erosional landscape development.",
+    "correct": "Smith and Bretherton (1972) showed that form instability on a uniform surface naturally produces channel networks with consistent geometric properties. The constant drop property emerges because channels that violate it are geomorphologically unstable—they either capture more drainage area or lose it until equilibrium is reached. The stream drop test detects this equilibrium condition.",
+    "explanation": "Geomorphologic equilibrium manifests as statistical regularity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical difference between catchments, sub-watersheds, and watersheds.",
+    "correct": "Catchments are atomic units: area draining to one stream link. Sub-watersheds aggregate catchments to designated points (gauges, intakes). Watersheds are total drainage to the outlet. A basin with 200 catchments might have 10 sub-watersheds for gauges, or 5 for water intakes. Catchments are the building blocks; higher levels are assemblages.",
+    "explanation": "The hierarchy enables flexible spatial analysis at any scale."
+  },
+  {
+    "type": "mcq",
+    "question": "The Peuker-Douglas method examines windows of size:",
+    "options": [
+      "A) 1x1",
+      "B) 2x2",
+      "C) 3x3",
+      "D) 5x5"
+    ],
+    "correct": "B",
+    "explanation": "The algorithm processes every 2x2 block of four adjacent cells."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, the first-order mean drop at T=50 was:",
+    "options": [
+      "A) 4.2 m",
+      "B) 8.4 m",
+      "C) 12.1 m",
+      "D) 18.2 m"
+    ],
+    "correct": "B",
+    "explanation": "At T=50, first-order streams had a mean drop of 8.4 m vs 18.2 m for higher orders."
+  },
+  {
+    "type": "mcq",
+    "question": "The DEM resolution for the Logan River analysis is:",
+    "options": [
+      "A) 1 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "1/3 arc-second (~10 m) DEM from USGS 3DEP."
+  },
+  {
+    "type": "mcq",
+    "question": "The Amazon River is approximately which Strahler order?",
+    "options": [
+      "A) 6th",
+      "B) 8th",
+      "C) 10th",
+      "D) 12th"
+    ],
+    "correct": "D",
+    "explanation": "The Amazon is approximately 12th order, the highest of any river."
+  },
+  {
+    "type": "mcq",
+    "question": "HydroLAKES contains approximately:",
+    "options": [
+      "A) 14,000 lakes",
+      "B) 140,000 lakes",
+      "C) 1.4 million lakes",
+      "D) 14 million lakes"
+    ],
+    "correct": "C",
+    "explanation": "1.4 million lakes and reservoirs globally."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM's RAPID routing model propagates flow through:",
+    "options": [
+      "A) Grid cells",
+      "B) Thiessen polygons",
+      "C) NHDPlus reaches",
+      "D) Random points"
+    ],
+    "correct": "C",
+    "explanation": "RAPID routes discharge through the NHDPlus network."
+  },
+  {
+    "type": "mcq",
+    "question": "Which dataset uses Pfafstetter coding?",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) HydroBASINS",
+      "D) OVF"
+    ],
+    "correct": "C",
+    "explanation": "HydroBASINS uses Pfafstetter hierarchical coding at 12 levels."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Sajo watershed, the recommended coordinate system for EU compatibility is:",
+    "options": [
+      "A) WGS84 geographic",
+      "B) HD72/EOV",
+      "C) ETRS89/UTM Zone 34N",
+      "D) Web Mercator"
+    ],
+    "correct": "C",
+    "explanation": "ETRS89/UTM Zone 34N (EPSG:32634) for compatibility with Copernicus data."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sajo enters Hungary near which town?",
+    "options": [
+      "A) Budapest",
+      "B) Miskolc",
+      "C) Tornanadaska",
+      "D) Debrecen"
+    ],
+    "correct": "C",
+    "explanation": "The Sajo crosses from Slovakia into Hungary near Tornanadaska."
+  },
+  {
+    "type": "true_false",
+    "question": "The Peuker-Douglas combined with stream drop test is automated in TauDEM.",
+    "correct": true,
+    "explanation": "The Peuker-Douglas Stream Definition tool automates the entire sequence."
+  },
+  {
+    "type": "true_false",
+    "question": "The Logan River workflow takes approximately 4-8 hours on a modern workstation.",
+    "correct": false,
+    "explanation": "The workflow takes approximately 15-30 minutes for a watershed of this size."
+  },
+  {
+    "type": "true_false",
+    "question": "EU-Hydro provides higher resolution than processing national 5 m DEMs.",
+    "correct": false,
+    "explanation": "EU-Hydro is generally lower resolution; national DEMs like DDM-5 provide more detail."
+  },
+  {
+    "type": "true_false",
+    "question": "The ArcGIS ready-to-use Watershed tool gives exact results suitable for engineering design.",
+    "correct": false,
+    "explanation": "Results are approximate, good for planning but not precise enough for engineering."
+  },
+  {
+    "type": "true_false",
+    "question": "The stream drop test identifies the threshold by finding where first-order drops become statistically similar to higher-order drops.",
+    "correct": true,
+    "explanation": "When |t| < 2, the means are not significantly different, satisfying the constant drop property."
+  },
+  {
+    "type": "true_false",
+    "question": "The slope-area inflection point and the stream drop test identify the same transition.",
+    "correct": true,
+    "explanation": "Both identify the channelization threshold from different analytical perspectives."
+  },
+  {
+    "type": "true_false",
+    "question": "Arid badlands have lower drainage density than humid vegetated landscapes.",
+    "correct": false,
+    "explanation": "Badlands have very high drainage density due to rapid erosion in unconsolidated sediments."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM's medium-range forecast extends to 10 days.",
+    "correct": true,
+    "explanation": "Short-range is 18 hours; medium-range is 10 days."
+  },
+  {
+    "type": "true_false",
+    "question": "Strahler ordering was developed before Horton's laws were described.",
+    "correct": false,
+    "explanation": "Horton (1945) preceded Strahler (1957)."
+  },
+  {
+    "type": "true_false",
+    "question": "The COMID system enables different US agencies to share hydrologic data.",
+    "correct": true,
+    "explanation": "EPA, FEMA, USGS, and states all reference the same COMID framework."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sajo watershed has approximately 500-800 stream links.",
+    "correct": true,
+    "explanation": "Depending on threshold, organized as a 5th-order network."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud-based watershed delineation replaces the need for understanding terrain analysis methods.",
+    "correct": false,
+    "explanation": "Understanding provides quality control that cloud speed cannot replace."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Amazon River is approximately _____ Strahler order.",
+    "correct": "12th (twelfth)",
+    "explanation": "The highest-order river in the world."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's Tisza is approximately _____ order at its Danube confluence.",
+    "correct": "8th (eighth)",
+    "explanation": "As referenced in the chapter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NHDPlus covers _____ million miles of streams.",
+    "correct": "3.2",
+    "explanation": "5.1 million km of mapped streams and rivers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The area-slope threshold uses the product A * S^___.",
+    "correct": "n (typically 2)",
+    "explanation": "Where n is typically around 2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo joins the Tisza at _____.",
+    "correct": "Tiszaujvaros",
+    "explanation": "Where the Sajo meets the Tisza River."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Peuker-Douglas method uses flow accumulation of only _____ cells.",
+    "correct": "valley",
+    "explanation": "Weighted accumulation of curvature-filtered valley cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A typical snap distance for gauge locations is _____ to 500 meters.",
+    "correct": "100",
+    "explanation": "Accommodates positional uncertainties on medium-resolution DEMs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo watershed is approximately _____ order.",
+    "correct": "fifth (5th)",
+    "explanation": "A substantial 5th-order watershed."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For drainage density verification, arid badlands may exceed _____ km^-1.",
+    "correct": "5",
+    "explanation": "Very fine drainage texture from rapid erosion."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between the stream definition threshold and the number of stream segments in the network.",
+    "correct": "A lower threshold classifies more cells as streams, creating more headwater tributaries and therefore more links between sources, junctions, and outlets. A 10-fold threshold increase can reduce links from 500 to 50. The relationship follows from the power-law connection between threshold and drainage density.",
+    "explanation": "The threshold controls network complexity and computational burden."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how drainage density relates to storm hydrograph shape.",
+    "correct": "Higher drainage density means shorter hillslope lengths and faster concentration of runoff into channels. This produces flashier hydrographs with higher peaks and shorter time to peak. Lower drainage density means longer overland flow distances, more attenuation, and broader, flatter hydrographs. Drainage density is a first-order control on watershed response time.",
+    "explanation": "D_d is a surrogate for the mean travel time from hillslope to channel."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the stream drop test is more objective than visual comparison with reference maps.",
+    "correct": "Visual comparison is subjective: different analysts may judge different thresholds as best matching a reference map. The stream drop test uses a statistical criterion (|t| < 2) applied to a geomorphologic property (constant drop), providing a repeatable, quantitative answer. The result doesn't depend on the analyst's judgment or the availability of a reference map.",
+    "explanation": "Objectivity and reproducibility are essential for scientific analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the EFAS ensemble provides information about forecast uncertainty.",
+    "correct": "EFAS runs 51 different weather scenarios through LISFLOOD. The spread of flow predictions indicates uncertainty. If all 51 agree on flooding, confidence is near-certain. If only 15 predict flooding, the outcome is uncertain. The proportion of exceeding members (e.g., 30/51 exceed flood level) directly communicates probability. This enables risk-proportional response decisions.",
+    "explanation": "Ensemble spread is the primary uncertainty metric."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the spatial resolution and temporal frequency of the NWM and EFAS.",
+    "correct": "NWM: 2.7 million forecast points (every NHDPlus reach, roughly every 1-2 km of stream), updated hourly using 3 km HRRR. EFAS: 5 km grid resolution for the river network, updated every 6-12 hours using 9 km ECMWF ensemble. The NWM provides higher spatial and temporal detail but covers only the US. EFAS covers all of Europe with probabilistic output.",
+    "explanation": "The NWM trades breadth for detail; EFAS trades detail for uncertainty quantification."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the importance of the grid code as a relational key.",
+    "correct": "The grid code connects three feature classes: DrainageLine (streams as polylines), Catchment (areas as polygons), and DrainagePoint (outlet locations as points). A simple table join on grid code links any stream to its catchment and outlet. This enables queries like 'what area drains to stream 47?' or 'which stream does this catchment feed?' without spatial analysis.",
+    "explanation": "The grid code transforms geometry into a relational database."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the differences between topographic and hydrological watersheds in karst terrain.",
+    "correct": "The topographic watershed follows surface drainage divides, assuming all flow is surface flow. The hydrological watershed includes underground contributions through karst conduits, which may cross topographic boundaries. The hydrological watershed may be larger or smaller than the topographic one. Tracer studies and spring measurements are needed to reconcile the two.",
+    "explanation": "Karst creates a fundamental discrepancy between surface and subsurface drainage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Strahler stream order of the outlet indicates basin complexity.",
+    "correct": "Outlet order increases logarithmically with basin area and network complexity. A 3rd-order basin has 20-50 links; a 5th-order has several hundred. The Amazon at 12th order and Mississippi at 10th order reflect their continental-scale drainage networks. Strahler order provides a single number summarizing the hierarchical complexity of the entire upstream network.",
+    "explanation": "Order is a compact summary of network branching complexity."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical considerations for transboundary watershed delineation like the Sajo.",
+    "correct": "The DEM must extend into neighboring countries (Slovakia for Sajo). Copernicus DEM provides seamless transboundary coverage; national DEMs (DDM-5) stop at borders. Coordinate systems may differ between countries. Gauge data may come from different national services (OVF vs Slovak SHMU). EU-Hydro provides a consistent European framework for reference.",
+    "explanation": "Transboundary work requires seamless data and international coordination."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of Horton (1945) for quantitative geomorphology.",
+    "correct": "Horton established that drainage networks exhibit statistical regularities across scales: consistent ratios of stream numbers, lengths, areas, and slopes between successive orders. This transformed geomorphology from qualitative description to quantitative science. Horton's laws remain the foundation for network analysis, providing both descriptive framework and quality checks for DEM-derived networks.",
+    "explanation": "Horton created the quantitative framework that all subsequent network analysis builds upon."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Logan River workflow verifies the snapped outlet.",
+    "correct": "After snapping with Move Outlets to Streams, recompute D8 contributing area upstream of the snapped point. Multiply cell count by cell area (100 m2 for 10 m grid). Compare to the known USGS drainage area of 554 km2. If the result is close (e.g., 548 km2, within 1%), snapping was successful. If wildly different (e.g., 12 km2), the outlet snapped to the wrong stream.",
+    "explanation": "Area verification is the definitive check for correct outlet placement."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the Bukk Mountains and Great Hungarian Plain portions of the Sajo watershed.",
+    "correct": "Bukk: deeply dissected karst, steep valleys, dense natural drainage (D_d 1.5-2.5), DEM delineation works well. Great Plain: flat alluvium, artificial channels, sparse natural drainage (D_d 0.4-0.6), requires stream burning. The contrast demonstrates that the same algorithm produces different results in different terrain, and supplementary data is needed in flat areas.",
+    "explanation": "Terrain character determines delineation reliability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the constant drop property relates to landscape equilibrium.",
+    "correct": "In a geomorphologically mature landscape, erosion and deposition have reached a dynamic equilibrium. Channels of different orders have adjusted their gradients so that the mean elevation drop per Strahler stream is approximately constant. Violation of this property (first-order drops much smaller) indicates the threshold includes hillslope segments that haven't developed channel characteristics.",
+    "explanation": "Geomorphic equilibrium manifests as statistical regularity in network geometry."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how HydroBASINS enables global hydrological analysis.",
+    "correct": "HydroBASINS provides pre-delineated sub-basins at 12 hierarchical levels globally, with attributes including Pfafstetter coding, upstream area, and connectivity. For researchers in data-sparse regions, it provides watershed boundaries without requiring DEM processing. At the finest level, approximately 1 million basins cover the globe. Combined with HydroRIVERS and HydroLAKES, it forms a complete global hydrographic framework.",
+    "explanation": "Pre-delineated global data democratizes hydrological analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the EU Water Framework Directive in organizing watershed data.",
+    "correct": "The WFD organizes European waters into River Basin Districts, subdivided into water bodies for monitoring and reporting. Each water body has defined boundaries (often matching DEM-derived catchments), quality standards, and monitoring requirements. In Hungary, the entire territory falls within the Danube River Basin District, with sub-basins corresponding to major tributaries (Tisza, Drava, etc.).",
+    "explanation": "The WFD provides the regulatory framework that drives European hydrographic data standards."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why Chapter 12 (Python automation) is essential for the workflows described in Chapter 11.",
+    "correct": "Chapter 11's workflow involves 8+ sequential geoprocessing steps with interdependent parameters. Manual execution is slow (20 min per watershed), error-prone (forgotten steps, wrong parameters), and unreproducible. Python automation ensures repeatability, enables batch processing (thousands of watersheds overnight), provides documentation, and supports sensitivity analysis (varying thresholds).",
+    "explanation": "Automation transforms a fragile manual process into a robust, scalable system."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of drainage point and its role in the relational structure.",
+    "correct": "The DrainagePoint is a point feature at the center of each catchment's outlet cell (where flow exits to the downstream link). It links to both the stream (DrainageLine) and catchment (polygon) through the grid code. It provides the physical connection point between spatial features. Stream gauges and water intakes are co-located with (or snapped to) drainage points.",
+    "explanation": "The drainage point is the topological node connecting streams and catchments."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how EFAS complements Hungary's national forecasting system.",
+    "correct": "OVF's HYDROINFO provides dense national monitoring (98 river sections, real-time) with high local accuracy. EFAS provides the broader European context: medium-range ensemble forecasts (15 days), cross-border flood warnings (important for the transboundary Danube and Tisza), and seasonal outlooks (4 months). Together they provide both local detail and regional perspective.",
+    "explanation": "National and continental systems serve complementary scales and time horizons."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the stream drop test uses a two-sample t-test rather than a simpler comparison.",
+    "correct": "Stream drops within each order vary widely. Simply comparing means would ignore this variability. The t-test accounts for sample sizes and standard deviations, providing a statistically rigorous determination of whether the means differ significantly. With large samples (hundreds of first-order streams), the t-test has high power to detect even small differences.",
+    "explanation": "Statistical rigor is necessary because individual stream drops are highly variable."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of the hillslope-channel transition and why it matters for modeling.",
+    "correct": "The transition point where dispersed hillslope flow concentrates into a defined channel is where model equations change. Hillslope: infiltration, soil moisture, sheet flow (kinematic wave). Channel: open-channel flow, flood routing (Saint-Venant). The threshold determines this transition. Setting it wrong means applying the wrong process equations in the wrong domain, degrading model accuracy.",
+    "explanation": "The transition defines the spatial boundary between two fundamentally different process domains."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the NWM's 2.7 million forecast points extend beyond traditional gauge-based forecasting.",
+    "correct": "Before the NWM, forecasts existed only at ~4,000 USGS gauges. The NWM uses NHDPlus catchments and routing to provide forecasts at every reach, including ungauged streams. This covers headwater creeks where no monitoring exists but flooding can still occur. For small communities along ungauged streams, the NWM provides the first-ever flood forecasting capability.",
+    "explanation": "Continental-scale terrain analysis enables forecasting where no observations exist."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Peckham's grid network ordering with the Peuker-Douglas approach.",
+    "correct": "Peckham: apply Strahler ordering to the complete grid network before thresholding, keep streams above a minimum order. Captures some spatial variability but processes an enormous number of links and introduces its own arbitrary threshold (order instead of area). Peuker-Douglas: curvature-based filtering plus weighted accumulation, naturally adapts to terrain texture. More principled and practically successful.",
+    "explanation": "Both address the single-threshold limitation, but Peuker-Douglas is more elegant and effective."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of the NHDPlus construction timeline (20 years).",
+    "correct": "Building a continental-scale, topologically consistent stream network from four different datasets (NED, NHD, WBD, NLCD) with different resolutions, vintages, and production methods was an enormous integration challenge. It required reconciling automated DEM extraction with manual cartography, resolving conflicts, and ensuring routing consistency across 2.7 million reaches. The 20-year timeline reflects this complexity.",
+    "explanation": "Continental-scale data integration is a generational effort."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of losing streams and their impact on watershed delineation.",
+    "correct": "Losing streams lose water through their bed to the subsurface. The DEM-derived contributing area includes all upstream area, but actual water reaching downstream is less. The effective contributing area is smaller than the topographic area. This matters for calibrating rainfall-runoff models: using topographic area overestimates the water available at the gauge.",
+    "explanation": "Losing streams violate the assumption that all upstream water reaches downstream."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the software-as-a-service trend affects hydroinformatics education.",
+    "correct": "Cloud tools provide instant results, reducing the need for local processing skills. But this creates a risk: students who only use cloud tools may lack understanding of what the tools do, how to evaluate results, or how to handle cases where pre-computed data is inadequate. Education must balance practical efficiency (use the cloud) with methodological understanding (know what's behind it).",
+    "explanation": "The tension between convenience and understanding is central to modern education."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Sajo workflow demonstrates the need for stream burning in flat terrain.",
+    "correct": "The Sajo's lower reaches cross the Tisza floodplain where terrain is nearly flat over kilometers. Without burning, DEM-based flow routing produces physically unrealistic paths that follow DEM noise rather than actual channels. Burning the OVF or EU-Hydro network into the DEM forces flow along known channel positions. The DEM-derived vs burned network comparison shows large discrepancies in flat areas.",
+    "explanation": "Stream burning is essential when topographic signal is weak."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the data flow from atmospheric forcing to flood forecast in the NWM.",
+    "correct": "HRRR provides precipitation/temperature on 3 km grid hourly. Noah-MP computes soil moisture, ET, snow, and runoff per grid cell. Geographic transformation distributes grid runoff to NHDPlus catchments via area-weighted intersection. RAPID routes accumulated catchment runoff downstream through 2.7 million reaches. Output: discharge at every reach, updated hourly.",
+    "explanation": "A chain from weather to hydrology to hydraulics, all automated."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical importance of the catchment tessellation's conservation property.",
+    "correct": "Conservation means the total area of all catchments equals the total basin area with no gaps or overlaps. This ensures that rainfall falling anywhere in the basin is captured by exactly one catchment and routed through exactly one stream link. Without conservation, water would be lost (gaps) or double-counted (overlaps), violating mass balance and producing incorrect flow predictions.",
+    "explanation": "Mass conservation is the fundamental requirement for hydrologic modeling."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the grid network ordering approach (Peckham) works and its limitations.",
+    "correct": "Before thresholding, Strahler ordering is applied to the complete grid network where every cell is a potential stream cell. Then streams below a minimum order are removed. This captures spatial variability because order reflects local network complexity. Limitations: the complete grid network has billions of links (every cell), making processing expensive, and the minimum-order threshold is still arbitrary.",
+    "explanation": "Computationally expensive with its own arbitrary parameter."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the outlet stream order as a basin descriptor.",
+    "correct": "The outlet Strahler order summarizes basin complexity in a single number. A 3rd-order basin is a small headwater catchment; a 5th-order basin is a moderate regional watershed; 8th-10th order is a major continental river. The order determines the minimum number of confluences from any headwater to the outlet, controlling network branching complexity and influencing flood routing behavior.",
+    "explanation": "Basin order compactly describes the hierarchical structure of the drainage network."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the differences between ready-to-use cloud delineation and local DEM processing.",
+    "correct": "Cloud: instant, global, no data download, fixed resolution (90 m worldwide, 30 m US), no parameter control. Local: customizable resolution (use best available DEM), full parameter control (threshold, burn-in, conditioning), requires data download and processing time. Cloud for reconnaissance; local for final analysis.",
+    "explanation": "Different tools for different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the NWM handles ungauged basins.",
+    "correct": "The NWM doesn't require gauges for forecasting; it uses physically-based modeling (Noah-MP for runoff, RAPID for routing) parameterized from national datasets (soils, land cover, topography). Gauges are used for calibration and verification, not as direct inputs. This means every NHDPlus reach gets a forecast regardless of whether a gauge exists, extending forecasting from 4,000 to 2.7 million locations.",
+    "explanation": "Physics-based modeling removes the gauge requirement for forecasting."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Lechner grid shift file and when it is needed for Hungarian data.",
+    "correct": "The standard 7-parameter Helmert transformation (EPSG:1449) between HD72/EOV and ETRS89 has accuracy of a few meters. For sub-meter accuracy, the Lechner grid shift file provides a spatially varying correction across Hungary. It's needed when combining high-resolution Hungarian data (DDM-5 in EOV) with European data (Copernicus in ETRS89) for precision applications like dam engineering or urban flood mapping.",
+    "explanation": "Coordinate transformation accuracy matters for high-precision spatial analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the connectivity property of the catchment tessellation.",
+    "correct": "Every catchment connects to exactly one downstream catchment (or to the basin outlet) through its stream link. This creates a directed tree structure mirroring the stream network. Flow from any catchment follows a unique path through connected downstream catchments to the outlet. This topology enables automated network traversal: starting from any point, trace upstream to find all contributing catchments.",
+    "explanation": "Connectivity transforms the tessellation from static geography into a dynamic routing network."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of the area-slope threshold method producing feathering artifacts.",
+    "correct": "On steep, unchanneled hillslopes, the high slope values make A*S^n exceed the threshold even at small areas, producing spurious parallel channels. These 'feathers' have no physical basis—the steep slopes indicate potential for erosion, not actual channel existence. Vegetation, soil cohesion, and root strength resist channelization on these slopes. The method confuses erosion potential with actual channel presence.",
+    "explanation": "The area-slope method fails where high slopes alone don't imply channels."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical significance of the verification checklist for regulatory applications.",
+    "correct": "When OVF delineates flood hazard zones for the Tisza, the methodology must withstand independent review. The checklist provides documented evidence: area matches gauge records (within 5%), streams align with satellite imagery, Horton ratios are in range, connectivity is complete, boundaries match reference datasets. This documentation trail is essential for regulatory credibility and legal defensibility.",
+    "explanation": "Systematic verification is a regulatory requirement, not just good practice."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Sajo's transboundary nature affects data availability and workflow.",
+    "correct": "The Sajo headwaters in Slovakia require Slovak DEM data (Copernicus covers both countries; DDM-5 stops at the border). Gauge data comes from two services (OVF for Hungary, SHMU for Slovakia) with different formats and conventions. EU-Hydro provides consistent cross-border reference. The workflow must handle coordinate transformations, data format differences, and potentially different quality standards.",
+    "explanation": "Transboundary watersheds multiply data challenges."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between the bifurcation ratio and the hierarchical structure of a stream network.",
+    "correct": "R_b approximately 4 means each order has roughly 4 times as many streams as the next higher order. A 4th-order basin with R_b=4 has approximately 1 fourth-order, 4 third-order, 16 second-order, and 64 first-order streams (4^0, 4^1, 4^2, 4^3). This geometric progression reflects the self-similar branching that characterizes natural drainage networks.",
+    "explanation": "The bifurcation ratio quantifies how rapidly network complexity grows with order."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the NWM and EFAS handle different update frequencies and why.",
+    "correct": "NWM updates hourly because HRRR provides hourly atmospheric forcing and flash flood response requires rapid updates. EFAS updates every 6-12 hours because ECMWF ensemble runs are computationally expensive and the target is medium-range (15-day) forecasting where 6-hour updates are sufficient. The update frequency matches both the forcing data availability and the forecast application.",
+    "explanation": "Update frequency balances data availability, computational cost, and application requirements."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of water bodies under the EU Water Framework Directive and their relation to catchments.",
+    "correct": "Water bodies are the fundamental units for WFD monitoring and reporting—roughly equivalent to stream reaches with their associated catchments. Each water body has defined quality objectives and monitoring requirements. DEM-derived catchments provide the spatial basis for water body delineation. Hungary's WFD implementation uses sub-basins of the Danube district, further divided into water bodies for reporting.",
+    "explanation": "The WFD bridges regulatory requirements with physical hydrology through the catchment concept."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the scalability property of the catchment tessellation.",
+    "correct": "Catchments can be aggregated to any desired level by following the tree structure upstream. Want sub-watersheds for 10 gauges? Aggregate catchments upstream of each gauge. Want the full basin? Take all catchments. Want planning units? Group by administrative overlap. The same atomic catchment set serves all aggregation levels, avoiding redundant delineation.",
+    "explanation": "Scalability from one delineation is a key practical advantage."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the complete DEM-to-model workflow described in Chapter 11 forms the spatial skeleton of distributed hydrologic models.",
+    "correct": "The output—segmented stream network with attributes, catchment polygons with associated links, snapped outlets, and flow direction grid—provides everything a distributed model needs. Each catchment is a model element receiving rainfall and generating runoff. Each link routes flow downstream. The connectivity table links them into a computational network. Model quality depends on this skeleton's accuracy.",
+    "explanation": "The delineation products ARE the model structure, not just inputs to it."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how urban storm sewers create discrepancies between DEM-derived and actual drainage.",
+    "correct": "Storm sewers collect runoff from impervious surfaces and convey it underground for kilometers before discharging to a stream. The receiving stream may have no topographic relationship to the source area. DEM delineation shows pre-development topographic drainage, while actual drainage follows engineered infrastructure. In urban areas, engineering records of sewer networks are needed to define the true contributing area.",
+    "explanation": "Engineered subsurface drainage completely overrides surface topography."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the t-statistic is negative in the worked example and what the sign means.",
+    "correct": "The negative t-statistic (-4.2 at T=50) means first-order drops (8.4 m) are systematically smaller than higher-order drops (18.2 m). The hillslope segments included at fine thresholds have small elevation differences because they have convex profiles, not the concave profiles of real channels. As the threshold increases, first-order drops approach higher-order values, and t approaches zero.",
+    "explanation": "The sign indicates which group has the larger mean."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the USGS gauge 10109000 on the Logan River is used as a validation point.",
+    "correct": "The gauge has a known drainage area of 554 km2 from decades of USGS measurement. After DEM processing and outlet snapping, the DEM-derived area at the snapped outlet should match this value closely. A result of 548 km2 (1% difference) confirms correct processing. A result of 12 km2 would indicate the outlet snapped to the wrong stream, requiring adjustment of the snap distance.",
+    "explanation": "Known drainage area is the primary validation metric for delineation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between the number of stream links and the stream definition threshold.",
+    "correct": "Finer thresholds (lower T) create more headwater tributaries, more junctions, and therefore more links. Coarser thresholds eliminate small tributaries, reducing junctions and links. For the worked example, T=100 gives about 186 first-order streams alone, while T=500 gives only 48. The total link count scales similarly, following the power-law relationship between threshold and drainage density.",
+    "explanation": "Network complexity is directly controlled by the threshold."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of the DrainageLine attribute table for hydrologic modeling.",
+    "correct": "The attribute table contains link ID, Strahler order, upstream/downstream link IDs, contributing area, stream drop, slope, length, and distance to outlet. Channel routing requires length and slope. Water quality modeling requires distance to outlet and travel time. Flood forecasting requires connectivity and contributing area. These attributes parameterize models without additional manual measurement.",
+    "explanation": "Attributes automate model parameterization."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Peuker-Douglas method naturally adapts to terrain texture without user intervention.",
+    "correct": "The 2x2 window filter identifies valley cells based on local curvature. In rugged terrain, curvature is high and valley cells are abundant. In smooth terrain, curvature is low and valley cells are sparse. When flow accumulation uses only valley cells, the same numerical threshold produces different physical drainage densities: dense in mountains, sparse on plains. No user intervention is needed for this adaptation.",
+    "explanation": "Local curvature automatically encodes terrain texture."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the CCM and HydroBASINS datasets complement each other for European hydrology.",
+    "correct": "CCM from JRC provides high-detail European catchments with WFD-compatible boundaries, ideal for EU regulatory work. HydroBASINS provides global coverage at 12 levels with Pfafstetter coding, ideal for cross-continental comparisons. For European studies, CCM provides the regulatory framework; HydroBASINS provides global context for comparison with non-European basins.",
+    "explanation": "Regional and global datasets serve different analytical purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the NWM addresses the \"ungauged basins\" problem in hydrology.",
+    "correct": "Traditional forecasting requires gauges. The NWM uses physics-based modeling (Noah-MP for runoff, RAPID for routing) parameterized from national datasets, not gauge calibration. Every NHDPlus reach gets a forecast even without a gauge. This extends from 4,000 gauged to 2.7 million forecast points, addressing the long-standing challenge that most streams worldwide are ungauged.",
+    "explanation": "Physics-based modeling with national datasets replaces the gauge requirement."
+  },
+  {
+    "type": "essay",
+    "question": "Describe why the worked example watershed (150 km2, 30 m DEM) is a practical teaching tool.",
+    "correct": "At 150 km2 on a 30 m grid, the watershed has approximately 185,000 cells: large enough to produce meaningful stream networks with multiple orders, but small enough to process in seconds. The range of thresholds (50-500) produces dramatically different networks (570 vs 38 km of streams), clearly demonstrating the threshold effect. Real-world validation data (drainage density, reference networks) can be applied at this scale.",
+    "explanation": "The scale balances complexity with computational tractability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why DEM-derived boundaries are described as \"resolution-dependent\" rather than absolute truth.",
+    "correct": "Watershed boundaries follow ridgelines where elevation changes direction. On a ridgeline, adjacent cells may differ by centimeters (within DEM noise of 1-2+ meters). A higher-resolution DEM resolves ridgelines more precisely, but different resolutions produce different boundary positions (50-200 m discrepancies). No single delineation is the \"true\" boundary because the physical boundary is a continuous surface, not a grid-cell edge.",
+    "explanation": "DEM-derived boundaries are approximations whose quality depends on resolution."
+  }
+]

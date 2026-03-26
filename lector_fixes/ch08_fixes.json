@@ -1,0 +1,1046 @@
+{
+  "chapter": "ch08",
+  "total_issues": 130,
+  "fixes": [
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a fejezet hidat képez a pontmérések és a folytonos térbeli mezők között.",
+      "suggested": "Ez a fejezet a pontmérések és a folytonos térbeli mezők közötti kapcsolatot tárgyalja.",
+      "reason": "A „hidat képez” angolos, metaforikus tükörfordítás; tudományos prózában természetesebb a közvetlenebb megfogalmazás."
+    },
+    {
+      "line_approx": 9,
+      "category": "register",
+      "severity": "medium",
+      "original": "a közöttük való választás szempontjait",
+      "suggested": "a kiválasztásuk szempontjait",
+      "reason": "A „közöttük való választás” körülményes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 9,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyek egyre inkább lehetővé teszik a hidrológusok számára, hogy átugorják a nyers interpolációt",
+      "suggested": "amelyek révén a hidrológusok egyre gyakrabban elhagyhatják a nyers interpoláció lépését",
+      "reason": "A „lehetővé teszik ... számára” és az „átugorják” szóhasználat angolos; magyarul természetesebb az egyszerűbb, szakmaibb megfogalmazás."
+    },
+    {
+      "line_approx": 10,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "biztosítja a fogalmi szókincset e termékek értékeléséhez",
+      "suggested": "megadja e termékek értékelésének fogalmi keretét",
+      "reason": "A „biztosítja a fogalmi szókincset” szó szerinti fordításízű; a „fogalmi keret” természetesebb magyar tudományos kifejezés."
+    },
+    {
+      "line_approx": 13,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A csapadék azonban továbbra is a legigényesebb alkalmazás magas térbeli változékonysága, a domborzattal való kapcsolata, valamint szinte minden hidrológiai számításban betöltött központi szerepe miatt",
+      "suggested": "A csapadék azonban magas térbeli változékonysága, a domborzattal való kapcsolata, valamint a hidrológiai számításokban betöltött központi szerepe miatt továbbra is a legnehezebb eset",
+      "reason": "Az „alkalmazás” itt szemantikailag pontatlan, a mondat vége pedig angolosan túlterhelt; a javasolt változat természetesebb és világosabb."
+    },
+    {
+      "line_approx": 20,
+      "category": "other",
+      "severity": "medium",
+      "original": "értékek becslése méretlen helyeken korlátozott számú ismert mintapontból, folytonos raszterfelszín előállítása",
+      "suggested": "értékek becslése méretlen helyeken korlátozott számú ismert mintapont alapján, folytonos raszterfelszín előállításával",
+      "reason": "A felsorolásszerű, hiányos szerkezet megtöri a mondatot; a magyarban természetesebb a párhuzamosabb mondatszerkesztés."
+    },
+    {
+      "line_approx": 23,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden interpolációs módszer egy valóságmodellt foglal magában",
+      "suggested": "Minden interpolációs módszer a valóság valamely modelljére épül",
+      "reason": "A „valóságmodellt foglal magában” nehézkes, tükörfordítás jellegű szerkezet."
+    },
+    {
+      "line_approx": 26,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a környezeti hőmérsékleti gradiens",
+      "suggested": "a környezeti hőmérsékleti gradiens értéke",
+      "reason": "Önmagában nem hibás, de a mondatban csonkának hat; a magyar szaknyelvben így természetesebb a beágyazás."
+    },
+    {
+      "line_approx": 28,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "milyen térbeli változékonyság bontható fel",
+      "suggested": "mekkora térbeli változékonyság különíthető el",
+      "reason": "A „bontható fel” itt nem szerencsés szakkifejezés; a „különíthető el” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 29,
+      "category": "adjective_stacking",
+      "severity": "low",
+      "original": "a magasabb tengerszint feletti magasságokon",
+      "suggested": "a magasabban fekvő területeken",
+      "reason": "A szerkezet nehézkes és túlterhelt; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 29,
+      "category": "register",
+      "severity": "low",
+      "original": "Hegyesebb országokban",
+      "suggested": "Tagoltabb domborzatú országokban",
+      "reason": "A „hegyesebb országok” köznyelvies, tudományos szövegben pongyolának hat."
+    },
+    {
+      "line_approx": 36,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Voronoj-poligonoknak",
+      "suggested": "Voronoi-poligonoknak",
+      "reason": "A bevett nemzetközi és magyar szakmai írásmód a „Voronoi”, nem „Voronoj”."
+    },
+    {
+      "line_approx": 39,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Thiessen-poligonok duális kapcsolatban állnak ugyanazon ponthalmaz Delaunay-háromszögelésével.",
+      "suggested": "A Thiessen-poligonok a ugyanazon ponthalmazhoz tartozó Delaunay-háromszögelés duálisai.",
+      "reason": "A „duális kapcsolatban állnak” szó szerinti, nehézkes fordulat; a matematikai szaknyelvben tömörebb megfogalmazás szokásos."
+    },
+    {
+      "line_approx": 41,
+      "category": "plural",
+      "severity": "low",
+      "original": "A legközelebbi szomszéd interpoláció előnyei az egyszerűség és az adatmegőrzés.",
+      "suggested": "A legközelebbi szomszéd interpoláció előnye az egyszerűség és az adatmegőrzés.",
+      "reason": "Két tagú állítmánykiegészítés mellett is természetesebb az egyes számú „előnye”."
+    },
+    {
+      "line_approx": 52,
+      "category": "register",
+      "severity": "low",
+      "original": "fizikailag indokolt lehet (esőárnyék), vagy mérési műtermék",
+      "suggested": "fizikailag indokolt lehet (például esőárnyék miatt), vagy mérési műtermék eredménye",
+      "reason": "A második tagmondat elliptikus, kissé darabos; a kiegészítés gördülékenyebbé teszi."
+    },
+    {
+      "line_approx": 69,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "köbös konvolúciós módszer",
+      "suggested": "köbös konvolúció",
+      "reason": "A magyar GIS-szaknyelvben a „köbös konvolúció” a bevettebb terminus."
+    },
+    {
+      "line_approx": 75,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A matematikai spline-ok formalizálják ezt a fizikai analógiát.",
+      "suggested": "A matematikai spline-ok ennek a fizikai analógiának a formális leírását adják.",
+      "reason": "A „formalizálják” itt angolos, elvont és kissé nehézkes."
+    },
+    {
+      "line_approx": 88,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Az egyszerű krigelés (ordinary kriging)",
+      "suggested": "A közönséges krigelés (ordinary kriging)",
+      "reason": "Az „ordinary kriging” bevett magyar megfelelője a „közönséges krigelés”, nem az „egyszerű krigelés”."
+    },
+    {
+      "line_approx": 97,
+      "category": "other",
+      "severity": "high",
+      "original": "Ez a kétlépcsős megközelítés a nagylépékű trendeket és a lokális térbeli korrelációt egyaránt megragadhatja",
+      "suggested": "Ez a kétlépcsős megközelítés a nagyléptékű trendeket és a lokális térbeli korrelációt egyaránt megragadhatja",
+      "reason": "Elütés: „nagylépékű” helyett „nagyléptékű”."
+    },
+    {
+      "line_approx": 210,
+      "category": "register",
+      "severity": "low",
+      "original": "Nincs univerzálisan legjobb módszer",
+      "suggested": "Nincs univerzálisan legjobb módszer; mindegyiknek vannak erősségei és gyengeségei",
+      "reason": "A gondolatjel utáni tagmondattal együtt gördülékenyebb, akadémiai regiszterben természetesebb tagolás."
+    },
+    {
+      "line_approx": 216,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek az IDW, a spline vagy a krigelés interpoláció jelöltjei.",
+      "suggested": "Ezekhez az IDW, a spline vagy a krigelés alkalmazható.",
+      "reason": "A „jelöltjei” angolos, szó szerinti fordítás; magyarul természetesebb az igei megfogalmazás."
+    },
+    {
+      "line_approx": 217,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kategoriális adatokra az egyetlen megfelelő interpolációs módszer a legközelebbi szomszéd.",
+      "suggested": "Kategoriális adatok esetén az egyetlen megfelelő módszer a legközelebbi szomszéd módszere.",
+      "reason": "A „legközelebbi szomszéd” önmagában kissé csonka; szakszerűbb a teljes terminus."
+    },
+    {
+      "line_approx": 220,
+      "category": "register",
+      "severity": "low",
+      "original": "Az eseményalapú csapadék -- egyetlen vihar -- mindössze néhány kilométeres távolságon belül drámaian változhat.",
+      "suggested": "Az eseményalapú csapadék -- például egyetlen vihar esetén -- már néhány kilométeres távolságon belül is erősen változhat.",
+      "reason": "A „drámaian” publicisztikusabb, az „erősen” tudományos szövegben természetesebb."
+    },
+    {
+      "line_approx": 224,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Sűrű, szabályosan elosztott hálózatot egyszerű módszerek, mint az IDW vagy a bilineáris interpoláció is megfelelően kiszolgálnak.",
+      "suggested": "A sűrű, szabályosan elosztott hálózatokat egyszerű módszerek, például az IDW vagy a bilineáris interpoláció is megfelelően kezelik.",
+      "reason": "Az eredeti mondat szórendje és a „kiszolgálnak” ige angolos, természetellenes."
+    },
+    {
+      "line_approx": 225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A ritka, szabálytalanul elosztott hálózat számára a krigelés előnyösebb",
+      "suggested": "Ritka, szabálytalan eloszlású mérőhálózat esetén a krigelés előnyösebb",
+      "reason": "A „hálózat számára” szerkezet angolos; magyarul inkább „esetén” használatos."
+    },
+    {
+      "line_approx": 228,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "lakott alföldi területeken koncentrálódva",
+      "suggested": "mivel gyakran a lakott alföldi területeken koncentrálódnak",
+      "reason": "A határozói igenév itt nehézkes és fordításszagú; mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 229,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a minden mérőt egyenlően kezelő módszerek",
+      "suggested": "mint azok a módszerek, amelyek minden mérőpontot egyformán kezelnek",
+      "reason": "Az eredeti szerkezet túl tömör és angolos; a kibontott mellékmondat magyarosabb."
+    },
+    {
+      "line_approx": 234,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az azokat beépítő módszerek felülmúlják azokat, amelyek nem képesek erre",
+      "suggested": "az ezeket felhasználó módszerek általában jobbak azoknál, amelyek ezt nem teszik lehetővé",
+      "reason": "A „felülmúlják azokat” szerkezet szó szerinti fordításízű és nehézkes."
+    },
+    {
+      "line_approx": 236,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A PRISM megközelítés helyi regressziós kapcsolatokat használ",
+      "suggested": "A PRISM módszer helyi regressziós kapcsolatokat használ",
+      "reason": "A „megközelítés” itt túl általános; a „módszer” pontosabb szaknyelvi megnevezés."
+    },
+    {
+      "line_approx": 239,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ez azt jelenti, hogy a segédváltozós módszerek mindig alkalmazhatók csapadék-interpolációhoz",
+      "suggested": "Vagyis a segédváltozós módszerek csapadékinterpolációhoz gyakorlatilag mindig alkalmazhatók",
+      "reason": "Az „Ez azt jelenti, hogy” tipikus tükörfordítás; emellett a „csapadék-interpoláció” kötőjeles alakja itt indokolatlan."
+    },
+    {
+      "line_approx": 240,
+      "category": "register",
+      "severity": "medium",
+      "original": "A korlátozó tényező az elemző hajlandósága a további erőfeszítés befektetésére",
+      "suggested": "A korlátozó tényező inkább az, hogy az elemző hajlandó-e további munkát ráfordítani",
+      "reason": "Az „erőfeszítés befektetése” angolos, főnevesített szerkezet; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 244,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy köbös spline például $-2$ mm csapadékértéket produkálhat",
+      "suggested": "Egy köbös spline például $-2$ mm-es csapadékértéket is adhat",
+      "reason": "A „produkálhat” itt idegenszerű; a „adhat” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 245,
+      "category": "register",
+      "severity": "low",
+      "original": "soha nem lő túl",
+      "suggested": "nem adnak a bemeneti tartományon kívüli értéket",
+      "reason": "A „túllő” metaforikus, kissé köznyelvi; tudományos prózában pontosabb a leíró megfogalmazás."
+    },
+    {
+      "line_approx": 250,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "hanem annak mérését is, mennyire megbízható az adott becslés",
+      "suggested": "hanem annak számszerűsítését is, hogy mennyire megbízható az adott becslés",
+      "reason": "A „mérését” itt angol mintájú, pontatlan megoldás; a „számszerűsítését” szakmailag pontosabb."
+    },
+    {
+      "line_approx": 251,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "konfidencia-intervallumok szerkesztésére",
+      "suggested": "konfidenciaintervallumok meghatározására",
+      "reason": "A „szerkesztésére” ebben a kontextusban szokatlan; a „meghatározására” természetesebb szaknyelvi választás."
+    },
+    {
+      "line_approx": 252,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a csapadékbizonytalanság továbbvezetésére a későbbi hidrológiai modellekbe",
+      "suggested": "a csapadék bizonytalanságának továbbvitelére a későbbi hidrológiai modellekbe",
+      "reason": "A „továbbvezetés” szó szerinti fordításízű; a „továbbvitel” bevettebb."
+    },
+    {
+      "line_approx": 254,
+      "category": "register",
+      "severity": "low",
+      "original": "határozottan előnyösebbek",
+      "suggested": "egyértelműen előnyösebbek",
+      "reason": "Az „egyértelműen” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 268,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mire a levegő a szél mögötti oldalon leereszkedik",
+      "suggested": "Mire a levegő a szélárnyékos oldalon leszáll",
+      "reason": "A „szél mögötti oldal” szó szerinti fordítás; a „szélárnyékos oldal” a természetes magyar terminus."
+    },
+    {
+      "line_approx": 272,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az interpolációra gyakorolt hatás mélységes.",
+      "suggested": "Ennek az interpoláció szempontjából alapvető jelentősége van.",
+      "reason": "A „mélységes” ebben a kontextusban modoros és fordításszagú."
+    },
+    {
+      "line_approx": 273,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "egyszerű távolságalapú interpolációs módszer",
+      "suggested": "egyszerű, távolságalapú interpolációs módszer",
+      "reason": "A vessző nélküli jelzőtorlódás nehezíti az olvasást."
+    },
+    {
+      "line_approx": 274,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez nem elméleti aggály",
+      "suggested": "Ez nem pusztán elméleti probléma",
+      "reason": "Az „aggály” itt kevésbé természetes, mint a „probléma”."
+    },
+    {
+      "line_approx": 278,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az orografikus hatás figyelembevételére legszélesebb körben alkalmazott megközelítés",
+      "suggested": "az orografikus hatás figyelembevételére legszélesebb körben alkalmazott módszer",
+      "reason": "A „megközelítés” ismét túl általános és angolos; a „módszer” természetesebb."
+    },
+    {
+      "line_approx": 281,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mérő csapadéka",
+      "suggested": "az állomáson mért csapadék",
+      "reason": "A „mérő csapadéka” pontatlan és szokatlan szerkezet; a mért mennyiségre kell utalni."
+    },
+    {
+      "line_approx": 287,
+      "category": "plural",
+      "severity": "low",
+      "original": "Ezek a termékek az Egyesült Államok szabványos referenciaklimatológiája",
+      "suggested": "E termékek az Egyesült Államok szabványos referenciaklimatológiáját adják",
+      "reason": "Az állítmányi szerkezet így természetesebb; az eredeti kissé nehézkes és angolos."
+    },
+    {
+      "line_approx": 801,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A 6. fejezet térképalgebrai műveleteinek osztályozásában a zonális statisztikák **zonális műveletek** -- minden kimeneti érték az azonos zónaazonosítóval rendelkező összes cellából számítódik.",
+      "suggested": "A 6. fejezet térképalgebrai műveleteinek osztályozása szerint a zonális statisztikák **zonális műveletek**: minden kimeneti értéket az azonos zónaazonosítóhoz tartozó összes cella alapján számítunk ki.",
+      "reason": "Természetellenes szerkezet ('osztályozásában'), valamint a 'számítódik' körülményes, passzív jellegű megfogalmazás."
+    },
+    {
+      "line_approx": 802,
+      "category": "register",
+      "severity": "medium",
+      "original": "A zonális statisztikák hidat képeznek a változó folytonos raszterreprezentációja (csapadékfelszín, domborzatmodell, hőmérsékleti rács) és az elemzési egységek diszkrét poligonreprezentációja (vízgyűjtők, közigazgatási régiók, tervezési zónák) között.",
+      "suggested": "A zonális statisztikák kapcsolatot teremtenek a változó folytonos raszteres reprezentációja (csapadékfelszín, domborzatmodell, hőmérsékleti rács) és az elemzési egységek diszkrét poligonos reprezentációja (vízgyűjtők, közigazgatási régiók, tervezési zónák) között.",
+      "reason": "A 'hidat képeznek' enyhén angolos metafora; a 'raszterreprezentáció/poligonreprezentáció' helyett természetesebb a 'raszteres/poligonos reprezentáció'."
+    },
+    {
+      "line_approx": 803,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az eredmény egy táblázat, amely egy vagy több összefoglaló értéket rendel minden poligonhoz, amelyet azután visszacsatolhatunk a poligon objektumosztályhoz térképezés, további elemzés vagy exportálás céljából.",
+      "suggested": "Az eredmény egy táblázat, amely minden poligonhoz egy vagy több összesítő értéket rendel; ezt azután térképezéshez, további elemzéshez vagy exportáláshoz visszacsatolhatjuk a poligon-objektumosztályhoz.",
+      "reason": "Angolosan hosszú, nehézkes mondat; az 'összefoglaló érték' helyett a szaknyelvben természetesebb az 'összesítő érték'."
+    },
+    {
+      "line_approx": 805,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro-ban a műveletet a **Zonal Statistics as Table** eszközzel végzik (Spatial Analyst > Zonal).",
+      "suggested": "Az ArcGIS Pro-ban ezt a műveletet a **Zonal Statistics as Table** eszközzel végezhetjük el (Spatial Analyst > Zonal).",
+      "reason": "Az általános alanyos 'végzik' személytelen, fordításszagú; magyarul természetesebb az 'elvégezhetjük'."
+    },
+    {
+      "line_approx": 808,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Hidrológiai alkalmazásokhoz ez jellemzően egy vízgyűjtő vagy al-medence objektumosztály.",
+      "suggested": "Hidrológiai alkalmazásokban ez jellemzően egy vízgyűjtő- vagy almedence-objektumosztály.",
+      "reason": "A 'hidrológiai alkalmazásokhoz' itt kevésbé természetes, továbbá az 'al-medence' írásmód ingadozó; a szaknyelvben gyakoribb az 'almedence'."
+    },
+    {
+      "line_approx": 814,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a táblázat a zónamező mint csatlakozási kulcs segítségével visszacsatolható az eredeti poligon objektumosztályhoz, elérhetővé téve a statisztikákat poligonattribútumokként a térképezéshez és a további elemzéshez.",
+      "suggested": "Ez a táblázat a zónamező csatlakozási kulcsként való használatával visszacsatolható az eredeti poligon-objektumosztályhoz, így a statisztikák poligonattribútumként válnak elérhetővé térképezéshez és további elemzéshez.",
+      "reason": "Az 'elérhetővé téve' szerkezet angolos; a mondat magyarosabban okhatározói mellékmondattal vagy 'így' kötőelemmel hangzik."
+    },
+    {
+      "line_approx": 816,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "A QGIS-ben az ekvivalens műveletet a Processing Toolbox **Zonal Statistics** eszközével, vagy a GRASS `r.stats.zonal` modulján keresztül végzik.",
+      "suggested": "A QGIS-ben az ennek megfelelő műveletet a Processing Toolbox **Zonal Statistics** eszközével vagy a GRASS `r.stats.zonal` moduljával végezhetjük el.",
+      "reason": "A 'végzik' személytelen, fordításszagú; az 'ekvivalens művelet' helyett természetesebb az 'ennek megfelelő művelet'."
+    },
+    {
+      "line_approx": 817,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A funkcionalitás azonos: a raszterértékeket poligonzónákon belül összegzik, és az eredményeket új attribútummezőkként csatolják a poligonréteghez.",
+      "suggested": "A funkcionalitás azonos: a raszterértékeket a poligonzónákon belül összegzik, az eredményeket pedig új attribútummezőkként csatolják a poligonréteghez.",
+      "reason": "Enyhén angolos szórend; a magyar mondat ritmusát javítja a határozottabb tagolás."
+    },
+    {
+      "line_approx": 823,
+      "category": "register",
+      "severity": "medium",
+      "original": "A válasz, talán meglepő módon, az, hogy a zonális statisztikák rendkívül pontosak, ha a zóna sok rasztercellát tartalmaz.",
+      "suggested": "A válasz -- talán meglepő módon -- az, hogy a zonális statisztikák nagyon pontosak, ha a zóna sok rasztercellát tartalmaz.",
+      "reason": "A 'rendkívül pontosak' kissé túlzó regiszterű; tudományos szövegben a 'nagyon pontosak' visszafogottabb és természetesebb."
+    },
+    {
+      "line_approx": 824,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A következő táblázat ezt szemlélteti két független domborzatmodell-forrásból számított átlagos tengerszint feletti magasságra, HUC10-ekvivalens al-vízgyűjtők felett:",
+      "suggested": "A következő táblázat ezt szemlélteti két független domborzatmodell-forrásból számított, HUC10-nek megfelelő alvízgyűjtők átlagos tengerszint feletti magasságának példáján:",
+      "reason": "Az 'al-vízgyűjtők felett' szó szerinti fordítás; magyarul itt birtokos szerkezet természetesebb. Az 'ekvivalens' helyett gördülékenyebb a 'megfelelő'."
+    },
+    {
+      "line_approx": 826,
+      "category": "register",
+      "severity": "low",
+      "original": "**8.5. táblázat**: A zonális magassági statisztikák pontossága -- két független domborzatmodell-számítás összehasonlítása",
+      "suggested": "**8.5. táblázat**: A zonális magassági statisztikák pontossága -- két független domborzatmodellből származó számítás összehasonlítása",
+      "reason": "A 'domborzatmodell-számítás' nehézkes összetétel; természetesebb a forrásra utaló megfogalmazás."
+    },
+    {
+      "line_approx": 837,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A perspektíva kedvéért: az Egyesült Államok Nemzeti Magassági Adatbázisának négyzetes középértéke (RMSE) a terepi igazsághoz képest 2,34 m.",
+      "suggested": "Összehasonlításképpen: az Egyesült Államok Nemzeti Magassági Adatbázisának RMSE-értéke a terepi referenciaadatokhoz képest 2,34 m.",
+      "reason": "A 'perspektíva kedvéért' és a 'terepi igazság' angol tükörfordítások ('for perspective', 'ground truth')."
+    },
+    {
+      "line_approx": 838,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Copernicus DEM GLO-30 abszolút függőleges pontossága (LE90) globálisan kevesebb mint 4 m, és a jól feltérképezett európai területeken körülbelül 1 m.",
+      "suggested": "A Copernicus DEM GLO-30 abszolút magassági pontossága (LE90) globálisan kevesebb mint 4 m, a jól feltérképezett európai területeken pedig körülbelül 1 m.",
+      "reason": "A 'függőleges pontosság' érthető, de magyar szaknyelvben a 'magassági pontosság' természetesebb."
+    },
+    {
+      "line_approx": 839,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ebből következik, hogy a független elemzések közötti vízgyűjtő-átlagértékekben megfigyelt bármilyen különbség a forrásadatok különbségeit tükrözi, nem a zonális statisztika-számítás hibáit.",
+      "suggested": "Ebből következik, hogy a független elemzések vízgyűjtő-átlagértékei közötti bármely különbség a forrásadatok eltéréseit tükrözi, nem a zonális statisztikák számítási hibáját.",
+      "reason": "Az 'értékekben megfigyelt bármilyen különbség' angolosan körülményes; magyarul egyszerűbb szerkezet természetesebb."
+    },
+    {
+      "line_approx": 841,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "E pontosság azért ilyen nagy, mert a zonális statisztikák nagyon nagy számú cellára történő átlagolást foglalnak magukban.",
+      "suggested": "Ez a nagy pontosság annak köszönhető, hogy a zonális statisztikák igen sok cella átlagolásán alapulnak.",
+      "reason": "A 'foglalnak magukban' tipikus angol tükör ('involve'); magyarul az 'alapulnak' természetesebb."
+    },
+    {
+      "line_approx": 842,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Még egy 50 km$^2$-es kis al-vízgyűjtő is, amelyet 30 m-es domborzatmodellen ábrázolnak, körülbelül 55 000 cellát tartalmaz.",
+      "suggested": "Még egy 50 km$^2$-es kis alvízgyűjtő is körülbelül 55 000 cellát tartalmaz, ha 30 m-es domborzatmodellel ábrázoljuk.",
+      "reason": "Az 'amelyet ... ábrázolnak' személytelen, passzív jellegű szerkezet; magyarul természetesebb az aktív megfogalmazás."
+    },
+    {
+      "line_approx": 843,
+      "category": "register",
+      "severity": "low",
+      "original": "Az átlag standard hibája $1/\\sqrt{n}$-nel csökken, ahol $n$ a cellák száma.",
+      "suggested": "Az átlag standard hibája $1/\\sqrt{n}$ arányában csökken, ahol $n$ a cellák száma.",
+      "reason": "A '-nel csökken' itt kissé darabos; az 'arányában' tudományos stílusban természetesebb."
+    },
+    {
+      "line_approx": 844,
+      "category": "calque",
+      "severity": "medium",
+      "original": "$n = 55\\,000$ esetén az egyes cellák véletlenszerű hibái mintegy 235-szörös faktorral elnyomódnak.",
+      "suggested": "$n = 55\\,000$ esetén az egyes cellák véletlen hibáinak hatása mintegy 235-szörösére csökken.",
+      "reason": "A 'faktorral elnyomódnak' angol tükörfordítás; magyar tudományos prózában természetesebb a 'hatása ... csökken'."
+    },
+    {
+      "line_approx": 845,
+      "category": "register",
+      "severity": "medium",
+      "original": "Csak a szisztematikus hibák -- az összes cellát azonos irányban érintő torzítások -- élik túl az átlagolási folyamatot.",
+      "suggested": "Az átlagolás után csak a szisztematikus hibák -- vagyis az összes cellát azonos irányban érintő torzítások -- maradnak fenn.",
+      "reason": "Az 'élik túl' túl képszerű, kevésbé akadémiai regiszterű."
+    },
+    {
+      "line_approx": 849,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a csatolási művelet egy közös mező -- jellemzően a zónaazonosító -- segítségével párosítja a táblázat sorait az objektumosztály elemeivel.",
+      "suggested": "Ebben a csatolási műveletben egy közös mező -- jellemzően a zónaazonosító -- alapján rendeljük egymáshoz a táblázat sorait és az objektumosztály elemeit.",
+      "reason": "A 'párosítja' itt angolos adatbázisnyelv; magyarul természetesebb az 'egymáshoz rendeljük'."
+    },
+    {
+      "line_approx": 851,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro-ban ezt az **Add Join** eszközzel vagy az objektumrétegre jobb egérgombbal kattintva és az \"Add Join\" kiválasztásával végzik.",
+      "suggested": "Az ArcGIS Pro-ban ezt az **Add Join** eszközzel, illetve az objektumrétegen jobb gombbal kattintva és az \"Add Join\" parancsot kiválasztva végezhetjük el.",
+      "reason": "A 'végzik' személytelen; a mondat magyarosabban aktív, lehetőséget kifejező szerkezettel hangzik."
+    },
+    {
+      "line_approx": 852,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A QGIS-ben az ekvivalens a Processing Toolbox **Join attributes by field value** eszköze, vagy a réteg tulajdonságok párbeszédablak Joins lapja.",
+      "suggested": "A QGIS-ben ennek megfelelő eszköz a Processing Toolbox **Join attributes by field value** eszköze, illetve a Rétegtulajdonságok párbeszédablak Joins lapja.",
+      "reason": "Az 'ekvivalens' itt idegenszerű; a 'réteg tulajdonságok' különírása is természetellenes."
+    },
+    {
+      "line_approx": 855,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Így közvetlenül megjeleníthetők -- például vízgyűjtők szimbolizálását éves átlagcsapadék szerint fokozatos színsémával -- és a további elemzést -- például az összes 300 m feletti átlagmagasságú vízgyűjtő kiválasztását hegyi hidrológiai vizsgálathoz.",
+      "suggested": "Így a statisztikák közvetlenül felhasználhatók megjelenítésre -- például a vízgyűjtők éves átlagcsapadék szerinti, fokozatos színsémájú szimbolizálására --, valamint további elemzésre -- például a 300 m feletti átlagmagasságú vízgyűjtők kiválasztására hegyvidéki hidrológiai vizsgálatokhoz.",
+      "reason": "A mondat jelenlegi alakjában nyelvtanilag hiányos és szórendileg zavaros; az 'és a további elemzést' szerkezet hibásan kapcsolódik."
+    },
+    {
+      "line_approx": 857,
+      "category": "passive_voice",
+      "severity": "low",
+      "original": "A csatolt eredmények táblázatos formátumokba (CSV, Excel) is exportálhatók más szoftverekben történő elemzéshez.",
+      "suggested": "A csatolt eredményeket táblázatos formátumokba (CSV, Excel) is exportálhatjuk, hogy más szoftverekben elemezzük őket.",
+      "reason": "A passzív, személytelen szerkezet helyett természetesebb az aktív megfogalmazás."
+    },
+    {
+      "line_approx": 864,
+      "category": "register",
+      "severity": "low",
+      "original": "A módszer logikája egyértelmű.",
+      "suggested": "A módszer logikája egyszerű.",
+      "reason": "Az 'egyértelmű' itt enyhén értékelő; a 'egyszerű' tárgyilagosabb és jobban illik a magyarázó szöveghez."
+    },
+    {
+      "line_approx": 865,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Minden mérőhöz hozzárendelnek egy poligont, amely magában foglalja az összes olyan helyet, amely közelebb van az adott mérőhöz, mint bármely másik mérőhöz -- ez a Thiessen-poligon, a 8.2.1. szakaszban leírtak szerint.",
+      "suggested": "Minden mérőhöz egy olyan poligont rendelünk, amely az összes olyan helyet magában foglalja, amely közelebb van az adott mérőhöz, mint bármely másikhoz; ez a Thiessen-poligon, a 8.2.1. szakaszban leírtak szerint.",
+      "reason": "A 'hozzárendelnek' személytelen; magyar tankönyvi stílusban természetesebb az általános alany helyett az aktív 'rendelünk'."
+    },
+    {
+      "line_approx": 868,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A módszer a legközelebbi szomszéd interpoláció egy formája, amelyet térbeli átlagolás követ.",
+      "suggested": "A módszer a legközelebbi szomszéd szerinti interpoláció egyik formája, amelyet térbeli átlagolás követ.",
+      "reason": "A jelenlegi szerkezet kissé angolos; a 'szerinti interpoláció' magyarosabb."
+    },
+    {
+      "line_approx": 869,
+      "category": "register",
+      "severity": "low",
+      "original": "A Thiessen-poligon területek szolgálnak súlyokként: egy mérő, amelynek poligonja a vízgyűjtő területének 40%-át fedi le, 40%-kal járul hozzá a súlyozott átlaghoz.",
+      "suggested": "A súlyokat a Thiessen-poligonok területe adják: egy mérő, amelynek poligonja a vízgyűjtő területének 40%-át fedi le, 40%-ban járul hozzá a súlyozott átlaghoz.",
+      "reason": "A 'szolgálnak súlyokként' angolos; magyarul egyszerűbb az 'adják'."
+    },
+    {
+      "line_approx": 873,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A következő munkafolyamat implementálja a Thiessen-poligon módszert az ArcGIS Pro-ban.",
+      "suggested": "A következő munkafolyamat megvalósítja a Thiessen-poligon módszert az ArcGIS Pro-ban.",
+      "reason": "Az 'implementálja' itt fölöslegesen idegen hangzású; a 'megvalósítja' természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 873,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Az ekvivalens műveletek a QGIS-ben a Processing Toolbox-on keresztül érhetők el (a Voronoj-poligonokat a **Voronoi Polygons** eszközzel hozzák létre, a fedvényt pedig az **Intersection** eszközzel hajtják végre).",
+      "suggested": "A QGIS-ben az ennek megfelelő műveletek a Processing Toolboxban érhetők el (a Voronoi-poligonokat a **Voronoi Polygons** eszközzel hozhatjuk létre, a metszetet pedig az **Intersection** eszközzel végezhetjük el).",
+      "reason": "Az 'ekvivalens' és a személytelen 'hozzák létre / hajtják végre' fordításszagú; a 'fedvény' itt pontatlan, mert valójában metszetről van szó."
+    },
+    {
+      "line_approx": 875,
+      "category": "register",
+      "severity": "low",
+      "original": "Használja a **Create Thiessen Polygons** eszközt (Analysis > Proximity) a mérőpont objektumosztállyal bemenetként.",
+      "suggested": "Használjuk a **Create Thiessen Polygons** eszközt (Analysis > Proximity), a mérőpont-objektumosztályt megadva bemenetként.",
+      "reason": "A tegező/felszólító 'Használja' nem illeszkedik a tankönyvi, leíró regiszterhez; egységesebb a többes első személy."
+    },
+    {
+      "line_approx": 876,
+      "category": "register",
+      "severity": "low",
+      "original": "Válassza az \"All fields\" opciót a kimeneti mezőknél, hogy a csapadékattribútum átkerüljön a kimeneti poligonokba.",
+      "suggested": "Válasszuk az \"All fields\" opciót a kimeneti mezőknél, hogy a csapadékattribútum is átkerüljön a kimeneti poligonokba.",
+      "reason": "Stílusegység: a felszólító alak legyen következetesen többes első személy."
+    },
+    {
+      "line_approx": 877,
+      "category": "register",
+      "severity": "low",
+      "original": "Állítsa be a feldolgozási környezet kiterjedését a vízgyűjtőhatárra (pufferrel), a teljes lefedettség biztosítása érdekében.",
+      "suggested": "Állítsuk a feldolgozási környezet kiterjedését a vízgyűjtőhatárra (pufferrel), hogy biztosítsuk a teljes lefedettséget.",
+      "reason": "Stílusegység és gördülékenyebb magyar mondatszerkesztés."
+    },
+    {
+      "line_approx": 879,
+      "category": "register",
+      "severity": "low",
+      "original": "Használja az **Intersect** eszközt (Analysis > Overlay) a Thiessen-poligonokkal és a vízgyűjtő poligonréteggel bemenetként.",
+      "suggested": "Használjuk az **Intersect** eszközt (Analysis > Overlay), a Thiessen-poligonokat és a vízgyűjtő poligonréteget megadva bemenetként.",
+      "reason": "A felszólító alak legyen következetes; a jelenlegi szerkezet kissé darabos."
+    },
+    {
+      "line_approx": 882,
+      "category": "register",
+      "severity": "low",
+      "original": "Adjon hozzá egy új mezőt a metszett objektumosztályhoz (pl. `AP_Szorzat`, típusa Double) és használja a **Calculate Field** eszközt:",
+      "suggested": "Adjunk hozzá egy új mezőt a metszett objektumosztályhoz (pl. `AP_Szorzat`, típusa Double), majd használjuk a **Calculate Field** eszközt:",
+      "reason": "Stílusegység, valamint hiányzik a vessző a tagmondatok között."
+    },
+    {
+      "line_approx": 888,
+      "category": "register",
+      "severity": "low",
+      "original": "Használja a **Summary Statistics** eszközt (Analysis > Statistics) a következő kiszámításához minden vízgyűjtőre:",
+      "suggested": "Használjuk a **Summary Statistics** eszközt (Analysis > Statistics) a következők kiszámításához minden vízgyűjtőre:",
+      "reason": "Stílusegység; a többes számú 'következők' illik a felsoroláshoz."
+    },
+    {
+      "line_approx": 895,
+      "category": "register",
+      "severity": "low",
+      "original": "Adjon hozzá egy új mezőt az összegző táblázathoz és számítsa ki:",
+      "suggested": "Adjunk hozzá egy új mezőt az összegző táblázathoz, és számítsuk ki:",
+      "reason": "Stílusegység és hiányzó vessző."
+    },
+    {
+      "line_approx": 912,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**8.6. táblázat**: Bemeneti adatok a Thiessen-poligon kidolgozott példához",
+      "suggested": "**8.6. táblázat**: Bemeneti adatok a Thiessen-poligon módszer kidolgozott példájához",
+      "reason": "A cím jelenlegi alakja töredékes, angolos; magyarul természetesebb a 'módszer ... példájához' szerkezet."
+    },
+    {
+      "line_approx": 933,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Másodszor, a poligonhatárokat teljes egészében a mérők geometriája határozza meg, nem fizikai vagy klimatológiai szempont.",
+      "suggested": "Másodszor, a poligonhatárokat teljes egészében a mérők térbeli elrendezése határozza meg, nem pedig fizikai vagy klimatológiai szempontok.",
+      "reason": "A 'mérők geometriája' angol tükörfordítás; magyarul itt a 'térbeli elrendezés' pontosabb."
+    },
+    {
+      "line_approx": 949,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 8.7 Felszínalapú alternatívák a Thiessen-poligonokkal szemben",
+      "suggested": "## 8.7 Felszínalapú alternatívák a Thiessen-poligon módszerrel szemben",
+      "reason": "Nem magukkal a poligonokkal, hanem a módszerrel állítja szembe az alternatívákat; ez terminológiailag pontosabb."
+    },
+    {
+      "line_approx": 990,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A domborzat a sík Magyar Alföldtől (80-100 m tengerszint feletti magasság) a 2000 m-t meghaladó Kárpáti csúcsokig terjed Romániában és Ukrajnában.",
+      "suggested": "A domborzat a sík Alföld magyarországi területeitől (80-100 m tengerszint feletti magasság) a Romániában és Ukrajnában emelkedő, 2000 m-t meghaladó kárpáti csúcsokig terjed.",
+      "reason": "A 'sík Magyar Alföld' és 'Kárpáti csúcsok' jelzős szerkezetek angolosan torlódnak; magyarul természetesebb az átrendezett szerkezet."
+    },
+    {
+      "line_approx": 992,
+      "category": "register",
+      "severity": "medium",
+      "original": "A csapadék becslése e medence felett hatalmas interpolációs kihívás.",
+      "suggested": "A csapadék becslése ebben a medencében komoly interpolációs kihívást jelent.",
+      "reason": "Az 'e medence felett' és a 'hatalmas kihívás' angolos, illetve túl beszélt nyelvi; magyar tudományos prózában természetesebb az 'ebben a medencében' és a 'komoly kihívást jelent'."
+    },
+    {
+      "line_approx": 603,
+      "category": "register",
+      "severity": "medium",
+      "original": "A medence magyar részére az OMSZ (az Országos Meteorológiai Szolgálat, ma HungaroMet Zrt.) biztosít állomásadatokat éghajlati szolgáltatási portálján keresztül:",
+      "suggested": "A medence magyarországi részére az OMSZ (Országos Meteorológiai Szolgálat, ma HungaroMet Zrt.) éghajlati szolgáltatási portálján keresztül állomásadatokat tesz elérhetővé:",
+      "reason": "A „biztosít ... keresztül” angolos és körülményes; a „magyarországi részére” természetesebb."
+    },
+    {
+      "line_approx": 610,
+      "category": "register",
+      "severity": "low",
+      "original": "A teljes 136 állomásos hálózat részletes állomásadatai adatkéréssel szerezhetők be az OMSZ-tól.",
+      "suggested": "A 136 állomásból álló hálózat részletes adatai adatigényléssel kérhetők az OMSZ-tól.",
+      "reason": "A „szerezhetők be” és a „részletes állomásadatai” nehézkes; tömörebb, természetesebb tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 615,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A teljes határokon átnyúló medencéhez a CARPATCLIM nyújtja a legjobb elérhető rácshálós adathalmazt.",
+      "suggested": "A teljes, országhatárokon átnyúló medencére a CARPATCLIM a legjobb elérhető rácshálós adathalmaz.",
+      "reason": "Az „X-hez nyújtja” szerkezet angolos; állítmányi névszóval természetesebb."
+    },
+    {
+      "line_approx": 616,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "0,1 fokos felbontása, napi időlépcsője és 1961-2010 közötti lefedettsége ideálissá teszi klimatológiai elemzéshez.",
+      "suggested": "A 0,1 fokos felbontás, a napi időlépték és az 1961-2010 közötti lefedettség miatt klimatológiai elemzésekhez különösen alkalmas.",
+      "reason": "Az „ideálissá teszi” tükörfordítás; a többes számú „elemzésekhez” is természetesebb."
+    },
+    {
+      "line_approx": 617,
+      "category": "calque",
+      "severity": "high",
+      "original": "Ami kritikus: a CARPATCLIM-et egy konzorcium állította elő, amely mind a kilenc kárpáti ország meteorológiai szolgálatát magában foglalta, ami azt jelenti, hogy a határokon átnyúló állomásadatokat harmonizálták és homogenizálták -- ez olyan lépés, amelyet az egyes nemzeti adathalmazok nem tudnak biztosítani.",
+      "suggested": "Különösen fontos, hogy a CARPATCLIM-et olyan konzorcium állította elő, amely a Kárpátok térségének mind a kilenc országából bevonta a meteorológiai szolgálatokat; ennek köszönhetően a határokon átnyúló állomásadatokat harmonizálták és homogenizálták, amire az egyes nemzeti adathalmazok önmagukban nem képesek.",
+      "reason": "Az „Ami kritikus”, az „ami azt jelenti, hogy” és a „nem tudnak biztosítani” mind angolos fordulatok."
+    },
+    {
+      "line_approx": 619,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A közelmúltbeli időszakokra (2010 után) az E-OBS kiterjeszti az elemzést napjainkig, bár valamivel alacsonyabb minőségben a Kárpát-specifikus homogenizáció hiánya miatt, amelyet a CARPATCLIM nyújt.",
+      "suggested": "A közelebbi időszakokra (2010 után) az E-OBS segítségével az elemzés napjainkig kiterjeszthető, bár a Kárpátokra szabott homogenizáció hiánya miatt valamivel gyengébb minőségben, mint a CARPATCLIM esetében.",
+      "reason": "Az „kiterjeszti az elemzést”, illetve az „amelyet a CARPATCLIM nyújt” angolos és nehezen követhető."
+    },
+    {
+      "line_approx": 624,
+      "category": "terminology",
+      "severity": "low",
+      "original": "három megközelítéssel:",
+      "suggested": "három módszerrel:",
+      "reason": "Ebben a műszaki kontextusban a „módszer” bevettebb és pontosabb."
+    },
+    {
+      "line_approx": 626,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "amelyek mind a magyar alföldön helyezkednek el, 100-200 m tengerszint feletti magasságon",
+      "suggested": "amelyek mind a Magyar Alföldön találhatók, 100-200 m tengerszint feletti magasságban",
+      "reason": "A „magyar alföldön” kisbetűs és angolos; a „helyezkednek el” körülményes."
+    },
+    {
+      "line_approx": 626,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a Thiessen-módszer ezeket az alföldi értékeket rendeli a hegyvidéki al-medencéhez.",
+      "suggested": "a Thiessen-módszer ezeket az alföldi értékeket a hegyvidéki részvízgyűjtőhöz rendeli.",
+      "reason": "Az „al-medence” helyett a magyar hidrológiai szaknyelvben természetesebb a „részvízgyűjtő”."
+    },
+    {
+      "line_approx": 629,
+      "category": "register",
+      "severity": "medium",
+      "original": "az IDW-interpoláció térben változó felszínt eredményez.",
+      "suggested": "az IDW-interpoláció térben változó csapadékfelszínt ad.",
+      "reason": "A „felszínt eredményez” túl általános és angolos; a „csapadékfelszín” pontosabb."
+    },
+    {
+      "line_approx": 632,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Zonális statisztika közvetlenül a CARPATCLIM rácsból",
+      "suggested": "Zonális statisztika közvetlenül a CARPATCLIM rácsán",
+      "reason": "A „rácsból” itt kevésbé természetes; a művelet a rácson történik."
+    },
+    {
+      "line_approx": 633,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egyszerűen az al-medencén belüli CARPATCLIM rácscellák átlagának kiszámítása.",
+      "suggested": "Az al-medencén belüli CARPATCLIM-rácscellák átlagának egyszerű kiszámítása.",
+      "reason": "Az eredeti töredékes, angolos szerkezetű; magyarul természetesebb a főnévi szerkezet rendezése."
+    },
+    {
+      "line_approx": 636,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Thiessen-becslés (580 mm) körülbelül 40%-kal alulbecsüli a valódi medence-átlag csapadékot a CARPATCLIM referenciához (950 mm) képest.",
+      "suggested": "A Thiessen-becslés (580 mm) a CARPATCLIM szerinti referenciaértékhez (950 mm) képest körülbelül 40%-kal alulbecsüli a tényleges medenceátlagos csapadékot.",
+      "reason": "A „medence-átlag csapadék” és a „CARPATCLIM referencia” tükörfordítás-szerű; a „medenceátlagos csapadék” természetesebb."
+    },
+    {
+      "line_approx": 637,
+      "category": "calque",
+      "severity": "high",
+      "original": "Ez katasztrofális hiba a hidrológiai modellezés szempontjából -- azt jelentené, hogy a medencébe érkező vízmennyiséget csaknem felével becsüljük alul, lehetetlenné téve a vízmérleg zárását vagy az árvízcsúcsok előrejelzését.",
+      "suggested": "Ez a hidrológiai modellezésben katasztrofális hiba lenne: azt eredményezné, hogy a medencébe érkező vízmennyiséget csaknem a felére becsüljük, így sem a vízmérleg zárása, sem az árvízcsúcsok előrejelzése nem lenne lehetséges.",
+      "reason": "Az „azt jelentené, hogy” és a „lehetetlenné téve” angolos, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 638,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A hiba teljes egészében abból ered, hogy figyelmen kívül hagyják az orografikus hatást, és a kizárólag magyar hálózatban nincsenek magashegyi mérők.",
+      "suggested": "A hiba teljes egészében abból adódik, hogy az orografikus hatást figyelmen kívül hagyják, és a kizárólag magyar állomáshálózatban nincsenek magashegyi mérők.",
+      "reason": "A mondat második fele szórendileg és lexikailag is természetesebbé tehető; a „hálózat” helyett itt pontosabb az „állomáshálózat”."
+    },
+    {
+      "line_approx": 640,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ez a példa szemlélteti, miért elengedhetetlen az éghajlati adatokra vonatkozó nemzetközi együttműködés -- és az olyan termékek, mint a CARPATCLIM, amelyek ilyen együttműködésből származnak -- a határokon átnyúló folyómedencék számára.",
+      "suggested": "Ez a példa jól mutatja, hogy a határokon átnyúló folyómedencék vizsgálatához miért elengedhetetlen a nemzetközi együttműködés az éghajlati adatok terén, valamint az ilyen együttműködésből létrejött termékek, például a CARPATCLIM használata.",
+      "reason": "Az eredeti mondat szerkezete erősen angolos, közbeékelésekkel túlterhelt."
+    },
+    {
+      "line_approx": 642,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A víz, amely Szolnokon árvizet okoz, csapadékként keletkezik Ukrajna és Románia hegyeiben.",
+      "suggested": "A Szolnokon árvizet okozó víz Ukrajna és Románia hegyeiben hullik le csapadékként.",
+      "reason": "A „csapadékként keletkezik” szó szerinti és természetellenes fordulat."
+    },
+    {
+      "line_approx": 649,
+      "category": "register",
+      "severity": "medium",
+      "original": "a kárpáti forrásvidéktől (>1000 mm/év) a Magyar Alföldig (~500 mm/év) terjedő drámai gradienst mutatva.",
+      "suggested": "a kárpáti forrásvidéktől (>1000 mm/év) a Magyar Alföldig (~500 mm/év) húzódó markáns csapadékgrádienst bemutatva.",
+      "reason": "A „drámai gradiens” angolos; a „markáns csapadékgrádiens” tudományosabb regiszterű."
+    },
+    {
+      "line_approx": 650,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a hegyvidéki forrásvidék gyengén mérőzött.",
+      "suggested": "a hegyvidéki forrásvidék mérőállomásokkal gyengén lefedett.",
+      "reason": "A „mérőzött” szokatlan, nem bevett szaknyelvi alak."
+    },
+    {
+      "line_approx": 651,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az olyan termékek, mint a CARPATCLIM, amelyek az összes parti állam adatait beépítik, elengedhetetlenek.",
+      "suggested": "ezért elengedhetetlenek az olyan termékek, mint a CARPATCLIM, amelyek a medence valamennyi érintett országának adatait integrálják.",
+      "reason": "A „parti állam” itt félrevezető tükörfordítás; folyómedencére nem természetes."
+    },
+    {
+      "line_approx": 656,
+      "category": "register",
+      "severity": "medium",
+      "original": "A térbeli interpoláció eredendően távolságalapú művelet.",
+      "suggested": "A térbeli interpoláció alapvetően távolságalapú művelet.",
+      "reason": "Az „eredendően” itt kissé modoros; az „alapvetően” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 657,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Akár Thiessen-poligon határokat számítunk",
+      "suggested": "Akár Thiessen-poligonokat szerkesztünk",
+      "reason": "A „határokat számítunk” szokatlan; a szaknyelvben a poligonok szerkesztése természetesebb."
+    },
+    {
+      "line_approx": 658,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "minden módszer pontos távolságszámításokon múlik a pontok között.",
+      "suggested": "mindegyik módszer a pontok közötti távolságok pontos meghatározásán alapul.",
+      "reason": "Az „múlik” itt beszélt nyelvies és angolos hatású."
+    },
+    {
+      "line_approx": 659,
+      "category": "calque",
+      "severity": "medium",
+      "original": "ugyanaz az aggály, amelyet a 6. fejezet 6.11.5. szakasza \"koordináta-rendszeri csapdaként\" azonosít a raszterszámításoknál, egyenlő erővel érvényes az interpolációra.",
+      "suggested": "ugyanaz a probléma, amelyet a 6. fejezet 6.11.5. szakasza a raszterszámításoknál „koordináta-rendszeri csapdaként” ír le, az interpolációra is ugyanúgy érvényes.",
+      "reason": "Az „aggály” és az „egyenlő erővel érvényes” angolos fordulat."
+    },
+    {
+      "line_approx": 663,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A földrajzi koordinátákban szerkesztett Thiessen-poligonok kelet-nyugati irányban megnyúlnak, aminek nincs fizikai alapja.",
+      "suggested": "A földrajzi koordináták alapján szerkesztett Thiessen-poligonok kelet-nyugati irányban megnyúlnak, noha ennek nincs fizikai alapja.",
+      "reason": "A „földrajzi koordinátákban szerkesztett” kevésbé természetes magyar szerkezet."
+    },
+    {
+      "line_approx": 666,
+      "category": "register",
+      "severity": "low",
+      "original": "Magyarország számára a természetes választások:",
+      "suggested": "Magyarország esetében a legkézenfekvőbb választások:",
+      "reason": "A „természetes választások” angolos szókapcsolat."
+    },
+    {
+      "line_approx": 672,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Ez területtartó vetület, ami azt jelenti, hogy a területeket pontosan megőrzi -- fontos a Thiessen-poligon számításokhoz és a zonális statisztikákhoz, ahol a területméréseket súlyokként használják.",
+      "suggested": "Ez területtartó vetület, vagyis a területeket pontosan megőrzi; ez fontos a Thiessen-poligonokhoz és a zonális statisztikákhoz, ahol a területértékek súlyként szerepelnek.",
+      "reason": "A „Thiessen-poligon számításokhoz” és a „területméréseket súlyokként használják” nehézkes, részben tükörfordítás."
+    },
+    {
+      "line_approx": 677,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Kifejezetten az interpoláció számára a kulcskövetelmények az, hogy a távolságok pontosan legyenek kiszámítva, és a területek megőrződjenek a területsúlyozott műveletekhez.",
+      "suggested": "Interpolációhoz az a két kulcskövetelmény, hogy a távolságokat pontosan számítsuk, és a területsúlyozott műveletekhez a területek is megőrződjenek.",
+      "reason": "Az eredeti mondat szórendje és „legyenek kiszámítva” szerkezete nehézkes."
+    },
+    {
+      "line_approx": 678,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Területtartó vetület (Albers egyenlő területű, Lambert azimutális egyenlő területű, vagy EOV Magyarországra) előnyös a Thiessen-poligon és zonális statisztika munkafolyamatokhoz.",
+      "suggested": "A Thiessen-poligonokra és a zonális statisztikai munkafolyamatokra területtartó vetület előnyös (például Albers-féle egyenlő területű, Lambert-féle azimutális egyenlő területű, illetve Magyarországon az EOV).",
+      "reason": "A felsorolás és a szerkezet angolos; a magyar szaknyelvben a vetületnevek kötőjeles/féle alakjai természetesebbek."
+    },
+    {
+      "line_approx": 682,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "a rasztercelláknak az új rácsra kell **újramintavételezniük**.",
+      "suggested": "a rasztercellák értékeit az új rácsra kell **újramintavételezni**.",
+      "reason": "Nyelvtanilag hibás, angol mintájú szerkezet; a cellák nem „újramintavételeznek”."
+    },
+    {
+      "line_approx": 686,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "lépcsős műtermékeket eredményez",
+      "suggested": "lépcsőzetes műtermékeket eredményez",
+      "reason": "A „lépcsőzetes” a bevettebb magyar szaknyelvi alak."
+    },
+    {
+      "line_approx": 689,
+      "category": "register",
+      "severity": "low",
+      "original": "A szabványos választás folytonos adatokhoz",
+      "suggested": "A szokásos választás folytonos adatokhoz",
+      "reason": "A „szabványos választás” angolos; a „szokásos” természetesebb."
+    },
+    {
+      "line_approx": 695,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az általános szabály: használjon bilineáris vagy köbös konvolúciós módszert",
+      "suggested": "Általános szabályként bilineáris vagy köbös konvolúciós módszert használjunk",
+      "reason": "A közvetlen felszólító „használjon” kilóg a tankönyvi, általánosító stílusból."
+    },
+    {
+      "line_approx": 696,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az eredményül kapott műtermékek a származtatott termékekbe (lejtés, kitettség, áramlási irány, interpolált felszínek) propagálódnak.",
+      "suggested": "az így keletkező műtermékek továbbgyűrűznek a származtatott termékekbe (lejtés, kitettség, áramlási irány, interpolált felszínek).",
+      "reason": "A „propagálódnak” idegen hangzású tükörfordítás."
+    },
+    {
+      "line_approx": 700,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden újravetítés az újramintavételezési folyamaton keresztül kis mértékű adatromlást vezet be.",
+      "suggested": "Minden újravetítés az újramintavételezés miatt kis mértékű adatromlással jár.",
+      "reason": "A „vezet be” angolos szerkezet."
+    },
+    {
+      "line_approx": 702,
+      "category": "register",
+      "severity": "medium",
+      "original": "A gyakorlati ajánlás a munkafolyamat megtervezése az újravetítési lépések minimalizálása érdekében:",
+      "suggested": "Gyakorlati szempontból érdemes úgy megtervezni a munkafolyamatot, hogy az újravetítések száma a lehető legkisebb legyen:",
+      "reason": "Az eredeti mondat főnévi szerkezetekkel túlterhelt, angolos."
+    },
+    {
+      "line_approx": 710,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a munkafolyamat biztosítja, hogy a forrásadatok legfeljebb két újravetítésen essenek át",
+      "suggested": "Ezzel a munkafolyamattal a forrásadatokat legfeljebb kétszer kell újravetíteni",
+      "reason": "Az „essenek át” itt nehézkes, tükörfordítás-szerű."
+    },
+    {
+      "line_approx": 716,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a csapadékbecslés és a megfigyelt vízhozam összehasonlításával.",
+      "suggested": "a csapadékbecslés és a mért vízhozam összevetésével.",
+      "reason": "A hidrológiai szaknyelvben a „mért vízhozam” természetesebb, az „összevetés” tömörebb."
+    },
+    {
+      "line_approx": 724,
+      "category": "register",
+      "severity": "low",
+      "original": "A lefolyási hányados dimenziótlan mennyiség, amely a csapadéknak a vízhozammá váló hányadát képviseli.",
+      "suggested": "A lefolyási hányados dimenziótlan mennyiség, amely azt fejezi ki, hogy a csapadék mekkora része válik vízhozammá.",
+      "reason": "A „képviseli” itt angolos és kevésbé természetes."
+    },
+    {
+      "line_approx": 732,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az 1,0-t meghaladó lefolyási hányados azt jelenti, hogy több víz hagyja el a vízgyűjtőt vízhozamként, mint amennyi csapadékként érkezik, ami sérti a tömegmegmaradást.",
+      "suggested": "Az 1,0-nál nagyobb lefolyási hányados azt jelenti, hogy a vízgyűjtőt vízhozam formájában több víz hagyja el, mint amennyi csapadékként érkezik; ez ellentmond a tömegmegmaradás elvének.",
+      "reason": "A „sérti a tömegmegmaradást” kevésbé idiomatikus tudományos magyar."
+    },
+    {
+      "line_approx": 765,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "A GRDC adatokat a CARPATCLIM vagy az E-OBS csapadékbecslésekkel kombinálva kiszámíthatók a lefolyási hányadosok a határokon átnyúló al-medencékre, medenceszintű konzisztencia-ellenőrzést biztosítva, amely kizárólag nemzeti adatokkal lehetetlen lenne.",
+      "suggested": "A GRDC adatait a CARPATCLIM vagy az E-OBS csapadékbecsléseivel kombinálva kiszámíthatjuk a határokon átnyúló részvízgyűjtők lefolyási hányadosát, így medenceszintű konzisztencia-ellenőrzést kapunk, ami kizárólag nemzeti adatok alapján nem lenne lehetséges.",
+      "reason": "Hiányos, passzív jellegű szerkezet; az „al-medencékre” itt terminológiailag is gyenge."
+    },
+    {
+      "line_approx": 771,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ha Ön bevált eljárásokkal rendelkező operatív hidrológiai modellt tart fenn",
+      "suggested": "Ha bevált eljárások szerint működő operatív hidrológiai modellt tart fenn",
+      "reason": "Az „Ön” megszólítás fölöslegesen közvetlen egy tankönyvi szövegben."
+    },
+    {
+      "line_approx": 773,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A számítási igény nem nagyobb -- sőt gyakran kisebb, mert kihagyja a Thiessen-poligon szerkesztést --, és az eredmények fizikailag reálisabbak.",
+      "suggested": "A számítási igény nem nagyobb -- sőt gyakran kisebb, mert nincs szükség Thiessen-poligonok szerkesztésére --, az eredmények pedig fizikailag reálisabbak.",
+      "reason": "A „kihagyja a ... szerkesztést” angolos megfogalmazás."
+    },
+    {
+      "line_approx": 781,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "mert a rácshálós termékek több állomásadatot, jobb minőségellenőrzést és kifinomultabb interpolációs módszereket építenek be, mint amit bármely egyedi projekt reprodukálni tudna.",
+      "suggested": "mert a rácshálós termékek több állomásadatot használnak fel, jobb minőségellenőrzésre épülnek, és kifinomultabb interpolációs módszereket alkalmaznak, mint amilyet egy-egy önálló projekt rendszerint meg tud valósítani.",
+      "reason": "Az „építenek be” és a „reprodukálni tudna” angolos fordulat."
+    }
+  ]
+}

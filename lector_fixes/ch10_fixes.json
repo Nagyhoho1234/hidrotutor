@@ -1,0 +1,374 @@
+{
+  "chapter": "ch10",
+  "total_issues": 46,
+  "fixes": [
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Most ezt a felszínt munkára fogjuk.",
+      "suggested": "Most ezt a felszínt használatba vesszük.",
+      "reason": "A „munkára fogjuk” angolos, kevésbé természetes metafora tudományos szövegben."
+    },
+    {
+      "line_approx": 8,
+      "category": "register",
+      "severity": "low",
+      "original": "A fejezetet a topográfiai nedvességi index és a legközelebbi vízelvezetés feletti magasság (HAND) rövid előzetes bemutatásával zárjuk.",
+      "suggested": "A fejezetet a topográfiai nedvességi index és a legközelebbi vízelvezetés feletti magasság (HAND) rövid bemutatásával zárjuk.",
+      "reason": "A „rövid előzetes bemutatás” redundáns; a „rövid bemutatás” természetesebb."
+    },
+    {
+      "line_approx": 12,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "O'Callaghan és Mark (1984) publikálta, és igen egyszerű elven alapul:",
+      "suggested": "O'Callaghan és Mark (1984) írta le, és igen egyszerű elven alapul:",
+      "reason": "A „publikálta” itt angolos szóhasználat; magyar tudományos prózában természetesebb az „írta le” vagy „közölte”."
+    },
+    {
+      "line_approx": 12,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "minden cellánál vizsgáljuk meg a nyolc szomszédot",
+      "suggested": "minden cella esetében vizsgáljuk meg a nyolc szomszédot",
+      "reason": "A „cellánál vizsgáljuk” kevésbé természetes; a „cella esetében” idiomatikusabb magyar szaknyelvi megfogalmazás."
+    },
+    {
+      "line_approx": 16,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a megkülönböztetés fontosabb, mint gondolnánk.",
+      "suggested": "Ez a megkülönböztetés fontosabb, mint elsőre gondolnánk.",
+      "reason": "Az „elsőre” pontosabbá és természetesebbé teszi a fordulatot."
+    },
+    {
+      "line_approx": 28,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az áramlás ahhoz az egyetlen szomszédhoz rendelődik, amelynek irányába a legmeredekebb a pozitív lejtés (piros nyíl).",
+      "suggested": "Az áramlást ahhoz az egyetlen szomszédhoz rendeljük, amely felé a pozitív lejtés a legmeredekebb (piros nyíl).",
+      "reason": "A „rendelődik” személytelen, fordításszagú megfogalmazás; az aktív szerkezet természetesebb."
+    },
+    {
+      "line_approx": 49,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A kifolyási ponttól felfelé nyomozva azonosíthatjuk minden hozzájáruló cellát -- ami pontosan a vízgyűjtő definíciója.",
+      "suggested": "A kifolyási ponttól felfelé haladva azonosíthatjuk az összes hozzájáruló cellát -- ez pedig éppen a vízgyűjtő definíciója.",
+      "reason": "A „nyomozva” itt nem szaknyelvi és idegenül hat; az „összes” természetesebb, mint a „minden” ebben a szerkezetben."
+    },
+    {
+      "line_approx": 51,
+      "category": "register",
+      "severity": "low",
+      "original": "Hasznos gondolati modell, ha az áramlásirány-rasztert dominók hatalmas gyűjteményeként képzeljük el",
+      "suggested": "Hasznos gondolati modell, ha az áramlásirány-rasztert dominók nagy halmazaként képzeljük el",
+      "reason": "A „hatalmas gyűjtemény” kissé publicisztikus; a „nagy halmaz” visszafogottabb tudományos regiszterhez illik."
+    },
+    {
+      "line_approx": 58,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A leglátványosabb műtermék a **lépcsőzetes mintázat**",
+      "suggested": "A leglátványosabb műtermék a **lépcsőzetes lefutás**",
+      "reason": "A „műtermék” bevett, de a „mintázat” itt kevésbé pontos; geomorfológiai-hidrológiai kontextusban a „lefutás” vagy „vonalvezetés” természetesebb lehet."
+    },
+    {
+      "line_approx": 66,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Túl a nyolc irányon",
+      "suggested": "A nyolc irány korlátain túl",
+      "reason": "Az alcím jelen formájában angolosan tömör; a bővebb magyar megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 69,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Mind a nyolc facetta kiértékelése és a legmeredekebb kiválasztása után",
+      "suggested": "Mind a nyolc háromszögfelület kiértékelése és a legmeredekebb kiválasztása után",
+      "reason": "A „facetta” itt indokolatlan idegen szó; magyarul a „háromszögfelület” vagy „lap” természetesebb."
+    },
+    {
+      "line_approx": 72,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Egy facetta -- amelyet a középső cella ($z_0$) és két szomszéd ($z_1$, $z_2$) határoz meg -- lejtéskomponensei:",
+      "suggested": "Egy háromszögfelület -- amelyet a középső cella ($z_0$) és két szomszéd ($z_1$, $z_2$) határoz meg -- lejtéskomponensei:",
+      "reason": "A „facetta” helyett érdemes magyar megfelelővel élni a terminológiai következetesség érdekében."
+    },
+    {
+      "line_approx": 95,
+      "category": "register",
+      "severity": "low",
+      "original": "A különbségek szembeötlőek, ha ugyanazon DEM-ből számított kumulációs térképeket hasonlítunk össze.",
+      "suggested": "A különbségek jól láthatók, ha ugyanabból a DEM-ből számított kumulációs térképeket hasonlítjuk össze.",
+      "reason": "A „szembeötlőek” kissé publicisztikus; a „jól láthatók” tárgyilagosabb. Az „ugyanabból” gördülékenyebb, mint az „ugyanazon ...-ből”."
+    },
+    {
+      "line_approx": 101,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A simább, pontosabb kumulációs térképek jobb modellparaméterezésbe és valósághűbb lefolyás-előrejelzésbe fordíthatók.",
+      "suggested": "A simább, pontosabb kumulációs térképek jobb modellparaméterezést és valósághűbb lefolyás-előrejelzést tesznek lehetővé.",
+      "reason": "A „fordíthatók” itt angol mintát követő, nehézkes szerkezet; a „tesznek lehetővé” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 202,
+      "category": "register",
+      "severity": "low",
+      "original": "A megfelelő DEM-kondicionálás (9. fejezet) biztosítja ezt.",
+      "suggested": "A megfelelő DEM-kondicionálás (9. fejezet) ezt biztosítja.",
+      "reason": "Enyhén angolos, nehézkes mutató névmási szerkezet; magyarosabb az „ezt biztosítja” szórend."
+    },
+    {
+      "line_approx": 206,
+      "category": "register",
+      "severity": "medium",
+      "original": "Logaritmikus vagy geometriai osztásközű megjelenítés szükséges.",
+      "suggested": "Ezért logaritmikus skálájú vagy geometriai osztásközű megjelenítésre van szükség.",
+      "reason": "A mondat tömörebb a kelleténél, kissé fordításszagú; a következményviszony explicitebb megfogalmazása természetesebb."
+    },
+    {
+      "line_approx": 218,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Nincs egyetlen „helyes\" érték -- a megfelelő az alkalmazástól, a felbontástól és a léptéktől függ.",
+      "suggested": "Nincs egyetlen „helyes” érték: a megfelelő küszöb az alkalmazástól, a felbontástól és a léptéktől függ.",
+      "reason": "Az „a megfelelő” önmagában kissé angolosan elliptikus; a „küszöb” visszautalása világosabb és természetesebb."
+    },
+    {
+      "line_approx": 224,
+      "category": "register",
+      "severity": "medium",
+      "original": "Összefolyásnál a felhalmozódási értékek ugrásszerűen nőnek: ha 900 cellányi mellékfolyó csatlakozik 6195 cellát szállító főághoz, az összefolyás alatti cella kb. 7096.",
+      "suggested": "Összefolyásnál a felhalmozódási értékek ugrásszerűen nőnek: ha egy 900 cellás mellékfolyó egy 6195 cellás főághoz csatlakozik, akkor az összefolyás alatti cella értéke kb. 7096.",
+      "reason": "A „6195 cellát szállító főág” metaforikus, angolos megfogalmazás; magyarul természetesebb a „6195 cellás főág” vagy „6195 cella hozzájárulású főág”."
+    },
+    {
+      "line_approx": 225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez hatékony konzisztencia-ellenőrzést biztosít, és a táj vízelvezetési struktúrájának természetes rangsorolási rendszere.",
+      "suggested": "Ez hatékony konzisztencia-ellenőrzésre ad lehetőséget, és egyben a táj vízelvezetési struktúrájának természetes rangsorolási rendszere is.",
+      "reason": "Az eredeti mondat második tagmondata hiányos, angolos szerkezetű; magyarul ki kell tenni az állítmányt."
+    },
+    {
+      "line_approx": 230,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Ha $w(c)$ a csapadékmennyiség, $W(c)$ a cellán átfolyó teljes csapadékmennyiség -- nyers, de hasznos lefolyásbecslés.",
+      "suggested": "Ha $w(c)$ a csapadékmennyiség, akkor $W(c)$ a cellán áthaladó teljes csapadékmennyiséget adja -- ez durva, de hasznos lefolyásbecslés.",
+      "reason": "A „nyers” itt angolból átvett jelentésárnyalat; magyar tudományos stílusban a „durva becslés” természetesebb."
+    },
+    {
+      "line_approx": 232,
+      "category": "register",
+      "severity": "low",
+      "original": "Így azonosíthatók a legnagyobb terhelést kapó vízfolyásszakaszok.",
+      "suggested": "Így azonosíthatók a legnagyobb terhelésnek kitett vízfolyásszakaszok.",
+      "reason": "A „terhelést kapó” kissé tükörfordításízű; a „terhelésnek kitett” bevettebb magyar szerkezet."
+    },
+    {
+      "line_approx": 238,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A standard felhalmozódás tökéletes megmaradást feltételez: ami belép, változatlanul áthalad.",
+      "suggested": "A standard felhalmozódás tökéletes megmaradást feltételez: ami belép a rendszerbe, az változatlanul halad tovább.",
+      "reason": "Az „ami belép, áthalad” túlzottan szó szerinti, angolos tömörítés; a magyarosabb megfogalmazás explicitebb."
+    },
+    {
+      "line_approx": 242,
+      "category": "register",
+      "severity": "medium",
+      "original": "Indikátorfüggvényt definiálunk a forrásterületen (1), máshol (0), és lefelé felhalmozzuk a D-végtelen áramlásmező mentén.",
+      "suggested": "A forrásterületen 1, máshol 0 értékű indikátorfüggvényt definiálunk, majd ezt lefelé haladva felhalmozzuk a D-végtelen áramlásmező mentén.",
+      "reason": "Az eredeti mondat töredezett, angolos felsorolásszerű szerkezetű; a magyar mondatfolyamhoz jobb az átrendezés."
+    },
+    {
+      "line_approx": 245,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hatásfüggvény inverze: „honnan jön a szennyezés ezen a helyen?\"",
+      "suggested": "A hatásfüggvény inverze; azt mutatja meg, hogy „honnan érkezik a szennyezés erre a helyre?”",
+      "reason": "A „jön a szennyezés ezen a helyen” magyarul kevésbé természetes; az „érkezik ... erre a helyre” idiomatikusabb."
+    },
+    {
+      "line_approx": 249,
+      "category": "register",
+      "severity": "low",
+      "original": "A távoli forrás hatása gyorsan csökken.",
+      "suggested": "A távoli források hatása gyorsan csökken.",
+      "reason": "Általános állításban természetesebb a többes szám; nem egy konkrét forrásról van szó."
+    },
+    {
+      "line_approx": 254,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez természetes módon adja az üledékszállítás arányát.",
+      "suggested": "Így természetes módon írható le az üledékszállítás mértéke.",
+      "reason": "Az „adja az arányát” pontatlan és angolos; a „leírható a mértéke” világosabb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 257,
+      "category": "register",
+      "severity": "medium",
+      "original": "Tarboton és Baker (2008) az **áramlási algebra** fogalmával formalizálta ezt a közös struktúrát.",
+      "suggested": "Tarboton és Baker (2008) az **áramlási algebra** fogalmával formalizálta ezt a közös szerkezetet.",
+      "reason": "A „struktúra” itt feleslegesen idegenszerű; a „szerkezet” természetesebb magyar tudományos szóhasználat."
+    },
+    {
+      "line_approx": 276,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A magas TWI-értékű hely egyszerre lapos és nagy kumulációjú -- pont azok a feltételek, amelyek a telítettségnek kedveznek.",
+      "suggested": "A magas TWI-értékű hely egyszerre lapos és nagy vízgyűjtő hozzájárulással jellemezhető -- éppen ezek a feltételek kedveznek a telítettségnek.",
+      "reason": "A „nagy kumulációjú” nem természetes magyar szakkifejezés; a jelentést pontosabban és idiomatikusabban kell visszaadni."
+    },
+    {
+      "line_approx": 283,
+      "category": "register",
+      "severity": "low",
+      "original": "Az A cella TWI-értéke közel kétszerese a B celláénak -- sokkal nagyobb hajlam a telítettségre.",
+      "suggested": "Az A cella TWI-értéke közel kétszerese a B celláénak, ezért sokkal nagyobb a telítettségre való hajlama.",
+      "reason": "Az eredeti második tagmondat hiányos, jegyzetszerű; teljes mondatként természetesebb."
+    },
+    {
+      "line_approx": 289,
+      "category": "adjective_stacking",
+      "severity": "high",
+      "original": "Magyarországon a Nagy Magyar Alföld különleges kihívást jelent:",
+      "suggested": "Magyarországon az Alföld különleges kihívást jelent:",
+      "reason": "A „Nagy Magyar Alföld” angolos, tükörfordítás jellegű névforma; magyarul bevett az „Alföld” vagy „Nagyalföld”."
+    },
+    {
+      "line_approx": 311,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HAND lényege, hogy a tájat a helyi vízelvezetéshez viszonyítva írja le.",
+      "suggested": "A HAND lényege, hogy a tájat a helyi vízelvezetési rendszerhez viszonyítva jellemzi.",
+      "reason": "Az „írja le” itt általános, kissé fordításszagú; a „jellemzi” szakmailag pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 801,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 10.7.1 Mit mutat meg a LiDAR",
+      "suggested": "### 10.7.1 Mit mutat a LiDAR",
+      "reason": "A „meg” igekötő itt felesleges, angolosan nyomatékosító hatású; a cím természetesebben hangzik nélküle."
+    },
+    {
+      "line_approx": 803,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Szubméteres LiDAR DEM-eken kiszámítva a kumuláció rendkívüli hidrológiai részletességet tár fel",
+      "suggested": "A szubméteres LiDAR DEM-eken számított kumuláció rendkívüli hidrológiai részletességet tár fel",
+      "reason": "A „kiszámítva” határozói igenév itt nehézkes és kissé fordításszagú; jelzős szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 803,
+      "category": "calque",
+      "severity": "medium",
+      "original": "túraösvények lineáris koncentrációs elemekként jelennek meg",
+      "suggested": "a túraösvények lineáris lefolyás-összpontosító elemekként jelennek meg",
+      "reason": "A „koncentrációs elemek” szókapcsolat angolos tükörfordítás; hidrológiai kontextusban pontosabb a lefolyás összpontosítására utalni."
+    },
+    {
+      "line_approx": 803,
+      "category": "terminology",
+      "severity": "high",
+      "original": "az utak éles akadályokként működnek az átereszek helyén koncentrált pontszerű kibocsátással",
+      "suggested": "az utak éles akadályként viselkednek, az átereszeknél pedig koncentrált, pontszerű kifolyási helyek alakulnak ki",
+      "reason": "A „kibocsátás” itt nem természetes magyar hidrológiai terminus; a mondat szerkezete is angolosan tömörített."
+    },
+    {
+      "line_approx": 803,
+      "category": "register",
+      "severity": "low",
+      "original": "az ökológiai és mezőgazdasági léptéken szabályozzák a felszíni lefolyást",
+      "suggested": "ökológiai és mezőgazdasági léptékben szabályozzák a felszíni lefolyást",
+      "reason": "A „léptéken” helyett a „léptékben” természetesebb ebben a tudományos regiszterben."
+    },
+    {
+      "line_approx": 805,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek a nagyfelbontású alkalmazások a LiDAR-adatok növekvő hozzáférhetőségével",
+      "suggested": "E nagyfelbontású alkalmazások a LiDAR-adatok egyre jobb hozzáférhetősége miatt",
+      "reason": "A „növekvő hozzáférhetőség” szó szerinti fordítás; magyarul természetesebb az „egyre jobb hozzáférhetőség” vagy hasonló szerkezet."
+    },
+    {
+      "line_approx": 805,
+      "category": "register",
+      "severity": "low",
+      "original": "a gyakorlati szakemberek számára is egyre elérhetőbbek",
+      "suggested": "a gyakorló szakemberek számára is egyre inkább hozzáférhetők",
+      "reason": "A „gyakorlati szakemberek” szokatlan szókapcsolat; a „gyakorló szakemberek” bevettebb."
+    },
+    {
+      "line_approx": 807,
+      "category": "heading",
+      "severity": "high",
+      "original": "## 10.8 Szoftver-implementáció",
+      "suggested": "## 10.8 Szoftveres megvalósítás",
+      "reason": "Az „implementáció” ebben a címben indokolatlan anglicizmus; magyar tudományos prózában természetesebb a „szoftveres megvalósítás”."
+    },
+    {
+      "line_approx": 810,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a drop-raszter számításnál",
+      "suggested": "a drop-raszter számításakor",
+      "reason": "A „számításnál” itt kevésbé idiomatikus; a „számításakor” gördülékenyebb szaknyelvi megfogalmazás."
+    },
+    {
+      "line_approx": 811,
+      "category": "register",
+      "severity": "low",
+      "original": "Lebegőpontos kimeneti típus szükséges súlyoknál.",
+      "suggested": "Súlyok használatakor lebegőpontos kimeneti típus szükséges.",
+      "reason": "A mondat jelenlegi alakja töredékes, jegyzetszerű; átrendezve természetesebb."
+    },
+    {
+      "line_approx": 814,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A D-végtelen és az általánosított felhalmozódási függvények referencia-implementációja:",
+      "suggested": "A D-végtelen és az általánosított felhalmozódási függvények referencia-megvalósítása:",
+      "reason": "Az „implementáció” itt is felesleges anglicizmus."
+    },
+    {
+      "line_approx": 817,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Kumuláció, opcionális súlyráccsal.",
+      "suggested": "Kumuláció, opcionális súlyraszterrel.",
+      "reason": "A szövegben korábban a „raszter” terminus szerepel; a „súlyrács” terminológiailag következetlen."
+    },
+    {
+      "line_approx": 822,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A D8 algoritmus egyértelmű, egyirányú áramlásvezetésével",
+      "suggested": "A D8 algoritmus egyértelmű, egyirányú áramlásleírásával",
+      "reason": "Az „áramlásvezetés” itt angolos, kevéssé bevett szóalkotás; a „leírás” vagy „irányítása” természetesebb."
+    },
+    {
+      "line_approx": 822,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "kétszomszédos arányosításával",
+      "suggested": "a két szomszéd közötti arányos megosztásával",
+      "reason": "A „kétszomszédos arányosítás” nehézkes, nem bevett magyar szakkifejezés."
+    },
+    {
+      "line_approx": 824,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "az irány-mezőt egyszerű könyvelési eszközből rugalmas környezeti modellezési platformmá alakítják",
+      "suggested": "az iránymezőt egyszerű nyilvántartási eszközből rugalmas környezeti modellezési keretté teszik",
+      "reason": "A „könyvelési eszköz” és a „platform” szóhasználat erősen angolos; magyarul természetesebb a „nyilvántartási eszköz” és a „keret/rendszer”."
+    }
+  ]
+}

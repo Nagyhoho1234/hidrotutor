@@ -1,0 +1,2902 @@
+[
+  {
+    "type": "mcq",
+    "question": "Ki mutatta be először, hogy egy LSTM felülmúlhatja a kalibrált koncepcionális modelleket nagy mintán?",
+    "options": [
+      "A. Jasper Vrugt",
+      "B. Frederik Kratzert és társai",
+      "C. Keith Beven",
+      "D. Hoshin Gupta"
+    ],
+    "correct": "B",
+    "explanation": "Kratzert et al. (2018-2024) a JKU Linz-ről mutatták be a CAMELS adathalmazon."
+  },
+  {
+    "type": "mcq",
+    "question": "Az LSTM felejtőkapujának képlete ft = σ(Wf · [ht-1, xt] + bf). Mit jelöl a σ?",
+    "options": [
+      "A. Szorzás",
+      "B. Szigmoid függvény",
+      "C. Szumma",
+      "D. Tangens hiperbolikus"
+    ],
+    "correct": "B",
+    "explanation": "A σ a szigmoid (logisztikus) függvény, amely 0 és 1 közötti értéket ad."
+  },
+  {
+    "type": "mcq",
+    "question": "A regionális LSTM medián NSE-je a CAMELS adathalmazon?",
+    "options": [
+      "A. 0,54",
+      "B. 0,64",
+      "C. 0,74",
+      "D. 0,84"
+    ],
+    "correct": "C",
+    "explanation": "A regionális LSTM 0,74-es medián NSE-t ért el a 671 CAMELS vízgyűjtőn."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik ET-becslési módszer az arany standard a referencia-ET-hez?",
+    "options": [
+      "A. SEBAL",
+      "B. METRIC",
+      "C. FAO Penman-Monteith",
+      "D. XGBoost"
+    ],
+    "correct": "C",
+    "explanation": "Az FAO Penman-Monteith az arany standard a referencia-ET számításához."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen medián RMSE-t ért el az LSTM a 30 napos talajvízszint-előrejelzésben?",
+    "options": [
+      "A. 28,4 cm",
+      "B. 22,1 cm",
+      "C. 15,3 cm",
+      "D. 13,9 cm"
+    ],
+    "correct": "D",
+    "explanation": "Az LSTM 13,9 cm medián RMSE-t ért el, a legjobb az összehasonlított modellek közül."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik képalkotó szenzor méri a felszíni hőmérsékletet az ET-becsléshez?",
+    "options": [
+      "A. Sentinel-2 MSI",
+      "B. MODIS termikus infravörös",
+      "C. Sentinel-1 SAR",
+      "D. Landsat pankromatikus"
+    ],
+    "correct": "B",
+    "explanation": "A MODIS termikus infravörös szenzora méri az LST-t 1 km felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sentinel-2 hány spektrális sávot biztosít?",
+    "options": [
+      "A. 4",
+      "B. 8",
+      "C. 13",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "A Sentinel-2 13 spektrális sávot biztosít a láthatótól a SWIR-ig."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik ML-algoritmus a 'munkaló' a műholdfelvétel-osztályozásban?",
+    "options": [
+      "A. LSTM",
+      "B. U-Net",
+      "C. Random Forest",
+      "D. SVM"
+    ],
+    "correct": "C",
+    "explanation": "A random forest a hidrológiai műholdfelvétel-osztályozás munkagépe."
+  },
+  {
+    "type": "mcq",
+    "question": "A SEBAL/METRIC módszer energiamérleg-egyenlete: ET = Rn - G - ?",
+    "options": [
+      "A. P",
+      "B. H",
+      "C. Q",
+      "D. K"
+    ],
+    "correct": "B",
+    "explanation": "ET = Rn - G - H, ahol H a szenzibilis hőfluxus."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen architektúrát használnak a szemantikus szegmentáláshoz távérzékelésben?",
+    "options": [
+      "A. Random Forest",
+      "B. XGBoost",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "C",
+    "explanation": "Az U-Net kódoló-dekódoló architektúra, amely térbeli kontextust is felhasznál."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány FLUXNET helyszín van világszerte körülbelül?",
+    "options": [
+      "A. 100",
+      "B. 300",
+      "C. 600",
+      "D. 900+"
+    ],
+    "correct": "D",
+    "explanation": "A FLUXNET hálózat több mint 900 helyszínről biztosít örvénykovariancia-méréseket."
+  },
+  {
+    "type": "mcq",
+    "question": "Az XGBoost ET-modell R² értéke a Kárpát-medencei tesztperiódusban?",
+    "options": [
+      "A. 0,65",
+      "B. 0,72",
+      "C. 0,82",
+      "D. 0,91"
+    ],
+    "correct": "C",
+    "explanation": "Az XGBoost 0,82-es R²-t ért el a 2019-2022-es tesztperiódusban."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik ML-keretrendszer kifejezetten hidrológiai LSTM-kísérletekhez készült?",
+    "options": [
+      "A. scikit-learn",
+      "B. TensorFlow",
+      "C. NeuralHydrology",
+      "D. SWAT-CUP"
+    ],
+    "correct": "C",
+    "explanation": "A NeuralHydrology PyTorch-alapú keretrendszer hidrológiai LSTM-ekhez."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a SHAP-értékek alapja?",
+    "options": [
+      "A. Lineáris regresszió",
+      "B. Kooperatív játékelmélet",
+      "C. Genetikus algoritmusok",
+      "D. Bayes-tétel"
+    ],
+    "correct": "B",
+    "explanation": "A SHAP (SHapley Additive exPlanations) a kooperatív játékelmélet Shapley-értékein alapul."
+  },
+  {
+    "type": "mcq",
+    "question": "Helyes-e a véletlenszerű tanító/teszt felosztás hidrológiai idősoroknál?",
+    "options": [
+      "A. Igen, mindig",
+      "B. Nem, mert az autokorreláció 'csalást' enged",
+      "C. Csak talajvíznél",
+      "D. Csak műholdas adatoknál"
+    ],
+    "correct": "B",
+    "explanation": "A véletlenszerű felosztás kihasználja az autokorrelációt és felülbecsüli a teljesítményt."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontású az ESA WorldCover globális felszínborítási termék?",
+    "options": [
+      "A. 30 m",
+      "B. 100 m",
+      "C. 10 m",
+      "D. 500 m"
+    ],
+    "correct": "C",
+    "explanation": "Az ESA WorldCover 10 m-es felbontású globális felszínborítást biztosít."
+  },
+  {
+    "type": "mcq",
+    "question": "A random forest osztályozásban mit jelent az OOB (Out-of-Bag) hiba?",
+    "options": [
+      "A. Tanítási hiba",
+      "B. Belső keresztvalidációs mutató",
+      "C. Teszthalmaz hiba",
+      "D. Modell mérete"
+    ],
+    "correct": "B",
+    "explanation": "Az OOB hiba a random forest egyedi belső keresztvalidációs mutatója."
+  },
+  {
+    "type": "mcq",
+    "question": "A transzfer tanulás NSE-je 3 év finomhangolással nem mért vízgyűjtőkön?",
+    "options": [
+      "A. 0,54",
+      "B. 0,61",
+      "C. 0,67",
+      "D. 0,71"
+    ],
+    "correct": "D",
+    "explanation": "3 év helyi adattal a finomhangolt modell 0,71-es NSE-t ér el."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Python-könyvtár a standard a klasszikus ML-hez a hidrológiában?",
+    "options": [
+      "A. PyTorch",
+      "B. TensorFlow",
+      "C. scikit-learn",
+      "D. GDAL"
+    ],
+    "correct": "C",
+    "explanation": "A scikit-learn a standard könyvtár a klasszikus gépi tanuláshoz."
+  },
+  {
+    "type": "mcq",
+    "question": "A MOD16 ET-termék milyen felbontású?",
+    "options": [
+      "A. 10 m",
+      "B. 100 m",
+      "C. 500 m",
+      "D. 1 km"
+    ],
+    "correct": "C",
+    "explanation": "A MOD16 500 m-es felbontású 8 napos/havi ET-t biztosít globálisan."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen léptékben tud a Google Earth Engine elemzéseket végezni?",
+    "options": [
+      "A. Település-léptékű",
+      "B. Vízgyűjtő-léptékű",
+      "C. Bolygóléptékű",
+      "D. Csak lokális"
+    ],
+    "correct": "C",
+    "explanation": "A GEE bolygóléptékű műholdelemzésre képes a Google felhőinfrastruktúráján."
+  },
+  {
+    "type": "mcq",
+    "question": "Az LSTM fő előnye a Random Foresttel szemben idősor-előrejelzésnél?",
+    "options": [
+      "A. Gyorsabb tanítás",
+      "B. Értelmezhetőbb",
+      "C. Hosszú távú időbeli függőségek megtanulása",
+      "D. Kevesebb adat szükséges"
+    ],
+    "correct": "C",
+    "explanation": "Az LSTM cellaállapota lehetővé teszi a hosszú távú függőségek megtanulását."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen időbeli felosztást ajánlanak 20 éves hidrológiai adatra?",
+    "options": [
+      "A. Véletlenszerű 80/20",
+      "B. Tanítás 1-14., validáció 15-17., teszt 18-20. év",
+      "C. Minden harmadik nap teszt",
+      "D. Páros évek tanítás, páratlanok teszt"
+    ],
+    "correct": "B",
+    "explanation": "Időbeli felosztás: folytonos blokkok, tanítás/validáció/teszt sorrendben."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza szolnoki LSTM-modell teszt NSE-je?",
+    "options": [
+      "A. 0,72",
+      "B. 0,79",
+      "C. 0,87",
+      "D. 0,94"
+    ],
+    "correct": "C",
+    "explanation": "A teszthalmaz NSE = 0,87 a szolnoki LSTM-nél."
+  },
+  {
+    "type": "mcq",
+    "question": "A CORINE Land Cover milyen gyakorisággal frissül?",
+    "options": [
+      "A. Évente",
+      "B. Kétévente",
+      "C. Hatévente",
+      "D. Tízévente"
+    ],
+    "correct": "C",
+    "explanation": "A CORINE hatévente frissül (legutóbb CLC2018, CLC2024 készülőben)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a virtuális szenzor a vízminőség-előrejelzésben?",
+    "options": [
+      "A. Mesterséges mérőműszer",
+      "B. ML-modell, amely nehezen mérhető paramétereket jelez előre könnyen mérhetőkből",
+      "C. Távérzékelési szenzor",
+      "D. Felhő-alapú szimulációs szenzor"
+    ],
+    "correct": "B",
+    "explanation": "A virtuális szenzor ML-modell, amely a folyamatos mérésekből (zavarosság, vezetőképesség) becsüli a ritkán mért paramétereket (ammónium, foszfor)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Kárpát-medencei XGBoost ET-modell legfontosabb jellemzője?",
+    "options": [
+      "A. NDVI",
+      "B. Beeső rövidhullámú sugárzás",
+      "C. Felszíni hőmérséklet",
+      "D. Szélsebesség"
+    ],
+    "correct": "B",
+    "explanation": "A beeső rövidhullámú sugárzás az összfontosság 32%-áért felelős, mint az ET elsődleges energiahajtója."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hochreiter és Schmidhuber által 1997-ben bevezetett architektúra?",
+    "options": [
+      "A. CNN",
+      "B. U-Net",
+      "C. LSTM",
+      "D. Transformer"
+    ],
+    "correct": "C",
+    "explanation": "Az LSTM-et Hochreiter és Schmidhuber vezette be 1997-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen MSE-csökkenést ért el az ML-modell a MOD16-tal szemben az ET-becslésnél?",
+    "options": [
+      "A. ~10%",
+      "B. ~20%",
+      "C. ~30%",
+      "D. ~50%"
+    ],
+    "correct": "C",
+    "explanation": "Az ML-modell körülbelül 30%-kal csökkenti az RMSE-t a MOD16-hoz képest."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány szegmentálási osztályt használtak a Közép-Tisza vidéki osztályozásban?",
+    "options": [
+      "A. 4",
+      "B. 6",
+      "C. 8",
+      "D. 12"
+    ],
+    "correct": "C",
+    "explanation": "8 osztályú sémát alkalmaztak (víz, város, erdő típusok, gyep, szántóföld típusok, csupasz talaj)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a dropout szerepe a neurális hálózatokban?",
+    "options": [
+      "A. Az adatok kiegészítése",
+      "B. A neuronok véletlenszerű kikapcsolása a túlillesztés ellen",
+      "C. A tanítási sebesség növelése",
+      "D. A bemenetek előfeldolgozása"
+    ],
+    "correct": "B",
+    "explanation": "A dropout véletlenszerűen nullázza a neuronaktivációk egy hányadát a tanítás során, csökkentve a túlillesztést."
+  },
+  {
+    "type": "mcq",
+    "question": "A Balaton melyik részmedencéje a legeutrofikusabb?",
+    "options": [
+      "A. Siófoki",
+      "B. Szemesi",
+      "C. Szigligeti",
+      "D. Keszthelyi"
+    ],
+    "correct": "D",
+    "explanation": "A sekély nyugati Keszthelyi-medence következetesen eutrofikusabb."
+  },
+  {
+    "type": "mcq",
+    "question": "A parciális függőségi diagram mit mutat?",
+    "options": [
+      "A. A modell paramétereinek korrelációját",
+      "B. Hogyan változik az előrejelzés egy jellemző változásával",
+      "C. A bemeneti adatok eloszlását",
+      "D. A tanítási hibát"
+    ],
+    "correct": "B",
+    "explanation": "A parciális függőségi diagram megmutatja, hogyan változik a modell előrejelzése egy jellemző függvényében."
+  },
+  {
+    "type": "mcq",
+    "question": "Az API (Előzetes Csapadékindex) képletében wi jellemzően milyen típusú?",
+    "options": [
+      "A. Konstans",
+      "B. Exponenciálisan csökkenő",
+      "C. Lineárisan növekvő",
+      "D. Periodikus"
+    ],
+    "correct": "B",
+    "explanation": "Az API súlyai jellemzően exponenciálisan csökkenők: wi = e^(-i/τ)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sentinel-2 visszatérési ideje A+B együtt?",
+    "options": [
+      "A. 1 nap",
+      "B. 5 nap",
+      "C. 10 nap",
+      "D. 16 nap"
+    ],
+    "correct": "B",
+    "explanation": "A Sentinel-2A és 2B együttes visszatérési ideje 5 nap."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NDVI melyik sávokat használja?",
+    "options": [
+      "A. Kék és piros",
+      "B. Piros és közeli infravörös",
+      "C. Zöld és SWIR",
+      "D. Termikus és mikrohullámú"
+    ],
+    "correct": "B",
+    "explanation": "NDVI = (NIR - Red)/(NIR + Red), a piros és közeli infravörös sávokból."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú gépi tanulási probléma a felszínborítás-osztályozás?",
+    "options": [
+      "A. Regresszió",
+      "B. Klaszterezés",
+      "C. Osztályozás",
+      "D. Dimenzió-csökkentés"
+    ],
+    "correct": "C",
+    "explanation": "A felszínborítás-osztályozás felügyelt osztályozási probléma, ahol minden pixelhez osztálycímkét rendelünk."
+  },
+  {
+    "type": "mcq",
+    "question": "A FLUXNET-ben a mérőeszköz neve?",
+    "options": [
+      "A. Barométer",
+      "B. Örvénykovariancia-torony",
+      "C. Lizimeter",
+      "D. Tenziométer"
+    ],
+    "correct": "B",
+    "explanation": "A FLUXNET helyszíneken örvénykovariancia-tornyok mérik az ET-t és más fluxusokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az XGBoost melyik ML-család?",
+    "options": [
+      "A. Neurális hálózat",
+      "B. Gradiens-erősítéses fa",
+      "C. Szupport vektor gép",
+      "D. Random Forest"
+    ],
+    "correct": "B",
+    "explanation": "Az XGBoost gradiens-erősítéses ensemble (boosted trees) algoritmus."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Python-könyvtár a legalkalmasabb térbeli raszterműveletre?",
+    "options": [
+      "A. pandas",
+      "B. scikit-learn",
+      "C. rasterio",
+      "D. seaborn"
+    ],
+    "correct": "C",
+    "explanation": "A rasterio a standard Python-könyvtár műholdfelvételek és raszterek olvasására/írására."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen RMSE-t ért el a Random Forest ammónium-N előrejelzés a Dunán?",
+    "options": [
+      "A. 0,011 mg/L",
+      "B. 0,041 mg/L",
+      "C. 0,52 mg/L",
+      "D. 4,8 μg/L"
+    ],
+    "correct": "B",
+    "explanation": "Az ammónium-N virtuális szenzor RMSE = 0,041 mg/L a 2021-2022-es tesztperiódusban."
+  },
+  {
+    "type": "mcq",
+    "question": "Az U-Net melyik alkalmazásból ered eredetileg?",
+    "options": [
+      "A. Időjárás-előrejelzés",
+      "B. Orvosbiológiai képszegmentálás",
+      "C. Beszédfelismerés",
+      "D. Gazdasági előrejelzés"
+    ],
+    "correct": "B",
+    "explanation": "Az U-Net-et eredetileg orvosbiológiai képszegmentáláshoz fejlesztették ki (Ronneberger et al., 2015)."
+  },
+  {
+    "type": "mcq",
+    "question": "A TimeSeriesSplit a scikit-learn melyik moduljában van?",
+    "options": [
+      "A. sklearn.preprocessing",
+      "B. sklearn.model_selection",
+      "C. sklearn.metrics",
+      "D. sklearn.ensemble"
+    ],
+    "correct": "B",
+    "explanation": "A TimeSeriesSplit a sklearn.model_selection modulban található."
+  },
+  {
+    "type": "mcq",
+    "question": "A transzfer tanulás milyen NSE-t ér el finomhangolás nélkül méretlen vízgyűjtőkön?",
+    "options": [
+      "A. 0,54",
+      "B. 0,61",
+      "C. 0,67",
+      "D. 0,71"
+    ],
+    "correct": "B",
+    "explanation": "Finomhangolás nélkül az előtanított LSTM 0,61-es NSE-t ér el."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Magyar tó esetében alkalmazták a Sentinel-2 alapú klorofill-a modellt?",
+    "options": [
+      "A. Fertő-tó",
+      "B. Velencei-tó",
+      "C. Balaton",
+      "D. Tisza-tó"
+    ],
+    "correct": "C",
+    "explanation": "A Balaton négy részmedencéjéből (Keszthely, Szigliget, Szemes, Siófok) készült modell."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen gradiens-erősítéses könyvtárak a leggyakoribbak?",
+    "options": [
+      "A. PyTorch és TensorFlow",
+      "B. XGBoost és LightGBM",
+      "C. rasterio és GDAL",
+      "D. pandas és numpy"
+    ],
+    "correct": "B",
+    "explanation": "Az XGBoost és a LightGBM a fő gradiens-erősítéses fa könyvtárak."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza szolnoki LSTM visszatekintési ablaka?",
+    "options": [
+      "A. 7 nap",
+      "B. 15 nap",
+      "C. 45 nap",
+      "D. 90 nap"
+    ],
+    "correct": "C",
+    "explanation": "A szolnoki modellben 45 napos visszatekintési ablakot alkalmaztak."
+  },
+  {
+    "type": "mcq",
+    "question": "A kódoló-dekódoló LSTM architektúra előnye?",
+    "options": [
+      "A. Gyorsabb tanítás",
+      "B. Többlépéses előrejelzés jobb minősége",
+      "C. Kevesebb adat szükséges",
+      "D. Értelmezhetőbb"
+    ],
+    "correct": "B",
+    "explanation": "A kódoló-dekódoló architektúra a többlépéses előrejelzésnél felülmúlja az egyszerűbb módszereket."
+  },
+  {
+    "type": "mcq",
+    "question": "A CAMELS-GB hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 222",
+      "B. 516",
+      "C. 671",
+      "D. 897"
+    ],
+    "correct": "C",
+    "explanation": "A CAMELS-GB 671 vízgyűjtőt fed le Nagy-Britanniában."
+  },
+  {
+    "type": "mcq",
+    "question": "A nitrát-N virtuális szenzor R²-je a Dunán?",
+    "options": [
+      "A. 0,65",
+      "B. 0,73",
+      "C. 0,81",
+      "D. 0,88"
+    ],
+    "correct": "C",
+    "explanation": "A nitrát-N virtuális szenzor R² = 0,81 a tesztperiódusban."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik könyvtárat használják a SHAP-értékek számítására?",
+    "options": [
+      "A. matplotlib",
+      "B. shap",
+      "C. scipy",
+      "D. geopandas"
+    ],
+    "correct": "B",
+    "explanation": "A shap Python-könyvtár a SHapley Additive exPlanations számítására."
+  },
+  {
+    "type": "mcq",
+    "question": "Az LSTM-ben C_t mit jelöl?",
+    "options": [
+      "A. Kumulatív csapadékot",
+      "B. Cellaállapotot",
+      "C. Korrelációt",
+      "D. Költségfüggvényt"
+    ],
+    "correct": "B",
+    "explanation": "C_t a cellaállapot (cell state), az LSTM információs szállítószalagja."
+  },
+  {
+    "type": "mcq",
+    "question": "A globális talajvízmonitoring hálózatot (GGMN) melyik szervezet koordinálja?",
+    "options": [
+      "A. WMO",
+      "B. IGRAC",
+      "C. USGS",
+      "D. ECMWF"
+    ],
+    "correct": "B",
+    "explanation": "A GGMN-t az IGRAC (International Groundwater Resources Assessment Centre) koordinálja."
+  },
+  {
+    "type": "mcq",
+    "question": "A Közép-Tisza vidéki Random Forest osztályozás összpontossága?",
+    "options": [
+      "A. 70-75%",
+      "B. 75-80%",
+      "C. 85-90%",
+      "D. 95-98%"
+    ],
+    "correct": "C",
+    "explanation": "85-90%-os összpontosság 8 osztályos sémával."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen veszteségfüggvényt használnak árvíz-előrejelzésnél az LSTM-ben?",
+    "options": [
+      "A. Csak MSE",
+      "B. Csak MAE",
+      "C. NSE-alapú vagy súlyozott MSE",
+      "D. Keresztentrópia"
+    ],
+    "correct": "C",
+    "explanation": "Az NSE-alapú veszteség nagyobb súlyt ad a nagyvízi eseményeknek."
+  },
+  {
+    "type": "mcq",
+    "question": "A perzisztencia-modell mit feltételez?",
+    "options": [
+      "A. A holnapi vízhozam egyenlő a tegnapival",
+      "B. A holnapi vízhozam az átlag",
+      "C. A holnapi vízhozam nulla",
+      "D. A holnapi vízhozam a maximum"
+    ],
+    "correct": "A",
+    "explanation": "A perzisztencia: a holnapi vízhozam = a mai vízhozam."
+  },
+  {
+    "type": "mcq",
+    "question": "A Caravan adathalmaz milyen léptékű?",
+    "options": [
+      "A. Nemzeti",
+      "B. Kontinentális",
+      "C. Globális",
+      "D. Helyi"
+    ],
+    "correct": "C",
+    "explanation": "A Caravan globális nagymintás hidrológiai adathalmaz, több régió adatait integrálja."
+  },
+  {
+    "type": "mcq",
+    "question": "A Magyar Alföldi talajvízszint-előrejelzésben hány megfigyelőkutat használtak?",
+    "options": [
+      "A. 10",
+      "B. 25",
+      "C. 50",
+      "D. 100"
+    ],
+    "correct": "C",
+    "explanation": "50 alföldi megfigyelőkúton értékeltek három ML-megközelítést."
+  },
+  {
+    "type": "mcq",
+    "question": "Az early stopping (korai leállítás) mire szolgál?",
+    "options": [
+      "A. A tanítási sebesség növelésére",
+      "B. A túlillesztés megelőzésére",
+      "C. Az adatbetöltés gyorsítására",
+      "D. A modell méretének csökkentésére"
+    ],
+    "correct": "B",
+    "explanation": "Az early stopping a tanítást leállítja, amikor a validációs veszteség nem javul tovább."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sentinel-1 milyen szenzortípust használ?",
+    "options": [
+      "A. Optikai multispektrális",
+      "B. Termikus infravörös",
+      "C. Szintetikus apertúrájú radar (SAR)",
+      "D. Lidar"
+    ],
+    "correct": "C",
+    "explanation": "A Sentinel-1 SAR (Synthetic Aperture Radar) szenzort alkalmaz, felhők alatt is mér."
+  },
+  {
+    "type": "mcq",
+    "question": "A GEE JavaScript kódjában az ee.Classifier.smileRandomForest(200) mit jelent?",
+    "options": [
+      "A. 200 osztályt",
+      "B. 200 fából álló Random Forest-et",
+      "C. 200 mintát",
+      "D. 200 sávot"
+    ],
+    "correct": "B",
+    "explanation": "200 döntési fából álló Random Forest osztályozót hoz létre."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik index különbözteti meg a víztesteket a növényzettől?",
+    "options": [
+      "A. NDVI",
+      "B. NDWI",
+      "C. NDBI",
+      "D. BSI"
+    ],
+    "correct": "B",
+    "explanation": "Az NDWI (Normalizált Különbségű Vízindex) a víztestek elkülönítésére szolgál."
+  },
+  {
+    "type": "mcq",
+    "question": "A Balaton klorofill-a modell RMSE-je?",
+    "options": [
+      "A. 0,5 μg/L",
+      "B. 3,5 μg/L",
+      "C. 10 μg/L",
+      "D. 25 μg/L"
+    ],
+    "correct": "B",
+    "explanation": "A Balaton Sentinel-2 klorofill-a modell RMSE ≈ 3,5 μg/L."
+  },
+  {
+    "type": "mcq",
+    "question": "A felszínborítás-osztályozásnál melyik osztálypár a leggyakrabban tévesztett?",
+    "options": [
+      "A. Víz és erdő",
+      "B. Gyep és csapadékos szántóföld",
+      "C. Város és erdő",
+      "D. Víz és csupasz talaj"
+    ],
+    "correct": "B",
+    "explanation": "A gyep és a csapadékos szántóföld spektrálisan hasonló egyes fenológiai fázisokban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 'fekete doboz' kritika melyik ML-modellre a legerősebb?",
+    "options": [
+      "A. Random Forest",
+      "B. Lineáris regresszió",
+      "C. Mély neurális hálózat (LSTM)",
+      "D. Döntési fa"
+    ],
+    "correct": "C",
+    "explanation": "A mély neurális hálózatok (LSTM) a legkevésbé értelmezhetők a felsoroltak közül."
+  },
+  {
+    "type": "mcq",
+    "question": "A CNN rövidítése?",
+    "options": [
+      "A. Clustered Neural Network",
+      "B. Convolutional Neural Network",
+      "C. Correlated Neuron Network",
+      "D. Cascaded Normalization Network"
+    ],
+    "correct": "B",
+    "explanation": "CNN: Convolutional Neural Network (konvolúciós neurális hálózat)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az R² = 0,65 a térbeli nitrát-előrejelzésben elegendő-e a hatósági monitoringhoz?",
+    "options": [
+      "A. Igen",
+      "B. Nem, de szűrésre hasznos",
+      "C. A pontos határérték meghatározásához elegendő",
+      "D. Csak laboratóriumi mintákkal együtt"
+    ],
+    "correct": "B",
+    "explanation": "R² = 0,65 nem elegendő hatósági megfeleléshez, de hasznos szűrésre és a monitoringra szoruló területek azonosítására."
+  },
+  {
+    "type": "mcq",
+    "question": "A NDBI milyen felszíntípust azonosít?",
+    "options": [
+      "A. Víztestek",
+      "B. Vegetáció",
+      "C. Beépített (városi) területek",
+      "D. Csupasz talaj"
+    ],
+    "correct": "C",
+    "explanation": "Az NDBI (Normalizált Különbségű Beépítettségi Index) a városi területek azonosítására szolgál."
+  },
+  {
+    "type": "mcq",
+    "question": "A GEE-ben a .median() mit csinál egy ImageCollection-nél?",
+    "options": [
+      "A. A legtöbb felhős képet választja",
+      "B. Pixelenként a mediánt számítja",
+      "C. A legnagyobb értékű képet adja",
+      "D. Időben interpolál"
+    ],
+    "correct": "B",
+    "explanation": "A .median() pixelenként a median kompozitot készíti, amely csökkenti a felhő- és zaj-hatást."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM-et Hochreiter és Schmidhuber vezette be 1997-ben.",
+    "correct": true,
+    "explanation": "LSTM: Long Short-Term Memory, 1997."
+  },
+  {
+    "type": "true_false",
+    "question": "A véletlenszerű tanító/teszt felosztás megfelelő hidrológiai idősorokhoz.",
+    "correct": false,
+    "explanation": "Véletlenszerű felosztás kihasználja az autokorrelációt és felülbecsüli a teljesítményt."
+  },
+  {
+    "type": "true_false",
+    "question": "A regionális LSTM a CAMELS adathalmazon 0,74-es medián NSE-t ért el.",
+    "correct": true,
+    "explanation": "A Kratzert-féle regionális LSTM 0,74-es medián NSE-t ért el 671 vízgyűjtőn."
+  },
+  {
+    "type": "true_false",
+    "question": "Az XGBoost gradiens-erősítéses fa algoritmus.",
+    "correct": true,
+    "explanation": "Az XGBoost gradiens-erősítéses ensemble algoritmus."
+  },
+  {
+    "type": "true_false",
+    "question": "A MOD16 globális ET-termék torzítás nélkül működik Magyarországon.",
+    "correct": false,
+    "explanation": "A MOD16 a nyári ET-t 15-25%-kal alulbecsüli Magyarországon."
+  },
+  {
+    "type": "true_false",
+    "question": "A Random Forest jellemzőfontossági mutatókat biztosít.",
+    "correct": true,
+    "explanation": "A faalapú modellek (RF, XGBoost) egyértelmű jellemzőfontossági mutatókat adnak."
+  },
+  {
+    "type": "true_false",
+    "question": "A CORINE Land Cover évente frissül.",
+    "correct": false,
+    "explanation": "A CORINE hatévente frissül."
+  },
+  {
+    "type": "true_false",
+    "question": "Az U-Net teljesen címkézett képfoltokat igényel tanításhoz.",
+    "correct": true,
+    "explanation": "Az U-Net minden pixelhez osztálycímkét igényel, ellentétben a random forest-tel."
+  },
+  {
+    "type": "true_false",
+    "question": "A transzfer tanulás csak azonos éghajlatú régiók között működik.",
+    "correct": false,
+    "explanation": "A transzfer tanulás más éghajlatok között is működhet, de a hatékonyság függ a hidrológiai hasonlóságtól."
+  },
+  {
+    "type": "true_false",
+    "question": "A Python a gépi tanulás standard nyelve a hidrológiában.",
+    "correct": true,
+    "explanation": "A gépi tanulási kutatóközösség a Pythont standardizálta a 2010-es években."
+  },
+  {
+    "type": "true_false",
+    "question": "A SHAP-értékek csak faalapú modellekhez használhatók.",
+    "correct": false,
+    "explanation": "A SHAP bármely modelltípussal működik (faalapú, neurális hálózat stb.)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM cellaállapota információs szállítószalagként működik.",
+    "correct": true,
+    "explanation": "A cellaállapot jeleket képes sok időlépésen keresztül továbbítani."
+  },
+  {
+    "type": "true_false",
+    "question": "A SEBAL/METRIC módszer felhős időben is működik.",
+    "correct": false,
+    "explanation": "A felhőszennyezés teljes jeleneteket tesz használhatatlanná."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn TimeSeriesSplit megőrzi az időbeli sorrendet.",
+    "correct": true,
+    "explanation": "A TimeSeriesSplit időbeli keresztvalidációt valósít meg, amely tiszteletben tartja a sorrendet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza szolnoki LSTM szisztematikusan alulbecsüli a legnagyobb csúcsokat.",
+    "correct": true,
+    "explanation": "Az LSTM MSE-veszteségfüggvénnyel szisztematikusan alulbecsüli a legnagyobb csúcsokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A FLUXNET hálózatban körülbelül 15 helyszín van Magyarországon és környékén.",
+    "correct": true,
+    "explanation": "Mintegy 15 helyszín Magyarországon és a szomszédos országokban."
+  },
+  {
+    "type": "true_false",
+    "question": "A virtuális szenzor a nehezen mérhető paramétereket a könnyen mérhetőkből jelzi előre.",
+    "correct": true,
+    "explanation": "A virtuális szenzor a folyamatos mérésekből (zavarosság stb.) becsüli a ritkán mért paramétereket."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM felejtőkapuja dönt arról, milyen új információt kell tárolni.",
+    "correct": false,
+    "explanation": "A felejtőkapu dönt arról, mit kell elvetni; a bemeneti kapu dönt az új információról."
+  },
+  {
+    "type": "true_false",
+    "question": "A Google Earth Engine ingyenes kutatási célokra.",
+    "correct": true,
+    "explanation": "A GEE ingyenes kutatási célokra hozzáférhető."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sentinel-2 visszatérési ideje egyetlen műholddal 10 nap.",
+    "correct": true,
+    "explanation": "A Sentinel-2A vagy 2B egyedül 10 napos visszatérési idővel rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "Az öntözött és csapadékos szántóföld mindig könnyen megkülönböztethető műholdképen.",
+    "correct": false,
+    "explanation": "Csak akkor különböztethetők meg, amikor az öntözés nedvességkülönbséget hoz létre."
+  },
+  {
+    "type": "true_false",
+    "question": "A LamaH-CE a Duna-medence vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A LamaH-CE 859 vízgyűjtőt fed le a Duna-medencében."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM-modellek fizikai korlátokat alkalmaznak a kimeneten.",
+    "correct": false,
+    "explanation": "Az LSTM-eknek nincs beépített fizikai korlátja, ami valószínűtlen értékekhez vezethet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Penman-Monteith-egyenlet tanítóadatokat igényel.",
+    "correct": false,
+    "explanation": "A Penman-Monteith fizikai alapú, nem igényel tanítóadatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A talajvízszint-előrejelzés előrejelzési horizontja jellemzően 30-90 nap.",
+    "correct": true,
+    "explanation": "A lassú talajvíz-dinamika miatt 30-90 napos előrejelzési horizont hasznos."
+  },
+  {
+    "type": "true_false",
+    "question": "A Monte Carlo dropout közelítő bizonytalanságbecslést nyújt LSTM-ekhez.",
+    "correct": true,
+    "explanation": "A Monte Carlo dropout a tanított modell többszöri futtatásával közelítő Bayes-i bizonytalanságbecslést ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A NDVI értéke -1 és +1 között változik.",
+    "correct": true,
+    "explanation": "NDVI = (NIR-Red)/(NIR+Red), értéke -1 és +1 között."
+  },
+  {
+    "type": "true_false",
+    "question": "A Kárpát-medencei ET-modellnél a sugárzás a legfontosabb jellemző.",
+    "correct": true,
+    "explanation": "A beeső rövidhullámú sugárzás az összfontosság 32%-áért felelős."
+  },
+  {
+    "type": "true_false",
+    "question": "A deep learning mindig jobb eredményt ad, mint a klasszikus ML a hidrológiában.",
+    "correct": false,
+    "explanation": "Az egyszerűbb modellek (XGBoost) gyakran közel hasonlóan teljesítenek, különösen korlátozott adatnál."
+  },
+  {
+    "type": "true_false",
+    "question": "A Közép-Tisza vidéki RF osztályozás összpontossága 85-90%.",
+    "correct": true,
+    "explanation": "8 osztályt tartalmazó RF osztályozás 85-90%-os összpontossággal."
+  },
+  {
+    "type": "true_false",
+    "question": "Az értelmezhetőség utólagos gondolat, nem követelmény.",
+    "correct": false,
+    "explanation": "Az értelmezhetőség nem utólagos gondolat, hanem követelmény, különösen operatív alkalmazásoknál."
+  },
+  {
+    "type": "true_false",
+    "question": "A GRACE műhold talajvízszinteket mér közvetlenül.",
+    "correct": false,
+    "explanation": "A GRACE a teljes szárazföldi víztárolás-anomáliát méri, nem közvetlenül a talajvízszintet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Balaton nyugat-keleti trofitási gradienst mutat.",
+    "correct": true,
+    "explanation": "A sekély nyugati Keszthelyi-medence eutrofikusabb a keleti Siófoki-medencénél."
+  },
+  {
+    "type": "true_false",
+    "question": "A random forest pixeleket térbeli szomszédság nélkül, önállóan osztályoz.",
+    "correct": true,
+    "explanation": "A random forest minden pixelt önállóan kezel, ellentétben az U-Net-tel."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza szolnoki LSTM 20 éves adatot használt tanításra.",
+    "correct": true,
+    "explanation": "A modell 20 évnyi (2003-2022) napi adatot használt."
+  },
+  {
+    "type": "true_false",
+    "question": "A gépi tanulás jól extrapolál a tanítóadatok tartományán túlra.",
+    "correct": false,
+    "explanation": "Az ML-modellek jól interpolálnak, de rosszul extrapolálnak a tanítási tartományon kívül."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ICOS az európai fluxustorony-hálózat.",
+    "correct": true,
+    "explanation": "Az ICOS (Integrated Carbon Observation System) az EU fluxustorony-hálózata."
+  },
+  {
+    "type": "true_false",
+    "question": "A tanítási és tesztperiódus között pufferzóna ajánlott talajvíz-előrejelzésnél.",
+    "correct": true,
+    "explanation": "Legalább 30-90 napos rés ajánlott a reziduális korrelációk miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A NeuralHydrology PyTorch-alapú keretrendszer.",
+    "correct": true,
+    "explanation": "A NeuralHydrology PyTorch-alapú, kifejezetten hidrológiai LSTM-kísérletekhez."
+  },
+  {
+    "type": "true_false",
+    "question": "Az U-Net átugrási kapcsolatokat (skip connections) használ.",
+    "correct": true,
+    "explanation": "Az átugrási kapcsolatok a kódoló és dekódoló közötti finom térbeli részleteket megőrzik."
+  },
+  {
+    "type": "true_false",
+    "question": "A figyelemmechanizmus (attention) felfedi, mely időlépésekre 'figyel' az LSTM.",
+    "correct": true,
+    "explanation": "A figyelem-réteg megmutatja a fontos időlépéseket az előrejelzés készítésekor."
+  },
+  {
+    "type": "true_false",
+    "question": "A Duna budapesti vízminőségi mérőállomás 15 percenként mér.",
+    "correct": true,
+    "explanation": "A budapesti állomás 15 percenként méri a folyamatos szenzoros adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile 516 vízgyűjtőjét fedi le.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 vízgyűjtőt tartalmaz Chilében."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem biztosítanak jellemzőfontossági rangsorokat.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM jellemzőfontossági mutatókat biztosítanak."
+  },
+  {
+    "type": "true_false",
+    "question": "Hollandia nemzeti talajvízmonitoring-rendszere ensemble ML-modelleket használ.",
+    "correct": true,
+    "explanation": "Hollandia ensemble ML-modelleket használ szezonális aszály-előrejelzéshez."
+  },
+  {
+    "type": "true_false",
+    "question": "A parciális függőségi diagram egyszerre több jellemző hatását mutatja.",
+    "correct": false,
+    "explanation": "A parciális függőségi diagram egyetlen jellemző hatását mutatja, a többit állandóan tartva."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-BR Brazília 897 vízgyűjtőjét tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-BR 897 vízgyűjtőt fed le Brazíliában."
+  },
+  {
+    "type": "true_false",
+    "question": "A szélsőséges események előrejelzése az ML-modellek erőssége.",
+    "correct": false,
+    "explanation": "A szélsőséges események az ML-modellek legfőbb korlátja: alulreprezentáltak a tanítóadatokban."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sentinel-3 SLSTR szenzora felszíni hőmérsékletet mér.",
+    "correct": true,
+    "explanation": "A Sentinel-3 SLSTR (Sea and Land Surface Temperature Radiometer) LST-t mér."
+  },
+  {
+    "type": "true_false",
+    "question": "A BSI (Bare Soil Index) a csupasz talajt különbözteti meg.",
+    "correct": true,
+    "explanation": "A BSI a kitett talajt elkülöníti a vegetációtól és a víztől."
+  },
+  {
+    "type": "true_false",
+    "question": "A MODFLOW Python-interfésze a FloPy.",
+    "correct": true,
+    "explanation": "A FloPy a MODFLOW Python-interfésze és eszközöskészlete."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE-ben az adatok soha nem hagyják el a felhőt.",
+    "correct": true,
+    "explanation": "Az elemző JavaScript vagy Python szkriptet ír, amely a felhőben dolgozza fel az adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza szolnoki árvízi védekezési szintjei 800, 1200 és 1600 m³/s.",
+    "correct": true,
+    "explanation": "A három védekezési szint körülbelül 800, 1200 és 1600 m³/s."
+  },
+  {
+    "type": "true_false",
+    "question": "A hibrid fizika-ML modellek a tisztán adatvezérelt modellek korlátait kezelik.",
+    "correct": true,
+    "explanation": "A hibrid megközelítés: ML a rutinhoz, fizikai modell az extrapolációhoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A cross-entropy veszteségfüggvényt használják a vízhozam-előrejelzéshez.",
+    "correct": false,
+    "explanation": "A vízhozam-előrejelzéshez MSE vagy NSE-alapú veszteségfüggvényt használnak; a cross-entropy osztályozáshoz való."
+  },
+  {
+    "type": "true_false",
+    "question": "A LamaH-CE-ben ERA5-ből származó órás meteorológiai kényszerítő áll rendelkezésre.",
+    "correct": true,
+    "explanation": "A LamaH-CE ERA5-ből származó órás meteorológiai kényszerítőt biztosít."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország CORINE-térképeit a Lechner Tudásközpont készíti.",
+    "correct": true,
+    "explanation": "A Lechner Tudásközpont készíti Magyarország nemzeti CORINE-térképeit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az LSTM-et _____ és Schmidhuber vezette be 1997-ben.",
+    "correct": "Hochreiter",
+    "explanation": "Hochreiter és Schmidhuber 1997-es publikációja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A regionális LSTM medián NSE-je a CAMELS adathalmazon _____.",
+    "correct": "0,74",
+    "explanation": "671 vízgyűjtőn 0,74-es medián NSE."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS adathalmaz _____ vízgyűjtőt tartalmaz az USA-ban.",
+    "correct": "671",
+    "explanation": "671 minimálisan zavart vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az FAO _____-Monteith az arany standard a referencia-ET számításához.",
+    "correct": "Penman",
+    "explanation": "FAO Penman-Monteith egyenlet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SEBAL energiamérleg-egyenlete: ET = Rn - G - _____.",
+    "correct": "H",
+    "explanation": "ET = Rn - G - H, ahol H a szenzibilis hőfluxus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MOD16 ET-termék felbontása _____ m.",
+    "correct": "500",
+    "explanation": "MOD16: 500 m-es felbontás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Random Forest osztályozásban az _____ hiba a belső keresztvalidáció.",
+    "correct": "OOB",
+    "explanation": "Out-of-Bag hiba."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 _____ spektrális sávot biztosít.",
+    "correct": "13",
+    "explanation": "13 sáv a láthatótól a SWIR-ig."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NDVI = (NIR - _____) / (NIR + _____).",
+    "correct": "Red",
+    "explanation": "Az NDVI a közeli infravörös és a piros sávot használja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SHAP a kooperatív _____-elmélet Shapley-értékein alapul.",
+    "correct": "játék",
+    "explanation": "SHapley Additive exPlanations - játékelméleti alapú."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM teszt NSE-je _____.",
+    "correct": "0,87",
+    "explanation": "A teszthalmaz NSE = 0,87."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost ET-modell R²-je a Kárpát-medencében _____.",
+    "correct": "0,82",
+    "explanation": "R² = 0,82 a 2019-2022-es tesztperiódusban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ keretrendszer PyTorch-alapú hidrológiai LSTM-kísérletekhez.",
+    "correct": "NeuralHydrology",
+    "explanation": "NeuralHydrology: PyTorch-alapú hidrológiai ML-keretrendszer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CORINE Land Cover _____ évente frissül.",
+    "correct": "hatévente",
+    "explanation": "A CORINE hatévente frissül."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az U-Net architektúrája egy _____ és egy dekódoló útvonalból áll.",
+    "correct": "kódoló",
+    "explanation": "Az U-Net kódoló-dekódoló architektúrát alkalmaz átugrási kapcsolatokkal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ Tudásközpont készíti Magyarország CORINE-térképeit.",
+    "correct": "Lechner",
+    "explanation": "A Lechner Tudásközpont a magyar CORINE-térképek készítője."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A FLUXNET több mint _____ helyszínről biztosít örvénykovariancia-méréseket.",
+    "correct": "900",
+    "explanation": "Több mint 900 helyszín világszerte."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Balaton legeutrofikusabb medencéje a _____ medence.",
+    "correct": "Keszthelyi",
+    "explanation": "A Keszthelyi-medence a legeutrofikusabb a Balaton medencéi közül."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2A+B együttes visszatérési ideje _____ nap.",
+    "correct": "5",
+    "explanation": "A két műhold együtt 5 napos visszatérési idejű."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az LSTM felejtőkapujának kimenete a _____ függvényen megy keresztül.",
+    "correct": "szigmoid",
+    "explanation": "ft = σ(Wf · [ht-1, xt] + bf), ahol σ a szigmoid."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A transzfer tanulás 3 év finomhangolással NSE = _____ a méretlen vízgyűjtőkön.",
+    "correct": "0,71",
+    "explanation": "3 év helyi adattal a teljesítmény 0,71-re javul."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM visszatekintési ablaka _____ nap.",
+    "correct": "45",
+    "explanation": "45 napos visszatekintési ablak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GEE a _____ felhőinfrastruktúráján fut.",
+    "correct": "Google",
+    "explanation": "A Google Earth Engine a Google adatközponti infrastruktúráján dolgozik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Random Forest Közép-Tisza vidéki osztályozás összpontossága _____-_____%.",
+    "correct": "85-90",
+    "explanation": "85-90%-os összpontosság 8 osztállyal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-GB _____ vízgyűjtőt tartalmaz Nagy-Britanniában.",
+    "correct": "671",
+    "explanation": "CAMELS-GB: 671 brit vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Kárpát-medencei ET-modell legfontosabb jellemzője a beeső _____ sugárzás.",
+    "correct": "rövidhullámú",
+    "explanation": "Az összes fontosság 32%-áért felelős."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Duna budapesti ammónium-N szenzor RMSE = _____ mg/L.",
+    "correct": "0,041",
+    "explanation": "RF virtuális szenzor RMSE = 0,041 mg/L."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ Python-könyvtár a standard a klasszikus ML-hez.",
+    "correct": "scikit-learn",
+    "explanation": "scikit-learn: a standard ML-könyvtár."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LamaH-CE _____ vízgyűjtőt tartalmaz Közép-Európában.",
+    "correct": "859",
+    "explanation": "LamaH-CE: 859 vízgyűjtő a Duna-medencében."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az LSTM-ben a _____ állapot az információs szállítószalag.",
+    "correct": "cella",
+    "explanation": "A cellaállapot (cell state) az információhordozó."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ESA WorldCover felbontása _____ m.",
+    "correct": "10",
+    "explanation": "ESA WorldCover: 10 m-es globális felszínborítás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gradiens-erősítéses fa algoritmusok közül az _____ a legnépszerűbb.",
+    "correct": "XGBoost",
+    "explanation": "XGBoost: a legnépszerűbb gradiens-erősítéses könyvtár."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A dropout arány jellemzően _____ és 0,3 között van.",
+    "correct": "0,1",
+    "explanation": "Dropout arány: 0,1-0,3 az LSTM-modellekben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IGRAC koordinálja a _____ hálózatot.",
+    "correct": "GGMN",
+    "explanation": "Global Groundwater Monitoring Network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A BSI a _____ talajt különíti el.",
+    "correct": "csupasz",
+    "explanation": "Bare Soil Index: csupasz talaj elkülönítése."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CNN rövidítése: _____ Neural Network.",
+    "correct": "Convolutional",
+    "explanation": "Convolutional Neural Network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM rejtett egységeinek száma _____.",
+    "correct": "128",
+    "explanation": "128 rejtett egység egyetlen LSTM-rétegben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ index a városi területek azonosítására szolgál.",
+    "correct": "NDBI",
+    "explanation": "NDBI: Normalizált Különbségű Beépítettségi Index."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az API súlyai jellemzően _____ csökkenők.",
+    "correct": "exponenciálisan",
+    "explanation": "wi = e^(-i/τ), exponenciálisan csökkenő súlyok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-1 _____ szenzort alkalmaz.",
+    "correct": "SAR",
+    "explanation": "Szintetikus Apertúrájú Radar (SAR)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PyTorch-ot a _____ fejlesztette.",
+    "correct": "Meta",
+    "explanation": "A PyTorch-ot a Meta (korábban Facebook) fejlesztette."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A scikit-learn API mintázata: .fit() és ._____.",
+    "correct": "predict()",
+    "explanation": "Konzisztens API: modell.fit(X_train, y_train), modell.predict(X_test)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Balaton Sentinel-2 klorofill-a modell RMSE ≈ _____ μg/L.",
+    "correct": "3,5",
+    "explanation": "RMSE körülbelül 3,5 μg/L a négy medencéből."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ a mélytanulási keretrendszer hidrológiai LSTM-ekhez.",
+    "correct": "NeuralHydrology",
+    "explanation": "NeuralHydrology: PyTorch-alapú."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az LSTM tanítási epochák száma jellemzően _____-300.",
+    "correct": "50",
+    "explanation": "50-300 epocha korai leállítással."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM bemeneteinek száma körülbelül _____.",
+    "correct": "10-25",
+    "explanation": "10-25 bemeneti jellemző (csapadék, hőmérséklet, felső szakaszi Q stb.)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NDWI a _____ sávokból számítható.",
+    "correct": "zöld és közeli infravörös",
+    "explanation": "NDWI = (Green - NIR)/(Green + NIR)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ típusú ML-algoritmus.",
+    "correct": "gradiens-erősítéses",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A talajvízszint-előrejelzés időbeli felbontása jellemzően _____.",
+    "correct": "napi",
+    "explanation": "Napi vagy heti megfigyelések, napi előrejelzés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRACE és _____ missziók felszín alatti vízkészlet-anomáliákat mérnek.",
+    "correct": "GRACE-FO",
+    "explanation": "A GRACE és GRACE-FO (Follow-On) missziók."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CORINE nómenklatúra _____ osztályt tartalmaz.",
+    "correct": "44",
+    "explanation": "44 osztályú szabványosított nómenklatúra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NSE-alapú veszteségfüggvényben a nevező a megfigyelt vízhozam _____.",
+    "correct": "szórásával normalizál",
+    "explanation": "Az NSE nevező: Σ(Qobs - Q̄obs)², a szórás négyzetének összege."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rasterio és _____ a standard Python-könyvtárak műholdfelvételek kezeléséhez.",
+    "correct": "GDAL",
+    "explanation": "rasterio és GDAL a raszterkezelés standard eszközei."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ mérőszám a véletlenszerű felosztás csapdáját jelzi.",
+    "correct": "túloptimista teszthalmaz-teljesítmény",
+    "explanation": "A véletlenszerű felosztás túloptimista teljesítménymutatókat eredményez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Dunán a vízmérce _____ m³/s átlagos vízhozamot mér a budapesti szelvényben.",
+    "correct": "~2300",
+    "explanation": "A Duna átlagos vízhozama Budapestnél kb. 2300 m³/s (kontextusfüggő adat)."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az LSTM hálózat működési elvét és alkalmazását a vízhozam-előrejelzésben!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a faalapú ML-modelleket (Random Forest, XGBoost) és a mély neurális hálózatokat (LSTM) a hidrológiában!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a transzfer tanulás méretlen vízgyűjtők vízhozam-előrejelzésére?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a virtuális szenzor koncepcióját a vízminőség-előrejelzésben, dunai példával!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és hátrányai vannak a gépi tanulásnak a fizikai alapú ET-becslési módszerekkel szemben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Random Forest a Sentinel-2 alapú felszínborítás-osztályozásban?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az időbeli adatfelosztás jelentősége a hidrológiai ML-modellezésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a túlillesztés problémáját és megoldásait a hidrológiai gépi tanulásban!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan javítja a jellemzőtervezés (feature engineering) a talajvízszint-előrejelzést?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen értelmezhetőségi technikák léteznek a fekete doboz ML-modellek felnyitására?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az U-Net architektúra előnyeit a felszínborítás-osztályozásban!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Google Earth Engine (GEE) a hidrológiai felszínborítás-osztályozásban?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen Python-könyvtárakat alkalmaz a hidrológiai gépi tanulás?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Kratzert-féle regionális LSTM áttörését a nagymintás hidrológiában!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a műholdas távérzékelés a Balaton vízminőség-monitoringjában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a szélsőséges események előrejelzése ML-modellekkel?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az LSTM három kapuját (felejtő, bemeneti, kimeneti) és szerepüket!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a visszatekintési ablak hossza az LSTM teljesítményét?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen felszínborítási osztályokat különböztetünk meg a hidrológiai modellezéshez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan fordítható le a felszínborítási térkép hidrológiai paraméterekké?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az NDVI, NDWI és NDBI vegetációs és víz-indexek szerepét!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a felhő-natív elemzésnek (GEE) az asztali munkafolyamattal szemben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a SHAP módszer az árvíz-előrejelzés értelmezésére?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatfelosztási stratégiák léteznek a hidrológiai ML-modellezésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a MOD16 ET-termék korlátait és a gépi tanulás előnyeit!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a FLUXNET örvénykovariancia-mérések az ET-modell tanításához?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választható ki a megfelelő ML-algoritmus egy hidrológiai problémához?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Tisza szolnoki LSTM-modell felépítését és eredményeit!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Sentinel-2 a Dunai hordaléktranszport monitoringjában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a dropout és a korai leállítás az LSTM-ek regularizációjában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az alföldi talajvízszint-előrejelzés ML-megközelítését és eredményeit!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a MODIS adatok az evapotranszspiráció becslésében?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korrelációkon alapulnak a vízminőségi virtuális szenzorok?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térbeli vízminőség-előrejelzés módszertanát a magyar vízfolyásokra!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a többidejű képanyag a felszínborítás-osztályozás javítására?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előrejelzési horizontot alkalmaznak a talajvízszint-előrejelzésben, és miért?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a félfelügyelt tanulás alkalmazását az U-Net felszínborítás-osztályozásban!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja az adatminőség a gépi tanulási modellek teljesítményét?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján érdemes XGBoost-ot használni LSTM helyett?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a globális perspektívát: ML-alapú talajvíz-előrejelzés különböző régiókban!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a figyelemmechanizmus (attention) az LSTM-ekben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen eszközök és keretrendszerek állnak rendelkezésre a hidrológiai ML-hez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a parciális függőségi diagramok alkalmazását az ET-modell értelmezésében!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az NSE-alapú veszteségfüggvény az LSTM tanításában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen bemeneti változókat használnak a Tisza szolnoki LSTM-ben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a felszínborítás-osztályozás öt lépéses munkafolyamatát!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Python scikit-learn könyvtár a talajvízszint-előrejelzéshez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a nem-stacionaritás az ML-modellek számára?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a döntési keretrendszert a hidrológiai ML-megközelítés kiválasztásához!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a nagymintás adathalmazok (CAMELS, LamaH-CE) az ML-kutatásban?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a beeső sugárzás az ET-becslésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Penman-Monteith és az ML-módszerek komplementer alkalmazását!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Sentinel-1 SAR adat hidrológiai célokra?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a PyTorch-nak a TensorFlow-val szemben a hidrológiában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a SEBAL/METRIC módszer korlátait és a gépi tanulási alternatívát!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Monte Carlo dropout a bizonytalanságbecslésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen etikai és módszertani kockázatai vannak az ML-modelleknek a hidrológiában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az öntözött és csapadékos szántóföld elkülönítésének kihívásait!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a kumulatív vízmérleg jellemző a talajvízszint-előrejelzésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyökkel jár a felhőalapú gépi tanulás a fejlődő világ számára?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a félrevezető korrelációk problémáját az ML-modellekben!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a folyó vízszintje a talajvízszint-előrejelzés bemeneti jellemzőjeként?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontokat kell figyelembe venni az ML-modellek rendszeres újratanításánál?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a cross-validation (keresztvalidáció) gördülő ablak módszerét!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az ensemble módszer a talajvízszint-előrejelzés javítására?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrások állnak rendelkezésre a magyar vízminőség-előrejelzéshez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a CNN (konvolúciós neurális hálózat) alapelvét a képosztályozásban!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az ICPDR Duna-monitoringja a virtuális szenzorok fejlesztéséhez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen számítási erőforrásokat igényel a különböző ML-megközelítések alkalmazása?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi figyelmeztetési küszöbök értékelését az LSTM-előrejelzés alapján!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a szezonális kódolás (sin/cos) a hidrológiai jellemzőtervezésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a hibrid fizika-ML modelleknek a tisztán adatvezérelt megközelítésekkel szemben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Copernicus Soil Water Index (SWI) alkalmazását a talajvízszint-előrejelzésben!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GRACE műholdas adat a talajvízkészlet-anomáliák becslésében?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel csökkenthető a gépi tanulási modellek adatigénye?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a NeuralHydrology keretrendszer funkcióit és előnyeit!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a gradiens-erősítéses modell a térbeli vízminőség-következtetésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a nagy területek felszínborítás-osztályozása?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GEE JavaScript API legfontosabb elemeit a hidrológiai alkalmazásokhoz!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a nagymintás LSTM-eredmények a magyar vízgyűjtők előrejelzéséhez?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen összefüggés van a felszínborítás és a lefolyási görbeszám (CN) között?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a 23. fejezet döntési keretrendszerének főbb elemeit!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az adat-augmentáció a hidrológiai ML-modellezésben?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tanulságokkal szolgál a Tisza szolnoki LSTM-példa az operatív alkalmazás számára?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás szerepét az aszálymonitoring és -előrejelzés fejlődésében!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a spectral index (spektrális index) számítás a ML-osztályozás javítására?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és korlátai vannak a Google Earth Engine ML API-nak?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Hollandiai, Kaliforniai és Indiai talajvízszint-előrejelzési példákat!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a contour-based validáció az LSTM árvíz-előrejelzés értékelésére?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen perspektívát nyújt a LamaH-CE a kárpát-medencei hidrológiai ML-kutatás számára?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízminőségi szenzorháló-zatok szerepét a gépi tanulás szempontjából!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a trendjellemző az alföldi talajvíz-monitoring modelljében?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a nyílt forráskódú ML-eszközöknek a hidrológiában?",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a 23. fejezet összefoglaló tanulságait a gyakorló hidrológus számára!",
+    "explanation": "Lásd a 23. fejezet vonatkozó szakaszát a részletes tárgyalásért. A kérdés a fejezet kulcsfogalmait, módszereit és alkalmazásait érinti."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A CAMELS-AUS hány vízgyűjtőt tartalmaz?",
+    "options": [
+      "A. 100",
+      "B. 222",
+      "C. 516",
+      "D. 671"
+    ],
+    "correct": "B",
+    "explanation": "A CAMELS-AUS 222 vízgyűjtőt fed le Ausztráliában."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Mi az EVI?",
+    "options": [
+      "A. Enhanced Vegetation Index",
+      "B. Evapotranspiration Variability Index",
+      "C. Environmental Variability Indicator",
+      "D. Ecosystem Value Index"
+    ],
+    "correct": "A",
+    "explanation": "Az EVI (Enhanced Vegetation Index) fejlett vegetációs index a MODIS-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: A Sentinel-2 B8 sáv melyik tartományba esik?",
+    "options": [
+      "A. Kék",
+      "B. Piros",
+      "C. Közeli infravörös",
+      "D. SWIR"
+    ],
+    "correct": "C",
+    "explanation": "A B8 (842 nm) a közeli infravörös sáv, 10 m felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Az LSTM kimenetét milyen réteg alakítja vízhozam-előrejelzéssé?",
+    "options": [
+      "A. Konvolúciós",
+      "B. Összevonó (pooling)",
+      "C. Teljesen összekapcsolt (dense)",
+      "D. Dropout"
+    ],
+    "correct": "C",
+    "explanation": "A sűrű (dense) kimeneti réteg alakítja a rejtett állapotot vízhozam-értékké."
+  },
+  {
+    "type": "mcq",
+    "question": "A 23. fejezet (MI mint hidrológus asszisztens) alapján: Melyik módszer a leggyakoribb a vízminőség virtuális szenzorainál?",
+    "options": [
+      "A. LSTM",
+      "B. Random Forest",
+      "C. U-Net",
+      "D. Lineáris regresszió"
+    ],
+    "correct": "B",
+    "explanation": "A Random Forest a leggyakoribb a virtuális szenzoroknál az értelmezhetőség és robusztusság miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS-CL Chile vízgyűjtőit tartalmazza.",
+    "correct": true,
+    "explanation": "A CAMELS-CL 516 chilei vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A gradiens-erősítéses modellek nem alkalmasak táblázatos adatokra.",
+    "correct": false,
+    "explanation": "Az XGBoost és LightGBM különösen erősek táblázatos előrejelzésnél."
+  },
+  {
+    "type": "true_false",
+    "question": "A scikit-learn API mintázata: .fit() és .predict().",
+    "correct": true,
+    "explanation": "Konzisztens API: modell.fit(X, y), modell.predict(X_new)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE csak JavaScript API-val használható.",
+    "correct": false,
+    "explanation": "A GEE JavaScript és Python API-val is használható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az LSTM három kapuból áll: felejtő, bemeneti és kimeneti.",
+    "correct": true,
+    "explanation": "Az LSTM felejtő, bemeneti és kimeneti kapukkal rendelkezik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM dropout aránya _____.",
+    "correct": "0,2",
+    "explanation": "A szolnoki modellben 0,2-es dropout arányt alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS-AUS _____ vízgyűjtőt tartalmaz.",
+    "correct": "222",
+    "explanation": "CAMELS-AUS: 222 ausztrál vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az XGBoost a _____ Gradient Boosting rövidítése.",
+    "correct": "Extreme",
+    "explanation": "XGBoost: Extreme Gradient Boosting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza szolnoki LSTM tanítási NSE = _____.",
+    "correct": "0,94",
+    "explanation": "A tanítási NSE = 0,94 a szolnoki modellnél."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 B4 sáv a _____ tartományba esik.",
+    "correct": "piros",
+    "explanation": "A B4 (665 nm) a piros sáv."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a gépi tanulás alkalmazásait a vízgazdálkodásban összefoglalóan!",
+    "explanation": "A fejezet hat fő alkalmazást tárgyal: árvíz-előrejelzés (LSTM), ET-becslés (XGBoost), talajvízszint-előrejelzés, vízminőség (virtuális szenzorok), felszínborítás-osztályozás (RF, U-Net), és transzfer tanulás."
+  }
+]

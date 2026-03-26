@@ -1,0 +1,2902 @@
+[
+  {
+    "question": "Mi az állandó forrásfelület módszer lényege?",
+    "options": [
+      "A) A küszöbnél nagyobb felhalmozódású cellák vízfolyáscellák",
+      "B) A legmélyebb cellák vízfolyáscellák",
+      "C) A lejtés alapján határozzuk meg",
+      "D) A szélességi fok alapján"
+    ],
+    "correct": "A",
+    "explanation": "Vízfolyás(c) = 1, ha A(c) >= T.",
+    "type": "mcq"
+  },
+  {
+    "question": "A lecsapolási sűrűség képlete?",
+    "options": [
+      "A) D_d = ΣL × A",
+      "B) D_d = ΣL / A",
+      "C) D_d = A / ΣL",
+      "D) D_d = ΣL + A"
+    ],
+    "correct": "B",
+    "explanation": "D_d = teljes vízfolyáshossz / teljes vízgyűjtő terület.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az átlagos lejtőhossz és a lecsapolási sűrűség közötti összefüggés?",
+    "options": [
+      "A) B = 2D_d",
+      "B) B = 1/(2D_d)",
+      "C) B = D_d²",
+      "D) B = √D_d"
+    ],
+    "correct": "B",
+    "explanation": "B = 1/(2D_d).",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki írta le az állandó vízfolyás-esés tulajdonságot?",
+    "options": [
+      "A) Tarboton",
+      "B) Broscoe (1959)",
+      "C) Horton",
+      "D) Montgomery"
+    ],
+    "correct": "B",
+    "explanation": "Broscoe 1959-ben figyelte meg.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a vízfolyás-esés (stream drop)?",
+    "options": [
+      "A) A vízfolyás szélessége",
+      "B) Egy Strahler-vízfolyás felső és alsó vége közötti szintkülönbség",
+      "C) A csapadék mennyisége",
+      "D) A meder mélysége"
+    ],
+    "correct": "B",
+    "explanation": "Δz = z_forrás - z_torkolat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba objektív küszöbértéke milyen feltételt teljesít?",
+    "options": [
+      "A) |t| > 5",
+      "B) |t| < 2",
+      "C) t = 0",
+      "D) t > 10"
+    ],
+    "correct": "B",
+    "explanation": "A legkisebb T, amelyre |t| < 2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki publikálta a terület-lejtő küszöb módszert?",
+    "options": [
+      "A) Broscoe",
+      "B) Tarboton",
+      "C) Montgomery és Dietrich (1992)",
+      "D) Strahler"
+    ],
+    "correct": "C",
+    "explanation": "Montgomery & Dietrich, Science, 1992.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peuker-Douglas algoritmus mit azonosít?",
+    "options": [
+      "A) Gerincvonalakat",
+      "B) Völgycellák (felfelé görbülő cellák)",
+      "C) Csapadékzónákat",
+      "D) Szennyezésforrásokat"
+    ],
+    "correct": "B",
+    "explanation": "A 2×2 ablakban sosem legmagasabb cellák = völgycellák.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peuker-Douglas 2×2 ablakban mit csinál a legmagasabb cellával?",
+    "options": [
+      "A) Vízfolyásnak jelöli",
+      "B) Megjelöletlenné (nem-völgy) teszi",
+      "C) Kitörli",
+      "D) Megduplázza"
+    ],
+    "correct": "B",
+    "explanation": "A legmagasabb cella megjelöletlen (nem-völgy) lesz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány Strahler-szabály van a vízfolyásrendszámozásban?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": "B",
+    "explanation": "1) Mellékág nélküli = 1. rend. 2) Azonos rend találkozik → n+1. 3) Különböző → nagyobb marad.",
+    "type": "mcq"
+  },
+  {
+    "question": "Két másodrendű vízfolyás találkozásakor milyen rendű lesz az alvízi szakasz?",
+    "options": [
+      "A) Másodrendű",
+      "B) Harmadrendű",
+      "C) Negyedrendű",
+      "D) Elsőrendű"
+    ],
+    "correct": "B",
+    "explanation": "Azonos rendű (2+2) → 2+1 = 3.",
+    "type": "mcq"
+  },
+  {
+    "question": "Egy elsőrendű és egy másodrendű vízfolyás találkozásakor?",
+    "options": [
+      "A) Harmadrendű",
+      "B) Másodrendű",
+      "C) Elsőrendű",
+      "D) Negyedrendű"
+    ],
+    "correct": "B",
+    "explanation": "Különböző rendű → a nagyobb marad: 2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a bifurkációs arány jellemző tartománya?",
+    "options": [
+      "A) 1-2",
+      "B) 3-5",
+      "C) 10-20",
+      "D) 50-100"
+    ],
+    "correct": "B",
+    "explanation": "R_b jellemzően 3 és 5 közé esik.",
+    "type": "mcq"
+  },
+  {
+    "question": "A hosszarány (R_L) jellemző tartománya?",
+    "options": [
+      "A) 0,1-0,5",
+      "B) 1,5-3,5",
+      "C) 10-20",
+      "D) 100-200"
+    ],
+    "correct": "B",
+    "explanation": "R_L jellemzően 1,5 és 3,5 közé esik.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő definíciója?",
+    "options": [
+      "A) A teljes medence",
+      "B) Egyetlen vízfolyásszakaszba közvetlenül csapolódó terület",
+      "C) A folyó torkolata",
+      "D) A gerincvonal"
+    ],
+    "correct": "B",
+    "explanation": "Közvetlenül egyetlen szakaszba csapolódik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az NHDPlus?",
+    "options": [
+      "A) Globális DEM",
+      "B) Előre kiszámított USA vízfolyáshálózat és részvízgyűjtő-adatállomány",
+      "C) Magyar vízmérce-hálózat",
+      "D) Csapadékadatbázis"
+    ],
+    "correct": "B",
+    "explanation": "2,7 millió szakasz, országosan konzisztens.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány vízfolyásszakaszt tartalmaz az NHDPlus?",
+    "options": [
+      "A) 270 000",
+      "B) 2,7 millió",
+      "C) 27 millió",
+      "D) 270"
+    ],
+    "correct": "B",
+    "explanation": "~2,7 millió COMID-val azonosított szakasz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az EU-Hydro forrása?",
+    "options": [
+      "A) Terepi felmérés",
+      "B) Sentinel-2 + EU-DEM + nemzeti adatok",
+      "C) LiDAR",
+      "D) Radar"
+    ],
+    "correct": "B",
+    "explanation": "Műholdkép + DEM + nemzeti térképészet kombinációja.",
+    "type": "mcq"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS hány hierarchikus szintet tartalmaz?",
+    "options": [
+      "A) 3",
+      "B) 7",
+      "C) 12",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "12 szintű hierarchia.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a kifolyási pont illesztés (pour point snapping)?",
+    "options": [
+      "A) A kifolyási pont törlése",
+      "B) Automatikus áthelyezés a legközelebbi vízfolyáscellára",
+      "C) Új kifolyási pont létrehozása",
+      "D) A DEM módosítása"
+    ],
+    "correct": "B",
+    "explanation": "A felhasználó által megadott pont áthelyezése a legközelebbi DEM-ből levezetett vízfolyás-cellára.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Logan-folyó vízgyűjtő területe körülbelül mekkora?",
+    "options": [
+      "A) 55 km²",
+      "B) 554 km²",
+      "C) 5540 km²",
+      "D) 55 400 km²"
+    ],
+    "correct": "B",
+    "explanation": "~554 km², USGS 10109000 állomás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Sajó vízgyűjtő magyar része megközelítőleg mekkora?",
+    "options": [
+      "A) 1 270 km²",
+      "B) 12 700 km²",
+      "C) 127 000 km²",
+      "D) 127 km²"
+    ],
+    "correct": "B",
+    "explanation": "~12 700 km² (határmenti részt is beleértve).",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen koordináta-rendszert használ a magyar topográfiai térképezés?",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV (EPSG:23700)",
+      "C) ETRS89/LAEA",
+      "D) Web Mercator"
+    ],
+    "correct": "B",
+    "explanation": "HD72/EOV a magyar nemzeti vetület.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Nemzeti Vízmodell (NWM) hány előrejelzési pontra ad vízhozam-előrejelzést?",
+    "options": [
+      "A) 4 000",
+      "B) 27 000",
+      "C) 2,7 millió",
+      "D) 270 millió"
+    ],
+    "correct": "C",
+    "explanation": "2,7 millió NHDPlus-szakasz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az EFAS hidrológiai modellje?",
+    "options": [
+      "A) HEC-RAS",
+      "B) LISFLOOD",
+      "C) SWMM",
+      "D) MODFLOW"
+    ],
+    "correct": "B",
+    "explanation": "A LISFLOOD elosztott hidrológiai modell.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az EFAS milyen típusú előrejelzést hangsúlyoz?",
+    "options": [
+      "A) Determinisztikus",
+      "B) Együttes (ensemble)",
+      "C) Klimatológiai",
+      "D) Statisztikai"
+    ],
+    "correct": "B",
+    "explanation": "51 tagú ECMWF együttes előrejelzés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a karsztos terep problémája a vízgyűjtő-lehatárolásban?",
+    "options": [
+      "A) Túl meredek",
+      "B) A víz felszín alatt folyik, más vízgyűjtőben bukkan fel",
+      "C) Túl lapos",
+      "D) Nincs DEM"
+    ],
+    "correct": "B",
+    "explanation": "Víznyelők és források más felszíni vízgyűjtőben.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell mit biztosít?",
+    "options": [
+      "A) Csapadékmérő adatokat",
+      "B) Univerzális azonosítórendszert (HydroID) vízfolyás-részvízgyűjtő-pont kapcsolathoz",
+      "C) Hőmérsékleti előrejelzést",
+      "D) Talajminták adatbázisát"
+    ],
+    "correct": "B",
+    "explanation": "HydroID: egyedi azonosítók az összes elemosztályon keresztül.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Stream Link eszköz feladata?",
+    "options": [
+      "A) Összeköti a vízfolyásokat a felszín alatti vizekkel",
+      "B) Egyedi azonosítókat rendel a vízfolyásszakaszokhoz",
+      "C) Törli a vízfolyásokat",
+      "D) Módosítja a DEM-et"
+    ],
+    "correct": "B",
+    "explanation": "A vízfolyás-cellák szakaszokra szegmentálása egyedi ID-kkel.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő-lehatároláshoz milyen raszterek szükségesek?",
+    "options": [
+      "A) Csapadék és hőmérséklet",
+      "B) Folyásirány és vízfolyásszakasz-raszter",
+      "C) Szélsebesség és páratartalom",
+      "D) Tengerszint és légiösszetétel"
+    ],
+    "correct": "B",
+    "explanation": "D8 folyásirány + szegmentált vízfolyásszakasz-raszter.",
+    "type": "mcq"
+  },
+  {
+    "question": "A lejtés-terület (S-A) diagramon mit jelöl az inflexiós pont?",
+    "options": [
+      "A) A DEM hibáját",
+      "B) A mederképződési küszöböt",
+      "C) A csapadék maximumot",
+      "D) A tenger szintjét"
+    ],
+    "correct": "B",
+    "explanation": "Ahol a szétterülő lejtői áramlás koncentrált medri áramlásba megy át.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peuker-Douglas módszer milyen típusú lecsapolási sűrűséget ad?",
+    "options": [
+      "A) Állandó",
+      "B) Térben változó",
+      "C) Időben változó",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "Mivel a völgycellák tagolt terepen sűrűbbek, a sűrűség helyi terephez igazodik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Smith és Bretherton (1972) mit bizonyítottak?",
+    "options": [
+      "A) A HAND módszert",
+      "B) A formainstabilitás-elméletet a mederrendszerek kialakulására",
+      "C) A D-végtelen algoritmust",
+      "D) Az NHDPlus pontosságát"
+    ],
+    "correct": "B",
+    "explanation": "Az egyenletes felszín mederrendszerré alakulásának fizikai elmélete.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mennyi a lecsapolási sűrűség 2,0 km⁻¹ értéknél az átlagos lejtőhossz?",
+    "options": [
+      "A) 100 m",
+      "B) 250 m",
+      "C) 500 m",
+      "D) 1000 m"
+    ],
+    "correct": "B",
+    "explanation": "B = 1/(2×2,0) = 0,25 km = 250 m.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen szempontok fontosak a kifolyási pont illesztés keresési távolságánál?",
+    "options": [
+      "A) Legyen minél nagyobb",
+      "B) Elég nagy a bizonytalanságokhoz, de ne illeszkedjen rossz vízfolyásra",
+      "C) Mindig pontosan 10 m",
+      "D) Nem számít a távolság"
+    ],
+    "correct": "B",
+    "explanation": "100-500 m jellemző, pontos helyszíneknél 50-100 m.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az ArcGIS Pro melyik eszköze végzi a kifolyási pont illesztést?",
+    "options": [
+      "A) Fill",
+      "B) FlowDirection",
+      "C) Snap Pour Point",
+      "D) StreamLink"
+    ],
+    "correct": "C",
+    "explanation": "Snap Pour Point a legnagyobb felhalmozódású cellára illeszt.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM melyik eszköze végzi a kifolyási pont illesztést?",
+    "options": [
+      "A) PitRemove",
+      "B) Move Outlets to Streams",
+      "C) D8FlowDir",
+      "D) AreaD8"
+    ],
+    "correct": "B",
+    "explanation": "Move Outlets to Streams D8 úton követi a vízfolyásig.",
+    "type": "mcq"
+  },
+  {
+    "question": "A területarány (R_A) jellemző tartománya?",
+    "options": [
+      "A) 0,1-0,5",
+      "B) 1-2",
+      "C) 3-6",
+      "D) 50-100"
+    ],
+    "correct": "C",
+    "explanation": "R_A jellemzően 3-6, gyakran ~R_L².",
+    "type": "mcq"
+  },
+  {
+    "question": "A lejtésarány (R_S) jellemző tartománya?",
+    "options": [
+      "A) 0,01-0,1",
+      "B) 1,5-3",
+      "C) 10-20",
+      "D) 100-500"
+    ],
+    "correct": "B",
+    "explanation": "R_S jellemzően 1,5-3.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás milyen tulajdonságú?",
+    "options": [
+      "A) Átfedő poligonok",
+      "B) Nem átfedő, teljes felosztás (mozaik)",
+      "C) Részleges lefedettség",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "Nem átfedő poligonok, amelyek együtt lefedik a teljes medenceterületet.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az EU Víz Keretirányelv legnagyobb térbeli egysége?",
+    "options": [
+      "A) Víztest",
+      "B) Vízgyűjtő-kerület",
+      "C) Részvízgyűjtő",
+      "D) Meder"
+    ],
+    "correct": "B",
+    "explanation": "A Vízgyűjtő-kerületek (River Basin Districts) a legnagyobb egységek.",
+    "type": "mcq"
+  },
+  {
+    "question": "A National Water Model (NWM) milyen meteorológiai bemenetet használ?",
+    "options": [
+      "A) ECMWF HRES",
+      "B) HRRR (High-Resolution Rapid Refresh)",
+      "C) ALADIN",
+      "D) GFS"
+    ],
+    "correct": "B",
+    "explanation": "HRRR 3 km-es rácson, óránkénti frissítéssel.",
+    "type": "mcq"
+  },
+  {
+    "question": "A NWM felszíni hidrológiai modellje?",
+    "options": [
+      "A) LISFLOOD",
+      "B) Noah-MP",
+      "C) SWAT",
+      "D) VIC"
+    ],
+    "correct": "B",
+    "explanation": "Noah-MP felszíni modell a lefolyás-képződéshez.",
+    "type": "mcq"
+  },
+  {
+    "question": "A NWM medri transzformációs modellje?",
+    "options": [
+      "A) HEC-RAS",
+      "B) RAPID",
+      "C) SWMM",
+      "D) MIKE"
+    ],
+    "correct": "B",
+    "explanation": "RAPID (Routing Application for Parallel computation of Discharge).",
+    "type": "mcq"
+  },
+  {
+    "question": "A Sajó hol ered?",
+    "options": [
+      "A) Ausztriában",
+      "B) Szlovákiában",
+      "C) Romániában",
+      "D) Ukrajnában"
+    ],
+    "correct": "B",
+    "explanation": "Szlovákiában ered, ahol Slaná a neve.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Sajó hol torkollik?",
+    "options": [
+      "A) A Dunába",
+      "B) A Tiszába",
+      "C) A Drávába",
+      "D) A Balatonba"
+    ],
+    "correct": "B",
+    "explanation": "Tiszaújvárosnál torkollik a Tiszába.",
+    "type": "mcq"
+  },
+  {
+    "question": "A 30 m NED (USA DEM) RMSE-je körülbelül mennyi?",
+    "options": [
+      "A) 0,1 m",
+      "B) 2,34 m",
+      "C) 10 m",
+      "D) 50 m"
+    ],
+    "correct": "B",
+    "explanation": "NED RMSE ≈ 2,34 m.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő-raszterből vektoros poligonok konverziójánál mit kell engedélyezni?",
+    "options": [
+      "A) Egyszerűsítést",
+      "B) Többrészes elemek létrehozását",
+      "C) Háromszögelést",
+      "D) Szűrést"
+    ],
+    "correct": "B",
+    "explanation": "Nem összefüggő részeket egyetlen poligonba kell tartani.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a rácsazonosító (Grid code) szerepe?",
+    "options": [
+      "A) A cella magassága",
+      "B) Relációs kulcs a vízfolyás, részvízgyűjtő és pont között",
+      "C) A DEM felbontása",
+      "D) A lejtés értéke"
+    ],
+    "correct": "B",
+    "explanation": "Három elemosztályt kapcsol össze: vízfolyásvonal, részvízgyűjtő-poligon, lecsapolási pont.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Tisza vízfolyásrendje körülbelül mennyi?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 8",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "~8-ad rendű a Dunába torkollásnál.",
+    "type": "mcq"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba milyen statisztikai módszert használ?",
+    "options": [
+      "A) Chi-négyzet",
+      "B) Kétmintás t-próba",
+      "C) Regresszió",
+      "D) Korreláció"
+    ],
+    "correct": "B",
+    "explanation": "Standard kétmintás t-próba az elsőrendű és magasabb rendű vízfolyás-esések átlagainak összehasonlítására.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Horton-törvények milyen természetű szabályosságok?",
+    "options": [
+      "A) Pontos matematikai törvények",
+      "B) Statisztikai tendenciák",
+      "C) Determinisztikus egyenletek",
+      "D) Véletlenszerű kapcsolatok"
+    ],
+    "correct": "B",
+    "explanation": "Statisztikai tendenciák, amelyeket ezernyi vízgyűjtőn figyeltek meg.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen információt hordoz a DrainageLine elemosztály?",
+    "options": [
+      "A) Csak a geometriát",
+      "B) Szakaszazonosítót, összekötöttséget, Strahler-rendet, lejtést, távolságot",
+      "C) Csapadékadatokat",
+      "D) Hőmérsékleteket"
+    ],
+    "correct": "B",
+    "explanation": "Gazdag attribútumok: ID, felvízi/alvízi kapcsolat, rend, hossz, lejtés, távolság stb.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Stream to Feature konverzió milyen típusú vonalat produkál?",
+    "options": [
+      "A) Tökéletesen sima görbéket",
+      "B) Lépcsőzetes mintázatú vonalakat a cellaközéppontokon",
+      "C) Egyenes vonalakat",
+      "D) Bezier-görbéket"
+    ],
+    "correct": "B",
+    "explanation": "A cellák négyzetesek, a vonalak cellaközéppontokon ülnek.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Sajó DEM-feldolgozásánál miért fontos a vízfolyás-beégetés?",
+    "options": [
+      "A) Mert a terep túl meredek",
+      "B) Mert a sík alföldi területeken az áramlásvezetés megbízhatatlan beégetés nélkül",
+      "C) Mert a DEM hiányzik",
+      "D) Mert a folyó túl keskeny"
+    ],
+    "correct": "B",
+    "explanation": "Sík terepen a DEM gradiensek túl finomak a megbízható áramlásvezetéshez.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Bükk hegység milyen típusú terep?",
+    "options": [
+      "A) Sík alluviális",
+      "B) Mélyen felszabdalt karsztos",
+      "C) Homoksivatag",
+      "D) Tengerparti"
+    ],
+    "correct": "B",
+    "explanation": "Meredek völgyekkel, sűrű vízfolyáshálózattal jellemzett karsztos terep.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az OVF hidrográfiai adatbázisa mióta nyílt?",
+    "options": [
+      "A) 2010",
+      "B) 2020",
+      "C) 2024 július",
+      "D) 1990"
+    ],
+    "correct": "C",
+    "explanation": "2024 júliusa óta nyílt adatként elérhető a data.vizugy.hu-n.",
+    "type": "mcq"
+  },
+  {
+    "question": "A GloFAS milyen felbontásban biztosít árvíz-előrejelzéseket?",
+    "options": [
+      "A) 1 km",
+      "B) 5 km (0,05°)",
+      "C) 30 km",
+      "D) 100 km"
+    ],
+    "correct": "B",
+    "explanation": "0,05 fokos felbontás (~5 km).",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcGIS Online Watershed eszközének fő előnye?",
+    "options": [
+      "A) Legmagasabb pontosság",
+      "B) Azonnali eredmény helyi DEM-feldolgozás nélkül",
+      "C) Ingyenes nyílt forráskód",
+      "D) LiDAR alapú"
+    ],
+    "correct": "B",
+    "explanation": "Felhőalapú, előre feldolgozott globális DEM-en másodpercek alatt.",
+    "type": "mcq"
+  },
+  {
+    "question": "A DEM-ből levezetett és a kartográfiai hálózatok összehasonlításánál melyik előnyösebb pontossági szempontból sík terepen?",
+    "options": [
+      "A) A DEM-levezetett",
+      "B) A kartográfiai (pl. OVF)",
+      "C) Mindkettő egyformán jó",
+      "D) Egyik sem"
+    ],
+    "correct": "B",
+    "explanation": "Sík terepen a DEM-alapú módszer megbízhatatlan; az OVF terepi felméréseken alapul.",
+    "type": "mcq"
+  },
+  {
+    "question": "A HD72 és ETRS89 közötti átszámítás milyen transzformációt használ?",
+    "options": [
+      "A) Egyszerű eltolás",
+      "B) 7-paraméteres Helmert",
+      "C) Lineáris skálázás",
+      "D) Nem lehet átszámítani"
+    ],
+    "correct": "B",
+    "explanation": "7-paraméteres Helmert-transzformáció (EPSG:1449).",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a veszteséges vízfolyás hatása a vízgyűjtő-lehatárolásra?",
+    "options": [
+      "A) Nincs hatása",
+      "B) A DEM-ből levezetett terület túlbecsüli a tényleges hozzájáruló területet",
+      "C) A terület alulbecsültté válik",
+      "D) A lejtés nő"
+    ],
+    "correct": "B",
+    "explanation": "A veszteség miatt nem minden felvízi víz ér el az alvízi vízmércéig.",
+    "type": "mcq"
+  },
+  {
+    "question": "A fejezet vízfolyás-esés teszt példájában melyik küszöbérték volt az objektív?",
+    "options": [
+      "A) 50",
+      "B) 100",
+      "C) 200",
+      "D) 500"
+    ],
+    "correct": "C",
+    "explanation": "T=200 cellánál esett először |t| < 2 alá.",
+    "type": "mcq"
+  },
+  {
+    "question": "A magyar ALADIN modell mit biztosít az EFAS számára?",
+    "options": [
+      "A) DEM-et",
+      "B) Meteorológiai bemenetet",
+      "C) Vízfolyáshálózatot",
+      "D) Vízmérce-adatokat"
+    ],
+    "correct": "B",
+    "explanation": "Nemzeti meteorológiai modell kimenet az EFAS-nak.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az automatizált lehatárolás munkafolyamat utolsó lépése?",
+    "options": [
+      "A) Süllyedékfeltöltés",
+      "B) Vektoros konverzió és attribútum-összekapcsolás",
+      "C) Folyásirány-számítás",
+      "D) DEM letöltés"
+    ],
+    "correct": "B",
+    "explanation": "Részvízgyűjtő-raszter → poligon, vízfolyásraszter → vonalak, attribútumok.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen ellenőrzés ajánlott a lehatárolás befejezésekor?",
+    "options": [
+      "A) Csak vizuális ellenőrzés",
+      "B) Területellenőrzés, vizuális, Horton, lecsapolási sűrűség, összekötöttség, határ",
+      "C) Semmilyen",
+      "D) Csak terület"
+    ],
+    "correct": "B",
+    "explanation": "6 pontból álló ellenőrzési lista.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Logan-folyó melyik amerikai államban van?",
+    "options": [
+      "A) Colorado",
+      "B) Utah",
+      "C) Montana",
+      "D) Texas"
+    ],
+    "correct": "B",
+    "explanation": "Utah északi részén, a Bear River Range-ben.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen rendű a Logan-folyó medencéje?",
+    "options": [
+      "A) Másodrendű",
+      "B) Negyedrendű",
+      "C) Hatodrendű",
+      "D) Nyolcadrendű"
+    ],
+    "correct": "B",
+    "explanation": "Negyedrendű vízfolyás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás milyen típusú felosztás?",
+    "options": [
+      "A) Véletlenszerű",
+      "B) Mozaikszerű (tesszálció)",
+      "C) Részleges",
+      "D) Átfedő"
+    ],
+    "correct": "B",
+    "explanation": "Nem átfedő poligonok = mozaikszerű felosztás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peter Sinks a Logan-folyó vízgyűjtőjén milyen geomorfológiai elem?",
+    "options": [
+      "A) Vulkáni kráter",
+      "B) 62 m mély karsztos mélyedés",
+      "C) Gleccservölgy",
+      "D) Homokdűne"
+    ],
+    "correct": "B",
+    "explanation": "USA rekord hideg helye (-56,3°C).",
+    "type": "mcq"
+  },
+  {
+    "question": "Az Aggteleki-karszt milyen problémát okoz a vízgyűjtő-lehatárolásban?",
+    "options": [
+      "A) Túl meredek",
+      "B) Víznyelőkben eltűnő víz más völgybe csapolódó forrásoknál bukkan fel",
+      "C) Túl sík",
+      "D) Nincs DEM"
+    ],
+    "correct": "B",
+    "explanation": "Felszín alatti járatok, más vízgyűjtőben felszínre lépő források.",
+    "type": "mcq"
+  },
+  {
+    "question": "A DEM-határeltérések jellemző mértéke 10 m vs 30 m összehasonlításnál?",
+    "options": [
+      "A) 1-5 m",
+      "B) 50-200 m",
+      "C) 1-5 km",
+      "D) 10-50 km"
+    ],
+    "correct": "B",
+    "explanation": "Jellemzően 50-200 m eltérés a kerület mentén.",
+    "type": "mcq"
+  },
+  {
+    "question": "A küszöbérték választása a vízfolyás-meghatározásnál kozmetikai döntés.",
+    "correct": "false",
+    "explanation": "Modellezési döntés, hatással van a vízhozam-becslésre és időzítésre.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség mértékegysége km⁻¹.",
+    "correct": "true",
+    "explanation": "km vízfolyáshossz / km² terület = km⁻¹.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Strahler-rendszámozást Arthur Strahler fejlesztette ki 1957-ben.",
+    "correct": "true",
+    "explanation": "Strahler, 1957.",
+    "type": "true_false"
+  },
+  {
+    "question": "Két különböző rendű vízfolyás találkozásakor a rend eggyel nő.",
+    "correct": "false",
+    "explanation": "A magasabb rend marad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A bifurkációs arány jellemzően 3 és 5 közé esik.",
+    "correct": "true",
+    "explanation": "Természetes vízgyűjtőkre R_b = 3-5.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők átfedő poligonokat alkotnak.",
+    "correct": "false",
+    "explanation": "Nem átfedő, teljes felosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az NHDPlus 2,7 millió vízfolyásszakaszt tartalmaz.",
+    "correct": "true",
+    "explanation": "COMID-val azonosítva.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS 12 hierarchikus szintű.",
+    "correct": "true",
+    "explanation": "Kontinentálistól kis forrásvízi részvízgyűjtőig.",
+    "type": "true_false"
+  },
+  {
+    "question": "A kifolyási pont illesztés szükségtelen, ha a koordináták pontosak.",
+    "correct": "false",
+    "explanation": "A DEM felbontása miatt szinte mindig szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell az NHDPlus és a Nemzeti Vízmodell alapja.",
+    "correct": "true",
+    "explanation": "Maidment (2002) formalizálta.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Peuker-Douglas módszer állandó lecsapolási sűrűséget eredményez.",
+    "correct": "false",
+    "explanation": "Térben változó sűrűséget ad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba az állandó esés tulajdonságra épül.",
+    "correct": "true",
+    "explanation": "Broscoe (1959) megfigyelésére.",
+    "type": "true_false"
+  },
+  {
+    "question": "Montgomery és Dietrich az A×Sⁿ küszöb módszert publikálta.",
+    "correct": "true",
+    "explanation": "Science, 1992.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Logan-folyó Utah-ban van.",
+    "correct": "true",
+    "explanation": "Utah északi része.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Sajó a Dunába torkollik.",
+    "correct": "false",
+    "explanation": "A Tiszába torkollik Tiszaújvárosnál.",
+    "type": "true_false"
+  },
+  {
+    "question": "A karsztos terep problémamentes a DEM-alapú lehatárolásban.",
+    "correct": "false",
+    "explanation": "Víznyelők és források megkerülik a felszíni topográfiát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EFAS 51 tagú együttes előrejelzést használ.",
+    "correct": "true",
+    "explanation": "ECMWF ENS.",
+    "type": "true_false"
+  },
+  {
+    "question": "A National Water Model óránkénti frissítéssel dolgozik.",
+    "correct": "true",
+    "explanation": "Óránkénti vízhozam-előrejelzések.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők az elosztott hidrológiai modellezés természetes térbeli egységei.",
+    "correct": "true",
+    "explanation": "A vízmozgás fizikai topológiáját tiszteletben tartják.",
+    "type": "true_false"
+  },
+  {
+    "question": "A városi csapadékvíz-csatornák nem befolyásolják a DEM-alapú lehatárolást.",
+    "correct": "false",
+    "explanation": "Teljesen megkerülik a felszíni topográfiát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Horton-törvények pontos matematikai egyenletek.",
+    "correct": "false",
+    "explanation": "Statisztikai tendenciák.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Stream to Feature konverziónál az egyszerűsítést ki kell kapcsolni hidrológiai elemzéshez.",
+    "correct": "true",
+    "explanation": "A vektoros vonalaknak pontosan meg kell felelniük a raszternek.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EU Víz Keretirányelv kontextusában Magyarország a Duna Vízgyűjtő-kerületbe tartozik.",
+    "correct": "true",
+    "explanation": "Az egész ország.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 2,0 km⁻¹ lecsapolási sűrűség 250 m átlagos lejtőhosszat jelent.",
+    "correct": "true",
+    "explanation": "B = 1/(2×2,0) = 250 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GloFAS-t a Copernicus/ECMWF működteti.",
+    "correct": "true",
+    "explanation": "Az EFAS globális kiterjesztése.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők összevonhatók bármilyen kívánt szintre.",
+    "correct": "true",
+    "explanation": "Az atomok, amelyekből alvízgyűjtők és vízgyűjtők épülnek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-ből levezetett hálózat mindig jobb, mint a kartográfiai.",
+    "correct": "false",
+    "explanation": "Sík terepen a kartográfiai megbízhatóbb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba automatizálható.",
+    "correct": "true",
+    "explanation": "A TauDEM Peuker-Douglas Stream Definition automatizálja.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Sajó vízgyűjtőjében a sík alföldi területek nem igényelnek vízfolyás-beégetést.",
+    "correct": "false",
+    "explanation": "A sík területek kifejezetten megkövetelik a beégetést.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus DEM zökkenőmentesen lefedi a magyar-szlovák határt.",
+    "correct": "true",
+    "explanation": "Nem kötődik nemzeti határokhoz.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-alapú lehatárolás mindig csalhatatlan.",
+    "correct": "false",
+    "explanation": "Sík, mérnöki terepen kiegészítő adatok kellenek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás determinisztikus.",
+    "correct": "true",
+    "explanation": "Ugyanaz a bemenet mindig ugyanazokat a részvízgyűjtőket eredményezi.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS Online Watershed eszköz alkalmas mérnöki tervezéshez.",
+    "correct": "false",
+    "explanation": "Közelítő, nem elég pontos mérnöki munkához.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS-t Bernhard Lehner fejlesztette ki.",
+    "correct": "true",
+    "explanation": "McGill Egyetem.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség a küszöbérték hatványfüggvénye.",
+    "correct": "true",
+    "explanation": "~-0,5 kitevővel dupla log ábrán.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Peuker-Douglas völgycellák összefüggő mintázatot adnak.",
+    "correct": "false",
+    "explanation": "Nem összefüggőek; a felhalmozódás köti össze őket.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés teszt objektív módszer a küszöb megválasztására.",
+    "correct": "true",
+    "explanation": "Statisztikai kritérium, nem vizuális vagy önkényes.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Strahler-rend növekedése exponenciálisan csökkenti a vízfolyások számát.",
+    "correct": "true",
+    "explanation": "R_b ≈ 3-5: minden rend ~3-5-ször kevesebb vízfolyás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-határeltérések jellemzően 5% alatti területeltérést okoznak.",
+    "correct": "true",
+    "explanation": "A legtöbb hidrológiai alkalmazáshoz elfogadható.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HYDROINFO rendszer 98 szelvényre ad magyar előrejelzéseket.",
+    "correct": "true",
+    "explanation": "Duna, Tisza, Dráva-Mura rendszerek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő és az alvízgyűjtő azonos fogalmak.",
+    "correct": "false",
+    "explanation": "Részvízgyűjtő = egyetlen szakaszhoz. Alvízgyűjtő = több részvízgyűjtőből.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az NHDPlus felépítése mintegy 20 évet ölelt fel.",
+    "correct": "true",
+    "explanation": "Több adatállomány integrálása évtizedeken át.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lejtés-terület (S-A) inflexiós pont a mederképződési küszöböt jelöli.",
+    "correct": "true",
+    "explanation": "Lejtői → medri viselkedés átmenet.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 12. fejezet Python-szkripteléssel automatizálja a lehatárolási munkafolyamatot.",
+    "correct": "true",
+    "explanation": "Megismételhető, skálázható szkriptek.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az OVF hálózata tartalmazza a mesterséges csatornákat is.",
+    "correct": "true",
+    "explanation": "Öntöző- és belvízcsatornák, amelyeket a DEM nem detektál.",
+    "type": "true_false"
+  },
+  {
+    "question": "A felhőalapú vízgyűjtő-lehatárolás helyettesíti a módszertani megértést.",
+    "correct": "false",
+    "explanation": "'A felhő gyorsaságot nyújt; a megértés minőséget.'",
+    "type": "true_false"
+  },
+  {
+    "question": "A konkavitási index θ jellemzően 0,5 körüli.",
+    "correct": "true",
+    "explanation": "Fluviális medrekben S ∝ A^(-0,5).",
+    "type": "true_false"
+  },
+  {
+    "question": "A Logan-folyó esettanulmány TauDEM eszközöket használ.",
+    "correct": "true",
+    "explanation": "A TauDEM fejlesztési helyszíne.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás megenged területi kettős számolást.",
+    "correct": "false",
+    "explanation": "Megmaradás: az összterület pontosan egyenlő.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség képlete: D_d = ΣL / ________.",
+    "correct": "A",
+    "explanation": "Teljes vízgyűjtő terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az átlagos lejtőhossz: B = 1 / (2 × ________).",
+    "correct": "D_d",
+    "explanation": "Lecsapolási sűrűség.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés: Δz = z_forrás - z_________.",
+    "correct": "torkolat",
+    "explanation": "A Strahler-vízfolyás két vége.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba objektív küszöbe a legkisebb T, amelyre |t| < ________.",
+    "correct": "2",
+    "explanation": "~95% konfidenciaszint.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Peuker-Douglas algoritmus ________ × ________ ablakokat vizsgál.",
+    "correct": "2×2",
+    "explanation": "Négy szomszédos cella.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Strahler-rendszámozást ________ fejlesztette ki 1957-ben.",
+    "correct": "Arthur Strahler",
+    "explanation": "Strahler, 1957.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Két azonos n rendű vízfolyás találkozásakor az alvízi rend: ________.",
+    "correct": "n+1",
+    "explanation": "Azonos rend + 1.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A bifurkációs arány R_b = N_ω / ________.",
+    "correct": "N_(ω+1)",
+    "explanation": "Egymást követő rendek vízfolyásszámai.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő egyetlen ________-ba csapolódik közvetlenül.",
+    "correct": "vízfolyásszakaszba",
+    "explanation": "Egy-az-egyhez megfeleltetés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az NHDPlus ________ millió vízfolyásszakaszt tartalmaz.",
+    "correct": "2,7",
+    "explanation": "COMID-val.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az NHDPlus szakaszazonosítója: ________.",
+    "correct": "COMID",
+    "explanation": "Common Identifier.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EU-Hydro az ________ szolgáltatás terméke.",
+    "correct": "Copernicus Felszínmonitorozó",
+    "explanation": "Copernicus Land Monitoring Service.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS ________ hierarchikus szintű.",
+    "correct": "12",
+    "explanation": "Kontinentálistól kis részvízgyűjtőig.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A kifolyási pont illesztés angol neve: ________ snapping.",
+    "correct": "pour point",
+    "explanation": "Pour point snapping / Snap Pour Point.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Logan-folyó vízgyűjtő területe ≈ ________ km².",
+    "correct": "554",
+    "explanation": "USGS 10109000 állomás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó ________-ban ered.",
+    "correct": "Szlovákiában",
+    "explanation": "Szlovák neve: Slaná.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó a ________-ba torkollik.",
+    "correct": "Tiszába",
+    "explanation": "Tiszaújvárosnál.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A magyar topográfiai vetület EPSG kódja: ________.",
+    "correct": "23700",
+    "explanation": "HD72/EOV.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM meteorológiai bemenete: ________.",
+    "correct": "HRRR",
+    "explanation": "High-Resolution Rapid Refresh.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EFAS hidrológiai modellje: ________.",
+    "correct": "LISFLOOD",
+    "explanation": "Elosztott modell.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM medri modellje: ________.",
+    "correct": "RAPID",
+    "explanation": "Routing Application for Parallel computation of Discharge.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EFAS ________ tagú együttes előrejelzést használ.",
+    "correct": "51",
+    "explanation": "ECMWF ENS.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás ________-szerű (tesszálció).",
+    "correct": "mozaik",
+    "explanation": "Nem átfedő poligonok.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell egyedi azonosítója: ________.",
+    "correct": "HydroID",
+    "explanation": "Maidment (2002).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Montgomery-Dietrich küszöb: A × S^________.",
+    "correct": "n",
+    "explanation": "Jellemzően n ≈ 2.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Stream Link eszköz egyedi ________-t rendel a szakaszokhoz.",
+    "correct": "azonosítót",
+    "explanation": "Szegmentálás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Horton-törvények ________ szabályosságok.",
+    "correct": "statisztikai",
+    "explanation": "Nem pontos törvények.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A lecsapolási sűrűség mértékegysége: ________.",
+    "correct": "km⁻¹",
+    "explanation": "km/km².",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba az ________ esés tulajdonságra épül.",
+    "correct": "állandó",
+    "explanation": "Broscoe, 1959.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Peuker-Douglas módszer ________ változó lecsapolási sűrűséget eredményez.",
+    "correct": "térben",
+    "explanation": "A helyi terephez igazodik.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS-ben a részvízgyűjtő-lehatárolás eszköze: ________.",
+    "correct": "Watershed",
+    "explanation": "Watershed tool.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM integrált eszköze: Stream Reach and ________.",
+    "correct": "Watershed",
+    "explanation": "Egyszerre hálózat és részvízgyűjtő.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A DEM-határeltérés jellemzően ________% alatti területeltérést okoz.",
+    "correct": "5",
+    "explanation": "A legtöbb alkalmazáshoz elfogadható.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A karsztos terepen a topográfiai vízgyűjtő ________ a hidrológiaitól.",
+    "correct": "különbözhet",
+    "explanation": "Felszín alatti folyamatok miatt.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GloFAS felbontása ≈ ________ km.",
+    "correct": "5",
+    "explanation": "0,05 fokos felbontás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A konkavitási index θ jellemzően ________ körüli.",
+    "correct": "0,5",
+    "explanation": "Fluviális medrek.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó magyar vízgyűjtőjének területe ≈ ________ km².",
+    "correct": "12 700",
+    "explanation": "Határmenti részt is beleértve.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM előtt vízhozam-előrejelzések ~________ vízmérce-helyszínen voltak.",
+    "correct": "4 000",
+    "explanation": "USGS állomások.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Sík terepen a DEM-alapú lehatároláshoz ________ szükséges.",
+    "correct": "vízfolyás-beégetés",
+    "explanation": "Az áramlásvezetés megbízhatatlan nélküle.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Tisza vízfolyásrendje ≈ ________.",
+    "correct": "8",
+    "explanation": "A Dunába torkollásnál.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A területarány R_A jellemzően ≈ R_L ________.",
+    "correct": "²",
+    "explanation": "R_A ≈ R_L², dimenzionális összefüggés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás ________ tulajdonságú (nincs kettős számolás).",
+    "correct": "megmaradás",
+    "explanation": "Σ részvízgyűjtő-terület = teljes medenceterület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A magyar ALADIN modellt az ________ üzemelteti.",
+    "correct": "OMSZ (HungaroMet)",
+    "explanation": "Magyar meteorológiai szolgálat.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Logan-folyó medencéje ________-rendű.",
+    "correct": "negyedrendű",
+    "explanation": "4th order.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Peter Sinks a Logan-folyó vízgyűjtőjén ________ m mély karsztos mélyedés.",
+    "correct": "62",
+    "explanation": "USA rekord hideg.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A 30 m-es NED RMSE ≈ ________ m.",
+    "correct": "2,34",
+    "explanation": "Vertikális pontosság.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A DEM-ből levezetett hálózat előnye a fizikai ________.",
+    "correct": "konzisztencia",
+    "explanation": "Minden cella kapcsolódik a hálózathoz.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A kartográfiai hálózat előnye a helyzeti ________.",
+    "correct": "pontosság",
+    "explanation": "Ott van, ahol a víz ténylegesen folyik.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az NHDPlus felépítéséhez ≈ ________ évre volt szükség.",
+    "correct": "20",
+    "explanation": "Két évtizedes fejlesztés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés teszt példában az objektív küszöb T = ________ cella volt.",
+    "correct": "200",
+    "explanation": "|t| < 2 először itt teljesült.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A HydroSHEDS HydroRIVERS > ________ millió szakaszt tartalmaz.",
+    "correct": "8",
+    "explanation": "Globális vízfolyáshálózat.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő, alvízgyűjtő és vízgyűjtő ________-t alkot.",
+    "correct": "hierarchiát",
+    "explanation": "Atomi → molekuláris felépítés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A rácsazonosító három ________-t kapcsol össze.",
+    "correct": "elemosztályt",
+    "explanation": "Vízfolyás, részvízgyűjtő, pont.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az Aggteleki-karszt ________ Világörökség.",
+    "correct": "UNESCO",
+    "explanation": "A világ természeti öröksége.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A lecsapolási sűrűség és a küszöbérték között ________-függvény áll fenn.",
+    "correct": "hatvány",
+    "explanation": "D_d ∝ T^(-0,5).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A HYDROINFO rendszer ________ szelvényre ad előrejelzést.",
+    "correct": "98",
+    "explanation": "Duna, Tisza, Dráva-Mura.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő-poligonok ________-konverzióval készülnek a raszterből.",
+    "correct": "Raster to Polygon",
+    "explanation": "Standard konverzió.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A mederképződési küszöb angol neve: channelization ________.",
+    "correct": "threshold",
+    "explanation": "Mederképződési küszöb.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Ismertesse az állandó forrásfelület módszert és a küszöbérték hatását a vízfolyáshálózat sűrűségére!",
+    "explanation": "A(c)>=T cellák = vízfolyás. Alacsony T: sűrű, magas T: ritka. A lecsapolási sűrűség T hatványfüggvénye.",
+    "type": "essay"
+  },
+  {
+    "question": "Miért fontos a küszöbérték a hidrológiai modellezésben?",
+    "explanation": "Meghatározza a lejtő- és mederfolyamatok közötti határt. T túl nagy: késői csúcs. T túl kicsi: túlbecsült csúcs.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a lecsapolási sűrűség fogalmát és kapcsolatát a lejtőhosszal!",
+    "explanation": "D_d = ΣL/A (km⁻¹). B = 1/(2D_d). Befolyásolja az utazási időt és a hidrográf alakját.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a vízfolyás-esés t-próba elvét és végrehajtását!",
+    "explanation": "Állandó esés tulajdonság: Δz átlag azonos minden rendnél. Jelölt T-k tesztelése, kétmintás t-próba, |t|<2 → objektív küszöb.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Peuker-Douglas algoritmus működését!",
+    "explanation": "2×2 ablak: legmagasabb = nem-völgy. Maradék = völgycella. Völgycellák súlyozott felhalmozódása → térben változó sűrűség.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a Strahler-rendszámozás három szabályát!",
+    "explanation": "1) Mellékág nélküli = 1. 2) Azonos n + n → n+1. 3) Különböző → nagyobb marad.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Horton-törvényeket (bifurkáció, hossz, terület, lejtés)!",
+    "explanation": "R_b=N_ω/N_(ω+1)≈3-5. R_L=L̄_(ω+1)/L̄_ω≈1,5-3,5. R_A≈3-6. R_S≈1,5-3.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan történik a részvízgyűjtő-lehatárolás?",
+    "explanation": "Minden nem-vízfolyás cellából D8 irányokat követve a legközelebbi vízfolyáscellához. A cella annak a szakasznak a részvízgyűjtőjébe kerül.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a kifolyási pont illesztés szükségességét és módszerét!",
+    "explanation": "Koordináta-bizonytalanság (DEM felbontás, vetületi hiba, GPS). Illesztés: legközelebbi vízfolyáscellára, keresési sugáron belül.",
+    "type": "essay"
+  },
+  {
+    "question": "Hasonlítsa össze az NHDPlus, EU-Hydro és HydroSHEDS adatállományokat!",
+    "explanation": "NHDPlus: USA, 2,7M szakasz. EU-Hydro: EGT, ~500k. HydroSHEDS: globális, 8M+. Mindegyik ingyenes.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Logan-folyó vízgyűjtő feldolgozási munkafolyamatot!",
+    "explanation": "DEM letöltés → süllyedékfeltöltés → D8 irány → felhalmozódás → kifolyás illesztés → Peuker-Douglas teszt → hálózat + részvízgyűjtők.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen különbségek vannak a Sajó és a Logan-folyó feldolgozásában?",
+    "explanation": "Sajó: határmenti, sík terep, mesterséges csatornák, EOV koordináta, beégetés szükséges. Logan: meredek, jól definiált, UTM.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a karsztos terep hatása a vízgyűjtő-lehatárolásra?",
+    "explanation": "Topográfiai ≠ hidrológiai vízgyűjtő. Víznyelők, felszín alatti járatok, források. Nyomjelző vizsgálat szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Nemzeti Vízmodell (NWM)?",
+    "explanation": "HRRR csapadék → Noah-MP lefolyás → NHDPlus részvízgyűjtők → RAPID medri transzformáció → 2,7M pont vízhozam.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az EFAS működési elvét!",
+    "explanation": "ECMWF csapadék → LISFLOOD → páneurópai hálózat. 51 tagú együttes → valószínűségi árvíz-előrejelzés.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az ArcGIS Online Watershed eszköz előnye és korlátja?",
+    "explanation": "Előny: azonnali, globális, nincs helyi feldolgozás. Korlát: rögzített felbontás, nincs paraméter-kontroll, ESRI-függőség.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a részvízgyűjtő-felosztás matematikai tulajdonságait!",
+    "explanation": "Megmaradás, összekötöttség (fastruktúra), skálázhatóság (összevonás), egyértelműség (determinisztikus).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan validáljuk a DEM-ből levezetett hálózatot?",
+    "explanation": "Területellenőrzés, vizuális, Horton-arányok, lecsapolási sűrűség, összekötöttség, határösszehasonlítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség a részvízgyűjtő, alvízgyűjtő és vízgyűjtő között?",
+    "explanation": "Részvízgyűjtő: 1 szakasz. Alvízgyűjtő: több részvízgyűjtő, kijelölt pontig. Vízgyűjtő: teljes terület a fő kifolyásig.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a lejtés-terület skálázási összefüggést!",
+    "explanation": "S ∝ A^(-θ), θ ≈ 0,5. Inflexiós pont = mederképződési küszöb. A teszt és az S-A diagram kiegészítik egymást.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kapcsolódik a részvízgyűjtő-felosztás az elosztott hidrológiai modellezéshez?",
+    "explanation": "Minden részvízgyűjtő modellelem: csapadékot kap, lefolyást generál, vízfolyásba juttatja. A hálózat alvíz felé vezeti.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a mesterséges csatornák hatása a magyar DEM-alapú lehatárolásra?",
+    "explanation": "A csatornák nem topográfiai gradienseket követnek. DEM nem detektálja. OVF-hálózat beégetése vagy elfogadás szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a felhőalapú vízgyűjtő-lehatárolási trendeket!",
+    "explanation": "ArcGIS Online, Google Earth Engine, MS Planetary Computer. Előre feldolgozott globális DEM → API hívás. Módszertani megértés kockázata.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan hat a DEM felbontása a vízgyűjtőhatárok pontosságára?",
+    "explanation": "Finomabb felbontás: pontosabb határok. De a gerincvonalaknál a zajszint miatt mindig van bizonytalanság.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a szoftver-mint-szolgáltatás (SaaS) trendet a térinformatikában!",
+    "explanation": "Az asztali feldolgozásról felhőfeldolgozásra való átmenet. Előny: sebesség, globális lefedettség. Kockázat: módszertani megértés elvesztése.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a vízfolyás-esés t-próba és a Peuker-Douglas módszer kombinált alkalmazásának előnye?",
+    "explanation": "A PD térbeli változókosságot biztosít, a t-próba objektív küszöböt. TauDEM-ben automatizált.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható a vízgyűjtő-lehatárolás a vízminőség-értékelésben?",
+    "explanation": "A részvízgyűjtők az NHDPlus COMID-n keresztül összekapcsolhatók vízminőségi mérésekkel. TMDL számítások területi alapja.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a részvízgyűjtő-felosztás szerepe az árvíz-előrejelzésben?",
+    "explanation": "A meteorológiai kényszerítést részvízgyűjtőkre osztjuk, lefolyást generálunk, és a hálózaton végigvezetjük. Az NWM és EFAS erre épül.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a HD72/EOV és ETRS89 közötti átszámítás gyakorlati kihívásait!",
+    "explanation": "7-paraméteres Helmert, méter alatti pontossághoz grid shift fájl. Az EOV koordinátatengely-felcímkézés gyakran hibás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a DEM-kondicionálásnál a vízfolyás-beégetés?",
+    "explanation": "Ismert vízfolyásvonalak DEM-be égetése: a vízfolyás celláinak magasságát csökkentik, kényszerítve az áramlást az ismert mederpozíciók követésére.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a Strahler-rend és az áramlás-felhalmozódás között?",
+    "explanation": "A felhalmozódás monoton nő alvíz felé. A Strahler-rend az elágazási komplexitást jelzi. A kettő kiegészíti egymást a hálózat jellemzésében.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a vízfolyásszakaszok attribútumait a vektoros kimeneti elemosztályban!",
+    "explanation": "Rácsazonosító, alakhossz, felvízi/alvízi ID, vízgyűjtő terület, Strahler-rend, esés, lejtés, kifolyásig távolság.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan használható a bifurkációs arány minőség-ellenőrzésre?",
+    "explanation": "Ha R_b kívül esik a 3-5 tartományon, problémát jelez a DEM-mel, küszöbbel vagy algoritmussal.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a veszteséges vízfolyások hatása, és hogyan kezelhető?",
+    "explanation": "A víz elvész a mederből a felszín alá. A DEM-ből levezetett terület túlbecsül. Korrekció: forrásvízhozam-adatok, geológiai térképezés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a városi területek DEM-alapú lehatárolási problémáit!",
+    "explanation": "Csapadékvíz-csatornák megkerülik a topográfiát. A DEM a beépítés előtti állapotot tükrözi. Mérnöki nyilvántartásokkal validálni kell.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a részvízgyűjtő-felosztás és az EU Víz Keretirányelv kapcsolata?",
+    "explanation": "Vízgyűjtő-kerületek → víztestek → részvízgyűjtők. A VKI jelentési struktúrája a hidrológiai hierarchiára épül.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan járul hozzá a 12. fejezet automatizálása a 11. fejezet munkafolyamatainak skálázásához?",
+    "explanation": "Python szkriptekkel a kézi munkafolyamat ezer vízgyűjtőre skálázható, reprodukálhatóan és felügyelet nélkül.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szempontokat kell figyelembe venni a Sajó vízgyűjtő-lehatárolásánál?",
+    "explanation": "Határmenti DEM (Copernicus), EOV koordináta, sík terep beégetés, mesterséges csatornák, OVF validáció.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az NHDPlus felépítésének kihívásait!",
+    "explanation": "Különböző felbontások (30m DEM, változó hidrográfia), korszakok (évtizedes térképek), módszerek (automatikus vs kézi) egyeztetése.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Peuker-Douglas módszer előnye az állandó küszöbértékkel szemben?",
+    "explanation": "Térben változó sűrűség: sűrűbb hegyen, ritkább síkon. Egyetlen globális küszöb a helyi terephez igazodik.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan hat a területhasználati változás a részvízgyűjtő-szintű vízmérlegre?",
+    "explanation": "Urbanizáció: több burkolt felszín → több lefolyás. Erdőirtás: kevesebb intercepció. A részvízgyűjtő-szintű elemzés feltárja a térbeli hatásokat.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a GloFAS szerepét adatszegény régiókban!",
+    "explanation": "Globális lefedettség, ingyenes, 5 km felbontás. Árvízfigyelés és figyelmeztetés ott is, ahol nemzeti rendszer nincs.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Copernicus DEM szerepe a magyar hidrológiai elemzésben?",
+    "explanation": "GLO-30: ingyenes, gyors. EEA-10: részletesebb. Határmenti tanulmányokhoz a Copernicus a természetes választás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a részvízgyűjtő-lehatárolás minőségellenőrzése?",
+    "explanation": "6 pontos ellenőrzési lista: terület, vizuális, Horton, sűrűség, összekötöttség, határ.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a forrásfelület-küszöbérték és a hidrográf csúcsideje között?",
+    "explanation": "T nagy → hosszú lejtői utazási idő → késői csúcs. T kicsi → rövid idő → korai, nagy csúcs.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a matematikai fraktál-jelleget a Horton-törvényekben!",
+    "explanation": "Az arányok állandóságga fraktálszerű önhasonlóságot jelent: a hálózat minden léptékben hasonló mintázatot mutat.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a RAPID medri transzformáció az NWM-ben?",
+    "explanation": "Az NHDPlus hálózaton vezeti az áramlást alvíz felé, minden szakaszon vízhozamot számítva párhuzamos feldolgozással.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a DEM-levezetett és a kialakult hálózatok közötti eltérések okai?",
+    "explanation": "Felbontáskülönbség, sík terep bizonytalanság, mesterséges beavatkozások, kartográfiai vs automatikus módszerek.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az állandó forrásfelület módszer lényege? (v73)",
+    "options": [
+      "A) A küszöbnél nagyobb felhalmozódású cellák vízfolyáscellák",
+      "B) A legmélyebb cellák vízfolyáscellák",
+      "C) A lejtés alapján határozzuk meg",
+      "D) A szélességi fok alapján"
+    ],
+    "correct": "A",
+    "explanation": "Vízfolyás(c) = 1, ha A(c) >= T.",
+    "type": "mcq"
+  },
+  {
+    "question": "A lecsapolási sűrűség képlete? (v74)",
+    "options": [
+      "A) D_d = ΣL × A",
+      "B) D_d = ΣL / A",
+      "C) D_d = A / ΣL",
+      "D) D_d = ΣL + A"
+    ],
+    "correct": "B",
+    "explanation": "D_d = teljes vízfolyáshossz / teljes vízgyűjtő terület.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az átlagos lejtőhossz és a lecsapolási sűrűség közötti összefüggés? (v75)",
+    "options": [
+      "A) B = 2D_d",
+      "B) B = 1/(2D_d)",
+      "C) B = D_d²",
+      "D) B = √D_d"
+    ],
+    "correct": "B",
+    "explanation": "B = 1/(2D_d).",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki írta le az állandó vízfolyás-esés tulajdonságot? (v76)",
+    "options": [
+      "A) Tarboton",
+      "B) Broscoe (1959)",
+      "C) Horton",
+      "D) Montgomery"
+    ],
+    "correct": "B",
+    "explanation": "Broscoe 1959-ben figyelte meg.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a vízfolyás-esés (stream drop)? (v77)",
+    "options": [
+      "A) A vízfolyás szélessége",
+      "B) Egy Strahler-vízfolyás felső és alsó vége közötti szintkülönbség",
+      "C) A csapadék mennyisége",
+      "D) A meder mélysége"
+    ],
+    "correct": "B",
+    "explanation": "Δz = z_forrás - z_torkolat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba objektív küszöbértéke milyen feltételt teljesít? (v78)",
+    "options": [
+      "A) |t| > 5",
+      "B) |t| < 2",
+      "C) t = 0",
+      "D) t > 10"
+    ],
+    "correct": "B",
+    "explanation": "A legkisebb T, amelyre |t| < 2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki publikálta a terület-lejtő küszöb módszert? (v79)",
+    "options": [
+      "A) Broscoe",
+      "B) Tarboton",
+      "C) Montgomery és Dietrich (1992)",
+      "D) Strahler"
+    ],
+    "correct": "C",
+    "explanation": "Montgomery & Dietrich, Science, 1992.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peuker-Douglas algoritmus mit azonosít? (v80)",
+    "options": [
+      "A) Gerincvonalakat",
+      "B) Völgycellák (felfelé görbülő cellák)",
+      "C) Csapadékzónákat",
+      "D) Szennyezésforrásokat"
+    ],
+    "correct": "B",
+    "explanation": "A 2×2 ablakban sosem legmagasabb cellák = völgycellák.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Peuker-Douglas 2×2 ablakban mit csinál a legmagasabb cellával? (v81)",
+    "options": [
+      "A) Vízfolyásnak jelöli",
+      "B) Megjelöletlenné (nem-völgy) teszi",
+      "C) Kitörli",
+      "D) Megduplázza"
+    ],
+    "correct": "B",
+    "explanation": "A legmagasabb cella megjelöletlen (nem-völgy) lesz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány Strahler-szabály van a vízfolyásrendszámozásban? (v82)",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": "B",
+    "explanation": "1) Mellékág nélküli = 1. rend. 2) Azonos rend találkozik → n+1. 3) Különböző → nagyobb marad.",
+    "type": "mcq"
+  },
+  {
+    "question": "Két másodrendű vízfolyás találkozásakor milyen rendű lesz az alvízi szakasz? (v83)",
+    "options": [
+      "A) Másodrendű",
+      "B) Harmadrendű",
+      "C) Negyedrendű",
+      "D) Elsőrendű"
+    ],
+    "correct": "B",
+    "explanation": "Azonos rendű (2+2) → 2+1 = 3.",
+    "type": "mcq"
+  },
+  {
+    "question": "Egy elsőrendű és egy másodrendű vízfolyás találkozásakor? (v84)",
+    "options": [
+      "A) Harmadrendű",
+      "B) Másodrendű",
+      "C) Elsőrendű",
+      "D) Negyedrendű"
+    ],
+    "correct": "B",
+    "explanation": "Különböző rendű → a nagyobb marad: 2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a bifurkációs arány jellemző tartománya? (v85)",
+    "options": [
+      "A) 1-2",
+      "B) 3-5",
+      "C) 10-20",
+      "D) 50-100"
+    ],
+    "correct": "B",
+    "explanation": "R_b jellemzően 3 és 5 közé esik.",
+    "type": "mcq"
+  },
+  {
+    "question": "A hosszarány (R_L) jellemző tartománya? (v86)",
+    "options": [
+      "A) 0,1-0,5",
+      "B) 1,5-3,5",
+      "C) 10-20",
+      "D) 100-200"
+    ],
+    "correct": "B",
+    "explanation": "R_L jellemzően 1,5 és 3,5 közé esik.",
+    "type": "mcq"
+  },
+  {
+    "question": "A részvízgyűjtő definíciója? (v87)",
+    "options": [
+      "A) A teljes medence",
+      "B) Egyetlen vízfolyásszakaszba közvetlenül csapolódó terület",
+      "C) A folyó torkolata",
+      "D) A gerincvonal"
+    ],
+    "correct": "B",
+    "explanation": "Közvetlenül egyetlen szakaszba csapolódik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az NHDPlus? (v88)",
+    "options": [
+      "A) Globális DEM",
+      "B) Előre kiszámított USA vízfolyáshálózat és részvízgyűjtő-adatállomány",
+      "C) Magyar vízmérce-hálózat",
+      "D) Csapadékadatbázis"
+    ],
+    "correct": "B",
+    "explanation": "2,7 millió szakasz, országosan konzisztens.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány vízfolyásszakaszt tartalmaz az NHDPlus? (v89)",
+    "options": [
+      "A) 270 000",
+      "B) 2,7 millió",
+      "C) 27 millió",
+      "D) 270"
+    ],
+    "correct": "B",
+    "explanation": "~2,7 millió COMID-val azonosított szakasz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az EU-Hydro forrása? (v90)",
+    "options": [
+      "A) Terepi felmérés",
+      "B) Sentinel-2 + EU-DEM + nemzeti adatok",
+      "C) LiDAR",
+      "D) Radar"
+    ],
+    "correct": "B",
+    "explanation": "Műholdkép + DEM + nemzeti térképészet kombinációja.",
+    "type": "mcq"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS hány hierarchikus szintet tartalmaz? (v91)",
+    "options": [
+      "A) 3",
+      "B) 7",
+      "C) 12",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "12 szintű hierarchia.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a kifolyási pont illesztés (pour point snapping)? (v92)",
+    "options": [
+      "A) A kifolyási pont törlése",
+      "B) Automatikus áthelyezés a legközelebbi vízfolyáscellára",
+      "C) Új kifolyási pont létrehozása",
+      "D) A DEM módosítása"
+    ],
+    "correct": "B",
+    "explanation": "A felhasználó által megadott pont áthelyezése a legközelebbi DEM-ből levezetett vízfolyás-cellára.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Logan-folyó vízgyűjtő területe körülbelül mekkora? (v93)",
+    "options": [
+      "A) 55 km²",
+      "B) 554 km²",
+      "C) 5540 km²",
+      "D) 55 400 km²"
+    ],
+    "correct": "B",
+    "explanation": "~554 km², USGS 10109000 állomás.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Sajó vízgyűjtő magyar része megközelítőleg mekkora? (v94)",
+    "options": [
+      "A) 1 270 km²",
+      "B) 12 700 km²",
+      "C) 127 000 km²",
+      "D) 127 km²"
+    ],
+    "correct": "B",
+    "explanation": "~12 700 km² (határmenti részt is beleértve).",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen koordináta-rendszert használ a magyar topográfiai térképezés? (v95)",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV (EPSG:23700)",
+      "C) ETRS89/LAEA",
+      "D) Web Mercator"
+    ],
+    "correct": "B",
+    "explanation": "HD72/EOV a magyar nemzeti vetület.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Nemzeti Vízmodell (NWM) hány előrejelzési pontra ad vízhozam-előrejelzést? (v96)",
+    "options": [
+      "A) 4 000",
+      "B) 27 000",
+      "C) 2,7 millió",
+      "D) 270 millió"
+    ],
+    "correct": "C",
+    "explanation": "2,7 millió NHDPlus-szakasz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az EFAS hidrológiai modellje? (v97)",
+    "options": [
+      "A) HEC-RAS",
+      "B) LISFLOOD",
+      "C) SWMM",
+      "D) MODFLOW"
+    ],
+    "correct": "B",
+    "explanation": "A LISFLOOD elosztott hidrológiai modell.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az EFAS milyen típusú előrejelzést hangsúlyoz? (v98)",
+    "options": [
+      "A) Determinisztikus",
+      "B) Együttes (ensemble)",
+      "C) Klimatológiai",
+      "D) Statisztikai"
+    ],
+    "correct": "B",
+    "explanation": "51 tagú ECMWF együttes előrejelzés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a karsztos terep problémája a vízgyűjtő-lehatárolásban? (v99)",
+    "options": [
+      "A) Túl meredek",
+      "B) A víz felszín alatt folyik, más vízgyűjtőben bukkan fel",
+      "C) Túl lapos",
+      "D) Nincs DEM"
+    ],
+    "correct": "B",
+    "explanation": "Víznyelők és források más felszíni vízgyűjtőben.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell mit biztosít? (v100)",
+    "options": [
+      "A) Csapadékmérő adatokat",
+      "B) Univerzális azonosítórendszert (HydroID) vízfolyás-részvízgyűjtő-pont kapcsolathoz",
+      "C) Hőmérsékleti előrejelzést",
+      "D) Talajminták adatbázisát"
+    ],
+    "correct": "B",
+    "explanation": "HydroID: egyedi azonosítók az összes elemosztályon keresztül.",
+    "type": "mcq"
+  },
+  {
+    "question": "A küszöbérték választása a vízfolyás-meghatározásnál kozmetikai döntés. (v50)",
+    "correct": "false",
+    "explanation": "Modellezési döntés, hatással van a vízhozam-becslésre és időzítésre.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség mértékegysége km⁻¹. (v51)",
+    "correct": "true",
+    "explanation": "km vízfolyáshossz / km² terület = km⁻¹.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Strahler-rendszámozást Arthur Strahler fejlesztette ki 1957-ben. (v52)",
+    "correct": "true",
+    "explanation": "Strahler, 1957.",
+    "type": "true_false"
+  },
+  {
+    "question": "Két különböző rendű vízfolyás találkozásakor a rend eggyel nő. (v53)",
+    "correct": "false",
+    "explanation": "A magasabb rend marad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A bifurkációs arány jellemzően 3 és 5 közé esik. (v54)",
+    "correct": "true",
+    "explanation": "Természetes vízgyűjtőkre R_b = 3-5.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők átfedő poligonokat alkotnak. (v55)",
+    "correct": "false",
+    "explanation": "Nem átfedő, teljes felosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az NHDPlus 2,7 millió vízfolyásszakaszt tartalmaz. (v56)",
+    "correct": "true",
+    "explanation": "COMID-val azonosítva.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS 12 hierarchikus szintű. (v57)",
+    "correct": "true",
+    "explanation": "Kontinentálistól kis forrásvízi részvízgyűjtőig.",
+    "type": "true_false"
+  },
+  {
+    "question": "A kifolyási pont illesztés szükségtelen, ha a koordináták pontosak. (v58)",
+    "correct": "false",
+    "explanation": "A DEM felbontása miatt szinte mindig szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell az NHDPlus és a Nemzeti Vízmodell alapja. (v59)",
+    "correct": "true",
+    "explanation": "Maidment (2002) formalizálta.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Peuker-Douglas módszer állandó lecsapolási sűrűséget eredményez. (v60)",
+    "correct": "false",
+    "explanation": "Térben változó sűrűséget ad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba az állandó esés tulajdonságra épül. (v61)",
+    "correct": "true",
+    "explanation": "Broscoe (1959) megfigyelésére.",
+    "type": "true_false"
+  },
+  {
+    "question": "Montgomery és Dietrich az A×Sⁿ küszöb módszert publikálta. (v62)",
+    "correct": "true",
+    "explanation": "Science, 1992.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Logan-folyó Utah-ban van. (v63)",
+    "correct": "true",
+    "explanation": "Utah északi része.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Sajó a Dunába torkollik. (v64)",
+    "correct": "false",
+    "explanation": "A Tiszába torkollik Tiszaújvárosnál.",
+    "type": "true_false"
+  },
+  {
+    "question": "A karsztos terep problémamentes a DEM-alapú lehatárolásban. (v65)",
+    "correct": "false",
+    "explanation": "Víznyelők és források megkerülik a felszíni topográfiát.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EFAS 51 tagú együttes előrejelzést használ. (v66)",
+    "correct": "true",
+    "explanation": "ECMWF ENS.",
+    "type": "true_false"
+  },
+  {
+    "question": "A National Water Model óránkénti frissítéssel dolgozik. (v67)",
+    "correct": "true",
+    "explanation": "Óránkénti vízhozam-előrejelzések.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők az elosztott hidrológiai modellezés természetes térbeli egységei. (v68)",
+    "correct": "true",
+    "explanation": "A vízmozgás fizikai topológiáját tiszteletben tartják.",
+    "type": "true_false"
+  },
+  {
+    "question": "A városi csapadékvíz-csatornák nem befolyásolják a DEM-alapú lehatárolást. (v69)",
+    "correct": "false",
+    "explanation": "Teljesen megkerülik a felszíni topográfiát.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Horton-törvények pontos matematikai egyenletek. (v70)",
+    "correct": "false",
+    "explanation": "Statisztikai tendenciák.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Stream to Feature konverziónál az egyszerűsítést ki kell kapcsolni hidrológiai elemzéshez. (v71)",
+    "correct": "true",
+    "explanation": "A vektoros vonalaknak pontosan meg kell felelniük a raszternek.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EU Víz Keretirányelv kontextusában Magyarország a Duna Vízgyűjtő-kerületbe tartozik. (v72)",
+    "correct": "true",
+    "explanation": "Az egész ország.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 2,0 km⁻¹ lecsapolási sűrűség 250 m átlagos lejtőhosszat jelent. (v73)",
+    "correct": "true",
+    "explanation": "B = 1/(2×2,0) = 250 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "A GloFAS-t a Copernicus/ECMWF működteti. (v74)",
+    "correct": "true",
+    "explanation": "Az EFAS globális kiterjesztése.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtők összevonhatók bármilyen kívánt szintre. (v75)",
+    "correct": "true",
+    "explanation": "Az atomok, amelyekből alvízgyűjtők és vízgyűjtők épülnek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-ből levezetett hálózat mindig jobb, mint a kartográfiai. (v76)",
+    "correct": "false",
+    "explanation": "Sík terepen a kartográfiai megbízhatóbb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba automatizálható. (v77)",
+    "correct": "true",
+    "explanation": "A TauDEM Peuker-Douglas Stream Definition automatizálja.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Sajó vízgyűjtőjében a sík alföldi területek nem igényelnek vízfolyás-beégetést. (v78)",
+    "correct": "false",
+    "explanation": "A sík területek kifejezetten megkövetelik a beégetést.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Copernicus DEM zökkenőmentesen lefedi a magyar-szlovák határt. (v79)",
+    "correct": "true",
+    "explanation": "Nem kötődik nemzeti határokhoz.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-alapú lehatárolás mindig csalhatatlan. (v80)",
+    "correct": "false",
+    "explanation": "Sík, mérnöki terepen kiegészítő adatok kellenek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás determinisztikus. (v81)",
+    "correct": "true",
+    "explanation": "Ugyanaz a bemenet mindig ugyanazokat a részvízgyűjtőket eredményezi.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS Online Watershed eszköz alkalmas mérnöki tervezéshez. (v82)",
+    "correct": "false",
+    "explanation": "Közelítő, nem elég pontos mérnöki munkához.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS-t Bernhard Lehner fejlesztette ki. (v83)",
+    "correct": "true",
+    "explanation": "McGill Egyetem.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség a küszöbérték hatványfüggvénye. (v84)",
+    "correct": "true",
+    "explanation": "~-0,5 kitevővel dupla log ábrán.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Peuker-Douglas völgycellák összefüggő mintázatot adnak. (v85)",
+    "correct": "false",
+    "explanation": "Nem összefüggőek; a felhalmozódás köti össze őket.",
+    "type": "true_false"
+  },
+  {
+    "question": "A vízfolyás-esés teszt objektív módszer a küszöb megválasztására. (v86)",
+    "correct": "true",
+    "explanation": "Statisztikai kritérium, nem vizuális vagy önkényes.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Strahler-rend növekedése exponenciálisan csökkenti a vízfolyások számát. (v87)",
+    "correct": "true",
+    "explanation": "R_b ≈ 3-5: minden rend ~3-5-ször kevesebb vízfolyás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A DEM-határeltérések jellemzően 5% alatti területeltérést okoznak. (v88)",
+    "correct": "true",
+    "explanation": "A legtöbb hidrológiai alkalmazáshoz elfogadható.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HYDROINFO rendszer 98 szelvényre ad magyar előrejelzéseket. (v89)",
+    "correct": "true",
+    "explanation": "Duna, Tisza, Dráva-Mura rendszerek.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő és az alvízgyűjtő azonos fogalmak. (v90)",
+    "correct": "false",
+    "explanation": "Részvízgyűjtő = egyetlen szakaszhoz. Alvízgyűjtő = több részvízgyűjtőből.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az NHDPlus felépítése mintegy 20 évet ölelt fel. (v91)",
+    "correct": "true",
+    "explanation": "Több adatállomány integrálása évtizedeken át.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lejtés-terület (S-A) inflexiós pont a mederképződési küszöböt jelöli. (v92)",
+    "correct": "true",
+    "explanation": "Lejtői → medri viselkedés átmenet.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 12. fejezet Python-szkripteléssel automatizálja a lehatárolási munkafolyamatot. (v93)",
+    "correct": "true",
+    "explanation": "Megismételhető, skálázható szkriptek.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az OVF hálózata tartalmazza a mesterséges csatornákat is. (v94)",
+    "correct": "true",
+    "explanation": "Öntöző- és belvízcsatornák, amelyeket a DEM nem detektál.",
+    "type": "true_false"
+  },
+  {
+    "question": "A felhőalapú vízgyűjtő-lehatárolás helyettesíti a módszertani megértést. (v95)",
+    "correct": "false",
+    "explanation": "'A felhő gyorsaságot nyújt; a megértés minőséget.'",
+    "type": "true_false"
+  },
+  {
+    "question": "A konkavitási index θ jellemzően 0,5 körüli. (v96)",
+    "correct": "true",
+    "explanation": "Fluviális medrekben S ∝ A^(-0,5).",
+    "type": "true_false"
+  },
+  {
+    "question": "A Logan-folyó esettanulmány TauDEM eszközöket használ. (v97)",
+    "correct": "true",
+    "explanation": "A TauDEM fejlesztési helyszíne.",
+    "type": "true_false"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás megenged területi kettős számolást. (v98)",
+    "correct": "false",
+    "explanation": "Megmaradás: az összterület pontosan egyenlő.",
+    "type": "true_false"
+  },
+  {
+    "question": "A küszöbérték választása a vízfolyás-meghatározásnál kozmetikai döntés. (v99)",
+    "correct": "false",
+    "explanation": "Modellezési döntés, hatással van a vízhozam-becslésre és időzítésre.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség mértékegysége km⁻¹. (v100)",
+    "correct": "true",
+    "explanation": "km vízfolyáshossz / km² terület = km⁻¹.",
+    "type": "true_false"
+  },
+  {
+    "question": "A lecsapolási sűrűség képlete: D_d = ΣL / ________. (v59)",
+    "correct": "A",
+    "explanation": "Teljes vízgyűjtő terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az átlagos lejtőhossz: B = 1 / (2 × ________). (v60)",
+    "correct": "D_d",
+    "explanation": "Lecsapolási sűrűség.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés: Δz = z_forrás - z_________. (v61)",
+    "correct": "torkolat",
+    "explanation": "A Strahler-vízfolyás két vége.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba objektív küszöbe a legkisebb T, amelyre |t| < ________. (v62)",
+    "correct": "2",
+    "explanation": "~95% konfidenciaszint.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Peuker-Douglas algoritmus ________ × ________ ablakokat vizsgál. (v63)",
+    "correct": "2×2",
+    "explanation": "Négy szomszédos cella.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Strahler-rendszámozást ________ fejlesztette ki 1957-ben. (v64)",
+    "correct": "Arthur Strahler",
+    "explanation": "Strahler, 1957.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Két azonos n rendű vízfolyás találkozásakor az alvízi rend: ________. (v65)",
+    "correct": "n+1",
+    "explanation": "Azonos rend + 1.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A bifurkációs arány R_b = N_ω / ________. (v66)",
+    "correct": "N_(ω+1)",
+    "explanation": "Egymást követő rendek vízfolyásszámai.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő egyetlen ________-ba csapolódik közvetlenül. (v67)",
+    "correct": "vízfolyásszakaszba",
+    "explanation": "Egy-az-egyhez megfeleltetés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az NHDPlus ________ millió vízfolyásszakaszt tartalmaz. (v68)",
+    "correct": "2,7",
+    "explanation": "COMID-val.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az NHDPlus szakaszazonosítója: ________. (v69)",
+    "correct": "COMID",
+    "explanation": "Common Identifier.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EU-Hydro az ________ szolgáltatás terméke. (v70)",
+    "correct": "Copernicus Felszínmonitorozó",
+    "explanation": "Copernicus Land Monitoring Service.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A HydroSHEDS HydroBASINS ________ hierarchikus szintű. (v71)",
+    "correct": "12",
+    "explanation": "Kontinentálistól kis részvízgyűjtőig.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A kifolyási pont illesztés angol neve: ________ snapping. (v72)",
+    "correct": "pour point",
+    "explanation": "Pour point snapping / Snap Pour Point.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Logan-folyó vízgyűjtő területe ≈ ________ km². (v73)",
+    "correct": "554",
+    "explanation": "USGS 10109000 állomás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó ________-ban ered. (v74)",
+    "correct": "Szlovákiában",
+    "explanation": "Szlovák neve: Slaná.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó a ________-ba torkollik. (v75)",
+    "correct": "Tiszába",
+    "explanation": "Tiszaújvárosnál.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A magyar topográfiai vetület EPSG kódja: ________. (v76)",
+    "correct": "23700",
+    "explanation": "HD72/EOV.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM meteorológiai bemenete: ________. (v77)",
+    "correct": "HRRR",
+    "explanation": "High-Resolution Rapid Refresh.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EFAS hidrológiai modellje: ________. (v78)",
+    "correct": "LISFLOOD",
+    "explanation": "Elosztott modell.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM medri modellje: ________. (v79)",
+    "correct": "RAPID",
+    "explanation": "Routing Application for Parallel computation of Discharge.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EFAS ________ tagú együttes előrejelzést használ. (v80)",
+    "correct": "51",
+    "explanation": "ECMWF ENS.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás ________-szerű (tesszálció). (v81)",
+    "correct": "mozaik",
+    "explanation": "Nem átfedő poligonok.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az Arc Hydro adatmodell egyedi azonosítója: ________. (v82)",
+    "correct": "HydroID",
+    "explanation": "Maidment (2002).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Montgomery-Dietrich küszöb: A × S^________. (v83)",
+    "correct": "n",
+    "explanation": "Jellemzően n ≈ 2.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Stream Link eszköz egyedi ________-t rendel a szakaszokhoz. (v84)",
+    "correct": "azonosítót",
+    "explanation": "Szegmentálás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Horton-törvények ________ szabályosságok. (v85)",
+    "correct": "statisztikai",
+    "explanation": "Nem pontos törvények.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A lecsapolási sűrűség mértékegysége: ________. (v86)",
+    "correct": "km⁻¹",
+    "explanation": "km/km².",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A vízfolyás-esés t-próba az ________ esés tulajdonságra épül. (v87)",
+    "correct": "állandó",
+    "explanation": "Broscoe, 1959.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Peuker-Douglas módszer ________ változó lecsapolási sűrűséget eredményez. (v88)",
+    "correct": "térben",
+    "explanation": "A helyi terephez igazodik.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS-ben a részvízgyűjtő-lehatárolás eszköze: ________. (v89)",
+    "correct": "Watershed",
+    "explanation": "Watershed tool.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM integrált eszköze: Stream Reach and ________. (v90)",
+    "correct": "Watershed",
+    "explanation": "Egyszerre hálózat és részvízgyűjtő.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A DEM-határeltérés jellemzően ________% alatti területeltérést okoz. (v91)",
+    "correct": "5",
+    "explanation": "A legtöbb alkalmazáshoz elfogadható.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A karsztos terepen a topográfiai vízgyűjtő ________ a hidrológiaitól. (v92)",
+    "correct": "különbözhet",
+    "explanation": "Felszín alatti folyamatok miatt.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GloFAS felbontása ≈ ________ km. (v93)",
+    "correct": "5",
+    "explanation": "0,05 fokos felbontás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A konkavitási index θ jellemzően ________ körüli. (v94)",
+    "correct": "0,5",
+    "explanation": "Fluviális medrek.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Sajó magyar vízgyűjtőjének területe ≈ ________ km². (v95)",
+    "correct": "12 700",
+    "explanation": "Határmenti részt is beleértve.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NWM előtt vízhozam-előrejelzések ~________ vízmérce-helyszínen voltak. (v96)",
+    "correct": "4 000",
+    "explanation": "USGS állomások.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Sík terepen a DEM-alapú lehatároláshoz ________ szükséges. (v97)",
+    "correct": "vízfolyás-beégetés",
+    "explanation": "Az áramlásvezetés megbízhatatlan nélküle.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Tisza vízfolyásrendje ≈ ________. (v98)",
+    "correct": "8",
+    "explanation": "A Dunába torkollásnál.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A területarány R_A jellemzően ≈ R_L ________. (v99)",
+    "correct": "²",
+    "explanation": "R_A ≈ R_L², dimenzionális összefüggés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A részvízgyűjtő-felosztás ________ tulajdonságú (nincs kettős számolás). (v100)",
+    "correct": "megmaradás",
+    "explanation": "Σ részvízgyűjtő-terület = teljes medenceterület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Ismertesse az állandó forrásfelület módszert és a küszöbérték hatását a vízfolyáshálózat sűrűségére! (v49)",
+    "explanation": "A(c)>=T cellák = vízfolyás. Alacsony T: sűrű, magas T: ritka. A lecsapolási sűrűség T hatványfüggvénye.",
+    "type": "essay"
+  },
+  {
+    "question": "Miért fontos a küszöbérték a hidrológiai modellezésben? (v50)",
+    "explanation": "Meghatározza a lejtő- és mederfolyamatok közötti határt. T túl nagy: késői csúcs. T túl kicsi: túlbecsült csúcs.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a lecsapolási sűrűség fogalmát és kapcsolatát a lejtőhosszal! (v51)",
+    "explanation": "D_d = ΣL/A (km⁻¹). B = 1/(2D_d). Befolyásolja az utazási időt és a hidrográf alakját.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a vízfolyás-esés t-próba elvét és végrehajtását! (v52)",
+    "explanation": "Állandó esés tulajdonság: Δz átlag azonos minden rendnél. Jelölt T-k tesztelése, kétmintás t-próba, |t|<2 → objektív küszöb.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Peuker-Douglas algoritmus működését! (v53)",
+    "explanation": "2×2 ablak: legmagasabb = nem-völgy. Maradék = völgycella. Völgycellák súlyozott felhalmozódása → térben változó sűrűség.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a Strahler-rendszámozás három szabályát! (v54)",
+    "explanation": "1) Mellékág nélküli = 1. 2) Azonos n + n → n+1. 3) Különböző → nagyobb marad.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Horton-törvényeket (bifurkáció, hossz, terület, lejtés)! (v55)",
+    "explanation": "R_b=N_ω/N_(ω+1)≈3-5. R_L=L̄_(ω+1)/L̄_ω≈1,5-3,5. R_A≈3-6. R_S≈1,5-3.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan történik a részvízgyűjtő-lehatárolás? (v56)",
+    "explanation": "Minden nem-vízfolyás cellából D8 irányokat követve a legközelebbi vízfolyáscellához. A cella annak a szakasznak a részvízgyűjtőjébe kerül.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a kifolyási pont illesztés szükségességét és módszerét! (v57)",
+    "explanation": "Koordináta-bizonytalanság (DEM felbontás, vetületi hiba, GPS). Illesztés: legközelebbi vízfolyáscellára, keresési sugáron belül.",
+    "type": "essay"
+  },
+  {
+    "question": "Hasonlítsa össze az NHDPlus, EU-Hydro és HydroSHEDS adatállományokat! (v58)",
+    "explanation": "NHDPlus: USA, 2,7M szakasz. EU-Hydro: EGT, ~500k. HydroSHEDS: globális, 8M+. Mindegyik ingyenes.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Logan-folyó vízgyűjtő feldolgozási munkafolyamatot! (v59)",
+    "explanation": "DEM letöltés → süllyedékfeltöltés → D8 irány → felhalmozódás → kifolyás illesztés → Peuker-Douglas teszt → hálózat + részvízgyűjtők.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen különbségek vannak a Sajó és a Logan-folyó feldolgozásában? (v60)",
+    "explanation": "Sajó: határmenti, sík terep, mesterséges csatornák, EOV koordináta, beégetés szükséges. Logan: meredek, jól definiált, UTM.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a karsztos terep hatása a vízgyűjtő-lehatárolásra? (v61)",
+    "explanation": "Topográfiai ≠ hidrológiai vízgyűjtő. Víznyelők, felszín alatti járatok, források. Nyomjelző vizsgálat szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Nemzeti Vízmodell (NWM)? (v62)",
+    "explanation": "HRRR csapadék → Noah-MP lefolyás → NHDPlus részvízgyűjtők → RAPID medri transzformáció → 2,7M pont vízhozam.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az EFAS működési elvét! (v63)",
+    "explanation": "ECMWF csapadék → LISFLOOD → páneurópai hálózat. 51 tagú együttes → valószínűségi árvíz-előrejelzés.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az ArcGIS Online Watershed eszköz előnye és korlátja? (v64)",
+    "explanation": "Előny: azonnali, globális, nincs helyi feldolgozás. Korlát: rögzített felbontás, nincs paraméter-kontroll, ESRI-függőség.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a részvízgyűjtő-felosztás matematikai tulajdonságait! (v65)",
+    "explanation": "Megmaradás, összekötöttség (fastruktúra), skálázhatóság (összevonás), egyértelműség (determinisztikus).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan validáljuk a DEM-ből levezetett hálózatot? (v66)",
+    "explanation": "Területellenőrzés, vizuális, Horton-arányok, lecsapolási sűrűség, összekötöttség, határösszehasonlítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség a részvízgyűjtő, alvízgyűjtő és vízgyűjtő között? (v67)",
+    "explanation": "Részvízgyűjtő: 1 szakasz. Alvízgyűjtő: több részvízgyűjtő, kijelölt pontig. Vízgyűjtő: teljes terület a fő kifolyásig.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a lejtés-terület skálázási összefüggést! (v68)",
+    "explanation": "S ∝ A^(-θ), θ ≈ 0,5. Inflexiós pont = mederképződési küszöb. A teszt és az S-A diagram kiegészítik egymást.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kapcsolódik a részvízgyűjtő-felosztás az elosztott hidrológiai modellezéshez? (v69)",
+    "explanation": "Minden részvízgyűjtő modellelem: csapadékot kap, lefolyást generál, vízfolyásba juttatja. A hálózat alvíz felé vezeti.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a mesterséges csatornák hatása a magyar DEM-alapú lehatárolásra? (v70)",
+    "explanation": "A csatornák nem topográfiai gradienseket követnek. DEM nem detektálja. OVF-hálózat beégetése vagy elfogadás szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a felhőalapú vízgyűjtő-lehatárolási trendeket! (v71)",
+    "explanation": "ArcGIS Online, Google Earth Engine, MS Planetary Computer. Előre feldolgozott globális DEM → API hívás. Módszertani megértés kockázata.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan hat a DEM felbontása a vízgyűjtőhatárok pontosságára? (v72)",
+    "explanation": "Finomabb felbontás: pontosabb határok. De a gerincvonalaknál a zajszint miatt mindig van bizonytalanság.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a szoftver-mint-szolgáltatás (SaaS) trendet a térinformatikában! (v73)",
+    "explanation": "Az asztali feldolgozásról felhőfeldolgozásra való átmenet. Előny: sebesség, globális lefedettség. Kockázat: módszertani megértés elvesztése.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a vízfolyás-esés t-próba és a Peuker-Douglas módszer kombinált alkalmazásának előnye? (v74)",
+    "explanation": "A PD térbeli változókosságot biztosít, a t-próba objektív küszöböt. TauDEM-ben automatizált.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható a vízgyűjtő-lehatárolás a vízminőség-értékelésben? (v75)",
+    "explanation": "A részvízgyűjtők az NHDPlus COMID-n keresztül összekapcsolhatók vízminőségi mérésekkel. TMDL számítások területi alapja.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a részvízgyűjtő-felosztás szerepe az árvíz-előrejelzésben? (v76)",
+    "explanation": "A meteorológiai kényszerítést részvízgyűjtőkre osztjuk, lefolyást generálunk, és a hálózaton végigvezetjük. Az NWM és EFAS erre épül.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a HD72/EOV és ETRS89 közötti átszámítás gyakorlati kihívásait! (v77)",
+    "explanation": "7-paraméteres Helmert, méter alatti pontossághoz grid shift fájl. Az EOV koordinátatengely-felcímkézés gyakran hibás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a DEM-kondicionálásnál a vízfolyás-beégetés? (v78)",
+    "explanation": "Ismert vízfolyásvonalak DEM-be égetése: a vízfolyás celláinak magasságát csökkentik, kényszerítve az áramlást az ismert mederpozíciók követésére.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a Strahler-rend és az áramlás-felhalmozódás között? (v79)",
+    "explanation": "A felhalmozódás monoton nő alvíz felé. A Strahler-rend az elágazási komplexitást jelzi. A kettő kiegészíti egymást a hálózat jellemzésében.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a vízfolyásszakaszok attribútumait a vektoros kimeneti elemosztályban! (v80)",
+    "explanation": "Rácsazonosító, alakhossz, felvízi/alvízi ID, vízgyűjtő terület, Strahler-rend, esés, lejtés, kifolyásig távolság.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan használható a bifurkációs arány minőség-ellenőrzésre? (v81)",
+    "explanation": "Ha R_b kívül esik a 3-5 tartományon, problémát jelez a DEM-mel, küszöbbel vagy algoritmussal.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a veszteséges vízfolyások hatása, és hogyan kezelhető? (v82)",
+    "explanation": "A víz elvész a mederből a felszín alá. A DEM-ből levezetett terület túlbecsül. Korrekció: forrásvízhozam-adatok, geológiai térképezés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a városi területek DEM-alapú lehatárolási problémáit! (v83)",
+    "explanation": "Csapadékvíz-csatornák megkerülik a topográfiát. A DEM a beépítés előtti állapotot tükrözi. Mérnöki nyilvántartásokkal validálni kell.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a részvízgyűjtő-felosztás és az EU Víz Keretirányelv kapcsolata? (v84)",
+    "explanation": "Vízgyűjtő-kerületek → víztestek → részvízgyűjtők. A VKI jelentési struktúrája a hidrológiai hierarchiára épül.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan járul hozzá a 12. fejezet automatizálása a 11. fejezet munkafolyamatainak skálázásához? (v85)",
+    "explanation": "Python szkriptekkel a kézi munkafolyamat ezer vízgyűjtőre skálázható, reprodukálhatóan és felügyelet nélkül.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szempontokat kell figyelembe venni a Sajó vízgyűjtő-lehatárolásánál? (v86)",
+    "explanation": "Határmenti DEM (Copernicus), EOV koordináta, sík terep beégetés, mesterséges csatornák, OVF validáció.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az NHDPlus felépítésének kihívásait! (v87)",
+    "explanation": "Különböző felbontások (30m DEM, változó hidrográfia), korszakok (évtizedes térképek), módszerek (automatikus vs kézi) egyeztetése.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Peuker-Douglas módszer előnye az állandó küszöbértékkel szemben? (v88)",
+    "explanation": "Térben változó sűrűség: sűrűbb hegyen, ritkább síkon. Egyetlen globális küszöb a helyi terephez igazodik.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan hat a területhasználati változás a részvízgyűjtő-szintű vízmérlegre? (v89)",
+    "explanation": "Urbanizáció: több burkolt felszín → több lefolyás. Erdőirtás: kevesebb intercepció. A részvízgyűjtő-szintű elemzés feltárja a térbeli hatásokat.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a GloFAS szerepét adatszegény régiókban! (v90)",
+    "explanation": "Globális lefedettség, ingyenes, 5 km felbontás. Árvízfigyelés és figyelmeztetés ott is, ahol nemzeti rendszer nincs.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Copernicus DEM szerepe a magyar hidrológiai elemzésben? (v91)",
+    "explanation": "GLO-30: ingyenes, gyors. EEA-10: részletesebb. Határmenti tanulmányokhoz a Copernicus a természetes választás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a részvízgyűjtő-lehatárolás minőségellenőrzése? (v92)",
+    "explanation": "6 pontos ellenőrzési lista: terület, vizuális, Horton, sűrűség, összekötöttség, határ.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a forrásfelület-küszöbérték és a hidrográf csúcsideje között? (v93)",
+    "explanation": "T nagy → hosszú lejtői utazási idő → késői csúcs. T kicsi → rövid idő → korai, nagy csúcs.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a matematikai fraktál-jelleget a Horton-törvényekben! (v94)",
+    "explanation": "Az arányok állandóságga fraktálszerű önhasonlóságot jelent: a hálózat minden léptékben hasonló mintázatot mutat.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a RAPID medri transzformáció az NWM-ben? (v95)",
+    "explanation": "Az NHDPlus hálózaton vezeti az áramlást alvíz felé, minden szakaszon vízhozamot számítva párhuzamos feldolgozással.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi az összefüggés a DEM-levezetett és a kialakult hálózatok közötti eltérések okai? (v96)",
+    "explanation": "Felbontáskülönbség, sík terep bizonytalanság, mesterséges beavatkozások, kartográfiai vs automatikus módszerek.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az állandó forrásfelület módszert és a küszöbérték hatását a vízfolyáshálózat sűrűségére! (v97)",
+    "explanation": "A(c)>=T cellák = vízfolyás. Alacsony T: sűrű, magas T: ritka. A lecsapolási sűrűség T hatványfüggvénye.",
+    "type": "essay"
+  },
+  {
+    "question": "Miért fontos a küszöbérték a hidrológiai modellezésben? (v98)",
+    "explanation": "Meghatározza a lejtő- és mederfolyamatok közötti határt. T túl nagy: késői csúcs. T túl kicsi: túlbecsült csúcs.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a lecsapolási sűrűség fogalmát és kapcsolatát a lejtőhosszal! (v99)",
+    "explanation": "D_d = ΣL/A (km⁻¹). B = 1/(2D_d). Befolyásolja az utazási időt és a hidrográf alakját.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a vízfolyás-esés t-próba elvét és végrehajtását! (v100)",
+    "explanation": "Állandó esés tulajdonság: Δz átlag azonos minden rendnél. Jelölt T-k tesztelése, kétmintás t-próba, |t|<2 → objektív küszöb.",
+    "type": "essay"
+  }
+]

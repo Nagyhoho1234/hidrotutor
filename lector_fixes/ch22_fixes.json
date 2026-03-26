@@ -1,0 +1,526 @@
+{
+  "chapter": "ch22",
+  "total_issues": 65,
+  "fixes": [
+    {
+      "line_approx": 39,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Tekintsük a telített vízvezető képességet ($K_s$), amely az egyik legfontosabb paraméter minden beszivárgást leíró modellben.",
+      "suggested": "Tekintsük a telített hidraulikus vezetőképességet ($K_s$), amely az egyik legfontosabb paraméter minden beszivárgást leíró modellben.",
+      "reason": "A bevett magyar szakkifejezés a „telített hidraulikus vezetőképesség”; a „vízvezető képesség” itt terminológiailag pontatlan."
+    },
+    {
+      "line_approx": 43,
+      "category": "register",
+      "severity": "low",
+      "original": "Fogalmi mennyiségről van szó, amely csak a modellegyenletek és térbeli léptékük összefüggésében értelmezhető.",
+      "suggested": "Fogalmi mennyiségről van szó, amely csak a modellegyenletek és azok térbeli léptékének összefüggésében értelmezhető.",
+      "reason": "Az „és térbeli léptékük” szerkezet kissé nehézkes; az „azok térbeli léptékének” természetesebb tudományos próza."
+    },
+    {
+      "line_approx": 45,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezt a problémát -- a pontléptékű, mérhető tulajdonságok és a rácsléptékű effektív paraméterek közötti eltérést -- **felskálázási vagy léptékváltási problémának** (upscaling problem), illetve **támaszproblémának** vagy **a mintavételi támasz problémájának** (support problem) is nevezik.",
+      "suggested": "Ezt a problémát -- a pontléptékű, mérhető tulajdonságok és a rácsléptékű effektív paraméterek közötti eltérést -- **felskálázási vagy léptékváltási problémának** (upscaling problem), illetve **támaszproblémának** vagy **a mintavételi támasz problémájának** (support problem) nevezik.",
+      "reason": "Az „is nevezik” itt fölösleges, mert nincs korábbi alternatív megnevezéshez kapcsolva; a mondat feszesebb nélküle."
+    },
+    {
+      "line_approx": 52,
+      "category": "register",
+      "severity": "low",
+      "original": "A következtetés egyértelmű: még ha pontosan ismernénk is a vízmozgást szabályozó egyenleteket (márpedig nem ismerjük, hiszen minden modell egyszerűsítés), a paramétereket akkor is igazítanunk kellene ahhoz, hogy az egyenletek a modellezés léptékén működjenek.",
+      "suggested": "A következtetés egyértelmű: még ha pontosan ismernénk is a vízmozgást szabályozó egyenleteket (márpedig nem ismerjük őket, hiszen minden modell egyszerűsítés), a paramétereket akkor is igazítanunk kellene ahhoz, hogy az egyenletek a modellezés léptékén alkalmazhatók legyenek.",
+      "reason": "A „működjenek” itt kissé pongyola; az „alkalmazhatók legyenek” akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 58,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A másik oldalon pedig az azonosíthatóság korlátja -- az a követelmény, hogy a rendelkezésre álló adatokban legyen elegendő információ valamennyi paraméter értékének meghatározásához.",
+      "suggested": "A másik oldalon pedig az azonosíthatóság korlátja áll -- az a követelmény, hogy a rendelkezésre álló adatok elegendő információt tartalmazzanak valamennyi paraméter értékének meghatározásához.",
+      "reason": "Az eredeti mondat hiányos szerkezetű, az „adatokban legyen” megoldás pedig nehézkes; a javított változat magyarosabb és világosabb."
+    },
+    {
+      "line_approx": 72,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A kalibrációhoz a sikert is meg kell határozni -- szükség van egy mérőszámra, amely számszerűsíti, mennyire egyezik a modell kimenete a megfigyelt adatokkal.",
+      "suggested": "A kalibrációhoz azt is meg kell határozni, mit tekintünk sikernek -- szükség van egy mérőszámra, amely számszerűsíti, mennyire egyezik a modell kimenete a megfigyelt adatokkal.",
+      "reason": "A „a sikert meg kell határozni” angolos, tükörfordításízű; a „mit tekintünk sikernek” természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 90,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a bontás azért értékes, mert nemcsak azt mutatja meg a modellezőnek, hogy a modell nem tökéletes, hanem azt is, miben: az alacsony $r$ azt jelenti, hogy a modell az időzítést hibázza el; az 1-től távoli $\\beta$ azt jelenti, hogy túl- vagy alulbecsüli a térfogatot; az 1-től távoli $\\gamma$ azt jelenti, hogy a változékonyságot hibázza el.",
+      "suggested": "Ez a bontás azért értékes, mert nemcsak azt mutatja meg a modellezőnek, hogy a modell nem tökéletes, hanem azt is, miben: az alacsony $r$ időzítési hibára utal; az 1-től távoli $\\beta$ a térfogat túl- vagy alulbecslését jelzi; az 1-től távoli $\\gamma$ pedig arra utal, hogy a modell a változékonyságot nem adja vissza megfelelően.",
+      "reason": "Az ismétlődő „azt jelenti, hogy” szerkezet angolos és nehézkes; a javított változat tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 99,
+      "category": "plural",
+      "severity": "medium",
+      "original": "Ezek az összevont modellek az 1960-as évek óta az operatív hidrológia alapvető eszközei, és ma is széles körben használják őket, mert gyorsak, kevés bemenő adatot igényel, és megfelelő kalibráció mellett gyakran meglepően jól teljesítenek.",
+      "suggested": "Ezek az összevont modellek az 1960-as évek óta az operatív hidrológia alapvető eszközei, és ma is széles körben használják őket, mert gyorsak, kevés bemenő adatot igényelnek, és megfelelő kalibráció mellett gyakran meglepően jól teljesítenek.",
+      "reason": "Nyelvtani egyeztetési hiba: a többes számú alanyhoz a „igényelnek” alak illik."
+    },
+    {
+      "line_approx": 103,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy tipikus HEC-HMS modell négy részvízgyűjtővel, ezeket a módszereket alkalmazva, 20-30 kalibrációt igénylő paramétert tartalmazhat.",
+      "suggested": "Egy tipikus, négy részvízgyűjtőből álló, ezeket a módszereket alkalmazó HEC-HMS modell 20-30 kalibrálandó paramétert tartalmazhat.",
+      "reason": "Az eredeti közbeékelés nehézkes; a „kalibrációt igénylő paraméter” helyett a „kalibrálandó paraméter” természetesebb."
+    },
+    {
+      "line_approx": 107,
+      "category": "other",
+      "severity": "high",
+      "original": "a gyökérzóna küszöbértéke az köztes lefolyáshoz ($TIF$)",
+      "suggested": "a gyökérzóna küszöbértéke a köztes lefolyáshoz ($TIF$)",
+      "reason": "Nyelvtani hiba: helyesen „a köztes lefolyáshoz”."
+    },
+    {
+      "line_approx": 109,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezen összevont modellek viszonylagos takarékossága -- jellemzően 5-15 paraméter -- alkalmassá teszi őket a kalibrációra, de egyben azt is jelenti, hogy minden paraméter számos fizikai folyamat hatását elnyeli, ami megnehezíti a fizikai értelmezést.",
+      "suggested": "Ezeknek az összevont modelleknek a viszonylagos takarékossága -- jellemzően 5-15 paraméter -- alkalmassá teszi őket a kalibrációra, de egyben azt is jelenti, hogy egy-egy paraméter számos fizikai folyamat hatását sűríti magába, ami megnehezíti a fizikai értelmezést.",
+      "reason": "Az „Ezen” és az „elnyeli” itt kissé idegenszerű; a javított változat természetesebb magyar tudományos stílus."
+    },
+    {
+      "line_approx": 112,
+      "category": "register",
+      "severity": "low",
+      "original": "E egyszerűség ellenére a GR4J versenyképesnek bizonyult jóval összetettebb modellekkel szemben nagy mintás hidrológiai vizsgálatokban.",
+      "suggested": "Ezen egyszerűség ellenére a GR4J jóval összetettebb modellekkel szemben is versenyképesnek bizonyult nagymintás hidrológiai vizsgálatokban.",
+      "reason": "A „nagy mintás” különírt alakban idegenszerű; a „nagymintás” és az átrendezett szórend természetesebb."
+    },
+    {
+      "line_approx": 121,
+      "category": "register",
+      "severity": "medium",
+      "original": "A SWAT (Soil and Water Assessment Tool), amelyet az USDA Mezőgazdasági Kutatási Szolgálata fejlesztett ki és a Texas A&M Egyetem gondoz, a világ egyik legszélesebb körben használt félig elosztott modellje, amelyről több mint 5000 lektorált publikáció jelent meg.",
+      "suggested": "A SWAT (Soil and Water Assessment Tool), amelyet az USDA Mezőgazdasági Kutatási Szolgálata fejlesztett ki, és amelyet a Texas A&M Egyetem gondoz, a világ egyik legszélesebb körben használt félig elosztott modellje; róla több mint 5000 lektorált publikáció jelent meg.",
+      "reason": "A sok egymásba ágyazott vonatkozó mellékmondat nehézkessé teszi a mondatot; a tagolás magyarosabb."
+    },
+    {
+      "line_approx": 122,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyeket a területhasználat, a talajtípus és a lejtőosztály egyedi kombinációi definiálnak",
+      "suggested": "amelyeket a területhasználat, a talajtípus és a lejtőosztály egyedi kombinációi határoznak meg",
+      "reason": "A „definiálnak” itt angolos; a „határoznak meg” a természetes magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 123,
+      "category": "terminology",
+      "severity": "high",
+      "original": "telített vízvezető képesség",
+      "suggested": "telített hidraulikus vezetőképesség",
+      "reason": "Ugyanaz a terminológiai probléma ismétlődik; a bevett szakkifejezést érdemes következetesen használni."
+    },
+    {
+      "line_approx": 130,
+      "category": "register",
+      "severity": "medium",
+      "original": "Nem praktikus minden cellához közvetlenül egyedi paraméterértékeket rendelni",
+      "suggested": "Nem célszerű minden cellához közvetlenül egyedi paraméterértékeket rendelni",
+      "reason": "A „praktikus” itt angol hatású; a „célszerű” természetesebb és akadémiai regiszterbe illőbb."
+    },
+    {
+      "line_approx": 140,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "konkrét példát nyújt",
+      "suggested": "jó példája ennek",
+      "reason": "A „példát nyújt” szókapcsolat angolos; a „jó példája ennek” gördülékenyebb magyar megoldás."
+    },
+    {
+      "line_approx": 166,
+      "category": "terminology",
+      "severity": "high",
+      "original": "**22.1. ábra**: Az alapvető léptékbeli eltérés a terepi mérések és a modellparaméterek között. A talaj vízvezető képességének, a vegetációs tulajdonságoknak és a meder-érdességnek a pontléptékű méréseit rácsléptékű effektív értékekké kell fordítani, amelyek a modellegyenleteket a jóval nagyobb térbeli léptéken működtetik.",
+      "suggested": "**22.1. ábra**: Az alapvető léptékbeli eltérés a terepi mérések és a modellparaméterek között. A talaj hidraulikus vezetőképességének, a vegetációs tulajdonságoknak és a mederérdességnek a pontléptékű méréseit rácsléptékű effektív értékekké kell fordítani, amelyek lehetővé teszik a modellegyenletek alkalmazását a jóval nagyobb térbeli léptéken.",
+      "reason": "Terminológiai pontatlanság („vízvezető képesség”), továbbá a „működtetik” itt kissé gépies, fordításszagú."
+    },
+    {
+      "line_approx": 403,
+      "category": "register",
+      "severity": "low",
+      "original": "Magas $\\mu^*$ fontos paramétert jelez; magas $\\sigma$ a $\\mu^*$-hoz képest nemlineáris hatásokat vagy más paraméterekkel való interakciókat jelez.",
+      "suggested": "A magas $\\mu^*$ fontos paraméterre utal; a $\\mu^*$-hoz képest magas $\\sigma$ nemlineáris hatásokat vagy más paraméterekkel való kölcsönhatásokat jelez.",
+      "reason": "Hiányzik a névelő, és a „való interakciók” szerkezet kevésbé természetes magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 406,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Morris-módszer ezért ideális első lépésként: futtassuk le a Morris-t az 5-10 legfontosabb paraméter azonosítására, majd csak azokat kalibráljuk.",
+      "suggested": "A Morris-módszer ezért ideális első lépés: futtassuk le az 5-10 legfontosabb paraméter azonosítására, majd csak ezeket kalibráljuk.",
+      "reason": "Az „ideális első lépésként” és a „futtassuk le a Morris-t” angolos, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 410,
+      "category": "register",
+      "severity": "low",
+      "original": "Két kulcsfontosságú indexet ad minden paraméterre:",
+      "suggested": "Minden paraméterre két kulcsfontosságú indexet ad meg:",
+      "reason": "A magyarban természetesebb az „minden paraméterre” bővítmény későbbi elhelyezése."
+    },
+    {
+      "line_approx": 414,
+      "category": "other",
+      "severity": "medium",
+      "original": "ahol $V(Y)$ a kimenet teljes varianciája, és $V[E(Y | X_i)]$ az $Y$ feltételes várható értékének varianciája $X_i$ adott értéke mellett.",
+      "suggested": "ahol $V(Y)$ a kimenet teljes varianciája, $V[E(Y | X_i)]$ pedig az $Y$ feltételes várható értékének varianciája az $X_i$ adott értéke mellett.",
+      "reason": "A „pedig” kötőszóval gördülékenyebb, az ismételt névelőzés és az angolos tagolás enyhül."
+    },
+    {
+      "line_approx": 418,
+      "category": "register",
+      "severity": "low",
+      "original": "A teljes hatás index ($S_{Ti}$) az $i$ paraméternek tulajdonítható kimeneti variancia hányadát méri, beleértve az összes más paraméterrel való interakciót:",
+      "suggested": "A teljeshatás-index ($S_{Ti}$) az $i$ paraméternek tulajdonítható kimeneti variancia hányadát méri, beleértve az összes többi paraméterrel való kölcsönhatást is:",
+      "reason": "A „teljes hatás index” terminus magyarul inkább egybeírva természetes, az „interakció” helyett a „kölcsönhatás” gördülékenyebb."
+    },
+    {
+      "line_approx": 427,
+      "category": "register",
+      "severity": "medium",
+      "original": "gyors modelleknél megoldható, de komplex modelleknél tiltó költségű.",
+      "suggested": "gyors modelleknél még megoldható, de összetett modelleknél már túl költséges.",
+      "reason": "A „tiltó költségű” tükörfordítás-ízű, nem természetes magyar szakkifejezés."
+    },
+    {
+      "line_approx": 428,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Amikor a számítási keret korlátozott, a Morris-módszert szűrőként használják, és a Sobol-elemzést csak a fontosként azonosított paraméterek részhalmazára alkalmazzák.",
+      "suggested": "Korlátozott számítási kapacitás esetén a Morris-módszert szűrésre használják, a Sobol-elemzést pedig csak a fontosnak azonosított paraméterek egy részhalmazára alkalmazzák.",
+      "reason": "A „számítási keret” és a „fontosként azonosított” angolos megoldás."
+    },
+    {
+      "line_approx": 441,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ajánlott sorrend, amely bármely modelltípusra alkalmazható, a következőképpen halad.",
+      "suggested": "A bármely modelltípusra alkalmazható ajánlott lépéssor a következő.",
+      "reason": "A „következőképpen halad” szó szerinti fordítás, magyarul körülményes."
+    },
+    {
+      "line_approx": 443,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "adjunk meg fizikai korlátokat ... és egy prior eloszlást",
+      "suggested": "adjunk meg fizikai korlátokat ... és egy prior eloszlást / a priori eloszlást",
+      "reason": "A „prior eloszlás” érthető, de magyar tudományos szövegben az „a priori eloszlás” vagy következetesen idegen terminusként kezelt forma természetesebb."
+    },
+    {
+      "line_approx": 449,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az elhanyagolható $\\mu^*$ értékű paraméterek (mondjuk a maximális $\\mu^*$ kevesebb mint 10%-a) rögzíthetők alapértelmezett értékeiken.",
+      "suggested": "Az elhanyagolható $\\mu^*$ értékű paramétereket (például azokat, amelyek $\\mu^*$ értéke a maximális érték 10%-ánál kisebb) rögzíthetjük az alapértelmezett értékükön.",
+      "reason": "Az eredeti mondat szerkezete nehezen követhető, a zárójeles rész angolosan tömörített."
+    },
+    {
+      "line_approx": 452,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Harmadszor, a fennmaradó érzékeny paraméterekre végezzünk Sobol-elemzést vagy lépjünk közvetlenül a kalibrációra, a számítási kerettől függően.",
+      "suggested": "Harmadszor, a fennmaradó érzékeny paraméterekre végezzünk Sobol-elemzést, vagy — a rendelkezésre álló számítási kapacitástól függően — lépjünk közvetlenül a kalibrációra.",
+      "reason": "A „számítási keret” itt is angolos; a tagolás magyarosabbá tehető."
+    },
+    {
+      "line_approx": 453,
+      "category": "register",
+      "severity": "low",
+      "original": "Ha a Sobol-elemzés megoldható, értékes információt nyújt a paraméter-interakciókról, ami befolyásolja a kalibrációs algoritmus megválasztását:",
+      "suggested": "Ha a Sobol-elemzés elvégezhető, értékes információt nyújt a paraméterek közötti kölcsönhatásokról, ami befolyásolja a kalibrációs algoritmus megválasztását:",
+      "reason": "A „megoldható” és a „paraméter-interakciók” kevésbé természetes ebben a kontextusban."
+    },
+    {
+      "line_approx": 457,
+      "category": "register",
+      "severity": "medium",
+      "original": "Negyedszer kalibráljunk a választott algoritmussal (SCE-UA egycélfüggvényes optimalizáláshoz, NSGA-II többcélfüggvényeshez, DREAM teljes poszterior bizonytalansághoz).",
+      "suggested": "Negyedszer kalibráljunk a választott algoritmussal (SCE-UA egycélfüggvényes optimalizáláshoz, NSGA-II többcélfüggvényes optimalizáláshoz, DREAM a teljes poszterior bizonytalanság becsléséhez).",
+      "reason": "Az elliptikus felsorolás a végén túl tömör és kissé angolos; a párhuzamosság javítandó."
+    },
+    {
+      "line_approx": 460,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ötödször validáljunk úgy, hogy a kalibrált modellt egy olyan független időszakra futtatjuk, amelyet nem használtunk kalibrációra.",
+      "suggested": "Ötödször úgy validáljunk, hogy a kalibrált modellt egy olyan független időszakra futtatjuk, amelyet nem használtunk fel a kalibrációhoz.",
+      "reason": "A „használtunk kalibrációra” angolos vonzat; a „felhasználtunk a kalibrációhoz” természetesebb."
+    },
+    {
+      "line_approx": 474,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A kifolyási vízhozam mindezen magyarázatokkal összeegyeztethető.",
+      "suggested": "A kifolyási vízhozam mindegyik magyarázattal összhangban lehet.",
+      "reason": "Az „összeegyeztethető” itt kissé tükörfordítás-ízű, kevésbé idiomatikus."
+    },
+    {
+      "line_approx": 477,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A görbeszám növelése (több felszíni lefolyás) miközben egyidejűleg az alapáramlás recessziós állandóját is növeljük",
+      "suggested": "A görbeszám növelése (nagyobb felszíni lefolyás), miközben egyidejűleg az alapáramlás apadási állandóját is növeljük",
+      "reason": "A „recessziós állandó” helyett a magyar hidrológiai szaknyelvben természetesebb az „apadási állandó”."
+    },
+    {
+      "line_approx": 486,
+      "category": "terminology",
+      "severity": "low",
+      "original": "nem feltétlenül formális statisztikai likelihood",
+      "suggested": "nem feltétlenül formális statisztikai likelihood-függvény",
+      "reason": "A puszta „likelihood” helyett pontosabb a bevett szakmai alak vagy annak magyar megfelelője."
+    },
+    {
+      "line_approx": 518,
+      "category": "register",
+      "severity": "medium",
+      "original": "A PEST Tyihonov-regularizációja a legszélesebb körben használt megvalósítás a felszín alatti víz modellezésben.",
+      "suggested": "A PEST-ben alkalmazott Tyihonov-regularizáció a felszín alatti víz modellezésének egyik legszélesebb körben használt megoldása.",
+      "reason": "Az eredeti mondat kissé darabos; a „megvalósítás” itt kevésbé természetes, mint a „megoldás”."
+    },
+    {
+      "line_approx": 806,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Hernád (szlovákul Hornád) határon átnyúló folyó, amely a Szlovák-érchegységben (Slovenské rudohorie) ered, Kassa (Kosice) városa közelében.",
+      "suggested": "A Hernád (szlovákul Hornád) határon átnyúló folyó, amely a Szlovák-érchegységben (Slovenské rudohorie), Kassa (Kosice) közelében ered.",
+      "reason": "Természetesebb magyar szórend; a helyhatározó kevésbé esetlenül kapcsolódik az igéhez."
+    },
+    {
+      "line_approx": 808,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Hernád vízgyűjtő kiváló példa a kalibrációra, mert az ebben a fejezetben tárgyalt kihívások közül sokat magában foglal.",
+      "suggested": "A Hernád vízgyűjtője a kalibráció jó példája, mert jól szemlélteti az ebben a fejezetben tárgyalt számos kihívást.",
+      "reason": "A „példa a kalibrációra” és a „magában foglal” angolos, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 810,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az éves csapadék 500 mm-től a magyar síkságon 900 mm felett változik a szlovák hegyekben.",
+      "suggested": "Az éves csapadék a magyar síkságon 500 mm-től a szlovák hegyekben mért 900 mm feletti értékekig terjed.",
+      "reason": "Az eredeti mondat szórendje és szerkezete angolos; a „változik” itt kevésbé természetes."
+    },
+    {
+      "line_approx": 811,
+      "category": "other",
+      "severity": "medium",
+      "original": "A domináns területhasználatok a szántóföld (gabona, kukorica, napraforgó) a magyar síkságon és az erdő (bükk, lucfenyő) a szlovák felvidéken.",
+      "suggested": "A meghatározó területhasználati formák a magyar síkságon a szántóföldi művelés (gabona, kukorica, napraforgó), a szlovák felvidéken pedig az erdőborítás (bükk, lucfenyő).",
+      "reason": "Az eredeti mondat hiányos állítmányszerkezetű és nehézkes; a „domináns területhasználatok” is kevéssé természetes."
+    },
+    {
+      "line_approx": 812,
+      "category": "calque",
+      "severity": "high",
+      "original": "A hegyi mellékfolyókról érkező villámárvizek, a tavaszi hóolvadás és az esőre hóra eső események mind hozzájárulnak a vízjáráshoz",
+      "suggested": "A hegyi mellékvízfolyásokon levonuló villámárvizek, a tavaszi hóolvadás és az eső a hóra típusú események egyaránt alakítják a vízjárást",
+      "reason": "Az „esőre hóra eső események” hibás tükörfordítás; bevett forma az „eső a hóra” esemény."
+    },
+    {
+      "line_approx": 814,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Szlovák Hidrometeorológiai Intézet (SHMU) a felső szakaszon Kassa, Margecany és más állomásokon biztosít adatokat.",
+      "suggested": "A Szlovák Hidrometeorológiai Intézet (SHMU) a felső szakaszra vonatkozóan Kassán, Margecanyban és más állomásokon szolgáltat adatokat.",
+      "reason": "A „biztosít adatokat” angolos; a „szolgáltat adatokat” természetesebb szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 818,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "mert kis paraméterszáma ideálissá teszi a kalibrációs fogalmak szemléltetésére a nagy dimenziós paraméterterek szövődményei nélkül.",
+      "suggested": "mert a kevés paraméter jól alkalmassá teszi a kalibrációs fogalmak szemléltetésére, a nagy dimenziójú paraméterterek bonyodalmai nélkül.",
+      "reason": "Az „ideálissá teszi” és különösen a „szövődményei” erős tükörfordítás; magyarul itt „bonyodalmai” vagy „nehézségei” természetes."
+    },
+    {
+      "line_approx": 821,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "$x_2$: felszín alatti víz csereegyütthatója (mm/nap) -- a mély felszín alatti vízből történő nyereségeket vagy veszteségeket vezérli",
+      "suggested": "$x_2$: a felszín alatti víz csereegyütthatója (mm/nap) -- a mélyebb felszín alatti vízkészletekkel való nyereséget vagy veszteséget szabályozza",
+      "reason": "A „nyereségeket vagy veszteségeket vezérli” terminológiailag és stilárisan darabos; a „szabályozza” természetesebb."
+    },
+    {
+      "line_approx": 822,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "$x_3$: egynapos előrejelzésű útválasztási tározó kapacitása (mm) -- az útválasztási komponens sebességét vezérli",
+      "suggested": "$x_3$: az egynapos útválasztási tározó kapacitása (mm) -- az útválasztási komponens sebességét szabályozza",
+      "reason": "Az „előrejelzésű” itt félrevezető és valószínűleg fordítási hiba; a GR4J-ben nem „előrejelzésről”, hanem egynapos útválasztási komponensről van szó."
+    },
+    {
+      "line_approx": 834,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A napi csapadékot a rendelkezésre álló mérőállomások vízgyűjtőre átlagolt Thiessen-poligonos (a 8. fejezetben leírt módszer) súlyozott átlagaként számítjuk.",
+      "suggested": "A napi csapadékot a rendelkezésre álló mérőállomások adataiból számítjuk, a 8. fejezetben ismertetett Thiessen-polinigonos módszerrel képzett vízgyűjtőátlagként.",
+      "reason": "Túlzsúfolt jelzős szerkezet; angolos jelzőhalmozás."
+    },
+    {
+      "line_approx": 835,
+      "category": "register",
+      "severity": "low",
+      "original": "A Hernád vízgyűjtőjére Hidasnémeti felett hét csapadékmérő állomást használunk a magassági gradiens mentén",
+      "suggested": "A Hidasnémeti feletti Hernád-vízgyűjtőre hét, a magassági gradiens mentén elhelyezkedő csapadékmérő állomás adatait használjuk",
+      "reason": "Pontosabb és természetesebb tudományos megfogalmazás; az eredeti kissé beszélt nyelvi."
+    },
+    {
+      "line_approx": 837,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ahol $R_a$ az extraterresztriális sugárzás",
+      "suggested": "ahol $R_a$ az extraterresztrikus sugárzás",
+      "reason": "A magyar szaknyelvben az „extraterresztrikus sugárzás” a bevettebb alak."
+    },
+    {
+      "line_approx": 838,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Hernád vízgyűjtőjére az 48,5° északi szélességen ez körülbelül 750 mm éves átlagos PET-et ad.",
+      "suggested": "A Hernád vízgyűjtőjén, 48,5° északi szélességen ez évi átlagban körülbelül 750 mm PET-et ad.",
+      "reason": "Az „az 48,5°” nyelvtanilag hibás, a mondat szórendje pedig nehézkes."
+    },
+    {
+      "line_approx": 840,
+      "category": "other",
+      "severity": "high",
+      "original": "A megfigyelt vízhozam Hidasnémetinél átlagosan körülbelül 28 m$^3$/s (ami 880 mm/év ekvivalens az 5300 km$^2$-es vízgyűjtőn -- bár megjegyzendő, hogy a vízgyűjtő-átlagos csapadék jelentős része lefolyik, mintegy 0,38-as lefolyási hányadot adva, ami ésszerű egy mérsékelt csapadékú hegyvidéki vízgyűjtőre).",
+      "suggested": "A Hidasnémetinél megfigyelt átlagos vízhozam körülbelül 28 m$^3$/s, ami az 5300 km$^2$-es vízgyűjtőre vetítve évi 880 mm-nek felel meg. Ez mintegy 0,38-as lefolyási hányadot jelent, ami mérsékelt csapadékú hegyvidéki vízgyűjtő esetén ésszerű érték.",
+      "reason": "Az eredeti mondat túlterhelt, zárójeles betoldásokkal nehezen követhető; az „ekvivalens” és az „adva” itt fordításszagú."
+    },
+    {
+      "line_approx": 844,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az SCE-UA-t $p = 5$ komplexszel és alapértelmezett beállításokkal konfiguráljuk",
+      "suggested": "Az SCE-UA algoritmust $p = 5$ komplexszel és alapértelmezett beállításokkal futtatjuk",
+      "reason": "A „konfiguráljuk” itt angolos informatikai tükör; magyar tudományos prózában a „futtatjuk” természetesebb."
+    },
+    {
+      "line_approx": 850,
+      "category": "register",
+      "severity": "low",
+      "original": "Pozitív: a vízgyűjtő mély felszín alatti vízből nyer vizet",
+      "suggested": "Pozitív: a vízgyűjtő mélyebb felszín alatti vízkészletekből kap utánpótlást",
+      "reason": "A „nyer vizet” kissé köznyelvi és fordításszagú; a javasolt változat szaknyelvileg természetesebb."
+    },
+    {
+      "line_approx": 858,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A validációs KGE = 0,76 mérsékelt csökkenést képvisel -- körülbelül 7%-ot --",
+      "suggested": "A validációs KGE = 0,76 mérsékelt, körülbelül 7%-os csökkenést jelez",
+      "reason": "A „csökkenést képvisel” angolos fordulat."
+    },
+    {
+      "line_approx": 861,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A pozitív $x_2$ paraméter (felszín alatti víz csereegyütthatója) figyelemre méltó.",
+      "suggested": "Figyelemre méltó a pozitív $x_2$ paraméter (a felszín alatti víz csereegyütthatója).",
+      "reason": "Természetesebb magyar mondatindítás és hangsúlyozás."
+    },
+    {
+      "line_approx": 862,
+      "category": "register",
+      "severity": "medium",
+      "original": "A kalibrált paraméterek fizikai elfogadhatósága további bizalmat ad a modell-felépítésbe.",
+      "suggested": "A kalibrált paraméterek fizikai értelmezhetősége tovább erősíti a modell felépítésébe vetett bizalmat.",
+      "reason": "Az „elfogadhatóság” és a „bizalmat ad” itt nehézkes; a „modell-felépítés” kötőjeles alakja sem szerencsés."
+    },
+    {
+      "line_approx": 865,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Morris-módszer alkalmazása $r = 20$ trajektóriával",
+      "suggested": "A Morris-módszer alkalmazása $r = 20$ pályával",
+      "reason": "A „trajektória” érthető, de itt a magyar szaknyelvben a „pálya” természetesebb."
+    },
+    {
+      "line_approx": 874,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a paramétertér egyes régióiban jobban számít, mint másokban",
+      "suggested": "a paramétertér egyes tartományaiban erősebb a hatása, mint másokban",
+      "reason": "A „jobban számít” angolos, nem tudományos regiszterű fordulat."
+    },
+    {
+      "line_approx": 878,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "olyan poszterior paramétereloszlásokat eredményez",
+      "suggested": "olyan utólagos paramétereloszlásokat eredményez",
+      "reason": "A „poszterior” használható, de magyar tudományos prózában sokszor természetesebb az „utólagos” vagy „a posteriori”; itt a magyarosítás indokolt lehet."
+    },
+    {
+      "line_approx": 879,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez tankönyvi példája a rossz azonosíthatóságnak egy olyan paraméterre",
+      "suggested": "Ez tankönyvi példája egy olyan paraméter gyenge azonosíthatóságának",
+      "reason": "Az „rossz azonosíthatóság” kevésbé természetes magyarul, az „egy olyan paraméterre” szerkezet pedig hibás."
+    },
+    {
+      "line_approx": 880,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "kissé alulbecslőek",
+      "suggested": "kissé alulbecslik a bizonytalanságot",
+      "reason": "Az „alulbecslőek” tükörfordításos, esetlen melléknévi alak."
+    },
+    {
+      "line_approx": 889,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a modell egyszerűsége (nincs explicit hóábrázolás, nincsenek napon belüli folyamatok) strukturális hibákat vezet be",
+      "suggested": "a modell egyszerűsége (nincs explicit hóábrázolás, nincsenek napon belüli folyamatok) strukturális hibákhoz vezet",
+      "reason": "A „hibákat vezet be” angolos szerkezet."
+    },
+    {
+      "line_approx": 891,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "30 paraméteres SWAT modell, térben elosztott MODFLOW modell vagy Noah-MP felszínmodell",
+      "suggested": "egy 30 paraméteres SWAT-modell, egy térben elosztott MODFLOW-modell vagy a Noah-MP felszínmodell",
+      "reason": "A felsorolásban a jelzős szerkezetek és az összetételek írásmódja egyenetlen; kötőjeles alakok természetesebbek."
+    },
+    {
+      "line_approx": 900,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A Víz Keretirányelv (WFD) szisztematikus monitorozást és modellezést hajtott végre az összes tagállamban.",
+      "suggested": "A Víz Keretirányelv (WFD) nyomán valamennyi tagállamban szisztematikus monitorozás és modellezés valósult meg.",
+      "reason": "Az irányelv maga nem „hajtott végre” monitorozást; ez angolos, pontatlan megszemélyesítés."
+    },
+    {
+      "line_approx": 901,
+      "category": "register",
+      "severity": "medium",
+      "original": "Minden vízgyűjtő kerületnek jellemeznie kell víztesteit",
+      "suggested": "Minden vízgyűjtőkerületnek jellemeznie kell a víztesteit",
+      "reason": "Az összetett főnév egybeírandó; a névelő pótlása természetesebb."
+    },
+    {
+      "line_approx": 910,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 22.9.2 Nagy mintás hidrológia és a CAMELS adathalmazok",
+      "suggested": "### 22.9.2 Nagymintás hidrológia és a CAMELS adathalmazok",
+      "reason": "A magyar szaknyelvben a „nagymintás” egybeírt alak természetesebb."
+    }
+  ]
+}

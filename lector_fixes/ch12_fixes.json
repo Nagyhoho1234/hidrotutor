@@ -1,0 +1,1222 @@
+{
+  "chapter": "ch12",
+  "total_issues": 152,
+  "fixes": [
+    {
+      "line_approx": 13,
+      "category": "register",
+      "severity": "medium",
+      "original": "és nem akarjuk programozóvá tenni a 30. oldalra",
+      "suggested": "és nem célunk, hogy a 30. oldalra programozót faragjunk belőle",
+      "reason": "Az eredeti megfogalmazás kissé idegenszerű; a magyar tudományos prózában természetesebb az idiomatikusabb fordulat."
+    },
+    {
+      "line_approx": 14,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "olyan végrehajtható szkriptekig, amelyek reprodukálják ezeket a munkafolyamatokat",
+      "suggested": "olyan futtatható szkriptekig, amelyek újraalkotják ezeket a munkafolyamatokat",
+      "reason": "A „végrehajtható” és különösen a „reprodukálják” itt angolosan hat; magyarul természetesebb a „futtatható” és az „újraalkotják”."
+    },
+    {
+      "line_approx": 15,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "amely bármely DEM-et képes feldolgozni, amelyre ráirányítjuk",
+      "suggested": "amely bármely DEM-et képes feldolgozni, amelyet megadunk neki",
+      "reason": "A „ráirányítjuk” ebben az összefüggésben tükörfordításízű és nehézkes; a magyar szaknyelvben természetesebb a „megadunk neki”."
+    },
+    {
+      "line_approx": 16,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Python-felületekbe, amelyeket bárki használhat",
+      "suggested": "Python-felületek mögé, amelyeket bárki használhat",
+      "reason": "A „kódot Python-felületekbe csomagolják” szerkezet angolos; magyarul természetesebb a „Python-felületek mögé csomagolják” vagy hasonló megoldás."
+    },
+    {
+      "line_approx": 21,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Abban a pillanatban elégtelenné válik, amint a következő három feltétel bármelyike fennáll",
+      "suggested": "Azonnal elégtelenné válik, ha a következő három feltétel közül akár egy is fennáll",
+      "reason": "Az „abban a pillanatban ... amint” szerkezet angolosan körülményes; a javasolt változat tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy szkript ezt a dokumentációt automatikusan megadja.",
+      "suggested": "Egy szkript ezt a dokumentációt automatikusan biztosítja.",
+      "reason": "A „megadja” itt kissé esetlen; a „biztosítja” akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 32,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "olyan módon teljesíti ezt a követelményt, ahogyan a menükattintások szöveges leírása soha nem képes rá",
+      "suggested": "ezt a követelményt úgy teljesíti, ahogy a menükattintások szöveges leírása soha nem tudja",
+      "reason": "Az eredeti szerkezet nehézkes és fordításszagú; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 42,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Mindez nem puszta elmélet.",
+      "suggested": "Ez nem csupán elméleti lehetőség.",
+      "reason": "A „nem puszta elmélet” gyakori angol mintájú fordulat; a javasolt változat természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 43,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "azért léteznek, mert alkotóik szkripteket írtak",
+      "suggested": "azért jöhettek létre, mert alkotóik szkripteket írtak",
+      "reason": "A „termékek léteznek” szó szerinti, angolos megfogalmazás; magyarul természetesebb a „jöhettek létre”."
+    },
+    {
+      "line_approx": 50,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez nem bürokratikus követelmény csupán -- a megbízható tudomány alapja.",
+      "suggested": "Ez nem csupán bürokratikus követelmény -- hanem a megbízható tudomány egyik alapja.",
+      "reason": "A mondat ritmusa és hangsúlyozása magyarul gördülékenyebb a javasolt formában."
+    },
+    {
+      "line_approx": 52,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "szabadalmazott szoftvertől, például az ArcGIS Pro-tól függ",
+      "suggested": "zárt forráskódú, kereskedelmi szoftvertől, például az ArcGIS Pro-tól függ",
+      "reason": "A „szabadalmazott szoftver” nem bevett magyar informatikai szakkifejezés ebben az értelemben; pontosabb a „zárt forráskódú, kereskedelmi szoftver”."
+    },
+    {
+      "line_approx": 59,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Egyetlen vízgyűjtőre húsz percet igénylő kézi munkafolyamatot skálázni lehetetlen",
+      "suggested": "Lehetetlen skálázni egy olyan kézi munkafolyamatot, amely egyetlen vízgyűjtőn is húsz percet igényel",
+      "reason": "Az eredeti szórend kissé angolos és nehézkes; a javasolt változat magyarosabb mondatépítésű."
+    },
+    {
+      "line_approx": 66,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A fejlődés tipikus menete a következő",
+      "suggested": "A tanulási folyamat tipikus menete a következő",
+      "reason": "A „fejlődés menete” itt kissé tükörfordításízű; a kontextusban a „tanulási folyamat” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 67,
+      "category": "register",
+      "severity": "low",
+      "original": "A kulcsfontosságú felismerés azonban az, hogy",
+      "suggested": "A lényeges felismerés azonban az, hogy",
+      "reason": "A „kulcsfontosságú” túlhasznált, kissé modoros fordulat; a „lényeges” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 68,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Vagyis az eszközök húzogatásával és összekapcsolásával épített vizuális modell olvasható Python-szkriptté alakul",
+      "suggested": "Vagyis az eszközök húzogatásával és összekapcsolásával felépített vizuális modell olvasható Python-szkriptté alakítható",
+      "reason": "Az „alakul” itt pontatlan és kissé gépies; a „felépített” és „alakítható” természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 82,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a Python több olyan tulajdonságot egyesít, amelyek alkalmassá teszik térinformatikai automatizálásra",
+      "suggested": "a Python több olyan tulajdonsággal rendelkezik, amelyek alkalmassá teszik a térinformatikai automatizálásra",
+      "reason": "Az „egyesít tulajdonságokat” szerkezet angolos; magyarul természetesebb a „rendelkezik ... tulajdonságokkal”."
+    },
+    {
+      "line_approx": 85,
+      "category": "register",
+      "severity": "low",
+      "original": "nincs benne rejtélyes írásjel",
+      "suggested": "nincsenek benne nehezen értelmezhető szintaktikai elemek",
+      "reason": "A „rejtélyes írásjel” túl köznyelvi és kevéssé szakszerű egy tankönyvben."
+    },
+    {
+      "line_approx": 92,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "fordított kód",
+      "suggested": "fordított nyelvek",
+      "reason": "A címben a „fordított kód” nem bevett terminus; a szöveg később is „fordított nyelvek”-ről beszél, ezért terminológiailag egységesebb így."
+    },
+    {
+      "line_approx": 207,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 12.5.1 A feldolgozási előzmények módszere",
+      "suggested": "### 12.5.1 A feldolgozási előzmények használata",
+      "reason": "A „módszere” itt angolosan, körülményesen hangzik; a cím magyarul természetesebb igés szerkezettel."
+    },
+    {
+      "line_approx": 211,
+      "category": "register",
+      "severity": "low",
+      "original": "A számunkra kritikus funkció a **Python-parancs másolása** (Copy Python Command).",
+      "suggested": "Számunkra kulcsfontosságú funkció a **Python-parancs másolása** (Copy Python Command).",
+      "reason": "A „kritikus funkció” tükörfordításízű; a „kulcsfontosságú” természetesebb tudományos prózában."
+    },
+    {
+      "line_approx": 212,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Geoprocessing History bármely bejegyzésére jobb gombbal kattintva és a „Copy Python Command\" lehetőséget választva a pontos Python-szintaxis a vágólapra kerül.",
+      "suggested": "Ha a Geoprocessing History bármely bejegyzésére jobb gombbal kattintunk, majd a „Copy Python Command” lehetőséget választjuk, a pontos Python-szintaxis a vágólapra másolódik.",
+      "reason": "A hosszú határozói szerkezet és a mondatvégi „kerül” nehézkes; a tagoltabb szerkezet természetesebb."
+    },
+    {
+      "line_approx": 213,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez nem általános sablon -- ez a konkrét parancs az általunk használt konkrét paraméterekkel, készen a szkriptbe illesztésre.",
+      "suggested": "Ez nem általános sablon, hanem az általunk megadott paraméterekkel létrejött konkrét parancs, amely azonnal beilleszthető a szkriptbe.",
+      "reason": "A „konkrét ... konkrét” ismétlés és a „készen a ... illesztésre” angolos szerkezet."
+    },
+    {
+      "line_approx": 215,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Például a Fill eszköz lefuttatása után, egy „SanMarcos_DEM\" nevű DEM-re, a kimenetet „FEL\" néven mentve, a Python-parancs másolása a következőt eredményezi:",
+      "suggested": "Például ha a Fill eszközt egy „SanMarcos_DEM” nevű DEM-en futtatjuk, és a kimenetet „FEL” néven mentjük, akkor a Python-parancs másolásakor a következő kódot kapjuk:",
+      "reason": "Az eredeti mondat szórendje és határozói szerkezete angolosan töredezett."
+    },
+    {
+      "line_approx": 221,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a kétsoros részlet mindent elárul a Fill függvény Pythonból történő hívásáról:",
+      "suggested": "Ez a kétsoros részlet jól szemlélteti, hogyan hívható meg a Fill függvény Pythonból:",
+      "reason": "A „mindent elárul” publicisztikusabb; a „jól szemlélteti” tárgyilagosabb tankönyvi regiszter."
+    },
+    {
+      "line_approx": 224,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 12.5.2 A súgódokumentáció módszere",
+      "suggested": "### 12.5.2 A súgódokumentáció használata",
+      "reason": "A címben a „módszere” itt is angolos, nehézkes megoldás."
+    },
+    {
+      "line_approx": 226,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek a kódminták általában teljesebbek, mint az előzményekből másolt parancsok -- tartalmaznak import utasításokat, környezeti beállításokat, és néha több használati példát különböző paraméterkombinációkkal.",
+      "suggested": "Ezek a kódminták általában teljesebbek az előzményekből másolt parancsoknál: importutasításokat, környezeti beállításokat, sőt olykor több, eltérő paraméterkombinációt bemutató példát is tartalmaznak.",
+      "reason": "A felsorolás ritmusa és az „használati példát” szerkezet kissé fordításszagú."
+    },
+    {
+      "line_approx": 228,
+      "category": "register",
+      "severity": "low",
+      "original": "A grafikus felületen ez opcionális mezőként jelenik meg, amelyet a legtöbb felhasználó üresen hagy, de a kódminta megmutatja a megadás módját:",
+      "suggested": "A grafikus felületen ez opcionális mezőként jelenik meg, amelyet a legtöbb felhasználó üresen hagy, a kódminta azonban azt is megmutatja, hogyan adható meg:",
+      "reason": "A „megmutatja a megadás módját” körülményes, angolos főnevesítés."
+    },
+    {
+      "line_approx": 234,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A QGIS egyenértékű dokumentációt nyújt a Processing Algorithms dokumentációján és a beépített súgórendszeren keresztül.",
+      "suggested": "A QGIS hasonló dokumentációt kínál a Processing Algorithms leírásain és a beépített súgórendszeren keresztül.",
+      "reason": "Az „egyenértékű dokumentáció” szó szerinti fordításízű; a „hasonló dokumentáció” természetesebb."
+    },
+    {
+      "line_approx": 244,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 12.5.3 Az ajánlott tanulási munkafolyamat",
+      "suggested": "### 12.5.3 Ajánlott tanulási munkafolyamat",
+      "reason": "A határozott névelő itt felesleges, a cím tömörebb és természetesebb nélküle."
+    },
+    {
+      "line_approx": 246,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Nem elméleti ajánlás ez -- hanem az a megközelítés, amely következetesen beválik a korábban soha nem programozó vízügyi szakembereknél:",
+      "suggested": "Ez nem pusztán elméleti ajánlás, hanem olyan megközelítés, amely következetesen beválik azoknál a vízügyi szakembereknél, akik korábban nem programoztak:",
+      "reason": "A „korábban soha nem programozó” szerkezet nehézkes és idegenszerű."
+    },
+    {
+      "line_approx": 248,
+      "category": "register",
+      "severity": "low",
+      "original": "Így biztosítjuk, hogy megértsük, mit csinál az egyes lépés, és hogyan néznek ki a kimenetek.",
+      "suggested": "Így biztosíthatjuk, hogy megértsük, mit csinál az egyes lépés, és milyenek a kimenetek.",
+      "reason": "A „hogyan néznek ki a kimenetek” kissé beszélt nyelvi; a javasolt változat akadémiaibb."
+    },
+    {
+      "line_approx": 250,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Nyissuk meg a Geoprocessing History-t, kattintsunk jobb gombbal minden befejezett műveletre, és másoljuk ki a Python-parancsot.",
+      "suggested": "Nyissuk meg a Geoprocessing Historyt, kattintsunk jobb gombbal minden befejezett műveletre, és másoljuk ki a Python-parancsot.",
+      "reason": "Az angol név magyar toldalékolásánál a kötőjeles forma itt kevésbé szerencsés; a toldalékolt alak természetesebb."
+    },
+    {
+      "line_approx": 252,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Adjunk hozzá import utasításokat a tetejére, környezeti beállításokat (munkaterület, felülírás) és print utasításokat a műveletek közé a haladás nyomon követéséhez.",
+      "suggested": "Adjunk a szkript elejére importutasításokat, környezeti beállításokat (munkaterület, felülírás) és a műveletek közé print utasításokat a haladás követésére.",
+      "reason": "Az „a tetejére” és a „nyomon követéséhez” kevésbé szakszerű, kissé körülményes megfogalmazás."
+    },
+    {
+      "line_approx": 254,
+      "category": "register",
+      "severity": "low",
+      "original": "Ugyanazokat a kimeneteket kell előállítania, mint a kézi munkafolyamatunknak.",
+      "suggested": "Ugyanazokat a kimeneteket kell előállítania, mint a kézi munkafolyamatnak.",
+      "reason": "A birtokos személyjel itt felesleges; általános megállapításként természetesebb nélküle."
+    },
+    {
+      "line_approx": 256,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezután egy másik adatkészletre három sor megváltoztatásával válthatunk, ahelyett hogy az egész szkriptet átkutatnánk.",
+      "suggested": "Ezután három sor módosításával másik adatkészletre is átállhatunk, ahelyett hogy az egész szkriptet végig kellene keresnünk.",
+      "reason": "Az „adatkészletre váltunk” és az „átkutatnánk” itt kissé angolos, nehézkes."
+    },
+    {
+      "line_approx": 260,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Soha nem kell a Pythont „alulról felfelé\" tanulni elvontan; a már megértett munka kontextusában sajátítjuk el.",
+      "suggested": "A Pythont nem kell elvont módon, az alapoktól kezdve tanulni; a már megértett munka összefüggésében sajátítjuk el.",
+      "reason": "Az „alulról felfelé” és a „munka kontextusában” egyaránt angol mintát követő tükörfordítás."
+    },
+    {
+      "line_approx": 268,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy kis fogalomkészlet lefedi a hidrológiai automatizáláshoz szükséges tudás túlnyomó részét.",
+      "suggested": "Néhány alapfogalom lefedi a hidrológiai automatizáláshoz szükséges ismeretek túlnyomó részét.",
+      "reason": "A „kis fogalomkészlet” és a „tudás lefedése” kevésbé természetes magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 271,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 12.6.1 Import utasítások: az eszköztár betöltése",
+      "suggested": "### 12.6.1 Importutasítások: a szükséges könyvtárak betöltése",
+      "reason": "Az „eszköztár betöltése” metaforikus és pontatlan; itt könyvtárakról, modulokról van szó."
+    },
+    {
+      "line_approx": 273,
+      "category": "register",
+      "severity": "medium",
+      "original": "ArcGIS szkripteléshez a szabványos importálások:",
+      "suggested": "ArcGIS-szkripteléshez a szokásos importutasítások:",
+      "reason": "A „szabványos importálások” tükörfordításízű; a „szokásos importutasítások” bevettebb."
+    },
+    {
+      "line_approx": 283,
+      "category": "register",
+      "severity": "medium",
+      "original": "QGIS szkripteléshez az egyenértékű importálások:",
+      "suggested": "QGIS-szkripteléshez ennek megfelelő importutasítások használhatók:",
+      "reason": "Az „egyenértékű importálások” idegenszerű megfogalmazás."
+    },
+    {
+      "line_approx": 295,
+      "category": "calque",
+      "severity": "low",
+      "original": "Gondoljunk rá úgy, mint egy recept hozzávalólistájára.",
+      "suggested": "Úgy is felfoghatjuk, mint egy recept hozzávalólistáját.",
+      "reason": "A „gondoljunk rá úgy, mint” szerkezet angol mintát követ; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 311,
+      "category": "register",
+      "severity": "medium",
+      "original": "A felülírás True-ra állítása a szkript elején teljesen kiküszöböli ezt a súrlódást.",
+      "suggested": "Ha a szkript elején a felülírást True-ra állítjuk, ezzel teljesen kiküszöbölhetjük ezt a nehézséget.",
+      "reason": "A „súrlódás” itt angol szaknyelvi metafora tükörfordítása."
+    },
+    {
+      "line_approx": 492,
+      "category": "register",
+      "severity": "medium",
+      "original": "Senki nem ír ilyen szkriptet az alapoktól, egyetlen nekifutásra.",
+      "suggested": "Ilyen szkriptet senki sem ír meg a nulláról, egyetlen nekifutásra.",
+      "reason": "Az „az alapoktól” és az „ír ilyen szkriptet” szerkezet kissé idegenszerű; a javasolt változat természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 496,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Nyissuk meg az ArcGIS Pro Python ablakát.",
+      "suggested": "Nyissuk meg az ArcGIS Pro Python-ablakát.",
+      "reason": "Az összetett szakkifejezés magyarul kötőjelesen természetesebb."
+    },
+    {
+      "line_approx": 496,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Írjuk be az import utasításokat.",
+      "suggested": "Írjuk be az importutasításokat.",
+      "reason": "A magyar szaknyelvben az összetett alak gördülékenyebb."
+    },
+    {
+      "line_approx": 496,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Építsük a szkriptet egyenként, minden eredményt ellenőrizve a továbblépés előtt.",
+      "suggested": "Lépésről lépésre építsük fel a szkriptet, és minden eredményt ellenőrizzünk, mielőtt továbblépünk.",
+      "reason": "Az „építsük ... egyenként” angolos, a mondat vége pedig főnévi igenévesen túl tömör."
+    },
+    {
+      "line_approx": 498,
+      "category": "calque",
+      "severity": "medium",
+      "original": "2. fázis: Másolás fájlba.",
+      "suggested": "2. fázis: Mentés fájlba.",
+      "reason": "A cím szó szerinti fordításnak hat; itt a „mentés” természetesebb magyar műszaki megfogalmazás."
+    },
+    {
+      "line_approx": 498,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mentsük el a jegyzőkönyvet",
+      "suggested": "mentsük el a munkamenet naplóját",
+      "reason": "A „jegyzőkönyv” ebben a szoftveres kontextusban pontatlan; a „napló” vagy „munkamenet naplója” bevettebb."
+    },
+    {
+      "line_approx": 498,
+      "category": "register",
+      "severity": "medium",
+      "original": "rendezzük el a rendetlen részeket",
+      "suggested": "rendezzük át a még kiforratlan részeket",
+      "reason": "A „rendetlen részek” köznyelvi és kissé ügyetlen ebben az akadémiai regiszterben."
+    },
+    {
+      "line_approx": 498,
+      "category": "terminology",
+      "severity": "low",
+      "original": "tegyünk be kiíró utasításokat",
+      "suggested": "iktassunk be kiíró utasításokat",
+      "reason": "A „tegyünk be” túl beszélt nyelvi; az „iktassunk be” szakmai szövegben természetesebb."
+    },
+    {
+      "line_approx": 500,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Helyezzünk minden felhasználó által konfigurálható beállítást a szkript tetejére, egyértelműen jelölt szekcióba.",
+      "suggested": "A felhasználó által módosítható beállításokat tegyük a szkript elején egy jól elkülönített szakaszba.",
+      "reason": "A „felhasználó által konfigurálható” és a „szekció” angolos, nehézkes megfogalmazás."
+    },
+    {
+      "line_approx": 500,
+      "category": "register",
+      "severity": "low",
+      "original": "Így más vizsgálati területre könnyedén adaptálhatjuk",
+      "suggested": "Így könnyen hozzáigazíthatjuk más vizsgálati területhez",
+      "reason": "Az „adaptálhatjuk” idegen hangzású; a magyaros ige természetesebb."
+    },
+    {
+      "line_approx": 502,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Adjuk hozzá a licencellenőrzést.",
+      "suggested": "Egészítsük ki a szkriptet licencellenőrzéssel.",
+      "reason": "Az „adjuk hozzá” tipikus angol mintájú fordulat; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 502,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Tegyünk `try/except` blokkokat a meghibásodásra hajlamos műveletek köré.",
+      "suggested": "A hibára hajlamos műveleteket foglaljuk `try/except` blokkokba.",
+      "reason": "A „blokkokat ... köré tenni” szó szerinti fordításnak hat; a magyaros szerkezet egyszerűbb."
+    },
+    {
+      "line_approx": 506,
+      "category": "register",
+      "severity": "high",
+      "original": "Ez a szkriptelés alapvető értékajánlata:",
+      "suggested": "Ez a szkriptelés egyik alapvető előnye:",
+      "reason": "Az „értékajánlat” üzleti zsargon, tudományos tankönyvben idegenül hat."
+    },
+    {
+      "line_approx": 506,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a munkafolyamat felépítésébe fektetett szellemi befektetés egyszer történik meg",
+      "suggested": "a munkafolyamat kidolgozásába fektetett szellemi munka csak egyszer szükséges",
+      "reason": "A „szellemi befektetés ... történik meg” angolos és nehézkes."
+    },
+    {
+      "line_approx": 506,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "alkalmazhatja a Zagyvára, a Rábára, a Sajóra vagy bármely más folyómedencére",
+      "suggested": "használhatja a Zagyva, a Rába, a Sajó vagy bármely más vízgyűjtő esetében",
+      "reason": "A szöveg korábban vízgyűjtőkről beszél; a „folyómedence” terminológiailag nem teljesen azonos."
+    },
+    {
+      "line_approx": 518,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A `try/except` blokk biztosítja, hogy egyetlen vízgyűjtő meghibásodása ne állítsa le a teljes köteget.",
+      "suggested": "A `try/except` blokk gondoskodik arról, hogy egyetlen vízgyűjtő feldolgozási hibája se állítsa le a teljes kötegelt futást.",
+      "reason": "A „biztosítja” túl általános anglicizmus, a „teljes köteg” pedig itt pontatlan és idegenszerű."
+    },
+    {
+      "line_approx": 518,
+      "category": "register",
+      "severity": "low",
+      "original": "Reggel áttekintjük a naplót",
+      "suggested": "Másnap áttekintjük a naplót",
+      "reason": "A „Reggel” túl narratív, kevésbé tankönyvszerű megfogalmazás."
+    },
+    {
+      "line_approx": 524,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Minden vízgyűjtő egymástól függetlenül kerül feldolgozásra; a hibákat a rendszer naplózza és külön újrapróbálja.",
+      "suggested": "A rendszer minden vízgyűjtőt egymástól függetlenül dolgoz fel; a hibákat naplózza, majd külön újrapróbálja a sikertelen eseteket.",
+      "reason": "A „kerül feldolgozásra” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 532,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve a folyás arányos elosztását két lejtő irányú szomszéd között",
+      "suggested": "így a folyás arányosan osztható meg két lejtőirányban fekvő szomszédos cella között",
+      "reason": "A „lehetővé téve” és a „lejtő irányú szomszéd” angolos, illetve terminológiailag darabos."
+    },
+    {
+      "line_approx": 1203,
+      "category": "register",
+      "severity": "low",
+      "original": "A koszinusz tényező a délkörök sarkok felé történő konvergenciáját veszi figyelembe",
+      "suggested": "A koszinusztényező figyelembe veszi, hogy a délkörök a sarkok felé összetartanak",
+      "reason": "A jelenlegi megfogalmazás körülményes és fordításszagú; igés szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 1204,
+      "category": "register",
+      "severity": "low",
+      "original": "egy hosszúsági fok körülbelül 111 km-t ölel át",
+      "suggested": "egy hosszúsági fok körülbelül 111 km-nek felel meg",
+      "reason": "Az „ölel át” ebben a műszaki kontextusban kissé idegenül hangzik."
+    },
+    {
+      "line_approx": 1216,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ArcPy-ban egy raszter vetítése földrajzi koordinátákról vetített koordináta-rendszerre egyetlen függvényhívás:",
+      "suggested": "ArcPy-ban egy rasztert földrajzi koordinátákról vetített koordináta-rendszerbe egyetlen függvényhívással vetíthetünk át:",
+      "reason": "Az eredeti mondat hiányos állítmányú, angolos szerkezet; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 1227,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy térbeli referenciaobjektumot hoz létre",
+      "suggested": "egy koordináta-rendszert leíró objektumot hoz létre",
+      "reason": "A „térbeli referenciaobjektum” szó szerinti fordítás; magyar szaknyelvben nehézkes és szokatlan."
+    },
+    {
+      "line_approx": 1228,
+      "category": "register",
+      "severity": "low",
+      "original": "Alternatívaként a koordináta-rendszert a well-known text (WKT) karakterláncával vagy egy `.prj` fájl elérési útjával is megadhatjuk.",
+      "suggested": "A koordináta-rendszert megadhatjuk a well-known text (WKT) karakterlánccal vagy egy `.prj` fájl elérési útjával is.",
+      "reason": "Az „alternatívaként” itt felesleges, a mondat egyszerűbben és gördülékenyebben fogalmazható."
+    },
+    {
+      "line_approx": 1231,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "QGIS/GDAL esetén az egyenértékű művelet a `gdalwarp`-ot használja:",
+      "suggested": "QGIS/GDAL esetén ugyanezt a műveletet a `gdalwarp` végzi:",
+      "reason": "Az „egyenértékű művelet ... használja” angolos megfogalmazás."
+    },
+    {
+      "line_approx": 1249,
+      "category": "register",
+      "severity": "medium",
+      "original": "Magyar térinformatikai adatokkal EOV vetületben való munkavégzés során",
+      "suggested": "Magyar térinformatikai adatok EOV vetületben történő használatakor",
+      "reason": "A jelenlegi szerkezet nehézkes és túlterhelt; egyszerűbben is megfogalmazható."
+    },
+    {
+      "line_approx": 1250,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "hibásan vannak felcímkézve",
+      "suggested": "hibásan vannak megjelölve",
+      "reason": "A „felcímkézve” közvetlen angol tükörfordítás („labeled”), magyar tudományos prózában idegenül hat."
+    },
+    {
+      "line_approx": 1251,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a northing (Y) értékek",
+      "suggested": "az északi irányú (Y) koordinátaértékek",
+      "reason": "A „northing” feleslegesen meghagyott angol terminus; van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 1251,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az easting (X) értékek",
+      "suggested": "a keleti irányú (X) koordinátaértékek",
+      "reason": "Az „easting” feleslegesen meghagyott angol terminus; magyarul természetesebben adható vissza."
+    },
+    {
+      "line_approx": 1256,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Hidrológiai domborzatelemzéshez nyújt eszközegyüttest",
+      "suggested": "A hidrológiai domborzatelemzéshez eszközkészletet kínál",
+      "reason": "Az „nyújt eszközegyüttest” nehézkes, kevéssé idiomatikus megfogalmazás."
+    },
+    {
+      "line_approx": 1256,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "implementálja a Tarboton által kifejlesztett D-végtelen algoritmust",
+      "suggested": "megvalósítja a Tarboton által kifejlesztett D-végtelen algoritmust",
+      "reason": "Az „implementálja” tipikus hunglish; magyar tudományos szövegben a „megvalósítja” természetesebb."
+    },
+    {
+      "line_approx": 1258,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 12.10.1 Architektúra: C++ mag, Python-burkoló",
+      "suggested": "### 12.10.1 Felépítés: C++-mag és Python-felület",
+      "reason": "Az „architektúra” és különösen a „Python-burkoló” ebben a címben angolosan, műszakilag mereven hangzik."
+    },
+    {
+      "line_approx": 1260,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A TauDEM a tudományos számítástechnikában elterjedt és hatékony architektúrát példázza: fordított C++-ban írt nagy teljesítményű számítási mag, Python-felületbe csomagolva.",
+      "suggested": "A TauDEM a tudományos számítástechnikában elterjedt, hatékony felépítést követi: nagy teljesítményű, C++-ban írt számítási magra Python-felület épül.",
+      "reason": "A „fordított C++-ban írt” hibás, a „Python-felületbe csomagolva” pedig szó szerinti és nehézkes fordítás."
+    },
+    {
+      "line_approx": 1261,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az utóbbi kezeli a felhasználó felé néző aspektusokat",
+      "suggested": "Ez utóbbi kezeli a felhasználói oldali feladatokat",
+      "reason": "A „felhasználó felé néző aspektusok” közvetlen angol tükörfordítás, magyarul természetellenes."
+    },
+    {
+      "line_approx": 1274,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy kontinentális léptékű DEM, amelynek egyetlen maggal való feldolgozása órákat venne igénybe, 32 párhuzamos folyamattal percek alatt elkészülhet.",
+      "suggested": "Egy kontinentális léptékű DEM feldolgozása, amely egyetlen maggal órákig tartana, 32 párhuzamos folyamattal percekre rövidülhet.",
+      "reason": "Az „elkészülhet” itt pongyola; a mondat tömörebben és szakmailag pontosabban is megfogalmazható."
+    },
+    {
+      "line_approx": 1276,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Python-burkoló réteg",
+      "suggested": "A Python-felület",
+      "reason": "A „burkoló” az angol „wrapper” tükörfordítása; magyarul ebben a kontextusban a „felület” vagy „réteg” természetesebb."
+    },
+    {
+      "line_approx": 1311,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Linux-számítási fürtön ugyanez a szkript kötegelt feladatként nyújtható be",
+      "suggested": "Linuxos számítási fürtön ugyanez a szkript kötegelt feladatként futtatható",
+      "reason": "A „nyújtható be” az angol „submitted” tükörfordítása; magyarul itt a „futtatható” vagy „indítható” természetesebb."
+    },
+    {
+      "line_approx": 1319,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Minden cella kiértékelése csak azután történik meg, miután az összes hozzá folyást hozzájáruló cella feldolgozásra került.",
+      "suggested": "Minden cellát csak azután értékel ki a rendszer, hogy az összes, hozzá hozzájáruló folyást adó cellát feldolgozta.",
+      "reason": "Kettős szenvedő jellegű szerkezet („kiértékelése történik meg”, „feldolgozásra került”), ráadásul nehézkes mondatfűzés."
+    },
+    {
+      "line_approx": 1608,
+      "category": "register",
+      "severity": "low",
+      "original": "A megtisztított változat rövidebb, olvashatóbb és karbantarthatóbb.",
+      "suggested": "A letisztított változat rövidebb, olvashatóbb és könnyebben karbantartható.",
+      "reason": "A „megtisztított változat” ebben a kontextusban kissé idegenszerű; a „letisztított” természetesebb szakmai stílusban."
+    },
+    {
+      "line_approx": 1609,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az egyikből a másikba történő átalakítás kiváló tanulási gyakorlat -- arra kényszerít, hogy megértsük az egyes sorok szerepét, és felismerjük, mi elengedhetetlen és mi generált sablonszöveg.",
+      "suggested": "Az egyik változat átalakítása a másikká kiváló tanulási gyakorlat: rákényszerít, hogy megértsük az egyes sorok szerepét, és felismerjük, mi az elengedhetetlen elem, és mi csupán generált sablonszöveg.",
+      "reason": "A „-ba történő átalakítás” szerkezet körülményes, angolos; az egész mondat magyarosabban, tömörebben fogalmazható."
+    },
+    {
+      "line_approx": 1613,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A QGIS egyenértékű vizuális modellezőeszközt biztosít a Processing Graphical Modeler-en keresztül, amely a Processing menüből érhető el.",
+      "suggested": "A QGIS-ben is van hasonló vizuális modellezőeszköz, a Processing Graphical Modeler, amely a Processing menüből érhető el.",
+      "reason": "A „biztosít ... keresztül” szerkezet tipikus fordításszagú megoldás; a javasolt változat természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 1614,
+      "category": "register",
+      "severity": "low",
+      "original": "A koncepció azonos: algoritmusokat húzunk egy vászonra, bemeneteket és kimeneteket kötünk össze, paramétereket állítunk be, és futtatjuk a modellt.",
+      "suggested": "Az alapelv ugyanaz: algoritmusokat helyezünk el a munkafelületen, összekötjük a bemeneteket és kimeneteket, beállítjuk a paramétereket, majd futtatjuk a modellt.",
+      "reason": "A „koncepció azonos” és a „vászon” itt kissé tükörfordítás-ízű; az „alapelv” és „munkafelület” természetesebb."
+    },
+    {
+      "line_approx": 1616,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A QGIS Python-exportálási funkciója a `processing.run()` függvényt használó kódot állít elő, amely a Processing-algoritmusok Pythonból történő meghívásának szabványos módja:",
+      "suggested": "A QGIS Python-exportálási funkciója olyan kódot állít elő, amely a `processing.run()` függvényt használja; ez a Processing-algoritmusok Pythonból való meghívásának szabványos módja:",
+      "reason": "A jelzős szerkezet túlterhelt; a mondat tagolása magyarosabb és könnyebben követhető."
+    },
+    {
+      "line_approx": 1629,
+      "category": "register",
+      "severity": "medium",
+      "original": "A szintaxis kevésbé intuitív az ArcPy-énál -- az olyan algoritmusnevek, mint `saga:fillsinksxxlwangliu`, nem önmagyarázók --, de a szerkezet konzisztens, és a Processing napló a pontos szintaxist biztosítja minden futtatott algoritmushoz, csakúgy mint az ArcGIS Pro Geoprocessing History-ja.",
+      "suggested": "A szintaxis kevésbé magától értetődő, mint az ArcPy esetében -- az olyan algoritmusnevek, mint `saga:fillsinksxxlwangliu`, nem önmagyarázók --, de a szerkezet következetes, és a Processing napló minden futtatott algoritmushoz megadja a pontos szintaxist, akárcsak az ArcGIS Pro Geoprocessing History-ja.",
+      "reason": "Az „intuitív”, „konzisztens” és „biztosítja” együtt angolos hatású; a javasolt megfogalmazás természetesebb magyar szaknyelv."
+    },
+    {
+      "line_approx": 1633,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 12.12 QGIS és PyQGIS mint nyílt forráskódú alternatíva",
+      "suggested": "## 12.12 A QGIS és a PyQGIS mint nyílt forráskódú alternatíva",
+      "reason": "A cím névelő nélkül kissé töredezett; a magyar címadásban a névelős forma gördülékenyebb."
+    },
+    {
+      "line_approx": 1635,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ArcPy-ról eddig elmondott mindennek megvan a nyílt forráskódú megfelelője a QGIS ökoszisztémában.",
+      "suggested": "Az ArcPy-val kapcsolatban eddig tárgyalt megoldásoknak megvannak a nyílt forráskódú megfelelőik a QGIS ökoszisztémában.",
+      "reason": "Az „eddig elmondott mindennek megvan” szerkezet nehézkes és fordításszagú."
+    },
+    {
+      "line_approx": 1635,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Olyan intézmények számára, amelyek nem rendelkeznek ArcGIS Pro licenccel, olyan elemzésekhez, amelyeknek szabad szoftverrel reprodukálhatónak kell lenniük, vagy Linux-szervereken és felhő-infrastruktúrán történő telepítéshez a QGIS és Python-felülete (PyQGIS) teljes alternatívát nyújt a hidrológiai térinformatikai automatizáláshoz.",
+      "suggested": "Azoknak az intézményeknek, amelyek nem rendelkeznek ArcGIS Pro licenccel, illetve olyan elemzésekhez, amelyeknek szabad szoftverrel is reprodukálhatónak kell lenniük, továbbá Linux-szerveres vagy felhőalapú telepítés esetén a QGIS és Python-felülete, a PyQGIS, teljes értékű alternatívát kínál a hidrológiai térinformatikai automatizáláshoz.",
+      "reason": "A mondat elején halmozott határozói szerkezetek és a „történő telepítéshez” forma angolosan nehézkes."
+    },
+    {
+      "line_approx": 1639,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "Hozzáférést biztosít a QGIS adatmodelljéhez, megjelenítő motorjához és Processing keretrendszeréhez Python-szkriptekből.",
+      "suggested": "Python-szkriptekből hozzáférést ad a QGIS adatmodelljéhez, megjelenítőmotorjához és Processing keretrendszeréhez.",
+      "reason": "A „hozzáférést biztosít” túl gyakori angolos fordulat; az „hozzáférést ad” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 1645,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez lehetővé teszi a grafikus megjelenítés nélküli feldolgozást szervereken.",
+      "suggested": "Így szervereken grafikus felület nélküli feldolgozás is végezhető.",
+      "reason": "A „lehetővé teszi” sablonos; a javasolt változat közvetlenebb és magyarosabb."
+    },
+    {
+      "line_approx": 1647,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A QGIS Processing keretrendszere egységes Python-felületet biztosít több szolgáltató algoritmusaihoz: natív QGIS, GRASS GIS, SAGA GIS, GDAL és harmadik féltől származó bővítmények, beleértve a WhiteboxTools-t és a TauDEM-et.",
+      "suggested": "A QGIS Processing keretrendszere egységes Python-felületet ad több szolgáltató algoritmusaihoz: a natív QGIS, a GRASS GIS, a SAGA GIS, a GDAL és külső bővítmények -- köztük a WhiteboxTools és a TauDEM -- eszközeihez.",
+      "reason": "A „szolgáltató algoritmusaihoz” terminológia itt bizonytalanul hangzik; magyarul világosabb az eszközökre, illetve szolgáltatók eszközeire utalni."
+    },
+    {
+      "line_approx": 1649,
+      "category": "register",
+      "severity": "low",
+      "original": "A Processing keretrendszeres megközelítés a legpraktikusabb a hidrológiai automatizáláshoz, mert a legszélesebb algoritmuskínálathoz biztosít hozzáférést konzisztens felületen keresztül.",
+      "suggested": "A hidrológiai automatizálásban a Processing keretrendszerre épülő megközelítés a legpraktikusabb, mert ezen keresztül érhető el a legszélesebb algoritmuskínálat, egységes felületen.",
+      "reason": "A „biztosít hozzáférést konzisztens felületen keresztül” fordításszagú; a javasolt változat magyarosabb."
+    },
+    {
+      "line_approx": 1671,
+      "category": "register",
+      "severity": "medium",
+      "original": "Alább a 12.7. szakasz ArcPy-szkriptjének megfelelő vízgyűjtő-lehatárolási munkafolyamat következik, QGIS Processing-algoritmusokkal megvalósítva.",
+      "suggested": "Az alábbiakban a 12.7. szakasz ArcPy-szkriptjének megfelelő, QGIS Processing-algoritmusokkal megvalósított vízgyűjtő-lehatárolási munkafolyamatot mutatjuk be.",
+      "reason": "Az „Alább ... következik” szerkezet kissé esetlen; a javasolt forma tankönyvi stílusban gördülékenyebb."
+    },
+    {
+      "line_approx": 1709,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Érdemes megjegyezni, hogy a GRASS GIS `r.watershed` algoritmusa egyetlen hívással több lépést hajt végre -- egyidejűleg számítja a folyásakkumulációt, a lecsapolási irányt, a medencéket és a vízhálózatot.",
+      "suggested": "Érdemes megjegyezni, hogy a GRASS GIS `r.watershed` algoritmusa egyetlen hívással több lépést hajt végre -- egyidejűleg számítja a vízgyülekezést, a lefolyási irányt, a medencéket és a vízhálózatot.",
+      "reason": "A „lecsapolási irány” ebben a hidrológiai kontextusban szokatlan; bevettebb a „lefolyási irány”. A „folyásakkumuláció” helyett a „vízgyülekezés” természetesebb magyar szakmai megfelelő lehet."
+    },
+    {
+      "line_approx": 1713,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 12.12.3 WhiteboxTools: modern nyílt forráskódú alternatíva",
+      "suggested": "### 12.12.3 A WhiteboxTools mint modern nyílt forráskódú alternatíva",
+      "reason": "A cím névelős, mondatszerű formában természetesebben illeszkedik a fejezet többi alcíméhez."
+    },
+    {
+      "line_approx": 1715,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A WhiteboxTools-t John Lindsay fejlesztette a University of Guelph-en; ez egy gyorsan fejlődő nyílt forráskódú térinformatikai elemzőplatform.",
+      "suggested": "A WhiteboxTools-t John Lindsay fejlesztette a University of Guelphön; ez egy gyorsan fejlődő, nyílt forráskódú térinformatikai elemzőplatform.",
+      "reason": "Az „University of Guelph-en” angolos raghasználat; magyar szövegben a névhez közvetlenül kapcsolt rag természetesebb."
+    },
+    {
+      "line_approx": 1001,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a minta módosítás nélkül skálázódik több ezer bemenetre.",
+      "suggested": "Ez a megoldás módosítás nélkül is alkalmazható több ezer bemenetre.",
+      "reason": "A „skálázódik” angolos, informatikai zsargon; magyar tudományos prózában természetesebb az „alkalmazható” vagy „jól skálázható”."
+    },
+    {
+      "line_approx": 1005,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Python `logging` modulja biztosítja ezt:",
+      "suggested": "Erre a Python `logging` modulja szolgál:",
+      "reason": "A „biztosítja ezt” szó szerinti angol mintát követ; magyarul tömörebb, természetesebb megfogalmazás célszerű."
+    },
+    {
+      "line_approx": 1020,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A naplófájl minden sikert és kudarcot időbélyeggel rögzít, auditálási nyomvonalat hozva létre, amelyet másnap reggel áttekinthetünk.",
+      "suggested": "A naplófájl minden sikert és kudarcot időbélyeggel rögzít, így ellenőrizhető nyomvonalat ad, amelyet másnap reggel áttekinthetünk.",
+      "reason": "Az „auditálási nyomvonal” tükörfordítás-ízű; magyarul az „ellenőrizhető nyomvonal” vagy „auditnyom” természetesebb."
+    },
+    {
+      "line_approx": 1021,
+      "category": "calque",
+      "severity": "high",
+      "original": "A termelési munkafolyamatoknál -- különösen amelyek szabályozási jelentésekbe torkollnak -- az ilyen naplózás nem opcionális, hanem követelmény.",
+      "suggested": "Az üzemi munkafolyamatokban -- különösen ha szabályozási jelentések alapjául szolgálnak -- az ilyen naplózás nem választható lehetőség, hanem követelmény.",
+      "reason": "A „termelési munkafolyamatok” és a „jelentésekbe torkollnak” angolos, természetellenes fordulatok."
+    },
+    {
+      "line_approx": 1024,
+      "category": "heading",
+      "severity": "high",
+      "original": "### 12.13.3 A magyar HUC-megfelelők feldolgozása",
+      "suggested": "### 12.13.3 A HUC magyar megfelelőinek feldolgozása",
+      "reason": "A „magyar HUC-megfelelők” szerkezet nehézkes és angolos; a birtokos szerkezet természetesebb."
+    },
+    {
+      "line_approx": 1025,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az egyenértékű osztályozás az EU Víz Keretirányelv szerinti vízgyűjtő-kerületeken alapul, az OVF (Országos Vízügyi Főigazgatóság) által fenntartott részvízgyűjtő-struktúrával kombinálva.",
+      "suggested": "A nagyjából ennek megfelelő osztályozás az EU Víz Keretirányelve szerinti vízgyűjtőkerületeken alapul, az OVF (Országos Vízügyi Főigazgatóság) által fenntartott részvízgyűjtői struktúrával együtt.",
+      "reason": "A „vízgyűjtő-kerületeken” írásmód szokatlan, a „kombinálva” szerkezet pedig fordításszagú."
+    },
+    {
+      "line_approx": 1026,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Duna vízgyűjtőkerülete, amely egész Magyarországot lefedi, tervezési egységekre tagolódik, amelyek nagyjából a fő mellékfolyók vízgyűjtőinek felelnek meg: Tisza, Dráva, Balaton és a különböző Duna-részvízgyűjtők.",
+      "suggested": "Az egész Magyarországot lefedő Duna vízgyűjtőkerület tervezési egységekre tagolódik, amelyek nagyjából a fő mellékfolyók vízgyűjtőinek felelnek meg: a Tiszáéhoz, a Dráváéhoz, a Balatonéhoz és a különböző Duna-részvízgyűjtőkéhez.",
+      "reason": "A mondat szórendje és a felsorolás vége magyarul nehézkes; a viszonyok pontosabb kifejtése természetesebb."
+    },
+    {
+      "line_approx": 1028,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy gyakorlati kötegelt feldolgozási forgatókönyv a magyar hidrológia számára magában foglalhatja a Tisza vízgyűjtőjén belüli összes részvízgyűjtő lehatárolását a Copernicus GLO-30 DEM-ből.",
+      "suggested": "A magyar hidrológiai gyakorlatban egy reális kötegelt feldolgozási feladat lehet a Tisza vízgyűjtőjén belüli összes részvízgyűjtő lehatárolása a Copernicus GLO-30 DEM alapján.",
+      "reason": "A „forgatókönyv ... számára magában foglalhatja” angolos szerkezet; magyarul egyszerűbb, igés megoldás természetesebb."
+    },
+    {
+      "line_approx": 1029,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A Tisza vízgyűjtője mintegy 157 000 km2-t fed le öt országban",
+      "suggested": "A Tisza vízgyűjtője mintegy 157 000 km² területre terjed ki öt országban",
+      "reason": "A „fed le” tükörfordítás-ízű; terület megadásánál a „terjed ki” természetesebb."
+    },
+    {
+      "line_approx": 1030,
+      "category": "register",
+      "severity": "medium",
+      "original": "A 30 méteres felbontású feldolgozás hozzávetőleg 5200 x 5200 cellás rasztert jelent egyfokonkénti csempénként, több tucat csempével a vízgyűjtő lefedéséhez.",
+      "suggested": "30 méteres felbontás mellett egy egyfokos csempe hozzávetőleg 5200 × 5200 cellás raszternek felel meg, és a teljes vízgyűjtő lefedéséhez több tucat ilyen csempe szükséges.",
+      "reason": "Az eredeti mondat zsúfolt és angolos szerkezetű; a viszonyok világosabb tagolása természetesebb."
+    },
+    {
+      "line_approx": 1031,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Egy szkript, amely letölti a releváns DEM-csempéket, mozaikolja őket, kitölti a mélyedéseket, kiszámítja a folyásirányokat, és több küszöbszinten lehatárolja a részvízgyűjtőket, pontosan az a fajta munkafolyamat, amely igazolja a szkriptelésbe történő befektetést.",
+      "suggested": "Az a szkript, amely letölti a szükséges DEM-csempéket, mozaikolja őket, kitölti a mélyedéseket, kiszámítja a folyásirányokat, majd több küszöbszinten lehatárolja a részvízgyűjtőket, jól mutatja, miért érdemes a szkriptelésbe időt fektetni.",
+      "reason": "A „pontosan az a fajta munkafolyamat” és a „befektetés igazolása” angolos, körülményes megfogalmazás."
+    },
+    {
+      "line_approx": 1033,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Európai léptékű elemzéshez a JRC (Közös Kutatóközpont) CCM (Catchment Characterisation and Modelling) adatkészlete egész Európára biztosít előre lehatárolt folyómedencéket és vízgyűjtőket.",
+      "suggested": "Európai léptékű elemzésekhez a JRC (Közös Kutatóközpont) CCM (Catchment Characterisation and Modelling) adatkészlete egész Európára kiterjedően kínál előre lehatárolt vízgyűjtőket és folyómedencéket.",
+      "reason": "A „biztosít” itt angolos használat; a mondat magyarul gördülékenyebb más igével."
+    },
+    {
+      "line_approx": 1037,
+      "category": "plural",
+      "severity": "low",
+      "original": "Minden térinformatikai szkriptelő ugyanazokba a problémákba ütközik.",
+      "suggested": "Minden térinformatikai szkriptelő hasonló problémákba ütközik.",
+      "reason": "Az „ugyanazokba a problémákba” túl kategorikus és kissé angolos; a magyarban itt természetesebb az általánosabb megfogalmazás."
+    },
+    {
+      "line_approx": 1043,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az IDE-nkben állítsuk az interpretert a következőre:",
+      "suggested": "Az IDE-ben állítsuk a Python-értelmezőt a következőre:",
+      "reason": "Az „interpreter” helyett a magyar szaknyelvben természetesebb a „Python-értelmező”."
+    },
+    {
+      "line_approx": 1048,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "QGIS esetén az egyenértékű probléma akkor fordul elő, ha a szkriptet a QGIS-környezeten kívül futtatjuk, a QGIS könyvtárak megfelelő inicializálása nélkül.",
+      "suggested": "QGIS esetén ugyanez a probléma akkor jelentkezik, ha a szkriptet a QGIS környezetén kívül futtatjuk, a QGIS-könyvtárak megfelelő inicializálása nélkül.",
+      "reason": "Az „egyenértékű probléma” tükörfordítás; a „QGIS-könyvtárak” kötőjeles írásmód is természetesebb."
+    },
+    {
+      "line_approx": 1054,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro zárolásokat helyez el az aktuális térképen megjelenített adatkészletekre.",
+      "suggested": "Az ArcGIS Pro zárolja az aktuális térképen megjelenített adatkészleteket.",
+      "reason": "A „zárolásokat helyez el” körülményes, hivataloskodó szerkezet."
+    },
+    {
+      "line_approx": 1055,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Amikor egy szkript megpróbál felülírni egy éppen megjelenített rasztert, az írási művelet meghiúsul, mert a fájl zárolva van.",
+      "suggested": "Ha egy szkript megpróbál felülírni egy éppen megjelenített rasztert, az írási művelet azért hiúsul meg, mert a fájl zárolva van.",
+      "reason": "A mondat hangsúlyos része magyarul természetesebben kerül az ige elé."
+    },
+    {
+      "line_approx": 1057,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "zárjuk be a céloldali adatkészleteket megjelenítő térképnézeteket",
+      "suggested": "zárjuk be a céladathalmazokat megjelenítő térképnézeteket",
+      "reason": "A „céloldali” angolos tükörfordítás; magyarul a „cél-” előtag vagy a birtokos szerkezet természetesebb."
+    },
+    {
+      "line_approx": 1063,
+      "category": "other",
+      "severity": "medium",
+      "original": "A `C:\\Users\\new_project` útvonalban a `\\U` és `\\n` szekvenciák mindketten speciális escape karakterek.",
+      "suggested": "A `C:\\Users\\new_project` útvonalban a `\\U` és `\\n` szekvenciák egyaránt speciális escape-szekvenciák.",
+      "reason": "A „mindketten” személyekre jellemző használat, itt stilisztikailag hibás; a „karakterek” helyett pontosabb a „szekvenciák”."
+    },
+    {
+      "line_approx": 1065,
+      "category": "register",
+      "severity": "low",
+      "original": "A nyers karakterláncok a legtisztább megközelítés.",
+      "suggested": "A nyers karakterláncok használata a legegyszerűbb megoldás.",
+      "reason": "A „legtisztább megközelítés” angolos fordulat."
+    },
+    {
+      "line_approx": 1070,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A Spatial Analyst bővítmény nincs kivéve, vagy nem áll rendelkezésre licenc.",
+      "suggested": "A Spatial Analyst bővítmény licence nincs lefoglalva, vagy nem áll rendelkezésre.",
+      "reason": "A „licenc ki van véve” az angol „checked out” szó szerinti, félrevezető fordítása."
+    },
+    {
+      "line_approx": 1072,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Ha nincs elérhető licenc, ellenőrizzük a szervezetünk licenckezelőjét, vagy fontoljuk meg nyílt forráskódú alternatívák használatát.",
+      "suggested": "Ha nincs elérhető licenc, ellenőrizzük a szervezet licenckezelő rendszerét, vagy fontoljuk meg nyílt forráskódú alternatívák használatát.",
+      "reason": "A „licenckezelője” személyre utaló, pontatlan megfogalmazás; itt rendszerről vagy szolgáltatásról van szó."
+    },
+    {
+      "line_approx": 1077,
+      "category": "register",
+      "severity": "medium",
+      "original": "de nem produkál kimenetet, vagy rosszul kinéző kimenetet ad.",
+      "suggested": "de nem hoz létre kimenetet, vagy hibásnak tűnő kimenetet ad.",
+      "reason": "A „produkál” és a „rosszul kinéző” köznyelvi, angolos hatású."
+    },
+    {
+      "line_approx": 1079,
+      "category": "register",
+      "severity": "medium",
+      "original": "Többféle lehetőség.",
+      "suggested": "Ennek több oka is lehet.",
+      "reason": "Az eredeti töredékes, nem természetes magyar mondat."
+    },
+    {
+      "line_approx": 1079,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A kimenet más helyre íródott, mint amire számítottunk",
+      "suggested": "A kimenet nem oda íródott, ahová vártuk",
+      "reason": "Az „amire számítottunk” angolos; magyarul az „ahová vártuk” természetesebb."
+    },
+    {
+      "line_approx": 1080,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kimenet ideiglenes memóriabeli raszter, amelyet soha nem mentettünk",
+      "suggested": "A kimenet egy ideiglenes, memóriában tárolt raszter, amelyet nem mentettünk el",
+      "reason": "A „memóriabeli” és a „soha nem mentettünk” kevésbé természetes szakmai megfogalmazás."
+    },
+    {
+      "line_approx": 1081,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "mert nem került hozzáadásra a térképhez",
+      "suggested": "mert nem adtuk hozzá a térképhez",
+      "reason": "A „került hozzáadásra” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 1083,
+      "category": "register",
+      "severity": "low",
+      "original": "Adjunk print utasításokat minden lépés után a befejezés ellenőrzéséhez.",
+      "suggested": "Minden lépés után írjunk ki `print` utasítást, hogy ellenőrizni tudjuk a végrehajtást.",
+      "reason": "A „print utasításokat adni” kissé nyers fordítás; magyarul igés szerkezet természetesebb."
+    },
+    {
+      "line_approx": 1101,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 12.15 Gyakorlati tanácsok a dolgozó hidrológus számára",
+      "suggested": "## 12.15 Gyakorlati tanácsok gyakorló hidrológusoknak",
+      "reason": "A „dolgozó hidrológus” angolos, esetlen címmegoldás."
+    },
+    {
+      "line_approx": 1103,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a rész összesűríti azt a gyakorlati bölcsességet, amely elválasztja a hatékony térinformatikai szkriptelőt attól, aki órákat tölt elkerülhető problémák hibakeresésével.",
+      "suggested": "Ez a rész azokat a gyakorlati tapasztalatokat foglalja össze, amelyek megkülönböztetik a hatékony térinformatikai szkriptelőt attól, aki órákat tölt elkerülhető problémák hibakeresésével.",
+      "reason": "A „gyakorlati bölcsesség összesűrítése” angolos, stilárisan idegen."
+    },
+    {
+      "line_approx": 1108,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Új szkript felépítésének leghatékonyabb módja, ha egy már működő szkriptből indulunk ki, és fokozatosan módosítjuk.",
+      "suggested": "Új szkript készítésének leghatékonyabb módja, ha egy már működő változatból indulunk ki, és azt fokozatosan módosítjuk.",
+      "reason": "A „szkript felépítése” kissé tükörfordítás-ízű; a „készítés” természetesebb."
+    },
+    {
+      "line_approx": 1111,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez nem lustaság -- hanem mérnöki gyakorlat.",
+      "suggested": "Ez nem lustaság, hanem bevett mérnöki gyakorlat.",
+      "reason": "A mondat így gördülékenyebb és kevésbé retorikus."
+    },
+    {
+      "line_approx": 1126,
+      "category": "register",
+      "severity": "medium",
+      "original": "A vízgyűjtő-lehatárolási szkript mentális modellje:",
+      "suggested": "A vízgyűjtő-lehatárolási szkript logikai váza a következő:",
+      "reason": "A „mentális modell” angolos szakzsargon; magyar tankönyvben a „logikai váz” természetesebb."
+    },
+    {
+      "line_approx": 1131,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden szkriptfájlt verziókezelés alatt kell tartanunk Git segítségével.",
+      "suggested": "Minden szkriptfájlt érdemes Git-alapú verziókezelésben nyilvántartanunk.",
+      "reason": "A „verziókezelés alatt tartani” szó szerinti fordítás; magyarul természetesebb az „verziókezelésben nyilvántartani”."
+    },
+    {
+      "line_approx": 1133,
+      "category": "word_order",
+      "severity": "low",
+      "original": "a kód megosztásának lehetőségét munkatársakkal platformokon keresztül, mint a GitHub vagy az intézményi GitLab szerverek",
+      "suggested": "a kód megosztásának lehetőségét munkatársakkal olyan platformokon keresztül, mint a GitHub vagy az intézményi GitLab-szerverek",
+      "reason": "Az „mint a” előtti szerkezet szórendje angolos; a kötőjeles írásmód is természetesebb."
+    },
+    {
+      "line_approx": 1143,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "fordított nyelveknél, mint a C++ vagy a Rust",
+      "suggested": "fordított nyelveknél, például a C++-nál vagy a Rustnál",
+      "reason": "A „mint a” szerkezet itt angolos; a magyar tudományos stílusban a „például” természetesebb."
+    },
+    {
+      "line_approx": 1145,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Python-kód itt összekötő rétegként szolgál: összekapcsolja, konfigurálja és vezérli a fordított eszközöket.",
+      "suggested": "A Python-kód itt köztes rétegként működik: összekapcsolja, konfigurálja és vezérli ezeket a lefordított eszközöket.",
+      "reason": "Az „összekötő réteg” az angol „glue layer” közeli tükre; a „köztes réteg” természetesebb."
+    },
+    {
+      "line_approx": 1161,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 12.16 A térinformatikai automatizálás globális perspektívából",
+      "suggested": "## 12.16 A térinformatikai automatizálás globális perspektívában",
+      "reason": "A „perspektívából” itt angolos címadás; magyarul a „perspektívában” természetesebb."
+    },
+    {
+      "line_approx": 1163,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a rész útmutatókat nyújt a korábbi szakaszokban használt amerikai-magyar példákon kívül dolgozó olvasók számára.",
+      "suggested": "Ez a rész azoknak az olvasóknak ad útmutatást, akik nem a korábbi szakaszok amerikai és magyar példáival dolgoznak.",
+      "reason": "Az „amerikai-magyar példákon kívül dolgozó olvasók” nehézkes, angolos szerkezet."
+    },
+    {
+      "line_approx": 2404,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ugyanazok a Python-szkriptelési készségek alkalmazhatók világszerte",
+      "suggested": "Ugyanazok a Pythonban szerzett szkriptelési készségek világszerte alkalmazhatók",
+      "reason": "A „Python-szkriptelési készségek” összetétel kissé nehézkes, természetesebb magyar megfogalmazás az utólagos pontosítás."
+    },
+    {
+      "line_approx": 2405,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A globális ingyenes adatkészletek (SRTM, Copernicus, HydroSHEDS) biztosítják, hogy az automatizált vízgyűjtő-lehatárolás bármely ország kutatói számára elérhető legyen.",
+      "suggested": "A szabadon hozzáférhető globális adatkészletek (SRTM, Copernicus, HydroSHEDS) révén az automatizált vízgyűjtő-lehatárolás gyakorlatilag bármely ország kutatói számára elérhető.",
+      "reason": "A „biztosítják, hogy” angolos, körülményes szerkezet; a „globális ingyenes adatkészletek” helyett a „szabadon hozzáférhető globális adatkészletek” természetesebb."
+    },
+    {
+      "line_approx": 2409,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ahogy a szkriptelési magabiztosságunk nő, számos kiterjesztés válik természetessé:",
+      "suggested": "Ahogy egyre magabiztosabban szkriptelünk, számos továbblépési lehetőség adódik:",
+      "reason": "A „szkriptelési magabiztosságunk” és a „kiterjesztés válik természetessé” szó szerinti, angolos megfogalmazás."
+    },
+    {
+      "line_approx": 2411,
+      "category": "register",
+      "severity": "low",
+      "original": "amely személyes hidrológiai eszköztárunkként szolgál",
+      "suggested": "amely saját hidrológiai eszköztárunk alapját adja",
+      "reason": "A „szolgál” itt kissé fordításszagú; a javasolt változat gördülékenyebb tudományos prózában."
+    },
+    {
+      "line_approx": 2413,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A paraméterek szkript tetejére történő beégetése helyett",
+      "suggested": "Ahelyett, hogy a paramétereket közvetlenül a szkript elején rögzítenénk",
+      "reason": "A „beégetése” az angol „hard-code” tükörfordítása, magyar tudományos szövegben kerülendő."
+    },
+    {
+      "line_approx": 2414,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez elválasztja a „mit\" (paraméterek) a „hogyan\"-tól (kód), megkönnyítve nem programozók számára eszközeink használatát.",
+      "suggested": "Ez elválasztja egymástól a „mit” (a paramétereket) és a „hogyan”-t (a kódot), így a nem programozók is könnyebben használhatják az eszközeinket.",
+      "reason": "Az eredeti mondat szerkezete angolos és tömörítő; a magyarban természetesebb az explicit alany-állítmányi megoldás."
+    },
+    {
+      "line_approx": 2416,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ahelyett hogy a szkriptet szerkesztenénk a bemeneti DEM megváltoztatásához, fogadjuk el az elérési utat parancssori argumentumként",
+      "suggested": "Ahelyett, hogy a bemeneti DEM cseréje miatt a szkriptet szerkesztenénk, adjuk meg az elérési utat parancssori argumentumként",
+      "reason": "Az eredeti szórend és a „megváltoztatásához” szerkezet nehézkes; a javaslat természetesebb magyar mondatépítés."
+    },
+    {
+      "line_approx": 2417,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Python `argparse` modulja egyszerűvé teszi ezt.",
+      "suggested": "Ezt a Python `argparse` moduljával egyszerűen meg lehet oldani.",
+      "reason": "Az „egyszerűvé teszi ezt” az angol „makes this easy” tükörfordítása."
+    },
+    {
+      "line_approx": 2419,
+      "category": "register",
+      "severity": "medium",
+      "original": "Windowson a Feladatütemező (Task Scheduler) meghatározott időpontban futtathat Python-szkriptet",
+      "suggested": "Windowson a Feladatütemező (Task Scheduler) megadott időpontban képes Python-szkripteket futtatni",
+      "reason": "A jelenlegi megfogalmazás kissé darabos; a többes szám és a „képes ... futtatni” szerkezet természetesebb."
+    },
+    {
+      "line_approx": 2420,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Ezzel teljesen automatizált, beavatkozásmentes feldolgozási csővezetékeket valósíthatunk meg.",
+      "suggested": "Ezzel teljesen automatizált, emberi beavatkozást nem igénylő feldolgozási munkafolyamatokat alakíthatunk ki.",
+      "reason": "A „csővezeték” a „pipeline” tükörfordítása; informatikai-szakmai magyarban a „munkafolyamat” vagy „feldolgozási lánc” természetesebb."
+    },
+    {
+      "line_approx": 2422,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy Python-szkript webszolgáltatásba csomagolható",
+      "suggested": "Egy Python-szkript webszolgáltatásként is közzétehető",
+      "reason": "A „webszolgáltatásba csomagolható” kissé informális, fejlesztői zsargon; a javaslat akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 2425,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek a kiterjesztések a személyes szkripteléstől a mások által használható eszközök építése felé viszik a munkát.",
+      "suggested": "Ezek a bővítési lehetőségek a személyes használatú szkriptektől a mások számára is használható eszközök fejlesztése felé mozdítják el a munkát.",
+      "reason": "Az eredeti mondat angolos szerkezetű („viszik a munkát”), ezért magyarosabb igei megoldás indokolt."
+    },
+    {
+      "line_approx": 2430,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A könyv I--III. része lefedte a teljes csővezetéket",
+      "suggested": "A könyv I--III. része a teljes feldolgozási láncot lefedte",
+      "reason": "A „csővezeték” itt szintén a „pipeline” tükörfordítása; szaknyelvben a „feldolgozási lánc” a bevettebb."
+    },
+    {
+      "line_approx": 2430,
+      "category": "register",
+      "severity": "medium",
+      "original": "a digitális domborzaton (5. fejezet) át a térképalgebrán (6. fejezet) és domborzati deriváltakon (7. fejezet), csapadékon (8. fejezet)",
+      "suggested": "a digitális domborzattól (5. fejezet) a térképalgebrán (6. fejezet), a domborzati deriváltakon (7. fejezet) és a csapadékon (8. fejezet) át",
+      "reason": "Az eredeti felsorolás raghasználata és szerkezete megbicsaklik; a javaslat párhuzamosabb és gördülékenyebb."
+    },
+    {
+      "line_approx": 2433,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A IV. rész megváltoztatja a kérdést.",
+      "suggested": "A IV. részben más kérdést teszünk fel.",
+      "reason": "A „megváltoztatja a kérdést” szó szerinti fordítás; magyarul természetesebb az aktív, személyesebb megfogalmazás."
+    },
+    {
+      "line_approx": 2435,
+      "category": "register",
+      "severity": "medium",
+      "original": "A 15. fejezet mindezt árvíz-elöntési térképezéssé fogja össze",
+      "suggested": "A 15. fejezet mindezt az árvízi elöntések térképezésének keretébe rendezi",
+      "reason": "Az „árvíz-elöntési térképezés” nehézkes, kevéssé idiomatikus összetétel."
+    }
+  ]
+}

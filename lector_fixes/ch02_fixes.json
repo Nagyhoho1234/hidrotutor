@@ -1,0 +1,766 @@
+{
+  "chapter": "ch02",
+  "total_issues": 95,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "register",
+      "severity": "low",
+      "original": "A cél nem az, hogy az olvasóból geodétát képezzünk, hanem az, hogy használható ismereteket adjunk",
+      "suggested": "A cél nem az, hogy az olvasóból geodétát képezzünk, hanem hogy használható ismereteket adjunk",
+      "reason": "Az ismételt „az, hogy” szerkezet nehézkes; a második tagmondat kötőszóval gördülékenyebb."
+    },
+    {
+      "line_approx": 18,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidroinformatikai mindennapi munka nagy részében a geodéziai háttér láthatatlan marad.",
+      "suggested": "A hidroinformatikai gyakorlatban a geodéziai háttér többnyire láthatatlan marad.",
+      "reason": "A „hidroinformatikai mindennapi munka” szerkezet kissé tükörfordítás-ízű és nehézkes."
+    },
+    {
+      "line_approx": 19,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A GIS-szoftver menet közben vetíti át az adatokat",
+      "suggested": "A GIS-szoftver automatikusan átvetíti az adatokat",
+      "reason": "A „menet közben” itt angolos, informális hatású; szakmai szövegben az „automatikusan” természetesebb."
+    },
+    {
+      "line_approx": 20,
+      "category": "register",
+      "severity": "low",
+      "original": "amikor egy 1970-es évekbeli régi adatállományt modern műholdas megfigyelésekkel kell kombinálni",
+      "suggested": "amikor egy 1970-es évekből származó adatállományt modern műholdas megfigyelésekkel kell kombinálni",
+      "reason": "A „évekbeli régi” redundáns és nehézkes."
+    },
+    {
+      "line_approx": 22,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a HD72 (Magyar Dátum 1972) dátumra épül",
+      "suggested": "a HD72-re (Magyar Dátum 1972) épül",
+      "reason": "A „dátumra épül” terminológiailag pontatlan és tautologikus; maga a HD72 a dátum."
+    },
+    {
+      "line_approx": 23,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Copernicus-program európai szintű adatkészletei az ETRS89-et, az Európai Földi Vonatkoztatási Rendszert használják.",
+      "suggested": "A Copernicus-program európai szintű adatkészletei az ETRS89-et, azaz az Európai Földi Vonatkoztatási Rendszert használják.",
+      "reason": "Az appozíció kötése magyarul természetesebb „azaz” betoldással."
+    },
+    {
+      "line_approx": 29,
+      "category": "register",
+      "severity": "medium",
+      "original": "A geodézia gyakorlati mondanivalója a vízügyi szakember számára három kérdés köré rendezhető",
+      "suggested": "A geodézia gyakorlati jelentősége a vízügyi szakember számára három kérdés köré rendezhető",
+      "reason": "A „gyakorlati mondanivalója” ebben a kontextusban szokatlan; a „gyakorlati jelentősége” idiomatikusabb."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ellipszoid azért fontos, mert ez biztosítja azt a matematikai felületet, amelyen a földrajzi szélességet és hosszúságot definiáljuk.",
+      "suggested": "Az ellipszoid azért fontos, mert ez adja azt a matematikai felületet, amelyen a földrajzi szélességet és hosszúságot definiáljuk.",
+      "reason": "A „biztosítja” itt angolos, túl általános ige; az „adja” természetesebb."
+    },
+    {
+      "line_approx": 33,
+      "category": "register",
+      "severity": "low",
+      "original": "anélkül, hogy a szükséges információt megsemmisítenénk",
+      "suggested": "anélkül, hogy a szükséges információ elveszne",
+      "reason": "A „megsemmisítenénk” túl erős és kissé szó szerinti fordítás egy absztrakt fogalomra."
+    },
+    {
+      "line_approx": 35,
+      "category": "plural",
+      "severity": "low",
+      "original": "Néha azonban pontos alakokra van szükségünk",
+      "suggested": "Néha azonban a pontos alakmegőrzésre van szükségünk",
+      "reason": "Az „alakokra” többes szám itt kevésbé természetes; a fogalmi megfogalmazás szakmaibb."
+    },
+    {
+      "line_approx": 42,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "kontinentális selfjével",
+      "suggested": "kontinentális talapzatával",
+      "reason": "A „self” használatos, de tankönyvi magyar tudományos prózában a „kontinentális talapzat” természetesebb magyar megfelelő."
+    },
+    {
+      "line_approx": 45,
+      "category": "register",
+      "severity": "low",
+      "original": "a geoid felszíne megemelkedik; ahol tömegdeficit van, a geoid besüllyed",
+      "suggested": "a geoid felszíne megemelkedik; ahol tömeghiány van, a geoid lesüllyed",
+      "reason": "A „tömegdeficit” és „besüllyed” kissé idegenszerű; a javasolt alakok természetesebbek magyarul."
+    },
+    {
+      "line_approx": 47,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidrológia számára a geoid a magasság természetes vonatkozási felülete.",
+      "suggested": "A hidrológiában a geoid a magasság természetes vonatkozási felülete.",
+      "reason": "A „számára” itt angolos szerkezet; a „-ban/-ben” raggal természetesebb."
+    },
+    {
+      "line_approx": 48,
+      "category": "register",
+      "severity": "low",
+      "original": "A víz gravitációs értelemben lefelé folyik",
+      "suggested": "A víz gravitációs értelemben a kisebb potenciál felé áramlik",
+      "reason": "A „lefelé folyik” köznyelvibb; a szakszövegben a potenciálkülönbségre utaló megfogalmazás pontosabb."
+    },
+    {
+      "line_approx": 50,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A geoidot műholdas gravitációs mérések",
+      "suggested": "A geoidot műholdas gravimetriai mérések",
+      "reason": "A „gravimetriai” a bevettebb szakkifejezés."
+    },
+    {
+      "line_approx": 54,
+      "category": "register",
+      "severity": "low",
+      "original": "Az ortometrikus magasság H a geoidtól mérendő; az ellipszoid-magasság h az ellipszoidtól mérendő",
+      "suggested": "Az ortometrikus magasság H-t a geoidtól, az ellipszoid-magasság h-t pedig az ellipszoidtól mérjük",
+      "reason": "A „mérendő” itt modoros, utasításszerű; kijelentő módban természetesebb."
+    },
+    {
+      "line_approx": 57,
+      "category": "word_order",
+      "severity": "low",
+      "original": "a Föld felszínén elfoglalt pozíciókat egy ellipszoidhoz",
+      "suggested": "a Föld felszínén lévő pozíciókat egy ellipszoidhoz",
+      "reason": "Az „elfoglalt pozíció” tükörfordítás-ízű; a „lévő pozíció” vagy egyszerűen „helyzet” természetesebb."
+    },
+    {
+      "line_approx": 66,
+      "category": "register",
+      "severity": "medium",
+      "original": "a modern ellipszoidok viszont globálisak, műholdas megfigyelések alapján illesztettek.",
+      "suggested": "a modern ellipszoidok viszont globálisak, és műholdas megfigyelések alapján határozták meg őket.",
+      "reason": "Az „illesztettek” állítmányként tömör, de magyartalanul hat; teljes igei szerkezet gördülékenyebb."
+    },
+    {
+      "line_approx": 77,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az ellipszoid olyan, mint egy méretre készített kesztyű",
+      "suggested": "Az ellipszoid olyan, mint egy méretre szabott kesztyű",
+      "reason": "A „méretre készített” kevésbé idiomatikus, mint a „méretre szabott”."
+    },
+    {
+      "line_approx": 78,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "de még nincs kézen",
+      "suggested": "de még nem húzták fel",
+      "reason": "A „nincs kézen” szó szerinti, angolos hatású megfogalmazás."
+    },
+    {
+      "line_approx": 81,
+      "category": "register",
+      "severity": "low",
+      "original": "A modern dátumok geocentrikusak",
+      "suggested": "A modern dátumok többnyire geocentrikusak",
+      "reason": "Az általánosítás így pontosabb és tudományosabban árnyalt."
+    },
+    {
+      "line_approx": 95,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy gyakorló hidrológusnak legalább saját országa dátumaival és a műholdas termékek által használt globális rendszerekkel kell otthonosan boldogulnia.",
+      "suggested": "Egy gyakorló hidrológusnak legalább saját országa dátumait és a műholdas termékek által használt globális rendszereket magabiztosan kell ismernie.",
+      "reason": "Az „otthonosan boldogulnia” köznyelvibb és nehézkes; a „magabiztosan kell ismernie” akadémiai regiszterben jobb."
+    },
+    {
+      "line_approx": 132,
+      "category": "other",
+      "severity": "medium",
+      "original": "a greenwichi, angliai áthaladó",
+      "suggested": "a greenwichi (angliai) áthaladó",
+      "reason": "Az eredeti szerkezet nyelvtanilag hibás; hiányzik a „meridiánon” vagy a közbevetés megfelelő tagolása."
+    },
+    {
+      "line_approx": 258,
+      "category": "register",
+      "severity": "low",
+      "original": "Ezt a képletet gondosan kell kiértékelni a numerikus precíziós problémák elkerülése végett.",
+      "suggested": "Ezt a képletet gondosan kell kiértékelni a numerikus pontossági problémák elkerülése érdekében.",
+      "reason": "A „precíziós problémák” angolos hatású; magyar tudományos szövegben természetesebb a „pontossági problémák”, és az „elkerülése érdekében” gördülékenyebb."
+    },
+    {
+      "line_approx": 259,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Táblázatkezelőben minden trigonometrikus tagot külön számítsunk ki az összevonás előtt.",
+      "suggested": "Táblázatkezelőben célszerű minden trigonometrikus tagot külön kiszámítani, mielőtt összegeznénk őket.",
+      "reason": "Az „összevonás” itt nem természetes magyar matematikai megfogalmazás; az angol szerkezet helyett idiomatikusabb a „mielőtt összegeznénk”."
+    },
+    {
+      "line_approx": 281,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az ortometrikus magasság ($H$) a geoidtól — az átlagos tengerszintet közelítő ekvipotenciális gravitációs felülettől — mérendő.",
+      "suggested": "Az ortometrikus magasságot ($H$) a geoidtól — az átlagos tengerszintet közelítő ekvipotenciális gravitációs felülettől — mérjük.",
+      "reason": "A „mérendő” itt tükörfordítás-ízű, természetellenes meghatározás; a magyar tudományos prózában az igei állítás természetesebb."
+    },
+    {
+      "line_approx": 284,
+      "category": "register",
+      "severity": "low",
+      "original": "Az ortometrikus magasságot precíziós szintezéssel határozzák meg:",
+      "suggested": "Az ortometrikus magasságot nagy pontosságú szintezéssel határozzák meg:",
+      "reason": "A „precíziós” itt angolos, a „nagy pontosságú” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 286,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az ellipszoid-magasság ($h$) az ellipszoid felszínétől az ellipszoid normálisa mentén mérendő.",
+      "suggested": "Az ellipszoid-magasságot ($h$) az ellipszoid felszínétől, az ellipszoid normálisa mentén mérjük.",
+      "reason": "A „mérendő” itt is természetellenes, szabályzatnyelvi hangzású; definícióban az aktív igealak gördülékenyebb."
+    },
+    {
+      "line_approx": 294,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az árapály-magasság a helyi tengerszinthez képest, egy árapály-mércénél mérendő.",
+      "suggested": "Az árapály-magasságot a helyi tengerszinthez viszonyítva, árapálymércén mérik.",
+      "reason": "A „mérendő” szerkezet ismét angolosan körülményes; az „árapály-mérce” írásmód is ingadozó a szövegben."
+    },
+    {
+      "line_approx": 299,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 2.5.2 Magassági dátumok: mit jelent a „tengerszint\"",
+      "suggested": "### 2.5.2 Magassági dátumok: mit jelent a „tengerszint”?",
+      "reason": "A cím kérdő mondat, ezért természetesebb kérdőjellel zárni."
+    },
+    {
+      "line_approx": 304,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egyetlen árapály-alappontra épül a québeci Father Point/Rimouskiban, és körülbelül 625 000 km szintezési vonal legkisebb négyzetek módszerével történt kiegyenlítésén alapul Észak-Amerikán belül.",
+      "suggested": "A québeci Father Point/Rimouski egyetlen árapály-alappontjára épül, és mintegy 625 000 km-nyi szintezési vonal legkisebb négyzetek módszerével végzett kiegyenlítésén alapul.",
+      "reason": "Az eredeti mondat nehézkes, részben ismétli az „alapul” igét, és az „Észak-Amerikán belül” felesleges, mert a kontextusból világos."
+    },
+    {
+      "line_approx": 305,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A NAVD88 az NGVD29-et (National Geodetic Vertical Datum of 1929) váltotta fel, amely 26 árapály-mérce átlagos tengerszintjén alapult.",
+      "suggested": "A NAVD88 az NGVD29-et (National Geodetic Vertical Datum of 1929) váltotta fel, amely 26 árapálymérce átlagos tengerszintjére épült.",
+      "reason": "Az „árapály-mérce” írásmód helyett egységesebb az „árapálymérce”; a „tengerszintjén alapult” kevésbé természetes, mint a „tengerszintjére épült”."
+    },
+    {
+      "line_approx": 306,
+      "category": "register",
+      "severity": "low",
+      "original": "A történelmi árvízadatok, különösen az ártérgazdálkodásban használt alap-árvízszintek (Base Flood Elevation), NGVD29-re vonatkozhatnak, és a modern adatokkal való összehasonlítás előtt konvertálni kell őket.",
+      "suggested": "A történeti árvízadatok, különösen az ártérgazdálkodásban használt mértékadó árvízszintek (Base Flood Elevation), NGVD29-re vonatkozhatnak, ezért a modern adatokkal való összehasonlítás előtt át kell őket számítani.",
+      "reason": "A „konvertálni” idegen hatású, az „át kell számítani” természetesebb; az „alap-árvízszint” sem szerencsés magyar terminus."
+    },
+    {
+      "line_approx": 308,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A szentpétervári (oroszországi) kronstadti árapály-mércénél mért átlagos tengerszinten alapul (a „balti nulla\").",
+      "suggested": "A Szentpétervár melletti kronstadti árapálymércén mért átlagos tengerszinten alapul (a „balti nulla”).",
+      "reason": "A „szentpétervári (oroszországi)” szerkezet nehézkes; a „Szentpétervár melletti” természetesebb, az „árapálymérce” pedig egységesebb írásmód."
+    },
+    {
+      "line_approx": 309,
+      "category": "register",
+      "severity": "low",
+      "original": "Magyarország a szovjet korszak egységesítése keretében vezette be ezt a rendszert, amely a mai napig a nemzeti magassági vonatkozási rendszer.",
+      "suggested": "Magyarország a szovjet korszak egységesítési törekvései keretében vezette be ezt a rendszert, amely ma is a nemzeti magassági vonatkoztatási rendszer alapja.",
+      "reason": "Az eredeti mondat kissé darabos; a „vonatkoztatási rendszer” szaknyelvileg természetesebb, és a mondat gördülékenyebb."
+    },
+    {
+      "line_approx": 315,
+      "category": "plural",
+      "severity": "low",
+      "original": "Más magassági dátumok közé tartozik az Amsterdami Szintezési Dátum (NAP), amelyet Hollandiában használnak, és amely az Európai Magassági Vonatkoztatási Keret (EVRF) origójául szolgál; a Newlyn-i Ordnance Datum (ODN), amelyet Nagy-Britanniában használnak; és az Ázsia-szerte és Afrika-szerte használt különféle helyi átlagos tengerszinti dátumok.",
+      "suggested": "Más magassági dátumok közé tartozik az Amsterdami Szintezési Dátum (NAP), amelyet Hollandiában használnak, és amely az Európai Magassági Vonatkoztatási Keret (EVRF) origójául szolgál; a Newlyn-i Ordnance Datum (ODN), amelyet Nagy-Britanniában használnak; valamint az Ázsiában és Afrikában használt különféle helyi átlagos tengerszinti dátumok.",
+      "reason": "Az „Ázsia-szerte és Afrika-szerte használt” szerkezet kissé modoros; a „valamint” és az egyszerűbb földrajzi megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 326,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Magyarország saját, a Balti magassági rendszerhez és a HD72 ellipszoidjához illesztett nemzeti geoidmodellt tart fenn.",
+      "suggested": "Magyarország saját, a Balti magassági rendszerhez és a HD72 dátumhoz illesztett nemzeti geoidmodellt tart fenn.",
+      "reason": "A HD72 nem pusztán ellipszoid, hanem geodéziai dátum; a jelenlegi megfogalmazás terminológiailag pontatlan."
+    },
+    {
+      "line_approx": 330,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "1. Pozíciók mérése GNSS-vevővel, WGS84 ellipszoid-koordináták ($\\phi$, $\\lambda$, $h$) nyerése",
+      "suggested": "1. Pozíciómérés GNSS-vevővel, a WGS84 szerinti ellipszoidi koordináták ($\\phi$, $\\lambda$, $h$) meghatározása",
+      "reason": "A „koordináták nyerése” tükörfordítás-ízű; a „meghatározása” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 333,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "4. Az eredményül kapott koordináták az EOV rendszerben (Easting, Northing) vannak, Balti magassági rendszerre vonatkoztatott magassággal",
+      "suggested": "4. Az eredményül kapott koordináták az EOV rendszerben (keleti, északi koordináta) állnak rendelkezésre, a Balti magassági rendszerre vonatkoztatott magassággal",
+      "reason": "Az EOV esetében indokolatlan az angol „Easting, Northing” használata, mivel van bevett magyar megfelelő."
+    },
+    {
+      "line_approx": 345,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kúp egy vagy két **standard parallelán** — szélességi kör mentén — metszi a földgömböt, ahol a méretarány-tényező pontosan 1,0.",
+      "suggested": "A kúp egy vagy két **alapszélességi kör** mentén metszi a földgömböt, ahol a méretarány-tényező pontosan 1,0.",
+      "reason": "A „standard parallela” feleslegesen idegen terminus; magyarul természetesebb az „alapszélességi kör”."
+    },
+    {
+      "line_approx": 349,
+      "category": "register",
+      "severity": "low",
+      "original": "Alkalmassá teszi navigációra, időjárási térképezésre és olyan alkalmazásokra, ahol az objektumok vizuális megjelenése számít.",
+      "suggested": "Ezért jól használható navigációra, időjárási térképezésre és olyan alkalmazásokban, ahol az objektumok vizuális megjelenése fontos.",
+      "reason": "Az alanytalan „alkalmassá teszi” kissé angolos és darabos; az átfogalmazás természetesebb magyar mondatszerkezetet ad."
+    },
+    {
+      "line_approx": 375,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A vetületet két standard parallela (ahol $k = 1$ minden irányban), egy központi meridián, egy szélességi origó és hamis keleti/északi eltolás értékei definiálják.",
+      "suggested": "A vetületet két alapszélességi kör (ahol $k = 1$ minden irányban), egy központi meridián, egy szélességi origó, valamint a hamis keleti és északi eltolás értékei határozzák meg.",
+      "reason": "A „standard parallela” idegenül hat, a „definiálják” pedig itt kevésbé természetes, mint a „határozzák meg”."
+    },
+    {
+      "line_approx": 801,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Standard parallelák (kúpvetületeknél)",
+      "suggested": "Szabványos szélességi körök (kúpvetületeknél)",
+      "reason": "A „parallelák” angolos-latinos terminus; magyar tudományos szövegben természetesebb a „szélességi körök” megnevezés."
+    },
+    {
+      "line_approx": 830,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez kényelmes — a legtöbb magyar elemzés egyetlen UTM-zónát használhat zónahatár-problémák nélkül.",
+      "suggested": "Ez kedvező helyzet: a legtöbb magyarországi elemzés egyetlen UTM-zónát használhat zónahatár-problémák nélkül.",
+      "reason": "A „kényelmes” kissé köznyelvi; akadémiai regiszterben a „kedvező helyzet” természetesebb."
+    },
+    {
+      "line_approx": 832,
+      "category": "register",
+      "severity": "medium",
+      "original": "Magyarország kompakt mérete miatt ez a magyar munkánál nem jelent problémát, kontinentális elemzéseknél (például összeurópai árvíztérképezés) azonban az UTM nem alkalmazható.",
+      "suggested": "Magyarország viszonylag kis kiterjedése miatt ez a magyarországi alkalmazásokban nem jelent problémát, kontinentális léptékű elemzéseknél (például összeurópai árvíztérképezésnél) azonban az UTM nem megfelelő.",
+      "reason": "A „magyar munkánál” fordításszagú és pontatlan; a „nem alkalmazható” túl kategorikus, itt inkább a célszerűtlenség a lényeg."
+    },
+    {
+      "line_approx": 845,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az ár a bonyolultság: az USA-ban több mint 120 State Plane zóna van, mindegyiknek saját paramétereivel.",
+      "suggested": "Ennek ára a bonyolultság: az USA-ban több mint 120 State Plane-zóna van, mindegyik saját paraméterekkel.",
+      "reason": "Az „Az ár a bonyolultság” angolos szerkezet; magyarul természetesebb az „Ennek ára...”."
+    },
+    {
+      "line_approx": 848,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A nemzetközi olvasó számára a State Plane rendszer egy általános elvet illusztrál:",
+      "suggested": "A nemzetközi olvasó számára a State Plane rendszer egy általános elvet szemléltet:",
+      "reason": "Az „illusztrál” itt angolos hatású; a „szemléltet” bevettebb magyar tudományos ige."
+    },
+    {
+      "line_approx": 849,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ha egy ország elég nagy ahhoz, hogy egyetlen vetület elfogadhatatlan torzítást vezessen be,",
+      "suggested": "ha egy ország akkora, hogy egyetlen vetület már elfogadhatatlan torzítást okozna,",
+      "reason": "A „torzítást vezessen be” szó szerinti angol tükör; magyarul a „torzítást okoz” természetes."
+    },
+    {
+      "line_approx": 856,
+      "category": "register",
+      "severity": "low",
+      "original": "amelyet általánosan EOV-ként rövidítenek",
+      "suggested": "röviden EOV",
+      "reason": "Az „általánosan ... rövidítenek” körülményes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 859,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "hanem egy ferde főkör mentén érintő",
+      "suggested": "hanem egy ferde főkör mentén érinti az ellipszoidot",
+      "reason": "Az „érintő” állítmányi használata itt töredékes, angolos szerkezetet eredményez."
+    },
+    {
+      "line_approx": 876,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Northing (a magyar hagyományban Y, a matematikai konvencióban X)",
+      "suggested": "Északi koordináta / northing (a magyar hagyományban Y, a matematikai konvencióban X)",
+      "reason": "A kizárólag angol terminus használata indokolatlan; magyar szakkifejezéssel együtt természetesebb és pontosabb."
+    },
+    {
+      "line_approx": 877,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Easting (a magyar hagyományban X, a matematikai konvencióban Y)",
+      "suggested": "Keleti koordináta / easting (a magyar hagyományban X, a matematikai konvencióban Y)",
+      "reason": "A kizárólag angol terminus helyett célszerű a magyar megfelelő feltüntetése."
+    },
+    {
+      "line_approx": 880,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Fontos gyakorlati megjegyzés:",
+      "suggested": "Fontos gyakorlati tudnivaló:",
+      "reason": "A „practical note” szó szerinti mintáját követi; magyar tankönyvi stílusban a „tudnivaló” természetesebb."
+    },
+    {
+      "line_approx": 881,
+      "category": "register",
+      "severity": "low",
+      "original": "a magyar adatkészletek gyakran felcserélik az X és Y jelöléseket",
+      "suggested": "a magyar adatkészletekben gyakran felcserélve szerepel az X és Y jelölés",
+      "reason": "Az adatkészlet mint alany itt kissé személytelen-angolos; magyarul természetesebb a szerkezet átalakítása."
+    },
+    {
+      "line_approx": 883,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Amikor egy magyar adatkészlettel találkozunk X és Y oszlopokkal, ne tételezzük fel, melyik melyik.",
+      "suggested": "Ha egy magyar adatkészletben X és Y oszlopokkal találkozunk, ne tekintsük magától értetődőnek, hogy melyik melyik.",
+      "reason": "Az eredeti mondat szórendje és szerkezete nehézkes; a javított változat magyarosabb."
+    },
+    {
+      "line_approx": 889,
+      "category": "register",
+      "severity": "low",
+      "original": "Bármely kizárólag magyar területre korlátozott elemzés esetén",
+      "suggested": "Minden, kizárólag Magyarország területére kiterjedő elemzés esetén",
+      "reason": "A „magyar területre korlátozott” idegenszerű; a „Magyarország területére kiterjedő” természetesebb."
+    },
+    {
+      "line_approx": 891,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Az EOV az európai kontextusban:",
+      "suggested": "Az EOV európai összefüggésben:",
+      "reason": "A „kontextusban” gyakori hunglish; magyar tudományos stílusban az „összefüggésben” természetesebb."
+    },
+    {
+      "line_approx": 892,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mivel Magyarország az EU tagállama, az európai térbeli adatokkal való interoperabilitás elengedhetetlen.",
+      "suggested": "Mivel Magyarország az EU tagállama, elengedhetetlen, hogy a hazai adatok együtt használhatók legyenek az európai téradatokkal.",
+      "reason": "Az „interoperabilitás” itt indokolatlanul nehézkes és angolos; magyarosabban körülírható."
+    },
+    {
+      "line_approx": 892,
+      "category": "terminology",
+      "severity": "low",
+      "original": "európai térbeli adatokkal",
+      "suggested": "európai téradatokkal",
+      "reason": "A „térbeli adatok” szó szerinti fordítás; a magyar szaknyelvben a „téradat” bevettebb."
+    },
+    {
+      "line_approx": 893,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "mielőtt a Copernicus-termékekkel, az EU-Hydro vízfolyás-hálózatokkal vagy az EFAS árvíz-előrejelzésekkel kombinálhatnánk őket",
+      "suggested": "mielőtt a Copernicus-termékekkel, az EU-Hydro vízfolyás-hálózataival vagy az EFAS árvíz-előrejelzéseivel együtt használnánk őket",
+      "reason": "A „kombinálhatnánk őket” angolos és nehézkes; az „együtt használni” természetesebb."
+    },
+    {
+      "line_approx": 895,
+      "category": "register",
+      "severity": "medium",
+      "original": "Méteres alatti pontossághoz",
+      "suggested": "Egy méternél jobb pontosság eléréséhez",
+      "reason": "A „méteres alatti” szerkezet idegenszerű; magyarul természetesebb az „egy méternél jobb”."
+    },
+    {
+      "line_approx": 905,
+      "category": "register",
+      "severity": "low",
+      "original": "ami megfelel Szolnok Tisza menti elhelyezkedésének",
+      "suggested": "ami összhangban van Szolnok Tisza menti fekvésével",
+      "reason": "Az „elhelyezkedés” itt körülményes; a „fekvés” földrajzi szövegben természetesebb."
+    },
+    {
+      "line_approx": 919,
+      "category": "register",
+      "severity": "medium",
+      "original": "A Gauss–Krüger-rendszer aktívan használatban marad Németországban",
+      "suggested": "A Gauss–Krüger-rendszer továbbra is használatban van Németországban",
+      "reason": "Az „aktívan használatban marad” angolos és esetlen megfogalmazás."
+    },
+    {
+      "line_approx": 926,
+      "category": "register",
+      "severity": "medium",
+      "original": "A Web Mercator-vetület (EPSG:3857) mindenhol jelenvalósága miatt külön tárgyalást érdemel.",
+      "suggested": "A Web Mercator-vetületet (EPSG:3857) széles körű elterjedtsége miatt külön is érdemes tárgyalni.",
+      "reason": "A „mindenhol jelenvalósága” nehézkes, tükörfordításízű megfogalmazás."
+    },
+    {
+      "line_approx": 927,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Minden nagy webes térképi platform",
+      "suggested": "Minden jelentős webes térképplatform",
+      "reason": "A „webes térképi platform” szókapcsolat angolos; a „térképplatform” természetesebb."
+    },
+    {
+      "line_approx": 928,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "így a térképek bármely nagyítási szinten „helyesnek\" tűnnek",
+      "suggested": "ezért a térképek bármely nagyítási szinten vizuálisan helyesnek hatnak",
+      "reason": "A „helyesnek tűnnek” itt szó szerinti fordítás; a „vizuálisan helyesnek hatnak” pontosabb."
+    },
+    {
+      "line_approx": 933,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Web Mercator-ban",
+      "suggested": "Web Mercatorban",
+      "reason": "Az idegen név magyar toldalékolása kötőjel nélkül természetesebb ebben a formában."
+    },
+    {
+      "line_approx": 1203,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a GravIS portálon (https://gravis.gfz.de/gws) keresztül biztosítja a **Global Gravity-based Groundwater Product** (G3P) terméket",
+      "suggested": "a GravIS portálon (https://gravis.gfz.de/gws) teszi elérhetővé a **Global Gravity-based Groundwater Product** (G3P) adatterméket",
+      "reason": "A „keresztül biztosítja” angolos, a „teszi elérhetővé” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1204,
+      "category": "register",
+      "severity": "medium",
+      "original": "hidrológiai modellek segítségével komponensekre bontja a GRACE összesített vízkészlet-jelét",
+      "suggested": "hidrológiai modellek segítségével összetevőire bontja a GRACE összesített vízkészlet-jelét",
+      "reason": "A „komponensekre bontja” idegenszerű; az „összetevőire bontja” bevettebb magyar tudományos szóhasználat."
+    },
+    {
+      "line_approx": 1205,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a termék különösen értékes az európai vízgazdálkodás számára, havi felszín alatti vízkészlet-anomáliákat biztosítva regionális léptékben az egész kontinensre.",
+      "suggested": "Ez a termék különösen értékes az európai vízgazdálkodás számára, mert regionális léptékben az egész kontinensre havi felszín alatti vízkészlet-anomáliákat nyújt.",
+      "reason": "Az „-va/-ve” szerkezet itt angolos és nehézkes; magyarul jobb alárendeléssel megfogalmazni."
+    },
+    {
+      "line_approx": 1207,
+      "category": "register",
+      "severity": "low",
+      "original": "A magyar hidrológus számára",
+      "suggested": "A magyar hidrológusok számára",
+      "reason": "Az egyes szám itt kissé mesterkélt megszemélyesítés; a többes szám természetesebb általánosítás."
+    },
+    {
+      "line_approx": 1207,
+      "category": "terminology",
+      "severity": "high",
+      "original": "a Nagy Magyar Alföld",
+      "suggested": "az Alföld",
+      "reason": "A „Nagy Magyar Alföld” nem bevett magyar földrajzi megnevezés; magyarul egyszerűen „az Alföld” a természetes."
+    },
+    {
+      "line_approx": 1208,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "ahol a felszín alatti víz a mezőgazdaság kritikus erőforrása",
+      "suggested": "ahol a felszín alatti víz a mezőgazdaság számára kritikus erőforrás",
+      "reason": "A birtokos szerkezet angolos; a „számára kritikus erőforrás” természetesebb magyar megoldás."
+    },
+    {
+      "line_approx": 1209,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a medence-szintű vízháztartás-validáláshoz",
+      "suggested": "a medenceszintű vízháztartási vizsgálatok ellenőrzéséhez",
+      "reason": "A „validálás” itt indokolatlan anglicizmus; magyar tudományos prózában jobb a „ellenőrzés” vagy „érvényesítés” jellegű megoldás."
+    },
+    {
+      "line_approx": 1209,
+      "category": "calque",
+      "severity": "high",
+      "original": "a felszíni hálózatok által — bármilyen sűrűek is — nem megragadható, hosszú távú összesített vízkészlet-trendek",
+      "suggested": "azoknak a hosszú távú, összesített vízkészlet-trendeknek a feltárásához, amelyeket a felszíni megfigyelőhálózatok — bármilyen sűrűek is — nem tudnak kimutatni",
+      "reason": "A „nem megragadható” szó szerinti angol tükör; a „kimutatni” vagy „megjeleníteni” természetesebb magyar szaknyelvi ige."
+    },
+    {
+      "line_approx": 1217,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A felszíni vízkészlet-anomáliák havi térképei",
+      "suggested": "A teljes vízkészlet havi anomáliatérképei",
+      "reason": "A GRACE itt nem kifejezetten felszíni vízkészletet mér; a megfogalmazás terminológiailag pontatlan és félrevezető lehet."
+    },
+    {
+      "line_approx": 1223,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "minden adatkészlet koordináta-rendszere helyesen legyen megadva",
+      "suggested": "minden adatkészlethez helyesen adjuk meg a koordináta-rendszert",
+      "reason": "A személytelen, passzív jellegű szerkezet helyett a cselekvő megfogalmazás természetesebb magyarul."
+    },
+    {
+      "line_approx": 1224,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ez magától értetődőnek hangzik, megsértése azonban több GIS-hibát okoz",
+      "suggested": "Ez magától értetődőnek hangzik, megsértése azonban több hibát okoz a GIS-ben",
+      "reason": "A „GIS-hiba” összetétel kissé nehézkes; a mondat magyarosabb, ha a helyhatározó külön áll."
+    },
+    {
+      "line_approx": 1227,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez azt a benyomást kelti",
+      "suggested": "Ez azt a látszatot kelti",
+      "reason": "Az „azt a benyomást kelti” angolos fordulat; a „látszatot kelti” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 1228,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a térinformatikai műveletek (metszet, buffer, területszámítás, zóna-statisztika)",
+      "suggested": "a térinformatikai műveletek (metszés, pufferképzés, területszámítás, zónastatisztika)",
+      "reason": "A „buffer” és a „zóna-statisztika” itt részben idegen, részben kötőjelesen angolos; vannak természetesebb magyar szakmai alakok."
+    },
+    {
+      "line_approx": 1231,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "biztosítsuk, hogy minden bemeneti adatkészlet azonos koordináta-rendszerben legyen",
+      "suggested": "ügyeljünk arra, hogy minden bemeneti adatkészlet azonos koordináta-rendszerben legyen",
+      "reason": "A „biztosítsuk, hogy” túl gyakori angolos fordulat; az „ügyeljünk arra, hogy” természetesebb."
+    },
+    {
+      "line_approx": 1236,
+      "category": "register",
+      "severity": "low",
+      "original": "A koordináta-rendszerek GIS-ben való kezelésében",
+      "suggested": "A koordináta-rendszerek GIS-beli kezelésében",
+      "reason": "A „GIS-ben való” körülményes; a „GIS-beli” tömörebb és magyarosabb."
+    },
+    {
+      "line_approx": 1238,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a geodatabase térbeli referencia-tulajdonságát",
+      "suggested": "a geodatabase térbeli referenciajellemzőjét",
+      "reason": "A „tulajdonság” itt szoftverfordítás-ízű; a „jellemző” vagy „beállítás” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 1241,
+      "category": "register",
+      "severity": "low",
+      "original": "minden koordináta-értéket újraszámolva",
+      "suggested": "miközben minden koordinátaértéket újraszámít",
+      "reason": "Az „-va/-ve” szerkezet itt kissé nehézkes; az igei állítmány gördülékenyebb."
+    },
+    {
+      "line_approx": 1242,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a Copernicus-termékekkel való egyesítés céljából",
+      "suggested": "hogy az adatokat a Copernicus-termékekkel együtt lehessen használni",
+      "reason": "Az „egyesítés céljából” körülményes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 1245,
+      "category": "calque",
+      "severity": "high",
+      "original": "a valódi Földtől millió foknyira mutató koordináták",
+      "suggested": "a valós földrajzi helytől millió fokkal eltérő koordináták",
+      "reason": "A „valódi Földtől ... mutató” kifejezés magyarul természetellenes és nehezen értelmezhető."
+    },
+    {
+      "line_approx": 1250,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "szabványosított numerikus kódot biztosít",
+      "suggested": "szabványos numerikus kódot rendel",
+      "reason": "A „biztosít” itt angolosan általános ige; a „rendel” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 1251,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezek a kódok a koordináta-rendszerekről való kommunikáció univerzális nyelve",
+      "suggested": "Ezek a kódok a koordináta-rendszerek azonosításának univerzális nyelvét adják",
+      "reason": "A „koordináta-rendszerekről való kommunikáció” nehézkes, tükörfordítás-szerű szerkezet."
+    },
+    {
+      "line_approx": 1265,
+      "category": "calque",
+      "severity": "medium",
+      "original": "a zónát a kontextusból határozzuk meg",
+      "suggested": "a zónát a szövegkörnyezetből, illetve a földrajzi környezetből határozzuk meg",
+      "reason": "A „kontextus” itt feleslegesen idegen; a „szövegkörnyezet” vagy „környezet” természetesebb."
+    },
+    {
+      "line_approx": 1271,
+      "category": "passive_voice",
+      "severity": "low",
+      "original": "a Shape_Area négyzetfokban számítódik",
+      "suggested": "a Shape_Area értékét négyzetfokban kapjuk meg",
+      "reason": "A „számítódik” személytelen, műszaki zsargonízű; a cselekvőbb megfogalmazás magyarosabb."
+    },
+    {
+      "line_approx": 1277,
+      "category": "register",
+      "severity": "medium",
+      "original": "a kimutatott terület",
+      "suggested": "a számított terület",
+      "reason": "A „kimutatott” itt nem a legpontosabb szakmai szó; területszámításnál a „számított” természetesebb."
+    },
+    {
+      "line_approx": 1292,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**2.6. táblázat**: A hidroinformatikában gyakran használt EPSG-kódok",
+      "suggested": "**2.6. táblázat**: A hidroinformatikában gyakran használt koordináta-rendszerek és EPSG-kódjaik",
+      "reason": "A táblázat nemcsak kódokat, hanem neveket, típusokat és felhasználást is tartalmaz; a cím pontosítható."
+    },
+    {
+      "line_approx": 1320,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ebben a fejezetben tárgyalt fogalmak minden alkalommal összeállnak",
+      "suggested": "Az ebben a fejezetben tárgyalt fogalmak minden ilyen feladatban együtt jelennek meg",
+      "reason": "Az „összeállnak” itt angolos metafora; magyarul természetesebb az „együtt jelennek meg”."
+    },
+    {
+      "line_approx": 1348,
+      "category": "register",
+      "severity": "medium",
+      "original": "a fejezet teljes anyagának gyakorlati desztillátuma",
+      "suggested": "a fejezet teljes anyagának gyakorlati összegzése",
+      "reason": "A „desztillátum” itt modoros és idegenszerű; az „összegzés” természetesebb akadémiai stílusban."
+    },
+    {
+      "line_approx": 1350,
+      "category": "register",
+      "severity": "medium",
+      "original": "A dátumnevek és EPSG-kódok változnak; a logika nem.",
+      "suggested": "A dátumok neve és az EPSG-kódok változhatnak, a mögöttes logika azonban ugyanaz marad.",
+      "reason": "A rövid, angolos tagmondatpár retorikailag hatásos, de kissé fordításszagú; a magyar tudományos prózában a kibontott forma természetesebb."
+    }
+  ]
+}

@@ -1,0 +1,3402 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a GIS három alapvető nézete a vízgazdálkodásban?",
+    "options": [
+      "A) Geoadatbázis, geovizualizáció, geofeldolgozás",
+      "B) Vektor, raszter, TIN",
+      "C) Asztali, szerver, felhő",
+      "D) Pont, vonal, poligon"
+    ],
+    "correct": "A",
+    "explanation": "A GIS három nézete: geoadatbázis (adatkezelés), geovizualizáció (térképezés) és geofeldolgozás (elemzés).",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik GIS-szoftver nyílt forráskódú?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) QGIS",
+      "C) ArcGIS Online",
+      "D) ArcGIS Enterprise"
+    ],
+    "correct": "B",
+    "explanation": "A QGIS nyílt forráskódú, ingyenes szoftver, GNU General Public License alatt.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Pro natív adatformátuma?",
+    "options": [
+      "A) Shapefile",
+      "B) GeoPackage",
+      "C) Fájl-geoadatbázis (.gdb)",
+      "D) PostGIS"
+    ],
+    "correct": "C",
+    "explanation": "Az ArcGIS Pro natív formátuma a fájl-geoadatbázis (.gdb).",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a QGIS natív adatformátuma?",
+    "options": [
+      "A) Shapefile",
+      "B) GeoPackage (.gpkg)",
+      "C) Fájl-geoadatbázis",
+      "D) NetCDF"
+    ],
+    "correct": "B",
+    "explanation": "A QGIS natív formátuma a GeoPackage, az OGC-szabványú SQLite-alapú formátum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik platform tette lehetővé először a felhőalapú bolygóléptékű elemzést?",
+    "options": [
+      "A) ArcGIS Online",
+      "B) Microsoft Planetary Computer",
+      "C) Google Earth Engine",
+      "D) Copernicus Data Space"
+    ],
+    "correct": "C",
+    "explanation": "A Google Earth Engine 2010-ben indult petabájtnyi adattal és felhőalapú számítással.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az objektumadatkészlet (feature dataset)?",
+    "options": [
+      "A) Egyetlen raszteres fájl",
+      "B) Kapcsolódó objektumosztályok csoportja közös koordináta-rendszer alatt",
+      "C) Idősor-tábla",
+      "D) Webes szolgáltatás"
+    ],
+    "correct": "B",
+    "explanation": "Az objektumadatkészlet közös koordináta-rendszert kényszerít ki a benne tárolt rétegekre.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az objektumosztály (feature class)?",
+    "options": [
+      "A) Raszterállomány",
+      "B) Földrajzi objektumok gyűjteménye azonos geometriatípussal",
+      "C) Idősor-tábla",
+      "D) Térképi szimbólum"
+    ],
+    "correct": "B",
+    "explanation": "Az objektumosztály azonos geometriájú és attribútumú földrajzi objektumok gyűjteménye.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A shapefile maximális fájlmérete?",
+    "options": [
+      "A) 256 MB",
+      "B) 1 GB",
+      "C) 2 GB",
+      "D) 10 GB"
+    ],
+    "correct": "C",
+    "explanation": "A shapefile 2 GB-ra korlátozott.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szervezet készíti a CORINE felszínborítást?",
+    "options": [
+      "A) USGS",
+      "B) EEA",
+      "C) NASA",
+      "D) Lechner Tudásközpont"
+    ],
+    "correct": "B",
+    "explanation": "Az Európai Környezetvédelmi Ügynökség (EEA) készíti ~100 m felbontásban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az Arc Hydro fő újítása?",
+    "options": [
+      "A) 3D megjelenítés",
+      "B) HydroID egyedi azonosító",
+      "C) Felhőalapú számítás",
+      "D) Automatikus vetületi transzformáció"
+    ],
+    "correct": "B",
+    "explanation": "A HydroID egyedi azonosítót rendel minden objektumhoz a kereszthivatkozásokhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a QGIS mobil társalkalmazása?",
+    "options": [
+      "A) ArcGIS Field Maps",
+      "B) KoBoToolbox",
+      "C) QField",
+      "D) ODK"
+    ],
+    "correct": "C",
+    "explanation": "A QField a QGIS mobil társalkalmazása terepi adatgyűjtéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a geofeldolgozás fő feladata?",
+    "options": [
+      "A) Térképnyomtatás",
+      "B) Adatszervezés",
+      "C) Térbeli elemzés, új adatok előállítása",
+      "D) Mobil adatgyűjtés"
+    ],
+    "correct": "C",
+    "explanation": "A geofeldolgozás térbeli adatokból új térbeli adatokat állít elő.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A shapefile mezőneveinek max hossza?",
+    "options": [
+      "A) 5 karakter",
+      "B) 10 karakter",
+      "C) 64 karakter",
+      "D) Korlátlan"
+    ],
+    "correct": "B",
+    "explanation": "A shapefile mezőnevei 10 karakterre csonkolódnak.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a fokozatos szimbológia?",
+    "options": [
+      "A) Minden objektum azonos szimbólumot kap",
+      "B) Numerikus attribútumot vizuális változóra képez le",
+      "C) Véletlenszerű szimbólumok",
+      "D) Csak fekete-fehér"
+    ],
+    "correct": "B",
+    "explanation": "A fokozatos szimbológia numerikus értékeket színre vagy méretre képez le.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a vállalati geoadatbázis fő előnye?",
+    "options": [
+      "A) Ingyenes",
+      "B) Egyetlen fájl",
+      "C) Többfelhasználós egyidejű hozzáférés",
+      "D) Nem igényel szervert"
+    ],
+    "correct": "C",
+    "explanation": "Tucatnyi elemző egyidejű hozzáférését biztosítja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A domborzatárnyékolás milyen adatból készül?",
+    "options": [
+      "A) Műholdkép",
+      "B) Lejtés és lejtőirány",
+      "C) Felszínborítás",
+      "D) Vízmérce-adatsor"
+    ],
+    "correct": "B",
+    "explanation": "A lejtés és lejtőirány alapján szimulált megvilágítás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik irányelv írja elő a térbeli adatok EU-s közzétételét?",
+    "options": [
+      "A) Víz Keretirányelv",
+      "B) INSPIRE",
+      "C) Nitrátok irányelve",
+      "D) Árvízi irányelv"
+    ],
+    "correct": "B",
+    "explanation": "Az INSPIRE szabványos webes szolgáltatásokon keresztüli közzétételét követeli meg.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térbeli kiválasztás lényege?",
+    "options": [
+      "A) Attribútumok alapú szűrés",
+      "B) Földrajzi viszonyokon alapuló szűrés",
+      "C) Raszterátlagolás",
+      "D) Szimbólumok módosítása"
+    ],
+    "correct": "B",
+    "explanation": "A térbeli kiválasztás földrajzi viszonyok alapján szűri az objektumokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Zala folyó hová ömlik?",
+    "options": [
+      "A) Dunába",
+      "B) Tiszába",
+      "C) Balatonba",
+      "D) Drávába"
+    ],
+    "correct": "C",
+    "explanation": "A Zala a Balatonba ömlik Nyugat-Magyarországon, ~2620 km² vízgyűjtővel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A HUC rendszer hány szintű?",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 6",
+      "D) 8"
+    ],
+    "correct": "C",
+    "explanation": "Hat szint: HUC2, HUC4, HUC6, HUC8, HUC10 és HUC12.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Field Maps fő funkciója?",
+    "options": [
+      "A) Felhőszámítás",
+      "B) Terepi GPS-es adatgyűjtés",
+      "C) Adatbázis-tervezés",
+      "D) 3D modellezés"
+    ],
+    "correct": "B",
+    "explanation": "Terepi adatgyűjtés GPS-koordinátákkal és fényképekkel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a felhőalapú vízgyűjtő-lehatárolás alapja?",
+    "options": [
+      "A) Kézzel rajzolt határok",
+      "B) Előfeldolgozott szerveri DEM",
+      "C) GPS-mérések",
+      "D) Papírtérképek"
+    ],
+    "correct": "B",
+    "explanation": "Előfeldolgozott globális DEM-ek a szerveren, ahol a folyásirány már kiszámított.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik formátum a legjobb platformközi adatcseréhez?",
+    "options": [
+      "A) Fájl-geoadatbázis",
+      "B) Shapefile",
+      "C) GeoPackage",
+      "D) Vállalati geoadatbázis"
+    ],
+    "correct": "C",
+    "explanation": "A GeoPackage egyetlen hordozható fájlban tárolja az adatokat, minden platform támogatja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az NHDPlus melyik ország adatkészlete?",
+    "options": [
+      "A) Magyarország",
+      "B) Ausztrália",
+      "C) Egyesült Államok",
+      "D) Egyesült Királyság"
+    ],
+    "correct": "C",
+    "explanation": "Az NHDPlus az USA hidrológiailag összekapcsolt vízhálózata.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A GeoServer milyen szabványokat követ?",
+    "options": [
+      "A) ESRI saját",
+      "B) OGC szabványok",
+      "C) ISO fájlformátumok",
+      "D) Google API"
+    ],
+    "correct": "B",
+    "explanation": "OGC-szabványú WMS, WFS és WCS szolgáltatásokat publikál.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a táblaillesztés kulcsfeltétele?",
+    "options": [
+      "A) Azonos fájlméret",
+      "B) Közös kulcsmező",
+      "C) Azonos CRS",
+      "D) Azonos sorok száma"
+    ],
+    "correct": "B",
+    "explanation": "Közös kulcsmező kell, amely mindkét táblában létezik megfelelő értékekkel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik osztályozás azonosítja a természetes klasztereket?",
+    "options": [
+      "A) Egyenlő intervallumú",
+      "B) Kvantilis",
+      "C) Jenks (természetes törések)",
+      "D) Szórásalapú"
+    ],
+    "correct": "C",
+    "explanation": "A Jenks módszer az adatok természetes csoportosulásait keresi.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen geometriával ábrázolják a vízmércéket?",
+    "options": [
+      "A) Vonallánc",
+      "B) Poligon",
+      "C) Pont",
+      "D) Raszter"
+    ],
+    "correct": "C",
+    "explanation": "A vízmércéket pont objektumosztályok tárolják.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a magyar nemzeti koordináta-rendszer?",
+    "options": [
+      "A) WGS 84",
+      "B) UTM 34N",
+      "C) EOV (EPSG:23700)",
+      "D) NAD 83"
+    ],
+    "correct": "C",
+    "explanation": "Az EOV (Egységes Országos Vetületi rendszer) a magyar nemzeti CRS.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a raszteres cellaméret?",
+    "options": [
+      "A) Sorok és oszlopok száma",
+      "B) Egy négyzetes cella oldalának hossza",
+      "C) Értékek összege",
+      "D) A CRS típusa"
+    ],
+    "correct": "B",
+    "explanation": "A cellaméret a cella oldalának hossza a koordináta-rendszer mértékegységeiben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen geometria a vízgyűjtő-határ?",
+    "options": [
+      "A) Pont",
+      "B) Vonallánc",
+      "C) Poligon",
+      "D) Multipont"
+    ],
+    "correct": "C",
+    "explanation": "A vízgyűjtő-határokat poligon objektumosztályok tárolják.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatkészlet biztosít globális vízhálózatot?",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) HydroRIVERS",
+      "D) DDM-5"
+    ],
+    "correct": "C",
+    "explanation": "A HydroRIVERS (HydroSHEDS) globális vektorizált vízhálózat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Pro Python modulja?",
+    "options": [
+      "A) PyQGIS",
+      "B) ArcPy",
+      "C) rasterio",
+      "D) GDAL"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcPy a Python hozzáférés az ArcGIS Pro képességeihez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 DEM milyen felbontású?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "A Lechner Tudásközpont 5 méteres felbontású nemzeti DEM-je.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Planetary Computer melyik felhőre épül?",
+    "options": [
+      "A) AWS",
+      "B) Google Cloud",
+      "C) Azure",
+      "D) IBM Cloud"
+    ],
+    "correct": "C",
+    "explanation": "Azure infrastruktúra és STAC szabvány.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Pro grafikus modellezője?",
+    "options": [
+      "A) Processing modellező",
+      "B) ModelBuilder",
+      "C) GRASS Modeler",
+      "D) PyQGIS"
+    ],
+    "correct": "B",
+    "explanation": "A ModelBuilder a grafikus geofeldolgozási munkafolyamat-tervező.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik térbeli kiválasztás talál részben érintett ingatlanokat is?",
+    "options": [
+      "A) Benne van",
+      "B) Metszi (Intersect)",
+      "C) Távolságon belül",
+      "D) Középpontja benne van"
+    ],
+    "correct": "B",
+    "explanation": "A Metszi kiválasztás minden részben érintett objektumot megtalálja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus GLO-30 milyen felbontású?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "C",
+    "explanation": "30 méteres felbontású, szabadon elérhető globális DEM.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Dissolve mire szolgál?",
+    "options": [
+      "A) Rasztertömörítés",
+      "B) Poligonok összevonása közös attribútum alapján",
+      "C) CRS-váltás",
+      "D) Vektorizálás"
+    ],
+    "correct": "B",
+    "explanation": "Közös attribútum (pl. szülő vízgyűjtő-kód) szerint összevonja a poligonokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a PostGIS?",
+    "options": [
+      "A) Kereskedelmi GIS",
+      "B) PostgreSQL térbeli bővítménye",
+      "C) Mobil alkalmazás",
+      "D) Felhőplatform"
+    ],
+    "correct": "B",
+    "explanation": "A PostgreSQL ingyenes térbeli kiterjesztése.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A HydroBASINS hány szintű?",
+    "options": [
+      "A) 6",
+      "B) 8",
+      "C) 10",
+      "D) 12"
+    ],
+    "correct": "D",
+    "explanation": "12 szintű egymásba ágyazott globális vízgyűjtő-határokat biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a hálózati nyomkövetés?",
+    "options": [
+      "A) Raszterinterpoláció",
+      "B) Felfelé/lefelé haladás a vízhálózaton",
+      "C) CRS-átalakítás",
+      "D) DEM generálás"
+    ],
+    "correct": "B",
+    "explanation": "Bármely pontból felfelé vagy lefelé követhető a vízhálózat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik GIS fut minden operációs rendszeren?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) ArcGIS Enterprise",
+      "C) QGIS",
+      "D) ArcMap"
+    ],
+    "correct": "C",
+    "explanation": "A QGIS Windows, macOS és Linux rendszereken egyaránt fut.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a geovizualizáció elsődleges célja?",
+    "options": [
+      "A) Adatmentés",
+      "B) Térbeli mintázatok vizuális megértése",
+      "C) Kódfuttatás",
+      "D) Adatbázis-kapcsolat"
+    ],
+    "correct": "B",
+    "explanation": "A térbeli mintázatok vizuális felismerésére szolgál.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Strahler-rendűség?",
+    "options": [
+      "A) Vízminőségi paraméter",
+      "B) Vízfolyások hierarchikus osztályozása",
+      "C) CRS-típus",
+      "D) Raszter-adattípus"
+    ],
+    "correct": "B",
+    "explanation": "A forráságaktól (1) a fő folyóig (magasabb szám) terjedő hierarchikus rendszám.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik felhőplatform programozásmentes?",
+    "options": [
+      "A) GEE",
+      "B) Planetary Computer",
+      "C) ArcGIS Online",
+      "D) Copernicus Data Space"
+    ],
+    "correct": "C",
+    "explanation": "Az ArcGIS Online kattintásos elemzést kínál programozás nélkül.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mire szolgálnak az összesítő statisztikák?",
+    "options": [
+      "A) Szimbólumok módosítása",
+      "B) Attribútumok csoportonkénti összesítése",
+      "C) Cellainterpoláció",
+      "D) CRS-átalakítás"
+    ],
+    "correct": "B",
+    "explanation": "Csoportonként összegeznek, pl. csapadékot vízgyűjtő-kódonként.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mit tárol a geometria nélküli tábla?",
+    "options": [
+      "A) Térképi rétegeket",
+      "B) Nem-térbeli adatokat (idősorok)",
+      "C) Rasztereket",
+      "D) Vetületi definíciókat"
+    ],
+    "correct": "B",
+    "explanation": "Nem-térbeli adatokat, például vízhozam-idősorokat vagy vízminőségi eredményeket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Víz Keretirányelv melyik szervezettől származik?",
+    "options": [
+      "A) USGS",
+      "B) EU",
+      "C) ESRI",
+      "D) Google"
+    ],
+    "correct": "B",
+    "explanation": "Az EU Víz Keretirányelvje hierarchikus vízgyűjtő-rendszert definiál.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatkészlet ad európai vízhálózatot?",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) HydroRIVERS",
+      "D) NLCD"
+    ],
+    "correct": "B",
+    "explanation": "Az EU-Hydro a Copernicus európai vízhálózati adatkészlete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Miért fontos a vetületi CRS?",
+    "options": [
+      "A) Szebb térképek",
+      "B) Mérések méterben, nem fokban",
+      "C) Gyorsabb számítás",
+      "D) Kevesebb tárhely"
+    ],
+    "correct": "B",
+    "explanation": "A lineáris mértékegységek (méter) elengedhetetlenek a mérnöki számításokhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az egy-a-többhöz kapcsolat?",
+    "options": [
+      "A) Egy raszter több vektort tartalmaz",
+      "B) Egy mércéhez sok mérés tartozik",
+      "C) Egy CRS-hez egy vetület",
+      "D) Egy fájl több formátumban"
+    ],
+    "correct": "B",
+    "explanation": "Pl. egy mércéhez sok vízhozammérés tartozik, és minden mérés egy mércéhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a MERIT DEM előnye?",
+    "options": [
+      "A) Legfinomabb felbontás",
+      "B) SRTM szisztematikus hibáinak eltávolítása",
+      "C) Ingyenes letöltés",
+      "D) Valós idejű frissítés"
+    ],
+    "correct": "B",
+    "explanation": "Az SRTM szisztematikus hibakomponenseinek eltávolítása hidrológiai célokra.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan particionálják a vízgyűjtők a tájat?",
+    "options": [
+      "A) Átfedéssel",
+      "B) Rések és átfedések nélkül",
+      "C) Raszteres formátumban",
+      "D) Csak fő folyókat foglalják magukba"
+    ],
+    "correct": "B",
+    "explanation": "Minden pont pontosan egy vízgyűjtőhöz tartozik, hézag és átfedés nélkül.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A JRC Global Surface Water hol készült?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) QGIS",
+      "C) Google Earth Engine",
+      "D) Planetary Computer"
+    ],
+    "correct": "C",
+    "explanation": "A JRC Global Surface Water adatkészletet a GEE-n számították ki.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mire szolgál a pufferelés?",
+    "options": [
+      "A) Rasztertömörítés",
+      "B) Parti sáv azonosítása vízhálózat körül",
+      "C) CRS-átalakítás",
+      "D) Idősor-elemzés"
+    ],
+    "correct": "B",
+    "explanation": "Meghatározott szélességű zónát hoz létre a vízfolyások mentén.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A fájl-geoadatbázis max mérete táblánként?",
+    "options": [
+      "A) 2 GB",
+      "B) 10 GB",
+      "C) 1 TB",
+      "D) Korlátlan"
+    ],
+    "correct": "C",
+    "explanation": "Alapértelmezetten 1 TB, 256 TB-ig bővíthető.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a STAC szabvány?",
+    "options": [
+      "A) Térbeli adattípus",
+      "B) SpatioTemporal Asset Catalog",
+      "C) Szoftver-telepítés",
+      "D) Vetületi rendszer"
+    ],
+    "correct": "B",
+    "explanation": "Térbeli-időbeli adatkatalógus-szabvány felhőplatformokon.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az Explore/Identify eszköz mire szolgál?",
+    "options": [
+      "A) Réteglétrehozás",
+      "B) Pont értékeinek megjelenítése",
+      "C) CRS módosítás",
+      "D) Grafikon rajzolás"
+    ],
+    "correct": "B",
+    "explanation": "Kattintásra megjelenik az adott helyen minden réteg értéke.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Hol fejlesztették az Arc Hydro-t?",
+    "options": [
+      "A) Magyarország",
+      "B) Németország",
+      "C) USA (UT Austin)",
+      "D) Ausztrália"
+    ],
+    "correct": "C",
+    "explanation": "David Maidment és munkatársai a University of Texas at Austin-on fejlesztették.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a QFieldCloud?",
+    "options": [
+      "A) Felhőszámítás",
+      "B) Terepi csapatok szinkronizációja",
+      "C) Webes térképkiadás",
+      "D) Adatmentés"
+    ],
+    "correct": "B",
+    "explanation": "Szinkronizációs infrastruktúra a QField és QGIS között.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik DEM jó hegyvidékre?",
+    "options": [
+      "A) DDM-5",
+      "B) Copernicus EEA-10",
+      "C) ALOS AW3D30",
+      "D) NLCD"
+    ],
+    "correct": "C",
+    "explanation": "Az ALOS AW3D30 30 m-es DEM, amely különösen jó hegyvidéki területekhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a tartomány (domain) funkciója?",
+    "options": [
+      "A) Kiterjedés",
+      "B) Attribútumértékek korlátozása",
+      "C) Felbontás beállítása",
+      "D) Jogosultságok"
+    ],
+    "correct": "B",
+    "explanation": "Az attribútumértékeket érvényes tartományra korlátozza (pl. Strahler 1-12).",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A QGIS Processing mit integrál?",
+    "options": [
+      "A) Csak ESRI",
+      "B) GRASS, SAGA, GDAL/OGR",
+      "C) Csak Python",
+      "D) Csak R"
+    ],
+    "correct": "B",
+    "explanation": "A GRASS, SAGA és GDAL/OGR eszközöket egyesíti egyetlen felületen.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Pro licencelése?",
+    "options": [
+      "A) Egyszeri vásárlás",
+      "B) Előfizetésalapú",
+      "C) Ingyenes",
+      "D) Nyílt forráskódú"
+    ],
+    "correct": "B",
+    "explanation": "Előfizetésalapú, szervezeti fiókokhoz kötött licencelés.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a WhiteboxTools?",
+    "options": [
+      "A) Szimbológia-kezelő",
+      "B) Geomorfometriai/hidrológiai eszköztár",
+      "C) Adatbázis-kezelő",
+      "D) Nyomtatási szerkesztő"
+    ],
+    "correct": "B",
+    "explanation": "Fejlett domborzatelemzési és hidrológiai algoritmusokat biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mire szolgálnak a zónális statisztikák?",
+    "options": [
+      "A) Szimbólumok",
+      "B) Raszterértékek összesítése poligonokon belül",
+      "C) CRS-váltás",
+      "D) Vektor-raszter konverzió"
+    ],
+    "correct": "B",
+    "explanation": "Raszterértékek összesítése zónákban (pl. vízgyűjtők).",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Copernicus Data Space?",
+    "options": [
+      "A) ArcGIS bővítmény",
+      "B) EU földmegfigyelési adatok platformja",
+      "C) Mobil alkalmazás",
+      "D) Offline GIS"
+    ],
+    "correct": "B",
+    "explanation": "Az ESA/EU platformja Sentinel és DEM adatok eléréséhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a raszteres bitmélység?",
+    "options": [
+      "A) Cellák értéktartományát meghatározó paraméter",
+      "B) Kiterjedés",
+      "C) CRS",
+      "D) Vetület"
+    ],
+    "correct": "A",
+    "explanation": "A bitmélység az egyes cellák által tárolható értéktartományt határozza meg.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a data.vizugy.hu?",
+    "options": [
+      "A) EEA portál",
+      "B) OVF magyar vízrajzi adatbázisa",
+      "C) USGS adatbázis",
+      "D) Lechner geoportál"
+    ],
+    "correct": "B",
+    "explanation": "Az Országos Vízügyi Főigazgatóság vízrajzi adatbázisa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a KoBoToolbox fő területe?",
+    "options": [
+      "A) Kereskedelmi GIS",
+      "B) WASH felmérések fejlődő országokban",
+      "C) Műholdas képfeldolgozás",
+      "D) 3D modellezés"
+    ],
+    "correct": "B",
+    "explanation": "Nyílt forráskódú platform WASH felmérésekhez fejlődő országokban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Miért fontos a pufferzóna az alaptérkép DEM-jénél?",
+    "options": [
+      "A) Szebb térkép",
+      "B) Peremhatások megelőzése a vízgyűjtő-lehatárolásnál",
+      "C) Fájlméret csökkentése",
+      "D) Gyorsabb számítás"
+    ],
+    "correct": "B",
+    "explanation": "Ha a DEM levágja a vízgyűjtőt, hamis lehatárolási eredmények keletkeznek.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A QGIS Python modulja?",
+    "options": [
+      "A) ArcPy",
+      "B) PyQGIS",
+      "C) NumPy",
+      "D) Pandas"
+    ],
+    "correct": "B",
+    "explanation": "A PyQGIS biztosítja a QGIS összes képességének programozási elérését.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Hány tervezési alegysége van Magyarországnak?",
+    "options": [
+      "A) 6",
+      "B) 8",
+      "C) 12",
+      "D) 20"
+    ],
+    "correct": "C",
+    "explanation": "12 tervezési alegység az EU Víz Keretirányelv keretében.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Lechner Tudásközpont szerepe?",
+    "options": [
+      "A) Meteorológia",
+      "B) Nemzeti téradat-infrastruktúra",
+      "C) Vízmérce-hálózat",
+      "D) Árvízvédelem"
+    ],
+    "correct": "B",
+    "explanation": "Magyarország nemzeti téradat-infrastruktúráját működteti.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a WISE adatbázis?",
+    "options": [
+      "A) Globális DEM",
+      "B) Víz-információs Rendszer Európa számára",
+      "C) Amerikai vízhálózat",
+      "D) Magyar felszínborítás"
+    ],
+    "correct": "B",
+    "explanation": "A WISE az EU vízminőségi monitoringadatbázisa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A 3DEP DEM milyen felbontású az USA-ban?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "A USGS 3DEP 10 méteres (1/3 ívmásodperces) felbontást biztosít az USA-ban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az ERA5 mekkora rácsfelbontású?",
+    "options": [
+      "A) 1 km",
+      "B) 10 km",
+      "C) ~31 km",
+      "D) 100 km"
+    ],
+    "correct": "C",
+    "explanation": "~31 km-es (0,25°) globális rácsfelbontás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS képes olvasni az ESRI fájl-geoadatbázisokat.",
+    "correct": true,
+    "explanation": "Olvasási hozzáférést biztosít, bár írás nem támogatott.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A shapefile egyetlen fájlból áll.",
+    "correct": false,
+    "explanation": "Fájlok gyűjteménye (.shp, .dbf, .shx, .prj stb.).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Google Earth Engine fizetős nem kereskedelmi használatra.",
+    "correct": false,
+    "explanation": "Ingyenes nem kereskedelmi célú felhasználásra.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az objektumadatkészlet közös koordináta-rendszert kényszerít ki.",
+    "correct": true,
+    "explanation": "Egyetlen CRS-t érvényesít minden tartalmára.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A fokozatos szimbológia csak poligonokra alkalmazható.",
+    "correct": false,
+    "explanation": "Pont, vonal és poligon objektumokra egyaránt alkalmazható.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro csak Windowson fut.",
+    "correct": true,
+    "explanation": "Kizárólag Windows rendszeren érhető el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A térbeli kiválasztás bármely táblázatkezelővel elvégezhető.",
+    "correct": false,
+    "explanation": "Kizárólag GIS-képesség, földrajzi viszonyokon alapul.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vízgyűjtők átfedhetik egymást azonos szinten.",
+    "correct": false,
+    "explanation": "Rések és átfedések nélkül particionálják a tájat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A felhőalapú lehatárolás elegendő mérnöki tervezéshez.",
+    "correct": false,
+    "explanation": "Helyi feldolgozás szükséges a paraméterek teljes ellenőrzésével.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A HydroBASINS csak Európára vonatkozik.",
+    "correct": false,
+    "explanation": "Az egész bolygóra biztosít vízgyűjtő-határokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A táblaillesztés véglegesen módosítja az adatokat.",
+    "correct": false,
+    "explanation": "Ideiglenes, visszavonható az alapadatok módosítása nélkül.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoPackage egyetlen fájlba tárolja az adatokat.",
+    "correct": true,
+    "explanation": "Egyetlen .gpkg fájl tartalmazza az összes adatot.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Földrajzi koordinátákban számított terület mérnöki célokra alkalmas.",
+    "correct": false,
+    "explanation": "Négyzetfokban adódik, ami mérnöki célokra értelmezhetetlen.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az Arc Hydro szoftverprogram.",
+    "correct": false,
+    "explanation": "Séma/adatmodell, nem szoftver.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM a hidrológia legfontosabb rasztere.",
+    "correct": true,
+    "explanation": "A DEM-ből szinte minden hidrológiai információ nyerhető.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben van közvetlen Arc Hydro megfelelő.",
+    "correct": false,
+    "explanation": "Nincs, de a funkciók egyedi eszközökkel reprodukálhatók.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EEA-10 DEM bárki számára szabad.",
+    "correct": false,
+    "explanation": "Csak minősített felhasználók számára érhető el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vízhálózat topológiája a fizikai kapcsolódást írja le.",
+    "correct": true,
+    "explanation": "A szakaszok közötti kapcsolódást és folyásirányt.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter mindig pontosabb a vektornál.",
+    "correct": false,
+    "explanation": "A vektor megőrzi a geometriai pontosságot, a raszter közelít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Enterprise szerver-alapú platform.",
+    "correct": true,
+    "explanation": "Webalapú portál térbeli adatok kiszolgálásához.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A rasterio csak ArcGIS-ben használható.",
+    "correct": false,
+    "explanation": "Nyílt forráskódú Python könyvtár bármely környezetben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A CORINE színpalettája Európa-szerte egységes.",
+    "correct": true,
+    "explanation": "Nemzetközi szabvány a konzisztens felszínborítás-megjelenítéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoServer kizárólag ESRI formátumokat támogat.",
+    "correct": false,
+    "explanation": "OGC-szabványokat követ, számos formátumot támogat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Zala vízgyűjtője ~2620 km².",
+    "correct": true,
+    "explanation": "A Zala ~2620 km²-t csapol le a Balatonba.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vektor-raszter konverzió nem használatos a hidrológiában.",
+    "correct": false,
+    "explanation": "Rutinszerűen váltakozik a két adatmodell.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A DEM magassági pontossága irreleváns.",
+    "correct": false,
+    "explanation": "Kritikus: nagy hiba hamis folyásirányokat ad sík terepen.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Balaton Magyarország legnagyobb tava.",
+    "correct": true,
+    "explanation": "Magyarország és Közép-Európa legnagyobb tava.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az egyenlő intervallumú osztályozás mindig a legjobb.",
+    "correct": false,
+    "explanation": "Ferde adatoknál gyakran hatástalan; a Jenks általában jobb.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS szabályalapú megjelenítő összetett logikát tesz lehetővé.",
+    "correct": true,
+    "explanation": "Több feltételt kombinálva bonyolult szimbológia hozható létre.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro projektfájl kiterjesztése .qgz.",
+    "correct": false,
+    "explanation": "Az ArcGIS Pro: .aprx; a QGIS: .qgz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Online lehetővé teszi a felhő-vízgyűjtő-lehatárolást.",
+    "correct": true,
+    "explanation": "A Watershed widget előfeldolgozott adatokkal másodpercek alatt lehatárol.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-30 ingyenes.",
+    "correct": true,
+    "explanation": "Szabadon hozzáférhető 30 m-es globális DEM.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A WMS rövidítés Web Map Service.",
+    "correct": true,
+    "explanation": "OGC-szabvány a raszteres térképszolgáltatásokra.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A shapefile támogatja a null értékeket.",
+    "correct": false,
+    "explanation": "Nem támogatja, ami fontos korlát.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterműveletek párhuzamosíthatók.",
+    "correct": true,
+    "explanation": "Azonos művelet minden cellára, függetlenül a szomszédoktól.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ODK kereskedelmi szoftver.",
+    "correct": false,
+    "explanation": "Nyílt forráskódú mobil adatgyűjtő platform.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A geofeldolgozási lánc lépései egymásra épülnek.",
+    "correct": true,
+    "explanation": "Minden lépés kimenete a következő bemenete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ESA WorldCover 10 m-es felbontású.",
+    "correct": true,
+    "explanation": "Sentinel-2 alapú 10 m-es globális felszínborítás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A fájl-geoadatbázis többfelhasználós.",
+    "correct": false,
+    "explanation": "Egyfelhasználós; vállalati geoadatbázis kell a többszörös hozzáféréshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vízfolyásokat vonallánc objektumokként ábrázolják.",
+    "correct": true,
+    "explanation": "Polyline objektumok gyűjteménye.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A TanDEM-X 90m csak fizetős.",
+    "correct": false,
+    "explanation": "Tudományos felhasználásra ingyenes.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GRASS GIS integrálva van a QGIS-be.",
+    "correct": true,
+    "explanation": "A Processing keretrendszeren keresztül elérhető.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A kvantilis osztályozás egyenlő szélességű osztályokat hoz létre.",
+    "correct": false,
+    "explanation": "Azonos darabszámot helyez minden osztályba.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM az egész Földet lefedi.",
+    "correct": false,
+    "explanation": "60°É és 56°D szélességi kör között.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A folyásakkumulációt logaritmikus skálával érdemes megjeleníteni.",
+    "correct": true,
+    "explanation": "Az értékek sok nagyságrendet ölelnek fel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A geoadatbázis altípusai kategorizált elemeket engednek egy osztályban.",
+    "correct": true,
+    "explanation": "Pl. állandó vizű és időszakos vízfolyások egy rétegben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 elérhető a Planetary Computeren.",
+    "correct": true,
+    "explanation": "Hozzáférést biztosít ERA5 klíma-reanalízis adatokhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A gdalwarp -cutline rasztert vág poligonra.",
+    "correct": true,
+    "explanation": "GDAL parancssori eszköz poligon-alapú raszterkivágáshoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU-Hydro a USGS-tól származik.",
+    "correct": false,
+    "explanation": "A Copernicus Land Monitoring Service terméke.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Metszi kiválasztás részben érintett objektumokat is megtalálja.",
+    "correct": true,
+    "explanation": "Minden objektumot kiválaszt, amelynek bármely része a zónában van.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GIS három nézete: geoadatbázis, geovizualizáció és _____.",
+    "correct": "geofeldolgozás",
+    "explanation": "A harmadik nézet a térbeli elemzés.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS natív formátuma a _____.",
+    "correct": "GeoPackage",
+    "explanation": "OGC-szabványú SQLite-alapú formátum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro natív formátuma a _____.",
+    "correct": "fájl-geoadatbázis",
+    "explanation": "A .gdb kiterjesztésű mappa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Arc Hydro egyedi azonosítója a _____.",
+    "correct": "HydroID",
+    "explanation": "Minden objektumhoz egyértelmű azonosítót biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felhőalapú vízgyűjtő-lehatárolás _____ DEM-adatokra épül.",
+    "correct": "előfeldolgozott",
+    "explanation": "A szerveren tárolt, előfeldolgozott globális DEM-ek az alapja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A shapefile max fájlmérete _____ GB.",
+    "correct": "2",
+    "explanation": "A 2 GB-os korlát a shapefile egyik fő korlátozása.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az objektumadatkészlet közös _____-t érvényesít.",
+    "correct": "koordináta-rendszert",
+    "explanation": "Minden rétegre azonos CRS-t kényszerít ki.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS mobil társalkalmazása a _____.",
+    "correct": "QField",
+    "explanation": "Terepi adatgyűjtésre szolgáló mobilalkalmazás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar nemzeti koordináta-rendszer az _____.",
+    "correct": "EOV",
+    "explanation": "EPSG:23700 kóddal azonosított.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ művelet vízhálózat körüli zónát hoz létre.",
+    "correct": "pufferelés",
+    "explanation": "Meghatározott szélességű területet jelöl ki.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A természetes törések osztályozást _____ módszernek is hívják.",
+    "correct": "Jenks",
+    "explanation": "George Jenks módszere a természetes csoportosulások keresésére.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GEE _____ és Python API-kat kínál.",
+    "correct": "JavaScript",
+    "explanation": "Két programnyelven érhető el a Google Earth Engine.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 DEM _____ m felbontású.",
+    "correct": "5",
+    "explanation": "A Lechner Tudásközpont nemzeti DEM-je.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az USA vízgyűjtő-hierarchiája a _____ rendszer.",
+    "correct": "HUC",
+    "explanation": "Hydrologic Unit Code, hat szintű hierarchia.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zala a _____-ba ömlik.",
+    "correct": "Balatonba",
+    "explanation": "Magyarország legnagyobb tavába.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az _____ irányelv az EU térbeli adatmegosztási szabványa.",
+    "correct": "INSPIRE",
+    "explanation": "Szabványos OGC webes szolgáltatások közzétételét írja elő.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro Python modulja az _____.",
+    "correct": "ArcPy",
+    "explanation": "Programozási hozzáférés az ArcGIS Pro-hoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A táblaillesztéshez közös _____ kell.",
+    "correct": "kulcsmező",
+    "explanation": "A közös azonosító kapcsolja össze a táblákat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ osztályozás azonos darabszámot helyez minden osztályba.",
+    "correct": "kvantilis",
+    "explanation": "Vizuális egyensúlyt biztosít az egyenletes elosztással.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A geoadatbázis _____ az objektumok közötti összefüggéseket formalizálják.",
+    "correct": "kapcsolatok",
+    "explanation": "A relationship class-ok összekapcsolják az entitásokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CORINE felszínborítást az _____ készíti.",
+    "correct": "EEA",
+    "explanation": "Az Európai Környezetvédelmi Ügynökség terméke.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A webes szolgáltatási szabványokat az _____ definiálja.",
+    "correct": "OGC",
+    "explanation": "Az Open Geospatial Consortium nyílt szabványai.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A domborzatárnyékolás _____ és lejtőirány alapján készül.",
+    "correct": "lejtés",
+    "explanation": "A szimulált megvilágítás két összetevője.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM _____ északi szélességig fedi le a Földet.",
+    "correct": "60°",
+    "explanation": "60°É - 56°D lefedettségi tartomány.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vállalati geoadatbázis _____ felhasználós hozzáférést ad.",
+    "correct": "több",
+    "explanation": "PostgreSQL/PostGIS támogatja az egyidejű hozzáférést.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarországnak _____ vízgyűjtő-tervezési alegysége van.",
+    "correct": "12",
+    "explanation": "Az EU Víz Keretirányelv keretében.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az objektumosztály _____ mezője tartalmazza a geometriát.",
+    "correct": "Shape",
+    "explanation": "A rendszer által kezelt mező a koordinátákhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro munkát _____ köré szervez.",
+    "correct": "projekt",
+    "explanation": "Projektfájl, geoadatbázis és eszköztár egy mappában.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ osztályozás az átlagtól való eltérést mutatja.",
+    "correct": "szórásalapú",
+    "explanation": "Anomáliák azonosításához hasznos.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térbeli kiválasztás a 'mi van _____ mihez?' kérdést válaszolja meg.",
+    "correct": "közel",
+    "explanation": "Földrajzi közelség és viszonyok alapján szűr.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A fájl-geoadatbázis max _____ TB táblánként.",
+    "correct": "1",
+    "explanation": "Alapértelmezetten 1 TB, bővíthető.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM az _____ hibáit távolítja el.",
+    "correct": "SRTM",
+    "explanation": "Szisztematikus hibakomponensek eltávolítása.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A JRC Global Surface Water _____ m felbontásban készül.",
+    "correct": "30",
+    "explanation": "Felszíni vizek dinamikája 30 m felbontásban, 1984-től.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A shapefile mezőneveinek max hossza _____ karakter.",
+    "correct": "10",
+    "explanation": "Az egyik legismertebb korlátozás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS grafikus modellezője a _____ keretrendszerben van.",
+    "correct": "Processing",
+    "explanation": "A Processing részeként érhető el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterizálásnál a legfontosabb paraméter a _____.",
+    "correct": "cellaméret",
+    "explanation": "Az elemzési felbontáshoz kell igazítani.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felhő GIS a számítást az _____ viszi.",
+    "correct": "adatokhoz",
+    "explanation": "Nem letöltés, hanem szerveren futtatás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési környezet az ArcGIS Pro _____ fülén érhető el.",
+    "correct": "Analysis",
+    "explanation": "Az Environments gomb az Analysis fülön.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NHDPlus minden szakaszának egyedi _____-ja van.",
+    "correct": "NHDPlusID",
+    "explanation": "Egyedi azonosító az amerikai vízhálózat szakaszaihoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A folyásakkumuláció fő meder celláinak értéke akár _____ is lehet.",
+    "correct": "több millió",
+    "explanation": "A felső cellák számát tükrözi.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Arc Hydro Tools ingyenes _____ az ArcGIS Pro-hoz.",
+    "correct": "bővítmény",
+    "explanation": "Plugin formájában érhető el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Planetary Computer a _____ szabványt használja.",
+    "correct": "STAC",
+    "explanation": "SpatioTemporal Asset Catalog.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A radaralapú csapadékrácsok felbontása jellemzően _____ km.",
+    "correct": "1-4",
+    "explanation": "Az időjárási radar tipikus felbontása.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízfolyásokat konvencionálisan _____ színnel ábrázolják.",
+    "correct": "kék",
+    "explanation": "Kartográfiai konvenció.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS valós idejű _____ biztosítja a helyes CRS-megjelenítést.",
+    "correct": "átvetítés",
+    "explanation": "On-the-fly reprojection.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus GLO-30 csempék _____ formátumban érkeznek.",
+    "correct": "GeoTIFF",
+    "explanation": "A legelterjedtebb raszterformátum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Dissolve a szülő vízgyűjtő _____ szerint összesít.",
+    "correct": "kódja",
+    "explanation": "Közös attribútum alapján vonja össze a poligonokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Nitrátok irányelve _____ mg/l küszöbértéket alkalmaz.",
+    "correct": "50",
+    "explanation": "Az EU nitrátkoncentrációs határértéke.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GIS három nézetét és szerepüket a vízgazdálkodásban!",
+    "correct": "A geoadatbázis-nézet szervezi a térbeli adatokat kikényszerített kapcsolatokkal. A geovizualizáció térképeket készít a mintázatok felismeréséhez. A geofeldolgozás elemzőmotorként új adatokat állít elő, pl. DEM-ből vízgyűjtő-határt. A három nézet integrációja teszi a GIS-t hatékony eszközzé.",
+    "explanation": "A GIS ereje a három nézet együttes alkalmazásában rejlik.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az ArcGIS Pro-t és a QGIS-t vízgazdálkodási szempontból!",
+    "correct": "Az ArcGIS Pro kereskedelmi, előfizetéses, csak Windowson, erős Arc Hydro integrációval és vállalati támogatással. A QGIS ingyenes, nyílt forráskódú, multiplatformos, GRASS/SAGA/WhiteboxTools integrációval. A gyakorlati különbség csökkent; mindkettő érett platform a vízgazdálkodási feladatokhoz.",
+    "explanation": "A választás a licencelési lehetőségektől és az intézményi környezettől függ.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a geoadatbázis a vízügyi adatszervezésben?",
+    "correct": "Kikényszeríti az adatintegritást: konzisztens koordináta-rendszerek, helyes vízhálózati kapcsolódás, érvényes attribútumtartományok (domainek). Megőrzi az objektumok közötti kapcsolatokat (pl. mérce-mérések). Megelőzi az inkonzisztens fájlgyűjteményekből eredő problémákat.",
+    "explanation": "A strukturált szervezés megtérül a projekt élettartamán.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mik a shapefile korlátai és javasolt alternatívái?",
+    "correct": "Korlátok: 10 karakteres mezőnév, 2 GB méretkorlát, null értékek hiánya, többfájlos struktúra. Alternatívák: GeoPackage platformközi munkához, fájl-geoadatbázis ArcGIS-hez. Shapefile csak visszamenőleges kompatibilitásra javasolt exportformátum.",
+    "explanation": "A shapefile modernebb alternatívákkal váltandó ki.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a felhőalapú vízgyűjtő-lehatárolás működését és korlátait!",
+    "correct": "Előfeldolgozott globális DEM-ek a szerveren (süllyedékkitöltés, folyásirány kiszámítva). Kattintásra visszakövet a felső területet. Korlátok: 30-90 m felbontás, nem testreszabható paraméterek, sík terepen pontatlan. Felderítésre kiváló, tervezéshez nem elegendő.",
+    "explanation": "Gyors eszköz, de nem pótolja a helyi feldolgozást.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Miért szükséges vetületi CRS a vízgazdálkodási GIS-ben?",
+    "correct": "Méterben és négyzetméterben adja a méréseket. Földrajzi koordinátákban négyzetfokban számolódik a terület, ami mérnökileg értelmezhetetlen. Magyar projektekhez EOV vagy UTM alkalmazandó. Az elemzés csak vetületi rendszerben ad helyes eredményeket.",
+    "explanation": "A helyes CRS a pontos mérések előfeltétele.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség attribútum- és térbeli kiválasztás között?",
+    "correct": "Az attribútum-kiválasztás SQL-szerű kifejezésekkel szűr (pl. AREA > 1000). A térbeli kiválasztás földrajzi viszonyokkal válogat (metszi, benne van, távolságon belül). Az attribútumszűrés bármely adatbázisban működik, a térbeli kizárólag GIS-képesség.",
+    "explanation": "A kettő együttes alkalmazása adja a GIS valódi erejét.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a táblaillesztés a vízelemzést?",
+    "correct": "Közös kulcsmezővel összekapcsolja a térbeli objektumokat nem-térbeli adatokkal, pl. vízhozamokat mércepontokhoz. Lehetővé teszi fokozatos szimbólumokat és attribútum-lekérdezéseket. Ideiglenes, nem módosítja az alapadatokat, visszavonható.",
+    "explanation": "A térbeli és időbeli adatok közötti hidat képezi.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízgyűjtő-alaptérkép készítésének lépéseit!",
+    "correct": "(1) Vizsgálati terület/határ meghatározása. (2) Geoadatbázis/GeoPackage vetületi CRS-sel. (3) Rétegek: vízhálózat, DEM, mércék, felszínborítás. (4) Importálás, kivágás, vetítés. (5) Szimbológia. (6) Térképi elrendezés (cím, jelmagyarázat, méretarány).",
+    "explanation": "Az alaptérkép minden további elemzés kiindulópontja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a DEM felbontásának hatása a hidrológiai elemzésre?",
+    "correct": "A felbontás meghatározza a feloldható objektumokat: 30 m nem mutatja a 10 m medret. A cellaméret felezése négyszeres adatmennyiséget ad. A választás feladatfüggő: 30 m regionális elemzéshez, 1-5 m városi árvízhoz. A túl finom felbontás feleslegesen költséges.",
+    "explanation": "A cellaméret-adatmennyiség kompromisszum az alapkérdés.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a GEE-t, Planetary Computer-t és ArcGIS Online-t!",
+    "correct": "GEE: legnagyobb adatkatalógus, JS/Python API, programozás kell. Planetary Computer: Python ökoszisztéma, JupyterHub, STAC. ArcGIS Online: programozásmentes, kattintásos, előfizetéses. Mindhárom globális adatokhoz ad hozzáférést, de különböző célcsoportoknak.",
+    "explanation": "A feladat és programozási készség határozza meg a választást.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az Arc Hydro adatmodell jelentősége?",
+    "correct": "Szabványosított séma víztestekhez, vízgyűjtőkhöz, hálózathoz. HydroID egyedi azonosító. Arc Hydro Tools integrált munkafolyamat a domborzat-előfeldolgozáshoz. Bevált sablon, amelyet világszerte használnak. A QGIS-ben nincs közvetlen megfelelő.",
+    "explanation": "Strukturált adatszervezés, amely megtérül a projekt élettartamán.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a vízgyűjtő-poligonok hierarchiája?",
+    "correct": "Többléptékű elemzés: HUC2-től HUC12-ig. Rések nélküli particionálás biztosítja az egyértelmű összesítést. Magyarország 12 alegysége az EU WFD-hez illeszkedik. Bármely mennyiség aggregálható a hierarchia szintjein.",
+    "explanation": "A hierarchia rugalmas léptékváltást biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a hálózati nyomkövetés és miért fontos?",
+    "correct": "Bármely pontból felfelé (hozzájáruló szakaszok) vagy lefelé (fogadó szakaszok) haladás a vízhálózaton. Megállapítható: mi van vízkivétel felett, szennyezőforrás alatt, hogyan terjed árhullám. Topológiailag helyes vízhálózat szükséges hozzá.",
+    "explanation": "Alapvető a szennyezésterjedéstől az árvízelőrejelzésig.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen terepi adatgyűjtő eszközök léteznek?",
+    "correct": "ArcGIS Field Maps: GPS, fényképek, vállalati szinkronizáció. QField: QGIS társa, offline működés, QFieldCloud. KoBoToolbox/ODK: nyílt forráskódú, WASH felmérésekhez. Mindegyik georeferált adatgyűjtést biztosít okostelefonon vagy tableten.",
+    "explanation": "A mobil GIS összeköti a terepi valóságot az irodai elemzéssel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vektor és raszter adatmodell közötti különbség?",
+    "correct": "Vektor: diszkrét objektumok pontos geometriával (folyók, határok). Raszter: folytonos mezők szabályos rácsban (magasság, csapadék). A vektor pontos de számításigényes, a raszter közelítő de gyors. A gyakorlatban váltakozva használják.",
+    "explanation": "A feladat dönti el a megfelelő modellt az adott lépésben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a geoadatbázis-formátumok összehasonlítását!",
+    "correct": "Fájl-geoadatbázis: ArcGIS asztali, 1 TB/tábla, fejlett funkciók. GeoPackage: platformközi, egyetlen fájl, OGC-szabvány. Shapefile: örökség, 2 GB, 10 karakter. PostGIS: többfelhasználós, vállalati, ingyenes. A választás kontextusfüggő.",
+    "explanation": "Minden formátumnak megvan a megfelelő alkalmazási területe.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a fokozatos szimbológia a vízgazdálkodásban?",
+    "correct": "Pontok: mércék mérete vízhozam szerint. Poligonok: vízgyűjtők színe csapadék/felszínborítás szerint (choropleth). Az osztályozási módszer (Jenks, kvantilis) kritikus. A táblázatban rejtett mintázatok térképen azonnal láthatóvá válnak a megfelelő szimbológiával.",
+    "explanation": "Elemzőeszköz a térbeli kommunikációhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszterizálás cellaméret-választásának jelentősége?",
+    "correct": "Túl durva: kis objektumok eltűnnek. Túl finom: felesleges adat, lassú feldolgozás, nincs valódi többlet. A DEM cellaméretéhez kell igazítani. Az elemzési cél határozza meg az optimális felbontást.",
+    "explanation": "A pontosság és hatékonyság közötti kompromisszum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerver GIS szerepe a vízügyi szervezetekben?",
+    "correct": "Nagy adatbázisok kezelése, térképszolgáltatás sok felhasználónak. ArcGIS Enterprise és GeoServer webes szolgáltatásokat publikál (árvízi térképek, mérceadatok). INSPIRE-kompatibilis szolgáltatások biztosítják az EU-szintű adatmegosztást.",
+    "explanation": "A szervezeti adatmegosztás gerince.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készíthető alaptérkép a Zala vízgyűjtőre?",
+    "correct": "Határ: HydroBASINS. Vízhálózat: EU-Hydro. DEM: Copernicus GLO-30. Mércék: OVF. Felszínborítás: CORINE. GeoPackage EOV/UTM 33N-nel. Importálás, kivágás, szimbológia: kék vízfolyások, domborzatárnyékolás, piros mércék, CORINE-színek.",
+    "explanation": "A példa összefoglalja a fejezet minden fogalmát.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mik a felhő GIS előnyei és korlátai?",
+    "correct": "Előnyök: petabájtnyi adat letöltés nélkül, bolygóléptékű elemzés percek alatt, előfeldolgozott adatkészletek. Korlátok: internetkapcsolat, nem testreszabható előfeldolgozás, durva felbontás, nem átlátható döntések.",
+    "explanation": "Hatékony felderítésre, de nem pótolja a helyi feldolgozást.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mire szolgálnak a zónális statisztikák?",
+    "correct": "Raszterértékek összesítése vízgyűjtő-poligonokon belül: átlag csapadék, magasság, felszínborítási százalékok. Ezek a hidrológiai modellek alapvető bemenetei. Áthidalják a raszteres és vízgyűjtő-léptékű adatok közötti szakadékot.",
+    "explanation": "A raszteres és vektoros világ összekötője.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az EU-Hydro és hogyan használható?",
+    "correct": "Copernicus által biztosított európai vektoros vízhálózat Sentinel-2 és DEM adatokból. Hidrológiailag összekapcsolt szakaszok Strahler-rendűséggel. Letöltés, térbeli kiválasztás a vízgyűjtőre, fokozatos vonalvastagságú szimbológia.",
+    "explanation": "Az NHDPlus európai megfelelője.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a CRS-kezelés különbsége ArcGIS Pro és QGIS között?",
+    "correct": "ArcGIS Pro: objektumadatkészletek tároló-szintű CRS-konzisztenciát kényszerítenek ki. QGIS: valós idejű átvetítés jeleníti meg helyesen a rétegeket, de az alapadatok inkonzisztensek maradhatnak. QGIS-ben explicit átvetítés szükséges.",
+    "explanation": "Mindkettő működik, de a QGIS-ben több tudatosság kell.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GeoPackage előnye a shapefile felett?",
+    "correct": "Egyetlen fájl, nincs méretkorlát, korlátlan mezőnévhossz, null értékek, raszter+vektor. Minden platform támogatja. A shapefile többfájlos, 2 GB, 10 karakter, null nélkül.",
+    "explanation": "Modern, korlátmentes alternatíva.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használhatók összetett attribútum-lekérdezések?",
+    "correct": "AND, OR, NOT operátorok: 'LENGTH >= 30 AND AREA > 500'. LIKE: 'HUC12 LIKE 16010203%' hierarchikus kiválasztás. Zárójelek a kiértékelési sorrendhez. A HUC hierarchikus kódszerkezet kihasználható.",
+    "explanation": "A specifikus elemzési igényekhez szűrik az adatokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a sávszám jelentősége raszterben?",
+    "correct": "Egy sáv: DEM, csapadék (1 érték/cella). Több sáv: műholdfelvétel (vörös, zöld, kék, infravörös). Egysávos: hidrológiai alapelemzések. Többsávos: távérzékelési elemzések (felszínborítás, vegetáció).",
+    "explanation": "Az információtartalmat és felhasználási módot határozza meg.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a WMS, WFS, WCS szerepe?",
+    "correct": "WMS: raszteres térképképek megjelenítésre. WFS: vektoros objektumok lekérdezéssel. WCS: raszteres fedvények elemzéshez (DEM). Az OGC-szabványok interoperabilitást biztosítanak. Az INSPIRE ezen szabványokra épül.",
+    "explanation": "A nyílt szabványok az EU adatmegosztás alapjai.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a geoadatbázis kapcsolat (relationship) szerepe?",
+    "correct": "Formalizálja az összefüggéseket, pl. mérce és mérései között. Lehetővé teszi: mércére kattintva mérési előzmények előhívása, vagy mérésekből mércék kijelölése. A hidrológiai rendszer összefüggő entitáshálózatát tükrözi.",
+    "explanation": "Nélkülük az adatok izolált táblák maradnak.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen DEM-szimbológiát alkalmazunk?",
+    "correct": "Folytonos magassági színskála (zöld-sárga-barna-fehér). Domborzatárnyékolás félig átlátszó szín alatt. Nyújtási típusok a kontraszt-szabályozáshoz. A kombinált technika feltárja a vízhálózati mintázatokat és terepszerkezetet.",
+    "explanation": "A DEM-szimbológia a vizuális terepfeltárás eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Processing grafikus modellező a QGIS-ben?",
+    "correct": "Vizuális felület eszközök automatizált munkafolyamatokba láncolásához (mint a ModelBuilder). QGIS natív, GRASS, SAGA és WhiteboxTools kombinálható egyetlen ismételhető modellbe. Vízgyűjtő-lehatárolási munkafolyamatok automatizálására alkalmas.",
+    "explanation": "Csökkenti a kézi munkát és biztosítja az ismételhetőséget.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan biztosítja a geoadatbázis az adatintegritást?",
+    "correct": "Objektumadatkészletek: közös CRS. Tartományok: érvényes értéktartományok. Altípusok: kategorizált elemek egy osztályban. Topológia: helyes kapcsolódás. Együttesen megelőzik az adathibákat.",
+    "explanation": "A fegyelmezett adatszervezés megtérül a projekt teljes élettartamán.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szórásalapú osztályozás és mikor hasznos?",
+    "correct": "Az átlagtól való eltérés szerinti csoportosítás. Anomáliák azonnal kitűnnek: átlagostól eltérő csapadékú vízgyűjtők, aszályanoméliák, szokatlan vízhozamú állomások. A 'mi tér el a normálistól?' kérdésre ad vizuális választ.",
+    "explanation": "Anomália-detekció vizuális eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lépésekből áll a térbeli kiválasztás?",
+    "correct": "(1) Szűrő réteg (pl. vízgyűjtő). (2) Célréteg (pl. mércék). (3) Térbeli viszony (Benne van, Metszi stb.). (4) Végrehajtás. (5) Exportálás projektbe. Példa: országos mércehálózatból vízgyűjtőn belüliek kinyerése.",
+    "explanation": "Az adatkészletek földrajzi összekapcsolásának eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a DEM magassági pontosság hatása?",
+    "correct": "Sík terepen a hibák hamis folyásirányokat okoznak. Modern DEM-ek: 1-2 m (Copernicus), 10-15 cm (LiDAR). A MERIT DEM célzottan SRTM-hibákat távolít el. A pontosság a vízgyűjtő-lehatárolás megbízhatóságának kulcsa.",
+    "explanation": "A magassági hiba közvetlenül hat a hidrológiai eredményekre.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GRASS GIS szerepe a QGIS-ben?",
+    "correct": "Processing keretrendszeren keresztül: r.watershed (vízgyűjtő-elemzés), r.stream.extract (vízhálózat-levezetés), r.water.outlet (lehatárolás). Az Arc Hydro Tools nyílt forráskódú megfelelője. A QGIS-t teljes értékű hidrológiai eszközzé teszi.",
+    "explanation": "A GRASS integráció biztosítja a hidrológiai elemzési képességeket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vektor-raszter konverzió gyakorlati jelentősége?",
+    "correct": "Raszterről vektorra: folyásakkumuláció vízhálózattá, vízgyűjtő-zónák poligonokká. Vektorról raszterre: felszínborítás raszterizálása DEM cellaméretéhez. Rutinszerű mindkét irányban, az optimális adatmodell használatához az adott lépésben.",
+    "explanation": "A GIS alapvető erőssége a hidrológiai munkafolyamatokban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik az ArcGIS Online Watershed?",
+    "correct": "Kattintásra azonosítja a legközelebbi vízfolyás-cellát, visszakövet a folyásirány-rácson, poligonként adja a vízgyűjtőt (terület, magasság, felszínborítás). Előfeldolgozott 30-90 m-es globális DEM. Másodpercek alatt végez. Felderítéshez kiváló.",
+    "explanation": "Egy kattintás sűríti az óráknyi hagyományos feldolgozást.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a konzisztens szimbológiai séma?",
+    "correct": "Konvencionális színek (kék víz, zöld vegetáció) biztosítják az azonnali felismerhetőséget. CORINE szabvány Európa-szerte konzisztens. A jó szimbológia azonnal érthetővé tesz, a rossz félrevezet. Nem esztétika, hanem kommunikáció.",
+    "explanation": "A térbeli kommunikáció alapeszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a fajlagos vízhozam és miért hasznos?",
+    "correct": "Egységnyi területre jutó vízhozam (Q/A). Lehetővé teszi különböző méretű vízgyűjtők összehasonlítását a mérethatás kiküszöbölésével. A nyers vízhozamból nem nyilvánvaló, melyik terület termel több lefolyást. Normalizált érték.",
+    "explanation": "Az érdemi területi összehasonlítás eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a WhiteboxTools a QGIS-ben?",
+    "correct": "Fejlett geomorfometriai/hidrológiai algoritmusok: süllyedékkitöltés, D8 folyásirány, Strahler-rendűség. A GRASS és SAGA mellett kiegészítő lehetőségek. Parancssorból is elérhető (wbt_d8_pointer, wbt_watershed).",
+    "explanation": "A QGIS domborzatelemzésének harmadik pillére.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az EFAS és hogyan kapcsolódik a GIS-hez?",
+    "correct": "Az Európai Árvízfigyelő Rendszer rácsalapú operatív előrejelzést végez: radarcsapadék, műholdas talajnedvesség, időjárás-előrejelzés feldolgozása térkép-algebrával elosztott lefolyásbecsléshez. A GIS biztosítja a térbeli adatkezelést.",
+    "explanation": "Modern operatív árvízelőrejelzés GIS-alapú példája.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a 3D nézet haszna a hidrológiában?",
+    "correct": "Vízgyűjtő-térkép ráfeszíthető a DEM-re, intuitív topográfia-vízhálózat kapcsolat. Qgis2threejs webes 3D megjelenítések. Hasznos terepszerkezet és árvízi elöntés bemutatásához, különösen döntéshozóknak.",
+    "explanation": "Intuitívabb kommunikáció a 2D térképeknél.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az INSPIRE hatása a magyar adatszolgáltatásra?",
+    "correct": "OGC-szabványú szolgáltatásokon (WMS, WFS, WCS) keresztüli közzétételre kötelez. A Lechner Tudásközpont működteti a nemzeti infrastruktúrát. Bármely GIS-kliens hozzáférhet a magyar nemzeti térbeli adatokhoz.",
+    "explanation": "Az EU-szintű térbeli adatmegosztás jogszabályi kerete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a mezőszámítás (field calculation) szerepe?",
+    "correct": "Új attribútumértékek meglévőkből: AREA_KM2 = Shape_Area/1000000, SPECIFIC_Q = DISCHARGE/AREA_KM2. A származtatott értékek elemzésre, lekérdezésekre, vizualizációra használhatók. Nélkülözhetetlen az adatok elemzésre kész formára alakításához.",
+    "explanation": "A nyers adatokat használható információvá alakítja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a többréteges alaptérkép előnye?",
+    "correct": "Közös CRS-ben: (1) földrajzi kontextus, (2) térbeli konzisztencia, (3) átfedési elemzések, (4) vizuális kommunikáció döntéshozóknak, (5) alap a vízgyűjtő-lehatárolási munkafolyamatokhoz. Nem végtermék, hanem kiindulópont.",
+    "explanation": "Minden további hidrológiai elemzés fundamentuma.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a WCS rövidítés?",
+    "options": [
+      "A) Web Coverage Service",
+      "B) Water Control System",
+      "C) Watershed Classification Standard",
+      "D) Web Cartographic Service"
+    ],
+    "correct": "A",
+    "explanation": "A WCS (Web Coverage Service) raszteres fedvényeket szolgáltat elemzéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Python könyvtár használható felhőalapú raszterelemzéshez?",
+    "options": [
+      "A) ArcPy",
+      "B) rasterio + xarray",
+      "C) ModelBuilder",
+      "D) shapefile"
+    ],
+    "correct": "B",
+    "explanation": "A rasterio és xarray (rioxarray-jel) lehetővé teszik a térkép-algebrát bármely Python-környezetben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az altípus (subtype) célja a geoadatbázisban?",
+    "options": [
+      "A) Fájlméret csökkentése",
+      "B) Egyetlen osztályon belüli kategorizált elemek különböző szabályokkal",
+      "C) Raszteres tömörítés",
+      "D) Vetületi transzformáció"
+    ],
+    "correct": "B",
+    "explanation": "Az altípusok lehetővé teszik pl. állandó és időszakos vízfolyások egy rétegben, eltérő szabályokkal.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Copernicus EEA-10 DEM milyen felbontású?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "A Copernicus EEA-10 10 méteres felbontást biztosít 39 európai ország számára.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a geokódolás (geocoding)?",
+    "options": [
+      "A) Raszter tömörítése",
+      "B) Címek átalakítása koordinátákká",
+      "C) Koordináta-rendszer váltás",
+      "D) Raszterkalkulátor művelet"
+    ],
+    "correct": "B",
+    "explanation": "A geokódolás szöveges címeket alakít földrajzi koordinátákká a térbeli elemzéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az OVF rövidítés?",
+    "options": [
+      "A) Országos Vetületi Felügyelet",
+      "B) Országos Vízügyi Főigazgatóság",
+      "C) Online Vízrajzi Feldolgozás",
+      "D) Országos Vízkár Felmérés"
+    ],
+    "correct": "B",
+    "explanation": "Az OVF (Országos Vízügyi Főigazgatóság) a magyar vízgazdálkodás központi szervezete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik DEM forrás biztosítja a legnagyobb magassági pontosságot?",
+    "options": [
+      "A) SRTM 90 m",
+      "B) Copernicus GLO-30",
+      "C) LiDAR-alapú 1 m",
+      "D) ERA5"
+    ],
+    "correct": "C",
+    "explanation": "A LiDAR-alapú 1 méteres DEM 10-15 cm magassági pontosságot ér el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térbeli index (spatial index) célja?",
+    "options": [
+      "A) Vizualizáció javítása",
+      "B) Térbeli lekérdezések gyorsítása",
+      "C) Adattömörítés",
+      "D) Vetületi transzformáció"
+    ],
+    "correct": "B",
+    "explanation": "A térbeli index gyorsítja a térbeli lekérdezéseket nagy adatkészleteknél.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A qgis2web plugin mire szolgál?",
+    "options": [
+      "A) Webes térképek készítése QGIS-projektből",
+      "B) Webes adatletöltés",
+      "C) Online raszterszámítás",
+      "D) Távoli szerver elérése"
+    ],
+    "correct": "A",
+    "explanation": "A qgis2web plugin QGIS-projektekből interaktív webes térképeket generál.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a projektfájl kiterjesztése a QGIS-ben?",
+    "options": [
+      "A) .aprx",
+      "B) .mxd",
+      "C) .qgz",
+      "D) .gdb"
+    ],
+    "correct": "C",
+    "explanation": "A QGIS projektfájl kiterjesztése .qgz (tömörített) vagy .qgs.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Pro Spatial Analyst milyen típusú elemzéseket végez?",
+    "options": [
+      "A) Csak vektoros",
+      "B) Raszteralapú domborzat- és hidrológiai elemzés",
+      "C) Csak hálózati elemzés",
+      "D) Csak statisztikai elemzés"
+    ],
+    "correct": "B",
+    "explanation": "A Spatial Analyst a raszteralapú elemzések bővítménye, beleértve a hidrológiai eszközöket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a UTM 34N zóna?",
+    "options": [
+      "A) Északi félteke, 34. zóna a szélességben",
+      "B) Északi félteke, 18-24° keleti hosszúság",
+      "C) Déli félteke, 34. zóna",
+      "D) Északi félteke, 34-40° keleti hosszúság"
+    ],
+    "correct": "B",
+    "explanation": "Az UTM 34N zóna az északi féltekén a 18°-24° keleti hosszúsági sávot fedi le, Kelet-Magyarországot is magában foglalva.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GeoJSON formátum?",
+    "options": [
+      "A) Raszteres formátum",
+      "B) Nyílt szabványú vektoros adatformátum JSON-ban",
+      "C) Adatbázis-formátum",
+      "D) Képfájl-formátum"
+    ],
+    "correct": "B",
+    "explanation": "A GeoJSON nyílt szabványú formátum földrajzi objektumok JSON-ban történő tárolásához.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A SAGA GIS milyen elemzési eszközöket biztosít a QGIS-ben?",
+    "options": [
+      "A) Csak vektoros eszközöket",
+      "B) Domborzatelemzési és hidrológiai algoritmusokat",
+      "C) Csak kartográfiai eszközöket",
+      "D) Csak adatbázis-kezelést"
+    ],
+    "correct": "B",
+    "explanation": "A SAGA GIS a Processing keretrendszeren keresztül domborzat- és hidrológiai elemzést biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az Esri Grid formátum?",
+    "options": [
+      "A) Vektoros formátum",
+      "B) ESRI tulajdonosi raszterformátum bináris fájlmappaként",
+      "C) Nyílt forráskódú adatbázis",
+      "D) JSON-alapú formátum"
+    ],
+    "correct": "B",
+    "explanation": "Az Esri Grid tulajdonosi raszterformátum, bináris fájlok mappájaként tárolódik.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatkészlet biztosít 12 szintű globális vízgyűjtőket?",
+    "options": [
+      "A) NHDPlus",
+      "B) EU-Hydro",
+      "C) HydroBASINS",
+      "D) CORINE"
+    ],
+    "correct": "C",
+    "explanation": "A HydroBASINS 12 szintű egymásba ágyazott vízgyűjtőket biztosít az egész bolygóra.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Pro Layout View mire szolgál?",
+    "options": [
+      "A) Adatelemzés",
+      "B) Térképi elrendezés és nyomtatható kompozíció készítése",
+      "C) Python-kód írása",
+      "D) Adatbázis-kezelés"
+    ],
+    "correct": "B",
+    "explanation": "A Layout View térképi elrendezéseket készít címmel, jelmagyarázattal és méretarányléccel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a PCRaster plugin a QGIS-ben?",
+    "options": [
+      "A) Nyomtatási bővítmény",
+      "B) Elosztott hidrológiai modellezési plugin",
+      "C) GPS-kezelő plugin",
+      "D) Adatbázis-plugin"
+    ],
+    "correct": "B",
+    "explanation": "A PCRaster plugin elosztott hidrológiai modellezést tesz lehetővé a QGIS-ben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent az EPSG:4326 kód?",
+    "options": [
+      "A) Magyar EOV vetület",
+      "B) WGS 84 földrajzi koordináta-rendszer",
+      "C) UTM 34N zóna",
+      "D) ETRS89 vetület"
+    ],
+    "correct": "B",
+    "explanation": "Az EPSG:4326 a WGS 84 földrajzi koordináta-rendszert azonosítja fokokban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a QGIS HEC-RAS plugin?",
+    "options": [
+      "A) Domborzatelemzési eszköz",
+      "B) Hidraulikai modellezés és árvízi elöntéstérképezés",
+      "C) Felszínborítási osztályozás",
+      "D) GPS-adatfeldolgozás"
+    ],
+    "correct": "B",
+    "explanation": "A QGIS HEC-RAS plugin a hidraulikai modellezést és árvízi elöntéstérképezést támogatja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "A Sentinel-2 műholdfelvételek milyen felbontásúak?",
+    "options": [
+      "A) 1 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 250 m"
+    ],
+    "correct": "B",
+    "explanation": "A Sentinel-2 10 méteres felbontású multispektrális felvételeket biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 'Feature Class to Feature Class' eszköz feladata?",
+    "options": [
+      "A) Raszter konvertálása",
+      "B) Objektumosztály exportálása/konvertálása a geoadatbázisba",
+      "C) Térképnyomtatás",
+      "D) Idősor-elemzés"
+    ],
+    "correct": "B",
+    "explanation": "Az eszköz objektumosztályt exportál és konvertál a cél-geoadatbázisba, vetületi átszámítással.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoJSON formátum támogatja a földrajzi objektumok JSON-ban való tárolását.",
+    "correct": true,
+    "explanation": "A GeoJSON nyílt szabványú formátum vektoros adatok JSON-formátumban történő leírásához.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro több operációs rendszeren is fut.",
+    "correct": false,
+    "explanation": "Az ArcGIS Pro kizárólag Windows rendszeren érhető el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS támogatja az offline terepi adatgyűjtést a QField segítségével.",
+    "correct": true,
+    "explanation": "A QField támogatja az offline működést távoli, mobilhálózat nélküli területeken.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A PCRaster plugin elosztott hidrológiai modellezést biztosít a QGIS-ben.",
+    "correct": true,
+    "explanation": "A PCRaster a QGIS-ben elosztott hidrológiai modellezést tesz lehetővé.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az EPSG:4326 a magyar EOV koordináta-rendszert jelöli.",
+    "correct": false,
+    "explanation": "Az EPSG:4326 a WGS 84 földrajzi rendszer; az EOV kódja EPSG:23700.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A SAGA GIS algoritmusai elérhetők a QGIS Processing-en keresztül.",
+    "correct": true,
+    "explanation": "A SAGA a Processing keretrendszeren keresztül integrálva van a QGIS-be.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A HydroBASINS adatkészlet csak az Egyesült Államokra vonatkozik.",
+    "correct": false,
+    "explanation": "A HydroBASINS az egész bolygóra biztosít vízgyűjtő-határokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Sentinel-2 műholdfelvételek 10 méteres felbontásúak.",
+    "correct": true,
+    "explanation": "A Sentinel-2 10 m-es multispektrális felvételeket készít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vállalati geoadatbázis működéséhez nem szükséges szerver.",
+    "correct": false,
+    "explanation": "A vállalati geoadatbázis PostgreSQL, SQL Server vagy Oracle szerverre épül.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoPackage formátum támogatja a raszteres adatok tárolását is.",
+    "correct": true,
+    "explanation": "A GeoPackage egyetlen fájlban raszteres csempéket és vektoros objektumokat egyaránt tárol.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS Nyomtatási összeállítás (Print Layout) megfelel az ArcGIS Pro Layout View-jának.",
+    "correct": true,
+    "explanation": "Mindkettő teljes kartográfiai kompozíciós eszközöket biztosít (cím, jelmagyarázat, méretarány).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Enterprise ingyenes szoftver.",
+    "correct": false,
+    "explanation": "Az ArcGIS Enterprise kereskedelmi szerver-platform, licencelési költséggel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A felhőalapú GIS-platformok csak internetkapcsolattal használhatók.",
+    "correct": true,
+    "explanation": "A felhő GIS megköveteli az internetkapcsolatot az adatok és számítások eléréséhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az Arc Hydro Groundwater adatmodell háromdimenziós felszín alatti objektumokat kezel.",
+    "correct": true,
+    "explanation": "Az Arc Hydro Groundwater kiterjeszti a koncepciót kutakra, fúrásokra és geológiai rétegekre.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus Data Space fizetős szolgáltatás.",
+    "correct": false,
+    "explanation": "A Copernicus Data Space ingyenes hozzáférést biztosít az EU földmegfigyelési adataihoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GIS-ben a metszet (Intersect) művelet új geometriát hoz létre két réteg átfedéséből.",
+    "correct": true,
+    "explanation": "Az Intersect geofeldolgozási művelet a két réteg geometriai metszetét állítja elő.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A domborzatárnyékolás önálló adatréteget igényel a magassági adattól.",
+    "correct": false,
+    "explanation": "A domborzatárnyékolás a DEM-ből származtatott megjelenítés, nem önálló adatforrás.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az OGC szabványok biztosítják a szoftverplatformok közötti interoperabilitást.",
+    "correct": true,
+    "explanation": "A WMS, WFS és WCS szabványok bármely OGC-kompatibilis kliens számára elérhetővé teszik az adatokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GIS-ben a térbeli lekérdezés csak raszteres adatokon végezhető el.",
+    "correct": false,
+    "explanation": "A térbeli kiválasztás elsősorban vektoros objektumokon működik (pont, vonal, poligon).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország teljes területe lefedett az SRTM DEM-mel.",
+    "correct": true,
+    "explanation": "Az SRTM 60°É-ig fedi le a Földet, Magyarország (45,5-48,5°É) teljes egészében a lefedettségi tartományban van.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A geoadatbázis ObjectID mezőjét a felhasználó manuálisan állítja be.",
+    "correct": false,
+    "explanation": "Az ObjectID-t a geoadatbázis automatikusan rendeli hozzá minden objektumhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU-Hydro adatkészlet Strahler-rendűség attribútumot tartalmaz.",
+    "correct": true,
+    "explanation": "Az EU-Hydro vízhálózati elemei Strahler-rendűséggel ellátott attribútumokat tartalmaznak.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben nincs lehetőség grafikus modellezésre.",
+    "correct": false,
+    "explanation": "A QGIS Processing grafikus modellező vizuális munkafolyamat-tervezést biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR-alapú DEM-ek általában 10-15 cm magassági pontosságúak.",
+    "correct": true,
+    "explanation": "A modern LiDAR-technológia 10-15 centiméteres magassági pontosságot ér el.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro és a QGIS közötti gyakorlati különbség a vízgazdálkodásban jelentősen csökkent.",
+    "correct": true,
+    "explanation": "Mindkét platform érett és képes a vízgazdálkodási feladatok teljes skáláját kezelni.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A STAC szabvány csak a Microsoft Planetary Computeren használatos.",
+    "correct": false,
+    "explanation": "A STAC nyílt szabvány, amelyet több felhőplatform is alkalmaz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A shapefile támogatja a topológiai szabályok érvényesítését.",
+    "correct": false,
+    "explanation": "A shapefile nem támogat topológiai szabályokat; ehhez geoadatbázis szükséges.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az r.mapcalc a GRASS GIS térkép-algebrai parancsa.",
+    "correct": true,
+    "explanation": "Az r.mapcalc a GRASS GIS kifejezésnyelve raszterszámításokhoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vízgyűjtő-határ általában gerincvonalakat és vízválasztókat követ.",
+    "correct": true,
+    "explanation": "A vízgyűjtő-határ a domborzat gerincvonalain fut, elválasztva a különböző kifolyási pontok felé tartó területeket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Online vízgyűjtő-lehatárolása 1 méteres felbontásra épül.",
+    "correct": false,
+    "explanation": "Az ArcGIS Online 30-90 méteres előfeldolgozott DEM-adatokat használ.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro projektfájl kiterjesztése _____.",
+    "correct": ".aprx",
+    "explanation": "Az .aprx fájl tartalmazza a projekt beállításait és térképhivatkozásait.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS projektfájl kiterjesztése _____.",
+    "correct": ".qgz",
+    "explanation": "A .qgz tömörített formátumban tárolja a QGIS projekt beállításait.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EPSG:4326 kód a _____ koordináta-rendszert jelöli.",
+    "correct": "WGS 84",
+    "explanation": "A WGS 84 a leggyakoribb globális földrajzi koordináta-rendszer.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EOV EPSG kódja _____.",
+    "correct": "23700",
+    "explanation": "Az EPSG:23700 a magyar Egységes Országos Vetületi rendszer kódja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ réteg szimulált megvilágítással mutatja a terepszerkezetet.",
+    "correct": "domborzatárnyékolás",
+    "explanation": "A hillshade réteg a lejtés és lejtőirány alapján szimulálja a megvilágítást.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízgyűjtő-határ _____ és vízválasztókat követ a terepen.",
+    "correct": "gerincvonalakat",
+    "explanation": "A határ a domborzat legmagasabb vonalain fut, elválasztva a lefolyási területeket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ kiválasztás a 'bármely részt oszt' típusú térbeli kapcsolatot vizsgálja.",
+    "correct": "Metszi",
+    "explanation": "A Metszi (Intersect) kiválasztás minden részben érintett objektumot megtalálja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vektoros objektumok _____ mezője tartalmazza a geometriát az ArcGIS-ben.",
+    "correct": "Shape",
+    "explanation": "A Shape mező tárolja az objektum koordinátáit és alakját.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Google Earth Engine rövidítése _____.",
+    "correct": "GEE",
+    "explanation": "A GEE a felhőalapú bolygóléptékű térbeli elemzés úttörő platformja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ típusú raszterformátum a legelterjedtebb és leginkább interoperábilis.",
+    "correct": "GeoTIFF",
+    "explanation": "A GeoTIFF belsőleg tárolja a CRS-t, támogatja a tömörítést, és minden GIS olvassa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro hidrológiai adatmodellezési eszközkészlete az _____.",
+    "correct": "Arc Hydro",
+    "explanation": "Az Arc Hydro Tools a hidrológiai adatmodellezés és domborzat-előfeldolgozás eszközkészlete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ szolgáltatás vektoros objektumokat szolgáltat lekérdezéssel az OGC-szabványok szerint.",
+    "correct": "WFS",
+    "explanation": "A Web Feature Service (WFS) vektoros objektumok lekérdezését és szerkesztését biztosítja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LiDAR-alapú DEM-ek magassági pontossága tipikusan _____ cm.",
+    "correct": "10-15",
+    "explanation": "A modern LiDAR-technológia 10-15 centiméteres vertikális pontosságot biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ attribútum mutatja a vízfolyások hierarchikus rangját.",
+    "correct": "Strahler-rendűség",
+    "explanation": "A forráságaktól (1. rendű) a fő folyóig növekvő hierarchikus szám.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro-ban a raszteralapú elemzéseket a _____ bővítmény biztosítja.",
+    "correct": "Spatial Analyst",
+    "explanation": "A Spatial Analyst a domborzat- és hidrológiai elemzések bővítménye.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felhőalapú platformokon a felhasználó a _____ megy az adatokhoz, nem fordítva.",
+    "correct": "számítás",
+    "explanation": "A felhő GIS a számítást viszi az adatokhoz, nem az adatokat tölti le.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 műholdfelvételek _____ méteres felbontásúak.",
+    "correct": "10",
+    "explanation": "A Sentinel-2 10 m-es multispektrális felvételeket készít felszínmegfigyeléshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS GIS vízgyűjtő-elemzési parancsa az _____.",
+    "correct": "r.watershed",
+    "explanation": "Az r.watershed a GRASS GIS átfogó vízgyűjtő-elemzési eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ESRI szerveri GIS platformja az ArcGIS _____.",
+    "correct": "Enterprise",
+    "explanation": "Az ArcGIS Enterprise a szerver-alapú térbeli adatkezelési és -szolgáltatási platform.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ módszerrel lehet felszínborítási poligonokat raszteresíteni a DEM cellaméretéhez.",
+    "correct": "raszterizálás",
+    "explanation": "A vektorról raszterre konverzió illeszti a felszínborítást a DEM rácsszerkezetéhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF rövidítés jelentése: Országos _____ Főigazgatóság.",
+    "correct": "Vízügyi",
+    "explanation": "Az OVF a magyar vízgazdálkodás központi szervezete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS-ben a Réteg átvetítése eszköz a réteg adatait az új _____ transzformálja.",
+    "correct": "koordináta-rendszerbe",
+    "explanation": "Az explicit átvetítés az adatokat ténylegesen átalakítja a cél CRS-be.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ típusú geoadatbázis PostgreSQL-re épül nyílt forráskódú környezetben.",
+    "correct": "PostGIS",
+    "explanation": "A PostGIS a PostgreSQL térbeli bővítménye vállalati környezetekhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízhálózat _____ leírja, mely szakaszok kapcsolódnak egymáshoz.",
+    "correct": "topológiája",
+    "explanation": "A topológia a kapcsolódási viszonyokat és folyásirányokat írja le a hálózatban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zala vízgyűjtőjének területe körülbelül _____ km².",
+    "correct": "2620",
+    "explanation": "A Zala ~2620 km²-t csapol le a Balatonba Nyugat-Magyarországon.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízgyűjtő-hierarchiában a HUC_____ a legrészletesebb szint.",
+    "correct": "12",
+    "explanation": "A HUC12 részvízgyűjtő a hat szintű HUC-hierarchia legfinomabb szintje.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi elöntési réteg megjelenítéséhez a _____ szabályozás a leghatékonyabb.",
+    "correct": "átlátszóság",
+    "explanation": "Az átlátszóság lehetővé teszi az elöntési réteg és az alaptérkép egyidejű megjelenítését.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A geoadatbázisban az _____ azonosító minden objektumhoz automatikusan hozzárendelt.",
+    "correct": "ObjectID",
+    "explanation": "Az ObjectID-t a rendszer automatikusan generálja, a felhasználó nem módosítja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS GIS vízhálózat-levezetési parancsa az _____.",
+    "correct": "r.stream.extract",
+    "explanation": "Az r.stream.extract a vízhálózat levezetésére szolgáló GRASS GIS eszköz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GIS-ben a _____ művelet az adatokat a vizsgálati terület határára vágja.",
+    "correct": "kivágás",
+    "explanation": "A Clip/Clip Raster művelet a rétegeket a vízgyűjtő-határ kiterjedésére korlátozza.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan biztosítja az objektumadatkészlet a térbeli konzisztenciát egy vízgyűjtő-projektben?",
+    "correct": "Az objektumadatkészlet egyetlen koordináta-rendszert kényszerít ki minden benne tárolt rétegre. Ha eltérő CRS-ű adatot importálunk, automatikusan átvetíti a cél rendszerbe. Ez kiküszöböli a GIS-projektek egyik leggyakoribb hibáját: az inkonzisztens koordináta-rendszereket.",
+    "explanation": "A közös CRS biztosítja, hogy minden réteg térbeli illeszkedése helyes legyen.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Copernicus program DEM-termékeit és alkalmazási területeiket!",
+    "correct": "Copernicus GLO-30: 30 m, globális, ingyenes, általános vízgyűjtő-elemzéshez. Copernicus EEA-10: 10 m, 39 európai ország, korlátozott hozzáférés, európai regionális tanulmányokhoz. Mindkettő a Copernicus Data Space-ből érhető el GeoTIFF formátumban.",
+    "explanation": "A Copernicus program több felbontású DEM-eket biztosít különböző elemzési igényekhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a Python-szkriptelés a vízgazdálkodási GIS-munkafolyamatokban?",
+    "correct": "Az ArcPy (ArcGIS Pro) és PyQGIS (QGIS) lehetővé teszik az ismétlődő feladatok automatizálását: pl. 50 részvízgyűjtő DEM-jének kötegelt feldolgozása. Felhőben a GEE Python API és a rasterio/xarray könyvtárak bolygóléptékű elemzést tesznek lehetővé.",
+    "explanation": "A Python-automatizálás nagyságrendekkel növeli a hatékonyságot ismétlődő feladatoknál.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az attribútumtábla-műveletek szerepét a vízgazdálkodási elemzésben!",
+    "correct": "Mezőszámítás: új értékek származtatása (pl. SPECIFIC_Q = Q/AREA). Táblaillesztés: nem-térbeli adatok csatolása térbeli objektumokhoz közös kulcsmezővel. Összesítő statisztikák: csoportonkénti aggregálás (pl. átlag csapadék vízgyűjtőnként). Mindhárom elengedhetetlen a nyers adatok elemzésre kész formára alakításához.",
+    "explanation": "Az attribútumtábla-műveletek a térbeli és nem-térbeli adatok összekötői.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változott a GIS-ökoszisztéma az elmúlt évtizedben a vízgazdálkodás szempontjából?",
+    "correct": "Az egyetlen asztali alkalmazásból összekapcsolt ökoszisztéma lett: asztali (ArcGIS Pro, QGIS), szerver (ArcGIS Enterprise, GeoServer), felhő (GEE, Planetary Computer, ArcGIS Online) és mobil (Field Maps, QField) platformok. A 2026-os szakember rugalmasan mozog e környezetek között a feladattól függően.",
+    "explanation": "A modern vízgazdálkodási GIS több platformon átívelő integrált rendszer.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mik a felhőalapú vízgyűjtő-lehatárolás előfeldolgozási lépései a szerveren?",
+    "correct": "(1) Globális DEM-adatok letöltése (SRTM, Copernicus). (2) Süllyedékek kitöltése. (3) Folyásirányok kiszámítása. (4) Folyásakkumuláció előállítása. (5) Vízhálózat-küszöb alkalmazása. Mindez előre elvégzett, így a felhasználó kattintására csak a nyomkövetés fut valós időben.",
+    "explanation": "A költséges előfeldolgozás előre történik, ezért a lehatárolás másodperceket vesz igénybe.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a QGIS hidrológiai eszköztárainak összehasonlítását (GRASS, SAGA, WhiteboxTools)!",
+    "correct": "GRASS GIS: r.watershed, r.stream.extract, r.water.outlet - átfogó vízgyűjtő-elemzés. SAGA GIS: kiegészítő domborzati és hidrológiai algoritmusok. WhiteboxTools: fejlett geomorfometria (süllyedékkitöltés, D8, Strahler). Mindhárom a Processing keretrendszeren keresztül érhető el, kissé eltérő konvenciókkal.",
+    "explanation": "A három eszköztár kombinációja az Arc Hydro Tools funkcionális megfelelője.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a koordináta-rendszer kiválasztásakor?",
+    "correct": "Vetületi CRS szükséges (nem földrajzi) a helyes mérésekhez. Magyar projektekhez: EOV (EPSG:23700) nemzeti konzisztenciához, UTM 34N (EPSG:32634) EU/globális kompatibilitáshoz. A fő követelmény: lineáris mértékegységek (méter). A földrajzi CRS (fok) mérnöki célokra alkalmatlan.",
+    "explanation": "A CRS-választás befolyásolja az összes geometriai mérés helyességét.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kapcsolódik a GIS az operatív árvíz-előrejelzéshez?",
+    "correct": "Az operatív rendszerek (National Water Model, EFAS) rácsalapú számításokra épülnek: radarcsapadék, műholdas talajnedvesség és időjárás-előrejelzés feldolgozása térkép-algebrával elosztott lefolyásbecsléshez. A GIS biztosítja a térbeli adatkezelést, az eredmények vizualizálását és a hálózati továbbvezetést.",
+    "explanation": "A modern árvíz-előrejelzés alapvetően GIS-alapú térbeli számításokra épül.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrásokból áll össze egy tipikus magyar vízgyűjtő-projekt alapadatkészlete?",
+    "correct": "DEM: DDM-5 (Lechner) vagy Copernicus GLO-30. Vízhálózat: EU-Hydro (Copernicus). Vízgyűjtő-határ: OVF vagy HydroBASINS. Mércehelyek: OVF (data.vizugy.hu). Felszínborítás: CORINE (EEA) vagy ESA WorldCover. Talajtérkép: AGROTOPO vagy EU SoilGrids. Minden adatot közös vetületi CRS-be (EOV/UTM) kell hozni.",
+    "explanation": "A magyar vízgyűjtő-projektek hazai és EU-szintű adatforrásokból meríthetnek.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a geoadatbázis topológiai szabályainak szerepe a vízhálózat modellezésében?",
+    "correct": "A topológiai szabályok biztosítják, hogy a vízhálózat elemei helyesen kapcsolódjanak: szakaszok a csomópontoknál pontosan érintkeznek, nincs sehol hézag vagy átfedés, a folyásirány konzisztens. A hibás topológia megakadályozza a hálózati nyomkövetést és a vízgyűjtő-lehatárolást.",
+    "explanation": "A topológiai integritás a hálózati elemzések előfeltétele.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változik a DEM cellaméret és az adatmennyiség közötti viszony?",
+    "correct": "A cellaméret tízszeres csökkentése százszoros adatmennyiség-növekedést eredményez (a cellák száma a cellaméret négyzetének reciprokával arányos). Magyarország 90 m-es DEM-je ~11,5 millió cella (~50 MB). 10 m-nél: ~930 millió cella (több GB). 1 m-nél: ~93 milliárd cella (TB-os tárhely). A felbontás felezése négyszeres cellaszám.",
+    "explanation": "A felbontás és az adatmennyiség közötti négyzetes kapcsolat alapvető tervezési szempont.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az egyszimbólumos és kategóriás megjelenítés közötti különbség?",
+    "correct": "Egyszimbólumos: minden objektum azonos szimbólumot kap (pl. minden folyó azonos kék vonal) -- mutatja az objektumok helyét. Kategóriás (egyedi értékek): eltérő szimbólum minden attribútumértékhez (pl. állandó/időszakos vízfolyás, különböző vízgyűjtők eltérő színnel). A kategóriás feltárja az adatok belső struktúráját.",
+    "explanation": "A szimbológia megválasztása meghatározza, milyen információt közvetít a térkép.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Google Earth Engine főbb vízgazdálkodási alkalmazásait!",
+    "correct": "Felszínborítás osztályozása teljes folyómedencén 20 évnyi Landsat-felvétel alapján. Havi csapadékanoméliák számítása globális rácshálós adatokból. Felszíni vízborítás változásainak térképezése (JRC Global Surface Water). Műholdas talajnedvesség-elemzés. Mindez felhőalapú számítással, adatletöltés nélkül.",
+    "explanation": "A GEE olyan feladatokat tesz lehetővé, amelyek asztali gépen megvalósíthatatlanok lennének.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az INSPIRE adatszolgáltatási kötelezettség gyakorlati hatása?",
+    "correct": "Az EU-tagállamoknak szabványos OGC webes szolgáltatásokon (WMS, WFS, WCS) keresztül kell közzétenniük a térbeli adatokat. Ezáltal bármely GIS-kliens hozzáférhet a nemzeti adatokhoz platformfüggetlen módon. Magyarországon a Lechner Tudásközpont működteti az infrastruktúrát. Ez elősegíti az EU-szintű határokon átnyúló elemzéseket.",
+    "explanation": "Az INSPIRE az interoperábilis európai térbeli adatinfrastruktúra alapja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GIS az árvízkockázat kommunikálásában?",
+    "correct": "Árvízi elöntési réteg műholdfelvételre helyezve átlátszósággal megmutatja az érintett épületeket. 3D vizualizáció intuitíven mutatja a vízszint és a terep viszonyát. Choropleth térképek kommunikálják a veszélyeztetett népesség térbeli eloszlását. Az interaktív webes térképek (qgis2web, ArcGIS Online) a döntéshozók számára hozzáférhetővé teszik az eredményeket.",
+    "explanation": "A GIS-vizualizáció az árvízkockázat kommunikálásának elsődleges eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívások merülnek fel eltérő országok vízügyi adatainak összehasonlításakor?",
+    "correct": "Különböző koordináta-rendszerek (EOV, UTM, NAD83 stb.) -- vetületi átalakítás szükséges. Különböző adatformátumok (geoadatbázis, shapefile, GeoPackage). Különböző attribútum-kódolás (HUC vs WFD vízgyűjtő-kódok). Különböző vízrajzi konvenciók és mérceazonosítók. A GeoPackage és az OGC-szabványok segítenek az interoperabilitásban.",
+    "explanation": "A nemzetközi összehasonlítás szisztematikus adathomogenizálást igényel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a mobil GIS és az asztali GIS közötti munkafolyamatot!",
+    "correct": "Asztali: projekt és térképrétegek előkészítése (QGIS/ArcGIS Pro). Mobil: QField/Field Maps-ra átvitel, terepi adatgyűjtés GPS-szel, fényképek, attribútumok rögzítése. Szinkronizáció: QFieldCloud/ArcGIS Online visszaviszi az adatokat az asztali projektbe. Az asztalon: elemzés, vizualizáció, jelentéskészítés.",
+    "explanation": "A kétirányú adat-szinkronizáció az iroda és terep közötti munkát teszi zökkenőmentessé.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A geoadatbázis verziókezelést biztosít a vállalati szinten.",
+    "correct": true,
+    "explanation": "A vállalati geoadatbázis verziókezelést, többfelhasználós szerkesztést biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GIS csak asztali számítógépen használható.",
+    "correct": false,
+    "explanation": "A GIS asztali, szerver, felhő- és mobilkörnyezetben egyaránt működik.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterizálás során a vektoros objektumok négyzetes cellákká alakulnak.",
+    "correct": true,
+    "explanation": "A raszterizálás a vektoros geometriát négyzetes rácscellákkal közelíti.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az Arc Hydro Tools fizetős bővítmény az ArcGIS Pro-hoz.",
+    "correct": false,
+    "explanation": "Az Arc Hydro Tools ingyenes bővítmény.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A shapefile-ban egyetlen fájlban többféle geometriatípus tárolható.",
+    "correct": false,
+    "explanation": "Egy shapefile csak egyféle geometriát tárolhat (pont, vonal VAGY poligon).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GIS-alapú árvíztérképezés DEM-re épül.",
+    "correct": true,
+    "explanation": "A digitális domborzatmodell az árvízi elöntési térképezés alapja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS ingyenes, de nem nyílt forráskódú.",
+    "correct": false,
+    "explanation": "A QGIS ingyenes ÉS nyílt forráskódú (GNU GPL).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az OGC WaterML 2.0 hidrológiai idősor-adatmodellt definiál.",
+    "correct": true,
+    "explanation": "A WaterML 2.0 a hidrológiai megfigyelési idősorok szabványa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 reanalízis 1 km-es rácsféltást biztosít.",
+    "correct": false,
+    "explanation": "Az ERA5 ~31 km-es (0,25°) felbontású.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A MODIS műholdas termékek 250 m-es felbontásúak lehetnek.",
+    "correct": true,
+    "explanation": "A MODIS egyes termékei 250 m-es felbontásúak (pl. vegetációindex).",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor csak két réteg közötti műveleteket végez.",
+    "correct": false,
+    "explanation": "A raszterkalkulátor tetszőlegesen összetett, több rétegű kifejezéseket kezel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro és a QGIS egyaránt támogatja a GeoTIFF formátumot.",
+    "correct": true,
+    "explanation": "A GeoTIFF a legelterjedtebb interoperábilis raszterformátum, mindkét platform támogatja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-nek nincs beépített nyomtatási/térképkompozíciós eszköze.",
+    "correct": false,
+    "explanation": "A QGIS Nyomtatási összeállítás (Print Layout) teljes kartográfiai eszközöket biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A vízgyűjtő-elemzésnél a DEM kiterjedésének túl kell nyúlnia a vízválasztón.",
+    "correct": true,
+    "explanation": "Ellenkező esetben a folyásirány-algoritmusok nem tudják meghatározni a helyes vízgyűjtő-határt.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoPackage SQLite adatbázis-motorra épül.",
+    "correct": true,
+    "explanation": "A GeoPackage az SQLite relációs adatbázis-kezelőre épülő OGC-szabvány.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro-ban az attribútum-kiválasztás neve Select by Attributes.",
+    "correct": true,
+    "explanation": "A Select by Attributes az SQL-szerű attribútumszűrés eszköze az ArcGIS Pro-ban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A folyásakkumuláció raszter a vízfolyáshálózat hierarchiáját tükrözi.",
+    "correct": true,
+    "explanation": "A magasabb akkumulációs értékek a főbb vízfolyásokat jelzik.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Az NLCD az európai felszínborítási adatkészlet.",
+    "correct": false,
+    "explanation": "Az NLCD az amerikai (National Land Cover Database), Európában a CORINE használatos.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A qgis2web plugin webes térképeket generál QGIS-projektekből.",
+    "correct": true,
+    "explanation": "Interaktív webes térképeket hoz létre a QGIS rétegeiből.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben a koordináta-rendszer konzisztenciáját a tároló szintjén kényszerítik ki.",
+    "correct": false,
+    "explanation": "A QGIS-ben nincs objektumadatkészlet-fogalom; a felhasználónak kell az explicit átvetítésről gondoskodnia.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro hidrológiai bővítménye a _____ Analyst.",
+    "correct": "Spatial",
+    "explanation": "A Spatial Analyst a raszteralapú hidrológiai elemzés bővítménye.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízfolyásokat _____ objektumokként ábrázolják a GIS-ben.",
+    "correct": "vonallánc",
+    "explanation": "Polyline geometriájú objektumok gyűjteménye.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ geoadatbázis SQLite-ra épül.",
+    "correct": "GeoPackage",
+    "explanation": "Az OGC-szabványú GeoPackage az SQLite adatbázis-motort használja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WFD rövidítés a Víz _____ jelenti.",
+    "correct": "Keretirányelv",
+    "explanation": "Az EU Water Framework Directive a vízgazdálkodás EU-s keretszabálya.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus EEA-10 DEM _____ m-es felbontású.",
+    "correct": "10",
+    "explanation": "10 méteres felbontás 39 európai ország számára.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízgyűjtő az a terület, amely egy közös _____ pontba szállítja a vizet.",
+    "correct": "kifolyási",
+    "explanation": "A vízgyűjtő definíciója: a közös kifolyási pont felé lefolyó terület.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro-ban a Select by _____ eszközzel hajtható végre attribútumszűrés.",
+    "correct": "Attributes",
+    "explanation": "Az SQL-szerű attribútum-lekérdezés eszközének neve.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ keresőtábla biztosítja a felszínborítási kategóriák hidrológiai paramétereit.",
+    "correct": "VAT",
+    "explanation": "Az értékattribútum-tábla (Value Attribute Table) az egész számú rácsok kategóriáihoz rendel adatokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A choropleth térkép poligonokat _____ színnel jelenít meg.",
+    "correct": "fokozatos",
+    "explanation": "A choropleth a numerikus attribútum szekvenciális színskálájával ábrázolja a poligonokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GIS-ben a térbeli _____ alapján szűrhetjük az objektumokat más objektumokhoz képest.",
+    "correct": "viszonyok",
+    "explanation": "A térbeli kiválasztás földrajzi viszonyokon alapul (metszi, benne van, távolságon belül).",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ESRI szerverplatformja az ArcGIS _____.",
+    "correct": "Enterprise",
+    "explanation": "A szerver-alapú GIS platform webes portált biztosít a szervezeten belüli adatmegosztáshoz.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ művelet két réteg geometriai metszetét állítja elő.",
+    "correct": "Intersect",
+    "explanation": "A térbeli metszet az átfedő területet számítja ki két réteg között.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A modern LiDAR DEM-ek magassági pontossága _____ cm.",
+    "correct": "10-15",
+    "explanation": "A LiDAR-technológia centiméter-pontosságú magassági adatokat biztosít.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízgyűjtő-elemzés a nyers _____ adattól a vízgyűjtő-jellemzésig vezető munkafolyamat.",
+    "correct": "magassági",
+    "explanation": "A DEM (magassági adat) az alapja az egész hidrológiai feldolgozási láncnak.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Arc Hydro adatmodellt _____ Maidment és munkatársai fejlesztették.",
+    "correct": "David",
+    "explanation": "David Maidment a University of Texas at Austin professzora, az Arc Hydro megalkotója.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GIS három legfontosabb térbeli kiválasztási módszere: Metszi, Benne van és _____.",
+    "correct": "Távolságon belül",
+    "explanation": "A Within a distance kiválasztás megadott sugarú körzetben keres.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS-ben az r.water._____ GRASS parancs végzi a vízgyűjtő-lehatárolást.",
+    "correct": "outlet",
+    "explanation": "Az r.water.outlet a kifolyási pont felső vízgyűjtőjét határolja le.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Planetary Computer _____ környezetet biztosít az elemzéshez.",
+    "correct": "JupyterHub",
+    "explanation": "A JupyterHub Python-alapú interaktív elemzőfelületet kínál a felhőben.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM DEM-ek eredetileg _____ méteres felbontásban készültek globálisan.",
+    "correct": "90",
+    "explanation": "Az eredeti nyilvános SRTM 90 m-es (3 ívmásodperces) volt; később az 1 ívmásodperces (30 m) is elérhetővé vált.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ típusú elemzés lehetővé teszi több időszak felszínborítás-változásának kimutatását.",
+    "correct": "változásérzékelés",
+    "explanation": "A change detection elemzés összehasonlítja a különböző időpontok felszínborítását.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS-ben a Kategorizált megjelenítő az ArcGIS Pro _____ beállításának felel meg.",
+    "correct": "Egyedi értékek",
+    "explanation": "Mindkettő az attribútummező minden egyedi értékéhez más szimbólumot rendel.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térbeli adatok megosztásának legszélesebb körben alkalmazott raszterformátuma a _____.",
+    "correct": "GeoTIFF",
+    "explanation": "A GeoTIFF a legszélesebb körben támogatott és interoperábilis raszterformátum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az asztali, szerver, felhő és mobil GIS-platformok közötti munkamegosztást egy vízgyűjtő-projektben!",
+    "correct": "Asztali GIS (ArcGIS Pro/QGIS): részletes elemzés, modellépítés, kartográfia. Szerver (ArcGIS Enterprise/GeoServer): adatszolgáltatás, webes térképmegosztás. Felhő (GEE/Planetary Computer): nagy léptékű műholdas elemzés, bolygóléptékű adathozzáférés. Mobil (Field Maps/QField): terepi adatgyűjtés, GPS-es felmérés. A platformok egymást kiegészítik.",
+    "explanation": "A modern vízgazdálkodási munkafolyamat több platformon átível.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan biztosítja a geoadatbázis a vízhálózat topológiai integritását?",
+    "correct": "A topológiai szabályok biztosítják: szakaszok csomópontoknál pontosan érintkeznek, nincs hézag vagy átfedés, a folyásirány konzisztens. Ez elengedhetetlen a hálózati nyomkövetéshez, vízgyűjtő-lehatároláshoz és árvízmodellezéshez. Hibás topológia hamis eredményeket ad.",
+    "explanation": "A topológiai integritás az összes hálózati elemzés előfeltétele.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyöket kínál a GeoPackage a vízgazdálkodási projektekhez?",
+    "correct": "Egyetlen hordozható fájl vektoros és raszteres adatokkal. Nincs méretkorlát, korlátlan mezőnévhossz, null értékek támogatása. Minden GIS-platform teljes támogatása. Platformközi adatcseréhez ideális. Az SQLite motoron alapul, így programozásbarát is.",
+    "explanation": "A GeoPackage a shapefile korlátozásainak nélküli modern alternatívája.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazzák a térbeli átfedési műveleteket a vízgazdálkodási tervezésben?",
+    "correct": "Árvízi zóna és telektérkép metszete: veszélyeztetett ingatlanok listája. Vízhálózat pufferelése: parti sáv területhasználati konfliktusai. Felszínborítás kivágása vízgyűjtő-határra: vizsgálati terület információja. Részvízgyűjtők dissolve-ja: durvább jelentési szint. Ezek a GIS-alapú tervezés mindennapi eszközei.",
+    "explanation": "A térbeli átfedési műveletek a döntéstámogatás eszközei.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi az árvízi elöntési réteg hatékony vizualizálásának módszere?",
+    "correct": "Az árvízi elöntési réteget félig átlátszóan műholdfelvételre vagy ortofotóra kell helyezni, így egyszerre látható az árvíz kiterjedése és az érintett épületek. Színkódolás a mélység szerint (sárgától piroson át lilához). 3D vizualizáció a terep és vízszint viszonyához. Interaktív webes térkép a döntéshozók számára.",
+    "explanation": "A megfelelő vizualizáció az árvízkockázat kommunikálásának kulcsa.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatformátumokkal találkozhat egy vízügyi szakember, és melyiket mikor használja?",
+    "correct": "Fájl-geoadatbázis: ArcGIS asztali munka, fejlett funkciók. GeoPackage: platformközi csere, QGIS natív. Shapefile: örökség, csak kényszerből. GeoTIFF: raszteradatok. NetCDF: klíma- és időjárási adatok. GeoJSON: webes alkalmazások. PostGIS: vállalati, többfelhasználós. A formátumválasztás a kontextustól és a felhasználási céltól függ.",
+    "explanation": "Az adatformátumok ismerete elengedhetetlen a hatékony munkavégzéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használhatók a GIS-lekérdezések vízmérce-állomások kiválasztásához?",
+    "correct": "Attribútum-lekérdezés: RECORD_LENGTH >= 30 AND DRAINAGE_AREA > 500 (hosszú adatsorú, nagy vízgyűjtőjű mércék). Térbeli kiválasztás: a vizsgált vízgyűjtő-poligonon belüli állomások (Within). Kombinált: mindkét feltételt együtt alkalmazva a projekt-specifikus mércekészlet kinyerhető az országos adatbázisból.",
+    "explanation": "A lekérdezések a nagy adatbázisokból projektspecifikus adatokat szűrnek ki.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Python-automatizálás előnye a GIS-munkafolyamatokban?",
+    "correct": "Ismétlődő feladatok automatizálása: pl. 50 részvízgyűjtő DEM-jének kötegelt feldolgozása. Reprodukálhatóság: a szkript dokumentálja a teljes munkafolyamatot. Skálázhatóság: az azonos kód alkalmazható különböző területekre. Az ArcPy, PyQGIS és a rasterio/xarray könyvtárak teljes GIS-funkcionalitást biztosítanak.",
+    "explanation": "A Python-szkriptelés nagyságrendekkel növeli a hatékonyságot.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az EU és USA vízgyűjtő-rendszereinek összehasonlítását!",
+    "correct": "USA: HUC rendszer 6 szinttel (HUC2-HUC12), WBD adatkészlet, NHDPlus vízhálózat. EU: Víz Keretirányelv vízgyűjtő-kerületek, részmedencék, víztestek, EU-Hydro vízhálózat. Globálisan: HydroBASINS 12 szint, HydroRIVERS. A koncepcióik hasonlók (hierarchikus vízgyűjtők), de a kódolás és az adatforrások eltérőek.",
+    "explanation": "A különböző rendszerek ismerete szükséges a nemzetközi projektekhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján válasszunk DEM-et egy magyar vízgyűjtő-projekthez?",
+    "correct": "DDM-5 (5 m): legpontosabb, de megrendelendő a Lechner-től. Copernicus EEA-10 (10 m): jó részletesség, korlátozott hozzáférés. Copernicus GLO-30 (30 m): ingyenes, általános célra elegendő. SRTM 30 m: gyors letöltés, de régebbi adat. A választás a feladat felbontási igényétől, a hozzáférhetőségtől és a költségvetéstől függ.",
+    "explanation": "A DEM-választás alapvető döntés minden vízgyűjtő-projekt elején.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a QGIS Processing keretrendszer előnye a hidrológiai elemzésben?",
+    "correct": "Egyetlen kereshető felületen egyesíti a QGIS natív, GRASS, SAGA, WhiteboxTools és GDAL eszközöket. A grafikus modellező automatizált munkafolyamatokká láncolja az eszközöket. Python-szkriptekből is elérhető. Az Arc Hydro Tools-szal összehasonlítható funkcionalitást biztosít, több eszköztárból összeállítva.",
+    "explanation": "A Processing keretrendszer teszi a QGIS-t teljes értékű hidrológiai elemzőeszközzé.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a GIS az éghajlatváltozás vízgazdálkodási hatásainak elemzését?",
+    "correct": "Klímamodell-kimenetek (ERA5, GCM) rácshálós feldolgozása térkép-algebrával. Felszínborítás-változás térképezése többidejű műholdfelvételekből (Landsat, Sentinel). Vízgyűjtő-léptékű csapadék- és hőmérséklettrendek számítása zónális statisztikákkal. A GEE és Planetary Computer lehetővé teszik a bolygóléptékű éghajlati elemzéseket.",
+    "explanation": "A GIS a klímaváltozás térbeli hatásainak vizualizálásához és számszerűsítéséhez nélkülözhetetlen.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a geoadatbázis és a fájlrendszeres (shapefile-gyűjtemény) adatszervezés között?",
+    "correct": "Geoadatbázis: kikényszerített kapcsolatok, konzisztens CRS, érvényes tartományok, topológiai szabályok, objektumok közötti relációk. Shapefile-gyűjtemény: kriptikus nevek, inkonzisztens CRS-ek, dokumentálatlan kapcsolatok, nincs adatintegritás-ellenőrzés. A geoadatbázis strukturált, fegyelmezett szervezést biztosít.",
+    "explanation": "A geoadatbázis megoldja a fájlrendszeres adatkezelés problémáit.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GIS a szennyezés-terjedés elemzéséhez egy vízrendszerben?",
+    "correct": "A vízhálózat hálózati nyomkövetése lefelé a szennyezőforrástól megtalálja az érintett szakaszokat. A pufferelés azonosítja a veszélyeztetett kutakat a folyó mentén. A térbeli kiválasztás megtalálja az érintett településeket. A zónális statisztikák kiszámítják a potenciálisan veszélyeztetett népességet.",
+    "explanation": "A GIS térbeli elemzési képességei alapvetőek a környezeti kockázatértékeléshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszteres és vektoros megjelenítés előnyeit és hátrányait!",
+    "correct": "Vektor: pontos geometria (sima élek), topológiai kapcsolatok, rugalmas attribútumkezelés, de számításigényes átfedési műveletek. Raszter: egyszerű cellánkénti műveletek, jól párhuzamosítható, természetes műholdas/modell adatformátum, de közelítő geometria (lépcsős élek), nagyobb tárhely sík területeken. A gyakorlatban mindkettő szükséges.",
+    "explanation": "A megjelenítések kiegészítik egymást a hidrológiai munkafolyamatokban.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján értékeljük egy DEM alkalmasságát hidrológiai elemzésre?",
+    "correct": "Térbeli felbontás: elegendő-e a feloldandó objektumokhoz (meder, domborzat). Magassági pontosság: sík terepen különösen kritikus. Lefedettség: túlnyúlik-e a vízgyűjtő-határon pufferzónával. Aktualitás: a táj változott-e az adatgyűjtés óta. Formátum: kompatibilis-e a GIS-eszközökkel. Előfeldolgozottság: szükséges-e süllyedékkitöltés.",
+    "explanation": "A DEM alkalmasságának értékelése a projekt-tervezés első lépése.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a GIS a vízminőségi monitorozás adatainak elemzéséhez?",
+    "correct": "Mintavételi állomások mint pont-objektumosztály a vízhálózat mentén. Vízminőségi adatok (nitrát, foszfor) táblaillesztéssel csatolva. Fokozatos szimbólumok a koncentrációk vizualizálásához. Térbeli kiválasztás a küszöbértéket meghaladó állomásokhoz (pl. nitrát > 50 mg/l). Zónális statisztikák a vízgyűjtő-szintű összesítéshez.",
+    "explanation": "A GIS integrálja a térbeli és az időbeli vízminőségi adatokat.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a WMS és a WFS szolgáltatások között a vízügyi adatmegosztásban?",
+    "correct": "A WMS (Web Map Service) raszteres térképképeket szolgáltat megjelenítésre -- a kliens képet kap, amelyen nem végezhet térbeli elemzést. A WFS (Web Feature Service) vektoros objektumokat szolgáltat lekérdezéssel és szerkesztéssel -- a kliens a geometriát és attribútumokat kapja, amelyeken elemzés végezhető. A vízügyi hatóságok WMS-t használnak az alaptérképek, WFS-t az elemzésre szánt adatok közzétételéhez.",
+    "explanation": "A WMS megjelenítésre, a WFS elemzésre való.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GIS a nemzetközi fejlesztési projektek WASH felméréseihez?",
+    "correct": "A KoBoToolbox és ODK nyílt forráskódú mobilplatformokon georeferált adatgyűjtés: kúthelyek, vízminőségi minták, szanitációs létesítmények GPS-koordinátákkal. Az adatok GIS-be importálva térbeli mintázatokat tárnak fel: mely települések vannak távol a víztől, hol hiányzik a szanitáció. A zónális elemzés azonosítja a prioritásos beavatkozási területeket.",
+    "explanation": "A GIS és a mobil adatgyűjtés kombinációja teszi hatékonnyá a fejlesztési projekteket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GIS szerepét a vízkészlet-gazdálkodás döntéstámogatásában!",
+    "correct": "A GIS integrálja a csapadék-, vízhozam-, felszínborítási és demográfiai adatokat közös térbeli keretben. A zónális statisztikák összesítik a vízgyűjtő-szintű paramétereket. Az átfedési elemzések azonosítják a konfliktuszónákat (pl. mezőgazdasági vízigény vs. ökológiai vízszükséglet). A vizualizáció kommunikálja az eredményeket a döntéshozóknak térképi formában.",
+    "explanation": "A GIS a vízkészlet-gazdálkodás térbeli döntéstámogatásának alapeszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a NetCDF formátum a vízgazdálkodási adatkezelésben?",
+    "correct": "A NetCDF (Network Common Data Form) többdimenziós tudományos adatokat tárol: klíma-reanalízis (ERA5), időjárási modell-kimenetek, műholdas csapadékbecslések. Előnye: tér- és idődimenziók kezelése egyetlen fájlban, hatékony tömörítés, metaadat-támogatás. A QGIS és Python (xarray) közvetlenül olvassa. A vízgazdálkodási klímaelemzések alapformátuma.",
+    "explanation": "A NetCDF a térbeli-időbeli tudományos adatok szabványos formátuma.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a térbeli interpoláció a csapadékadatok rácsosításához?",
+    "correct": "A pontszerű csapadékmérő-adatokat térbeli interpolációval folytonos rácsra alakítják: IDW, kriging vagy spline módszerrel. Az eredmény raszteres csapadékfelszín, amely térkép-algebrával kombinálható más rácsokkal (DEM, talaj, felszínborítás). A 8. fejezet részletesen tárgyalja a módszereket.",
+    "explanation": "Az interpoláció a pontmérésekből folytonos mezőket állít elő a hidrológiai modellezéshez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GIS-projekt metaadat-dokumentálásának jelentősége?",
+    "correct": "A metaadatok leírják az adatforrásokat, a koordináta-rendszert, a feldolgozási lépéseket, a dátumot és a pontosságot. Nélkülük a projekt nem reprodukálható, az adatok nem értékelhetők. Az INSPIRE metaadat-szabvány (ISO 19115) biztosítja az EU-szintű dokumentálási konzisztenciát. A jó metaadat-gyakorlat a tudományos és mérnöki munka alapkövetelménye.",
+    "explanation": "A metaadatok biztosítják az adatok megbízhatóságát és újrahasznosíthatóságát.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kombinálhatók a vektoros és raszteres adatok egy árvízkockázat-elemzésben?",
+    "correct": "Raszteres: DEM a domborzathoz, árvízi elöntési mélység raszter. Vektoros: épület-poligonok, úthálózat, vízgyűjtő-határ. Az átfedési elemzés (raszter a vektorra) meghatározza az elöntési mélységet minden épületnél. A zónális statisztikák összesítik az érintett épületszámot és a veszélyeztetett népességet vízgyűjtő-egységenként.",
+    "explanation": "Az árvízkockázat-elemzés természetszerűen ötvözi a vektor és raszter adatmodelleket.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a QGIS és ArcGIS Pro közötti adatcsere lehetőségeit!",
+    "correct": "GeoPackage: mindkét platform teljes mértékben támogatja, az ideális csereformátum. Shapefile: mindkettő olvassa/írja, de korlátokkal. GeoTIFF: raszterek számára mindkettő támogatja. Fájl-geoadatbázis: a QGIS olvasni tudja, de írni nem. Az OGC webes szolgáltatások (WMS/WFS) platformfüggetlen adatmegosztást biztosítanak.",
+    "explanation": "A GeoPackage a legbiztonságosabb választás a platformok közötti adatcseréhez.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GIS szerepe az ivóvízbázisok védelmi övezeteinek kijelölésében?",
+    "correct": "A vízkivétel pontjából kiindulva a hálózati nyomkövetés azonosítja a felső vízhálózati elemeket. A pufferelés kijelöli a védőterületet a vízkivétel körül. A felszínborítás és a területhasználat elemzése azonosítja a potenciális szennyezőforrásokat. A térbeli kiválasztás megtalálja a védőövezeten belüli ingatlanokat és gazdasági tevékenységeket.",
+    "explanation": "A GIS a vízbázisvédelem térbeli tervezésének alapeszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a Google Earth Engine a felszíni vizek változásainak elemzéséhez?",
+    "correct": "A JRC Global Surface Water adatkészlet 30 m felbontásban, 1984-től térképezi a felszíni vizek dinamikáját. A GEE lehetővé teszi: szezonális és éves változások elemzése, új víztestek és kiszáradások azonosítása, trendek számítása évtizedes skálán. Mindezt felhőalapú számítással, adatletöltés nélkül, globális lefedettséggel.",
+    "explanation": "A GEE a felszíni vizek globális monitorozásának elsődleges platformja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen stratégiákat alkalmazhatunk a nagy adatkészletek kezelésére a vízgazdálkodási GIS-ben?",
+    "correct": "Csempézett feldolgozás: a nagy DEM-eket kisebb csempékre osztva dolgozzuk fel. Felhőalapú számítás: GEE/Planetary Computer a szerveren dolgozik. Tömörítés: GeoTIFF LZW/DEFLATE tömörítéssel csökkenti a fájlméretet. Piramis-rétegek: különböző méretarányokhoz különböző felbontás. A megfelelő cellaméret választása: ne legyen feleslegesen finom.",
+    "explanation": "A nagy adatkészletek kezelése a modern hidrológiai GIS gyakorlati kihívása.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GIS szerepe a vízfolyások morfológiai elemzésében?",
+    "correct": "A DEM-ből levezetett vízhálózat elemzése: Strahler-rendűség, vízhálózati sűrűség, medence alakja, átlagos lejtés. A keresztszelvények vonallánc objektumokként a medergeometriát írják le. A többidejű elemzés (pl. történeti térképek és mai felvételek) a meder vándorlását mutatja. A LiDAR-DEM részletes meder-ártér geometriát biztosít.",
+    "explanation": "A GIS a folyómorfológiai elemzés térbeli keretrendszere.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használhatók a GIS-lekérdezések a vízgazdálkodási tervezésben?",
+    "correct": "Attribútum-lekérdezések: árvízi zónák szűrése, küszöbértéket meghaladó vízminőségi állomások. Térbeli lekérdezések: tervezett létesítmény hatóterületén belüli lakosság. Kombinált lekérdezések: védett területen belüli, magas nitrátszintű kutak. Az összetett lekérdezések AND/OR/NOT operátorokkal építhetők.",
+    "explanation": "A lekérdezések a döntéstámogatás automatizált adatszűrési eszközei.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a felszínborítási adatok szerepét a hidrológiai modellezésben!",
+    "correct": "A felszínborítás meghatározza a lefolyási együtthatót: vízzáró felszín (0,9) vs. erdő (0,15). A CORINE (EU) és NLCD (USA) szabványos osztályozásokat biztosítanak. A GIS-ben a felszínborítási rács reklasszifikálásával hidrológiai paraméter-rácsot készítünk. A zónális statisztikák vízgyűjtő-szinten összesítik a területhasználati összetételt.",
+    "explanation": "A felszínborítás a hidrológiai modellek egyik legfontosabb bemenete.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GIS-alapú webes térkép (web map) előnye a statikus térképhez képest?",
+    "correct": "Interaktív: a felhasználó nagyíthat, elmozdulhat, rétegeket kapcsolhat. Valós idejű: frissíthető adatokkal (pl. aktuális vízszintek). Hozzáférhető: böngészőből, szoftver nélkül. Megosztható: linkkel bárki elérheti. A qgis2web (QGIS) és az ArcGIS Online lehetővé teszik a webes publikálást. Az árvízkockázati térképek ideális megjelenítési formája.",
+    "explanation": "A webes térképek demokratizálják a térbeli információ hozzáférhetőségét.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GIS a talajvízszint-monitorozás adatainak kezelésében?",
+    "correct": "Kutakat pont objektumosztályként tároljuk GPS-koordinátákkal. A talajvízszint-méréseket táblaként csatoljuk táblaillesztéssel. Térbeli interpoláció (kriging) folytonos talajvízszint-felszínt állít elő. Időbeli elemzéssel a szintek változása követhető. A GIS integrálja a talajtani, geológiai és vízszintadatokat közös keretben.",
+    "explanation": "A GIS a talajvíz-monitorozás térbeli elemzésének eszköze.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lehetőségeket kínál a GIS az aszálymonitorozásban?",
+    "correct": "Műholdas vegetációindex (NDVI) idősorok a GEE-n a vegetáció állapotát mutatják. A csapadék-anomáliák számítása rácshálós adatokból (ERA5, IMERG). A szórásalapú osztályozás kiemeli a normálistól eltérő területeket. A zónális statisztikák vízgyűjtő-szinten összesítik az aszályindexeket. Az időbeli animáció mutatja az aszály terjedését.",
+    "explanation": "A GIS a térbeli-időbeli aszályelemzés és kommunikáció platformja.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Mi a GIS szerepe a vízügyi katasztrófák utáni kárbecslésben?",
+    "correct": "Műholdfelvételek összehasonlítása (előtte-utána) a kár kiterjedésének meghatározásához. Árvízi elöntési réteg átfedése épület- és infrastruktúra-adatokkal: érintett objektumok listája. Terepi felmérés mobil GIS-szel (Field Maps/QField): sérülések dokumentálása. Zónális statisztikák: összesített kárértékek vízgyűjtő-egységenként.",
+    "explanation": "A GIS a katasztrófakezelés térbeli információs infrastruktúrája.",
+    "chapter_num": 4
+  }
+]

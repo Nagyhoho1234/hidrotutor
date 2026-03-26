@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "When was MODFLOW first released by the USGS?",
+    "options": [
+      "1974",
+      "1980",
+      "1984",
+      "1990"
+    ],
+    "correct": "C",
+    "explanation": "MODFLOW was first released by the United States Geological Survey in 1984."
+  },
+  {
+    "type": "mcq",
+    "question": "What programming language is MODFLOW written in?",
+    "options": [
+      "C++",
+      "Python",
+      "Java",
+      "Fortran"
+    ],
+    "correct": "D",
+    "explanation": "The USGS distributes MODFLOW source code written in Fortran."
+  },
+  {
+    "type": "mcq",
+    "question": "What are the four pillars of MODFLOW's dominance?",
+    "options": [
+      "Speed, accuracy, documentation, and cost",
+      "Free/open-source, modular architecture, large installed base, and steady evolution",
+      "Government mandate, speed, compatibility, and support",
+      "Accuracy, GUI, parallelism, and portability"
+    ],
+    "correct": "B",
+    "explanation": "MODFLOW's success rests on being free and open source, modular architecture, enormous installed base, and steady evolution."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the DIS package in MODFLOW specify?",
+    "options": [
+      "Material properties only",
+      "Source and sink terms",
+      "Grid geometry including rows, columns, layers, cell dimensions, and layer elevations",
+      "Solver convergence criteria"
+    ],
+    "correct": "C",
+    "explanation": "The Discretization (DIS) package specifies rows, columns, layers, cell dimensions (DELR, DELC), and layer top/bottom elevations."
+  },
+  {
+    "type": "mcq",
+    "question": "What package in MODFLOW 6 assigns hydraulic conductivity and anisotropy?",
+    "options": [
+      "DIS",
+      "NPF",
+      "WEL",
+      "STO"
+    ],
+    "correct": "B",
+    "explanation": "The Node-Property Flow (NPF) package assigns hydraulic conductivity, vertical anisotropy, and related properties."
+  },
+  {
+    "type": "mcq",
+    "question": "In the MODFLOW RIV package, what is the riverbed conductance formula?",
+    "options": [
+      "C = K × A / L",
+      "C = K_bed × L × W / M",
+      "C = K × h × W",
+      "C = Q / (H_riv - h)"
+    ],
+    "correct": "B",
+    "explanation": "Riverbed conductance C_riv = K_bed × L × W / M, where K_bed is bed conductivity, L is segment length, W is width, M is bed thickness."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the WEL package in MODFLOW handle?",
+    "options": [
+      "River-aquifer interaction",
+      "Recharge from precipitation",
+      "Pumping rates at wells",
+      "Evapotranspiration"
+    ],
+    "correct": "C",
+    "explanation": "The Well (WEL) package assigns pumping rates to cells containing wells."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the governing partial differential equation for 3D groundwater flow?",
+    "options": [
+      "The Navier-Stokes equation",
+      "The diffusion equation only",
+      "Darcy's law combined with mass conservation (the groundwater flow equation)",
+      "The advection-dispersion equation"
+    ],
+    "correct": "C",
+    "explanation": "The governing equation combines Darcy's law with conservation of mass, yielding the PDE with hydraulic conductivity, head, sources/sinks, and storage."
+  },
+  {
+    "type": "mcq",
+    "question": "What does Ss represent in the groundwater flow equation?",
+    "options": [
+      "Specific surface area",
+      "Specific storage",
+      "Soil saturation",
+      "Source strength"
+    ],
+    "correct": "B",
+    "explanation": "Ss is the specific storage [1/L], representing the volume of water released per unit volume of aquifer per unit decline in head."
+  },
+  {
+    "type": "mcq",
+    "question": "Who pioneered the Analytic Element Method (AEM)?",
+    "options": [
+      "Michael McDonald",
+      "Arlen Harbaugh",
+      "Otto Strack",
+      "John Doherty"
+    ],
+    "correct": "C",
+    "explanation": "The practical implementation of the AEM was pioneered by Otto Strack at the University of Minnesota."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the most widely known AEM code?",
+    "options": [
+      "MODFLOW",
+      "FEFLOW",
+      "GFLOW",
+      "SUTRA"
+    ],
+    "correct": "C",
+    "explanation": "GFLOW, developed by Haitjema and colleagues, is the most widely known AEM code."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary advantage of the finite element method over the finite difference method?",
+    "options": [
+      "Simpler implementation",
+      "Geometric flexibility with triangular elements conforming to irregular boundaries",
+      "Lower computational cost",
+      "Better documentation"
+    ],
+    "correct": "B",
+    "explanation": "Triangular elements can conform to irregular boundaries, fault lines, and geological contacts with arbitrary precision."
+  },
+  {
+    "type": "mcq",
+    "question": "Which organization developed FEFLOW?",
+    "options": [
+      "USGS",
+      "DHI Group (originally WASY GmbH)",
+      "Esri",
+      "Aquaveo"
+    ],
+    "correct": "B",
+    "explanation": "FEFLOW was developed by the DHI Group, originally by WASY GmbH in Berlin."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Boundary feature class in the simulation component define?",
+    "options": [
+      "The aquifer boundary conditions",
+      "The 2D spatial extent and geographic orientation of the model",
+      "The boundary between confined and unconfined zones",
+      "The outer edge of the watershed"
+    ],
+    "correct": "B",
+    "explanation": "The Boundary feature class is a polygon defining the 2D spatial extent and orientation of a simulation model."
+  },
+  {
+    "type": "mcq",
+    "question": "What are the five feature classes in the simulation component?",
+    "options": [
+      "Grid, Mesh, Node, Cell, Layer",
+      "Boundary, Cell2D, Cell3D, Node2D, Node3D",
+      "Model, Layer, Row, Column, Cell",
+      "Domain, Grid, Point, Polygon, Raster"
+    ],
+    "correct": "B",
+    "explanation": "The simulation component contains Boundary, Cell2D, Cell3D, Node2D, and Node3D feature classes."
+  },
+  {
+    "type": "mcq",
+    "question": "In a cell-centered finite difference model like MODFLOW, where are nodes located?",
+    "options": [
+      "At cell corners",
+      "At cell edges",
+      "At cell centers",
+      "At random positions"
+    ],
+    "correct": "C",
+    "explanation": "In MODFLOW's cell-centered convention, nodes are located at the centers of cells with a one-to-one correspondence."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of GIS feature class is Cell3D?",
+    "options": [
+      "Polygon",
+      "Polyline",
+      "Point",
+      "Multipatch"
+    ],
+    "correct": "D",
+    "explanation": "Cell3D features are multipatch features representing the volumetric cells of the 3D simulation grid."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked MODFLOW example, what is the transmissivity of the aquifer?",
+    "options": [
+      "100 m²/day",
+      "250 m²/day",
+      "500 m²/day",
+      "1000 m²/day"
+    ],
+    "correct": "C",
+    "explanation": "The example specifies a confined aquifer with constant transmissivity T = 500 m²/day."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, what is the pumping rate of the single well?",
+    "options": [
+      "500 m³/day",
+      "1000 m³/day",
+      "2000 m³/day",
+      "5000 m³/day"
+    ],
+    "correct": "C",
+    "explanation": "The well extracts water at Q = 2000 m³/day (negative in MODFLOW convention indicating extraction)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the hydraulic conductivity in the worked example?",
+    "options": [
+      "10 m/day",
+      "15 m/day",
+      "25 m/day",
+      "50 m/day"
+    ],
+    "correct": "C",
+    "explanation": "K = T/b = 500/20 = 25 m/day where T is transmissivity and b is aquifer thickness."
+  },
+  {
+    "type": "mcq",
+    "question": "What solver does MODFLOW 6 use?",
+    "options": [
+      "PCG2",
+      "GMG",
+      "NWT",
+      "IMS (Iterative Model Solution)"
+    ],
+    "correct": "D",
+    "explanation": "MODFLOW 6 uses the IMS package implementing a Krylov-subspace method with incomplete LU preconditioning."
+  },
+  {
+    "type": "mcq",
+    "question": "What Python package provides a complete API for building MODFLOW models?",
+    "options": [
+      "PyMODFLOW",
+      "FloPy",
+      "GroundwaterPy",
+      "ModPy"
+    ],
+    "correct": "B",
+    "explanation": "FloPy is a pure-Python package providing a complete API for building, running, and post-processing MODFLOW models."
+  },
+  {
+    "type": "mcq",
+    "question": "What does MODPATH do?",
+    "options": [
+      "Solves the flow equation",
+      "Performs contaminant transport",
+      "Tracks particles along computed velocity fields",
+      "Calibrates model parameters"
+    ],
+    "correct": "C",
+    "explanation": "MODPATH performs particle tracking on computed velocity fields, determining travel times and capture zones."
+  },
+  {
+    "type": "mcq",
+    "question": "What percentage of Hungary's drinking water comes from groundwater sources?",
+    "options": [
+      "About 50%",
+      "About 75%",
+      "Approximately 95%",
+      "100%"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 95% of Hungary's drinking water supply comes from groundwater sources."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the grid resolution of the regional Great Plain MODFLOW model?",
+    "options": [
+      "100 m × 100 m",
+      "250 m × 250 m",
+      "500 m × 500 m",
+      "1000 m × 1000 m"
+    ],
+    "correct": "C",
+    "explanation": "The regional model uses a grid resolution of 500 m × 500 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how large is the area covered by the regional Great Plain model?",
+    "options": [
+      "5,000 km²",
+      "20,000 km²",
+      "50,000 km²",
+      "100,000 km²"
+    ],
+    "correct": "C",
+    "explanation": "The regional model covers approximately 50,000 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "How many model layers does the Great Plain MODFLOW model have?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "correct": "B",
+    "explanation": "The model has 5 layers representing the major hydrostratigraphic units."
+  },
+  {
+    "type": "mcq",
+    "question": "What is bank filtration called in Hungarian?",
+    "options": [
+      "Víztisztítás",
+      "Parti szűrés",
+      "Talajvíz szűrés",
+      "Folyóparti kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Bank filtration is called 'parti szűrés' in Hungarian."
+  },
+  {
+    "type": "mcq",
+    "question": "How much drinking water does Budapest's bank filtration system produce daily?",
+    "options": [
+      "About 100,000 m³/day",
+      "About 250,000 m³/day",
+      "About 500,000 m³/day",
+      "About 1,000,000 m³/day"
+    ],
+    "correct": "C",
+    "explanation": "Budapest's bank filtration system produces approximately 500,000 m³/day of drinking water."
+  },
+  {
+    "type": "mcq",
+    "question": "What fraction of Budapest's water supply comes from bank filtration?",
+    "options": [
+      "About one quarter",
+      "About one third",
+      "Roughly half",
+      "About three quarters"
+    ],
+    "correct": "C",
+    "explanation": "Bank filtration produces roughly half of Budapest's drinking water supply."
+  },
+  {
+    "type": "mcq",
+    "question": "Where does Budapest's bank filtration operate?",
+    "options": [
+      "Along the Tisza River",
+      "On Szentendre Island and Csepel Island sections of the Danube",
+      "Along the Drava River",
+      "On Lake Balaton"
+    ],
+    "correct": "B",
+    "explanation": "Budapest's bank filtration operates on Szentendre Island and the Csepel Island section of the Danube."
+  },
+  {
+    "type": "mcq",
+    "question": "What are typical travel times for Budapest's bank filtration wells?",
+    "options": [
+      "1-5 days",
+      "10-100 days",
+      "200-500 days",
+      "1-3 years"
+    ],
+    "correct": "B",
+    "explanation": "Typical travel times range from 10 to 100 days depending on pumping rate, distance, and hydraulic conductivity."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical grid resolution near wells in a bank filtration model?",
+    "options": [
+      "5-25 meters",
+      "50-100 meters",
+      "200-500 meters",
+      "1000 meters"
+    ],
+    "correct": "A",
+    "explanation": "Bank filtration models use 5-25 m resolution near wells and the riverbank, expanding to 100-500 m at boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "What tool is used for parameter estimation with MODFLOW models?",
+    "options": [
+      "MODPATH",
+      "MT3DMS",
+      "PEST",
+      "FloPy"
+    ],
+    "correct": "C",
+    "explanation": "PEST (developed by John Doherty) is the most widely used parameter estimation tool for groundwater models."
+  },
+  {
+    "type": "mcq",
+    "question": "How many registered pumping wells feed the Great Plain model?",
+    "options": [
+      "About 5,000",
+      "About 15,000",
+      "About 50,000",
+      "About 130,000"
+    ],
+    "correct": "B",
+    "explanation": "Approximately 15,000 registered pumping wells from the OVF database are included in the model."
+  },
+  {
+    "type": "mcq",
+    "question": "What DEM is used for the Great Plain model's land surface?",
+    "options": [
+      "SRTM 30 m",
+      "DDM-5 national DEM at 5 m resolution",
+      "Copernicus DEM 25 m",
+      "ASTER GDEM 30 m"
+    ],
+    "correct": "B",
+    "explanation": "The land surface comes from the DDM-5 national DEM (5 m resolution, resampled to 500 m for the model)."
+  },
+  {
+    "type": "mcq",
+    "question": "What land cover dataset is used for recharge estimation in the Hungarian model?",
+    "options": [
+      "NLCD",
+      "GlobCover",
+      "CORINE Land Cover",
+      "Sentinel-2 land cover"
+    ],
+    "correct": "C",
+    "explanation": "Land cover from the CORINE Land Cover dataset (100 m resolution) is used for recharge estimation."
+  },
+  {
+    "type": "mcq",
+    "question": "What soil database is used for recharge estimation in the Hungarian model?",
+    "options": [
+      "AGROTOPO",
+      "SoilGrids",
+      "HWSD",
+      "ESDAC"
+    ],
+    "correct": "A",
+    "explanation": "Soil properties come from the Hungarian soil information system AGROTOPO."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the estimated recharge range for sandy interfluves in the Great Plain?",
+    "options": [
+      "10-30 mm/year",
+      "40-60 mm/year",
+      "80-120 mm/year",
+      "150-200 mm/year"
+    ],
+    "correct": "C",
+    "explanation": "Recharge varies from near-zero in clay-rich areas to 80-120 mm/year in sandy interfluves."
+  },
+  {
+    "type": "mcq",
+    "question": "By how much did irrigation pumping decrease after 1990 in Hungary?",
+    "options": [
+      "About 20%",
+      "About 40%",
+      "Roughly 60%",
+      "About 80%"
+    ],
+    "correct": "C",
+    "explanation": "Irrigation pumping decreased by roughly 60% after 1990 following the end of the communist-era agricultural system."
+  },
+  {
+    "type": "mcq",
+    "question": "What formula gives riverbed conductance in the RIV package?",
+    "options": [
+      "C = K_bed × A",
+      "C = K_bed × L × W / M",
+      "C = K_bed × W / L",
+      "C = K_bed × M / (L × W)"
+    ],
+    "correct": "B",
+    "explanation": "C_riv = K_bed × L × W / M, where L is segment length in cell, W is river width, M is bed thickness."
+  },
+  {
+    "type": "mcq",
+    "question": "How many groundwater bodies must Hungary characterize under the WFD?",
+    "options": [
+      "85",
+      "120",
+      "185",
+      "250"
+    ],
+    "correct": "C",
+    "explanation": "The WFD requires Hungary to characterize 185 designated groundwater bodies."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Thiem equation used for?",
+    "options": [
+      "Transient drawdown in unconfined aquifers",
+      "Steady-state drawdown around a pumping well in a confined aquifer",
+      "Contaminant transport calculation",
+      "Recharge estimation"
+    ],
+    "correct": "B",
+    "explanation": "The Thiem equation describes steady-state drawdown: h(r) = h₀ - (Q/2πT)ln(R/r)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does MODFLOW-USG support that standard MODFLOW does not?",
+    "options": [
+      "Transient simulation",
+      "Contaminant transport",
+      "Unstructured grids",
+      "Multiple layers"
+    ],
+    "correct": "C",
+    "explanation": "MODFLOW-USG introduced unstructured grid capability, allowing Voronoi polygons and irregular cell shapes."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the DISV package in MODFLOW 6 support?",
+    "options": [
+      "Distributed recharge",
+      "Discretization by vertices (unstructured grids)",
+      "Dissolved solute transport",
+      "Discharge visualization"
+    ],
+    "correct": "B",
+    "explanation": "DISV (Discretization by Vertices) supports unstructured grids with Voronoi polygons and other irregular shapes."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the CHD package in MODFLOW do?",
+    "options": [
+      "Assigns constant head boundaries",
+      "Handles chemical dissolution",
+      "Calculates channel dimensions",
+      "Controls convergence thresholds"
+    ],
+    "correct": "A",
+    "explanation": "The Constant-Head (CHD) package fixes the head at specified cells to known constant values."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the GHB (General Head Boundary) package model?",
+    "options": [
+      "Groundwater-heat boundary",
+      "Head-dependent flux boundary",
+      "General hydraulic boundary",
+      "Geographic head baseline"
+    ],
+    "correct": "B",
+    "explanation": "GHB models a head-dependent flux boundary where flow depends on the difference between external and cell head."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a stress period in MODFLOW?",
+    "options": [
+      "The time when the aquifer is under maximum stress",
+      "A discrete time interval during which stresses are held constant",
+      "The period between calibration runs",
+      "The recovery time after pumping"
+    ],
+    "correct": "B",
+    "explanation": "A stress period is a discrete time interval during which all stresses (pumping rates, recharge, river stages) are held constant."
+  },
+  {
+    "type": "mcq",
+    "question": "What does FEFLOW natively support that standard MODFLOW does not?",
+    "options": [
+      "Steady-state simulation",
+      "Density-dependent flow",
+      "Layer-based discretization",
+      "Well pumping"
+    ],
+    "correct": "B",
+    "explanation": "FEFLOW natively supports density-dependent flow, essential for coastal aquifers, geothermal systems, and brine migration."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the FEFLOW Python API called?",
+    "options": [
+      "FePy",
+      "ifm (FEFLOW Interface Manager)",
+      "PyFE",
+      "FeFloPy"
+    ],
+    "correct": "B",
+    "explanation": "The ifm (FEFLOW Interface Manager) Python API enables scripting of model construction and post-processing."
+  },
+  {
+    "type": "mcq",
+    "question": "For what type of problem is FEFLOW particularly better than MODFLOW?",
+    "options": [
+      "Simple regional water balance",
+      "Coastal saltwater intrusion",
+      "Basic well field analysis",
+      "Regional flow direction"
+    ],
+    "correct": "B",
+    "explanation": "FEFLOW excels at density-dependent flow problems like coastal saltwater intrusion due to its native variable-density capability."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how many active groundwater monitoring wells does Hungary have?",
+    "options": [
+      "500",
+      "1,500",
+      "3,000",
+      "5,000"
+    ],
+    "correct": "D",
+    "explanation": "Hungary has one of the densest monitoring networks in Europe with approximately 5,000 active monitoring wells."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the name of Budapest's water utility?",
+    "options": [
+      "Budapesti Vízmű",
+      "Fővárosi Vízművek",
+      "Nemzeti Vízügyi Hivatal",
+      "Duna Víz Kft"
+    ],
+    "correct": "B",
+    "explanation": "Fővárosi Vízművek is Budapest's water utility that has invested in GIS infrastructure for bank filtration models."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the acronym PEST stand for?",
+    "options": [
+      "Parameter Estimation Software Tool",
+      "Parameter Estimation by Sequential Testing",
+      "It is a proper name, not an acronym",
+      "Predictive Environmental Simulation Tool"
+    ],
+    "correct": "C",
+    "explanation": "PEST is a proper name for the parameter estimation software developed by John Doherty, not an acronym."
+  },
+  {
+    "type": "mcq",
+    "question": "How many forward model runs may PEST require for calibration?",
+    "options": [
+      "100-500",
+      "500-2,000",
+      "5,000-50,000",
+      "Over 100,000"
+    ],
+    "correct": "C",
+    "explanation": "Calibration with PEST may require 5,000 to 50,000 forward model runs."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical hydraulic conductivity range for Pleistocene sands and gravels in the Great Plain?",
+    "options": [
+      "0.1-1 m/day",
+      "5-200 m/day",
+      "500-1000 m/day",
+      "Over 1000 m/day"
+    ],
+    "correct": "B",
+    "explanation": "Pleistocene sand and gravel aquifers have hydraulic conductivities ranging from 5 to 200 m/day."
+  },
+  {
+    "type": "mcq",
+    "question": "What typical K value does clean gravel have according to Table 21.3?",
+    "options": [
+      "1-10 m/day",
+      "10-100 m/day",
+      "100-1000 m/day",
+      "1000-10000 m/day"
+    ],
+    "correct": "C",
+    "explanation": "Clean gravel has hydraulic conductivity of 100-1000 m/day (Freeze and Cherry, 1979)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical K value for clay?",
+    "options": [
+      "10⁻⁷ to 0.001 m/day",
+      "0.001 to 0.1 m/day",
+      "0.1 to 1 m/day",
+      "1 to 10 m/day"
+    ],
+    "correct": "A",
+    "explanation": "Clay has K values of 10⁻⁷ to 0.001 m/day, essentially impermeable for practical purposes."
+  },
+  {
+    "type": "mcq",
+    "question": "Which country maintains the REGIS-II national groundwater model accessible via web interface?",
+    "options": [
+      "Germany",
+      "Denmark",
+      "The Netherlands",
+      "France"
+    ],
+    "correct": "C",
+    "explanation": "The Netherlands maintains the REGIS-II hydrogeological model coupled with MODFLOW, accessible through a web interface and maintained by TNO."
+  },
+  {
+    "type": "mcq",
+    "question": "What percentage of agricultural land typically transmits precipitation to the water table as recharge?",
+    "options": [
+      "5-10%",
+      "15-25%",
+      "30-40%",
+      "50-60%"
+    ],
+    "correct": "B",
+    "explanation": "Agricultural land might transmit 15-25% of annual precipitation to the water table."
+  },
+  {
+    "type": "mcq",
+    "question": "Under climate projections, average recharge in the Great Plain may decrease by what amount under moderate warming?",
+    "options": [
+      "5-10%",
+      "10-30%",
+      "40-60%",
+      "70-80%"
+    ],
+    "correct": "B",
+    "explanation": "Climate projections suggest recharge may decrease by 10-30% under moderate warming and 20-50% under severe scenarios."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the projected water table decline over 50 years due to climate change in the Great Plain?",
+    "options": [
+      "Less than 0.5 meters",
+      "1-5 meters",
+      "10-20 meters",
+      "Over 30 meters"
+    ],
+    "correct": "B",
+    "explanation": "The combination of reduced recharge could lower the regional water table by 1-5 meters over the next 50 years."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Kozeny-Carman formula relate?",
+    "options": [
+      "Drawdown to pumping rate",
+      "Grain size distribution to hydraulic conductivity",
+      "River flow to groundwater recharge",
+      "Temperature to viscosity"
+    ],
+    "correct": "B",
+    "explanation": "The Kozeny-Carman formula converts grain-size analysis data (sieve analysis) into hydraulic conductivity estimates."
+  },
+  {
+    "type": "mcq",
+    "question": "How many steps are in the complete MODFLOW model-building workflow described in the chapter?",
+    "options": [
+      "7",
+      "9",
+      "11",
+      "15"
+    ],
+    "correct": "C",
+    "explanation": "The workflow has 11 steps from defining the boundary through running MODFLOW to creating map layers from results."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a PINN in the context of groundwater modeling?",
+    "options": [
+      "Post-processed Interpolation Neural Network",
+      "Physics-Informed Neural Network",
+      "Probabilistic Input Node Network",
+      "Parameter Initialization Neural Network"
+    ],
+    "correct": "B",
+    "explanation": "Physics-informed neural networks (PINNs) embed the groundwater flow equation directly into the neural network architecture."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Danube water temperature range?",
+    "options": [
+      "0-10°C year-round",
+      "2-4°C in winter to 20-25°C in summer",
+      "10-15°C year-round",
+      "15-30°C throughout the year"
+    ],
+    "correct": "B",
+    "explanation": "River water temperature varies from 2-4°C in winter to 20-25°C in summer."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the monitoring well density in well-monitored European countries?",
+    "options": [
+      "1 per 1-5 km²",
+      "1 per 10-50 km²",
+      "1 per 100-500 km²",
+      "1 per 1000 km²"
+    ],
+    "correct": "B",
+    "explanation": "In well-monitored countries like Hungary, the Netherlands, or Denmark, densities are 1 per 10-50 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "Which MODFLOW package handles evapotranspiration from shallow water tables?",
+    "options": [
+      "RCH",
+      "DRN",
+      "EVT",
+      "GHB"
+    ],
+    "correct": "C",
+    "explanation": "The EVT (Evapotranspiration) package models ET from shallow water tables."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the SFR package in MODFLOW?",
+    "options": [
+      "Soil-Flow Recharge",
+      "Streamflow Routing",
+      "Surface Flow Regulation",
+      "Saturated Flow Routing"
+    ],
+    "correct": "B",
+    "explanation": "SFR is the Streamflow Routing package for coupled surface-groundwater simulation in MODFLOW."
+  },
+  {
+    "type": "mcq",
+    "question": "What does HydroGeoSphere model?",
+    "options": [
+      "Only groundwater flow",
+      "Only surface water flow",
+      "Fully integrated surface-subsurface flow",
+      "Only contaminant transport"
+    ],
+    "correct": "C",
+    "explanation": "HydroGeoSphere is a fully integrated surface-subsurface model solving surface and subsurface flow equations simultaneously."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked MODFLOW example, what head was fixed at the western boundary?",
+    "options": [
+      "90 m",
+      "95 m",
+      "100 m",
+      "105 m"
+    ],
+    "correct": "C",
+    "explanation": "The western boundary (river) had a fixed stage of 100 m."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, what was the head at the eastern boundary?",
+    "options": [
+      "90 m",
+      "95 m",
+      "100 m",
+      "105 m"
+    ],
+    "correct": "B",
+    "explanation": "The eastern boundary was a fixed head of 95 m."
+  },
+  {
+    "type": "mcq",
+    "question": "What computed head was approximately obtained at the pumping well cell in the worked example?",
+    "options": [
+      "89.5 m",
+      "91.0 m",
+      "93.5 m",
+      "96.0 m"
+    ],
+    "correct": "C",
+    "explanation": "The computed head at the well cell was approximately 93.5 m — a drawdown of about 3.5 m from the no-pumping gradient."
+  },
+  {
+    "type": "mcq",
+    "question": "How does the principle of superposition apply in the Analytic Element Method?",
+    "options": [
+      "Solutions from different model runs are averaged",
+      "Contributions from individual analytic elements are summed algebraically",
+      "Different layers are superimposed vertically",
+      "Grid refinement levels are overlaid"
+    ],
+    "correct": "B",
+    "explanation": "In AEM, the total solution at any point is obtained by superimposing (summing) the contributions of all elements."
+  },
+  {
+    "type": "mcq",
+    "question": "What does MODFLOW-NWT add to standard MODFLOW?",
+    "options": [
+      "Unstructured grids",
+      "Newton-Raphson formulation for improved convergence in unconfined problems",
+      "Network routing",
+      "New transport capabilities"
+    ],
+    "correct": "B",
+    "explanation": "MODFLOW-NWT added Newton-Raphson formulation for improved convergence in unconfined aquifer simulations."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical thickness of Pleistocene aquifers in the Great Plain?",
+    "options": [
+      "10-30 m",
+      "50-200 m",
+      "300-500 m",
+      "500-1000 m"
+    ],
+    "correct": "B",
+    "explanation": "The Pleistocene sand and gravel aquifers are typically 50 to 200 meters thick."
+  },
+  {
+    "type": "mcq",
+    "question": "What is OpenGeoSys?",
+    "options": [
+      "A commercial GIS platform",
+      "A free open-source finite element code for THM-C processes",
+      "A web mapping service",
+      "A database management system"
+    ],
+    "correct": "B",
+    "explanation": "OpenGeoSys is a free open-source finite element code for research involving coupled thermo-hydro-mechanical-chemical processes."
+  },
+  {
+    "type": "mcq",
+    "question": "How many cells would a typical large MODFLOW model have?",
+    "options": [
+      "10,000",
+      "100,000",
+      "1 million",
+      "100 million"
+    ],
+    "correct": "C",
+    "explanation": "A regional model with 1 million cells is described as a typical large model in the chapter."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Cell2DID attribute in Cell3D do?",
+    "options": [
+      "Stores the cell's area",
+      "Links the 3D cell to the corresponding Cell2D feature in plan view",
+      "Records the cell's material type",
+      "Defines the cell boundary type"
+    ],
+    "correct": "B",
+    "explanation": "Cell2DID links each Cell3D feature to its corresponding Cell2D feature, enabling vertical profile extraction."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the GGMN?",
+    "options": [
+      "Global Groundwater Modeling Network",
+      "Global Groundwater Monitoring Network",
+      "General Geological Mapping Network",
+      "Global GIS Mapping Network"
+    ],
+    "correct": "B",
+    "explanation": "GGMN is the Global Groundwater Monitoring Network, coordinated by IGRAC."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hungarian term for regional water directorates?",
+    "options": [
+      "Országos vízügyi hivatalok",
+      "Területi vízügyi igazgatóságok",
+      "Megyei vízmű társulatok",
+      "Helyi vízgazdálkodási szervek"
+    ],
+    "correct": "B",
+    "explanation": "The regional water directorates are called területi vízügyi igazgatóságok."
+  },
+  {
+    "type": "mcq",
+    "question": "What satellite mission measures total water storage changes?",
+    "options": [
+      "Landsat",
+      "Sentinel-1",
+      "GRACE/GRACE-FO",
+      "MODIS"
+    ],
+    "correct": "C",
+    "explanation": "GRACE and GRACE-FO provide monthly estimates of total water storage changes at ~300 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "What spatial resolution does GRACE provide?",
+    "options": [
+      "~10 km",
+      "~100 km",
+      "~300 km",
+      "~1000 km"
+    ],
+    "correct": "C",
+    "explanation": "GRACE provides estimates at approximately 300 km resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "What approach uses surrogate models trained on MODFLOW outputs for real-time optimization?",
+    "options": [
+      "Finite element refinement",
+      "Machine learning surrogate models",
+      "Analytical solutions",
+      "Monte Carlo simulation"
+    ],
+    "correct": "B",
+    "explanation": "Surrogate models trained on MODFLOW outputs can approximate full simulations in milliseconds for real-time applications."
+  },
+  {
+    "type": "mcq",
+    "question": "What happens in a MODFLOW river cell when head drops below the river bottom?",
+    "options": [
+      "The cell becomes inactive",
+      "The river disappears from the model",
+      "The flux becomes constant (perched river condition)",
+      "Flow reverses direction"
+    ],
+    "correct": "C",
+    "explanation": "When h drops below the river bottom, the flux becomes constant — the river is 'perched' above the water table."
+  },
+  {
+    "type": "mcq",
+    "question": "For Budapest's bank filtration, which model code is often preferred and why?",
+    "options": [
+      "MODFLOW for its free license",
+      "FEFLOW for its built-in heat transport capability",
+      "GFLOW for its analytical solutions",
+      "SUTRA for its simplicity"
+    ],
+    "correct": "B",
+    "explanation": "FEFLOW's built-in heat transport capability makes it natural for coupled flow-heat problems in bank filtration modeling."
+  },
+  {
+    "type": "mcq",
+    "question": "How often must Hungary submit River Basin Management Plans to the European Commission?",
+    "options": [
+      "Every 2 years",
+      "Every 4 years",
+      "Every 6 years",
+      "Every 10 years"
+    ],
+    "correct": "C",
+    "explanation": "Hungary submits River Basin Management Plans to the European Commission every six years under the WFD."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the STO package in MODFLOW define?",
+    "options": [
+      "Stream topology",
+      "Specific storage and specific yield for transient simulations",
+      "Stress period timing",
+      "Source term operations"
+    ],
+    "correct": "B",
+    "explanation": "The Storage (STO) package defines specific storage and specific yield for transient simulations."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of boundary is the default for external faces of cells without specified stresses in MODFLOW?",
+    "options": [
+      "Constant head",
+      "General head",
+      "No-flow",
+      "Free surface"
+    ],
+    "correct": "C",
+    "explanation": "MODFLOW treats all cells without specified stresses as no-flow on their external faces by default."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the UZF package in MODFLOW simulate?",
+    "options": [
+      "Underground zone features",
+      "Unsaturated zone flow",
+      "Unified zone functions",
+      "Upper zone flow"
+    ],
+    "correct": "B",
+    "explanation": "The UZF (Unsaturated Zone Flow) package simulates vadose zone processes."
+  },
+  {
+    "type": "mcq",
+    "question": "According to the chapter, what does the Angle attribute in the Boundary feature class define?",
+    "options": [
+      "The dip angle of the aquifer",
+      "The rotation of the model grid relative to north",
+      "The angle of the river bend",
+      "The slope of the water table"
+    ],
+    "correct": "B",
+    "explanation": "The Angle attribute defines the rotation of the model grid relative to north."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hortobágy National Park's UNESCO designation dependent on?",
+    "options": [
+      "Deep thermal aquifers",
+      "Shallow groundwater sustaining alkaline marshes and sodic grasslands",
+      "Mountain karst springs",
+      "Danube riverbank ecosystems"
+    ],
+    "correct": "B",
+    "explanation": "The Hortobágy depends on shallow groundwater to sustain its alkaline marshes and sodic grasslands."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the abbreviation GMS stand for in the context of groundwater modeling?",
+    "options": [
+      "Groundwater Modeling System",
+      "Global Model Standard",
+      "Geological Map Service",
+      "Grid Management Software"
+    ],
+    "correct": "A",
+    "explanation": "GMS (Groundwater Modeling System) is a commercial pre/post-processor by Aquaveo with extensive Arc Hydro GW integration."
+  },
+  {
+    "type": "mcq",
+    "question": "How many pumping test results feed the Great Plain model's hydraulic conductivity field?",
+    "options": [
+      "About 200",
+      "About 500",
+      "About 2,000",
+      "About 10,000"
+    ],
+    "correct": "C",
+    "explanation": "Hydraulic conductivity is derived from pumping test results at approximately 2,000 wells across the Plain."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW is a commercial software that requires a paid license.",
+    "correct": false,
+    "explanation": "MODFLOW is free and open source, distributed by the USGS without charge."
+  },
+  {
+    "type": "true_false",
+    "question": "The finite difference method subdivides the model domain into rectangular cells organized in rows and columns.",
+    "correct": true,
+    "explanation": "FDM uses an orthogonal grid of rectangular cells in rows and columns, with vertical layers for 3D models."
+  },
+  {
+    "type": "true_false",
+    "question": "The Analytic Element Method requires a computational grid or mesh.",
+    "correct": false,
+    "explanation": "AEM represents features as mathematical elements without subdividing the domain into cells or elements."
+  },
+  {
+    "type": "true_false",
+    "question": "FEFLOW uses an unstructured finite element mesh that can be triangulated to conform to any boundary.",
+    "correct": true,
+    "explanation": "FEFLOW's mesh can conform to irregular aquifer boundaries, faults, and geological contacts."
+  },
+  {
+    "type": "true_false",
+    "question": "In the groundwater flow equation, setting the right-hand side to zero gives the transient equation.",
+    "correct": false,
+    "explanation": "Setting the right-hand side to zero (Ss ∂h/∂t = 0) gives the steady-state equation, not the transient one."
+  },
+  {
+    "type": "true_false",
+    "question": "Cell2D features can be joined with simulation result tables to create thematic maps.",
+    "correct": true,
+    "explanation": "By joining result tables to Cell2D through CellID, the modeler can create maps of hydraulic conductivity, heads, drawdown, etc."
+  },
+  {
+    "type": "true_false",
+    "question": "The Boundary feature class stores the model's origin coordinates and rotation angle.",
+    "correct": true,
+    "explanation": "The Boundary polygon carries OriginX, OriginY, and Angle attributes for locating and orienting the model in geographic space."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW 6 is a completely new codebase with modern object-oriented architecture.",
+    "correct": true,
+    "explanation": "MODFLOW 6 is a complete rewrite with modern object-oriented architecture, supporting multiple models per simulation."
+  },
+  {
+    "type": "true_false",
+    "question": "FloPy is a commercial Python package for MODFLOW.",
+    "correct": false,
+    "explanation": "FloPy is a free, open-source Python package providing a complete API for MODFLOW model management."
+  },
+  {
+    "type": "true_false",
+    "question": "Approximately 95% of Hungary's drinking water comes from groundwater sources.",
+    "correct": true,
+    "explanation": "Hungary is one of the most groundwater-dependent countries in Europe with about 95% groundwater-sourced drinking water."
+  },
+  {
+    "type": "true_false",
+    "question": "Budapest's bank filtration system has operated for over a century.",
+    "correct": true,
+    "explanation": "Budapest's bank filtration system on the Danube has operated for over a century."
+  },
+  {
+    "type": "true_false",
+    "question": "In the MODFLOW well convention, extraction is represented by positive pumping rates.",
+    "correct": false,
+    "explanation": "In MODFLOW convention, extraction is represented by negative values (Q = -2000 m³/day in the example)."
+  },
+  {
+    "type": "true_false",
+    "question": "The finite element method is computationally cheaper than the finite difference method.",
+    "correct": false,
+    "explanation": "FEM generally has higher computational cost compared to FDM due to mesh generation and matrix assembly complexity."
+  },
+  {
+    "type": "true_false",
+    "question": "PEST was developed by John Doherty.",
+    "correct": true,
+    "explanation": "PEST is the most widely used parameter estimation tool for groundwater models, developed by John Doherty."
+  },
+  {
+    "type": "true_false",
+    "question": "The Dutch REGIS-II model is maintained by TNO with stable long-term funding.",
+    "correct": true,
+    "explanation": "TNO (the Dutch geological survey) maintains the national groundwater model with stable long-term funding."
+  },
+  {
+    "type": "true_false",
+    "question": "Irrigation pumping in Hungary increased after 1990.",
+    "correct": false,
+    "explanation": "Irrigation pumping decreased by roughly 60% after 1990 following the end of the communist-era agricultural system."
+  },
+  {
+    "type": "true_false",
+    "question": "The GHB package models a head-dependent flux boundary.",
+    "correct": true,
+    "explanation": "The General Head Boundary package computes flow based on the difference between an external head and the cell head."
+  },
+  {
+    "type": "true_false",
+    "question": "In a bank filtration model, longer travel times generally improve water quality.",
+    "correct": true,
+    "explanation": "Longer travel times allow more attenuation of pathogens, organic micropollutants, and turbidity."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW 6 supports multiple simulation models within a single run.",
+    "correct": true,
+    "explanation": "MODFLOW 6 can contain multiple groundwater flow models coupled through exchange packages in a single simulation."
+  },
+  {
+    "type": "true_false",
+    "question": "Physics-Informed Neural Networks (PINNs) are intended to replace MODFLOW entirely.",
+    "correct": false,
+    "explanation": "PINNs build upon MODFLOW and FEFLOW, using physics-based models as training data generators, not replacing them."
+  },
+  {
+    "type": "true_false",
+    "question": "The Analytic Element Method is best suited for complex 3D problems with vertical heterogeneity.",
+    "correct": false,
+    "explanation": "AEM assumes vertically uniform layer properties and is best suited for regional-scale, steady-state problems with simple geometry."
+  },
+  {
+    "type": "true_false",
+    "question": "A MODFLOW model misinterpreting the grid rotation angle is described as one of the most common errors when importing legacy models into GIS.",
+    "correct": true,
+    "explanation": "Misinterpreting the rotation angle (clockwise from north vs counterclockwise from east) is cited as a common error."
+  },
+  {
+    "type": "true_false",
+    "question": "Real-time groundwater modeling is now as common as real-time surface water flood forecasting.",
+    "correct": false,
+    "explanation": "Real-time groundwater modeling is still rare compared to surface water modeling, though becoming relevant for fast-responding systems."
+  },
+  {
+    "type": "true_false",
+    "question": "The regional Alföld model is fully integrated through an enterprise GIS interface.",
+    "correct": false,
+    "explanation": "The model uses a combination of MODFLOW input files and GIS layers that are not fully integrated — enterprise integration remains an aspiration."
+  },
+  {
+    "type": "true_false",
+    "question": "FEFLOW includes a sophisticated unsaturated zone module based on the Richards equation.",
+    "correct": true,
+    "explanation": "FEFLOW includes a Richards equation module suitable for problems involving vadose zone flow."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sustainable Groundwater Management Act requires MODFLOW models for compliance.",
+    "correct": false,
+    "explanation": "The chapter discusses this as a US regulatory preference; the SGMA is California state law and the chapter discusses MODFLOW regulatory acceptance in general terms."
+  },
+  {
+    "type": "true_false",
+    "question": "In the finite element method, the unknown head is approximated as a sum of basis functions.",
+    "correct": true,
+    "explanation": "h(x,y,z) ≈ Σ Ni(x,y,z)·hi where Ni are shape functions and hi are nodal heads."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud computing has transformed the computational landscape for groundwater modeling.",
+    "correct": true,
+    "explanation": "A model taking 30 minutes on desktop can be run 1,000 times in parallel on a cloud cluster in the same time."
+  },
+  {
+    "type": "true_false",
+    "question": "The SWR package in MODFLOW handles subsurface waste remediation.",
+    "correct": false,
+    "explanation": "SWR stands for Surface Water Routing, providing surface water simulation within the MODFLOW framework."
+  },
+  {
+    "type": "true_false",
+    "question": "The Cell2D layer is described as the workhorse of groundwater model visualization in GIS.",
+    "correct": true,
+    "explanation": "By joining tables to Cell2D polygons through CellID, modelers create all standard thematic maps of model results."
+  },
+  {
+    "type": "true_false",
+    "question": "Urban impervious surfaces typically transmit more than 20% of precipitation as groundwater recharge.",
+    "correct": false,
+    "explanation": "Urban impervious surfaces transmit less than 5% of precipitation to groundwater, with the remainder becoming surface runoff."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW-LGR provides local grid refinement capability.",
+    "correct": true,
+    "explanation": "MODFLOW-LGR (Local Grid Refinement) allows detailed modeling in focused areas within a coarser regional model."
+  },
+  {
+    "type": "true_false",
+    "question": "The greatest challenge in groundwater modeling is described as institutional, not technical.",
+    "correct": true,
+    "explanation": "The chapter states 'perhaps the greatest challenge is not technical but institutional' — models are expensive to build and maintain."
+  },
+  {
+    "type": "true_false",
+    "question": "SUTRA is developed by the USGS for variable-density flow and transport.",
+    "correct": true,
+    "explanation": "SUTRA is a USGS-developed finite element code for variable-density flow and transport problems."
+  },
+  {
+    "type": "true_false",
+    "question": "The Galerkin method is a technique used in finite difference discretization.",
+    "correct": false,
+    "explanation": "The Galerkin weighted-residual method is used in the finite element method, not finite difference."
+  },
+  {
+    "type": "true_false",
+    "question": "In the worked MODFLOW example, the well reverses the hydraulic gradient east of its location.",
+    "correct": true,
+    "explanation": "The head at the well (93.5 m) is below the eastern boundary (95 m), reversing the gradient so water flows from east toward the well."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary has one of the densest groundwater monitoring networks in Europe.",
+    "correct": true,
+    "explanation": "With approximately 5,000 active monitoring wells, Hungary has one of the densest networks in Europe."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW can be built and run entirely through FloPy without requiring ArcGIS.",
+    "correct": true,
+    "explanation": "FloPy provides a complete Python API for building, running, and post-processing MODFLOW models without requiring ArcGIS."
+  },
+  {
+    "type": "true_false",
+    "question": "The WFD requires member states to achieve 'good status' for all groundwater bodies.",
+    "correct": true,
+    "explanation": "The WFD requires member states to characterize all groundwater bodies and implement measures to achieve good status."
+  },
+  {
+    "type": "true_false",
+    "question": "In the finite difference approximation, derivatives are replaced with differences between neighboring cells.",
+    "correct": true,
+    "explanation": "The PDE is approximated by replacing continuous derivatives with finite differences between head values at neighboring cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The eastern boundary of the Great Plain MODFLOW model is defined by the Danube River.",
+    "correct": false,
+    "explanation": "The eastern boundary is defined by the Romanian border; the Danube forms the western and northern boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "ParFlow is mentioned as a fully integrated surface-subsurface model.",
+    "correct": true,
+    "explanation": "ParFlow is listed alongside HydroGeoSphere and MIKE SHE as fully integrated surface-subsurface models."
+  },
+  {
+    "type": "true_false",
+    "question": "The principle of mass conservation is one of the two fundamental laws underlying the groundwater flow equation.",
+    "correct": true,
+    "explanation": "The governing equation combines Darcy's law with the principle of mass conservation."
+  },
+  {
+    "type": "true_false",
+    "question": "Climate change is expected to increase recharge across the Great Hungarian Plain.",
+    "correct": false,
+    "explanation": "Climate projections suggest recharge may decrease by 10-30% under moderate warming, driven by increased evapotranspiration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW was first released by the USGS in _____.",
+    "correct": "1984",
+    "explanation": "MODFLOW was first released in 1984 and has since become the world's most widely used groundwater flow model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW is written in the _____ programming language.",
+    "correct": "Fortran",
+    "explanation": "The USGS distributes MODFLOW source code written in Fortran."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The governing equation for groundwater flow combines Darcy's law with the principle of _____ conservation.",
+    "correct": "mass",
+    "explanation": "The PDE combines Darcy's law with conservation of mass, yielding the groundwater flow equation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Analytic Element Method was pioneered by Otto _____ at the University of Minnesota.",
+    "correct": "Strack",
+    "explanation": "Otto Strack pioneered the practical implementation of the AEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The most widely known AEM code is called _____.",
+    "correct": "GFLOW",
+    "explanation": "GFLOW, developed by Haitjema and colleagues, is the principal AEM code."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEFLOW was developed by the _____ Group (originally WASY GmbH).",
+    "correct": "DHI",
+    "explanation": "FEFLOW was developed by DHI Group, originally by WASY GmbH in Berlin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The five feature classes of the simulation component are Boundary, Cell2D, Cell3D, Node2D, and _____.",
+    "correct": "Node3D",
+    "explanation": "These five feature classes bridge the gap between modeler's grids and GIS spatial features."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In MODFLOW, the _____ package defines the grid geometry including rows, columns, layers, and cell dimensions.",
+    "correct": "DIS",
+    "explanation": "The Discretization (DIS) package specifies all grid geometry parameters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ package in MODFLOW 6 assigns hydraulic conductivity to cells.",
+    "correct": "NPF",
+    "explanation": "The Node-Property Flow (NPF) package specifies hydraulic conductivity and anisotropy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Approximately _____% of Hungary's drinking water comes from groundwater.",
+    "correct": "95",
+    "explanation": "Hungary is one of the most groundwater-dependent countries in Europe at approximately 95%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Budapest's bank filtration system produces approximately _____ m³/day of drinking water.",
+    "correct": "500,000",
+    "explanation": "The system produces roughly 500,000 m³/day, about half of Budapest's supply."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bank filtration is called _____ szűrés in Hungarian.",
+    "correct": "parti",
+    "explanation": "The Hungarian term for bank filtration is 'parti szűrés'."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The grid resolution of the regional Great Plain MODFLOW model is _____ m × _____ m.",
+    "correct": "500",
+    "explanation": "The model uses a 500 m × 500 m grid resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the most widely used parameter estimation tool for groundwater models.",
+    "correct": "PEST",
+    "explanation": "PEST, developed by John Doherty, is the standard parameter estimation tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ equation describes steady-state drawdown around a pumping well in a confined aquifer.",
+    "correct": "Thiem",
+    "explanation": "The Thiem equation: h(r) = h₀ - (Q/2πT)ln(R/r)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FloPy is a pure-_____ package for building and running MODFLOW models.",
+    "correct": "Python",
+    "explanation": "FloPy provides a complete Python API for MODFLOW."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW 6 supports unstructured grids through the _____ package.",
+    "correct": "DISV",
+    "explanation": "DISV (Discretization by Vertices) allows Voronoi polygons and irregular cell shapes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The regional Great Plain model covers approximately _____ km².",
+    "correct": "50,000",
+    "explanation": "The model covers the entire Great Plain at approximately 50,000 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary must characterize _____ designated groundwater bodies under the WFD.",
+    "correct": "185",
+    "explanation": "The WFD requires assessment of 185 groundwater bodies in Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The river-aquifer interaction formula in MODFLOW is Q_riv = C_riv × (H_riv - _____).",
+    "correct": "h",
+    "explanation": "Q_riv = C_riv(H_riv - h) where h is the head in the aquifer cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the worked MODFLOW example, the aquifer transmissivity is _____ m²/day.",
+    "correct": "500",
+    "explanation": "The example uses T = 500 m²/day for a confined aquifer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PEST calibration may require _____ to 50,000 forward model runs.",
+    "correct": "5,000",
+    "explanation": "Parameter estimation with PEST typically requires 5,000-50,000 model runs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary submits River Basin Management Plans to the European Commission every _____ years.",
+    "correct": "six",
+    "explanation": "WFD River Basin Management Plans are submitted every six years."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pleistocene sand and gravel aquifers of the Great Plain are typically _____ to 200 meters thick.",
+    "correct": "50",
+    "explanation": "These aquifers range from 50 to 200 meters in thickness."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Irrigation pumping in Hungary decreased by roughly _____% after 1990.",
+    "correct": "60",
+    "explanation": "Pumping declined ~60% following the end of the communist-era agricultural system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ formula converts grain-size analysis data into hydraulic conductivity estimates.",
+    "correct": "Kozeny-Carman",
+    "explanation": "The Kozeny-Carman formula relates grain size distribution to K values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Clean gravel has a hydraulic conductivity range of _____ to 1000 m/day.",
+    "correct": "100",
+    "explanation": "Clean gravel K = 100-1000 m/day (Freeze and Cherry, 1979)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Climate projections suggest Great Plain recharge may decrease by _____-30% under moderate warming.",
+    "correct": "10",
+    "explanation": "Under moderate warming (RCP4.5), recharge may decrease 10-30%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Typical travel times for Budapest bank filtration wells range from _____ to 100 days.",
+    "correct": "10",
+    "explanation": "Travel times depend on pumping rate, distance, and conductivity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Cell2D layer joins simulation result tables through the _____ attribute.",
+    "correct": "CellID",
+    "explanation": "CellID uniquely identifies each cell for joining with result tables."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the finite element method, the global _____ matrix is assembled from element-level contributions.",
+    "correct": "stiffness",
+    "explanation": "The stiffness matrix [K] depends on hydraulic conductivity and element geometry."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Netherlands maintains a national groundwater model maintained by _____.",
+    "correct": "TNO",
+    "explanation": "TNO is the Dutch geological survey that maintains the REGIS-II model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE provides monthly estimates of total water storage changes at approximately _____ km resolution.",
+    "correct": "300",
+    "explanation": "GRACE resolution is approximately 300 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Budapest's water utility is called Fővárosi _____.",
+    "correct": "Vízművek",
+    "explanation": "Fővárosi Vízművek is Budapest's water utility."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has approximately _____ active groundwater monitoring wells.",
+    "correct": "5,000",
+    "explanation": "Hungary operates one of Europe's densest networks with about 5,000 active wells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DDM-5 national DEM of Hungary has a resolution of _____ meters.",
+    "correct": "5",
+    "explanation": "The DDM-5 DEM is at 5 m resolution, resampled to 500 m for the regional model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Galerkin method, the head approximation is h ≈ Σ Ni(x,y,z) × _____.",
+    "correct": "hi",
+    "explanation": "hi represents the head at node i, with Ni being the shape functions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ solver in MODFLOW 6 uses a Krylov-subspace method.",
+    "correct": "IMS",
+    "explanation": "IMS (Iterative Model Solution) is MODFLOW 6's solver package."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW-_____ introduced Newton-Raphson formulation for unconfined problems.",
+    "correct": "NWT",
+    "explanation": "MODFLOW-NWT added Newton-Raphson formulation for improved convergence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Physics-informed neural networks that embed the groundwater flow equation are called _____.",
+    "correct": "PINNs",
+    "explanation": "PINNs (Physics-Informed Neural Networks) embed governing equations into the neural network architecture."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ approach to groundwater modeling uses Docker containerized executables for cloud deployment.",
+    "correct": "FloPy",
+    "explanation": "FloPy integrates with containerized MODFLOW executables using Docker for cloud-based workflows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The land cover dataset used for Hungarian recharge estimation is _____ Land Cover.",
+    "correct": "CORINE",
+    "explanation": "CORINE Land Cover (100 m resolution) is used for recharge calculations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Agricultural land transmits approximately _____-25% of annual precipitation as recharge.",
+    "correct": "15",
+    "explanation": "Agricultural land recharge is estimated at 15-25% of annual precipitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Recharge in sandy interfluves of the Great Plain reaches _____-120 mm/year.",
+    "correct": "80",
+    "explanation": "Recharge varies from near-zero in clay areas to 80-120 mm/year in sandy areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hortobágy National Park is a _____ World Heritage site.",
+    "correct": "UNESCO",
+    "explanation": "The Hortobágy is a UNESCO World Heritage site dependent on shallow groundwater."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The projected water table decline in the Great Plain over 50 years is _____-5 meters.",
+    "correct": "1",
+    "explanation": "Combined reduced vertical and lateral recharge could lower the water table by 1-5 m over 50 years."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the four broad categories of decisions that groundwater simulation models serve, with Hungarian examples for each.",
+    "correct": "(1) Resource management: Hungarian water utilities must demonstrate that extraction rates from Danube and Tisza alluvial aquifers will not deplete resources over 50 years, using calibrated MODFLOW models. (2) Contaminant fate and transport: when pollutants reach the water table, models determine plume speed and direction toward receptors. (3) Ecosystem protection: the Hortobágy National Park depends on shallow groundwater for alkaline marshes; models quantify the link between agricultural pumping and wetland water levels. (4) Infrastructure design: Budapest's bank filtration wells along the Danube are designed using simulation models to determine pumping rates, well placement, and travel times.",
+    "explanation": "Each category connects abstract modeling capabilities to concrete Hungarian water management needs."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the three principal groundwater simulation methods (AEM, FEM, FDM) in terms of their discretization approach, geometric flexibility, and typical applications.",
+    "correct": "AEM uses no grid — it represents features as mathematical elements (wells, rivers, zones) whose contributions are superimposed analytically. It offers limited geometric flexibility but excels at regional screening. FEM uses triangular/tetrahedral meshes that conform to irregular boundaries with local refinement, offering excellent flexibility but high computational cost, ideal for complex geology (FEFLOW). FDM uses orthogonal rectangular grids (rows, columns, layers) — simple and computationally moderate but geometrically rigid, though MODFLOW-USG/DISV partially addresses this. FDM is the worldwide regulatory standard (MODFLOW). Each method solves the same governing equation differently.",
+    "explanation": "The choice depends on geometric complexity, computational resources, and regulatory requirements."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete workflow for constructing a MODFLOW model from GIS data, including the eleven steps outlined in the chapter.",
+    "correct": "The workflow is: (1) Define model boundary polygon with origin and rotation. (2) Generate Cell2D/Node2D grid features. (3) Assign layer elevations from DEM and geological surface rasters (DIS package). (4) Assign hydraulic properties from conductivity fields (NPF/LPF). (5) Generate stress packages by overlaying GIS features with the grid (WEL from well points, RIV from river polylines, RCH from recharge rasters, DRN from drain features, etc.). (6) Define stress periods. (7) Configure the solver (IMS). (8) Export MODFLOW input files. (9) Run MODFLOW. (10) Import results into the geodatabase. (11) Create map layers by joining results to Cell2D features.",
+    "explanation": "The entire workflow can be scripted in Python using FloPy or ArcPy, supporting reproducibility and version control."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how GIS features are converted into MODFLOW stress packages, using wells and rivers as examples.",
+    "correct": "For wells: point features are overlaid with Cell2D polygons. Each well in a cell generates a WEL record with cell IJK index and pumping rate. Multiple wells in one cell have rates summed. Screen intervals determine which layer receives pumping, with multi-layer wells having rates distributed by transmissivity. For rivers: polyline features are overlaid with Cell2D polygons. Each crossing segment generates a RIV record. River stage comes from elevation attributes or DEM. Riverbed conductance C = K_bed × L × W / M, where L (segment length in cell) is computed automatically from the intersection. Width, bed properties come from feature attributes.",
+    "explanation": "This automated overlay process is the most powerful aspect of GIS-based model construction."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why MODFLOW dominates global groundwater modeling practice, including its four pillars of success.",
+    "correct": "MODFLOW dominates due to four factors: (1) Free and open-source — USGS distributes code without charge, eliminating licensing barriers worldwide. (2) Modular architecture — packages handle specific aspects (DIS, NPF, WEL, RIV, etc.) and new processes are added without modifying the core solver, enabling a vast ecosystem of extensions. (3) Enormous installed base — tens of thousands of models create a network effect where new projects build on existing models, and regulators accept MODFLOW as standard evidence. (4) Steady evolution — from MODFLOW-88 through NWT, USG, to MODFLOW 6 with object-oriented architecture and unstructured grids. These factors create a self-reinforcing cycle of adoption.",
+    "explanation": "Understanding MODFLOW's dominance explains why it is the de facto standard despite other codes having technical advantages in specific areas."
+  },
+  {
+    "type": "essay",
+    "question": "Compare FEFLOW and MODFLOW, discussing when each is the better choice for specific project types.",
+    "correct": "FEFLOW excels at: complex geological boundaries (its unstructured mesh conforms to any shape), density-dependent flow (coastal saltwater intrusion, geothermal systems), integrated unsaturated zone modeling (Richards equation), and European institutional contexts where FEFLOW is established. MODFLOW excels at: simple geometry, regional water balance problems, regulatory contexts requiring MODFLOW (US and many international), budget-constrained projects (free license), and model sharing. Both solve the same physics, and GIS data preparation is largely identical. Many firms maintain both and select per project.",
+    "explanation": "The choice is technical and institutional, not about which code is 'better' in absolute terms."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Budapest's bank filtration system along the Danube, including its operation, modeling challenges, and water quality implications.",
+    "correct": "Budapest's bank filtration on Szentendre and Csepel Islands has operated for over a century, producing ~500,000 m³/day (half the city's supply). River water is drawn through riverbed sediments into pumping wells, receiving natural filtration. Critical modeling aspects: river-aquifer interaction depends on riverbed conductance and clogging; travel times (10-100 days) determine pathogen and pollutant attenuation; temperature varies 2-25°C seasonally, affecting viscosity and degradation rates. Models require high-resolution bathymetry, detailed alluvial stratigraphy, real-time river stage data, and precise well coordinates. FEFLOW is often preferred for its heat transport capability.",
+    "explanation": "Bank filtration is a critical example where GIS-integrated modeling directly protects public health."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the automated well permitting workflow described in the chapter, including its eight steps and potential benefits for Hungarian water management.",
+    "correct": "The workflow automatically: (1) loads calibrated baseline MODFLOW model, (2) creates a new well at applicant coordinates, (3) overlays with Cell2D grid for cell indices, (4) adds WEL record with specified pumping rate, (5) runs MODFLOW with modified well package, (6) maps drawdowns vs baseline, (7) compares flows at sensitive receptors (rivers, wetlands, existing wells) to baseline, (8) flags permits exceeding thresholds for denial. This reduces days of manual work to minutes, eliminates subjective variation between hydrogeologists, and preserves complete analysis records. For Hungary, the Great Plain regional model combined with MODFLOW Analyst tools could screen hundreds of annual permit applications in the Tisza region.",
+    "explanation": "Automation transforms modeling from a specialized consultancy product into a routine operational tool."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of bank filtration travel time and why it matters for water quality, including typical values for Budapest's system.",
+    "correct": "Travel time is the duration for river water to travel from the riverbed through alluvial sediments to pumping wells. It is critical because longer travel times allow greater attenuation of pathogens, organic micropollutants, and turbidity through natural filtration, adsorption, and biodegradation. Budapest's system has travel times of 10-100 days depending on pumping rate, distance from the bank, and hydraulic conductivity. Travel times and capture zones are determined using MODPATH particle tracking on MODFLOW velocity fields. Temperature effects complicate this: warmer summer water has lower viscosity (higher effective K) and faster degradation, while winter water moves more slowly.",
+    "explanation": "Travel time is the key design parameter linking hydrogeology to public health protection."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the data sources feeding the Great Hungarian Plain MODFLOW model and how they exemplify the complete GIS-to-model pipeline.",
+    "correct": "The pipeline includes: grid geometry from DDM-5 national DEM (5 m, resampled to 500 m) and borehole-derived geological surfaces interpolated by kriging; hydraulic conductivity from ~2,000 pumping tests supplemented by Kozeny-Carman grain-size correlations, interpolated with geological zone constraints; recharge from soil-water balance using daily OMSZ meteorological data, CORINE land cover, and AGROTOPO soils; rivers (Tisza, Körös, Berettyó, Zagyva) from OVF gauging network via the RIV package; and ~15,000 registered pumping wells from the OVF database. This demonstrates how every aspect of the model — geometry, properties, stresses — originates from spatial GIS data.",
+    "explanation": "The pipeline shows that a MODFLOW model is fundamentally a GIS product."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the institutional challenges of groundwater modeling as described in the chapter, and explain how GIS-based approaches help address them.",
+    "correct": "Models are expensive to build (months of work) and even more expensive to maintain. Many models are built for specific projects, then abandoned on someone's hard drive. The GIS-based approach partially addresses this by: storing models in geodatabases with standard feature classes accessible to anyone with GIS skills; linking models to broader spatial data infrastructure for other purposes; exposing results through web services so non-specialists can query them. The Dutch REGIS-II model demonstrates the vision: maintained by TNO with stable funding, accessible via web interface, used by all water boards and consultants. Hungary has the technical capability but needs sustained funding and political commitment to treat the national model as critical infrastructure.",
+    "explanation": "The institutional challenge is arguably greater than the technical one, and GIS standardization is a key enabler."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of climate change scenario analysis in groundwater management, using the Great Plain as a case study.",
+    "correct": "Climate models project reduced recharge in the Great Plain (10-30% under RCP4.5, 20-50% under RCP8.5) driven mainly by increased evapotranspiration. River stages may decrease during summer, reducing lateral recharge. A Python-scripted workflow modifies recharge arrays and river stages for each scenario, exports MODFLOW inputs, runs simulations, imports results, and generates comparison maps — all automated overnight. For the Great Plain, this projects 1-5 meter water table decline over 50 years, with consequences for shallow wells, wetlands, and agricultural drainage. The MODFLOW model translates abstract climate projections into spatially specific impacts: which villages need deeper wells, which wetlands lose water supply.",
+    "explanation": "Automated scenario analysis transforms groundwater models from static analytical tools into dynamic planning instruments."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the five categories of information that constitute a groundwater simulation model and how each derives from GIS data.",
+    "correct": "(1) Aquifer geometry: 3D shape from DEMs for land surface, geological surfaces from 3D models for layer tops/bottoms, aquifer polygons for lateral extent. (2) Material properties: spatially distributed K, Ss, Sy, porosity from interpolation of pumping tests and grain-size analyses. (3) Boundary conditions: rivers, lakes, and recharge from GIS features with stage, conductance, and flux attributes. (4) Stresses: pumping wells with extraction rates, injection wells, drainage systems — all from point and line GIS features. (5) Initial conditions: head distribution from interpolated field measurements or steady-state solution. Each category maps to GIS layers, making the GIS the primary assembly environment.",
+    "explanation": "The GIS is not merely a visualization tool but the primary environment for assembling and maintaining all model inputs."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the global challenges of groundwater modeling in 2026, organized around the three categories of data, computation, and institutions.",
+    "correct": "Data: the subsurface is opaque, with observation density orders of magnitude less than surface water. Well-monitored countries (Hungary, Netherlands) have 1 per 10-50 km²; much of Africa and Asia has almost no monitoring. Proxy data (WHYMAP, GRACE, literature K values) fill gaps. Computation: models with 1M cells need 5,000-50,000 PEST runs; cloud computing enables parallel execution. FEFLOW models with 5M nodes take hours per solution. Institutions: models are expensive to build, even more to maintain; most are built for projects then abandoned. The GIS-geodatabase approach, web services, and national infrastructure models (like the Netherlands' REGIS-II) offer solutions but require sustained funding.",
+    "explanation": "These three challenges interact: data scarcity increases model uncertainty, which requires more computational effort, which requires institutional support."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the worked MODFLOW example from the chapter, including the setup, boundary conditions, and physical interpretation of the results.",
+    "correct": "The example models a 5000×3000 m confined aquifer (T=500 m²/day, K=25 m/day, thickness 20 m). Grid: 50 columns × 30 rows (100 m cells), 1 layer. Western boundary: constant head 100 m (river). Eastern: constant head 95 m. North/south: no-flow. One well at center extracting 2000 m³/day. Without the well, heads would grade linearly 100-95 m. The well creates a cone of depression: head at the well ≈93.5 m (drawdown ~3.5 m from the no-pumping 97.5 m). Since 93.5 < 95, the well reverses the gradient east of its location, pulling water from the eastern boundary — important for contaminant capture zone delineation.",
+    "explanation": "This simple example illustrates the fundamental concepts of head distribution, gradient reversal, and water budget analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the European Union's Water Framework Directive has driven groundwater modeling in Hungary.",
+    "correct": "The WFD requires EU member states to characterize all groundwater bodies (185 in Hungary: porous and karst), assess quantitative and chemical status, and implement measures for 'good status' by defined deadlines. This means demonstrating that abstraction does not exceed available resources. MODFLOW and FEFLOW models are the primary tools for quantitative assessment, and results feed directly into River Basin Management Plans submitted every six years. The WFD has been a powerful driver for both data collection (monitoring networks) and modeling investment. The European Green Deal and revised WFD may further drive development toward a national groundwater model as critical infrastructure.",
+    "explanation": "Regulatory requirements create both the mandate and the funding for groundwater modeling."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the path toward integrated modeling that combines surface and subsurface processes, and explain why traditional separation is problematic.",
+    "correct": "Traditional practice uses separate models: rainfall-runoff for surface water, MODFLOW for groundwater, loosely coupled. This introduces errors at the interface and misses feedbacks: expansion/contraction of the saturated zone, saturation-excess overland flow from shallow water tables, tile drainage-water table interaction, and delayed streamflow response to aquifer storage changes. Fully integrated models (HydroGeoSphere, ParFlow, MIKE SHE) solve surface and subsurface flow simultaneously on a single grid. MODFLOW 6 moves in this direction with multi-model capability and SWR/LAK packages. The GIS demands are greater — needing surface topography, land cover, soil properties, channel geometry, and meteorological forcing alongside subsurface data.",
+    "explanation": "Integration reflects the reality that the hydrological cycle is continuous, not artificially split between surface and subsurface."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how real-time model updating works and why it is more relevant for certain types of groundwater systems than others.",
+    "correct": "Real-time updating involves: telemetered monitoring wells transmit data to a central database (data.vizugy.hu in Hungary), which is ingested into the geodatabase, compared to model predictions, and used to adjust the model via automated calibration (PEST or Ensemble Smoother). The updated model runs forward for short-term forecasts. This is less urgent for groundwater than for flood forecasting because heads change over weeks-months, not hours-days. However, it is becoming relevant for fast-responding systems: bank filtration wellfields reacting to rapid Danube stage changes, and karst aquifers with fast conduit flow. The required infrastructure — telemetry, automated ingestion, scripted updating, web dissemination — is the same used throughout hydroinformatics.",
+    "explanation": "Real-time modeling applies the same infrastructure used for surface water forecasting to the subsurface domain."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Hortobágy National Park illustrates the connection between groundwater simulation and ecosystem protection.",
+    "correct": "The Hortobágy in eastern Hungary is a UNESCO World Heritage site with alkaline marshes and sodic grasslands that depend on shallow groundwater. Any change in pumping regime in surrounding agricultural areas could alter the water table and damage these habitats. Groundwater simulation models quantify the link between pumping rates and wetland water levels by predicting how extraction affects the water table spatially and temporally. This enables regulators to set extraction limits that protect ecological values while still allowing agricultural water use. The model translates the abstract physics of groundwater flow into concrete, spatially specific predictions about ecosystem impacts.",
+    "explanation": "This example shows how groundwater modeling serves environmental protection beyond traditional water supply applications."
+  },
+  {
+    "type": "mcq",
+    "question": "What formula gives recharge as fraction of precipitation by land cover?",
+    "options": [
+      "Fixed 50% everywhere",
+      "Variable fraction based on land cover type",
+      "Zero for all land",
+      "100% infiltration"
+    ],
+    "correct": "B",
+    "explanation": "Agricultural: 15-25%, forest: 10-20%, urban impervious: <5% of annual precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate area of Hungary's Great Hungarian Plain?",
+    "options": [
+      "20,000 km2",
+      "35,000 km2",
+      "50,000 km2",
+      "80,000 km2"
+    ],
+    "correct": "C",
+    "explanation": "The regional model covers approximately 50,000 km2."
+  },
+  {
+    "type": "mcq",
+    "question": "Which MODFLOW package handles drain-aquifer interaction?",
+    "options": [
+      "WEL",
+      "RIV",
+      "DRN",
+      "GHB"
+    ],
+    "correct": "C",
+    "explanation": "DRN package models drain features in agricultural areas."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the LAK package in MODFLOW simulate?",
+    "options": [
+      "Lateral aquifer connections",
+      "Lake-aquifer interaction",
+      "Local area kriging",
+      "Layer-averaged conductivity"
+    ],
+    "correct": "B",
+    "explanation": "LAK provides lake simulation within the MODFLOW framework."
+  },
+  {
+    "type": "mcq",
+    "question": "What coding approach does MODFLOW 6 use?",
+    "options": [
+      "Procedural Fortran only",
+      "Object-oriented architecture",
+      "Pure Python",
+      "Machine code"
+    ],
+    "correct": "B",
+    "explanation": "MODFLOW 6 is a complete rewrite with modern object-oriented architecture."
+  },
+  {
+    "type": "mcq",
+    "question": "Which code is mentioned for coupled thermo-hydro-mechanical-chemical processes?",
+    "options": [
+      "MODFLOW",
+      "FEFLOW",
+      "OpenGeoSys",
+      "GFLOW"
+    ],
+    "correct": "C",
+    "explanation": "OpenGeoSys is free open-source for THM-C processes."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW requires a paid license.",
+    "correct": false,
+    "explanation": "Free and open source from USGS."
+  },
+  {
+    "type": "true_false",
+    "question": "FDM uses rectangular cells in rows and columns.",
+    "correct": true,
+    "explanation": "Orthogonal grid of rectangular cells."
+  },
+  {
+    "type": "true_false",
+    "question": "AEM requires a computational grid.",
+    "correct": false,
+    "explanation": "Represents features as mathematical elements without grid."
+  },
+  {
+    "type": "true_false",
+    "question": "FEFLOW uses unstructured finite element meshes.",
+    "correct": true,
+    "explanation": "Triangulated to conform to any boundary."
+  },
+  {
+    "type": "true_false",
+    "question": "Setting Ss dh/dt = 0 gives the transient equation.",
+    "correct": false,
+    "explanation": "Gives steady-state; transient includes the time derivative."
+  },
+  {
+    "type": "true_false",
+    "question": "Cell2D can be joined with result tables for mapping.",
+    "correct": true,
+    "explanation": "Standard GIS join through CellID."
+  },
+  {
+    "type": "true_false",
+    "question": "Boundary stores model origin and rotation angle.",
+    "correct": true,
+    "explanation": "OriginX, OriginY, and Angle attributes."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW 6 has modern object-oriented architecture.",
+    "correct": true,
+    "explanation": "Complete rewrite with OO design."
+  },
+  {
+    "type": "true_false",
+    "question": "FloPy is commercial Python software.",
+    "correct": false,
+    "explanation": "Free open-source."
+  },
+  {
+    "type": "true_false",
+    "question": "95% of Hungary's drinking water is from groundwater.",
+    "correct": true,
+    "explanation": "One of most groundwater-dependent countries."
+  },
+  {
+    "type": "true_false",
+    "question": "Budapest bank filtration has operated over a century.",
+    "correct": true,
+    "explanation": "Operating since early 1900s."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW extraction uses positive pumping rates.",
+    "correct": false,
+    "explanation": "Extraction is negative in MODFLOW convention."
+  },
+  {
+    "type": "true_false",
+    "question": "FEM is computationally cheaper than FDM.",
+    "correct": false,
+    "explanation": "Generally higher cost due to mesh complexity."
+  },
+  {
+    "type": "true_false",
+    "question": "PEST was developed by John Doherty.",
+    "correct": true,
+    "explanation": "Most widely used calibration tool."
+  },
+  {
+    "type": "true_false",
+    "question": "Dutch REGIS-II is maintained by TNO.",
+    "correct": true,
+    "explanation": "With stable long-term funding."
+  },
+  {
+    "type": "true_false",
+    "question": "Irrigation pumping increased after 1990 in Hungary.",
+    "correct": false,
+    "explanation": "Decreased by ~60%."
+  },
+  {
+    "type": "true_false",
+    "question": "GHB models head-dependent flux.",
+    "correct": true,
+    "explanation": "General Head Boundary package."
+  },
+  {
+    "type": "true_false",
+    "question": "Longer bank filtration travel times improve water quality.",
+    "correct": true,
+    "explanation": "More attenuation of pathogens and pollutants."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW 6 supports multiple models per simulation.",
+    "correct": true,
+    "explanation": "Via exchange packages."
+  },
+  {
+    "type": "true_false",
+    "question": "PINNs are intended to replace MODFLOW.",
+    "correct": false,
+    "explanation": "Build upon MODFLOW as fast approximators."
+  },
+  {
+    "type": "true_false",
+    "question": "AEM is best for complex 3D vertical heterogeneity.",
+    "correct": false,
+    "explanation": "Assumes vertically uniform layers."
+  },
+  {
+    "type": "true_false",
+    "question": "Misinterpreting grid rotation is a common import error.",
+    "correct": true,
+    "explanation": "Convention differences cause frequent mistakes."
+  },
+  {
+    "type": "true_false",
+    "question": "Real-time groundwater modeling is as common as flood forecasting.",
+    "correct": false,
+    "explanation": "Still rare due to slower dynamics."
+  },
+  {
+    "type": "true_false",
+    "question": "The Alfold model is fully enterprise GIS-integrated.",
+    "correct": false,
+    "explanation": "Still uses separate files and layers, not fully integrated."
+  },
+  {
+    "type": "true_false",
+    "question": "FEFLOW includes Richards equation module.",
+    "correct": true,
+    "explanation": "For unsaturated zone modeling."
+  },
+  {
+    "type": "true_false",
+    "question": "FEM head is approximated as sum of basis functions.",
+    "correct": true,
+    "explanation": "h = sum Ni*hi."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud computing transformed groundwater modeling.",
+    "correct": true,
+    "explanation": "Enables parallel Monte Carlo and ensemble calibration."
+  },
+  {
+    "type": "true_false",
+    "question": "SWR stands for Subsurface Waste Remediation.",
+    "correct": false,
+    "explanation": "Surface Water Routing."
+  },
+  {
+    "type": "true_false",
+    "question": "Cell2D is the workhorse of model visualization.",
+    "correct": true,
+    "explanation": "Standard join for all thematic maps."
+  },
+  {
+    "type": "true_false",
+    "question": "Urban impervious surfaces transmit >20% precipitation as recharge.",
+    "correct": false,
+    "explanation": "Less than 5%."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW-LGR provides local grid refinement.",
+    "correct": true,
+    "explanation": "Detailed areas within coarser model."
+  },
+  {
+    "type": "true_false",
+    "question": "The greatest modeling challenge is institutional, not technical.",
+    "correct": true,
+    "explanation": "Models expensive to build and maintain."
+  },
+  {
+    "type": "true_false",
+    "question": "SUTRA is developed by USGS.",
+    "correct": true,
+    "explanation": "Variable-density flow and transport."
+  },
+  {
+    "type": "true_false",
+    "question": "Galerkin method is used in finite difference.",
+    "correct": false,
+    "explanation": "Used in finite element method."
+  },
+  {
+    "type": "true_false",
+    "question": "The well reverses gradient east of its location in the example.",
+    "correct": true,
+    "explanation": "Head at well < eastern boundary head."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary has one of Europe's densest monitoring networks.",
+    "correct": true,
+    "explanation": "~5000 active wells."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW can run entirely through FloPy without ArcGIS.",
+    "correct": true,
+    "explanation": "Complete Python API."
+  },
+  {
+    "type": "true_false",
+    "question": "WFD requires good status for all groundwater bodies.",
+    "correct": true,
+    "explanation": "By defined deadlines."
+  },
+  {
+    "type": "true_false",
+    "question": "FDM derivatives are replaced with finite differences.",
+    "correct": true,
+    "explanation": "Core discretization approach."
+  },
+  {
+    "type": "true_false",
+    "question": "Eastern model boundary follows the Danube.",
+    "correct": false,
+    "explanation": "Eastern = Romanian border; Danube is western/northern."
+  },
+  {
+    "type": "true_false",
+    "question": "ParFlow is a fully integrated surface-subsurface model.",
+    "correct": true,
+    "explanation": "Listed with HydroGeoSphere and MIKE SHE."
+  },
+  {
+    "type": "true_false",
+    "question": "Mass conservation is one of two laws in the flow equation.",
+    "correct": true,
+    "explanation": "Combined with Darcy's law."
+  },
+  {
+    "type": "true_false",
+    "question": "Climate change will increase Great Plain recharge.",
+    "correct": false,
+    "explanation": "Expected decrease of 10-30% under moderate warming."
+  },
+  {
+    "type": "true_false",
+    "question": "The Kozeny-Carman formula relates grain size to hydraulic conductivity.",
+    "correct": true,
+    "explanation": "Converts sieve analysis to K."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW-USG supports unstructured grids.",
+    "correct": true,
+    "explanation": "Voronoi polygons and irregular cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The RIV package becomes constant flux when head drops below river bottom.",
+    "correct": true,
+    "explanation": "Perched river condition."
+  },
+  {
+    "type": "true_false",
+    "question": "FEFLOW is better than MODFLOW for geothermal doublet systems.",
+    "correct": true,
+    "explanation": "Coupled heat-flow transport capability."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hortobágy depends on deep thermal aquifers.",
+    "correct": false,
+    "explanation": "Depends on shallow groundwater for alkaline marshes."
+  },
+  {
+    "type": "true_false",
+    "question": "GMS stands for Groundwater Modeling System.",
+    "correct": true,
+    "explanation": "Commercial pre/post-processor by Aquaveo."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW packages are organized into grid, stress, and solver categories.",
+    "correct": true,
+    "explanation": "Three main categories described in the chapter."
+  },
+  {
+    "type": "true_false",
+    "question": "The IMS solver affects the physical results if convergence is achieved.",
+    "correct": false,
+    "explanation": "Solver choice affects speed and robustness, not results when converged."
+  },
+  {
+    "type": "true_false",
+    "question": "The Danube Research Institute maintains Szentendre Island bank filtration GIS.",
+    "correct": true,
+    "explanation": "Centre for Ecological Research database since early 2000s."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW river interaction uses conductance: Q = C(Hriv - h).",
+    "correct": true,
+    "explanation": "Fundamental RIV package equation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian acronym for regional water directorates is területi vízügyi igazgatóságok.",
+    "correct": true,
+    "explanation": "Under OVF authority."
+  },
+  {
+    "type": "true_false",
+    "question": "Bank filtration models typically use 5-25 m resolution near wells.",
+    "correct": true,
+    "explanation": "Fine resolution near wells, coarser at boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "PFLOTRAN is mentioned as bridging commercial and free tools.",
+    "correct": true,
+    "explanation": "Listed among codes bridging the gap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW first released in _____.",
+    "correct": "1984",
+    "explanation": "By the USGS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW written in _____.",
+    "correct": "Fortran",
+    "explanation": "USGS distributes source code."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow equation combines Darcy's law with _____ conservation.",
+    "correct": "mass",
+    "explanation": "Fundamental PDE."
+  },
+  {
+    "type": "fill_blank",
+    "question": "AEM pioneered by Otto _____.",
+    "correct": "Strack",
+    "explanation": "University of Minnesota."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Most known AEM code is _____.",
+    "correct": "GFLOW",
+    "explanation": "By Haitjema et al."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEFLOW developed by _____ Group.",
+    "correct": "DHI",
+    "explanation": "Originally WASY GmbH."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Five simulation feature classes: Boundary, Cell2D, Cell3D, Node2D, _____.",
+    "correct": "Node3D",
+    "explanation": "Complete set."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ package defines MODFLOW grid geometry.",
+    "correct": "DIS",
+    "explanation": "Discretization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ package assigns hydraulic conductivity in MODFLOW 6.",
+    "correct": "NPF",
+    "explanation": "Node-Property Flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____% of Hungary's drinking water is groundwater.",
+    "correct": "95",
+    "explanation": "Highly dependent country."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Budapest bank filtration produces _____ m3/day.",
+    "correct": "500,000",
+    "explanation": "Half of city supply."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bank filtration is _____ szures in Hungarian.",
+    "correct": "parti",
+    "explanation": "Hungarian term."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Great Plain model grid is _____ m resolution.",
+    "correct": "500",
+    "explanation": "500 x 500 m cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the most used parameter estimation tool.",
+    "correct": "PEST",
+    "explanation": "By John Doherty."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ equation describes steady-state drawdown around a well.",
+    "correct": "Thiem",
+    "explanation": "h(r) = h0 - Q/(2piT)ln(R/r)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FloPy is pure _____ for MODFLOW.",
+    "correct": "Python",
+    "explanation": "Complete API."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW 6 supports unstructured grids via _____ package.",
+    "correct": "DISV",
+    "explanation": "Discretization by Vertices."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Great Plain model covers _____ km2.",
+    "correct": "50,000",
+    "explanation": "Entire Plain area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has _____ WFD groundwater bodies.",
+    "correct": "185",
+    "explanation": "Requires status assessment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "RIV equation: Q = C x (Hriv - _____).",
+    "correct": "h",
+    "explanation": "Head in aquifer cell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Worked example transmissivity is _____ m2/day.",
+    "correct": "500",
+    "explanation": "T = K x b."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PEST needs _____ to 50,000 forward runs.",
+    "correct": "5,000",
+    "explanation": "For calibration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "River Basin Management Plans every _____ years.",
+    "correct": "six",
+    "explanation": "WFD requirement."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pleistocene aquifers are _____ to 200 m thick.",
+    "correct": "50",
+    "explanation": "Typical range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Irrigation pumping dropped _____% after 1990.",
+    "correct": "60",
+    "explanation": "End of communist agriculture."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ formula converts grain size to K.",
+    "correct": "Kozeny-Carman",
+    "explanation": "Sieve analysis conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Clean gravel K is _____ to 1000 m/day.",
+    "correct": "100",
+    "explanation": "Freeze and Cherry 1979."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Recharge may decrease _____-30% under moderate warming.",
+    "correct": "10",
+    "explanation": "Climate projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bank filtration travel times _____ to 100 days.",
+    "correct": "10",
+    "explanation": "Depends on conditions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell2D joins results via _____ attribute.",
+    "correct": "CellID",
+    "explanation": "Unique cell identifier."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEM stiffness matrix is called [_____].",
+    "correct": "K",
+    "explanation": "Global stiffness matrix."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Netherlands model maintained by _____.",
+    "correct": "TNO",
+    "explanation": "Dutch geological survey."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRACE resolution is ~ _____ km.",
+    "correct": "300",
+    "explanation": "Monthly estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Budapest water utility is Fovarosi _____.",
+    "correct": "Vizmuvek",
+    "explanation": "City water works."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has ~_____ active monitoring wells.",
+    "correct": "5,000",
+    "explanation": "Dense European network."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 DEM resolution is _____ meters.",
+    "correct": "5",
+    "explanation": "Resampled to 500m for model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "FEM head: h = sum Ni x _____.",
+    "correct": "hi",
+    "explanation": "Nodal head values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW 6 solver is _____.",
+    "correct": "IMS",
+    "explanation": "Iterative Model Solution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW-_____ added Newton-Raphson for unconfined.",
+    "correct": "NWT",
+    "explanation": "Improved convergence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Physics-informed neural networks are called _____.",
+    "correct": "PINNs",
+    "explanation": "Embed governing equations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ integrates with Docker for cloud deployment.",
+    "correct": "FloPy",
+    "explanation": "Containerized MODFLOW."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian recharge uses _____ Land Cover dataset.",
+    "correct": "CORINE",
+    "explanation": "100 m resolution."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Agricultural land transmits _____-25% precipitation as recharge.",
+    "correct": "15",
+    "explanation": "Estimated fraction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sandy recharge reaches _____-120 mm/year.",
+    "correct": "80",
+    "explanation": "In Great Plain interfluves."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hortobagy is a _____ World Heritage site.",
+    "correct": "UNESCO",
+    "explanation": "Dependent on shallow groundwater."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Water table may decline _____-5 m over 50 years.",
+    "correct": "1",
+    "explanation": "Climate change projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pumping test results from _____ wells feed Great Plain K.",
+    "correct": "2,000",
+    "explanation": "Approximate count."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ package handles drain-aquifer interaction.",
+    "correct": "DRN",
+    "explanation": "For agricultural drainage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Conductance C = Kbed x L x W / _____.",
+    "correct": "M",
+    "explanation": "Riverbed thickness."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ package handles recharge in MODFLOW.",
+    "correct": "RCH",
+    "explanation": "Distributed flux to top layer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Danube temperature ranges _____-4 C in winter to 20-25 C summer.",
+    "correct": "2",
+    "explanation": "Seasonal variation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The soil database used in Hungary is _____.",
+    "correct": "AGROTOPO",
+    "explanation": "Hungarian soil information system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The worked example grid has _____ columns and 30 rows.",
+    "correct": "50",
+    "explanation": "100 m cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Regional water directorates are called teruleti vizugyi _____.",
+    "correct": "igazgatosagok",
+    "explanation": "Under OVF authority."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the four decision categories groundwater simulation serves.",
+    "correct": "(1) Resource management: sustainable pumping, water rights. (2) Contaminant transport: plume speed, direction. (3) Ecosystem protection: wetland water levels. (4) Infrastructure design: dewatering, bank filtration, managed recharge. Each requires predicting future conditions.",
+    "explanation": "Models predict what cannot be directly observed."
+  },
+  {
+    "type": "essay",
+    "question": "Compare AEM, FEM, and FDM.",
+    "correct": "AEM: no grid, superposition of mathematical elements, limited 3D. FEM: triangular mesh, excellent geometric flexibility, high cost. FDM: rectangular grid, simple and moderate cost, limited geometry. Same physics, different discretization.",
+    "explanation": "Choice depends on geometry, cost, and regulation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the MODFLOW model-building workflow.",
+    "correct": "11 steps: boundary, grid, layer elevations, properties, stress packages, stress periods, solver, export files, run, import results, map layers. Scriptable in Python via FloPy or ArcPy.",
+    "explanation": "Complete GIS-to-model pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "Explain GIS-to-stress-package conversion for wells and rivers.",
+    "correct": "Wells: overlay points with Cell2D, generate WEL records with IJK and rate. Screen determines layer. Rivers: overlay polylines, compute segment length per cell, calculate conductance C=KLW/M, generate RIV records with stage.",
+    "explanation": "Automated overlay is most powerful GIS-model link."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss MODFLOW's four pillars of dominance.",
+    "correct": "Free/open-source removes licensing barriers. Modular package architecture enables extensions. Enormous installed base creates network effects. Steady evolution from 1984 to MODFLOW 6 maintains relevance.",
+    "explanation": "Self-reinforcing adoption cycle."
+  },
+  {
+    "type": "essay",
+    "question": "Compare FEFLOW and MODFLOW for different project types.",
+    "correct": "FEFLOW: complex geometry, density-dependent flow, unsaturated zone, European context. MODFLOW: simple geometry, regional water balance, US regulatory, budget-constrained, open sharing. Both solve same physics.",
+    "explanation": "Technical and institutional factors drive choice."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Budapest bank filtration system.",
+    "correct": "Szentendre and Csepel Islands, >100 years operation, 500,000 m3/day. River water drawn through alluvial sediments. Travel times 10-100 days. Temperature varies 2-25C seasonally. FEFLOW preferred for heat transport.",
+    "explanation": "Critical public health infrastructure."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss automated well permitting workflow.",
+    "correct": "Eight steps: load baseline, create well, overlay grid, add WEL record, run MODFLOW, map drawdowns, compare at receptors, flag if thresholds exceeded. Reduces days to minutes. Standardizes decisions.",
+    "explanation": "Automation transforms modeling into operational tool."
+  },
+  {
+    "type": "essay",
+    "question": "Explain bank filtration travel time importance.",
+    "correct": "Time for river water to reach pumping well. Longer = more attenuation of pathogens, micropollutants, turbidity. 10-100 days for Budapest. Determined via MODPATH particle tracking. Temperature affects viscosity and degradation.",
+    "explanation": "Key parameter linking hydrogeology to public health."
+  },
+  {
+    "type": "essay",
+    "question": "Describe data sources feeding the Great Plain model.",
+    "correct": "DDM-5 DEM, ~2000 pumping tests, Kozeny-Carman grain-size correlations, daily OMSZ meteorology, CORINE land cover, AGROTOPO soils, OVF river gauges, 15,000 registered wells. Every model aspect from GIS data.",
+    "explanation": "Complete GIS-to-model data pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss institutional challenges of groundwater modeling.",
+    "correct": "Models expensive to build and maintain. Often abandoned after projects end. GIS approach helps: geodatabase accessible to GIS users, links to broader infrastructure, web services for stakeholders. Dutch REGIS-II shows the vision.",
+    "explanation": "Institutional challenge may exceed technical."
+  },
+  {
+    "type": "essay",
+    "question": "Explain climate change scenario analysis for the Great Plain.",
+    "correct": "Recharge decrease 10-30% moderate, 20-50% severe. River stages decrease in summer. Scripted workflows modify inputs, run overnight. Projects 1-5m water table decline over 50 years. Translates abstract projections into specific impacts.",
+    "explanation": "Models make climate impacts spatially specific."
+  },
+  {
+    "type": "essay",
+    "question": "Describe five information categories in a simulation model.",
+    "correct": "Aquifer geometry (DEMs, geological surfaces), material properties (K, S), boundary conditions (rivers, lakes, recharge), stresses (wells, drains), initial conditions (interpolated heads). All from GIS layers.",
+    "explanation": "GIS is assembly environment for all inputs."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss global groundwater modeling challenges.",
+    "correct": "Data: sparse monitoring in developing regions. Computation: 1M-cell models need thousands of PEST runs; cloud computing helps. Institutions: models abandoned after projects; need sustainable maintenance like Dutch REGIS-II.",
+    "explanation": "Data, computation, and institutional challenges interact."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the worked MODFLOW example.",
+    "correct": "5000x3000m confined aquifer, T=500, K=25, 50x30 grid. West: CHD 100m. East: CHD 95m. Center well Q=-2000. Without well: linear gradient. With well: head 93.5m, gradient reversal east. Budget: well supplied from both boundaries.",
+    "explanation": "Illustrates fundamental modeling concepts."
+  },
+  {
+    "type": "essay",
+    "question": "Describe WFD impact on Hungarian groundwater modeling.",
+    "correct": "Requires characterizing 185 bodies, assessing quantitative/chemical status, implementing measures. MODFLOW/FEFLOW are primary tools. Results in River Basin Management Plans every 6 years. European Green Deal may further drive development.",
+    "explanation": "Regulatory mandate drives modeling investment."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss integrated surface-subsurface modeling.",
+    "correct": "Traditional: separate models loosely coupled. Misses feedbacks. HydroGeoSphere, ParFlow, MIKE SHE solve simultaneously. MODFLOW 6 moves toward this with SWR, LAK. Greater GIS demands: need surface and subsurface data.",
+    "explanation": "Continuous hydrological cycle demands integration."
+  },
+  {
+    "type": "essay",
+    "question": "Explain real-time model updating.",
+    "correct": "Telemetered data to central database, ingested into geodatabase, compared to predictions, automated calibration (PEST/Ensemble Smoother), forward forecast. More relevant for fast-responding systems (bank filtration, karst) than slow regional aquifers.",
+    "explanation": "Applies surface water infrastructure to subsurface."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Hortobágy and groundwater simulation.",
+    "correct": "UNESCO site with alkaline marshes dependent on shallow groundwater. Pumping changes in surrounding areas could damage habitats. Models quantify pumping-wetland water level links. Enable regulators to set extraction limits protecting ecological values.",
+    "explanation": "Models connect groundwater physics to ecosystem protection."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss MODFLOW package structure categories.",
+    "correct": "Grid/property: DIS (geometry), NPF (conductivity), STO (storage). Stress: WEL (wells), RIV (rivers), RCH (recharge), DRN (drains), GHB, CHD, EVT. Solver: IMS. Modular design enables new physics via new packages.",
+    "explanation": "Modularity is key to MODFLOW's extensibility."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why bank filtration models use FEFLOW.",
+    "correct": "Bank filtration involves coupled flow and heat transport: temperature affects viscosity (effective K) and biological degradation rates. Seasonal temperature variation propagates through aquifer. FEFLOW's built-in heat transport solves this naturally. Temperature observations in monitoring wells provide calibration data.",
+    "explanation": "Coupled physics justifies FEFLOW choice."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the DIS package contents.",
+    "correct": "NLAY, NROW, NCOL define grid dimensions. DELR (row widths), DELC (column widths) define cell sizes. TOP and BOTM arrays define layer elevations. These come from DEMs and geological surface rasters sampled at cell centroids.",
+    "explanation": "DIS translates GIS surfaces into model geometry."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss FloPy's role in modern groundwater modeling.",
+    "correct": "Pure-Python MODFLOW API for building, running, post-processing. Eliminates ArcGIS requirement. Supports reproducibility (model is code), version control, cloud integration (Docker containers). NumPy/pandas/matplotlib ecosystem. Scriptable scenario analysis.",
+    "explanation": "FloPy democratizes and modernizes MODFLOW."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the model boundary feature class.",
+    "correct": "Polygon defining 2D model extent and orientation. For MODFLOW: rectangle aligned with grid. For FEFLOW: irregular mesh perimeter. Stores OriginX/Y and Angle. Enables model spatial indexing, coordinate transformation between model and geographic coordinates.",
+    "explanation": "Boundary locates model in geographic space."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Cell2D and Node2D feature classes.",
+    "correct": "Cell2D: polygons representing cells (rectangles for FDM, triangles for FEM). Node2D: points at computational nodes (cell centers for MODFLOW). CellID uniquely identifies cells. Joining result tables to Cell2D creates all standard thematic maps.",
+    "explanation": "Workhorse features for model visualization."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss surrogate models and PINNs.",
+    "correct": "ML surrogate models trained on MODFLOW outputs approximate full simulations in milliseconds for real-time optimization. PINNs embed groundwater flow equations into neural network architecture, honoring both data and physics. Build upon rather than replace physics-based models.",
+    "explanation": "AI augments, not replaces, physics-based modeling."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the steady-state versus transient distinction.",
+    "correct": "Steady-state: no time dependence (dh/dt = 0), finds equilibrium head distribution. Transient: includes time variation with specific storage Ss, simulates aquifer response over time. Steady-state provides initial conditions for transient runs. Transient captures drought, recovery, pumping changes.",
+    "explanation": "Two simulation modes serve different questions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how river features become RIV package inputs.",
+    "correct": "River polylines overlaid with Cell2D grid. Each segment crossing generates RIV record. Stage from river elevation or DEM. Conductance C = Kbed*L*W/M with L computed automatically from intersection. Width and bed properties from feature attributes.",
+    "explanation": "Automated geometry computation from GIS features."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of monitoring data in model calibration.",
+    "correct": "Water level measurements from monitoring wells are compared to model-predicted heads. Differences drive parameter adjustment. Automated via PEST. ~5000 Hungarian monitoring wells provide calibration targets. Quality depends on network density and measurement accuracy.",
+    "explanation": "Monitoring provides the targets against which models are calibrated."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the NPF package.",
+    "correct": "Node-Property Flow assigns hydraulic conductivity, vertical anisotropy, and storage parameters to each cell. Properties come from interpolated pumping test results and geological maps. Spatial variability reflects geological heterogeneity. Critical for model accuracy.",
+    "explanation": "NPF translates geology into model hydraulic behavior."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how recharge is estimated for the Great Plain model.",
+    "correct": "Soil-water balance model using daily OMSZ meteorological data. Land cover from CORINE (100m). Soil from AGROTOPO. Recharge = fraction of precipitation varying by land cover: agricultural 15-25%, forest 10-20%, urban <5%. Ranges near-zero to 80-120 mm/yr.",
+    "explanation": "Multi-factor spatial analysis produces recharge maps."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the evolution of MODFLOW from 1984 to MODFLOW 6.",
+    "correct": "MODFLOW-88: basic confined/unconfined. MODFLOW-NWT: Newton-Raphson for unconfined. MODFLOW-LGR: local grid refinement. MODFLOW-USG: unstructured grids. MODFLOW 6: complete OO rewrite, multiple models per simulation, structured and unstructured grids.",
+    "explanation": "Continuous evolution maintains relevance over four decades."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Thiem equation and its role in the worked example.",
+    "correct": "Thiem describes steady-state drawdown: h(r) = h0 - Q/(2piT)ln(R/r). In AEM, each well adds a logarithmic term. Multiple elements are superposed. In the worked example, the well creates a cone of depression that reverses gradient east of its location.",
+    "explanation": "Foundational analytical solution for well hydraulics."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Cell3D and Node3D features.",
+    "correct": "Cell3D: multipatch volumetric cells. Node3D: 3D points. Cell3D carries Cell2DID linking to plan view. Node3D carries Cell3DID and Node2DID. Primarily for 3D visualization. Computationally expensive for large models; 2D features with layer-specific joins usually suffice.",
+    "explanation": "3D features extend plan-view representation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the regional Alfold model calibration approach.",
+    "correct": "Steady-state calibrated to 1960-1990 average. Transient covers 1990-present: post-communist pumping decline, 2000-2003 and 2012 droughts, increasing thermal extraction. River stages from OVF gauges calibrated against baseflow. 15,000 wells with annual volumes.",
+    "explanation": "Multi-period calibration captures changing conditions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how drain features become DRN package inputs.",
+    "correct": "Drain polylines overlaid with Cell2D grid like rivers. Each crossing segment generates DRN record with drain elevation and conductance. Critical in Great Plain agricultural areas where subsurface drainage controls water table. Channels, tile drains, open ditches all represented.",
+    "explanation": "Agricultural drainage significantly affects groundwater."
+  },
+  {
+    "type": "essay",
+    "question": "Describe MODFLOW's modular package architecture advantages.",
+    "correct": "Each package handles one aspect (DIS for geometry, WEL for wells, RIV for rivers). New physics added via new packages without core modification. Enables vast ecosystem: MODPATH, MT3DMS, SFR, UZF. Users load only needed packages.",
+    "explanation": "Modularity enables extensibility without complexity."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the finite element Galerkin formulation.",
+    "correct": "Head approximated as sum of shape functions: h = sum Ni*hi. Substituting into governing equation with weighted residual method produces [K]{h} = {f}. K is global stiffness matrix from element contributions. f is load vector from sources and boundary conditions.",
+    "explanation": "Mathematical foundation of FEM discretization."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the solver package role.",
+    "correct": "Solver converts matrix equations into head solutions. MODFLOW 6 uses IMS with Krylov-subspace method and incomplete LU preconditioning. Earlier: PCG2, GMG, NWT. Choice affects convergence speed and robustness but not physical results if converged.",
+    "explanation": "Solver is computational engine, not physics."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Angle attribute importance in the Boundary class.",
+    "correct": "Many models are rotated to align with flow direction or aquifer boundary. A Danube bank filtration model might rotate 30 degrees. Angle stored in Boundary but convention varies (clockwise from north vs counterclockwise from east). Misinterpretation is a common import error.",
+    "explanation": "Rotation convention must be documented and verified."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the well screen in determining model layer assignment.",
+    "correct": "Screen interval determines which layer receives pumping. If screen spans multiple layers, pumping distributed proportionally to each layer's transmissivity. The well's depth and screen position from the GIS well database directly determine how pumping stress is vertically distributed in the model.",
+    "explanation": "Screen depth links well data to model layer assignment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Great Plain model represents rivers.",
+    "correct": "Tisza and tributaries (Koros, Berettyo, Zagyva) as RIV package. Stages from OVF gauging network. Conductance calibrated against baseflow measurements. Rivers gain or lose water depending on gradient. During floods: recharge aquifer. During drought: receive baseflow.",
+    "explanation": "Rivers are dynamic boundary conditions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of a stress period.",
+    "correct": "Discrete time interval during which all stresses are constant. Each period has length, time steps, and step multiplier. Between periods, pumping rates, recharge, river stages can change. Enables modeling seasonal, annual, or event-based variations in forcing.",
+    "explanation": "Stress periods discretize time-varying conditions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Hungarian lessons for international groundwater modeling.",
+    "correct": "Three lessons: (1) Centralized databases (OVF, MBFSZ) provide essential data foundation. (2) Full GIS-model integration remains incomplete. (3) WFD is a powerful modeling driver. Countries lacking institutional infrastructure face greater challenges.",
+    "explanation": "Hungarian experience offers transferable insights."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how model results are visualized in GIS.",
+    "correct": "Computed heads, drawdowns, and budgets imported into geodatabase tables. Joined to Cell2D features through CellID. Standard GIS symbology creates thematic maps. Comparing stress periods shows temporal changes. All operations use standard GIS tools, no specialized software needed.",
+    "explanation": "GIS join-and-symbolize workflow for results."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the principle of superposition in the Analytic Element Method.",
+    "correct": "Each feature (well, river, zone) contributes a mathematical function satisfying the governing equation. The total solution at any point is the algebraic sum of all contributions. Adding a second well simply adds another term. No grid recalculation needed.",
+    "explanation": "Superposition enables elegant analytical solutions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss what makes MODFLOW 6 different from earlier versions.",
+    "correct": "Complete rewrite with object-oriented architecture. Supports multiple models per simulation via exchange packages. Generalized discretization (structured and unstructured grids). SWR and LAK for surface water. Modern input file format. Foundation for future development.",
+    "explanation": "MODFLOW 6 is a generational leap."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the CHD package and its role.",
+    "correct": "Constant-Head fixes head at specified cells to known values. In the worked example: west column fixed at 100m, east at 95m. Used for boundaries where head is known and constant. Water can flow in or out to maintain the specified head.",
+    "explanation": "CHD anchors model boundaries."
+  },
+  {
+    "type": "essay",
+    "question": "Describe MODFLOW Analyst tools.",
+    "correct": "MODFLOW Analyst is a geoprocessing toolset within ArcGIS that automates model construction from GIS data. Tools include grid generation, stress package building from feature overlays, MODFLOW file export, result import, and automated permitting workflows.",
+    "explanation": "MODFLOW Analyst bridges GIS and simulation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the EVT package.",
+    "correct": "EVT models evapotranspiration from shallow water tables. When the water table is near the surface, ET removes water. The rate depends on the depth to water table and maximum ET rate (from remote sensing or meteorological data). Critical where water tables are shallow.",
+    "explanation": "ET is a significant loss from shallow aquifers."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what the worked example teaches about water budgets.",
+    "correct": "The 2000 m3/day extraction is supplied by increased inflow from the western river AND flow reversal from the eastern boundary. This demonstrates that wells alter the entire flow field, not just local heads. Water budget analysis reveals the source of extracted water.",
+    "explanation": "Budget analysis reveals where pumped water comes from."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the groundwater modeling software ecosystem in 2026.",
+    "correct": "MODFLOW 6 (free, dominant), FEFLOW (commercial, European), FloPy (free Python), PEST (free calibration), GMS and Visual MODFLOW (commercial GUIs), HydroGeoSphere (integrated), OpenGeoSys (open-source), QGIS+plugins (free GIS). Mix of free and commercial tools.",
+    "explanation": "Rich ecosystem serves diverse needs."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the challenges of modeling the Danube bank filtration system.",
+    "correct": "Requires: high-resolution bathymetry, detailed alluvial stratigraphy, real-time river stage, precise well coordinates. Critical processes: river-aquifer exchange (conductance, clogging), travel time (10-100 days), temperature effects on viscosity. Fine grid (5-25m) near wells.",
+    "explanation": "Multiple physical processes at fine resolution."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why containerized MODFLOW with Docker matters.",
+    "correct": "Docker containers package MODFLOW executables with dependencies. Combined with FloPy, enables: define model locally, submit thousands of variants to cloud, retrieve results. Supports Monte Carlo, ensemble calibration, scenario analysis. Reproducible across platforms.",
+    "explanation": "Containerization enables cloud-based computational workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how land cover data inform recharge estimation.",
+    "correct": "Different land covers transmit different precipitation fractions: agricultural 15-25%, forest 10-20%, urban impervious <5%. CORINE Land Cover (100m for Hungary, NLCD for US) provides spatial distribution. Combined with precipitation and soil infiltration capacity to compute spatially varying recharge maps.",
+    "explanation": "Land cover is key recharge control."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of model maintenance as critical infrastructure.",
+    "correct": "Models degrade without regular updating: new wells, changed boundary conditions, updated monitoring data. In many countries, models are built for one project then abandoned. The geodatabase approach makes models accessible and maintainable. The Dutch model shows long-term maintenance works.",
+    "explanation": "Sustained maintenance is more important than initial construction."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the STO package functions in transient simulations.",
+    "correct": "STO defines specific storage (confined) and specific yield (unconfined) for each cell. These parameters control how much water is released per unit decline in head. Required only for transient simulations where the time derivative is non-zero. Values come from pumping tests or literature.",
+    "explanation": "Storage parameters control transient aquifer response."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how MODFLOW handles multi-layer well screens.",
+    "correct": "When a well's screen spans multiple model layers, pumping is distributed among layers proportional to each layer's transmissivity within the screened interval. This requires knowing both the well construction (screen top/bottom from GIS) and the layer transmissivities (from NPF package).",
+    "explanation": "Screen-layer intersection determines pumping distribution."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of 95% groundwater dependence for Hungary.",
+    "correct": "Near-total reliance on groundwater makes Hungary exceptionally vulnerable to aquifer depletion and contamination. Drives investment in monitoring networks (5000 wells), modeling capability, and regulatory frameworks (WFD). Makes groundwater modeling not an academic exercise but a national security issue.",
+    "explanation": "Extreme dependence makes groundwater modeling essential."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of capture zone delineation using MODPATH.",
+    "correct": "MODPATH traces particles backward from a well through the computed velocity field. The area from which particles reach the well defines the capture zone. Travel time contours show how quickly different areas contribute. Used for source water protection: activities within the capture zone affect well water quality.",
+    "explanation": "Capture zones connect pumping to source protection."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how MODFLOW-NWT improves unconfined simulation.",
+    "correct": "Standard MODFLOW can have convergence problems when cells dry and rewet in unconfined simulations. NWT uses Newton-Raphson formulation with smooth functions that handle the transition between wet and dry cells more robustly. Particularly important for shallow water table problems.",
+    "explanation": "NWT solves a common numerical challenge."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of CORINE Land Cover in Hungarian water management.",
+    "correct": "CORINE provides EU-wide land cover classification at 100m resolution. Used in recharge estimation (different cover types transmit different precipitation fractions), evapotranspiration estimation, and vulnerability assessment. Updated periodically (every 6 years), reflecting land use changes.",
+    "explanation": "CORINE is a foundational spatial dataset for water management."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the WFD status assessment uses model results.",
+    "correct": "Models simulate whether abstraction is sustainable (quantitative status) by predicting long-term head trends under current pumping. If heads decline unsustainably, the body receives poor quantitative status. Combined with chemical monitoring, this determines which bodies need remedial measures.",
+    "explanation": "Models provide the quantitative basis for WFD assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the path from standalone models to web-served operational tools.",
+    "correct": "Evolution: desktop MODFLOW files (1984), GUI pre-processors (1995), GIS integration (2010), cloud+AI (2020+). The vision: geodatabase-resident models served over web, accessible to all stakeholders, updated automatically with monitoring data. Netherlands demonstrates this; Hungary aspires to it.",
+    "explanation": "Technology evolution enables operational transformation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the educational importance of the worked MODFLOW example.",
+    "correct": "The simple 50x30 confined aquifer example teaches fundamental concepts: discretization, boundary conditions (CHD), well package, gradient reversal, water budget analysis. Despite simplicity, it illustrates principles that apply to million-cell models. Starting point for understanding complex simulations.",
+    "explanation": "Simple examples illuminate universal principles."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the five categories of model input and their GIS sources.",
+    "correct": "Geometry: DEMs + geological surfaces. Properties: interpolated pumping tests. Boundaries: river polylines, lake polygons, recharge rasters. Stresses: well points, drain lines. Initial conditions: interpolated heads or steady-state. All map directly to GIS layers.",
+    "explanation": "GIS is the primary assembly environment."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss MODFLOW's free and open-source nature.",
+    "correct": "USGS distributes Fortran source without charge. Eliminates licensing barriers globally. A student in Debrecen has equal access as a consultant in Nairobi. Enables academic research, developing-world applications, and model sharing without legal constraints.",
+    "explanation": "Free access democratizes groundwater modeling worldwide."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the transition from desktop to cloud-based modeling.",
+    "correct": "A 30-minute desktop model can run 1000 times in parallel on cloud (AWS, Azure, Google). Enables Monte Carlo uncertainty analysis and ensemble calibration. FloPy + Docker containers enable: define locally, submit to cloud, retrieve results. Scripted in Python.",
+    "explanation": "Cloud computing enables previously impractical analyses."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the greatest challenge is institutional.",
+    "correct": "Models are expensive to build and even more to maintain. Most are built for specific projects then abandoned. Files sit undocumented on hard drives. GIS-geodatabase approach, web services, and treating models as national infrastructure (like Dutch REGIS-II) provide partial solutions.",
+    "explanation": "Sustainability requires institutional commitment beyond technical capability."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the MIKE SHE integrated modeling approach.",
+    "correct": "MIKE SHE couples surface and subsurface flow. FEFLOW MIKE SHE coupling allows integrated modeling across the entire hydrological cycle. Solves surface and subsurface simultaneously, capturing feedbacks between them. Greater GIS data demands.",
+    "explanation": "Integration reflects continuous hydrological cycle."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how proxy data compensate for sparse observations in developing regions.",
+    "correct": "Where monitoring is sparse: geological maps at 1:250K-1M, WHYMAP global data, literature K values, GRACE storage changes, InSAR subsidence. These supplement limited borehole data. Quality lower than direct observations but enables initial model construction.",
+    "explanation": "Proxy data enable modeling where direct data are scarce."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of model calibration using PEST.",
+    "correct": "PEST adjusts model parameters (K, storage, conductance) to minimize differences between observed and simulated heads. Uses automated optimization algorithms. May need 5,000-50,000 model runs. Produces calibrated parameters with uncertainty estimates.",
+    "explanation": "PEST automates the otherwise manual calibration process."
+  },
+  {
+    "type": "essay",
+    "question": "Describe adaptive mesh refinement in FEFLOW.",
+    "correct": "Mesh automatically refined in areas of steep gradients during simulation. Small elements where detail needed, coarse elsewhere. Reduces computation vs uniformly fine mesh. Adds algorithmic complexity but essential for efficient complex models.",
+    "explanation": "Adaptive refinement optimizes computational resources."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of temperature in bank filtration modeling.",
+    "correct": "Water temperature affects viscosity (and hence effective K) and biological degradation rates. Seasonal variation (2-25C) propagates through aquifer with attenuation and delay. Temperature monitoring provides calibration data. FEFLOW handles coupled flow-heat naturally.",
+    "explanation": "Temperature is both a physical and biological parameter."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the CHD and GHB packages differ.",
+    "correct": "CHD: fixes head exactly at specified value. No matter how much water flows, head stays constant. GHB: head-dependent flux where flow depends on difference between external and cell head, with a conductance parameter. GHB is more realistic for most boundaries.",
+    "explanation": "CHD is absolute; GHB is head-dependent."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of model domain definition.",
+    "correct": "Boundary polygon defines the area the model covers. For MODFLOW: rectangle aligned with grid. Choice of extent, resolution, rotation affects all subsequent steps. The model must extend beyond the area of interest to prevent boundary effects from distorting results in the study area.",
+    "explanation": "Domain definition is the first and foundational step."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how MODFLOW results support water management decisions.",
+    "correct": "Results provide: spatial head distribution (where water tables are high/low), temporal changes (rising/falling trends), water budgets (sources and sinks), capture zones (well protection), drawdown predictions (well siting), scenario comparisons (climate adaptation). All mappable in GIS.",
+    "explanation": "Model outputs directly inform management decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the finite difference approximation of the groundwater equation.",
+    "correct": "Continuous PDE replaced by algebraic differences between neighboring cell heads. For cell (i,j,k): K times (h at neighbors - 2h at center) / dx^2, summed in all directions, plus sources = 0. Written for every cell, producing a large linear system solved iteratively.",
+    "explanation": "Core discretization converting calculus to algebra."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the WEL package handles multiple wells in one cell.",
+    "correct": "When multiple well points fall within the same Cell2D polygon, their pumping rates are summed. The cell receives the total pumping stress. This is an approximation: individual well effects are lost. For detailed well-field modeling, smaller cells may be needed.",
+    "explanation": "Cell discretization limits individual well resolution."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the data table approach to sharing groundwater model results.",
+    "correct": "Results stored in geodatabase tables (heads, budgets per cell per stress period). Joined to Cell2D features via CellID for mapping. Any GIS user can visualize results without specialized software. Standardized structure enables result sharing across institutions.",
+    "explanation": "GIS-standard tables democratize result access."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Ensemble Smoother is used for real-time calibration.",
+    "correct": "As new monitoring data arrive, the Ensemble Smoother adjusts model parameters using an ensemble of model states. Each ensemble member represents a plausible parameterization. The smoother updates the ensemble to be consistent with new observations. Produces updated forecasts with uncertainty bounds.",
+    "explanation": "Ensemble methods enable probabilistic real-time updating."
+  }
+]

@@ -1,0 +1,798 @@
+{
+  "chapter": "ch17",
+  "total_issues": 99,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mindez földrajzi határokat eredményez: poligonokat, amelyek megmutatják, hol lesz víz.",
+      "suggested": "Mindez földrajzi lehatárolásokat eredményez: olyan poligonokat, amelyek megmutatják, hol jelenik meg a víz.",
+      "reason": "A „földrajzi határokat eredményez” angolos és kissé esetlen; magyar tudományos prózában természetesebb a „lehatárolásokat eredményez” vagy hasonló megfogalmazás."
+    },
+    {
+      "line_approx": 14,
+      "category": "register",
+      "severity": "low",
+      "original": "Három szintű demográfiai adatrendszert vizsgálunk meg.",
+      "suggested": "Háromféle demográfiai adatrendszert vizsgálunk meg.",
+      "reason": "A „három szintű” itt félreérthető, mert nem hierarchikus szintekről, hanem három típusról/példáról van szó."
+    },
+    {
+      "line_approx": 15,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az Egyesült Államok Népszámlálási Hivatala (US Census Bureau) a világ egyik legrészletesebb és legkönnyebben hozzáférhető térbeli demográfiai adatrendszerét működteti, és ez ad kiindulópontot a fogalmak megértéséhez.",
+      "suggested": "Az Egyesült Államok Népszámlálási Hivatala (US Census Bureau) a világ egyik legrészletesebb és legkönnyebben hozzáférhető térbeli demográfiai adatrendszerét működteti; ez jó kiindulópont a fogalmak megértéséhez.",
+      "reason": "Az „ez ad kiindulópontot” szó szerinti, angolos szerkezet; magyarul természetesebb a „jó kiindulópont”."
+    },
+    {
+      "line_approx": 18,
+      "category": "plural",
+      "severity": "medium",
+      "original": "A „kik” alatt érthetjük a teljes népességet, idős lakosok, gyermekek, szegénységi küszöb alatti háztartások, vagy pincével rendelkező épületek, amelyeket elönt a víz.",
+      "suggested": "A „kik” alatt érthetjük a teljes népességet, az idős lakosokat, a gyermekeket, a szegénységi küszöb alatt élő háztartásokat vagy a pincével rendelkező, elöntött épületek lakóit.",
+      "reason": "A felsorolás nyelvtanilag hibás („idős lakosok” stb. tárgyeset nélkül), és a „kik” kérdéshez az „épületek” nem illeszkedik."
+    },
+    {
+      "line_approx": 24,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az EU Árvízi Irányelve (2007/60/EK), az ENSZ Katasztrófakockázat-csökkentési Hivatala (UNDRR) által használt és gyakorlatilag minden nemzeti árvízkezelési keretrendszer által elfogadott standard formula három összetevőre bontja a kockázatot:",
+      "suggested": "Az EU Árvízi Irányelve (2007/60/EK), az ENSZ Katasztrófakockázat-csökkentési Hivatala (UNDRR) által használt, és gyakorlatilag minden nemzeti árvízkezelési keretrendszerben elfogadott standard képlet három összetevőre bontja a kockázatot:",
+      "reason": "A „formula” itt idegenszerű; magyar tudományos szövegben a „képlet” természetesebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "A demográfiai adatok a kitettség és a sérülékenység jellemzéséhez egyaránt alapot adnak.",
+      "suggested": "A demográfiai adatok egyaránt alapul szolgálnak a kitettség és a sérülékenység jellemzéséhez.",
+      "reason": "Az „alapot adnak” enyhén tükörfordításos; az „alapul szolgálnak” bevettebb magyar tudományos fordulat."
+    },
+    {
+      "line_approx": 33,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ezekkel az adatokkal viszont ugyanaz a térkép katasztrófavédelmi eszközzé válik",
+      "suggested": "Ezekkel az adatokkal viszont ugyanez a térkép katasztrófavédelmi eszközzé válik",
+      "reason": "Az „ugyanaz a térkép” itt angolos; magyarul az „ugyanez a térkép” természetesebb visszautalás."
+    },
+    {
+      "line_approx": 36,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Houston városa blokk szintű, részletes népszámlálási adatokkal rendelkezett",
+      "suggested": "Houston városa tömbszintű, részletes népszámlálási adatokkal rendelkezett",
+      "reason": "A „blokk szintű” az angol „block-level” tükörfordítása; a bevett magyar megfelelő itt a „tömbszintű”."
+    },
+    {
+      "line_approx": 41,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egy következő harminc évre tervező település számára",
+      "suggested": "egy település számára, amely a következő harminc évre tervez",
+      "reason": "A főnév előtti hosszú igenévi szerkezet angolosan torlódik; magyarul természetesebb a vonatkozó mellékmondat."
+    },
+    {
+      "line_approx": 42,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A felszín alatti vizek gazdálkodásához tudni kell, mekkora népesség merít egy víztartóból",
+      "suggested": "A felszín alatti vizek gazdálkodásához tudni kell, mekkora népességet lát el egy víztartó",
+      "reason": "A „népesség merít egy víztartóból” kevésbé természetes szaknyelvi megfogalmazás; a víztartó inkább „ellát” egy népességet."
+    },
+    {
+      "line_approx": 45,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A mezőgazdasági vízhasználat, amely sok országban uralja a teljes vízfogyasztást",
+      "suggested": "A mezőgazdasági vízhasználat, amely sok országban a teljes vízfelhasználás legnagyobb részét adja",
+      "reason": "Az „uralja a teljes vízfogyasztást” angolos és stilárisan túl erős; magyar szaknyelvben a „legnagyobb részét adja” természetesebb."
+    },
+    {
+      "line_approx": 49,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a demográfiai adatok korlátozott erőforrásokkal rendelkező, a szennyvízzel szennyezett árvízzel lakásaikban szembesülő népességet mutatnak ki",
+      "suggested": "a demográfiai adatok olyan, korlátozott erőforrásokkal rendelkező népességet jeleznek, amely saját lakásában szembesül a szennyvízzel szennyezett árvízzel",
+      "reason": "A jelzős szerkezet túlterhelt és angolos; a mondat magyarul nehezen követhető."
+    },
+    {
+      "line_approx": 56,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "és minden számot egy elemzési célra kellően kis földrajzi egységhez rendelni",
+      "suggested": "és az adatokat egy, az elemzés céljára kellően kis földrajzi egységhez rendelni",
+      "reason": "A „minden számot” szó szerinti fordításízű; itt az „adatokat” természetesebb."
+    },
+    {
+      "line_approx": 63,
+      "category": "register",
+      "severity": "low",
+      "original": "Két fő terméke a térelemzés számára a tízéves népszámlálás (Decennial Census) és az American Community Survey (ACS).",
+      "suggested": "A térelemzés szempontjából két fő adatterméke a tízéves népszámlálás (Decennial Census) és az American Community Survey (ACS).",
+      "reason": "A „terméke a térelemzés számára” nehézkes; az „adatterméke” és a „szempontjából” gördülékenyebb."
+    },
+    {
+      "line_approx": 66,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "rassz szerinti besorolásukat",
+      "suggested": "faji/etnikai besorolásukat",
+      "reason": "A „rassz” magyar tudományos és közpolitikai szövegben kerülendő vagy legalábbis kevésbé szerencsés; a „faji/etnikai besorolás” természetesebb és pontosabb."
+    },
+    {
+      "line_approx": 68,
+      "category": "register",
+      "severity": "medium",
+      "original": "Havonta mintegy 250 000 háztartás kapja meg az ACS-t",
+      "suggested": "Havonta mintegy 250 000 háztartást vonnak be az ACS felmérésbe",
+      "reason": "A „megkapja az ACS-t” köznyelvies és angolos; tudományos regiszterben pontosabb a „vonnak be a felmérésbe”."
+    },
+    {
+      "line_approx": 69,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mivel mintavételes felmérésről, nem pedig teljes összeírásról van szó",
+      "suggested": "Mivel mintavételes felmérésről, és nem teljes körű összeírásról van szó",
+      "reason": "A közbeékelt „nem pedig” itt kissé fordításízű; a magyar mondatszerkezet simább az „és nem” megoldással."
+    },
+    {
+      "line_approx": 84,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A teljes block-azonosító ezek összefűzéseként olvasható:",
+      "suggested": "A teljes blockazonosító ezek összefűzéséből áll:",
+      "reason": "Az „összefűzéseként olvasható” körülményes és angolos; a „...összefűzéséből áll” természetesebb."
+    },
+    {
+      "line_approx": 90,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "A demográfiai térkép létrehozásának munkafolyamata egyszerű:",
+      "suggested": "A demográfiai térkép előállításának munkafolyamata egyszerű:",
+      "reason": "A „létrehozásának munkafolyamata” kissé nehézkes; az „előállításának” tömörebb és szaknyelvileg természetesebb."
+    },
+    {
+      "line_approx": 92,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "biztosítja az összes 7 731 változó ember által is könnyen értelmezhető neveit",
+      "suggested": "megadja mind a 7 731 változó ember számára is könnyen értelmezhető nevét",
+      "reason": "A „biztosítja ... neveit” angolos szerkezet; a „megadja ... nevét” természetesebb."
+    },
+    {
+      "line_approx": 96,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "kombinált módszerrel, amely online önkitöltést, telefonos interjúkat és hagyományos házról házra járó összeírást tartalmazott",
+      "suggested": "kombinált módszerrel, online önkitöltéssel, telefonos interjúkkal és hagyományos, házról házra történő összeírással",
+      "reason": "A „módszer ... tartalmazott” szerkezet angolos; magyarul természetesebb az eszközhatározós felsorolás."
+    },
+    {
+      "line_approx": 104,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Ez a hierarchia az Európai Unió NUTS-osztályozására (Statisztikai Célú Területi Egységek Nómenklatúrája) képeződik le",
+      "suggested": "Ez a hierarchia az Európai Unió NUTS-osztályozásának feleltethető meg",
+      "reason": "A „képeződik le” itt szó szerinti, informatikai ízű tükörfordítás; intézményi-területi megfeleltetésnél a „feleltethető meg” természetesebb."
+    },
+    {
+      "line_approx": 202,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a GADM biztosítja a népességi térkép felépítéséhez szükséges földrajzi vázat bármely ország számára",
+      "suggested": "a GADM adja a népességi térképezéshez szükséges földrajzi keretet bármely ország esetében",
+      "reason": "Az angolos „biztosítja ... számára” és a „felépítéséhez szükséges földrajzi váz” szerkezet nehézkes, fordításszagú."
+    },
+    {
+      "line_approx": 217,
+      "category": "register",
+      "severity": "medium",
+      "original": "A 100 m-es WorldPop (jobb) az egyes településeket és városi sűrűségi gradienseket is feloldja.",
+      "suggested": "A 100 m-es WorldPop (jobb) az egyes településeket és a városi népsűrűség fokozatos változásait is megjeleníti.",
+      "reason": "A „feloldja” és a „gradiensek” itt angolos, kevéssé természetes magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 218,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hidrológiai elemzés számára a finomabb felbontás pontosabb népességbecsléseket eredményez szabálytalan vízgyűjtő-határokhoz való kivágásnál.",
+      "suggested": "Hidrológiai elemzésekben a finomabb felbontás pontosabb népességbecslést ad, amikor az adatokat szabálytalan vízgyűjtő-határokhoz vágjuk.",
+      "reason": "Az „elemzés számára” és a „határokhoz való kivágásnál” szerkezet angolos és körülményes."
+    },
+    {
+      "line_approx": 233,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mindegyiket GEOID mezővel indexelve",
+      "suggested": "mindegyik GEOID mezővel azonosítva",
+      "reason": "Az „indexelve” itt tükörfordítás; adatbázis- és GIS-kontextusban természetesebb az „azonosítva” vagy „ellátva”."
+    },
+    {
+      "line_approx": 234,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ugyanazon GEOID alapján indexelve",
+      "suggested": "ugyanazzal a GEOID azonosítóval",
+      "reason": "Az „indexelve” ismét angolos, a magyar szaknyelvben itt nem ez a legtermészetesebb."
+    },
+    {
+      "line_approx": 239,
+      "category": "register",
+      "severity": "low",
+      "original": "Gyakorlati komplikációk gyakran felmerülnek.",
+      "suggested": "A gyakorlatban gyakran adódnak nehézségek.",
+      "reason": "A „komplikációk felmerülnek” szókapcsolat nehézkes, kevésbé természetes magyar tudományos próza."
+    },
+    {
+      "line_approx": 240,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A letöltött Census geodatabase-ek fájltulajdonságaikban gyakran írásvédettként vannak megjelölve.",
+      "suggested": "A letöltött Census-geoadatbázisok fájljai gyakran írásvédettként vannak beállítva.",
+      "reason": "A „fájltulajdonságaikban ... megjelölve” angolosan körülményes."
+    },
+    {
+      "line_approx": 240,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "új feature class-ként",
+      "suggested": "új vektoros rétegként",
+      "reason": "A „feature class” helyett van természetes magyar GIS-megfelelő; az angol terminus itt nem feltétlenül szükséges."
+    },
+    {
+      "line_approx": 241,
+      "category": "register",
+      "severity": "low",
+      "original": "kriptikusak",
+      "suggested": "nehezen értelmezhetők",
+      "reason": "A „kriptikus” érthető, de ebben a tankönyvi regiszterben a magyarosabb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 243,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "előfeldolgozott népszámlálási rétegeket biztosít azonnal használható képszolgáltatásokként",
+      "suggested": "előfeldolgozott népszámlálási rétegeket kínál, amelyek azonnal használható képszolgáltatásként érhetők el",
+      "reason": "A „biztosít ... képszolgáltatásokként” szerkezet angolos és nehézkes."
+    },
+    {
+      "line_approx": 244,
+      "category": "register",
+      "severity": "low",
+      "original": "Kiválóak a gyors felfedezéshez és felugró lekérdezésekhez",
+      "suggested": "Jól használhatók gyors áttekintésre és felugró lekérdezésekre",
+      "reason": "A „gyors felfedezés” az angol „exploration” tükörfordítása."
+    },
+    {
+      "line_approx": 245,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Programozott hozzáféréshez a Census Bureau API-t biztosít",
+      "suggested": "Programozott hozzáféréshez a Census Bureau API-t kínál",
+      "reason": "A „biztosít” itt tipikus angolos túlhasználat; a „kínál” természetesebb."
+    },
+    {
+      "line_approx": 246,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "kiküszöbölve a nagy geodatabase-ek letöltésének és feldolgozásának szükségességét",
+      "suggested": "így nincs szükség a nagy geoadatbázisok letöltésére és feldolgozására",
+      "reason": "A főnevesített, angolos szerkezet helyett magyarul természetesebb az igei megfogalmazás."
+    },
+    {
+      "line_approx": 250,
+      "category": "register",
+      "severity": "low",
+      "original": "Gyors áttekintéshez a népességeloszlásról a portál elegendő.",
+      "suggested": "A portál gyors áttekintést ad a népességeloszlásról.",
+      "reason": "A mondat jelenlegi alakja kissé darabos; a javasolt változat folyékonyabb."
+    },
+    {
+      "line_approx": 254,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez lehetővé teszi az automatizált lekérdezéseket",
+      "suggested": "Így automatizált lekérdezések is futtathatók",
+      "reason": "A „lehetővé teszi” túlhasznált, angolos fordulat."
+    },
+    {
+      "line_approx": 256,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ami a földrajzi határokat illeti, a helyzet töredezettebb, mint az Egyesült Államokban.",
+      "suggested": "A földrajzi határadatok rendszere kevésbé egységes, mint az Egyesült Államokban.",
+      "reason": "Az „Ami ... illeti” és a „töredezettebb” itt kevéssé természetes, pontatlanul hangzó megfogalmazás."
+    },
+    {
+      "line_approx": 262,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A magyar demográfiai térkép gyakorlati munkafolyamata",
+      "suggested": "A magyarországi demográfiai térképezés gyakorlati munkafolyamata",
+      "reason": "A jelenlegi szerkezet kissé bizonytalan jelentésű; a „magyarországi ... térképezés” természetesebb."
+    },
+    {
+      "line_approx": 270,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve az elemzők számára, hogy néhány sornyi kóddal töltsék le a határokat és statisztikákat",
+      "suggested": "így az elemzők néhány sornyi kóddal letölthetik a határfájlokat és a statisztikákat",
+      "reason": "Az angolos „lehetővé téve ... számára” szerkezet helyett közvetlenebb magyar mondat javasolt."
+    },
+    {
+      "line_approx": 272,
+      "category": "register",
+      "severity": "low",
+      "original": "közvetlenül fedhető",
+      "suggested": "közvetlenül összevethető",
+      "reason": "A „fedhető” itt szokatlan; GIS-környezetben az „összevethető” vagy „együtt használható” természetesebb."
+    },
+    {
+      "line_approx": 277,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Egy block group áthúzódhat egy vízválasztón",
+      "suggested": "Egy block group átnyúlhat egy vízválasztón",
+      "reason": "Az „áthúzódhat” itt kevésbé természetes térbeli viszonyt jelöl, az „átnyúlhat” idiomatikusabb."
+    },
+    {
+      "line_approx": 281,
+      "category": "register",
+      "severity": "medium",
+      "original": "A megoldás is analóg",
+      "suggested": "A megoldás is hasonló",
+      "reason": "Az „analóg” itt idegenszerű; a „hasonló” természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 287,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A cellméret megválasztása az elemzésnek megfelelően",
+      "suggested": "A cellaméretet az elemzés céljához igazítva kell megválasztani",
+      "reason": "A „cellméret” helyesebb alak, és a teljes szerkezet így természetesebb."
+    },
+    {
+      "line_approx": 295,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a **dazimetrikus térképezés** biztosít finomítást",
+      "suggested": "a **dazimetrikus térképezés** tovább pontosíthatja a becslést",
+      "reason": "A „biztosít finomítást” angolos, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 299,
+      "category": "register",
+      "severity": "medium",
+      "original": "ahol a nevezőben lévő összeg csak a népszámlálási egységen belüli lakott területhasználatúként osztályozott cellákat fedi le",
+      "suggested": "ahol a nevezőben szereplő összeg csak a népszámlálási egységen belül lakott területhasználatúnak minősített cellákra terjed ki",
+      "reason": "A „fedi le” itt angolos, a teljes szerkezet nehézkes."
+    },
+    {
+      "line_approx": 300,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a technika valójában pontosan az, ahogyan a WorldPop-ot és az Eurostat népességi rácsot készítik",
+      "suggested": "Lényegében így készül a WorldPop és az Eurostat népességi rácsa is",
+      "reason": "A jelenlegi mondat túlbeszélt és angolos szerkezetű."
+    },
+    {
+      "line_approx": 801,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Travis County **218 census tract**-ot tartalmaz, amelyek **823 block group**-ra és megközelítőleg **15 922 census block**-ra oszlanak.",
+      "suggested": "Travis County **218 census tractből** áll, amelyek **823 block groupra** és megközelítőleg **15 922 census blockra** tagolódnak.",
+      "reason": "Az angol közigazgatási/statisztikai egységnevek magyar toldalékolása hibásan, kötőjelesen szerepel; a mondat természetesebb igével is javítható."
+    },
+    {
+      "line_approx": 802,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ez tract-enként átlagosan mintegy 73 block-ot jelent -- sűrűség, amely a megye túlnyomórészt városi és elővárosi jellegét tükrözi.",
+      "suggested": "Ez tractenként átlagosan mintegy 73 blockot jelent; ez a sűrűség a megye túlnyomórészt városi és elővárosi jellegét tükrözi.",
+      "reason": "Az angolos gondolatjel utáni töredékes szerkezet természetellenes magyarul; a toldalékolás is hibás."
+    },
+    {
+      "line_approx": 803,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A legfinomabb felbontású rendelkezésre álló népszámlálási adatok a blokk szintű népesség- és lakóegységszámok a 2020-as tízéves népszámlálásból.",
+      "suggested": "A rendelkezésre álló legfinomabb felbontású népszámlálási adatok a 2020-as tízéves népszámlálás blokk szintű népesség- és lakóegységadatai.",
+      "reason": "Természetellenes szórend és nehézkes szerkezet; a mondat magyarosabban rendezhető."
+    },
+    {
+      "line_approx": 807,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A Travis és Williamson county-kra",
+      "suggested": "Travis és Williamson megyére",
+      "reason": "A 'county' magyar szövegben itt indokolatlanul meghagyott angol szó; van bevett magyar megfelelője."
+    },
+    {
+      "line_approx": 807,
+      "category": "register",
+      "severity": "medium",
+      "original": "Williamson County közvetlenül északra fekszik",
+      "suggested": "Williamson megye közvetlenül Travis Countytól északra fekszik",
+      "reason": "A viszonyítási pont hiányzik, ezért a betoldás kissé lebegő; magyar tudományos prózában pontosabban érdemes megfogalmazni."
+    },
+    {
+      "line_approx": 807,
+      "category": "register",
+      "severity": "medium",
+      "original": "közvetlenül relevánsak az árvízi kockázat szempontjából",
+      "suggested": "közvetlenül kapcsolódnak az árvízi kockázathoz",
+      "reason": "A 'releváns' itt angolos, túl direkt átvétel; magyarul egyszerűbben és természetesebben fogalmazható."
+    },
+    {
+      "line_approx": 810,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A nyugati Austin, amely az Edwards-fennsík dombos területét foglalja el",
+      "suggested": "Austin nyugati része, amely az Edwards-fennsík dombvidékén fekszik",
+      "reason": "Az 'A nyugati Austin' angolos szerkezet; magyarul inkább 'Austin nyugati része'."
+    },
+    {
+      "line_approx": 810,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "sok block group-ban 100 000 dollárt is meghalad",
+      "suggested": "sok block groupban meghaladja a 100 000 dollárt",
+      "reason": "Hibás toldalékolás és kissé angolos szórend."
+    },
+    {
+      "line_approx": 811,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A keleti Austin",
+      "suggested": "Austin keleti része",
+      "reason": "Az angolos jelzős szerkezet magyarul természetesebben birtokos szerkezettel hangzik."
+    },
+    {
+      "line_approx": 811,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "medián jövedelmei lényegesen az országos átlag alatt vannak",
+      "suggested": "medián háztartási jövedelme jóval az országos átlag alatt van",
+      "reason": "A többes szám és a szórend is természetellenes; egyes számban és pontosított főnévvel magyarosabb."
+    },
+    {
+      "line_approx": 811,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egyes block group-okban 30 000 dollár alatt",
+      "suggested": "egyes block groupokban 30 000 dollár alatt",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 812,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a mintázat nem véletlen:",
+      "suggested": "Ez a mintázat nem véletlenszerű:",
+      "reason": "Tudományos regiszterben a 'nem véletlenszerű' pontosabb és kevésbé publicisztikus."
+    },
+    {
+      "line_approx": 816,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "fekvő block group-ok medián kora",
+      "suggested": "fekvő block groupok medián életkora",
+      "reason": "Hibás toldalékolás és a 'medián életkor' a bevettebb magyar szakkifejezés."
+    },
+    {
+      "line_approx": 817,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A nyugati elővárosi területek és a Lakeway nyugdíjas közösség",
+      "suggested": "A nyugati elővárosi területeken és a Lakeway nyugdíjasközösségben",
+      "reason": "A mondat alanya jelenleg nehezen illeszkedik az állítmányhoz; helyhatározós szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 818,
+      "category": "terminology",
+      "severity": "high",
+      "original": "a nyugati Travis County-ban",
+      "suggested": "Travis County nyugati részén",
+      "reason": "Angolos helymegjelölés; magyarul birtokos szerkezettel természetes."
+    },
+    {
+      "line_approx": 821,
+      "category": "calque",
+      "severity": "medium",
+      "original": "az SH-130 korridor mentén fekvő települések",
+      "suggested": "az SH-130 közlekedési folyosója mentén fekvő települések",
+      "reason": "A 'korridor' itt angol tükör; magyar szaknyelvben a 'folyosó' természetesebb."
+    },
+    {
+      "line_approx": 824,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A központi Austin egycsaládos otthonok és többlakásos társasházak keverékét tartalmazza.",
+      "suggested": "Austin központi részén egyaránt találhatók egycsaládos házak és többlakásos társasházak.",
+      "reason": "Az 'X keverékét tartalmazza' angolos megfogalmazás; magyarul inkább létigés vagy 'találhatók' szerkezet természetes."
+    },
+    {
+      "line_approx": 825,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A keleti Travis County-ban",
+      "suggested": "Travis County keleti részén",
+      "reason": "Angolos helymegjelölés."
+    },
+    {
+      "line_approx": 825,
+      "category": "register",
+      "severity": "medium",
+      "original": "gyártott (mobil) házak",
+      "suggested": "mobilházak",
+      "reason": "A 'gyártott ház' az angol manufactured home tükörfordítása; magyarul a 'mobilház' természetesebb."
+    },
+    {
+      "line_approx": 834,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**17.5. ábra**",
+      "suggested": "**17.7.5. ábra** vagy a fejezet számozásához illeszkedő helyes ábraszám",
+      "reason": "A fejezeten belüli számozás következetlennek tűnik: a 17.7 alfejezetben a 17.5. ábra valószínűleg hibás."
+    },
+    {
+      "line_approx": 834,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Travis County-ban, Texas",
+      "suggested": "Travis Countyban, Texas államban",
+      "reason": "A toldalékolás hibás, és a földrajzi megjelölés magyarul pontosabban adható meg."
+    },
+    {
+      "line_approx": 835,
+      "category": "register",
+      "severity": "medium",
+      "original": "A medián kor fiatal népességet mutat",
+      "suggested": "A medián életkor fiatal népességet jelez",
+      "reason": "A 'medián kor' kevésbé bevett, a 'mutat' itt kissé mechanikus."
+    },
+    {
+      "line_approx": 839,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "a FEMA 100 éves árterületet",
+      "suggested": "a FEMA 100 éves árterületét",
+      "reason": "Hiányzik a tárgyrag."
+    },
+    {
+      "line_approx": 842,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Travis County-ra",
+      "suggested": "Travis Countyra",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 845,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Travis County-ra",
+      "suggested": "Travis Countyra",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 848,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A census block-ok kivágása",
+      "suggested": "A census blockok kivágása",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 852,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Travis County-ban",
+      "suggested": "Travis Countyban",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 854,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az árterületi block group-ok medián háztartási jövedelme",
+      "suggested": "Az árterületi block groupok medián háztartási jövedelme",
+      "reason": "Hibás toldalékolás."
+    },
+    {
+      "line_approx": 855,
+      "category": "calque",
+      "severity": "medium",
+      "original": "ami azt jelenti, hogy kevesebb lakos rendelkezik árvízbiztosítással",
+      "suggested": "ezért kevesebb lakos rendelkezik árvízbiztosítással",
+      "reason": "Az 'ami azt jelenti, hogy' tipikus angol tükör; magyarul tömörebben fogalmazható."
+    },
+    {
+      "line_approx": 858,
+      "category": "register",
+      "severity": "medium",
+      "original": "nem a megye véletlenszerű mintája",
+      "suggested": "nem tekinthető a megye véletlenszerű mintájának",
+      "reason": "A jelenlegi megfogalmazás kissé nyers; tudományos stílusban természetesebb a finomabb állítás."
+    },
+    {
+      "line_approx": 859,
+      "category": "other",
+      "severity": "low",
+      "original": "Idősebb, szegényebb és nagyobb valószínűséggel bérlő",
+      "suggested": "Idősebb, szegényebb, és nagyobb arányban él bérlakásban",
+      "reason": "A 'nagyobb valószínűséggel bérlő' angolos és elliptikus szerkezet."
+    },
+    {
+      "line_approx": 862,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az Edwards-víztartó utánpótlódási zónájára",
+      "suggested": "az Edwards-víztartó utánpótlási zónájára",
+      "reason": "A 'utánpótlódási' nehézkes, kevésbé természetes alak; a magyar szaknyelvben az 'utánpótlási zóna' bevettebb."
+    },
+    {
+      "line_approx": 863,
+      "category": "register",
+      "severity": "medium",
+      "original": "a víztartó felett élő minden ember potenciális szennyezést generál",
+      "suggested": "a víztartó felett élő minden ember potenciális szennyezőforrást jelent",
+      "reason": "A 'szennyezést generál' angolos, művi megfogalmazás."
+    },
+    {
+      "line_approx": 866,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A census block-ok Edwards-víztartó feletti térképei",
+      "suggested": "Az Edwards-víztartó fölötti census blockok térképei",
+      "reason": "Hibás toldalékolás és nehézkes szerkezet."
+    },
+    {
+      "line_approx": 867,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egyetlen városi tömb",
+      "suggested": "akár egyetlen várostömbnyi területet is lefedhetnek",
+      "reason": "Az eredeti töredékes, angolos magyarázó szerkezet; magyarul folyóbb mondat szükséges."
+    },
+    {
+      "line_approx": 867,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A San Antoniótól nyugatra fekvő vidéki Hill Country-ban",
+      "suggested": "A San Antoniótól nyugatra fekvő vidéki Hill Country térségében",
+      "reason": "A toldalékolás hibás, és a 'térségében' természetesebb."
+    },
+    {
+      "line_approx": 867,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egyetlen census tract több tucat négyzetkilométert fed le",
+      "suggested": "egyetlen census tract is több tucat négyzetkilométert fedhet le",
+      "reason": "A mondat állítása így pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 868,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a nagy vidéki tract-ek számára",
+      "suggested": "a nagy kiterjedésű vidéki tractek esetében",
+      "reason": "Hibás toldalékolás és angolos 'számára' használat."
+    },
+    {
+      "line_approx": 876,
+      "category": "register",
+      "severity": "medium",
+      "original": "európai kontextusban ideális esettanulmány",
+      "suggested": "európai összefüggésben különösen alkalmas esettanulmány",
+      "reason": "A 'kontextusban ideális' angolos és kissé modoros."
+    },
+    {
+      "line_approx": 890,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az alacsony jövedelem az árvízre való felkészülés, az árvíz átvészelése és az utáni helyreállítás csökkent kapacitásával jár.",
+      "suggested": "Az alacsony jövedelem csökkenti a felkészülés, a védekezés és az árvíz utáni helyreállítás lehetőségeit.",
+      "reason": "Az 'az árvíz átvészelése' és 'az utáni helyreállítás' tükörfordításos, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 894,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "gyakran árvízveszélyes, alacsonyan fekvő területeken helyezkedik el",
+      "suggested": "gyakran alacsonyan fekvő, árvízveszélyes területeken helyezkedik el",
+      "reason": "A jelzők sorrendje magyarul természetesebben fordított."
+    },
+    {
+      "line_approx": 1203,
+      "category": "register",
+      "severity": "medium",
+      "original": "A demográfiai árvízi kitettségi elemzés teljes munkafolyamata, amely bemutatja, hogyan kombinálódnak a veszélyadatok",
+      "suggested": "A demográfiai árvízi kitettségi elemzés teljes munkafolyamata, amely bemutatja, hogyan kapcsolódnak össze a veszélyadatok",
+      "reason": "A „kombinálódnak” itt kissé idegenszerű, a „kapcsolódnak össze” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1203,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "térinformatikai fedvényezési műveleteken keresztül",
+      "suggested": "térinformatikai fedvényműveletek révén",
+      "reason": "A „fedvényezési műveletek” nehézkes és kevésbé bevett; a „fedvényműveletek” természetesebb szakterminus."
+    },
+    {
+      "line_approx": 1203,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a népességi kitettségi számok, sérülékenységi profilok és kockázati térképek előállításához",
+      "suggested": "így állnak elő a kitettségi mutatók, a sérülékenységi profilok és a kockázati térképek",
+      "reason": "Az „előállításához” célhatározós szerkezet itt angolosan túlterhelt; igés megfogalmazással gördülékenyebb."
+    },
+    {
+      "line_approx": 1207,
+      "category": "other",
+      "severity": "high",
+      "original": "Az e fejezetben leírt elemzés statikus népszámlálási adatokra épül -- az elemzés idején hónapokkal vagy évekkel korábbi népességszámokat.",
+      "suggested": "Az e fejezetben leírt elemzés statikus népszámlálási adatokra épül, vagyis az elemzés időpontjánál hónapokkal vagy akár évekkel korábbi népességszámokra.",
+      "reason": "A második tagmondat hiányos, nyelvtanilag töredékes; a mondatot ki kell egészíteni."
+    },
+    {
+      "line_approx": 1208,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A valós idejű árvízi veszélyhelyzeti reagáláshoz a népességeloszlás a nap folyamán változik",
+      "suggested": "Valós idejű árvízi veszélyhelyzeti reagálásnál a népességeloszlás a nap folyamán is változik",
+      "reason": "A mondatindító határozó és a szerkezet angolos; a javított változat természetesebb magyar szórendű."
+    },
+    {
+      "line_approx": 1208,
+      "category": "calque",
+      "severity": "medium",
+      "original": "a LandScan környezeti népesség fogalma",
+      "suggested": "a LandScan ambient népességfogalma",
+      "reason": "A „környezeti népesség” szó szerinti fordítás, nem bevett magyar terminus; itt célszerűbb az ismert angol terminus megtartása."
+    },
+    {
+      "line_approx": 1209,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Az anonimizált és aggregált mobiltelefon-helyadatokat egyre inkább használják a valós idejű népességeloszlás becslésére árvízi események során.",
+      "suggested": "Az anonimizált és aggregált mobiltelefonos helyadatokat egyre gyakrabban használják a valós idejű népességeloszlás becslésére árvízi események idején.",
+      "reason": "Nem klasszikus szenvedő szerkezet, de a mondat nehézkes; a „mobiltelefonos helyadatok” és az „idején” természetesebb megoldás."
+    },
+    {
+      "line_approx": 1211,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Európai kontextusban",
+      "suggested": "Európai összefüggésben",
+      "reason": "A „kontextusban” tipikus hunglish; magyar tudományos prózában az „összefüggésben” természetesebb."
+    },
+    {
+      "line_approx": 1211,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "a JRC Globális Emberi Település Rétegét",
+      "suggested": "a JRC Globális Emberi Település rétegét",
+      "reason": "Az angol tulajdonnévi mintát követő indokolatlan nagybetűzés természetellenes magyarul."
+    },
+    {
+      "line_approx": 1211,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "közel valós idejű becslések nyújtásához az érintett népességről",
+      "suggested": "hogy közel valós idejű becslést adjon az érintett népességről",
+      "reason": "A „nyújtásához” főnevesített, angolos szerkezet; igés megoldással természetesebb."
+    },
+    {
+      "line_approx": 1213,
+      "category": "register",
+      "severity": "medium",
+      "original": "a valós idejű érzékelőadatok, az MI-alapú előrejelzési modellek és az automatizált döntéstámogatás konvergenciájára",
+      "suggested": "a valós idejű érzékelőadatok, az MI-alapú előrejelző modellek és az automatizált döntéstámogatás összekapcsolódására",
+      "reason": "A „konvergencia” itt kissé idegenül hat; az „összekapcsolódás” magyarosabb, az „előrejelző modellek” is természetesebb."
+    }
+  ]
+}

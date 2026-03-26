@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What is slope in the context of terrain analysis?",
+    "options": [
+      "A) The compass direction of steepest descent",
+      "B) The rate of change of elevation with respect to horizontal distance",
+      "C) The curvature of the land surface",
+      "D) The elevation above sea level"
+    ],
+    "correct": "B",
+    "explanation": "Slope is the rate of change of elevation with respect to horizontal distance."
+  },
+  {
+    "type": "mcq",
+    "question": "In Manning's equation, how does velocity relate to slope?",
+    "options": [
+      "A) Proportional to slope",
+      "B) Proportional to square of slope",
+      "C) Proportional to square root of slope",
+      "D) Inversely proportional"
+    ],
+    "correct": "C",
+    "explanation": "Manning's equation: velocity proportional to square root of energy slope."
+  },
+  {
+    "type": "mcq",
+    "question": "In the USLE, doubling slope steepness approximately:",
+    "options": [
+      "A) Doubles erosion",
+      "B) Triples erosion",
+      "C) Quadruples erosion",
+      "D) Has no effect"
+    ],
+    "correct": "C",
+    "explanation": "USLE slope-length factor makes erosion increase as approximately the square of slope."
+  },
+  {
+    "type": "mcq",
+    "question": "The topographic wetness index equals:",
+    "options": [
+      "A) ln(beta/a)",
+      "B) ln(a*tan beta)",
+      "C) ln(a/tan beta)",
+      "D) a/ln(tan beta)"
+    ],
+    "correct": "C",
+    "explanation": "TWI = ln(a / tan beta)."
+  },
+  {
+    "type": "mcq",
+    "question": "TWI underpins which model family?",
+    "options": [
+      "A) HEC-HMS",
+      "B) SWMM",
+      "C) TOPMODEL",
+      "D) MODFLOW"
+    ],
+    "correct": "C",
+    "explanation": "TWI is the foundation of TOPMODEL."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS measures aspect:",
+    "options": [
+      "A) CCW from east",
+      "B) CW from north",
+      "C) CCW from north",
+      "D) CW from east"
+    ],
+    "correct": "B",
+    "explanation": "Clockwise from north in ArcGIS."
+  },
+  {
+    "type": "mcq",
+    "question": "Flat areas in ArcGIS Aspect get value:",
+    "options": [
+      "A) 0",
+      "B) 360",
+      "C) -1",
+      "D) NoData"
+    ],
+    "correct": "C",
+    "explanation": "ArcGIS uses -1 for flat areas."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Northern Hemisphere, most solar radiation hits:",
+    "options": [
+      "A) North-facing slopes",
+      "B) East-facing slopes",
+      "C) South-facing slopes",
+      "D) West-facing slopes"
+    ],
+    "correct": "C",
+    "explanation": "South-facing slopes receive most solar radiation."
+  },
+  {
+    "type": "mcq",
+    "question": "The gradient vector points toward:",
+    "options": [
+      "A) Steepest descent",
+      "B) Steepest ascent",
+      "C) Horizontal flow",
+      "D) Minimum curvature"
+    ],
+    "correct": "B",
+    "explanation": "Gradient = steepest ascent; aspect = reverse."
+  },
+  {
+    "type": "mcq",
+    "question": "100% slope equals how many degrees?",
+    "options": [
+      "A) 90",
+      "B) 100",
+      "C) 45",
+      "D) 60"
+    ],
+    "correct": "C",
+    "explanation": "arctan(1.0) = 45 degrees."
+  },
+  {
+    "type": "mcq",
+    "question": "Center cell in the 3x3 grid is labeled:",
+    "options": [
+      "A) A",
+      "B) C",
+      "C) E",
+      "D) I"
+    ],
+    "correct": "C",
+    "explanation": "E is the center cell, surrounding cells A-I skip E."
+  },
+  {
+    "type": "mcq",
+    "question": "Denominator in dz/dx formula:",
+    "options": [
+      "A) 4 delta",
+      "B) 6 delta",
+      "C) 8 delta",
+      "D) 2 delta"
+    ],
+    "correct": "C",
+    "explanation": "dz/dx = [(A+2D+G)-(C+2F+I)] / 8delta."
+  },
+  {
+    "type": "mcq",
+    "question": "The 1-2-1 weighting equals which filter?",
+    "options": [
+      "A) Gaussian",
+      "B) Laplacian",
+      "C) Sobel",
+      "D) Prewitt"
+    ],
+    "correct": "C",
+    "explanation": "Equivalent to the Sobel operator."
+  },
+  {
+    "type": "mcq",
+    "question": "Sobel advantage over simple difference:",
+    "options": [
+      "A) Uses fewer cells",
+      "B) Combines smoothing and differentiation",
+      "C) Only uses diagonals",
+      "D) Ignores center"
+    ],
+    "correct": "B",
+    "explanation": "Smooths in one direction, differentiates in the perpendicular."
+  },
+  {
+    "type": "mcq",
+    "question": "dz/dx in the worked example (E=67, delta=30):",
+    "options": [
+      "A) 0.329",
+      "B) -0.229",
+      "C) 0.229",
+      "D) -0.329"
+    ],
+    "correct": "C",
+    "explanation": "(278-223)/240 = 0.229."
+  },
+  {
+    "type": "mcq",
+    "question": "Derivative slope in percent for the example:",
+    "options": [
+      "A) 22.9%",
+      "B) 32.9%",
+      "C) 40.1%",
+      "D) 50.0%"
+    ],
+    "correct": "C",
+    "explanation": "sqrt(0.229^2+0.329^2) = 0.401 = 40.1%."
+  },
+  {
+    "type": "mcq",
+    "question": "Derivative aspect in the example:",
+    "options": [
+      "A) 180.0",
+      "B) 145.2",
+      "C) 165.1",
+      "D) 90.0"
+    ],
+    "correct": "B",
+    "explanation": "145.2 degrees (SSE) after quadrant correction."
+  },
+  {
+    "type": "mcq",
+    "question": "Edge cells in derivative method get:",
+    "options": [
+      "A) Slope of zero",
+      "B) Reduced neighborhood",
+      "C) No-data",
+      "D) Interpolated values"
+    ],
+    "correct": "C",
+    "explanation": "Incomplete 3x3 neighborhood means no-data."
+  },
+  {
+    "type": "mcq",
+    "question": "To prevent edge cell loss:",
+    "options": [
+      "A) Ignore edges",
+      "B) Smaller cell size",
+      "C) DEM extending beyond study area",
+      "D) Duplicate outer rows"
+    ],
+    "correct": "C",
+    "explanation": "DEM should extend at least one cell beyond the boundary."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 was first described by:",
+    "options": [
+      "A) Tarboton 1997",
+      "B) O'Callaghan and Mark 1984",
+      "C) Beven and Kirkby 1979",
+      "D) Horn 1981"
+    ],
+    "correct": "B",
+    "explanation": "O'Callaghan and Mark, 1984."
+  },
+  {
+    "type": "mcq",
+    "question": "Diagonal distance in D8:",
+    "options": [
+      "A) delta",
+      "B) 2*delta",
+      "C) delta*sqrt(2)",
+      "D) delta/sqrt(2)"
+    ],
+    "correct": "C",
+    "explanation": "Diagonal of a square with side delta."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 flow direction is determined by:",
+    "options": [
+      "A) Lowest elevation neighbor",
+      "B) Steepest downhill slope",
+      "C) Average slope",
+      "D) Nearest lower neighbor"
+    ],
+    "correct": "B",
+    "explanation": "Maximum positive slope = steepest descent."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 encoding for south:",
+    "options": [
+      "A) 2",
+      "B) 4",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "B",
+    "explanation": "South = 4."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 encoding for east:",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "A",
+    "explanation": "East = 1."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 encoding for northeast:",
+    "options": [
+      "A) 32",
+      "B) 64",
+      "C) 128",
+      "D) 256"
+    ],
+    "correct": "C",
+    "explanation": "Northeast = 128."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 encoding starts from:",
+    "options": [
+      "A) North",
+      "B) South",
+      "C) East",
+      "D) West"
+    ],
+    "correct": "C",
+    "explanation": "East (1) proceeding counterclockwise."
+  },
+  {
+    "type": "mcq",
+    "question": "In D8 example, flow from E=67 goes to:",
+    "options": [
+      "A) I (SE,48)",
+      "B) H (S,52)",
+      "C) F (E,56)",
+      "D) G (SW,60)"
+    ],
+    "correct": "B",
+    "explanation": "H has steepest slope (0.500) due to shorter cardinal distance."
+  },
+  {
+    "type": "mcq",
+    "question": "Cell I doesn't get flow because:",
+    "options": [
+      "A) It's uphill",
+      "B) Diagonal distance dilutes slope",
+      "C) D8 can't go diagonal",
+      "D) It's outside DEM"
+    ],
+    "correct": "B",
+    "explanation": "Longer diagonal distance gives lower slope (0.448 vs 0.500)."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS drop raster approximates sqrt(2) as:",
+    "options": [
+      "A) 1.414",
+      "B) 1.500",
+      "C) 1.400",
+      "D) 1.732"
+    ],
+    "correct": "B",
+    "explanation": "~6% error for diagonal directions."
+  },
+  {
+    "type": "mcq",
+    "question": "Does the sqrt(2) bug affect flow directions?",
+    "options": [
+      "A) Yes all wrong",
+      "B) No, only drop values",
+      "C) Yes, cardinals only",
+      "D) No, fixed"
+    ],
+    "correct": "B",
+    "explanation": "Directions use correct sqrt(2); only drop percentages affected."
+  },
+  {
+    "type": "mcq",
+    "question": "Maximum D8 angular error:",
+    "options": [
+      "A) 45 deg",
+      "B) 22.5 deg",
+      "C) 90 deg",
+      "D) 11.25 deg"
+    ],
+    "correct": "B",
+    "explanation": "Half the 45-degree spacing."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity published year:",
+    "options": [
+      "A) 1984",
+      "B) 1988",
+      "C) 1997",
+      "D) 2002"
+    ],
+    "correct": "C",
+    "explanation": "Tarboton, 1997, Water Resources Research."
+  },
+  {
+    "type": "mcq",
+    "question": "Number of D-infinity facets:",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "Eight triangular facets."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity flow direction can be:",
+    "options": [
+      "A) Only 8 values",
+      "B) Any 0-360 degrees",
+      "C) Only 16 values",
+      "D) Only cardinal"
+    ],
+    "correct": "B",
+    "explanation": "Continuous angle from plane fitting."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity handles flow between neighbors by:",
+    "options": [
+      "A) Picking nearest",
+      "B) Splitting proportionally",
+      "C) Averaging elevations",
+      "D) Ignoring"
+    ],
+    "correct": "B",
+    "explanation": "Proportional allocation by angle."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity angle convention:",
+    "options": [
+      "A) CW from N",
+      "B) CCW from E",
+      "C) CW from E",
+      "D) CCW from N"
+    ],
+    "correct": "B",
+    "explanation": "Standard mathematical convention."
+  },
+  {
+    "type": "mcq",
+    "question": "D-inf to ArcGIS conversion:",
+    "options": [
+      "A) +90",
+      "B) 90-alpha",
+      "C) -90",
+      "D) 360-alpha"
+    ],
+    "correct": "B",
+    "explanation": "alpha_ArcGIS = 90 - alpha_Dinf."
+  },
+  {
+    "type": "mcq",
+    "question": "Facet 0 neighbors:",
+    "options": [
+      "A) N and NE",
+      "B) E and NE",
+      "C) S and SE",
+      "D) W and NW"
+    ],
+    "correct": "B",
+    "explanation": "Facet 0 = East cardinal, NE diagonal."
+  },
+  {
+    "type": "mcq",
+    "question": "Valid range for within-facet angle:",
+    "options": [
+      "A) -45 to +45",
+      "B) 0 to 90",
+      "C) 0 to 45",
+      "D) -90 to +90"
+    ],
+    "correct": "C",
+    "explanation": "Each facet spans 45 degrees."
+  },
+  {
+    "type": "mcq",
+    "question": "If alpha_1 < 0 in D-infinity:",
+    "options": [
+      "A) Set to 45",
+      "B) Clamped to 0",
+      "C) Facet discarded",
+      "D) Flow split equally"
+    ],
+    "correct": "B",
+    "explanation": "Clamped to 0 and slope recomputed along cardinal edge."
+  },
+  {
+    "type": "mcq",
+    "question": "Steepest facet in D-inf example:",
+    "options": [
+      "A) Facet 5 (0.500)",
+      "B) Facet 6 (0.517)",
+      "C) Facet 7 (0.454)",
+      "D) Facet 0 (0.400)"
+    ],
+    "correct": "B",
+    "explanation": "Facet 6 has slope 0.517."
+  },
+  {
+    "type": "mcq",
+    "question": "Global angle for facet 6 in example:",
+    "options": [
+      "A) 270.0",
+      "B) 284.9",
+      "C) 315.0",
+      "D) 165.1"
+    ],
+    "correct": "B",
+    "explanation": "270 + 14.9 = 284.9 degrees."
+  },
+  {
+    "type": "mcq",
+    "question": "Lowest slope among three methods:",
+    "options": [
+      "A) D8",
+      "B) D-infinity",
+      "C) Derivative",
+      "D) All equal"
+    ],
+    "correct": "C",
+    "explanation": "Derivative gives 40.1% (includes upslope neighbors)."
+  },
+  {
+    "type": "mcq",
+    "question": "Best for erosion modeling:",
+    "options": [
+      "A) D8",
+      "B) D-infinity",
+      "C) Derivative (Slope)",
+      "D) Manual"
+    ],
+    "correct": "C",
+    "explanation": "Derivative method is robust for general terrain characterization."
+  },
+  {
+    "type": "mcq",
+    "question": "Standard for watershed delineation:",
+    "options": [
+      "A) Derivative",
+      "B) D8",
+      "C) D-infinity",
+      "D) Polynomial"
+    ],
+    "correct": "B",
+    "explanation": "D8's single-direction tree structure is essential."
+  },
+  {
+    "type": "mcq",
+    "question": "Best for TWI:",
+    "options": [
+      "A) D8",
+      "B) Derivative",
+      "C) D-infinity",
+      "D) Manual"
+    ],
+    "correct": "C",
+    "explanation": "D-infinity avoids D8 striping."
+  },
+  {
+    "type": "mcq",
+    "question": "Slope tool location in ArcGIS:",
+    "options": [
+      "A) Hydrology",
+      "B) Surface in Spatial Analyst",
+      "C) 3D Analyst",
+      "D) Data Management"
+    ],
+    "correct": "B",
+    "explanation": "Surface toolset of Spatial Analyst."
+  },
+  {
+    "type": "mcq",
+    "question": "Critical slope error:",
+    "options": [
+      "A) Large cell size",
+      "B) Planar on geographic coords",
+      "C) D-inf instead of D8",
+      "D) Forgetting aspect"
+    ],
+    "correct": "B",
+    "explanation": "Unit mismatch gives nonsensical results."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungarian national projection:",
+    "options": [
+      "A) WGS84",
+      "B) UTM 33N",
+      "C) EOV (EPSG:23700)",
+      "D) Mercator"
+    ],
+    "correct": "C",
+    "explanation": "EOV provides conformal mapping across Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "D-inf ArcGIS output units:",
+    "options": [
+      "A) Degrees CW from N",
+      "B) Radians CCW from E",
+      "C) Degrees CCW from E",
+      "D) Gradians"
+    ],
+    "correct": "B",
+    "explanation": "Floating-point radians, 0 to 2*pi."
+  },
+  {
+    "type": "mcq",
+    "question": "Model Builder purpose:",
+    "options": [
+      "A) 3D terrain models",
+      "B) Automate tool workflows",
+      "C) Statistical models",
+      "D) Map layouts"
+    ],
+    "correct": "B",
+    "explanation": "Visual workflow automation."
+  },
+  {
+    "type": "mcq",
+    "question": "GIS results should be verified against:",
+    "options": [
+      "A) File size",
+      "B) Color ramp",
+      "C) Hand calculations",
+      "D) Processing speed"
+    ],
+    "correct": "C",
+    "explanation": "Test against hand calculations on small datasets."
+  },
+  {
+    "type": "mcq",
+    "question": "3DEP stands for:",
+    "options": [
+      "A) 3D Elevation Processing",
+      "B) 3D Elevation Program",
+      "C) 3D Earth Projection",
+      "D) 3D Env Parameters"
+    ],
+    "correct": "B",
+    "explanation": "USGS 3D Elevation Program."
+  },
+  {
+    "type": "mcq",
+    "question": "Standard NED resolution:",
+    "options": [
+      "A) 1 m",
+      "B) 3 m",
+      "C) ~10 m",
+      "D) ~90 m"
+    ],
+    "correct": "C",
+    "explanation": "1/3 arc-second = approximately 10 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's national DEM:",
+    "options": [
+      "A) SRTM",
+      "B) DDM-5",
+      "C) Copernicus",
+      "D) NED"
+    ],
+    "correct": "B",
+    "explanation": "DDM-5 at 5 m resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 resolution:",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "5 m grid spacing."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 producer:",
+    "options": [
+      "A) NASA",
+      "B) ESA",
+      "C) Lechner",
+      "D) USGS"
+    ],
+    "correct": "C",
+    "explanation": "Lechner Knowledge Centre (formerly FOMI)."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 availability:",
+    "options": [
+      "A) Free download",
+      "B) Must be ordered",
+      "C) Free at low res",
+      "D) Classified"
+    ],
+    "correct": "B",
+    "explanation": "Ordered through Lechner Geoshop."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus DEM source mission:",
+    "options": [
+      "A) LiDAR sat",
+      "B) ASTER stereo",
+      "C) TanDEM-X",
+      "D) SRTM shuttle"
+    ],
+    "correct": "C",
+    "explanation": "TanDEM-X radar mission 2011-2015."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus EEA-10 resolution:",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "10 m for 39 European countries."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus GLO-30 resolution:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 1 km"
+    ],
+    "correct": "B",
+    "explanation": "30 m global coverage."
+  },
+  {
+    "type": "mcq",
+    "question": "SRTM year:",
+    "options": [
+      "A) 1990",
+      "B) 1995",
+      "C) 2000",
+      "D) 2010"
+    ],
+    "correct": "C",
+    "explanation": "February 2000."
+  },
+  {
+    "type": "mcq",
+    "question": "SRTM latitude range:",
+    "options": [
+      "A) 90N-90S",
+      "B) 60N-56S",
+      "C) 45N-45S",
+      "D) 80N-80S"
+    ],
+    "correct": "B",
+    "explanation": "60N to 56S."
+  },
+  {
+    "type": "mcq",
+    "question": "MERIT DEM developer:",
+    "options": [
+      "A) NASA",
+      "B) U. Tokyo",
+      "C) ESRI",
+      "D) USU"
+    ],
+    "correct": "B",
+    "explanation": "Dai Yamazaki, University of Tokyo."
+  },
+  {
+    "type": "mcq",
+    "question": "AW3D30 producer:",
+    "options": [
+      "A) NASA",
+      "B) ESA",
+      "C) JAXA",
+      "D) USGS"
+    ],
+    "correct": "C",
+    "explanation": "JAXA optical stereo imagery."
+  },
+  {
+    "type": "mcq",
+    "question": "Upper Tisza Hungarian DEM:",
+    "options": [
+      "A) SRTM",
+      "B) GLO-30",
+      "C) DDM-5",
+      "D) ASTER"
+    ],
+    "correct": "C",
+    "explanation": "DDM-5 best for Hungarian portion."
+  },
+  {
+    "type": "mcq",
+    "question": "Upper Tisza cross-border DEM:",
+    "options": [
+      "A) DDM-5",
+      "B) EEA-10",
+      "C) ASTER",
+      "D) NED"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus EEA-10 for seamless cross-border."
+  },
+  {
+    "type": "mcq",
+    "question": "Plan curvature measures:",
+    "options": [
+      "A) Slope along flow",
+      "B) Aspect along contour",
+      "C) Total elevation",
+      "D) Channel width"
+    ],
+    "correct": "B",
+    "explanation": "Rate of change of aspect along contour."
+  },
+  {
+    "type": "mcq",
+    "question": "Profile curvature measures:",
+    "options": [
+      "A) Slope along flow",
+      "B) Aspect along contour",
+      "C) Channel width",
+      "D) Bed elevation"
+    ],
+    "correct": "A",
+    "explanation": "Rate of change of slope along flow direction."
+  },
+  {
+    "type": "mcq",
+    "question": "Positive plan curvature:",
+    "options": [
+      "A) Divergent",
+      "B) Convergent",
+      "C) Flat",
+      "D) Cliff"
+    ],
+    "correct": "B",
+    "explanation": "Convergent topography (hollow/valley)."
+  },
+  {
+    "type": "mcq",
+    "question": "TWI introduced year:",
+    "options": [
+      "A) 1965",
+      "B) 1979",
+      "C) 1984",
+      "D) 1997"
+    ],
+    "correct": "B",
+    "explanation": "Beven and Kirkby, 1979."
+  },
+  {
+    "type": "mcq",
+    "question": "High TWI indicates:",
+    "options": [
+      "A) Steep ridges",
+      "B) Saturated valley bottoms",
+      "C) No drainage",
+      "D) Desert"
+    ],
+    "correct": "B",
+    "explanation": "Large contributing area + gentle slope = likely saturated."
+  },
+  {
+    "type": "mcq",
+    "question": "SCS time of concentration depends on:",
+    "options": [
+      "A) Soil only",
+      "B) Slope along flow path",
+      "C) Impervious area",
+      "D) Water table"
+    ],
+    "correct": "B",
+    "explanation": "Slope along the longest flow path."
+  },
+  {
+    "type": "mcq",
+    "question": "0 degree slope means:",
+    "options": [
+      "A) Vertical",
+      "B) Flat",
+      "C) 45 deg",
+      "D) Max steepness"
+    ],
+    "correct": "B",
+    "explanation": "Perfectly horizontal surface."
+  },
+  {
+    "type": "mcq",
+    "question": "Derivative slope vs D8:",
+    "options": [
+      "A) Higher",
+      "B) Lower",
+      "C) Same",
+      "D) Not comparable"
+    ],
+    "correct": "B",
+    "explanation": "Derivative includes upslope neighbors, lowering the average."
+  },
+  {
+    "type": "mcq",
+    "question": "Flow Direction tool in ArcGIS:",
+    "options": [
+      "A) Surface > Slope",
+      "B) Hydrology > Flow Direction",
+      "C) 3D > Contour",
+      "D) Stats > Kriging"
+    ],
+    "correct": "B",
+    "explanation": "Hydrology toolset of Spatial Analyst."
+  },
+  {
+    "type": "mcq",
+    "question": "Geodesic method needed when:",
+    "options": [
+      "A) NoData cells",
+      "B) Geographic coords",
+      "C) Cell > 100 m",
+      "D) LiDAR DEM"
+    ],
+    "correct": "B",
+    "explanation": "Accounts for Earth's curvature."
+  },
+  {
+    "type": "mcq",
+    "question": "D-infinity is in:",
+    "options": [
+      "A) GRASS",
+      "B) SAGA",
+      "C) TauDEM",
+      "D) QGIS core"
+    ],
+    "correct": "C",
+    "explanation": "TauDEM by Tarboton's group."
+  },
+  {
+    "type": "mcq",
+    "question": "Default Flow Direction algorithm:",
+    "options": [
+      "A) D-infinity",
+      "B) MFD",
+      "C) D8",
+      "D) D4"
+    ],
+    "correct": "C",
+    "explanation": "D8 is the default."
+  },
+  {
+    "type": "mcq",
+    "question": "HD72-ETRS89 transformation:",
+    "options": [
+      "A) 3-param",
+      "B) 7-param Helmert",
+      "C) Simple shift",
+      "D) None needed"
+    ],
+    "correct": "B",
+    "explanation": "7-parameter Helmert (EPSG:1449)."
+  },
+  {
+    "type": "mcq",
+    "question": "ETRS89-LAEA for:",
+    "options": [
+      "A) US",
+      "B) Europe",
+      "C) Global",
+      "D) Hungary only"
+    ],
+    "correct": "B",
+    "explanation": "Standard European equal-area projection."
+  },
+  {
+    "type": "mcq",
+    "question": "Aspect 270 deg means facing:",
+    "options": [
+      "A) North",
+      "B) East",
+      "C) South",
+      "D) West"
+    ],
+    "correct": "D",
+    "explanation": "270 CW from N = west."
+  },
+  {
+    "type": "mcq",
+    "question": "Percent rise formula:",
+    "options": [
+      "A) arctan(S)*180/pi",
+      "B) S*100",
+      "C) S^2*100",
+      "D) sqrt(S)*100"
+    ],
+    "correct": "B",
+    "explanation": "Decimal slope times 100."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 flat accuracy:",
+    "options": [
+      "A) < 10 m",
+      "B) < 5 m",
+      "C) < 1 m",
+      "D) < 0.1 m"
+    ],
+    "correct": "C",
+    "explanation": "Better than 1 m in flat terrain."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus LE90:",
+    "options": [
+      "A) < 4 m",
+      "B) < 10 m",
+      "C) = 1 m",
+      "D) < 0.5 m"
+    ],
+    "correct": "A",
+    "explanation": "Less than 4 m globally."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Flow Direction options:",
+    "options": [
+      "A) D4,D8,D16",
+      "B) D8,D-inf,MFD",
+      "C) D8,D-inf,D4",
+      "D) Steepest,Avg,Random"
+    ],
+    "correct": "B",
+    "explanation": "Three options: D8, D-Infinity, MFD."
+  },
+  {
+    "type": "mcq",
+    "question": "Kekes peak elevation:",
+    "options": [
+      "A) 514 m",
+      "B) 1014 m",
+      "C) 2014 m",
+      "D) 3014 m"
+    ],
+    "correct": "B",
+    "explanation": "1,014 m in Matra Mountains."
+  },
+  {
+    "type": "mcq",
+    "question": "ASTER GDEM superseded by:",
+    "options": [
+      "A) SRTM",
+      "B) Copernicus and AW3D30",
+      "C) DDM-5",
+      "D) NED"
+    ],
+    "correct": "B",
+    "explanation": "Better accuracy from newer products."
+  },
+  {
+    "type": "mcq",
+    "question": "Alfold typical slope:",
+    "options": [
+      "A) > 10%",
+      "B) 1-5%",
+      "C) < 1%",
+      "D) = 0%"
+    ],
+    "correct": "C",
+    "explanation": "Less than 1% on the Great Plain."
+  },
+  {
+    "type": "true_false",
+    "question": "Slope is the rate of change of elevation with respect to horizontal distance.",
+    "correct": true,
+    "explanation": "Standard definition of slope."
+  },
+  {
+    "type": "true_false",
+    "question": "Manning's velocity is proportional to the cube root of slope.",
+    "correct": false,
+    "explanation": "Proportional to square root of slope."
+  },
+  {
+    "type": "true_false",
+    "question": "Doubling slope roughly quadruples erosion in the USLE.",
+    "correct": true,
+    "explanation": "Erosion increases as approximately slope squared."
+  },
+  {
+    "type": "true_false",
+    "question": "The gradient vector points toward steepest descent.",
+    "correct": false,
+    "explanation": "Gradient = steepest ascent; aspect = descent."
+  },
+  {
+    "type": "true_false",
+    "question": "A 100% slope equals 45 degrees.",
+    "correct": true,
+    "explanation": "arctan(1.0) = 45 degrees."
+  },
+  {
+    "type": "true_false",
+    "question": "Percent slope and degrees are linearly related.",
+    "correct": false,
+    "explanation": "Related through the nonlinear arctangent function."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS measures aspect counterclockwise from east.",
+    "correct": false,
+    "explanation": "Clockwise from north."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS assigns -1 to flat area aspect.",
+    "correct": true,
+    "explanation": "Special flag for no aspect."
+  },
+  {
+    "type": "true_false",
+    "question": "South-facing Northern Hemisphere slopes get less solar radiation.",
+    "correct": false,
+    "explanation": "They get more."
+  },
+  {
+    "type": "true_false",
+    "question": "The derivative method uses the Sobel operator.",
+    "correct": true,
+    "explanation": "1-2-1 weighting = Sobel."
+  },
+  {
+    "type": "true_false",
+    "question": "The dz/dx denominator is 6 delta.",
+    "correct": false,
+    "explanation": "It is 8 delta."
+  },
+  {
+    "type": "true_false",
+    "question": "The derivative uses only downslope neighbors.",
+    "correct": false,
+    "explanation": "Uses all eight neighbors."
+  },
+  {
+    "type": "true_false",
+    "question": "Edge cells get no-data in derivative method.",
+    "correct": true,
+    "explanation": "Incomplete 3x3 neighborhood."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 was published by Tarboton in 1997.",
+    "correct": false,
+    "explanation": "That was D-infinity. D8 is O'Callaghan and Mark, 1984."
+  },
+  {
+    "type": "true_false",
+    "question": "Diagonal distance = delta * sqrt(2).",
+    "correct": true,
+    "explanation": "Diagonal of a square."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 routes flow to multiple neighbors.",
+    "correct": false,
+    "explanation": "Exactly one neighbor."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 east = 1.",
+    "correct": true,
+    "explanation": "Least significant bit."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 south = 8.",
+    "correct": false,
+    "explanation": "South = 4. SW = 8."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 uses powers of 2 for bitwise efficiency.",
+    "correct": true,
+    "explanation": "Each direction is one bit."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 flow is determined by lowest elevation neighbor.",
+    "correct": false,
+    "explanation": "Determined by steepest slope (accounts for distance)."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS drop raster has a sqrt(2) bug.",
+    "correct": true,
+    "explanation": "Approximates sqrt(2) as 1.5."
+  },
+  {
+    "type": "true_false",
+    "question": "The sqrt(2) bug affects flow direction assignments.",
+    "correct": false,
+    "explanation": "Only drop values; directions use correct sqrt(2)."
+  },
+  {
+    "type": "true_false",
+    "question": "Max D8 angular error is 45 degrees.",
+    "correct": false,
+    "explanation": "22.5 degrees (half the spacing)."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity was published in 1997.",
+    "correct": true,
+    "explanation": "By Tarboton in Water Resources Research."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity uses 6 facets.",
+    "correct": false,
+    "explanation": "8 facets."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity splits flow proportionally.",
+    "correct": true,
+    "explanation": "Based on angular distance."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity measures angles CW from north.",
+    "correct": false,
+    "explanation": "CCW from east."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity degrades to D8 at facet boundaries.",
+    "correct": true,
+    "explanation": "Clamped angles equal D8 behavior."
+  },
+  {
+    "type": "true_false",
+    "question": "Derivative gives highest slope in the test grid.",
+    "correct": false,
+    "explanation": "Lowest (40.1%). D-inf gives 51.7%."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity gives smoother contributing area than D8.",
+    "correct": true,
+    "explanation": "Avoids D8 striping."
+  },
+  {
+    "type": "true_false",
+    "question": "One method is always best for all applications.",
+    "correct": false,
+    "explanation": "They answer different questions; complementary."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 is 5 m resolution.",
+    "correct": true,
+    "explanation": "5 m grid spacing."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 is free to download.",
+    "correct": false,
+    "explanation": "Must be ordered through Lechner."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus DEM comes from SRTM.",
+    "correct": false,
+    "explanation": "From TanDEM-X (2011-2015)."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM acquired data in Feb 2000.",
+    "correct": true,
+    "explanation": "11-day Shuttle mission."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM covers pole to pole.",
+    "correct": false,
+    "explanation": "60N to 56S only."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus GLO-30 has better accuracy than SRTM.",
+    "correct": true,
+    "explanation": "LE90 <4m vs 6-10m."
+  },
+  {
+    "type": "true_false",
+    "question": "MERIT DEM is 30 m resolution.",
+    "correct": false,
+    "explanation": "90 m resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "AW3D30 is from radar data.",
+    "correct": false,
+    "explanation": "Optical stereo imagery."
+  },
+  {
+    "type": "true_false",
+    "question": "TWI formula is ln(a*tan beta).",
+    "correct": false,
+    "explanation": "TWI = ln(a / tan beta)."
+  },
+  {
+    "type": "true_false",
+    "question": "Plan curvature shows convergent/divergent topography.",
+    "correct": true,
+    "explanation": "Positive = convergent, negative = divergent."
+  },
+  {
+    "type": "true_false",
+    "question": "Profile curvature measures aspect change along contours.",
+    "correct": false,
+    "explanation": "That is plan curvature."
+  },
+  {
+    "type": "true_false",
+    "question": "Curvature tool uses same 3x3 neighborhood as Slope.",
+    "correct": true,
+    "explanation": "Both use 3x3 neighborhoods."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 produces a tree structure.",
+    "correct": true,
+    "explanation": "One direction per cell = unambiguous tree."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity is an ArcGIS Flow Direction option.",
+    "correct": true,
+    "explanation": "Available alongside D8 and MFD."
+  },
+  {
+    "type": "true_false",
+    "question": "TauDEM is commercial.",
+    "correct": false,
+    "explanation": "Free, open-source."
+  },
+  {
+    "type": "true_false",
+    "question": "Planar slope works on geographic coordinates.",
+    "correct": false,
+    "explanation": "Gives nonsensical results; need geodesic method."
+  },
+  {
+    "type": "true_false",
+    "question": "EOV (EPSG:23700) is Hungary's projection.",
+    "correct": true,
+    "explanation": "National conformal projection."
+  },
+  {
+    "type": "true_false",
+    "question": "Sobel only differentiates, no smoothing.",
+    "correct": false,
+    "explanation": "Combines smoothing and differentiation."
+  },
+  {
+    "type": "true_false",
+    "question": "Aspect determines surface water flow direction.",
+    "correct": true,
+    "explanation": "Direction of steepest descent = flow direction."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 is preferred for TWI.",
+    "correct": false,
+    "explanation": "D-infinity is preferred."
+  },
+  {
+    "type": "true_false",
+    "question": "Positive dz/dx = terrain rises eastward.",
+    "correct": true,
+    "explanation": "x points east."
+  },
+  {
+    "type": "true_false",
+    "question": "atan2 handles all four quadrants.",
+    "correct": true,
+    "explanation": "Returns correct full-range angle."
+  },
+  {
+    "type": "true_false",
+    "question": "Nearest neighbor is best for DEM reprojection.",
+    "correct": false,
+    "explanation": "Creates striping artifacts; use bilinear."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 encoding starts from north clockwise.",
+    "correct": false,
+    "explanation": "East, counterclockwise."
+  },
+  {
+    "type": "true_false",
+    "question": "Derivative method is more noise-sensitive than D8.",
+    "correct": false,
+    "explanation": "Less sensitive due to Sobel smoothing."
+  },
+  {
+    "type": "true_false",
+    "question": "D-inf dz/dx = (z0-z1)/delta.",
+    "correct": true,
+    "explanation": "Center to cardinal neighbor slope."
+  },
+  {
+    "type": "true_false",
+    "question": "EEA-10 covers only 10 countries.",
+    "correct": false,
+    "explanation": "39 European countries."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus GLO-30 replaces SRTM for most new projects.",
+    "correct": true,
+    "explanation": "Better accuracy and more recent data."
+  },
+  {
+    "type": "true_false",
+    "question": "Flat terrain needs coarser DEMs.",
+    "correct": false,
+    "explanation": "Needs high-resolution to resolve subtle gradients."
+  },
+  {
+    "type": "true_false",
+    "question": "Model Builder exports to Python.",
+    "correct": true,
+    "explanation": "Can export models as Python scripts."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc ASCII Grid has a standard header.",
+    "correct": true,
+    "explanation": "ncols, nrows, xllcorner, yllcorner, cellsize, NODATA."
+  },
+  {
+    "type": "true_false",
+    "question": "Software slope differences always mean bugs.",
+    "correct": false,
+    "explanation": "May reflect different algorithms."
+  },
+  {
+    "type": "true_false",
+    "question": "Alfold elevation is 80-100 m.",
+    "correct": true,
+    "explanation": "Great Plain elevation range."
+  },
+  {
+    "type": "true_false",
+    "question": "Carpathians don't affect Tisza flooding.",
+    "correct": false,
+    "explanation": "Snow melt differences directly affect flood timing."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity is always at least as good as D8.",
+    "correct": true,
+    "explanation": "Degrades gracefully to D8 at boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "Fill must run before Flow Direction.",
+    "correct": true,
+    "explanation": "Removes pits for continuous drainage."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 comes from LiDAR.",
+    "correct": false,
+    "explanation": "From contour lines and photogrammetry."
+  },
+  {
+    "type": "true_false",
+    "question": "Geodesic slope handles lat/lon correctly.",
+    "correct": true,
+    "explanation": "Accounts for Earth's curvature."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 represents divergent flow on ridges.",
+    "correct": false,
+    "explanation": "Forces all flow to one neighbor."
+  },
+  {
+    "type": "true_false",
+    "question": "Rational Method uses slope for travel time.",
+    "correct": true,
+    "explanation": "Time of concentration depends on slope."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 + Copernicus requires coordinate transformation.",
+    "correct": true,
+    "explanation": "Different coordinate systems."
+  },
+  {
+    "type": "true_false",
+    "question": "Slope has no effect on infiltration.",
+    "correct": false,
+    "explanation": "Affects contact time between water and soil."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM is a bare-earth model.",
+    "correct": false,
+    "explanation": "Digital surface model including canopy and buildings."
+  },
+  {
+    "type": "true_false",
+    "question": "Derivative weights middle row equally with outer rows.",
+    "correct": false,
+    "explanation": "Middle gets weight 2, outer get 1 (1:2:1)."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 northwest = 32.",
+    "correct": true,
+    "explanation": "NW = 32 in encoding."
+  },
+  {
+    "type": "true_false",
+    "question": "DDM-5 has been updated since 2000.",
+    "correct": true,
+    "explanation": "Updates in 2005, 2015, 2022."
+  },
+  {
+    "type": "true_false",
+    "question": "Aspect 90 deg = north-facing.",
+    "correct": false,
+    "explanation": "90 CW from north = east-facing."
+  },
+  {
+    "type": "true_false",
+    "question": "MERIT removes tree height bias.",
+    "correct": true,
+    "explanation": "Among four error types removed."
+  },
+  {
+    "type": "true_false",
+    "question": "Lechner was formerly FOMI.",
+    "correct": true,
+    "explanation": "Stated in chapter."
+  },
+  {
+    "type": "true_false",
+    "question": "Flow accumulation counts upstream cells.",
+    "correct": true,
+    "explanation": "Number of upstream cells draining through each cell."
+  },
+  {
+    "type": "true_false",
+    "question": "UTM DEM with planar method is correct.",
+    "correct": true,
+    "explanation": "UTM is metric; planar works."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity is cheaper than D8.",
+    "correct": false,
+    "explanation": "D-inf has moderate cost; D8 is very low."
+  },
+  {
+    "type": "true_false",
+    "question": "A project may use all three slope methods.",
+    "correct": true,
+    "explanation": "Different methods for different purposes."
+  },
+  {
+    "type": "true_false",
+    "question": "1m LiDAR captures stream channels.",
+    "correct": true,
+    "explanation": "Extraordinary terrain detail."
+  },
+  {
+    "type": "true_false",
+    "question": "GLO-90 is 90 m.",
+    "correct": true,
+    "explanation": "90 m global coverage."
+  },
+  {
+    "type": "true_false",
+    "question": "Derivative and D-inf give same aspect.",
+    "correct": false,
+    "explanation": "145.2 vs ~165.1 degrees."
+  },
+  {
+    "type": "true_false",
+    "question": "D-inf facets go CW from east.",
+    "correct": false,
+    "explanation": "CCW from east."
+  },
+  {
+    "type": "true_false",
+    "question": "Copernicus is on AWS and GEE.",
+    "correct": true,
+    "explanation": "Multiple cloud platforms."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Slope is the _____ of the gradient vector.",
+    "correct": "magnitude",
+    "explanation": "Slope magnitude = length of gradient vector."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TWI = ln(a / tan _____)",
+    "correct": "beta",
+    "explanation": "beta is local slope angle."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Aspect is the direction of steepest _____.",
+    "correct": "descent",
+    "explanation": "Downslope direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS assigns _____ to flat aspect.",
+    "correct": "-1",
+    "explanation": "No-aspect flag."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 1-2-1 weighting = _____ operator.",
+    "correct": "Sobel",
+    "explanation": "Edge detection filter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "dz/dx denominator is _____.",
+    "correct": "8 delta",
+    "explanation": "Derived from 1-2-1 weighting across 3 rows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8: O'Callaghan and Mark, _____.",
+    "correct": "1984",
+    "explanation": "Foundational D8 paper."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Diagonal distance = delta * _____.",
+    "correct": "sqrt(2)",
+    "explanation": "Square diagonal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 uses powers of _____.",
+    "correct": "2",
+    "explanation": "1,2,4,8,16,32,64,128."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 value 64 = _____ direction.",
+    "correct": "north",
+    "explanation": "North in encoding."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity by _____, 1997.",
+    "correct": "Tarboton",
+    "explanation": "Water Resources Research."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity has _____ facets.",
+    "correct": "eight",
+    "explanation": "One per neighbor pair."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-inf angles: CCW from _____.",
+    "correct": "east",
+    "explanation": "Mathematical convention."
+  },
+  {
+    "type": "fill_blank",
+    "question": "alpha_ArcGIS = _____ - alpha_Dinf.",
+    "correct": "90",
+    "explanation": "Convention conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "If alpha_1 < 0: _____ to 0.",
+    "correct": "clamped",
+    "explanation": "Boundary condition."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's DEM: _____.",
+    "correct": "DDM-5",
+    "explanation": "Digitalis Domborzatmodell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 by _____ Knowledge Centre.",
+    "correct": "Lechner",
+    "explanation": "Formerly FOMI."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 in _____ (EPSG:23700).",
+    "correct": "EOV",
+    "explanation": "Hungarian projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus from _____ mission.",
+    "correct": "TanDEM-X",
+    "explanation": "2011-2015 radar."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM: February _____.",
+    "correct": "2000",
+    "explanation": "Shuttle mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT: University of _____.",
+    "correct": "Tokyo",
+    "explanation": "Dai Yamazaki."
+  },
+  {
+    "type": "fill_blank",
+    "question": "AW3D30 by _____.",
+    "correct": "JAXA",
+    "explanation": "Japan Aerospace Exploration Agency."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TWI: Beven and Kirkby, _____.",
+    "correct": "1979",
+    "explanation": "TOPMODEL framework."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ curvature: aspect along contours.",
+    "correct": "Plan",
+    "explanation": "Convergent vs divergent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ curvature: slope along flow.",
+    "correct": "Profile",
+    "explanation": "Concave vs convex."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Three methods: derivative, D8, _____.",
+    "correct": "D-infinity",
+    "explanation": "The three slope methods in Ch 7."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Slope tool in _____ toolset.",
+    "correct": "Surface",
+    "explanation": "Spatial Analyst."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow Direction in _____ toolset.",
+    "correct": "Hydrology",
+    "explanation": "Spatial Analyst."
+  },
+  {
+    "type": "fill_blank",
+    "question": "European projection: ETRS89-_____.",
+    "correct": "LAEA",
+    "explanation": "EPSG:3035."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HD72-ETRS89: _____-parameter Helmert.",
+    "correct": "7",
+    "explanation": "EPSG:1449."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-inf ArcGIS output in _____.",
+    "correct": "radians",
+    "explanation": "0 to 2*pi."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS _____ Builder automates workflows.",
+    "correct": "Model",
+    "explanation": "Visual programming."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASCII to _____ imports test DEMs.",
+    "correct": "Raster",
+    "explanation": "ArcGIS tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "S = sqrt[(dz/dx)^2 + (_____)^2].",
+    "correct": "dz/dy",
+    "explanation": "Both partial derivatives."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Example center elevation: _____ m.",
+    "correct": "67",
+    "explanation": "E = 67."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Example cell size: _____ m.",
+    "correct": "30",
+    "explanation": "delta = 30."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Derivative slope: _____%.",
+    "correct": "40.1",
+    "explanation": "0.401 = 40.1%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 steepest slope: _____.",
+    "correct": "0.500",
+    "explanation": "To H (South)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Near-vertical slopes approach _____ percent.",
+    "correct": "infinity",
+    "explanation": "tan(90) = infinity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 allows _____ directions.",
+    "correct": "eight",
+    "explanation": "4 cardinal + 4 diagonal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Drop raster: sqrt(2) approximated as _____.",
+    "correct": "1.5",
+    "explanation": "~6% error."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED from USGS _____ Map.",
+    "correct": "National",
+    "explanation": "apps.nationalmap.gov."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 flat accuracy < _____ m.",
+    "correct": "1",
+    "explanation": "Sub-meter on flat terrain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus LE90 < _____ m.",
+    "correct": "4",
+    "explanation": "Global accuracy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM: 60N to _____S.",
+    "correct": "56",
+    "explanation": "~80% land coverage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Alfold slopes < _____%.",
+    "correct": "1",
+    "explanation": "Very gentle."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kekes peak: _____ m.",
+    "correct": "1,014",
+    "explanation": "Matra Mountains summit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning velocity proportional to S^_____.",
+    "correct": "1/2",
+    "explanation": "Square root of slope."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ Soil Loss Equation (USLE).",
+    "correct": "Universal",
+    "explanation": "Contains slope-length factor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TOPMODEL uses _____ wetness index.",
+    "correct": "topographic",
+    "explanation": "TWI foundation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity in _____ software.",
+    "correct": "TauDEM",
+    "explanation": "Open-source terrain analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MERIT = Multi-_____-Removed.",
+    "correct": "Error",
+    "explanation": "Improved-Terrain DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Facet 0 starts at _____.",
+    "correct": "east",
+    "explanation": "Reference angle 0 degrees."
+  },
+  {
+    "type": "fill_blank",
+    "question": "UTM Zone _____ covers Hungary.",
+    "correct": "34N",
+    "explanation": "EPSG:32634."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-inf dz/dy = (z1 - _____)/delta.",
+    "correct": "z2",
+    "explanation": "Cardinal to diagonal neighbor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global angle = n * _____ + alpha_1.",
+    "correct": "45",
+    "explanation": "Degrees per facet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tisza enters Hungary from _____.",
+    "correct": "Ukraine",
+    "explanation": "Near Tiszabecs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Degrees = arctan(S) * _____ / pi.",
+    "correct": "180",
+    "explanation": "Radian-to-degree conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8: exactly _____ direction per cell.",
+    "correct": "one",
+    "explanation": "Single flow direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "True flow: any angle 0-_____ degrees.",
+    "correct": "360",
+    "explanation": "Continuous direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 first produced: _____.",
+    "correct": "2000",
+    "explanation": "Updated 2005,2015,2022."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus data: 2011-_____.",
+    "correct": "2015",
+    "explanation": "TanDEM-X acquisition."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM with buildings = digital _____ model.",
+    "correct": "surface",
+    "explanation": "DSM vs DTM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kinematic wave: velocity proportional to S^_____.",
+    "correct": "1/2",
+    "explanation": "Manning's equation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Facet 6 within-facet angle: _____deg.",
+    "correct": "14.9",
+    "explanation": "arctan(0.133/0.500)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Flow Direction: D8, D-Infinity, _____.",
+    "correct": "MFD",
+    "explanation": "Multiple Flow Direction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-inf output is _____-point raster.",
+    "correct": "floating",
+    "explanation": "Continuous values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Great Plain = _____.",
+    "correct": "Alfold",
+    "explanation": "Hungarian name."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell A is top-_____ corner.",
+    "correct": "left",
+    "explanation": "Northwest."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 west = _____.",
+    "correct": "16",
+    "explanation": "Encoding value."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DEM reprojection: use _____ interpolation.",
+    "correct": "bilinear",
+    "explanation": "Not nearest neighbor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Center cell = _____ in A-I labeling.",
+    "correct": "E",
+    "explanation": "Skipped in neighbor labeling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus at _____.copernicus.eu.",
+    "correct": "dataspace",
+    "explanation": "Distribution portal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "No downslope neighbor = _____.",
+    "correct": "pit",
+    "explanation": "Also called sink."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ independent dz/dx estimates from 3x3.",
+    "correct": "Three",
+    "explanation": "Top, middle, bottom rows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 starts from _____ (value 1).",
+    "correct": "east",
+    "explanation": "CCW encoding."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 hilly accuracy: 2-_____ m.",
+    "correct": "3",
+    "explanation": "Vertical accuracy range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASTER GDEM: METI and _____.",
+    "correct": "NASA",
+    "explanation": "Joint product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-inf in ArcGIS _____ Direction tool.",
+    "correct": "Flow",
+    "explanation": "Algorithm option."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sobel combines smoothing and _____.",
+    "correct": "differentiation",
+    "explanation": "Perpendicular operations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WMO standard gauge: _____ cm squared.",
+    "correct": "200",
+    "explanation": "Standard orifice area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ row gets weight 2 in Sobel.",
+    "correct": "middle",
+    "explanation": "Passes through center cell."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why slope is the most fundamental DEM derivative for hydrology.",
+    "correct": "Slope controls runoff velocity (Manning's equation), erosion rates (USLE), infiltration opportunity time, and soil moisture distribution (TWI). Every hydrological model needs slope to partition rainfall into runoff and infiltration and predict water travel times.",
+    "explanation": "Slope controls nearly everything in hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "Compare derivative and D8 methods in their use of neighbors.",
+    "correct": "Derivative uses all 8 neighbors with Sobel weighting to fit a smooth surface, while D8 uses only downslope neighbors selecting the steepest descent. Derivative characterizes average terrain steepness; D8 identifies where water flows.",
+    "explanation": "Fundamentally different questions about terrain."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Sobel operator and its advantage.",
+    "correct": "Sobel applies 1-2-1 weighting across three parallel differences, combining smoothing and differentiation. Simple centered differences use only 2 cells and are noise-sensitive. Sobel incorporates all 8 neighbors, reducing DEM noise impact.",
+    "explanation": "Combined smoothing-differentiation filter."
+  },
+  {
+    "type": "essay",
+    "question": "Why does D8 sometimes assign flow away from the lowest-elevation neighbor?",
+    "correct": "D8 uses slope (drop/distance), not just elevation. In the example, cell I (SE, elev 48, drop 19) has slope 0.448 due to diagonal distance 42.43m, while cell H (S, drop 15) has slope 0.500 at cardinal distance 30m. Steeper rate of descent wins.",
+    "explanation": "Distance correction is essential for correct routing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain D-infinity's innovation over D8.",
+    "correct": "D-infinity fits planes to triangular facets allowing any continuous flow angle, not just 45-degree multiples. It splits flow proportionally between two neighbors, representing divergent flow. This eliminates striping and produces smoother contributing areas for TWI.",
+    "explanation": "Removes directional quantization and single-direction constraints."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the ArcGIS sqrt(2) bug.",
+    "correct": "The drop raster approximates sqrt(2) as 1.5, giving ~6% error for diagonal slopes. Flow directions are unaffected. This shows why software verification against hand calculations is essential, and why independent slope computation may be needed.",
+    "explanation": "Known bug since 2014, still present."
+  },
+  {
+    "type": "essay",
+    "question": "Compare DDM-5 and Copernicus GLO-30 for Hungarian watersheds.",
+    "correct": "DDM-5: 5m resolution, <1m accuracy, EOV coords, must be ordered, Hungary only. GLO-30: 30m, <4m accuracy, free, global. DDM-5 is essential for flat Alfold (subtle gradients) but stops at borders. GLO-30 provides cross-border coverage.",
+    "explanation": "Trade-offs between resolution, accuracy, and coverage."
+  },
+  {
+    "type": "essay",
+    "question": "Why is coordinate system critical for slope?",
+    "correct": "Slope requires compatible units. Geographic coordinates have cells in degrees but elevation in meters, making planar slope nonsensical. Solutions: reproject to metric (EOV, UTM) or use geodesic method.",
+    "explanation": "The critical error to avoid."
+  },
+  {
+    "type": "essay",
+    "question": "Describe TWI and why D-infinity is preferred for it.",
+    "correct": "TWI = ln(a/tan beta) predicts soil moisture. High values = saturated areas. D-infinity gives smoother contributing area patterns avoiding D8's directional striping that creates physically meaningless TWI patterns.",
+    "explanation": "D-infinity strongly preferred for TWI."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three slope representations.",
+    "correct": "(1) Gradient vector (dz/dx, dz/dy). (2) Cartesian components Sx, Sy. (3) Polar: magnitude S=sqrt(Sx^2+Sy^2) and direction alpha. These are equivalent coordinate transformations.",
+    "explanation": "Any can be derived from any other."
+  },
+  {
+    "type": "essay",
+    "question": "Compare ArcGIS and D-infinity angle conventions.",
+    "correct": "ArcGIS: CW from north (N=0, E=90, S=180, W=270). D-infinity: CCW from east (E=0, N=90, W=180, S=270). Convert: alpha_ArcGIS = 90 - alpha_Dinf.",
+    "explanation": "Persistent source of confusion."
+  },
+  {
+    "type": "essay",
+    "question": "Why verify GIS results against hand calculations?",
+    "correct": "Software may have bugs (sqrt(2) issue), different conventions, or variant algorithms. Hand verification ensures understanding, reveals bugs, and creates reference datasets. Essential when switching platforms.",
+    "explanation": "Trust, but verify."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the three-tier DEM framework for Hungary.",
+    "correct": "National: DDM-5 (5m, ordered). Continental: Copernicus EEA-10 (10m, 39 countries). Global: GLO-30/SRTM (30m, free). National is best within borders; continental for cross-border Tisza analysis.",
+    "explanation": "Check national, continental, then global."
+  },
+  {
+    "type": "essay",
+    "question": "Why is D8 standard for watershed delineation?",
+    "correct": "D8 assigns one direction per cell creating an unambiguous tree structure. This is essential for flow accumulation (counting upstream cells) and watershed delineation (tracing upstream paths). D-infinity's flow splitting complicates tree-based operations.",
+    "explanation": "Tree structure is a feature, not a bug."
+  },
+  {
+    "type": "essay",
+    "question": "How does aspect control snow dynamics in mountains?",
+    "correct": "South-facing slopes get more radiation, losing snowpack weeks before north-facing slopes. In the Carpathians, this creates multi-peaked spring melt affecting Tisza flood timing.",
+    "explanation": "Aspect-driven differences dominate spring runoff."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the ArcGIS slope/aspect/flow direction workflow.",
+    "correct": "Ensure DEM is projected with matching units. Run Fill. Compute Slope/Aspect (Surface) and Flow Direction (Hydrology). Model Builder automates: DEM -> Fill -> parallel Slope, Aspect, D8, D-inf -> Flow Accumulation.",
+    "explanation": "Standard terrain analysis pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "Why is DDM-5 essential for the Alfold?",
+    "correct": "Alfold slopes <1% with 10cm differences over 500m determining drainage. DDM-5's 5m resolution and sub-meter accuracy detects these. SRTM at 30m with 6-10m accuracy cannot; noise exceeds actual gradients.",
+    "explanation": "Coarser DEMs produce random drainage on flat terrain."
+  },
+  {
+    "type": "essay",
+    "question": "Explain D-infinity boundary condition handling.",
+    "correct": "Each facet spans 0-45 deg. If alpha_1 < 0: clamped to 0, slope = D8 to cardinal. If > 45: clamped to 45, slope = D8 to diagonal. This graceful degradation means D-inf >= D8 accuracy always.",
+    "explanation": "Never worse than D8."
+  },
+  {
+    "type": "essay",
+    "question": "Compare slope values from the three methods.",
+    "correct": "Derivative: 40.1%, D8: 50.0%, D-inf: 51.7%. Derivative is lowest (includes upslope cells). D-inf is slightly higher than D8 because the facet plane captures combined steepness more accurately.",
+    "explanation": "Table 7.4 results."
+  },
+  {
+    "type": "essay",
+    "question": "Explain D8 power-of-2 encoding significance.",
+    "correct": "Each direction = one bit in 8-bit binary: E=1, SE=2, S=4, SW=8, W=16, NW=32, N=64, NE=128. Enables efficient bitwise testing. Though D8 only sets one bit per cell, the scheme supports potential multi-direction use.",
+    "explanation": "Computationally efficient design."
+  },
+  {
+    "type": "essay",
+    "question": "Describe plan curvature and its significance.",
+    "correct": "Plan curvature = aspect change along contours. Positive = convergent (hollows) concentrating flow and erosion. Negative = divergent (ridges) dispersing flow. Used in landslide mapping and agriculture.",
+    "explanation": "Directly affects flow concentration."
+  },
+  {
+    "type": "essay",
+    "question": "Why use multiple slope methods in one project?",
+    "correct": "Derivative for terrain visualization (robust, noise-resistant). D8 for watershed delineation (tree structure). D-infinity for TWI and hillslope hydrology (smooth contributing area). They complement each other.",
+    "explanation": "Different methods for different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss D8 limitations on divergent hillslopes.",
+    "correct": "On ridges, water should diverge to both sides. D8 forces all flow to one neighbor, creating unrealistic convergence on one side. This produces artificial parallel flow lines. D-infinity's proportional splitting resolves this.",
+    "explanation": "D8 cannot represent flow divergence."
+  },
+  {
+    "type": "essay",
+    "question": "Explain MERIT DEM's advantages for large-scale modeling.",
+    "correct": "MERIT removes stripe noise, bias, speckle, and tree height bias. Despite 90m resolution, cleaner errors produce more reliable flow directions than raw 30m products, especially in flat terrain. Less conditioning needed.",
+    "explanation": "Error removal > resolution for large-scale work."
+  },
+  {
+    "type": "essay",
+    "question": "Why buffer the DEM beyond the study area?",
+    "correct": "Derivative method needs complete 3x3 neighborhoods. Edge cells get no-data. DEM extending one cell beyond the boundary ensures complete coverage. Compute on larger DEM, then clip results. Trivial margin (30m) but easy to forget.",
+    "explanation": "Prevents loss of edge information."
+  },
+  {
+    "type": "essay",
+    "question": "Describe slope's effect on infiltration.",
+    "correct": "Steep slopes move water quickly, reducing soil contact time and infiltration. Gentle slopes allow ponding and slow movement, increasing infiltration. Distributed models need slope at each cell for correct rainfall partitioning.",
+    "explanation": "Indirect effect through contact time."
+  },
+  {
+    "type": "essay",
+    "question": "How does Model Builder help terrain analysis?",
+    "correct": "Visually chains tools (Fill, Slope, Aspect, FlowDir, FlowAcc) for automatic execution. Input DEM is parameterized. Saves, exports to Python, enables batch processing. Ensures consistency across multiple DEMs.",
+    "explanation": "Automation for reproducibility and efficiency."
+  },
+  {
+    "type": "essay",
+    "question": "DEM selection recommendations.",
+    "correct": "(1) National DEM first (DDM-5, NED). (2) Continental (EEA-10). (3) Global (GLO-30 > SRTM). (4) LiDAR for detail. (5) Verify coordinate system and datum. National best within borders; cross-border needs continental/global.",
+    "explanation": "Five-step decision workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Carpathian Mountains' effect on Hungarian hydrology.",
+    "correct": "Snow retention differences between north/south slopes create multi-peaked spring melt affecting Tisza floods. Orographic precipitation: 1200mm on ridges vs 500mm on Alfold. Cross-border data essential for flood forecasting.",
+    "explanation": "Complex topography drives precipitation and melt patterns."
+  },
+  {
+    "type": "essay",
+    "question": "Why document slope method in model metadata?",
+    "correct": "Methods give different values (40.1% vs 50.0% vs 51.7%). A model calibrated with one method fails with another. Undocumented changes silently degrade performance. Record slope method, DEM, and coordinate system.",
+    "explanation": "Subtle but real issue for model transfers."
+  },
+  {
+    "type": "essay",
+    "question": "Three slope unit representations.",
+    "correct": "(1) Decimal fraction: rise/run. (2) Percent: decimal x 100. (3) Degrees: arctan(S) x 180/pi. Nonlinearly related: 100% = 45 deg. Near-vertical approaches infinity percent.",
+    "explanation": "Conversion formulas and nonlinear relationship."
+  },
+  {
+    "type": "essay",
+    "question": "Orographic effect in the Carpathian Basin.",
+    "correct": "Matra/Bukk get 700-800 mm/yr; Alfold gets 500-550 mm/yr. Modest gradient but important for agriculture and floods. Aspect determines windward/leeward, affecting precipitation and irrigation needs.",
+    "explanation": "Elevation-precipitation relationship across Hungary."
+  },
+  {
+    "type": "essay",
+    "question": "Fill tool's role and relationship to slope.",
+    "correct": "Fill removes pits for continuous drainage, prerequisite for Flow Direction. But slope/aspect should come from ORIGINAL DEM, not filled, because filling distorts terrain. Workflow: original -> Slope/Aspect; original -> Fill -> FlowDir.",
+    "explanation": "Never use filled DEM for terrain characterization."
+  },
+  {
+    "type": "essay",
+    "question": "Compare Copernicus DEM and SRTM.",
+    "correct": "Copernicus: LE90 <4m, 2011-2015, better mountain coverage, multiple platforms. SRTM: 6-10m, year 2000, established literature track record. Copernicus preferred for new projects unless backward compatibility needed.",
+    "explanation": "Copernicus is the new standard."
+  },
+  {
+    "type": "essay",
+    "question": "Why does D-inf compute dz/dy as (z1-z2)/delta?",
+    "correct": "Within each facet, the y-axis is perpendicular to center-to-cardinal direction. The cardinal (z1) and diagonal (z2) neighbors are separated by exactly delta in this y-direction, making the slope calculation straightforward.",
+    "explanation": "Elegant facet geometry."
+  },
+  {
+    "type": "essay",
+    "question": "D8 directional quantization effects on flow accumulation.",
+    "correct": "Only 8 directions causes artificial convergence along grid axes and diagonals, creating straight lines in accumulation. For TWI this is significant. For stream extraction, the discrete tree is beneficial.",
+    "explanation": "Striping is the main quantization artifact."
+  },
+  {
+    "type": "essay",
+    "question": "Importance of consistent coordinate metadata.",
+    "correct": "Global DEMs use WGS84/EGM2008; national use local systems. DDM-5 (EOV/HD72) + Copernicus (WGS84) needs 7-param Helmert. Without transformation, systematic slope errors result.",
+    "explanation": "Mixing coordinate systems corrupts results."
+  },
+  {
+    "type": "essay",
+    "question": "Slope and infiltration opportunity time.",
+    "correct": "Steep = fast downslope movement = less soil contact = less infiltration. Gentle = slow/ponding = more contact = more infiltration. Distributed models need this at each cell for runoff/recharge partitioning.",
+    "explanation": "Indirect but important relationship."
+  },
+  {
+    "type": "essay",
+    "question": "Why automate terrain workflows?",
+    "correct": "Processing many sub-catchment DEMs manually is tedious, error-prone, inconsistent. Automation ensures identical parameters, saves hours, enables Python batch processing, creates documented reproducible methodology.",
+    "explanation": "Consistency and efficiency for multi-DEM projects."
+  },
+  {
+    "type": "essay",
+    "question": "D-infinity proportional flow allocation example.",
+    "correct": "If flow direction is 10 deg from south, 35 deg from SE (sector=45): ~78% to south (35/45), ~22% to SE (10/45). This spreads flow gradually, producing smoother contributing areas.",
+    "explanation": "Angular proportioning for realistic flow."
+  },
+  {
+    "type": "mcq",
+    "question": "Which DEM data source provides the highest resolution for Hungary?",
+    "options": [
+      "A) SRTM (30 m)",
+      "B) Copernicus GLO-30 (30 m)",
+      "C) DDM-5 (5 m)",
+      "D) MERIT (90 m)"
+    ],
+    "correct": "C",
+    "explanation": "DDM-5 at 5 m is the highest resolution national DEM for Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "What does MFD stand for in ArcGIS Flow Direction?",
+    "options": [
+      "A) Maximum Flow Distribution",
+      "B) Multiple Flow Direction",
+      "C) Minimum Flow Depth",
+      "D) Multi-Facet Direction"
+    ],
+    "correct": "B",
+    "explanation": "MFD = Multiple Flow Direction, the third algorithm option."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus DEM EEA-10 covers how many European countries?",
+    "options": [
+      "A) 10",
+      "B) 27",
+      "C) 39",
+      "D) 50"
+    ],
+    "correct": "C",
+    "explanation": "39 European countries including Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "In the 3x3 grid, how many neighbors does the center cell have?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 9"
+    ],
+    "correct": "C",
+    "explanation": "Eight surrounding cells (4 cardinal + 4 diagonal)."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 flow direction to the west is encoded as:",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 16",
+      "D) 32"
+    ],
+    "correct": "C",
+    "explanation": "West = 16 in the power-of-2 encoding."
+  },
+  {
+    "type": "mcq",
+    "question": "The derivative method slope for a completely flat surface is:",
+    "options": [
+      "A) -1",
+      "B) 0",
+      "C) 1",
+      "D) Undefined"
+    ],
+    "correct": "B",
+    "explanation": "All partial derivatives are zero, so slope magnitude is zero."
+  },
+  {
+    "type": "mcq",
+    "question": "What projection is EPSG:32634?",
+    "options": [
+      "A) EOV",
+      "B) UTM Zone 34N",
+      "C) ETRS89-LAEA",
+      "D) WGS84"
+    ],
+    "correct": "B",
+    "explanation": "UTM Zone 34N covering most of Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "A hillshade visualization is computed from:",
+    "options": [
+      "A) Flow accumulation",
+      "B) Slope and aspect",
+      "C) Flow direction only",
+      "D) Elevation histogram"
+    ],
+    "correct": "B",
+    "explanation": "Hillshade combines slope and aspect with a simulated light source."
+  },
+  {
+    "type": "mcq",
+    "question": "The Rational Method computes:",
+    "options": [
+      "A) Soil moisture",
+      "B) Peak discharge",
+      "C) Evapotranspiration",
+      "D) Groundwater recharge"
+    ],
+    "correct": "B",
+    "explanation": "The Rational Method estimates peak discharge."
+  },
+  {
+    "type": "mcq",
+    "question": "Which method produces integer-valued flow direction output?",
+    "options": [
+      "A) Derivative slope",
+      "B) D8",
+      "C) D-infinity",
+      "D) All produce floating-point"
+    ],
+    "correct": "B",
+    "explanation": "D8 produces integer power-of-2 values; D-infinity produces floating-point angles."
+  },
+  {
+    "type": "mcq",
+    "question": "ArcGIS Living Atlas provides NED as:",
+    "options": [
+      "A) A downloadable file only",
+      "B) An image service accessible within ArcGIS Pro",
+      "C) A printed map",
+      "D) A vector dataset"
+    ],
+    "correct": "B",
+    "explanation": "Living Atlas offers NED as image services clippable on the fly."
+  },
+  {
+    "type": "true_false",
+    "question": "The derivative method and D-infinity both output continuous angle values.",
+    "correct": true,
+    "explanation": "Both produce continuous angles unlike D8's 8 discrete values."
+  },
+  {
+    "type": "true_false",
+    "question": "D8 flow direction is always an integer value.",
+    "correct": true,
+    "explanation": "Power-of-2 integers: 1,2,4,8,16,32,64,128."
+  },
+  {
+    "type": "true_false",
+    "question": "The ArcGIS Aspect tool outputs values from -1 to 360.",
+    "correct": true,
+    "explanation": "-1 for flat areas, 0-360 for sloped areas."
+  },
+  {
+    "type": "true_false",
+    "question": "D-infinity was developed at the same university as Arc Hydro.",
+    "correct": false,
+    "explanation": "D-infinity: Utah State University. Arc Hydro: University of Texas at Austin."
+  },
+  {
+    "type": "true_false",
+    "question": "A slope of 90 degrees means a vertical cliff.",
+    "correct": true,
+    "explanation": "90 degrees = perfectly vertical surface."
+  },
+  {
+    "type": "true_false",
+    "question": "The Curvature tool in ArcGIS requires the Spatial Analyst extension.",
+    "correct": true,
+    "explanation": "Like Slope and Aspect, it's in the Surface toolset of Spatial Analyst."
+  },
+  {
+    "type": "true_false",
+    "question": "SRTM was a joint NASA mission only.",
+    "correct": false,
+    "explanation": "SRTM was a collaboration involving NASA, NGA, and international partners."
+  },
+  {
+    "type": "true_false",
+    "question": "The Green-Ampt infiltration model uses slope as an input.",
+    "correct": true,
+    "explanation": "Effective rainfall excess depends on slope through surface storage effects."
+  },
+  {
+    "type": "true_false",
+    "question": "A typical terrain workflow computes slope before filling the DEM.",
+    "correct": true,
+    "explanation": "Slope comes from the original DEM; filling is only for flow routing."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus DEM uses the EGM2008 geoid for vertical reference.",
+    "correct": true,
+    "explanation": "Global DEMs typically use EGM2008 as the vertical datum."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's terrain ranges from about 80 m to over 1000 m elevation.",
+    "correct": true,
+    "explanation": "Alfold ~80-100 m; Kekes peak 1,014 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ toolset in ArcGIS contains the Slope and Aspect tools.",
+    "correct": "Surface",
+    "explanation": "Within Spatial Analyst."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM stands for Shuttle _____ Topography Mission.",
+    "correct": "Radar",
+    "explanation": "Shuttle Radar Topography Mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In RUSLE, the slope factor amplifies soil loss _____.",
+    "correct": "nonlinearly",
+    "explanation": "Approximately as the square of slope steepness."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D-infinity proportional flow: if angle is 10 deg from south and 35 from SE, _____% goes south.",
+    "correct": "78",
+    "explanation": "35/45 = 0.78 = 78%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Slope magnitude is _____ when z, x, and y are in the same units.",
+    "correct": "dimensionless",
+    "explanation": "Ratio of same-unit quantities."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 updates occurred in 2000, 2005, 2015, and _____.",
+    "correct": "2022",
+    "explanation": "Most recent update year."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus DEM is distributed at dataspace._____.eu.",
+    "correct": "copernicus",
+    "explanation": "Main distribution portal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Method for peak discharge uses time of concentration.",
+    "correct": "Rational",
+    "explanation": "Classic peak flow estimation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DEM cell at position G in the 3x3 grid is the _____-left cell.",
+    "correct": "bottom",
+    "explanation": "G = southwest corner."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The conversion from radians to degrees multiplies by 180/_____.",
+    "correct": "pi",
+    "explanation": "Standard radian-to-degree conversion."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Pro requires the _____ Analyst extension for slope computation.",
+    "correct": "Spatial",
+    "explanation": "Spatial Analyst toolbox."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Curvature is the _____ derivative of the elevation surface.",
+    "correct": "second",
+    "explanation": "Rate of change of slope or aspect."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the D8 worked example, the D8 code for south is _____.",
+    "correct": "4",
+    "explanation": "Power-of-2 encoding value."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ River flows through the Pannonian Basin.",
+    "correct": "Danube",
+    "explanation": "Major river system of Central Europe."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8 southwest encoding value is _____.",
+    "correct": "8",
+    "explanation": "2^3 = 8."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ of the gradient vector gives slope magnitude.",
+    "correct": "length",
+    "explanation": "Same as magnitude."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 source data comes from 1:_____ scale topographic contours.",
+    "correct": "10,000",
+    "explanation": "High-resolution source maps."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ArcGIS Slope tool can output in degrees or _____ rise.",
+    "correct": "percent",
+    "explanation": "Two output unit options."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Sobel weighting scheme (1-2-1) used instead of equal weighting (1-1-1)?",
+    "correct": "The middle row passes directly through the center cell and should carry more weight. Equal weighting would give too much influence to distant rows. The 1-2-1 scheme produces a smoother estimate by combining noise reduction (smoothing) with differentiation.",
+    "explanation": "Proximity-based weighting improves accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why flow direction is determined by slope rather than elevation difference.",
+    "correct": "Diagonal neighbors are farther away (delta*sqrt(2) vs delta). A large elevation drop over a long distance may have less slope than a smaller drop over a shorter distance. Slope = drop/distance is the physically correct quantity because gravity drives water down the steepest gradient, not just toward the lowest point.",
+    "explanation": "Distance correction is essential for correct hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "What is the significance of the TWI for predicting soil moisture?",
+    "correct": "TWI = ln(a/tan beta) integrates topographic effects: areas with large upslope contributing area and gentle slopes (high TWI) accumulate water and saturate first. These locations generate saturation-excess runoff during storms. TWI maps are used in TOPMODEL, soil moisture mapping, wetland identification, and ecological modeling.",
+    "explanation": "One of the most widely used terrain indices."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why different slope methods give different numerical results for the same cell.",
+    "correct": "The derivative method averages across all 8 neighbors (including upslope) giving a lower value. D8 finds the single steepest downslope neighbor. D-infinity fits a plane to the steepest facet. Each answers a different question about the terrain, so different values are expected and correct for their respective purposes.",
+    "explanation": "Different questions produce different answers."
+  },
+  {
+    "type": "essay",
+    "question": "What are the practical implications of the D8 directional restriction?",
+    "correct": "With only 8 allowed directions at 45-degree intervals, true flow directions between them are approximated with up to 22.5 degrees error. This creates artificial parallel flow paths along grid axes and diagonals, incorrect contributing area patterns, and striped TWI maps. However, D8's tree structure is essential for watershed delineation.",
+    "explanation": "Trade-off between directional accuracy and algorithmic utility."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the DEM selection workflow recommended in the chapter.",
+    "correct": "(1) Check national DEM (DDM-5, NED). (2) Continental/regional (EEA-10 for Europe). (3) Global fallback (GLO-30 > SRTM). (4) LiDAR for detailed work. (5) Verify coordinate system and datum. National data is best within borders; cross-border analysis needs continental/global products.",
+    "explanation": "Systematic decision framework."
+  },
+  {
+    "type": "essay",
+    "question": "How does the Sobel operator compare to the Prewitt operator for slope computation?",
+    "correct": "Both use 3x3 neighborhoods. Sobel uses 1-2-1 weighting (double weight to center row), while Prewitt uses 1-1-1 (equal weights). Sobel provides better noise reduction because the center row, passing through the cell of interest, receives more influence. ArcGIS uses the Sobel approach.",
+    "explanation": "Sobel is preferred for its noise resistance."
+  },
+  {
+    "type": "essay",
+    "question": "Why is bilinear interpolation preferred over nearest neighbor for DEM reprojection?",
+    "correct": "Nearest neighbor preserves exact values but creates staircase artifacts — regular patterns of duplicate rows that corrupt slope, aspect, and flow direction. Bilinear smooths slightly but eliminates these artifacts, producing continuous surfaces. The smoothing is negligible compared to DEM noise.",
+    "explanation": "Artifact prevention outweighs slight smoothing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of flow accumulation and its relationship to slope methods.",
+    "correct": "Flow accumulation counts upstream cells draining through each cell. It requires D8 (tree structure) or D-infinity (proportional). High accumulation = streams. The choice of flow direction method affects accumulation patterns: D8 creates concentrated, sharp channels; D-infinity spreads accumulation more diffusely.",
+    "explanation": "Links slope computation to hydrological network extraction."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the relationship between DEM resolution and slope accuracy.",
+    "correct": "Higher resolution DEMs capture more terrain detail, potentially giving more accurate slopes. But they also capture noise and irrelevant features. Lower resolution smooths terrain, potentially missing important features. The optimal resolution depends on the analysis scale: 30m for catchments, 1-5m for local studies.",
+    "explanation": "Resolution must match the analysis scale."
+  },
+  {
+    "type": "essay",
+    "question": "What is the TOPMODEL framework and how does it use TWI?",
+    "correct": "TOPMODEL predicts saturated areas based on TWI: cells with TWI above a threshold generate saturation-excess runoff. As a storm progresses, the threshold drops and more cells saturate. This creates variable source areas. TWI computation quality (D-infinity preferred) directly affects model predictions.",
+    "explanation": "Variable source area hydrology based on terrain."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why slope impacts erosion nonlinearly.",
+    "correct": "The USLE slope-length factor increases erosion roughly as the square of slope. Doubling slope quadruples erosion, not doubles it. This nonlinearity means small DEM errors in slope have large effects on erosion predictions. Accurate slope computation is therefore critical for sediment yield modeling.",
+    "explanation": "Nonlinear sensitivity amplifies errors."
+  },
+  {
+    "type": "essay",
+    "question": "How do you verify ArcGIS Slope tool output against hand calculations?",
+    "correct": "Create a small test DEM (5x4 grid) with known elevations. Import as ASCII Grid. Run Slope, Aspect, and Flow Direction. Use the Identify tool to read output values. Compare against hand-computed values using the dz/dx, dz/dy formulas. Document any discrepancies.",
+    "explanation": "Systematic verification procedure."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between a DEM and a DSM?",
+    "correct": "A DEM (Digital Elevation Model) or DTM (Digital Terrain Model) represents bare-earth terrain. A DSM (Digital Surface Model) includes buildings, vegetation, and other surface features. SRTM is a DSM (includes canopy). LiDAR can produce both by classifying ground vs non-ground points.",
+    "explanation": "Important distinction for hydrological analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Carpathian Basin geographic setting relevant to hydrology.",
+    "correct": "The Pannonian Basin is surrounded by the Carpathian arc. Hungary lies at the center with the flat Alfold (80-100m). Mountains to the north (Matra, 1014m) and Carpathians in Romania/Ukraine (2000m+). Rivers flow from mountains to plains. Orographic precipitation, snow melt, and flat-terrain drainage all depend on slope and aspect.",
+    "explanation": "Geographic context for terrain analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Fill tool a prerequisite for Flow Direction but not for Slope?",
+    "correct": "Slope characterizes the terrain surface itself — pits don't prevent this. But Flow Direction traces water paths, and pits trap water, preventing routing. The original DEM is the correct input for Slope (to preserve real terrain shape); the filled DEM enables continuous flow routing.",
+    "explanation": "Different requirements for different analyses."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what happens when you run the planar slope method on a geographic DEM.",
+    "correct": "Cell dimensions are in degrees but elevation is in meters. dz/dx divides meters by degrees, producing nonsensical values. At mid-latitudes, one degree longitude (~76 km) differs from one degree latitude (~111 km), adding directional distortion. Results are completely unreliable.",
+    "explanation": "Unit mismatch produces garbage results."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of LiDAR in modern terrain analysis.",
+    "correct": "LiDAR provides 1-5 m resolution with <0.15 m vertical accuracy, capturing individual channels, roads, and buildings. Coverage expanding rapidly in Europe and US. Enables detailed flood mapping and urban hydrology. But creates more pits requiring careful conditioning. Chapter 13 covers LiDAR in detail.",
+    "explanation": "Highest-quality terrain data available."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between local, focal, zonal, and global map algebra operations?",
+    "correct": "Local: cell-by-cell (each output from same-position input). Focal: neighborhood-based (slope uses 3x3). Zonal: zone-based (mean elevation per watershed). Global: entire grid (flow accumulation uses all cells). Slope computation is focal; flow accumulation is global.",
+    "explanation": "Map algebra classification from Chapter 6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of contributing area in hydrology.",
+    "correct": "Contributing area is the total area draining to a point, computed by tracing flow paths upstream. Cells with large contributing area lie on streams. TWI uses specific contributing area (per unit contour length). D-infinity gives smoother patterns; D8 gives concentrated channels. Essential for stream definition.",
+    "explanation": "Fundamental terrain-derived quantity."
+  },
+  {
+    "type": "essay",
+    "question": "How does slope affect the timing of flood peaks?",
+    "correct": "Steeper slopes mean faster travel times (Manning's equation), shorter time of concentration, and higher, more 'flashy' peak flows. Gentle slopes produce longer travel times and lower, broader peaks. Slope along the flow path is one of the first quantities flood forecasters examine.",
+    "explanation": "Direct link between terrain and flood response."
+  },
+  {
+    "type": "essay",
+    "question": "What is the Extract by Mask tool used for in the DEM workflow?",
+    "correct": "Extract by Mask clips a raster to the boundary of a polygon (study area). In the DEM workflow: download tiles, mosaic into single raster, clip to study boundary using Extract by Mask, then reproject. Ensures the DEM covers only the area of interest (with appropriate buffer).",
+    "explanation": "Standard DEM preparation step."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Python scripting extends ArcGIS terrain analysis.",
+    "correct": "ArcPy (ArcGIS Python library) allows scripting of all terrain tools: Fill, Slope, Aspect, FlowDirection, FlowAccumulation. Scripts enable batch processing of multiple DEMs, parameter sweeps, custom workflows, and integration with other Python libraries. Model Builder models can be exported as Python scripts.",
+    "explanation": "Automation through scripting."
+  },
+  {
+    "type": "essay",
+    "question": "What is the role of the Snap Pour Point tool?",
+    "correct": "Pour points for watershed delineation may not align exactly with the flow accumulation grid. Snap Pour Point adjusts the point to the nearest high-accumulation cell, correcting for spatial imprecision. Without snapping, the watershed may be incorrectly small (point is slightly off the stream).",
+    "explanation": "Corrects pour point placement."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the D8 flow direction grid for subsequent analyses.",
+    "correct": "The D8 grid is the single most important intermediate product in terrain hydrology. All subsequent products derive from it: flow accumulation (counting upstream), stream networks (thresholding accumulation), watershed boundaries (tracing upstream from outlets). Errors in D8 propagate to all downstream results.",
+    "explanation": "Foundation of all watershed analysis."
+  },
+  {
+    "type": "essay",
+    "question": "How do negative dz/dy values relate to southward flow?",
+    "correct": "With y increasing northward, negative dz/dy means elevation decreases going north (equivalently, the south end is lower). The downslope direction has a southward component. In the worked example, dz/dy = -0.329, confirmed by the bottom row having lower elevations.",
+    "explanation": "Sign interpretation of partial derivatives."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of switching slope methods during model recalibration.",
+    "correct": "If a model was calibrated with derivative slopes and you switch to D8, effective slopes change throughout the watershed (typically increase because D8 focuses on steepest descent). Model performance degrades unless recalibrated. Document slope method as essential metadata to prevent this problem.",
+    "explanation": "Slope method change requires recalibration."
+  },
+  {
+    "type": "essay",
+    "question": "What are Strahler and Shreve stream orders and how do they relate to DEM analysis?",
+    "correct": "Stream order classifies channels by hierarchy. Strahler: first-order = headwater, joining equal-order streams increases order by 1. Shreve: additive. Both require D8 flow direction and stream definition. The ArcGIS Stream Order tool computes these from the flow direction grid.",
+    "explanation": "Network characterization from terrain data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the scale triplet concept from Chapter 5 and how it applies to DEM analysis.",
+    "correct": "Extent = total area covered. Spacing = cell size (resolution). Support = area represented by each measurement. For a 30m DEM: extent is the study area, spacing is 30m, support is one 900 m^2 cell. The triplet determines what features can be resolved and what analyses are meaningful.",
+    "explanation": "Framework for evaluating spatial data."
+  },
+  {
+    "type": "essay",
+    "question": "Why might flow direction results differ between ArcGIS and QGIS?",
+    "correct": "Different software may implement slightly different algorithm variants, handle ties differently (when two neighbors have equal slope), use different flat area resolution methods, or have different numerical precision. Verification against hand calculations reveals these differences.",
+    "explanation": "Software implementations vary in details."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of a watershed and how it is delineated from a DEM.",
+    "correct": "A watershed is the area draining to a common outlet. Delineation: (1) Fill DEM. (2) Compute D8 flow direction. (3) Compute flow accumulation. (4) Define the outlet (pour point). (5) Trace all cells upstream of the outlet using flow direction. The result is the watershed boundary.",
+    "explanation": "Fundamental operation in terrain hydrology."
+  },
+  {
+    "type": "essay",
+    "question": "How does spatial resolution affect the derived stream network?",
+    "correct": "Coarser resolution smooths terrain, merging small channels and reducing stream density. Finer resolution resolves more channels but adds noise. The flow accumulation threshold for stream definition must be adjusted with resolution: lower thresholds for coarser DEMs, higher for finer DEMs.",
+    "explanation": "Resolution determines what features are visible."
+  },
+  {
+    "type": "essay",
+    "question": "What role does the Mosaic to New Raster tool play in DEM preparation?",
+    "correct": "DEMs are distributed as tiles. A study area may span multiple tiles. Mosaic combines tiles into a single seamless raster, handling overlap and edge matching. This must be done before slope/flow analysis to avoid artifacts at tile boundaries.",
+    "explanation": "Essential data preparation step."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how aspect affects agricultural irrigation planning in Hungary.",
+    "correct": "On the Alfold, aspect determines which fields dry out fastest (south-facing get more radiation = more ET = dry first). Slope orientation affects frost pockets and heat traps. Aspect maps guide which slopes need supplemental irrigation first, especially during summer water scarcity.",
+    "explanation": "Practical agricultural application of aspect."
+  },
+  {
+    "type": "essay",
+    "question": "What is a hydrograph and how does slope affect its shape?",
+    "correct": "A hydrograph plots streamflow over time after rainfall. Steeper slopes produce flashy hydrographs (quick rise, high peak, fast recession) because water travels faster. Gentle slopes produce broad, flat hydrographs with lower peaks. Slope along the flow path directly controls the time of concentration.",
+    "explanation": "Link between terrain and flood response timing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Project Raster tool and its importance.",
+    "correct": "Project Raster reprojects a DEM from one coordinate system to another (e.g., WGS84 to EOV). Requires choosing a resampling method (bilinear for DEMs). Must be done before planar slope computation if the DEM is in geographic coordinates. Uses appropriate transformation (e.g., 7-param Helmert for HD72-ETRS89).",
+    "explanation": "Essential for coordinate system management."
+  },
+  {
+    "type": "essay",
+    "question": "What is the difference between conformal and equal-area projections for terrain analysis?",
+    "correct": "Conformal projections (UTM, EOV) preserve angles and shapes locally — good for slope/aspect. Equal-area projections (LAEA) preserve area — good for watershed area calculations. For slope computation, conformal is preferred. For zonal statistics with area weighting, equal-area is preferred.",
+    "explanation": "Different projections serve different needs."
+  },
+  {
+    "type": "essay",
+    "question": "How does the terrain analysis workflow chain together across Chapters 7-12?",
+    "correct": "Ch7: Compute slope and flow direction from DEM. Ch9: Condition DEM (fill pits, burn streams). Ch10: Compute flow direction and accumulation on conditioned DEM. Ch11: Delineate stream networks and watersheds. Ch12: Automate the entire workflow. Each step builds on previous outputs.",
+    "explanation": "Sequential five-chapter pipeline."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why slope from a conditioned DEM is unreliable.",
+    "correct": "Filling raises cell elevations creating flat areas. Burning creates artificial deep trenches. Both distort the true terrain surface, making computed slopes, aspects, and curvatures inaccurate. The original DEM preserves real terrain shape. Only flow routing should use the conditioned DEM.",
+    "explanation": "Conditioning changes the terrain surface."
+  },
+  {
+    "type": "essay",
+    "question": "What factors determine the accuracy of DEM-derived slope values?",
+    "correct": "DEM resolution, vertical accuracy, interpolation method used to create the DEM, neighborhood size for slope computation, and the slope algorithm itself. Noise in the DEM directly affects derivative calculations. The Sobel approach reduces noise impact. Higher-quality DEMs give more reliable slopes.",
+    "explanation": "Multiple factors contribute to accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how climate change affects the relevance of terrain analysis.",
+    "correct": "As precipitation patterns shift, the spatial distribution of flooding changes. Slope and aspect determine where water goes, so terrain analysis remains fundamental. More intense storms increase erosion (amplified by USLE's nonlinear slope factor). Snow line changes alter aspect-driven melt patterns.",
+    "explanation": "Terrain analysis remains critical under changing climate."
+  },
+  {
+    "type": "essay",
+    "question": "What is the ArcGIS Living Atlas and how does it relate to DEM access?",
+    "correct": "Living Atlas is ESRI's curated collection of geographic data accessible within ArcGIS Pro. NED/3DEP tiles are available as image services, allowing direct clipping to study areas without file download. Convenient for quick analysis but slower than local data for intensive computation.",
+    "explanation": "Cloud-based DEM access."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of convergent and divergent flow in terrain analysis.",
+    "correct": "Convergent flow occurs in hollows and valleys where flow paths come together (positive plan curvature, high contributing area). Divergent flow occurs on ridges and spurs where paths spread apart (negative plan curvature). D8 cannot represent divergence; D-infinity handles both through proportional allocation.",
+    "explanation": "Fundamental flow pattern types."
+  },
+  {
+    "type": "essay",
+    "question": "How does the 8-direction restriction of D8 affect stream network extraction?",
+    "correct": "For stream extraction, D8's restriction is actually beneficial. The tree structure creates well-defined, connected stream networks with clear junctions. Each cell drains to exactly one downstream cell, enabling efficient network tracing. D-infinity's flow splitting would create diffuse, ambiguous channels.",
+    "explanation": "D8's limitation becomes a feature for networks."
+  },
+  {
+    "type": "essay",
+    "question": "Why do different DEM sources produce different watershed boundaries?",
+    "correct": "Different sources have different vertical accuracy, resolution, acquisition dates, and surface types (DSM vs DTM). These differences change elevation values, especially at ridge lines where watershed divides are located. Even small elevation changes at divides can shift large portions of a boundary.",
+    "explanation": "DEM quality directly affects boundary accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of open-source GIS in terrain analysis.",
+    "correct": "TauDEM (free, MPI parallel, D-infinity), QGIS+GRASS/SAGA (free GUI), WhiteboxTools (advanced algorithms). Open-source provides capabilities not available in ArcGIS (carving, optimal removal, parallel processing). Many researchers combine ArcGIS for visualization with open-source for specialized algorithms.",
+    "explanation": "Complementary to commercial GIS."
+  },
+  {
+    "type": "essay",
+    "question": "What is the saturation-excess runoff mechanism and how does terrain control it?",
+    "correct": "When soil saturates completely, additional rainfall becomes runoff regardless of intensity. Saturation occurs first in areas with large upslope contributing area and gentle slopes (high TWI). These variable source areas expand during storms. TWI maps from terrain analysis predict where saturation-excess runoff generates.",
+    "explanation": "Terrain-driven runoff generation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the 2014 ArcGIS bug report for professional practice.",
+    "correct": "The sqrt(2) ≈ 1.5 approximation in the drop raster shows that even major commercial software can contain persistent bugs. This underscores the need for verification, independent slope computation when values matter, and maintaining test datasets. Professionals must not blindly trust software output.",
+    "explanation": "Professional responsibility to verify results."
+  },
+  {
+    "type": "essay",
+    "question": "How would you set up a terrain analysis project for a new study area?",
+    "correct": "(1) Define study area with buffer. (2) Select DEM (national first, then continental/global). (3) Download and mosaic tiles. (4) Reproject to metric coordinates. (5) Compute slope/aspect from original DEM. (6) Fill DEM. (7) Compute flow direction and accumulation. (8) Verify against hand calculations.",
+    "explanation": "Complete project setup workflow."
+  },
+  {
+    "type": "essay",
+    "question": "What is the relationship between cell size and the number of cells in a watershed?",
+    "correct": "For a watershed of area A with cell size delta, the number of cells is approximately A/delta^2. A 100 km^2 watershed with 30m cells has ~111,000 cells. With 5m cells: ~4,000,000 cells. More cells means better statistical averaging but more processing time and storage.",
+    "explanation": "Resolution determines computational burden."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how terrain derivatives are used in landslide susceptibility mapping.",
+    "correct": "Slope (steeper = more susceptible), aspect (wetness affects stability), curvature (concavities concentrate water), contributing area (saturates more easily), and TWI (predicts saturation) are all used. The derivative method's noise resistance makes it preferred for slope input. GIS overlays combine these factors.",
+    "explanation": "Multi-factor terrain-based hazard assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Why is it important to understand the mathematical foundations behind GIS buttons?",
+    "correct": "Without understanding the algorithms, you cannot interpret results correctly, detect bugs, choose appropriate methods, or troubleshoot unexpected output. The chapter demonstrates three methods giving different values for the same cell — knowing why is essential. GIS buttons hide complexity that affects every result.",
+    "explanation": "Understanding enables correct application."
+  },
+  {
+    "type": "essay",
+    "question": "How does slope affect the kinematic wave approximation used in many distributed models?",
+    "correct": "Kinematic wave routing approximates the energy slope with the terrain slope. Flow velocity is proportional to S^(1/2) from Manning's equation. Steeper slopes produce faster wave speeds and shorter travel times. The approximation works well for overland flow on moderate slopes but breaks down in very flat terrain where backwater effects dominate.",
+    "explanation": "Direct link between slope and routing velocity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the RUSLE slope-length factor for erosion modeling.",
+    "correct": "RUSLE's LS factor makes erosion increase approximately as the square of slope steepness — doubling slope roughly quadruples erosion. This nonlinear sensitivity means small DEM errors in slope translate to large errors in predicted sediment yield. Accurate slope computation (derivative method preferred for noise resistance) is critical for reliable erosion estimates.",
+    "explanation": "Nonlinear amplification of slope errors."
+  },
+  {
+    "type": "essay",
+    "question": "What is the relationship between flow direction and watershed boundaries?",
+    "correct": "Watershed boundaries follow topographic ridges where flow diverges to opposite sides. D8 flow direction determines which cells drain to which outlets. The boundary is traced where adjacent cells have flow paths leading to different outlets. Errors in flow direction (from unconditioned DEMs or wrong slope methods) directly shift boundaries.",
+    "explanation": "Flow direction defines the drainage divide."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the Hungarian Great Plain particularly challenging for slope-based hydrological analysis?",
+    "correct": "Slopes less than 1% mean elevation differences of centimeters over hundreds of meters. DEM vertical accuracy (even DDM-5's sub-meter) approaches the actual terrain gradients. This makes slope computation unreliable — small errors change both slope magnitude and direction. Stream burning with known channels is essential.",
+    "explanation": "When DEM precision approaches terrain gradient magnitude."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the ArcGIS Living Atlas in modern terrain analysis workflows.",
+    "correct": "Living Atlas provides NED/3DEP as image services accessible directly in ArcGIS Pro. Users can clip DEMs on the fly without downloading. Convenient for rapid analysis but slower than local processing. Also provides pre-computed slope, aspect, and flow direction for quick reconnaissance before detailed analysis.",
+    "explanation": "Cloud-based DEM access for rapid preliminary work."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how flow accumulation relates to stream definition.",
+    "correct": "Flow accumulation counts upstream cells. A threshold applied to this grid classifies cells as stream (accumulation > threshold) or hillslope. Higher thresholds produce sparser networks; lower thresholds produce denser ones. The threshold must be adjusted with DEM resolution. Flow accumulation requires D8 flow direction from a conditioned DEM.",
+    "explanation": "Accumulation threshold defines stream density."
+  },
+  {
+    "type": "essay",
+    "question": "What considerations apply when combining DDM-5 with Copernicus DEM for the Upper Tisza?",
+    "correct": "DDM-5 is in EOV (HD72 datum); Copernicus is in WGS84. A 7-parameter Helmert transformation is needed. Resolution differs (5m vs 10m). Vertical datums may differ (Baltic vs EGM2008). The mosaicking boundary should fall along a watershed divide where possible to minimize transition artifacts.",
+    "explanation": "Technical challenges of multi-source DEM fusion."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of a flow path and how it is traced from a DEM.",
+    "correct": "A flow path is the route water follows from a starting cell to an outlet, determined by following D8 flow direction cell by cell. Each cell points to its downstream neighbor, creating a chain. Flow path length and slope along the path determine time of concentration. This tracing is the foundation of watershed delineation.",
+    "explanation": "Cell-to-cell tracing using flow direction."
+  }
+]

@@ -1,0 +1,934 @@
+{
+  "chapter": "ch20",
+  "total_issues": 116,
+  "fixes": [
+    {
+      "line_approx": 3,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a felszín alatti GIS alapvető építőelemeit",
+      "suggested": "a felszín alatti térinformatika alapvető építőelemeit",
+      "reason": "A „GIS” itt nem szükségszerűen a legtermészetesebb magyar megnevezés; folyószövegben a „térinformatika” gördülékenyebb."
+    },
+    {
+      "line_approx": 4,
+      "category": "register",
+      "severity": "low",
+      "original": "elsődleges betekintést nyújtanak a felszín alatti térbe",
+      "suggested": "első betekintést nyújtanak a felszín alatti térbe",
+      "reason": "Az „elsődleges betekintés” kissé tükörfordítás-ízű; magyar tudományos prózában az „első betekintés” természetesebb."
+    },
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hidroinformatika ehhez a munkához biztosítja az eszközöket és az adatstruktúrákat",
+      "suggested": "A hidroinformatika ehhez a munkához adja az eszközöket és az adatstruktúrákat",
+      "reason": "A „biztosítja” túlhasznált, angolos fordulat; az „adja” vagy „nyújtja” természetesebb."
+    },
+    {
+      "line_approx": 10,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "GeoArea, GeoSection, GeoVolume és GeoRasters",
+      "suggested": "GeoArea, GeoSection, GeoVolume és GeoRaster",
+      "reason": "Az osztály-/elemosztálynevek rendszerint változatlan alakban szerepelnek; a többes számú angol alak itt terminológiailag ingadozó."
+    },
+    {
+      "line_approx": 11,
+      "category": "word_order",
+      "severity": "low",
+      "original": "a Pannon-medence hidrosztratigráfiája és a Nagyalföld termálvíz-rendszere, Közép-Európa egyik legfontosabb és legösszetettebb felszín alatti keretmodellje",
+      "suggested": "a Pannon-medence hidrosztratigráfiája és a Nagyalföld termálvízrendszere: Közép-Európa egyik legfontosabb és legösszetettebb felszín alatti keretmodellje",
+      "reason": "A szerkezet vesszővel kissé bizonytalan; a kettősponttal világosabb az értelmező kapcsolat. A „termálvízrendszer” egybeírása is természetesebb."
+    },
+    {
+      "line_approx": 16,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a felszín alatti víz áramlásának modellezéséhez",
+      "suggested": "a felszín alatti vízmozgás modellezéséhez",
+      "reason": "A hidrogeológiai szaknyelvben a „vízmozgás” gyakran természetesebb és tömörebb, mint az „áramlásának modellezése” szerkezet."
+    },
+    {
+      "line_approx": 18,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "Felső Glen Rose mészkő",
+      "suggested": "a Glen Rose Formáció felső mészkőtagozata",
+      "reason": "Az angolos jelzőtorlódás magyarul nehézkes; természetesebb szerkezet szükséges."
+    },
+    {
+      "line_approx": 20,
+      "category": "register",
+      "severity": "low",
+      "original": "a termálvíz-gazdálkodás céljára jellemzően három-négy hidrogeológiai egységbe sorolják",
+      "suggested": "termálvíz-gazdálkodási célból jellemzően három-négy hidrogeológiai egységbe sorolják",
+      "reason": "A „céljára” itt körülményes; a „célból” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 24,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "gyengén áteresztő réteg (aquitárd)",
+      "suggested": "gyengén vízvezető réteg (aquitárd)",
+      "reason": "A hidrogeológiai magyar szaknyelvben a „vízvezető” természetesebb, mint az általános „áteresztő”."
+    },
+    {
+      "line_approx": 25,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden egység geometriáját a felső és az alsó határfelülete határozza meg, és e felületek metszése definiálja az egységek közötti kontaktusokat.",
+      "suggested": "Minden egység geometriáját a felső és az alsó határfelülete határozza meg, e felületek metszése pedig kijelöli az egységek közötti érintkezéseket.",
+      "reason": "A „definiálja a kontaktusokat” részben angolos és terminológiailag merev; a „kijelöli az érintkezéseket” magyarosabb."
+    },
+    {
+      "line_approx": 28,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Poligonelemek határozzák meg az egységek kétdimenziós kiterjedését térképi nézetben.",
+      "suggested": "Poligonok határozzák meg az egységek kétdimenziós kiterjedését térképi nézetben.",
+      "reason": "A „poligonelemek” itt fölöslegesen nehézkes; a „poligonok” elég pontos és természetes."
+    },
+    {
+      "line_approx": 31,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidrogeológiai keretmodell központi szervező eleme a HydrogeologicUnit tábla, egy táblázat, amely minden egységet fogalmilag definiál, mielőtt bármilyen térbeli elem létrejön.",
+      "suggested": "A hidrogeológiai keretmodell központi szervező eleme a HydrogeologicUnit tábla: ez fogalmilag meghatározza az összes egységet, még azelőtt, hogy bármilyen térbeli elem létrejönne.",
+      "reason": "Az „egy táblázat, amely...” szerkezet körülményes és fordításszagú; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 41,
+      "category": "register",
+      "severity": "low",
+      "original": "A HydrogeologicUnit tábla a következőképpen nézhet ki:",
+      "suggested": "A HydrogeologicUnit tábla például a következő lehet:",
+      "reason": "A „nézhet ki” köznyelvibb; tudományos szövegben a „lehet” visszafogottabb és természetesebb."
+    },
+    {
+      "line_approx": 50,
+      "category": "plural",
+      "severity": "low",
+      "original": "GeoArea-elemekként tárolják",
+      "suggested": "GeoArea elemként tárolják",
+      "reason": "A magyar szaknyelvben az ilyen összetételekben gyakran természetesebb az egyes számú utótag."
+    },
+    {
+      "line_approx": 55,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a felszín alatti tér fizikai összetettsége azt jelenti, hogy egyetlen fogalmi egység pontos ábrázolásához sok térbeli elem szükséges",
+      "suggested": "a felszín alatti tér fizikai összetettsége miatt egyetlen fogalmi egység pontos ábrázolásához is több térbeli elemre van szükség",
+      "reason": "Az „azt jelenti, hogy” angolosan terjengős; az okhatározós megoldás magyarosabb."
+    },
+    {
+      "line_approx": 57,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Európai összefüggésben az INSPIRE irányelv geológiai adattémája szabványosított keretet biztosít",
+      "suggested": "Európai összefüggésben az INSPIRE irányelv geológiai adattémája szabványosított keretet ad",
+      "reason": "A „biztosít” itt ismét angolosan hat; az „ad” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 61,
+      "category": "register",
+      "severity": "low",
+      "original": "A szelvények a geológus egyik legerősebb eszközének számítanak",
+      "suggested": "A szelvény a geológus egyik legfontosabb eszköze",
+      "reason": "Az „eszközének számítanak” körülményes; az egyes számú általánosító forma magyarosabb."
+    },
+    {
+      "line_approx": 86,
+      "category": "terminology",
+      "severity": "high",
+      "original": "szivárgási tényező",
+      "suggested": "hidraulikus vezetőképesség",
+      "reason": "Ebben a felsorolásban a bevett hidrogeológiai terminus a „hidraulikus vezetőképesség”; a „szivárgási tényező” itt félrevezető vagy szokatlan lehet."
+    },
+    {
+      "line_approx": 204,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A pontmegfigyelésektől a folytonos felületekig való átmenet a hidrogeológiai keretmodell felépítésének technikailag legigényesebb lépése.",
+      "suggested": "A pontszerű megfigyelésekből folytonos felületek előállítása a hidrogeológiai keretmodell felépítésének technikailag legigényesebb lépése.",
+      "reason": "Az „-tól ... -ig való átmenet” szerkezet angolos és körülményes; természetesebb igés/főnévi megfogalmazás."
+    },
+    {
+      "line_approx": 205,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A szétszórtan elhelyezkedő fúrólyukaknál formációazonosítási pontok állnak rendelkezésünkre -- minden formáció felső szintjének magassága minden kútnál --, és a vizsgálati terület egészére kiterjedő, folytonos raszterfelületet kell előállítanunk, amely az adott formáció tetejét ábrázolja.",
+      "suggested": "A szétszórtan elhelyezkedő fúrólyukaknál formációazonosítási pontok állnak rendelkezésre -- vagyis minden kútnál ismerjük az egyes formációk felső szintjének magasságát --, és ezekből a vizsgálati terület egészére kiterjedő folytonos raszterfelületet kell előállítani, amely az adott formáció tetejét ábrázolja.",
+      "reason": "Az „állnak rendelkezésünkre” és az utána következő szerkezet nehézkes; a mondat szórendje és információs tagolása természetesebbé tehető."
+    },
+    {
+      "line_approx": 208,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez térbeli interpolációs probléma, amelyet a hidrogeológia különösen nehéz formában vet fel.",
+      "suggested": "Ez térbeli interpolációs probléma, amely a hidrogeológiában különösen nehéz formában jelentkezik.",
+      "reason": "A „vet fel” itt kissé fordításszagú; a „jelentkezik” természetesebb tudományos regiszterben."
+    },
+    {
+      "line_approx": 209,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az interpolálandó felületek nem simák -- vetők, diszkordanciák és a gradiens gyors változásai fordulhatnak elő rajtuk.",
+      "suggested": "Az interpolálandó felületek nem simák -- vetők, diszkordanciák és gyors gradiensváltozások is előfordulhatnak rajtuk.",
+      "reason": "A „a gradiens gyors változásai” szerkezet angolos; tömörebb és természetesebb a „gyors gradiensváltozások”."
+    },
+    {
+      "line_approx": 210,
+      "category": "register",
+      "severity": "low",
+      "original": "Az interpolációs hibák következményei pedig jelentősek:",
+      "suggested": "Az interpolációs hibák következményei jelentősek:",
+      "reason": "A „pedig” itt felesleges nyomatékosító elem, tudományos prózában elhagyható."
+    },
+    {
+      "line_approx": 214,
+      "category": "register",
+      "severity": "low",
+      "original": "A hidrosztratigráfiai felületek interpolálásához többféle módszert alkalmaznak, mindegyik sajátos erősségekkel és korlátokkal.",
+      "suggested": "A hidrosztratigráfiai felületek interpolálásához többféle módszert alkalmaznak, amelyek mindegyikének megvannak a maga erősségei és korlátai.",
+      "reason": "A jelenlegi szerkezet töredékes, enyhén angolos; a teljes mellékmondatos forma természetesebb."
+    },
+    {
+      "line_approx": 220,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ahol $z_i$ az ismert érték az $i$. pontban",
+      "suggested": "ahol $z_i$ az $i$. pontban ismert érték",
+      "reason": "A szórend magyarul természetesebben az „az i. pontban ismert érték” alakban hangzik."
+    },
+    {
+      "line_approx": 221,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az IDW gyors és intuitív, de hajlamos \"bikaszem\" mintázatokat létrehozni az adatpontok körül",
+      "suggested": "Az IDW gyors és intuitív, de hajlamos az adatpontok körül „bikaszem”-szerű mintázatokat létrehozni",
+      "reason": "A „bikaszem mintázat” nyers tükörfordítás; a „-szerű” forma természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 224,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A módszer egy variogram kiszámításával kezdődik -- ez egy függvény, amely leírja, hogyan változik a pontpárok közötti variancia a távolsággal --, majd ezt a variogramot használja az optimális interpolációs súlyok meghatározásához.",
+      "suggested": "A módszer első lépése a variogram kiszámítása -- ez egy függvény, amely leírja, hogyan változik a pontpárok közötti variancia a távolság függvényében --; ezt követően a variogram alapján határozzák meg az optimális interpolációs súlyokat.",
+      "reason": "Az eredeti mondat alanya váltakozik és angolosan személytelen; a magyarban világosabb a folyamatlépések explicitté tétele."
+    },
+    {
+      "line_approx": 228,
+      "category": "terminology",
+      "severity": "low",
+      "original": "és krigelési varianciatérképet ad",
+      "suggested": "és a krigelési variancia térképét is megadja",
+      "reason": "A „varianciatérkép” összetétel érthető, de kissé nehézkes; a bontott forma természetesebb."
+    },
+    {
+      "line_approx": 231,
+      "category": "register",
+      "severity": "low",
+      "original": "A spline-ok hatékonyak a mérsékelten sima geológiai felületeknél",
+      "suggested": "A spline-interpoláció hatékony a mérsékelten sima geológiai felületek esetében",
+      "reason": "A többes számú alany és a „-ok” forma itt kissé köznyelvibb; az eljárásnévvel természetesebb a tudományos stílus."
+    },
+    {
+      "line_approx": 233,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A **természetes szomszédság interpoláció** Voronoi-tesszellációt használ",
+      "suggested": "A **természetes szomszédságon alapuló interpoláció** Voronoi-tesszellációt használ",
+      "reason": "A terminus jelenlegi alakja kissé angolos; a „-on alapuló” szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 242,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A formációfelületek fúrólyukadatokból történő előállításának gyakorlati munkafolyamata több lépést tartalmaz",
+      "suggested": "A formációfelületek fúrólyukadatokból való előállításának gyakorlati munkafolyamata több lépésből áll",
+      "reason": "A „tartalmaz” itt angolosan általános; a „több lépésből áll” természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 245,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Ez ismert $(x, y, z)$ koordinátájú pontelemek halmazát eredményezi",
+      "suggested": "Ennek eredménye ismert $(x, y, z)$ koordinátájú pontok halmaza",
+      "reason": "A „pontelemek” szokatlan és feleslegesen szó szerinti; a „pontok” elegendő és természetes."
+    },
+    {
+      "line_approx": 247,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "másoknál csak a fúrómester naplója áll rendelkezésre",
+      "suggested": "más kutaknál csak a fúrónapló áll rendelkezésre",
+      "reason": "A „fúrómester naplója” körülményes; a magyar szaknyelvben a „fúrónapló” bevettebb."
+    },
+    {
+      "line_approx": 248,
+      "category": "terminology",
+      "severity": "low",
+      "original": "vagy vetőződés által befolyásoltak lehetnek",
+      "suggested": "vagy vetők által befolyásoltak lehetnek",
+      "reason": "A „vetőződés” itt kevésbé természetes, mint a konkrét szerkezeti elemre utaló „vetők”."
+    },
+    {
+      "line_approx": 249,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A minőség-ellenőrzés tartalmazza az azonosítások konzisztencia-vizsgálatát",
+      "suggested": "A minőség-ellenőrzés része az azonosítások konzisztenciájának vizsgálata",
+      "reason": "A „tartalmazza” szerkezet angolos; a „része” magyarosabb és gördülékenyebb."
+    },
+    {
+      "line_approx": 250,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A statisztikai kiugróérték-detektálás",
+      "suggested": "A statisztikai kiugróérték-azonosítás",
+      "reason": "A „detektálás” idegenszerűbb; az „azonosítás” természetesebb magyar tudományos szóhasználat."
+    },
+    {
+      "line_approx": 253,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ritka adatkészletek vagy irányszerinti trendeket mutató felületek esetén a krigelés általában előnyösebb",
+      "suggested": "Ritka adatkészletek vagy irányított trendeket mutató felületek esetén általában a krigelés az előnyösebb",
+      "reason": "A fókuszált állítmányi rész magyarosabban az ige előtt áll."
+    },
+    {
+      "line_approx": 256,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "A kiválasztott módszert alkalmazzák, és raszterfelületet állítanak elő a vizsgálati területre.",
+      "suggested": "A kiválasztott módszerrel előállítják a vizsgálati terület raszterfelületét.",
+      "reason": "Az eredeti személytelen, körülményes szerkezet; a tömörebb aktív megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 258,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "amely az egység oldalirányú kiterjedését definiálja",
+      "suggested": "amely az egység oldalirányú kiterjedését határozza meg",
+      "reason": "A „definiálja” itt feleslegesen idegen hangzású; a „határozza meg” természetesebb."
+    },
+    {
+      "line_approx": 260,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A kereszt-validálás -- minden pont egymás utáni elhagyása, a fennmaradó pontokból való interpolálás, és a becsült érték összehasonlítása az ismert értékkel -- az interpolációs pontosság kvantitatív mértékét adja.",
+      "suggested": "A keresztvalidálás -- vagyis minden pont soronkénti kihagyása, a fennmaradó pontokból végzett interpoláció és a becsült érték összevetése az ismert értékkel -- kvantitatív képet ad az interpoláció pontosságáról.",
+      "reason": "Az eredeti szerkezet nehézkes és részben tükörfordításos; a magyarosabb átfogalmazás gördülékenyebb."
+    },
+    {
+      "line_approx": 263,
+      "category": "terminology",
+      "severity": "low",
+      "original": "a raszter tartalmának leírása",
+      "suggested": "a raszter tartalmának megnevezése",
+      "reason": "Az attribútumok felsorolásában a „megnevezése” pontosabb és természetesebb adatbázis-környezetben."
+    },
+    {
+      "line_approx": 267,
+      "category": "register",
+      "severity": "low",
+      "original": "a háromdimenziós térfogatok előállítása logikusan következik",
+      "suggested": "a háromdimenziós térfogatok előállítása természetes következő lépés",
+      "reason": "A „logikusan következik” kissé szó szerinti; a „természetes következő lépés” idiomatikusabb."
+    },
+    {
+      "line_approx": 273,
+      "category": "calque",
+      "severity": "medium",
+      "original": "triviális a modern számítógépek számára",
+      "suggested": "a modern számítógépek számára ez triviális feladat",
+      "reason": "Az eredeti rövid szerkezet angolos; a magyarban természetesebb a teljes állítmányi forma."
+    },
+    {
+      "line_approx": 274,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy számított példa szemlélteti a folyamatot.",
+      "suggested": "A folyamatot egy számpélda szemlélteti.",
+      "reason": "A „számított példa” kevésbé idiomatikus; a „számpélda” bevett magyar tudományos kifejezés."
+    },
+    {
+      "line_approx": 282,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "GeoVolume elemekké",
+      "suggested": "GeoVolume-elemekké",
+      "reason": "Az idegen elem és a magyar toldalékolás között kötőjel szükséges."
+    },
+    {
+      "line_approx": 288,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az előző szakaszokban ismertetett egyedi adatstruktúrák és módszerek egy szisztematikus munkafolyamatban állnak össze",
+      "suggested": "Az előző szakaszokban ismertetett adatstruktúrák és módszerek egy szisztematikus munkafolyamat részeként kapcsolódnak össze",
+      "reason": "Az „állnak össze” itt kissé szó szerinti és bizonytalan; a „kapcsolódnak össze” természetesebb."
+    },
+    {
+      "line_approx": 290,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mielőtt bármilyen térbeli adatot létrehoznánk, meg kell határozni azokat a hidrogeológiai egységeket, amelyek a keretmodellt strukturálják.",
+      "suggested": "Mielőtt bármilyen térbeli adatot létrehoznánk, meg kell határozni azokat a hidrogeológiai egységeket, amelyek a keretmodell szerkezetét adják.",
+      "reason": "A „strukturálják” tükörfordításos; a „szerkezetét adják” magyarosabb."
+    },
+    {
+      "line_approx": 803,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Szférikus variogrammodell illesztése ezekre a paraméterekre és ordinárius krigelés alkalmazása 50 méteres cellamérettel a termálvízadó tetejének raszterfelületét eredményezi.",
+      "suggested": "A paraméterekre illesztett szférikus variogrammodell és az 50 méteres cellamérettel végzett ordinárius krigelés a termálvízadó tetejét ábrázoló raszterfelületet eredményez.",
+      "reason": "Az eredeti mondat nehézkes, angolos főnevesítő szerkezetű; a javított változat természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 804,
+      "category": "register",
+      "severity": "low",
+      "original": "A kereszt-validálási négyzetes középhiba 8,3 méter -- ésszerű, tekintve, hogy a szintek teljes tartománya 270 méter.",
+      "suggested": "A keresztvalidálás négyzetes középhibája 8,3 méter, ami ésszerűnek tekinthető, mivel a szintek teljes tartománya 270 méter.",
+      "reason": "A „kereszt-validálási” és a „tekintve, hogy” kissé fordításszagú; a javított változat gördülékenyebb."
+    },
+    {
+      "line_approx": 805,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A krigelési varianciatérkép a legkisebb bizonytalanságot a fúrólyuk-csoportosulások közelében, a legnagyobbat pedig a fúrólyukak közötti hézagokban mutatja, maximálisan körülbelül 25 méteres szórással a leginkább adathiányos területeken.",
+      "suggested": "A krigelési varianciatérkép a legkisebb bizonytalanságot a fúrólyukcsoportok közelében, a legnagyobbat pedig a fúrólyukak közötti térségekben mutatja; a legadathiányosabb területeken a szórás legfeljebb mintegy 25 méter.",
+      "reason": "A „fúrólyuk-csoportosulások” és „hézagokban” szóhasználat szokatlan; a mondat vége is nehézkes."
+    },
+    {
+      "line_approx": 807,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 20.7.4 A termálvíz-dimenzió",
+      "suggested": "### 20.7.4 A termálvíz szerepe",
+      "reason": "A „dimenzió” itt angolos, elvont címadás; magyar tudományos szövegben a „szerepe” természetesebb."
+    },
+    {
+      "line_approx": 809,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ami az alföldi hidrosztratigráfiai keretmodellt különösen jelentőssé teszi, az a termálvíz-készletekhez való kapcsolódása.",
+      "suggested": "Az alföldi hidrosztratigráfiai keretmodell jelentőségét különösen az adja, hogy szorosan kapcsolódik a termálvízkészletekhez.",
+      "reason": "Az „Ami..., az...” szerkezet itt angolosan körülményes; a kötőjeles „termálvíz-készletek” sem indokolt."
+    },
+    {
+      "line_approx": 809,
+      "category": "register",
+      "severity": "low",
+      "original": "Magyarország geotermikus gradiense átlagosan körülbelül 45 mK/m (millikelvin/méter), nagyjából 1,5-szerese a 30 mK/m-es globális kontinentális átlagnak.",
+      "suggested": "Magyarországon a geotermikus gradiens átlagosan mintegy 45 mK/m (millikelvin/méter), ami nagyjából 1,5-szerese a 30 mK/m-es globális kontinentális átlagnak.",
+      "reason": "A birtokos szerkezet („Magyarország geotermikus gradiense”) kevésbé természetes, mint a helyhatározós megoldás."
+    },
+    {
+      "line_approx": 810,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ez a megemelt gradiens -- amely a medence vékony kérgének és magas hőáramának következménye -- azt jelenti, hogy az 1000-2000 méteres mélységben a felszín alatti víz eléri az 50-90 Celsius-fokos hőmérsékletet -- elég forró a távfűtéshez, az üvegházi mezőgazdasághoz, a balneológiához és az ipari hőfelhasználáshoz.",
+      "suggested": "Ez a megemelt gradiens -- a medence vékony kérgének és nagy hőáramának következményeként -- azt jelenti, hogy 1000-2000 méteres mélységben a felszín alatti víz hőmérséklete eléri az 50-90 °C-ot, ami már elegendő a távfűtéshez, az üvegházi mezőgazdasághoz, a balneológiához és ipari hőhasznosításhoz.",
+      "reason": "Az „az 1000-2000 méteres mélységben” hibás/nehézkes, a mondat vége pedig angolosan laza kapcsolású."
+    },
+    {
+      "line_approx": 812,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A felső-pannon delta-homokok mérsékelt-jó permeabilitással rendelkeznek",
+      "suggested": "A felső-pannon deltahomokok permeabilitása mérsékelt vagy jó",
+      "reason": "A kötőjeles jelzőhalmozás és a „rendelkeznek” szerkezet nehézkes; a javított változat természetesebb."
+    },
+    {
+      "line_approx": 812,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "és a fölötte és alatta lévő záró agyagok fenntartják a nyomást és a hőmérsékletet.",
+      "suggested": "a felette és alatta települő záró agyagrétegek pedig megőrzik a nyomás- és hőmérsékleti viszonyokat.",
+      "reason": "A „fenntartják a nyomást és a hőmérsékletet” túl szó szerinti; a szakmai tartalomhoz a „megőrzik ... viszonyokat” illeszkedik jobban."
+    },
+    {
+      "line_approx": 813,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A termelőkutak jellemzően 50-200 méter nettó homokot harántolnak a termálvízadó rendszeren belül",
+      "suggested": "A termelőkutak a termálvízadó rendszeren belül jellemzően 50-200 méter nettó homokösszletet tárnak fel",
+      "reason": "A „nettó homokot harántolnak” szokatlan és fordításszagú; a „homokösszletet tárnak fel” természetesebb szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 813,
+      "category": "register",
+      "severity": "low",
+      "original": "így a kutak szivattyúzás nélkül, természetes kifolyással termelnek.",
+      "suggested": "így a kutak szivattyúzás nélkül, természetes kifolyással üzemelhetnek.",
+      "reason": "A „termelnek” itt kissé nyers, technicista; az „üzemelhetnek” pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 815,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hidrogeológiai keretmodell több szempontból is közvetlenül támogatja a termálvíz-gazdálkodást.",
+      "suggested": "A hidrogeológiai keretmodell több szempontból is közvetlenül segíti a termálvízgazdálkodást.",
+      "reason": "A kötőjeles alak és a „támogatja” itt angolos hatású; a „segíti” természetesebb."
+    },
+    {
+      "line_approx": 816,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Először, a termálvízadó rendszer geometriája -- vastagsága, mélysége és oldalirányú kiterjedése -- meghatározza, hol és milyen hőmérsékleten termelhető termálvíz.",
+      "suggested": "Először is a termálvízadó rendszer geometriája -- vagyis vastagsága, mélysége és oldalirányú kiterjedése -- határozza meg, hol és milyen hőmérsékleten termelhető termálvíz.",
+      "reason": "Az „Először” angolos felsorolásindítás; magyarul az „Először is” természetesebb."
+    },
+    {
+      "line_approx": 816,
+      "category": "register",
+      "severity": "medium",
+      "original": "A GeoRasters katalógus nemcsak a formációfelületeket, hanem az interpolált hőmérséklet- és transzmisszivitás-felületeket is tárolja, amelyek a kúttelepítést irányítják.",
+      "suggested": "A GeoRasters katalógus nemcsak a formációfelületeket, hanem az interpolált hőmérséklet- és transzmisszivitásfelületeket is tartalmazza; ezek a kúttelepítés tervezését segítik.",
+      "reason": "Az „irányítják” túl szó szerinti, az összetétel kötőjelezése is ingadozó."
+    },
+    {
+      "line_approx": 816,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Másodszor, a záró egységek -- vastagságuk, folytonosságuk és hidraulikai tulajdonságaik -- meghatározzák a termálvízadó szennyeződéssel szembeni védettségének mértékét",
+      "suggested": "Másodszor, a záró egységek -- vastagságuk, folytonosságuk és hidraulikai tulajdonságaik révén -- meghatározzák, mennyire védett a termálvízadó a szennyeződésekkel szemben",
+      "reason": "A birtokos szerkezet túlterhelt és angolos; az átfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 816,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Harmadszor, a háromdimenziós keretmodell támogatja az áramlási modellezést (amelyről a 21. fejezetben lesz szó), amely a termálvíz rendszeren belüli mozgását szimulálja és a termelés hosszú távú hatásait előrejelzi.",
+      "suggested": "Harmadszor, a háromdimenziós keretmodell az áramlási modellezést is támogatja (erről a 21. fejezet szól): ez a termálvíz rendszerbeli mozgását szimulálja, és előre jelzi a termelés hosszú távú hatásait.",
+      "reason": "A vonatkozó mellékmondat kapcsolása bizonytalan, a „termálvíz rendszeren belüli” szerkezet pedig nehézkes."
+    },
+    {
+      "line_approx": 818,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Magyarország termálvíz-gazdálkodását a Víz Keretirányelv (a magyar jogba átültetve) szabályozza",
+      "suggested": "Magyarország termálvízgazdálkodását az uniós Víz Keretirányelv magyar jogba átültetett szabályai keretezik",
+      "reason": "A „szabályozza” leegyszerűsítő és kissé angolos; a kötőjeles alak sem szükséges."
+    },
+    {
+      "line_approx": 818,
+      "category": "register",
+      "severity": "low",
+      "original": "Az OVF monitoringhálózata dedikált termális figyelőkutakat tartalmaz",
+      "suggested": "Az OVF monitoringhálózata külön termálvíz-megfigyelő kutakat is magában foglal",
+      "reason": "A „dedikált termális figyelőkutak” részben idegenszerű, részben terminológiailag bizonytalan."
+    },
+    {
+      "line_approx": 820,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 20.7.5 Szelvények az Alföldön keresztül",
+      "suggested": "### 20.7.5 Szelvények az Alföldön át",
+      "reason": "Az „az Alföldön keresztül” kissé szó szerinti; az „át” tömörebb és természetesebb címben."
+    },
+    {
+      "line_approx": 822,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az XS2D rendszer magyar kontextusban való alkalmazásának illusztrálásához tekintsünk egy szelvényt Hajdú-Bihar megyén keresztül a Tiszántúl régióból, hozzávetőleg ÉNy-DK irányban a Hortobágy területétől a román határig Biharkeresztes közelében.",
+      "suggested": "Az XS2D rendszer magyarországi alkalmazását egy Hajdú-Bihar megyén átvezetett szelvénnyel szemléltetjük, amely a Tiszántúlon, nagyjából ÉNy-DK irányban húzódik a Hortobágy térségétől a román határig, Biharkeresztes közeléig.",
+      "reason": "A mondat több ponton tükörfordításos („magyar kontextusban”, „illusztrálásához”, „megyén keresztül a Tiszántúl régióból”)."
+    },
+    {
+      "line_approx": 823,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a szelvényvonal, körülbelül 80 kilométer hosszú, keresztezi a Debreceni-árok mélyülési tengelyét, az Alföld egyik fő részmedencéjét.",
+      "suggested": "Ez a mintegy 80 kilométer hosszú szelvény a Debreceni-árok mélyülési tengelyét metszi; ez az Alföld egyik fő részmedencéje.",
+      "reason": "A közbeékelt szerkezet nehézkes, a „keresztezi” itt kevésbé természetes."
+    },
+    {
+      "line_approx": 825,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "A SectionLine elemet 12 mély, megbízható sztratigráfiai információval rendelkező fúrólyuk összekötésével definiálják, 20-as VertExag2D értékkel.",
+      "suggested": "A SectionLine elemet 12 mély, megbízható sztratigráfiai információt adó fúrólyuk összekötésével határozzák meg; a VertExag2D értéke 20.",
+      "reason": "A szenvedő jellegű, személytelen „definiálják” és a mondat végi kapcsolás angolosan művi."
+    },
+    {
+      "line_approx": 826,
+      "category": "register",
+      "severity": "low",
+      "original": "a következő figyelemre méltó jellemzőkkel:",
+      "suggested": "a következő fontos jellemzőkkel:",
+      "reason": "A „figyelemre méltó” itt kissé publicisztikus; tudományos szövegben a „fontos” semlegesebb."
+    },
+    {
+      "line_approx": 828,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Ezt a rendkívüli domborzatot a miocén extenziós vetők irányítják.",
+      "suggested": "Ezt a markáns domborzatot miocén kori extenziós vetők alakították ki.",
+      "reason": "Az „irányítják” geológiai kontextusban angolos; az „alakították ki” természetesebb."
+    },
+    {
+      "line_approx": 830,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az alsó-pannon záró összlet az árokközépbe vastagodva több mint 1500 méter vastagságot ér el",
+      "suggested": "Az alsó-pannon záró összlet az árok közepe felé vastagodva több mint 1500 méteres vastagságot ér el",
+      "reason": "Az „árokközépbe vastagodva” szokatlan, tömörített szerkezet."
+    },
+    {
+      "line_approx": 832,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ami a progradációs selfrendszert tükrözi",
+      "suggested": "ami a progradáló selfrendszert tükrözi",
+      "reason": "A „progradációs” kevésbé természetes magyar szaknyelvi alak, mint a „progradáló”."
+    },
+    {
+      "line_approx": 832,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Azonban az egységen belüli homok-agyag arány változik",
+      "suggested": "Az egységen belül azonban változik a homok-agyag arány",
+      "reason": "Az „Azonban” mondatkezdő használata és a szórend angolos hatású."
+    },
+    {
+      "line_approx": 832,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "homok-dominánsabb",
+      "suggested": "homokban gazdagabb",
+      "reason": "A „dominánsabb” idegenszerű, hibrid alak."
+    },
+    {
+      "line_approx": 834,
+      "category": "register",
+      "severity": "low",
+      "original": "A negyedidőszaki sekély vízadó körülbelül 150 méterről a Hortobágy területén",
+      "suggested": "A negyedidőszaki sekély vízadó vastagsága a Hortobágy térségében körülbelül 150 méter",
+      "reason": "Az eredeti mondatkezdés hiányosnak, fordításszagúnak hat; a „területén” is nehézkes."
+    },
+    {
+      "line_approx": 836,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Amikor ezt a szelvényt az XS2D rendszerben 20-szoros függőleges torzítással jelenítik meg",
+      "suggested": "Ha ezt a szelvényt az XS2D rendszerben 20-szoros függőleges torzítással ábrázoljuk",
+      "reason": "A személytelen „jelenítik meg” kevésbé természetes; az aktív szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 836,
+      "category": "register",
+      "severity": "medium",
+      "original": "a termálvízadó és a sekély vízadó rendszerek közötti vékony, de kritikusan fontos záró rétegek jól láthatóvá válnak.",
+      "suggested": "a termálvízadó és a sekély vízadó rendszer közötti vékony, de kulcsfontosságú zárórétegek jól láthatóvá válnak.",
+      "reason": "A „kritikusan fontos” angol mintájú; a többes számú „rendszerek” sem feltétlenül indokolt."
+    },
+    {
+      "line_approx": 837,
+      "category": "register",
+      "severity": "low",
+      "original": "az Offset attribútum megerősíti, hogy minden vetített fúrólyuk 3 kilométeren belül van a szelvényvonaltól",
+      "suggested": "az Offset attribútum jelzi, hogy minden vetített fúrólyuk 3 kilométeren belül helyezkedik el a szelvényvonaltól",
+      "reason": "A „megerősíti” itt túl erős, angolos szóválasztás."
+    },
+    {
+      "line_approx": 845,
+      "category": "register",
+      "severity": "medium",
+      "original": "A GeoRasters katalógus az alföldi keretmodellhez jellemzően a következő raszteradatkészleteket tartalmazza, HorizonID szerint rendezve:",
+      "suggested": "Az alföldi keretmodell GeoRasters katalógusa jellemzően a következő, HorizonID szerint rendezett raszteradatkészleteket tartalmazza:",
+      "reason": "Az eredeti szórend kissé nehézkes."
+    },
+    {
+      "line_approx": 859,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A termálvízadó összes felülete ugyanazt a HGUID-t és HGUCode-ot viseli",
+      "suggested": "A termálvízadóhoz tartozó összes felület ugyanahhoz a HGUID-hoz és HGUCode-hoz tartozik",
+      "reason": "A „viseli” itt angolos metafora; adatbázis-nyelvben a „tartozik” természetesebb."
+    },
+    {
+      "line_approx": 860,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A GeoRasters katalógusnak ez a kettős felhasználása -- geometriához és tulajdonságokhoz egyaránt -- az egyik legfontosabb jellemzője",
+      "suggested": "A GeoRasters katalógus kettős használata -- vagyis hogy a geometriát és a tulajdonságokat egyaránt kezeli -- az egyik legfontosabb jellemzője",
+      "reason": "Az eredeti szerkezet nehézkes és kissé tükörfordításos."
+    },
+    {
+      "line_approx": 862,
+      "category": "heading",
+      "severity": "low",
+      "original": "A tulajdonságfelületek különösen értékesek a magyar kontextusban.",
+      "suggested": "A tulajdonságfelületek magyarországi alkalmazásban különösen értékesek.",
+      "reason": "A „magyar kontextusban” tipikus hunglish fordulat."
+    },
+    {
+      "line_approx": 864,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A szivárgásitényező-felszín, amelyet a termelőkutak próbaszivattyúzási elemzéséből származtattak",
+      "suggested": "A szivárgási tényező felszíne, amelyet a termelőkutak próbaszivattyúzási adatainak elemzéséből vezettek le",
+      "reason": "A „szivárgásitényező-felszín” hibás összetétel, a „származtattak” pedig itt kevésbé természetes."
+    },
+    {
+      "line_approx": 603,
+      "category": "register",
+      "severity": "low",
+      "original": "Itt az egyes egységek kőzettanának, vastagságának és hidraulikai tulajdonságainak részletesebb leírását adjuk",
+      "suggested": "Itt az egyes egységek kőzettanát, vastagságát és hidraulikai tulajdonságait ismertetjük részletesebben",
+      "reason": "A „leírását adjuk” körülményes, fordításszagú szerkezet; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 607,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "termálkarszt-vízadó rendszereinek",
+      "suggested": "termálkarsztos vízadó rendszereinek",
+      "reason": "A „termálkarszt-vízadó” összetétel nehézkes; a magyar szaknyelvben természetesebb a „termálkarsztos vízadó”."
+    },
+    {
+      "line_approx": 608,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egyik legfontosabb jellemzőknek, amelyeket bármely 3D keretmodellnek meg kell ragadnia",
+      "suggested": "az egyik legfontosabb jellemző, amelyet bármely 3D keretmodellnek ábrázolnia kell",
+      "reason": "Az „meg kell ragadnia” angol tükörfordítás; az egyeztetés is hibás („egyik ... jellemzőknek”)."
+    },
+    {
+      "line_approx": 610,
+      "category": "terminology",
+      "severity": "high",
+      "original": "selflejtő-átmeneti üledékek",
+      "suggested": "selflejtői átmeneti üledékek",
+      "reason": "A jelenlegi alak szokatlan és hibás összetétel; magyarul a „selflejtői” forma természetesebb."
+    },
+    {
+      "line_approx": 612,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Tóth áramlási rendszer-elméletének kontextusában",
+      "suggested": "Tóth áramlásirendszer-elmélete szerint",
+      "reason": "A „kontextusában” tipikus hunglish; magyar tudományos prózában itt a „szerint” vagy „értelmezésében” természetes."
+    },
+    {
+      "line_approx": 614,
+      "category": "other",
+      "severity": "medium",
+      "original": "A termálvíz-gazdálkodás szempontjából legfontosabb hidrogeológiai egység, amely az Újfalui Formációnak és ekvivalenseinek felel meg",
+      "suggested": "A termálvíz-gazdálkodás szempontjából ez a legfontosabb hidrogeológiai egység; az Újfalui Formációnak és ekvivalenseinek felel meg",
+      "reason": "A mondat jelenlegi alakja hiányos állítmányú, szerkezetileg töredezett."
+    },
+    {
+      "line_approx": 614,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "delta-front és selfüledékek",
+      "suggested": "deltafront- és selfüledékek",
+      "reason": "Az idegen összetétel írásmódja magyarul így természetesebb és egységesebb."
+    },
+    {
+      "line_approx": 615,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lemez alakú lerakódásként kilométerekre, illetve tíz kilométerekre terjednek oldalirányban",
+      "suggested": "lemezszerű testekként oldalirányban több, akár több tíz kilométerre is kiterjednek",
+      "reason": "A „lemez alakú lerakódásként” és a „terjednek oldalirányban” szó szerinti, nehézkes fordítás."
+    },
+    {
+      "line_approx": 616,
+      "category": "register",
+      "severity": "low",
+      "original": "koaleszálnak",
+      "suggested": "összeolvadnak",
+      "reason": "A magyar megfelelő már szerepel is a mondatban; az idegen szó felesleges."
+    },
+    {
+      "line_approx": 618,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a termelőkutaknál 200-500 m$^2$/nap transzmisszivitás-értékek a jellemzőek",
+      "suggested": "a termelőkutaknál jellemzően 200-500 m$^2$/nap transzmisszivitásérték adódik",
+      "reason": "A „transzmisszivitás-értékek” kötőjeles alak és a teljes szerkezet nehézkes."
+    },
+    {
+      "line_approx": 619,
+      "category": "plural",
+      "severity": "medium",
+      "original": "Magyarország vízkútjainak 95%-a ebben az egységben van kiképezve",
+      "suggested": "Magyarország vízkútjainak 95%-át ebben az egységben képezték ki",
+      "reason": "A „van kiképezve” körülményes; az aktív igealak természetesebb. Emellett a „vízkút” helyett sokszor elég a „kút”, de itt a fő gond a szerkezet."
+    },
+    {
+      "line_approx": 623,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a régió egyik legfontosabb vízellátása",
+      "suggested": "a régió egyik legfontosabb vízadó rendszere",
+      "reason": "A „vízellátása” itt félrefordításnak hat; a szövegkörnyezetben vízadó rendszerről van szó, nem vízellátási szolgáltatásról."
+    },
+    {
+      "line_approx": 627,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Az Alföld több részmedencét tartalmaz, mindegyik sajátos üledékképződési történettel.",
+      "suggested": "Az Alföld több részmedencéből áll, amelyek mindegyikének sajátos az üledékképződési története.",
+      "reason": "A jelenlegi szerkezet angolosan tömör; magyarul mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 628,
+      "category": "register",
+      "severity": "medium",
+      "original": "A középső-pleisztocén csökkent süllyedést és finomszeműbb üledékképződést (agyagok, iszapok) rögzít",
+      "suggested": "A középső pleisztocént csökkent süllyedés és finomszeműbb üledékképződés (agyagok, iszapok) jellemzi",
+      "reason": "A „rögzít” itt angol mintájú, személytelen használat; magyarul a „jellemzi” természetesebb."
+    },
+    {
+      "line_approx": 629,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Magyarország fúrt vízkútjainak körülbelül 80%-a negyedidőszaki üledékekben van kiképezve",
+      "suggested": "Magyarország fúrt vízkútjainak körülbelül 80%-át negyedidőszaki üledékekbe mélyítették",
+      "reason": "A „van kiképezve” passzív jellegű, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 636,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ennek a heterogenitásnak közvetlen következményei vannak a GeoRasters katalógusra.",
+      "suggested": "Ennek a heterogenitásnak közvetlen következményei vannak a GeoRasters katalógus szempontjából.",
+      "reason": "A „következményei vannak valamire” angolos; magyarul „szempontjából”, „nézve” természetesebb."
+    },
+    {
+      "line_approx": 637,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egyetlen formációtető-felülete megragadja a regionális geometriát",
+      "suggested": "egyetlen formációtető-felülete csak a regionális geometriát írja le",
+      "reason": "A „megragadja” itt is angol tükörfordítás."
+    },
+    {
+      "line_approx": 637,
+      "category": "register",
+      "severity": "low",
+      "original": "elég sűrűk",
+      "suggested": "kellően sűrűk",
+      "reason": "Tudományos regiszterben a „kellően” választékosabb."
+    },
+    {
+      "line_approx": 638,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve a keretmodell finomítását a regionális struktúra megbontása nélkül",
+      "suggested": "így a keretmodell a regionális szerkezet megbontása nélkül finomítható",
+      "reason": "A határozói igenévvel képzett szerkezet itt angolos és nehézkes."
+    },
+    {
+      "line_approx": 645,
+      "category": "terminology",
+      "severity": "high",
+      "original": "vízforástól",
+      "suggested": "vízforrástól",
+      "reason": "Elütés/hibás alak; a szó helyesen „vízforrás”."
+    },
+    {
+      "line_approx": 652,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A GeoRasters katalógusban ez a félvízrekesztő $K'$ és $m'$ tulajdonságfelületeinek a hagyományos formációtető-felületek melletti tárolásába fordítható le.",
+      "suggested": "A GeoRasters katalógusban ez azt jelenti, hogy a hagyományos formációtető-felületek mellett a félvízrekesztő $K'$ és $m'$ tulajdonságfelületeit is tárolni kell.",
+      "reason": "A „lefordítható” itt szó szerinti angol mintát követ; magyarul egyszerűbb, közvetlenebb megfogalmazás kell."
+    },
+    {
+      "line_approx": 661,
+      "category": "other",
+      "severity": "high",
+      "original": "félvízrekesztőn átszivágó vizből",
+      "suggested": "félvízrekesztőn átszivárgó vízből",
+      "reason": "Elütés: „átszivágó” helyett „átszivárgó”, továbbá hiányzik az ékezet a „vízből” szóból."
+    },
+    {
+      "line_approx": 664,
+      "category": "other",
+      "severity": "high",
+      "original": "több félig áteresztő rétegen átszivágó víz",
+      "suggested": "több félig áteresztő rétegen átszivárgó víz",
+      "reason": "Elütés: „átszivágó” helyett „átszivárgó”."
+    },
+    {
+      "line_approx": 671,
+      "category": "register",
+      "severity": "low",
+      "original": "rendkívüli diagnosztikai értékű hidrogeológiai paraméter",
+      "suggested": "kiemelkedő diagnosztikai értékű hidrogeológiai paraméter",
+      "reason": "A „rendkívüli” itt kissé tükörfordításízű; a „kiemelkedő” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 676,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kor az Ingerson-Pearson modell (1964) szerint számítható",
+      "suggested": "A kor az Ingerson-Pearson-modell (1964) szerint számítható",
+      "reason": "Az összetett tulajdonnév kötőjeles írásmódja indokolt."
+    },
+    {
+      "line_approx": 677,
+      "category": "register",
+      "severity": "low",
+      "original": "a mért Modern Szén százalék (pMC) aktivitás",
+      "suggested": "a mért percent modern carbon (pMC) aktivitás",
+      "reason": "A „Modern Szén százalék” nem bevett magyar terminus; jobb az eredeti rövidítéshez igazodó forma."
+    },
+    {
+      "line_approx": 684,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egy jellegzetes \"bombapulzust\" hozva létre",
+      "suggested": "így alakult ki az úgynevezett „bombapulzus”",
+      "reason": "A határozói igenévvel képzett szerkezet angolos, a javasolt forma természetesebb."
+    },
+    {
+      "line_approx": 686,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A stabil izotóp analízis ($^2$H és $^{18}$O)",
+      "suggested": "A stabilizotóp-analízis ($^2$H és $^{18}$O)",
+      "reason": "A magyar szaknyelvben az egybeírt, kötőjeles forma természetesebb."
+    },
+    {
+      "line_approx": 695,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Európa egyik legátfogóbb kormeghatározási adatkészletét biztosítva bármely üledékes medencére.",
+      "suggested": "így Európa egyik legátfogóbb, üledékes medencékre vonatkozó kormeghatározási adatkészlete jött létre.",
+      "reason": "A mondatvégi igenévi szerkezet angolos és töredezett."
+    },
+    {
+      "line_approx": 701,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A Debreceni Vízműnél az 1980-as évek $^{14}$C mérései kimutatták",
+      "suggested": "A Debreceni Vízműnél az 1980-as években végzett $^{14}$C-mérések kimutatták",
+      "reason": "A jelenlegi szerkezet félreérthető; úgy hangzik, mintha maguk a mérések lennének „az 1980-as évek”."
+    },
+    {
+      "line_approx": 709,
+      "category": "other",
+      "severity": "high",
+      "original": "A hidrogeológiai keretmodell modell",
+      "suggested": "A hidrogeológiai keretmodell",
+      "reason": "Szóismétlés/duplázás."
+    },
+    {
+      "line_approx": 736,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A potenciál-hozam diagnosztika",
+      "suggested": "A potenciál–hozam diagnosztika",
+      "reason": "Itt tartományjellegű vagy kapcsoló összetételről van szó; tipográfiailag gondolatjel természetesebb."
+    }
+  ]
+}

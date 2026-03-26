@@ -1,0 +1,638 @@
+{
+  "chapter": "ch23",
+  "total_issues": 79,
+  "fixes": [
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A fejezet célja ezért gyakorlati: minden alkalmazásnál végigvezetjük a problémát, az adatokat, a módszert, az eredményt és -- ami döntő fontosságú -- a korlátokat.",
+      "suggested": "A fejezet célja ezért gyakorlati: minden alkalmazásnál végigvesszük a problémát, az adatokat, a módszert, az eredményeket és -- ami döntő fontosságú -- a korlátokat.",
+      "reason": "A „végigvezetjük a problémát” angolos, természetellenes szerkezet; magyarul inkább „végigvesszük”."
+    },
+    {
+      "line_approx": 12,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 23.1.1 Miért rekurrens hálózatok a vízhozam-előrejelzéshez?",
+      "suggested": "### 23.1.1 Miért alkalmasak a rekurrens hálózatok a vízhozam-előrejelzésre?",
+      "reason": "A cím jelenlegi formája hiányos, angolos szerkezetű; a javasolt változat természetesebb magyar kérdésfeltevés."
+    },
+    {
+      "line_approx": 14,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a kényszerítő változókra vonatkozó információk alapján",
+      "suggested": "a kényszerváltozókra vonatkozó információk alapján",
+      "reason": "A hidrológiai szaknyelvben a „kényszerváltozó” bevettebb, mint a körülményes „kényszerítő változó”."
+    },
+    {
+      "line_approx": 15,
+      "category": "register",
+      "severity": "low",
+      "original": "A gépi tanulási megközelítések más kérdést tesznek fel",
+      "suggested": "A gépi tanulási megközelítések más kérdést vetnek fel",
+      "reason": "A „kérdést tesznek fel” itt enyhén tükörfordításos; a „kérdést vetnek fel” akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 17,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "nincs olyan mechanizmusa, amellyel „megjegyezhetné”",
+      "suggested": "nincs olyan mechanizmusa, amellyel „emlékezhetne”",
+      "reason": "A „megjegyezhetné” az angol „remember” szó szerinti átvétele; magyar szakmai szövegben az „emlékezhetne” természetesebb."
+    },
+    {
+      "line_approx": 18,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az eltűnő gradiensek problémájának kezelésére terveztek",
+      "suggested": "az eltűnő gradiens problémájának kezelésére terveztek",
+      "reason": "A magyar szaknyelvben gyakoribb az egyes számú forma: „eltűnő gradiens probléma”."
+    },
+    {
+      "line_approx": 24,
+      "category": "register",
+      "severity": "low",
+      "original": "A bemeneti kapu dönt arról, milyen új információt kell tárolni:",
+      "suggested": "A bemeneti kapu azt szabályozza, milyen új információ tárolódjon:",
+      "reason": "A „dönt arról” ismétlődése nehézkes; a „szabályozza” pontosabban illik a műszaki leíráshoz."
+    },
+    {
+      "line_approx": 34,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hidrológusnak nem kell részleteiben értenie ezeket az egyenleteket ahhoz, hogy hatékonyan használja az LSTM-et",
+      "suggested": "A hidrológusnak nem kell részleteiben ismernie ezeket az egyenleteket ahhoz, hogy hatékonyan használja az LSTM-et",
+      "reason": "Az „értenie az egyenleteket” kissé angolos; magyarul természetesebb az „ismernie” vagy „átlátnia”."
+    },
+    {
+      "line_approx": 35,
+      "category": "register",
+      "severity": "low",
+      "original": "a $C_t$ cellaállapot egyfajta információhordozó csatornaként működik",
+      "suggested": "a $C_t$ cellaállapot egyfajta információt hordozó csatornaként működik",
+      "reason": "Az „információhordozó csatorna” kissé művi összetétel; a bontott forma gördülékenyebb."
+    },
+    {
+      "line_approx": 40,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az LSTM gyakorlati beállítása vízhozam-előrejelzéshez több döntést igényel",
+      "suggested": "Az LSTM gyakorlati alkalmazása vízhozam-előrejelzésre több döntést igényel",
+      "reason": "A „beállítás” itt informatikai zsargonként hat; a „gyakorlati alkalmazás” természetesebb tankönyvi megfogalmazás."
+    },
+    {
+      "line_approx": 42,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "meteorológiai kényszeradatok",
+      "suggested": "meteorológiai kényszerfeltételek adatai",
+      "reason": "A „kényszeradat” szokatlan összetétel; magyar műszaki nyelvben a „kényszerfeltételek adatai” vagy „meteorológiai bemenő adatok” természetesebb."
+    },
+    {
+      "line_approx": 45,
+      "category": "plural",
+      "severity": "low",
+      "original": "a potenciális evapotranszspiráció-becslés",
+      "suggested": "a potenciális evapotranszspiráció becslése",
+      "reason": "A túlterhelt összetétel helyett természetesebb a birtokos szerkezet."
+    },
+    {
+      "line_approx": 49,
+      "category": "register",
+      "severity": "low",
+      "original": "A harmadik döntés a hálózat architektúrájának megválasztása",
+      "suggested": "A harmadik döntés a hálózat felépítésének megválasztása",
+      "reason": "Az „architektúra” ugyan érthető, de a „felépítés” természetesebb magyar tudományos prózában."
+    },
+    {
+      "line_approx": 55,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az árvízi csúcsok rovására",
+      "suggested": "miközben az árvízi csúcsok illesztése romlik",
+      "reason": "A „rovására” itt kissé fordításszagú és homályos; a javasolt változat pontosabban fejezi ki a szakmai tartalmat."
+    },
+    {
+      "line_approx": 63,
+      "category": "register",
+      "severity": "low",
+      "original": "Hogy szemléletesebbé tegyük ezeket a fogalmakat",
+      "suggested": "A fogalmak szemléltetésére",
+      "reason": "A jelenlegi fordulat kissé beszélt nyelvi; a javasolt forma tömörebb és tankönyvszerűbb."
+    },
+    {
+      "line_approx": 74,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a csúcs beérkezését jellemzően egy napon belüli pontossággal jelzi előre",
+      "suggested": "a csúcs időpontját jellemzően egy napon belüli pontossággal jelzi előre",
+      "reason": "A „csúcs beérkezése” nem bevett hidrológiai megfogalmazás; a „csúcs időpontja” természetesebb."
+    },
+    {
+      "line_approx": 80,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "egyetlen, egyszerre sok vízgyűjtőn tanított LSTM, a vízgyűjtők többségén felülmúlhatja",
+      "suggested": "egyetlen, egyszerre sok vízgyűjtőn tanított LSTM a vízgyűjtők többségén felülmúlhatja",
+      "reason": "A vessző megtöri a mondat szerkezetét, és természetellenes szórendet eredményez."
+    },
+    {
+      "line_approx": 95,
+      "category": "register",
+      "severity": "medium",
+      "original": "A modell, amely 0,87-es NSE-t ér el, de két nappal eltéveszti egy III. fokú esemény időzítését, operatív szempontból használhatatlan.",
+      "suggested": "Az a modell, amely 0,87-es NSE-t ér el, de egy III. fokú esemény időzítését két nappal eltéveszti, operatív szempontból használhatatlan.",
+      "reason": "A mondat fókusza magyarul természetesebben az „egy III. fokú esemény időzítését” szerkezetre esik, közvetlenül az ige előtt."
+    },
+    {
+      "line_approx": 203,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Nem (globálisan paramétereezve)",
+      "suggested": "Nem (globálisan paraméterezve)",
+      "reason": "Elütés a szakkifejezésben: „paramétereezve” helyett „paraméterezve”."
+    },
+    {
+      "line_approx": 211,
+      "category": "plural",
+      "severity": "medium",
+      "original": "a talajvízszintek a csapadékra, az öntözésre és a vízszintváltozásokra hetek-hónapok alatt reagálnak",
+      "suggested": "a talajvízszint a csapadékra, az öntözésre és a vízszintváltozásokra hetek-hónapok alatt reagál",
+      "reason": "A magyar tudományos nyelvben az általános fogalmat gyakran egyes számban természetesebb megfogalmazni."
+    },
+    {
+      "line_approx": 211,
+      "category": "register",
+      "severity": "low",
+      "original": "hetek-hónapok alatt",
+      "suggested": "hetek vagy hónapok alatt",
+      "reason": "A kötőjeles forma kissé nyers; a „hetek vagy hónapok alatt” gördülékenyebb tudományos prózában."
+    },
+    {
+      "line_approx": 212,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ennek a lassabb dinamikának két következménye van a gépi tanulás szempontjából.",
+      "suggested": "A lassabb dinamikának a gépi tanulás szempontjából két fontos következménye van.",
+      "reason": "Az eredeti mondat kissé angolos szerkezetű; a javasolt változat természetesebb magyar hangsúlyozást ad."
+    },
+    {
+      "line_approx": 213,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a modellnek nagyon hosszú távú függőségeket kell megtanulnia",
+      "suggested": "a modellnek nagyon hosszú távú összefüggéseket kell megtanulnia",
+      "reason": "A „függőségek” itt angolból átvett, kevésbé természetes terminus; magyarul az „összefüggések” idiomatikusabb."
+    },
+    {
+      "line_approx": 215,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "talajvízszint-monitoring",
+      "suggested": "talajvízszint-megfigyelés",
+      "reason": "A „monitoring” helyett van bevett magyar megfelelő; a szövegben másutt is szerepel a „megfigyelőkút”, ezért terminológiailag egységesebb."
+    },
+    {
+      "line_approx": 216,
+      "category": "register",
+      "severity": "medium",
+      "original": "A data.vizugy.hu-ról (2024 júliusa óta) szabadon elérhető adatok Magyarországot kiváló tesztelési tereppé teszik",
+      "suggested": "A data.vizugy.hu-n 2024 júliusa óta szabadon elérhető adatok miatt Magyarország kiváló tesztterep",
+      "reason": "A „tesztelési terep” tükörfordításízű; a „tesztterep” vagy „vizsgálati terep” természetesebb."
+    },
+    {
+      "line_approx": 217,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "meteorológiai kényszerítő adatok és esetlegesen a közeli folyó vízszintadatai alapján jelezzük előre a talajvízszintet 30--90 nappal előre",
+      "suggested": "meteorológiai kényszeradatok és esetenként a közeli folyó vízszintadatai alapján 30--90 nappal előre jelezzük a talajvízszintet",
+      "reason": "Természetesebb szórend, továbbá az „esetlegesen” és az ismételt „előre” nehézkessé teszi a mondatot."
+    },
+    {
+      "line_approx": 220,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az informatív bemeneti változók létrehozásának folyamata a nyers adatokból",
+      "suggested": "informatív bemeneti változók képzése nyers adatokból",
+      "reason": "Az „X létrehozásának folyamata” körülményes, angolos főnevesítés; igésebb, tömörebb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 223,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "és $N_k$ meg $\\tau$ az indexenként változik",
+      "suggested": "és $N_k$, valamint $\\tau$ indexenként változik",
+      "reason": "A „meg” ebben a tudományos regiszterben pongyola; a mondat szórendje is javítható."
+    },
+    {
+      "line_approx": 224,
+      "category": "register",
+      "severity": "medium",
+      "original": "térbeli alkalmazások esetén gyakorlatiasabban",
+      "suggested": "térbeli alkalmazások esetén gyakorlatibb módon",
+      "reason": "A „gyakorlatiasabban” itt kissé esetlen; a „gyakorlatibb módon” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 227,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a folyó vízszintje közvetlen hidraulikai hajtója a talajvízszinteknek",
+      "suggested": "a folyó vízszintje közvetlen hidraulikai kényszer a talajvízszint alakulásában",
+      "reason": "A „hajtó” az angol „driver” tükörfordítása; magyar szaknyelvben a „kényszer” vagy „meghatározó tényező” természetesebb."
+    },
+    {
+      "line_approx": 228,
+      "category": "register",
+      "severity": "low",
+      "original": "néhány óra-nap késleltetéssel",
+      "suggested": "néhány órás vagy napos késleltetéssel",
+      "reason": "Az „óra-nap” szerkezet nyers; a kibontott forma természetesebb."
+    },
+    {
+      "line_approx": 229,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A dátum ciklikus kódolása (az évszakon belüli nap $\\sin$ és $\\cos$ értékei) megragadja ezt a szezonalitást.",
+      "suggested": "A dátum ciklikus kódolása (az év napjának $\\sin$ és $\\cos$ transzformációja) jól leírja ezt a szezonalitást.",
+      "reason": "Az „évszakon belüli nap” pontatlan és angolos; a bevett megfogalmazás az év napjára utal."
+    },
+    {
+      "line_approx": 230,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "megzavarhatnak egy stacionaritást feltételező modellt",
+      "suggested": "rontják a stacionaritást feltételező modellek teljesítményét",
+      "reason": "A „megzavarhatnak egy modellt” angolos, kevésbé szakszerű megfogalmazás."
+    },
+    {
+      "line_approx": 241,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "két alapvonallal szemben",
+      "suggested": "két alapmodellhez viszonyítva",
+      "reason": "Az „alapvonal” az angol „baseline” tükörfordítása; modellek esetében az „alapmodell” természetesebb."
+    },
+    {
+      "line_approx": 249,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a perzisztencia",
+      "suggested": "a perzisztenciamodell",
+      "reason": "Önmagában a „perzisztencia” kissé lebegő; az „-modell” pontosabb szakmai megnevezés."
+    },
+    {
+      "line_approx": 256,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 23.3.4 Globális perspektíva: talajvízi gépi tanulás Magyarországon túl",
+      "suggested": "### 23.3.4 Globális perspektíva: gépi tanulás a talajvíz-előrejelzésben Magyarországon túl",
+      "reason": "A „talajvízi gépi tanulás” szokatlan, kissé tükörfordításízű cím; a javasolt forma természetesebb magyar tudományos címadás."
+    },
+    {
+      "line_approx": 263,
+      "category": "register",
+      "severity": "low",
+      "original": "napok-hónapok közötti időközönként gyűjtött minták",
+      "suggested": "néhány napos vagy akár több hónapos időközönként gyűjtött minták",
+      "reason": "A „napok-hónapok közötti” szerkezet nehézkes és pontatlanul hangzik."
+    },
+    {
+      "line_approx": 276,
+      "category": "other",
+      "severity": "medium",
+      "original": "a helyettesítő paraméterek a variancia csak egy részét ragadják meg",
+      "suggested": "a helyettesítő paraméterek a varianciának csak egy részét ragadják meg",
+      "reason": "Hiányzik a rag: helyesen „a varianciának csak egy részét”."
+    },
+    {
+      "line_approx": 806,
+      "category": "register",
+      "severity": "low",
+      "original": "Ezek a paraméterértékek hidrológiai kézikönyvekből vett átlagok, amelyeket a helyi viszonyokhoz kell igazítani.",
+      "suggested": "Ezek a paraméterértékek hidrológiai kézikönyvekből származó átlagok, amelyeket a helyi viszonyokhoz kell igazítani.",
+      "reason": "A „vett átlagok” kissé esetlen; a „származó átlagok” természetesebb tudományos regiszterben."
+    },
+    {
+      "line_approx": 807,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vertikus viselkedés a nedves/száraz ciklusok során",
+      "suggested": "zsugorodó-duzzadó viselkedés a nedves-száraz ciklusok során",
+      "reason": "A „vertikus viselkedés” ebben a talajtani kontextusban szokatlan; magyarul a jelenséget inkább zsugorodás-duzzadásként nevezik meg."
+    },
+    {
+      "line_approx": 809,
+      "category": "heading",
+      "severity": "low",
+      "original": "## 23.6 Transzfer tanulás: adatgazdag vízgyűjtőkről adatszegény vízgyűjtőkre",
+      "suggested": "## 23.6 Transzfer tanulás: adatgazdag vízgyűjtőktől adatszegény vízgyűjtőkhöz",
+      "reason": "A „-ról/-ről ... -ra/-re” szerkezet itt kissé idegenszerű; a „-tól/-től ... -hoz/-hez” természetesebb irányviszonyt fejez ki."
+    },
+    {
+      "line_approx": 813,
+      "category": "plural",
+      "severity": "medium",
+      "original": "A Tisza kis mellékfolyóinak az Északi-középhegységben (Bükk, Mátra) csak néhány évnyi szórványos vízhozam-méréseik lehetnek.",
+      "suggested": "A Tisza Északi-középhegységben eredő kis mellékfolyóiról (Bükk, Mátra) gyakran csak néhány évnyi szórványos vízhozammérés áll rendelkezésre.",
+      "reason": "A birtokos szerkezet hibás és angolos („mellékfolyóinak ... méréseik lehetnek”); a magyarban természetesebb az „adat áll rendelkezésre” szerkezet."
+    },
+    {
+      "line_approx": 815,
+      "category": "register",
+      "severity": "low",
+      "original": "És a fejlődő országokban, ahol a hidrológiai előrejelzés iránti igény gyakran a legnagyobb, a hosszú távú mérőhálózatok ritkák vagy nem léteznek.",
+      "suggested": "A fejlődő országokban pedig, ahol a hidrológiai előrejelzés iránti igény gyakran a legnagyobb, a hosszú távú mérőhálózatok ritkák vagy teljesen hiányoznak.",
+      "reason": "Mondatkezdő „És” tudományos prózában kevésbé szerencsés; a javított változat gördülékenyebb."
+    },
+    {
+      "line_approx": 817,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A transzfer tanulás (transfer learning) az adatgazdag vízgyűjtőkön szerzett tudás felhasználásával javítja az adatszegény vízgyűjtőkön végzett előrejelzéseket.",
+      "suggested": "A transzfer tanulás (transfer learning) az adatgazdag vízgyűjtőkön megszerzett tudást használja fel az adatszegény vízgyűjtők előrejelzéseinek javítására.",
+      "reason": "Az eredeti mondat nehézkes, több egymásra rakódó határozói szerkezettel; a javított változat természetesebb magyar mondatépítésű."
+    },
+    {
+      "line_approx": 818,
+      "category": "register",
+      "severity": "low",
+      "original": "ahol a milliónyi címkézett képen (ImageNet) előtanított modelleket rutinszerűen finomhangolják speciális feladatokra, jóval kisebb adathalmazokkal.",
+      "suggested": "ahol a milliónyi címkézett képen (ImageNeten) előtanított modelleket rutinszerűen finomhangolják speciális feladatokra, jóval kisebb adathalmazokon.",
+      "reason": "Az „adathalmazokkal” itt eszközhatározóként kevésbé pontos; a finomhangolás adathalmazokon történik."
+    },
+    {
+      "line_approx": 819,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hidrológiai megfelelő: olyan modell, amelyet több száz jól mért vízgyűjtőn tanítottak, és minimális helyi adattal adaptálható egy új vízgyűjtőre.",
+      "suggested": "Ennek hidrológiai megfelelője egy olyan modell, amelyet több száz jól mért vízgyűjtőn tanítottak be, és amely minimális helyi adattal egy új vízgyűjtőre is adaptálható.",
+      "reason": "A „hidrológiai megfelelő” önmagában töredékes, angolos címkeszerű szerkezet; a teljes mondat magyarosabb."
+    },
+    {
+      "line_approx": 823,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "azáltal, hogy sok vízgyűjtőn egyszerre tanítanak statikus jellemzőkkel mint bemenetekkel",
+      "suggested": "azzal, hogy a modellt egyszerre sok vízgyűjtőn tanítják, a statikus jellemzőket bemenetként használva",
+      "reason": "A „statikus jellemzőkkel mint bemenetekkel” szerkezet szórendileg és stilárisan nehézkes."
+    },
+    {
+      "line_approx": 823,
+      "category": "register",
+      "severity": "low",
+      "original": "megtanul egy általános csapadék-lefolyás összefüggést",
+      "suggested": "megtanul egy általános csapadék-lefolyás kapcsolatot",
+      "reason": "Az „összefüggést” nem hibás, de itt a „kapcsolatot” gördülékenyebb és kevésbé ismétlődő tudományos stílusban."
+    },
+    {
+      "line_approx": 824,
+      "category": "register",
+      "severity": "medium",
+      "original": "A mérővel nem rendelkező vízgyűjtőkön (amelyeket kihagytak a tanításból) a teljesítmény nem meglepő módon gyengébb",
+      "suggested": "A nem mért, vagyis a tanításból kihagyott vízgyűjtőkön a teljesítmény érthető módon gyengébb",
+      "reason": "A „mérővel nem rendelkező” körülményes, a „nem meglepő módon” pedig angolos fordulat."
+    },
+    {
+      "line_approx": 824,
+      "category": "calque",
+      "severity": "medium",
+      "original": "mint a mérővel rendelkezőkön",
+      "suggested": "mint a mért vízgyűjtőkön",
+      "reason": "A „mérővel rendelkezők” szó szerinti, nehézkes körülírás; a szakterületen a „mért vízgyűjtő” bevett."
+    },
+    {
+      "line_approx": 830,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Egy LSTM-et (vagy más modellt) egy nagy, változatos vízgyűjtőkészleten tanítanak egy adatgazdag régióból.",
+      "suggested": "Egy LSTM-et (vagy más modellt) egy adatgazdag régió nagy, változatos vízgyűjtőkészletén tanítanak be.",
+      "reason": "Az eredeti szerkezet nehézkes; a határozók rendezésével természetesebb magyar mondat jön létre."
+    },
+    {
+      "line_approx": 833,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A finomhangolási folyamat a modell súlyait a célvízgyűjtő sajátos jellemzőihez igazítja",
+      "suggested": "A finomhangolás során a modell súlyait a célvízgyűjtő sajátos jellemzőihez igazítják",
+      "reason": "A „folyamat ... igazítja” személytelen, angolos absztrakció; az igei szerkezet közvetlenebb és magyarosabb."
+    },
+    {
+      "line_approx": 836,
+      "category": "register",
+      "severity": "medium",
+      "original": "csak bizonyos rétegek frissíthetők",
+      "suggested": "csak bizonyos rétegek paramétereit frissítik",
+      "reason": "A „frissíthetők” itt modoros és kissé gépies; a cselekvő szerkezet természetesebb."
+    },
+    {
+      "line_approx": 838,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Egy ausztriai alpesi vízgyűjtőkön előtanított modell jól transzferálható a romániai és észak-magyarországi kárpáti vízgyűjtőkre",
+      "suggested": "Egy osztrák alpesi vízgyűjtőkön előtanított modell jól átvihető a romániai és észak-magyarországi kárpáti vízgyűjtőkre",
+      "reason": "Az „ausztriai alpesi” jelzőhalmozás és a „transzferálható” idegenszerű; magyarul az „osztrák alpesi” és az „átvihető” természetesebb."
+    },
+    {
+      "line_approx": 838,
+      "category": "plural",
+      "severity": "low",
+      "original": "eltérő csapadék-lefolyás folyamatok",
+      "suggested": "eltérő csapadék-lefolyási folyamatok",
+      "reason": "Összetételben a „csapadék-lefolyási” alak természetesebb."
+    },
+    {
+      "line_approx": 839,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez motiválja a hidrológiai hasonlósági mutatók ... használatát",
+      "suggested": "Ez indokolja a hidrológiai hasonlósági mutatók ... használatát",
+      "reason": "A „motiválja” itt angolos tudományos zsargon; az „indokolja” magyarosabb."
+    },
+    {
+      "line_approx": 849,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "lényegesen jobbat, mint a 0,54, amelyet egy modell ér el, amely egyszerűen kizárja a célvízgyűjtőt a tanításból",
+      "suggested": "ami lényegesen jobb annál a 0,54-es értéknél, amelyet az a modell ér el, amely egyszerűen kihagyja a célvízgyűjtőt a tanításból",
+      "reason": "Az eredeti mondatrész szórendje és vonatkozó szerkezete nehézkes, fordításszagú."
+    },
+    {
+      "line_approx": 853,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A transzfer tanulás megvalósítása egy adatszegény vízgyűjtőhöz előtanított modellhez és a célvízgyűjtő statikus jellemzőinek egy készletéhez való hozzáférést igényel.",
+      "suggested": "A transzfer tanulás alkalmazásához egy adatszegény vízgyűjtő esetében hozzá kell férni egy előtanított modellhez és a célvízgyűjtő statikus jellemzőinek készletéhez.",
+      "reason": "Az eredeti mondat túl sok egymásba ágyazott birtokos és névszói szerkezetet tartalmaz."
+    },
+    {
+      "line_approx": 854,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A CAMELS és a LamaH-CE adathalmazok biztosítják mind a tanítóadatokat, mind a forrástartomány jellemzőinek definícióit.",
+      "suggested": "A CAMELS és a LamaH-CE adathalmazok egyaránt tartalmazzák a tanítóadatokat és a forrástartomány jellemzőinek definícióit.",
+      "reason": "A „biztosítják mind ... mind” angolos szerkezet; az „egyaránt tartalmazzák” természetesebb."
+    },
+    {
+      "line_approx": 861,
+      "category": "register",
+      "severity": "low",
+      "original": "A jellemzők kiszámítása után azokat az időben változó meteorológiai bemenetekkel összefűzik és az előtanított LSTM-be táplálják.",
+      "suggested": "A jellemzők kiszámítása után ezeket az időben változó meteorológiai bemenetekkel összekapcsolják, majd az előtanított LSTM-be adják.",
+      "reason": "Az „összefűzik” és „táplálják” informatikai zsargonként kissé nyers; a javított változat természetesebb magyar szaknyelv."
+    },
+    {
+      "line_approx": 862,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az eredményül kapott modell olyan vízhozam-előrejelzéseket biztosít",
+      "suggested": "Az így kapott modell olyan vízhozam-előrejelzéseket ad",
+      "reason": "A „biztosít” túlhasznált, angolos ige ebben a szövegben; az „ad” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 870,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 23.7.1 Adatfelosztás: miért rosszak a véletlenszerű felosztások?",
+      "suggested": "### 23.7.1 Adatfelosztás: miért problémásak a véletlenszerű felosztások?",
+      "reason": "A „rosszak” kissé köznyelvi egy tankönyvi alcímben; a „problémásak” akadémiaibb regiszterű."
+    },
+    {
+      "line_approx": 873,
+      "category": "register",
+      "severity": "low",
+      "original": "A hidrológiai idősorok határozottan nem i.i.d. jellegűek",
+      "suggested": "A hidrológiai idősorok egyértelműen nem i.i.d. jellegűek",
+      "reason": "A „határozottan” itt kissé beszélt nyelvi árnyalatú; az „egyértelműen” tudományosabb hangvételű."
+    },
+    {
+      "line_approx": 879,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az időbeli és térbeli kizárás kombinációja adja a legkonzervatívabb -- és legőszintébb -- becslést a modell teljesítményéről.",
+      "suggested": "Az időbeli és térbeli kizárás kombinációja adja a modell teljesítményének legkonzervatívabb -- és legreálisabb -- becslését.",
+      "reason": "A „legőszintébb becslés” metaforikus, kissé publicisztikus; a „legreálisabb” jobban illik a tudományos regiszterhez."
+    },
+    {
+      "line_approx": 881,
+      "category": "register",
+      "severity": "medium",
+      "original": "a teszt teljesítményt ne duzzasszák fel a reziduális korrelációk",
+      "suggested": "a tesztteljesítményt ne növeljék mesterségesen a reziduális korrelációk",
+      "reason": "A „duzzasszák fel” túl képszerű és köznyelvi; a „mesterségesen növeljék” pontosabb tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1220,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a példa szándékosan minimális -- egy éles rendszer tartalmazna hiperparaméter-hangolást, keresztvalidációt, jellemzőválogatást és bizonytalanságbecslést --, de szemlélteti a lényegi munkafolyamatot",
+      "suggested": "Ez a példa szándékosan egyszerűsített -- egy éles rendszerben hiperparaméter-hangolásra, keresztvalidációra, jellemzőválogatásra és bizonytalanságbecslésre is szükség lenne --, de jól szemlélteti a lényegi munkafolyamatot",
+      "reason": "A „minimális” és a „tartalmazna” itt angolosan hat; magyar tudományos prózában természetesebb az „egyszerűsített” és a szükségességet kifejező szerkezet."
+    },
+    {
+      "line_approx": 1226,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A mélytanulás akkor indokolt, ha a probléma hosszú távú függőségeket tartalmazó szekvenciális adatokat (LSTM vízhozamhoz) vagy térbeli mintázatfelismerést (CNN felszínborításhoz) igényel.",
+      "suggested": "A mélytanulás akkor indokolt, ha a feladat hosszú távú függőségeket hordozó szekvenciális adatok kezelését (például LSTM-mel vízhozam-előrejelzéshez) vagy térbeli mintázatok felismerését (például CNN-nel felszínborítás-osztályozáshoz) igényli.",
+      "reason": "A „probléma ... adatokat igényel” szerkezet tükörfordítás-ízű; magyarul természetesebb a „feladat ... kezelését/felismerését igényli” megfogalmazás."
+    },
+    {
+      "line_approx": 1227,
+      "category": "register",
+      "severity": "low",
+      "original": "Mind a TensorFlow, mind a PyTorch képes implementálni ezeket az architektúrákat; a választás közöttük nagyrészt személyes preferencia és intézményi támogatás kérdése.",
+      "suggested": "Mind a TensorFlow, mind a PyTorch alkalmas e architektúrák megvalósítására; a választás nagyrészt személyes preferencia és intézményi támogatás kérdése.",
+      "reason": "Az „implementálni” feleslegesen idegen hangzású; a „megvalósítás” természetesebb magyar tudományos regiszterben."
+    },
+    {
+      "line_approx": 1229,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Annak a hidrológusnak, aki LSTM-et szeretne tanítani vízhozam-előrejelzéshez, a NeuralHydrology könyvtár (https://neuralhydrology.readthedocs.io/) biztosítja a legközvetlenebb utat.",
+      "suggested": "Annak a hidrológusnak, aki LSTM-et szeretne tanítani vízhozam-előrejelzéshez, a NeuralHydrology könyvtár (https://neuralhydrology.readthedocs.io/) kínálja a legegyszerűbb megoldást.",
+      "reason": "A „biztosítja a legközvetlenebb utat” angolos metafora; a „kínálja a legegyszerűbb megoldást” természetesebb."
+    },
+    {
+      "line_approx": 1230,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Kezeli a CAMELS és LamaH-CE formátumú adatbetöltést",
+      "suggested": "Kezeli a CAMELS és a LamaH-CE formátumú adatok betöltését",
+      "reason": "Az „adatbetöltés” itt főnevesített, tömörített szerkezet; a feloldott forma gördülékenyebb és természetesebb."
+    },
+    {
+      "line_approx": 1231,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy regionális LSTM tanítása a CAMELS adathalmazon a NeuralHydrology-val egy konfigurációs fájl megírását igényli",
+      "suggested": "Egy regionális LSTM CAMELS adathalmazon, a NeuralHydrology segítségével történő tanításához elegendő egy konfigurációs fájlt megírni",
+      "reason": "Az eredeti mondat szerkezete nehézkes és angolos; az átfogalmazás magyarosabb és könnyebben követhető."
+    },
+    {
+      "line_approx": 1232,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A könyvtár absztrahálja a PyTorch sablonjait, lehetővé téve a hidrológus számára, hogy a hidrológiai döntésekre összpontosítson",
+      "suggested": "A könyvtár elrejti a PyTorch sablonkódjának részleteit, így a hidrológus a hidrológiai döntésekre összpontosíthat",
+      "reason": "Az „absztrahálja” és a „lehetővé téve” szerkezet fordításszagú; magyarul természetesebb az egyszerűbb igei megoldás."
+    },
+    {
+      "line_approx": 1234,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Felszínborítás-osztályozáshoz U-Net-tel a segmentation_models_pytorch könyvtár előre implementált U-Net és hasonló architektúrákat biztosít előtanított kódolókkal",
+      "suggested": "Felszínborítás-osztályozáshoz, U-Net használatakor a segmentation_models_pytorch könyvtár előre megvalósított U-Net- és hasonló architektúrákat kínál előtanított kódolókkal",
+      "reason": "Az „implementált” és a mondat eleji szerkezet angolos; a javított változat magyarosabb és stilárisan egységesebb."
+    },
+    {
+      "line_approx": 1235,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "Az előtanított kódoló megközelítés maga is a transzfer tanulás egy formája",
+      "suggested": "Az előtanított kódolóra épülő megközelítés maga is a transzfer tanulás egyik formája",
+      "reason": "A „kódoló megközelítés” szerkezet kissé darabos; az „épülő megközelítés” természetesebb magyarul."
+    },
+    {
+      "line_approx": 1241,
+      "category": "register",
+      "severity": "low",
+      "original": "A GEE gépi tanulási API-ja támogatja a random forest, gradiens-erősítéses fa, szupport vektor gép és naív Bayes osztályozók futtatását",
+      "suggested": "A GEE gépi tanulási API-ja támogatja a random forest, a gradiens-erősítéses fák, a szupportvektor-gépek és a naiv Bayes-osztályozók használatát",
+      "reason": "A felsorolás részben angolos, részben terminológiailag ingadozó; a javított alak egységesebb és magyarosabb."
+    },
+    {
+      "line_approx": 1242,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az előny az, hogy az adatok soha nem hagyják el a felhőt",
+      "suggested": "Ennek az a fő előnye, hogy az adatokat nem kell letölteni a felhőből",
+      "reason": "A „soha nem hagyják el a felhőt” szó szerinti, marketinges hangzású fordulat; a javított változat tárgyszerűbb."
+    },
+    {
+      "line_approx": 1243,
+      "category": "register",
+      "severity": "low",
+      "original": "A teljes Tisza vízgyűjtő ... felszínborítás-osztályozásához Sentinel-2-ből a GEE percek alatt produkálja az osztályozott térképet",
+      "suggested": "A teljes Tisza vízgyűjtő ... Sentinel-2-adatokon végzett felszínborítás-osztályozásához a GEE percek alatt előállítja az osztályozott térképet",
+      "reason": "A „produkálja” köznyelvibb és angolosabb hatású; az „előállítja” akadémiai szövegben természetesebb."
+    },
+    {
+      "line_approx": 1289,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 23.8.5 Eszközök megfeleltetése régiók között",
+      "suggested": "### 23.8.5 Eszközök régiók szerinti összevetése",
+      "reason": "A „megfeleltetése régiók között” nehézkes és kissé tükörfordítás-szerű; az „összevetése” természetesebb címalak."
+    },
+    {
+      "line_approx": 1330,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Kutatási vagy szűrési célokra: bármely modell elfogadható, amely jó teszthalmaz-teljesítményt ér el, de mindig ellenőrizzük a megtanult összefüggéseket a fizikai elvárásokkal szemben.",
+      "suggested": "Kutatási vagy szűrési célokra bármely modell elfogadható, amely jól teljesít a teszthalmazon, de a feltárt összefüggéseket mindig vessük össze a fizikai elvárásokkal.",
+      "reason": "A „teszthalmaz-teljesítményt ér el” és a „megtanult összefüggések” angolos megfogalmazás; a javított változat idiomatikusabb magyarul."
+    }
+  ]
+}

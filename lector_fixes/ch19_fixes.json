@@ -1,0 +1,1078 @@
+{
+  "chapter": "ch19",
+  "total_issues": 134,
+  "fixes": [
+    {
+      "line_approx": 7,
+      "category": "register",
+      "severity": "medium",
+      "original": "nem lenne mihez kalibrálniuk",
+      "suggested": "nem lenne olyan megfigyelési alapjuk, amelyhez kalibrálhatók",
+      "reason": "A személytelen „eszközöknek nem lenne mihez kalibrálniuk” szerkezet magyarul nehézkes és kissé pongyola; akadémiai regiszterben természetesebb a tárgyias megfogalmazás."
+    },
+    {
+      "line_approx": 9,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a fejezet azt mutatja be, miként épülnek fel ezek az adattípusok, hogyan tárolhatók, és hogyan elemezhetők térinformatikai rendszerben.",
+      "suggested": "Ez a fejezet azt mutatja be, miként épülnek fel ezek az adattípusok, hogyan tároljuk őket, és hogyan elemezzük őket térinformatikai rendszerben.",
+      "reason": "A „hogyan tárolhatók, és hogyan elemezhetők” modális-passzív szerkezet angolosan tárgytalan; a magyar tudományos prózában természetesebb az aktív igehasználat."
+    },
+    {
+      "line_approx": 10,
+      "category": "word_order",
+      "severity": "low",
+      "original": "azokra az attribútumokra, amelyek egy kút azonosítóját, mélységét, használatát és vízadóval való kapcsolatát leírják",
+      "suggested": "azokra az attribútumokra, amelyek leírják a kút azonosítóját, mélységét, használatát és a vízadóval való kapcsolatát",
+      "reason": "Természetesebb magyar szórend: a vonatkozó mellékmondatban az ige korábban áll, és a birtokos szerkezet is gördülékenyebb."
+    },
+    {
+      "line_approx": 10,
+      "category": "register",
+      "severity": "low",
+      "original": "megvizsgáljuk a fúrási adatokat: megvizsgáljuk a FúrásiRétegsor (BoreholeLog) táblát",
+      "suggested": "részletesebben áttekintjük a fúrási adatokat: a FúrásiRétegsor (BoreholeLog) táblát",
+      "reason": "A „megvizsgáljuk” közeli ismétlése stilárisan nehézkes."
+    },
+    {
+      "line_approx": 19,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A geológiai képződmények és a vízadó-határok közötti térbeli kapcsolat szoros: a vízadó-térképek lényegében a geológiai térképek értelmező átfedései, vízföldtani szűrőn keresztül.",
+      "suggested": "A geológiai képződmények és a vízadó-határok közötti térbeli kapcsolat szoros: a vízadó-térképek lényegében a geológiai térképek vízföldtani szempontú értelmezései.",
+      "reason": "Az „értelmező átfedései, vízföldtani szűrőn keresztül” szó szerinti, angolos metafora; magyarul egyszerűbben és idiomatikusabban fogalmazható."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HydroCode attribútum biztosít kapcsolatot a külső adatbázisokhoz.",
+      "suggested": "A HydroCode attribútum kapcsolatot teremt a külső adatbázisokkal.",
+      "reason": "A „biztosít kapcsolatot” tipikus fordításszagú szerkezet; a „kapcsolatot teremt” természetesebb."
+    },
+    {
+      "line_approx": 32,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Texasban minden fő vízadónak a Texas Water Development Board számkódot rendel",
+      "suggested": "Texasban a Texas Water Development Board minden fő vízadóhoz számkódot rendel",
+      "reason": "A vonzat itt természetesebben „valamihez kódot rendel”, nem „valaminek kódot rendel”."
+    },
+    {
+      "line_approx": 40,
+      "category": "register",
+      "severity": "medium",
+      "original": "ez a 2014-es Fenntartható Felszín Alatti Vízgazdálkodási Törvény (Sustainable Groundwater Management Act) betartásának kritikus eszköze",
+      "suggested": "ez a 2014-es Fenntartható Felszín Alatti Vízgazdálkodási Törvény (Sustainable Groundwater Management Act) végrehajtásának kulcsfontosságú eszköze",
+      "reason": "Jogszabályok esetében a „betartásának kritikus eszköze” idegenszerű; a „végrehajtásának kulcsfontosságú eszköze” természetesebb szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 49,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A portál hozzáférést ad 1:100 000 és 1:500 000 méretarányú geológiai térképekhez",
+      "suggested": "A portálon 1:100 000 és 1:500 000 méretarányú geológiai térképek érhetők el",
+      "reason": "A „hozzáférést ad” angol mintájú szerkezet; magyarul egyszerűbb az „elérhetők” forma."
+    },
+    {
+      "line_approx": 52,
+      "category": "register",
+      "severity": "low",
+      "original": "Ezeket a felszín alatti víztesteket az Európai Környezetvédelmi Ügynökségnek (EEA) az Európai Víz Információs Rendszeren (WISE) keresztül jelentik",
+      "suggested": "Ezekről a felszín alatti víztestekről az Európai Víz Információs Rendszeren (WISE) keresztül jelentenek adatokat az Európai Környezetvédelmi Ügynökségnek (EEA)",
+      "reason": "A jelenlegi megfogalmazás személytelen és kissé darabos; az „adatokat jelentenek” pontosabb és gördülékenyebb."
+    },
+    {
+      "line_approx": 54,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "vízgazdálkodási célból meghatározott igazgatási-szabályozási egységek",
+      "suggested": "vízgazdálkodási célból kijelölt igazgatási és szabályozási egységek",
+      "reason": "A kötőjeles jelzőhalmozás nehézkes; a mellérendelő forma természetesebb."
+    },
+    {
+      "line_approx": 63,
+      "category": "register",
+      "severity": "low",
+      "original": "ez egy webalapú platform",
+      "suggested": "ez webalapú platform",
+      "reason": "A névelő itt felesleges, angolos hatású."
+    },
+    {
+      "line_approx": 72,
+      "category": "plural",
+      "severity": "low",
+      "original": "A kutak megbízható hozzáférést nyújtottak a felszín alatti vízhez még a száraz időszakokban is",
+      "suggested": "A kutak megbízható hozzáférést nyújtottak a felszín alatti vízhez a száraz időszakokban is",
+      "reason": "A „még” itt felesleges nyomatékosítás; a mondat magyarul természetesebb nélküle."
+    },
+    {
+      "line_approx": 76,
+      "category": "register",
+      "severity": "medium",
+      "original": "E nyilvántartások egységes térbeli adatbázisba integrálása a vízföldtani informatika egyik alapvető kihívása.",
+      "suggested": "E nyilvántartások egységes térbeli adatbázisba való integrálása a vízföldtani informatika egyik alapvető kihívása.",
+      "reason": "A „integrálása” előtt a „való” hiánya miatt a szerkezet kissé nyers; a teljes névutós forma szabatosabb."
+    },
+    {
+      "line_approx": 92,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "monitoring adatokat",
+      "suggested": "megfigyelési adatokat",
+      "reason": "A magyar szaknyelvben sokszor elfogadott a „monitoring”, de ebben a tankönyvi regiszterben a „megfigyelési adatok” természetesebb és magyarosabb."
+    },
+    {
+      "line_approx": 100,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A hévízkutak Magyarország-szerte megfigyelhető térbeli eloszlása erős korrelációt mutat a pannon aljzat mélységével és a szigetelő üledékes kitöltés vastagságával",
+      "suggested": "A hévízkutak Magyarország-szerte megfigyelhető térbeli eloszlása szorosan összefügg a pannon aljzat mélységével és a szigetelő üledékes kitöltés vastagságával",
+      "reason": "Az „erős korrelációt mutat” statisztikai anglicizmus; folyószövegben a „szorosan összefügg” természetesebb."
+    },
+    {
+      "line_approx": 112,
+      "category": "register",
+      "severity": "medium",
+      "original": "a szabványosított csereformátumok elengedhetetlenné válnak nem pusztán választható lehetőségként",
+      "suggested": "a szabványosított csereformátumok már nem pusztán választható lehetőségek, hanem elengedhetetlenek",
+      "reason": "A mondatzáró szerkezet angolos és nehézkes; az átrendezett állítmányi szerkezet magyarul világosabb."
+    },
+    {
+      "line_approx": 208,
+      "category": "register",
+      "severity": "low",
+      "original": "A relatív és abszolút magasságok közötti különbség alapvető fontosságú.",
+      "suggested": "A relatív és az abszolút magasság közötti különbség alapvető fontosságú.",
+      "reason": "Természetesebb magyar tudományos megfogalmazás; a fogalmak itt általános értelemben, egyes számban gördülékenyebbek."
+    },
+    {
+      "line_approx": 210,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A nyers fúrási adatokat szinte mindig a felszín alatti mélységként rögzítik",
+      "suggested": "A nyers fúrási adatokat szinte mindig felszín alatti mélységként rögzítik",
+      "reason": "A névelő felesleges, angolos szerkezetet eredményez."
+    },
+    {
+      "line_approx": 213,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Több kút adatainak integrálásához",
+      "suggested": "Több kút adatainak összevonásához",
+      "reason": "Az „integrálás” itt angolos, a magyar szaknyelvben az „összevonás” vagy „együttes kezelése” természetesebb."
+    },
+    {
+      "line_approx": 213,
+      "category": "terminology",
+      "severity": "low",
+      "original": "fúrási kontrollpontok között",
+      "suggested": "fúrási adatpontok között",
+      "reason": "A „kontrollpont” itt tükörfordítás-ízű; geológiai-hidrogeológiai kontextusban az „adatpont” természetesebb."
+    },
+    {
+      "line_approx": 214,
+      "category": "register",
+      "severity": "low",
+      "original": "A TopElev és BottomElev mezők egy közös datumhoz",
+      "suggested": "A TopElev és BottomElev mezők egy közös magassági alapfelülethez",
+      "reason": "A „datum” szakmailag érthető, de magyar tudományos prózában a „magassági alapfelület” természetesebb és pontosabb."
+    },
+    {
+      "line_approx": 222,
+      "category": "calque",
+      "severity": "medium",
+      "original": "amelyeket nem lehet egy vizsgálati területen keresztül korrelálni",
+      "suggested": "amelyek egy vizsgálati területen belül nem vethetők össze egymással",
+      "reason": "Az „egy területen keresztül korrelálni” szó szerinti angol tükör; magyarul körülírással természetesebb."
+    },
+    {
+      "line_approx": 223,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az átalakítással az adatok térbeli interpolációs algoritmusok bemenetévé válnak",
+      "suggested": "Az átalakítás után az adatok térbeli interpolációs algoritmusok bemeneteként használhatók",
+      "reason": "A „bemenetévé válnak” szerkezet nehézkes, fordításszagú."
+    },
+    {
+      "line_approx": 223,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyek a képződmények tetejét és alját ábrázoló folytonos felületeket generálhatnak",
+      "suggested": "amelyek a képződmények tetejét és alját leíró folytonos felületeket hozhatnak létre",
+      "reason": "A „generálhatnak” és az „ábrázoló felületek” együtt angolosan hangzik; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A LogType attribútum lehetővé teszi, hogy ugyanaz a BoreholeLog tábla egyazon kút különböző típusú függőleges adatait tárolja.",
+      "suggested": "A LogType attribútum révén ugyanabban a BoreholeLog táblában egyazon kúthoz többféle függőleges adat is tárolható.",
+      "reason": "A „lehetővé teszi, hogy” és a teljes mondatszerkezet angolos; a magyarosabb megoldás tömörebb."
+    },
+    {
+      "line_approx": 227,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A LogType-ra szűrve a felhasználó az egyes információtípusokat külön-külön jelenítheti meg és elemezheti.",
+      "suggested": "A felhasználó a LogType alapján szűrve az egyes információtípusokat külön-külön jelenítheti meg és elemezheti.",
+      "reason": "Természetesebb szórend és magyarosabb határozói szerkezet."
+    },
+    {
+      "line_approx": 231,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A fúrási rétegsor nyers anyagleírásait a vízföldtani modellezésben való felhasználás előtt értelmezni és osztályozni kell.",
+      "suggested": "A fúrási rétegsor nyers anyagleírásait a vízföldtani modellezés előtt értelmezni és osztályozni kell.",
+      "reason": "A „-ban való felhasználás előtt” körülményes, angolos főneves szerkezet."
+    },
+    {
+      "line_approx": 232,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez az értelmezési folyamat a nyers kőzettani intervallumok csoportosítását jelenti nevesített rétegtani vagy hidrosztratigráfiai egységekbe",
+      "suggested": "Ez az értelmezési folyamat azt jelenti, hogy a nyers kőzettani intervallumokat nevesített rétegtani vagy hidrosztratigráfiai egységekbe soroljuk",
+      "reason": "Az „-ását jelenti” típusú főnevesítés nehézkes; igei szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 236,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "agyag záró réteggel",
+      "suggested": "agyagos záróréteggel",
+      "reason": "A „záróréteg” egybeírandó, és az „agyagos” jelző szakmailag, nyelvileg is természetesebb."
+    },
+    {
+      "line_approx": 236,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy újabb agyagréteg által elválasztva",
+      "suggested": "egy újabb agyagréteggel elválasztva",
+      "reason": "Az „által” itt feleslegesen hivataloskodó, angolos szerkezetet eredményez."
+    },
+    {
+      "line_approx": 238,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyet a BoreholeLog táblában a HGUID és HGUCode mezők segítségével lehet tárolni",
+      "suggested": "amely a BoreholeLog táblában a HGUID és HGUCode mezőkben tárolható",
+      "reason": "A „mezők segítségével lehet tárolni” körülményes és fordításszagú."
+    },
+    {
+      "line_approx": 239,
+      "category": "mirror_translation",
+      "severity": "low",
+      "original": "A Material mező megőrzi az eredeti fúrómesteri leírást referenciaként",
+      "suggested": "A Material mező referenciaként megőrzi az eredeti fúrómesteri leírást",
+      "reason": "Természetesebb magyar szórend."
+    },
+    {
+      "line_approx": 243,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A szabványosított rétegtani keretrendszerek segítenek az értelmezések korlátozásában",
+      "suggested": "A szabványosított rétegtani keretrendszerek szűkítik az értelmezések lehetséges körét",
+      "reason": "A „segítenek ... korlátozásában” angolos, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 244,
+      "category": "register",
+      "severity": "low",
+      "original": "jó gyakorlat az értelmezési kritériumok dokumentálása és a bizonytalansági becslések feltüntetése",
+      "suggested": "célszerű dokumentálni az értelmezési kritériumokat és feltüntetni a bizonytalansági becsléseket",
+      "reason": "A „jó gyakorlat” angol mintájú fordulat; a javasolt megoldás magyarosabb."
+    },
+    {
+      "line_approx": 257,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A BorePoint tipikus felhasználási módjai a rétegtani szintek",
+      "suggested": "A BorePoint tipikus felhasználási területei közé tartozik a rétegtani szintek",
+      "reason": "A „felhasználási módjai” itt angolos; a mondat magyarul átfogalmazva természetesebb."
+    },
+    {
+      "line_approx": 257,
+      "category": "calque",
+      "severity": "medium",
+      "original": "ahol egy formációhatárt harántolnak",
+      "suggested": "ahol a fúrás egy formációhatárt keresztez",
+      "reason": "A „harántolnak” itt idegenszerű, személytelenül használt ige; a „keresztez” természetesebb."
+    },
+    {
+      "line_approx": 259,
+      "category": "word_order",
+      "severity": "high",
+      "original": "Minden BoreLine objektum egy függőleges vonalszakasz tetejét és alját meghatározó magassággal, amely egy adott anyag, formáció vagy kútkiképzési elem által jellemzett mélységintervallumot képvisel.",
+      "suggested": "Minden BoreLine objektum egy függőleges vonalszakaszt képvisel, amelynek tetejét és alját magassági értékek határozzák meg, és amely egy adott anyaghoz, formációhoz vagy kútkiképzési elemhez tartozó mélységintervallumot jelöl.",
+      "reason": "A mondat szerkezete hibásan tagolt, nehezen követhető, erősen fordításszagú."
+    },
+    {
+      "line_approx": 260,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a BoreholeLog tábla minden intervallumához egy-egy BoreLine-nal kapcsolódnak össze",
+      "suggested": "és a BoreholeLog tábla minden intervallumához egy-egy BoreLine tartozik",
+      "reason": "Az „összekapcsolódnak” itt feleslegesen bonyolult, angolos megoldás."
+    },
+    {
+      "line_approx": 262,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "lehetővé téve a formáció szerinti szimbolizálást, a vízföldtani egység szerinti lekérdezést és a szülő kút objektumra való visszacsatolást",
+      "suggested": "így a formáció szerint szimbolizálhatók, vízföldtani egység szerint lekérdezhetők, és visszakapcsolhatók a szülő kútobjektumhoz",
+      "reason": "Az angol present participle szerkezet magyarban nehézkes; igei állítmányokkal természetesebb."
+    },
+    {
+      "line_approx": 266,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 19.4.2 BorePoint objektumok létrehozása: Rétegtani szintek",
+      "suggested": "### 19.4.2 BorePoint objektumok létrehozása: rétegtani szintek",
+      "reason": "A cím második fele nem tulajdonnév, ezért magyar helyesírás szerint nem indokolt a nagy kezdőbetű."
+    },
+    {
+      "line_approx": 269,
+      "category": "heading",
+      "severity": "low",
+      "original": "A BoreholeLog tábla kontextusában",
+      "suggested": "A BoreholeLog tábla esetében",
+      "reason": "A „kontextusában” tipikus tükörfordítás; magyar tudományos prózában az „esetében” természetesebb."
+    },
+    {
+      "line_approx": 403,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Az OVF felszín alatti víz monitoring kútjai",
+      "suggested": "Az OVF felszín alatti víz megfigyelőkútjai",
+      "reason": "A címben a „monitoring kút” idegenszerű; a magyar szaknyelvben természetesebb a „megfigyelőkút” vagy „figyelőkút”."
+    },
+    {
+      "line_approx": 405,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az OVF az ország területén elosztott felszín alatti víz figyelőkút-hálózatot tart fenn.",
+      "suggested": "Az OVF az ország egész területére kiterjedő felszín alatti vízfigyelőkút-hálózatot tart fenn.",
+      "reason": "Az „ország területén elosztott” angolos, nehézkes szerkezet; a „víz figyelőkút-hálózat” is természetesebb egybeírt összetétellel."
+    },
+    {
+      "line_approx": 406,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "rendszeres időközönként vízminőségi mintavételezésre kerül sor",
+      "suggested": "rendszeres időközönként vízminőségi mintát vesznek",
+      "reason": "A „kerül sor” típusú körülményes, személytelen szerkezet helyett természetesebb az igei megfogalmazás."
+    },
+    {
+      "line_approx": 409,
+      "category": "register",
+      "severity": "medium",
+      "original": "A figyelőkutaknál végzett rendszeres vízszintmérések lehetővé teszik potenciometrikus felszín-térképek készítését",
+      "suggested": "A figyelőkutakban végzett rendszeres vízszintmérések alapján potenciometrikus felszíntérképek készíthetők",
+      "reason": "A „lehetővé teszik ... készítését” fordításszagú; az igei szerkezet tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 413,
+      "category": "register",
+      "severity": "medium",
+      "original": "amely potenciálisan a túlzott kitermelésre vagy az éghajlatváltozás utánpótlódásra gyakorolt hatásaira utal",
+      "suggested": "ami a túlzott kitermelésre vagy az éghajlatváltozás utánpótlódást befolyásoló hatásaira utalhat",
+      "reason": "A „potenciálisan” és a főnevesített szerkezet nehézkes; magyarul természetesebb az „utalhat” és az igeibb megfogalmazás."
+    },
+    {
+      "line_approx": 416,
+      "category": "register",
+      "severity": "low",
+      "original": "A figyelőkút-hálózat biztosítja az adatokat ezekhez az értékelésekhez.",
+      "suggested": "A figyelőkút-hálózat szolgáltatja az ezekhez az értékelésekhez szükséges adatokat.",
+      "reason": "A „biztosítja az adatokat” angolos; a „szolgáltatja” vagy „ellátja ... adatokkal” természetesebb."
+    },
+    {
+      "line_approx": 417,
+      "category": "register",
+      "severity": "medium",
+      "original": "A kutakat meghatározott felszín alatti víztestekhez rendelik",
+      "suggested": "A kutakat egy-egy meghatározott felszín alatti víztesthez sorolják",
+      "reason": "A „rendelik” itt kissé tükörfordításos; a „sorolják” természetesebb szakmai megfogalmazás."
+    },
+    {
+      "line_approx": 420,
+      "category": "register",
+      "severity": "medium",
+      "original": "A monitoring adatok a data.vizugy.hu -- az OVF adatportálján -- keresztül érhetők el.",
+      "suggested": "A monitoringadatok a data.vizugy.hu oldalon, az OVF adatportálján érhetők el.",
+      "reason": "A „keresztül érhetők el” angolos; a magyarban egyszerűbben „oldalon ... érhetők el”."
+    },
+    {
+      "line_approx": 422,
+      "category": "register",
+      "severity": "low",
+      "original": "Az adatok magukban foglalják a történelmi nyilvántartásokat",
+      "suggested": "Az adatok a régebbi nyilvántartásokat is tartalmazzák",
+      "reason": "A „magukban foglalják” és a „történelmi nyilvántartások” szókapcsolat itt idegenszerű; a magyar tudományos prózában egyszerűbb megoldás természetesebb."
+    },
+    {
+      "line_approx": 423,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ez teszi az OVF portált a felszín alatti vízi adathozzáférés terén a USGS NWIS legközelebbi magyar megfelelőjévé.",
+      "suggested": "Így az OVF portálja a felszín alatti vizek adatainak hozzáférésében a USGS NWIS legközelebbi magyar megfelelőjének tekinthető.",
+      "reason": "Az „Ez teszi ... megfelelőjévé” szó szerinti angol szerkezet; magyarul természetesebb az „tekinthető” fordulat."
+    },
+    {
+      "line_approx": 427,
+      "category": "calque",
+      "severity": "medium",
+      "original": "ami azt jelenti, hogy minden kilométernyi mélység után a hőmérséklet közel ötven fokkal emelkedik",
+      "suggested": "vagyis kilométerenként közel 50 °C-kal nő a hőmérséklet",
+      "reason": "Az „ami azt jelenti, hogy” tipikus tükörfordítás; a „vagyis” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 430,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hévíz hasznosításának Magyarországon évszázados hagyománya van",
+      "suggested": "A hévíz hasznosításának évszázados hagyománya van Magyarországon",
+      "reason": "Természetesebb magyar szórend."
+    },
+    {
+      "line_approx": 431,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A legnagyobb hévízkút-mezők Hajdúszoboszlón (a keleti Alföldön), Hévízen (Nyugat-Magyarországon, Európa legnagyobb biológiailag aktív hévíztavánál), Budapesten (a Duna mentén több hévízforrás-rendszer) és Szentes--Hódmezővásárhelyen (a délkeleti Alföldön) találhatók.",
+      "suggested": "A legnagyobb hévízkútmezők Hajdúszoboszlón (az Alföld keleti részén), Hévízen (Nyugat-Magyarországon, Európa legnagyobb biológiailag aktív hévíztava mellett), Budapesten (a Duna mentén, több hévízforrás-rendszer térségében) és Szentes--Hódmezővásárhely térségében (az Alföld délkeleti részén) találhatók.",
+      "reason": "Több helyen angolos, zsúfolt jelzős szerkezet szerepel; a földrajzi megnevezések is természetesebbek átfogalmazva."
+    },
+    {
+      "line_approx": 433,
+      "category": "register",
+      "severity": "medium",
+      "original": "Adatkezelési szempontból a hévízkutakat ugyanabban a geoadatbázis-keretrendszerben tároljuk, mint a többi kutat",
+      "suggested": "Adatkezelési szempontból a hévízkutakat ugyanabban a geoadatbázisban kezeljük, mint a többi kutat",
+      "reason": "A „geoadatbázis-keretrendszer” itt feleslegesen nehézkes és idegenszerű."
+    },
+    {
+      "line_approx": 447,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hévízkutak GIS-alapú térbeli elemzése egyértelmű mintázatokat tár fel.",
+      "suggested": "A hévízkutak GIS-alapú térbeli elemzése jól kirajzolódó mintázatokat mutat.",
+      "reason": "A „tár fel” itt kissé angolos; a „mutat” vagy „kirajzolódnak” természetesebb."
+    },
+    {
+      "line_approx": 448,
+      "category": "plural",
+      "severity": "low",
+      "original": "a repedezett mezozoos karbonátokból termelők",
+      "suggested": "a repedezett mezozoos karbonátokból termelő kutak",
+      "reason": "Az elliptikus többes számú szerkezet itt nehezen követhető; a főnév kiírása világosabb."
+    },
+    {
+      "line_approx": 454,
+      "category": "heading",
+      "severity": "medium",
+      "original": "WHYMAP: A világ vízföldtani térképe",
+      "suggested": "WHYMAP: a világ vízföldtani térképe",
+      "reason": "A magyar címadásban a kettőspont utáni rész általában kisbetűvel kezdődik."
+    },
+    {
+      "line_approx": 456,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Zászlóshajó terméke a Világ Felszín Alatti Vízkészleteinek Térképe",
+      "suggested": "Legfontosabb terméke a Világ felszín alatti vízkészleteinek térképe",
+      "reason": "A „zászlóshajó termék” angol mintájú tükörfordítás; magyarul a „legfontosabb termék” természetesebb."
+    },
+    {
+      "line_approx": 463,
+      "category": "register",
+      "severity": "low",
+      "original": "Oktatási célokra és egy vizsgálati terület kezdeti feltérképezéséhez felbecsülhetetlen értékű első áttekintést nyújt.",
+      "suggested": "Oktatási célokra és egy vizsgálati terület előzetes áttekintéséhez igen hasznos kiindulópontot ad.",
+      "reason": "A „felbecsülhetetlen értékű első áttekintés” túlzó és kissé fordításszagú."
+    },
+    {
+      "line_approx": 468,
+      "category": "register",
+      "severity": "medium",
+      "original": "A GGIS a részt vevő országok felszín alatti vízi adatait összesíti",
+      "suggested": "A GGIS a részt vevő országok felszín alatti vizekre vonatkozó adatait összesíti",
+      "reason": "A „felszín alatti vízi adatok” szerkezet idegenszerű; a „... vizekre vonatkozó adatok” természetesebb."
+    },
+    {
+      "line_approx": 474,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Felszín alatti víz monitoring",
+      "suggested": "Felszín alatti víz megfigyelése",
+      "reason": "Az alcímben a „monitoring” helyett van bevett magyar megfelelő."
+    },
+    {
+      "line_approx": 475,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Nemzeti felszín alatti víz monitoring hálózatokból származó pontadatok",
+      "suggested": "Nemzeti felszín alatti víz megfigyelőhálózatokból származó pontadatok",
+      "reason": "A „monitoring hálózat” helyett a magyar szaknyelvben természetesebb a „megfigyelőhálózat”."
+    },
+    {
+      "line_approx": 484,
+      "category": "register",
+      "severity": "medium",
+      "original": "A nemzetközi hallgató számára a GGIS kiindulópontot jelent bármely ország felszín alatti vízi információinak eléréséhez.",
+      "suggested": "A nemzetközi hallgatók számára a GGIS jó kiindulópont bármely ország felszín alatti vizekre vonatkozó információinak eléréséhez.",
+      "reason": "Az egyes számú „hallgató” itt általános alanyként kevésbé természetes, a „felszín alatti vízi információk” pedig idegenszerű."
+    },
+    {
+      "line_approx": 486,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a globális felszín alatti vízi adatokhoz egyetlen hozzáférési pontot kíván biztosítani",
+      "suggested": "a globális felszín alatti vízadatokhoz egységes hozzáférési pontot kíván nyújtani",
+      "reason": "Az „egyetlen hozzáférési pontot biztosítani” angolos; az „egységes hozzáférési pontot nyújtani” természetesebb."
+    },
+    {
+      "line_approx": 490,
+      "category": "register",
+      "severity": "medium",
+      "original": "A megosztott erőforrás kihívása",
+      "suggested": "A megosztott erőforrások kezelésének kihívása",
+      "reason": "A cím jelenlegi alakja kissé töredékes és angolos; a bővebb megfogalmazás világosabb."
+    },
+    {
+      "line_approx": 491,
+      "category": "register",
+      "severity": "low",
+      "original": "A felszín alatti víz nem tiszteli a politikai határokat.",
+      "suggested": "A felszín alatti víz nem igazodik a politikai határokhoz.",
+      "reason": "A „nem tiszteli” metaforikus, publicisztikus; tudományos regiszterben az „nem igazodik” tárgyilagosabb."
+    },
+    {
+      "line_approx": 492,
+      "category": "register",
+      "severity": "medium",
+      "original": "és kezelése az osztozó államok közötti együttműködést igényel",
+      "suggested": "és kezelése az érintett államok együttműködését igényli",
+      "reason": "Az „osztozó államok” szokatlan, kevéssé idiomatikus."
+    },
+    {
+      "line_approx": 497,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezen vízadók kezelése megköveteli a folyó--vízadó kölcsönhatások és a folyószabályozás utánpótlódásra gyakorolt hatásának figyelembevételét.",
+      "suggested": "E vízadók kezelése megköveteli a folyó és a vízadó közötti kölcsönhatások, valamint a folyószabályozás utánpótlódásra gyakorolt hatásának figyelembevételét.",
+      "reason": "A mondat szerkezete tömöríthető és magyarosabbá tehető."
+    },
+    {
+      "line_approx": 502,
+      "category": "register",
+      "severity": "medium",
+      "original": "biztosítja az ilyen együttműködés technikai alapját",
+      "suggested": "megteremti az ilyen együttműködés technikai alapját",
+      "reason": "A „biztosítja” túlhasznált, angolos segédige; a „megteremti” pontosabb."
+    },
+    {
+      "line_approx": 508,
+      "category": "register",
+      "severity": "medium",
+      "original": "Magyarország hévízkészleteken, alluviális vízadókon és karsztos rendszereken osztozik mind a hét szomszédjával.",
+      "suggested": "Magyarország mind a hét szomszédjával osztozik hévízkészleteken, alluviális vízadókon és karsztos rendszereken.",
+      "reason": "Természetesebb magyar szórend."
+    },
+    {
+      "line_approx": 511,
+      "category": "heading",
+      "severity": "medium",
+      "original": "A Nyírség átszivárgó vízadó rendszere: Regionális vízföldtani esettanulmány",
+      "suggested": "A Nyírség átszivárgó vízadó rendszere: regionális vízföldtani esettanulmány",
+      "reason": "A kettőspont utáni rész magyar címadásban általában kisbetűs."
+    },
+    {
+      "line_approx": 512,
+      "category": "register",
+      "severity": "medium",
+      "original": "valós vizsgálatban állnak össze egységes egésszé",
+      "suggested": "egy valós esettanulmányban kapcsolódnak össze egységes egésszé",
+      "reason": "A „valós vizsgálatban” itt kevésbé természetes; az „esettanulmányban” pontosabb."
+    },
+    {
+      "line_approx": 513,
+      "category": "adjective_stacking",
+      "severity": "low",
+      "original": "A kelet-magyarországi Nyírség",
+      "suggested": "A Nyírség Kelet-Magyarországon",
+      "reason": "A földrajzi jelzőhalmozás enyhén angolos; a körülírt forma természetesebb."
+    },
+    {
+      "line_approx": 519,
+      "category": "register",
+      "severity": "medium",
+      "original": "Negyedidőszaki üledékek építik fel",
+      "suggested": "Negyedidőszaki üledékek alkotják",
+      "reason": "Az „építik fel” itt kissé mechanikus; az „alkotják” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 530,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "impermeábilisnak",
+      "suggested": "vízzárónak",
+      "reason": "A magyar hidrogeológiai szaknyelvben a „vízzáró” természetesebb és közkeletűbb."
+    },
+    {
+      "line_approx": 541,
+      "category": "register",
+      "severity": "medium",
+      "original": "többszintű észlelésre vannak kiképezve",
+      "suggested": "többszintű megfigyelésre alakították ki őket",
+      "reason": "A „vannak kiképezve” nehézkes, részben szenvedő jellegű szerkezet."
+    },
+    {
+      "line_approx": 544,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a többszintű monitoring elrendezés kulcsfontosságú",
+      "suggested": "Ez a többszintű megfigyelési elrendezés kulcsfontosságú",
+      "reason": "A „monitoring elrendezés” idegenszerű; van természetes magyar megfelelő."
+    },
+    {
+      "line_approx": 549,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "a gradiens megfordult lefelé irányulóvá, gyakorlatilag felszín alatti víz megcsapoló területből a szivattyúzás által indukált átszivárgásos utánpótlódási területté alakítva a tájat",
+      "suggested": "a gradiens lefelé irányulóvá fordult, így a táj gyakorlatilag természetes megcsapoló területből a szivattyúzás által kiváltott átszivárgásos utánpótlódási területté vált",
+      "reason": "A jelenlegi szerkezet nehézkes és angolos; az átfogalmazás világosabb és magyarosabb."
+    },
+    {
+      "line_approx": 556,
+      "category": "other",
+      "severity": "high",
+      "original": "Józsa-F1 | 253 682 | 240 427 | 126,0 | 84--96 | Alsó-pleisztocén | 96,5 |",
+      "suggested": "Józsa-F1 sorának koordinátái és felszínmagassága ellenőrzendő, mert megegyeznek a Pallag-F1/F2/F3 adataival.",
+      "reason": "Valószínű adatismétlődés vagy táblázati hiba; ez nem pusztán stilisztikai, hanem tartalmi ellenőrzést igényel."
+    },
+    {
+      "line_approx": 561,
+      "category": "register",
+      "severity": "medium",
+      "original": "A figyelőkút-adatbázis felhasználásával az alsó-pleisztocén vízadó potenciometrikus felszín-térképeit több időszakra -- 1966-ra, 1986-ra és 2006-ra -- szerkesztették meg.",
+      "suggested": "A figyelőkút-adatbázis alapján az alsó-pleisztocén vízadó potenciometrikus felszíntérképeit több időpontra -- 1966-ra, 1986-ra és 2006-ra -- készítették el.",
+      "reason": "A „felhasználásával ... szerkesztették meg” körülményes; az „időszakra” helyett itt pontosabb az „időpontra”."
+    },
+    {
+      "line_approx": 562,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A térképek krigelés interpolációval készültek",
+      "suggested": "A térképek krigeléssel készültek",
+      "reason": "A „krigelés interpoláció” tautologikus és idegenszerű; a „krigelés” önmagában elegendő."
+    },
+    {
+      "line_approx": 576,
+      "category": "register",
+      "severity": "medium",
+      "original": "A térképeket a Surfer geostatisztikai szoftvercsomag és szabványos GIS-eszközök segítségével készítették",
+      "suggested": "A térképeket a Surfer geostatisztikai szoftvercsomaggal és szabványos GIS-eszközökkel készítették",
+      "reason": "A „segítségével készítették” körülményes; az eszközhatározós forma magyarosabb."
+    },
+    {
+      "line_approx": 584,
+      "category": "other",
+      "severity": "high",
+      "original": "a régió monitoring és termelő kútjaiból vett vízmintákat trícium- (³H) és deutérium- (²H) tartalomra elemezték karlsruhei (Németország), bécsi (Ausztria) és később a debreceni ATOMKI atommagkutató laboratórium (Marton, 2009) munkatársai.",
+      "suggested": "a régió megfigyelő- és termelőkútjaiból vett vízmintákat trícium- (³H) és deutériumtartalomra elemezték a karlsruhei (Németország), a bécsi (Ausztria), majd később a debreceni ATOMKI atommagkutató laboratórium munkatársai (Marton, 2009).",
+      "reason": "A mondat nyelvtanilag bizonytalan, a felsorolás és a jelzők kapcsolása hibás; emellett a „monitoring kút” terminológia is javítandó."
+    },
+    {
+      "line_approx": 598,
+      "category": "register",
+      "severity": "medium",
+      "original": "A korgradiensek független megerősítést nyújtottak",
+      "suggested": "A korgradiensek függetlenül is megerősítették",
+      "reason": "A főnevesített szerkezet helyett az igei megoldás természetesebb."
+    },
+    {
+      "line_approx": 602,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "krigelés interpolációval",
+      "suggested": "krigeléssel",
+      "reason": "Ugyanaz a terminológiai probléma ismétlődik: a „krigelés interpoláció” feleslegesen redundáns."
+    },
+    {
+      "line_approx": 604,
+      "category": "register",
+      "severity": "medium",
+      "original": "ez a jelenlegi felszíni domborzat reliefje több mint kétszerese",
+      "suggested": "ami a jelenlegi felszíni domborzat reliefjének több mint kétszerese",
+      "reason": "A mondat jelenlegi alakja nyelvtanilag hibás; hiányzik a birtokos szerkezet."
+    },
+    {
+      "line_approx": 615,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Izotópos kormeghatározás: Felszín alatti víz kora és utánpótlódási ütemek",
+      "suggested": "Izotópos kormeghatározás: felszín alatti víz kora és utánpótlódási ütemek",
+      "reason": "A kettőspont utáni címrész magyarul általában kisbetűs."
+    },
+    {
+      "line_approx": 1201,
+      "category": "register",
+      "severity": "medium",
+      "original": "A **Piper-diagram** (háromszögdiagram) a szabványos megjelenítési eszköz a felszín alatti víz minták főion-összetétel szerinti osztályozásához.",
+      "suggested": "A **Piper-diagram** (háromszögdiagram) a felszín alatti vízminták főion-összetétel szerinti osztályozásának szabványos megjelenítési eszköze.",
+      "reason": "Természetesebb magyar birtokos szerkezet; a „felszín alatti víz minták” forma angolos."
+    },
+    {
+      "line_approx": 1202,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A diagram két háromszögből -- egy kation (Ca, Mg, Na+K) és egy anion (HCO₃, SO₄, Cl) háromszögből -- és egy központi rombuszból áll, amely mindkettőt kombinálja.",
+      "suggested": "A diagram két háromszögből -- egy kation- (Ca, Mg, Na+K) és egy anionháromszögből (HCO₃, SO₄, Cl) --, valamint egy központi rombuszból áll, amely a kettőt egyesíti.",
+      "reason": "A „kombinálja” itt tükörfordítás; a „mindkettőt kombinálja” helyett magyarosabb az „egyesíti”."
+    },
+    {
+      "line_approx": 1203,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Minden vízminta egyetlen pontként ábrázolódik a rombuszban, a fő ionok relatív arányai (milliekvivalens/liter egységben) alapján.",
+      "suggested": "A rombuszban minden vízmintát egyetlen pontként ábrázolnak, a fő ionok relatív arányai alapján (milliekvivalens/literben).",
+      "reason": "Az „ábrázolódik” kerülendő, személytelen-szenvedő jellegű megfogalmazás; a mértékegység megadása is természetesebb."
+    },
+    {
+      "line_approx": 1204,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A hasonló vízkémiai jellegű minták csoportosulnak, míg a különböző geológiai környezetekből származók különálló mezőkre válnak szét.",
+      "suggested": "A hasonló vízkémiai jellegű minták csoportosulnak, míg a különböző geológiai környezetekből származó minták elkülönülő mezőkben jelennek meg.",
+      "reason": "A „mezőkre válnak szét” szó szerinti, nehézkes fordulat."
+    },
+    {
+      "line_approx": 1206,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "GIS-kontextusban a Piper-diagramok kétlépcsős munkafolyamattal kapcsolhatók össze térbeli térképekkel:",
+      "suggested": "GIS-környezetben a Piper-diagramok kétlépcsős munkafolyamat révén kapcsolhatók össze térképi megjelenítéssel:",
+      "reason": "A „kontextusban” és a „térbeli térképekkel” angolos, tautologikus megfogalmazás."
+    },
+    {
+      "line_approx": 1209,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Minden mintát vízkémiai fáciesbe sorolnak (pl. Ca-HCO₃, Na-Cl, kevert típus) a rombuszban elfoglalt pozíciója alapján.",
+      "suggested": "A mintákat a rombuszban elfoglalt helyzetük alapján vízkémiai fáciesekbe sorolják (pl. Ca-HCO₃, Na-Cl, kevert típus).",
+      "reason": "A mondat szórendje és személytelen szerkezete javítható; a „pozíció” helyett magyarosabb a „helyzet”."
+    },
+    {
+      "line_approx": 1212,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a kút pont objektumok szimbolizálásával",
+      "suggested": "a kútpont-objektumok szimbolizálásával",
+      "reason": "Angolos jelzőlánc; összetételként természetesebb."
+    },
+    {
+      "line_approx": 1213,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az eredményül kapott térkép a víztípusok földrajzi eloszlását mutatja, amely jellemzően korrelál a vízadó kőzettanával, mélységével és az áramlási úthosszal.",
+      "suggested": "Az így kapott térkép a víztípusok földrajzi eloszlását mutatja, amely rendszerint összefügg a vízadó kőzettanával, mélységével és az áramlási út hosszával.",
+      "reason": "A „korrelál” és az „áramlási úthossz” itt angolos, nehézkes terminushasználat."
+    },
+    {
+      "line_approx": 1216,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "VKI-megfelelőségi értékelésekhez",
+      "suggested": "a VKI szerinti megfelelőségértékeléshez",
+      "reason": "A jelenlegi alak nehézkes és részben tükörfordítás; a szaknyelvben természetesebb az egybeírt „megfelelőségértékelés”."
+    },
+    {
+      "line_approx": 1217,
+      "category": "register",
+      "severity": "low",
+      "original": "Az egyes víztípusok térbeli csoportosulása szennyezési csóvákat, geológiai határokat vagy vízadók közötti keveredési zónákat tárhat fel.",
+      "suggested": "Az egyes víztípusok térbeli csoportosulása szennyezőanyag-csóvákra, geológiai határokra vagy a vízadók közötti keveredési zónákra utalhat.",
+      "reason": "A „tárhat fel” itt kissé túl direkt; magyar tudományos stílusban természetesebb az „utalhat”."
+    },
+    {
+      "line_approx": 1224,
+      "category": "register",
+      "severity": "medium",
+      "original": "Jobb: E víztípusok térbeli eloszlása Magyarországon, a kútadatbázis kémiai elemzéseiből térképezve.",
+      "suggested": "Jobb: E víztípusok magyarországi térbeli eloszlása, a kútadatbázis kémiai adatai alapján térképezve.",
+      "reason": "Az „elemzéseiből térképezve” nehézkes; a „magyarországi” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 1225,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A vízkémiai fáciesek erős korrelációt mutatnak a vízadó típusával és mélységével.",
+      "suggested": "A vízkémiai fáciesek szorosan összefüggnek a vízadó típusával és mélységével.",
+      "reason": "Az „erős korrelációt mutatnak” angolos tudományos fordulat."
+    },
+    {
+      "line_approx": 1229,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Magyarország egyik legjelentősebb felszín alatti vízminőségi kihívása -- és egyben a GIS-alapú kockázattérképezés szempontjából közvetlenül releváns probléma -- az Alföld nagy részén a felszín alatti vízben természetesen megemelkedett arzénkoncentráció.",
+      "suggested": "Magyarország egyik legjelentősebb felszín alatti vízminőségi kihívása -- és a GIS-alapú kockázattérképezés szempontjából is közvetlenül releváns probléma -- az Alföld nagy részén a felszín alatti víz természetesen megemelkedett arzénkoncentrációja.",
+      "reason": "A mondatvégi főnévi szerkezet jelenleg nehézkes; a birtokos szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 1230,
+      "category": "plural",
+      "severity": "low",
+      "original": "A legtöbb felszín alatti vízszennyezéssel ellentétben, amely emberi tevékenységből ered, az arzéndúsulás a magyar felszín alatti vízben geogén eredetű: a vízadó üledékek természetes geokémiai folyamataiból származik.",
+      "suggested": "A legtöbb, emberi tevékenységből eredő felszín alatti vízszennyezéssel ellentétben a magyarországi felszín alatti vizek arzéndúsulása geogén eredetű: a vízadó üledékek természetes geokémiai folyamataiból származik.",
+      "reason": "A vonatkozó mellékmondat és az egyes számú „vízben” szerkezet kissé idegenszerű."
+    },
+    {
+      "line_approx": 1233,
+      "category": "register",
+      "severity": "medium",
+      "original": "Magyarországon mintegy 400 000 ember van egészségügyi kockázatnak kitéve az ivóvízben lévő arzén miatt.",
+      "suggested": "Magyarországon mintegy 400 000 embert ér egészségügyi kockázat az ivóvíz arzéntartalma miatt.",
+      "reason": "A „van ... kitéve” szerkezet nehézkes, angolos."
+    },
+    {
+      "line_approx": 1234,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Az érintett terület a déli és középső Alföld hat megyéjére terjed ki, a legsúlyosabb szennyezéssel Békés, Csongrád és Jász-Nagykun-Szolnok megyékben.",
+      "suggested": "Az érintett terület a déli és középső Alföld hat megyéjére terjed ki; a legsúlyosabb szennyezés Békés, Csongrád és Jász-Nagykun-Szolnok megyében fordul elő.",
+      "reason": "A jelenlegi utótag hiányos szerkezetű; a mondat lezárása magyarosabb így."
+    },
+    {
+      "line_approx": 1238,
+      "category": "passive_voice",
+      "severity": "low",
+      "original": "A maximálisan megengedett arzénkoncentrációt az ivóvízben 50 μg/L-ről 10 μg/L-re csökkentették",
+      "suggested": "Az ivóvízben megengedett maximális arzénkoncentráció 50 μg/L-ről 10 μg/L-re csökkent",
+      "reason": "A személytelen többes szám helyett egyszerűbb és természetesebb az állapotváltozást kifejező szerkezet."
+    },
+    {
+      "line_approx": 1240,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a tízszeres csökkentés drámaian megnövelte a nem megfelelőnek minősített vízellátó rendszerek számát.",
+      "suggested": "Ez a tízszeres szigorítás jelentősen megnövelte a nem megfelelőnek minősített vízellátó rendszerek számát.",
+      "reason": "A „drámaian” publicisztikusabb; tudományos regiszterben a „jelentősen” jobb."
+    },
+    {
+      "line_approx": 1241,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Amint Marton (2009) megjegyzi, mindig jóval olcsóbb egy szennyezőanyag első 90%-át eltávolítani, mint a maradék 10%-ot",
+      "suggested": "Ahogy Marton (2009) megjegyzi, egy szennyezőanyag első 90%-ának eltávolítása mindig jóval olcsóbb, mint a maradék 10%-é",
+      "reason": "A jelenlegi szerkezet kissé beszélt nyelvi és angolos; a főnévi szerkezet itt gördülékenyebb."
+    },
+    {
+      "line_approx": 1244,
+      "category": "register",
+      "severity": "low",
+      "original": "Az alföldi felszín alatti vizekben lévő arzén",
+      "suggested": "Az alföldi felszín alatti vizek arzéntartalma",
+      "reason": "Tömörebb, természetesebb tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1246,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ennek eredményeként az arzénkoncentráció a mélységgel és az áramlási út mentén megtett távolsággal növekszik",
+      "suggested": "Ennek eredményeként az arzénkoncentráció a mélységgel és az áramlási út menti távolsággal nő",
+      "reason": "A „mentén megtett távolsággal” körülményes, angolos szerkezet."
+    },
+    {
+      "line_approx": 1249,
+      "category": "register",
+      "severity": "medium",
+      "original": "Fontos megjegyezni, hogy az EU Víz Keretirányelv definíciója szerint",
+      "suggested": "Fontos megjegyezni, hogy az EU Víz Keretirányelvének meghatározása szerint",
+      "reason": "A „definíciója szerint” tükörfordítás; a „meghatározása szerint” magyarosabb."
+    },
+    {
+      "line_approx": 1250,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "kontaminációként definiál",
+      "suggested": "szennyeződésként határoz meg",
+      "reason": "A „kontamináció” itt feleslegesen idegen szó, a „definiál” pedig angolos."
+    },
+    {
+      "line_approx": 1251,
+      "category": "calque",
+      "severity": "medium",
+      "original": "az érintett vízellátások megfelelőségének biztosítására",
+      "suggested": "az érintett vízellátó rendszerek előírásoknak való megfelelésének biztosítására",
+      "reason": "A „vízellátások megfelelősége” túl elvont, angolos szerkezet."
+    },
+    {
+      "line_approx": 1254,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "A felszín alatti vízben lévő arzén térbeli eloszlása a kútadatbázis arzénkoncentráció-adatainak az érintett régión át történő interpolálásával térképezhető.",
+      "suggested": "A felszín alatti víz arzénkoncentrációjának térbeli eloszlása a kútadatbázis adatai alapján, az érintett régióra végzett interpolációval térképezhető fel.",
+      "reason": "Az „át történő interpolálásával” nehézkes, bürokratikus szerkezet."
+    },
+    {
+      "line_approx": 1256,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Fedvényelemzéssel az arzénkoncentráció-térképek és a népsűrűségi adatok kombinálásával a legnagyobb kockázatú közösségek azonosíthatók.",
+      "suggested": "Fedvényelemzéssel, az arzénkoncentráció-térképek és a népsűrűségi adatok együttes értékelésével azonosíthatók a legnagyobb kockázatnak kitett települések.",
+      "reason": "A „közösségek” itt angolból átvett, pontatlan szó; magyar szaknyelvben inkább „települések” vagy „lakossági csoportok”."
+    },
+    {
+      "line_approx": 1257,
+      "category": "register",
+      "severity": "low",
+      "original": "A geológiai térképekkel (konkrétan a pannon üledékek vastagságával és kőzettanával) való további fedvényelemzés",
+      "suggested": "A geológiai térképekkel -- különösen a pannon üledékek vastagságát és kőzettanát bemutató rétegekkel -- végzett további fedvényelemzés",
+      "reason": "A „konkrétan” itt köznyelvibb; a szerkezet is pontosítható."
+    },
+    {
+      "line_approx": 1268,
+      "category": "register",
+      "severity": "medium",
+      "original": "A GIS-alapú kockázattérképezés, amely az arzénadatokat a népsűrűséggel kombinálja, irányítja a vízkezelési beruházások priorizálását.",
+      "suggested": "A GIS-alapú kockázattérképezés, amely az arzénadatokat a népsűrűségi adatokkal kapcsolja össze, segíti a vízkezelési beruházások rangsorolását.",
+      "reason": "A „priorizálás” kerülendő anglicizmus; a „rangsorolás” bevett magyar megfelelő."
+    },
+    {
+      "line_approx": 1279,
+      "category": "adjective_stacking",
+      "severity": "high",
+      "original": "amely minden felszín alatti víz ellátási kút körül védőidomok kijelölését írja elő",
+      "suggested": "amely minden felszín alatti vízellátó kút körül védőidomok kijelölését írja elő",
+      "reason": "A „felszín alatti víz ellátási kút” hibás, angolos jelzőlánc."
+    },
+    {
+      "line_approx": 1286,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A területhasználati korlátozások tiltják új szennyezési források",
+      "suggested": "A területhasználati korlátozások megtiltják új szennyezőforrások",
+      "reason": "A „szennyezési forrás” kevésbé természetes, mint a „szennyezőforrás”."
+    },
+    {
+      "line_approx": 1290,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezek a zónák háromdimenziós testek (idomok, szó szerint „formák\" vagy „alakzatok\")",
+      "suggested": "Ezek a zónák háromdimenziós testek, vagyis idomok",
+      "reason": "A zárójeles „szó szerint” magyarázat itt didaktikusan és idegenszerűen hat."
+    },
+    {
+      "line_approx": 1291,
+      "category": "word_order",
+      "severity": "low",
+      "original": "mind laterálisan, mind vertikálisan kiterjed a vízadón keresztül",
+      "suggested": "a vízadóban oldalirányban és függőlegesen egyaránt kiterjed",
+      "reason": "A „laterálisan, vertikálisan” idegen hangzású; a magyar megfelelő természetesebb."
+    },
+    {
+      "line_approx": 1298,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a befogási területet numerikus felszín alatti víz áramlási modellekkel határozzák meg",
+      "suggested": "a befogási területet numerikus felszín alatti vízáramlási modellekkel határozzák meg",
+      "reason": "A „víz áramlási” különírás hibás; bevett alak a „vízáramlási”."
+    },
+    {
+      "line_approx": 1299,
+      "category": "calque",
+      "severity": "high",
+      "original": "A részecskekövetési algoritmusok hipotetikus vízrészecskék útvonalait nyomozzák visszafelé az időben",
+      "suggested": "A részecskekövetési algoritmusok hipotetikus vízrészecskék pályáját időben visszafelé követik",
+      "reason": "A „nyomozzák visszafelé” szó szerinti, hibás tükörfordítás."
+    },
+    {
+      "line_approx": 1300,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A modell kimenetét GIS-be importálják a befogási terület felszíni vetületét ábrázoló poligon objektumokként.",
+      "suggested": "A modell kimenetét a GIS-be importálják, mégpedig a befogási terület felszíni vetületét ábrázoló poligonobjektumok formájában.",
+      "reason": "A „poligon objektumokként” angolos szerkezet; az összetett főnév természetesebb."
+    },
+    {
+      "line_approx": 1304,
+      "category": "register",
+      "severity": "low",
+      "original": "amelyek megmutatják, mennyi időbe telne, mire egy adott ponton a vízadóba juttatott szennyezőanyag eléri a kutat",
+      "suggested": "amelyek megmutatják, mennyi idő alatt érné el a kutat az adott ponton a vízadóba jutó szennyezőanyag",
+      "reason": "Tömörebb, gördülékenyebb magyar mondatszerkesztés."
+    },
+    {
+      "line_approx": 1307,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "A védőidom-poligonokat fedvényként kombinálják a területhasználati térképekkel, a geológiai sebezhetőségi térképekkel",
+      "suggested": "A védőidomok poligonjait fedvényként kombinálják a területhasználati és a geológiai sebezhetőségi térképekkel",
+      "reason": "A kötőjeles, angolos összetétel és a jelzőhalmozás nehézkes."
+    },
+    {
+      "line_approx": 1311,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "az átszivárgó vízadó-rendszer azt jelenti, hogy",
+      "suggested": "az átszivárgó vízadó-rendszer miatt",
+      "reason": "Az „azt jelenti, hogy” tipikus angol mintájú fordulat, itt felesleges."
+    },
+    {
+      "line_approx": 1315,
+      "category": "register",
+      "severity": "medium",
+      "original": "Marton (2009) által jelzett gyakorlati komplikáció",
+      "suggested": "Marton (2009) által említett gyakorlati nehézség",
+      "reason": "A „komplikáció” itt felesleges idegen szó."
+    },
+    {
+      "line_approx": 1317,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez a megállapítás jól szemlélteti a felszín alatti vízkitermelés és a forrásvédelem közötti feszültséget -- olyan feszültséget, amelyet a GIS-alapú elemzés láthatóvá és számszerűsíthetővé tesz.",
+      "suggested": "Ez a megállapítás jól szemlélteti a felszín alatti vízkitermelés és a forrásvédelem közötti ellentmondást, amelyet a GIS-alapú elemzés jól láthatóvá tesz és számszerűsít.",
+      "reason": "Az ismételt „feszültséget” angolos retorikai szerkezet."
+    },
+    {
+      "line_approx": 1331,
+      "category": "plural",
+      "severity": "low",
+      "original": "A Nyírségből és a tágabb északkeleti Alföldről származó hosszú távú monitoring adatsor",
+      "suggested": "A Nyírségből és a tágabb északkeleti Alföldről származó hosszú távú monitoringadatsor",
+      "reason": "Az összetétel egybeírandó; így természetesebb szaknyelvi alak."
+    },
+    {
+      "line_approx": 1342,
+      "category": "register",
+      "severity": "medium",
+      "original": "A potenciometrikus felszín válasza a csökkentett szivattyúzásra azonban nem az egyszerű, egyenletes helyreállás volt, amelyet várni lehetett.",
+      "suggested": "A potenciometrikus felszín válasza a csökkentett szivattyúzásra azonban nem az a egyszerű, egyenletes helyreállás volt, amelyre számítani lehetett.",
+      "reason": "A „várni lehetett” kissé szó szerinti; a „számítani lehetett” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 1360,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A védőidomokat az fedőrétegek tényleges átszivárgási tulajdonságai alapján kell lehatárolni",
+      "suggested": "A védőidomokat a fedőrétegek tényleges átszivárgási tulajdonságai alapján kell lehatárolni",
+      "reason": "Nyelvtani hiba: hibás névelőhasználat („az fedőrétegek”)."
+    },
+    {
+      "line_approx": 1372,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Annak megértése, hogy az egyes adattípusok hogyan táplálják a modellezési folyamatot",
+      "suggested": "Annak megértése, hogy az egyes adattípusok hogyan szolgálják a modellezési folyamatot",
+      "reason": "A „táplálják a folyamatot” angolból átvett metafora."
+    },
+    {
+      "line_approx": 1389,
+      "category": "register",
+      "severity": "low",
+      "original": "A budapesti terület vízföldtani modellje sűrű adatokra támaszkodhat és nagy megbízhatóságú eredményeket produkálhat",
+      "suggested": "A budapesti térség vízföldtani modellje sűrű adatokra támaszkodhat, és nagy megbízhatóságú eredményeket adhat",
+      "reason": "A „terület” és a „produkálhat” kevésbé természetes; a „térség” és „adhat” magyarosabb."
+    }
+  ]
+}

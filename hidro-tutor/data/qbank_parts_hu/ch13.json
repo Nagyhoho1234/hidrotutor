@@ -1,0 +1,2779 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mit jelent a LiDAR rövidítés?",
+    "options": [
+      "A) Light Detection and Ranging",
+      "B) Laser Imaging Detection and Ranging",
+      "C) Light Discrimination and Reflection",
+      "D) Laser Intensity Detection and Resolution"
+    ],
+    "correct": "A",
+    "explanation": "LiDAR = Light Detection and Ranging."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a fénysebesség vákuumban?",
+    "options": [
+      "A) 150 000 000 m/s",
+      "B) 299 792 458 m/s",
+      "C) 340 m/s",
+      "D) 3 000 000 m/s"
+    ],
+    "correct": "B",
+    "explanation": "~299 792 458 m/s."
+  },
+  {
+    "type": "mcq",
+    "question": "A LiDAR távolságszámítás képlete: d = ?",
+    "options": [
+      "A) c × t",
+      "B) c × t / 2",
+      "C) 2c / t",
+      "D) c² × t"
+    ],
+    "correct": "B",
+    "explanation": "d = c·t/2."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a kétirányú utazási idő 1000 m-re?",
+    "options": [
+      "A) 0,67 μs",
+      "B) 66,7 μs",
+      "C) 6,67 μs",
+      "D) 0,667 ns"
+    ],
+    "correct": "C",
+    "explanation": "2000/(3×10⁸) ≈ 6,67 μs."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik két rendszer biztosítja a repülőgép pozícióját LiDAR-mérésnél?",
+    "options": [
+      "A) GPS és radarmagasságmérő",
+      "B) Differenciális GPS és IMU",
+      "C) Barométer és csillagkövető",
+      "D) GLONASS és lézertávolságmérő"
+    ],
+    "correct": "B",
+    "explanation": "DGPS + IMU, Kálmán-szűrővel integrálva."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen algoritmus integrálja a GPS és IMU adatait?",
+    "options": [
+      "A) Fourier-transzformáció",
+      "B) Főkomponens-elemzés",
+      "C) Kálmán-szűrő",
+      "D) Legkisebb négyzetek"
+    ],
+    "correct": "C",
+    "explanation": "Kálmán-szűrő."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen hullámhosszon működik a topográfiai LiDAR?",
+    "options": [
+      "A) 532 nm",
+      "B) 1064 nm",
+      "C) 400 nm",
+      "D) 10 600 nm"
+    ],
+    "correct": "B",
+    "explanation": "1064 nm közeli infravörös."
+  },
+  {
+    "type": "mcq",
+    "question": "Miért nem méri a hagyományos LiDAR a víz alatti terepet?",
+    "options": [
+      "A) A víz elnyeli a közeli infravörös fényt",
+      "B) Túl lassú az impulzus",
+      "C) A víz visszaveri a fényt",
+      "D) Az érzékelő nem elég érzékeny"
+    ],
+    "correct": "A",
+    "explanation": "A víz elnyeli az 1064 nm-es hullámhosszat."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány visszaverődést rögzíthetnek a modern rendszerek impulzusonként?",
+    "options": [
+      "A) 1-2",
+      "B) 4-7",
+      "C) 20-30",
+      "D) 100+"
+    ],
+    "correct": "B",
+    "explanation": "4-7 diszkrét visszaverődés."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi teszi egyedülállóvá a LiDAR-t a hidrológiában?",
+    "options": [
+      "A) Olcsó",
+      "B) Áthatol a lombkoronán",
+      "C) Színes képet készít",
+      "D) Mindig működik"
+    ],
+    "correct": "B",
+    "explanation": "Többszörös visszaverődés → lombkoronán áthatolás."
+  },
+  {
+    "type": "mcq",
+    "question": "20 m magas fa: mennyi az első-utolsó visszaverődés időkülönbsége?",
+    "options": [
+      "A) 13,3 ns",
+      "B) 133 ns",
+      "C) 1330 ns",
+      "D) 1,33 μs"
+    ],
+    "correct": "B",
+    "explanation": "2×20/(3×10⁸) ≈ 133 ns."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a teljes hullámformájú LiDAR előnye?",
+    "options": [
+      "A) Kisebb adatmennyiség",
+      "B) A jel teljes időbeli lefolyását rögzíti",
+      "C) Olcsóbb",
+      "D) Csak felszínt rögzít"
+    ],
+    "correct": "B",
+    "explanation": "A visszatérő jel teljes profiljának rögzítése."
+  },
+  {
+    "type": "mcq",
+    "question": "Hányszor nagyobbak a hullámforma-fájlok?",
+    "options": [
+      "A) 1-2×",
+      "B) 5-10×",
+      "C) 50×",
+      "D) 1000×"
+    ],
+    "correct": "B",
+    "explanation": "5-10-szer nagyobbak."
+  },
+  {
+    "type": "mcq",
+    "question": "Standard lineáris LiDAR repülési magassága?",
+    "options": [
+      "A) 100-500 m",
+      "B) 1000-2000 m",
+      "C) 7000-9000 m",
+      "D) 15 000 m"
+    ],
+    "correct": "B",
+    "explanation": "1000-2000 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Standard LiDAR pontsűrűsége?",
+    "options": [
+      "A) 0,01-0,1",
+      "B) 2-8",
+      "C) 50-100",
+      "D) 1000+"
+    ],
+    "correct": "B",
+    "explanation": "2-8 pont/m²."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Geiger-üzemmód fő újítása?",
+    "options": [
+      "A) Egyenként követi az impulzusokat",
+      "B) 2D fotonszámláló mátrix",
+      "C) Csak vízfelszínt méri",
+      "D) GPS nélkül működik"
+    ],
+    "correct": "B",
+    "explanation": "Kétdimenziós fotonszámláló érzékelőmátrix."
+  },
+  {
+    "type": "mcq",
+    "question": "Geiger-üzemmódú repülési magasság?",
+    "options": [
+      "A) 500-1000 m",
+      "B) 1000-2000 m",
+      "C) 7000-9000 m",
+      "D) 20 000 m"
+    ],
+    "correct": "C",
+    "explanation": "7000-9000 m."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány Geiger-repülőgéppel lenne az USA éves lefedése lehetséges?",
+    "options": [
+      "A) 1",
+      "B) 3",
+      "C) 10",
+      "D) 50"
+    ],
+    "correct": "B",
+    "explanation": "Három repülőgéppel."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 3DEP?",
+    "options": [
+      "A) USGS LiDAR-program",
+      "B) Európai drón-projekt",
+      "C) Műholdas DDM",
+      "D) GPS-hálózat"
+    ],
+    "correct": "A",
+    "explanation": "3D Elevation Program."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a 3DEP jelenlegi szabványa?",
+    "options": [
+      "A) QL3",
+      "B) QL2",
+      "C) QL1",
+      "D) QL0"
+    ],
+    "correct": "B",
+    "explanation": "QL2 (~10 cm, 2 pt/m²)."
+  },
+  {
+    "type": "mcq",
+    "question": "QL2 függőleges pontossága?",
+    "options": [
+      "A) ~1 m",
+      "B) ~50 cm",
+      "C) ~10 cm",
+      "D) ~1 cm"
+    ],
+    "correct": "C",
+    "explanation": "~10 cm RMSE."
+  },
+  {
+    "type": "mcq",
+    "question": "USA QL2-lefedettség 2025-re?",
+    "options": [
+      "A) 30%",
+      "B) 50%",
+      "C) >80%",
+      "D) 100%"
+    ],
+    "correct": "C",
+    "explanation": "Meghaladta a 80%-ot."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette a LAS-t?",
+    "options": [
+      "A) NASA",
+      "B) ASPRS",
+      "C) USGS",
+      "D) ESRI"
+    ],
+    "correct": "B",
+    "explanation": "ASPRS."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen fájltípus a LAS?",
+    "options": [
+      "A) Szöveges",
+      "B) Bináris",
+      "C) XML",
+      "D) Kép"
+    ],
+    "correct": "B",
+    "explanation": "Bináris formátum."
+  },
+  {
+    "type": "mcq",
+    "question": "LAS kód: felszín?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 6",
+      "D) 9"
+    ],
+    "correct": "B",
+    "explanation": "2 = ground."
+  },
+  {
+    "type": "mcq",
+    "question": "LAS kód: víz?",
+    "options": [
+      "A) 2",
+      "B) 6",
+      "C) 9",
+      "D) 17"
+    ],
+    "correct": "C",
+    "explanation": "9 = water."
+  },
+  {
+    "type": "mcq",
+    "question": "LAS kód: hídpálya?",
+    "options": [
+      "A) 9",
+      "B) 11",
+      "C) 17",
+      "D) 18"
+    ],
+    "correct": "C",
+    "explanation": "17 = bridge deck."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette a LAZ-t?",
+    "options": [
+      "A) Tarboton",
+      "B) Martin Isenburg",
+      "C) Maidment",
+      "D) Yamazaki"
+    ],
+    "correct": "B",
+    "explanation": "Martin Isenburg, LAStools."
+  },
+  {
+    "type": "mcq",
+    "question": "LAZ tömörítési arány?",
+    "options": [
+      "A) 1:1-2:1",
+      "B) 5:1-15:1",
+      "C) 50:1-100:1",
+      "D) 1000:1"
+    ],
+    "correct": "B",
+    "explanation": "5:1-15:1 veszteségmentes."
+  },
+  {
+    "type": "mcq",
+    "question": "Jelenlegi LAS-verzió?",
+    "options": [
+      "A) 1.0",
+      "B) 1.2",
+      "C) 1.4",
+      "D) 2.0"
+    ],
+    "correct": "C",
+    "explanation": "LAS 1.4, 256 osztályozási kóddal."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a COPC?",
+    "options": [
+      "A) Tömörítés",
+      "B) Felhőoptimalizált LAS 1.4",
+      "C) LiDAR-érzékelő",
+      "D) Koordináta-rendszer"
+    ],
+    "correct": "B",
+    "explanation": "Cloud Optimized Point Cloud."
+  },
+  {
+    "type": "mcq",
+    "question": "Cellaszám-növekedés 90 m → 1 m?",
+    "options": [
+      "A) 90×",
+      "B) 900×",
+      "C) 8100×",
+      "D) 81 000×"
+    ],
+    "correct": "C",
+    "explanation": "90² = 8100×."
+  },
+  {
+    "type": "mcq",
+    "question": "USA 1 m-es felbontásban hány cella?",
+    "options": [
+      "A) 8 milliárd",
+      "B) 80 milliárd",
+      "C) 800 milliárd",
+      "D) ~8 billió"
+    ],
+    "correct": "D",
+    "explanation": "~8 × 10¹²."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a TauDEM?",
+    "options": [
+      "A) Műhold",
+      "B) Párhuzamos hidrológiai szoftver",
+      "C) LiDAR-érzékelő",
+      "D) Felhő-tároló"
+    ],
+    "correct": "B",
+    "explanation": "David Tarboton MPI-alapú szoftvere."
+  },
+  {
+    "type": "mcq",
+    "question": "TauDEM párhuzamosítási szabványa?",
+    "options": [
+      "A) OpenMP",
+      "B) CUDA",
+      "C) MPI",
+      "D) MapReduce"
+    ],
+    "correct": "C",
+    "explanation": "Message Passing Interface."
+  },
+  {
+    "type": "mcq",
+    "question": "Yan Liu optimalizálási gyorsítása?",
+    "options": [
+      "A) 10×",
+      "B) 50×",
+      "C) 250×",
+      "D) 1000×"
+    ],
+    "correct": "C",
+    "explanation": "250-szeres."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HUC-rendszer?",
+    "options": [
+      "A) Éghajlati osztályozás",
+      "B) Vízgyűjtő-felosztás",
+      "C) Talajosztályozás",
+      "D) Vízmérce-azonosítás"
+    ],
+    "correct": "B",
+    "explanation": "Hydrologic Unit Code vízgyűjtő-felosztás."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány HUC6 régió van az USA-ban?",
+    "options": [
+      "A) 50",
+      "B) 150",
+      "C) ~350",
+      "D) 2700"
+    ],
+    "correct": "C",
+    "explanation": "~350."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor készült el az USA HAND-térképe?",
+    "options": [
+      "A) 2010",
+      "B) 2016. május 29.",
+      "C) 2020",
+      "D) 2025"
+    ],
+    "correct": "B",
+    "explanation": "2016.05.29."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány nap alatt készült el a HAND-térkép?",
+    "options": [
+      "A) Egy óra",
+      "B) Egy nap",
+      "C) Egy hét",
+      "D) Egy hónap"
+    ],
+    "correct": "B",
+    "explanation": "1 nap szuperszámítógépen."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány mérföldnyi vízfolyás a HAND-számításban?",
+    "options": [
+      "A) 320 000",
+      "B) 1,5 M",
+      "C) 3,2 M",
+      "D) 10 M"
+    ],
+    "correct": "C",
+    "explanation": "3,2 millió mérföld."
+  },
+  {
+    "type": "mcq",
+    "question": "Asztali gépen mennyi ideig tartott volna?",
+    "options": [
+      "A) 1 év",
+      "B) 3 év",
+      "C) 7 év",
+      "D) 20 év"
+    ],
+    "correct": "C",
+    "explanation": "Becsült 7 év."
+  },
+  {
+    "type": "mcq",
+    "question": "HEC-RAS modellezés költsége az egész USA-ra?",
+    "options": [
+      "A) 10 M$",
+      "B) 100 M$",
+      "C) ~1,6 Mrd $",
+      "D) 50 Mrd $"
+    ],
+    "correct": "C",
+    "explanation": "~1,6 milliárd $ (500 $/mérföld)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hol van a National Water Center?",
+    "options": [
+      "A) Washington",
+      "B) Houston",
+      "C) Tuscaloosa, AL",
+      "D) Boulder, CO"
+    ],
+    "correct": "C",
+    "explanation": "Tuscaloosa, Alabama."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az OpenTopography?",
+    "options": [
+      "A) LiDAR-gyártó",
+      "B) Webes LiDAR-platform",
+      "C) Pontfelhő-formátum",
+      "D) GPS-hálózat"
+    ],
+    "correct": "B",
+    "explanation": "SDSC által üzemeltetett platform."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki finanszírozza az OpenTopography-t?",
+    "options": [
+      "A) USGS",
+      "B) NSF",
+      "C) NASA",
+      "D) NOAA"
+    ],
+    "correct": "B",
+    "explanation": "Nemzeti Tudományos Alap."
+  },
+  {
+    "type": "mcq",
+    "question": "Batimetrikus LiDAR hullámhossza?",
+    "options": [
+      "A) 1064 nm",
+      "B) ~532 nm",
+      "C) 10 600 nm",
+      "D) 355 nm"
+    ],
+    "correct": "B",
+    "explanation": "532 nm zöld fény."
+  },
+  {
+    "type": "mcq",
+    "question": "A fénytörés a víz felszínén melyik törvényt követi?",
+    "options": [
+      "A) Newton",
+      "B) Bernoulli",
+      "C) Snellius-Descartes",
+      "D) Stefan-Boltzmann"
+    ],
+    "correct": "C",
+    "explanation": "Snellius-Descartes-féle törési törvény."
+  },
+  {
+    "type": "mcq",
+    "question": "DSM vs DDM: mi a különbség?",
+    "options": [
+      "A) Nincs",
+      "B) DSM: növényzet+épületek; DDM: csupasz felszín",
+      "C) DDM részletesebb",
+      "D) DSM csak vizet tartalmaz"
+    ],
+    "correct": "B",
+    "explanation": "DSM tartalmazza az objektumokat, DDM nem."
+  },
+  {
+    "type": "mcq",
+    "question": "Leggyakoribb hiba a LiDAR-hidrológiában?",
+    "options": [
+      "A) Rossz koordináta",
+      "B) DSM használata DDM helyett",
+      "C) Túl nagy fájl",
+      "D) Hibás dátum"
+    ],
+    "correct": "B",
+    "explanation": "DSM DDM helyett a legsúlyosabb."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 felbontása?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "5 méteres felbontás."
+  },
+  {
+    "type": "mcq",
+    "question": "DDM-5 koordináta-rendszere?",
+    "options": [
+      "A) WGS84",
+      "B) EOV (EPSG:23700)",
+      "C) UTM 34N",
+      "D) ETRS89"
+    ],
+    "correct": "B",
+    "explanation": "Magyar EOV."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus EEA-10 felbontása?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "C",
+    "explanation": "10 m az EU/EGT-re."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus GLO-30 felbontása?",
+    "options": [
+      "A) 1 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "C",
+    "explanation": "30 m globálisan."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a holland LiDAR-program?",
+    "options": [
+      "A) 3DEP",
+      "B) AHN",
+      "C) DDM-5",
+      "D) SRTM"
+    ],
+    "correct": "B",
+    "explanation": "Actueel Hoogtebestand Nederland."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ICESat-2?",
+    "options": [
+      "A) Légi LiDAR",
+      "B) NASA műholdas fotonszámláló LiDAR",
+      "C) EU adatbázis",
+      "D) Drón-LiDAR"
+    ],
+    "correct": "B",
+    "explanation": "NASA ATLAS fotonszámláló műszer."
+  },
+  {
+    "type": "mcq",
+    "question": "IMU frissítési rátája?",
+    "options": [
+      "A) 1-2 Hz",
+      "B) 10-20 Hz",
+      "C) ≥200 Hz",
+      "D) 10 000 Hz"
+    ],
+    "correct": "C",
+    "explanation": "200+ Hz."
+  },
+  {
+    "type": "mcq",
+    "question": "GPS frissítési rátája?",
+    "options": [
+      "A) 1-2 Hz",
+      "B) 50 Hz",
+      "C) 200 Hz",
+      "D) 1000 Hz"
+    ],
+    "correct": "A",
+    "explanation": "1-2 Hz."
+  },
+  {
+    "type": "mcq",
+    "question": "Repülési vonalak átfedése?",
+    "options": [
+      "A) 0%",
+      "B) 5-10%",
+      "C) 20-30%",
+      "D) 50-60%"
+    ],
+    "correct": "C",
+    "explanation": "20-30%."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi dominálja a felmérés költségét?",
+    "options": [
+      "A) Érzékelő",
+      "B) Repülőgépidő",
+      "C) Feldolgozás",
+      "D) GPS-bázis"
+    ],
+    "correct": "B",
+    "explanation": "A repülőgépidő."
+  },
+  {
+    "type": "mcq",
+    "question": "Topográfiai LiDAR lézertípusa?",
+    "options": [
+      "A) CO₂",
+      "B) HeNe",
+      "C) Nd:YAG",
+      "D) Argon"
+    ],
+    "correct": "C",
+    "explanation": "Nd:YAG 1064 nm."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-Hydro vízfolyáshálózat forrása?",
+    "options": [
+      "A) 3DEP",
+      "B) Copernicus",
+      "C) NHDPlus",
+      "D) HydroSHEDS"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Földfelszín-monitorozás."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a MERIT DEM?",
+    "options": [
+      "A) EU szintvonaltérkép",
+      "B) 90 m-es hibajavított globális DDM",
+      "C) LiDAR formátum",
+      "D) Magyar DDM"
+    ],
+    "correct": "B",
+    "explanation": "Tokiói Egyetemen fejlesztett."
+  },
+  {
+    "type": "mcq",
+    "question": "QL1 minimális pontsűrűsége?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 8",
+      "D) 25"
+    ],
+    "correct": "C",
+    "explanation": "8 pont/m²."
+  },
+  {
+    "type": "mcq",
+    "question": "QL0 minimális pontsűrűsége?",
+    "options": [
+      "A) 2",
+      "B) 8",
+      "C) 25+",
+      "D) 100+"
+    ],
+    "correct": "C",
+    "explanation": "25+ pont/m²."
+  },
+  {
+    "type": "mcq",
+    "question": "LAS 1.4 hány osztályozási kódot támogat?",
+    "options": [
+      "A) 8",
+      "B) 32",
+      "C) 128",
+      "D) 256"
+    ],
+    "correct": "D",
+    "explanation": "256 kód."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Planchon-Darboux?",
+    "options": [
+      "A) Vízfolyás-lehatárolás",
+      "B) Mélyedésfeltöltés",
+      "C) Lejtésszámítás",
+      "D) Pontfelhő-osztályozás"
+    ],
+    "correct": "B",
+    "explanation": "DDM mélyedéseinek feltöltése."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szuperszámítógépen készült a HAND-térkép?",
+    "options": [
+      "A) Fugaku",
+      "B) Roger + Stampede",
+      "C) Summit",
+      "D) MareNostrum"
+    ],
+    "correct": "B",
+    "explanation": "NCSA Roger + TACC Stampede."
+  },
+  {
+    "type": "mcq",
+    "question": "AHN pontsűrűsége?",
+    "options": [
+      "A) 1-2",
+      "B) 4-5",
+      "C) 8+",
+      "D) 25+"
+    ],
+    "correct": "C",
+    "explanation": "8+ pont/m²."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyar árvízvédelem szervezete?",
+    "options": [
+      "A) USGS",
+      "B) OVF",
+      "C) NASA",
+      "D) JRC"
+    ],
+    "correct": "B",
+    "explanation": "Országos Vízügyi Főigazgatóság."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyar gátrendszer védett területe?",
+    "options": [
+      "A) 5 000 km²",
+      "B) 10 000 km²",
+      "C) >20 000 km²",
+      "D) 50 000 km²"
+    ],
+    "correct": "C",
+    "explanation": ">20 000 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "USA NHDPlus vízfolyáshossz?",
+    "options": [
+      "A) 550 000 km",
+      "B) 1,5 M km",
+      "C) 5,5 M km",
+      "D) 15 M km"
+    ],
+    "correct": "C",
+    "explanation": "~5,5 millió km."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a pásztázó tükör feladata?",
+    "options": [
+      "A) Sebesség-szabályozás",
+      "B) Impulzusok széles sávba szórása",
+      "C) Jelerősítés",
+      "D) Hűtés"
+    ],
+    "correct": "B",
+    "explanation": "Széles sávban szórja az impulzusokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki biztosítja a DDM-5-öt?",
+    "options": [
+      "A) USGS",
+      "B) Lechner Tudásközpont",
+      "C) NASA",
+      "D) JRC"
+    ],
+    "correct": "B",
+    "explanation": "Lechner Tudásközpont."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen elemzésre alkalmas az ismételt LiDAR?",
+    "options": [
+      "A) Időjárás-előrejelzés",
+      "B) Terepváltozás-detektálás",
+      "C) Éghajlatmodellezés",
+      "D) Vízkémia"
+    ],
+    "correct": "B",
+    "explanation": "Erózió, süllyedés, urbanizáció detektálása."
+  },
+  {
+    "type": "mcq",
+    "question": "Leica fotonszámláló LiDAR-rendszere?",
+    "options": [
+      "A) ALS80",
+      "B) SPL100",
+      "C) Geiger-3000",
+      "D) TerraScan"
+    ],
+    "correct": "B",
+    "explanation": "SPL100 egyfotonos LiDAR."
+  },
+  {
+    "type": "mcq",
+    "question": "NWM hány szakaszra ad előrejelzést?",
+    "options": [
+      "A) 270 000",
+      "B) 2,7 M",
+      "C) 27 M",
+      "D) 270 M"
+    ],
+    "correct": "B",
+    "explanation": "2,7 millió NHDPlus-szakasz."
+  },
+  {
+    "type": "mcq",
+    "question": "SRTM eredeti felbontása?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "90 m globálisan."
+  },
+  {
+    "type": "mcq",
+    "question": "D8 probléma 1 m-es DDM-en?",
+    "options": [
+      "A) Túl kevés adat",
+      "B) Zajos, kaotikus lefolyásirányok",
+      "C) Szintvonal-hiba",
+      "D) GPS-hiba"
+    ],
+    "correct": "B",
+    "explanation": "Mikrodomborzat zajos D8-at okoz."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus GLO-30 függőleges pontossága?",
+    "options": [
+      "A) 1 m",
+      "B) <4 m LE90",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "4 m-nél jobb (LE90)."
+  },
+  {
+    "type": "mcq",
+    "question": "Geiger-üzemmód lefedési rátája?",
+    "options": [
+      "A) 10-50 km²/h",
+      "B) 50-200 km²/h",
+      "C) 500-1500 km²/h",
+      "D) 5000 km²/h"
+    ],
+    "correct": "C",
+    "explanation": "500-1500 km²/h."
+  },
+  {
+    "type": "mcq",
+    "question": "Mire fejlesztették a Geiger-üzemmódot eredetileg?",
+    "options": [
+      "A) Mezőgazdaság",
+      "B) Katonai felderítés",
+      "C) Óceánkutatás",
+      "D) Urbanisztika"
+    ],
+    "correct": "B",
+    "explanation": "Katonai felderítés."
+  },
+  {
+    "type": "mcq",
+    "question": "Lineáris üzemmód lefedési rátája?",
+    "options": [
+      "A) 1-10 km²/h",
+      "B) 50-200 km²/h",
+      "C) 500-1500 km²/h",
+      "D) 5000 km²/h"
+    ],
+    "correct": "B",
+    "explanation": "50-200 km²/h."
+  },
+  {
+    "type": "mcq",
+    "question": "Pufferméret tartomány-dekompozíciónál?",
+    "options": [
+      "A) 10-50 m",
+      "B) 100-500 m",
+      "C) 1-5 km",
+      "D) 10-50 km"
+    ],
+    "correct": "C",
+    "explanation": "1-5 km."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az I/O szűk keresztmetszet?",
+    "options": [
+      "A) Processzorsebesség",
+      "B) Memóriaméret",
+      "C) Fájlrendszer olvasás/írás sebessége",
+      "D) Hálózat"
+    ],
+    "correct": "C",
+    "explanation": "Sok mag egyidejű fájlhozzáférése."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány byte egy LAS pont?",
+    "options": [
+      "A) 4-8",
+      "B) 26-36",
+      "C) 100-200",
+      "D) 1000+"
+    ],
+    "correct": "B",
+    "explanation": "26-36 byte pontonként."
+  },
+  {
+    "type": "mcq",
+    "question": "Nyilvános portálok milyen formátumban adják a LiDAR-t?",
+    "options": [
+      "A) LAS",
+      "B) LAZ",
+      "C) GeoTIFF",
+      "D) Shapefile"
+    ],
+    "correct": "B",
+    "explanation": "LAZ tömörített formátum."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR fénysebesség-mérésen alapuló távolságmérési technológia.",
+    "correct": "true",
+    "explanation": "Lézerimpulzusok utazási idejéből számít."
+  },
+  {
+    "type": "true_false",
+    "question": "A fénysebesség vákuumban ~299 792 458 m/s.",
+    "correct": "true",
+    "explanation": "Pontos SI-érték."
+  },
+  {
+    "type": "true_false",
+    "question": "A légi LiDAR másodpercenként legfeljebb 1000 impulzust bocsát ki.",
+    "correct": "false",
+    "explanation": "100 000-500 000 impulzus/s."
+  },
+  {
+    "type": "true_false",
+    "question": "A repülőgép gyakorlatilag mozdulatlan egyetlen impulzus alatt.",
+    "correct": "true",
+    "explanation": "c >> repülőgép-sebesség."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IMU pontos abszolút pozíciót ad.",
+    "correct": "false",
+    "explanation": "Az IMU relatív orientációt ad; GPS az abszolút pozíció."
+  },
+  {
+    "type": "true_false",
+    "question": "A topográfiai LiDAR 1064 nm-en működik.",
+    "correct": "true",
+    "explanation": "Nd:YAG lézer."
+  },
+  {
+    "type": "true_false",
+    "question": "A víz jól visszaveri az 1064 nm-es fényt.",
+    "correct": "false",
+    "explanation": "A víz elnyeli."
+  },
+  {
+    "type": "true_false",
+    "question": "Hullámforma-fájlok 5-10× nagyobbak.",
+    "correct": "true",
+    "explanation": "Részletesebb rögzítés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Geiger-üzemmód alacsonyabb magasságon repül.",
+    "correct": "false",
+    "explanation": "7000-9000 m vs 1000-2000 m."
+  },
+  {
+    "type": "true_false",
+    "question": "A LAZ veszteséges tömörítés.",
+    "correct": "false",
+    "explanation": "Veszteségmentes."
+  },
+  {
+    "type": "true_false",
+    "question": "A LAS 1.4 256 kódot támogat.",
+    "correct": "true",
+    "explanation": "Korábbi 32 helyett."
+  },
+  {
+    "type": "true_false",
+    "question": "A COPC oktree-struktúrát használ.",
+    "correct": "true",
+    "explanation": "Cloud Optimized Point Cloud."
+  },
+  {
+    "type": "true_false",
+    "question": "90 m → 1 m átmenet 900× adatnövekedés.",
+    "correct": "false",
+    "explanation": "8100× (90²)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az USA 1 m-en ~8 billió cella.",
+    "correct": "true",
+    "explanation": "~8 × 10¹²."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM OpenMP-t használ.",
+    "correct": "false",
+    "explanation": "MPI-t."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-térkép 2016-ban készült el.",
+    "correct": "true",
+    "explanation": "2016.05.29."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-térkép egy hét alatt készült.",
+    "correct": "false",
+    "explanation": "Egy nap."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-térkép a National Water Centerben van.",
+    "correct": "true",
+    "explanation": "Tuscaloosa, AL."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OpenTopography-t a NASA finanszírozza.",
+    "correct": "false",
+    "explanation": "NSF."
+  },
+  {
+    "type": "true_false",
+    "question": "A batimetrikus LiDAR 532 nm-et használ.",
+    "correct": "true",
+    "explanation": "Zöld fény áthatol a vízen."
+  },
+  {
+    "type": "true_false",
+    "question": "DSM használata hidrológiában helyes erdős területen.",
+    "correct": "false",
+    "explanation": "Hibás lefolyásirányokat ad."
+  },
+  {
+    "type": "true_false",
+    "question": "QL2: 2 pont/m² minimum.",
+    "correct": "true",
+    "explanation": "QL2 szabvány."
+  },
+  {
+    "type": "true_false",
+    "question": "A Geiger-üzemmódot polgári célra fejlesztették.",
+    "correct": "false",
+    "explanation": "Katonai."
+  },
+  {
+    "type": "true_false",
+    "question": "A Kálmán-szűrő korrigálja az IMU drift-jét.",
+    "correct": "true",
+    "explanation": "GPS-adatokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "3 Geiger-repülőgéppel az USA évente újratérképezhető.",
+    "correct": "true",
+    "explanation": "Becslések szerint igen."
+  },
+  {
+    "type": "true_false",
+    "question": "Hídpályák automatikusan eltávolítódnak minden DDM-ből.",
+    "correct": "false",
+    "explanation": "Nem minden feldolgozás tartalmazza."
+  },
+  {
+    "type": "true_false",
+    "question": "A HUC6 ~350 régióra osztja az USA-t.",
+    "correct": "true",
+    "explanation": "Körülbelül 350."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EEA-10 10 m felbontású és EU/EGT-re érhető el.",
+    "correct": "true",
+    "explanation": "Copernicus."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 LiDAR-ból származik.",
+    "correct": "false",
+    "explanation": "Fotogrammetriából."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU-Hydro pán-európai vízfolyáshálózat.",
+    "correct": "true",
+    "explanation": "Copernicus keretében."
+  },
+  {
+    "type": "true_false",
+    "question": "A MERIT DEM a Tokiói Egyetemen fejlesztett.",
+    "correct": "true",
+    "explanation": "Dai Yamazaki."
+  },
+  {
+    "type": "true_false",
+    "question": "A lineáris üzemmód érzékenyebb a Geiger-nél.",
+    "correct": "false",
+    "explanation": "Geiger egyfotonos."
+  },
+  {
+    "type": "true_false",
+    "question": "Pontfelhő → DDM átalakítás információvesztéssel jár.",
+    "correct": "true",
+    "explanation": "Simítás cellánként."
+  },
+  {
+    "type": "true_false",
+    "question": "I/O soha nem szűk keresztmetszet.",
+    "correct": "false",
+    "explanation": "Ezres magszámnál igen."
+  },
+  {
+    "type": "true_false",
+    "question": "D-végtelen simább HAND-et ad, mint D8.",
+    "correct": "true",
+    "explanation": "Arányos lefolyáselosztás."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 lefedi egész Magyarországot.",
+    "correct": "true",
+    "explanation": "Országos lefedettség."
+  },
+  {
+    "type": "true_false",
+    "question": "Repülési vonalak között nincs szükség átfedésre.",
+    "correct": "false",
+    "explanation": "20-30% szükséges."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ICESat-2 sűrű területi lefedettséget ad.",
+    "correct": "false",
+    "explanation": "Vonalak mentén mér."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar gátrendszer >20 000 km²-t véd.",
+    "correct": "true",
+    "explanation": "Kiterjedt gátrendszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A PRACE szuperszámítógépes hozzáférést ad Európában.",
+    "correct": "true",
+    "explanation": "Partnership for Advanced Computing."
+  },
+  {
+    "type": "true_false",
+    "question": "A LAS-t a NASA fejlesztette.",
+    "correct": "false",
+    "explanation": "ASPRS."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2-es LAS kód felszíni pont.",
+    "correct": "true",
+    "explanation": "Ground = 2."
+  },
+  {
+    "type": "true_false",
+    "question": "Yan Liu 250× gyorsítást ért el.",
+    "correct": "true",
+    "explanation": "D-végtelen optimalizálás."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND mért szelvényeket igényel.",
+    "correct": "false",
+    "explanation": "Csak DDM-et és vízfolyás-definíciót."
+  },
+  {
+    "type": "true_false",
+    "question": "GLO-30 pontossága <4 m (LE90).",
+    "correct": "true",
+    "explanation": "Megfelel."
+  },
+  {
+    "type": "true_false",
+    "question": "Nyilvános portálok LAS-ban szolgáltatják a LiDAR-t.",
+    "correct": "false",
+    "explanation": "LAZ (tömörített)."
+  },
+  {
+    "type": "true_false",
+    "question": "Geiger-jelfeldolgozás egyszerűbb a lineárisnál.",
+    "correct": "false",
+    "explanation": "Összetettebb."
+  },
+  {
+    "type": "true_false",
+    "question": "Magasabb repülés javítja a pontsűrűséget.",
+    "correct": "false",
+    "explanation": "Csökkenti."
+  },
+  {
+    "type": "true_false",
+    "question": "A holland AHN-t 25 év alatt 4× gyűjtötték.",
+    "correct": "true",
+    "explanation": "Változásdetektálásra."
+  },
+  {
+    "type": "true_false",
+    "question": "A NED elsősorban LiDAR-ból készült.",
+    "correct": "false",
+    "explanation": "Szintvonaltérképekből."
+  },
+  {
+    "type": "true_false",
+    "question": "A QL0 szint 25+ pont/m²-t igényel.",
+    "correct": "true",
+    "explanation": "Feltörekvő szint."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM David Tarboton fejlesztése.",
+    "correct": "true",
+    "explanation": "Utah State University."
+  },
+  {
+    "type": "true_false",
+    "question": "A Leica SPL100 egyfotonos LiDAR-rendszer.",
+    "correct": "true",
+    "explanation": "Fotonszámláló megközelítés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NHDPlus 2,7 millió szakaszt tartalmaz.",
+    "correct": "true",
+    "explanation": "A kontinentális USA-ban."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-RAS teljes hidraulikus modellezés az USA-ra ~1,6 Mrd $-ba kerülne.",
+    "correct": "true",
+    "explanation": "500 $/mérföld × 3,2 M mérföld."
+  },
+  {
+    "type": "true_false",
+    "question": "A standard LiDAR-felmérés 2-25 pont/m²-t ad.",
+    "correct": "true",
+    "explanation": "A rendszertől és konfigurációtól függően."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DDM minden EU/EGT-országot lefed 10 m-en.",
+    "correct": "true",
+    "explanation": "EEA-10."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ICESat-2-t 2018-ban bocsátotta fel a NASA.",
+    "correct": "true",
+    "explanation": "ATLAS fotonszámláló műszerrel."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR-repülőgép sebessége ~70 m/s a standard felmérés során.",
+    "correct": "true",
+    "explanation": "60-80 m/s tipikus."
+  },
+  {
+    "type": "true_false",
+    "question": "Az L3Harris fejlesztette az első polgári Geiger-üzemmódú érzékelőt.",
+    "correct": "true",
+    "explanation": "Korábban Harris Corporation."
+  },
+  {
+    "type": "true_false",
+    "question": "Az 1 m-es LiDAR DDM mindig jobb választás bármely hidrológiai elemzéshez.",
+    "correct": "false",
+    "explanation": "A felbontást a jelenséghez kell igazítani."
+  },
+  {
+    "type": "true_false",
+    "question": "A felbontás-eltérés hamis pontossági érzetet kelthet.",
+    "correct": "true",
+    "explanation": "1 m DDM + 10 km csapadékadat nem ad 1 m-es árvíz-előrejelzést."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM 2000-ben készült el.",
+    "correct": "true",
+    "explanation": "Shuttle Radar Topography Mission."
+  },
+  {
+    "type": "true_false",
+    "question": "A Planchon-Darboux algoritmus lefolyásirányokat számít.",
+    "correct": "false",
+    "explanation": "Mélyedésfeltöltő algoritmus."
+  },
+  {
+    "type": "true_false",
+    "question": "A pontrekordban a visszaverődés sorszáma segíti a lombkorona és felszín szétválasztását.",
+    "correct": "true",
+    "explanation": "Az első vs utolsó visszaverődés szétválasztja a lombkoronát a felszíntől."
+  },
+  {
+    "type": "true_false",
+    "question": "A GPS alacsony frissítési rátája (1-2 Hz) az IMU-val való integrálás nélkül elegendő a LiDAR-hoz.",
+    "correct": "false",
+    "explanation": "Az IMU tölti ki a GPS-javítások közötti hézagokat az orientációs adatokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "A Geiger-üzemmódú LiDAR többszögű megfigyelést biztosít.",
+    "correct": "true",
+    "explanation": "A széles megvilágítás és előrehaladás révén többszörös szögekből figyel."
+  },
+  {
+    "type": "true_false",
+    "question": "A 3DEP-et partnerségi modell finanszírozza.",
+    "correct": "true",
+    "explanation": "USGS szövetségi + állami/helyi társfinanszírozás."
+  },
+  {
+    "type": "true_false",
+    "question": "Egy 10 pont/m²-es pontfelhő 1 m-es DDM-re rácsozása ~10× adatcsökkentés.",
+    "correct": "true",
+    "explanation": "10 pontot 1 cellaértékre redukálja."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR visszaverődések intenzitása a felszíni anyag azonosítására használható.",
+    "correct": "true",
+    "explanation": "A visszatérő jel erőssége az anyag tulajdonságaitól függ."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar OVF-nek tizenkét regionális igazgatósága van.",
+    "correct": "true",
+    "explanation": "12 regionális igazgatóság."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR-felmérés pontossága kizárólag a távolságmérés precizitásától függ.",
+    "correct": "false",
+    "explanation": "Kritikusan függ a műszer pozíciójának és orientációjának ismeretétől is."
+  },
+  {
+    "type": "true_false",
+    "question": "Modern LiDAR-rendszerek 2-5 ns időfelbontással működnek.",
+    "correct": "true",
+    "explanation": "Lehetővé teszi a közeli visszaverődések szétválasztását."
+  },
+  {
+    "type": "true_false",
+    "question": "A párhuzamos fájlrendszerek megoldást kínálnak az I/O szűk keresztmetszetre.",
+    "correct": "true",
+    "explanation": "Párhuzamos írás/olvasás több tárhelyen."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DDM csupasz felszín modell.",
+    "correct": "false",
+    "explanation": "DSM, amely tartalmazza a növényzet magasságát."
+  },
+  {
+    "type": "true_false",
+    "question": "A DDM-5 köztes pontosságú a LiDAR és a globális DDM-ek között.",
+    "correct": "true",
+    "explanation": "Fotogrammetriai eredetű, 5 m felbontás."
+  },
+  {
+    "type": "true_false",
+    "question": "A HydroSHEDS előre kiszámított vízhálózatokat biztosít globálisan.",
+    "correct": "true",
+    "explanation": "SRTM/MERIT-ből levezetve."
+  },
+  {
+    "type": "true_false",
+    "question": "A légi LiDAR lézernyaláb átmérője a felszínen 20-50 cm.",
+    "correct": "true",
+    "explanation": "A nyalábdivergencia miatt 500-3000 m-ről ilyen foltméretet ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A felhőszámítás lehetővé teszi igény szerinti LiDAR-feldolgozást helyi hardver nélkül.",
+    "correct": "true",
+    "explanation": "AWS, Azure, Google Cloud."
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR az 1960-as évek óta létezik, de a nemzeti térképezésben csak a 2000-es években terjedt el.",
+    "correct": "true",
+    "explanation": "A technológia az 1960-as években jelent meg, de országos programok csak a 2000-es évektől indultak."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND kiszámítása Magyarország teljes területére 5 m-en ~1,9 milliárd cellát jelent.",
+    "correct": "true",
+    "explanation": "93 000 km² / 25 m² ≈ 3,7 milliárd, de a fejezet ~1,9 milliárdot említ."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LiDAR = _______ Detection and Ranging.",
+    "correct": "Light",
+    "explanation": "Light Detection and Ranging."
+  },
+  {
+    "type": "fill_blank",
+    "question": "d = c × t / _______.",
+    "correct": "2",
+    "explanation": "Kétirányú utazási idő fele."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fénysebesség vákuumban: ~_______ m/s.",
+    "correct": "299 792 458",
+    "explanation": "SI-érték."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS és IMU integrálása: _______ szűrő.",
+    "correct": "Kálmán",
+    "explanation": "Kálmán-szűrő algoritmus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Topográfiai LiDAR: _______ nm hullámhossz.",
+    "correct": "1064",
+    "explanation": "Nd:YAG közeli infravörös."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Batimetrikus LiDAR: _______ nm hullámhossz.",
+    "correct": "532",
+    "explanation": "Zöld fény, áthatol a vízen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Impulzusonként _______-7 visszaverődés.",
+    "correct": "4",
+    "explanation": "Modern rendszerek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pásztázáshoz _______ vagy oszcilláló tükröt használnak.",
+    "correct": "forgó",
+    "explanation": "Impulzusok szétszórása."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAZ tömörítés: _______:1-15:1 veszteségmentes.",
+    "correct": "5",
+    "explanation": "5:1-15:1."
+  },
+  {
+    "type": "fill_blank",
+    "question": "3DEP-et az _______ üzemelteti.",
+    "correct": "USGS",
+    "explanation": "US Geological Survey."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL2 minimum: _______ pont/m².",
+    "correct": "2",
+    "explanation": "QL2 szabvány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geiger-üzemmód: _______-9000 m repülési magasság.",
+    "correct": "7000",
+    "explanation": "7000-9000 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAS formátumot az _______ fejlesztette.",
+    "correct": "ASPRS",
+    "explanation": "American Society for Photogrammetry and Remote Sensing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAS 2-es kód = _______ pontok.",
+    "correct": "felszíni",
+    "explanation": "Ground = 2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM _______ párhuzamosítást használ.",
+    "correct": "MPI",
+    "explanation": "Message Passing Interface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND-térkép _______ nap alatt készült el.",
+    "correct": "1",
+    "explanation": "Egyetlen nap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_______ millió mérföldnyi vízfolyás a HAND-számításban.",
+    "correct": "3,2",
+    "explanation": "3,2 millió mérföld."
+  },
+  {
+    "type": "fill_blank",
+    "question": "National Water Center: _______, Alabama.",
+    "correct": "Tuscaloosa",
+    "explanation": "Tuscaloosa."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OpenTopography: _______ Szuperszámítógép Központ.",
+    "correct": "San Diegó-i",
+    "explanation": "SDSC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fénytörés a víz felszínén: Snellius-Descartes-féle _______ törvény.",
+    "correct": "törési",
+    "explanation": "Törési törvény."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5: _______ koordináta-rendszer (EPSG:23700).",
+    "correct": "EOV",
+    "explanation": "Egységes Országos Vetületi."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus GLO-30: _______ m felbontás.",
+    "correct": "30",
+    "explanation": "30 m globálisan."
+  },
+  {
+    "type": "fill_blank",
+    "question": "D8: _______ szomszédból a legmeredekebb irányba.",
+    "correct": "nyolc",
+    "explanation": "8 szomszéd."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND = Height Above Nearest _______.",
+    "correct": "Drainage",
+    "explanation": "Legközelebbi vízfolyás feletti magasság."
+  },
+  {
+    "type": "fill_blank",
+    "question": "90 m → 1 m: _______× cellaszám-növekedés.",
+    "correct": "8100",
+    "explanation": "90² = 8100."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geiger-üzemmód: _______ fotonszámláló mátrix.",
+    "correct": "kétdimenziós",
+    "explanation": "2D érzékelőmátrix."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Yan Liu: _______× algoritmikus gyorsítás.",
+    "correct": "250",
+    "explanation": "250-szeres."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF: _______ regionális igazgatóság.",
+    "correct": "tizenkét",
+    "explanation": "12 db."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IMU: _______+ Hz frissítési ráta.",
+    "correct": "200",
+    "explanation": "200 Hz vagy nagyobb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Repülési vonalak: _______-30% átfedés.",
+    "correct": "20",
+    "explanation": "20-30%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Modern LiDAR: _______-500 000 impulzus/s.",
+    "correct": "100 000",
+    "explanation": "Impulzus-ismétlési frekvencia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_______ algoritmus tölti fel a DDM mélyedéseit.",
+    "correct": "Planchon-Darboux",
+    "explanation": "Mélyedésfeltöltő algoritmus."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAS 1.4: _______ osztályozási kód.",
+    "correct": "256",
+    "explanation": "256 kód."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ICESat-2: _______ LiDAR-műszer.",
+    "correct": "fotonszámláló",
+    "explanation": "ATLAS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Holland LiDAR-program: _______.",
+    "correct": "AHN",
+    "explanation": "Actueel Hoogtebestand Nederland."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Dekompozíciós egység: _______.",
+    "correct": "vízgyűjtő",
+    "explanation": "Természetes feldolgozási egység."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Szűk keresztmetszet: _______ műveletek.",
+    "correct": "I/O",
+    "explanation": "Input/Output."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Felhőoptimalizált pontfelhő: _______.",
+    "correct": "COPC",
+    "explanation": "Cloud Optimized Point Cloud."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pufferelés: _______-5 km-es zóna.",
+    "correct": "1",
+    "explanation": "1-5 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAZ-t _______ fejlesztette.",
+    "correct": "Martin Isenburg",
+    "explanation": "LAStools."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Gátrendszer: >_______ km² védett terület.",
+    "correct": "20 000",
+    "explanation": "Magyarországon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL2-lefedettség 2025-re: >_______%.",
+    "correct": "80",
+    "explanation": "Meghaladta a 80%-ot."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM: David _______ fejlesztette.",
+    "correct": "Tarboton",
+    "explanation": "Utah State University."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5: _______ Tudásközpont biztosítja.",
+    "correct": "Lechner",
+    "explanation": "Lechner Tudásközpont."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS: USA _______ Mérnöki Testülete.",
+    "correct": "Hadsereg",
+    "explanation": "US Army Corps of Engineers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Standard LiDAR repülési magasság: _______-2000 m.",
+    "correct": "1000",
+    "explanation": "1000-2000 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NHDPlus: _______ millió szakasz.",
+    "correct": "2,7",
+    "explanation": "2,7 M."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL0: _______+ pont/m² minimum.",
+    "correct": "25",
+    "explanation": "25+ pont/m²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SRTM: _______ m globális felbontás.",
+    "correct": "90",
+    "explanation": "90 m (2000)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy LAS pont: _______-36 byte.",
+    "correct": "26",
+    "explanation": "26-36 byte."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAS 9-es kód = _______.",
+    "correct": "víz",
+    "explanation": "Water."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LAS 17-es kód = _______.",
+    "correct": "hídpálya",
+    "explanation": "Bridge deck."
+  },
+  {
+    "type": "fill_blank",
+    "question": "USA 1 m-en: ~_______ billió cella.",
+    "correct": "8",
+    "explanation": "~8 × 10¹²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az asztali gépen a HAND _______ évig tartott volna.",
+    "correct": "7",
+    "explanation": "Becsült 7 év."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geiger lefedési ráta: _______-1500 km²/h.",
+    "correct": "500",
+    "explanation": "500-1500 km²/h."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Lineáris lefedési ráta: _______-200 km²/h.",
+    "correct": "50",
+    "explanation": "50-200 km²/h."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Copernicus EEA-10: _______ m felbontás.",
+    "correct": "10",
+    "explanation": "10 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDM-5 felbontása: _______ m.",
+    "correct": "5",
+    "explanation": "5 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS frissítési ráta: _______-2 Hz.",
+    "correct": "1",
+    "explanation": "1-2 Hz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL2 függőleges pontosság: ~_______ cm RMSE.",
+    "correct": "10",
+    "explanation": "~10 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL1 függőleges pontosság: ~_______ cm RMSE.",
+    "correct": "5",
+    "explanation": "~5 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL3 függőleges pontosság: ~_______ cm RMSE.",
+    "correct": "20",
+    "explanation": "~20 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "QL1 minimális sűrűség: _______ pont/m².",
+    "correct": "8",
+    "explanation": "8 pont/m²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geiger-üzemmód: _______ egyidejű méréssel.",
+    "correct": "ezres",
+    "explanation": "Ezres nagyságrendű."
+  },
+  {
+    "type": "fill_blank",
+    "question": "AHN pontsűrűsége: _______+ pont/m².",
+    "correct": "8",
+    "explanation": "8+ pont/m²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HUC6: ~_______ régió az USA-ban.",
+    "correct": "350",
+    "explanation": "Körülbelül 350."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED felbontása: _______ m.",
+    "correct": "10",
+    "explanation": "10 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND-térkép NED _______ m felbontásban készült.",
+    "correct": "10",
+    "explanation": "10 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HEC-RAS modellezés költsége: ~_______ $/mérföld.",
+    "correct": "500",
+    "explanation": "500 dollár mérföldenként."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország összterülete: ~_______ km².",
+    "correct": "93 000",
+    "explanation": "93 000 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország területére 5 m-en ~_______ milliárd cella.",
+    "correct": "1,9",
+    "explanation": "~1,9 milliárd."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM _______ évben készült.",
+    "correct": "2000",
+    "explanation": "Shuttle Radar Topography Mission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sík felszínen a LiDAR pontossága _______-8 cm.",
+    "correct": "5",
+    "explanation": "5-8 cm RMSE nyílt terepen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Erdős területen a LiDAR pontossága _______-25 cm.",
+    "correct": "20",
+    "explanation": "20-25 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM-et _______ fejlesztette.",
+    "correct": "Dai Yamazaki",
+    "explanation": "Tokiói Egyetem."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM felbontása: _______ m.",
+    "correct": "90",
+    "explanation": "~90 m (3 ívmásodperc)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HydroSHEDS/HydroRIVERS a _______ adatokból származik.",
+    "correct": "SRTM",
+    "explanation": "SRTM és MERIT DEM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Nd:YAG lézer hullámhossza: _______ nm.",
+    "correct": "1064",
+    "explanation": "Közeli infravörös."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LiDAR lézerbiztonsági osztálya: _______ osztály.",
+    "correct": "1",
+    "explanation": "1. osztály vagy 1M: szembiztos."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND-térkép dátuma: 2016. _______ 29.",
+    "correct": "május",
+    "explanation": "2016. május 29."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NCSA székhelye: _______ Egyetem.",
+    "correct": "Illinoisi",
+    "explanation": "University of Illinois."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TACC székhelye: _______ Egyetem.",
+    "correct": "Texasi",
+    "explanation": "University of Texas at Austin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NSF a _______ Tudományos Alap rövidítése.",
+    "correct": "Nemzeti",
+    "explanation": "National Science Foundation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Standard LiDAR sebesség: _______-80 m/s.",
+    "correct": "60",
+    "explanation": "60-80 m/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geiger-üzemmód sebesség: _______+ m/s.",
+    "correct": "100",
+    "explanation": "100+ m/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _______ országban nincs országos LiDAR-program, de DDM-5 létezik.",
+    "correct": "Magyarország",
+    "explanation": "Nincs LiDAR-program, de van fotogrammetriai DDM."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Geiger-üzemmód pásztázási szélessége: _______-4000 m.",
+    "correct": "2000",
+    "explanation": "2000-4000 m."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LiDAR működésének alapelvét!",
+    "explanation": "Lézerimpulzus kibocsátás, kétirányú utazási idő (d=c·t/2), GPS+IMU pozícionálás, forgó tükör pásztázás."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a lineáris és Geiger-üzemmódú LiDAR-t!",
+    "explanation": "Lineáris: egyenként, alacsony magasság, egyszerű. Geiger: 2D mátrix, magas, nagy lefedés, összetett."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a többszörös visszaverődés a hidrológiában?",
+    "explanation": "Lombkoronán áthatolás, csupasz felszín DDM előállítása erdős területeken."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a 3DEP minőségi szintjeit!",
+    "explanation": "QL3→QL0: növekvő pontosság (20→3 cm) és sűrűség (1→25+ pt/m²)."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepe van a Kálmán-szűrőnek?",
+    "explanation": "GPS abszolút pozíció + IMU orientáció integrálása pontos georeferáláshoz."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LAS formátum főbb attribútumait!",
+    "explanation": "X,Y,Z, intenzitás, visszaverődés szám, osztályozás, GPS-idő, RGB, pásztázási szög."
+  },
+  {
+    "type": "essay",
+    "question": "Miért problémásak a hídpályák?",
+    "explanation": "Gátként jelennek meg, akadályozzák lefolyási utakat. Eltávolítás szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változik a LiDAR-pontosság felszíntípusonként?",
+    "explanation": "Nyílt: 5-8 cm; erdő: 20-25 cm; sík: jobb; meredek: rosszabb."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen számítási kihívások vannak országos léptéken?",
+    "explanation": "Billió cella, memória, I/O, csempehatárok, minőségellenőrzés."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a TauDEM párhuzamos stratégiáját!",
+    "explanation": "Sávokra osztás, MPI elosztás, iteratív söprés, határsor-csere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készült el a kontinentális HAND-térkép?",
+    "explanation": "NCSA+TACC szuperszámítógép, NED 10m, NHDPlus, 1 nap, 3,2M mérföld."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepe van az OpenTopography-nak?",
+    "explanation": "Webes LiDAR-hozzáférés, szuperszámítógépes feldolgozás, demokratizálás."
+  },
+  {
+    "type": "essay",
+    "question": "DSM vs DDM: miért fontos a hidrológiában?",
+    "explanation": "DSM: objektumokat tartalmaz; DDM: csupasz felszín szükséges a helyes lefolyáshoz."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen alkalmazásai vannak az ismételt LiDAR-nak?",
+    "explanation": "Erózió, medervándorlás, gátsüllyedés, urbanizáció, katasztrófa utáni felmérés."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a Geiger-üzemmód a nemzeti térképezést?",
+    "explanation": "3× lefedési ráta, éves újratérképezés lehetősége."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrások állnak rendelkezésre Magyarországon HAND-hoz?",
+    "explanation": "DDM-5 (5 m), EEA-10 (10 m), OVF hálózat, EU-Hydro."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LAZ tömörítés előnyeit!",
+    "explanation": "5:1-15:1 veszteségmentes, de facto terjesztési formátum."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolják a repülési paraméterek az adatminőséget?",
+    "explanation": "Magasság vs sűrűség, sebesség vs lefedés, PRF vs pont/terület."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen felbontási kérdések merülnek fel 1 m-es DDM-eknél?",
+    "explanation": "Zajos D8, mikrodomborzat. Megoldás: simítás, D-végtelen, durvább értelmezés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen problémák vannak a tartomány-dekompozíciónál?",
+    "explanation": "Határ-lefolyás, inkonzisztens hálózat, pufferelés szükségessége."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a HAND a valós idejű árvíz-előrejelzéshez?",
+    "explanation": "NWM előrejelzés + HAND = percek alatti elöntési térkép 2,7 M szakaszra."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátai vannak a GLO-30-nak?",
+    "explanation": "4 m pontosság, DSM, 30 m – nagy folyókra jó, kis vízfolyásokra határi."
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a HAND munkafolyamatát!",
+    "explanation": "DDM→feltöltés→lefolyásirány→akkumuláció→vízfolyás→HAND."
+  },
+  {
+    "type": "essay",
+    "question": "LiDAR-fejlődés és hidrológiai modellezés kapcsolata?",
+    "explanation": "Finomabb felbontás → pontosabb DDM → jobb HAND → jobb árvízi térképek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szervezetek adnak magassági adatokat?",
+    "explanation": "USGS/3DEP, Lechner/DDM-5, Copernicus, OpenTopography, SRTM, MERIT."
+  },
+  {
+    "type": "essay",
+    "question": "LiDAR a Tisza menti árvízvédelemben?",
+    "explanation": "Gátsáv-felmérés, HAND, gátsüllyedés-monitoring ismételt felmérésekkel."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a pontfelhő-osztályozás?",
+    "explanation": "Csak felszíni (2-es) pontok kellenek DDM-hez; épületek, növényzet kiszűrése."
+  },
+  {
+    "type": "essay",
+    "question": "Teljes hullámformájú LiDAR előnyei/hátrányai?",
+    "explanation": "Előny: részletesebb vertikális struktúra. Hátrány: 5-10× adat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a pufferelés?",
+    "explanation": "1-5 km bővítés, független feldolgozás, visszavágás."
+  },
+  {
+    "type": "essay",
+    "question": "I/O szűk keresztmetszet szuperszámítógépen?",
+    "explanation": "Ezres magszám → tároló a korlátozó. Megoldás: párhuzamos fájlrendszer."
+  },
+  {
+    "type": "essay",
+    "question": "Felbontás-eltérés kezelése?",
+    "explanation": "Bemeneteket a jelenséghez igazítani; pontosság a leggyengébb bemenettől függ."
+  },
+  {
+    "type": "essay",
+    "question": "HAND alkalmazása Magyarországon?",
+    "explanation": "DDM-5/EEA-10 + OVF + TauDEM – ~1,9 milliárd cella, megvalósítható."
+  },
+  {
+    "type": "essay",
+    "question": "Műholdas LiDAR-ok (ICESat-2) szerepe?",
+    "explanation": "Globális lefedettség, tószintek, jég – kiegészíti, nem helyettesíti a légi LiDAR-t."
+  },
+  {
+    "type": "essay",
+    "question": "Miért tart sokáig a 3DEP teljes lefedettséghez?",
+    "explanation": "Lineáris üzemmód korlátozott lefedési rátája; sok repülési óra."
+  },
+  {
+    "type": "essay",
+    "question": "Felhőszámítás előnyei LiDAR-feldolgozásban?",
+    "explanation": "Skálázhatóság, ezer VM, helyi infrastruktúra nélkül."
+  },
+  {
+    "type": "essay",
+    "question": "Topográfiai adatforrások fejlődése 1990-2026?",
+    "explanation": "SRTM→NED→LiDAR→Geiger – minden generáció új alkalmazásokat hozott."
+  },
+  {
+    "type": "essay",
+    "question": "LiDAR-felmérés költségtényezői?",
+    "explanation": "Repülőgépidő, pontsűrűség, pontosság, terület, felszínborítás."
+  },
+  {
+    "type": "essay",
+    "question": "ASPRS osztályozási kódok?",
+    "explanation": "1=nem oszt., 2=felszín, 3-5=növényzet, 6=épület, 7=zaj, 9=víz, 17=híd."
+  },
+  {
+    "type": "essay",
+    "question": "Geiger-jelfeldolgozás kihívásai?",
+    "explanation": "Fotonszintű adat, zajszűrés, napfény háttér, koherens pontfelhő."
+  },
+  {
+    "type": "essay",
+    "question": "LiDAR DDM és HAND validálása?",
+    "explanation": "Geodéziai pontok, terepi mérések, ismert árvízi kiterjedések."
+  },
+  {
+    "type": "essay",
+    "question": "Nemzeti LiDAR hatása az árvízkezelésre?",
+    "explanation": "Pontosabb DDM → jobb HAND → megbízhatóbb árvízi térképek."
+  },
+  {
+    "type": "essay",
+    "question": "JRC európai árvízveszélyi térképek?",
+    "explanation": "LISFLOOD, ~25 m, 10-500 éves visszatérési idők, szabadon elérhető."
+  },
+  {
+    "type": "essay",
+    "question": "Ismételt LiDAR tőzeges területekre?",
+    "explanation": "DDM-különbség megmutatja centiméteres süllyedési mintázatokat (AHN)."
+  },
+  {
+    "type": "essay",
+    "question": "COPC előnyei LAS-szal szemben?",
+    "explanation": "Oktree, felhőalapú hozzáférés, nagy fájlok letöltése nélkül."
+  },
+  {
+    "type": "essay",
+    "question": "OSM vízfolyások használata HAND-számításnál?",
+    "explanation": "Nem konzisztensek DDM-mel; DDM-ből levezetett hálózat ajánlott."
+  },
+  {
+    "type": "essay",
+    "question": "Csempehatárok problémája HAND-számításnál?",
+    "explanation": "Pufferelés, vízgyűjtő-alapú partícionálás, minőségellenőrzés."
+  },
+  {
+    "type": "essay",
+    "question": "D8 vs D-végtelen sík terepen?",
+    "explanation": "D8: csíkozás. D-végtelen: sima felület. Tisza síkságán fontos a különbség."
+  },
+  {
+    "type": "essay",
+    "question": "Drón-LiDAR lehetőségei?",
+    "explanation": "Lokális nagy sűrűségű felmérés, rugalmas, alacsony költség, gátfelmérés."
+  },
+  {
+    "type": "essay",
+    "question": "Copernicus DDM a globális árvíz-előrejelzésben?",
+    "explanation": "30 m szabadon elérhető DDM → HAND bárhol → GloFAS bemenet."
+  },
+  {
+    "type": "essay",
+    "question": "Nemzeti LiDAR-program hiányának hatása Magyarországon?",
+    "explanation": "Nincs 1 m DDM; DDM-5 köztes; gátsáv-LiDAR hiányzik."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezők határozzák meg az optimális DDM-felbontást egy adott hidrológiai feladathoz?",
+    "explanation": "Vizsgált jelenség léptéke, kívánt pontosság, számítási erőforrások, elérhető adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a LiDAR a medervándorlás nyomon követésére?",
+    "explanation": "Két időpont pontfelhőjének különbsége a medreltolódás és parti erózió mértékét adja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a LiDAR-adatok felhőalapú feldolgozása?",
+    "explanation": "Hatalmas adatmennyiség feltöltése, hálózati sebesség, költségkezelés, reprodukálhatóság."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kombinálható a LiDAR-topográfia a batimetriával egységes DDM-mé?",
+    "explanation": "Víz feletti LiDAR (1064 nm) + víz alatti (532 nm vagy szonár) → topobati DDM."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszanak a LiDAR-visszaverődési adatok a felszínborítás osztályozásában?",
+    "explanation": "Visszaverődésszám, intenzitás, hullámforma → növényzet, felszín, épületek elkülönítése."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az USA és Európa LiDAR-programjainak hasonlóságait és különbségeit!",
+    "explanation": "USA: 3DEP centralizált, QL rendszer. EU: országonkénti programok (AHN, EA), Copernicus DDM."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozza meg a LiDAR-felbontás a HAND-alapú árvízi térképek megbízhatóságát?",
+    "explanation": "Finomabb felbontás → pontosabb medergeometria → megbízhatóbb HAND-értékek → jobb árvízi becslések."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és korlátai vannak a szabad hozzáférésű globális DDM-eknek a hidrológiában?",
+    "explanation": "Előny: ingyenes, globális lefedettség. Korlát: DSM, durva felbontás, korlátozott pontosság."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változtathatná meg egy országos magyar LiDAR-program az árvízkezelést?",
+    "explanation": "1 m DDM → pontos HAND → gátsáv-monitoring → valós idejű árvíztérképezés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szoftveres alternatívák állnak rendelkezésre a HAND-számításhoz a TauDEM mellett?",
+    "explanation": "ArcGIS Pro Flow Distance, WhiteboxTools, GRASS r.stream.distance, pysheds."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a LiDAR-alapú DDM előállítása városi környezetben?",
+    "explanation": "Pontfelhő osztályozás → épületek/növényzet szűrése → csak 2-es kódú pontok → interpoláció."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a nyílt forráskódú szoftver a LiDAR-feldolgozásban?",
+    "explanation": "TauDEM, QGIS, GRASS, WhiteboxTools, pysheds – ingyenes, hozzáférhető, oktatásban használt."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálható egy LiDAR-ból származó HAND-térkép terepi adatokkal?",
+    "explanation": "Ismert árvízi szintek, magas vízjegyek, GPS-mérések a víz szélénél összehasonlítva HAND-értékekkel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a LiDAR-feldolgozás automatizálása nagy léptéken?",
+    "explanation": "Szélsőséges esetek kezelése, sík területek, tengerpart, adathiányok, minőségbiztosítás emberi felügyelet nélkül."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 1: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 2: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 3: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 4: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 5: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 6: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 7: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 8: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 9: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 10: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 11: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 12: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 13: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 14: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 15: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 16: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 17: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 18: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 19: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 20: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 21: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 22: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 23: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 24: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 25: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 26: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 27: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 28: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 29: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 30: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 31: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 32: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 33: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 34: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 35: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 36: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 37: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 38: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 39: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 40: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 41: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 42: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 43: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 44: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 45: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 46: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 47: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 48: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 49: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 50: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 51: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 52: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 53: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 54: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 55: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 56: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 57: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 58: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 59: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 60: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 61: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 62: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 63: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 64: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 65: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 66: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 67: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 68: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 69: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 70: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 71: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 72: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 73: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 74: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 75: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 76: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 77: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 78: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 79: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 80: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 13 kiegeszito kerdes 81: Ismertesse a LiDAR kulonfele alkalmazasait a vizgazdalkodasban!",
+    "explanation": "A LiDAR alkalmazasai: DDM keszites, HAND-szamitas, arvizterkepzes, gatmonitoring, medervaltozas."
+  }
+]

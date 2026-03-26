@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What is the formal USGS definition of an aquifer?",
+    "options": [
+      "A rock formation that stores water but does not yield it",
+      "A geologic formation that contains sufficient saturated permeable material to yield significant quantities of water to wells and springs",
+      "Any geological layer below the water table",
+      "A confined space between two impermeable rock layers"
+    ],
+    "correct": "B",
+    "explanation": "The USGS defines an aquifer as a geologic formation, group of formations, or part of a formation that contains sufficient saturated permeable material to yield significant quantities of water to wells and springs."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Aquifer polygon feature class, what does the HGUID attribute represent?",
+    "options": [
+      "The unique spatial identifier of each polygon",
+      "The hydrogeologic unit identifier linking the feature to the HydrogeologicUnit table",
+      "The horizontal groundwater unit index",
+      "The hydraulic gradient unit descriptor"
+    ],
+    "correct": "B",
+    "explanation": "HGUID is the hydrogeologic unit identifier that relates the aquifer feature to a detailed entry in the HydrogeologicUnit table, storing the aquifer's properties."
+  },
+  {
+    "type": "mcq",
+    "question": "How many principal aquifer systems does the USGS Principal Aquifers map identify across the United States?",
+    "options": [
+      "Approximately 30",
+      "Approximately 50",
+      "Approximately 70",
+      "Approximately 120"
+    ],
+    "correct": "C",
+    "explanation": "The USGS Principal Aquifers map identifies and delineates roughly seventy aquifer systems across the nation."
+  },
+  {
+    "type": "mcq",
+    "question": "Which aquifer in Texas supplies water to over two million people including the city of San Antonio?",
+    "options": [
+      "The Ogallala Aquifer",
+      "The Trinity Aquifer",
+      "The Edwards Aquifer",
+      "The Carrizo-Wilcox Aquifer"
+    ],
+    "correct": "C",
+    "explanation": "The Edwards Aquifer of south-central Texas supplies water to over two million people including the city of San Antonio."
+  },
+  {
+    "type": "mcq",
+    "question": "How many groundwater bodies has Hungary delineated under the EU Water Framework Directive?",
+    "options": [
+      "85",
+      "125",
+      "185",
+      "250"
+    ],
+    "correct": "C",
+    "explanation": "Under the EU Water Framework Directive, Hungary has delineated 185 groundwater bodies grouped into four main types."
+  },
+  {
+    "type": "mcq",
+    "question": "What are the four main types of groundwater bodies in Hungary under the WFD?",
+    "options": [
+      "Alluvial, volcanic, metamorphic, and sedimentary",
+      "Porous, karstic, combined porous-karstic, and thermal water bodies",
+      "Shallow, intermediate, deep, and artesian",
+      "Confined, unconfined, perched, and semi-confined"
+    ],
+    "correct": "B",
+    "explanation": "Hungary's 185 groundwater bodies are grouped into porous aquifers, karstic aquifers, combined porous-karstic systems, and thermal water bodies."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hungarian abbreviation for the Supervisory Authority for Regulatory Affairs that maintains geological data?",
+    "options": [
+      "OVF",
+      "MBFSZ",
+      "SZTFH",
+      "MAFI"
+    ],
+    "correct": "C",
+    "explanation": "SZTFH (Szabályozott Tevékenységek Felügyeleti Hatósága) is the Supervisory Authority for Regulatory Affairs that absorbed the former MBFSZ."
+  },
+  {
+    "type": "mcq",
+    "question": "Which organization coordinates the WHYMAP programme?",
+    "options": [
+      "USGS",
+      "IGRAC",
+      "BGR (German Federal Institute for Geosciences and Natural Resources)",
+      "EEA"
+    ],
+    "correct": "C",
+    "explanation": "WHYMAP is coordinated by BGR (Bundesanstalt für Geowissenschaften und Rohstoffe) in partnership with UNESCO."
+  },
+  {
+    "type": "mcq",
+    "question": "Where is IGRAC (International Groundwater Resources Assessment Centre) based?",
+    "options": [
+      "Berlin, Germany",
+      "Geneva, Switzerland",
+      "Delft, the Netherlands",
+      "Paris, France"
+    ],
+    "correct": "C",
+    "explanation": "IGRAC is based in Delft, the Netherlands, and operates under the auspices of UNESCO and the World Meteorological Organization."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how many transboundary aquifer systems have been identified worldwide?",
+    "options": [
+      "About 200",
+      "About 400",
+      "About 600",
+      "About 1000"
+    ],
+    "correct": "C",
+    "explanation": "Of the world's approximately six hundred identified transboundary aquifer systems, many are shared between countries with different data standards."
+  },
+  {
+    "type": "mcq",
+    "question": "How many transboundary aquifers have been identified in Europe alone?",
+    "options": [
+      "About 50",
+      "About 100",
+      "Over 150",
+      "Over 300"
+    ],
+    "correct": "C",
+    "explanation": "In Europe alone, over one hundred and fifty transboundary aquifers have been identified."
+  },
+  {
+    "type": "mcq",
+    "question": "According to the chapter, approximately how many people worldwide rely on groundwater accessed through wells as their primary drinking water source?",
+    "options": [
+      "At least 500 million",
+      "At least 1 billion",
+      "At least 1.5 billion",
+      "At least 3 billion"
+    ],
+    "correct": "C",
+    "explanation": "At least 1.5 billion people worldwide rely on groundwater accessed through wells as their primary source of drinking water."
+  },
+  {
+    "type": "mcq",
+    "question": "What attribute in the Well feature class establishes the relationship between wells and aquifers?",
+    "options": [
+      "HydroID",
+      "HydroCode",
+      "AquiferID",
+      "HGUID"
+    ],
+    "correct": "C",
+    "explanation": "The AquiferID attribute is set equal to the HydroID of the Aquifer feature to which the well is assigned, establishing the relationship."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Texas Water Development Board database, what single-letter code represents irrigation wells?",
+    "options": [
+      "W",
+      "I",
+      "A",
+      "R"
+    ],
+    "correct": "B",
+    "explanation": "In the TWDB database, water use is encoded with single-letter codes: I for irrigation, H for domestic, P for public supply."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how many sites does the USGS NWIS contain?",
+    "options": [
+      "500,000",
+      "1 million",
+      "1.5 million",
+      "3 million"
+    ],
+    "correct": "C",
+    "explanation": "The USGS NWIS contains records for approximately 1.5 million sites including groundwater wells, springs, and test holes."
+  },
+  {
+    "type": "mcq",
+    "question": "How many digits is a standard NWIS site number?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct": "D",
+    "explanation": "Each site in NWIS is identified by a fifteen-digit site number based on latitude and longitude."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how many well records does the Texas Water Development Board groundwater database contain?",
+    "options": [
+      "50,000",
+      "90,000",
+      "130,000",
+      "200,000"
+    ],
+    "correct": "C",
+    "explanation": "The Texas Water Development Board groundwater database contains records for approximately 130,000 wells in Texas."
+  },
+  {
+    "type": "mcq",
+    "question": "How many well records does Michigan's Wellogic database contain?",
+    "options": [
+      "Over 100,000",
+      "Over 250,000",
+      "Over 500,000",
+      "Over 1,000,000"
+    ],
+    "correct": "C",
+    "explanation": "Michigan's Wellogic database contains records for over 500,000 wells."
+  },
+  {
+    "type": "mcq",
+    "question": "Since when has OVF's groundwater monitoring data been freely available through data.vizugy.hu?",
+    "options": [
+      "January 2020",
+      "July 2022",
+      "July 2024",
+      "January 2025"
+    ],
+    "correct": "C",
+    "explanation": "The monitoring data have been made freely available since July 2024 through the data.vizugy.hu portal."
+  },
+  {
+    "type": "mcq",
+    "question": "How many thermal wells does Hungary have (producing water above 30°C)?",
+    "options": [
+      "About 500",
+      "About 800",
+      "Over 1,300",
+      "Over 2,000"
+    ],
+    "correct": "C",
+    "explanation": "Hungary has over 1,300 thermal wells (defined as wells producing water above 30°C)."
+  },
+  {
+    "type": "mcq",
+    "question": "How many operational thermal baths does Hungary have approximately?",
+    "options": [
+      "120",
+      "190",
+      "270",
+      "350"
+    ],
+    "correct": "C",
+    "explanation": "Hungary has approximately 270 operational thermal baths."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the maximum depth that the deepest thermal wells in Hungary reach?",
+    "options": [
+      "Over 500 meters",
+      "Over 1,000 meters",
+      "Over 2,000 meters",
+      "Over 5,000 meters"
+    ],
+    "correct": "C",
+    "explanation": "The deepest thermal wells in Hungary reach depths exceeding 2,000 meters and produce water at temperatures above 90°C."
+  },
+  {
+    "type": "mcq",
+    "question": "Which ASTM standard defines the minimum set of data elements to identify a groundwater site?",
+    "options": [
+      "ASTM D4318",
+      "ASTM D5254",
+      "ASTM D6913",
+      "ASTM D7928"
+    ],
+    "correct": "B",
+    "explanation": "ASTM D5254 defines a minimum set of data elements to identify a groundwater site."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GeoSciML stand for?",
+    "options": [
+      "Geological Science Modeling Language",
+      "Geoscience Markup Language",
+      "Geographic Science Metadata Library",
+      "Geospatial Scientific Modeling Logic"
+    ],
+    "correct": "B",
+    "explanation": "GeoSciML is Geoscience Markup Language, an XML-based exchange format for geological data."
+  },
+  {
+    "type": "mcq",
+    "question": "Which organization developed the GeoSciML standard?",
+    "options": [
+      "USGS",
+      "OGC alone",
+      "CGI (Commission for the Management and Application of Geoscience Information)",
+      "EEA"
+    ],
+    "correct": "C",
+    "explanation": "GeoSciML was developed by the CGI, the Commission for the Management and Application of Geoscience Information."
+  },
+  {
+    "type": "mcq",
+    "question": "In the BoreholeLog table, what attribute distinguishes between lithological, completion, and hydrostratigraphic data?",
+    "options": [
+      "Material",
+      "HGUID",
+      "LogType",
+      "FType"
+    ],
+    "correct": "C",
+    "explanation": "The LogType attribute allows the same BoreholeLog table to store different types of vertical data (Lithology, Completion, Hydrostratigraphy)."
+  },
+  {
+    "type": "mcq",
+    "question": "How is TopElev calculated in the BoreholeLog table?",
+    "options": [
+      "TopElev = ToDepth - RefElev",
+      "TopElev = RefElev - FromDepth",
+      "TopElev = FromDepth + RefElev",
+      "TopElev = RefElev + ToDepth"
+    ],
+    "correct": "B",
+    "explanation": "TopElev = RefElev - FromDepth. This converts depth-below-surface to absolute elevation."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of GIS feature class is BorePoint?",
+    "options": [
+      "Standard 2D point",
+      "PointZ (z-enabled point)",
+      "Polygon",
+      "Multipatch"
+    ],
+    "correct": "B",
+    "explanation": "BorePoint is a z-enabled point feature class (PointZ) that represents point observations along a borehole with x, y, and z coordinates."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of GIS feature class is BoreLine?",
+    "options": [
+      "Standard 2D polyline",
+      "PolylineZ (z-enabled polyline)",
+      "Polygon",
+      "Multipatch"
+    ],
+    "correct": "B",
+    "explanation": "BoreLine is a z-enabled polyline feature class (PolylineZ) that represents interval data along a borehole."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a stratigraphic pick?",
+    "options": [
+      "A random sampling location in a borehole",
+      "A point in 3D space where a particular geological boundary is encountered in a borehole",
+      "The surface location of a borehole",
+      "A geophysical measurement point"
+    ],
+    "correct": "B",
+    "explanation": "A stratigraphic pick is a point in three-dimensional space where a particular geological boundary is encountered in a borehole, corresponding to picking formation tops."
+  },
+  {
+    "type": "mcq",
+    "question": "Which EU directive has driven the standardization of geospatial data including groundwater data across EU member states?",
+    "options": [
+      "The Habitats Directive",
+      "The Water Framework Directive only",
+      "The INSPIRE Directive (2007/2/EC)",
+      "The Groundwater Directive"
+    ],
+    "correct": "C",
+    "explanation": "The INSPIRE Directive (2007/2/EC) has driven standardization of geospatial data across EU member states, including groundwater data."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the year of the EU Water Framework Directive?",
+    "options": [
+      "1998",
+      "2000",
+      "2003",
+      "2007"
+    ],
+    "correct": "B",
+    "explanation": "The EU Water Framework Directive is Directive 2000/60/EC, established in the year 2000."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the acronym ISARM stand for?",
+    "options": [
+      "International Shared Aquifer Resource Mapping",
+      "Internationally Shared Aquifer Resources Management",
+      "International Standard for Aquifer Research Methods",
+      "Integrated System for Aquifer Resource Monitoring"
+    ],
+    "correct": "B",
+    "explanation": "ISARM stands for Internationally Shared Aquifer Resources Management, a UNESCO initiative for inventorying transboundary aquifer systems."
+  },
+  {
+    "type": "mcq",
+    "question": "The Pannonian Basin of Hungary is dominantly filled with sediments from which geological period?",
+    "options": [
+      "Paleozoic",
+      "Mesozoic",
+      "Neogene and Quaternary",
+      "Cretaceous"
+    ],
+    "correct": "C",
+    "explanation": "The Pannonian Basin is filled with several kilometers of Neogene and Quaternary sediments."
+  },
+  {
+    "type": "mcq",
+    "question": "Which karstic mountains supply drinking water to Budapest?",
+    "options": [
+      "The Mecsek Mountains",
+      "The Bükk Mountains only",
+      "The Transdanubian Mountains (Dunántúli-középhegység)",
+      "The Mátra Mountains"
+    ],
+    "correct": "C",
+    "explanation": "The karstic aquifers of the Transdanubian Mountains and the Bükk Mountains supply drinking water to cities including Budapest."
+  },
+  {
+    "type": "mcq",
+    "question": "What portal provides access to Hungary's geological map database?",
+    "options": [
+      "data.vizugy.hu",
+      "map.mbfsz.gov.hu",
+      "egdi.geology.eu",
+      "whymap.org"
+    ],
+    "correct": "B",
+    "explanation": "The SZTFH portal at map.mbfsz.gov.hu provides access to Hungary's national geological map database."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the HydroCode attribute used for in the geodatabase?",
+    "options": [
+      "Internal feature identification",
+      "Permanent public identifier linking the feature to external information systems",
+      "Hydraulic conductivity coding",
+      "Hydrological calculation reference"
+    ],
+    "correct": "B",
+    "explanation": "HydroCode is a permanent public identifier linking the feature to external information systems, such as state aquifer codes."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GroundWaterML 2.0 specifically address?",
+    "options": [
+      "Surface water data exchange",
+      "Geological map data exchange",
+      "Exchange of groundwater data including well locations, aquifer properties, and water level measurements",
+      "Atmospheric data exchange"
+    ],
+    "correct": "C",
+    "explanation": "GroundWaterML 2.0 specifically addresses the exchange of groundwater data including well locations, aquifer properties, and water level measurements."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical diameter range of actual boreholes?",
+    "options": [
+      "5-10 centimeters",
+      "15-50 centimeters",
+      "1-2 meters",
+      "3-5 meters"
+    ],
+    "correct": "B",
+    "explanation": "The actual diameter of a borehole is typically 15-50 centimeters, far too small to be visible in regional 3D views."
+  },
+  {
+    "type": "mcq",
+    "question": "Which common geophysical log type measures natural radioactivity to distinguish clay from sand?",
+    "options": [
+      "Resistivity log",
+      "Sonic log",
+      "Gamma ray log",
+      "Spontaneous potential log"
+    ],
+    "correct": "C",
+    "explanation": "Gamma ray logs measure natural radioactivity, which is useful for distinguishing clay (high radioactivity) from sand (low radioactivity)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the conventional temperature threshold for thermal water classification?",
+    "options": [
+      "20°C",
+      "25°C",
+      "30°C",
+      "40°C"
+    ],
+    "correct": "C",
+    "explanation": "The conventional threshold for thermal water classification is 30 degrees Celsius."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hungarian Great Plain borehole interpretation example, the medium sand at 18-35 m is interpreted as belonging to which unit?",
+    "options": [
+      "Holocene aquifer",
+      "Upper Pleistocene aquifer",
+      "Lower Pleistocene gravel aquifer",
+      "Pannonian confining unit"
+    ],
+    "correct": "B",
+    "explanation": "The medium sand at 18-35 m is interpreted as an upper Pleistocene aquifer, separated by a clay aquitard from the shallow Holocene aquifer above."
+  },
+  {
+    "type": "mcq",
+    "question": "What year was the OneGeology initiative launched?",
+    "options": [
+      "2002",
+      "2005",
+      "2008",
+      "2012"
+    ],
+    "correct": "C",
+    "explanation": "The OneGeology initiative was launched at the 33rd International Geological Congress in 2008."
+  },
+  {
+    "type": "mcq",
+    "question": "What does EGDI stand for?",
+    "options": [
+      "European Geological Data Infrastructure",
+      "European Groundwater Database Initiative",
+      "Environmental Geological Data Integration",
+      "European Geoscience Data Interchange"
+    ],
+    "correct": "A",
+    "explanation": "EGDI stands for European Geological Data Infrastructure, providing access to harmonized geological data from EU member state surveys."
+  },
+  {
+    "type": "mcq",
+    "question": "According to the chapter, what is the scale of the WHYMAP Groundwater Resources Map of the World?",
+    "options": [
+      "1:1,000,000",
+      "1:5,000,000",
+      "1:10,000,000",
+      "1:25,000,000"
+    ],
+    "correct": "D",
+    "explanation": "The WHYMAP Groundwater Resources Map of the World is at 1:25,000,000 scale."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the FType attribute in the Well feature class represent?",
+    "options": [
+      "The formation type the well is drilled in",
+      "The well type classification (Production, Monitoring, etc.)",
+      "The feature type of the geological formation",
+      "The fluid type being extracted"
+    ],
+    "correct": "B",
+    "explanation": "FType classifies wells by their purpose: Production, Monitoring, Injection, Domestic, Irrigation, Industrial, etc."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hungarian name for the General Directorate of Water Management?",
+    "options": [
+      "Magyar Bányászati és Földtani Szolgálat",
+      "Országos Vízügyi Főigazgatóság",
+      "Szabályozott Tevékenységek Felügyeleti Hatósága",
+      "Magyar Állami Földtani Intézet"
+    ],
+    "correct": "B",
+    "explanation": "OVF stands for Országos Vízügyi Főigazgatóság, the General Directorate of Water Management."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Well feature class, what two attributes together define the three-dimensional extent of the well?",
+    "options": [
+      "HydroID and HydroCode",
+      "AquiferID and HGUID",
+      "LandElev and WellDepth",
+      "FType and AqCode"
+    ],
+    "correct": "C",
+    "explanation": "LandElev and WellDepth together define the 3D extent: a well extends from LandElev down to (LandElev - WellDepth)."
+  },
+  {
+    "type": "mcq",
+    "question": "Which standard provides the framework for encoding water observation data including groundwater level time series?",
+    "options": [
+      "GeoSciML",
+      "GroundWaterML 2.0",
+      "OGC WaterML 2.0",
+      "INSPIRE Geology"
+    ],
+    "correct": "C",
+    "explanation": "OGC WaterML 2.0 provides a framework for encoding water observation data including groundwater level time series."
+  },
+  {
+    "type": "mcq",
+    "question": "How are wells that are screened across multiple aquifer units handled in the simplest approach?",
+    "options": [
+      "A many-to-many relationship table is always created",
+      "Additional AquiferID fields (AquiferID2, AquiferID3) are added",
+      "The well is duplicated for each aquifer",
+      "Only the deepest aquifer is recorded"
+    ],
+    "correct": "B",
+    "explanation": "The most common simple approach is to add additional AquiferID fields (AquiferID2, AquiferID3) to capture multiple associations."
+  },
+  {
+    "type": "mcq",
+    "question": "The Texas Water Development Board maintains datasets for how many major and minor aquifers?",
+    "options": [
+      "5 major and 10 minor",
+      "9 major and 22 minor",
+      "12 major and 30 minor",
+      "15 major and 25 minor"
+    ],
+    "correct": "B",
+    "explanation": "The TWDB maintains datasets for nine major aquifers and twenty-two minor aquifers."
+  },
+  {
+    "type": "mcq",
+    "question": "What types of geologic map database features represent map units (colored patches on a geologic map)?",
+    "options": [
+      "GeologyLine features",
+      "GeologyPoint features",
+      "GeologyArea polygon features",
+      "GeologyVolume features"
+    ],
+    "correct": "C",
+    "explanation": "GeologyArea polygon features represent map units, each corresponding to a specific rock type or stratigraphic unit."
+  },
+  {
+    "type": "mcq",
+    "question": "In the entity-relationship chain, what serves as the central lookup table tying the entire system together?",
+    "options": [
+      "The Aquifer table",
+      "The Well feature class",
+      "The HydrogeologicUnit table",
+      "The BoreholeLog table"
+    ],
+    "correct": "C",
+    "explanation": "The HydrogeologicUnit table serves as the central lookup table that defines the properties of each unit and provides the common key (HGUID) that ties the entire system together."
+  },
+  {
+    "type": "mcq",
+    "question": "What does WISE stand for in the EU water management context?",
+    "options": [
+      "Water Information System for Europe",
+      "Watershed Integrated Simulation Engine",
+      "Water Infrastructure Standards for Europe",
+      "Water Inventory and Survey for Environment"
+    ],
+    "correct": "A",
+    "explanation": "WISE stands for Water Information System for Europe, through which WFD groundwater bodies are reported to the European Environment Agency."
+  },
+  {
+    "type": "mcq",
+    "question": "California's groundwater basin delineation dataset is known as what?",
+    "options": [
+      "California Water Atlas",
+      "Bulletin 118",
+      "Groundwater Report 500",
+      "Basin Plan 2014"
+    ],
+    "correct": "B",
+    "explanation": "California's Department of Water Resources delineates groundwater basins and subbasins in the Bulletin 118 dataset."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sustainable Groundwater Management Act was passed in California in which year?",
+    "options": [
+      "2010",
+      "2012",
+      "2014",
+      "2016"
+    ],
+    "correct": "C",
+    "explanation": "California's Bulletin 118 dataset is a critical resource for compliance with the Sustainable Groundwater Management Act of 2014."
+  },
+  {
+    "type": "mcq",
+    "question": "What services does the SZTFH portal support for consuming data in desktop GIS?",
+    "options": [
+      "Only CSV downloads",
+      "WMS and WFS interfaces",
+      "Only shapefile downloads",
+      "Only API access"
+    ],
+    "correct": "B",
+    "explanation": "The SZTFH portal supports WMS (Web Map Service) and WFS (Web Feature Service) interfaces, allowing data to be consumed directly by desktop GIS software."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the simplest method for assigning wells to aquifers in a geodatabase?",
+    "options": [
+      "Manual assignment by a hydrogeologist",
+      "Spatial overlay: wells within an aquifer polygon are assigned to that aquifer",
+      "Statistical clustering",
+      "Nearest-neighbor analysis"
+    ],
+    "correct": "B",
+    "explanation": "The simplest method is spatial overlay: wells that fall within the polygon boundary of an aquifer are assigned to that aquifer."
+  },
+  {
+    "type": "mcq",
+    "question": "At what scale is Hungary's national hydrogeological map produced?",
+    "options": [
+      "1:50,000",
+      "1:100,000",
+      "1:250,000",
+      "1:500,000"
+    ],
+    "correct": "D",
+    "explanation": "Hungary's national hydrogeological map (1:500,000) classifies the country into zones of groundwater vulnerability."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the acronym VRA stand for in Hungarian hydrology?",
+    "options": [
+      "Vízrajzi Adattár (Central Hydrographic Database)",
+      "Vizsgálati és Rendszertani Állapot",
+      "Vízügyi Rendszer Alkalmazás",
+      "Vízgazdálkodási és Regionális Analízis"
+    ],
+    "correct": "A",
+    "explanation": "VRA stands for Vízrajzi Adattár, the Central Hydrographic Database where OVF monitoring data are stored."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a confining unit in hydrogeological terminology?",
+    "options": [
+      "A high-permeability layer that transmits water freely",
+      "A layer of low-permeability material that separates aquifers vertically",
+      "A fault zone that blocks groundwater flow laterally",
+      "A zone where groundwater is naturally contaminated"
+    ],
+    "correct": "B",
+    "explanation": "Confining units are layers of low-permeability material that separate aquifers vertically, restricting vertical groundwater movement."
+  },
+  {
+    "type": "mcq",
+    "question": "The thermal water systems shared between Hungary and Slovakia are an example of what type of aquifer?",
+    "options": [
+      "Perched aquifer",
+      "Artesian aquifer",
+      "Transboundary aquifer",
+      "Coastal aquifer"
+    ],
+    "correct": "C",
+    "explanation": "The thermal water systems shared between Hungary and Slovakia are examples of transboundary aquifers that require cooperative management."
+  },
+  {
+    "type": "mcq",
+    "question": "How far back does systematic borehole record-keeping in Hungary date?",
+    "options": [
+      "Early 20th century",
+      "Late 19th century",
+      "Mid 18th century",
+      "Since 1950"
+    ],
+    "correct": "B",
+    "explanation": "The SZTFH database contains borehole records since systematic record-keeping began in the late nineteenth century."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship cardinality between a Well feature and its BoreholeLog records?",
+    "options": [
+      "One-to-one",
+      "One-to-many",
+      "Many-to-one",
+      "Many-to-many"
+    ],
+    "correct": "B",
+    "explanation": "The relationship between a Well feature and its BoreholeLog records is one-to-many: one well can have many log entries."
+  },
+  {
+    "type": "mcq",
+    "question": "Which geophysical log type measures electrical resistance related to porosity and fluid salinity?",
+    "options": [
+      "Gamma ray",
+      "Spontaneous potential",
+      "Resistivity",
+      "Sonic"
+    ],
+    "correct": "C",
+    "explanation": "Resistivity logs measure electrical resistance, which is related to porosity and fluid salinity of the surrounding rock."
+  },
+  {
+    "type": "mcq",
+    "question": "Which thermal bath city is located in northeast Great Plain of Hungary?",
+    "options": [
+      "Hévíz",
+      "Szentes",
+      "Hajdúszoboszló",
+      "Budapest"
+    ],
+    "correct": "C",
+    "explanation": "Hajdúszoboszló in the northeast Great Plain is one of the largest thermal well fields in Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of thermal lake is Hévíz known for?",
+    "options": [
+      "The world's largest artificial thermal lake",
+      "Europe's largest biologically active thermal lake",
+      "The deepest thermal lake in the world",
+      "The oldest documented thermal lake"
+    ],
+    "correct": "B",
+    "explanation": "Hévíz in western Hungary is home to Europe's largest biologically active thermal lake."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Name attribute in the Aquifer feature class store?",
+    "options": [
+      "The internal database identifier",
+      "The display name of the aquifer used for labeling and legend construction",
+      "The file name of the shapefile",
+      "The coordinate reference system name"
+    ],
+    "correct": "B",
+    "explanation": "The Name attribute stores the display name of the aquifer or aquifer zone, used for labeling and legend construction."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Edwards Aquifer code in the Texas Water Development Board system?",
+    "options": [
+      "1",
+      "5",
+      "11",
+      "22"
+    ],
+    "correct": "C",
+    "explanation": "In Texas, the Edwards Aquifer is assigned code 11 by the Texas Water Development Board."
+  },
+  {
+    "type": "mcq",
+    "question": "For how many years have communities been digging wells according to archaeological evidence?",
+    "options": [
+      "About 3,000 years",
+      "About 5,000 years",
+      "At least 8,000 years",
+      "About 12,000 years"
+    ],
+    "correct": "C",
+    "explanation": "Archaeological evidence from Cyprus, China, and the Levant shows communities have been digging wells for at least eight thousand years."
+  },
+  {
+    "type": "mcq",
+    "question": "How is the WellID attribute used in the BoreholeLog table?",
+    "options": [
+      "It uniquely identifies each log entry",
+      "It references the HydroID of the associated Well feature",
+      "It identifies the well driller",
+      "It encodes the well type"
+    ],
+    "correct": "B",
+    "explanation": "The WellID attribute in the BoreholeLog table references the HydroID of the associated Well feature, creating the link between tables."
+  },
+  {
+    "type": "mcq",
+    "question": "The USGS Ground Water Atlas of the United States is which Hydrologic Atlas number?",
+    "options": [
+      "HA-500",
+      "HA-630",
+      "HA-730",
+      "HA-900"
+    ],
+    "correct": "C",
+    "explanation": "The USGS Principal Aquifers map was originally published in the Ground Water Atlas of the United States (USGS Hydrologic Atlas 730)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical wellhead water temperature range for Hungarian thermal wells?",
+    "options": [
+      "20-40°C",
+      "30-98°C",
+      "50-120°C",
+      "60-170°C"
+    ],
+    "correct": "B",
+    "explanation": "Table 19.8 shows the typical wellhead water temperature range for Hungarian thermal wells is 30-98°C."
+  },
+  {
+    "type": "mcq",
+    "question": "Which type of borehole log documents the construction of the well including casing and screens?",
+    "options": [
+      "Lithological log",
+      "Geophysical log",
+      "Well completion log",
+      "Hydrostratigraphic log"
+    ],
+    "correct": "C",
+    "explanation": "Well completion logs document well construction: casing diameters, screen positions, gravel pack, and cement seals."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GGIS stand for?",
+    "options": [
+      "Global Geological Information System",
+      "Global Groundwater Information System",
+      "General Geographic Information Standard",
+      "Groundwater GIS Integration System"
+    ],
+    "correct": "B",
+    "explanation": "GGIS stands for Global Groundwater Information System, operated by IGRAC."
+  },
+  {
+    "type": "mcq",
+    "question": "The Floridan Aquifer System is located in which US state?",
+    "options": [
+      "Texas",
+      "California",
+      "Florida",
+      "Michigan"
+    ],
+    "correct": "C",
+    "explanation": "Florida's geological survey has mapped the Floridan Aquifer System, one of the most productive in the world."
+  },
+  {
+    "type": "mcq",
+    "question": "In quality assurance of well databases, what is an orphan record?",
+    "options": [
+      "A well with missing location data",
+      "A BoreholeLog entry with a WellID that does not match any Well feature",
+      "A well without any pumping data",
+      "A duplicate well record"
+    ],
+    "correct": "B",
+    "explanation": "Orphan records are BoreholeLog entries with WellID values that do not match any Well feature, indicating data integrity issues."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Australian standard for groundwater data exchange?",
+    "options": [
+      "GeoSciML",
+      "ASTM D5254",
+      "National Groundwater Data Transfer Standard",
+      "GroundWaterML 2.0"
+    ],
+    "correct": "C",
+    "explanation": "Australia's National Groundwater Data Transfer Standard defines data structures and exchange formats for groundwater data across Australian states and territories."
+  },
+  {
+    "type": "mcq",
+    "question": "At what approximate depth in Hungary does water typically exceed 30°C?",
+    "options": [
+      "100-200 meters",
+      "300-400 meters",
+      "600-700 meters",
+      "1000-1200 meters"
+    ],
+    "correct": "C",
+    "explanation": "Water from wells deeper than about 600-700 meters typically exceeds 30°C due to Hungary's high geothermal gradient."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's average heat flow density is approximately what value?",
+    "options": [
+      "30-40 mW/m²",
+      "50-60 mW/m²",
+      "70-80 mW/m²",
+      "90-100 mW/m²"
+    ],
+    "correct": "D",
+    "explanation": "Hungary's heat flow density averages approximately 90-100 mW/m², roughly twice the continental average."
+  },
+  {
+    "type": "mcq",
+    "question": "What is Hungary's approximate geothermal gradient?",
+    "options": [
+      "15-20°C per kilometer",
+      "25-30°C per kilometer",
+      "45-50°C per kilometer",
+      "70-80°C per kilometer"
+    ],
+    "correct": "C",
+    "explanation": "Hungary's geothermal gradient is approximately 45-50°C per kilometer, nearly twice the global average."
+  },
+  {
+    "type": "mcq",
+    "question": "What spatial interpolation methods can be used to create a surface from stratigraphic picks?",
+    "options": [
+      "Only linear regression",
+      "Only nearest neighbor",
+      "Kriging or inverse distance weighting",
+      "Only Thiessen polygons"
+    ],
+    "correct": "C",
+    "explanation": "Stratigraphic picks can be used as input to spatial interpolation algorithms such as kriging or inverse distance weighting to produce continuous surfaces."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship between the GeologyArea and Aquifer feature classes?",
+    "options": [
+      "They are identical",
+      "GeologyArea shows physical rock distribution while Aquifer shows hydrogeological interpretation",
+      "Aquifer is a subset of GeologyArea",
+      "There is no relationship"
+    ],
+    "correct": "B",
+    "explanation": "GeologyArea represents mapped rock units, while Aquifer polygons are interpretive overlays reclassifying geology through a hydrogeological lens."
+  },
+  {
+    "type": "mcq",
+    "question": "What year of the USGS Ground Water Atlas is the Edwards Aquifer USGS Scientific Investigations Map?",
+    "options": [
+      "2001",
+      "2003",
+      "2005",
+      "2008"
+    ],
+    "correct": "C",
+    "explanation": "The reference cites Blome et al. 2005 for the Geologic map of the Edwards Aquifer recharge zone."
+  },
+  {
+    "type": "mcq",
+    "question": "The ElevUnits attribute in the BoreholeLog table stores what information?",
+    "options": [
+      "The type of elevation measurement device",
+      "The units of elevation (meters, feet)",
+      "The confidence level of elevation data",
+      "The elevation reference datum"
+    ],
+    "correct": "B",
+    "explanation": "The ElevUnits attribute stores the units of elevation used (meters or feet)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does NADM stand for?",
+    "options": [
+      "North American Data Model",
+      "North American Geologic Map Data Model",
+      "National Aquifer Database Model",
+      "National American Digital Map"
+    ],
+    "correct": "B",
+    "explanation": "NADM is the North American Geologic Map Data Model, defining standardized methodologies for storage, manipulation, and distribution of geologic map information."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship between geological maps and aquifer maps?",
+    "options": [
+      "They are completely unrelated",
+      "Aquifer maps are interpretive overlays on geologic maps filtered through a hydrogeological lens",
+      "Geologic maps are derived from aquifer maps",
+      "They always show identical information"
+    ],
+    "correct": "B",
+    "explanation": "Aquifer maps are essentially interpretive overlays on geologic maps, filtered through a hydrogeological lens to classify formations by their water-bearing properties."
+  },
+  {
+    "type": "mcq",
+    "question": "In the SZTFH portal, pre-Quaternary geological maps at what scale are available?",
+    "options": [
+      "1:10,000",
+      "1:25,000",
+      "1:100,000",
+      "1:1,000,000"
+    ],
+    "correct": "C",
+    "explanation": "The SZTFH portal provides pre-Quaternary geological maps at 1:100,000 scale showing rock types beneath the Quaternary cover."
+  },
+  {
+    "type": "mcq",
+    "question": "What types of features are represented as GeologyLine in a geologic map database?",
+    "options": [
+      "Aquifer boundaries only",
+      "Contacts, faults, dikes, folds, and other linear geological features",
+      "River centerlines",
+      "Contour lines"
+    ],
+    "correct": "B",
+    "explanation": "GeologyLine features represent contacts, faults, dikes, folds, and other linear geological features in a geologic map database."
+  },
+  {
+    "type": "mcq",
+    "question": "When working with confined aquifers, why is spatial overlay alone insufficient for assigning wells to aquifers?",
+    "options": [
+      "Because confined aquifers are always too small",
+      "Because wells may penetrate through overlying formations to reach the aquifer at depth",
+      "Because confined aquifers have no surface expression",
+      "Because well data is always inaccurate"
+    ],
+    "correct": "B",
+    "explanation": "For confined aquifers, wells may be located above the subcrop area but penetrate through overlying formations, so assignment must be based on screen interval and aquifer depth rather than surface projection alone."
+  },
+  {
+    "type": "mcq",
+    "question": "The WaterType attribute in Hungarian thermal well databases uses what kind of classification?",
+    "options": [
+      "Simple temperature categories",
+      "Hydrochemical classification (e.g., Na-HCO3, Ca-Mg-HCO3)",
+      "pH-based categories",
+      "Salinity categories only"
+    ],
+    "correct": "B",
+    "explanation": "The WaterType attribute stores hydrochemical classification such as Na-HCO3 or Ca-Mg-HCO3, varying by depth and aquifer."
+  },
+  {
+    "type": "mcq",
+    "question": "What three OGC/CGI standards together cover the full range of groundwater data types?",
+    "options": [
+      "INSPIRE, EGDI, and OneGeology",
+      "WaterML 2.0, GroundWaterML 2.0, and GeoSciML",
+      "WFS, WMS, and WCS",
+      "GML, KML, and CityGML"
+    ],
+    "correct": "B",
+    "explanation": "WaterML 2.0, GroundWaterML 2.0, and GeoSciML form a comprehensive suite covering point observations, well descriptions, and geological/hydrogeological maps."
+  },
+  {
+    "type": "mcq",
+    "question": "What organization maintains the NGMDB in the United States?",
+    "options": [
+      "EPA",
+      "NOAA",
+      "USGS and the Association of American State Geologists",
+      "FEMA"
+    ],
+    "correct": "C",
+    "explanation": "The USGS and the Association of American State Geologists maintain the National Geologic Map Database (NGMDB)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the RefElev attribute represent in the BoreholeLog table?",
+    "options": [
+      "The elevation of the regional aquifer",
+      "The reference elevation from which depth measurements are taken",
+      "The elevation of the deepest point in the borehole",
+      "The elevation of the water table"
+    ],
+    "correct": "B",
+    "explanation": "RefElev is the reference elevation (typically land surface elevation at the well) from which depth measurements are taken."
+  },
+  {
+    "type": "mcq",
+    "question": "The Danube alluvial aquifer is shared by Hungary with which countries?",
+    "options": [
+      "Slovakia, Romania, and Ukraine",
+      "Slovakia, Croatia, and Serbia",
+      "Austria, Germany, and Czech Republic",
+      "Romania, Moldova, and Ukraine"
+    ],
+    "correct": "B",
+    "explanation": "The Danube alluvial aquifer is shared with Slovakia, Croatia, and Serbia."
+  },
+  {
+    "type": "mcq",
+    "question": "The Drava-Mura alluvial aquifer is shared between Hungary and which countries?",
+    "options": [
+      "Austria and Slovakia",
+      "Romania and Serbia",
+      "Croatia and Slovenia",
+      "Germany and Czech Republic"
+    ],
+    "correct": "C",
+    "explanation": "The Drava-Mura alluvial aquifer is shared with Croatia and Slovenia."
+  },
+  {
+    "type": "true_false",
+    "question": "An aquifer boundary is always a sharply defined physical feature that can be precisely mapped in the field.",
+    "correct": false,
+    "explanation": "The boundary of an aquifer is a conceptual construct that depends on the scale of mapping, the purpose of the investigation, and the density of subsurface data available."
+  },
+  {
+    "type": "true_false",
+    "question": "The HGUID attribute allows linking multiple polygons in the geodatabase to a single aquifer definition in the HydrogeologicUnit table.",
+    "correct": true,
+    "explanation": "All polygons representing the same aquifer share the same HGUID value, which links them to one record in the HydrogeologicUnit table."
+  },
+  {
+    "type": "true_false",
+    "question": "The USGS Principal Aquifers map classifies aquifers by rock type and regional significance.",
+    "correct": true,
+    "explanation": "The dataset classifies aquifers by rock type (unconsolidated sand and gravel, sandstone, carbonate rock, etc.) and by their regional significance."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's groundwater bodies under the WFD include only porous aquifers and karstic aquifers.",
+    "correct": false,
+    "explanation": "Hungary has four types: porous, karstic, combined porous-karstic, and thermal water bodies."
+  },
+  {
+    "type": "true_false",
+    "question": "A single groundwater body under the WFD may encompass several geological formations if they are hydraulically connected.",
+    "correct": true,
+    "explanation": "A single groundwater body may encompass several geological formations if they are hydraulically connected, as WFD bodies are administrative-regulatory units."
+  },
+  {
+    "type": "true_false",
+    "question": "IGRAC operates under the auspices of UNESCO and the World Meteorological Organization.",
+    "correct": true,
+    "explanation": "IGRAC operates under the auspices of UNESCO and the World Meteorological Organization (WMO)."
+  },
+  {
+    "type": "true_false",
+    "question": "The WHYMAP Groundwater Resources Map provides sufficient detail for practical engineering purposes at the local scale.",
+    "correct": false,
+    "explanation": "The very coarse scale (1:25,000,000) means it cannot replace national or regional aquifer maps for any practical engineering purpose."
+  },
+  {
+    "type": "true_false",
+    "question": "Wells in a GIS framework are represented as polygon features.",
+    "correct": false,
+    "explanation": "Wells are represented as point features in a GIS framework, with each point corresponding to the surface location of a well."
+  },
+  {
+    "type": "true_false",
+    "question": "Each NWIS site is identified by a fifteen-digit site number based on latitude and longitude.",
+    "correct": true,
+    "explanation": "Each site in NWIS is identified by a fifteen-digit site number based on latitude and longitude."
+  },
+  {
+    "type": "true_false",
+    "question": "The Texas Water Development Board database describes each well with approximately fifty attributes.",
+    "correct": true,
+    "explanation": "Each well in the TWDB database is described by roughly fifty attributes organized in a relational database structure."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF and SZTFH maintain the exact same type of groundwater data.",
+    "correct": false,
+    "explanation": "OVF focuses on operational monitoring (water levels, water quality), while SZTFH maintains the geological borehole registry with lithological and geophysical data."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary has more than 1,300 thermal wells producing water above 30°C.",
+    "correct": true,
+    "explanation": "As of 2025, Hungary has over 1,300 registered thermal wells producing water above 30°C."
+  },
+  {
+    "type": "true_false",
+    "question": "BoreholeLog data are stored in a feature class with independent x,y coordinates for each entry.",
+    "correct": false,
+    "explanation": "Borehole log data are stored in a table rather than a feature class because the individual entries inherit their horizontal position from the associated Well point feature."
+  },
+  {
+    "type": "true_false",
+    "question": "The formula for BottomElev in the BoreholeLog table is: BottomElev = RefElev - ToDepth.",
+    "correct": true,
+    "explanation": "BottomElev = RefElev - ToDepth converts depth-below-surface to absolute elevation referenced to a common datum."
+  },
+  {
+    "type": "true_false",
+    "question": "Different drillers always describe the same geological formation using identical terminology.",
+    "correct": false,
+    "explanation": "Lithological descriptions are subjective and vary from driller to driller. A formation called 'sandy clay' by one might be 'clayey sand' by another."
+  },
+  {
+    "type": "true_false",
+    "question": "The LogType attribute in the BoreholeLog table allows different types of vertical data to be stored for the same well.",
+    "correct": true,
+    "explanation": "By filtering on LogType, a user can store and display lithological, completion, and hydrostratigraphic data separately for the same well."
+  },
+  {
+    "type": "true_false",
+    "question": "BorePoint features always have independent x,y coordinates different from the associated Well feature.",
+    "correct": false,
+    "explanation": "BorePoint features inherit x and y coordinates from the associated Well feature; only the z coordinate is derived from the elevation attribute."
+  },
+  {
+    "type": "true_false",
+    "question": "The standard Arc Hydro Groundwater data model explicitly supports deviated boreholes.",
+    "correct": false,
+    "explanation": "In the standard Arc Hydro Groundwater data model, deviated boreholes are not explicitly supported, though the model can be extended."
+  },
+  {
+    "type": "true_false",
+    "question": "Cross-validation is a method where each borehole is temporarily removed and its value is estimated from remaining boreholes to measure interpolation accuracy.",
+    "correct": true,
+    "explanation": "Cross-validation removes each borehole in turn, estimates its value from remaining data, and compares predicted to known values."
+  },
+  {
+    "type": "true_false",
+    "question": "The borehole density in Budapest is similar to that in the central Tisza region.",
+    "correct": false,
+    "explanation": "Budapest has thousands of boreholes per hundred square kilometers, while the central Tisza region may have only a few dozen per hundred square kilometers."
+  },
+  {
+    "type": "true_false",
+    "question": "Aquifer outcrop zones are areas where the aquifer-forming rock is buried beneath younger formations.",
+    "correct": false,
+    "explanation": "Outcrop zones are where the aquifer-forming rock is exposed at the land surface. Subcrop zones are where it is buried beneath younger formations."
+  },
+  {
+    "type": "true_false",
+    "question": "The INSPIRE Directive provides legally binding schemas for boreholes and hydrogeological units in EU data exchange.",
+    "correct": true,
+    "explanation": "Under INSPIRE, the Geology theme defines schemas for boreholes and hydrogeological units that are legally binding for data exchange between EU member states."
+  },
+  {
+    "type": "true_false",
+    "question": "The spontaneous potential (SP) geophysical log measures acoustic travel time in the borehole.",
+    "correct": false,
+    "explanation": "SP measures natural electrical potentials at formation boundaries. Sonic logs measure acoustic travel time."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoSciML uses an XML-based exchange format for geological data.",
+    "correct": true,
+    "explanation": "GeoSciML provides an XML-based exchange format for geological data including borehole logs and geological maps."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian Basin contains karstic aquifers only in the Transdanubian Mountains and Bükk Mountains.",
+    "correct": true,
+    "explanation": "The karstic aquifers of the Transdanubian Mountains and the Bükk Mountains in the northeast form a separate system from the sedimentary basin aquifers."
+  },
+  {
+    "type": "true_false",
+    "question": "The relationship between aquifer polygon features and well point features is a many-to-many association in the simplest case.",
+    "correct": false,
+    "explanation": "In the simplest case, it is a one-to-many relationship: one Aquifer polygon can be associated with many Well points, but each well has one primary aquifer."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's thermal water spatial distribution correlates with the depth to the Pannonian basement.",
+    "correct": true,
+    "explanation": "The spatial distribution of thermal wells correlates strongly with the depth to the Pannonian basement and the thickness of the insulating sedimentary fill."
+  },
+  {
+    "type": "true_false",
+    "question": "The Quaternary geological maps of Hungary show the distribution of alluvium, loess, wind-blown sand, and lacustrine deposits.",
+    "correct": true,
+    "explanation": "Quaternary geological maps show the distribution of surficial sediments including alluvium, loess, wind-blown sand, and lacustrine deposits."
+  },
+  {
+    "type": "true_false",
+    "question": "The 1:25,000 geological maps of Hungary from the 1960s-1980s are all fully digitized and available online.",
+    "correct": false,
+    "explanation": "Many historical maps exist only in paper form or as scanned images that have not yet been georeferenced and vectorized. Coverage at detailed scales remains incomplete."
+  },
+  {
+    "type": "true_false",
+    "question": "OneGeology operates as a centralized database where all geological data are stored in one location.",
+    "correct": false,
+    "explanation": "OneGeology operates as a portal, not a centralized database. Each participating survey serves its own data through OGC-compliant web services."
+  },
+  {
+    "type": "true_false",
+    "question": "When interpreting borehole logs, the HGUID and HGUCode fields encode the interpreted classification while the Material field retains the original driller's description.",
+    "correct": true,
+    "explanation": "This dual representation preserves the primary data (Material) while enabling the classified data (HGUID/HGUCode) to be used for mapping and modeling."
+  },
+  {
+    "type": "true_false",
+    "question": "Wells drilled into the Edwards Aquifer can be linked to aquifer polygon features through the AquiferID attribute.",
+    "correct": true,
+    "explanation": "Wells can be linked to aquifer polygon features through the AquiferID attribute, creating a direct spatial relationship between the extraction point and the aquifer unit."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's geothermal gradient is approximately equal to the continental average.",
+    "correct": false,
+    "explanation": "Hungary's geothermal gradient of 45-50°C/km is roughly 1.5 times the global continental average of 30 mK/m."
+  },
+  {
+    "type": "true_false",
+    "question": "The ASTM D5254 standard specifies that every well record should include, at minimum, a unique identifier, geographic coordinates, land surface elevation, well depth, well use, and date of construction.",
+    "correct": true,
+    "explanation": "These are the minimum data elements specified by ASTM D5254 for identifying a groundwater site."
+  },
+  {
+    "type": "true_false",
+    "question": "Geostatistical methods such as kriging produce only an estimated surface without any measure of uncertainty.",
+    "correct": false,
+    "explanation": "Kriging produces both an estimated surface and a variance surface that quantifies the uncertainty at every point."
+  },
+  {
+    "type": "true_false",
+    "question": "The GGMN (Global Groundwater Monitoring Network) is managed by IGRAC.",
+    "correct": true,
+    "explanation": "The GGMN, managed by IGRAC, coordinates the collection and sharing of monitoring data from over thirty countries."
+  },
+  {
+    "type": "true_false",
+    "question": "In Hungary, wells producing from Pannonian sandstone aquifers tend to have higher temperatures than those producing from fractured Mesozoic carbonates.",
+    "correct": false,
+    "explanation": "Wells from Pannonian sandstones tend to have lower temperatures (30-60°C) while Mesozoic carbonates can reach 50-90+°C."
+  },
+  {
+    "type": "true_false",
+    "question": "The year of the EU Water Framework Directive is 2000.",
+    "correct": true,
+    "explanation": "The Water Framework Directive is Directive 2000/60/EC, adopted in the year 2000."
+  },
+  {
+    "type": "true_false",
+    "question": "A well completion log records the sequence of earth materials encountered during drilling.",
+    "correct": false,
+    "explanation": "That is a lithological log (driller's log). A completion log documents well construction: casings, screens, gravel pack, and cement seals."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary shares transboundary aquifer systems with all seven of its neighboring countries.",
+    "correct": true,
+    "explanation": "According to Figure 19.7 caption, Hungary shares thermal water resources, alluvial aquifers, and karstic systems with all seven neighboring countries."
+  },
+  {
+    "type": "true_false",
+    "question": "The quality of a groundwater model is ultimately limited by the quality of the input data.",
+    "correct": true,
+    "explanation": "The chapter states that a model built from ten boreholes will have far greater uncertainty than one from a hundred, regardless of modeling software sophistication."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Netherlands, borehole data density can reach hundreds of wells per square kilometer.",
+    "correct": true,
+    "explanation": "The chapter notes that in well-studied areas, borehole data may be available at high spatial density, citing hundreds of wells per square kilometer in parts of the Netherlands."
+  },
+  {
+    "type": "true_false",
+    "question": "GeologyPoint features in a geologic map database represent bedding attitude measurements, sample locations, springs, caves, and sinkholes.",
+    "correct": true,
+    "explanation": "GeologyPoint features represent observation points such as bedding attitude measurements (strike and dip), sample locations, springs, caves, and sinkholes."
+  },
+  {
+    "type": "true_false",
+    "question": "A coded value domain is used for the FType attribute to ensure consistency across the well database.",
+    "correct": true,
+    "explanation": "A coded value domain restricts the values that can be entered for FType, ensuring consistency across the database."
+  },
+  {
+    "type": "true_false",
+    "question": "Sonic geophysical logs measure acoustic travel time and are related to porosity and rock type.",
+    "correct": true,
+    "explanation": "Sonic logs measure acoustic travel time, which is related to porosity and rock type."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian thermal water system is shared only between Hungary and Slovakia.",
+    "correct": false,
+    "explanation": "The Pannonian thermal water system is shared with Slovakia, Romania, Serbia, and Croatia."
+  },
+  {
+    "type": "true_false",
+    "question": "When BoreLine features for multiple wells are displayed together in a 3D scene, the result is similar to a fence diagram.",
+    "correct": true,
+    "explanation": "Multiple wells displayed together result in a set of vertical bars distributed across the landscape, similar to a fence diagram."
+  },
+  {
+    "type": "true_false",
+    "question": "The Floridan Aquifer System has been mapped with particular attention to confining units separating the upper and lower Floridan aquifers.",
+    "correct": true,
+    "explanation": "Florida's geological survey mapped the Floridan Aquifer System with particular attention to the confining units separating upper and lower aquifers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An aquifer is defined by the USGS as a geologic formation that contains sufficient saturated _____ material to yield significant quantities of water to wells and springs.",
+    "correct": "permeable",
+    "explanation": "The USGS defines an aquifer as containing sufficient saturated permeable material."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Aquifer feature class, the _____ attribute is a permanent public identifier linking the feature to external information systems.",
+    "correct": "HydroCode",
+    "explanation": "HydroCode stores permanent public identifiers for linking to external information systems such as state aquifer codes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The USGS Principal Aquifers map identifies roughly _____ aquifer systems across the United States.",
+    "correct": "seventy",
+    "explanation": "The USGS map identifies approximately seventy principal aquifer systems across the nation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Under the EU Water Framework Directive, Hungary has delineated _____ groundwater bodies.",
+    "correct": "185",
+    "explanation": "Hungary has delineated 185 groundwater bodies grouped into four main types."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SZTFH stands for Szabályozott Tevékenységek Felügyeleti Hatósága, which translates to Supervisory Authority for _____ Affairs.",
+    "correct": "Regulatory",
+    "explanation": "SZTFH is the Supervisory Authority for Regulatory Affairs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WHYMAP programme is coordinated by _____, the German Federal Institute for Geosciences and Natural Resources.",
+    "correct": "BGR",
+    "explanation": "BGR (Bundesanstalt für Geowissenschaften und Rohstoffe) coordinates the WHYMAP programme."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IGRAC is based in _____, the Netherlands.",
+    "correct": "Delft",
+    "explanation": "IGRAC (International Groundwater Resources Assessment Centre) is based in Delft, the Netherlands."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Approximately _____ transboundary aquifer systems have been identified worldwide.",
+    "correct": "600",
+    "explanation": "Approximately 600 transboundary aquifer systems have been identified worldwide by the UNESCO ISARM initiative."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At least _____ billion people worldwide rely on groundwater accessed through wells as their primary drinking water source.",
+    "correct": "1.5",
+    "explanation": "At least 1.5 billion people rely on groundwater through wells as their primary drinking water source."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Each site in the USGS NWIS is identified by a _____-digit site number.",
+    "correct": "fifteen",
+    "explanation": "NWIS uses fifteen-digit site numbers based on latitude and longitude."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Texas Water Development Board groundwater database contains records for approximately _____ wells.",
+    "correct": "130,000",
+    "explanation": "The TWDB database contains approximately 130,000 well records."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has over _____ registered thermal wells producing water above 30°C.",
+    "correct": "1,300",
+    "explanation": "Hungary has over 1,300 registered thermal wells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has approximately _____ operational thermal baths.",
+    "correct": "270",
+    "explanation": "Hungary has approximately 270 operational thermal baths."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The formula for calculating TopElev in the BoreholeLog table is: TopElev = RefElev - _____.",
+    "correct": "FromDepth",
+    "explanation": "TopElev = RefElev - FromDepth converts depth-below-surface to absolute elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The deepest thermal wells in Hungary reach depths exceeding _____ meters.",
+    "correct": "2,000",
+    "explanation": "The deepest thermal wells exceed 2,000 meters and produce water above 90°C."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASTM standard _____ defines the minimum set of data elements to identify a groundwater site.",
+    "correct": "D5254",
+    "explanation": "ASTM D5254 specifies the minimum data elements for groundwater site identification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoSciML stands for Geoscience _____ Language.",
+    "correct": "Markup",
+    "explanation": "GeoSciML is an acronym for Geoscience Markup Language."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BorePoint is a _____-enabled point feature class that represents point observations along a borehole.",
+    "correct": "z",
+    "explanation": "BorePoint is a z-enabled point feature class (PointZ) with x, y, and z coordinates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ pick is a point in 3D space where a geological boundary is encountered in a borehole.",
+    "correct": "stratigraphic",
+    "explanation": "A stratigraphic pick marks where a particular geological boundary is encountered, used for building 3D geological models."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The INSPIRE Directive has the reference number 2007/2/_____.",
+    "correct": "EC",
+    "explanation": "The INSPIRE Directive is Directive 2007/2/EC of the European Parliament and of the Council."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Well feature class, the _____ attribute classifies wells by their purpose (Production, Monitoring, Injection, etc.).",
+    "correct": "FType",
+    "explanation": "FType distinguishes well types such as Production, Monitoring, Injection, Domestic, and Irrigation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Texas Water Development Board maintains datasets for 9 major aquifers and _____ minor aquifers.",
+    "correct": "22",
+    "explanation": "The TWDB maintains datasets for nine major aquifers and twenty-two minor aquifers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's geothermal gradient is approximately _____°C per kilometer.",
+    "correct": "45-50",
+    "explanation": "Hungary's geothermal gradient is approximately 45-50°C per kilometer, roughly 1.5 times the global average."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's heat flow density averages approximately _____ mW/m², roughly twice the continental average.",
+    "correct": "90-100",
+    "explanation": "Hungary's heat flow density averages approximately 90-100 mW/m²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EU Water Framework Directive has the reference number _____/60/EC.",
+    "correct": "2000",
+    "explanation": "The Water Framework Directive is Directive 2000/60/EC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ attribute in the BoreholeLog table allows storing different types of vertical data for the same well, such as Lithology, Completion, and Hydrostratigraphy.",
+    "correct": "LogType",
+    "explanation": "LogType distinguishes between lithological logs, well completion logs, and hydrostratigraphic interpretations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF monitoring data have been freely available through the _____ portal since July 2024.",
+    "correct": "data.vizugy.hu",
+    "explanation": "OVF data became freely available through data.vizugy.hu in July 2024."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin is dominantly filled with _____ and Quaternary sediments.",
+    "correct": "Neogene",
+    "explanation": "The Pannonian Basin is filled with several kilometers of Neogene and Quaternary sediments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Michigan's _____ database contains records for over 500,000 wells.",
+    "correct": "Wellogic",
+    "explanation": "Michigan's Wellogic database contains records for over 500,000 wells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OneGeology initiative was launched at the _____ International Geological Congress in 2008.",
+    "correct": "33rd",
+    "explanation": "OneGeology was launched at the 33rd International Geological Congress in 2008."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EGDI stands for European Geological Data _____.",
+    "correct": "Infrastructure",
+    "explanation": "EGDI is the European Geological Data Infrastructure."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The thermal lake at _____ in western Hungary is Europe's largest biologically active thermal lake.",
+    "correct": "Hévíz",
+    "explanation": "Hévíz in western Hungary hosts Europe's largest biologically active thermal lake."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The SZTFH portal is accessible at map._____.gov.hu.",
+    "correct": "mbfsz",
+    "explanation": "The SZTFH portal URL is map.mbfsz.gov.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GroundWaterML _____ is the OGC standard specifically addressing groundwater data exchange.",
+    "correct": "2.0",
+    "explanation": "GroundWaterML 2.0 is the companion standard to GeoSciML for groundwater data exchange."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Aquifer-Well relationship answers the question: which _____ does this well tap?",
+    "correct": "aquifer",
+    "explanation": "The relationship answers the fundamental question of which aquifer a particular well draws water from."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Edwards Aquifer is assigned code _____ by the Texas Water Development Board.",
+    "correct": "11",
+    "explanation": "In Texas, the Edwards Aquifer is code 11 in the TWDB system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ log uses instruments lowered into the borehole to measure physical properties of the surrounding rock.",
+    "correct": "geophysical",
+    "explanation": "Geophysical logs use instruments lowered into the borehole to measure physical properties like radioactivity, resistivity, and acoustic velocity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "California's groundwater basin delineation dataset is known as _____ 118.",
+    "correct": "Bulletin",
+    "explanation": "California's Department of Water Resources delineates groundwater basins in the Bulletin 118 dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ geophysical log measures natural radioactivity, useful for distinguishing clay from sand.",
+    "correct": "gamma ray",
+    "explanation": "Gamma ray logs measure natural radioactivity, with high values in clay and low values in sand."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The conventional temperature threshold for classifying water as thermal is _____ degrees Celsius.",
+    "correct": "30",
+    "explanation": "The conventional threshold for thermal water classification is 30°C."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ attribute in the Well feature class links the well to an Aquifer feature through the Aquifer's HydroID.",
+    "correct": "AquiferID",
+    "explanation": "AquiferID establishes the relationship between wells and their associated aquifer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Geostatistical methods produce both an estimated surface and a _____ surface that quantifies uncertainty at every point.",
+    "correct": "variance",
+    "explanation": "Kriging produces a variance surface showing lowest uncertainty near control points and highest in data-sparse areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Communities have been digging wells for at least _____ thousand years according to archaeological evidence.",
+    "correct": "eight",
+    "explanation": "Archaeological evidence from Cyprus, China, and the Levant shows wells have been dug for at least eight thousand years."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The acronym ISARM stands for Internationally Shared Aquifer _____ Management.",
+    "correct": "Resources",
+    "explanation": "ISARM is Internationally Shared Aquifer Resources Management, a UNESCO initiative."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The USGS Ground Water Atlas of the United States is Hydrologic Atlas number _____.",
+    "correct": "730",
+    "explanation": "The USGS Ground Water Atlas is HA-730."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ standard, developed by the IUGS CGI, provides an XML-based encoding for geoscience data.",
+    "correct": "GeoSciML",
+    "explanation": "GeoSciML provides an XML-based encoding for geological data including borehole logs and maps."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OVF abbreviation stands for Országos Vízügyi _____.",
+    "correct": "Főigazgatóság",
+    "explanation": "OVF is Országos Vízügyi Főigazgatóság, the General Directorate of Water Management."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the geodatabase, the relationship between a Well feature and its BoreholeLog records is a _____-to-many association.",
+    "correct": "one",
+    "explanation": "One well can have many log entries, making it a one-to-many relationship."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BoreLine features represent _____ data along a borehole, with each feature being a vertical line segment.",
+    "correct": "interval",
+    "explanation": "BoreLine represents interval data with top and bottom elevations for each depth segment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ surface in geostatistics shows where additional drilling would most reduce model uncertainty.",
+    "correct": "variance",
+    "explanation": "The variance (kriging) surface is lowest near borehole control points and highest in data-sparse areas, mapping where more data would be most valuable."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's national hydrogeological map is at a scale of 1:_____.",
+    "correct": "500,000",
+    "explanation": "Hungary's national hydrogeological map is at 1:500,000 scale."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between geological maps and aquifer maps, and describe how they are related in a hydrogeological investigation.",
+    "correct": "Geological maps describe the physical distribution of rock types, showing the spatial extent of different geological formations based on their lithology, age, and structure. Aquifer maps are interpretive overlays on geological maps that reclassify the same rock units according to their water-bearing properties -- identifying which formations serve as aquifers, which act as confining units, and distinguishing outcrop from subcrop zones. The relationship is intimate but not one-to-one: a single geological formation may function differently in different areas, and multiple formations may be grouped into one hydrogeologic unit.",
+    "explanation": "This distinction is fundamental because GIS practitioners working with groundwater data must navigate both systems: geological maps for the physical framework and aquifer/WFD delineations for regulatory purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role and structure of the HGUID attribute in a groundwater geodatabase, and explain why it is considered a central organizing element.",
+    "correct": "HGUID (Hydrogeologic Unit Identifier) links every spatial feature in the geodatabase -- aquifer polygons, well points, borehole log entries, BorePoint and BoreLine features -- to a single record in the HydrogeologicUnit table. This table stores the unit's name, properties, and classification. HGUID enables users to select all features belonging to a particular unit regardless of spatial representation, and ensures that every observation can be traced to a specific hydrogeologic unit. It is the common key that ties the entire system together across multiple feature classes and tables.",
+    "explanation": "The HGUID provides semantic consistency across a complex geodatabase, ensuring that geological, well, and borehole data all reference the same conceptual hydrogeologic framework."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the challenges of integrating historical well records into a consistent, spatially enabled database, using examples from the chapter.",
+    "correct": "Historical well records vary enormously in quality and completeness. A record from 1920 may contain only a rough location description, a depth, and the driller's name, while a modern record includes precise GPS coordinates, detailed logs, and geophysical data. Challenges include reconciling different location accuracies, standardizing lithological descriptions that vary between drillers (e.g., 'sandy clay' vs 'clayey sand'), converting between different coordinate systems and datums, and handling incomplete attribute sets. The ASTM D5254 standard provides a target minimum dataset, but many historical records fall short of even this minimum.",
+    "explanation": "Data heterogeneity is one of the fundamental challenges of groundwater informatics, and addressing it requires both technical tools (coordinate transformations, nomenclature mapping) and professional judgment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why absolute elevations (TopElev, BottomElev) are essential for integrating borehole data across multiple wells, and describe how they are calculated.",
+    "correct": "Raw borehole data are recorded as depth below land surface, which cannot be directly compared between wells at different surface elevations. Converting to absolute elevations (meters above sea level) using the formulas TopElev = RefElev - FromDepth and BottomElev = RefElev - ToDepth places all observations on a common datum. This enables spatial interpolation between wells to generate continuous surfaces representing formation tops and bottoms, which is the foundation for three-dimensional geological models and groundwater flow models.",
+    "explanation": "Without this transformation, borehole data remain isolated observations. With it, they become inputs to interpolation algorithms that create the subsurface framework."
+  },
+  {
+    "type": "essay",
+    "question": "Compare and contrast the roles of OVF and SZTFH in Hungary's groundwater data infrastructure.",
+    "correct": "OVF (General Directorate of Water Management) focuses on operational monitoring -- it operates a national network of groundwater monitoring wells measuring water levels and quality, with data available through data.vizugy.hu since July 2024. SZTFH (Supervisory Authority for Regulatory Affairs) maintains the geological borehole registry -- a catalog of exploration wells, geological survey boreholes, and water wells with lithological and geophysical data, accessible through map.mbfsz.gov.hu. The two agencies provide complementary data: OVF for time-series monitoring and SZTFH for geological characterization of the subsurface.",
+    "explanation": "Understanding the dual-agency structure is essential for Hungarian groundwater practitioners who must draw on both operational monitoring data and geological records."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of transboundary aquifers and explain why they present particular challenges for water management, using Hungarian examples.",
+    "correct": "Transboundary aquifers are aquifer systems that extend beneath two or more countries. Approximately 600 such systems exist worldwide, with over 150 in Europe. Hungary shares several significant systems with its neighbors: the Pannonian thermal water system (with Slovakia, Romania, Serbia, Croatia), the Danube alluvial aquifer (with Slovakia, Croatia, Serbia), and the Drava-Mura alluvial aquifer (with Croatia, Slovenia). Management challenges include different data standards and mapping conventions between countries, political sensitivities about water resources, the need for coordinated monitoring to prevent overexploitation, and the requirement for bilateral or multilateral agreements.",
+    "explanation": "The adoption of INSPIRE-compliant standards and standardized GIS data models facilitates cross-border data sharing, but practical challenges remain in harmonizing historical datasets."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the BoreholeLog table supports multiple types of vertical data for the same well, and why this capability is important.",
+    "correct": "The BoreholeLog table uses the LogType attribute to distinguish between different categories of vertical data: lithological descriptions (LogType = 'Lithology'), well construction information (LogType = 'Completion'), and hydrostratigraphic interpretations (LogType = 'Hydrostratigraphy'). A single well may have all three types of log data stored in the same table. By filtering on LogType, users can display and analyze each type separately. This is important because each data type serves different purposes: lithological logs preserve the raw driller's observations, completion logs document how the well was built, and hydrostratigraphic logs encode expert geological interpretation.",
+    "explanation": "The multi-LogType design avoids the need for separate tables for each data type while maintaining the ability to distinguish and filter between them."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Hungary's exceptional geothermal resources, including their geological causes and how thermal well data are managed in GIS databases.",
+    "correct": "Hungary's geothermal resources result from the thin crust beneath the Pannonian Basin and elevated asthenospheric temperatures, producing a heat flow density of 90-100 mW/m² (twice the continental average) and a geothermal gradient of 45-50°C/km. This means water at 600-700 m depth exceeds 30°C. Hungary has over 1,300 thermal wells and approximately 270 thermal baths. In GIS databases, thermal wells use the standard Well feature class with additional attributes: WaterTemp, MaxTemp, Yield, TDS, WaterType, ProductionFormation, and WellAge. Spatial analysis reveals that Pannonian sandstone wells produce lower-temperature water (30-60°C) with higher yields, while Mesozoic carbonate wells produce hotter water (50-90+°C) with more variable yields.",
+    "explanation": "The thermal dimension adds both scientific complexity and economic significance to Hungary's groundwater data management."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between outcrop zones and subcrop zones on an aquifer map, and why this distinction matters for well siting.",
+    "correct": "Outcrop zones are areas where the aquifer-forming rock is exposed at the land surface, while subcrop zones are areas where the aquifer is buried beneath younger formations. This distinction matters for well siting because in outcrop zones, wells can access the aquifer directly from the surface, and the aquifer receives direct recharge from precipitation. In subcrop zones, wells must penetrate through overlying formations to reach the aquifer, which is typically confined and under pressure. The spatial overlay method of assigning wells to aquifers works well for outcrop zones but is less appropriate for subcrop zones, where assignment must consider screen depth and aquifer depth at the well location.",
+    "explanation": "Understanding outcrop versus subcrop is essential for both recharge assessment and well-aquifer assignment in a geodatabase."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical workflow for building a well and aquifer database in a GIS environment, including the eight key steps outlined in the chapter.",
+    "correct": "The workflow involves: (1) Design the geodatabase with Aquifer, Well, BoreholeLog, and BorePoint/BoreLine feature classes with project-specific attributes and coded value domains. (2) Import aquifer data from national/regional sources (WFD groundwater bodies, USGS shapefiles). (3) Import well data by creating point features from coordinate tables. (4) Establish aquifer-well relationships by populating AquiferID through spatial overlay or lookup tables. (5) Import borehole vertical data into the BoreholeLog table and calculate absolute elevations. (6) Create 3D features (BorePoint, BoreLine) from the tabular data. (7) Quality assurance checking for orphan records, elevation inconsistencies, and spatial outliers. (8) Create visualization products including maps, 3D views, and cross-sections.",
+    "explanation": "This workflow is iterative -- new data, quality issues discovered during visualization, or project changes may require revisiting earlier steps."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the interpretation of raw borehole logs into hydrostratigraphic units is considered subjective, and discuss strategies to manage this subjectivity.",
+    "correct": "The interpretation is subjective because different hydrogeologists may classify the same borehole differently, especially in areas like the Great Plain where Quaternary sediments exhibit complex variability and formation boundaries are gradational rather than sharp. A transition described as 'sandy clay' vs 'clayey sand' carries different hydrogeological implications. Strategies to manage subjectivity include: using standardized stratigraphic frameworks, documenting interpretation criteria explicitly, including uncertainty estimates for boundary placements, using geophysical logs (SP, resistivity, gamma ray) for more objective criteria, and maintaining the dual representation in the BoreholeLog table (original Material description alongside interpreted HGUID/HGUCode).",
+    "explanation": "Professional judgment remains essential in hydrostratigraphic interpretation, but transparency and documentation help constrain and communicate the associated uncertainty."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the well data infrastructure in the United States (NWIS and state systems) with Hungary's system (OVF and SZTFH databases).",
+    "correct": "In the US, the USGS NWIS contains approximately 1.5 million sites and provides a national-level, freely accessible database. State-level databases like the TWDB (130,000 wells) often contain more detailed information because they are fed by mandatory driller completion reports. In Hungary, OVF maintains operational monitoring data (water levels, quality) through data.vizugy.hu, while SZTFH maintains the geological borehole registry with lithological and geophysical data through map.mbfsz.gov.hu. Both countries use a central well table with unique identifiers linked to subsidiary tables. The key structural similarity is the use of relational databases linking well identity to vertical data and time series; the key difference is Hungary's two-agency split versus the US federal-state split.",
+    "explanation": "Understanding the institutional structure of well databases is essential for data access and integration in any hydrogeological investigation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how well data feed into the groundwater modeling workflow, describing the specific role of each major data type.",
+    "correct": "Aquifer maps define the lateral extent of the model domain and boundaries of different hydrogeologic units, providing the framework for zonation. Well locations and depths provide observational control for model calibration -- water level measurements are compared against model predictions, while production wells define extraction rates. Borehole logs provide subsurface information for building the 3D geological framework: stratigraphic picks are interpolated to produce formation surfaces that define model layer geometry. Geological maps provide surface geology constraining lateral formation extents between borehole control points. Together, these data types form the complete input pipeline for numerical groundwater flow models.",
+    "explanation": "The quality of a groundwater model is ultimately limited by the quality of these input data, making careful data management foundational to all subsequent analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of data density and its effect on the reliability of interpolated surfaces and 3D models in groundwater studies.",
+    "correct": "Data density refers to the number of observation points (boreholes) per unit area. It varies dramatically between regions -- from thousands per hundred km² in urban Budapest to a few dozen in the central Tisza area. Interpolated surfaces and 3D models are only as reliable as the data supporting them: areas between control points must be inferred, and the reliability decreases with distance from observations. Kriging variance maps quantify this, showing lowest uncertainty near boreholes and highest in gaps. A practical consequence is that the raster cell size should match data density -- creating high-resolution surfaces from sparse data gives a false impression of precision without accuracy.",
+    "explanation": "Understanding and communicating data density limitations is essential for responsible use of subsurface models in decision-making."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the WFD groundwater body classification system in Hungary and explain how it differs from geological mapping.",
+    "correct": "Under the EU Water Framework Directive, Hungary has delineated 185 groundwater bodies classified into four types: porous, karstic, combined porous-karstic, and thermal. Each body is assessed for quantitative status (good or poor, based on abstraction-recharge balance) and chemical status (good or poor, based on pollutant concentrations). This classification differs from geological mapping because WFD bodies are administrative-regulatory units defined for water management purposes, not physical descriptions. A single WFD body may encompass several geological formations if hydraulically connected, or a single formation may be split into multiple bodies based on water quality or usage differences. Practitioners must navigate both systems: SZTFH geological maps for physical framework, OVF/WFD delineations for regulatory compliance.",
+    "explanation": "The dual geological and regulatory frameworks create a data management challenge that HGUID-based geodatabases help resolve."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the GGIS (Global Groundwater Information System) and discuss its strengths and limitations as a worldwide groundwater data resource.",
+    "correct": "GGIS, operated by IGRAC at ggis.un-igrac.org, aggregates groundwater data from participating countries into a web-based GIS interface. It includes aquifer maps, groundwater monitoring data, transboundary aquifer inventories from the ISARM programme, and groundwater use estimates from national statistics and FAO AQUASTAT. Its primary strength is being the only platform attempting a single global access point for groundwater data. Its main limitation is extremely uneven coverage -- data-rich countries like the Netherlands and Australia are well represented, while many developing countries have sparse entries. Nevertheless, for international students and initial reconnaissance, GGIS provides an invaluable starting point for any country's groundwater information.",
+    "explanation": "GGIS represents the most ambitious attempt at a truly global groundwater database, improving as more countries contribute data."
+  },
+  {
+    "type": "essay",
+    "question": "Describe BorePoint and BoreLine feature classes, their differences, and their typical uses in subsurface visualization.",
+    "correct": "BorePoint is a z-enabled point feature class (PointZ) representing specific locations along a borehole, such as stratigraphic picks or sampling ports. Each feature has x,y coordinates inherited from the Well feature and a z coordinate from the elevation attribute. BoreLine is a z-enabled polyline feature class (PolylineZ) representing depth intervals, with each feature being a vertical line segment from TopElev to BottomElev. BorePoint is used for extracting formation boundary elevations for surface interpolation. BoreLine provides richer visualization, showing the full extent of each interval as color-coded segments. Together in a 3D scene, multiple BoreLine features create fence-diagram-like displays for visual correlation between wells.",
+    "explanation": "The choice between BorePoint and BoreLine depends on the analysis goal: point extraction for interpolation, or interval display for visualization and correlation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the challenges and strategies for managing data gaps and uncertainty in groundwater databases, as described in the chapter.",
+    "correct": "No study area has perfect data coverage. Boreholes are concentrated in urban areas, along transportation corridors, and near economically important aquifers, leaving rural and deep formations data-sparse. Strategies include: cross-validation (removing each borehole in turn to test prediction accuracy), geostatistical methods like kriging that produce variance maps quantifying uncertainty at every point, maintaining data quality flags recording source reliability and measurement method, weighting higher-quality picks more heavily during interpolation, and clearly communicating uncertainty in model outputs. The variance surface objectively maps where additional drilling would most reduce model uncertainty, guiding investment in new data collection.",
+    "explanation": "Managing and communicating uncertainty is not just a technical exercise but an ethical responsibility when groundwater decisions affect water supply for communities."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical steps and considerations involved in creating BorePoint features from stratigraphic picks, using the worked example from the chapter.",
+    "correct": "To create BorePoint features, the GIS tool reads the BoreholeLog table, identifies records matching the target HGUID (e.g., HGUID=7 for the Upper Pleistocene Aquifer), extracts the TopElev value, combines it with x,y coordinates from the associated Well feature, and creates a PointZ feature at the 3D location. For example, with three wells: Well 101 at (650230, 185450) with RefElev 88.2m and FromDepth 14.0m yields TopElev 74.2m; Well 102 at (651800, 186100) yields 73.0m; Well 103 at (649900, 184200) yields 75.5m. These three 3D points can then be interpolated using kriging or IDW to produce a continuous surface representing the formation top across the study area.",
+    "explanation": "This workflow transforms tabular borehole records into spatially queryable 3D features that serve as input to interpolation algorithms."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why vertical exaggeration is commonly applied when visualizing BoreLine features in 3D scenes, and what distortions this introduces.",
+    "correct": "Vertical exaggeration is necessary because the actual diameter of boreholes (15-50 cm) is far too small to be visible at regional scale, and thin geological formations may be only meters thick while extending for kilometers laterally. Without exaggeration, these features would be invisible. However, vertical exaggeration distorts the true geometry: it makes thin layers appear disproportionately thick and can mislead viewers about the relative thickness of formations. The GIS practitioner must balance visual clarity against geometric fidelity, always noting the exaggeration factor used in published views. Any quantitative measurements of dip or thickness from exaggerated views must be corrected back to true scale.",
+    "explanation": "This is a fundamental visualization trade-off in subsurface GIS that must be communicated to non-specialist audiences."
+  },
+  {
+    "type": "mcq",
+    "question": "What is WIID in the Texas Water Development Board system?",
+    "options": [
+      "Water Inventory and ID Database",
+      "Water Information Integration and Dissemination",
+      "Well Information Index Database",
+      "Water Infrastructure Implementation Directory"
+    ],
+    "correct": "B",
+    "explanation": "WIID provides a web-based mapping interface for querying TWDB well data."
+  },
+  {
+    "type": "mcq",
+    "question": "What does TDS measure in thermal well databases?",
+    "options": [
+      "Total depth of screen",
+      "Total dissolved solids in mg/L",
+      "Thermal data summary",
+      "Total discharge per season"
+    ],
+    "correct": "B",
+    "explanation": "TDS ranges 500-15,000 mg/L for Hungarian thermal wells."
+  },
+  {
+    "type": "mcq",
+    "question": "What does WellAge record for Hungarian thermal wells?",
+    "options": [
+      "Geological age of aquifer",
+      "Year of drilling",
+      "Time since maintenance",
+      "Age of groundwater"
+    ],
+    "correct": "B",
+    "explanation": "WellAge stores year of drilling from 1860s to present."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sustainable Groundwater Management Act was enacted in which US state?",
+    "options": [
+      "Texas",
+      "Florida",
+      "California",
+      "Arizona"
+    ],
+    "correct": "C",
+    "explanation": "California's SGMA of 2014 uses Bulletin 118 basin delineations."
+  },
+  {
+    "type": "true_false",
+    "question": "HydroCode stores the internal geodatabase identifier for features.",
+    "correct": false,
+    "explanation": "HydroCode stores permanent public identifier; HydroID is internal."
+  },
+  {
+    "type": "true_false",
+    "question": "Aquifer polygon features use FType to distinguish outcrop from subcrop zones.",
+    "correct": true,
+    "explanation": "FType values include Outcrop, Confined, Subcrop, Recharge Zone."
+  },
+  {
+    "type": "true_false",
+    "question": "A single geologic formation always functions identically everywhere.",
+    "correct": false,
+    "explanation": "A formation may function as aquifer where fractured and confining where not."
+  },
+  {
+    "type": "true_false",
+    "question": "Ottoman-era baths mark the beginning of thermal water exploitation in Hungary.",
+    "correct": true,
+    "explanation": "Thermal water use spans centuries from Ottoman baths to modern spas."
+  },
+  {
+    "type": "true_false",
+    "question": "Geophysical logs produce continuous traces of properties versus depth.",
+    "correct": true,
+    "explanation": "Unlike interval-based lithological logs, geophysical logs are continuous."
+  },
+  {
+    "type": "true_false",
+    "question": "WellID indexing is important for efficient retrieval in large databases.",
+    "correct": true,
+    "explanation": "Indexing enables fast retrieval from 130,000+ well databases."
+  },
+  {
+    "type": "true_false",
+    "question": "California's OSWCR provides access to digitized driller's logs.",
+    "correct": true,
+    "explanation": "Online System for Well Completion Reports provides digitized logs."
+  },
+  {
+    "type": "true_false",
+    "question": "GGIS has complete uniform data coverage for all countries.",
+    "correct": false,
+    "explanation": "Coverage is uneven; data-rich countries better represented."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro GW includes a Make BorePoints geoprocessing tool.",
+    "correct": true,
+    "explanation": "Automated tool generates BorePoint features from BoreholeLog records."
+  },
+  {
+    "type": "true_false",
+    "question": "Engineering geological maps from SZTFH provide foundation condition data.",
+    "correct": true,
+    "explanation": "They cover foundation conditions, soil stability, geotechnical hazards."
+  },
+  {
+    "type": "true_false",
+    "question": "The USGS Geologic Map of North America is at 1:5,000,000 scale.",
+    "correct": true,
+    "explanation": "Continental geological overview map."
+  },
+  {
+    "type": "true_false",
+    "question": "NGMDB provides complete 1:24,000 quadrangle coverage across the US.",
+    "correct": false,
+    "explanation": "Coverage at this scale is far from complete."
+  },
+  {
+    "type": "true_false",
+    "question": "Sandy clay and clayey sand carry different hydrogeological implications.",
+    "correct": true,
+    "explanation": "Sandy clay has clay matrix; clayey sand has sand matrix with different permeability."
+  },
+  {
+    "type": "true_false",
+    "question": "WHYMAP has been active since the early 2000s.",
+    "correct": true,
+    "explanation": "Coordinated by BGR with UNESCO support."
+  },
+  {
+    "type": "true_false",
+    "question": "MaxTemp for Hungarian thermal wells can reach 170 degrees C.",
+    "correct": true,
+    "explanation": "Table 19.8 shows range up to 170 degrees."
+  },
+  {
+    "type": "true_false",
+    "question": "FGDC published standard FGDC-STD-013-2006 for geologic map symbolization.",
+    "correct": true,
+    "explanation": "Digital Cartographic Standard for Geologic Map Symbolization."
+  },
+  {
+    "type": "true_false",
+    "question": "Wells with computed bottom elevation above land surface indicate errors.",
+    "correct": true,
+    "explanation": "Specific QA check for elevation inconsistencies."
+  },
+  {
+    "type": "true_false",
+    "question": "Illinois maintains a well database through its State Water Survey.",
+    "correct": true,
+    "explanation": "Listed with Michigan and California as comprehensive state databases."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1920 well record typically includes GPS coordinates.",
+    "correct": false,
+    "explanation": "May contain only rough location, depth, and driller name."
+  },
+  {
+    "type": "true_false",
+    "question": "Standardized groundwater exchange format adoption is complete worldwide.",
+    "correct": false,
+    "explanation": "Adoption remains uneven though trajectory is clear."
+  },
+  {
+    "type": "true_false",
+    "question": "Well completion logs document cement seal locations.",
+    "correct": true,
+    "explanation": "Seals isolate different zones within the well."
+  },
+  {
+    "type": "true_false",
+    "question": "Borehole spatial distribution is usually regular and evenly spaced.",
+    "correct": false,
+    "explanation": "Concentrated in urban areas, sparse in rural terrain."
+  },
+  {
+    "type": "true_false",
+    "question": "BoreLine completion features use FType to distinguish casing from screens.",
+    "correct": true,
+    "explanation": "FType distinguishes casing, screens, grout, open-hole."
+  },
+  {
+    "type": "true_false",
+    "question": "Web services are replacing bulk file downloads for data distribution.",
+    "correct": true,
+    "explanation": "Makes standardized exchange formats essential."
+  },
+  {
+    "type": "true_false",
+    "question": "All 1:25,000 historical Hungarian maps are available online.",
+    "correct": false,
+    "explanation": "Many exist only as paper or ungeoreferenced scans."
+  },
+  {
+    "type": "true_false",
+    "question": "Geological polygon to hydrogeologic unit mapping is always one-to-one.",
+    "correct": false,
+    "explanation": "One formation may behave differently in different areas."
+  },
+  {
+    "type": "true_false",
+    "question": "Standardized frameworks completely eliminate interpretation subjectivity.",
+    "correct": false,
+    "explanation": "Professional judgment remains essential."
+  },
+  {
+    "type": "true_false",
+    "question": "Yield for thermal wells is measured in liters per minute.",
+    "correct": true,
+    "explanation": "Range 50-3000 L/min per Table 19.8."
+  },
+  {
+    "type": "true_false",
+    "question": "A many-to-many well-aquifer table is recommended for all projects.",
+    "correct": false,
+    "explanation": "Reserved for projects where multi-aquifer wells are the norm."
+  },
+  {
+    "type": "true_false",
+    "question": "SZTFH is the primary custodian of meteorological data in Hungary.",
+    "correct": false,
+    "explanation": "OMSZ handles meteorological data."
+  },
+  {
+    "type": "true_false",
+    "question": "Pumping tests yield estimates of transmissivity and storativity.",
+    "correct": true,
+    "explanation": "Primary in-situ aquifer property estimates."
+  },
+  {
+    "type": "true_false",
+    "question": "WaterType uses hydrochemical classification like Na-HCO3.",
+    "correct": true,
+    "explanation": "Classifications vary by depth and aquifer."
+  },
+  {
+    "type": "true_false",
+    "question": "Water level measurements construct potentiometric surface maps.",
+    "correct": true,
+    "explanation": "Reveal water table shape and flow direction."
+  },
+  {
+    "type": "true_false",
+    "question": "ProductionFormation identifies the geological formation producing thermal water.",
+    "correct": true,
+    "explanation": "Names like Pannonian sandstone or Triassic dolomite."
+  },
+  {
+    "type": "true_false",
+    "question": "BoreholeLog table has independent x,y geometry columns.",
+    "correct": false,
+    "explanation": "Entries inherit position from associated Well feature."
+  },
+  {
+    "type": "true_false",
+    "question": "Aquifer vulnerability maps are available from SZTFH.",
+    "correct": true,
+    "explanation": "Hydrogeological maps show vulnerability and resources."
+  },
+  {
+    "type": "true_false",
+    "question": "HA-730 is the USGS Ground Water Atlas.",
+    "correct": true,
+    "explanation": "Contains the Principal Aquifers map."
+  },
+  {
+    "type": "true_false",
+    "question": "Spatial overlay works well for assigning wells to confined aquifers.",
+    "correct": false,
+    "explanation": "Must use screen depth for confined aquifers."
+  },
+  {
+    "type": "true_false",
+    "question": "Szentes-Hodmezovasarhely has one of the largest thermal well fields.",
+    "correct": true,
+    "explanation": "Southeast Great Plain thermal well area."
+  },
+  {
+    "type": "true_false",
+    "question": "Vertical exaggeration is needed because boreholes are too small to see.",
+    "correct": true,
+    "explanation": "15-50 cm diameters invisible at regional scale."
+  },
+  {
+    "type": "true_false",
+    "question": "Central Tisza has similar borehole density to Budapest.",
+    "correct": false,
+    "explanation": "Budapest: thousands/100km2; Tisza: dozens."
+  },
+  {
+    "type": "true_false",
+    "question": "The Drava-Mura aquifer is shared with Austria.",
+    "correct": false,
+    "explanation": "Shared with Croatia and Slovenia."
+  },
+  {
+    "type": "true_false",
+    "question": "Springs are included in USGS NWIS site types.",
+    "correct": true,
+    "explanation": "NWIS includes wells, springs, and test holes."
+  },
+  {
+    "type": "true_false",
+    "question": "OVF focuses on geological mapping.",
+    "correct": false,
+    "explanation": "OVF focuses on water monitoring; SZTFH handles geology."
+  },
+  {
+    "type": "true_false",
+    "question": "INSPIRE Directive was issued in 2007.",
+    "correct": true,
+    "explanation": "Directive 2007/2/EC."
+  },
+  {
+    "type": "true_false",
+    "question": "SZTFH hydrogeological maps show groundwater depth and quality zones.",
+    "correct": true,
+    "explanation": "Classify vulnerability, depth, and quality."
+  },
+  {
+    "type": "true_false",
+    "question": "FromDepth for the topmost borehole interval is always zero.",
+    "correct": true,
+    "explanation": "Drilling starts at surface with depth zero."
+  },
+  {
+    "type": "true_false",
+    "question": "The Floridan Aquifer System is one of the most productive in the world.",
+    "correct": true,
+    "explanation": "Recognized for exceptional productivity."
+  },
+  {
+    "type": "true_false",
+    "question": "Sonic geophysical logs measure natural radioactivity.",
+    "correct": false,
+    "explanation": "Sonic logs measure acoustic travel time. Gamma ray logs measure radioactivity."
+  },
+  {
+    "type": "true_false",
+    "question": "OneGeology was launched at the 33rd International Geological Congress.",
+    "correct": true,
+    "explanation": "Launched in 2008 at the 33rd IGC."
+  },
+  {
+    "type": "true_false",
+    "question": "The ASTM D5254 standard was published in 2004.",
+    "correct": true,
+    "explanation": "Referenced as ASTM 2004 in the chapter."
+  },
+  {
+    "type": "true_false",
+    "question": "The WFD requires good status for all groundwater bodies by defined deadlines.",
+    "correct": true,
+    "explanation": "Member states must implement measures to achieve good status."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WIID stands for Water Information _____ and Dissemination.",
+    "correct": "Integration",
+    "explanation": "Texas well data access system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Aquifer class uses a _____ value domain to restrict FType entries.",
+    "correct": "coded",
+    "explanation": "Coded value domains ensure consistency."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BottomElev = RefElev - _____ converts depth to absolute elevation.",
+    "correct": "ToDepth",
+    "explanation": "Transformation for cross-well correlation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin has multiple aquifer systems stacked _____.",
+    "correct": "vertically",
+    "explanation": "Shallow, intermediate, and deep formations are stacked."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ potential log measures natural electrical potentials.",
+    "correct": "spontaneous",
+    "explanation": "SP logs detect formation boundaries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Completion logs record depths of different _____ diameters.",
+    "correct": "casing",
+    "explanation": "Casing changes documented at specific depths."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungarian thermal well yield ranges from _____ to 3000 L/min.",
+    "correct": "50",
+    "explanation": "Table 19.8 range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the Hungarian name for the Great Plain.",
+    "correct": "Alföld",
+    "explanation": "Central lowland of Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Standard well symbols use a _____ pattern for screens.",
+    "correct": "slotted",
+    "explanation": "Solid for casing, slotted for screens, stippled for gravel pack."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ coordinates global monitoring data from over 30 countries.",
+    "correct": "GGMN",
+    "explanation": "Global Groundwater Monitoring Network by IGRAC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ polygons define mapped rock units in the geodatabase.",
+    "correct": "GeologyArea",
+    "explanation": "Classified by HGUID into hydrogeologic units."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SZTFH absorbed the former _____ survey.",
+    "correct": "MBFSZ",
+    "explanation": "Hungarian Mining and Geological Survey."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ attribute stores display name in the Aquifer class.",
+    "correct": "Name",
+    "explanation": "For labeling and legend construction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ retains original driller descriptions in the BoreholeLog table.",
+    "correct": "Material",
+    "explanation": "Preserved alongside interpreted HGUID."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IGRAC maintains the Global _____ Information System.",
+    "correct": "Groundwater",
+    "explanation": "GGIS at ggis.un-igrac.org."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WFD bodies are assessed for _____ and chemical status.",
+    "correct": "quantitative",
+    "explanation": "Evaluates abstraction-recharge balance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian-_____ border thermal water system is well-studied.",
+    "correct": "Slovak",
+    "explanation": "Coordinated monitoring exists."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ stores land surface elevation in the Well feature class.",
+    "correct": "LandElev",
+    "explanation": "Meters or feet above datum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Danube _____ aquifer is shared by four countries.",
+    "correct": "alluvial",
+    "explanation": "Formed in river-deposited sediments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Arc Hydro GW was authored by Strassberg, Jones, and _____.",
+    "correct": "Maidment",
+    "explanation": "Published 2011."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SZTFH supports WMS and _____ interfaces.",
+    "correct": "WFS",
+    "explanation": "Web Feature Service for data delivery."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Drava-_____ aquifer is shared with Croatia and Slovenia.",
+    "correct": "Mura",
+    "explanation": "River system along border."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ records total well depth below land surface.",
+    "correct": "WellDepth",
+    "explanation": "Measured in meters or feet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In TWDB, code H represents _____ wells.",
+    "correct": "domestic",
+    "explanation": "H=domestic, I=irrigation, P=public."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MBFSZ stands for Magyar Banyaszati es _____ Szolgalat.",
+    "correct": "Foldtani",
+    "explanation": "Mining and Geological Survey."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SZTFH geoportal is at map.mbfsz.gov._____.",
+    "correct": "hu",
+    "explanation": "Hungarian domain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CGI stands for Commission for Management and Application of _____ Information.",
+    "correct": "Geoscience",
+    "explanation": "Developed GeoSciML."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, karstic aquifers occur in the Transdanubian and _____ Mountains.",
+    "correct": "Bukk",
+    "explanation": "Northeast Hungary."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the integer unique feature identifier in the Aquifer class.",
+    "correct": "HydroID",
+    "explanation": "For creating relationships."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF stands for Orszagos _____ Foigazgatosag.",
+    "correct": "Vizugyi",
+    "explanation": "General Directorate of Water Management."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NWIS identifier is based on _____ and longitude.",
+    "correct": "latitude",
+    "explanation": "15-digit coordinate-based number."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ classifies each BoreholeLog interval into a hydrogeologic unit.",
+    "correct": "HGUID",
+    "explanation": "Links to HydrogeologicUnit table."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary has _____ neighbors sharing transboundary aquifers.",
+    "correct": "seven",
+    "explanation": "All neighboring countries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Aquifers map identifies roughly seventy US systems.",
+    "correct": "Principal",
+    "explanation": "USGS HA-730."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EEA stands for European _____ Agency.",
+    "correct": "Environment",
+    "explanation": "Manages WISE database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Quaternary maps show alluvium, _____, and wind-blown sand.",
+    "correct": "loess",
+    "explanation": "Significant Great Plain deposit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ log describes earth materials encountered during drilling.",
+    "correct": "lithological",
+    "explanation": "Also called driller's log."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Code P in TWDB represents _____ supply wells.",
+    "correct": "public",
+    "explanation": "P=public, I=irrigation, H=domestic."
+  },
+  {
+    "type": "fill_blank",
+    "question": "VRA stands for Vizrajzi _____.",
+    "correct": "Adattar",
+    "explanation": "Central Hydrographic Database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Resistivity logs relate to porosity and fluid _____.",
+    "correct": "salinity",
+    "explanation": "Electrical resistance correlates with both."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Mountains host karstic aquifers in Mesozoic carbonates.",
+    "correct": "Transdanubian",
+    "explanation": "Supply drinking water to Budapest."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ASTM standard for well identification is D_____.",
+    "correct": "5254",
+    "explanation": "Published 2004."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Californias _____ Groundwater Management Act uses Bulletin 118.",
+    "correct": "Sustainable",
+    "explanation": "SGMA of 2014."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WFD data accessible through EEA at _____.eea.europa.eu.",
+    "correct": "discodata",
+    "explanation": "WFD database portal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Water Framework Directive is 2000/60/EC.",
+    "correct": "EU",
+    "explanation": "European Union foundational water legislation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IGRAC operates under UNESCO and the World _____ Organization.",
+    "correct": "Meteorological",
+    "explanation": "WMO co-sponsors IGRAC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Aquifer in Texas supplies San Antonio.",
+    "correct": "Edwards",
+    "explanation": "Supplies over 2 million people."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The USGS Principal Aquifers map is Hydrologic Atlas _____.",
+    "correct": "730",
+    "explanation": "Ground Water Atlas of the United States."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EGDI portal URL is egdi._____.eu.",
+    "correct": "geology",
+    "explanation": "European Geological Data Infrastructure."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how NWIS and state databases complement each other.",
+    "correct": "NWIS provides national coverage with 1.5M sites. State databases like TWDB (130K wells, ~50 attributes) contain richer detail from mandatory driller reports. Both use central tables with unique IDs linking to subsidiary tables. Federal is broad; state is deep.",
+    "explanation": "Hierarchical structure enables both national and local analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the BoreholeLog dual depth and elevation representation.",
+    "correct": "Stores relative depths (FromDepth/ToDepth) and absolute elevations (TopElev/BottomElev). Conversion: TopElev = RefElev - FromDepth. Relative depths reflect drilling practice; absolute elevations enable cross-well comparison and interpolation on a common datum.",
+    "explanation": "Bridges drilling practice and analytical needs."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss ASTM D5254 and international data standards.",
+    "correct": "D5254 defines minimum well ID elements. GroundWaterML 2.0 handles digital exchange. INSPIRE provides EU schemas. GeoSciML handles geology. WaterML 2.0 covers time series. Together cover all groundwater data types. Web services make standardization essential.",
+    "explanation": "Standards enable international interoperability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how geophysical logs complement lithological logs.",
+    "correct": "Lithological logs are qualitative driller descriptions. Geophysical logs provide continuous quantitative measurements: gamma ray, resistivity, SP, sonic. More objective and detailed for formation identification.",
+    "explanation": "Geophysical logs add objectivity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe 3D borehole representation considerations.",
+    "correct": "Three issues: (1) Verticality assumed but deeper boreholes deviate. (2) Scale: 15-50 cm invisible at regional scale, requiring exaggeration. (3) Data density: reliability varies from thousands/100km2 in Budapest to dozens in rural areas.",
+    "explanation": "Compromises needed between accuracy and utility."
+  },
+  {
+    "type": "essay",
+    "question": "Compare SZTFH, NGMDB, EGDI, and OneGeology databases.",
+    "correct": "SZTFH: Hungarian 1:100K-1:500K with WMS/WFS, incomplete digitization. NGMDB: US 1:24K-1:5M, incomplete detailed coverage. EGDI: harmonized European GeoSciML data. OneGeology: global OGC services, varying coverage. All trend toward web-accessible standards.",
+    "explanation": "Understanding databases and limitations is essential."
+  },
+  {
+    "type": "essay",
+    "question": "Explain aquifer-well relationships and multi-aquifer complications.",
+    "correct": "Basic: AquiferID matches HydroID (one-to-many). Multi-aquifer: add AquiferID2/3 (simple, limited) or junction table (flexible, complex). Confined aquifers need screen depth, not surface overlay.",
+    "explanation": "Multi-aquifer wells need careful design."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss INSPIRE's role in EU data harmonization.",
+    "correct": "INSPIRE (2007/2/EC) establishes legally binding specifications with GeoSciML schemas. Enables cross-border sharing for 150+ European transboundary aquifers. Implementation varies but EGDI provides progressive access.",
+    "explanation": "Legal mandates accelerate harmonization."
+  },
+  {
+    "type": "essay",
+    "question": "Explain well databases as assets with heterogeneity challenges.",
+    "correct": "Databases accumulate over centuries with location, depth, stratigraphy, chemistry. Records vary from rough 1920 descriptions to modern GPS data. Challenges: coordinate differences, vocabulary variations, incomplete attributes, changed nomenclature.",
+    "explanation": "Value grows with span but so does challenge."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the WHYMAP classification system.",
+    "correct": "Classifies into major basins, complex structure regions, limited resources, and recharge/discharge areas. At 1:25M scale from BGR. Useful for education and reconnaissance but too coarse for engineering.",
+    "explanation": "Strategic overview, not operational detail."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the geology-aquifer-well chain and HGUID.",
+    "correct": "Chain: GeologyArea to Aquifer to Well to BoreholeLog to BorePoint/BoreLine. HGUID links everything to HydrogeologicUnit table. Enables bidirectional queries from any feature to its hydrogeologic context.",
+    "explanation": "HGUID creates semantic consistency."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss OVF monitoring network role.",
+    "correct": "Operates monitoring wells with sensors and quality sampling. Purposes: water table mapping, trend detection, WFD compliance for 185 bodies. Data at data.vizugy.hu since July 2024. Hungary's NWIS equivalent.",
+    "explanation": "Provides temporal dimension complementing SZTFH spatial data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why spatial overlay fails for confined aquifer well assignment.",
+    "correct": "Overlay assigns wells within polygon boundaries. Confined aquifer wells sit above subcrop but penetrate through overlying formations. Must use screen interval, depth, or lookup tables instead of surface overlay.",
+    "explanation": "3D nature makes 2D operations insufficient."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Hungarian thermal wells and GIS analysis.",
+    "correct": "1,300+ wells with extra attributes: WaterTemp, MaxTemp, Yield, TDS, WaterType, ProductionFormation. Pannonian sandstone: lower temp, higher yield. Mesozoic carbonates: higher temp, variable yield. GIS analysis guides siting and management.",
+    "explanation": "Domain-specific attributes extend the standard model."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss data quality flags for interpolation.",
+    "correct": "Flags record source, identification method, coordinate accuracy, uncertainty. Higher-quality picks get more interpolation weight. Apparent outliers may be real faults. Flags transform uniform collection into uncertainty-aware dataset.",
+    "explanation": "Quality metadata enables informed interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Compare WFD quantitative and chemical status.",
+    "correct": "Quantitative: abstraction-recharge balance. Chemical: pollutant concentrations. A body can be good quantity/poor chemistry or vice versa. All 185 Hungarian bodies assessed on both. Results to EEA via WISE.",
+    "explanation": "Dual assessment covers quantity and quality."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Hungary's historical geological map digitization challenges.",
+    "correct": "1:25K maps from 1960s-80s exist only as paper/ungeoreferenced scans. Portal progressively digitizes but incomplete. Richest data in physical archive only. Practitioners may need to visit Budapest.",
+    "explanation": "Incomplete digitization constrains accessibility."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how pumping tests inform modeling.",
+    "correct": "Extract water at controlled rates, monitor drawdown. Fit solutions to estimate transmissivity and storativity. These control flow speed, drawdown response. Without tests, models use less reliable literature values.",
+    "explanation": "Most reliable aquifer property estimates."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss BorePoint features in 3D geological models.",
+    "correct": "Created from BoreholeLog TopElev matching target HGUID combined with Well x,y to create PointZ features. Multiple wells create control points for kriging/IDW interpolation generating continuous surfaces. Quality depends on density.",
+    "explanation": "Bridge observations and continuous surfaces."
+  },
+  {
+    "type": "essay",
+    "question": "Describe geologic map database features and hydrogeological significance.",
+    "correct": "Three types: GeologyArea polygons (map units), GeologyLine (contacts, faults), GeologyPoint (observations, springs). Linking GeologyArea to HGUID translates geology to hydrogeology. Regional knowledge needed.",
+    "explanation": "Constrain subsurface interpretations between boreholes."
+  },
+  {
+    "type": "essay",
+    "question": "Explain WMS/WFS impact on geological data access.",
+    "correct": "WMS delivers map images; WFS delivers features via HTTP. SZTFH supports both for live GIS layer addition. Data always current. Limitations: richest data in physical archive only. Driven by INSPIRE/OGC standards.",
+    "explanation": "Web services democratize geological data access."
+  },
+  {
+    "type": "essay",
+    "question": "Describe multifaceted information from a single well.",
+    "correct": "Location/depth, water levels, pumping test data (T, S), water quality, borehole logs. No other infrastructure provides so many data types. Wells are both data points and windows into the subsurface.",
+    "explanation": "Makes well databases the most valuable groundwater assets."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why common reference datums are needed.",
+    "correct": "Raw data uses depth below surface varying per well. Converting to absolute elevations places all on common datum. Enables cross-well correlation, interpolation, and 3D modeling. Without this, observations remain isolated.",
+    "explanation": "Common datums transform isolated observations into integrated datasets."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss data exchange standard evolution from paper to digital.",
+    "correct": "ASTM D5254 assumed paper. Australia designed for digital. INSPIRE/GeoSciML/GroundWaterML 2.0/WaterML 2.0 are XML for web. Mirrors shift from file downloads to web services. Adoption uneven but trajectory clear.",
+    "explanation": "Evolution parallels digital transformation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain bidirectional queries in the relationship chain.",
+    "correct": "Given aquifer: find wells (AquiferID), logs (HGUID), geology (HGUID). Given interval: find aquifer, wells, formations. HydrogeologicUnit table central lookup. HGUID universal key enables complex cross-feature queries.",
+    "explanation": "Creates analytical tool from database."
+  },
+  {
+    "type": "essay",
+    "question": "Describe well completion log content and importance.",
+    "correct": "Documents casing, screens, gravel pack, cement seals. Water levels reflect screen depth conditions. Incomplete seals enable cross-contamination. Essential context for interpreting all well measurements.",
+    "explanation": "Completion details contextualize well data."
+  },
+  {
+    "type": "essay",
+    "question": "Compare data.vizugy.hu with NWIS.",
+    "correct": "Both national, public, web-accessible. NWIS: 1.5M sites, longer history. Data.vizugy.hu: free since July 2024, combines surface/groundwater. Both link to well metadata. Same fundamental purpose: open data access.",
+    "explanation": "Same purpose despite institutional differences."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss cross-validation for interpolated surface quality.",
+    "correct": "Removes each borehole, interpolates from remaining, compares. RMSE and MAE quantify quality. Identifies biases and poor areas. Standard method when independent validation unavailable. Without it, smoothness does not mean accuracy.",
+    "explanation": "Provides objective quality measure."
+  },
+  {
+    "type": "essay",
+    "question": "Explain hydrochemical classification and spatial patterns.",
+    "correct": "WaterType: Na-HCO3, Ca-Mg-HCO3. Shallow carbonates: Ca-Mg-HCO3. Deep Pannonian: Na-HCO3. GIS mapping reveals patterns correlated with lithology and flow paths. Guides balneological use and mixing identification.",
+    "explanation": "Chemistry fingerprints geological source."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss ISARM significance for Hungary.",
+    "correct": "Inventoried ~600 transboundary aquifers globally. Hungary shares systems with all seven neighbors. Promotes cooperation through agreements and INSPIRE data exchange. Water resources transcend political boundaries.",
+    "explanation": "Promotes international cooperation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe outcrop vs recharge zones and management significance.",
+    "correct": "Outcrop: aquifer rock exposed. Recharge: water entry zone. Edwards maps these as distinct FType values. Protecting recharge zones from pollution is critical for aquifer management and land use planning.",
+    "explanation": "Recharge mapping protects water quality."
+  },
+  {
+    "type": "essay",
+    "question": "Explain well data import into GIS.",
+    "correct": "Create points from coordinates, import attributes, assign IDs, set HydroCode. Challenges: coordinate mismatches, missing data, vocabulary translation, duplicates. Quality control checks for outliers.",
+    "explanation": "Labor-intensive step needing quality attention."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Edwards Aquifer as detailed mapping example.",
+    "correct": "Supplies 2M+ people. Maps distinguish recharge, artesian, saline zones. Wells link via AquiferID. Detail supports protection, siting, interface monitoring. Sets worldwide standard.",
+    "explanation": "Detailed mapping improves management."
+  },
+  {
+    "type": "essay",
+    "question": "Describe central well table in relational databases.",
+    "correct": "Central table stores static attributes. Unique ID links to BoreholeLog, water levels, chemistry tables. Avoids redundancy, enables efficient queries, supports one-to-many relationships. Universal pattern.",
+    "explanation": "Universal database design pattern."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss thermal well spatial analysis guiding management.",
+    "correct": "1,300+ wells: Pannonian sandstone lower temp/higher yield; carbonates higher temp/variable yield. Temperature correlates with basement depth. GIS guides targeting areas and identifies overexploitation risk.",
+    "explanation": "GIS transforms records into management intelligence."
+  },
+  {
+    "type": "essay",
+    "question": "Explain WFD groundwater body classification in Hungary.",
+    "correct": "185 bodies: porous, karstic, combined, thermal. Administrative units for management. One body may span multiple formations. Each assessed for quantitative and chemical status.",
+    "explanation": "Regulatory overlay on physical framework."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss WaterML/GroundWaterML/GeoSciML covering all data types.",
+    "correct": "WaterML: time series. GroundWaterML: wells and aquifers. GeoSciML: geology and boreholes. Together span geological mapping through infrastructure to monitoring. All XML for web services.",
+    "explanation": "Suite covers geological, infrastructure, and monitoring."
+  },
+  {
+    "type": "essay",
+    "question": "Explain LogType enabling multiple data types.",
+    "correct": "Distinguishes Lithology, Completion, Hydrostratigraphy. One well has all three in same table. Filtering isolates categories. Avoids separate tables. Material preserves raw data; HGUID encodes interpretation.",
+    "explanation": "One table, multiple types, clean filtering."
+  },
+  {
+    "type": "essay",
+    "question": "Describe 8-step database building workflow.",
+    "correct": "Design, import aquifers, import wells, establish relationships, import boreholes, create 3D features, QA, visualize. Iterative because QA reveals issues requiring earlier corrections.",
+    "explanation": "Iterative workflow prevents single-pass expectations."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why hydrogeologists may classify same borehole differently.",
+    "correct": "Gradational boundaries, vocabulary differences, different frameworks. Great Plain Quaternary shows complex variability. Manage with: standardized frameworks, documented criteria, uncertainty estimates, geophysical logs, dual representation.",
+    "explanation": "Documenting subjectivity enables transparency."
+  },
+  {
+    "type": "essay",
+    "question": "Describe geological maps as aquifer delineation foundation.",
+    "correct": "Document rock distribution. Aquifer maps reclassify by water-bearing properties via HGUID. Not one-to-one: formations behave differently in different areas. Regional knowledge essential.",
+    "explanation": "Physical framework for hydrogeological interpretation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Pannonian Basin geology and aquifer significance.",
+    "correct": "Large sedimentary basin with km of Neogene/Quaternary sediments. Vertically stacked: shallow Quaternary, Pannonian sand, deep thermal. Karstic systems in Transdanubian/Bukk Mountains. Creates exceptional resources requiring complex 3D management.",
+    "explanation": "Basin geology controls aquifer diversity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe HydroCode enabling external data exchange.",
+    "correct": "Preserves original external identifiers: Edwards code 11, NWIS 15-digit numbers, WFD codes. Bridges internal geodatabase (HydroID) with institutional databases. Same principle internationally.",
+    "explanation": "Bridges internal GIS and external systems."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss SZTFH archive access challenges.",
+    "correct": "Richest data only in physical archive. Web portal has maps and basic borehole data. Detailed investigations may need formal requests or physical visits to Budapest. Gap between online and archival data.",
+    "explanation": "Practical constraint on data accessibility."
+  },
+  {
+    "type": "essay",
+    "question": "Explain monitoring vs production wells in databases.",
+    "correct": "Monitoring: observation only, sensors, sampling. Provide mapping, trend, WFD data. Production: extract water. Define pumping stresses. Same Well class, distinguished by FType. Different roles in modeling.",
+    "explanation": "FType reflects fundamentally different roles."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Aquifer feature class handling spatial complexity.",
+    "correct": "Single aquifer may need dozens of polygons. All share HGUID. FType distinguishes outcrop, confined, subcrop, recharge. HydroCode preserves external ID. Many-to-one relationship handles real-world complexity.",
+    "explanation": "Data model flexibility matches boundary complexity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why well data management is foundational.",
+    "correct": "Every analysis depends on data quality. 3D models need borehole data, flow models need calibration targets, contamination studies need quality data. Model from 10 boreholes far more uncertain than from 100. Data quality limits model quality.",
+    "explanation": "Data management determines downstream reliability."
+  },
+  {
+    "type": "essay",
+    "question": "Describe Tisza and tributaries relevance to groundwater.",
+    "correct": "Tisza, Koros, Berettyo, Zagyva cross Great Plain interacting with alluvial aquifers. Rivers recharge during high stage, receive baseflow during low stage. OVF provides stage data. Ancestral channels created variable K patterns.",
+    "explanation": "Rivers are critical groundwater system controls."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss coded value domains for data quality.",
+    "correct": "Restrict FType, WaterUse to valid entries. Prevent typographical errors and inconsistency. Enable reliable mapping and queries. External codes translated to domain values during import.",
+    "explanation": "Enforce quality at point of entry."
+  },
+  {
+    "type": "essay",
+    "question": "Explain WISE database significance for EU groundwater.",
+    "correct": "Platform for WFD reporting. Hungary's 185 body assessments submitted to EEA. Enables pan-European comparison and progress tracking. Regulatory interface between national monitoring and EU policy.",
+    "explanation": "Aggregates and compares status across EU."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss thermal well temperature and production formation relationship.",
+    "correct": "Pannonian sandstones: 30-60 C, matrix flow. Mesozoic carbonates: 50-90+ C, fracture-dependent. Gradient 45-50 C/km makes depth primary control. ProductionFormation links wells to source for spatial analysis.",
+    "explanation": "Source determines temperature, yield, chemistry."
+  },
+  {
+    "type": "essay",
+    "question": "Describe springs in hydrogeological databases.",
+    "correct": "Natural discharge points where water table meets surface. NWIS includes as site type. In geological maps as GeologyPoint. Indicate discharge zones, flow paths. In karst, may be primary observable aquifer expression.",
+    "explanation": "Surface evidence complementing borehole data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three-tier approach ensuring international relevance.",
+    "correct": "US (NWIS, TWDB, Edwards), Hungarian/EU (SZTFH, OVF, WFD, Pannonian), Global (WHYMAP, IGRAC, ISARM). Table 19.2 maps equivalences. Readers from any country find parallels. Concepts are universal.",
+    "explanation": "Serves international textbook audience."
+  },
+  {
+    "type": "essay",
+    "question": "Describe vertical exaggeration effects on 3D interpretation.",
+    "correct": "True-scale boreholes invisible. Exaggeration makes thin formations visible but layers appear disproportionately thick, dip angles overstated. A 2m layer appears 60m with 30x. Must note factor and warn about distortion.",
+    "explanation": "Necessary but potentially misleading."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss SGMA significance for GIS groundwater management.",
+    "correct": "California 2014 Act mandates sustainable management using Bulletin 118 basins. Requires GIS: boundary delineation, inventory, water budget, monitoring design. Demonstrates how legislation drives GIS adoption.",
+    "explanation": "Legislation creates demand for GIS tools."
+  },
+  {
+    "type": "essay",
+    "question": "Explain interpretive overlay concept for geology and aquifer maps.",
+    "correct": "Aquifer maps filter geological maps through hydrogeological lens. Same data viewed through different frameworks. Classification is purpose-specific. HGUID supports different classifications on same data.",
+    "explanation": "Same data serves different analytical purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Describe iterative nature of database building.",
+    "correct": "8-step workflow is iterative: new data arrives, QA reveals errors, visualization shows inconsistencies. Step 7 sends back to Steps 3-5. Important because real investigations are never clean linear processes.",
+    "explanation": "Acknowledging iteration prevents unrealistic expectations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain well-digging history and modern database implications.",
+    "correct": "8,000+ years from Cyprus/China/Levant. Records evolved from simple descriptions to GPS databases. Creates heterogeneity challenge: integrating 19th-century records with real-time telemetric data. Explains why standardization is necessary and difficult.",
+    "explanation": "Historical context explains modern challenges."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss QA steps and specific checks.",
+    "correct": "Three checks: orphan records, elevation inconsistencies, spatial outliers. Plus attribute completeness, coded value violations, formation top ordering. QA is ongoing, not one-time. Catches errors before propagation.",
+    "explanation": "Systematic QA prevents error propagation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Pannonian thermal system connecting Hungary to neighbors.",
+    "correct": "Deep thermal system crosses into Slovakia, Romania, Serbia, Croatia. Extraction on one side affects the other. Hungarian-Slovak system has coordinated monitoring. Requires bilateral agreements and INSPIRE data exchange.",
+    "explanation": "Transboundary aquifers need international cooperation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe monitoring wells contribution to WFD compliance.",
+    "correct": "Wells assigned to groundwater bodies provide status data. Level trends show sustainability; quality samples detect pollution. Results to EEA via WISE. Long-term data enable trends; telemetric supports rapid response.",
+    "explanation": "Measurement backbone of WFD compliance."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss QA revealing issues needing earlier-step corrections.",
+    "correct": "QA reveals: orphan records (re-import Step 5), impossible elevations (Step 3), outliers (Step 3 coordinates), wrong aquifer assignment (Step 4), incomplete HGUID (Step 5). Issues propagate forward, detected at visualization.",
+    "explanation": "QA feedback drives iterative refinement."
+  },
+  {
+    "type": "essay",
+    "question": "Explain economic and societal value of maintaining well databases.",
+    "correct": "Represent decades of investment in subsurface knowledge. Each sealed well is irreplaceable. Economic: guides siting, resource assessment, permitting. Societal: protects water quality, supports agriculture, enables climate adaptation. Loss means irreplaceable knowledge lost.",
+    "explanation": "Databases grow in value over time."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of aquifer vulnerability mapping and its role in groundwater protection.",
+    "correct": "Aquifer vulnerability maps classify areas by the degree to which the aquifer is protected from surface contamination. Factors include thickness and permeability of overlying layers, depth to water table, and soil properties. Hungary's 1:500,000 map shows high, moderate, and low vulnerability zones. EPA Source Water Assessments serve similar purposes in the US. These maps guide land use planning and protection programs.",
+    "explanation": "Vulnerability mapping translates hydrogeological knowledge into protection policy."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the EU Water Framework Directive groundwater body delineation differs from geological mapping.",
+    "correct": "Geological maps describe physical rock distribution by lithology and age. WFD bodies are administrative-regulatory units for water management. A single body may encompass several connected formations; a single formation may split into multiple bodies based on quality or usage differences. Geological maps serve physical understanding; WFD bodies serve regulatory compliance.",
+    "explanation": "Physical and regulatory frameworks serve different purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of web-based GIS interfaces in modern well database access.",
+    "correct": "Web GIS interfaces like WIID (Texas), data.vizugy.hu (Hungary), and GGIS (global) allow users to query, visualize, and download well data without desktop GIS software. They democratize access beyond specialists. Features include map-based search, attribute filtering, and data download. These complement desktop GIS by providing broad access to the same underlying databases.",
+    "explanation": "Web interfaces broaden data access beyond GIS specialists."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how multiple aquifer assignments for a single well are handled in the geodatabase.",
+    "correct": "When a well screens across multiple aquifers, the simple one-to-many AquiferID relationship is insufficient. Solutions: add AquiferID2/3 fields (limits maximum associations), or create a junction table implementing many-to-many relationships. The junction table is more flexible but complex. Choice depends on whether multi-aquifer wells are common or rare in the study area.",
+    "explanation": "Multi-aquifer wells require flexible relationship design."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how long-term water level monitoring reveals groundwater storage trends.",
+    "correct": "Long-term time series from monitoring wells reveal trends over years to decades. Rising tables indicate recharge exceeding extraction; falling tables signal overexploitation or reduced recharge. In Hungary, post-1990 recovery of water levels documented reduced irrigation pumping. 2000-2003 and 2012 drought effects were captured. These trends inform WFD status assessments and climate adaptation planning.",
+    "explanation": "Long-term monitoring reveals slow changes invisible without systematic data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the fifteen-digit NWIS site number.",
+    "correct": "Each NWIS site is identified by a fifteen-digit number based on latitude and longitude, providing a unique, geographically meaningful identifier. This system enables spatial referencing without separate coordinate fields and ensures uniqueness across the entire US. The number encodes location precision and serves as the primary key linking to subsidiary tables for water levels, quality, and construction data.",
+    "explanation": "The coordinate-based identifier combines uniqueness with geographic meaning."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how pumping test data contribute to the spatial distribution of hydraulic properties in a model.",
+    "correct": "Pumping tests at individual wells estimate local transmissivity and storativity. When results from many wells are collected (e.g., 2,000 wells in the Great Plain), they can be interpolated using kriging to create spatially continuous hydraulic conductivity surfaces. These surfaces account for geological zone constraints and provide the property fields that groundwater models require for each cell.",
+    "explanation": "Individual test results become spatial property fields through interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of formation picks in connecting BoreholeLog data to 3D geological models.",
+    "correct": "Formation picks are elevations where specific geological boundaries are encountered in boreholes. Extracted from BoreholeLog records matching target HGUID values, they provide the z-coordinates for 3D control points. When picks from many boreholes are interpolated, they create continuous surfaces representing formation tops. Multiple surfaces stacked by HorizonID define the complete 3D architecture used in groundwater modeling.",
+    "explanation": "Formation picks are the observational input that drives 3D model construction."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the chapter emphasizes that careful data management is not merely administrative but foundational.",
+    "correct": "The chapter argues that data quality limits model quality regardless of software sophistication. A model from 10 boreholes has far greater uncertainty than from 100. Every downstream product -- aquifer maps, 3D models, flow simulations, contamination assessments -- depends on the underlying well and borehole data. Therefore, data management is the foundation of all hydrogeological analysis, not a preliminary administrative step.",
+    "explanation": "Data management determines the reliability of everything built upon it."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the three standard OGC/CGI exchange formats address different aspects of groundwater information.",
+    "correct": "WaterML 2.0 handles time-varying observations (water levels, discharge, quality samples). GroundWaterML 2.0 handles spatial features (wells, aquifers, properties). GeoSciML handles geological context (formations, boreholes, maps). Together they cover the full scope from geological framework through infrastructure characterization to operational monitoring. All use XML encoding suitable for web services.",
+    "explanation": "Each standard addresses a distinct domain; together they provide comprehensive coverage."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of artesian conditions in the context of Hungarian thermal wells.",
+    "correct": "Artesian conditions occur when the piezometric surface of a confined aquifer lies above the ground surface, causing wells to flow naturally without pumping. In Hungary's Great Plain, the Upper Pannonian thermal aquifer system often exhibits artesian conditions. This results from the confining clay layers above maintaining pressure and the regional hydraulic gradient driving water toward discharge areas. Artesian thermal wells are economically valuable because they require minimal pumping energy.",
+    "explanation": "Artesian conditions in thermal wells reflect the confined aquifer pressure system."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a relational database structure for well information and its advantages.",
+    "correct": "A relational structure uses a central well table linked to subsidiary tables through a unique identifier. This avoids redundancy (location stored once, not in every measurement), enables efficient queries, and naturally supports one-to-many relationships (one well, many measurements). The approach scales from small projects to databases with millions of records and is the universal pattern across all well databases.",
+    "explanation": "Relational structure is efficient, scalable, and universal."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of BoreLine features in creating fence diagrams for hydrogeological interpretation.",
+    "correct": "BoreLine features represent depth intervals as vertical line segments colored by formation or material type. When multiple wells are displayed together in a 3D scene, the result resembles a fence diagram -- vertical bars distributed across the landscape showing the internal stratigraphy at each well. Dashed correlation lines between wells suggest lateral continuity. This visualization guides geologists in constructing 3D models and identifying areas where formations change character.",
+    "explanation": "BoreLine fence diagrams provide the visual framework for geological correlation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of Hungary having one of Europe's richest thermal water resources.",
+    "correct": "Hungary's exceptional geothermal endowment (heat flow 90-100 mW/m2, gradient 45-50 C/km) supports over 1,300 thermal wells and 270 thermal baths. This resource has economic significance (tourism, district heating, greenhouse agriculture), cultural importance (bath tradition), and management challenges (sustainable extraction, transboundary cooperation). The GIS data infrastructure must accommodate specialized thermal attributes alongside standard well information.",
+    "explanation": "Thermal resources create economic, cultural, and management dimensions unique to Hungary."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the AqCode attribute complements AquiferID in the well-aquifer relationship.",
+    "correct": "AquiferID is a numeric key linking to the internal geodatabase HydroID of the aquifer. AqCode is a text code from an external classification system (e.g., state aquifer codes). While AquiferID supports internal queries and spatial relationships, AqCode enables cross-referencing with external databases. Together they provide both internal consistency and external interoperability.",
+    "explanation": "Numeric and text identifiers serve internal and external linking respectively."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of well type classification and its importance for database organization.",
+    "correct": "The FType attribute classifies wells by purpose: Production (water supply), Monitoring (observation), Injection (recharge/disposal), Domestic (household), Irrigation (agriculture), Industrial (manufacturing). This classification is essential because different well types serve different roles in hydrogeological analysis. Monitoring wells provide calibration data; production wells define pumping stresses; injection wells define return flows. Coded value domains ensure consistent classification.",
+    "explanation": "Well type determines the role each well plays in hydrogeological analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the SZTFH portal and the OVF data portal together provide comprehensive groundwater data access in Hungary.",
+    "correct": "SZTFH (map.mbfsz.gov.hu) provides geological and hydrogeological spatial data: geological maps, borehole records, mineral and geothermal resource maps. OVF (data.vizugy.hu) provides time-series monitoring data: groundwater levels, surface water data, quality observations. Together they cover both the spatial/geological dimension and the temporal/hydrological dimension of groundwater information. A comprehensive hydrogeological investigation in Hungary requires data from both sources.",
+    "explanation": "The two portals provide complementary spatial and temporal groundwater data."
+  }
+]

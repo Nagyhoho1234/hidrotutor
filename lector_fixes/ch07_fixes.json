@@ -1,0 +1,862 @@
+{
+  "chapter": "ch07",
+  "total_issues": 107,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Három különböző módszert dolgozunk ki a lejtés számítására, mindegyik eltérő matematikai alapokkal, feltételezésekkel és alkalmazásokkal.",
+      "suggested": "Három különböző módszert mutatunk be a lejtés számítására, amelyek eltérő matematikai alapokon nyugszanak, és más feltételezésekkel, illetve alkalmazási területekkel jellemezhetők.",
+      "reason": "A „dolgozunk ki\" ebben a kontextusban angolosan hat; természetesebb a „mutatunk be\"."
+    },
+    {
+      "line_approx": 11,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "háromszög facettákat illeszt",
+      "suggested": "háromszög-facettákat illeszt",
+      "reason": "A szakkifejezés magyar helyesírás szerint kötőjeles összetételként természetesebb."
+    },
+    {
+      "line_approx": 11,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ez a három módszer nem egymással versengő eljárás, amelyek közül az egyik „jobb\", a másik pedig „rosszabb\" választ adna;",
+      "suggested": "Ez a három módszer nem egymással versengő eljárás: nem arról van szó, hogy az egyik „jobb\", a másik pedig „rosszabb\" választ adna;",
+      "reason": "A vonatkozó mellékmondatos szerkezet nehézkes és angolos; a tagoltabb megfogalmazás természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 14,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A fejezetet a 2026-ban elérhető DEM-adatforrások gyakorlati áttekintésével zárjuk, amely lefedi az Egyesült Államokat, Magyarországot és Európát, valamint a világ többi részét",
+      "suggested": "A fejezetet a 2026-ban elérhető DEM-adatforrások gyakorlati áttekintésével zárjuk; ez az áttekintés kiterjed az Egyesült Államokra, Magyarországra, Európára és a világ többi részére is",
+      "reason": "A „lefedi\" itt angol tükörfordítás; magyarul természetesebb a „kiterjed\"."
+    },
+    {
+      "line_approx": 22,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A csúcshozam-becslés Racionális módszere",
+      "suggested": "A csúcshozam-becslés racionális módszere",
+      "reason": "Nem tulajdonnév, ezért a „racionális\" kisbetűvel írandó."
+    },
+    {
+      "line_approx": 24,
+      "category": "register",
+      "severity": "low",
+      "original": "„szeszélyesebb\" hidrográfot jelent",
+      "suggested": "változékonyabb hidrográfot eredményez",
+      "reason": "A „szeszélyesebb\" kissé publicisztikus; tudományos regiszterben a „változékonyabb\" természetesebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A **topográfiai nedvességi index (TWI)**, a hidrológiában legszélesebb körben használt domborzati jellemzők egyike, definíciója:",
+      "suggested": "A **topográfiai nedvességi index (TWI)** definíciója a következő; ez a hidrológiában az egyik legszélesebb körben használt domborzati jellemző:",
+      "reason": "Az eredeti szerkezet megtörik, nehézkes; a definíció előrehozása gördülékenyebb."
+    },
+    {
+      "line_approx": 32,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ahol $a$ az egységnyi szintvonalhosszra jutó felső vízgyűjtő terület",
+      "suggested": "ahol $a$ az egységnyi szintvonalhosszra jutó hozzájáruló terület",
+      "reason": "A „felső vízgyűjtő terület\" angolos tükörfordítás; a magyar szaknyelvben a „hozzájáruló terület\" bevettebb."
+    },
+    {
+      "line_approx": 33,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a talajnedvesség térbeli eloszlásának a domborzati adatokból történő térképezésének",
+      "suggested": "a talajnedvesség térbeli eloszlásának domborzati adatok alapján történő térképezésére",
+      "reason": "A többszörös főnevesítés és a „-ból történő\" szerkezet fordításszagú."
+    },
+    {
+      "line_approx": 39,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az erre szolgáló algoritmusok -- a D8 és D-végtelen áramlásirány, amelyeket e fejezet későbbi részében tárgyalunk részletesen -- alapvetően kitettségszámítások, amelyeket hidrológiai alkalmazásokra specializáltak.",
+      "suggested": "Az erre szolgáló algoritmusok -- a D8 és a D-végtelen áramlásirány-algoritmusok, amelyeket e fejezet későbbi részében részletesen tárgyalunk -- alapvetően olyan kitettségszámítások, amelyeket hidrológiai alkalmazásokra alakítottak ki.",
+      "reason": "Az eredeti mondat szórendje és szerkezete nehézkes; az „amelyeket ... specializáltak\" is angolos."
+    },
+    {
+      "line_approx": 42,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a tavaszi lefolyási hidrográf alakjának formálásában",
+      "suggested": "a tavaszi lefolyási hidrográf alakításában",
+      "reason": "A „formálásában\" itt angol hatású; magyar tudományos stílusban az „alakításában\" természetesebb."
+    },
+    {
+      "line_approx": 43,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "azonos tengerszint feletti magasságú északi kitettségű lejtő",
+      "suggested": "azonos tengerszint feletti magasságban fekvő, északi kitettségű lejtő",
+      "reason": "A főnév előtti jelzőtorlódás angolos; a bontott szerkezet természetesebb."
+    },
+    {
+      "line_approx": 44,
+      "category": "register",
+      "severity": "low",
+      "original": "szemléletes példát nyújt",
+      "suggested": "jól szemlélteti ezt",
+      "reason": "A „példát nyújt\" kissé körülményes, fordításízű szerkezet."
+    },
+    {
+      "line_approx": 47,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 7.1.3 A lejtés és kitettség ábrázolásai",
+      "suggested": "### 7.1.3 A lejtés és a kitettség ábrázolása",
+      "reason": "Fogalmi, általános tárgyalásnál magyarul természetesebb az egyes szám, és az „a\" névelő is indokolt."
+    },
+    {
+      "line_approx": 48,
+      "category": "register",
+      "severity": "low",
+      "original": "a különböző GIS-eszközök kimenetének értelmezéséhez",
+      "suggested": "a különböző GIS-eszközök eredményeinek értelmezéséhez",
+      "reason": "A „kimenet\" itt informatikai tükörfordításként hat; magyarul az „eredmény\" gördülékenyebb."
+    },
+    {
+      "line_approx": 58,
+      "category": "terminology",
+      "severity": "low",
+      "original": "megfelelő negyedkezeléssel",
+      "suggested": "a megfelelő síknegyed figyelembevételével",
+      "reason": "A „negyedkezelés\" szokatlan, félig tükörfordításos terminus."
+    },
+    {
+      "line_approx": 74,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az ArcGIS-ben a lejtés nélküli sík területekhez a -1 speciális értéket rendelik hozzá",
+      "suggested": "Az ArcGIS-ben a sík, lejtés nélküli területekhez a -1 speciális értéket rendelik",
+      "reason": "A „rendelik hozzá\" feleslegesen körülményes; a jelzős szerkezet sorrendje is természetesebb így."
+    },
+    {
+      "line_approx": 84,
+      "category": "terminology",
+      "severity": "low",
+      "original": "súlyozott végesdifferencia-séma",
+      "suggested": "súlyozott véges differenciás séma",
+      "reason": "A magyar szaknyelvben a „véges differenciás\" alak természetesebb, mint az egybeírt „végesdifferencia-\"."
+    },
+    {
+      "line_approx": 207,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A negatív érték azt jelenti, hogy a terep dél felé esik",
+      "suggested": "A negatív érték azt jelzi, hogy a terep dél felé lejt",
+      "reason": "Az „azt jelenti” és az „esik” itt angolos, kevésbé természetes; szaknyelvben a „jelzi” és „lejt” idiomatikusabb."
+    },
+    {
+      "line_approx": 207,
+      "category": "register",
+      "severity": "medium",
+      "original": "az alsó sor, amely a szabványos megjelenítésben -- ahol az 1. sor van felül -- délnek felel meg",
+      "suggested": "az alsó sor, amely a szokásos megjelenítésben -- ahol az első sor felül van -- a déli iránynak felel meg",
+      "reason": "A „szabványos megjelenítés” és az „1. sor van felül” nehézkes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 208,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Ebben a példában a felső sornak (A, B, C) magasabb, az alsó sornak (G, H, I) alacsonyabb a magassága.",
+      "suggested": "Ebben a példában a felső sor (A, B, C) magassága nagyobb, az alsó soré (G, H, I) kisebb.",
+      "reason": "A birtokos szerkezet és az állítmány elhelyezése természetesebb magyar mondatot ad."
+    },
+    {
+      "line_approx": 208,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Mivel $y$ felfelé (északra) növekszik",
+      "suggested": "Mivel az $y$ koordináta felfelé, azaz észak felé nő",
+      "reason": "A „növekszik” itt tükörfordítás-ízű; koordináták esetén a „nő” természetesebb."
+    },
+    {
+      "line_approx": 209,
+      "category": "register",
+      "severity": "low",
+      "original": "vagyis a lejtés irányának van egy déli komponense",
+      "suggested": "vagyis a lejtés irányának déli komponense van",
+      "reason": "Tömörebb, természetesebb magyar szerkezet."
+    },
+    {
+      "line_approx": 218,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Most feloldjuk a negyedet.",
+      "suggested": "Most meghatározzuk, melyik negyedbe esik az irány.",
+      "reason": "A „feloldjuk a negyedet” szó szerinti fordítás; matematikai-szakmai magyarban nem bevett."
+    },
+    {
+      "line_approx": 219,
+      "category": "register",
+      "severity": "medium",
+      "original": "a lejtő a délkeleti negyedben helyezkedik el",
+      "suggested": "a lejtés iránya a délkeleti negyedbe esik",
+      "reason": "Nem maga a „lejtő” helyezkedik el a negyedben, hanem az irány; a jelenlegi megfogalmazás pontatlan és angolos."
+    },
+    {
+      "line_approx": 220,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az alapértékű arkusztangens eredményéhez",
+      "suggested": "az arkusztangens alapértékéhez",
+      "reason": "Az „alapértékű ... eredmény” körülményes; a bevett matematikai megfogalmazás az „arkusztangens alapértéke”."
+    },
+    {
+      "line_approx": 223,
+      "category": "register",
+      "severity": "medium",
+      "original": "kitettséggel 145,2 fok -- dél-délkelet",
+      "suggested": "145,2 fokos kitettséggel, azaz dél-délkeleti iránnyal",
+      "reason": "A jelenlegi szerkezet töredezett; a javasolt változat gördülékenyebb tudományos próza."
+    },
+    {
+      "line_approx": 223,
+      "category": "calque",
+      "severity": "low",
+      "original": "Ez fizikailag értelmes",
+      "suggested": "Ez fizikailag is értelmezhető",
+      "reason": "Az „értelmes” itt angol mintát követ; magyar tudományos szövegben az „értelmezhető” természetesebb."
+    },
+    {
+      "line_approx": 229,
+      "category": "plural",
+      "severity": "low",
+      "original": "hiányzóadat-értéket kapnak",
+      "suggested": "hiányzóadat-értéket kap",
+      "reason": "A magyarban az állítmány gyakran egyes számban áll, ha a hangsúly a csoport egészén van; itt ez természetesebb."
+    },
+    {
+      "line_approx": 231,
+      "category": "register",
+      "severity": "low",
+      "original": "egy cellányi szélességű lejtés- és kitettséginformáció vész el",
+      "suggested": "egy cella szélességű sávban vész el a lejtés- és kitettséginformáció",
+      "reason": "A jelenlegi szerkezet nehézkes; a javasolt változat világosabb."
+    },
+    {
+      "line_approx": 235,
+      "category": "register",
+      "severity": "medium",
+      "original": "A derivált módszer arra a kérdésre ad választ, hogy „mekkora a cella környezetének átlagos meredeksége és iránya?\"",
+      "suggested": "A derivált módszer arra ad választ, hogy mekkora a cella környezetének átlagos lejtése, és milyen irányú ez a lejtés.",
+      "reason": "A „meredeksége és iránya” együtt kissé nehézkes; a „lejtése” terminológiailag és stilisztikailag egységesebb."
+    },
+    {
+      "line_approx": 236,
+      "category": "register",
+      "severity": "low",
+      "original": "A megkülönböztetés fontos.",
+      "suggested": "Ez a különbség fontos.",
+      "reason": "Természetesebb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 237,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Hidrológiai alkalmazásokhoz -- vízgyűjtő-lehatárolás, vízhálózat-kijelölés, áramlás-felhalmozódás -- a D8-módszer a standard megközelítés.",
+      "suggested": "Hidrológiai alkalmazásokban -- például vízgyűjtő-lehatárolásnál, vízhálózat-kijelölésnél és áramlásfelhalmozódás-számításnál -- a D8-módszer a bevett megközelítés.",
+      "reason": "A „standard megközelítés” anglicizmus; a „bevett megközelítés” természetesebb. Az „áramlás-felhalmozódás” írásmódja is ingadozó."
+    },
+    {
+      "line_approx": 245,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az áramlásirány ahhoz a szomszédhoz kerül hozzárendelésre, amelyhez a legmeredekebb a lefelé irányuló lejtés.",
+      "suggested": "Az áramlásirányt ahhoz a szomszédhoz rendeljük, amely felé a lefelé irányuló lejtés a legmeredekebb.",
+      "reason": "A „kerül hozzárendelésre” kerülendő, szenvedő jellegű szerkezet; az aktív forma természetesebb."
+    },
+    {
+      "line_approx": 257,
+      "category": "register",
+      "severity": "medium",
+      "original": "A kettőhatvány-kódolás nem önkényes -- úgy tervezték, hogy minden irány egyetlen bittel legyen ábrázolva egy 8 bites bináris számban.",
+      "suggested": "A kettőhatványos kódolás nem önkényes: úgy alakították ki, hogy egy 8 bites bináris számban minden irányt egyetlen bit reprezentáljon.",
+      "reason": "A „kettőhatvány-kódolás” és a „legyen ábrázolva” nehézkes; a javasolt változat idiomatikusabb."
+    },
+    {
+      "line_approx": 283,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ennek a kimenetnek dokumentált hibát tartalmaz.",
+      "suggested": "Ez a kimenet dokumentált hibát tartalmaz.",
+      "reason": "Az „ennek a kimenetnek” szerkezet itt nyelvtanilag hibás."
+    },
+    {
+      "line_approx": 401,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Referenciaszög (kelettől, ÓMJ-vel ellentétesen)",
+      "suggested": "Referenciaszög (kelettől, az óramutató járásával ellentétesen)",
+      "reason": "A rövidítés ebben a táblázatfejben nehézkes és kevésbé természetes; a teljes forma világosabb."
+    },
+    {
+      "line_approx": 412,
+      "category": "register",
+      "severity": "low",
+      "original": "A D-végtelen konvencióról az ArcGIS konvencióra való átváltáshoz",
+      "suggested": "A D-végtelen konvencióból az ArcGIS-konvencióba való átváltáshoz",
+      "reason": "A magyarban természetesebb a -ból/-ba szerkezet, és az összetett jelző kötőjeles írása is indokolt."
+    },
+    {
+      "line_approx": 418,
+      "category": "register",
+      "severity": "medium",
+      "original": "Két peremeset különböztetünk meg:",
+      "suggested": "Két peremesetet különböztetünk meg:",
+      "reason": "Hiányzik a tárgyrag; a jelenlegi alak nyelvtanilag hibás."
+    },
+    {
+      "line_approx": 420,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a facetta fő égtáji szélén",
+      "suggested": "a facetta fő égtáji élén",
+      "reason": "Geometriai kontextusban az „él” a bevett és pontosabb szakkifejezés, nem a „szél”."
+    },
+    {
+      "line_approx": 430,
+      "category": "register",
+      "severity": "medium",
+      "original": "Mindkét peremeset esetén",
+      "suggested": "Mindkét peremesetben",
+      "reason": "A „peremeset” szó mellett az „esetén” körülményes; a javított forma tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 430,
+      "category": "register",
+      "severity": "medium",
+      "original": "D8-ekvivalens irányra degradálódik",
+      "suggested": "D8-ekvivalens irányra egyszerűsödik",
+      "reason": "A „degradálódik” idegenszerű és stílusidegen ebben a tankönyvi szövegben."
+    },
+    {
+      "line_approx": 435,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Meg kell határoznunk, melyik facetta adja a legmeredekebb lefelé irányuló irányt.",
+      "suggested": "Meg kell határoznunk, melyik facetta mentén adódik a legmeredekebb lefelé irány.",
+      "reason": "Az „adja ... irányt” angolos, nehézkes szerkezet; a javított változat természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 456,
+      "category": "register",
+      "severity": "low",
+      "original": "A többi facettát is ellenőriznünk kell, hogy megerősítsük: a 6. facetta adja a legmeredekebb lejtést.",
+      "suggested": "A többi facettát is ellenőriznünk kell annak megerősítésére, hogy a 6. facetta adja a legmeredekebb lejtést.",
+      "reason": "A kettősponttal bevezetett „megerősítsük” szerkezet kissé fordításszagú; a javított forma gördülékenyebb."
+    },
+    {
+      "line_approx": 468,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez fizikailag értelmes a magassági elrendezés ismeretében:",
+      "suggested": "Ez a magasságviszonyok alapján fizikailag is értelmezhető:",
+      "reason": "A „magassági elrendezés” tükörfordításízű; a „magasságviszonyok” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 473,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**A példa: A szög meghaladja a 45 fokot.**",
+      "suggested": "**A példa: a szög meghaladja a 45 fokot**",
+      "reason": "A címszerű kiemelésben a kettőspont utáni nagybetű és a záró pont kevésbé természetes; magyar alcímként egyszerűbb formában jobb."
+    },
+    {
+      "line_approx": 495,
+      "category": "other",
+      "severity": "high",
+      "original": "Ez a legmeredekebb facetta (lejtés 0,566), és a globális szög $225^\\circ + 45^\\circ = 270^\\circ$ kelettől az óramutató járásával ellentétesen mérve, ami a kelettől, az óramutató járásával ellentétesen mért konvencióban egyenes délnek felel meg. Az 5. facetta referenciaszöge 225 fok. 45 fokot hozzáadva 270 fokot kapunk, ami a D-végtelen konvencióban (kelettől ÓMJ-vel ellentétesen) egyenes dél. A D8-ekvivalens a délnyugati átlós lenne (mivel a facettaszög 45 fok az átlós él mentén mutat).",
+      "suggested": "Ez a legmeredekebb facetta (lejtés 0,566), és a globális szög $225^\\circ + 45^\\circ = 270^\\circ$ kelettől az óramutató járásával ellentétesen mérve, ami egyenes délnek felel meg. Mivel a facettán belüli szög pontosan $45^\\circ$, az irány a facetta átlós élére esik, vagyis a D8-ekvivalens irány a délnyugati átlós szomszéd felé mutat.",
+      "reason": "Az eredeti szöveg ismétlődő, körülményes, és látszólag ellentmondásos: egyszerre beszél „egyenes dél” irányról és délnyugati D8-ekvivalensről. A javaslat tömörebben és világosabban különíti el a globális szöget és a facettahatár értelmezését."
+    },
+    {
+      "line_approx": 498,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**B példa: A szög negatív.**",
+      "suggested": "**B példa: a szög negatív**",
+      "reason": "Az alcím tipográfiája és nagybetűzése angolos; magyar szakkönyvben egyszerűbb, pont nélküli forma természetesebb."
+    },
+    {
+      "line_approx": 509,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ennek a rácsnak korlátozott lefelé irányuló lehetőségei vannak.",
+      "suggested": "Ebben a rácsban kevés a lefelé vezető lehetséges irány.",
+      "reason": "A „lefelé irányuló lehetőségei vannak” nehézkes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 510,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mélyedésfeltöltési (Fill Sinks) előfeldolgozási lépésre",
+      "suggested": "mélyedésfeltöltési (Fill Sinks) előfeldolgozási lépésre",
+      "reason": "A magyar terminus érthető, de a bevettebb alak inkább „mélyedéskitöltés” vagy „depressziókitöltés”; érdemes terminológiailag egységesíteni a fejezetben."
+    },
+    {
+      "line_approx": 524,
+      "category": "register",
+      "severity": "low",
+      "original": "A D-végtelen módszer ~165,1 foka",
+      "suggested": "A D-végtelen módszer mintegy 165,1 fokos értéke",
+      "reason": "A „~” jel folyószövegben kevésbé elegáns; a kiírt forma akadémiai regiszterben természetesebb."
+    },
+    {
+      "line_approx": 526,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A D8-nak a déli irányt kell választania -- ami körülbelül 15 fokos szöghibát vezet be.",
+      "suggested": "A D8 ebben az esetben a déli irányt választja, ami körülbelül 15 fokos szöghibát eredményez.",
+      "reason": "A „kell választania” és a „vezet be” együtt angolos szerkezet; a javított változat természetesebb."
+    },
+    {
+      "line_approx": 536,
+      "category": "register",
+      "severity": "medium",
+      "original": "Legjobb alkalmazásra",
+      "suggested": "Legjobb alkalmazás",
+      "reason": "A táblázatfejben a „-ra” rag felesleges és természetellenes."
+    },
+    {
+      "line_approx": 543,
+      "category": "register",
+      "severity": "medium",
+      "original": "A három módszer közötti választás nem preferencia kérdése -- az adott hidrológiai kérdéstől függ.",
+      "suggested": "A három módszer közötti választást nem ízlés, hanem az adott hidrológiai kérdés határozza meg.",
+      "reason": "A „preferencia kérdése” tükörfordításízű; a javított változat idiomatikusabb magyarul."
+    },
+    {
+      "line_approx": 545,
+      "category": "register",
+      "severity": "medium",
+      "original": "**Használja a derivált módszert (ArcGIS Slope/Aspect)**, amikor a felszíni meredekség általános jellemzésére van szüksége, amely a teljes helyi környezetet figyelembe veszi.",
+      "suggested": "**A derivált módszert (ArcGIS Slope/Aspect) akkor érdemes használni**, amikor a felszíni meredekséget a teljes helyi környezet figyelembevételével szeretnénk általánosan jellemezni.",
+      "reason": "A közvetlen felszólítás („Használja”) kevésbé illik a tankönyvi magyarázó stílushoz; a személytelenebb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 547,
+      "category": "register",
+      "severity": "medium",
+      "original": "**Használja a D8-módszert**, amikor diszkrét áramlási utakat kell nyomon követnie a celláktól a lefelé irányuló szomszédaikig.",
+      "suggested": "**A D8-módszert akkor érdemes használni**, amikor a celláktól a lefelé fekvő szomszédok felé vezető diszkrét áramlási utakat kell nyomon követni.",
+      "reason": "A felszólító forma és a „lefelé irányuló szomszédaikig” szerkezet nehézkes; a javított változat gördülékenyebb és szaknyelvileg természetesebb."
+    },
+    {
+      "line_approx": 1201,
+      "category": "register",
+      "severity": "medium",
+      "original": "Használja a D-végtelen módszert, amikor az áramlásirány pontos ábrázolására van szüksége a domboldalon",
+      "suggested": "A D-végtelen módszert akkor érdemes használni, amikor a domboldali áramlásirány pontos ábrázolására van szükség",
+      "reason": "Az olvasó közvetlen megszólítása („van szüksége”) tankönyvi szövegben kevésbé természetes; tárgyilagosabb akadémiai megfogalmazás célszerű."
+    },
+    {
+      "line_approx": 1202,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A D-végtelen módszer azon képessége, hogy az áramlást két lefelé irányuló szomszéd között ossza meg, simább, valósághűbb hozzájáruló terület-mintázatokat produkál",
+      "suggested": "Mivel a D-végtelen módszer az áramlást két lejtőirányban fekvő szomszédos cella között osztja meg, simább és valósághűbb hozzájárulóterület-mintázatokat ad",
+      "reason": "Az „azon képessége, hogy...” angolos főnevesítő szerkezet; az „produkál” is idegenszerű ebben a regiszterben."
+    },
+    {
+      "line_approx": 1202,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "két lefelé irányuló szomszéd",
+      "suggested": "két lejtőirányban fekvő szomszédos cella",
+      "reason": "A „lefelé irányuló szomszéd” szó szerinti fordítás, szaknyelvileg pontatlan és természetellenes."
+    },
+    {
+      "line_approx": 1203,
+      "category": "calque",
+      "severity": "high",
+      "original": "a D8 mesterséges csíkozási műtermékeit",
+      "suggested": "a D8 mesterséges csíkozási hibáit",
+      "reason": "A „műtermék” az angol „artifact” tükörfordítása; magyar műszaki szövegben itt inkább „hiba” vagy „artefaktum” természetes."
+    },
+    {
+      "line_approx": 1204,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Ez teszi alkalmassá a domboldal hidrológiai elemzéséhez, a talajnedvesség-térképezésben használt domborzati indexek számításához, és bármely alkalmazáshoz",
+      "suggested": "Ezért különösen alkalmas a domboldalak hidrológiai elemzésére, a talajnedvesség-térképezésben használt domborzati indexek számítására, valamint minden olyan alkalmazásra",
+      "reason": "Az „alkalmassá teszi ... -hez” szerkezet angolos; magyarul az „alkalmas ... -ra/-re” természetesebb."
+    },
+    {
+      "line_approx": 1205,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A D-végtelen módszer értékes finom topográfiai jellemzők -- konvergens mélyedések és divergens gerincek -- felismeréséhez is",
+      "suggested": "A D-végtelen módszer a finom topográfiai jellemzők -- például a konvergens mélyedések és a divergens gerincek -- felismerésében is értékes",
+      "reason": "A mondat szórendje és a bővítmények kapcsolása nehézkes; magyarul gördülékenyebb az átfogalmazott szerkezet."
+    },
+    {
+      "line_approx": 1208,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy tipikus munkafolyamat kiszámíthatja a derivált lejtést",
+      "suggested": "Egy tipikus munkafolyamatban a lejtést derivált módszerrel számíthatjuk ki",
+      "reason": "A „munkafolyamat kiszámíthatja” angolos megszemélyesítés; magyarul természetesebb az eszközhasználatot vagy eljárást megnevezni."
+    },
+    {
+      "line_approx": 1208,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "derivált lejtést",
+      "suggested": "a lejtést derivált módszerrel",
+      "reason": "A „derivált lejtés” terminusként szokatlan; itt a számítás módjára kell utalni, nem a lejtés típusára."
+    },
+    {
+      "line_approx": 1214,
+      "category": "register",
+      "severity": "low",
+      "original": "Mindkét eszköz bemenetként DEM-rácsot fogad, és kimenetként új rácsot állít elő.",
+      "suggested": "Mindkét eszköz DEM-rácsot vesz bemenetként, és új rácsot hoz létre kimenetként.",
+      "reason": "A „fogad” és „állít elő” együtt kissé gépies; a javasolt változat természetesebb magyar szaknyelvi megfogalmazás."
+    },
+    {
+      "line_approx": 1217,
+      "category": "terminology",
+      "severity": "low",
+      "original": "fájlútvonala",
+      "suggested": "elérési útja",
+      "reason": "A „fájlútvonal” angol mintájú; magyar informatikai szaknyelvben az „elérési út” bevettebb."
+    },
+    {
+      "line_approx": 1219,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A fok intuitívabb a domborzati megjelenítéshez",
+      "suggested": "A fokban megadott érték szemléletesebb a domborzat megjelenítéséhez",
+      "reason": "Az „intuitívabb” itt angolos és kissé pongyola; a „szemléletesebb” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 1220,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vetített koordinátás DEM-ekhez",
+      "suggested": "vetített koordináta-rendszerű DEM-ekhez",
+      "reason": "A „vetített koordinátás” szokatlan; a teljes terminus pontosabb."
+    },
+    {
+      "line_approx": 1223,
+      "category": "register",
+      "severity": "medium",
+      "original": "A legfőbb elkerülendő hiba:",
+      "suggested": "A legfontosabb elkerülendő hiba a következő:",
+      "reason": "A címkeszerű bevezetés önmagában darabos; a teljesebb szerkezet gördülékenyebb."
+    },
+    {
+      "line_approx": 1224,
+      "category": "register",
+      "severity": "medium",
+      "original": "értelmetlen lejtésértékeket fog produkálni",
+      "suggested": "értelmetlen lejtésértékeket eredményez",
+      "reason": "A „fog produkálni” idegenszerű és túl beszélt nyelvi; az „eredményez” akadémiai regiszterben jobb."
+    },
+    {
+      "line_approx": 1225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A legjobb gyakorlat:",
+      "suggested": "Bevált gyakorlat, hogy",
+      "reason": "A „best practice” szó szerinti fordítása; magyarul a „bevált gyakorlat” természetesebb."
+    },
+    {
+      "line_approx": 1226,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Magyar projekteknél a természetes választás az EOV (EPSG:23700), Magyarország nemzeti vetülete",
+      "suggested": "Magyarországi projektekben természetes választás az EOV (EPSG:23700), vagyis Magyarország nemzeti vetülete",
+      "reason": "A közbevetés kissé darabos; az átfogalmazás természetesebb mondatkapcsolást ad."
+    },
+    {
+      "line_approx": 1231,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Hidrológiai alkalmazásokhoz ennek feltöltött DEM-nek kell lennie",
+      "suggested": "Hidrológiai alkalmazásokhoz ennek mélyedéskitöltött DEM-nek kell lennie",
+      "reason": "A „feltöltött DEM” félreérthető; szakmailag pontosabb a „mélyedéskitöltött DEM” vagy hasonló megnevezés."
+    },
+    {
+      "line_approx": 1237,
+      "category": "register",
+      "severity": "low",
+      "original": "figyelem: radián, nem fok",
+      "suggested": "fontos, hogy az érték radiánban, nem fokban van megadva",
+      "reason": "A zárójeles figyelmeztetés beszélt nyelvi; a teljes mondatba illesztett forma tankönyvszerűbb."
+    },
+    {
+      "line_approx": 1241,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az egyes eszközök manuális futtatása fárasztóvá és hibalehetőségeket rejtővé válik",
+      "suggested": "az egyes eszközök kézi futtatása fárasztó, és növeli a hibalehetőséget",
+      "reason": "A „hibalehetőségeket rejtővé válik” nehézkes, angolos szerkezet."
+    },
+    {
+      "line_approx": 1242,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vizuális programozási környezetet biztosít",
+      "suggested": "vizuális munkafolyamat-tervező környezetet kínál",
+      "reason": "A „vizuális programozási környezet” szó szerinti és kissé túlzó; a Model Builder funkcióját a javasolt megnevezés pontosabban adja vissza."
+    },
+    {
+      "line_approx": 1254,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "a nyers DEM a Fill-be táplálja; a feltöltött DEM kimenet a Slope, Aspect és mindkét Flow Direction eszközbe",
+      "suggested": "a nyers DEM a Fill eszköz bemenete; a feltöltött DEM kimenetét pedig a Slope, az Aspect és mindkét Flow Direction eszköz bemenetére kell kötni",
+      "reason": "A „Fill-be táplálja” angolból átvett, természetellenes szerkezet; a mondat nyelvtanilag is hibás."
+    },
+    {
+      "line_approx": 1256,
+      "category": "register",
+      "severity": "low",
+      "original": "hogy modellparaméterré tegye -- ez lehetővé teszi, hogy a felhasználó minden futtatáskor más DEM-et adjon meg",
+      "suggested": "így modellparaméter lesz, vagyis a felhasználó minden futtatáskor más DEM-et adhat meg",
+      "reason": "A „lehetővé teszi, hogy” túlterhelt fordítási fordulat; a „vagyis” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 1259,
+      "category": "register",
+      "severity": "medium",
+      "original": "Egy tucatnyi DEM-et feldolgozó kutatócsoportnak",
+      "suggested": "Ha egy kutatócsoport tucatnyi DEM-et dolgoz fel",
+      "reason": "A részes határozós szerkezet nehézkes; a feltételes mellékmondat természetesebb magyarul."
+    },
+    {
+      "line_approx": 1265,
+      "category": "register",
+      "severity": "low",
+      "original": "A GIS-elemzésekben alapelv: bízzunk a szoftverben, de az eredményeket mindig ellenőrizzük.",
+      "suggested": "A GIS-elemzések egyik alapelve: bízzunk a szoftverben, de az eredményeket mindig ellenőrizzük.",
+      "reason": "Az „alapelv” előtt hiányzik a természetesebb pontosítás; így idiomatikusabb."
+    },
+    {
+      "line_approx": 1267,
+      "category": "plural",
+      "severity": "medium",
+      "original": "Más szoftvernek is megvannak a maga sajátosságai.",
+      "suggested": "Más szoftvereknek is megvannak a maguk sajátosságai.",
+      "reason": "Az alany egyes száma és az állítmányi szerkezet többes jelentése nincs összhangban; magyarul itt a többes szám természetes."
+    },
+    {
+      "line_approx": 1268,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az egyetlen megbízható módja annak, hogy megértsük, mit számít egy eszköz",
+      "suggested": "Az egyetlen megbízható módja annak, hogy megértsük, egy eszköz mit számít",
+      "reason": "Az angolos mellékmondati szórend helyett a magyar fókuszhoz igazodó szórend természetesebb."
+    },
+    {
+      "line_approx": 1610,
+      "category": "register",
+      "severity": "medium",
+      "original": "Új projekteknél általában a Copernicus DEM GLO-30 az előnyben részesített",
+      "suggested": "Új projekteknél általában a Copernicus DEM GLO-30 az elsődlegesen ajánlott választás",
+      "reason": "Az „az előnyben részesített” angolos, körülményes szerkezet; természetesebb magyar tudományos megfogalmazás javasolt."
+    },
+    {
+      "line_approx": 1616,
+      "category": "register",
+      "severity": "medium",
+      "original": "azokon a területeken lehet felülmúlóbb, ahol a radarmérések problémásak",
+      "suggested": "azokon a területeken jobb választás lehet, ahol a radarmérések problémásak",
+      "reason": "A „felülmúlóbb” természetellenes, erőltetett szóalak."
+    },
+    {
+      "line_approx": 1623,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "amelyet a meglévő műholdas DEM-ekből a szisztematikus hibák (...) eltávolításával hoztak létre",
+      "suggested": "amelyet a meglévő műholdas DEM-ek szisztematikus hibáinak (...) eltávolításával állítottak elő",
+      "reason": "A „hoztak létre” itt kissé tükörfordításos; az „állítottak elő” természetesebb szakmai regiszterben."
+    },
+    {
+      "line_approx": 1624,
+      "category": "register",
+      "severity": "medium",
+      "original": "A legmagasabb pontosságú 90 méteres globális DEM",
+      "suggested": "A legpontosabb 90 méteres globális DEM",
+      "reason": "A „legmagasabb pontosságú” nehézkes; a „legpontosabb” természetesebb."
+    },
+    {
+      "line_approx": 1631,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Pontosság tekintetében nagyrészt felváltotta a Copernicus DEM és az AW3D30.",
+      "suggested": "Pontosság szempontjából a Copernicus DEM és az AW3D30 nagyrészt felváltotta.",
+      "reason": "A mondat szórendje kissé angolos; a fókusz természetesebben kerül az ige elé."
+    },
+    {
+      "line_approx": 1648,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a DDM-5 az arany standard",
+      "suggested": "a DDM-5 tekinthető etalonnak",
+      "reason": "Az „arany standard” közvetlen angol tükörfordítás; magyar tudományos szövegben az „etalon” természetesebb."
+    },
+    {
+      "line_approx": 1656,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A felső szakasznak mérsékelt reliefje van",
+      "suggested": "A felső szakasz domborzata mérsékelten tagolt",
+      "reason": "A „relief” ebben a formában idegenszerű; a magyar földtudományi szaknyelvben a „domborzat” természetesebb."
+    },
+    {
+      "line_approx": 1660,
+      "category": "register",
+      "severity": "low",
+      "original": "Kizárólag magyar elemzéshez ez a legjobb választás.",
+      "suggested": "Kizárólag magyarországi területre kiterjedő elemzéshez ez a legjobb választás.",
+      "reason": "A „magyar elemzés” pontatlanul, kissé idegenszerűen hangzik; a területi hatókör egyértelműsítése természetesebb."
+    },
+    {
+      "line_approx": 1663,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ideális a teljes felső-tiszai vízgyűjtő transznacionális elemzéséhez.",
+      "suggested": "Ideális a teljes felső-tiszai vízgyűjtő határokon átnyúló elemzéséhez.",
+      "reason": "A „transznacionális” itt fölöslegesen idegen hangzású; a „határokon átnyúló” bevettebb magyar tudományos kifejezés."
+    },
+    {
+      "line_approx": 1666,
+      "category": "register",
+      "severity": "medium",
+      "original": "Azonban a 30 m túl durva lehet",
+      "suggested": "A 30 méteres felbontás azonban túl durva lehet",
+      "reason": "A „30 m” alanyként kissé töredékes, angolos; a teljes szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 1669,
+      "category": "register",
+      "severity": "high",
+      "original": "A gyakorlati javaslat: használja a DDM-5-öt",
+      "suggested": "Gyakorlati szempontból célszerű a DDM-5-öt használni",
+      "reason": "A közvetlen felszólító mód („használja”) tankönyvi leíró szövegben idegen; tárgyilagosabb megfogalmazás kell."
+    },
+    {
+      "line_approx": 1683,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A **profil görbület (profile curvature)**",
+      "suggested": "A **hosszirányú görbület (profile curvature)**",
+      "reason": "A „profilgörbület”/„hosszirányú görbület” magyarul természetesebb terminus, mint a különírt „profil görbület”."
+    },
+    {
+      "line_approx": 1686,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "fontos észben tartani",
+      "suggested": "fontos szem előtt tartani",
+      "reason": "Az „észben tartani” itt angol mintát követő fordulat; a „szem előtt tartani” természetesebb."
+    },
+    {
+      "line_approx": 1687,
+      "category": "register",
+      "severity": "medium",
+      "original": "az itt kifejlesztett matematikai apparátus",
+      "suggested": "az itt bemutatott matematikai apparátus",
+      "reason": "A „kifejlesztett” tükörfordításos, mintha a fejezet fejlesztette volna ki; a „bemutatott” pontosabb."
+    },
+    {
+      "line_approx": 1688,
+      "category": "register",
+      "severity": "medium",
+      "original": "A görbülettérképek egyre inkább használatosak",
+      "suggested": "A görbülettérképeket egyre szélesebb körben használják",
+      "reason": "A „használatosak” kissé merev, idegenszerű; az igei szerkezet természetesebb."
+    },
+    {
+      "line_approx": 1699,
+      "category": "calque",
+      "severity": "high",
+      "original": "produkálnak telítődéses lefolyást",
+      "suggested": "telítődéses lefolyást eredményeznek",
+      "reason": "A „produkálnak” itt nyers anglicizmus; tudományos magyarban az „eredményeznek” a természetes."
+    },
+    {
+      "line_approx": 1702,
+      "category": "register",
+      "severity": "medium",
+      "original": "A D-végtelen áramlásirányok simább, fizikailag valósághűbb hozzájáruló terület-mintázatokat produkálnak",
+      "suggested": "A D-végtelen módszer simább, fizikailag valósághűbb hozzájárulóterület-mintázatokat eredményez",
+      "reason": "A „produkálnak” anglicizmus, az „áramlásirányok” többes száma itt nehézkes; a mondat egyszerűsíthető."
+    },
+    {
+      "line_approx": 1705,
+      "category": "register",
+      "severity": "medium",
+      "original": "a hidrológia és az ökológia egyik legsokoldalúbb domborzati indexének bizonyult",
+      "suggested": "a hidrológiában és az ökológiában az egyik legsokoldalúbban alkalmazható domborzati indexnek bizonyult",
+      "reason": "A birtokos szerkezet kissé angolos; a magyar mondat természetesebben határozói szerkezettel hangzik."
+    },
+    {
+      "line_approx": 1706,
+      "category": "calque",
+      "severity": "medium",
+      "original": "vizes élőhelyek helyének azonosítására",
+      "suggested": "vizes élőhelyek azonosítására",
+      "reason": "A „helyének azonosítása” fölöslegesen angolos körülírás."
+    },
+    {
+      "line_approx": 1711,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "a koncentrációs idő a leghosszabb áramlási út menti lejtésből kerül becslésre",
+      "suggested": "a koncentrációs időt a leghosszabb áramlási út menti lejtésből becsülik",
+      "reason": "„kerül + -ásra” típusú szenvedő szerkezet."
+    },
+    {
+      "line_approx": 1715,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez egy finom, de valós probléma",
+      "suggested": "Ez kevésbé feltűnő, de valós probléma",
+      "reason": "A „finom probléma” az angol „subtle problem” tükörfordítása."
+    },
+    {
+      "line_approx": 1724,
+      "category": "register",
+      "severity": "medium",
+      "original": "Azoknak a hallgatóknak és kutatóknak, akik magas minőségű nemzeti DEM nélküli országokban dolgoznak",
+      "suggested": "Azokban az országokban dolgozó hallgatók és kutatók számára, ahol nem áll rendelkezésre jó minőségű nemzeti DEM",
+      "reason": "Az eredeti szerkezet nehézkes és angolosan terhelt."
+    },
+    {
+      "line_approx": 1725,
+      "category": "register",
+      "severity": "medium",
+      "original": "a hidrológiai elemzés de facto standardjává teszi",
+      "suggested": "a hidrológiai elemzés tényleges szabványává emeli",
+      "reason": "A „de facto standard” részben idegen elem; magyarosabb megoldás javasolt."
+    },
+    {
+      "line_approx": 1726,
+      "category": "calque",
+      "severity": "medium",
+      "original": "hidrológiai deriváltakat (...) produkál",
+      "suggested": "hidrológiai származtatott mutatókat (...) eredményez",
+      "reason": "A „produkál” anglicizmus, a „deriváltak” itt kevésbé természetes, mint a „származtatott mutatók” vagy „levezetett rétegek”."
+    },
+    {
+      "line_approx": 1734,
+      "category": "register",
+      "severity": "low",
+      "original": "Használjon globális DEM-eket tartalékként.",
+      "suggested": "A globális DEM-eket tartalék megoldásként érdemes használni.",
+      "reason": "A felszólító mód itt kevésbé illik a tankönyvi, leíró regiszterhez."
+    }
+  ]
+}

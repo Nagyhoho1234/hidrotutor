@@ -1,0 +1,3095 @@
+[
+  {
+    "type": "mcq",
+    "question": "What is the Nash-Sutcliffe Efficiency (NSE) value that indicates the model is no better than predicting the mean observed flow?",
+    "options": [
+      "A. -1.0",
+      "B. 0.0",
+      "C. 0.5",
+      "D. 1.0"
+    ],
+    "correct": "B",
+    "explanation": "An NSE of 0.0 means the model predictions are only as accurate as using the mean observed flow at every time step. Negative values indicate the model is worse than the mean."
+  },
+  {
+    "type": "mcq",
+    "question": "Who developed the Shuffled Complex Evolution algorithm (SCE-UA)?",
+    "options": [
+      "A. Keith Beven and Andrew Binley",
+      "B. Jasper Vrugt and colleagues at UC Irvine",
+      "C. Duan, Sorooshian, and Gupta at the University of Arizona",
+      "D. John Doherty at Watermark Numerical Computing"
+    ],
+    "correct": "C",
+    "explanation": "SCE-UA was published by Duan, Sorooshian, and Gupta in 1992 and was the first global optimization method specifically designed for hydrological model calibration."
+  },
+  {
+    "type": "mcq",
+    "question": "According to the Moriasi et al. (2007) guidelines, what NSE range is considered 'very good' for daily streamflow simulation?",
+    "options": [
+      "A. Above 0.50",
+      "B. Above 0.65",
+      "C. Above 0.75",
+      "D. Above 0.90"
+    ],
+    "correct": "C",
+    "explanation": "Moriasi et al. (2007) categorize NSE above 0.75 as 'very good,' above 0.65 as 'good,' and above 0.5 as 'satisfactory' for daily streamflow."
+  },
+  {
+    "type": "mcq",
+    "question": "How many parameters does the GR4J model have?",
+    "options": [
+      "A. 2",
+      "B. 4",
+      "C. 6",
+      "D. 9"
+    ],
+    "correct": "B",
+    "explanation": "GR4J (modele du Genie Rural a 4 parametres Journalier) has exactly four parameters: production store capacity (x1), groundwater exchange coefficient (x2), routing store capacity (x3), and unit hydrograph time base (x4)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the KGE metric decompose model performance into?",
+    "options": [
+      "A. Mean, variance, and skewness",
+      "B. Correlation, bias ratio, and variability ratio",
+      "C. Peak error, volume error, and timing error",
+      "D. RMSE, MAE, and R-squared"
+    ],
+    "correct": "B",
+    "explanation": "The Kling-Gupta Efficiency decomposes into three components: r (Pearson correlation measuring timing), beta (bias ratio measuring volume), and gamma (variability ratio measuring spread)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical number of model evaluations required by DREAM for convergence?",
+    "options": [
+      "A. 100-500",
+      "B. 2,000-10,000",
+      "C. 50,000-500,000",
+      "D. 1,000,000+"
+    ],
+    "correct": "C",
+    "explanation": "DREAM typically requires 50,000 to 500,000 model evaluations to achieve convergence, an order of magnitude more than SCE-UA."
+  },
+  {
+    "type": "mcq",
+    "question": "Which algorithm is the most widely used multi-objective optimization method in hydrology?",
+    "options": [
+      "A. SCE-UA",
+      "B. DREAM",
+      "C. NSGA-II",
+      "D. Nelder-Mead"
+    ],
+    "correct": "C",
+    "explanation": "The Non-dominated Sorting Genetic Algorithm II (NSGA-II), developed by Deb et al. (2002), is the most widely used multi-objective optimization algorithm in hydrology."
+  },
+  {
+    "type": "mcq",
+    "question": "The Sobol first-order sensitivity index S_i measures what?",
+    "options": [
+      "A. The total variance of the output",
+      "B. The fraction of output variance attributable to parameter i alone",
+      "C. The interaction effects between parameters",
+      "D. The mean absolute elementary effect"
+    ],
+    "correct": "B",
+    "explanation": "The first-order Sobol index S_i = V[E(Y|X_i)] / V(Y) measures the fraction of output variance directly attributable to parameter i alone, excluding interactions."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the phenomenon where multiple parameter sets produce equally good model simulations called?",
+    "options": [
+      "A. Overfitting",
+      "B. Underfitting",
+      "C. Equifinality",
+      "D. Non-stationarity"
+    ],
+    "correct": "C",
+    "explanation": "Equifinality, articulated by Keith Beven in 1996, is the phenomenon where different parameter sets, sometimes radically different ones, produce virtually indistinguishable model outputs."
+  },
+  {
+    "type": "mcq",
+    "question": "In the GLUE framework, what are parameter sets that produce acceptable simulations called?",
+    "options": [
+      "A. Optimal sets",
+      "B. Pareto sets",
+      "C. Behavioral sets",
+      "D. Calibrated sets"
+    ],
+    "correct": "C",
+    "explanation": "In GLUE, parameter sets that exceed a defined performance threshold are termed 'behavioral' and are retained for uncertainty analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the default number of complexes recommended for SCE-UA?",
+    "options": [
+      "A. 3",
+      "B. 5",
+      "C. 10",
+      "D. 20"
+    ],
+    "correct": "B",
+    "explanation": "The default parameter settings recommended by Duan et al. include p = 5 complexes, with m = 2n + 1 points per complex where n is the number of parameters."
+  },
+  {
+    "type": "mcq",
+    "question": "Who proposed the Ensemble Kalman Filter (EnKF)?",
+    "options": [
+      "A. Rudolf Kalman",
+      "B. Geir Evensen",
+      "C. Jasper Vrugt",
+      "D. Soroosh Sorooshian"
+    ],
+    "correct": "B",
+    "explanation": "The Ensemble Kalman Filter was proposed by Geir Evensen in 1994 as a solution to the nonlinearity problem that makes the standard Kalman filter impractical for hydrological systems."
+  },
+  {
+    "type": "mcq",
+    "question": "How many core parameters does the NAM rainfall-runoff model have?",
+    "options": [
+      "A. 4",
+      "B. 6",
+      "C. 9",
+      "D. 15"
+    ],
+    "correct": "C",
+    "explanation": "NAM (Nedbor-Afstromnings-Model) uses nine core parameters including U_max, L_max, CQOF, CKIF, CK_1,2, TOF, TIF, and CKBF."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of method is the Morris Elementary Effects screening technique?",
+    "options": [
+      "A. Local sensitivity analysis",
+      "B. Global sensitivity screening",
+      "C. Bayesian parameter estimation",
+      "D. Multi-objective optimization"
+    ],
+    "correct": "B",
+    "explanation": "The Morris method is a global screening technique designed to identify which parameters are important and which are negligible using relatively few model evaluations."
+  },
+  {
+    "type": "mcq",
+    "question": "SWAT is maintained at which institution?",
+    "options": [
+      "A. University of Arizona",
+      "B. USGS",
+      "C. Texas A&M University",
+      "D. MIT"
+    ],
+    "correct": "C",
+    "explanation": "The Soil and Water Assessment Tool (SWAT) was developed at the USDA Agricultural Research Service and is maintained at Texas A&M University."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Kalman gain K_t determine?",
+    "options": [
+      "A. The model timestep",
+      "B. How much weight to give the observation versus the forecast",
+      "C. The number of ensemble members",
+      "D. The convergence rate of the algorithm"
+    ],
+    "correct": "B",
+    "explanation": "The Kalman gain determines the relative weight given to the observation versus the model forecast. When model uncertainty is high and observations are precise, K_t is large and the analysis shifts toward the observation."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the PEST software suite primarily used for?",
+    "options": [
+      "A. Statistical analysis of streamflow data",
+      "B. MODFLOW calibration using regularized inversion",
+      "C. Remote sensing image classification",
+      "D. Climate data downscaling"
+    ],
+    "correct": "B",
+    "explanation": "PEST (Parameter ESTimation), developed by John Doherty, has become the standard tool for MODFLOW calibration, using regularized inversion to estimate spatially distributed parameters."
+  },
+  {
+    "type": "mcq",
+    "question": "How many parameters does a typical HEC-HMS model with four subcatchments typically require for calibration?",
+    "options": [
+      "A. 4-8",
+      "B. 10-15",
+      "C. 20-30",
+      "D. 50-100"
+    ],
+    "correct": "C",
+    "explanation": "A typical HEC-HMS model with four subcatchments, each using SCS CN, Clark UH, and recession baseflow methods, might have 20 to 30 parameters requiring calibration."
+  },
+  {
+    "type": "mcq",
+    "question": "Which sensitivity analysis method has the most computationally demanding cost?",
+    "options": [
+      "A. One-at-a-time (OAT)",
+      "B. Morris / Elementary Effects",
+      "C. Sobol / Variance-based",
+      "D. Regional Sensitivity Analysis"
+    ],
+    "correct": "C",
+    "explanation": "Sobol analysis requires N Ã— (2n + 2) model evaluations using the Saltelli sampling scheme, typically 10^4 to 10^6 evaluations, making it the most expensive method."
+  },
+  {
+    "type": "mcq",
+    "question": "What does PBIAS measure?",
+    "options": [
+      "A. Peak flow timing error",
+      "B. Total volume bias as a percentage",
+      "C. Low-flow prediction accuracy",
+      "D. Parameter sensitivity"
+    ],
+    "correct": "B",
+    "explanation": "PBIAS (Percent Bias) measures the average tendency of simulated values to be larger or smaller than observed values, expressed as a percentage of total observed volume."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hernad catchment example, what was the calibrated value of the groundwater exchange coefficient (x2) and what does its positive sign indicate?",
+    "options": [
+      "A. x2 = -0.84, indicating groundwater loss",
+      "B. x2 = 0.84, indicating the catchment gains water from deep groundwater",
+      "C. x2 = 0.0, indicating no groundwater exchange",
+      "D. x2 = 3.0, indicating massive groundwater inflow"
+    ],
+    "correct": "B",
+    "explanation": "The calibrated x2 = 0.84 mm/day is positive, indicating a net gain from deep groundwater, consistent with karstic limestone formations in the Slovak Ore Mountains."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the 'curse of dimensionality' in model calibration?",
+    "options": [
+      "A. Models become more accurate with more parameters",
+      "B. The volume of parameter space grows exponentially with the number of parameters",
+      "C. Observations become less reliable in higher dimensions",
+      "D. Computational speed decreases linearly with parameters"
+    ],
+    "correct": "B",
+    "explanation": "The curse of dimensionality means that if you evaluate 10 values per parameter, a 5-parameter model needs 10^5 evaluations, but a 50-parameter model would need 10^50 â€” a number larger than the atoms in the observable universe."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the log-NSE metric emphasize?",
+    "options": [
+      "A. Peak flows",
+      "B. Medium flows",
+      "C. Low flows",
+      "D. Flow variability"
+    ],
+    "correct": "C",
+    "explanation": "Log-NSE is computed on log-transformed discharge, which compresses the high-flow range and expands the low-flow range, thereby emphasizing baseflow reproduction."
+  },
+  {
+    "type": "mcq",
+    "question": "SWAT divides a watershed into which spatial units?",
+    "options": [
+      "A. Grid cells",
+      "B. Sub-basins containing HRUs",
+      "C. Regular hexagons",
+      "D. Triangulated irregular networks"
+    ],
+    "correct": "B",
+    "explanation": "SWAT divides a watershed into sub-basins, each containing multiple Hydrologic Response Units (HRUs) defined by unique combinations of land use, soil type, and slope class."
+  },
+  {
+    "type": "mcq",
+    "question": "How many peer-reviewed publications has SWAT generated?",
+    "options": [
+      "A. Over 500",
+      "B. Over 1,000",
+      "C. Over 5,000",
+      "D. Over 10,000"
+    ],
+    "correct": "C",
+    "explanation": "SWAT is the most widely used semi-distributed model globally, with over 5,000 peer-reviewed publications."
+  },
+  {
+    "type": "mcq",
+    "question": "Which institution developed the NAM model?",
+    "options": [
+      "A. USACE",
+      "B. DHI in Denmark",
+      "C. INRAE in France",
+      "D. USGS"
+    ],
+    "correct": "B",
+    "explanation": "NAM (Nedbor-Afstromnings-Model) was developed by DHI in Denmark and is the rainfall-runoff component of the MIKE suite."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the total-effect Sobol index S_Ti measure?",
+    "options": [
+      "A. Only the direct effect of parameter i",
+      "B. The variance attributable to parameter i including all interactions",
+      "C. The covariance between parameters",
+      "D. The mean output value"
+    ],
+    "correct": "B",
+    "explanation": "The total-effect index S_Ti measures the fraction of output variance attributable to parameter i including all interactions with other parameters. The difference S_Ti - S_i quantifies interaction contributions."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Tisza River basin's approximate drainage area?",
+    "options": [
+      "A. 15,700 kmÂ²",
+      "B. 57,000 kmÂ²",
+      "C. 157,000 kmÂ²",
+      "D. 500,000 kmÂ²"
+    ],
+    "correct": "C",
+    "explanation": "The Tisza River basin drains approximately 157,000 kmÂ² across five countries: Ukraine, Romania, Slovakia, Hungary, and Serbia."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hernad worked example, how many function evaluations did SCE-UA require to converge?",
+    "options": [
+      "A. Approximately 350",
+      "B. Approximately 3,500",
+      "C. Approximately 35,000",
+      "D. Approximately 350,000"
+    ],
+    "correct": "B",
+    "explanation": "SCE-UA converged after approximately 3,500 function evaluations for the 4-parameter GR4J model, taking about 10 seconds on a modern desktop."
+  },
+  {
+    "type": "mcq",
+    "question": "What are the three categories in the parameter taxonomy?",
+    "options": [
+      "A. Input, output, and state parameters",
+      "B. Measurable physical, empirical, and conceptual parameters",
+      "C. Local, regional, and global parameters",
+      "D. Static, dynamic, and adaptive parameters"
+    ],
+    "correct": "B",
+    "explanation": "The taxonomy distinguishes measurable physical parameters (e.g., K_s), empirical parameters (e.g., Manning's n), and conceptual parameters (e.g., GR4J x1-x4) that exist only within a specific model."
+  },
+  {
+    "type": "mcq",
+    "question": "What does SWAT-CUP implement?",
+    "options": [
+      "A. Watershed delineation tools",
+      "B. Multiple calibration and uncertainty procedures including SUFI-2 and GLUE",
+      "C. Climate change downscaling methods",
+      "D. Groundwater flow simulation"
+    ],
+    "correct": "B",
+    "explanation": "SWAT-CUP (Calibration and Uncertainty Procedures) implements SUFI-2, GLUE, ParaSol, and MCMC algorithms as a dedicated calibration companion for SWAT."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Kalman filter, what does the observation operator H do?",
+    "options": [
+      "A. Propagates the model state forward in time",
+      "B. Maps from state space to observation space",
+      "C. Computes the error covariance matrix",
+      "D. Updates the model parameters"
+    ],
+    "correct": "B",
+    "explanation": "The observation operator H maps from the model's state space to observation space, allowing comparison between the model forecast and the actual observation."
+  },
+  {
+    "type": "mcq",
+    "question": "How many monitoring stations does the OVF operate for surface water in Hungary?",
+    "options": [
+      "A. Approximately 50",
+      "B. Approximately 200",
+      "C. Approximately 500",
+      "D. Approximately 2,500"
+    ],
+    "correct": "C",
+    "explanation": "The OVF operates approximately 500 surface water monitoring stations across Hungary, plus approximately 2,500 groundwater monitoring wells."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Morris method's sigma (Ïƒ) statistic indicate?",
+    "options": [
+      "A. The mean effect of a parameter",
+      "B. The nonlinearity or interaction effects of a parameter",
+      "C. The physical bounds of a parameter",
+      "D. The optimal value of a parameter"
+    ],
+    "correct": "B",
+    "explanation": "In the Morris method, a high Ïƒ relative to Î¼* indicates nonlinear effects or interactions with other parameters, while Î¼* indicates overall importance."
+  },
+  {
+    "type": "mcq",
+    "question": "Which land surface model is used in the US National Water Model?",
+    "options": [
+      "A. HTESSEL/ECLand",
+      "B. ISBA",
+      "C. Noah-MP",
+      "D. CLM"
+    ],
+    "correct": "C",
+    "explanation": "The Noah-MP (Noah Multi-Parameterization) land surface model is used in the US National Water Model and in the WRF atmospheric model."
+  },
+  {
+    "type": "mcq",
+    "question": "What computational cost does the Morris method require for n parameters with r trajectories?",
+    "options": [
+      "A. r Ã— n",
+      "B. r Ã— (n + 1)",
+      "C. N Ã— (2n + 2)",
+      "D. 2^n"
+    ],
+    "correct": "B",
+    "explanation": "The Morris method requires r Ã— (n + 1) model evaluations, where r is typically 10 to 50, making it far cheaper than Sobol analysis."
+  },
+  {
+    "type": "mcq",
+    "question": "What is Tikhonov regularization used for in PEST?",
+    "options": [
+      "A. Removing outliers from observed data",
+      "B. Adding penalty terms to favor spatial smoothness in parameters",
+      "C. Generating random parameter samples",
+      "D. Computing sensitivity indices"
+    ],
+    "correct": "B",
+    "explanation": "PEST's Tikhonov regularization adds penalty terms to the objective function that favor parameter sets with desirable properties like spatial smoothness."
+  },
+  {
+    "type": "mcq",
+    "question": "Who authored the widely cited guidelines for model evaluation in watershed simulations?",
+    "options": [
+      "A. Nash and Sutcliffe (1970)",
+      "B. Gupta et al. (2009)",
+      "C. Moriasi et al. (2007)",
+      "D. Beven (2006)"
+    ],
+    "correct": "C",
+    "explanation": "Moriasi et al. (2007) published the widely cited guidelines classifying NSE ranges as satisfactory (>0.5), good (>0.65), and very good (>0.75)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the LamaH-CE dataset?",
+    "options": [
+      "A. A global soil database",
+      "B. A large-sample hydrology dataset for Central Europe with 859 catchments",
+      "C. A satellite imagery collection for Europe",
+      "D. A climate projection database"
+    ],
+    "correct": "B",
+    "explanation": "LamaH-CE (Large-Sample Data for Hydrology in Central Europe) covers 859 catchments across Austria, Germany, Czech Republic, Switzerland, and neighboring countries, published by Klingler et al. (2021)."
+  },
+  {
+    "type": "mcq",
+    "question": "What method does ECMWF's ECLand use for data assimilation?",
+    "options": [
+      "A. Simple nudging",
+      "B. Particle filtering",
+      "C. 3D/4D-Var variational methods",
+      "D. SCE-UA optimization"
+    ],
+    "correct": "C",
+    "explanation": "ECMWF's land surface scheme uses variational methods (3D/4D-Var) to assimilate satellite soil moisture and land surface temperature data."
+  },
+  {
+    "type": "mcq",
+    "question": "In multi-objective optimization, what is a solution on the Pareto front?",
+    "options": [
+      "A. A solution where all objectives are simultaneously optimized",
+      "B. A solution where no objective can be improved without worsening another",
+      "C. A solution that dominates all other solutions",
+      "D. The single best compromise solution"
+    ],
+    "correct": "B",
+    "explanation": "A Pareto-optimal solution is one where no objective can be improved without worsening at least one other objective, representing a trade-off."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the 'upscaling problem' in hydrology refer to?",
+    "options": [
+      "A. Increasing temporal resolution of models",
+      "B. The mismatch between point-scale measurements and grid-scale effective parameters",
+      "C. Converting local models to global models",
+      "D. Increasing computational resources"
+    ],
+    "correct": "B",
+    "explanation": "The upscaling problem is the mismatch between point-scale measurable properties and grid-scale effective parameters that models require."
+  },
+  {
+    "type": "mcq",
+    "question": "Which method provides a formal posterior distribution of parameters?",
+    "options": [
+      "A. SCE-UA",
+      "B. Nelder-Mead",
+      "C. DREAM",
+      "D. Morris screening"
+    ],
+    "correct": "C",
+    "explanation": "DREAM generates samples from the posterior parameter distribution using Bayes' theorem, providing a full characterization of parameter uncertainty unlike single-point optimization methods."
+  },
+  {
+    "type": "mcq",
+    "question": "Noah-MP provides how many options for stomatal resistance?",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 6"
+    ],
+    "correct": "C",
+    "explanation": "Noah-MP offers multiple options for key processes, including four options for stomatal resistance, three for soil moisture factor, and two for runoff and groundwater."
+  },
+  {
+    "type": "mcq",
+    "question": "In the EnKF, how is the forecast uncertainty represented?",
+    "options": [
+      "A. By an analytical covariance matrix",
+      "B. By an ensemble of model states (50-500 parallel runs)",
+      "C. By a single best estimate with error bounds",
+      "D. By the parameter ranges"
+    ],
+    "correct": "B",
+    "explanation": "The EnKF runs N_e copies of the model simultaneously (typically 50-500), each with slightly perturbed states. The ensemble spread implicitly represents the forecast uncertainty."
+  },
+  {
+    "type": "mcq",
+    "question": "What percentage of observed discharge values did the 90% DREAM prediction uncertainty bounds contain for the Hernad calibration period?",
+    "options": [
+      "A. 72%",
+      "B. 81%",
+      "C. 87%",
+      "D. 95%"
+    ],
+    "correct": "C",
+    "explanation": "The 90% prediction uncertainty bounds from DREAM contained 87% of observed discharge in the calibration period and 81% in validation."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the fundamental limitation of local optimization methods like Nelder-Mead?",
+    "options": [
+      "A. They require too many function evaluations",
+      "B. They find local optima, not global ones",
+      "C. They cannot handle continuous parameters",
+      "D. They need gradient information"
+    ],
+    "correct": "B",
+    "explanation": "Local optimization methods converge to the nearest local optimum from their starting point, which may be far from the global optimum in the multimodal parameter spaces typical of hydrological models."
+  },
+  {
+    "type": "mcq",
+    "question": "The SCS Curve Number method has how many primary parameters?",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 4",
+      "D. 6"
+    ],
+    "correct": "A",
+    "explanation": "The SCS Curve Number method has one primary parameter (CN), making it very parsimonious despite being widely applied."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the key innovation of the shuffling step in SCE-UA?",
+    "options": [
+      "A. It speeds up computation",
+      "B. It allows information to flow between complexes, preventing premature convergence",
+      "C. It adds new random points",
+      "D. It eliminates the worst solutions"
+    ],
+    "correct": "B",
+    "explanation": "Shuffling recombines and repartitions points between complexes, allowing information exchange that prevents premature convergence to different local optima."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Hernad River's total catchment area upstream of Hidasnemeti?",
+    "options": [
+      "A. 930 kmÂ²",
+      "B. 2,300 kmÂ²",
+      "C. 5,300 kmÂ²",
+      "D. 10,500 kmÂ²"
+    ],
+    "correct": "C",
+    "explanation": "The total catchment area upstream of Hidasnemeti is approximately 5,300 kmÂ², of which roughly 80% lies in Slovakia."
+  },
+  {
+    "type": "mcq",
+    "question": "GLUE typically requires how many Monte Carlo samples?",
+    "options": [
+      "A. 100-1,000",
+      "B. 1,000-5,000",
+      "C. 10,000-1,000,000",
+      "D. 50-200"
+    ],
+    "correct": "C",
+    "explanation": "GLUE requires 10^4 to 10^6 random parameter sets from the prior distribution to adequately characterize the behavioral parameter space."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Oudin formula used for in the Hernad worked example?",
+    "options": [
+      "A. Computing streamflow",
+      "B. Estimating potential evapotranspiration from temperature",
+      "C. Calculating infiltration",
+      "D. Routing flood waves"
+    ],
+    "correct": "B",
+    "explanation": "The Oudin formula is a temperature-based method for estimating PET that requires only mean daily temperature and latitude, making it suitable for data-sparse applications."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical number of HRUs in a medium-sized SWAT catchment model?",
+    "options": [
+      "A. 5-10",
+      "B. 50-200",
+      "C. 500-1,000",
+      "D. 5,000-10,000"
+    ],
+    "correct": "B",
+    "explanation": "A typical SWAT model of a medium-sized catchment might contain 50 to 200 HRUs and 20 to 30 adjustable parameters at the HRU level."
+  },
+  {
+    "type": "mcq",
+    "question": "In Bayes' theorem for parameter estimation, p(Î¸|Y) represents what?",
+    "options": [
+      "A. The prior distribution",
+      "B. The likelihood function",
+      "C. The posterior distribution",
+      "D. The evidence"
+    ],
+    "correct": "C",
+    "explanation": "p(Î¸|Y) is the posterior distribution â€” what we want to know about the parameters after seeing the data. It combines the prior p(Î¸) with the likelihood p(Y|Î¸)."
+  },
+  {
+    "type": "mcq",
+    "question": "Multi-variable calibration uses what additional observations to reduce equifinality?",
+    "options": [
+      "A. Only discharge at more gauges",
+      "B. Observations beyond outlet discharge such as soil moisture, snow cover, and groundwater levels",
+      "C. Higher frequency discharge measurements",
+      "D. Longer time series of the same variable"
+    ],
+    "correct": "B",
+    "explanation": "Multi-variable calibration uses additional data types like remote sensing soil moisture, MODIS snow cover, and groundwater levels to provide independent constraints on different parameter groups."
+  },
+  {
+    "type": "mcq",
+    "question": "What was the validation KGE for the Hernad GR4J calibration?",
+    "options": [
+      "A. 0.58",
+      "B. 0.72",
+      "C. 0.76",
+      "D. 0.82"
+    ],
+    "correct": "C",
+    "explanation": "The Hernad GR4J model achieved a calibration KGE of 0.82 and a validation KGE of 0.76, representing a modest 7% drop indicating reasonable generalization."
+  },
+  {
+    "type": "mcq",
+    "question": "Which European flood forecasting system uses the LISFLOOD model?",
+    "options": [
+      "A. National Water Model",
+      "B. EFAS (European Flood Awareness System)",
+      "C. GloFAS only",
+      "D. HYDROINFO"
+    ],
+    "correct": "B",
+    "explanation": "EFAS uses the LISFLOOD distributed model driven by ECMWF weather forecasts, providing flood forecasts across Europe."
+  },
+  {
+    "type": "mcq",
+    "question": "The Clark unit hydrograph method requires which two parameters?",
+    "options": [
+      "A. Curve number and initial abstraction",
+      "B. Time of concentration and storage coefficient",
+      "C. Manning's n and channel slope",
+      "D. Baseflow and recession constant"
+    ],
+    "correct": "B",
+    "explanation": "The Clark unit hydrograph has two parameters: time of concentration (t_c) and storage coefficient (R)."
+  },
+  {
+    "type": "mcq",
+    "question": "In NSGA-II, what is 'crowding distance' used for?",
+    "options": [
+      "A. Measuring the distance between parameter bounds",
+      "B. Maintaining diversity along the Pareto front",
+      "C. Computing the gradient of the objective function",
+      "D. Determining convergence criteria"
+    ],
+    "correct": "B",
+    "explanation": "Within each non-dominated front, solutions are ranked by crowding distance â€” a measure of how far apart they are from neighbors in objective space â€” to maintain diversity along the Pareto front."
+  },
+  {
+    "type": "mcq",
+    "question": "What issue does George Box's famous quote 'All models are wrong, but some are useful' relate to?",
+    "options": [
+      "A. Parameter uncertainty",
+      "B. Model structural uncertainty",
+      "C. Data quality",
+      "D. Computational cost"
+    ],
+    "correct": "B",
+    "explanation": "The quote relates to model structural uncertainty â€” the errors arising from simplifications and approximations inherent in model equations. Even perfectly calibrated models cannot overcome structural deficiencies."
+  },
+  {
+    "type": "mcq",
+    "question": "HEPEX promotes what approach in operational flood forecasting?",
+    "options": [
+      "A. Deterministic single-model forecasts",
+      "B. Ensemble approaches for probabilistic forecasts",
+      "C. Manual expert judgment only",
+      "D. Statistical regression methods"
+    ],
+    "correct": "B",
+    "explanation": "HEPEX (Hydrological Ensemble Prediction Experiment) promotes ensemble approaches in operational flood forecasting, and EFAS produces ensemble forecasts driven by 51-member ECMWF ensemble weather predictions."
+  },
+  {
+    "type": "mcq",
+    "question": "Which parameter in GR4J controls the lag between rainfall and runoff?",
+    "options": [
+      "A. x1 (production store capacity)",
+      "B. x2 (groundwater exchange coefficient)",
+      "C. x3 (routing store capacity)",
+      "D. x4 (unit hydrograph time base)"
+    ],
+    "correct": "D",
+    "explanation": "x4, the time base of the unit hydrograph in days, controls the lag between rainfall and the resulting runoff response."
+  },
+  {
+    "type": "mcq",
+    "question": "The Levenberg-Marquardt algorithm interpolates between which two methods?",
+    "options": [
+      "A. Gradient descent and Nelder-Mead",
+      "B. Gauss-Newton and gradient descent",
+      "C. SCE-UA and DREAM",
+      "D. Bayesian and frequentist approaches"
+    ],
+    "correct": "B",
+    "explanation": "The Levenberg-Marquardt algorithm interpolates between the Gauss-Newton method (fast but unstable far from the solution) and gradient descent (stable but slow)."
+  },
+  {
+    "type": "mcq",
+    "question": "In the EnKF analysis step, why is a random perturbation added to the observation?",
+    "options": [
+      "A. To speed up convergence",
+      "B. To maintain correct ensemble spread",
+      "C. To improve the mean estimate",
+      "D. To reduce computational cost"
+    ],
+    "correct": "B",
+    "explanation": "Random perturbations Îµ^(i) are added to the observation in the EnKF update to maintain the correct spread of the ensemble; without them, the ensemble would collapse."
+  },
+  {
+    "type": "mcq",
+    "question": "Which calibration approach is the PEST-IES (Iterative Ensemble Smoother) method designed for?",
+    "options": [
+      "A. Lumped models with few parameters",
+      "B. Groundwater models with thousands of parameters",
+      "C. Real-time flood forecasting",
+      "D. Climate models"
+    ],
+    "correct": "B",
+    "explanation": "PEST-IES was developed by John Doherty and colleagues to push the boundary for groundwater models to handle thousands of parameters through iterative ensemble smoothing."
+  },
+  {
+    "type": "mcq",
+    "question": "CAMELS dataset covers how many catchments in the US?",
+    "options": [
+      "A. 222",
+      "B. 516",
+      "C. 671",
+      "D. 897"
+    ],
+    "correct": "C",
+    "explanation": "The CAMELS dataset (Catchment Attributes and MEteorology for Large-sample Studies) provides standardized data for 671 gauged catchments in the contiguous United States."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary advantage of signature-based calibration?",
+    "options": [
+      "A. It requires fewer model runs",
+      "B. It captures aspects of catchment behavior obscured in time-series metrics",
+      "C. It eliminates the need for discharge observations",
+      "D. It provides exact parameter values"
+    ],
+    "correct": "B",
+    "explanation": "Signature-based calibration adds hydrological signatures (flow duration curve, baseflow index, flashiness index) that capture aspects of catchment behavior obscured in standard time-series metrics."
+  },
+  {
+    "type": "mcq",
+    "question": "What was the GR4J x1 (production store) sensitivity rank in the Hernad Morris analysis?",
+    "options": [
+      "A. 1st (most influential)",
+      "B. 2nd",
+      "C. 3rd",
+      "D. 4th (least influential)"
+    ],
+    "correct": "A",
+    "explanation": "x1 had the highest Î¼* value (0.31) in the Morris analysis, ranking it as the most influential parameter because it controls the fundamental partitioning of precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "The OPERA network provides what kind of data across Europe?",
+    "options": [
+      "A. Soil moisture",
+      "B. Groundwater levels",
+      "C. Radar rainfall composites",
+      "D. Snow cover"
+    ],
+    "correct": "C",
+    "explanation": "OPERA (Operational Programme for the Exchange of Weather RAdar information) provides pan-European radar composites for rainfall estimation."
+  },
+  {
+    "type": "mcq",
+    "question": "In DREAM, the candidate point generation uses what technique borrowed from evolutionary computation?",
+    "options": [
+      "A. Genetic crossover",
+      "B. Differential evolution (perturbation from pairs of chains)",
+      "C. Simulated annealing",
+      "D. Particle swarm"
+    ],
+    "correct": "B",
+    "explanation": "DREAM generates candidate points by adding perturbations derived from the difference between randomly selected pairs of other chains â€” a strategy borrowed from differential evolution."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the recommended workflow order for sensitivity analysis and calibration?",
+    "options": [
+      "A. Calibrate first, then analyze sensitivity",
+      "B. Morris screening â†’ Sobol (if feasible) â†’ Calibration â†’ Validation",
+      "C. Run DREAM for all parameters simultaneously",
+      "D. Fix all parameters at defaults and only calibrate the most obvious one"
+    ],
+    "correct": "B",
+    "explanation": "The recommended workflow is: define parameter space, run Morris screening to identify important parameters, optionally run Sobol analysis, then calibrate using the sensitive parameters only, and finally validate."
+  },
+  {
+    "type": "mcq",
+    "question": "What does equifinality imply about reporting calibration results?",
+    "options": [
+      "A. Only the best NSE needs reporting",
+      "B. Uncertainty information should always accompany any calibration result",
+      "C. One should only report parameters, not metrics",
+      "D. Manual calibration is always better than automatic"
+    ],
+    "correct": "B",
+    "explanation": "Equifinality means multiple parameter sets fit equally well, so reporting a single 'best' result without uncertainty bounds is incomplete and potentially misleading."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS uses how many members in its ensemble weather forecast?",
+    "options": [
+      "A. 10",
+      "B. 21",
+      "C. 51",
+      "D. 100"
+    ],
+    "correct": "C",
+    "explanation": "EFAS produces ensemble forecasts driven by the 51-member ECMWF ensemble weather prediction system for probabilistic flood forecasting."
+  },
+  {
+    "type": "mcq",
+    "question": "Which GR4J parameter had the widest 90% credible interval in the Hernad DREAM analysis?",
+    "options": [
+      "A. x1 (production store capacity)",
+      "B. x2 (groundwater exchange coefficient)",
+      "C. x3 (routing store capacity)",
+      "D. x4 (unit hydrograph time base)"
+    ],
+    "correct": "B",
+    "explanation": "x2 had a wide 90% credible interval of [-0.5, 2.3] mm/day, crossing zero, indicating the data cannot definitively determine whether the catchment gains or loses groundwater."
+  },
+  {
+    "type": "mcq",
+    "question": "What information does the Kalman filter forecast step propagate?",
+    "options": [
+      "A. Only the state estimate",
+      "B. The state estimate and its error covariance",
+      "C. Only the observation error",
+      "D. The parameter values"
+    ],
+    "correct": "B",
+    "explanation": "The forecast step propagates both the state vector x_t^f and the error covariance matrix P_t^f forward in time using the model operator."
+  },
+  {
+    "type": "mcq",
+    "question": "How many USGS gauges does the US National Water Model assimilate?",
+    "options": [
+      "A. Approximately 500",
+      "B. Approximately 2,000",
+      "C. Approximately 8,000",
+      "D. Approximately 50,000"
+    ],
+    "correct": "C",
+    "explanation": "The US National Water Model uses nudging-based data assimilation to incorporate streamflow observations from approximately 8,000 USGS gauges."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the runoff ratio of the Hernad catchment upstream of Hidasnemeti?",
+    "options": [
+      "A. 0.12",
+      "B. 0.23",
+      "C. 0.38",
+      "D. 0.55"
+    ],
+    "correct": "C",
+    "explanation": "The Hernad catchment has a runoff ratio of approximately 0.38, which is reasonable for a mountainous catchment with moderate precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "What fundamental gap does model calibration attempt to close?",
+    "options": [
+      "A. The gap between model cost and budget",
+      "B. The gap between what models assume and what nature actually does",
+      "C. The gap between modelers and managers",
+      "D. The gap between different model structures"
+    ],
+    "correct": "B",
+    "explanation": "Calibration closes the fundamental gap between what models promise about water movement and what nature actually does, caused by unmeasurable effective parameters at model scales."
+  },
+  {
+    "type": "mcq",
+    "question": "Which KGE component being far from 1 indicates that the model gets timing wrong?",
+    "options": [
+      "A. Î² (bias ratio)",
+      "B. Î³ (variability ratio)",
+      "C. r (Pearson correlation)",
+      "D. None â€” KGE cannot diagnose timing"
+    ],
+    "correct": "C",
+    "explanation": "A low r (Pearson correlation) component in KGE indicates that the model gets the timing of hydrograph features wrong, while Î² addresses volume and Î³ addresses variability."
+  },
+  {
+    "type": "mcq",
+    "question": "The NSE formula uses what in its denominator?",
+    "options": [
+      "A. Sum of simulated values squared",
+      "B. Sum of squared differences between observed and mean observed",
+      "C. Total number of observations",
+      "D. Sum of absolute errors"
+    ],
+    "correct": "B",
+    "explanation": "The NSE denominator is Î£(Q_obs - QÌ„_obs)Â², the sum of squared deviations of observations from the mean, which represents the variance of the observed flow."
+  },
+  {
+    "type": "mcq",
+    "question": "What was the approximate total catchment area of the Hungarian section of the Hernad?",
+    "options": [
+      "A. 450 kmÂ²",
+      "B. 930 kmÂ²",
+      "C. 2,650 kmÂ²",
+      "D. 5,300 kmÂ²"
+    ],
+    "correct": "B",
+    "explanation": "The Hungarian section of the Hernad drains approximately 930 kmÂ², while the total area upstream of Hidasnemeti is approximately 5,300 kmÂ²."
+  },
+  {
+    "type": "mcq",
+    "question": "MOPEX and its successors have consistently found what about single versus multi-model approaches?",
+    "options": [
+      "A. A single best model outperforms ensembles",
+      "B. No single model is best everywhere and multi-model averages often outperform any individual model",
+      "C. Complex models always outperform simple ones",
+      "D. Uncalibrated models are usually sufficient"
+    ],
+    "correct": "B",
+    "explanation": "Multi-model comparisons consistently find that no single model is best everywhere and that multi-model averages often outperform any individual model."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary limitation of GLUE according to its critics?",
+    "options": [
+      "A. It is too computationally expensive",
+      "B. The use of subjective likelihood measures makes uncertainty estimates inconsistent with formal statistics",
+      "C. It cannot handle more than 5 parameters",
+      "D. It only works for groundwater models"
+    ],
+    "correct": "B",
+    "explanation": "Critics argue that GLUE's subjective likelihood measures and thresholds make resulting uncertainty estimates inconsistent with formal statistical theory."
+  },
+  {
+    "type": "mcq",
+    "question": "In data assimilation, what is the 'analysis' state?",
+    "options": [
+      "A. The raw observation",
+      "B. The model prediction before correction",
+      "C. The updated state estimate combining forecast and observation",
+      "D. The initial condition before the first time step"
+    ],
+    "correct": "C",
+    "explanation": "The analysis state x_t^a is the updated estimate produced by optimally combining the model forecast with the observation, weighted by their respective uncertainties."
+  },
+  {
+    "type": "mcq",
+    "question": "How many model runs did the DREAM analysis of the Hernad catchment require?",
+    "options": [
+      "A. 3,500",
+      "B. 10,000",
+      "C. 50,000",
+      "D. 100,000"
+    ],
+    "correct": "C",
+    "explanation": "The DREAM analysis used 5 Markov chains and 50,000 function evaluations, taking approximately 2 minutes due to GR4J's millisecond runtime."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the fundamental reason that NSE is biased toward peak flows?",
+    "options": [
+      "A. It uses logarithmic transformation",
+      "B. Squared errors give disproportionate weight to large deviations that occur at peaks",
+      "C. It ignores low flows entirely",
+      "D. It normalizes by peak flow"
+    ],
+    "correct": "B",
+    "explanation": "NSE uses squared errors (Q_obs - Q_sim)Â², which means large absolute errors at peak flows contribute disproportionately more than smaller errors at baseflow."
+  },
+  {
+    "type": "mcq",
+    "question": "GR4J was developed at which institution?",
+    "options": [
+      "A. University of Arizona",
+      "B. DHI Denmark",
+      "C. INRAE (formerly IRSTEA) in France",
+      "D. USGS"
+    ],
+    "correct": "C",
+    "explanation": "GR4J was developed at INRAE (formerly IRSTEA/CEMAGREF) in France by Perrin, Michel, and AndrÃ©assian."
+  },
+  {
+    "type": "mcq",
+    "question": "The HYDROINFO system provides real-time data for how many river sections in Hungary?",
+    "options": [
+      "A. 50",
+      "B. 98",
+      "C. 250",
+      "D. 500"
+    ],
+    "correct": "B",
+    "explanation": "The HYDROINFO system (hydroinfo.hu) provides real-time water levels and forecasts for 98 river sections in Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "What problem does multi-site calibration address?",
+    "options": [
+      "A. It reduces computational cost",
+      "B. It forces the model to reproduce the spatial pattern of flow generation",
+      "C. It eliminates the need for parameter bounds",
+      "D. It simplifies the model structure"
+    ],
+    "correct": "B",
+    "explanation": "Multi-site calibration uses discharge data from multiple gauging stations to force the model to reproduce spatial patterns of flow generation, providing much stronger constraints than outlet-only calibration."
+  },
+  {
+    "type": "mcq",
+    "question": "RMSE has what key weakness as a calibration metric?",
+    "options": [
+      "A. It is unitless",
+      "B. It is scale-dependent",
+      "C. It emphasizes low flows",
+      "D. It ignores timing"
+    ],
+    "correct": "B",
+    "explanation": "RMSE is scale-dependent â€” its value depends on the magnitude of the variable, making it difficult to compare model performance across catchments of different sizes."
+  },
+  {
+    "type": "mcq",
+    "question": "The Levenberg-Marquardt algorithm is most efficient for what type of objective function?",
+    "options": [
+      "A. Highly multimodal with many local optima",
+      "B. Well-behaved, nearly quadratic",
+      "C. Discontinuous and threshold-based",
+      "D. Flat with no gradient information"
+    ],
+    "correct": "B",
+    "explanation": "For well-behaved, nearly quadratic objective functions, Levenberg-Marquardt is highly efficient due to its gradient-based approach."
+  },
+  {
+    "type": "mcq",
+    "question": "Which data product provides pan-European radar composites?",
+    "options": [
+      "A. NEXRAD",
+      "B. OPERA",
+      "C. MRMS",
+      "D. IMERG"
+    ],
+    "correct": "B",
+    "explanation": "OPERA (Operational Programme for the Exchange of Weather RAdar information) provides pan-European radar composites, while NEXRAD and MRMS are US-specific."
+  },
+  {
+    "type": "true_false",
+    "question": "An NSE of 1.0 indicates a perfect match between simulated and observed discharge.",
+    "correct": true,
+    "explanation": "NSE = 1.0 means the sum of squared errors between observed and simulated is zero, indicating perfect agreement."
+  },
+  {
+    "type": "true_false",
+    "question": "Calibration is considered an admission of model failure.",
+    "correct": false,
+    "explanation": "Calibration is an acknowledgment that models operate at scales where direct measurement of effective properties is impossible, not an admission of failure."
+  },
+  {
+    "type": "true_false",
+    "question": "The Nelder-Mead simplex method is the same as the simplex method of linear programming.",
+    "correct": false,
+    "explanation": "The text explicitly warns not to confuse the Nelder-Mead simplex method (a geometric search in parameter space) with the simplex method of linear programming."
+  },
+  {
+    "type": "true_false",
+    "question": "GR4J has been shown to perform competitively with far more complex models in large-sample studies.",
+    "correct": true,
+    "explanation": "Despite having only four parameters, GR4J has been shown to perform competitively with far more complex models in large-sample hydrology studies."
+  },
+  {
+    "type": "true_false",
+    "question": "SCE-UA returns a probability distribution of parameters rather than a single best set.",
+    "correct": false,
+    "explanation": "SCE-UA returns a single 'best' parameter set that minimizes or maximizes the objective function. It does not provide uncertainty information like DREAM does."
+  },
+  {
+    "type": "true_false",
+    "question": "The KGE metric was proposed by Nash and Sutcliffe in 1970.",
+    "correct": false,
+    "explanation": "KGE was proposed by Gupta et al. in 2009. The Nash-Sutcliffe Efficiency (NSE) was the metric introduced by Nash and Sutcliffe in 1970."
+  },
+  {
+    "type": "true_false",
+    "question": "Parameters calibrated under historical conditions may not apply under future conditions due to non-stationarity.",
+    "correct": true,
+    "explanation": "Climate change, land use change, and water management interventions alter catchment behavior over time, meaning historically calibrated parameters may not hold under future conditions."
+  },
+  {
+    "type": "true_false",
+    "question": "Manual calibration provides formal estimates of parameter uncertainty.",
+    "correct": false,
+    "explanation": "Manual calibration is non-reproducible and provides no formal estimate of parameter uncertainty. Bayesian methods like DREAM are needed for formal uncertainty quantification."
+  },
+  {
+    "type": "true_false",
+    "question": "The Morris method is designed to precisely rank parameter importance rather than screen for negligible vs. important parameters.",
+    "correct": false,
+    "explanation": "The Morris method is a screening technique designed to identify which parameters are important and which are negligible. It is not designed to rank parameters precisely or quantify interactions in detail."
+  },
+  {
+    "type": "true_false",
+    "question": "A positive x2 value in the GR4J model indicates the catchment receives water from deep groundwater.",
+    "correct": true,
+    "explanation": "In GR4J, x2 is the groundwater exchange coefficient; positive values indicate a net gain from deep groundwater, while negative values indicate loss."
+  },
+  {
+    "type": "true_false",
+    "question": "SWAT was developed by the US Army Corps of Engineers.",
+    "correct": false,
+    "explanation": "SWAT was developed by the USDA Agricultural Research Service. HEC-HMS was developed by the US Army Corps of Engineers."
+  },
+  {
+    "type": "true_false",
+    "question": "The curse of dimensionality means that a model with 50 parameters would require 10^50 evaluations for exhaustive search at 10 values per parameter.",
+    "correct": true,
+    "explanation": "Exhaustive search at 10 values per parameter requires 10^n evaluations, which for n=50 is 10^50 â€” a number larger than the atoms in the observable universe."
+  },
+  {
+    "type": "true_false",
+    "question": "Equifinality can be completely eliminated through careful model design.",
+    "correct": false,
+    "explanation": "Equifinality cannot be eliminated entirely â€” it is intrinsic to the ill-posed nature of hydrological inverse problems â€” but it can be reduced through multi-variable, multi-site, and signature-based calibration."
+  },
+  {
+    "type": "true_false",
+    "question": "The Ensemble Kalman Filter requires linearization of the model equations.",
+    "correct": false,
+    "explanation": "The EnKF solves the nonlinearity problem by representing uncertainty with an ensemble of model states rather than propagating covariance through linearized equations."
+  },
+  {
+    "type": "true_false",
+    "question": "DREAM uses multiple Markov chains that explore the parameter space simultaneously.",
+    "correct": true,
+    "explanation": "DREAM uses multiple interacting Markov chains with differential evolution proposals to explore parameter space and sample from the posterior distribution."
+  },
+  {
+    "type": "true_false",
+    "question": "The NSE metric emphasizes low flows because it uses squared errors.",
+    "correct": false,
+    "explanation": "NSE is actually biased toward high flows because squared errors give disproportionate weight to peak values. Log-NSE is used to emphasize low flows."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza River basin spans five countries.",
+    "correct": true,
+    "explanation": "The Tisza River basin drains across Ukraine, Romania, Slovakia, Hungary, and Serbia."
+  },
+  {
+    "type": "true_false",
+    "question": "A substantial drop in performance from calibration to validation always indicates the model is correct but the validation data is faulty.",
+    "correct": false,
+    "explanation": "A substantial performance drop suggests overfitting â€” the model has learned noise specific to the calibration period rather than underlying hydrological processes."
+  },
+  {
+    "type": "true_false",
+    "question": "Conceptual parameters like GR4J's x1-x4 can be directly measured in the field.",
+    "correct": false,
+    "explanation": "Conceptual parameters exist only within the structure of a particular model and have no direct physical analog. They can only be inferred from calibration."
+  },
+  {
+    "type": "true_false",
+    "question": "The SCS Curve Number method can reproduce infiltration excess runoff that occurs during high-intensity, short-duration storms.",
+    "correct": false,
+    "explanation": "The SCS method lumps daily rainfall and does not resolve sub-daily intensity, so it cannot reproduce intensity-dependent infiltration excess runoff."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS flood notifications are routinely used by the Hungarian Water Forecasting Service.",
+    "correct": true,
+    "explanation": "EFAS flood notifications are routinely used by the Hungarian Water Forecasting Service as complementary information alongside their national models."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pareto front contains only dominated solutions.",
+    "correct": false,
+    "explanation": "The Pareto front contains non-dominated solutions â€” those where no objective can be improved without worsening another. Dominated solutions lie behind the front."
+  },
+  {
+    "type": "true_false",
+    "question": "A KGE value above 0.0 indicates the model outperforms the naive benchmark of using the mean and standard deviation of observations.",
+    "correct": true,
+    "explanation": "A KGE above 0.0 indicates the model outperforms using the mean and standard deviation of observations as a naive benchmark."
+  },
+  {
+    "type": "true_false",
+    "question": "PEST uses gradient-based (Gauss-Marquardt-Levenberg) methods for MODFLOW calibration because groundwater modelers typically have reasonable prior parameter estimates.",
+    "correct": true,
+    "explanation": "PEST relies primarily on gradient-based methods because groundwater modelers typically have reasonable prior estimates from geological surveys and pumping tests."
+  },
+  {
+    "type": "true_false",
+    "question": "Log-NSE can handle zero flow values.",
+    "correct": false,
+    "explanation": "Log-NSE cannot handle zero flows because the logarithm of zero is undefined. This is a weakness of the log-NSE metric."
+  },
+  {
+    "type": "true_false",
+    "question": "The OVF hydrographic database (data.vizugy.hu) has been freely available since 2024.",
+    "correct": true,
+    "explanation": "The OVF data portal was opened freely in July 2024, providing water level, discharge, and groundwater data in machine-readable formats."
+  },
+  {
+    "type": "true_false",
+    "question": "The Morris method requires more model evaluations than the Sobol method for the same number of parameters.",
+    "correct": false,
+    "explanation": "Morris requires r Ã— (n+1) evaluations (typically 200-1,000), while Sobol requires N Ã— (2n+2) evaluations (typically 10^4 to 10^6), making Morris far cheaper."
+  },
+  {
+    "type": "true_false",
+    "question": "Different objective functions lead to the same optimal parameter sets.",
+    "correct": false,
+    "explanation": "Different metrics weight different aspects of the hydrograph differently, leading to different 'optimal' parameter sets. This is why multi-objective calibration exists."
+  },
+  {
+    "type": "true_false",
+    "question": "An experienced modeler can use the shape of the hydrograph to diagnose which process is being misrepresented in manual calibration.",
+    "correct": true,
+    "explanation": "Manual calibration allows diagnostic reasoning â€” when the simulated hydrograph rises too quickly, the modeler knows to adjust surface storage or runoff coefficients, not baseflow parameters."
+  },
+  {
+    "type": "true_false",
+    "question": "Sensitivity analysis should be performed after calibration is complete.",
+    "correct": false,
+    "explanation": "Sensitivity analysis should precede calibration to identify which parameters matter most, allowing insensitive parameters to be fixed and reducing the dimensionality of the optimization."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hernad River originates in Hungary.",
+    "correct": false,
+    "explanation": "The Hernad (Hornad in Slovak) originates in the Slovak Ore Mountains near Kosice, Slovakia. Roughly 80% of its catchment lies in Slovakia."
+  },
+  {
+    "type": "true_false",
+    "question": "Multi-model ensembles in hydrology often outperform any individual model.",
+    "correct": true,
+    "explanation": "Multi-model comparisons consistently find that multi-model averages often outperform any individual model, as different structural assumptions compensate for each other."
+  },
+  {
+    "type": "true_false",
+    "question": "Data assimilation originated in hydrology before being adopted by meteorology.",
+    "correct": false,
+    "explanation": "Data assimilation originated in meteorology, where initializing weather forecast models drove decades of development. Its adoption in hydrology accelerated since the mid-2000s."
+  },
+  {
+    "type": "true_false",
+    "question": "NSGA-II uses non-dominated sorting to rank candidate solutions.",
+    "correct": true,
+    "explanation": "NSGA-II ranks solutions into fronts where the first front contains all non-dominated solutions, the second contains solutions dominated only by the first front, and so on."
+  },
+  {
+    "type": "true_false",
+    "question": "The 90% DREAM prediction uncertainty bounds for the Hernad validation period contained exactly 90% of observed values.",
+    "correct": false,
+    "explanation": "The bounds contained 81% of observed values in the validation period (vs. 87% in calibration), indicating slight underconfidence that reflects unaccounted model structural uncertainty."
+  },
+  {
+    "type": "true_false",
+    "question": "State variables in a hydrological model change over time while parameters remain fixed during simulation.",
+    "correct": true,
+    "explanation": "State variables (soil moisture, snowpack depth, groundwater head) change over time as the model runs, while parameters (porosity, conductivity) are typically fixed before simulation begins."
+  },
+  {
+    "type": "true_false",
+    "question": "The Sobol total-effect index can be smaller than the first-order index for the same parameter.",
+    "correct": false,
+    "explanation": "S_Ti â‰¥ S_i always holds, because the total-effect index includes all interactions involving parameter i in addition to its direct effect."
+  },
+  {
+    "type": "true_false",
+    "question": "The effective hydraulic conductivity needed by a model grid cell is the same as a point measurement taken within that cell.",
+    "correct": false,
+    "explanation": "The effective K_s that a model needs is a conceptual quantity that exists only in the context of the model equations and their spatial scale â€” not the same as any point measurement."
+  },
+  {
+    "type": "true_false",
+    "question": "The recommended practical calibration workflow includes defining parameter bounds based on physical reasoning.",
+    "correct": true,
+    "explanation": "The first step is to define the parameter space with physical bounds within which each parameter is meaningful, informed by soil surveys, land use maps, and literature."
+  },
+  {
+    "type": "true_false",
+    "question": "The CAMELS-GB dataset covers 671 catchments in Great Britain.",
+    "correct": true,
+    "explanation": "CAMELS-GB covers 671 catchments in Great Britain, matching the number in the original US CAMELS dataset."
+  },
+  {
+    "type": "true_false",
+    "question": "A parameter with a high Ïƒ/Î¼* ratio in Morris analysis indicates purely linear behavior.",
+    "correct": false,
+    "explanation": "A high Ïƒ/Î¼* ratio indicates nonlinear effects or interactions with other parameters, not linear behavior. Low Ïƒ/Î¼* would suggest more linear behavior."
+  },
+  {
+    "type": "true_false",
+    "question": "Adding more processes and parameters to a model always improves identifiability.",
+    "correct": false,
+    "explanation": "Adding parameters increases the calibration problem dimensionality while identifiability requires enough information to determine all parameters. This tension is the modeler's dilemma of complexity vs. identifiability."
+  },
+  {
+    "type": "true_false",
+    "question": "PBIAS is insensitive to timing errors in the hydrograph.",
+    "correct": true,
+    "explanation": "PBIAS measures only the total volume bias between observed and simulated flows and is insensitive to when those flows occur â€” timing errors are not captured."
+  },
+  {
+    "type": "true_false",
+    "question": "Noah-MP land surface parameters are derived entirely from calibration.",
+    "correct": false,
+    "explanation": "Noah-MP parameters are largely derived from lookup tables keyed to land use and soil texture classification, with calibration used to adjust values that don't represent actual local conditions."
+  },
+  {
+    "type": "true_false",
+    "question": "In data assimilation, when the model is uncertain and the observation is precise, the Kalman gain is large.",
+    "correct": true,
+    "explanation": "When model uncertainty (P_t^f) is large and observation error (R) is small, the Kalman gain K_t is large, shifting the analysis strongly toward the observation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hernad catchment's positive x2 parameter suggests karstic geology in the headwaters.",
+    "correct": true,
+    "explanation": "The positive x2 (groundwater exchange) indicates net gain from deep groundwater, consistent with karstic limestone formations in the Slovak Ore Mountains that channel deep groundwater to the surface."
+  },
+  {
+    "type": "true_false",
+    "question": "Regionalization approaches perfectly transfer calibrated parameters to ungauged catchments.",
+    "correct": false,
+    "explanation": "Traditional regionalization works reasonably but imperfectly because relationships between catchment attributes and effective model parameters are weak and nonlinear."
+  },
+  {
+    "type": "true_false",
+    "question": "DREAM can detect non-identifiability in model parameters.",
+    "correct": true,
+    "explanation": "DREAM's posterior distributions reveal which parameters are well-constrained and which have wide credible intervals, indicating non-identifiability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Nash-Sutcliffe Efficiency was introduced by Nash and Sutcliffe in _____.",
+    "correct": "1970",
+    "explanation": "Nash and Sutcliffe published their seminal paper on river flow forecasting through conceptual models in the Journal of Hydrology in 1970."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The mismatch between point-scale measurable properties and grid-scale effective parameters is called the _____ problem.",
+    "correct": "upscaling",
+    "explanation": "The upscaling (or support) problem refers to the fundamental mismatch between point measurements and the effective parameter values needed at model grid scale."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The SCE-UA algorithm was published in _____.",
+    "correct": "1992",
+    "explanation": "Duan, Sorooshian, and Gupta published the SCE-UA algorithm in Water Resources Research in 1992."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Keith Beven published the 'manifesto for the _____ thesis' articulating the problem of multiple parameter sets giving equally good results.",
+    "correct": "equifinality",
+    "explanation": "Beven's 1996 paper titled 'A manifesto for the equifinality thesis' formalized the recognition that many different parameter sets can produce equally acceptable simulations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DREAM algorithm stands for DiffeRential Evolution Adaptive _____.",
+    "correct": "Metropolis",
+    "explanation": "DREAM (DiffeRential Evolution Adaptive Metropolis) combines differential evolution proposals with Metropolis acceptance criteria for Bayesian sampling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GR4J stands for modele du Genie Rural a 4 parametres _____.",
+    "correct": "Journalier",
+    "explanation": "GR4J is the daily (Journalier) version of the four-parameter Genie Rural model developed at INRAE in France."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NAM model was developed by _____ in Denmark.",
+    "correct": "DHI",
+    "explanation": "NAM (Nedbor-Afstromnings-Model) was developed by DHI in Denmark as the rainfall-runoff component of the MIKE software suite."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ method partitions parameters into three groups: negligible, large linear, and nonlinear/interactive effects.",
+    "correct": "Morris",
+    "explanation": "The Morris Elementary Effects method screens parameters into three groups based on their Î¼* and Ïƒ statistics."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NSGA-II stands for Non-dominated Sorting _____ Algorithm II.",
+    "correct": "Genetic",
+    "explanation": "NSGA-II is the Non-dominated Sorting Genetic Algorithm II, using genetic algorithm operators (selection, crossover, mutation) for multi-objective optimization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The set of parameter combinations for which no objective can be improved without worsening another is called the _____ front.",
+    "correct": "Pareto",
+    "explanation": "The Pareto front (or Pareto optimal set) represents trade-off solutions where improving any one objective necessarily degrades at least one other."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The PEST software suite was developed by _____.",
+    "correct": "John Doherty",
+    "explanation": "PEST (Parameter ESTimation) was developed by John Doherty and has become the standard tool for MODFLOW calibration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Kalman filter, the _____ gain determines how much weight to give the observation versus the model forecast.",
+    "correct": "Kalman",
+    "explanation": "The Kalman gain K_t is the key quantity that balances the relative trust between the model forecast and the observation based on their respective uncertainties."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Ensemble Kalman Filter was proposed by _____ in 1994.",
+    "correct": "Geir Evensen",
+    "explanation": "Geir Evensen proposed the EnKF in 1994 to handle nonlinear systems by replacing covariance matrices with ensembles of model states."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SWAT-CUP implements the _____ algorithm for sequential uncertainty fitting.",
+    "correct": "SUFI-2",
+    "explanation": "SWAT-CUP implements SUFI-2 (Sequential Uncertainty Fitting version 2), along with GLUE, ParaSol, and MCMC algorithms."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza River basin drains approximately _____ kmÂ² across five countries.",
+    "correct": "157,000",
+    "explanation": "The Tisza basin covers approximately 157,000 kmÂ² across Ukraine, Romania, Slovakia, Hungary, and Serbia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Morris method, the mean of absolute elementary effects is denoted _____.",
+    "correct": "Î¼*",
+    "explanation": "Î¼* (mu-star) is the mean of absolute values of elementary effects for a parameter, indicating its overall importance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sobol first-order index S_i of 0.3 means that _____% of output variability is directly attributable to uncertainty in that parameter.",
+    "correct": "30",
+    "explanation": "A first-order Sobol index of 0.3 means 30% of the output variance is directly attributable to that parameter alone."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad River is known as _____ in Slovak.",
+    "correct": "Hornad",
+    "explanation": "The Hernad is a transboundary river known as Hornad in Slovak, originating in the Slovak Ore Mountains."
+  },
+  {
+    "type": "fill_blank",
+    "question": "LamaH-CE covers _____ catchments in Central Europe.",
+    "correct": "859",
+    "explanation": "LamaH-CE (Large-Sample Data for Hydrology in Central Europe) provides data for 859 catchments across Austria, Germany, Czech Republic, Switzerland, and neighboring countries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Kling-Gupta Efficiency was proposed by _____ et al. in 2009.",
+    "correct": "Gupta",
+    "explanation": "KGE was proposed by Gupta, Kling, Yilmaz, and Martinez in their 2009 paper on decomposition of NSE performance criteria."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Bayes' theorem, p(Y|Î¸) is called the _____ function.",
+    "correct": "likelihood",
+    "explanation": "The likelihood function p(Y|Î¸) quantifies how well each parameter set Î¸ fits the observed data Y."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad catchment GR4J calibration achieved a calibration KGE of _____.",
+    "correct": "0.82",
+    "explanation": "The Hernad GR4J model achieved a calibration KGE of 0.82, decomposed into correlation 0.89, bias ratio 1.03, and variability ratio 0.94."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EFAS uses the _____ distributed hydrological model for flood forecasting across Europe.",
+    "correct": "LISFLOOD",
+    "explanation": "EFAS uses the LISFLOOD distributed model driven by ECMWF weather forecasts to provide flood forecasts across Europe."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The standard Kalman filter was developed by Rudolf Kalman in _____.",
+    "correct": "1960",
+    "explanation": "Rudolf Kalman published his seminal paper on the Kalman filter in 1960 for linear systems with Gaussian errors."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In hydrology, parameters that exist only within the structure of a model and have no physical analog are called _____ parameters.",
+    "correct": "conceptual",
+    "explanation": "Conceptual parameters like GR4J's exchange coefficient or NAM's interflow time constant cannot be measured and have meaning only within their specific model context."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-HMS was developed by the US _____ Corps of Engineers.",
+    "correct": "Army",
+    "explanation": "HEC-HMS (Hydrologic Engineering Center's Hydrologic Modeling System) was developed by the US Army Corps of Engineers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Moriasi et al. (2007), NSE values above _____ are considered 'satisfactory' for daily streamflow.",
+    "correct": "0.5",
+    "explanation": "Moriasi et al. guidelines classify NSE > 0.5 as satisfactory, > 0.65 as good, and > 0.75 as very good."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Sobol method, the difference S_Ti - S_i quantifies the contribution of _____ involving parameter i.",
+    "correct": "interactions",
+    "explanation": "S_Ti - S_i quantifies the interaction effects involving parameter i. If S_Ti â‰ˆ S_i, the parameter acts independently."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad catchment's average annual precipitation for the calibration period was approximately _____ mm.",
+    "correct": "680",
+    "explanation": "Seven precipitation stations spanning the elevation gradient yield a catchment-average annual precipitation of approximately 680 mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Data assimilation combines model _____ with observations to produce improved state estimates.",
+    "correct": "forecasts",
+    "explanation": "Data assimilation systematically combines model forecasts (predictions) with observations to produce analysis states that are better than either source alone."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The standard loss function that treats all discharge values equally in neural network training is _____.",
+    "correct": "MSE",
+    "explanation": "Mean Squared Error (MSE) treats all discharge values equally, which means the model optimizes primarily for low and moderate flows."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The CAMELS dataset stands for Catchment Attributes and _____ for Large-sample Studies.",
+    "correct": "Meteorology",
+    "explanation": "CAMELS (Catchment Attributes and MEteorology for Large-sample Studies) was published by Addor et al. in 2017 for the US."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The OVF operates approximately _____ groundwater monitoring wells across Hungary.",
+    "correct": "2,500",
+    "explanation": "The OVF maintains approximately 2,500 groundwater monitoring wells in addition to about 500 surface water monitoring stations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GLUE stands for Generalized _____ Uncertainty Estimation.",
+    "correct": "Likelihood",
+    "explanation": "GLUE (Generalized Likelihood Uncertainty Estimation) was developed by Beven and Binley to embrace equifinality in parameter estimation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the SCE-UA default settings, each complex contains m = 2n + _____ points, where n is the number of parameters.",
+    "correct": "1",
+    "explanation": "The default SCE-UA configuration uses m = 2n + 1 points per complex, where n is the number of parameters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODFLOW is a modular _____ flow model developed by the USGS.",
+    "correct": "groundwater",
+    "explanation": "MODFLOW is the USGS modular groundwater flow model that discretizes the aquifer system into a three-dimensional grid of cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Hernad DREAM analysis, the 90% credible interval for x1 was [290, _____] mm.",
+    "correct": "420",
+    "explanation": "x1 was well constrained with a 90% credible interval of [290, 420] mm, spanning a factor of only 1.4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The difference between static calibration and data assimilation is analogous to tuning a piano before a concert versus having a musician who adjusts their playing in response to what they _____.",
+    "correct": "hear",
+    "explanation": "This analogy captures how data assimilation incorporates real-time observations dynamically, unlike static calibration that fixes parameters before simulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The process of adding penalty terms to the objective function to favor certain parameter properties is called _____.",
+    "correct": "regularization",
+    "explanation": "Regularization adds penalty terms that favor desirable properties like spatial smoothness or proximity to prior estimates, as implemented in PEST's Tikhonov regularization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian Water Research Institute, now part of the General Directorate of Water Management, was known by the acronym _____.",
+    "correct": "VITUKI",
+    "explanation": "VITUKI was the Hungarian Water Research Institute, which has contributed to numerous SWAT applications on Hungarian catchments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hydrological model's _____ variables describe the current condition of the system, such as soil moisture and snowpack depth.",
+    "correct": "state",
+    "explanation": "State variables (soil moisture, snowpack depth, groundwater head) describe the current condition and change over time during simulation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EnKF typically uses _____ to _____ ensemble members.",
+    "correct": "50 to 500",
+    "explanation": "The Ensemble Kalman Filter typically runs 50 to 500 parallel model copies, each with slightly perturbed states, to represent forecast uncertainty."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the GR4J parameter taxonomy, the SCS _____ number is an example of an empirical parameter.",
+    "correct": "curve",
+    "explanation": "The SCS curve number is an empirical parameter derived from fitting equations to data, with values from engineering handbooks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WFD stands for the Water _____ Directive.",
+    "correct": "Framework",
+    "explanation": "The EU Water Framework Directive requires member states to characterize water bodies, assess pressures, and implement programs of measures."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian Meteorological Service is abbreviated as _____.",
+    "correct": "OMSZ",
+    "explanation": "OMSZ (Orszagos Meteorologiai Szolgalat) is Hungary's national meteorological service, operating radar stations and weather data networks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sobol analysis computational cost using the Saltelli scheme is N Ã— (2n + _____) model evaluations.",
+    "correct": "2",
+    "explanation": "The Saltelli sampling scheme for Sobol analysis requires N Ã— (2n + 2) evaluations, where N is the base sample size and n the number of parameters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the GR4J model, x3 controls the one-day-ahead maximum capacity of the _____ store.",
+    "correct": "routing",
+    "explanation": "x3 is the one-day-ahead maximum capacity of the routing store (mm), which controls the direct flow component and peak flow response."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GR4J model has a _____ -store conceptual structure consisting of a production store and a routing store.",
+    "correct": "two",
+    "explanation": "GR4J uses a two-store conceptual structure: a production store for soil moisture accounting and a routing store for flow generation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of equifinality in hydrological model calibration and describe at least three strategies to reduce it.",
+    "correct": "Equifinality is the phenomenon where multiple, sometimes radically different parameter sets produce virtually indistinguishable model outputs. It arises because outlet discharge integrates all catchment processes, parameter interactions create compensating effects, and the data is insufficient to resolve the model's internal workings. Strategies to reduce equifinality include: (1) multi-variable calibration using soil moisture, snow cover, or groundwater levels in addition to discharge; (2) multi-site calibration using data from internal gauges to constrain spatial patterns; (3) regularization adding penalty terms favoring physically plausible parameters; and (4) signature-based calibration targeting flow duration curves, baseflow index, and other hydrological signatures.",
+    "explanation": "Equifinality is one of the most fundamental challenges in calibration, with major implications for uncertainty quantification and decision-making."
+  },
+  {
+    "type": "essay",
+    "question": "Compare and contrast SCE-UA and DREAM as calibration methods, discussing their strengths, weaknesses, and appropriate use cases.",
+    "correct": "SCE-UA is a global optimization algorithm that returns a single best parameter set through competitive evolution and complex shuffling, requiring 5,000-20,000 model evaluations. Its strength is consistently finding near-optimal solutions with minimal configuration. DREAM is a Bayesian sampler that produces the full posterior distribution of parameters using multiple interacting Markov chains, requiring 50,000-500,000 evaluations. DREAM's strength is formal uncertainty quantification including parameter correlations and prediction bounds. SCE-UA is appropriate when a single best estimate is needed quickly; DREAM is appropriate when uncertainty quantification is essential for decision-making. Both treat the model as a black box without diagnostic reasoning.",
+    "explanation": "Understanding when to use optimization versus Bayesian inference is a key calibration skill."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the Kalman gain in data assimilation and explain how the Ensemble Kalman Filter extends the standard Kalman filter to nonlinear hydrological systems.",
+    "correct": "The Kalman gain determines the optimal weighting between the model forecast and the observation when updating the state estimate. When model uncertainty is high and observations are precise, the gain is large and the analysis shifts toward the observation. The standard Kalman filter requires linear model equations and propagation of a covariance matrix, which is impractical for nonlinear hydrological models. The EnKF replaces the covariance matrix with an ensemble of 50-500 parallel model runs, each with perturbed states. The ensemble spread implicitly represents forecast uncertainty without linearization, and each member is updated individually using the Kalman gain computed from ensemble statistics.",
+    "explanation": "The EnKF is the workhorse of operational hydrological data assimilation, making it essential to understand its relationship to the original Kalman filter."
+  },
+  {
+    "type": "essay",
+    "question": "Why is the choice of objective function never neutral in hydrological model calibration? Illustrate with examples of how different metrics lead to different calibrated models.",
+    "correct": "Different objective functions weight different aspects of the hydrograph differently, leading to different optimal parameter sets. NSE, dominated by squared errors, prioritizes peak flow accuracy. Log-NSE emphasizes baseflow reproduction by compressing the high-flow range. PBIAS focuses on volume accuracy but ignores timing. KGE decomposes into correlation (timing), bias (volume), and variability (spread). A flood warning model should optimize peak-sensitive metrics, a water supply model should emphasize volume, and an ecological flow model should focus on low flows. Multi-objective calibration with NSGA-II addresses this by finding the Pareto front of trade-off solutions.",
+    "explanation": "The non-neutrality of objective functions is a core calibration concept with direct implications for model application."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why sensitivity analysis should precede calibration and describe the practical differences between the Morris screening method and Sobol variance decomposition.",
+    "correct": "Sensitivity analysis identifies which parameters most influence model outputs, allowing insensitive parameters to be fixed at defaults. This reduces calibration dimensionality and improves optimization efficiency. Morris screening uses elementary effects along random trajectories, requiring rÃ—(n+1) evaluations (typically 200-1,000), and partitions parameters into negligible, linear, and nonlinear/interactive groups. It is qualitative and best for identifying which parameters to calibrate. Sobol analysis decomposes total output variance into first-order (direct) and total-effect (including interactions) contributions, requiring NÃ—(2n+2) evaluations (typically 10,000-1,000,000). It is quantitative but far more expensive. The practical workflow uses Morris first to screen, then Sobol on the subset of important parameters if budget allows.",
+    "explanation": "The complementary roles of screening and quantitative sensitivity analysis form an efficient workflow for calibration studies."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the four major limits of traditional calibration methods and explain how machine learning and AI approaches address each one.",
+    "correct": "The four limits are: (1) Computational cost â€” Bayesian uncertainty analysis with DREAM requires 100,000+ runs, prohibitive for complex models. ML surrogates can emulate expensive models. (2) High dimensionality â€” distributed models have hundreds of parameters that overwhelm traditional optimization. Deep learning can learn relationships directly without explicit parameterization. (3) Transfer to ungauged catchments â€” traditional regionalization poorly relates parameters to catchment attributes. Transfer learning from large-sample datasets provides better ungauged predictions. (4) Non-stationarity â€” fixed parameters cannot represent evolving catchment behavior. AI agents can detect changes and recommend recalibration. These approaches extend rather than replace classical methods.",
+    "explanation": "Understanding these limits provides essential motivation for the ML and agentic AI approaches covered in subsequent chapters."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the GR4J model's four parameters, their physical roles, and why GR4J is often used as a teaching and benchmarking tool in calibration studies.",
+    "correct": "GR4J has four parameters: x1 (production store capacity, mm) controls soil moisture accounting and the precipitation-runoff partition; x2 (groundwater exchange coefficient, mm/day) controls gains or losses to regional groundwater; x3 (routing store capacity, mm) controls the speed of flow routing and peak magnitude; and x4 (unit hydrograph time base, days) controls the lag between rainfall and runoff. GR4J is ideal for teaching because its parsimony (only 4 parameters) makes the calibration problem tractable while still capturing essential processes. In benchmarking, it performs competitively with far more complex models, demonstrating that adding complexity does not guarantee better predictions.",
+    "explanation": "GR4J's simplicity makes it an excellent vehicle for illustrating all core calibration concepts without high-dimensional complications."
+  },
+  {
+    "type": "essay",
+    "question": "How does multi-objective calibration using NSGA-II work, and why is it preferable to single-objective optimization for many practical applications?",
+    "correct": "NSGA-II maintains a population of candidate solutions that evolve through genetic algorithm operators (selection, crossover, mutation). Solutions are ranked by non-dominated sorting â€” the first front contains solutions where no other is better on all objectives. Within each front, crowding distance maintains diversity. The result is a Pareto front showing trade-offs between objectives (e.g., NSE vs. PBIAS). This is preferable to single-objective optimization because no single metric captures all aspects of model performance. A flood modeler needs peak accuracy while a water supply modeler needs volume accuracy â€” the Pareto front lets each select the appropriate trade-off for their application.",
+    "explanation": "Multi-objective calibration explicitly addresses the fact that different applications demand different performance characteristics from the same model."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the three categories in the parameter taxonomy (measurable physical, empirical, and conceptual) and discuss the implications of each category for setting calibration bounds.",
+    "correct": "Measurable physical parameters (like hydraulic conductivity and porosity) have clear physical definitions and can be measured directly, though at different scales. Calibration bounds should reflect measured ranges from field surveys. Empirical parameters (like Manning's n and SCS curve number) come from handbooks and fitted relationships. Bounds come from tabulated ranges for specific conditions. Conceptual parameters (like GR4J's x1-x4 or NAM's CKIF) exist only within a specific model and cannot be measured. Bounds are theoretical limits with no external benchmark. A calibrated physical parameter outside any known range flags model structural problems, while a conceptual parameter has no such external check.",
+    "explanation": "This taxonomy determines how modelers should interpret calibrated values and set appropriate bounds."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the data assimilation challenge for the Tisza basin in Hungary, including the role of upstream transboundary data, and explain how EFAS and national models complement each other.",
+    "correct": "The Tisza rises in Ukraine's Carpathian Mountains and receives major tributaries from Romania, Slovakia, and other countries. Flood waves reach the Hungarian plain within 24-72 hours, requiring continuous state updates from upstream stations for accurate forecasting. The challenge is transboundary â€” Hungary depends on data from neighboring hydrological services (SHMU in Slovakia, ANAR in Romania). EFAS provides continental-scale ensemble forecasts using LISFLOOD driven by ECMWF weather predictions, offering probabilistic outlooks. The Hungarian Water Forecasting Service runs national models with local expertise and higher-resolution data. The two systems complement each other: EFAS provides broader context and longer lead times while national models offer local detail.",
+    "explanation": "Transboundary data assimilation is a practical reality for Hungary's flood forecasting due to the Tisza's international catchment."
+  },
+  {
+    "type": "essay",
+    "question": "What are the advantages and disadvantages of manual calibration compared to automatic methods? Under what circumstances is manual calibration still preferred?",
+    "correct": "Manual calibration advantages include: expert diagnostic reasoning (using hydrograph shape to identify which process is wrong), multi-criteria visual evaluation beyond any single metric, and the ability to incorporate qualitative knowledge. Disadvantages include: slowness (days to weeks), non-reproducibility (two modelers get different results), no formal uncertainty estimates, and poor scalability to distributed models. Manual calibration remains preferred for: initial model development where the modeler needs to understand the model's behavior, complex models where automatic methods struggle with thresholds and discontinuities, and situations where expert judgment about fit quality matters more than statistical optimality.",
+    "explanation": "Manual calibration remains relevant despite automation because it brings irreplaceable process understanding to the calibration enterprise."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of model structural uncertainty and why it cannot be resolved through parameter calibration alone. What approaches help address it?",
+    "correct": "Model structural uncertainty arises from simplifications and approximations in model equations. For example, the SCS curve number method cannot respond to rainfall intensity because intensity is not an input variable â€” no parameter adjustment can fix this structural limitation. Parameters may shift during calibration to compensate for structural errors, but this compensation is specific to calibration period conditions and breaks down under new conditions. Approaches to address structural uncertainty include: multi-model ensembles (comparing predictions from different model structures), Bayesian Model Averaging (weighting multiple models by their performance), and hybrid physics-ML models that use neural networks for processes that equations handle poorly while maintaining physical constraints.",
+    "explanation": "Structural uncertainty is the hardest form to quantify because it requires considering what the model cannot do, not just what it does."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the GLUE methodology, including its steps and the controversy surrounding it in the hydrology community.",
+    "correct": "GLUE proceeds by: (1) defining a likelihood measure, (2) specifying a threshold for behavioral parameter sets, (3) generating 10,000-1,000,000 random parameter sets, (4) running the model with each and computing likelihood, (5) retaining behavioral sets with normalized weights, and (6) generating prediction uncertainty bounds from the weighted ensemble. The controversy centers on GLUE's use of subjective likelihood measures and thresholds, which critics argue makes uncertainty estimates inconsistent with formal Bayesian statistics. GLUE bounds may be too wide or too narrow depending on chosen thresholds. Defenders argue that formal statistical likelihoods require assumptions about error structure (independence, normality) that are rarely met, making GLUE's flexibility a practical strength.",
+    "explanation": "GLUE is among the most cited and most debated methods in hydrology, representing a philosophical divide about how to handle calibration uncertainty."
+  },
+  {
+    "type": "essay",
+    "question": "How do the CAMELS and LamaH-CE datasets advance calibration science, and why is large-sample hydrology important for understanding model behavior?",
+    "correct": "CAMELS (671 US catchments) and LamaH-CE (859 Central European catchments) provide standardized meteorological forcing, streamflow data, and catchment attributes. They enable systematic calibration studies revealing patterns invisible in single-catchment analyses: which parameters matter across different climates and physiographies, how transferable calibrations are between similar catchments, and where models systematically fail. Large-sample hydrology transforms the question from 'what are the best parameters for this catchment?' to 'what determines the best parameters across catchments with similar characteristics?' This directly informs regionalization for ungauged catchments and is essential for training machine learning models that generalize across catchments.",
+    "explanation": "Large-sample datasets have transformed calibration from a case-study exercise into a science of systematic patterns across diverse hydroclimatic conditions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why validation on an independent time period is essential and what a substantial performance drop from calibration to validation indicates.",
+    "correct": "Validation on an independent period tests whether the calibrated model generalizes beyond the specific conditions it was fitted to. A model may achieve excellent calibration metrics by overfitting â€” learning noise, coincidental patterns, or period-specific compensating errors rather than true hydrological processes. A substantial drop from calibration to validation (e.g., NSE dropping from 0.85 to 0.55) suggests overfitting. Remedies include reducing the number of calibrated parameters, lengthening the calibration period, using regularization, or simplifying the model structure. A modest drop (5-10% in KGE) is expected and acceptable, indicating the model has learned transferable relationships.",
+    "explanation": "Validation is the critical test of whether calibration has captured genuine hydrological processes rather than period-specific noise."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the OVF monitoring network in supporting model calibration and data assimilation in Hungary.",
+    "correct": "The OVF operates approximately 500 surface water stations and 2,500 groundwater wells across Hungary, providing the observational foundation for calibration and assimilation. Since July 2024, this data is freely available through data.vizugy.hu. The HYDROINFO system delivers real-time water levels for 98 river sections. For calibration, the discharge records provide the target variable, while multi-variable calibration can exploit groundwater levels and water temperature. For data assimilation, telemetered real-time observations enable continuous model state updating. OMSZ radar provides 15-minute rainfall composites. This infrastructure, combined with EFAS and Copernicus products, supports both national forecasting and European-scale flood prediction for Hungarian catchments.",
+    "explanation": "Hungary's monitoring infrastructure is critical for both research-grade calibration studies and operational flood forecasting."
+  },
+  {
+    "type": "essay",
+    "question": "What is the modeler's dilemma of complexity versus identifiability, and how should it be resolved in practice?",
+    "correct": "The dilemma is the tension between adding physical realism (more processes and parameters) and maintaining identifiability (having enough data to determine all parameters). Each new parameter adds a dimension to calibration, and the combinatorial space grows exponentially. A 50-parameter model requires intelligent search because exhaustive evaluation is impossible. In practice, the resolution involves: (1) using sensitivity analysis to identify which parameters matter, (2) fixing insensitive parameters at literature values, (3) choosing complexity appropriate to available data, and (4) recognizing that experienced modelers often outperform novices because they make better choices about which complexity the data can actually support.",
+    "explanation": "The balance between model complexity and data constraint is a fundamental skill that distinguishes experienced from novice modelers."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the KGE decomposition into correlation, bias ratio, and variability ratio provides diagnostic information that guides targeted parameter adjustments.",
+    "correct": "KGE decomposes into r (Pearson correlation measuring timing), Î² (bias ratio measuring volume), and Î³ (variability ratio measuring spread). A low r indicates timing errors â€” the model peaks too early or late, suggesting routing parameter adjustments. A Î² far from 1 indicates over- or under-prediction of total volume, suggesting infiltration or baseflow parameter adjustments. A Î³ far from 1 indicates wrong variability â€” too flashy or too damped â€” suggesting storage or routing capacity adjustments. This decomposition tells the modeler not just that the model is imperfect, but specifically what is wrong, enabling targeted rather than random parameter adjustments.",
+    "explanation": "KGE's diagnostic power is why it has gained widespread adoption as an alternative to NSE for model calibration."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the computational requirements and outputs of GLUE, DREAM, and multi-model ensembles for quantifying prediction uncertainty.",
+    "correct": "GLUE requires 10,000-1,000,000 Monte Carlo samples with subjective likelihood thresholds, producing weighted prediction bounds from behavioral parameter sets. It is conceptually simple but statistically controversial. DREAM requires 20,000-50,000 evaluations using Markov chains, producing a formal posterior distribution with mathematically grounded uncertainty bounds. It is statistically rigorous but computationally expensive. Multi-model ensembles use multiple model structures with different assumptions, capturing structural uncertainty that neither GLUE nor DREAM addresses. The ideal approach combines all three: DREAM for parameter uncertainty within a model, multi-model ensembles for structural uncertainty, and ensemble weather forecasts for forcing uncertainty.",
+    "explanation": "Complete uncertainty quantification requires considering all sources: parameters, model structure, initial conditions, and forcing data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow from Morris screening to calibration to validation for a new catchment model, including approximate computational costs for each step.",
+    "correct": "Step 1: Define parameter space with physical bounds from soil surveys and literature. Step 2: Morris screening with r=20 trajectories requires ~20(n+1) evaluations (e.g., 420 for 20 parameters). This identifies the 5-10 most important parameters in minutes. Step 3: Optionally run Sobol with N=5,000 base samples requiring ~210,000 evaluations (hours to days for complex models). Step 4: Calibrate sensitive parameters using SCE-UA (5,000-20,000 evaluations), NSGA-II for multi-objective, or DREAM (50,000-100,000) for uncertainty. Step 5: Validate on independent period, checking that performance drop is modest. A 5-10% decline in KGE is typical and acceptable.",
+    "explanation": "This structured workflow ensures efficient use of computational resources by screening before optimizing."
+  },
+  {
+    "type": "essay",
+    "question": "Why do physically based models sometimes fail when applied outside their calibration conditions, and how does this relate to parameter compensation for structural errors?",
+    "correct": "During calibration, parameters shift from their physically plausible values to compensate for structural inadequacies in the model equations. For example, if the infiltration method cannot represent high-intensity rainfall effects, other parameters may adjust to produce correct total runoff volumes under calibration-period rainfall patterns. When applied to different conditions (drier climate, different rainfall intensity distribution, changed land use), these compensating adjustments no longer apply because the structural error manifests differently. The model's parameters were tuned for one specific expression of the structural limitation, not for the limitation itself. This is a major reason for validation failures and a key argument for multi-model approaches and hybrid physics-ML methods.",
+    "explanation": "Parameter compensation is a subtle mechanism that can make calibrated models appear good within calibration conditions while hiding fundamental structural problems."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate annual PET estimated by the Oudin formula for the Hernad catchment?",
+    "options": [
+      "A. 450 mm",
+      "B. 550 mm",
+      "C. 750 mm",
+      "D. 950 mm"
+    ],
+    "correct": "C",
+    "explanation": "The Oudin formula yields approximately 750 mm/year PET for the Hernad catchment at latitude 48.5Â°N."
+  },
+  {
+    "type": "mcq",
+    "question": "How many precipitation stations were used for the Hernad catchment Thiessen polygon averaging?",
+    "options": [
+      "A. 3",
+      "B. 5",
+      "C. 7",
+      "D. 12"
+    ],
+    "correct": "C",
+    "explanation": "Seven precipitation stations spanning the elevation gradient were used."
+  },
+  {
+    "type": "mcq",
+    "question": "What metric is most appropriate for water supply planning?",
+    "options": [
+      "A. NSE",
+      "B. PBIAS",
+      "C. Log-NSE",
+      "D. Peak flow error"
+    ],
+    "correct": "B",
+    "explanation": "Water supply planning requires accurate total volumes, making PBIAS the most relevant metric."
+  },
+  {
+    "type": "mcq",
+    "question": "What happens in SCE-UA when a competitive evolution step does not improve?",
+    "options": [
+      "A. Algorithm terminates",
+      "B. A random feasible point replaces the worst",
+      "C. Complex is discarded",
+      "D. All points reset"
+    ],
+    "correct": "B",
+    "explanation": "A random point within the feasible space replaces the worst point in the sub-simplex."
+  },
+  {
+    "type": "mcq",
+    "question": "What does CEMS stand for?",
+    "options": [
+      "A. Central European Monitoring System",
+      "B. Copernicus Emergency Management Service",
+      "C. Climate and Environmental Modeling System",
+      "D. Calibration Evaluation Methodology Standard"
+    ],
+    "correct": "B",
+    "explanation": "CEMS provides EFAS and GloFAS flood forecasting services."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hernad catchment, annual precipitation in the Slovak mountains exceeds what value?",
+    "options": [
+      "A. 500 mm",
+      "B. 700 mm",
+      "C. 900 mm",
+      "D. 1200 mm"
+    ],
+    "correct": "C",
+    "explanation": "Annual precipitation ranges from 500 mm on the Hungarian plain to over 900 mm in the Slovak mountains."
+  },
+  {
+    "type": "mcq",
+    "question": "What optimization method treats calibration purely as a black-box search?",
+    "options": [
+      "A. Manual expert calibration",
+      "B. Agentic AI calibration",
+      "C. SCE-UA",
+      "D. Neural network prediction"
+    ],
+    "correct": "C",
+    "explanation": "SCE-UA and other optimization algorithms treat the model as a black box with no understanding of internal processes."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the DDS algorithm?",
+    "options": [
+      "A. Dynamically Dimensioned Search for watershed model calibration",
+      "B. Distributed Data System",
+      "C. Discharge Data Standardization",
+      "D. Digital Dam Simulation"
+    ],
+    "correct": "A",
+    "explanation": "DDS automatically reduces the search dimension as optimization progresses, developed by Tolson and Shoemaker (2007)."
+  },
+  {
+    "type": "true_false",
+    "question": "Roughly 80% of the Hernad catchment upstream of Hidasnemeti lies in Slovakia.",
+    "correct": true,
+    "explanation": "About 80% of the 5,300 kmÂ² lies in Slovakia, with only ~20% in Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "A KGE of -0.5 indicates better performance than the naive benchmark.",
+    "correct": false,
+    "explanation": "KGE below 0.0 means the model is worse than the naive benchmark."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Hernad example, Morris screening required only 100 model evaluations.",
+    "correct": true,
+    "explanation": "With r=20 and n=4, Morris needed 20 Ã— 5 = 100 evaluations."
+  },
+  {
+    "type": "true_false",
+    "question": "The Green-Ampt method is an infiltration option in HEC-HMS.",
+    "correct": true,
+    "explanation": "HEC-HMS offers Green-Ampt and SCS CN as infiltration options."
+  },
+  {
+    "type": "true_false",
+    "question": "WISE provides WFD reporting data across all EU member states.",
+    "correct": true,
+    "explanation": "WISE at water.europa.eu provides Water Framework Directive data across the EU."
+  },
+  {
+    "type": "true_false",
+    "question": "Exhaustive search is feasible for a 50-parameter model.",
+    "correct": false,
+    "explanation": "10^50 evaluations are impossible â€” intelligent search is essential."
+  },
+  {
+    "type": "true_false",
+    "question": "The Clark unit hydrograph has three parameters.",
+    "correct": false,
+    "explanation": "It has two: time of concentration and storage coefficient."
+  },
+  {
+    "type": "true_false",
+    "question": "The Snyder unit hydrograph is available in HEC-HMS.",
+    "correct": true,
+    "explanation": "HEC-HMS provides both Clark and Snyder methods."
+  },
+  {
+    "type": "true_false",
+    "question": "A negative NSE means the model predicts worse than the observed mean.",
+    "correct": true,
+    "explanation": "Negative NSE indicates model errors exceed the variance of observations."
+  },
+  {
+    "type": "true_false",
+    "question": "GR4J x4 must be at least 1.1 days.",
+    "correct": true,
+    "explanation": "The lower bound for x4 is 1.1 days per the parameter bounds table."
+  },
+  {
+    "type": "true_false",
+    "question": "Pilot points interpolate MODFLOW parameters between selected locations.",
+    "correct": true,
+    "explanation": "This provides spatial flexibility without assigning unique values to every cell."
+  },
+  {
+    "type": "true_false",
+    "question": "AGROTOPO is Hungary's digital soil map.",
+    "correct": true,
+    "explanation": "AGROTOPO complements European databases like LUCAS and ESDAC."
+  },
+  {
+    "type": "true_false",
+    "question": "The recession baseflow method in HEC-HMS uses three parameters.",
+    "correct": true,
+    "explanation": "Initial baseflow, recession constant, and ratio to peak."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW parameter zones assign unique values to every individual cell.",
+    "correct": false,
+    "explanation": "Zones assign uniform properties to regions, reducing free parameters."
+  },
+  {
+    "type": "true_false",
+    "question": "CAMELS-AUS covers 222 Australian catchments.",
+    "correct": true,
+    "explanation": "CAMELS-AUS extends the large-sample concept to Australia."
+  },
+  {
+    "type": "true_false",
+    "question": "The standard Kalman filter provides optimal estimates for nonlinear systems.",
+    "correct": false,
+    "explanation": "It's optimal for linear Gaussian systems; EnKF or particle filter needed for nonlinear."
+  },
+  {
+    "type": "true_false",
+    "question": "The flashiness index is a hydrological signature.",
+    "correct": true,
+    "explanation": "Used alongside flow duration curve and baseflow index for signature-based calibration."
+  },
+  {
+    "type": "true_false",
+    "question": "MODFLOW uses a two-dimensional grid.",
+    "correct": false,
+    "explanation": "MODFLOW discretizes aquifers into a three-dimensional grid."
+  },
+  {
+    "type": "true_false",
+    "question": "ECLand drives the ERA5 reanalysis.",
+    "correct": true,
+    "explanation": "HTESSEL/ECLand is the ECMWF land surface scheme used in ERA5."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hernad flows directly into the Danube.",
+    "correct": false,
+    "explanation": "Hernad â†’ Sajo â†’ Tisza â†’ Danube."
+  },
+  {
+    "type": "true_false",
+    "question": "Ecological flow modeling should focus on peak flow metrics.",
+    "correct": false,
+    "explanation": "It should focus on low-flow reproduction using log-NSE or similar."
+  },
+  {
+    "type": "true_false",
+    "question": "Noah-MP provides multiple options for runoff and groundwater.",
+    "correct": true,
+    "explanation": "Noah-MP offers two options for runoff/groundwater plus multiple for other processes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Hernad headwaters contain peaks above 1,200 m.",
+    "correct": true,
+    "explanation": "In the Nizke Tatry and Slovak Ore Mountains."
+  },
+  {
+    "type": "true_false",
+    "question": "Calibration bounds should be wider than physically plausible ranges.",
+    "correct": false,
+    "explanation": "Bounds should reflect physical plausibility; unrealistic values flag structural problems."
+  },
+  {
+    "type": "true_false",
+    "question": "SSURGO is the US equivalent of ESDAC.",
+    "correct": true,
+    "explanation": "SSURGO provides county-level soil data comparable to European databases."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM runs on local desktop computers.",
+    "correct": false,
+    "explanation": "It runs on NOAA supercomputers and cloud platforms."
+  },
+  {
+    "type": "true_false",
+    "question": "Adding a snow module increases the calibration parameter count.",
+    "correct": true,
+    "explanation": "Each new process adds parameters requiring calibration."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Hernad Morris analysis, x1 had the highest Ïƒ/Î¼* ratio.",
+    "correct": false,
+    "explanation": "x2 had the highest at 1.38; x1 had more consistent linear effects."
+  },
+  {
+    "type": "true_false",
+    "question": "The HWSD provides global soil data at coarse resolution.",
+    "correct": true,
+    "explanation": "Harmonized World Soil Database provides global coverage."
+  },
+  {
+    "type": "true_false",
+    "question": "An NSE of 0.65 is classified as good by Moriasi et al.",
+    "correct": true,
+    "explanation": "The guidelines classify >0.65 as good."
+  },
+  {
+    "type": "true_false",
+    "question": "Data assimilation can update both states and parameters.",
+    "correct": true,
+    "explanation": "Some implementations jointly update state variables and parameters."
+  },
+  {
+    "type": "true_false",
+    "question": "IMERG provides global precipitation estimates from satellites.",
+    "correct": true,
+    "explanation": "GPM IMERG offers global satellite-based precipitation."
+  },
+  {
+    "type": "true_false",
+    "question": "Parameter interactions create compensating effects in calibration.",
+    "correct": true,
+    "explanation": "E.g., high CN + fast recession â‰ˆ unchanged hydrograph."
+  },
+  {
+    "type": "true_false",
+    "question": "S_Ti equals S_i when a parameter has no interactions.",
+    "correct": true,
+    "explanation": "No interaction means total effect equals direct effect."
+  },
+  {
+    "type": "true_false",
+    "question": "OAT sensitivity analysis can detect parameter interactions.",
+    "correct": false,
+    "explanation": "OAT varies one parameter at a time, missing interactions."
+  },
+  {
+    "type": "true_false",
+    "question": "Model structural uncertainty can be eliminated through better calibration.",
+    "correct": false,
+    "explanation": "Structural uncertainty is inherent in model equations; calibration cannot fix it."
+  },
+  {
+    "type": "true_false",
+    "question": "LAI is a measurable physical parameter.",
+    "correct": true,
+    "explanation": "LAI can be measured with hemispherical photography or ceptometers."
+  },
+  {
+    "type": "true_false",
+    "question": "HEPEX promotes deterministic forecasting.",
+    "correct": false,
+    "explanation": "HEPEX promotes ensemble and probabilistic approaches."
+  },
+  {
+    "type": "true_false",
+    "question": "GR4J x2 can take negative values.",
+    "correct": true,
+    "explanation": "x2 ranges from -5.0 to +3.0 mm/day."
+  },
+  {
+    "type": "true_false",
+    "question": "SCE-UA produces posterior distributions.",
+    "correct": false,
+    "explanation": "SCE-UA returns a single best set; DREAM produces posteriors."
+  },
+  {
+    "type": "true_false",
+    "question": "SWAT has been applied to the Tisza basin for nutrient studies.",
+    "correct": true,
+    "explanation": "Numerous SWAT studies address nutrient loading in the Tisza basin."
+  },
+  {
+    "type": "true_false",
+    "question": "Specific storage and specific yield are MODFLOW parameters.",
+    "correct": true,
+    "explanation": "Each MODFLOW cell has K, Ss, and Sy values."
+  },
+  {
+    "type": "true_false",
+    "question": "The baseflow index is a hydrological signature.",
+    "correct": true,
+    "explanation": "BFI quantifies the proportion of flow from baseflow."
+  },
+  {
+    "type": "true_false",
+    "question": "PSO is a global optimization algorithm.",
+    "correct": true,
+    "explanation": "Particle Swarm Optimization is mentioned alongside SCE-UA and DDS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SWAT stands for Soil and Water _____ Tool.",
+    "correct": "Assessment",
+    "explanation": "Soil and Water Assessment Tool, maintained at Texas A&M."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An NSE of _____ means no better than predicting the mean.",
+    "correct": "0.0",
+    "explanation": "NSE=0 means model skill equals the mean predictor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Equifinal parameter combinations create _____ in the objective function surface.",
+    "correct": "ridges",
+    "explanation": "Elongated valleys of near-constant performance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Beven's equifinality thesis was published in _____.",
+    "correct": "1996",
+    "explanation": "Published in the Journal of Hydrology."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ algorithm interpolates between Gauss-Newton and gradient descent.",
+    "correct": "Levenberg-Marquardt",
+    "explanation": "Uses a damping parameter for interpolation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NSGA-II uses non-dominated _____ to rank solutions.",
+    "correct": "sorting",
+    "explanation": "Solutions are ranked into successive fronts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad validation period was 2015 to _____.",
+    "correct": "2019",
+    "explanation": "Independent of the 2005-2014 calibration period."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Noah-MP derives parameters from lookup tables keyed to _____ classification.",
+    "correct": "land use",
+    "explanation": "USGS 24-category or MODIS IGBP 20-category land use."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Efficiency decomposes into r, Î², and Î³.",
+    "correct": "Kling-Gupta",
+    "explanation": "KGE provides diagnostic decomposition of model performance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Hernad example, x3 was calibrated to _____ mm.",
+    "correct": "89",
+    "explanation": "Moderate routing store for mixed fast and slow paths."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GLUE was developed by Beven and _____.",
+    "correct": "Binley",
+    "explanation": "Published in 1992 in Hydrological Processes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad calibration used 2005 to _____ as the calibration period.",
+    "correct": "2014",
+    "explanation": "With 2004 for warm-up and 2015-2019 for validation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OMSZ is the Hungarian _____ Service.",
+    "correct": "Meteorological",
+    "explanation": "Operates radar stations and weather networks."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BME stands for Budapest University of Technology and _____.",
+    "correct": "Economics",
+    "explanation": "One of the universities contributing to Hungarian SWAT applications."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad x4 was calibrated to _____ days.",
+    "correct": "2.1",
+    "explanation": "Consistent with the 5,300 kmÂ² catchment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "S_Ti minus S_i quantifies _____ effects.",
+    "correct": "interaction",
+    "explanation": "Measures how much of a parameter's effect comes from interactions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad Morris analysis showed x2 had Ïƒ/Î¼* ratio of _____.",
+    "correct": "1.38",
+    "explanation": "High ratio indicates nonlinear behavior."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Parameter shifts to compensate for structural errors is called parameter _____.",
+    "correct": "compensation",
+    "explanation": "This compensation is period-specific and may break down."
+  },
+  {
+    "type": "fill_blank",
+    "question": "STATSGO provides soil data for the _____.",
+    "correct": "US",
+    "explanation": "US state-level soil database, comparable to ESDAC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In GLUE, sub-threshold sets are called _____.",
+    "correct": "non-behavioral",
+    "explanation": "Discarded from the analysis; only behavioral sets retained."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Ore Mountains contain karstic limestone in the Hernad headwaters.",
+    "correct": "Slovak",
+    "explanation": "Slovanske rudohorie contributes to groundwater gains."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS stands for European _____ Awareness System.",
+    "correct": "Flood",
+    "explanation": "Provides pan-European flood forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad x1 was calibrated to _____ mm.",
+    "correct": "347",
+    "explanation": "Consistent with mixed forest/agriculture land use."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Kalman filter, R represents _____ error covariance.",
+    "correct": "observation",
+    "explanation": "Quantifies measurement uncertainty."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's _____ coefficient governs channel flow.",
+    "correct": "roughness",
+    "explanation": "Denoted n, varies with vegetation, debris, and bed material."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ problem refers to measurement-model scale mismatch.",
+    "correct": "support",
+    "explanation": "Also called the upscaling problem."
+  },
+  {
+    "type": "fill_blank",
+    "question": "DDS stands for Dynamically _____ Search.",
+    "correct": "Dimensioned",
+    "explanation": "Reduces search dimensions automatically during optimization."
+  },
+  {
+    "type": "fill_blank",
+    "question": "PSO stands for Particle _____ Optimization.",
+    "correct": "Swarm",
+    "explanation": "A global optimization algorithm for calibration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recession _____ of the hydrograph falls after the peak.",
+    "correct": "limb",
+    "explanation": "Diagnostic for baseflow/interflow parameters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS stands for _____ Flood Awareness System.",
+    "correct": "Global",
+    "explanation": "Extends EFAS capability worldwide."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sajo joins the _____ at Tiszaujvaros.",
+    "correct": "Tisza",
+    "explanation": "The Hernad's downstream connection to the Tisza system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SHMU is the _____ Hydrometeorological Institute.",
+    "correct": "Slovak",
+    "explanation": "Provides upstream data for the Hernad."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ES-MDA stands for Ensemble _____ Multiple Data Assimilation.",
+    "correct": "Smoother",
+    "explanation": "Used in PEST-IES for groundwater calibration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The CMIP framework is used for multi-model _____ ensembles.",
+    "correct": "climate",
+    "explanation": "Coupled Model Intercomparison Project for climate projections."
+  },
+  {
+    "type": "essay",
+    "question": "Explain local versus global sensitivity analysis methods and when each is appropriate.",
+    "correct": "Local sensitivity evaluates perturbations around a single point (2n-4n evaluations), describing behavior only near that point. Global methods evaluate across the full parameter range. Morris screening (r(n+1) evaluations) identifies important parameters qualitatively. Sobol (N(2n+2) evaluations) provides quantitative variance decomposition. Local methods suit situations with good prior estimates; global methods are essential for exploring unknown parameter spaces. A recommended workflow uses Morris first to screen parameters, then Sobol on the important subset if computationally feasible.",
+    "explanation": "The choice depends on computational budget and knowledge about parameter ranges."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Hernad catchment and why it exemplifies calibration challenges.",
+    "correct": "The Hernad originates in Slovak mountains (>1,200 m) and flows to the Hungarian plain, draining 5,300 kmÂ² (80% in Slovakia). It presents multiple challenges: mountainous headwaters with snow processes, flat agricultural lowlands, precipitation varying 500-900 mm, and multiple runoff mechanisms. Karstic geology adds groundwater complexity (positive x2). Transboundary data from SHMU and OVF must be combined. The calibration reveals physically plausible parameters that can be interpreted in terms of known geology and land use.",
+    "explanation": "The Hernad demonstrates multi-faceted calibration in a transboundary context."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how probabilistic forecasts improve flood warning decisions compared to deterministic predictions.",
+    "correct": "A prediction of 450 mÂ³/s peak flow with 90% confidence interval 380-540 mÂ³/s is far more useful than a point estimate of 450 mÂ³/s. It communicates forecast reliability and enables risk-based decisions: if the 520 mÂ³/s warning level has a 10% exceedance probability, managers can prepare proportionally. Probabilistic forecasts require multiple uncertainty sources: parameter uncertainty (GLUE, DREAM), forcing uncertainty (ensemble weather), initial condition uncertainty (data assimilation), and structural uncertainty (multi-model ensembles). EFAS uses 51-member ECMWF ensembles for this purpose.",
+    "explanation": "Probabilistic forecasting transforms model output into actionable decision support."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the Hernad's positive x2 parameter is physically meaningful.",
+    "correct": "The calibrated x2 = +0.84 mm/day indicates the catchment gains water from deep groundwater. This is consistent with karstic limestone formations in the Slovak Ore Mountains that can channel deep groundwater bypassing the surface drainage, emerging as springs in the lower catchment. This physical plausibility provides additional confidence in the model setup beyond statistical metrics. A negative x2 would have suggested groundwater loss, and zero would mean no exchange â€” each has different geological implications that can be checked against known geology.",
+    "explanation": "Physical interpretation of calibrated parameters validates both the model and the calibration procedure."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical implications of the curse of dimensionality for model calibration.",
+    "correct": "A 5-parameter model needs 10^5 evaluations for exhaustive search (feasible). A 50-parameter model needs 10^50 (impossible). This exponential growth means complex models cannot be calibrated by exhaustive search. Solutions include: intelligent search strategies (SCE-UA, DREAM), sensitivity analysis to reduce dimensions (fix insensitive parameters), the modeler's choices about which parameters to calibrate versus fix, and increasingly, machine learning approaches that bypass explicit parameterization entirely. These choices about complexity versus identifiability are as much art as science.",
+    "explanation": "The curse of dimensionality is the fundamental constraint driving calibration methodology development."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the information content of NSE versus KGE for diagnosing model performance.",
+    "correct": "NSE is a single aggregate number that tells you how well the model fits relative to the mean predictor, but is biased toward high flows due to squared errors. It cannot tell you why performance is poor. KGE decomposes into r (correlation/timing), Î² (bias/volume), and Î³ (variability/spread). A KGE of 0.65 with r=0.90, Î²=0.70, Î³=0.95 tells the modeler: timing is excellent, variability is fine, but there's a 30% volume underestimation â€” adjust infiltration or baseflow parameters. This diagnostic decomposition guides targeted adjustments far more effectively than optimizing a single NSE value.",
+    "explanation": "KGE's decomposition transforms calibration from trial-and-error to systematic diagnosis."
+  },
+  {
+    "type": "essay",
+    "question": "Why is multi-site calibration more constraining than outlet-only calibration?",
+    "correct": "Multi-site calibration uses discharge from internal subbasin gauges in addition to the outlet. A model matching only the outlet can achieve good performance through compensating errors â€” one subbasin overproduces while another underproduces, but the aggregate matches. Multi-site calibration forces the model to reproduce the spatial pattern of flow generation, eliminating this compensation. Each additional gauge provides independent information about specific subbasins, narrowing the set of acceptable parameter combinations. Hungary's OVF network, with ~500 stations, offers multi-site opportunities often underexploited.",
+    "explanation": "Internal gauges break the degeneracy of outlet-only calibration by constraining spatial patterns."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between state variables and parameters in a hydrological model.",
+    "correct": "State variables describe the current condition and change during simulation: soil moisture content, snowpack depth, groundwater head, channel water level. Parameters describe system properties that determine response and are typically fixed before simulation: soil porosity, hydraulic conductivity, Manning's n, snow melt rate. The distinction matters because calibration adjusts parameters (fixed before each run), while data assimilation adjusts state variables (updated during the run as observations arrive). Some advanced methods jointly estimate both, but this adds complexity and requires careful regularization.",
+    "explanation": "This distinction is fundamental to understanding both calibration and data assimilation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the CAMELS datasets transformed calibration science from single-catchment to large-sample studies.",
+    "correct": "Before CAMELS, calibration was studied one catchment at a time, making generalization difficult. CAMELS (671 US catchments) and its international variants (LamaH-CE 859, CAMELS-GB 671, CAMELS-BR 897) provide standardized forcing, streamflow, and attributes, enabling systematic studies. Key insights include: which parameters matter across climates, how transferable calibrations are between similar catchments, where models systematically fail, and what determines optimal parameters. This transforms the question from 'what parameters for this catchment?' to 'what determines parameters across similar catchments?' â€” directly informing regionalization and machine learning approaches.",
+    "explanation": "Large-sample datasets enabled the statistical generalization that makes modern ML hydrology possible."
+  },
+  {
+    "type": "essay",
+    "question": "Explain model structural uncertainty using the SCS curve number method as an example.",
+    "correct": "The SCS CN method computes runoff from daily rainfall totals. It cannot respond to rainfall intensity because intensity is not an input â€” a 50 mm event in 1 hour and a 50 mm event over 24 hours produce identical runoff estimates. This is a structural limitation: no parameter adjustment can make it intensity-sensitive. During calibration, other parameters may shift to compensate (e.g., lower CN to reduce overall runoff), but this compensation works only for the specific intensity distribution in the calibration period. In validation with different storm characteristics, the compensation breaks down. This illustrates why structural uncertainty cannot be fixed by calibration and motivates multi-model approaches.",
+    "explanation": "Structural limitations are fundamentally different from parameter uncertainty and require different solutions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical significance of the 90% DREAM coverage rates in the Hernad example.",
+    "correct": "The 90% prediction uncertainty bounds contained 87% of observations in calibration and 81% in validation. In calibration, 87% is close to the nominal 90%, indicating well-calibrated uncertainty. In validation, 81% is lower, meaning the bounds are too narrow for about 9% of observations â€” the model is slightly overconfident. This underconfidence reflects model structural uncertainty not captured by parameter uncertainty alone. Practical implication: DREAM's bounds are approximately correct but should be widened by 10-15% for operational use to account for structural and forcing uncertainties. This is why comprehensive uncertainty requires considering all sources, not just parameters.",
+    "explanation": "Coverage rates validate whether uncertainty estimates are reliable for decision-making."
+  },
+  {
+    "type": "essay",
+    "question": "Why does the choice of calibration period matter and what happens when it is too short?",
+    "correct": "The calibration period must contain sufficient hydrological variability â€” wet years, dry years, major floods, low-flow periods â€” for the model to learn the full range of catchment responses. Too short a period may miss important processes (e.g., no major flood, no drought), causing the model to be well-tuned for average conditions but fail under extremes. The Hernad example uses 10 years (2005-2014) spanning a range of conditions. Additionally, a too-short period increases overfitting risk â€” the model fits noise specific to those particular years rather than underlying processes. The validation period should be different enough to test generalization.",
+    "explanation": "The calibration period selection determines what the model can learn and how well it generalizes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Oudin formula for estimating potential evapotranspiration requires only mean daily temperature and latitude as inputs.",
+    "correct": true,
+    "explanation": "The Oudin formula is a temperature-based PET method requiring only mean daily temperature and latitude, making it suitable for data-sparse applications like the Hernad catchment example.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "In the SCE-UA algorithm, the complexes remain fixed throughout the optimization and never exchange members.",
+    "correct": false,
+    "explanation": "The key innovation of SCE-UA is the shuffling step, where points from all complexes are combined, re-sorted, and repartitioned into new complexes, allowing information flow between groups.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "The Water Framework Directive (WFD) has driven systematic monitoring and modeling across all EU member states.",
+    "correct": true,
+    "explanation": "The WFD requires every river basin district to characterize water bodies, assess pressures and impacts, and implement programs of measures, all requiring calibrated models.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "In SWAT, Hydrologic Response Units (HRUs) are defined by unique combinations of elevation, aspect, and geology.",
+    "correct": false,
+    "explanation": "SWAT HRUs are defined by unique combinations of land use, soil type, and slope class, not elevation, aspect, and geology.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "The Metropolis acceptance criterion in DREAM always rejects candidate points with lower posterior probability.",
+    "correct": false,
+    "explanation": "The Metropolis criterion accepts lower-probability candidates with a probability proportional to the ratio of posterior probabilities, allowing chains to escape local optima.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "The Hungarian section of the Hernad catchment constitutes roughly 80% of the total catchment area upstream of Hidasnemeti.",
+    "correct": false,
+    "explanation": "Roughly 80% of the Hernad catchment upstream of Hidasnemeti lies in Slovakia, not Hungary. The Hungarian section drains only about 930 km2 of the total 5,300 km2.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "The average observed discharge at the Hidasnemeti station on the Hernad is approximately 28 m3/s.",
+    "correct": true,
+    "explanation": "The observed discharge at Hidasnemeti averages approximately 28 m3/s, equivalent to about 880 mm/year over the 5,300 km2 catchment.",
+    "chapter_num": 22
+  },
+  {
+    "type": "true_false",
+    "question": "A first-order Sobol index of zero for a parameter means that parameter has no individual influence on model output variance.",
+    "correct": true,
+    "explanation": "S_i = 0 means zero fraction of total output variance is attributable to parameter i alone; however, interaction effects captured by S_Ti may still be nonzero.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The calibration period for the Hernad GR4J worked example was _____ to 2014.",
+    "correct": "2005",
+    "explanation": "The GR4J model was calibrated using 2005-2014, validated on 2015-2019, with 2004 as warm-up.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Hernad example, the calibrated x4 (unit hydrograph time base) was approximately _____ days.",
+    "correct": "2.1",
+    "explanation": "The calibrated x4 of 2.1 days indicates an approximately 2-day lag consistent with the 5,300 km2 catchment size.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad flows south to join the _____ River near Miskolc.",
+    "correct": "Sajo",
+    "explanation": "The Hernad joins the Sajo (Slana in Slovak) near Miskolc, which in turn flows into the Tisza at Tiszaujvaros.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "A model with 5 parameters evaluated at 10 values per parameter requires _____ total evaluations for exhaustive search.",
+    "correct": "100,000",
+    "explanation": "Exhaustive search requires 10^n evaluations; for n=5 this is 10^5 = 100,000.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad calibration KGE of 0.82 decomposed into a correlation of _____, a bias ratio of 1.03, and a variability ratio of 0.94.",
+    "correct": "0.89",
+    "explanation": "The correlation component of 0.89 indicates good timing accuracy in the calibrated model.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The CAMELS-BR dataset covers 897 catchments in _____.",
+    "correct": "Brazil",
+    "explanation": "CAMELS-BR covers 897 catchments in Brazil, one of several international extensions of the original US CAMELS.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "SWAT has generated over _____ peer-reviewed publications globally.",
+    "correct": "5,000",
+    "explanation": "SWAT is the most widely used semi-distributed model with over 5,000 publications.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ECMWF land surface scheme used in ERA5 and EFAS is called _____.",
+    "correct": "HTESSEL/ECLand",
+    "explanation": "HTESSEL/ECLand drives ERA5 reanalysis and the EFAS flood forecasting system.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "In MODFLOW calibration, _____ point methods define parameters at selected locations and interpolate between them.",
+    "correct": "pilot",
+    "explanation": "Pilot points are an alternative to parameter zones, defining values at selected locations with kriging interpolation.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GR4J x1 parameter in the Hernad example was calibrated to _____ mm.",
+    "correct": "347",
+    "explanation": "The calibrated x1 of 347 mm represents moderate production store capacity, consistent with mixed forest/agriculture land use.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Morris method, parameters with mu-star less than _____% of the maximum mu-star can typically be fixed at defaults.",
+    "correct": "10",
+    "explanation": "Parameters below 10% of maximum mu-star are considered negligible and can be fixed, typically eliminating 30-60% of parameters.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad catchment validation period was _____ to 2019.",
+    "correct": "2015",
+    "explanation": "The independent validation period 2015-2019 followed the 2005-2014 calibration period.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The sigma/mu-star ratio for x2 in the Hernad Morris analysis was _____, indicating nonlinear effects.",
+    "correct": "1.38",
+    "explanation": "The high ratio of 1.38 indicates the groundwater exchange effect is modulated by the production store level.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US National Water Model covers approximately _____ million river reaches.",
+    "correct": "2.7",
+    "explanation": "The NWM covers 2.7 million river reaches, making manual calibration impossible.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The WISE database at water.europa.eu stands for Water _____ System for Europe.",
+    "correct": "Information",
+    "explanation": "WISE provides access to Water Framework Directive reporting data across all EU member states.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Hernad catchment, the year _____ was used for model warm-up.",
+    "correct": "2004",
+    "explanation": "A one-year warm-up (2004) initialized the GR4J production and routing stores before calibration.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hernad catchment PBIAS increased from 3.2% in calibration to _____% in validation.",
+    "correct": "5.8",
+    "explanation": "The increase suggests the water balance shifted slightly between periods.",
+    "chapter_num": 22
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recession baseflow method in HEC-HMS has _____ parameters: initial baseflow, recession constant, and ratio to peak.",
+    "correct": "three",
+    "explanation": "These three parameters contribute to the total 20-30 parameters in a typical four-subcatchment HEC-HMS model.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the effective parameter value at the model grid scale differs from a point measurement, using saturated hydraulic conductivity as an example.",
+    "correct": "A laboratory measurement on a 10 cm soil core might yield Ks = 3.6e-6 m/s for silt loam, but a 1 km model grid cell contains enormous heterogeneity: macropores, roots, animal burrows, clay lenses, and compacted zones causing Ks to vary across orders of magnitude. The effective Ks that makes the grid cell behave correctly is a conceptual quantity that exists only in the model context at that scale. This upscaling problem applies to virtually every parameter and is the fundamental reason calibration is necessary even if equations were perfect.",
+    "explanation": "This scale mismatch is the root cause of the calibration problem.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the SCE-UA algorithm prevents premature convergence to local optima, and provide approximate computational costs for a 6-parameter model.",
+    "correct": "SCE-UA prevents premature convergence through shuffling. After generating a random population and partitioning it into complexes, competitive evolution occurs within each complex. Then all points are recombined, re-sorted, and repartitioned into new complexes, allowing information exchange that prevents groups from converging on separate local optima. For a 6-parameter model with p=5 complexes and m=2(6)+1=13 points each, the initial population is 65 points. Convergence typically requires 2,000-10,000 evaluations, taking 30 minutes to 3 hours for a 1-second model.",
+    "explanation": "SCE-UA robust convergence through shuffling explains its widespread adoption.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the curse of dimensionality in hydrological model calibration and its practical implications.",
+    "correct": "The curse of dimensionality means parameter space volume grows exponentially with parameter count. At 10 values per parameter, a 5-parameter model needs 100,000 evaluations (minutes), while 50 parameters would need 10^50 (more than atoms in the universe). This makes exhaustive search impossible for complex models and mandates intelligent strategies: sensitivity analysis to eliminate unimportant parameters, global optimization algorithms, and fixing insensitive parameters. The practical implication is that complex models cannot guarantee finding the global optimum.",
+    "explanation": "Dimensionality growth is the fundamental constraint on calibration feasibility.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the NAM model structure and its role in European hydrology.",
+    "correct": "NAM (Nedbor-Afstromnings-Model), developed by DHI Denmark, is a lumped model with nine core parameters: U_max, L_max, CQOF, CKIF, CK_1,2, TOF, TIF, and CKBF. As the rainfall-runoff component of the MIKE suite, NAM has been widely applied across Europe including Hungarian catchments. Its parsimony (9 parameters) makes it amenable to calibration while providing reasonable process representation for operational hydrology.",
+    "explanation": "NAM represents the European lumped modeling tradition alongside HEC-HMS.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "How does SWAT differ from lumped models like GR4J in spatial representation, and what are the calibration implications?",
+    "correct": "SWAT is semi-distributed, dividing watersheds into sub-basins with HRUs defined by land use, soil, and slope. Each HRU has its own parameters for runoff, ET, soil water, and groundwater. A medium catchment may have 50-200 HRUs and 20-30 adjustable parameters. GR4J treats the entire catchment as one unit with 4 parameters. SWAT calibration is far more challenging due to higher dimensionality, longer run times, and parameter interactions. This motivated SWAT-CUP implementing SUFI-2, GLUE, ParaSol, and MCMC.",
+    "explanation": "The lumped-to-distributed transition amplifies calibration complexity.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Bayes theorem formulation used in DREAM and identify each component.",
+    "correct": "Bayes theorem: p(theta|Y) = p(Y|theta) * p(theta) / p(Y). theta is the parameter vector, Y is observed data, p(theta|Y) is the posterior (what we want), p(Y|theta) is the likelihood (how well parameters fit data), p(theta) is the prior (pre-data knowledge), and p(Y) is the evidence (normalizing constant). DREAM samples the posterior using multiple Markov chains with differential evolution proposals, producing an ensemble characterizing full parameter uncertainty rather than a single best estimate.",
+    "explanation": "Bayesian inference transforms calibration from point estimation to distribution characterization.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What makes the Hernad catchment an excellent example for teaching calibration concepts?",
+    "correct": "The Hernad is transboundary, originating in Slovak Ore Mountains, draining 5,300 km2 (80% in Slovakia). It presents multiple challenges: mountainous headwaters (above 1,200 m) transitioning to flat plains, precipitation 500-900 mm, mixed agriculture/forest, and multiple runoff mechanisms. Its GR4J calibration illustrates the parameter problem (all conceptual), objective function choice (KGE decomposition), equifinality (wide x2 posterior), sensitivity analysis (Morris rankings), and validation (modest 7% KGE drop).",
+    "explanation": "The Hernad ties together all core chapter themes.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the difference between state variables and parameters in a hydrological model.",
+    "correct": "State variables (soil moisture, snowpack depth, groundwater head) describe the current system condition and change during simulation. Parameters (porosity, hydraulic conductivity, melt rate) describe fixed properties determining response to forcing and remain constant. This distinction matters because calibration adjusts parameters before the run using historical data, while data assimilation adjusts state variables during the run using real-time observations. Confusing the two leads to poor practice.",
+    "explanation": "The state-parameter distinction is foundational for calibration and data assimilation.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why objective function choice matters for flood warning versus water supply calibration.",
+    "correct": "Flood warning needs peak accuracy, so NSE (emphasizing peaks through squared errors) or peak metrics are appropriate. Water supply needs volume accuracy, making PBIAS most relevant. Ecological flow needs baseflow reproduction, favoring log-NSE. Different metrics weight different hydrograph aspects, leading to different optimal parameters. Multi-objective calibration with NSGA-II produces a Pareto front, letting managers select parameters matching their application.",
+    "explanation": "Application-dependence connects technical methods to real-world decisions.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Levenberg-Marquardt algorithm and when it is appropriate versus global methods.",
+    "correct": "Levenberg-Marquardt interpolates between Gauss-Newton (fast but unstable) and gradient descent (stable but slow), using an adaptive damping parameter. It excels for nearly quadratic objective functions with good initial estimates from geological surveys or previous calibration. PEST uses it for MODFLOW because priors exist. SCE-UA is needed when objectives have multiple local optima, thresholds, or flat regions typical of surface water models without strong priors.",
+    "explanation": "Matching algorithm to problem characteristics is key.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain what the Morris elementary effect measures and how mu-star and sigma classify parameters.",
+    "correct": "The elementary effect EE_i measures output change when parameter i is perturbed by Delta. Multiple EEs across r trajectories give mu-star (mean absolute EE, indicating importance) and sigma (standard deviation, indicating nonlinearity/interactions). Parameters are classified as negligible (low mu-star), linearly important (high mu-star, low sigma), or nonlinear/interactive (high mu-star and sigma). This screening typically eliminates 30-60% of parameters.",
+    "explanation": "Morris efficiently partitions parameters at modest cost.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how Noah-MP illustrates the parameter problem in land surface modeling.",
+    "correct": "Noah-MP offers multiple parameterization options (four for stomatal resistance, three for soil moisture factor, two for runoff/groundwater) with parameters from lookup tables keyed to land use and soil classifications. These defaults often do not represent actual conditions. With 50+ parameters per land use type and expensive computations, LSM calibration is especially challenging. Satellite observations (MODIS LAI, ESA CCI soil moisture, GRACE) provide essential additional constraints.",
+    "explanation": "LSMs face the most extreme version of the parameter problem.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What is signature-based calibration and why does it help reduce equifinality?",
+    "correct": "Signature-based calibration adds summary statistics from observed records as targets: flow duration curve, baseflow index, flashiness index, rising limb density, seasonal distribution. These capture aspects that time-series metrics may not distinguish. Two parameter sets with identical NSE might have different flow duration curves. Requiring multiple signatures narrows acceptable combinations because different signatures constrain different parameter groups.",
+    "explanation": "Signatures add independent constraints resolving ambiguity.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the forecast and analysis steps of the Kalman filter, including the role of each matrix.",
+    "correct": "Forecast: x_t^f = M(x_{t-1}^a) advances the state; P_t^f = M*P^a*M^T + Q adds model error. Analysis: K_t = P_t^f*H^T*(H*P_t^f*H^T + R)^{-1} computes gain balancing uncertainties, where H maps state to observation space and R is observation error. x_t^a = x_t^f + K_t*(y_t - H*x_t^f) shifts forecast toward observation. P_t^a = (I - K_t*H)*P_t^f is always smaller than forecast covariance.",
+    "explanation": "The Kalman filter is optimal for linear Gaussian systems.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the GR4J model setup for the Hernad catchment, including input data and PET estimation.",
+    "correct": "GR4J needs daily precipitation and PET. Precipitation was averaged from seven stations via Thiessen polygons (680 mm/year). PET uses the Oudin formula with extraterrestrial radiation, latent heat, water density, and temperature. At 48.5N latitude, this yields about 750 mm/year. The model was calibrated with SCE-UA using KGE, with 2004 warm-up, 2005-2014 calibration, and 2015-2019 validation.",
+    "explanation": "Practical setup includes data preparation and period splitting.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why probabilistic forecasts are more useful than deterministic predictions for water management.",
+    "correct": "Probabilistic forecasts communicate expected outcome and reliability, enabling risk-based decisions. A 90% CI of 380-540 m3/s lets managers assess the probability of exceeding warning thresholds. Deterministic predictions provide no risk basis. Generating probabilistic forecasts requires treating parameter uncertainty (DREAM/GLUE), forcing uncertainty (ensemble weather), initial condition uncertainty (data assimilation), and structural uncertainty (multi-model ensembles).",
+    "explanation": "Probabilistic forecasting operationalizes uncertainty for decision support.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Sobol total-effect index S_Ti and how it differs from S_i.",
+    "correct": "S_i measures variance from parameter i alone. S_Ti includes all interactions involving i. The difference S_Ti - S_i quantifies interaction contributions. If approximately equal, the parameter acts independently. If S_Ti is much larger, interactions matter. This guides algorithm choice: strong interactions favor DREAM over methods treating parameters independently. Sobol requires N*(2n+2) evaluations, more expensive than Morris but quantitative.",
+    "explanation": "The first-order vs total-effect distinction reveals interaction importance.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe parameter zones and pilot points in MODFLOW calibration.",
+    "correct": "Regional MODFLOW models have hundreds of thousands of cells needing conductivity, storage, and yield values. Cell-by-cell assignment is impossible. Parameter zones assume uniform properties within geological regions, reducing parameters. Pilot points define values at selected locations and interpolate via kriging. PEST uses regularized inversion with both approaches, balancing fit against plausibility through Tikhonov regularization favoring spatial smoothness.",
+    "explanation": "Groundwater calibration has developed sophisticated spatial parameterization.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the GLUE controversy, presenting arguments from critics and defenders.",
+    "correct": "Critics: GLUE uses subjective likelihoods and thresholds inconsistent with Bayesian theory; bounds can be arbitrary. Defenders: formal likelihoods require rarely-met assumptions (independence, normality, homoscedasticity); GLUE flexibility is a practical strength. Despite controversy, Beven's papers are among the most cited in hydrology, showing enormous practical impact.",
+    "explanation": "GLUE represents a philosophical divide about rigor versus flexibility.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain how equifinal ridges form and what they imply for parameter identifiability.",
+    "correct": "Equifinal ridges are elongated valleys where performance stays constant as parameters change. They form from compensating interactions: increasing curve number while increasing baseflow recession constant leaves the hydrograph unchanged. Along ridges, parameters are poorly identifiable. Optimization finds different ridge points depending on starting conditions. Bayesian methods show strong correlations between interacting parameters.",
+    "explanation": "Ridges are the geometric expression of interactions undermining identification.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Hernad DREAM uncertainty analysis and what it revealed.",
+    "correct": "DREAM with 5 chains and 50,000 evaluations showed x1 well constrained (90% interval [290, 420] mm) because it controls the water balance. x2 had a wide interval [-0.5, 2.3] mm/day crossing zero, meaning data cannot determine groundwater direction. Prediction bounds contained 87% of observations in calibration, 81% in validation, reflecting unaccounted structural uncertainty.",
+    "explanation": "Bayesian methods reveal parameter identifiability contrasts.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain data assimilation using the piano tuning analogy from the chapter.",
+    "correct": "Static calibration tunes parameters before running, like tuning a piano before a concert. Data assimilation adjusts states during the run using real-time observations, like a musician adjusting to what they hear. Each forecast step predicts the next state; analysis combines prediction with observation weighted by uncertainties. This addresses imperfect forcing, parameters, and structure causing state drift. DA originated in meteorology and accelerated in hydrology since the mid-2000s.",
+    "explanation": "Data assimilation bridges historical calibration and operational forecasting.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HEC-HMS modular structure and its calibration implications.",
+    "correct": "HEC-HMS allows selecting different process methods: SCS CN or Green-Ampt for infiltration, Clark or Snyder UH for runoff, recession or linear reservoir for baseflow, Muskingum for routing. Each has its own parameters. A four-subcatchment model might have 20-30 parameters. This modularity creates heterogeneous parameter spaces where different methods produce different response surfaces, making calibration more complex than unified formulations.",
+    "explanation": "Model flexibility translates into calibration complexity.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the transfer and regionalization limit and how large-sample datasets help.",
+    "correct": "Calibrated models must be applied to ungauged catchments. Regionalization relates parameters to catchment attributes via regression, but relationships are weak and nonlinear. CAMELS (671 US) and LamaH-CE (859 Central European) enable statistical analysis across settings: which parameters matter where, how transferable calibrations are, where models fail. This transforms single-catchment optimization into cross-catchment pattern recognition exploitable by ML.",
+    "explanation": "Regionalization remains a grand challenge motivating ML.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What observations can the EnKF assimilate in hydrology, and which systems use it?",
+    "correct": "EnKF assimilates: discharge into rainfall-runoff models, satellite soil moisture into LSMs, snow water equivalent into snowmelt models, groundwater heads into MODFLOW. EFAS uses DA for LISFLOOD initialization. US NWM uses nudging from about 8,000 gauges. ECMWF ECLand uses variational methods with satellite products. Each data type constrains different model components.",
+    "explanation": "Diverse observations provide complementary constraints.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the non-stationarity limit of traditional calibration.",
+    "correct": "Traditional calibration assumes fixed parameters from historical data. Climate change alters precipitation and temperature, land use change modifies infiltration and ET, water management changes routing. Parameters calibrated historically may fail under future conditions. Traditional methods can only recalibrate reactively. This backward-looking approach cannot anticipate changes, motivating adaptive AI approaches.",
+    "explanation": "Non-stationarity challenges the fixed-parameter assumption.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the five-step practical calibration workflow.",
+    "correct": "Step 1: Define parameter space with physical bounds from documentation and surveys. Step 2: Morris screening (~20(n+1) evaluations) to fix negligible parameters. Step 3: Optional Sobol analysis if budget allows. Step 4: Calibrate with SCE-UA, NSGA-II, or DREAM. Step 5: Validate on independent period; substantial performance drop indicates overfitting requiring fewer parameters or regularization.",
+    "explanation": "Structured workflow ensures efficient resource use.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "How does NSGA-II maintain diversity along the Pareto front?",
+    "correct": "NSGA-II ranks solutions into non-dominated fronts. Within each front, crowding distance measures spacing from neighbors in objective space. Selection prefers better fronts; within the same front, higher crowding distance is preferred. This ensures convergence toward the true Pareto front via front ranking and diversity along it via crowding distance, preventing population clustering.",
+    "explanation": "Combined sorting and crowding distance make NSGA-II effective.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain how PEST uses gradient-based methods for MODFLOW calibration.",
+    "correct": "PEST uses Gauss-Marquardt-Levenberg with regularized inversion. This local method suits groundwater calibration because geological surveys provide good priors. Tikhonov regularization favors spatial smoothness and proximity to priors, appropriate for smoothly varying geological parameters. PEST-IES handles thousands of parameters for large regional models.",
+    "explanation": "PEST is tailored to groundwater calibration needs.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Tisza basin monitoring infrastructure for Hungarian flood forecasting.",
+    "correct": "The Tisza drains 157,000 km2 across five countries with flood waves reaching Hungary within 24-72 hours. Hungary uses about 500 OVF stations, 2,500 groundwater wells, OMSZ 15-minute radar, and HYDROINFO real-time system for 98 river sections. Transboundary data from neighboring services is critical. EFAS provides continental ensemble forecasts while national models offer local detail.",
+    "explanation": "Hungary's downstream position makes monitoring critically important.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Why is a calibrated hydraulic conductivity outside known ranges a red flag while conceptual parameters have no external benchmark?",
+    "correct": "Physical parameters like Ks have established measurement ranges. Values outside indicate structural compensation rather than real properties. Conceptual parameters like GR4J x1-x4 exist only within the model with no independent measurement. Their values are correct only if they produce good simulations. This is why the taxonomy (physical, empirical, conceptual) matters for interpretation and bounds.",
+    "explanation": "External validation provides a diagnostic unavailable for conceptual parameters.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Compare nudging with the Ensemble Kalman Filter for data assimilation.",
+    "correct": "Nudging directly pushes states toward observations; it is cheap and simple (NWM uses it) but lacks uncertainty quantification and may violate physics. EnKF runs 50-500 ensemble members, updates via Kalman gain respecting uncertainties, and propagates corrections through cross-correlations. EnKF is used in EFAS but costs much more. The trade-off is computational cost versus information content.",
+    "explanation": "Simple versus sophisticated methods offer different trade-offs.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "How do satellite observations from MODIS, ESA CCI, and GRACE contribute to LSM calibration?",
+    "correct": "MODIS LAI constrains vegetation parameters. ESA CCI soil moisture constrains infiltration and ET independently of discharge. GRACE water storage constrains total balance including deep groundwater. Each adds independent information narrowing acceptable parameters. Without them, LSM calibration against discharge alone has enormous equifinality. Multi-variable constraints dramatically reduce feasible parameter space.",
+    "explanation": "Satellite observations transform LSM calibration from underconstrained to moderately constrained.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how Chapter 22 connects to Chapters 23-25 on ML and AI.",
+    "correct": "Chapter 22 establishes foundations (objective functions, optimization, sensitivity, equifinality, DA) whose limits (cost, dimensionality, transfer, non-stationarity) motivate what follows. Chapter 23: ML learns without explicit parameters. Chapter 24: AI agents automate calibration. Chapter 25: digital twins. Traditional methods define what calibration means; their limits drive innovation toward AI approaches.",
+    "explanation": "Calibration is positioned as the bridge between physical modeling and AI.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What does the Hernad example teach about physical interpretation of calibrated parameters?",
+    "correct": "Calibrated x2 = 0.84 mm/day (positive) indicates net groundwater gain, plausible given karstic limestone in Slovak Ore Mountains channeling deep groundwater to springs. This connection between values and geology validates both calibration and structure. Implausible values would flag problems. Calibration is not purely numerical: connecting parameters to known hydrology provides essential quality checks beyond statistics.",
+    "explanation": "Physical interpretation connects optimization to understanding.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain HEPEX and its role in probabilistic flood forecasting.",
+    "correct": "HEPEX promotes ensemble approaches over deterministic forecasts, advocating uncertainty quantification from all sources: parameters, forcing (ensemble weather), initial conditions (DA), and structure (multi-model). EFAS uses 51-member ECMWF ensemble with LISFLOOD. Probabilistic forecasting enables risk-based decisions: managers assess exceedance probabilities for thresholds rather than relying on single predictions.",
+    "explanation": "HEPEX operationalizes uncertainty quantification concepts.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why manual calibration scales poorly to large-domain modeling.",
+    "correct": "Manual calibration takes days to weeks per catchment through iterative human judgment. For the NWM (2.7 million reaches) or EFAS, this is impossible. Alternatives: automatic optimization per sub-region, regionalization from gauged catchments, large-sample calibration identifying patterns, and ML learning across catchments simultaneously. Scalability limits drove development of automatic methods.",
+    "explanation": "Scalability limitations motivated the field of automatic calibration.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe SWAT applications in the Tisza basin and Hungarian institutions involved.",
+    "correct": "SWAT has been applied in the 157,000 km2 Tisza basin for nutrient loading, agricultural management, and climate impacts. Contributing institutions include BME, University of Debrecen, University of Szeged, and VITUKI (now General Directorate of Water Management). SWAT-CUP provides calibration using SUFI-2, GLUE, and MCMC.",
+    "explanation": "Tisza SWAT applications demonstrate semi-distributed modeling for Central European challenges.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What role does the warm-up period play, and why was 2004 used for the Hernad example?",
+    "correct": "Warm-up initializes internal states from arbitrary values to realistic levels. Without it, stores start at defaults causing poor early performance. 2004 was used so that by January 2005, GR4J stores equilibrated. One year suffices for daily rainfall-runoff models. Groundwater models may need longer (years to decades) due to slower response times.",
+    "explanation": "Warm-up prevents initialization artifacts.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss advantages of KGE over NSE as a calibration objective.",
+    "correct": "KGE decomposes into r (timing), beta (volume bias), and gamma (variability). This tells modelers specifically what is wrong, enabling targeted adjustments. NSE provides only an aggregate dominated by peaks. KGE avoids NSE tendency to accept models under-predicting variability. KGE > 0 outperforms a meaningful benchmark, while NSE > 0 merely means better than the mean.",
+    "explanation": "KGE diagnostic power drives its adoption.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain local versus global sensitivity analysis and when each is appropriate.",
+    "correct": "Local SA evaluates small perturbations around one point (2n-4n evaluations), describing behavior only nearby and ignoring interactions. Global SA evaluates across the entire range. Morris (r(n+1) evaluations) screens qualitatively. Sobol (N(2n+2)) provides quantitative decomposition. Local suits well-constrained refinements. Global is essential for initial studies with large, poorly known parameter spaces.",
+    "explanation": "The local-global distinction parallels optimization algorithm choice.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What did MOPEX reveal about single-model versus multi-model performance?",
+    "correct": "MOPEX compared dozens of models on hundreds of catchments finding no single model best everywhere. Different structures excel in different settings. Multi-model averages often outperform individuals because structural errors partially cancel. This drives ensemble approaches and suggests investing in multiple models may yield more reliable predictions than perfecting one calibration.",
+    "explanation": "MOPEX supports multi-model ensembles over single-model perfection.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Morris analysis results for the Hernad GR4J model.",
+    "correct": "Morris with r=20 (100 evaluations, 0.3 s) ranked: x1 (mu-star=0.31) first as it controls precipitation-runoff partitioning; x3 (0.18) second for recession/peaks; x4 (0.14) third for lag; x2 (0.08) fourth but with sigma/mu-star=1.38 indicating nonlinearity modulated by production store. All four were retained due to the model's parsimony.",
+    "explanation": "Hernad Morris demonstrates ranking and nonlinearity identification.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain multi-variable calibration and how different observations constrain different parameters.",
+    "correct": "Multi-variable calibration uses observations beyond outlet discharge. Satellite soil moisture constrains infiltration/ET parameters. MODIS snow constrains snowmelt parameters. Groundwater levels constrain baseflow parameters. OVF provides discharge, water level, temperature, and groundwater. Each additional variable narrows acceptable parameter sets because they must simultaneously satisfy all observations, dramatically reducing equifinality.",
+    "explanation": "Multi-variable calibration effectively reduces calibration ambiguity.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss computational challenges of DREAM for complex models and mitigation strategies.",
+    "correct": "DREAM needs 50,000-500,000 evaluations. For a 10-minute model: 700 days serial, 22 days on 32 cores. Strategies: parallelization, Morris pre-screening, ML surrogates, adaptive proposals, hybrid SCE-UA+DREAM approaches. These challenges drive interest in ML alternatives and emulators.",
+    "explanation": "DREAM cost motivates efficient alternatives.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "What does the KGE drop from 0.82 to 0.76 in the Hernad validation indicate?",
+    "correct": "The 7% drop is modest, indicating transferable relationships rather than overfitting. PBIAS increase from 3.2% to 5.8% suggests slight water balance shift between periods. Severe drops (e.g., NSE 0.79 to 0.45) would indicate overfitting. GR4J parsimony (4 parameters) helps prevent overfitting by limiting degrees of freedom.",
+    "explanation": "Validation demonstrates acceptable versus problematic performance drops.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Compare EFAS and GloFAS and their relevance to Hungary.",
+    "correct": "EFAS covers Europe using LISFLOOD with ECMWF forecasts. GloFAS extends globally. Both use 51-member ensemble for probabilistic forecasts. Hungarian catchments are covered by both. EFAS notifications complement the Hungarian Water Forecasting Service national models. EFAS provides continental context and longer lead times; national models offer higher resolution and local expertise.",
+    "explanation": "EFAS and GloFAS operationalize calibration concepts at scale.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the SCS CN structural limitation and why calibration cannot fix it.",
+    "correct": "The SCS CN method lumps daily rainfall without resolving sub-daily intensity. It cannot reproduce infiltration excess during intense storms because intensity is not an input. No parameter adjustment fixes this. Other parameters compensate during calibration, but this compensation is period-specific and fails under different conditions, explaining transferability problems.",
+    "explanation": "Structural errors create non-transferable calibration artifacts.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "How does LamaH-CE contribute to calibration research in the Carpathian Basin?",
+    "correct": "LamaH-CE (Klingler et al., 2021) covers 859 Danube basin catchments with daily discharge, hourly ERA5 forcing, and 60+ attributes. It enables systematic studies across Central European settings, testing regionalization, comparing models, and training ML on large samples. Its coverage of Hungarian catchments makes it directly relevant to national water management.",
+    "explanation": "LamaH-CE brings large-sample hydrology to Central Europe.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Metropolis acceptance criterion in DREAM and why it matters.",
+    "correct": "Higher-probability candidates are always accepted. Lower-probability ones are accepted with probability equal to the posterior ratio, allowing occasional uphill moves that prevent entrapment in local optima. Over many iterations, the chain visits regions proportionally to their posterior probability. Without uphill moves, chains would converge to single points rather than sampling the full posterior.",
+    "explanation": "Metropolis acceptance transforms optimization into Bayesian sampling.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Thiessen polygons for preparing precipitation input in the Hernad model.",
+    "correct": "Seven stations spanning the elevation gradient were weighted by Thiessen polygon areas to produce catchment-average precipitation. This accounts for uneven station distribution across the large elevation range (plain to above 1,200 m). Simple arithmetic averaging would misrepresent spatial precipitation. The resulting 680 mm/year drives GR4J as lumped input.",
+    "explanation": "Spatial averaging directly affects calibration results.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain what it means for the calibration problem to be under-determined.",
+    "correct": "An under-determined system has more unknowns than independent constraints. A 10-parameter model with nonlinear interactions has more freedom than a single outlet discharge series can resolve. Discharge integrates all processes, preventing unique decomposition. Multiple parameter sets fit equally well (equifinality). Multi-variable, multi-site, and signature-based approaches add independent information to reduce under-determination.",
+    "explanation": "Under-determination is the mathematical root of equifinality.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Compare CAMELS-US and LamaH-CE datasets for calibration science.",
+    "correct": "CAMELS-US covers 671 US catchments; LamaH-CE covers 859 Danube basin catchments with daily discharge, hourly ERA5, and 60+ attributes. LamaH-CE is more relevant for European applications including Hungarian catchments. Both enable systematic cross-catchment analysis, regionalization testing, and ML training, transforming calibration from case studies to statistical science.",
+    "explanation": "Standardized datasets represent a paradigm shift in calibration.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how hybrid physics-ML models address limitations of pure approaches.",
+    "correct": "Pure physics models have structural limitations calibration cannot fix. Pure ML models lack physical constraints and may be implausible outside training domains. Hybrid models use neural networks for poorly-represented processes while maintaining conservation laws. For example, physics-based routing with ML-parameterized infiltration ensures water balance while learning local behavior. This combines generalizability of physics with ML flexibility.",
+    "explanation": "Hybrids represent a promising convergence of traditional and modern approaches.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain how ERA5 reanalysis supports hydrological calibration.",
+    "correct": "ERA5 provides hourly atmospheric variables on a 31 km grid from 1940 to present. It offers consistent, gap-free forcing even where gauges are sparse. LamaH-CE uses ERA5 for all 859 catchments ensuring standardized inputs. ERA5 also initializes EFAS. Advantages: spatial completeness, temporal consistency. Disadvantages: systematic biases in mountainous areas.",
+    "explanation": "ERA5 has become the standard forcing for large-sample studies.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why experienced modelers outperform novices despite identical tools.",
+    "correct": "Experienced modelers bring process understanding: when the hydrograph rises too quickly, they adjust surface storage, not baseflow. They make better choices about which parameters to calibrate, which complexity data supports, and evaluate fit visually capturing multi-criterion aspects. These diagnostic skills represent accumulated knowledge about model behavior that algorithms cannot replicate.",
+    "explanation": "Expert judgment remains valuable because calibration is part art, part science.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe behavioral parameter sets in GLUE and how they generate uncertainty bounds.",
+    "correct": "Parameter sets exceeding a threshold (e.g., NSE > 0.5) are behavioral; others are discarded. Each receives likelihood-proportional weights summing to 1. Running the model with each produces an ensemble. Weighted quantiles at each timestep give prediction intervals. This embraces equifinality by treating all acceptable sets as valid rather than selecting one.",
+    "explanation": "GLUE simplicity explains widespread adoption despite controversies.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Why do groundwater models need longer warm-up than rainfall-runoff models?",
+    "correct": "Rainfall-runoff models like GR4J need about one year because soil moisture timescales are days to months. Groundwater models need much longer because aquifer response times span years to decades. Starting MODFLOW with arbitrary heads produces transient artifacts lasting years. Required warm-up matches the dominant time constants of the modeled system.",
+    "explanation": "Warm-up duration must match modeled process time scales.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between parameter interactions and calibration algorithm choice.",
+    "correct": "Strong interactions (S_Ti much greater than S_i) mean parameter effects depend on other values. DREAM differential evolution proposals capture correlations naturally. In the Hernad example, x2 sigma/mu-star of 1.38 indicated modulated effects. For MODFLOW, spatial correlations motivate PEST regularization. The practical insight: sensitivity analysis first, then choose algorithms matching the interaction structure.",
+    "explanation": "Matching algorithm to interaction structure improves efficiency.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Describe the four types of uncertainty in hydrological predictions.",
+    "correct": "Parameter uncertainty: range of acceptable values (DREAM, GLUE). Forcing uncertainty: imperfect inputs (ensemble weather forecasts). Initial condition uncertainty: imperfect states (data assimilation). Structural uncertainty: equation simplifications (multi-model ensembles). Complete forecasting requires all four. EFAS combines ensemble forecasts, DA, and LISFLOOD for comprehensive representation.",
+    "explanation": "Four sources form a comprehensive framework for probabilistic prediction.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "How does HYDROINFO contribute to operational hydrology in Hungary?",
+    "correct": "HYDROINFO provides real-time water levels and forecasts for 98 river sections, drawing on 500 OVF stations. It supports flood monitoring, prediction, and warning. Real-time observations feed data assimilation for model updating. It is critical for Tisza management where 24-72 hour upstream lead times allow flood preparation.",
+    "explanation": "HYDROINFO connects monitoring to forecasting capability.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Pareto front for calibrating HEC-HMS with NSE and PBIAS.",
+    "correct": "The Pareto front has non-dominated solutions where improving one objective degrades another. One end: NSE=0.85, PBIAS=12% (good timing, moderate volume). Other end: NSE=0.72, PBIAS=2% (moderate timing, good volume). Flood modelers select high-NSE; water supply planners select low-PBIAS. The front reveals trade-offs, providing richer information than single-objective results.",
+    "explanation": "The Pareto front shows the full space of optimal trade-offs.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss significance of free OVF data since July 2024 for Hungarian hydrology.",
+    "correct": "Free data.vizugy.hu provides discharge, water level, temperature, and groundwater data from about 500 surface stations and 2,500 wells. Benefits: barrier-free research access, multi-variable calibration feasibility, long historical records for calibration/validation, and international researcher access. Combined with ERA5 and LamaH-CE, this creates a complete open-data ecosystem.",
+    "explanation": "Open data is prerequisite for reproducible calibration science.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the 90% DREAM prediction bounds and what 87%/81% coverage rates mean.",
+    "correct": "Bounds are 5th/95th percentiles from running GR4J with posterior samples. 87% calibration coverage is close to 90% nominal, indicating well-characterized parameter uncertainty. 81% validation coverage means bounds are too narrow due to structural uncertainty (simplified processes, no snow) not captured by parameters alone. The gap reflects hidden structural uncertainty.",
+    "explanation": "Coverage rates diagnose whether uncertainty estimates are appropriate.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Particle Filter versus EnKF for hydrological applications.",
+    "correct": "Both use ensembles. EnKF updates members via linear Kalman gain. Particle Filter reweights particles by observation likelihood without modifying states, handling non-Gaussian distributions better. However, it suffers particle degeneracy in high dimensions. EnKF is operational (EFAS, NWM) while Particle Filters remain research tools.",
+    "explanation": "Particle Filter is more general but less practical than EnKF.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain why calibration is described as the hinge between classical and AI-driven hydroinformatics.",
+    "correct": "Classical hydroinformatics develops models needing calibration, which reveals their limits: cost, dimensionality, equifinality, transfer, non-stationarity. These are precisely what ML and AI address: ML learns without parameters, agents automate workflows, transfer learning improves ungauged predictions, hybrids overcome structural limits. Understanding classical calibration provides the vocabulary making AI chapters intelligible.",
+    "explanation": "Calibration is the conceptual bridge between physics and AI.",
+    "chapter_num": 22
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the support problem in hydrology and how it relates to the need for model calibration.",
+    "correct": "The support problem refers to the mismatch between the spatial scale at which properties are measured (point scale, e.g., a 10 cm soil core) and the scale at which models require effective values (grid scale, e.g., 1 km cells). Within a single grid cell, properties like hydraulic conductivity vary across orders of magnitude due to heterogeneity. The effective value that makes model equations work at grid scale is not the same as any point measurement; it is a conceptual quantity defined by the model context. This mismatch applies to virtually every parameter (Manning n, LAI, curve number) and is the fundamental reason calibration is necessary even with perfect process equations.",
+    "explanation": "The support problem is another name for the upscaling problem and is the most fundamental justification for why calibration exists.",
+    "chapter_num": 22
+  }
+]

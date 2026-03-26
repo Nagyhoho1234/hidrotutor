@@ -1,0 +1,462 @@
+{
+  "chapter": "ch09",
+  "total_issues": 57,
+  "fixes": [
+    {
+      "line_approx": 10,
+      "category": "register",
+      "severity": "medium",
+      "original": "Van azonban egy bökkenő, mégpedig jelentős.",
+      "suggested": "Van azonban egy jelentős probléma.",
+      "reason": "A „bökkenő” kissé köznyelvi egy tudományos tankönyv stílusához."
+    },
+    {
+      "line_approx": 17,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az itt hozott döntések -- mely mélyedéseket töltsük fel, mely akadályokat vágjuk át, beégessünk-e külső vízhálózatot -- az elemzés minden további lépésére kihatnak.",
+      "suggested": "Az itt meghozott döntések -- mely mélyedéseket töltsük fel, mely akadályokat vágjuk át, illetve égessünk-e be külső vízhálózatot -- az elemzés minden további lépésére kihatnak.",
+      "reason": "Az „itt hozott döntések” és a „beégessünk” ebben a formában kissé nyers, fordításszagú; az „meghozott” és az „égessünk be” természetesebb."
+    },
+    {
+      "line_approx": 21,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az Egyesült Államokból, Magyarországról és globális példákon végig illusztráljuk, hogy a DEM kondicionálása univerzális feladat, amellyel mindenütt találkozunk, ahol digitális domborzati adat és hidrológiai elemzés találkozik.",
+      "suggested": "Az Egyesült Államokból, Magyarországról és globális példákból vett eseteken keresztül végig bemutatjuk, hogy a DEM kondicionálása univerzális feladat, amellyel mindenütt találkozunk, ahol digitális domborzati adatokat hidrológiai elemzésre használnak.",
+      "reason": "A „globális példákon végig illusztráljuk” szerkezet természetellenes; a mondat vége is ismétlődő és angolos."
+    },
+    {
+      "line_approx": 29,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A magas kumulált értékű cellák medrekre, az alacsonyak lejtőkre esnek.",
+      "suggested": "A magas kumulációs értékű cellák jellemzően a medrekhez, az alacsony értékűek a lejtőkhöz tartoznak.",
+      "reason": "A „kumulált értékű” és az „esnek” itt kevésbé szakszerű; a javasolt változat természetesebb hidroinformatikai megfogalmazás."
+    },
+    {
+      "line_approx": 33,
+      "category": "other",
+      "severity": "low",
+      "original": "A küszöb megválasztása szabályozza a származtatott vízhálózat sűrűségét.",
+      "suggested": "A küszöbérték megválasztása szabályozza a származtatott vízhálózat sűrűségét.",
+      "reason": "Terminológiailag pontosabb a „küszöbérték” használata."
+    },
+    {
+      "line_approx": 39,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A végeredmény átfogó hidrológiai adatstruktúra: az egyszerű magassági értékek rácsából összekapcsolt, nevesített szakaszokból álló vízhálózatot kapunk, beágyazott részvízgyűjtők halmazát számított területekkel, a lefolyási topológiát -- amely leírja, melyik részvízgyűjtő melyikbe folyik --, valamint a felszín bármely pontjáról bármely alsó pontig tartó áramlási útvonalak nyomkövetésének képességét.",
+      "suggested": "A végeredmény egy átfogó hidrológiai adatstruktúra: az egyszerű magassági rácsból összekapcsolt, névvel ellátott szakaszokból álló vízhálózat, számított területű, egymásba ágyazott részvízgyűjtők, a lefolyási topológia -- vagyis annak leírása, hogy melyik részvízgyűjtő melyikbe folyik --, valamint annak lehetősége, hogy a felszín bármely pontjától bármely lejjebb fekvő pontig nyomon kövessük az áramlási útvonalakat.",
+      "reason": "A mondat több ponton angolos szerkezetű („nevesített”, „nyomkövetésének képességét”), ezért nehézkesen hat."
+    },
+    {
+      "line_approx": 47,
+      "category": "register",
+      "severity": "low",
+      "original": "És minden hidrológiai modell, amelyet e hibás vízgyűjtő-lehatárolás alapján kalibrálnak, megbízhatatlan eredményeket ad.",
+      "suggested": "Minden hidrológiai modell, amelyet e hibás vízgyűjtő-lehatárolás alapján kalibrálnak, megbízhatatlan eredményeket ad.",
+      "reason": "Mondatkezdő „És” tudományos prózában általában kerülendő."
+    },
+    {
+      "line_approx": 50,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek azok a lépések, ahol az elemzőnek a legtöbb mérlegelést kell gyakorolnia, mert a döntések nem tisztán algoritmikusak.",
+      "suggested": "Ezek azok a lépések, amelyekben az elemző mérlegelése a legnagyobb szerepet kapja, mert a döntések nem vezethetők le tisztán algoritmikusan.",
+      "reason": "A „mérlegelést kell gyakorolnia” angolos, kevéssé idiomatikus magyar szerkezet."
+    },
+    {
+      "line_approx": 71,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az **átbukási pont** (pour point) a mélypontot körülvevő perem legalacsonyabb cellája",
+      "suggested": "A **kibukási pont** vagy **túlfolyási pont** (pour point) a mélypontot körülvevő perem legalacsonyabb cellája",
+      "reason": "Az „átbukási pont” nem igazán bevett magyar szakkifejezés; a „pour point” fordítására a „kibukási pont” vagy „túlfolyási pont” természetesebb."
+    },
+    {
+      "line_approx": 89,
+      "category": "adjective_stacking",
+      "severity": "low",
+      "original": "Magyarország UNESCO világörökségi helyszíne az ország északkeleti részén",
+      "suggested": "Magyarország egyik UNESCO-világörökségi helyszíne az ország északkeleti részén",
+      "reason": "Hiányzik az „egyik”, nélküle a szerkezet magyartalanul hat."
+    },
+    {
+      "line_approx": 104,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "A teljes vízgyűjtő terület alulbecsülésre kerül, a vízhálózatnak rései lesznek, és a hibás vízgyűjtőre alapozott csapadék-lefolyás számítás helytelen eredményeket ad.",
+      "suggested": "A teljes vízgyűjtő területet alulbecsülik, a vízhálózatban rések jelennek meg, és a hibás vízgyűjtőre alapozott csapadék-lefolyás számítás helytelen eredményeket ad.",
+      "reason": "Az „alulbecsülésre kerül” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 126,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A művelet után az egykori mélyedés sík területté válik az átbukási pont magasságán.",
+      "suggested": "A művelet után az egykori mélyedés az átbukási pont magasságában fekvő sík területté válik.",
+      "reason": "Az „az átbukási pont magasságán” szó szerinti, angolos megfogalmazás; a javasolt változat természetesebb magyarul."
+    },
+    {
+      "line_approx": 207,
+      "category": "register",
+      "severity": "medium",
+      "original": "A bevágás a feltöltésnél kevésbé széleskörűen elérhető a standard GIS-szoftverekben.",
+      "suggested": "A bevágás a feltöltésnél kevésbé érhető el a szokásos GIS-szoftverekben.",
+      "reason": "A „széleskörűen elérhető” és a „standard” angolos, nehézkes megfogalmazás; természetesebb magyar tudományos stílus a tömörebb szerkezet."
+    },
+    {
+      "line_approx": 216,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A választás attól függ, hogy a mélypont a műtermék (töltsük fel) vagy az akadály az (vágjuk át).",
+      "suggested": "A választás attól függ, hogy maga a mélypont műtermék-e (ekkor töltsük fel), vagy inkább egy akadály okozza (ekkor vágjuk át).",
+      "reason": "Az „az akadály az” szerkezet tükörfordításos és magyartalan; a mondat logikai viszonyai is világosabban fejezhetők ki."
+    },
+    {
+      "line_approx": 220,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A kondicionálásnak biztosítania kell, hogy minden cellától nem növekvő áramlási útvonal vezessen a tartomány határáig.",
+      "suggested": "A kondicionálásnak biztosítania kell, hogy minden cellából a tartomány határáig nem növekvő áramlási útvonal vezessen.",
+      "reason": "A „minden cellától” ebben a jelentésben természetellenes; magyarul a kiindulópontot itt inkább „minden cellából” fejezi ki."
+    },
+    {
+      "line_approx": 226,
+      "category": "register",
+      "severity": "low",
+      "original": "Elméleti eleganciája ellenére az optimális mélyponteltávolítás nem terjedt el az operatív gyakorlatban.",
+      "suggested": "Elméleti eleganciája ellenére az optimális mélyponteltávolítás nem terjedt el a gyakorlati alkalmazásban.",
+      "reason": "Az „operatív gyakorlatban” kissé idegenszerű és bürokratikus; a „gyakorlati alkalmazásban” természetesebb akadémiai magyar."
+    },
+    {
+      "line_approx": 227,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "2026-ban ez a módszer néhány speciális eszközben érhető el (leginkább a WhiteboxTools programban), de nem része az ArcGIS Pro, TauDEM vagy QGIS alapvető algoritmusainak.",
+      "suggested": "2026-ban ez a módszer csak néhány speciális eszközben érhető el (leginkább a WhiteboxTools programban), és nem része az ArcGIS Pro, a TauDEM vagy a QGIS alapvető algoritmusainak.",
+      "reason": "A „néhány speciális eszközben érhető el” mellé a „csak” pontosítja a jelentést; az intézmény-/szoftvernevek előtti névelőzés is természetesebb."
+    },
+    {
+      "line_approx": 231,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A DEM-kondicionálásnak van azonban egy másik kategóriája: az, hogy a DEM-ből származtatott lefolyási minták egyezzenek a függetlenül térképezett vízhálózattal.",
+      "suggested": "A DEM-kondicionálásnak van azonban egy másik típusa is: ilyenkor azt biztosítjuk, hogy a DEM-ből származtatott lefolyási minták egyezzenek a függetlenül térképezett vízhálózattal.",
+      "reason": "Az „az, hogy” szerkezet angolosan körülményes; a „kategória” helyett a „típus” is természetesebb ebben az összefüggésben."
+    },
+    {
+      "line_approx": 235,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A DEM-ben ábrázolt terepfelszín lejtése olyan irányt is mutathat, amely több száz méterrel eltér a meder valódi helyétől, különösen sík terepen.",
+      "suggested": "A DEM-ben ábrázolt terepfelszín lejtése olyan irányt is kijelölhet, amely több száz méterrel eltér a meder valódi helyétől, különösen sík terepen.",
+      "reason": "A „lejtés irányt mutat” kissé pontatlan és idegenszerű; a „kijelölhet” jobban illik a hidrológiai-szakmai kontextushoz."
+    },
+    {
+      "line_approx": 237,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Erdős folyóvölgyekben az erdős lejtő látszólagos magassága alacsonyabb lehet, mint a meder feletti lombkoronáé, aminek következtében a DEM a vizet a medertől elfelé irányítja.",
+      "suggested": "Erdős folyóvölgyekben az erdős lejtő látszólagos magassága alacsonyabb lehet, mint a meder fölötti lombkoronáé, ezért a DEM a vizet a medertől elfelé vezetheti.",
+      "reason": "A „meder feletti” helyett a „meder fölötti” természetesebb; az „aminek következtében” nehézkes, a „vezetheti” pedig idiomatikusabb az „irányítja” helyett."
+    },
+    {
+      "line_approx": 241,
+      "category": "plural",
+      "severity": "low",
+      "original": "Városias területek, mezőgazdasági vízelvezetési hálózatok és árvízvédelmi létesítmények olyan módokon módosítják a lefolyási mintákat, amelyeket a DEM-felszín önmagában nem tár fel.",
+      "suggested": "A városias területek, a mezőgazdasági vízelvezető hálózatok és az árvízvédelmi létesítmények úgy módosíthatják a lefolyási mintázatot, hogy azt a DEM-felszín önmagában nem tárja fel.",
+      "reason": "A többes számok halmozása és az „olyan módokon” szerkezet angolos; a mondat egyes számban és egyszerűbb szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 242,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ha rendelkezésre áll függetlenül térképezett vízhálózat -- mint az NHD az Egyesült Államokban, az EU-Hydro Európában vagy a HydroSHEDS globálisan --, a DEM-rekondicionálás kényszeríti a lefolyást, hogy kövesse ezeket az ismert medervonalakat.",
+      "suggested": "Ha rendelkezésre áll függetlenül térképezett vízhálózat -- például az NHD az Egyesült Államokban, az EU-Hydro Európában vagy a HydroSHEDS globálisan --, a DEM-rekondicionálás arra kényszeríti a lefolyást, hogy ezeket az ismert medervonalakat kövesse.",
+      "reason": "A „mint” itt angolos betoldás; az „arra kényszeríti” szerkezet magyarosabb, a szórend is természetesebb."
+    },
+    {
+      "line_approx": 249,
+      "category": "register",
+      "severity": "low",
+      "original": "A hatás: az egész domborzat a medrekhez képest megemelkedik.",
+      "suggested": "Ennek hatására az egész domborzat a medrekhez képest megemelkedik.",
+      "reason": "Az „A hatás:” töredékes, angolos felütés; a teljes mondat természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 253,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A kondicionált DEM kizárólag folyásirány- és kumulációszámításhoz alkalmas.",
+      "suggested": "A kondicionált DEM kizárólag folyásirány- és vízgyűjtőterület-kumulációs számításokhoz alkalmas.",
+      "reason": "A „kumulációszámítás” önmagában szűkszavú és kissé bizonytalan terminus; érdemes pontosabban megnevezni a hidrológiai műveletet."
+    },
+    {
+      "line_approx": 257,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az AGREE a meredek fal problémáját sima, távolságfüggő lejtés alkalmazásával kezeli.",
+      "suggested": "Az AGREE a meredek falak problémáját úgy kezeli, hogy sima, távolságfüggő lejtést alakít ki.",
+      "reason": "Az „alkalmazásával kezeli” tipikus fordításszagú főneves szerkezet; igés megfogalmazással természetesebb."
+    },
+    {
+      "line_approx": 261,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A csökkentés lineárisan nő nulláról a pufferzóna szélén a teljes süllyesztési értékig a mederparton.",
+      "suggested": "A csökkentés a pufferzóna szélén nulláról a mederpartnál elért teljes süllyesztési értékig lineárisan nő.",
+      "reason": "Az eredeti szórend nehézkes; a viszonyok világosabbak, ha a helyhatározók rendezettebben követik egymást."
+    },
+    {
+      "line_approx": 274,
+      "category": "heading",
+      "severity": "low",
+      "original": "### 9.6.4 A rekondicionálás eldöntése",
+      "suggested": "### 9.6.4 Mikor indokolt a rekondicionálás?",
+      "reason": "Az alcím jelenlegi alakja kissé tükörfordításos és nehézkes; kérdésformában természetesebb és informatívabb."
+    },
+    {
+      "line_approx": 290,
+      "category": "register",
+      "severity": "medium",
+      "original": "A mélypontfeltöltés vagy mederbeégetés ellenőrzés nélküli alkalmazása az észleletlen hibák receptje.",
+      "suggested": "A mélypontfeltöltés vagy a mederbeégetés ellenőrzés nélküli alkalmazása könnyen észrevétlen hibákhoz vezethet.",
+      "reason": "A „hibák receptje” szó szerinti angol idióma; magyarul idiomatikusabb az „hibákhoz vezethet” szerkezet."
+    },
+    {
+      "line_approx": 297,
+      "category": "register",
+      "severity": "low",
+      "original": "Nulla értékek uralják a tájat -- a cellák túlnyomó többségét a feltöltés nem érinti.",
+      "suggested": "A tájat nulla értékek uralják -- a cellák túlnyomó többségét a feltöltés nem érinti.",
+      "reason": "Az eredeti szórend kissé angolos; a magyarban természetesebb a topik előrehozása vagy a semlegesebb mondatkezdés."
+    },
+    {
+      "line_approx": 321,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A feltöltött-mínusz-DEM diagnosztika ezeket a formákat pozitív értékű klaszterekként mutatja nulla háttér előtt -- kész karsztos mélyedés-leltárt biztosítva.",
+      "suggested": "A feltöltött-mínusz-DEM diagnosztika ezeket a formákat pozitív értékű klaszterekként mutatja a nullaértékű háttéren, és gyakorlatilag karsztos mélyedésleltárt ad.",
+      "reason": "A „nulla háttér előtt” és a „biztosítva” szerkezet fordításszagú; a javasolt változat idiomatikusabb magyar megfogalmazás."
+    },
+    {
+      "line_approx": 408,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro csendesen csonkítja az értékeket.",
+      "suggested": "Az ArcGIS Pro külön jelölés nélkül csonkítja az értékeket.",
+      "reason": "A „csendesen” angol mintájú, kevésbé természetes ebben a műszaki kontextusban."
+    },
+    {
+      "line_approx": 412,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A szabványos stratégia: a vizsgálati terület határát 1--5 km-es pufferrel bővítjük a DEM vágása előtt, feldolgozzuk a pufferelt DEM-et, majd az eredményeket az eredeti határra vágjuk.",
+      "suggested": "A szabványos stratégia: a DEM kivágása előtt a vizsgálati terület határát 1--5 km-es pufferrel bővítjük, feldolgozzuk a pufferelt DEM-et, majd az eredményeket az eredeti határra vágjuk.",
+      "reason": "Természetesebb magyar szórend, ha az időhatározó közvetlenül a kapcsolódó művelet előtt áll."
+    },
+    {
+      "line_approx": 418,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ArcGIS Pro a hidrológiai terep-elemzést a **Spatial Analyst** bővítmény **Hydrology eszközkészletén** keresztül biztosítja:",
+      "suggested": "Az ArcGIS Pro a hidrológiai terepelemzéshez a **Spatial Analyst** bővítmény **Hydrology eszközkészletét** kínálja:",
+      "reason": "A „keresztül biztosítja” angolos, körülményes szerkezet; a javasolt változat természetesebb magyar szaknyelvi megfogalmazás."
+    },
+    {
+      "line_approx": 427,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az ArcGIS-ökoszisztéma további Spatial Analyst-funkciókkal integrálódik.",
+      "suggested": "Az eszközkészlet jól illeszkedik az ArcGIS-ökoszisztéma további Spatial Analyst-funkcióihoz.",
+      "reason": "Az „integrálódik” itt angol mintájú használat; a „jól illeszkedik” természetesebb."
+    },
+    {
+      "line_approx": 431,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "azonnali eredményeket adva letöltés és helyi feldolgozás nélkül",
+      "suggested": "azonnali eredményt adva letöltés és helyi feldolgozás nélkül",
+      "reason": "A magyarban ebben az általános értelemben természetesebb az egyes szám használata."
+    },
+    {
+      "line_approx": 439,
+      "category": "register",
+      "severity": "low",
+      "original": "Ez a legfejlettebb szabadon elérhető eszköz a DEM-alapú hidrológiai elemzéshez.",
+      "suggested": "A TauDEM az egyik legfejlettebb, szabadon elérhető eszköz a DEM-alapú hidrológiai elemzéshez.",
+      "reason": "A kategorikus állítás túl erős; tudományos tankönyvi regiszterben óvatosabb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 441,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A programok GeoTIFF rasztereken kommunikálnak, szisztematikus névkonvencióval:",
+      "suggested": "A programok GeoTIFF raszterfájlokon keresztül adják át egymásnak az adatokat, egységes névkonvenció szerint:",
+      "reason": "A „rasztereken kommunikálnak” szó szerinti, angolos megfogalmazás; magyarul pontosabban az adatátadás írható le."
+    },
+    {
+      "line_approx": 444,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mindegyik külön processzormagon fut",
+      "suggested": "mindegyik külön processzormagon vagy processzoron fut",
+      "reason": "Az MPI nem feltétlenül csak magok között működik; a megfogalmazás így pontosabb és természetesebb."
+    },
+    {
+      "line_approx": 446,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a kitettségi szög alapján",
+      "suggested": "a lejtésirány szöge alapján",
+      "reason": "A „kitettség” itt nem a bevett hidrológiai/geomorfológiai terminus; a Dinf algoritmusnál a lejtésirány szöge a pontosabb."
+    },
+    {
+      "line_approx": 454,
+      "category": "heading",
+      "severity": "low",
+      "original": "**9.5. táblázat**: TauDEM kimeneti fájl elnevezési konvenciók",
+      "suggested": "**9.5. táblázat**: A TauDEM kimeneti fájljainak elnevezési konvenciói",
+      "reason": "Magyarul természetesebb, teljesebb címadás."
+    },
+    {
+      "line_approx": 475,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Elemosztályokat tartalmaz hidrológiai csomópontokhoz, élekhez (mederszakaszok), vízgyűjtőkhöz, megfigyelőpontokhoz és idősorokhoz, valamint a lefolyási topológiát kódoló kapcsolati osztályokat.",
+      "suggested": "Elemosztályokat tartalmaz a hidrológiai csomópontokhoz, élekhez (mederszakaszokhoz), vízgyűjtőkhöz, megfigyelőpontokhoz és idősorokhoz, valamint a lefolyási topológiát leíró kapcsolati osztályokat.",
+      "reason": "Hiányzó névelő és ragpárhuzam; a „kódoló” is kissé angolos ebben a kontextusban."
+    },
+    {
+      "line_approx": 489,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A **GRASS GIS** (r.fill.dir, r.watershed, r.stream.extract) átfogó eszközkészletet biztosít, beleértve a Least Cost Path módszert, amely nem igényel explicit mélypontfeltöltést.",
+      "suggested": "A **GRASS GIS** (r.fill.dir, r.watershed, r.stream.extract) átfogó eszközkészletet kínál, köztük a Least Cost Path módszert is, amely nem igényel explicit mélypontfeltöltést.",
+      "reason": "A „biztosít, beleértve” szerkezet angolos; a javasolt változat gördülékenyebb magyar mondat."
+    },
+    {
+      "line_approx": 510,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 9.11.1 Egyesült Államok-beli DEM-források",
+      "suggested": "### 9.11.1 DEM-források az Egyesült Államokban",
+      "reason": "Az „Egyesült Államok-beli” nehézkes, kevésbé természetes címmegoldás."
+    },
+    {
+      "line_approx": 512,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A jelenlegi nemzeti termék a **National Elevation Dataset (NED)**",
+      "suggested": "A jelenlegi országos adattermék a **National Elevation Dataset (NED)**",
+      "reason": "A „nemzeti termék” tükörfordítás-szerű; az „országos adattermék” pontosabb szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 545,
+      "category": "terminology",
+      "severity": "low",
+      "original": "A **köbös konvolúció** a legsimább eredmény; lejtő- és kitettség-elemzéshez előnyös.",
+      "suggested": "A **köbös konvolúció** adja a legsimább eredményt; lejtő- és kitettségelemzéshez előnyös.",
+      "reason": "Hiányzik az állítmányi ige, és a „kitettségelemzés” egybeírva természetesebb szakszó."
+    },
+    {
+      "line_approx": 1201,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "**4. lépés: Feltöltött-mínusz-DEM diagnosztika.**",
+      "suggested": "**4. lépés: Feltöltött DEM mínusz eredeti DEM diagnosztika.**",
+      "reason": "A „feltöltött-mínusz-DEM” szerkezet nehezen értelmezhető; világosabb, ha a különbségképzés két tagja expliciten szerepel."
+    },
+    {
+      "line_approx": 1202,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Vizsgáljuk meg a nagy feltöltéseket, a szisztematikus DEM-műtermékekre utaló mintázatokat és a rekondicionálási hatásokat.",
+      "suggested": "Vizsgáljuk meg a nagy feltöltési értékeket, a szisztematikus DEM-műtermékekre utaló mintázatokat és a rekondicionálás hatásait.",
+      "reason": "A „nagy feltöltések” és a „rekondicionálási hatások” angolos, főnevesített megfogalmazás; magyarul természetesebb a pontosabb, egyszerűbb szerkezet."
+    },
+    {
+      "line_approx": 1204,
+      "category": "register",
+      "severity": "low",
+      "original": "**5. lépés: Továbblépés a folyásirány-számításhoz.**",
+      "suggested": "**5. lépés: Folyásirány-számítás.**",
+      "reason": "A „továbblépés” kissé instrukciós, nem tankönyvi alcímbe illő fordulat; a rövidebb cím természetesebb."
+    },
+    {
+      "line_approx": 1209,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A nagy „feltöltések\" a medervonalak mentén nem mélyedés-feltöltések, hanem a beégetett mederárok visszatöltései.",
+      "suggested": "A medervonalak mentén megjelenő nagy „feltöltések” nem valódi mélyedésfeltöltések, hanem a beégetett mederárkok kiegyenlítődését jelzik.",
+      "reason": "A „visszatöltései” itt nehézkes és félrefordításgyanús; a jelenség értelmezését magyarosabban adja vissza a „kiegyenlítődését jelzik” szerkezet."
+    },
+    {
+      "line_approx": 1211,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A feltöltött DEM kizárólag folyásirány- és kumulációszámításhoz való.",
+      "suggested": "A feltöltött DEM kizárólag folyásirány- és vízgyűjtőterület-kumulációs számításokhoz használható.",
+      "reason": "A „kumulációszámítás” önmagában túl általános; hidrológiai kontextusban pontosabb a felhalmozódás/vízgyűjtőterület-kumuláció megnevezése."
+    },
+    {
+      "line_approx": 1219,
+      "category": "terminology",
+      "severity": "high",
+      "original": "**9.6. ábra**: Ajánlott DEM-kondicionálási munkafolyamat. A kondicionált DEM kizárólag áramlásirányításhoz használandó; domborzati deriváltakat az eredeti DEM-ből kell számítani.",
+      "suggested": "**9.6. ábra**: Ajánlott DEM-kondicionálási munkafolyamat. A kondicionált DEM kizárólag folyásirány-számításhoz használandó; a domborzati származtatott mutatókat az eredeti DEM-ből kell számítani.",
+      "reason": "Az „áramlásirányítás” hibás terminus ebben a kontextusban; itt „folyásirány-számításról” van szó. A „domborzati deriváltak” is kevésbé természetes magyarul."
+    },
+    {
+      "line_approx": 1225,
+      "category": "register",
+      "severity": "low",
+      "original": "A gyakorlati megközelítés: vízgyűjtő-lehatároláshoz feltöltjük a mélyedéseket (elfogadva az egyszerűsítést), dokumentáljuk a karsztos formákat, és jelezzük, hogy a topográfiai vízgyűjtő csak közelítés.",
+      "suggested": "Gyakorlati szempontból a vízgyűjtő lehatárolásához feltöltjük a mélyedéseket, dokumentáljuk a karsztos formákat, és jelezzük, hogy a topográfiai vízgyűjtő csak közelítés.",
+      "reason": "Az „A gyakorlati megközelítés:” angolos felütés; a mondat folyékonyabb, ha közvetlenebbül indul."
+    },
+    {
+      "line_approx": 1229,
+      "category": "register",
+      "severity": "medium",
+      "original": "Sík terepen -- deltákon, nagy ártereken, tengerparti síkságokon -- a DEM függőleges pontossága összemérhető a teljes domborzati relief-fel.",
+      "suggested": "Sík terepen -- deltákon, nagy ártereken, tengerparti síkságokon -- a DEM függőleges pontossága összemérhető a teljes domborzati szintkülönbséggel.",
+      "reason": "A „relief” itt indokolatlan idegen szó; magyar tudományos prózában természetesebb a „szintkülönbség” vagy „reliefenergia” helyett pontos magyar megfelelő."
+    },
+    {
+      "line_approx": 1231,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A mederbeégetés itt különösen fontos: a vízhálózat DEM-be kényszerítése biztosítja, hogy a fő medervonalak helyesek legyenek, még ha a lejtőoldali áramlási mintákat a DEM zajszintje is korlátozza.",
+      "suggested": "Itt különösen fontos a mederbeégetés: ha a vízhálózatot beépítjük a DEM-be, a fő medervonalak helyesen jelennek meg, még ha a lejtőoldali lefolyási mintázatokat a DEM zajszintje korlátozza is.",
+      "reason": "A „DEM-be kényszerítése biztosítja” angolos és nehézkes; a javasolt változat természetesebb magyar mondatszerkezetet használ."
+    },
+    {
+      "line_approx": 1233,
+      "category": "adjective_stacking",
+      "severity": "high",
+      "original": "Magyarországon a Nagy Magyar Alföld és a Tisza ártere illusztrálja ezt a problémát.",
+      "suggested": "Magyarországon az Alföld és a Tisza ártere jól szemlélteti ezt a problémát.",
+      "reason": "A „Nagy Magyar Alföld” ebben a formában természetellenes és fordításszagú; bevett magyar megnevezés az „Alföld” vagy „Nagyalföld”."
+    },
+    {
+      "line_approx": 1237,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A DEM kondicionálása az a lépés, ahol a nyersen szállított magassági adatokból hidrológiai elemzésre alkalmas felszín készül.",
+      "suggested": "A DEM kondicionálása során a nyers magassági adatokból hidrológiai elemzésre alkalmas felszínt állítunk elő.",
+      "reason": "Az „az a lépés, ahol” és a „nyersen szállított” szókapcsolat angolos; a javasolt változat tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 1249,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A 10. fejezet erre a kondicionált DEM-re építve vezeti be a folyásirány- és kumulációszámítást -- az áramlásirányítási keretrendszer következő lépéseit.",
+      "suggested": "A 10. fejezet erre a kondicionált DEM-re építve vezeti be a folyásirány- és kumulációszámítást -- a lefolyásmodellezési keretrendszer következő lépéseit.",
+      "reason": "Az „áramlásirányítási keretrendszer” hibás vagy félrevezető terminus; itt nem irányításról, hanem a lefolyás leírásának/modellezésének módszertanáról van szó."
+    }
+  ]
+}

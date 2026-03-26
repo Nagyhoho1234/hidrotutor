@@ -1,0 +1,2902 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a Nash-Sutcliffe-hatékonyság (NSE) értéke, amely azt jelzi, hogy a modell nem jobb a megfigyelt átlag előrejelzésénél?",
+    "options": [
+      "A. -1,0",
+      "B. 0,0",
+      "C. 0,5",
+      "D. 1,0"
+    ],
+    "correct": "B",
+    "explanation": "Az NSE = 0,0 azt jelenti, hogy a modell előrejelzései pontosan annyira pontosak, mint az átlagos megfigyelt vízhozam minden időlépésben."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette ki az SCE-UA algoritmust?",
+    "options": [
+      "A. Keith Beven és Andrew Binley",
+      "B. Jasper Vrugt és társai",
+      "C. Duan, Sorooshian és Gupta az Arizonai Egyetemen",
+      "D. John Doherty"
+    ],
+    "correct": "C",
+    "explanation": "Az SCE-UA-t Duan, Sorooshian és Gupta publikálta 1992-ben az Arizonai Egyetemen."
+  },
+  {
+    "type": "mcq",
+    "question": "A Moriasi és társai (2007) irányelvei szerint milyen NSE-tartomány tekinthető 'nagyon jónak' napi vízhozam-szimulációnál?",
+    "options": [
+      "A. 0,50 felett",
+      "B. 0,65 felett",
+      "C. 0,75 felett",
+      "D. 0,90 felett"
+    ],
+    "correct": "C",
+    "explanation": "Moriasi et al. a 0,75 feletti NSE-t 'nagyon jónak' kategorizálja napi vízhozamra."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány paramétere van a GR4J modellnek?",
+    "options": [
+      "A. 2",
+      "B. 4",
+      "C. 6",
+      "D. 9"
+    ],
+    "correct": "B",
+    "explanation": "A GR4J (modèle du Génie Rural à 4 paramètres Journalier) pontosan négy paramétert tartalmaz."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik algoritmus a hidrológiában legszélesebb körben használt Bayes-i mintavételező?",
+    "options": [
+      "A. SCE-UA",
+      "B. NSGA-II",
+      "C. DREAM",
+      "D. PEST"
+    ],
+    "correct": "C",
+    "explanation": "A DREAM (DiffeRential Evolution Adaptive Metropolis) algoritmust Vrugt és társai fejlesztették ki."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelöl a KGE mérőszám β összetevője?",
+    "options": [
+      "A. Korrelációt",
+      "B. Torzítási arányt",
+      "C. Változékonysági arányt",
+      "D. Modell futásidejét"
+    ],
+    "correct": "B",
+    "explanation": "A β a torzítási arány (bias ratio), amely a szimulált és megfigyelt átlagvízhozam arányát méri."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ekvifinalitás a hidrológiai modellezésben?",
+    "options": [
+      "A. Egyetlen optimális paraméterkészlet létezése",
+      "B. Különböző paraméterkészletek egyformán jó szimulációkat adhatnak",
+      "C. A modell mindig konvergál a globális optimumhoz",
+      "D. A paraméterek közvetlenül mérhetők"
+    ],
+    "correct": "B",
+    "explanation": "Az ekvifinalitás: több, néha radikálisan különböző paraméterkészlet egymástól megkülönböztethetetlen modellkimeneteket produkálhat."
+  },
+  {
+    "type": "mcq",
+    "question": "Kit társítunk az ekvifinalitás tézisének megalkotásához (1996)?",
+    "options": [
+      "A. Nash és Sutcliffe",
+      "B. Gupta és társai",
+      "C. Keith Beven",
+      "D. Duan és Sorooshian"
+    ],
+    "correct": "C",
+    "explanation": "Keith Beven 1996-ban publikálta 'A manifesto for the equifinality thesis' című tanulmányát."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GLUE keretrendszer rövidítése?",
+    "options": [
+      "A. General Linear Uncertainty Estimation",
+      "B. Generalized Likelihood Uncertainty Estimation",
+      "C. Global Learning Under Equifinality",
+      "D. Gradient-based Likelihood Uncertainty Evaluation"
+    ],
+    "correct": "B",
+    "explanation": "GLUE: Generalized Likelihood Uncertainty Estimation."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik többcélfüggvényes optimalizálási algoritmust használják legszélesebb körben a hidrológiában?",
+    "options": [
+      "A. DREAM",
+      "B. SCE-UA",
+      "C. NSGA-II",
+      "D. PEST"
+    ],
+    "correct": "C",
+    "explanation": "Az NSGA-II (Non-dominated Sorting Genetic Algorithm II) a legszélesebb körben használt többcélfüggvényes optimalizáló."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit mér az elsőrendű Sobol-index (Si)?",
+    "options": [
+      "A. Paraméter-interakciók összességét",
+      "B. A paraméternek egyedül tulajdonítható kimeneti variancia hányadát",
+      "C. A modell futásidejét",
+      "D. A paraméter fizikai tartományát"
+    ],
+    "correct": "B",
+    "explanation": "Si az adott paraméternek egyedül tulajdonítható kimeneti variancia hányadát méri."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány modellkiértékelést igényel jellemzően a DREAM a konvergenciához?",
+    "options": [
+      "A. 100-500",
+      "B. 1 000-5 000",
+      "C. 50 000-500 000",
+      "D. Több millió"
+    ],
+    "correct": "C",
+    "explanation": "A DREAM jellemzően 50 000-500 000 modellkiértékelést igényel."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik érzékenységvizsgálati módszer használható szűrőként kevés modellkiértékeléssel?",
+    "options": [
+      "A. Sobol-elemzés",
+      "B. Morris-módszer",
+      "C. DREAM",
+      "D. NSGA-II"
+    ],
+    "correct": "B",
+    "explanation": "A Morris-módszer költséghatékony szűrési technika a fontos paraméterek azonosítására."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelöl a μ* a Morris-módszerben?",
+    "options": [
+      "A. A modell futásidejét",
+      "B. Az elemi hatások abszolút értékeinek átlagát",
+      "C. A paraméter fizikai tartományát",
+      "D. A sztochasztikus variabilitást"
+    ],
+    "correct": "B",
+    "explanation": "A μ* az adott paraméter elemi hatásai abszolút értékeinek átlaga; magas μ* fontos paramétert jelez."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Kálmán-szűrő alapvető célja a hidrológiában?",
+    "options": [
+      "A. Paraméterek optimalizálása",
+      "B. Modellállapotok valós idejű frissítése megfigyelésekkel",
+      "C. Felszínborítás-osztályozás",
+      "D. Vízgyűjtő-lehatárolás"
+    ],
+    "correct": "B",
+    "explanation": "A Kálmán-szűrő valós idejű megfigyelések beépítésével frissíti a modellállapotokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette ki az Együttes Kálmán-szűrőt (EnKF)?",
+    "options": [
+      "A. Rudolf Kálmán",
+      "B. Keith Beven",
+      "C. Geir Evensen",
+      "D. Duan és Gupta"
+    ],
+    "correct": "C",
+    "explanation": "Az EnKF-et Geir Evensen javasolta 1994-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád GR4J kalibrációja milyen KGE értéket ért el a kalibrációs időszakban?",
+    "options": [
+      "A. 0,65",
+      "B. 0,72",
+      "C. 0,82",
+      "D. 0,91"
+    ],
+    "correct": "C",
+    "explanation": "A Hernád vízgyűjtőjén a kalibrációs KGE = 0,82."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GR4J modell x2 paraméterének fizikai szerepe?",
+    "options": [
+      "A. Termelési tározó kapacitása",
+      "B. Felszín alatti víz csereegyütthatója",
+      "C. Útválasztási tározó kapacitása",
+      "D. Egységhidrográf időbázisa"
+    ],
+    "correct": "B",
+    "explanation": "Az x2 a felszín alatti víz csereegyütthatója (mm/nap)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Pareto-front a többcélfüggvényes optimalizálásban?",
+    "options": [
+      "A. A legrosszabb megoldások halmaza",
+      "B. Azon paraméterkombinációk halmaza, amelyeknél egyetlen cél sem javítható egy másik rontása nélkül",
+      "C. Az egyetlen optimális megoldás",
+      "D. A véletlenszerű mintavételi pontok halmaza"
+    ],
+    "correct": "B",
+    "explanation": "A Pareto-front nem-dominált megoldások halmaza."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NSE mérőszámnak melyik ismert korlátja van?",
+    "options": [
+      "A. Túlságosan érzékeny az alapvízhozamra",
+      "B. A nagyvízi értékek dominálják",
+      "C. Nem működik napi adatokkal",
+      "D. Csak pozitív értékeket vehet fel"
+    ],
+    "correct": "B",
+    "explanation": "A négyzethibák aránytalanul nagy súlyt adnak a csúcsértékeknek."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szoftvercsomag a MODFLOW-kalibráció szabványos eszköze?",
+    "options": [
+      "A. SWAT-CUP",
+      "B. PEST",
+      "C. HEC-HMS",
+      "D. GR4J"
+    ],
+    "correct": "B",
+    "explanation": "A PEST (Parameter ESTimation) a MODFLOW-kalibráció szabványos eszköze."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi a lokális érzékenységvizsgálatot?",
+    "options": [
+      "A. A teljes paraméterteret vizsgálja",
+      "B. Kis perturbációk hatását értékeli egyetlen pont körül",
+      "C. Több millió modellkiértékelést igényel",
+      "D. Figyelembe veszi a paraméter-interakciókat"
+    ],
+    "correct": "B",
+    "explanation": "A lokális érzékenységvizsgálat kis perturbációk hatását értékeli a paramétertér egyetlen pontja körül."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adathalmaz fed le 859 vízgyűjtőt Közép-Európában, beleértve magyar vízgyűjtőket?",
+    "options": [
+      "A. CAMELS",
+      "B. CAMELS-GB",
+      "C. LamaH-CE",
+      "D. CAMELS-BR"
+    ],
+    "correct": "C",
+    "explanation": "A LamaH-CE 859 vízgyűjtőt fed le a Duna-medencében, számos magyar vízgyűjtőt beleértve."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS melyik hidrológiai modellt használja?",
+    "options": [
+      "A. HEC-HMS",
+      "B. SWAT",
+      "C. LISFLOOD",
+      "D. GR4J"
+    ],
+    "correct": "C",
+    "explanation": "Az EFAS az ECMWF által hajtott LISFLOOD elosztott modellt használja."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a dimenziók átka a kalibrációban?",
+    "options": [
+      "A. A modell túl lassú futásideje",
+      "B. A keresési tér exponenciálisan nő a paraméterek számával",
+      "C. A megfigyelési adatok hiánya",
+      "D. A modellstruktúra hibája"
+    ],
+    "correct": "B",
+    "explanation": "A hipertér térfogata exponenciálisan nő a dimenzióval."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány alapparamétere van a NAM modellnek?",
+    "options": [
+      "A. 4",
+      "B. 6",
+      "C. 9",
+      "D. 15"
+    ],
+    "correct": "C",
+    "explanation": "A NAM modell kilenc alapparamétert használ."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a SWAT modell térbeli egysége?",
+    "options": [
+      "A. Rácscella",
+      "B. Hidrológiai Válaszegység (HRU)",
+      "C. Összevont vízgyűjtő",
+      "D. Kálmán-cella"
+    ],
+    "correct": "B",
+    "explanation": "A SWAT HRU-kat (Hydrologic Response Units) használ."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a felskálázási probléma (upscaling problem) lényege?",
+    "options": [
+      "A. A modell túl nagy felbontásban fut",
+      "B. A pontléptékű mérések nem reprezentálják a rácsléptékű effektív paramétereket",
+      "C. A vízgyűjtő túl kicsi a modellezéshez",
+      "D. A csapadékadat túl durva"
+    ],
+    "correct": "B",
+    "explanation": "A pontléptékű mérések és rácsléptékű effektív paraméterek közötti eltérés."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik felszínmodellt alkalmazzák az amerikai Nemzeti Vízmodellben (NWM)?",
+    "options": [
+      "A. GR4J",
+      "B. NAM",
+      "C. Noah-MP",
+      "D. SWAT"
+    ],
+    "correct": "C",
+    "explanation": "A Noah-MP felszínmodellt az NWM-ben és a WRF modellben használják."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád vízgyűjtőjén a GR4J x2 paramétere pozitív értékű volt. Mit jelez ez?",
+    "options": [
+      "A. Vízveszteség a mély rendszer felé",
+      "B. Nettó nyereség mély felszín alatti vízből",
+      "C. Nincs felszín alatti víz csere",
+      "D. A modell hibás"
+    ],
+    "correct": "B",
+    "explanation": "Pozitív x2 nettó felszín alatti víz nyereséget jelez, konzisztens a karsztos geológiával."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú Kálmán-szűrőt használnak nemlineáris hidrológiai modelleknél?",
+    "options": [
+      "A. Standard Kálmán-szűrő",
+      "B. Együttes Kálmán-szűrő (EnKF)",
+      "C. Lineáris Kálmán-szűrő",
+      "D. Állandó Kálmán-szűrő"
+    ],
+    "correct": "B",
+    "explanation": "Az EnKF együttes futtatásokkal kezeli a nemlinearitást."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik érzékenységvizsgálati módszer ad teljes varianciafelbontást?",
+    "options": [
+      "A. Morris-módszer",
+      "B. Egyenkénti (OAT)",
+      "C. Sobol-módszer",
+      "D. Manuális érzékenységvizsgálat"
+    ],
+    "correct": "C",
+    "explanation": "A Sobol-módszer a kimenet teljes varianciáját bontja paraméterekre és interakciókra."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen validációs stratégiát alkalmazunk a kalibráció után?",
+    "options": [
+      "A. Ugyanazon időszakon futtatás",
+      "B. Független időszakra futtatás",
+      "C. Több paraméter kalibrálása",
+      "D. Célfüggvény megváltoztatása"
+    ],
+    "correct": "B",
+    "explanation": "A validáció: kalibrált modell futtatása kalibrációnál nem használt független időszakra."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány lektorált publikáció hivatkozik a SWAT modellre?",
+    "options": [
+      "A. 500+",
+      "B. 1 000+",
+      "C. 3 000+",
+      "D. 5 000+"
+    ],
+    "correct": "D",
+    "explanation": "A SWAT modellhez több mint 5000 lektorált publikáció tartozik."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a nudging az adatasszimilációban?",
+    "options": [
+      "A. Komplex Bayes-i módszer",
+      "B. Egyszerű közvetlen beillesztési módszer",
+      "C. Globális optimalizálási algoritmus",
+      "D. Érzékenységvizsgálati technika"
+    ],
+    "correct": "B",
+    "explanation": "A nudging a legegyszerűbb adatasszimilációs módszer, közvetlen beillesztéssel."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád melyik nagyobb folyóba torkollik?",
+    "options": [
+      "A. Duna",
+      "B. Tisza",
+      "C. Sajó",
+      "D. Bodrog"
+    ],
+    "correct": "C",
+    "explanation": "A Hernád a Sajónál csatlakozik Miskolcnál, majd a Sajó a Tiszába ömlik."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OVF hány felszín alatti víz monitoring kutat üzemeltet Magyarországon?",
+    "options": [
+      "A. 500",
+      "B. 1 000",
+      "C. 2 500",
+      "D. 5 000"
+    ],
+    "correct": "C",
+    "explanation": "Az OVF mintegy 2500 felszín alatti víz monitoring kutat üzemeltet."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a PBIAS mérőszám fő előnye?",
+    "options": [
+      "A. Figyelembe veszi az időzítési hibákat",
+      "B. Közvetlenül méri a térfogati torzítást",
+      "C. Érzékeny a csúcsvízhozamokra",
+      "D. Skálafüggetlen"
+    ],
+    "correct": "B",
+    "explanation": "A PBIAS közvetlenül méri a szimulált és megfigyelt vízhozamok közötti térfogati torzítást."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Kálmán-nyereség (Kt) szerepe?",
+    "options": [
+      "A. Modell futásidejét szabályozza",
+      "B. A megfigyelés és a modell-előrejelzés közötti súlyozást határozza meg",
+      "C. Paraméterhatárokat definiál",
+      "D. Érzékenységi indexet számít"
+    ],
+    "correct": "B",
+    "explanation": "A Kálmán-nyereség határozza meg, mekkora súlyt kapjon a megfigyelés az előrejelzéssel szemben."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád teljes vízgyűjtő területe Hidasnémeti felett körülbelül mekkora?",
+    "options": [
+      "A. 930 km²",
+      "B. 2 500 km²",
+      "C. 5 300 km²",
+      "D. 10 000 km²"
+    ],
+    "correct": "C",
+    "explanation": "A Hidasnémeti feletti teljes vízgyűjtő terület mintegy 5300 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az Oudin-képlet célja a GR4J kidolgozott példában?",
+    "options": [
+      "A. Vízhozam számítása",
+      "B. Potenciális evapotranszspiráció becslése",
+      "C. Csapadék interpoláció",
+      "D. Talajnedvesség becslés"
+    ],
+    "correct": "B",
+    "explanation": "Az Oudin-képlet hőmérséklet-alapú módszer a napi PET becslésére."
+  },
+  {
+    "type": "mcq",
+    "question": "A DREAM algoritmus kimenete nem egyetlen paraméterkészlet, hanem:",
+    "options": [
+      "A. Egy Pareto-front",
+      "B. A poszterior eloszlásból vett paraméterkészletek együttese",
+      "C. Egyetlen optimális érték konfidencia-intervallummal",
+      "D. Morris-érzékenységi indexek"
+    ],
+    "correct": "B",
+    "explanation": "A DREAM a poszterior eloszlásból vett paraméterkészletek együttesét adja vissza."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a CAMELS adathalmaz teljes neve?",
+    "options": [
+      "A. Climate Analysis for Model Evaluation and Large Studies",
+      "B. Catchment Attributes and MEteorology for Large-sample Studies",
+      "C. Comprehensive Assessment of Model Efficiency for Large Systems",
+      "D. Calibration And Model Evaluation for Large-Scale studies"
+    ],
+    "correct": "B",
+    "explanation": "CAMELS: Catchment Attributes and MEteorology for Large-sample Studies."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik ország nemzeti hidrológiai szolgálata működteti a HYDROINFO rendszert?",
+    "options": [
+      "A. Németország",
+      "B. Ausztria",
+      "C. Magyarország",
+      "D. Románia"
+    ],
+    "correct": "C",
+    "explanation": "A HYDROINFO a magyar OVF rendszere (hydroinfo.hu)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a túlilleszkedés (overfitting) tünete a kalibrációban?",
+    "options": [
+      "A. Egyforma kalibrációs-validációs teljesítmény",
+      "B. Jelentős teljesítménycsökkenés a kalibrációról a validációra",
+      "C. A modell nem konvergál",
+      "D. Az összes paraméter alsó határokon"
+    ],
+    "correct": "B",
+    "explanation": "Jelentős teljesítménycsökkenés a kalibrációról a validációra túlilleszkedést jelez."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki javasolta a KGE mérőszámot?",
+    "options": [
+      "A. Nash és Sutcliffe (1970)",
+      "B. Gupta és társai (2009)",
+      "C. Beven (1996)",
+      "D. Duan és társai (1992)"
+    ],
+    "correct": "B",
+    "explanation": "A KGE-t Gupta, Kling, Yilmaz és Martinez javasolta 2009-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A GR4J modell x4 paramétere mit szabályoz?",
+    "options": [
+      "A. Termelési tározó kapacitását",
+      "B. Felszín alatti víz cseréjét",
+      "C. Útválasztási tározó kapacitását",
+      "D. Az egységhidrográf időbázisát"
+    ],
+    "correct": "D",
+    "explanation": "Az x4 az egységhidrográf időbázisa (nap)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Morris-módszer költsége r trajektóriával és n paraméterrel?",
+    "options": [
+      "A. r × n",
+      "B. r × (n + 1)",
+      "C. r × n²",
+      "D. r × 2n"
+    ],
+    "correct": "B",
+    "explanation": "A Morris-módszer r × (n + 1) modellkiértékelést igényel."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik stratégia NEM alkalmas az ekvifinalitás csökkentésére?",
+    "options": [
+      "A. Többváltozós kalibráció",
+      "B. Többszelvényes kalibráció",
+      "C. Egy paraméter rögzítése véletlenszerű értéken",
+      "D. Regularizáció"
+    ],
+    "correct": "C",
+    "explanation": "Véletlenszerű rögzítés nem csökkenti célzottan az ekvifinalitást."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az OPERA hálózat?",
+    "options": [
+      "A. Vízhozam-mérő hálózat",
+      "B. Páneurópai radar-csapadék kompozitokat biztosító rendszer",
+      "C. Felszín alatti víz monitoring",
+      "D. Műholdas hőmérséklet-mérő rendszer"
+    ],
+    "correct": "B",
+    "explanation": "OPERA: Operational Programme for the Exchange of Weather RAdar information."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen arányú konvergenciát érhet el az SCE-UA egy 6 paraméteres modellnél?",
+    "options": [
+      "A. 100-500 kiértékelés",
+      "B. 2 000-10 000 kiértékelés",
+      "C. 50 000-100 000 kiértékelés",
+      "D. 500 000+ kiértékelés"
+    ],
+    "correct": "B",
+    "explanation": "6 paraméterre az SCE-UA jellemzően 2000-10 000 kiértékeléssel konvergál."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a teljes hatás index (STi) a Sobol-elemzésben?",
+    "options": [
+      "A. Csak az egyedi paraméterhatást méri",
+      "B. Az adott paraméternek tulajdonítható variancia, beleértve az interakciókat is",
+      "C. A modell futásidejét jelzi",
+      "D. A paraméter fizikai tartományát méri"
+    ],
+    "correct": "B",
+    "explanation": "STi: az adott paraméter interakciókkal együttes hatása a kimeneti varianciára."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú modell a HEC-HMS?",
+    "options": [
+      "A. Elosztott felszín alatti víz modell",
+      "B. Összevont csapadék-lefolyás modell",
+      "C. Felszínmodell",
+      "D. Kizárólag hidraulikai modell"
+    ],
+    "correct": "B",
+    "explanation": "A HEC-HMS összevont és félig elosztott csapadék-lefolyás modell."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a log-NSE mérőszám előnye az NSE-vel szemben?",
+    "options": [
+      "A. Csúcsvízhozamokat hangsúlyozza",
+      "B. A kisvizeket hangsúlyozza",
+      "C. Skálafüggetlen",
+      "D. Nem igényel kalibrációt"
+    ],
+    "correct": "B",
+    "explanation": "A log-NSE a logaritmizált vízhozamokra számítva a kisvizeket hangsúlyozza."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád kalibrációs példájában a validációs KGE értéke?",
+    "options": [
+      "A. 0,65",
+      "B. 0,72",
+      "C. 0,76",
+      "D. 0,82"
+    ],
+    "correct": "C",
+    "explanation": "A Hernád validációs KGE = 0,76."
+  },
+  {
+    "type": "mcq",
+    "question": "George Box híres kijelentése a modellekről?",
+    "options": [
+      "A. 'Minden modell tökéletes'",
+      "B. 'Minden modell téves, de néhány hasznos'",
+      "C. 'A legjobb modell a legegyszerűbb'",
+      "D. 'A modellek felváltják a méréseket'"
+    ],
+    "correct": "B",
+    "explanation": "George Box: 'Minden modell téves, de néhány hasznos.'"
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen szervezet koordinálja a GloFAS-t?",
+    "options": [
+      "A. USGS",
+      "B. Copernicus Veszélyhelyzet-kezelési Szolgálat",
+      "C. WMO",
+      "D. UNESCO"
+    ],
+    "correct": "B",
+    "explanation": "A GloFAS-t a Copernicus CEMS biztosítja."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a PEST Tyihonov-regularizációjának célja?",
+    "options": [
+      "A. A modell futásidejének csökkentése",
+      "B. Büntető tagok hozzáadása a kívánt paramétertulajdonságokért",
+      "C. A paraméterhatárok kiterjesztése",
+      "D. Az automatikus leállítás"
+    ],
+    "correct": "B",
+    "explanation": "Tyihonov-regularizáció büntető tagokat ad, pl. térbeli simítást vagy prior közelséget."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen tartományban változik a Hernád éves csapadéka?",
+    "options": [
+      "A. 200-400 mm",
+      "B. 500-900 mm",
+      "C. 1 000-1 500 mm",
+      "D. 1 500-2 000 mm"
+    ],
+    "correct": "B",
+    "explanation": "500 mm-től a magyar síkságon 900 mm felett a szlovák hegyekben."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik módszert NEM alkalmazzák adatasszimilációra?",
+    "options": [
+      "A. Nudging",
+      "B. Együttes Kálmán-szűrő",
+      "C. 4D-Var",
+      "D. Morris-módszer"
+    ],
+    "correct": "D",
+    "explanation": "A Morris-módszer érzékenységvizsgálati technika, nem adatasszimiláció."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a MOPEX program célja?",
+    "options": [
+      "A. Műholdas adatok feldolgozása",
+      "B. Modellek és paraméterbecslési módszerek összehasonlítása",
+      "C. Vízminőség monitoring",
+      "D. Árvízvédelmi tervezés"
+    ],
+    "correct": "B",
+    "explanation": "MOPEX: Model Parameter Estimation Experiment."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ECMWF felszínsémáját milyen néven ismerik?",
+    "options": [
+      "A. Noah-MP",
+      "B. VIC",
+      "C. HTESSEL/ECLand",
+      "D. LISFLOOD"
+    ],
+    "correct": "C",
+    "explanation": "Az ECMWF felszínsémája a HTESSEL/ECLand."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen módszerrel számítják a vízgyűjtőre átlagolt csapadékot a Hernád példában?",
+    "options": [
+      "A. Egyszerű átlagolás",
+      "B. Thiessen-poligonos súlyozott átlagolás",
+      "C. Kriging interpoláció",
+      "D. IDW interpoláció"
+    ],
+    "correct": "B",
+    "explanation": "Thiessen-poligonos súlyozott átlagolást alkalmaztak a Hernád példában."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a nem-stacionaritás problémája a hagyományos kalibrációban?",
+    "options": [
+      "A. A modell túl gyorsan fut",
+      "B. A történeti paraméterek nem érvényesek jövőbeni feltételek mellett",
+      "C. A paraméterek túl stabilak",
+      "D. A megfigyelések túl pontosak"
+    ],
+    "correct": "B",
+    "explanation": "Éghajlatváltozás és területhasználat-változás miatt a kalibrált paraméterek nem biztos, hogy érvényesek a jövőben."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány USGS-mérce vízhozam-megfigyelését építi be az amerikai Nemzeti Vízmodell?",
+    "options": [
+      "A. 500",
+      "B. 2 000",
+      "C. 8 000",
+      "D. 20 000"
+    ],
+    "correct": "C",
+    "explanation": "Az NWM körülbelül 8000 USGS-mérce megfigyeléseit építi be."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád GR4J modelljénél melyik paraméter a legérzékenyebb a Morris-elemzés szerint?",
+    "options": [
+      "A. x1 (termelési tározó)",
+      "B. x2 (felszín alatti víz csere)",
+      "C. x3 (útválasztási tározó)",
+      "D. x4 (időbázis)"
+    ],
+    "correct": "A",
+    "explanation": "Az x1 (termelési tározó kapacitása) a legérzékenyebb, μ* = 0,31."
+  },
+  {
+    "type": "mcq",
+    "question": "A DREAM 90%-os bizonytalansági sávjai a Hernád kalibrációs időszakában a megfigyelt értékek hány %-át tartalmazzák?",
+    "options": [
+      "A. 72%",
+      "B. 81%",
+      "C. 87%",
+      "D. 95%"
+    ],
+    "correct": "C",
+    "explanation": "A 90%-os sávok a kalibrációs időszakban 87%-os lefedettséget mutatnak."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Bayes-tétel poszterior eloszlásának képlete?",
+    "options": [
+      "A. p(θ|Y) = p(Y|θ) · p(θ) / p(Y)",
+      "B. p(θ|Y) = p(θ) / p(Y)",
+      "C. p(θ|Y) = p(Y) · p(θ)",
+      "D. p(θ|Y) = p(Y|θ) + p(θ)"
+    ],
+    "correct": "A",
+    "explanation": "Bayes: p(θ|Y) = p(Y|θ) · p(θ) / p(Y)."
+  },
+  {
+    "type": "mcq",
+    "question": "A SWAT-CUP melyik algoritmust NEM tartalmazza?",
+    "options": [
+      "A. SUFI-2",
+      "B. GLUE",
+      "C. SCE-UA",
+      "D. ParaSol"
+    ],
+    "correct": "C",
+    "explanation": "SWAT-CUP: SUFI-2, GLUE, ParaSol, MCMC — de SCE-UA nem része."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a jellemző-alapú kalibráció lényege?",
+    "options": [
+      "A. Csak csúcsvízhozamokat használ",
+      "B. Összefoglaló statisztikákat ad hozzá kalibrációs célként",
+      "C. Kizárólag műholdas adatokat használ",
+      "D. A paramétereket közvetlenül méri"
+    ],
+    "correct": "B",
+    "explanation": "Hidrológiai jellemzőket (tartóssággörbe, alapáramlási index stb.) ad kiegészítő kalibrációs célként."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány OVF felszíni víz monitoring állomás működik Magyarországon?",
+    "options": [
+      "A. 100",
+      "B. 300",
+      "C. 500",
+      "D. 1 000"
+    ],
+    "correct": "C",
+    "explanation": "Az OVF mintegy 500 felszíni víz monitoring állomást üzemeltet."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HEPEX közösség célja?",
+    "options": [
+      "A. Felszín alatti víz monitoring",
+      "B. Együttes árvíz-előrejelzési módszerek népszerűsítése",
+      "C. Műholdas távérzékelés fejlesztése",
+      "D. Vízminőség szabályozás"
+    ],
+    "correct": "B",
+    "explanation": "A HEPEX az együttes (ensemble) megközelítéseket népszerűsíti az operatív árvíz-előrejelzésben."
+  },
+  {
+    "type": "mcq",
+    "question": "A GR4J modellt melyik intézet fejlesztette ki?",
+    "options": [
+      "A. USGS",
+      "B. INRAE (Franciaország)",
+      "C. DHI (Dánia)",
+      "D. US Army Corps of Engineers"
+    ],
+    "correct": "B",
+    "explanation": "A GR4J-t a francia INRAE fejlesztette ki."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS időjárási bemeneteinek forrása?",
+    "options": [
+      "A. USGS",
+      "B. ECMWF",
+      "C. OVF",
+      "D. NASA"
+    ],
+    "correct": "B",
+    "explanation": "Az EFAS ECMWF időjárás-előrejelzéseket használ."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SCE-UA-nál mi a komplexek keverésének célja?",
+    "options": [
+      "A. Számítási költség csökkentése",
+      "B. Információáramlás biztosítása és korai konvergencia megelőzése",
+      "C. Paraméterhatárok kiterjesztése",
+      "D. Célfüggvény megváltoztatása"
+    ],
+    "correct": "B",
+    "explanation": "A keverés információáramlást biztosít a komplexek között, megelőzve a lokális konvergenciát."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád kalibrált x4 paramétere (2,1 nap) mit jelez?",
+    "options": [
+      "A. Nagyon gyors válaszidő",
+      "B. A vízgyűjtő méretével konzisztens késleltetés",
+      "C. A modell nem konvergált",
+      "D. Nincs alapvízhozam"
+    ],
+    "correct": "B",
+    "explanation": "Az x4 = 2,1 nap konzisztens az 5300 km²-es vízgyűjtő méretével."
+  },
+  {
+    "type": "mcq",
+    "question": "Ha STi ≈ Si egy Sobol-elemzésben, mit jelent ez?",
+    "options": [
+      "A. A paraméter nem befolyásolja a kimenetet",
+      "B. A paraméter függetlenül hat, interakciók nélkül",
+      "C. A paraméter csak interakciókon keresztül hat",
+      "D. A paraméter nem azonosítható"
+    ],
+    "correct": "B",
+    "explanation": "Ha STi ≈ Si, a paraméter függetlenül hat; ha STi >> Si, az interakciók fontosak."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú modell a NAM?",
+    "options": [
+      "A. Összevont csapadék-lefolyás modell (DHI)",
+      "B. Elosztott felszín alatti víz modell",
+      "C. Globális éghajlati modell",
+      "D. Hidraulikai modell"
+    ],
+    "correct": "A",
+    "explanation": "A NAM (Nedbor-Afstromnings-Model) a DHI összevont csapadék-lefolyás modellje."
+  },
+  {
+    "type": "mcq",
+    "question": "A Víz Keretirányelv (WFD) milyen hatással van a modellezésre?",
+    "options": [
+      "A. Megtiltja a hidrológiai modellezést",
+      "B. Szisztematikus monitorozást és modellezést ír elő az EU-ban",
+      "C. Csak felszín alatti vizekre vonatkozik",
+      "D. Csak az USA-ban érvényes"
+    ],
+    "correct": "B",
+    "explanation": "A WFD szisztematikus monitorozást és modellezést hajt végre az összes EU-tagállamban."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az NSGA-II-ben a zsúfoltsági távolság szerepe?",
+    "options": [
+      "A. Konvergencia gyorsítása",
+      "B. Sokféleség fenntartása a Pareto-front mentén",
+      "C. Paraméterhatárok betartatása",
+      "D. Modell futásidejének mérése"
+    ],
+    "correct": "B",
+    "explanation": "A zsúfoltsági távolság fenntartja a sokféleséget a Pareto-front mentén."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád DREAM elemzésénél melyik paraméter volt rosszul korlátozott?",
+    "options": [
+      "A. x1",
+      "B. x2",
+      "C. x3",
+      "D. x4"
+    ],
+    "correct": "B",
+    "explanation": "Az x2 széles 90%-os hiteles intervallummal rendelkezett: [-0,5; 2,3] mm/nap."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád lefolyási hányada (0,38) mit jelent?",
+    "options": [
+      "A. A csapadék 38%-a válik lefolyássá",
+      "B. A csapadék 62%-a válik lefolyássá",
+      "C. A terület 38%-a erdő",
+      "D. A párolgás 38%-os"
+    ],
+    "correct": "A",
+    "explanation": "A 0,38-as lefolyási hányad: a csapadék mintegy 38%-a lefolyásként jelenik meg."
+  },
+  {
+    "type": "mcq",
+    "question": "A WISE adatbázis milyen adatokhoz biztosít hozzáférést?",
+    "options": [
+      "A. Kizárólag meteorológiai adatok",
+      "B. Az összes EU-tagállam WFD-jelentési adatai",
+      "C. Kizárólag műholdas adatok",
+      "D. Kizárólag felszín alatti víz adatok"
+    ],
+    "correct": "B",
+    "explanation": "A WISE az összes EU-tagállam WFD-jelentési adatait biztosítja."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ECMWF együttes időjárás-előrejelzési rendszere hány tagú?",
+    "options": [
+      "A. 10",
+      "B. 21",
+      "C. 51",
+      "D. 100"
+    ],
+    "correct": "C",
+    "explanation": "Az ECMWF 51 tagú együttes előrejelzési rendszert üzemeltet."
+  },
+  {
+    "type": "mcq",
+    "question": "A Nelder-Mead szimplex módszer fő korlátja?",
+    "options": [
+      "A. Túl sok modellkiértékelést igényel",
+      "B. Lokális optimumot talál, nem globálisat",
+      "C. Nem működik folytonos paraméterekkel",
+      "D. Csak egyparaméteres modellekhez alkalmas"
+    ],
+    "correct": "B",
+    "explanation": "A Nelder-Mead lokális módszer, a legközelebbi lokális optimumhoz konvergál."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Hernád GR4J Morris-elemzésének költsége r=20 trajektóriával?",
+    "options": [
+      "A. 20 kiértékelés",
+      "B. 80 kiértékelés",
+      "C. 100 kiértékelés",
+      "D. 420 kiértékelés"
+    ],
+    "correct": "C",
+    "explanation": "20 × (4+1) = 100 modellkiértékelés."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette ki a PEST-IES módszert?",
+    "options": [
+      "A. USGS",
+      "B. John Doherty és társai",
+      "C. ECMWF",
+      "D. DHI"
+    ],
+    "correct": "B",
+    "explanation": "A PEST-IES módszert John Doherty és társai fejlesztették ki."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a regionalizáció problémája a hidrológiában?",
+    "options": [
+      "A. A modellek túl gyorsan futnak",
+      "B. A mért vízgyűjtőkön kalibrált paraméterek nehezen alkalmazhatók méretlen helyszínekre",
+      "C. Minden vízgyűjtő azonos paraméterekkel rendelkezik",
+      "D. A regionális modellek mindig jobbak"
+    ],
+    "correct": "B",
+    "explanation": "A kalibrált paraméterek méretlen vízgyűjtőkre való átvitele nehéz."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki publikálta a LamaH-CE adathalmazt?",
+    "options": [
+      "A. Addor és társai",
+      "B. Klingler és társai (2021)",
+      "C. Kratzert és társai",
+      "D. Beven és Binley"
+    ],
+    "correct": "B",
+    "explanation": "A LamaH-CE-t Klingler, Schulz és Herrnegger publikálta 2021-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "Az SCS görbeszám melyik paraméterkategóriába tartozik?",
+    "options": [
+      "A. Mérhető fizikai",
+      "B. Empirikus",
+      "C. Fogalmi",
+      "D. Állandó fizikai"
+    ],
+    "correct": "B",
+    "explanation": "A görbeszám (CN) empirikus paraméter, parcella-léptékű kísérletekből levezetett."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OVF data.vizugy.hu portálon mióta érhetők el szabadon az adatok?",
+    "options": [
+      "A. 2020 januárja",
+      "B. 2022 júliusa",
+      "C. 2024 júliusa",
+      "D. 2025 januárja"
+    ],
+    "correct": "C",
+    "explanation": "Az OVF adatai 2024 júliusa óta szabadon hozzáférhetők."
+  },
+  {
+    "type": "mcq",
+    "question": "A CMIP keretrendszer milyen célra szolgál?",
+    "options": [
+      "A. Hidrológiai modellkalibráció",
+      "B. Éghajlati projekciók többmodelles együtteseihez",
+      "C. Vízhozam-mérés",
+      "D. Talajvíz monitoring"
+    ],
+    "correct": "B",
+    "explanation": "A CMIP az éghajlati projekciók többmodelles keretrendszere."
+  },
+  {
+    "type": "mcq",
+    "question": "A Hernád GR4J modelljénél hány SCE-UA függvénykiértékelés után konvergált?",
+    "options": [
+      "A. 500",
+      "B. 3 500",
+      "C. 10 000",
+      "D. 50 000"
+    ],
+    "correct": "B",
+    "explanation": "Az SCE-UA mintegy 3500 függvénykiértékelés után konvergált."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSE = 1,0 tökéletes egyezést jelent a megfigyelt és szimulált értékek között.",
+    "correct": true,
+    "explanation": "Az NSE = 1,0 valóban tökéletes egyezést jelent."
+  },
+  {
+    "type": "true_false",
+    "question": "A DREAM algoritmus egyetlen legjobb paraméterkészletet ad vissza.",
+    "correct": false,
+    "explanation": "A DREAM poszterior paraméterkészletek együttesét adja, nem egyetlen értéket."
+  },
+  {
+    "type": "true_false",
+    "question": "A GR4J modellnek pontosan négy paramétere van.",
+    "correct": true,
+    "explanation": "A GR4J neve is jelzi: 4 paramètres."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ekvifinalitás azt jelenti, hogy egyetlen optimális paraméterkészlet létezik.",
+    "correct": false,
+    "explanation": "Az ekvifinalitás az ellenkezőjét jelenti: több paraméterkészlet is egyformán jó."
+  },
+  {
+    "type": "true_false",
+    "question": "A Morris-módszer kvantitatív globális érzékenységvizsgálat.",
+    "correct": false,
+    "explanation": "A Morris szűrési technika, kvalitatív rangsorolást ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A Kálmán-szűrőt Rudolf Kálmán fejlesztette ki 1960-ban.",
+    "correct": true,
+    "explanation": "Rudolf Kálmán 1960-ban fejlesztette ki lineáris rendszerekre."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCE-UA algoritmust az Arizonai Egyetemen fejlesztették ki.",
+    "correct": true,
+    "explanation": "SCE-UA: Shuffled Complex Evolution - University of Arizona."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sobol-elemzés számítási költsége alacsonyabb, mint a Morris-módszeré.",
+    "correct": false,
+    "explanation": "A Sobol jóval költségesebb: N×(2n+2) vs. r×(n+1)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az adatasszimiláció a modellparaméterek rögzítése a szimuláció előtt.",
+    "correct": false,
+    "explanation": "Az adatasszimiláció valós idejű megfigyelések beépítése futás közben."
+  },
+  {
+    "type": "true_false",
+    "question": "A PBIAS mérőszám érzékeny az időzítési hibákra.",
+    "correct": false,
+    "explanation": "A PBIAS csak a térfogati torzítást méri."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Együttes Kálmán-szűrő (EnKF) egyetlen modellpéldányt futtat.",
+    "correct": false,
+    "explanation": "Az EnKF Ne modellpéldányt futtat egyidejűleg."
+  },
+  {
+    "type": "true_false",
+    "question": "A KGE három összetevőre bomlik: korreláció, torzítási arány és változékonysági arány.",
+    "correct": true,
+    "explanation": "A KGE r, β és γ összetevőkre bomlik."
+  },
+  {
+    "type": "true_false",
+    "question": "A Pareto-front minden cél egyidejű optimumát tartalmazza.",
+    "correct": false,
+    "explanation": "A Pareto-front kompromisszumokat tartalmaz, nem egyidejű optimumokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A felskálázási probléma a pontmérések és a rácsléptékű effektív paraméterek közötti eltérést jelenti.",
+    "correct": true,
+    "explanation": "Pontosan ez a felskálázási probléma definíciója."
+  },
+  {
+    "type": "true_false",
+    "question": "A SWAT modell összevont modell, amely a vízgyűjtőt egyetlen egységként kezeli.",
+    "correct": false,
+    "explanation": "A SWAT félig elosztott modell, részvízgyűjtőkkel és HRU-kkal."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád vízgyűjtőjének mintegy 80%-a Szlovákiában található.",
+    "correct": true,
+    "explanation": "A Hidasnémeti feletti 5300 km² mintegy 80%-a Szlovákiában van."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSE mérőszám nem lehet negatív.",
+    "correct": false,
+    "explanation": "Az NSE negatív értékeket is felvehet."
+  },
+  {
+    "type": "true_false",
+    "question": "A manuális kalibráció reprodukálható: két modellező azonos eredményre jut.",
+    "correct": false,
+    "explanation": "A manuális kalibráció nem reprodukálható."
+  },
+  {
+    "type": "true_false",
+    "question": "A PEST szoftver elsősorban gradiens-alapú módszerekre támaszkodik.",
+    "correct": true,
+    "explanation": "A PEST Gauss-Marquardt-Levenberg gradiens-alapú módszert használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A DREAM 50 000-500 000 modellkiértékelést igényel.",
+    "correct": true,
+    "explanation": "A DREAM jellemzően 50 000-500 000 kiértékelést igényel."
+  },
+  {
+    "type": "true_false",
+    "question": "A túlilleszkedés azt jelenti, hogy a modell a kalibrációs időszak zaját tanulta meg.",
+    "correct": true,
+    "explanation": "A túlilleszkedés: a kalibrációs időszak sajátosságai a folyamatok helyett."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS az ECMWF együttes időjárás-előrejelzését használja.",
+    "correct": true,
+    "explanation": "Az EFAS az 51 tagú ECMWF együttes rendszert használja."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sobol elsőrendű index 0,3-as értéke a variancia 30%-át jelenti.",
+    "correct": true,
+    "explanation": "Si = 0,3: a kimeneti változékonyság 30%-a az adott paraméternek tulajdonítható."
+  },
+  {
+    "type": "true_false",
+    "question": "A CAMELS adathalmaz 671 vízgyűjtőt tartalmaz az USA-ban.",
+    "correct": true,
+    "explanation": "A CAMELS 671 minimálisan zavart vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A lokális optimalizálási módszerek mindig megtalálják a globális optimumot.",
+    "correct": false,
+    "explanation": "A lokális módszerek a legközelebbi lokális optimumhoz konvergálnak."
+  },
+  {
+    "type": "true_false",
+    "question": "A GR4J x1 paramétere a termelési tározó kapacitását jelenti.",
+    "correct": true,
+    "explanation": "Az x1 a termelési tározó kapacitása (mm)."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád validációs PBIAS növekedett a kalibrációhoz képest.",
+    "correct": true,
+    "explanation": "A PBIAS 3,2%-ról 5,8%-ra nőtt."
+  },
+  {
+    "type": "true_false",
+    "question": "Az adatasszimiláció a meteorológiából ered.",
+    "correct": true,
+    "explanation": "Az adatasszimiláció az időjárás-előrejelzési modellek inicializálásából ered."
+  },
+  {
+    "type": "true_false",
+    "question": "A Noah-MP felszínmodellnek jellemzően 50-nél kevesebb paramétere van típusonként.",
+    "correct": false,
+    "explanation": "A Noah-MP-nek gyakran 50 vagy több paramétere van területhasználati típusonként."
+  },
+  {
+    "type": "true_false",
+    "question": "A GLUE módszertant kritizálják a szubjektív küszöbértékek miatt.",
+    "correct": true,
+    "explanation": "A GLUE kritikusai a szubjektív valószínűségi mérőszámokat és küszöböket kifogásolják."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSGA-II-t Deb és társai fejlesztették ki 2002-ben.",
+    "correct": true,
+    "explanation": "Deb, Pratap, Agarwal és Meyarivan 2002-ben publikálta."
+  },
+  {
+    "type": "true_false",
+    "question": "A Levenberg-Marquardt-algoritmus globális optimalizálási módszer.",
+    "correct": false,
+    "explanation": "A Levenberg-Marquardt lokális, gradiens-alapú módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A GR4J versenyképes jóval összetettebb modellekkel szemben.",
+    "correct": true,
+    "explanation": "Nagymintás vizsgálatokban a GR4J versenyképesnek bizonyult."
+  },
+  {
+    "type": "true_false",
+    "question": "A regularizáció csökkenti az ekvifinalitást büntető tagokkal.",
+    "correct": true,
+    "explanation": "A regularizáció büntető tagokkal szűkíti az elfogadható paraméterkészletek halmazát."
+  },
+  {
+    "type": "true_false",
+    "question": "A LamaH-CE 859 vízgyűjtőt tartalmaz a Duna-medencében.",
+    "correct": true,
+    "explanation": "A LamaH-CE 859 vízgyűjtőt fed le Közép-Európában."
+  },
+  {
+    "type": "true_false",
+    "question": "A Morris σ/μ* aránya jelzi a paraméter lineáris hatását.",
+    "correct": false,
+    "explanation": "Magas σ/μ* nemlineáris hatásokat vagy interakciókat jelez."
+  },
+  {
+    "type": "true_false",
+    "question": "A HYDROINFO a hydroinfo.hu címen érhető el.",
+    "correct": true,
+    "explanation": "A HYDROINFO valóban a hydroinfo.hu címen biztosít adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Oudin-képlet sugárzás, hőmérséklet, páratartalom és szélsebesség bemeneteket igényel.",
+    "correct": false,
+    "explanation": "Az Oudin-képlet csak hőmérsékletet és szélességi fokot igényel."
+  },
+  {
+    "type": "true_false",
+    "question": "A többváltozós kalibráció több megfigyelési változót használ.",
+    "correct": true,
+    "explanation": "A többváltozós kalibráció vízhozamon túli adatokat is használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád GR4J x2 magas σ/μ* aránya lineáris hatásokat jelez.",
+    "correct": false,
+    "explanation": "A magas σ/μ* nemlineáris hatásokat jelez."
+  },
+  {
+    "type": "true_false",
+    "question": "Az adatasszimiláció csak paramétereket frissít, állapotváltozókat nem.",
+    "correct": false,
+    "explanation": "Elsősorban állapotváltozókat frissít, és néha paramétereket is."
+  },
+  {
+    "type": "true_false",
+    "question": "A GLUE megköveteli a formális statisztikai likelihood-ot.",
+    "correct": false,
+    "explanation": "A GLUE bármely teljesítménymérőszámot használhat."
+  },
+  {
+    "type": "true_false",
+    "question": "A WFD valamennyi EU-tagállam víztesteinek értékelését megköveteli.",
+    "correct": true,
+    "explanation": "A WFD minden víztest állapotértékelését megköveteli."
+  },
+  {
+    "type": "true_false",
+    "question": "A modellstrukturális bizonytalanság kalibrációval javítható.",
+    "correct": false,
+    "explanation": "A strukturális korlátok nem javíthatók paraméter-igazítással."
+  },
+  {
+    "type": "true_false",
+    "question": "A PEST-IES ezres paraméterszámot képes kezelni.",
+    "correct": true,
+    "explanation": "A PEST-IES felszín alatti víz modelleknél ezres paraméterszámot kezel."
+  },
+  {
+    "type": "true_false",
+    "question": "A WISE a water.europa.eu címen érhető el.",
+    "correct": true,
+    "explanation": "A WISE adatbázis a water.europa.eu-n hozzáférhető."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCS módszer figyelembe veszi a szubórai csapadékintenzitást.",
+    "correct": false,
+    "explanation": "Az SCS napi csapadékot összesít, nem bontja az intenzitást."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád Szlovák-érchegységében karsztos formációk találhatók.",
+    "correct": true,
+    "explanation": "Karsztos mészkőformációk találhatók a Szlovák-érchegységben."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCE-UA 5 000-20 000 kiértékelést igényel 10 paraméterhez.",
+    "correct": true,
+    "explanation": "Az SCE-UA jellemzően 5 000-20 000 kiértékelést igényel."
+  },
+  {
+    "type": "true_false",
+    "question": "A DREAM Markov-láncai differenciális evolúciót használnak.",
+    "correct": true,
+    "explanation": "A DREAM differenciális evolúcióból származó perturbációkat alkalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A 4D-Var variációs adatasszimilációs módszer.",
+    "correct": true,
+    "explanation": "A 4D-Var variációs módszer, többek között az ECMWF-nél alkalmazva."
+  },
+  {
+    "type": "true_false",
+    "question": "A fogalmi paraméterek közvetlenül mérhetők terepen.",
+    "correct": false,
+    "explanation": "A fogalmi paraméterek csak a modell kontextusában léteznek."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OMSZ üzemelteti Magyarország radarállomás-hálózatát.",
+    "correct": true,
+    "explanation": "Az OMSZ radar-hálózata 15 perces csapadékmezőket biztosít."
+  },
+  {
+    "type": "true_false",
+    "question": "A valószínűségi előrejelzések közlik a megbízhatóságot.",
+    "correct": true,
+    "explanation": "A valószínűségi előrejelzések konfidenciaintervallumot biztosítanak."
+  },
+  {
+    "type": "true_false",
+    "question": "A manuális kalibráció jól skálázódik több száz részvízgyűjtőre.",
+    "correct": false,
+    "explanation": "A manuális kalibráció rosszul skálázódik nagy rendszerekre."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 reanalízis az ECMWF terméke.",
+    "correct": true,
+    "explanation": "Az ERA5 az ECMWF globális reanalízis terméke."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád GR4J kalibrációja kb. 10 másodpercig tartott.",
+    "correct": true,
+    "explanation": "A GR4J gyors futása miatt az SCE-UA kb. 10 mp alatt konvergált."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OAT érzékenységvizsgálat figyelembe veszi az interakciókat.",
+    "correct": false,
+    "explanation": "Az OAT csak egyenként változtatja a paramétereket."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád domináns területhasználata szántóföld a síkságon, erdő a felvidéken.",
+    "correct": true,
+    "explanation": "Szántóföld (gabona, kukorica) a magyar síkságon, erdő (bükk, lucfenyő) a szlovák felvidéken."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSE-t Nash és Sutcliffe 1970-ben vezette be.",
+    "correct": true,
+    "explanation": "Nash és Sutcliffe 1970-es publikációjukban mutatták be az NSE-t."
+  },
+  {
+    "type": "true_false",
+    "question": "A GLUE 10 000-100 000 Monte Carlo mintát igényel.",
+    "correct": true,
+    "explanation": "A GLUE jellemzően 10 000-100 000 paraméterkészletet generál."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád validációs időszaka 2015-2019 volt.",
+    "correct": true,
+    "explanation": "A 2015-2019-es időszakot használták validációra."
+  },
+  {
+    "type": "true_false",
+    "question": "A Morris σ értéke az elemi hatások szóródását jelzi.",
+    "correct": true,
+    "explanation": "A σ az elemi hatások szórása."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza vízgyűjtője mintegy 157 000 km²-t csapol le öt országból.",
+    "correct": true,
+    "explanation": "A Tisza mintegy 157 000 km²-t csapol le öt országból."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád GR4J-nál KGE célfüggvényt használtak.",
+    "correct": true,
+    "explanation": "A kalibrációt SCE-UA-val végezték, KGE célfüggvénnyel."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSGA-II nem-dominált rendezésen alapuló szelekciót alkalmaz.",
+    "correct": true,
+    "explanation": "Az NSGA-II megoldásait nem-dominált rendezéssel sorolja frontokba."
+  },
+  {
+    "type": "true_false",
+    "question": "A Bayes-i megközelítések a paramétereket rögzített értékekként kezelik.",
+    "correct": false,
+    "explanation": "A Bayes-i módszerek valószínűségi változóként kezelik a paramétereket."
+  },
+  {
+    "type": "true_false",
+    "question": "A kalibráció a modell léptékproblémájának felismerése.",
+    "correct": true,
+    "explanation": "A kalibráció a rácsléptékű effektív paraméterek meghatározásának szükségessége."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád a Tisza mellékfolyója.",
+    "correct": true,
+    "explanation": "A Hernád → Sajó → Tisza, tehát a Tisza mellékfolyója."
+  },
+  {
+    "type": "true_false",
+    "question": "A GRDC mintegy 10 000 állomást aggregál globálisan.",
+    "correct": true,
+    "explanation": "A GRDC mintegy 10 000 vízmérce-állomás adatait aggregálja."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád kalibrációs-validációs KGE különbsége mintegy 7%.",
+    "correct": true,
+    "explanation": "0,82 → 0,76, mintegy 7%-os csökkenés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád forrásvidéke az Alacsony-Tátrában található.",
+    "correct": true,
+    "explanation": "A forrásterületek az Alacsony-Tátrában és a Szlovák-érchegységben vannak."
+  },
+  {
+    "type": "true_false",
+    "question": "A SWAT-ot az USDA fejlesztette ki.",
+    "correct": true,
+    "explanation": "A SWAT-ot az USDA Agricultural Research Service fejlesztette ki."
+  },
+  {
+    "type": "true_false",
+    "question": "A PEST regularizált inverziót alkalmaz.",
+    "correct": true,
+    "explanation": "A PEST regularizált inverziót alkalmaz térbeli paraméterek becslésére."
+  },
+  {
+    "type": "true_false",
+    "question": "A részecskeszűrő széles körben alkalmazott operatív módszer.",
+    "correct": false,
+    "explanation": "A részecskeszűrő elsősorban kutatási alkalmazásokban használt."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád példában hét csapadékmérő állomást használtak.",
+    "correct": true,
+    "explanation": "Hét csapadékmérő állomás a magassági gradiens mentén."
+  },
+  {
+    "type": "true_false",
+    "question": "A DREAM elfogadási kritériuma a Metropolis-kritériumon alapul.",
+    "correct": true,
+    "explanation": "A DREAM Metropolis-elfogadási kritériumot alkalmaz."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád éves PET-je az Oudin-képlettel körülbelül 750 mm.",
+    "correct": true,
+    "explanation": "Az Oudin-képlet 48,5°É szélességen kb. 750 mm éves PET-et ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A MODFLOW az USGS terméke.",
+    "correct": true,
+    "explanation": "A MODFLOW az USGS moduláris felszín alatti vízáramlási modellje."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-HMS-t az US Army Corps of Engineers fejlesztette ki.",
+    "correct": true,
+    "explanation": "A HEC-HMS az US Army Corps of Engineers terméke."
+  },
+  {
+    "type": "true_false",
+    "question": "A Morris-módszert 1991-ben publikálták.",
+    "correct": true,
+    "explanation": "M. D. Morris 1991-ben publikálta a Technometrics folyóiratban."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád átlagos vízhozama Hidasnémetinél kb. 28 m³/s.",
+    "correct": true,
+    "explanation": "A megfigyelt átlagos vízhozam körülbelül 28 m³/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NSE = _____ tökéletes egyezést jelent a megfigyelt és szimulált értékek között.",
+    "correct": "1,0",
+    "explanation": "Az NSE skálája: 1,0 = tökéletes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J modell neve azt jelenti: modèle du Génie Rural à _____ paramètres Journalier.",
+    "correct": "4",
+    "explanation": "A GR4J pontosan 4 paramétert tartalmaz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCE-UA algoritmust _____, Sorooshian és Gupta publikálta 1992-ben.",
+    "correct": "Duan",
+    "explanation": "Duan, Sorooshian és Gupta fejlesztették ki."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DREAM algoritmus neve: DiffeRential Evolution Adaptive _____.",
+    "correct": "Metropolis",
+    "explanation": "DREAM: DiffeRential Evolution Adaptive Metropolis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ekvifinalitás tézisét _____ fogalmazta meg 1996-ban.",
+    "correct": "Keith Beven",
+    "explanation": "Beven 1996-os manifesto tanulmányában."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KGE három összetevőre bomlik: r (korreláció), β (torzítás) és _____ (változékonyság).",
+    "correct": "γ",
+    "explanation": "A KGE harmadik összetevője a γ (gamma)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Morris-módszerben a magas _____ nemlineáris hatásokat jelez.",
+    "correct": "σ",
+    "explanation": "A σ (szórás) magas értéke nemlinearitást vagy interakciókat jelez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GLUE rövidítése: Generalized _____ Uncertainty Estimation.",
+    "correct": "Likelihood",
+    "explanation": "GLUE: Generalized Likelihood Uncertainty Estimation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Kálmán-szűrőt Rudolf _____ fejlesztette ki 1960-ban.",
+    "correct": "Kálmán",
+    "explanation": "Rudolf Kálmán 1960-ban fejlesztette ki."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Együttes Kálmán-szűrőt Geir _____ javasolta 1994-ben.",
+    "correct": "Evensen",
+    "explanation": "Geir Evensen 1994-ben javasolta az EnKF-et."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád folyó szlovákul _____.",
+    "correct": "Hornád",
+    "explanation": "A Hernád szlovák neve Hornád."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád GR4J kalibrációs KGE értéke _____ volt.",
+    "correct": "0,82",
+    "explanation": "A kalibrációs KGE = 0,82."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ index az adott paraméternek egyedül tulajdonítható kimeneti variancia hányadát méri.",
+    "correct": "elsőrendű Sobol",
+    "explanation": "Az elsőrendű Sobol-index (Si) az egyedi paraméterhatást méri."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SWAT rövidítése: Soil and Water _____ Tool.",
+    "correct": "Assessment",
+    "explanation": "SWAT: Soil and Water Assessment Tool."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PEST szoftvercsomag a _____ ESTimation rövidítése.",
+    "correct": "Parameter",
+    "explanation": "PEST: Parameter ESTimation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS az Európai _____ Rendszer.",
+    "correct": "Árvízfigyelő",
+    "explanation": "EFAS: European Flood Awareness System."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NSGA-II: Non-dominated Sorting _____ Algorithm II.",
+    "correct": "Genetic",
+    "explanation": "NSGA-II: Non-dominated Sorting Genetic Algorithm II."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF mintegy _____ felszíni víz monitoring állomást üzemeltet.",
+    "correct": "500",
+    "explanation": "Mintegy 500 felszíni víz monitoring állomás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LamaH-CE _____ vízgyűjtőt tartalmaz Közép-Európában.",
+    "correct": "859",
+    "explanation": "A LamaH-CE 859 vízgyűjtőt fed le."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J x2 paramétere a felszín alatti víz _____ vezérli.",
+    "correct": "csereegyütthatóját",
+    "explanation": "x2: felszín alatti víz csereegyüttható (mm/nap)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "George Box: 'Minden modell _____, de néhány hasznos.'",
+    "correct": "téves",
+    "explanation": "A modellek tökéletlenségéről szóló híres kijelentés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Moriasi-irányelvek szerint NSE > _____ tekinthető kielégítőnek.",
+    "correct": "0,5",
+    "explanation": "Moriasi et al. (2007): NSE > 0,5 kielégítő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS _____ vízgyűjtőt tartalmaz az USA-ban.",
+    "correct": "671",
+    "explanation": "A CAMELS 671 vízgyűjtőt tartalmaz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád átlagos vízhozama Hidasnémetinél ≈ _____ m³/s.",
+    "correct": "28",
+    "explanation": "Átlagos vízhozam körülbelül 28 m³/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DREAM _____-_____ modellkiértékelést igényel a konvergenciához.",
+    "correct": "50 000-500 000",
+    "explanation": "A DREAM jellemző kiértékelésszáma."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sobol-elemzés a _____ mintavételi sémát alkalmazza.",
+    "correct": "Saltelli",
+    "explanation": "A Saltelli-mintavételi séma: N×(2n+2) kiértékelés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád a _____ folyónál csatlakozik Miskolcnál.",
+    "correct": "Sajó",
+    "explanation": "A Hernád a Sajóba torkollik Miskolcnál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCE-UA: _____ Complex Evolution rövidítése.",
+    "correct": "Shuffled",
+    "explanation": "SCE-UA: Shuffled Complex Evolution - University of Arizona."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád Morris-elemzésénél x1 μ* értéke _____ volt.",
+    "correct": "0,31",
+    "explanation": "Az x1 a legérzékenyebb paraméter, μ* = 0,31."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Víz Keretirányelv angol rövidítése _____.",
+    "correct": "WFD",
+    "explanation": "Water Framework Directive = WFD."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Nash-Sutcliffe-hatékonyságot _____ és Sutcliffe vezette be 1970-ben.",
+    "correct": "Nash",
+    "explanation": "J. E. Nash és J. V. Sutcliffe 1970-es publikációja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HYDROINFO _____ folyószakaszra biztosít előrejelzéseket.",
+    "correct": "98",
+    "explanation": "A HYDROINFO 98 folyószakaszra ad előrejelzést."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF mintegy _____ felszín alatti víz monitoring kutat üzemeltet.",
+    "correct": "2500",
+    "explanation": "Mintegy 2500 monitoring kút."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NAM modell _____ alapparamétert használ.",
+    "correct": "kilenc",
+    "explanation": "NAM: 9 alapparaméter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád vízgyűjtő csapadéka a síkságon ≈ _____ mm/év.",
+    "correct": "500",
+    "explanation": "Éves csapadék 500 mm a magyar síkságon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J x1 paramétere a _____ tározó kapacitása.",
+    "correct": "termelési",
+    "explanation": "x1: termelési tározó kapacitása (mm)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ECMWF együttes rendszere _____ tagú.",
+    "correct": "51",
+    "explanation": "51 tagú együttes időjárás-előrejelzési rendszer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Morris költsége: r × (n + _____) kiértékelés.",
+    "correct": "1",
+    "explanation": "r × (n + 1) modellkiértékelés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A teljes hatás index: STi = 1 - V[E(Y|X~i)] / _____.",
+    "correct": "V(Y)",
+    "explanation": "STi = 1 - V[E(Y|X~i)] / V(Y)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS a _____ elosztott modellt használja.",
+    "correct": "LISFLOOD",
+    "explanation": "Az EFAS LISFLOOD modellt alkalmaz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád GR4J kalibrációs időszaka _____-_____.",
+    "correct": "2005-2014",
+    "explanation": "Kalibrációs időszak: 2005-2014."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A dimenziók átka: a tér térfogata _____ nő a dimenzióval.",
+    "correct": "exponenciálisan",
+    "explanation": "Exponenciális növekedés a paraméterszámmal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád teljes vízgyűjtő területe ≈ _____ km².",
+    "correct": "5300",
+    "explanation": "Mintegy 5300 km² Hidasnémeti felett."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Bayes-tétel: poszterior ∝ _____ × prior.",
+    "correct": "likelihood",
+    "explanation": "p(θ|Y) ∝ p(Y|θ) · p(θ)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrált x4 = _____ nap.",
+    "correct": "2,1",
+    "explanation": "Az x4 = 2,1 nap egységhidrográf időbázis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OPERA: _____ Programme for the Exchange of Weather RAdar information.",
+    "correct": "Operational",
+    "explanation": "Operational Programme for the Exchange of Weather RAdar information."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J-t a francia _____ fejlesztette ki.",
+    "correct": "INRAE",
+    "explanation": "A GR4J-t az INRAE fejlesztette ki."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Kálmán-szűrőben R a _____ hiba kovarianciája.",
+    "correct": "megfigyelési",
+    "explanation": "R: a megfigyelési hiba kovarianciamátrixa."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HEPEX: Hydrological _____ Prediction Experiment.",
+    "correct": "Ensemble",
+    "explanation": "Hydrological Ensemble Prediction Experiment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád DREAM elemzésénél _____ Markov-láncot használtak.",
+    "correct": "5",
+    "explanation": "5 Markov-lánc, 50 000 kiértékeléssel."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza vízgyűjtője ≈ _____ km².",
+    "correct": "157 000",
+    "explanation": "A Tisza mintegy 157 000 km²-t csapol le."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCS módszer kulcsparamétere a _____ (CN).",
+    "correct": "görbeszám",
+    "explanation": "A görbeszám (Curve Number, CN) az SCS kulcsparamétere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrált x2 = _____ mm/nap.",
+    "correct": "0,84",
+    "explanation": "x2 = 0,84 mm/nap pozitív felszín alatti víz nyereség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WISE a _____.europa.eu címen érhető el.",
+    "correct": "water",
+    "explanation": "WISE: water.europa.eu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád DREAM 90%-os sávjai a validációban _____%-os lefedettséget mutatnak.",
+    "correct": "81",
+    "explanation": "Validációs 90%-os lefedettség: 81%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SWAT modellhez több mint _____ lektorált publikáció tartozik.",
+    "correct": "5000",
+    "explanation": "Több mint 5000 lektorált publikáció."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ felszínmodellt az NWM-ben használják.",
+    "correct": "Noah-MP",
+    "explanation": "Noah-MP felszínmodell az NWM-ben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J x3 az egynapos előrejelzésű _____ tározó kapacitása.",
+    "correct": "útválasztási",
+    "explanation": "x3: útválasztási tározó kapacitása (mm)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád lefolyási hányada ≈ _____.",
+    "correct": "0,38",
+    "explanation": "Lefolyási hányad mintegy 0,38."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az adatasszimiláció eredetileg _____ modellek inicializálására fejlődött ki.",
+    "correct": "időjárás-előrejelzési",
+    "explanation": "A meteorológiából ered."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád felfuttatási éve _____ volt.",
+    "correct": "2004",
+    "explanation": "A 2004-es évet a modell felfuttatására használták."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MODFLOW az _____ felszín alatti vízáramlási modellje.",
+    "correct": "USGS",
+    "explanation": "MODFLOW: az USGS moduláris modellje."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HEC-HMS-t az _____ fejlesztette ki.",
+    "correct": "US Army Corps of Engineers",
+    "explanation": "HEC-HMS: US Army Corps of Engineers terméke."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Morris-módszert _____ publikálta 1991-ben.",
+    "correct": "Morris",
+    "explanation": "M. D. Morris 1991-ben publikálta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Oudin-képlet λ = _____ MJ/kg párolgási látens hőt használ.",
+    "correct": "2,45",
+    "explanation": "λ = 2,45 MJ/kg a párolgás látens hője."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CAMELS: Catchment _____ and MEteorology for Large-sample Studies.",
+    "correct": "Attributes",
+    "explanation": "CAMELS: Catchment Attributes and MEteorology..."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád Morris-elemzésénél r = _____ trajektória.",
+    "correct": "20",
+    "explanation": "r = 20 trajektóriát alkalmaztak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád _____ város közelében ered Kelet-Szlovákiában.",
+    "correct": "Kassa",
+    "explanation": "A Hernád Kassa (Košice) közelében ered."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád Oudin PET ≈ _____ mm/év a vízgyűjtőre.",
+    "correct": "750",
+    "explanation": "Körülbelül 750 mm éves átlagos PET."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád DREAM elemzésénél _____ kiértékelést használtak.",
+    "correct": "50 000",
+    "explanation": "50 000 függvénykiértékelés a DREAM-hez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád x1 90%-os hiteles intervalluma [290; _____] mm.",
+    "correct": "420",
+    "explanation": "Az x1 90%-os CI: [290; 420] mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NAM rövidítése: _____-Afstromnings-Model.",
+    "correct": "Nedbor",
+    "explanation": "NAM: Nedbor-Afstromnings-Model (dán)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád GR4J x3 kalibrált értéke _____ mm.",
+    "correct": "89",
+    "explanation": "x3 = 89 mm mérsékelt útválasztási tározó."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRDC ≈ _____ vízmérce-állomás adatait aggregálja globálisan.",
+    "correct": "10 000",
+    "explanation": "A GRDC mintegy 10 000 állomást aggregál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NSGA-II-t _____ és társai fejlesztették ki 2002-ben.",
+    "correct": "Deb",
+    "explanation": "Deb, Pratap, Agarwal és Meyarivan 2002-ben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrált x1 = _____ mm.",
+    "correct": "347",
+    "explanation": "x1 = 347 mm termelési tározó kapacitás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrációs NSE = _____.",
+    "correct": "0,79",
+    "explanation": "A kalibrációs NSE = 0,79."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád validációs NSE = _____.",
+    "correct": "0,72",
+    "explanation": "A validációs NSE = 0,72."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrációs PBIAS = _____%.",
+    "correct": "3,2",
+    "explanation": "A kalibrációs PBIAS = +3,2%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád validációs PBIAS = _____%.",
+    "correct": "5,8",
+    "explanation": "A validációs PBIAS = +5,8%."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrációs korreláció r = _____.",
+    "correct": "0,89",
+    "explanation": "A kalibrációs KGE korreláció r = 0,89."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád vízgyűjtő terület ~80%-a _____-ban van.",
+    "correct": "Szlovákia",
+    "explanation": "A vízgyűjtő mintegy 80%-a Szlovákiában található."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád a _____ folyóba ömlik Tiszaújvárosnál a Sajón keresztül.",
+    "correct": "Tisza",
+    "explanation": "A Sajó (Hernáddal) a Tiszába ömlik Tiszaújvárosnál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Kálmán-szűrő két lépése: előrejelzési és _____ lépés.",
+    "correct": "elemzési",
+    "explanation": "Prediction (forecast) step és analysis (update) step."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCE-UA alapértelmezett beállítása: p = _____ komplex.",
+    "correct": "5",
+    "explanation": "p = 5 komplex az alapértelmezett beállítás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád éves fajlagos vízhozama ≈ _____ mm/év.",
+    "correct": "880",
+    "explanation": "Az éves ekvivalens mintegy 880 mm/év az 5300 km²-es területre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sobol-elemzés költsége: N × (_____ + 2) kiértékelés.",
+    "correct": "2n",
+    "explanation": "N × (2n + 2) a Saltelli-séma szerint."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád x2 Morris σ/μ* aránya _____.",
+    "correct": "1,38",
+    "explanation": "A magas 1,38-as arány nemlineáris hatásokat jelez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS _____ ERA5 reanalízisre épül a kezdeti feltételeknél.",
+    "correct": "ECMWF",
+    "explanation": "Az EFAS ERA5 (ECMWF) reanalízisre építi a kezdeti feltételeket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A data.vizugy.hu _____ júliusa óta szabadon elérhető.",
+    "correct": "2024",
+    "explanation": "2024 júliusa óta nyílt a hozzáférés."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a felskálázási problémát a hidrológiai modellezésben, és mutassa be, miért nem használhatók közvetlenül a pontmérések modellparaméterként!",
+    "explanation": "A felskálázási probléma: pontléptékű mérések (pl. Ks egy 10 cm-es talajmintán) nem reprezentálják a modell rácsléptékű (akár 1 km-es) effektív értékeit. A heterogenitás (makropórusok, agyaglencsék, gyökerek) miatt az effektív érték fogalmi mennyiség, amelyet kalibrációval kell meghatározni."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NSE és a KGE célfüggvényt! Milyen előnyei vannak a KGE-nek?",
+    "explanation": "Az NSE a nagyvízi értékek felé torzít (négyzethibák). A KGE három összetevőre bomlik: r (korreláció/időzítés), β (torzítási arány/térfogat), γ (változékonysági arány/dinamika), ami diagnosztikus információt ad a hiba természetéről és célzott paraméter-igazítást tesz lehetővé."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DREAM algoritmus működési elvét és előnyeit az SCE-UA-val szemben!",
+    "explanation": "A DREAM több Markov-láncot futtat differenciális evolúciós javaslatokkal. Előnyei: poszterior eloszlást ad (nem egyetlen pontot), paraméter-korrelációkat és bizonytalanságot mutat. Hátránya: 50 000-500 000 kiértékelés (vs. SCE-UA 5 000-20 000)."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az ekvifinalitás, és milyen stratégiákkal csökkenthető?",
+    "explanation": "Ekvifinalitás: különböző paraméterkészletek hasonlóan jó szimulációkat adnak. Okai: integrált vízhozamjel, kompenzáló interakciók, aluldetermináltság. Csökkentés: többváltozós kalibráció (talajnedvesség, hó), többszelvényes kalibráció, regularizáció, jellemző-alapú kalibráció."
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be az SCE-UA algoritmus működését!",
+    "explanation": "Az SCE-UA populációt tart fenn, komplexekre osztva. Minden komplexen belül kompetitív evolúciós lépés (szimplex-alapú), majd periodikus keverés. A keverés információt cserél a komplexek között, megakadályozva a lokális konvergenciát. Jellemzően 5 000-20 000 kiértékelés szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Morris-módszer működését és alkalmazási területét!",
+    "explanation": "A Morris-módszer r trajektóriát épít, paramétereknként egyszer Δ lépéssel változtatva. Eredmény: μ* (átlagos abszolút hatás, fontosság) és σ (szórás, nemlinearitás). Költséghatékony szűrő (r×(n+1) kiértékelés) a fontos paraméterek azonosítására a teljes Sobol-elemzés előtt."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a lokális és globális érzékenységvizsgálati módszereket!",
+    "explanation": "Lokális (OAT): gyors (2n kiértékelés), egyetlen pont körül, interakciókat figyelmen kívül hagyja. Globális (Morris, Sobol): a teljes tartományt vizsgálja. Morris: szűrés. Sobol: kvantitatív varianciafelbontás (N×(2n+2) kiértékelés). Ajánlás: Morris szűrőként, majd Sobol a fontos paraméterekre."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik az adatasszimiláció a Kálmán-szűrővel?",
+    "explanation": "A Kálmán-szűrő ciklikus: 1) Előrejelzés: modell előre léptet az állapotot. 2) Elemzés: a megfigyeléssel frissíti a Kálmán-nyereség alapján (amely a modell és megfigyelés bizonytalanságát súlyozza). Az EnKF együttes futtatásokkal kezeli a nemlinearitást."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Hernád GR4J kalibrációs példát és a fizikai következtetéseket!",
+    "explanation": "Hernád: KGE=0,82, x1=347mm (vegyes területhasználat), x2=0,84 (pozitív: karsztos felszín alatti víz nyereség), x3=89mm (mérsékelt útválasztás), x4=2,1 nap (5300 km²-es vízgyűjtő). A pozitív x2 a Szlovák-érchegység karsztos geológiájával konzisztens."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a modellstrukturális bizonytalanság, és miért nem javítható kalibrációval?",
+    "explanation": "A modellstrukturális bizonytalanság az egyenletekbe épített egyszerűsítésekből ered (pl. SCS nem kezeli az intenzitást). Semmilyen paraméterigazítás nem kompenzálhatja a hiányzó folyamatot. A kompenzáció a kalibrációs időszakra specifikus, és összeomlik új feltételek mellett."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a többcélfüggvényes kalibráció a gyakorlatban?",
+    "explanation": "Az NSGA-II Pareto-frontot generál versengő célok (NSE vs. PBIAS) között. Minden frontpont kompromisszum. Az árvízi figyelmeztetéshez a csúcsidőzítés-optimalizált, a vízellátáshoz a térfogat-optimalizált készlet ajánlott. A modellező az alkalmazás prioritásai alapján választ."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Bayes-tétel alkalmazását a hidrológiai paraméter-becslésben!",
+    "explanation": "Bayes: p(θ|Y) = p(Y|θ)·p(θ)/p(Y). A prior p(θ) az előzetes tudás, a likelihood p(Y|θ) az adatilleszkedés. A DREAM mintavételezi a poszterior p(θ|Y) eloszlást, amely a paraméter-bizonytalanság teljes jellemzését (szóródás, korrelációk, előrejelzési sávok) nyújtja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és hátrányai vannak a manuális kalibrációnak?",
+    "explanation": "Előnyök: diagnosztikus gondolkodás (hidrográf alak → folyamatdiagnózis), vizuális többszempontú értékelés, folyamatismeret integrálása. Hátrányok: lassú (napok-hetek), nem reprodukálható, nincs formális bizonytalanságbecslés, rosszul skálázódik (nem alkalmas 100+ részvízgyűjtőre)."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti az érzékenységvizsgálat a kalibrációs munkafolyamatot?",
+    "explanation": "Ajánlott sorrend: 1) Paramétertér definiálása (fizikai korlátok). 2) Morris-szűrés a 5-10 legfontosabb paraméterre. 3) Opcionális Sobol-elemzés az interakciókra. 4) Kalibráció csak az érzékeny paraméterekkel. 5) Validáció független időszakon. Ez csökkenti a kalibrációs dimenziót."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az EnKF működését és előnyeit a standard Kálmán-szűrővel szemben!",
+    "explanation": "Az EnKF Ne modellpéldányt futtat perturbált állapotokkal. Az együttes szóródása reprezentálja a bizonytalanságot. Előnyök: nem igényel linearizálást (standard Kálmán igen), nemlineáris modelleket kezel. A Kálmán-nyereséget az együttes kovarianciából számítja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrások állnak rendelkezésre a magyar hidrológiai modellkalibrációhoz?",
+    "explanation": "OVF (data.vizugy.hu): vízhozam, vízszint, felszín alatti vízszintek. OMSZ: radar-csapadék, meteorológia. ERA5 reanalízis. Copernicus műholdas adatok (Sentinel-2, CCI talajnedvesség). CORINE felszínborítás. AGROTOPO/ESDAC talajtérképek. OPERA radar-kompozitok."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GLUE keretrendszer, és milyen kritikák érik?",
+    "explanation": "GLUE: 1) Valószínűségi mérőszám definiálása. 2) Küszöbérték megadása. 3) Monte Carlo mintavétel (10^4-10^6). 4) Viselkedési készletek megtartása és súlyozása. 5) Előrejelzési sávok generálása. Kritika: szubjektív küszöb, nem formális statisztika. Védelem: a formális módszerek irreális feltételezéseket igényelnek."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a Pareto-front és a nem-dominált rendezés elvét az NSGA-II-ben!",
+    "explanation": "Pareto-front: megoldások halmaza, ahol egyetlen cél sem javítható másik rontása nélkül. Az NSGA-II frontokba sorolja a megoldásokat: első front = nem-dominált, második front = csak az első által dominált, stb. Zsúfoltsági távolság tartja fenn a sokféleséget a fronton belül."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátai vannak a hagyományos kalibrációnak, amelyek az MI alkalmazását motiválják?",
+    "explanation": "1) Számítási költség (DREAM: 50 000+ kiértékelés × drága modellek). 2) Nagy dimenzió (100+ paraméter). 3) Transzfer/regionalizáció (méretlen helyszínek). 4) Nem-stacionaritás (éghajlatváltozás). A gépi tanulás és MI-ágensek ezeket adatból tanulva vagy hatékonyabb kereséssel kezelik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Sobol-indexek értelmezését hidrológiai példán!",
+    "explanation": "Si (elsőrendű): pl. x1 Si=0,3 → a variancia 30%-a x1-nek tulajdonítható. STi (teljes hatás): pl. x1 STi=0,45 → az interakciók 15%-ot adnak (STi-Si). Ha STi≈Si: a paraméter függetlenül hat. Ha STi>>Si: az interakciók fontosak, tehát együttes kalibráció szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan csökkenthető az ekvifinalitás többváltozós kalibrációval? Adjon magyar példát!",
+    "explanation": "A vízhozamon kívül: műholdas talajnedvesség (ESA CCI), hóborítás (MODIS), felszín alatti vízszintek. Magyar példa: az OVF monitoring hálózata vízhozamot, vízszintet és felszín alatti vízszinteket biztosít, amelyek többváltozós kalibráció révén szűkítik az elfogadható paraméterkészletek halmazát."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a mérhető fizikai, empirikus és fogalmi paraméterek között?",
+    "explanation": "Mérhető fizikai (Ks, porozitás): terepen mérhető, tartomány terepi adatokból. Empirikus (CN, Manning-n): kísérletekből levezetett, kézikönyv-tartományok. Fogalmi (GR4J x1-x4, NAM CKIF): csak a modellben létezik, kalibrációból következtethető ki. A kategória meghatározza a kalibrációs korlátokat."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LamaH-CE adathalmaz jelentőségét a közép-európai hidrológia számára!",
+    "explanation": "A LamaH-CE (Klingler et al. 2021) 859 vízgyűjtőt tartalmaz a Duna-medencében: napi vízhozam, ERA5 órás meteorológia, 60+ vízgyűjtő-jellemző. Lehetővé teszi: nagymintás kalibrációs vizsgálatok, transzfer tanulás, regionalizáció. Tartalmaz magyar vízgyűjtőket is."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezeli az adatasszimiláció a kezdeti feltételek bizonytalanságát az operatív árvíz-előrejelzésben?",
+    "explanation": "Az adatasszimiláció (EnKF, nudging) minden időlépésben frissíti a modellállapotokat (talajnedvesség, hó, tárolt víz) a legfrissebb megfigyelésekből. Az elemzés jobb kezdeti feltételt ad a következő előrejelzésnek. Az EFAS és az NWM is alkalmazza."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik Magyarország az EFAS és GloFAS rendszerekben?",
+    "explanation": "Mindkét rendszer lefedi Magyarországot. Az EFAS LISFLOOD-ot használ ECMWF meteorológiával. A Magyar Vízjelző Szolgálat az EFAS jelzéseit kiegészítő információként használja nemzeti modelljei mellett, különösen a Tisza rendszerére. Az EFAS árvízjelzéseit rutinszerűen figyelik."
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a Hernád érzékenységvizsgálatának eredményeit és következtetéseit!",
+    "explanation": "Morris (r=20, 100 kiértékelés): x1 legérzékenyebb (μ*=0,31), x3 második (0,18), x4 harmadik (0,14), x2 negyedik (0,08). Az x2 magas σ/μ*=1,38 aránya nemlineáris hatásokat jelez. Következtetés: x1 a legfontosabb, x2 az interakciók miatt figyelendő."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a valószínűségi előrejelzés a döntéshozatalban?",
+    "explanation": "Valószínűségi előrejelzés: pl. 'holnapi csúcs 450 m³/s, 90% CI 380-540 m³/s'. Előnyei: megbízhatóság közlése, kockázatalapú döntések (pl. '10% esély az 520 m³/s-os riasztási szint meghaladására'). Szükséges összetevők: paraméter-, kényszerítő adat-, kezdeti feltétel- és strukturális bizonytalanság."
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a kalibráció-validáció munkafolyamat lépéseit!",
+    "explanation": "1) Kalibrációs/validációs időszak felosztás. 2) Felfuttatási időszak. 3) Optimalizálás a kalibrációs időszakon. 4) Validáció független időszakon. A kalibrációs-validációs teljesítménykülönbség jelzi a túlilleszkedést. A PBIAS növekedése vízháztartás-eltolódást sugall."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a regionalizáció problémája, és hogyan kezelik?",
+    "explanation": "Méretlen vízgyűjtőkre nincs kalibrálási adat. Hagyományos: regresszió vízgyűjtő-jellemzők és paraméterek között (gyenge, nemlineáris). ML: transzfer tanulás (előtanított LSTM statikus jellemzőkkel), amely sok vízgyűjtő kollektív viselkedéséből általánosít."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen különbségek vannak az összevont, félig elosztott és elosztott modellek kalibrációjában?",
+    "explanation": "Összevont (GR4J, 4 paraméter): gyors, kis dimenzió, de nem térbeli. Félig elosztott (SWAT, 20-200 HRU): mérsékelt dimenzió, SWAT-CUP szükséges. Elosztott (MODFLOW, 1000+ cella): regularizáció szükséges (PEST), extrém dimenzió. Bonyolultságnövekedéssel: több paraméter, gyengébb azonosíthatóság."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá az OMSZ radaradatok a magyar adatasszimilációhoz?",
+    "explanation": "Az OMSZ 15 perces kompozit csapadékmezőket biztosít radarállomásaiból, amelyek valós idejű bemenetként szolgálnak a hidrológiai modellekhez. OPERA páneurópai integrációban is részt vesz. A radar-adatok javítják a csapadék térbeli becslését, ami az adatasszimiláció pontosságát növeli."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a bizonytalansági információ a kalibrációs eredmények mellett?",
+    "explanation": "Egyetlen 'legjobb' eredmény bizonytalansági információ nélkül hiányos és félrevezető. Az elhagyás következményei: alultervezett árvízvédelem, túlallokált vízkészletek, helytelenül elhelyezett létesítmények. Akár GLUE, DREAM vagy más módszerrel, a bizonytalanság mindig közlendő."
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a Tisza árvíz-előrejelzésének kihívásait és az adatasszimiláció szerepét!",
+    "explanation": "A Tisza kihívásai: hegyekből származó árhullámok 24-72 óra alatt érik el a síkságot, több külföldi mellékfolyó (Szamos, Körös, Maros). Pontos előrejelzés: modellállapotok frissítése felső szakaszi megfigyelésekből. A Magyar Vízjelző Szolgálat összekapcsolt modelleket üzemeltet adatbeépítéssel."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Hernád bizonytalanságelemzésének fő tanulsága?",
+    "explanation": "Az x1 jól korlátozott (CI: 290-420 mm), de az x2 széles (CI: -0,5-2,3 mm/nap, átlépi a nullát). Az adatok nem képesek egyértelműen meghatározni a felszín alatti víz cserét. A DREAM 90%-os sávok a kalibrációban 87%-os, validációban 81%-os lefedettséget mutatnak."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a célfüggvény megválasztása a kalibrált paraméterkészletet?",
+    "explanation": "Különböző mérőszámok különböző optimumokhoz vezetnek: NSE → csúcsvízhozam; PBIAS → térfogat; log-NSE → alapáramlás. A célfüggvény megválasztása nem semleges, hanem a modellezési cél tükröződése. Árvízi célra csúcsérzékeny, vízellátásra térfogatérzékeny mérőszám ajánlott."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a SWAT magyarországi alkalmazásait és kihívásokat!",
+    "explanation": "A SWAT-ot a Tisza vízgyűjtőjén alkalmazták tápanyagterhelés, mezőgazdasági forgatókönyvek és éghajlatváltozás vizsgálatára. Kihívások: 50-200 HRU, sok paraméter. SWAT-CUP szükséges (SUFI-2, GLUE). Magyar intézmények: BME, Debreceni, Szegedi Egyetem kutatócsoportjai."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti a jellemző-alapú kalibráció a paraméterek jobb korlátozását?",
+    "explanation": "Hidrológiai jellemzők (tartóssággörbe, alapáramlási index, villódzási index, szezonális eloszlás) a vízgyűjtő viselkedés olyan aspektusait ragadják meg, amelyek idősoros mérőszámokból rejtve maradnak. Különböző jellemzők különböző paramétercsoportokat korlátozzák."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a nudging, és hogyan alkalmazzák operatív hidrológiában?",
+    "explanation": "Nudging (közvetlen beillesztés): a legegyszerűbb adatasszimiláció, a modellállapotot a megfigyelés felé 'nyomja'. Az NWM és számos nemzeti rendszer alkalmazza vízhozam- és vízszint-adatokkal. Egyszerű, de kevésbé optimális, mint az EnKF."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kritériumok alapján választható ki a megfelelő kalibrációs módszer?",
+    "explanation": "Számítási költség: SCE-UA gyors modellekhez. Bizonytalanság: DREAM formális poszteriorhoz. Többcél: NSGA-II. Nagy dimenzió: PEST. Gyors feltárás: ágens AI. Ajánlott: ágens vagy SCE-UA a kezdeti kalibráláshoz, DREAM a formális bizonytalanságelemzéshez."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a kompenzáló paraméter-kölcsönhatás, és hogyan azonosítható?",
+    "explanation": "Kompenzáló kölcsönhatás: pl. CN növelése (több lefolyás) + alapáramlás recessziós állandó növelése (gyorsabb csökkenés) → szinte változatlan hidrográf. Ez ekvifinalitási gerincet hoz létre. Azonosítás: DREAM poszterior korrelációk, Sobol STi-Si különbség."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a regularizáció a felszín alatti víz modellezésben?",
+    "explanation": "PEST Tyihonov-regularizáció: büntető tagok a célfüggvényhez. Térbeli simítás: szomszédos cellák hasonló paraméterei. Prior közelség: a paraméterek nem térnek el túlságosan a mért értékektől. Csökkenti a szabadsági fokokat, javítja az azonosíthatóságot."
+  },
+  {
+    "type": "essay",
+    "question": "Összegezze a 22. fejezet főbb tanulságait!",
+    "explanation": "A kalibráció szükségszerű (léptékprobléma). Módszerek: manuális → SCE-UA → DREAM → NSGA-II. Ekvifinalitás és bizonytalanság kezelése elengedhetetlen. Adatasszimiláció: valós idejű kiterjesztés. Korlátok: számítási költség, dimenzió, nem-stacionaritás → MI-megközelítéseket motiválnak."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lépéseket igényel a GR4J kalibrálása egy magyar vízgyűjtőre?",
+    "explanation": "1) OVF vízhozam + ERA5/OMSZ csapadék és hőmérséklet. 2) PET (Oudin-képlet). 3) Kalibrációs/validációs felosztás. 4) SCE-UA futtatás KGE célfüggvénnyel. 5) Morris-szűrés. 6) Validáció. 7) DREAM bizonytalanságelemzés. 8) Fizikai értelmezés és dokumentáció."
+  },
+  {
+    "type": "essay",
+    "question": "Miért nem szüntethető meg teljesen az ekvifinalitás?",
+    "explanation": "Az ekvifinalitás a hidrológiai inverz probléma rosszul definiált természetéből fakad: több ismeretlen (paraméterek) mint információ (egy vízhozam-idősor). Nem szüntethető meg teljesen, de többváltozós adatok, regularizáció és jellemző-alapú kalibráció csökkentik. A bizonytalanság mindig közlendő."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változik a kalibrációs kihívás a modellek bonyolultságával?",
+    "explanation": "Bonyolultabb → több paraméter (SWAT 20-200+ vs. GR4J 4), magasabb dimenzió, súlyosabb ekvifinalitás, nagyobb számítási költség. Komplex modellek nem kalibrálhatók kimerítő kereséssel. Szükséges: érzékenységvizsgálat → szűrés → intelligens keresés → MI-automatizálás."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az adatasszimiláció szerepét a Tisza árvíz-előrejelzésben, beleértve az adatforrásokat!",
+    "explanation": "Tisza: külföldi mellékfolyók (SHMU, romániai szolgálatok) és hazai (OVF) állomásadatok. OMSZ radaradatok, ERA5 reanalízis. EFAS kiegészítő jelzések. Nudging és EnKF módszerek. A Magyar Vízjelző Szolgálat összekapcsolt modelleket üzemeltet valós idejű frissítéssel."
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a KGE-felbontás diagnosztikai hasznát egy kalibrációs példán!",
+    "explanation": "Példa: KGE=0,65 → r=0,90 (jó időzítés), β=0,85 (enyhe alulbecslés), γ=0,70 (változékonyság alulbecsült). A γ a fő probléma: csúcsok túl laposak. Diagnózis: az útválasztási tározó túl nagy (túl sok csillapítás). Megoldás: x3 csökkentése. A felbontás célzott beavatkozást tesz lehetővé."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a geológia a kalibrált paraméterek értelmezésében?",
+    "explanation": "A geológia meghatározza a felszín alatti víz viselkedését. Hernád: karsztos mészkő → pozitív x2 (felszín alatti víz nyereség). Agyagos síkság → negatív x2 (vízveszteség). A kalibrált paraméterek fizikai elfogadhatóságának ellenőrzése növeli a modellbe vetett bizalmat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a nagymintás hidrológiai adathalmazok a kalibrációs kutatásban?",
+    "explanation": "CAMELS, LamaH-CE: statisztikai általánosítás. Kérdés: 'mi határozza meg a legjobb paramétereket hasonló vízgyűjtőkön?' (nem csak 'mik a legjobb paraméterek itt?'). Lehetővé teszik: szisztematikus összehasonlítás, transzfer tanulás, regionalizáció. A LamaH-CE magyar vízgyűjtőket is tartalmaz."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HEPEX jelentősége az operatív árvíz-előrejelzésben?",
+    "explanation": "A HEPEX az együttes (ensemble) megközelítéseket népszerűsíti: valószínűségi előrejelzések a determinisztikus pontbecslések helyett. Az együttes előrejelzések jobban tájékoztatják a döntéshozókat a bizonytalanságról. Kockázatalapú döntéseket tesz lehetővé (pl. menekítési küszöbök)."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: Melyik módszer alkalmas a Hernád típusú vízgyűjtők kalibrálására?",
+    "options": [
+      "A. Kézi illesztés",
+      "B. SCE-UA globális optimalizálás",
+      "C. Lineáris regresszió",
+      "D. Fourier-transzformáció"
+    ],
+    "correct": "B",
+    "explanation": "Az SCE-UA globális optimalizálás hatékonyan kezeli a többmóduszú célfüggvényeket."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: A SWAT modellben az alfa_bf paraméter mit jelöl?",
+    "options": [
+      "A. Beszivárgási sebességet",
+      "B. Alapáramlás recessziós tényezőt",
+      "C. Hóolvadási rátát",
+      "D. Evapotranszspirációs együtthatót"
+    ],
+    "correct": "B",
+    "explanation": "Az alfa_bf az alapáramlás recessziós tényezője a SWAT modellben."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: Melyik formula a KGE definíciója?",
+    "options": [
+      "A. 1 - √[(r-1)²+(β-1)²+(γ-1)²]",
+      "B. 1 - Σ(Qo-Qs)²/Σ(Qo-Q̄o)²",
+      "C. Σ(Qo-Qs)/Σ(Qo)×100",
+      "D. √[Σ(Qo-Qs)²/N]"
+    ],
+    "correct": "A",
+    "explanation": "A KGE = 1 - √[(r-1)²+(β-1)²+(γ-1)²], ahol r a korreláció, β a torzítási arány, γ a változékonysági arány."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: A Hernád vízgyűjtőjén hány csapadékmérő állomást használtak?",
+    "options": [
+      "A. 3",
+      "B. 5",
+      "C. 7",
+      "D. 12"
+    ],
+    "correct": "C",
+    "explanation": "Hét csapadékmérő állomást használtak a magassági gradiens mentén."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: Mi a Saltelli-mintavételi séma képlete?",
+    "options": [
+      "A. N × n",
+      "B. N × (n+1)",
+      "C. N × (2n+2)",
+      "D. N²"
+    ],
+    "correct": "C",
+    "explanation": "A Sobol-elemzés Saltelli-sémája N × (2n + 2) modellkiértékelést igényel."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: Milyen kalibrációs időszakot használtak a Hernád példában?",
+    "options": [
+      "A. 2000-2010",
+      "B. 2005-2014",
+      "C. 2010-2020",
+      "D. 2015-2019"
+    ],
+    "correct": "B",
+    "explanation": "A 2005-2014-es időszakot használták kalibrációra."
+  },
+  {
+    "type": "mcq",
+    "question": "A 22. fejezet (Modellek és adatok) alapján: Melyik Tisza mellékfolyó ered Romániában?",
+    "options": [
+      "A. Hernád",
+      "B. Sajó",
+      "C. Maros/Mures",
+      "D. Bodrog"
+    ],
+    "correct": "C",
+    "explanation": "A Maros (Mures) Romániából érkezik, mint a Tisza egyik legjelentősebb mellékfolyója."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád kalibrációs változékonysági aránya (alpha) 1,03 volt.",
+    "correct": true,
+    "explanation": "A KGE felbontás 1,03-as torzítási arányt mutat."
+  },
+  {
+    "type": "true_false",
+    "question": "A SWAT modellben minden HRU-nak saját paraméterkészlete van.",
+    "correct": true,
+    "explanation": "Minden HRU saját paraméterekkel rendelkezik a felszíni lefolyás, ET és talajvíz folyamatokhoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A Nelder-Mead szimplex módszer globális optimalizálási módszer.",
+    "correct": false,
+    "explanation": "A Nelder-Mead lokális optimalizálási módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A PEST-IES Iterative Ensemble Smoother módszert jelent.",
+    "correct": true,
+    "explanation": "PEST-IES: Parameter ESTimation - Iterative Ensemble Smoother."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád vízgyűjtőjének lefolyási hányada 0,38.",
+    "correct": true,
+    "explanation": "Mintegy 0,38-as lefolyási hányad, ésszerű mérsékelt hegyvidéki vízgyűjtőre."
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCE-UA keverési lépése megakadályozza a lokális konvergenciát.",
+    "correct": true,
+    "explanation": "A keverés információt cserél a komplexek között."
+  },
+  {
+    "type": "true_false",
+    "question": "A DREAM egyetlen determinisztikus paraméterkészletet ad.",
+    "correct": false,
+    "explanation": "A DREAM poszterior eloszlás mintáit adja, nem egyetlen készletet."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 reanalízis 0,25 fokos felbontású.",
+    "correct": true,
+    "explanation": "Az ERA5 globális reanalízis 0,25° (kb. 28 km) felbontású."
+  },
+  {
+    "type": "true_false",
+    "question": "A PBIAS pozitív értéke alulbecslést jelent.",
+    "correct": false,
+    "explanation": "Pozitív PBIAS felülbecslést, negatív alulbecslést jelez (ha PBIAS = Σ(Qobs-Qsim)/Σ(Qobs))."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád kalibrációs NSE 0,79 volt.",
+    "correct": true,
+    "explanation": "A kalibrációs NSE = 0,79."
+  },
+  {
+    "type": "true_false",
+    "question": "A validáció célja a modell általánosíthatóságának ellenőrzése.",
+    "correct": true,
+    "explanation": "A validáció független adatokon teszteli, hogy a modell nem illeszkedett túl a kalibrációs adatokhoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A GR4J modell két tározóra épül.",
+    "correct": true,
+    "explanation": "A GR4J kéttározós fogalmi struktúrát használ: termelési és útválasztási tározó."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád kalibrációs PBIAS +3,2% volt, ami enyhe felülbecslést jelent.",
+    "correct": true,
+    "explanation": "A +3,2%-os PBIAS enyhe összesített felülbecslést jelez."
+  },
+  {
+    "type": "true_false",
+    "question": "A Morris-módszer pontos kvantitatív rangsorolást ad a paraméterek között.",
+    "correct": false,
+    "explanation": "A Morris csak kvalitatív rangsorolást ad, nem pontos kvantitatív felbontást."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EnKF-ben a megfigyeléshez véletlenszerű perturbációt adnak.",
+    "correct": true,
+    "explanation": "Az EnKF elemzési lépésében ε perturbációt adnak a megfigyeléshez a helyes szóródás fenntartása érdekében."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád kalibrált x3 paramétere 89 mm.",
+    "correct": true,
+    "explanation": "x3 = 89 mm mérsékelt útválasztási tározó kapacitás."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NSGA-II populáció-alapú evolúciós algoritmust alkalmaz.",
+    "correct": true,
+    "explanation": "Az NSGA-II genetikus algoritmus operátorokat (szelekció, keresztezés, mutáció) használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hernád szlovák területen ered és magyar területen torkollik.",
+    "correct": true,
+    "explanation": "A Hernád Kassa közelében ered Szlovákiában és a Sajóba torkollik Miskolcnál, Magyarországon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád vízgyűjtőjén a kalibrációs korreláció r = _____.",
+    "correct": "0,89",
+    "explanation": "A KGE korreláció-összetevője r = 0,89."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád kalibrációs változékonysági aránya _____.",
+    "correct": "0,94",
+    "explanation": "A változékonysági arány 0,94, a vízhozam-változékonyság enyhe alulbecslése."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád validációs KGE = _____.",
+    "correct": "0,76",
+    "explanation": "Validációs KGE = 0,76, 7%-os csökkenés a kalibrációs 0,82-höz képest."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCE-UA alapértelmezésben p = _____ komplexet használ.",
+    "correct": "5",
+    "explanation": "Az SCE-UA alapértelmezése p = 5 komplex."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SWAT modellben a HRU-kat a területhasználat, talajtípus és _____ definiálja.",
+    "correct": "lejtőosztály",
+    "explanation": "A HRU-kat a területhasználat, talajtípus és lejtőosztály egyedi kombinációi definiálják."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GR4J x2 = -5,0 és _____ mm/nap közötti tartományban kalibrálható.",
+    "correct": "3,0",
+    "explanation": "Az x2 paraméterhatárok: [-5,0; 3,0] mm/nap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád GR4J x1 alsó határa _____ mm.",
+    "correct": "100",
+    "explanation": "Az x1 paraméterhatárok: [100; 1200] mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KGE harmadik összetevője, a változékonysági arány jele: _____.",
+    "correct": "γ",
+    "explanation": "A KGE harmadik összetevője γ (gamma), a változékonysági arány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Hernád átlagos éves csapadéka a kalibrációs időszakban kb. _____ mm.",
+    "correct": "680",
+    "explanation": "A vízgyűjtő-átlagos éves csapadék mintegy 680 mm a kalibrációs időszakban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NSE képletében Q̄obs a megfigyelt vízhozam _____ jelöli.",
+    "correct": "átlagát",
+    "explanation": "Q̄obs a megfigyelt vízhozam átlaga az NSE nevezőjében."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választható ki a kalibrációs és validációs időszak?",
+    "explanation": "Az időszak legyen elég hosszú (5-10 év min.), tartalmazza a hidrológiai változékonyság teljes spektrumát (aszály + árvíz), a validáció legyen a kalibráció után vagy attól független."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat az urbanizáció a hidrológiai modell paramétereire?",
+    "explanation": "Az urbanizáció növeli a vízzáró felületet (magasabb CN), csökkenti a beszivárgást és az ET-t, gyorsítja a lefolyási választ. A kalibrált paraméterek nem-stacionáriussá válnak, ami rendszeres újrakalibrálást igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszanak a pilotpont-módszerek a MODFLOW kalibrációban?",
+    "explanation": "A pilotpont-módszer kiválasztott helyszíneken definiálja a paramétereket és közöttük interpolál, csökkentve a paraméterek számát a teljes cellánkénti becsléshez képest. A PEST regularizált inverzióval becsüli a pilotpont-értékeket."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a statikus kalibráció és az adatasszimiláció között?",
+    "explanation": "Statikus: rögzített paraméterek történeti adatokból. Adatasszimiláció: állapotváltozók dinamikus frissítése valós idejű megfigyelésekkel. A statikus kalibráció a modell elindítása előtt zajlik, az adatasszimiláció futás közben."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a MODIS hóborítási adat a kalibrációban?",
+    "explanation": "A MODIS hóborítás a hóolvadási paramétereket korlátozza: a szimulált hóborítás kiterjedésének egyeznie kell a műholdas megfigyeléssel. Ez többváltozós kalibráció keretében csökkenti az ekvifinalitást a hómoduló paramétereinél."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a határon átnyúló vízgyűjtők kalibrációja?",
+    "explanation": "Különböző országok adatpolitikái, formátumai és hozzáférhetősége. A Hernád példa mutatja: a vízgyűjtő 80%-a Szlovákiában, az OVF és SHMU adatainak integrálása szükséges. Az EU WFD és ICPDR keretrendszerek segítik az adatmegosztást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a keresztvalidáció hidrológiai idősoroknál?",
+    "explanation": "Gördülő vagy bővülő ablakú: tanítás 1-14. év / teszt 15-20., majd tanítás 1-10.+15-20. / teszt 11-14. stb. Ez többszörös független becslést ad, felfedi a teljesítmény időszak-érzékenységét."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Monte Carlo-mintavétel szerepe a GLUE-ban?",
+    "explanation": "A GLUE 10^4-10^6 véletlenszerű paraméterkészletet generál az előzetes (prior) eloszlásból, mindegyikre futtatja a modellt, és a viselkedési készleteket megtartja. Ez a brute-force megközelítés nem igényel optimalizálási algoritmust."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat az éghajlatváltozás a kalibrált modellek érvényességére?",
+    "explanation": "A nem-stacionaritás: a csapadékmintázatok, a hőmérséklet és az ET változásai miatt a történeti feltételek melletti paraméterek nem biztos, hogy érvényesek a jövőben. A hagyományos kalibrációnak nincs mechanizmusa az evolváló paraméterekre."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a tározóhálózat-módszer a meder-útvonalon történő hullámtranszformáció kalibrációjánál?",
+    "explanation": "A Muskingum vagy Muskingum-Cunge módszer paraméterei (K, X) kalibrálásra kerülnek a felső és alsó szakaszi vízmérce-adatok alapján. A K a tárolási állandó (utazási idő), az X a súlyozási tényező."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan javítható a kalibrációs eredmény a csapadékadat minőségének növelésével?",
+    "explanation": "Jobb csapadékadat: radar-korrigált állomási adatok, rácsos termékek (ERA5, IMERG), magassági korrekció. A csapadék a hidrológiai modell legfontosabb bemenete; hibái közvetlenül rontják a kalibrációs teljesítményt."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyökkel jár a nyílt forráskódú kalibrációs eszközök használata?",
+    "explanation": "Átláthatóság (a kód ellenőrizhető), költségmentesség, közösségi fejlesztés, reprodukálhatóság. Példák: PEST (MODFLOW), SWAT-CUP (SWAT), airGR (GR4J, R-csomag). A nyílt eszközök demokratizálják a fejlett kalibrációs módszerekhez való hozzáférést."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a kalibrációs időszak hossza az eredmények megbízhatóságát?",
+    "explanation": "Hosszabb időszak: több hidrológiai variabilitás megragadása (aszály, árvíz, különböző évszakok). Rövid időszak: a modell a specifikus feltételekre illeszkedik, és rosszul általánosít. Általában minimum 5-10 éves kalibrációs időszak ajánlott."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szoftvereszközöket alkalmaznak a hidrológiai modellkalibráció automatizálásához?",
+    "explanation": "SCE-UA: MATLAB, Python implementációk. PEST: önálló szoftver (MODFLOW). SWAT-CUP: SWAT-hoz. DREAM: MATLAB/Python. NSGA-II: Python (pymoo). NeuralHydrology: PyTorch-alapú LSTM. Mindegyik nyílt forráskódú vagy szabadon elérhető."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a próbaszivattyúzás szerepe a MODFLOW kalibráció előzetes paraméterbecslésében?",
+    "explanation": "A próbaszivattyúzás közvetlenül méri a vízvezető képességet és a fajlagos tárolást, ami kiindulási értékeket ad a MODFLOW kalibrációhoz. Ezek a lokális mérések prior információként csökkentik az ekvifinalitást, bár a regionális effektív értékek eltérhetnek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a GRACE műholdas adat a hidrológiai modell validálásában?",
+    "explanation": "A GRACE a szárazföldi víztárolás-anomáliát méri ~300 km felbontásban. Összehasonlítható a modell által számított teljes víztárolás-változással (talajnedvesség + felszín alatti víz + hó + felszíni víz). Független validálási adatforrás, amely a vízmérleg konzisztenciáját ellenőrzi."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a visszaduzzasztási hatás, és hogyan befolyásolja a kalibrációt?",
+    "explanation": "Visszaduzzasztás: a vízhozamgörbe (vízszint-vízhozam összefüggés) megváltozik a mércénél, pl. megnövekedett vízszint a mellékfolyó vagy a duzzasztó hatására. A hibás vízhozamadatok torzított kalibrációhoz vezetnek. Ellenőrzés: a vízhozamgörbe stabilitásának vizsgálata."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a PEST pilotpont-módszerének előnyeit a paraméter-zónázással szemben!",
+    "explanation": "Paraméter-zónázás: merev határok, hirtelen ugrások. Pilotpont: folytonos interpoláció, rugalmasabb térbeli mintázat. A pilotpont-módszer jobban reprezentálja a heterogén vízvezető képesség-mezőket, és a regularizáció kontrollálhatóbb."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a felfuttatási (warmup) időszak hossza a kalibrációs eredményekre?",
+    "explanation": "A felfuttatás inicializálja a modell belső tározóit (talajnedvesség, felszín alatti víz). Rövid felfuttatás: az eredmények érzékenyek a kezdeti feltételekre. Ajánlás: legalább 1-2 éves felfuttatás a kalibrációs időszak előtt. A Hernád példában 1 évet (2004) használtak."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az evapotranszspiráció becslése a kalibrációs eredményekben?",
+    "explanation": "A PET a vízmérleg meghatározó tényezője. A PET-módszer megválasztása (Oudin, Penman-Monteith, Hargreaves) befolyásolja a kalibrált paramétereket: eltérő PET-becslés eltérő optimális termelési tározókapacitást (x1) eredményez. Konzisztens PET-módszer használata ajánlott."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a wavelet-analízis a hidrológiai idősorok elemzésében a kalibráció előtt?",
+    "explanation": "A wavelet-analízis az idősort különböző időskálás komponensekre bontja (napi variabilitás, szezonális ciklus, többéves trendek). Ez segíti annak megértését, mely időskálákon teljesít jól/rosszul a modell, és irányítja a kalibrációs stratégiát."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a bootstrap újramintavételezés alkalmazása a kalibrációs bizonytalanság becslésében?",
+    "explanation": "A bootstrap: az eredeti adatsorból véletlenszerű újramintavételezéssel új adatsorokat generál, mindegyikre kalibrál, és a paraméterkészletek szórása a bizonytalanságot jellemzi. Előny: nem igényel feltételezést az eloszlásról. Hátrány: a hidrológiai idősorok autokorrelációját kezelni kell."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Akaike-féle információs kritérium (AIC) a modellszelekciónál?",
+    "explanation": "Az AIC balanszolja az illeszkedés jóságát és a modell bonyolultságát. Kisebb AIC → jobb kompromisszum. Hidrológiában: alternatív modellstruktúrák összehasonlítására használható (pl. 4 vs. 6 paraméteres modell), büntetéssel a túl sok paraméterért."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerepe a hidrológiai jellemzők (signatures) elemzésének a kalibráció diagnosztikájában?",
+    "explanation": "A jellemzők (tartóssággörbe, felszálló ág sűrűsége, alapáramlási index, szezonális minták) a vízgyűjtő viselkedés különböző aspektusait ragadják meg. A szimulált és megfigyelt jellemzők összehasonlítása a kalibrált modell specifikus gyengeségeit tárja fel."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a latin hiperkocka mintavétel az érzékenységvizsgálatban?",
+    "explanation": "A latin hiperkocka mintavétel (LHS): a paraméterteret egyenlő valószínűségű rétegekre osztja és minden rétegből egy mintát vesz, biztosítva a paramétertér egyenletes lefedettségét kevesebb mintával, mint a tiszta véletlenszerű mintavétel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen diagnosztikus információt nyújt a reziduális analízis a kalibráció után?",
+    "explanation": "A reziduálok (megfigyelt - szimulált) elemzése: autokorrelációs struktúra (maradt-e szisztematikus hiba?), szezonális mintázat (szezonális torzítás?), vízhozamfüggő torzítás (a hiba vízhozamtól függ-e?). Ezek a modellstruktúra vagy a bemeneti adatok problémáira utalhatnak."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerepe a validációs időszaknak a kalibrációs eredmények értékelésében?",
+    "explanation": "A validáció független tesztet ad a modell általánosíthatóságáról. Ha a validációs teljesítmény jelentősen rosszabb a kalibrációsnál: túlilleszkedés. Ha hasonló: a modell robusztus. A Hernád példában a KGE 0,82-ről 0,76-ra csökkent, ami elfogadható."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a paraméter-perturbációs analízis a modell robusztusságának vizsgálatára?",
+    "explanation": "A kalibrált paraméterkészlet körül kis perturbációkat alkalmazunk és megfigyeljük a teljesítmény változását. Ha a teljesítmény stabilan marad: robusztus kalibráció. Ha kis perturbáció nagy változást okoz: érzékeny paraméter, amely pontosabb meghatározást igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a hidrológiai modellek kalibrálása városi vízgyűjtőkre?",
+    "explanation": "Városi vízgyűjtők: magas vízzáró felülethányad, komplex csatorna-infrastruktúra, a felszíni lefolyás dominanciája, rövid válaszidő. A hagyományos vízmérleg-modellek (GR4J) nem megfelelőek; specifikus városi hidrológiai modellek (SWMM) szükségesek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a domborzati modell (DEM) felbontása a kalibrációs eredményeket?",
+    "explanation": "A DEM felbontás meghatározza a vízgyűjtő-lehatárolást, a lejtést és a folyóhálózatot. Durva DEM → pontatlan vízgyűjtőhatár → hibás kalibrációs adatok. A DEM-elemzés (9-11. fejezet) a kalibrációs munkafolyamat előzetes lépése."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a párhuzamos számítás szerepe a hidrológiai modellkalibrációban?",
+    "explanation": "A párhuzamos számítás drasztikusan csökkenti a kalibrációs időt: az SCE-UA, DREAM és NSGA-II mind párhuzamosíthatók, mert a modellfuttatások függetlenek. 32 magon az eredetileg 700 napos DREAM-elemzés 22 napra csökken."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az ensemble Bayesian Model Averaging a többmodelles előrejelzésben?",
+    "explanation": "A BMA többmodelles ensemble súlyokat ad a modellekhez a történeti teljesítményük alapján. A jobb modelleknek nagyobb súlyuk van az ensemble előrejelzésben. Eredmény: kalibráltabb valószínűségi előrejelzés, mint bármelyik egyedi modellé."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a split-sample teszt és a proxy basin teszt a modellvalidációban?",
+    "explanation": "Split-sample: ugyanaz a vízgyűjtő, különböző időszakok (időbeli transzferálhatóság). Proxy basin: különböző vízgyűjtő, azonos időszak (térbeli transzferálhatóság). Mindkettő a modell általánosíthatóságát teszteli, különböző szempontokból."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a differential split-sample teszt éghajlatváltozási tanulmányokban?",
+    "explanation": "A modellt száraz kalibrációs időszakon kalibráljuk és nedves validációs időszakon teszteljük (vagy fordítva). Ha a modell jól transzferál az eltérő éghajlati feltételek között, nagyobb bizalommal alkalmazható jövőbeni éghajlati forgatókönyvekre."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információt nyújt a flow duration curve (tartóssággörbe) a kalibrációs diagnózisban?",
+    "explanation": "A tartóssággörbe a vízhozam-gyakoriság összefüggését mutatja. A szimulált és megfigyelt görbék összehasonlítása: a nagyvízi végpont csúcs-reprodukciót, a kisvízi végpont alapáramlás-reprodukciót, a meredekség a tározó-kapacitást jellemzi. Eltérések specifikus paraméterproblémákra utalnak."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhetők a hiányzó adatok a kalibrációs idősorokban?",
+    "explanation": "Módszerek: lineáris interpoláció (rövid hézagok), regresszió szomszédos állomásokkal, adatasszimiláció-alapú pótlás. A hiányzó adatokat jelölni kell, és a kalibrációs mérőszámot csak a teljes adatú időlépésekre kell számítani."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerepe a szemivariogramnak a MODFLOW térbeli parametrizálásban?",
+    "explanation": "A szemivariogram a paraméter térbeli korrelációs struktúráját írja le (range, sill, nugget). A kriging és a pilotpont-módszer a szemivariogramot használja az interpolációhoz. A PEST regularizáció a szemivariogram-struktúrával konzisztens térbeli simítást alkalmaz."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan értékelhető a kalibrált modell teljesítménye szélsőséges események esetén?",
+    "explanation": "Specifikus mérőszámok: csúcsvízhozam-hiba (%), csúcsidőzítés-hiba (óra/nap), kontingenciaanalízis (találati arány, téves riasztási arány) riasztási küszöbökre. A szélsőséges események értékelése fontosabb az operatív alkalmazásoknál, mint az átlagos NSE."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a vízgyűjtő-leírók készlete (catchment attributes) a nagymintás kalibrációs kutatásban?",
+    "explanation": "A CAMELS és LamaH-CE szabványosított leírók (terület, lejtés, éghajlat, talaj, geológia, területhasználat) lehetővé teszik: kalibrált paraméterkészletek regressziója leírókra, hasonló vízgyűjtők azonosítása, transzfer tanulás, a modell-hiba szisztematikus forrásainak feltárása."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a hidrológiai modellezés jövőjét az MI-ágensek és a hagyományos kalibráció integrálása szempontjából!",
+    "explanation": "A jövő: MI-ágensek a gyors paraméterfeltáráshoz és diagnosztikához, DREAM a formális bizonytalanságelemzéshez, adatasszimiláció a valós idejű frissítéshez. A módszerek kiegészítik egymást: ágens → hatékony keresés, hagyományos → matematikai garancia. Az ember a modellstruktúra és az értelmezés szintjén marad nélkülözhetetlen."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az információelméleti megközelítés a célfüggvények értékelésében?",
+    "explanation": "Az információelméleti mérőszámok (kölcsönös információ, entrópia) a szimulált és megfigyelt eloszlások hasonlóságát mérik, nem csak a pontbeli eltéréseket. Ez robusztusabb lehet, mint az NSE/KGE, különösen nemlineáris és nem-gaussi hidrográfoknál."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vízhozamgörbe (rating curve) bizonytalanságának hatása a kalibrációra?",
+    "explanation": "A vízhozamgörbe a vízszint-vízhozam összefüggés, amelyet a mérce-állomáson alkalmaznak. Bizonytalansága (különösen nagyvizeknél, ahol a mérés nehéz) közvetlenül befolyásolja a kalibrációs célváltozót. A vízhozamgörbe-bizonytalanság figyelembevétele javítja a kalibrációs realitást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a klímamodellek a hidrológiai modellek jövőbeni alkalmazásához?",
+    "explanation": "A kalibrált hidrológiai modellt klímamodell-kimenetekkel (CMIP6 GCM-ek, regionalizált RCM-ek) hajtják. Kihívások: bias-korrekció szükséges, a stacionaritási feltételezés sérülhet, az ensemble-megközelítés kezeli a projekciós bizonytalanságot."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lehetőségeket kínál az EU Copernicus program a hidrológiai modellkalibrációhoz?",
+    "explanation": "Copernicus: ERA5-Land (rácspontos meteorológia), Sentinel-2 (felszínborítás), Sentinel-1 (talajnedvesség, árvízi kiterjedés), CCI talajnedvesség, GRACE felszín alatti vízkészlet. Mindezek többváltozós kalibrációs adatforrásokként vagy független validációként használhatók."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a SMAP vagy SMOS műholdas talajnedvesség-adat a modellkalibrációban?",
+    "explanation": "A SMAP és SMOS talajnedvesség-mérései (~40 km felbontás) független adatforrásként használhatók a beszivárgási és ET paraméterek korlátozására. A vízhozam + talajnedvesség együttes kalibrálása csökkenti az ekvifinalitást és javítja a belső állapotok reprezentálását."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerepe a benchmarknak (viszonyítási alapnak) a modellteljesítmény értékelésében?",
+    "explanation": "Benchmark: egyszerű referencia-modell (pl. perzisztencia, szezonális klimatológia, lineáris regresszió), amelyhez képest értékeljük a komplex modellt. Ha a komplex modell nem javítja jelentősen a benchmarkot, a többlet-bonyolultság nem indokolt."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a mintavételi gyakoriság (napi vs. órás adatok) a kalibrációs eredményekre?",
+    "explanation": "Napi adatok: az árhullámok részletei elvesznek, a csúcsok elmosódnak. Órás adatok: jobb csúcsreprodukció, de több zaj és magasabb számítási költség. A mintavételi gyakoriság megválasztása az alkalmazás céljától függ (árvízi figyelmeztetés: órás; vízkészlet-tervezés: napi)."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a szerepe a hidrológiai modellezésnek a vízgazdálkodási tervezésben?",
+    "explanation": "A kalibrált modellek forgatókönyv-elemzéseket tesznek lehetővé: éghajlatváltozás hatása, területhasználat-változás, infrastruktúra-fejlesztés (gátak, tározók), vízkészlet-allokáció. A bizonytalanságelemzés biztosítja, hogy a tervezési döntések a modell megbízhatósági korlátait tükrözzék."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Hernád kalibrációs példa gyakorlati tanulságait a modellezők számára!",
+    "explanation": "Tanulságok: 1) Egyszerű modell (GR4J) is jó eredményt adhat. 2) A paraméterek fizikai értelmezése növeli a bizalmat. 3) A validáció elengedhetetlen. 4) Az érzékenységvizsgálat csökkenti a kalibrációs erőfeszítést. 5) A bizonytalanságelemzés feltárja a paraméterek azonosíthatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választható ki a kalibrációs és validációs időszak?",
+    "explanation": "Az időszak legyen elég hosszú (5-10 év min.), tartalmazza a hidrológiai változékonyság teljes spektrumát (aszály + árvíz), a validáció legyen a kalibráció után vagy attól független."
+  }
+]

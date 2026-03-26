@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "A térbeli interpoláció célja:",
+    "options": [
+      "A) Értékek becslése méretlen helyeken ismert mintapontokból",
+      "B) Mérőállomások telepítése",
+      "C) Műholdképek feldolgozása",
+      "D) Vízgyűjtők lehatárolása"
+    ],
+    "correct": "A",
+    "explanation": "A térbeli interpoláció értékeket becsül méretlen helyeken korlátozott számú ismert mintapontból."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-poligonok másik neve:",
+    "options": [
+      "A) Delaunay-poligonok",
+      "B) Voronoj-poligonok",
+      "C) Krigelési poligonok",
+      "D) Spline-poligonok"
+    ],
+    "correct": "B",
+    "explanation": "A Thiessen-poligonokat Voronoj-poligonoknak vagy Dirichlet-mozaikoknak is nevezik."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW módszerben a p = 2 hatványkitevőnél a súly hogyan csökken?",
+    "options": [
+      "A) Lineárisan a távolsággal",
+      "B) A távolság négyzetével fordítottan arányosan",
+      "C) Exponenciálisan",
+      "D) Nem csökken"
+    ],
+    "correct": "B",
+    "explanation": "Ha p = 2, a súly w = 1/d², tehát a távolság négyzetével fordítottan arányos."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az IDW jellegzetes műterméke?",
+    "options": [
+      "A) Csíkozás",
+      "B) Bikaszem effektus",
+      "C) Negatív értékek",
+      "D) Lépcsős felszín"
+    ],
+    "correct": "B",
+    "explanation": "Az IDW koncentrikus kör alakú szintvonalakat hoz létre minden mintapont körül (bikaszem effektus)."
+  },
+  {
+    "type": "mcq",
+    "question": "A krigelés milyen rövidítést visel?",
+    "options": [
+      "A) LIFO",
+      "B) BLUE",
+      "C) FIFO",
+      "D) RMSE"
+    ],
+    "correct": "B",
+    "explanation": "A krigelés a Best Linear Unbiased Estimate (BLUE) – legjobb lineáris torzítatlan becslés."
+  },
+  {
+    "type": "mcq",
+    "question": "A szemivariogram három fő paramétere:",
+    "options": [
+      "A) Átlag, szórás, medián",
+      "B) Nugget, küszöb, hatástávolság",
+      "C) Lejtés, kitettség, görbület",
+      "D) Felbontás, kiterjedés, támasz"
+    ],
+    "correct": "B",
+    "explanation": "A variogramot nugget (c₀), küszöb (c₀+c) és hatástávolság (a) jellemzi."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik interpolációs módszer ad bizonytalanságbecslést?",
+    "options": [
+      "A) IDW",
+      "B) Spline",
+      "C) Krigelés",
+      "D) Legközelebbi szomszéd"
+    ],
+    "correct": "C",
+    "explanation": "A krigelés egyedülálló módon krigelési varianciát is szolgáltat minden előrejelzési helyen."
+  },
+  {
+    "type": "mcq",
+    "question": "Az orografikus hatás:",
+    "options": [
+      "A) A domborzati emelés által okozott csapadéknövekedés",
+      "B) A hőmérséklet növekedése magassággal",
+      "C) A szél által okozott erózió",
+      "D) A páratartalom csökkenése"
+    ],
+    "correct": "A",
+    "explanation": "Az orografikus hatás a hegyek szélnek kitett oldalán a kényszerített emelkedés okozta csapadéknövekedés."
+  },
+  {
+    "type": "mcq",
+    "question": "A PRISM csapadéktermék melyik országra készül?",
+    "options": [
+      "A) Magyarország",
+      "B) Egyesült Államok",
+      "C) Egész Európa",
+      "D) Globális"
+    ],
+    "correct": "B",
+    "explanation": "A PRISM az Egyesült Államok szabványos referenciaklimatológiája."
+  },
+  {
+    "type": "mcq",
+    "question": "Az E-OBS csapadéktermék felbontása:",
+    "options": [
+      "A) 800 m",
+      "B) 0,1 fok (~11 km)",
+      "C) 5 km",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "Az E-OBS 0,1 fokos (~11 km-es) és 0,25 fokos felbontásban érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "A CARPATCLIM melyik időszakot fedi le?",
+    "options": [
+      "A) 1900-1950",
+      "B) 1961-2010",
+      "C) 1981-2020",
+      "D) 2000-2025"
+    ],
+    "correct": "B",
+    "explanation": "A CARPATCLIM az 1961-2010 közötti időszakot fedi le."
+  },
+  {
+    "type": "mcq",
+    "question": "A CHIRPS elsődleges célja:",
+    "options": [
+      "A) Európai hőmérséklet-térképezés",
+      "B) Trendelemzés és aszályfigyelés adatszegény régiókban",
+      "C) Szélsebesség-mérés",
+      "D) Tengerszint-emelkedés figyelése"
+    ],
+    "correct": "B",
+    "explanation": "A CHIRPS-t kifejezetten trendelemzésre és aszályfigyelésre tervezték adatszegény régiókban."
+  },
+  {
+    "type": "mcq",
+    "question": "A zonális statisztika milyen bemenetet igényel?",
+    "options": [
+      "A) Csak pontadatokat",
+      "B) Zónapoligonokat és értékrasztert",
+      "C) Csak műholdképeket",
+      "D) Csak vektoros adatokat"
+    ],
+    "correct": "B",
+    "explanation": "A zonális statisztika egy raszterfelszínt és a zónákat meghatározó poligonhalmazt igényel."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-poligon módszert ki fejlesztette ki és melyik évben?",
+    "options": [
+      "A) Krige, 1950",
+      "B) Thiessen, 1911",
+      "C) Matheron, 1965",
+      "D) Daly, 1994"
+    ],
+    "correct": "B",
+    "explanation": "Alfred H. Thiessen fejlesztette ki 1911-ben az Egyesült Államok Időjárási Hivatalánál."
+  },
+  {
+    "type": "mcq",
+    "question": "A környezeti hőmérsékleti gradiens értéke hozzávetőleg:",
+    "options": [
+      "A) -2,5 °C/1000 m",
+      "B) -6,5 °C/1000 m",
+      "C) -10 °C/1000 m",
+      "D) +6,5 °C/1000 m"
+    ],
+    "correct": "B",
+    "explanation": "A környezeti hőmérsékleti gradiens hozzávetőleg -6,5 °C/1000 m."
+  },
+  {
+    "type": "mcq",
+    "question": "A bilineáris interpoláció hány környező cellát használ?",
+    "options": [
+      "A) 1",
+      "B) 4",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "B",
+    "explanation": "A bilineáris interpoláció 4 környező cellát (sarokértéket) használ."
+  },
+  {
+    "type": "mcq",
+    "question": "A köbös konvolúció hány környező cellát használ?",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 16",
+      "D) 32"
+    ],
+    "correct": "C",
+    "explanation": "A köbös konvolúciós újramintavételezés 16 környező cellát használ."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik interpolációs módszer alkalmas kategoriális adatokra?",
+    "options": [
+      "A) IDW",
+      "B) Spline",
+      "C) Krigelés",
+      "D) Legközelebbi szomszéd"
+    ],
+    "correct": "D",
+    "explanation": "Kategoriális adatokra (területhasználat, talajtípus) csak a legközelebbi szomszéd interpoláció alkalmas."
+  },
+  {
+    "type": "mcq",
+    "question": "A spline interpoláció milyen veszélyt hordoz?",
+    "options": [
+      "A) Túl sima felszín",
+      "B) Túllövés (negatív csapadék)",
+      "C) Túl kevés mintapont használata",
+      "D) Túl lassú számítás"
+    ],
+    "correct": "B",
+    "explanation": "A spline túllőhet a mintapontok között, fizikailag lehetetlen értékeket (pl. negatív csapadék) produkálva."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW-nél a p → ∞ esetén milyen módszert kapunk?",
+    "options": [
+      "A) Krigelést",
+      "B) Spline-t",
+      "C) Legközelebbi szomszédot",
+      "D) Bilineáris interpolációt"
+    ],
+    "correct": "C",
+    "explanation": "Ahogy p → ∞, az IDW a legközelebbi szomszéd interpolációhoz konvergál."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik csapadéktermék 20 tagú együttest (ensemble) generál?",
+    "options": [
+      "A) PRISM",
+      "B) E-OBS",
+      "C) CHIRPS",
+      "D) CARPATCLIM"
+    ],
+    "correct": "B",
+    "explanation": "Az E-OBS 20 tagú együttest generál a rácshálós értékek bizonytalanságának felméréséhez."
+  },
+  {
+    "type": "mcq",
+    "question": "A GPM/IMERG időbeli felbontása:",
+    "options": [
+      "A) Napi",
+      "B) Félórás",
+      "C) Havi",
+      "D) Óránkénti"
+    ],
+    "correct": "B",
+    "explanation": "A GPM/IMERG félórás időbeli felbontással rendelkezik."
+  },
+  {
+    "type": "mcq",
+    "question": "A CHIRPS térbeli felbontása:",
+    "options": [
+      "A) 0,25 fok",
+      "B) 0,1 fok",
+      "C) 0,05 fok (~5,3 km)",
+      "D) 800 m"
+    ],
+    "correct": "C",
+    "explanation": "A CHIRPS 0,05 fokos (~5,3 km-es) felbontású."
+  },
+  {
+    "type": "mcq",
+    "question": "A Zagyva vízgyűjtő becsült éves átlagcsapadéka a hipsometrikus módszerrel:",
+    "options": [
+      "A) 520 mm",
+      "B) 565 mm",
+      "C) 603 mm",
+      "D) 800 mm"
+    ],
+    "correct": "B",
+    "explanation": "P = 497 + 0,308 × 220 (átlagos vízgyűjtőmagasság) ≈ 565 mm."
+  },
+  {
+    "type": "mcq",
+    "question": "A Zagyva vízgyűjtő hipsometrikus regressziójában a meredekség:",
+    "options": [
+      "A) 0,100 mm/m",
+      "B) 0,208 mm/m",
+      "C) 0,308 mm/m",
+      "D) 0,508 mm/m"
+    ],
+    "correct": "C",
+    "explanation": "P = 497 + 0,308h, tehát a meredekség 0,308 mm/m (31 mm/100 m)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Felső-Tisza medence területe hozzávetőleg:",
+    "options": [
+      "A) 7 300 km²",
+      "B) 73 000 km²",
+      "C) 730 000 km²",
+      "D) 5 677 km²"
+    ],
+    "correct": "B",
+    "explanation": "A Felső-Tisza medence körülbelül 73 000 km²-t csapol le."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-módszer Felső-Tisza csapadékbecslése mennyivel becsülte alul a valódi értéket?",
+    "options": [
+      "A) 10%-kal",
+      "B) 20%-kal",
+      "C) 40%-kal",
+      "D) 60%-kal"
+    ],
+    "correct": "C",
+    "explanation": "A Thiessen-becslés (580 mm) kb. 40%-kal alulbecsülte a CARPATCLIM referenciát (950 mm)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az extrapoláció:",
+    "options": [
+      "A) A mintatartományon belüli becslés",
+      "B) A mintatartományon túli becslés",
+      "C) A mérőállomásoknál kapott pontos érték",
+      "D) A térbeli átlag kiszámítása"
+    ],
+    "correct": "B",
+    "explanation": "Az extrapoláció a mintatartományon kívüli becslés, jelentősen nagyobb bizonytalansággal."
+  },
+  {
+    "type": "mcq",
+    "question": "A lefolyási hányados tipikus értéke mérsékelt éghajlatú vízgyűjtőkre:",
+    "options": [
+      "A) 0,01-0,05",
+      "B) 0,10-0,30",
+      "C) 0,30-0,50",
+      "D) 0,80-0,95"
+    ],
+    "correct": "C",
+    "explanation": "Közép-Európa nagy részén (beleértve Magyarországot) R_r = 0,30-0,50."
+  },
+  {
+    "type": "mcq",
+    "question": "A WMO szabványos csapadékmérő nyílása:",
+    "options": [
+      "A) 100 cm²",
+      "B) 200 cm²",
+      "C) 324 cm²",
+      "D) 500 cm²"
+    ],
+    "correct": "B",
+    "explanation": "A WMO szabvány szerint a mérőnyílás 200 cm²."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az esőárnyék?",
+    "options": [
+      "A) A hegység szélnek kitett oldalán lévő nedves zóna",
+      "B) A hegység szélvédett oldalán lévő száraz zóna",
+      "C) A mérőállomás körüli terület",
+      "D) A csapadékmentes időszak"
+    ],
+    "correct": "B",
+    "explanation": "Az esőárnyék a hegység szélvédett oldalán kialakuló száraz zóna."
+  },
+  {
+    "type": "mcq",
+    "question": "A ko-krigelés leggyakoribb segédváltozója csapadék interpolálásához:",
+    "options": [
+      "A) Szélsebesség",
+      "B) Tengerszint feletti magasság",
+      "C) Hőmérséklet",
+      "D) Talajnedvesség"
+    ],
+    "correct": "B",
+    "explanation": "A csapadék és a magasság közötti erős kapcsolat teszi a magasságot a legjobb segédváltozóvá."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ERA5 reanalízis adatok felbontása:",
+    "options": [
+      "A) 0,05 fok",
+      "B) 0,1 fok",
+      "C) 0,25 fok (~31 km)",
+      "D) 1 fok"
+    ],
+    "correct": "C",
+    "explanation": "Az ERA5 hozzávetőleg 0,25 fokos (~31 km-es) felbontású."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik intézmény készíti az E-OBS-t?",
+    "options": [
+      "A) OMSZ",
+      "B) KNMI",
+      "C) USGS",
+      "D) NASA"
+    ],
+    "correct": "B",
+    "explanation": "Az E-OBS-t a Holland Királyi Meteorológiai Intézet (KNMI) állítja elő."
+  },
+  {
+    "type": "mcq",
+    "question": "A CARPATCLIM hány ország konzorciuma készítette?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 9",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "Kilenc ország konzorciuma az OMSZ vezetésével."
+  },
+  {
+    "type": "mcq",
+    "question": "A PRISM térbeli felbontása:",
+    "options": [
+      "A) 100 m",
+      "B) 800 m",
+      "C) 4 km",
+      "D) 10 km"
+    ],
+    "correct": "B",
+    "explanation": "A PRISM 800 m-es (30 szögmásodperces) és 4 km-es felbontásban érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-poligon vízgyűjtő-átlag csapadék képlete:",
+    "options": [
+      "A) P̄ = ΣPi / n",
+      "B) P̄ = Σ(Pi × Ai) / ΣAi",
+      "C) P̄ = max(Pi)",
+      "D) P̄ = median(Pi)"
+    ],
+    "correct": "B",
+    "explanation": "A területsúlyozott átlag: P̄ = Σ(Pi × Ai) / ΣAi."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-poligonok és a Delaunay-háromszögelés kapcsolata:",
+    "options": [
+      "A) Azonosak",
+      "B) Duális kapcsolat",
+      "C) Nincs kapcsolat",
+      "D) Egymás inverzei"
+    ],
+    "correct": "B",
+    "explanation": "A Thiessen-poligonok és a Delaunay-háromszögelés matematikai dualitásban állnak."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen vetületi rendszert ajánlanak magyar interpolációs munkához?",
+    "options": [
+      "A) WGS84",
+      "B) EOV (EPSG:23700)",
+      "C) Mercator",
+      "D) Polar sztereografikus"
+    ],
+    "correct": "B",
+    "explanation": "Magyar projektekhez az EOV (EPSG:23700) ajánlott, metrikus koordinátákkal."
+  },
+  {
+    "type": "mcq",
+    "question": "A Mátra-hegység (Kékes) éves csapadéka hozzávetőleg:",
+    "options": [
+      "A) 500 mm",
+      "B) 600 mm",
+      "C) 700-800 mm",
+      "D) 1200 mm"
+    ],
+    "correct": "C",
+    "explanation": "A Mátra és Bükk hegységei 700-800 mm/év csapadékot kapnak."
+  },
+  {
+    "type": "mcq",
+    "question": "A központi Alföld éves csapadéka hozzávetőleg:",
+    "options": [
+      "A) 300-400 mm",
+      "B) 500-550 mm",
+      "C) 700-800 mm",
+      "D) 1000 mm"
+    ],
+    "correct": "B",
+    "explanation": "A központi Alföld csak 500-550 mm/évet kap."
+  },
+  {
+    "type": "mcq",
+    "question": "A zonális statisztikák pontossága nagy vízgyűjtőknél:",
+    "options": [
+      "A) Méterek nagyságrendű",
+      "B) Centiméterek nagyságrendű",
+      "C) Kilométerek nagyságrendű",
+      "D) Nem mérhető"
+    ],
+    "correct": "B",
+    "explanation": "A zonális statisztikák számítási pontossága centiméterekben mérhető, 2-3 nagyságrenddel jobb az adathibánál."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW-nél milyen p-érték a leggyakoribb?",
+    "options": [
+      "A) p = 0,5",
+      "B) p = 1",
+      "C) p = 2",
+      "D) p = 5"
+    ],
+    "correct": "C",
+    "explanation": "A hidrológiai alkalmazásokban p = 2 a leggyakoribb."
+  },
+  {
+    "type": "mcq",
+    "question": "A nugget mit képvisel a variogramban?",
+    "options": [
+      "A) A teljes varianciát",
+      "B) A mérési hibát és mikroléptékű változékonyságot",
+      "C) A hatástávolságot",
+      "D) A térbeli trendet"
+    ],
+    "correct": "B",
+    "explanation": "A nugget (c₀) a mérési hibát és a mintavételi felbontás alatti változékonyságot képviseli."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik módszer NEM lő túl soha?",
+    "options": [
+      "A) Spline",
+      "B) Krigelés",
+      "C) IDW",
+      "D) Polinomiális trendfelszín"
+    ],
+    "correct": "C",
+    "explanation": "Az IDW soha nem produkál a bemeneti adatok tartományán kívüli értékeket."
+  },
+  {
+    "type": "mcq",
+    "question": "A regularizált spline-ok mit tesznek?",
+    "options": [
+      "A) Pontosan átmennek minden mintaponton",
+      "B) Megengednek némi eltérést a mintapontoktól",
+      "C) Csak lineáris felszínt illesztenek",
+      "D) Csak kategoriális adathoz alkalmasak"
+    ],
+    "correct": "B",
+    "explanation": "A regularizált spline-ok megengednek némi eltérést a mintapontoktól egy simább felszínért cserébe."
+  },
+  {
+    "type": "mcq",
+    "question": "A Zonal Statistics as Table eszköz milyen ArcGIS eszköztárban található?",
+    "options": [
+      "A) Surface",
+      "B) Zonal",
+      "C) Hydrology",
+      "D) Interpolation"
+    ],
+    "correct": "B",
+    "explanation": "A Zonal Statistics as Table a Spatial Analyst > Zonal eszközkészletben van."
+  },
+  {
+    "type": "mcq",
+    "question": "A lefolyási hányados képlete:",
+    "options": [
+      "A) R_r = P / Q",
+      "B) R_r = lefolyási magasság / csapadék",
+      "C) R_r = terület / csapadék",
+      "D) R_r = csapadék × terület"
+    ],
+    "correct": "B",
+    "explanation": "R_r = éves átlagos lefolyási magasság / éves átlagos csapadék."
+  },
+  {
+    "type": "mcq",
+    "question": "A PRISM milyen interpolációs megközelítést használ?",
+    "options": [
+      "A) Globális regressziót",
+      "B) Helyi regressziós modelleket magassággal",
+      "C) Egyszerű IDW-t",
+      "D) Thiessen-poligonokat"
+    ],
+    "correct": "B",
+    "explanation": "A PRISM helyi regressziós modelleket fejleszt, amelyek térben változnak és figyelembe veszik a magasságot."
+  },
+  {
+    "type": "mcq",
+    "question": "A GPM/IMERG milyen mérési elvet alkalmaz?",
+    "options": [
+      "A) Infravörös felhőtető-hőmérséklet",
+      "B) Mikrohullámú radiométerek és radarok",
+      "C) Csak földi mérőhálózatot",
+      "D) Csak szinoptikus állomásokat"
+    ],
+    "correct": "B",
+    "explanation": "A GPM műholdak mikrohullámú radiométereket és radarokat használnak a csapadék közvetlen méréséhez."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OMSZ hány állomást üzemeltet Magyarországon?",
+    "options": [
+      "A) 50",
+      "B) 100",
+      "C) 136",
+      "D) 200"
+    ],
+    "correct": "C",
+    "explanation": "Az OMSZ 136 állomást üzemeltet országszerte 10 perces felbontással."
+  },
+  {
+    "type": "mcq",
+    "question": "Az APHRODITE csapadéktermék melyik régiót fedi le?",
+    "options": [
+      "A) Európát",
+      "B) Afrikát",
+      "C) Monszun-Ázsiát",
+      "D) Dél-Amerikát"
+    ],
+    "correct": "C",
+    "explanation": "Az APHRODITE a monszun-ázsiai régiót fedi le 0,25 fokos felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "Egy szabványos mérő által mintavételezett terület hozzávetőleg:",
+    "options": [
+      "A) 10⁻³ km²",
+      "B) 10⁻⁶ km²",
+      "C) 10⁻⁹ km²",
+      "D) 1 km²"
+    ],
+    "correct": "B",
+    "explanation": "A mérőnyílás ~200-324 cm², ami hozzávetőleg 10⁻⁶ km²."
+  },
+  {
+    "type": "mcq",
+    "question": "Az E-OBS interpolációs eljárása hány lépésből áll?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 5"
+    ],
+    "correct": "C",
+    "explanation": "Három lépés: (1) spline klimatológia, (2) napi anomáliák krigelése, (3) kombinálás."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen újramintavételezési módszer ajánlott DEM-ek vetítésekor?",
+    "options": [
+      "A) Legközelebbi szomszéd",
+      "B) Bilineáris vagy köbös konvolúció",
+      "C) Spline",
+      "D) Krigelés"
+    ],
+    "correct": "B",
+    "explanation": "Folytonos változókhoz bilineáris vagy köbös konvolúciós módszer ajánlott."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik NEM a krigelés változata?",
+    "options": [
+      "A) Egyszerű krigelés",
+      "B) Univerzális krigelés",
+      "C) Empirikus Bayes-krigelés",
+      "D) Tenziós krigelés"
+    ],
+    "correct": "D",
+    "explanation": "Tenziós krigelés nem létezik; a tenzió a spline-ok paramétere."
+  },
+  {
+    "type": "mcq",
+    "question": "A CRU TS adatbázis meddig nyúlik vissza?",
+    "options": [
+      "A) 1800",
+      "B) 1901",
+      "C) 1950",
+      "D) 1981"
+    ],
+    "correct": "B",
+    "explanation": "A CRU TS 1901-től napjainkig biztosít havi adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ERA5 reanalízis milyen időszakot fed le?",
+    "options": [
+      "A) 1900-tól",
+      "B) 1940-től",
+      "C) 1979-től",
+      "D) 2000-től"
+    ],
+    "correct": "B",
+    "explanation": "Az ERA5 1940-ig visszanyúlva biztosít globális adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "A Zagyva vízgyűjtő területe hozzávetőleg:",
+    "options": [
+      "A) 567 km²",
+      "B) 2500 km²",
+      "C) 5677 km²",
+      "D) 73000 km²"
+    ],
+    "correct": "C",
+    "explanation": "A Zagyva körülbelül 5677 km²-t csapol le Észak-Magyarországon."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW kidolgozott példában (A=24, B=36, C=18 mm) a célpont becslése:",
+    "options": [
+      "A) 18,0 mm",
+      "B) 22,7 mm",
+      "C) 26,0 mm",
+      "D) 36,0 mm"
+    ],
+    "correct": "B",
+    "explanation": "A súlyozott átlag 22,7 mm, alacsonyabb a számtani átlagnál a közeli alacsony értékű C mérő dominanciája miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyarország szélességén (~47°É) egy hosszúsági fok hozzávetőleg hány km?",
+    "options": [
+      "A) 111 km",
+      "B) 76 km",
+      "C) 50 km",
+      "D) 30 km"
+    ],
+    "correct": "B",
+    "explanation": "111 × cos(47°) ≈ 76 km."
+  },
+  {
+    "type": "mcq",
+    "question": "A felszínalapú csapadékátlagolás lépései:",
+    "options": [
+      "A) Csak mérők leolvasása",
+      "B) Interpoláció → zonális statisztika",
+      "C) Thiessen-poligonok szerkesztése",
+      "D) Csak műholdkép elemzése"
+    ],
+    "correct": "B",
+    "explanation": "A felszínalapú módszer: először interpoláció, majd zonális statisztika a vízgyűjtőkön."
+  },
+  {
+    "type": "mcq",
+    "question": "A hipsometrikus módszer első lépése:",
+    "options": [
+      "A) Térképszerkesztés",
+      "B) Regresszió kidolgozása magasság és csapadék között",
+      "C) DEM letöltése",
+      "D) Krigelés futtatása"
+    ],
+    "correct": "B",
+    "explanation": "Első lépés: lineáris regresszió az állomások magassága és csapadéka között."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen torzítást okoz a völgyi mérőhálózat a hegyvidéki csapadék interpolálásánál?",
+    "options": [
+      "A) Felülbecslést",
+      "B) Alulbecslést a nagy magasságokon",
+      "C) Pontos becslést",
+      "D) Semmilyen torzítást"
+    ],
+    "correct": "B",
+    "explanation": "A völgyi mérők alulbecsülik a magasabb tengerszint feletti magasságok csapadékát."
+  },
+  {
+    "type": "mcq",
+    "question": "A polinomiális trendfelszín milyen módszer?",
+    "options": [
+      "A) Interpoláló",
+      "B) Simító",
+      "C) Osztályozó",
+      "D) Szűrő"
+    ],
+    "correct": "B",
+    "explanation": "A polinomiális trendfelszín simító módszer, jellemzően nem megy át a mintapontokon."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik termék biztosítja a Magyarország számára legrészletesebb éghajlati atlaszt?",
+    "options": [
+      "A) E-OBS",
+      "B) CARPATCLIM",
+      "C) PRISM",
+      "D) CHIRPS"
+    ],
+    "correct": "B",
+    "explanation": "A CARPATCLIM az 1961-2010 időszakra a legrészletesebb, homogenizált éghajlati adatbázis."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a hatástávolság (range) a variogramban?",
+    "options": [
+      "A) A maximális mérési érték",
+      "B) A távolság, amelynél a variogram eléri a küszöböt",
+      "C) A minimális mintavételi távolság",
+      "D) A maximális keresési sugár"
+    ],
+    "correct": "B",
+    "explanation": "A hatástávolság az a távolság, amelyen túl az adatpontok gyakorlatilag korrelálatlanok."
+  },
+  {
+    "type": "mcq",
+    "question": "A lefolyási magasság képlete:",
+    "options": [
+      "A) Q/A",
+      "B) (Q × T) / A",
+      "C) P × A",
+      "D) P / Q"
+    ],
+    "correct": "B",
+    "explanation": "Lefolyási magasság = (Q × T) / A, ahol Q a vízhozam, T az időszak, A a terület."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-módszer kidolgozott példájában a súlyozott átlag csapadék:",
+    "options": [
+      "A) 520,0 mm",
+      "B) 579,8 mm",
+      "C) 603,3 mm",
+      "D) 680,0 mm"
+    ],
+    "correct": "B",
+    "explanation": "P̄ = 301490 / 520 = 579,8 mm."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-módszer kidolgozott példájában a számtani átlag:",
+    "options": [
+      "A) 520,0 mm",
+      "B) 579,8 mm",
+      "C) 603,3 mm",
+      "D) 680,0 mm"
+    ],
+    "correct": "C",
+    "explanation": "(680 + 520 + 610) / 3 = 603,3 mm."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik módszerrel NEM szerkeszthetők Thiessen-poligonok?",
+    "options": [
+      "A) Create Thiessen Polygons (ArcGIS)",
+      "B) Voronoi Polygons (QGIS)",
+      "C) Zonal Statistics (ArcGIS)",
+      "D) Mindegyikkel szerkeszthetők"
+    ],
+    "correct": "C",
+    "explanation": "A Zonal Statistics összefoglaló statisztikákat számít, nem szerkeszt poligonokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen éghajlati termék ajánlott afrikai hidrológiai vizsgálathoz?",
+    "options": [
+      "A) PRISM",
+      "B) CARPATCLIM",
+      "C) CHIRPS",
+      "D) E-OBS"
+    ],
+    "correct": "C",
+    "explanation": "A CHIRPS-t eredetileg afrikai alkalmazásra tervezték, 50°D-50°É lefedettséggel."
+  },
+  {
+    "type": "mcq",
+    "question": "A bilineáris interpoláció algebrai formája:",
+    "options": [
+      "A) z = a₀ + a₁x",
+      "B) z = a₀ + a₁x + a₂y + a₃xy",
+      "C) z = a₀ + a₁x²",
+      "D) z = a₀exp(-x)"
+    ],
+    "correct": "B",
+    "explanation": "A bilineáris interpoláns: z = a₀ + a₁x + a₂y + a₃xy."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik az empirikus Bayes-krigelés előnye?",
+    "options": [
+      "A) Nem igényel adatot",
+      "B) Automatizálja a variogramillesztést",
+      "C) Mindig pontosabb",
+      "D) Csak 2 mintaponton működik"
+    ],
+    "correct": "B",
+    "explanation": "Az empirikus Bayes-krigelés automatizálja a variogramillesztési folyamatot."
+  },
+  {
+    "type": "mcq",
+    "question": "A Kékes-tető éves átlagcsapadéka a hipsometrikus példában:",
+    "options": [
+      "A) 520 mm",
+      "B) 640 mm",
+      "C) 690 mm",
+      "D) 800 mm"
+    ],
+    "correct": "D",
+    "explanation": "A Kékes-tető (1010 m) éves átlagcsapadéka 800 mm a hipsometrikus példában."
+  },
+  {
+    "type": "mcq",
+    "question": "A csapadék miért a legnehezebben interpolálható környezeti változó?",
+    "options": [
+      "A) Mert minden mérő azonos értéket ad",
+      "B) Mert eredendően nem folytonos, ferde eloszlású és a mérőhálózat egyenetlen",
+      "C) Mert nem változik a térben",
+      "D) Mert pontos mérése lehetetlen"
+    ],
+    "correct": "B",
+    "explanation": "A csapadék lokalizált, ferde eloszlású, és a mérőhálózat a völgyekben/alföldeken koncentrálódik."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ETRS89/LAEA (EPSG:3035) milyen vetülettípus?",
+    "options": [
+      "A) Szögtartó",
+      "B) Területtartó",
+      "C) Távolságtartó",
+      "D) Iránytartó"
+    ],
+    "correct": "B",
+    "explanation": "Az ETRS89-LAEA területtartó (equal-area) vetület, fontos a területsúlyozott számításokhoz."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a tenziós spline paramétere?",
+    "options": [
+      "A) A simítás foka",
+      "B) A felszín kifeszítettségét szabályozza",
+      "C) A keresési sugár",
+      "D) A hatványkitevő"
+    ],
+    "correct": "B",
+    "explanation": "A tenzióparaméter szabályozza, milyen szorosan van kifeszítve a felszín a mintapontok között."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik termék a USAID FEWS NET elsődleges csapadékbemenete?",
+    "options": [
+      "A) PRISM",
+      "B) CHIRPS",
+      "C) E-OBS",
+      "D) ERA5"
+    ],
+    "correct": "B",
+    "explanation": "A CHIRPS a FEWS NET (Éhínség Korai Előrejelző Rendszer Hálózat) elsődleges csapadékbemenete."
+  },
+  {
+    "type": "mcq",
+    "question": "A magyar OVF hidrográfiai adatbázis mióta elérhető ingyenesen?",
+    "options": [
+      "A) 2020",
+      "B) 2022",
+      "C) 2024",
+      "D) Mindig ingyenes volt"
+    ],
+    "correct": "C",
+    "explanation": "Az OVF adatbázis 2024 júliusa óta elérhető a data.vizugy.hu-n."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen módszer ajánlott ritka, szabálytalan adatokhoz bizonytalansággal?",
+    "options": [
+      "A) IDW",
+      "B) Legközelebbi szomszéd",
+      "C) Krigelés",
+      "D) Bilineáris interpoláció"
+    ],
+    "correct": "C",
+    "explanation": "Ritka, szabálytalan adatokra a krigelés optimális, mert kihasználja a térbeli korrelációt és bizonytalanságot ad."
+  },
+  {
+    "type": "mcq",
+    "question": "A Szolnok város éves csapadéka a példában:",
+    "options": [
+      "A) 430 mm",
+      "B) 520 mm",
+      "C) 580 mm",
+      "D) 640 mm"
+    ],
+    "correct": "B",
+    "explanation": "Szolnok (89 m) éves átlagcsapadéka 520 mm a hipsometrikus példában."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW kidolgozott példában melyik mérő kapja a legnagyobb súlyt?",
+    "options": [
+      "A) A mérő (24 mm)",
+      "B) B mérő (36 mm)",
+      "C) C mérő (18 mm)",
+      "D) Mind azonos súlyt kap"
+    ],
+    "correct": "C",
+    "explanation": "C mérő a legközelebbi (2,00 km), súlya 0,2500, a legnagyobb."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány újravetítési lépés ajánlott maximálisan a raszteradatoknál?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) 2",
+      "D) Nincs korlát"
+    ],
+    "correct": "C",
+    "explanation": "Legfeljebb 2 újravetítés ajánlott (forrás → elemzés, elemzés → kimenet) az adatromlás minimalizálásához."
+  },
+  {
+    "type": "mcq",
+    "question": "Az universalis krigelés mit feltételez az átlagról?",
+    "options": [
+      "A) Állandó átlag",
+      "B) A koordináták függvényeként változó átlag",
+      "C) Nulla átlag",
+      "D) Ismeretlen típusú átlag"
+    ],
+    "correct": "B",
+    "explanation": "Az univerzális krigelés lehetővé teszi, hogy az átlag a koordináták polinomiális függvényeként változzon."
+  },
+  {
+    "type": "mcq",
+    "question": "A PRISM-et melyik egyetem fejlesztette?",
+    "options": [
+      "A) MIT",
+      "B) Stanford",
+      "C) Oregon State University",
+      "D) Utah State University"
+    ],
+    "correct": "C",
+    "explanation": "Christopher Daly fejlesztette ki az Oregon State University PRISM Climate Group-jánál."
+  },
+  {
+    "type": "true_false",
+    "question": "A térbeli interpoláció értékeket becsül méretlen helyeken ismert mintapontokból.",
+    "correct": "true",
+    "explanation": "Ez az interpoláció definíciója."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligonok simafelszínt eredményeznek a poligonhatárokon.",
+    "correct": "false",
+    "explanation": "A Thiessen-poligonok darabonként konstans felszínt adnak hirtelen ugrásokkal a határokon."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW módszer mindig átmegy minden mintaponton.",
+    "correct": "true",
+    "explanation": "Ha a célpont egybeesik egy mintaponttal, a nulla távolság miatt a becslés pontosan az adott értéket adja."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelés az egyetlen interpolációs módszer, amely bizonytalanságbecslést ad.",
+    "correct": "true",
+    "explanation": "A krigelési varianciatérkép egyedülálló a standard interpolációs módszerek között."
+  },
+  {
+    "type": "true_false",
+    "question": "A spline interpoláció soha nem produkál negatív csapadékértékeket.",
+    "correct": "false",
+    "explanation": "A spline túllőhet, fizikailag lehetetlen értékeket (pl. negatív csapadék) produkálva."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW-nél a p növelése simább felszínt eredményez.",
+    "correct": "false",
+    "explanation": "A p növelése a legközelebbi szomszéd interpoláció felé konvergál, ami élesebb átmeneteket ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A CARPATCLIM 1961-2010 közötti időszakot fedi le.",
+    "correct": "true",
+    "explanation": "A CARPATCLIM kifejezetten ezt az 50 éves időszakot öleli fel."
+  },
+  {
+    "type": "true_false",
+    "question": "A CHIRPS-t eredetileg európai alkalmazásra tervezték.",
+    "correct": "false",
+    "explanation": "A CHIRPS-t eredetileg Afrikára tervezték, de 50°D-50°É lefedettséggel rendelkezik."
+  },
+  {
+    "type": "true_false",
+    "question": "Az orografikus hatás csapadéknövekedést okoz a hegység szélvédett oldalán.",
+    "correct": "false",
+    "explanation": "A csapadéknövekedés a szélnek kitett oldalon van; a szélvédett oldalon esőárnyék alakul ki."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció 16 környező cellát használ.",
+    "correct": "false",
+    "explanation": "A bilineáris 4 cellát, a köbös konvolúció 16 cellát használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A zonális statisztikák pontossága centiméterekben mérhető nagy vízgyűjtőknél.",
+    "correct": "true",
+    "explanation": "A sok cella átlagolása miatt a számítási pontosság 2-3 nagyságrenddel jobb az adathibánál."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligon módszer figyelembe veszi az orografikus hatást.",
+    "correct": "false",
+    "explanation": "A Thiessen-módszer teljesen figyelmen kívül hagyja a domborzatot és az orografikus hatást."
+  },
+  {
+    "type": "true_false",
+    "question": "A PRISM helyi regressziós modelleket használ, amelyek térben változnak.",
+    "correct": "true",
+    "explanation": "A PRISM fiziográfiai szomszédságokat definiál és helyi regressziókat illeszt."
+  },
+  {
+    "type": "true_false",
+    "question": "A GPM/IMERG 1981-ig visszanyúló archívummal rendelkezik.",
+    "correct": "false",
+    "explanation": "A GPM 2000-tól érhető el (TRMM előd adataival); az 1981-es az a CHIRPS."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligon módszer determinisztikus és reprodukálható.",
+    "correct": "true",
+    "explanation": "Ugyanaz a mérőállomás-hálózat mindig ugyanazokat a Thiessen-poligonokat eredményezi."
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd újramintavételezés ajánlott DEM-ek vetítéséhez.",
+    "correct": "false",
+    "explanation": "A legközelebbi szomszéd lépcsős műtermékeket okoz; bilineáris vagy köbös konvolúció ajánlott."
+  },
+  {
+    "type": "true_false",
+    "question": "Az E-OBS együttes (ensemble) megközelítést alkalmaz.",
+    "correct": "true",
+    "explanation": "Az E-OBS 20 tagú együttest generál a bizonytalanság felméréséhez."
+  },
+  {
+    "type": "true_false",
+    "question": "A WMO szabványos csapadékmérő nyílása 324 cm².",
+    "correct": "false",
+    "explanation": "A WMO szabvány 200 cm²; a 324 cm² az amerikai NWS 8 hüvelykes mérőé."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 csapadékadata közvetlen megfigyelés.",
+    "correct": "false",
+    "explanation": "Az ERA5 csapadéka modelltermék (reanalízis), nem közvetlen megfigyelés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Felső-Tisza medence több országon átnyúlik.",
+    "correct": "true",
+    "explanation": "Magyarország, Szlovákia, Ukrajna és Románia területét érinti."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW kidolgozott példában a becslés magasabb a számtani átlagnál.",
+    "correct": "false",
+    "explanation": "A becslés (22,7 mm) alacsonyabb a számtani átlagnál (26,0 mm) a közeli alacsony értékű mérő miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A ko-krigelés képes segédváltozókat beépíteni.",
+    "correct": "true",
+    "explanation": "A ko-krigelés a vizsgált változó és a segédváltozó közötti térbeli keresztkorrelációt használja."
+  },
+  {
+    "type": "true_false",
+    "question": "Minden interpolációs módszer tartalmaz egy valóságmodellt.",
+    "correct": "true",
+    "explanation": "A módszer megválasztása tükrözi a változó térbeli viselkedésére vonatkozó feltevéseket."
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadék eloszlása szimmetrikus.",
+    "correct": "false",
+    "explanation": "A csapadék ferde eloszlású, hozzávetőleg exponenciális vagy gamma-eloszlást követ."
+  },
+  {
+    "type": "true_false",
+    "question": "Az extrapoláció lényegesen nagyobb bizonytalansággal jár, mint az interpoláció.",
+    "correct": "true",
+    "explanation": "A mintatartományon túli becslés (extrapoláció) kevésbé megbízható."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-módszer érzékeny a mérőhálózat változásaira.",
+    "correct": "true",
+    "explanation": "Egyetlen mérő hozzáadása vagy eltávolítása lényegesen megváltoztathatja a poligongeometriát."
+  },
+  {
+    "type": "true_false",
+    "question": "A hipsometrikus módszer a PRISM egyszerűsített változata.",
+    "correct": "true",
+    "explanation": "A hipsometrikus módszer globális regressziót használ a lokális helyett, egyszerűbb megközelítés."
+  },
+  {
+    "type": "true_false",
+    "question": "A CARPATCLIM-et a KNMI állítja elő.",
+    "correct": "false",
+    "explanation": "A CARPATCLIM-et az OMSZ (ma HungaroMet) vezetésével 9 ország konzorciuma készítette."
+  },
+  {
+    "type": "true_false",
+    "question": "A regularizált spline-ok pontosan átmennek minden mintaponton.",
+    "correct": "false",
+    "explanation": "A regularizált spline-ok megengednek némi eltérést a mintapontoktól."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligon módszernél a súlyokat a poligonterületek adják.",
+    "correct": "true",
+    "explanation": "Az egyes mérők Thiessen-poligon területe szolgál súlyként a vízgyűjtő-átlagolásban."
+  },
+  {
+    "type": "true_false",
+    "question": "Az APHRODITE csapadéktermék az 1951-2015 időszakot fedi le.",
+    "correct": "true",
+    "explanation": "Az APHRODITE napi monszun-ázsiai csapadékadatokat biztosít 1951-2015 között."
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadékmérők véletlenszerűen helyezkednek el a tájban.",
+    "correct": "false",
+    "explanation": "A mérők lakott területeken, völgyekben és alföldeken koncentrálódnak."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW keresési környezet csökkenti a nagy adathalmazok számítási idejét.",
+    "correct": "true",
+    "explanation": "A maximális keresési sugár korlátozása csökkenti a számítandó pontpárok számát."
+  },
+  {
+    "type": "true_false",
+    "question": "A Kárpáti gerinceken az éves csapadék meghaladja az 1200 mm-t.",
+    "correct": "true",
+    "explanation": "A kárpáti gerinceken az éves csapadék meghaladja az 1200 mm-t a Felső-Tisza forrásvidékén."
+  },
+  {
+    "type": "true_false",
+    "question": "A polinomiális trendfelszín önálló módszerként gyakori a hidrológiában.",
+    "correct": "false",
+    "explanation": "Ritkán használják önállóan; inkább kifinomultabb módszerek komponenseként (pl. univerzális krigelés)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az E-OBS 1950-től napjainkig terjedő napi adatokat biztosít.",
+    "correct": "true",
+    "explanation": "Az E-OBS napi rácshálós adatbázis, 1950-től napjainkig."
+  },
+  {
+    "type": "true_false",
+    "question": "A Zagyva a Tisza mellékfolyója.",
+    "correct": "true",
+    "explanation": "A Zagyva Szolnoknál torkollik a Tiszába."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térbeli _______ értékeket becsül méretlen helyeken ismert mintapontokból.",
+    "correct": "interpoláció",
+    "explanation": "A térbeli interpoláció a pontoktól a folytonos felszínekig vezető folyamat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-poligonokat _______ poligonoknak is nevezik.",
+    "correct": "Voronoj",
+    "explanation": "Voronoj-poligonok vagy Dirichlet-mozaikok a másik elnevezés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW hatványkitevőjének leggyakoribb értéke: p = _______.",
+    "correct": "2",
+    "explanation": "A hidrológiai alkalmazásokban p = 2 a leggyakoribb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelést _______ dél-afrikai bányamérnökről nevezték el.",
+    "correct": "Krige",
+    "explanation": "Danie Krige az 1950-es években dolgozta ki az alapötleteket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A variogram három paramétere: nugget, küszöb és _______.",
+    "correct": "hatástávolság",
+    "explanation": "A hatástávolság (range) az a távolság, amelynél a variogram eléri a küszöböt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az orografikus hatás a domborzati emelés által okozott csapadék_______.",
+    "correct": "növekedés",
+    "explanation": "A nedves légtömeg emelkedése kondenzációt és csapadékot okoz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PRISM-et az _______ State University fejlesztette.",
+    "correct": "Oregon",
+    "explanation": "Christopher Daly az Oregon State University PRISM Climate Group-jánál fejlesztette."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CARPATCLIM _______ ország konzorciuma készítette.",
+    "correct": "9",
+    "explanation": "Kilenc kárpáti ország meteorológiai szolgálata vett részt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS _______ tagú együttest generál.",
+    "correct": "20",
+    "explanation": "Az E-OBS 20 tagú ensemble-t hoz létre a bizonytalanság felméréséhez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM/IMERG időbeli felbontása _______.",
+    "correct": "félórás",
+    "explanation": "Félórás globális csapadékbecsléseket nyújt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CHIRPS felbontása 0,05 fok, ami hozzávetőleg _______ km.",
+    "correct": "5,3",
+    "explanation": "0,05 fok ≈ 5,3 km-es rácsméret."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hipsometrikus módszerben a regresszió formája: P = a + b × _______.",
+    "correct": "h",
+    "explanation": "P a csapadék, h a tengerszint feletti magasság."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-módszer vízgyűjtő-átlag képlete: P̄ = Σ(Pi × Ai) / Σ_______.",
+    "correct": "Ai",
+    "explanation": "A területsúlyozott átlag nevezője az összes területrész összege."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A zonális statisztika _______ művelet a térképalgebra osztályozásában.",
+    "correct": "zonális",
+    "explanation": "Minden kimeneti érték az azonos zónaazonosítóval rendelkező cellákból számítódik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lefolyási hányados = lefolyási magasság / _______.",
+    "correct": "csapadék",
+    "explanation": "R_r = éves lefolyási magasság / éves csapadék."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CARPATCLIM az _______ (ma HungaroMet Zrt.) vezetésével készült.",
+    "correct": "OMSZ",
+    "explanation": "Az Országos Meteorológiai Szolgálat (OMSZ) vezette a konzorciumot."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WMO szabványos mérőnyílás területe _______ cm².",
+    "correct": "200",
+    "explanation": "A WMO szabvány 200 cm²-es nyílást határoz meg."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ERA5 felbontása hozzávetőleg _______ km.",
+    "correct": "31",
+    "explanation": "Az ERA5 0,25 fokos felbontása kb. 31 km-nek felel meg."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Felső-Tisza medence területe hozzávetőleg _______ km².",
+    "correct": "73000",
+    "explanation": "A Felső-Tisza medence kb. 73 000 km²-t csapol le."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A központi Alföld éves csapadéka hozzávetőleg _______ mm.",
+    "correct": "500-550",
+    "explanation": "A központi Alföld Szolnok környékén csak mintegy 500-550 mm/évet kap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris interpoláció _______ környező cellát használ.",
+    "correct": "4",
+    "explanation": "A négy sarokértékből számítja a becsült értéket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW jellegzetes műterméke a _______ effektus.",
+    "correct": "bikaszem",
+    "explanation": "Koncentrikus szintvonalak minden mintapont körül."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A nugget a variogramban a _______ hibát és mikroléptékű változékonyságot képviseli.",
+    "correct": "mérési",
+    "explanation": "A nugget nulla távolságnál nem nulla szemivarianciát mutat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A ko-krigelés segédváltozója csapadékhoz leggyakrabban a tengerszint feletti _______.",
+    "correct": "magasság",
+    "explanation": "A csapadék és a magasság közötti erős fizikai kapcsolat teszi ezt lehetővé."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hegység szélvédett oldalán _______ alakul ki.",
+    "correct": "esőárnyék",
+    "explanation": "A szélvédett oldalon a nedvességét vesztett levegő száraz zónát hoz létre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva vízgyűjtő hipsometrikus regressziójában R² = _______.",
+    "correct": "0,97",
+    "explanation": "R² = 0,97 erős lineáris kapcsolatot jelez a magasság és csapadék között."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OMSZ _______ állomást üzemeltet Magyarországon.",
+    "correct": "136",
+    "explanation": "136 állomás 10 perces felbontással."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zonal Statistics as Table az ArcGIS _______ eszközkészletben található.",
+    "correct": "Zonal",
+    "explanation": "Spatial Analyst > Zonal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A környezeti hőmérsékleti gradiens hozzávetőleg _______ °C/1000 m.",
+    "correct": "-6,5",
+    "explanation": "A hőmérséklet átlagosan 6,5 fokot csökken minden 1000 méter magassággal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-módszert Alfred H. Thiessen fejlesztette ki _______ évben.",
+    "correct": "1911",
+    "explanation": "1911-ben az Egyesült Államok Időjárási Hivatalánál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A csapadék eloszlása hozzávetőleg _______ vagy gamma-eloszlást követ.",
+    "correct": "exponenciális",
+    "explanation": "A nem nulla csapadékmennyiségek ferde eloszlásúak, hosszú jobb oldali farokkal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CHIRPS a Climate Hazards Center fejlesztette a University of California, _______ keretében.",
+    "correct": "Santa Barbara",
+    "explanation": "A UC Santa Barbara Climate Hazards Center terméke."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés BLUE rövidítés jelentése: Best _______ Unbiased Estimate.",
+    "correct": "Linear",
+    "explanation": "Legjobb lineáris torzítatlan becslés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-módszer a _______ szomszéd interpoláció egy formája.",
+    "correct": "legközelebbi",
+    "explanation": "Minden ponthoz a legközelebbi mérő értékét rendeli hozzá."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva _______ torkollik a Tiszába.",
+    "correct": "Szolnoknál",
+    "explanation": "A Zagyva Szolnoknál éri el a Tiszát."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS interpolációja háromszintű: spline klimatológia, napi anomáliák _______ és kombinálás.",
+    "correct": "krigelése",
+    "explanation": "A napi anomáliákat krigeléssel interpolálják."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lefolyási hányados Közép-Európában tipikusan _______ között van.",
+    "correct": "0,30-0,50",
+    "explanation": "Mérsékelt éghajlatú, kiegyensúlyozott vízháztartás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A polinomiális trendfelszín együtthatóit _______ négyzetek regresszióval határozzák meg.",
+    "correct": "legkisebb",
+    "explanation": "A legkisebb négyzetes regresszió minimalizálja a négyzetes eltérések összegét."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A köbös konvolúció _______ környező cellát használ.",
+    "correct": "16",
+    "explanation": "A köbös konvolúció 16 cella értékéből számít."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW képlete: ẑ = Σ(wi × zi) / Σwi, ahol wi = 1/di^_______.",
+    "correct": "p",
+    "explanation": "A hatványkitevő p szabályozza a távolságtól való függés erősségét."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a négy fő interpolációs módszert (legközelebbi szomszéd, IDW, spline, krigelés) a csapadék-interpoláció szempontjából!",
+    "correct": "Legközelebbi szomszéd: nem folytonos, kategoriális adathoz. IDW: sima, bikaszem műtermék, p=2 gyakori. Spline: nagyon sima, de túllövési veszély. Krigelés: optimális súlyok, bizonytalanságbecslés, variogramillesztés szükséges. A krigelés a legmegfelelőbb ritka adatokhoz.",
+    "explanation": "Minden módszer eltérő feltevéseket tartalmaz a térbeli struktúráról."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az orografikus hatás mechanizmusát és a csapadék-interpolációra gyakorolt következményeit! Adjon magyar példát!",
+    "correct": "Nedves levegő emelkedik a hegylánc szélnek kitett oldalán → lehűlés → kondenzáció → csapadék. Szélvédett oldalon esőárnyék. Magyarország: Mátra 700-800 mm/év vs. Alföld 500-550 mm/év. A völgyi mérőkből való interpoláció alulbecsüli a hegyvidéki csapadékot.",
+    "explanation": "Az orografikus hatás szisztematikus térbeli mintázatokat hoz létre."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a krigelés munkafolyamatát a szemivariogram illesztésétől a becslésig!",
+    "correct": "1. Empirikus szemivariogram számítása: γ(h) = Σ[z(xi)-z(xi+h)]²/2N(h). 2. Elméleti modell illesztése (szférikus, exponenciális, Gauss). 3. Nugget, küszöb, hatástávolság meghatározása. 4. Optimális súlyok számítása. 5. Becslés + krigelési variancia.",
+    "explanation": "A krigelés egyedülálló a térbeli korreláció explicit kezelésében és a bizonytalanságbecslésben."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Thiessen-poligon módszer lépésenkénti munkafolyamatát GIS-ben! Milyen korlátai vannak?",
+    "correct": "1. Thiessen-poligonok létrehozása. 2. Metszet a vízgyűjtőhatárokkal. 3. Terület-csapadék szorzatok. 4. Összegzés vízgyűjtőnként. 5. Súlyozott átlag. Korlátok: nem folytonos, figyelmen kívül hagyja az orografikus hatást, érzékeny a mérőhálózatra.",
+    "explanation": "A Thiessen-módszer egyszerű és reprodukálható, de fizikailag korlátozott."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen rácshálós csapadéktermékeket ajánlana egy közép-európai hidrológiai vizsgálathoz? Hasonlítsa össze az E-OBS-t és a CARPATCLIM-et!",
+    "correct": "CARPATCLIM: 0,1 fok, 1961-2010, 9 ország homogenizált adatai, legrészletesebb magyar referencia. E-OBS: 0,1 fok, 1950-jelen, 20 tagú ensemble, de nem kárpát-specifikus homogenizálás. CARPATCLIM a legjobb 1961-2010 között, E-OBS a frissebb időszakokra.",
+    "explanation": "A CARPATCLIM a Kárpát-medence legrészletesebb éghajlati atlasza."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a hipsometrikus csapadékbecslési módszert a Zagyva vízgyűjtő példáján! Milyen feltételei vannak a módszer alkalmazásának?",
+    "correct": "1. Regresszió: P = 497 + 0,308h (R²=0,97). 2. Alkalmazás DEM cellákra. 3. Reziduálisok interpolálása. Feltételek: közelítőleg lineáris magasság-csapadék kapcsolat, nem változik lényegesen a területen belül. A módszer egyszerű alternatíva a PRISM-hez.",
+    "explanation": "A hipsometrikus módszer jól működik, ha az orografikus hatás lineáris és konzisztens."
+  },
+  {
+    "type": "essay",
+    "question": "Miért okoz katasztrofális hibát a Thiessen-módszer a Felső-Tisza medence csapadékbecslésénél?",
+    "correct": "A magyar mérőhálózat az alföldön koncentrálódik (80-200 m). A hegyvidéki forrásvidéken (>1000 m) nincs mérő. A Thiessen-módszer az alföldi értékeket rendeli a hegyvidékhez → 580 mm becslés vs. 950 mm valóság = 40% alulbecslés. A vízmérleg zárhatatlan.",
+    "explanation": "Az orografikus hatás figyelmen kívül hagyása és a hiányzó magashegyi mérők együttes hatása."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a felszínalapú csapadékátlagolási megközelítés? Milyen előnyei vannak a Thiessen-módszerrel szemben?",
+    "correct": "1. Interpoláció (IDW/krigelés/rácshálós termék) → folytonos csapadékfelszín. 2. Zonális statisztika → vízgyűjtő-átlag. Előnyök: térbeli simaság, segédváltozók beépítése, konzisztens térkép, kompatibilis rácshálós termékekkel.",
+    "explanation": "A felszínalapú módszer fizikailag reálisabb csapadékmezőket eredményez."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen koordináta-rendszeri szempontokra kell figyelni térbeli interpolációnál? Milyen problémát okoz a földrajzi koordináta-rendszer?",
+    "correct": "Földrajzi koordinátákban (fok) az euklideszi távolság irányfüggő torzítást okoz: a kelet-nyugati távolságok alulbecslődnek. Thiessen-poligonok kelet-nyugati irányban megnyúlnak. Megoldás: vetületi rendszer (EOV, UTM, ETRS89-LAEA).",
+    "explanation": "A pontos távolságszámítás kritikus az interpoláció minden módszerénél."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az IDW interpoláció működését egy kidolgozott példán keresztül! Milyen hatása van a p paraméternek?",
+    "correct": "IDW: ẑ = Σ(wi×zi)/Σwi, wi = 1/di^p. Példa: A(24mm, 2,83km), B(36mm, 3,61km), C(18mm, 2,00km), p=2. wA=0,125, wB=0,077, wC=0,250. ẑ=22,7mm. A p növelése a közeli pontok dominanciáját erősíti.",
+    "explanation": "Az IDW egyszerű és intuitív, de a p értéke jelentősen befolyásolja az eredményt."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a csapadékmérő hálózat térbeli eloszlása az interpoláció szempontjából? Milyen problémákat okoz a nem véletlenszerű elhelyezés?",
+    "correct": "A mérők lakott területeken, völgyekben koncentrálódnak → a magas területek alulreprezentáltak. Ez szisztematikus torzítást okoz: alulbecslés a hegyvidéken. A csoportosulás redundáns információt jelent. A krigelés alacsonyabb súlyokat ad a csoportosult pontoknak.",
+    "explanation": "A mérőhálózat térbeli eloszlása közvetlenül befolyásolja az interpoláció minőségét."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a zonális statisztika alkalmazását a vízgyűjtő-átlag számításához! Milyen bemenetek szükségesek?",
+    "correct": "Bemenetek: (1) Zónapoligon (vízgyűjtő), (2) Zónamező (azonosító), (3) Értékraszter (csapadék). Kimenet: táblázat zónánkénti statisztikákkal (átlag, min, max, szórás). Az eredmény visszacsatolható a poligon attribútumaihoz.",
+    "explanation": "A zonális statisztika hidat képez a raszter és a poligon reprezentáció között."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a lefolyási hányados, és hogyan használható a csapadékbecslés validálására?",
+    "correct": "R_r = éves lefolyási magasság / éves csapadék. Ha R_r < 0,10 vagy R_r > 0,90: valószínűleg hiba a csapadékban vagy a vízhozamban. Mérsékelt éghajlaton 0,30-0,50 tipikus. A konzisztencia-ellenőrzés kiszűri a durva interpolációs hibákat.",
+    "explanation": "A lefolyási hányados egyszerű, de hatékony ellenőrző eszköz."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a CHIRPS és a GPM/IMERG csapadéktermékeket! Melyik alkalmasabb viharesemények és melyik klimatológiai elemzéshez?",
+    "correct": "CHIRPS: 0,05 fok, napi, 1981-jelen, IR+állomás, jobb hosszú távú archívum, klimatológiához. GPM/IMERG: 0,1 fok, félórás, 2000-jelen, mikrohullámú, jobb viharesemény-felbontás. CHIRPS → trendek, aszály. GPM → egyedi viharok, közel valós idejű.",
+    "explanation": "A két termék eltérő időbeli felbontása és mérési elve eltérő alkalmazásokat tesz lehetővé."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen típusú interpolációs módszert választana egy sík magyar alföldi vízgyűjtőre és egy hegyvidéki észak-magyarországi vízgyűjtőre? Indokolja!",
+    "correct": "Alföld: IDW vagy krigelés elegendő, mert nincs jelentős orografikus hatás. Hegyvidék: ko-krigelés magassággal vagy CARPATCLIM rácshálós termék, mert az orografikus hatás jelentős. A Thiessen-módszer mindkét esetben elfogadható operatív munkához.",
+    "explanation": "A domborzat komplexitása határozza meg a szükséges módszer kifinomultságát."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a PRISM csapadéktermék működési elvét! Mi a különbség egy egyszerű magasság-csapadék regresszióhoz képest?",
+    "correct": "PRISM: helyi regressziós modellek, amelyek térben változnak. Figyelembe veszi a lejtő irányát, tengerparttól való távolságot, domborzati helyzetet. Egyszerű regresszió: egyetlen globális P=a+bh. A PRISM megragadja a szélnek kitett/szélvédett oldal közötti különbséget.",
+    "explanation": "A PRISM a lokálisan változó magasság-csapadék kapcsolatot használja ki."
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a spline interpoláció előnyeit és hátrányait hidrológiai alkalmazásokban! Mikor ajánlott és mikor kerülendő?",
+    "correct": "Előnyök: nagyon sima felszín, összetett mintázatok, esztétikailag tetszetős. Hátrányok: túllövés (negatív csapadék), paraméterérzékeny (tenzió, súly). Ajánlott: sűrű adatokkal, simán változó változókhoz (talajvízszint). Kerülendő: ritka adatokkal, csapadékhoz (túllövési veszély).",
+    "explanation": "A spline simasága előny és hátrány is egyben."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a CARPATCLIM adatokat egy magyar vízgyűjtő éves átlagcsapadékának becslésére? Írja le a munkafolyamatot!",
+    "correct": "1. CARPATCLIM napi csapadékrácsok letöltése (1961-2010). 2. Éves összegek számítása a napi rácsokból. 3. Hosszú távú éves átlag számítása. 4. Zonális statisztika: a vízgyűjtő poligon + csapadékrács → átlag. 5. Eredmény: mm/év a vízgyűjtőre.",
+    "explanation": "A CARPATCLIM használata egyszerűbb és pontosabb, mint a saját interpoláció."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a polinomiális trendfelszín szerepe az univerzális krigelésben?",
+    "correct": "Az univerzális krigelés két komponensre bontja a mezőt: (1) polinomiális trendfelszín a regionális mintázat megragadására, (2) krigelés a reziduálisokra (trend mínusz adat). A kombináció a nagylépékű trendeket és a lokális korrelációt egyaránt kezeli.",
+    "explanation": "A kétlépcsős megközelítés jobb eredményeket ad, mint bármelyik módszer önmagában."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az újramintavételezési módszerek (legközelebbi szomszéd, bilineáris, köbös konvolúció) közötti különbségeket! Melyik mikor alkalmas?",
+    "correct": "Legközelebbi szomszéd: eredeti értéket megőrzi, de lépcsős → kategoriális adathoz. Bilineáris: 4 cella súlyozott átlaga, sima → folytonos változókhoz. Köbös konvolúció: 16 cella, élesebb, túllőhet → DEM-hez. Soha ne legközelebbi szomszéd DEM-re vagy csapadékra.",
+    "explanation": "Az újramintavételezési módszer megválasztása befolyásolja a származtatott termékek minőségét."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az előre kiszámított rácshálós csapadéktermékeknek az egyéni interpolációval szemben?",
+    "correct": "1. Kifinomult módszerek (magasságkorrekcióval). 2. Kiterjedt állomáshálózat. 3. Minőségellenőrzés. 4. Egyszerűbb munkafolyamat (csak zonális statisztika kell). 5. Reprodukálható. A PRISM, E-OBS, CARPATCLIM, CHIRPS mind ilyen termékek.",
+    "explanation": "A modern gyakorlatban a rácshálós termékek használata ajánlott az egyéni interpoláció helyett."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálná a csapadékbecslést a lefolyási hányados segítségével? Milyen értékek jeleznek problémát?",
+    "correct": "R_r = (Q×T/A) / P. Ha R_r < 0,10: a csapadék valószínűleg felülbecsült vagy a vízhozam alulbecsült. Ha R_r > 0,90: a csapadék alulbecsült. Közép-Európában 0,30-0,50 tipikus. Extrém értékek az interpoláció hibáira utalnak.",
+    "explanation": "A lefolyási hányados a csapadék és vízhozam konzisztenciájának egyszerű ellenőrzése."
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a Thiessen-poligon kidolgozott példa teljes számítását (M1=680mm/142km², M2=520mm/285km², M3=610mm/93km²)!",
+    "correct": "1. TC₁=680×142=96560, TC₂=520×285=148200, TC₃=610×93=56730. 2. ΣTC=301490, ΣA=520. 3. P̄=301490/520=579,8mm. A számtani átlag 603,3mm. Az M2 (520mm) dominál, mert területe a vízgyűjtő 54,8%-a.",
+    "explanation": "A területsúlyozás helyesen ad nagyobb hatást a nagyobb területű mérőnek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kritériumok alapján választana interpolációs módszert egy adott hidrológiai alkalmazáshoz?",
+    "correct": "1. Változó természete (folytonos/kategoriális). 2. Adatsűrűség és eloszlás. 3. Segédváltozók elérhetősége. 4. Tűrés a túllövés iránt. 5. Bizonytalansági becslés szükségessége. 6. Számítási igény. 7. Intézményi/szabályozási követelmények.",
+    "explanation": "A módszerválasztás komplex döntés, amely az alkalmazás kontextusától függ."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokkal jár a csapadék interpolálása az egyszerű interpoláció-elméleti feltételezésekhez képest?",
+    "correct": "1. Nem folytonos a térben (konvektív viharok). 2. Ferde eloszlás (szélsőségek). 3. Domborzattal való kapcsolat (orografikus hatás). 4. Nem véletlenszerű mérőhálózat. 5. Időbeli változékonyság. 6. Mérési skálák eltérése (pont vs. terület).",
+    "explanation": "A csapadék a legnehezebben interpolálható környezeti változó ezen tulajdonságok miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW képletében a d_i mit jelöl?",
+    "options": [
+      "A) A cella magasságát",
+      "B) A mérőpont csapadékát",
+      "C) Az euklideszi távolságot a célpont és a mintapont között",
+      "D) A cellaméretet"
+    ],
+    "correct": "C",
+    "explanation": "d_i az euklideszi távolság."
+  },
+  {
+    "type": "mcq",
+    "question": "A spline interpoláció neve milyen fizikai analógiából ered?",
+    "options": [
+      "A) Rugóból",
+      "B) Hajlékony fém/gumilemezekből",
+      "C) Hullámokból",
+      "D) Gravitációból"
+    ],
+    "correct": "B",
+    "explanation": "A spline-lemez természetesen minimalizálja a hajlítási energiát."
+  },
+  {
+    "type": "mcq",
+    "question": "Az empirikus szemivariogram képletében N(h) mit jelöl?",
+    "options": [
+      "A) Az összes mintapont számát",
+      "B) A h távolsággal elválasztott adatpárok számát",
+      "C) A nugget értékét",
+      "D) A hatástávolságot"
+    ],
+    "correct": "B",
+    "explanation": "N(h) a h késleltetési távolságú párok száma."
+  },
+  {
+    "type": "mcq",
+    "question": "A PRISM felbontása a legfinomabb beállításban:",
+    "options": [
+      "A) 100 m",
+      "B) 400 m",
+      "C) 800 m",
+      "D) 4 km"
+    ],
+    "correct": "C",
+    "explanation": "A PRISM 800 m (30 ívmásodperces) felbontásban érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik évtől érhető el a CHIRPS adatbázis?",
+    "options": [
+      "A) 1950",
+      "B) 1961",
+      "C) 1981",
+      "D) 2000"
+    ],
+    "correct": "C",
+    "explanation": "A CHIRPS 1981-től napjainkig terjedő adatokat biztosít."
+  },
+  {
+    "type": "mcq",
+    "question": "A Cascade-hegylánc nyugati lejtőjén az éves csapadék meghaladja a:",
+    "options": [
+      "A) 500 mm-t",
+      "B) 1000 mm-t",
+      "C) 3000 mm-t",
+      "D) 5000 mm-t"
+    ],
+    "correct": "C",
+    "explanation": "A Cascade-hegylánc nyugati lejtőjén >3000 mm éves csapadék hull."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-módszer alapja melyik geometriai konstrukció?",
+    "options": [
+      "A) Delaunay-háromszögelés felezőmerőlegesei",
+      "B) Konvex burok",
+      "C) Puffer zóna",
+      "D) Minimális feszítőfa"
+    ],
+    "correct": "A",
+    "explanation": "A Thiessen-poligon határai a Delaunay-élek felezőmerőlegesei."
+  },
+  {
+    "type": "mcq",
+    "question": "A Szolnok és Kékes-tető közötti csapadékkülönbség (a példában):",
+    "options": [
+      "A) 100 mm",
+      "B) 180 mm",
+      "C) 280 mm",
+      "D) 380 mm"
+    ],
+    "correct": "C",
+    "explanation": "800 - 520 = 280 mm különbség."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ERA5 milyen intézmény terméke?",
+    "options": [
+      "A) NASA",
+      "B) ECMWF",
+      "C) USGS",
+      "D) JAXA"
+    ],
+    "correct": "B",
+    "explanation": "Az ERA5 az ECMWF (European Centre for Medium-Range Weather Forecasts) reanalízis terméke."
+  },
+  {
+    "type": "mcq",
+    "question": "A Thiessen-poligon módszernél ki fejlesztett ki a módszert?",
+    "options": [
+      "A) Voronoj",
+      "B) Thiessen",
+      "C) Krige",
+      "D) Delaunay"
+    ],
+    "correct": "B",
+    "explanation": "Alfred H. Thiessen fejlesztette ki 1911-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A köbös konvolúció milyen eredményt ad DEM-eknél?",
+    "options": [
+      "A) Lépcsős felszínt",
+      "B) Enyhén élesebb felszínt a bilineárisnál",
+      "C) Teljesen sima felszínt",
+      "D) Kategoriális felszínt"
+    ],
+    "correct": "B",
+    "explanation": "Élesebb mint a bilineáris, de túllőhet."
+  },
+  {
+    "type": "mcq",
+    "question": "A konvektív vihar csapadéka milyen távolságon belül változhat drámaian?",
+    "options": [
+      "A) 100 km",
+      "B) 50 km",
+      "C) Néhány km",
+      "D) 1000 km"
+    ],
+    "correct": "C",
+    "explanation": "Konvektív vihar mindössze néhány km-en belül drámaian változhat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az IDW p = 1 esetén milyen felszínt eredményez?",
+    "options": [
+      "A) Lépcsős felszínt",
+      "B) Nagyon simát",
+      "C) Viszonylag simát, de a távoli pontok még hatnak",
+      "D) A legközelebbi szomszéd felszínt"
+    ],
+    "correct": "C",
+    "explanation": "p=1: a súly lineárisan csökken, a távoli pontok még érzékelhető hatást fejtenek ki."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Add Join eszköz az ArcGIS Pro-ban mire szolgál?",
+    "options": [
+      "A) Rétegek összefűzésére",
+      "B) Táblázat csatolására objektumosztályhoz",
+      "C) Koordináta-rendszer megváltoztatására",
+      "D) Raszter vágására"
+    ],
+    "correct": "B",
+    "explanation": "Az Add Join a Zonal Statistics táblázatát csatolja vissza a poligon objektumosztályhoz."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW p=2 mellett a súly a távolság négyzetével fordítottan arányos.",
+    "correct": "true",
+    "explanation": "w=1/d², tehát a távolság négyzetével csökken."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelés variogrammodellje lehet szférikus, exponenciális vagy Gauss-típusú.",
+    "correct": "true",
+    "explanation": "Ezek a leggyakoribb elméleti variogrammodellek."
+  },
+  {
+    "type": "true_false",
+    "question": "A PRISM globális lefedettséget biztosít.",
+    "correct": "false",
+    "explanation": "A PRISM csak az Egyesült Államok összefüggő területét (CONUS) fedi le."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW-nél a bikaszem effektus fizikai alapú jelenség.",
+    "correct": "false",
+    "explanation": "A bikaszem effektus a távolságsúlyozás műterméke, nincs fizikai alapja."
+  },
+  {
+    "type": "true_false",
+    "question": "A CARPATCLIM homogenizált állomásadatokat használ.",
+    "correct": "true",
+    "explanation": "A 9 ország harmonizált és homogenizált adatait."
+  },
+  {
+    "type": "true_false",
+    "question": "A spline módszer simább felszínt eredményez, mint a krigelés.",
+    "correct": "true",
+    "explanation": "A spline globálisan sima felszínt ad, de túllövési veszéllyel."
+  },
+  {
+    "type": "true_false",
+    "question": "A zonális statisztika raszter és poligon adatot igényel.",
+    "correct": "true",
+    "explanation": "Értékrasztert és zónapoligonokat használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A CHIRPS infravörös felhőtető-hőmérsékletből következtet a csapadékra.",
+    "correct": "true",
+    "explanation": "Az IR-műholdas becsléseket kombinál állomásadatokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligon módszer figyelembe veszi a domborzatot.",
+    "correct": "false",
+    "explanation": "Teljesen figyelmen kívül hagyja a domborzatot és az orografikus hatást."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelés nugget értéke a mérési hibát képviseli.",
+    "correct": "true",
+    "explanation": "A nugget a nulla távolságnál nem nulla szemivariancia."
+  },
+  {
+    "type": "true_false",
+    "question": "Az E-OBS-t a PRISM Climate Group fejleszti.",
+    "correct": "false",
+    "explanation": "Az E-OBS-t a KNMI fejleszti, nem a PRISM Climate Group."
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadék szimmetrikus eloszlású változó.",
+    "correct": "false",
+    "explanation": "Ferde eloszlású, exponenciális vagy gamma jellegű."
+  },
+  {
+    "type": "true_false",
+    "question": "A GPM misszió 2014-ben indult.",
+    "correct": "true",
+    "explanation": "A NASA/JAXA közös projekt 2014-ben indult."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelési varianciatérkép megmutatja a becslési bizonytalanságot.",
+    "correct": "true",
+    "explanation": "Alacsony variancia a mérők közelében, magas távol."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligonok érzéketlenek a mérőhálózat változásaira.",
+    "correct": "false",
+    "explanation": "Egyetlen mérő hozzáadása/eltávolítása lényegesen megváltoztathatja a geometriát."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció pontosan megőrzi az eredeti cellaértékeket.",
+    "correct": "false",
+    "explanation": "A bilineáris enyhén módosítja az értékeket az átlagolás miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A CARPATCLIM 30 származtatott éghajlati indexet is biztosít.",
+    "correct": "true",
+    "explanation": "Több mint 30 származtatott index: hőségnapok, fagyos napok stb."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW módszer bizonytalansági becslést ad.",
+    "correct": "false",
+    "explanation": "Csak a krigelés ad beépített bizonytalansági becslést."
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd interpoláció kategoriális adatokra is alkalmas.",
+    "correct": "true",
+    "explanation": "Az egyetlen módszer, amely diszkrét kategóriákat értelmesen kezel."
+  },
+  {
+    "type": "true_false",
+    "question": "A felszínalapú módszer előnyösebb hegyvidéki terepen.",
+    "correct": "true",
+    "explanation": "Segédváltozók beépítésével (magasság) jobb eredményt ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A Zagyva vízgyűjtő a Duna-medencében található.",
+    "correct": "true",
+    "explanation": "A Zagyva a Tiszába torkollik, amely a Duna mellékfolyója."
+  },
+  {
+    "type": "true_false",
+    "question": "A polinomiális trendfelszín pontosan átmegy a mintapontokon.",
+    "correct": "false",
+    "explanation": "Jellemzően nem megy át pontosan; simító módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 csapadékadata ismert torzításokkal rendelkezik.",
+    "correct": "true",
+    "explanation": "Hajlamos túlbecsülni a gyenge csapadékot és alulbecsülni az erőset."
+  },
+  {
+    "type": "true_false",
+    "question": "A CHIRPS 3-as verziója 2024-ben jelent meg.",
+    "correct": "true",
+    "explanation": "A CHIRPS v3 jobb állomásintegrálással javít az előző verzión."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligon módszer a legköltségesebb számítási igényű interpolációs módszer.",
+    "correct": "false",
+    "explanation": "Az egyik legegyszerűbb és leggyorsabb módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A reguláris spline pontosan átmegy a mintapontokon.",
+    "correct": "false",
+    "explanation": "A regularizált spline megenged eltérést a mintapontoktól."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés francia matematikus formalizálója: _______.",
+    "correct": "Matheron",
+    "explanation": "Georges Matheron az 1960-as években formalizálta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PRISM fejlesztője: Christopher _______.",
+    "correct": "Daly",
+    "explanation": "Christopher Daly az Oregon State University-n."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM/IMERG _______ és _______ közös projekt.",
+    "correct": "NASA/JAXA",
+    "explanation": "NASA és JAXA közös műholdmisszió."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS interpolációjának első lépése: vékonylemez-simító _______.",
+    "correct": "spline",
+    "explanation": "A klimatológiai mezőt spline-okkal állítják elő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Cascade-hegylánc keleti lejtőjén az éves csapadék kevesebb mint _______ mm.",
+    "correct": "300",
+    "explanation": "Az esőárnyék-hatás miatt kevesebb mint 300 mm hull."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A konvektív vihar csapadéka néhány _______ távolságon belül drámaian változhat.",
+    "correct": "kilométer",
+    "explanation": "A konvektív csapadék nagyon lokalizált."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-poligon és Delaunay-háromszögelés _______ kapcsolatban állnak.",
+    "correct": "duális",
+    "explanation": "Matematikai dualitás a két konstrukció között."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM/IMERG _______ óta érhető el (TRMM előddel).",
+    "correct": "2000",
+    "explanation": "A TRMM 2000-től, a GPM 2014-től."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ERA5 reanalízis _______ évig nyúlik vissza.",
+    "correct": "1940",
+    "explanation": "1940-tól napjainkig."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mérőterület és a vízgyűjtő terület aránya _______ nagyságrendű.",
+    "correct": "egy a milliárdhoz",
+    "explanation": "10⁻⁶ km² mérő vs. 10³ km² vízgyűjtő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW-nél a p=2 mellett a súly: w = 1/d^_______.",
+    "correct": "2",
+    "explanation": "A távolság négyzetének reciproka."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés angol rövidítése: _______.",
+    "correct": "BLUE",
+    "explanation": "Best Linear Unbiased Estimate."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva regressziójában P = 497 + _______ × h.",
+    "correct": "0,308",
+    "explanation": "A csapadék 0,308 mm-rel nő méterenként."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CRU TS adatbázis felbontása: _______ fok.",
+    "correct": "0,5",
+    "explanation": "Hozzávetőleg 50 km-es felbontás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS fejlesztő intézménye: _______.",
+    "correct": "KNMI",
+    "explanation": "Holland Királyi Meteorológiai Intézet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CHIRPS lefedettségi tartománya: _______°D – _______°É.",
+    "correct": "50",
+    "explanation": "50°D-50°É lefedettség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hipsometrikus módszerben a csapadék _______ mm-rel nő 100 m-enként a Zagyván.",
+    "correct": "31",
+    "explanation": "0,308 × 100 = 30,8 ≈ 31 mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az APHRODITE felbontása: _______ fok.",
+    "correct": "0,25",
+    "explanation": "Monszun-ázsiai napi csapadék."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris interpoláns: z = a₀ + a₁x + a₂y + a₃_______.",
+    "correct": "xy",
+    "explanation": "A keresztszorzat tag nyeregformát ad."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A regularizált spline _______ paramétert használ.",
+    "correct": "súly",
+    "explanation": "A súlyparaméter szabályozza az átváltást simaság és illeszkedés között."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen problémákat okozhat a spline interpoláció csapadékadatokra? Hogyan kezelhetők?",
+    "correct": "Túllövés: negatív csapadék, irreális csúcsok. Kezelés: tenzió növelése, simítási súly beállítása, utólagos nullára vágás. A spline-t sűrű, szabályos adatokkal és óvatos paraméterezéssel kell használni.",
+    "explanation": "A túllövés a spline fő veszélye hidrológiai alkalmazásokban."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan javítja a ko-krigelés a csapadék-interpolációt hegyvidéki terepen?",
+    "correct": "A ko-krigelés a magasság és csapadék közötti térbeli keresztkorrelációt használja. A sűrű DEM rács pótinformációt ad a mérők között. Az orografikus hatást közvetetten ragadja meg.",
+    "explanation": "A segédváltozó kihasználása jelentősen javítja az interpoláció pontosságát."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a csapadékbecslés bizonytalanságának számszerűsítése az árvízi előrejelzésben?",
+    "correct": "A csapadékbemenet bizonytalansága közvetlenül befolyásolja az árvízi előrejelzés bizonytalanságát. A krigelési variancia konfidencia-intervallumot ad. Ez lehetővé teszi a kockázatalapú döntéshozatalt.",
+    "explanation": "A bizonytalanság-számszerűsítés a krigelés egyedülálló előnye."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezeli az E-OBS az interpolációs bizonytalanságot?",
+    "correct": "20 tagú ensemble: mindegyik a rácshálós mező egy-egy lehetséges megvalósulása. Az ensemble szórás méri a bizonytalanságot. Fogalmilag hasonló a krigelési varianciához, de az ensemble szóráson keresztül.",
+    "explanation": "Az ensemble megközelítés robusztus bizonytalságbecslést ad."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az extrapoláció veszélyeit a csapadék-interpolációban!",
+    "correct": "Az extrapoláció a mintatartományon kívüli becslés. Lényegesen nagyobb bizonytalanság. A legtöbb módszer extrapolál is, ha a raszter túlnyúlik a mérőkön. Óvatosan kezelendő.",
+    "explanation": "Az extrapolált területeken a becslések megbízhatatlanok."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a Thiessen-módszert operatív árvízi előrejelzésben?",
+    "correct": "Egyszerű, reprodukálható, gyorsan számítható. A HEC-HMS közvetlenül fogad Thiessen-súlyozott bemenetet. Nem igényel szubjektív döntéseket. Jogi/szabályozási célokra elfogadott.",
+    "explanation": "Az operatív hidrológiában az egyszerűség és reprodukálhatóság előny."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az ensemble-megközelítésnek a determinisztikus interpolációval szemben?",
+    "correct": "Ensemble: többszörös megvalósulás→bizonytalság-becslés. Determinisztikus: egyetlen 'legjobb' becslés, nincs bizonytalanság. Az ensemble lehetővé teszi a kockázatalapú döntéshozatalt.",
+    "explanation": "Az ensemble-megközelítés gazdagabb információt ad."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen követelményeket támaszt a csapadék-interpoláció a koordináta-rendszerrel szemben?",
+    "correct": "Pontos távolság szükséges (IDW, krigelés, Thiessen). Földrajzi koordinátákban torzítás. Vetületi rendszer ajánlott (EOV, UTM, ETRS89-LAEA). Területtartó vetület a Thiessen-módszerhez.",
+    "explanation": "A koordináta-rendszer helyes megválasztása kritikus az interpoláció pontosságához."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná az univerzális krigelést csapadékadatokra?",
+    "correct": "1. Polinomiális trendfelszín illesztése (regionális mintázat). 2. Reziduálisok számítása (adat - trend). 3. Variogramillesztés a reziduálisokra. 4. Krigelés a reziduálisokra. 5. Trend + krigelt reziduális = végeredmény.",
+    "explanation": "A kétlépcsős megközelítés a regionális trendet és lokális korrelációt egyaránt kezeli."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen intézményi és szabályozási szempontok befolyásolják az interpolációs módszer megválasztását?",
+    "correct": "Operatív hidrológia: bevált eljárások, reprodukálhatóság. Jogi/bírósági elfogadás: Thiessen. Kutatás: pontosság, fizikai valóságosság. Az intézményi követelmény felülírhatja a tudományos optimályt.",
+    "explanation": "A gyakorlatban nem csak a tudományos optimum, hanem az intézményi kontextus is meghatározó."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a mérőhálózat sűrűsége az interpolációs módszer választását?",
+    "correct": "Sűrű, szabályos: IDW, bilineáris elegendő. Ritka, szabálytalan: krigelés optimális. Csoportosult: krigelés jobb (alacsonyabb súlyt ad csoportosult pontoknak). Nincs mérő: műholdas termékek.",
+    "explanation": "A mérőhálózat jellege közvetlenül befolyásolja a módszerválasztást."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a CSapadékbecslés és vízmérleg közötti kapcsolatot!",
+    "correct": "Vízmérleg: P = Q + ET + ΔS. Ha P alulbecsült → a mérleg nem zárul. A lefolyási hányados (R_r=Q/P) ellenőrzi: R_r<0,10 vagy >0,90 → hiba. Közép-Európában 0,30-0,50 normális.",
+    "explanation": "A csapadékbecslés pontossága közvetlenül befolyásolja a vízmérleg zárhatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen különbségek vannak a napi és éves csapadék interpolálásának kihívásai között?",
+    "correct": "Éves: simább, jobb magasság-korreláció → krigelés/PRISM jól működik. Napi: lokalizált, konvektív cellák → nehezebb. Események: a mérőhálózat elmulaszthatja → radar/műhold szükséges.",
+    "explanation": "Az időbeli aggregálási szint befolyásolja az interpoláció nehézségét és módszerválasztását."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a Table to Excel eszközt a zonális statisztikák exportálásához?",
+    "correct": "A Zonal Statistics as Table kimenetét az ArcGIS Table to Excel eszközzel Excel-munkafüzetté alakíthatjuk. A QGIS-ben CSV export lehetséges. Más szoftverekben (R, Python) további elemzés végezhető.",
+    "explanation": "Az exportálás lehetővé teszi az eredmények szélesebb körű felhasználását."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a CARPATCLIM-nek az E-OBS-szal szemben magyar alkalmazásoknál?",
+    "correct": "CARPATCLIM: 9 ország homogenizált adatai, határokon átnyúló konzisztencia, >30 éghajlati index. E-OBS: nem kárpát-specifikus homogenizálás. De az E-OBS frissebb időszakokra (2010 után) kiterjeszti az elemzést.",
+    "explanation": "A CARPATCLIM a legjobb referencia 1961-2010 között; E-OBS a frissebb időszakokra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a nem véletlenszerű mérőelhelyezés a csapadékbecslés torzítására?",
+    "correct": "Mérők lakott területeken→völgyekben, alföldeken. Hegygerincek alulreprezentáltak. Egyszerű interpoláció→alulbecslés a magasabb tengerszint feletti magasságokon. A torzítás 50%-ot meghaladhatja hegyvidéken.",
+    "explanation": "A mérőhálózat szisztematikus torzítása a csapadék-interpoláció fő kihívása."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerrel javítható a Thiessen-módszer hegyvidéki területekre?",
+    "correct": "1. Ko-krigelés magassággal. 2. PRISM-típusú helyi regresszió. 3. Felszínalapú módszer: interpoláció→zonális statisztika. 4. Rácshálós termékek (CARPATCLIM). Mindegyik az orografikus hatást ragadja meg.",
+    "explanation": "A domborzat figyelembevétele lényegesen javítja a hegyvidéki becsléseket."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a legközelebbi szomszéd interpoláció helyét a hidrológiai gyakorlatban!",
+    "correct": "Thiessen-poligon átlagolás: széles körben használt, egyszerű, reprodukálható. Kategoriális adatokra: területhasználat, talajtípus. Gyors megjelenítés. Nem alkalmas sima felszínek előállítására.",
+    "explanation": "A legközelebbi szomszéd a legegyszerűbb, de specifikus alkalmazásokra értékes."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a csapadékbecslést egy adatszegény afrikai vízgyűjtőn?",
+    "correct": "CHIRPS: 0,05°, 1981-jelen, IR+állomás. GPM/IMERG: 0,1°, félórás. ERA5: 0,25°, órás, 1940-jelen. Zonális statisztika a vízgyűjtőre. A lefolyási hányados validálásra.",
+    "explanation": "A műholdas és reanalízis termékek az egyetlen lehetőség adatszegény régiókban."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepe van a keresési környezetnek az IDW módszerben?",
+    "correct": "Maximális keresési sugár, min/max pontszám korlátozza a felhasznált mérők számát. Előny: csökkenti a számítási időt, kizárja az irreleváns távoli pontokat. Kockázat: definiálatlan becslés mérőmentes területeken.",
+    "explanation": "A keresési környezet az IDW praktikus, de kockázatos paramétere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a krigelési varianciát a mérőhálózat tervezéséhez?",
+    "correct": "A krigelési varianciatérkép a magas bizonytalanságú területeket jelöli. Új mérő telepítése ott javasolt, ahol a variancia a legmagasabb. Iteratív tervezés: mérés→variogram→krigelés→varianciatérkép→új mérő helye.",
+    "explanation": "A krigelési variancia egyedülálló eszköz a mérőhálózat-optimalizáláshoz."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Thiessen-poligon módszer jogi és szabályozási jelentőségét!",
+    "correct": "Determinisztikus, reprodukálható, egyszerű. Bíróságok és szabályozó hatóságok elfogadják. Nincs szubjektív paraméterbeállítás. Sok vízgazdálkodási szervezet hivatalos módszere. Az egyszerűség előny jogi kontextusban.",
+    "explanation": "A Thiessen-módszer jogi elfogadottsága a gyakorlati alkalmazás fontos szempontja."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen lépéseket kell tenni a rácshálós csapadéktermékek helyes felhasználásához?",
+    "correct": "1. Letöltés (CARPATCLIM, E-OBS, CHIRPS). 2. Időbeli aggregálás (napi→éves). 3. Szükség esetén újravetítés. 4. Zonális statisztika a vízgyűjtőre. 5. Validálás lefolyási hányadossal. 6. Dokumentálás.",
+    "explanation": "A szisztematikus munkafolyamat biztosítja az eredmények megbízhatóságát."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné az időben változó mérőhálózat hatását a Thiessen-módszerre?",
+    "correct": "Állomások hozzáadása/eltávolítása megváltoztatja a poligonokat→inkonzisztens idősor. Megoldás: fix referenciahálózat vagy rácshálós termékek (E-OBS, CARPATCLIM) használata, amelyek belső konzisztenciát biztosítanak.",
+    "explanation": "A mérőhálózat időbeli változása különösen a hosszú távú vizsgálatokat érinti."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a CHIRPS és GPM csapadéktermékek előnyeit és hátrányait!",
+    "correct": "CHIRPS: 5 km, napi, 1981-jelen, IR, jobb archívum. GPM: 10 km, félórás, 2000-jelen, mikrohullámú, közvetlen mérés. CHIRPS→klimatológia. GPM→viharok. Mindkettő ingyenes.",
+    "explanation": "A két termék komplementer erősségeket nyújt."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen fő különbségek vannak a raszteralapú és pontalapú csapadékátlagolás között?",
+    "correct": "Pontalapú (Thiessen): diszkrét mérőértékek, területsúlyozás. Raszteralapú: interpolált/előre kiszámított felszín, zonális statisztika. A raszteralapú fizikailag reálisabb, de az interpoláció bizonytalanságát hordozza.",
+    "explanation": "A két megközelítés a csapadékmező eltérő reprezentációját használja."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelés a dél-afrikai bányászatból ered.",
+    "correct": "true",
+    "explanation": "Danie Krige dél-afrikai bányamérnök az 1950-es években fejlesztette."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW-nél a p=0 minden pontnak azonos súlyt ad.",
+    "correct": "true",
+    "explanation": "Ha p=0, w=1/d⁰=1 mindenre → egyszerű számtani átlag."
+  },
+  {
+    "type": "true_false",
+    "question": "A Delaunay-háromszögelés a Thiessen-poligonok duálisa.",
+    "correct": "true",
+    "explanation": "Matematikai dualitás a két konstrukció között."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 óránkénti időbeli felbontással rendelkezik.",
+    "correct": "true",
+    "explanation": "Az ERA5 órás időlépcsőkkel biztosít globális adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció nem alkalmas kategoriális adatokra.",
+    "correct": "true",
+    "explanation": "Kategoriális adatokra csak legközelebbi szomszéd alkalmas."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelés nem igényel variogram-illesztést.",
+    "correct": "false",
+    "explanation": "A variogram-illesztés a krigelés kulcslépése."
+  },
+  {
+    "type": "true_false",
+    "question": "A GPM műhold mikrohullámú radiométereket használ.",
+    "correct": "true",
+    "explanation": "A GPM mikrohullámú mérést alkalmaz a csapadék közvetlen méréséhez."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-poligonok geometriája a mérőértékektől is függ.",
+    "correct": "false",
+    "explanation": "A geometria csak a mérők helyétől függ, nem az értéktől."
+  },
+  {
+    "type": "true_false",
+    "question": "A CARPATCLIM-et évente frissítik.",
+    "correct": "false",
+    "explanation": "A CARPATCLIM egy lezárt 1961-2010 adatbázis."
+  },
+  {
+    "type": "true_false",
+    "question": "A polinomiális trendfelszín hajlamos a túlillesztésre.",
+    "correct": "true",
+    "explanation": "Magas rendű polinomok vadul oszcillálhatnak."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW keresési sugár csökkentése mindig javítja az eredményt.",
+    "correct": "false",
+    "explanation": "Kockázat: definiálatlan becslések mérőmentes területeken."
+  },
+  {
+    "type": "true_false",
+    "question": "A zonális statisztika a Zonal eszközkészletben található.",
+    "correct": "true",
+    "explanation": "Spatial Analyst > Zonal."
+  },
+  {
+    "type": "true_false",
+    "question": "A regresszió-krigelés polinomiális trendet és krigelést kombinál.",
+    "correct": "true",
+    "explanation": "Regressziós modell a segédváltozóval + krigelés a reziduálisokra."
+  },
+  {
+    "type": "true_false",
+    "question": "A CHIRPS a Climate Hazards Center terméke.",
+    "correct": "true",
+    "explanation": "A UC Santa Barbara Climate Hazards Center fejlesztette."
+  },
+  {
+    "type": "true_false",
+    "question": "A hipsometrikus módszer figyelembe veszi a szél irányát.",
+    "correct": "false",
+    "explanation": "Csak a magasság-csapadék lineáris kapcsolatot használja."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-módszer a legalkalmasabb hegyvidéki területekre.",
+    "correct": "false",
+    "explanation": "Az orografikus hatást figyelmen kívül hagyja."
+  },
+  {
+    "type": "true_false",
+    "question": "Az E-OBS napi adatokat biztosít.",
+    "correct": "true",
+    "explanation": "Napi hőmérséklet, csapadék és más változók."
+  },
+  {
+    "type": "true_false",
+    "question": "A krigelési varianciatérkép segíti a mérőhálózat-tervezést.",
+    "correct": "true",
+    "explanation": "Magas variancia = új mérő telepítésére alkalmas hely."
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd módszer új értékeket hoz létre a mintaértékekből.",
+    "correct": "false",
+    "explanation": "A felszín csak a bemeneti adatértékeket tartalmazza."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW-nél a bikaszem effektus fizikai jelenséget tükröz.",
+    "correct": "false",
+    "explanation": "A távolságsúlyozási séma műterméke."
+  },
+  {
+    "type": "true_false",
+    "question": "A Zagyva vízgyűjtő átlagos magassága kb. 220 m.",
+    "correct": "true",
+    "explanation": "A hipsometrikus példában 220 m."
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadékmérők nyílása 10⁻⁶ km² nagyságrendű.",
+    "correct": "true",
+    "explanation": "200-324 cm² ≈ 10⁻⁶ km²."
+  },
+  {
+    "type": "true_false",
+    "question": "A Szolnok és Kékes közötti magasságkülönbség kb. 920 m.",
+    "correct": "true",
+    "explanation": "1010 - 89 = 921 m."
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd interpoláció sima felszínt eredményez.",
+    "correct": "false",
+    "explanation": "Darabonként konstans, hirtelen ugrásokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "A ko-krigelés jobb eredményt ad hegyvidéken, mint az egyszerű krigelés.",
+    "correct": "true",
+    "explanation": "A magasság segédváltozóként javítja az orografikus becslést."
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadék interpolálása könnyebb, mint a hőmérsékleté.",
+    "correct": "false",
+    "explanation": "A csapadék a legnehezebben interpolálható környezeti változó."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ETRS89-LAEA területtartó vetület.",
+    "correct": "true",
+    "explanation": "Az Eurostat és a Copernicus standard páneurópai vetülete."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-módszer determinisztikus.",
+    "correct": "true",
+    "explanation": "Ugyanaz az input mindig ugyanazt az eredményt adja."
+  },
+  {
+    "type": "true_false",
+    "question": "Az IDW p=3 mellett a közeli pontok hatása erősebb, mint p=2-nél.",
+    "correct": "true",
+    "explanation": "Nagyobb p: a közeli pont relatív súlya nő."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 csapadékadata torzítatlan.",
+    "correct": "false",
+    "explanation": "Az ERA5 hajlamos túlbecsülni a gyenge és alulbecsülni az erős csapadékot."
+  },
+  {
+    "type": "true_false",
+    "question": "Az operatív hidrológiában a krigelés a standard módszer.",
+    "correct": "false",
+    "explanation": "Sok operatív rendszer a Thiessen-módszert használja egyszerűsége miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A felszínalapú módszerek szükségtelenné teszik a mérőhálózatot.",
+    "correct": "false",
+    "explanation": "A rácshálós termékek is mérőadatokra épülnek, bár műholdas adatokat is beépítenek."
+  },
+  {
+    "type": "true_false",
+    "question": "Az E-OBS az ECA&D projekt keretében készül.",
+    "correct": "true",
+    "explanation": "European Climate Assessment & Dataset."
+  },
+  {
+    "type": "true_false",
+    "question": "A Thiessen-módszer kiterjeszthető segédváltozókkal.",
+    "correct": "false",
+    "explanation": "A Thiessen-módszer nem képes segédváltozók beépítésére."
+  },
+  {
+    "type": "true_false",
+    "question": "Az interpoláció bizonytalanság nélküli becslést ad.",
+    "correct": "false",
+    "explanation": "Minden interpoláció bizonytalansággal jár, de csak a krigelés számszerűsíti ezt."
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláns egy keresztszorzat tagot tartalmaz.",
+    "correct": "true",
+    "explanation": "z = a₀ + a₁x + a₂y + a₃xy → az a₃xy a keresztszorzat tag."
+  },
+  {
+    "type": "true_false",
+    "question": "A Zagyva vízgyűjtő hipsometrikus regressziója R²=0,97 értéket ad.",
+    "correct": "true",
+    "explanation": "Erős lineáris kapcsolat a magasság és csapadék között."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés dél-afrikai bányamérnök neve: Danie _______.",
+    "correct": "Krige",
+    "explanation": "Az 1950-es években fejlesztette ki az ötleteket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A variogrammodell illesztésénél a leggyakoribb típusok: szférikus, exponenciális és _______.",
+    "correct": "Gauss",
+    "explanation": "A három standard elméleti variogrammodell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PRISM rövidítés: Parameter-elevation _______ on Independent Slopes Model.",
+    "correct": "Regressions",
+    "explanation": "Helyi regressziós modellek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A küszöb (sill) a variogramban = c₀ + _______.",
+    "correct": "c",
+    "explanation": "A nugget (c₀) és a szemivarianciajárulék (c) összege."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW képlete: ẑ = Σ(wi × zi) / Σwi, ahol wi = 1/_______.",
+    "correct": "di^p",
+    "explanation": "A távolság p-edik hatványának reciproka."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-módszert _______ évben fejlesztették ki.",
+    "correct": "1911",
+    "explanation": "Alfred H. Thiessen az USA Időjárási Hivatalánál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CHIRPS rövidítés: Climate Hazards Group _______ Precipitation with Station data.",
+    "correct": "InfraRed",
+    "explanation": "Infravörös műholdas becsléseket használ."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM misszió _______ évben indult.",
+    "correct": "2014",
+    "explanation": "NASA/JAXA közös projekt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CARPATCLIM felbontása: _______ fok.",
+    "correct": "0,1",
+    "explanation": "Kb. 11 km-es rácsméret."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A regularizált spline _______ paramétere szabályozza a simaságot.",
+    "correct": "súly",
+    "explanation": "Nagyobb súly = simább felszín."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lefolyási hányados Közép-Európában: 0,30 – _______.",
+    "correct": "0,50",
+    "explanation": "Mérsékelt éghajlatú, kiegyensúlyozott vízháztartás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A ko-krigelés leggyakoribb segédváltozója: tengerszint feletti _______.",
+    "correct": "magasság",
+    "explanation": "Az erős fizikai kapcsolat miatt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A nugget a variogramban: szemivariancia _______ távolságnál.",
+    "correct": "nulla",
+    "explanation": "A nulla távolságnál nem nulla szemivariancia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ERA5 az _______ (intézmény) terméke.",
+    "correct": "ECMWF",
+    "explanation": "European Centre for Medium-Range Weather Forecasts."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Felső-Tisza medence _______ országon nyúlik át.",
+    "correct": "4",
+    "explanation": "Magyarország, Szlovákia, Ukrajna, Románia."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az empirikus Bayes-krigelés automatizálja a _______ illesztését.",
+    "correct": "variogram",
+    "explanation": "Korlátozott maximum likelihood eljárással."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva _______-nál torkollik a Tiszába.",
+    "correct": "Szolnok",
+    "explanation": "Szolnoknál éri el a Tiszát."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés franciaországi matematikus neve: Georges _______.",
+    "correct": "Matheron",
+    "explanation": "Az 1960-as években formalizálta matematikailag."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-poligon a _______ szomszéd interpoláció egy formája.",
+    "correct": "legközelebbi",
+    "explanation": "Minden ponthoz a legközelebbi mérő értékét rendeli."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS háromszintű eljárása: spline + krigelés + _______.",
+    "correct": "kombinálás",
+    "explanation": "A klimatológia és az anomáliamező kombinálása."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PRISM az _______ State University terméke.",
+    "correct": "Oregon",
+    "explanation": "Christopher Daly fejlesztette."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris interpoláció _______ és _______ irányban végez lineáris interpolációt.",
+    "correct": "x, y",
+    "explanation": "Először az egyik, majd a másik irányban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A spline módszer a _______ energia funkcionált minimalizálja.",
+    "correct": "hajlítási",
+    "explanation": "A lehető legsimább felszínt eredményezi."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-poligon módszer _______ és reprodukálható.",
+    "correct": "determinisztikus",
+    "explanation": "Ugyanaz az input mindig ugyanazt az eredményt adja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CHIRPS fejlesztő intézménye: UC _______ Barbara.",
+    "correct": "Santa",
+    "explanation": "University of California, Santa Barbara."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az E-OBS jelenlegi verziója (2025): v_______.",
+    "correct": "32.0e",
+    "explanation": "A legfrissebb verzió."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A csapadékmérő által mintavételezett terület kb. 10^_______ km².",
+    "correct": "-6",
+    "explanation": "200-324 cm² ≈ 10⁻⁶ km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva vízgyűjtő területe kb. _______ km².",
+    "correct": "5677",
+    "explanation": "Észak-Magyarország."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A tenziós spline _______ paramétere szabályozza a kifeszítettséget.",
+    "correct": "tenzió",
+    "explanation": "Magas tenzió: közelebb a lineáris interpolációhoz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A zonális statisztikák eredménye _______ formátumú.",
+    "correct": "táblázat",
+    "explanation": "Zónánként egy sor összefoglaló statisztikákkal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-módszer kidolgozott példájában P̄ = _______ mm.",
+    "correct": "579,8",
+    "explanation": "301490 / 520 = 579,8 mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OMSZ ma _______ Zrt. néven működik.",
+    "correct": "HungaroMet",
+    "explanation": "Az Országos Meteorológiai Szolgálat új neve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A krigelés a becslési _______ minimalizálására törekszik.",
+    "correct": "variancia",
+    "explanation": "A legjobb lineáris torzítatlan becslés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Zagyva a _______ és a Bükk hegységekből ered.",
+    "correct": "Mátra",
+    "explanation": "Észak-Magyarország hegységei."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az IDW p=∞ esetén a _______ szomszéd interpolációt kapjuk.",
+    "correct": "legközelebbi",
+    "explanation": "A legközelebbi pont súlya elnyom minden mást."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris interpoláns négy együtthatóját a négy _______ határozza meg.",
+    "correct": "sarokérték",
+    "explanation": "z₀₀, z₁₀, z₀₁, z₁₁."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ERA5 csapadéka _______ termék, nem közvetlen megfigyelés.",
+    "correct": "modell",
+    "explanation": "Numerikus időjárás-előrejelzési modell kimenete."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hatástávolságon túl az adatpontok gyakorlatilag _______.",
+    "correct": "korrelálatlanok",
+    "explanation": "A variogram eléri a küszöböt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Thiessen-poligon és a _______ háromszögelés duális kapcsolatban állnak.",
+    "correct": "Delaunay",
+    "explanation": "Matematikai dualitás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF hidrográfiai adatai _______ óta ingyenesek.",
+    "correct": "2024",
+    "explanation": "2024 júliusa óta a data.vizugy.hu-n."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezők teszik a csapadékot a legnehezebben interpolálható változóvá?",
+    "correct": "1. Nem folytonos (konvektív viharok). 2. Ferde eloszlás. 3. Orografikus hatás. 4. Egyenetlen mérőhálózat. 5. Skálafüggő változékonyság. 6. Időbeli változékonyság.",
+    "explanation": "Ezek együttesen teszik a csapadékot különlegesen nehéz interpolációs feladattá."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg a krigelés variogramparamétereit?",
+    "correct": "1. Empirikus szemivariogram számítása. 2. Elméleti modell kiválasztása (szférikus/exponenciális/Gauss). 3. Nugget, küszöb, hatástávolság illesztése. 4. Ellenőrzés: illeszkedés, fizikai értelmesség.",
+    "explanation": "A variogramillesztés a krigelés legkritikusabb lépése."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az ERA5 reanalízisnek a mérőalapú interpolációval szemben?",
+    "correct": "Globális, konzisztens lefedettség. Órás felbontás. 1940-ig visszanyúlik. Fizikai modell biztosítja a konzisztenciát. Hátrány: modelltorzítás, durvább felbontás (31 km).",
+    "explanation": "Az ERA5 a legátfogóbb globális csapadékproduktum."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná az IDW-t egy gyors csapadékbecsléshez?",
+    "correct": "p=2, keresési sugár a terület kiterjedéséhez igazítva, min 3 pont. Gyors, nem igényel variogramot. Korlátozás: bikaszem műtermék, nincs magasságkorrekcó. Köztes megoldás Thiessen és krigelés között.",
+    "explanation": "Az IDW ésszerű alapértelmezés közepes adatsűrűséghez."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a csapadék-interpoláció az éghajlatváltozási hatásvizsgálatokban?",
+    "correct": "Az éghajlatváltozási forgatókönyvek térbeli csapadékmezőket igényelnek. A referencia-klimatológia (CARPATCLIM, PRISM) az összehasonlítás alapja. A jövőbeli változások a referenciához viszonyítva értelmezendők.",
+    "explanation": "A csapadék-interpoláció a klímaváltozási hatásvizsgálat alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a mérőhálózat időbeli változásának hatását a hosszú távú csapadékelemzésre?",
+    "correct": "Rögzített referenciahálózat használata, vagy rácshálós termékek (E-OBS, CARPATCLIM). Az időben változó hálózat inkonzisztens Thiessen-idősorokat eredményez. A homogenizálás csökkenti a műtermékeket.",
+    "explanation": "A mérőhálózat stabilitása kritikus a hosszú távú elemzéseknél."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az interpoláció és a reanalízis közötti különbséget csapadéknál!",
+    "correct": "Interpoláció: mérőadatok térbeli kiterjesztése (IDW, krigelés). Reanalízis: fizikai modell + adatasszimiláció (ERA5). A reanalízis konzisztensebb, de modelltorzításokat tartalmaz. Az interpoláció hívebb az adatokhoz.",
+    "explanation": "A két megközelítés kiegészíti egymást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a Thiessen-módszert több vízgyűjtő egyidejű csapadékbecslésére?",
+    "correct": "1. Thiessen-poligonok az összes mérőből. 2. Intersect minden vízgyűjtő poligonnal. 3. Calculate Field: csapadék × terület. 4. Summary Statistics vízgyűjtőnként. 5. Súlyozott átlag. Párhuzamosan több vízgyűjtőre.",
+    "explanation": "A GIS munkafolyamat hatékonyan skálázható több vízgyűjtőre."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a spline interpoláció a talajvízszint-térképezésben?",
+    "correct": "A talajvízszint simán változik → a spline jó választás. A regularizált spline simítása megfelelő. Kevésbé hajlamos túllövésre, mint csapadéknál. A tenzió beállítása fontos a helyi szintvonalak megőrzéséhez.",
+    "explanation": "A spline a talajvízszint-térképezés természetes módszere."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálná a rácshálós csapadéktermékeket mérőadatokkal?",
+    "correct": "1. Visszatartott mérők (leave-one-out). 2. RMSE, MAE, torzítás számítása. 3. Szélsőértékek ellenőrzése. 4. Lefolyási hányados konzisztencia. 5. Összehasonlítás független adatforrással (radar, műhold).",
+    "explanation": "A validálás a rácshálós termékek megbízhatóságának kulcsa."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján döntene a Thiessen és a felszínalapú módszer között egy operatív rendszerben?",
+    "correct": "Thiessen: bevált, reprodukálható, jogi elfogadás, HEC-HMS kompatibilis. Felszínalapú: pontosabb hegyvidéken, fizikailag reálisabb. Az átállás újrakalibrálást igényel. Az intézményi kontextus dönt.",
+    "explanation": "Az operatív rendszerben a stabilitás és reprodukálhatóság gyakran fontosabb a pontosságnál."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a CARPATCLIM-et és az E-OBS-t kombináltan egy hosszú távú magyar hidrológiai vizsgálatban?",
+    "correct": "CARPATCLIM: 1961-2010 (legjobb minőség). E-OBS: 2010-jelen (frissebb, de kevésbé kárpát-specifikus). Együtt: 1961-jelen. Figyelembe veendő: eltérő homogenizálás, lehetséges töréspontok 2010-nél.",
+    "explanation": "A két termék kiegészíti egymást időbeli lefedettségben."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a bilineáris interpolációnak az újramintavételezésnél?",
+    "correct": "Sima felszín, nincs lépcsős műtermék. 4 cellát használ (gyors). A legtöbb alkalmazáshoz elegendő. Enyhén simít (elfogadható kompromisszum). A köbös konvolúció élesebb, de túllőhet.",
+    "explanation": "A bilineáris az újramintavételezés standardja folytonos adatokhoz."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a krigelést egy magyar vízgyűjtő havi csapadékbecslésére?",
+    "correct": "1. OMSZ állomásadatok. 2. Havi összegek számítása. 3. Empirikus variogram. 4. Modellillesztés. 5. Krigelés + varianciatérkép. 6. Zonális statisztika a vízgyűjtőre. Opcionális: ko-krigelés DDM-5-tel.",
+    "explanation": "A krigelés a legmegfelelőbb módszer, ha a variogram megfelelően illeszthető."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a csapadék-interpoláció a vízgazdálkodási tervezésben?",
+    "correct": "A vízmérleg-számítás alapja: P = Q + ET + ΔS. Pontos P becslés szükséges a tározó-befolyási becsléshez, öntözési tervezéshez, vízkészlet-értékeléshez. A módszerválasztás hatással van a tervezési döntésekre.",
+    "explanation": "A csapadékbecslés a vízgazdálkodás alapvető bemenete."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti az empirikus Bayes-krigelés a nem szakértő felhasználókat?",
+    "correct": "Automatizálja a variogramillesztést (korlátozott ML). Nem kell manuálisan választani és illeszteni a variogrammodellt. Az ArcGIS Pro-ban elérhető. Hozzáférhetőbbé teszi a krigelést a gyakorlati alkalmazásokban.",
+    "explanation": "Az automatizálás csökkenti a krigelés belépési küszöbét."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerrel becsülné a csapadékot egy viharesemény során, ha a mérők elmulasztották?",
+    "correct": "Radar-alapú becslés (ha elérhető). GPM/IMERG: félórás, kb. 10 km. Vihar-rekonstrukció: szomszédos mérők idősorai. A konvektív viharok lokalizáltsága miatt a pontmérések elégtelennek bizonyulhatnak.",
+    "explanation": "A viharesemények csapadékbecslése a legnagyobb kihívás."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a csapadék interpolálását az Alföldön?",
+    "correct": "Sík terep: nincs orografikus hatás → egyszerű IDW vagy krigelés elegendő. A mérőhálózat viszonylag sűrű. A fő kihívás a konvektív viharok lokalizáltsága. Az E-OBS/CARPATCLIM rácsok jól alkalmazhatók.",
+    "explanation": "Az Alföldi csapadék-interpoláció kevésbé kihívás, mint a hegyvidéki."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a csapadék és a vízhozam közötti kapcsolatot a Felső-Tisza medencében!",
+    "correct": "A csapadék a hegyvidéki forrásvidéken (>1000 mm) generálja az árvizeket. Az Alföldi mérők alulbecsülik. A Thiessen-módszer 40%-kal alulbecsüli a valódi medence-átlagot. CARPATCLIM szükséges.",
+    "explanation": "A határokon átnyúló csapadékbecslés kritikus az árvízi előrejelzéshez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg a lefolyási hányados normális tartományát különböző éghajlatokon?",
+    "correct": "Száraz (mediterrán, sztyeppe): 0,10-0,30. Mérsékelt (Közép-Európa): 0,30-0,50. Nedves (óceáni): 0,50-0,70. Nagyon nedves/hűvös: >0,70. A tartományon kívüli értékek adathibára utalnak.",
+    "explanation": "A lefolyási hányados a vízmérleg konzisztenciájának egyszerű ellenőrzése."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlődési irányok várhatók a csapadék-interpolációban?",
+    "correct": "Gépi tanulás: neurális hálók, random forest. Műholdas adatok javulása (GPM utód). Crowdsourced adatok (mobiltelefon-mérések). Valós idejű egyesítés. Magasabb felbontás. Bizonytalanság-kommunikáció.",
+    "explanation": "A technológiai fejlődés új lehetőségeket nyit a csapadék-interpolációban."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a felszínalapú módszert a Zagyva vízgyűjtőjén?",
+    "correct": "1. CARPATCLIM havi rácsok (0,1°). 2. Éves összeg. 3. Zonális statisztika a Zagyva poligonnal. 4. Eredmény: ~565 mm/év. Egyszerűbb és pontosabb, mint a hipsometrikus módszer.",
+    "explanation": "A rácshálós termékek használata a legegyszerűbb és legmegbízhatóbb megközelítés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a csapadék-interpoláció az árvízi kockázatértékelésben?",
+    "correct": "A tervezési csapadék térbeli eloszlása szükséges. A szélsőséges események interpolációja a legnehezebb. A krigelési bizonytalanság továbbvezethető az árvízi modellbe. A bizonytalanság kommunikálása döntéshozóknak.",
+    "explanation": "Az árvízi kockázat közvetlenül függ a csapadékbecslés pontosságától."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kombinálná a különböző csapadékforrásokat (mérő, radar, műhold) egy hidrológiai vizsgálatban?",
+    "correct": "Mérő: pontos, de ritka. Radar: térbeli lefedettség, de kalibrálás kell. Műhold: globális, de durva. Egyesítés: krigelés külső sodródással (radar/műhold mint segédváltozó). Multi-source fusion.",
+    "explanation": "Az adatforrások kombinálása javítja a csapadékbecslés pontosságát és lefedettségét."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazna csapadekbecslest aszalymonitoring rendszerben?",
+    "correct": "CHIRPS/GPM: aktualis csapadek. Hosszu tavu atlag (CARPATCLIM). Anomalia = aktualis - atlag. SPI index.",
+    "explanation": "Az aszalymonitoring a csapadek-interpolacio egyik legfontosabb alkalmazasa."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen elonyei vannak a racshalo termekek zonalis statisztikajanak a Thiessen-modszerrel szemben?",
+    "correct": "1. Folytonos felszin. 2. Segedvaltozok beepitve. 3. Konzisztens terkep. 4. Egyszerubb munkafoly. 5. Reprodukalhato.",
+    "explanation": "A racshalo termekek a legtobb esetben jobbak."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelne a csapadek idobeli aggregalasanak hatasat az interpolaciora?",
+    "correct": "Napi: lokalizalt, nehezebb. Havi: simabb. Eves: legsimabb. A modszer az aggregalasi szinttol fugg.",
+    "explanation": "Az idobeli leptekvalasztas befolyasolja az interpolacios pontos."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen modszerekkel validalna az IDW eredmenyet?",
+    "correct": "Leave-one-out: RMSE szamitasa. Osszehasonlitas krigelssel. Vizualis ellenorzes: bikaszem. Lefolyasi hanyados.",
+    "explanation": "A validalas tobblepcsds folyamat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazna a krigelest homerseklet-interpolaciora?",
+    "correct": "Homerseklet simabb mint csapadek. Ko-krigeles magassaggal (-6.5C/1000m). Variogram illesztheto sima valtozora.",
+    "explanation": "A homerseklet konnyen interpolalhato."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet jatszik a csapadek-interpolacio a vizkeszlet-ertekelesben?",
+    "correct": "A vizmérleg alapja: P=Q+ET+dS. Pontos P becslés szükséges. Tervezési alapinformáció.",
+    "explanation": "A vizkeszlet-ertekelés a csapadekbecslés közvetlen alkalmazása."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg a keresési sugarat az IDW módszernél?",
+    "correct": "2-3× a mérők átlagos távolsága. Min pontszám: 3-5. Túl kicsi sugár → definiálatlan becslések.",
+    "explanation": "A keresési sugár az IDW praktikus paramétere."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel kezelné a csapadék nulla-inflációját?",
+    "correct": "Kétlépcsős: 1. csapadékos/csapadékmentes osztályozás. 2. Mennyiség interpolálása a csapadékos napokon. Jelzőkrigelés.",
+    "explanation": "A nulla-infláció speciális statisztikai kihívás."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a tenziós spline paramétert csapadéknál?",
+    "correct": "Közepes-magas tenzió ajánlott. Alacsony tenzió: negatív csapadék veszélye. Mindig ellenőrizni: min ≥ 0.",
+    "explanation": "A tenzió a spline kulcsparamétere."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátozásai vannak a műholdas csapadékbecsléseknek?",
+    "correct": "IR: közvetett. Mikrohullámú: durva felbontás. Kalibrálás szükséges. Hegyvidéken nagyobb hiba.",
+    "explanation": "A műholdas termékek kiegészítők, nem helyettesítők."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a csapadék-interpolációt élelmiszerbiztonsági korai előrejelzésben?",
+    "correct": "CHIRPS+FEWS NET. Anomáliák → terméscsökkenés. Térbeli csapadékmezők → érintett területek.",
+    "explanation": "A csapadék-interpoláció humanitárius alkalmazása."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel csökkentené a csapadék-interpoláció hibáját?",
+    "correct": "Sűrűbb hálózat, segédváltozók, krigelés, rácshálós termékek, validálás.",
+    "explanation": "A hibaminimalizálás többféle megközelítést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a csapadékmérők minőségi problémáit az interpoláció előtt?",
+    "correct": "Hiányzó adatok kiegészítése. Outlier szűrés. Homogenizálás. Minőségellenőrzés: fizikai határok.",
+    "explanation": "Az adatminőség az interpoláció előfeltétele."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen módszerekkel kombinálná a mérő-, radar- és műholdas csapadékforrásokat?",
+    "correct": "Multi-source fusion: krigelés külső sodródással (radar/műhold segédváltozó). Az adatforrások kombinálása javítja a pontosságot.",
+    "explanation": "Az adatforrások kombinálása a modern csapadékbecslés trendje."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a csapadék-interpolációt városi árvízmodellezésben?",
+    "correct": "Sűrű mérőhálózat + radar: rövid időlépcsők (10 perc). A konvektív viharok lokalizáltsága kihívás.",
+    "explanation": "A városi árvíz nagy időbeli felbontást igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlődési irányok várhatók a csapadék-interpolációban?",
+    "correct": "Gépi tanulás, műholdas fejlődés, crowdsourced adatok, valós idejű egyesítés, magasabb felbontás.",
+    "explanation": "A technológia új lehetőségeket nyit."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan határozná meg a krigelés variogramparamétereit gyakorlatban?",
+    "correct": "1. Empirikus variogram. 2. Modellválasztás. 3. Nugget, küszöb, hatástávolság illesztése. 4. Ellenőrzés.",
+    "explanation": "A variogramillesztés a krigelés legkritikusabb lépése."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az ERA5-nek a mérőalapú interpolációval szemben?",
+    "correct": "Globális konzisztencia, órás felbontás, 1940-ig visszanyúlik. Hátrány: modelltorzítás, 31 km.",
+    "explanation": "Az ERA5 a legátfogóbb globális csapadékproduktum."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelné a mérőhálózat időbeli változásának hatását?",
+    "correct": "Fix referenciahálózat vagy rácshálós termékek (E-OBS, CARPATCLIM). Homogenizálás.",
+    "explanation": "Az időbeli stabilitás kritikus a hosszú távú elemzéseknél."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az interpoláció és reanalízis közötti különbséget!",
+    "correct": "Interpoláció: mérőadatok kiterjesztése. Reanalízis: fizikai modell + adatasszimiláció. Kiegészítik egymást.",
+    "explanation": "A két megközelítés eltérő erősségekkel bír."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a felszínalapú módszert a Zagyva vízgyűjtőjén?",
+    "correct": "CARPATCLIM rácsok → éves összeg → zonális statisztika → ~565 mm/év. Egyszerűbb és pontosabb.",
+    "explanation": "A rácshálós termékek használata a legegyszerűbb megközelítés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a csapadék-interpoláció az árvízi kockázatértékelésben?",
+    "correct": "Tervezési csapadék eloszlása. Szélsőségek interpolációja a legnehezebb. Krigelési bizonytalanság továbbvihető.",
+    "explanation": "Az árvízi kockázat a csapadékbecslés pontosságától függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használná a Zonal Statistics as Table eszközt több vízgyűjtőre?",
+    "correct": "Vízgyűjtő poligonok egyedi ID-val. Csapadékrács bemenet. Zonal Statistics: csoportosítás. Add Join. Export.",
+    "explanation": "A zonális statisztika hatékonyan skálázható."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján választana termékeket globális vizsgálathoz?",
+    "correct": "CHIRPS: 5 km, napi, 1981-jelen. GPM: 10 km, félórás, 2000-jelen. ERA5: 31 km, órás, 1940-jelen. A cél és lépték dönt.",
+    "explanation": "A globális termékek választása a vizsgálat céljától függ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazná a krigelést havi csapadékbecslésre?",
+    "correct": "OMSZ adatok, havi összegek, variogram, modellillesztés, krigelés + varianciatérkép, zonális statisztika. Ko-krigelés DDM-5-tel.",
+    "explanation": "A krigelés optimális ritka adatokhoz."
+  }
+]

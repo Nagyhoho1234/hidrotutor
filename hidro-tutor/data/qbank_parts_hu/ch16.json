@@ -1,0 +1,2902 @@
+[
+  {
+    "type": "mcq",
+    "question": "Hány vízfolyás-szakaszra készít vízhozam-előrejelzést az amerikai Nemzeti Vízmodell (NWM)?",
+    "options": [
+      "A. 270 000",
+      "B. 2,7 millió",
+      "C. 27 millió",
+      "D. 4 000"
+    ],
+    "correct": "B",
+    "explanation": "Az NWM 2,7 millió vízfolyás-szakaszra készít előrejelzést a kontinentális Egyesült Államok területén."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felszíni modellt használ az NWM a csapadék elosztására?",
+    "options": [
+      "A. VIC",
+      "B. LISFLOOD",
+      "C. Noah-MP",
+      "D. HSPF"
+    ],
+    "correct": "C",
+    "explanation": "Az NWM a Noah Multi-Physics (Noah-MP) felszíni modellt használja 1 km-es rácson."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen meder-hullámtranszformációs modellt alkalmaz az NWM?",
+    "options": [
+      "A. Muskingum-Cunge",
+      "B. RAPID",
+      "C. HEC-RAS",
+      "D. MIKE 11"
+    ],
+    "correct": "B",
+    "explanation": "A RAPID Muskingum-módszert használ az NHDPlus hálózaton."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a HRRR időjárási modell vízszintes felbontása?",
+    "options": [
+      "A. 1 km",
+      "B. 3 km",
+      "C. 9 km",
+      "D. 25 km"
+    ],
+    "correct": "B",
+    "explanation": "A HRRR 3 km-es vízszintes felbontással működik."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Texasi Árvízi Válaszrendszer négy lépésének helyes sorrendje?",
+    "options": [
+      "A. Vízhozam - Mélység - Elöntés - Hatás",
+      "B. Mélység - Vízhozam - Hatás - Elöntés",
+      "C. Elöntés - Mélység - Vízhozam - Hatás",
+      "D. Hatás - Elöntés - Mélység - Vízhozam"
+    ],
+    "correct": "A",
+    "explanation": "A lánc: Vízhozam, Mélység, Elöntés, Hatás."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány veszélyeztetett címpontot jelzett előre a rendszer Houston (2. régió) térségében a Harvey hurrikánra?",
+    "options": [
+      "A. 22 000",
+      "B. 152 800",
+      "C. 238 000",
+      "D. 3 000"
+    ],
+    "correct": "C",
+    "explanation": "238 000 veszélyeztetett címpont a 2. régióban."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány órával a csúcselöntés előtt állt rendelkezésre a Harvey-előrejelzés?",
+    "options": [
+      "A. 12",
+      "B. 24",
+      "C. 36",
+      "D. 48"
+    ],
+    "correct": "C",
+    "explanation": "36 órával a legsúlyosabb elöntés kezdete előtt."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2018-as Llano folyói árvíz során mekkora volt a csúcsvízhozam Llanónál?",
+    "options": [
+      "A. 801 m³/s",
+      "B. 4531 m³/s",
+      "C. 7816 m³/s",
+      "D. 28 300 m³/s"
+    ],
+    "correct": "C",
+    "explanation": "7816 m³/s (276 000 cfs)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor vált az EFAS operatívvá?",
+    "options": [
+      "A. 2002-ben",
+      "B. 2006-ban",
+      "C. 2011-ben",
+      "D. 2012-ben"
+    ],
+    "correct": "D",
+    "explanation": "2012-ben a Copernicus Vészhelyzet-kezelési Szolgálat részeként."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány tagú ensemble-előrejelzést készít az ECMWF naponta kétszer?",
+    "options": [
+      "A. 21",
+      "B. 31",
+      "C. 51",
+      "D. 101"
+    ],
+    "correct": "C",
+    "explanation": "51 tagú ensemble-előrejelzés."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen hidrológiai modellt használ az EFAS?",
+    "options": [
+      "A. Noah-MP",
+      "B. LISFLOOD",
+      "C. RAPID",
+      "D. HSPF"
+    ],
+    "correct": "B",
+    "explanation": "A JRC fejlesztette LISFLOOD modell 5 km-es rácson."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontásban működik az EFAS egész Európára?",
+    "options": [
+      "A. 1 km",
+      "B. 3 km",
+      "C. 5 km",
+      "D. 10 km"
+    ],
+    "correct": "C",
+    "explanation": "5 km-es felbontás."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2002 augusztusi európai árvizek mekkora kárt okoztak Közép-Európában?",
+    "options": [
+      "A. 5 milliárd EUR",
+      "B. 10 milliárd EUR",
+      "C. Több mint 20 milliárd EUR",
+      "D. 50 milliárd EUR"
+    ],
+    "correct": "C",
+    "explanation": "Több mint 20 milliárd EUR kár és 100+ halálos áldozat."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen visszatérési időknek felelnek meg az EFAS küszöbértékei?",
+    "options": [
+      "A. 1, 5, 10 éves",
+      "B. 2, 5, 20 éves",
+      "C. 5, 10, 50 éves",
+      "D. 10, 50, 100 éves"
+    ],
+    "correct": "B",
+    "explanation": "2 éves (magas), 5 éves (súlyos), 20 éves (szélsőséges)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány kulcsfontosságú jelentési pontja van az EFAS-nak Európában?",
+    "options": [
+      "A. ~500",
+      "B. ~1 500",
+      "C. ~10 000",
+      "D. ~2,7 millió"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 1 500 kulcsfontosságú folyószakasz."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontásban működik a GloFAS v4.0?",
+    "options": [
+      "A. 0,01 fok",
+      "B. 0,05 fok",
+      "C. 0,1 fok",
+      "D. 0,25 fok"
+    ],
+    "correct": "B",
+    "explanation": "0,05 fokos felbontás (~5 km)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora Magyarország felszíni vizének hányada származik a határon túlról?",
+    "options": [
+      "A. 50%",
+      "B. 75%",
+      "C. 85%",
+      "D. 95%"
+    ],
+    "correct": "D",
+    "explanation": "95% az alvízi helyzet miatt."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora Magyarország kijelölt, töltésekkel védett ártere?",
+    "options": [
+      "A. ~5 000 km²",
+      "B. ~10 000 km²",
+      "C. ~21 000 km²",
+      "D. ~50 000 km²"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 21 000 km² (az ország 23%-a)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány fokozata van a magyar árvízi készültségi rendszernek?",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 5"
+    ],
+    "correct": "B",
+    "explanation": "I. (készültség), II. (veszély), III. (rendkívüli veszély)."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány mérőállomást üzemeltet az OVF a nagy folyókon és mellékfolyókon?",
+    "options": [
+      "A. ~50",
+      "B. ~100",
+      "C. ~200",
+      "D. ~1 000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 200 mérőállomás."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a Tisza vízgyűjtő területe?",
+    "options": [
+      "A. ~93 000 km²",
+      "B. ~157 000 km²",
+      "C. ~52 000 km²",
+      "D. ~21 000 km²"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 157 000 km², nagyobb, mint egész Magyarország."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora volt a 2001-es tetőzés Vásárosnaménynél?",
+    "options": [
+      "A. 831 cm",
+      "B. 931 cm",
+      "C. 1031 cm",
+      "D. 1131 cm"
+    ],
+    "correct": "C",
+    "explanation": "1031 cm, a műszeres észlelések legmagasabb szintje."
+  },
+  {
+    "type": "mcq",
+    "question": "A VTT hány árapasztó tározót jelöl ki a Közép-Tisza mentén?",
+    "options": [
+      "A. 3",
+      "B. 4",
+      "C. 6",
+      "D. 8"
+    ],
+    "correct": "C",
+    "explanation": "Hat nagy árapasztó tározó."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a VTT tározóinak együttes kapacitása?",
+    "options": [
+      "A. ~500 millió m³",
+      "B. ~1 milliárd m³",
+      "C. ~1,5 milliárd m³",
+      "D. ~3 milliárd m³"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 1,5 milliárd m³."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az EU Árvízi Irányelvének száma?",
+    "options": [
+      "A. 2000/60/EK",
+      "B. 2007/60/EK",
+      "C. 2013/39/EU",
+      "D. 2006/118/EK"
+    ],
+    "correct": "B",
+    "explanation": "2007/60/EK az Árvízi Irányelv."
+  },
+  {
+    "type": "mcq",
+    "question": "A WaterML2-t melyik szervezet fogadta el szabványként 2012-ben?",
+    "options": [
+      "A. ISO",
+      "B. WMO",
+      "C. OGC",
+      "D. IEEE"
+    ],
+    "correct": "C",
+    "explanation": "Az Open Geospatial Consortium (OGC) 2012-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "Mennyibe kerül egy teljes USGS mérőállomás éves üzemeltetése?",
+    "options": [
+      "A. ~5 000 USD",
+      "B. ~10 000 USD",
+      "C. ~25 000 USD",
+      "D. ~100 000 USD"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 25 000 USD/év."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány híd van Texasban vízfolyás-szakaszok felett?",
+    "options": [
+      "A. 5 000",
+      "B. 15 700",
+      "C. 27 000",
+      "D. 50 000"
+    ],
+    "correct": "C",
+    "explanation": "27 000 híd, potenciális szenzorplatformok."
+  },
+  {
+    "type": "mcq",
+    "question": "A Sentinel-1 milyen technológiával érzékeli az árvíz kiterjedését?",
+    "options": [
+      "A. Optikai kamera",
+      "B. LiDAR",
+      "C. SAR (szintetikus apertúrájú radar)",
+      "D. Passzív mikrohullám"
+    ],
+    "correct": "C",
+    "explanation": "SAR felhőzeten keresztül is működik."
+  },
+  {
+    "type": "mcq",
+    "question": "A GPM/IMERG milyen felbontásban biztosít csapadékadatokat globálisan?",
+    "options": [
+      "A. 1 km",
+      "B. 5 km",
+      "C. 10 km",
+      "D. 25 km"
+    ],
+    "correct": "C",
+    "explanation": "10 km-es felbontás."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ICPDR hány országban koordinálja az árvízkezelést a Duna-medencében?",
+    "options": [
+      "A. 7",
+      "B. 10",
+      "C. 14",
+      "D. 19"
+    ],
+    "correct": "C",
+    "explanation": "14 ország."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú radar-mérőeszközöket telepítenek hidakra az I-10 mentén?",
+    "options": [
+      "A. SOMA RQ-30",
+      "B. ADCP",
+      "C. SonTek",
+      "D. Sentinel-1"
+    ],
+    "correct": "A",
+    "explanation": "Osztrák gyártmányú SOMA RQ-30 radarszenzor."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM rövid távú előrejelzése hány órára szól?",
+    "options": [
+      "A. 6",
+      "B. 12",
+      "C. 18",
+      "D. 24"
+    ],
+    "correct": "C",
+    "explanation": "18 órás rövid távú előrejelzés."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM középtávú előrejelzése hány napra szól?",
+    "options": [
+      "A. 5",
+      "B. 7",
+      "C. 10",
+      "D. 15"
+    ],
+    "correct": "C",
+    "explanation": "10 napos középtávú."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS középtávú előrejelzése legfeljebb hány napra szól?",
+    "options": [
+      "A. 5",
+      "B. 10",
+      "C. 15",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "Legfeljebb 15 napos."
+  },
+  {
+    "type": "mcq",
+    "question": "A GloFAS maximálisan hány napra ad előrejelzést?",
+    "options": [
+      "A. 10",
+      "B. 15",
+      "C. 20",
+      "D. 30"
+    ],
+    "correct": "D",
+    "explanation": "Akár 30 napos horizont, plusz szezonális kilátás."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány USGS mérőállomás van az Egyesült Államokban?",
+    "options": [
+      "A. ~1 000",
+      "B. ~5 000",
+      "C. ~10 000",
+      "D. ~50 000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 10 000 mérőállomás."
+  },
+  {
+    "type": "mcq",
+    "question": "A Harvey hurrikán alatt hány Nemzeti Gárdistát mozgósítottak Texasban?",
+    "options": [
+      "A. 5 000",
+      "B. 8 000",
+      "C. 16 000",
+      "D. 30 000"
+    ],
+    "correct": "C",
+    "explanation": "16 000 Nemzeti Gárdista."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2013-as árvíz hány éves rekordot állított Passaunál?",
+    "options": [
+      "A. 100",
+      "B. 200",
+      "C. 500",
+      "D. 1000"
+    ],
+    "correct": "C",
+    "explanation": "500 éves rekord 1501 óta."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik ország valósította meg a legteljesebb Víz Internete koncepciót?",
+    "options": [
+      "A. Ausztrália",
+      "B. Hollandia",
+      "C. Új-Zéland",
+      "D. Egyesült Államok"
+    ],
+    "correct": "C",
+    "explanation": "16 regionális szervezet és a NIWA integrálása WaterML2-vel."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi méri a szárazföldi víztárolás gravitációs változásait havi időléptékben?",
+    "options": [
+      "A. Sentinel-1",
+      "B. GRACE/GRACE-FO",
+      "C. Landsat",
+      "D. MODIS"
+    ],
+    "correct": "B",
+    "explanation": "GRACE/GRACE-FO gravitációs műholdak."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OVF melyik minisztérium alá tartozik?",
+    "options": [
+      "A. Agrárminisztérium",
+      "B. Belügyminisztérium",
+      "C. Környezetvédelmi Minisztérium",
+      "D. Közlekedési Minisztérium"
+    ],
+    "correct": "B",
+    "explanation": "A Belügyminisztérium alá."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány területi vízügyi igazgatóságot felügyel az OVF?",
+    "options": [
+      "A. 7",
+      "B. 10",
+      "C. 12",
+      "D. 19"
+    ],
+    "correct": "C",
+    "explanation": "Tizenkét területi vízügyi igazgatóság."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza esése a Magyar Alföldön mintegy hány cm/km?",
+    "options": [
+      "A. 10-20",
+      "B. 2-5",
+      "C. 0,5-1",
+      "D. 20-50"
+    ],
+    "correct": "B",
+    "explanation": "Rendkívül alacsony, 2-5 cm/km."
+  },
+  {
+    "type": "mcq",
+    "question": "A LISFLOOD milyen hullámtranszformációs közelítést alkalmaz?",
+    "options": [
+      "A. Dinamikus hullám",
+      "B. Diffúziós hullám",
+      "C. Kinematikus hullám",
+      "D. Saint-Venant egyenletek"
+    ],
+    "correct": "C",
+    "explanation": "Kinematikus hullám megközelítés a rácson."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontásúak a JRC folyami árvízveszélytérképei?",
+    "options": [
+      "A. 10 m",
+      "B. 50 m",
+      "C. 100 m",
+      "D. 500 m"
+    ],
+    "correct": "C",
+    "explanation": "100 m-es felbontás, páneurópai lefedettség."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS szezonális kilátásai hány hónapra terjednek?",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 4",
+      "D. 6"
+    ],
+    "correct": "C",
+    "explanation": "4 hónapos szezonális kilátás."
+  },
+  {
+    "type": "mcq",
+    "question": "A Clausius-Clapeyron-összefüggés szerint Celsius-fokonként hány %-kal nő a légkör vízgőztartalma?",
+    "options": [
+      "A. 3%",
+      "B. 5%",
+      "C. 7%",
+      "D. 10%"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 7%/°C."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor ért partot a Florence hurrikán a karolinai partokon?",
+    "options": [
+      "A. 2017 augusztusában",
+      "B. 2018 szeptemberében",
+      "C. 2018 októberében",
+      "D. 2019 júniusában"
+    ],
+    "correct": "B",
+    "explanation": "2018 szeptemberében."
+  },
+  {
+    "type": "mcq",
+    "question": "A Mansfield-gát szabadáteresztő küszöbe milyen magasságon van?",
+    "options": [
+      "A. 200,0 m",
+      "B. 210,3 m",
+      "C. 217,6 m",
+      "D. 225,0 m"
+    ],
+    "correct": "C",
+    "explanation": "217,6 m (714 láb) tengerszint feletti."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ADCP mit mér egyidejűleg?",
+    "options": [
+      "A. Csak vízszintet",
+      "B. Vízhőmérsékletet",
+      "C. Vízsebességet és medermélységet",
+      "D. Csapadékintenzitást"
+    ],
+    "correct": "C",
+    "explanation": "Hanghullámokkal sebesség és mélység egyszerre."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen hullámhosszú LiDAR hatol át a tiszta vízen?",
+    "options": [
+      "A. ~1064 nm (közeli-infravörös)",
+      "B. ~532 nm (zöld)",
+      "C. ~800 nm (vörös)",
+      "D. ~355 nm (ultraibolya)"
+    ],
+    "correct": "B",
+    "explanation": "Zöld hullámhossz (~532 nm)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi halálesetek globálisan hol koncentrálódnak leginkább?",
+    "options": [
+      "A. Észak-Amerika és Európa",
+      "B. Ausztrália és Japán",
+      "C. Dél-Ázsia, szubszaharai Afrika és Közép-Amerika",
+      "D. Kelet-Ázsia"
+    ],
+    "correct": "C",
+    "explanation": "Több mint 80% ezen régiókból."
+  },
+  {
+    "type": "mcq",
+    "question": "A HRES (ECMWF determinisztikus modell) mekkora felbontású?",
+    "options": [
+      "A. 3 km",
+      "B. 5 km",
+      "C. ~9 km",
+      "D. 25 km"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 9 km."
+  },
+  {
+    "type": "mcq",
+    "question": "A Harvey alatt a TDEM-nél hány épület kért közösségi segítséget?",
+    "options": [
+      "A. 85 000",
+      "B. 120 000",
+      "C. 152 800",
+      "D. 238 000"
+    ],
+    "correct": "C",
+    "explanation": "152 800 épület."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen gyakoriságú a hydroinfo.hu valós idejű adatfrissítése?",
+    "options": [
+      "A. 5 percenként",
+      "B. 15 percenként",
+      "C. 30 percenként",
+      "D. Óránként"
+    ],
+    "correct": "B",
+    "explanation": "15 percenkénti frissítés."
+  },
+  {
+    "type": "mcq",
+    "question": "A Duna áthaladási ideje az osztrák határtól Budapestig mintegy mennyi?",
+    "options": [
+      "A. 12-24 óra",
+      "B. 2-3 nap",
+      "C. 5-7 nap",
+      "D. 10-14 nap"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 2-3 nap."
+  },
+  {
+    "type": "mcq",
+    "question": "A hídra telepített radar szenzor becsült éves üzemeltetési költsége?",
+    "options": [
+      "A. ~500 USD",
+      "B. ~2 000 USD",
+      "C. ~5 000 USD",
+      "D. ~15 000 USD"
+    ],
+    "correct": "C",
+    "explanation": "Közepes, ~5 000 USD/év."
+  },
+  {
+    "type": "mcq",
+    "question": "A 3. szintű egyszerű vízszintszenzor becsült éves költsége?",
+    "options": [
+      "A. ~100 USD",
+      "B. ~500 USD",
+      "C. ~2 000 USD",
+      "D. ~5 000 USD"
+    ],
+    "correct": "B",
+    "explanation": "Alacsony, ~500 USD/év."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki tervezte az eredeti Tisza-szabályozást?",
+    "options": [
+      "A. Széchenyi István",
+      "B. Vásárhelyi Pál",
+      "C. Kossuth Lajos",
+      "D. David Maidment"
+    ],
+    "correct": "B",
+    "explanation": "Vásárhelyi Pál, 19. századi mérnök."
+  },
+  {
+    "type": "mcq",
+    "question": "Mennyivel rövidítette meg a Tisza-szabályozás a folyót átvágásokkal?",
+    "options": [
+      "A. ~100 km",
+      "B. ~250 km",
+      "C. ~450 km",
+      "D. ~600 km"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 450 km-rel."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2001-es tiszai árvíz kárai meghaladták...?",
+    "options": [
+      "A. 50 millió EUR-t",
+      "B. 80 millió EUR-t",
+      "C. 120 millió EUR-t",
+      "D. 200 millió EUR-t"
+    ],
+    "correct": "C",
+    "explanation": "120 millió EUR felett."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány VTT tározó készült el 2015-re?",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "correct": "C",
+    "explanation": "Tiszaroff, Cigánd, Hanyi-Tiszasüly."
+  },
+  {
+    "type": "mcq",
+    "question": "Hol található az EFAS-t fejlesztő JRC?",
+    "options": [
+      "A. Brüsszel",
+      "B. Ispra, Olaszország",
+      "C. Reading, Anglia",
+      "D. Koppenhága"
+    ],
+    "correct": "B",
+    "explanation": "Ispra, Olaszország."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS milyen szervezetekkel együttműködve üzemelteti a rendszert?",
+    "options": [
+      "A. NOAA és USGS",
+      "B. ECMWF és JRC",
+      "C. WMO és UNESCO",
+      "D. ESA és Copernicus"
+    ],
+    "correct": "B",
+    "explanation": "ECMWF és JRC közösen."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2006-os tiszai árvíz során egyes állomások hány hétig maradtak III. fokozat felett?",
+    "options": [
+      "A. 1 hétig",
+      "B. 2 hétig",
+      "C. 3 héten túl",
+      "D. 5 hétig"
+    ],
+    "correct": "C",
+    "explanation": "Három héten túl tartós terhelés."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2006-os tiszai árvíz védekezésében hányan vettek részt?",
+    "options": [
+      "A. 5 000",
+      "B. 10 000",
+      "C. Több mint 30 000",
+      "D. 100 000"
+    ],
+    "correct": "C",
+    "explanation": "Katonák, tűzoltók, önkéntesek összesen 30 000+ fő."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyarország éves csapadékátlaga mennyi?",
+    "options": [
+      "A. 400 mm",
+      "B. 600 mm",
+      "C. 800 mm",
+      "D. 1000 mm"
+    ],
+    "correct": "B",
+    "explanation": "600 mm, viszonylag száraz európai mércével."
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor adta ki az EFAS az első riasztásait a 2013-as közép-európai árvizekre?",
+    "options": [
+      "A. 2013. máj. 20.",
+      "B. 2013. máj. 28.",
+      "C. 2013. jún. 1.",
+      "D. 2013. jún. 5."
+    ],
+    "correct": "B",
+    "explanation": "2013. május 28-án, több mint egy héttel a tetőzés előtt."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Árvízi Irányelv hány évente írja elő az árvízkockázat-kezelési tervek frissítését?",
+    "options": [
+      "A. 3",
+      "B. 6",
+      "C. 10",
+      "D. 12"
+    ],
+    "correct": "B",
+    "explanation": "Hatévente."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik portálon érhetők el az OVF árvíztérképei?",
+    "options": [
+      "A. hydroinfo.hu",
+      "B. geoportal.vizugy.hu",
+      "C. vizeink.hu",
+      "D. data.vizugy.hu"
+    ],
+    "correct": "B",
+    "explanation": "geoportal.vizugy.hu."
+  },
+  {
+    "type": "mcq",
+    "question": "A WaterML2-t a WMO mikor fogadta el nemzetközi szabványként?",
+    "options": [
+      "A. 2012",
+      "B. 2014",
+      "C. 2016",
+      "D. 2018"
+    ],
+    "correct": "C",
+    "explanation": "2016-ban."
+  },
+  {
+    "type": "mcq",
+    "question": "A data.vizugy.hu portál mióta nyilvánosan elérhető?",
+    "options": [
+      "A. 2020 óta",
+      "B. 2022 óta",
+      "C. 2024 óta",
+      "D. 2025 óta"
+    ],
+    "correct": "C",
+    "explanation": "2024 júliusa óta."
+  },
+  {
+    "type": "mcq",
+    "question": "A GloFAS mikor vált operatívvá?",
+    "options": [
+      "A. 2006",
+      "B. 2011",
+      "C. 2015",
+      "D. 2018"
+    ],
+    "correct": "B",
+    "explanation": "2011-ben."
+  },
+  {
+    "type": "mcq",
+    "question": "A Harvey hurrikán mikor ért partot Corpus Christinél?",
+    "options": [
+      "A. 2017. aug. 20.",
+      "B. 2017. aug. 25.",
+      "C. 2018. okt. 18.",
+      "D. 2018. szept. 11."
+    ],
+    "correct": "B",
+    "explanation": "2017. augusztus 25-én, péntek este."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM korábbi rendszere hány mérőállomásra készített előrejelzést?",
+    "options": [
+      "A. ~400",
+      "B. ~4 000",
+      "C. ~40 000",
+      "D. ~400 000"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 4 000 mért helyszín."
+  },
+  {
+    "type": "mcq",
+    "question": "Kit emészett el a 2014-es Fritz Hughes Park Road-i árvíz?",
+    "options": [
+      "A. David Maidment kutatót",
+      "B. Jessica Hollis járőrt",
+      "C. Egy gazdálkodót",
+      "D. Egy tűzoltót"
+    ],
+    "correct": "B",
+    "explanation": "Jessica Hollis, 35 éves Travis megyei járőr."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Idai ciklon melyik országot sújtotta 2019-ben?",
+    "options": [
+      "A. Banglades",
+      "B. Pakisztán",
+      "C. Mozambik",
+      "D. India"
+    ],
+    "correct": "C",
+    "explanation": "Mozambik, ahol a GloFAS segítette a válaszadást."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2010-es magyarországi árvíz miért volt különösen problémás?",
+    "options": [
+      "A. Csak a Tiszát érintette",
+      "B. A Duna és a Tisza egyidejűleg volt árvízben",
+      "C. Csak a Dunát érintette",
+      "D. Jégtorlasz okozta"
+    ],
+    "correct": "B",
+    "explanation": "A Duna és Tisza egyidejű árvize két frontra feszítette az erőforrásokat."
+  },
+  {
+    "type": "mcq",
+    "question": "A COSMO modellt melyik ország meteorológiai szolgálata fejlesztette?",
+    "options": [
+      "A. Franciaország",
+      "B. Egyesült Királyság",
+      "C. Németország (DWD)",
+      "D. Olaszország"
+    ],
+    "correct": "C",
+    "explanation": "A DWD (Német Meteorológiai Szolgálat) fejlesztette."
+  },
+  {
+    "type": "mcq",
+    "question": "Texasban hány vízfolyás-szakaszon ad az NWM előrejelzést, amelyek felett hidak vannak?",
+    "options": [
+      "A. 5 000",
+      "B. 10 700",
+      "C. 15 700",
+      "D. 27 000"
+    ],
+    "correct": "C",
+    "explanation": "15 700 vízfolyás-szakasz."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza ártere Magyarországon mekkora?",
+    "options": [
+      "A. ~3 000 km²",
+      "B. ~5 000 km²",
+      "C. ~10 000 km²",
+      "D. ~21 000 km²"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 10 000 km²."
+  },
+  {
+    "type": "mcq",
+    "question": "A CARPATCLIM éghajlati adatkészlet milyen időszakra vonatkozik?",
+    "options": [
+      "A. 1901-1960",
+      "B. 1961-2010",
+      "C. 1971-2020",
+      "D. 1981-2020"
+    ],
+    "correct": "B",
+    "explanation": "1961-2010 időszak."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány helikopter működött egyidejűleg Beaumont/Port Arthur felett a Harvey alatt?",
+    "options": [
+      "A. 25",
+      "B. 45",
+      "C. 65",
+      "D. 85"
+    ],
+    "correct": "D",
+    "explanation": "85 helikopter egyidejűleg."
+  },
+  {
+    "type": "mcq",
+    "question": "Mennyivel emelkedett a Lake Travis vízszintje 2018-ban két nap alatt?",
+    "options": [
+      "A. 3,7 m",
+      "B. 5,2 m",
+      "C. 8,2 m",
+      "D. 10,4 m"
+    ],
+    "correct": "D",
+    "explanation": "10,4 m (34 láb)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS archivált előrejelzései hol érhetők el kutatók számára?",
+    "options": [
+      "A. water.noaa.gov",
+      "B. Copernicus Climate Data Store",
+      "C. hydroinfo.hu",
+      "D. data.ksh.hu"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Climate Data Store-on nyilvánosan."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány NWM vízfolyás-szakaszra jut egy USGS mérőállomás átlagosan?",
+    "options": [
+      "A. ~27",
+      "B. ~100",
+      "C. ~270",
+      "D. ~1000"
+    ],
+    "correct": "C",
+    "explanation": "10 000 állomás / 2,7M szakasz ≈ 270 szakasz/állomás validálatlan."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM milyen vízháIózati keretrendszerre épül?",
+    "options": [
+      "A. EU-Hydro",
+      "B. NHDPlus",
+      "C. HydroSHEDS",
+      "D. MERIT Hydro"
+    ],
+    "correct": "B",
+    "explanation": "Az NWM az NHDPlus keretrendszert használja 2,7 millió szakasszal."
+  },
+  {
+    "type": "mcq",
+    "question": "A Texasi Árvízi Válaszrendszert mely egyetemek fejlesztették ki?",
+    "options": [
+      "A. MIT és Stanford",
+      "B. UT Austin, Utah State és U. of Illinois",
+      "C. Harvard és Yale",
+      "D. Texas A&M és Rice"
+    ],
+    "correct": "B",
+    "explanation": "A UT Austin, Utah State University és University of Illinois kutatói fejlesztették."
+  },
+  {
+    "type": "mcq",
+    "question": "A GloFAS milyen időjárási kényszerítést használ?",
+    "options": [
+      "A. HRRR",
+      "B. GFS",
+      "C. ECMWF ensemble (51 tag)",
+      "D. COSMO"
+    ],
+    "correct": "C",
+    "explanation": "Ugyanaz az ECMWF 51 tagú ensemble, mint az EFAS."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen visszatérési idejű árvizekre készít a JRC páneurópai térképet?",
+    "options": [
+      "A. 2-50 éves",
+      "B. 5-100 éves",
+      "C. 10-500 éves",
+      "D. 50-1000 éves"
+    ],
+    "correct": "C",
+    "explanation": "10-500 éves visszatérési időkre 100 m-es felbontásban."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szervezet koordinálja a WMO Villámárvíz-iránymutatási Rendszerét?",
+    "options": [
+      "A. NOAA",
+      "B. JRC",
+      "C. WMO",
+      "D. USGS"
+    ],
+    "correct": "C",
+    "explanation": "A Meteorológiai Világszervezet (WMO)."
+  },
+  {
+    "type": "mcq",
+    "question": "India árvíz-előrejelző rendszerét melyik szervezet üzemelteti?",
+    "options": [
+      "A. India Meteorological Department",
+      "B. Central Water Commission (CWC)",
+      "C. ISRO",
+      "D. Ministry of Water Resources"
+    ],
+    "correct": "B",
+    "explanation": "A Központi Vízbizottság (CWC)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Noah-MP felszíni modell mekkora rácson működik az NWM-ben?",
+    "options": [
+      "A. 250 m",
+      "B. 500 m",
+      "C. 1 km",
+      "D. 3 km"
+    ],
+    "correct": "C",
+    "explanation": "1 km-es rács a kontinentális USA-ban."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NWM-et melyik szervezet üzemelteti?",
+    "options": [
+      "A. USGS",
+      "B. NOAA / Nemzeti Vízközpont",
+      "C. FEMA",
+      "D. EPA"
+    ],
+    "correct": "B",
+    "explanation": "A NOAA Nemzeti Vízközpont (National Water Center)."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EFAS milyen felszínborítási adatot használ?",
+    "options": [
+      "A. NLCD",
+      "B. GlobCover",
+      "C. CORINE",
+      "D. MODIS LC"
+    ],
+    "correct": "C",
+    "explanation": "CORINE felszínborítottság a Copernicus-ból."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány európai országot fed le az EFAS?",
+    "options": [
+      "A. 27",
+      "B. 32",
+      "C. 39",
+      "D. 44"
+    ],
+    "correct": "C",
+    "explanation": "39 európai ország."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OGC SensorThings API milyen protokollt használ?",
+    "options": [
+      "A. SOAP",
+      "B. REST",
+      "C. FTP",
+      "D. GraphQL"
+    ],
+    "correct": "B",
+    "explanation": "RESTful API valós idejű szenzor-adatokhoz."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora volt a Florence hurrikán NWM-becsült csúcshozama?",
+    "options": [
+      "A. 801 m³/s",
+      "B. 2 500 m³/s",
+      "C. 4 531 m³/s",
+      "D. 7 816 m³/s"
+    ],
+    "correct": "C",
+    "explanation": "4531 m³/s (160 000 cfs) becsült csúcs."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2002-es árvizek melyik folyórendszereket érintették egyszerre?",
+    "options": [
+      "A. Rajna és Rhône",
+      "B. Elba és Duna",
+      "C. Tisza és Dráva",
+      "D. Visztula és Odera"
+    ],
+    "correct": "B",
+    "explanation": "Az Elba és a Duna vízgyűjtőit egyidejűleg sújtották."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM 2,7 millió vízfolyás-szakaszra készít előrejelzést.",
+    "correct": "true",
+    "explanation": "A kontinentális USA 2,7 millió szakaszára."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS determinisztikus előrejelzéseket használ.",
+    "correct": "false",
+    "explanation": "51 tagú ensemble-alapú valószínűségi előrejelzést használ."
+  },
+  {
+    "type": "true_false",
+    "question": "A LISFLOOD a JRC által fejlesztett hidrológiai modell.",
+    "correct": "true",
+    "explanation": "A JRC fejlesztette Európa számára."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS 2018-ban vált operatívvá.",
+    "correct": "false",
+    "explanation": "2011-ben vált operatívvá."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország felszíni vizének mintegy 95%-a határon túlról származik.",
+    "correct": "true",
+    "explanation": "Az alvízi Kárpát-medencei helyzet miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF a Környezetvédelmi Minisztérium alá tartozik.",
+    "correct": "false",
+    "explanation": "A Belügyminisztérium alá."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar árvízi készültségi rendszer négy fokozatból áll.",
+    "correct": "false",
+    "explanation": "Három fokozat: I., II., III."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza vízgyűjtő területe nagyobb, mint egész Magyarország.",
+    "correct": "true",
+    "explanation": "157 000 km² vs. 93 030 km²."
+  },
+  {
+    "type": "true_false",
+    "question": "A VTT hat árapasztó tározót jelöl ki a Tisza mentén.",
+    "correct": "true",
+    "explanation": "1,5 milliárd m³ együttes kapacitással."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2001-es tetőzés Vásárosnaménynél 931 cm volt.",
+    "correct": "false",
+    "explanation": "1031 cm volt, a műszeres rekord."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS 2012-ben vált operatívvá a Copernicus részeként.",
+    "correct": "true",
+    "explanation": "Helyes."
+  },
+  {
+    "type": "true_false",
+    "question": "A HRRR modell 1 km-es felbontással működik.",
+    "correct": "false",
+    "explanation": "3 km-es felbontás."
+  },
+  {
+    "type": "true_false",
+    "question": "A Harvey hurrikán 2017 augusztusában érte Texast.",
+    "correct": "true",
+    "explanation": "2017. augusztus 25-én ért partot."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM ensemble-alapú valószínűségi előrejelzéseket készít.",
+    "correct": "false",
+    "explanation": "Determinisztikus, nem ensemble."
+  },
+  {
+    "type": "true_false",
+    "question": "A WaterML2 JSON-alapú formátum.",
+    "correct": "false",
+    "explanation": "XML-alapú."
+  },
+  {
+    "type": "true_false",
+    "question": "A hydroinfo.hu 15 percenként frissíti a vízszintadatokat.",
+    "correct": "true",
+    "explanation": "Valós idejű, 15 percenkénti frissítés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ICPDR 14 országban koordinálja a dunai árvízkezelést.",
+    "correct": "true",
+    "explanation": "A Duna-medence 14 országa."
+  },
+  {
+    "type": "true_false",
+    "question": "A zöld hullámhosszú LiDAR ~1064 nm-es hullámhosszt használ.",
+    "correct": "false",
+    "explanation": "~532 nm a zöld; 1064 nm a közeli-infravörös."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU Árvízi Irányelve 2007/60/EK számú.",
+    "correct": "true",
+    "explanation": "Helyes szám."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ECMWF 21 tagú ensemble-előrejelzést készít.",
+    "correct": "false",
+    "explanation": "51 tagú."
+  },
+  {
+    "type": "true_false",
+    "question": "A Duna mintegy 2-3 nap alatt ér az osztrák határtól Budapestre.",
+    "correct": "true",
+    "explanation": "Hosszú áthaladási idő a sűrű felvízi hálózat mellett."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2006-os tiszai árvíz kizárólag a Felső-Tiszára korlátozódott.",
+    "correct": "false",
+    "explanation": "Az egész folyórendszert érintette az ukrán határtól a szerbiai torkolatig."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS 0,05 fokos felbontásban működik a v4.0-ban.",
+    "correct": "true",
+    "explanation": "Mintegy 5 km."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország éves csapadékátlaga 600 mm.",
+    "correct": "true",
+    "explanation": "Viszonylag száraz európai mércével."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ADCP kizárólag vízszintet mér.",
+    "correct": "false",
+    "explanation": "Vízsebességet és medermélységet mér egyidejűleg."
+  },
+  {
+    "type": "true_false",
+    "question": "A Clausius-Clapeyron-összefüggés Celsius-fokonként mintegy 7%-os vízgőz-növekedést jelez.",
+    "correct": "true",
+    "explanation": "Mintegy 7%/°C."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM középtávú előrejelzése 15 napra szól.",
+    "correct": "false",
+    "explanation": "10 napra."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS talajnedvesség- és hóvízegyenérték-térképeket is előállít.",
+    "correct": "true",
+    "explanation": "LISFLOOD kimenetek."
+  },
+  {
+    "type": "true_false",
+    "question": "A VTT tározóit az Egyesült Államok finanszírozta.",
+    "correct": "false",
+    "explanation": "Az EU Kohéziós Alap és ERFA részben."
+  },
+  {
+    "type": "true_false",
+    "question": "A SOMA RQ-30 osztrák gyártmányú radar-mérőeszköz.",
+    "correct": "true",
+    "explanation": "Osztrák cég."
+  },
+  {
+    "type": "true_false",
+    "question": "Az USGS mintegy 50 000 mérőállomást üzemeltet.",
+    "correct": "false",
+    "explanation": "Mintegy 10 000."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza esése az Alföldön mintegy 2-5 cm/km.",
+    "correct": "true",
+    "explanation": "Rendkívül alacsony."
+  },
+  {
+    "type": "true_false",
+    "question": "A Florence hurrikán 2018-ban ért partot a karolinai partokon.",
+    "correct": "true",
+    "explanation": "2018 szeptemberében."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS kizárólag európai folyókra ad előrejelzést.",
+    "correct": "false",
+    "explanation": "Globális rendszer, a világ összes nagy folyójára."
+  },
+  {
+    "type": "true_false",
+    "question": "A RAPID Muskingum-módszert alkalmaz az NHDPlus hálózaton.",
+    "correct": "true",
+    "explanation": "Masszívan párhuzamos számítás."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2018-as Llano folyói árvíz egy lassú mozgású hurrikán volt.",
+    "correct": "false",
+    "explanation": "Gyorsan mozgó szárazföldi árhullám egy esőbomba miatt."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2002 augusztusi európai árvizek több mint 20 milliárd EUR kárt okoztak.",
+    "correct": "true",
+    "explanation": "Közép-Európában, több mint 100 halálos áldozat."
+  },
+  {
+    "type": "true_false",
+    "question": "Egy teljes USGS mérőállomás éves üzemeltetése mintegy 25 000 dollár.",
+    "correct": "true",
+    "explanation": "Magas költség, alacsony térbeli sűrűség."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2013-as dunai árvíz 200 éves rekordot állított Budapestnél.",
+    "correct": "true",
+    "explanation": "Budapest: 200 éves, Passau: 500 éves."
+  },
+  {
+    "type": "true_false",
+    "question": "A Waze alkalmazás prediktív árvízi figyelmeztetéseket biztosít.",
+    "correct": "false",
+    "explanation": "Reaktív: felhasználók jelentik, nem előrejelzés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF mintegy 200 mérőállomást üzemeltet a nagy folyókon.",
+    "correct": "true",
+    "explanation": "Valós idejű adatátvitellel."
+  },
+  {
+    "type": "true_false",
+    "question": "A Noah-MP felszíni modell 5 km-es rácson működik.",
+    "correct": "false",
+    "explanation": "1 km-es rácson a kontinentális USA-ban."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS az EU-Hydro és Copernicus-adatokból definiálja vízhálózatát.",
+    "correct": "true",
+    "explanation": "Copernicus EU-Hydro adatkészlet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Harvey hurrikán előrejelzése helyesen azonosította Houstont mint a leginkább érintett területet.",
+    "correct": "true",
+    "explanation": "A 2. régiót tízszeres hatással jelezte."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza gyorsabban reagál a felvízi csapadékra, mint a Duna.",
+    "correct": "true",
+    "explanation": "24-48 óra vs. több nap."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS konkrét, megnevezett vízfolyás-szakaszokra ad előrejelzést, mint az NWM.",
+    "correct": "false",
+    "explanation": "Rácsozott térképeket ad, nem nevesített szakaszokra."
+  },
+  {
+    "type": "true_false",
+    "question": "A Manning-egyenlet egyenletes áramlási feltételeket feltételez.",
+    "correct": "true",
+    "explanation": "A HAND-megközelítés is erre épül."
+  },
+  {
+    "type": "true_false",
+    "question": "A Sentinel-1 SAR felhőzeten keresztül is érzékeli az árvíz kiterjedését.",
+    "correct": "true",
+    "explanation": "Radar áthatoló képesség."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF a Dunára 3-5 napra megbízható előrejelzéseket készít.",
+    "correct": "true",
+    "explanation": "Sűrű felvízi hálózat, hosszú áthaladási idő."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország részt vesz a Duna Védelméért Nemzetközi Bizottságban (ICPDR).",
+    "correct": "true",
+    "explanation": "14 ország egyike."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS-t a NOAA üzemelteti.",
+    "correct": "false",
+    "explanation": "ECMWF és JRC (Copernicus)."
+  },
+  {
+    "type": "true_false",
+    "question": "A GRACE/GRACE-FO napi időléptékben monitorozza a víztárolást.",
+    "correct": "false",
+    "explanation": "Havi időléptékben."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Austin Flood Alert Network a 3. szintű megfigyelési architektúrába tartozik.",
+    "correct": "true",
+    "explanation": "Alacsony költségű, megfigyelés-alapú."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM rövid távú előrejelzése óránként frissül.",
+    "correct": "true",
+    "explanation": "Óránkénti frissítés."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2001-es felső-tiszai árvíznél mintegy 3500 embert evakuáltak.",
+    "correct": "true",
+    "explanation": "Mintegy 3500 ember."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS hóvízegyenérték-térképeket is előállít Európa szintjén.",
+    "correct": "true",
+    "explanation": "LISFLOOD kimenet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza-szabályozás mintegy 450 km-rel rövidítette meg a folyót.",
+    "correct": "true",
+    "explanation": "Átvágásokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "A Mansfield-gáton 2018-ban négy zsilipet nyitottak meg.",
+    "correct": "true",
+    "explanation": "801 m³/s vízhozamot engedve az alsó Coloradóba."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS valós idejű adatai nyilvánosan elérhetők bárki számára.",
+    "correct": "false",
+    "explanation": "Csak partner szolgálatoknak; archívumok nyilvánosak."
+  },
+  {
+    "type": "true_false",
+    "question": "A Pin to Flood Map alkalmazás közösségi forrásból származó validációs adatokat teremt.",
+    "correct": "true",
+    "explanation": "GPS-koordináták rögzítése bárki által."
+  },
+  {
+    "type": "true_false",
+    "question": "A Magyar Közút valós idejű útlezárási adatbázist tart fenn árvízi adatokkal.",
+    "correct": "true",
+    "explanation": "Tartalmazza az árvíz miatti lezárásokat."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS archivált előrejelzési adatai a Copernicus Climate Data Store-on elérhetők.",
+    "correct": "true",
+    "explanation": "Kutatási célra nyilvánosan."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2001-es tiszai árvíz kárai meghaladták a 120 millió EUR-t.",
+    "correct": "true",
+    "explanation": "Jelentős kár."
+  },
+  {
+    "type": "true_false",
+    "question": "Texas árvízvédelmi töltéseinek hossza meghaladja a 3000 km-t.",
+    "correct": "false",
+    "explanation": "Magyarország rendelkezik közel 3000 km töltéssel."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OMSZ biztosítja a csapadék-intenzitás görbéket Magyarországon.",
+    "correct": "true",
+    "explanation": "A mérnöki tervezéshez szükséges adatok."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS szezonális hidrológiai kilátásokat is készít.",
+    "correct": "true",
+    "explanation": "4 hónapos kilátás az ECMWF szezonális előrejelzéséből."
+  },
+  {
+    "type": "true_false",
+    "question": "A Duna visszaduzzasztása a Tisza vízszintjét a torkolattól több száz kilométerre is befolyásolhatja.",
+    "correct": "true",
+    "explanation": "A lapos szakaszon messzire hat."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2013-as EFAS árvízi értesítések csak egy nappal a tetőzés előtt érkeztek.",
+    "correct": "false",
+    "explanation": "Több mint egy héttel korábban, május 28-án."
+  },
+  {
+    "type": "true_false",
+    "question": "Új-Zéland a WaterML2 szabványt használja vízadatai integrálásához.",
+    "correct": "true",
+    "explanation": "16+1 szervezet adatait integrálta."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS vízhálózata a MERIT DEM-ből is származik.",
+    "correct": "true",
+    "explanation": "HydroSHEDS és MERIT DEM."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF saját ensemble-előrejelzéseket készít.",
+    "correct": "false",
+    "explanation": "Az OVF determinisztikus, az EFAS-tól kap ensemble-adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "Az INSPIRE-irányelv elősegítette a hidrológiai adatformátumok szabványosítását.",
+    "correct": "true",
+    "explanation": "Szabványosított hozzáférés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM adatai teljes mértékben nyilvánosan elérhetők a NOAA Water portálon.",
+    "correct": "true",
+    "explanation": "Teljes nyilvános hozzáférés."
+  },
+  {
+    "type": "true_false",
+    "question": "Távirányítós hajók ADCP-vel árvízi körülmények között is mérhetnek.",
+    "correct": "true",
+    "explanation": "Veszélyes helyzetben is biztosítanak adatot."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2022-es pakisztáni katasztrofális árvíz humanitárius válaszát a GloFAS támogatta.",
+    "correct": "true",
+    "explanation": "Több napos előkészületi idő."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-megközelítés lehetővé teszi az árvíztérképek gyors újragenerálását.",
+    "correct": "true",
+    "explanation": "Automatizált, skálázható."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS és az NWM azonos architektúrát használ.",
+    "correct": "false",
+    "explanation": "Eltérő: ensemble vs. determinisztikus, rács vs. vektor."
+  },
+  {
+    "type": "true_false",
+    "question": "A Harvey hurrikán alatt a csúcsműveleti kiadások óránkénti üteme meghaladta a millió dollárt.",
+    "correct": "true",
+    "explanation": "Hatalmas költségek."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza Bodrog mellékfolyója Borsod-Abaúj-Zemplén megyében torkollik a Tiszába.",
+    "correct": "true",
+    "explanation": "BAZ megye területén."
+  },
+  {
+    "type": "true_false",
+    "question": "A LISFLOOD háromrétegű talajmodellt tartalmaz.",
+    "correct": "true",
+    "explanation": "A felszíni modell része."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NHDPlus 2,7 millió vízfolyás-szakaszból áll az USA-ban.",
+    "correct": "true",
+    "explanation": "Az NWM erre épül."
+  },
+  {
+    "type": "true_false",
+    "question": "A WaterML2-t a WMO 2012-ben fogadta el.",
+    "correct": "false",
+    "explanation": "2016-ban a WMO; 2012-ben az OGC."
+  },
+  {
+    "type": "true_false",
+    "question": "A 2001-es tiszai árvíz mintegy 1070 km² mezőgazdasági területet öntött el.",
+    "correct": "true",
+    "explanation": "Jelentős mezőgazdasági kár."
+  },
+  {
+    "type": "true_false",
+    "question": "A COSMO rövid távú modellt a DWD fejlesztette.",
+    "correct": "true",
+    "explanation": "Német Meteorológiai Szolgálat."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS helyi mérőállomás-adatok nélkül is képes előrejelzésre.",
+    "correct": "true",
+    "explanation": "Globális adatkészletekre épül."
+  },
+  {
+    "type": "true_false",
+    "question": "A VTT tározóit az Európai Unió társfinanszírozta.",
+    "correct": "true",
+    "explanation": "Kohéziós Alap és ERFA."
+  },
+  {
+    "type": "true_false",
+    "question": "A Harvey előrejelzés Corpus Christit jelölte a fő hatási területnek.",
+    "correct": "false",
+    "explanation": "Houston (2. régió) volt a fő terület 238 000 címponttal."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS mintegy 1500 jelentési pontot használ Európában.",
+    "correct": "true",
+    "explanation": "Kulcsfontosságú folyószakaszok."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM a RAPID-et használja meder-hullámtranszformációhoz.",
+    "correct": "true",
+    "explanation": "Muskingum-módszer az NHDPlus hálózaton."
+  },
+  {
+    "type": "true_false",
+    "question": "A HRRR időjárási modell óránként frissül.",
+    "correct": "true",
+    "explanation": "3 km felbontás, óránkénti frissítés."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS villámárvíz-indikátora a középtávú előrejelzés része.",
+    "correct": "false",
+    "explanation": "Külön termék, napon belüli csapadékból."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM az NHDPlus vízhálózati keretrendszerre épül.",
+    "correct": "true",
+    "explanation": "2,7 millió NHDPlus szakasz."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS 39 európai országot fed le.",
+    "correct": "true",
+    "explanation": "Szélesebb, mint az EU-27."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS a HWSD talajadatbázist használja.",
+    "correct": "true",
+    "explanation": "Harmonized World Soil Database."
+  },
+  {
+    "type": "true_false",
+    "question": "A Noah-MP négyrétegű talajmodellt tartalmaz.",
+    "correct": "true",
+    "explanation": "Négy talajréteg szimulálása."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS a CORINE felszínborítottságot használja.",
+    "correct": "true",
+    "explanation": "Copernicus CORINE."
+  },
+  {
+    "type": "true_false",
+    "question": "Az India-WRIS nemzeti vízadat-portált biztosít.",
+    "correct": "true",
+    "explanation": "India Water Resources Information System."
+  },
+  {
+    "type": "true_false",
+    "question": "A GloFAS v4.0 0,1 fokos felbontásban működik.",
+    "correct": "false",
+    "explanation": "0,05 fokos (javított a korábbi 0,1-ről)."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS a HRRR időjárási modellt használja.",
+    "correct": "false",
+    "explanation": "ECMWF ensemble-t, nem HRRR-t."
+  },
+  {
+    "type": "true_false",
+    "question": "Az NWM-et a NOAA National Water Center üzemelteti.",
+    "correct": "true",
+    "explanation": "Helyes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM _____ millió vízfolyás-szakaszra készít előrejelzést.",
+    "correct": "2,7",
+    "explanation": "2,7 millió szakasz a kontinentális USA-ban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM felszíni modellje a _____ nevet viseli.",
+    "correct": "Noah-MP",
+    "explanation": "Noah Multi-Physics."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM meder-hullámtranszformációs modellje a _____.",
+    "correct": "RAPID",
+    "explanation": "Routing Application for Parallel computatIon of Discharge."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HRRR időjárási modell _____ km-es felbontással működik.",
+    "correct": "3",
+    "explanation": "3 km-es horizontális felbontás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Texasi Árvízi Válaszrendszer második lépése a _____.",
+    "correct": "Mélység",
+    "explanation": "Vízhozam → Mélység → Elöntés → Hatás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Harvey hurrikán _____ augusztusában ért partot.",
+    "correct": "2017",
+    "explanation": "2017. augusztus 25."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Houston (2. régió) előrejelzett veszélyeztetett címpontjainak száma: _____.",
+    "correct": "238 000",
+    "explanation": "238 000 címpont."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS _____ -ben vált operatívvá.",
+    "correct": "2012",
+    "explanation": "A Copernicus VK Szolgálat részeként."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ECMWF naponta kétszer _____ tagú ensemble-előrejelzést készít.",
+    "correct": "51",
+    "explanation": "51 tagú ensemble."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS a _____ nevű hidrológiai modellt használja.",
+    "correct": "LISFLOOD",
+    "explanation": "JRC által fejlesztett."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS _____ km-es felbontásban működik Európára.",
+    "correct": "5",
+    "explanation": "5 km-es rács."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GloFAS _____ -ben vált operatívvá.",
+    "correct": "2011",
+    "explanation": "2011-ben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GloFAS v4.0 _____ fokos felbontásban működik.",
+    "correct": "0,05",
+    "explanation": "Mintegy 5 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország felszíni vizének _____ %-a származik a határon túlról.",
+    "correct": "95",
+    "explanation": "Alvízi helyzet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország kijelölt ártere mintegy _____ km².",
+    "correct": "21 000",
+    "explanation": "Az ország 23%-a."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza vízgyűjtő területe mintegy _____ km².",
+    "correct": "157 000",
+    "explanation": "Nagyobb, mint Magyarország."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza esése az Alföldön mintegy _____ cm/km.",
+    "correct": "2-5",
+    "explanation": "Rendkívül alacsony."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF _____ területi vízügyi igazgatóságot felügyel.",
+    "correct": "tizenkét",
+    "explanation": "12 igazgatóság."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar árvízi készültségi rendszer _____ fokozatból áll.",
+    "correct": "három",
+    "explanation": "I., II., III."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hydroinfo.hu _____ percenként frissíti a valós idejű vízszintadatokat.",
+    "correct": "15",
+    "explanation": "15 percenkénti frissítés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2001-es tetőzés Vásárosnaménynél _____ cm volt.",
+    "correct": "1031",
+    "explanation": "A műszeres rekord."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A VTT _____ árapasztó tározót jelöl ki a Közép-Tisza mentén.",
+    "correct": "hat",
+    "explanation": "Hat nagy tározó."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A VTT tározóinak együttes kapacitása mintegy _____ milliárd m³.",
+    "correct": "1,5",
+    "explanation": "1,5 milliárd m³."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Duna áthaladási ideje az osztrák határtól Budapestig mintegy _____ nap.",
+    "correct": "2-3",
+    "explanation": "2-3 nap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EU Árvízi Irányelvének száma _____.",
+    "correct": "2007/60/EK",
+    "explanation": "Az Árvízi Irányelv."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Texasban _____ híd ível át vízfolyás-szakaszok felett.",
+    "correct": "27 000",
+    "explanation": "Potenciális szenzorplatformok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy teljes USGS mérőállomás évi mintegy _____ dollárba kerül.",
+    "correct": "25 000",
+    "explanation": "Magas üzemeltetési költség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Egyesült Államokban mintegy _____ USGS mérőállomás működik.",
+    "correct": "10 000",
+    "explanation": "A világ legnagyobb hálózata."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF mintegy _____ mérőállomást üzemeltet.",
+    "correct": "200",
+    "explanation": "A nagy folyókon és mellékfolyókon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WaterML2 szabványt az OGC _____ -ben fogadta el.",
+    "correct": "2012",
+    "explanation": "2012-ben az OGC, 2016-ban a WMO."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ valósította meg a legteljesebb Víz Internete koncepciót.",
+    "correct": "Új-Zéland",
+    "explanation": "16+1 szervezet integrálása."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM rövid távú előrejelzése _____ órára szól.",
+    "correct": "18",
+    "explanation": "18 órás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM középtávú előrejelzése _____ napra szól.",
+    "correct": "10",
+    "explanation": "10 napos."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS középtávú előrejelzése legfeljebb _____ napra szól.",
+    "correct": "15",
+    "explanation": "15 napos."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GloFAS maximálisan _____ napra előre készít előrejelzést.",
+    "correct": "30",
+    "explanation": "30 napos horizont."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Mansfield-gát küszöbe _____ m tengerszint feletti magasságon van.",
+    "correct": "217,6",
+    "explanation": "714 láb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Llano folyói árvíz csúcsvízhozama Llanónál _____ m³/s volt.",
+    "correct": "7816",
+    "explanation": "276 000 cfs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Harvey-előrejelzés _____ órával a csúcselöntés előtt állt rendelkezésre.",
+    "correct": "36",
+    "explanation": "36 óra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ portál a magyar operatív árvíz-előrejelző rendszer központja.",
+    "correct": "hydroinfo.hu",
+    "explanation": "Az OVF üzemelteti."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2002 augusztusi európai árvizek _____+ milliárd EUR kárt okoztak.",
+    "correct": "20",
+    "explanation": "Több mint 20 milliárd EUR."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS küszöbértékei a _____, 5 és 20 éves visszatérési időknek felelnek meg.",
+    "correct": "2",
+    "explanation": "2 éves (magas), 5 éves (súlyos), 20 éves (szélsőséges)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS mintegy _____ kulcsfontosságú jelentési pontra ad előrejelzést.",
+    "correct": "1500",
+    "explanation": "Mintegy 1500 folyószakasz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2001-es tiszai árvíz mintegy _____ km² mezőgazdasági területet öntött el.",
+    "correct": "1070",
+    "explanation": "Mintegy 1070 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2006-os tiszai árvíz védekezésében több mint _____ ember vett részt.",
+    "correct": "30 000",
+    "explanation": "Katonák, tűzoltók, önkéntesek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Florence hurrikán _____ szeptemberében ért partot.",
+    "correct": "2018",
+    "explanation": "A karolinai partokon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Clausius-Clapeyron-összefüggés szerint fokonként mintegy _____%-kal nő a vízgőz.",
+    "correct": "7",
+    "explanation": "Mintegy 7%/°C."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország éves csapadékátlaga _____ mm.",
+    "correct": "600",
+    "explanation": "600 mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-1 _____ technológiával érzékeli az árvíz kiterjedését.",
+    "correct": "SAR",
+    "explanation": "Szintetikus apertúrájú radar."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM/IMERG _____ km-es felbontásban biztosít csapadékadatokat.",
+    "correct": "10",
+    "explanation": "10 km globálisan."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ gravitációs műholdak monitorozzák a szárazföldi víztárolást.",
+    "correct": "GRACE/GRACE-FO",
+    "explanation": "Havi időléptékben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2013-as árvíz _____ éves rekordot állított Passaunál.",
+    "correct": "500",
+    "explanation": "1501 óta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A JRC folyami árvízveszélytérképei _____ m-es felbontásúak.",
+    "correct": "100",
+    "explanation": "Páneurópai lefedettség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza-szabályozás mintegy _____ km-rel rövidítette meg a folyót.",
+    "correct": "450",
+    "explanation": "Átvágásokkal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HRES (ECMWF det.) felbontása mintegy _____ km.",
+    "correct": "9",
+    "explanation": "Mintegy 9 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hídra telepített radar szenzor éves költsége mintegy _____ USD.",
+    "correct": "5000",
+    "explanation": "Közepes költség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LISFLOOD _____ hullámtranszformációs közelítést alkalmaz.",
+    "correct": "kinematikus hullám",
+    "explanation": "Kinematikus hullám a rácson."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ICPDR a Duna-medence _____ országában koordinálja az árvízkezelést.",
+    "correct": "14",
+    "explanation": "14 ország."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF a _____ alá tartozik.",
+    "correct": "Belügyminisztérium",
+    "explanation": "A Belügyminisztérium."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ Terv Továbbfejlesztése hat tározót jelöl ki.",
+    "correct": "Vásárhelyi",
+    "explanation": "VTT."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvíz-előrejelzés 'utolsó _____' problémája a célba juttatás nehézsége.",
+    "correct": "mérföld",
+    "explanation": "A modellkimenet és a figyelmeztetés közötti szakadék."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A data.vizugy.hu portál _____ júliusa óta nyilvánosan elérhető.",
+    "correct": "2024",
+    "explanation": "2024 júliusa óta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS szezonális kilátásai _____ hónapra terjednek.",
+    "correct": "négy",
+    "explanation": "4 hónapos."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Harvey hurrikán alatt a SOC több mint _____ napon át működött.",
+    "correct": "10",
+    "explanation": "Teljes kapacitással."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Lake Travis _____ m-rel emelkedett két nap alatt 2018-ban.",
+    "correct": "10,4",
+    "explanation": "34 láb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SOMA RQ-30 két _____ nyalábot használ méréshez.",
+    "correct": "radar",
+    "explanation": "Függőleges és szögben álló."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Atlas 14 texasi frissítése a 100 éves csapadékot 305-ről _____ mm-re emelte.",
+    "correct": "381",
+    "explanation": "15 hüvelyk."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ éghajlati adatkészlet biztosítja a Kárpát-régió 1961-2010 alapvonalát.",
+    "correct": "CARPATCLIM",
+    "explanation": "Történelmi éghajlati adatsor."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRDC-t a _____ tartja fenn a WMO égisze alatt.",
+    "correct": "BfG",
+    "explanation": "Német Szövetségi Hidrológiai Intézet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2001-es tiszai árvíz kárai meghaladták a _____ millió EUR-t.",
+    "correct": "120",
+    "explanation": "Jelentős kár."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2001-es árvíznél mintegy _____ embert evakuáltak.",
+    "correct": "3500",
+    "explanation": "Mintegy 3500."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar töltésjárőrök _____ órás műszakokban dolgoznak II-III. fokozatnál.",
+    "correct": "12",
+    "explanation": "Éjjel-nappal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A COSMO rövid távú modellt a _____ fejlesztette.",
+    "correct": "DWD",
+    "explanation": "Német Meteorológiai Szolgálat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GloFAS vízhálózata a _____ és MERIT DEM-ből származik.",
+    "correct": "HydroSHEDS",
+    "explanation": "Globális vízhálózat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Jessica Hollis a _____ megyei seriff-hivatal járőre volt.",
+    "correct": "Travis",
+    "explanation": "35 éves volt."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Mansfield-gáton 2018-ban _____ m³/s vízhozamot engedtek az alsó Coloradóba.",
+    "correct": "801",
+    "explanation": "28 300 cfs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Llanónál a vízmélység _____ m-t ért el a 2018-as árvíz során.",
+    "correct": "12,2",
+    "explanation": "40 láb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Árvíz utáni felmérésekhez Magyarországon Copernicus _____ SAR-képeket használnak.",
+    "correct": "Sentinel-1",
+    "explanation": "Felhőn át is működő radar."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LISFLOOD _____ rétegű talajmodellel rendelkezik.",
+    "correct": "három",
+    "explanation": "Háromrétegű."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NHDPlus _____ millió vízfolyás-szakaszt tartalmaz.",
+    "correct": "2,7",
+    "explanation": "Az USA vízhálózata."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WaterML2-t a WMO _____ -ben fogadta el.",
+    "correct": "2016",
+    "explanation": "Nemzetközi szabvány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OVF árvíztérképei a _____ portálon érhetők el.",
+    "correct": "geoportal.vizugy.hu",
+    "explanation": "Az OVF geoportálja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízkockázat-kezelési tervek a _____ portálon érhetők el.",
+    "correct": "vizeink.hu",
+    "explanation": "Tervek és dokumentumok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM korábbi rendszere mintegy _____ mért helyszínre készített előrejelzést.",
+    "correct": "4000",
+    "explanation": "Mintegy 4 000 állomás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Harvey hurrikán alatt az összes országos Városi _____-mentő Csapatot Texasba telepítették.",
+    "correct": "Kutató",
+    "explanation": "Városi Kutató-mentő Csapatok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar árvízvédelmi töltések hossza közel _____ km.",
+    "correct": "3000",
+    "explanation": "Közel 3000 km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS villámárvíz-indikátorai a _____ csapadék-előrejelzésekből származnak.",
+    "correct": "napon belüli",
+    "explanation": "Rövid időskálájú csapadék."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS-t az _____ és a JRC üzemelteti közösen.",
+    "correct": "ECMWF",
+    "explanation": "Központi futtatás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Harvey hurrikán alatt _____ Nemzeti Gárdistát mozgósítottak.",
+    "correct": "16 000",
+    "explanation": "Hatalmas méretű válasz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Beaumont/Port Arthur felett _____ helikopter működött egyidejűleg.",
+    "correct": "85",
+    "explanation": "Példátlan légi mentési művelet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az _____ ciklon 2019-ben Mozambikot sújtotta, ahol a GloFAS segített.",
+    "correct": "Idai",
+    "explanation": "Humanitárius válasz támogatása."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM a _____ vízhálózati keretrendszerre épül.",
+    "correct": "NHDPlus",
+    "explanation": "2,7 millió szakasz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS _____ európai országot fed le.",
+    "correct": "39",
+    "explanation": "Szélesebb, mint az EU-27."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GloFAS a _____ talajadatbázist használja.",
+    "correct": "HWSD",
+    "explanation": "Harmonized World Soil Database."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Noah-MP _____ rétegű talajmodellt tartalmaz.",
+    "correct": "négy",
+    "explanation": "Négyrétegű talajmodell."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS a _____ felszínborítottságot használja.",
+    "correct": "CORINE",
+    "explanation": "Copernicus CORINE."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Florence csúcshozam-becslése _____ m³/s volt.",
+    "correct": "4531",
+    "explanation": "160 000 cfs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NWM-et a NOAA _____ üzemelteti.",
+    "correct": "Nemzeti Vízközpont",
+    "explanation": "National Water Center."
+  },
+  {
+    "type": "fill_blank",
+    "question": "India árvíz-előrejelzését a _____ üzemelteti.",
+    "correct": "CWC",
+    "explanation": "Central Water Commission."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az OGC _____ API szenzor-adatokat szolgáltat.",
+    "correct": "SensorThings",
+    "explanation": "RESTful protokoll."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak az EFAS ensemble-alapú megközelítésének az NWM determinisztikus módszerével szemben?",
+    "explanation": "Valószínűségi előrejelzés, explicit bizonytalansági mérték (mind 51 tag árvizet jelez = magas konfidencia; csak néhány = alacsony, de nem nulla kockázat). Kockázatalapú döntéshozatalhoz hasznosabb."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Texasi Árvízi Válaszrendszer négy lépéses feldolgozási láncát!",
+    "explanation": "1. Vízhozam (NWM-előrejelzés), 2. Mélység (HAND-alapú vízhozamgörbék), 3. Elöntés (HAND-raszterben elöntött cellák), 4. Hatás (épületalaprajzok és népességi adatok fedvényezése). A 2-4. lépés előre kiszámítható könyvtárként."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálta a Harvey hurrikán a Texasi Árvízi Válaszrendszert?",
+    "explanation": "Az előrejelzés 36 órával korábban helyesen azonosította Houston (2. régió) mint tízszeresen érintett területet. Az 5 legsúlyosabb előrejelzett megye megfelelt a tényleges károknak. Fő eltérés: Beaumont-Port Arthur második özönvize."
+  },
+  {
+    "type": "essay",
+    "question": "Miért különösen sérülékeny Magyarország az árvizekkel szemben annak ellenére, hogy relatíve száraz ország?",
+    "explanation": "Kárpát-medence mélyedésében fekszik. 95% felszíni víz határon túlról. 23% ártéri terület. Töltésfüggőség a 19. század óta. A Duna és Tisza hatalmas vízgyűjtőinek lefolyását kapja."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a magyar háromfokozatú árvízi készültségi rendszert!",
+    "explanation": "I. fokozat: készültség, monitorozás, töltésvizsgálat. II. fokozat: árvízveszély, éjjel-nappali töltésjárőrözés 12 órás műszakokban. III. fokozat: rendkívüli veszély, katonai és civil mozgósítás, lehetséges evakuálás és árapasztó tározók aktiválása."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tényezők teszik a Tiszát Magyarország legveszélyesebb folyójává?",
+    "explanation": "1. Gyors reakció (24-48 óra), 2. Hatalmas vízgyűjtő (157 000 km²), 3. Lapos esés (2-5 cm/km, hetekig tartó magas vízszint), 4. Egyidejű mellékfolyói csúcsok (Bodrog, Sajó, Körösök, Maros)."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a VTT (Vásárhelyi Terv Továbbfejlesztése) koncepcióját és céljait!",
+    "explanation": "Filozófiai váltás: puszta töltésvédelemtől irányított árvíztározás felé. Hat tározó, 1,5 milliárd m³ kapacitás. Szélsőséges árvizeknél irányított megnyitás, alvízi csúcscsökkentés. EU társfinanszírozás. Kettős hasznosítás: árvizek között mezőgazdaság/természetvédelem."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik az EFAS és a magyar OVF közötti együttműködés?",
+    "explanation": "EFAS: ensemble valószínűségi, határokon átnyúló felvízi lefedettség (Ukrajna, Románia, Szlovákia). OVF: helyi részletek, történelmi szakértelem, figyelmeztetések kiadása. Kiegészítő, nem versengő. 2013-as dunai árvíznél az EFAS napokkal korábban figyelmeztetett."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet tölt be a GloFAS a fejlődő országok árvízkezelésében?",
+    "explanation": "Sok régióban az egyetlen kvantitatív előrejelzési forrás. Globális adatkészletekre épül (ECMWF, HWSD, ESA WorldCover, MERIT DEM), helyi mérőállomás nélkül is működik. Idai ciklon (2019), bangladesi monszun (2020), pakisztáni árvíz (2022) támogatása."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a WaterML2 és miért fontos a vízadatok megosztásához?",
+    "explanation": "OGC által elfogadott (2012), WMO által elfogadott (2016) XML-alapú szabvány vízészlelési idősorok kódolásához. Metaadatokkal (állomás, módszer, mértékegység). A Víz Internete koncepció technikai alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat az éghajlatváltozás Magyarország árvízkockázatára?",
+    "explanation": "Clausius-Clapeyron: 7%/°C intenzívebb csapadék. Tisza: intenzívebb kárpáti csapadékesemények, változékonyabb hóolvadás. CARPATCLIM (1961-2010) és ERA5 alapvonal. EFAS szezonális kilátások a leghosszabb távú képet adják."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a háromszintű árvízmegfigyelési architektúrát!",
+    "explanation": "1. szint: teljes mérőállomás (USGS/OVF, ~25K USD/év, alacsony sűrűség). 2. szint: hídra telepített radar (~5K USD/év, közepes). 3. szint: vízszintszenzor (~500 USD/év, magas sűrűség). A három szint kombinációja biztosítja a pontosságot és lefedettséget."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az árvíz-előrejelzés 'utolsó mérföld' problémája?",
+    "explanation": "A modellkimenet és a veszélyeztetett személy között kommunikáció, értelmezés, cselekvés láncolata. Jessica Hollis (2014) tragédiája: technikai képesség létezett, de nem jutott el a járőrhöz. Magyarországon: gázlók mellékutakon."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan támogatná a valós idejű árvíznavigáció a járművezetőket?",
+    "explanation": "NWM/EFAS előrejelzések + HAND elöntési térképek + navigációs rendszer integrálása. Elárasztott átkelők megkerülése mielőtt odaérne a járművezető. Technikai összetevők léteznek, intézményi integráció hiányzik."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátai vannak az EFAS-nak a 2013-as közép-európai árvizek alapján?",
+    "explanation": "5 km felbontás túl durva kis városi patakok árvizéhez. Ensemble-szóródás széles: összesített nagyságrend jó, helyi részletek (melyik töltés, melyik híd) a nemzeti modellek felbontását igényelték."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS nyilvános hozzáférési politikáját!",
+    "explanation": "NWM: teljesen nyilvános (water.noaa.gov). EFAS: valós idejű adatok csak partner nemzeti szolgálatoknak; archivált előrejelzések nyilvánosan a Copernicus Climate Data Store-on."
+  },
+  {
+    "type": "essay",
+    "question": "Mit jelent a HAND-módszer előre kiszámított könyvtár megközelítése?",
+    "explanation": "Minden NWM-szakaszra előre generált elöntési térképek a lehetséges mélységek tartományára. Valós időben az NWM előrejelzés → legközelebbi mélység kikeresése → megfelelő térkép lekérése ezredmásodpercek alatt."
+  },
+  {
+    "type": "essay",
+    "question": "Miben különbözik a Duna és a Tisza árvízi előrejelzése Magyarországon?",
+    "explanation": "Duna: 3-5 napos megbízható előrejelzés, sűrű osztrák felvízi hálózat, hosszú áthaladási idő. Tisza: rövidebb előkészületi idők, gyorsabb reakció, többnemzeti felvízi terület, tökéletlen határokon átnyúló adatcsere, nagyobb bizonytalanság."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a batimetriai felmérés három fő módszerét!",
+    "explanation": "1. ADCP: hanghullámos sebesség+mélység mozgó hajóról (50 000 pont/felmérés). 2. Zöld LiDAR (~532 nm): repülőgépről víz alatti térképezés, topobati DEM. 3. Távirányítós hajók ADCP-vel árvízi veszélyhelyzetben."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az adatasszimiláció szerepe az árvíz-előrejelzés javításában?",
+    "explanation": "Modellállapotok (talajnedvesség, medertározás) kiigazítása megfigyelt vízszintekkel. Manning-együttható, medergeometria, bemenetek fokozatos finomítása több esemény tapasztalata alapján. Az NWM, EFAS és OVF egyaránt alkalmazza."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változtatják meg a méretezési vihar frissítések az árvízkockázati térképeket?",
+    "explanation": "Atlas 14 Texas: 100 éves csapadék 305→381 mm, 15 évnyi tanulmány érvénytelenítve. A HAND automatizált megközelítés lehetővé teszi az árvíztérképek gyors újragenerálását az évekig tartó kézi elemzés helyett."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen műholdas eszközök támogatják az árvíz-előrejelzést és -megfigyelést?",
+    "explanation": "Sentinel-1 SAR (felhőn át árvíztérképezés), GPM/IMERG (10 km csapadék, közel valós idejű), GRACE/GRACE-FO (havi víztárolás, előzetes nedvesség). Adatszegény régiókban különösen fontosak."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az EU Árvízi Irányelvének (2007/60/EK) három fő követelményét!",
+    "explanation": "1. Előzetes árvízkockázat-értékelés. 2. Árvízveszélytérképek és árvízkockázati térképek (nagy, közepes, kis valószínűségű forgatókönyvekre). 3. Árvízkockázat-kezelési tervek, hatévente frissítve."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a magyar töltésjárőrözés és miért pótolhatatlan?",
+    "explanation": "II-III. fokozatnál 12 órás műszakokban éjjel-nappal. Keresik: buzgárokat, csurgást, felszíni eróziót, állatjáratokat. Emberi megfigyelőrendszer, amely olyan meghibásodási módokat ragad meg, amelyeket kizárólag műszeres monitorozás nem észlelne."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a rövid és középtávú előrejelzés között az NWM és EFAS rendszerekben?",
+    "explanation": "NWM rövid: 18 óra, óránkénti (HRRR). NWM közép: 10 nap, 6 óránkénti (GFS). EFAS rövid: 5 nap. EFAS közép: 15 nap, 12 óránkénti. Az EFAS mindkettőhöz ensemble-t használ."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti az EFAS Magyarországot a határokon átnyúló felvízi vízgyűjtők monitorozásában?",
+    "explanation": "Az EFAS lefedi az egész felvízi vízgyűjtőt (Ukrajna, Románia, Szlovákia), meteorológiai modellezéssel áthidalva a korlátozott adatcsere-megállapodásokat. Az ECMWF időjárás-előrejelzése nemzeti határoktól független."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a 2018-as Llano folyói árvíz lefolyását és tanulságait!",
+    "explanation": "Esőbomba Nyugat-Texasban → 24 óra alatt 110 km-en terjedő árhullám → RM 2900 híd elpusztulása Kingslandnél → Lake LBJ → Lake Travis 10,4 m emelkedés → Mansfield-gát 4 zsilip megnyitása, 801 m³/s. Gyors reakciójú árvíz követési képesség tesztelése."
+  },
+  {
+    "type": "essay",
+    "question": "Miért hasznos a HAND-alapú elöntési térképezés az éghajlatváltozás kontextusában?",
+    "explanation": "Automatizált, skálázható, gyors újragenerálás. Frissített, éghajlathoz igazított méretezési viharokkal, aktuális felszínborítási adatokkal órák alatt új térképek készíthetők a kézi hidraulikai elemzés éveivel szemben."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a magyar OVF és a texasi katasztrófavédelmi rendszer árvízi válaszát!",
+    "explanation": "Mindkettő többszintű. Magyarország: OVF → Katasztrófavédelem, töltésjárőrözés, VTT tározók, ICPDR koordináció. Texas: helyi → állami SOC, GIS-alapú helyzetismeret, 16 000 Gárdista, helikopteres mentés."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Víz Internete vízió és miért fontos?",
+    "explanation": "Szabványosított webszolgáltatások (WaterML2, SOS, SensorThings API) föderált hálózata. Interoperábilis vízadatok intézményi és nemzeti határokon átívelve. A technológiák csak annyira hatékonyak, amennyire az őket összekötő adatinfrastruktúra."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen vízminőségi alkalmazásai lehetnek az NWM/EFAS infrastruktúrájának a jövőben?",
+    "explanation": "HAND medergeometria (tartózkodási idő, szállítási kapacitás), NHDPlus topológia (szennyeződés-terjedés alvízi irányba), NWM vízhozam-szimuláció (áramlási feltételek). JRC aktívan kutatja a hidrológiai és vízminőségi modellek integrálását."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan demonstrálta a Florence hurrikán az NWM nemzeti képességét?",
+    "explanation": "Ugyanaz az architektúra működött az atlanti parti síkságon, mint a texasi Hill Country-ban. Az NHDPlus keretrendszer kontinentális szintű konzisztenciát biztosít. A vízhozam-anomália térképek napokkal korábban azonosították a szélsőséges területeket."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Tiszát fenyegető egyidejű mellékfolyói csúcsok problémáját!",
+    "explanation": "A Bodrog, Sajó, Zagyva, Körösök és Maros árhullámai egyidejűleg a Tisza fő medréhez érkezhetnek. A 2001-es árvizet a Tisza és Szamos egyidejű magas vízállása súlyosbította. Az egyes mellékfolyói árvizeket meghaladó összetett csúcsok."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a valószínűségi árvíz-előrejelzés a kockázatalapú döntéshozatalhoz?",
+    "explanation": "Nem csupán 'X m lesz a szint', hanem '70% valószínűséggel meghaladja X m-t Y napon belül'. Őszintébb a bizonytalanságot illetően. Hasznosabb az erőforrás-elosztáshoz és kockázatarányos intézkedésekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segítenek a hídra telepített szenzorok a validációs rés csökkentésében?",
+    "explanation": "Az NWM 2,7 millió szakaszra ad előrejelzést, de csak 10 000-nél van USGS megfigyelés → 2 690 000 validálatlan. A hídra telepített olcsóbb szenzorok (SOMA RQ-30, ~5K USD/év) növelik a sűrűséget és javítják a modellparamétereket."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vonatkoztatási szint inkonzisztencia problémája az árvízmodellezésben?",
+    "explanation": "USGS tetszőleges helyi vonatkoztatási szint. HAND a legközelebbi vízelvezetési pontra. Összehangolás igényli a mérce referenciáját és a mederfenék magasságát, amelyeket nem mindig dokumentálnak. Régi kutak esetében terepszinti magasság is bizonytalan."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GloFAS felbontási rés problémáját!",
+    "explanation": "5 km-es ráccsal nagy folyami árvizeket megragadja, de nem a kis folyókat, városi patakokat vagy lokalizált villámárvizeket. Bangladesben egy rácscella több km²-nyi sűrűn lakott árteret fed, elveszítve a települési részleteket."
+  },
+  {
+    "type": "essay",
+    "question": "Miben különbözik a közösségi forrásból származó és a prediktív árvízi információ?",
+    "explanation": "Waze: reaktív (valakinek találkoznia kell az árvízzel és jelentenie). Prediktív: az NWM/EFAS előrejelezi az elöntést. A kettő integrálása navigációs rendszerekbe elvileg kiküszöbölhetné a megelőzhető közlekedési haláleseteket."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen nehézségek merülnek fel az árvíz-előrejelzés lakossági kommunikálásában?",
+    "explanation": "Az utolsó mérföld szakadék: modell → előrejelzés → figyelmeztetés → értelmezés → cselekvés. El kell érni az időseket, fogyatékkal élőket, internet nélkülieket. A valószínűségi előrejelzések értelmezése képzést igényel."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működnek a VTT árapasztó tározói szélsőséges árvíz idején?",
+    "explanation": "A kezelők szándékosan megnyitják a töltésrendszer meghatározott szakaszait. A víz a kijelölt tározóterületre áramlik, csökkentve az alvízi csúcsot. Valós idejű döntés szükséges: túl korai = kapacitáspazarlás, túl késői = alvízi túlcsordulás."
+  },
+  {
+    "type": "essay",
+    "question": "A Copernicus Vészhelyzet-kezelési Szolgálat milyen szerepet tölt be az árvízkezelésben?",
+    "explanation": "Sentinel-1 SAR gyors térképezés (felhőn át), igény szerinti árvíztérképek aktiválás után órákon belül, népességi kitettségi becslések JRC GHSL és Eurostat adatokkal. Kritikus esős időjárás alatt."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a determinisztikus és az ensemble árvíz-előrejelzés előnyeit és hátrányait!",
+    "explanation": "Determinisztikus: egyszerűbb, egyetlen előrejelzés, nincs bizonytalansági mérték. Ensemble: számításigényesebb (51-szer futtatva), de valószínűségi információt ad, kockázatalapú döntéshozatalhoz alkalmasabb."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan szolgálja az EU Víz Keretirányelve és az INSPIRE-irányelv a hidrológiai adatok szabványosítását?",
+    "explanation": "Víz Keretirányelv: ökológiai és kémiai állapotértékelés. INSPIRE: szabványosított hozzáférés térbeli környezeti adatokhoz. WaterML2 és SOS szabványok használata. data.vizugy.hu mint magyar válasz."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen tanulságokkal szolgáltak a 21. századi tiszai árvizek (2001, 2006, 2010)?",
+    "explanation": "2001: rekordszintek Felső-Tiszán, mellékfolyói előrejelzés gyenge. 2006: példátlan időtartam és kiterjedés, emberi kapacitás tesztelése, 30 000+ résztvevő. 2010: Duna és Tisza egyidejű árvize, országos koordináció fontossága."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvíz-előrejelzéstől a figyelmeztetésen át a védekező cselekvésig vezető teljes láncolatot!",
+    "explanation": "Hidrológiai modell → előrejelzés → figyelmeztetés kiadása → kommunikáció (többnyelvű, többcsatornás) → értelmezés (döntéshozók, lakosság) → cselekvés (evakuálás, töltésvédelem). Bármelyik láncszeménél elszakadhat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járulhat hozzá a mesterséges intelligencia az árvíz-előrejelzés jövőbeli javításához?",
+    "explanation": "MI-alapú utófeldolgozás az előrejelzési pontosság javítására. Hatásalapú figyelmeztetések automatizálása. Mind az NWM, mind az EFAS vizsgálja (23. fejezet). A cél: nem 'a folyó emelkedik', hanem 'az ön háza el fog önteni'."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a GloFAS és az EFAS között a felhasználói közösség szempontjából?",
+    "explanation": "EFAS: európai nemzeti szolgálatok, fejlett intézményi infrastruktúra. GloFAS: korlátozott képességű régiók (szubszaharai Afrika, Dél- és Délkelet-Ázsia, Közép-Amerika), ahol az egyetlen elérhető kvantitatív forrás lehet."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan integrálódik Magyarország az európai árvíz-előrejelző és -kezelő rendszerekbe?",
+    "explanation": "EFAS-partner (ensemble-adatok). ICPDR tag (dunai koordináció, 14 ország). EU Árvízi Irányelv megvalósítása. data.vizugy.hu és WaterML2 nemzetközi adatszabványok felé. Egyedülálló pozíció: alvízi ország, hosszú árvízvédelmi hagyomány, erős motiváció az integráció felé."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az NWM architektúrájának fő komponenseit: időjárási bemenet, felszíni modell, vízhálózat és hullámtranszformáció!",
+    "explanation": "HRRR 3 km / GFS 10 nap. Noah-MP 1 km felszíni partíció. NHDPlus 2,7M szakasz. RAPID Muskingum meder-hullámtranszformáció."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerkezeti különbségek vannak az EFAS és az NWM hullámtranszformációs megközelítése között?",
+    "explanation": "NWM: szabálytalan vektor-hálózat (NHDPlus), megnevezett szakaszok, RAPID. EFAS: szabályos 5 km rács, kinematikus hullám, nincs egyedi azonosító."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használják a magyar hatóságok a hydroinfo.hu rendszert árvíz idején?",
+    "explanation": "Valós idejű vízszintek 200 állomáson, 15 perces frissítés. Előrejelzések 98 szakaszra. Készültségi szint. Jégviszonyok. Mobilalkalmazás."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszanak a globális adatkészletek a GloFAS paramétereiben?",
+    "explanation": "HWSD talaj, ESA WorldCover felszín, MERIT DEM topográfia, HydroSHEDS vízhálózat, GRDC kalibráció. Helyi adat nélkül is működik."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a Kárpát-medence földrajza Magyarország árvízvédelmi stratégiáját?",
+    "explanation": "Mélyedés, hegykoszorú, 95% víz kívülről. Lapos terep, nagy árterek. Töltésfüggőség. VTT irányított tározás. ICPDR koordináció."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a határokon átnyúló árvíz-előrejelzés a Tisza vízgyűjtőjén?",
+    "explanation": "Többnemzeti (UA, RO, SK, SRB). Tökéletlen adatcsere. EFAS meteorológiai modellezéssel áthidalja, de helyi részleteket nem ad."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az EFAS operatív termékeit és felhasználásukat!",
+    "explanation": "1. Középtávú (15 nap, küszöb-valószínűség). 2. Villámárvíz (napon belüli, kis vízgyűjtők). 3. Szezonális (4 hónap). 4. Talajnedvesség/hó térképek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változott az árvízkezelés Magyarországon az elmúlt két évszázadban?",
+    "explanation": "19. sz.: Vásárhelyi-szabályozás, 450 km rövidítés, töltésépítés. 20. sz.: töltésmagasítás. 21. sz.: VTT tározás, EFAS, hydroinfo.hu, EU Árvízi Irányelv."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyöket nyújt a HAND könyvtár-megközelítés a valós idejű válaszhoz?",
+    "explanation": "Előre kiszámított térképek minden mélységre. NWM előrejelzés → kikeresés ezredmásodpercek alatt. Kontinentális léptékben skálázható."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan valósul meg a magyar árvízvédelmi rendszer I-III. fokozatú eszkalációja?",
+    "explanation": "I: monitorozás, töltésvizsgálat. II: 12 órás járőrök, buzgár/csurgás keresése. III: honvédség, evakuálás, VTT tározók."
+  },
+  {
+    "type": "essay",
+    "question": "Miben különbözik az NWM és az EFAS a bizonytalanság kezelésében?",
+    "explanation": "NWM: determinisztikus, egyetlen kimenet. EFAS: 51 tag, valószínűségi küszöb-túllépések. Filozófiai eltérés a bizonytalanság kommunikálásában."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat fogalmát és három összetevőjét!",
+    "explanation": "Kockázat = Veszély x Kitettség x Sérülékenység. Veszély: fizikai árvíz. Kitettség: emberek, épületek. Sérülékenység: károsodásra való hajlam."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a GRDC a globális árvíz-előrejelzés kalibrálásában?",
+    "explanation": "Összegyűjti és minőségbiztosítja a világ vízhozamadatait. Kritikus a GloFAS kalibrálásához, ahol terepi adatokra van szükség."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járult hozzá a három tiszai árvíz a VTT koncepcióhoz?",
+    "explanation": "2001: rekordok, töltések határán. 2006: időtartam, emberi kimerülés. 2010: egyidejű dunai árvíz. Mindhárom: puszta töltés nem elég."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlesztéseket jeleznek az NWM és EFAS konvergenciájáról szóló trendek?",
+    "explanation": "NWM ensemble-t épít be. EFAS nagyobb felbontás felé halad. MI utófeldolgozás. Cél: hatásalapú figyelmeztetések."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az Austin Flood Alert System működését és korlátait!",
+    "explanation": "Helyi 3. szintű rendszer, egyedi mérőállomások. Csak megfigyelés, nincs előrejelzés. Nincs NWM-kapcsolat. Csak az Austin területére."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használják a Copernicus-adattermékeket Magyarországon?",
+    "explanation": "EFAS előrejelzések, EU-Hydro, CORINE, Sentinel-1 SAR árvíztérképezés, Eurostat népességi rács, CDS archívumok."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen etikai kérdések merülnek fel az árvíz-előrejelzés kommunikálásában?",
+    "explanation": "Idősek, fogyatékkal élők, internet nélküliek elérése. Valószínűségi vs. determinisztikus. Hamis riasztás kockázata. Többnyelvű kommunikáció."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változtatná meg az árvíz-előrejelzési adatok navigációs integrálása az árvízi biztonságot?",
+    "explanation": "Prediktív útvonalirányítás elöntött átkelők megkerülésével. Technológiák léteznek, intézményi integráció hiányzik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Manning-egyenlet korlátait az árvízi mélység-vízhozam átalakításban!",
+    "explanation": "Egyenletes áramlás feltételezés. Visszaduzzasztás, hidak, összefolyások. Tisza/Duna lapos szakaszain különösen problémás."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen globális perspektívák nyílnak az árvíz-előrejelzés számára a fejlődő világban?",
+    "explanation": "GloFAS egyetlen forrás sok helyen. WMO Villámárvíz rendszer Afrika, DK-Ázsia, Közép-Amerika. Műholdas csapadék (GPM/IMERG) adatszegény régiókban."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a Mansfield-gát a Colorado folyó árvízkezelésében?",
+    "explanation": "Szabadáteresztő küszöb 217,6 m. Zsilipek nyithatók szükség esetén. 2018-ban 4 zsilip, 801 m³/s Austin szívén keresztül. Lake Travis mint tározó."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információt nyújt az EFAS talajnedvesség-térképe az árvízkockázat értékeléséhez?",
+    "explanation": "Mennyire nedves a talaj a csapadékesemény előtt. Nedves talaj növeli az árvízkockázatot (kevesebb beszivárgás). Előzetes feltételek a GRACE-szel kiegészíthetők."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a HAND-módszer az árvízkockázati térképek éghajlati aktualizálásához?",
+    "explanation": "Automatizált, skálázható. Frissített méretezési viharokkal (pl. Atlas 14) órák alatt új térképek. Éghajlattal együtt fejlődő árvíztérképek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az ERA5 reanalízis az árvízkockázat-értékelésben?",
+    "explanation": "Történelmi éghajlati alapvonal a CARPATCLIM-mel együtt. Az EFAS szezonális kilátásokat és éghajlati forgatókönyveket is integrál."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízmérce-hálózatok közös korlátait az árvíz-előrejelzés validálásában!",
+    "explanation": "Pontszerű mérés, de árvizek területeket érintenek. 10 000 USGS / 2,7M NWM = ~270 validálatlan szakasz per állomás. Szélsőséges események ritkán mértek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járulnak hozzá a jégviszonyok a Tisza árvízkockázatához?",
+    "explanation": "Télen jégtorlaszos árvizek lehetségesek. A hydroinfo.hu jégviszonyokat is monitoroz. A jégtorlasz helyi visszaduzzasztást okozhat, ami árvízhez vezet töltésvédett szakaszokon."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet tölt be az OMSZ a magyar árvízkezelési rendszerben?",
+    "explanation": "Csapadék-intenzitás görbék a mérnöki tervezéshez. Időjárás-előrejelzések az OVF számára. Az ECMWF adatok továbbítása az EFAS-on keresztül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti az EFAS ensemble-megközelítése a megelőző intézkedések tervezését?",
+    "explanation": "Ha mind 51 tag árvizet jelez: nagy konfidencia, korai töltésvédelem. Ha 5 tag: alacsony valószínűség, de nem nulla. Kockázatarányos erőforrás-elosztás lehetősége."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a TxDOT Nemzeti Vízmodell Híd Portál működését!",
+    "explanation": "Valós idejű hídállapotok, NWM-előrejelzések integrálva hídhelyzetadatokkal. 27 000 híd / 15 700 szakasz monitorozása. Hidak: veszélyeztetett infrastruktúra és szenzorplatform."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan érvényesül az EU Víz Keretirányelve és az Árvízi Irányelv egymást kiegészítő jellege?",
+    "explanation": "Víz KI: ökológiai/kémiai állapot, felszíni víztest értékelés. Árvízi I: veszély/kockázat térképek, kezelési tervek. Együtt: átfogó vízgazdálkodási keret a tagállamok számára."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az NWM és az EFAS architektúráját az időjárási bemenet, a hidrológiai modell és a hullámtranszformáció szempontjából!",
+    "explanation": "NWM: determinisztikus HRRR 3 km, Noah-MP 1 km, RAPID vektor NHDPlus-on. EFAS: 51 tagú ECMWF ensemble, LISFLOOD 5 km rács, kinematikus hullám. Fő különbségek: determinisztikus vs. valószínűségi, vektor vs. rács, egyetlen előrejelzés vs. 51 tag."
+  }
+]

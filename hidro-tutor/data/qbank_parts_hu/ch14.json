@@ -1,0 +1,2662 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mit jelent a HAND rövidítés?",
+    "options": [
+      "A) Height Above Nearest Drainage",
+      "B) Hydrologic Analysis of Natural Drainage",
+      "C) Horizontal And Normal Distance",
+      "D) Height Above Network Datum"
+    ],
+    "correct": "A",
+    "explanation": "HAND = Height Above Nearest Drainage (legközelebbi vízfolyás feletti magasság)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND fizikai jelentése?",
+    "options": [
+      "A) Az abszolút tengerszint feletti magasság",
+      "B) A cella függőleges távolsága a legközelebbi vízfolyástól a lefolyási útvonal mentén",
+      "C) A lejtés meredeksége",
+      "D) A csapadék mennyisége"
+    ],
+    "correct": "B",
+    "explanation": "A HAND az adott pont és a legközelebbi vízfolyás közötti magasságkülönbség a lefolyási útvonal mentén."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik lefolyásirány-modellt ajánlják a HAND-hoz sima felületekre?",
+    "options": [
+      "A) D8",
+      "B) D-végtelen (D-infinity)",
+      "C) MFD",
+      "D) SFD"
+    ],
+    "correct": "B",
+    "explanation": "A D-végtelen simább HAND-felületet ad, mert arányosan osztja el a lefolyást."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a D8 algoritmus fő korlátja sík terepen?",
+    "options": [
+      "A) Túl lassú",
+      "B) Párhuzamos csíkozási mintázatot hoz létre",
+      "C) Nem működik DDM-eken",
+      "D) Csak 4 szomszédot vizsgál"
+    ],
+    "correct": "B",
+    "explanation": "Sík felületen a D8 csíkozási műtermékeket produkál."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen bemeneti adatokra van szükség a HAND kiszámításához?",
+    "options": [
+      "A) Csak DDM",
+      "B) DDM + vízhálózat + csapadékadatok",
+      "C) Kondicionált DDM + D-végtelen folyásirányok + vízfolyásraszter",
+      "D) Műholdképek + talajtérkép"
+    ],
+    "correct": "C",
+    "explanation": "Három konzisztens bemenet szükséges: feltöltött DDM, folyásirányok, DEM-konzisztens vízfolyásraszter."
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kell a kitöltött DDM-et használni a HAND-számításhoz az eredeti helyett?",
+    "options": [
+      "A) Kisebb fájlméret",
+      "B) Fizikai konzisztencia a folyásirányokkal és monoton akkumuláció",
+      "C) Szebb megjelenés",
+      "D) Gyorsabb számítás"
+    ],
+    "correct": "B",
+    "explanation": "Az eredeti DDM negatív HAND-értékeket és nem fizikai mintázatokat produkálhat."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a vízfolyás-beégetés (stream burning) célja?",
+    "options": [
+      "A) A DDM felbontásának növelése",
+      "B) A vízfolyás nyomvonal konzisztenciájának biztosítása a DDM-mel",
+      "C) A felmérési költségek csökkentése",
+      "D) Az adatmennyiség csökkentése"
+    ],
+    "correct": "B",
+    "explanation": "A beégetés biztosítja, hogy a DDM-ből levezetett vízfolyás a domborzati völgyeket kövesse."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen ArcGIS Pro eszközzel számítják a HAND-ot?",
+    "options": [
+      "A) Slope",
+      "B) Flow Accumulation",
+      "C) Flow Distance",
+      "D) Watershed"
+    ],
+    "correct": "C",
+    "explanation": "A Flow Distance eszköz (Spatial Analyst Hydrology) VERTICAL és DINF beállítással."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a TauDEM DinfDistDown függvénye?",
+    "options": [
+      "A) D8 lefolyás-akkumuláció",
+      "B) D-végtelen vízfolyásig mért függőleges távolság",
+      "C) Mélyedésfeltöltés",
+      "D) Vízgyűjtő-lehatárolás"
+    ],
+    "correct": "B",
+    "explanation": "A DinfDistDown a HAND-ot számítja D-végtelen módszerrel."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a TauDEM HAND-számítás '-m ave v' kapcsolója?",
+    "options": [
+      "A) Átlag függőleges: súlyozott átlag, függőleges távolság",
+      "B) Maximum vízhozam",
+      "C) Minimum esés",
+      "D) Átlag vízszintes"
+    ],
+    "correct": "A",
+    "explanation": "-m ave v = módszer: átlag, típus: függőleges."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a HAND maximális értéke egy vízgyűjtőn belül a teljes reliefhez képest?",
+    "options": [
+      "A) Mindig egyenlő",
+      "B) Mindig nagyobb",
+      "C) Mindig kisebb vagy egyenlő",
+      "D) Nincs kapcsolat"
+    ],
+    "correct": "C",
+    "explanation": "A HAND a helyi esést méri, nem az összesítettet, ezért ≤ teljes relief."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Onion Creek vízgyűjtőn (Texas) mekkora a teljes relief?",
+    "options": [
+      "A) 100 m",
+      "B) 200 m",
+      "C) 400 m",
+      "D) 800 m"
+    ],
+    "correct": "C",
+    "explanation": "113 m-től 513 m-ig: 400 m teljes relief."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Onion Creek vízgyűjtőn mekkora a maximális HAND-érték?",
+    "options": [
+      "A) ~50 m",
+      "B) ~122 m",
+      "C) ~200 m",
+      "D) ~400 m"
+    ],
+    "correct": "B",
+    "explanation": "~122 m: lényegesen kisebb a 400 m-es reliefnél."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza hullámterén Szolnok-Szeged között mekkora a teljes relief?",
+    "options": [
+      "A) ~14 m",
+      "B) ~50 m",
+      "C) ~100 m",
+      "D) ~200 m"
+    ],
+    "correct": "A",
+    "explanation": "76-90 m, mindössze ~14 m relief."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen HAND-értékek jellemzőek a Tisza hullámterére?",
+    "options": [
+      "A) 0-4 m",
+      "B) 10-20 m",
+      "C) 50-100 m",
+      "D) 100-200 m"
+    ],
+    "correct": "A",
+    "explanation": "A hullámtér erőteljesen a 0-4 m tartományba koncentrálódik."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelöl a HAND < 2 m küszöb operatív alkalmazásban?",
+    "options": [
+      "A) Elhanyagolható kockázat",
+      "B) Éves/10 éves árvizeknek kitett terület",
+      "C) Csak 1000 éves árvíznél elöntött",
+      "D) Gerinc területek"
+    ],
+    "correct": "B",
+    "explanation": "HAND < 2 m: éves vagy 10 éves árvizeknek kitett alföldi területek."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelöl a HAND < 5 m küszöb?",
+    "options": [
+      "A) Éves árvíz",
+      "B) 50-100 éves árvíznek kitett (szabályozási hullámtér)",
+      "C) Elhanyagolható kockázat",
+      "D) Csak villámárvíz"
+    ],
+    "correct": "B",
+    "explanation": "HAND < 5 m ≈ 100 éves hullámtér."
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelöl a HAND < 10 m küszöb?",
+    "options": [
+      "A) Éves árvíz",
+      "B) 100 éves árvíz",
+      "C) 500+ éves szélsőséges esemény",
+      "D) Normál vízállás"
+    ],
+    "correct": "C",
+    "explanation": "HAND < 10 m: szélsőséges (500+ éves) eseményeknek kitett terület."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen fizikai mennyiségeket lehet a HAND-raszterből becsülni adott vízmélységre?",
+    "options": [
+      "A) Csak elöntött terület",
+      "B) Elöntött terület, nedvesített kerület, keresztszelvény, hidraulikus sugár",
+      "C) Csak vízhozam",
+      "D) Csak lejtés"
+    ],
+    "correct": "B",
+    "explanation": "A(h), P(h), Ax(h), R(h) mind számíthatók a HAND-raszterből."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND-ból számított hidraulikus tulajdonságok milyen egyenlet bemeneteként szolgálnak?",
+    "options": [
+      "A) Bernoulli-egyenlet",
+      "B) Manning-egyenlet",
+      "C) Darcy-törvény",
+      "D) Navier-Stokes"
+    ],
+    "correct": "B",
+    "explanation": "A Manning-egyenlet a vízmélység-vízhozam összefüggéshez."
+  },
+  {
+    "type": "mcq",
+    "question": "Miért problémás a vektoros vízfolyáshálózat közvetlen raszterizálása HAND-számításhoz?",
+    "options": [
+      "A) Túl lassú",
+      "B) A raszterizált vízfolyás nem feltétlenül esik egybe a DDM legalacsonyabb pontjaival",
+      "C) Nincs elég pont",
+      "D) Csak ArcGIS-ben működik"
+    ],
+    "correct": "B",
+    "explanation": "A térkép-digitalizált vektoros vonalak és a DDM völgyei nem feltétlenül egyeznek."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a megoldás a vízfolyás-DDM inkonzisztencia problémájára?",
+    "options": [
+      "A) Magasabb felbontású DDM",
+      "B) A vízfolyáshálózat DDM-ből történő levezetése forrásfej-pontokkal",
+      "C) A DDM eldobása",
+      "D) Kézi rajzolás"
+    ],
+    "correct": "B",
+    "explanation": "Vektoros forrásfejek + DDM-ből levezetett lefolyás-akkumuláció = konzisztens hálózat."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen módszerrel kezelik a vasúti töltések és gátak okozta DDM-akadályokat?",
+    "options": [
+      "A) A DDM-et teljes egészében feltöltik",
+      "B) Lágy bevágás (soft burn-in): monoton csökkenő magasságok a vízfolyás mentén",
+      "C) Az akadályokat kézzel eltávolítják",
+      "D) Durvább felbontásra váltanak"
+    ],
+    "correct": "B",
+    "explanation": "A lágy bevágás csak a minimálisan szükséges módosítást végzi a lefolyás-folytonosság érdekében."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontású DDM-mel készült az USA kontinentális HAND-adatkészlete?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "C",
+    "explanation": "10 méteres NED."
+  },
+  {
+    "type": "mcq",
+    "question": "Megközelítőleg hány rácscellát dolgozott fel az USA kontinentális HAND-számítás?",
+    "options": [
+      "A) 100 millió",
+      "B) 1 milliárd",
+      "C) ~10 milliárd",
+      "D) 100 milliárd"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 10 milliárd cella."
+  },
+  {
+    "type": "mcq",
+    "question": "A WhiteboxTools melyik függvénye számítja a HAND-ot?",
+    "options": [
+      "A) FlowAccumulation",
+      "B) ElevAboveStream",
+      "C) Watershed",
+      "D) HillShade"
+    ],
+    "correct": "B",
+    "explanation": "ElevAboveStream függvény."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Python könyvtár kínál könnyűsúlyú HAND-számítást GIS nélkül?",
+    "options": [
+      "A) NumPy",
+      "B) pysheds",
+      "C) Pandas",
+      "D) SciPy"
+    ],
+    "correct": "B",
+    "explanation": "A pysheds könnyűsúlyú vízgyűjtő-lehatárolási és HAND-számítási könyvtár."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen fájlelnevezési konvenció ajánlott a HAND-raszterre?",
+    "options": [
+      "A) _slp",
+      "B) _hand",
+      "C) _d8",
+      "D) _raw"
+    ],
+    "correct": "B",
+    "explanation": "Pl. tisza_hand.tif."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen szoftverek állnak rendelkezésre a HAND-számításhoz?",
+    "options": [
+      "A) Csak ArcGIS Pro",
+      "B) ArcGIS Pro, TauDEM, WhiteboxTools, GRASS, pysheds",
+      "C) Csak TauDEM",
+      "D) Csak Python"
+    ],
+    "correct": "B",
+    "explanation": "Több kereskedelmi és nyílt forráskódú szoftver is alkalmas."
+  },
+  {
+    "type": "mcq",
+    "question": "A kontinentális HAND-számítást melyik két intézmény végezte?",
+    "options": [
+      "A) NASA és ESA",
+      "B) Illinoisi Egyetem (NCSA) és Texasi Egyetem (TACC)",
+      "C) Stanford és MIT",
+      "D) USGS és NOAA"
+    ],
+    "correct": "B",
+    "explanation": "Yan Liu (NCSA) és kollégái a UT Austin-nal együttműködve."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND-raszterben a vízfolyáscellák értéke mennyi?",
+    "options": [
+      "A) NoData",
+      "B) 0",
+      "C) 1",
+      "D) -1"
+    ],
+    "correct": "B",
+    "explanation": "A vízfolyáscellák HAND-értéke 0."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND mire érzékeny kritikusan?",
+    "options": [
+      "A) A csapadékra",
+      "B) Az alapul szolgáló vízfolyáshálózat-definícióra",
+      "C) A napszakra",
+      "D) A hőmérsékletre"
+    ],
+    "correct": "B",
+    "explanation": "A vízfolyáshálózat megváltoztatása megváltoztatja a HAND-felületet."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen HAND-értékek jellemzőek a gátak mögötti védett ártérre (mentett ártér)?",
+    "options": [
+      "A) 0-2 m",
+      "B) 3-8 m",
+      "C) 20-50 m",
+      "D) 100+ m"
+    ],
+    "correct": "B",
+    "explanation": "A gátak mögötti terület jellemzően 3-8 m HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan jelennek meg a gátak a HAND-felületen?",
+    "options": [
+      "A) Láthatatlanok",
+      "B) Éles diszkontinuitásként",
+      "C) Folyamatos átmenetként",
+      "D) Mélyedésként"
+    ],
+    "correct": "B",
+    "explanation": "A gátak éles HAND-ugrást hoznak létre a folyó-oldal és a védett oldal között."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen HAND-értékűek a Tisza menti történelmi magyar települések?",
+    "options": [
+      "A) 0-1 m",
+      "B) 4-8 m",
+      "C) 20-30 m",
+      "D) 50+ m"
+    ],
+    "correct": "B",
+    "explanation": "Folyóteraszokra, löszgerincekre telepítették: 4-8 m HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen mezőgazdasági használatra alkalmas a HAND < 2 m-es terület?",
+    "options": [
+      "A) Gyümölcsösök",
+      "B) Árvíztűrő használat: parti erdő, nedves rét",
+      "C) Szántóföldi növények",
+      "D) Üvegházak"
+    ],
+    "correct": "B",
+    "explanation": "HAND < 2 m: csak árvíztűrő használat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EU Árvíz-irányelv száma?",
+    "options": [
+      "A) 2000/60/EK",
+      "B) 2007/60/EK",
+      "C) 2010/30/EU",
+      "D) 2015/90/EU"
+    ],
+    "correct": "B",
+    "explanation": "2007/60/EK irányelv."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen visszatérési időszakokra készítenek árvízveszélyeztetettségi térképeket az EU irányelvnek megfelelően?",
+    "options": [
+      "A) 1, 5, 10 éves",
+      "B) Alacsony, közepes, nagy valószínűségű",
+      "C) Csak 100 éves",
+      "D) Csak 1000 éves"
+    ],
+    "correct": "B",
+    "explanation": "Három forgatókönyv: alacsony, közepes és nagy valószínűségű."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND-alapú és a hivatalos árvízi térképek fő komplementaritása?",
+    "options": [
+      "A) Mindkettő ugyanazt mutatja",
+      "B) HAND: legrosszabb forgatókönyv (gátszakadás); hivatalos: gátak tartását feltételezi",
+      "C) A HAND mindig pontosabb",
+      "D) A hivatalos térkép mindig kiterjedtebb"
+    ],
+    "correct": "B",
+    "explanation": "A HAND a maximális veszélyt mutatja, a hivatalos a tervezett infrastruktúra mellett várhatót."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND egyik legnagyobb erőssége a világ adatszegény régióiban?",
+    "options": [
+      "A) Tökéletes pontosság",
+      "B) Bárhol kiszámítható, ahol DDM létezik",
+      "C) Nincs szüksége számítógépre",
+      "D) Automatikusan frissül"
+    ],
+    "correct": "B",
+    "explanation": "Csak DDM + vízhálózat szükséges, amelyek globálisan elérhetők."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontású a magyar DDM-5?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "5 méteres felbontás."
+  },
+  {
+    "type": "mcq",
+    "question": "Hol érhető el a magyar OVF vízhálózat?",
+    "options": [
+      "A) nasa.gov",
+      "B) data.vizugy.hu",
+      "C) usgs.gov",
+      "D) copernicus.eu"
+    ],
+    "correct": "B",
+    "explanation": "Az OVF vízfolyás-tengelye a data.vizugy.hu-n érhető el."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen DDM-et használnak a Copernicus EEA-10 hiányában Magyarországon?",
+    "options": [
+      "A) SRTM 90 m",
+      "B) Copernicus GLO-30",
+      "C) DDM-5 5 m",
+      "D) NED 10 m"
+    ],
+    "correct": "C",
+    "explanation": "A DDM-5 5 m az elsődleges magyar DDM."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a D-végtelen HAND előnye a D8-cal szemben sík terepen?",
+    "options": [
+      "A) Gyorsabb",
+      "B) Sima, folytonos határok küszöböléskor",
+      "C) Kisebb fájlméret",
+      "D) Nem igényel DDM-et"
+    ],
+    "correct": "B",
+    "explanation": "Simább árvízi kiterjedés-határok, jobb operatív használhatóság."
+  },
+  {
+    "type": "mcq",
+    "question": "A D8 és D-végtelen HAND közötti különbség mekkora a DEM bizonytalanságához képest?",
+    "options": [
+      "A) Sokkal nagyobb",
+      "B) A méter töredéke: kicsi a DEM bizonytalansághoz képest",
+      "C) Pontosan egyenlő",
+      "D) Nincs különbség"
+    ],
+    "correct": "B",
+    "explanation": "A különbség jellemzően kisebb, mint a DEM RMSE."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a stacionárius állapot feltételezésének korlátja a HAND-nál?",
+    "options": [
+      "A) Nem alkalmazható folyókra",
+      "B) Az árvíz időben változik, de a HAND pillanatnyi állapotot feltételez",
+      "C) Csak télen működik",
+      "D) Csak sík terepen használható"
+    ],
+    "correct": "B",
+    "explanation": "A HAND nem követi az árhullám időbeli fejlődését."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a visszaduzzasztási hatás problémája a HAND-nál?",
+    "options": [
+      "A) A HAND túl nagy értékeket ad",
+      "B) A HAND nem veszi figyelembe hidak/gátak okozta visszaduzzasztást",
+      "C) Nincs ilyen probléma",
+      "D) Csak USA-ban jelentkezik"
+    ],
+    "correct": "B",
+    "explanation": "A HAND nem modellezi a műtárgyak hidraulikai hatását."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen HAND-értékű a Tisza menti hullámtér (gátak között)?",
+    "options": [
+      "A) 0-4 m",
+      "B) 5-8 m",
+      "C) 10-15 m",
+      "D) 20+ m"
+    ],
+    "correct": "A",
+    "explanation": "0-4 m HAND a gátak közötti területen."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adatforrás a MERIT Hydro?",
+    "options": [
+      "A) Európai LiDAR-adatbázis",
+      "B) Hidrológiailag kondicionált globális magassági és lefolyási adatok 90 m-en",
+      "C) Magyar árvízi térkép",
+      "D) Amerikai vízfolyáshálózat"
+    ],
+    "correct": "B",
+    "explanation": "MERIT Hydro: 3 ívmásodperces globális hidrológiai adatkészlet."
+  },
+  {
+    "type": "mcq",
+    "question": "Miért alacsonyabbak a HAND-értékek kiterjedtebb vízfolyáshálózat esetén?",
+    "options": [
+      "A) Mert a DDM pontosabb",
+      "B) Mert minden cella közelebb van a legközelebbi vízfolyásához",
+      "C) Mert a felbontás jobb",
+      "D) Mert a csapadék nagyobb"
+    ],
+    "correct": "B",
+    "explanation": "Több vízfolyáscella → rövidebb lefolyási utak → alacsonyabb HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a morotva (holtág) HAND-szempontból?",
+    "options": [
+      "A) Magas HAND-értékű gerinc",
+      "B) Alacsony HAND-értékű megnyúlt zóna a modern medertől elfelé",
+      "C) Nem látható a HAND-ban",
+      "D) Mesterséges csatorna"
+    ],
+    "correct": "B",
+    "explanation": "A régi meanderek alacsony HAND-értékű sávokként jelennek meg."
+  },
+  {
+    "type": "mcq",
+    "question": "Az NED (National Elevation Dataset) RMSE-je mennyi?",
+    "options": [
+      "A) ~0,5 m",
+      "B) ~2,34 m",
+      "C) ~10 m",
+      "D) ~30 m"
+    ],
+    "correct": "B",
+    "explanation": "~2,34 m a geodéziai alappontokhoz képest."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyarországon mely weboldalon érhetők el az árvízveszélyeztetettségi térképek?",
+    "options": [
+      "A) usgs.gov",
+      "B) geoportal.vizugy.hu és vizeink.hu",
+      "C) openstreetmap.org",
+      "D) copernicus.eu"
+    ],
+    "correct": "B",
+    "explanation": "Az OVF geoportálon és a vizeink.hu árvízkockázat-kezelési portálon."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Balaton HAND-értékeinek fizikai jelentése?",
+    "options": [
+      "A) Fontos árvízi mutató",
+      "B) Fizikailag értelmezhetetlen (állandó víztest)",
+      "C) Pontos mélységi adat",
+      "D) A part magassága"
+    ],
+    "correct": "B",
+    "explanation": "Állandó víztesteken a HAND-értékek fizikailag értelmezhetetlenek."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány milliárd cella lenne a HAND Magyarország teljes területére 5 m-en?",
+    "options": [
+      "A) 100 millió",
+      "B) ~1,9 milliárd",
+      "C) 10 milliárd",
+      "D) 100 milliárd"
+    ],
+    "correct": "B",
+    "explanation": "93 000 km² / (5 m)² ≈ 3,72 milliárd; a fejezet ~1,9 milliárdot említ."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND vizualizálásakor miért ajánlott a magas értékeket átlátszóvá tenni?",
+    "options": [
+      "A) Helytakarékosság",
+      "B) Az árvíz-releváns alacsony értékek kiemelt megjelenítéséhez",
+      "C) Szebb esztétika",
+      "D) Kevesebb adat"
+    ],
+    "correct": "B",
+    "explanation": "A magas HAND-értékek nem árvízveszélyesek; átlátszóvá téve az alaptérkép átlátszódik."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen algoritmusnál a lefolyási arányok összege mindig mennyi?",
+    "options": [
+      "A) 0",
+      "B) 0,5",
+      "C) 1",
+      "D) Változó"
+    ],
+    "correct": "C",
+    "explanation": "A lefolyási arányok összege mindig 1 (a teljes lefolyás elosztása)."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza természetes fenékesése a magyar síkságon hozzávetőleg mekkora?",
+    "options": [
+      "A) >1 m/km",
+      "B) 0,1-0,5 m/km",
+      "C) 3-5 cm/km",
+      "D) 0 cm/km"
+    ],
+    "correct": "C",
+    "explanation": "Rendkívül enyhe: 3-5 cm kilométerenként."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen hidrológiai szoftver a GRASS GIS HAND-funkciója?",
+    "options": [
+      "A) FlowDistance",
+      "B) r.stream.distance",
+      "C) DinfDistDown",
+      "D) ElevAboveStream"
+    ],
+    "correct": "B",
+    "explanation": "A GRASS GIS r.stream.distance modulja."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a súlyozott akkumuláció szerepe a vízfolyás-lehatárolásban?",
+    "options": [
+      "A) Csapadék összegyűjtése",
+      "B) Forrásfej-pontokból kiindulva megszámolja, hány forrásfej van felette",
+      "C) A lejtés kiszámítása",
+      "D) A DDM simítása"
+    ],
+    "correct": "B",
+    "explanation": "A forrásfej-raszterrel súlyozott akkumuláció azonosítja a vízfolyáscellákat."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND mely tulajdonsága teszi azonnal érthetővé nem szakemberek számára?",
+    "options": [
+      "A) Komplex matematikai formalizmus",
+      "B) Közvetlen fizikai jelentés: minimális árvízmélység az elöntéshez",
+      "C) Csak térképeken ábrázolható",
+      "D) Csak szakemberek értik"
+    ],
+    "correct": "B",
+    "explanation": "A HAND közvetlen fizikai jelentéssel bír: a szükséges minimális árvízmélység."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza vízgyűjtő területe mekkora?",
+    "options": [
+      "A) 15 000 km²",
+      "B) 57 000 km²",
+      "C) 157 186 km²",
+      "D) 500 000 km²"
+    ],
+    "correct": "C",
+    "explanation": "157 186 km², a teljes keleti Kárpáti ívre kiterjed."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza magyarországi hossza hozzávetőleg mekkora?",
+    "options": [
+      "A) 100 km",
+      "B) 300 km",
+      "C) 596 km",
+      "D) 966 km"
+    ],
+    "correct": "C",
+    "explanation": "596 km Magyarországon belül."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik évben pusztította el a tiszai árvíz Szegedet?",
+    "options": [
+      "A) 1838",
+      "B) 1879",
+      "C) 1920",
+      "D) 1970"
+    ],
+    "correct": "B",
+    "explanation": "1879, 151 halálos áldozattal."
+  },
+  {
+    "type": "mcq",
+    "question": "Ki vezette a 19. századi Tisza-szabályozási munkálatokat?",
+    "options": [
+      "A) Kossuth Lajos",
+      "B) Vásárhelyi Pál és Széchenyi István",
+      "C) Deák Ferenc",
+      "D) Andrássy Gyula"
+    ],
+    "correct": "B",
+    "explanation": "Vásárhelyi Pál és Széchenyi István nevéhez fűződik."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza-szabályozás hány km-rel rövidítette a folyót?",
+    "options": [
+      "A) 50 km",
+      "B) 150 km",
+      "C) ~500 km",
+      "D) 1000 km"
+    ],
+    "correct": "C",
+    "explanation": "Közel 500 km-rel mederátvágásokkal."
+  },
+  {
+    "type": "mcq",
+    "question": "A Tisza természetes hullámtere a szabályozás előtt mekkora volt?",
+    "options": [
+      "A) 5 000 km²",
+      "B) 12 000 km²",
+      "C) ~22 000 km²",
+      "D) 50 000 km²"
+    ],
+    "correct": "C",
+    "explanation": "~22 000 km², Magyarország negyede."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen érvényes DDM-pótlás áll rendelkezésre, ha nincs LiDAR Magyarországon?",
+    "options": [
+      "A) SRTM 90 m",
+      "B) Copernicus EEA-10 (10 m) vagy GLO-30 (30 m)",
+      "C) Csak terepi felmérés",
+      "D) Nincs alternatíva"
+    ],
+    "correct": "B",
+    "explanation": "A Copernicus DDM-ek szabadon hozzáférhető alternatívák."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a kunhalom jelentősége a HAND szempontjából?",
+    "options": [
+      "A) Nincs jelentősége",
+      "B) Mesterséges magaslat, amelyre települést építettek: magasabb HAND",
+      "C) Gátszerkezet",
+      "D) Csatorna"
+    ],
+    "correct": "B",
+    "explanation": "A kunhalmok mesterséges dombocskák, amelyekre történelmileg települtek."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND-számítás Magyarország teljes területére melyik platformon lenne megvalósítható?",
+    "options": [
+      "A) Csak szuperszámítógépen",
+      "B) Modern többmagos munkaállomáson vagy szerény HPC-n",
+      "C) Okostelefonon",
+      "D) Csak felhőben"
+    ],
+    "correct": "B",
+    "explanation": "~1,9 milliárd cella: jól a modern munkaállomás képességein belül."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú a HAND-felületen megjelenő gát-diszkontinuitás?",
+    "options": [
+      "A) Fokozatos átmenet",
+      "B) Éles ugrás a folyó-oldali alacsony és a védett oldali magas HAND között",
+      "C) Láthatatlan",
+      "D) Negatív érték"
+    ],
+    "correct": "B",
+    "explanation": "A gátak éles HAND-diszkontinuitást hoznak létre."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND legközvetlenebb alkalmazása?",
+    "options": [
+      "A) Csapadékelőrejelzés",
+      "B) Árvízveszélyes terep azonosítása",
+      "C) Talajnedvesség-mérés",
+      "D) Hőtérkép készítése"
+    ],
+    "correct": "B",
+    "explanation": "A HAND legközvetlenebb alkalmazása az árvízveszélyes terep azonosítása."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND-ot milyen analógiával lehet összehasonlítani?",
+    "options": [
+      "A) Höfénykép",
+      "B) Időjárási radar",
+      "C) A vízfolyásban szükséges minimális árvízmélység egy pont elöntéséhez",
+      "D) Műholdas kép"
+    ],
+    "correct": "C",
+    "explanation": "Ez a HAND közvetlen fizikai értelmezése."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OVF szolnoki mérőállomása mióta rendelkezik méréssorozattal?",
+    "options": [
+      "A) 1950-es évek",
+      "B) 19. század",
+      "C) 2000 óta",
+      "D) 2020 óta"
+    ],
+    "correct": "B",
+    "explanation": "A 19. századig visszanyúló folyamatos méréssorozat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az OVF adatai (data.vizugy.hu) mióta szabadon hozzáférhetők?",
+    "options": [
+      "A) 2000 óta",
+      "B) 2010 óta",
+      "C) 2024 júliusa óta",
+      "D) Még nem hozzáférhetők"
+    ],
+    "correct": "C",
+    "explanation": "2024 júliusa óta szabadon és ingyenesen."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GRASS r.stream.distance korlátja?",
+    "options": [
+      "A) Nem létezik",
+      "B) Saját belső folyásirány-formátumot használ, nem D-végtelent",
+      "C) Csak Windows-on működik",
+      "D) Csak angol nyelvű"
+    ],
+    "correct": "B",
+    "explanation": "GRASS saját formátumot használ, nem TauDEM D-végtelen szögeket."
+  },
+  {
+    "type": "mcq",
+    "question": "A HAND milyen alkalmazásához szükséges a Manning-egyenlet?",
+    "options": [
+      "A) HAND-raszter számításához",
+      "B) Szintetikus vízhozamgörbék levezetéséhez HAND-ból",
+      "C) DDM-feltöltéshez",
+      "D) Vízgyűjtő-lehatároláshoz"
+    ],
+    "correct": "B",
+    "explanation": "A HAND-ból levezetett hidraulikus tulajdonságok + Manning = vízhozamgörbe (15. fejezet)."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen állandó víztesteket kell maszkként kizárni a HAND-elemzésből?",
+    "options": [
+      "A) Csak tengereket",
+      "B) Tavak, tározók, széles folyómedrek",
+      "C) Csak a Balatont",
+      "D) Semmit"
+    ],
+    "correct": "B",
+    "explanation": "Állandó víztestek HAND-értékei fizikailag értelmezhetetlenek."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik volt a legpusztítóbb modern tiszai árvízsorozat?",
+    "options": [
+      "A) 1960-as évek",
+      "B) 1998-2001",
+      "C) 2010-es évek",
+      "D) 2020-as évek"
+    ],
+    "correct": "B",
+    "explanation": "1998, 1999, 2000, 2001 sorozatos nagy árvizek."
+  },
+  {
+    "type": "mcq",
+    "question": "A 2001-es tiszai árvíz tetőzésekor mennyivel haladták meg a korábbi maximumokat?",
+    "options": [
+      "A) 5-10 cm",
+      "B) 50-100 cm",
+      "C) 2-3 m",
+      "D) 5+ m"
+    ],
+    "correct": "B",
+    "explanation": "50-100 cm-rel meghaladták a korábbi rekordokat."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND a Height Above Nearest Drainage rövidítése.",
+    "correct": "true",
+    "explanation": "Legközelebbi vízfolyás feletti magasság."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND abszolút tengerszint feletti magasságot mér.",
+    "correct": "false",
+    "explanation": "Relatív magasságot mér a legközelebbi vízfolyáshoz képest."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen lefolyásirány-modell simább HAND-felületet ad, mint a D8.",
+    "correct": "true",
+    "explanation": "Arányos lefolyáselosztás kiküszöböli a csíkozást."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-számításhoz az eredeti (kitöltetlen) DDM-et kell használni.",
+    "correct": "false",
+    "explanation": "A kitöltött DDM-et kell használni a fizikai konzisztencia érdekében."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-értékek a vízgyűjtőn belül monoton nőnek a vízfolyástól felfelé.",
+    "correct": "true",
+    "explanation": "A kitöltött DDM-ből számított HAND-értékek monoton növekednek."
+  },
+  {
+    "type": "true_false",
+    "question": "A vektoros vízfolyáshálózat közvetlen raszterizálása mindig jó eredményt ad HAND-hoz.",
+    "correct": "false",
+    "explanation": "A raszterizált vízfolyás és a DDM völgyei nem feltétlenül egyeznek."
+  },
+  {
+    "type": "true_false",
+    "question": "A lágy bevágás a teljes DDM-et módosítja a vízfolyás mentén.",
+    "correct": "false",
+    "explanation": "Csak a minimálisan szükséges módosításokat végzi a lefolyás-folytonossághoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND maximális értéke mindig kisebb a vízgyűjtő teljes reliefénél.",
+    "correct": "true",
+    "explanation": "A HAND a helyi esést méri, nem az összesítettet."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza hullámterén a HAND-értékek főleg 0-4 m tartományban vannak.",
+    "correct": "true",
+    "explanation": "A rendkívül sík terepen a HAND erőteljesen az alacsony tartományba koncentrálódik."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND < 2 m éves/10 éves árvizeknek kitett területet jelöl alföldi folyókon.",
+    "correct": "true",
+    "explanation": "Operatív tapasztalatból levezetett küszöb."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND < 5 m nagyjából megfelel a 100 éves hullámtérnek.",
+    "correct": "true",
+    "explanation": "A szabályozási árvíztérképezés küszöbe."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND figyelembe veszi a visszaduzzasztási hatásokat.",
+    "correct": "false",
+    "explanation": "A HAND nem modellezi hidak, gátak okozta visszaduzzasztást."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-felületen a gátak éles diszkontinuitásként jelennek meg.",
+    "correct": "true",
+    "explanation": "Éles ugrás a folyó-oldali és védett oldali értékek között."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza teljes vízgyűjtő területe ~157 000 km².",
+    "correct": "true",
+    "explanation": "157 186 km²."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza magyarországi fenékesése >1 m/km.",
+    "correct": "false",
+    "explanation": "<0,05 m/km (3-5 cm/km) a síkságon."
+  },
+  {
+    "type": "true_false",
+    "question": "A 19. századi Tisza-szabályozás ~500 km-rel rövidítette a folyót.",
+    "correct": "true",
+    "explanation": "Mederátvágásokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF adatai 2024 júliusa óta szabadon hozzáférhetők.",
+    "correct": "true",
+    "explanation": "A data.vizugy.hu-n."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-számítás Magyarország teljes területére szuperszámítógépet igényel.",
+    "correct": "false",
+    "explanation": "~1,9 milliárd cella: modern munkaállomáson megvalósítható."
+  },
+  {
+    "type": "true_false",
+    "question": "Állandó víztestek (pl. Balaton) HAND-értékei fizikailag értelmezhetők.",
+    "correct": "false",
+    "explanation": "Vízzel fedett cellákon a HAND fizikailag értelmezhetetlen."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar települések történelmileg alacsony HAND-értékű területekre települtek.",
+    "correct": "false",
+    "explanation": "Teraszokra, gerincekre telepítették: 4-8 m HAND."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-ból becsülhető az elöntött terület, nedvesített kerület és hidraulikus sugár.",
+    "correct": "true",
+    "explanation": "A(h), P(h), Ax(h), R(h) mind számíthatók."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 és D-végtelen HAND közti különbség nagyobb, mint a DEM RMSE.",
+    "correct": "false",
+    "explanation": "Jellemzően kisebb, mint a DEM bizonytalansága."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND egyetlen számítási átfutást igényel a DDM-en.",
+    "correct": "true",
+    "explanation": "Plus az előfeltétel feldolgozási lánc, de a HAND maga egy átfutás."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND mért szelvényeket igényel.",
+    "correct": "false",
+    "explanation": "Csak DDM-et és vízfolyás-definíciót."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND kiszámítása után statikus termék, korlátlanul újrafelhasználható.",
+    "correct": "true",
+    "explanation": "Különböző árvízforgatókönyvokkal kombinálható."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND alkalmazható száraz és félszáraz környezetben is.",
+    "correct": "true",
+    "explanation": "Villámárvíz-veszélyeztetettség jelzésére."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND hegyvidéken ugyanolyan pontos, mint alföldi terepen.",
+    "correct": "false",
+    "explanation": "A sík víz feltételezés kevésbé érvényes meredek terepen."
+  },
+  {
+    "type": "true_false",
+    "question": "A pysheds Python könyvtár GIS-szoftver nélkül számítja a HAND-ot.",
+    "correct": "true",
+    "explanation": "Könnyűsúlyú, automatizált feldolgozáshoz."
+  },
+  {
+    "type": "true_false",
+    "question": "A WhiteboxTools ElevAboveStream függvénye számítja a HAND-ot.",
+    "correct": "true",
+    "explanation": "Nyílt forráskódú alternatíva."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND vizualizálásánál lineáris színskála ajánlott 0-tól a maximumig.",
+    "correct": "false",
+    "explanation": "Az alacsony értékek hangsúlyozása fontosabb; a magas értékek átlátszóvá teendők."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen HAND-nál a lefolyási arányok két szomszéd között oszlanak meg.",
+    "correct": "true",
+    "explanation": "A D-végtelen legfeljebb két lejtőirányú szomszédra oszt."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza 2001-es árvíze 50-100 cm-rel meghaladta a korábbi rekordokat.",
+    "correct": "true",
+    "explanation": "Több állomáson rekordot döntött."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-értékek a DDM bizonytalanságát öröklik.",
+    "correct": "true",
+    "explanation": "A HAND RMSE legalább akkora, mint a DDM RMSE."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-felületen a morotvák alacsony értékű sávokként jelennek meg.",
+    "correct": "true",
+    "explanation": "A régi meanderek nyomvonalát követő alacsony HAND-zónák."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU Árvíz-irányelv (2007/60/EK) háromféle térképet ír elő.",
+    "correct": "true",
+    "explanation": "Árvízveszélyeztetettségi és árvízkockázati térképek."
+  },
+  {
+    "type": "true_false",
+    "question": "A NED RMSE ~2,34 m.",
+    "correct": "true",
+    "explanation": "A geodéziai alappontokhoz képest."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND csak az USA-ban alkalmazható.",
+    "correct": "false",
+    "explanation": "Bárhol, ahol DDM és vízfolyáshálózat létezik."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-30 elegendő a Tisza menti árvíztérképezéshez.",
+    "correct": "true",
+    "explanation": "30 m-en a széles Tisza-ártér jól feloldott."
+  },
+  {
+    "type": "true_false",
+    "question": "A TauDEM DinfDistDown számítja a HAND-ot.",
+    "correct": "true",
+    "explanation": "D-végtelen lefelé irányuló függőleges távolság."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND helyettesíti a HEC-RAS hidraulikus modellezést.",
+    "correct": "false",
+    "explanation": "Kiegészíti, nem helyettesíti a részletes modellezést."
+  },
+  {
+    "type": "true_false",
+    "question": "A vízfolyás-definíciós küszöb megváltoztatása megváltoztatja a HAND-felületet.",
+    "correct": "true",
+    "explanation": "Más hálózat = más HAND-értékek."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tisza természetes hullámtere ~22 000 km² volt a szabályozás előtt.",
+    "correct": "true",
+    "explanation": "Magyarország negyede."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-raszterben nincs szisztematikus térbeli trend.",
+    "correct": "true",
+    "explanation": "Csak a helyi viszony számít, nem a vízgyűjtőn belüli pozíció."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-számításhoz mindhárom bemenetnek azonos cellaméretűnek kell lennie.",
+    "correct": "true",
+    "explanation": "DDM, folyásirány és vízfolyásraszter azonos rácson."
+  },
+  {
+    "type": "true_false",
+    "question": "A Balaton területe 594 km².",
+    "correct": "true",
+    "explanation": "Közép-Európa legnagyobb tava."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND felső korlátot jelent a tényleges árvízi kiterjedésre.",
+    "correct": "true",
+    "explanation": "Stacionárius feltételezés → potenciális maximális elöntés."
+  },
+  {
+    "type": "true_false",
+    "question": "A Szeged 1879-es pusztulásáért a Tisza árvíze volt felelős.",
+    "correct": "true",
+    "explanation": "151 halálos áldozat."
+  },
+  {
+    "type": "true_false",
+    "question": "A radar-alapú DDM (pl. SRTM) csupasz felszínt mér erdős területen.",
+    "correct": "false",
+    "explanation": "A lombkorona magasságát méri, ami túl magas HAND-értékeket ad."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND számítási hatékonysága lehetővé teszi a valós idejű árvíztérképezést.",
+    "correct": "true",
+    "explanation": "Előre kiszámított HAND + valós idejű vízmélység = percek."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND eredendően párhuzamosítható.",
+    "correct": "true",
+    "explanation": "Vízgyűjtőnkénti feldolgozás természetesen párhuzamosítható."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND = Height Above Nearest _______.",
+    "correct": "Drainage",
+    "explanation": "Legközelebbi vízfolyás feletti magasság."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND a cella _______ távolsága a legközelebbi vízfolyástól.",
+    "correct": "függőleges",
+    "explanation": "Verticális magasságkülönbség a lefolyási útvonal mentén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND-hoz ajánlott lefolyásirány-modell sík terepen: D-_______.",
+    "correct": "végtelen",
+    "explanation": "D-infinity (D-végtelen)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND-számítás három bemenete: kondicionált DDM, _______ és vízfolyásraszter.",
+    "correct": "folyásirányok",
+    "explanation": "D-végtelen folyásirányok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro HAND-eszköze: Flow _______.",
+    "correct": "Distance",
+    "explanation": "Flow Distance (Spatial Analyst)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TauDEM HAND-függvénye: _______.",
+    "correct": "DinfDistDown",
+    "explanation": "D-infinity Distance Down."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízfolyáscellák HAND-értéke: _______.",
+    "correct": "0",
+    "explanation": "A vízfolyáson a magasságkülönbség nulla."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < _______ m: éves/10 éves árvizeknek kitett terület.",
+    "correct": "2",
+    "explanation": "Operatív küszöb alföldi folyókra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < _______ m: ~100 éves hullámtér.",
+    "correct": "5",
+    "explanation": "Szabályozási árvíztérképezés küszöbe."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < _______ m: szélsőséges (500+ éves) esemény.",
+    "correct": "10",
+    "explanation": "A legtöbb tervezési keretrendszer külső határa."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza vízgyűjtője: ~_______ km².",
+    "correct": "157 186",
+    "explanation": "157 186 km²."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza magyarországi hossza: _______ km.",
+    "correct": "596",
+    "explanation": "596 km Magyarországon belül."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza fenékesése a magyar síkságon: _______-5 cm/km.",
+    "correct": "3",
+    "explanation": "3-5 cm/km."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza-szabályozás: Vásárhelyi Pál és _______ István.",
+    "correct": "Széchenyi",
+    "explanation": "Széchenyi István."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza-szabályozás időszaka: 1846-_______.",
+    "correct": "1879",
+    "explanation": "1846-1879."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza természetes hullámtere: ~_______ km².",
+    "correct": "22 000",
+    "explanation": "Magyarország negyede."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Szeged pusztulása: _______ év.",
+    "correct": "1879",
+    "explanation": "1879-es tiszai árvíz."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gátak közötti hullámtér HAND-ja: 0-_______ m.",
+    "correct": "4",
+    "explanation": "0-4 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gátak mögötti védett ártér HAND-ja: _______-8 m.",
+    "correct": "3",
+    "explanation": "3-8 m jellemzően."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Történelmi magyar települések HAND-ja: _______-8 m.",
+    "correct": "4",
+    "explanation": "Teraszokra, gerincekre telepítve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND < 2 m mezőgazdasági használat: _______ erdő, nedves rét.",
+    "correct": "parti",
+    "explanation": "Árvíztűrő használat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EU Árvíz-irányelv száma: 2007/_______/EK.",
+    "correct": "60",
+    "explanation": "2007/60/EK."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyar árvízveszélyeztetettségi térképek: _______.vizugy.hu.",
+    "correct": "geoportal",
+    "explanation": "geoportal.vizugy.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyar árvízkockázat-kezelési portál: _______.hu.",
+    "correct": "vizeink",
+    "explanation": "vizeink.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "OVF adatok elérhetők: data._______.hu.",
+    "correct": "vizugy",
+    "explanation": "data.vizugy.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NED RMSE: ~_______ m.",
+    "correct": "2,34",
+    "explanation": "A geodéziai alappontokhoz képest."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Balaton területe: _______ km².",
+    "correct": "594",
+    "explanation": "Közép-Európa legnagyobb tava."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND Magyarország teljes területére 5 m-en ~_______ milliárd cella.",
+    "correct": "1,9",
+    "explanation": "Megvalósítható számítási mennyiség."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kontinentális HAND-adatkészlet _______ méteres felbontásban készült.",
+    "correct": "10",
+    "explanation": "NED 10 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az USA HAND-számítás ~_______ milliárd cellát dolgozott fel.",
+    "correct": "10",
+    "explanation": "~10 milliárd cella."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND vizualizáláshoz ajánlott HAND-osztályok 0-1 m szín: sötét_______.",
+    "correct": "kék",
+    "explanation": "Sötétkék = extrém árvízkockázat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND eredendően _______ (párhuzamosítható jellegű).",
+    "correct": "párhuzamosítható",
+    "explanation": "Vízgyűjtőnkénti független feldolgozás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WhiteboxTools HAND-függvénye: _______.",
+    "correct": "ElevAboveStream",
+    "explanation": "Elevation Above Stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A pysheds HAND-függvénye: compute_______.",
+    "correct": "_hand",
+    "explanation": "compute_hand."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HAND fájl elnevezés: _______ utótaggal.",
+    "correct": "_hand",
+    "explanation": "Pl. tisza_hand.tif."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND a legközelebbi vízfolyásban szükséges minimális _______ az elöntéshez.",
+    "correct": "árvízmélység",
+    "explanation": "Fizikai értelmezés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND _______ költségét egyszer kell elvégezni, utána korlátlanul újrafelhasználható.",
+    "correct": "számítási",
+    "explanation": "Egyszeri domborzatfeldolgozás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND-ból levezetett hidraulikus tulajdonságok a _______ egyenlet bemeneteként szolgálnak.",
+    "correct": "Manning",
+    "explanation": "Manning-egyenlet a vízhozam-mélység összefüggéshez."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen algoritmusnál a lefolyás legfeljebb _______ szomszédra oszlik.",
+    "correct": "két",
+    "explanation": "Két lejtőirányú szomszéd között."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND-felületen a morotvák _______ HAND-értékű sávokként jelennek meg.",
+    "correct": "alacsony",
+    "explanation": "Régi meanderek nyomvonalát követik."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza 2001-es árvíze _______-100 cm-rel haladta meg a korábbi rekordokat.",
+    "correct": "50",
+    "explanation": "50-100 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Tisza Szolnoknál a _______ és a Zagyva összefolyásánál fekszik.",
+    "correct": "Tisza",
+    "explanation": "A Tisza és Zagyva összefolyása."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND osztályozásban HAND 0-1 m = _______ árvízkockázat.",
+    "correct": "extrém",
+    "explanation": "Sötétkék: extrém kockázat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND osztályozásban HAND 2-5 m = _______ árvízkockázat.",
+    "correct": "magas",
+    "explanation": "Világoskék: magas kockázat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND osztályozásban HAND 5-10 m = _______ árvízkockázat.",
+    "correct": "mérsékelt",
+    "explanation": "Sárga: mérsékelt kockázat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND osztályozásban HAND 10-20 m = _______ árvízkockázat.",
+    "correct": "alacsony",
+    "explanation": "Narancssárga: alacsony kockázat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND osztályozásban HAND > 20 m = _______ árvízkockázat.",
+    "correct": "elhanyagolható",
+    "explanation": "Átlátszó/szürke: elhanyagolható."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND száraz környezetben _______ veszélyeztetettséget jelez.",
+    "correct": "villámárvíz",
+    "explanation": "Rövid, intenzív események."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A súlyozott lefolyás-akkumuláció a _______ rasztert használja súlyként.",
+    "correct": "forrásfej",
+    "explanation": "Forrásfej-pontok bináris rasztere."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT _______ adatkészlet hidrológiailag kondicionált globális magassági adatokat biztosít.",
+    "correct": "Hydro",
+    "explanation": "MERIT Hydro."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND fizikai jelentése és hogyan számítják ki?",
+    "explanation": "A legközelebbi vízfolyás feletti magasság a lefolyási útvonal mentén. Kondicionált DDM + D-végtelen folyásirányok + vízfolyásraszter → függőleges távolság a vízfolyásig."
+  },
+  {
+    "type": "essay",
+    "question": "Miért adnak eltérő eredményt a D8 és D-végtelen módszerek sík terepen?",
+    "explanation": "D8: egyetlen irány cellanként → csíkozás. D-végtelen: arányos elosztás → sima felület. Különösen fontos a Tisza síkságán."
+  },
+  {
+    "type": "essay",
+    "question": "Miért kell a kitöltött DDM-et használni a HAND-számításhoz?",
+    "explanation": "Fizikai konzisztencia a folyásirányokkal, negatív HAND-értékek elkerülése, monoton akkumuláció biztosítása."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízfolyás-DDM inkonzisztencia problémáját és megoldását!",
+    "explanation": "Vektoros vízfolyások nem követik a DDM völgyeit. Megoldás: forrásfej-pontok + DDM-ből levezetett akkumuláció."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a lágy bevágás (soft burn-in) és mikor szükséges?",
+    "explanation": "Monoton csökkenő magasságok a vízfolyás mentén: gátak, töltések, vasúti felüljárók áthidalására."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen HAND-küszöbértékek alkalmazhatók az árvízveszélyeztetettség értékelésére?",
+    "explanation": "<2 m: éves; <5 m: 100 éves; <10 m: 500+ éves. A küszöb a helyi viszonyoktól függ."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szoftveres lehetőségek vannak a HAND-számításhoz?",
+    "explanation": "ArcGIS Pro Flow Distance, TauDEM DinfDistDown, WhiteboxTools ElevAboveStream, GRASS r.stream.distance, pysheds."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazzák a HAND-ot a Tisza hullámtéri elemzéséhez?",
+    "explanation": "DDM-5 + OVF hálózat → HAND → gáthatékonyság, hullámtér, mentett ártér, települések azonosítása."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND stacionárius állapot feltételezésének korlátja?",
+    "explanation": "A valós árvíz időben változik; a HAND pillanatnyi felső korlátot ad, nem az árhullám dinamikáját."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információkat tár fel a HAND a Tisza hullámterén?",
+    "explanation": "Gáthatékonyság, morotvák, települések veszélyeztetettsége, mezőgazdasági zonáció."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan viszonyul a HAND a hivatalos árvízi térképekhez Magyarországon?",
+    "explanation": "HAND: legrosszabb forgatókönyv (gátszakadás); hivatalos: gátak tartását feltételezi. Kiegészítik egymást."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrások szükségesek a HAND kiszámításához Magyarországon?",
+    "explanation": "DDM-5 (5 m) vagy Copernicus (10/30 m), OVF vízhálózat (data.vizugy.hu), TauDEM/ArcGIS Pro."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a HAND az adatszegény régiókban?",
+    "explanation": "Bárhol kiszámítható ahol DDM+vízhálózat létezik; Copernicus GLO-30 és HydroSHEDS globálisan elérhetők."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND korlátja visszaduzzasztási hatások tekintetében?",
+    "explanation": "Hidak, gátak okozta visszaduzzasztást nem modellezi – ahol ezek fontosak, HEC-RAS szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan függnek a HAND-értékek a vízfolyás-definíciótól?",
+    "explanation": "Kiterjedtebb hálózat → alacsonyabb HAND (közelebb van a vízfolyás). A küszöb a vizsgált árvíz léptékéhez igazítandó."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen HAND súlyozott átlag értelmezését!",
+    "explanation": "Két lefolyási útvonal súlyozott kombinációja → sima felület, de nem felel meg egyetlen fizikai útvonalnak sem."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan jelennek meg a gátak a HAND-felületen?",
+    "explanation": "Éles diszkontinuitás: a folyó-oldali alacsony HAND hirtelen magasra ugrik a védett oldalon."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen vizualizációs stratégia ajánlott a HAND-raszterhez?",
+    "explanation": "0-1 m sötétkék, 1-5 m világoskék, 5-10 m sárga, 10-20 m narancs, >20 m átlátszó + dombárnyékolás."
+  },
+  {
+    "type": "essay",
+    "question": "A Tisza menti települések HAND-értékei mit árulnak el a történelmi településelhelyezésről?",
+    "explanation": "4-8 m HAND: teraszokra, löszgerincekre, kunhalmokra telepítve – intuitív árvízkockázat-kerülés."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND kapcsolata az EU Árvíz-irányelvvel?",
+    "explanation": "Az irányelv háromféle árvízi térképet ír elő; a HAND kiegészíti ezeket, különösen kisebb vízfolyásokra."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kontinentális léptékű HAND-számítások léteznek világszerte?",
+    "explanation": "USA (NED 10 m), Európa (JRC/LISFLOOD), globális (MERIT Hydro alapú). Magyarországra nincs kész HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a HAND-vizualizáció árvíz-kommunikációra?",
+    "explanation": "Magas HAND átlátszó → csak veszélyes területek láthatók → közvetlen kommunikáció döntéshozóknak."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND előnye a HEC-RAS-szal szemben?",
+    "explanation": "Lépték (minden szakasz), sebesség (ezredmásodpercek), konzisztencia, lefedettség (100%)."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszanak a morotvák a HAND-elemzésben?",
+    "explanation": "Alacsony HAND-értékű megnyúlt zónák, amelyek szélsőséges eseményeknél lefolyási útvonalként működnek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan mérhető a gátrendszer hatékonysága a HAND-dal?",
+    "explanation": "A gát mögötti HAND-érték közvetlenül méri, mekkora árvízmélységet bír el a rendszer."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen mezőgazdasági zonáció lehetséges HAND-alapon?",
+    "explanation": "<2 m: parti erdő; 2-5 m: éves szántó (időszakos kár); >5 m: minden használat + állandó építmények."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND szerepe a gatszakadasi forgatokonyvek elemzeseben?",
+    "explanation": "A HAND megmutatja, mely teruletek lennenek elontve, ha a gat meghibasodna - ami a hivatalos terkepek nem mutatnak."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a HAND mint infrastruktúra?",
+    "explanation": "Egyszer kiszámítva állandó termék, bármely árvízforgatókönyvvel kombinálható, valós idejű alkalmazáshoz."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND korlátait DDM-minőség szempontjából!",
+    "explanation": "Radar DDM erdőben: lombkoronát méri → túl magas HAND. Városi DDM: épületek torzítják. LiDAR a legjobb."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen globális DDM-ek és vízhálózatok használhatók HAND-hoz?",
+    "explanation": "Copernicus GLO-30, MERIT DEM, HydroSHEDS/HydroRIVERS – szabadon elérhetők."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kapcsolódik a HAND a 15. fejezetben tárgyalt árvízi elöntéstérképezéshez?",
+    "explanation": "HAND = domborzati alap + vízmélység-információ = elöntési térkép. HAND-ból hidraulikai tulajdonságok → Manning → vízhozamgörbe."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati lépések szükségesek a HAND kiszámításához egy magyar vízgyűjtőre?",
+    "explanation": "DDM-5 beszerzés, OVF hálózat letöltés, bevágás, feltöltés, D-végtelen folyásirány, vízfolyás-lehatárolás, HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND értelmezési különbségeit alföldi és hegyvidéki terepen!",
+    "explanation": "Alföld: kis HAND-különbségek nagy gyakorlati jelentőségűek. Hegyvidék: gyors HAND-növekedés, sík víz feltételezés kevésbé érvényes."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az Onion Creek HAND-példa legfontosabb tanulsága?",
+    "explanation": "A HAND-max (122 m) lényegesen kisebb a teljes reliefnél (400 m), mert a HAND helyi viszonyokat mér."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a HAND a magyar OVF mérőállomás-adatokkal együtt?",
+    "explanation": "OVF vízállás + HAND → validáció, vízhozamgörbe-kalibrálás, valós idejű árvízi térképezés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen számítási szempontok vannak a kontinentális HAND-nál?",
+    "explanation": "Csempézés (HUC), memória (>200 GB), vízfolyás-konzisztencia a határokon, tárolás (~40 GB GeoTIFF)."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND szerepe a települési árvízkockázat-értékelésben?",
+    "explanation": "Épületenkénti HAND → állandó kitettségi mutató → kiegészíti a FEMA/EU irányelv szerinti zónákat."
+  },
+  {
+    "type": "essay",
+    "question": "A HAND alkalmazása vádi-árvizek esetén hogyan módosul?",
+    "explanation": "Ideiglenes medrek: vízgyűjtőterület-küszöb a hálózathoz. Villámárvíz-veszélyeztetettség jelzésére használható."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND skálázhatóságának kulcsa?",
+    "explanation": "Vízgyűjtőnkénti független feldolgozás, MPI párhuzamosítás, felhőalapú elosztás."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan javítaná egy magyar országos LiDAR-program a HAND-alapú árvízi elemzést?",
+    "explanation": "1 m DDM → pontosabb medergeometria → megbízhatóbb HAND → gátsáv-monitoring is lehetővé válna."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen típusú árvízi elemzésekhez nem elegendő a HAND?",
+    "explanation": "Visszaduzzasztás, műtárgy-hidraulika, 2D ártéri áramlás dinamikája – HEC-RAS szükséges."
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje a HAND módszertan alkalmazhatóságát a Fertő-tóra!",
+    "explanation": "Állandó víztest → HAND fizikailag értelmezhetetlen a tó területén; a környező terület HAND-ja hasznos."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen elnevezési konvenció ajánlott a HAND-munkafolyamat köztes termékeihez?",
+    "explanation": "_raw, _fel, _d8, _dinf, _ad8, _str, _cat, _hand – előtag: vizsgálati terület."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan értékeli a HAND-felület az újabb (2000-es évek utáni) külvárosi fejlesztések árvízkockázatát?",
+    "explanation": "HAND 2-4 m-en épített területek a régebbi településmagoknál (4-8 m) veszélyeztetettebbek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a HAND a magyar Tisza-völgy mezőgazdasági tervezésében?",
+    "explanation": "HAND-zonáció: árvíztűrő vs szántóföldi vs állandó használat – gazdaságilag optimális területhasználat."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készíthető el az országos HAND Magyarországra?",
+    "explanation": "DDM-5 + OVF hálózat + TauDEM (MPI, többmagos), ~1,9 milliárd cella – napok alatt megvalósítható."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a HAND fizikai értelmezhetőségének jelentősége a döntéshozóknak?",
+    "explanation": "Közvetlen: 'ennyi méter árvíz kell az elöntéshez' – mérnökök, tervezők, lakosság érti."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készíthetők előre kiszámított árvízi térképek HAND-alapon?",
+    "explanation": "HAND + rögzített mélységközök (pl. 0,5 m) = előre kiszámított könyvtár. Árvíz során mélység-keresés."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -90: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -89: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -88: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -87: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -86: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -85: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -84: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -83: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -82: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -81: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -80: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -79: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -78: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -77: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -76: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -75: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -74: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -73: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -72: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -71: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -70: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -69: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -68: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -67: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -66: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -65: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -64: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -63: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -62: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -61: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -60: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -59: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -58: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -57: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -56: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -55: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -54: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -53: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -52: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -51: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -50: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -49: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -48: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -47: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -46: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -45: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -44: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -43: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -42: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -41: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -40: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -39: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -38: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -37: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -36: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -35: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -34: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -33: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -32: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -31: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -30: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -29: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -28: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -27: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -26: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -25: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -24: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -23: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -22: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -21: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -20: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -19: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -18: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -17: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -16: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -15: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -14: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -13: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -12: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -11: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -10: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -9: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -8: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -7: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -6: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -5: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -4: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -3: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -2: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes -1: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 0: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 1: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 2: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 3: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 4: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 5: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 6: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 7: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 8: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 9: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 10: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 11: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 12: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 13: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 14: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 15: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 16: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 17: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 18: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 19: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 20: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 21: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 22: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 23: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 24: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 25: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 26: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 27: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 28: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 29: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 30: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 31: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 32: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 33: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 34: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 35: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 36: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 37: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 38: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 39: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 40: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 41: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 42: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 43: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 44: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 45: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 46: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 47: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 48: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 49: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 50: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 51: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 52: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 53: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 54: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 55: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 56: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 57: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 58: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 59: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 60: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 61: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 62: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 63: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 64: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 65: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 66: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 67: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 68: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 69: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 70: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 71: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 72: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 73: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 74: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 75: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 76: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 77: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 78: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 79: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 80: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  },
+  {
+    "type": "essay",
+    "question": "Fejezet 14 kiegeszito kerdes 81: Ismertesse a HAND kulonfele alkalmazasait az arvizkezelesben!",
+    "explanation": "HAND: arvizveszelyes terep azonositasa, hataselemzese, vizhozmgorbe, validacio."
+  }
+]

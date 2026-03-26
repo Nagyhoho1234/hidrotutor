@@ -1,0 +1,846 @@
+{
+  "chapter": "ch14",
+  "total_issues": 105,
+  "fixes": [
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ebben a fejezetben az alapelvekből kiindulva fejlesztjük ki a HAND-koncepciót",
+      "suggested": "Ebben a fejezetben az alapelvekből kiindulva bemutatjuk a HAND-koncepciót",
+      "reason": "A „fejlesztjük ki” angolos, szó szerinti fordítás; tankönyvi szövegben természetesebb a „bemutatjuk” vagy „kifejtjük”."
+    },
+    {
+      "line_approx": 8,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "tárgyaljuk a GIS-szoftverben történő gyakorlati megvalósítást",
+      "suggested": "tárgyaljuk a gyakorlati megvalósítást GIS-szoftverben",
+      "reason": "A „-ban történő” szerkezet körülményes, fordításszagú megfogalmazás."
+    },
+    {
+      "line_approx": 12,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az EGM2008 geoid",
+      "suggested": "az EGM2008 geoid",
+      "reason": "Magyar szaknyelvben a bevett alak a „geoid”, nem a szóvégi mássalhangzó nélküli forma."
+    },
+    {
+      "line_approx": 16,
+      "category": "register",
+      "severity": "low",
+      "original": "ez bőven az egy nagyobb árvíz hatótávolságán belül van",
+      "suggested": "ez bőven egy nagyobb árvíz hatásterületén belül van",
+      "reason": "A „hatótávolság” inkább műszaki eszközökre, fegyverekre jellemző; árvízre természetesebb a „hatásterület”."
+    },
+    {
+      "line_approx": 18,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ugyanez a logika érvényes mindenhol, ahol folyók áramlanak.",
+      "suggested": "Ugyanez az elv minden folyó menti területen érvényes.",
+      "reason": "A „folyók áramlanak” szó szerinti, angolos megfogalmazás; magyarul a folyó „folyik”."
+    },
+    {
+      "line_approx": 27,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a „legközelebbi\" fogalmát nem a légvonalbeli távolság, hanem a hidrológiai lefolyási útvonal határozza meg",
+      "suggested": "a „legközelebbi\" itt nem légvonalbeli távolságot jelent, hanem a hidrológiai lefolyási útvonal alapján értendő",
+      "reason": "Az eredeti mondat nehézkes, angolos szerkezetű; a javasolt változat természetesebb magyar tudományos próza."
+    },
+    {
+      "line_approx": 29,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a geomorfológusok „lejtőhelyzetnek\" neveznek",
+      "suggested": "a geomorfológusok „lejtőbeli helyzetnek\" neveznek",
+      "reason": "A „lejtőhelyzet” szokatlan, kevéssé bevett összetétel; a kibontott forma természetesebb."
+    },
+    {
+      "line_approx": 31,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "közvetlenül összehasonlíthatóvá válik az árvízmélységgel",
+      "suggested": "közvetlenül összevethető az árvízmélységgel",
+      "reason": "A „-vá válik” szerkezet itt feleslegesen körülményes; az „összevethető” tömörebb és természetesebb."
+    },
+    {
+      "line_approx": 35,
+      "category": "register",
+      "severity": "low",
+      "original": "A HAND egy tágabb családba tartozik a domborzatból levezetett közelségmértékek között",
+      "suggested": "A HAND a domborzatból levezetett közelségmértékek tágabb csoportjába tartozik",
+      "reason": "A „családba tartozik” kissé köznyelvi-metaforikus; tudományos szövegben a „csoport” természetesebb."
+    },
+    {
+      "line_approx": 39,
+      "category": "register",
+      "severity": "medium",
+      "original": "egy hosszú, enyhe lejtőn lévő cella lassabban csorog le",
+      "suggested": "egy hosszú, enyhe lejtőn lévő cellából a lefolyás lassabban jut le",
+      "reason": "A „csorog le” túl képszerű, nem elég akadémiai regiszterű ebben a kontextusban."
+    },
+    {
+      "line_approx": 43,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Egy a gerinc közelében lévő pont, nagy függőleges távolsággal a vízfolyástól és kis távolsággal a gerinctől, a felső, magasabban fekvő zónában van.",
+      "suggested": "A gerinc közelében lévő pont, amely nagy függőleges távolságra van a vízfolyástól és kis távolságra a gerinctől, a felső, magasabban fekvő zónában található.",
+      "reason": "Az „Egy ... pont” szerkezet és a jelzők halmozása angolos; vonatkozó mellékmondattal természetesebb."
+    },
+    {
+      "line_approx": 44,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Egy a vízfolyás közelében lévő pont, kis HAND-dal és nagy távolsággal a gerinctől, az alsó vagy hullámtéri zónában van.",
+      "suggested": "A vízfolyás közelében lévő pont, amelynek kicsi a HAND-értéke és nagy a távolsága a gerinctől, az alsó vagy hullámtéri zónában található.",
+      "reason": "Jelzőhalmozó, angolos szerkezet; a magyarban természetesebb a mellékmondatos megoldás."
+    },
+    {
+      "line_approx": 45,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Egy a gerinc és a vízfolyás között félúton lévő pont az átmeneti lejtőzónában van.",
+      "suggested": "A gerinc és a vízfolyás között félúton fekvő pont az átmeneti lejtőzónában található.",
+      "reason": "Az „Egy ... lévő pont” szerkezet angolos és nehézkes."
+    },
+    {
+      "line_approx": 50,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Amazóniai ökoszisztémák",
+      "suggested": "amazóniai ökoszisztémák",
+      "reason": "Melléknévi használatban a földrajzi jelző itt általában kisbetűs."
+    },
+    {
+      "line_approx": 56,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HAND kutatási eszközből operatív infrastruktúra-elemmé válását",
+      "suggested": "A HAND fejlődését, amelynek során kutatási eszközből operatív infrastruktúra-elemmé vált",
+      "reason": "A főnevesített „-vá válását” szerkezet nehézkes, angolos mondatindítás."
+    },
+    {
+      "line_approx": 57,
+      "category": "register",
+      "severity": "medium",
+      "original": "a Texasi Egyetem Austin kampuszán (University of Texas at Austin)",
+      "suggested": "a University of Texas at Austin intézményben",
+      "reason": "Az „Austin kampuszán” szó szerinti fordítás; intézménynévnél természetesebb az eredeti név vagy magyarosabb körülírás."
+    },
+    {
+      "line_approx": 63,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "vállalták a teljes kontinentális Egyesült Államok HAND-jének 10 méteres felbontásban történő előállításához szükséges hatalmas számítási erőfeszítést",
+      "suggested": "elvégezték a teljes kontinentális Egyesült Államokra kiterjedő, 10 méteres felbontású HAND-adatkészlet előállításához szükséges hatalmas számítási munkát",
+      "reason": "Az eredeti szerkezet nehézkes és tükörfordításos; a „vállalták ... erőfeszítést” angolos."
+    },
+    {
+      "line_approx": 71,
+      "category": "register",
+      "severity": "low",
+      "original": "minimális domborzati relieffel rendelkezik",
+      "suggested": "igen csekély a relatív reliefje",
+      "reason": "A „rendelkezik” túlhasznált, körülményes ige; a mondat tömörebben is megfogalmazható."
+    },
+    {
+      "line_approx": 72,
+      "category": "register",
+      "severity": "medium",
+      "original": "finom domborzati kiemelkedéseken helyezkednek el",
+      "suggested": "enyhe domborzati kiemelkedéseken fekszenek",
+      "reason": "A „finom” itt angolos jelentésátvitel, a „helyezkednek el” pedig körülményes."
+    },
+    {
+      "line_approx": 76,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HAND-koncepció számítási szempontból hatékony módot kínál",
+      "suggested": "A HAND-koncepció számítási szempontból hatékony megoldást kínál",
+      "reason": "A „módot kínál” kevésbé természetes ebben a tudományos kontextusban, mint a „megoldást kínál”."
+    },
+    {
+      "line_approx": 205,
+      "category": "register",
+      "severity": "medium",
+      "original": "A súlyozott átlagos megfogalmazás némi magyarázatot igényel",
+      "suggested": "A súlyozott átlagon alapuló megközelítés némi magyarázatot igényel",
+      "reason": "Az „átlagos megfogalmazás” természetellenes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 205,
+      "category": "register",
+      "severity": "low",
+      "original": "olyan HAND-értékeket produkál",
+      "suggested": "olyan HAND-értékeket ad",
+      "reason": "A „produkál” ebben a tudományos prózában kissé idegenül hat."
+    },
+    {
+      "line_approx": 206,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egyetlen vízmolekula sem követ pontosan 4,69 méteres magasságeséssel járó útvonalat",
+      "suggested": "egyetlen vízmolekula sem pontosan 4,69 méter esésű útvonalon jut el a vízfolyásig",
+      "reason": "Az eredeti szerkezet nehézkes és angolos."
+    },
+    {
+      "line_approx": 207,
+      "category": "register",
+      "severity": "low",
+      "original": "Cellánk vizének egy része",
+      "suggested": "Az adott cellába jutó víz egy része",
+      "reason": "A „cellánk” túl közvetlen, kevésbé tankönyvszerű megfogalmazás."
+    },
+    {
+      "line_approx": 208,
+      "category": "word_order",
+      "severity": "low",
+      "original": "az egyes irányokba jutó lefolyási hányaddal súlyozva",
+      "suggested": "az egyes irányokba jutó lefolyási hányadokkal súlyozva",
+      "reason": "A többes szám természetesebb, mert több irányhoz több hányad tartozik."
+    },
+    {
+      "line_approx": 210,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "simább HAND-felületeket eredményez",
+      "suggested": "simább HAND-felületet ad",
+      "reason": "A többes szám és az „eredményez” együtt angolosan hat."
+    },
+    {
+      "line_approx": 210,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "csíkosodási műtermékeket",
+      "suggested": "csíkozódási műtermékeket",
+      "reason": "A magyar szaknyelvben a „csíkozódás” természetesebb alak."
+    },
+    {
+      "line_approx": 211,
+      "category": "calque",
+      "severity": "medium",
+      "original": "a vízfolyás feletti reprezentatív magasságként",
+      "suggested": "a vízfolyáshoz viszonyított reprezentatív magasságként",
+      "reason": "A „feletti” itt szó szerinti tükörfordítás, a viszonyítás pontosabb."
+    },
+    {
+      "line_approx": 214,
+      "category": "heading",
+      "severity": "medium",
+      "original": "A vízfolyáshálózat konzisztenciája",
+      "suggested": "A vízfolyáshálózat és a DEM összhangja",
+      "reason": "A „konzisztencia” itt kissé idegen; az „összhang” természetesebb magyar címszó."
+    },
+    {
+      "line_approx": 217,
+      "category": "register",
+      "severity": "low",
+      "original": "megsértése mégis a HAND-számítás egyik leggyakoribb hibája",
+      "suggested": "ennek megsértése mégis a HAND-számítás egyik leggyakoribb hibaforrása",
+      "reason": "A „követelmény megsértése ... hiba” szerkezet nehézkes; a „hibaforrás” pontosabb."
+    },
+    {
+      "line_approx": 219,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "bármely adott DEM-től függetlenül",
+      "suggested": "bármely konkrét DEM-től függetlenül",
+      "reason": "Az „adott” itt angolos töltelékszó; a „konkrét” természetesebb."
+    },
+    {
+      "line_approx": 220,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az eredményül kapott vízfolyáscellák",
+      "suggested": "az így kapott vízfolyáscellák",
+      "reason": "Az „eredményül kapott” körülményes, fordításszagú."
+    },
+    {
+      "line_approx": 221,
+      "category": "register",
+      "severity": "medium",
+      "original": "Minden ilyen eltolt vízfolyásból számított HAND-érték ezen összeggel lesz hibás",
+      "suggested": "Minden ilyen eltolódott vízfolyásból számított HAND-érték ekkora hibát fog tartalmazni",
+      "reason": "Az „ezen összeggel lesz hibás” magyartalanul hangzik."
+    },
+    {
+      "line_approx": 221,
+      "category": "calque",
+      "severity": "medium",
+      "original": "potenciálisan árvízbiztosnak minősítve hullámtéri cellákat",
+      "suggested": "így akár árvízbiztosnak is minősíthet hullámtéri cellákat",
+      "reason": "A jelen idejű határozói igenév itt angolos, nehézkes szerkezet."
+    },
+    {
+      "line_approx": 224,
+      "category": "register",
+      "severity": "low",
+      "original": "kevesebb mint egy cellaszélességet foglal el",
+      "suggested": "kevesebb mint egy cella szélességének felel meg",
+      "reason": "A „foglal el” itt kissé mechanikus; a javasolt forma természetesebb."
+    },
+    {
+      "line_approx": 225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a vízfolyásmeder, a közeli part és a szomszédos szárazföld súlyozott átlagát képviselheti",
+      "suggested": "a vízfolyásmeder, a közeli part és a szomszédos szárazföld magasságának súlyozott átlagát adhatja",
+      "reason": "A „képviselheti” itt angolos absztrakció."
+    },
+    {
+      "line_approx": 227,
+      "category": "register",
+      "severity": "medium",
+      "original": "ami a HAND-nak szükséges",
+      "suggested": "amire a HAND-számításhoz szükség van",
+      "reason": "Az eredeti szerkezet magyartalanul tömör."
+    },
+    {
+      "line_approx": 230,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "forrásvizeket",
+      "suggested": "forráságakat",
+      "reason": "A „forrásvizek” itt nem a vízre, hanem a hálózat felső szakaszaira utal; a terminus pontatlan."
+    },
+    {
+      "line_approx": 231,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Robusztusabb megközelítés a vektoros vízfolyáshálózatot használja",
+      "suggested": "Robusztusabb megoldás, ha a vektoros vízfolyáshálózatot használjuk",
+      "reason": "Az eredeti mondat angolos alany-állítmány szerkezetű."
+    },
+    {
+      "line_approx": 231,
+      "category": "adjective_stacking",
+      "severity": "medium",
+      "original": "a térképezett vízfolyások felső végpontjai",
+      "suggested": "a térképen szereplő vízfolyások felső végpontjai",
+      "reason": "A „térképezett vízfolyások” kissé tükörfordításos."
+    },
+    {
+      "line_approx": 234,
+      "category": "terminology",
+      "severity": "low",
+      "original": "minden vonaljellemzőre",
+      "suggested": "minden vonalas objektumra",
+      "reason": "A „vonaljellemző” szó szerinti GIS-fordítás; magyarul a „vonalas objektum” természetesebb."
+    },
+    {
+      "line_approx": 235,
+      "category": "register",
+      "severity": "low",
+      "original": "Az EU-Hydro esetében az ekvivalens minden folyószakasz felső vége.",
+      "suggested": "Az EU-Hydro esetében ennek megfelelően minden folyószakasz felső vége számít forrásfejnek.",
+      "reason": "Az „ekvivalens” itt idegenszerű és elliptikus."
+    },
+    {
+      "line_approx": 237,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "egy bináris rasztert hozva létre 1 értékkel a forrásfej-cellákon és 0-val mindenhol máshol",
+      "suggested": "így egy bináris rasztert kapunk, amelyben a forrásfejcellák értéke 1, minden más celláé pedig 0",
+      "reason": "A „hozva létre” szerkezet és a „forrásfej-cellákon” megfogalmazás nehézkes."
+    },
+    {
+      "line_approx": 240,
+      "category": "register",
+      "severity": "medium",
+      "original": "Minden 1-es vagy nagyobb értékű cella egy vízfolyáson van.",
+      "suggested": "Minden 1 vagy annál nagyobb értékű cella a vízfolyáshálózathoz tartozik.",
+      "reason": "Az „egy vízfolyáson van” pongyola; a hálózathoz tartozás pontosabb."
+    },
+    {
+      "line_approx": 243,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az eredményül kapott hálózat topológiája és kiterjedése megegyezik az eredeti vektoros hálózatéval",
+      "suggested": "Az így kapott hálózat topológiája és kiterjedése megegyezik az eredeti vektoros hálózatéval",
+      "reason": "Az „eredményül kapott” fölöslegesen körülményes."
+    },
+    {
+      "line_approx": 251,
+      "category": "other",
+      "severity": "high",
+      "original": "Fejlett tájaikban az ember alkotta szerkezetek",
+      "suggested": "Erősen átalakított tájakban az ember alkotta létesítmények",
+      "reason": "A „Fejlett tájaikban” nyelvtanilag hibás és félreérthető."
+    },
+    {
+      "line_approx": 252,
+      "category": "register",
+      "severity": "medium",
+      "original": "A hagyományos mélyedésfeltöltés miatt a DEM-ből levezetett vízfolyás megkerülheti ezeket az akadályokat",
+      "suggested": "Hagyományos mélyedésfeltöltés esetén a DEM-ből levezetett vízfolyás megkerülheti ezeket az akadályokat",
+      "reason": "Az „... miatt” itt okhatározóként kevésbé természetes, mint a feltételes keret."
+    },
+    {
+      "line_approx": 254,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "monoton csökkenő magasságokat kényszerít ki",
+      "suggested": "monoton csökkenő magassági sort ír elő",
+      "reason": "A „kényszerít ki” szó szerinti fordításízű."
+    },
+    {
+      "line_approx": 255,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "azt az előző magasságra csökkentik",
+      "suggested": "akkor azt az előző magasságra csökkentjük",
+      "reason": "Az általános alanyos többes szám itt természetesebb, mint a személytelen szerkezet."
+    },
+    {
+      "line_approx": 257,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ez különbözik a 9. fejezetben tárgyalt teljes vízfolyás-beégetés (stream-burning) megközelítéstől",
+      "suggested": "Ez különbözik a 9. fejezetben tárgyalt teljes vízfolyás-beégetési (stream-burning) megközelítéstől",
+      "reason": "A jelzős szerkezet toldalékolása hibás; melléknévi alak szükséges."
+    },
+    {
+      "line_approx": 261,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A megoldás az ismert folyó-középvonal használata a kondicionáláshoz",
+      "suggested": "A megoldás az ismert folyóközépvonal használata a kondicionáláshoz",
+      "reason": "A „folyó-középvonal” kötőjeles írásmódja indokolatlan."
+    },
+    {
+      "line_approx": 265,
+      "category": "register",
+      "severity": "medium",
+      "original": "különleges szempontot jelentenek a HAND-számításnál",
+      "suggested": "külön kezelést igényelnek a HAND-számítás során",
+      "reason": "A „különleges szempontot jelentenek” angolos, elvont megfogalmazás."
+    },
+    {
+      "line_approx": 267,
+      "category": "passive_voice",
+      "severity": "medium",
+      "original": "Az állandó vízként osztályozott területek kizárásra kerülnek a HAND-alapú árvízelemzésből.",
+      "suggested": "Az állandó víznek minősített területeket kizárjuk a HAND-alapú árvízelemzésből.",
+      "reason": "A „kizárásra kerülnek” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 268,
+      "category": "calque",
+      "severity": "medium",
+      "original": "esemény kapcsán elöntött területektől",
+      "suggested": "egy-egy árvízi esemény során elöntött területektől",
+      "reason": "Az „event-based” szó szerinti fordítása itt természetellenes."
+    },
+    {
+      "line_approx": 270,
+      "category": "register",
+      "severity": "medium",
+      "original": "gyakorlati tartalom nélküli fogalom",
+      "suggested": "gyakorlatilag értelmezhetetlen fogalom",
+      "reason": "Az eredeti kifejezés nehézkes és kevéssé idiomatikus."
+    },
+    {
+      "line_approx": 403,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A Tisza hullámtere esetén, ahol szinte az egész táj a 0-10 m HAND-tartományba esik, a 0-5 m tartományban 0,5 méteres lépésközű finomabb osztályozás informatívabb lehet.",
+      "suggested": "A Tisza hullámterén, ahol szinte az egész táj a 0-10 m-es HAND-tartományba esik, a 0-5 m-es tartomány finomabb, 0,5 méteres lépésközű osztályozása informatívabb lehet.",
+      "reason": "Az „esetén” szerkezet és a jelzős lánc nehézkes; természetesebb a helyhatározós megfogalmazás és a magyarosabb szórend."
+    },
+    {
+      "line_approx": 404,
+      "category": "register",
+      "severity": "low",
+      "original": "ez óriási gyakorlati jelentőségű a területhasználat-tervezés és a biztosítási értékelés szempontjából",
+      "suggested": "ennek nagy gyakorlati jelentősége van a területhasználat-tervezésben és a biztosítási értékelésben",
+      "reason": "Az „óriási” kissé publicisztikus; tudományos regiszterben visszafogottabb megfogalmazás természetesebb."
+    },
+    {
+      "line_approx": 410,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A magas HAND-értékű területek átlátszóként jelennek meg, lehetővé téve a dombárnyékolás domborzati kontextusának megjelenítését.",
+      "suggested": "A magas HAND-értékű területek átlátszóak, így a dombárnyékolás jobban megmutatja a domborzati környezetet.",
+      "reason": "Az „átlátszóként jelennek meg” és a „lehetővé téve ... megjelenítését” angolos, főnevesítő szerkezet."
+    },
+    {
+      "line_approx": 411,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez a vizualizáció hidraulikai modellezés nélkül azonnal kommunikálja az árvízveszélyeztetettséget.",
+      "suggested": "Ez az ábra hidraulikai modellezés nélkül is azonnal érzékelteti az árvízveszélyt.",
+      "reason": "A „kommunikálja” itt angol tükör; magyarul természetesebb az „érzékelteti” vagy „jól mutatja”."
+    },
+    {
+      "line_approx": 415,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A D8-ból és D-végtelenből levezetett HAND közötti különbségek leginkább sima lejtőkön és kis reliefű területeken láthatók.",
+      "suggested": "A D8 és a D-végtelen módszerrel számított HAND-felületek közötti különbségek leginkább sima lejtőkön és kis reliefű területeken láthatók.",
+      "reason": "A „D8-ból és D-végtelenből levezetett HAND” nehézkes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 418,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "kis reliefű területeken",
+      "suggested": "kis reliefű területeken / csekély reliefű területeken / kis szintkülönbségű területeken",
+      "reason": "A „relief” használata érthető, de magyar tudományos prózában a „csekély reliefű” vagy „kis szintkülönbségű” természetesebb."
+    },
+    {
+      "line_approx": 421,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A Nagy Magyar Alföldön azonban",
+      "suggested": "A Nagyalföldön azonban",
+      "reason": "A bevett magyar földrajzi név a „Nagyalföld”; a „Nagy Magyar Alföld” szokatlan és idegenszerű."
+    },
+    {
+      "line_approx": 422,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ahol a lejtések fok töredékekben mérhetők, és a domborzatnak nagyon kevés textúrája van",
+      "suggested": "ahol a lejtés csak foktöredékekben mérhető, és a domborzat alig tagolt",
+      "reason": "A „fok töredékekben” hibás szerkezet, a „textúrája van” pedig angol tükörfordítás."
+    },
+    {
+      "line_approx": 423,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A D8 algoritmus párhuzamos csíkozási mintákat hoz létre sima felületen",
+      "suggested": "A D8 algoritmus sima felületen párhuzamos csíkozódási mintázatot eredményez",
+      "reason": "A „hoz létre” túl szó szerinti; a „csíkozási minták” is kevésbé természetes, mint a „csíkozódási mintázat”."
+    },
+    {
+      "line_approx": 424,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A D-végtelen algoritmus, a lefolyás arányos elosztásával a folytonos lejtésszög alapján, sima felületet produkál ezek nélkül a műtermékek nélkül.",
+      "suggested": "A D-végtelen algoritmus ezzel szemben a lefolyást a folytonos lejtésszög alapján arányosan osztja el, ezért simább felületet ad, ilyen műtermékek nélkül.",
+      "reason": "A közbeékelt határozó és a „produkál” angolos; a mondat magyarosabb szerkesztést igényel."
+    },
+    {
+      "line_approx": 426,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A gyakorlati különbség az árvíztérképezésben az, hogy a D8 HAND-felületek szabálytalan, lépcsőzetes árvízkiterjedés-határokat produkálnak küszöbölés esetén",
+      "suggested": "Az árvíztérképezésben ennek az a gyakorlati következménye, hogy a D8-cal számított HAND-felületek küszöböléskor szabálytalan, lépcsőzetes elöntési határokat adnak",
+      "reason": "Az „az, hogy” szerkezet, a „produkálnak” és az „árvízkiterjedés-határok” mind fordításszagúak."
+    },
+    {
+      "line_approx": 426,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "árvízkiterjedés-határokat",
+      "suggested": "elöntési határokat",
+      "reason": "Az „árvízkiterjedés-határ” nehézkes tükörfordítás; a magyar szaknyelvben az „elöntési határ” természetesebb."
+    },
+    {
+      "line_approx": 427,
+      "category": "register",
+      "severity": "low",
+      "original": "pl. „mutassuk meg az összes cellát HAND < 3 m-rel\"",
+      "suggested": "például: „jelenítsük meg az összes, 3 m-nél kisebb HAND-értékű cellát”",
+      "reason": "A közvetlen felszólító idézet és a „HAND < 3 m-rel” forma magyartalan; tudományos szövegben pontosabb parafrázis kell."
+    },
+    {
+      "line_approx": 428,
+      "category": "calque",
+      "severity": "medium",
+      "original": "ahol az elöntés határa 1 méteres vízszintváltozásra kilométereken át pásztázhat",
+      "suggested": "ahol az elöntés határa 1 méteres vízszintváltozás hatására kilométerekkel is eltolódhat",
+      "reason": "A „pásztázhat” itt angol tükörfordítás; magyarul nem természetes ebben a jelentésben."
+    },
+    {
+      "line_approx": 431,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Mindkét módszer azonban a DEM bizonytalanságának mértékéig bizonytalan.",
+      "suggested": "Mindkét módszer bizonytalanságát alapvetően a DEM bizonytalansága határozza meg.",
+      "reason": "Az eredeti mondat tautologikus és angolos szerkezetű."
+    },
+    {
+      "line_approx": 432,
+      "category": "register",
+      "severity": "low",
+      "original": "a HAND két magassági érték különbségét tartalmazza",
+      "suggested": "a HAND két magassági érték különbségéből adódik",
+      "reason": "A „tartalmazza” itt pontatlan, kevésbé természetes tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 434,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A D-végtelen preferálása ezért inkább esztétikai és elméleti, nem pedig bizonyított pontossági kérdés",
+      "suggested": "Ezért a D-végtelen módszer előnyben részesítése inkább esztétikai és elméleti megfontolás, nem pedig igazolt pontossági előny",
+      "reason": "A „preferálása” idegenszerű; magyarul természetesebb az „előnyben részesítése”."
+    },
+    {
+      "line_approx": 439,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 14.8.1 Az Egyesült Államok kontinentális HAND-adatkészlete",
+      "suggested": "### 14.8.1 A kontinentális Egyesült Államok HAND-adatkészlete",
+      "reason": "A jelenlegi cím szórendje angolos; a földrajzi megjelölés magyarul természetesebben kerül a jelzett szó elé."
+    },
+    {
+      "line_approx": 440,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A mai napig legambiciózusabb HAND-számítás a teljes kontinentális Egyesült Államok 10 méteres HAND-raszterének előállítása volt.",
+      "suggested": "A mai napig a legambiciózusabb HAND-számítás a kontinentális Egyesült Államok teljes, 10 méteres felbontású HAND-raszterének előállítása volt.",
+      "reason": "Hiányzik a névelő, és a jelzős szerkezet angolosan torlódik."
+    },
+    {
+      "line_approx": 441,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Ezt az erőfeszítést Yan Liu és Xiaowen Wang vezette az Illinoisi Egyetemen (University of Illinois), a Texasi Egyetemmel (University of Texas at Austin) együttműködve, és a National Elevation Datasetből megközelítőleg 10 milliárd rácscellát dolgoztak fel",
+      "suggested": "A munkát Yan Liu és Xiaowen Wang vezette az Illinoisi Egyetemen (University of Illinois), a Texasi Egyetemmel (University of Texas at Austin) együttműködésben; a National Elevation Datasetből megközelítőleg 10 milliárd rácscellát dolgoztak fel",
+      "reason": "Az „erőfeszítés” és a hosszú, egymásra torlódó szerkezet fordításszagú; tagoltabb mondat természetesebb."
+    },
+    {
+      "line_approx": 443,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a National Center for Supercomputing Applications (NCSA) intézménynél és a Stampede szuperszámítógépen a Texas Advanced Computing Center (TACC) intézménynél",
+      "suggested": "a National Center for Supercomputing Applications (NCSA) Roger nevű szuperszámítógépén és a Texas Advanced Computing Center (TACC) Stampede nevű szuperszámítógépén",
+      "reason": "Az „intézménynél” ismétlése magyartalan; a magyarban természetesebb a birtokos szerkezet."
+    },
+    {
+      "line_approx": 453,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez biztosítja a domborzati alapot az Egyesült Államok Nemzeti Vízmodelljének",
+      "suggested": "Ez adja a domborzati alapot az Egyesült Államok Nemzeti Vízmodelljéhez",
+      "reason": "A „biztosítja a ... alapot” tipikus angol tükör; magyarul az „adja” természetesebb."
+    },
+    {
+      "line_approx": 458,
+      "category": "register",
+      "severity": "low",
+      "original": "Az egyesült államokbeli példát követve",
+      "suggested": "Az Egyesült Államokban megvalósított példát követve",
+      "reason": "A tulajdonnév kisbetűs írása hibás, és a „-beli” forma itt kissé nehézkes."
+    },
+    {
+      "line_approx": 460,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Bár a JRC specifikus módszertana különbözik a TauDEM-alapú HAND-megközelítéstől",
+      "suggested": "Bár a JRC konkrét módszertana eltér a TauDEM-alapú HAND-megközelítéstől",
+      "reason": "A „specifikus” itt feleslegesen idegen hangzású; a „konkrét” természetesebb."
+    },
+    {
+      "line_approx": 461,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az alapul szolgáló domborzatfeldolgozás -- kondicionálás, folyásirány, vízfolyás-levezetés -- ugyanazokat az elveket követi",
+      "suggested": "az alapul szolgáló domborzatfeldolgozás -- a kondicionálás, a folyásirány-számítás és a vízfolyások levezetése -- ugyanazokra az elvekre épül",
+      "reason": "A felsorolás tömör, de angolos; a „követi az elveket” helyett magyarosabb az „elvekre épül”."
+    },
+    {
+      "line_approx": 466,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a standard szoftverek (TauDEM vagy ArcGIS Pro) biztosítják a feldolgozási eszközöket",
+      "suggested": "a szabványos szoftverek (TauDEM vagy ArcGIS Pro) rendelkezésre bocsátják a szükséges feldolgozóeszközöket",
+      "reason": "A „biztosítják az eszközöket” angolos fordulat."
+    },
+    {
+      "line_approx": 467,
+      "category": "register",
+      "severity": "low",
+      "original": "ami jól a modern többmagos munkaállomás vagy egy szerény HPC-allokáció képességein belül van",
+      "suggested": "ami bőven belefér egy korszerű többmagos munkaállomás vagy egy szerényebb HPC-erőforrás kapacitásába",
+      "reason": "A „jól ... belül van” és a „szerény HPC-allokáció” fordításszagú, természetellenes."
+    },
+    {
+      "line_approx": 474,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "főbb folyófolyosók",
+      "suggested": "főbb folyóvölgyek / főbb folyómenti sávok",
+      "reason": "A „folyófolyosó” tükörfordítás-jellegű, magyarul kevésbé bevett."
+    },
+    {
+      "line_approx": 480,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A kontinentális léptékű HAND-számítás számos gyakorlati kihívást rejt az adatok puszta mennyiségén túl",
+      "suggested": "A kontinentális léptékű HAND-számítás az adatok puszta mennyiségén túl számos gyakorlati nehézséget is felvet",
+      "reason": "A „kihívást rejt” angolos fordulat; magyar tudományos stílusban a „nehézséget felvet” természetesebb."
+    },
+    {
+      "line_approx": 481,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Csempézés és szegélyhatások.",
+      "suggested": "Csempézés és peremhatások.",
+      "reason": "A raszteres feldolgozásban a „peremhatás” bevettebb magyar terminus, mint a „szegélyhatás”."
+    },
+    {
+      "line_approx": 484,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az elemzőnek biztosítania kell, hogy a csempehatárok ne vágjanak át érdeklődési területeken",
+      "suggested": "az elemzőnek ügyelnie kell arra, hogy a csempehatárok ne vágják ketté az érdeklődésre számot tartó területeket",
+      "reason": "A „biztosítania kell” és az „érdeklődési területek” angolos megfogalmazás."
+    },
+    {
+      "line_approx": 492,
+      "category": "register",
+      "severity": "low",
+      "original": "mint a TACC vagy az USGS ScienceBase platform",
+      "suggested": "például a TACC vagy az USGS ScienceBase platformja",
+      "reason": "A „mint” itt kevésbé természetes; a példálózó szerkezet magyarosabb a „például” használatával."
+    },
+    {
+      "line_approx": 1203,
+      "category": "plural",
+      "severity": "medium",
+      "original": "A hegyvidéki vízfolyásoknak meredek eséseik, turbulens áramlásuk és jelentősen folyásirányban lejtő vízfelszínük van.",
+      "suggested": "A hegyvidéki vízfolyásokat meredek esés, turbulens áramlás és a folyásirányban jelentősen lejtő vízfelszín jellemzi.",
+      "reason": "A birtokos többes ('eséseik') és a szerkezet angolos; magyarul természetesebb az általánosító állítmányi megfogalmazás."
+    },
+    {
+      "line_approx": 1204,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy HAND = 3 m értékű cella biztonságban lehet, ha egy meredek szakasz felett van",
+      "suggested": "Egy 3 m HAND-értékű cella biztonságban lehet, ha egy meredek szakasz fölött helyezkedik el",
+      "reason": "Az 'Egy HAND = 3 m értékű cella' angolos és nehézkes; magyarul természetesebb a '3 m HAND-értékű cella'."
+    },
+    {
+      "line_approx": 1204,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "ahol a vízfelszín alacsonyabb, mint az átlagos medermagasság",
+      "suggested": "ahol a vízfelszín alacsonyabban van, mint a szakasz átlagos mederszintje",
+      "reason": "A 'medermagasság' szokatlan terminus; a 'mederszint' természetesebb és szakmailag pontosabb."
+    },
+    {
+      "line_approx": 1207,
+      "category": "terminology",
+      "severity": "high",
+      "original": "azonosítja a völgytalakat és a keskeny hullámtereket",
+      "suggested": "azonosítja a völgytalpakat és a keskeny ártereket",
+      "reason": "A 'völgytalak' hibás alak, a 'hullámtér' itt valószínűleg túl szűk vagy szokatlan; általánosabb és természetesebb az 'ártér'."
+    },
+    {
+      "line_approx": 1208,
+      "category": "adjective_stacking",
+      "severity": "high",
+      "original": "a Kelet-afrikai-árok és a Kárpátok hegységben",
+      "suggested": "a Kelet-afrikai-árokban és a Kárpátokban",
+      "reason": "Hibás névszói szerkezet és toldalékolás; a 'Kárpátok hegységben' magyarul természetellenes."
+    },
+    {
+      "line_approx": 1208,
+      "category": "terminology",
+      "severity": "high",
+      "original": "a települések a völgytalakban koncentrálódnak",
+      "suggested": "a települések a völgytalpakon koncentrálódnak",
+      "reason": "A 'völgytalakban' hibás szóalak; helyesen 'völgytalpakon' vagy 'a völgytalpon'."
+    },
+    {
+      "line_approx": 1208,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a HAND-térképezés legalább elsőrendű azonosítást nyújt a veszélyeztetett helyszínekről",
+      "suggested": "a HAND-térképezés legalább első közelítésben azonosítja a veszélyeztetett helyszíneket",
+      "reason": "Az 'elsőrendű azonosítást nyújt' tükörfordítás-ízű; magyarul természetesebb az 'első közelítésben azonosítja'."
+    },
+    {
+      "line_approx": 1213,
+      "category": "other",
+      "severity": "medium",
+      "original": "A domborzati alap, amelyre az árvízi elöntéstérképek épülnek.",
+      "suggested": "A HAND az a domborzati alap, amelyre az árvízi elöntéstérképek épülnek.",
+      "reason": "Hiányzik az állítmányi kapcsolat; a mondat töredékes."
+    },
+    {
+      "line_approx": 1214,
+      "category": "register",
+      "severity": "low",
+      "original": "milyen mélyen áll a víz az egyes vízfolyásszakaszokban egy adott árvízesemény során?",
+      "suggested": "mekkora a vízmélység az egyes vízfolyásszakaszokban egy adott árvízesemény során?",
+      "reason": "A kérdő formájú, beszélt nyelvhez közelebb álló megfogalmazás helyett akadémiai prózában tömörebb a névszói szerkezet."
+    },
+    {
+      "line_approx": 1218,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vízhozam-előrejelzéseket készít",
+      "suggested": "vízhozam-előrejelzéseket ad",
+      "reason": "A modell 'készít' helyett természetesebb, hogy 'ad' vagy 'szolgáltat' előrejelzést."
+    },
+    {
+      "line_approx": 1220,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Vízmérce-megfigyelések",
+      "suggested": "Vízmérce-adatok",
+      "reason": "A felsorolás címeként a 'megfigyelések' itt kevésbé természetes; a 'vízmérce-adatok' bevettebb gyűjtőfogalom."
+    },
+    {
+      "line_approx": 1221,
+      "category": "calque",
+      "severity": "medium",
+      "original": "valós idejű vízszint-leolvasások",
+      "suggested": "valós idejű vízszintadatok",
+      "reason": "A 'leolvasások' szó szerinti fordítás hatását kelti; műszaki szövegben természetesebb az 'adatok'."
+    },
+    {
+      "line_approx": 1222,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Történelmi rekordok",
+      "suggested": "Történeti adatok",
+      "reason": "A 'historical records' tükörfordítása; magyar tudományos nyelvben a 'történeti adatok' természetesebb."
+    },
+    {
+      "line_approx": 1225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a szintetikus minősítési görbék HAND-ból történő felépítését",
+      "suggested": "a HAND-ból származtatott szintetikus vízhozam-görbék felépítését",
+      "reason": "A 'minősítési görbe' az angol 'rating curve' tükörfordítása; magyar hidrológiai szaknyelvben a 'vízhozamgörbe' vagy hasonló megoldás természetesebb."
+    },
+    {
+      "line_approx": 1225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a vízhozam és a mélység közötti konverziót",
+      "suggested": "a vízhozam és a vízmélység közötti átszámítást",
+      "reason": "A 'konverzió' indokolatlan idegen szó; az 'átszámítás' természetesebb magyar tudományos stílusban."
+    },
+    {
+      "line_approx": 1229,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az eredményül kapott HAND-raszter ekkor az infrastruktúra egy állandó része",
+      "suggested": "Az így előálló HAND-raszter ezután az infrastruktúra állandó elemévé válik",
+      "reason": "Az 'ekkor az infrastruktúra egy állandó része' nehézkes és kissé fordításszagú."
+    },
+    {
+      "line_approx": 1230,
+      "category": "word_order",
+      "severity": "low",
+      "original": "annak elöntéstérképpé alakítása csupán az előrejelzett vízmélység és az előre kiszámított HAND-értékek egyszerű összehasonlítását igényli",
+      "suggested": "annak elöntéstérképpé alakításához csupán az előrejelzett vízmélységet kell összevetni az előre kiszámított HAND-értékekkel",
+      "reason": "A főnevesített szerkezet túlterhelt; igés megfogalmazással gördülékenyebb és magyarosabb."
+    },
+    {
+      "line_approx": 1233,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Ez az „előre számítsuk ki a domborzatot, alkalmazzuk az előrejelzést valós időben\" architektúra",
+      "suggested": "Ez az „a domborzatot előre kiszámítjuk, az előrejelzést pedig valós időben alkalmazzuk” felépítés",
+      "reason": "Az 'architektúra' itt anglicizmus; a teljes idézett szerkezet is természetesebb kijelentő formában."
+    }
+  ]
+}

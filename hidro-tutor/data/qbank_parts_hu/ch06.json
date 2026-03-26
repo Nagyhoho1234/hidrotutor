@@ -1,0 +1,3402 @@
+[
+  {
+    "type": "mcq",
+    "question": "Ki formalizálta a térkép-algebrát?",
+    "options": [
+      "A) Blöschl",
+      "B) Dana Tomlin",
+      "C) Maidment",
+      "D) Goodchild"
+    ],
+    "correct": "B",
+    "explanation": "Dana Tomlin az 1980-as években a Yale Egyetemen.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térkép-algebra alapelve?",
+    "options": [
+      "A) Vektoros átfedés",
+      "B) Celláról cellára megfeleltetés algebrai kifejezéssel",
+      "C) 3D modellezés",
+      "D) Idősor-elemzés"
+    ],
+    "correct": "B",
+    "explanation": "Minden cella kimenete a megfelelő bemeneti cellák értékéből számolódik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Tomlin hány kategóriába sorolta a térkép-algebrai műveleteket?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 4",
+      "D) 5"
+    ],
+    "correct": "C",
+    "explanation": "Lokális, fokális, zonális és globális műveletek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a lokális művelet?",
+    "options": [
+      "A) Szomszédsági ablak",
+      "B) Celláról cellára aritmetika",
+      "C) Zónánkénti összesítés",
+      "D) Teljes rács iteráció"
+    ],
+    "correct": "B",
+    "explanation": "Minden cella kimenete csak az adott cella bemeneti értékéből függ.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a fokális művelet példája?",
+    "options": [
+      "A) Két rács összeadása",
+      "B) Lejtés- és kitettségszámítás",
+      "C) Vízgyűjtő-átlag",
+      "D) Távolságfelszín"
+    ],
+    "correct": "B",
+    "explanation": "Szomszédsági ablakot használ (pl. 3×3).",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a zonális művelet?",
+    "options": [
+      "A) Cellánkénti aritmetika",
+      "B) Összesített érték zónánként",
+      "C) Mozgó ablak",
+      "D) Globális iteráció"
+    ],
+    "correct": "B",
+    "explanation": "Pl. vízgyűjtő-átlag magasság.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a raszterkalkulátor?",
+    "options": [
+      "A) Vektoros szerkesztő",
+      "B) Algebrai kifejezést celláról cellára kiértékelő eszköz",
+      "C) GPS-alkalmazás",
+      "D) Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "Bemeneti raszterekre hivatkozó kifejezést értékel ki.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan hivatkozunk rétegevekre az ArcGIS raszterkalkulátorban?",
+    "options": [
+      "A) rétegnév@1",
+      "B) \"rétegnév\"",
+      "C) #rétegnév",
+      "D) [rétegnév]"
+    ],
+    "correct": "B",
+    "explanation": "Idézőjelbe foglalt rétegnevekkel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan hivatkozunk rétegekre a QGIS raszterkalkulátorban?",
+    "options": [
+      "A) \"rétegnév@1\"",
+      "B) 'rétegnév'",
+      "C) rétegnév#1",
+      "D) {rétegnév}"
+    ],
+    "correct": "A",
+    "explanation": "\"rétegnév@1\" formátummal a QGIS-ben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az SCS görbeszám-módszer célja?",
+    "options": [
+      "A) DEM generálás",
+      "B) Lefolyásbecslés csapadékból",
+      "C) Hőmérsékletszámítás",
+      "D) Felszínborítás osztályozása"
+    ],
+    "correct": "B",
+    "explanation": "A csapadékból és talaj/felszínborítás adatokból becsüli a lefolyást.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Con kifejezés?",
+    "options": [
+      "A) Összeadás",
+      "B) Cellánkénti if-then-else logika",
+      "C) Logaritmus",
+      "D) Átlagolás"
+    ],
+    "correct": "B",
+    "explanation": "Feltételes raszterszámítás: ha igaz → X, különben → Y.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a P = ET + R + ΔS egyenlet?",
+    "options": [
+      "A) Bernoulli-egyenlet",
+      "B) Vízháztartási egyenlet",
+      "C) Manning-egyenlet",
+      "D) Darcy-törvény"
+    ],
+    "correct": "B",
+    "explanation": "A hidrológia legalapvetőbb összefüggése.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az elemzési környezet (analysis environment)?",
+    "options": [
+      "A) A szoftver verziója",
+      "B) Paraméterek halmaza, amely vezérli a rácsegyeztetést",
+      "C) Az operációs rendszer",
+      "D) A hardverkonfiguráció"
+    ],
+    "correct": "B",
+    "explanation": "Cellaméret, kiterjedés, rögzítő raszter, maszk.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az alapértelmezett kimeneti cellaméret?",
+    "options": [
+      "A) A legfinomabb bemenet",
+      "B) A legdurvább bemenet",
+      "C) A bemenetek átlaga",
+      "D) Mindig 30 m"
+    ],
+    "correct": "B",
+    "explanation": "Alapértelmezés: a bemenetek közötti maximum (legdurvább).",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az alapértelmezett kimeneti kiterjedés?",
+    "options": [
+      "A) A bemenetek uniója",
+      "B) A bemenetek metszete",
+      "C) Az első bemenet",
+      "D) Kézi megadás"
+    ],
+    "correct": "B",
+    "explanation": "Alapértelmezés: a mindkét rács által lefedett metszett terület.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik újramintavételezés a raszterszámítások alapértelmezése?",
+    "options": [
+      "A) Bilineáris",
+      "B) Köbös",
+      "C) Legközelebbi szomszéd",
+      "D) Többségi"
+    ],
+    "correct": "C",
+    "explanation": "A legközelebbi szomszéd az alapértelmezett.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a snap raster?",
+    "options": [
+      "A) Képernyőkép",
+      "B) Referencia-raszter a cellaigazításhoz",
+      "C) Tömörített fájl",
+      "D) Gyors előnézet"
+    ],
+    "correct": "B",
+    "explanation": "Biztosítja, hogy a cellák pontosan illeszkedjenek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az elemzési maszk?",
+    "options": [
+      "A) Tömörítési módszer",
+      "B) Területi korlátozás a számításhoz",
+      "C) Színskála",
+      "D) Fájlformátum"
+    ],
+    "correct": "B",
+    "explanation": "A maszkon kívüli cellák NODATA-t kapnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a bilineáris interpoláció?",
+    "options": [
+      "A) Egyetlen legközelebbi érték",
+      "B) Lineáris interpoláció négy szomszédból",
+      "C) Polinom 16 szomszédból",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "2×2 szomszédságból lineáris interpoláció x és y irányban.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a köbös konvolúció?",
+    "options": [
+      "A) 2×2 szomszédság",
+      "B) 4×4 szomszédság harmadrendű polinom",
+      "C) Egyetlen érték",
+      "D) Átlagolás"
+    ],
+    "correct": "B",
+    "explanation": "Simább eredmény, de túllövés lehetséges.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a többségi újramintavételezés?",
+    "options": [
+      "A) Legközelebbi pont",
+      "B) Leggyakoribb érték a cellaterületen",
+      "C) Lineáris interpoláció",
+      "D) Polinom"
+    ],
+    "correct": "B",
+    "explanation": "Kategorikus raszterek durvítására.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a legközelebbi szomszéd előnye?",
+    "options": [
+      "A) Legsimább",
+      "B) Megőrzi az eredeti értékeket",
+      "C) Legpontosabb",
+      "D) Leggyorsabb folytonos felszíneknél"
+    ],
+    "correct": "B",
+    "explanation": "Pontos értékmegőrzés, jó kategorikushoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a bilineáris előnye?",
+    "options": [
+      "A) Pontos értékek",
+      "B) Sima átmenetek folytonos adatoknál",
+      "C) Jó kategorikushoz",
+      "D) Nincs túllövés"
+    ],
+    "correct": "B",
+    "explanation": "Fokozatos értékátmenet a szomszédok között.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a köbös konvolúció hátránya?",
+    "options": [
+      "A) Blokkos",
+      "B) Túllövés lehetséges",
+      "C) Lassú",
+      "D) Nem sima"
+    ],
+    "correct": "B",
+    "explanation": "A bemeneti tartományon kívüli értékek keletkezhetnek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a NODATA-terjedés a térkép-algebrában?",
+    "options": [
+      "A) NODATA → 0",
+      "B) Bármely NODATA bemenet → NODATA kimenet",
+      "C) NODATA figyelmen kívül",
+      "D) NODATA átlagba"
+    ],
+    "correct": "B",
+    "explanation": "Ha bármely bemeneti cella NODATA, a kimenet is az.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az R = P - I képlet?",
+    "options": [
+      "A) DEM-számítás",
+      "B) Lefolyás = Csapadék - Beszivárgás",
+      "C) Hőmérséklet",
+      "D) Sebesség"
+    ],
+    "correct": "B",
+    "explanation": "A legegyszerűbb lefolyásbecslési paradigma.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a CN-szám (görbeszám)?",
+    "options": [
+      "A) DEM-paraméter",
+      "B) Lefolyási együttható talaj-felszínborítás kombinációhoz",
+      "C) Koordináta",
+      "D) Időlépték"
+    ],
+    "correct": "B",
+    "explanation": "A talajcsoport és felszínborítás kombinációjából származik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az S = 25400/CN - 254 képlet?",
+    "options": [
+      "A) Lejtésszámítás",
+      "B) Visszatartási paraméter az SCS módszerben",
+      "C) Sebesség",
+      "D) Terület"
+    ],
+    "correct": "B",
+    "explanation": "Az S visszatartási paraméter milliméterben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az Ia = 0.2 × S képlet?",
+    "options": [
+      "A) Lefolyás",
+      "B) Kezdeti veszteség az SCS módszerben",
+      "C) Hőmérséklet",
+      "D) Terület"
+    ],
+    "correct": "B",
+    "explanation": "A kezdeti veszteség a visszatartás 20%-a.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor kell az elemzési környezetet felülbírálni?",
+    "options": [
+      "A) Soha",
+      "B) Ha az alapértelmezett információveszteséget okoz",
+      "C) Mindig",
+      "D) Csak nyomtatáskor"
+    ],
+    "correct": "B",
+    "explanation": "Drága, finom adatok megőrzéséhez a legfinomabb felbontás állítandó.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen sorrendben dolgozik a raszterkalkulátor?",
+    "options": [
+      "A) Kiterjedés → cellaméret → igazítás → újramintavételezés → maszk → számítás",
+      "B) Számítás → kiterjedés → cellaméret",
+      "C) Maszk → számítás → kiterjedés",
+      "D) Véletlenszerű"
+    ],
+    "correct": "A",
+    "explanation": "Meghatározott lépéssorozatban: kiterjedés, cellaméret, igazítás, újraminta, maszk, számítás, kiírás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GeoTIFF előnye a kimenethez?",
+    "options": [
+      "A) Csak ArcGIS olvassa",
+      "B) Interoperábilis, CRS-t tartalmaz, tömöríthető",
+      "C) Szöveges",
+      "D) Csak egész számok"
+    ],
+    "correct": "B",
+    "explanation": "A legtöbb munkához GeoTIFF ajánlott.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik, ha a kimenet egész számúként tárolódik, de a valós érték 1,775?",
+    "options": [
+      "A) Pontos marad",
+      "B) 1 vagy 2 lesz, kerekítési hiba",
+      "C) NODATA lesz",
+      "D) Nem lehetséges"
+    ],
+    "correct": "B",
+    "explanation": "A kerekítés csendben hibás eredményeket produkál.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mire használjuk a Con kifejezést a hidrológiában?",
+    "options": [
+      "A) DEM generálás",
+      "B) Bináris maszkok, lefolyási küszöbök",
+      "C) Idősorok",
+      "D) Vetületi transzformáció"
+    ],
+    "correct": "B",
+    "explanation": "Pl. meredek terep azonosítása: Con(slope > 15, 1, 0).",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az elosztott hidrológiai modell előnye az összevonttal szemben?",
+    "options": [
+      "A) Egyetlen vízgyűjtő-érték",
+      "B) Térben változó paraméterek és eredmények",
+      "C) Egyszerűbb",
+      "D) Kevesebb adat kell"
+    ],
+    "correct": "B",
+    "explanation": "Celláról cellára kiszámított térben változó lefolyás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik platform biztosít bolygóléptékű térkép-algebrát?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) QGIS",
+      "C) Google Earth Engine",
+      "D) Microsoft Excel"
+    ],
+    "correct": "C",
+    "explanation": "A GEE felhőalapú térkép-algebrát kínál petabájtnyi adaton.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az arcpy.sa modul?",
+    "options": [
+      "A) Vektoros szerkesztő",
+      "B) Pythonikus raszter-algebra felület ArcGIS-ben",
+      "C) GPS-modul",
+      "D) Adatbázis-modul"
+    ],
+    "correct": "B",
+    "explanation": "Spatial Analyst modul Python-felülete az ArcGIS Pro-ban.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a QGIS GRASS r.mapcalc?",
+    "options": [
+      "A) Vektoros eszköz",
+      "B) GRASS térkép-algebrai parancsa",
+      "C) GPS-kezelő",
+      "D) Nyomtatási eszköz"
+    ],
+    "correct": "B",
+    "explanation": "A GRASS GIS kifejezésnyelve raszterszámításokhoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az EFAS?",
+    "options": [
+      "A) Magyar vízügyi szervezet",
+      "B) Európai Árvízfigyelő Rendszer",
+      "C) Amerikai DEM-program",
+      "D) Műholdas szenzor"
+    ],
+    "correct": "B",
+    "explanation": "Az EU operatív árvíz-előrejelzési rendszere.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az National Water Model?",
+    "options": [
+      "A) Európai klímamodell",
+      "B) Az USA operatív hidrológiai előrejelzési rendszere",
+      "C) Magyar DEM",
+      "D) QGIS plugin"
+    ],
+    "correct": "B",
+    "explanation": "Az USA rácsalapú hidrológiai modellezési rendszere.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a rasterio Python könyvtár?",
+    "options": [
+      "A) Vektoros kezelő",
+      "B) Raszteradatok olvasása/írása Python-ban",
+      "C) GPS-modul",
+      "D) Webes térképkészítő"
+    ],
+    "correct": "B",
+    "explanation": "Nyílt forráskódú könyvtár raszterkezeléshez.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az xarray?",
+    "options": [
+      "A) GIS-plugin",
+      "B) Többdimenziós tömbkezelő Python-könyvtár",
+      "C) GPS-eszköz",
+      "D) Adatbázis-modul"
+    ],
+    "correct": "B",
+    "explanation": "Különösen klíma- és időjárási rácsadatokhoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a vízháztartási egyenlet elosztott alakja?",
+    "options": [
+      "A) P = ET + R + ΔS egy szám",
+      "B) R_ij = P_ij - ET_ij - ΔS_ij minden cellára",
+      "C) Q = v × A",
+      "D) F = m × a"
+    ],
+    "correct": "B",
+    "explanation": "Celláról cellára alkalmazva a térkép-algebrával.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor megfelelő a legközelebbi szomszéd újramintavételezés?",
+    "options": [
+      "A) Folytonos magassági adatoknál",
+      "B) Kategorikus és egész adatoknál",
+      "C) Csapadékrácsoknál",
+      "D) Hőmérsékletnél"
+    ],
+    "correct": "B",
+    "explanation": "Felszínborítás, talajtípus, folyásiránykódok.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor megfelelő a bilineáris interpoláció?",
+    "options": [
+      "A) Felszínborítás",
+      "B) Folytonos lebegőpontos adatoknál",
+      "C) Folyásiránykódok",
+      "D) Zónaazonosítók"
+    ],
+    "correct": "B",
+    "explanation": "Csapadék, magasság, hőmérséklet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az elemzési cellaméret-beállítás hatása?",
+    "options": [
+      "A) A fájlnevet befolyásolja",
+      "B) A kimeneti felbontást határozza meg",
+      "C) A színskálát változtatja",
+      "D) A CRS-t módosítja"
+    ],
+    "correct": "B",
+    "explanation": "A leghatásosabb beállítás a raszterszámítások minőségére.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik, ha két 150 m és 100 m cellaméretű rácsot vonunk ki?",
+    "options": [
+      "A) A kimenet 100 m",
+      "B) A kimenet 150 m (alapértelmezés: legdurvább)",
+      "C) A kimenet 125 m",
+      "D) Hiba"
+    ],
+    "correct": "B",
+    "explanation": "Az alapértelmezett viselkedés a legdurvább felbontást választja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen problémát okoz a legdurvább-alapú kimenet?",
+    "options": [
+      "A) Túl sok adat",
+      "B) Információveszteség a finomabb bemenetnél",
+      "C) Túl gyors",
+      "D) Nincsen probléma"
+    ],
+    "correct": "B",
+    "explanation": "A finom adatok felét vagy többet eldobja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a csapadék-mínusz-beszivárgás paradigma?",
+    "options": [
+      "A) DEM-feldolgozás",
+      "B) Az elosztott lefolyásbecslés fogalmi magja",
+      "C) Koordináta-átalakítás",
+      "D) Felszínborítás-osztályozás"
+    ],
+    "correct": "B",
+    "explanation": "Ami az égből hullik mínusz amit a talaj elnyel = ami a felszínen folyik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mit csinál a max(P - L, 0) kifejezés?",
+    "options": [
+      "A) DEM-et generál",
+      "B) Biztosítja, hogy a lefolyás nem negatív",
+      "C) CRS-t vált",
+      "D) NODATA-t töröl"
+    ],
+    "correct": "B",
+    "explanation": "Ha veszteségek > csapadék, a lefolyás 0, nem negatív.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a görbeszám-rács létrehozásának módja?",
+    "options": [
+      "A) DEM-feldolgozás",
+      "B) Feltételes kifejezés talajcsoport és felszínborítás alapján",
+      "C) GPS-mérés",
+      "D) Interpoláció"
+    ],
+    "correct": "B",
+    "explanation": "Con/keresőtábla rendel CN-értéket minden cellához.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az elemzési kiterjedés beállításának célja?",
+    "options": [
+      "A) Fájlméret csökkentése",
+      "B) A számítás földrajzi határainak vezérlése",
+      "C) Szimbológia módosítása",
+      "D) CRS-váltás"
+    ],
+    "correct": "B",
+    "explanation": "Alapértelmezés: metszet; felülbírálható unióra vagy kézi téglalapra.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a maszk réteg célja?",
+    "options": [
+      "A) Szín-módosítás",
+      "B) A számítás egy adott régióra korlátozása",
+      "C) Fájltömörítés",
+      "D) CRS-konverzió"
+    ],
+    "correct": "B",
+    "explanation": "A maszkon kívüli cellák NODATA-t kapnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan ellenőrizzük a raszterszámítás eredményét?",
+    "options": [
+      "A) Nyomtatással",
+      "B) Explore/Identify eszközzel cellaértékeket vizsgálva",
+      "C) Fájlméret alapján",
+      "D) Véletlenszerűen"
+    ],
+    "correct": "B",
+    "explanation": "Kattintásra megjelennek a rétegek értékei az adott helyen.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a felbontási eltérés rossz irányban?",
+    "options": [
+      "A) A legdurvább diktálja, de a cél finomabb kellene legyen",
+      "B) A fájl túl nagy",
+      "C) A CRS hibás",
+      "D) A szimbológia rossz"
+    ],
+    "correct": "A",
+    "explanation": "Pl. városi csapadékvíz-modellhez 5 m kimenet kell, annak ellenére, hogy a csapadék 1 km-es.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ArcGIS Pro Environments fül?",
+    "options": [
+      "A) Szimbológia-beállítás",
+      "B) Az elemzési környezet paraméterei",
+      "C) Nyomtatási beállítások",
+      "D) Fájlkezelő"
+    ],
+    "correct": "B",
+    "explanation": "Cellaméret, kiterjedés, maszk, snap raster beállítása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a QGIS Processing raszterszámítás?",
+    "options": [
+      "A) Vektoros szerkesztés",
+      "B) A raszterkalkulátor és GRASS/SAGA eszközök raszterműveletekhez",
+      "C) GPS-feldolgozás",
+      "D) Webes publikálás"
+    ],
+    "correct": "B",
+    "explanation": "A QGIS Processing keretrendszere biztosítja a raszterszámításokat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen formátumban ajánlott a raszterkalkulátor kimenetét menteni?",
+    "options": [
+      "A) Shapefile",
+      "B) GeoTIFF (.tif)",
+      "C) ASCII",
+      "D) JPEG"
+    ],
+    "correct": "B",
+    "explanation": "GeoTIFF a legajánlottabb: interoperábilis, CRS-t tárol, tömöríthető.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ESRI Grid formátum?",
+    "options": [
+      "A) Nyílt forráskód",
+      "B) ESRI tulajdonosi bináris raszterformátum",
+      "C) Szöveges",
+      "D) Vektoros"
+    ],
+    "correct": "B",
+    "explanation": "Ha nem adunk meg .tif kiterjesztést, az ArcGIS ESRI Grid-ben ment.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a rioxarray Python könyvtár?",
+    "options": [
+      "A) GIS plugin",
+      "B) xarray és rasterio kombinációja raszterkezeléshez",
+      "C) GPS-modul",
+      "D) Adatbázis"
+    ],
+    "correct": "B",
+    "explanation": "Térkép-algebrát tesz lehetővé Python-környezetben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térkép-algebra fogalmi eleganciája?",
+    "options": [
+      "A) Bonyolult matematika",
+      "B) Egyetlen képlet egymillió helyszínre egyszerre",
+      "C) Csak egy cellára",
+      "D) Csak vektoros"
+    ],
+    "correct": "B",
+    "explanation": "Ha felírhatunk egy képletet egy helyre, egyszerre alkalmazhatjuk mindenhol.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a cellaméret-harmonizálás?",
+    "options": [
+      "A) CRS-váltás",
+      "B) Különböző felbontású rácsok közös geometriára hozása",
+      "C) Szimbológia",
+      "D) Nyomtatás"
+    ],
+    "correct": "B",
+    "explanation": "Újramintavételezéssel közös cellaméretre és igazításra hozás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik a beszivárgási értékek többségével a legközelebbi-szomszéd alapértelmezésnél?",
+    "options": [
+      "A) Mind felhasználásra kerül",
+      "B) Több mint felét eldobják",
+      "C) Átlagolják őket",
+      "D) Interpolálják"
+    ],
+    "correct": "B",
+    "explanation": "Csak a legközelebbi középpont értéke marad meg; a többi elvész.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az Ia (kezdeti veszteség)?",
+    "options": [
+      "A) Interceptio + mélyedéstározás vihar elején",
+      "B) Beszivárgási ráta",
+      "C) DEM-paraméter",
+      "D) Koordináta"
+    ],
+    "correct": "A",
+    "explanation": "A vihar kezdetén a felszín által elnyelés, mielőtt lefolyás indul.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adattípust igényel a raszterkalkulátor lefolyás-kimenete?",
+    "options": [
+      "A) Egész számú",
+      "B) Lebegőpontos",
+      "C) Szöveges",
+      "D) Bináris"
+    ],
+    "correct": "B",
+    "explanation": "A kivonás törtrészes értékeket eredményezhet, tehát lebegőpontos szükséges.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a QGIS logikai kifejezés trükk a Con helyettesítésére?",
+    "options": [
+      "A) if-else utasítás",
+      "B) (feltétel) * érték, mert True=1, False=0",
+      "C) SQL lekérdezés",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "A logikai összeadás/szorzás trükkje a feltételes logikához.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hány bemeneti rács szükséges az SCS módszer elosztott számításához?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3-4",
+      "D) 10+"
+    ],
+    "correct": "C",
+    "explanation": "Csapadékrács, talajcsoport-rács, felszínborítás-rács (és ebből CN-rács).",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a legközelebbi-szomszéd újramintavételezés angol neve?",
+    "options": [
+      "A) Bilinear",
+      "B) Nearest Neighbor",
+      "C) Cubic",
+      "D) Majority"
+    ],
+    "correct": "B",
+    "explanation": "Nearest Neighbor resampling.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a bilineáris interpoláció angol neve?",
+    "options": [
+      "A) Nearest Neighbor",
+      "B) Bilinear Interpolation",
+      "C) Cubic Convolution",
+      "D) Majority"
+    ],
+    "correct": "B",
+    "explanation": "Bilinear Interpolation.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a köbös konvolúció angol neve?",
+    "options": [
+      "A) Nearest Neighbor",
+      "B) Bilinear",
+      "C) Cubic Convolution",
+      "D) Majority"
+    ],
+    "correct": "C",
+    "explanation": "Cubic Convolution resampling.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hány szomszédot használ a köbös konvolúció?",
+    "options": [
+      "A) 4 (2×2)",
+      "B) 9 (3×3)",
+      "C) 16 (4×4)",
+      "D) 25 (5×5)"
+    ],
+    "correct": "C",
+    "explanation": "4×4-es szomszédság, 16 forráscella.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hány szomszédot használ a bilineáris?",
+    "options": [
+      "A) 4 (2×2)",
+      "B) 9 (3×3)",
+      "C) 16 (4×4)",
+      "D) 25 (5×5)"
+    ],
+    "correct": "A",
+    "explanation": "2×2-es szomszédság, 4 forráscella.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a helyes GeoTIFF kimenet-kiterjesztés?",
+    "options": [
+      "A) .gdb",
+      "B) .tif",
+      "C) .shp",
+      "D) .asc"
+    ],
+    "correct": "B",
+    "explanation": ".tif kiterjesztéssel GeoTIFF formátumban mentődik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebrát Dana Tomlin formalizálta.",
+    "correct": true,
+    "explanation": "Az 1980-as években a Yale Egyetemen.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A lokális műveletek szomszédsági ablakot használnak.",
+    "correct": false,
+    "explanation": "A lokális műveletek celláról cellára működnek; a fokálisok használnak ablakot.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebrai lokális műveletek tökéletesen párhuzamosíthatók.",
+    "correct": true,
+    "explanation": "Egyetlen cellának sem kell tudnia, mi történik a szomszédnál.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az alapértelmezett kimeneti cellaméret a legfinomabb bemenet.",
+    "correct": false,
+    "explanation": "Alapértelmezés: a legdurvább (maximum) bemenet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az alapértelmezett kiterjedés a bemenetek metszete.",
+    "correct": true,
+    "explanation": "Az a terület, ahol minden bemenetnek van adata.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció megfelelő felszínborítási adatokhoz.",
+    "correct": false,
+    "explanation": "Kategorikus adatnál legközelebbi szomszéd kell.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd blokkos mintázatot ad folytonos adatnál.",
+    "correct": true,
+    "explanation": "Nincs sima átmenet a cellák között.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Con kifejezés feltételes logikát valósít meg.",
+    "correct": true,
+    "explanation": "Cellánkénti if-then-else művelet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A köbös konvolúció soha nem produkál túllövést.",
+    "correct": false,
+    "explanation": "A bemeneti tartományon kívüli értékek lehetségesek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA terjedéssel jár a térkép-algebrában.",
+    "correct": true,
+    "explanation": "Bármely NODATA bemenet NODATA kimenetet ad.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A snap raster a cellaigazítást biztosítja.",
+    "correct": true,
+    "explanation": "Garantálja, hogy a cellák pontosan illeszkedjenek a referenciarácshoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor csak két réteg közötti műveleteket végez.",
+    "correct": false,
+    "explanation": "Tetszőlegesen összetett, több rétegű kifejezéseket kezel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A legdurvább-alapú kimenet mindig a legjobb választás.",
+    "correct": false,
+    "explanation": "Drága finom adatok elveszhetnek; célszerű felülbírálni.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCS görbeszám-módszer elosztottan alkalmazható térkép-algebrával.",
+    "correct": true,
+    "explanation": "Celláról cellára számolva térben változó lefolyást ad.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A vízháztartási egyenlet rácson celláról cellára oldható.",
+    "correct": true,
+    "explanation": "R_ij = P_ij - ET_ij - ΔS_ij minden cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési maszk a vízgyűjtő-határra korlátozza a számítást.",
+    "correct": true,
+    "explanation": "A maszkon kívüli cellák NODATA-t kapnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció pontos bemeneti értékeket ad.",
+    "correct": false,
+    "explanation": "Súlyozott átlagot produkál, nem pontos eredeti értékeket.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd a leggyorsabb újramintavételezés.",
+    "correct": true,
+    "explanation": "Egyszerű keresés, nincs interpoláció.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor kimenete mindig GeoTIFF.",
+    "correct": false,
+    "explanation": "A kimeneti formátum a fájlnév kiterjesztésétől függ.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési környezet az ArcGIS Pro Environments fülén állítható.",
+    "correct": true,
+    "explanation": "Projektszintű vagy eszközszintű beállítás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra csak az ArcGIS Pro-ban érhető el.",
+    "correct": false,
+    "explanation": "QGIS, GEE, Python/rasterio, GRASS mind biztosítja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A többségi újramintavételezés a leggyakoribb értéket rendeli a cellához.",
+    "correct": true,
+    "explanation": "Kategorikus raszterek durvítására.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A max(P - L, 0) biztosítja, hogy a lefolyás nem negatív.",
+    "correct": true,
+    "explanation": "Ha a veszteségek meghaladják a csapadékot, a lefolyás 0.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elosztott modell egyetlen vízgyűjtő-értéket ad.",
+    "correct": false,
+    "explanation": "Térben változó eredményt ad, nem egyetlen számot.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS raszterkalkulátor a Raster menüből érhető el.",
+    "correct": true,
+    "explanation": "A Raster menü almenüjeként.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor-kimenet adattípusa mindig automatikusan helyes.",
+    "correct": false,
+    "explanation": "Érdemes ellenőrizni; véletlen egész kerekítés torz eredményt adhat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 és a radaradat azonos felbontású.",
+    "correct": false,
+    "explanation": "ERA5 ~31 km, radar 1-4 km.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra statikus adatokból dinamikus elemzést csinál.",
+    "correct": true,
+    "explanation": "A térkép-algebra az a motor, amely a térbeli adatokat elemzéssé alakítja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Python rasterio és xarray térkép-algebrát biztosít.",
+    "correct": true,
+    "explanation": "Bármely Python-környezetből elérhető raszterszámítás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az Explore eszköz segít az újramintavételezés hatásának felismerésében.",
+    "correct": true,
+    "explanation": "Ha a beszivárgásréteg más értéket mutat, mint a lefolyás-számításhoz használt.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A cellaigazítási hiba fél cellás eltolódást okozhat.",
+    "correct": true,
+    "explanation": "Azonos cellaméretű, de eltolt rácsok hibás eredményt adnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE ee.Image.add() művelet térkép-algebra.",
+    "correct": true,
+    "explanation": "A Google Earth Engine képaritmetikája térkép-algebrai művelet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az egész kerekítés csendben halmozódhat millió cellán.",
+    "correct": true,
+    "explanation": "Az egyedi cellánkénti hiba összesítve jelentős torzítást okozhat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A zonális műveletek az egész rács információjából számítanak.",
+    "correct": false,
+    "explanation": "Zónánkénti összesítés, nem globális; a globális műveletek használják az egész rácsot.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A fokális műveletekhez mozgó ablak szükséges.",
+    "correct": true,
+    "explanation": "Szomszédsági ablak, pl. 3×3 lejtésszámításhoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra a fizikai összefüggéseket kódolja rácsokba.",
+    "correct": true,
+    "explanation": "A képletek fizikai egyenleteket alkalmaznak celláról cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési maszk lehet raszter és vektor egyaránt.",
+    "correct": true,
+    "explanation": "Raszter (nem nulla cellák) vagy elemosztály (poligon) is használható.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadékrács finomabb rácsra mintavételezve több információt ad.",
+    "correct": false,
+    "explanation": "Térben sima marad; az eredetinél nem pontosabb.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor mindig a legfinomabb felbontásra konvertál.",
+    "correct": false,
+    "explanation": "Alapértelmezésben a legdurvábbot választja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A CN-számból a visszatartási paraméter S számítható.",
+    "correct": true,
+    "explanation": "S = 25400/CN - 254 (mm-ben).",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben a Processing-en keresztül is végezhető raszterszámítás.",
+    "correct": true,
+    "explanation": "GRASS r.mapcalc, SAGA és más eszközök egyaránt.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A fokális műveletek példája a lejtésszámítás.",
+    "correct": true,
+    "explanation": "A 3×3-as szomszédsági ablak klasszikus fokális művelet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro-ban az arcpy.sa modul raszter-aritmetikát biztosít.",
+    "correct": true,
+    "explanation": "Pythonikus felület, ahol a raszterek matematikai kifejezésekben használhatók.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterszámítás eredménye mindig GeoTIFF kell legyen.",
+    "correct": false,
+    "explanation": "Ajánlott, de nem kötelező; Esri Grid és más formátumok is lehetségesek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadék-mínusz-beszivárgás paradigma egyszerű, de alapvető.",
+    "correct": true,
+    "explanation": "Az elosztott hidrológiai modellek működésének fogalmi magja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A kimeneti kiterjedés felülbírálható a bemenetek uniójára.",
+    "correct": true,
+    "explanation": "Az unió a teljes területet lefedi, hiányzó részeknél NODATA-val.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A GEE-ben a térkép-algebra JavaScript és Python API-n érhető el.",
+    "correct": true,
+    "explanation": "Mindkét nyelven felhőalapú raszterszámítás lehetséges.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A különböző felbontású rácsok közvetlenül összevonhatók térkép-algebrával.",
+    "correct": false,
+    "explanation": "Előbb egyeztetni kell a cellaméretet, kiterjedést és igazítást.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési környezet az eredmény minőségét alapvetően befolyásolja.",
+    "correct": true,
+    "explanation": "A cellaméret, kiterjedés és újramintavételezés kritikus hatásúak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térkép-algebrát _____ formalizálta.",
+    "correct": "Tomlin",
+    "explanation": "Dana Tomlin az 1980-as években.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térkép-algebra alapelve a celláról _____ megfeleltetés.",
+    "correct": "cellára",
+    "explanation": "Minden cella kimenete a bemeneti cellákból.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lokális műveletek _____ párhuzamosíthatók.",
+    "correct": "tökéletesen",
+    "explanation": "Egyetlen cellának sem kell tudnia a szomszédról.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A fokális műveletek _____ ablakot használnak.",
+    "correct": "szomszédsági",
+    "explanation": "Pl. 3×3-as ablak a lejtésszámításhoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A zonális műveletek _____ értéket számítanak zónánként.",
+    "correct": "összesített",
+    "explanation": "Pl. vízgyűjtő-átlag magasság.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterkalkulátor _____ kifejezést értékel ki celláról cellára.",
+    "correct": "algebrai",
+    "explanation": "Matematikai kifejezések raszterrétegekre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro-ban a Raster Calculator a _____ eszköztárban van.",
+    "correct": "Spatial Analyst",
+    "explanation": "A Map Algebra eszközkészlet része.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A QGIS raszterkalkulátor a _____ menüből érhető el.",
+    "correct": "Raster",
+    "explanation": "A Raster menü almenüje.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCS módszer a _____ és felszínborítás kombinációjából becsüli a lefolyást.",
+    "correct": "talajcsoport",
+    "explanation": "A talaj hidrológiai csoportja és a felszínborítás együttesen adja a CN-t.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Con kifejezés cellánkénti _____ logikát valósít meg.",
+    "correct": "feltételes",
+    "explanation": "if-then-else művelet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízháztartási egyenlet: P = _____ + R + ΔS.",
+    "correct": "ET",
+    "explanation": "Csapadék = evapotranszspiráció + lefolyás + tározásváltozás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési környezet három legfontosabb paramétere: kiterjedés, cellaméret, _____.",
+    "correct": "snap raster",
+    "explanation": "A cellaigazítás referencia-rasztere.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az alapértelmezett kimeneti cellaméret a _____ bemenet.",
+    "correct": "legdurvább",
+    "explanation": "A bemenetek közötti maximum.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az alapértelmezett kiterjedés a bemenetek _____.",
+    "correct": "metszete",
+    "explanation": "Az a terület, ahol minden bemenetnek van adata.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ szomszéd az alapértelmezett újramintavételezés a raszterszámításoknál.",
+    "correct": "legközelebbi",
+    "explanation": "Nearest neighbor resampling.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A snap raster a _____ biztosítja.",
+    "correct": "cellaigazítást",
+    "explanation": "Garantálja a cellák pontos illeszkedését.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési _____ a számítást egy régióra korlátozza.",
+    "correct": "maszk",
+    "explanation": "A maszkon kívüli cellák NODATA-t kapnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bilineáris interpoláció _____ szomszédot használ.",
+    "correct": "négy",
+    "explanation": "2×2-es szomszédság.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A köbös konvolúció _____ szomszédot használ.",
+    "correct": "tizenhat",
+    "explanation": "4×4-es szomszédság.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A többségi újramintavételezés a _____ értéket rendeli.",
+    "correct": "leggyakoribb",
+    "explanation": "A domináns kategóriát a cellaterületen.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NODATA _____ jár a térkép-algebrában.",
+    "correct": "terjedéssel",
+    "explanation": "NODATA bemenet → NODATA kimenet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "R = P - I: lefolyás = csapadék - _____.",
+    "correct": "beszivárgás",
+    "explanation": "A legegyszerűbb lefolyásbecslési képlet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CN rövidítés: _____ Number.",
+    "correct": "Curve",
+    "explanation": "Görbeszám (Curve Number) az SCS módszerben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "S = 25400/CN - _____: a visszatartási paraméter.",
+    "correct": "254",
+    "explanation": "Az SCS módszer visszatartási képlete milliméterben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Ia = _____ × S: a kezdeti veszteség.",
+    "correct": "0.2",
+    "explanation": "A visszatartás 20%-a.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ algebra lehetővé teszi, hogy egy egyenletet egész tájra alkalmazzzunk.",
+    "correct": "térkép",
+    "explanation": "A térkép-algebra fogalmi ereje.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elosztott modellben minden tag egy _____.",
+    "correct": "rács",
+    "explanation": "Raszterfelszín, ahol minden cellának saját értéke van.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GEE-ben a raszter-aritmetikát az ee._____ objektumon végezzük.",
+    "correct": "Image",
+    "explanation": "Az ee.Image a GEE alap raszterobjektuma.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az arcpy._____ modul biztosítja a Python raszter-algebrát.",
+    "correct": "sa",
+    "explanation": "Spatial Analyst modul.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS raszterkalkulátor parancsa az r._____.",
+    "correct": "mapcalc",
+    "explanation": "GRASS térkép-algebrai parancsa.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterkalkulátor kimenetét _____ formátumban érdemes menteni.",
+    "correct": "GeoTIFF",
+    "explanation": "Interoperábilis, CRS-t tartalmaz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Ha nem adunk kiterjesztést az ArcGIS kimenetnek, _____ Grid formátum lesz.",
+    "correct": "ESRI",
+    "explanation": "Tulajdonosi bináris formátum.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kimenet _____ típusát érdemes ellenőrizni a kerekítési hibák elkerülésére.",
+    "correct": "adattípusát",
+    "explanation": "Egész vs. lebegőpontos.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Con('slope' > 15, 1, 0) _____ maszkot hoz létre.",
+    "correct": "bináris",
+    "explanation": "A meredek terep 1, a többi 0 értéket kap.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az R = max(P - L, _____) biztosítja a nemnegatív lefolyást.",
+    "correct": "0",
+    "explanation": "Ha veszteségek > csapadék, a lefolyás 0.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ Computer felhőalapú térkép-algebrát biztosít Python-ban.",
+    "correct": "Planetary",
+    "explanation": "A Microsoft Azure-alapú platform.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cellaméret-egyeztetést _____ újramintavételezéssel végzik.",
+    "correct": "legközelebbi-szomszéd",
+    "explanation": "Az alapértelmezett módszer a raszterszámításoknál.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ modell (összevont) egyetlen vízgyűjtő-értéket ad.",
+    "correct": "csomósított",
+    "explanation": "Lumped model egyetlen számmal jellemez egy vízgyűjtőt.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elosztott modell _____ változó eredményeket ad.",
+    "correct": "térben",
+    "explanation": "Celláról cellára különböző értékek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CN-rács a _____ és felszínborítás kombinációjából áll elő.",
+    "correct": "talajcsoport",
+    "explanation": "Mindkét réteg szükséges a görbeszám meghatározásához.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterkalkulátor a _____ adatokból dinamikus elemzést csinál.",
+    "correct": "statikus",
+    "explanation": "A térkép-algebra a statikus rácsokat elemzéssé alakítja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Python _____ könyvtár raszteradatok olvasását/írását biztosítja.",
+    "correct": "rasterio",
+    "explanation": "Nyílt forráskódú raszterkezelő.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Python _____ könyvtár többdimenziós tömbkezelést biztosít.",
+    "correct": "xarray",
+    "explanation": "Különösen klíma- és időjárási adatokhoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési kiterjedés _____ a bemenetek uniójára felülbírálható.",
+    "correct": "beállítással",
+    "explanation": "Az Environment-ben kézzel módosítható.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ művelet a térkép-algebra legelemibb formája.",
+    "correct": "kivonás",
+    "explanation": "Pl. csapadék - beszivárgás = lefolyás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS az _____ operatív árvíz-előrejelzési rendszere.",
+    "correct": "EU",
+    "explanation": "Európai Árvízfigyelő Rendszer.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterszámítás eredményét az _____ eszközzel ellenőrizhetjük.",
+    "correct": "Explore",
+    "explanation": "Kattintásra megjelennek a cellaértékek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ felbontás az elemzés szempontjából a rács legfontosabb paramétere.",
+    "correct": "cellaméret",
+    "explanation": "Meghatározza a térbeli részletességet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési környezetet az ArcGIS Pro _____ fülén állítjuk be.",
+    "correct": "Analysis",
+    "explanation": "Az Environments gomb a szalagon.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a térkép-algebra és miért fontos a hidrológiában?",
+    "correct": "Raszterrácsok algebrai változókként kezelése: összeadás, kivonás, szorzás celláról cellára. A vízháztartás, lefolyásbecslés, árvízkockázat mind térkép-algebrára épül. Egyetlen képlet egymillió cellára alkalmazható egyszerre. A statikus adatokból dinamikus elemzést csinál.",
+    "explanation": "A térkép-algebra a térbeli elemzés alapja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse Tomlin négy műveleti kategóriáját!",
+    "correct": "Lokális: celláról cellára, nincs szomszéd-kölcsönhatás, tökéletesen párhuzamosítható. Fokális: szomszédsági ablak (lejtés, kitettség). Zonális: zónánkénti összesítés (vízgyűjtő-átlag). Globális: egész rács iteráció (távolságfelszín). A lokális a leggyakoribb és leggyorsabb.",
+    "explanation": "A négy kategória eltérő számítási hatókörrel bír.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszterkalkulátor és hogyan működik?",
+    "correct": "Algebrai kifejezés, amely raszterrétegekre hivatkozik. A szoftver celláról cellára kiértékeli. ArcGIS: \"layer\" + \"layer\"; QGIS: \"layer@1\" + \"layer@1\". Tetszőlegesen összetett: feltételes logika, matematikai függvények, többrétegű kombinációk.",
+    "explanation": "A gyakorlati térkép-algebra eszköze.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a csapadék-mínusz-beszivárgás paradigmát!",
+    "correct": "Az elosztott lefolyásbecslés magja: R = max(P - L, 0). Térben változó csapadék, talaj, felszínborítás rácsokból cellánkénti lefolyástérkép. Az SCS görbeszám-módszer ennek részletes megvalósítása CN, S, Ia és R rácsokkal.",
+    "explanation": "A lefolyásbecslés fogalmi alapja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaméret-egyeztetés problémája és hogyan kezelhető?",
+    "correct": "Különböző bemenetek eltérő felbontásúak: csapadék 1 km, talaj 30 m, felszínborítás 10 m. Az alapértelmezés (legdurvább, legközelebbi szomszéd) információveszteséget okozhat. Felülbírálás: legfinomabb célcsoportnak megfelelő cellaméret, bilineáris interpoláció folytonos adatokhoz.",
+    "explanation": "A cellaméret-egyeztetés a raszterszámítások legkritikusabb lépése.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az elemzési környezet három fő paraméterét!",
+    "correct": "Kiterjedés: a számítás földrajzi határa (alapértelmezés: metszet). Cellaméret: a kimeneti felbontás (alapértelmezés: legdurvább). Snap raster: cellaigazítás referencia-rácshoz. Ezek együttesen vezérlik a rácsok egyeztetését.",
+    "explanation": "A paraméterek meghatározzák az eredmény minőségét.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a négy újramintavételezési módszert!",
+    "correct": "Legközelebbi szomszéd: pontos értékek, blokkos, kategorikushoz. Bilineáris: sima átmenetek, folytonos adatokhoz. Köbös konvolúció: legsimább, de túllövés lehetséges. Többségi: leggyakoribb érték, kategorikus durvítás.",
+    "explanation": "Minden módszernek megvan a megfelelő alkalmazása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a NODATA-kezelés szerepe a térkép-algebrában?",
+    "correct": "NODATA terjedéssel jár: bármely NODATA bemenet NODATA kimenetet ad. Ez megakadályozza az értelmetlen eredményeket. A NODATA-cellákat kizárják az átlagolásból. A helytelen NODATA-kód súlyos torzítást okozhat.",
+    "explanation": "A NODATA-kezelés a megbízható raszterszámítás alapfeltétele.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az SCS görbeszám-módszer elosztottan?",
+    "correct": "(1) CN-rács a talajcsoport és felszínborítás kombinációjából. (2) S = 25400/CN - 254. (3) Ia = 0.2 × S. (4) R = (P-Ia)²/(P-Ia+S) ha P > Ia, különben 0. Minden lépés raszterkalkulátor-kifejezés. A végső lefolyásrács a térbeli heterogenitást tükrözi.",
+    "explanation": "Az elosztott SCS a térkép-algebra gyakorlati alkalmazása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Con (feltételes) kifejezés alkalmazása a hidrológiában?",
+    "correct": "Bináris maszkok: Con(slope > 15, 1, 0) a meredek terep. Lefolyási küszöb: Con(P > L, P-L, 0). Többkritériumú osztályozás: lejtés + talajtípus alapú kockázat. A maszkokat összeszorzva forrásvidékek azonosíthatók.",
+    "explanation": "A Con a hidrológiai döntési logika raszteres megvalósítása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a kimeneti adattípus ellenőrzése?",
+    "correct": "Ha a valós lefolyás 1,775 mm, de egész számúként tárolódik, 1 vagy 2 lesz. Millió cellán a kerekítési hiba jelentős torzítássá halmozódhat. Lebegőpontos kimenet szükséges a legtöbb hidrológiai számításhoz.",
+    "explanation": "A véletlen kerekítés csendben hibás eredményeket produkál.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan működik a legközelebbi-szomszéd újramintavételezés numerikusan?",
+    "correct": "A célrács minden cellaközéppontjához megkeresi a forrásrács legközelebbi cellaközéppontját és annak értékét rendeli. Nem interpolál. Durva felbontásnál sok bemeneti értéket eldob; finom felbontásnál ismétli az értékeket.",
+    "explanation": "Pontos értékek, de potenciális információveszteség.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a bilineáris interpoláció matematikai alapja?",
+    "correct": "A célpont négy legközelebbi forráscellájából lineáris interpoláció x és y irányban: z = z11(1-dx)(1-dy) + z21(dx)(1-dy) + z12(1-dx)(dy) + z22(dx)(dy). Sima átmenet, de nem őrzi az eredeti értékeket.",
+    "explanation": "Súlyozott átlag a négy szomszédból.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mikor kell az elemzési környezetet felülbírálni?",
+    "correct": "Ha drága finom adatok (LiDAR, részletes talaj) megőrzendők: legfinomabb felbontás. Ha a cél finomabb, mint a legdurvább bemenet (pl. 5 m városi modell 1 km csapadékkal). Ha specifikus cellaigazítás szükséges.",
+    "explanation": "A felülbírálás tudatos döntés az információmegőrzéshez.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterszámítás teljes lépéssorozatát!",
+    "correct": "(1) Kiterjedés meghatározása. (2) Cellaméret meghatározása. (3) Cellaigazítás (snap). (4) Üres kimeneti rács létrehozása. (5) Nem illeszkedő bemenetek újramintavételezése. (6) Maszk alkalmazása. (7) Algebrai kiértékelés. (8) Kiírás.",
+    "explanation": "A sorrend megértése elengedhetetlen a hibakereséshez.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan ellenőrizzük a raszterszámítás eredményét?",
+    "correct": "Az Explore/Identify eszközzel cellaértékeket vizsgálunk. Ha a beszivárgásréteg más értéket mutat, mint a lefolyáshoz használt: újramintavételezés jele. A kimenet cellaméretének, kiterjedésének és NODATA-jának ellenőrzése.",
+    "explanation": "A rendszeres ellenőrzés a megbízható elemzés feltétele.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a térkép-algebra szerepe az operatív árvíz-előrejelzésben?",
+    "correct": "A radarcsapadék, műholdas talajnedvesség és időjárás-előrejelzés rácsok feldolgozása celláról cellára elosztott lefolyásbecsléshez. Az eredmények vízhálózati továbbvezetése árvízhullám-előrejelzéshez. Az EFAS és a National Water Model erre épül.",
+    "explanation": "Térkép-algebra nélkül az operatív előrejelzés megoldhatatlan lenne.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a rasterio + xarray megközelítés előnye?",
+    "correct": "Python-környezetben bármilyen raszteren végezhető térkép-algebra anélkül, hogy GIS-szoftvert kellene nyitni. A felhőadatokkal (Copernicus, ERA5) közvetlenül dolgozik. Az automatizálás és az ismételhetőség könnyebb.",
+    "explanation": "A Python-alapú megközelítés rugalmasabb és szkriptelhető.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a térkép-algebra klímaváltozási hatáselemzéshez?",
+    "correct": "Klímamodell-kimenetek rácsainak összesítése és átlagolása. Csapadék- és hőmérséklettrendek térbeli elemzése. Jövőbeli lefolyás-becslés a változó csapadék- és párolgásrácsokból. Az elosztott megközelítés térbeli differenciálást ad.",
+    "explanation": "A térkép-algebra a klímahatás térbeli elemzésének eszköze.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a kidolgozott példa (150 m és 100 m rácsok) fő tanulsága?",
+    "correct": "Az alapértelmezett egyeztetés (150 m, legközelebbi szomszéd) eldobja a beszivárgási adatok több mint felét. A finomabb felbontás és a bilineáris interpoláció megőrzi az információt. Az elemzési környezet tudatos beállítása elengedhetetlen.",
+    "explanation": "Az alapértelmezések nem mindig a legjobbak; tudatos felülbírálás szükséges.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a lokális művelet definíciója?",
+    "options": [
+      "A) Szomszédsági ablak",
+      "B) Celláról cellára, szomszéd nélkül",
+      "C) Zónális összesítés",
+      "D) Globális iteráció"
+    ],
+    "correct": "B",
+    "explanation": "A lokális művelet csak az adott cella bemeneti értékéből számol.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a fokális művelet definíciója?",
+    "options": [
+      "A) Celláról cellára",
+      "B) Szomszédsági ablakból számol",
+      "C) Zónális összesítés",
+      "D) Egyetlen szám"
+    ],
+    "correct": "B",
+    "explanation": "A fokális művelet a környező cellák ablakából dolgozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a globális művelet definíciója?",
+    "options": [
+      "A) Celláról cellára",
+      "B) Szomszédsági ablak",
+      "C) Az egész rács információját felhasználja",
+      "D) Egyetlen zóna"
+    ],
+    "correct": "C",
+    "explanation": "Pl. távolságfelszín-számítás az egész rácsból.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik Python könyvtár kombinálható a rasterio-val többdimenziós raszterkezeléshez?",
+    "options": [
+      "A) pandas",
+      "B) matplotlib",
+      "C) rioxarray",
+      "D) flask"
+    ],
+    "correct": "C",
+    "explanation": "A rioxarray a rasterio és xarray kombinációja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Cloud-Optimized GeoTIFF (COG)?",
+    "options": [
+      "A) Felhőalapú feldolgozáshoz optimalizált GeoTIFF",
+      "B) Tömörített shapefile",
+      "C) Vektoros formátum",
+      "D) Adatbázis-formátum"
+    ],
+    "correct": "A",
+    "explanation": "A COG a felhőalapú részleges olvasáshoz optimalizált GeoTIFF.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent az 'elosztott' (distributed) hidrológiai modell?",
+    "options": [
+      "A) Egyetlen vízgyűjtő-paraméter",
+      "B) Minden cellában saját értékkel rendelkező térbeli modell",
+      "C) Idősor-modell",
+      "D) Statisztikai modell"
+    ],
+    "correct": "B",
+    "explanation": "Térben változó bemenetek és kimenetek celláról cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Az SCS módszerben mi a P > Ia feltétel jelentése?",
+    "options": [
+      "A) A csapadék nagyobb a DEM-nél",
+      "B) A csapadék meghaladja a kezdeti veszteséget, tehát lefolyás indul",
+      "C) A nyomás meghaladja a küszöböt",
+      "D) A hőmérséklet küszöb feletti"
+    ],
+    "correct": "B",
+    "explanation": "Lefolyás csak akkor keletkezik, ha a csapadék meghaladja a kezdeti veszteséget.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ee.Terrain modult a Google Earth Engine-ben?",
+    "options": [
+      "A) Felszínborítás-osztályozó",
+      "B) Domborzatelemzési modul (lejtés, kitettség)",
+      "C) Idősor-elemző",
+      "D) Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "Az ee.Terrain a GEE domborzatelemzési funkcióit biztosítja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 'Raster Analysis' szakasz az ArcGIS Pro Environments-ben?",
+    "options": [
+      "A) Vektoros szerkesztő",
+      "B) A raszterszámítások környezeti paramétereinek beállítása",
+      "C) Nyomtatási beállítások",
+      "D) GPS-konfiguráció"
+    ],
+    "correct": "B",
+    "explanation": "A cellaméret, maszk, snap raster és egyéb beállítások helye.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen Python könyvtárat használnak a QGIS-ben raszterszámításhoz?",
+    "options": [
+      "A) ArcPy",
+      "B) PyQGIS + GDAL/NumPy",
+      "C) Matplotlib",
+      "D) Flask"
+    ],
+    "correct": "B",
+    "explanation": "A PyQGIS és a GDAL/NumPy interfész biztosítja a raszterszámításokat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 'Processing Extent' az elemzési környezetben?",
+    "options": [
+      "A) Nyomtatási terület",
+      "B) A számítás földrajzi határai",
+      "C) A szimbológia hatóköre",
+      "D) A Python-szkript hossza"
+    ],
+    "correct": "B",
+    "explanation": "A Processing Extent meghatározza, melyik területen fut a számítás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az r.mapcalc szintaxisa a GRASS-ban?",
+    "options": [
+      "A) \"layer\" + \"layer\"",
+      "B) A + B",
+      "C) layer@1 + layer@1",
+      "D) Raster(a) + Raster(b)"
+    ],
+    "correct": "B",
+    "explanation": "Az r.mapcalc egyszerű A + B szintaxist használ.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Hány lépésben dolgozza fel a raszterkalkulátor a kifejezést?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 8",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "8 lépés: kiterjedés, cellaméret, igazítás, üres rács, újraminta, maszk, számítás, kiírás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Green-Ampt módszer?",
+    "options": [
+      "A) Raszteres formátum",
+      "B) Fizikai alapú beszivárgási modell",
+      "C) Koordináta-rendszer",
+      "D) DEM-feldolgozás"
+    ],
+    "correct": "B",
+    "explanation": "Fizikai alapú modell a beszivárgás leírásához, az SCS alternatívája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Richards-egyenlet?",
+    "options": [
+      "A) Vízháztartási egyenlet",
+      "B) A telítetlen zóna vízáramlásának differenciálegyenlete",
+      "C) Nyomásegyenlet",
+      "D) Sebesség-képlet"
+    ],
+    "correct": "B",
+    "explanation": "A talaj telítetlen zónájában történő vízáramlás fizikai leírása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a SAGA GIS térkép-algebrai képessége?",
+    "options": [
+      "A) Nincs ilyen",
+      "B) Kifinomult kifejezésnyelv a Processing-en keresztül",
+      "C) Csak vektoros",
+      "D) Csak megjelenítés"
+    ],
+    "correct": "B",
+    "explanation": "A SAGA a Processing keretrendszeren át összetett raszterszámításokat biztosít.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik platform kínál bolygóméretű raszterkatalógust felhőalapú térkép-algebrával?",
+    "options": [
+      "A) ArcGIS Pro",
+      "B) QGIS",
+      "C) Google Earth Engine",
+      "D) PostGIS"
+    ],
+    "correct": "C",
+    "explanation": "A GEE petabájtnyi adaton végez felhőalapú raszterszámítást.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A lokális műveletek szomszédsági ablakot igényelnek.",
+    "correct": false,
+    "explanation": "A lokális műveletek nem használnak szomszédságot; a fokálisok igen.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A globális műveletek a leglassabbak.",
+    "correct": true,
+    "explanation": "Többszörös végigsöprés az egész rácson.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elosztott hidrológiai modell egyetlen vízgyűjtő-értéket ad.",
+    "correct": false,
+    "explanation": "Térben változó, cellánkénti eredményeket ad.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Con kifejezés bináris maszkot hoz létre.",
+    "correct": true,
+    "explanation": "Pl. Con(slope>15,1,0): meredek=1, lapos=0.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Green-Ampt módszer empirikus lefolyásbecslés.",
+    "correct": false,
+    "explanation": "Fizikai alapú beszivárgási modell, nem empirikus.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Richards-egyenlet a telítetlen zóna vízáramlását írja le.",
+    "correct": true,
+    "explanation": "Differenciálegyenlet a talajnedvesség-áramláshoz.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Cloud-Optimized GeoTIFF (COG) a felhőalapú hozzáféréshez optimalizált.",
+    "correct": true,
+    "explanation": "Részleges olvasást tesz lehetővé a felhőből.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az ArcGIS Pro Spatial Analyst bővítmény ingyenes.",
+    "correct": false,
+    "explanation": "A Spatial Analyst külön licencelt bővítmény.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS raszterkalkulátor támogatja a feltételes logikát.",
+    "correct": true,
+    "explanation": "Logikai kifejezésekkel: (feltétel) * 1.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra csak egyetlen bemeneti ráccsal dolgozik.",
+    "correct": false,
+    "explanation": "Tetszőlegesen sok réteget kombinálhat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az ee.Image a GEE alap raszterobjektuma.",
+    "correct": true,
+    "explanation": "A GEE-ben minden raszteres művelet ee.Image objektumokon történik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az SCS módszer visszatartási paramétere (S) mindig pozitív.",
+    "correct": true,
+    "explanation": "S = 25400/CN - 254, ahol CN > 0, tehát S > 0.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési maszk módosítja a bemeneti adatokat.",
+    "correct": false,
+    "explanation": "Nem módosít; csak korlátozza a számítás területét.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris interpoláció 4×4-es szomszédságot használ.",
+    "correct": false,
+    "explanation": "2×2-es szomszédságot; a köbös konvolúció használ 4×4-et.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A többségi újramintavételezés folytonos adatokhoz ajánlott.",
+    "correct": false,
+    "explanation": "Kategorikus raszterek durvítására tervezték.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A vízháztartási egyenlet elosztott alakja celláról cellára oldható.",
+    "correct": true,
+    "explanation": "R_ij = P_ij - ET_ij - ΔS_ij minden cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor a leggyorsabb módszer egyszeri számításhoz.",
+    "correct": true,
+    "explanation": "Néhány rétegen az interaktív kalkulátor a leggyorsabb megközelítés.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési környezet beállításai örökölhetők eszközök között.",
+    "correct": true,
+    "explanation": "A projektszintű beállítások minden eszközre vonatkoznak, hacsak nem írjuk felül.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra csak az 1990-es évek óta létezik.",
+    "correct": false,
+    "explanation": "Tomlin az 1980-as évek elején formalizálta.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterszámítások eredménye mindig térbeli adatvesztéssel jár.",
+    "correct": false,
+    "explanation": "Nem feltétlenül; a helyes beállításokkal az információ megőrizhető.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A cellaméret-egyeztetés az elemzés legkritikusabb lépése.",
+    "correct": true,
+    "explanation": "Rossz egyeztetés csendben adatvesztést és torzítást okozhat.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A Python rasterio+xarray megközelítés GIS-szoftver nélkül működik.",
+    "correct": true,
+    "explanation": "Bármely Python-környezetben használható.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A QGIS-ben nincs az ArcGIS Environments-hez hasonló központi beállítás.",
+    "correct": true,
+    "explanation": "Az egyes eszközökön belül kell konfigurálni.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor automatikusan detektálja a legjobb kimeneti adattípust.",
+    "correct": true,
+    "explanation": "Általában igen, de érdemes ellenőrizni.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A térkép-algebra statikus adatokból dinamikus elemzést csinál.",
+    "correct": true,
+    "explanation": "A térbeli adatokat elemzési eredményekké alakítja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A vízháztartási egyenlet összevont modellje is használhat térkép-algebrát.",
+    "correct": false,
+    "explanation": "Az összevont modell egyetlen értéket számol, nem cellánként.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A fokális műveletek számítási költsége magasabb a lokálisokénál.",
+    "correct": true,
+    "explanation": "A mozgó ablak kezelése további műveletet igényel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterkalkulátor kifejezése tartalmazhat matematikai függvényeket.",
+    "correct": true,
+    "explanation": "Négyzetgyök, logaritmus, trigonometrikus stb.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzési kiterjedés felülbírálható a bemenetek uniójára.",
+    "correct": true,
+    "explanation": "Az union a teljes területet lefedi, NODATA-val a hiányzó részeknél.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A csapadék és beszivárgás rács kivonása lokális művelet.",
+    "correct": true,
+    "explanation": "Celláról cellára, szomszéd nélkül.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A lejtésszámítás lokális művelet.",
+    "correct": false,
+    "explanation": "Fokális (szomszédsági ablak): 3×3-as szomszédság.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térkép-algebrai műveleteket _____ formalizálta.",
+    "correct": "Tomlin",
+    "explanation": "Dana Tomlin az 1980-as években.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ műveletek az egész rács információjából számítanak.",
+    "correct": "globális",
+    "explanation": "Pl. távolságfelszín-számítás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Con kifejezés cellánkénti _____ logikát valósít meg.",
+    "correct": "feltételes",
+    "explanation": "If-then-else művelet celláról cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízháztartási egyenlet elosztott alakja: R_ij = P_ij - ET_ij - _____ _ij.",
+    "correct": "ΔS",
+    "explanation": "Tározásváltozás minden cellára.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro-ban a Spatial Analyst modul Python neve: arcpy._____.",
+    "correct": "sa",
+    "explanation": "A raszter-algebra Python-felülete.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GRASS raszterkalkulátor: r._____.",
+    "correct": "mapcalc",
+    "explanation": "A GRASS térkép-algebrai parancsa.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GEE raszter-aritmetikája az ee._____ objektumon dolgozik.",
+    "correct": "Image",
+    "explanation": "Az alapvető raszterobjektum a GEE-ben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ módszer fizikai alapú beszivárgási modell.",
+    "correct": "Green-Ampt",
+    "explanation": "Az SCS empirikus módszerének fizikai alternatívája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Richards-_____ a telítetlen zóna vízáramlását írja le.",
+    "correct": "egyenlet",
+    "explanation": "Differenciálegyenlet a talajnedvesség mozgásához.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A COG rövidítés: Cloud-Optimized _____.",
+    "correct": "GeoTIFF",
+    "explanation": "Felhőalapú részleges hozzáféréshez optimalizált formátum.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ bővítmény az ArcGIS Pro raszterelemzés-modulja.",
+    "correct": "Spatial Analyst",
+    "explanation": "A térkép-algebrai és hidrológiai eszközök helye.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterszámítás _____ lépésben dolgozza fel a kifejezést.",
+    "correct": "nyolc",
+    "explanation": "Kiterjedés, cellaméret, igazítás, üres rács, újraminta, maszk, számítás, kiírás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elosztott modellben minden tag egy _____.",
+    "correct": "rács",
+    "explanation": "Raszterfelszín cellánkénti értékekkel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ (csomósított) modell egyetlen vízgyűjtő-értéket ad.",
+    "correct": "összevont",
+    "explanation": "Lumped model: egy szám jellemez egy vízgyűjtőt.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A SAGA GIS eszközei a QGIS _____ keretrendszerén érhetők el.",
+    "correct": "Processing",
+    "explanation": "A QGIS integrált eszközkörnyezete.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SCS módszerben a _____ szám a talaj-felszínborítás kombinációjából adódik.",
+    "correct": "CN",
+    "explanation": "Curve Number = görbeszám.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterkalkulátor a _____ adatokból dinamikus elemzést csinál.",
+    "correct": "statikus",
+    "explanation": "A térkép-algebra a statikus rácsokból számol.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elemzési _____ a számítás területi korlátját adja.",
+    "correct": "maszk",
+    "explanation": "NODATA a maszkon kívül.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ Analyst eszköztár az ArcGIS Pro raszterelemzési bővítménye.",
+    "correct": "Spatial",
+    "explanation": "A Map Algebra és hidrológiai eszközök helye.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterkalkulátor kimenetét _____ formátumban érdemes menteni.",
+    "correct": "GeoTIFF",
+    "explanation": "A leginteroperábilisabb és ajánlott raszterformátum.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ interpoláció négy szomszédból lineárisan interpolál.",
+    "correct": "bilineáris",
+    "explanation": "2×2-es szomszédságból x és y irányban.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a térkép-algebra gyakorlati alkalmazása az árvízkockázat becslésében?",
+    "correct": "Csapadékrács, talaj-, felszínborítás-rácsok kombinálása lefolyásrács előállításához. Con kifejezés a meredek, vízzáró területek azonosításához. Az SCS módszer elosztott alkalmazása CN-ráccsal. Az eredmény térbeli lefolyástérkép az árvízkockázat kommunikálásához.",
+    "explanation": "A térkép-algebra a kockázatbecslés térbeli motorja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a feltételes logika (Con) a vízgazdálkodásban?",
+    "correct": "Bináris maszkok: meredek terep (slope>15). Lefolyási küszöb: Con(P>Ia, lefolyás, 0). Többkritériumú osztályozás: lejtés×talaj×felszínborítás kockázat. Árvízi elöntés: Con(HAND<küszöb, 1, 0). Alkalmassági elemzés: vízkivétel-helyek azonosítása.",
+    "explanation": "A Con a döntéstámogató raszterlogika alapja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaméret-harmonizálás jelentősége egy valós vízgazdálkodási projektben?",
+    "correct": "A bemenetek eltérő felbontásúak: csapadék 1 km, talaj 30 m, felszínborítás 10 m. Az egyeztetés nélkül a szoftver az alapértelmezést alkalmazza, ami információveszteséget okozhat. A tudatos beállítás biztosítja az optimális felbontást és az adatok legjobb kihasználását.",
+    "explanation": "A cellaméret-egyeztetés a raszteralapú elemzés legkritikusabb lépése.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térkép-algebra Python-alapú megvalósítási lehetőségeit!",
+    "correct": "ArcPy: arcpy.sa modul, Raster objektumok aritmetikája. PyQGIS: GDAL/NumPy interfész. Rasterio+xarray+rioxarray: platform-független, felhőalapú. GEE Python API: ee.Image aritmetika. Mindegyik celláról cellára dolgozik, de más szintaxissal és környezetben.",
+    "explanation": "A Python több úton is biztosítja a raszter-algebrát.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan építhető fel az SCS görbeszám-módszer elosztott munkafolyamata?",
+    "correct": "(1) Talajcsoport-rács és felszínborítás-rács beszerzése. (2) CN-rács: keresőtábla/Con alapján. (3) S = 25400/CN - 254. (4) Ia = 0.2×S. (5) R = (P-Ia)²/(P-Ia+S) ha P>Ia, különben 0. Minden lépés raszterkalkulátor. A kritikus kihívás: a bemeneti rácsok cellaméret-egyeztetése.",
+    "explanation": "Az SCS elosztott megvalósítása a térkép-algebra klasszikus alkalmazása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi az újramintavételezés hatása a raszterszámítások eredményére?",
+    "correct": "A legközelebbi szomszéd eldobhatja az értékek felét, blokkos mintázatot ad. A bilineáris simán interpolál, de módosítja az eredeti értékeket. A választás befolyásolja a kimenet pontosságát. Kategorikus adatnál legközelebbi szomszéd; folytonosnál bilineáris ajánlott.",
+    "explanation": "Az újramintavételezési módszer tudatos megválasztása a pontos eredmények feltétele.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan diagnosztizálhatók a váratlan raszterszámítási eredmények?",
+    "correct": "Ha durva: ellenőrizzük a cellaméret-beállítást. Ha kis terület: ellenőrizzük a kiterjedést. Ha hibás értékek: ellenőrizzük az újramintavételezést. Ha váratlan NODATA: ellenőrizzük a maszkot és NODATA-kezelést. Az Explore eszköz cellaértékenként vizsgálható.",
+    "explanation": "Az elemzési környezet paramétereinek szisztematikus ellenőrzése a hibakeresés kulcsa.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi az operatív árvíz-előrejelzés térkép-algebrai munkafolyamata?",
+    "correct": "(1) Radarcsapadék-rács beolvasása. (2) Talajnedvesség műholdas rács. (3) Előrejelzett csapadék NWP-ből. (4) Térkép-algebrai lefolyásszámítás (P-L paradigma). (5) Vízhálózati továbbvezetés. (6) Árvízszint-előrejelzés. Az EFAS és a National Water Model erre épül.",
+    "explanation": "A térkép-algebra az operatív előrejelzés számítási gerince.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az adattípus-ellenőrzés a raszterszámításokban?",
+    "correct": "Ha a kimenet lebegőpontos helyett egész számú, kerekítési hiba keletkezik: 1,775 → 1 vagy 2. Millió cellán ez jelentős torzítás. A GeoTIFF alapértelmezetten megfelelő típust választ, de az ellenőrzés fontos, különösen egész bemeneteknél.",
+    "explanation": "A véletlen kerekítés csendben torzítja az eredményeket.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térkép-algebra és a hagyományos összevont modellezés közötti különbséget!",
+    "correct": "Összevont: egyetlen CN, egy csapadékérték, egy lefolyás a teljes vízgyűjtőre. Elosztott (térkép-algebra): cellánként eltérő CN, csapadék és lefolyás. Az elosztott megmutatja, HOL keletkezik a lefolyás, nem csak MENNYIT. A térbeli heterogenitás figyelembevétele a lényeg.",
+    "explanation": "A térkép-algebra a térbeli változékonyság számításba vételét teszi lehetővé.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) GEE térkép-algebra fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) GEE térkép-algebra a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) ArcPy sa modul fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) ArcPy sa modul a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) GRASS r.mapcalc fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) GRASS r.mapcalc a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) operatív árvízelőrejelzés fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) operatív árvízelőrejelzés a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) csapadék-beszivárgás paradigma fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) csapadék-beszivárgás paradigma a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) adattípus ellenőrzés fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) adattípus ellenőrzés a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) kiterjedés beállítás fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) kiterjedés beállítás a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) felhő GIS fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) felhő GIS a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) EFAS rendszer fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) EFAS rendszer a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) National Water Model fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) National Water Model a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) térkép-algebra alapelvek fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) térkép-algebra alapelvek a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) lokális műveletek fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) lokális műveletek a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) fokális műveletek fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) fokális műveletek a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) zonális műveletek fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) zonális műveletek a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) raszterkalkulátor használat fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) raszterkalkulátor használat a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) cellaméret-egyeztetés fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) cellaméret-egyeztetés a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) elemzési környezet fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) elemzési környezet a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) NODATA terjedés fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) NODATA terjedés a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) SCS görbeszám módszer fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) SCS görbeszám módszer a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) Con feltételes logika fogalma alapvető a 6. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) Con feltételes logika a 6. fejezet központi témái közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a vízháztartási egyenlet témakörbe tartozik.",
+    "correct": "vízháztartási",
+    "explanation": "A(z) vízháztartási egyenlet a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a elosztott modellezés témakörbe tartozik.",
+    "correct": "elosztott",
+    "explanation": "A(z) elosztott modellezés a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a újramintavételezési módszerek témakörbe tartozik.",
+    "correct": "újramintavételezési",
+    "explanation": "A(z) újramintavételezési módszerek a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a snap raster témakörbe tartozik.",
+    "correct": "snap",
+    "explanation": "A(z) snap raster a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a elemzési maszk témakörbe tartozik.",
+    "correct": "elemzési",
+    "explanation": "A(z) elemzési maszk a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a kimeneti formátum témakörbe tartozik.",
+    "correct": "kimeneti",
+    "explanation": "A(z) kimeneti formátum a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a bilineáris interpoláció témakörbe tartozik.",
+    "correct": "bilineáris",
+    "explanation": "A(z) bilineáris interpoláció a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a legközelebbi szomszéd témakörbe tartozik.",
+    "correct": "legközelebbi",
+    "explanation": "A(z) legközelebbi szomszéd a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a köbös konvolúció témakörbe tartozik.",
+    "correct": "köbös",
+    "explanation": "A(z) köbös konvolúció a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a Python raszteralgebra témakörbe tartozik.",
+    "correct": "Python",
+    "explanation": "A(z) Python raszteralgebra a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a GEE térkép-algebra témakörbe tartozik.",
+    "correct": "GEE",
+    "explanation": "A(z) GEE térkép-algebra a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a ArcPy sa modul témakörbe tartozik.",
+    "correct": "ArcPy",
+    "explanation": "A(z) ArcPy sa modul a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a GRASS r.mapcalc témakörbe tartozik.",
+    "correct": "GRASS",
+    "explanation": "A(z) GRASS r.mapcalc a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a operatív árvízelőrejelzés témakörbe tartozik.",
+    "correct": "operatív",
+    "explanation": "A(z) operatív árvízelőrejelzés a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a csapadék-beszivárgás paradigma témakörbe tartozik.",
+    "correct": "csapadék-beszivárgás",
+    "explanation": "A(z) csapadék-beszivárgás paradigma a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a adattípus ellenőrzés témakörbe tartozik.",
+    "correct": "adattípus",
+    "explanation": "A(z) adattípus ellenőrzés a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a kiterjedés beállítás témakörbe tartozik.",
+    "correct": "kiterjedés",
+    "explanation": "A(z) kiterjedés beállítás a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a felhő GIS témakörbe tartozik.",
+    "correct": "felhő",
+    "explanation": "A(z) felhő GIS a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a EFAS rendszer témakörbe tartozik.",
+    "correct": "EFAS",
+    "explanation": "A(z) EFAS rendszer a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a National Water Model témakörbe tartozik.",
+    "correct": "National",
+    "explanation": "A(z) National Water Model a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a térkép-algebra alapelvek témakörbe tartozik.",
+    "correct": "térkép-algebra",
+    "explanation": "A(z) térkép-algebra alapelvek a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a lokális műveletek témakörbe tartozik.",
+    "correct": "lokális",
+    "explanation": "A(z) lokális műveletek a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a fokális műveletek témakörbe tartozik.",
+    "correct": "fokális",
+    "explanation": "A(z) fokális műveletek a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a zonális műveletek témakörbe tartozik.",
+    "correct": "zonális",
+    "explanation": "A(z) zonális műveletek a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a raszterkalkulátor használat témakörbe tartozik.",
+    "correct": "raszterkalkulátor",
+    "explanation": "A(z) raszterkalkulátor használat a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a cellaméret-egyeztetés témakörbe tartozik.",
+    "correct": "cellaméret-egyeztetés",
+    "explanation": "A(z) cellaméret-egyeztetés a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a elemzési környezet témakörbe tartozik.",
+    "correct": "elemzési",
+    "explanation": "A(z) elemzési környezet a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a NODATA terjedés témakörbe tartozik.",
+    "correct": "NODATA",
+    "explanation": "A(z) NODATA terjedés a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a SCS görbeszám módszer témakörbe tartozik.",
+    "correct": "SCS",
+    "explanation": "A(z) SCS görbeszám módszer a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 6. fejezetben tárgyalt _____ fogalma a Con feltételes logika témakörbe tartozik.",
+    "correct": "Con",
+    "explanation": "A(z) Con feltételes logika a fejezet fontos témaköre.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) térkép-algebra alapelvek melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) térkép-algebra alapelvek a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) lokális műveletek melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) lokális műveletek a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) fokális műveletek melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) fokális műveletek a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) zonális műveletek melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) zonális műveletek a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) raszterkalkulátor használat melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) raszterkalkulátor használat a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) cellaméret-egyeztetés melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) cellaméret-egyeztetés a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) elemzési környezet melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) elemzési környezet a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) NODATA terjedés melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) NODATA terjedés a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) SCS görbeszám módszer melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) SCS görbeszám módszer a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A(z) Con feltételes logika melyik fejezetben kerül részletes tárgyalásra?",
+    "options": [
+      "A) 5. fejezet",
+      "B) 6. fejezet",
+      "C) 7. fejezet",
+      "D) 8. fejezet"
+    ],
+    "correct": "B",
+    "explanation": "A(z) Con feltételes logika a 6. fejezet központi témája.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térkép-algebra alapelvek fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) térkép-algebra alapelvek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a térkép-algebra alapelvek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) térkép-algebra alapelvek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a lokális műveletek az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) lokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a lokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) lokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a fokális műveletek a raszterszámításoknál?",
+    "correct": "A(z) fokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a fokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) fokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a zonális műveletek jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) zonális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a zonális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) zonális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterkalkulátor használat hatását a raszterszámítások eredményére!",
+    "correct": "A(z) raszterkalkulátor használat a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszterkalkulátor használat helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszterkalkulátor használat a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a cellaméret-egyeztetés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) cellaméret-egyeztetés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaméret-egyeztetés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaméret-egyeztetés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a elemzési környezet fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) elemzési környezet a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elemzési környezet helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elemzési környezet a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a NODATA terjedés az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) NODATA terjedés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a NODATA terjedés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) NODATA terjedés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a SCS görbeszám módszer a raszterszámításoknál?",
+    "correct": "A(z) SCS görbeszám módszer a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a SCS görbeszám módszer helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) SCS görbeszám módszer a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Con feltételes logika jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) Con feltételes logika a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Con feltételes logika helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Con feltételes logika a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízháztartási egyenlet hatását a raszterszámítások eredményére!",
+    "correct": "A(z) vízháztartási egyenlet a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a vízháztartási egyenlet helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) vízháztartási egyenlet a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a elosztott modellezés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) elosztott modellezés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elosztott modellezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elosztott modellezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a újramintavételezési módszerek fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) újramintavételezési módszerek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a újramintavételezési módszerek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) újramintavételezési módszerek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a snap raster az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) snap raster a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a snap raster helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) snap raster a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a elemzési maszk a raszterszámításoknál?",
+    "correct": "A(z) elemzési maszk a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elemzési maszk helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elemzési maszk a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a kimeneti formátum jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) kimeneti formátum a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a kimeneti formátum helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) kimeneti formátum a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a bilineáris interpoláció hatását a raszterszámítások eredményére!",
+    "correct": "A(z) bilineáris interpoláció a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a bilineáris interpoláció helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) bilineáris interpoláció a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a legközelebbi szomszéd problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) legközelebbi szomszéd a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a legközelebbi szomszéd helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) legközelebbi szomszéd a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a köbös konvolúció fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) köbös konvolúció a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a köbös konvolúció helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) köbös konvolúció a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Python raszteralgebra az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) Python raszteralgebra a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Python raszteralgebra helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Python raszteralgebra a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a GEE térkép-algebra a raszterszámításoknál?",
+    "correct": "A(z) GEE térkép-algebra a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GEE térkép-algebra helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GEE térkép-algebra a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a ArcPy sa modul jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) ArcPy sa modul a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a ArcPy sa modul helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) ArcPy sa modul a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GRASS r.mapcalc hatását a raszterszámítások eredményére!",
+    "correct": "A(z) GRASS r.mapcalc a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GRASS r.mapcalc helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GRASS r.mapcalc a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a operatív árvízelőrejelzés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) operatív árvízelőrejelzés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a operatív árvízelőrejelzés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) operatív árvízelőrejelzés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a csapadék-beszivárgás paradigma fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) csapadék-beszivárgás paradigma a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a csapadék-beszivárgás paradigma helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) csapadék-beszivárgás paradigma a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a adattípus ellenőrzés az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) adattípus ellenőrzés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a adattípus ellenőrzés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) adattípus ellenőrzés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a kiterjedés beállítás a raszterszámításoknál?",
+    "correct": "A(z) kiterjedés beállítás a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a kiterjedés beállítás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) kiterjedés beállítás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a felhő GIS jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) felhő GIS a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a felhő GIS helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) felhő GIS a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a EFAS rendszer hatását a raszterszámítások eredményére!",
+    "correct": "A(z) EFAS rendszer a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a EFAS rendszer helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) EFAS rendszer a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a National Water Model problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) National Water Model a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a National Water Model helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) National Water Model a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térkép-algebra alapelvek fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) térkép-algebra alapelvek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a térkép-algebra alapelvek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) térkép-algebra alapelvek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a lokális műveletek az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) lokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a lokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) lokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a fokális műveletek a raszterszámításoknál?",
+    "correct": "A(z) fokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a fokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) fokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a zonális műveletek jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) zonális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a zonális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) zonális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterkalkulátor használat hatását a raszterszámítások eredményére!",
+    "correct": "A(z) raszterkalkulátor használat a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszterkalkulátor használat helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszterkalkulátor használat a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a cellaméret-egyeztetés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) cellaméret-egyeztetés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaméret-egyeztetés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaméret-egyeztetés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a elemzési környezet fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) elemzési környezet a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elemzési környezet helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elemzési környezet a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a NODATA terjedés az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) NODATA terjedés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a NODATA terjedés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) NODATA terjedés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a SCS görbeszám módszer a raszterszámításoknál?",
+    "correct": "A(z) SCS görbeszám módszer a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a SCS görbeszám módszer helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) SCS görbeszám módszer a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Con feltételes logika jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) Con feltételes logika a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Con feltételes logika helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Con feltételes logika a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a vízháztartási egyenlet hatását a raszterszámítások eredményére!",
+    "correct": "A(z) vízháztartási egyenlet a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a vízháztartási egyenlet helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) vízháztartási egyenlet a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a elosztott modellezés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) elosztott modellezés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elosztott modellezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elosztott modellezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a újramintavételezési módszerek fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) újramintavételezési módszerek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a újramintavételezési módszerek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) újramintavételezési módszerek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a snap raster az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) snap raster a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a snap raster helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) snap raster a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a elemzési maszk a raszterszámításoknál?",
+    "correct": "A(z) elemzési maszk a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elemzési maszk helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elemzési maszk a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a kimeneti formátum jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) kimeneti formátum a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a kimeneti formátum helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) kimeneti formátum a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a bilineáris interpoláció hatását a raszterszámítások eredményére!",
+    "correct": "A(z) bilineáris interpoláció a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a bilineáris interpoláció helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) bilineáris interpoláció a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a legközelebbi szomszéd problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) legközelebbi szomszéd a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a legközelebbi szomszéd helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) legközelebbi szomszéd a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a köbös konvolúció fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) köbös konvolúció a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a köbös konvolúció helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) köbös konvolúció a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a Python raszteralgebra az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) Python raszteralgebra a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Python raszteralgebra helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Python raszteralgebra a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a GEE térkép-algebra a raszterszámításoknál?",
+    "correct": "A(z) GEE térkép-algebra a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GEE térkép-algebra helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GEE térkép-algebra a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a ArcPy sa modul jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) ArcPy sa modul a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a ArcPy sa modul helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) ArcPy sa modul a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a GRASS r.mapcalc hatását a raszterszámítások eredményére!",
+    "correct": "A(z) GRASS r.mapcalc a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GRASS r.mapcalc helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GRASS r.mapcalc a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a operatív árvízelőrejelzés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) operatív árvízelőrejelzés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a operatív árvízelőrejelzés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) operatív árvízelőrejelzés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a csapadék-beszivárgás paradigma fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) csapadék-beszivárgás paradigma a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a csapadék-beszivárgás paradigma helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) csapadék-beszivárgás paradigma a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a adattípus ellenőrzés az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) adattípus ellenőrzés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a adattípus ellenőrzés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) adattípus ellenőrzés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a kiterjedés beállítás a raszterszámításoknál?",
+    "correct": "A(z) kiterjedés beállítás a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a kiterjedés beállítás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) kiterjedés beállítás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a felhő GIS jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) felhő GIS a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a felhő GIS helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) felhő GIS a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a EFAS rendszer hatását a raszterszámítások eredményére!",
+    "correct": "A(z) EFAS rendszer a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a EFAS rendszer helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) EFAS rendszer a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a National Water Model problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) National Water Model a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a National Water Model helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) National Water Model a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a térkép-algebra alapelvek fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) térkép-algebra alapelvek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a térkép-algebra alapelvek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) térkép-algebra alapelvek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a lokális műveletek az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) lokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a lokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) lokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a fokális műveletek a raszterszámításoknál?",
+    "correct": "A(z) fokális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a fokális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) fokális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a zonális műveletek jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) zonális műveletek a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a zonális műveletek helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) zonális műveletek a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterkalkulátor használat hatását a raszterszámítások eredményére!",
+    "correct": "A(z) raszterkalkulátor használat a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszterkalkulátor használat helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszterkalkulátor használat a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kezelhető a cellaméret-egyeztetés problémája a vízgazdálkodási GIS-ben?",
+    "correct": "A(z) cellaméret-egyeztetés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaméret-egyeztetés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaméret-egyeztetés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a elemzési környezet fogalmát és szerepét a térkép-algebrában!",
+    "correct": "A(z) elemzési környezet a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a elemzési környezet helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) elemzési környezet a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a NODATA terjedés az elosztott hidrológiai modellezésben?",
+    "correct": "A(z) NODATA terjedés a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a NODATA terjedés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) NODATA terjedés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati kihívásokat jelent a SCS görbeszám módszer a raszterszámításoknál?",
+    "correct": "A(z) SCS görbeszám módszer a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a SCS görbeszám módszer helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) SCS görbeszám módszer a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mi a Con feltételes logika jelentősége az operatív árvíz-előrejelzésben?",
+    "correct": "A(z) Con feltételes logika a 6. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Con feltételes logika helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Con feltételes logika a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 6
+  }
+]

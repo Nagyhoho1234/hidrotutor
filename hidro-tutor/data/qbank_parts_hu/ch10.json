@@ -1,0 +1,2902 @@
+[
+  {
+    "question": "Ki publikálta a D8 áramlásirány-algoritmust 1984-ben?",
+    "options": [
+      "A) David Tarboton",
+      "B) O'Callaghan és Mark",
+      "C) Beven és Kirkby",
+      "D) Horton és Strahler"
+    ],
+    "correct": "B",
+    "explanation": "O'Callaghan és Mark 1984-ben publikálta a D8 algoritmust.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány szomszédot vizsgál a D8 algoritmus minden cellánál?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 16"
+    ],
+    "correct": "C",
+    "explanation": "A D8 mind a nyolc szomszédot vizsgálja: négy égtáj szerinti és négy átlós.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit jelent a 'D8' rövidítés?",
+    "options": [
+      "A) Dupla 8 bites kódolás",
+      "B) Nyolcirányú lefolyási pont",
+      "C) Digitális 8 méteres felbontás",
+      "D) Lecsapolás 8 lépésben"
+    ],
+    "correct": "B",
+    "explanation": "D8 = nyolcirányú lefolyási pont.",
+    "type": "mcq"
+  },
+  {
+    "question": "Átlós szomszéd esetén mekkora a cellák közötti távolság, ha a cellaméret Δ?",
+    "options": [
+      "A) Δ",
+      "B) Δ/2",
+      "C) Δ√2",
+      "D) 2Δ"
+    ],
+    "correct": "C",
+    "explanation": "Az átlós távolság Δ√2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik szoftver használ kettő hatványait az áramlásirány-kódoláshoz?",
+    "options": [
+      "A) TauDEM",
+      "B) GRASS GIS",
+      "C) ArcGIS (Esri)",
+      "D) SAGA GIS"
+    ],
+    "correct": "C",
+    "explanation": "Az Esri kettő hatványait használja (1, 2, 4, 8, 16, 32, 64, 128).",
+    "type": "mcq"
+  },
+  {
+    "question": "Az Esri kódolásban melyik érték felel meg az északi iránynak?",
+    "options": [
+      "A) 1",
+      "B) 32",
+      "C) 64",
+      "D) 128"
+    ],
+    "correct": "C",
+    "explanation": "Észak = 64 az Esri-konvencióban.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM kódolásban mit jelent a '2'-es kód?",
+    "options": [
+      "A) Délkelet",
+      "B) Északkelet",
+      "C) Észak",
+      "D) Kelet"
+    ],
+    "correct": "B",
+    "explanation": "TauDEM: 1=K, 2=ÉK, 3=É.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a D8 rácshálózat matematikai struktúrája?",
+    "options": [
+      "A) Irányított aciklikus gráf",
+      "B) Teljes gráf",
+      "C) Kétirányú hálózat",
+      "D) Véletlenszerű gráf"
+    ],
+    "correct": "A",
+    "explanation": "Irányított aciklikus gráf (erdő/fastruktúra).",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a D8 legjellemzőbb műterméke?",
+    "options": [
+      "A) Véletlenszerű zajos mintázat",
+      "B) Lépcsőzetes áramlási útvonal",
+      "C) Körkörös pályák",
+      "D) Egyenletes mezőmintázat"
+    ],
+    "correct": "B",
+    "explanation": "Jellegzetes cikk-cakk lépcsőzetes útvonalak.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki fejlesztette ki a D-végtelen modellt?",
+    "options": [
+      "A) O'Callaghan",
+      "B) Horton",
+      "C) David Tarboton",
+      "D) Strahler"
+    ],
+    "correct": "C",
+    "explanation": "Tarboton 1997-ben publikálta.",
+    "type": "mcq"
+  },
+  {
+    "question": "A D-végtelen modellben milyen értéktartományú az áramlásirány?",
+    "options": [
+      "A) 1-8 egész",
+      "B) 0-360° folytonos szög",
+      "C) Kettő hatványai",
+      "D) Bináris"
+    ],
+    "correct": "B",
+    "explanation": "Folytonos szög 0-tól 2π-ig.",
+    "type": "mcq"
+  },
+  {
+    "question": "Hány facettát értékel ki a D-végtelen?",
+    "options": [
+      "A) 4",
+      "B) 6",
+      "C) 8",
+      "D) 12"
+    ],
+    "correct": "C",
+    "explanation": "Nyolc háromszög alakú facetta.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ha a D-végtelen szög a facetta tartományán kívülre esik, mi történik?",
+    "options": [
+      "A) Kimarad",
+      "B) D8-ra egyszerűsödik",
+      "C) Új facetta",
+      "D) Szög módosul"
+    ],
+    "correct": "B",
+    "explanation": "A meredekebb határoló él mentén kerül hozzárendelésre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ha α=32,7° (K=0°, ÉK=45°), mekkora hányad jut K-nek?",
+    "options": [
+      "A) 72,7%",
+      "B) 50%",
+      "C) 27,3%",
+      "D) 32,7%"
+    ],
+    "correct": "C",
+    "explanation": "p_K = (45-32,7)/45 = 27,3%.",
+    "type": "mcq"
+  },
+  {
+    "question": "A D-végtelen arányok összege?",
+    "options": [
+      "A) 0,5",
+      "B) 1,0",
+      "C) 2,0",
+      "D) Változó"
+    ],
+    "correct": "B",
+    "explanation": "p₁ + p₂ = 1,0, tömegmegmaradás.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit jelent az áramlás-felhalmozódás?",
+    "options": [
+      "A) Cella magassága",
+      "B) Cellába csapolódó terület",
+      "C) Cella lejtése",
+      "D) Kifolyási távolság"
+    ],
+    "correct": "B",
+    "explanation": "Hány cella/mekkora terület csapolódik oda.",
+    "type": "mcq"
+  },
+  {
+    "question": "TauDEM gerincvonal-cella felhalmozódása?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) -1",
+      "D) Nincs definiálva"
+    ],
+    "correct": "B",
+    "explanation": "Saját maga beleszámít.",
+    "type": "mcq"
+  },
+  {
+    "question": "ArcGIS gerincvonal-cella felhalmozódása?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) -1",
+      "D) Nincs definiálva"
+    ],
+    "correct": "A",
+    "explanation": "Csak beáramló cellák.",
+    "type": "mcq"
+  },
+  {
+    "question": "Miért kell logaritmikus skála a felhalmozódáshoz?",
+    "options": [
+      "A) Negatív értékek",
+      "B) Több nagyságrend",
+      "C) Négyzetes cellák",
+      "D) Metaadatok"
+    ],
+    "correct": "B",
+    "explanation": "Egyjegyűtől milliókig terjed.",
+    "type": "mcq"
+  },
+  {
+    "question": "30 m rácson 100 000 cella = hány km²?",
+    "options": [
+      "A) 9",
+      "B) 90",
+      "C) 900",
+      "D) 3000"
+    ],
+    "correct": "B",
+    "explanation": "100 000 × 900 m² = 90 km².",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a súlyozott felhalmozódás?",
+    "options": [
+      "A) Egységsúly",
+      "B) Változó súlyok cellanként",
+      "C) Csak vízfolyás-cellák",
+      "D) Területarányos"
+    ],
+    "correct": "B",
+    "explanation": "Egyéni súly (csapadék, szennyezőanyag).",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit számol a hatásfüggvény?",
+    "options": [
+      "A) Forrásterület",
+      "B) Szennyező útja lefelé",
+      "C) DEM hiba",
+      "D) Lejtés"
+    ],
+    "correct": "B",
+    "explanation": "Forrástól lefelé követi az anyagot.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit számol a függőségi függvény?",
+    "options": [
+      "A) Honnan jön a víz",
+      "B) Hová megy",
+      "C) DEM felbontás",
+      "D) Magasságkülönbség"
+    ],
+    "correct": "A",
+    "explanation": "Célponttól felfelé nyomoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Bomláskorlátolt csillapítás típusa?",
+    "options": [
+      "A) Lineáris",
+      "B) Exponenciális",
+      "C) Logaritmikus",
+      "D) Konstans"
+    ],
+    "correct": "B",
+    "explanation": "e^(-k×d) exponenciális bomlás.",
+    "type": "mcq"
+  },
+  {
+    "question": "k=0,001, d=1000m: maradék hányad?",
+    "options": [
+      "A) 10%",
+      "B) 37%",
+      "C) 50%",
+      "D) 63%"
+    ],
+    "correct": "B",
+    "explanation": "e^(-1) ≈ 37%.",
+    "type": "mcq"
+  },
+  {
+    "question": "Specifikus vízgyűjtő terület definíciója?",
+    "options": [
+      "A) √A",
+      "B) Szintvonal egységnyi hosszára eső terület",
+      "C) z/A",
+      "D) S×A"
+    ],
+    "correct": "B",
+    "explanation": "a = A/w.",
+    "type": "mcq"
+  },
+  {
+    "question": "Specifikus vízgyűjtő terület egysége?",
+    "options": [
+      "A) m²",
+      "B) m",
+      "C) m⁻¹",
+      "D) -"
+    ],
+    "correct": "B",
+    "explanation": "m²/m = m.",
+    "type": "mcq"
+  },
+  {
+    "question": "Ki vezette be a TWI-t?",
+    "options": [
+      "A) Tarboton",
+      "B) O'Callaghan",
+      "C) Beven és Kirkby",
+      "D) Horton"
+    ],
+    "correct": "C",
+    "explanation": "1979, TOPMODEL.",
+    "type": "mcq"
+  },
+  {
+    "question": "TWI képlete?",
+    "options": [
+      "A) a×tanβ",
+      "B) ln(a/tanβ)",
+      "C) a/β",
+      "D) ln(β/a)"
+    ],
+    "correct": "B",
+    "explanation": "TWI = ln(a/tanβ).",
+    "type": "mcq"
+  },
+  {
+    "question": "Hol magasabb a TWI?",
+    "options": [
+      "A) Meredek gerinc",
+      "B) Lapos völgyalj",
+      "C) Meredek lejtő",
+      "D) Dombtetőn"
+    ],
+    "correct": "B",
+    "explanation": "Lapos + nagy járulékos terület.",
+    "type": "mcq"
+  },
+  {
+    "question": "TWI problémája az Alföldön?",
+    "options": [
+      "A) DEM hiány",
+      "B) tanβ→0, TWI→∞",
+      "C) Kicsi terület",
+      "D) Vízhiány"
+    ],
+    "correct": "B",
+    "explanation": "Sík terepen tanβ→0.",
+    "type": "mcq"
+  },
+  {
+    "question": "5 m-es magyar DEM neve?",
+    "options": [
+      "A) SRTM",
+      "B) GLO-30",
+      "C) DDM-5",
+      "D) MERIT"
+    ],
+    "correct": "C",
+    "explanation": "Lechner 5 m DEM.",
+    "type": "mcq"
+  },
+  {
+    "question": "HAND magyar jelentése?",
+    "options": [
+      "A) Legmagasabb pont",
+      "B) Legközelebbi vízelvezetés feletti magasság",
+      "C) Horizontális hálózat",
+      "D) Hidraulikus lejtés"
+    ],
+    "correct": "B",
+    "explanation": "Height Above Nearest Drainage.",
+    "type": "mcq"
+  },
+  {
+    "question": "HAND képlete?",
+    "options": [
+      "A) z(c)+z(s)",
+      "B) z(c)-z(s)",
+      "C) z(s)-z(c)",
+      "D) z(c)×z(s)"
+    ],
+    "correct": "B",
+    "explanation": "HAND = z(cella) - z(vízfolyás).",
+    "type": "mcq"
+  },
+  {
+    "question": "Elöntés HAND szerint mikor van?",
+    "options": [
+      "A) HAND > h",
+      "B) h > HAND",
+      "C) HAND=0",
+      "D) Lejtés=0"
+    ],
+    "correct": "B",
+    "explanation": "Vízmélység > HAND → elöntött.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik TauDEM eszköz számítja a HAND-et?",
+    "options": [
+      "A) D8FlowDir",
+      "B) AreaD8",
+      "C) DinfDistDown",
+      "D) PitRemove"
+    ],
+    "correct": "C",
+    "explanation": "D-infinity Distance Down.",
+    "type": "mcq"
+  },
+  {
+    "question": "TauDEM párhuzamos technológiája?",
+    "options": [
+      "A) GPU",
+      "B) MPI",
+      "C) OpenMP",
+      "D) CUDA"
+    ],
+    "correct": "B",
+    "explanation": "Message Passing Interface.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik NEM implementálja natívan a D-végtelent?",
+    "options": [
+      "A) TauDEM",
+      "B) WhiteboxTools",
+      "C) ArcGIS Pro",
+      "D) SAGA"
+    ],
+    "correct": "C",
+    "explanation": "ArcGIS Pro nem, TauDEM kell.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 lejtésképlet?",
+    "options": [
+      "A) (z₀+zᵢ)/d",
+      "B) (z₀-zᵢ)/d",
+      "C) (z₀-zᵢ)×d",
+      "D) d/(z₀-zᵢ)"
+    ],
+    "correct": "B",
+    "explanation": "S = (z₀-zᵢ)/dᵢ.",
+    "type": "mcq"
+  },
+  {
+    "question": "√2 ≈ ?",
+    "options": [
+      "A) 1,2",
+      "B) 1,414",
+      "C) 1,5",
+      "D) 1,732"
+    ],
+    "correct": "B",
+    "explanation": "1,41421356...",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az áramlási algebra?",
+    "options": [
+      "A) DE megoldó",
+      "B) Általános keretrendszer terepalapú számításokhoz",
+      "C) Koordináta-transzformáció",
+      "D) Lejtés-algoritmus"
+    ],
+    "correct": "B",
+    "explanation": "Tarboton és Baker 2008.",
+    "type": "mcq"
+  },
+  {
+    "question": "NHDPlus COMID?",
+    "options": [
+      "A) Vízállási kód",
+      "B) Egyedi szakaszazonosító",
+      "C) Csapadékkód",
+      "D) DEM jelölés"
+    ],
+    "correct": "B",
+    "explanation": "Common Identifier.",
+    "type": "mcq"
+  },
+  {
+    "question": "HydroSHEDS azonosítója?",
+    "options": [
+      "A) COMID",
+      "B) HydroID",
+      "C) HYRIV_ID",
+      "D) EU-ID"
+    ],
+    "correct": "C",
+    "explanation": "HYRIV_ID.",
+    "type": "mcq"
+  },
+  {
+    "question": "Esri kódolás: DK = ?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "B",
+    "explanation": "K=1, DK=2.",
+    "type": "mcq"
+  },
+  {
+    "question": "Esri kódolás: Ny = ?",
+    "options": [
+      "A) 8",
+      "B) 16",
+      "C) 32",
+      "D) 64"
+    ],
+    "correct": "B",
+    "explanation": "Ny = 16.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen fő előnye?",
+    "options": [
+      "A) Egyszerűbb fa",
+      "B) Simább járulékos terület",
+      "C) Gyorsabb",
+      "D) Kevesebb memória"
+    ],
+    "correct": "B",
+    "explanation": "Csíkozásmentes mintázat.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 előnye vízgyűjtő-lehatároláshoz?",
+    "options": [
+      "A) Pontosabb lejtés",
+      "B) Egyértelmű fastruktúra",
+      "C) Kevesebb memória",
+      "D) Gyorsabb megjelenítés"
+    ],
+    "correct": "B",
+    "explanation": "Egyirányú → tiszta fa.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 sík felszínen?",
+    "options": [
+      "A) Véletlenszerű",
+      "B) Párhuzamos csíkok",
+      "C) Körkörös",
+      "D) Egyenletes"
+    ],
+    "correct": "B",
+    "explanation": "Azonos irányú cellák csíkjai.",
+    "type": "mcq"
+  },
+  {
+    "question": "Sₓ a D-végtelen facettában?",
+    "options": [
+      "A) Középsőtől 1. szomszédig",
+      "B) Merőleges irány",
+      "C) Teljes lejtés",
+      "D) Δz"
+    ],
+    "correct": "A",
+    "explanation": "Középső cella → 1. szomszéd mentén.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen mikor egyszerűsödik D8-ra?",
+    "options": [
+      "A) Soha",
+      "B) Pontos rácsirány",
+      "C) Negatív lejtés",
+      "D) Csak gerincen"
+    ],
+    "correct": "B",
+    "explanation": "100% egy szomszédhoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Tarboton tesztjein hol volt legnagyobb javulás?",
+    "options": [
+      "A) Befelé kúp",
+      "B) Kifelé (divergens) kúp",
+      "C) Síkfelszín",
+      "D) Hegycsúcs"
+    ],
+    "correct": "B",
+    "explanation": "D8 nem tudja a sugárirányú szétáradást.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 felhalmozódás képlete?",
+    "options": [
+      "A) Σ A(i)",
+      "B) 1 + Σ A(i)",
+      "C) A(i)×p",
+      "D) max(A(i))"
+    ],
+    "correct": "B",
+    "explanation": "A(c) = 1 + Σ A(i).",
+    "type": "mcq"
+  },
+  {
+    "question": "Felhalmozódás érvényességi feltételei?",
+    "options": [
+      "A) Linearitás",
+      "B) Megmaradás és DAG",
+      "C) Folytonosság",
+      "D) Szimmetria"
+    ],
+    "correct": "B",
+    "explanation": "Áramlásmegmaradás + nincs kör.",
+    "type": "mcq"
+  },
+  {
+    "question": "Szállítókapacitás modell?",
+    "options": [
+      "A) Korlátlan szállítás",
+      "B) min(kínálat+beáramlás, kapacitás)",
+      "C) Exp. bomlás",
+      "D) Kapacitás > kínálat"
+    ],
+    "correct": "B",
+    "explanation": "Többlet lerakódik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Üledékszállítási arány?",
+    "options": [
+      "A) Kifolyásig jutó erodált hányad",
+      "B) Sebesség",
+      "C) Átmérő",
+      "D) Sűrűség"
+    ],
+    "correct": "A",
+    "explanation": "Erodált üledék / kifolyásig jutó.",
+    "type": "mcq"
+  },
+  {
+    "question": "EFAS működtetője?",
+    "options": [
+      "A) USGS",
+      "B) Copernicus/ECMWF",
+      "C) NASA",
+      "D) OVF"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus, Reading, UK.",
+    "type": "mcq"
+  },
+  {
+    "question": "GloFAS?",
+    "options": [
+      "A) Talajnedvesség",
+      "B) Globális Árvízi Előrejelző",
+      "C) Geodézia",
+      "D) Vízminőség"
+    ],
+    "correct": "B",
+    "explanation": "Global Flood Awareness System.",
+    "type": "mcq"
+  },
+  {
+    "question": "Magyar vízmérce-hálózat?",
+    "options": [
+      "A) Lechner",
+      "B) OMSZ",
+      "C) OVF",
+      "D) MTA"
+    ],
+    "correct": "C",
+    "explanation": "data.vizugy.hu.",
+    "type": "mcq"
+  },
+  {
+    "question": "EU-Hydro?",
+    "options": [
+      "A) Csapadék",
+      "B) Páneurópai vízhálózat",
+      "C) Talajvíz",
+      "D) Éghajlat"
+    ],
+    "correct": "B",
+    "explanation": "Copernicus Land Monitoring.",
+    "type": "mcq"
+  },
+  {
+    "question": "LiDAR-on utak hatása?",
+    "options": [
+      "A) Nem látható",
+      "B) Éles határ, átereszek magas",
+      "C) Egyenletes",
+      "D) Csak erdőben"
+    ],
+    "correct": "B",
+    "explanation": "Lineáris akadály, koncentrált kibocsátás.",
+    "type": "mcq"
+  },
+  {
+    "question": "TWI fizikai jelentése?",
+    "options": [
+      "A) Lejtés",
+      "B) Telítettségre való hajlam",
+      "C) DEM hiba",
+      "D) Vízhozam"
+    ],
+    "correct": "B",
+    "explanation": "Lapos + nagy terület → telítettségi hajlam.",
+    "type": "mcq"
+  },
+  {
+    "question": "TWI a TOPMODEL-ben?",
+    "options": [
+      "A) Csapadék időeloszlás",
+      "B) Változó forrásterületű lefolyás",
+      "C) Evapotranszspiráció",
+      "D) Mederszélesség"
+    ],
+    "correct": "B",
+    "explanation": "Telítődéses lefolyáskeletkezés mintázata.",
+    "type": "mcq"
+  },
+  {
+    "question": "EEA-10 DEM felbontása?",
+    "options": [
+      "A) 5m",
+      "B) 10m",
+      "C) 30m",
+      "D) 90m"
+    ],
+    "correct": "B",
+    "explanation": "10 méter, EU/EGT.",
+    "type": "mcq"
+  },
+  {
+    "question": "30 m-es ingyenes globális DEM?",
+    "options": [
+      "A) DDM-5",
+      "B) MERIT",
+      "C) Copernicus GLO-30",
+      "D) 3DEP"
+    ],
+    "correct": "C",
+    "explanation": "GLO-30 = 30 m, ingyenes.",
+    "type": "mcq"
+  },
+  {
+    "question": "100-1000 felhalmozódási osztály?",
+    "options": [
+      "A) Gerincek",
+      "B) Koncentrált lejtőoldali áramlás",
+      "C) Közepes folyók",
+      "D) Nagy folyók"
+    ],
+    "correct": "B",
+    "explanation": "Koncentrált lejtőoldali áramlás.",
+    "type": "mcq"
+  },
+  {
+    "question": "Visszatartás-korlátolt modell lényege?",
+    "options": [
+      "A) Exp. bomlás",
+      "B) Visszatartás levonása",
+      "C) Kapacitáskorlát",
+      "D) Max. koncentráció"
+    ],
+    "correct": "B",
+    "explanation": "Beszivárgás/evapotranszspiráció levonása.",
+    "type": "mcq"
+  },
+  {
+    "question": "GRASS GIS r.watershed?",
+    "options": [
+      "A) ArcGIS",
+      "B) GRASS GIS",
+      "C) TauDEM",
+      "D) WhiteboxTools"
+    ],
+    "correct": "B",
+    "explanation": "GRASS GIS eszköz.",
+    "type": "mcq"
+  },
+  {
+    "question": "WhiteboxTools nyelve?",
+    "options": [
+      "A) Python",
+      "B) C++",
+      "C) Java",
+      "D) Rust"
+    ],
+    "correct": "D",
+    "explanation": "Rust.",
+    "type": "mcq"
+  },
+  {
+    "question": "Áramlási algebra melyik NEM komponens?",
+    "options": [
+      "A) Áramlásirány",
+      "B) Bemenet",
+      "C) Kombináció",
+      "D) DEM felbontás"
+    ],
+    "correct": "D",
+    "explanation": "4 komponens: mező, bemenet, kombináció, transzformáció.",
+    "type": "mcq"
+  },
+  {
+    "question": "Vízfolyáscella HAND-je?",
+    "options": [
+      "A) Magassága",
+      "B) Nulla",
+      "C) Lejtése",
+      "D) N/A"
+    ],
+    "correct": "B",
+    "explanation": "HAND = 0.",
+    "type": "mcq"
+  },
+  {
+    "question": "Összefolyásnál felhalmozódás?",
+    "options": [
+      "A) Ugrásszerűen nő",
+      "B) Csökken",
+      "C) Változatlan",
+      "D) Nullára esik"
+    ],
+    "correct": "A",
+    "explanation": "Additív tulajdonság.",
+    "type": "mcq"
+  },
+  {
+    "question": "Milyen DEM kell HAND-hoz?",
+    "options": [
+      "A) Nyers",
+      "B) Kondicionált",
+      "C) Radiometrikus",
+      "D) Hőmérsékleti"
+    ],
+    "correct": "B",
+    "explanation": "+ áramlásirány + vízfolyás-raszter.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen HAND miért simább?",
+    "options": [
+      "A) Magasabb felbontás",
+      "B) Több útvonal átlaga",
+      "C) Gerincek kizárása",
+      "D) Alacsonyabb küszöb"
+    ],
+    "correct": "B",
+    "explanation": "Arányos elosztás → többútvonalú átlag.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen teljes lejtés képlete?",
+    "options": [
+      "A) Sₓ+Sᵧ",
+      "B) √(Sₓ²+Sᵧ²)",
+      "C) max(Sₓ,Sᵧ)",
+      "D) Sₓ×Sᵧ"
+    ],
+    "correct": "B",
+    "explanation": "Pitagorász.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi NEM számítható D-végtelen mezőből?",
+    "options": [
+      "A) HAND",
+      "B) Vízszintes táv",
+      "C) Hőmérséklet",
+      "D) Relatív pozíció"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet nem áramlási derivátum.",
+    "type": "mcq"
+  },
+  {
+    "question": "Topológiai rendezés jelentősége?",
+    "options": [
+      "A) Ábécé sorrend",
+      "B) Felső cellák előbb",
+      "C) Egyenletes elosztás",
+      "D) Gerincek kizárása"
+    ],
+    "correct": "B",
+    "explanation": "Egy cella csak feldolgozott felső cellái után.",
+    "type": "mcq"
+  },
+  {
+    "question": "GRASS szegmentált feldolgozása?",
+    "options": [
+      "A) Csak vízfolyásokra",
+      "B) Nagy DEM-ekhez",
+      "C) Csak 2D",
+      "D) Szegmentálásra"
+    ],
+    "correct": "B",
+    "explanation": "Memóriahatékony nagy DEM-ekhez.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 vs D-végtelen hol különbözik leginkább?",
+    "options": [
+      "A) Meredek hegy",
+      "B) Enyhe lejtőkön",
+      "C) Mély kanyon",
+      "D) Karszt"
+    ],
+    "correct": "B",
+    "explanation": "Sík/enyhe területen a D8 műtermékek a legrosszabbak.",
+    "type": "mcq"
+  },
+  {
+    "question": "Esri kódolás: ÉK = ?",
+    "options": [
+      "A) 2",
+      "B) 64",
+      "C) 128",
+      "D) 32"
+    ],
+    "correct": "C",
+    "explanation": "ÉK = 128.",
+    "type": "mcq"
+  },
+  {
+    "question": "D8 raszter adattípus?",
+    "options": [
+      "A) Lebegőpontos",
+      "B) Egész",
+      "C) Boolean",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Kódolt egész számok.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen raszter adattípus?",
+    "options": [
+      "A) Egész",
+      "B) Lebegőpontos",
+      "C) Bináris",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Folytonos szögek radiánban.",
+    "type": "mcq"
+  },
+  {
+    "question": "DinfDistUp mit számol?",
+    "options": [
+      "A) Vízfolyásig",
+      "B) Gerincvonaltól",
+      "C) HAND",
+      "D) Lejtés"
+    ],
+    "correct": "B",
+    "explanation": "Distance Up = gerincvonaltól.",
+    "type": "mcq"
+  },
+  {
+    "question": "Magyar referenciahálózat?",
+    "options": [
+      "A) NHDPlus",
+      "B) HydroSHEDS",
+      "C) OVF/EU-Hydro",
+      "D) GRDC"
+    ],
+    "correct": "C",
+    "explanation": "OVF + EU-Hydro.",
+    "type": "mcq"
+  },
+  {
+    "question": "D-végtelen szög képlete?",
+    "options": [
+      "A) arctan(Sₓ/Sᵧ)",
+      "B) arctan(Sᵧ/Sₓ)",
+      "C) Sₓ+Sᵧ",
+      "D) Sₓ×Sᵧ"
+    ],
+    "correct": "B",
+    "explanation": "α = arctan(Sᵧ/Sₓ).",
+    "type": "mcq"
+  },
+  {
+    "question": "Feldolgozási csővezeték első lépése?",
+    "options": [
+      "A) Felhalmozódás",
+      "B) Vízfolyás-definíció",
+      "C) Áramlásirány",
+      "D) HAND"
+    ],
+    "correct": "C",
+    "explanation": "DEM → áramlásirány.",
+    "type": "mcq"
+  },
+  {
+    "question": "Koncentrációkorlátolt miben különbözik?",
+    "options": [
+      "A) Nincs különbség",
+      "B) Oldhatósági korlát",
+      "C) Csak felfelé",
+      "D) Nincs arány"
+    ],
+    "correct": "B",
+    "explanation": "Oldhatóság + hígítás + bomlás.",
+    "type": "mcq"
+  },
+  {
+    "question": "Súlyozott felhalmozódás szennyezővel?",
+    "options": [
+      "A) DEM kondicionálás",
+      "B) Összterhelés integrálása",
+      "C) Irány-módosítás",
+      "D) Lejtés"
+    ],
+    "correct": "B",
+    "explanation": "Felvízi összterhelés integrálása.",
+    "type": "mcq"
+  },
+  {
+    "question": "Rácshálózat mit NEM kódol?",
+    "options": [
+      "A) Vízelvezetés",
+      "B) Hálózat",
+      "C) Hőmérséklet",
+      "D) Összefolyás"
+    ],
+    "correct": "C",
+    "explanation": "Hőmérséklet irreleváns.",
+    "type": "mcq"
+  },
+  {
+    "question": "p(i,c) a D-végtelen felhalmozódásban?",
+    "options": [
+      "A) Magasság",
+      "B) i→c áramlási arány",
+      "C) Teljes terület",
+      "D) Lejtés"
+    ],
+    "correct": "B",
+    "explanation": "Az i cellából c-be irányított áramlás aránya.",
+    "type": "mcq"
+  },
+  {
+    "question": "A D8 egyszerre legfeljebb két szomszédhoz rendelheti az áramlást.",
+    "correct": "false",
+    "explanation": "Mindig pontosan egy szomszédhoz.",
+    "type": "true_false"
+  },
+  {
+    "question": "A D-végtelen 1997-ben jelent meg a Water Resources Research-ben.",
+    "correct": "true",
+    "explanation": "Tarboton 1997.",
+    "type": "true_false"
+  },
+  {
+    "question": "Esri kódolásban '2' = délkelet.",
+    "correct": "true",
+    "explanation": "K=1, DK=2.",
+    "type": "true_false"
+  },
+  {
+    "question": "TauDEM kódolásban '2' = északkelet.",
+    "correct": "true",
+    "explanation": "K=1, ÉK=2.",
+    "type": "true_false"
+  },
+  {
+    "question": "Átlós és égtáj szerinti szomszédok cellatávolsága azonos.",
+    "correct": "false",
+    "explanation": "Átlós: Δ√2, égtáj: Δ.",
+    "type": "true_false"
+  },
+  {
+    "question": "A rácshálózat irányított aciklikus gráf.",
+    "correct": "true",
+    "explanation": "Nincs hurok.",
+    "type": "true_false"
+  },
+  {
+    "question": "Kondicionált DEM-nél lehetséges körkörös útvonal.",
+    "correct": "false",
+    "explanation": "A kondicionálás kizárja.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen arányok összege mindig 1,0.",
+    "correct": "true",
+    "explanation": "Tömegmegmaradás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A D8 jól ábrázolja a szétágazó áramlást.",
+    "correct": "false",
+    "explanation": "Egyetlen szomszédba kényszerít.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TWI magasabb meredek gerincen.",
+    "correct": "false",
+    "explanation": "Ott alacsony.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HAND mindig nemnegatív.",
+    "correct": "true",
+    "explanation": "z(cella) ≥ z(vízfolyás).",
+    "type": "true_false"
+  },
+  {
+    "question": "Összefolyásnál a felhalmozódás additív.",
+    "correct": "true",
+    "explanation": "Összeadódik.",
+    "type": "true_false"
+  },
+  {
+    "question": "Súlyozott felhalmozódásnál ArcGIS kimenet lebegőpontos kell legyen.",
+    "correct": "true",
+    "explanation": "Egész szám csonkít.",
+    "type": "true_false"
+  },
+  {
+    "question": "A hatásfüggvény felfelé követ.",
+    "correct": "false",
+    "explanation": "Lefelé. Felfelé = függőségi.",
+    "type": "true_false"
+  },
+  {
+    "question": "A függőségi a hatás inverze.",
+    "correct": "true",
+    "explanation": "Ellentétes irány.",
+    "type": "true_false"
+  },
+  {
+    "question": "Bomláskorlátolt: távoli források kisebb hatásúak.",
+    "correct": "true",
+    "explanation": "Exponenciális csillapítás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Specifikus vízgyűjtő terület egysége m².",
+    "correct": "false",
+    "explanation": "m²/m = m.",
+    "type": "true_false"
+  },
+  {
+    "question": "Beven és Kirkby 1979: TWI.",
+    "correct": "true",
+    "explanation": "TOPMODEL részeként.",
+    "type": "true_false"
+  },
+  {
+    "question": "TWI-ben logaritmus nem szükséges.",
+    "correct": "false",
+    "explanation": "Több nagyságrend.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen 8 facettát értékel ki.",
+    "correct": "true",
+    "explanation": "Nyolc háromszög.",
+    "type": "true_false"
+  },
+  {
+    "question": "TauDEM ingyenes és nyílt forráskódú.",
+    "correct": "true",
+    "explanation": "Win/Lin/Mac.",
+    "type": "true_false"
+  },
+  {
+    "question": "ArcGIS Pro natívan implementálja a D-végtelent.",
+    "correct": "false",
+    "explanation": "TauDEM szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "WhiteboxTools Rust nyelven.",
+    "correct": "true",
+    "explanation": "Nagy teljesítmény.",
+    "type": "true_false"
+  },
+  {
+    "question": "D8: cellánként több kimenő él.",
+    "correct": "false",
+    "explanation": "Pontosan egy.",
+    "type": "true_false"
+  },
+  {
+    "question": "Sík terepen D8 párhuzamos csíkokat ad.",
+    "correct": "true",
+    "explanation": "Azonos irányú cellák.",
+    "type": "true_false"
+  },
+  {
+    "question": "NHDPlus ~2,7 millió szakasz.",
+    "correct": "true",
+    "explanation": "COMID-val.",
+    "type": "true_false"
+  },
+  {
+    "question": "HAND hidraulikai kalibrálást igényel.",
+    "correct": "false",
+    "explanation": "Nem igényel.",
+    "type": "true_false"
+  },
+  {
+    "question": "GRASS r.watershed memóriaoptimalizált.",
+    "correct": "true",
+    "explanation": "Szegmentált feldolgozás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Copernicus GLO-30 ingyenes.",
+    "correct": "true",
+    "explanation": "30 m, globális.",
+    "type": "true_false"
+  },
+  {
+    "question": "DDM-5 az SRTM-ből készült.",
+    "correct": "false",
+    "explanation": "Lechner magyar DEM.",
+    "type": "true_false"
+  },
+  {
+    "question": "Magasabb küszöb = sűrűbb hálózat.",
+    "correct": "false",
+    "explanation": "Magasabb = ritkább.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen járulékos térkép simább mint D8.",
+    "correct": "true",
+    "explanation": "Csíkozásmentes.",
+    "type": "true_false"
+  },
+  {
+    "question": "Lineáris színskála jó a felhalmozódáshoz.",
+    "correct": "false",
+    "explanation": "Logaritmikus kell.",
+    "type": "true_false"
+  },
+  {
+    "question": "Áramlási algebra: Tarboton & Baker 2008.",
+    "correct": "true",
+    "explanation": "CRC Press.",
+    "type": "true_false"
+  },
+  {
+    "question": "D8 a legrégebbi módszer rácshálón.",
+    "correct": "true",
+    "explanation": "1984.",
+    "type": "true_false"
+  },
+  {
+    "question": "HAND-hoz áramlásirány-mező szükséges.",
+    "correct": "true",
+    "explanation": "+ kondicionált DEM + vízfolyás-raszter.",
+    "type": "true_false"
+  },
+  {
+    "question": "EFAS középtávú + szezonális előrejelzés.",
+    "correct": "true",
+    "explanation": "15 nap + 4 hónap.",
+    "type": "true_false"
+  },
+  {
+    "question": "OVF adatok 2024 júliusától nyíltak.",
+    "correct": "true",
+    "explanation": "data.vizugy.hu.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen jobban ábrázolja konvex dombtetők áramlását.",
+    "correct": "true",
+    "explanation": "Arányos elosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "TauDEM függőleges sávokra oszt.",
+    "correct": "false",
+    "explanation": "Vízszintes sávok.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen facettaszög bármely 45°-os tartományba eshet.",
+    "correct": "true",
+    "explanation": "Minden facetta 45°-os.",
+    "type": "true_false"
+  },
+  {
+    "question": "Felhalmozódás topológiai sorrendben hatékony.",
+    "correct": "true",
+    "explanation": "Felső cellák előbb.",
+    "type": "true_false"
+  },
+  {
+    "question": "Kapacitáskorlátolt modell az üledékszállítási arányt produkálja.",
+    "correct": "true",
+    "explanation": "Belső lerakódás csökkenti a kifolyásig jutó hányadot.",
+    "type": "true_false"
+  },
+  {
+    "question": "Esri és TauDEM kódolás azonos.",
+    "correct": "false",
+    "explanation": "Teljesen különböző.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen a lejtőoldal-jellemzéshez előnyösebb.",
+    "correct": "true",
+    "explanation": "Simább specifikus terület.",
+    "type": "true_false"
+  },
+  {
+    "question": "Felhalmozódási érték = vízfolyás 'mérete'.",
+    "correct": "true",
+    "explanation": "Korrelál vízhozammal.",
+    "type": "true_false"
+  },
+  {
+    "question": "Legmeredekebb lejtés mindig a legalacsonyabb szomszéd felé.",
+    "correct": "false",
+    "explanation": "√2 büntetés megfordíthatja.",
+    "type": "true_false"
+  },
+  {
+    "question": "HAND az áramlási útvonalat követi.",
+    "correct": "true",
+    "explanation": "Nem légvonalat.",
+    "type": "true_false"
+  },
+  {
+    "question": "Magas TWI a száraz gerincvonalakra jellemző.",
+    "correct": "false",
+    "explanation": "Lapos, konvergens területekre.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen a lehető legsimább térképet adja.",
+    "correct": "true",
+    "explanation": "Folytonos szög + arányos elosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Alföldön a TWI a leghasznosabb.",
+    "correct": "false",
+    "explanation": "Dombos/hegyes terepen.",
+    "type": "true_false"
+  },
+  {
+    "question": "AreaDinf D-végtelen arányosított felhalmozódás.",
+    "correct": "true",
+    "explanation": "TauDEM eszköz.",
+    "type": "true_false"
+  },
+  {
+    "question": "Felhalmozódás 0-tól milliókig terjedhet.",
+    "correct": "true",
+    "explanation": "Gerincvonaltól kifolyásig.",
+    "type": "true_false"
+  },
+  {
+    "question": "HAND pontosabb mint hidraulikai modell.",
+    "correct": "false",
+    "explanation": "Közelítő, de gyors.",
+    "type": "true_false"
+  },
+  {
+    "question": "Áramlási algebra 2008, Tarboton & Baker.",
+    "correct": "true",
+    "explanation": "CRC Press.",
+    "type": "true_false"
+  },
+  {
+    "question": "D8-nál sík terep nem probléma.",
+    "correct": "false",
+    "explanation": "Legproblémásabb: csíkok.",
+    "type": "true_false"
+  },
+  {
+    "question": "Égtáj szerinti szomszéd távolsága = Δ.",
+    "correct": "true",
+    "explanation": "A cellaméret.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen mindig két szomszéd között oszt.",
+    "correct": "false",
+    "explanation": "Pontos rácsirány → egy szomszéd.",
+    "type": "true_false"
+  },
+  {
+    "question": "Északi-középhegységben TWI értelmesebb mint Alföldön.",
+    "correct": "true",
+    "explanation": "Topográfiailag vezérelt lefolyás.",
+    "type": "true_false"
+  },
+  {
+    "question": "D8 alkalmatlan hálózat-kinyerésre.",
+    "correct": "false",
+    "explanation": "Éppen arra optimális.",
+    "type": "true_false"
+  },
+  {
+    "question": "MPI a TauDEM párhuzamos technológiája.",
+    "correct": "true",
+    "explanation": "Message Passing Interface.",
+    "type": "true_false"
+  },
+  {
+    "question": "Kódolási konvenció ismerete szükségtelen.",
+    "correct": "false",
+    "explanation": "Elengedhetetlen.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen térkép csíkozásmentes.",
+    "correct": "true",
+    "explanation": "Folytonos ábrázolás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Légvonalbeli távolság topográfiát figyelembe vesz.",
+    "correct": "false",
+    "explanation": "Euklideszi, nem.",
+    "type": "true_false"
+  },
+  {
+    "question": "D-végtelen a HAND legelterjedtebb bemenete.",
+    "correct": "true",
+    "explanation": "Simább eredmény.",
+    "type": "true_false"
+  },
+  {
+    "question": "D8 és D-végtelen együtt használandó.",
+    "correct": "true",
+    "explanation": "D8 hálózathoz, D-inf lejtőhöz.",
+    "type": "true_false"
+  },
+  {
+    "question": "Nobre et al. 2011: HAND.",
+    "correct": "true",
+    "explanation": "J. Hydrology.",
+    "type": "true_false"
+  },
+  {
+    "question": "10 000-100 000 = kis vízfolyások.",
+    "correct": "true",
+    "explanation": "Osztályozási osztály.",
+    "type": "true_false"
+  },
+  {
+    "question": "Azonos Δz esetén égtáj szerinti szomszéd nyer átlós felett.",
+    "correct": "true",
+    "explanation": "Kisebb távolság → meredekebb lejtés.",
+    "type": "true_false"
+  },
+  {
+    "question": "Koncentrációkorlátolt modell tömeg + térfogat követése.",
+    "correct": "true",
+    "explanation": "Koncentráció = tömeg/térfogat.",
+    "type": "true_false"
+  },
+  {
+    "question": "HAND normalizálja a tájat.",
+    "correct": "true",
+    "explanation": "Relatív magasság a vízelvezetéshez.",
+    "type": "true_false"
+  },
+  {
+    "question": "SAGA az Esri kódolást használja.",
+    "correct": "false",
+    "explanation": "Saját elrendezés.",
+    "type": "true_false"
+  },
+  {
+    "question": "Földrajzi koordinátáknál koszinusz-korrekció kell.",
+    "correct": "true",
+    "explanation": "Cellaterület szélességfüggő.",
+    "type": "true_false"
+  },
+  {
+    "question": "A D8 a '________' rövidítése.",
+    "correct": "nyolcirányú lefolyási pont",
+    "explanation": "D8 = eight-direction pour point.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A D8-at ________ és ________ publikálta 1984-ben.",
+    "correct": "O'Callaghan és Mark",
+    "explanation": "1984.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Átlós szomszédok cellatávolsága: Δ × ________.",
+    "correct": "√2",
+    "explanation": "Δ√2.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Esri: K irány kódja = ________.",
+    "correct": "1",
+    "explanation": "Kelettől indul.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az Esri kódolás kettő ________-t használ.",
+    "correct": "hatványait",
+    "explanation": "1,2,4,8,16,32,64,128.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM kódolást ________ fejlesztette ki.",
+    "correct": "David Tarboton",
+    "explanation": "Band-konvenció.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A D8 rácshálózat egy ________ (fák gyűjteménye).",
+    "correct": "erdő",
+    "explanation": "Fák/fa gyűjteménye.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8 legjellemzőbb műterméke: ________ mintázat.",
+    "correct": "lépcsőzetes",
+    "explanation": "Cikk-cakk.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen: ________ publikálta 1997-ben.",
+    "correct": "David Tarboton",
+    "explanation": "WRR, 1997.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen az irányt ________ szögként ábrázolja.",
+    "correct": "folytonos",
+    "explanation": "0-tól 2π.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen legfeljebb ________ szomszéd között oszt.",
+    "correct": "két",
+    "explanation": "Két szomszédos rácsirány között.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Felhalmozódás az ________-mezőt területté alakítja.",
+    "correct": "áramlásirány",
+    "explanation": "Irány → terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM gerincvonal-cella felhalmozódása: ________.",
+    "correct": "1",
+    "explanation": "Saját maga beleszámít.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "ArcGIS gerincvonal-cella felhalmozódása: ________.",
+    "correct": "0",
+    "explanation": "Csak beáramló cellák.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "30 m rácson cellaterület = ________ m².",
+    "correct": "900",
+    "explanation": "30×30.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TWI = ln(________ / tan β).",
+    "correct": "a",
+    "explanation": "Specifikus vízgyűjtő terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TWI-t ________ és ________ vezette be.",
+    "correct": "Beven és Kirkby",
+    "explanation": "1979, TOPMODEL.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Specifikus terület: a = ________ / w.",
+    "correct": "A",
+    "explanation": "Teljes terület / szintvonalhossz.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND = Height Above Nearest ________.",
+    "correct": "Drainage",
+    "explanation": "Vízelvezetés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND(c) = z(c) - z(________).",
+    "correct": "s",
+    "explanation": "Legközelebbi vízfolyáscella.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM ________-t használ párhuzamos feldolgozáshoz.",
+    "correct": "MPI",
+    "explanation": "Message Passing Interface.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Áramlási algebrát Tarboton és ________ formalizálta.",
+    "correct": "Baker",
+    "explanation": "2008.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Bomlás csillapítás: e^(-k × ________).",
+    "correct": "d",
+    "explanation": "Távolság.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "α = arctan(________ / Sₓ).",
+    "correct": "Sᵧ",
+    "explanation": "Lejtéskomponensek.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND-et a TauDEM ________ számítja.",
+    "correct": "DinfDistDown",
+    "explanation": "D-infinity Distance Down.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "NHDPlus azonosítója: ________.",
+    "correct": "COMID",
+    "explanation": "Common Identifier.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HydroSHEDS azonosítója: ________.",
+    "correct": "HYRIV_ID",
+    "explanation": "HydroRIVERS ID.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "EU-Hydro: ________ Szolgálat terméke.",
+    "correct": "Copernicus Felszínmonitorozó",
+    "explanation": "Land Monitoring Service.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Magyar 5 m DEM: ________.",
+    "correct": "DDM-5",
+    "explanation": "Lechner.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "GLO-30 felbontása: ________ m.",
+    "correct": "30",
+    "explanation": "Globális, ingyenes.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8 lejtés: S = (z₀-zᵢ) / ________.",
+    "correct": "dᵢ",
+    "explanation": "Cellaközéppont-távolság.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen lejtés: S = √(Sₓ² + ________²).",
+    "correct": "Sᵧ",
+    "explanation": "Pitagorász.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A ________ a hatás inverze.",
+    "correct": "függőségi függvény",
+    "explanation": "Felfelé nyomoz.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Súlyozott felhalmozódás: W(c) = w(c) + Σ p(i,c) × ________.",
+    "correct": "W(i)",
+    "explanation": "Felvízi hozzájárulás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Vízfolyáshálózatot ________ alkalmazásával nyerjük ki.",
+    "correct": "küszöbérték",
+    "explanation": "Felhalmozódási küszöb.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND a gyors árvízi ________ eszköze.",
+    "correct": "elöntéstérképezés",
+    "explanation": "Gyors, közelítő.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Esri: ÉK = ________.",
+    "correct": "128",
+    "explanation": "Utolsó kettőhatvány.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM: É = ________.",
+    "correct": "3",
+    "explanation": "K=1, ÉK=2, É=3.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8 raszter ________ típusú.",
+    "correct": "egész szám",
+    "explanation": "Kódolt irányok.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen raszter ________ típusú.",
+    "correct": "lebegőpontos",
+    "explanation": "Szögértékek radiánban.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "DEM→vízhálózat lánc: számítási ________.",
+    "correct": "csővezeték",
+    "explanation": "Pipeline.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Áramlási algebra: mező, bemenet, kombináció, ________.",
+    "correct": "szállítási transzformáció",
+    "explanation": "4. komponens.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "WhiteboxTools nyelve: ________.",
+    "correct": "Rust",
+    "explanation": "Nagy teljesítmény.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Vízfolyáscellák HAND-je: ________.",
+    "correct": "nulla",
+    "explanation": "Saját maguk a vízelvezetés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen arányok összege: ________.",
+    "correct": "1,0",
+    "explanation": "Tömegmegmaradás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TWI az Északi-________-ben a leghasznosabb.",
+    "correct": "középhegységben",
+    "explanation": "Dombos/hegyes terep.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Felhalmozódás megjelenítése: ________ skála.",
+    "correct": "logaritmikus",
+    "explanation": "Több nagyságrend.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8: cellánként ________ kimenő él.",
+    "correct": "egy",
+    "explanation": "Egyetlen szomszéd.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Felszíni úthossz = ________ mérőszám.",
+    "correct": "lejtőtávolság",
+    "explanation": "Slope distance.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "OVF adatai: ________.",
+    "correct": "data.vizugy.hu",
+    "explanation": "2024 óta nyílt.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TWI völgyalji példa: ________.",
+    "correct": "11,87",
+    "explanation": "ln(5000/tan2°).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TWI meredek példa: ________.",
+    "correct": "6,06",
+    "explanation": "ln(200/tan25°).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "k=0,001, d=5000m: ≈ ________.",
+    "correct": "0,007",
+    "explanation": "e^(-5).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen példa középső cella: ________ m.",
+    "correct": "45",
+    "explanation": "10 m rácson.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM D-inf terület: ________.",
+    "correct": "AreaDinf",
+    "explanation": "D-infinity Contributing Area.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Elöntés: h_w > ________(c).",
+    "correct": "HAND",
+    "explanation": "Vízmélység > HAND.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8 konvex dombtetőn: egy ________-ba kényszerít.",
+    "correct": "csatornába",
+    "explanation": "Szétágazás lehetetlen.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "________ Index: járulékos terület + lejtés.",
+    "correct": "topográfiai nedvességi",
+    "explanation": "TWI.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND normalizál a helyi ________-hez.",
+    "correct": "vízelvezetéshez",
+    "explanation": "Relatív magasság.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM D8 eszköze: ________.",
+    "correct": "D8FlowDir",
+    "explanation": "D8 áramlásirány.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen szög: óramutató járásával ________.",
+    "correct": "ellentétesen",
+    "explanation": "Kelettől CCW.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Magyarország: ________ Vízgyűjtő-kerület.",
+    "correct": "Duna",
+    "explanation": "Teljes terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "HAND fogalmát ________ et al. (2011) vezette be.",
+    "correct": "Nobre",
+    "explanation": "J. Hydrology.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D8: Δz / ________.",
+    "correct": "távolság",
+    "explanation": "S = Δz/d.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "EEA-10 felbontása: ________ m.",
+    "correct": "10",
+    "explanation": "EU/EGT.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Magas specifikus terület = ________ terep.",
+    "correct": "konvergens",
+    "explanation": "Áramlás koncentrálódik.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Felhalmozódás >1M: ________ folyók.",
+    "correct": "nagy",
+    "explanation": "Legnagyobb vízhozam.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen arány: p₁ = (θ₂-α)/(θ₂-________).",
+    "correct": "θ₁",
+    "explanation": "Arányosítás.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "GRASS vízgyűjtő: r.________.",
+    "correct": "watershed",
+    "explanation": "Hatékony D8.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "GloFAS az ________ globális kiterjesztése.",
+    "correct": "EFAS",
+    "explanation": "EU→globális.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Áramlásirány-raszter: a táj hidrológiai ________.",
+    "correct": "indexe",
+    "explanation": "Vízelvezetés kompakt ábrázolása.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen: járulékos terület és ________-jellemzés.",
+    "correct": "lejtőoldal",
+    "explanation": "Simább specifikus terület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Ismertesse a D8 áramlásirány-algoritmus működését, a lejtésszámítást égtáj szerinti és átlós szomszédoknál!",
+    "explanation": "8 szomszéd, S=(z₀-zᵢ)/dᵢ, égtáj: d=Δ, átlós: d=Δ√2, legmeredekebb pozitív lejtés nyer.",
+    "type": "essay"
+  },
+  {
+    "question": "Hasonlítsa össze az Esri és TauDEM kódolást! Miért fontos?",
+    "explanation": "Esri: 2^n CW kelettől. TauDEM: 1-8 CCW kelettől. '2'=DK vs ÉK. Összekeverés = hibás eredmény.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a D8 három korlátját és miért marad szabvány!",
+    "explanation": "Lépcső, csíkok, nincs szétágazás. De: fastruktúra optimális hálózat/vízgyűjtő lehatároláshoz.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a D-végtelen facettaszámítást!",
+    "explanation": "8 facetta, Sₓ/Sᵧ, α=arctan(Sᵧ/Sₓ), tartomány-ellenőrzés, max S facetta nyer.",
+    "type": "essay"
+  },
+  {
+    "question": "D-végtelen áramláselosztás numerikus példán!",
+    "explanation": "α=32,7°: pK=27,3%, pÉK=72,7%. Σ=1,0. Fizikailag valósághű.",
+    "type": "essay"
+  },
+  {
+    "question": "Áramlás-felhalmozódás D8 vs D-végtelen képlet!",
+    "explanation": "D8: A(c)=1+ΣA(i). Dinf: A(c)=1+Σp(i,c)×A(i). Dinf törtértékű.",
+    "type": "essay"
+  },
+  {
+    "question": "Felhalmozódás érvényességi feltételei!",
+    "explanation": "1) Megmaradás: Σarányok=1. 2) DAG: nincs kör. Véges, helyes számítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Küszöbérték hatása a vízfolyáshálózatra!",
+    "explanation": "Alacsony→sűrű, magas→ritka. Referenciahálózattal kalibrálható.",
+    "type": "essay"
+  },
+  {
+    "question": "Súlyozott felhalmozódás alkalmazásai!",
+    "explanation": "Csapadék, szennyezőanyag, burkolt felszín. Egyéni súly integrálja a változót.",
+    "type": "essay"
+  },
+  {
+    "question": "Általánosított felhalmozódási függvények!",
+    "explanation": "Egyszerű, súlyozott, hatás, függőség, bomlás, koncentráció, kapacitás, visszatartás. Közös struktúra.",
+    "type": "essay"
+  },
+  {
+    "question": "Hatásfüggvény és függőségi!",
+    "explanation": "Hatás: lefelé. Függőség: felfelé. Inverze egymásnak.",
+    "type": "essay"
+  },
+  {
+    "question": "Bomláskorlátolt felhalmozódás!",
+    "explanation": "C=w+Σp×C×e^(-kd). Távoli források csillapodnak.",
+    "type": "essay"
+  },
+  {
+    "question": "Specifikus vízgyűjtő terület és D-végtelen!",
+    "explanation": "a=A/w (m). Dinf pontosabban osztja el a konvergencia/divergencia szerint.",
+    "type": "essay"
+  },
+  {
+    "question": "TWI: képlet, értelmezés, korlátok sík terepen!",
+    "explanation": "ln(a/tanβ). Magas=lapos+nagy terület. Alföldön tanβ→0, TWI→∞, de nem topográfiailag vezérelt.",
+    "type": "essay"
+  },
+  {
+    "question": "TWI számítási példa a fejezetből!",
+    "explanation": "Völgyalj: 11,87. Meredek: 6,06. Kétszeres különbség = nagyobb telítettségi hajlam.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND: definíció és árvíztérképezés!",
+    "explanation": "HAND=z(c)-z(vízfolyás). h_w>HAND → elöntött. Gyors, nincs kalibrálás.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND vs hidraulikai modell!",
+    "explanation": "HAND: gyors, közelítő. Hidraulikai: pontos, lassú, kalibrálást igényel.",
+    "type": "essay"
+  },
+  {
+    "question": "D-végtelen közelségi mérőszámok!",
+    "explanation": "HAND, vízszintes/lejtő/légvonalbeli távolság, gerincvonaltól, relatív pozíció.",
+    "type": "essay"
+  },
+  {
+    "question": "Áramlási algebra 4 komponense!",
+    "explanation": "Mező P, bemenet, kombináció, transzformáció. Szétválasztás → rugalmasság.",
+    "type": "essay"
+  },
+  {
+    "question": "Szállítókapacitás-korlátolt modell!",
+    "explanation": "T_ki=min(kínálat+be, kapacitás). Többlet lerakódik. Üledékszállítási arány csökken.",
+    "type": "essay"
+  },
+  {
+    "question": "D8 vs D-végtelen: mikor melyik?",
+    "explanation": "D8: hálózat (fa). Dinf: járulékos terület, TWI (sima). Mindkettő kell.",
+    "type": "essay"
+  },
+  {
+    "question": "Felhalmozódás megjelenítési kihívások!",
+    "explanation": "1-tól milliókig. Logaritmikus/geometriai osztásköz szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Nemzetközi DEM és referenciahálózat források!",
+    "explanation": "USA: 3DEP+NHDPlus. HU: DDM-5+OVF+EU-Hydro. Globális: GLO-30+HydroSHEDS.",
+    "type": "essay"
+  },
+  {
+    "question": "Szakaszazonosítók fontossága!",
+    "explanation": "DEM-hálózat összekapcsolása vízmérce, vízminőség, hidraulikai adatokkal.",
+    "type": "essay"
+  },
+  {
+    "question": "LiDAR DEM részletek!",
+    "explanation": "Ösvények, utak (átereszek), mikrotopográfia. Szubméteres hidrológia.",
+    "type": "essay"
+  },
+  {
+    "question": "Küszöbérték és hidrológiai modell!",
+    "explanation": "T túl nagy: késői csúcs. T túl kicsi: túlbecsült csúcs. Modellezési döntés.",
+    "type": "essay"
+  },
+  {
+    "question": "Feldolgozási csővezeték lépései!",
+    "explanation": "Kond. DEM → irány → felhalmozódás → vízfolyás → spec. terület → TWI → HAND.",
+    "type": "essay"
+  },
+  {
+    "question": "D-végtelen TWI vs D8 TWI!",
+    "explanation": "D8 csíkjai átterjednek. Dinf simább → valósághűbb TWI-eloszlás.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND zsenialitása!",
+    "explanation": "Relatív magasság a helyi vízelvezetéshez. Informatívabb mint abszolút magasság.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND és valós idejű előrejelzés!",
+    "explanation": "NWM/EFAS vízmélység + HAND → gyors elöntéstérkép. Szűrőszintű értékelés.",
+    "type": "essay"
+  },
+  {
+    "question": "TWI problémája az Alföldön!",
+    "explanation": "tanβ→0, TWI→∞. Domináns folyamatok nem topográfiailag vezéreltek.",
+    "type": "essay"
+  },
+  {
+    "question": "Felhalmozódás összefolyásoknál!",
+    "explanation": "Mellékfolyó + főág + 1. Eltérés = hiba. Konzisztencia-ellenőrzés.",
+    "type": "essay"
+  },
+  {
+    "question": "Visszatartás-korlátolt modell!",
+    "explanation": "Beszivárgás/ET levonása. Ráfolyás/lefolyás modellezés.",
+    "type": "essay"
+  },
+  {
+    "question": "Szoftverek összehasonlítása!",
+    "explanation": "ArcGIS (D8), TauDEM (D8+Dinf, MPI), QGIS+bővítmények, WhiteboxTools (Rust).",
+    "type": "essay"
+  },
+  {
+    "question": "DAG jelentősége a D8-ban!",
+    "explanation": "Egy él/cella, nincs hurok. Számíthatóság, topológiai rendezés, O(n) számítás.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND a geomorfológiai jellemzésben!",
+    "explanation": "HAND + távolságok + relatív pozíció = kvantitatív lejtőoldal-jellemzés.",
+    "type": "essay"
+  },
+  {
+    "question": "D-végtelen K-ÉK facetta példa (45m, 10m)!",
+    "explanation": "Sₓ=0,2; Sᵧ=0,5; α=68,2°>45°→ÉK él: S=0,495>0,2→α=45°.",
+    "type": "essay"
+  },
+  {
+    "question": "Áramlási algebra egyesítő ereje!",
+    "explanation": "Topo. sorrend + kombináció + transzformáció. ÁA cseréje → új alkalmazás.",
+    "type": "essay"
+  },
+  {
+    "question": "TWI értelmezése különböző területeken!",
+    "explanation": "Dombos: jó. Sík: más folyamatok. Karszt: felszín nem tükrözi vízmozgást.",
+    "type": "essay"
+  },
+  {
+    "question": "Koncentrációkorlátolt felhalmozódás!",
+    "explanation": "Oldhatósági korlát + hígítás + bomlás. Gyengén oldódó vegyületek.",
+    "type": "essay"
+  },
+  {
+    "question": "Strahler-rend és felhalmozódás kapcsolata!",
+    "explanation": "Rendezési rendszerek a felhalmozódási elágazásra épülnek.",
+    "type": "essay"
+  },
+  {
+    "question": "Mesterséges csatornák Magyarországon!",
+    "explanation": "Nem topográfiai gradiens. DEM nem detektálja. OVF beégetés szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "EFAS vs National Water Model!",
+    "explanation": "NWM: USA, 2,7M, óránkénti, determinisztikus. EFAS: EU, 5km, együttes.",
+    "type": "essay"
+  },
+  {
+    "question": "Tömegmegmaradás D8/Dinf!",
+    "explanation": "D8: 100% egy szomszédhoz. Dinf: p₁+p₂=1,0. Sem keletkezés, sem eltűnés.",
+    "type": "essay"
+  },
+  {
+    "question": "DEM kondicionálás fontossága!",
+    "explanation": "Mélyedésfeltöltés → lejtőirányú út minden cellából. Nélküle: akadás, hurkok.",
+    "type": "essay"
+  },
+  {
+    "question": "Súlyozott felhalmozódás csapadék-lefolyás becslés!",
+    "explanation": "w=csapadék → W=kumulatív térfogat. Nyers, de hasznos első közelítés.",
+    "type": "essay"
+  },
+  {
+    "question": "D-végtelen vs D8 HAND!",
+    "explanation": "Dinf: több útvonal átlaga, simább. D8: egyetlen útvonal, élesebb, kevésbé stabil.",
+    "type": "essay"
+  },
+  {
+    "question": "Topológiai rendezés szerepe!",
+    "explanation": "Gerincektől kifolyásig → felső cellák előbb. O(n) egyszeri átfutás.",
+    "type": "essay"
+  },
+  {
+    "question": "HAND sürgősségi árvízi döntéshozatal!",
+    "explanation": "Gyors, kalibrálás nélkül. Vízmélységből → elöntött terület azonnal. Valós idejű térképezés.",
+    "type": "essay"
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS Pro Flow Direction eszköz milyen közelítéssel él az átlós drop-számításnál?",
+    "options": [
+      "A) √2-t pontosan használja",
+      "B) √2-t 1,5-tel közelíti",
+      "C) Nem számol átlós lejtést",
+      "D) Csak 4 irányt vizsgál"
+    ],
+    "correct": "B",
+    "explanation": "Régóta fennálló implementációs sajátosság: 1,5 ≈ √2."
+  },
+  {
+    "type": "mcq",
+    "question": "A TauDEM AreaD8 eszköz milyen utótagú kimenetet hoz létre?",
+    "options": [
+      "A) ang",
+      "B) ad8",
+      "C) slp",
+      "D) p"
+    ],
+    "correct": "B",
+    "explanation": "AreaD8 kimenete: ad8 utótaggal."
+  },
+  {
+    "type": "mcq",
+    "question": "A SRTM DEM mekkora felbontású?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 100 m"
+    ],
+    "correct": "C",
+    "explanation": "Az SRTM 30 m (90 m a régebbi verzió) felbontást biztosít globálisan."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen facettaszámításban Sᵧ melyik lejtéskomponens?",
+    "options": [
+      "A) Középső cellától 1. szomszédig",
+      "B) Az 1. szomszédtól a 2. szomszédig",
+      "C) A facetta teljes lejtése",
+      "D) A magasságkülönbség"
+    ],
+    "correct": "B",
+    "explanation": "Sᵧ = (z₁ - z₂)/Δ, a merőleges irányú komponens."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik hidrológiai modellben kulcsparaméter a TWI?",
+    "options": [
+      "A) HEC-RAS",
+      "B) TOPMODEL",
+      "C) MODFLOW",
+      "D) SWMM"
+    ],
+    "correct": "B",
+    "explanation": "Beven és Kirkby a TOPMODEL-hez fejlesztette ki a TWI-t."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen számítási példában a rács mérete mennyi volt?",
+    "options": [
+      "A) 5 m",
+      "B) 10 m",
+      "C) 30 m",
+      "D) 90 m"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet 10 méteres rácsot használt a D-végtelen példában."
+  },
+  {
+    "type": "mcq",
+    "question": "A hatásfüggvény milyen bemenettel dolgozik?",
+    "options": [
+      "A) Lejtésraszterrel",
+      "B) Indikátorfüggvénnyel (1 forrás, 0 máshol)",
+      "C) Hőmérsékleti raszterrel",
+      "D) Szélsebesség-raszterrel"
+    ],
+    "correct": "B",
+    "explanation": "A hatásfüggvény 1-et használ a forrásterületen, 0-t máshol."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ArcGIS FlowAccumulation eszköz kimeneti típusát mire kell állítani súlyok használatakor?",
+    "options": [
+      "A) Egész szám",
+      "B) Lebegőpontos",
+      "C) Boolean",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Lebegőpontos kimenet szükséges a törtértékű hozzájárulások megőrzéséhez."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány éves az állandó HAND-térkép lefedettsége az USA-ban?",
+    "options": [
+      "A) Csak néhány vízgyűjtőre",
+      "B) A teljes kontinentális USA-ra",
+      "C) Csak a keleti part",
+      "D) Csak Texas"
+    ],
+    "correct": "B",
+    "explanation": "A HAND-et a teljes kontinentális USA-ra kiszámították 10 m DEM-ekből."
+  },
+  {
+    "type": "mcq",
+    "question": "A D-végtelen áramláselosztás p₂ képlete?",
+    "options": [
+      "A) (θ₂-α)/(θ₂-θ₁)",
+      "B) (α-θ₁)/(θ₂-θ₁)",
+      "C) α/(θ₂-θ₁)",
+      "D) (θ₂-θ₁)/α"
+    ],
+    "correct": "B",
+    "explanation": "p₂ = (α-θ₁)/(θ₂-θ₁), az áramlási szögnek a második határoló irányhoz való közelségéből."
+  },
+  {
+    "type": "mcq",
+    "question": "A DinfDistDown melyik közelségi mérőszámot NEM tudja számítani?",
+    "options": [
+      "A) Függőleges távolság",
+      "B) Vízszintes távolság",
+      "C) Gerincvonaltól mért távolság",
+      "D) Lejtőtávolság"
+    ],
+    "correct": "C",
+    "explanation": "A DinfDistDown lefelé irányul; a gerincvonaltól mért távolság a DinfDistUp eszközzel számítható."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 algoritmus O'Callaghan és Mark 1984-es publikációja volt az első áramlásirány-módszer rácshálón.",
+    "correct": "true",
+    "explanation": "1984, a legrégebbi módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen mindig pontosan két szomszéd között osztja el az áramlást.",
+    "correct": "false",
+    "explanation": "Ha a szög rácsirányra esik, egyetlen szomszédhoz megy."
+  },
+  {
+    "type": "true_false",
+    "question": "A topológiai rendezés O(n) számítási komplexitást biztosít a felhalmozódásnak.",
+    "correct": "true",
+    "explanation": "Egyszeri átfutás a sorrendben."
+  },
+  {
+    "type": "true_false",
+    "question": "A hatásfüggvény és a függőségi függvény azonos irányt követnek.",
+    "correct": "false",
+    "explanation": "Hatás: lefelé. Függőség: felfelé."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND-értékek soha nem lehetnek negatívak kondicionált DEM esetén.",
+    "correct": "true",
+    "explanation": "z(cella) >= z(vízfolyás)."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar DDM-5 ingyenesen elérhető mindenki számára.",
+    "correct": "false",
+    "explanation": "A Lechner adatszolgáltatáson keresztül kell megrendelni."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus EEA-10 DEM 10 méteres felbontású.",
+    "correct": "true",
+    "explanation": "European Environment Agency DEM."
+  },
+  {
+    "type": "true_false",
+    "question": "A szállítókapacitás-korlátolt felhalmozódásnál lerakódás történik, ha a kínálat meghaladja a kapacitást.",
+    "correct": "true",
+    "explanation": "Tkínálat+Tbe > Tkapacitás → lerakódás."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 módszer a lejtőoldali áramlás szétszóródásának modellezésére a legalkalmasabb.",
+    "correct": "false",
+    "explanation": "A D-végtelen alkalmasabb erre."
+  },
+  {
+    "type": "true_false",
+    "question": "A TWI képletben a természetes logaritmust használjuk.",
+    "correct": "true",
+    "explanation": "TWI = ln(a/tanβ), természetes logaritmus."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND kiszámítható D8 áramlásirány-mezővel is.",
+    "correct": "true",
+    "explanation": "D8-cal is számítható, bár a D-végtelen simább eredményt ad."
+  },
+  {
+    "type": "true_false",
+    "question": "Az áramlás-felhalmozódási küszöbérték választása kizárólag esztétikai döntés.",
+    "correct": "false",
+    "explanation": "Modellezési döntés, amely befolyásolja a hidrológiai modell viselkedését."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen minden cellánál minimum 0,5 arányban oszt mindkét szomszédnak.",
+    "correct": "false",
+    "explanation": "Az arányok bármilyen 0-1 közötti értéket felvehetnek."
+  },
+  {
+    "type": "true_false",
+    "question": "A Strahler-vízfolyásrend az áramlás-felhalmozódási mezőben kódolt elágazási struktúrára épül.",
+    "correct": "true",
+    "explanation": "A rendezés a felhalmozódás által kódolt hierarchiára támaszkodik."
+  },
+  {
+    "type": "true_false",
+    "question": "A GRASS GIS, a SAGA GIS és a WhiteboxTools mind nyílt forráskódú szoftverek.",
+    "correct": "true",
+    "explanation": "Mindhárom ingyenes és nyílt forráskódú."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen áramlásirány radiánban mérhető.",
+    "correct": "true",
+    "explanation": "0-tól 2π-ig, kelettől CCW."
+  },
+  {
+    "type": "true_false",
+    "question": "A rácshálózat topológiai rendezése a gerincvonalaktól a kifolyási pontokig halad.",
+    "correct": "true",
+    "explanation": "Ez biztosítja, hogy minden cella felső cellái már feldolgozásra kerültek."
+  },
+  {
+    "type": "true_false",
+    "question": "A visszatartás-korlátolt modell figyelembe veszi a beszivárgást.",
+    "correct": "true",
+    "explanation": "A helyi visszatartás (beszivárgás, ET) levonása."
+  },
+  {
+    "type": "true_false",
+    "question": "A D-végtelen módszer több memóriát igényel, mint a D8.",
+    "correct": "true",
+    "explanation": "A lebegőpontos szögértékek több memóriát igényelnek."
+  },
+  {
+    "type": "true_false",
+    "question": "Az irányított aciklikus gráfban lehetséges az áramlás visszafelé irányulása.",
+    "correct": "false",
+    "explanation": "DAG: nincs visszairányú él, nincs kör."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus GLO-30 DEM a SRTM-nél pontosabb.",
+    "correct": "true",
+    "explanation": "Újabb technológia és javított feldolgozás."
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND az abszolút magasságot méri.",
+    "correct": "false",
+    "explanation": "A relatív magasságot a legközelebbi vízfolyáshoz képest."
+  },
+  {
+    "type": "true_false",
+    "question": "Az áramlási algebra lehetővé teszi új alkalmazások hozzáadását anélkül, hogy az alapkódot módosítanánk.",
+    "correct": "true",
+    "explanation": "Csak az ÁA függvényt kell definiálni."
+  },
+  {
+    "type": "true_false",
+    "question": "A TWI a TOPMODEL egyetlen bemeneti paramétere.",
+    "correct": "false",
+    "explanation": "A TOPMODEL több paramétert is használ, bár a TWI kulcsfontosságú."
+  },
+  {
+    "type": "true_false",
+    "question": "A DinfFlowDir a TauDEM D-végtelen áramlásirány-eszköze.",
+    "correct": "true",
+    "explanation": "Folytonos áramlási szöget számít."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EFAS 51 tagú együttes előrejelzést használ.",
+    "correct": "true",
+    "explanation": "Az ECMWF 51 tagú együttes előrejelzése."
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 algoritmus konvex dombtetőkön fizikailag reális áramlási mintázatot ad.",
+    "correct": "false",
+    "explanation": "Egyetlen csatornába kényszeríti az áramlást, ami nem valósághű."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az áramlás-felhalmozódás javasolt osztályozásában az 1 000-10 000 tartomány ________ medreket jelöl.",
+    "correct": "forrásvidéki",
+    "explanation": "Forrásvidéki medrek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 módszerben a középső cella áramlása a legmeredekebb ________ irányú szomszédhoz kerül.",
+    "correct": "lejtés",
+    "explanation": "Legmeredekebb pozitív lejtés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ArcGIS Pro-ban a Flow Direction a ________ Analyst bővítmény része.",
+    "correct": "Spatial",
+    "explanation": "Spatial Analyst."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen Sₓ komponens a középső cellától az ________ szomszédig.",
+    "correct": "első",
+    "explanation": "A facetta első éle mentén."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az áramlás-felhalmozódás eredményéből a vízfolyáscellák a küszöbértéknél ________ felhalmozódású cellák.",
+    "correct": "nagyobb",
+    "explanation": "A(c) >= T."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen arányosítás a ________ megmaradást biztosítja.",
+    "correct": "tömeg",
+    "explanation": "p₁+p₂=1,0."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-kondicionálás biztosítja, hogy az áramlásirány-hálózat ________ (hurok nélküli) legyen.",
+    "correct": "aciklikus",
+    "explanation": "DAG struktúra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Esri D8 kódolásban a dél irány kódja ________.",
+    "correct": "4",
+    "explanation": "K=1, DK=2, D=4."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Esri D8 kódolásban a délnyugat irány kódja ________.",
+    "correct": "8",
+    "explanation": "D=4, DNy=8."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM kódolásban a nyugat irány kódja ________.",
+    "correct": "5",
+    "explanation": "K=1,ÉK=2,É=3,ÉNy=4,Ny=5."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen 1997-ben a ________ folyóiratban jelent meg.",
+    "correct": "Water Resources Research",
+    "explanation": "WRR."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND alkalmazásához szükséges a vízfolyás-________ is.",
+    "correct": "raszter",
+    "explanation": "Harmadik bemenet a kondicionált DEM és áramlásirány mellett."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hatásfüggvény a forrásból kiindulva ________ irányban terjeszt.",
+    "correct": "lefelé",
+    "explanation": "Downstream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A függőségi függvény a célponttól ________ irányban terjeszt.",
+    "correct": "felfelé",
+    "explanation": "Upstream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bomlási állandó mértékegysége ________ reciproka.",
+    "correct": "távolság (m)",
+    "explanation": "m⁻¹."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND vízfolyás-cellák esetében ________ értéket vesz fel.",
+    "correct": "nulla",
+    "explanation": "z(cella)=z(vízfolyás)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 párhuzamos csíkokat produkál ________ felszíneken.",
+    "correct": "sík",
+    "explanation": "Enyhe lejtésű vagy sík terepen."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TWI számításhoz szükséges a helyi ________ is a járulékos terület mellett.",
+    "correct": "lejtőszög",
+    "explanation": "β a helyi lejtőszög."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM D-végtelen lejtés kimenete ________ utótagú.",
+    "correct": "slp",
+    "explanation": "DinfFlowDir: ang és slp kimenet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TauDEM D-végtelen szög kimenete ________ utótagú.",
+    "correct": "ang",
+    "explanation": "Szögek radiánban."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A súlyozott felhalmozódás természetesen általánosítja az egyenletes csapadék feltételezését ________ változó bemenetre.",
+    "correct": "térben",
+    "explanation": "Térben változó csapadék, terhelés stb."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND számítás az áramlási útvonalat követi a ________ vízfolyásig.",
+    "correct": "legközelebbi",
+    "explanation": "Nearest drainage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 rácshálózatban minden fa gyökere egy ________ cella.",
+    "correct": "kifolyási",
+    "explanation": "A tartomány szélén lévő kifolyási pont."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TWI a változó ________-ű lefolyáskeletkezés kulcsparamétere.",
+    "correct": "forrásterület",
+    "explanation": "Variable source area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-végtelen facetta ________° szögtartományt fed le.",
+    "correct": "45",
+    "explanation": "Nyolc facetta × 45° = 360°."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HydroSHEDS adatbázist a ________ Egyetemen fejlesztették ki.",
+    "correct": "McGill",
+    "explanation": "Bernhard Lehner és munkatársai."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EFAS-t a britanniai ________-ben működtetik.",
+    "correct": "Readingben",
+    "explanation": "ECMWF székhelye."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felhalmozódási küszöb ________ értéke a referenciahálózattal kalibrálható.",
+    "correct": "optimális",
+    "explanation": "A referenciahálózat sűrűségét legjobban reprodukáló érték."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan biztosítja a D8 rácshálózat a számítási hatékonyságot nagy DEM-ek feldolgozásakor?",
+    "explanation": "A topológiai rendezés (gerincektől kifolyásig) lehetővé teszi az egyszeri átfutásos O(n) számítást. Az MPI párhuzamosítás a tartományt sávokra osztja."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a vízfolyás-referenciahálózat (NHDPlus, EU-Hydro) a küszöbérték-kalibrálásnál?",
+    "explanation": "A referenciahálózat sűrűsége objektív összehasonlítási alapot ad. Az a küszöb, amely legjobban reprodukálja a referencia sűrűségét, jó kiindulópont."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen módszer jelentőségét az eróziós modellezésben!",
+    "explanation": "A D-végtelen a lejtőoldali áramlás szétszóródását valósághűen ábrázolja. A specifikus vízgyűjtő terület pontosabb becslése jobb eróziós potenciál-térképeket eredményez."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan lehet a HAND-módszert alkalmazni árvízvédelmi beruházások tervezéséhez?",
+    "explanation": "A HAND-térkép azonosítja a veszélyeztetett területeket. Különböző vízmélység-forgatókönyvekkel elöntési térképek készíthetők a beruházások priorizálásához."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontokat kell figyelembe venni a D8 és D-végtelen módszer közötti választásnál?",
+    "explanation": "D8: hálózat-definíció, vízgyűjtő-lehatárolás. D-végtelen: lejtőoldal-jellemzés, TWI, eróziós modellek. A gyakorlatban mindkettőt együtt használjuk."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a hatásfüggvény a mezőgazdasági szennyezések nyomon követésére?",
+    "explanation": "A hatásfüggvény a műtrágya/peszticid forrásból lefelé térképezi a szétterjedést. A D-végtelen reális lejtőoldali szétszóródást ad."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND-számítás lépéseit és szükséges bemeneteit!",
+    "explanation": "Bemenetek: kondicionált DEM, áramlásirány-mező (D-végtelen), vízfolyás-raszter. Lépés: nem-vízfolyás cellákból lefelé követjük az áramlást vízfolyásig, kivonjuk a magasságot."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alakítható a felhalmozódási cellaszám tényleges vízgyűjtő területté, és milyen korrekciók szükségesek?",
+    "explanation": "A = cellaszám × Δx × Δy. Földrajzi koordinátáknál koszinusz-korrekció szükséges, mert a cellaterület a szélességgel változik."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepe van az áramlási algebrának a környezeti modellezésben?",
+    "explanation": "Az áramlási algebra szétválasztja a szállítási logikát az alkalmazás-specifikus transzformációtól. Új alkalmazások (eróziós, szennyezési, hidrológiai) az ÁA függvény definiálásával implementálhatók."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a TWI a talajnedvesség térbeli eloszlásának becslésére?",
+    "explanation": "A magas TWI-értékű területek (lapos, nagy járulékos terület) nagyobb valószínűséggel telítettek. A TWI-térkép első becslést ad a talajnedvesség térbeli mintázatáról."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a HAND alkalmazását nagytérségű árvízi kitettségelemzéshez!",
+    "explanation": "Kontinentális/országos HAND-térkép + vízfolyás vízmélység-előrejelzés → gyors elöntéstérkép. Népességi/infrastrukturális adatokkal kombinálva kitettségelemzés."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a specifikus vízgyűjtő terület és a teljes járulékos vízgyűjtő terület között?",
+    "explanation": "Teljes: A (m²). Specifikus: a = A/w (m), a szintvonalhossz egységére. A specifikus terület a konvergencia/divergencia mérőszáma."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen facettaszámítás ellenőrzési lépését!",
+    "explanation": "A számított α szögnek a facetta 45°-os tartományába kell esnie. Ha kívül esik, a meredekebb határoló él mentén D8-ra egyszerűsödik."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei és hátrányai vannak a HAND-módszernek az árvíztérképezésben?",
+    "explanation": "Előnyök: gyors, egyszerű, nincs kalibrálás, nagy léptékre alkalmazható. Hátrányok: közelítő, elhanyagolja a hidraulikát, medergeometriát, visszaduzzasztást."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan validálhatjuk a DEM-ből levezetett áramlás-felhalmozódást és vízfolyáshálózatot?",
+    "explanation": "Összehasonlítás referenciahálózattal (NHDPlus, EU-Hydro, OVF). Összefolyásoknál additív konzisztencia-ellenőrzés. Vizuális ellenőrzés műholdképen."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Copernicus DEM-termékek (GLO-30, EEA-10) szerepét a magyar hidrológiai elemzésben!",
+    "explanation": "GLO-30: ingyenes, 30 m, gyors elemzéshez. EEA-10: 10 m, részletesebb, EU/EGT. Mindkettő alkalmas áramlásirány és HAND számításra."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kapcsolódik az áramlás-felhalmozódás a vízfolyások természetes rangsorolásához?",
+    "explanation": "A felhalmozódási érték korrelál a vízhozammal és mederszélességgel. A Strahler-rend, Shreve-magnitúdó a felhalmozódási mezőben kódolt hierarchiára épül."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a TWI-számítás a Pannon-medencében?",
+    "explanation": "Sík terepen tanβ→0, TWI→∞. A domináns folyamatok nem topográfiailag vezéreltek. A TWI hegyes/dombos területeken (Bükk, Mecsek) a legértelmesebb."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen módszer előnyeit a D8-cal szemben idealizált tesztfelszíneken!",
+    "explanation": "Divergens kúp: D-végtelen pontosan ábrázolja a sugárirányú szétáradást, D8 nem. Konvergens kúp: mindkettő jól teljesít. Sík: D-végtelen csíkozásmentes."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható az áramlás-felhalmozódás a városi vízgazdálkodásban?",
+    "explanation": "Burkolt felszínarány súlyozás → effektív burkolt terület. Szennyezőanyag-terhelés felhalmozódás → kumulatív terhelés a vízfolyásoknál. Csapadékvíz-csúcs becslés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információt nyerhetünk a D-végtelen közelségi mérőszámok kombinálásából?",
+    "explanation": "HAND + vízszintes/lejtőtávolság + gerincvonaltól távolság + relatív pozíció = teljes kvantitatív lejtőoldal-jellemzés. Geomorfológiai osztályozás objektívvé válik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a TauDEM szoftver felépítését és előnyeit!",
+    "explanation": "C++ számítási mag + Python burkoló. MPI párhuzamos. Nyílt forráskódú. D-végtelen referencia-implementáció. GeoTIFF formátum. ArcGIS/QGIS integráció."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan befolyásolja a DEM felbontása a HAND-értékeket és az árvíztérképezés pontosságát?",
+    "explanation": "Nagyobb felbontás (5-10 m) finomabb HAND-mintázatot és pontosabb elöntési határokat ad. 30 m elégséges vízgyűjtő-szintű szűréshez, de nem épület-szintű elemzéshez."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az áramlás-felhalmozódás és az áramlásirány közötti összefüggés?",
+    "explanation": "Az áramlásirány megadja a szállítási útvonalakat; a felhalmozódás ezen útvonalak mentén integrálja az egységnyi (vagy súlyozott) mennyiséget."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a bomláskorlátolt felhalmozódás szennyvízkezelési tervezéshez?",
+    "explanation": "A szennyvízben lévő biológiailag lebontható anyagok exponenciálisan csillapodnak. A modell megmutatja, mekkora koncentráció jut el az alvízi víznyerő helyekhez."
+  },
+  {
+    "type": "essay",
+    "question": "Miért fontos a D-végtelen algoritmus az ökológiai alkalmazásokban?",
+    "explanation": "A sima járulékos terület-mintázat reálisabb talajnedvesség-becslést ad, ami a vizes élőhely-térképezés és az ökológiai modellezés kulcsbemenete."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a koncentrációkorlátolt és bomláskorlátolt felhalmozódás közötti különbséget!",
+    "explanation": "Bomlás: exponenciális csillapítás, nincs felső korlát. Koncentráció: oldhatósági maximum + hígítás + opcionális bomlás. Mindkettő nyomon követi a szennyezőanyag sorsát."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá az áramlás-felhalmozódás a vízminőség-értékeléshez?",
+    "explanation": "Szennyezőanyag-terhelési súlyokkal a felhalmozódás integrálja a kumulatív terhelést a vízfolyásoknál. Azonosíthatók a leginkább terhelt szakaszok."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati megfontolások szükségesek, ha a D-végtelen járulékos területet kontinentális léptékű DEM-en számítjuk?",
+    "explanation": "Óriási adatméret → MPI párhuzamos (TauDEM). Memóriaigény: lebegőpontos raszterek. Koordináta-rendszer: metrikus vetület szükséges. Futásidő: órák→percek MPI-vel."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan kapcsolódik a HAND a 14. fejezet árvíztérképezési módszertanához?",
+    "explanation": "A 10. fejezet bevezetett HAND-fogalmat a 14. fejezet részletesen kifejti: vízfolyás-szakaszok vízmélységéhez kapcsolás, HAND-alapú elöntéstérképezés, korlátok és alkalmazási esetek."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D8 lépcsőzetes műtermék fizikai okát és hatását az elemzésre!",
+    "explanation": "A 8 diszkrét irány kvantálja a valójában folytonos áramlásirányt. 45°-os szögközök → cikk-cakk. Az útvonal átlagosan helyes, de az egyes lépések hibásak. A lejtőoldali áramlás modellezését torzítja."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változik az üledékszállítási arány a vízgyűjtő méretével, és hogyan modellezi ezt a kapacitáskorlátolt felhalmozódás?",
+    "explanation": "Nagyobb vízgyűjtő → több lerakódási lehetőség (ártér, alacsony esés) → kisebb szállítási arány. A modell a min(kínálat+be, kapacitás) szabályt alkalmazza cellánként."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati tanácsokat adna egy hidrológusnak, aki első alkalommal számít áramlás-felhalmozódást és HAND-et egy magyar vízgyűjtőre?",
+    "explanation": "1) Kondicionálja a DEM-et. 2) Használja a D8-at hálózathoz és D-végtelent lejtőoldalhoz. 3) Kalibrálja a küszöböt EU-Hydro/OVF referenciával. 4) Számítsa a HAND-et DinfDistDown-nal. 5) Validálja ismert vízmércékkel."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a D-végtelen és D8 járulékos terület térképek összehasonlítását a fejezet alapján!",
+    "explanation": "D8: vízszintes és 45°-os csíkos műtermékek. D-végtelen: sima, folytonos. A különbség szembetűnő, különösen enyhe lejtőkön és széles gerinceken."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a felhalmozódási mező a vízfolyások hierarchikus osztályozásához?",
+    "explanation": "A felhalmozódási érték a meder 'méretének' mérőszáma. Osztályozás: geometriai tartományok (0-10, 10-100, ..., >1M). A Strahler-rend és más rendezések erre épülnek."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az OVF vízrajzi adatbázisa a magyar hidrológiai elemzésben?",
+    "explanation": "Referenciahálózat validációhoz. Terepi felméréseken alapul, megbízhatóbb sík terepen, mint a DEM-levezetés. Mesterséges csatornákat is tartalmazza."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hatnak a LiDAR DEM mikrotopográfiai részletei a járulékos terület-számításra?",
+    "explanation": "Ösvények, utak, eróziós barázdák finomléptékű áramlásvezetőként jelennek meg. Az utak lineáris akadályok, az átereszek koncentrált kibocsátási pontok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az áramlás-felhalmozódás cellamegmaradási ellenőrzését összefolyásoknál!",
+    "explanation": "Mellékfolyó (pl. 900) + főág (pl. 6195) + 1 (összefolyási cella, TauDEM) = ~7096. Jelentős eltérés hibát jelez az áramlásirányban vagy kondicionálásban."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan lehet a HAND-módszert alkalmazni a klímaváltozás hatásainak értékelésére?",
+    "explanation": "Különböző vízmélység-forgatókönyvek (jelenlegi, jövőbeli szélsőségek) → HAND-alapú elöntéstérképek → a veszélyeztetett területek változásának elemzése."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen megfontolandó szempontok vannak a D-végtelen HAND számításánál gerincvonalak közelében?",
+    "explanation": "Gerincvonalaknál a cella különböző vízfolyásszakaszokba csapolódhat, a szomszédok közötti áramlásarányoktól függően. A D-végtelen súlyozott átlaga simítja ezt az átmenetet."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a függőségi függvény alkalmazását a vízbázisvédelemben!",
+    "explanation": "A függőségi függvény a víznyerő helytől felfelé térképezi a hozzájárulási zónát. Megmutatja, a táj mely részei járulnak hozzá leginkább a vízkészlethez, segítve a védőterület kijelölését."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan viszonyul a HAND az abszolút magassághoz az árvízkockázat szempontjából?",
+    "explanation": "Két azonos abszolút magasságú cella nagyon különböző HAND-értékkel rendelkezhet (magas terasz vs alacsony terasz). A HAND informatívabb, mert a helyi vízelvezetéshez viszonyít."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrások és szoftverek állnak rendelkezésre a magyar hidrológusok számára az áramlásirány és felhalmozódás számításához?",
+    "explanation": "DEM: DDM-5 (Lechner), Copernicus GLO-30/EEA-10. Referencia: OVF, EU-Hydro. Szoftver: ArcGIS+Spatial Analyst, TauDEM, QGIS+SAGA/WhiteboxTools. Ingyenes alternatívák teljes munkafolyamatot biztosítanak."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse, hogyan terjed a hiba a DEM-kondicionálástól az áramlásirány-számításon és felhalmozódáson át a HAND-ig!",
+    "explanation": "Kondicionálási hiba → rossz áramlásirány → helytelen felhalmozódás → téves vízfolyás-definíció → hibás HAND. Minden lépés az előzőtől függ, a hibák propagálódnak."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható az áramlás-felhalmozódás az erdészeti erózióvédelemben?",
+    "explanation": "Fakitermelési hatástérkép (hatásfüggvény). Talajveszteség súlyozott felhalmozódás. Kritikus medrek azonosítása (magas felhalmozódás + meredek lejtés). Ösvények/utak hatásainak elemzése LiDAR-on."
+  },
+  {
+    "type": "essay",
+    "question": "Mi az összefüggés a HAND és az ártéri zónabeosztás között?",
+    "explanation": "A HAND természetes módon definiálja az ártéri zónákat: alacsony HAND = gyakran elöntött ártér, közepes = ritkán elöntött, magas = biztonságos terasz. Regulációs zónák objektív alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az áramlás-felhalmozódás és a medrenkénti vízhozam közötti összefüggést!",
+    "explanation": "A felhalmozódás (járulékos terület) közvetlenül arányos az átlagos vízhozammal. A = felhalmozódás × cellaterület korrelál a Q = c × A^n empirikus vízhozam-terület összefüggéssel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a nyílt forráskódú eszközöknek (TauDEM, WhiteboxTools) a kereskedelmi szoftverekkel szemben az áramlásirány-számításban?",
+    "explanation": "Ingyenes, platform-független, átlátható algoritmusok, közösségi fejlesztés. TauDEM: MPI párhuzamos, D-végtelen referencia. WhiteboxTools: Rust teljesítmény, pip install. Licencfüggőség nélkül."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járulhat hozzá a D-végtelen járulékos terület a talajvédelmi tervezéshez?",
+    "explanation": "A specifikus vízgyűjtő terület + lejtés → erózióveszélyes területek azonosítása. A sima D-végtelen mintázat pontosabb a szétszóródó lejtőoldali áramlás ábrázolásában."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az áramlás-felhalmozódás alkalmazását a területhasználat-változás hidrológiai hatásának becslésére!",
+    "explanation": "Burkolt felszínarány vagy lefolyási együttható súlyozás → a kumulatív hatás a vízfolyásoknál. Különböző területhasználati forgatókönyvek összehasonlítása."
+  },
+  {
+    "question": "Ismertesse a D8 áramlásirány-algoritmus működését, a lejtésszámítást égtáj szerinti és átlós szomszédoknál! (v100)",
+    "explanation": "8 szomszéd, S=(z₀-zᵢ)/dᵢ, égtáj: d=Δ, átlós: d=Δ√2, legmeredekebb pozitív lejtés nyer.",
+    "type": "essay"
+  }
+]

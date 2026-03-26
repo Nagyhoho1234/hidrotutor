@@ -1,0 +1,3702 @@
+[
+  {
+    "id": "ch21_mcq_001",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen parciális differenciálegyenlet írja le a 3D felszín alatti vízáramlást?",
+    "options": [
+      "Navier-Stokes",
+      "A Darcy-törvényt és tömegmegmaradást egyesítő diffúziós egyenlet",
+      "Bernoulli-egyenlet",
+      "Euler-egyenlet"
+    ],
+    "correct": "B",
+    "explanation": "A Darcy-törvényt a tömegmegmaradás elvével egyesítő PDE."
+  },
+  {
+    "id": "ch21_mcq_002",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODFLOW?",
+    "options": [
+      "Végeselem-kód",
+      "Moduláris véges differencia felszín alatti áramlási modell az USGS-től",
+      "Analitikus elem kód",
+      "Meteorológiai modell"
+    ],
+    "correct": "B",
+    "explanation": "Az USGS által fejlesztett, világ legelterjedtebb felszín alatti áramlási modellje."
+  },
+  {
+    "id": "ch21_mcq_003",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a FEFLOW?",
+    "options": [
+      "Véges differencia kód",
+      "Végeselem-alapú felszín alatti áramlás és transzport modell a DHI-től",
+      "Analitikus elem kód",
+      "Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "A DHI Csoport által fejlesztett végeselem-kód, Európában különösen népszerű."
+  },
+  {
+    "id": "ch21_mcq_004",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Darcy-törvény?",
+    "options": [
+      "Q = K × A × (dh/dl)²",
+      "Q = -K × A × dh/dl",
+      "Q = K × V × dh/dt",
+      "Q = -K × A² × dh/dl"
+    ],
+    "correct": "B",
+    "explanation": "A térfogati vízhozam arányos a hidraulikus gradienssel és a keresztmetszeti területtel."
+  },
+  {
+    "id": "ch21_mcq_005",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a fajlagos vízhozam (Darcy-sebesség) és a szivárgási sebesség közötti kapcsolat?",
+    "options": [
+      "Azonosak",
+      "v_s = q × n_e",
+      "v_s = q / n_e",
+      "v_s = q + n_e"
+    ],
+    "correct": "C",
+    "explanation": "A szivárgási sebesség = fajlagos vízhozam / effektív porozitás."
+  },
+  {
+    "id": "ch21_mcq_006",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Theis-egyenlet?",
+    "options": [
+      "Stacionárius megoldás szabad felszínű vízadóra",
+      "A tranziens radiális áramlás alapmegoldása nyomás alatti vízadóban",
+      "A szennyezőanyag-transzport egyenlete",
+      "A csapadék-lefolyás egyenlete"
+    ],
+    "correct": "B",
+    "explanation": "s = Q/(4πT) × W(u), ahol W(u) a Theis-kútfüggvény."
+  },
+  {
+    "id": "ch21_mcq_007",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Thiem-egyenlet?",
+    "options": [
+      "Tranziens megoldás",
+      "A stacionárius radiális áramlás egyenlete (egyensúlyi formula)",
+      "Transzportegyenlet",
+      "Interpolációs formula"
+    ],
+    "correct": "B",
+    "explanation": "Az állandósult állapotú kúthidraulika alapegyenlete."
+  },
+  {
+    "id": "ch21_mcq_008",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Cooper-Jacob módszer lényege?",
+    "options": [
+      "Típusgörbe-illesztés",
+      "A Theis-egyenlet logaritmikus egyszerűsítése nagy időkre",
+      "Inverz távolság súlyozás",
+      "Krigelés"
+    ],
+    "correct": "B",
+    "explanation": "A leszívás vs. log(t) ábrázoláson egyenest illeszt, T és S meghatározásához."
+  },
+  {
+    "id": "ch21_mcq_009",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az analitikus elem módszer (AEM) jellemzője?",
+    "options": [
+      "Szabályos rács szükséges",
+      "Rács nélkül, elemek szuperpozíciójával dolgozik",
+      "Kizárólag 3D problémákra alkalmas",
+      "Csak tranziens megoldást ad"
+    ],
+    "correct": "B",
+    "explanation": "Nincs szükség rács generálására; a GIS-objektumok közvetlenül modellbemenetek."
+  },
+  {
+    "id": "ch21_mcq_010",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen csomag kezeli a szivárgási tényezőt a MODFLOW 6-ban?",
+    "options": [
+      "WEL",
+      "RIV",
+      "NPF (Node-Property Flow)",
+      "RCH"
+    ],
+    "correct": "C",
+    "explanation": "Az NPF csomag rendeli a K-t és anizotrópiát minden cellához."
+  },
+  {
+    "id": "ch21_mcq_011",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a DIS csomag szerepe a MODFLOW-ban?",
+    "options": [
+      "Drén-kezelés",
+      "A rácsgeometria definiálása",
+      "Vízminőség-számítás",
+      "Megoldó beállítások"
+    ],
+    "correct": "B",
+    "explanation": "Sorok, oszlopok, rétegek száma, cellaméretek, rétegmagasságok."
+  },
+  {
+    "id": "ch21_mcq_012",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a WEL csomag funkciója?",
+    "options": [
+      "Folyó-vízadó kölcsönhatás",
+      "Termelési hozam hozzárendelése kútcellákhoz",
+      "Utánpótlás",
+      "Párolgás"
+    ],
+    "correct": "B",
+    "explanation": "A WEL csomag termelési hozamot rendel a kutakat tartalmazó cellákhoz."
+  },
+  {
+    "id": "ch21_mcq_013",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a RIV csomag képlete?",
+    "options": [
+      "Q = K × A × i",
+      "Q_riv = C_riv × (H_riv - h)",
+      "Q = 2πT(h₂-h₁)/ln(r₂/r₁)",
+      "Q = nAv"
+    ],
+    "correct": "B",
+    "explanation": "A folyó és a vízadó közötti áramlás konduktanciás modellezése."
+  },
+  {
+    "id": "ch21_mcq_014",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODPATH?",
+    "options": [
+      "Áramlási modell",
+      "Részecske-követési kód",
+      "Transzportmodell",
+      "Kalibrációs eszköz"
+    ],
+    "correct": "B",
+    "explanation": "Részecske-követés utazási idők és befogási zónák meghatározásához."
+  },
+  {
+    "id": "ch21_mcq_015",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az MT3DMS?",
+    "options": [
+      "Áramlási modell",
+      "Szennyezőanyag-transzport kód",
+      "Interpolációs eszköz",
+      "GIS-bővítmény"
+    ],
+    "correct": "B",
+    "explanation": "A MODFLOW rácsán oldja meg az advekciós-diszperziós egyenletet."
+  },
+  {
+    "id": "ch21_mcq_016",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a PEST?",
+    "options": [
+      "Áramlási modell",
+      "Paraméter-becslési és kalibrációs eszköz",
+      "Transzportmodell",
+      "Vizualizációs szoftver"
+    ],
+    "correct": "B",
+    "explanation": "A felszín alatti vízmodellekhez legszélesebb körben használt kalibrációs eszköz."
+  },
+  {
+    "id": "ch21_mcq_017",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Boundary objektumosztály?",
+    "options": [
+      "3D test",
+      "A szimulációs modell 2D térbeli kiterjedését definiáló poligon",
+      "Vonalas elem",
+      "Pont objektum"
+    ],
+    "correct": "B",
+    "explanation": "Poligon-réteg a modell kiterjedéséhez és tájolásához."
+  },
+  {
+    "id": "ch21_mcq_018",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Cell2D?",
+    "options": [
+      "3D test",
+      "A modellrács celláit ábrázoló poligon-objektumosztály",
+      "Pont objektum",
+      "Szöveges fájl"
+    ],
+    "correct": "B",
+    "explanation": "A szimulációs rács celláit 2D poligonokként ábrázolja."
+  },
+  {
+    "id": "ch21_mcq_019",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Node2D?",
+    "options": [
+      "Poligon",
+      "A számítási csomópontokat ábrázoló pont-objektumosztály",
+      "Vonalas elem",
+      "Rasztercella"
+    ],
+    "correct": "B",
+    "explanation": "Pont objektumok a tényleges számítási csomópontokon."
+  },
+  {
+    "id": "ch21_mcq_020",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a CellIndex tábla szerepe?",
+    "options": [
+      "Interpoláció",
+      "A MODFLOW (I,J,K) cellaindexek egyedi IJK egész számra képezése",
+      "Raszterkatalógus",
+      "Szelvénykészítés"
+    ],
+    "correct": "B",
+    "explanation": "Központi keresőmechanizmus a GIS-csatolásokhoz."
+  },
+  {
+    "id": "ch21_mcq_021",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a FloPy?",
+    "options": [
+      "GIS-szoftver",
+      "Python API a MODFLOW-modellek építéséhez és utófeldolgozásához",
+      "Adatbázis-kezelő",
+      "Interpolációs könyvtár"
+    ],
+    "correct": "B",
+    "explanation": "Tisztán Python-alapú csomag a MODFLOW-hoz."
+  },
+  {
+    "id": "ch21_mcq_022",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen százaléka Magyarország ivóvízellátásának felszín alatti eredetű?",
+    "options": [
+      "~50%",
+      "~75%",
+      "~95%",
+      "~100%"
+    ],
+    "correct": "C",
+    "explanation": "Magyarország ivóvízellátásának mintegy 95%-a felszín alatti vízkészletekből származik."
+  },
+  {
+    "id": "ch21_mcq_023",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a parti szűrés (bank filtration)?",
+    "options": [
+      "Felszíni szűrés",
+      "Folyóvíz medren és alluviális üledékeken keresztüli szívása kutakba",
+      "Mesterséges tó szűrése",
+      "Csapadékvíz szűrése"
+    ],
+    "correct": "B",
+    "explanation": "A folyóvizet a medren keresztül szívják termelőkutakba, természetes szűréssel."
+  },
+  {
+    "id": "ch21_mcq_024",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mennyi ivóvizet termel Budapest parti szűrési rendszere naponta?",
+    "options": [
+      "~100 000 m³",
+      "~500 000 m³",
+      "~1 000 000 m³",
+      "~5 000 000 m³"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 500 000 m³/nap, a főváros vízellátásának nagyjából fele."
+  },
+  {
+    "id": "ch21_mcq_025",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Sichardt-formula?",
+    "options": [
+      "T meghatározása próbaszivattyúzásból",
+      "A hatássugár empirikus becslése: R = 3000 s_w √K",
+      "Szennyezőanyag-terjedés",
+      "Utánpótlás becslése"
+    ],
+    "correct": "B",
+    "explanation": "Empirikus képlet a hatássugár becslésére."
+  },
+  {
+    "id": "ch21_mcq_026",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az advekciós-diszperziós egyenlet (ADE)?",
+    "options": [
+      "Kizárólag áramlási egyenlet",
+      "A szennyezőanyag-transzport irányadó egyenlete",
+      "Interpolációs formula",
+      "Hővezetési egyenlet"
+    ],
+    "correct": "B",
+    "explanation": "Az oldott anyag szállítását és szétterülését leíró egyenlet."
+  },
+  {
+    "id": "ch21_mcq_027",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a retardációs tényező (R_d)?",
+    "options": [
+      "Az áramlás gyorsítása",
+      "A reaktív oldott anyag sebességcsökkenésének aránya a víz sebességéhez képest",
+      "A vízhozam növekedése",
+      "A csapadék aránya"
+    ],
+    "correct": "B",
+    "explanation": "R_d = 1 + (ρ_b × K_d)/n_e; az oldott anyag a víz sebességének 1/R_d-szeres sebességével mozog."
+  },
+  {
+    "id": "ch21_mcq_028",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az interfész-adatmodell (MDM) a MODFLOW kontextusban?",
+    "options": [
+      "Hardver-interfész",
+      "Geodatabase-séma a MODFLOW teljes tartalmának GIS-ben tárolásához",
+      "Szöveges fájlformátum",
+      "Képformátum"
+    ],
+    "correct": "B",
+    "explanation": "Lehetővé teszi a teljes modell geodatabase-ben tárolását, szerkesztését és exportálását."
+  },
+  {
+    "id": "ch21_mcq_029",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Duna-kavicsterasz tipikus transzmisszivitása a Győr-Komárom régióban?",
+    "options": [
+      "10-50 m²/nap",
+      "100-500 m²/nap",
+      "1000-5000 m²/nap",
+      "10 000-50 000 m²/nap"
+    ],
+    "correct": "C",
+    "explanation": "T = 1000-5000 m²/nap, K = 50-300 m/nap."
+  },
+  {
+    "id": "ch21_mcq_030",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mit jelent a Dupuit-Forchheimer közelítés?",
+    "options": [
+      "Vertikális áramlás dominál",
+      "Horizontális áramlás és függőleges síkokon hidrosztatikus nyomáseloszlás",
+      "Turbulens áramlás",
+      "Kétfázisú áramlás"
+    ],
+    "correct": "B",
+    "explanation": "Szabad felszínű vízadók egyszerűsítő feltételezése."
+  },
+  {
+    "id": "ch21_mcq_031",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a GFLOW?",
+    "options": [
+      "Véges differencia kód",
+      "Analitikus elem modell Haitjema fejlesztésében",
+      "Transzportmodell",
+      "GIS-bővítmény"
+    ],
+    "correct": "B",
+    "explanation": "A legismertebb AEM-kód."
+  },
+  {
+    "id": "ch21_mcq_032",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az intrinsic permeabilitás (k)?",
+    "options": [
+      "Folyadékfüggő paraméter",
+      "A kőzetváz kizárólagos tulajdonsága, folyadéktól független",
+      "A nyomásmagasság",
+      "A vízhozam"
+    ],
+    "correct": "B",
+    "explanation": "K = kρg/μ, ahol k csak a kőzettől függ."
+  },
+  {
+    "id": "ch21_mcq_033",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Miért fontos a hőmérsékletfüggő K korrekció az alföldi termálvíz modellezésnél?",
+    "options": [
+      "Nem fontos",
+      "A meleg víz viszkozitása fele a hidegének, így K nő",
+      "A hőmérséklet nem befolyásolja K-t",
+      "Csak a csapadék függ a hőmérséklettől"
+    ],
+    "correct": "B",
+    "explanation": "60-90 °C hőmérsékletű víz viszkozitása ~fele a 10 °C-osnak."
+  },
+  {
+    "id": "ch21_mcq_034",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODFLOW 6 fő újítása?",
+    "options": [
+      "Grafikus felhasználói felület",
+      "Általánosított diszkretizáció (strukturált és strukturálatlan rácsok)",
+      "Kizárólag 2D modellezés",
+      "Zárt forráskód"
+    ],
+    "correct": "B",
+    "explanation": "Modern OO architektúra, többmodelles képesség, DISV strukturálatlan rácsok."
+  },
+  {
+    "id": "ch21_mcq_035",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen porózus közeg Reynolds-szám alatt érvényes a Darcy-törvény?",
+    "options": [
+      "Re < 0,01",
+      "Re < 1-10",
+      "Re < 100",
+      "Re < 1000"
+    ],
+    "correct": "B",
+    "explanation": "Re < 1-10 esetén érvényes, a pórusgeometriától függően."
+  },
+  {
+    "id": "ch21_mcq_036",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a K_parallel és K_merőleges közötti tipikus arány réteges üledékekben?",
+    "options": [
+      "1:1",
+      "1-2 nagyságrend",
+      "Nem létezik különbség",
+      "K_merőleges > K_parallel"
+    ],
+    "correct": "B",
+    "explanation": "K_parallel mindig nagyobb, jellemzően 1-2 nagyságrenddel."
+  },
+  {
+    "id": "ch21_mcq_037",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen módszerrel határozza meg a Cooper-Jacob módszer a T-t?",
+    "options": [
+      "Típusgörbe-illesztés",
+      "A leszívás vs. log(t) egyenes meredekségéből",
+      "Geofizikai szelvényből",
+      "Szemcseméret-elemzésből"
+    ],
+    "correct": "B",
+    "explanation": "T = 2,3Q/(4π×Δs), ahol Δs a dekádonkénti leszívásváltozás."
+  },
+  {
+    "id": "ch21_mcq_038",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a szabad felszínű vízadók leszívás-korrekciójának képlete?",
+    "options": [
+      "s' = s + s²/2b",
+      "s' = s - s²/2b",
+      "s' = s × 2b",
+      "s' = s / 2b"
+    ],
+    "correct": "B",
+    "explanation": "Jacob-korrekció: s' = s - s²/(2b)."
+  },
+  {
+    "id": "ch21_mcq_039",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Neuman-megoldás különlegessége?",
+    "options": [
+      "Kizárólag nyomás alatti vízadókra",
+      "Mind a korai rugalmas, mind a késői gravitációs választ figyelembe veszi",
+      "Csak stacionárius",
+      "Nem igényel adatot"
+    ],
+    "correct": "B",
+    "explanation": "Kétszakaszos típusgörbe szabad felszínű vízadókhoz."
+  },
+  {
+    "id": "ch21_mcq_040",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mekkora Budapest parti szűrési rendszerének utazási ideje?",
+    "options": [
+      "1-5 nap",
+      "10-100 nap",
+      "1-5 év",
+      "10-50 év"
+    ],
+    "correct": "B",
+    "explanation": "Jellemzően 10-100 nap a termelési hozamtól és a parttól mért távolságtól függően."
+  },
+  {
+    "id": "ch21_mcq_041",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a belső kútvédőterület utazási ideje Magyarországon?",
+    "options": [
+      "<1 óra",
+      "<20 nap",
+      "<6 hónap",
+      "<50 év"
+    ],
+    "correct": "B",
+    "explanation": "Az a terület, amelyen belül az utazási idő kevesebb mint 20 nap."
+  },
+  {
+    "id": "ch21_mcq_042",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen alföldi regionális modell rácsfelbontást használ az MBFSZ?",
+    "options": [
+      "10 m × 10 m",
+      "100 m × 100 m",
+      "500 m × 500 m",
+      "5000 m × 5000 m"
+    ],
+    "correct": "C",
+    "explanation": "500 m × 500 m rácsfelbontás ~50 000 km²-es területen."
+  },
+  {
+    "id": "ch21_mcq_043",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Hány réteget tartalmaz az alföldi regionális MODFLOW-modell?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "10"
+    ],
+    "correct": "C",
+    "explanation": "5 réteget a fő hidrosztratigráfiai egységeknek megfelelően."
+  },
+  {
+    "id": "ch21_mcq_044",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a SEAWAT kód?",
+    "options": [
+      "Szabad felszínű modell",
+      "Csatolt sűrűségfüggő áramlási és transzport MODFLOW-kód",
+      "Kalibrációs eszköz",
+      "GIS-bővítmény"
+    ],
+    "correct": "B",
+    "explanation": "Sűrűségfüggő problémáknál (sósvíz-betörés, sóoldat-vándorlás)."
+  },
+  {
+    "id": "ch21_mcq_045",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a diszperzivitás jellemzője?",
+    "options": [
+      "Méretfüggetlen",
+      "Léptékfüggő és nehezen mérhető",
+      "Mindig pontosan ismert",
+      "Nem befolyásolja a transzportot"
+    ],
+    "correct": "B",
+    "explanation": "A longitudinális és transzverzális diszperzivitás léptékfüggő."
+  },
+  {
+    "id": "ch21_mcq_046",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen megoldási módszereket kínál az MT3DMS?",
+    "options": [
+      "Kizárólag véges elemet",
+      "MOC, MMOC és HMOC",
+      "Kizárólag analitikus",
+      "Kizárólag krigelést"
+    ],
+    "correct": "B",
+    "explanation": "Karakterisztikák módszere (MOC), módosított (MMOC) és hibrid (HMOC)."
+  },
+  {
+    "id": "ch21_mcq_047",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a többszörös szűrős kiképzés veszélye a Nyírségben?",
+    "options": [
+      "Csökkenti a vízhozamot",
+      "Hidraulikus rövidzárlatot hoz létre a vízadó-rétegek között",
+      "Javítja a vízminőséget",
+      "Nincs hatása"
+    ],
+    "correct": "B",
+    "explanation": "A termelés szüneteltetésekor víz áramlik a kútcsövön, megkerülve a záró réteg védelmét."
+  },
+  {
+    "id": "ch21_mcq_048",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen utánpótlási ráta jellemzi az alföldi homokos vízválasztókat?",
+    "options": [
+      "0-10 mm/év",
+      "40-80 mm/év",
+      "200-300 mm/év",
+      "500+ mm/év"
+    ],
+    "correct": "B",
+    "explanation": "40-80 mm/év a homokos vízválasztókon."
+  },
+  {
+    "id": "ch21_mcq_049",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODFLOW Analyst?",
+    "options": [
+      "Végeselem-kód",
+      "Térinformatikai eszközkészlet a MODFLOW GIS-integrációjához",
+      "Transzportmodell",
+      "Kalibrációs szoftver"
+    ],
+    "correct": "B",
+    "explanation": "A MODFLOW és a GIS közötti integráció eszközkészlete."
+  },
+  {
+    "id": "ch21_mcq_050",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a CHD csomag a MODFLOW-ban?",
+    "options": [
+      "Kút-kezelés",
+      "Állandó nyomásmagasságú határ-cellák",
+      "Drén-csomag",
+      "Utánpótlás"
+    ],
+    "correct": "B",
+    "explanation": "Constant-Head Boundary: fix nyomásmagasságot rögzít."
+  },
+  {
+    "id": "ch21_mcq_051",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi jellemzi a HydroGeoSphere kódot?",
+    "options": [
+      "Csak felszín alatti modellezés",
+      "Teljesen integrált felszíni-felszín alatti modell",
+      "Csak felszíni modellezés",
+      "Csak transzport"
+    ],
+    "correct": "B",
+    "explanation": "Teljesen integrált felszíni-felszín alatti szimuláció."
+  },
+  {
+    "id": "ch21_mcq_052",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a meder-konduktancia (C_riv) képlete?",
+    "options": [
+      "C = K × A",
+      "C = K_bed × L × W / M",
+      "C = Q / Δh",
+      "C = T × i"
+    ],
+    "correct": "B",
+    "explanation": "K_bed: mederüledék K, L: szakaszhossz, W: szélesség, M: medervastagság."
+  },
+  {
+    "id": "ch21_mcq_053",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen Δs értéket kaptak Marton (2009) Cooper-Jacob példájában?",
+    "options": [
+      "1,5 m",
+      "4,1 m",
+      "10,0 m",
+      "25,0 m"
+    ],
+    "correct": "B",
+    "explanation": "4,1 m egy logaritmikus dekádonként."
+  },
+  {
+    "id": "ch21_mcq_054",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a felszín alatti víz szimulációjának négy fő döntési kategóriája?",
+    "options": [
+      "Hőmérséklet, nyomás, szél, csapadék",
+      "Készletgazdálkodás, szennyezőanyag-transzport, ökoszisztéma-védelem, infrastruktúra-tervezés",
+      "Tervezés, építés, üzemeltetés, bontás",
+      "Mérés, számítás, vizualizáció, archiválás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet négy döntési kategóriát ismertet."
+  },
+  {
+    "id": "ch21_mcq_055",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a debreceni észlelőkút hidraulikus emelkedési magassága Marton (2009) példájában?",
+    "options": [
+      "22,62 m",
+      "92,0 m",
+      "102,0 m",
+      "114,62 m"
+    ],
+    "correct": "C",
+    "explanation": "h = 114,62 - 12,62 = 102,0 m (mBf)."
+  },
+  {
+    "id": "ch21_mcq_056",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen K érték jellemzi a triász karszt-mészkövet Magyarországon?",
+    "options": [
+      "10⁻⁷ - 10⁻⁴ m/nap",
+      "0,001 - 0,1 m/nap",
+      "1 - 1000 m/nap",
+      "10 000+ m/nap"
+    ],
+    "correct": "C",
+    "explanation": "Erősen változó, 1-1000 m/nap a repedezettségtől függően."
+  },
+  {
+    "id": "ch21_mcq_057",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Hortobágyi Nemzeti Park kapcsolata a felszín alatti vízzel?",
+    "options": [
+      "Nincs kapcsolat",
+      "A sekély talajvíz fenntartja szikes mocsarait és pusztáit",
+      "Kizárólag folyóvízre támaszkodik",
+      "Mesterséges tó táplálja"
+    ],
+    "correct": "B",
+    "explanation": "UNESCO Világörökségi helyszín, a sekély talajvízszinttől függ."
+  },
+  {
+    "id": "ch21_mcq_058",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen megoldót használ a MODFLOW 6?",
+    "options": [
+      "PCG2",
+      "GMG",
+      "IMS (Iterative Model Solution)",
+      "NWT"
+    ],
+    "correct": "C",
+    "explanation": "A MODFLOW 6 az IMS csomagot használja Krylov-altér módszerrel."
+  },
+  {
+    "id": "ch21_mcq_059",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen nyelven íródott a MODFLOW forráskódja?",
+    "options": [
+      "Python",
+      "C++",
+      "Fortran",
+      "Java"
+    ],
+    "correct": "C",
+    "explanation": "A USGS Fortran nyelven fejleszti és terjeszti."
+  },
+  {
+    "id": "ch21_mcq_060",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a DISV csomag a MODFLOW 6-ban?",
+    "options": [
+      "Discretization with Vertices - strukturálatlan rácsok",
+      "Dispersion Variables",
+      "Dissolved Species",
+      "Drainage Simulation"
+    ],
+    "correct": "A",
+    "explanation": "Voronoi-poligonok és más szabálytalan cellaalakzatok használata."
+  },
+  {
+    "id": "ch21_mcq_061",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen utazási idő jellemzi a külső kútvédőterületet Magyarországon?",
+    "options": [
+      "<1 nap",
+      "<20 nap",
+      "<6 hónap",
+      "<50 év"
+    ],
+    "correct": "C",
+    "explanation": "Az a terület, amelyen belül az utazási idő kevesebb mint 6 hónap."
+  },
+  {
+    "id": "ch21_mcq_062",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a PHT3D?",
+    "options": [
+      "Áramlási modell",
+      "MT3DMS-hez csatolt geokémiai motor (PHREEQC interfész)",
+      "GIS-bővítmény",
+      "Vizualizációs eszköz"
+    ],
+    "correct": "B",
+    "explanation": "Összetett geokémiájú reaktív transzporthoz."
+  },
+  {
+    "id": "ch21_mcq_063",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen hatással van az alföldi öntözési kitermelés csökkenése a vízszintekre?",
+    "options": [
+      "Azonnali teljes helyreállás",
+      "A vízszintek visszaépülése az 1990-es évek után",
+      "Nincs hatás",
+      "Továbbra is csökkenek"
+    ],
+    "correct": "B",
+    "explanation": "A tranziens kalibráció megragadja a vízszintek részleges visszaépülését."
+  },
+  {
+    "id": "ch21_mcq_064",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Newton-Raphson formulálás előnye a MODFLOW-NWT-ben?",
+    "options": [
+      "Gyorsabb futtatás",
+      "Jobb konvergencia szabad felszínű problémáknál",
+      "3D vizualizáció",
+      "Szöveges kimenet"
+    ],
+    "correct": "B",
+    "explanation": "Newton-Raphson formulálás a szabad felszínű problémák jobb konvergenciájához."
+  },
+  {
+    "id": "ch21_mcq_065",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen szoftverrel szkriptelhető a MODFLOW munkafolyamat?",
+    "options": [
+      "Excel",
+      "FloPy (Python)",
+      "Word",
+      "PowerPoint"
+    ],
+    "correct": "B",
+    "explanation": "FloPy teljes Python API-t biztosít a MODFLOW-hoz."
+  },
+  {
+    "id": "ch21_mcq_066",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az OpenGeoSys?",
+    "options": [
+      "Kereskedelmi GIS",
+      "Nyílt forráskódú platform csatolt THM-C folyamatokhoz",
+      "USGS fejlesztés",
+      "Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "Termo-hidro-mechanikai-kémiai folyamatok nyílt forráskódú szimulációja."
+  },
+  {
+    "id": "ch21_mcq_067",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mire szolgál a MODFLOW STO csomag?",
+    "options": [
+      "Kút-kezelés",
+      "Fajlagos tárolás és fajlagos hozam definiálása",
+      "Folyó-kölcsönhatás",
+      "Rácsgeometria"
+    ],
+    "correct": "B",
+    "explanation": "Storage csomag tranziens szimulációkhoz."
+  },
+  {
+    "id": "ch21_mcq_068",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen automatizált munkafolyamatot tesz lehetővé a geodatabase-alapú modellkezelés?",
+    "options": [
+      "Kizárólag kézi futtatás",
+      "Automatizált kútengedélyezés, forgatókönyv-elemzés, valós idejű frissítés",
+      "Kizárólag nyomtatás",
+      "Kizárólag archiválás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet három automatizálási példát ismertet."
+  },
+  {
+    "id": "ch21_mcq_069",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a holland REGIS-II?",
+    "options": [
+      "FEFLOW modell",
+      "Nemzeti felszín alatti vízmodell webes felületen",
+      "Kútadatbázis",
+      "Geológiai térkép"
+    ],
+    "correct": "B",
+    "explanation": "A TNO által fenntartott nemzeti hidrogeológiai modell MODFLOW-val csatolva."
+  },
+  {
+    "id": "ch21_mcq_070",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mennyivel csökkent a hajdúnánási kitermelés által keltett függőleges gradiens?",
+    "options": [
+      "Nem változott",
+      "0-ról 0,3-0,5-re nőtt",
+      "1,0-ról 0,5-re csökkent",
+      "Megfordult"
+    ],
+    "correct": "B",
+    "explanation": "Az intenzív termelés a közel nulla értékről 0,3-0,5-re növelte."
+  },
+  {
+    "id": "ch21_mcq_071",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi az EVT csomag a MODFLOW-ban?",
+    "options": [
+      "Kút-csomag",
+      "Evapotranszspiráció sekély talajvízszintnél",
+      "Rácsgeometria",
+      "Megoldó"
+    ],
+    "correct": "B",
+    "explanation": "ET szimulálása a felső rétegből."
+  },
+  {
+    "id": "ch21_mcq_072",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen elforgitási problémák merülnek fel a Boundary objektumnál?",
+    "options": [
+      "Nincs ilyen probléma",
+      "A szögdefiníció konvenciójának helytelen értelmezése",
+      "Kizárólag méretezési hiba",
+      "Színezési probléma"
+    ],
+    "correct": "B",
+    "explanation": "Az elforgatási szög definíciójának téves értelmezése a leggyakoribb hiba."
+  },
+  {
+    "id": "ch21_mcq_073",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a CORINE Land Cover felhasználása a MODFLOW-ban?",
+    "options": [
+      "Rácsgeometria",
+      "Utánpótlás becslése területhasználat alapján",
+      "Kúthozam meghatározás",
+      "Szelvénykészítés"
+    ],
+    "correct": "B",
+    "explanation": "Területhasználati típusonként eltérő beszivárgási arány."
+  },
+  {
+    "id": "ch21_mcq_074",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a konzervatív nyomjelző retardációs tényezője?",
+    "options": [
+      "0",
+      "1",
+      "5",
+      "10"
+    ],
+    "correct": "B",
+    "explanation": "Konzervatív nyomjelzők (klorid, trícium) R_d = 1, nem retardálnak."
+  },
+  {
+    "id": "ch21_mcq_075",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen nemzetközi szervezet a DHI?",
+    "options": [
+      "Amerikai vízügyi hivatal",
+      "Dán mérnöki/környezetvédelmi szoftver- és tanácsadó csoport",
+      "UNESCO szervezet",
+      "Magyar intézmény"
+    ],
+    "correct": "B",
+    "explanation": "A FEFLOW fejlesztője, eredetileg WASY GmbH Berlinben."
+  },
+  {
+    "id": "ch21_tf_001",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW az USGS által fejlesztett, ingyenes és nyílt forráskódú szimulációs kód.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_002",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FEFLOW véges differencia módszert használ.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_003",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Darcy-törvény turbulens áramlásra érvényes.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_004",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A fajlagos vízhozam és a szivárgási sebesség azonos mennyiségek.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_005",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Theis-egyenlet a tranziens radiális áramlás alapmegoldása.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_006",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Cooper-Jacob módszer a Theis-egyenlet logaritmikus egyszerűsítése.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_007",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az analitikus elem módszer rács generálását igényli.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_008",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW moduláris felépítésű.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_009",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Darcy-törvény Re < 1-10 esetén érvényes.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_010",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az anizotrópia azt jelenti, hogy K irányától független.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_011",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A K_parallel mindig nagyobb, mint K_merőleges réteges üledékekben.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_012",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW 6 strukturálatlan rácsokat is támogat.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_013",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FEFLOW natív módon támogatja a sűrűségfüggő áramlást.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_014",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Magyarország ivóvízellátásának mintegy 50%-a felszín alatti eredetű.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_015",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Budapest parti szűrési rendszere naponta ~500 000 m³ vizet termel.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_016",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Thiem-egyenlet tranziens megoldás.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_017",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az MT3DMS az advekciós-diszperziós egyenletet oldja meg.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_018",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODPATH részecske-követési kód.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_019",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A PEST paraméter-becslési eszköz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_020",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FloPy Python API a MODFLOW-hoz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_021",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Cell2D poligon-objektumosztály.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_022",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Node2D 3D multipatch objektumosztály.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_023",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A CellIndex tábla egyedi IJK indexet rendel minden cellához.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_024",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW bemeneti fájlok kizárólag bináris formátumúak.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_025",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A WEL csomag a folyó-vízadó kölcsönhatást kezeli.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_026",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A RIV csomag konduktancia-tagon keresztül modellezi a folyó-vízadó kapcsolatot.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_027",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az interfész-adatmodell lehetővé teszi a MODFLOW teljes GIS-ben tárolását.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_028",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A DIS csomag a rácsgeometriát definiálja.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_029",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A NPF csomag a szivárgási tényezőt rendeli a cellákhoz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_030",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A CHD csomag állandó nyomásmagasságot rögzít.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_031",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW negatív Q értéket használ a kitermeléshez.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_032",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Sichardt-formula a transzmisszivitás meghatározására szolgál.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_033",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A retardációs tényező R_d = 1 konzervatív nyomjelzőknél.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_034",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A diszperzivitás méretfüggetlen paraméter.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_035",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A meder-konduktancia C = K_bed × L × W / M.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_036",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az AEM a legösszetettebb geometriákra a legalkalmasabb.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_037",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FEFLOW különösen Európában népszerű.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_038",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW Fortran nyelven íródott.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_039",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW 6 IMS megoldót használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_040",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Hortobágyi Nemzeti Park a sekély talajvíztől függ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_041",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az alföldi regionális modell 500 m × 500 m rácsfelbontású.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_042",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A modellnek 5 rétege van az alföldi regionális modellben.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_043",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A parti szűrés utazási ideje Budapestnél 10-100 nap.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_044",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A belső kútvédőterület utazási ideje <20 nap.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_045",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A külső kútvédőterület utazási ideje <6 hónap.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_046",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A SEAWAT sűrűségfüggő áramlásra szolgál.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_047",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A PHT3D geokémiai motor az MT3DMS-hez.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_048",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az OpenGeoSys kereskedelmi szoftver.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_049",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A CORINE Land Cover az utánpótlás becsléséhez használatos.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_050",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Boundary objektumnak OriginX, OriginY és Angle attribútumai vannak.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_051",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Cell3D multipatch típusú.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_052",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW 6 Krylov-altér módszert használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_053",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Dupuit-Forchheimer közelítés vertikális áramlást feltételez.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_054",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A K = kρg/μ összefüggés kapcsolja a szivárgási tényezőt az intrinsic permeabilitáshoz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_055",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A meleg víz viszkozitása nagyobb, mint a hideg vízé.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_056",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW csomagstruktúrája miatt új fizikai folyamatok könnyen hozzáadhatók.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_057",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Debreceni kút hidraulikus emelkedési magassága 102,0 m.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_058",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A hajdúszoboszlói termálkút artézi.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_059",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Duna-kavicsterasz T értéke 1000-5000 m²/nap.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_060",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Cooper-Jacob módszerben Δs a dekádonkénti leszívásváltozás.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_061",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Neuman-megoldás kétszakaszos típusgörbét ad.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_062",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A szabad felszínű korrekció s' = s - s²/(2b).",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_063",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A hajdúnánási ammóniakoncentrációk emelkednek a mély kutakban.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_064",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A többszörös szűrős kiképzés mindig előnyös.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_065",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az alföldi utánpótlás 40-80 mm/év a homokos területeken.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_066",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW Analyst térinformatikai eszközkészlet.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_067",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A felszín alatti vízmodellek asztali gépekről felhőbe költöznek.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_068",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Monte Carlo bizonytalanság-elemzés nem praktikus felhő nélkül.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_069",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A holland REGIS-II nemzeti infrastruktúraként kezelt modell.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_070",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A VKI 185 felszín alatti víztestet jelöl ki Magyarországon.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_071",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az éghajlatváltozás 10-30%-kal csökkentheti az alföldi utánpótlást.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_072",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A q és v_s összekeverése háromszoros-ötszörös hibát okozhat.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_073",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW-modellek tízezres nagyságrendben épültek világszerte.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_074",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az alföldi modell DDM-5 DEM-et használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_075",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Kozeny-Carman formula K becslésére szolgál szemcseméretből.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_076",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW-ban a negatív Q kitermelést jelöl.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_077",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A PCG a Prekondicionált Konjugált Gradiens módszer.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_078",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A GMRES az Általánosított Minimális Reziduális módszer.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_079",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A szabályozó hatóságok a MODFLOW-eredményeket elfogadják.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_080",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az integrált modellek (HydroGeoSphere) egyidejűleg oldják a felszíni és FA áramlást.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_081",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A PINN a fizikai egyenleteket a neurális hálózat architektúrájába ágyazza.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_082",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Theis-kútfüggvény W(u) = -0,5772 - ln(u) + u - ...",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_083",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A u = r²S/(4Tt) a Theis-egyenletben.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_084",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Hantush-Jacob modell figyelembe veszi a záró réteg átszivárgását.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_085",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Darcy-törvényt Henry Darcy 1856-ban publikálta.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_086",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A parti szűrésű kutak a Szentendrei-szigeten találhatók.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_087",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az éghajlati előrejelzések szerint a Tisza nyári kisvízi szintjei csökkenhetnek.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_088",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A valós idejű felszín alatti vízmodellezés már általánosan elterjedt.",
+    "correct": false,
+    "explanation": "Hamis: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_089",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW-modellek verziózhatók a geodatabase-ben.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_090",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FEFLOW ifm Python API-val szkriptelhető.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_091",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Theis feltételezései között szerepel a végtelen kiterjedésű, izotróp vízadó.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_092",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "Az alföldi termálvíz-kitermelés fenntarthatósági problémákat okoz.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_093",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Csongrád megyei termálvíz modell 50+ m-es nyomáscsökkenést mutatott ki.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_094",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A ParFlow teljesen integrált felszíni-felszín alatti modell.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_095",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MIKE SHE a DHI integrált hidrológiai modellje.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_096",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A Docker konténerizált MODFLOW-futtathatókat biztosít.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_097",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A magyar Alföld kitermelésének 60%-kal csökkentése 1990 után történt.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_098",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW első kiadása 1984-ben jelent meg.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_099",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A FEFLOW strukturálatlan végeselem-hálót használ.",
+    "correct": true,
+    "explanation": "Igaz: a fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_fb_001",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A felszín alatti vízáramlás irányadó egyenlete a _____ törvényt és a tömegmegmaradást egyesíti.",
+    "correct_answer": "Darcy",
+    "explanation": "A helyes válasz: Darcy."
+  },
+  {
+    "id": "ch21_fb_002",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW a _____ módszert alkalmazza.",
+    "correct_answer": "véges differencia",
+    "explanation": "A helyes válasz: véges differencia."
+  },
+  {
+    "id": "ch21_fb_003",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A FEFLOW a _____ módszert alkalmazza.",
+    "correct_answer": "végeselem",
+    "explanation": "A helyes válasz: végeselem."
+  },
+  {
+    "id": "ch21_fb_004",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Darcy-törvény: Q = -K × A × _____.",
+    "correct_answer": "dh/dl",
+    "explanation": "A helyes válasz: dh/dl."
+  },
+  {
+    "id": "ch21_fb_005",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A szivárgási sebesség v_s = q / _____.",
+    "correct_answer": "n_e",
+    "explanation": "A helyes válasz: n_e."
+  },
+  {
+    "id": "ch21_fb_006",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Theis-egyenlet: s = Q/(4πT) × _____.",
+    "correct_answer": "W(u)",
+    "explanation": "A helyes válasz: W(u)."
+  },
+  {
+    "id": "ch21_fb_007",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Cooper-Jacob módszer T = 2,3Q/(4π × _____ ).",
+    "correct_answer": "Δs",
+    "explanation": "A helyes válasz: Δs."
+  },
+  {
+    "id": "ch21_fb_008",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW első kiadása _____ évben jelent meg.",
+    "correct_answer": "1984",
+    "explanation": "A helyes válasz: 1984."
+  },
+  {
+    "id": "ch21_fb_009",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW forráskódja _____ nyelven íródott.",
+    "correct_answer": "Fortran",
+    "explanation": "A helyes válasz: Fortran."
+  },
+  {
+    "id": "ch21_fb_010",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A NPF csomag a _____ tényezőt rendeli a cellákhoz.",
+    "correct_answer": "szivárgási",
+    "explanation": "A helyes válasz: szivárgási."
+  },
+  {
+    "id": "ch21_fb_011",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A DIS csomag a _____ definiálja.",
+    "correct_answer": "rácsgeometriát",
+    "explanation": "A helyes válasz: rácsgeometriát."
+  },
+  {
+    "id": "ch21_fb_012",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A WEL csomag a _____ hozamot kezeli.",
+    "correct_answer": "termelési",
+    "explanation": "A helyes válasz: termelési."
+  },
+  {
+    "id": "ch21_fb_013",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A RIV csomag konduktancia: C_riv = K_bed × L × W / _____.",
+    "correct_answer": "M",
+    "explanation": "A helyes válasz: M."
+  },
+  {
+    "id": "ch21_fb_014",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODPATH _____ követési kód.",
+    "correct_answer": "részecske",
+    "explanation": "A helyes válasz: részecske."
+  },
+  {
+    "id": "ch21_fb_015",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az MT3DMS az _____ egyenletet oldja meg.",
+    "correct_answer": "advekciós-diszperziós",
+    "explanation": "A helyes válasz: advekciós-diszperziós."
+  },
+  {
+    "id": "ch21_fb_016",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A PEST _____ becslési eszköz.",
+    "correct_answer": "paraméter",
+    "explanation": "A helyes válasz: paraméter."
+  },
+  {
+    "id": "ch21_fb_017",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A FloPy _____ API a MODFLOW-hoz.",
+    "correct_answer": "Python",
+    "explanation": "A helyes válasz: Python."
+  },
+  {
+    "id": "ch21_fb_018",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Cell2D _____ objektumosztály.",
+    "correct_answer": "poligon",
+    "explanation": "A helyes válasz: poligon."
+  },
+  {
+    "id": "ch21_fb_019",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Node2D _____ objektumosztály.",
+    "correct_answer": "pont",
+    "explanation": "A helyes válasz: pont."
+  },
+  {
+    "id": "ch21_fb_020",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A CellIndex tábla egyedi _____ indexet rendel.",
+    "correct_answer": "IJK",
+    "explanation": "A helyes válasz: IJK."
+  },
+  {
+    "id": "ch21_fb_021",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Magyarország ivóvízellátásának ~_____%-a felszín alatti eredetű.",
+    "correct_answer": "95",
+    "explanation": "A helyes válasz: 95."
+  },
+  {
+    "id": "ch21_fb_022",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Budapest parti szűrése ~_____ m³/nap vizet termel.",
+    "correct_answer": "500 000",
+    "explanation": "A helyes válasz: 500 000."
+  },
+  {
+    "id": "ch21_fb_023",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A belső kútvédőterület utazási ideje < _____ nap.",
+    "correct_answer": "20",
+    "explanation": "A helyes válasz: 20."
+  },
+  {
+    "id": "ch21_fb_024",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A külső kútvédőterület utazási ideje < _____ hónap.",
+    "correct_answer": "6",
+    "explanation": "A helyes válasz: 6."
+  },
+  {
+    "id": "ch21_fb_025",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Duna-kavicsterasz T értéke _____-5000 m²/nap.",
+    "correct_answer": "1000",
+    "explanation": "A helyes válasz: 1000."
+  },
+  {
+    "id": "ch21_fb_026",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Darcy-törvény Re < _____-10 esetén érvényes.",
+    "correct_answer": "1",
+    "explanation": "A helyes válasz: 1."
+  },
+  {
+    "id": "ch21_fb_027",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az alföldi regionális modell rácsfelbontása _____ m.",
+    "correct_answer": "500",
+    "explanation": "A helyes válasz: 500."
+  },
+  {
+    "id": "ch21_fb_028",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A modell _____ réteget tartalmaz.",
+    "correct_answer": "5",
+    "explanation": "A helyes válasz: 5."
+  },
+  {
+    "id": "ch21_fb_029",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW 6 _____ megoldót használ.",
+    "correct_answer": "IMS",
+    "explanation": "A helyes válasz: IMS."
+  },
+  {
+    "id": "ch21_fb_030",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A SEAWAT _____ áramlásra szolgál.",
+    "correct_answer": "sűrűségfüggő",
+    "explanation": "A helyes válasz: sűrűségfüggő."
+  },
+  {
+    "id": "ch21_fb_031",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A retardációs tényező R_d = 1 + (ρ_b × K_d) / _____.",
+    "correct_answer": "n_e",
+    "explanation": "A helyes válasz: n_e."
+  },
+  {
+    "id": "ch21_fb_032",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A K = k × ρ × g / _____.",
+    "correct_answer": "μ",
+    "explanation": "A helyes válasz: μ."
+  },
+  {
+    "id": "ch21_fb_033",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az intrinsic permeabilitás a _____ tulajdonsága.",
+    "correct_answer": "kőzetváz",
+    "explanation": "A helyes válasz: kőzetváz."
+  },
+  {
+    "id": "ch21_fb_034",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Theis feltételezése: _____, izotróp, végtelen vízadó.",
+    "correct_answer": "homogén",
+    "explanation": "A helyes válasz: homogén."
+  },
+  {
+    "id": "ch21_fb_035",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Cooper-Jacob alkalmazhatósági feltétele: u < _____.",
+    "correct_answer": "0,01",
+    "explanation": "A helyes válasz: 0,01."
+  },
+  {
+    "id": "ch21_fb_036",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A szabad felszínű korrekció: s' = s - s²/(_____ ).",
+    "correct_answer": "2b",
+    "explanation": "A helyes válasz: 2b."
+  },
+  {
+    "id": "ch21_fb_037",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Neuman-megoldás _____ típusgörbét ad.",
+    "correct_answer": "kétszakaszos",
+    "explanation": "A helyes válasz: kétszakaszos."
+  },
+  {
+    "id": "ch21_fb_038",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A hajdúszoboszlói termálkút nyomásmagassága _____,06 mBf.",
+    "correct_answer": "107",
+    "explanation": "A helyes válasz: 107."
+  },
+  {
+    "id": "ch21_fb_039",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A debreceni kút emelkedési magassága _____,0 mBf.",
+    "correct_answer": "102",
+    "explanation": "A helyes válasz: 102."
+  },
+  {
+    "id": "ch21_fb_040",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A _____ csomag az evapotranszspirációt kezeli.",
+    "correct_answer": "EVT",
+    "explanation": "A helyes válasz: EVT."
+  },
+  {
+    "id": "ch21_fb_041",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A _____ csomag az állandó nyomásmagasságot rögzíti.",
+    "correct_answer": "CHD",
+    "explanation": "A helyes válasz: CHD."
+  },
+  {
+    "id": "ch21_fb_042",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Sichardt-formula: R = 3000 × s_w × _____.",
+    "correct_answer": "√K",
+    "explanation": "A helyes válasz: √K."
+  },
+  {
+    "id": "ch21_fb_043",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az alföldi utánpótlás _____-80 mm/év a homokos területeken.",
+    "correct_answer": "40",
+    "explanation": "A helyes válasz: 40."
+  },
+  {
+    "id": "ch21_fb_044",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A CORINE Land Cover _____ felbontású.",
+    "correct_answer": "100 m",
+    "explanation": "A helyes válasz: 100 m."
+  },
+  {
+    "id": "ch21_fb_045",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Hortobágyi Nemzeti Park a sekély _____ függ.",
+    "correct_answer": "talajvíztől",
+    "explanation": "A helyes válasz: talajvíztől."
+  },
+  {
+    "id": "ch21_fb_046",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A _____ rendszer a Szentendrei-szigeten működik.",
+    "correct_answer": "parti szűrési",
+    "explanation": "A helyes válasz: parti szűrési."
+  },
+  {
+    "id": "ch21_fb_047",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-ban a negatív Q _____ jelöl.",
+    "correct_answer": "kitermelést",
+    "explanation": "A helyes válasz: kitermelést."
+  },
+  {
+    "id": "ch21_fb_048",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A u = r²S/(4_____t).",
+    "correct_answer": "T",
+    "explanation": "A helyes válasz: T."
+  },
+  {
+    "id": "ch21_fb_049",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Theis-kútfüggvény _____ alakban is írható.",
+    "correct_answer": "integrál",
+    "explanation": "A helyes válasz: integrál."
+  },
+  {
+    "id": "ch21_fb_050",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Cooper-Jacob S = 2,25 T t₀ / _____.",
+    "correct_answer": "r²",
+    "explanation": "A helyes válasz: r²."
+  },
+  {
+    "id": "ch21_fb_051",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A hajdúnánási _____ koncentrációk emelkednek.",
+    "correct_answer": "ammónia",
+    "explanation": "A helyes válasz: ammónia."
+  },
+  {
+    "id": "ch21_fb_052",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A többszörös szűrős kiképzés hidraulikus _____ hoz létre.",
+    "correct_answer": "rövidzárlatokat",
+    "explanation": "A helyes válasz: rövidzárlatokat."
+  },
+  {
+    "id": "ch21_fb_053",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW modularitása _____ ökoszisztémát teremtett.",
+    "correct_answer": "bővítmények",
+    "explanation": "A helyes válasz: bővítmények."
+  },
+  {
+    "id": "ch21_fb_054",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW 6 DISV csomagja _____ rácsokat támogat.",
+    "correct_answer": "strukturálatlan",
+    "explanation": "A helyes válasz: strukturálatlan."
+  },
+  {
+    "id": "ch21_fb_055",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A parti szűrés utazási ideje Budapestnél _____-100 nap.",
+    "correct_answer": "10",
+    "explanation": "A helyes válasz: 10."
+  },
+  {
+    "id": "ch21_fb_056",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A _____ kód az AEM legismertebb megvalósítása.",
+    "correct_answer": "GFLOW",
+    "explanation": "A helyes válasz: GFLOW."
+  },
+  {
+    "id": "ch21_fb_057",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A SFR csomag a _____ csatolt szimulációjához.",
+    "correct_answer": "felszíni víz",
+    "explanation": "A helyes válasz: felszíni víz."
+  },
+  {
+    "id": "ch21_fb_058",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A UZF csomag a _____ zóna folyamataihoz.",
+    "correct_answer": "telítetlen",
+    "explanation": "A helyes válasz: telítetlen."
+  },
+  {
+    "id": "ch21_fb_059",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Darcy-törvényt _____ publikálta 1856-ban.",
+    "correct_answer": "Henry Darcy",
+    "explanation": "A helyes válasz: Henry Darcy."
+  },
+  {
+    "id": "ch21_fb_060",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Theis-egyenletet _____ vezette le 1935-ben.",
+    "correct_answer": "Charles Vernon Theis",
+    "explanation": "A helyes válasz: Charles Vernon Theis."
+  },
+  {
+    "id": "ch21_fb_061",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A K_parallel = Σ(K_i × b_i) / _____.",
+    "correct_answer": "Σb_i",
+    "explanation": "A helyes válasz: Σb_i."
+  },
+  {
+    "id": "ch21_fb_062",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "K_merőleges = Σb_i / Σ(b_i / _____ ).",
+    "correct_answer": "K_i",
+    "explanation": "A helyes válasz: K_i."
+  },
+  {
+    "id": "ch21_fb_063",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az alföldi modellt az _____ tartja fenn.",
+    "correct_answer": "MBFSZ/SZTFH",
+    "explanation": "A helyes válasz: MBFSZ/SZTFH."
+  },
+  {
+    "id": "ch21_fb_064",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A folyó-vízszintek az OVF _____ hálózatából származnak.",
+    "correct_answer": "vízmérce",
+    "explanation": "A helyes válasz: vízmérce."
+  },
+  {
+    "id": "ch21_fb_065",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A talajadatok a magyar _____ rendszerből származnak.",
+    "correct_answer": "AGROTOPO",
+    "explanation": "A helyes válasz: AGROTOPO."
+  },
+  {
+    "id": "ch21_fb_066",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A meteorológiai adatok az _____ szolgálattól származnak.",
+    "correct_answer": "OMSZ",
+    "explanation": "A helyes válasz: OMSZ."
+  },
+  {
+    "id": "ch21_fb_067",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A holland modellt a _____ tartja fenn.",
+    "correct_answer": "TNO",
+    "explanation": "A helyes válasz: TNO."
+  },
+  {
+    "id": "ch21_fb_068",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az éghajlatváltozás _____-50%-kal csökkentheti az utánpótlást.",
+    "correct_answer": "20",
+    "explanation": "A helyes válasz: 20."
+  },
+  {
+    "id": "ch21_fb_069",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW _____ környezetben is futtatható.",
+    "correct_answer": "felhő",
+    "explanation": "A helyes válasz: felhő."
+  },
+  {
+    "id": "ch21_fb_070",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Docker _____ MODFLOW-futtathatókat biztosít.",
+    "correct_answer": "konténerizált",
+    "explanation": "A helyes válasz: konténerizált."
+  },
+  {
+    "id": "ch21_fb_071",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A PINN a _____ egyenletet a neurális hálózatba ágyazza.",
+    "correct_answer": "áramlási",
+    "explanation": "A helyes válasz: áramlási."
+  },
+  {
+    "id": "ch21_fb_072",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A szurrogát modellek _____ alatt közelítik a szimulációt.",
+    "correct_answer": "milliszekundumok",
+    "explanation": "A helyes válasz: milliszekundumok."
+  },
+  {
+    "id": "ch21_fb_073",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A VKI _____-ként kezeli a felszín alatti víztesteket.",
+    "correct_answer": "jellemzendő egységek",
+    "explanation": "A helyes válasz: jellemzendő egységek."
+  },
+  {
+    "id": "ch21_fb_074",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az automatizált kútengedélyezés _____ perc alatt végezhető.",
+    "correct_answer": "néhány",
+    "explanation": "A helyes válasz: néhány."
+  },
+  {
+    "id": "ch21_fb_075",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-ban az igénybevételek _____ periódusonként változhatnak.",
+    "correct_answer": "terhelési",
+    "explanation": "A helyes válasz: terhelési."
+  },
+  {
+    "id": "ch21_fb_076",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A GHB csomag _____ függő fluxust ad.",
+    "correct_answer": "nyomásmagasság",
+    "explanation": "A helyes válasz: nyomásmagasság."
+  },
+  {
+    "id": "ch21_fb_077",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az alföldi termelőkutak száma mintegy _____.",
+    "correct_answer": "15 000",
+    "explanation": "A helyes válasz: 15 000."
+  },
+  {
+    "id": "ch21_fb_078",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A termálvíz-kitermelés Csongrád megyében _____+ m nyomáscsökkenést okozott.",
+    "correct_answer": "50",
+    "explanation": "A helyes válasz: 50."
+  },
+  {
+    "id": "ch21_fb_079",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A FEFLOW _____ sűrűségű áramlást is kezel.",
+    "correct_answer": "változó",
+    "explanation": "A helyes válasz: változó."
+  },
+  {
+    "id": "ch21_fb_080",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A HydroGeoSphere _____ integrált modell.",
+    "correct_answer": "felszíni-felszín alatti",
+    "explanation": "A helyes válasz: felszíni-felszín alatti."
+  },
+  {
+    "id": "ch21_fb_081",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A parti szűrés a _____ mellékén működik a legjobban.",
+    "correct_answer": "Duna",
+    "explanation": "A helyes válasz: Duna."
+  },
+  {
+    "id": "ch21_fb_082",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW _____ hálózati hatás biztosítja dominanciáját.",
+    "correct_answer": "telepített bázis",
+    "explanation": "A helyes válasz: telepített bázis."
+  },
+  {
+    "id": "ch21_fb_083",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Cell3D és Node3D _____ a kiterjesztése.",
+    "correct_answer": "3D",
+    "explanation": "A helyes válasz: 3D."
+  },
+  {
+    "id": "ch21_fb_084",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Boundary OriginX, OriginY és _____ attribútumokat tárol.",
+    "correct_answer": "Angle",
+    "explanation": "A helyes válasz: Angle."
+  },
+  {
+    "id": "ch21_fb_085",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-modell bemenetét egy _____ definiálja.",
+    "correct_answer": "névfájl",
+    "explanation": "A helyes válasz: névfájl."
+  },
+  {
+    "id": "ch21_fb_086",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A CORINE _____ típusonként eltérő beszivárgási arányt ad.",
+    "correct_answer": "területhasználati",
+    "explanation": "A helyes válasz: területhasználati."
+  },
+  {
+    "id": "ch21_fb_087",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Kozeny-Carman formula _____ elemzésből becsüli K-t.",
+    "correct_answer": "szemcseméret",
+    "explanation": "A helyes válasz: szemcseméret."
+  },
+  {
+    "id": "ch21_fb_088",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A GMS az Aquaveo által fejlesztett _____ szoftver.",
+    "correct_answer": "elő-/utófeldolgozó",
+    "explanation": "A helyes válasz: elő-/utófeldolgozó."
+  },
+  {
+    "id": "ch21_fb_089",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Visual MODFLOW a Waterloo Hydrogeologic _____ szoftvere.",
+    "correct_answer": "kereskedelmi",
+    "explanation": "A helyes válasz: kereskedelmi."
+  },
+  {
+    "id": "ch21_fb_090",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A Groundwater Vistas az ESI _____ szoftvere.",
+    "correct_answer": "kereskedelmi",
+    "explanation": "A helyes válasz: kereskedelmi."
+  },
+  {
+    "id": "ch21_fb_091",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A PFLOTRAN a _____ folyamatok szimulációjára szolgál.",
+    "correct_answer": "csatolt",
+    "explanation": "A helyes válasz: csatolt."
+  },
+  {
+    "id": "ch21_fb_092",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-USG a _____ rácsok korai implementációja.",
+    "correct_answer": "strukturálatlan",
+    "explanation": "A helyes válasz: strukturálatlan."
+  },
+  {
+    "id": "ch21_fb_093",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-NWT a _____ formulálást vezette be.",
+    "correct_answer": "Newton-Raphson",
+    "explanation": "A helyes válasz: Newton-Raphson."
+  },
+  {
+    "id": "ch21_fb_094",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW-LGR a lokális _____ támogatja.",
+    "correct_answer": "rácsfinomítást",
+    "explanation": "A helyes válasz: rácsfinomítást."
+  },
+  {
+    "id": "ch21_essay_001",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a felszín alatti víz szimulációs modelljeinek három fő típusát!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_002",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Részletezze a Darcy-törvényt és változóit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_003",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a különbség a fajlagos vízhozam és a szivárgási sebesség között?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_004",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a szivárgási tényező és az intrinsic permeabilitás kapcsolatát!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_005",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen feltételek mellett érvényes a Darcy-törvény?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_006",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse az anizotrópia fogalmát és hatását a MODFLOW-modellekre!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_007",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Részletezze a Theis-egyenletet és feltételezéseit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_008",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Cooper-Jacob módszert és számítási lépéseit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_009",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a Thiem-egyenlet és hogyan használható kúttelep-tervezésre?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_010",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a szabad felszínű vízadók Dupuit-Forchheimer közelítését!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_011",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen korrekciók szükségesek szabad felszínű vízadók próbaszivattyúzási elemzéséhez?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_012",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Neuman-megoldás jellemzőit szabad felszínű vízadókhoz!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_013",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Részletezze a MODFLOW csomagstruktúráját és a fő csomagokat!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_014",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan épül fel egy MODFLOW-modell GIS-adatokból?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_015",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Boundary, Cell2D, Cell3D, Node2D és Node3D objektumosztályokat!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_016",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a CellIndex tábla és hogyan működik?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_017",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW adatmodell (MDM) interfész-adatmodell koncepcióját!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_018",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hozhatók létre térképrétegek a MODFLOW-adatokból?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_019",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen igénybevételi csomagok léteznek a MODFLOW-ban és hogyan állítják össze GIS-ből?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_020",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a meder-konduktancia fogalmát és számítási módját!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_021",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Részletezze a MODFLOW számítási példát az egyszerű nyomás alatti vízadóra!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_022",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen előnyei vannak a FEFLOW-nak a MODFLOW-val szemben?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_023",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mikor válasszunk FEFLOW-t MODFLOW helyett?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_024",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse az advekciós-diszperziós egyenletet és három mechanizmusát!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_025",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a retardációs tényező és hogyan hat a szennyezőanyag-transzportra?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_026",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan használják a MODFLOW-t és MT3DMS-t transzportmodellezésre?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_027",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a kútvédőterületek kijelölésének módszerét!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_028",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a magyar kútvédőterületi rendszer három zónája?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_029",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hat az intenzív kitermelés a szennyeződési kockázatra a Nyírségben?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_030",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse az alföldi regionális MODFLOW-modell jellemzőit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_031",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen GIS-adatforrások táplálják az alföldi regionális modellt?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_032",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a budapesti parti szűrési rendszer modellezési kihívásait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_033",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan befolyásolja a hőmérséklet a parti szűrési modelleket?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_034",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen tanulságokkal szolgál a magyar felszín alatti vízmodellezési gyakorlat?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_035",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse az automatizált kútengedélyezési munkafolyamatot!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_036",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan használható a MODFLOW éghajlati hatásértékelésre?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_037",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a valós idejű felszín alatti vízmodellezés jelenlegi helyzete?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_038",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a FloPy szerepét a modern MODFLOW munkafolyamatban!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_039",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen kihívásokkal szembesül a felszín alatti vízmodellezés 2026-ban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_040",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan segítheti a mesterséges intelligencia a felszín alatti vízmodellezést?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_041",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a teljesen integrált felszíni-felszín alatti modellek előnyeit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_042",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a MODFLOW 6 fő újításai?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_043",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a GFLOW analitikus elem módszer jellemzőit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_044",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan kapcsolódik a GIS a felszín alatti víz szimulációhoz?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_045",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a felszín alatti víz szimulációjának négy döntési kategóriája?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_046",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a magyar vízadó-paraméterek jellemző tartományait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_047",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen szoftverökoszisztéma áll rendelkezésre 2026-ban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_048",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hat az EU VKI a magyar felszín alatti vízmodellezésre?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_049",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Sichardt és Kuszakin formulákat!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_050",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a MODFLOW GIS-integrációjának gyakorlati munkafolyamata?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_051",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan működik a MODFLOW megoldó a mátrixegyenlet megoldásához?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_052",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a felszín alatti víz modellezés adatkihívásait régiónként!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_053",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi az intézményi kihívás a felszín alatti vízmodellezésben?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_054",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a számítási kihívásokat és a felhőszámítástechnika szerepét!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_055",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a holland megközelítés tanulsága Magyarország számára?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_056",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan változott a MODFLOW 1984-től 2026-ig?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_057",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Csongrád megyei termálvíz modellezési eredményeket!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_058",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen szerepet játszik a parti szűrés Budapest vízellátásában?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_059",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hat az öntözés csökkenése az alföldi vízszintekre?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_060",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW-modell kalibrációjának alapelveit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_061",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen szerepet játszik a PEST a MODFLOW kalibrációjában?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_062",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW stacionárius és tranziens szimulációk közötti különbséget!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_063",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a terhelési periódus fogalma a MODFLOW-ban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_064",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan értelmezzük a MODFLOW vízmérleg-eredményeit?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_065",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a Newton-Raphson formulálás előnye szabad felszínű problémáknál?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_066",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW-USG és DISV újításait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_067",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen előfeldolgozó szoftverek léteznek a MODFLOW-hoz?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_068",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a forgatókönyv-elemzés módszertana a MODFLOW-ban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_069",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan használható a Docker a MODFLOW felhőalapú futtatásához?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_070",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW és a FEFLOW összehasonlítását projekttípusonként!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_071",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen szerepet játszik az Angle attribútum a Boundary objektumban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_072",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan származtatják az utánpótlási értékeket a MODFLOW RCH csomaghoz?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_073",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a drénhálózatok GIS-alapú modellezését!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_074",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a SUTRA kód jellemzője?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_075",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan kapcsolódik a felszín alatti vízmodellezés az ökoszisztéma-védelemhez?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_076",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a próbaszivattyúzási paraméterek használatát a MODFLOW-ban!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_077",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a konzisztencia-vizsgálat szerepe a MODFLOW bemenetelőkészítésben?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_078",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan alkalmazható a krigelés a MODFLOW anyagtulajdonságok interpolálásához?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_079",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW-modell érzékenységi elemzésének módszereit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_080",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a visszafelé irányuló részecske-követés és hogyan használják?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_081",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a hidrogeológiai védőterületek szabályozási keretét az EU-ban!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_082",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen hatása van a hőmérsékletfüggő K-nak a termálvíz modellezésére?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_083",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan kezeli a MODFLOW a szabad felszínű-nyomás alatti átmenetet?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_084",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a Theis típusgörbe-illesztés módszerét!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_085",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a dimenziótlan u paraméter fizikai jelentése?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_086",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan alkalmazható a MODFLOW ipari szennyeződések modellezésére?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_087",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a városi felszín alatti vízgazdálkodás modellezési kihívásait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_088",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a közlekedőedény-analógia szerepe az átszivárgó rendszerek megértésében?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_089",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hat a többszörös szűrős kiképzés a szennyeződési kockázatra?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_090",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a felszín alatti vízmodellezés jövőbeli irányait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_091",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi az Ensemble Smoother szerepe a valós idejű modellfrissítésben?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_092",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan használhatók a szurrogát modellek az operatív vízgazdálkodásban?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_093",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW és az AI integrációjának lehetőségeit!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_094",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Milyen infrastrukturális beruházások szükségesek egy nemzeti FA-víz modellrendszerhez?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_095",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan járul hozzá az OVF monitoring hálózata a MODFLOW modellkalibrációhoz?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_096",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a MODFLOW modell verziózásának és megosztásának kihívásait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_097",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Mi a kapcsolat a felszín alatti vízmodellezés és az éghajlati alkalmazkodás között?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_mcq_076",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a SFR csomag a MODFLOW-ban?",
+    "options": [
+      "Felszín alatti áramlás",
+      "Felszíni víz útvonalazás (Streamflow Routing)",
+      "Tározási csomag",
+      "Megoldó"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_077",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a UZF csomag felhasználása?",
+    "options": [
+      "Kút-kezelés",
+      "Telítetlen zóna áramlás",
+      "Drén-kezelés",
+      "Szelvénykészítés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_078",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen Python-csomag a PEST++?",
+    "options": [
+      "GIS-bővítmény",
+      "A PEST párhuzamos/Python-verziója",
+      "Vizualizációs könyvtár",
+      "Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_079",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a GMS szoftver?",
+    "options": [
+      "Nyílt forráskódú modellezőkód",
+      "Aquaveo által fejlesztett elő-/utófeldolgozó",
+      "Kalibrációs eszköz",
+      "Python-könyvtár"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_080",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a LAK csomag a MODFLOW-ban?",
+    "options": [
+      "Kút-csomag",
+      "Tó-csomag (Lake)",
+      "Drén-csomag",
+      "Megoldó"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_081",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen típusú iteratív megoldót használ a MODFLOW 6?",
+    "options": [
+      "Direkt megoldó",
+      "Krylov-altér módszert nem teljes LU prekondicionálással",
+      "Gauss-eliminálás",
+      "Simplex módszer"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_082",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Visual MODFLOW fejlesztő cége?",
+    "options": [
+      "USGS",
+      "Waterloo Hydrogeologic",
+      "Aquaveo",
+      "DHI"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_083",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODFLOW-LGR?",
+    "options": [
+      "Sűrűségfüggő változat",
+      "Lokális rácsfinomítási változat",
+      "Strukturálatlan rács",
+      "Transzport kiegészítő"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_084",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen arányban csökkent az alföldi öntözési kitermelés 1990 után?",
+    "options": [
+      "~20%",
+      "~40%",
+      "~60%",
+      "~80%"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_085",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a PFLOTRAN?",
+    "options": [
+      "GIS-bővítmény",
+      "Nyílt forráskódú csatolt folyamat-szimulátor",
+      "MODFLOW változat",
+      "Kalibrációs eszköz"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_086",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Darcy-sebesség dimenziója?",
+    "options": [
+      "Nincs dimenziója",
+      "L/T",
+      "L²/T",
+      "M/L³"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_087",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen képlettel számítják a Cooper-Jacob módszerben az S-t?",
+    "options": [
+      "S = Q/(4πT)",
+      "S = 2,25 T t₀/r²",
+      "S = T/b",
+      "S = K × n_e"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_088",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Theis W(u) sor első tagja?",
+    "options": [
+      "1,0",
+      "0,5772",
+      "ln(u)",
+      "−0,5772 − ln u"
+    ],
+    "correct": "D",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_089",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen mélységben van a debreceni észlelőkút szűrője?",
+    "options": [
+      "12 m",
+      "42 m",
+      "92 m",
+      "200 m"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_090",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a hajdúszoboszlói termálkút szűrő-középpontjának magassága?",
+    "options": [
+      "97,16 mBf",
+      "107,06 mBf",
+      "−718,8 mBf",
+      "0 mBf"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_091",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen típusú hálót használ a FEFLOW?",
+    "options": [
+      "Szabályos téglalap",
+      "Strukturálatlan háromszög/tetraéder",
+      "Kizárólag 1D vonal",
+      "Pontfelhő"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_092",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a Groundwater Vistas fejlesztő cége?",
+    "options": [
+      "USGS",
+      "ESI",
+      "DHI",
+      "Aquaveo"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_093",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MIKE SHE?",
+    "options": [
+      "MODFLOW bővítmény",
+      "DHI integrált hidrológiai modellje",
+      "Python-könyvtár",
+      "Kalibrációs eszköz"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_094",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen modellezési módszer a Richards-egyenlet?",
+    "options": [
+      "Telített áramlás",
+      "Telítetlen zóna áramlás",
+      "Felszíni lefolyás",
+      "Hőtranszport"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_095",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a ParFlow?",
+    "options": [
+      "Véges differencia kód",
+      "Teljesen integrált felszíni-felszín alatti modell",
+      "Csak transzport",
+      "GIS-bővítmény"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_096",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen nyelven szkriptelhető a FEFLOW?",
+    "options": [
+      "Java",
+      "Python (ifm API)",
+      "C#",
+      "Ruby"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_097",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a MODFLOW SWR csomag?",
+    "options": [
+      "Kút-csomag",
+      "Surface Water Routing (felszíni víz útvonalazás)",
+      "Tározási csomag",
+      "Megoldó"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_098",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Milyen az alföldi holocén alluvium K értéke a Tisza ártéren?",
+    "options": [
+      "0,001-0,01 m/nap",
+      "1-20 m/nap",
+      "100-300 m/nap",
+      "1000+ m/nap"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_099",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mekkora a felső-pannon homokkő jellemző K értéke?",
+    "options": [
+      "10⁻⁷-10⁻⁴ m/nap",
+      "1-30 m/nap",
+      "100-500 m/nap",
+      "1000+ m/nap"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_mcq_100",
+    "type": "mcq",
+    "chapter": 21,
+    "question": "Mi a DDM-5?",
+    "options": [
+      "MODFLOW változat",
+      "Magyarország 5 m felbontású DEM-je",
+      "Kútadatbázis",
+      "Geológiai térkép"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_tf_100",
+    "type": "true_false",
+    "chapter": 21,
+    "statement": "A MODFLOW első kiadása 1984-ben jelent meg az USGS-nél.",
+    "correct": true,
+    "explanation": "A fejezet tartalma alapján."
+  },
+  {
+    "id": "ch21_fb_095",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A felszíni víz útvonalazásra a MODFLOW _____ csomag szolgál.",
+    "correct_answer": "SFR",
+    "explanation": "A helyes válasz: SFR."
+  },
+  {
+    "id": "ch21_fb_096",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A telítetlen zóna folyamatokat a _____ csomag kezeli.",
+    "correct_answer": "UZF",
+    "explanation": "A helyes válasz: UZF."
+  },
+  {
+    "id": "ch21_fb_097",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW 6 többmodelles képessége _____ csomagon keresztül csatolja a modelleket.",
+    "correct_answer": "csere",
+    "explanation": "A helyes válasz: csere."
+  },
+  {
+    "id": "ch21_fb_098",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A parti szűrés során a víz természetes _____ megy keresztül.",
+    "correct_answer": "szűrésen",
+    "explanation": "A helyes válasz: szűrésen."
+  },
+  {
+    "id": "ch21_fb_099",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "A MODFLOW Visual és GMS _____ szoftverek.",
+    "correct_answer": "kereskedelmi",
+    "explanation": "A helyes válasz: kereskedelmi."
+  },
+  {
+    "id": "ch21_fb_100",
+    "type": "fill_blank",
+    "chapter": 21,
+    "question": "Az alföldi öntözési kitermelés 1990 után mintegy _____%-kal csökkent.",
+    "correct_answer": "60",
+    "explanation": "A helyes válasz: 60."
+  },
+  {
+    "id": "ch21_essay_098",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a felhőszámítástechnika szerepét a modern MODFLOW-munkafolyamatokban!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_099",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Hogyan hat az intézményi háttér a felszín alatti vízmodellek fenntarthatóságára?",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  },
+  {
+    "id": "ch21_essay_100",
+    "type": "essay",
+    "chapter": 21,
+    "question": "Ismertesse a teljesen integrált modellek (HydroGeoSphere, ParFlow) előnyeit és kihívásait!",
+    "explanation": "A válasznak a 21. fejezet releváns szakaszaira kell támaszkodnia."
+  }
+]

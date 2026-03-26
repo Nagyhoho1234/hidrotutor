@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "In the Edwards Aquifer of south-central Texas, how many distinct stratigraphic formations are collapsed into hydrogeologic units for groundwater modeling?",
+    "options": [
+      "Four",
+      "Six",
+      "Eight",
+      "Ten"
+    ],
+    "correct": "D",
+    "explanation": "Ten distinct stratigraphic formations identified by geologists are collapsed into just four hydrogeologic units for groundwater modeling purposes."
+  },
+  {
+    "type": "mcq",
+    "question": "How many hydrogeologic units are the ten Edwards Aquifer formations collapsed into?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Six"
+    ],
+    "correct": "C",
+    "explanation": "The ten formations are collapsed into four hydrogeologic units: the Person Formation, the Kainer Formation, an upper confining unit, and the Glen Rose confining unit."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the HorizonID attribute represent in the HydrogeologicUnit table?",
+    "options": [
+      "The horizontal extent of the unit",
+      "The unit's position in the vertical depositional sequence, numbered from bottom to top",
+      "The map horizon line number",
+      "The height above sea level"
+    ],
+    "correct": "B",
+    "explanation": "HorizonID is an integer defining the unit's position in the vertical stack, numbered from bottom to top, controlling the order in which algorithms process layers."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the lowest HorizonID typically assigned to in the vertical sequence?",
+    "options": [
+      "The shallowest unit",
+      "The thickest unit",
+      "The lowest (deepest) unit in the depositional sequence",
+      "The most permeable unit"
+    ],
+    "correct": "C",
+    "explanation": "The lowest unit in the depositional sequence receives the smallest HorizonID (typically 0 or 1)."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of GIS feature class stores GeoArea features?",
+    "options": [
+      "Point features",
+      "Polyline features",
+      "Polygon features",
+      "Multipatch features"
+    ],
+    "correct": "C",
+    "explanation": "GeoArea features are stored as polygon features representing the two-dimensional areal extent of hydrogeologic units."
+  },
+  {
+    "type": "mcq",
+    "question": "How does a GeoArea feature differ from a geological outcrop map (GeologyArea)?",
+    "options": [
+      "GeoArea shows only surface outcrops while GeologyArea shows subsurface extent",
+      "GeoArea represents the full horizontal extent including subsurface, while GeologyArea shows only surface outcrops",
+      "They are identical",
+      "GeoArea is always smaller than GeologyArea"
+    ],
+    "correct": "B",
+    "explanation": "GeoArea represents the full horizontal extent of a hydrogeologic unit including subsurface areas, while GeologyArea shows only where rock units are exposed at the surface."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of GIS feature class is used for GeoSection features?",
+    "options": [
+      "Polygon",
+      "Polyline",
+      "Point",
+      "Multipatch"
+    ],
+    "correct": "D",
+    "explanation": "GeoSection is a multipatch feature class that stores the three-dimensional panels of cross-sections."
+  },
+  {
+    "type": "mcq",
+    "question": "What does a single GeoSection feature represent?",
+    "options": [
+      "An entire cross-section through all units",
+      "One hydrogeologic unit along one section line",
+      "A borehole location",
+      "A grid cell"
+    ],
+    "correct": "B",
+    "explanation": "Each GeoSection feature represents one hydrogeologic unit along one section line. A complete cross-section consists of multiple GeoSection features."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the XS2D system used for?",
+    "options": [
+      "Creating 3D volume models",
+      "Projecting 3D cross-section data onto a 2D viewing plane",
+      "Calculating cross-sectional area",
+      "Measuring stream cross-sections"
+    ],
+    "correct": "B",
+    "explanation": "XS2D defines a local coordinate transformation for each section line, projecting 3D coordinates onto a 2D plane for display in reports and publications."
+  },
+  {
+    "type": "mcq",
+    "question": "In the XS2D coordinate system, what does the horizontal axis represent?",
+    "options": [
+      "Easting coordinate",
+      "Northing coordinate",
+      "Distance along the section line from its starting point",
+      "Depth below ground surface"
+    ],
+    "correct": "C",
+    "explanation": "The horizontal axis represents distance along the section line (measured from its starting point), with any curves in the path 'unfolded' into a straight axis."
+  },
+  {
+    "type": "mcq",
+    "question": "What attribute on the SectionLine feature stores the vertical exaggeration factor?",
+    "options": [
+      "VScale",
+      "ZFactor",
+      "VertExag2D",
+      "ExaggerationRatio"
+    ],
+    "correct": "C",
+    "explanation": "The vertical exaggeration value is stored as VertExag2D on the SectionLine feature."
+  },
+  {
+    "type": "mcq",
+    "question": "If a layer dips at 2 degrees in reality and vertical exaggeration of 25x is applied, approximately what angle does it appear to dip?",
+    "options": [
+      "10 degrees",
+      "25 degrees",
+      "41 degrees",
+      "50 degrees"
+    ],
+    "correct": "C",
+    "explanation": "With 25x exaggeration, a true 2-degree dip appears as approximately arctan(25 × tan(2°)) ≈ 41 degrees."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the formula for IDW interpolation?",
+    "options": [
+      "A simple average of all known values",
+      "A weighted average where weights increase with distance",
+      "A weighted average where weights decrease as distance increases, controlled by power parameter p",
+      "A polynomial fit through all data points"
+    ],
+    "correct": "C",
+    "explanation": "IDW estimates the value at an unknown point as a weighted average where weights wi = 1/di^p, decreasing with distance."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical value of the power parameter p in IDW interpolation?",
+    "options": [
+      "0.5",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": "C",
+    "explanation": "The power parameter p is typically 2, which provides a reasonable balance between local and regional influence."
+  },
+  {
+    "type": "mcq",
+    "question": "Which interpolation method provides an estimate of interpolation uncertainty at each point?",
+    "options": [
+      "IDW",
+      "Spline",
+      "Natural Neighbor",
+      "Kriging"
+    ],
+    "correct": "D",
+    "explanation": "Kriging not only interpolates but also provides an estimate of the interpolation uncertainty (kriging variance) at each point."
+  },
+  {
+    "type": "mcq",
+    "question": "What mathematical function must be computed before kriging interpolation can be performed?",
+    "options": [
+      "A polynomial trend",
+      "A variogram",
+      "A Fourier transform",
+      "A correlation matrix"
+    ],
+    "correct": "B",
+    "explanation": "Kriging begins by computing a variogram, a function describing how variance between pairs of points changes with distance."
+  },
+  {
+    "type": "mcq",
+    "question": "Which interpolation method uses Voronoi tessellation to determine influence regions?",
+    "options": [
+      "IDW",
+      "Kriging",
+      "Spline",
+      "Natural Neighbor"
+    ],
+    "correct": "D",
+    "explanation": "Natural Neighbor interpolation uses Voronoi tessellation to determine influence regions and assigns weights based on area overlap."
+  },
+  {
+    "type": "mcq",
+    "question": "What common artifact does IDW interpolation tend to create around data points?",
+    "options": [
+      "Flat surfaces",
+      "Linear streaks",
+      "Bull's-eye patterns",
+      "Random noise"
+    ],
+    "correct": "C",
+    "explanation": "IDW tends to create bull's-eye patterns around data points due to the distance-based weighting scheme."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a GeoRasters raster catalog?",
+    "options": [
+      "A single raster dataset",
+      "A collection of raster datasets stored together with descriptive attributes",
+      "A folder of TIFF files",
+      "A database of satellite images"
+    ],
+    "correct": "B",
+    "explanation": "A raster catalog is a collection of raster datasets stored together with attributes describing what each represents, which unit it belongs to, and its place in the sequence."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the formula for computing the thickness of a hydrogeologic unit from raster surfaces?",
+    "options": [
+      "h = z_bot - z_top",
+      "h = z_top + z_bot",
+      "h = z_top - z_bot",
+      "h = z_top × z_bot"
+    ],
+    "correct": "C",
+    "explanation": "The thickness at each cell is h(i,j) = z_top(i,j) - z_bot(i,j), the difference between top and bottom elevations."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked volume calculation example, what is the estimated aquifer volume for the 20×15 km study area?",
+    "options": [
+      "4.26 km³",
+      "8.52 km³",
+      "12.78 km³",
+      "17.04 km³"
+    ],
+    "correct": "B",
+    "explanation": "The volume is 28.4 m × 50 m × 50 m × 120,000 cells = 8,520,000,000 m³ ≈ 8.52 km³."
+  },
+  {
+    "type": "mcq",
+    "question": "If an aquifer has a volume of 8.52 km³ and effective porosity of 0.25, what is the total groundwater storage capacity?",
+    "options": [
+      "0.85 km³",
+      "2.13 km³",
+      "4.26 km³",
+      "8.52 km³"
+    ],
+    "correct": "B",
+    "explanation": "Storage capacity = volume × porosity = 8.52 × 0.25 = 2.13 km³ (about 2,130 million cubic meters)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the GemPy modeling approach based on?",
+    "options": [
+      "Direct surface interpolation and stacking",
+      "Finite element mesh construction",
+      "A potential-field approach where geological structure is modeled as a scalar field",
+      "Statistical regression"
+    ],
+    "correct": "C",
+    "explanation": "GemPy uses a potential-field approach where the geological structure is modeled as a scalar field whose iso-surfaces define formation boundaries."
+  },
+  {
+    "type": "mcq",
+    "question": "How deep can the Pannonian Basin reach in its deepest sub-basins?",
+    "options": [
+      "2,000 meters",
+      "4,000 meters",
+      "7,000 meters or more",
+      "10,000 meters"
+    ],
+    "correct": "C",
+    "explanation": "The Pannonian Basin reaches depths of 7,000 meters or more in its deepest sub-basins."
+  },
+  {
+    "type": "mcq",
+    "question": "How did the Pannonian Basin form?",
+    "options": [
+      "By glacial erosion during the Ice Ages",
+      "As a back-arc extensional basin during the Miocene",
+      "By meteorite impact",
+      "By volcanic caldera collapse"
+    ],
+    "correct": "B",
+    "explanation": "The basin formed as a back-arc extensional basin during the Miocene, caused by the retreat of the subducting slab beneath the Carpathian arc."
+  },
+  {
+    "type": "mcq",
+    "question": "What was Lake Pannon?",
+    "options": [
+      "A modern lake in Hungary",
+      "An ancient lake that occupied the Pannonian Basin from roughly 11.6 to 4 million years ago",
+      "A glacial lake formed during the last Ice Age",
+      "A reservoir built in the 19th century"
+    ],
+    "correct": "B",
+    "explanation": "Lake Pannon was an ancient lake that occupied the Pannonian Basin from roughly 11.6 to 4 million years ago."
+  },
+  {
+    "type": "mcq",
+    "question": "The Endrod Formation equivalent in the Pannonian sequence represents what depositional environment?",
+    "options": [
+      "Deltaic/shelf sands",
+      "Alluvial plain deposits",
+      "Deep-water marls and turbidites deposited in the deep lake basin",
+      "Wind-blown sand dunes"
+    ],
+    "correct": "C",
+    "explanation": "The Endrod Formation equivalent represents deep-water marls and turbidites deposited in the deep lake basin, with low permeability."
+  },
+  {
+    "type": "mcq",
+    "question": "The Ujfalu Formation equivalent in the Pannonian sequence represents what type of deposits?",
+    "options": [
+      "Deep-water marls",
+      "Shelf-margin slope deposits",
+      "Delta and shelf deposits (principal thermal aquifer units)",
+      "Continental alluvial deposits"
+    ],
+    "correct": "C",
+    "explanation": "The Ujfalu Formation equivalent represents delta and shelf deposits with thick interbedded sands and clays, forming the principal thermal aquifer units of the Great Plain."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Great Plain hydrogeologic framework, what is the typical depth range for the Upper Pannonian Thermal Aquifer System?",
+    "options": [
+      "0-100 m",
+      "100-500 m",
+      "500-2,000 m",
+      "2,000-4,000 m"
+    ],
+    "correct": "C",
+    "explanation": "The Upper Pannonian Thermal Aquifer System (THERM_AQ) typically occurs at depths of 500-2,000 m."
+  },
+  {
+    "type": "mcq",
+    "question": "What temperature range is associated with the Quaternary Shallow Aquifer in the Great Plain?",
+    "options": [
+      "10-15°C",
+      "30-50°C",
+      "50-80°C",
+      "80-120°C"
+    ],
+    "correct": "A",
+    "explanation": "The Quaternary Shallow Aquifer has a temperature range of 10-15°C, typical of shallow groundwater."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's geothermal gradient averages about how many millikelvins per meter?",
+    "options": [
+      "20 mK/m",
+      "30 mK/m",
+      "45 mK/m",
+      "60 mK/m"
+    ],
+    "correct": "C",
+    "explanation": "Hungary's geothermal gradient averages about 45 mK/m, roughly 1.5 times the global continental average of 30 mK/m."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical hydraulic conductivity range for the Upper Pannonian thermal aquifer sands?",
+    "options": [
+      "10⁻⁷ to 10⁻⁶ m/s",
+      "10⁻⁵ to 10⁻⁴ m/s",
+      "10⁻³ to 10⁻² m/s",
+      "10⁻¹ to 1 m/s"
+    ],
+    "correct": "B",
+    "explanation": "The Upper Pannonian deltaic sands have hydraulic conductivity typically in the range of 10⁻⁵ to 10⁻⁴ m/s."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hajdu-Bihar County kriging example, what was the cross-validation RMSE?",
+    "options": [
+      "2.1 meters",
+      "5.6 meters",
+      "8.3 meters",
+      "15.7 meters"
+    ],
+    "correct": "C",
+    "explanation": "The cross-validation RMSE was 8.3 meters, considered reasonable given the 270-meter total elevation range."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hajdu-Bihar County kriging example, what was the variogram range?",
+    "options": [
+      "3 km",
+      "8 km",
+      "12 km",
+      "20 km"
+    ],
+    "correct": "C",
+    "explanation": "The variogram range was approximately 12 km, the distance beyond which data points are essentially uncorrelated."
+  },
+  {
+    "type": "mcq",
+    "question": "What variogram model was fitted in the Hajdu-Bihar County example?",
+    "options": [
+      "Gaussian",
+      "Exponential",
+      "Spherical",
+      "Linear"
+    ],
+    "correct": "C",
+    "explanation": "A spherical variogram model was fitted to the experimental variogram parameters."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Debrecen Trough cross-section, to what depth does the basement surface drop in the center?",
+    "options": [
+      "About -1,500 m a.s.l.",
+      "About -2,500 m a.s.l.",
+      "About -4,200 m a.s.l.",
+      "About -6,000 m a.s.l."
+    ],
+    "correct": "C",
+    "explanation": "The basement drops from about -1,500 m on the NW margin to approximately -4,200 m a.s.l. in the center of the Debrecen Trough."
+  },
+  {
+    "type": "mcq",
+    "question": "What vertical exaggeration was used in the Hajdu-Bihar County cross-section example?",
+    "options": [
+      "5x",
+      "10x",
+      "20x",
+      "50x"
+    ],
+    "correct": "C",
+    "explanation": "The cross-section used a VertExag2D of 20x to make the geological layers visible."
+  },
+  {
+    "type": "mcq",
+    "question": "How many boreholes were used in the Hajdu-Bihar County kriging example?",
+    "options": [
+      "50",
+      "100",
+      "200",
+      "500"
+    ],
+    "correct": "C",
+    "explanation": "Formation picks were extracted from 200 boreholes in the 40 km by 30 km study area."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the anisotropy ratio in the Hajdu-Bihar County variogram?",
+    "options": [
+      "1.0",
+      "1.2",
+      "1.5",
+      "2.0"
+    ],
+    "correct": "C",
+    "explanation": "The anisotropy ratio was 1.5, with the major axis oriented at N315 (NW-SE)."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the XS2D_BoreLine Offset attribute record?",
+    "options": [
+      "The vertical offset of the borehole",
+      "The horizontal distance from the borehole to the section line",
+      "The measurement error",
+      "The casing offset"
+    ],
+    "correct": "B",
+    "explanation": "The Offset attribute records the distance from the borehole to the nearest point on the section line, allowing assessment of projection reliability."
+  },
+  {
+    "type": "mcq",
+    "question": "What is XS2D_Panel?",
+    "options": [
+      "A 3D multipatch feature",
+      "A polygon feature class representing hydrogeologic units as 2D panels on the cross-section",
+      "A raster dataset",
+      "A table of panel measurements"
+    ],
+    "correct": "B",
+    "explanation": "XS2D_Panel is a polygon feature class representing hydrogeologic units as two-dimensional panels on the cross-section for 2D display."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the XS2D_PanelDivider feature represent?",
+    "options": [
+      "Boundaries between hydrogeologic units",
+      "Vertical lines at locations where the section line changes direction",
+      "The bottom of the cross-section",
+      "Fault locations"
+    ],
+    "correct": "B",
+    "explanation": "XS2D_PanelDivider shows vertical lines where the section line bends, helping orient the viewer."
+  },
+  {
+    "type": "mcq",
+    "question": "Which interpolation method cannot extrapolate beyond the convex hull of data points?",
+    "options": [
+      "IDW",
+      "Kriging",
+      "Spline",
+      "Natural Neighbor"
+    ],
+    "correct": "D",
+    "explanation": "Natural Neighbor interpolation cannot extrapolate beyond the convex hull of data points, being limited to the area enclosed by the outermost data points."
+  },
+  {
+    "type": "mcq",
+    "question": "What is fault-bounded interpolation?",
+    "options": [
+      "Interpolation that ignores faults",
+      "Dividing the study area into structural blocks separated by faults and interpolating independently within each block",
+      "Interpolation along fault traces",
+      "A method that only works near fault zones"
+    ],
+    "correct": "B",
+    "explanation": "Fault-bounded interpolation divides the area into blocks separated by known faults, with interpolation performed independently within each block."
+  },
+  {
+    "type": "mcq",
+    "question": "According to the chapter, what rough guideline should be followed for raster cell size relative to data density?",
+    "options": [
+      "Cell size should equal the average borehole spacing",
+      "Cell size should not be smaller than about one-quarter of the average distance between data points",
+      "Cell size should be at least twice the borehole spacing",
+      "Cell size should be exactly 100 meters"
+    ],
+    "correct": "B",
+    "explanation": "The cell size should not be smaller than about one-quarter of the average distance between data points to avoid false precision."
+  },
+  {
+    "type": "mcq",
+    "question": "What is an unconformity in the geological context?",
+    "options": [
+      "A continuous conformable contact between formations",
+      "A surface of erosion or non-deposition where younger rocks lie on older ones with a time gap",
+      "A vertical fault",
+      "A horizontal fold"
+    ],
+    "correct": "B",
+    "explanation": "An unconformity is a surface of erosion or non-deposition where younger rocks lie directly on older ones with an intervening time gap."
+  },
+  {
+    "type": "mcq",
+    "question": "How many hydrogeologic units are typically defined for the Great Plain subsurface?",
+    "options": [
+      "2-3",
+      "4-5",
+      "7-8",
+      "10-12"
+    ],
+    "correct": "B",
+    "explanation": "The subsurface of the Great Plain is typically divided into four to five hydrogeologic units for regional management."
+  },
+  {
+    "type": "mcq",
+    "question": "Which formation in the Pannonian sequence represents the alluvial plain deposits after the lake phase?",
+    "options": [
+      "Endrod Formation",
+      "Algyo Formation",
+      "Ujfalu Formation",
+      "Zagyva Formation"
+    ],
+    "correct": "D",
+    "explanation": "The Zagyva Formation equivalent represents continental alluvial plain deposits deposited after the lake phase."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Algyo Formation equivalent in the Pannonian sequence?",
+    "options": [
+      "Deep-water marls",
+      "Shelf-margin and slope deposits with variable permeability",
+      "Delta front sands",
+      "Quaternary alluvium"
+    ],
+    "correct": "B",
+    "explanation": "The Algyo Formation equivalent represents shelf-margin and slope deposits with interbedded sands and clays of variable permeability."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the SectionLine feature class?",
+    "options": [
+      "A polygon defining the cross-section area",
+      "A polyline defining the trace of the cross-section on a map",
+      "A point marking the start of the section",
+      "A raster representing the section view"
+    ],
+    "correct": "B",
+    "explanation": "SectionLine is a polyline feature class that defines the trace of the cross-section on a map."
+  },
+  {
+    "type": "mcq",
+    "question": "Which software is described as a Python-based open-source library for implicit 3D geological modeling?",
+    "options": [
+      "Leapfrog",
+      "GOCAD",
+      "GemPy",
+      "PyVista"
+    ],
+    "correct": "C",
+    "explanation": "GemPy is a Python-based open-source library for implicit three-dimensional geological modeling using a potential-field approach."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the AquiferID attribute in the HydrogeologicUnit table do?",
+    "options": [
+      "Uniquely identifies each unit",
+      "Groups hydrogeologic units that belong to the same aquifer or aquifer system",
+      "Links to external databases",
+      "Defines the vertical position"
+    ],
+    "correct": "B",
+    "explanation": "AquiferID groups hydrogeologic units that belong to the same aquifer or aquifer system."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the SName attribute in SectionLine and GeoSection features?",
+    "options": [
+      "The section number",
+      "A human-readable name for the cross-section (e.g., 'A-A'')",
+      "The software name",
+      "The scale name"
+    ],
+    "correct": "B",
+    "explanation": "SName is a human-readable name such as 'A-A'' or 'Section 1'."
+  },
+  {
+    "type": "mcq",
+    "question": "What does RESQML stand for in the context of subsurface data standards?",
+    "options": [
+      "Reservoir Quality Markup Language",
+      "Resource Estimation Standard Query ML",
+      "Reservoir Simulation Quality Modeling Language",
+      "None of the above — it is a reservoir modeling standard"
+    ],
+    "correct": "D",
+    "explanation": "RESQML is mentioned as a standard for reservoir modeling alongside GeoSciML for geological data."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of approach does GemPy use instead of independent surface interpolation?",
+    "options": [
+      "Deterministic layer-cake modeling",
+      "Potential-field approach with scalar field iso-surfaces",
+      "Finite element mesh generation",
+      "Statistical regression surfaces"
+    ],
+    "correct": "B",
+    "explanation": "GemPy models the geological structure as a scalar field whose iso-surfaces define formation boundaries, naturally handling complex geometries."
+  },
+  {
+    "type": "mcq",
+    "question": "How many deep boreholes were connected in the Debrecen Trough cross-section?",
+    "options": [
+      "5",
+      "8",
+      "12",
+      "20"
+    ],
+    "correct": "C",
+    "explanation": "The SectionLine was defined connecting 12 deep boreholes with reliable stratigraphic information."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the thickness range of the Upper Pannonian thermal aquifer across the Debrecen Trough cross-section?",
+    "options": [
+      "100-300 m",
+      "400-600 m",
+      "600-900 m",
+      "1,000-1,500 m"
+    ],
+    "correct": "C",
+    "explanation": "The thermal aquifer system is remarkably consistent in thickness at 600-900 meters across the section."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary challenge of lateral correlation in the Great Plain?",
+    "options": [
+      "Lack of any borehole data",
+      "The deltaic depositional environment produced laterally discontinuous sand bodies",
+      "All formations are perfectly horizontal",
+      "The area is too small"
+    ],
+    "correct": "B",
+    "explanation": "The deltaic environment produced sand bodies that are laterally discontinuous at the bed scale, though the overall sand-rich character is regionally consistent."
+  },
+  {
+    "type": "mcq",
+    "question": "In the kriging example, what was the nugget effect?",
+    "options": [
+      "About 25 m²",
+      "About 100 m²",
+      "About 500 m²",
+      "About 1,000 m²"
+    ],
+    "correct": "B",
+    "explanation": "The nugget effect was approximately 100 m², reflecting measurement uncertainty and very short-range variability."
+  },
+  {
+    "type": "mcq",
+    "question": "In the kriging example, what was the sill?",
+    "options": [
+      "About 500 m²",
+      "About 1,500 m²",
+      "About 4,500 m²",
+      "About 10,000 m²"
+    ],
+    "correct": "C",
+    "explanation": "The sill was approximately 4,500 m², representing the total variance of the dataset."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GRACE satellite data help constrain in the Pannonian Basin context?",
+    "options": [
+      "Aquifer lithology",
+      "Basin-scale groundwater storage changes",
+      "Thermal gradients",
+      "Borehole locations"
+    ],
+    "correct": "B",
+    "explanation": "GRACE-derived terrestrial water storage anomalies provide basin-scale estimates of groundwater storage changes for comparison with framework-based calculations."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the G3P product from GFZ Potsdam?",
+    "options": [
+      "A geological mapping tool",
+      "Global Gravity-based Groundwater Product",
+      "General Geophysical Processing Platform",
+      "German Groundwater Prediction Portal"
+    ],
+    "correct": "B",
+    "explanation": "G3P (Global Gravity-based Groundwater Product) at GFZ Potsdam processes GRACE data to estimate groundwater storage changes."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked vertical exaggeration example, a confining clay layer with true 1.5° dip appears at what angle with Ve=30?",
+    "options": [
+      "15.2°",
+      "25.8°",
+      "38.2°",
+      "45.0°"
+    ],
+    "correct": "C",
+    "explanation": "Apparent dip = arctan(30 × tan(1.5°)) = arctan(0.786) ≈ 38.2°."
+  },
+  {
+    "type": "mcq",
+    "question": "The apparent thickness of a 15-meter layer with Ve=30 is how many display units?",
+    "options": [
+      "150",
+      "300",
+      "450",
+      "600"
+    ],
+    "correct": "C",
+    "explanation": "Apparent thickness = 15 × 30 = 450 display units."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship between SectionLine and GeoSection features?",
+    "options": [
+      "One-to-one",
+      "One-to-many",
+      "Many-to-one",
+      "Many-to-many"
+    ],
+    "correct": "B",
+    "explanation": "The relationship is one-to-many: one section line has many GeoSection panels, each representing a different hydrogeologic unit."
+  },
+  {
+    "type": "mcq",
+    "question": "Which attribute links a GeoSection feature to its parent SectionLine?",
+    "options": [
+      "HydroID",
+      "HGUID",
+      "SectionID",
+      "LineID"
+    ],
+    "correct": "C",
+    "explanation": "The SectionID attribute of GeoSection features equals the HydroID of the associated SectionLine feature."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Subsurface library in Python?",
+    "options": [
+      "A MODFLOW interface",
+      "A data structure library for wells, cross-sections, surfaces, and volumes",
+      "A plotting library",
+      "A database connector"
+    ],
+    "correct": "B",
+    "explanation": "The Subsurface library provides data structures specifically designed for wells, cross-sections, surfaces, and volumes, parallel to Arc Hydro GW concepts."
+  },
+  {
+    "type": "mcq",
+    "question": "Which two formations are grouped into broader hydrogeologic units in the Edwards Aquifer?",
+    "options": [
+      "Endrod and Algyo",
+      "Person and Kainer",
+      "Georgetown and Glen Rose",
+      "Edwards and Trinity"
+    ],
+    "correct": "B",
+    "explanation": "Multiple formations are grouped into the Person and Kainer Formation hydrogeologic units."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the confining unit below the Edwards Aquifer?",
+    "options": [
+      "The Georgetown Formation",
+      "The Balcones Shale",
+      "The Upper Glen Rose limestone",
+      "The Del Rio Clay"
+    ],
+    "correct": "C",
+    "explanation": "The Upper Glen Rose limestone acts as a confining unit below the Edwards Aquifer."
+  },
+  {
+    "type": "mcq",
+    "question": "How many steps are in the complete hydrogeologic framework implementation workflow?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "12"
+    ],
+    "correct": "C",
+    "explanation": "The workflow consists of 9 steps: define conceptual model, create geodatabase, delineate GeoArea, import borehole data, create cross-sections, interpolate surfaces, construct volumes, create XS2D views, and produce deliverables."
+  },
+  {
+    "type": "mcq",
+    "question": "What type of geological challenge does the Pannonian Basin basement surface present for interpolation?",
+    "options": [
+      "It is perfectly flat",
+      "It shows dramatic relief with deep grabens separated by horst blocks",
+      "It is entirely covered by water",
+      "It has no borehole control"
+    ],
+    "correct": "B",
+    "explanation": "The basement surface shows dramatic relief: deep grabens separated by horst blocks, requiring fault-bounded or structural trend surface interpolation."
+  },
+  {
+    "type": "mcq",
+    "question": "What remote sensing method can detect land surface subsidence caused by groundwater extraction?",
+    "options": [
+      "LIDAR",
+      "GRACE gravimetry",
+      "InSAR (Interferometric Synthetic Aperture Radar)",
+      "Multispectral imaging"
+    ],
+    "correct": "C",
+    "explanation": "InSAR can detect land surface subsidence caused by groundwater extraction, providing indirect constraints on confining unit properties."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the maximum standard deviation in the kriging variance map for the Hajdu-Bihar example?",
+    "options": [
+      "About 5 meters",
+      "About 15 meters",
+      "About 25 meters",
+      "About 50 meters"
+    ],
+    "correct": "C",
+    "explanation": "The maximum standard deviation was about 25 meters in the most data-sparse areas."
+  },
+  {
+    "type": "mcq",
+    "question": "Which QGIS plugin enables 3D visualization?",
+    "options": [
+      "QGIS2threejs",
+      "QGIS3DModel",
+      "QGISViewer3D",
+      "Q3DScene"
+    ],
+    "correct": "A",
+    "explanation": "The QGIS2threejs plugin enables three-dimensional visualization in QGIS."
+  },
+  {
+    "type": "mcq",
+    "question": "The thickness of the Lower Pannonian confining complex in the center of the Debrecen Trough exceeds what value?",
+    "options": [
+      "500 meters",
+      "800 meters",
+      "1,000 meters",
+      "1,500 meters"
+    ],
+    "correct": "D",
+    "explanation": "The Lower Pannonian confining complex thickens into the trough center, reaching over 1,500 meters thickness."
+  },
+  {
+    "type": "mcq",
+    "question": "In the GeoRasters catalog for the Great Plain, what does the therm_aq_temp raster represent?",
+    "options": [
+      "Thickness of the thermal aquifer",
+      "Mean temperature of the thermal aquifer",
+      "Annual temperature variation",
+      "Surface temperature"
+    ],
+    "correct": "B",
+    "explanation": "The therm_aq_temp raster stores the mean temperature of the thermal aquifer in degrees Celsius."
+  },
+  {
+    "type": "mcq",
+    "question": "Machine learning classifiers for lithological classification have achieved what accuracy range in published studies?",
+    "options": [
+      "50-65%",
+      "70-80%",
+      "85-95%",
+      "99-100%"
+    ],
+    "correct": "C",
+    "explanation": "Random forest, SVM, and neural network classifiers have achieved classification accuracies of 85-95% on test datasets."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical orientation of the kriging anisotropy major axis in the Great Plain due to shelf progradation?",
+    "options": [
+      "North-South",
+      "East-West",
+      "NW-SE",
+      "NE-SW"
+    ],
+    "correct": "C",
+    "explanation": "The anisotropy is oriented NW-SE, along the direction of shelf progradation, with a smoother surface in that direction."
+  },
+  {
+    "type": "mcq",
+    "question": "What is a characteristic of artesian conditions in the Great Plain thermal aquifer?",
+    "options": [
+      "The water table is always below the surface",
+      "The piezometric surface stands above the ground surface so wells flow naturally",
+      "Pumping is always required",
+      "Water pressure is zero"
+    ],
+    "correct": "B",
+    "explanation": "Artesian conditions are common: the piezometric surface of the thermal aquifer often stands above the ground surface, so wells flow naturally without pumping."
+  },
+  {
+    "type": "mcq",
+    "question": "The Quaternary shallow aquifer in the Hortobagy area is approximately how thick?",
+    "options": [
+      "Less than 50 m",
+      "About 80 m",
+      "About 150 m",
+      "About 300 m"
+    ],
+    "correct": "C",
+    "explanation": "The Quaternary shallow aquifer is about 150 meters thick in the Hortobagy area and thins to less than 50 meters near the Romanian border."
+  },
+  {
+    "type": "mcq",
+    "question": "What data standard is used by EGDI for serving geological data?",
+    "options": [
+      "GeoJSON",
+      "KML",
+      "GeoSciML",
+      "Shapefile"
+    ],
+    "correct": "C",
+    "explanation": "The geological data served through EGDI follow the GeoSciML standard, enabling interoperability between national datasets."
+  },
+  {
+    "type": "mcq",
+    "question": "How many rasters might a simplified catalog contain for a framework with four hydrogeologic units?",
+    "options": [
+      "Three",
+      "Four",
+      "Five",
+      "Eight"
+    ],
+    "correct": "C",
+    "explanation": "Because the bottom of each unit is the top of the unit below it, five rasters suffice: four formation tops plus one basal surface."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship between GeoArea features and HGUID?",
+    "options": [
+      "Each GeoArea has a unique HGUID",
+      "Multiple GeoArea polygons can share the same HGUID",
+      "HGUID is not used in GeoArea",
+      "Each HGUID maps to exactly one polygon"
+    ],
+    "correct": "B",
+    "explanation": "A single hydrogeologic unit may require multiple GeoArea polygons, all sharing the same HGUID via the many-to-one relationship."
+  },
+  {
+    "type": "mcq",
+    "question": "The Pannonian Basin extends into parts of how many countries besides Hungary?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": "C",
+    "explanation": "The basin extends into parts of Slovakia, Austria, Romania, Serbia, Croatia, and Ukraine -- six countries besides Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "Airborne electromagnetic surveys like SkyTEM can image the subsurface to what depth?",
+    "options": [
+      "50-100 meters",
+      "200-300 meters",
+      "500-1000 meters",
+      "Over 2000 meters"
+    ],
+    "correct": "B",
+    "explanation": "Airborne electromagnetic surveys can image the subsurface to depths of 200-300 meters."
+  },
+  {
+    "type": "mcq",
+    "question": "When did Lake Pannon occupy the Pannonian Basin?",
+    "options": [
+      "50-25 million years ago",
+      "25-15 million years ago",
+      "11.6-4 million years ago",
+      "4-1 million years ago"
+    ],
+    "correct": "C",
+    "explanation": "Lake Pannon occupied the basin from roughly 11.6 to 4 million years ago."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the net sand thickness typically penetrated by thermal water production wells in the Great Plain?",
+    "options": [
+      "5-20 meters",
+      "50-200 meters",
+      "300-500 meters",
+      "Over 500 meters"
+    ],
+    "correct": "B",
+    "explanation": "Production wells typically penetrate 50-200 meters of net sand within the thermal aquifer system."
+  },
+  {
+    "type": "mcq",
+    "question": "In the four-layer basin example, what HorizonID is assigned to the Upper Limestone Aquifer?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": "D",
+    "explanation": "The Upper Limestone Aquifer receives HorizonID = 3 as the highest unit in the depositional sequence."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Description attribute in the HydrogeologicUnit table contain?",
+    "options": [
+      "Only the formation name",
+      "A numeric code",
+      "A free-text field for detailed descriptions of lithology, hydraulic properties, and significance",
+      "The geographic coordinates"
+    ],
+    "correct": "C",
+    "explanation": "The Description attribute is a free-text field for detailed descriptions of the unit's lithology, hydraulic properties, and significance."
+  },
+  {
+    "type": "mcq",
+    "question": "What GIS software ecosystem is the Arc Hydro Groundwater data model implemented within?",
+    "options": [
+      "QGIS",
+      "MapInfo",
+      "Esri ArcGIS",
+      "Google Earth"
+    ],
+    "correct": "C",
+    "explanation": "The Arc Hydro Groundwater data model is implemented within the Esri ArcGIS ecosystem."
+  },
+  {
+    "type": "true_false",
+    "question": "The hydrogeologic framework is always more detailed than the geological framework.",
+    "correct": false,
+    "explanation": "The hydrogeologic framework is a simplification of the geological framework, grouping and reclassifying rock units according to hydraulic properties rather than depositional history."
+  },
+  {
+    "type": "true_false",
+    "question": "The HorizonID in the HydrogeologicUnit table is numbered from bottom to top.",
+    "correct": true,
+    "explanation": "The lowest unit receives the smallest HorizonID and each successively higher unit receives a larger value."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoArea features represent only the outcrop extent of a hydrogeologic unit at the surface.",
+    "correct": false,
+    "explanation": "GeoArea represents the full horizontal extent including areas where the unit exists in the subsurface beneath other formations."
+  },
+  {
+    "type": "true_false",
+    "question": "A single hydrogeologic unit can be represented by multiple GeoArea polygons.",
+    "correct": true,
+    "explanation": "This is necessary when a unit is spatially discontinuous. All polygons share the same HGUID and HGUCode."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoSection features are stored as polygon feature classes.",
+    "correct": false,
+    "explanation": "GeoSection is a multipatch feature class that stores three-dimensional panels of cross-sections."
+  },
+  {
+    "type": "true_false",
+    "question": "The XS2D system unfolds a curved section line into a straight horizontal axis for 2D display.",
+    "correct": true,
+    "explanation": "The curved path is unfolded so that the total distance along it maps to a straight horizontal axis."
+  },
+  {
+    "type": "true_false",
+    "question": "Vertical exaggeration distorts the apparent dip angles of geological layers.",
+    "correct": true,
+    "explanation": "A true 2° dip appears as approximately 41° with 25x exaggeration, dramatically overstating the actual angle."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW interpolation can provide uncertainty estimates at each prediction point.",
+    "correct": false,
+    "explanation": "IDW does not provide uncertainty estimates. Kriging is the method that provides prediction variance at each point."
+  },
+  {
+    "type": "true_false",
+    "question": "Kriging can incorporate directional anisotropy in the interpolation.",
+    "correct": true,
+    "explanation": "Kriging can incorporate directional anisotropy, important when formations dip preferentially in one direction."
+  },
+  {
+    "type": "true_false",
+    "question": "Natural Neighbor interpolation can extrapolate beyond the data extent.",
+    "correct": false,
+    "explanation": "Natural Neighbor cannot extrapolate beyond the convex hull of the data points."
+  },
+  {
+    "type": "true_false",
+    "question": "The volume of a hydrogeologic unit can be computed by summing cell-by-cell thickness differences multiplied by cell area.",
+    "correct": true,
+    "explanation": "V = Σ h(i,j) × Δx × Δy where h is the top-bottom difference at each cell."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian Basin formed during the Paleozoic era.",
+    "correct": false,
+    "explanation": "The basin formed during the Miocene as a back-arc extensional basin."
+  },
+  {
+    "type": "true_false",
+    "question": "Lake Pannon occupied the Pannonian Basin for approximately 7.6 million years.",
+    "correct": true,
+    "explanation": "Lake Pannon existed from roughly 11.6 to 4 million years ago, a span of about 7.6 million years."
+  },
+  {
+    "type": "true_false",
+    "question": "The Upper Pannonian thermal aquifer system has a uniform sand-to-clay ratio across the Great Plain.",
+    "correct": false,
+    "explanation": "The sand-to-clay ratio varies: more sand-dominated where the shelf prograded earlier (NW) and more clay-rich where deep-water conditions persisted longer (SE)."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's geothermal gradient of 45 mK/m is about 1.5 times the global continental average.",
+    "correct": true,
+    "explanation": "The global average is 30 mK/m, and Hungary's is about 45 mK/m, which is 1.5 times the global value."
+  },
+  {
+    "type": "true_false",
+    "question": "Artesian conditions mean pumping is required to bring water to the surface.",
+    "correct": false,
+    "explanation": "Artesian conditions mean the piezometric surface stands above the ground surface, so wells flow naturally without pumping."
+  },
+  {
+    "type": "true_false",
+    "question": "The HydrogeologicUnit table contains spatial geometry (polygon shapes).",
+    "correct": false,
+    "explanation": "The HydrogeologicUnit table is not a spatial dataset. It contains no geometry but serves as the master reference to which all spatial datasets point."
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoRasters catalog can store both structural surfaces (formation tops) and property surfaces (hydraulic conductivity, temperature).",
+    "correct": true,
+    "explanation": "The dual use of the GeoRasters catalog for both geometry and properties keeps all spatial information organized in a single queryable collection."
+  },
+  {
+    "type": "true_false",
+    "question": "The cross-validation RMSE is calculated by removing each point in turn and comparing predicted vs. known values.",
+    "correct": true,
+    "explanation": "Cross-validation removes each point, interpolates from remaining points, and compares predictions to known values; RMSE summarizes the errors."
+  },
+  {
+    "type": "true_false",
+    "question": "Simple kriging can be used for the Great Plain basement surface without accounting for faults.",
+    "correct": false,
+    "explanation": "The basement surface shows dramatic faulted relief and requires fault-bounded interpolation or structural trend surface approaches."
+  },
+  {
+    "type": "true_false",
+    "question": "Framework construction is typically a linear, one-pass process.",
+    "correct": false,
+    "explanation": "Framework construction is rarely linear; each step reveals issues requiring revision of earlier steps. It is an iterative process."
+  },
+  {
+    "type": "true_false",
+    "question": "Machine learning can completely replace geological judgment in lithological classification.",
+    "correct": false,
+    "explanation": "ML may misclassify precisely at formation boundaries, which are the most important intervals. A hybrid approach using ML for bulk classification and geologists for uncertain cases is recommended."
+  },
+  {
+    "type": "true_false",
+    "question": "Implicit modeling approaches like GemPy can generate multiple equally plausible realizations of a framework.",
+    "correct": true,
+    "explanation": "Implicit modeling treats the framework as a probability problem and can generate multiple realizations honoring the data but differing between boreholes."
+  },
+  {
+    "type": "true_false",
+    "question": "A regularized spline produces a surface that follows abrupt changes more closely than a tension spline.",
+    "correct": false,
+    "explanation": "Regularized splines produce smoother surfaces; tension splines produce surfaces that more closely follow abrupt changes."
+  },
+  {
+    "type": "true_false",
+    "question": "The formation top elevation range in the Hajdu-Bihar County example spans 270 meters.",
+    "correct": true,
+    "explanation": "Elevations ranged from -450 m to -180 m a.s.l., a span of 270 meters."
+  },
+  {
+    "type": "true_false",
+    "question": "Cross-sections can serve both as framework products and as quality-control tools.",
+    "correct": true,
+    "explanation": "Viewing stratigraphy in cross-section often reveals data errors, misclassifications, or areas where the conceptual model needs revision."
+  },
+  {
+    "type": "true_false",
+    "question": "The concepts in the Arc Hydro Groundwater data model can only be implemented in ArcGIS software.",
+    "correct": false,
+    "explanation": "The data model concepts (linked representations, HorizonIDs, HGUIDs) are independent of the software platform and can be implemented in QGIS with GemPy or other tools."
+  },
+  {
+    "type": "true_false",
+    "question": "The confining layers between the thermal and shallow aquifer systems in the Great Plain are typically several hundred meters thick.",
+    "correct": false,
+    "explanation": "These confining layers are often only 20-50 meters thick, which is why vertical exaggeration is needed to make them visible in cross-sections."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE and GRACE-FO satellite missions can directly image aquifer boundaries.",
+    "correct": false,
+    "explanation": "GRACE detects large-scale density contrasts and gravity anomalies, providing indirect constraints on storage changes, not direct imaging of aquifer boundaries."
+  },
+  {
+    "type": "true_false",
+    "question": "In the XS2D system, boreholes not exactly on the section line can still be projected onto it.",
+    "correct": true,
+    "explanation": "The transformation records the offset distance from the borehole to the section line, allowing projection of nearby boreholes."
+  },
+  {
+    "type": "true_false",
+    "question": "The Endrod Formation equivalent in the Pannonian Basin typically has high permeability.",
+    "correct": false,
+    "explanation": "The Endrod Formation represents deep-water marls and turbidites with typically low permeability, acting as confining units."
+  },
+  {
+    "type": "true_false",
+    "question": "TIN stands for Triangulated Irregular Network.",
+    "correct": true,
+    "explanation": "TIN (Triangulated Irregular Network) is used in GeoVolume construction by converting raster surfaces for building closed solid geometry."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Great Plain, the overall sand-rich character of the Upper Pannonian is regionally consistent even though individual sand bodies are laterally discontinuous.",
+    "correct": true,
+    "explanation": "At the regional scale, the overall sand-rich character is consistent, though individual beds are discontinuous at smaller scales."
+  },
+  {
+    "type": "true_false",
+    "question": "The XS2D_MajorGrid and XS2D_MinorGrid features are needed because vertical exaggeration distorts the standard coordinate display.",
+    "correct": true,
+    "explanation": "Vertical exaggeration distorts the coordinate system, so grid lines provide correct elevation and distance references."
+  },
+  {
+    "type": "true_false",
+    "question": "The temperature surface in the GeoRasters catalog shows where thermal water is fresh enough for balneological use.",
+    "correct": false,
+    "explanation": "The temperature surface shows spatial variation of temperature. It is the TDS (total dissolved solids) surface that shows where water is fresh enough for balneological use."
+  },
+  {
+    "type": "true_false",
+    "question": "The GeoSciML standard provides schemas for geological units, earth materials, geological structures, and boreholes.",
+    "correct": true,
+    "explanation": "GeoSciML defines schemas for all these elements, providing vocabulary and structure for international data exchange."
+  },
+  {
+    "type": "true_false",
+    "question": "Older Hungarian borehole data (pre-1970s) may have coordinates in the HD72/EOV datum with variable accuracy.",
+    "correct": true,
+    "explanation": "Pre-1970s data may use HD72/EOV with variable accuracy, requiring careful coordinate transformations when combining with modern GPS data."
+  },
+  {
+    "type": "true_false",
+    "question": "SkyTEM is a type of airborne electromagnetic survey.",
+    "correct": true,
+    "explanation": "SkyTEM is an airborne electromagnetic survey system, widely used in Denmark and increasingly elsewhere for shallow subsurface imaging."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian Basin was formed by compression between tectonic plates.",
+    "correct": false,
+    "explanation": "The basin formed by back-arc extension (stretching), not compression, as the retreating subducting slab caused the overlying crust to thin and subside."
+  },
+  {
+    "type": "true_false",
+    "question": "For a study area with boreholes spaced 2 km apart, a 500-meter raster cell size is appropriate.",
+    "correct": true,
+    "explanation": "Following the guideline that cell size should not be smaller than about one-quarter of the average data spacing, 500 m is appropriate for 2 km spacing."
+  },
+  {
+    "type": "true_false",
+    "question": "The iterative feedback between framework and model is described as one of the most productive aspects of hydrogeologic investigation.",
+    "correct": true,
+    "explanation": "The framework provides structure, the model tests it hydraulically, discrepancies drive revision, and both converge toward a plausible representation."
+  },
+  {
+    "type": "true_false",
+    "question": "PyVista is a Python library providing 3D visualization capabilities for subsurface data.",
+    "correct": true,
+    "explanation": "PyVista provides three-dimensional visualization and data management capabilities for subsurface data in Python."
+  },
+  {
+    "type": "true_false",
+    "question": "A single deterministic framework surface accurately represents the full range of possible subsurface configurations.",
+    "correct": false,
+    "explanation": "A single surface may give a false impression of certainty. Probabilistic approaches generate multiple plausible realizations reflecting the range of interpretations."
+  },
+  {
+    "type": "true_false",
+    "question": "The Quaternary deposits in the Great Plain range from 50 to 300 meters thick.",
+    "correct": true,
+    "explanation": "Quaternary deposits form the uppermost 50-300 meters of the basin fill."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Debrecen Trough cross-section, all boreholes were within 3 km of the section line.",
+    "correct": true,
+    "explanation": "The Offset attribute confirmed that all projected boreholes were within 3 kilometers of the section line, acceptable for a regional cross-section."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Edwards Aquifer, _____ distinct stratigraphic formations are collapsed into four hydrogeologic units.",
+    "correct": "ten",
+    "explanation": "Ten formations are grouped into four broader hydrogeologic units for groundwater modeling purposes."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HorizonID in the HydrogeologicUnit table is numbered from _____ to top.",
+    "correct": "bottom",
+    "explanation": "The lowest unit receives the smallest HorizonID, and values increase upward through the depositional sequence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoSection features are stored as _____ feature classes in the geodatabase.",
+    "correct": "multipatch",
+    "explanation": "GeoSection is a multipatch feature class storing 3D panels of cross-sections."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The XS2D system projects 3D cross-section data onto a _____-dimensional viewing plane.",
+    "correct": "two",
+    "explanation": "XS2D transforms 3D coordinates into a 2D plane with distance along the section as horizontal and elevation as vertical axis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In IDW interpolation, the weights decrease with distance according to a _____ parameter, typically set to 2.",
+    "correct": "power",
+    "explanation": "The power parameter p controls the rate at which weights decrease: wi = 1/di^p."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the only interpolation method among IDW, kriging, spline, and natural neighbor that provides uncertainty estimates.",
+    "correct": "Kriging",
+    "explanation": "Kriging produces both an interpolated surface and a variance (uncertainty) surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin reaches depths of _____ meters or more in its deepest sub-basins.",
+    "correct": "7,000",
+    "explanation": "The basin extends to 7,000 meters or more in the deepest areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Lake Pannon occupied the Pannonian Basin from roughly _____ to 4 million years ago.",
+    "correct": "11.6",
+    "explanation": "Lake Pannon existed from approximately 11.6 to 4 million years ago."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation equivalent represents the deep-water marls and turbidites in the Pannonian sequence.",
+    "correct": "Endrod",
+    "explanation": "The Endrod Formation equivalent represents deep-water deposits at the base of the Pannonian sequence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation equivalent contains the principal thermal aquifer units of the Great Hungarian Plain.",
+    "correct": "Ujfalu",
+    "explanation": "The Ujfalu Formation (Upper Pannonian delta and shelf deposits) contains the main thermal aquifer sands."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's geothermal gradient averages about _____ mK/m.",
+    "correct": "45",
+    "explanation": "The average geothermal gradient is approximately 45 millikelvins per meter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The cross-validation RMSE for the Hajdu-Bihar County kriging example was _____ meters.",
+    "correct": "8.3",
+    "explanation": "The RMSE of 8.3 meters was reasonable given the 270-meter total elevation range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The variogram _____ is the distance beyond which data points are essentially uncorrelated.",
+    "correct": "range",
+    "explanation": "The variogram range (12 km in the example) is the distance at which the variogram reaches its sill, beyond which correlation is negligible."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Debrecen Trough, the basement surface drops to approximately _____ m a.s.l. in the center.",
+    "correct": "-4,200",
+    "explanation": "The basement drops to about -4,200 m a.s.l. in the center of the Debrecen Trough."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The thermal aquifer system produces water at temperatures between _____ and 80°C.",
+    "correct": "30",
+    "explanation": "The temperature range for the THERM_AQ unit is 30-80°C."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The acronym TIN stands for _____ Irregular Network.",
+    "correct": "Triangulated",
+    "explanation": "TIN is a Triangulated Irregular Network, used to convert raster surfaces for volume construction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is a Python-based open-source library for implicit 3D geological modeling.",
+    "correct": "GemPy",
+    "explanation": "GemPy uses a potential-field approach to create geologically consistent 3D models."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the XS2D system, the _____ attribute records the distance from a borehole to the section line.",
+    "correct": "Offset",
+    "explanation": "The Offset attribute helps assess the reliability of projecting a borehole onto the cross-section plane."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ interpolation method tends to create bull's-eye patterns around data points.",
+    "correct": "IDW",
+    "explanation": "Inverse Distance Weighting creates circular patterns centered on each data point."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ catalog is a collection of raster datasets stored together with descriptive attributes in the geodatabase.",
+    "correct": "raster",
+    "explanation": "The GeoRasters raster catalog organizes multiple raster surfaces with attributes for identification and sequencing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For the volume calculation, the cell-by-cell thickness is computed as h = z_top - _____.",
+    "correct": "z_bot",
+    "explanation": "Thickness at each cell = top surface elevation minus bottom surface elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "If an aquifer has a volume of 8.52 km³ and porosity of 0.25, the storage capacity is _____ km³.",
+    "correct": "2.13",
+    "explanation": "Storage = 8.52 × 0.25 = 2.13 km³."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ attribute in the GeoRasters catalog stores the units of the raster values.",
+    "correct": "RasUnits",
+    "explanation": "RasUnits stores units such as 'm a.s.l.', 'm/day', or 'degrees C'."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin formed as a back-arc _____ basin during the Miocene.",
+    "correct": "extensional",
+    "explanation": "The basin formed by extensional tectonics as the subducting slab retreated."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Machine learning classifiers for borehole classification have achieved accuracies of _____–95%.",
+    "correct": "85",
+    "explanation": "Published studies report 85-95% accuracy for ML-based lithological classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "XS2D_Panel is a _____ feature class representing hydrogeologic units in the 2D cross-section view.",
+    "correct": "polygon",
+    "explanation": "XS2D_Panel uses polygon features projected onto the 2D cross-section plane."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The SectionLine feature class carries a human-readable name attribute called _____.",
+    "correct": "SName",
+    "explanation": "SName stores names like 'A-A'' or 'Section 1' for cross-section identification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Spline interpolation minimizes the total _____ of the fitted surface.",
+    "correct": "curvature",
+    "explanation": "Spline fits a smooth surface minimizing total curvature through the data points."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HydrogeologicUnit table links to all spatial features through the common identifier _____.",
+    "correct": "HGUID",
+    "explanation": "HGUID is the common key linking the conceptual unit definition to all spatial representations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation equivalent in the Pannonian sequence represents shelf-margin and slope deposits.",
+    "correct": "Algyo",
+    "explanation": "The Algyo Formation represents transitional deposits on the prograding shelf slope."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Great Plain framework, the Quaternary Shallow Aquifer has a HorizonID of _____.",
+    "correct": "4",
+    "explanation": "The shallowest unit (Quaternary) receives HorizonID = 4, the highest in the sequence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Probabilistic modeling asks 'what is the _____ that the aquifer thickness exceeds 100 meters?' rather than just giving a point estimate.",
+    "correct": "probability",
+    "explanation": "Ensemble realizations enable probability-based questions rather than single deterministic estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ approach to cross-section creation uses interpolated surfaces sampled along the section line.",
+    "correct": "surface-based",
+    "explanation": "The second approach creates cross-sections by sampling raster surfaces at regular intervals along the section line."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thermal aquifer production wells typically penetrate _____–200 meters of net sand.",
+    "correct": "50",
+    "explanation": "Production wells penetrate 50-200 meters of net sand within the thermal aquifer system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rough guideline is that raster cell size should not be smaller than about one-_____ of the average distance between data points.",
+    "correct": "quarter",
+    "explanation": "This prevents false precision from sparse data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ surface in the kriging variance map shows lowest uncertainty near borehole control points.",
+    "correct": "variance",
+    "explanation": "The kriging variance is lowest near data points and highest between them."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An _____ is a surface of erosion or non-deposition where younger rocks lie on older ones with a time gap.",
+    "correct": "unconformity",
+    "explanation": "Unconformities mean one or more units are missing in part of the study area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Debrecen _____ is one of the major sub-basins of the Great Hungarian Plain.",
+    "correct": "Trough",
+    "explanation": "The Debrecen Trough is where the basement drops to -4,200 m, one of the deepest parts of the Great Plain."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The confining layers between the thermal and shallow systems are often only _____–50 meters thick.",
+    "correct": "20",
+    "explanation": "These thin but critical layers are 20-50 meters thick, requiring vertical exaggeration to be visible in cross-sections."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Directive requires EU member states to maintain harmonized geological data specifications.",
+    "correct": "INSPIRE",
+    "explanation": "The INSPIRE Directive established harmonized data specifications including the Geology theme."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EGDI is hosted by _____, the association of European geological surveys.",
+    "correct": "EuroGeoSurveys",
+    "explanation": "EGDI (European Geological Data Infrastructure) is hosted by EuroGeoSurveys."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GeoRasters catalog for the Great Plain stores not only formation surfaces but also _____ and transmissivity surfaces.",
+    "correct": "temperature",
+    "explanation": "The catalog stores temperature, TDS, and hydraulic conductivity surfaces alongside structural surfaces."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ represents the total variance of the dataset in the variogram.",
+    "correct": "sill",
+    "explanation": "The sill (4,500 m² in the example) is the plateau value that the variogram approaches."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ effect in the variogram reflects measurement uncertainty and very short-range variability.",
+    "correct": "nugget",
+    "explanation": "The nugget effect (100 m² in the example) is the non-zero variance at zero distance."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Subsurface Python library was developed by the Software _____ community.",
+    "correct": "Underground",
+    "explanation": "The Software Underground community developed the Subsurface library for subsurface data management."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ modeling treats the framework as a probability problem rather than a deterministic one.",
+    "correct": "Implicit",
+    "explanation": "Implicit modeling generates multiple plausible realizations rather than a single best estimate."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a hydrogeologic framework and how it differs from a purely geological framework. Why is this distinction important for groundwater management?",
+    "correct": "A hydrogeologic framework is a simplification of the geological framework that reclassifies rock units according to their hydraulic properties rather than depositional history. While geologists may distinguish dozens of formations by age, lithology, and fossils, hydrogeologists group them into aquifers, confining units, and aquitards based on water-transmitting behavior. This can be dramatic: ten Edwards Aquifer formations become four hydrogeologic units. The distinction matters because water managers need to understand how formations behave with respect to water flow and storage, not their geological classification. The framework drives modeling, well siting, and resource allocation decisions.",
+    "explanation": "The reclassification preserves geological detail as background but highlights what matters for water management."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the HydrogeologicUnit table in the geodatabase and explain why the HorizonID attribute must be assigned correctly.",
+    "correct": "The HydrogeologicUnit table is the central organizing element defining each unit conceptually before spatial features are created. It contains no geometry but serves as the master reference (via HGUID) to which all spatial datasets point. The HorizonID attribute defines each unit's position in the vertical stack, numbered bottom to top. Correct assignment is critical because algorithms that build cross-sections and volumes process layers from bottom to top, filling space between successive horizons. If HorizonIDs are wrong, cross-sections show layers in the wrong order and volume calculations produce nonsensical results.",
+    "explanation": "HorizonID is not arbitrary -- it encodes the depositional sequence that controls all subsequent spatial processing."
+  },
+  {
+    "type": "essay",
+    "question": "Compare and contrast IDW and kriging as interpolation methods for hydrostratigraphic surfaces. Under what circumstances would you choose one over the other?",
+    "correct": "IDW is simpler: it uses distance-based weights (wi = 1/di^p) to compute weighted averages. It is fast and intuitive but creates bull's-eye patterns, ignores directional trends, and provides no uncertainty estimates. Kriging uses a variogram to model spatial correlation, producing optimal weights that minimize prediction variance. It handles anisotropy, honors data exactly (ordinary kriging), and provides a variance map showing uncertainty. Choose IDW for dense datasets with smooth surfaces where speed matters. Choose kriging for sparse datasets, surfaces with directional trends, or when uncertainty quantification is needed.",
+    "explanation": "Kriging's advantages in uncertainty estimation and anisotropy handling make it preferred for most hydrostratigraphic applications."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the geological setting of the Pannonian Basin and explain how its depositional history controls the hydrogeologic framework of the Great Hungarian Plain.",
+    "correct": "The Pannonian Basin formed as a back-arc extensional basin during the Miocene when slab retreat thinned the crust. Lake Pannon occupied the basin from 11.6 to 4 million years ago. The fill architecture directly controls hydrogeology: deep-water marls (Endrod Formation) form the basal confining complex; prograding shelf-margin deposits (Algyo Fm) are transitional; deltaic sands (Ujfalu Fm) form the principal thermal aquifer system; alluvial deposits (Zagyva Fm) and Quaternary sediments cap the sequence. The clinoform architecture means the NW received sand earlier (more permeable) while the SE remained clay-rich longer. This creates a heterogeneous 3D mosaic of aquifers and aquitards rather than a simple layer cake.",
+    "explanation": "Understanding the depositional history is essential for predicting lateral changes in aquifer properties."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the XS2D coordinate transformation system, including why it is necessary and what distortions vertical exaggeration introduces.",
+    "correct": "The XS2D system transforms 3D cross-section data into a 2D viewing plane where the horizontal axis is distance along the section line and the vertical axis is elevation. This is needed because cross-section lines may curve in plan view but must appear as straight horizontal axes in printed reports. The transformation 'unfolds' the curved path and applies vertical exaggeration. Exaggeration (often 25-50x) is necessary because aquifer systems may span 50 km laterally but only 500 m vertically. However, it distorts dip angles dramatically: a 1.5° true dip appears as 38.2° with 30x exaggeration. Published sections must state the exaggeration factor, and quantitative measurements must be corrected to true scale.",
+    "explanation": "XS2D solves a fundamental display problem but requires careful communication about the resulting geometric distortions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete workflow from borehole picks to three-dimensional volumes, including all major steps and quality control measures.",
+    "correct": "The workflow has six main steps: (1) Extract formation picks from the BoreholeLog table for each unit. (2) Quality control: check vertical ordering, identify outliers (>3 standard deviations from trend), verify elevation consistency. (3) Choose interpolation method based on data density and surface character. (4) Interpolate to create raster surfaces, choosing appropriate cell size relative to data density. (5) Validate using cross-validation (RMSE, MAE) and comparison with independent data. (6) Store validated rasters in the GeoRasters catalog with HGUID, HorizonID, and description attributes. Volume construction then fills the space between successive surfaces, clipped to GeoArea extents. Cell-by-cell thickness differences multiplied by cell area give total volume.",
+    "explanation": "Each step requires both technical skill and geological judgment, and the process is iterative rather than strictly linear."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how machine learning is being applied to automate lithological classification from borehole data, and explain why it cannot fully replace human judgment.",
+    "correct": "Machine learning approaches (random forests, SVMs, neural networks) use geophysical log features (SP, resistivity, gamma-ray, neutron porosity) as inputs and expert-assigned hydrogeologic classifications as targets. They achieve 85-95% accuracy on test datasets, potentially reducing manual effort by an order of magnitude. However, ML cannot fully replace geological judgment because misclassifications tend to occur at formation boundaries -- precisely the most important intervals for framework construction. A practical hybrid approach uses ML for initial bulk classification and routes uncertain or boundary cases to geologists. This preserves quality while dramatically reducing the manual workload for large databases.",
+    "explanation": "The 5-10% error rate of ML classifiers concentrates at the geologically critical locations, making human oversight essential."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how implicit modeling and uncertainty quantification improve upon traditional deterministic framework construction.",
+    "correct": "Traditional approaches produce one deterministic surface per formation top, which may give false certainty. Implicit modeling (e.g., GemPy, Leapfrog) models the entire geological structure as a coherent 3D field and can generate multiple equally plausible realizations, each honoring borehole data but differing between control points. This enables probability-based questions: 'What is the probability that aquifer thickness exceeds 100 meters?' rather than just point estimates. For risk assessment and decision-making under uncertainty, this probabilistic approach is far more informative, directly supporting questions about well siting, contamination risk, and resource estimation.",
+    "explanation": "Moving from deterministic to probabilistic frameworks is a major advance for responsible decision-making in groundwater management."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of the GeoRasters raster catalog in the hydrogeologic framework, including both structural and property surfaces.",
+    "correct": "The GeoRasters catalog is a structured container for multiple raster datasets, each indexed with HGUID, HGUCode, HorizonID, and a description. It stores two categories: structural surfaces (formation tops and bottoms, used for layer geometry) and property surfaces (hydraulic conductivity, temperature, TDS, porosity, used for spatial parameter assignment). The HorizonID indexing enables automated processing: algorithms iterate through surfaces in depositional order, building 3D models layer by layer. Cross-sections are generated by sampling each raster along a section line. For the Great Plain, the catalog contains both formation surfaces and temperature/TDS/conductivity surfaces that guide thermal water management and well siting.",
+    "explanation": "The dual use for geometry and properties makes the raster catalog a central organizing structure for the entire framework."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical challenges of interpolating formation surfaces in the Great Plain, including the basement surface versus the thermal aquifer top.",
+    "correct": "The basement surface shows dramatic faulted relief (deep grabens separated by horst blocks), requiring fault-bounded interpolation where the study area is divided into structural blocks with independent interpolation. Simple kriging would average across discontinuities. The thermal aquifer top is much smoother, reflecting progradational shelf filling, and kriging with a linear variogram works well. However, anisotropy is present (smoother NW-SE along progradation direction), and incorporating this into the kriging model improves results. Both surfaces benefit from dense borehole coverage but require different interpolation strategies reflecting their geological character.",
+    "explanation": "The contrast illustrates how geological understanding must guide the choice of interpolation parameters and methods."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the hydrogeologic framework feeds into groundwater flow models and how modeling feedback can improve the framework.",
+    "correct": "The framework provides three key inputs to flow models: GeoRasters formation surfaces define layer tops and bottoms (resampled to model grid), property rasters provide spatially varying hydraulic parameters, and GeoArea polygons define the model domain and hydraulic zones. The HydrogeologicUnit table ensures consistency between framework units and model layers. The relationship is bidirectional: calibrated models may reveal framework deficiencies when unrealistic parameter values are needed to match observations, suggesting incorrect layer geometry or missing features like faults. This feedback drives framework revision, and over iterations both the framework and model converge toward a geologically plausible, hydraulically validated representation.",
+    "explanation": "The iterative framework-model feedback loop is one of the most productive aspects of hydrogeologic investigation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the four main hydrogeologic units of the Great Hungarian Plain, their typical depths, and their hydraulic character.",
+    "correct": "The Great Plain framework has four to five units: (1) Pre-Neogene Basement (>2000-4000 m), variable permeability with fractured carbonate aquifers, temperatures >80-120°C. (2) Lower Pannonian Confining Complex (1500-3000 m), low-permeability marls and clays with local turbidite aquifers, 60-100°C. (3) Upper Pannonian Thermal Aquifer System (500-2000 m), interbedded sands and clays forming the principal thermal aquifer, 30-80°C. (4) Pliocene-Pleistocene Transitional Zone (100-500 m), variable interbedded materials, 15-30°C. (5) Quaternary Shallow Aquifer (0-100 m), unconfined sands and gravels for domestic supply, 10-15°C.",
+    "explanation": "This five-unit classification simplifies the complex depositional sequence into manageable units for regional management."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why vertical exaggeration is almost always necessary in hydrogeologic cross-sections, and describe the distortions it introduces with a numerical example.",
+    "correct": "Vertical exaggeration is needed because aquifer systems span tens of kilometers laterally but only hundreds of meters vertically. At true scale, layers would be imperceptibly thin. A typical exaggeration of 25-50x stretches the vertical dimension to make layers visible. The key distortion is angle exaggeration: a 1.5° true dip with Ve=30 appears as arctan(30 × tan(1.5°)) = arctan(0.786) ≈ 38.2°. A 15-meter thick layer appears as 450 display units. This dramatic distortion can mislead viewers unfamiliar with the convention. Cross-sections must always state the exaggeration factor, and any measurements must be corrected to true scale.",
+    "explanation": "Balancing visual clarity against geometric fidelity is a fundamental challenge in subsurface visualization."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the approaches for creating cross-sections: direct borehole connection versus surface-based generation. What are the advantages of each?",
+    "correct": "Direct borehole connection is the traditional method: section lines connect wells with log data, and hydrostratigraphic intervals at each well are connected between adjacent wells using geological judgment. This produces validated cross-sections at well-controlled transects. Surface-based generation interpolates formation tops across the study area first, then samples these rasters along the section line. This produces smoother, more consistent cross-sections that extend into data-sparse areas. Direct connections are better for quality control and areas with good borehole coverage. Surface-based sections are better for consistency with subsequent modeling and for extending into gaps. Many projects use both approaches.",
+    "explanation": "The two methods are complementary, and using both provides validation through internal consistency checks."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how remote sensing contributes to hydrogeologic framework construction despite the subsurface being invisible from space.",
+    "correct": "Remote sensing contributes indirectly in several ways: (1) GRACE/GRACE-FO satellite gravity detects large-scale density contrasts between sedimentary fill and basement, helping constrain basement topography and providing basin-scale storage change estimates. (2) Airborne electromagnetic surveys (SkyTEM) image the subsurface to 200-300 m, providing continuous shallow coverage complementing point-based borehole data. (3) InSAR detects land subsidence from groundwater extraction, constraining confining unit compressibility and geometry. (4) GRACE-derived storage changes via G3P at GFZ Potsdam serve as large-scale framework validation: if predicted storage capacity is inconsistent with observed changes, the framework may need revision.",
+    "explanation": "While the subsurface cannot be directly observed from space, remote sensing provides valuable indirect constraints."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the challenges of combining older Hungarian borehole data (pre-1970s) with modern datasets, and recommend best practices.",
+    "correct": "Older data may use HD72/EOV coordinates with variable accuracy, depth referenced to uncertain surface elevation estimates, and outdated stratigraphic nomenclature. Modern data uses GPS in WGS84, precision depths, and current terminology. Combining them requires: coordinate transformations between EOV and ETRS89 (see Chapter 3), datum conversions, and nomenclature mapping between old and new classification systems. Best practices include maintaining a data quality flag for each pick recording source, method of identification (core vs cuttings vs geophysical log), and estimated uncertainty. During interpolation, high-quality picks should receive more weight than uncertain ones.",
+    "explanation": "Careful attention to data heterogeneity prevents systematic errors from propagating into interpolated surfaces and models."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what GeoVolume features represent and describe the process of constructing them from bounding surfaces.",
+    "correct": "GeoVolume features are multipatch features representing the full 3D geometry of hydrogeologic units as closed solid objects. They are constructed from bounding surfaces: the top surface of a unit and the top of the unit below (its bottom boundary). The construction involves converting raster surfaces to TINs, building closed solid geometry from the upper and lower TIN surfaces and lateral boundaries (GeoArea polygons), and storing the result as a multipatch. The process is computationally intensive, especially for complex geometries with faults and pinch-outs. Volumes enable direct volumetric calculations (aquifer volume, storage capacity) and provide intuitive 3D visualizations for stakeholder communication.",
+    "explanation": "GeoVolume features are the most complete spatial representation but require the most computation and quality checking."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the Pannonian Basin hydrostratigraphic framework is described as 'not a simple layer-cake' and what challenges this creates.",
+    "correct": "The deltaic depositional environment of the Pannonian Basin produced sand bodies that are laterally discontinuous at the individual bed scale. A delta lobe that deposited thick sands in one area may have deposited clays just 10 km away. Formation boundaries are gradational rather than sharp, and the sand-to-clay ratio varies with the local depositional history. This creates a complex 3D mosaic rather than uniform horizontal layers. Challenges include: identifying formation tops requires interpreting transitions rather than sharp contacts, lateral correlation between boreholes is difficult, different interpreters may draw boundaries differently, and the resulting framework must acknowledge internal heterogeneity within each unit while maintaining regional consistency.",
+    "explanation": "The complexity of the depositional system is precisely what makes the framework construction both challenging and essential."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what the kriging variance map tells a groundwater manager and how it can be used to plan additional data collection.",
+    "correct": "The kriging variance map quantifies interpolation uncertainty at every point in the study area. Variance is lowest near borehole control points (where direct observations constrain the surface) and highest in data-sparse areas between boreholes. For a groundwater manager, this means: high-variance areas have unreliable formation surface estimates, and any model built from these surfaces inherits that uncertainty. The variance map directly guides data collection planning by identifying where additional boreholes would most reduce model uncertainty. Drilling in high-variance areas provides the greatest information gain per borehole, optimizing the cost-effectiveness of the exploration program.",
+    "explanation": "The kriging variance is a decision-support tool that transforms interpolation uncertainty into actionable guidance for data collection."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the GeoRasters catalog enables automated processing of framework surfaces, using the example of cross-section generation.",
+    "correct": "The GeoRasters catalog indexes raster datasets with HorizonID attributes that encode the depositional sequence. For cross-section generation, an algorithm iterates through the catalog in HorizonID order (bottom to top), sampling each raster at regular intervals along the section line. Because the surfaces are indexed, the algorithm automatically processes them in the correct vertical order without manual identification. The same principle applies to volume construction (filling space between successive horizons) and property assignment (sampling conductivity rasters at model grid centroids). Without the catalog's indexing, each operation would require manual identification and sequencing -- tedious and error-prone with dozens of units.",
+    "explanation": "The catalog transforms what would be manual, error-prone operations into automated, reproducible workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of Hungary's thermal water dimension in the context of the Great Plain hydrogeologic framework.",
+    "correct": "Hungary's elevated geothermal gradient (45 mK/m, 1.5× global average) due to thin Pannonian Basin crust means groundwater at 1000-2000 m reaches 50-90°C. The Upper Pannonian thermal aquifer system is the principal source, with moderate-to-good permeability and confining clays maintaining pressure and temperature. The framework informs thermal management in three ways: geometry (thickness, depth, extent) determines where thermal water can be produced and at what temperature; confining unit properties determine protection from contamination and connection to shallow aquifers; and the 3D framework supports flow modeling predicting long-term production effects. The GeoRasters catalog stores not only formation surfaces but also temperature, TDS, and conductivity surfaces guiding well siting and sustainable management.",
+    "explanation": "Thermal water is both a scientific and economic dimension that makes the Great Plain framework particularly significant."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical vertical exaggeration used for hydrogeologic cross-sections?",
+    "options": [
+      "2-5x",
+      "10-15x",
+      "25-50x",
+      "100-200x"
+    ],
+    "correct": "C",
+    "explanation": "A typical exaggeration of 25-50x stretches the vertical dimension to make layers visible."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the HGUName attribute store?",
+    "options": [
+      "The unit's internal ID",
+      "Human-readable name for labeling and symbology",
+      "Hydraulic gradient unit number",
+      "The horizontal grid unit name"
+    ],
+    "correct": "B",
+    "explanation": "HGUName stores the human-readable name used for labeling and map symbology."
+  },
+  {
+    "type": "mcq",
+    "question": "How many rasters would a simplified catalog contain for 4 units plus basal surface?",
+    "options": [
+      "4",
+      "5",
+      "8",
+      "9"
+    ],
+    "correct": "B",
+    "explanation": "Four formation tops plus one basal surface = 5 rasters since bottom of each unit is top of unit below."
+  },
+  {
+    "type": "mcq",
+    "question": "What Python library provides 3D visualization for subsurface data?",
+    "options": [
+      "Matplotlib only",
+      "SciPy",
+      "PyVista",
+      "Pandas"
+    ],
+    "correct": "C",
+    "explanation": "PyVista provides 3D visualization and data management for subsurface data."
+  },
+  {
+    "type": "mcq",
+    "question": "What approach does fault-bounded interpolation use?",
+    "options": [
+      "Ignoring faults entirely",
+      "Dividing into blocks separated by faults with independent interpolation",
+      "Smoothing across faults",
+      "Removing data near faults"
+    ],
+    "correct": "B",
+    "explanation": "The study area is divided into structural blocks with interpolation performed independently in each."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical cell size appropriate for 2km average borehole spacing?",
+    "options": [
+      "50 m",
+      "100 m",
+      "250 m",
+      "500 m"
+    ],
+    "correct": "D",
+    "explanation": "Cell size should not be smaller than about one-quarter of average data spacing: 2000/4 = 500 m."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the AqCode attribute in the HydrogeologicUnit table describe?",
+    "options": [
+      "Aquifer area code",
+      "Text descriptor of the parent aquifer",
+      "Aquifer quality classification",
+      "Aquifer capacity"
+    ],
+    "correct": "B",
+    "explanation": "AqCode provides a text descriptor of the parent aquifer for labeling and queries."
+  },
+  {
+    "type": "mcq",
+    "question": "The GeoVolume features are typically constructed from what?",
+    "options": [
+      "Well points only",
+      "Bounding surfaces (top and bottom)",
+      "Seismic data only",
+      "Satellite imagery"
+    ],
+    "correct": "B",
+    "explanation": "GeoVolumes are constructed from the top surface of a unit and the top of the unit below it."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Description attribute in GeoRasters catalog store?",
+    "options": [
+      "A description of the software used",
+      "What the raster represents (e.g., top of formation, hydraulic conductivity)",
+      "The file path",
+      "The creation date"
+    ],
+    "correct": "B",
+    "explanation": "Description stores what the raster represents, such as formation top or hydraulic conductivity."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the relationship between GeoArea features and HGUID?",
+    "options": [
+      "Each polygon has unique HGUID",
+      "Multiple polygons can share HGUID (many-to-one)",
+      "HGUID is not used",
+      "One HGUID per map sheet"
+    ],
+    "correct": "B",
+    "explanation": "A spatially discontinuous unit requires multiple polygons all sharing the same HGUID."
+  },
+  {
+    "type": "true_false",
+    "question": "The HydrogeologicUnit table contains spatial geometry.",
+    "correct": false,
+    "explanation": "It contains no geometry; it is a non-spatial master reference table."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoRasters can store both structural and property surfaces.",
+    "correct": true,
+    "explanation": "The dual use stores formation tops alongside conductivity, temperature, and TDS."
+  },
+  {
+    "type": "true_false",
+    "question": "Cross-validation RMSE is calculated by removing points one at a time.",
+    "correct": true,
+    "explanation": "Standard leave-one-out cross-validation procedure."
+  },
+  {
+    "type": "true_false",
+    "question": "Simple kriging works for the faulted basement surface without modification.",
+    "correct": false,
+    "explanation": "Requires fault-bounded interpolation due to dramatic faulted relief."
+  },
+  {
+    "type": "true_false",
+    "question": "Framework construction is a linear one-pass process.",
+    "correct": false,
+    "explanation": "Iterative; each step may require revisiting earlier steps."
+  },
+  {
+    "type": "true_false",
+    "question": "ML can completely replace geological judgment in classification.",
+    "correct": false,
+    "explanation": "ML misclassifies at boundaries; hybrid approach needed."
+  },
+  {
+    "type": "true_false",
+    "question": "GemPy can generate multiple plausible framework realizations.",
+    "correct": true,
+    "explanation": "Implicit modeling generates ensembles honoring data but differing between boreholes."
+  },
+  {
+    "type": "true_false",
+    "question": "Regularized splines follow abrupt changes more closely than tension splines.",
+    "correct": false,
+    "explanation": "Tension splines follow abrupt changes; regularized produce smoother surfaces."
+  },
+  {
+    "type": "true_false",
+    "question": "Formation top elevation range in Hajdu-Bihar spans 270 meters.",
+    "correct": true,
+    "explanation": "-450 to -180 m = 270 m range."
+  },
+  {
+    "type": "true_false",
+    "question": "Cross-sections serve both as products and QA tools.",
+    "correct": true,
+    "explanation": "Viewing stratigraphy reveals errors and model revision needs."
+  },
+  {
+    "type": "true_false",
+    "question": "Arc Hydro GW concepts can only work in ArcGIS.",
+    "correct": false,
+    "explanation": "Concepts are platform-independent; implementable in QGIS, GemPy, etc."
+  },
+  {
+    "type": "true_false",
+    "question": "Confining layers between thermal and shallow systems are hundreds of meters thick.",
+    "correct": false,
+    "explanation": "Often only 20-50 meters thick."
+  },
+  {
+    "type": "true_false",
+    "question": "GRACE directly images aquifer boundaries.",
+    "correct": false,
+    "explanation": "Detects density contrasts and gravity anomalies, not direct imaging."
+  },
+  {
+    "type": "true_false",
+    "question": "In XS2D, boreholes not on the section line can be projected onto it.",
+    "correct": true,
+    "explanation": "The offset distance is recorded for each projected borehole."
+  },
+  {
+    "type": "true_false",
+    "question": "Endrod Formation has high permeability.",
+    "correct": false,
+    "explanation": "Deep-water marls with typically low permeability."
+  },
+  {
+    "type": "true_false",
+    "question": "TIN stands for Triangulated Irregular Network.",
+    "correct": true,
+    "explanation": "Used for converting rasters to build solid geometry."
+  },
+  {
+    "type": "true_false",
+    "question": "The Upper Pannonian is regionally sand-rich despite individual bed discontinuity.",
+    "correct": true,
+    "explanation": "Regional consistency despite local heterogeneity."
+  },
+  {
+    "type": "true_false",
+    "question": "XS2D grid lines compensate for vertical exaggeration distortion.",
+    "correct": true,
+    "explanation": "Provide correct elevation and distance references."
+  },
+  {
+    "type": "true_false",
+    "question": "The TDS surface shows where thermal water is suitable for bathing.",
+    "correct": true,
+    "explanation": "TDS below ~5000 mg/L is suitable for balneological use."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoSciML provides schemas for geological units and boreholes.",
+    "correct": true,
+    "explanation": "International standard for geological data exchange."
+  },
+  {
+    "type": "true_false",
+    "question": "Older Hungarian borehole data may use HD72/EOV datum.",
+    "correct": true,
+    "explanation": "Pre-1970s data with variable accuracy."
+  },
+  {
+    "type": "true_false",
+    "question": "SkyTEM is airborne electromagnetic survey.",
+    "correct": true,
+    "explanation": "Used in Denmark and increasingly elsewhere."
+  },
+  {
+    "type": "true_false",
+    "question": "The Pannonian Basin formed by tectonic compression.",
+    "correct": false,
+    "explanation": "Formed by back-arc extension, not compression."
+  },
+  {
+    "type": "true_false",
+    "question": "For 2km borehole spacing, 500m cell size is appropriate.",
+    "correct": true,
+    "explanation": "One-quarter of average spacing guideline."
+  },
+  {
+    "type": "true_false",
+    "question": "Framework-model feedback is productive for investigation.",
+    "correct": true,
+    "explanation": "Both converge toward plausible validated representation."
+  },
+  {
+    "type": "true_false",
+    "question": "PyVista provides 3D visualization for Python subsurface data.",
+    "correct": true,
+    "explanation": "3D visualization and data management library."
+  },
+  {
+    "type": "true_false",
+    "question": "A deterministic framework surface fully captures all uncertainty.",
+    "correct": false,
+    "explanation": "Single surface may give false certainty; probabilistic approaches better."
+  },
+  {
+    "type": "true_false",
+    "question": "Quaternary deposits in Great Plain are 50-300 m thick.",
+    "correct": true,
+    "explanation": "Uppermost basin fill layer."
+  },
+  {
+    "type": "true_false",
+    "question": "All Debrecen Trough boreholes were within 3 km of section line.",
+    "correct": true,
+    "explanation": "Acceptable for regional cross-section."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zagyva Formation represents deep-water lake deposits.",
+    "correct": false,
+    "explanation": "Continental alluvial deposits after lake phase. Endrod is deep-water."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoVolume features enable direct volumetric calculations.",
+    "correct": true,
+    "explanation": "Estimate total aquifer volume and storage capacity."
+  },
+  {
+    "type": "true_false",
+    "question": "The XS2D_Catalog tracks which features are associated with which sections.",
+    "correct": true,
+    "explanation": "Directory of all XS2D components per section line."
+  },
+  {
+    "type": "true_false",
+    "question": "Natural Neighbor interpolation can handle directional anisotropy.",
+    "correct": false,
+    "explanation": "It does not handle anisotropy; kriging can."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW can extrapolate well beyond data points.",
+    "correct": false,
+    "explanation": "IDW has poor extrapolation capability beyond data range."
+  },
+  {
+    "type": "true_false",
+    "question": "The four-layer basin example assigns HorizonID 0 to the basal clay.",
+    "correct": true,
+    "explanation": "Lowest unit gets smallest HorizonID."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoSection features carry HGUID and HGUCode attributes.",
+    "correct": true,
+    "explanation": "Links panels to HydrogeologicUnit table."
+  },
+  {
+    "type": "true_false",
+    "question": "The SectionLine carries a SName attribute for human-readable naming.",
+    "correct": true,
+    "explanation": "Names like A-A prime or Section 1."
+  },
+  {
+    "type": "true_false",
+    "question": "The Algyo Formation represents deltaic sands.",
+    "correct": false,
+    "explanation": "Shelf-margin and slope deposits. Ujfalu represents deltaic deposits."
+  },
+  {
+    "type": "true_false",
+    "question": "A thickness map is computed as top minus bottom raster difference.",
+    "correct": true,
+    "explanation": "h = z_top - z_bot cell by cell."
+  },
+  {
+    "type": "true_false",
+    "question": "The EGDI is hosted by EuroGeoSurveys.",
+    "correct": true,
+    "explanation": "Association of European geological surveys."
+  },
+  {
+    "type": "true_false",
+    "question": "Spline interpolation minimizes total surface curvature.",
+    "correct": true,
+    "explanation": "Fits smooth mathematical surface through data points."
+  },
+  {
+    "type": "true_false",
+    "question": "The HydroID attribute is the unique identifier within the geodatabase.",
+    "correct": true,
+    "explanation": "Used for all internal relationships."
+  },
+  {
+    "type": "true_false",
+    "question": "The confining complex thickens to over 1500m in the Debrecen Trough center.",
+    "correct": true,
+    "explanation": "Reflects deep-water conditions persisting longest in deepest basin parts."
+  },
+  {
+    "type": "true_false",
+    "question": "ML classifiers for lithology achieve 85-95% accuracy.",
+    "correct": true,
+    "explanation": "Published results from random forest, SVM, and neural networks."
+  },
+  {
+    "type": "true_false",
+    "question": "GemPy is a commercial software package.",
+    "correct": false,
+    "explanation": "GemPy is open-source Python-based."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Edwards Aquifer, ten formations collapse into _____ hydrogeologic units.",
+    "correct": "four",
+    "explanation": "Dramatic simplification for modeling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HorizonID is numbered from _____ to top.",
+    "correct": "bottom",
+    "explanation": "Lowest unit gets smallest value."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoSection features use _____ feature class type.",
+    "correct": "multipatch",
+    "explanation": "Stores 3D panels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "XS2D projects 3D data onto a _____-dimensional plane.",
+    "correct": "two",
+    "explanation": "Distance along section and elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "IDW weights decrease with distance using _____ parameter.",
+    "correct": "power",
+    "explanation": "Typically p=2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is the only common method providing interpolation uncertainty.",
+    "correct": "Kriging",
+    "explanation": "Produces variance surface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin reaches _____ meters depth in deepest sub-basins.",
+    "correct": "7,000",
+    "explanation": "Or more in the deepest areas."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Lake Pannon existed from _____ to 4 million years ago.",
+    "correct": "11.6",
+    "explanation": "Ancient lake occupying the basin."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation is the deep-water marl unit.",
+    "correct": "Endrod",
+    "explanation": "Base of Pannonian sequence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation contains principal thermal aquifer units.",
+    "correct": "Ujfalu",
+    "explanation": "Delta and shelf deposits."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's gradient averages _____ mK/m.",
+    "correct": "45",
+    "explanation": "Roughly 1.5x global average."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hajdu-Bihar kriging RMSE was _____ meters.",
+    "correct": "8.3",
+    "explanation": "Reasonable for 270m range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variogram _____ is distance beyond which points are uncorrelated.",
+    "correct": "range",
+    "explanation": "12 km in the example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Debrecen Trough basement drops to about _____ m a.s.l.",
+    "correct": "-4,200",
+    "explanation": "Center of the trough."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thermal aquifer temperature range is 30 to _____°C.",
+    "correct": "80",
+    "explanation": "THERM_AQ unit range."
+  },
+  {
+    "type": "fill_blank",
+    "question": "TIN stands for _____ Irregular Network.",
+    "correct": "Triangulated",
+    "explanation": "For volume construction."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ is a Python open-source 3D geological modeling library.",
+    "correct": "GemPy",
+    "explanation": "Potential-field approach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "XS2D _____ attribute records borehole-to-section distance.",
+    "correct": "Offset",
+    "explanation": "Assesses projection reliability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ interpolation creates bull's-eye patterns.",
+    "correct": "IDW",
+    "explanation": "Centered on data points."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ catalog stores multiple rasters with descriptive attributes.",
+    "correct": "raster",
+    "explanation": "GeoRasters catalog."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell thickness = z_top - _____.",
+    "correct": "z_bot",
+    "explanation": "Top minus bottom elevation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "8.52 km3 x 0.25 porosity = _____ km3 storage.",
+    "correct": "2.13",
+    "explanation": "Volume times porosity."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ stores raster value units in GeoRasters.",
+    "correct": "RasUnits",
+    "explanation": "E.g., m a.s.l., m/day."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The basin formed as a back-arc _____ basin.",
+    "correct": "extensional",
+    "explanation": "Thinning and subsidence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ML classifiers achieve _____-95% accuracy.",
+    "correct": "85",
+    "explanation": "For lithological classification."
+  },
+  {
+    "type": "fill_blank",
+    "question": "XS2D_Panel is a _____ feature class.",
+    "correct": "polygon",
+    "explanation": "2D cross-section panels."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SectionLine carries name attribute _____.",
+    "correct": "SName",
+    "explanation": "Human-readable name."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Spline minimizes total surface _____.",
+    "correct": "curvature",
+    "explanation": "Mathematical smooth fit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ links all spatial features to the master table.",
+    "correct": "HGUID",
+    "explanation": "Common identifier."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Formation represents shelf-margin slope deposits.",
+    "correct": "Algyo",
+    "explanation": "Transitional Pannonian unit."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Quaternary Shallow Aquifer has HorizonID _____.",
+    "correct": "4",
+    "explanation": "Shallowest = highest HorizonID."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Probabilistic modeling asks what is the _____ of something.",
+    "correct": "probability",
+    "explanation": "Rather than point estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Surface-based cross-sections use _____ surfaces sampled along section.",
+    "correct": "interpolated",
+    "explanation": "Raster surfaces sampled at intervals."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thermal wells penetrate _____-200 m of net sand.",
+    "correct": "50",
+    "explanation": "Within the thermal aquifer system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell size should not exceed one-_____ of average data spacing.",
+    "correct": "quarter",
+    "explanation": "Prevents false precision."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kriging _____ surface shows where more data would help most.",
+    "correct": "variance",
+    "explanation": "Highest between data points."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An _____ is erosion surface with missing time.",
+    "correct": "unconformity",
+    "explanation": "Younger rocks directly on older."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Debrecen _____ is a major Great Plain sub-basin.",
+    "correct": "Trough",
+    "explanation": "Basement drops to -4200 m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Confining layers are only _____-50 m thick between systems.",
+    "correct": "20",
+    "explanation": "Thin but critical."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Directive requires EU harmonized geological data.",
+    "correct": "INSPIRE",
+    "explanation": "Directive 2007/2/EC."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EGDI is hosted by _____.",
+    "correct": "EuroGeoSurveys",
+    "explanation": "Association of European surveys."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoRasters stores _____ and transmissivity surfaces.",
+    "correct": "temperature",
+    "explanation": "Property surfaces for thermal management."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variogram _____ represents total dataset variance.",
+    "correct": "sill",
+    "explanation": "4500 m2 in the example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variogram _____ effect reflects measurement uncertainty.",
+    "correct": "nugget",
+    "explanation": "100 m2 in the example."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Subsurface library developed by Software _____ community.",
+    "correct": "Underground",
+    "explanation": "Python subsurface data structures."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ modeling uses probability rather than determinism.",
+    "correct": "Implicit",
+    "explanation": "Multiple plausible realizations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Pannonian Basin extends into _____ countries besides Hungary.",
+    "correct": "six",
+    "explanation": "Slovakia, Austria, Romania, Serbia, Croatia, Ukraine."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SkyTEM surveys image to _____-300 meters depth.",
+    "correct": "200",
+    "explanation": "Airborne electromagnetic capability."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GeoVolume features are _____ type in the geodatabase.",
+    "correct": "multipatch",
+    "explanation": "Closed 3D solid objects."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The AquiferID groups units belonging to the same aquifer _____.",
+    "correct": "system",
+    "explanation": "Links related hydrogeologic units."
+  },
+  {
+    "type": "fill_blank",
+    "question": "G3P stands for Global Gravity-based _____ Product.",
+    "correct": "Groundwater",
+    "explanation": "From GFZ Potsdam."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Artesian conditions mean piezometric surface is _____ ground level.",
+    "correct": "above",
+    "explanation": "Wells flow naturally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The framework implementation workflow has _____ steps.",
+    "correct": "nine",
+    "explanation": "Define through produce deliverables."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Lake Pannon existed for approximately _____ million years.",
+    "correct": "7.6",
+    "explanation": "11.6 - 4 = 7.6 My."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why HorizonID must be assigned correctly in the HydrogeologicUnit table.",
+    "correct": "Algorithms process layers bottom-to-top using HorizonID order. Incorrect values produce wrong-order cross-sections and nonsensical volumes. The lowest unit gets smallest ID; each higher unit gets larger.",
+    "explanation": "HorizonID encodes depositional sequence controlling all processing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how GeoArea differs from GeologyArea (outcrop map).",
+    "correct": "GeologyArea shows where rocks are exposed at surface. GeoArea represents full horizontal extent including subsurface areas under other formations. Edwards Aquifer GeoArea includes both outcrop and confined zones.",
+    "explanation": "GeoArea is a conceptual extent, not just surface expression."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the two approaches for creating cross-sections.",
+    "correct": "Direct borehole connection: traditional method connecting hydrostratigraphic intervals between wells. Surface-based: interpolate formation tops first, then sample along section. Direct is validated; surface-based extends into data gaps. Both often used together.",
+    "explanation": "Complementary approaches provide validation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why vertical exaggeration is necessary and its distortions.",
+    "correct": "Systems span tens of km laterally but hundreds of m vertically. At true scale, layers invisible. 25-50x exaggeration makes layers visible but distorts dip: 1.5 real becomes 38.2 at 30x. Must always state factor.",
+    "explanation": "Necessary but distorting; communication critical."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the borehole-to-surface interpolation workflow.",
+    "correct": "Six steps: extract picks, QC (check order, outliers), choose method, interpolate to raster, validate (cross-validation), store in GeoRasters. Each requires technical skill and geological judgment. Cell size matches data density.",
+    "explanation": "Both technical and judgmental process."
+  },
+  {
+    "type": "essay",
+    "question": "Explain surface-to-volume construction.",
+    "correct": "Each unit occupies space between its top and the top of unit below. Thickness = z_top - z_bot cell by cell. Volume = sum of thickness x cell area. Then multiply by porosity for storage capacity. Example: 8.52 km3 x 0.25 = 2.13 km3 storage.",
+    "explanation": "Combines spatial surfaces with hydrogeologic parameters."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss ML for lithological classification and its limitations.",
+    "correct": "Random forest, SVM, neural networks use geophysical log features as inputs. Achieve 85-95% accuracy. But errors concentrate at formation boundaries -- the most important intervals. Hybrid approach: ML for bulk, geologists for boundaries.",
+    "explanation": "ML reduces effort but cannot replace judgment at critical locations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain implicit modeling and uncertainty quantification.",
+    "correct": "Traditional: one deterministic surface. Implicit (GemPy, Leapfrog): models whole structure as scalar field, generates multiple plausible realizations. Enables probability questions rather than point estimates. Valuable for risk assessment.",
+    "explanation": "Probabilistic approaches support decision-making under uncertainty."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the GeoRasters catalog role including dual use.",
+    "correct": "Indexes rasters with HGUID, HorizonID, description. Stores structural surfaces (formation tops) and property surfaces (K, temperature, TDS). HorizonID enables automated sequential processing. Central organizing structure for entire framework.",
+    "explanation": "Dual geometric and property role makes catalog central."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss Great Plain interpolation challenges.",
+    "correct": "Basement: dramatic faulted relief needs fault-bounded interpolation. Thermal aquifer top: smoother, kriging with anisotropy works. Both benefit from dense data but require different strategies reflecting their geological character.",
+    "explanation": "Geological understanding guides method selection."
+  },
+  {
+    "type": "essay",
+    "question": "Explain framework-model feedback loop.",
+    "correct": "Framework provides 3D structure and properties. Model tests hydraulic consistency with observations. Discrepancies drive framework revision. Over iterations, both converge toward geologically plausible, hydraulically validated representation.",
+    "explanation": "Iterative improvement from combining geology and physics."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the four Great Plain hydrogeologic units.",
+    "correct": "Basement (>2000m, variable, >80C), Lower Pannonian Confining (1500-3000m, low K, 60-100C), Upper Pannonian Thermal Aquifer (500-2000m, principal aquifer, 30-80C), Shallow Aquifer (0-100m, unconfined, 10-15C). Plus transitional zone.",
+    "explanation": "Five-unit classification simplifies complex sequence."
+  },
+  {
+    "type": "essay",
+    "question": "Explain vertical exaggeration with numerical example.",
+    "correct": "1.5 true dip at Ve=30: apparent = arctan(30 x tan(1.5)) = 38.2. 15m layer appears 450 display units. Must communicate factor and warn about distortion.",
+    "explanation": "Dramatic distortion requires clear communication."
+  },
+  {
+    "type": "essay",
+    "question": "Compare direct and surface-based cross-section creation.",
+    "correct": "Direct: connect wells with geological judgment. Validated at control points. Surface-based: sample interpolated rasters. Smoother, extends into data gaps. Using both provides validation through consistency checks.",
+    "explanation": "Methods are complementary."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss remote sensing contributions despite invisible subsurface.",
+    "correct": "GRACE: density contrasts, storage changes. SkyTEM: shallow imaging to 200-300m. InSAR: subsidence detection. G3P: basin-scale validation. Not direct imaging but valuable indirect constraints.",
+    "explanation": "Multiple indirect contributions from diverse sensors."
+  },
+  {
+    "type": "essay",
+    "question": "Describe combining older and newer Hungarian borehole data.",
+    "correct": "Older: HD72/EOV variable accuracy, uncertain elevations, old nomenclature. Newer: GPS WGS84, precision depths, modern terms. Requires coordinate transformations, datum conversions, nomenclature mapping, quality flags, weighted interpolation.",
+    "explanation": "Careful integration prevents systematic errors."
+  },
+  {
+    "type": "essay",
+    "question": "Explain GeoVolume features and their construction.",
+    "correct": "Multipatch features representing full 3D geometry. Built from top and bottom surfaces (TINs), clipped to GeoArea extents. Enable volumetric calculations and intuitive 3D visualization. Computationally intensive; require quality checking.",
+    "explanation": "Most complete representation but most effort."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why Great Plain is not a simple layer-cake.",
+    "correct": "Deltaic environment produced laterally discontinuous sand bodies. 10km away, sands may become clays. Gradational boundaries, variable sand-clay ratios. Creates 3D mosaic requiring acknowledgment of internal heterogeneity.",
+    "explanation": "Depositional complexity creates framework challenges."
+  },
+  {
+    "type": "essay",
+    "question": "Explain kriging variance map for data collection planning.",
+    "correct": "Variance lowest near boreholes, highest in gaps. Maximum standard deviation indicates most uncertain areas. Drilling in high-variance areas gives greatest information gain. Optimizes cost-effectiveness of exploration programs.",
+    "explanation": "Transforms uncertainty into actionable guidance."
+  },
+  {
+    "type": "essay",
+    "question": "Describe automated framework processing via GeoRasters catalog.",
+    "correct": "HorizonID indexing enables algorithm iteration in depositional order. Cross-sections generated by sampling each raster along section line in sequence. Volume construction fills space between successive horizons. Without indexing, manual identification required.",
+    "explanation": "Catalog enables automated reproducible workflows."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss thermal water dimension in Great Plain framework.",
+    "correct": "Elevated gradient (45 mK/m) means 50-90C at 1-2km depth. Thermal aquifer has moderate K and confining layers maintain pressure/temperature. Framework informs: where to produce and at what temperature, confining protection, flow modeling for long-term effects.",
+    "explanation": "Thermal dimension adds scientific and economic significance."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the nine steps of framework implementation.",
+    "correct": "Define conceptual model, create geodatabase, delineate GeoArea, import boreholes, create cross-sections, interpolate surfaces, construct volumes, create XS2D views, produce deliverables. Iterative; changes propagate via HGUID.",
+    "explanation": "Systematic but iterative workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss open-source tools for framework construction.",
+    "correct": "GemPy: implicit 3D modeling. PyVista/Subsurface: visualization and data management. QGIS with plugins: 2D sections and 3D visualization. Concepts (HGUID, HorizonID) are platform-independent. Same logical structure regardless of tools.",
+    "explanation": "Concepts transfer across platforms."
+  },
+  {
+    "type": "essay",
+    "question": "Explain quality control of formation picks.",
+    "correct": "Check vertical order at each well, reasonable elevations for regional structure, no obvious outliers (>3 std dev from trend). Statistical detection supplements judgment since outliers may be real faults. Document quality and source of each pick.",
+    "explanation": "QC prevents errors propagating into surfaces."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the XS2D coordinate transformation mathematics.",
+    "correct": "Distance along section is cumulative arc length of the polyline. 3D point projected to nearest point on section line. z-coordinate scaled by vertical exaggeration. Curved path unfolded into straight horizontal axis. Offset records projection distance.",
+    "explanation": "Transforms 3D curved sections to 2D flat displays."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Pannonian Basin formation mechanism.",
+    "correct": "Formed during Miocene by back-arc extension. Retreating subduction slab caused crust thinning and subsidence. Lake Pannon filled the basin 11.6-4 Mya. Progressive infilling created characteristic clinoform architecture controlling the hydrogeologic framework.",
+    "explanation": "Tectonic history controls modern hydrogeology."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how property surfaces guide thermal water management.",
+    "correct": "Temperature surface guides well siting for desired temperatures. TDS surface shows suitability for bathing (<5000 mg/L) vs treatment needs. Conductivity surface indicates productive vs limited areas. All in GeoRasters catalog organized by HGUID.",
+    "explanation": "Property surfaces translate framework into management decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete GeoRasters catalog for the Great Plain.",
+    "correct": "Contains formation top surfaces (basement, confining, thermal, transitional, shallow) indexed by HorizonID, plus property surfaces (K, temperature, TDS) for the thermal aquifer. All linked through HGUID/HGUCode. Enables both structural and parametric analysis.",
+    "explanation": "Comprehensive catalog for both geometry and properties."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the conceptual model in framework construction.",
+    "correct": "Before creating spatial data, establish the set of hydrogeologic units. Review regional geology, maps, borehole data. Decide how to group formations into categories. Populate HydrogeologicUnit table with HorizonIDs. This step drives all subsequent work.",
+    "explanation": "Conceptual model is the intellectual foundation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how INSPIRE facilitates pan-European geological data access.",
+    "correct": "INSPIRE creates legally binding harmonized specifications. GeoSciML-based encoding for units, boreholes, mapped features. Enables cross-border queries for transboundary studies. EGDI portal provides progressive access. Implementation varies but direction is clear.",
+    "explanation": "Legal framework drives data harmonization."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the iterative refinement process in framework construction.",
+    "correct": "Cross-sections reveal correlation errors; surfaces show unrealistic features; new data arrives. HGUID system propagates conceptual changes consistently. GeoRasters allows surface replacement without disrupting structure. Multiple iterations improve both framework and model.",
+    "explanation": "Geodatabase design supports iterative workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the Pannonian sequence controls framework heterogeneity.",
+    "correct": "Clinoform architecture means NW received sand earlier (more permeable), SE stayed clay-rich longer. Individual sand bodies discontinuous at bed scale. Regional character consistent but internal properties heterogeneous. Framework must acknowledge this at appropriate scale.",
+    "explanation": "Depositional architecture creates heterogeneity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the 200-borehole kriging example.",
+    "correct": "200 boreholes in 40x30 km area. Variogram: nugget 100m2, sill 4500m2, range 12km, anisotropy 1.5 at N315. Spherical model, 50m cells. RMSE 8.3m over 270m range. Max std dev 25m in data gaps. Demonstrates practical kriging workflow.",
+    "explanation": "Concrete example illustrates abstract kriging concepts."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how GeoSection features relate to SectionLine features.",
+    "correct": "SectionLine defines the map trace. GeoSection stores 3D panels per unit per line. Relationship is one-to-many via SectionID matching SectionLine HydroID. Complete section through 4 units needs 4 GeoSection features.",
+    "explanation": "Two feature classes work together for cross-sections."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the XS2D feature class family.",
+    "correct": "XS2D_Panel: 2D polygon panels per unit. XS2D_BoreLine: projected borehole intervals. XS2D_PanelDivider: vertical lines at section bends. XS2D_MajorGrid/MinorGrid: coordinate reference lines. XS2D_Catalog: management table tracking associations.",
+    "explanation": "Family provides complete 2D cross-section display."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss scale and resolution considerations in framework construction.",
+    "correct": "Regional (1:500K) uses broad units and coarse surfaces. Site-scale (1:10K) uses fine units and high resolution. Cell size must match data density: not smaller than 1/4 average data spacing. High-res from sparse data creates false precision.",
+    "explanation": "Resolution must match data density."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the data quality and documentation best practices.",
+    "correct": "Maintain quality flags for each pick: source, identification method, uncertainty. Reconcile nomenclature, datums, coordinate systems before interpolation. Document interpretation criteria. Use metadata to weight data during interpolation.",
+    "explanation": "Quality metadata prevents systematic errors."
+  },
+  {
+    "type": "essay",
+    "question": "Explain unconformity handling in framework construction.",
+    "correct": "Unconformities create missing units in parts of study area. Interpolation must handle gracefully: don't generate surfaces where units are absent, or flag absence. Volume calculations must exclude nonexistent rock. Adds complexity to the workflow.",
+    "explanation": "Missing units require special treatment."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of GRACE data in framework validation.",
+    "correct": "GRACE provides basin-scale storage change estimates. Compare with framework-based storage calculations. If predicted capacity is inconsistent with observed changes, framework needs revision. Large-scale validation tool.",
+    "explanation": "Satellite data provides independent framework validation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of effective porosity in volume calculations.",
+    "correct": "Framework gives aquifer volume. Multiply by effective porosity for groundwater storage capacity. For Great Plain thermal aquifer: 8.52 km3 x 0.25 = 2.13 km3 storage. This fundamental calculation requires proper framework surfaces.",
+    "explanation": "Porosity converts volume to storage capacity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Data Model independence from software platform.",
+    "correct": "Concepts of HydrogeologicUnit table, HGUID linkages, HorizonID sequencing, GeoRasters catalogs work in any GIS. QGIS+GemPy follows same logic as ArcGIS+Arc Hydro GW. The data model is the conceptual framework; software is implementation.",
+    "explanation": "Concepts transfer regardless of specific tools."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of confining units in the thermal aquifer system.",
+    "correct": "Confining clays above and below maintain pressure and temperature in the thermal aquifer. Their thickness, continuity, and properties determine: protection from contamination, hydraulic connection to shallow systems, vulnerability to overexploitation. Areas with thin/absent confining layers are at risk.",
+    "explanation": "Confining units are critical for thermal resource protection."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of the sand-to-clay ratio in the thermal aquifer.",
+    "correct": "The Ujfalu Formation has variable sand-clay proportions. NW more sand-dominated (shelf prograded earlier, more productive). SE more clay-rich (deep-water persisted longer). This ratio controls local transmissivity and productivity. Framework must capture this spatial variability.",
+    "explanation": "Sand-clay ratio drives local aquifer productivity."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how framework construction supports well siting decisions.",
+    "correct": "Framework defines aquifer geometry (where to drill), thickness (how much water available), depth (how deep to drill), hydraulic properties (expected yield). Temperature and TDS surfaces guide thermal well targeting. Confining unit maps show protection levels. GeoRasters catalog provides all needed spatial information.",
+    "explanation": "Framework directly informs practical well siting."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the artesian conditions in the Great Plain thermal system.",
+    "correct": "Piezometric surface of thermal aquifer often above ground level. Wells flow naturally without pumping. Results from confining clay pressure maintenance and regional hydraulic gradient. Economically valuable (minimal pumping energy). Framework maps where artesian conditions exist.",
+    "explanation": "Artesian flow reflects the confined pressure system."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss interpolation method selection criteria.",
+    "correct": "Depends on data density, expected surface behavior, project requirements. Dense/smooth: IDW or natural neighbor. Sparse/directional trends: kriging preferred for uncertainty estimates and anisotropy. Known faults: fault-bounded methods. Surface with abrupt changes: tension spline.",
+    "explanation": "Method choice reflects geological understanding."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the GeoRasters HorizonID enables automated cross-section generation.",
+    "correct": "Algorithm iterates through catalog in HorizonID order, sampling each raster at regular intervals along section line. Correct vertical sequence guaranteed. Without indexing, manual identification and sequencing needed -- tedious and error-prone with many units.",
+    "explanation": "HorizonID automation replaces manual sequencing."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the geological complexity of the Pannonian Basin basement.",
+    "correct": "Pre-Neogene rocks (Mesozoic carbonates, Paleozoic metamorphics, crystalline basement) form irregular faulted surface. Deep grabens separated by horst blocks. Miocene extensional faults create hundreds to thousands of meters of offset. Cannot be interpolated with simple methods.",
+    "explanation": "Complex faulted basement requires specialized interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical significance of 3D GeoVolume visualization.",
+    "correct": "Viewers rotate, slice, query the model. Select individual units to see geometry. Examine stacking and interaction. Identify thinning and disappearance areas. Invaluable for stakeholder communication: explaining thermal water flow, contamination migration directions to non-specialists.",
+    "explanation": "3D visualization bridges technical analysis and stakeholder understanding."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the feedback loop between framework revision and model improvement.",
+    "correct": "Early models treated thermal aquifer as single homogeneous layer. Could not match observed temperature and head distributions at individual well fields. Framework revision added sub-units (delta-front sands vs pro-delta clays). Improved models showed much better agreement. Only possible because HGUID system accommodated additional units.",
+    "explanation": "Framework refinement enables model improvement."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how kriging anisotropy improves Great Plain thermal aquifer interpolation.",
+    "correct": "The surface is smoother along NW-SE shelf progradation direction than perpendicular. Anisotropy ratio 1.5 at N315 captures this. Incorporating directional variation into the variogram model improves interpolation, especially in sparse-data areas where regional trend provides useful information.",
+    "explanation": "Geological knowledge of depositional direction improves interpolation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical challenge of gradational Pannonian formation boundaries.",
+    "correct": "Unlike sharp limestone contacts, Pannonian sediments grade from clay to sand repeatedly. Identifying formation tops requires interpreting transitions rather than picking sharp contacts. Geophysical logs (SP, resistivity) provide more objective criteria than lithological descriptions alone. Different interpreters may draw boundaries differently.",
+    "explanation": "Gradational boundaries create interpretation ambiguity."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the complete international comparison of framework approaches.",
+    "correct": "US: NWIS, state databases, Arc Hydro GW, 1:24K-1:500K. EU: INSPIRE, GeoSciML, EGDI, 1:50K-1:500K. Global: OneGeology, IGRAC, GeoSciML. Tools: GemPy (open), Leapfrog (commercial), FEFLOW. Scale, standards, and institutional context vary but fundamental concepts are universal.",
+    "explanation": "International comparison shows universal concepts with local implementation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the XS2D_Catalog management table.",
+    "correct": "A geodatabase may contain many section lines, each with multiple XS2D feature classes. The catalog provides a directory: which feature classes belong to which sections, what role each plays (Panel, BoreLine, Grid). Essential for managing complex multi-section projects.",
+    "explanation": "Catalog organizes the potentially complex XS2D feature collection."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how TIN surfaces are used in GeoVolume construction.",
+    "correct": "Raster surfaces are converted to TINs (Triangulated Irregular Networks). Upper and lower TIN surfaces define unit boundaries. Lateral boundaries from GeoArea polygons. Closed solid geometry built from these three boundary components. Stored as multipatch features. Computationally intensive for complex geometries.",
+    "explanation": "TIN conversion enables 3D solid construction from raster surfaces."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the HydroID attribute across the framework data model.",
+    "correct": "HydroID is the unique internal identifier for every feature in the geodatabase. It enables relationships: SectionID references SectionLine HydroID, WellID references Well HydroID. Unlike HGUID (conceptual unit ID), HydroID uniquely identifies each spatial feature regardless of which unit it represents.",
+    "explanation": "HydroID provides unique spatial identity; HGUID provides conceptual classification."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the WFD regulation of Hungary's thermal aquifers through the framework.",
+    "correct": "WFD requires quantitative and chemical status assessment for all groundwater bodies including thermal aquifers. The framework underpins groundwater body delineation and status assessment. OVF monitoring includes dedicated thermal wells. Results feed River Basin Management Plans. The European Green Deal further emphasizes quantitative management.",
+    "explanation": "Regulatory framework drives framework construction and maintenance."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the importance of documenting vertical exaggeration in published views.",
+    "correct": "Cross-sections with exaggeration dramatically overstate dip angles and layer thicknesses. Without clear labeling, non-specialists may interpret geometry incorrectly. Any quantitative measurements must be corrected to true scale. Grid lines help maintain awareness of true dimensions. Exaggeration factor must be stated prominently.",
+    "explanation": "Clear communication prevents misinterpretation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zagyva Formation represents continental alluvial deposits.",
+    "correct": true,
+    "explanation": "Post-lake-phase alluvial plain deposits."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoVolume features enable volumetric calculations.",
+    "correct": true,
+    "explanation": "Calculate total aquifer volume and storage."
+  },
+  {
+    "type": "true_false",
+    "question": "XS2D_Catalog tracks feature-to-section associations.",
+    "correct": true,
+    "explanation": "Directory of all components per section line."
+  },
+  {
+    "type": "true_false",
+    "question": "Natural Neighbor handles directional anisotropy.",
+    "correct": false,
+    "explanation": "Cannot handle anisotropy; kriging can."
+  },
+  {
+    "type": "true_false",
+    "question": "IDW can extrapolate well beyond data extent.",
+    "correct": false,
+    "explanation": "Poor extrapolation capability."
+  },
+  {
+    "type": "true_false",
+    "question": "Basal clay gets HorizonID 0 in the four-layer example.",
+    "correct": true,
+    "explanation": "Lowest unit gets smallest ID."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoSection features carry HGUID attributes.",
+    "correct": true,
+    "explanation": "Links to HydrogeologicUnit table."
+  },
+  {
+    "type": "true_false",
+    "question": "Algyo Formation represents deltaic sands.",
+    "correct": false,
+    "explanation": "Shelf-margin slope deposits; Ujfalu is deltaic."
+  },
+  {
+    "type": "true_false",
+    "question": "Thickness = top minus bottom raster difference.",
+    "correct": true,
+    "explanation": "h = z_top - z_bot."
+  },
+  {
+    "type": "true_false",
+    "question": "Spline minimizes total curvature.",
+    "correct": true,
+    "explanation": "Mathematical smooth fit."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a hydrogeologic unit.",
+    "correct": "A body of rock sufficiently distinct in hydraulic properties to be treated as a single unit. Classified by permeability: aquifers (permeable), confining units (impermeable), aquitards (semi-permeable). Simplifies geology for water management purposes.",
+    "explanation": "Fundamental building block of the framework."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the conceptual model drives all subsequent work.",
+    "correct": "Before spatial data, establish hydrogeologic units by reviewing geology, maps, boreholes. Populate HydrogeologicUnit table with HorizonIDs. This defines what units exist and their vertical sequence. All spatial representations reference these definitions.",
+    "explanation": "Conceptual model is intellectual foundation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the many-to-one relationship between features and units.",
+    "correct": "A single conceptual unit may require many spatial features (multiple polygons for discontinuous extent). All share the same HGUID. This pattern recurs throughout the model: the physical complexity requires many features per concept.",
+    "explanation": "Physical complexity requires many spatial features per concept."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how cross-sections serve as quality control tools.",
+    "correct": "Viewing stratigraphy in cross-section reveals: misidentified formation picks, incorrect correlations between wells, areas where conceptual model needs revision. Issues invisible in plan view become obvious in section view.",
+    "explanation": "Cross-sections reveal errors invisible in plan view."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the SectionID attribute in GeoSection.",
+    "correct": "SectionID equals the HydroID of the associated SectionLine, establishing the one-to-many relationship. One section line has many panels (one per hydrogeologic unit). This enables queries: select all panels for a given section.",
+    "explanation": "Links panels to their parent section line."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Edwards Aquifer as framework simplification example.",
+    "correct": "Ten stratigraphic formations collapsed to four hydrogeologic units: Person and Kainer Formations, plus confining units. Georgetown, Cyclic/Marine, Leached/Collapsed, Regional Dense members grouped because combined hydraulic behavior matters more than individual stratigraphy for modeling.",
+    "explanation": "Dramatic simplification demonstrates framework purpose."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how effective porosity converts volume to storage.",
+    "correct": "Framework gives total aquifer rock volume. Multiplying by effective porosity gives water storage capacity: only the connected pore space holds extractable water. For the example: 8.52 km3 x 0.25 = 2.13 km3. This fundamental calculation requires both accurate framework surfaces and porosity estimates.",
+    "explanation": "Porosity bridges volume geometry to water resources."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how GRACE data serve as large-scale framework validation.",
+    "correct": "GRACE provides basin-scale monthly total water storage changes. After subtracting surface water and soil moisture, groundwater storage changes remain. If framework-predicted capacity is inconsistent with GRACE-observed changes, the framework may need revision. Provides independent check at ~300km resolution.",
+    "explanation": "Satellite gravity provides independent basin-scale check."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the Hungarian MBFSZ borehole database.",
+    "correct": "Contains tens of thousands of boreholes spanning over 150 years. Oil/gas campaigns provided deep basement data. OVF water well database adds shallow coverage. This exceptional density enables detailed framework construction. The database quality varies from sparse 19th-century logs to modern geophysical data.",
+    "explanation": "Hungary's rich borehole heritage enables detailed framework construction."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the data model supports adding new units during a project.",
+    "correct": "If a unit is subdivided, new entries in HydrogeologicUnit table get new HGUIDs. Spatial features updated to reference new IDs. GeoRasters can be replaced without disrupting catalog structure. The HGUID-based system propagates changes consistently across all representations.",
+    "explanation": "Flexible system accommodates framework evolution."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of clinoform architecture in the Pannonian Basin.",
+    "correct": "Clinoforms are inclined depositional surfaces reflecting the progressive filling of Lake Pannon. The shelf prograded from NW to SE, creating inclined sand-clay packages. This architecture controls where sand-rich (productive) vs clay-rich (less productive) sections occur. Understanding clinoforms is essential for predicting lateral aquifer character changes.",
+    "explanation": "Clinoforms explain lateral heterogeneity."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the GeoRasters catalog supports both structural and operational needs.",
+    "correct": "Structural: formation top surfaces indexed by HorizonID define 3D geometry. Operational: property surfaces (temperature, TDS, K) guide well siting and management decisions. Both organized by HGUID in one queryable collection. This dual purpose makes the catalog central to both framework construction and resource management.",
+    "explanation": "Catalog serves both geological and management purposes."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of Hungary's geothermal gradient for the framework.",
+    "correct": "At 45 mK/m (1.5x global average), the gradient means groundwater at 1-2 km reaches 50-90C. This makes the thermal aquifer system one of Europe's most important geothermal resources. The framework must accurately map this system's geometry, thickness, and properties to guide sustainable exploitation and protect the resource.",
+    "explanation": "Exceptional gradient makes the framework nationally significant."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the XS2D_BoreLine Offset attribute supports quality assessment.",
+    "correct": "Offset records distance from borehole to section line. Boreholes close to the line provide reliable projected data; distant ones may introduce distortion. For regional sections, boreholes within 3 km are typically acceptable. Offset allows users to assess projection reliability for each data point.",
+    "explanation": "Offset quantifies projection reliability per borehole."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Subsurface Python library and its relationship to Arc Hydro GW.",
+    "correct": "Developed by the Software Underground community, Subsurface provides data structures for wells, cross-sections, surfaces, and volumes in Python. Concepts parallel Arc Hydro GW feature classes but in open-source Python. Demonstrates that the data model concepts are platform-independent.",
+    "explanation": "Open-source equivalent of Arc Hydro GW concepts."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of documenting interpretation criteria.",
+    "correct": "Different hydrogeologists may classify the same borehole differently, especially with gradational boundaries. Documenting criteria (what defines the top of the thermal aquifer, what grain-size threshold separates sand from clay) enables reproducibility, peer review, and uncertainty estimation. Essential for multi-person projects.",
+    "explanation": "Documentation enables reproducible hydrogeological interpretation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the iterative framework-model loop improved Great Plain thermal modeling.",
+    "correct": "Early models: single homogeneous thermal aquifer layer. Could not match temperature/head distributions at individual well fields. Revision: subdivided into delta-front sands and pro-delta clays. Improved models showed much better agreement. Only possible because HGUID system accommodated additional units without restructuring.",
+    "explanation": "Framework refinement driven by model calibration deficiencies."
+  },
+  {
+    "type": "essay",
+    "question": "Describe what makes the Pannonian Basin framework internationally instructive.",
+    "correct": "It exemplifies: (1) geological complexity (gradational boundaries, lateral variability). (2) Practical importance (thermal energy, drinking water, agriculture). (3) Institutional complexity (SZTFH geological data, OVF monitoring, WFD regulation). (4) Scale challenges (regional to site-scale). (5) International dimension (6 neighboring countries share the basin).",
+    "explanation": "Multi-dimensional challenges make it an instructive case study."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the variogram sill and its practical significance.",
+    "correct": "The sill is the total variance of the dataset, the plateau the variogram reaches at the range distance. Beyond the range, points are uncorrelated. The sill-to-nugget ratio indicates how much variation is spatially structured vs random. High nugget relative to sill suggests poor spatial predictability.",
+    "explanation": "Sill quantifies total spatial variability."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the raster cell size should match data density.",
+    "correct": "Creating high-resolution surfaces from sparse data produces smooth but unconstrained surfaces -- false precision. Guideline: cell size >= 1/4 of average data spacing. For 2km spacing, 500m cells are appropriate. This ensures interpolated values are actually constrained by nearby observations.",
+    "explanation": "Resolution must reflect data support, not computational capability."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of geological judgment in interpolation parameter selection.",
+    "correct": "Geological knowledge guides: method choice (kriging for sparse data, IDW for dense), anisotropy direction (NW-SE for Pannonian progradation), fault handling (bounded vs continuous), surface behavior (smooth for formation tops, rough for basement). Algorithms are tools; geological thinking directs their application.",
+    "explanation": "Interpolation is a geological activity, not purely mathematical."
+  }
+]

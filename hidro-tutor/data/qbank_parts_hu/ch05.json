@@ -1,0 +1,3402 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a legelterjedtebb felszínábrázolási módszer a hidrológiai GIS-ben?",
+    "options": [
+      "A) TIN",
+      "B) Szabályos rács (raszter)",
+      "C) Szintvonal-áramvonal",
+      "D) Vektoros poligon"
+    ],
+    "correct": "B",
+    "explanation": "A szabályos rács uralja a hidrológiai GIS-t számítási egyszerűsége miatt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a DEM rövidítés?",
+    "options": [
+      "A) Digital Elevation Model",
+      "B) Data Entry Module",
+      "C) Dynamic Earth Mapping",
+      "D) Distributed Element Method"
+    ],
+    "correct": "A",
+    "explanation": "DEM = Digitális Domborzatmodell (Digital Elevation Model).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a TIN rövidítés?",
+    "options": [
+      "A) Topographic Index Number",
+      "B) Triangulated Irregular Network",
+      "C) Terrain Information Node",
+      "D) Total Interpolated Network"
+    ],
+    "correct": "B",
+    "explanation": "TIN = szabálytalan háromszögháló.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány elem definiál teljesen egy rácsot?",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 6",
+      "D) 8"
+    ],
+    "correct": "C",
+    "explanation": "Hat: kiterjedés, cellaméret, sorok/oszlopok, alapreferencia, NODATA, adattípus.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik a cellaszámmal, ha a cellaméretet felezzük?",
+    "options": [
+      "A) Megkétszereződik",
+      "B) Megnégyszerezödik",
+      "C) Nyolcszorosára nő",
+      "D) Nem változik"
+    ],
+    "correct": "B",
+    "explanation": "A cellaméret felezése négyszeres cellaszám-növekedést okoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a NODATA szerepe?",
+    "options": [
+      "A) Maximális magasság",
+      "B) Hiányzó/érvénytelen adat jelölése",
+      "C) Vízfelszín jelölése",
+      "D) Nulla kódolása"
+    ],
+    "correct": "B",
+    "explanation": "A NODATA az érvénytelen cellákat jelöli.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a gyakori NODATA-érték?",
+    "options": [
+      "A) 0",
+      "B) 999",
+      "C) -9999",
+      "D) 1"
+    ],
+    "correct": "C",
+    "explanation": "A -9999 a leggyakoribb NODATA-kód.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány értékes jegyet ad a 32 bites lebegőpontos szám?",
+    "options": [
+      "A) ~3",
+      "B) ~5",
+      "C) ~7",
+      "D) ~15"
+    ],
+    "correct": "C",
+    "explanation": "~7 értékes jegy, ami bőven elegendő hidrológiai alkalmazásokhoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Honnan indul a cellaindexelés?",
+    "options": [
+      "A) Jobb alsó",
+      "B) Bal felső",
+      "C) Közép",
+      "D) Bal alsó"
+    ],
+    "correct": "B",
+    "explanation": "A bal felső sarokból, lefelé és jobbra növekvő indexekkel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adattípust használunk felszínborításhoz?",
+    "options": [
+      "A) Lebegőpontos",
+      "B) Egész számú",
+      "C) Komplex",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "A felszínborítás kategoriális, egész számú kódokkal.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a skálatriplet?",
+    "options": [
+      "A) Három DEM-réteg",
+      "B) Kiterjedés, térköz, tartó",
+      "C) X, Y, Z koordináták",
+      "D) RGB színcsatornák"
+    ],
+    "correct": "B",
+    "explanation": "Blöschl skálatripletje: extent, spacing, support.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Ki formalizálta a skálatriplet fogalmát?",
+    "options": [
+      "A) Tomlin",
+      "B) Goodchild",
+      "C) Blöschl",
+      "D) Maidment"
+    ],
+    "correct": "C",
+    "explanation": "Günter Blöschl 1995-ben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ASCII rács kiterjesztése?",
+    "options": [
+      "A) .tif",
+      "B) .asc",
+      "C) .gdb",
+      "D) .shp"
+    ],
+    "correct": "B",
+    "explanation": ".asc kiterjesztésű szöveges fájl.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány fejlécsor van ASCII rácsban?",
+    "options": [
+      "A) 3",
+      "B) 4",
+      "C) 6",
+      "D) 8"
+    ],
+    "correct": "C",
+    "explanation": "ncols, nrows, xllcorner, yllcorner, cellsize, NODATA_value.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GeoTIFF fő előnye?",
+    "options": [
+      "A) Szöveges",
+      "B) CRS belsőleg tárolva, tömöríthető",
+      "C) Csak ArcGIS",
+      "D) Csak egész számok"
+    ],
+    "correct": "B",
+    "explanation": "A leginteroperábilisabb raszterformátum.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora egy 30 m-es cella területe?",
+    "options": [
+      "A) 30 m²",
+      "B) 300 m²",
+      "C) 900 m²",
+      "D) 9000 m²"
+    ],
+    "correct": "C",
+    "explanation": "30 × 30 = 900 m².",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány értelmezés van Goodchild szerint?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "C",
+    "explanation": "Térbeli átlag, pontminta, rácscsomópont.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Nyquist-tétel térbeli alkalmazása?",
+    "options": [
+      "A) 1 cella elég",
+      "B) 2 cella per elem",
+      "C) 3 cella per elem",
+      "D) Nem alkalmazható"
+    ],
+    "correct": "B",
+    "explanation": "Legalább két minta per hullámhossz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent az aliasing?",
+    "options": [
+      "A) Tömörítés",
+      "B) Kis elemek félreábrázolása/eltűnése",
+      "C) Vetületi hiba",
+      "D) Színhiba"
+    ],
+    "correct": "B",
+    "explanation": "A durva térköz hamisan ábrázolja a kis elemeket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a tartó (support)?",
+    "options": [
+      "A) Adatkészlet mérete",
+      "B) Egyetlen mérés lábnyoma",
+      "C) Mintaponttávolság",
+      "D) Fájlformátum"
+    ],
+    "correct": "B",
+    "explanation": "A tartó az, amire egy mérés vonatkozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi a lebegőpontos rácsot?",
+    "options": [
+      "A) Kategóriákat tárol",
+      "B) Folytonos valós számokat",
+      "C) Csak 0 és 1",
+      "D) Szöveget"
+    ],
+    "correct": "B",
+    "explanation": "Valós számok: magasság, hőmérséklet stb.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a VAT?",
+    "options": [
+      "A) Tömörítés",
+      "B) Keresőtábla egész számú rácsokhoz",
+      "C) Vetületi info",
+      "D) Idősor"
+    ],
+    "correct": "B",
+    "explanation": "Value Attribute Table: kategóriákhoz attribútumok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány iránykód van a D8 rácsban?",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 16",
+      "D) 256"
+    ],
+    "correct": "B",
+    "explanation": "1, 2, 4, 8, 16, 32, 64, 128.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a D-infinity előnye?",
+    "options": [
+      "A) Kevesebb cella",
+      "B) Folytonos irányeloszlás",
+      "C) Gyorsabb",
+      "D) Kevesebb memória"
+    ],
+    "correct": "B",
+    "explanation": "A folyásirányt 0–2π között szögként tárolja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen típusú a DEM?",
+    "options": [
+      "A) Egész számú",
+      "B) Lebegőpontos",
+      "C) Kategoriális",
+      "D) Bináris"
+    ],
+    "correct": "B",
+    "explanation": "Folytonos magassági értékek, lebegőpontos tárolással.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a középpont-szabály?",
+    "options": [
+      "A) Max érték",
+      "B) A középpontot tartalmazó poligon értéke",
+      "C) Átlag",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "A raszterizálás alapértelmezett módszere.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a legnagyobb részesedés szabálya?",
+    "options": [
+      "A) Középponti érték",
+      "B) Legtöbb területet elfoglaló poligon értéke",
+      "C) Legkisebb poligon",
+      "D) Átlag"
+    ],
+    "correct": "B",
+    "explanation": "Reprezentatívabb, de költségesebb módszer.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a szintvonal-áramvonal modell?",
+    "options": [
+      "A) Raszteres DEM",
+      "B) Szintvonalak és merőleges áramvonalak",
+      "C) Műholdas kép",
+      "D) Vektoros háló"
+    ],
+    "correct": "B",
+    "explanation": "Ausztrál kutatók fejlesztették az 1970-80-as években.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Miért nem terjedt el a szintvonal-áramvonal modell?",
+    "options": [
+      "A) Túl pontos",
+      "B) Nincs GIS-implementáció",
+      "C) Túl gyors",
+      "D) Kevés adat kell"
+    ],
+    "correct": "B",
+    "explanation": "Kutatási eszköz maradt, nincs szabványos szoftver.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány cellát tartalmaz Magyarország 30 m-es DEM-je?",
+    "options": [
+      "A) ~1M",
+      "B) ~10M",
+      "C) ~100M",
+      "D) ~1Mrd"
+    ],
+    "correct": "C",
+    "explanation": "~93000 km² / 0,0009 km² ≈ 100 millió.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 8 bites előjel nélküli egész tartománya?",
+    "options": [
+      "A) -128–127",
+      "B) 0–255",
+      "C) 0–65535",
+      "D) -32768–32767"
+    ],
+    "correct": "B",
+    "explanation": "256 lehetséges érték: 0-tól 255-ig.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 16 bites előjeles egész tartománya?",
+    "options": [
+      "A) 0–255",
+      "B) 0–65535",
+      "C) -32768–32767",
+      "D) -128–127"
+    ],
+    "correct": "C",
+    "explanation": "-32768-tól 32767-ig terjedő egész.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány bájt egy 32 bites lebegőpontos cella?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "C",
+    "explanation": "32 bit = 4 bájt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a kiterjedés (extent)?",
+    "options": [
+      "A) Cellaszám",
+      "B) A rács határoló földrajzi területe",
+      "C) Cellaméret",
+      "D) Adattípus"
+    ],
+    "correct": "B",
+    "explanation": "xmin, ymin, xmax, ymax koordináták.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az alapreferencia-pont?",
+    "options": [
+      "A) Rács középpontja",
+      "B) Referenciasarok koordinátája a CRS-ben",
+      "C) NODATA helye",
+      "D) Max magasság"
+    ],
+    "correct": "B",
+    "explanation": "A sarokkoordináta rögzíti a rácsot a CRS-ben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kell pufferzóna a vízgyűjtő-DEM-nél?",
+    "options": [
+      "A) Szebb kép",
+      "B) A folyásirány-algoritmusok hibásak lesznek puffer nélkül",
+      "C) Kisebb fájl",
+      "D) Gyorsabb"
+    ],
+    "correct": "B",
+    "explanation": "10-20 cellaszélesség szükséges a vízválasztó minden oldalán.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a leggyakoribb raszterformátum?",
+    "options": [
+      "A) ASCII",
+      "B) Shapefile",
+      "C) GeoTIFF",
+      "D) NetCDF"
+    ],
+    "correct": "C",
+    "explanation": "A GeoTIFF a legelterjedtebb interoperábilis raszterformátum.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a mező (field) fogalma?",
+    "options": [
+      "A) Adatbázis-oszlop",
+      "B) Térben mindenütt definiált mennyiség",
+      "C) Űrlap mező",
+      "D) Fejléc"
+    ],
+    "correct": "B",
+    "explanation": "Folytonos térbeli változó, pl. hőmérséklet, amely hézag nélkül definiált.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Az EOV Easting tartománya?",
+    "options": [
+      "A) 0–400000",
+      "B) 400000–1000000",
+      "C) 0–100000",
+      "D) 1M–2M"
+    ],
+    "correct": "B",
+    "explanation": "Az EOV Easting értékek 400000-tól 1000000-ig terjednek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a sorok-oszlopok összefüggése a kiterjedéssel?",
+    "options": [
+      "A) ncols = xmax × cellsize",
+      "B) ncols = (xmax-xmin)/cellsize",
+      "C) ncols = xmin/cellsize",
+      "D) ncols = kiterjedés+cellaméret"
+    ],
+    "correct": "B",
+    "explanation": "Oszlopszám = (xmax-xmin)/cellaméret.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a HAND?",
+    "options": [
+      "A) Hidrológiai hálózatdefiníció",
+      "B) Height Above Nearest Drainage",
+      "C) High Altitude Numerical Data",
+      "D) Horizontal Area"
+    ],
+    "correct": "B",
+    "explanation": "A legközelebbi vízfolyás feletti függőleges távolság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik újramintavételezés őrzi meg az értékeket?",
+    "options": [
+      "A) Bilineáris",
+      "B) Köbös",
+      "C) Legközelebbi szomszéd",
+      "D) Átlagolás"
+    ],
+    "correct": "C",
+    "explanation": "A legközelebbi szomszéd pontosan megőrzi az eredeti értékeket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit ad a finomabb rácsra újramintavételezés?",
+    "options": [
+      "A) Új információt",
+      "B) Interpolált értékeket, de nem új információt",
+      "C) Jobb pontosságot",
+      "D) Kevesebb cellát"
+    ],
+    "correct": "B",
+    "explanation": "Az újramintavételezés nem növeli az információtartalmat.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ERA5 felbontása?",
+    "options": [
+      "A) 1 km",
+      "B) ~10 km",
+      "C) ~31 km",
+      "D) 100 km"
+    ],
+    "correct": "C",
+    "explanation": "~31 km-es (0,25°) globális felbontás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GPM/IMERG felbontása?",
+    "options": [
+      "A) ~1 km",
+      "B) ~10 km",
+      "C) ~50 km",
+      "D) ~100 km"
+    ],
+    "correct": "B",
+    "explanation": "~10 km-es (0,1°) térbeli felbontás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ASCII rács fő hátránya?",
+    "options": [
+      "A) Nem olvasható",
+      "B) 3-10x nagyobb fájl a szöveges tárolás miatt",
+      "C) Nincs NODATA",
+      "D) Csak ArcGIS"
+    ],
+    "correct": "B",
+    "explanation": "A szöveges formátum rendkívül pazarló a tárhellyel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemző a NODATA-terjedésre?",
+    "options": [
+      "A) NODATA → 0",
+      "B) Bármely NODATA bemenet → NODATA kimenet",
+      "C) NODATA figyelmen kívül marad",
+      "D) NODATA átlagba számít"
+    ],
+    "correct": "B",
+    "explanation": "A NODATA terjedéssel jár a térkép-algebrában.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a DDM-5 felbontása?",
+    "options": [
+      "A) 1 m",
+      "B) 5 m",
+      "C) 10 m",
+      "D) 30 m"
+    ],
+    "correct": "B",
+    "explanation": "A Lechner Tudásközpont 5 m-es magyar DEM-je.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány cella/km² egy 90 m-es DEM-ben?",
+    "options": [
+      "A) ~11",
+      "B) ~123",
+      "C) ~1111",
+      "D) ~10000"
+    ],
+    "correct": "B",
+    "explanation": "1000000 / (90×90) ≈ 123.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány cella/km² egy 10 m-es DEM-ben?",
+    "options": [
+      "A) 100",
+      "B) 1000",
+      "C) 10000",
+      "D) 100000"
+    ],
+    "correct": "C",
+    "explanation": "1000000 / (10×10) = 10000.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a D8 iránykód célja?",
+    "options": [
+      "A) Magasság",
+      "B) A nyolc szomszéd egyikének jelölése",
+      "C) Csapadék",
+      "D) Felszínborítás"
+    ],
+    "correct": "B",
+    "explanation": "Nyolc lehetséges irány a szomszéd cellák felé.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a skálatriplet térköz-komponense?",
+    "options": [
+      "A) Kiterjedés",
+      "B) Térköz",
+      "C) Tartó",
+      "D) Felbontás"
+    ],
+    "correct": "B",
+    "explanation": "Az egymást követő adatértékek közötti távolság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a csapadékmérő térbeli tartója?",
+    "options": [
+      "A) ~200 cm²",
+      "B) ~1 km²",
+      "C) ~100 km²",
+      "D) ~961 km²"
+    ],
+    "correct": "A",
+    "explanation": "A mérőnyílás területe ~200 cm².",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik DEM javítja az SRTM hibáit?",
+    "options": [
+      "A) GLO-30",
+      "B) AW3D30",
+      "C) MERIT DEM",
+      "D) DDM-5"
+    ],
+    "correct": "C",
+    "explanation": "A MERIT DEM szisztematikus hibákat távolít el.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit vegyít a meder-cella 30 m-es DEM-ben?",
+    "options": [
+      "A) Csak a meder mélységét mutatja",
+      "B) Meder és ártér magasságát",
+      "C) Mindig NODATA",
+      "D) Pontos fenékszintet"
+    ],
+    "correct": "B",
+    "explanation": "A meder cellánál keskenyebb, ezért a DEM vegyíti a két értéket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a CORINE raszter adattípusa?",
+    "options": [
+      "A) Lebegőpontos",
+      "B) Egész számú",
+      "C) 64 bites",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Kategoriális: egész számú kódok (pl. 211).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a lebegőpontos rács megjelenítésének alapja?",
+    "options": [
+      "A) Kategóriák",
+      "B) Folytonos színskála",
+      "C) Egyedi értékek",
+      "D) Véletlenszerű"
+    ],
+    "correct": "B",
+    "explanation": "Az adatértékek és színek közötti folytonos leképezés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a fő különbség lebegőpontos és egész számú rács között?",
+    "options": [
+      "A) Fájlméret",
+      "B) Folytonos vs. kategoriális",
+      "C) Nincs",
+      "D) Csak a szín"
+    ],
+    "correct": "B",
+    "explanation": "Lebegőpontos: folytonos; egész: kategoriális adat.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a cella x-koordinátájának képlete?",
+    "options": [
+      "A) x = xmin + j×Δx",
+      "B) x = xmin + (j+0.5)×Δx",
+      "C) x = xmax - j×Δx",
+      "D) x = j×Δx"
+    ],
+    "correct": "B",
+    "explanation": "A cellaközéppont koordinátája a fél cellaszélesség eltolással.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a Copernicus DEM pontossága?",
+    "options": [
+      "A) 10-20 m",
+      "B) 5-10 m",
+      "C) 1-2 m",
+      "D) 10-15 cm"
+    ],
+    "correct": "C",
+    "explanation": "Modern Copernicus DEM: 1-2 m vertikális pontosság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Az ASCII rács alapreferencia-pontja?",
+    "options": [
+      "A) Bal felső",
+      "B) Bal alsó (xllcorner, yllcorner)",
+      "C) Közép",
+      "D) Jobb felső"
+    ],
+    "correct": "B",
+    "explanation": "Az xllcorner, yllcorner a bal alsó sarok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "A GeoTIFF alapreferenciája?",
+    "options": [
+      "A) Bal alsó",
+      "B) Bal felső",
+      "C) Közép",
+      "D) Jobb alsó"
+    ],
+    "correct": "B",
+    "explanation": "A GeoTIFF a bal felső sarkot használja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a 3 ívmásodperces cellaméret méterben?",
+    "options": [
+      "A) ~1 m",
+      "B) ~10 m",
+      "C) ~30 m",
+      "D) ~90 m"
+    ],
+    "correct": "D",
+    "explanation": "0,00083333° ≈ 90 m az egyenlítőnél.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ERA5 tartója?",
+    "options": [
+      "A) 200 cm²",
+      "B) 100 km²",
+      "C) ~961 km²",
+      "D) 10000 km²"
+    ],
+    "correct": "C",
+    "explanation": "~31² ≈ 961 km² rácscella.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "A DDM-5 melyik vetületben készül?",
+    "options": [
+      "A) WGS 84",
+      "B) UTM 34N",
+      "C) EOV",
+      "D) ETRS89"
+    ],
+    "correct": "C",
+    "explanation": "Az EOV (EPSG:23700) vetületben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a lejtésrács adattípusa?",
+    "options": [
+      "A) Egész",
+      "B) Lebegőpontos",
+      "C) Bináris",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "A lejtés folytonos érték.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány bájt egy 16 bites cella?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4",
+      "D) 8"
+    ],
+    "correct": "B",
+    "explanation": "16 bit = 2 bájt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a NODATA-szennyezés?",
+    "options": [
+      "A) Szándékos törlés",
+      "B) Érvényes és NODATA értékek összetévesztése",
+      "C) Véletlenszerű zaj",
+      "D) Műholdas zavar"
+    ],
+    "correct": "B",
+    "explanation": "Ha a NODATA-kód és érvényes értékek ütköznek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a szabályos rács fő gyengesége?",
+    "options": [
+      "A) Nem párhuzamosítható",
+      "B) Egyenletes cellaméret tereptől függetlenül",
+      "C) Nem támogatja a DEM-et",
+      "D) Csak szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Rugalmatlan: sík és bonyolult terep azonos felbontást kap.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Ki vezette be a D8 módszert?",
+    "options": [
+      "A) Tomlin",
+      "B) Blöschl",
+      "C) O'Callaghan és Mark",
+      "D) Goodchild"
+    ],
+    "correct": "C",
+    "explanation": "O'Callaghan és Mark (1984).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Ki fejlesztette a D-infinity-t?",
+    "options": [
+      "A) Jenson",
+      "B) Tarboton",
+      "C) Blöschl",
+      "D) Maidment"
+    ],
+    "correct": "B",
+    "explanation": "Tarboton (1997).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora puffer ajánlott a DEM szélén?",
+    "options": [
+      "A) 1-2 cella",
+      "B) 5 cella",
+      "C) 10-20 cella",
+      "D) 100 cella"
+    ],
+    "correct": "C",
+    "explanation": "10-20 cellaszélesség a vízválasztó körül.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Hány jegyet ad a 64 bites lebegőpontos?",
+    "options": [
+      "A) ~3",
+      "B) ~7",
+      "C) ~15",
+      "D) ~20"
+    ],
+    "correct": "C",
+    "explanation": "Dupla pontosság: ~15 értékes jegy.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a MODIS felbontása?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 250 m",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "A MODIS egyes termékei 250 m felbontásúak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora egy 1 km-es cella területe?",
+    "options": [
+      "A) 1000 m²",
+      "B) 10000 m²",
+      "C) 100000 m²",
+      "D) 1000000 m²"
+    ],
+    "correct": "D",
+    "explanation": "1 km × 1 km = 1 000 000 m².",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a WorldClim felbontása?",
+    "options": [
+      "A) 30 m",
+      "B) 250 m",
+      "C) ~1 km",
+      "D) ~31 km"
+    ],
+    "correct": "C",
+    "explanation": "~1 km-es éghajlati adatkészlet.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Nagy tartóval mért adatok jellemzője?",
+    "options": [
+      "A) Részletes",
+      "B) Simább, helyi szélsőségek elsimulnak",
+      "C) Zajos",
+      "D) Magasabb felbontás"
+    ],
+    "correct": "B",
+    "explanation": "A nagy tartó kiátlagolja a kis léptékű változékonyságot.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik NEM DEM-forrás?",
+    "options": [
+      "A) SRTM",
+      "B) CORINE",
+      "C) GLO-30",
+      "D) AW3D30"
+    ],
+    "correct": "B",
+    "explanation": "A CORINE felszínborítás, nem domborzatmodell.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a rács számítási előnye?",
+    "options": [
+      "A) Pontos geometria",
+      "B) Cellánkénti műveletek párhuzamosíthatók",
+      "C) Kis fájlméret",
+      "D) Topológia"
+    ],
+    "correct": "B",
+    "explanation": "A párhuzamos feldolgozás a rács legnagyobb erőssége.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az xllcorner?",
+    "options": [
+      "A) Oszlopszám",
+      "B) Bal alsó sarok x-koordinátája",
+      "C) Cellaméret x-ben",
+      "D) NODATA"
+    ],
+    "correct": "B",
+    "explanation": "x Lower Left corner.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Víztestekre milyen DEM-értéket rendelnek?",
+    "options": [
+      "A) 999",
+      "B) NODATA vagy 0",
+      "C) -1",
+      "D) Maximális"
+    ],
+    "correct": "B",
+    "explanation": "Egyes DEM-ek NODATA-t, mások 0-t (tengerszint) adnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a cellaszám képlete?",
+    "options": [
+      "A) Sorok + oszlopok",
+      "B) Sorok × oszlopok",
+      "C) Sorok / oszlopok",
+      "D) Sorok - oszlopok"
+    ],
+    "correct": "B",
+    "explanation": "Sorok × oszlopok = összesített cellaszám.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik csapadékforrás a leghosszabb időben elérhető?",
+    "options": [
+      "A) GPM/IMERG",
+      "B) ERA5",
+      "C) Csapadékmérő-hálózat",
+      "D) Radar"
+    ],
+    "correct": "C",
+    "explanation": "A mérőhálózat ~100 éve működik Magyarországon.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a mérőhálózat fő térbeli hátránya?",
+    "options": [
+      "A) Túl sűrű",
+      "B) Pontszerű mérés, interpoláció kell",
+      "C) Túl gyakori",
+      "D) Drága"
+    ],
+    "correct": "B",
+    "explanation": "A mérők között a viharok kimaradhatnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a flow accumulation rács típusa?",
+    "options": [
+      "A) Kategoriális egész",
+      "B) Lebegőpontos",
+      "C) Bináris",
+      "D) Szöveges"
+    ],
+    "correct": "B",
+    "explanation": "Gyakran lebegőpontosként tárolják a nagy értékek miatt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a LiDAR DEM felbontása?",
+    "options": [
+      "A) 90 m",
+      "B) 30 m",
+      "C) 10 m",
+      "D) 1 m"
+    ],
+    "correct": "D",
+    "explanation": "Jellemzően 1 méteres felbontás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik az információval finomabb rácsra mintavételezéskor?",
+    "options": [
+      "A) Nő",
+      "B) Nem változik",
+      "C) Csökken",
+      "D) Kétszereződik"
+    ],
+    "correct": "B",
+    "explanation": "Az információtartalom nem növelhető újramintavételezéssel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a rács legnagyobb előnye?",
+    "options": [
+      "A) Pontos geometria",
+      "B) Egyszerű struktúra, kiszámítható indexelés",
+      "C) Kis fájl",
+      "D) Topológia"
+    ],
+    "correct": "B",
+    "explanation": "A szabályos elrendezés egyszerű navigálást biztosít.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a vektorizálás célja raszterben?",
+    "options": [
+      "A) Tömörítés",
+      "B) Raszteres elemek vektoros objektumokká alakítása",
+      "C) Szimbológia",
+      "D) CRS-váltás"
+    ],
+    "correct": "B",
+    "explanation": "Pl. vízfolyás-cellák vonalláncokká alakítása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az SRTM teljes neve?",
+    "options": [
+      "A) Shuttle Radar Topography Mission",
+      "B) Surface Raster Terrain Model",
+      "C) Standard Reference Topographic Mapping",
+      "D) Satellite Remote Terrain"
+    ],
+    "correct": "A",
+    "explanation": "NASA űrsikló radar-domborzatmérő misszió (2000).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a TIN fő előnye a ráccsal szemben?",
+    "options": [
+      "A) Egyszerűbb",
+      "B) Rugalmas pontsűrítés bonyolult terepen",
+      "C) Több szoftver",
+      "D) Jobb hidrológiai algoritmusok"
+    ],
+    "correct": "B",
+    "explanation": "Ott sűríthető, ahol a terep bonyolult.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi történik DEM-peremnél puffer nélkül?",
+    "options": [
+      "A) Pontosabb",
+      "B) Peremhatások, helytelen lehatárolás",
+      "C) Gyorsabb",
+      "D) Semmi"
+    ],
+    "correct": "B",
+    "explanation": "Hamis vízgyűjtő-határok keletkezhetnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A szabályos rács uralja a hidrológiai GIS-t.",
+    "correct": true,
+    "explanation": "Számítási egyszerűsége miatt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN természetes LiDAR-ábrázolás.",
+    "correct": true,
+    "explanation": "A LiDAR eredendően szabálytalan.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA-cellák részt vesznek a zónális statisztikákban.",
+    "correct": false,
+    "explanation": "Kizárják őket az összesítésből.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A cellaméret tízszeres csökkentése százszoros adatnövekedés.",
+    "correct": true,
+    "explanation": "(10)² = 100-szoros.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 32 bites pontosság elegendő a hidrológiához.",
+    "correct": true,
+    "explanation": "~7 jegy bőven meghaladja a mérési hibát.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A rács rugalmasan alkalmazkodik a terephez.",
+    "correct": false,
+    "explanation": "Az egyforma cellaméret a fő gyengesség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII rács emberi szemmel olvasható.",
+    "correct": true,
+    "explanation": "Egyszerű szöveges formátum.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII hatékonyabb a GeoTIFF-nél.",
+    "correct": false,
+    "explanation": "3-10x nagyobb fájlt ad.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A lebegőpontos rácsnak van VAT-ja.",
+    "correct": false,
+    "explanation": "Csak egész számúnak lehet VAT-ja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A D8 rács lebegőpontos.",
+    "correct": false,
+    "explanation": "Egész számú, 8 értékkel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A Nyquist-tétel szerint 2 minta kell per elem.",
+    "correct": true,
+    "explanation": "Hullámhosszonként legalább kettő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Finomabb rácsra mintavételezés növeli az információt.",
+    "correct": false,
+    "explanation": "Nem hoz létre új információt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A szintvonal-áramvonal modell elterjedt a GIS-ben.",
+    "correct": false,
+    "explanation": "Kutatási eszköz maradt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország 90 m-es DEM-je ~11,5M cella.",
+    "correct": true,
+    "explanation": "~93000 / 0,0081 ≈ 11,5 millió.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA-terjedés megakadályozza a hamis eredményeket.",
+    "correct": true,
+    "explanation": "NODATA bemenet → NODATA kimenet.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A középpont-szabály a legpontosabb raszterizálás.",
+    "correct": false,
+    "explanation": "Kis elemek eltűnhetnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A LiDAR 10-15 cm pontosságú.",
+    "correct": true,
+    "explanation": "Centiméter-szintű vertikális pontosság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A skálatriplet: kiterjedés, felbontás, pontosság.",
+    "correct": false,
+    "explanation": "Kiterjedés, térköz, tartó.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az aliasing csak hangfelvételeknél fordul elő.",
+    "correct": false,
+    "explanation": "Térbeli adatoknál is.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoTIFF bal felső sarkot használ.",
+    "correct": true,
+    "explanation": "A konvenció a bal felső sarok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 90 m DEM alkalmas városi elemzéshez.",
+    "correct": false,
+    "explanation": "Túl durva a kis elemekhez.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A mérőhálózat teljes térbeli lefedettséget ad.",
+    "correct": false,
+    "explanation": "Pontszerű; viharok kimaradhatnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A bilineáris jó kategorikus adatokhoz.",
+    "correct": false,
+    "explanation": "Kategoriáknál legközelebbi szomszéd kell.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A legközelebbi szomszéd blokkos mintázatot ad.",
+    "correct": true,
+    "explanation": "Sima átmenet nélkül.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A D-infinity lebegőpontos szöget tárol.",
+    "correct": true,
+    "explanation": "0 és 2π között.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM-ben hézagok voltak a hegyvidékeken.",
+    "correct": true,
+    "explanation": "Radarárnyékok okozták.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A rács illeszkedik a műholdas kimenetekhez.",
+    "correct": true,
+    "explanation": "A műholdak szabályos rácson adnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ERA5 elsimítja a viharokat.",
+    "correct": true,
+    "explanation": "A ~961 km² tartó kiátlagolja a csúcsot.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A GPM/IMERG a leghosszabb csapadékforrás.",
+    "correct": false,
+    "explanation": "Csak 2000 óta; mérőhálózat ~100 éve.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A D8-at az 1980-as években fejlesztették ki.",
+    "correct": true,
+    "explanation": "O'Callaghan és Mark (1984).",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A vektoros elemek raszterizálása pontos.",
+    "correct": false,
+    "explanation": "Lépcsős élek és minimális cellaszélesség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 8 bites egész max 256 kategória.",
+    "correct": true,
+    "explanation": "0-255 = 256 érték.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszteres vonal min szélessége = cellaméret.",
+    "correct": true,
+    "explanation": "Legalább 1 cellaszélesség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Kiterjedésen túli extrapoláció megbízható.",
+    "correct": false,
+    "explanation": "Csak a kiterjedésen belül megbízható.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A GeoTIFF támogatja a tömörítést.",
+    "correct": true,
+    "explanation": "LZW, DEFLATE stb.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "1 m-es országos DEM terabájtos lenne.",
+    "correct": true,
+    "explanation": "~93 Mrd cella × 4 bájt ≈ 372 GB.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII rácsot minden GIS olvassa.",
+    "correct": true,
+    "explanation": "Univerzálisan támogatott.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "30 m-es DEM mutat 10 m medret.",
+    "correct": false,
+    "explanation": "A meder keskenyebb egy cellánál.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 2. értelmezés pontminta a középpontnál.",
+    "correct": true,
+    "explanation": "Goodchild 2. értelmezése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA-t a metaadatban tárolják.",
+    "correct": true,
+    "explanation": "A metaadat jelzi a GIS-nek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A HAND az árvíztérképezésben használatos.",
+    "correct": true,
+    "explanation": "Height Above Nearest Drainage.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar mérőhálózat ~20-30 km állomástávolságú.",
+    "correct": true,
+    "explanation": "Átlagos állomásköz Magyarországon.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A cellaérték-értelmezés nem befolyásolja az elemzést.",
+    "correct": false,
+    "explanation": "Eltérő újramintavételezés és hibabecslés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM 1-2 m pontosságú.",
+    "correct": true,
+    "explanation": "Modern vertikális pontosság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A felszínborítás rasztere lebegőpontos.",
+    "correct": false,
+    "explanation": "Egész számú kategoriális kódok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII fejlécben 6 sor van.",
+    "correct": true,
+    "explanation": "Mindig hat fejlécsor.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A cellaindexelés alulról felfelé halad.",
+    "correct": false,
+    "explanation": "Felülről lefelé, ellentétben a matematikával.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN hidrológiai algoritmusok fejlettebbek a rácsbelieknél.",
+    "correct": false,
+    "explanation": "Kevésbé fejlettek és kevésbé validáltak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A skálatriplet szerint az adatminőség egydimenziós.",
+    "correct": false,
+    "explanation": "Többdimenziós: kiterjedés + térköz + tartó.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az EOV Northing tartománya 0-400000.",
+    "correct": true,
+    "explanation": "Az értéktartomány alapján azonosítható.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hidrológiai GIS-ben a _____ rács dominál.",
+    "correct": "szabályos",
+    "explanation": "Számítási egyszerűsége miatt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM rövidítés: Digitális _____.",
+    "correct": "Domborzatmodell",
+    "explanation": "Digital Elevation Model.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TIN rövidítés: Triangulated _____ Network.",
+    "correct": "Irregular",
+    "explanation": "Szabálytalan háromszögháló.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy rácsot _____ elem definiál teljesen.",
+    "correct": "hat",
+    "explanation": "Kiterjedés, cellaméret, sorok/oszlopok, referenciapont, NODATA, adattípus.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cellaméret felezése _____ arányban növeli a cellaszámot.",
+    "correct": "négyszeres",
+    "explanation": "A négyzettel arányos növekedés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ érték jelöli a hiányzó adatot.",
+    "correct": "NODATA",
+    "explanation": "Az érvénytelen cellák kódja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A skálatriplet: kiterjedés, _____ és tartó.",
+    "correct": "térköz",
+    "explanation": "A spacing a mintatávolság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A skálatriplet _____ formalizálta 1995-ben.",
+    "correct": "Blöschl",
+    "explanation": "Günter Blöschl osztrák hidrológus.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ASCII rács kiterjesztése _____.",
+    "correct": "asc",
+    "explanation": "Szöveges rácsformátum.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ raszterformátum a leginteroperábilisabb.",
+    "correct": "GeoTIFF",
+    "explanation": "CRS-sel és tömörítéssel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy 30 m-es cella területe _____ m².",
+    "correct": "900",
+    "explanation": "30 × 30 = 900.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cellaértékek három értelmezését _____ írta le.",
+    "correct": "Goodchild",
+    "explanation": "Michael Goodchild 1997-ben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Nyquist-tétel: legalább _____ minta per elem.",
+    "correct": "kettő",
+    "explanation": "Két minta per hullámhossz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az aliasing: kis elemek _____ a durva rácson.",
+    "correct": "félreábrázolódnak",
+    "explanation": "A térközből fakadó probléma.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ az egyetlen mérés lábnyoma.",
+    "correct": "tartó",
+    "explanation": "Support a skálatripletben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lebegőpontos rács _____ mennyiségeket tárol.",
+    "correct": "folytonos",
+    "explanation": "Magasság, hőmérséklet, lejtés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egész számú rács _____ adatot tárol.",
+    "correct": "kategoriális",
+    "explanation": "Felszínborítás, talajtípus.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A VAT: Value _____ Table.",
+    "correct": "Attribute",
+    "explanation": "Értékattribútum-tábla.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D8 rács _____ lehetséges iránykódot tartalmaz.",
+    "correct": "nyolc",
+    "explanation": "1, 2, 4, 8, 16, 32, 64, 128.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A D-infinity a folyásirányt 0 és _____ között tárolja.",
+    "correct": "2π",
+    "explanation": "Folytonos szögérték.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ASCII rács xllcorner a bal _____ sarok x-koordinátája.",
+    "correct": "alsó",
+    "explanation": "x Lower Left corner.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GeoTIFF a bal _____ sarkot használja.",
+    "correct": "felső",
+    "explanation": "Konvenció a bal felső.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cellaméret tízszeres csökkentése _____-szoros adatnövekedés.",
+    "correct": "százszoros",
+    "explanation": "10² = 100.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 32 bites lebegőpontos _____ bájt/cella.",
+    "correct": "4",
+    "explanation": "32 bit = 4 bájt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 16 bites egész _____ bájt/cella.",
+    "correct": "2",
+    "explanation": "16 bit = 2 bájt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 8 bites előjel nélküli: 0-tól _____-ig.",
+    "correct": "255",
+    "explanation": "256 érték.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ szabály a középpontot tartalmazó poligon értékét rendeli.",
+    "correct": "középpont",
+    "explanation": "A raszterizálás alapértelmezése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ szabály a legtöbb területet elfoglaló poligon értékét adja.",
+    "correct": "legnagyobb részesedés",
+    "explanation": "Majority rule.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ modell szintvonalakat és áramvonalakat használ.",
+    "correct": "szintvonal-áramvonal",
+    "explanation": "Ausztrál fejlesztés 1970-80-as évek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterizált vonal minimális szélessége = _____.",
+    "correct": "cellaméret",
+    "explanation": "Legalább 1 cellaszélesség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus DEM pontossága _____ m.",
+    "correct": "1-2",
+    "explanation": "Modern vertikális pontosság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM: Shuttle _____ Topography Mission.",
+    "correct": "Radar",
+    "explanation": "NASA 2000-es misszió.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy 1 m-es országos DEM ~_____ milliárd cellát adna.",
+    "correct": "93",
+    "explanation": "93000 km² / (0,001²) km².",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lebegőpontos rács _____ változó értékeket tárol.",
+    "correct": "folytonosan",
+    "explanation": "Fokozatosan változó magasság, lejtés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egész számú rács _____ tábla segítségével rendel címkéket.",
+    "correct": "értékattribútum",
+    "explanation": "VAT a kódokhoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A HAND: Height Above _____ Drainage.",
+    "correct": "Nearest",
+    "explanation": "Legközelebbi vízfolyás feletti magasság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ERA5 tartója ~_____ km².",
+    "correct": "961",
+    "explanation": "~31² ≈ 961 km².",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A csapadékmérő tartója ~_____ cm².",
+    "correct": "200",
+    "explanation": "A mérőnyílás területe.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPM/IMERG felbontása ~_____ km.",
+    "correct": "10",
+    "explanation": "0,1°-os felbontás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "O'Callaghan és _____ vezette be a D8-at (1984).",
+    "correct": "Mark",
+    "explanation": "A D8 alapvető munkája.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tarboton (_____) fejlesztette ki a D-infinity-t.",
+    "correct": "1997",
+    "explanation": "Folytonos szögeloszlás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-feldolgozás első lépése a _____ kitöltése.",
+    "correct": "süllyedékek",
+    "explanation": "Fill sinks a helyes folyásirányhoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rács fő előnye a _____ egyszerűség.",
+    "correct": "számítási",
+    "explanation": "Egyszerű cellaindexelés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TIN előnye a _____ hatékonyság.",
+    "correct": "tárolási",
+    "explanation": "Rugalmas pontsűrítés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kiterjedés a rács _____ koordinátáival definiált.",
+    "correct": "határoló",
+    "explanation": "xmin, ymin, xmax, ymax.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DDM-5 az _____ vetületben készül.",
+    "correct": "EOV",
+    "explanation": "EPSG:23700.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 3 ívmásodperc az egyenlítőnél ~_____ m.",
+    "correct": "90",
+    "explanation": "0,00083333°.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ felbontásról 10 m-re: 81-szörös cellaszám.",
+    "correct": "90",
+    "explanation": "(90/10)² = 81.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MERIT DEM az _____ hibáit javítja.",
+    "correct": "SRTM",
+    "explanation": "Szisztematikus hibák eltávolítása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rács kétdimenziós _____.",
+    "correct": "tömb",
+    "explanation": "Sorok és oszlopok mátrixa.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a folytonos felszínek három fő ábrázolási módszerét!",
+    "correct": "(1) Szabályos rács: azonos cellák, dominál. (2) TIN: rugalmas pontsűrítés, jó mérnöki tervezéshez. (3) Szintvonal-áramvonal: elméleti, nincs implementáció. A rács a gyakorlatban a legelterjedtebb.",
+    "explanation": "A három módszer erősségei és korlátai.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Miért dominál a szabályos rács a hidrológiában?",
+    "correct": "Az algoritmusok (D8, flow accumulation) erre készültek. A DEM-ek és műholdadatok rácsformátumúak. Cellánkénti műveletek párhuzamosíthatók. A számítási kapacitás növekedése megszüntette a fő hátrányát.",
+    "explanation": "Számítási előnyök és adatelérhetőség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a rács hat meghatározó elemét!",
+    "correct": "Kiterjedés (határoló koordináták), cellaméret, sorok/oszlopok, alapreferencia-pont, NODATA-érték, adattípus. Mindegyik megértése elengedhetetlen a helyes raszterkezeléshez.",
+    "explanation": "A hat elem együttesen definiálja a rácsot.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a NODATA szerepe és milyen csapdákat rejt?",
+    "correct": "Szerepe: szabálytalan területek, hiányzó mérések, víztestek, számítási kizárás. Csapdák: érvényes értékek NODATA-ként kezelése; NODATA átlagba számítása; helytelen kódolás. A -9999 torzíthat, ha nem kezelik.",
+    "explanation": "A NODATA helyes kezelése kritikus.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse Blöschl skálatripletjét csapadékadatokra!",
+    "correct": "Kiterjedés: térbeli-időbeli lefedettség. Térköz: mintatávolság. Tartó: egy mérés lábnyoma. Mérő: hosszú idősor, pontszerű tartó. ERA5: teljes lefedettség, 961 km² tartó. GPM: finom részlet, rövid idősor.",
+    "explanation": "Egyetlen adathalmaz sem optimális mindenre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség lebegőpontos és egész számú rácsok között?",
+    "correct": "Lebegőpontos: folytonos számok (magasság, lejtés), nincs VAT, színskálás megjelenítés. Egész: kategóriakódok (felszínborítás), van VAT leíró címkékkel. A választás a mennyiség természetétől függ.",
+    "explanation": "Az adattípus modellezési döntés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaérték három értelmezése?",
+    "correct": "(1) Térbeli átlag a cella területén. (2) Pontminta a középpontban. (3) Rácscsomópont-érték. Az értelmezés befolyásolja az újramintavételezést és a pontosság megítélését.",
+    "explanation": "A helyes értelmezés az elemzés megbízhatóságát érinti.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a cellaméret az adatmennyiségre?",
+    "correct": "A cellaszám a cellaméret négyzetével fordítottan arányos. Felezés: 4x növekedés. Tizedre csökkentés: 100x. Magyarország: 90 m = 11,5M; 10 m = 930M; 1 m = 93 Mrd cella. A felbontás és adatmennyiség kompromisszuma alapkérdés.",
+    "explanation": "Négyzetes kapcsolat a felbontás és adatmennyiség között.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi az aliasing a hidrológiai raszterekben?",
+    "correct": "Ha a cellaméret nagyobb az elemnél, az eltűnik vagy torzul. 15 m meder 30 m DEM-ben: láthatatlan, a cellaérték vegyíti a medret és árteret. Megoldás: finomabb DEM (LiDAR 1 m, DDM-5).",
+    "explanation": "A felbontás és elemméret viszonyának következménye.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi az ASCII rács előnye és korlátai?",
+    "correct": "Előnyök: olvasható, univerzális, programozásbarát, önleíró. Korlátok: 3-10x nagyobb fájl, lassú olvasás, nagy adatokhoz alkalmatlan. Hasznos: csere, hibakeresés, tesztadatok.",
+    "explanation": "Oktatási és hibakeresési célra értékes.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan ábrázolja a rács a vektoros elemeket?",
+    "correct": "Pont: egy kijelölt cella. Vonal: összefüggő cellasor, lépcsős élek. Poligon: azonos értékű cellazóna, csipkézett szél. A közelítés finomabb cellamérettel javul.",
+    "explanation": "A raszterizálás geometriai torzítással jár.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a TIN előnyeit és korlátait!",
+    "correct": "Előnyök: rugalmas sűrítés, tárolási hatékonyság, LiDAR-barát. Korlátok: a hidrológiai algoritmusok rácsra készültek; TIN-alapú módszerek kevésbé fejlettek. A gyakorlatban a rács dominál.",
+    "explanation": "A TIN elegáns, de a rács hatékonyabb.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a kiterjedés, térköz, tartó hatása a csapadék-használhatóságra?",
+    "correct": "A kiterjedés korlátozza a vizsgálható léptéket. A térköz meghatározza a viharfeloldást. A tartó befolyásolja a simítást. A három együttes mérlegelése szükséges az adatforrás kiválasztásakor.",
+    "explanation": "A skálatriplet mindhárom komponensét figyelembe kell venni.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a NODATA a vízgyűjtő-elemzésre?",
+    "correct": "NODATA-cellák kizáródnak a statisztikákból. Helytelen kód: hamis értékek az átlagba. NODATA terjedés: bármely NODATA → NODATA kimenet. A helyes kezelés a megbízhatóság kulcsa.",
+    "explanation": "NODATA problémák csendben torzíthatnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszter-adattípus választás következménye?",
+    "correct": "Lebegőpontos: pontos tizedesek, 4 bájt/cella. Egész: félannyi tárhely, de kerekítés. Hibás típus: csendben torz eredmények. Magyarország 10 m DEM: 3,7 GB vs 1,9 GB.",
+    "explanation": "Az adattípus a tárolást és pontosságot egyaránt befolyásolja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a mezőmodell a térinformatikában?",
+    "correct": "Folytonos mennyiség, amely a tér minden pontjában definiált (magasság, hőmérséklet). A végtelen információ véges számokra redukálása (rács) az alapkihívás. Az adathűség és kezelhetőség kompromisszuma.",
+    "explanation": "A folytonos valóság diszkretizálása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a DEM felbontása az árvíztérképezésre?",
+    "correct": "Finom (1-5 m): medergeometria és épületek feloldása. Durva (30-90 m): a meder elsimul. Városi árvízhez LiDAR-szintű DEM szükséges. A felbontás közvetlenül befolyásolja a megbízhatóságot.",
+    "explanation": "A felbontás megválasztása kritikus az árvíztérképezésben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az EOV koordináta-rendszer jellemzőit!",
+    "correct": "EPSG:23700, magyar nemzeti. Northing: 0-400000, Easting: 400000-1000000. Méter mértékegység. Értéktartomány alapján azonosítható, nem fejlécek alapján. A DDM-5 és OVF adatok ebben készülnek.",
+    "explanation": "Az EOV az értéktartomány alapján felismerhető.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok fontosak DEM-kiválasztásnál?",
+    "correct": "Felbontás (30 m általános, 1-5 m részletes). Pontosság (sík terepen kritikus). Kiterjedés (pufferrel). Aktualitás. Előfeldolgozottság (hézagkitöltés). Formátum (GeoTIFF). A feladat határozza meg az optimálisat.",
+    "explanation": "A DEM-kiválasztás az elemzés első lépése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaigazítás jelentősége?",
+    "correct": "Azonos cellaméretű rácsok cellái eltolódhatnak, hibás eredményeket adva. A snap raster biztosítja az illeszkedést egy referenciarácshoz. Elengedhetetlen a konzisztens többrács-elemzéshez.",
+    "explanation": "Rejtett, de kritikus paraméter.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a raszteres mező (field) definíciója a térinformatikában?",
+    "options": [
+      "A) Adatbázis oszlop",
+      "B) Térben mindenütt definiált folytonos mennyiség",
+      "C) Fájlformátum",
+      "D) Vektoros objektum"
+    ],
+    "correct": "B",
+    "explanation": "A mező (pl. magasság, hőmérséklet) a tér minden pontjában definiált.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen felbontásban érhető el a Copernicus GLO-90?",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 90 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "A Copernicus GLO-90 90 méteres felbontású globális DEM.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik a legmegfelelőbb DEM városi árvíztérképezéshez?",
+    "options": [
+      "A) SRTM 90 m",
+      "B) Copernicus GLO-30",
+      "C) LiDAR 1 m",
+      "D) ERA5 31 km"
+    ],
+    "correct": "C",
+    "explanation": "Városi árvíztérképezéshez 1-5 m felbontás szükséges.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a TIN Delaunay-triangulációjának feltétele?",
+    "options": [
+      "A) Egyenlő oldalú háromszögek",
+      "B) Egyetlen háromszög köréírt köre sem tartalmaz más pontot",
+      "C) Szabályos rács",
+      "D) Csak derékszögű háromszögek"
+    ],
+    "correct": "B",
+    "explanation": "A Delaunay-feltétel optimális háromszöghálót biztosít.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a raszter 'sávjainak' (bands) száma egy egysávos DEM-ben?",
+    "options": [
+      "A) 0",
+      "B) 1",
+      "C) 3",
+      "D) 4"
+    ],
+    "correct": "B",
+    "explanation": "Az egysávos raszter cellánként egyetlen értéket tartalmaz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a csapadékrács típusos időbeli felbontása radarmérésből?",
+    "options": [
+      "A) Éves",
+      "B) Havi",
+      "C) 5-15 perces",
+      "D) Másodperces"
+    ],
+    "correct": "C",
+    "explanation": "A radaralapú csapadékrácsok 5-15 perces időlépéssel készülnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GDAL rövidítés?",
+    "options": [
+      "A) Geospatial Data Abstraction Library",
+      "B) Global Digital Altitude Library",
+      "C) GIS Data Analysis Layer",
+      "D) Geographic Database Access Link"
+    ],
+    "correct": "A",
+    "explanation": "GDAL = Geospatial Data Abstraction Library, nyílt forráskódú raszterkezelő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az EOV Northing értéktartománya?",
+    "options": [
+      "A) 0 - 400000",
+      "B) 400000 - 1000000",
+      "C) 0 - 100000",
+      "D) 100000 - 500000"
+    ],
+    "correct": "A",
+    "explanation": "Az EOV Northing 0-tól 400000-ig terjed.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A GDAL könyvtár nyílt forráskódú raszterkezelő.",
+    "correct": true,
+    "explanation": "A GDAL a legszélesebb körben használt nyílt forráskódú térbeli adatkezelő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN-alapú vízgyűjtő-lehatárolás egyszerűbb a rácsalapúnál.",
+    "correct": false,
+    "explanation": "Lényegesen bonyolultabb, mivel az algoritmusok szabályos rácsra készültek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A cellák középponti koordinátái a határoló koordinátákból és a cellaméretből számíthatók.",
+    "correct": true,
+    "explanation": "x = xmin + (j+0.5)*Δx, y = ymax - (i+0.5)*Δy.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszteres adatok tömörítése információveszteséggel jár.",
+    "correct": false,
+    "explanation": "A veszteségmentes tömörítés (LZW, DEFLATE) megőrzi az összes értéket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA-érték mindig -9999.",
+    "correct": false,
+    "explanation": "Változhat: -9999, -3.4e38, 0, -32768 stb.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A piramis-rétegek különböző méretarányokhoz optimalizált előnézeteket tárolnak.",
+    "correct": true,
+    "explanation": "Gyorsabb megjelenítés különböző nagyítási szinteken.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterben minden cella azonos alakú és méretű.",
+    "correct": true,
+    "explanation": "A szabályos rács definíciója: azonos négyzetes cellák.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A MODIS műholdas termékek 1 m felbontásúak.",
+    "correct": false,
+    "explanation": "A MODIS jellemzően 250 m - 1 km felbontású.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter cellaindexelése megfelel a matematikai y-tengely irányának.",
+    "correct": false,
+    "explanation": "A sorok felülről lefelé nőnek, ellentétben a matematikával.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Egy 5 m-es rács pontosabban ábrázolja a medret, mint egy 30 m-es.",
+    "correct": true,
+    "explanation": "A finomabb felbontás több részletet old fel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus DEM ingyenesen elérhető minden felbontásban.",
+    "correct": false,
+    "explanation": "Az EEA-10 korlátozott hozzáférésű; csak a GLO-30 és GLO-90 szabad.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterben a sorok vízszintesen futnak (kelet-nyugat irányban).",
+    "correct": true,
+    "explanation": "A sorok vízszintesek, az oszlopok függőlegesek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A süllyedékkitöltés (fill sinks) a DEM előfeldolgozás egyik lépése.",
+    "correct": true,
+    "explanation": "A mesterséges mélyedések kitöltése a helyes folyásirányhoz szükséges.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az SRTM DEM 2000-ben készült.",
+    "correct": true,
+    "explanation": "A Shuttle Radar Topography Mission 2000 februárjában végezte a méréseket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszteres adatokat nem lehet vektoros formátumba konvertálni.",
+    "correct": false,
+    "explanation": "A vektorizálás rutinszerű művelet a GIS-ben.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A NODATA-cellák a GIS-ben szürkén vagy átlátszóan jelennek meg.",
+    "correct": true,
+    "explanation": "A legtöbb szoftver vizuálisan megkülönbözteti a NODATA-t.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A rasztercellák sarkain definiált értékek a Goodchild 3. értelmezésnek felelnek meg.",
+    "correct": true,
+    "explanation": "A 3. értelmezés a rácscsomópontokon (cellasarkokon) definiálja az értékeket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN háromszögeinek csúcsai szabálytalan elrendezésűek.",
+    "correct": true,
+    "explanation": "Ez a TIN lényege: szabálytalan pontok háromszöghálója.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter koordináta-rendszere mindig vetületi (nem földrajzi).",
+    "correct": false,
+    "explanation": "Lehet földrajzi (fokokban) is, bár a vetületi ajánlott a mérnöki munkához.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII rácsformátum támogatja a tömörítést.",
+    "correct": false,
+    "explanation": "Az ASCII formátum nem tömöríthető; szöveges tárolás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter információtartalmát nem lehet növelni újramintavételezéssel.",
+    "correct": true,
+    "explanation": "Finomabb forrásadat szükséges a valódi részletességnöveléshez.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 64 bites lebegőpontos szám ritkán szükséges hidrológiai alkalmazásoknál.",
+    "correct": true,
+    "explanation": "A 32 bites általában bőven elegendő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszteres adatok természetes módon illeszkednek a távérzékelési kimenetekhez.",
+    "correct": true,
+    "explanation": "Műholdak, radarok, modellek szabályos rácsokon adnak kimenetet.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A rácsalapú hidrológiai elemzés a 2000-es években kezdődött.",
+    "correct": false,
+    "explanation": "Az 1980-as és 1990-es években fejlesztették ki az alapvető algoritmusokat.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A cellszomszédságot vizsgáló műveletek (lejtés) gyorsabban skálázódnak, mint a cellánkénti műveletek.",
+    "correct": false,
+    "explanation": "Hasonlóan skálázódnak, cellánkénti műveleteket igényelnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterek többsávosak is lehetnek (pl. műholdas RGB).",
+    "correct": true,
+    "explanation": "A többsávos raszterek cellánként több értéket tartalmaznak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII rács fejlécében megadható a koordináta-rendszer.",
+    "correct": false,
+    "explanation": "Az ASCII rács nem tartalmaz CRS-információt; külső .prj fájl szükséges.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A vízfelszínek a DEM-ben mindig NODATA-ként jelennek meg.",
+    "correct": false,
+    "explanation": "Egyes DEM-ek 0-t (tengerszint) rendelnek; mások NODATA-t.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter-adatmennyiség lineárisan arányos a felbontás változásával.",
+    "correct": false,
+    "explanation": "Négyzetesen: a cellaméret felezése négyszeres adatnövekedés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A Blöschl-féle skálatriplet a mérőhálózat-tervezéshez is hasznos.",
+    "correct": true,
+    "explanation": "Segít meghatározni a szükséges mérősűrűséget az elemzési célhoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter alapreferencia-pontja a formátumtól függően változhat.",
+    "correct": true,
+    "explanation": "Az ASCII bal alsó, a GeoTIFF bal felső sarkot használja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A 16 bites egész DEM elegendő a Föld felszínének nagy részére.",
+    "correct": true,
+    "explanation": "-32768 -- 32767 m: elegendő a magassági értékek többségéhez.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A lebegőpontos rácsokat színskálával jelenítik meg.",
+    "correct": true,
+    "explanation": "Folytonos leképezés az értékektől a színekig.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterizálás a vektoros geometriát torzítja.",
+    "correct": true,
+    "explanation": "Lépcsős élek és minimális cellaszélesség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszter metaadatai tartalmazzák a NODATA-kódot.",
+    "correct": true,
+    "explanation": "A metaadatokban tárolják a NODATA jelölő értéket.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az ASCII rács programozásbarát formátum.",
+    "correct": true,
+    "explanation": "Triviálisan elemezető bármely programnyelven.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A TIN-t széleskörűen alkalmazzák a nagy léptékű hidrológiai elemzésben.",
+    "correct": false,
+    "explanation": "A TIN a mérnöki tervezésben elterjedt, de a nagy léptékű hidrológiában a rács dominál.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A raszterben a sorok száma az y-irányú kiterjedés és a cellaméret hányadosa.",
+    "correct": true,
+    "explanation": "nrows = (ymax - ymin) / Δy.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A szabályos rácsok egyenletes felbontása a modern hardverrel nem jelent korlátot.",
+    "correct": true,
+    "explanation": "A számítási kapacitás növekedése nagyrészt megszüntette ezt a hátrányát.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A skálatriplet csak térbeli adatokra alkalmazható.",
+    "correct": false,
+    "explanation": "Időbeli adatokra is: kiterjedés (időszak), térköz (intervallum), tartó (felhalmozás).",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GDAL könyvtár teljes neve: Geospatial Data _____ Library.",
+    "correct": "Abstraction",
+    "explanation": "Nyílt forráskódú térbeli adatkezelő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DEM-ek magassági pontosságát tipikusan _____ egységben adják meg.",
+    "correct": "méter",
+    "explanation": "Pl. 1-2 m (Copernicus), 10-15 cm (LiDAR).",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter sorai _____ irányban futnak.",
+    "correct": "vízszintes",
+    "explanation": "Kelet-nyugat irányú, párhuzamos sorok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A süllyedékkitöltés angol neve: fill _____.",
+    "correct": "sinks",
+    "explanation": "A DEM előfeldolgozás első lépése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az SRTM méréseit _____ évben végezték.",
+    "correct": "2000",
+    "explanation": "A NASA űrsikló missziója 2000 februárjában.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszteres _____ (piramis-rétegek) gyorsítják a megjelenítést.",
+    "correct": "előnézetek",
+    "explanation": "Különböző méretarányokhoz optimalizálva.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter celláinak alakja mindig _____.",
+    "correct": "négyzet",
+    "explanation": "Azonos méretű négyzet alakú cellák a szabályos rácsban.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A MODIS műholdas termékek _____ m felbontásúak lehetnek.",
+    "correct": "250",
+    "explanation": "Egyes MODIS termékek 250 m-esek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter koordináta-rendszere lehet vetületi és _____ is.",
+    "correct": "földrajzi",
+    "explanation": "Bár a vetületi ajánlott mérnöki munkához.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Delaunay-trianguláció a _____ háromszögháló optimális módszere.",
+    "correct": "TIN",
+    "explanation": "Biztosítja, hogy egyetlen köréírt kör sem tartalmaz más pontot.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter _____ számú sávja határozza meg, hány értéket tárol cellánként.",
+    "correct": "sávszám",
+    "explanation": "DEM: 1 sáv; műholdfelvétel: 3-4+ sáv.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A radaralapú csapadékrácsok tipikus időlépése _____ perc.",
+    "correct": "5-15",
+    "explanation": "Gyors időbeli felbontás a konvektív viharokhoz.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter-_____ a vektoros objektumok rácsformátumba konvertálása.",
+    "correct": "izálás",
+    "explanation": "Rasterization angol szóból.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ tömörítés a GeoTIFF fájlméretét csökkenti információveszteség nélkül.",
+    "correct": "LZW",
+    "explanation": "Veszteségmentes tömörítési módszer.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter _____ a térben mindenütt definiált mezőt közelíti véges számú cellával.",
+    "correct": "diszkretizálja",
+    "explanation": "A folytonos mező véges számú értékre redukálása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Copernicus GLO-_____ a szabadon elérhető globális DEM.",
+    "correct": "30",
+    "explanation": "30 méteres felbontás, ingyenes letöltés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter _____ koordinátája: x = xmin + (j+0.5)*Δx.",
+    "correct": "cellaközéppont",
+    "explanation": "A j-edik oszlop középpontjának x-koordinátája.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az aliasing megelőzéséhez a cellméretnek _____ kell lennie az elem felénél.",
+    "correct": "kisebbnek",
+    "explanation": "Nyquist: legalább 2 cella per elem.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TIN háromszögeinek _____ a csúcspontokon lineárisan interpolálhatók.",
+    "correct": "értékei",
+    "explanation": "A háromszögön belül lineáris felszín.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterben a _____ sorban lévő cella a legészakibb.",
+    "correct": "első",
+    "explanation": "A sorok fentről lefelé indexelődnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ALOS AW3D_____ 30 m-es globális DEM.",
+    "correct": "30",
+    "explanation": "A japán ALOS műhold DEM terméke.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ pontfelhő TIN-ként is ábrázolható.",
+    "correct": "LiDAR",
+    "explanation": "A LiDAR eredendően szabálytalan pontelrendezésű.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Blöschl-féle skálatriplet 3 komponense: kiterjedés, térköz, _____.",
+    "correct": "tartó",
+    "explanation": "Support = egyetlen mérés lábnyoma.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter _____ típusa meghatározza a tárolható értékek tartományát.",
+    "correct": "adat",
+    "explanation": "Lebegőpontos vs. egész szám.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ASCII rács _____ sorban tartalmazza a rácsértékeket, fentről lefelé.",
+    "correct": "törzs",
+    "explanation": "A fejléc után következő sorok.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar DDM-5 DEM a _____ Tudásközpont terméke.",
+    "correct": "Lechner",
+    "explanation": "A nemzeti téradat-szolgáltató.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter _____ számú cellája a sorok és oszlopok szorzata.",
+    "correct": "teljes",
+    "explanation": "Összesített cellaszám = nrows × ncols.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszteres _____ a kategóriákhoz címkéket rendel.",
+    "correct": "VAT",
+    "explanation": "Értékattribútum-tábla.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ fokos cellaméret ~30 m-nek felel meg.",
+    "correct": "1 ívmásodperces",
+    "explanation": "Az SRTM 1 arcsec felbontása ~30 m.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszter információtartalmát nem lehet növelni _____ útján.",
+    "correct": "újramintavételezés",
+    "explanation": "Finomabb forrásadat szükséges.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan készül egy DEM szintvonal-interpolációból?",
+    "correct": "A szintvonalak közötti magasságot interpoláció (pl. kriging, spline) becsüli. Az eredmény szabályos rácsba mintavételeződik. A cellaértékek a környező szintvonalak súlyozott átlagaként adódnak. Ez közelebb áll a térbeli átlag (Goodchild 1.) értelmezéshez.",
+    "explanation": "A szintvonal-interpoláció a rács cellaértékeinek egyik forrása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszteres adatok tárolási formátumainak összehasonlítását!",
+    "correct": "ASCII: olvasható, univerzális, de nagy és lassú. GeoTIFF: interoperábilis, CRS-sel, tömöríthető, hatékony. ESRI Grid: ArcGIS-specifikus bináris. NetCDF: többdimenziós, klímaadatokhoz. A GeoTIFF a legtöbb célra ajánlott.",
+    "explanation": "A formátumválasztás a felhasználási céltól függ.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a raszter felbontása a vízhálózat-levezetésre?",
+    "correct": "Durva felbontás (90 m) nem oldja fel a kis mellékpatakokat. 30 m regionális vízhálózathoz elegendő. 1-5 m a városi csatornázáshoz és részletes medergeometriához szükséges. A felbontás közvetlenül befolyásolja a levezetett vízhálózat sűrűségét és pontosságát.",
+    "explanation": "A vízhálózat-levezetés felbontásfüggő.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a NODATA-kezelés stratégiája egy többforrásos elemzésnél?",
+    "correct": "Konzisztens NODATA-kód minden bemenetre. Ellenőrzés: nem ütközik-e érvényes értékekkel. NODATA-maszk létrehozása a hiányos területekhez. A NODATA-terjedés tudatos kezelése. Dokumentálás: mely cellák hiányoznak és miért.",
+    "explanation": "A NODATA-menedzsment a megbízható elemzés előfeltétele.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszter és TIN közötti választás szempontjait!",
+    "correct": "Rács: egyszerű számítás, párhuzamosítható, széles szoftvertámogatás, műholdas adatokhoz illeszkedik, hidrológiai algoritmusok erre készültek. TIN: rugalmas pontsűrítés, tárolási hatékonyság, LiDAR-barát, mérnöki tervezéshez jó. A hidrológiai gyakorlatban a rács dominál.",
+    "explanation": "A választás a feladat és az elérhető algoritmusok függvénye.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a skálatriplet a mérőhálózat-tervezésben?",
+    "correct": "A kiterjedés meghatározza a vizsgálandó területet. A térköz a szükséges mérősűrűséget adja: konvektív viharokhoz 5-10 km, regionális csapadékhoz 20-30 km. A tartó az egyes mérők érzékenységi területe. A három együttes mérlegelése szükséges az optimális hálózathoz.",
+    "explanation": "A skálatriplet a mérőhálózat-tervezés fogalmi kerete.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen kihívásokat jelent a sík terep a DEM-alapú hidrológiában?",
+    "correct": "A magassági hibák meghaladhatják a tényleges terepszint-különbségeket. A folyásirányok kétértelművé válnak. A vízgyűjtő-határok pontatlanok. Megoldások: nagy pontosságú DEM (LiDAR), medervonal-beégetés, kondicionálás.",
+    "explanation": "A sík terep a DEM-hidrológia egyik legnagyobb kihívása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a különbség a vektor-raszter és a raszter-vektor konverzió között?",
+    "correct": "Vektor→raszter (raszterizálás): poligonok/vonalak cellákká, középpont- vagy többségi szabállyal. Raszter→vektor (vektorizálás): cellazónák poligonokká, cellaláncok vonalakká. Mindkettő rutinszerű a hidrológiai munkafolyamatban.",
+    "explanation": "A konverzió mindkét irányban a GIS alapképessége.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a tartó (support) az adatok összehasonlíthatóságára?",
+    "correct": "Eltérő tartójú adatokat nem lehet közvetlenül összehasonlítani. A csapadékmérő (200 cm²) és az ERA5 (961 km²) ugyanazt méri, de a tartó különbsége miatt az értékek eltérnek. A vihar csúcsa: mérő 80 mm/h, ERA5 15 mm/h. Mindkettő helyes a tartója alapján.",
+    "explanation": "A tartó ismerete elengedhetetlen az adatok helyes értelmezéséhez.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszteres piramis-rétegek szerepét a nagy DEM-ek kezelésében!",
+    "correct": "A piramis-rétegek előre kiszámított, alacsonyabb felbontású másolatokat tárolnak. Kisnagyítás: durva előnézet. Nagyítás: a teljes felbontás. Ez a megjelenítést gyorsítja anélkül, hogy az eredeti adatot módosítaná.",
+    "explanation": "A piramisok a nagy raszterek hatékony megjelenítésének eszközei.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szempontok alapján válasszunk a Copernicus DEM-termékek között?",
+    "correct": "GLO-30: 30 m, ingyenes, általános vízgyűjtő-elemzéshez. GLO-90: 90 m, gyors áttekintéshez, nagy területekre. EEA-10: 10 m, részletes európai elemzéshez, korlátozott hozzáférés. A feladat felbontási igénye és a hozzáférhetőség dönti el.",
+    "explanation": "A három termék különböző igényeket szolgál ki.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a raszter a talajtulajdonságok térbeli modellezéséhez?",
+    "correct": "A talajtulajdonságok (vízáteresztő képesség, porozitás) raszterformátumban tárolhatók. Az SoilGrids 250 m-es globális talajrács. A magyarországi AGROTOPO nemzeti szintű. Zónális statisztikák vízgyűjtő-szintű átlagot adnak. A térkép-algebra kombinálja a talajt a DEM-mel és felszínborítással.",
+    "explanation": "A talajtulajdonság-rácsok a hidrológiai modellezés alapvető bemenetei.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszter-adatminőség értékelésének módszere?",
+    "correct": "Vertikális pontosság: RMSE a terepi referenciához képest. Horizontális pontosság: illeszkedés a vektoros vízhálózathoz. Teljesség: NODATA-cellák aránya. Aktualitás: a felvétel időpontja. A Blöschl-féle skálatriplet keretrendszere az adatminőség többdimenziós értékelését biztosítja.",
+    "explanation": "Az adatminőség-értékelés az elemzés megbízhatóságának előfeltétele.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszteres adatok időbeli dimenziójának kezelését!",
+    "correct": "Idősorok raszter-stackként: minden időlépés egy réteg. A NetCDF natívan kezeli a tér-idő dimenziókat. A Python xarray hatékonyan dolgozik raszteres idősorokkal. Alkalmazások: csapadéktrendek, felszínborítás-változás, vízszintdinamika.",
+    "explanation": "A raszteres idősorok a térbeli-időbeli elemzés alapjai.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszteres számítási költség és hogyan csökkenthető?",
+    "correct": "A költség a cellaszámmal arányos. Felbontás-csökkentés: 10-ről 30 m-re 9x kevesebb cella. Térbeli kivágás: csak a vizsgálati terület. Csempézett feldolgozás: részekre bontva. Felhőalapú számítás: párhuzamos szerverfarmok. A megfelelő felbontás választása a leghatékonyabb.",
+    "explanation": "A számítási költség tudatos kezelése a nagy projektek előfeltétele.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a raszteres adatok a felszín alatti vizek vizsgálatában?",
+    "correct": "A DEM a felszíni topográfiát, a geológiai rétegek raszterei a felszín alatti struktúrákat ábrázolják. A talajvízszint interpolált rasztere az aktuális állapotot mutatja. A raszter-analízis lehetővé teszi a felszíni és felszín alatti vizek közötti kölcsönhatások térbeli elemzését.",
+    "explanation": "A raszteres megközelítés a felszín alatti vizek 2D elemzésére is alkalmas.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszter-elemzés automatizálásának előnye Python-szkriptekkel?",
+    "correct": "Reprodukálhatóság: a szkript dokumentálja a munkafolyamatot. Kötegelt feldolgozás: sok részvízgyűjtőre automatikusan. Skálázhatóság: azonos kód különböző területekre. Hibakeresés: lépésenként ellenőrizhető. A rasterio, GDAL és xarray könyvtárak teljes funkcionalitást biztosítanak.",
+    "explanation": "A Python-automatizálás nagyságrendekkel növeli a hatékonyságot.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszteres adatok metaadatainak fontosságát!",
+    "correct": "A metaadatok tartalmazzák: CRS, cellaméret, kiterjedés, NODATA-kód, adattípus, dátum, forrás, pontosság. Nélkülük az adatok nem értelmezhetők helyesen. A GeoTIFF belsőleg tárolja a CRS-t; az ASCII-hez külön .prj fájl kell. Az ISO 19115 szabvány a metaadat-dokumentálás kerete.",
+    "explanation": "A metaadatok biztosítják az adatok helyes értelmezését és újrahasznosíthatóságát.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a légköri korrekció a műholdas DEM-ek pontosságára?",
+    "correct": "A radar- és optikai DEM-ek troposzférikus és ionoszférikus zavarokat tartalmazhatnak. A szisztematikus hibák (magassági eltolódás, lejtésfüggő torzítás) korrekcióval csökkenthetők. A MERIT DEM kifejezetten ezeket az SRTM-hibákat távolítja el.",
+    "explanation": "A légköri korrekció a DEM-pontosság javításának egyik módszere.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a raszteres adatok tárolási hatékonyságának növelési módszerei?",
+    "correct": "Tömörítés: GeoTIFF LZW/DEFLATE. Adattípus-optimalizálás: 16 bit a 32 helyett, ha elegendő. Csempézés (tiling): nagy rácsok hatékony elérése. Cloud-Optimized GeoTIFF (COG): felhőalapú hozzáféréshez. NODATA-cellák kizárása.",
+    "explanation": "A hatékony tárolás a nagy adatkészletek kezelésének feltétele.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) raszter felépítés fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) raszter felépítés a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) cellaméret hatás fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) cellaméret hatás a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) NODATA kezelés fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) NODATA kezelés a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) skálatriplet alkalmazás fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) skálatriplet alkalmazás a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) DEM felbontás fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) DEM felbontás a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) TIN vs rács fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) TIN vs rács a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) ASCII formátum fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) ASCII formátum a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) GeoTIFF előnyök fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) GeoTIFF előnyök a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) lebegőpontos vs egész fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) lebegőpontos vs egész a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A(z) cellaérték értelmezés fogalma alapvető a 5. fejezet anyagában.",
+    "correct": true,
+    "explanation": "A(z) cellaérték értelmezés a 5. fejezet központi témái közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a SRTM jellemzők témakörbe tartozik.",
+    "correct": "SRTM",
+    "explanation": "A(z) SRTM jellemzők a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a MERIT DEM témakörbe tartozik.",
+    "correct": "MERIT",
+    "explanation": "A(z) MERIT DEM a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a DDM-5 témakörbe tartozik.",
+    "correct": "DDM-5",
+    "explanation": "A(z) DDM-5 a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a VAT keresőtábla témakörbe tartozik.",
+    "correct": "VAT",
+    "explanation": "A(z) VAT keresőtábla a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a hidrológiai alkalmazás témakörbe tartozik.",
+    "correct": "hidrológiai",
+    "explanation": "A(z) hidrológiai alkalmazás a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a pufferzóna témakörbe tartozik.",
+    "correct": "pufferzóna",
+    "explanation": "A(z) pufferzóna a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a mező fogalom témakörbe tartozik.",
+    "correct": "mező",
+    "explanation": "A(z) mező fogalom a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a vektor-raszter konverzió témakörbe tartozik.",
+    "correct": "vektor-raszter",
+    "explanation": "A(z) vektor-raszter konverzió a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a adattípus választás témakörbe tartozik.",
+    "correct": "adattípus",
+    "explanation": "A(z) adattípus választás a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a csapadékmérő hálózat témakörbe tartozik.",
+    "correct": "csapadékmérő",
+    "explanation": "A(z) csapadékmérő hálózat a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a raszter felépítés témakörbe tartozik.",
+    "correct": "raszter",
+    "explanation": "A(z) raszter felépítés a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a cellaméret hatás témakörbe tartozik.",
+    "correct": "cellaméret",
+    "explanation": "A(z) cellaméret hatás a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a NODATA kezelés témakörbe tartozik.",
+    "correct": "NODATA",
+    "explanation": "A(z) NODATA kezelés a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a skálatriplet alkalmazás témakörbe tartozik.",
+    "correct": "skálatriplet",
+    "explanation": "A(z) skálatriplet alkalmazás a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a DEM felbontás témakörbe tartozik.",
+    "correct": "DEM",
+    "explanation": "A(z) DEM felbontás a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a TIN vs rács témakörbe tartozik.",
+    "correct": "TIN",
+    "explanation": "A(z) TIN vs rács a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a ASCII formátum témakörbe tartozik.",
+    "correct": "ASCII",
+    "explanation": "A(z) ASCII formátum a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a GeoTIFF előnyök témakörbe tartozik.",
+    "correct": "GeoTIFF",
+    "explanation": "A(z) GeoTIFF előnyök a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a lebegőpontos vs egész témakörbe tartozik.",
+    "correct": "lebegőpontos",
+    "explanation": "A(z) lebegőpontos vs egész a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 5. fejezetben tárgyalt _____ fogalma a cellaérték értelmezés témakörbe tartozik.",
+    "correct": "cellaérték",
+    "explanation": "A(z) cellaérték értelmezés a fejezet fontos témaköre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a aliasing előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) aliasing a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a aliasing helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) aliasing a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a újramintavételezés fogalma a csapadékelemzésben?",
+    "correct": "A(z) újramintavételezés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a újramintavételezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) újramintavételezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Blöschl kiterjedés fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) Blöschl kiterjedés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl kiterjedés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl kiterjedés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a Blöschl térköz a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) Blöschl térköz a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl térköz helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl térköz a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a Blöschl tartó kapcsán?",
+    "correct": "A(z) Blöschl tartó a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl tartó helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl tartó a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a D8 folyásirány jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) D8 folyásirány a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a D8 folyásirány helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) D8 folyásirány a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterizálás szabályok előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) raszterizálás szabályok a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszterizálás szabályok helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszterizálás szabályok a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a EOV koordináták fogalma a csapadékelemzésben?",
+    "correct": "A(z) EOV koordináták a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a EOV koordináták helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) EOV koordináták a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LiDAR DEM fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) LiDAR DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a LiDAR DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) LiDAR DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a Copernicus DEM a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) Copernicus DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Copernicus DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Copernicus DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a SRTM jellemzők kapcsán?",
+    "correct": "A(z) SRTM jellemzők a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a SRTM jellemzők helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) SRTM jellemzők a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a MERIT DEM jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) MERIT DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a MERIT DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) MERIT DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DDM-5 előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) DDM-5 a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a DDM-5 helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) DDM-5 a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a VAT keresőtábla fogalma a csapadékelemzésben?",
+    "correct": "A(z) VAT keresőtábla a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a VAT keresőtábla helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) VAT keresőtábla a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a hidrológiai alkalmazás fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) hidrológiai alkalmazás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a hidrológiai alkalmazás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) hidrológiai alkalmazás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a pufferzóna a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) pufferzóna a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a pufferzóna helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) pufferzóna a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a mező fogalom kapcsán?",
+    "correct": "A(z) mező fogalom a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a mező fogalom helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) mező fogalom a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vektor-raszter konverzió jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) vektor-raszter konverzió a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a vektor-raszter konverzió helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) vektor-raszter konverzió a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a adattípus választás előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) adattípus választás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a adattípus választás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) adattípus választás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a csapadékmérő hálózat fogalma a csapadékelemzésben?",
+    "correct": "A(z) csapadékmérő hálózat a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a csapadékmérő hálózat helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) csapadékmérő hálózat a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszter felépítés fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) raszter felépítés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszter felépítés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszter felépítés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a cellaméret hatás a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) cellaméret hatás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaméret hatás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaméret hatás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a NODATA kezelés kapcsán?",
+    "correct": "A(z) NODATA kezelés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a NODATA kezelés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) NODATA kezelés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a skálatriplet alkalmazás jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) skálatriplet alkalmazás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a skálatriplet alkalmazás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) skálatriplet alkalmazás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM felbontás előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) DEM felbontás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a DEM felbontás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) DEM felbontás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a TIN vs rács fogalma a csapadékelemzésben?",
+    "correct": "A(z) TIN vs rács a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a TIN vs rács helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) TIN vs rács a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a ASCII formátum fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) ASCII formátum a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a ASCII formátum helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) ASCII formátum a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a GeoTIFF előnyök a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) GeoTIFF előnyök a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GeoTIFF előnyök helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GeoTIFF előnyök a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a lebegőpontos vs egész kapcsán?",
+    "correct": "A(z) lebegőpontos vs egész a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a lebegőpontos vs egész helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) lebegőpontos vs egész a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaérték értelmezés jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) cellaérték értelmezés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaérték értelmezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaérték értelmezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a aliasing előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) aliasing a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a aliasing helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) aliasing a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a újramintavételezés fogalma a csapadékelemzésben?",
+    "correct": "A(z) újramintavételezés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a újramintavételezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) újramintavételezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a Blöschl kiterjedés fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) Blöschl kiterjedés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl kiterjedés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl kiterjedés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a Blöschl térköz a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) Blöschl térköz a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl térköz helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl térköz a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a Blöschl tartó kapcsán?",
+    "correct": "A(z) Blöschl tartó a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Blöschl tartó helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Blöschl tartó a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a D8 folyásirány jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) D8 folyásirány a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a D8 folyásirány helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) D8 folyásirány a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszterizálás szabályok előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) raszterizálás szabályok a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszterizálás szabályok helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszterizálás szabályok a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a EOV koordináták fogalma a csapadékelemzésben?",
+    "correct": "A(z) EOV koordináták a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a EOV koordináták helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) EOV koordináták a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a LiDAR DEM fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) LiDAR DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a LiDAR DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) LiDAR DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a Copernicus DEM a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) Copernicus DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a Copernicus DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) Copernicus DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a SRTM jellemzők kapcsán?",
+    "correct": "A(z) SRTM jellemzők a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a SRTM jellemzők helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) SRTM jellemzők a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a MERIT DEM jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) MERIT DEM a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a MERIT DEM helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) MERIT DEM a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DDM-5 előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) DDM-5 a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a DDM-5 helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) DDM-5 a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a VAT keresőtábla fogalma a csapadékelemzésben?",
+    "correct": "A(z) VAT keresőtábla a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a VAT keresőtábla helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) VAT keresőtábla a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a hidrológiai alkalmazás fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) hidrológiai alkalmazás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a hidrológiai alkalmazás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) hidrológiai alkalmazás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a pufferzóna a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) pufferzóna a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a pufferzóna helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) pufferzóna a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a mező fogalom kapcsán?",
+    "correct": "A(z) mező fogalom a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a mező fogalom helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) mező fogalom a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a vektor-raszter konverzió jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) vektor-raszter konverzió a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a vektor-raszter konverzió helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) vektor-raszter konverzió a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a adattípus választás előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) adattípus választás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a adattípus választás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) adattípus választás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a csapadékmérő hálózat fogalma a csapadékelemzésben?",
+    "correct": "A(z) csapadékmérő hálózat a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a csapadékmérő hálózat helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) csapadékmérő hálózat a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a raszter felépítés fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) raszter felépítés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a raszter felépítés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) raszter felépítés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a cellaméret hatás a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) cellaméret hatás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaméret hatás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaméret hatás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a NODATA kezelés kapcsán?",
+    "correct": "A(z) NODATA kezelés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a NODATA kezelés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) NODATA kezelés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a skálatriplet alkalmazás jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) skálatriplet alkalmazás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a skálatriplet alkalmazás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) skálatriplet alkalmazás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a DEM felbontás előnyeit és korlátait a hidrológiai alkalmazásokban!",
+    "correct": "A(z) DEM felbontás a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a DEM felbontás helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) DEM felbontás a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a TIN vs rács fogalma a csapadékelemzésben?",
+    "correct": "A(z) TIN vs rács a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a TIN vs rács helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) TIN vs rács a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a ASCII formátum fogalmát és alkalmazását a raszteradatkezelésben!",
+    "correct": "A(z) ASCII formátum a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a ASCII formátum helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) ASCII formátum a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a GeoTIFF előnyök a hidrológiai DEM-elemzés pontosságára?",
+    "correct": "A(z) GeoTIFF előnyök a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a GeoTIFF előnyök helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) GeoTIFF előnyök a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Milyen gyakorlati szempontokat kell figyelembe venni a lebegőpontos vs egész kapcsán?",
+    "correct": "A(z) lebegőpontos vs egész a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a lebegőpontos vs egész helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) lebegőpontos vs egész a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mi a cellaérték értelmezés jelentősége a vízgyűjtő-elemzésben?",
+    "correct": "A(z) cellaérték értelmezés a 5. fejezet fontos témája. A fogalom megértése elengedhetetlen a raszteralapú hidrológiai elemzéshez. A gyakorlatban a cellaérték értelmezés helyes alkalmazása biztosítja az elemzés megbízhatóságát és pontosságát. A részletes tárgyalás a fejezet megfelelő szakaszában található.",
+    "explanation": "A(z) cellaérték értelmezés a fejezet központi fogalmai közé tartozik.",
+    "chapter_num": 5
+  }
+]

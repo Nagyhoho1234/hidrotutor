@@ -1,0 +1,2902 @@
+[
+  {
+    "question": "Melyik nyelv az ArcGIS és a QGIS hivatalos szkriptnyelve?",
+    "options": [
+      "A) R",
+      "B) Java",
+      "C) Python",
+      "D) C++"
+    ],
+    "correct": "C",
+    "explanation": "Mindkét platform a Pythont fogadta el.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcPy?",
+    "options": [
+      "A) Egy DEM-típus",
+      "B) Az ESRI Python könyvtára az ArcGIS-hez",
+      "C) Csapadékmérő hálózat",
+      "D) Adatbázis-motor"
+    ],
+    "correct": "B",
+    "explanation": "Python hozzáférés az ArcGIS Pro összes eszközéhez.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik ArcPy modul a hidrológiai munkához legfontosabb?",
+    "options": [
+      "A) arcpy.na",
+      "B) arcpy.sa",
+      "C) arcpy.mp",
+      "D) arcpy.ia"
+    ],
+    "correct": "B",
+    "explanation": "arcpy.sa = Spatial Analyst: Fill, FlowDirection stb.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit csinál az env.overwriteOutput = True beállítás?",
+    "options": [
+      "A) Törli a DEM-et",
+      "B) Engedélyezi meglévő kimenetek felülírását",
+      "C) Visszaállítja az eredeti fájlokat",
+      "D) Zárólja a fájlokat"
+    ],
+    "correct": "B",
+    "explanation": "Szkriptfejlesztéskor elengedhetetlen a második futtatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'r' előtag egy Python string előtt (r\"C:\\path\")?",
+    "options": [
+      "A) Read-only jelzés",
+      "B) Nyers (raw) karakterlánc, fordított perjelek szó szerintiek",
+      "C) Rekurzív olvasás",
+      "D) Remote elérés"
+    ],
+    "correct": "B",
+    "explanation": "A nyers stringben a \\ nem escape-szekvencia.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a ModelBuilder?",
+    "options": [
+      "A) Egy 3D modellező szoftver",
+      "B) Vizuális programozási környezet térinformatikai eszközök láncolásához",
+      "C) Vízszintmérő eszköz",
+      "D) Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "Eszközöket húzunk vászonra és összekapcsoljuk.",
+    "type": "mcq"
+  },
+  {
+    "question": "A ModelBuilder képes Python szkriptet exportálni?",
+    "options": [
+      "A) Nem",
+      "B) Igen",
+      "C) Csak R-be",
+      "D) Csak C++-ba"
+    ],
+    "correct": "B",
+    "explanation": "Export To Python Script funkció.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a subprocess modul feladata a TauDEM Python burkolóban?",
+    "options": [
+      "A) DEM letöltés",
+      "B) Parancssori végrehajtható fájlok futtatása Pythonból",
+      "C) Térkép rajzolás",
+      "D) Adatbázis-kezelés"
+    ],
+    "correct": "B",
+    "explanation": "A Python subprocess.run() hívja a TauDEM C++ végrehajtható fájlokat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM milyen architektúrájú?",
+    "options": [
+      "A) Tiszta Python",
+      "B) C++ mag + Python burkoló",
+      "C) Java alapú",
+      "D) Felhőalapú"
+    ],
+    "correct": "B",
+    "explanation": "C++ számítási mag MPI-vel, Python felület.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python 'from arcpy.sa import *' mit csinál?",
+    "options": [
+      "A) Minden Spatial Analyst függvényt importál a névtérbe",
+      "B) Csak a Fill-t importálja",
+      "C) Exportálja az adatokat",
+      "D) Törli a rasztereket"
+    ],
+    "correct": "A",
+    "explanation": "Így Fill('DEM') írható arcpy.sa.Fill('DEM') helyett.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcGIS Pro Python ablak?",
+    "options": [
+      "A) Egy külső szövegszerkesztő",
+      "B) Beépített interaktív Python környezet az ArcGIS Pro-ban",
+      "C) Webböngésző",
+      "D) Térképnézet"
+    ],
+    "correct": "B",
+    "explanation": "Az Elemzés lapról elérhető, közvetlen adathozzáféréssel.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik IDE a legnépszerűbb Python fejlesztéshez 2026-ban?",
+    "options": [
+      "A) Notepad",
+      "B) Visual Studio Code",
+      "C) Word",
+      "D) Excel"
+    ],
+    "correct": "B",
+    "explanation": "VS Code a Microsoft ingyenes, nyílt forráskódú szerkesztője.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Jupyter notebook fő előnye?",
+    "options": [
+      "A) Gyors kompilálás",
+      "B) Kód, kimenet és elbeszélő szöveg egy dokumentumban",
+      "C) Automatikus DEM letöltés",
+      "D) GPU gyorsítás"
+    ],
+    "correct": "B",
+    "explanation": "Ideális oktatáshoz, dokumentációhoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Geoprocessing History milyen funkciót biztosít?",
+    "options": [
+      "A) DEM letöltés naplózása",
+      "B) Python parancs másolása (Copy Python Command)",
+      "C) Térkép rajzolás",
+      "D) E-mail küldés"
+    ],
+    "correct": "B",
+    "explanation": "Jobb klikk → Copy Python Command a pontos szintaxist adja.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a glob.glob() függvény feladata?",
+    "options": [
+      "A) DEM interpoláció",
+      "B) Mintára illeszkedő fájlok keresése egy könyvtárban",
+      "C) Térkép export",
+      "D) Adatbázis lekérdezés"
+    ],
+    "correct": "B",
+    "explanation": "Pl. glob.glob('*.tif') minden TIF fájlt megtalál.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcPy CheckOutExtension('Spatial') feladata?",
+    "options": [
+      "A) DEM letöltés",
+      "B) Spatial Analyst licenc kivétele",
+      "C) Fájl törlés",
+      "D) Térkép mentés"
+    ],
+    "correct": "B",
+    "explanation": "A Spatial Analyst függvényekhez szükséges licencellenőrzés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a QGIS Processing keretrendszer?",
+    "options": [
+      "A) Egy adatbázis",
+      "B) Egységes Python felület több szolgáltató algoritmusaihoz",
+      "C) Fájlkezelő",
+      "D) Hálózati eszköz"
+    ],
+    "correct": "B",
+    "explanation": "GRASS, SAGA, GDAL, WhiteboxTools elérése processing.run()-on keresztül.",
+    "type": "mcq"
+  },
+  {
+    "question": "A WhiteboxTools Python felülete hogyan telepíthető?",
+    "options": [
+      "A) Kézi fordítás",
+      "B) pip install whitebox",
+      "C) CD-ről",
+      "D) Nem telepíthető"
+    ],
+    "correct": "B",
+    "explanation": "Egyetlen parancs, bármely platformon.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Python logging modul feladata?",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Tartós naplózás fájlba időbélyeggel",
+      "C) Térkép rajzolás",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Éjszakai futtatásoknál elengedhetetlen.",
+    "type": "mcq"
+  },
+  {
+    "question": "Miért fontos a 'try/except' blokk kötegelt feldolgozásnál?",
+    "options": [
+      "A) Gyorsítja a futást",
+      "B) Egy vízgyűjtő hibája nem állítja le a köteget",
+      "C) Szebb kódot ad",
+      "D) Memóriát takarít meg"
+    ],
+    "correct": "B",
+    "explanation": "A hiba naplózódik, és a következő vízgyűjtő feldolgozása folytatódik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a .save() metódus feladata ArcPy raszterműveleteknél?",
+    "options": [
+      "A) Térkép mentés",
+      "B) A memóriabeli raszter lemezre írása",
+      "C) DEM letöltés",
+      "D) Licenc visszaadás"
+    ],
+    "correct": "B",
+    "explanation": "Nélküle az eredmény ideiglenes marad.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM mpiexec -n 8 mit jelent?",
+    "options": [
+      "A) 8 fájlt hoz létre",
+      "B) 8 párhuzamos folyamatot indít",
+      "C) 8 bites kódolást használ",
+      "D) 8 méteres felbontást"
+    ],
+    "correct": "B",
+    "explanation": "MPI párhuzamosítás 8 processzormagon.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcGIS Pro Python interpreter jellemző elérési útja?",
+    "options": [
+      "A) C:\\Windows\\python.exe",
+      "B) C:\\Program Files\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\\python.exe",
+      "C) C:\\Python\\python.exe",
+      "D) C:\\QGIS\\python.exe"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS saját Conda-környezetében.",
+    "type": "mcq"
+  },
+  {
+    "question": "A FlowDirection('FEL', '', '', 'DINF') mit csinál?",
+    "options": [
+      "A) D8 áramlásirány",
+      "B) D-végtelen áramlásirány",
+      "C) Süllyedékfeltöltés",
+      "D) Felhalmozódás"
+    ],
+    "correct": "B",
+    "explanation": "A negyedik 'DINF' argumentum a D-végtelen algoritmust választja.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a gdalwarp parancssori eszköz feladata?",
+    "options": [
+      "A) Szövegszerkesztés",
+      "B) Raszter vetítése és újramintavételezése",
+      "C) Vektor konverzió",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Koordináta-rendszer átváltás raszterekre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Budapest szélességén (47,5°) egy 1 ívmásodperces cella kelet-nyugati mérete körülbelül mennyi?",
+    "options": [
+      "A) 31 m",
+      "B) 21 m",
+      "C) 10 m",
+      "D) 50 m"
+    ],
+    "correct": "B",
+    "explanation": "30,9 × cos(47,5°) ≈ 30,9 × 0,676 ≈ 20,9 m.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az arcpy.SpatialReference(23700) milyen koordináta-rendszert jelöl?",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV",
+      "C) UTM Zone 34N",
+      "D) Web Mercator"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:23700 = HD72/EOV.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a pysheds?",
+    "options": [
+      "A) Python csapadékmérő csomag",
+      "B) Könnyűsúlyú Python vízgyűjtő-lehatárolási könyvtár",
+      "C) Talajvíz-modell",
+      "D) Meteorológiai API"
+    ],
+    "correct": "B",
+    "explanation": "Önálló, egyszerű vízgyűjtő-lehatárolás Pythonban.",
+    "type": "mcq"
+  },
+  {
+    "question": "A GRASS GIS r.watershed milyen előnnyel bír?",
+    "options": [
+      "A) GPU gyorsítás",
+      "B) Egyetlen hívással több terméket állít elő egyszerre",
+      "C) Csak 2D-s feldolgozás",
+      "D) Csak Windows"
+    ],
+    "correct": "B",
+    "explanation": "Folyásakkumuláció, irány, medencék és hálózat egyszerre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az env.workspace beállítás feladata?",
+    "options": [
+      "A) DEM letöltési hely",
+      "B) Bemeneti/kimeneti adatok alapértelmezett helye",
+      "C) Python telepítési hely",
+      "D) Térkép mentési hely"
+    ],
+    "correct": "B",
+    "explanation": "Az összes későbbi művelet itt keresi/írja az adatokat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A 'NameError: name Fill is not defined' hiba oka?",
+    "options": [
+      "A) A DEM nem létezik",
+      "B) Elfelejtettük a 'from arcpy.sa import *' importot",
+      "C) A lemez tele",
+      "D) Rossz jelszó"
+    ],
+    "correct": "B",
+    "explanation": "Import nélkül a Fill nem ismert név.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a fájlzárolási hiba tipikus oka ArcPy szkripteknél?",
+    "options": [
+      "A) A DEM túl nagy",
+      "B) Az adat megjelenik a térképen és zárolva van",
+      "C) A Python túl régi",
+      "D) A lemez hibás"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS zárolásokat helyez a megjelenített adatokra.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python f-string (f\"Step 1: {elapsed:.1f}s\") mit csinál?",
+    "options": [
+      "A) Fájlt hoz létre",
+      "B) Formázott szöveget ír ki a változó értékével",
+      "C) DEM-et olvas",
+      "D) Licencet ellenőriz"
+    ],
+    "correct": "B",
+    "explanation": "Az f-string a {} közötti kifejezést értékeli ki és beilleszti.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az argparse modul feladata?",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Parancssori argumentumok kezelése",
+      "C) Térkép export",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "python script.py --dem zagyva.tif --threshold 5000.",
+    "type": "mcq"
+  },
+  {
+    "question": "A NumPy dem[dem < 0] = 0 miért sokkal gyorsabb, mint a Python for ciklus?",
+    "options": [
+      "A) Nem gyorsabb",
+      "B) Vektorizált C művelet a háttérben",
+      "C) GPU-t használ",
+      "D) Kevesebb memória"
+    ],
+    "correct": "B",
+    "explanation": "NumPy fordított C-ben végzi a számítást, 100-1000× gyorsabb.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Papermill feladata?",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Jupyter notebookok felügyelet nélküli futtatása",
+      "C) Térkép nyomtatás",
+      "D) Fájl titkosítás"
+    ],
+    "correct": "B",
+    "explanation": "Jupyter notebookok kötegelt futtatására.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Google Colab mit biztosít ingyenesen?",
+    "options": [
+      "A) ArcGIS licencet",
+      "B) Felhőalapú Jupyter notebookokat előre telepített könyvtárakkal",
+      "C) LiDAR adatokat",
+      "D) DEM-eket"
+    ],
+    "correct": "B",
+    "explanation": "Ingyenes, de ArcPy nélkül.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Conda csomagkezelő szerepe az ArcGIS Pro-ban?",
+    "options": [
+      "A) DEM letöltés",
+      "B) Python környezet és csomag kezelése",
+      "C) Térkép export",
+      "D) Licenc kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS Pro saját Python disztribúcióját Conda kezeli.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a SetNull eszköz feladata a vízfolyás-definícióban?",
+    "options": [
+      "A) Minden cellát nullára állít",
+      "B) A küszöb alatti cellákat NoData-vá teszi, a feletti = vízfolyás",
+      "C) A DEM-et nullára állítja",
+      "D) Törli a fájlt"
+    ],
+    "correct": "B",
+    "explanation": "SetNull('FAC', 1, 'VALUE < threshold') → vízfolyás-raszter.",
+    "type": "mcq"
+  },
+  {
+    "question": "A HUC (Hydrologic Unit Code) rendszer melyik ország szabványa?",
+    "options": [
+      "A) Magyarország",
+      "B) USA",
+      "C) EU",
+      "D) Globális"
+    ],
+    "correct": "B",
+    "explanation": "Az USA hidrológiai egység-osztályozási rendszere.",
+    "type": "mcq"
+  },
+  {
+    "question": "Magyarország vízügyi egységrendszere mire épül?",
+    "options": [
+      "A) HUC",
+      "B) EU Víz Keretirányelv + OVF részvízgyűjtők",
+      "C) HydroSHEDS",
+      "D) Pfafstetter"
+    ],
+    "correct": "B",
+    "explanation": "VKI vízgyűjtő-kerületek + OVF tervezési egységek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'env.snapRaster' beállítás feladata?",
+    "options": [
+      "A) Fénykép készítés",
+      "B) Kimeneti raszterek pontos igazítása egy referenciához",
+      "C) DEM mentés",
+      "D) Vetítés"
+    ],
+    "correct": "B",
+    "explanation": "Biztosítja, hogy a kimeneti cellák igazodjanak a referenciához.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az env.cellSize beállítás?",
+    "options": [
+      "A) Monitor felbontás",
+      "B) Raszterkimenetek cellamérete",
+      "C) Képernyőméret",
+      "D) Betűméret"
+    ],
+    "correct": "B",
+    "explanation": "Különböző felbontású raszterek kombinálásakor fontos.",
+    "type": "mcq"
+  },
+  {
+    "question": "A QGIS Processing napló milyen funkciót biztosít?",
+    "options": [
+      "A) DEM letöltés naplózás",
+      "B) Az algoritmus pontos Python szintaxisát mutatja",
+      "C) Térképkészítés",
+      "D) E-mail küldés"
+    ],
+    "correct": "B",
+    "explanation": "Mint az ArcGIS Geoprocessing History.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ideális fejlődési ív a szkriptelés megtanulásához?",
+    "options": [
+      "A) Azonnal írjunk 1000 soros kódot",
+      "B) Kézi munka → Előzmények másolása → Szkript → Paraméterezés → Ciklus",
+      "C) Csak elmélet",
+      "D) Csak ModelBuilder"
+    ],
+    "correct": "B",
+    "explanation": "6 lépéses fokozatos fejlődés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'ImportError: No module named arcpy' hiba oka?",
+    "options": [
+      "A) A DEM hiányzik",
+      "B) Rossz Python környezet (nem ArcGIS Pro Conda)",
+      "C) A lemez tele",
+      "D) Nincs internet"
+    ],
+    "correct": "B",
+    "explanation": "A rendszer Pythonját használják az ArcGIS helyett.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Google Earth Engine mire alkalmas a vízgyűjtő-lehatárolásban?",
+    "options": [
+      "A) Pontos helyi feldolgozás",
+      "B) Globális DEM-eken raszterműveletek Python API-n keresztül",
+      "C) ArcPy funkciók",
+      "D) Nyomtatás"
+    ],
+    "correct": "B",
+    "explanation": "Bolygóméretű adatkészleteken végezhet műveleket.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a MERIT DEM?",
+    "options": [
+      "A) Magyar nemzeti DEM",
+      "B) Globális, korrigált SRTM-alapú 90 m DEM",
+      "C) LiDAR DEM",
+      "D) Hőmérsékleti raszter"
+    ],
+    "correct": "B",
+    "explanation": "Yamazaki et al., javított globális DEM.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a FastAPI/Flask szerepe a szkriptekből webszolgáltatás építésénél?",
+    "options": [
+      "A) DEM interpoláció",
+      "B) DEM-feltöltés → feldolgozás → vízgyűjtő visszaadás API-n keresztül",
+      "C) Térkép rajzolás",
+      "D) Licenc kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Python szkript webszolgáltatásba csomagolása.",
+    "type": "mcq"
+  },
+  {
+    "question": "A 'for dem_path in dem_files:' konstrukció mit csinál?",
+    "options": [
+      "A) Egyetlen DEM-et dolgoz fel",
+      "B) Végigmegy minden DEM-fájlon a listában",
+      "C) Törli a fájlokat",
+      "D) DEM-et tölt le"
+    ],
+    "correct": "B",
+    "explanation": "Ciklus a bemeneti fájlokon kötegelt feldolgozáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python az ArcGIS és QGIS hivatalos szkriptnyelve.",
+    "correct": "true",
+    "explanation": "Mindkét platform elfogadta.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcPy aktív ArcGIS Pro licencet igényel.",
+    "correct": "true",
+    "explanation": "Kereskedelmi licenc szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "A WhiteboxTools telepítéséhez ArcGIS licenc kell.",
+    "correct": "false",
+    "explanation": "pip install whitebox, ingyenes.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python nyers (raw) string előtagja 'r'.",
+    "correct": "true",
+    "explanation": "r'C:\\path' szó szerinti.",
+    "type": "true_false"
+  },
+  {
+    "question": "A ModelBuilder nem exportálható Python szkriptbe.",
+    "correct": "false",
+    "explanation": "Export To Python Script funkció elérhető.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM C++ magja MPI-t használ párhuzamosításhoz.",
+    "correct": "true",
+    "explanation": "Message Passing Interface.",
+    "type": "true_false"
+  },
+  {
+    "question": "A subprocess modul parancssori programokat futtat Pythonból.",
+    "correct": "true",
+    "explanation": "subprocess.run() a standard módszer.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az env.overwriteOutput = True nélkül a második futtatás hibázik.",
+    "correct": "true",
+    "explanation": "Meglévő kimenetek nem írhatók felül.",
+    "type": "true_false"
+  },
+  {
+    "question": "A QGIS Processing keretrendszer csak natív QGIS algoritmusokat támogat.",
+    "correct": "false",
+    "explanation": "GRASS, SAGA, GDAL, WhiteboxTools is.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Jupyter notebook alkalmas felügyelet nélküli termelési futtatásra.",
+    "correct": "false",
+    "explanation": "Interaktív használatra tervezett; Papermill szükséges a kötegelt futtatáshoz.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python f-string formátumot a Python 3.6-tól támogatja.",
+    "correct": "true",
+    "explanation": "f'...' szintaxis.",
+    "type": "true_false"
+  },
+  {
+    "question": "A NumPy vektorizált művelet gyorsabb, mint a Python for ciklus rasztereken.",
+    "correct": "true",
+    "explanation": "100-1000× gyorsabb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A VS Code ingyenes és nyílt forráskódú.",
+    "correct": "true",
+    "explanation": "Microsoft fejleszti.",
+    "type": "true_false"
+  },
+  {
+    "question": "A PyCharm Community Edition ingyenes.",
+    "correct": "true",
+    "explanation": "JetBrains, Community verzió.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az IDLE az ArcPy-val közvetlenül működik, ha az ArcGIS Python-környezetéből indítjuk.",
+    "correct": "true",
+    "explanation": "A helyes Python interpreter szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Geoprocessing History minden Python szintaxist rögzít.",
+    "correct": "true",
+    "explanation": "Copy Python Command az egzakt szintaxist adja.",
+    "type": "true_false"
+  },
+  {
+    "question": "A glob.glob() csak Windows-on működik.",
+    "correct": "false",
+    "explanation": "Minden platformon működik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A try/except blokk megakadályozza a teljes köteg leállítását egy hiba miatt.",
+    "correct": "true",
+    "explanation": "A hiba naplózódik, a feldolgozás folytatódik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A .save() metódus nélkül a rasztereredmény elvész.",
+    "correct": "true",
+    "explanation": "Ideiglenes memóriabeli raszter marad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A logging modul fájlba írja a naplókat.",
+    "correct": "true",
+    "explanation": "Időbélyeggel ellátott tartós feljegyzés.",
+    "type": "true_false"
+  },
+  {
+    "question": "A parancssori argumentumokat az argparse modul kezeli.",
+    "correct": "true",
+    "explanation": "Standard Python modul.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Git verziókezelés szükségtelen szkripteknél.",
+    "correct": "false",
+    "explanation": "Változások nyomon követése, visszaállítás, megosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python értelmezett nyelv, tehát lassabb, mint a C++.",
+    "correct": "true",
+    "explanation": "De a térinformatikai szkript fordított eszközöket hív.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM végrehajtható fájlok közvetlenül futtathatók parancssorból.",
+    "correct": "true",
+    "explanation": "mpiexec -n 8 pitremove stb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A QGIS Python Konzol interaktív Python környezet.",
+    "correct": "true",
+    "explanation": "Mint az ArcGIS Pro Python ablak.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcPy szkriptek platformfüggetlenek.",
+    "correct": "false",
+    "explanation": "ArcGIS Pro kell, ami Windows-on fut.",
+    "type": "true_false"
+  },
+  {
+    "question": "A WhiteboxTools Python API 'pip install whitebox' paranccsal telepíthető.",
+    "correct": "true",
+    "explanation": "Egyszerű telepítés.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python kód írásához mindig IDE szükséges.",
+    "correct": "false",
+    "explanation": "Szövegszerkesztő is elegendő.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS Pro Python ablak alkalmas hosszú szkriptek írására.",
+    "correct": "false",
+    "explanation": "Néhány sornál hosszabb kóddal kezelhetetlenné válik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM Python burkoló összeállítja a parancssort és subprocess.run()-t hív.",
+    "correct": "true",
+    "explanation": "Paraméterek → cmd string → futtatás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A processing.run() a QGIS standard módszere algoritmusok Pythonból való hívásához.",
+    "correct": "true",
+    "explanation": "Szótáras paraméterátadás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Google Earth Engine ingyenes DEM-feldolgozást biztosít.",
+    "correct": "true",
+    "explanation": "De nem tartalmaz dedikált vízgyűjtő-lehatárolási eszközöket.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Microsoft Planetary Computer Jupyter notebook felületet kínál.",
+    "correct": "true",
+    "explanation": "Copernicus DEM és más adatkészletek hozzáférése.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python beágyazott for ciklus rasztereken hatékony megoldás.",
+    "correct": "false",
+    "explanation": "NumPy vektorizált művelet 100-1000× gyorsabb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A nyílt forráskódú eszközök teljes alternatívát nyújtanak a kereskedelmi szoftverrel szemben.",
+    "correct": "true",
+    "explanation": "QGIS, GDAL, WhiteboxTools, TauDEM.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Conda az ArcGIS Pro Python csomagkezelője.",
+    "correct": "true",
+    "explanation": "A Python környezetet Conda kezeli.",
+    "type": "true_false"
+  },
+  {
+    "question": "A szkript egyszerre a munkafolyamat és annak dokumentációja.",
+    "correct": "true",
+    "explanation": "Minden paraméter rögzítve van a kódban.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Windows Feladatütemező Python szkripteket futtathat éjszaka.",
+    "correct": "true",
+    "explanation": "Automatikus, beavatkozásmentes feldolgozás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Budapest szélességén (47,5°) egy ívmásodperc ÉD irányban ~31 m.",
+    "correct": "true",
+    "explanation": "0,000278° × 111195 m/° ≈ 30,9 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "Budapest szélességén egy ívmásodperc KNy irányban ~31 m.",
+    "correct": "false",
+    "explanation": "~21 m a koszinusz-faktor miatt.",
+    "type": "true_false"
+  },
+  {
+    "question": "A MERIT DEM korrigált SRTM-alapú globális DEM.",
+    "correct": "true",
+    "explanation": "Yamazaki et al., 90 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EOV koordináták fejlécei mindig helyesek.",
+    "correct": "false",
+    "explanation": "Az értéktartomány alapján kell azonosítani: Y: 0-400k, X: 400k-1M.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS előre lehatárolt vízgyűjtőket biztosít.",
+    "correct": "true",
+    "explanation": "HydroBASINS 12 szinten.",
+    "type": "true_false"
+  },
+  {
+    "question": "A CCM adatkészlet páneurópai vízgyűjtőket tartalmaz.",
+    "correct": "true",
+    "explanation": "JRC Catchment Characterisation and Modelling.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python 'import time' modul lehetővé teszi a futásidő mérését.",
+    "correct": "true",
+    "explanation": "time.time() hívások közötti különbség.",
+    "type": "true_false"
+  },
+  {
+    "question": "A SetNull eszköz vízfolyás-rasztert hoz létre a küszöbérték alapján.",
+    "correct": "true",
+    "explanation": "SetNull('FAC', 1, 'VALUE < T').",
+    "type": "true_false"
+  },
+  {
+    "question": "Az arcpy.Exists() ellenőrzi, hogy a kimenet létrejött-e.",
+    "correct": "true",
+    "explanation": "Csendes meghibásodás detektálására.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 'unicode error' hiba típusosan a fordított perjeles útvonalaknál fordul elő.",
+    "correct": "true",
+    "explanation": "\\U, \\n escape-szekvenciák okozzák.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS szkriptnyelve: ________.",
+    "correct": "Python",
+    "explanation": "Hivatalos szkriptnyelv.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcPy Spatial Analyst modulja: arcpy.________.",
+    "correct": "sa",
+    "explanation": "arcpy.sa = Spatial Analyst.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A meglévő kimenetek felülírásához: env.________ = True.",
+    "correct": "overwriteOutput",
+    "explanation": "Szkriptfejlesztéshez elengedhetetlen.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A nyers string előtagja Pythonban: ________.",
+    "correct": "r",
+    "explanation": "r'C:\\path'.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS vizuális programozási környezete: ________.",
+    "correct": "ModelBuilder",
+    "explanation": "Eszközöket vászonra húzunk.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM számítási magja ________ nyelven íródott.",
+    "correct": "C++",
+    "explanation": "MPI párhuzamos C++.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python modulja parancssori programok futtatásához: ________.",
+    "correct": "subprocess",
+    "explanation": "subprocess.run().",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Geoprocessing History-ból a ________ funkció másolja a Python szintaxist.",
+    "correct": "Copy Python Command",
+    "explanation": "Jobb klikk a bejegyzésen.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A glob.glob('*.________') az összes TIF fájlt megtalálja.",
+    "correct": "tif",
+    "explanation": "Mintaillesztés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Spatial Analyst licenc kivétele: arcpy.CheckOutExtension('________').",
+    "correct": "Spatial",
+    "explanation": "Szükséges a SA eszközökhöz.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS feldolgozási keretrendszerben: processing.________().",
+    "correct": "run",
+    "explanation": "processing.run(algoritmus, paraméterek).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A WhiteboxTools telepítése: pip install ________.",
+    "correct": "whitebox",
+    "explanation": "Egyetlen parancs.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A naplózó modul neve: ________.",
+    "correct": "logging",
+    "explanation": "Python standard modul.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Hibakezelés: try / ________ blokk.",
+    "correct": "except",
+    "explanation": "A hiba elkapása és kezelése.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A raszter lemezre írása: eredmény.________('név').",
+    "correct": "save",
+    "explanation": ".save() metódus.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM párhuzamosítás: mpiexec -n ________ eszköznév.",
+    "correct": "8",
+    "explanation": "Processzorszám.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS Pro Python interpreter útja: ...\\envs\\________\\python.exe.",
+    "correct": "arcgispro-py3",
+    "explanation": "Conda-környezet neve.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen ArcPy-ban: FlowDirection('FEL','','','________').",
+    "correct": "DINF",
+    "explanation": "Negyedik argumentum.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A gdalwarp -t_srs EPSG:________ az EOV vetületbe vetít.",
+    "correct": "23700",
+    "explanation": "HD72/EOV.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python parancssori argumentum modul: ________.",
+    "correct": "argparse",
+    "explanation": "Standard modul.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NumPy vektorizált műveletek ________-szor gyorsabbak.",
+    "correct": "100-1000",
+    "explanation": "Fordított C a háttérben.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A MERIT DEM globális felbontása: ________ m.",
+    "correct": "90",
+    "explanation": "Korrigált SRTM.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Microsoft felhőplatformja: ________ Computer.",
+    "correct": "Planetary",
+    "explanation": "Jupyter notebook felület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Feladatütemező angolul: Task ________.",
+    "correct": "Scheduler",
+    "explanation": "Windows ütemező.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Budapest szélességén egy ívmásodperc KNy ≈ ________ m.",
+    "correct": "21",
+    "explanation": "30,9 × cos(47,5°).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EOV northing értéktartománya: 0 - ________.",
+    "correct": "400 000",
+    "explanation": "Northing azonosítás értéktartomány alapján.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS grafikus modellező fájlkiterjesztése: .________.",
+    "correct": "model3",
+    "explanation": "QGIS modell fájl.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python megjegyzés karakter: ________.",
+    "correct": "#",
+    "explanation": "A # utáni rész figyelmen kívül marad.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python csomagkezelő: ________.",
+    "correct": "pip",
+    "explanation": "pip install csomagnév.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Flask/FastAPI keretrendszerrel a szkript ________-ba csomagolható.",
+    "correct": "webszolgáltatásba",
+    "explanation": "API-n keresztül elérhető.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python behúzás (________) kényszeríti ki a kódstruktúrát.",
+    "correct": "indentálás",
+    "explanation": "Tab vagy szóközök.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A VS Code Python ________-e a Pylance.",
+    "correct": "nyelvi szerver",
+    "explanation": "Kódkiegészítés és ellenőrzés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Google ________ Engine globális DEM-ekhez biztosít hozzáférést.",
+    "correct": "Earth",
+    "explanation": "Google Earth Engine.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python futásidő mérése: import ________.",
+    "correct": "time",
+    "explanation": "time.time() hívások.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A SetNull ArcPy eszköz a küszöb ________ cellákat NoData-vá teszi.",
+    "correct": "alatti",
+    "explanation": "VALUE < threshold → NoData.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az arcpy.________() ellenőrzi egy adat létezését.",
+    "correct": "Exists",
+    "explanation": "Csendes hiba detektálása.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A 'unicode error' megoldása: ________ string használata.",
+    "correct": "nyers (raw)",
+    "explanation": "r'C:\\path'.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Jupyter notebook ________ és kimenetet egy dokumentumban egyesíti.",
+    "correct": "kódot",
+    "explanation": "Kód + kimenet + szöveg.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Git alapvető parancsai: git init, git add, git ________.",
+    "correct": "commit",
+    "explanation": "Változások mentése.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A PyCharm a ________ Python-specifikus IDE-je.",
+    "correct": "JetBrains",
+    "explanation": "Community Edition ingyenes.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Copernicus ________ Space a DEM-ek letöltési helye.",
+    "correct": "Data",
+    "explanation": "Copernicus Data Space Ecosystem.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GRASS GIS r.watershed -________ kapcsoló a D8 algoritmust választja.",
+    "correct": "s",
+    "explanation": "SFD (Single Flow Direction) = D8.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python 'os.path.________()' összekapcsolja az útvonal elemeket.",
+    "correct": "join",
+    "explanation": "Platformfüggetlen útvonal.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python 'os.________()' könyvtárat hoz létre.",
+    "correct": "makedirs",
+    "explanation": "exist_ok=True paraméterrel.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM eszköztár fájlkiterjesztése: .________.",
+    "correct": "tbx",
+    "explanation": "ArcGIS Toolbox.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS feldolgozási algoritmus neve GRASS kitöltésre: grass7:r.fill.________.",
+    "correct": "dir",
+    "explanation": "r.fill.dir a GRASS süllyedékfeltöltő.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS Pro-ból a ModelBuilder az ________ lapról érhető el.",
+    "correct": "Analysis (Elemzés)",
+    "explanation": "Az Analysis szalagon.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python ________ utasítás jelzi a blokkok kezdetét.",
+    "correct": "kettőspont (:)",
+    "explanation": "if, for, def után :",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A wbt.fill_depressions a ________ Python parancsa a süllyedékfeltöltésre.",
+    "correct": "WhiteboxTools",
+    "explanation": "wbt = WhiteboxTools() objektum.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A JRC CCM adatkészlet a ________ vízgyűjtő-jellemzésre szolgál.",
+    "correct": "páneurópai",
+    "explanation": "Catchment Characterisation and Modelling.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Linux ütemezője: ________.",
+    "correct": "cron",
+    "explanation": "Windowson: Task Scheduler.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Miért szükséges a térinformatikai munkafolyamatok automatizálása?",
+    "explanation": "Megismételhetőség, skálázhatóság (ezer vízgyűjtő), reprodukálhatóság (tudományos publikáció, szabályozási audit).",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python előnyeit térinformatikai szkripteléshez!",
+    "explanation": "Olvashatóság, gazdag könyvtárak (ArcPy, GDAL, NumPy), nagy közösség, platformfüggetlenség.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a ModelBuilder szerepét és korlátait!",
+    "explanation": "Vizuális programozás kód nélkül, jó lineáris munkafolyamatokhoz. Korlát: ciklus, hibakezelés, külső eszközök, nem-térinformatikai feladatok.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a TauDEM háromrétegű architektúráját!",
+    "explanation": "Felhasználói felület (ArcGIS/Python) → Python burkoló (paraméter → parancssor → subprocess) → C++ mag (MPI, GeoTIFF).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan építsünk fel egy vízgyűjtő-lehatárolási szkriptet lépésről lépésre?",
+    "explanation": "1) Kézi végrehajtás. 2) Előzmények másolása. 3) Import + env. 4) Teszt. 5) Paraméterezés. 6) Ciklus + hibakezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ArcPy környezeti beállítások szerepét (workspace, overwrite, cellSize, extent, snapRaster)!",
+    "explanation": "Globális viselkedést szabályoznak: hol, felülírás, felbontás, terület, igazítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan tanulható a térinformatikai Python a Geoprocessing History-ból?",
+    "explanation": "Eszköz futtatása GUI-n → History → Copy Python Command → beillesztés szkriptbe.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a try/except blokk szerepét kötegelt feldolgozásnál!",
+    "explanation": "Elkapja a hibát, naplózza, és a következő bemenetre lép. A köteg nem áll le egyetlen hiba miatt.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan különbözik a TauDEM parancssori és az ArcGIS eszköztár felhasználása?",
+    "explanation": "Parancssor: leíróbb hibák, rugalmasabb kísérletezés. ArcGIS: GUI, automatikus megjelenítés, de rejtélyesebb hibák.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a koordináta-konverziók kihívásait Magyarországon!",
+    "explanation": "EOV (23700) vs ETRS89 vs WGS84. 7-paraméteres Helmert. Budapest szélességén ÉD ≈ 31 m, KNy ≈ 21 m. Nem négyzetes cellák.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a licencelési szempont az ArcPy és a nyílt forráskódú eszközök között?",
+    "explanation": "ArcPy: kereskedelmi licenc. GDAL/WhiteboxTools/TauDEM: ingyenes. Nagyszabású feldolgozás → nyílt forráskód.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan skálázható egy szkript több vízgyűjtőre?",
+    "explanation": "for ciklus a bemeneti DEM-eken, try/except, naplózás, strukturált kimeneti könyvtárak.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a QGIS PyQGIS környezet használatát!",
+    "explanation": "QGIS Python Konzol, Processing keretrendszer (processing.run), önálló szkriptek, GRASS/SAGA/WBT algoritmusok.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a WhiteboxTools előnye oktatási környezetben?",
+    "explanation": "Nulla költség, pip install, tiszta API, platformfüggetlen. Nincs ArcGIS licenc igény.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítja a szkriptelés a reprodukálhatóságot?",
+    "explanation": "Minden paraméter rögzítve, azonos bemenet = azonos kimenet, megosztható, verziózható.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python print() és logging modul közötti különbséget!",
+    "explanation": "print(): konzolra ír, ideiglenes. logging: fájlba, időbélyeggel, szintekre osztva (INFO, ERROR).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan használható a Python az éjszakai kötegelt feldolgozáshoz?",
+    "explanation": "Szkript + Feladatütemező (Win) / cron (Linux). Futtatás éjfélkor, reggel napló áttekintés.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a 'struktura megértése, szintaxis kikeresése' elvét!",
+    "explanation": "A munkafolyamat logikája maradandó tudás. A konkrét függvénynevek és paraméterlista referencia-anyag.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a felhőalapú feldolgozás (GEE, Planetary Computer) szerepe?",
+    "explanation": "Nagy adatkészletek feldolgozása helyi hardver nélkül. Különösen értékes korlátozott erőforrású régiókban.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a szkript fejlődési ívét a személyes eszköztől a webszolgáltatásig!",
+    "explanation": "Szkript → függvények/modulok → konfigurációs fájlok → parancssori argumentumok → ütemezés → webszolgáltatás (Flask/FastAPI).",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen előnyei vannak az ArcGIS Notebookoknak?",
+    "explanation": "Előre konfigurált ArcPy, interaktív, kód+térkép+szöveg. Korlát: ArcGIS licenc szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezeli a Python a Windows fájlelérési utak problémáját?",
+    "explanation": "Fordított perjelek escape-problémát okoznak. Megoldás: raw string (r'...'), előre perjelek, dupla fordított perjelek.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a NumPy vektorizált művelet előnye a for ciklussal szemben?",
+    "explanation": "A NumPy fordított C-ben végzi a számítást, 100-1000× gyorsabb, mint a Python for ciklus rasztercellák felett.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Python subprocess modul a TauDEM kontextusában?",
+    "explanation": "Összeállítja a parancssort (mpiexec -n 8 tool args), subprocess.run() futtatja, elfogja stdout/stderr.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az EOV koordináták értéktartomány-alapú azonosítását!",
+    "explanation": "Northing: 0-400k, Easting: 400k-1M. A fejlécek gyakran hibásak, az értékek megbízhatóbbak.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan exportálható és tisztítható a ModelBuilder Python kimenet?",
+    "explanation": "Export To Python Script → nyers kód. Tisztítás: változók átnevezése, felesleges paraméterek eltávolítása, megjegyzések.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szempontok fontosak a nyílt forráskódú és kereskedelmi eszközök közötti választásnál?",
+    "explanation": "ArcPy: vállalati integráció, ESRI támogatás. Nyílt: platform-független, átlátható, ingyenes. Gyakorlatban: mindkettő.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a Git verziókezelés szkripteknél?",
+    "explanation": "git init, git add, git commit. Változások nyomon követése, visszaállítás, GitHub/GitLab megosztás.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen információkat tartalmaz egy jó szkript fejléc-megjegyzés?",
+    "explanation": "Cél, szerző, dátum, bemenetek, kimenetek. Hat hónap múlva megment a visszafejtéstől.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a D-végtelen áramlásirány Python szkriptelését ArcPy-ban és TauDEM-ben!",
+    "explanation": "ArcPy: FlowDirection('FEL','','','DINF'). TauDEM: mpiexec -n 8 dinfflowdir -ang ... -slp ... -fel ...",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a HydroSHEDS szerepe az automatizált feldolgozásban?",
+    "explanation": "Előre lehatárolt vízgyűjtők 12 szinten, globálisan. Ahol a DEM beszerzés nehéz, a HydroSHEDS kész megoldás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható a Python a Tisza vízgyűjtőjének kötegelt feldolgozására?",
+    "explanation": "Copernicus GLO-30 csempék letöltése, mozaikolás, feltöltés, áramlásirány, felhalmozódás, részvízgyűjtők - automatizáltan.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Python 'os' modul szerepe térinformatikai szkriptekben?",
+    "explanation": "Fájlelérési utak kezelése (os.path.join), könyvtárak létrehozása (os.makedirs), fájllétezés ellenőrzése.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python ciklusok és feltételes utasítások szerepét a kötegelt feldolgozásban!",
+    "explanation": "for: minden DEM feldolgozása. if: feltételes lépések (pl. kitöltés kihagyása). try/except: hibakezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan segíti a Python a szabályozási megfelelőséget a vízgazdálkodásban?",
+    "explanation": "A szkript dokumentálja a módszertant, reprodukálható, megosztható. Az OVF árvízveszélyes zóna lehatárolása auditálható.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség a .py szkript és a Jupyter notebook között termelési használatban?",
+    "explanation": ".py: felügyelet nélkül futtatható, ütemezhetó. Notebook: interaktív, dokumentáció, de felügyelt. Termelésre: .py.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python változóelnevezési konvenciókat!",
+    "explanation": "Kisbetűs, aláhúzásjeles: flow_direction, stream_threshold. Konzisztencia a Python közösség kódjával.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezelhető a 'The tool is not licensed' hiba?",
+    "explanation": "arcpy.CheckOutExtension('Spatial') a szkript elejére. Ha nincs licenc: nyílt forráskódú alternatíva.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Python time modul szerepe a szkriptek monitorozásában?",
+    "explanation": "Futásidő mérése: start = time.time(), elapsed = time.time() - start. Minden lépés időbélyeggel.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Copernicus DEM-ek szerepét az automatizált magyar vízgyűjtő-feldolgozásban!",
+    "explanation": "GLO-30: ingyenes, 30 m, API-n letölthető, GeoTIFF. EEA-10: részletesebb, EU/EGT. Szkriptelhető.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a CCM adatkészlet és hogyan használható validációra?",
+    "explanation": "JRC páneurópai vízgyűjtő-jellemzés. Referencia-határok az automatizált lehatárolás eredményeinek ellenőrzésére.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Python 'os.makedirs(path, exist_ok=True)'?",
+    "explanation": "Létrehozza a könyvtárat és az összes szülőt. exist_ok=True: nem hibázik, ha már létezik.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a 'pragmatikus megközelítést' az ökoszisztémák közötti választásban!",
+    "explanation": "Alapvető logika: GDAL/Rasterio (mindenhol működik). ArcPy/PyQGIS: csak platform-specifikus feladatokhoz.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Google Colab szerepe az oktatásban?",
+    "explanation": "Ingyenes felhőalapú Jupyter, előre telepített könyvtárak. ArcPy nélkül, de GDAL, NumPy, Rasterio elérhető.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan automatizálható a DEM letöltés Python szkriptből?",
+    "explanation": "Copernicus Data Space API, NASA Earthdata API, vagy opendap. Python requests/urllib modul + fájlkezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a R nyelv szerepét a hidrológiai elemzésben!",
+    "explanation": "Erős statisztikai ökoszisztéma (sf, terra, whitebox). Gyakorlatban: Python térbeli + R statisztikai elemzés kombináció.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Julia nyelv státusza a térinformatikai automatizálásban?",
+    "explanation": "Nagy teljesítmény, de kis térinformatikai ökoszisztéma. Érdemes figyelni, de még nem praktikus.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a szkript újrafelhasználhatósága különböző tanulmányi területek között?",
+    "explanation": "Paraméterezés: a fájlnevek és beállítások változókban a szkript tetején. Új terület: 3-5 sor módosítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Melyik nyelv az ArcGIS és a QGIS hivatalos szkriptnyelve? (v51)",
+    "options": [
+      "A) R",
+      "B) Java",
+      "C) Python",
+      "D) C++"
+    ],
+    "correct": "C",
+    "explanation": "Mindkét platform a Pythont fogadta el.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcPy? (v52)",
+    "options": [
+      "A) Egy DEM-típus",
+      "B) Az ESRI Python könyvtára az ArcGIS-hez",
+      "C) Csapadékmérő hálózat",
+      "D) Adatbázis-motor"
+    ],
+    "correct": "B",
+    "explanation": "Python hozzáférés az ArcGIS Pro összes eszközéhez.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik ArcPy modul a hidrológiai munkához legfontosabb? (v53)",
+    "options": [
+      "A) arcpy.na",
+      "B) arcpy.sa",
+      "C) arcpy.mp",
+      "D) arcpy.ia"
+    ],
+    "correct": "B",
+    "explanation": "arcpy.sa = Spatial Analyst: Fill, FlowDirection stb.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mit csinál az env.overwriteOutput = True beállítás? (v54)",
+    "options": [
+      "A) Törli a DEM-et",
+      "B) Engedélyezi meglévő kimenetek felülírását",
+      "C) Visszaállítja az eredeti fájlokat",
+      "D) Zárólja a fájlokat"
+    ],
+    "correct": "B",
+    "explanation": "Szkriptfejlesztéskor elengedhetetlen a második futtatáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'r' előtag egy Python string előtt (r\"C:\\path\")? (v55)",
+    "options": [
+      "A) Read-only jelzés",
+      "B) Nyers (raw) karakterlánc, fordított perjelek szó szerintiek",
+      "C) Rekurzív olvasás",
+      "D) Remote elérés"
+    ],
+    "correct": "B",
+    "explanation": "A nyers stringben a \\ nem escape-szekvencia.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a ModelBuilder? (v56)",
+    "options": [
+      "A) Egy 3D modellező szoftver",
+      "B) Vizuális programozási környezet térinformatikai eszközök láncolásához",
+      "C) Vízszintmérő eszköz",
+      "D) Adatbázis-kezelő"
+    ],
+    "correct": "B",
+    "explanation": "Eszközöket húzunk vászonra és összekapcsoljuk.",
+    "type": "mcq"
+  },
+  {
+    "question": "A ModelBuilder képes Python szkriptet exportálni? (v57)",
+    "options": [
+      "A) Nem",
+      "B) Igen",
+      "C) Csak R-be",
+      "D) Csak C++-ba"
+    ],
+    "correct": "B",
+    "explanation": "Export To Python Script funkció.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a subprocess modul feladata a TauDEM Python burkolóban? (v58)",
+    "options": [
+      "A) DEM letöltés",
+      "B) Parancssori végrehajtható fájlok futtatása Pythonból",
+      "C) Térkép rajzolás",
+      "D) Adatbázis-kezelés"
+    ],
+    "correct": "B",
+    "explanation": "A Python subprocess.run() hívja a TauDEM C++ végrehajtható fájlokat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM milyen architektúrájú? (v59)",
+    "options": [
+      "A) Tiszta Python",
+      "B) C++ mag + Python burkoló",
+      "C) Java alapú",
+      "D) Felhőalapú"
+    ],
+    "correct": "B",
+    "explanation": "C++ számítási mag MPI-vel, Python felület.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python 'from arcpy.sa import *' mit csinál? (v60)",
+    "options": [
+      "A) Minden Spatial Analyst függvényt importál a névtérbe",
+      "B) Csak a Fill-t importálja",
+      "C) Exportálja az adatokat",
+      "D) Törli a rasztereket"
+    ],
+    "correct": "A",
+    "explanation": "Így Fill('DEM') írható arcpy.sa.Fill('DEM') helyett.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcGIS Pro Python ablak? (v61)",
+    "options": [
+      "A) Egy külső szövegszerkesztő",
+      "B) Beépített interaktív Python környezet az ArcGIS Pro-ban",
+      "C) Webböngésző",
+      "D) Térképnézet"
+    ],
+    "correct": "B",
+    "explanation": "Az Elemzés lapról elérhető, közvetlen adathozzáféréssel.",
+    "type": "mcq"
+  },
+  {
+    "question": "Melyik IDE a legnépszerűbb Python fejlesztéshez 2026-ban? (v62)",
+    "options": [
+      "A) Notepad",
+      "B) Visual Studio Code",
+      "C) Word",
+      "D) Excel"
+    ],
+    "correct": "B",
+    "explanation": "VS Code a Microsoft ingyenes, nyílt forráskódú szerkesztője.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Jupyter notebook fő előnye? (v63)",
+    "options": [
+      "A) Gyors kompilálás",
+      "B) Kód, kimenet és elbeszélő szöveg egy dokumentumban",
+      "C) Automatikus DEM letöltés",
+      "D) GPU gyorsítás"
+    ],
+    "correct": "B",
+    "explanation": "Ideális oktatáshoz, dokumentációhoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Geoprocessing History milyen funkciót biztosít? (v64)",
+    "options": [
+      "A) DEM letöltés naplózása",
+      "B) Python parancs másolása (Copy Python Command)",
+      "C) Térkép rajzolás",
+      "D) E-mail küldés"
+    ],
+    "correct": "B",
+    "explanation": "Jobb klikk → Copy Python Command a pontos szintaxist adja.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a glob.glob() függvény feladata? (v65)",
+    "options": [
+      "A) DEM interpoláció",
+      "B) Mintára illeszkedő fájlok keresése egy könyvtárban",
+      "C) Térkép export",
+      "D) Adatbázis lekérdezés"
+    ],
+    "correct": "B",
+    "explanation": "Pl. glob.glob('*.tif') minden TIF fájlt megtalál.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcPy CheckOutExtension('Spatial') feladata? (v66)",
+    "options": [
+      "A) DEM letöltés",
+      "B) Spatial Analyst licenc kivétele",
+      "C) Fájl törlés",
+      "D) Térkép mentés"
+    ],
+    "correct": "B",
+    "explanation": "A Spatial Analyst függvényekhez szükséges licencellenőrzés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a QGIS Processing keretrendszer? (v67)",
+    "options": [
+      "A) Egy adatbázis",
+      "B) Egységes Python felület több szolgáltató algoritmusaihoz",
+      "C) Fájlkezelő",
+      "D) Hálózati eszköz"
+    ],
+    "correct": "B",
+    "explanation": "GRASS, SAGA, GDAL, WhiteboxTools elérése processing.run()-on keresztül.",
+    "type": "mcq"
+  },
+  {
+    "question": "A WhiteboxTools Python felülete hogyan telepíthető? (v68)",
+    "options": [
+      "A) Kézi fordítás",
+      "B) pip install whitebox",
+      "C) CD-ről",
+      "D) Nem telepíthető"
+    ],
+    "correct": "B",
+    "explanation": "Egyetlen parancs, bármely platformon.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Python logging modul feladata? (v69)",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Tartós naplózás fájlba időbélyeggel",
+      "C) Térkép rajzolás",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Éjszakai futtatásoknál elengedhetetlen.",
+    "type": "mcq"
+  },
+  {
+    "question": "Miért fontos a 'try/except' blokk kötegelt feldolgozásnál? (v70)",
+    "options": [
+      "A) Gyorsítja a futást",
+      "B) Egy vízgyűjtő hibája nem állítja le a köteget",
+      "C) Szebb kódot ad",
+      "D) Memóriát takarít meg"
+    ],
+    "correct": "B",
+    "explanation": "A hiba naplózódik, és a következő vízgyűjtő feldolgozása folytatódik.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a .save() metódus feladata ArcPy raszterműveleteknél? (v71)",
+    "options": [
+      "A) Térkép mentés",
+      "B) A memóriabeli raszter lemezre írása",
+      "C) DEM letöltés",
+      "D) Licenc visszaadás"
+    ],
+    "correct": "B",
+    "explanation": "Nélküle az eredmény ideiglenes marad.",
+    "type": "mcq"
+  },
+  {
+    "question": "A TauDEM mpiexec -n 8 mit jelent? (v72)",
+    "options": [
+      "A) 8 fájlt hoz létre",
+      "B) 8 párhuzamos folyamatot indít",
+      "C) 8 bites kódolást használ",
+      "D) 8 méteres felbontást"
+    ],
+    "correct": "B",
+    "explanation": "MPI párhuzamosítás 8 processzormagon.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ArcGIS Pro Python interpreter jellemző elérési útja? (v73)",
+    "options": [
+      "A) C:\\Windows\\python.exe",
+      "B) C:\\Program Files\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\\python.exe",
+      "C) C:\\Python\\python.exe",
+      "D) C:\\QGIS\\python.exe"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS saját Conda-környezetében.",
+    "type": "mcq"
+  },
+  {
+    "question": "A FlowDirection('FEL', '', '', 'DINF') mit csinál? (v74)",
+    "options": [
+      "A) D8 áramlásirány",
+      "B) D-végtelen áramlásirány",
+      "C) Süllyedékfeltöltés",
+      "D) Felhalmozódás"
+    ],
+    "correct": "B",
+    "explanation": "A negyedik 'DINF' argumentum a D-végtelen algoritmust választja.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a gdalwarp parancssori eszköz feladata? (v75)",
+    "options": [
+      "A) Szövegszerkesztés",
+      "B) Raszter vetítése és újramintavételezése",
+      "C) Vektor konverzió",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Koordináta-rendszer átváltás raszterekre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Budapest szélességén (47,5°) egy 1 ívmásodperces cella kelet-nyugati mérete körülbelül mennyi? (v76)",
+    "options": [
+      "A) 31 m",
+      "B) 21 m",
+      "C) 10 m",
+      "D) 50 m"
+    ],
+    "correct": "B",
+    "explanation": "30,9 × cos(47,5°) ≈ 30,9 × 0,676 ≈ 20,9 m.",
+    "type": "mcq"
+  },
+  {
+    "question": "Az arcpy.SpatialReference(23700) milyen koordináta-rendszert jelöl? (v77)",
+    "options": [
+      "A) WGS84",
+      "B) HD72/EOV",
+      "C) UTM Zone 34N",
+      "D) Web Mercator"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:23700 = HD72/EOV.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a pysheds? (v78)",
+    "options": [
+      "A) Python csapadékmérő csomag",
+      "B) Könnyűsúlyú Python vízgyűjtő-lehatárolási könyvtár",
+      "C) Talajvíz-modell",
+      "D) Meteorológiai API"
+    ],
+    "correct": "B",
+    "explanation": "Önálló, egyszerű vízgyűjtő-lehatárolás Pythonban.",
+    "type": "mcq"
+  },
+  {
+    "question": "A GRASS GIS r.watershed milyen előnnyel bír? (v79)",
+    "options": [
+      "A) GPU gyorsítás",
+      "B) Egyetlen hívással több terméket állít elő egyszerre",
+      "C) Csak 2D-s feldolgozás",
+      "D) Csak Windows"
+    ],
+    "correct": "B",
+    "explanation": "Folyásakkumuláció, irány, medencék és hálózat egyszerre.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az env.workspace beállítás feladata? (v80)",
+    "options": [
+      "A) DEM letöltési hely",
+      "B) Bemeneti/kimeneti adatok alapértelmezett helye",
+      "C) Python telepítési hely",
+      "D) Térkép mentési hely"
+    ],
+    "correct": "B",
+    "explanation": "Az összes későbbi művelet itt keresi/írja az adatokat.",
+    "type": "mcq"
+  },
+  {
+    "question": "A 'NameError: name Fill is not defined' hiba oka? (v81)",
+    "options": [
+      "A) A DEM nem létezik",
+      "B) Elfelejtettük a 'from arcpy.sa import *' importot",
+      "C) A lemez tele",
+      "D) Rossz jelszó"
+    ],
+    "correct": "B",
+    "explanation": "Import nélkül a Fill nem ismert név.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a fájlzárolási hiba tipikus oka ArcPy szkripteknél? (v82)",
+    "options": [
+      "A) A DEM túl nagy",
+      "B) Az adat megjelenik a térképen és zárolva van",
+      "C) A Python túl régi",
+      "D) A lemez hibás"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS zárolásokat helyez a megjelenített adatokra.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python f-string (f\"Step 1: {elapsed:.1f}s\") mit csinál? (v83)",
+    "options": [
+      "A) Fájlt hoz létre",
+      "B) Formázott szöveget ír ki a változó értékével",
+      "C) DEM-et olvas",
+      "D) Licencet ellenőriz"
+    ],
+    "correct": "B",
+    "explanation": "Az f-string a {} közötti kifejezést értékeli ki és beilleszti.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az argparse modul feladata? (v84)",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Parancssori argumentumok kezelése",
+      "C) Térkép export",
+      "D) Adatbázis kezelés"
+    ],
+    "correct": "B",
+    "explanation": "python script.py --dem zagyva.tif --threshold 5000.",
+    "type": "mcq"
+  },
+  {
+    "question": "A NumPy dem[dem < 0] = 0 miért sokkal gyorsabb, mint a Python for ciklus? (v85)",
+    "options": [
+      "A) Nem gyorsabb",
+      "B) Vektorizált C művelet a háttérben",
+      "C) GPU-t használ",
+      "D) Kevesebb memória"
+    ],
+    "correct": "B",
+    "explanation": "NumPy fordított C-ben végzi a számítást, 100-1000× gyorsabb.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Papermill feladata? (v86)",
+    "options": [
+      "A) DEM feldolgozás",
+      "B) Jupyter notebookok felügyelet nélküli futtatása",
+      "C) Térkép nyomtatás",
+      "D) Fájl titkosítás"
+    ],
+    "correct": "B",
+    "explanation": "Jupyter notebookok kötegelt futtatására.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Google Colab mit biztosít ingyenesen? (v87)",
+    "options": [
+      "A) ArcGIS licencet",
+      "B) Felhőalapú Jupyter notebookokat előre telepített könyvtárakkal",
+      "C) LiDAR adatokat",
+      "D) DEM-eket"
+    ],
+    "correct": "B",
+    "explanation": "Ingyenes, de ArcPy nélkül.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a Conda csomagkezelő szerepe az ArcGIS Pro-ban? (v88)",
+    "options": [
+      "A) DEM letöltés",
+      "B) Python környezet és csomag kezelése",
+      "C) Térkép export",
+      "D) Licenc kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Az ArcGIS Pro saját Python disztribúcióját Conda kezeli.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a SetNull eszköz feladata a vízfolyás-definícióban? (v89)",
+    "options": [
+      "A) Minden cellát nullára állít",
+      "B) A küszöb alatti cellákat NoData-vá teszi, a feletti = vízfolyás",
+      "C) A DEM-et nullára állítja",
+      "D) Törli a fájlt"
+    ],
+    "correct": "B",
+    "explanation": "SetNull('FAC', 1, 'VALUE < threshold') → vízfolyás-raszter.",
+    "type": "mcq"
+  },
+  {
+    "question": "A HUC (Hydrologic Unit Code) rendszer melyik ország szabványa? (v90)",
+    "options": [
+      "A) Magyarország",
+      "B) USA",
+      "C) EU",
+      "D) Globális"
+    ],
+    "correct": "B",
+    "explanation": "Az USA hidrológiai egység-osztályozási rendszere.",
+    "type": "mcq"
+  },
+  {
+    "question": "Magyarország vízügyi egységrendszere mire épül? (v91)",
+    "options": [
+      "A) HUC",
+      "B) EU Víz Keretirányelv + OVF részvízgyűjtők",
+      "C) HydroSHEDS",
+      "D) Pfafstetter"
+    ],
+    "correct": "B",
+    "explanation": "VKI vízgyűjtő-kerületek + OVF tervezési egységek.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'env.snapRaster' beállítás feladata? (v92)",
+    "options": [
+      "A) Fénykép készítés",
+      "B) Kimeneti raszterek pontos igazítása egy referenciához",
+      "C) DEM mentés",
+      "D) Vetítés"
+    ],
+    "correct": "B",
+    "explanation": "Biztosítja, hogy a kimeneti cellák igazodjanak a referenciához.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az env.cellSize beállítás? (v93)",
+    "options": [
+      "A) Monitor felbontás",
+      "B) Raszterkimenetek cellamérete",
+      "C) Képernyőméret",
+      "D) Betűméret"
+    ],
+    "correct": "B",
+    "explanation": "Különböző felbontású raszterek kombinálásakor fontos.",
+    "type": "mcq"
+  },
+  {
+    "question": "A QGIS Processing napló milyen funkciót biztosít? (v94)",
+    "options": [
+      "A) DEM letöltés naplózás",
+      "B) Az algoritmus pontos Python szintaxisát mutatja",
+      "C) Térképkészítés",
+      "D) E-mail küldés"
+    ],
+    "correct": "B",
+    "explanation": "Mint az ArcGIS Geoprocessing History.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az ideális fejlődési ív a szkriptelés megtanulásához? (v95)",
+    "options": [
+      "A) Azonnal írjunk 1000 soros kódot",
+      "B) Kézi munka → Előzmények másolása → Szkript → Paraméterezés → Ciklus",
+      "C) Csak elmélet",
+      "D) Csak ModelBuilder"
+    ],
+    "correct": "B",
+    "explanation": "6 lépéses fokozatos fejlődés.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi az 'ImportError: No module named arcpy' hiba oka? (v96)",
+    "options": [
+      "A) A DEM hiányzik",
+      "B) Rossz Python környezet (nem ArcGIS Pro Conda)",
+      "C) A lemez tele",
+      "D) Nincs internet"
+    ],
+    "correct": "B",
+    "explanation": "A rendszer Pythonját használják az ArcGIS helyett.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Google Earth Engine mire alkalmas a vízgyűjtő-lehatárolásban? (v97)",
+    "options": [
+      "A) Pontos helyi feldolgozás",
+      "B) Globális DEM-eken raszterműveletek Python API-n keresztül",
+      "C) ArcPy funkciók",
+      "D) Nyomtatás"
+    ],
+    "correct": "B",
+    "explanation": "Bolygóméretű adatkészleteken végezhet műveleket.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a MERIT DEM? (v98)",
+    "options": [
+      "A) Magyar nemzeti DEM",
+      "B) Globális, korrigált SRTM-alapú 90 m DEM",
+      "C) LiDAR DEM",
+      "D) Hőmérsékleti raszter"
+    ],
+    "correct": "B",
+    "explanation": "Yamazaki et al., javított globális DEM.",
+    "type": "mcq"
+  },
+  {
+    "question": "Mi a FastAPI/Flask szerepe a szkriptekből webszolgáltatás építésénél? (v99)",
+    "options": [
+      "A) DEM interpoláció",
+      "B) DEM-feltöltés → feldolgozás → vízgyűjtő visszaadás API-n keresztül",
+      "C) Térkép rajzolás",
+      "D) Licenc kezelés"
+    ],
+    "correct": "B",
+    "explanation": "Python szkript webszolgáltatásba csomagolása.",
+    "type": "mcq"
+  },
+  {
+    "question": "A 'for dem_path in dem_files:' konstrukció mit csinál? (v100)",
+    "options": [
+      "A) Egyetlen DEM-et dolgoz fel",
+      "B) Végigmegy minden DEM-fájlon a listában",
+      "C) Törli a fájlokat",
+      "D) DEM-et tölt le"
+    ],
+    "correct": "B",
+    "explanation": "Ciklus a bemeneti fájlokon kötegelt feldolgozáshoz.",
+    "type": "mcq"
+  },
+  {
+    "question": "A Python az ArcGIS és QGIS hivatalos szkriptnyelve. (v49)",
+    "correct": "true",
+    "explanation": "Mindkét platform elfogadta.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcPy aktív ArcGIS Pro licencet igényel. (v50)",
+    "correct": "true",
+    "explanation": "Kereskedelmi licenc szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "A WhiteboxTools telepítéséhez ArcGIS licenc kell. (v51)",
+    "correct": "false",
+    "explanation": "pip install whitebox, ingyenes.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python nyers (raw) string előtagja 'r'. (v52)",
+    "correct": "true",
+    "explanation": "r'C:\\path' szó szerinti.",
+    "type": "true_false"
+  },
+  {
+    "question": "A ModelBuilder nem exportálható Python szkriptbe. (v53)",
+    "correct": "false",
+    "explanation": "Export To Python Script funkció elérhető.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM C++ magja MPI-t használ párhuzamosításhoz. (v54)",
+    "correct": "true",
+    "explanation": "Message Passing Interface.",
+    "type": "true_false"
+  },
+  {
+    "question": "A subprocess modul parancssori programokat futtat Pythonból. (v55)",
+    "correct": "true",
+    "explanation": "subprocess.run() a standard módszer.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az env.overwriteOutput = True nélkül a második futtatás hibázik. (v56)",
+    "correct": "true",
+    "explanation": "Meglévő kimenetek nem írhatók felül.",
+    "type": "true_false"
+  },
+  {
+    "question": "A QGIS Processing keretrendszer csak natív QGIS algoritmusokat támogat. (v57)",
+    "correct": "false",
+    "explanation": "GRASS, SAGA, GDAL, WhiteboxTools is.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Jupyter notebook alkalmas felügyelet nélküli termelési futtatásra. (v58)",
+    "correct": "false",
+    "explanation": "Interaktív használatra tervezett; Papermill szükséges a kötegelt futtatáshoz.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python f-string formátumot a Python 3.6-tól támogatja. (v59)",
+    "correct": "true",
+    "explanation": "f'...' szintaxis.",
+    "type": "true_false"
+  },
+  {
+    "question": "A NumPy vektorizált művelet gyorsabb, mint a Python for ciklus rasztereken. (v60)",
+    "correct": "true",
+    "explanation": "100-1000× gyorsabb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A VS Code ingyenes és nyílt forráskódú. (v61)",
+    "correct": "true",
+    "explanation": "Microsoft fejleszti.",
+    "type": "true_false"
+  },
+  {
+    "question": "A PyCharm Community Edition ingyenes. (v62)",
+    "correct": "true",
+    "explanation": "JetBrains, Community verzió.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az IDLE az ArcPy-val közvetlenül működik, ha az ArcGIS Python-környezetéből indítjuk. (v63)",
+    "correct": "true",
+    "explanation": "A helyes Python interpreter szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Geoprocessing History minden Python szintaxist rögzít. (v64)",
+    "correct": "true",
+    "explanation": "Copy Python Command az egzakt szintaxist adja.",
+    "type": "true_false"
+  },
+  {
+    "question": "A glob.glob() csak Windows-on működik. (v65)",
+    "correct": "false",
+    "explanation": "Minden platformon működik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A try/except blokk megakadályozza a teljes köteg leállítását egy hiba miatt. (v66)",
+    "correct": "true",
+    "explanation": "A hiba naplózódik, a feldolgozás folytatódik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A .save() metódus nélkül a rasztereredmény elvész. (v67)",
+    "correct": "true",
+    "explanation": "Ideiglenes memóriabeli raszter marad.",
+    "type": "true_false"
+  },
+  {
+    "question": "A logging modul fájlba írja a naplókat. (v68)",
+    "correct": "true",
+    "explanation": "Időbélyeggel ellátott tartós feljegyzés.",
+    "type": "true_false"
+  },
+  {
+    "question": "A parancssori argumentumokat az argparse modul kezeli. (v69)",
+    "correct": "true",
+    "explanation": "Standard Python modul.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Git verziókezelés szükségtelen szkripteknél. (v70)",
+    "correct": "false",
+    "explanation": "Változások nyomon követése, visszaállítás, megosztás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python értelmezett nyelv, tehát lassabb, mint a C++. (v71)",
+    "correct": "true",
+    "explanation": "De a térinformatikai szkript fordított eszközöket hív.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM végrehajtható fájlok közvetlenül futtathatók parancssorból. (v72)",
+    "correct": "true",
+    "explanation": "mpiexec -n 8 pitremove stb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A QGIS Python Konzol interaktív Python környezet. (v73)",
+    "correct": "true",
+    "explanation": "Mint az ArcGIS Pro Python ablak.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcPy szkriptek platformfüggetlenek. (v74)",
+    "correct": "false",
+    "explanation": "ArcGIS Pro kell, ami Windows-on fut.",
+    "type": "true_false"
+  },
+  {
+    "question": "A WhiteboxTools Python API 'pip install whitebox' paranccsal telepíthető. (v75)",
+    "correct": "true",
+    "explanation": "Egyszerű telepítés.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python kód írásához mindig IDE szükséges. (v76)",
+    "correct": "false",
+    "explanation": "Szövegszerkesztő is elegendő.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS Pro Python ablak alkalmas hosszú szkriptek írására. (v77)",
+    "correct": "false",
+    "explanation": "Néhány sornál hosszabb kóddal kezelhetetlenné válik.",
+    "type": "true_false"
+  },
+  {
+    "question": "A TauDEM Python burkoló összeállítja a parancssort és subprocess.run()-t hív. (v78)",
+    "correct": "true",
+    "explanation": "Paraméterek → cmd string → futtatás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A processing.run() a QGIS standard módszere algoritmusok Pythonból való hívásához. (v79)",
+    "correct": "true",
+    "explanation": "Szótáras paraméterátadás.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Google Earth Engine ingyenes DEM-feldolgozást biztosít. (v80)",
+    "correct": "true",
+    "explanation": "De nem tartalmaz dedikált vízgyűjtő-lehatárolási eszközöket.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Microsoft Planetary Computer Jupyter notebook felületet kínál. (v81)",
+    "correct": "true",
+    "explanation": "Copernicus DEM és más adatkészletek hozzáférése.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python beágyazott for ciklus rasztereken hatékony megoldás. (v82)",
+    "correct": "false",
+    "explanation": "NumPy vektorizált művelet 100-1000× gyorsabb.",
+    "type": "true_false"
+  },
+  {
+    "question": "A nyílt forráskódú eszközök teljes alternatívát nyújtanak a kereskedelmi szoftverrel szemben. (v83)",
+    "correct": "true",
+    "explanation": "QGIS, GDAL, WhiteboxTools, TauDEM.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Conda az ArcGIS Pro Python csomagkezelője. (v84)",
+    "correct": "true",
+    "explanation": "A Python környezetet Conda kezeli.",
+    "type": "true_false"
+  },
+  {
+    "question": "A szkript egyszerre a munkafolyamat és annak dokumentációja. (v85)",
+    "correct": "true",
+    "explanation": "Minden paraméter rögzítve van a kódban.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Windows Feladatütemező Python szkripteket futtathat éjszaka. (v86)",
+    "correct": "true",
+    "explanation": "Automatikus, beavatkozásmentes feldolgozás.",
+    "type": "true_false"
+  },
+  {
+    "question": "Budapest szélességén (47,5°) egy ívmásodperc ÉD irányban ~31 m. (v87)",
+    "correct": "true",
+    "explanation": "0,000278° × 111195 m/° ≈ 30,9 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "Budapest szélességén egy ívmásodperc KNy irányban ~31 m. (v88)",
+    "correct": "false",
+    "explanation": "~21 m a koszinusz-faktor miatt.",
+    "type": "true_false"
+  },
+  {
+    "question": "A MERIT DEM korrigált SRTM-alapú globális DEM. (v89)",
+    "correct": "true",
+    "explanation": "Yamazaki et al., 90 m.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az EOV koordináták fejlécei mindig helyesek. (v90)",
+    "correct": "false",
+    "explanation": "Az értéktartomány alapján kell azonosítani: Y: 0-400k, X: 400k-1M.",
+    "type": "true_false"
+  },
+  {
+    "question": "A HydroSHEDS előre lehatárolt vízgyűjtőket biztosít. (v91)",
+    "correct": "true",
+    "explanation": "HydroBASINS 12 szinten.",
+    "type": "true_false"
+  },
+  {
+    "question": "A CCM adatkészlet páneurópai vízgyűjtőket tartalmaz. (v92)",
+    "correct": "true",
+    "explanation": "JRC Catchment Characterisation and Modelling.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python 'import time' modul lehetővé teszi a futásidő mérését. (v93)",
+    "correct": "true",
+    "explanation": "time.time() hívások közötti különbség.",
+    "type": "true_false"
+  },
+  {
+    "question": "A SetNull eszköz vízfolyás-rasztert hoz létre a küszöbérték alapján. (v94)",
+    "correct": "true",
+    "explanation": "SetNull('FAC', 1, 'VALUE < T').",
+    "type": "true_false"
+  },
+  {
+    "question": "Az arcpy.Exists() ellenőrzi, hogy a kimenet létrejött-e. (v95)",
+    "correct": "true",
+    "explanation": "Csendes meghibásodás detektálására.",
+    "type": "true_false"
+  },
+  {
+    "question": "A 'unicode error' hiba típusosan a fordított perjeles útvonalaknál fordul elő. (v96)",
+    "correct": "true",
+    "explanation": "\\U, \\n escape-szekvenciák okozzák.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python az ArcGIS és QGIS hivatalos szkriptnyelve. (v97)",
+    "correct": "true",
+    "explanation": "Mindkét platform elfogadta.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcPy aktív ArcGIS Pro licencet igényel. (v98)",
+    "correct": "true",
+    "explanation": "Kereskedelmi licenc szükséges.",
+    "type": "true_false"
+  },
+  {
+    "question": "A WhiteboxTools telepítéséhez ArcGIS licenc kell. (v99)",
+    "correct": "false",
+    "explanation": "pip install whitebox, ingyenes.",
+    "type": "true_false"
+  },
+  {
+    "question": "A Python nyers (raw) string előtagja 'r'. (v100)",
+    "correct": "true",
+    "explanation": "r'C:\\path' szó szerinti.",
+    "type": "true_false"
+  },
+  {
+    "question": "Az ArcGIS szkriptnyelve: ________. (v52)",
+    "correct": "Python",
+    "explanation": "Hivatalos szkriptnyelv.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcPy Spatial Analyst modulja: arcpy.________. (v53)",
+    "correct": "sa",
+    "explanation": "arcpy.sa = Spatial Analyst.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A meglévő kimenetek felülírásához: env.________ = True. (v54)",
+    "correct": "overwriteOutput",
+    "explanation": "Szkriptfejlesztéshez elengedhetetlen.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A nyers string előtagja Pythonban: ________. (v55)",
+    "correct": "r",
+    "explanation": "r'C:\\path'.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS vizuális programozási környezete: ________. (v56)",
+    "correct": "ModelBuilder",
+    "explanation": "Eszközöket vászonra húzunk.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM számítási magja ________ nyelven íródott. (v57)",
+    "correct": "C++",
+    "explanation": "MPI párhuzamos C++.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python modulja parancssori programok futtatásához: ________. (v58)",
+    "correct": "subprocess",
+    "explanation": "subprocess.run().",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Geoprocessing History-ból a ________ funkció másolja a Python szintaxist. (v59)",
+    "correct": "Copy Python Command",
+    "explanation": "Jobb klikk a bejegyzésen.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A glob.glob('*.________') az összes TIF fájlt megtalálja. (v60)",
+    "correct": "tif",
+    "explanation": "Mintaillesztés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Spatial Analyst licenc kivétele: arcpy.CheckOutExtension('________'). (v61)",
+    "correct": "Spatial",
+    "explanation": "Szükséges a SA eszközökhöz.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS feldolgozási keretrendszerben: processing.________(). (v62)",
+    "correct": "run",
+    "explanation": "processing.run(algoritmus, paraméterek).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A WhiteboxTools telepítése: pip install ________. (v63)",
+    "correct": "whitebox",
+    "explanation": "Egyetlen parancs.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A naplózó modul neve: ________. (v64)",
+    "correct": "logging",
+    "explanation": "Python standard modul.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Hibakezelés: try / ________ blokk. (v65)",
+    "correct": "except",
+    "explanation": "A hiba elkapása és kezelése.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A raszter lemezre írása: eredmény.________('név'). (v66)",
+    "correct": "save",
+    "explanation": ".save() metódus.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "TauDEM párhuzamosítás: mpiexec -n ________ eszköznév. (v67)",
+    "correct": "8",
+    "explanation": "Processzorszám.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS Pro Python interpreter útja: ...\\envs\\________\\python.exe. (v68)",
+    "correct": "arcgispro-py3",
+    "explanation": "Conda-környezet neve.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "D-végtelen ArcPy-ban: FlowDirection('FEL','','','________'). (v69)",
+    "correct": "DINF",
+    "explanation": "Negyedik argumentum.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A gdalwarp -t_srs EPSG:________ az EOV vetületbe vetít. (v70)",
+    "correct": "23700",
+    "explanation": "HD72/EOV.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python parancssori argumentum modul: ________. (v71)",
+    "correct": "argparse",
+    "explanation": "Standard modul.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A NumPy vektorizált műveletek ________-szor gyorsabbak. (v72)",
+    "correct": "100-1000",
+    "explanation": "Fordított C a háttérben.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A MERIT DEM globális felbontása: ________ m. (v73)",
+    "correct": "90",
+    "explanation": "Korrigált SRTM.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Microsoft felhőplatformja: ________ Computer. (v74)",
+    "correct": "Planetary",
+    "explanation": "Jupyter notebook felület.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Feladatütemező angolul: Task ________. (v75)",
+    "correct": "Scheduler",
+    "explanation": "Windows ütemező.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Budapest szélességén egy ívmásodperc KNy ≈ ________ m. (v76)",
+    "correct": "21",
+    "explanation": "30,9 × cos(47,5°).",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az EOV northing értéktartománya: 0 - ________. (v77)",
+    "correct": "400 000",
+    "explanation": "Northing azonosítás értéktartomány alapján.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS grafikus modellező fájlkiterjesztése: .________. (v78)",
+    "correct": "model3",
+    "explanation": "QGIS modell fájl.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python megjegyzés karakter: ________. (v79)",
+    "correct": "#",
+    "explanation": "A # utáni rész figyelmen kívül marad.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python csomagkezelő: ________. (v80)",
+    "correct": "pip",
+    "explanation": "pip install csomagnév.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Flask/FastAPI keretrendszerrel a szkript ________-ba csomagolható. (v81)",
+    "correct": "webszolgáltatásba",
+    "explanation": "API-n keresztül elérhető.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python behúzás (________) kényszeríti ki a kódstruktúrát. (v82)",
+    "correct": "indentálás",
+    "explanation": "Tab vagy szóközök.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A VS Code Python ________-e a Pylance. (v83)",
+    "correct": "nyelvi szerver",
+    "explanation": "Kódkiegészítés és ellenőrzés.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Google ________ Engine globális DEM-ekhez biztosít hozzáférést. (v84)",
+    "correct": "Earth",
+    "explanation": "Google Earth Engine.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python futásidő mérése: import ________. (v85)",
+    "correct": "time",
+    "explanation": "time.time() hívások.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A SetNull ArcPy eszköz a küszöb ________ cellákat NoData-vá teszi. (v86)",
+    "correct": "alatti",
+    "explanation": "VALUE < threshold → NoData.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az arcpy.________() ellenőrzi egy adat létezését. (v87)",
+    "correct": "Exists",
+    "explanation": "Csendes hiba detektálása.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A 'unicode error' megoldása: ________ string használata. (v88)",
+    "correct": "nyers (raw)",
+    "explanation": "r'C:\\path'.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Jupyter notebook ________ és kimenetet egy dokumentumban egyesíti. (v89)",
+    "correct": "kódot",
+    "explanation": "Kód + kimenet + szöveg.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Git alapvető parancsai: git init, git add, git ________. (v90)",
+    "correct": "commit",
+    "explanation": "Változások mentése.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A PyCharm a ________ Python-specifikus IDE-je. (v91)",
+    "correct": "JetBrains",
+    "explanation": "Community Edition ingyenes.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Copernicus ________ Space a DEM-ek letöltési helye. (v92)",
+    "correct": "Data",
+    "explanation": "Copernicus Data Space Ecosystem.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A GRASS GIS r.watershed -________ kapcsoló a D8 algoritmust választja. (v93)",
+    "correct": "s",
+    "explanation": "SFD (Single Flow Direction) = D8.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python 'os.path.________()' összekapcsolja az útvonal elemeket. (v94)",
+    "correct": "join",
+    "explanation": "Platformfüggetlen útvonal.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python 'os.________()' könyvtárat hoz létre. (v95)",
+    "correct": "makedirs",
+    "explanation": "exist_ok=True paraméterrel.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A TauDEM eszköztár fájlkiterjesztése: .________. (v96)",
+    "correct": "tbx",
+    "explanation": "ArcGIS Toolbox.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A QGIS feldolgozási algoritmus neve GRASS kitöltésre: grass7:r.fill.________. (v97)",
+    "correct": "dir",
+    "explanation": "r.fill.dir a GRASS süllyedékfeltöltő.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Az ArcGIS Pro-ból a ModelBuilder az ________ lapról érhető el. (v98)",
+    "correct": "Analysis (Elemzés)",
+    "explanation": "Az Analysis szalagon.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A Python ________ utasítás jelzi a blokkok kezdetét. (v99)",
+    "correct": "kettőspont (:)",
+    "explanation": "if, for, def után :",
+    "type": "fill_blank"
+  },
+  {
+    "question": "A wbt.fill_depressions a ________ Python parancsa a süllyedékfeltöltésre. (v100)",
+    "correct": "WhiteboxTools",
+    "explanation": "wbt = WhiteboxTools() objektum.",
+    "type": "fill_blank"
+  },
+  {
+    "question": "Miért szükséges a térinformatikai munkafolyamatok automatizálása? (v49)",
+    "explanation": "Megismételhetőség, skálázhatóság (ezer vízgyűjtő), reprodukálhatóság (tudományos publikáció, szabályozási audit).",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python előnyeit térinformatikai szkripteléshez! (v50)",
+    "explanation": "Olvashatóság, gazdag könyvtárak (ArcPy, GDAL, NumPy), nagy közösség, platformfüggetlenség.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a ModelBuilder szerepét és korlátait! (v51)",
+    "explanation": "Vizuális programozás kód nélkül, jó lineáris munkafolyamatokhoz. Korlát: ciklus, hibakezelés, külső eszközök, nem-térinformatikai feladatok.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a TauDEM háromrétegű architektúráját! (v52)",
+    "explanation": "Felhasználói felület (ArcGIS/Python) → Python burkoló (paraméter → parancssor → subprocess) → C++ mag (MPI, GeoTIFF).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan építsünk fel egy vízgyűjtő-lehatárolási szkriptet lépésről lépésre? (v53)",
+    "explanation": "1) Kézi végrehajtás. 2) Előzmények másolása. 3) Import + env. 4) Teszt. 5) Paraméterezés. 6) Ciklus + hibakezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az ArcPy környezeti beállítások szerepét (workspace, overwrite, cellSize, extent, snapRaster)! (v54)",
+    "explanation": "Globális viselkedést szabályoznak: hol, felülírás, felbontás, terület, igazítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan tanulható a térinformatikai Python a Geoprocessing History-ból? (v55)",
+    "explanation": "Eszköz futtatása GUI-n → History → Copy Python Command → beillesztés szkriptbe.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a try/except blokk szerepét kötegelt feldolgozásnál! (v56)",
+    "explanation": "Elkapja a hibát, naplózza, és a következő bemenetre lép. A köteg nem áll le egyetlen hiba miatt.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan különbözik a TauDEM parancssori és az ArcGIS eszköztár felhasználása? (v57)",
+    "explanation": "Parancssor: leíróbb hibák, rugalmasabb kísérletezés. ArcGIS: GUI, automatikus megjelenítés, de rejtélyesebb hibák.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a koordináta-konverziók kihívásait Magyarországon! (v58)",
+    "explanation": "EOV (23700) vs ETRS89 vs WGS84. 7-paraméteres Helmert. Budapest szélességén ÉD ≈ 31 m, KNy ≈ 21 m. Nem négyzetes cellák.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a licencelési szempont az ArcPy és a nyílt forráskódú eszközök között? (v59)",
+    "explanation": "ArcPy: kereskedelmi licenc. GDAL/WhiteboxTools/TauDEM: ingyenes. Nagyszabású feldolgozás → nyílt forráskód.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan skálázható egy szkript több vízgyűjtőre? (v60)",
+    "explanation": "for ciklus a bemeneti DEM-eken, try/except, naplózás, strukturált kimeneti könyvtárak.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a QGIS PyQGIS környezet használatát! (v61)",
+    "explanation": "QGIS Python Konzol, Processing keretrendszer (processing.run), önálló szkriptek, GRASS/SAGA/WBT algoritmusok.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a WhiteboxTools előnye oktatási környezetben? (v62)",
+    "explanation": "Nulla költség, pip install, tiszta API, platformfüggetlen. Nincs ArcGIS licenc igény.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítja a szkriptelés a reprodukálhatóságot? (v63)",
+    "explanation": "Minden paraméter rögzítve, azonos bemenet = azonos kimenet, megosztható, verziózható.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python print() és logging modul közötti különbséget! (v64)",
+    "explanation": "print(): konzolra ír, ideiglenes. logging: fájlba, időbélyeggel, szintekre osztva (INFO, ERROR).",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan használható a Python az éjszakai kötegelt feldolgozáshoz? (v65)",
+    "explanation": "Szkript + Feladatütemező (Win) / cron (Linux). Futtatás éjfélkor, reggel napló áttekintés.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a 'struktura megértése, szintaxis kikeresése' elvét! (v66)",
+    "explanation": "A munkafolyamat logikája maradandó tudás. A konkrét függvénynevek és paraméterlista referencia-anyag.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a felhőalapú feldolgozás (GEE, Planetary Computer) szerepe? (v67)",
+    "explanation": "Nagy adatkészletek feldolgozása helyi hardver nélkül. Különösen értékes korlátozott erőforrású régiókban.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a szkript fejlődési ívét a személyes eszköztől a webszolgáltatásig! (v68)",
+    "explanation": "Szkript → függvények/modulok → konfigurációs fájlok → parancssori argumentumok → ütemezés → webszolgáltatás (Flask/FastAPI).",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen előnyei vannak az ArcGIS Notebookoknak? (v69)",
+    "explanation": "Előre konfigurált ArcPy, interaktív, kód+térkép+szöveg. Korlát: ArcGIS licenc szükséges.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezeli a Python a Windows fájlelérési utak problémáját? (v70)",
+    "explanation": "Fordított perjelek escape-problémát okoznak. Megoldás: raw string (r'...'), előre perjelek, dupla fordított perjelek.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a NumPy vektorizált művelet előnye a for ciklussal szemben? (v71)",
+    "explanation": "A NumPy fordított C-ben végzi a számítást, 100-1000× gyorsabb, mint a Python for ciklus rasztercellák felett.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Python subprocess modul a TauDEM kontextusában? (v72)",
+    "explanation": "Összeállítja a parancssort (mpiexec -n 8 tool args), subprocess.run() futtatja, elfogja stdout/stderr.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse az EOV koordináták értéktartomány-alapú azonosítását! (v73)",
+    "explanation": "Northing: 0-400k, Easting: 400k-1M. A fejlécek gyakran hibásak, az értékek megbízhatóbbak.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan exportálható és tisztítható a ModelBuilder Python kimenet? (v74)",
+    "explanation": "Export To Python Script → nyers kód. Tisztítás: változók átnevezése, felesleges paraméterek eltávolítása, megjegyzések.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen szempontok fontosak a nyílt forráskódú és kereskedelmi eszközök közötti választásnál? (v75)",
+    "explanation": "ArcPy: vállalati integráció, ESRI támogatás. Nyílt: platform-független, átlátható, ingyenes. Gyakorlatban: mindkettő.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a Git verziókezelés szkripteknél? (v76)",
+    "explanation": "git init, git add, git commit. Változások nyomon követése, visszaállítás, GitHub/GitLab megosztás.",
+    "type": "essay"
+  },
+  {
+    "question": "Milyen információkat tartalmaz egy jó szkript fejléc-megjegyzés? (v77)",
+    "explanation": "Cél, szerző, dátum, bemenetek, kimenetek. Hat hónap múlva megment a visszafejtéstől.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a D-végtelen áramlásirány Python szkriptelését ArcPy-ban és TauDEM-ben! (v78)",
+    "explanation": "ArcPy: FlowDirection('FEL','','','DINF'). TauDEM: mpiexec -n 8 dinfflowdir -ang ... -slp ... -fel ...",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a HydroSHEDS szerepe az automatizált feldolgozásban? (v79)",
+    "explanation": "Előre lehatárolt vízgyűjtők 12 szinten, globálisan. Ahol a DEM beszerzés nehéz, a HydroSHEDS kész megoldás.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan alkalmazható a Python a Tisza vízgyűjtőjének kötegelt feldolgozására? (v80)",
+    "explanation": "Copernicus GLO-30 csempék letöltése, mozaikolás, feltöltés, áramlásirány, felhalmozódás, részvízgyűjtők - automatizáltan.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Python 'os' modul szerepe térinformatikai szkriptekben? (v81)",
+    "explanation": "Fájlelérési utak kezelése (os.path.join), könyvtárak létrehozása (os.makedirs), fájllétezés ellenőrzése.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python ciklusok és feltételes utasítások szerepét a kötegelt feldolgozásban! (v82)",
+    "explanation": "for: minden DEM feldolgozása. if: feltételes lépések (pl. kitöltés kihagyása). try/except: hibakezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan segíti a Python a szabályozási megfelelőséget a vízgazdálkodásban? (v83)",
+    "explanation": "A szkript dokumentálja a módszertant, reprodukálható, megosztható. Az OVF árvízveszélyes zóna lehatárolása auditálható.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a különbség a .py szkript és a Jupyter notebook között termelési használatban? (v84)",
+    "explanation": ".py: felügyelet nélkül futtatható, ütemezhetó. Notebook: interaktív, dokumentáció, de felügyelt. Termelésre: .py.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python változóelnevezési konvenciókat! (v85)",
+    "explanation": "Kisbetűs, aláhúzásjeles: flow_direction, stream_threshold. Konzisztencia a Python közösség kódjával.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan kezelhető a 'The tool is not licensed' hiba? (v86)",
+    "explanation": "arcpy.CheckOutExtension('Spatial') a szkript elejére. Ha nincs licenc: nyílt forráskódú alternatíva.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Python time modul szerepe a szkriptek monitorozásában? (v87)",
+    "explanation": "Futásidő mérése: start = time.time(), elapsed = time.time() - start. Minden lépés időbélyeggel.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Copernicus DEM-ek szerepét az automatizált magyar vízgyűjtő-feldolgozásban! (v88)",
+    "explanation": "GLO-30: ingyenes, 30 m, API-n letölthető, GeoTIFF. EEA-10: részletesebb, EU/EGT. Szkriptelhető.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a CCM adatkészlet és hogyan használható validációra? (v89)",
+    "explanation": "JRC páneurópai vízgyűjtő-jellemzés. Referencia-határok az automatizált lehatárolás eredményeinek ellenőrzésére.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan működik a Python 'os.makedirs(path, exist_ok=True)'? (v90)",
+    "explanation": "Létrehozza a könyvtárat és az összes szülőt. exist_ok=True: nem hibázik, ha már létezik.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a 'pragmatikus megközelítést' az ökoszisztémák közötti választásban! (v91)",
+    "explanation": "Alapvető logika: GDAL/Rasterio (mindenhol működik). ArcPy/PyQGIS: csak platform-specifikus feladatokhoz.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Google Colab szerepe az oktatásban? (v92)",
+    "explanation": "Ingyenes felhőalapú Jupyter, előre telepített könyvtárak. ArcPy nélkül, de GDAL, NumPy, Rasterio elérhető.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan automatizálható a DEM letöltés Python szkriptből? (v93)",
+    "explanation": "Copernicus Data Space API, NASA Earthdata API, vagy opendap. Python requests/urllib modul + fájlkezelés.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a R nyelv szerepét a hidrológiai elemzésben! (v94)",
+    "explanation": "Erős statisztikai ökoszisztéma (sf, terra, whitebox). Gyakorlatban: Python térbeli + R statisztikai elemzés kombináció.",
+    "type": "essay"
+  },
+  {
+    "question": "Mi a Julia nyelv státusza a térinformatikai automatizálásban? (v95)",
+    "explanation": "Nagy teljesítmény, de kis térinformatikai ökoszisztéma. Érdemes figyelni, de még nem praktikus.",
+    "type": "essay"
+  },
+  {
+    "question": "Hogyan biztosítható a szkript újrafelhasználhatósága különböző tanulmányi területek között? (v96)",
+    "explanation": "Paraméterezés: a fájlnevek és beállítások változókban a szkript tetején. Új terület: 3-5 sor módosítás.",
+    "type": "essay"
+  },
+  {
+    "question": "Miért szükséges a térinformatikai munkafolyamatok automatizálása? (v97)",
+    "explanation": "Megismételhetőség, skálázhatóság (ezer vízgyűjtő), reprodukálhatóság (tudományos publikáció, szabályozási audit).",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a Python előnyeit térinformatikai szkripteléshez! (v98)",
+    "explanation": "Olvashatóság, gazdag könyvtárak (ArcPy, GDAL, NumPy), nagy közösség, platformfüggetlenség.",
+    "type": "essay"
+  },
+  {
+    "question": "Fejtse ki a ModelBuilder szerepét és korlátait! (v99)",
+    "explanation": "Vizuális programozás kód nélkül, jó lineáris munkafolyamatokhoz. Korlát: ciklus, hibakezelés, külső eszközök, nem-térinformatikai feladatok.",
+    "type": "essay"
+  },
+  {
+    "question": "Ismertesse a TauDEM háromrétegű architektúráját! (v100)",
+    "explanation": "Felhasználói felület (ArcGIS/Python) → Python burkoló (paraméter → parancssor → subprocess) → C++ mag (MPI, GeoTIFF).",
+    "type": "essay"
+  }
+]

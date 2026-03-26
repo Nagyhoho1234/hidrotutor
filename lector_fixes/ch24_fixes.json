@@ -1,0 +1,758 @@
+{
+  "chapter": "ch24",
+  "total_issues": 94,
+  "fixes": [
+    {
+      "line_approx": 12,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Egy betanított LSTM-modell ül és várja a bemenetet.",
+      "suggested": "Egy betanított LSTM-modell egyszerűen a bemenetre vár.",
+      "reason": "Az „ül és várja” angolos, megszemélyesítő tükörfordítás; magyar tudományos prózában természetesebb az egyszerűbb igei szerkezet."
+    },
+    {
+      "line_approx": 18,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A technológia neve *ágens AI*",
+      "suggested": "A technológia neve *ágensalapú mesterséges intelligencia*",
+      "reason": "Az „ágens AI” kevert, félig angol terminus; magyar tudományos szövegben célszerűbb magyarosabban megnevezni, még ha a rövid forma később meg is maradhat."
+    },
+    {
+      "line_approx": 28,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ezzel szemben az ágens AI rendszer ciklusban működő gondolkodó entitás.",
+      "suggested": "Ezzel szemben az ágens AI rendszer ciklikusan működő, következtetésre képes rendszer.",
+      "reason": "A „gondolkodó entitás” túl antropomorf és kissé publicisztikus; akadémiai regiszterben tárgyilagosabb megfogalmazás indokolt."
+    },
+    {
+      "line_approx": 29,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ágens valójában egy olyan keretrendszerbe ágyazott LLM, amely eszközökhöz, memóriához és tervezési ciklushoz biztosít hozzáférést.",
+      "suggested": "Az ágens valójában olyan keretrendszerbe ágyazott LLM, amely hozzáfér az eszközökhöz, a memóriához és a tervezési ciklushoz.",
+      "reason": "A „biztosít hozzáférést” itt angolosan körülményes; magyarul természetesebb az alanyhoz kötött „hozzáfér” szerkezet."
+    },
+    {
+      "line_approx": 30,
+      "category": "other",
+      "severity": "low",
+      "original": "Ez a tervezés--végrehajtás--értékelés--iteráció ciklus adja az ágensjellegét.",
+      "suggested": "Ez a tervezés--végrehajtás--értékelés--iteráció ciklus adja az ágens jellegét.",
+      "reason": "Az „ágensjellegét” egybeírása itt nehézkes és szokatlan; különírva természetesebb."
+    },
+    {
+      "line_approx": 33,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A modern, LLM-alapú ágensek következtetési képességei abból fakadnak, hogy előzetesen hatalmas mennyiségű emberi tudáson --- különösen tudományos irodalmon, műszaki kézikönyveken és programozási dokumentáción --- tanították őket.",
+      "suggested": "A modern, LLM-alapú ágensek következtetési képességei abból erednek, hogy hatalmas mennyiségű emberi tudáson --- különösen tudományos irodalmon, műszaki kézikönyveken és programozási dokumentáción --- képezték őket.",
+      "reason": "Az „előzetesen ... tanították őket” kissé fordításszagú és körülményes; a „képezték őket” természetesebb szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 49,
+      "category": "register",
+      "severity": "low",
+      "original": "Itt mutatkozik meg igazán az LLM következtetési képessége.",
+      "suggested": "Itt érvényesül igazán az LLM következtetési képessége.",
+      "reason": "A „mutatkozik meg igazán” enyhén publicisztikus; a „érvényesül” tárgyilagosabb tudományos stílusú."
+    },
+    {
+      "line_approx": 52,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "E frissített kontextus tájékoztatja a következő paramétermódosítási kört.",
+      "suggested": "A következő paramétermódosítási kört ez a frissített kontextus határozza meg.",
+      "reason": "A „kontextus tájékoztatja a kört” angolos metafora; a mondat szórendje és igeválasztása magyarul természetesebben alakítható."
+    },
+    {
+      "line_approx": 58,
+      "category": "terminology",
+      "severity": "high",
+      "original": "Három architekturális elem különbözteti meg a gyakorlati ágensrendszert egy puszta nyelvi modellre épülő csevegőbottól.",
+      "suggested": "Három architekturális elem különbözteti meg a gyakorlati ágensrendszert a pusztán nyelvi modellre épülő chatbotoktól.",
+      "reason": "A „csevegőbot” nem bevett magyar tudományos terminus; a „chatbot” használata természetesebb. A „puszta” helyett a „pusztán” is gördülékenyebb."
+    },
+    {
+      "line_approx": 59,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden eszközt a felülete jellemez",
+      "suggested": "Minden eszközt a csatolófelülete jellemez",
+      "reason": "Az angol „interface” szó szerinti fordítása itt pontatlan; műszaki szövegben a „csatolófelület” vagy „interfész” a bevett."
+    },
+    {
+      "line_approx": 60,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az ágens a betanítása, valamint a futásidőben kapott eszközleírások révén tanulja meg ezek meghívását",
+      "suggested": "az ágens a betanítás során, valamint a futásidőben kapott eszközleírások alapján tanulja meg ezek használatát",
+      "reason": "A „meghívás” az angol „call” tükörfordítása; magyarul az eszközök „használata” természetesebb. A „betanítása révén” is nehézkes."
+    },
+    {
+      "line_approx": 62,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A rövid távú memóriát egyetlen munkameneten belül a beszélgetési kontextus tartja fenn",
+      "suggested": "A rövid távú memóriát egyetlen munkameneten belül a párbeszéd kontextusa tartja fenn",
+      "reason": "A „beszélgetési kontextus” kissé tükörfordításos; a „párbeszéd kontextusa” vagy egyszerűen „kontextus” természetesebb."
+    },
+    {
+      "line_approx": 64,
+      "category": "register",
+      "severity": "low",
+      "original": "A megalapozottsági mechanizmusok az ágens gondolkodását ellenőrizhető tényekhez rögzítik.",
+      "suggested": "A megalapozottsági mechanizmusok az ágens következtetéseit ellenőrizhető tényekhez kötik.",
+      "reason": "A „gondolkodását ... rögzítik” antropomorf és kissé merev; a „következtetéseit ... kötik” szakmailag pontosabb."
+    },
+    {
+      "line_approx": 76,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A hagyományos gradiensalapú optimalizálási módszerek rosszul alkalmazhatók ilyen célfüggvény-felszínekre",
+      "suggested": "A hagyományos gradiensalapú optimalizálási módszerek rosszul alkalmazhatók ilyen célfüggvényfelületeken",
+      "reason": "A „célfüggvény-felszín” tükörfordításos összetétel; magyar matematikai szaknyelvben a „felület” természetesebb, egybeírva."
+    },
+    {
+      "line_approx": 87,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "kvalitatív információkat --- például \"ennek a részvízgyűjtőnek a talaja köztudottan erősen áteresztő a karszt jellemzők miatt\" --- nem tudnak beépíteni",
+      "suggested": "minőségi jellegű információkat --- például „ennek a részvízgyűjtőnek a talaja a karsztos jellemzők miatt köztudottan erősen áteresztő” --- nem tudnak figyelembe venni",
+      "reason": "A „kvalitatív információ” és a „beépíteni” együtt angolos; a „figyelembe venni” természetesebb. A „karszt jellemzők” szerkezet is javítandó."
+    },
+    {
+      "line_approx": 92,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "tanítási tudását konzultálja a paraméterérzékenységekről",
+      "suggested": "a tanítás során elsajátított tudására támaszkodik a paraméterérzékenységek megítélésében",
+      "reason": "A „konzultálja” itt egyértelmű angol tükörfordítás („consults its training knowledge”); magyarul természetellenes."
+    },
+    {
+      "line_approx": 99,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Döntések dokumentálása | Változó | Automatikus (keresési napló) | Automatikus (lánc-minták) | Automatikus (gondolkodási lánc)",
+      "suggested": "Döntések dokumentálása | Változó | Automatikus (keresési napló) | Automatikus (láncminták) | Automatikus (érvelési lépések naplója)",
+      "reason": "A „gondolkodási lánc” a „chain of thought” tükörfordítása, magyar tudományos szövegben kerülendő; a „lánc-minták” írásmódja is bizonytalan."
+    },
+    {
+      "line_approx": 110,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Hidrológiai alkalmazásoknál az LLM legfontosabb képességei",
+      "suggested": "Hidrológiai alkalmazásokban az LLM legfontosabb képességei",
+      "reason": "Az „alkalmazásoknál” itt enyhén idegenszerű; az „alkalmazásokban” természetesebb magyar szaknyelvi megoldás."
+    },
+    {
+      "line_approx": 137,
+      "category": "heading",
+      "severity": "medium",
+      "original": "## 24.4 Gyakorlati bemutató: ágensvezetett kalibrálás",
+      "suggested": "## 24.4 Gyakorlati bemutató: ágens által végzett kalibrálás",
+      "reason": "Az „ágensvezetett” angolos összetétel; magyarul természetesebb körülírással megadni."
+    },
+    {
+      "line_approx": 206,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a 0,23-as lefolyási tényező 700 mm csapadékkal mérsékelt veszteségeket implikál",
+      "suggested": "a 0,23-as lefolyási tényező 700 mm csapadék mellett mérsékelt veszteségekre utal",
+      "reason": "Az „implikál” angolos, tudományos magyarban természetesebb az „utal” vagy „jelent”."
+    },
+    {
+      "line_approx": 207,
+      "category": "register",
+      "severity": "medium",
+      "original": "az LLM-et hidrológiai irodalmon tanították be",
+      "suggested": "az LLM-et hidrológiai szakirodalmon tanították",
+      "reason": "Az „irodalom” itt pontatlan; tudományos közegben a „szakirodalom” a bevett forma, a „betanították” helyett a „tanították” is természetesebb."
+    },
+    {
+      "line_approx": 226,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A KGE összetevőinek diagnózisa:",
+      "suggested": "A KGE összetevőinek elemzése:",
+      "reason": "A „diagnózis” itt kissé tükörfordítás-ízű; magyar tudományos szövegben az „elemzés” természetesebb."
+    },
+    {
+      "line_approx": 228,
+      "category": "register",
+      "severity": "low",
+      "original": "a csúcsok és mélypontok időzítése megközelítőleg helyes",
+      "suggested": "a csúcsok és kisvizek időzítése nagyjából helyes",
+      "reason": "A „mélypontok” hidrológiai kontextusban kevésbé szakszerű, a „kisvizek” természetesebb terminus."
+    },
+    {
+      "line_approx": 231,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Torzítási arány beta=0,91, PBIAS=-8,7% enyhe összességi alulbecslést jelent",
+      "suggested": "A beta=0,91 torzítási arány és a PBIAS=-8,7% enyhe összesített alulbecslést jelez",
+      "reason": "A mondat szórendje és szerkezete angolosan tömör; magyarul természetesebb a világosabb alany-állítmány viszony."
+    },
+    {
+      "line_approx": 234,
+      "category": "register",
+      "severity": "low",
+      "original": "A modell nem produkál elég kontrasztot a magas és alacsony vízhozamok között.",
+      "suggested": "A modell nem ad kellő különbséget a magas és alacsony vízhozamok között.",
+      "reason": "A „produkál” kissé idegenszerű; a „kellő különbséget ad” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 242,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a diagnosztikus gondolkodás az ágenses megközelítés előnyének lényege.",
+      "suggested": "Ez a diagnosztikus gondolkodás jól mutatja az ágenses megközelítés fő előnyét.",
+      "reason": "Az „előnyének lényege” szerkezet nehézkes és fordításszagú."
+    },
+    {
+      "line_approx": 243,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "felbontja a KGE-t három összetevőjére",
+      "suggested": "a KGE-t három összetevőre bontja",
+      "reason": "A „felbontja ... összetevőjére” szó szerinti fordítás; magyarul a „három összetevőre bontja” idiomatikus."
+    },
+    {
+      "line_approx": 244,
+      "category": "register",
+      "severity": "low",
+      "original": "melyik összetevő felelős leginkább a gyenge teljesítményért",
+      "suggested": "melyik összetevő okozza leginkább a gyengébb teljesítményt",
+      "reason": "A „felelős ... ért” itt enyhén angolos; a „okozza” közvetlenebb és természetesebb."
+    },
+    {
+      "line_approx": 245,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "e statisztikai megfigyelést fizikai diagnózissá fordítja",
+      "suggested": "ezt a statisztikai megfigyelést fizikai értelmezéssé alakítja",
+      "reason": "A „diagnózissá fordítja” tükörfordítás-ízű; az „értelmezéssé alakítja” természetesebb."
+    },
+    {
+      "line_approx": 246,
+      "category": "register",
+      "severity": "low",
+      "original": "Pontosan ez a gondolkodás az, amely megkülönbözteti a szakértői kalibrálást a fekete dobozos optimalizálástól.",
+      "suggested": "Éppen ez a fajta gondolkodás különbözteti meg a szakértői kalibrálást a feketedobozos optimalizálástól.",
+      "reason": "A „Pontosan ez ... az, amely” szerkezet nehézkes; a „fekete dobozos” helyett egybeírva természetesebb."
+    },
+    {
+      "line_approx": 267,
+      "category": "register",
+      "severity": "low",
+      "original": "a további javulás marginális",
+      "suggested": "a további javulás csekély",
+      "reason": "A „marginális” itt angolos üzleti-tudományos zsargon; a „csekély” természetesebb magyarul."
+    },
+    {
+      "line_approx": 281,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 24.4.6 Validáció és jelentéskészítés",
+      "suggested": "### 24.4.6 Validálás és jelentéskészítés",
+      "reason": "A fejezetben korábban is az igei szerkezetek természetesebbek; a „validáció” helyett a „validálás” gördülékenyebb ebben a kontextusban."
+    },
+    {
+      "line_approx": 292,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A PBIAS -0,3%-ról -3,1%-ra való csökkenése arra utalhat",
+      "suggested": "Az, hogy a PBIAS -0,3%-ról -3,1%-ra csökkent, arra utalhat",
+      "reason": "A „-ról -ra való csökkenése” szerkezet nehézkes, angolos nominalizáció."
+    },
+    {
+      "line_approx": 311,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A valós hidrológiai modellezés ritkán foglalkozik egyetlen céllal.",
+      "suggested": "A gyakorlati hidrológiai modellezés ritkán irányul egyetlen célra.",
+      "reason": "A „valós ... foglalkozik” szerkezet angolos; a „gyakorlati ... irányul” természetesebb."
+    },
+    {
+      "line_approx": 317,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az NSGA-II algoritmus, a BORG MOEA és az epsilon-NSGAII megoldások populációját generálja",
+      "suggested": "Az NSGA-II algoritmus, a BORG MOEA és az ε-NSGAII megoldáspopulációkat generál",
+      "reason": "A „megoldások populációja” tükörfordítás-ízű; a „megoldáspopuláció” tömörebb és szakszerűbb."
+    },
+    {
+      "line_approx": 321,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ágens AI a többcélú problémát matematikai optimalizálásból mérlegelt tárgyalássá alakítja át.",
+      "suggested": "Az ágensalapú AI a többcélú problémát a matematikai optimalizálás felől egy mérlegelt döntési folyamattá alakítja.",
+      "reason": "A „mérlegelt tárgyalás” szó szerinti és homályos; magyarul a „döntési folyamat” világosabb."
+    },
+    {
+      "line_approx": 331,
+      "category": "register",
+      "severity": "low",
+      "original": "Három célom van implicit prioritási sorrenddel",
+      "suggested": "Három célom van, implicit prioritási sorrendben",
+      "reason": "Az eredeti szerkezet kissé darabos; a javasolt forma gördülékenyebb."
+    },
+    {
+      "line_approx": 376,
+      "category": "register",
+      "severity": "low",
+      "original": "hamis bizalmat teremt",
+      "suggested": "hamis biztonságérzetet kelt",
+      "reason": "A „hamis bizalom” angolos kifejezés; magyarul a „hamis biztonságérzet” bevettebb."
+    },
+    {
+      "line_approx": 801,
+      "category": "register",
+      "severity": "medium",
+      "original": "30 paraméterkészletet generálok ezen ekvifinalitási gerincen, plusz 10 készletet az x3 és x4 érzékenység feltárására.",
+      "suggested": "30 paraméterkészletet generálok ezen az ekvifinalitási gerincen, továbbá 10 készletet az x3 és x4 érzékenységének feltárására.",
+      "reason": "A „plusz” köznyelvibb, a tudományos regiszterben a „továbbá” természetesebb; az „ezen” után névelő szükséges."
+    },
+    {
+      "line_approx": 803,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az együttes szórása reprezentálja az előrejelzési bizonytalanságot.",
+      "suggested": "Az együttes szórása az előrejelzési bizonytalanságot jellemzi.",
+      "reason": "A „reprezentálja” itt angolos, a „jellemzi” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 805,
+      "category": "heading",
+      "severity": "medium",
+      "original": "Együttes eredmény a 2013. júniusi árvízi csúcsra:",
+      "suggested": "Az együttes eredménye a 2013. júniusi árvízi csúcsra:",
+      "reason": "A cím névelővel és birtokos szerkezettel gördülékenyebb magyarul."
+    },
+    {
+      "line_approx": 807,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Együttes medián: 76,8 m3/s",
+      "suggested": "Az együttes mediánja: 76,8 m3/s",
+      "reason": "A birtokos alak természetesebb magyarul."
+    },
+    {
+      "line_approx": 808,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Együttes 5.-95. percentilis: 64,3 - 91,7 m3/s",
+      "suggested": "Az együttes 5–95. percentilise: 64,3–91,7 m3/s",
+      "reason": "A szerkezet magyarosabb birtokos alakkal; a „5.-95.” forma tipográfiailag és nyelvileg is esetlen."
+    },
+    {
+      "line_approx": 811,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez a megközelítés fizikailag értelmezhető bizonytalansági becslést produkál 40 modellfuttatásból, a DREAM által igényelt 50 000 helyett.",
+      "suggested": "Ez a megközelítés 40 modellfuttatásból fizikailag értelmezhető bizonytalansági becslést ad, szemben a DREAM által igényelt 50 000 futtatással.",
+      "reason": "A „produkál” angolos és nehézkes; az „ad” természetesebb. A mondat vége is magyarosabb összevető szerkezettel."
+    },
+    {
+      "line_approx": 811,
+      "category": "register",
+      "severity": "low",
+      "original": "a DREAM által igényelt 50 000 helyett",
+      "suggested": "a DREAM-hez szükséges 50 000 helyett",
+      "reason": "Az „igényelt” itt kissé tükörfordításízű; a „szükséges” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 812,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a Bayes-elemzés matematikai rigorózusságával nem rendelkezik",
+      "suggested": "nem rendelkezik a Bayes-elemzés matematikai szigorával",
+      "reason": "A „rigorózusság” idegenszerű; a „matematikai szigor” bevettebb magyar tudományos kifejezés."
+    },
+    {
+      "line_approx": 813,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A gyakorlati döntéshozatalhoz azonban egy 40 intelligens futtatásból származó közelítő bizonytalansági sáv hasznosabb lehet, mint egy formális poszterior, amelyet a költségvetés szűkössége miatt soha nem számítottak ki.",
+      "suggested": "A gyakorlati döntéshozatalban azonban hasznosabb lehet egy 40 intelligens futtatásból származó közelítő bizonytalansági sáv, mint egy olyan formális poszterior, amelyet a költségvetési korlátok miatt soha nem számítanak ki.",
+      "reason": "A mondat szórendje és a „döntéshozatalhoz” szerkezet nehézkes; a javított változat természetesebb magyar fókuszszerkezetet ad."
+    },
+    {
+      "line_approx": 820,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Bizonytalanság-számszerűsítés ágensvezetett együttes generálással.",
+      "suggested": "Bizonytalanság számszerűsítése ágens által létrehozott együttessel.",
+      "reason": "Az „ágensvezetett együttes generálás” erősen fordításszagú; a javasolt megoldás természetesebb."
+    },
+    {
+      "line_approx": 820,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "40 tagú együttes",
+      "suggested": "40 tagból álló együttes",
+      "reason": "A „tagú” nem hibás, de itt a „tagból álló” gördülékenyebb tudományos prózában."
+    },
+    {
+      "line_approx": 824,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 24.7.1 SCE-UA: az automatikus kalibrálás munkagépe",
+      "suggested": "### 24.7.1 SCE-UA: az automatikus kalibrálás igáslova",
+      "reason": "A „munkagépe” szó szerinti, angolos metafora; az „igáslova” bevett magyar átvitt kifejezés."
+    },
+    {
+      "line_approx": 826,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az SCE-UA paramétervektorok populációját (\"komplex\") tartja fenn",
+      "suggested": "Az SCE-UA paramétervektorokból álló populációt (\"komplexet\") tart fenn",
+      "reason": "A jelenlegi szerkezet magyartalan; a „-ból álló” és a tárgyragos „komplexet” természetesebb."
+    },
+    {
+      "line_approx": 826,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "kompetitív komplex evolúciós lépéssel",
+      "suggested": "kompetitív komplexevolúciós lépéssel",
+      "reason": "A szakkifejezés egybeírandó összetételként természetesebb."
+    },
+    {
+      "line_approx": 827,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "többmóduszú célfüggvény-felszíneken",
+      "suggested": "többmódusú célfüggvény-felszíneken",
+      "reason": "A magyar szaknyelvben a „módusú” alak természetesebb, mint a latinos „móduszú”."
+    },
+    {
+      "line_approx": 829,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az SCE-UA erősségei jól megalapozottak",
+      "suggested": "Az SCE-UA erősségei jól ismertek",
+      "reason": "A „jól megalapozottak” itt angolos; a „jól ismertek” idiomatikusabb."
+    },
+    {
+      "line_approx": 829,
+      "category": "register",
+      "severity": "low",
+      "original": "következetesen közel optimális paraméterkészleteket talál",
+      "suggested": "rendszerint közel optimális paraméterkészleteket talál",
+      "reason": "A „következetesen” itt angol mintát követ; a „rendszerint” természetesebb."
+    },
+    {
+      "line_approx": 830,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a modellt teljes fekete dobozként kezeli",
+      "suggested": "a modellt teljesen fekete dobozként kezeli",
+      "reason": "A „teljes fekete dobozként” szerkezet idegenszerű; a határozószóval magyarosabb."
+    },
+    {
+      "line_approx": 833,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a megfigyelt adatok feltétele mellett a paraméterek poszterior eloszlását mintázza",
+      "suggested": "a megfigyelt adatok alapján a paraméterek poszterior eloszlását becsüli fel",
+      "reason": "A „feltétele mellett” és a „mintázza” szóhasználat tükörfordításízű; a javasolt változat szakmailag és nyelvileg természetesebb."
+    },
+    {
+      "line_approx": 833,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "differenciálevoluciós javaslatokkal",
+      "suggested": "differenciálevolúciós javaslatokkal",
+      "reason": "Helyesírási hiba: hiányzik az ékezet."
+    },
+    {
+      "line_approx": 834,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "többmóduszúságot",
+      "suggested": "többmódusúságot",
+      "reason": "A „módusúság” alak természetesebb magyar szaknyelvi forma."
+    },
+    {
+      "line_approx": 836,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "bizonytalanságtudatos alkalmazásoknál",
+      "suggested": "olyan alkalmazásokban, ahol a bizonytalanság kezelése fontos",
+      "reason": "A „bizonytalanságtudatos” nehézkes, angolos összetétel."
+    },
+    {
+      "line_approx": 837,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "nem-azonosíthatóságot",
+      "suggested": "nem azonosíthatóságot",
+      "reason": "A kötőjeles írásmód itt indokolatlan."
+    },
+    {
+      "line_approx": 838,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "ugyanaz a fekete dobozos korlát",
+      "suggested": "ugyanaz a feketedoboz-jellegből fakadó korlát",
+      "reason": "A „fekete dobozos” szerkezet nyers tükörfordítás; a javított változat magyarosabb."
+    },
+    {
+      "line_approx": 843,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Erősségei a hatékonyságban ..., az átláthatóságban ... és az alkalmazkodóképességben ... rejlenek.",
+      "suggested": "Fő erőssége a hatékonyság ..., az átláthatóság ... és az alkalmazkodóképesség.",
+      "reason": "A „rejlenek” szerkezet itt körülményes és angolos; az egyszerű névszói állítmány természetesebb."
+    },
+    {
+      "line_approx": 846,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az ágens paraméteres keresését heurisztikus gondolkodás vezérli",
+      "suggested": "Az ágens paraméterkeresését heurisztikus megfontolások vezérlik",
+      "reason": "A „paraméteres keresés” és a „heurisztikus gondolkodás” együtt kissé idegenszerű; a javasolt forma magyarosabb."
+    },
+    {
+      "line_approx": 849,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ágens diagnosztikus gondolkodása csak annyira jó, amennyire az LLM hidrológiai értése.",
+      "suggested": "Az ágens diagnosztikus gondolkodásának minőségét az LLM hidrológiai megértése korlátozza.",
+      "reason": "A „csak annyira jó, amennyire” szó szerinti angol minta; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 850,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "hidrológiai értése",
+      "suggested": "hidrológiai megértése",
+      "reason": "Az „értése” itt szokatlan; a „megértése” bevettebb."
+    },
+    {
+      "line_approx": 851,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "alkalmazhatnak egy gondolkodási mintázatot egy modellstruktúráról egy másikra",
+      "suggested": "egy adott modellstruktúrára illő gondolkodási sémát tévesen átvihetnek egy másikra",
+      "reason": "Az eredeti szerkezet nehézkes és tükörfordításízű."
+    },
+    {
+      "line_approx": 854,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "reprodukálhatósági variancia",
+      "suggested": "a reprodukálhatóság ingadozása",
+      "reason": "A „variancia” itt túlzottan szó szerinti és nem a legtermészetesebb magyar megfogalmazás címben."
+    },
+    {
+      "line_approx": 856,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "gondolkodási utakat produkálhat",
+      "suggested": "gondolkodási utakat eredményezhet",
+      "reason": "A „produkálhat” ismét angolos, az „eredményezhet” természetesebb."
+    },
+    {
+      "line_approx": 860,
+      "category": "heading",
+      "severity": "low",
+      "original": "**24.5. táblázat**: A kalibrációs megközelítések részletes összehasonlítása",
+      "suggested": "**24.5. táblázat**: A kalibrációs módszerek részletes összehasonlítása",
+      "reason": "A „megközelítések” itt kissé elvont és angolos; a „módszerek” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 1203,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "területi átlagértékeket számol a vízgyűjtő határát metsző 0,1 fokos rácscellákra vonatkozó terület-súlyozott átlagoláson",
+      "suggested": "területi átlagértékeket számol a vízgyűjtő határát metsző 0,1 fokos rácscellák területileg súlyozott átlagolásával",
+      "reason": "Körülményes, angolos szerkezet; a „vonatkozó ... átlagoláson” természetellenes magyarul."
+    },
+    {
+      "line_approx": 1208,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "az extraterresztrikus sugárzás",
+      "suggested": "a földön kívüli sugárzás",
+      "reason": "Az „extraterresztrikus” idegenszerű; magyar tudományos szövegben a „földön kívüli sugárzás” természetesebb."
+    },
+    {
+      "line_approx": 1209,
+      "category": "register",
+      "severity": "low",
+      "original": "ami konzisztens a regionális vízmérleggel",
+      "suggested": "ami összhangban van a regionális vízmérleggel",
+      "reason": "A „konzisztens” itt angolos, a „összhangban van” természetesebb magyar tudományos megfogalmazás."
+    },
+    {
+      "line_approx": 1211,
+      "category": "register",
+      "severity": "low",
+      "original": "ellenőrzi, hogy a vízmérleg fizikailag elfogadható-e",
+      "suggested": "ellenőrzi, hogy a vízmérleg fizikailag reális-e",
+      "reason": "A „fizikailag elfogadható” kissé tükörfordítás-szerű; a „fizikailag reális” bevettebb."
+    },
+    {
+      "line_approx": 1215,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az ESDAC talajadatokból megállapítja, hogy a domináns talajszövet iszapos vályog és agyagos vályog",
+      "suggested": "Az ESDAC talajadatai alapján megállapítja, hogy az uralkodó talajféleség iszapos vályog és agyagos vályog",
+      "reason": "A „domináns talajszövet” angolos és terminológiailag bizonytalan; az „adatai alapján” is természetesebb."
+    },
+    {
+      "line_approx": 1216,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "a hasonló közép-európai vízgyűjtőkön történő GR4J alkalmazásokról szóló tanítási tudása alapján",
+      "suggested": "a hasonló közép-európai vízgyűjtőkön végzett GR4J-alkalmazásokból származó ismeretei alapján",
+      "reason": "A „tanítási tudása” hibás, erősen fordításszagú szerkezet; a teljes kifejezés természetellenes."
+    },
+    {
+      "line_approx": 1219,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "hat iteráció alatt konvergálva az x1=310, x2=-0,4, x3=50, x4=1,8 paraméterkészlethez",
+      "suggested": "hat iteráció alatt az x1=310, x2=-0,4, x3=50, x4=1,8 paraméterkészlethez konvergál",
+      "reason": "Az „-va/-ve” szerkezet itt angolos és nehézkes; egyszerű igei állítmánnyal természetesebb."
+    },
+    {
+      "line_approx": 1221,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "40 tagú együttest generálva",
+      "suggested": "40 tagú együttest generál",
+      "reason": "Az „-va/-ve” szerkezet fölösleges, angolos mondatfűzés."
+    },
+    {
+      "line_approx": 1222,
+      "category": "register",
+      "severity": "medium",
+      "original": "a vízhozamadatok meg tudják kötni a nettó vízmérleget",
+      "suggested": "a vízhozamadatok képesek korlátozni a nettó vízmérleget",
+      "reason": "A „meg tudják kötni” tükörfordítás az angol „constrain” igéről; magyarul szakszerűbb a „korlátozni”."
+    },
+    {
+      "line_approx": 1222,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a talajnedvesség-tárolás és a talajvízcsere egymástól független meghatározására nem képesek",
+      "suggested": "de a talajnedvesség-tárolást és a talajvízcserét nem tudják egymástól függetlenül meghatározni",
+      "reason": "Az eredeti szerkezet nehézkes és angolos; az átrendezett mondat természetesebb."
+    },
+    {
+      "line_approx": 1225,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "a gondolkodási lánc naplót",
+      "suggested": "a gondolatmenet naplóját",
+      "reason": "A „gondolkodási lánc” szó szerinti fordítás; magyarul a „gondolatmenet” természetesebb."
+    },
+    {
+      "line_approx": 1226,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "3 perc összes modell-futási idő",
+      "suggested": "3 perc összes modellfutási idő",
+      "reason": "A kötőjeles írásmód itt indokolatlan; a „modellfutási idő” egybeírandó."
+    },
+    {
+      "line_approx": 1234,
+      "category": "register",
+      "severity": "low",
+      "original": "Az eredmények kontextusban való értelmezése",
+      "suggested": "Az eredmények értelmezése összefüggéseikben",
+      "reason": "A cím angolos; a „kontextusban” itt kevésbé természetes, mint az „összefüggéseikben”."
+    },
+    {
+      "line_approx": 1236,
+      "category": "register",
+      "severity": "low",
+      "original": "konzisztens az iszapos vályog talajok mérsékelt víztartó képességével",
+      "suggested": "összhangban van az iszapos vályog talajok mérsékelt víztartó képességével",
+      "reason": "A „konzisztens” itt is angolos hatású."
+    },
+    {
+      "line_approx": 1237,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "a Dunántúli regionális vízadó rendszer részét képezik",
+      "suggested": "a dunántúli regionális vízadó rendszer részét alkotják",
+      "reason": "A nagy kezdőbetű indokolatlan, és a „részét képezik” kissé hivataloskodó."
+    },
+    {
+      "line_approx": 1238,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mélyi talajvízáramlásként",
+      "suggested": "mély talajvízáramlásként",
+      "reason": "A „mélyi” itt szokatlan; a „mély talajvízáramlás” természetesebb szakkifejezés."
+    },
+    {
+      "line_approx": 1240,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Az útvonalválasztási tározó kapacitás x3=50 mm",
+      "suggested": "A vízhozam-összegyülekezési tározó kapacitása x3=50 mm",
+      "reason": "Az „útvonalválasztási tározó” az angol routing store tükörfordítása; magyar hidrológiai szövegben ez idegenszerű."
+    },
+    {
+      "line_approx": 1241,
+      "category": "register",
+      "severity": "low",
+      "original": "hirtelen válaszú",
+      "suggested": "gyors lefolyási reakciójú",
+      "reason": "A „hirtelen válaszú” kissé szó szerinti; a javasolt forma szakszerűbb magyarul."
+    },
+    {
+      "line_approx": 1245,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ez az összevont modellek gyakori korlátja heterogén talajú és felszínborítású vízgyűjtőkön",
+      "suggested": "Ez az összevont modellek gyakori korlátja heterogén talajú és felszínborítású vízgyűjtők esetében",
+      "reason": "A „vízgyűjtőkön” itt angolos vonzat; az „esetében” természetesebb."
+    },
+    {
+      "line_approx": 1249,
+      "category": "register",
+      "severity": "low",
+      "original": "Globális perspektíva: alkalmazhatóság Magyarországon túl",
+      "suggested": "Globális kitekintés: alkalmazhatóság Magyarországon túl",
+      "reason": "A „globális perspektíva” címként angolos; a „globális kitekintés” természetesebb."
+    },
+    {
+      "line_approx": 1250,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "teljes mértékben átvihető más régiókba",
+      "suggested": "teljes mértékben alkalmazható más régiókban is",
+      "reason": "Az „átvihető” az angol „transferable” szó szerinti fordítása; itt az „alkalmazható” jobb."
+    },
+    {
+      "line_approx": 1252,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "helyettesíti a Corine-t felszínborításnál",
+      "suggested": "a felszínborítási adatok tekintetében helyettesíti a Corine-t",
+      "reason": "A „felszínborításnál” tömör, de magyartalanul hat ebben a szerkezetben."
+    },
+    {
+      "line_approx": 1254,
+      "category": "register",
+      "severity": "medium",
+      "original": "az ágenses keretrendszer az adatforrás tekintetében agnosztikus",
+      "suggested": "az ágenses keretrendszer nem kötődik meghatározott adatforrásokhoz",
+      "reason": "Az „agnosztikus” itt angol szakzsargon átvétele; magyarul világosabban megfogalmazható."
+    },
+    {
+      "line_approx": 1260,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez nem produkciós kód",
+      "suggested": "Ez nem éles használatra szánt kód",
+      "reason": "A „produkciós kód” informatikai zsargon tükörfordítása; magyarul az „éles használatra szánt” természetesebb."
+    }
+  ]
+}

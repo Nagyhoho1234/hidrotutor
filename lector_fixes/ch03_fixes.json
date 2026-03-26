@@ -1,0 +1,1070 @@
+{
+  "chapter": "ch03",
+  "total_issues": 133,
+  "fixes": [
+    {
+      "line_approx": 8,
+      "category": "register",
+      "severity": "medium",
+      "original": "A fejezet tematikus körutazás a világ vízi adatinfrastruktúráján, nem országok, hanem adattípusok szerint rendezve.",
+      "suggested": "Ez a fejezet tematikus áttekintést ad a világ vízi adatinfrastruktúrájáról, nem országok, hanem adattípusok szerint rendezve.",
+      "reason": "A „körutazás” metaforikus és kissé publicisztikus; tankönyvi regiszterben az „áttekintést ad” természetesebb."
+    },
+    {
+      "line_approx": 9,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az információ minden kategóriájánál -- domborzat, folyók, felszínborítás, talaj, időjárás, vízhozam, árvizek, demográfia és műholdképek -- egységes utat járunk be:",
+      "suggested": "Az egyes információkategóriáknál -- domborzat, folyók, felszínborítás, talaj, időjárás, vízhozam, árvizek, demográfia és műholdképek -- ugyanazt a logikát követjük:",
+      "reason": "Az „egységes utat járunk be” angolos, képszerű fordulat; magyar tudományos prózában a „ugyanazt a logikát követjük” természetesebb."
+    },
+    {
+      "line_approx": 9,
+      "category": "terminology",
+      "severity": "low",
+      "original": "amely bármely más országnál többet áldozott szisztematikus, nyilvánosan elérhető hidrológiai adatokba",
+      "suggested": "amely bármely más országnál többet fordított szisztematikusan gyűjtött, nyilvánosan elérhető hidrológiai adatokra",
+      "reason": "Az „áldozott ... adatokba” szerkezet szokatlan; a „fordított ... adatokra” idiomatikusabb."
+    },
+    {
+      "line_approx": 10,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A cél nem kimerítő katalógus -- az önmagában megtöltene egy könyvet --, hanem gyakorlati útmutatás azokhoz az adatforrásokhoz, amelyeket a következő fejezetekben valóban felhasználunk.",
+      "suggested": "A cél nem kimerítő katalógus -- az önmagában is megtöltene egy könyvet --, hanem gyakorlati útmutató azokhoz az adatforrásokhoz, amelyeket a következő fejezetekben valóban felhasználunk.",
+      "reason": "Hiányzik az „is”, továbbá az „útmutatás azokhoz” helyett az „útmutató azokhoz” természetesebb."
+    },
+    {
+      "line_approx": 12,
+      "category": "calque",
+      "severity": "medium",
+      "original": "A texasi és a debreceni olvasó alapvetően eltérő adattájjal szembesül",
+      "suggested": "A texasi és a debreceni olvasó alapvetően eltérő adatkörnyezettel szembesül",
+      "reason": "Az „adattáj” tükörfordításízű, nem bevett magyar tudományos kifejezés."
+    },
+    {
+      "line_approx": 13,
+      "category": "register",
+      "severity": "low",
+      "original": "E fejezet végére mindkét olvasó pontosan tudni fogja, hol keressen.",
+      "suggested": "A fejezet végére mindkét olvasó pontosan tudni fogja, hol érdemes keresnie.",
+      "reason": "Az „E fejezet” kissé modoros; a „hol keressen” helyett a „hol érdemes keresnie” természetesebb."
+    },
+    {
+      "line_approx": 19,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vízfolyás-akkumulációt",
+      "suggested": "vízgyűjtő területet felhalmozó hálózatot / felhalmozódási értékeket",
+      "reason": "A „flow accumulation” szó szerinti fordítása nem bevett magyar szakkifejezés; a jelenlegi alak idegenszerű."
+    },
+    {
+      "line_approx": 21,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az előre lehatárolt vízhálózatok rengeteg munkát takarítanak meg a nyers DEM-ekből történő levezetéshez képest",
+      "suggested": "Az előre elkészített vízhálózatok rengeteg munkát takarítanak meg ahhoz képest, mintha a hálózatot nyers DEM-ekből kellene levezetni",
+      "reason": "A „nyers DEM-ekből történő levezetéshez képest” nehézkes, fordításszagú szerkezet."
+    },
+    {
+      "line_approx": 21,
+      "category": "register",
+      "severity": "low",
+      "original": "és olyan attribútumokat hordoznak",
+      "suggested": "és olyan attribútumokat tartalmaznak",
+      "reason": "Az „attribútumokat hordoznak” informatikai szövegben érthető, de a „tartalmaznak” természetesebb magyarul."
+    },
+    {
+      "line_approx": 27,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A vízmérce-adatok jelentik az alapigazságot",
+      "suggested": "A vízmérce-adatok jelentik az alapul szolgáló megfigyeléseket",
+      "reason": "Az „alapigazság” az angol „ground truth” tükörfordítása; magyar tudományos szövegben kerülendő."
+    },
+    {
+      "line_approx": 31,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "épület-nyomvonalakkal",
+      "suggested": "épületkontúrokkal",
+      "reason": "Az „épület-nyomvonal” itt nem bevett magyar GIS-terminus; az „épületkontúr” vagy „épület-alaprajz” természetesebb."
+    },
+    {
+      "line_approx": 35,
+      "category": "heading",
+      "severity": "low",
+      "original": "Az adatinfrastruktúra három szintje",
+      "suggested": "A vízi adatinfrastruktúra három szintje",
+      "reason": "A cím így pontosabban kapcsolódik a fejezet tárgyához és következetesebb az előző bekezdéssel."
+    },
+    {
+      "line_approx": 38,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyet szövetségi intézmények -- a USGS, a NOAA, a FEMA, az EPA és a NASA -- hajtottak évtizedeken át fenntartott befektetéssel.",
+      "suggested": "amelyet szövetségi intézmények -- a USGS, a NOAA, a FEMA, az EPA és a NASA -- építettek ki évtizedeken át tartó, folyamatos befektetésekkel.",
+      "reason": "A „hajtottak ... befektetéssel” szó szerinti, magyartalan szerkezet."
+    },
+    {
+      "line_approx": 41,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Magyarország EU-tagállamként e infrastruktúra előnyeire is támaszkodhat",
+      "suggested": "Magyarország EU-tagállamként ennek az infrastruktúrának az előnyeire is támaszkodhat",
+      "reason": "Az „e infrastruktúra” választékos, de itt nehézkes; a teljes alak gördülékenyebb."
+    },
+    {
+      "line_approx": 43,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A HydroSHEDS folyóhálózatot és vízgyűjtőhatárokat biztosít az egész bolygóra.",
+      "suggested": "A HydroSHEDS az egész világra kiterjedően nyújt folyóhálózati és vízgyűjtőhatár-adatokat.",
+      "reason": "A „biztosít az egész bolygóra” angolos; a „nyújt ... adatokat” természetesebb."
+    },
+    {
+      "line_approx": 46,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy lagosi, dhakai vagy ammáni kutató számára ezek a globális adatkészletek nem kiegészítések -- ezek az elsődleges források.",
+      "suggested": "Egy lagosi, dhakai vagy ammáni kutató számára ezek a globális adatkészletek nem pusztán kiegészítő források -- sokszor ezek jelentik az elsődleges adatforrást.",
+      "reason": "A „nem kiegészítések” főnévi állítmány kissé darabos; a javasolt változat idiomatikusabb."
+    },
+    {
+      "line_approx": 56,
+      "category": "plural",
+      "severity": "low",
+      "original": "Bármely vízgyűjtőszintű hidrológiai elemzés legfontosabb bemenete a domborzatadat.",
+      "suggested": "Bármely vízgyűjtőszintű hidrológiai elemzés legfontosabb bemenete a domborzati adat.",
+      "reason": "A „domborzatadat” összetétel szokatlan; a „domborzati adat” bevettebb."
+    },
+    {
+      "line_approx": 57,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "össze tudjuk gyűjteni ezeket az áramlásokat a vízfolyások azonosítására",
+      "suggested": "össze tudjuk gyűjteni ezeket a lefolyási irányokat, és így azonosíthatjuk a vízfolyásokat",
+      "reason": "Az „áramlások összegyűjtése” itt pontatlan és idegenszerű; hidrológiai kontextusban a lefolyás/összegyülekezés természetesebb."
+    },
+    {
+      "line_approx": 58,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "vízfolyás-akkumuláció",
+      "suggested": "felhalmozódási érték / összegyülekezési terület",
+      "reason": "Nem bevett magyar terminus, az angol kifejezés mechanikus átvétele."
+    },
+    {
+      "line_approx": 59,
+      "category": "calque",
+      "severity": "medium",
+      "original": "minden további lépésen átgyűrűzik",
+      "suggested": "minden további lépésre kihat",
+      "reason": "Az „átgyűrűzik” itt az angol „propagates through” hatását tükrözi; a „kihat” egyszerűbb és természetesebb."
+    },
+    {
+      "line_approx": 64,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az Egyesült Államok bármely más országnál többet áldozott a szisztematikus domborzati térképezésbe.",
+      "suggested": "Az Egyesült Államok bármely más országnál többet fordított a szisztematikus domborzati térképezésre.",
+      "reason": "Az „áldozott ... térképezésbe” nem természetes magyar szerkezet."
+    },
+    {
+      "line_approx": 67,
+      "category": "register",
+      "severity": "low",
+      "original": "A standard termék az 1/3 ívmásodperces rács",
+      "suggested": "A szabványos termék az 1/3 ívmásodperces rács",
+      "reason": "A „standard” helyett a magyar tudományos regiszterben a „szabványos” természetesebb."
+    },
+    {
+      "line_approx": 74,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A 3DEP program paradigmaváltást képvisel a fotogrammetriai DEM-ektől a LiDAR-ból származó felszínekig.",
+      "suggested": "A 3DEP program paradigmaváltást jelent: a fotogrammetriai DEM-ekről a LiDAR-alapú felszínmodellekre helyezi át a hangsúlyt.",
+      "reason": "Az „X-től Y-ig” szerkezet itt angolos és pontatlan; a javasolt változat világosabb."
+    },
+    {
+      "line_approx": 75,
+      "category": "register",
+      "severity": "low",
+      "original": "amelyek lehetővé teszik a korábbi NED-del lehetetlen alkalmazásokat",
+      "suggested": "amelyek olyan alkalmazásokat is lehetővé tesznek, amelyek a korábbi NED-del nem voltak megvalósíthatók",
+      "reason": "A jelenlegi szerkezet tömör, de darabos; a javasolt változat gördülékenyebb."
+    },
+    {
+      "line_approx": 85,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A Copernicus DEM digitális felszínmodellt (DSM) jelent",
+      "suggested": "A Copernicus DEM valójában digitális felszínmodell (DSM)",
+      "reason": "A „jelent” itt félrevezető lehet; nem a rövidítés feloldásáról, hanem a termék típusáról van szó."
+    },
+    {
+      "line_approx": 92,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Tömeges letöltések S3 és OData API-kon keresztül érhetők el",
+      "suggested": "A tömeges letöltés S3- és OData-API-kon keresztül is elérhető",
+      "reason": "Az „API-kon” írásmód és a mondatszerkezet kissé nehézkes; kötőjeles kapcsolás természetesebb."
+    },
+    {
+      "line_approx": 99,
+      "category": "register",
+      "severity": "medium",
+      "original": "nagylétesítmények melletti korridorfelmérések",
+      "suggested": "nagylétesítmények melletti folyosószerű felmérések / sávos felmérések",
+      "reason": "A „korridorfelmérés” anglicizáló, nem igazán bevett magyar szaknyelvi forma."
+    },
+    {
+      "line_approx": 111,
+      "category": "other",
+      "severity": "high",
+      "original": "nagylépétkű hidrológiai modellezéshez",
+      "suggested": "nagyléptékű hidrológiai modellezéshez",
+      "reason": "Elütés: „nagylépétkű” helyett „nagyléptékű”."
+    },
+    {
+      "line_approx": 124,
+      "category": "register",
+      "severity": "low",
+      "original": "Közös referenciakeretet is biztosítanak",
+      "suggested": "Közös hivatkozási keretet is biztosítanak",
+      "reason": "A „referenciakeret” érthető, de itt a „hivatkozási keret” természetesebb magyarul."
+    },
+    {
+      "line_approx": 126,
+      "category": "word_order",
+      "severity": "low",
+      "original": "a folyóhálózat-ábrázolás különböző filozófiáit képviseli",
+      "suggested": "a folyóhálózat ábrázolásának különböző szemléleteit képviseli",
+      "reason": "Az összetett főnévi szerkezet nehézkes; a javasolt megoldás természetesebb."
+    },
+    {
+      "line_approx": 132,
+      "category": "other",
+      "severity": "medium",
+      "original": "2,7 millió szakasz-részvízgyűjtőt",
+      "suggested": "2,7 millió szakaszt és részvízgyűjtőt / 2,7 millió folyószakaszhoz tartozó részvízgyűjtőt",
+      "reason": "A „szakasz-részvízgyűjtő” összetétel nehezen értelmezhető, magyarul nem természetes."
+    },
+    {
+      "line_approx": 135,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ami az NHDPlus-t többé teszi egy egyszerű vonaladat-készletnél, az a hozzáadott értékű attribútumai.",
+      "suggested": "Az NHDPlus-t nem pusztán egyszerű vonalas adatkészletté, hanem összetett keretrendszerré a hozzáadott értékű attribútumai teszik.",
+      "reason": "Az eredeti mondat az angol „what makes X more than Y” szerkezet tükörfordítása."
+    },
+    {
+      "line_approx": 140,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Vízgyűjtőterületet (helyi és kumulatív felső)",
+      "suggested": "Vízgyűjtőterületet (helyi és kumulatív, azaz felső vízgyűjtőre vonatkozó értékeket)",
+      "reason": "A „kumulatív felső” önmagában terminológiailag homályos, magyarázatra szorul."
+    },
+    {
+      "line_approx": 164,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az NHDPlus európai megfelelője az EU-Hydro, páneurópai folyóhálózati és vízgyűjtő-adatkészlet a Copernicus Felszínborítás-monitoring Szolgálattól.",
+      "suggested": "Az NHDPlus európai megfelelője az EU-Hydro, a Copernicus Felszínborítás-monitoring Szolgálat páneurópai folyóhálózati és vízgyűjtő-adatkészlete.",
+      "reason": "Az eredeti mondatból hiányzik a természetes magyar birtokos szerkezet."
+    },
+    {
+      "line_approx": 167,
+      "category": "terminology",
+      "severity": "low",
+      "original": "légifotó-ortofotók",
+      "suggested": "ortofotók",
+      "reason": "A „légifotó-ortofotó” redundáns; az ortofotó eleve légifelvétel geometriailag helyesbített változata."
+    },
+    {
+      "line_approx": 201,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az OVF-rendszer kettős szerepet tölt be, amelyet az Egyesült Államokban két különböző intézmény lát el",
+      "suggested": "Az OVF-rendszer kettős szerepet tölt be; az Egyesült Államokban ezt a két funkciót két külön intézmény látja el",
+      "reason": "Az eredeti mondat angolosan szerkesztett és nehézkes; a „szerep” helyett itt pontosabb a „funkció”."
+    },
+    {
+      "line_approx": 201,
+      "category": "register",
+      "severity": "low",
+      "original": "egyszerre biztosítja a folyóhálózati geometriát",
+      "suggested": "egyszerre szolgáltatja a folyóhálózat geometriáját",
+      "reason": "A „biztosítja” túl általános és fordításszagú; adatokról természetesebb a „szolgáltatja”."
+    },
+    {
+      "line_approx": 202,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A valós idejű vízszintekhez és árvíz-előrejelzésekhez a HYDROINFO kísérő portál operatív adatokat szolgáltat",
+      "suggested": "A valós idejű vízszintekről és árvíz-előrejelzésekről a HYDROINFO kísérőportál szolgáltat operatív adatokat",
+      "reason": "A „-hoz” rag itt kevésbé természetes, a „kísérő portál” különírása bizonytalan, a szórend pedig angolos."
+    },
+    {
+      "line_approx": 207,
+      "category": "register",
+      "severity": "medium",
+      "original": "EU-szinten",
+      "suggested": "Uniós szinten",
+      "reason": "A tudományos prózában természetesebb és magyarosabb az „uniós” forma."
+    },
+    {
+      "line_approx": 207,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "páneurópai portált biztosít",
+      "suggested": "páneurópai portálként működik",
+      "reason": "A „biztosít” itt angol mintát követ; intézményekre, rendszerekre természetesebb a „működik” vagy „elérhető”."
+    },
+    {
+      "line_approx": 207,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "amely a Víz Keretirányelv szerinti adatszolgáltatásokhoz kapcsolódik",
+      "suggested": "amely a Víz Keretirányelv szerinti adatszolgáltatáshoz kapcsolódik",
+      "reason": "A többes szám itt felesleges; általános tevékenységről van szó."
+    },
+    {
+      "line_approx": 213,
+      "category": "register",
+      "severity": "low",
+      "original": "Egy fontos fogalmi különbség az amerikai és az EU-rendszerek között",
+      "suggested": "Az amerikai és az uniós rendszerek közötti egyik fontos fogalmi különbség",
+      "reason": "Természetesebb magyar mondatindítás és következetesebb regiszter."
+    },
+    {
+      "line_approx": 214,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egy merev, országszerte egységes hierarchiát a régiótól a részvízgyűjtőig",
+      "suggested": "egy merev, országszerte egységes hierarchiát, amely a régió szintjétől a részvízgyűjtőig terjed",
+      "reason": "Az eredeti szerkezet hiányos, angolos tömörítésű."
+    },
+    {
+      "line_approx": 215,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "folyami vízgyűjtő kerületekre",
+      "suggested": "vízgyűjtő kerületekre",
+      "reason": "A WFD bevett magyar terminusa a „vízgyűjtő kerület”; a „folyami” jelző itt felesleges és szokatlan."
+    },
+    {
+      "line_approx": 215,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "belső vízgazdálkodását regionális vízügyi igazgatóságok szervezik",
+      "suggested": "vízgazdálkodási feladatait regionális vízügyi igazgatóságok látják el",
+      "reason": "A „belső vízgazdálkodását szervezik” nehézkes és fordításszagú."
+    },
+    {
+      "line_approx": 216,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "NUTS0 (országok) a NUTS3-ig (megyék/járások) és LAU (települések)",
+      "suggested": "a NUTS0-tól (országok) a NUTS3-ig (megyék/járások), valamint a LAU-szintig (települések)",
+      "reason": "Az eredeti felsorolás nyelvtanilag töredezett; a viszonyok magyarul így világosabbak."
+    },
+    {
+      "line_approx": 216,
+      "category": "register",
+      "severity": "low",
+      "original": "térbeli szervezőfunkciót tölt be",
+      "suggested": "térbeli szervező szerepet tölt be",
+      "reason": "A „szervezőfunkció” idegenszerű összetétel."
+    },
+    {
+      "line_approx": 220,
+      "category": "heading",
+      "severity": "medium",
+      "original": "### 3.3.4 Globális: HydroSHEDS",
+      "suggested": "### 3.3.4 Globális adatkészlet: HydroSHEDS",
+      "reason": "A cím önmagában kissé töredékes; a magyar tudományos címadásban természetesebb a pontosító főnév."
+    },
+    {
+      "line_approx": 222,
+      "category": "register",
+      "severity": "medium",
+      "original": "biztosítja a mérvadó globális hidrográfiai keretrendszert",
+      "suggested": "a meghatározó globális hidrográfiai keretrendszert adja",
+      "reason": "A „mérvadó” és a „biztosítja” együtt nehézkes; a javasolt változat természetesebb."
+    },
+    {
+      "line_approx": 223,
+      "category": "word_order",
+      "severity": "low",
+      "original": "A World Wildlife Fund Természetvédelmi Tudományos Programja fejlesztette az SRTM DEM-ből",
+      "suggested": "A World Wildlife Fund Természetvédelmi Tudományos Programja az SRTM DEM alapján fejlesztette ki",
+      "reason": "Az „SRTM DEM-ből fejlesztette” kevésbé természetes magyar szerkezet."
+    },
+    {
+      "line_approx": 226,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amely lehetővé teszi az egymásba ágyazott vízgyűjtő-elemzést",
+      "suggested": "amellyel egymásba ágyazott vízgyűjtő-elemzések végezhetők",
+      "reason": "A „lehetővé teszi” túlhasznált fordítási panel; az igei szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 227,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "tartózkodási időket",
+      "suggested": "tartózkodási időt",
+      "reason": "Általános hidrológiai jellemzőként itt természetesebb az egyes szám."
+    },
+    {
+      "line_approx": 234,
+      "category": "register",
+      "severity": "low",
+      "original": "számos nemzetközi alkalmazásnál",
+      "suggested": "számos nemzetközi alkalmazásban",
+      "reason": "Az „alkalmazásnál” itt kevésbé idiomatikus."
+    },
+    {
+      "line_approx": 235,
+      "category": "register",
+      "severity": "low",
+      "original": "ez az egyetlen elérhető szisztematikus folyóhálózati és vízgyűjtőhatár-adatkészlet",
+      "suggested": "gyakran ez az egyetlen elérhető, szisztematikusan előállított folyóhálózati és vízgyűjtőhatár-adatkészlet",
+      "reason": "A „szisztematikus adatkészlet” önmagában kissé idegenszerű; a jelző pontosítása természetesebb."
+    },
+    {
+      "line_approx": 244,
+      "category": "other",
+      "severity": "medium",
+      "original": "HUC-8-anként",
+      "suggested": "HUC-8 egységenként",
+      "reason": "A toldalékolt angol rövidítés ebben a formában nehézkes és tipográfiailag is esetlen."
+    },
+    {
+      "line_approx": 253,
+      "category": "terminology",
+      "severity": "high",
+      "original": "A felszínborítás a légkör és a talajfelszín közötti felület.",
+      "suggested": "A felszínborítás a földfelszín fizikai borítottsága, vagyis az, hogy egy területet növényzet, víz, beépített felszín vagy csupasz talaj fed-e.",
+      "reason": "A meghatározás szakmailag pontatlan; a felszínborítás nem „felület a légkör és a talajfelszín között”."
+    },
+    {
+      "line_approx": 254,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "egy erdős pixel egy beszivárgási és érdességi együtthatókészletet kap; egy városi pixel másikat",
+      "suggested": "egy erdővel borított pixelhez egy adott beszivárgási és érdességi paraméterkészletet rendelnek, egy városi pixelhez pedig egy másikat",
+      "reason": "Az eredeti megszemélyesítő szerkezet angolos; a „kap” helyett szaknyelvben természetesebb a „rendelnek”."
+    },
+    {
+      "line_approx": 254,
+      "category": "other",
+      "severity": "medium",
+      "original": "modell-előrejelzések",
+      "suggested": "modell-előrejelzéseké",
+      "reason": "A birtokos szerkezet hiányos; a „minőségét” szóhoz birtokos rag szükséges."
+    },
+    {
+      "line_approx": 257,
+      "category": "register",
+      "severity": "low",
+      "original": "Bármely vizsgálatnál, amely néhány évnél hosszabb időszakot ölel fel",
+      "suggested": "Minden olyan vizsgálatban, amely néhány évnél hosszabb időszakot ölel fel",
+      "reason": "A „bármely vizsgálatnál” kevésbé természetes ebben a kontextusban."
+    },
+    {
+      "line_approx": 268,
+      "category": "plural",
+      "severity": "low",
+      "original": "Az NLCD több időszakra érhető el",
+      "suggested": "Az NLCD több időpontra érhető el",
+      "reason": "Itt nem időszakokról, hanem különálló referenciaévekről van szó."
+    },
+    {
+      "line_approx": 269,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek a változási termékek elengedhetetlenek annak felméréséhez",
+      "suggested": "Ezek a változásrétegek elengedhetetlenek annak megítéléséhez",
+      "reason": "A „változási termékek” tükörfordítás; a magyar szaknyelvben természetesebb a „változásréteg”."
+    },
+    {
+      "line_approx": 270,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "megadva az egyes osztályokban lévő felső vízgyűjtőterület százalékos arányát",
+      "suggested": "megadva, hogy a felső vízgyűjtőterület mekkora hányada tartozik az egyes osztályokba",
+      "reason": "Az eredeti szerkezet nehézkes és angolos főnevesítésű."
+    },
+    {
+      "line_approx": 281,
+      "category": "other",
+      "severity": "high",
+      "original": "az állandó növényzettárs itású éves kultúrákat",
+      "suggested": "az állandó növénytakaróval kísért éves kultúrákat",
+      "reason": "Nyilvánvaló elütés és szóalakhiba („növényzettárs itású”)."
+    },
+    {
+      "line_approx": 288,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "szélesebb körű felszínmonitoring-termékportfóliót biztosít",
+      "suggested": "szélesebb körű felszínmonitoring-termékeket kínál",
+      "reason": "A „termékportfóliót biztosít” üzleti-angolos fordulat; a „kínál” természetesebb."
+    },
+    {
+      "line_approx": 295,
+      "category": "register",
+      "severity": "low",
+      "original": "jól illik a magyar tájhoz",
+      "suggested": "jól alkalmazható a magyar tájhasználati viszonyokra",
+      "reason": "A „jól illik” túl köznyelvi egy tankönyvi szövegben."
+    },
+    {
+      "line_approx": 301,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Két globális felszínborítási termék emelkedik ki a nagyfelbontás és a globális lefedettség kombinációjával.",
+      "suggested": "A globális felszínborítási termékek közül kettő emelkedik ki nagy felbontásával és globális lefedettségével.",
+      "reason": "Az eredeti mondat angolos szerkezetű."
+    },
+    {
+      "line_approx": 303,
+      "category": "register",
+      "severity": "medium",
+      "original": "fel tudja oldani egyedi parcellákat",
+      "suggested": "képes elkülöníteni az egyes parcellákat",
+      "reason": "A „fel tudja oldani” az angol „resolve” tükörfordítása; magyarul itt az „elkülöníteni” természetes."
+    },
+    {
+      "line_approx": 608,
+      "category": "register",
+      "severity": "medium",
+      "original": "páneurópai valószínűségi árvíz-előrejelzéseket biztosít",
+      "suggested": "páneurópai valószínűségi árvíz-előrejelzéseket nyújt",
+      "reason": "A „biztosít” ismétlődő, angolosan túlhasznált ige; a „nyújt” természetesebb tudományos stílusban."
+    },
+    {
+      "line_approx": 608,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Az EFAS az ECMWF együttes időjárás-előrejelzéseit használja a LISFLOOD hidrológiai modell meghajtásához az EU-Hydro folyóhálózaton, középtávú árvíz-előrejelzéseket, villámárvíz-mutatókat, szezonális előretekintéseket, valamint talajnedvesség-, lefolyás- és hóvíz-egyenérték monitoringot készítve.",
+      "suggested": "Az EFAS az ECMWF együttes időjárás-előrejelzéseivel hajtja meg a LISFLOOD hidrológiai modellt az EU-Hydro folyóhálózatán; így középtávú árvíz-előrejelzéseket, villámárvíz-mutatókat, szezonális előretekintéseket, valamint talajnedvesség-, lefolyás- és hóvízegyenérték-monitoringot állít elő.",
+      "reason": "Az „meghajtásához” és a „készítve” szerkezet angolos, nehézkes; a mondat magyarosabb igés szerkezettel természetesebb."
+    },
+    {
+      "line_approx": 608,
+      "category": "terminology",
+      "severity": "low",
+      "original": "hóvíz-egyenérték monitoring",
+      "suggested": "hóvízegyenérték-monitoring",
+      "reason": "A szakkifejezés egybeírt formában természetesebb; a kötőjeles tagolás itt indokolatlan."
+    },
+    {
+      "line_approx": 614,
+      "category": "register",
+      "severity": "medium",
+      "original": "statikus árvízveszély-térképeket biztosít Európa számára",
+      "suggested": "statikus árvízveszély-térképeket tesz közzé Európára",
+      "reason": "A „biztosít ... számára” angolos; a „tesz közzé” pontosabb és természetesebb ebben a kontextusban."
+    },
+    {
+      "line_approx": 614,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Ezek a FEMA árvíztérképek európai megfelelői",
+      "suggested": "Ezek az európai megfelelői a FEMA árvíztérképeinek",
+      "reason": "Az eredeti mondatkezdés angolos szerkezetű; a birtokos szerkezet magyarosabb."
+    },
+    {
+      "line_approx": 620,
+      "category": "register",
+      "severity": "medium",
+      "original": "igény szerinti gyors térképezést biztosít aktív katasztrófa-események",
+      "suggested": "igény szerinti gyors térképezést nyújt folyamatban lévő katasztrófaesemények",
+      "reason": "Az „aktív katasztrófa-események” tükörfordítás; a „folyamatban lévő katasztrófaesemények” természetesebb magyarul."
+    },
+    {
+      "line_approx": 626,
+      "category": "passive_voice",
+      "severity": "high",
+      "original": "Ezek a térképek különböző visszatérési időszakokra mutatják az árvízi kiterjedést, és legutóbb 2022-ben kerültek felülvizsgálatra.",
+      "suggested": "Ezek a térképek különböző visszatérési időszakokra mutatják az árvízi kiterjedést, és legutóbb 2022-ben vizsgálták felül őket.",
+      "reason": "A „kerültek felülvizsgálatra” kerülendő szenvedő szerkezet."
+    },
+    {
+      "line_approx": 631,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "amelyet az ország földrajza formált",
+      "suggested": "amelyet az ország földrajzi adottságai alakítottak ki",
+      "reason": "A „földrajza formált” szó szerinti, angolos megfogalmazás."
+    },
+    {
+      "line_approx": 631,
+      "category": "register",
+      "severity": "medium",
+      "original": "a tizenkilencedik századi katasztrofális árvizeket követően épített kiterjedt gátrendszer véd",
+      "suggested": "a 19. század katasztrofális árvizei után kiépített kiterjedt gátrendszer véd",
+      "reason": "A számmal írt évszázad és a „kiépített” ige természetesebb, tömörebb tudományos prózában."
+    },
+    {
+      "line_approx": 631,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "bizonyította az olyan rendszereken keresztül megvalósuló határokon átnyúló koordináció szükségességét, mint az EFAS",
+      "suggested": "rámutatott az EFAS-hoz hasonló, határokon átnyúló koordinációs rendszerek szükségességére",
+      "reason": "Az eredeti szerkezet nehézkes és angolos („rendszereken keresztül megvalósuló”)."
+    },
+    {
+      "line_approx": 635,
+      "category": "register",
+      "severity": "medium",
+      "original": "az EFAS-t globális lefedettségre terjeszti ki",
+      "suggested": "az EFAS koncepcióját globális léptékre terjeszti ki",
+      "reason": "A jelenlegi megfogalmazás kissé szó szerinti; a „globális léptékre” idiomatikusabb."
+    },
+    {
+      "line_approx": 635,
+      "category": "other",
+      "severity": "low",
+      "original": "0,05 fokos (~5 km-es) felbontásban",
+      "suggested": "0,05°-os (kb. 5 km-es) felbontásban",
+      "reason": "A fokjel használata és a „kb.” rövidítés természetesebb műszaki szövegben."
+    },
+    {
+      "line_approx": 641,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "Azon régiók számára, amelyek nem rendelkeznek saját előrejelző rendszerrel -- ami magában foglalja Szubszaharai Afrika, Közép-Ázsia és Délkelet-Ázsia nagy részét --, a GloFAS biztosítja az egyetlen elérhető középtávú árvíz-előrejelzést.",
+      "suggested": "Azokban a régiókban, ahol nincs saját előrejelző rendszer -- ide tartozik Szubszaharai Afrika, Közép-Ázsia és Délkelet-Ázsia nagy része --, a GloFAS jelenti az egyetlen elérhető középtávú árvíz-előrejelzést.",
+      "reason": "Az „azon régiók számára” és az „ami magában foglalja” angolos szerkezetek."
+    },
+    {
+      "line_approx": 641,
+      "category": "register",
+      "severity": "medium",
+      "original": "kísérleti korai figyelmeztetést biztosít",
+      "suggested": "kísérleti korai előrejelző rendszert működtet",
+      "reason": "A „korai figyelmeztetés” itt kevésbé természetes, mint a „korai előrejelző rendszer”."
+    },
+    {
+      "line_approx": 647,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "mérce nélküli helyeken",
+      "suggested": "vízmérce nélküli helyeken",
+      "reason": "A hidrológiai terminológiában a „vízmérce” pontosabb."
+    },
+    {
+      "line_approx": 653,
+      "category": "terminology",
+      "severity": "high",
+      "original": "szabványosított katasztrófa-adatsorolat biztosít 82 ország számára",
+      "suggested": "szabványosított katasztrófa-adatsorokat biztosít 82 ország számára",
+      "reason": "Az „adatsorolat” hibás vagy erősen szokatlan szóalak."
+    },
+    {
+      "line_approx": 659,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "A különbség az ember -- és az árvízkockázat számszerűsítéséhez tudnunk kell",
+      "suggested": "A különbséget az ember jelenti -- és az árvízkockázat számszerűsítéséhez tudnunk kell",
+      "reason": "Az eredeti mondat hiányos, angol mintát követő szerkezet."
+    },
+    {
+      "line_approx": 659,
+      "category": "other",
+      "severity": "high",
+      "original": "itt az adatforrásokra összpontosítunk, amelyek lehetővé teszik.",
+      "suggested": "itt azokra az adatforrásokra összpontosítunk, amelyek ezt lehetővé teszik.",
+      "reason": "Hiányzik a tárgy („ezt”), ezért a mondat csonka és nyelvtanilag hibás."
+    },
+    {
+      "line_approx": 661,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A demográfiai adatok több célt is szolgálnak a vízgazdálkodási elemzésben",
+      "suggested": "A vízgazdálkodási elemzésben a demográfiai adatok több célt is szolgálnak",
+      "reason": "A határozó előrébb helyezése magyarosabb mondatindítást ad."
+    },
+    {
+      "line_approx": 661,
+      "category": "register",
+      "severity": "medium",
+      "original": "szállítási lehetőségek nélküli lakosság",
+      "suggested": "közlekedési lehetőségekkel nem rendelkező lakosság",
+      "reason": "A „szállítási lehetőségek” itt angolos és pontatlan; társadalmi sérülékenységnél a „közlekedési lehetőségek” természetesebb."
+    },
+    {
+      "line_approx": 669,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "az államoktól az egyes népszámlálási blokkokig terjedő egymásba ágyazott hierarchiába szerveződik",
+      "suggested": "az államoktól a népszámlálási blokkokig terjedő, egymásba ágyazott hierarchiába rendeződik",
+      "reason": "A „szerveződik” itt kissé tükörfordításos; a „rendeződik” természetesebb."
+    },
+    {
+      "line_approx": 680,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A földrajzi határvonalakat a TIGER/Line shape-fájl program biztosítja",
+      "suggested": "A földrajzi határvonalakat a TIGER/Line shape-fájlok szolgáltatják",
+      "reason": "A „shape-fájl program” félrefordítás; itt nem programról, hanem fájlállományokról van szó."
+    },
+    {
+      "line_approx": 682,
+      "category": "register",
+      "severity": "medium",
+      "original": "A népszámlálási blokkcsoportok a vízgazdálkodási térbeli elemzéshez leginkább hasznos egységek",
+      "suggested": "A népszámlálási blokkcsoportok a vízgazdálkodási térbeli elemzés szempontjából a leghasznosabb egységek",
+      "reason": "A „leginkább hasznos” kevésbé természetes, mint a „leghasznosabb”."
+    },
+    {
+      "line_approx": 686,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "biztosítja a Census Bureau nemzeti megfelelőjét",
+      "suggested": "a Census Bureau magyarországi megfelelője",
+      "reason": "A „biztosítja ... megfelelőjét” szó szerinti és értelmileg pontatlan szerkezet."
+    },
+    {
+      "line_approx": 700,
+      "category": "register",
+      "severity": "medium",
+      "original": "harmonizált demográfiai és társadalmi-gazdasági adatokat biztosít minden tagállamban",
+      "suggested": "harmonizált demográfiai és társadalmi-gazdasági adatokat tesz közzé valamennyi tagállamra vonatkozóan",
+      "reason": "A „biztosít minden tagállamban” angolos; a „tesz közzé ... vonatkozóan” pontosabb."
+    },
+    {
+      "line_approx": 708,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "földrajzi határ-fájljait",
+      "suggested": "földrajzi határfájljait",
+      "reason": "Az összetett szó írásmódja hibás."
+    },
+    {
+      "line_approx": 716,
+      "category": "register",
+      "severity": "medium",
+      "original": "az egész földgolyóra",
+      "suggested": "világszerte",
+      "reason": "Az „egész földgolyóra” kissé nehézkes és kevésbé tudományos hangvételű."
+    },
+    {
+      "line_approx": 722,
+      "category": "register",
+      "severity": "medium",
+      "original": "A LandScan a „környezeti\" (24 órás átlagos) népességet becsli",
+      "suggested": "A LandScan a „környezeti”, vagyis 24 órás átlagos népességet becsli",
+      "reason": "A zárójeles betoldás itt nehézkes; az értelmező szerkezet gördülékenyebb."
+    },
+    {
+      "line_approx": 728,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "határ-fájlokat",
+      "suggested": "határfájlokat",
+      "reason": "Az összetett szó írásmódja hibás."
+    },
+    {
+      "line_approx": 728,
+      "category": "other",
+      "severity": "medium",
+      "original": "minden ország és közigazgatási alegységeik számára",
+      "suggested": "minden ország és azok közigazgatási alegységei számára",
+      "reason": "Az egyeztetés hibás: az „ország” egyes számú, az „alegységeik” többes számú birtokos."
+    },
+    {
+      "line_approx": 732,
+      "category": "mirror_translation",
+      "severity": "high",
+      "original": "olyan működő közelítést biztosít, amely a népszámlálási táblázatokból egymagukban lehetetlen lenne",
+      "suggested": "olyan használható közelítést ad, amely pusztán a népszámlálási táblázatok alapján nem lenne előállítható",
+      "reason": "A „működő közelítés” és az „egymagukban lehetetlen lenne” angolos, természetellenes fordulatok."
+    },
+    {
+      "line_approx": 770,
+      "category": "register",
+      "severity": "medium",
+      "original": "Az igásló a felszínborítás-térképezéshez, a vegetáció monitorozásához és a vízminőség-értékeléshez.",
+      "suggested": "A felszínborítás-térképezés, a vegetáció monitorozása és a vízminőség-értékelés egyik alapvető eszköze.",
+      "reason": "Az „igásló” metafora túl köznyelvi egy tankönyvi, tudományos regiszterhez."
+    },
+    {
+      "line_approx": 1604,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A **Google Earth Engine (GEE)** alapjaiban változtatta meg azt, ahogyan a kutatók a műholdadatokkal dolgoznak.",
+      "suggested": "A **Google Earth Engine (GEE)** alapjaiban változtatta meg a műholdadatok feldolgozásának kutatói gyakorlatát.",
+      "reason": "Az „azt, ahogyan” szerkezet angolosan hat; tömörebb, természetesebb tudományos megfogalmazás javasolt."
+    },
+    {
+      "line_approx": 1606,
+      "category": "register",
+      "severity": "low",
+      "original": "Többpetabájtos katalógusa tartalmazza a Landsat-ot (a teljes 50+ éves archívumot), az összes Sentinel-küldetést, a MODIS-t, az ERA5-öt, a CHIRPS-t, a SoilGrids-et, a WorldPop-ot és több száz más adatkészletet.",
+      "suggested": "Több petabájtos katalógusa tartalmazza a Landsat teljes, több mint 50 éves archívumát, az összes Sentinel-küldetés adatait, a MODIS-t, az ERA5-öt, a CHIRPS-t, a SoilGrids-et, a WorldPop-ot és több száz más adatkészletet.",
+      "reason": "A „többpetabájtos” és az „50+ éves” kevésbé természetes akadémiai magyarban; a mondat gördülékenyebbé tehető."
+    },
+    {
+      "line_approx": 1607,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "Az elemzések, amelyek helyi gépen napokig tartanának -- egy teljes ország éves felszínborítás-változásának kiszámítása például -- percek alatt elvégezhetők a GEE felhőinfrastruktúráján:",
+      "suggested": "A helyi gépen akár napokig tartó elemzések -- például egy teljes ország éves felszínborítás-változásának kiszámítása -- a GEE felhőinfrastruktúráján percek alatt elvégezhetők:",
+      "reason": "Az eredeti mondat szórendje és közbevetése angolos; a magyarban természetesebb a jelzős szerkezet előrehozása."
+    },
+    {
+      "line_approx": 1613,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A GEE ingyenes akadémiai és kutatási felhasználásra, és JavaScript-alapú Code Editort (böngészőben) és Python API-t egyaránt biztosít a programozott hozzáféréshez.",
+      "suggested": "A GEE akadémiai és kutatási célra ingyenesen használható, és a programozott hozzáféréshez egyaránt kínál böngészőben futó, JavaScript-alapú Code Editort és Python API-t.",
+      "reason": "Az „ingyenes ... felhasználásra” és a „biztosít” szerkezet fordításszagú; természetesebb igehasználat és szórend javasolt."
+    },
+    {
+      "line_approx": 1614,
+      "category": "calque",
+      "severity": "high",
+      "original": "Az adatszegény régiókban a hallgatók és a kutatók számára a GEE gyakran az egyetlen legfontosabb eszköz:",
+      "suggested": "Az adatszegény régiókban a hallgatók és a kutatók számára a GEE gyakran a legfontosabb, sőt olykor az egyetlen valóban használható eszköz:",
+      "reason": "Az „egyetlen legfontosabb” az angol „single most important” szó szerinti tükörfordítása, magyarul természetellenes."
+    },
+    {
+      "line_approx": 1622,
+      "category": "register",
+      "severity": "medium",
+      "original": "A műholdas adatökoszisztéma a vízgazdálkodás számára.",
+      "suggested": "A vízgazdálkodás műholdas adatökoszisztémája.",
+      "reason": "A címben a „számára” szerkezet nehézkes; birtokos szerkezetben természetesebb."
+    },
+    {
+      "line_approx": 1623,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "A Google Earth Engine áthidalja az összes forrást, és mind az amerikai, mind az európai küldetések adatait tárolja.",
+      "suggested": "A Google Earth Engine egységes platformon kapcsolja össze ezeket a forrásokat, és egyaránt hozzáférést ad az amerikai és az európai küldetések adataihoz.",
+      "reason": "Az „áthidalja az összes forrást” szó szerinti, nehezen értelmezhető fordulat; magyarul idiomatikusabb az „összekapcsolja” vagy „egységes platformon kezeli”."
+    },
+    {
+      "line_approx": 1627,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "A nemzetközi vízi adatmunkához az egyik legpraktikusabb eszköz az egyes intézményi rendszerek ekvivalens adatkészletei közötti átfogó megfeleltetés.",
+      "suggested": "A nemzetközi vízügyi adatkezelésben az egyik legpraktikusabb eszköz az egyes intézményi rendszerekben szereplő, egymásnak megfeleltethető adatkészletek áttekintő összevetése.",
+      "reason": "A „vízi adatmunka” és az „ekvivalens adatkészletek közötti átfogó megfeleltetés” terminológiailag és stilárisan nehézkes."
+    },
+    {
+      "line_approx": 1628,
+      "category": "register",
+      "severity": "medium",
+      "original": "A következő táblázat összefoglalja az ebben a fejezetben tárgyalt elsődleges egyenértékűségeket.",
+      "suggested": "A következő táblázat összefoglalja az ebben a fejezetben tárgyalt legfontosabb megfeleléseket.",
+      "reason": "Az „elsődleges egyenértékűségek” szóhasználat angolos és nehézkes; a „legfontosabb megfelelések” természetesebb."
+    },
+    {
+      "line_approx": 1629,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Amikor egy projektbe új országban vagy régióban kezdünk, ez a táblázat biztosítja a kiindulópontot az elérhető adatok azonosításához.",
+      "suggested": "Ha egy projektet új országban vagy régióban indítunk, ez a táblázat jó kiindulópontot ad az elérhető adatok azonosításához.",
+      "reason": "Az „egy projektbe kezdünk” és a „biztosítja a kiindulópontot” szerkezet angolos."
+    },
+    {
+      "line_approx": 1631,
+      "category": "heading",
+      "severity": "medium",
+      "original": "**3.7. táblázat**: Átfogó vízi adatok egyenértékűségi táblázata -- USA, magyar/EU és globális adatkészletek",
+      "suggested": "**3.7. táblázat**: A vízügyi adatok megfeleltetési táblázata -- USA-, magyar/EU-s és globális adatkészletek",
+      "reason": "Az „egyenértékűségi táblázat” és a „vízi adatok” itt kevésbé természetes; a „megfeleltetési táblázat” és „vízügyi adatok” bevettebb."
+    },
+    {
+      "line_approx": 1663,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Minden vízgazdálkodási GIS-projekt, helyszíntől függetlenül, ugyanazzal az alapfeladattal kezdődik: egy **vízgyűjtő-alaptérkép** összeállítása -- az a hidrológiai elemzéshez szükséges földrajzi rétegek alapgyűjteménye.",
+      "suggested": "Minden vízgazdálkodási GIS-projekt, helyszíntől függetlenül, ugyanazzal az alapfeladattal kezdődik: egy **vízgyűjtő-alaptérkép** összeállításával, vagyis a hidrológiai elemzéshez szükséges földrajzi rétegek alapgyűjteményének létrehozásával.",
+      "reason": "Az „-- az a ...” szerkezet angolosan utólag magyarázó; magyarul simább az „vagyis” típusú kapcsolás."
+    },
+    {
+      "line_approx": 1664,
+      "category": "terminology",
+      "severity": "low",
+      "original": "Az alaptérkép jellemzően tartalmaz egy vízgyűjtőhatárt, részvízgyűjtő-határokat, egy folyóhálózatot vízhozam-attribútumokkal, mérce-helyszíneket, és opcionálisan domborzat-, felszínborítás- és talajadatokat.",
+      "suggested": "Az alaptérkép jellemzően tartalmaz egy vízgyűjtőhatárt, részvízgyűjtő-határokat, egy folyóhálózatot vízhozam-attribútumokkal, vízmérce-helyeket, valamint opcionálisan domborzati, felszínborítási és talajadatokat.",
+      "reason": "A „mérce-helyszínek” és a „domborzat-, felszínborítás- és talajadatok” szerkezet kevésbé természetes; a melléknévi alakok gördülékenyebbek."
+    },
+    {
+      "line_approx": 1665,
+      "category": "register",
+      "severity": "medium",
+      "original": "Ez a szakasz kétszer mutatja be a munkafolyamatot: először amerikai adatforrásokkal, majd magyar/EU adatforrásokkal, bemutatva, hogy az elemzési logika azonos, még ha a konkrét adatkészletek és portálok eltérnek is.",
+      "suggested": "Ez a szakasz két változatban mutatja be a munkafolyamatot: először amerikai, majd magyar/EU adatforrásokkal, érzékeltetve, hogy az elemzési logika azonos, még ha a konkrét adatkészletek és portálok el is térnek.",
+      "reason": "A „kétszer mutatja be” kissé ügyetlen; a „két változatban” természetesebb."
+    },
+    {
+      "line_approx": 1672,
+      "category": "register",
+      "severity": "medium",
+      "original": "Navigáljon a National Map megjelenítőhöz és keresse meg a USGS 16-os Hidrológiai Régió (Great Basin -- Nagy Medence) NHDPlus High Resolution adatkészletét.",
+      "suggested": "Nyissa meg a National Map felületét, és keresse meg a USGS 16. hidrológiai régiójához (Great Basin -- Nagy-medence) tartozó NHDPlus High Resolution adatkészletet.",
+      "reason": "A „navigáljon ... megjelenítőhöz” és a nagy kezdőbetűs magyar köznév angolos; a mondat magyarosabban fogalmazható."
+    },
+    {
+      "line_approx": 1678,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Vetületi koordináta-rendszer használata biztosítja, hogy a területek és távolságok értelmes metrikus egységekben legyenek kiszámítva.",
+      "suggested": "A vetületi koordináta-rendszer használata biztosítja, hogy a területeket és a távolságokat értelmezhető metrikus egységekben számítsuk ki.",
+      "reason": "Hiányzik a névelő, és a „legyenek kiszámítva” szerkezet nehézkes, részben szenvedő jellegű."
+    },
+    {
+      "line_approx": 1681,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Adja hozzá a WBD HUC-8 réteget a letöltött geodatabázisból.",
+      "suggested": "Adja hozzá a WBD HUC-8 réteget a letöltött geoadatbázisból.",
+      "reason": "A „geodatabázis” helyett a magyar szaknyelvben természetesebb a „geoadatbázis”."
+    },
+    {
+      "line_approx": 1685,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Exportálja a feature dataset-be.",
+      "suggested": "Exportálja a feature datasetbe.",
+      "reason": "Az angol terminus toldalékolása hibás; ha az angol alak marad, a magyar ragolást közvetlenül kell kapcsolni."
+    },
+    {
+      "line_approx": 1689,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az egyedi HUC-10 értékek szerinti szimbólumalkotás feltárja a közbenső vízgyűjtő-hierarchiát.",
+      "suggested": "Az egyedi HUC-10 értékek szerinti jelkulcsozás jól láthatóvá teszi a közbenső vízgyűjtő-hierarchiát.",
+      "reason": "A „szimbólumalkotás feltárja” tükörfordítás-ízű; GIS-szövegben a „jelkulcsozás” természetesebb."
+    },
+    {
+      "line_approx": 1692,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Csatlakoztassa az EROM átlagos éves vízhozamtáblázatot az NHDPlus azonosítóval mint csatlakozási kulccsal, hozzáadva a mérce-korrigált átlagos éves vízhozambecsléseket (köbláb/másodpercben) minden szakaszhoz.",
+      "suggested": "Kapcsolja az EROM átlagos éves vízhozamait tartalmazó táblát az NHDPlus-azonosító alapján, így minden szakaszhoz hozzárendelhetők a mércékkel korrigált, átlagos éves vízhozambecslések (köbláb/másodpercben).",
+      "reason": "A „csatlakoztassa ... mint csatlakozási kulccsal” és a „hozzáadva” szerkezet angolos és nehézkes."
+    },
+    {
+      "line_approx": 1693,
+      "category": "word_order",
+      "severity": "low",
+      "original": "Szimbolizálja fokozatosan szélesedő vonalakkal, amelyek arányosak a vízhozammal, olyan térképet készítve, ahol a főág vastagabban jelenik meg, mint a mellékfolyók.",
+      "suggested": "A réteget a vízhozammal arányos, fokozatosan szélesedő vonalakkal jelenítse meg, hogy a főág vastagabban látszódjon, mint a mellékfolyók.",
+      "reason": "Az eredeti mondat szerkezete angolosan participiális; magyarul egyszerűbb főmondati megoldás természetesebb."
+    },
+    {
+      "line_approx": 1696,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Importálja a mérce-helyszíneket egy szélességi/hosszúsági fok koordinátatáblázatból (az NWIS-ből) az XY Table to Point eszközzel.",
+      "suggested": "Importálja a vízmérce-helyeket egy földrajzi koordinátákat tartalmazó táblázatból (az NWIS-ből) az XY Table to Point eszközzel.",
+      "reason": "A „mérce-helyszínek” és a „szélességi/hosszúsági fok koordinátatáblázat” nehézkes, kevésbé idiomatikus."
+    },
+    {
+      "line_approx": 1699,
+      "category": "register",
+      "severity": "low",
+      "original": "Tartson fenn legalább 5 értékes jegyet a pozicionálási pontatlanság elkerülése érdekében.",
+      "suggested": "A pozicionálási pontatlanság elkerülése érdekében legalább 5 tizedesjegyet használjon.",
+      "reason": "A „tartson fenn” és az „értékes jegy” itt nem természetes; a „tizedesjegy” a pontos terminus."
+    },
+    {
+      "line_approx": 1703,
+      "category": "register",
+      "severity": "medium",
+      "original": "A 30-40 CFS eltérések jellemzőek, és tükrözik a regresszióalapú vízhozambecslés eredendő bizonytalanságát, valamint az adatsorok időszakainak különbségeit.",
+      "suggested": "A 30-40 CFS nagyságrendű eltérések jellemzők, és a regresszióalapú vízhozambecslés eredendő bizonytalanságát, valamint az adatsorok időbeli eltéréseit tükrözik.",
+      "reason": "A számnévi jelzős szerkezet és az „időszakainak különbségei” megfogalmazás kissé darabos."
+    },
+    {
+      "line_approx": 1713,
+      "category": "register",
+      "severity": "low",
+      "original": "A Zala a Balaton legfontosabb magyar mellékfolyója, és a folyamatos vízminőség-monitoring és eutrofizáció-kezelés tárgya.",
+      "suggested": "A Zala a Balaton legfontosabb magyar mellékfolyója, és folyamatos vízminőségi monitoring, illetve eutrofizáció-kezelés tárgya.",
+      "reason": "A „vízminőség-monitoring” hibrid szerkezet; a „vízminőségi monitoring” természetesebb."
+    },
+    {
+      "line_approx": 1719,
+      "category": "word_order",
+      "severity": "medium",
+      "original": "A választás attól függ, hogy a projekt elsősorban európai (Copernicus, EU-Hydro) vagy nemzeti (OVF, Lechner) adatforrásokat használ.",
+      "suggested": "A választás attól függ, hogy a projekt elsősorban európai (Copernicus, EU-Hydro) vagy inkább nemzeti (OVF, Lechner) adatforrásokra támaszkodik.",
+      "reason": "A „projekt ... adatforrásokat használ” kissé angolos; a „támaszkodik” természetesebb tudományos prózában."
+    },
+    {
+      "line_approx": 1721,
+      "category": "register",
+      "severity": "high",
+      "original": "Ne az oszlopfejléceknek higgyen -- higgyen a számoknak.",
+      "suggested": "Ne az oszlopfejlécekből induljon ki, hanem az értékek számszerű tartományából.",
+      "reason": "A felszólító, retorikus „higgyen a számoknak” túl köznyelvi és publicisztikus egy tankönyvben."
+    },
+    {
+      "line_approx": 1723,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Töltse le az EU-Hydro folyóhálózati adatokat Magyarország számára a Copernicus Felszínborítás-monitoring Szolgálatról.",
+      "suggested": "Töltse le az EU-Hydro folyóhálózati adatait Magyarországra vonatkozóan a Copernicus felszínborítás-monitoring szolgáltatásából.",
+      "reason": "A nagybetűsítés és a „Magyarország számára” szerkezet angolos; a magyaros megfogalmazás gördülékenyebb."
+    },
+    {
+      "line_approx": 1730,
+      "category": "mirror_translation",
+      "severity": "medium",
+      "original": "Az amerikai munkafolyamattól eltérően, ahol a Watershed Boundary Dataset letöltésre kész, előre lehatárolt HUC-poligonokat biztosít, az európai munkafolyamat megkövetelheti a vízgyűjtő DEM-ből történő lehatárolását.",
+      "suggested": "Az amerikai munkafolyamattal szemben, ahol a Watershed Boundary Dataset előre lehatárolt, azonnal letölthető HUC-poligonokat kínál, az európai munkafolyamatban előfordulhat, hogy a vízgyűjtőt DEM alapján kell lehatárolni.",
+      "reason": "A „letöltésre kész” és a „megkövetelheti ... történő lehatárolását” szerkezet erősen fordításszagú."
+    },
+    {
+      "line_approx": 1744,
+      "category": "register",
+      "severity": "medium",
+      "original": "A 44 osztályos rendszer megkülönbözteti a Balaton északi partja mentén szőlővel borított lejtőket, a Zala-völgy szántóföldjeit, a Bakony erdővel borított dombvidékét és a Kis-Balaton tározó vizes élőhelyeit (mesterséges vizes élőhely, amelyet vízminőség-kezelési célból hoztak létre).",
+      "suggested": "A 44 osztályos rendszer elkülöníti a Balaton északi partja menti szőlővel borított lejtőket, a Zala-völgy szántóföldjeit, a Bakony erdős dombvidékét és a Kis-Balaton tározó vizes élőhelyeit (olyan mesterséges vizes élőhelyet, amelyet vízminőség-védelmi célból hoztak létre).",
+      "reason": "A „megkülönbözteti” és a „vízminőség-kezelési célból” itt kevésbé természetes; stiláris finomítás szükséges."
+    },
+    {
+      "line_approx": 1753,
+      "category": "terminology",
+      "severity": "medium",
+      "original": "Fektesse egymásra az EU-Hydro folyóhálózatot a DEM-ből származó vízfolyás-akkumulációs rácshálóra a konzisztencia ellenőrzéséhez.",
+      "suggested": "Vesse össze az EU-Hydro folyóhálózatot a DEM-ből származtatott vízgyűjtési akkumulációs rácshálóval a konzisztencia ellenőrzéséhez.",
+      "reason": "A „vízfolyás-akkumulációs rácsháló” terminus szokatlan; a mondat egészében is kissé tükörfordításos."
+    },
+    {
+      "line_approx": 1756,
+      "category": "calque",
+      "severity": "medium",
+      "original": "Az eredmény az amerikai NHDPlus-alapú változattal funkcionálisan egyenértékű vízgyűjtő-alaptérkép, amelyet európai adatforrásokból állítottak össze, amelyek egyformán ingyenesek és egyformán jól dokumentáltak.",
+      "suggested": "Az eredmény egy, az amerikai NHDPlus-alapú változattal funkciójában egyenértékű vízgyűjtő-alaptérkép, amelyet európai adatforrásokból állítottak össze; ezek az adatok szintén ingyenesen hozzáférhetők és jól dokumentáltak.",
+      "reason": "A „funkcionálisan egyenértékű” és az „egyformán ... egyformán” szerkezet angolos, nehézkes."
+    },
+    {
+      "line_approx": 1772,
+      "category": "plural",
+      "severity": "medium",
+      "original": "### 3.13.1 Adathozzáférési regisztrációk",
+      "suggested": "### 3.13.1 Regisztráció az adathozzáféréshez",
+      "reason": "A többes számú, főnevesített cím angolos; magyarul természetesebb az egyszerűbb, funkcionális címadás."
+    },
+    {
+      "line_approx": 1788,
+      "category": "other",
+      "severity": "high",
+      "original": "A vízi adatok formátumok sokféleségében érkeznek.",
+      "suggested": "A vízügyi adatok sokféle formátumban érkeznek.",
+      "reason": "Nyelvtanilag hibás szerkezet („adatok formátumok sokféleségében”); egyértelműen javítandó."
+    }
+  ]
+}

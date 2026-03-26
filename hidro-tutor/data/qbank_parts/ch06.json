@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "Who formalized map algebra?",
+    "options": [
+      "A) David Maidment",
+      "B) Dana Tomlin",
+      "C) Michael Goodchild",
+      "D) Gunter Bloschl"
+    ],
+    "correct": "B",
+    "explanation": "Dana Tomlin formalized map algebra at Yale in the early 1980s."
+  },
+  {
+    "type": "mcq",
+    "question": "Tomlin classified map algebra into which three operation categories?",
+    "options": [
+      "A) Add, Subtract, Multiply",
+      "B) Local, Focal, Zonal",
+      "C) Raster, Vector, Tabular",
+      "D) Simple, Complex, Advanced"
+    ],
+    "correct": "B",
+    "explanation": "Local (cell-by-cell), Focal (neighborhood), Zonal (group summary). Plus Global operations."
+  },
+  {
+    "type": "mcq",
+    "question": "Which map algebra operation computes each output cell from a window of surrounding cells?",
+    "options": [
+      "A) Local",
+      "B) Focal",
+      "C) Zonal",
+      "D) Global"
+    ],
+    "correct": "B",
+    "explanation": "Focal (neighborhood) operations use a moving window. Slope and aspect are examples."
+  },
+  {
+    "type": "mcq",
+    "question": "In ArcGIS Pro, the Raster Calculator is found in which toolbox?",
+    "options": [
+      "A) Data Management",
+      "B) Conversion",
+      "C) Spatial Analyst",
+      "D) 3D Analyst"
+    ],
+    "correct": "C",
+    "explanation": "Raster Calculator is in Spatial Analyst > Map Algebra."
+  },
+  {
+    "type": "mcq",
+    "question": "In QGIS, raster layer references in the calculator use what syntax?",
+    "options": [
+      "A) 'layer'",
+      "B) [layer]",
+      "C) \"layer@1\"",
+      "D) layer.band1"
+    ],
+    "correct": "C",
+    "explanation": "QGIS uses layername@band format, e.g., \"precipitation@1\"."
+  },
+  {
+    "type": "mcq",
+    "question": "When you don't specify a file extension in ArcGIS Pro Raster Calculator output:",
+    "options": [
+      "A) GeoTIFF is created",
+      "B) ESRI Grid format is created",
+      "C) NetCDF is created",
+      "D) An error occurs"
+    ],
+    "correct": "B",
+    "explanation": "No extension = ESRI Grid. Use .tif for GeoTIFF (recommended)."
+  },
+  {
+    "type": "mcq",
+    "question": "The water balance equation is P = ET + R + ΔS. What does R represent?",
+    "options": [
+      "A) Rainfall",
+      "B) Retention",
+      "C) Runoff",
+      "D) Recharge"
+    ],
+    "correct": "C",
+    "explanation": "R = Runoff in the water balance equation."
+  },
+  {
+    "type": "mcq",
+    "question": "The default cell size behavior when inputs have different resolutions is:",
+    "options": [
+      "A) Finest input",
+      "B) Coarsest input",
+      "C) Average of inputs",
+      "D) User-specified"
+    ],
+    "correct": "B",
+    "explanation": "Default: maximum (coarsest) cell size among inputs."
+  },
+  {
+    "type": "mcq",
+    "question": "The default resampling method for raster calculations is:",
+    "options": [
+      "A) Bilinear",
+      "B) Cubic convolution",
+      "C) Nearest-neighbor",
+      "D) Majority"
+    ],
+    "correct": "C",
+    "explanation": "Nearest-neighbor is the default resampling for raster calculations."
+  },
+  {
+    "type": "mcq",
+    "question": "The default analysis extent is:",
+    "options": [
+      "A) Union of all inputs",
+      "B) Intersection of all inputs",
+      "C) Extent of the first input",
+      "D) Maximum extent possible"
+    ],
+    "correct": "B",
+    "explanation": "Default: intersection — only where all inputs overlap."
+  },
+  {
+    "type": "mcq",
+    "question": "In the worked example, what are the two input grid cell sizes?",
+    "options": [
+      "A) 100m and 200m",
+      "B) 50m and 100m",
+      "C) 150m and 100m",
+      "D) 30m and 90m"
+    ],
+    "correct": "C",
+    "explanation": "Precipitation: 150m, Infiltration: 100m in the chapter's worked example."
+  },
+  {
+    "type": "mcq",
+    "question": "In bilinear interpolation, how many source cells are used?",
+    "options": [
+      "A) 1",
+      "B) 2",
+      "C) 4 (2×2)",
+      "D) 16 (4×4)"
+    ],
+    "correct": "C",
+    "explanation": "Bilinear uses the 4 nearest cells (2×2 neighborhood)."
+  },
+  {
+    "type": "mcq",
+    "question": "Cubic convolution uses how many source cells?",
+    "options": [
+      "A) 4",
+      "B) 8",
+      "C) 12",
+      "D) 16 (4×4)"
+    ],
+    "correct": "D",
+    "explanation": "Cubic convolution fits through a 4×4 = 16 cell neighborhood."
+  },
+  {
+    "type": "mcq",
+    "question": "For categorical data, which resampling method is appropriate?",
+    "options": [
+      "A) Bilinear",
+      "B) Cubic convolution",
+      "C) Nearest-neighbor",
+      "D) Spline"
+    ],
+    "correct": "C",
+    "explanation": "Nearest-neighbor preserves exact original values needed for categories."
+  },
+  {
+    "type": "mcq",
+    "question": "Majority resampling is designed for:",
+    "options": [
+      "A) Continuous elevation data",
+      "B) Categorical data when coarsening",
+      "C) Time series data",
+      "D) Point data interpolation"
+    ],
+    "correct": "B",
+    "explanation": "Majority assigns the most common value in the cell footprint when coarsening categories."
+  },
+  {
+    "type": "mcq",
+    "question": "What does the Con function do in ArcGIS Pro map algebra?",
+    "options": [
+      "A) Concatenates strings",
+      "B) Converts data types",
+      "C) Implements if-then-else logic cell by cell",
+      "D) Connects rasters"
+    ],
+    "correct": "C",
+    "explanation": "Con evaluates a condition at each cell and assigns different values for true/false."
+  },
+  {
+    "type": "mcq",
+    "question": "The SCS Curve Number runoff equation involves:",
+    "options": [
+      "A) Only subtraction",
+      "B) Squaring a quantity and division",
+      "C) Only multiplication",
+      "D) Logarithmic functions"
+    ],
+    "correct": "B",
+    "explanation": "Q = (P - Ia)² / (P - Ia + S) involves squaring and division."
+  },
+  {
+    "type": "mcq",
+    "question": "What three analysis environment parameters are most critical?",
+    "options": [
+      "A) CRS, format, compression",
+      "B) Extent, cell size, snap raster",
+      "C) Band count, bit depth, NODATA",
+      "D) Symbology, labels, legend"
+    ],
+    "correct": "B",
+    "explanation": "Analysis extent, cell size, and snap raster are the three most important."
+  },
+  {
+    "type": "mcq",
+    "question": "A snap raster ensures:",
+    "options": [
+      "A) Data compression",
+      "B) Cell alignment with a reference grid",
+      "C) Correct symbology",
+      "D) Format conversion"
+    ],
+    "correct": "B",
+    "explanation": "Snap raster forces output cell alignment to match a reference grid."
+  },
+  {
+    "type": "mcq",
+    "question": "An analysis mask:",
+    "options": [
+      "A) Changes the CRS",
+      "B) Restricts calculation to a specific area",
+      "C) Compresses the output",
+      "D) Converts data types"
+    ],
+    "correct": "B",
+    "explanation": "Mask sets cells outside the defined area to NODATA."
+  },
+  {
+    "type": "mcq",
+    "question": "The NODATA propagation rule states:",
+    "options": [
+      "A) NODATA is replaced by zero",
+      "B) NODATA in any input makes output NODATA",
+      "C) NODATA cells are averaged",
+      "D) NODATA is ignored"
+    ],
+    "correct": "B",
+    "explanation": "If any input is NODATA, output is NODATA — regardless of operation."
+  },
+  {
+    "type": "mcq",
+    "question": "Division by zero in raster calculations produces:",
+    "options": [
+      "A) Zero",
+      "B) Infinity",
+      "C) NODATA",
+      "D) An error message"
+    ],
+    "correct": "C",
+    "explanation": "Division by zero produces NODATA (undefined result)."
+  },
+  {
+    "type": "mcq",
+    "question": "How can division by zero be used as a masking tool?",
+    "options": [
+      "A) It cannot",
+      "B) Divide by a binary mask (1 inside, 0 outside)",
+      "C) Multiply by zero",
+      "D) Add NODATA values"
+    ],
+    "correct": "B",
+    "explanation": "Dividing by a mask with 1 inside and 0 outside: inside values preserved, outside → NODATA."
+  },
+  {
+    "type": "mcq",
+    "question": "The SetNull function in ArcGIS Pro:",
+    "options": [
+      "A) Sets all cells to null",
+      "B) Explicitly sets specified cells to NODATA",
+      "C) Fills null values",
+      "D) Removes NODATA"
+    ],
+    "correct": "B",
+    "explanation": "SetNull(condition, value) sets cells to NODATA where condition is true."
+  },
+  {
+    "type": "mcq",
+    "question": "When NODATA propagation reduces valid output area, one strategy is:",
+    "options": [
+      "A) Ignore the problem",
+      "B) Fill NODATA cells before calculation",
+      "C) Use lower resolution",
+      "D) Delete the input"
+    ],
+    "correct": "B",
+    "explanation": "Filling small gaps by interpolation before calculation preserves valid output area."
+  },
+  {
+    "type": "mcq",
+    "question": "The worked example default result (150m) discards how many of 9 infiltration values?",
+    "options": [
+      "A) 2",
+      "B) 3",
+      "C) 5",
+      "D) 7"
+    ],
+    "correct": "C",
+    "explanation": "Five of nine original infiltration values were never used — discarded by nearest-neighbor resampling."
+  },
+  {
+    "type": "mcq",
+    "question": "In the bilinear example, the center cell value 4.275 equals:",
+    "options": [
+      "A) Average of 4 and 6",
+      "B) Average of all four source cells",
+      "C) Maximum of four cells",
+      "D) Minimum of four cells"
+    ],
+    "correct": "B",
+    "explanation": "At the center equidistant from all four sources, bilinear produces their equal average: (4+6+3.1+4)/4 = 4.275."
+  },
+  {
+    "type": "mcq",
+    "question": "For the SCS CN method, what does S represent?",
+    "options": [
+      "A) Slope",
+      "B) Soil type",
+      "C) Retention parameter",
+      "D) Stream order"
+    ],
+    "correct": "C",
+    "explanation": "S = retention parameter = 25400/CN - 254 (in mm)."
+  },
+  {
+    "type": "mcq",
+    "question": "Initial abstraction in SCS CN method is:",
+    "options": [
+      "A) Ia = S",
+      "B) Ia = 0.2 × S",
+      "C) Ia = 0.5 × S",
+      "D) Ia = 2 × S"
+    ],
+    "correct": "B",
+    "explanation": "Ia = 0.2 × S (initial abstraction = 20% of retention)."
+  },
+  {
+    "type": "mcq",
+    "question": "Manning's equation for velocity involves:",
+    "options": [
+      "A) Only slope",
+      "B) R^(2/3) and S^(1/2)",
+      "C) Only roughness",
+      "D) Cell size"
+    ],
+    "correct": "B",
+    "explanation": "V = (1/n) × R^(2/3) × S^(1/2)."
+  },
+  {
+    "type": "mcq",
+    "question": "Cell Statistics tool computes:",
+    "options": [
+      "A) Spatial statistics",
+      "B) Cell-by-cell statistics across multiple input grids",
+      "C) Network statistics",
+      "D) Attribute table statistics"
+    ],
+    "correct": "B",
+    "explanation": "At each cell: mean, max, min, range, std dev, sum across a stack of input rasters."
+  },
+  {
+    "type": "mcq",
+    "question": "In QGIS, the equivalent of ArcGIS Pro's Cell Statistics is:",
+    "options": [
+      "A) Raster Calculator only",
+      "B) GRASS r.series",
+      "C) Vector statistics",
+      "D) Summary Statistics"
+    ],
+    "correct": "B",
+    "explanation": "GRASS r.series computes cell-by-cell statistics across multiple rasters."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'false resolution problem' means:",
+    "options": [
+      "A) Resolution is too high",
+      "B) Resampled data looks fine-resolution but contains coarse information",
+      "C) The CRS is wrong",
+      "D) NODATA is incorrectly handled"
+    ],
+    "correct": "B",
+    "explanation": "A 1km precipitation grid resampled to 30m looks fine but information content stays at 1km."
+  },
+  {
+    "type": "mcq",
+    "question": "The 'silent resampling problem' means:",
+    "options": [
+      "A) Resampling happens without warning when inputs mismatch",
+      "B) Resampling is too loud",
+      "C) Resampling causes errors",
+      "D) Resampling is impossible"
+    ],
+    "correct": "A",
+    "explanation": "Software resamples silently without telling you which method was used or what was discarded."
+  },
+  {
+    "type": "mcq",
+    "question": "Integer truncation in raster output means:",
+    "options": [
+      "A) Values are rounded correctly",
+      "B) Decimal portions are silently dropped",
+      "C) Values are multiplied",
+      "D) Format is changed"
+    ],
+    "correct": "B",
+    "explanation": "If output is stored as integer, 1.775 becomes 1 or 2 — potentially biasing total runoff."
+  },
+  {
+    "type": "mcq",
+    "question": "In geographic coordinates at 47°N latitude, a '0.001 degree' cell is:",
+    "options": [
+      "A) Square (equal in x and y)",
+      "B) Wider in east-west than north-south",
+      "C) Narrower in east-west than north-south",
+      "D) Circular"
+    ],
+    "correct": "C",
+    "explanation": "~111m N-S but ~75m E-W at 47°N due to meridian convergence."
+  },
+  {
+    "type": "mcq",
+    "question": "The complete raster calculation workflow has how many steps?",
+    "options": [
+      "A) 3",
+      "B) 5",
+      "C) 7",
+      "D) 9"
+    ],
+    "correct": "D",
+    "explanation": "9 steps: Define question, Assemble inputs, Inspect, Choose geometry, Reconcile, Verify reconciliation, Calculate, Verify output, Document."
+  },
+  {
+    "type": "mcq",
+    "question": "Which step should come FIRST in the workflow?",
+    "options": [
+      "A) Perform the calculation",
+      "B) Define the question",
+      "C) Choose the cell size",
+      "D) Resample inputs"
+    ],
+    "correct": "B",
+    "explanation": "Step 1: Define the question — what quantity, what formula, what inputs."
+  },
+  {
+    "type": "mcq",
+    "question": "The inspection checklist for inputs includes:",
+    "options": [
+      "A) Only CRS",
+      "B) CRS, cell size, extent, data type, NODATA, value range, bands",
+      "C) Only cell size and extent",
+      "D) Only format and compression"
+    ],
+    "correct": "B",
+    "explanation": "Seven properties must be checked for every input raster."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Zala catchment example, the precipitation source is:",
+    "options": [
+      "A) USGS radar",
+      "B) OMSZ radar composite at 1 km",
+      "C) GPM/IMERG",
+      "D) ERA5"
+    ],
+    "correct": "B",
+    "explanation": "OMSZ (Hungarian Met Service) provides 1 km radar composites in EOV projection."
+  },
+  {
+    "type": "mcq",
+    "question": "AGROTOPO in the Zala example provides:",
+    "options": [
+      "A) DEM data",
+      "B) Soil hydrologic properties at 100m",
+      "C) Stream network",
+      "D) Land cover"
+    ],
+    "correct": "B",
+    "explanation": "AGROTOPO digital soil map of Hungary, rasterized at 100m."
+  },
+  {
+    "type": "mcq",
+    "question": "The Zala example identifies three reconciliation issues:",
+    "options": [
+      "A) Format, compression, bands",
+      "B) CRS mismatch, cell size mismatch, extent differences",
+      "C) NODATA, data type, symbology",
+      "D) File size, naming, folder structure"
+    ],
+    "correct": "B",
+    "explanation": "EOV vs ETRS89/LAEA projection, 1km vs 100m, and different coverage extents."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Zala example, which CRS is the natural choice for national analysis?",
+    "options": [
+      "A) ETRS89/LAEA",
+      "B) WGS84",
+      "C) EOV",
+      "D) UTM Zone 33N"
+    ],
+    "correct": "C",
+    "explanation": "EOV is the natural choice for national analysis in Hungary."
+  },
+  {
+    "type": "mcq",
+    "question": "Cloud-based map algebra (GEE) differs from desktop in:",
+    "options": [
+      "A) Mathematical principles",
+      "B) Scale — continental/global instead of local",
+      "C) NODATA handling",
+      "D) Resampling methods"
+    ],
+    "correct": "B",
+    "explanation": "Same principles but cloud enables continental/global scale that desktop cannot handle."
+  },
+  {
+    "type": "mcq",
+    "question": "Which cloud platform focuses on Python ecosystem integration?",
+    "options": [
+      "A) GEE",
+      "B) Microsoft Planetary Computer",
+      "C) ArcGIS Online",
+      "D) OpenTopography"
+    ],
+    "correct": "B",
+    "explanation": "Planetary Computer integrates with xarray, dask, rasterio."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximate file size for 32-bit float at 10m over 10,000 km² watershed:",
+    "options": [
+      "A) 4 MB",
+      "B) 40 MB",
+      "C) 400 MB",
+      "D) 4 GB"
+    ],
+    "correct": "C",
+    "explanation": "100 million cells × 4 bytes = 400 MB."
+  },
+  {
+    "type": "mcq",
+    "question": "Halving cell size from 100m to 50m increases computation by:",
+    "options": [
+      "A) 2×",
+      "B) 4×",
+      "C) 8×",
+      "D) 16×"
+    ],
+    "correct": "B",
+    "explanation": "(100/50)² = 4× more cells and computation."
+  },
+  {
+    "type": "mcq",
+    "question": "For a 10,000 km² watershed at 1 km, how many cells?",
+    "options": [
+      "A) 100",
+      "B) 1,000",
+      "C) 10,000",
+      "D) 100,000"
+    ],
+    "correct": "C",
+    "explanation": "1 km cells cover 1 km² each, so 10,000 cells."
+  },
+  {
+    "type": "mcq",
+    "question": "The OMSZ radar composite for Hungary uses which projection?",
+    "options": [
+      "A) WGS84",
+      "B) UTM 34N",
+      "C) HD72/EOV (EPSG:23700)",
+      "D) ETRS89/LAEA"
+    ],
+    "correct": "C",
+    "explanation": "Hungarian Meteorological Service products use the national EOV projection."
+  },
+  {
+    "type": "mcq",
+    "question": "CORINE land cover for the Zala example uses which projection?",
+    "options": [
+      "A) EOV",
+      "B) WGS84",
+      "C) ETRS89/LAEA (EPSG:3035)",
+      "D) UTM 33N"
+    ],
+    "correct": "C",
+    "explanation": "CORINE is distributed in ETRS89/LAEA projection."
+  },
+  {
+    "type": "mcq",
+    "question": "The recommended reconciliation sequence starts with:",
+    "options": [
+      "A) Resample first",
+      "B) Project to common CRS first",
+      "C) Set snap raster first",
+      "D) Calculate first"
+    ],
+    "correct": "B",
+    "explanation": "Step 1: Project all inputs to common projected CRS."
+  },
+  {
+    "type": "mcq",
+    "question": "After reconciliation, which tool verifies correct overlay?",
+    "options": [
+      "A) Raster Calculator",
+      "B) Explore/Identify tool",
+      "C) ModelBuilder",
+      "D) Summary Statistics"
+    ],
+    "correct": "B",
+    "explanation": "The Explore tool checks values at locations across all visible layers."
+  },
+  {
+    "type": "mcq",
+    "question": "For complex expressions, the recommended approach is:",
+    "options": [
+      "A) Write everything in one expression",
+      "B) Build incrementally with intermediate results",
+      "C) Skip verification",
+      "D) Use default settings"
+    ],
+    "correct": "B",
+    "explanation": "Build in stages and verify each intermediate result."
+  },
+  {
+    "type": "mcq",
+    "question": "The output verification checklist includes:",
+    "options": [
+      "A) Only visual inspection",
+      "B) Spot-check values, check range, check pattern, compare with known data",
+      "C) Only file size check",
+      "D) Only CRS verification"
+    ],
+    "correct": "B",
+    "explanation": "Four verification steps ensure output quality."
+  },
+  {
+    "type": "mcq",
+    "question": "Arithmetic operations in map algebra include:",
+    "options": [
+      "A) Only addition and subtraction",
+      "B) Addition, subtraction, multiplication, division, exponentiation",
+      "C) Only logical operations",
+      "D) Only spatial operations"
+    ],
+    "correct": "B",
+    "explanation": "All basic arithmetic plus power/exponentiation."
+  },
+  {
+    "type": "mcq",
+    "question": "Boolean comparison 'elevation > 500' produces:",
+    "options": [
+      "A) Elevation values",
+      "B) 1 where true, 0 where false",
+      "C) NODATA everywhere",
+      "D) The value 500"
+    ],
+    "correct": "B",
+    "explanation": "Comparisons produce boolean grids: 1 (true) or 0 (false)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mathematical functions available in Raster Calculator include:",
+    "options": [
+      "A) Only Abs and Sqrt",
+      "B) Abs, Sqrt, Log, Exp, Sin, Cos, Int, Round, and more",
+      "C) No mathematical functions",
+      "D) Only statistical functions"
+    ],
+    "correct": "B",
+    "explanation": "Comprehensive math functions enable any physical equation implementation."
+  },
+  {
+    "type": "mcq",
+    "question": "EU-SoilHydroGrids provides what data?",
+    "options": [
+      "A) Stream networks",
+      "B) Soil hydrological properties for Europe",
+      "C) DEM data",
+      "D) Weather forecasts"
+    ],
+    "correct": "B",
+    "explanation": "EU-SoilHydroGrids provides gridded soil properties for map algebra."
+  },
+  {
+    "type": "mcq",
+    "question": "gSSURGO provides what for the US?",
+    "options": [
+      "A) Stream gauges",
+      "B) Gridded soil data at 10m",
+      "C) Satellite imagery",
+      "D) Weather radar"
+    ],
+    "correct": "B",
+    "explanation": "gSSURGO: gridded SSURGO soil data at 10m for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "MRMS precipitation data resolution is:",
+    "options": [
+      "A) 250m",
+      "B) 1 km",
+      "C) 4 km",
+      "D) 10 km"
+    ],
+    "correct": "B",
+    "explanation": "MRMS: 1 km real-time radar precipitation for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "E-OBS gridded observations cover:",
+    "options": [
+      "A) Only Hungary",
+      "B) All of Europe",
+      "C) Global",
+      "D) Only Scandinavia"
+    ],
+    "correct": "B",
+    "explanation": "E-OBS: European daily gridded observations at 0.1 degree."
+  },
+  {
+    "type": "mcq",
+    "question": "The Copernicus Data Space Ecosystem provides processing through:",
+    "options": [
+      "A) Desktop downloads only",
+      "B) JupyterHub environments",
+      "C) Mobile apps only",
+      "D) Email attachments"
+    ],
+    "correct": "B",
+    "explanation": "JupyterHub environments enable cloud-based processing."
+  },
+  {
+    "type": "mcq",
+    "question": "GLEAM provides what data globally?",
+    "options": [
+      "A) DEM",
+      "B) Evapotranspiration at 0.25 degree",
+      "C) Stream gauges",
+      "D) Soil classification"
+    ],
+    "correct": "B",
+    "explanation": "GLEAM: Global Land Evaporation Amsterdam Model at 0.25 degree."
+  },
+  {
+    "type": "mcq",
+    "question": "Daymet provides climate data for:",
+    "options": [
+      "A) Europe",
+      "B) Global",
+      "C) North America at 1 km daily",
+      "D) Asia only"
+    ],
+    "correct": "C",
+    "explanation": "Daymet: 1 km daily climate data for North America."
+  },
+  {
+    "type": "mcq",
+    "question": "In Google Earth Engine, map algebra uses:",
+    "options": [
+      "A) SQL queries",
+      "B) image1.add(image2) syntax",
+      "C) Python pandas",
+      "D) Shapefiles"
+    ],
+    "correct": "B",
+    "explanation": "GEE uses ee.Image arithmetic like .add(), .subtract(), .multiply()."
+  },
+  {
+    "type": "mcq",
+    "question": "The boolean expression (\"slope\" > 10) & (\"soil_perm\" < 5) identifies:",
+    "options": [
+      "A) Flat permeable areas",
+      "B) Steep areas with low-permeability soils",
+      "C) Valley bottoms",
+      "D) Urban areas"
+    ],
+    "correct": "B",
+    "explanation": "AND of steep slope AND low permeability = high runoff risk areas."
+  },
+  {
+    "type": "mcq",
+    "question": "Con(\"slope\" > 15, 1, 0) creates:",
+    "options": [
+      "A) A slope grid",
+      "B) A binary mask of steep terrain",
+      "C) A NODATA grid",
+      "D) A hillshade"
+    ],
+    "correct": "B",
+    "explanation": "Con evaluates: where slope > 15 → 1 (steep), else → 0."
+  },
+  {
+    "type": "mcq",
+    "question": "NODATA × 0 in map algebra produces:",
+    "options": [
+      "A) 0",
+      "B) NODATA",
+      "C) 1",
+      "D) An error"
+    ],
+    "correct": "B",
+    "explanation": "NODATA propagates regardless of the operation, even × 0."
+  },
+  {
+    "type": "mcq",
+    "question": "The Con(IsNull(\"infiltration\"), 0, \"infiltration\") expression:",
+    "options": [
+      "A) Deletes all data",
+      "B) Replaces NODATA with zero",
+      "C) Multiplies by zero",
+      "D) Creates a mask"
+    ],
+    "correct": "B",
+    "explanation": "Replaces NODATA infiltration cells with zero — those cells generate maximum runoff."
+  },
+  {
+    "type": "mcq",
+    "question": "The Precipitation-Minus-Infiltration paradigm represents:",
+    "options": [
+      "A) A specific software tool",
+      "B) The conceptual core of distributed hydrological models",
+      "C) A data format",
+      "D) A coordinate system"
+    ],
+    "correct": "B",
+    "explanation": "Nearly every runoff method is a variant of 'rainfall minus losses equals runoff.'"
+  },
+  {
+    "type": "mcq",
+    "question": "R = max(P - L, 0) ensures:",
+    "options": [
+      "A) Maximum runoff",
+      "B) Runoff cannot be negative",
+      "C) All cells have runoff",
+      "D) Infiltration exceeds precipitation"
+    ],
+    "correct": "B",
+    "explanation": "The max function prevents negative runoff where losses exceed precipitation."
+  },
+  {
+    "type": "mcq",
+    "question": "If precipitation is at 1 km and soil data at 30 m, running the model at 30 m means:",
+    "options": [
+      "A) All inputs contribute at 30 m",
+      "B) Precipitation is smooth at 1 km while soil varies at 30 m",
+      "C) Soil data is degraded to 1 km",
+      "D) Results are invalid"
+    ],
+    "correct": "B",
+    "explanation": "Precipitation resampled to 30m is cosmetically fine but informationally at 1 km."
+  },
+  {
+    "type": "mcq",
+    "question": "At cell (1,2) in the NN vs bilinear comparison, the difference in runoff is:",
+    "options": [
+      "A) 0 mm",
+      "B) 0.5 mm",
+      "C) 1.0 mm",
+      "D) 2.0 mm"
+    ],
+    "correct": "C",
+    "explanation": "NN gives 1.0 mm runoff; bilinear gives 2.0 mm — a 1.0 mm (50%) discrepancy."
+  },
+  {
+    "type": "mcq",
+    "question": "For Hungary, EPSG:25834 refers to:",
+    "options": [
+      "A) EOV",
+      "B) ETRS89/TM34",
+      "C) WGS84",
+      "D) UTM 33N"
+    ],
+    "correct": "B",
+    "explanation": "EPSG:25834 is ETRS89/TM34, suitable for EU-wide integration."
+  },
+  {
+    "type": "mcq",
+    "question": "The recommended output raster format for map algebra is:",
+    "options": [
+      "A) ESRI Grid",
+      "B) ASCII Grid",
+      "C) GeoTIFF (.tif)",
+      "D) Shapefile"
+    ],
+    "correct": "C",
+    "explanation": "GeoTIFF is recommended for interoperability, compression, and long names."
+  },
+  {
+    "type": "mcq",
+    "question": "Table 6.10 shows that going from 1 km to 10 m resolution over 10,000 km²:",
+    "options": [
+      "A) Increases computation by 10×",
+      "B) Increases computation by 100×",
+      "C) Increases computation by 1,000×",
+      "D) Increases computation by 10,000×"
+    ],
+    "correct": "D",
+    "explanation": "From 10,000 cells to 100,000,000 cells = 10,000× increase."
+  },
+  {
+    "type": "mcq",
+    "question": "The number of cells for a 10,000 km² watershed at 30 m is approximately:",
+    "options": [
+      "A) 1 million",
+      "B) 11 million",
+      "C) 100 million",
+      "D) 1 billion"
+    ],
+    "correct": "B",
+    "explanation": "~11,111,111 cells at 30m resolution."
+  },
+  {
+    "type": "mcq",
+    "question": "SSEBop provides what data for the US?",
+    "options": [
+      "A) Soil properties",
+      "B) Evapotranspiration at 1 km",
+      "C) Stream discharge",
+      "D) Land cover"
+    ],
+    "correct": "B",
+    "explanation": "SSEBop: operational evapotranspiration at 1 km for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "SoilGrids provides global soil properties at:",
+    "options": [
+      "A) 30 m",
+      "B) 100 m",
+      "C) 250 m",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "SoilGrids: 250m global soil property grids."
+  },
+  {
+    "type": "mcq",
+    "question": "HWSD stands for:",
+    "options": [
+      "A) Hydrological Water System Database",
+      "B) Harmonized World Soil Database",
+      "C) Hungarian Watershed Survey Data",
+      "D) High-resolution Water Surface DEM"
+    ],
+    "correct": "B",
+    "explanation": "HWSD v2.0 provides global soil data."
+  },
+  {
+    "type": "mcq",
+    "question": "ESA WorldCover provides land cover at:",
+    "options": [
+      "A) 30 m",
+      "B) 100 m",
+      "C) 10 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "ESA WorldCover: 10m global land cover from Sentinel-2."
+  },
+  {
+    "type": "mcq",
+    "question": "The MODIS ET product resolution is:",
+    "options": [
+      "A) 30 m",
+      "B) 100 m",
+      "C) 500 m",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "MODIS MOD16 evapotranspiration at 500m."
+  },
+  {
+    "type": "mcq",
+    "question": "Urban Atlas provides land cover for European cities at:",
+    "options": [
+      "A) 100 m",
+      "B) 30 m",
+      "C) 10 m",
+      "D) 2.5 m"
+    ],
+    "correct": "D",
+    "explanation": "Urban Atlas: 2.5m land cover for European cities."
+  },
+  {
+    "type": "mcq",
+    "question": "LUCAS provides what type of data for the EU?",
+    "options": [
+      "A) DEM data",
+      "B) Land use/cover area frame survey (topsoil data)",
+      "C) River networks",
+      "D) Weather data"
+    ],
+    "correct": "B",
+    "explanation": "LUCAS: EU topsoil data from land use surveys."
+  },
+  {
+    "type": "mcq",
+    "question": "Copernicus Global Land Cover operates at:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 100 m",
+      "D) 250 m"
+    ],
+    "correct": "C",
+    "explanation": "Copernicus Global Land Cover: 100m global coverage."
+  },
+  {
+    "type": "mcq",
+    "question": "PRISM provides US precipitation at:",
+    "options": [
+      "A) 100 m",
+      "B) 800 m",
+      "C) 4 km",
+      "D) 30 km"
+    ],
+    "correct": "B",
+    "explanation": "PRISM: 800m monthly precipitation climatology for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "The step 'Document everything' is:",
+    "options": [
+      "A) Step 1",
+      "B) Step 5",
+      "C) Step 7",
+      "D) Step 9"
+    ],
+    "correct": "D",
+    "explanation": "Step 9: Document formula, inputs, reconciliation choices, settings, and results."
+  },
+  {
+    "type": "mcq",
+    "question": "gridMET provides US climate data at:",
+    "options": [
+      "A) 800 m",
+      "B) 4 km",
+      "C) 10 km",
+      "D) 30 km"
+    ],
+    "correct": "B",
+    "explanation": "gridMET: 4 km gridded meteorological data for the US."
+  },
+  {
+    "type": "mcq",
+    "question": "CHIRPS precipitation data has what resolution?",
+    "options": [
+      "A) 1 km",
+      "B) 0.05 degree (~5 km)",
+      "C) 0.25 degree",
+      "D) 0.5 degree"
+    ],
+    "correct": "B",
+    "explanation": "CHIRPS: 0.05 degree (~5 km) daily precipitation globally."
+  },
+  {
+    "type": "mcq",
+    "question": "The ESA CCI Land Cover operates at:",
+    "options": [
+      "A) 10 m",
+      "B) 30 m",
+      "C) 300 m",
+      "D) 1 km"
+    ],
+    "correct": "C",
+    "explanation": "ESA CCI-LC: 300m global land cover."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra was formalized by Dana Tomlin at Yale in the early 1980s.",
+    "correct": true,
+    "explanation": "Published in his 1990 book."
+  },
+  {
+    "type": "true_false",
+    "question": "Local operations involve interaction between neighboring cells.",
+    "correct": false,
+    "explanation": "Local operations compute each cell independently; focal operations use neighbors."
+  },
+  {
+    "type": "true_false",
+    "question": "The Raster Calculator in ArcGIS Pro is in the Spatial Analyst toolbox.",
+    "correct": true,
+    "explanation": "Under Map Algebra toolset."
+  },
+  {
+    "type": "true_false",
+    "question": "When inputs have different cell sizes, the default output uses the finest resolution.",
+    "correct": false,
+    "explanation": "Default is the coarsest (maximum) cell size."
+  },
+  {
+    "type": "true_false",
+    "question": "The default analysis extent is the union of all inputs.",
+    "correct": false,
+    "explanation": "Default is the intersection."
+  },
+  {
+    "type": "true_false",
+    "question": "Nearest-neighbor resampling can create intermediate values between input categories.",
+    "correct": false,
+    "explanation": "NN always preserves exact original values."
+  },
+  {
+    "type": "true_false",
+    "question": "Bilinear interpolation is appropriate for categorical land cover data.",
+    "correct": false,
+    "explanation": "Bilinear creates meaningless intermediate categories. Use nearest-neighbor."
+  },
+  {
+    "type": "true_false",
+    "question": "NODATA propagates: NODATA in any input makes the output NODATA.",
+    "correct": true,
+    "explanation": "Fundamental NODATA propagation rule."
+  },
+  {
+    "type": "true_false",
+    "question": "Division by zero in raster calculations produces zero.",
+    "correct": false,
+    "explanation": "Division by zero produces NODATA."
+  },
+  {
+    "type": "true_false",
+    "question": "The snap raster ensures output cells align with a reference grid.",
+    "correct": true,
+    "explanation": "Critical for consistency across chained operations."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF is the recommended output format for raster calculations.",
+    "correct": true,
+    "explanation": "Use .tif extension for interoperable, compressed output."
+  },
+  {
+    "type": "true_false",
+    "question": "An analysis mask restricts calculations to a specific geographic area.",
+    "correct": true,
+    "explanation": "Cells outside the mask receive NODATA."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra operations are embarrassingly parallel.",
+    "correct": true,
+    "explanation": "Each cell is independent, enabling massive parallelization."
+  },
+  {
+    "type": "true_false",
+    "question": "The SCS Curve Number method can be implemented entirely through map algebra.",
+    "correct": true,
+    "explanation": "S = 25400/CN - 254, Ia = 0.2S, Q = (P-Ia)²/(P-Ia+S) — all cell-by-cell."
+  },
+  {
+    "type": "true_false",
+    "question": "Cubic convolution can produce values outside the input data range.",
+    "correct": true,
+    "explanation": "Overshoot is possible, problematic for bounded physical quantities."
+  },
+  {
+    "type": "true_false",
+    "question": "Resampling a 1 km grid to 30 m creates true 30 m information.",
+    "correct": false,
+    "explanation": "Information content remains at 1 km; the grid is cosmetically finer."
+  },
+  {
+    "type": "true_false",
+    "question": "The precipitation-minus-infiltration paradigm is only a textbook example.",
+    "correct": false,
+    "explanation": "It is the conceptual core of how distributed hydrological models work."
+  },
+  {
+    "type": "true_false",
+    "question": "Cell Statistics computes statistics at each cell across multiple input grids.",
+    "correct": true,
+    "explanation": "Mean, max, min, range, std dev across a stack of grids."
+  },
+  {
+    "type": "true_false",
+    "question": "Cloud-based map algebra uses different mathematical principles than desktop.",
+    "correct": false,
+    "explanation": "Same principles; only the scale changes."
+  },
+  {
+    "type": "true_false",
+    "question": "The coordinate system trap warns against calculations in geographic coordinates.",
+    "correct": true,
+    "explanation": "Cells aren't square in degrees; areas can't be computed directly."
+  },
+  {
+    "type": "true_false",
+    "question": "The integer truncation problem can silently produce wrong results.",
+    "correct": true,
+    "explanation": "1.775 stored as integer becomes 1 or 2."
+  },
+  {
+    "type": "true_false",
+    "question": "The 9-step workflow is only needed for complex calculations.",
+    "correct": false,
+    "explanation": "Even simple calculations benefit from the disciplined approach."
+  },
+  {
+    "type": "true_false",
+    "question": "For continuous data like precipitation, bilinear produces more realistic results than NN.",
+    "correct": true,
+    "explanation": "Bilinear creates smooth transitions instead of blocky discontinuities."
+  },
+  {
+    "type": "true_false",
+    "question": "The Con function can be used for multi-criteria runoff risk classification.",
+    "correct": true,
+    "explanation": "Chaining Con expressions enables complex conditional logic."
+  },
+  {
+    "type": "true_false",
+    "question": "NODATA × 0 = 0 in map algebra.",
+    "correct": false,
+    "explanation": "NODATA × anything = NODATA, even × 0."
+  },
+  {
+    "type": "true_false",
+    "question": "The Explore tool can show values from all visible layers at a clicked location.",
+    "correct": true,
+    "explanation": "Essential for verifying raster calculations."
+  },
+  {
+    "type": "true_false",
+    "question": "Setting analysis cell size to 'Minimum of Inputs' produces the finest output.",
+    "correct": true,
+    "explanation": "Minimum = finest cell size among inputs."
+  },
+  {
+    "type": "true_false",
+    "question": "The OMSZ provides Hungarian weather radar data.",
+    "correct": true,
+    "explanation": "Hungarian Meteorological Service provides radar composites."
+  },
+  {
+    "type": "true_false",
+    "question": "AGROTOPO is a stream network dataset.",
+    "correct": false,
+    "explanation": "AGROTOPO is Hungary's digital soil map."
+  },
+  {
+    "type": "true_false",
+    "question": "CORINE land cover is distributed in EOV projection.",
+    "correct": false,
+    "explanation": "CORINE uses ETRS89/LAEA (EPSG:3035)."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zala River is the largest tributary of Lake Balaton.",
+    "correct": true,
+    "explanation": "The chapter's Hungarian example."
+  },
+  {
+    "type": "true_false",
+    "question": "In QGIS, boolean expressions produce 1 (true) or 0 (false).",
+    "correct": true,
+    "explanation": "Used for creating masks by multiplying boolean results."
+  },
+  {
+    "type": "true_false",
+    "question": "Manning's equation can be implemented as a raster calculator expression.",
+    "correct": true,
+    "explanation": "V = (1/n) × R^(2/3) × S^(1/2) applied cell by cell."
+  },
+  {
+    "type": "true_false",
+    "question": "Google Earth Engine can compute map algebra on petabyte-scale data.",
+    "correct": true,
+    "explanation": "Cloud computation enables continental/global scale."
+  },
+  {
+    "type": "true_false",
+    "question": "The arcpy.sa module provides Python map algebra in ArcGIS Pro.",
+    "correct": true,
+    "explanation": "Rasters used directly in mathematical expressions."
+  },
+  {
+    "type": "true_false",
+    "question": "R = max(P - L, 0) allows negative runoff values.",
+    "correct": false,
+    "explanation": "The max function ensures non-negative runoff."
+  },
+  {
+    "type": "true_false",
+    "question": "Focal operations are the focus of Chapter 6.",
+    "correct": false,
+    "explanation": "Chapter 6 focuses on local operations; focal is covered in Chapter 7."
+  },
+  {
+    "type": "true_false",
+    "question": "Step 5 of the workflow is 'Reconcile the inputs.'",
+    "correct": true,
+    "explanation": "Project, resample, snap, clip to prepare inputs."
+  },
+  {
+    "type": "true_false",
+    "question": "The Cell Statistics tool is equivalent to zonal statistics.",
+    "correct": false,
+    "explanation": "Cell Statistics works across multiple grids at each cell; zonal works across zones within one grid."
+  },
+  {
+    "type": "true_false",
+    "question": "Extent mismatch can result in output covering a smaller area than expected.",
+    "correct": true,
+    "explanation": "If one input has limited extent, intersection default clips the output."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS has a centralized environment settings system like ArcGIS Pro.",
+    "correct": false,
+    "explanation": "QGIS configures settings per-tool, not centrally."
+  },
+  {
+    "type": "true_false",
+    "question": "The false resolution problem means all inputs contributed at the output resolution.",
+    "correct": false,
+    "explanation": "Resampled inputs retain their original information content."
+  },
+  {
+    "type": "true_false",
+    "question": "Verification feedback loops exist from Steps 6→5 and 8→7.",
+    "correct": true,
+    "explanation": "Fix issues discovered during verification and re-run."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra can implement arbitrary physical equations.",
+    "correct": true,
+    "explanation": "Any equation expressible algebraically can be applied cell by cell."
+  },
+  {
+    "type": "true_false",
+    "question": "The US National Water Model uses grid-based calculations.",
+    "correct": true,
+    "explanation": "Modern flood forecasting relies fundamentally on grid-based map algebra."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS stands for European Flood Awareness System.",
+    "correct": true,
+    "explanation": "Continental-scale flood forecasting using gridded data."
+  },
+  {
+    "type": "true_false",
+    "question": "The coordinate system should be geographic for hydrological calculations.",
+    "correct": false,
+    "explanation": "Projected CRS with metric units is required."
+  },
+  {
+    "type": "true_false",
+    "question": "EPSG:32634 is appropriate for eastern Hungary.",
+    "correct": true,
+    "explanation": "WGS84/UTM Zone 34N covers eastern Hungary."
+  },
+  {
+    "type": "true_false",
+    "question": "The r.mapcalc tool in GRASS provides map algebra for QGIS users.",
+    "correct": true,
+    "explanation": "GRASS r.mapcalc offers sophisticated expression languages."
+  },
+  {
+    "type": "true_false",
+    "question": "Python rasterio library enables map algebra outside GIS software.",
+    "correct": true,
+    "explanation": "Combined with NumPy, rasterio provides standalone raster computation."
+  },
+  {
+    "type": "true_false",
+    "question": "For a single one-off calculation, scripting is more efficient than the Raster Calculator GUI.",
+    "correct": false,
+    "explanation": "For one-off calculations, the interactive Raster Calculator is fastest."
+  },
+  {
+    "type": "true_false",
+    "question": "At 47°N, a 0.001° cell is approximately square.",
+    "correct": false,
+    "explanation": "~111m N-S but ~75m E-W at 47°N."
+  },
+  {
+    "type": "true_false",
+    "question": "The Abs function returns absolute values cell by cell.",
+    "correct": true,
+    "explanation": "Standard mathematical function in raster calculators."
+  },
+  {
+    "type": "true_false",
+    "question": "Int() and Float() functions convert between data types.",
+    "correct": true,
+    "explanation": "Type conversion functions available in map algebra."
+  },
+  {
+    "type": "true_false",
+    "question": "The comparison 'landcover == 42' selects cells with Deciduous Forest.",
+    "correct": true,
+    "explanation": "NLCD code 42 = Deciduous Forest; produces boolean grid."
+  },
+  {
+    "type": "true_false",
+    "question": "NOT is a valid logical operator in map algebra.",
+    "correct": true,
+    "explanation": "AND, OR, NOT combine boolean grids."
+  },
+  {
+    "type": "true_false",
+    "question": "The rioxarray library extends xarray for geospatial raster operations.",
+    "correct": true,
+    "explanation": "Enables map algebra with CRS-aware xarray datasets."
+  },
+  {
+    "type": "true_false",
+    "question": "Dask enables cloud-scale parallel computation for raster analysis.",
+    "correct": true,
+    "explanation": "Part of the Python ecosystem for large-scale processing."
+  },
+  {
+    "type": "true_false",
+    "question": "Halving cell size increases computation time by approximately 4×.",
+    "correct": true,
+    "explanation": "Inverse square: 2² = 4× more cells."
+  },
+  {
+    "type": "true_false",
+    "question": "The output cell size should not be finer than the coarsest input.",
+    "correct": true,
+    "explanation": "Finer output from coarse input adds no information."
+  },
+  {
+    "type": "true_false",
+    "question": "The SCS retention formula uses S = 25400/CN - 254 in millimetres.",
+    "correct": true,
+    "explanation": "Standard SCS formulation in metric units."
+  },
+  {
+    "type": "true_false",
+    "question": "A 32-bit float raster stores values with ~15 significant digits.",
+    "correct": false,
+    "explanation": "32-bit provides ~7 digits; 64-bit provides ~15."
+  },
+  {
+    "type": "true_false",
+    "question": "SSURGO is a US soil survey dataset.",
+    "correct": true,
+    "explanation": "Soil Survey Geographic database for the US."
+  },
+  {
+    "type": "true_false",
+    "question": "WorldCover at 10m is finer than NLCD at 30m.",
+    "correct": true,
+    "explanation": "ESA WorldCover: 10m; NLCD: 30m."
+  },
+  {
+    "type": "true_false",
+    "question": "A multi-step hydrological simulation running hourly for 30 years is negligibly affected by cell size.",
+    "correct": false,
+    "explanation": "At hourly steps over 30 years, 100m vs 10m can be minutes vs days of computation."
+  },
+  {
+    "type": "true_false",
+    "question": "Step 3 of the workflow is 'Inspect every input.'",
+    "correct": true,
+    "explanation": "Verify CRS, cell size, extent, data type, NODATA, value range, bands."
+  },
+  {
+    "type": "true_false",
+    "question": "The inspection-first workflow prevents subtle raster analysis errors.",
+    "correct": true,
+    "explanation": "The main defense against silent resampling and other problems."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Map algebra was formalized by Dana _____ at Yale in the 1980s.",
+    "correct": "Tomlin",
+    "explanation": "Published in his 1990 book."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Tomlin classified operations as local, focal, zonal, and _____.",
+    "correct": "global",
+    "explanation": "Four categories of map algebra operations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Calculator tool performs map algebra in ArcGIS Pro.",
+    "correct": "Raster",
+    "explanation": "In Spatial Analyst > Map Algebra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In QGIS, raster layers are referenced as layername@_____.",
+    "correct": "1",
+    "explanation": "Band number appended to layer name."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The water balance equation: P = ET + R + _____.",
+    "correct": "ΔS",
+    "explanation": "Change in storage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Default output cell size uses the _____ (coarsest) input.",
+    "correct": "maximum",
+    "explanation": "Can be overridden to minimum or specific layer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Default analysis extent is the _____ of all inputs.",
+    "correct": "intersection",
+    "explanation": "Only where all inputs overlap."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The default resampling method is _____.",
+    "correct": "nearest-neighbor",
+    "explanation": "Preserves exact values but creates blocky output."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ raster ensures output cell alignment.",
+    "correct": "snap",
+    "explanation": "Reference grid for alignment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "An analysis _____ restricts calculation to a specific area.",
+    "correct": "mask",
+    "explanation": "Cells outside receive NODATA."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NODATA in any input makes the _____ NODATA.",
+    "correct": "output",
+    "explanation": "NODATA propagation rule."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Division by zero produces _____ in raster calculations.",
+    "correct": "NODATA",
+    "explanation": "Mathematically undefined result."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function implements if-then-else logic in ArcGIS Pro.",
+    "correct": "Con",
+    "explanation": "Conditional cell-by-cell evaluation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SCS retention parameter: S = 25400/CN - _____.",
+    "correct": "254",
+    "explanation": "Standard SCS formula in mm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Initial abstraction: Ia = _____ × S.",
+    "correct": "0.2",
+    "explanation": "20% of retention parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's velocity: V = (1/n) × R^(2/3) × S^(_____)",
+    "correct": "1/2",
+    "explanation": "Slope to the power of 0.5."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Statistics tool computes per-cell statistics across multiple grids.",
+    "correct": "Cell",
+    "explanation": "Mean, max, min across a stack of rasters."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Bilinear interpolation uses a _____×2 neighborhood.",
+    "correct": "2",
+    "explanation": "Four surrounding source cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cubic convolution uses a _____×4 neighborhood.",
+    "correct": "4",
+    "explanation": "16 surrounding source cells."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For categorical data, use _____ resampling.",
+    "correct": "nearest-neighbor",
+    "explanation": "Preserves exact integer class values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For continuous data, use _____ interpolation.",
+    "correct": "bilinear",
+    "explanation": "Creates smooth transitions between values."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ resampling assigns the most common value when coarsening.",
+    "correct": "Majority",
+    "explanation": "Specialized for categorical data coarsening."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 'false _____' problem means resampled data looks finer than its information content.",
+    "correct": "resolution",
+    "explanation": "Cosmetically fine but informationally coarse."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 'silent _____' problem means resampling happens without user warning.",
+    "correct": "resampling",
+    "explanation": "Software doesn't alert to automatic resampling."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Integer _____ silently drops decimal portions from output.",
+    "correct": "truncation",
+    "explanation": "Can bias cumulative results."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In geographic coordinates at 47°N, cells are not _____.",
+    "correct": "square",
+    "explanation": "~111m N-S but ~75m E-W due to meridian convergence."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The complete workflow has _____ steps.",
+    "correct": "9",
+    "explanation": "Define → Assemble → Inspect → Choose → Reconcile → Verify → Calculate → Verify → Document."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 1 of the workflow: Define the _____.",
+    "correct": "question",
+    "explanation": "What quantity, formula, and inputs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 9: _____ everything.",
+    "correct": "Document",
+    "explanation": "Record formula, sources, choices, and results."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zala OMSZ radar uses _____ projection.",
+    "correct": "EOV",
+    "explanation": "Hungarian national projection EPSG:23700."
+  },
+  {
+    "type": "fill_blank",
+    "question": "AGROTOPO provides Hungarian _____ data.",
+    "correct": "soil",
+    "explanation": "Digital soil map rasterized at 100m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CORINE uses ETRS89/_____ projection (EPSG:3035).",
+    "correct": "LAEA",
+    "explanation": "Lambert Azimuthal Equal Area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The precipitation-minus-_____ paradigm drives distributed models.",
+    "correct": "infiltration",
+    "explanation": "Core concept: what falls minus what absorbs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R = max(P - L, _____) prevents negative runoff.",
+    "correct": "0",
+    "explanation": "Ensures non-negative output."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ algebra is the computational engine of spatial hydrology.",
+    "correct": "Map",
+    "explanation": "Chapter 6's central concept."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Boolean comparisons produce _____ (true) or 0 (false).",
+    "correct": "1",
+    "explanation": "Used for creating masks and binary classifications."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The arcpy._____ module provides Python map algebra in ArcGIS Pro.",
+    "correct": "sa",
+    "explanation": "Spatial Analyst Python module."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In GEE, map algebra uses ee._____ arithmetic.",
+    "correct": "Image",
+    "explanation": "Google Earth Engine image computation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRASS _____ provides map algebra in QGIS.",
+    "correct": "r.mapcalc",
+    "explanation": "GRASS raster calculator."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Runoff = _____ - Infiltration (simplest form).",
+    "correct": "Precipitation",
+    "explanation": "P - I = R."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ environment tab in ArcGIS Pro sets project-wide defaults.",
+    "correct": "Environments",
+    "explanation": "Under the Analysis tab on the ribbon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cell size should be _____ for water balance with 1 km precipitation and 30 m soils.",
+    "correct": "application-dependent",
+    "explanation": "30m for detailed models; 1 km for quick estimates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SetNull sets cells to _____ where a condition is true.",
+    "correct": "NODATA",
+    "explanation": "Explicit null assignment function."
+  },
+  {
+    "type": "fill_blank",
+    "question": "R = (P - Ia)² / (P - Ia + _____) is the SCS runoff equation.",
+    "correct": "S",
+    "explanation": "S = retention parameter."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ tool in QGIS is equivalent to Cell Statistics.",
+    "correct": "r.series",
+    "explanation": "GRASS tool for multi-raster cell statistics."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For Hungary, EPSG:_____ is ETRS89/TM34.",
+    "correct": "25834",
+    "explanation": "EU-wide integration projection."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Map algebra expressions reference layers in _____ marks in ArcGIS Pro.",
+    "correct": "quotation",
+    "explanation": "Layer names enclosed in quotes in expressions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Spot-check verification uses the _____ tool.",
+    "correct": "Explore",
+    "explanation": "Click to see all layer values at a location."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Log10 computes base-_____ logarithm.",
+    "correct": "10",
+    "explanation": "Standard mathematical function in raster calculators."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Water Model uses grid-based calculations for US flood forecasting.",
+    "correct": "National",
+    "explanation": "US NWM: operational distributed model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS stands for European _____ Awareness System.",
+    "correct": "Flood",
+    "explanation": "EU continental flood forecasting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "_____ Computer integrates with xarray, dask, rasterio.",
+    "correct": "Planetary",
+    "explanation": "Microsoft's cloud platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Copernicus _____ Space Ecosystem provides JupyterHub processing.",
+    "correct": "Data",
+    "explanation": "ESA/EU data platform."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SoilGrids provides global soil data at _____ m.",
+    "correct": "250",
+    "explanation": "Global gridded soil properties."
+  },
+  {
+    "type": "fill_blank",
+    "question": "gSSURGO provides US soil data at _____ m.",
+    "correct": "10",
+    "explanation": "Gridded SSURGO at 10m."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MRMS provides real-time radar precipitation at _____ km for the US.",
+    "correct": "1",
+    "explanation": "Multi-Radar Multi-Sensor system."
+  },
+  {
+    "type": "fill_blank",
+    "question": "MODIS ET operates at _____ m resolution.",
+    "correct": "500",
+    "explanation": "MOD16 evapotranspiration."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Urban Atlas provides _____ m land cover for European cities.",
+    "correct": "2.5",
+    "explanation": "High-resolution urban land cover."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HWSD stands for Harmonized World _____ Database.",
+    "correct": "Soil",
+    "explanation": "Global soil data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "ESA CCI Land Cover operates at _____ m.",
+    "correct": "300",
+    "explanation": "Climate Change Initiative land cover."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CHIRPS provides precipitation at _____ degree resolution.",
+    "correct": "0.05",
+    "explanation": "~5 km daily global precipitation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ Python library enables standalone raster computation.",
+    "correct": "rasterio",
+    "explanation": "Combined with NumPy for map algebra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SSEBop provides US _____ at 1 km.",
+    "correct": "evapotranspiration",
+    "explanation": "Operational ET product."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GLEAM provides global _____ at 0.25 degree.",
+    "correct": "evapotranspiration",
+    "explanation": "Amsterdam Model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Daymet provides _____ km daily climate data for North America.",
+    "correct": "1",
+    "explanation": "Daily gridded climate."
+  },
+  {
+    "type": "fill_blank",
+    "question": "gridMET operates at _____ km for the US.",
+    "correct": "4",
+    "explanation": "Gridded meteorological data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ framework in QGIS accesses GRASS and SAGA tools.",
+    "correct": "Processing",
+    "explanation": "Unified tool interface."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Complex expressions should be built _____ with intermediate verification.",
+    "correct": "incrementally",
+    "explanation": "Easier to identify which step introduces errors."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 4: Choose the target _____.",
+    "correct": "geometry",
+    "explanation": "Output CRS, cell size, and extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Projected CRS should use _____ units for hydrological calculations.",
+    "correct": "linear",
+    "explanation": "Metres or feet, not degrees."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ method in QGIS multiplies boolean results to create classified outputs.",
+    "correct": "boolean",
+    "explanation": "(condition) * value syntax."
+  },
+  {
+    "type": "fill_blank",
+    "question": "CARPATCLIM provides gridded climate for the _____ region.",
+    "correct": "Carpathian",
+    "explanation": "Regional climate dataset."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Sqrt function computes _____ root cell by cell.",
+    "correct": "square",
+    "explanation": "Mathematical function for Manning's equation etc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Power(grid, 2) computes the _____ of each cell value.",
+    "correct": "square",
+    "explanation": "Exponentiation function."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The recommended step before any calculation is _____ every input.",
+    "correct": "inspect",
+    "explanation": "Step 3 of the 9-step workflow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "After calculating, _____ the output is essential.",
+    "correct": "verify",
+    "explanation": "Step 8: check values, range, pattern, and known references."
+  },
+  {
+    "type": "fill_blank",
+    "question": "E-OBS covers Europe at _____ degree daily resolution.",
+    "correct": "0.1",
+    "explanation": "Gridded daily observations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Zala catchment analysis mask is the watershed _____.",
+    "correct": "boundary",
+    "explanation": "Polygon defining the active analysis area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the worked example, the precipitation grid is _____×2 at 150 m.",
+    "correct": "2",
+    "explanation": "4 cells total (2 rows, 2 columns)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the worked example, the infiltration grid is 3×_____ at 100 m.",
+    "correct": "3",
+    "explanation": "9 cells total (3 rows, 3 columns)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Raster _____ describes the number of stored data channels per cell.",
+    "correct": "bands",
+    "explanation": "Single-band for elevation; multi-band for satellite imagery."
+  },
+  {
+    "type": "fill_blank",
+    "question": "After reprojecting, _____ to common cell size.",
+    "correct": "resample",
+    "explanation": "Step 2 of reconciliation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "After resampling, _____ to a reference grid.",
+    "correct": "snap",
+    "explanation": "Step 3 of reconciliation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NLCD provides US land cover at _____ m resolution.",
+    "correct": "30",
+    "explanation": "National Land Cover Database."
+  },
+  {
+    "type": "essay",
+    "question": "Explain map algebra and its origins.",
+    "correct": "Map algebra, formalized by Dana Tomlin at Yale (1980s, book 1990), treats raster grids as variables in algebraic expressions. Cell-by-cell correspondence: row i, col j of input A operates with row i, col j of input B. Operations classified as local (cell-by-cell), focal (neighborhood), zonal (group summary), global (entire grid). Chapter 6 focuses on local operations — the computational engine of spatial hydrology.",
+    "explanation": "Section 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe why map algebra matters for distributed hydrology.",
+    "correct": "Hydrology is spatial: rainfall, soils, land cover vary across watersheds. The water balance (P=ET+R+ΔS) applied as grids produces spatially distributed runoff maps. Modern systems (US NWM, EFAS) use grid-based calculations from radar precipitation, satellite soil moisture, and forecast rainfall. Without map algebra, distributed modeling would be computationally intractable.",
+    "explanation": "Section 6.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the precipitation-minus-infiltration paradigm.",
+    "correct": "Nearly every runoff method is: what falls minus what ground absorbs = surface flow. R = max(P-L, 0). The paradigm encompasses simple empirical methods to physically-based models. Spatial implementation always reduces to map algebra: precipitation grid minus loss grid = runoff grid, cell by cell. The critical challenge is that input grids have different resolutions requiring reconciliation.",
+    "explanation": "Section 6.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the cell size reconciliation problem and why it matters.",
+    "correct": "Real-world inputs have different cell sizes (1km precipitation, 30m soils, 10m land cover). Before map algebra, grids must be reconciled. The choices—output cell size, resampling method, extent—fundamentally affect results. Wrong settings silently discard data, introduce bias, or produce inappropriate resolution. Understanding reconciliation is the most important practical skill in raster analysis.",
+    "explanation": "Section 6.4.1."
+  },
+  {
+    "type": "essay",
+    "question": "Walk through the default reconciliation behavior.",
+    "correct": "Default: output cell size = coarsest input; extent = intersection; nearest-neighbor resampling. In the example, 150m precipitation and 100m infiltration: output is 150m. Five of nine infiltration values are discarded. The result is correct given defaults but may not be physically appropriate—throwing away expensive data.",
+    "explanation": "Section 6.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Compare nearest-neighbor and bilinear resampling with the worked example.",
+    "correct": "At cell (1,2): NN assigns precipitation=4.0 (nearest cell), bilinear assigns 5.0 (average of 4 and 6). This causes 1.0mm runoff difference—50% discrepancy. For continuous data, bilinear is more realistic because precipitation varies smoothly, not in discontinuous blocks. NN creates physically implausible jumps at cell boundaries.",
+    "explanation": "Section 6.6.7."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three critical analysis environment parameters.",
+    "correct": "(1) Analysis extent: geographic bounds (default: intersection). (2) Cell size: output resolution (default: coarsest input). (3) Snap raster: cell alignment reference. These interact sequentially: extent determined first, then cell size, then alignment, then resampling applied, then mask, then expression evaluated. Understanding this sequence diagnoses unexpected results.",
+    "explanation": "Section 6.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the NODATA propagation rule and strategies for managing it.",
+    "correct": "If any input cell is NODATA, output is NODATA. Safe (prevents incomplete computation) but aggressive (one bad layer ruins everything). Strategies: fill gaps by interpolation before calculation, substitute defaults via Con(IsNull(...)), compute in stages to isolate NODATA, or accept and document gaps.",
+    "explanation": "Section 6.7."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete 9-step raster calculation workflow.",
+    "correct": "(1) Define question, (2) Assemble inputs, (3) Inspect every input (CRS, size, extent, type, NODATA, range, bands), (4) Choose target geometry, (5) Reconcile inputs (project, resample, snap, clip), (6) Verify reconciliation, (7) Calculate, (8) Verify output (spot-check, range, pattern, compare), (9) Document everything. Feedback loops: 6→5, 8→7.",
+    "explanation": "Section 6.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the false resolution problem.",
+    "correct": "Resampling 1km precipitation to 30m creates 30m cells but 1km information content. The output map looks like 30m resolution, but precipitation varies smoothly at 1km scale. A reader might assume all inputs contributed at 30m. You must understand and document this: the precipitation component is smooth at 1km while soil/land cover vary at 30m.",
+    "explanation": "Section 6.11.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the silent resampling problem.",
+    "correct": "When inputs mismatch, the Raster Calculator resamples without warning, not telling which method or what was discarded. The defense: inspect cell sizes before calculating, make conscious resolution decisions, and perform explicit resampling with appropriate methods. Never rely on defaults for important analyses.",
+    "explanation": "Section 6.11.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the SCS Curve Number method as map algebra.",
+    "correct": "Four steps: (1) Create CN grid from soil group × land cover lookup. (2) S = 25400/CN - 254. (3) Ia = 0.2 × S. (4) Q = (P-Ia)²/(P-Ia+S) where P>Ia, else Q=0. Each step is a raster calculator expression. The final runoff captures combined effects of spatially varying rainfall, soil, and land cover.",
+    "explanation": "Section 6.3.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the Zala River catchment map algebra example.",
+    "correct": "Inputs: OMSZ 1km radar precipitation (EOV), AGROTOPO 100m soil (EOV), CORINE 100m land cover (ETRS89/LAEA). Three reconciliation issues: CRS mismatch, cell size mismatch, extent difference. Solution: project all to EOV, resample to 100m (bilinear for precip, NN for categorical), set mask to Zala boundary. Same workflow as any map algebra application.",
+    "explanation": "Section 6.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Compare map algebra tools across platforms.",
+    "correct": "ArcGIS Pro: Raster Calculator (GUI) and arcpy.sa (Python). QGIS: Raster Calculator and GRASS r.mapcalc. GDAL+Python: rasterio/NumPy. Google Earth Engine: ee.Image arithmetic. Choice depends on context: GUI for one-off, scripting for repetitive, cloud for petabyte-scale. All follow same mathematical principles.",
+    "explanation": "Section 6.2.1 and Table 6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the analysis mask works for watershed analysis.",
+    "correct": "The mask can be a raster (non-zero/non-NODATA cells active) or feature class (polygon geometry). For watershed analysis, set mask to the catchment boundary polygon. Cells outside become NODATA in output. This restricts computation to the hydrologically relevant area and prevents external data from affecting results.",
+    "explanation": "Section 6.5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the division-by-zero masking technique.",
+    "correct": "Create a binary mask: 1 inside watershed, 0 outside. Divide the data grid by this mask. Inside: value/1 = original value. Outside: value/0 = NODATA. Result: data exists only within the watershed. Alternative: SetNull('mask'==0, 'data'). Cleaner but same effect.",
+    "explanation": "Section 6.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain comparison and logical operations in map algebra.",
+    "correct": "Comparisons (>, <, ==, !=) produce boolean grids (1/0). These combine with AND (&), OR (|), NOT to create complex selection criteria. Example: (slope>10) & (soil_perm<5) & (landcover==21) identifies steep, impermeable, developed cells—high runoff risk areas. Boolean grids are fundamental building blocks for classification and risk mapping.",
+    "explanation": "Section 6.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe mathematical functions available in map algebra.",
+    "correct": "Abs, Sqrt, Log/Log10/Log2, Exp, Sin/Cos/Tan, Int/Float, Round/Floor/Ceil. These enable implementing any physically-based equation: Manning's velocity (fractional exponents), radiation models (trig functions), flow weighting (logs). The Raster Calculator handles arbitrarily complex expressions.",
+    "explanation": "Section 6.9.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain Cell Statistics and its climate analysis applications.",
+    "correct": "Cell Statistics takes multiple rasters and computes per-cell mean, max, min, range, std dev, sum, variety, or majority. For 30 years of annual precipitation: long-term mean, wettest/driest year, variability at each cell. For 10 climate model outputs: ensemble mean and spread. Invaluable for climate impact assessment.",
+    "explanation": "Section 6.9.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the scale question for distributed modeling.",
+    "correct": "Output cell size should match the finest information that varies at that scale. With 1km precipitation and 30m land cover, running at 30m captures land cover variation but precipitation is just smooth resampling. Whether this matters depends on sensitivity to fine-scale land cover vs coarse precipitation. Computational cost scales inversely as cell size squared.",
+    "explanation": "Section 6.12.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the coordinate system trap in raster calculations.",
+    "correct": "Geographic coordinates (degrees): cells not square (at 47°N: ~111m N-S, ~75m E-W), areas can't be computed from cell counts, distance operations distorted. Project all inputs to metric CRS before computing anything involving physical units. CRS reconciliation should be the very first step.",
+    "explanation": "Section 6.11.5."
+  },
+  {
+    "type": "essay",
+    "question": "Describe raster data sources for map algebra by region.",
+    "correct": "US: MRMS (1km radar), 3DEP (1-10m DEM), gSSURGO (10m soil), NLCD (30m land cover). Hungary/EU: OMSZ radar, DDM-5/EEA-10 DEM, AGROTOPO soil, CORINE land cover. Global: CHIRPS/GPM precipitation, Copernicus GLO-30 DEM, SoilGrids (250m), WorldCover (10m). Resolution mismatches require reconciliation.",
+    "explanation": "Table 6.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what happens when environment cell size is set to 'Minimum of Inputs.'",
+    "correct": "The output uses the finest (smallest) cell size among inputs. Coarser inputs are resampled to this finer resolution. This preserves detail from the finest input but upsamples coarser data (adding no new information). Appropriate when the finest data is the most valuable and you accept smooth resampling of coarser inputs.",
+    "explanation": "Section 6.5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical verification of raster calculation results.",
+    "correct": "Four checks: (1) Spot-check cell values with Explore tool at interior, edges, and NODATA boundaries. (2) Check value range (min, max, mean, std dev) for physical reasonableness. (3) Visual pattern check—does the spatial pattern make sense? (4) Compare with known values (gauged runoff). Never trust output without verification.",
+    "explanation": "Section 6.8.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how cloud-based map algebra extends desktop capabilities.",
+    "correct": "GEE, Planetary Computer, and Copernicus Data Space bring computation to petabyte data. An analyst can compute 20-year mean annual NDVI for every 30m cell across the Danube basin—impossible on desktop. Same mathematical principles but continental/global scale. Key insight: map algebra is not limited to the Raster Calculator dialog.",
+    "explanation": "Section 6.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the inspection checklist before raster calculations.",
+    "correct": "For each input: (1) CRS—same? (2) Cell size—same or reconciliation planned? (3) Extent—sufficient overlap? (4) Data type—integer/float? (5) NODATA—defined correctly? (6) Value range—physically reasonable? (7) Bands—single-band? This prevents common errors like CRS mismatch, sentinel contamination, and unintended resampling.",
+    "explanation": "Section 6.8.1 and Table 6.8."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Con(IsNull()) strategy for handling NODATA.",
+    "correct": "Con(IsNull('infiltration'), 0, 'infiltration') replaces NODATA with zero. This means those cells generate maximum runoff (all precipitation becomes runoff). Whether this is appropriate depends on why data is missing. The strategy preserves valid output area but substitutes an assumption for missing data.",
+    "explanation": "Section 6.7.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the progression from Chapter 6 to Chapters 7-12.",
+    "correct": "Ch 6 provides the building blocks. Ch 7 applies focal operations for slope/aspect. Ch 8 creates precipitation grids. Chs 9-12 chain dozens of operations: fill sinks → flow direction → accumulation → stream extraction → watershed delineation. Each step follows Ch 6 principles: cell-by-cell computation, environment control, NODATA handling.",
+    "explanation": "Section 6.12.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the simplicity of map algebra through the 3×3 example.",
+    "correct": "Precipitation and infiltration 3×3 grids: runoff at cell (1,1) = 50-30=20. Each cell independent, no neighbor interaction, purely local. A real application does the same operation 9 million times instead of 9. The principle is identical—the computer just does it faster. This elegance is map algebra's power.",
+    "explanation": "Section 6.1.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe when to override the default coarsest-resolution behavior.",
+    "correct": "Override when: (1) finest data is expensive/carefully derived (don't discard it); (2) spatial averaging is more appropriate than point sampling for continuous data; (3) the application requires fine resolution even though one input is coarse (urban drainage at 5m with 1km precipitation). Make a conscious choice rather than accepting defaults.",
+    "explanation": "Section 6.4.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the output data type consideration in raster calculations.",
+    "correct": "If inputs are integer but operations produce fractions, output must be float. An integer output truncates 1.775 to 1 or 2—silently wrong. Most software auto-promotes to float, but verify. Over millions of cells, rounding accumulates to significant bias in total runoff. Always check output data type.",
+    "explanation": "Section 6.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the reconciliation sequence works internally.",
+    "correct": "The software: (1) determines extent from environment, (2) determines cell size, (3) determines alignment from snap raster, (4) creates empty output grid, (5) resamples non-matching inputs using NN, (6) applies mask, (7) evaluates expression cell by cell, (8) writes output. Understanding this sequence diagnoses unexpected results.",
+    "explanation": "Section 6.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between intersection and union extent modes.",
+    "correct": "Intersection: only where ALL inputs overlap (default, conservative). Union: everywhere ANY input has data (fills gaps with NODATA where inputs missing). Intersection may produce smaller output than expected if one input has limited extent. Union may have extensive NODATA if inputs differ greatly.",
+    "explanation": "Section 6.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of documenting raster calculations.",
+    "correct": "Record: formula used, input datasets and sources, reconciliation choices (target cell size, resampling methods, snap raster), environment settings, and verification results. Future-you and colleagues need this to reproduce results, understand assumptions, and troubleshoot issues. Professional practice demands documentation.",
+    "explanation": "Step 9 of workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the bilinear resampling worked example in detail.",
+    "correct": "150m precipitation grid resampled to 100m: corner values preserved (4.0, 6.0, 3.1, 4.0). Edge centers interpolated (5.0 = avg of 4 and 6; 3.55 = avg of 3.1 and 4). Center (4.275) = equal average of all four. Result: smooth 3×3 grid using all information. All nine infiltration values then used in the subtraction.",
+    "explanation": "Section 6.6.5."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the physical meaning of the runoff grid output.",
+    "correct": "Each cell value = precipitation minus infiltration at that location. The grid shows where runoff is generated, how much, and how it relates to terrain/soils/land cover. Instead of one lumped number for the watershed, you get spatial distribution. This reveals which areas contribute most runoff—information invisible in lumped models.",
+    "explanation": "Section 6.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why projected CRS is essential before map algebra.",
+    "correct": "Geographic CRS (degrees): cells not square, areas meaningless, distances distorted. Any analysis with physical units (mm rainfall over area, m³ runoff volumes, slopes in degrees/percent) requires metric CRS. CRS reconciliation should be the absolute first step—before cell size or extent reconciliation.",
+    "explanation": "Section 6.11.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of GRASS r.mapcalc for QGIS users.",
+    "correct": "GRASS r.mapcalc provides a more sophisticated expression language than QGIS's built-in Raster Calculator. It supports complex conditional logic, variable assignments, and iterative calculations. Accessed through QGIS Processing framework, it gives QGIS users additional map algebra capabilities comparable to ArcGIS Pro's.",
+    "explanation": "Section 6.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical implications of Table 6.10 for project planning.",
+    "correct": "Going from 1km (10,000 cells) to 10m (100M cells) over 10,000 km²: 10,000× more computation. For a single operation: seconds vs minutes. For multi-step hourly simulation over 30 years: minutes vs days. Cell size is a design decision with real budget/schedule implications for every distributed modeling project.",
+    "explanation": "Table 6.10 and Section 6.12.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why map algebra is called 'embarrassingly parallel.'",
+    "correct": "Each output cell depends only on input values at the same position—no cell needs information from neighbors (in local operations). This means every cell can be computed independently on a separate processor core. With millions of cells and thousands of cores available, map algebra operations can be distributed with zero communication overhead.",
+    "explanation": "Section 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the US National Water Model uses grid-based calculations.",
+    "correct": "The NWM processes radar precipitation grids, satellite soil moisture grids, and NWP forecast grids through map algebra operations producing distributed runoff. These are routed through the stream network for flood forecasts. The entire workflow—from atmospheric input to point discharge forecast—relies on grid-based computation at the core.",
+    "explanation": "Section 6.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how ensemble climate analysis uses Cell Statistics.",
+    "correct": "10 climate model precipitation forecasts as 10 raster grids. Cell Statistics computes: ensemble mean (best estimate at each cell), standard deviation (uncertainty), range (spread), maximum (worst case). This provides spatially explicit uncertainty quantification—essential for climate impact assessment and adaptation planning.",
+    "explanation": "Section 6.9.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the extent mismatch problem and its solution.",
+    "correct": "If one input covers only a small area while others cover the whole watershed, the default intersection extent clips output to that small area. Solution: verify all inputs cover the study area, fill gaps before calculation, or set extent explicitly to the watershed boundary. Plan extent deliberately rather than accepting defaults.",
+    "explanation": "Section 6.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the snap raster prevents subtle alignment errors.",
+    "correct": "Two grids with identical 30m cell sizes may have cells offset by 15m. Without snap raster, the calculator resamples to reconcile. With snap raster, output cells align exactly with the reference grid—no additional resampling needed. Critical for multi-step workflows where alignment errors compound.",
+    "explanation": "Section 6.5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the difference between local and zonal operations.",
+    "correct": "Local: each output cell from corresponding input cell(s) independently. Cell-by-cell arithmetic. Zonal: single summary value for each group of cells sharing a zone ID. Mean elevation per watershed, total precipitation per land cover class. Local is the focus of Ch 6; zonal is used for aggregation and parameterization.",
+    "explanation": "Section 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical implications of NODATA propagation for multi-layer analysis.",
+    "correct": "With 12 input layers, if each has even a few NODATA cells in different locations, the output may have significantly more NODATA than any individual input. The 'holes' accumulate across layers. Strategies: fill before combining, compute in stages to isolate propagation, or use Con to substitute values.",
+    "explanation": "Section 6.7.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of Python scripting for repeated map algebra workflows.",
+    "correct": "For repetitive tasks (50 sub-watersheds, multiple time steps, parameter sensitivity), GUI is impractical. Python (arcpy.sa, PyQGIS, rasterio+NumPy) automates the entire workflow: loop through inputs, apply formula, save outputs. ArcPy treats rasters as Python objects in mathematical expressions. Essential for operational and research workflows.",
+    "explanation": "Section 6.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the bilinear interpolation formula.",
+    "correct": "z = z11(1-dx)(1-dy) + z21(dx)(1-dy) + z12(1-dx)(dy) + z22(dx)(dy) where dx, dy are fractional positions within the 2×2 neighborhood. At the center (0.5, 0.5): equal average of all four. At a corner (0,0): exact value of that corner cell. Produces smooth, continuous interpolation.",
+    "explanation": "Section 6.6.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how to handle CRS mismatch in the Zala example.",
+    "correct": "Precipitation in EOV (EPSG:23700), CORINE in ETRS89/LAEA (EPSG:3035). Both must be projected to a common system—EOV is natural for national analysis. Use Project Raster tool (ArcGIS) or GDAL Warp (QGIS) to reproject. Must be done BEFORE cell size reconciliation.",
+    "explanation": "Section 6.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain what r.series provides in QGIS.",
+    "correct": "GRASS r.series computes cell-by-cell statistics across a stack of rasters: mean, maximum, minimum, range, standard deviation, sum, etc. Equivalent to ArcGIS Pro Cell Statistics. Essential for temporal analysis (multi-year precipitation) and ensemble analysis (multiple model outputs).",
+    "explanation": "Section 6.9.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the relationship between map algebra and machine learning in water resources.",
+    "correct": "Map algebra provides the spatial data preparation layer for ML: extracting features from multiple rasters (slope, soil, land cover, distance to stream), creating training datasets, and applying predictions spatially. ML models predict at each cell, and results are expressed as raster grids—the output of map algebra's successor paradigm.",
+    "explanation": "Forward-looking context."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the 'inspection first' philosophy.",
+    "correct": "The most common errors are not in algebra but in failing to inspect inputs. Silent resampling, CRS mismatches, NODATA contamination, wrong units—all preventable by checking 7 properties for each input. The 9-step workflow puts inspection (Step 3) before any computation. This discipline prevents subtle errors that are easy to make and hard to detect.",
+    "explanation": "Section 6.8.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Boolean grids function as building blocks for risk mapping.",
+    "correct": "Boolean grids (1/0 from comparisons) combine with logical operators: steep_slope & low_permeability & impervious_surface identifies highest runoff risk. Each boolean grid is a simple spatial question; combined, they create multi-criteria classifications. Multiplying boolean grids together implements AND logic. Adding implements OR logic (with thresholding).",
+    "explanation": "Section 6.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how map algebra connects static spatial data to dynamic spatial analysis.",
+    "correct": "Static data: DEM, soil maps, land cover—things to look at. Map algebra transforms them into dynamic analysis: subtracting infiltration from precipitation produces runoff, applying Manning's equation produces velocity, combining slope with soil produces erosion risk. The same data becomes actionable information through algebraic transformation.",
+    "explanation": "Section 6.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the QGIS boolean multiplication technique for conditional logic.",
+    "correct": "In QGIS Raster Calculator: (\"slope@1\" > 15) * 1 exploits that boolean comparisons produce 1 (true) or 0 (false). Multiplying by any value creates classified outputs. More complex: (slope>20)*3 + (slope>10)*(slope<=20)*2 + (slope<=10)*1 creates three slope classes. Workaround for QGIS's simpler expression syntax vs ArcGIS Pro's Con function.",
+    "explanation": "Section 6.2.3."
+  },
+  {
+    "type": "mcq",
+    "question": "The SCS Curve Number runoff equation denominator is:",
+    "options": [
+      "A) P + S",
+      "B) P - Ia + S",
+      "C) P × S",
+      "D) CN / S"
+    ],
+    "correct": "B",
+    "explanation": "Q = (P-Ia)² / (P-Ia+S)."
+  },
+  {
+    "type": "mcq",
+    "question": "What tool in ArcGIS Pro provides environment settings for all tools?",
+    "options": [
+      "A) Catalog pane",
+      "B) Analysis tab > Environments",
+      "C) Map Properties",
+      "D) Table of Contents"
+    ],
+    "correct": "B",
+    "explanation": "Analysis tab > Environments sets project-wide defaults."
+  },
+  {
+    "type": "mcq",
+    "question": "In GDAL command-line tools, which performs raster reprojection?",
+    "options": [
+      "A) ogr2ogr",
+      "B) gdalwarp",
+      "C) gdal_translate",
+      "D) gdaldem"
+    ],
+    "correct": "B",
+    "explanation": "gdalwarp reprojects rasters; ogr2ogr handles vectors."
+  },
+  {
+    "type": "mcq",
+    "question": "Which Python library provides the ee.Image.add() map algebra syntax?",
+    "options": [
+      "A) rasterio",
+      "B) NumPy",
+      "C) Google Earth Engine Python API",
+      "D) GDAL"
+    ],
+    "correct": "C",
+    "explanation": "GEE Python API provides ee.Image arithmetic methods."
+  },
+  {
+    "type": "mcq",
+    "question": "In a distributed model, the water balance is solved:",
+    "options": [
+      "A) Once for the entire watershed",
+      "B) Cell by cell using map algebra",
+      "C) Only at gauge locations",
+      "D) Using vector operations"
+    ],
+    "correct": "B",
+    "explanation": "R(i,j) = P(i,j) - ET(i,j) - ΔS(i,j) at every cell."
+  },
+  {
+    "type": "mcq",
+    "question": "Which ArcGIS Python module treats rasters as algebraic variables?",
+    "options": [
+      "A) arcpy.mp",
+      "B) arcpy.sa",
+      "C) arcpy.da",
+      "D) arcpy.env"
+    ],
+    "correct": "B",
+    "explanation": "arcpy.sa (Spatial Analyst) enables Raster('a') + Raster('b')."
+  },
+  {
+    "type": "mcq",
+    "question": "Majority resampling differs from nearest-neighbor by:",
+    "options": [
+      "A) Using interpolation",
+      "B) Considering the entire cell footprint area",
+      "C) Only working with float data",
+      "D) Being faster"
+    ],
+    "correct": "B",
+    "explanation": "Majority uses area majority; NN uses only the nearest center point."
+  },
+  {
+    "type": "mcq",
+    "question": "The Explore tool verifying a resampling discrepancy shows:",
+    "options": [
+      "A) The same value in input and output",
+      "B) Different input values vs the resampled value used in computation",
+      "C) No data available",
+      "D) Only the output value"
+    ],
+    "correct": "B",
+    "explanation": "Input layer shows original values; output shows computed value from resampled data."
+  },
+  {
+    "type": "mcq",
+    "question": "In the 9-step workflow, which step has a feedback loop to Step 5?",
+    "options": [
+      "A) Step 3",
+      "B) Step 6",
+      "C) Step 7",
+      "D) Step 9"
+    ],
+    "correct": "B",
+    "explanation": "Step 6 (Verify reconciliation) feeds back to Step 5 (Reconcile) if issues found."
+  },
+  {
+    "type": "mcq",
+    "question": "For an operational flood forecast at 5m resolution, what precipitation data issue exists?",
+    "options": [
+      "A) No precipitation data exists",
+      "B) Precipitation at 1 km must be resampled, creating false resolution",
+      "C) The DEM is too coarse",
+      "D) NODATA fills everything"
+    ],
+    "correct": "B",
+    "explanation": "1 km precipitation resampled to 5m is smooth at 1 km—false fine resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra expressions can include trigonometric functions.",
+    "correct": true,
+    "explanation": "Sin, Cos, Tan available for radiation models etc."
+  },
+  {
+    "type": "true_false",
+    "question": "Focal operations are independent between cells.",
+    "correct": false,
+    "explanation": "Focal operations use neighborhoods; local operations are independent."
+  },
+  {
+    "type": "true_false",
+    "question": "The SetNull function replaces values with NODATA.",
+    "correct": true,
+    "explanation": "SetNull(condition, value) sets NODATA where condition is true."
+  },
+  {
+    "type": "true_false",
+    "question": "The SCS CN method initial abstraction equals 50% of the retention parameter.",
+    "correct": false,
+    "explanation": "Ia = 0.2 × S (20%, not 50%)."
+  },
+  {
+    "type": "true_false",
+    "question": "A 1 km precipitation grid resampled to 30 m has true 30 m information.",
+    "correct": false,
+    "explanation": "Information content remains at 1 km regardless of cell size."
+  },
+  {
+    "type": "true_false",
+    "question": "The Con function can implement multi-criteria classification.",
+    "correct": true,
+    "explanation": "Chaining Con expressions creates complex classifications."
+  },
+  {
+    "type": "true_false",
+    "question": "Division by zero can be exploited as a masking technique.",
+    "correct": true,
+    "explanation": "Divide by mask (1 inside, 0 outside) to restrict data to an area."
+  },
+  {
+    "type": "true_false",
+    "question": "AGROTOPO is a Hungarian meteorological dataset.",
+    "correct": false,
+    "explanation": "AGROTOPO is Hungary's digital soil map."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra is limited to the Raster Calculator dialog.",
+    "correct": false,
+    "explanation": "Available through Python scripts, cloud platforms, and command-line tools."
+  },
+  {
+    "type": "true_false",
+    "question": "Verification feedback loops go from Step 8 back to Step 7.",
+    "correct": true,
+    "explanation": "Output verification feeds back to fix calculation issues."
+  },
+  {
+    "type": "true_false",
+    "question": "ArcGIS Pro's Raster Calculator is in the Data Management toolbox.",
+    "correct": false,
+    "explanation": "It is in Spatial Analyst > Map Algebra."
+  },
+  {
+    "type": "true_false",
+    "question": "QGIS has a centralized analysis environment system like ArcGIS Pro.",
+    "correct": false,
+    "explanation": "QGIS configures per-tool rather than centrally."
+  },
+  {
+    "type": "true_false",
+    "question": "The Log function in raster calculations computes natural logarithm.",
+    "correct": true,
+    "explanation": "Log = natural, Log10 = base-10, Log2 = base-2."
+  },
+  {
+    "type": "true_false",
+    "question": "The Exp function computes e raised to the cell value.",
+    "correct": true,
+    "explanation": "Standard exponential function."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra operations are sequential—only one cell at a time.",
+    "correct": false,
+    "explanation": "They are embarrassingly parallel—all cells can be computed simultaneously."
+  },
+  {
+    "type": "true_false",
+    "question": "EPSG:25834 is ETRS89/TM34 for EU-wide Hungarian analysis.",
+    "correct": true,
+    "explanation": "Suitable for EU-wide integration."
+  },
+  {
+    "type": "true_false",
+    "question": "The Cell Statistics tool and zonal statistics are the same thing.",
+    "correct": false,
+    "explanation": "Cell Statistics: across grids at each cell. Zonal: across zones within one grid."
+  },
+  {
+    "type": "true_false",
+    "question": "Python rasterio combined with NumPy can perform map algebra.",
+    "correct": true,
+    "explanation": "Standalone raster computation without desktop GIS."
+  },
+  {
+    "type": "true_false",
+    "question": "For complex expressions, build and verify incrementally.",
+    "correct": true,
+    "explanation": "Easier to identify which step introduces errors."
+  },
+  {
+    "type": "true_false",
+    "question": "The inspection checklist has 7 properties to verify.",
+    "correct": true,
+    "explanation": "CRS, cell size, extent, data type, NODATA, value range, bands."
+  },
+  {
+    "type": "true_false",
+    "question": "Boolean grid multiplication implements AND logic.",
+    "correct": true,
+    "explanation": "1×1=1 (both true), 1×0=0 or 0×1=0 (one false)."
+  },
+  {
+    "type": "true_false",
+    "question": "The step 'Document everything' is optional for professional work.",
+    "correct": false,
+    "explanation": "Documentation is essential for reproducibility and professional practice."
+  },
+  {
+    "type": "true_false",
+    "question": "GeoTIFF output requires the .tif extension in ArcGIS Pro.",
+    "correct": true,
+    "explanation": "No extension = ESRI Grid; .tif = GeoTIFF."
+  },
+  {
+    "type": "true_false",
+    "question": "The Zala River flows into Lake Balaton.",
+    "correct": true,
+    "explanation": "The Zala is the largest tributary of Lake Balaton."
+  },
+  {
+    "type": "true_false",
+    "question": "ERA5 ET data has the same resolution as ERA5 precipitation.",
+    "correct": true,
+    "explanation": "Both at 0.25 degree resolution from ECMWF."
+  },
+  {
+    "type": "true_false",
+    "question": "MODIS ET operates at 1 km resolution.",
+    "correct": false,
+    "explanation": "MODIS MOD16 ET is at 500 m resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "ESA WorldCover provides 10 m global land cover.",
+    "correct": true,
+    "explanation": "Sentinel-2 derived, 10 m resolution."
+  },
+  {
+    "type": "true_false",
+    "question": "A snap raster is only needed when cell sizes differ.",
+    "correct": false,
+    "explanation": "Even same-size cells may be offset, requiring snap alignment."
+  },
+  {
+    "type": "true_false",
+    "question": "The resolution-information paradox says finer is always better.",
+    "correct": false,
+    "explanation": "It says finer resolution without finer source data adds no information."
+  },
+  {
+    "type": "true_false",
+    "question": "In QGIS, (\"slope@1\" > 15) * 1 creates a binary mask.",
+    "correct": true,
+    "explanation": "Boolean produces 0/1; multiplying by 1 keeps the binary result."
+  },
+  {
+    "type": "true_false",
+    "question": "Map algebra outputs should always be verified before use.",
+    "correct": true,
+    "explanation": "Never trust output without spot-checking, range verification, and pattern inspection."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Data Space provides JupyterHub for processing.",
+    "correct": true,
+    "explanation": "Cloud-based processing environment for Copernicus data."
+  },
+  {
+    "type": "true_false",
+    "question": "xarray is a Python library for multi-dimensional data.",
+    "correct": true,
+    "explanation": "xarray + rioxarray enable CRS-aware multi-dimensional raster operations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Map algebra operations are embarrassingly _____.",
+    "correct": "parallel",
+    "explanation": "Each cell computed independently."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ environment parameter restricts computation to a polygon area.",
+    "correct": "mask",
+    "explanation": "Analysis mask."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GRASS _____ provides cell-by-cell statistics across raster stacks.",
+    "correct": "r.series",
+    "explanation": "Equivalent to ArcGIS Cell Statistics."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For categorical coarsening, use _____ resampling.",
+    "correct": "majority",
+    "explanation": "Assigns the most common value in the footprint."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Integer output storing 1.775 as 1 is the _____ problem.",
+    "correct": "truncation",
+    "explanation": "Silent rounding error."
+  },
+  {
+    "type": "fill_blank",
+    "question": "SetNull sets cells to _____ where a condition is met.",
+    "correct": "NODATA",
+    "explanation": "Explicit null assignment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the SCS method, CN stands for Curve _____.",
+    "correct": "Number",
+    "explanation": "Runoff coefficient based on soil and land cover."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ function in raster calculation computes e^x.",
+    "correct": "Exp",
+    "explanation": "Exponential function."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cloud-based map algebra brings _____ to the data.",
+    "correct": "computation",
+    "explanation": "Instead of downloading data to desktop."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's n represents surface _____.",
+    "correct": "roughness",
+    "explanation": "Manning's roughness coefficient."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ of inputs determines which data contributes to the result.",
+    "correct": "extent",
+    "explanation": "Intersection or union determines coverage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In ArcGIS Pro, Raster('a') + Raster('b') uses the arcpy._____ module.",
+    "correct": "sa",
+    "explanation": "Spatial Analyst Python module."
+  },
+  {
+    "type": "fill_blank",
+    "question": "NODATA × anything = _____.",
+    "correct": "NODATA",
+    "explanation": "NODATA always propagates."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ problem means resampling happens without user notification.",
+    "correct": "silent resampling",
+    "explanation": "Most insidious pitfall in raster analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Step 6 feeds back to Step _____ if reconciliation issues are found.",
+    "correct": "5",
+    "explanation": "Fix reconciliation and re-verify."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The rioxarray library extends _____ for geospatial operations.",
+    "correct": "xarray",
+    "explanation": "CRS-aware multi-dimensional data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between local operations and parallel computing.",
+    "correct": "In local map algebra, each output cell depends only on input values at the same position. No cell needs neighbor information. This means every cell can be computed independently on separate processor cores. With millions of cells and modern multi-core systems, computation is massively parallel with zero communication overhead—hence 'embarrassingly parallel.'",
+    "explanation": "Section 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the 150m precipitation and 100m infiltration grids are reconciled in the default case.",
+    "correct": "Default: output at 150m (coarsest). Infiltration (100m) resampled to 150m via nearest-neighbor. For each 150m output cell center, the nearest 100m cell center value is used. Five of nine infiltration values discarded. Output: 2×2 grid. Quick but lossy.",
+    "explanation": "Section 6.4.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how bilinear interpolation preserves more information than nearest-neighbor in the example.",
+    "correct": "Bilinear: 150m precipitation resampled to 100m using weighted averages of surrounding cells. Corner values preserved, edges interpolated, center averaged. Result: 3×3 grid with smooth transitions. All nine infiltration values used. No data discarded. More physically realistic for smoothly varying precipitation.",
+    "explanation": "Section 6.6.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the integer truncation problem and its implications for runoff estimation.",
+    "correct": "If raster output stored as integer, value 1.775 becomes 1 or 2. Over millions of cells, rounding accumulates to significant bias in total runoff. Most software auto-promotes to float, but verify. Always check output data type. For some QGIS and scripted workflows, explicit float specification may be needed.",
+    "explanation": "Section 6.11.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the snap raster concept and why it is needed even with matching cell sizes.",
+    "correct": "Two grids with identical 30m cells may be offset by a fraction of a cell (e.g., 15m). Without snap raster, the calculator must resample one to align with the other—introducing subtle errors. The snap raster forces all outputs to share the exact same cell grid, maintaining consistency across chained operations.",
+    "explanation": "Section 6.5.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Boolean grids combine to create multi-criteria runoff risk maps.",
+    "correct": "Each criterion produces a boolean (0/1) grid: steep_slope, low_permeability, impervious_surface. AND combination (multiply): all three must be true = highest risk. OR combination (add + threshold): any one triggers concern. Weighted combination: multiply by importance weights. Result is a spatial risk classification from simple building blocks.",
+    "explanation": "Section 6.9.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the coordinate system reconciliation and why it must happen first.",
+    "correct": "If one raster is in degrees and another in metres, cell sizes are incomparable. Reprojection changes both the CRS and the cell geometry. Must happen before cell size reconciliation (otherwise comparing 0.001° to 30m is meaningless). For Hungary: project everything to EOV or UTM before any analysis.",
+    "explanation": "Section 6.11.5."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the scale question for distributed models: at what cell size should models run?",
+    "correct": "Cell size should match finest information that actually varies at that scale. 1 km precipitation + 30m land cover at 30m: precipitation is smooth while land cover varies. Whether this matters depends on sensitivity to fine-scale patterns. Computational cost scales as inverse square. Balance information content against computational budget.",
+    "explanation": "Section 6.12.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the Zala catchment reconciliation workflow step by step.",
+    "correct": "(1) Project OMSZ radar (EOV) and CORINE (ETRS89/LAEA) to common EOV. (2) Resample to target: bilinear for continuous precipitation, nearest-neighbor for categorical soil and land cover. (3) Set analysis mask to Zala catchment boundary. (4) Perform map algebra. Same process regardless of geography.",
+    "explanation": "Section 6.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how NODATA can be exploited for masking using division by zero.",
+    "correct": "Create binary mask: 1 inside study area, 0 outside. Divide data by mask. Inside: value/1 = value (preserved). Outside: value/0 = NODATA (masked). Alternative: SetNull('mask'==0, 'data'). Both produce data restricted to the study area with NODATA elsewhere.",
+    "explanation": "Section 6.7.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between local and focal operations with hydrological examples.",
+    "correct": "Local: each cell independent. Examples: P-I=R, unit conversion, curve number assignment. Focal: moving window. Examples: slope (3×3 elevation differences), smoothing (mean filter), flow direction (steepest descent among 8 neighbors). Local is Ch 6; focal is Ch 7. Both are map algebra but with different spatial scope.",
+    "explanation": "Sections 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the practical difference between GUI and scripted map algebra.",
+    "correct": "GUI (Raster Calculator): fastest for one-off calculations on a few layers. Scripting (arcpy.sa, PyQGIS, rasterio): essential for repetitive workflows (50 sub-watersheds, parameter sensitivity, batch processing). Cloud (GEE): for petabyte-scale. Choice depends on number of repetitions and data volume.",
+    "explanation": "Section 6.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Cell Statistics supports climate variability assessment.",
+    "correct": "Input: 30 annual precipitation grids. Cell Statistics computes at each cell: mean (long-term average), max (wettest year), min (driest), std dev (year-to-year variability), range. The result: spatial maps of precipitation statistics that reveal which areas are most variable — essential for drought/flood risk assessment.",
+    "explanation": "Section 6.9.4."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the common data type pitfall when performing arithmetic on integer rasters.",
+    "correct": "Integer inputs (land cover codes, soil classes) in arithmetic expressions produce fractional results. If output type is integer, fractions are truncated. 1.775 becomes 1. Over millions of cells, this biases cumulative values. Most tools auto-promote to float, but QGIS and scripted workflows may need explicit float specification. Always verify.",
+    "explanation": "Section 6.2.2 and 6.11.4."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Manning's equation is implemented as map algebra.",
+    "correct": "V = (1/n) × R^(2/3) × S^(1/2). Each variable (n, R, S) is a raster. In ArcGIS Pro: (1.0/'mannings_n') * Power('hydraulic_radius', 0.667) * SquareRoot('slope'). The result is a velocity grid. Demonstrates that arbitrarily complex physical equations can be applied cell by cell.",
+    "explanation": "Section 6.9.3."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the output format recommendation and why.",
+    "correct": "GeoTIFF (.tif) is strongly recommended: supported by every platform, stores CRS internally, supports compression, no naming restrictions. Without .tif extension in ArcGIS Pro, output defaults to ESRI Grid (proprietary, 13-char limit). Always specify .tif explicitly.",
+    "explanation": "Section 6.2.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of analysis extent and its intersection vs union modes.",
+    "correct": "Intersection (default): only where ALL inputs overlap — conservative, guaranteed data everywhere. Union: everywhere ANY input has data — larger area but NODATA holes where inputs don't overlap. For watershed analysis: typically set extent to the catchment boundary (via mask) to avoid both problems.",
+    "explanation": "Section 6.5.1 and 6.11.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the internal processing sequence when the Raster Calculator executes.",
+    "correct": "(1) Determine output extent. (2) Determine output cell size. (3) Determine cell alignment (snap raster). (4) Create empty output. (5) Resample non-matching inputs via NN. (6) Apply mask. (7) Evaluate expression cell by cell. (8) Write output. Understanding this sequence diagnoses unexpected results.",
+    "explanation": "Section 6.5.3."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the 'inspection first' approach prevents errors.",
+    "correct": "Most errors come from uninspected inputs: CRS mismatches, wrong NODATA values, different cell sizes, out-of-range values. Checking 7 properties (CRS, cell size, extent, data type, NODATA, value range, bands) for each input catches problems before they propagate through calculations. Prevention is easier than diagnosis.",
+    "explanation": "Section 6.8.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of map algebra as the 'computational engine' of spatial hydrology.",
+    "correct": "Every distributed hydrological calculation reduces to grid algebra: precipitation minus losses, slope from elevation differences, curve numbers from soil×land cover lookup. Modern operational systems (NWM, EFAS) process grids at every step. Map algebra converts static spatial data into dynamic hydrological analysis at scale.",
+    "explanation": "Section 6.1.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of Table 6.9 showing data sources by region.",
+    "correct": "The table reveals universal resolution mismatches: 1 km precipitation with 5m elevation and 10m land cover everywhere. US, EU, and global data all exhibit this pattern. The reconciliation techniques from Section 6.4 apply universally regardless of data source. Different sources, same workflow.",
+    "explanation": "Section 6.10.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the feedback loops in the 9-step workflow.",
+    "correct": "Two feedback loops: Step 6 (verify reconciliation) → Step 5 (reconcile) if alignment issues found. Step 8 (verify output) → Step 7 (calculate) if values wrong. These loops ensure quality: reconciliation is checked before computing, and output is checked before accepting. The workflow is iterative, not purely linear.",
+    "explanation": "Section 6.13."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the R = max(P - L, 0) expression and its physical meaning.",
+    "correct": "Precipitation P minus losses L gives net water. But if losses exceed precipitation (L > P), runoff cannot be negative — water doesn't flow uphill out of the soil. The max() with 0 enforces this physical constraint. In Con syntax: Con(P > L, P - L, 0). Every cell gets physically meaningful non-negative runoff.",
+    "explanation": "Section 6.3.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how cloud GIS enables map algebra at continental scale.",
+    "correct": "Google Earth Engine stores petabytes of satellite/climate/terrain data. A script computing 20-year mean NDVI for every 30m cell across the Danube basin runs on Google's servers in minutes. Desktop would need downloading terabytes first. Same math, fundamentally different scale. Copernicus Data Space and Planetary Computer offer similar capabilities.",
+    "explanation": "Section 6.10.3."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical difference between bilinear and cubic convolution resampling.",
+    "correct": "Bilinear: 2×2 neighborhood, smooth output, fast. No overshoot. Cubic: 4×4 neighborhood, smoother output, preserves gradients better, but can overshoot (produce values outside input range). Cubic preferred for display quality; bilinear for analytical work where overshoot is unacceptable (precipitation can't be negative).",
+    "explanation": "Section 6.6."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of the analysis environment in preventing silent errors.",
+    "correct": "Without explicit environment settings, the calculator uses defaults (coarsest resolution, intersection extent, NN resampling) silently. By setting cell size, extent, snap raster, and mask explicitly, you control exactly what happens. The environments tab (ArcGIS Pro) or per-tool settings (QGIS) are the controls for preventing silent resampling.",
+    "explanation": "Section 6.5."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Zala example demonstrates universal GIS workflow principles.",
+    "correct": "The Zala example uses Hungarian data (OMSZ, AGROTOPO, CORINE) but the workflow is universal: project to common CRS, resample to common cell size (bilinear for continuous, NN for categorical), set mask, compute. The same steps apply to a US watershed with MRMS/gSSURGO/NLCD. Geography differs; methodology is identical.",
+    "explanation": "Section 6.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why documentation (Step 9) is essential for raster analysis.",
+    "correct": "Raster calculations involve many hidden decisions: target cell size, resampling method, snap raster, extent mode, NODATA handling. Without documentation, results cannot be reproduced, assumptions cannot be questioned, and errors cannot be traced. Professional practice demands recording formula, sources, reconciliation choices, and verification results.",
+    "explanation": "Step 9 of workflow."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the verification step after reconciliation.",
+    "correct": "After projecting and resampling, verify that layers overlay correctly and values make sense. A mismatched projection could produce a grid that's geographically shifted. A wrong resampling method could alter values unexpectedly. The Explore tool checking values at known locations catches these problems before they propagate into calculations.",
+    "explanation": "Section 6.8.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how map algebra progresses through the remaining chapters.",
+    "correct": "Ch 6: local operations (cell arithmetic). Ch 7: focal operations (slope, aspect from neighborhoods). Ch 8: spatial interpolation (gauge data to grids). Ch 9-12: chained raster workflows (fill → flow direction → accumulation → streams → watersheds). Every step follows Ch 6 principles. The foundation scales to complete hydrological workflows.",
+    "explanation": "Section 6.14."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the practical implications of combining 1 km precipitation with 10 m land cover for urban flood modeling.",
+    "correct": "Urban flood models need 5-10m resolution to capture buildings, roads, drainage. Land cover at 10m provides this. But precipitation at 1 km is smooth across the urban area — every 10m cell gets essentially the same rainfall. The runoff pattern is entirely driven by land cover heterogeneity, not precipitation variability. This is valid but must be understood and documented.",
+    "explanation": "Section 6.4 and 6.11.2."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the AGROTOPO soil map is used in runoff estimation.",
+    "correct": "AGROTOPO classifies Hungarian soils by infiltration/permeability at 100m. For runoff estimation: rasterize soil properties, combine with land cover via lookup table to create a CN or infiltration grid, then apply the SCS or P-minus-I formula cell by cell. AGROTOPO provides the soil component of the spatially distributed loss estimation.",
+    "explanation": "Section 6.10.2."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why map algebra expressions can handle arbitrary complexity.",
+    "correct": "The Raster Calculator evaluates any mathematical expression: arithmetic (+,-,×,÷,^), functions (sqrt, log, sin, cos, exp), conditionals (Con, boolean logic), and combinations thereof. Manning's equation, SCS CN method, radiation models — any formula expressible algebraically can be applied to a landscape of millions of cells simultaneously.",
+    "explanation": "Sections 6.2.3 and 6.9."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of cell-by-cell correspondence in map algebra.",
+    "correct": "When adding two grids, row 1/col 1 of grid A operates with row 1/col 1 of grid B — same geographic position. This correspondence requires matching cell sizes and alignment. If grids don't match, resampling creates the correspondence. The fundamental principle is that operations are performed at corresponding geographic positions.",
+    "explanation": "Section 6.1.1."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the NODATA filling strategy using interpolation.",
+    "correct": "Small NODATA gaps in otherwise continuous data can be filled by interpolation: GDAL fillnodata, ArcGIS Raster Interpolation, QGIS GRASS r.fillnulls. Appropriate when gaps are small and surrounding data provides reasonable estimates. NOT appropriate when NODATA represents genuinely absent information (outside country boundary).",
+    "explanation": "Section 6.7.5."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the chapter connects static data to dynamic flood forecasting.",
+    "correct": "The same map algebra that subtracts infiltration from precipitation in a textbook example is what operational flood forecasting systems do in real time. Weather radar → precipitation grid, satellite → soil moisture grid, NWP → forecast grid. Map algebra processes all through physically-based equations to produce flood forecasts. The classroom exercise scales to operations.",
+    "explanation": "Sections 6.1.2 and 6.12."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of Python scripting for automating the 9-step workflow.",
+    "correct": "Steps 2-8 can be scripted: assemble inputs programmatically, inspect properties via code, project/resample/snap automatically, perform calculations, verify outputs with assertions. For 50 sub-watersheds or monthly time series, scripting is the only practical approach. arcpy.sa, PyQGIS, and rasterio all support the complete workflow.",
+    "explanation": "Section 6.2.1 and 6.12."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how understanding Chapter 6 prevents errors in all subsequent chapters.",
+    "correct": "Every chapter 7-12 uses map algebra: slope/aspect (Ch7), interpolation (Ch8), flow direction (Ch9-10), delineation (Ch11-12). Each involves multi-resolution inputs, resampling, NODATA, and environment settings. Understanding reconciliation, resampling, NODATA propagation, and verification from Ch 6 prevents the subtle errors that plague even experienced analysts.",
+    "explanation": "Section 6.14."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the difference between the Raster Calculator GUI and arcpy.sa for map algebra.",
+    "correct": "Raster Calculator GUI: visual dialog, select layers, build expression, one-off use. arcpy.sa: Python module where Raster objects participate in mathematical expressions directly (Raster('a') + Raster('b')), enabling loops, conditionals, batch processing. Same engine underneath; different interfaces for different use cases.",
+    "explanation": "Section 6.2.1."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the practical workflow for verification using the Explore tool.",
+    "correct": "Set Explore to show all visible layers. Click at multiple locations: interior cells, near edges, near NODATA. At each click, verify output = expected result of expression applied to input values shown. If discrepancy: check if resampling altered values (input shows different value than what was used). Check cells near NODATA boundaries for propagation.",
+    "explanation": "Section 6.4.4 and 6.8.4."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why bilinear resampling produces 4.275 at the center of the precipitation example.",
+    "correct": "The center point (150,150) is equidistant from all four source cell centers at (75,225), (225,225), (75,75), (225,75). Bilinear formula with dx=0.5, dy=0.5: each cell contributes 0.25 weight. Result: 4.0×0.25 + 6.0×0.25 + 3.1×0.25 + 4.0×0.25 = 1.0+1.5+0.775+1.0 = 4.275. Equal-weighted average of all four.",
+    "explanation": "Section 6.6.5."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the table of approximate cell counts showing computational scaling.",
+    "correct": "For 10,000 km²: 1km=10,000 cells (40KB). 250m=160,000 (640KB). 100m=1M (4MB). 30m=11.1M (44MB). 10m=100M (400MB). 5m=400M (1.6GB). Relative computation: 1× to 40,000×. These numbers explain why cell size is both a design and computational budget decision.",
+    "explanation": "Table 6.10."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the 'precipitation minus infiltration' paradigm varies in complexity.",
+    "correct": "Simplest: R = P - I. More complex: SCS CN method with retention, initial abstraction, and squared terms. Most complex: physically-based Green-Ampt or Richards' equation with time-varying infiltration. All are spatial implementations via map algebra. The paradigm (sky minus ground = surface flow) is universal; the loss estimation method varies.",
+    "explanation": "Section 6.3.1."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the chapter establishes vocabulary for all subsequent hydrology chapters.",
+    "correct": "Key terms established: local/focal/zonal operations, resampling methods, analysis environment (extent, cell size, snap, mask), NODATA propagation, reconciliation workflow. These terms recur in every subsequent chapter. Slope calculation (Ch7) is a focal operation. Watershed delineation (Ch11) chains multiple operations. The vocabulary from Ch6 is the analytical language.",
+    "explanation": "Section 6.14."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of global operations in map algebra and give an example.",
+    "correct": "Global operations compute each output cell using information from the entire input grid, not just the cell or its neighborhood. Examples: distance surfaces (distance from each cell to nearest stream), cost-distance (least-cost path), and flow accumulation (counting all upstream cells). These require iterative algorithms sweeping across the entire grid, making them the most computationally expensive category.",
+    "explanation": "Section 6.1.1."
+  }
+]

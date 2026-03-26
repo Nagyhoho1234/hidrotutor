@@ -1,0 +1,3002 @@
+[
+  {
+    "type": "mcq",
+    "question": "What are the four steps in the discharge-to-impact flood inundation framework?",
+    "options": [
+      "A) Rainfall, runoff, routing, reporting",
+      "B) Discharge forecast, depth estimation, inundation mapping, impact assessment",
+      "C) DEM processing, flow direction, accumulation, watershed delineation",
+      "D) Survey, model, calibrate, validate"
+    ],
+    "correct": "B",
+    "explanation": "The four sequential steps transform a discharge value into a depth, the depth into a spatial flood map, and the flood map into an impact assessment."
+  },
+  {
+    "type": "mcq",
+    "question": "In Step 2 of the framework, discharge is converted to water depth using a:",
+    "options": [
+      "A) Hydrograph",
+      "B) Unit hydrograph",
+      "C) Rating curve",
+      "D) Stage-storage curve"
+    ],
+    "correct": "C",
+    "explanation": "A rating curve maps discharge to water depth for each stream reach, derived from HAND-based hydraulic properties and Manning's equation."
+  },
+  {
+    "type": "mcq",
+    "question": "The inundation rule states that a cell is flooded when:",
+    "options": [
+      "A) Rainfall exceeds infiltration capacity",
+      "B) Stream discharge exceeds a threshold",
+      "C) The flood depth d exceeds the cell's HAND value h",
+      "D) The cell's absolute elevation is below sea level"
+    ],
+    "correct": "C",
+    "explanation": "Inundation depth = d - h when d > h; the cell is dry when d <= h."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the mathematical expression for inundation depth at a cell?",
+    "options": [
+      "A) d + HAND",
+      "B) d - HAND (when d > HAND)",
+      "C) HAND - d",
+      "D) d / HAND"
+    ],
+    "correct": "B",
+    "explanation": "The inundation depth equals the stream flood depth minus the cell's HAND value, only when d > HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "In the US National Water Model, how many NHDPlus reaches receive discharge predictions?",
+    "options": [
+      "A) 350,000",
+      "B) 1.2 million",
+      "C) 2.7 million",
+      "D) 5.5 million"
+    ],
+    "correct": "C",
+    "explanation": "The NWM produces hourly discharge predictions for all 2.7 million NHDPlus reaches."
+  },
+  {
+    "type": "mcq",
+    "question": "What unique identifier links a stream reach to its discharge in the NHDPlus system?",
+    "options": [
+      "A) HUC code",
+      "B) COMID",
+      "C) PFAF_ID",
+      "D) Reach code"
+    ],
+    "correct": "B",
+    "explanation": "Each NHDPlus stream reach has a unique COMID that links it to discharge forecasts and rating curves."
+  },
+  {
+    "type": "mcq",
+    "question": "Two adjacent cells with identical HAND values may experience different flooding because:",
+    "options": [
+      "A) They have different soil types",
+      "B) They belong to different catchments with different stream reaches and flood depths",
+      "C) Their coordinates are rounded differently",
+      "D) They have different land cover types"
+    ],
+    "correct": "B",
+    "explanation": "Catchment-based spatial differentiation means each cell's flood condition depends on which stream reach governs its catchment."
+  },
+  {
+    "type": "mcq",
+    "question": "Why does the HAND approach use horizontal slicing rather than traditional cross-sections?",
+    "options": [
+      "A) Cross-sections require less computation",
+      "B) Horizontal slicing integrates over the entire reach, producing stable reach-averaged properties",
+      "C) Cross-sections are more accurate",
+      "D) Horizontal slicing is the traditional approach"
+    ],
+    "correct": "B",
+    "explanation": "Cross-sections vary dramatically over short distances. Horizontal slicing naturally provides spatial averaging that stabilizes the depth-discharge relationship."
+  },
+  {
+    "type": "mcq",
+    "question": "Approximately how many kilometers of averaging length are needed before depth-discharge relationships stabilize for large rivers?",
+    "options": [
+      "A) 0.1 km",
+      "B) 0.5 km",
+      "C) 1.5 km",
+      "D) 10 km"
+    ],
+    "correct": "C",
+    "explanation": "Research shows approximately 1.5 km averaging length for large rivers before depth-discharge relationships stabilize."
+  },
+  {
+    "type": "mcq",
+    "question": "The cross-sectional area A_x from HAND is computed as:",
+    "options": [
+      "A) Surface area times depth",
+      "B) Volume divided by reach length (V/L)",
+      "C) Top width times depth",
+      "D) Wetted perimeter times hydraulic radius"
+    ],
+    "correct": "B",
+    "explanation": "A_x = V/L gives the average flow area perpendicular to the stream."
+  },
+  {
+    "type": "mcq",
+    "question": "The hydraulic radius R is defined as:",
+    "options": [
+      "A) A_x / T (area / top width)",
+      "B) A_x / P (cross-sectional area / wetted perimeter)",
+      "C) P / A_x (wetted perimeter / area)",
+      "D) T / P (top width / wetted perimeter)"
+    ],
+    "correct": "B",
+    "explanation": "R = A_x / P. A large hydraulic radius indicates an efficient channel with low friction relative to flow capacity."
+  },
+  {
+    "type": "mcq",
+    "question": "Manning's equation for steady uniform flow is:",
+    "options": [
+      "A) Q = (1/n) * A_x * R^(2/3) * S_0^(1/2)",
+      "B) Q = n * A_x * R^(1/2) * S_0^(2/3)",
+      "C) Q = (1/n) * A_x * R * S_0",
+      "D) Q = n * A_x^2 * R * S_0^(1/3)"
+    ],
+    "correct": "A",
+    "explanation": "Manning's equation: Q = (1/n) * A_x * R^(2/3) * S_0^(1/2), where n is roughness, A_x is cross-sectional area, R is hydraulic radius, and S_0 is bed slope."
+  },
+  {
+    "type": "mcq",
+    "question": "In Manning's equation with US customary units, what conversion factor replaces 1/n?",
+    "options": [
+      "A) 0.67/n",
+      "B) 1.49/n",
+      "C) 2.22/n",
+      "D) 3.28/n"
+    ],
+    "correct": "B",
+    "explanation": "The factor 1.49/n is used in US customary units because 1 m^(1/3) = 3.281^(1/3) approximately equals 1.486 ft^(1/3)."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical default Manning's roughness coefficient used for initial HAND-based analyses?",
+    "options": [
+      "A) n = 0.01",
+      "B) n = 0.025",
+      "C) n = 0.05",
+      "D) n = 0.10"
+    ],
+    "correct": "C",
+    "explanation": "A default value of n = 0.05 is commonly used, acknowledging 30-50% uncertainty in computed discharge."
+  },
+  {
+    "type": "mcq",
+    "question": "Manning's n for a clean, straight channel with gravel bed typically ranges from:",
+    "options": [
+      "A) 0.005 - 0.010",
+      "B) 0.025 - 0.033",
+      "C) 0.080 - 0.120",
+      "D) 0.150 - 0.200"
+    ],
+    "correct": "B",
+    "explanation": "Clean straight channels with gravel or sand bed and minimal vegetation have n = 0.025-0.033."
+  },
+  {
+    "type": "mcq",
+    "question": "Manning's n for a forested floodplain (heavy timber) typically ranges from:",
+    "options": [
+      "A) 0.025 - 0.035",
+      "B) 0.040 - 0.060",
+      "C) 0.080 - 0.120",
+      "D) 0.150 - 0.200"
+    ],
+    "correct": "C",
+    "explanation": "Forested floodplains with heavy timber have Manning's n of 0.080-0.120."
+  },
+  {
+    "type": "mcq",
+    "question": "In NHDPlus, which attributes store the elevation endpoints for slope calculation?",
+    "options": [
+      "A) MAXFLOW and MINFLOW",
+      "B) MAXELEVSMO and MINELEVSMO",
+      "C) Z_START and Z_END",
+      "D) ELEV_UP and ELEV_DN"
+    ],
+    "correct": "B",
+    "explanation": "MAXELEVSMO and MINELEVSMO store smoothed maximum and minimum elevations along each reach for slope computation."
+  },
+  {
+    "type": "mcq",
+    "question": "The bed slope S_0 of a stream reach is computed as:",
+    "options": [
+      "A) (z_downstream - z_upstream) / L",
+      "B) (z_upstream - z_downstream) / L",
+      "C) L / (z_upstream - z_downstream)",
+      "D) (z_upstream + z_downstream) / (2L)"
+    ],
+    "correct": "B",
+    "explanation": "S_0 = (z_upstream - z_downstream) / L gives the elevation drop divided by reach length."
+  },
+  {
+    "type": "mcq",
+    "question": "What was the peak flood depth assigned to the main stem peak zone reach in the Onion Creek 2013 analysis?",
+    "options": [
+      "A) 8 ft (2.44 m)",
+      "B) 10 ft (3.05 m)",
+      "C) 15 ft (4.57 m)",
+      "D) 20 ft (6.10 m)"
+    ],
+    "correct": "C",
+    "explanation": "COMID 5781401 (main stem, peak zone) was assigned 15 feet (4.57 m) depth."
+  },
+  {
+    "type": "mcq",
+    "question": "How many houses were flooded in the October 2013 Onion Creek event?",
+    "options": [
+      "A) Approximately 50",
+      "B) Approximately 200",
+      "C) Approximately 500",
+      "D) Approximately 2,000"
+    ],
+    "correct": "C",
+    "explanation": "Approximately 500 houses were entered by flood water by 6:30 AM, and 5 people drowned."
+  },
+  {
+    "type": "mcq",
+    "question": "What was the Onion Creek watershed area?",
+    "options": [
+      "A) 83 km^2",
+      "B) 250 km^2",
+      "C) 830 km^2",
+      "D) 3,000 km^2"
+    ],
+    "correct": "C",
+    "explanation": "The Onion Creek watershed covers approximately 830 km^2 of rolling terrain in the Texas Hill Country."
+  },
+  {
+    "type": "mcq",
+    "question": "For Onion Creek reach COMID 5781733 at 1 m depth, the computed discharge is approximately:",
+    "options": [
+      "A) 1.4 m^3/s",
+      "B) 13.8 m^3/s",
+      "C) 138 m^3/s",
+      "D) 1,380 m^3/s"
+    ],
+    "correct": "B",
+    "explanation": "Q = 20.0 x 6.78 x 0.797 x 0.1277 = 13.8 m^3/s (approximately 487 cfs)."
+  },
+  {
+    "type": "mcq",
+    "question": "The bed slope of the Onion Creek reach used in the worked example is:",
+    "options": [
+      "A) 0.00004",
+      "B) 0.00163",
+      "C) 0.0163",
+      "D) 0.163"
+    ],
+    "correct": "C",
+    "explanation": "S_0 = 0.0163, typical of the Onion Creek gradient in the Texas Hill Country."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza at Szolnok has a bed slope of approximately:",
+    "options": [
+      "A) 0.0163",
+      "B) 0.004",
+      "C) 0.0004",
+      "D) 0.00004"
+    ],
+    "correct": "D",
+    "explanation": "The Tisza bed slope near Szolnok is approximately 0.00004 (4 cm per kilometer), extremely gentle."
+  },
+  {
+    "type": "mcq",
+    "question": "The channel width of the Tisza at Szolnok is approximately:",
+    "options": [
+      "A) 20-50 m",
+      "B) 200-400 m",
+      "C) 1-2 km",
+      "D) 5-10 km"
+    ],
+    "correct": "B",
+    "explanation": "The Tisza channel at Szolnok is approximately 200-400 metres wide."
+  },
+  {
+    "type": "mcq",
+    "question": "The 2001 Tisza flood peak discharge at Szolnok was approximately:",
+    "options": [
+      "A) 270 m^3/s",
+      "B) 2,700 m^3/s",
+      "C) 27,000 m^3/s",
+      "D) 270,000 m^3/s"
+    ],
+    "correct": "B",
+    "explanation": "The 2001 flood peak at Szolnok was approximately 2,700 m^3/s with a water level of about 10.6 m above zero gauge."
+  },
+  {
+    "type": "mcq",
+    "question": "Manning's n value used for the Tisza example was:",
+    "options": [
+      "A) 0.020",
+      "B) 0.035",
+      "C) 0.050",
+      "D) 0.100"
+    ],
+    "correct": "B",
+    "explanation": "n = 0.035 was used for the large river with relatively smooth floodplain."
+  },
+  {
+    "type": "mcq",
+    "question": "What makes the Tisza rating curve fundamentally different from Onion Creek's?",
+    "options": [
+      "A) The Tisza has no floodplain",
+      "B) The Tisza slope is 400 times gentler, requiring much greater depth for the same discharge",
+      "C) The Tisza has steeper banks",
+      "D) Manning's equation doesn't apply to the Tisza"
+    ],
+    "correct": "B",
+    "explanation": "At S_0 = 0.00004 vs. 0.0163, the Tisza needs much greater depth and width to convey similar discharges, with water spreading across a floodplain several km wide."
+  },
+  {
+    "type": "mcq",
+    "question": "At what depth interval does the National Water Center pre-compute inundation maps?",
+    "options": [
+      "A) 0.1 m (4 inches)",
+      "B) 0.3 m (1 foot)",
+      "C) 1 m (3.3 feet)",
+      "D) 3 m (10 feet)"
+    ],
+    "correct": "B",
+    "explanation": "Pre-computed maps are stored at 1-foot (0.3 m) depth intervals from 0 to approximately 25 feet."
+  },
+  {
+    "type": "mcq",
+    "question": "How many individual inundation maps does the US pre-computed library contain (approximately)?",
+    "options": [
+      "A) 2.7 million",
+      "B) 25 million",
+      "C) 67.5 million",
+      "D) 500 million"
+    ],
+    "correct": "C",
+    "explanation": "2.7 million reaches x 25 depth increments = approximately 67.5 million individual maps."
+  },
+  {
+    "type": "mcq",
+    "question": "How long does the real-time pipeline take from receiving a forecast to publishing an inundation map?",
+    "options": [
+      "A) Under 3 minutes",
+      "B) About 30 minutes",
+      "C) 1-2 hours",
+      "D) 6-12 hours"
+    ],
+    "correct": "A",
+    "explanation": "The entire pipeline completes in under 3 minutes because all computationally expensive work was done in advance."
+  },
+  {
+    "type": "mcq",
+    "question": "The JRC River Flood Hazard Maps provide static flood extents for how many return periods?",
+    "options": [
+      "A) 2",
+      "B) 4",
+      "C) 6",
+      "D) 10"
+    ],
+    "correct": "C",
+    "explanation": "The JRC maps cover 10-year, 20-year, 50-year, 100-year, 200-year, and 500-year return periods."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's OVF operates which system for real-time water level monitoring?",
+    "options": [
+      "A) EFAS",
+      "B) GloFAS",
+      "C) HYDROINFO",
+      "D) LISFLOOD"
+    ],
+    "correct": "C",
+    "explanation": "HYDROINFO (www.hydroinfo.hu) provides real-time water level observations and short-range forecasts at 98 sections."
+  },
+  {
+    "type": "mcq",
+    "question": "How many forecast sections does Hungary's HYDROINFO system cover?",
+    "options": [
+      "A) 12",
+      "B) 48",
+      "C) 98",
+      "D) 250"
+    ],
+    "correct": "C",
+    "explanation": "HYDROINFO provides observations and short-range forecasts at 98 forecast sections along the Danube, Tisza, and tributaries."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hungarian flood alert system, what are the three degrees of flood alerts?",
+    "options": [
+      "A) Green, yellow, red",
+      "B) I, II, III",
+      "C) Low, medium, high",
+      "D) Watch, warning, emergency"
+    ],
+    "correct": "B",
+    "explanation": "Hungary uses I, II, and III degree flood alerts with increasing severity."
+  },
+  {
+    "type": "mcq",
+    "question": "What satellite sensor does the Copernicus EMS primarily use for flood mapping through clouds?",
+    "options": [
+      "A) Landsat 8",
+      "B) Sentinel-2 optical",
+      "C) Sentinel-1 SAR",
+      "D) MODIS"
+    ],
+    "correct": "C",
+    "explanation": "Sentinel-1 SAR can penetrate clouds, making it the primary sensor for rapid flood extent mapping."
+  },
+  {
+    "type": "mcq",
+    "question": "GloFAS provides medium-range flood forecasts for how many days ahead?",
+    "options": [
+      "A) 5 days",
+      "B) 10 days",
+      "C) 30 days",
+      "D) 90 days"
+    ],
+    "correct": "C",
+    "explanation": "GloFAS provides 30-day medium-range probabilistic flood forecasts globally."
+  },
+  {
+    "type": "mcq",
+    "question": "At what spatial resolution does GloFAS operate?",
+    "options": [
+      "A) 10 m",
+      "B) 1 km",
+      "C) ~5 km (0.05 degrees)",
+      "D) 25 km"
+    ],
+    "correct": "C",
+    "explanation": "GloFAS operates at 0.05-degree (~5 km) resolution globally."
+  },
+  {
+    "type": "mcq",
+    "question": "Texas has approximately how many address points for impact assessment?",
+    "options": [
+      "A) 928,000",
+      "B) 3.5 million",
+      "C) 9.28 million",
+      "D) 35.5 million"
+    ],
+    "correct": "C",
+    "explanation": "Texas has 9.28 million address points representing every building that can receive emergency services."
+  },
+  {
+    "type": "mcq",
+    "question": "The building flood depth is computed as:",
+    "options": [
+      "A) HAND + d_reach",
+      "B) d_reach - HAND_building",
+      "C) HAND_building - d_reach",
+      "D) d_reach x HAND_building"
+    ],
+    "correct": "B",
+    "explanation": "d_building = d_reach - HAND_building; the building floods when d_reach exceeds its HAND value."
+  },
+  {
+    "type": "mcq",
+    "question": "According to HAND-based risk classification, buildings with HAND 0-2 m have what risk level?",
+    "options": [
+      "A) Low",
+      "B) Moderate",
+      "C) High",
+      "D) Very High"
+    ],
+    "correct": "D",
+    "explanation": "HAND 0-2 m is classified as Very High risk, flooded in moderate events with immediate proximity to channel."
+  },
+  {
+    "type": "mcq",
+    "question": "What percentage of US stream miles have detailed FEMA flood maps?",
+    "options": [
+      "A) Less than 10%",
+      "B) Fewer than 25%",
+      "C) About 50%",
+      "D) About 75%"
+    ],
+    "correct": "B",
+    "explanation": "Fewer than 25% of US stream miles have detailed FEMA flood maps; HAND fills the gap for the remaining 75%."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the 'Pin to Flood Map' app?",
+    "options": [
+      "A) A game for learning about floods",
+      "B) A crowd-sourced validation tool where observers report water edge locations",
+      "C) A tool for designing flood barriers",
+      "D) A weather forecasting app"
+    ],
+    "correct": "B",
+    "explanation": "Developed at UT Austin, it converts crowd-sourced observations at the water's edge into local inundation maps via HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "What fundamental equations does HEC-RAS solve that HAND does not?",
+    "options": [
+      "A) Navier-Stokes equations",
+      "B) Saint-Venant equations (continuity and momentum)",
+      "C) Laplace equations",
+      "D) Darcy's equations"
+    ],
+    "correct": "B",
+    "explanation": "HEC-RAS solves the 1D or 2D Saint-Venant equations for unsteady, non-uniform open-channel flow."
+  },
+  {
+    "type": "mcq",
+    "question": "The Saint-Venant continuity equation is:",
+    "options": [
+      "A) dA/dt + dQ/dx = q_l",
+      "B) dQ/dt + dA/dx = 0",
+      "C) A = Q * v",
+      "D) dh/dt = Q/A"
+    ],
+    "correct": "A",
+    "explanation": "The continuity equation states that the rate of change of cross-sectional area plus the spatial change in discharge equals lateral inflow."
+  },
+  {
+    "type": "mcq",
+    "question": "What hydraulic effect near bridges can raise upstream water levels by 1-2 m that HAND cannot capture?",
+    "options": [
+      "A) Evaporation",
+      "B) Backwater effect",
+      "C) Infiltration",
+      "D) Wind setup"
+    ],
+    "correct": "B",
+    "explanation": "HAND assigns a single depth per reach and cannot model backwater effects at bridges, dams, or confluences."
+  },
+  {
+    "type": "mcq",
+    "question": "Setting up a HEC-RAS model for a single reach typically requires:",
+    "options": [
+      "A) Minutes",
+      "B) Hours",
+      "C) Days to weeks",
+      "D) Months to years"
+    ],
+    "correct": "C",
+    "explanation": "A HEC-RAS model requires days of setup: surveyed cross-sections, bridge geometry, roughness calibration, boundary conditions, and quality checking."
+  },
+  {
+    "type": "mcq",
+    "question": "What typical depth error does the HAND approach produce for overbank flows?",
+    "options": [
+      "A) 1-5%",
+      "B) 5-15%",
+      "C) 20-50%",
+      "D) 100-200%"
+    ],
+    "correct": "C",
+    "explanation": "The HAND approach typically produces 20-50% depth error for overbank flows, compared to 5-15% for calibrated HEC-RAS."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM produces short-range forecasts for what time horizon?",
+    "options": [
+      "A) 6 hours",
+      "B) 18 hours",
+      "C) 48 hours",
+      "D) 10 days"
+    ],
+    "correct": "B",
+    "explanation": "Short-range forecasts cover 18 hours; medium-range covers 10 days; long-range covers 30 days."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS is operated by which organization?",
+    "options": [
+      "A) JRC",
+      "B) ECMWF",
+      "C) EEA",
+      "D) ESA"
+    ],
+    "correct": "B",
+    "explanation": "EFAS is operated by ECMWF (European Centre for Medium-Range Weather Forecasts) under the Copernicus Emergency Management Service."
+  },
+  {
+    "type": "mcq",
+    "question": "EFAS produces ensemble forecasts with how many equally likely scenarios?",
+    "options": [
+      "A) 10",
+      "B) 21",
+      "C) 51",
+      "D) 100"
+    ],
+    "correct": "C",
+    "explanation": "The ECMWF ensemble prediction system provides 51 equally likely scenarios for the next 15 days."
+  },
+  {
+    "type": "mcq",
+    "question": "What hydrological model does EFAS use?",
+    "options": [
+      "A) HEC-HMS",
+      "B) SWAT",
+      "C) LISFLOOD",
+      "D) WRF-Hydro"
+    ],
+    "correct": "C",
+    "explanation": "EFAS uses the LISFLOOD distributed hydrological model driven by ECMWF weather forecasts."
+  },
+  {
+    "type": "mcq",
+    "question": "What hydrological model does the US National Water Model use?",
+    "options": [
+      "A) LISFLOOD",
+      "B) SWAT",
+      "C) WRF-Hydro",
+      "D) VIC"
+    ],
+    "correct": "C",
+    "explanation": "The NWM applies WRF-Hydro to the entire US for discharge predictions."
+  },
+  {
+    "type": "mcq",
+    "question": "The bed area correction for sloped terrain uses the factor:",
+    "options": [
+      "A) 1 + S/100",
+      "B) sqrt(1 + (S/100)^2)",
+      "C) S/100",
+      "D) sin(S)"
+    ],
+    "correct": "B",
+    "explanation": "The slope correction sqrt(1 + (S/100)^2) accounts for the 3D surface area of sloped terrain beneath the water."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Onion Creek example at 1 m depth, the hydraulic radius R was:",
+    "options": [
+      "A) 0.112 m",
+      "B) 0.512 m",
+      "C) 0.712 m",
+      "D) 1.44 m"
+    ],
+    "correct": "C",
+    "explanation": "R = A_x/P = 6.78/9.52 = 0.712 m."
+  },
+  {
+    "type": "mcq",
+    "question": "The reach length for the Onion Creek worked example was:",
+    "options": [
+      "A) 692 m",
+      "B) 1,500 m",
+      "C) 6,920 m",
+      "D) 15,000 m"
+    ],
+    "correct": "C",
+    "explanation": "L = 6,920 m (4.3 miles) was the reach length for COMID 5781733."
+  },
+  {
+    "type": "mcq",
+    "question": "What routing method does the National Water Model use?",
+    "options": [
+      "A) Kinematic wave",
+      "B) RAPID with Muskingum routing",
+      "C) Full dynamic wave",
+      "D) Diffusion wave"
+    ],
+    "correct": "B",
+    "explanation": "The NWM uses RAPID (Routing Application for Parallel computatIon of Discharge) with Muskingum routing."
+  },
+  {
+    "type": "mcq",
+    "question": "What Hungarian statistical office provides population data for flood impact assessment?",
+    "options": [
+      "A) OVF",
+      "B) KSH",
+      "C) Lechner",
+      "D) FOMI"
+    ],
+    "correct": "B",
+    "explanation": "KSH (Kozponti Statisztikai Hivatal, Hungarian Central Statistical Office) provides population data at multiple spatial resolutions."
+  },
+  {
+    "type": "mcq",
+    "question": "Eurostat's GISCO provides population grids at what resolution?",
+    "options": [
+      "A) 100 m",
+      "B) 1 km^2",
+      "C) 10 km^2",
+      "D) 100 km^2"
+    ],
+    "correct": "B",
+    "explanation": "The 1 km^2 population grid from Eurostat enables rapid exposure estimates without building-level data."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the HAND-based approach's greatest advantage over HEC-RAS for nationwide flood mapping?",
+    "options": [
+      "A) Greater accuracy per reach",
+      "B) Better representation of bridge hydraulics",
+      "C) Scale: covers 100% of stream miles vs 25% for FEMA",
+      "D) More detailed temporal resolution"
+    ],
+    "correct": "C",
+    "explanation": "HAND covers all streams, while FEMA detailed maps exist for fewer than 25% of stream miles."
+  },
+  {
+    "type": "mcq",
+    "question": "Texas invested approximately how much in LiDAR data acquisition?",
+    "options": [
+      "A) $4 million",
+      "B) $40 million",
+      "C) $400 million",
+      "D) $4 billion"
+    ],
+    "correct": "B",
+    "explanation": "Texas invested approximately $40 million in LiDAR covering 180,000 square miles."
+  },
+  {
+    "type": "mcq",
+    "question": "The HAND-based rating curve tends to overestimate depth at low flows because:",
+    "options": [
+      "A) Manning's n is too low",
+      "B) The DEM represents water surface, not channel bed",
+      "C) The stream network is too dense",
+      "D) The DEM has too high resolution"
+    ],
+    "correct": "B",
+    "explanation": "DEMs see the water surface, not the channel bottom, making the channel appear shallower than it really is."
+  },
+  {
+    "type": "mcq",
+    "question": "At what flows does HAND-derived rating curve agreement with observed data tend to be best?",
+    "options": [
+      "A) Very low flows",
+      "B) Near bankfull (moderate) flows",
+      "C) Extreme flood flows",
+      "D) Agreement is uniform at all flows"
+    ],
+    "correct": "B",
+    "explanation": "At bankfull, the DEM accurately represents bank and near-channel topography, and the channel-to-floodplain transition is well-captured."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the most effective calibration strategy for HAND rating curves?",
+    "options": [
+      "A) Adjust the DEM resolution",
+      "B) Change the stream network threshold",
+      "C) Adjust Manning's n until the rating curve matches observations at bankfull and overbank flows",
+      "D) Modify the flow direction algorithm"
+    ],
+    "correct": "C",
+    "explanation": "Adjusting n to match observed rating curves at bankfull and overbank flows, accepting bias at low flows as a DEM limitation."
+  },
+  {
+    "type": "mcq",
+    "question": "The EU Floods Directive requires maps for which three probability scenarios?",
+    "options": [
+      "A) Annual, 10-year, 100-year",
+      "B) Low probability (extreme), medium probability (~100-year), high probability (frequent)",
+      "C) 50-year, 100-year, 500-year",
+      "D) Dry, normal, wet"
+    ],
+    "correct": "B",
+    "explanation": "The directive specifies low probability (extreme), medium probability (design flood ~100-year), and high probability (frequent) scenarios."
+  },
+  {
+    "type": "mcq",
+    "question": "Hungary's flood hazard and risk maps were first produced in:",
+    "options": [
+      "A) 2000",
+      "B) 2007",
+      "C) 2013",
+      "D) 2019"
+    ],
+    "correct": "C",
+    "explanation": "First produced in 2013, then revised in 2019 and 2025 under the EU Floods Directive cycle."
+  },
+  {
+    "type": "mcq",
+    "question": "What portal provides access to Hungarian flood risk maps?",
+    "options": [
+      "A) data.vizugy.hu",
+      "B) geoportal.vizugy.hu and vizeink.hu",
+      "C) met.hu",
+      "D) hydroinfo.hu"
+    ],
+    "correct": "B",
+    "explanation": "Flood hazard and risk maps are available through geoportal.vizugy.hu and the vizeink.hu flood risk management portal."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza levee system protects approximately what area of land?",
+    "options": [
+      "A) 5,000 km^2",
+      "B) 18,000 km^2",
+      "C) 50,000 km^2",
+      "D) 93,000 km^2"
+    ],
+    "correct": "B",
+    "explanation": "The levee system protects approximately 18,000 km^2, about 20% of Hungary's total area."
+  },
+  {
+    "type": "mcq",
+    "question": "What year did the National Water Model become operational?",
+    "options": [
+      "A) 2010",
+      "B) 2013",
+      "C) 2016",
+      "D) 2020"
+    ],
+    "correct": "C",
+    "explanation": "The NWM became operational in 2016, after the 2013 Onion Creek flood that catalyzed its development."
+  },
+  {
+    "type": "mcq",
+    "question": "How much would a pre-computed inundation library for all of Hungary's rivers cost on modern cloud infrastructure?",
+    "options": [
+      "A) Millions of dollars",
+      "B) A few thousand dollars",
+      "C) Less than $100",
+      "D) Nothing, it's free"
+    ],
+    "correct": "B",
+    "explanation": "The computation could be done on a single workstation in days, or on cloud platforms for a few thousand dollars."
+  },
+  {
+    "type": "mcq",
+    "question": "What land cover dataset is used for Manning's n estimation in Europe?",
+    "options": [
+      "A) NLCD",
+      "B) CORINE Land Cover",
+      "C) GlobCover",
+      "D) FROM-GLC"
+    ],
+    "correct": "B",
+    "explanation": "CORINE Land Cover is the standard European land cover dataset for estimating Manning's roughness."
+  },
+  {
+    "type": "mcq",
+    "question": "A 20% change in Manning's n produces approximately what change in computed discharge?",
+    "options": [
+      "A) 5%",
+      "B) 10%",
+      "C) 20%",
+      "D) 40%"
+    ],
+    "correct": "C",
+    "explanation": "Since Q is proportional to 1/n, a 20% change in n produces approximately a 20% change in Q."
+  },
+  {
+    "type": "mcq",
+    "question": "The HAND approach and HEC-RAS are described as:",
+    "options": [
+      "A) Competitors that serve the same purpose",
+      "B) Complementary tools serving different purposes at different scales",
+      "C) Identical in accuracy",
+      "D) Only useful when combined"
+    ],
+    "correct": "B",
+    "explanation": "The relationship is like a weather forecast (broad coverage) versus a wind tunnel test (local precision)."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Python/NumPy expression for inundation, the code is:",
+    "options": [
+      "A) np.where(hand > depth, depth - hand, 0.0)",
+      "B) np.where(depth > hand, depth - hand, 0.0)",
+      "C) np.where(depth > hand, hand - depth, 0.0)",
+      "D) np.where(hand < 0, depth, 0.0)"
+    ],
+    "correct": "B",
+    "explanation": "inundation = np.where(depth > hand, depth - hand, 0.0) computes flood depth where depth exceeds HAND."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the typical overbank depth accuracy for a calibrated HEC-RAS model?",
+    "options": [
+      "A) 1-3%",
+      "B) 5-15%",
+      "C) 30-50%",
+      "D) 75-100%"
+    ],
+    "correct": "B",
+    "explanation": "Calibrated HEC-RAS achieves 5-15% depth error, compared to 20-50% for the HAND approach."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM produces a new short-range forecast every:",
+    "options": [
+      "A) 15 minutes",
+      "B) 1 hour",
+      "C) 6 hours",
+      "D) 24 hours"
+    ],
+    "correct": "B",
+    "explanation": "The NWM produces new short-range forecasts every hour."
+  },
+  {
+    "type": "mcq",
+    "question": "For the Tisza at Szolnok, the HAND-derived Q at 6 m depth was approximately:",
+    "options": [
+      "A) 243 m^3/s",
+      "B) 2,430 m^3/s",
+      "C) 24,300 m^3/s",
+      "D) 243,000 m^3/s"
+    ],
+    "correct": "B",
+    "explanation": "Q = 28.57 x 7200 x 1.87 x 0.00632 = approximately 2,430 m^3/s."
+  },
+  {
+    "type": "mcq",
+    "question": "What global population dataset at 100 m resolution can be used for flood impact assessment?",
+    "options": [
+      "A) LandScan",
+      "B) WorldPop",
+      "C) GPW",
+      "D) GHSL"
+    ],
+    "correct": "B",
+    "explanation": "WorldPop provides 100 m resolution population data freely available for global flood impact assessment."
+  },
+  {
+    "type": "mcq",
+    "question": "OVF gauge data has been available through data.vizugy.hu for free since:",
+    "options": [
+      "A) January 2020",
+      "B) July 2024",
+      "C) January 2025",
+      "D) March 2026"
+    ],
+    "correct": "B",
+    "explanation": "Historical water level and discharge records became free and open in July 2024."
+  },
+  {
+    "type": "mcq",
+    "question": "The Onion Creek HAND analysis identified how many flooded structures consistent with post-event assessment?",
+    "options": [
+      "A) About 50",
+      "B) About 200",
+      "C) About 500",
+      "D) About 2,000"
+    ],
+    "correct": "C",
+    "explanation": "The analysis correctly identified approximately 500 flooded structures, matching post-event damage assessments."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the key physical quantity that makes HAND rating curves non-linear?",
+    "options": [
+      "A) Manning's n varies with depth",
+      "B) Surface area and volume expand rapidly as water rises above bankfull onto the floodplain",
+      "C) Gravity changes with latitude",
+      "D) Temperature affects water viscosity"
+    ],
+    "correct": "B",
+    "explanation": "Below bankfull, water is in a narrow channel. Above bankfull, the floodplain provides enormous additional area, so the same discharge increase produces less depth increase."
+  },
+  {
+    "type": "mcq",
+    "question": "Research on improving Manning's n estimation uses which approach?",
+    "options": [
+      "A) Direct field measurement everywhere",
+      "B) Machine learning trained on gauged reaches",
+      "C) Constant n for all reaches",
+      "D) Random assignment"
+    ],
+    "correct": "B",
+    "explanation": "ML models trained on gauged reaches and observable landscape features (land cover, NDVI, channel width) outperform lookup tables by 20-30%."
+  },
+  {
+    "type": "mcq",
+    "question": "What Hungarian website provides real-time water level monitoring?",
+    "options": [
+      "A) data.vizugy.hu",
+      "B) www.hydroinfo.hu",
+      "C) geoportal.vizugy.hu",
+      "D) vizeink.hu"
+    ],
+    "correct": "B",
+    "explanation": "HYDROINFO (www.hydroinfo.hu) provides real-time water level observations and short-range forecasts."
+  },
+  {
+    "type": "true_false",
+    "question": "The four-step flood inundation framework can execute in minutes when intermediate products are pre-computed.",
+    "correct": true,
+    "explanation": "With pre-computed HAND, rating curves, and inundation libraries, only the forecast reception and impact overlay require real-time computation."
+  },
+  {
+    "type": "true_false",
+    "question": "A cell with HAND = 5 m in a catchment where flood depth is 3 m would be inundated.",
+    "correct": false,
+    "explanation": "The cell is dry because d (3 m) does not exceed HAND (5 m). Inundation occurs only when d > HAND."
+  },
+  {
+    "type": "true_false",
+    "question": "Two cells with identical HAND values always experience the same flood conditions.",
+    "correct": false,
+    "explanation": "They may belong to different catchments with different stream reaches and different flood depths."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND horizontal slicing approach naturally provides reach-averaged properties that are more stable than individual cross-sections.",
+    "correct": true,
+    "explanation": "By integrating over the entire reach at each depth, HAND avoids the variability that individual cross-sections introduce."
+  },
+  {
+    "type": "true_false",
+    "question": "Traditional cross-sections are impractical for the 5.5 million km of US mapped streams.",
+    "correct": true,
+    "explanation": "Surveying cross-sections for the entire stream network would take decades and cost billions."
+  },
+  {
+    "type": "true_false",
+    "question": "Manning's equation assumes unsteady, non-uniform flow conditions.",
+    "correct": false,
+    "explanation": "Manning's equation assumes steady, uniform flow, which is a significant simplification compared to real flood conditions."
+  },
+  {
+    "type": "true_false",
+    "question": "The Manning's roughness coefficient n is the most uncertain parameter in the HAND framework.",
+    "correct": true,
+    "explanation": "A 20% change in n produces approximately 20% change in discharge, and true roughness varies spatially, temporally, and with flow depth."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND-derived rating curve for a wide floodplain reach flattens at high flows.",
+    "correct": true,
+    "explanation": "When water spreads onto a wide floodplain, the enormous additional area means the same discharge increase produces only a small depth increase."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND approach requires you to assume a trapezoidal or rectangular channel shape.",
+    "correct": false,
+    "explanation": "The HAND approach derives channel geometry directly from the DEM terrain; the shape is whatever the DEM says it is."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Onion Creek 2013 analysis, all reaches received the same flood depth.",
+    "correct": false,
+    "explanation": "Different reaches received different depths (8-15 feet) based on their position and hydrological conditions during the event."
+  },
+  {
+    "type": "true_false",
+    "question": "The October 2013 Onion Creek flood occurred during nighttime, contributing to the lack of warning.",
+    "correct": true,
+    "explanation": "Heavy overnight rainfall produced a flood wave during dark hours; by 6:30 AM water had entered approximately 500 houses with almost no warning."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza at Szolnok has a steeper bed slope than Onion Creek.",
+    "correct": false,
+    "explanation": "The Tisza slope is 0.00004, while Onion Creek is 0.0163 -- the Tisza is about 400 times gentler."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza's floodplain extends 2-5 kilometres on either side between the levees at Szolnok.",
+    "correct": true,
+    "explanation": "The wide, flat floodplain is a defining characteristic of the middle Tisza."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza, a 3-metre flood depth produces more than 100 m^3/s discharge.",
+    "correct": false,
+    "explanation": "At 3 m depth on the Tisza (Table 15.5), Q is less than 100 m^3/s because the slope is extremely gentle."
+  },
+  {
+    "type": "true_false",
+    "question": "Pre-computed inundation libraries at the National Water Center enable flood map updates in under 3 minutes.",
+    "correct": true,
+    "explanation": "The lookup-based approach eliminates real-time raster computation; the entire pipeline completes in under 3 minutes."
+  },
+  {
+    "type": "true_false",
+    "question": "The US pre-computed inundation library requires tens of terabytes of storage.",
+    "correct": true,
+    "explanation": "67.5 million individual maps, each typically a few kilobytes to hundreds of kilobytes, sum to tens of terabytes."
+  },
+  {
+    "type": "true_false",
+    "question": "The JRC flood hazard maps are computed from real-time discharge data.",
+    "correct": false,
+    "explanation": "JRC maps are static, based on return periods (10-500 year), not real-time discharge."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS sends flood alerts directly to the public.",
+    "correct": false,
+    "explanation": "EFAS sends notifications to national hydrological services (partner agencies), which then translate them into public warnings."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's OVF is an EFAS partner agency.",
+    "correct": true,
+    "explanation": "Hungary's OVF receives EFAS notifications for the Danube and Tisza basins, complementing its national forecasting."
+  },
+  {
+    "type": "true_false",
+    "question": "GloFAS provides seasonal flood outlooks up to 4 months ahead.",
+    "correct": true,
+    "explanation": "GloFAS provides medium-range (30-day) forecasts and seasonal (4-month) flood outlooks."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus Emergency Management Service can produce flood maps from satellite imagery within hours of acquisition.",
+    "correct": true,
+    "explanation": "On-demand satellite-based mapping using primarily Sentinel-1 SAR produces flood extent maps within hours."
+  },
+  {
+    "type": "true_false",
+    "question": "Building-level flood risk based on HAND changes with each flood event.",
+    "correct": false,
+    "explanation": "HAND values are permanent terrain properties that do not change with events; a building's HAND value is a persistent measure of its flood exposure."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND approach accounts for backwater effects at bridges and flow constrictions.",
+    "correct": false,
+    "explanation": "HAND has no concept of structures and ignores backwater, momentum, and constriction effects."
+  },
+  {
+    "type": "true_false",
+    "question": "HEC-RAS 2D can model lateral flow across floodplains with physically correct velocities.",
+    "correct": true,
+    "explanation": "HEC-RAS 2D solves the shallow water equations on a computational mesh, modeling lateral floodplain flow."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND-based flood mapping has no lateral flow concept -- water simply appears wherever HAND < depth.",
+    "correct": true,
+    "explanation": "HAND classifies cells as wet or dry based on height comparison; it cannot capture the dynamics of floodplain flow."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-RAS 2D simulation for a 100 km reach typically takes milliseconds.",
+    "correct": false,
+    "explanation": "It typically takes hours, compared to milliseconds for the HAND lookup approach."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND provides at least a screening-level assessment for every stream mile, including unmapped headwater streams.",
+    "correct": true,
+    "explanation": "Unlike FEMA maps (25% coverage), HAND covers 100% of stream miles including headwaters where flash floods cause the most casualties."
+  },
+  {
+    "type": "true_false",
+    "question": "The steady flow assumption in Manning's equation is more problematic for flash floods than for slow-rising Tisza floods.",
+    "correct": true,
+    "explanation": "Flash floods peak in hours with significant momentum effects, while Tisza floods evolve over days, closer to the steady-state assumption."
+  },
+  {
+    "type": "true_false",
+    "question": "The single depth per reach assumption means that depth variations along a reach (deeper at constrictions, shallower where the floodplain widens) are not captured.",
+    "correct": true,
+    "explanation": "Each reach receives one uniform depth, smoothing out along-reach geometric variations."
+  },
+  {
+    "type": "true_false",
+    "question": "The NED has a vertical RMSE of approximately 2.34 metres.",
+    "correct": true,
+    "explanation": "This means individual HAND values from NED may be in error by 2+ metres."
+  },
+  {
+    "type": "true_false",
+    "question": "Green-beam LiDAR can penetrate water to measure channel bed elevation.",
+    "correct": true,
+    "explanation": "Green light at 532 nm penetrates clear water, and topobathy DEMs merge above-water LiDAR with below-water bathymetry."
+  },
+  {
+    "type": "true_false",
+    "question": "The most effective calibration strategy adjusts Manning's n against observed rating curves at gauged locations.",
+    "correct": true,
+    "explanation": "Calibrating n at bankfull and overbank flows against gauge data is the most reliable approach."
+  },
+  {
+    "type": "true_false",
+    "question": "A more uniform reach segmentation of 1-2 km produces better inundation mapping than the variable NHDPlus segmentation.",
+    "correct": true,
+    "explanation": "Research by Zheng et al. showed more uniform segments produce better hydraulic property estimation and inundation results."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND-derived hydraulic property tables could improve the NWM's channel routing by replacing simplified geometry estimates.",
+    "correct": true,
+    "explanation": "HAND-derived cross-sectional area, hydraulic radius, and wetted perimeter as functions of depth could replace idealized geometry."
+  },
+  {
+    "type": "true_false",
+    "question": "Machine learning models for roughness estimation outperform traditional lookup tables by 20-30% in cross-validation.",
+    "correct": true,
+    "explanation": "ML models using observable landscape features (land cover, NDVI, channel width, slope) have shown significant improvement."
+  },
+  {
+    "type": "true_false",
+    "question": "The 2001 Tisza flood at Szolnok had a water level of about 10.6 metres above zero gauge.",
+    "correct": true,
+    "explanation": "The 2001 flood peak at Szolnok reached approximately 10.6 m above zero gauge level."
+  },
+  {
+    "type": "true_false",
+    "question": "Ensemble approaches using multiple Manning's n values are less informative than a single best estimate.",
+    "correct": false,
+    "explanation": "Knowing '200-400 houses at risk depending on roughness' is more useful for planning than a single number with unknown uncertainty."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM uses Muskingum routing through the RAPID method.",
+    "correct": true,
+    "explanation": "RAPID (Routing Application for Parallel computatIon of Discharge) implements Muskingum routing for the NWM."
+  },
+  {
+    "type": "true_false",
+    "question": "The 'Pin to Flood Map' app was developed at ECMWF.",
+    "correct": false,
+    "explanation": "It was developed at the University of Texas at Austin for crowd-sourced flood validation."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND-based flood mapping can be applied globally using the Copernicus GLO-30 DEM and HydroSHEDS river network.",
+    "correct": true,
+    "explanation": "These freely available datasets enable HAND computation for any location on Earth."
+  },
+  {
+    "type": "true_false",
+    "question": "Computing a global HAND raster is technically infeasible with current data and computing infrastructure.",
+    "correct": false,
+    "explanation": "Research groups and the World Bank have demonstrated prototypes; the computation is technically feasible."
+  },
+  {
+    "type": "true_false",
+    "question": "In Hungary, the flood hazard maps under the EU Floods Directive have been revised in 2019 and 2025.",
+    "correct": true,
+    "explanation": "First produced in 2013, revised in 2019 and 2025 with improved data and updated analyses."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Onion Creek worked example, the mean inundation depth at 1 m water depth was 0.713 m.",
+    "correct": true,
+    "explanation": "The average depth across 658 inundated cells was 0.713 m, less than the 1.0 m nominal depth because some cells are nearly at stream level."
+  },
+  {
+    "type": "true_false",
+    "question": "The bed area of the Onion Creek inundated zone was significantly larger than its surface area at 1 m depth.",
+    "correct": false,
+    "explanation": "The mean slope factor was 1.00104 (nearly flat floodplain), so bed area was barely larger than surface area."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS produces deterministic forecasts updated twice daily with a 10-day horizon.",
+    "correct": true,
+    "explanation": "The high-resolution (HRES) atmospheric model produces deterministic forecasts twice daily."
+  },
+  {
+    "type": "true_false",
+    "question": "The JRC Global Flood Monitoring system uses satellite imagery to detect flood events in near-real-time.",
+    "correct": true,
+    "explanation": "It detects floods from Sentinel-1 SAR and other satellites, producing extent maps within hours."
+  },
+  {
+    "type": "true_false",
+    "question": "The EDO (European Drought Observatory) is relevant to flood risk because drought hardens soil and reduces infiltration.",
+    "correct": true,
+    "explanation": "Drought conditions crack and harden soil, reducing infiltration capacity and increasing runoff during subsequent rainfall."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND approach has been described as a paradigm shift from site-specific expert-driven flood mapping.",
+    "correct": true,
+    "explanation": "It represents a shift to systematic, automated, data-driven capability at continental and global scales."
+  },
+  {
+    "type": "true_false",
+    "question": "The LISFLOOD model used by the JRC is the same as the HAND-based approach.",
+    "correct": false,
+    "explanation": "LISFLOOD is a hydrological-hydraulic model that solves flow equations; it is a fundamentally different approach from the terrain-based HAND method."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The four steps of the flood inundation framework are: discharge forecast, depth estimation, inundation mapping, and _____ assessment.",
+    "correct": "impact",
+    "explanation": "Impact assessment overlays the inundation map with building, road, and population data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rating curve maps _____ to water depth for a specific stream reach.",
+    "correct": "discharge",
+    "explanation": "The rating curve is the mathematical relationship between discharge (Q) and depth (d)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Inundation depth = d - h, where d is flood depth and h is the cell's _____ value.",
+    "correct": "HAND",
+    "explanation": "The simple comparison of flood depth against HAND determines inundation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the NHDPlus system, each stream reach has a unique identifier called _____.",
+    "correct": "COMID",
+    "explanation": "COMID links each reach to its discharge forecast, rating curve, and catchment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND approach derives hydraulic properties by slicing terrain _____ at successive water depths.",
+    "correct": "horizontally",
+    "explanation": "Horizontal slicing integrates over the entire reach simultaneously, unlike vertical cross-sections."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Cross-sectional area from HAND is computed as A_x = V / _____.",
+    "correct": "L",
+    "explanation": "Volume divided by reach length gives the average flow area perpendicular to the stream."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hydraulic radius R equals A_x divided by _____.",
+    "correct": "P (wetted perimeter)",
+    "explanation": "R = A_x / P governs flow resistance in Manning's equation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's equation: Q = (1/n) * A_x * R^(2/3) * _____^(1/2).",
+    "correct": "S_0",
+    "explanation": "S_0 is the bed slope (dimensionless), the energy gradient driving the flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The default Manning's n used for initial HAND analyses is _____.",
+    "correct": "0.05",
+    "explanation": "This acknowledges 30-50% uncertainty in discharge predictions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The conversion factor in Manning's equation for US customary units is _____.",
+    "correct": "1.49",
+    "explanation": "1.49/n replaces 1/n when using feet and cfs instead of metres and m^3/s."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In NHDPlus, the reach elevation attributes used for slope calculation are MAXELEVSMO and _____.",
+    "correct": "MINELEVSMO",
+    "explanation": "These store smoothed maximum and minimum elevations along each reach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Onion Creek flood of October _____ catalyzed development of the Texas Flood Response System.",
+    "correct": "2013",
+    "explanation": "Five people drowned and 500 houses flooded with almost no warning."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The COMID of the Onion Creek reach in the worked example is _____.",
+    "correct": "5781733",
+    "explanation": "This specific NHDPlus reach was used to demonstrate the hydraulic property computation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Onion Creek bed slope used in the example is S_0 = _____.",
+    "correct": "0.0163",
+    "explanation": "This relatively steep slope is typical of the Texas Hill Country."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza at Szolnok has a bed slope of approximately _____ (4 cm/km).",
+    "correct": "0.00004",
+    "explanation": "This extreme flatness is 400 times gentler than Onion Creek."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 2001 Tisza flood peak at Szolnok was approximately _____ m^3/s.",
+    "correct": "2,700",
+    "explanation": "This peak discharge corresponded to about 10.6 m water level above zero gauge."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Pre-computed inundation maps at the National Water Center use depth intervals of 1 _____.",
+    "correct": "foot (0.3 m)",
+    "explanation": "Maps are stored at 1-foot increments from 0 to approximately 25 feet."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US pre-computed library contains approximately _____ million individual inundation maps.",
+    "correct": "67.5",
+    "explanation": "2.7 million reaches x 25 depth increments = approximately 67.5 million maps."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The real-time inundation pipeline completes in under _____ minutes.",
+    "correct": "3",
+    "explanation": "Lookup-based processing eliminates all real-time raster computation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The JRC flood hazard maps cover return periods from 10 to _____ years.",
+    "correct": "500",
+    "explanation": "Maps cover 10, 20, 50, 100, 200, and 500-year return periods."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HYDROINFO provides forecasts at _____ forecast sections in Hungary.",
+    "correct": "98",
+    "explanation": "The OVF monitoring system covers 98 sections along the Danube, Tisza, and tributaries."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS operates at _____ degree (~5 km) resolution globally.",
+    "correct": "0.05",
+    "explanation": "This resolution covers every major river on Earth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Texas has _____ million address points for flood impact assessment.",
+    "correct": "9.28",
+    "explanation": "These represent every building that can receive emergency services."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Fewer than _____% of US stream miles have detailed FEMA flood maps.",
+    "correct": "25",
+    "explanation": "HAND fills the gap for the remaining 75% of unmapped streams."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Saint-Venant equations consist of the _____ equation and the momentum equation.",
+    "correct": "continuity",
+    "explanation": "Continuity (mass conservation) and momentum (force balance) together describe unsteady open-channel flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS was developed by the US _____ Corps of Engineers.",
+    "correct": "Army",
+    "explanation": "The Hydrologic Engineering Center is part of the US Army Corps of Engineers."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The National Water Model became operational in the year _____.",
+    "correct": "2016",
+    "explanation": "This was after the 2013 Onion Creek flood that catalyzed its development."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS uses the _____ hydrological model driven by ECMWF weather forecasts.",
+    "correct": "LISFLOOD",
+    "explanation": "LISFLOOD is the distributed hydrological model used for European flood forecasting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US National Water Model uses the _____ hydrological model.",
+    "correct": "WRF-Hydro",
+    "explanation": "WRF-Hydro is applied to the entire US for discharge predictions on all NHDPlus reaches."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Manning's equation, Q is proportional to 1/n, so discharge is _____ proportional to roughness.",
+    "correct": "inversely",
+    "explanation": "Higher roughness (larger n) produces lower discharge for the same depth."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS ensemble forecasts use _____ equally likely scenarios.",
+    "correct": "51",
+    "explanation": "The ECMWF ensemble prediction system provides 51 scenarios for probabilistic forecasting."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The crowd-sourced validation app developed at UT Austin is called _____ to Flood Map.",
+    "correct": "Pin",
+    "explanation": "Observers drop a pin at the water's edge, and the app uses HAND to extrapolate the flood extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM routing method is called _____ with Muskingum routing.",
+    "correct": "RAPID",
+    "explanation": "RAPID (Routing Application for Parallel computatIon of Discharge) handles channel routing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "KSH stands for Kozponti Statisztikai _____.",
+    "correct": "Hivatal",
+    "explanation": "KSH (Hungarian Central Statistical Office) provides population data for flood impact assessment."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza levee system protects approximately _____ km^2 of land.",
+    "correct": "18,000",
+    "explanation": "This is about 20% of Hungary's total area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The EU Floods Directive requires flood risk maps showing the indicative number of _____ potentially affected.",
+    "correct": "inhabitants",
+    "explanation": "Risk maps must show affected population, economic activity, environmental impacts, and cultural heritage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Research averaging length needed for stable depth-discharge relationships on large rivers is approximately _____ km.",
+    "correct": "1.5",
+    "explanation": "Below this length, cross-section properties vary too much for stable relationships."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 20% change in Manning's n produces approximately a _____% change in predicted discharge.",
+    "correct": "20",
+    "explanation": "This direct proportionality makes n the single largest source of uncertainty."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND-based approach typically produces _____-50% depth error for overbank flows.",
+    "correct": "20",
+    "explanation": "This compares to 5-15% for calibrated HEC-RAS models."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Eurostat's GISCO provides a _____ km^2 population grid for EU flood impact estimation.",
+    "correct": "1",
+    "explanation": "This grid enables rapid population exposure estimates without building-level data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The mean slope factor in the Onion Creek inundated zone at 1 m depth was _____, indicating nearly flat terrain.",
+    "correct": "1.00104",
+    "explanation": "Values near 1.0 indicate flat terrain where bed area approximately equals surface area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's flood hazard maps have been revised in 2013, 2019, and _____.",
+    "correct": "2025",
+    "explanation": "Each revision incorporates improved data, updated analyses, and lessons from recent events."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM short-range forecast horizon is _____ hours.",
+    "correct": "18",
+    "explanation": "Short-range = 18 hours; medium-range = 10 days; long-range = 30 days."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Onion Creek example, _____ address points in Travis County were available for impact analysis.",
+    "correct": "355,000",
+    "explanation": "Each point was sampled against the HAND raster and assigned to a catchment for flood depth comparison."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the four-step discharge-to-impact flood inundation framework and explain why it can execute in minutes during a flood emergency.",
+    "correct": "The four steps are: (1) obtain a discharge forecast from NWM, EFAS, or gauge data; (2) convert discharge to water depth using a pre-computed rating curve; (3) compare depth against the HAND raster cell-by-cell to identify inundated areas; (4) overlay the flood map with building and population data for impact assessment. Speed is possible because the computationally expensive work (HAND computation, rating curve derivation, inundation library generation) is done in advance. During an event, only the forecast lookup and impact overlay require real-time computation. The National Water Center completes the entire pipeline in under 3 minutes.",
+    "explanation": "Pre-computation of terrain products transforms the flood mapping problem from computationally intensive to a simple lookup operation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND-derived reach-averaged hydraulic properties differ from traditional cross-section-based properties and why this matters for national-scale flood mapping.",
+    "correct": "Traditional cross-sections are cut vertically at discrete locations, producing variable results depending on where the section is drawn -- two sections 50 m apart may give wildly different depth-discharge relationships. HAND slices the terrain horizontally at each depth, integrating over the entire reach simultaneously. This naturally provides the ~1.5 km averaging needed for stable relationships. For national-scale mapping, cross-sections require decades of survey and billions in cost for 5.5 million km of US streams, while HAND-derived properties can be computed from existing DEM data for every reach with no field work.",
+    "explanation": "The horizontal slicing approach solves both the instability problem of individual cross-sections and the impracticality of surveying millions of km."
+  },
+  {
+    "type": "essay",
+    "question": "Walk through the computation of discharge for the Onion Creek reach at 1 m depth, identifying each step and the physical meaning of each quantity.",
+    "correct": "For reach COMID 5781733 at d=1 m: (1) Identify 658 inundated cells (HAND < 1), giving surface area 65,800 m^2. (2) Compute mean depth 0.713 m, volume = 46,915 m^3. (3) With reach length 6,920 m: A_x = V/L = 6.78 m^2 (average cross-section area), P = 9.52 m (average wetted perimeter), R = 0.712 m (hydraulic radius governing friction). (4) Apply Manning's with n=0.05, S_0=0.0163: Q = 20.0 x 6.78 x 0.797 x 0.1277 = 13.8 m^3/s. This means 1 m of water in this channel corresponds to about 14 m^3/s discharge.",
+    "explanation": "The systematic extraction of hydraulic properties from the HAND raster enables Manning's equation without any field surveys."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the Onion Creek and Tisza rating curves, explaining how terrain geometry and bed slope produce fundamentally different depth-discharge relationships.",
+    "correct": "Onion Creek has S_0=0.0163 (steep Hill Country gradient) with a narrow channel. At 3 m depth, Q=170 m^3/s through a relatively confined valley. The Tisza at Szolnok has S_0=0.00004 (400 times gentler), with a 200-400 m wide channel and floodplain extending 2-5 km. At 3 m, Q<100 m^3/s because the gentler slope produces slower flow. However, the Tisza's 8-10 m flood depths spread water across a floodplain several km wide, reaching 3,500-7,000 m^3/s. The HAND framework handles both without modification -- the terrain geometry and slope do all the work.",
+    "explanation": "The same framework produces appropriate rating curves for both steep narrow channels and flat wide floodplains."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the pre-computed inundation library concept and its role in enabling real-time flood mapping at the National Water Center.",
+    "correct": "Pre-computed libraries store inundation maps at 1-foot (0.3 m) depth intervals for all 2.7 million NHDPlus reaches, totaling about 67.5 million individual maps. During a flood event, the system: (1) receives the latest NWM forecast, (2) converts each reach's discharge to depth via the rating curve, (3) rounds to the nearest foot, (4) retrieves the pre-computed map from the library, (5) assembles reach-level maps into a national mosaic. This eliminates all raster computation during the event, completing in under 3 minutes. The library requires tens of terabytes of storage and was computed on the Cray supercomputer at the National Water Center.",
+    "explanation": "The lookup-based architecture separates one-time computational investment from real-time operational speed."
+  },
+  {
+    "type": "essay",
+    "question": "Compare and contrast the US National Water Model/HAND approach with the European EFAS/JRC approach to flood inundation mapping.",
+    "correct": "The US system uses NWM hourly forecasts for 2.7 million reaches, converted to inundation maps via HAND at 10 m resolution in real-time. Europe uses EFAS medium-range (10-day) forecasts at 5 km resolution combined with static JRC flood hazard maps for return periods (10-500 year). The US approach is real-time and reach-specific; the European approach matches forecasts to pre-computed return period maps. Europe supplements with on-demand satellite mapping (Copernicus EMS, Sentinel-1 SAR) during events. The US approach provides finer spatial and temporal detail, while Europe's return-period maps are better suited for regulatory planning under the EU Floods Directive.",
+    "explanation": "The two approaches reflect different operational philosophies: real-time reach-level mapping vs. return-period-based planning."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Manning's roughness coefficient introduces uncertainty into HAND-based flood mapping and discuss approaches to improving roughness estimation.",
+    "correct": "Manning's n is the single largest uncertainty source: a 20% change produces ~20% discharge change. True roughness varies spatially (channel vs. vegetated banks), temporally (seasonal vegetation), and with depth. For ungauged reaches (the majority), n must be estimated from land cover lookup tables (NLCD in US, CORINE in Europe). Research approaches include: calibrating against observed rating curves at gauged locations, ensemble methods reporting ranges of outcomes, and machine learning trained on gauged reaches using observable features (land cover, NDVI, channel width, slope). ML models outperform lookup tables by 20-30%. For Hungary, CORINE land cover, Sentinel-2 NDVI, and OVF gauge data could train regional roughness models.",
+    "explanation": "Improving roughness estimation is one of the most impactful paths to better HAND-based flood predictions."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the October 2013 Onion Creek flood event and explain how the HAND-based framework could have provided earlier warning.",
+    "correct": "Heavy overnight rainfall in the upper Onion Creek watershed produced a flood wave that propagated downstream during dark hours. By 6:30 AM, water had entered ~500 houses and 5 people drowned. Residents received almost no warning because the flood originated in remote upper tributaries not covered by conventional warning systems. If the NWM (operational since 2016) had existed in 2013, it would have provided discharge forecasts hours before the peak. HAND-based inundation maps would have shown exactly which houses were at risk, enabling targeted evacuation orders. The event catalyzed development of the Texas Flood Response System.",
+    "explanation": "The Onion Creek tragedy demonstrated the life-saving potential of systematic HAND-based flood mapping for all stream reaches."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the catchment-based spatial differentiation in HAND inundation mapping and why it is superior to a simple 'flood everything below elevation X' approach.",
+    "correct": "Each cell belongs to one catchment associated with one stream reach. Two cells with identical HAND values may experience different flooding if they belong to different catchments. For example, cell A (HAND=2 m) on a main river with 3.5 m depth floods to 1.5 m, while cell B (HAND=2 m) on a small tributary with 1.2 m depth stays dry. This reflects physical reality: different streams carry different water volumes. A naive elevation-based approach would flood both cells identically, ignoring the independent behavior of different drainage systems. This differentiation captures narrow flooding in incised channels vs. wide flooding on flat reaches.",
+    "explanation": "Catchment-based logic correctly captures that flood hazard depends on which stream you are near, not just how low you are."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the limitations of the HAND-based inundation approach compared to HEC-RAS, and explain why both approaches are complementary rather than competing.",
+    "correct": "HAND limitations: steady flow assumption (floods are unsteady), uniform flow (ignoring backwater at bridges), single depth per reach (missing along-reach variation), no lateral momentum (no floodplain flow dynamics), and 20-50% depth error. HEC-RAS solves Saint-Venant equations for unsteady, non-uniform flow including backwater, bridge hydraulics, and 2D floodplain flow (5-15% error), but requires days of setup per reach and covers only 25% of US streams. They complement each other: HAND provides national-scale real-time screening (100% coverage), while HEC-RAS provides detailed design-level analysis for high-priority reaches. HAND can also prioritize where to invest in HEC-RAS studies.",
+    "explanation": "The analogy is a weather forecast (broad, approximate) vs. a wind tunnel test (detailed, local) -- both are needed."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND-based flood mapping can serve countries in sub-Saharan Africa, South Asia, and other data-sparse regions that lack detailed flood maps.",
+    "correct": "These regions face devastating flooding (Brahmaputra, Niger, Mekong) but lack gauging stations, survey data, and HPC infrastructure. HAND requires only a DEM and stream network, both globally available: Copernicus GLO-30 (30 m), MERIT DEM (90 m), HydroSHEDS/HydroRIVERS. GloFAS provides discharge forecasts for every major river. Combined with WorldPop (100 m population), HAND provides screening-level flood impact assessment. While 4 m vertical accuracy limits precision, knowing 'your village has HAND 1.5 m and upstream forecast suggests 3 m flooding' is immensely more useful than no information. This is not a replacement for national programs but a critical stopgap.",
+    "explanation": "HAND's data parsimony makes it uniquely suited for regions where detailed hydraulic modeling is impossible."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Hungarian flood management context for the Tisza, including the role of OVF, HYDROINFO, EFAS, and the EU Floods Directive.",
+    "correct": "OVF (General Directorate of Water Management) operates 12 regional directorates managing the Tisza levee system protecting 18,000 km^2. HYDROINFO provides real-time monitoring at 98 forecast sections with I/II/III flood alerts. OVF is an EFAS partner, receiving pan-European forecasts from ECMWF to complement national forecasting. Under the EU Floods Directive (2007/60/EC), Hungary produces flood hazard and risk maps for the Tisza, Danube, and Drava for three probability scenarios, revised every 6 years (2013, 2019, 2025). Maps show flood extent, depth, affected population, economic activity, and environmental/cultural heritage. Available through geoportal.vizugy.hu and vizeink.hu.",
+    "explanation": "Hungary has a comprehensive flood management framework combining national operations with European-level forecasting and regulation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of a synthetic rating curve derived from HAND and how it can be validated against observed data from gauge stations.",
+    "correct": "A synthetic rating curve is built by computing HAND-derived hydraulic properties (A_x, R, P) at each depth increment, then applying Manning's equation to get discharge Q for each depth d. The resulting (Q, d) pairs define the curve. For validation, compare against observed rating curves at gauged locations (USGS in US, OVF in Hungary, GRDC globally). Typical findings: HAND overestimates depth at low flows (DEM shows water surface, not bed), agrees well at bankfull, and depends on DEM quality at high flows. The best calibration adjusts Manning's n to match observations at bankfull and overbank. Discrepancies indicate n problems, DEM issues, or segmentation problems.",
+    "explanation": "Validation against gauge data is essential for establishing confidence in HAND-derived rating curves and identifying needed corrections."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the HAND-based framework represents a paradigm shift in flood mapping from site-specific expert-driven analysis to systematic automated coverage.",
+    "correct": "For decades, flood mapping required months of expert work per reach: building HEC-RAS models, surveying cross-sections, calibrating against historical floods. This produced excellent local results but covered only ~25% of US streams. HAND inverts this: starting with terrain available everywhere (from satellites), it derives hydraulic properties and inundation maps for every reach simultaneously. Results are less accurate (20-50% vs. 5-15% depth error) but they exist everywhere. The same philosophy appears in NWM (single model for all US), EFAS (all of Europe), and GloFAS (global). For the 75% of unmapped streams and countless river km worldwide, an approximate map is infinitely better than no map at all.",
+    "explanation": "Trading local precision for global coverage is the defining characteristic of this paradigm shift."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the five data links in the HAND information model connect a discharge forecast to individual building flood depths.",
+    "correct": "The five links form a chain: (1) Reach to discharge: each reach has a unique COMID linked to NWM/EFAS forecast values. (2) Reach to depth: each reach has a pre-computed rating curve mapping Q to d. (3) Catchment to reach: each catchment is associated with one reach through watershed delineation. (4) Cell to catchment: a catchment raster assigns every cell to its parent catchment. (5) Cell to HAND: each cell has a HAND value from Chapter 14. Following the chain: forecast provides Q for a COMID, rating curve gives d, catchment raster identifies which cells belong to that reach, and HAND comparison determines if each cell floods (d > HAND gives inundation depth d - HAND).",
+    "explanation": "Understanding this chain is essential because it shows how a single discharge number propagates to affect thousands of cells."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of bathymetry in HAND-based flood mapping and explain why most DEMs underestimate channel depth.",
+    "correct": "Most DEMs, including LiDAR products, measure the water surface rather than the channel bed. In a river with 2 m water, the DEM shows the surface, making the channel appear 2 m shallower than reality. This biases the HAND-derived rating curve: more depth (and discharge) is needed to produce the same inundation extent. Green-beam LiDAR (532 nm) can penetrate clear water to measure the bed, and ADCPs on boats provide submerged measurements. Merging above-water LiDAR with below-water bathymetry creates 'topobathy' DEMs that substantially improve hydraulic properties. The USGS has produced topobathy DEMs for major rivers, and OVF maintains bathymetric surveys of navigable rivers that could be integrated.",
+    "explanation": "The bathymetry gap is a fundamental limitation that affects all DEM-based hydraulic analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how flood impact assessment works using address points, HAND values, and catchment assignments, with the Onion Creek example.",
+    "correct": "Each of 355,000 Travis County address points is: (1) assigned a HAND value by sampling the raster, (2) assigned to a catchment via the catchment raster, linking it to a stream reach with a flood depth. If d_reach > HAND_building, the building floods to depth d_reach - HAND_building. For the 2013 event with reach-specific depths (8-15 feet), the analysis identified ~500 flooded structures matching post-event assessments. The approach also enables prospective prediction: with NWM forecasts, it shows which houses will flood hours before the event. Texas has 9.28 million address points enabling statewide impact assessment. The power is not retrospective analysis but real-time prediction.",
+    "explanation": "HAND-based impact assessment transforms physical flood maps into actionable information about affected people and buildings."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the single-depth-per-reach assumption is a limitation and what research suggests for improving reach segmentation.",
+    "correct": "Each NHDPlus reach receives one flood depth applied uniformly to all cells in its catchment. In reality, depth varies along the reach: deeper at constrictions, shallower where the floodplain widens. NHDPlus reaches were not designed for hydraulic calculations; some are very short (unstable properties) and others very long (spanning varying geometries). Research by Zheng et al. shows that more uniform segmentation (1-2 km reaches with regular catchment shapes) produces better inundation results. The HAND computation itself is independent of segmentation, but rating curve derivation and depth assignment are sensitive to how the network is partitioned. Re-segmentation remains an active research area.",
+    "explanation": "Optimal reach segmentation is a practical challenge that affects the accuracy of reach-averaged hydraulic properties."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how EFAS and the Copernicus EMS work together during a major flood event in Europe, including Hungary's role as an EFAS partner.",
+    "correct": "EFAS provides medium-range (10-day) probabilistic discharge forecasts from LISFLOOD driven by ECMWF weather models. When thresholds are exceeded, EFAS alerts partner agencies like Hungary's OVF, which activates national forecasting. The Copernicus EMS provides on-demand satellite mapping using Sentinel-1 SAR (penetrates clouds) and Sentinel-2 optical, producing actual flood extent maps within hours. These complement EFAS predictions (which show what might happen) with satellite observations (which show what is happening). Hungary applies its own HYDROINFO system with 98 forecast sections and I/II/III flood alerts. The JRC's pre-computed return-period maps provide the regulatory planning framework.",
+    "explanation": "The European system combines pan-European forecasting, national operations, satellite monitoring, and regulatory mapping."
+  },
+  {
+    "type": "mcq",
+    "question": "The NWM medium-range forecast covers how many days?",
+    "options": [
+      "A) 3 days",
+      "B) 5 days",
+      "C) 10 days",
+      "D) 30 days"
+    ],
+    "correct": "C",
+    "explanation": "Short-range = 18 hours, medium-range = 10 days, long-range = 30 days."
+  },
+  {
+    "type": "mcq",
+    "question": "In HydroSHEDS, each stream reach has a unique identifier called:",
+    "options": [
+      "A) COMID",
+      "B) PFAF_ID",
+      "C) HUC code",
+      "D) Reach code"
+    ],
+    "correct": "B",
+    "explanation": "HydroSHEDS uses PFAF_ID as the unique identifier for stream reaches globally."
+  },
+  {
+    "type": "mcq",
+    "question": "The Onion Creek watershed is located in which US state?",
+    "options": [
+      "A) Louisiana",
+      "B) Florida",
+      "C) Texas",
+      "D) Oklahoma"
+    ],
+    "correct": "C",
+    "explanation": "Onion Creek is a tributary of the Colorado River flowing through the southern suburbs of Austin, Texas."
+  },
+  {
+    "type": "mcq",
+    "question": "How many people drowned in the October 2013 Onion Creek flood?",
+    "options": [
+      "A) 2",
+      "B) 5",
+      "C) 12",
+      "D) 50"
+    ],
+    "correct": "B",
+    "explanation": "Five people drowned and approximately 500 houses were flooded with almost no warning."
+  },
+  {
+    "type": "mcq",
+    "question": "The Tisza's natural gradient on the Hungarian plain is approximately:",
+    "options": [
+      "A) 10 m/km",
+      "B) 1 m/km",
+      "C) 0.1 m/km",
+      "D) 3-5 cm/km"
+    ],
+    "correct": "D",
+    "explanation": "The Tisza's gradient is only 3-5 cm per kilometer on the Great Hungarian Plain, causing flood waves to slow and spread."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the Manning's equation exponent on the hydraulic radius R?",
+    "options": [
+      "A) 1/2",
+      "B) 2/3",
+      "C) 3/4",
+      "D) 1"
+    ],
+    "correct": "B",
+    "explanation": "Manning's equation uses R^(2/3), a two-thirds power of the hydraulic radius."
+  },
+  {
+    "type": "mcq",
+    "question": "What major flood events tested the Tisza levee system in consecutive years?",
+    "options": [
+      "A) 1990, 1991, 1992, 1993",
+      "B) 1998, 1999, 2000, 2001",
+      "C) 2005, 2006, 2007, 2008",
+      "D) 2010, 2011, 2012, 2013"
+    ],
+    "correct": "B",
+    "explanation": "The 1998-2001 series of floods tested the system to its limits, with the 2001 flood setting records."
+  },
+  {
+    "type": "mcq",
+    "question": "The raster algebra expression for inundation in ArcGIS is:",
+    "options": [
+      "A) Con(hand_raster > depth_raster, depth_raster - hand_raster, 0)",
+      "B) Con(depth_raster > hand_raster, depth_raster - hand_raster, 0)",
+      "C) depth_raster * hand_raster",
+      "D) depth_raster + hand_raster"
+    ],
+    "correct": "B",
+    "explanation": "Con checks if depth exceeds HAND; if true, the inundation depth is their difference."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the top width T computed as from HAND raster quantities?",
+    "options": [
+      "A) V / L",
+      "B) A_b / L",
+      "C) A_s / L",
+      "D) A_x / R"
+    ],
+    "correct": "C",
+    "explanation": "Top width T = A_s / L, where A_s is surface area and L is reach length."
+  },
+  {
+    "type": "mcq",
+    "question": "The wetted perimeter P is computed as:",
+    "options": [
+      "A) V / L",
+      "B) A_b / L",
+      "C) A_s / L",
+      "D) A_x / T"
+    ],
+    "correct": "B",
+    "explanation": "P = A_b / L, where A_b is bed area (accounting for slope) and L is reach length."
+  },
+  {
+    "type": "mcq",
+    "question": "What major weather event at Szolnok in 2001 set records at multiple Tisza gauging stations?",
+    "options": [
+      "A) Drought",
+      "B) Tornado",
+      "C) Record flood levels",
+      "D) Ice storm"
+    ],
+    "correct": "C",
+    "explanation": "The 2001 Tisza flood set records at multiple stations, exceeding previous maxima by 50-100 cm."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the approximate elevation range of the Onion Creek watershed?",
+    "options": [
+      "A) 0-50 m",
+      "B) 130-500+ m",
+      "C) 500-1,500 m",
+      "D) 2,000-4,000 m"
+    ],
+    "correct": "B",
+    "explanation": "Elevations range from about 130 m at the confluence to over 500 m in the headwaters."
+  },
+  {
+    "type": "mcq",
+    "question": "The EFAS flash flood indicators are based on:",
+    "options": [
+      "A) Historical records only",
+      "B) Rapid rainfall accumulation and soil moisture conditions",
+      "C) Sea surface temperatures",
+      "D) Glacier melt rates"
+    ],
+    "correct": "B",
+    "explanation": "EFAS flash flood indicators use rapid rainfall accumulation and soil moisture to warn for small catchments."
+  },
+  {
+    "type": "mcq",
+    "question": "What does GRDC stand for in the context of rating curve validation?",
+    "options": [
+      "A) Global River Discharge Centre",
+      "B) Global Runoff Data Centre",
+      "C) General River Data Compilation",
+      "D) Geographic River Database Collection"
+    ],
+    "correct": "B",
+    "explanation": "The Global Runoff Data Centre provides global discharge data for rating curve validation."
+  },
+  {
+    "type": "mcq",
+    "question": "The EDO operated by JRC stands for:",
+    "options": [
+      "A) European Disaster Observatory",
+      "B) European Drought Observatory",
+      "C) Environmental Data Office",
+      "D) European Development Organization"
+    ],
+    "correct": "B",
+    "explanation": "The European Drought Observatory monitors drought conditions affecting antecedent soil moisture and flood risk."
+  },
+  {
+    "type": "mcq",
+    "question": "What fraction of the Tisza's gradient does Onion Creek have?",
+    "options": [
+      "A) About the same",
+      "B) Onion Creek is about 400 times steeper",
+      "C) Onion Creek is about 10 times steeper",
+      "D) The Tisza is steeper"
+    ],
+    "correct": "B",
+    "explanation": "Onion Creek S_0 = 0.0163 vs Tisza S_0 = 0.00004, a ratio of approximately 400."
+  },
+  {
+    "type": "mcq",
+    "question": "In the Hungarian flood alert system, the most severe level is:",
+    "options": [
+      "A) I degree",
+      "B) II degree",
+      "C) III degree",
+      "D) IV degree"
+    ],
+    "correct": "C",
+    "explanation": "Hungary uses I, II, and III degree flood alerts, with III being the most severe."
+  },
+  {
+    "type": "true_false",
+    "question": "The four-step framework can produce inundation maps for an entire nation in under 3 minutes.",
+    "correct": true,
+    "explanation": "With pre-computed HAND and rating curves, the National Water Center pipeline completes in under 3 minutes."
+  },
+  {
+    "type": "true_false",
+    "question": "Each grid cell in the domain belongs to exactly one catchment.",
+    "correct": true,
+    "explanation": "The catchment tessellation assigns every cell to exactly one catchment and its associated stream reach."
+  },
+  {
+    "type": "true_false",
+    "question": "A wide floodplain produces a rating curve that steepens at high flows.",
+    "correct": false,
+    "explanation": "A wide floodplain flattens the rating curve at high flows because the enormous additional area absorbs discharge increases with small depth changes."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND approach requires assuming a specific channel shape like trapezoidal or rectangular.",
+    "correct": false,
+    "explanation": "HAND derives the actual shape from the DEM terrain; no shape assumption is needed."
+  },
+  {
+    "type": "true_false",
+    "question": "In the Onion Creek example, all seven reaches received the same flood depth.",
+    "correct": false,
+    "explanation": "Each reach received a different depth (8-15 feet) based on hydrological conditions."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza 2001 flood peak discharge at Szolnok was approximately 27,000 m^3/s.",
+    "correct": false,
+    "explanation": "The peak was approximately 2,700 m^3/s, not 27,000."
+  },
+  {
+    "type": "true_false",
+    "question": "Pre-computed inundation libraries can be computed on commercial cloud platforms for a few thousand dollars.",
+    "correct": true,
+    "explanation": "The computation that was done on a Cray supercomputer could now be done on AWS/Google Cloud/Azure for modest cost."
+  },
+  {
+    "type": "true_false",
+    "question": "JRC flood hazard maps for Europe are available for free download.",
+    "correct": true,
+    "explanation": "They are freely available from the JRC data catalogue at data.jrc.ec.europa.eu."
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's HYDROINFO system provides real-time data only for the Tisza, not the Danube.",
+    "correct": false,
+    "explanation": "HYDROINFO covers the Danube, Tisza, and their tributaries, with 98 forecast sections."
+  },
+  {
+    "type": "true_false",
+    "question": "GloFAS seasonal flood outlooks extend up to 4 months ahead.",
+    "correct": true,
+    "explanation": "GloFAS provides medium-range (30-day) forecasts and seasonal (4-month) outlooks."
+  },
+  {
+    "type": "true_false",
+    "question": "Sentinel-1 SAR can produce flood maps even through cloud cover.",
+    "correct": true,
+    "explanation": "SAR radar penetrates clouds, making Sentinel-1 the primary sensor for rapid flood mapping."
+  },
+  {
+    "type": "true_false",
+    "question": "Address point databases in the US were compiled primarily for flood insurance purposes.",
+    "correct": false,
+    "explanation": "They were compiled for emergency dispatch (911) systems, not specifically for flood insurance."
+  },
+  {
+    "type": "true_false",
+    "question": "HAND-based building risk classification is event-specific and changes with each flood.",
+    "correct": false,
+    "explanation": "HAND values are permanent terrain properties; a building's risk classification is persistent."
+  },
+  {
+    "type": "true_false",
+    "question": "HEC-RAS can model flow through bridges, culverts, and weirs with specialized formulations.",
+    "correct": true,
+    "explanation": "HEC-RAS includes specialized hydraulic formulations for various structures."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND approach includes a concept of lateral momentum for floodplain flow.",
+    "correct": false,
+    "explanation": "HAND has no lateral flow concept; water simply appears wherever HAND is less than depth."
+  },
+  {
+    "type": "true_false",
+    "question": "A HEC-RAS model for a single reach can be set up in minutes.",
+    "correct": false,
+    "explanation": "HEC-RAS setup requires days to weeks per reach for cross-sections, calibration, and quality checking."
+  },
+  {
+    "type": "true_false",
+    "question": "The steady flow assumption is more problematic for Tisza floods than for Onion Creek flash floods.",
+    "correct": false,
+    "explanation": "It's more problematic for flash floods (peaking in hours) than slow-rising Tisza floods (evolving over days)."
+  },
+  {
+    "type": "true_false",
+    "question": "At low flows, the HAND-derived rating curve tends to underestimate depth because the DEM shows the channel bed.",
+    "correct": false,
+    "explanation": "It overestimates depth because the DEM shows the water surface, not the bed, making the channel appear shallower."
+  },
+  {
+    "type": "true_false",
+    "question": "CORINE Land Cover is used for Manning's n estimation in the US.",
+    "correct": false,
+    "explanation": "NLCD is used in the US; CORINE is the European equivalent."
+  },
+  {
+    "type": "true_false",
+    "question": "Machine learning models for roughness estimation have shown no improvement over traditional lookup tables.",
+    "correct": false,
+    "explanation": "ML models outperform lookup tables by 20-30% in cross-validation experiments."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM short-range forecast is updated every 6 hours.",
+    "correct": false,
+    "explanation": "The short-range forecast is updated every hour."
+  },
+  {
+    "type": "true_false",
+    "question": "LandScan provides population data at 1 km resolution.",
+    "correct": true,
+    "explanation": "LandScan provides 1 km population data, while WorldPop provides 100 m resolution data."
+  },
+  {
+    "type": "true_false",
+    "question": "The EU Floods Directive requires showing cultural heritage assets at risk in flood risk maps.",
+    "correct": true,
+    "explanation": "Risk maps must show inhabitants, economic activity, environmental impacts, and cultural heritage at risk."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND-based approach can model backwater effects at dam structures.",
+    "correct": false,
+    "explanation": "HAND has no concept of structures and cannot represent backwater, dam breach, or other structural hydraulics."
+  },
+  {
+    "type": "true_false",
+    "question": "Computing a pre-computed inundation library for Hungary would require supercomputer resources.",
+    "correct": false,
+    "explanation": "A single modern workstation could handle Hungary's river network in a matter of days."
+  },
+  {
+    "type": "true_false",
+    "question": "EFAS provides soil moisture and snow water equivalent maps updated daily.",
+    "correct": true,
+    "explanation": "These provide the initial conditions that determine how much additional rainfall a catchment can absorb."
+  },
+  {
+    "type": "true_false",
+    "question": "The Tisza levee system protects about 20% of Hungary's total area.",
+    "correct": true,
+    "explanation": "Approximately 18,000 km^2, about 20% of Hungary's 93,000 km^2."
+  },
+  {
+    "type": "true_false",
+    "question": "A narrow canyon reach produces a rating curve that flattens at high flows.",
+    "correct": false,
+    "explanation": "A narrow canyon produces a steep rating curve because surface area increases slowly with depth."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus EMS produces rapid flood maps using primarily optical satellite sensors.",
+    "correct": false,
+    "explanation": "It primarily uses Sentinel-1 SAR (radar), which can penetrate clouds, supplemented by Sentinel-2 optical."
+  },
+  {
+    "type": "true_false",
+    "question": "In the HAND approach, Q is proportional to 1/n according to Manning's equation.",
+    "correct": true,
+    "explanation": "Q = (1/n) * A_x * R^(2/3) * S_0^(1/2), so discharge is inversely proportional to roughness."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWIS database provides US stream gauge data for rating curve validation.",
+    "correct": true,
+    "explanation": "USGS National Water Information System (NWIS) provides decades of measured stage-discharge data."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The five data links in the information model connect: reach to discharge, reach to depth, catchment to reach, cell to catchment, and cell to _____.",
+    "correct": "HAND",
+    "explanation": "The final link connects each cell to its pre-computed HAND value for the flood comparison."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's roughness coefficient for clean straight channels ranges from _____ to 0.033.",
+    "correct": "0.025",
+    "explanation": "This is the lowest range for natural channels with minimal vegetation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Manning's roughness coefficient for forested floodplains ranges from 0.080 to _____.",
+    "correct": "0.120",
+    "explanation": "Heavy timber on floodplains produces high resistance to overbank flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza at Szolnok has a floodplain extending _____ to 5 kilometres on either side.",
+    "correct": "2",
+    "explanation": "The wide flat floodplain is a defining characteristic of the middle Tisza."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Manning's equation exponent on the bed slope S_0 is _____.",
+    "correct": "1/2",
+    "explanation": "Q = (1/n) * A_x * R^(2/3) * S_0^(1/2)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In US customary units, the conversion factor in Manning's equation is _____.",
+    "correct": "1.49",
+    "explanation": "1.49/n replaces 1/n due to unit conversion from SI to feet/cfs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Onion Creek watershed covers approximately _____ km^2.",
+    "correct": "830",
+    "explanation": "830 km^2 of rolling terrain in the Texas Hill Country."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For the Onion Creek example, the reach length L was _____ m.",
+    "correct": "6,920",
+    "explanation": "This reach length of 6,920 m (4.3 miles) was used for all hydraulic property computations."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's 2001 flood peak water level at Szolnok was about _____ m above zero gauge.",
+    "correct": "10.6",
+    "explanation": "This record water level exceeded previous maxima by 50-100 cm."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM covers all _____ million NHDPlus reaches in the continental US.",
+    "correct": "2.7",
+    "explanation": "Hourly discharge predictions are generated for every NHDPlus reach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the 2013 Onion Creek analysis, the deepest flooding on the main stem was _____ feet.",
+    "correct": "15",
+    "explanation": "COMID 5781401 (main stem, peak zone) had the maximum depth of 15 feet (4.57 m)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Saint-Venant equations describe conservation of _____ and conservation of momentum.",
+    "correct": "mass",
+    "explanation": "The continuity equation conserves mass; the momentum equation conserves momentum."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS was developed by the Hydrologic _____ Center of the US Army Corps of Engineers.",
+    "correct": "Engineering",
+    "explanation": "HEC stands for Hydrologic Engineering Center, located in Davis, California."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS provides deterministic forecasts updated _____ daily.",
+    "correct": "twice",
+    "explanation": "The ECMWF high-resolution atmospheric model produces updates twice daily with a 10-day horizon."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GloFAS historical reanalysis dates back to _____.",
+    "correct": "1979",
+    "explanation": "This long record enables trend analysis and climatological studies of flood risk."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Cray supercomputer at the National Water Center was used for the initial pre-computed _____ library.",
+    "correct": "inundation",
+    "explanation": "Pre-computed inundation maps at 1-foot intervals for all 2.7 million reaches."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The JRC flood hazard maps use the _____ hydrological-hydraulic model.",
+    "correct": "LISFLOOD",
+    "explanation": "LISFLOOD is the distributed model used for European flood hazard mapping."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Onion Creek example at 1 m depth, the cross-sectional area A_x was _____ m^2.",
+    "correct": "6.78",
+    "explanation": "A_x = V/L = 46,915/6,920 = 6.78 m^2."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's catchment extends over approximately _____ km^2.",
+    "correct": "157,000",
+    "explanation": "The large basin spanning the eastern Carpathian arc."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At 10 m depth on Onion Creek, the discharge is approximately _____ m^3/s.",
+    "correct": "3,370",
+    "explanation": "This extreme depth produces very large discharge in the relatively steep channel."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's flood risk maps show three categories: flood _____ maps and flood risk maps.",
+    "correct": "hazard",
+    "explanation": "The EU Floods Directive requires both hazard maps (extent, depth, velocity) and risk maps (impacts)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The US has approximately _____ million kilometres of mapped streams in NHDPlus.",
+    "correct": "5.5",
+    "explanation": "This enormous network makes comprehensive HEC-RAS modeling impractical but HAND-based mapping feasible."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ to Flood Map app converts crowd-sourced observations into local inundation maps.",
+    "correct": "Pin",
+    "explanation": "Observers drop pins at the water's edge, and the app uses HAND to extrapolate extent."
+  },
+  {
+    "type": "fill_blank",
+    "question": "RAPID stands for Routing Application for Parallel computatIon of _____.",
+    "correct": "Discharge",
+    "explanation": "RAPID implements Muskingum routing for the National Water Model."
+  },
+  {
+    "type": "fill_blank",
+    "question": "WorldPop provides population data at _____ m resolution.",
+    "correct": "100",
+    "explanation": "This high-resolution population data enables detailed flood impact assessment globally."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS provides probabilistic forecasts for the next _____ days using ensemble prediction.",
+    "correct": "15",
+    "explanation": "51 ensemble scenarios cover 15 days ahead."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The bed slope S_0 is computed as z_upstream minus z_____ divided by L.",
+    "correct": "downstream",
+    "explanation": "S_0 = (z_upstream - z_downstream) / L gives the slope as elevation drop per unit length."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The number of inundated cells at 1 m depth in the Onion Creek example was _____.",
+    "correct": "658",
+    "explanation": "658 cells with HAND < 1.0 m were identified as inundated."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At bankfull depth, the HAND-derived rating curve typically agrees with observed data within _____%.",
+    "correct": "15-25",
+    "explanation": "Agreement is generally good at bankfull because the DEM accurately represents bank and near-channel topography."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The flood threshold used in the NWM real-time system is typically the _____-year recurrence discharge.",
+    "correct": "2",
+    "explanation": "Reaches exceeding the 2-year discharge trigger the inundation mapping pipeline."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County in the Onion Creek analysis had _____ address points.",
+    "correct": "355,000",
+    "explanation": "Each point was analyzed for flood exposure using HAND values and catchment assignments."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's flood hazard maps were first produced in _____ under the EU Floods Directive.",
+    "correct": "2013",
+    "explanation": "They have been revised in 2019 and 2025 following the directive's 6-year cycle."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The vizeink.hu portal provides access to Hungarian flood _____ management information.",
+    "correct": "risk",
+    "explanation": "vizeink.hu is the flood risk management portal complementing geoportal.vizugy.hu."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NWM long-range forecast extends to _____ days.",
+    "correct": "30",
+    "explanation": "Short-range = 18 hours, medium-range = 10 days, long-range = 30 days."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At the Szolnok reach with d=6 m, the computed R^(2/3) was approximately _____.",
+    "correct": "1.87",
+    "explanation": "R = 2.57 m, so R^(2/3) = 2.57^0.667 = 1.87."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza Szolnok example used a hypothetical reach length of _____ km.",
+    "correct": "10",
+    "explanation": "L = 10,000 m (10 km) was used for the Tisza hydraulic property computation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND information model's five data links create a chain from discharge forecast to individual cell flooding, using specific data products as examples.",
+    "correct": "Link 1 (reach-to-discharge): NWM assigns Q to each COMID (US), or EFAS assigns Q to EU-Hydro segments. Link 2 (reach-to-depth): pre-computed rating curve converts Q to depth d via interpolation. Link 3 (catchment-to-reach): watershed delineation associates each catchment with one reach. Link 4 (cell-to-catchment): a catchment raster assigns every cell to its parent catchment. Link 5 (cell-to-HAND): the HAND raster provides each cell's height above its stream. Following the chain for a specific cell: NWM says reach COMID 5781401 has Q=100 m^3/s, the rating curve gives d=4.57 m, the cell belongs to that reach's catchment, and its HAND=2.1 m, so it floods to depth 2.47 m.",
+    "explanation": "The five-link chain is the complete logical path from a forecast number to a flood depth at any cell."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how Manning's roughness coefficient uncertainty propagates through the HAND framework and discuss mitigation strategies.",
+    "correct": "Manning's n is inversely proportional to Q, so 20% n change gives ~20% Q change. True n varies spatially (channel bed vs vegetated banks), temporally (seasonal leaf-out), and with depth (roughness matters less at high flows). For ungauged reaches (the majority), n comes from land cover lookup tables (NLCD in US, CORINE in Europe). Mitigations: (1) calibrate n at gauged locations against observed rating curves, (2) use ensemble approaches with multiple n values to report uncertainty ranges, (3) apply machine learning trained on gauged reaches using NDVI, land cover, channel width, and slope, outperforming lookups by 20-30%, (4) use ESA WorldCover globally. For Hungary, CORINE + OVF gauge data could train regional ML roughness models.",
+    "explanation": "Manning's n is the largest uncertainty source and the most actionable target for improvement."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the European and US approaches to operational flood inundation mapping, discussing temporal mode, resolution, and institutional arrangements.",
+    "correct": "US: NWM provides hourly forecasts for 2.7M reaches at 10 m resolution, converted to HAND-based inundation maps in under 3 minutes. Real-time, reach-specific. Europe: EFAS provides 10-day forecasts at 5 km, matched to JRC static return-period maps. Supplemented by on-demand Copernicus EMS satellite mapping (Sentinel-1 SAR). Hungary: OVF operates HYDROINFO with 98 sections and I/II/III alerts, plus EU Floods Directive maps revised every 6 years. Global: GloFAS at 0.05 deg, 30-day forecasts. The US excels in real-time operational detail; Europe excels in regulatory planning and satellite verification. Neither approach is clearly superior -- they reflect different priorities.",
+    "explanation": "Institutional and regulatory differences shape fundamentally different operational approaches on each continent."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the non-linear behavior of HAND-derived rating curves and discuss how terrain geometry controls this behavior.",
+    "correct": "At low flows, water is confined to a narrow, deep channel with efficient hydraulic radius -- moderate discharge increases produce small depth increases. As water rises above banks onto the floodplain, the enormous additional area means the same discharge increase produces much less depth change. This creates the characteristic S-shaped rating curve: steep at bankfull, flattening above. In a narrow canyon, the curve stays steep because there's nowhere to spread. On the Tisza's wide plain (2-5 km floodplain), the curve flattens dramatically above bankfull. The HAND approach captures this automatically because hydraulic properties at each depth come directly from terrain. No shape assumption is needed -- the DEM tells the shape.",
+    "explanation": "The rating curve shape encodes the geomorphology of the channel and floodplain."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of crowd-sourced validation in improving HAND-based flood maps, using the 'Pin to Flood Map' concept.",
+    "correct": "During floods, observers report their GPS location at the water's edge. The app samples HAND at that point -- the HAND value equals the local flood depth (since water surface is at exactly the HAND height at the inundation boundary). This depth is applied to all surrounding cells in the same catchment, producing a locally validated map. Multiple pins build a composite picture compared against model predictions. Where models overpredict, Manning's n or rating curves need adjustment. Where models underpredict, the DEM may miss a levee breach or blocked culvert. This approach is particularly valuable in Hungary and developing countries where discharge forecasts may not cover smaller tributaries. Citizen observations provide ground truth otherwise unavailable.",
+    "explanation": "Crowd-sourced data converts real-world observations into spatial flood maps via the HAND mathematical framework."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why the HAND approach fills a critical gap in US flood mapping where FEMA maps are unavailable.",
+    "correct": "FEMA detailed flood maps exist for fewer than 25% of US stream miles, produced through labor-intensive HEC-RAS modeling requiring months per reach. The remaining 75% -- including many headwater streams where flash floods cause the most casualties -- have no flood maps at all. HAND provides screening-level assessment for every stream mile using the same algorithm and DEM. While less accurate (20-50% vs 5-15% depth error), HAND maps exist everywhere. For the 2013 Onion Creek flood, the warning gap was precisely this: small tributaries had no conventional flood mapping. The HAND approach can also prioritize where FEMA should invest in detailed HEC-RAS studies by identifying reaches with the most buildings at risk.",
+    "explanation": "HAND trades local precision for universal coverage, filling the critical 75% gap."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete workflow for producing a HAND-based flood inundation map for a Tisza reach near Szolnok during a real flood event.",
+    "correct": "Setup (done in advance): (1) Obtain DDM-5 DEM and OVF river network. (2) Condition DEM (burn streams through levees, fill pits). (3) Compute D8 and D-inf flow directions. (4) Generate stream raster via channel-head accumulation. (5) Compute HAND using DinfDistDown. (6) Build rating curves at 0.5 m depth intervals using Manning's equation with n=0.035, S_0=0.00004. During event: (7) OVF HYDROINFO provides real-time water level at Szolnok. (8) Convert to depth via rating curve (or use EFAS discharge forecast). (9) Compare depth against HAND: cells with HAND < depth are inundated. (10) Overlay with building/population data from KSH for impact assessment.",
+    "explanation": "The workflow separates advance preparation from real-time operations, enabling rapid response."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the DEM quality and bathymetry limitations of HAND-based flood mapping and explain why topobathy DEMs are important.",
+    "correct": "Most DEMs show water surfaces, not channel beds. A river with 2 m water appears 2 m shallower, biasing rating curves to require more depth for the same inundation. Vertical RMSE ranges from 0.1 m (LiDAR) to 6-9 m (SRTM), directly limiting HAND precision. Horizontal resolution determines whether narrow channels are resolved. Green-beam LiDAR can measure beds in clear water; ADCPs provide submerged measurements. Merging above-water LiDAR with below-water bathymetry creates topobathy DEMs that correctly represent the full channel. USGS and OVF maintain bathymetric surveys of navigable rivers. The integration challenge is merging data from different sources, coordinate systems, and epochs -- a GIS problem the book's tools can solve.",
+    "explanation": "Channel bathymetry is the most fundamental missing piece in DEM-based hydraulic analysis."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND-derived hydraulic property tables could improve the channel routing in the National Water Model.",
+    "correct": "The NWM currently uses RAPID with Muskingum routing that assumes idealized channel geometries for estimating cross-sectional area and wave celerity as functions of discharge. HAND-derived tables provide terrain-based values: A_x(d), R(d), P(d) computed from actual DEM geometry for every reach. Replacing idealized estimates with these would provide more realistic flow velocities, travel times, and storage effects. Better routing improves timing and magnitude of downstream flood predictions, which propagate through to more accurate inundation maps. This integration is an active development area at the National Water Center, representing a feedback loop where terrain analysis improves the very forecasts that drive the inundation mapping.",
+    "explanation": "HAND-derived properties could improve not just the flood mapping but the underlying discharge forecasts themselves."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the Onion Creek 2013 flood as a case study for HAND-based flood mapping, including the event, the response gap, and the system it catalyzed.",
+    "correct": "Heavy overnight rainfall in the remote upper watershed produced a flood wave reaching populated areas by 6:30 AM. Five people drowned and ~500 houses flooded with almost no warning. The gap: conventional warnings didn't cover smaller tributaries feeding Onion Creek. The event catalyzed the Texas Flood Response System applying HAND to every NHDPlus reach in Texas. The HAND analysis correctly identified ~500 flooded structures, validated against USGS high-water marks. Had the NWM (operational 2016) existed in 2013, discharge forecasts hours before the peak would have translated to inundation maps showing exactly which houses were at risk. This demonstrates HAND's life-saving potential for headwater flash floods.",
+    "explanation": "The Onion Creek tragedy illustrates both the need for and the capability of systematic HAND-based flood mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the role of Eurostat GISCO population grids in European flood impact assessment and how they complement building-level data.",
+    "correct": "Eurostat's GISCO provides standardized 1 km^2 population grids and administrative boundaries for all EU member states. When detailed building-level address data is unavailable (as in many European countries), the population grid enables rapid exposure estimates: overlay the grid with the inundation raster and sum population in flooded cells. This approximation is much coarser than building-level analysis (which Texas performs with 9.28M address points) but adequate for screening, emergency planning, and cross-border consistency. For Hungary, KSH provides population at multiple scales (county, district, municipality, census tract). The combination of GISCO grids, KSH data, and building registries gives a layered approach from coarse screening to detailed assessment.",
+    "explanation": "Population data at different resolutions enables impact assessment at corresponding levels of detail."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the paradigm shift from site-specific hydraulic modeling to systematic HAND-based flood mapping, explaining why both approaches remain necessary.",
+    "correct": "For decades, flood mapping required months of expert work per reach (HEC-RAS: surveyed cross-sections, bridge geometry, calibration). This produced excellent local results but covered only ~25% of US streams. HAND inverts this: using terrain available everywhere (from satellites), it computes properties for every reach at once. Results are approximate (20-50% error) but universal. The paradigm shift is from precision at points to coverage everywhere. Both remain necessary: HAND screens nationally, identifying which communities need alert and where resources should deploy. HEC-RAS provides design-level analysis for specific high-risk reaches. HAND also prioritizes HEC-RAS studies by identifying reaches with the most buildings at risk.",
+    "explanation": "The two approaches operate at complementary scales and accuracies."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND approach handles the transition from in-channel to overbank flow and why this matters for flood mapping.",
+    "correct": "Within the channel, water occupies a narrow cross-section with efficient hydraulic radius. As water rises above bankfull, it spills onto the floodplain, dramatically increasing surface area, volume, and top width while the depth increase per unit discharge decreases. The HAND approach captures this automatically because hydraulic properties at each depth are computed from all cells with HAND below that depth. The channel-to-floodplain transition appears as an inflection in the rating curve where surface area increases rapidly. This matters because most flood damage occurs during overbank flow, and the accuracy of the rating curve at and above bankfull determines the quality of the inundation map. HAND naturally captures the geometry of this transition.",
+    "explanation": "The bankfull transition is the most critical part of the rating curve for flood damage estimation."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the Hungarian flood management system for the Tisza, including OVF, HYDROINFO, the EU Floods Directive, and how HAND could enhance it.",
+    "correct": "OVF operates the national water management system through 12 regional directorates, managing levees protecting 18,000 km^2. HYDROINFO provides real-time monitoring at 98 forecast sections with I/II/III alerts. Under the EU Floods Directive (2007/60/EC), OVF produces hazard and risk maps for three probability scenarios, revised every 6 years. HAND could enhance this by: (1) computing national HAND from DDM-5 (~1.9 billion cells, feasible on modern workstation), (2) providing continuous flood vulnerability screening beyond official model coverage, (3) enabling worst-case levee breach analysis, (4) supporting rapid response when EFAS alerts arrive. The approach would complement, not replace, existing detailed hydraulic models.",
+    "explanation": "HAND would add a systematic terrain-based layer to Hungary's existing multi-component flood management system."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for computing HAND-based flood maps globally using freely available data, and explain the implications for developing countries.",
+    "correct": "Global inputs exist: Copernicus GLO-30 (30 m), MERIT DEM (90 m, hydrologically conditioned), HydroSHEDS/HydroRIVERS (global streams), GloFAS (global discharge forecasts). WorldPop (100 m) and LandScan (1 km) provide population. Computing global HAND is technically feasible -- demonstrated by research prototypes. For developing countries lacking any flood maps (much of sub-Saharan Africa, South Asia), this provides screening-level assessment: knowing a village has HAND 1.5 m with 3 m upstream forecast is immensely useful. While 4 m vertical accuracy limits precision, approximate information far exceeds no information. This democratization of flood mapping may be HAND's most significant global contribution.",
+    "explanation": "HAND's minimal data requirements make it the only practical approach for global flood vulnerability screening."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the stream network segmentation problem and how it affects HAND-based rating curve quality.",
+    "correct": "NHDPlus reaches were not designed for hydraulic calculations. Some are very short (hundreds of metres, with insufficient terrain for stable properties), others very long (tens of km, spanning varying geometries poorly represented by one set of properties). Short reaches produce noisy hydraulic properties; long reaches smooth out important geometric variation. Research by Zheng et al. shows 1-2 km uniform segments produce better results. The HAND computation itself is independent of segmentation (it depends only on DEM and stream network), but rating curves and catchment depth assignments are sensitive to partitioning. Re-segmenting networks like NHDPlus or EU-Hydro for optimal hydraulic estimation is an active research area with significant practical implications.",
+    "explanation": "Optimal segmentation is a practical engineering problem that directly affects flood mapping quality."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete HEC-RAS approach including the Saint-Venant equations and discuss what it captures that HAND cannot.",
+    "correct": "HEC-RAS solves the Saint-Venant equations: continuity (dA/dt + dQ/dx = q_l) and momentum (dQ/dt + d(Q^2/A)/dx + gA*dh/dx + gA*S_f = 0). These capture: (1) unsteadiness (water level changing over time), (2) non-uniformity (water surface slope varying along reach), (3) momentum effects (inertia at bridges, expansions, confluences), (4) bridge/culvert/weir/dam hydraulics with specialized formulations, (5) 2D floodplain flow with velocities and directions. HAND ignores all these: it assumes steady-state, horizontal water surface per reach, no structures, and no lateral dynamics. Yet HEC-RAS requires days of setup per reach and covers only 25% of US streams, while HAND covers everything in minutes.",
+    "explanation": "Understanding what HEC-RAS does differently is essential for knowing when HAND is sufficient and when it is not."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of pre-computed inundation libraries and calculate the computational requirements for the US and Hungary.",
+    "correct": "For each reach at each depth increment, a stored inundation map shows which cells flood and to what depth. US: 2.7 million reaches x ~25 depth increments (1-foot intervals to 25 ft) = 67.5 million individual maps. Each covers one catchment (small files), total ~tens of terabytes. Computation is parallelizable across reaches. Done initially on the Cray at NWC, now achievable on cloud platforms for thousands of dollars. Hungary: thousands (not millions) of reaches, at 0.5 m intervals for major rivers, computable on a single workstation in days. During events, the system simply looks up the map for each reach's predicted depth -- pure table lookup, no raster computation, completing in under 3 minutes nationally.",
+    "explanation": "Pre-computation transforms the real-time problem from expensive raster analysis to instantaneous table lookup."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the validation strategy for HAND-derived rating curves using OVF gauge data at Szolnok and the typical patterns of agreement and disagreement.",
+    "correct": "The OVF gauging station at Szolnok provides decades of direct discharge measurements creating an observed rating curve. Comparison with HAND-derived synthetic curves typically shows: (1) At low flows (within channel), HAND overestimates depth because the DEM shows water surface not channel bed, making the channel appear shallower. (2) At bankfull (moderate flows), agreement is generally good because the DEM accurately represents bank and near-channel topography. (3) At overbank (high flows), agreement depends on DEM quality -- DDM-5 at 5 m gives 15-25% accuracy, Copernicus GLO-30 at 30 m is coarser. The best calibration adjusts Manning's n until the curve matches at bankfull and above, accepting the low-flow bias as a DEM limitation.",
+    "explanation": "Systematic validation against gauge data builds confidence and identifies areas for improvement."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how EFAS flash flood indicators work and discuss their relevance for small catchments not covered by standard river routing models.",
+    "correct": "EFAS flash flood indicators use rapid rainfall accumulation (from radar and satellite precipitation) combined with soil moisture conditions to identify small catchments at risk. Standard river routing models (LISFLOOD) are too coarse for small basins, but flash floods on these catchments cause significant damage and casualties. The indicators assess whether rainfall rate exceeds infiltration capacity given current soil moisture. For Hungary, this matters for small tributaries in the Northern Mountains (Bukk, Matra) where intense storms can trigger flash floods in steep valleys. HAND-based mapping could complement these indicators by showing where the flash flood water would go -- combining the meteorological trigger (EFAS indicator) with the terrain consequence (HAND inundation).",
+    "explanation": "Flash flood indicators address the forecasting gap for small catchments where routing models cannot operate."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the future vision of global flood mapping using HAND, GloFAS, and WorldPop, explaining what would be needed and what impact it could have.",
+    "correct": "The vision: for any point on Earth, answer 'If upstream Q is X, will this location flood and how deep?' Required: (1) global HAND from Copernicus GLO-30 and HydroSHEDS (technically feasible, demonstrated in prototypes), (2) GloFAS discharge forecasts (already operational), (3) global rating curves from HAND hydraulic properties, (4) WorldPop population overlay. Impact: building-level flood assessment in countries with no current maps. For communities in the Niger Delta or Brahmaputra floodplain, even approximate HAND-based warnings could save thousands of lives. The remaining challenges: better DEMs, better roughness, better forecasts, better validation. But the framework exists, the data are accumulating, and the tools work. What remains is sustained effort to make it work everywhere, for everyone.",
+    "explanation": "Global HAND-based flood mapping represents the ultimate democratization of flood vulnerability information."
+  },
+  {
+    "type": "true_false",
+    "question": "The catchment raster assigns every grid cell to exactly one stream reach.",
+    "correct": true,
+    "explanation": "Each cell belongs to one catchment which is associated with one reach."
+  },
+  {
+    "type": "true_false",
+    "question": "Manning's equation accounts for unsteady flow conditions.",
+    "correct": false,
+    "explanation": "Manning's equation is for steady, uniform flow only."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND framework can translate any discharge forecast from any source into an inundation map.",
+    "correct": true,
+    "explanation": "The framework is source-agnostic: NWM, EFAS, GloFAS, or gauge observations can all provide the input discharge."
+  },
+  {
+    "type": "true_false",
+    "question": "The Onion Creek October 2013 flood occurred during daytime hours.",
+    "correct": false,
+    "explanation": "Heavy overnight rainfall produced a flood wave during dark hours."
+  },
+  {
+    "type": "true_false",
+    "question": "Cross-sections from different surveys are always consistent in their vertical datum.",
+    "correct": false,
+    "explanation": "Different surveys often use different datums, introducing artificial steps when assembled."
+  },
+  {
+    "type": "true_false",
+    "question": "The US has approximately 5.5 million kilometres of mapped streams in NHDPlus.",
+    "correct": true,
+    "explanation": "This enormous network makes comprehensive HEC-RAS modeling impractical."
+  },
+  {
+    "type": "true_false",
+    "question": "The bed slope S_0 in Manning's equation is the water surface slope.",
+    "correct": false,
+    "explanation": "Manning's equation assumes the water surface slope equals the bed slope (uniform flow). S_0 is the bed slope."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza at Szolnok, the channel width is approximately 20-50 metres.",
+    "correct": false,
+    "explanation": "The Tisza channel at Szolnok is approximately 200-400 metres wide."
+  },
+  {
+    "type": "true_false",
+    "question": "The HAND framework requires complex hydraulic model setup for each reach.",
+    "correct": false,
+    "explanation": "HAND uses automated terrain-based computation requiring no site-specific setup."
+  },
+  {
+    "type": "true_false",
+    "question": "The National Water Model became operational before the October 2013 Onion Creek flood.",
+    "correct": false,
+    "explanation": "The NWM became operational in 2016; the flood occurred in 2013."
+  },
+  {
+    "type": "true_false",
+    "question": "ESA WorldCover can be used globally for Manning's n estimation.",
+    "correct": true,
+    "explanation": "ESA WorldCover provides global land cover for roughness estimation."
+  },
+  {
+    "type": "true_false",
+    "question": "The JRC River Flood Hazard Maps are updated in real-time.",
+    "correct": false,
+    "explanation": "JRC maps are static, based on return periods; they are not updated in real-time."
+  },
+  {
+    "type": "true_false",
+    "question": "A building with HAND = 8 m is always at negligible flood risk regardless of location.",
+    "correct": false,
+    "explanation": "On large rivers like the Tisza where floods reach 8-10 m, even HAND = 8 m buildings face genuine risk."
+  },
+  {
+    "type": "true_false",
+    "question": "The Copernicus EMS uses primarily optical sensors that cannot see through clouds.",
+    "correct": false,
+    "explanation": "It primarily uses Sentinel-1 SAR radar which penetrates clouds."
+  },
+  {
+    "type": "true_false",
+    "question": "Manning's n for major rivers (width > 30 m) ranges from 0.025 to 0.060.",
+    "correct": true,
+    "explanation": "The exact value depends on bed material and sinuosity."
+  },
+  {
+    "type": "true_false",
+    "question": "The bed area correction for steep terrain makes bed area larger than surface area.",
+    "correct": true,
+    "explanation": "The slope factor sqrt(1 + (S/100)^2) is always >= 1, making A_b >= A_s."
+  },
+  {
+    "type": "true_false",
+    "question": "Zheng et al. showed that more uniform reach segmentation produces worse inundation mapping results.",
+    "correct": false,
+    "explanation": "They showed more uniform 1-2 km segments produce better results than the variable NHDPlus segmentation."
+  },
+  {
+    "type": "true_false",
+    "question": "The Szolnok OVF gauging station has continuous records dating to the 19th century.",
+    "correct": true,
+    "explanation": "This long record makes it an ideal validation site for HAND-derived rating curves."
+  },
+  {
+    "type": "true_false",
+    "question": "For the Tisza, the levee system protects about 50% of Hungary's area.",
+    "correct": false,
+    "explanation": "It protects approximately 18,000 km^2, about 20% of Hungary's 93,000 km^2."
+  },
+  {
+    "type": "true_false",
+    "question": "The NWM uses WRF-Hydro as its hydrological model.",
+    "correct": true,
+    "explanation": "WRF-Hydro is applied to the entire US for discharge predictions."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the inundation rule, a cell floods when d > _____.",
+    "correct": "h (HAND value)",
+    "explanation": "Inundation occurs when the flood depth exceeds the cell's height above nearest drainage."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The information model links five types of spatial data through common _____.",
+    "correct": "identifiers",
+    "explanation": "COMID, catchment ID, and cell position link the discharge forecast to individual cell flooding."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The surface area formula is A_s = n_inundated x (_____)^2.",
+    "correct": "delta x (cell size)",
+    "explanation": "Surface area = count of inundated cells multiplied by cell area."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Top width T is computed as A_s divided by _____.",
+    "correct": "L (reach length)",
+    "explanation": "T = A_s/L gives the average width of the water surface along the reach."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Onion Creek 2013 flood occurred in the month of _____.",
+    "correct": "October",
+    "explanation": "The October 2013 flood was the catalyzing event for the Texas Flood Response System."
+  },
+  {
+    "type": "fill_blank",
+    "question": "At 1 m depth on Onion Creek, the volume was approximately _____ m^3.",
+    "correct": "46,915",
+    "explanation": "V = mean depth x surface area = 0.713 x 65,800 = 46,915 m^3."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's Manning's n in the example was _____ (for a large river with smooth floodplain).",
+    "correct": "0.035",
+    "explanation": "Lower n than the default 0.05 reflects the efficient channel of a large river."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza's floodplain extends _____ to _____ kilometres on either side between levees.",
+    "correct": "2 to 5",
+    "explanation": "This wide, flat floodplain is characteristic of the middle Tisza."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ equation for unsteady open-channel flow consists of continuity and momentum equations.",
+    "correct": "Saint-Venant",
+    "explanation": "These coupled PDEs describe the full physics of unsteady flow."
+  },
+  {
+    "type": "fill_blank",
+    "question": "HEC-RAS can model flow in _____ dimensions (1D or 2D).",
+    "correct": "one or two",
+    "explanation": "1D models cross-sections; 2D solves shallow water equations on a mesh."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The friction slope in the momentum equation is denoted _____.",
+    "correct": "S_f",
+    "explanation": "S_f represents energy losses due to friction in the Saint-Venant momentum equation."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The HAND approach produces typical depth errors of _____-50% for overbank flows.",
+    "correct": "20",
+    "explanation": "This compares to 5-15% for calibrated HEC-RAS."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS uses _____ weather forecasts to drive the LISFLOOD model.",
+    "correct": "ECMWF",
+    "explanation": "ECMWF provides both deterministic and ensemble weather inputs."
+  },
+  {
+    "type": "fill_blank",
+    "question": "GloFAS provides historical reanalysis dating back to the year _____.",
+    "correct": "1979",
+    "explanation": "This long record enables climatological flood risk analysis."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ approach trades local precision for global coverage in flood mapping.",
+    "correct": "HAND",
+    "explanation": "HAND covers 100% of streams with moderate accuracy vs HEC-RAS covering 25% with high accuracy."
+  },
+  {
+    "type": "fill_blank",
+    "question": "For the Tisza example at 6 m depth, S_0^(0.5) equals _____.",
+    "correct": "0.00632",
+    "explanation": "sqrt(0.00004) = 0.00632."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tisza levee system was established during the 19th-century campaigns of Szechenyi and _____.",
+    "correct": "Vasarhelyi",
+    "explanation": "Pal Vasarhelyi initiated the regulation works later continued by Istvan Szechenyi."
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian flood risk management portal is called _____.hu.",
+    "correct": "vizeink",
+    "explanation": "vizeink.hu provides access to flood risk management information."
+  },
+  {
+    "type": "fill_blank",
+    "question": "EFAS is classified as part of the _____ Emergency Management Service.",
+    "correct": "Copernicus",
+    "explanation": "The Copernicus programme funds and manages EFAS operations through ECMWF."
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Onion Creek example, cell size delta x was _____ m.",
+    "correct": "10",
+    "explanation": "The 10-metre NED resolution was used for all computations."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Manning's equation is appropriate for the HAND framework despite its simplifying assumptions of steady, uniform flow.",
+    "correct": "Manning's equation assumes steady (constant in time) and uniform (constant along reach) flow, which real floods violate. However, the approximation works because: (1) HAND operates on a reach-averaged basis, smoothing along-reach variation. (2) The pre-computed rating curve converts steady-state depth-discharge pairs; the actual unsteady forecast provides the instantaneous discharge. (3) For slow-rising floods (Tisza), the quasi-steady approximation is reasonable. (4) For flash floods, errors are larger but the approach still identifies vulnerable areas. (5) The alternative (solving Saint-Venant equations for every reach) is computationally impossible at national scale. Manning's equation provides the simplest physically meaningful link between depth and discharge.",
+    "explanation": "The practical success of Manning's equation in HAND reflects the appropriate tradeoff between physical accuracy and computational feasibility."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of the bed slope S_0 in the HAND-derived rating curve and explain how it interacts with channel geometry to determine flood behavior.",
+    "correct": "Bed slope S_0 enters Manning's equation as S_0^(1/2), directly affecting discharge for a given depth. For Onion Creek (S_0=0.0163), the slope factor is 0.1277; for the Tisza (S_0=0.00004), it is 0.00632 -- a factor of 20 difference. This means the Tisza needs much wider and deeper flow to convey the same discharge. The interaction with geometry: steep narrow channels (Onion Creek) produce large Q at moderate depths; flat wide channels (Tisza) spread water over kilometers for large Q. S_0 is estimated from DEM endpoint elevations divided by reach length. In NHDPlus, MAXELEVSMO and MINELEVSMO provide these values directly.",
+    "explanation": "Bed slope fundamentally determines whether a river responds to flooding with deep narrow flow or shallow widespread inundation."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the synthetic rating curve and how it differs from an observed rating curve at a gauging station.",
+    "correct": "A synthetic rating curve is derived from HAND terrain properties: at each depth, hydraulic properties (A_x, R) are computed from the DEM and fed into Manning's equation to get discharge Q. An observed rating curve at a gauge is built from decades of simultaneous depth and discharge measurements. Key differences: (1) The synthetic curve uses assumed Manning's n; the observed curve implicitly includes true roughness. (2) The synthetic curve reflects the DEM surface (which may be water surface, not bed); the observed reflects actual channel geometry. (3) The synthetic is available for every reach; observed only exists at gauged locations. At bankfull and overbank flows, well-calibrated synthetic curves typically agree within 15-25% of observed. Calibrating n at gauged locations improves the synthetic curve.",
+    "explanation": "Synthetic and observed rating curves serve complementary roles: the former provides coverage, the latter provides accuracy."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the complete real-time operational pipeline at the National Water Center, from NWM forecast to published flood map.",
+    "correct": "(1) NWM produces hourly short-range discharge forecasts for all 2.7M reaches. (2) For each reach exceeding the 2-year flood threshold, the system looks up depth from the pre-computed rating curve. (3) Depth is rounded to the nearest 1-foot increment. (4) The corresponding pre-computed inundation map is retrieved from the library (67.5M maps). (5) All active reach maps are assembled into a regional/national mosaic. (6) Impact assessment identifies affected buildings, roads, and infrastructure. (7) Results are published through web services and the operational dashboard. The entire pipeline completes in under 3 minutes. Speed is possible because the terrain work (HAND, rating curves, inundation library) was done in advance; the real-time component is pure table lookup.",
+    "explanation": "The architecture separates one-time computational investment from real-time operational speed."
+  },
+  {
+    "type": "essay",
+    "question": "Compare the spatial resolution and update frequency of the US, European, and global flood mapping systems.",
+    "correct": "US (NWM/HAND): 10 m resolution, hourly updates, real-time reach-specific inundation for 2.7M reaches. Europe (EFAS/JRC): EFAS at ~5 km resolution with 10-day forecasts updated twice daily; JRC static maps at ~100 m for 6 return periods, revised every 6 years. National maps (like Hungary's OVF) at 5 m but static. Global (GloFAS): 0.05 deg (~5 km), 30-day forecasts, 6-hourly updates, but no spatial inundation maps -- only threshold exceedance. The US system is most detailed and fastest; Europe has better regulatory framework (EU Floods Directive). Global provides the broadest coverage but at lowest resolution. Each system reflects the balance between detail, coverage, and operational resources.",
+    "explanation": "The three systems represent different points on the detail-coverage-frequency tradeoff."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND approach handles wide versus narrow river reaches and why the terrain geometry automatically captures this variation.",
+    "correct": "For a wide-floodplain reach (like the Tisza), as depth increases, the number of inundated cells (HAND < d) increases rapidly because the flat terrain spreads water over kilometers. The rating curve flattens: large discharge changes produce small depth changes. For a narrow canyon reach, inundated cells increase slowly because steep valley walls confine the water. The rating curve stays steep: small discharge changes produce large depth changes. HAND captures this automatically because the hydraulic properties at each depth are computed directly from cell counts and HAND values. No assumption about channel shape is needed. The DEM geometry determines the rating curve shape. This adaptability is one of HAND's greatest strengths: one algorithm, applied uniformly, produces physically appropriate results for all terrain types.",
+    "explanation": "The terrain tells the story; HAND simply reads it."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the 'Pin to Flood Map' concept could be adapted for use in Hungary during Tisza flood events.",
+    "correct": "During a Tisza flood, observers (OVF staff, emergency responders, citizens) could report GPS locations at the water's edge. The app would: (1) sample the pre-computed HAND raster at each observation point, (2) use the HAND value as the local flood depth (water surface equals HAND height at the inundation boundary), (3) apply this depth to all surrounding cells within the same catchment. Multiple pins along the Tisza would build a composite picture of actual flood extent compared against EFAS/OVF predictions. Discrepancies would identify: overestimation (adjust Manning's n), underestimation (possible levee breach, blocked drainage), or DEM errors. This is especially valuable for tributaries not covered by HYDROINFO's 98 stations, where crowd-sourced data may be the only ground truth.",
+    "explanation": "Citizen science observations, structured through the HAND mathematical framework, provide validation data."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the steady flow assumption in Manning's equation, why it matters more for flash floods than for slow-rising floods, and how this affects HAND-based mapping accuracy.",
+    "correct": "Manning's equation computes discharge for constant-in-time water depth. During rising floods, momentum effects increase discharge for a given depth; during falling floods, discharge is lower. This 'loop rating curve' effect is significant for flash floods (Onion Creek: peak in hours) where the hydrograph changes rapidly, producing 10-20% discharge errors. For slow-rising floods (Tisza: peak over days), the quasi-steady approximation is much better because conditions change slowly. For HAND-based mapping, this means: flash flood inundation maps are more approximate than slow-flood maps. However, even for flash floods, HAND correctly identifies the vulnerable areas -- the uncertainty is in the exact depth, not in which areas are at risk.",
+    "explanation": "The steady-state approximation quality depends on how rapidly the flood changes relative to the reach travel time."
+  },
+  {
+    "type": "essay",
+    "question": "Describe the EFAS probabilistic forecasting approach and discuss how ensemble forecasts could be combined with HAND for risk-based flood mapping.",
+    "correct": "EFAS produces 51 equally likely ensemble scenarios from the ECMWF prediction system, providing probabilistic discharge forecasts. Each scenario gives a different discharge for each reach. Combining with HAND: (1) convert each scenario's discharge to depth via the rating curve, (2) for each cell, count how many scenarios produce inundation (depth > HAND), (3) present results as probability maps ('this cell has 60% probability of flooding in the next 10 days'). This probabilistic approach is more useful than a single deterministic map because it conveys uncertainty. For emergency management, the 75th percentile might trigger preparation while the 95th percentile triggers evacuation. This approach naturally combines the forecast uncertainty (EFAS ensembles) with the terrain analysis (HAND).",
+    "explanation": "Probabilistic HAND-based maps combine forecast uncertainty with terrain to produce risk-based decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'lateral inflow' (q_l) in the Saint-Venant continuity equation and discuss what physical processes it represents that HAND ignores.",
+    "correct": "In the Saint-Venant continuity equation dA/dt + dQ/dx = q_l, the term q_l represents lateral inflow per unit length: runoff entering the channel from hillslopes along the reach. This includes: direct precipitation on the channel, overland flow entering from adjacent land, subsurface flow (interflow, baseflow), and tributary inputs between cross-sections. HAND ignores all of these -- it treats each reach independently with a single assigned depth. In reality, lateral inflows increase discharge along the reach, so downstream portions are deeper than upstream. HEC-RAS accounts for this through distributed lateral inflow boundaries. The practical effect: HAND's single depth per reach is a spatial average that underestimates downstream depths and overestimates upstream depths.",
+    "explanation": "Lateral inflow creates along-reach variation that HAND's single-depth-per-reach approach cannot capture."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the vision of a global 'any point, any river, any time' flood mapping capability using HAND and explain what technical challenges remain.",
+    "correct": "The vision: for any location on Earth, given upstream discharge Q, determine if flooding occurs and to what depth. Components: global HAND from Copernicus GLO-30 (technically feasible), GloFAS discharge forecasts (operational), global rating curves from HAND properties, WorldPop/LandScan population overlay. Remaining challenges: (1) better DEMs -- 30 m GLO-30 with 4 m accuracy limits precision for small streams. (2) better roughness -- no global Manning's n calibration exists. (3) better forecasts -- GloFAS at 5 km misses small catchment flash floods. (4) validation -- no gauge data for most of the world's rivers. (5) bathymetry -- channel beds are unknown globally. Despite these, the approximate system would save lives in data-sparse regions where nothing else exists.",
+    "explanation": "The global vision is technically achievable but requires sustained effort to address remaining challenges."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND framework supports the EU Floods Directive requirement for showing 'indicative number of inhabitants potentially affected.'",
+    "correct": "The directive requires flood risk maps showing affected population. HAND enables this: (1) compute national HAND from available DEMs, (2) for each return period scenario (10-year, 100-year, extreme), assign flood depths to reaches, (3) compare depths against HAND to identify inundated areas, (4) overlay with population data (KSH census tracts in Hungary, Eurostat 1 km^2 grids for EU consistency). The result: for each scenario, the count of inhabitants in flooded areas. HAND provides this for all streams, not just hydraulically modeled major rivers. For Hungary, this means extending impact assessment to small tributaries not covered by OVF's detailed models. The approach is consistent across borders, supporting the directive's transnational cooperation requirements.",
+    "explanation": "HAND provides the spatial flood extent needed to quantify the human impact required by EU regulation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how improving HAND-derived rating curves through machine learning roughness estimation could work in the Hungarian context.",
+    "correct": "The approach: train ML models on gauged reaches where true Manning's n can be estimated from observed rating curves. Features: CORINE land cover type, Sentinel-2 NDVI (seasonal vegetation), channel width from satellite imagery, bed slope from DEM, upstream drainage area. Train on OVF gauge stations (data.vizugy.hu) spanning the Tisza, Danube, and tributaries. Predict n for ungauged reaches. Expected improvement: 20-30% reduction in rating curve error compared to lookup tables. For Hungary specifically, the diversity of terrain (flat Tisza plain, hilly northern mountains, medium-gradient Drava) provides good training data variety. Cross-validation on held-out gauges measures predictive accuracy. The trained model could be applied to all Hungarian reaches.",
+    "explanation": "ML roughness estimation is a natural intersection of machine learning and flood mapping applicable to Hungary."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the 2D flow capability of HEC-RAS and discuss when it is essential versus when HAND is sufficient.",
+    "correct": "HEC-RAS 2D solves the shallow water equations on a computational mesh, modeling lateral floodplain flow with physically correct velocities, depths, and directions. This is essential when: (1) flow velocities matter for structural damage assessment or evacuation planning, (2) backwater from bridges/dams significantly affects upstream water levels, (3) complex urban flow paths around buildings determine damage patterns, (4) dam breach analysis requires tracking the breach flood wave. HAND is sufficient when: (1) the question is 'which areas flood?' not 'how fast does water move?', (2) screening identifies at-risk areas for further analysis, (3) national-scale real-time mapping needs millisecond response, (4) no site-specific data exists for HEC-RAS setup. The two approaches are complementary, not competing.",
+    "explanation": "Understanding when HAND is sufficient prevents unnecessary investment in detailed modeling where screening is adequate."
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the HAND framework transforms the flood mapping paradigm from expert-driven to data-driven, and discuss implications for developing countries.",
+    "correct": "The traditional paradigm: teams of hydraulic engineers spend months building HEC-RAS models for individual reaches, producing excellent but limited-coverage maps (~25% of US streams). The HAND paradigm: terrain data (available globally from satellites) drives automated computation of hydraulic properties and inundation maps for every reach at once. Results are approximate (20-50% error) but universal. For developing countries, this transformation is revolutionary: no need for surveyed cross-sections, calibration data, or local expertise. Copernicus GLO-30, HydroSHEDS, and GloFAS provide all inputs. A researcher in Bangladesh or Nigeria can produce flood vulnerability maps comparable to those available in the US, using the same framework and freely available data.",
+    "explanation": "The data-driven paradigm democratizes flood mapping capability worldwide."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Tisza worked example demonstrates the HAND framework's applicability to a fundamentally different hydrological regime than Onion Creek.",
+    "correct": "Onion Creek: steep (S_0=0.0163), narrow channel, flash floods peaking in hours, upper watershed remote from population. Tisza: flat (S_0=0.00004), 200-400 m wide channel, floods lasting days-weeks, protected by levees. At 3 m depth: Onion Creek Q=170 m^3/s through confined valley; Tisza Q<100 m^3/s because gentle slope means slow flow. But the Tisza's 8-10 m floods spread across 2-5 km floodplain reaching 3,500-7,000 m^3/s. The HAND framework handles both without modification: Manning's equation with terrain-derived geometry and local slope produces appropriate rating curves automatically. This demonstrates that the framework is not regime-specific -- the physics and terrain do the adaptation.",
+    "explanation": "One framework, two fundamentally different rivers, correct results in both -- demonstrating HAND's universality."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the potential for integrating above-water LiDAR with below-water bathymetric data to improve HAND-based hydraulic properties for Hungarian rivers.",
+    "correct": "Most DEMs show water surfaces, making channels appear shallower than reality. Hungary's OVF maintains bathymetric surveys of navigable rivers (Danube, Tisza). Merging these with DDM-5 above-water terrain creates topobathy DEMs representing the true channel. Benefits for HAND: (1) rating curves would correctly reflect channel depth, eliminating the low-flow bias, (2) cross-sectional areas would be larger (deeper channels), improving discharge estimation, (3) hydraulic radius values would be more accurate for in-channel flows. The technical challenge: integrating data from different sources (photogrammetry vs sonar), coordinate systems (EOV vs survey datums), and epochs (DDM-5 vs recent surveys). GIS tools from earlier chapters can perform this integration.",
+    "explanation": "Topobathy DEMs would significantly improve HAND-derived hydraulic properties for Hungary's major rivers."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of reach-specific depth assignments versus uniform depth for the entire watershed, using the Onion Creek 2013 example.",
+    "correct": "In the 2013 flood, seven Onion Creek reaches received different depths: 8 ft in upper tributaries to 15 ft at the peak zone. If a uniform depth were applied to the entire watershed, all areas would appear equally flooded, which is physically wrong -- different tributaries carry different amounts of water. Reach-specific depths capture the spatial variation in flood severity: the main stem peak zone (15 ft) shows much more flooding than upper tributaries (8 ft). This differentiation reflects: (1) different contributing areas, (2) different rainfall distribution, (3) different channel geometries. The resulting map shows a patchwork of extents that matches both hydrological conditions and geomorphological constraints -- far more realistic than a single-depth approach.",
+    "explanation": "Reach-specific depth assignment is what makes HAND-based flood maps realistic rather than simplistic."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how building-level flood risk classification using HAND values could transform flood insurance assessment in Hungary.",
+    "correct": "Each building's HAND value is a permanent measure of its flood exposure. HAND 0-2 m: very high risk, flooded in moderate events. HAND 2-5 m: high risk, flooded in major events. HAND 5-10 m: moderate risk, extreme events only. HAND >10 m: low risk. For insurance: (1) HAND provides an objective, computed risk metric for every building, (2) it extends beyond officially mapped flood zones to cover all streams, (3) it enables risk-based premium calculation, (4) it identifies developments in newly vulnerable areas (suburban expansion into HAND 2-4 m zones). For Hungary specifically, HAND-based classification could complement the OVF flood maps under the EU Floods Directive, providing continuous rather than categorical risk assessment. Open DDM-5 data and OVF gauge data make this feasible today.",
+    "explanation": "HAND-based risk classification could provide a rational, data-driven foundation for flood insurance pricing."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND-based inundation rule (d - HAND) compares physically to what happens during a real flood, discussing the simplifications involved.",
+    "correct": "The inundation rule states: if stream depth d exceeds a cell's HAND value h, the cell is flooded to depth d - h. This assumes: (1) water surface is horizontal within each reach (in reality, it slopes downstream), (2) flooding is instantaneous (in reality, the floodplain fills progressively), (3) no lateral momentum (in reality, overbank water has velocity), (4) no backwater from downstream constrictions, (5) single depth per reach (ignoring along-reach variation). Despite these simplifications, the rule works because: HAND correctly identifies which terrain is near stream level, the arithmetic is exact for the simplified case, and errors are modest compared to forecast uncertainty. For slow-rising Tisza floods, the quasi-steady assumption is reasonable; for flash floods, errors are larger but the vulnerable areas are still correctly identified.",
+    "explanation": "Understanding what the inundation rule captures and what it misses is essential for appropriate application."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the rating curve shape encodes geomorphological information about the channel and floodplain.",
+    "correct": "The rating curve shape directly reflects terrain geometry: (1) At low depths (within channel), a narrow deep channel produces steep Q vs d (efficient conveyance). A wide shallow channel produces gentler Q vs d. (2) Near bankfull, the curve may inflect as water begins to access the floodplain. (3) Above bankfull, a wide floodplain flattens the curve dramatically (enormous area absorbs discharge with minimal depth change). A narrow canyon keeps the curve steep. (4) The bankfull inflection point indicates the transition between in-channel and overbank flow, corresponding to the geomorphic bankfull channel. The HAND approach captures all this automatically because the hydraulic properties at each depth are computed from actual terrain. No assumed geometry is needed -- the DEM tells the physical story.",
+    "explanation": "Rating curve shape is a direct expression of the geomorphological template of the channel-floodplain system."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how pre-computed inundation libraries could be adapted for the European context using EFAS forecasts and EU-Hydro reaches.",
+    "correct": "Adaptation: (1) Compute HAND across Europe from Copernicus EEA-10 and EU-Hydro. (2) Build rating curves for EU-Hydro segments using Manning's equation with CORINE-based roughness. (3) Pre-compute inundation maps at 0.5 m depth intervals for all EU-Hydro segments. (4) When EFAS produces a discharge forecast for a segment, convert to depth via rating curve and retrieve the pre-computed map. (5) Assemble affected segments into a regional mosaic. Differences from US: EU-Hydro has different segmentation than NHDPlus; EFAS provides probabilistic ensembles (enabling probabilistic maps); EEA-10 at 10 m is coarser than 3DEP. Advantages: pan-European consistency, compliance with EU Floods Directive. This approach would complement rather than replace national systems like Hungary's OVF.",
+    "explanation": "The pre-computed library concept transfers to Europe with appropriate data substitutions."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the three time horizons of NWM forecasts (18 hours, 10 days, 30 days) and explain how HAND-based inundation maps differ in utility at each horizon.",
+    "correct": "Short-range (18 hours): highest accuracy, updated hourly. HAND maps at this horizon support specific evacuation decisions and emergency resource deployment. The inundation map is actionable within hours. Medium-range (10 days): moderate accuracy, ensemble-based uncertainty. HAND maps show potential flooding zones for pre-positioning resources and issuing early watches. Probabilistic maps (from ensembles) communicate uncertainty. Long-range (30 days): low accuracy, useful for seasonal planning. HAND maps show general vulnerability but with large uncertainty. Useful for reservoir operations and pre-season preparation. At all horizons, the HAND computation is the same; only the input discharge and its uncertainty differ. As forecast quality degrades with lead time, HAND maps become more probabilistic and less deterministic.",
+    "explanation": "The same HAND infrastructure serves different decision needs at different forecast horizons."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of 'graceful degradation' in the HAND framework: what happens when input data quality decreases?",
+    "correct": "HAND degrades gracefully as data quality decreases: (1) High-quality LiDAR DEM (0.1 m RMSE): HAND precise to ~0.1 m, individual buildings identified, detailed levee assessment. (2) National DEM like DDM-5 (1-2 m RMSE): HAND precise to ~1-2 m, flood zones identified but individual features blurred. (3) Copernicus GLO-30 (4 m accuracy, DSM not DEM): HAND approximate, broad flood-prone zones identified, vegetation bias present. (4) SRTM (6-9 m RMSE): HAND very approximate, only major floodplains identified. At each level, HAND provides some useful information -- it never fails completely. This contrasts with HEC-RAS, which requires a minimum data quality threshold to produce any results. HAND's graceful degradation makes it applicable worldwide, from LiDAR-rich nations to data-sparse regions.",
+    "explanation": "Graceful degradation means HAND provides value at any data quality, though precision varies."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the HAND framework handles the difference between main-stem river flooding and small tributary flash flooding, and what this means for stream network definition.",
+    "correct": "For main-stem flooding (Tisza, Mississippi), only the major river should be in the stream definition. HAND relative to the Tisza tells you about Tisza flood vulnerability. Including small tributaries would lower HAND values at many points, suggesting they're near 'a stream' even if the nearest stream is a tiny brook with no flood risk. For flash flooding on small tributaries, those headwater streams must be included in the stream definition. A different HAND surface is needed for each hazard type. The practical approach: compute multiple HAND surfaces at different stream density thresholds, or use the NHDPlus/EU-Hydro categorization to select streams appropriate for the hazard being assessed. Stream definition is not a one-size-fits-all decision.",
+    "explanation": "The stream network threshold must match the scale of the flooding being assessed."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the significance of the Onion Creek HAND analysis correctly identifying approximately 500 flooded structures consistent with post-event assessments.",
+    "correct": "The post-event validation demonstrates: (1) HAND correctly identifies flood-vulnerable buildings without any site-specific calibration or surveyed data. (2) The reach-specific depth assignments (8-15 feet) produce spatially varying extents matching actual flooding patterns. (3) HAND-derived flood depths are consistent with USGS high-water marks measured after the event. (4) The analysis can be performed for millions of address points in seconds -- fast enough for real-time use. The significance is not just retrospective: if the NWM had been operational in 2013, it could have provided discharge forecasts hours before the peak, and the HAND system would have identified exactly which 500 houses were at risk. This validated approach now operates in real-time at the National Water Center for all 2.7 million US reaches.",
+    "explanation": "Post-event validation demonstrates that HAND works for real floods, not just theoretical scenarios."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the implications of FEMA having detailed flood maps for fewer than 25% of US stream miles, and explain how HAND addresses this coverage gap.",
+    "correct": "The 75% gap means most Americans -- especially those near small headwater streams where flash floods cause the most casualties -- have no detailed flood information. FEMA maps require HEC-RAS modeling: months per reach, surveyed cross-sections, calibration data. At $500+ per mile, mapping all 5.5 million km would cost billions and take decades. HAND fills the gap by computing flood vulnerability for every stream mile from existing DEM data, using automated algorithms, with no site-specific data needed. Results are approximate (20-50% depth error vs 5-15% for HEC-RAS) but universal. For the 75% of streams with no FEMA maps, an approximate map is infinitely better than no map. HAND also prioritizes where FEMA should invest in detailed studies by identifying reaches with the most buildings at risk.",
+    "explanation": "HAND addresses the critical coverage gap that leaves most Americans without flood risk information."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between the HAND framework and the EU Floods Directive's requirement for flood hazard maps at multiple return periods.",
+    "correct": "The EU Floods Directive requires hazard maps for three scenarios: high probability (10-20 year), medium probability (~100 year), and low probability (extreme). HAND supports this by: (1) using historical gauge records to determine the flood depth at each return period for each reach, (2) applying these depths to the HAND raster to produce spatial extent maps for each scenario, (3) computing depth at each flooded cell (d - HAND) for the directive's depth requirement, (4) potentially estimating velocity from the rating curve for the directive's velocity requirement (though less reliably). The HAND approach extends this capability to tributaries not covered by detailed models, fulfilling the directive's requirement for comprehensive coverage. Hungary's OVF already supplements HEC-RAS models with simplified approaches for smaller tributaries.",
+    "explanation": "HAND provides a scalable method for meeting the EU Floods Directive's multi-scenario mapping requirements."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of 'ensemble roughness' approaches and explain how they improve decision-making compared to single-estimate Manning's n.",
+    "correct": "A single Manning's n value produces a single rating curve and a single inundation map, conveying false certainty. Ensemble approaches run the analysis with multiple plausible n values (e.g., 0.03, 0.04, 0.05, 0.06, 0.07) and report the range of outcomes. Example: '200-400 houses at risk depending on roughness assumptions' is more useful for emergency planning than '300 houses at risk.' Decision-makers can plan for the worst case while understanding the uncertainty range. This approach naturally captures the spatial variation in roughness (channel vs floodplain) by using different ensembles for different settings. For Hungary, the approach would use OVF gauge calibration where available and ensemble methods where gauges are absent.",
+    "explanation": "Ensemble methods convert a single uncertain answer into a range that supports better decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how satellite-based flood mapping (Sentinel-1 SAR) provides ground truth for validating and improving HAND-based predictions.",
+    "correct": "During flood events, Sentinel-1 SAR produces flood extent maps (actual observations) that can be compared against HAND-based predictions. Where HAND correctly predicts extent, the framework is validated. Where HAND overpredicts (predicts flooding that satellite shows as dry), Manning's n may be too high or the DEM may have errors. Where HAND underpredicts (satellite shows flooding HAND missed), possible causes include: levee breach, blocked drainage, DEM errors, or wrong stream depth assignment. Systematic comparison across many events calibrates the framework. For Hungary, activating Copernicus EMS during Tisza floods would provide the validation data needed to tune HAND parameters and improve future predictions.",
+    "explanation": "Satellite observations provide the independent ground truth needed to calibrate and validate HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the paradigm shift implications for flood mapping professionals: does HAND make hydraulic engineers obsolete?",
+    "correct": "No -- HAND and hydraulic engineering are complementary, not competing. HAND replaces the need for HEC-RAS on every reach by providing screening-level assessment everywhere. This actually increases the need for hydraulic expertise in two ways: (1) interpreting and improving the national HAND system requires deep understanding of hydraulics (Manning's equation, rating curves, DEM quality), and (2) the reaches identified by HAND as highest-risk require detailed HEC-RAS modeling by skilled engineers. The paradigm shift is from 'engineers build individual reach models' to 'HAND screens nationally, engineers focus on critical reaches.' Flood mapping professionals evolve from model builders to system architects and quality controllers, working at larger scales with greater impact.",
+    "explanation": "HAND amplifies rather than replaces the value of hydraulic engineering expertise."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the HAND-based approach could be used for rapid damage estimation after a flood event, combining inundation depth with building data.",
+    "correct": "Post-event damage estimation: (1) Obtain the flood peak discharge at each reach from gauge observations or NWM analysis. (2) Convert to depth via the HAND-derived rating curve. (3) Compare against HAND at each address point to get building-level flood depth: d_building = d_reach - HAND_building. (4) Apply depth-damage functions (from HAZUS, EU damage curves, or Hungarian insurance data) to estimate monetary damage at each building. (5) Aggregate: total buildings flooded, total population affected, total estimated damage, depth distribution. This analysis can be performed within hours of an event for thousands of buildings, supporting insurance claims processing, emergency aid allocation, and recovery planning. The approach was validated on Onion Creek with ~500 correctly identified flooded structures.",
+    "explanation": "HAND enables rapid post-event damage estimation at building level for the entire affected area."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the concept of 'no map' being the baseline for most of the world's rivers and explain why even an approximate HAND map is transformative.",
+    "correct": "For the 75% of US stream miles without FEMA maps and for the vast majority of rivers worldwide (sub-Saharan Africa, South Asia, Middle East), the current situation is: no flood map at all. Communities have no systematic information about which areas flood. HAND provides: (1) identification of flood-prone terrain (HAND < threshold), (2) relative ranking of vulnerability (lower HAND = higher risk), (3) estimated inundation depth for any given stream level. Even with 20-50% depth uncertainty and 4 m vertical accuracy from Copernicus GLO-30, this information is incomparably better than nothing. For a village in Bangladesh, knowing 'you are 1.5 m above the nearest river' provides actionable information for building placement, evacuation routes, and early warning response.",
+    "explanation": "The comparison between 'approximate information' and 'no information' is the most important argument for HAND."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how improving the National Water Model's channel routing with HAND-derived properties would create a feedback loop that improves flood mapping.",
+    "correct": "Currently, the NWM uses idealized channel geometry for Muskingum routing (RAPID). HAND-derived tables (A_x(d), R(d), P(d)) from actual terrain could replace these with realistic geometry for every reach. Better geometry means: more accurate flow velocities (properly sized channels), better wave travel times (correct celerity), and improved flood wave attenuation (realistic storage). These improvements feed back: better NWM discharge forecasts -> more accurate depth assignments -> better HAND-based inundation maps. This creates a positive feedback loop: terrain analysis improves the forecast that drives the inundation mapping that motivated the terrain analysis. The integration is technically feasible since HAND properties are already computed for every reach.",
+    "explanation": "HAND-derived properties could improve both the forecast and the mapping in a self-reinforcing cycle."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how the HAND framework addresses the 'ungauged catchment problem' that has challenged hydrology for decades.",
+    "correct": "The ungauged catchment problem: most catchments have no discharge observations, making calibration and validation impossible. Traditional approaches (HEC-RAS) require local data for every reach. HAND addresses this by: (1) requiring no discharge observations (only DEM + stream network), (2) deriving hydraulic properties from terrain geometry rather than field measurement, (3) using Manning's equation with estimated roughness rather than calibrated parameters, (4) providing flood vulnerability assessment without any hydrological model. For forecasting, GloFAS provides discharge estimates for ungauged rivers globally. The combination of GloFAS + HAND enables flood mapping for rivers that have never been gauged. The accuracy is lower than gauged systems, but the information exists -- a fundamental advance over the 'no data, no map' status quo.",
+    "explanation": "HAND's terrain-based approach circumvents the ungauged catchment problem that blocks traditional methods."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the relationship between HAND-based flood mapping and the National Flood Insurance Program (NFIP) in the United States.",
+    "correct": "NFIP relies on FEMA flood maps (Special Flood Hazard Areas) that cover <25% of stream miles. Properties in mapped flood zones must carry flood insurance. But 75% of streams are unmapped, meaning many flood-prone properties have no insurance requirement. HAND provides: (1) screening of all 9.28 million Texas address points (and by extension, all US addresses) for flood exposure, (2) identification of properties at risk outside FEMA-mapped zones, (3) risk-based classification (HAND 0-2 m = very high, 2-5 m = high, etc.) for insurance pricing, (4) data for 'Risk Rating 2.0' which moves toward building-level risk assessment. HAND doesn't replace FEMA Flood Insurance Rate Maps but provides the nationwide risk data that NFIP needs for comprehensive coverage.",
+    "explanation": "HAND fills the coverage gap that limits NFIP's ability to accurately price flood risk nationwide."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the statement that 'an approximate map is infinitely better than no map' for global flood management.",
+    "correct": "This statement captures HAND's most important contribution. Detailed hydraulic models (HEC-RAS) provide high accuracy but exist for a tiny fraction of the world's rivers. For the vast majority -- particularly in developing countries with the highest flood mortality -- there is nothing. HAND provides screening-level maps using free global data (Copernicus GLO-30, HydroSHEDS). The accuracy is limited (30 m resolution, 4 m vertical uncertainty, approximate roughness), but the resulting maps: identify flood-prone communities, enable emergency routing, support development zoning, and provide the foundation for early warning. The mathematical improvement from 'no map' to 'approximate map' is not incremental -- it is infinite. This philosophy drives the paradigm shift from precision-at-points to coverage-everywhere.",
+    "explanation": "The infinite improvement from zero information to approximate information is HAND's most compelling argument."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Hungary's position as an EFAS partner enables enhanced flood forecasting capabilities beyond what OVF could provide alone.",
+    "correct": "As an EFAS partner, OVF receives: (1) medium-range (10-day) discharge forecasts for the Danube and Tisza from ECMWF/LISFLOOD, complementing OVF's short-range national forecasts, (2) probabilistic ensemble forecasts (51 scenarios) providing uncertainty information, (3) flash flood indicators for small catchments where national models are too coarse, (4) soil moisture and snow water equivalent maps informing antecedent conditions, (5) pan-European perspective showing upstream conditions in other countries (critical for the Tisza, which receives water from Ukraine, Romania, and Slovakia). OVF alone cannot forecast conditions outside Hungary's borders. EFAS provides the transboundary information essential for Tisza flood management. Combining EFAS forecasts with national HAND-based mapping would create an advance spatial warning system.",
+    "explanation": "EFAS provides the transboundary, medium-range perspective that national systems cannot achieve alone."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the ultimate vision of the HAND framework: a system that answers 'will this location flood, and how deep?' for any point on Earth.",
+    "correct": "The vision requires: global HAND (from Copernicus GLO-30 + HydroSHEDS), global discharge forecasts (GloFAS), global rating curves (from HAND properties + estimated roughness), and global building/population data (WorldPop, LandScan). Given these, any point's flood vulnerability is: (1) extract HAND value at the point, (2) identify its associated river reach, (3) obtain the forecast discharge for that reach, (4) convert to depth via the reach's rating curve, (5) if depth > HAND, the point floods to depth d - HAND. The remaining challenges: DEM accuracy in developing regions, Manning's n estimation without gauges, discharge forecast quality for small catchments, and validation data. The framework exists; the data are accumulating; the tools work. What remains is sustained effort to make it work everywhere, for everyone.",
+    "explanation": "The vision combines terrain, forecast, and population data to provide universal flood risk information."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND handles rivers crossing international boundaries, using the Tisza as example.",
+    "correct": "The Tisza crosses Ukraine, Romania, Hungary, Serbia. Challenges: different DEMs, networks, and coordinate systems. Solutions: use Copernicus EEA-10 for consistent DEM, EU-Hydro for consistent streams, common projection, EFAS for transboundary forecasts. EFAS forecasts upstream Romanian reaches; HAND converts to extent affecting Hungarian floodplains.",
+    "explanation": "Transboundary rivers require consistent cross-border data."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HAND-based building-level flood risk for insurance assessment.",
+    "correct": "Each building's HAND provides permanent exposure metric. Classification: HAND 0-2 m = very high premium, 2-5 m = high, 5-10 m = moderate, >10 m = low. Adjust for local river characteristics. Combine with depth-damage functions for expected annual loss. More granular than FEMA zones because each building gets its own metric. Feasible in Hungary with DDM-5 and building registry.",
+    "explanation": "HAND enables property-level flood risk quantification."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the volume computation V = sum(d - HAND_i) * (delta_x)^2 and its physical meaning.",
+    "correct": "For each inundated cell, local depth is (d - HAND). Multiplied by cell area gives volume over that cell. Summing gives total flood volume. This accounts for terrain complexity: deep areas contribute more, shallow areas less. Mean depth (V/A_s) < d because some cells are barely inundated. The volume represents total floodplain water storage at depth d.",
+    "explanation": "The volume calculation captures true 3D terrain-water interaction."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the pre-compute-then-lookup architecture as a general principle for operational hydrology.",
+    "correct": "Separate expensive one-time terrain analysis from fast real-time operations. HAND: terrain processing produces static products; real-time operations look up results. Enables millisecond response during events, continental scale, hourly updates. Same principle applies to soil moisture indices, travel time maps, reservoir stage-storage.",
+    "explanation": "Pre-compute-then-lookup is a general operational architecture pattern."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Hungarian flood alerts (I/II/III) could be enhanced with HAND spatial mapping.",
+    "correct": "Currently alerts are point-based gauge readings. HAND enhancement: station water level translates to depth via rating curve, HAND comparison produces spatial inundation map per alert level, impact assessment counts affected people. Converts 'water at 10 m' to '15,000 people in inundated zone.' Far more actionable for emergency managers.",
+    "explanation": "HAND transforms point alerts into spatial flood intelligence."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss validation of the HAND framework using the Onion Creek 2013 flood.",
+    "correct": "With reach-specific depths (8-15 ft), HAND identified ~500 flooded structures matching post-event surveys. Depths matched USGS high-water marks. Spatial pattern matched reality. This demonstrates: HAND works without site-specific calibration, reach-specific depths produce realistic variation, and the framework is accurate enough for emergency response.",
+    "explanation": "Successful retrospective validation establishes confidence for operational use."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how the Szolnok gauge's long record enables HAND rating curve validation.",
+    "correct": "Szolnok has records since the 19th century. Comparison shows: overestimation at low flows (DEM shows water surface), good agreement at bankfull, DEM-quality-dependent agreement at high flows. Best calibration: adjust Manning's n at bankfull and overbank, accepting low-flow bias. Historical flood levels define HAND thresholds for severity levels.",
+    "explanation": "Long gauge records calibrate and validate HAND rating curves."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss functional flood mapping where the goal is identifying disrupted functions rather than precise depths.",
+    "correct": "Shift from 'how deep?' to 'which functions disrupted?' Overlay HAND inundation with critical infrastructure: flooded hospitals = medical disruption, flooded roads = blocked evacuation, flooded treatment plants = water supply threat. More actionable for emergency managers. HAND's approximate accuracy (20-50%) is acceptable because the binary flooded/not question is more robust than exact depth.",
+    "explanation": "Functional mapping converts physical data to operational decisions."
+  },
+  {
+    "type": "essay",
+    "question": "Explain depth-damage functions and how they connect HAND depths to monetary losses.",
+    "correct": "Depth-damage functions relate flood depth to damage percentage by building type. HAND provides building depth: d_building = d_reach - HAND_building. Applying functions gives dollar damage per building. Aggregating gives total economic loss. Enables retrospective analysis, prospective planning, and reach-level prioritization.",
+    "explanation": "Depth-damage functions bridge physical flood mapping to economic loss estimation."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss HAND-based agricultural crop loss assessment for Tisza floods.",
+    "correct": "Crop loss depends on depth (from HAND), duration, timing, and crop type. HAND provides spatial flood depth for entire floodplain. Combined with agricultural land use maps (LPIS) and crop damage curves, HAND maps flooded agricultural area, estimates loss by zone, and identifies areas needing land use change. Post-flood assessment completed in hours.",
+    "explanation": "HAND connects flood mapping to agricultural impact assessment."
+  },
+  {
+    "type": "essay",
+    "question": "Explain why synthetic rating curves are called 'synthetic' versus 'observed.'",
+    "correct": "'Synthetic' = derived from terrain geometry + Manning's equation, not from measurement. Available everywhere with a DEM. 'Observed' = from decades of gauge measurements, available at <1% of reaches. Synthetic advantage: universal coverage, consistent method, seconds to compute. Limitation: depends on assumed Manning's n and DEM quality. Best approach: calibrate synthetic against observed where gauges exist.",
+    "explanation": "'Synthetic' highlights terrain derivation versus field measurement origin."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss integrating HAND with census data for EU Floods Directive population exposure.",
+    "correct": "Directive requires indicative affected inhabitants. HAND integration: compute HAND, determine flood depth per reach per scenario, identify flooded cells, overlay with KSH census or Eurostat 1 km^2 grid. Sum population in flooded cells = affected inhabitants. For cross-border Tisza, Eurostat grid provides consistent methodology across Hungary, Romania, Serbia.",
+    "explanation": "HAND provides flood extent for population exposure quantification."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND creates opportunities for citizen science in flood monitoring.",
+    "correct": "Citizens mark GPS location at water's edge. App samples HAND there -- the value equals local flood depth. Applied to surrounding catchment cells produces locally validated map. Multiple observations build composite. For Hungary, supplements 98 HYDROINFO stations with between-gauge observations.",
+    "explanation": "HAND converts simple citizen observations into flood data."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the long-term vision for flood mapping in Hungary using HAND.",
+    "correct": "Near-term: national HAND from DDM-5, rating curves, inundation library, EFAS integration. Medium-term: targeted LiDAR for Tisza/Danube levees and urban areas. Long-term: nationwide LiDAR, real-time HAND mapping like US NWC, climate projection integration. Each step builds on the previous. The near-term computation is feasible today.",
+    "explanation": "A phased approach provides realistic development from current state to comprehensive capability."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how HAND-derived properties could improve the NWM channel routing.",
+    "correct": "NWM currently uses idealized geometry for Muskingum routing. HAND provides terrain-based A_x(d), R(d), P(d) for every reach. Better geometry gives more realistic velocities, travel times, and storage. Improved routing improves downstream flood predictions, which improve HAND-based inundation maps. A positive feedback loop: terrain analysis improves forecasts that drive mapping.",
+    "explanation": "HAND properties could improve both forecasting and mapping."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the HAND framework's approach to the ungauged catchment problem.",
+    "correct": "Most catchments have no discharge observations. Traditional methods (HEC-RAS) require local data. HAND requires no observations: only DEM + stream network. Rating curves use estimated roughness. For forecasting, GloFAS provides ungauged discharge estimates. HAND + GloFAS enables flood mapping for rivers never gauged -- fundamental advance over 'no data, no map.'",
+    "explanation": "HAND circumvents the ungauged catchment problem."
+  },
+  {
+    "type": "essay",
+    "question": "Explain HAND's relationship to the National Flood Insurance Program in the US.",
+    "correct": "NFIP relies on FEMA maps covering <25% of streams. Properties in mapped zones must carry insurance. HAND screens all addresses for exposure, identifies at-risk properties outside FEMA zones, provides building-level risk classification, and supports Risk Rating 2.0. HAND fills the coverage gap NFIP needs for comprehensive pricing.",
+    "explanation": "HAND fills the coverage gap limiting NFIP's risk pricing ability."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why 'an approximate map is infinitely better than no map' for global flood management.",
+    "correct": "For 75% of US streams and most global rivers, there is no flood map. HAND provides screening-level maps from free global data. While accuracy is limited (30 m, 4 m uncertainty), the maps identify flood-prone communities, enable emergency routing, support zoning, and provide early warning foundation. The improvement from zero to approximate information is not incremental -- it is infinite.",
+    "explanation": "The infinite improvement from no information to approximate information is HAND's most compelling argument."
+  },
+  {
+    "type": "essay",
+    "question": "Explain how Hungary's EFAS partnership enables enhanced flood forecasting beyond OVF's national capabilities.",
+    "correct": "As EFAS partner, OVF receives: 10-day discharge forecasts, 51-member ensembles, flash flood indicators, soil moisture maps, and pan-European perspective on upstream conditions in Ukraine/Romania/Slovakia. OVF alone cannot forecast outside Hungary. EFAS provides the transboundary information critical for Tisza flood management.",
+    "explanation": "EFAS provides transboundary perspective national systems cannot achieve alone."
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the ultimate vision: answering 'will this location flood?' for any point on Earth.",
+    "correct": "Required: global HAND from Copernicus GLO-30 + HydroSHEDS, GloFAS forecasts, global rating curves, WorldPop population. Any point's vulnerability: extract HAND, identify reach, obtain forecast, convert to depth, compare. Remaining challenges: DEM accuracy, roughness estimation, forecast quality, validation data. Framework exists; data accumulating; tools work. Sustained effort needed to make it work everywhere, for everyone.",
+    "explanation": "The vision combines terrain, forecast, and population data for universal flood risk information."
+  },
+  {
+    "type": "essay",
+    "question": "Explain the paradigm shift from site-specific hydraulic modeling to systematic HAND-based coverage.",
+    "correct": "Traditional: months per reach with HEC-RAS, excellent but 25% coverage. HAND: terrain from satellites drives automated computation for every reach. 20-50% error but 100% coverage. Same philosophy in NWM (all US), EFAS (all Europe), GloFAS (global). For the 75% unmapped streams, approximate maps infinitely exceed nothing. HAND amplifies rather than replaces engineering expertise.",
+    "explanation": "Trading precision for coverage defines the paradigm shift."
+  }
+]

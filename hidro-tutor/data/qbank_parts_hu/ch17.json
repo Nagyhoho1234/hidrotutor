@@ -1,0 +1,2902 @@
+[
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az US Census Bureau tízéves népszámlálásának legfinomabb területi egysége mi?",
+    "options": [
+      "A. Census tract",
+      "B. Block group",
+      "C. Census block",
+      "D. County"
+    ],
+    "correct": "C",
+    "explanation": "A census block az ~11 millió egység közül a legfinomabb, átlagosan ~30 fő."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány census block létezik az Egyesült Államokban?",
+    "options": [
+      "A. ~74 000",
+      "B. ~220 000",
+      "C. ~3 200",
+      "D. ~11 000 000"
+    ],
+    "correct": "D",
+    "explanation": "Mintegy 11 millió census block."
+  },
+  {
+    "type": "mcq",
+    "question": "Az American Community Survey (ACS) hány változót tartalmaz?",
+    "options": [
+      "A. 731",
+      "B. 2 500",
+      "C. 7 731",
+      "D. 15 000"
+    ],
+    "correct": "C",
+    "explanation": "7 731 változó, 21 táblába rendezve."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány település van Magyarországon a KSH szerint?",
+    "options": [
+      "A. ~500",
+      "B. ~1 500",
+      "C. ~3 155",
+      "D. ~10 000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 3 155 település."
+  },
+  {
+    "type": "mcq",
+    "question": "A NUTS-rendszerben mi a NUTS-0 szint Magyarországra?",
+    "options": [
+      "A. HU1",
+      "B. HU",
+      "C. HU33",
+      "D. HU311"
+    ],
+    "correct": "B",
+    "explanation": "NUTS-0 az ország szintje: HU."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány megyéje van Magyarországnak (Budapesttel együtt)?",
+    "options": [
+      "A. 14",
+      "B. 19",
+      "C. 20",
+      "D. 23"
+    ],
+    "correct": "C",
+    "explanation": "19 megye + Budapest = 20."
+  },
+  {
+    "type": "mcq",
+    "question": "A WorldPop népességi raszter milyen felbontású?",
+    "options": [
+      "A. 30 m",
+      "B. 100 m",
+      "C. 1 km",
+      "D. 5 km"
+    ],
+    "correct": "B",
+    "explanation": "100 m-es felbontás (3 ívmásodperc) az egész bolygóra."
+  },
+  {
+    "type": "mcq",
+    "question": "A LandScan milyen felbontásban ad népességi adatot?",
+    "options": [
+      "A. 100 m",
+      "B. 500 m",
+      "C. ~1 km",
+      "D. 5 km"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 1 km (30 ívmásodperc)."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a fő különbség a WorldPop és a LandScan között?",
+    "options": [
+      "A. Felbontás",
+      "B. Lakónépesség vs. környezeti népesség",
+      "C. Lefedettség",
+      "D. Formátum"
+    ],
+    "correct": "B",
+    "explanation": "WorldPop: lakónépesség (állandó). LandScan: környezeti (24 órás átlag, ingázással)."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik évben volt Magyarország legutóbbi népszámlálása?",
+    "options": [
+      "A. 2011",
+      "B. 2020",
+      "C. 2021",
+      "D. 2022"
+    ],
+    "correct": "D",
+    "explanation": "A népszámlálás 2022. október 1. és november 28. között zajlott."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Eurostat népességi rács milyen felbontású?",
+    "options": [
+      "A. 100 m",
+      "B. 500 m",
+      "C. 1 km",
+      "D. 5 km"
+    ],
+    "correct": "C",
+    "explanation": "1 km-es rácsos népesség egész Európára."
+  },
+  {
+    "type": "mcq",
+    "question": "A határ-eltérési problémánál a naiv kivágás mit okoz?",
+    "options": [
+      "A. Alulbecslést",
+      "B. Túlbecslést",
+      "C. Pontos eredményt",
+      "D. Nulla népességet"
+    ],
+    "correct": "B",
+    "explanation": "Minden metsző poligon teljes népessége beleszámít, ami túlbecsül."
+  },
+  {
+    "type": "mcq",
+    "question": "A sűrűségkorrekciós módszer képlete: P_vízgyűjtő = ?",
+    "options": [
+      "A. Σ(P_i)",
+      "B. Σ(ρ_i × a_cella)",
+      "C. P_összesen / A_összesen",
+      "D. Max(P_i)"
+    ],
+    "correct": "B",
+    "explanation": "Σ(ρ_i × a_cella) ahol ρ_i a népsűrűség és a_cella a cellaterület."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a dazimetrikus térképezés?",
+    "options": [
+      "A. Népesség egyenletes elosztása",
+      "B. Segédadatokkal (pl. felszínborítás) finomított népesség-újraelosztás",
+      "C. Népszámlálási adatok aggregálása",
+      "D. Műholdas népesség-becslés"
+    ],
+    "correct": "B",
+    "explanation": "Felszínborítási segédadatokkal finomított népesség-újraelosztás (lakatlan területekre nulla)."
+  },
+  {
+    "type": "mcq",
+    "question": "Travis County népessége a 2020-as népszámlálás szerint hány fő?",
+    "options": [
+      "A. ~500 000",
+      "B. ~800 000",
+      "C. ~1 290 000",
+      "D. ~2 000 000"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 1 290 000 fő."
+  },
+  {
+    "type": "mcq",
+    "question": "Travis County területének hány százaléka a 100 éves árterületen?",
+    "options": [
+      "A. ~1%",
+      "B. ~3,5%",
+      "C. ~10%",
+      "D. ~20%"
+    ],
+    "correct": "B",
+    "explanation": "Az érintett népesség a megye ~3,5%-a."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye 2022-es népessége megközelítőleg mennyi?",
+    "options": [
+      "A. 450 000",
+      "B. 538 000",
+      "C. 638 000",
+      "D. 786 000"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 638 000 fő."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye népességének hány százaléka él a 100 éves árterületen?",
+    "options": [
+      "A. ~3,5%",
+      "B. ~5%",
+      "C. ~10,3%",
+      "D. ~20%"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 10,3%, lényegesen magasabb Travis County 3,5%-ánál."
+  },
+  {
+    "type": "mcq",
+    "question": "A Cigándi járásban a 100 éves árterületen élő népesség aránya?",
+    "options": [
+      "A. 8,5%",
+      "B. 16,1%",
+      "C. 26,5%",
+      "D. 60,0%"
+    ],
+    "correct": "D",
+    "explanation": "60,0% - a Tisza-Bodrog torkolatánál a legmagasabb arány."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ACS változó B19013e1 mit jelöl?",
+    "options": [
+      "A. Teljes népességet",
+      "B. Medián háztartási jövedelmet",
+      "C. Lakóegységek számát",
+      "D. Medián életkort"
+    ],
+    "correct": "B",
+    "explanation": "B19013e1 a medián háztartási jövedelem (becslés)."
+  },
+  {
+    "type": "mcq",
+    "question": "A FIPS-kódban Texas állam kódja mi?",
+    "options": [
+      "A. 12",
+      "B. 36",
+      "C. 48",
+      "D. 53"
+    ],
+    "correct": "C",
+    "explanation": "Texas = 48, Travis County = 453."
+  },
+  {
+    "type": "mcq",
+    "question": "A TIGER rendszer mit biztosít?",
+    "options": [
+      "A. Időjárás-előrejelzést",
+      "B. Népszámlálási földrajzi határfájlokat",
+      "C. Árvízi veszélytérképeket",
+      "D. Vízhozam-adatokat"
+    ],
+    "correct": "B",
+    "explanation": "Topologically Integrated Geographic Encoding and Referencing rendszer shapefile-okban."
+  },
+  {
+    "type": "mcq",
+    "question": "A magyar KSH-nál a települési kód és a NUTS LAU-kód milyen célra szolgál?",
+    "options": [
+      "A. Időjárás-azonosításra",
+      "B. Csatolókulcsként a határok és attribútumtáblák között",
+      "C. Vízhozam-kódolásra",
+      "D. Árvízi szint azonosítására"
+    ],
+    "correct": "B",
+    "explanation": "A csatolókulcs a földrajzi határok és a demográfiai adatok összekapcsolásához."
+  },
+  {
+    "type": "mcq",
+    "question": "A magyar népszámlálás 2022-ben a háztartások hány százaléka töltötte ki online?",
+    "options": [
+      "A. 25%",
+      "B. 45%",
+      "C. 68%",
+      "D. 85%"
+    ],
+    "correct": "C",
+    "explanation": "A háztartások mintegy 68%-a online töltötte ki."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Edwards-víztartó feletti népesség megközelítőleg hány fő a 2010-es népszámlálás alapján?",
+    "options": [
+      "A. ~500 000",
+      "B. ~1 200 000",
+      "C. ~2 352 709",
+      "D. ~4 000 000"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 2 352 709 fő."
+  },
+  {
+    "type": "mcq",
+    "question": "A San Marcos-medence sűrűségkorrigált népessége 2010-ben megközelítőleg mennyi?",
+    "options": [
+      "A. 120 000",
+      "B. 150 000",
+      "C. 179 727",
+      "D. 200 000"
+    ],
+    "correct": "C",
+    "explanation": "Sűrűségkorrekciós módszerrel ~179 727 fő."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység képletben mi a középső tag?",
+    "options": [
+      "A. Valószínűség",
+      "B. Kitettség",
+      "C. Mélység",
+      "D. Sebesség"
+    ],
+    "correct": "B",
+    "explanation": "Kitettség (Exposure): emberek, épületek, infrastruktúra az árvízterületen."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Eurostat GISCO milyen vetületi rendszerben biztosítja az EU népességi rácsot?",
+    "options": [
+      "A. WGS84",
+      "B. UTM",
+      "C. ETRS89-LAEA (EPSG:3035)",
+      "D. EOV"
+    ],
+    "correct": "C",
+    "explanation": "ETRS89-LAEA (EPSG:3035) a páneurópai szabvány."
+  },
+  {
+    "type": "mcq",
+    "question": "A JRC GHSL milyen felbontású épületkontúr-adatot biztosít?",
+    "options": [
+      "A. 1 m",
+      "B. 10 m",
+      "C. 30 m",
+      "D. 100 m"
+    ],
+    "correct": "B",
+    "explanation": "10 m-es felbontásban az egész Földre."
+  },
+  {
+    "type": "mcq",
+    "question": "A GADM adatbázis mit tartalmaz?",
+    "options": [
+      "A. Népességi adatokat",
+      "B. Csak közigazgatási határokat",
+      "C. Vízhozam-adatokat",
+      "D. Talajadatokat"
+    ],
+    "correct": "B",
+    "explanation": "A GADM csak határokat tartalmaz, demográfiai attribútumok nélkül."
+  },
+  {
+    "type": "mcq",
+    "question": "Hány járás van Magyarországon (a budapesti kerületekkel együtt)?",
+    "options": [
+      "A. 120",
+      "B. 155",
+      "C. 174 + 23",
+      "D. 200"
+    ],
+    "correct": "C",
+    "explanation": "174 vidéki járás + 23 budapesti kerület = 197."
+  },
+  {
+    "type": "mcq",
+    "question": "Az US Census Bureau API milyen formátumban ad vissza adatokat?",
+    "options": [
+      "A. XML",
+      "B. CSV",
+      "C. JSON",
+      "D. Shapefile"
+    ],
+    "correct": "C",
+    "explanation": "JSON adatokat ad vissza a változók, szintek és évek kombinációjára."
+  },
+  {
+    "type": "mcq",
+    "question": "A Lechner Tudásközpont milyen koordináta-rendszerben kezeli a magyar kataszteri adatokat?",
+    "options": [
+      "A. WGS84",
+      "B. ETRS89",
+      "C. EOV (EPSG:23700)",
+      "D. UTM 34N"
+    ],
+    "correct": "C",
+    "explanation": "A magyar EOV vetületi rendszerben (EPSG:23700)."
+  },
+  {
+    "type": "mcq",
+    "question": "Travis County-ban hány census tract van?",
+    "options": [
+      "A. 120",
+      "B. 218",
+      "C. 500",
+      "D. 823"
+    ],
+    "correct": "B",
+    "explanation": "218 census tract, amelyek 823 block group-ra oszlanak."
+  },
+  {
+    "type": "mcq",
+    "question": "Austin keleti oldala miért árvízveszélyesebb az árvízi kockázat szempontjából?",
+    "options": [
+      "A. Magasabban fekszik",
+      "B. Laposabb terep és alacsonyabb jövedelem",
+      "C. Több esőt kap",
+      "D. Nincsenek gátak"
+    ],
+    "correct": "B",
+    "explanation": "Laposabb Blackland Prairie, történelmi szegregáció, alacsonyabb jövedelmek, nagyobb árvízveszély."
+  },
+  {
+    "type": "mcq",
+    "question": "A STEER adatbázis Texasban mit szolgál?",
+    "options": [
+      "A. Árvíz-előrejelzést",
+      "B. Különleges szükségletű személyek regisztrálását evakuáláshoz",
+      "C. Vízhozam-mérést",
+      "D. Földtani modellezést"
+    ],
+    "correct": "B",
+    "explanation": "State of Texas Emergency Assistance Registry: mozgáskorlátozott személyek előzetes regisztrálása."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az EU Árvízi Irányelvének (2007/60/EK) 6. cikkének követelménye?",
+    "options": [
+      "A. Árvíztérképek készítése",
+      "B. Az érintett lakosok számának és gazdasági tevékenységnek az azonosítása",
+      "C. Gátak építése",
+      "D. Műholdfelvételek készítése"
+    ],
+    "correct": "B",
+    "explanation": "A potenciálisan érintett lakosok és gazdasági tevékenység azonosítása szükséges."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye hány járást tartalmaz?",
+    "options": [
+      "A. 10",
+      "B. 12",
+      "C. 16",
+      "D. 20"
+    ],
+    "correct": "C",
+    "explanation": "16 járás, köztük a Miskolci, Kazincbarcikai és Cigándi."
+  },
+  {
+    "type": "mcq",
+    "question": "A FEMA NFHL-ben az SFHA A és AE zónák mit jelölnek?",
+    "options": [
+      "A. 500 éves árterületet",
+      "B. 100 éves (1% éves valószínűségű) árterületet",
+      "C. 50 éves árterületet",
+      "D. Vízelvezetési területet"
+    ],
+    "correct": "B",
+    "explanation": "Special Flood Hazard Area: 1%-os éves előfordulási valószínűség."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye melyik járása rendelkezik a legmagasabb arányú árterületi népességgel?",
+    "options": [
+      "A. Miskolci járás",
+      "B. Ózdi járás",
+      "C. Tokaji járás",
+      "D. Cigándi járás"
+    ],
+    "correct": "D",
+    "explanation": "Cigándi járás: 60,0% a 100 éves árterületen."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen módszerrel készítik a WorldPop népességi rácsot?",
+    "options": [
+      "A. Egyszerű interpoláció",
+      "B. Népszámlálási adatok dezaggregációja gépi tanulással",
+      "C. Műholdas számlálás",
+      "D. Telefonos felmérés"
+    ],
+    "correct": "B",
+    "explanation": "Népszámlálási + műholdas kováltozók + véletlen erdők (random forest)."
+  },
+  {
+    "type": "mcq",
+    "question": "A GHS-POP adatkészlet milyen időszakot fed le?",
+    "options": [
+      "A. 1990-2020",
+      "B. 1975-2030",
+      "C. 2000-2025",
+      "D. 1950-2100"
+    ],
+    "correct": "B",
+    "explanation": "Többidőszakos: 1975-2030, JRC/EK fejlesztés."
+  },
+  {
+    "type": "mcq",
+    "question": "A KSH API milyen címen érhető el?",
+    "options": [
+      "A. ksh.hu",
+      "B. data.ksh.hu",
+      "C. api.census.gov",
+      "D. nepszamlalas.hu"
+    ],
+    "correct": "B",
+    "explanation": "A data.ksh.hu címen JSON formátumban."
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora a block group átlagos mérete háztartásokban?",
+    "options": [
+      "A. ~30",
+      "B. ~200",
+      "C. ~600",
+      "D. ~2000"
+    ],
+    "correct": "C",
+    "explanation": "Átlagosan mintegy 600 háztartás."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye a Cigándi járás lakossága megközelítőleg mennyi?",
+    "options": [
+      "A. 5 000",
+      "B. 12 000",
+      "C. 25 000",
+      "D. 48 000"
+    ],
+    "correct": "B",
+    "explanation": "Mintegy 12 000 fő, amelynek 60%-a árterületen él."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szervezet készíti a LandScan-t?",
+    "options": [
+      "A. Southamptoni Egyetem",
+      "B. ORNL (Oak Ridge National Lab)",
+      "C. JRC",
+      "D. USGS"
+    ],
+    "correct": "B",
+    "explanation": "Az Oak Ridge Nemzeti Laboratórium (ORNL) az Egyesült Államokban."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Eurostat GISCO határfájlok milyen méretarányban érhetők el?",
+    "options": [
+      "A. Csak 1:1M",
+      "B. 1:1M - 1:60M",
+      "C. Csak 1:10M",
+      "D. 1:100K - 1:1M"
+    ],
+    "correct": "B",
+    "explanation": "1:1M, 1:3M, 1:10M, 1:20M, 1:60M méretarányban."
+  },
+  {
+    "type": "mcq",
+    "question": "Travis County-ban az árterületi block group-ok medián háztartási jövedelme hány %-kal alacsonyabb a megyei mediánnál?",
+    "options": [
+      "A. ~5%",
+      "B. ~10%",
+      "C. ~15%",
+      "D. ~25%"
+    ],
+    "correct": "C",
+    "explanation": "Mintegy 15%-kal alacsonyabb, jelezve a szociális egyenlőtlenséget."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Onion Creek árvíze Austinban mikor történt?",
+    "options": [
+      "A. 2010-ben",
+      "B. 2013. halloweenkor",
+      "C. 2015-ben",
+      "D. 2017-ben"
+    ],
+    "correct": "B",
+    "explanation": "A 2013-as halloween-i árvíz öt ember halálát okozta."
+  },
+  {
+    "type": "mcq",
+    "question": "A naiv kivágásos módszer mekkora túlbecslést okozott a San Marcos-medencénél?",
+    "options": [
+      "A. ~1%",
+      "B. ~3,6%",
+      "C. ~10%",
+      "D. ~20%"
+    ],
+    "correct": "B",
+    "explanation": "186 200 vs. 179 727: +3,6% túlbecslés."
+  },
+  {
+    "type": "mcq",
+    "question": "Az Eurostat GISCO-ban melyik R csomag biztosít programozott hozzáférést?",
+    "options": [
+      "A. sf",
+      "B. giscoR",
+      "C. terra",
+      "D. raster"
+    ],
+    "correct": "B",
+    "explanation": "A giscoR R-csomag és egyenértékű Python-könyvtárak."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kitettségi elemzés melyik GIS-műveletet használja leggyakrabban?",
+    "options": [
+      "A. Buffer",
+      "B. Clip/Overlay",
+      "C. Network Analysis",
+      "D. Geocoding"
+    ],
+    "correct": "B",
+    "explanation": "Kivágás (Clip) és fedvényezés (Overlay) a népszámlálási és árvízi adatok kombinálásához."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen vetületi rendszert ajánl a fejezet Magyarország számára a területszámításokhoz?",
+    "options": [
+      "A. WGS84 földrajzi",
+      "B. UTM 34N",
+      "C. EOV (EPSG:23700) vagy ETRS89-LAEA (EPSG:3035)",
+      "D. Mercator"
+    ],
+    "correct": "C",
+    "explanation": "Vetített koordináta-rendszer szükséges: EOV vagy ETRS89-LAEA."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen Python könyvtár szolgál a raszteralapú zónális statisztikához?",
+    "options": [
+      "A. numpy",
+      "B. rasterstats",
+      "C. sklearn",
+      "D. scipy"
+    ],
+    "correct": "B",
+    "explanation": "rasterstats.zonal_stats() a Python nyílt forráskódú megoldás."
+  },
+  {
+    "type": "mcq",
+    "question": "A QGIS-ben melyik eszköz felel meg az ArcGIS Extract by Mask-nek?",
+    "options": [
+      "A. Buffer",
+      "B. Clip Raster by Mask Layer",
+      "C. Dissolve",
+      "D. Merge"
+    ],
+    "correct": "B",
+    "explanation": "Clip Raster by Mask Layer a QGIS-ekvivalens."
+  },
+  {
+    "type": "mcq",
+    "question": "Magyarország teljes népessége a 2022-es népszámlálás szerint megközelítőleg mennyi?",
+    "options": [
+      "A. 7,8 millió",
+      "B. 8,5 millió",
+      "C. 9,6 millió",
+      "D. 10,2 millió"
+    ],
+    "correct": "C",
+    "explanation": "Megközelítőleg 9,6 millió fő."
+  },
+  {
+    "type": "mcq",
+    "question": "BAZ megye népessége 2011 és 2022 között hány %-kal csökkent?",
+    "options": [
+      "A. 3%",
+      "B. 5%",
+      "C. 7%",
+      "D. 10%"
+    ],
+    "correct": "C",
+    "explanation": "686 000-ről 638 000-re: 7%-os csökkenés."
+  },
+  {
+    "type": "mcq",
+    "question": "A NUTS-hierarchiában melyik szint felel meg a magyar megyéknek?",
+    "options": [
+      "A. NUTS-0",
+      "B. NUTS-1",
+      "C. NUTS-2",
+      "D. NUTS-3"
+    ],
+    "correct": "C",
+    "explanation": "A NUTS-2 nagyjából a megyéknek felel meg."
+  },
+  {
+    "type": "mcq",
+    "question": "Az ACS változónevekben az 'e' utótag mit jelöl?",
+    "options": [
+      "A. Hiba",
+      "B. Becslés (estimate)",
+      "C. Szélső érték",
+      "D. Együttható"
+    ],
+    "correct": "B",
+    "explanation": "Az 'e' becslést, az 'm' a hibahatárt (margin of error) jelöli."
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen adatot gyűjt a magyar népszámlálás 2022 a fogyatékossággal kapcsolatban?",
+    "options": [
+      "A. Semmit",
+      "B. Tartós egészségügyi állapotot és fogyatékossági helyzetet",
+      "C. Csak mozgáskorlátozottságot",
+      "D. Csak látássérülést"
+    ],
+    "correct": "B",
+    "explanation": "Tartós egészségügyi állapotok és fogyatékossági helyzet."
+  },
+  {
+    "type": "mcq",
+    "question": "Mi az ESRI Living Atlas előnye a népszámlálási adatok tekintetében?",
+    "options": [
+      "A. Teljes adatletöltés",
+      "B. Léptékfüggő, előfeldolgozott, gyors felfedezés",
+      "C. Offline használat",
+      "D. Kizárólag magyar adatokat tartalmaz"
+    ],
+    "correct": "B",
+    "explanation": "Léptékfüggő előfeldolgozott rétegek, kicsinyítéskor county, nagyításkor tract szintű."
+  },
+  {
+    "type": "mcq",
+    "question": "A FEMA Hazus-MH modell mit becsül?",
+    "options": [
+      "A. Csapadékmennyiséget",
+      "B. Árvízből származó pénzbeli veszteségeket",
+      "C. Népességnövekedést",
+      "D. Vízminőséget"
+    ],
+    "correct": "B",
+    "explanation": "Mélység-kár függvényekkel becsüli az árvízkárokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az EU-SILC és EU-LFS felmérések milyen információt biztosítanak?",
+    "options": [
+      "A. Földtani adatokat",
+      "B. Éves társadalmi-gazdasági és munkaerőpiaci adatokat",
+      "C. Vízhozam-adatokat",
+      "D. Éghajlati adatokat"
+    ],
+    "correct": "B",
+    "explanation": "A magyar Mikrocenzushoz hasonló folyamatos EU-szintű felmérések."
+  },
+  {
+    "type": "mcq",
+    "question": "A népszámláláshoz képest milyen gyakorisággal frissíti a KSH STADAT tábláit?",
+    "options": [
+      "A. Tízévente",
+      "B. Ötévente",
+      "C. Évente vagy gyakrabban",
+      "D. Havonta"
+    ],
+    "correct": "C",
+    "explanation": "Rendszeresen, a folyamatos népesség-nyilvántartásból merítve."
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik JRC-termék biztosít árvízi veszélytérképeket BAZ megye elemzéséhez?",
+    "options": [
+      "A. Copernicus DEM",
+      "B. JRC River Flood Hazard Maps",
+      "C. CORINE",
+      "D. EU-Hydro"
+    ],
+    "correct": "B",
+    "explanation": "A JRC River Flood Hazard Maps a data.jrc.ec.europa.eu-n."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "mcq",
+    "question": "Az árvízi kockázat három összetevője közül melyik a demográfiai adat által biztosított?",
+    "options": [
+      "A. Veszély és kitettség",
+      "B. Kitettség és sérülékenység",
+      "C. Veszély és sérülékenység",
+      "D. Csak a kitettség"
+    ],
+    "correct": "B",
+    "explanation": "A demográfiai adatok a kitettséghez és a sérülékenységhez biztosítják az adatokat."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az US Census legfinomabb területi egysége a census tract.",
+    "correct": "false",
+    "explanation": "A census block a legfinomabb (~11 millió egység)."
+  },
+  {
+    "type": "true_false",
+    "question": "A WorldPop 100 m-es felbontású népességi rasztert biztosít.",
+    "correct": "true",
+    "explanation": "100 m, az egész bolygóra."
+  },
+  {
+    "type": "true_false",
+    "question": "A LandScan lakónépességet becsül.",
+    "correct": "false",
+    "explanation": "Környezeti népességet (24 órás átlag)."
+  },
+  {
+    "type": "true_false",
+    "question": "A KSH 2022-es népszámlálás online kitöltési aránya 68% volt.",
+    "correct": "true",
+    "explanation": "Drámai váltás a korábbi gyakorlathoz képest."
+  },
+  {
+    "type": "true_false",
+    "question": "A NUTS-2 szint Magyarországon a járásoknak felel meg.",
+    "correct": "false",
+    "explanation": "A NUTS-2 a megyéknek felel meg; a járások LAU szinten vannak."
+  },
+  {
+    "type": "true_false",
+    "question": "A határ-eltérési probléma oka, hogy a népszámlálási és vízgyűjtő-határok nem esnek egybe.",
+    "correct": "true",
+    "explanation": "A közigazgatási és hidrológiai határok szinte soha nem egyeznek."
+  },
+  {
+    "type": "true_false",
+    "question": "A naiv kivágásos módszer alulbecsli a népességet.",
+    "correct": "false",
+    "explanation": "Túlbecsül, mert minden metsző poligon teljes népessége beleszámít."
+  },
+  {
+    "type": "true_false",
+    "question": "A sűrűségkorrekciós módszer egyenletes népsűrűséget feltételez.",
+    "correct": "true",
+    "explanation": "Minden népszámlálási egységen belül egyenletes, ami jobb, mint a naiv módszer."
+  },
+  {
+    "type": "true_false",
+    "question": "A dazimetrikus térképezés felszínborítási adatokat használ a népesség finomításához.",
+    "correct": "true",
+    "explanation": "Lakatlan területek (víz, erdő, szikla) nulla népességet kapnak."
+  },
+  {
+    "type": "true_false",
+    "question": "Travis County népessége 2020-ban mintegy 1 290 000 fő volt.",
+    "correct": "true",
+    "explanation": "A 2020-as népszámlálás szerint."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye népességének mintegy 10,3%-a él a 100 éves árterületen.",
+    "correct": "true",
+    "explanation": "Lényegesen magasabb Travis County 3,5%-ánál."
+  },
+  {
+    "type": "true_false",
+    "question": "A Cigándi járásban a népesség 30%-a él az árterületen.",
+    "correct": "false",
+    "explanation": "60,0% - a legmagasabb arány a megyében."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Edwards-víztartó felett mintegy 2,35 millió ember él.",
+    "correct": "true",
+    "explanation": "Megközelítőleg 2 352 709 fő."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ACS havonta mintegy 250 000 háztartást kérdez meg.",
+    "correct": "true",
+    "explanation": "Évente ~3 millió válasz."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország 2022-es népessége megközelítőleg 9,6 millió fő.",
+    "correct": "true",
+    "explanation": "A KSH népszámlálás 2022 adatai szerint."
+  },
+  {
+    "type": "true_false",
+    "question": "A WorldPop és az Eurostat rács egyaránt dazimetrikus dezaggregációval készül.",
+    "correct": "true",
+    "explanation": "Mindkettő népszámlálási adatok dezaggregációja segédadatokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye növekvő népességű.",
+    "correct": "false",
+    "explanation": "7%-os csökkenés 2011 és 2022 között."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ESRI Living Atlas lehetővé teszi az ACS-adatok letöltését önálló elemzéshez.",
+    "correct": "false",
+    "explanation": "Nem támogatja az adatletöltést, csak felugró lekérdezéseket és vizualizációt."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Eurostat Census Hub harmonizált adatokat biztosít 27 EU-tagállamban.",
+    "correct": "true",
+    "explanation": "Közös változókészlettel, országokon átívelően összehasonlíthatóan."
+  },
+  {
+    "type": "true_false",
+    "question": "A FIPS-kód alfanumerikus azonosító.",
+    "correct": "false",
+    "explanation": "Numerikus azonosító (a NUTS-kód az alfanumerikus)."
+  },
+  {
+    "type": "true_false",
+    "question": "A census block group átlagosan mintegy 600 háztartást tartalmaz.",
+    "correct": "true",
+    "explanation": "Az ACS társadalmi-gazdasági adatainak legfinomabb szintje."
+  },
+  {
+    "type": "true_false",
+    "question": "A JRC GHSL 10 m-es felbontású épületkontúr-adatot ad.",
+    "correct": "true",
+    "explanation": "Műholdról levezetett, az egész Földre."
+  },
+  {
+    "type": "true_false",
+    "question": "A GADM népességi adatokat is tartalmaz.",
+    "correct": "false",
+    "explanation": "Csak közigazgatási határokat, demográfiai attribútumok nélkül."
+  },
+  {
+    "type": "true_false",
+    "question": "A block szintű népesség az ACS-ből származik.",
+    "correct": "false",
+    "explanation": "A blokk szintű népesség a tízéves népszámlálásból; az ACS legfinomabb szintje a block group."
+  },
+  {
+    "type": "true_false",
+    "question": "Travis County-ban az árterületi népesség idősebb a megyei átlagnál.",
+    "correct": "true",
+    "explanation": "18% 65 éves vagy idősebb, szemben a megyei 11%-kal."
+  },
+  {
+    "type": "true_false",
+    "question": "A San Marcos-medence naiv módszerrel számolt népessége 186 200 fő.",
+    "correct": "true",
+    "explanation": "A sűrűségkorrigált 179 727 fő."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Onion Creek árvíze 2013 halloweenkor öt ember halálát okozta.",
+    "correct": "true",
+    "explanation": "Austin egyik legsúlyosabb árvízi eseménye."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar népszámlálás számlálókörzeti adatokat rutinszerűen közzéteszi térbeli formában.",
+    "correct": "false",
+    "explanation": "Nem teszik közzé rutinszerűen nyilvános letöltésre."
+  },
+  {
+    "type": "true_false",
+    "question": "A Bodrogköz települések közül néhánynak 80%+ népessége van az árterületen.",
+    "correct": "true",
+    "explanation": "Pl. Cigánd, Tiszakarád, Olcsvaapáti."
+  },
+  {
+    "type": "true_false",
+    "question": "A CORINE felszínborítás európai adatkészlet.",
+    "correct": "true",
+    "explanation": "Copernicus CORINE."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ACS 7 731 változót tartalmaz.",
+    "correct": "true",
+    "explanation": "21 táblába rendezve."
+  },
+  {
+    "type": "true_false",
+    "question": "A Miskolci járásban a legtöbb ember él az árterületen abszolút számban BAZ-ban.",
+    "correct": "true",
+    "explanation": "~18 000 fő a Sajó mentén."
+  },
+  {
+    "type": "true_false",
+    "question": "A census tract-eket úgy tervezik, hogy 1 200-8 000 fős népességet tartalmazzanak.",
+    "correct": "true",
+    "explanation": "Ahogy növekednek, felosztják őket."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar településhatárok az Eurostat GISCO-ból is letölthetők.",
+    "correct": "true",
+    "explanation": "LAU szintű határok az összes EU-tagállamra."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OpenStreetMap tartalmazza a magyar közigazgatási határokat.",
+    "correct": "true",
+    "explanation": "Települések, járások és megyék."
+  },
+  {
+    "type": "true_false",
+    "question": "A NUTS-kódok numerikusak.",
+    "correct": "false",
+    "explanation": "Alfanumerikusak (pl. HU33)."
+  },
+  {
+    "type": "true_false",
+    "question": "A differenciált adatvédelem zajt ad a kis területi egységekhez.",
+    "correct": "true",
+    "explanation": "A 2020-as US Census alkalmazza."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye az egy főre jutó GDP-t tekintve az ország leggazdagabb megyéje.",
+    "correct": "false",
+    "explanation": "Az egyik legalacsonyabb GDP-jű megye."
+  },
+  {
+    "type": "true_false",
+    "question": "A környezeti népesség a nappali ingázást is figyelembe veszi.",
+    "correct": "true",
+    "explanation": "LandScan: 24 órás átlagos népességeloszlás."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU-SILC éves társadalmi-gazdasági felmérés.",
+    "correct": "true",
+    "explanation": "EU szintű folyamatos felmérés."
+  },
+  {
+    "type": "true_false",
+    "question": "A FEMA NFHL-ben az SFHA az 1%-os éves valószínűségű árterületet jelöli.",
+    "correct": "true",
+    "explanation": "Special Flood Hazard Area."
+  },
+  {
+    "type": "true_false",
+    "question": "A WorldPop kizárólag fejlett országokra biztosít adatot.",
+    "correct": "false",
+    "explanation": "Különös hangsúlyt fektet az alacsony és közepes jövedelmű országokra."
+  },
+  {
+    "type": "true_false",
+    "question": "A Tokaji járás népességének 26,5%-a él az árterületen.",
+    "correct": "true",
+    "explanation": "A Tisza és Bodrog mentén."
+  },
+  {
+    "type": "true_false",
+    "question": "Travis County-ban nincs jövedelmi egyenlőtlenség.",
+    "correct": "false",
+    "explanation": "Éles kelet-nyugati jövedelmi megosztottság."
+  },
+  {
+    "type": "true_false",
+    "question": "A KSH STADAT táblák Excel és CSV formátumban érhetők el.",
+    "correct": "true",
+    "explanation": "Rendszeresen frissített összefoglaló statisztikák."
+  },
+  {
+    "type": "true_false",
+    "question": "Az US Census API a api.census.gov címen érhető el.",
+    "correct": "true",
+    "explanation": "JSON adatokat ad vissza."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Eurostat 1 km-es népességi rács ETRS89-LAEA vetületben van.",
+    "correct": "true",
+    "explanation": "EPSG:3035."
+  },
+  {
+    "type": "true_false",
+    "question": "A redlining az árvízveszélyes területekre terelte az alacsony jövedelmű népességet.",
+    "correct": "true",
+    "explanation": "Történelmi diszkriminatív lakáspolitika."
+  },
+  {
+    "type": "true_false",
+    "question": "A census tract-eket soha nem vonják össze, csak felosztják.",
+    "correct": "true",
+    "explanation": "Felosztás a növekedéssel."
+  },
+  {
+    "type": "true_false",
+    "question": "A Python geopandas.clip() függvény megfelel az ArcGIS Clip-nek.",
+    "correct": "true",
+    "explanation": "Nyílt forráskódú ekvivalens."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye Edelényi járása Magyarország kedvezményezett járásai között van.",
+    "correct": "true",
+    "explanation": "Speciális gazdasági támogatásra szorul."
+  },
+  {
+    "type": "true_false",
+    "question": "Az EU Árvízi Irányelvének 6. cikke az érintett lakosok azonosítását írja elő.",
+    "correct": "true",
+    "explanation": "A demográfiai fedvényezés jogi alapja."
+  },
+  {
+    "type": "true_false",
+    "question": "A LandScan éves frissítéssel rendelkezik.",
+    "correct": "true",
+    "explanation": "2000 óta évente frissítve."
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar roma közösségeknek nincs szükségük többnyelvű árvízi figyelmeztetésekre.",
+    "correct": "false",
+    "explanation": "A többnyelvű figyelmeztetések különösen fontosak lehetnek."
+  },
+  {
+    "type": "true_false",
+    "question": "A népességi raszterek zónális statisztikával közvetlenül elemezhetők.",
+    "correct": "true",
+    "explanation": "Nincs szükség poligon-konverzióra."
+  },
+  {
+    "type": "true_false",
+    "question": "Az Eurostat SDMX protokollt is biztosít adathozzáféréshez.",
+    "correct": "true",
+    "explanation": "Tömeges letöltési API."
+  },
+  {
+    "type": "true_false",
+    "question": "A mobiltelefon-helyadatokat árvízi események során népesség-becslésre használják.",
+    "correct": "true",
+    "explanation": "Anonimizált és aggregált formában."
+  },
+  {
+    "type": "true_false",
+    "question": "Az OVF geoportálján (geoportal.vizugy.hu) árvízi veszélytérképek érhetők el.",
+    "correct": "true",
+    "explanation": "Az EU Árvízi Irányelve szerinti térképek."
+  },
+  {
+    "type": "true_false",
+    "question": "A Copernicus CEMS népességi kitettségi becsléseket integrál a gyors térképekbe.",
+    "correct": "true",
+    "explanation": "JRC GHSL és Eurostat adatokkal."
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország 19 megyéből áll, Budapest nélkül.",
+    "correct": "true",
+    "explanation": "19 megye + Budapest (kettős státusz)."
+  },
+  {
+    "type": "true_false",
+    "question": "A census block átlagosan ~300 főt tartalmaz.",
+    "correct": "false",
+    "explanation": "Átlagosan ~30 fő."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye árvíznek kitett népességének átlagéletkora 2-3 évvel magasabb a megyei átlagnál.",
+    "correct": "true",
+    "explanation": "A vidéki árterületi közösségek idős demográfiája."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kitettségi elemzés konzisztens munkafolyamatot követ bármely országra.",
+    "correct": "true",
+    "explanation": "7 lépéses általános munkafolyamat."
+  },
+  {
+    "type": "true_false",
+    "question": "A WorldPop GeoTIFF formátumú WGS84 rasztereket ad.",
+    "correct": "true",
+    "explanation": "Bármely GIS-sel kompatibilis."
+  },
+  {
+    "type": "true_false",
+    "question": "A Hazus-MH mélység-kár függvényeket használ.",
+    "correct": "true",
+    "explanation": "Árvízmélység vs. százalékos kár összefüggés."
+  },
+  {
+    "type": "true_false",
+    "question": "A 17. fejezet szerint az árvíztérkép önmagában katasztrófavédelmi eszköz.",
+    "correct": "false",
+    "explanation": "Csak a demográfiai fedvényezéssel együtt válik azzá."
+  },
+  {
+    "type": "true_false",
+    "question": "Az ACS 1 éves becsléseket is készít 65 000 főt meghaladó területekre.",
+    "correct": "true",
+    "explanation": "És 5 éves becsléseket minden területre block group szintig."
+  },
+  {
+    "type": "true_false",
+    "question": "BAZ megye 2022-ben fejezte be az árvíztérképek felülvizsgálatát.",
+    "correct": "true",
+    "explanation": "Az EU Árvízi Irányelve keretében Magyarország 2022-ben fejezte be."
+  },
+  {
+    "type": "true_false",
+    "question": "A GISCO az Eurostat Bizottságának Földrajzi Információs Rendszere.",
+    "correct": "true",
+    "explanation": "Határfájlok és téradatok EU-szinten."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "true_false",
+    "question": "Az árvízi kockázat három összetevője: veszély, kitettség és sérülékenység.",
+    "correct": "true",
+    "explanation": "Standard formula az EU Árvízi Irányelvében is."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az US Census legfinomabb területi egysége a _____.",
+    "correct": "census block",
+    "explanation": "~11 millió egység, átl. ~30 fő."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az USA-ban mintegy _____ millió census block létezik.",
+    "correct": "11",
+    "explanation": "A legfinomabb népszámlálási szint."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ACS _____ változót tartalmaz.",
+    "correct": "7 731",
+    "explanation": "21 táblába rendezve."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarországon mintegy _____ település van.",
+    "correct": "3 155",
+    "explanation": "A KSH szerint."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A WorldPop _____ m-es felbontású rasztert biztosít.",
+    "correct": "100",
+    "explanation": "Az egész bolygóra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LandScan ~_____ km-es felbontásban ad népességi adatot.",
+    "correct": "1",
+    "explanation": "30 ívmásodperces."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A LandScan _____ népességet becsül.",
+    "correct": "környezeti",
+    "explanation": "24 órás átlag, ingázással."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország 2022-es népessége megközelítőleg _____ millió fő.",
+    "correct": "9,6",
+    "explanation": "KSH népszámlálás 2022."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar népszámlálás 2022-ben a háztartások _____%-a online válaszolt.",
+    "correct": "68",
+    "explanation": "Drámai digitalizáció."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarországnak _____ megyéje van (Budapest nélkül).",
+    "correct": "19",
+    "explanation": "+ Budapest kettős státusszal."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NUTS-2 szint Magyarországon a _____ felel meg.",
+    "correct": "megyéknek",
+    "explanation": "A NUTS-hierarchiában."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BAZ megye 2022-es népessége megközelítőleg _____ fő.",
+    "correct": "638 000",
+    "explanation": "7% csökkenés 2011 óta."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BAZ megye népességének mintegy _____%-a él az árterületen.",
+    "correct": "10,3",
+    "explanation": "A JRC térképek és KSH adatok alapján."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Cigándi járás népességének _____%-a él az árterületen.",
+    "correct": "60",
+    "explanation": "A Tisza-Bodrog torkolatnál."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County népessége 2020-ban mintegy _____ fő.",
+    "correct": "1 290 000",
+    "explanation": "Az US Census 2020 szerint."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County területének _____%-a a 100 éves árterületen van.",
+    "correct": "3,5",
+    "explanation": "Mintegy 42 000-48 000 ember."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Edwards-víztartó feletti népesség _____ millió fő.",
+    "correct": "2,35",
+    "explanation": "2010-es népszámlálás alapján."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A San Marcos-medence sűrűségkorrigált népessége _____ fő.",
+    "correct": "179 727",
+    "explanation": "A naiv módszer 186 200-at ad."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A naiv kivágásos módszer _____%-os túlbecslést okozott a San Marcos-medencénél.",
+    "correct": "3,6",
+    "explanation": "186 200 vs. 179 727."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ACS változó B19013e1 a _____ jelöli.",
+    "correct": "medián háztartási jövedelem",
+    "explanation": "Becslés (estimate)."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A FIPS-kódban Texas állam kódja: _____.",
+    "correct": "48",
+    "explanation": "Travis County: 453."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A TIGER rendszer _____ és geodatabase formátumban biztosít határfájlokat.",
+    "correct": "shapefile",
+    "explanation": "Államonként letölthető."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Lechner Tudásközpont _____ vetületi rendszerben kezeli a kataszteri adatokat.",
+    "correct": "EOV (EPSG:23700)",
+    "explanation": "Magyar nemzeti vetületi rendszer."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Travis County _____ census tract-ot tartalmaz.",
+    "correct": "218",
+    "explanation": "823 block group-ra oszlanak."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Eurostat népességi rács _____ vetületi rendszerben érhető el.",
+    "correct": "ETRS89-LAEA (EPSG:3035)",
+    "explanation": "Páneurópai szabvány."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A JRC GHSL _____ m-es felbontású épületkontúr-adatot biztosít.",
+    "correct": "10",
+    "explanation": "Az egész Földre."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KSH API a _____ címen érhető el.",
+    "correct": "data.ksh.hu",
+    "explanation": "JSON formátumú programozott hozzáférés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A block group átlagosan _____ háztartást tartalmaz.",
+    "correct": "~600",
+    "explanation": "Az ACS legfinomabb területi szintje."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ adatbázis csak közigazgatási határokat tartalmaz, népesség nélkül.",
+    "correct": "GADM",
+    "explanation": "gadm.org."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarországon _____ járás van (vidéki + budapesti kerület).",
+    "correct": "197",
+    "explanation": "174 vidéki + 23 budapesti."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GHS-POP adatkészlet _____ időszakot fed le.",
+    "correct": "1975-2030",
+    "explanation": "Többidőszakos, JRC fejlesztés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ az ESRI előfeldolgozott népszámlálási rétegeket biztosít.",
+    "correct": "Living Atlas",
+    "explanation": "ArcGIS Online szolgáltatás."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A FEMA _____ modellje mélység-kár függvényeket használ árvízkár-becslésre.",
+    "correct": "Hazus-MH",
+    "explanation": "Épületszintű elemzés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A STEER adatbázis _____ személyek előzetes regisztrálását szolgálja.",
+    "correct": "különleges szükségletű",
+    "explanation": "Evakuálási segítségnyújtásra."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Onion Creek árvíze _____ halloweenkor történt Austinban.",
+    "correct": "2013",
+    "explanation": "Öt halálos áldozat."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az _____ Python könyvtár biztosít raszter-alapú zónális statisztikát.",
+    "correct": "rasterstats",
+    "explanation": "rasterstats.zonal_stats()."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A magyar települési határok az Eurostat _____ szolgáltatásból is letölthetők.",
+    "correct": "GISCO",
+    "explanation": "LAU szintű EU-határok."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ACS-ben az 'e' utótag _____-t, az 'm' _____ jelöl.",
+    "correct": "becslést; hibahatárt",
+    "explanation": "Estimate és margin of error."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A census tract-eket úgy tervezik, hogy _____ - 8 000 fős népességet tartalmazzanak.",
+    "correct": "1 200",
+    "explanation": "Növekedéssel felosztják őket."
+  },
+  {
+    "type": "fill_blank",
+    "question": "BAZ megye a _____ és a Hernád folyók völgyeiben koncentrálódik a népesség.",
+    "correct": "Sajó",
+    "explanation": "Miskolc, Ózd, Kazincbarcika a Sajó-völgyben."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KSH népszámlálás 2022 portálja a _____ címen érhető el.",
+    "correct": "nepszamlalas2022.ksh.hu",
+    "explanation": "Interaktív térképek és letölthető táblák."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A differenciált adatvédelem statisztikai _____ ad a kis területi számokhoz.",
+    "correct": "zajt",
+    "explanation": "Az egyének magánéletének védelme érdekében."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Python _____ könyvtár a clip műveletet biztosítja vektoros adatokhoz.",
+    "correct": "geopandas",
+    "explanation": "geopandas.clip()."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A raszterműveleteknél egy cellát akkor számítanak be, ha a _____ a határon belülre esik.",
+    "correct": "középpontja",
+    "explanation": "Standard raszterkivágási szabály."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az US Census _____ rendszeren keresztül terjeszti a földrajzi határfájlokat.",
+    "correct": "TIGER",
+    "explanation": "Topologically Integrated Geographic Encoding and Referencing."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A CORINE felszínborítási adatok a _____ programból származnak.",
+    "correct": "Copernicus",
+    "explanation": "EU felszínmonitoring."
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 17. fejezet _____ lépéses általános munkafolyamatot ismertet a demográfiai árvízi kitettségi elemzéshez.",
+    "correct": "hét",
+    "explanation": "7 lépés: veszélyzóna, népesség, határok, vetítés, kitettség, sérülékenység, térképezés."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EU Árvízi Irányelvének _____ cikke írja elő az érintett lakosok azonosítását.",
+    "correct": "6.",
+    "explanation": "A demográfiai fedvényezés jogi alapja."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az árvízi kockázat = Veszély × _____ × Sérülékenység.",
+    "correct": "Kitettség",
+    "explanation": "Standard formula."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az US Census és a magyar KSH népszámlálási rendszer földrajzi hierarchiáját!",
+    "explanation": "US: Nation → Regions (4) → States (50) → Counties (~3200) → Tracts (~74K) → Block Groups (~220K) → Blocks (~11M). HU: Ország → Régiók (8) → Megyék (20) → Járások (197) → Települések (~3155) → Számlálókörzetek. US finomabb az alsó szinten."
+  },
+  {
+    "type": "essay",
+    "question": "Mi a határ-eltérési probléma és milyen megoldásai vannak?",
+    "explanation": "Népszámlálási és vízgyűjtő-határok nem egyeznek. Naiv: teljes népesség beleszámít (túlbecslés). Sűrűségkorrekció: P = Σ(ρ_i × a_cella). Dazimetrikus: felszínborítás-alapú finomítás. Rácsos adatok: a probléma eltűnik."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a WorldPop és a LandScan közötti fő különbségeket!",
+    "explanation": "WorldPop: 100 m, lakónépesség, gépi tanulás dezaggregáció. LandScan: ~1 km, környezeti (24h átlag, ingázással). Árvíznél: éjszakai = WorldPop, nappali = LandScan."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a Travis County és BAZ megye árvízi kitettségét!",
+    "explanation": "Travis: 1 290 000 fő, 3,5% árterületen, villámárvíz, block szintű adatok. BAZ: 638 000 fő, 10,3% árterületen, folyami árvíz, települési szintű adatok. BAZ szegényebb, idősebb, csökkenő népesség."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen sérülékenységi tényezők relevánsak az árvízi kockázat szempontjából?",
+    "explanation": "Kor (65+ és <5 évesek), jövedelem (szegénységi küszöb alatti), lakástípus (mobilházak), fogyatékosság (mozgáskorlátozottság), nyelv (nem államnyelvi háztartások), birtoklás (bérlők kevesebb biztosítással)."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a demográfiai árvízi kitettségi elemzés hét lépéses munkafolyamatát!",
+    "explanation": "1. Veszélyzóna meghatározása. 2. Népességi adatok beszerzése. 3. Földrajzi határok. 4. Átvetítés. 5. Kitettség számítás (clip/zónális). 6. Sérülékenységi dezaggregáció. 7. Térképezés és jelentés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen etikai kérdések merülnek fel a demográfiai árvízelemzésben?",
+    "explanation": "Adatvédelem: kis területi egységek maszkolása. Környezeti igazságosság: alacsony jövedelmű, marginalizált közösségek túlreprezentáltsága az ártéren. Redlining hatásai. Célzott szakpolitikai cselekvés szükségessége."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a Copernicus Katasztrófavédelmi Szolgálat a valós idejű népességi kitettség becsléséhez?",
+    "explanation": "JRC GHSL + Eurostat adatok integrálása a gyors térképezési termékekbe. Közel valós idejű becslések az érintett népességről árvízi események jelentésekor."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az Eurostat GISCO adattermékeket és felhasználásukat a hidrológiai elemzésben!",
+    "explanation": "NUTS határfájlok (több méretarány), LAU határfájlok (települési), 1 km népességi rács (dezaggregált), demográfiai statisztikák. ETRS89-LAEA vetületben, közvetlenül fedhető árvíztérképekkel."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen előnyei vannak a rácsos népességi adatoknak a poligon-alapúakkal szemben?",
+    "explanation": "Nincs határ-eltérés. Nincs szükség clip/sűrűségkorrekcióra. Közvetlenül kompatibilis a raszteralapú munkafolyamattal (DEM, HAND, árvízi raszter). Egyszerűbb zónális statisztika."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az Austin keleti és nyugati oldala közötti demográfiai különbségeket!",
+    "explanation": "Nyugat: Edwards-fennsík, dombos, magas jövedelem (100K+ USD), idősebb, alacsonyabb árvízkockázat. Kelet: Blackland Prairie, lapos, alacsony jövedelem (<30K USD), fiatal, több mobilház, magasabb árvízkockázat. Történelmi szegregáció."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a dazimetrikus térképezés a vízgyűjtő-népesség becslésére?",
+    "explanation": "Felszínborítási adatokkal (CORINE, NLCD) finomítjuk a népességelosztást: víz, erdő, szikla = 0 népesség; lakóterület = arányosan magasabb sűrűség. Pontosabb, mint az egyenletes sűrűség feltételezés."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrásokat használna BAZ megye árvízi kitettségi elemzéséhez?",
+    "explanation": "Árvízi veszély: OVF térképek vagy JRC River Flood Hazard Maps. Népesség: KSH népszámlálás 2022 (települési) + Eurostat 1 km rács. Határok: Eurostat GISCO LAU. Vetítés: EOV vagy ETRS89-LAEA."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható az ACS-adat az árvízi sérülékenység térképezéséhez?",
+    "explanation": "Medián jövedelem (B19013), idősek aránya (B01001), fogyatékosság (B18), lakástípus (B25), bérlő arány (B25003), nyelv (B16). Block group szinten, fedvényezve az árterületi határokkal."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információt nyújt az épületszintű kitettségi elemzés az árvízkockázat-kezeléshez?",
+    "explanation": "Épületek helye, értéke, típusa az árterületen. Mélység-kár függvény alkalmazása. Pénzbeli veszteség becslése. Célzott kivásárlási programok, biztosítási díjak meghatározása."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a FIPS-kódrendszer hierarchikus felépítését egy konkrét példán!",
+    "explanation": "Állam: 48 (Texas) | Megye: 453 (Travis) | Tract: 001768 | Block: 1003. Teljes GEOID: 484530017681003. Csatolókulcs a TIGER határok és ACS adatok között."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen korlátai vannak a települési szintű népszámlálási adatoknak Magyarországon az árvízi elemzéshez?",
+    "explanation": "~3155 egység 9,6 millió emberre (US: 11M block 333M-re). Településen belüli variabilitás elvész. Városon belüli elemzéshez (pl. Budapest dunai árvíz) speciális adatkiadás vagy rácsos adatok kellenek."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan változik a népességi kitettség a nap folyamán, és miért fontos ez az árvízi kockázatértékeléshez?",
+    "explanation": "Éjjel: lakónépesség (WorldPop). Nappal: környezeti (LandScan) - kereskedelmi negyedben tízszeres. Villámárvíz éjjel 2-kor vs. gátszakadás hétköznap munkaidőben: eltérő érintett populáció."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a NUTS-osztályozási rendszer szerepét a határon átnyúló vízgazdálkodásban!",
+    "explanation": "Egységes földrajzi keret 27 EU-tagállamra. Duna 10 országon át, Rajna 6-on: összehasonlítható demográfiai adatok szükségesek. NUTS-kódok csatolókulcsok. Eurostat harmonizált adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik a népességnövekedés a jövőbeli árvízi kockázat alakulásában Travis County példáján?",
+    "explanation": "+21% növekedés 2010-2020. Az új fejlesztés az elővárosi perifériára (Round Rock, Pflugerville) terjeszkedik, korábban beépítetlen árterületekre. Növekvő jövőbeli kitettség."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a roma közösségek helyzete BAZ megye árvízi sérülékenységéhez?",
+    "explanation": "Gyengébb minőségű lakásállomány, árvízveszélyes területeken. Többnyelvű figyelmeztetések és kulturálisan megfelelő evakuálási tervezés szükséges. A szociális hátrány fokozza a sérülékenységet."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen információt nyújt a census block szintű adat, amit a települési szintű nem?",
+    "explanation": "Városon belüli variabilitás: melyik tömb árvízveszélyes. Pontos népességszám kis területi egységenként. A sűrűségkorrekció kisebb hibával jár. ~30 fő/block vs. ~1800 fő/település átlag."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a demográfiai adatok és a hidrológiai elemzés összekapcsolásának munkafolyamatát a 17. fejezetben!",
+    "explanation": "Árvíztérkép (15-16. fejezet) → poligon/raszter maszk. Népesség (census/rács) → fedvényezés/clip. Sűrűségkorrekció vagy zónális statisztika. Sérülékenységi dezaggregáció. Eredmény: ki van kockázatban és milyen súlyosan."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan használható a Python geopandas és rasterstats a demográfiai árvízelemzéshez?",
+    "explanation": "geopandas: clip, merge, plot. rasterstats: zonal_stats (WorldPop raszterrel). rasterio: mask.mask. matplotlib: koroplét térképek. Az egész munkafolyamat szkriptelhető és reprodukálható."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen különbségek vannak az árvízi kitettségi elemzésben az USA, Magyarország és a fejlődő világ között?",
+    "explanation": "USA: block szint (finomabb), FEMA NFHL, Census API. Mo: települési szint, OVF/JRC térképek, KSH. Fejlődő: WorldPop 100m, GloFAS, GADM határok. Felbontás és adatelérhetőség eltérő."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a 2013-as dunai árvíz demográfiai kontextusát Magyarországon!",
+    "explanation": "200 éves rekord Budapestnél. Magyar és német hatóságok népszámláláshoz kapcsolt adatokat használtak evakuálási prioritáshoz. Az EFAS napokkal korábban figyelmeztetett. Kritikus: ki van az útjában a víznek?"
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan érvényesül a környezeti igazságosság problémája az árvízi kockázatban?",
+    "explanation": "Alacsony jövedelműek az árterületen (alacsonyabb telekárak). Történelmi szegregáció. Travis County: keleti oldal szegényebb ÉS árvízveszélyesebb. BAZ: Bodrogköz szegény települések 60%+ árterületen."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen demográfiai változók a legfontosabbak az árvízi evakuálás tervezéséhez?",
+    "explanation": "Idős (65+) népesség aránya - mozgáskorlátozottság. Fogyatékosság - különleges szállítási igény. Nyelv - figyelmeztetések nyelve. Gepjarmu-tulajdonlas - evakualasi kepesseg. Jovedelem - eroforrasok az onallo evakualashoz."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a mélység-kár függvények szerepét az árvízi vagyonkár-becslésben!",
+    "explanation": "Épülettípusonként eltérő függvény: árvízmélység (cm) → százalékos kár. Szorzás épületértékkel = pénzbeli veszteség. Összegzés az összes érintett épületre. FEMA Hazus-MH standard."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segít a mobiltelefon-helyaradatokra épülő valós idejű népesség-becslés az árvízi válaszban?",
+    "explanation": "Anonimizált, aggregált mobiladat → valós idejű népességeloszlás. A nap/hét/év folyamán változik. Jobb, mint a statikus népszámlálás. Turisztikai csúcsok, hétvégi mintázatok."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az Eurostat 1 km-es népességi rács a magyar árvízi kitettségi elemzésben?",
+    "explanation": "Áthidalja a települési szintű KSH-adat korlátait. Raszterformátumban közvetlenül fedhető JRC árvíztérképekkel. Nincs határ-eltérés. Konzisztens az EU-ban."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a mezőgazdasági vízhasználat és a vidéki demográfia kapcsolatát Magyarországon!",
+    "explanation": "A mezőgazdaság a vízkivételek jelentős hányadát teszi ki. A vidéki népesség térbeli eloszlása + öntözési infrastruktúra → vízhiány-előrejelzés. Éghajlatváltozással fokozódó probléma."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazható a sűrűségkorrekciós módszer egy magyar település árvízi kitettségi elemzéséhez?",
+    "explanation": "Település népessége P, területe A → ρ = P/A. Raszterré alakítás. Kivágás a 100 éves árvízi kiterjedésre. Σ(ρ_i × a_cella). Korrigált eredmény pontosabb, mint a naiv módszer."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen adatforrásokat és eszközöket használna egy QGIS-alapú árvízi kitettségi elemzéshez?",
+    "explanation": "Adatok: GISCO LAU határok, KSH népszámlálás, JRC árvíztérképek, WorldPop raszter. Eszközök: Clip (vektor), Clip Raster by Mask, Zonal Statistics. Vetítés: ETRS89-LAEA."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a combined sewer overflow (CSO) probléma és a demográfia kapcsolatát!",
+    "explanation": "Régi, sűrűn lakott városmagok: kombinált csatorna-túlfolyás. A népsűrűség és lakástípus korrelál a burkolt felület arányával. A leginkább érintett területeken korlátozott erőforrásokkal rendelkező népesség."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan hat a népesség-csökkenés BAZ megye árvízi kockázatkezelésére?",
+    "explanation": "7% csökkenés 2011-2022. Munkaképes korúak elvándorlása → idősebb, sérülékenyebb maradék népesség. Kevesebb önkéntes a töltésvédelemhez. Gazdasági erőforrások csökkenése a helyreállításhoz."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen szerepet játszik az OSAP és a Lechner kataszteri adatbázis az épületszintű árvízi kitettségi elemzésben Magyarországon?",
+    "explanation": "Épületnyilvántartás: hely, típus, érték. Kataszteri adatbázis: telekhatárok. Az EU Árvízi Irányelve megköveteli a vagyonkár-felmérést. Ahol nincs nemzeti adat: JRC GHSL 10 m."
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a census block és a block group adattartalmát az árvízi elemzés szempontjából!",
+    "explanation": "Block: népesség, lakóegységek, kor, faj - legfinomabb, de korlátozott változók. Block group: 7731 ACS változó (jövedelem, fogyatékosság, nyelv stb.) - gazdagabb, de durvább felbontás (~600 háztartás)."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan segíti az UN Népesedési Osztály ajánlása a nemzeti népszámlálások összehasonlíthatóságát?",
+    "explanation": "Közös alapvető témák: népesség, kor, nem, családi állapot, iskolázottság, gazdasági aktivitás, születési hely, lakóegység-jellemzők. A legtöbb ország követi ezeket az ajánlásokat."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen jövőbeli fejlesztések várhatók a valós idejű népességi kitettség-becslés terén?",
+    "explanation": "Mobiltelefon-helyadatok integrálása. MI-alapú előrejelzési modellek. Automatikus népességi kitettségi számítás árvíz-előrejelzéssel kiváltva. Copernicus CEMS már integrálja."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a FIPS és NUTS kódrendszerek közötti hasonlóságokat és különbségeket!",
+    "explanation": "Mindkettő: hierarchikus, területi egységek azonosítására. FIPS: numerikus (48-453-001768-1003). NUTS: alfanumerikus (HU-HU1-HU33-HU311). Funkció azonos: csatolókulcs határok és adatok között."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan járul hozzá a demográfiai árvízelemzés a célzott árvízkockázat-csökkentési programokhoz?",
+    "explanation": "Azonosítja a leginkább sérülékeny közösségeket. Empirikus alapot ad: árterületi jövedelem 15%-kal alacsonyabb, idős arány 7 pp magasabb. Célzott kivásárlás, támogatott biztosítás, infrastruktúra-beruházás."
+  },
+  {
+    "type": "essay",
+    "question": "Milyen GIS-műveletek szükségesek a teljes árvízi kár-becslési munkafolyamathoz?",
+    "explanation": "1. Árvíztérkép fedvényezése épületkontúrokra. 2. Árvízmélység meghatározása minden épületnél. 3. Mélység-kár függvény alkalmazása. 4. Kár % × épületérték = pénzbeli veszteség. 5. Összegzés."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a népesség-előrejelzés szerepét a vízkészlet-gazdálkodás hosszú távú tervezésében!",
+    "explanation": "Következő 30 év: hol és milyen ütemben nő a népesség? Vízigény-előrejelzés. Szennyvíztisztítás kapacitás. Edwards-víztartó fenntartható hozam. A térbeli demográfiai adat a tervezés alapja."
+  },
+  {
+    "type": "essay",
+    "question": "Hogyan alkalmazhatók a rácsos népességi adatok a vízgyűjtő-szintű elemzéshez?",
+    "explanation": "1. WorldPop/Eurostat raszter betöltése. 2. Vízgyűjtő-poligon betöltése. 3. Zónális statisztika (összeg) vagy Extract by Mask. 4. Cellaértékek összegzése = vízgyűjtő népessége. Nincs határ-eltérés."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse az árvízi kockázat három összetevőjét és azok adatforrásait!",
+    "explanation": "Kockázat = Veszély × Kitettség × Sérülékenység. Veszély: DEM + hidrológiai modellek (14-16. fejezet). Kitettség: népszámlálás + épületnyilvántartás. Sérülékenység: kor, jövedelem, fogyatékosság adatok."
+  }
+]
